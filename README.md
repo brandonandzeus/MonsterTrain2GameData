@@ -2,6 +2,8 @@
 Data dumps for Monster Train 2 game data, so AssetStudio no longer needs to be used. This is to help with modding Monster Train 2.
 If you are new to modding Monster Train 2, here's a [tutorial]([https://github.com/brandonandzeus/Trainworks2/wiki](https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/wiki/Getting-Setup-for-Modding)) to get you started.
 
+Data provided for research purposes only.
+
 ## Motivation
 Using AssetStudio is a pain for searching for GameData objects
 
@@ -14,4 +16,4 @@ This repo only contains JSON files, each representing a particular GameData obje
 
 Note that not all fields present in the data are included, file an issue if data you would like to be present is not included.
 
-Note that currently the JSON format this data is in is NOT COMPATIBLE with the official JSON schema for Trainworks-Reloaded, the fields will need to be translated to the appropriate field.
+Note that currently the JSON format this data is in is NOT COMPATIBLE with the official JSON schema for Trainworks-Reloaded, the fields will need to be translated to the appropriate field, but should serve as a gentle hint as to what fields need to be set. (See [#1](https://github.com/brandonandzeus/MonsterTrain2GameData/issues/1))
