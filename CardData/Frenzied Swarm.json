@@ -1,0 +1,74 @@
+{
+  "id": "FeedingFrenzy",
+  "name": "Frenzied Swarm",
+  "nameKey": {
+    "key": "CardData_nameKey-81506c4acc591e91-fbbced4ed8119e841ad0d14f1de3f595-v2",
+    "english": "Frenzied Swarm",
+    "french": "Banc vorace",
+    "german": "Rasender Schwarm",
+    "russian": "Взбешенный рой",
+    "portuguese": "Frenesi em Horda",
+    "chinese": "凶残妖群",
+    "spanish": "Marea enloquecida",
+    "chinese_traditional": "狂暴群落",
+    "korean": "흉포한 무리",
+    "japanese": "狂乱の群れ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-40d35dfa94277236-fbbced4ed8119e841ad0d14f1de3f595-v2",
+    "english": "Apply [dazed] [effect0.status0.power] to enemy units. [halfbreak]Discard your hand.",
+    "french": "Inflige <b>Étourdi</b> [effect0.status0.power] aux unités ennemies. [halfbreak]Défaussez-vous de votre main.",
+    "german": "Wende [effect0.status0.power] <b>Schwindel</b> auf gegnerische Einheiten an. [halfbreak]Wirf deine Hand ab.",
+    "russian": "Накладывает на всег врагов [dazed] x[effect0.status0.power]. [halfbreak]Сбросьте карты из своей руки.",
+    "portuguese": "Causa [effect0.status0.power] de <b>Atordoamento</b> às unidades inimigas. [halfbreak]Descarte sua mão.",
+    "chinese": "对敌方单位施加[dazed] [effect0.status0.power]。[halfbreak]舍弃全部手牌。",
+    "spanish": "Añade [dazed] [effect0.status0.power] a las unidades enemigas. [halfbreak]Descarta tu mano.",
+    "chinese_traditional": "對敵方單位施加[dazed][effect0.status0.power]。[halfbreak]捨棄你的手牌。",
+    "korean": "적 유닛들에게 [dazed] [effect0.status0.power] 효과를 적용합니다.[halfbreak]패를 모두 버립니다.",
+    "japanese": "[dazed] [effect0.status0.power]を敵ユニットに付与する。[halfbreak]手札を破棄する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a28e98659ffc4074-fbbced4ed8119e841ad0d14f1de3f595-v2",
+      "english": "When generous offerings are made to the Titan, groups of Winged often attempt to take the treasures for themselves. This makes them perfect prey for the swarms of Sirens waiting in the shadows.",
+      "french": "Lorsque de généreuses offrandes sont faites au Titan, des groupes d'anges tentent souvent de s'emparer des trésors. Ils deviennent alors des proies faciles pour les bancs de sirènes tapies dans l'ombre.",
+      "german": "Wenn dem Titanen reichhaltige Opfergaben dargeboten werden, versuchen meist einige Geflügelte, die Schätze zu stehlen. Das macht sie zur perfekten Beute ganzer Sirenenschwärme, die in den Schatten lauern.",
+      "russian": "Крылатые частенько стараются присвоить себе щедрые дары, которые преподносят Титану. Стараются... становясь легкой добычей для сирен, притаившихся в тени.",
+      "portuguese": "Frequentemente quando ofertas generosas são feitas para o Titã, grupos de Alados tentam roubar os tesouros. Isso os tornam as presas perfeitas para hordas de Sereias aguardando nas sombras.",
+      "chinese": "当海妖向泰坦献上丰厚的祭品时，翼族时常会成群结队而来，试图夺走这些宝物。然而对于潜伏在阴影里的海妖而言，那些翼族却成了再合适不过的猎物。",
+      "spanish": "Cuando se hace una ofrenda generosa al titán, grupos de alados suelen tratar de robar los tesoros. Eso los convierte en presas perfectas para los bancos de sirenas que esperan en las sombras.",
+      "chinese_traditional": "有慷慨的供品被獻給泰坦時，成群結隊的有翼族經常會想把東西搶過來。這使它們成為潛伏在陰影中的海妖群的完美獵物。",
+      "korean": "날개 달린 자들은 티탄에게 대량의 제물이 바쳐질 때 이를 노려 보물을 빼앗으려 한다. 이들은 어둠 속에 숨어 있는 사이렌 무리의 좋은 먹이가 된다.",
+      "japanese": "巨人族に惜しみない供物が捧げられると、有翼たちが集団でそれを奪おうとすることがよくある。彼らは影に潜むセイレーンの群れにとって格好の獲物となるのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_FrenziedSwarm.prefab",
+    "m_AssetGUID": "ae5d2a9aa68aa6b4398ab81f235ece15"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "dazed",
+          "count": 1
+        }
+      ],
+      "paramInt": 100
+    },
+    {
+      "effectStateName": "CardEffectDiscardHand",
+      "targetMode": "room",
+      "targetTeamType": "none"
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "JAL, AL, LH"
+}

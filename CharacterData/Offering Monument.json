@@ -1,0 +1,78 @@
+{
+  "id": "MonsterProsperityTotem",
+  "name": "Offering Monument",
+  "nameKey": {
+    "key": "CharacterData_nameKey-fca91c71c4cba5e5-3117c8273db87b248b6289f972b97dd8-v2",
+    "english": "Offering Monument",
+    "french": "Monument aux offrandes",
+    "german": "Opferstellen-Monument",
+    "russian": "Алтарный монумент",
+    "portuguese": "Monumento de Oferendas",
+    "chinese": "祭品石碑",
+    "spanish": "Monumento de ofrenda",
+    "chinese_traditional": "供奉紀念碑",
+    "korean": "제물 기념비",
+    "japanese": "供物の像"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-838cb0eb0c7fae2f-3117c8273db87b248b6289f972b97dd8-v2",
+      "english": "I created monuments as signposts for the offering sites across the seafloor. But my shoddy work has made them vulnerable to the energy from the Unnamed below, destabilizing them entirely.",
+      "french": "J'ai érigé des monuments indiquant l'emplacement des différents sites d'offrandes du fond marin. Cependant, mon travail bâclé les a rendus vulnérables à l'énergie du Sans-nom, ils sont donc devenus complètement instables.",
+      "german": "Ich habe Markierungen für die Opferstellen am Meeresgrund errichtet. Ich war aber etwas unkonzentriert bei der Sache, sodass sie anfällig für die Energie des Namenlosen aus der Tiefe sind. Sie sind inzwischen völlig destabilisiert.",
+      "russian": "Воздвигнутые мной монументы помечали молитвенные места на дне моря. Но мои творения не могли противостоять энергии Безымянного, лежащего под ними и разрушающего их.",
+      "portuguese": "Eu mesmo construí monumentos para sinalizar locais de oferenda pelo fundo do mar. Mas meu trabalho malfeito os deixou vulneráveis à energia do Inominado abaixo, desestabilizando as estruturas.",
+      "chinese": "我制造了一部分纪念碑，作为海底献祭祭坛的路标。不过这些纪念碑的做工比较拙劣，会受到来自海底无名者能量的侵蚀，它们的稳定性也会因此受到影响。",
+      "spanish": "Creé monumentos como indicadores de los lugares de ofrenda por el fondo marino, pero no logré hacerlos resistentes a la energía del Ignoto, lo que acabó desestabilizándolos por completo.",
+      "chinese_traditional": "我在海床上建造了紀念碑作為祭品場所的路標。但我拙劣的工藝使它們容易受到下方無名者能量的影響，這完全破壞了它們的穩定性。",
+      "korean": "예전에 해저의 공물 바치는 장소를 표시하려고 기념물을 세웠다. 그러나 조잡한 완성도로 인해, 해저에 봉인된 이름 없는 존재의 에너지를 견디지 못하고 완전히 불안정해지고 말았다.",
+      "japanese": "私は海底の供物場への道標として記念碑を作った。しかし私の粗雑な仕事のせいで、記念碑は海底の名もなき巨人からのエネルギーの影響を受けやすくなり、完全に不安定になってしまった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_OfferingMonument.prefab",
+    "m_AssetGUID": "bebe39734395c0f44bdddceb1ce1e958"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-5826023a29a22152-3117c8273db87b248b6289f972b97dd8-v2",
+        "english": "<nobr>Draw +[effect0.power]</nobr> next turn.",
+        "french": "<nobr>Piochez +[effect0.power]</nobr> au prochain tour.",
+        "german": "<nobr>Ziehe im nächsten Zug +[effect0.power]</nobr>.",
+        "russian": "<nobr>Возьмите +[effect0.power]</nobr> на следующий ход.",
+        "portuguese": "<nobr>Compra +[effect0.power]</nobr> no próximo turno.",
+        "chinese": "<nobr>下个回合抽 +[effect0.power]</nobr> 张牌。",
+        "spanish": "<nobr>Roba +[effect0.power]</nobr> en el próximo turno.",
+        "chinese_traditional": "<nobr>下回合抽+[effect0.power]</nobr>。",
+        "korean": "다음 턴에 카드를 추가로 <nobr>+[effect0.power]장 뽑습니다.</nobr>",
+        "japanese": "<nobr>次のターン、ドロー+[effect0.power]</nobr>。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        {
+          "effectStateName": "CardEffectDrawAdditionalNextTurn",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "animToPlay": "attack",
+          "paramInt": 1
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 1,
+  "attackDamage": 0,
+  "deathSlidesBackwards": false,
+  "subtypeKeys": [
+    "SubtypesData_Totem_7c4e7151-d042-49e2-9700-29e7c760b691",
+    "SubtypesData_BannerUnit"
+  ]
+}

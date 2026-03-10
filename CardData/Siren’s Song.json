@@ -1,0 +1,98 @@
+{
+  "id": "SirenSong",
+  "name": "Siren’s Song",
+  "nameKey": {
+    "key": "CardData_nameKey-ea55a184d47794f5-2f68ec93d5b662945a10ecd57e494057-v2",
+    "english": "Siren’s Song",
+    "french": "Chant des sirènes",
+    "german": "Sirenengesang",
+    "russian": "Песня сирены",
+    "portuguese": "Canção da Sereia",
+    "chinese": "海妖之歌",
+    "spanish": "Canto de sirena",
+    "chinese_traditional": "海妖之音",
+    "korean": "사이렌의 노래",
+    "japanese": "セイレーンの歌"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-f25c0687002b55b0-2f68ec93d5b662945a10ecd57e494057-v2",
+    "english": "At the start of the combat, [ascend] non-boss enemy units on this floor and apply [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power].",
+    "french": "Au début de la bataille, fait <b>monter</b> les ennemis hors boss à ce niveau et inflige [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power].",
+    "german": "Lass zu Beginn des Kampfes gegnerische Nicht-Boss-Einheiten auf dieser Ebene [ascend] und wende [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power] an.",
+    "russian": "В начале боя активирует [ascend] всех врагов не-боссов на этот этаж и накладывает [dazed] х[effect0.upgrade.roommodifier0.effect0.status0.power].",
+    "portuguese": "No início do combate, <b>Eleva</b> unidades inimigas que não são chefões neste andar e aplica [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power].",
+    "chinese": "战斗开始时，[ascend]本层的非首领敌方单位并施加 [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power]。",
+    "spanish": "Al inicio del combate, <b>Asciende</b> a las unidades enemigas no jefe de este piso y añade [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power].",
+    "chinese_traditional": "在戰鬥開始時，使此樓層的[ascend]個非首領敵方單位[dazed]並施加[effect0.upgrade.roommodifier0.effect0.status0.power]。",
+    "korean": "전투 시작 시, 이 층의 보스 외 적 유닛들을 [ascend]시키며, [dazed] [effect0.upgrade.roommodifier0.effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "戦闘開始時に、このフロアの非ボスの敵ユニットを[ascend]させ、[dazed] [effect0.upgrade.roommodifier0.effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-5ca5332f073c34d2-2f68ec93d5b662945a10ecd57e494057-v2",
+      "english": "I’ve heard no song as beautiful or as deadly as that of the Sirens of the Stygian. Their luring voices can disarm even the most hardened of hearts. ",
+      "french": "Je n'ai jamais entendu chant plus magnifique, ni plus mortel, que celui des sirènes des Stygiens. Leurs voix enchanteresses sont capables de charmer même le cœur le plus endurci.",
+      "german": "Kein Gesang ist so schön oder so todbringend wie jener der stygischen Sirenen. Ihre verlockenden Stimmen können selbst die hartherzigsten Kreaturen erweichen.",
+      "russian": "Никто не поет столь чарующих и губительных песен, как стигийские сирены. Их обворожительные голоса способны обезоружить даже самых крепких сердцем. ",
+      "portuguese": "Nunca ouvi uma canção tão bela ou mortal como as das Sereias do Estige. Suas vozes encantadoras podem desarmar até os corações mais peludos.",
+      "chinese": "我从来没听过像冥海海妖发出的如此美妙、如此致命的歌声，它们那诱人的声音足以动摇最坚定的灵魂。",
+      "spanish": "Nunca he oído una canción tan hermosa ni letal como la de las sirenas del Estigio. Sus voces cautivadoras pueden desarmar incluso al corazón más implacable.",
+      "chinese_traditional": "我從未聽過像冥河的海妖那樣美麗而致命的歌聲。她們誘人的聲音就連最頑強的心靈都能夠瓦解。",
+      "korean": "명계의 사이렌만큼 목숨을 위협할 정도로 아름다운 노래를 부르는 존재는 없다. 그들의 매혹적인 목소리는 강철처럼 단단한 마음도 녹여 버린다.",
+      "japanese": "ステュクス族のセイレーンほど美しい、あるいは恐ろしい歌を聞いたことがない。その誘惑の歌は、どれだけ閉ざした心でも無防備にしてしまう。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "room",
+  "rarity": "rare",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_SirenSong.prefab",
+    "m_AssetGUID": "36d5281c6ebf59f4c801f5f5db685793"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLimitedRange"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "SirenSong",
+        "roomModifierUpgrades": [
+          {
+            "roomStateModifierClassName": "RoomStateAddEffectPreCombatModifier",
+            "paramCardEffects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "targetIgnoreBosses": true,
+                "paramStatusEffects": [
+                  {
+                    "statusId": "dazed",
+                    "count": 3
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectBump",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "targetIgnoreBosses": true,
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      }
+    }
+  ],
+  "unlockLevel": 5,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Adam Lee"
+}

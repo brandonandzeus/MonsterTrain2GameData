@@ -1,0 +1,78 @@
+{
+  "id": "MementoMori",
+  "name": "Memento Mori",
+  "nameKey": {
+    "key": "CardData_nameKey-677bc31b218dfb38-08b4cd2e3d143754095e47b4da964836-v2",
+    "english": "Memento Mori",
+    "french": "Memento Mori",
+    "german": "Memento Mori",
+    "russian": "Memento Mori",
+    "portuguese": "Memento Mori",
+    "chinese": "死亡纪念",
+    "spanish": "Memento mori",
+    "chinese_traditional": "死亡紀念品",
+    "korean": "죽음의 상징",
+    "japanese": "死の記録"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-46cb9140a4a283fc-08b4cd2e3d143754095e47b4da964836-v2",
+    "english": "Deal damage to the front enemy unit equal to [trait0.power]x the number of friendly unit deaths this battle.",
+    "french": "Inflige des dégâts à l'ennemi en 1re ligne valant [trait0.power]x le nombre d'alliés morts dans cette bataille.",
+    "german": "Füge der vordersten gegnerischen Einheit Schaden in Höhe von [trait0.power]x der in diesem Kampf gestorbenen verbündeten Einheiten zu.",
+    "russian": "Наносит переднему вражескому бойцу урон, равный х[trait0.power] количеству союзников, погибших в этом бою.",
+    "portuguese": "Causa dano à unidade inimiga na frente igual a [trait0.power]x o número de unidades aliadas mortas nesta batalha.",
+    "chinese": "对前排敌方单位造成伤害，伤害值为本场战斗阵亡友方单位数量的 [trait0.power] 倍。",
+    "spanish": "Inflige tanto daño a la primera unidad enemiga como las unidades aliadas que han muerto en esta batalla x[trait0.power].",
+    "chinese_traditional": "對前排敵方單位造成等於[trait0.power]x本次戰鬥友方單位死亡數的傷害。",
+    "korean": "이 전투에서 사망한 아군 유닛 수의 [trait0.power]배만큼 전열 적 유닛에 피해를 줍니다.",
+    "japanese": "前列の敵ユニットに[trait0.power]x このバトルで死亡した味方ユニット数と等しいダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-133570319df1ff17-08b4cd2e3d143754095e47b4da964836-v2",
+      "english": "In memory, a Waxer is never truly dead. Through a process we developed together, their faces are embossed on deadly weapons and serve as a reminder of what once was and what will be.",
+      "french": "La mémoire d'un cireux perdure même après sa mort. Grâce à un procédé que nous avons développé ensemble, leurs visages sont gravés sur des armes mortelles, rappelant ce qui a été et ce qui sera.",
+      "german": "In gewisser Weise sind Wachser unsterblich. Wir haben gemeinsam einen Prozess entwickelt, um ihre Gesichter auf tödliche Waffen zu prägen. So dienen sie als Mahnung an alles, was war und sein wird.",
+      "russian": "Восковики навсегда остаются в нашей памяти. Благодаря разработанной нами общей методике их лица украшают смертоносное оружие, напоминая о том, что когда-то было, и что будет в последующем.",
+      "portuguese": "Em memória, um Céreo nunca morre. Por meio de um processo que desenvolvemos juntos, seus rostos são grafados em armas mortais e servem como lembrete do que foi, e do que será.",
+      "chinese": "烛人永远不会真正地从记忆中消亡。通过我们共同研究出来的某种工艺，烛人们的面孔会被雕刻在致命的武器上，提醒人们过去与未来会发生的一切。",
+      "spanish": "En el recuerdo, los encerados nunca mueren del todo. A través de un proceso que desarrollamos en conjunto, sus rostros se labran en armas letales como testimonio de lo que fue y lo que será.",
+      "chinese_traditional": "在回憶中，蠟像永遠不會真正死去。透過我們共同開發的工藝，他們的臉會被印在致命的武器上，作為曾經存在和將要存在的提醒。",
+      "korean": "기억에 새기는 한, 밀랍 인간은 절대 죽지 않는다. 함께 연구를 거듭한 끝에, 우리는 떠나간 이들의 모습을 치명적인 무기에 새겨 무기를 쥔 자에게 생전의 모습과 앞으로 함께 할 모습을 떠올리도록 하였다.",
+      "japanese": "ワクサーは記憶の中で生き続ける。共に作った慣例として、彼らの顔は武器に彫られ、過去の、そして未来の彼らの象徴となるのだ。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_MementoMori.prefab",
+    "m_AssetGUID": "28a4b527b13203a428bb3ddc86e263e8"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddDamage",
+      "paramTrackedValue": "any_monster_death",
+      "paramEntryDuration": "previous_turn",
+      "paramInt": 10,
+      "paramTeamType": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_MementoMori_PS.prefab",
+          "m_AssetGUID": "501b8e250e260384e9ef16f6ae8a9fdd"
+        },
+        "spawnLocation": "character_bottom"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Andres Olvera"
+}

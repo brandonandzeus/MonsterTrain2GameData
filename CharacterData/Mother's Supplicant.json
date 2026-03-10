@@ -1,0 +1,84 @@
+{
+  "id": "R3_MageT2_Junker",
+  "name": "Mother's Supplicant",
+  "nameKey": {
+    "key": "CharacterData_nameKey-564c3f966ebb005a-63e304201813f3c4a804b2740e259420-v2",
+    "english": "Mother's Supplicant",
+    "french": "Suppliant de la Mère",
+    "german": "Mutters Bittsteller",
+    "russian": "Молельщик Матери",
+    "portuguese": "Suplicante da Mãe",
+    "chinese": "母亲的恳求者",
+    "spanish": "Suplicante de Madre",
+    "chinese_traditional": "母親的祈求者",
+    "korean": "어머니의 탄원자",
+    "japanese": "マザーのサプリカント"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-ca6a9d782525479c-63e304201813f3c4a804b2740e259420-v2",
+      "english": "Mimics of Heaven’s bellringers, these blooms of Her power now carry Her symbols on their bells and toll for Her arrival.",
+      "french": "Imitant les sonneurs célestes, les fleurs de la Mère portent désormais Ses symboles sur les cloches dont elles se servent pour annoncer Sa venue.",
+      "german": "Diese Blüten Ihrer Macht, Mimen der Glöckner des Himmels, tragen nun Ihre Symbole auf Ihren Glocken und läuten Ihre Ankunft ein.",
+      "russian": "Подражатели райских звонарей, порожденные Матерью-природой, несут на себе ее символы и возвещают о ее прибытии.",
+      "portuguese": "Imitando os sineiros do Céu, essas flores de Seu poder agora carregam os símbolos Dela em seus sinos e tocam para anunciar a chegada Dela.",
+      "chinese": "这些花朵是天堂敲钟人的仿制品，现在他们的钟上带有她的标志，钟声预示着她的降临，彰显她的力量。",
+      "spanish": "Copias de los campaneros del Cielo, estos brotes de Su poder ahora portan Sus símbolos en las campanas y tocan por Su llegada.",
+      "chinese_traditional": "這些模仿天堂敲鐘人的力量之花，如今在鐘面上刻著母親的印記，並為她的降臨敲響喪鐘。",
+      "korean": "천상의 종지기들을 모방한 그녀의 권능의 꽃인 이 존재들은 이제 종마다 그녀의 상징을 달고 그녀의 도래를 알리는 종을 울린다.",
+      "japanese": "マザーの力を宿し、天界の鐘撞きたちを模倣した花。マザーの象徴を鐘に刻み込み、彼女の到来をその鐘を鳴らして知らせている。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ProfaneAcolyte_SoulSavior.prefab",
+    "m_AssetGUID": "317ba97d04faec542ae5d96c01565d2f"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-9c09e5b3be9fd204-63e304201813f3c4a804b2740e259420-v2",
+        "english": "Add a [soulscourge] card to the top of your draw pile.",
+        "french": "Ajoute une carte [soulscourge] au-dessus de votre pioche.",
+        "german": "Füge deinem Ziehstapel eine [soulscourge]-Karte hinzu.",
+        "russian": "Делает верхней картой вашей активной стопки:[soulscourge].",
+        "portuguese": "Adiciona uma carta de [soulscourge] ao topo da sua pilha de compra.",
+        "chinese": "将一张 [soulscourge] 卡牌置于你的抽牌堆顶部。",
+        "spanish": "Añade una carta [soulscourge] como la primera de tu pila de robo.",
+        "chinese_traditional": "將一張[soulscourge]牌加入你的抽牌堆頂部。",
+        "korean": "[soulscourge] 카드를 사용 카드 더미 맨 위에 추가합니다.",
+        "japanese": "ドローの山の最上に[soulscourge]カードを追加する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddBattleCard",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "paramInt": 5,
+          "additionalParamInt": 1,
+          "paramCardPool": "SoulSavior_Scourge_Pool"
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 6,
+    "endlessAttack": 4
+  },
+  "size": 2,
+  "health": 4,
+  "attackDamage": 3,
+  "lifemotherVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Mage_Enemy"
+  ],
+  "characterChatterData": "R2SoulSaviorEnemies_Male_ChatterData",
+  "artistAttribution": "Michaela Nienaber"
+}

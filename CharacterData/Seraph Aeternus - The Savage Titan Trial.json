@@ -1,0 +1,113 @@
+{
+  "id": "Boss_Level8_Fragile_TitanTrial",
+  "name": "Seraph Aeternus - The Savage Titan Trial",
+  "nameKey": {
+    "key": "CharacterData_nameKey-51e3b94129a519dd-207e604a61d6f2a47bb66459e372dc30-v2",
+    "english": "Seraph Aeternus - The Savage",
+    "french": "Séraphin Aeternus le Sauvage",
+    "german": "Seraph Aeternus – Der Grausame",
+    "russian": "Серафим Бессмертный — Жестокость",
+    "portuguese": "Serafim Aeternus, a Barbárie",
+    "chinese": "野蛮之永恒炽天使",
+    "spanish": "Seraph Aeternus, el Salvaje",
+    "chinese_traditional": "撒拉弗．艾特努斯 - 野性者",
+    "korean": "세라핌 아이테르누스 - 폭정의 힘",
+    "japanese": "セラフ・エーテルヌス - 残虐なる者"
+  },
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Seraph_Savage.prefab",
+    "m_AssetGUID": "ff50926dc8820f54d85f03771d9c0e15"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Seraph/Savagery/FX_SeraphSavageBeam.prefab",
+      "m_AssetGUID": "96aac9f6ca09cce458c29c0a4ed3ede8"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+    },
+    "spawnLocation": "character_center"
+  },
+  "bossSpellCastVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_SeraphSpellCast_PS.prefab",
+      "m_AssetGUID": "337f088e9573a334cbb9f79b14193bd4"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "bossRoomSpellCastVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_SeraphSpellCastSavagery.prefab",
+      "m_AssetGUID": "337f088e9573a334cbb9f79b14193bd4"
+    },
+    "spawnLocation": "room_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-d27c3cba61dfb010-207e604a61d6f2a47bb66459e372dc30-v2",
+        "english": "Grant enemy units [rage] [effect0.status0.power].",
+        "french": "Octroie [rage] [effect0.status0.power] aux ennemis.",
+        "german": "Gegnerische Einheiten erhalten [rage] [effect0.status0.power].",
+        "russian": "Врагам дается [rage] х[effect0.status0.power].",
+        "portuguese": "Concede [rage] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "使所有敌方单位获得 [rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "賦予敵方單位[rage][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [rage] [effect0.status0.power] 효과를 부여합니다.",
+        "japanese": "敵ユニットに[rage] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "after_spawn_enchant",
+      "effects": [
+        {
+          "effectStateName": "CardEffectEnchant",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "buff",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bossActionGroups": [
+    {
+      "actions": [
+        {
+          "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+          "paramTeamType": "monsters"
+        }
+      ],
+      "numRepeats": 0
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 4500,
+    "endlessAttack": 60
+  },
+  "hideInLogbook": true,
+  "size": 6,
+  "health": 3000,
+  "isOuterTrainBoss": true,
+  "validBossAttackPhase": "both",
+  "attackDamage": 30,
+  "attackTeleportsToDefender": false,
+  "bossTitanAffinity": "savagery",
+  "statusEffectImmunities": [
+    "rooted"
+  ],
+  "subtypeKeys": [
+    "SubtypesData_BigBossT3_f7449215-5071-4671-909c-a02e2cceb821",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss8_SeraphAeternus_Savagery_ChatterData",
+  "enemyRelicData": "Enemy_CorruptSeraph_AddMeleeWeaknessToUnit",
+  "artistAttribution": "Genevieve Bega"
+}

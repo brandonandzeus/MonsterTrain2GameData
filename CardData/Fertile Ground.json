@@ -1,0 +1,132 @@
+{
+  "id": "FertileGround",
+  "name": "Fertile Ground",
+  "nameKey": {
+    "key": "CardData_nameKey-1774568b127a8a51-57963d3954ef6f948b043ce8e21466cd-v2",
+    "english": "Fertile Ground",
+    "french": "Sol fertile",
+    "german": "Fruchtbarer Boden",
+    "russian": "Плодородная почва",
+    "portuguese": "Solo Fértil",
+    "chinese": "沃土",
+    "spanish": "Suelo fértil",
+    "chinese_traditional": "肥沃土壤",
+    "korean": "비옥한 대지",
+    "japanese": "肥沃な大地"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-114da1076b7bec53-57963d3954ef6f948b043ce8e21466cd-v2",
+    "english": "[spawn] [effect0.power]. [spawn] [trait0.power] more for each card in your consume pile.",
+    "french": "[spawn] [effect0.power]. [spawn] [trait0.power] de plus par carte dans la pile de destruction.",
+    "german": "<b>Erzeugt</b> [effect0.power]. <b>Erzeugt</b> pro Karte in deinem Verbrauchstapel [trait0.power] mehr.",
+    "russian": "[spawn] х[effect0.power] и [spawn] х[trait0.power] за каждую карту в стопке поглощения.",
+    "portuguese": "[spawn] [effect0.power]. Adiciona [spawn] [trait0.power] para cada carta na sua pilha de consumo.",
+    "chinese": "[spawn] [effect0.power]。你的消耗牌堆里每有一张牌，再[spawn] [trait0.power]。",
+    "spanish": "[spawn] [effect0.power]. [spawn] [trait0.power] más por cada carta en tu pila de consumidas.",
+    "chinese_traditional": "[spawn][effect0.power]。消耗牌堆中每有一張牌則額外獲得[spawn][trait0.power]。",
+    "korean": "[spawn] [effect0.power]. 무덤 카드 더미에 있는 카드 한 장당 추가로 [trait0.power]회 [spawn]합니다.",
+    "japanese": "[spawn] [trait0.power]。消費山札のカード1枚につきさらに[spawn] [effect0.power]。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-858c7591f9e59c71-57963d3954ef6f948b043ce8e21466cd-v2",
+      "english": "“Poor soldier. We’ll put him back together,” whispered the fungi beneath the battlefield. “Your body will be a perfect place for us to grow.”",
+      "french": "<nobr>« Pauvre</nobr> soldat, tu n'es pas tombé en <nobr>vain »,</nobr> murmurent les champignons sous le champ de bataille. <nobr>« Ton</nobr> corps fournira tout ce dont nous avons besoin pour notre <nobr>croissance. »</nobr>",
+      "german": "„Armer Soldat. Wir werden ihn wieder zusammenflicken“, flüsterten die Pilze unter dem Schlachtfeld. „Dein Körper wird der perfekte Nährboden für uns sein.“",
+      "russian": "«Бедный солдат. Мы позаботимся о тебе, — шептали грибы под полем боя. — Твое тело станет отличным местом для нашего роста».",
+      "portuguese": "“Pobre soldado. Nós o reconstruiremos”, sussurraram os fungos no campo de batalha. “Seu corpo será um lugar perfeito para crescermos.”",
+      "chinese": "“可怜的士兵我们会把他复原的。”战场之下的真菌低语着。“你的身体将是让我们生长的完美场所”",
+      "spanish": "«Pobre soldado. Lo recompondremos», susurraron los hongos bajo el campo de batalla. «Tu cuerpo será el sustento perfecto para nuestro crecimiento».",
+      "chinese_traditional": "「可憐的士兵。我們會把他重新拼湊起來。」戰場底下的真菌低聲說道。「你的身體將是我們生長的完美場所。」",
+      "korean": "\"가엾기도 하지. 우리가 돌려보내 줄게.\" 전장 아래 피어난 균사체가 나지막하게 속삭였다. \"네 몸은 우리가 자라는 완벽한 장소가 될 거야.\"",
+      "japanese": "「気の毒な戦士。また1つにしてあげよう」と、戦場の地中のキノコが囁く。「君の身体は完璧な苗床になるだろう」"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_FertileGrowth.prefab",
+    "m_AssetGUID": "5a9cc4590e0098a41971ef3116c48947"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "horde",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "type_in_exhaust_pile",
+      "paramEntryDuration": "previous_turn",
+      "paramInt": 1,
+      "paramInt2": 2,
+      "stackMode": "param_int"
+    },
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "targetCharacterSubtype": "SubtypesData_Horde",
+      "paramCharacterData": {
+        "id": "MonsterFunguy",
+        "nameKey": {
+          "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+          "english": "Funguy",
+          "french": "Champote",
+          "german": "Fungus",
+          "russian": "Грибоец",
+          "portuguese": "Fungo",
+          "chinese": "蘑菇人",
+          "spanish": "Lustrongo",
+          "chinese_traditional": "真菌人",
+          "korean": "균사체",
+          "japanese": "ファンガイ"
+        },
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+          "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "size": 1,
+        "health": 4,
+        "attackDamage": 3,
+        "subtypeKeys": [
+          "SubtypesData_FunGuy",
+          "SubtypesData_Shroom",
+          "SubtypesData_Horde"
+        ],
+        "characterChatterData": "UnderlegionShroomFemaleChatterData"
+      },
+      "paramStatusEffects": [
+        {
+          "statusId": "horde",
+          "count": 1
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "trigger": "card_monster_played",
+          "style": "default",
+          "isTriggerTooltip": true,
+          "allowSecondaryPlacement": true
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Genevieve Bega"
+}

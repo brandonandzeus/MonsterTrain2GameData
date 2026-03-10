@@ -1,0 +1,82 @@
+{
+  "id": "ShroomsGainRegen",
+  "name": "Cortical Connector",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-3f007c245fc0780f-c4b4c71e0b7ca5a4b87a33e9f68571da-v2",
+    "english": "Cortical Connector",
+    "french": "Connecteur cortical",
+    "german": "Zellverbindung",
+    "russian": "Нейронный проводник",
+    "portuguese": "Conector Cortical",
+    "chinese": "皮层连接头盔",
+    "spanish": "Conector cortical",
+    "chinese_traditional": "皮層連接器",
+    "korean": "피질 연결체",
+    "japanese": "皮層連結"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-667a7a48a5ec38a8-c4b4c71e0b7ca5a4b87a33e9f68571da-v2",
+    "english": "[shroom] units gain [regen] [effect0.power] on [harvest].",
+    "french": "Les <b>Champis</b> gagnent [regen] [effect0.power] lors de la [harvest].",
+    "german": "[shroom]-Einheiten erhalten [regen] [effect0.power] bei der [harvest].",
+    "russian": "<b>Грибам</b> дается [regen] х[effect0.power] за [harvest].",
+    "portuguese": "Unidades de [shroom] recebem [regen] [effect0.power] na [harvest].",
+    "chinese": "在 [harvest] 时，[shroom] 单位获得 [regen] [effect0.power]。",
+    "spanish": "Las unidades [shroom] añaden [regen] [effect0.power] durante la [harvest].",
+    "chinese_traditional": "[shroom]單位在[harvest]時獲得[regen][effect0.power]。",
+    "korean": "[shroom] 유닛들은 [harvest] 시 [regen] [effect0.power] 효과를 획득합니다.",
+    "japanese": "[shroom]ユニットが[harvest]時に[regen] [effect0.power]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-b323b9b8f17830d5-c4b4c71e0b7ca5a4b87a33e9f68571da-v2",
+      "english": "The fungus that grows along the roots of the Fatal Elm is in fact one single neural network that consumes bodies and uses them for its own mysterious purpose.",
+      "french": "Le champignon qui pousse sur les racines de l'Orme funeste est en fait un réseau neuronal unique qui dévore les corps et les utilise à des fins mystérieuses.",
+      "german": "Der Pilz, der an den Wurzeln der Schicksalsulme wächst, ist in Wirklichkeit ein großes neurales Netzwerk. Es verzehrt Körper und nutzt sie für eigene mysteriöse Zwecke.",
+      "russian": "Гриб, растущий под корнями Рокового Вяза, на самом деле является большой нейронной сетью, поглощающей трупы для своих секретных целей.",
+      "portuguese": "Os fungos que crescem ao longo das raízes do Ulmeiro Mortal são, na verdade, uma rede neural que consome corpos e os utiliza em prol de um propósito misterioso.",
+      "chinese": "沿着致命榆树的根生长的真菌，实际上是一个单独的神经网络，它吞噬尸体，并利用其达成自己的神秘目的。",
+      "spanish": "El parásito que se extiende por las raíces del Olmo Fatal es, en realidad, una única red neuronal que consume organismos inertes y los utiliza para sus propios y misteriosos fines.",
+      "chinese_traditional": "沿著致命榆樹根部生長的真菌，實際上是一個單一的神經網路，它會吞噬屍體並將其用於自己神秘的目的。",
+      "korean": "운명의 느릅나무의 뿌리를 따라 자라는 이 균사체는 사실 육체를 흡수해 이를 신기한 목적으로 사용하는 단일 신경망이다.",
+      "japanese": "宿命の樹の根に沿って成長する菌類は、死骸を消費し、それを独自の神秘的な目的のために使用する単一の神経ネットワークなのだ。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "additionalTooltips": [
+        {
+          "trigger": "on_any_unit_death_on_floor",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "triggers": [
+        {
+          "trigger": "on_any_unit_death_on_floor",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "monsters",
+              "targetCharacterSubtype": "SubtypesData_Shroom",
+              "paramStatusEffects": [
+                {
+                  "statusId": "regen",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Shroom",
+      "paramBool": true
+    }
+  ]
+}

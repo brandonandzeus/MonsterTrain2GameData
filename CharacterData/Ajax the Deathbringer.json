@@ -1,0 +1,89 @@
+{
+  "id": "Boss_SoulSavior_R4_TrainBoss_EmberGranter",
+  "name": "Ajax the Deathbringer",
+  "nameKey": {
+    "key": "CharacterData_nameKey-6d995adb7c2f7757-1a16bc5b7ec329343a31e2d839344eff-v2",
+    "english": "Ajax the Deathbringer",
+    "french": "Ajax le Mortifère",
+    "german": "Ajax der Totenbote",
+    "russian": "Аякс Смертоносный",
+    "portuguese": "Ajax, o Arauto da Morte",
+    "chinese": "死亡使者阿贾克斯",
+    "spanish": "Ájax el Mortífero",
+    "chinese_traditional": "致死的艾賈克斯",
+    "korean": "죽음을 가져오는 아약스",
+    "japanese": "死をもたらす者エイジャックス"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-68d3573a3de109af-1a16bc5b7ec329343a31e2d839344eff-v2",
+      "english": "Much like Ajax, the Mother also believed that the greatest sins rippled through the generations. And that, in particular, Herzal had committed such an unforgivable crime against her family and that he must be punished. Ajax was such a natural addition to her army.",
+      "french": "Tout comme Ajax, la Mère croyait que les plus grands péchés se répercutaient sur les générations suivantes. Elle pensait également qu'Herzal avait commis un crime impardonnable contre sa famille et qu'il devait être puni. Ajax était une recrue idéale dans son armée.",
+      "german": "Genau wie Ajax glaubte auch die Mutter daran, dass die größten Sünden ganze Generationen prägen würden und dass insbesondere Herzal ein unverzeihliches Verbrechen an Ihrer Familie begangen hatte und bestraft werden müsste. Ajax war daher eine logische Ergänzung für Ihre Armee.",
+      "russian": "Как и Аякс, Мать верила: самые тяжкие грехи передаются через поколения. А еще, что Герцаль совершил против ее семьи преступление столь страшное, что прощению не подлежит и наказание неизбежно. Аякс, таким образом, отлично вписался в ее армию.",
+      "portuguese": "Assim como Ajax, a Mãe também acreditava que os maiores pecados se propagavam através das gerações. E que, em particular, Herzal havia cometido um crime imperdoável contra sua família e deveria ser punido. Ajax foi uma adição natural ao seu exército.",
+      "chinese": "和阿贾克斯一样，母亲也相信最深重的罪孽是祸害后世的罪孽。她还相信赫扎尔就对她的家人犯下了这样的罪孽，因此必须让他付出代价。于是，阿贾克斯就自然而然地加入了她的军队。",
+      "spanish": "Al igual que Ájax, la Madre también creía que los mayores pecados se extendían a las generaciones posteriores. Y, en particular, que Herzal había cometido un crimen tan imperdonable contra su familia que debía ser castigado. Por tanto, Ájax fue un añadido natural a Su ejército.",
+      "chinese_traditional": "與艾賈克斯如出一轍，母親也深信重罪會禍延子孫。她認定赫爾扎爾對她的家族犯下了不可饒恕的罪行，必須受到懲罰。因此，艾賈克斯加入她的軍隊，實屬順理成章。",
+      "korean": "어머니 또한 아약스와 마찬가지로, 가장 큰 죄는 세대를 넘어 파문처럼 퍼져 나간다고 믿었다. 특히 헤르잘은 그녀의 가족을 향해 결코 용서받을 수 없는 죄를 저질렀으며, 반드시 벌을 받아야 할 존재였다. 그렇기에 아약스는 그녀의 군세에 너무도 자연스럽게 합류하게 되었다.",
+      "japanese": "エイジャックスと同じ用に、マザーも大罪は世代をわたって受け継がれると信じている。特に、ハーザルは彼女の一族に対して許されざる罪を犯し、必ず報いを受けさせなければならない。エイジャックスが彼女の軍勢に加わったのは極めて自然なことである。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_EntropicParagon_SoulSavior.prefab",
+    "m_AssetGUID": "605fbe5159a3a5f478dc5510c9c2d95b"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-683ac6e279726034-1a16bc5b7ec329343a31e2d839344eff-v2",
+        "english": "Apply [malaise] [effect0.status0.power] to your front unit.",
+        "french": "Inflige [malaise] [effect0.status0.power] à votre unité en 1re ligne.",
+        "german": "Wende [malaise] [effect0.status0.power] auf deine vorderste Einheit an.",
+        "russian": "На вашего переднего бойца накладывается [malaise] х[effect0.status0.power].",
+        "portuguese": "Aplica [malaise] [effect0.status0.power] à sua unidade na frente.",
+        "chinese": "为你的前排单位施加 [malaise] [effect0.status0.power]。",
+        "spanish": "Añade [effect0.status0.power] [malaise] a tu primera unidad.",
+        "chinese_traditional": "對你的前排單位施加[malaise][effect0.status0.power]。",
+        "korean": "전열 아군 유닛에 [malaise] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "前列のユニットに[malaise] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_turn_begin",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "front_in_room",
+          "targetTeamType": "monsters",
+          "paramStatusEffects": [
+            {
+              "statusId": "malaise",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 2400,
+    "endlessAttack": 12
+  },
+  "size": 4,
+  "health": 450,
+  "isMiniboss": true,
+  "deathType": "large",
+  "attackDamage": 11,
+  "bossTitanAffinity": "lifemother",
+  "subtypeKeys": [
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss4_SoulSaviorAjax_ChatterData",
+  "artistAttribution": "Herrick Ong"
+}

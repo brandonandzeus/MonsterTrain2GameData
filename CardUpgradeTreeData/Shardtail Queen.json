@@ -1,0 +1,543 @@
+{
+  "id": "UpgradeTreeShardtail",
+  "name": "Shardtail Queen",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "ShardtailGainImps",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-0e729b8020661b72-a2b67eaa55ad6dc48b547ad6a41e5f6e-v2",
+            "english": "Imp Parade",
+            "french": "Défilé des diablotins",
+            "german": "Koboldparade",
+            "russian": "Парад бесов",
+            "portuguese": "Parada do Diabinho",
+            "chinese": "百鬼游行",
+            "spanish": "Desfile de diablillos",
+            "chinese_traditional": "小鬼遊行",
+            "korean": "임프 행렬",
+            "japanese": "インプ・パレード"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-e1fe60f38590308a-a2b67eaa55ad6dc48b547ad6a41e5f6e-v2",
+                "english": "Add a <b>Queen's Impling</b> to your hand.",
+                "french": "Ajoute un <b>diabloteau de la Reine</b> à votre main.",
+                "german": "Nimm eine <b>Kleinbold der Königin</b>-Karte auf die Hand.",
+                "russian": "Добавляет в вашу руку <b>Королевского бесенка</b>.",
+                "portuguese": "Adiciona um <b>Diabinho da Rainha</b> à sua mão.",
+                "chinese": "将一张 <b>女王的小鬼</b>加入你的手牌。",
+                "spanish": "Añade un <b>Diablillo de la reina</b> a tu mano.",
+                "chinese_traditional": "將一張<b>女王的小鬼</b>加入你的手牌。",
+                "korean": "<b>여왕의 임프</b>를 패에 추가합니다.",
+                "japanese": "手札に<b>女王の子インプ</b>を追加する。"
+              },
+              "trigger": "post_combat",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3,
+                  "additionalParamInt": 1,
+                  "paramCardPool": "ImpStarterOnlyPool"
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-bdaec4e912a39c85-a2b67eaa55ad6dc48b547ad6a41e5f6e-v2",
+                "english": "Imp units cost [power][ember] on this floor.",
+                "french": "Les diablotins coûtent [power][ember] à ce niveau.",
+                "german": "Kobold-Einheiten kosten auf dieser Ebene [power][ember].",
+                "russian": "Цена бесов на этом этаже: [power][ember].",
+                "portuguese": "As unidades de Diabinho custam [power][ember] nesse andar.",
+                "chinese": "在本层中，小鬼单位的费用 [power][ember]。",
+                "spanish": "Las unidades Diablillo cuestan [power][ember] en este piso.",
+                "chinese_traditional": "在此樓層上，小鬼單位的費用為[power][ember]。",
+                "korean": "이 층의 임프 유닛 비용이 [power][ember]이 됩니다.",
+                "japanese": "このフロアでのインプユニットのコストが[power][ember]になる。"
+              },
+              "roomStateModifierClassName": "RoomStateUnitCostModifier",
+              "paramInt": -1
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 5
+        },
+        {
+          "id": "ShardtailGainImps2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-cf5128a44ce7a185-385cb1e1aa034304ab3bffbe7e5ef8b6-v2",
+            "english": "Imp Parade II",
+            "french": "Défilé des diablotins II",
+            "german": "Koboldparade II",
+            "russian": "Парад бесов II",
+            "portuguese": "Parada do Diabinho II",
+            "chinese": "百鬼游行II",
+            "spanish": "Desfile de diablillos II",
+            "chinese_traditional": "小鬼遊行II",
+            "korean": "임프 행렬 II",
+            "japanese": "インプ・パレードII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-793acfe81ee6caa5-385cb1e1aa034304ab3bffbe7e5ef8b6-v2",
+                "english": "Add a <b>Fledgling Imp</b> to your hand.",
+                "french": "Ajoute un <nobr><b>jeune diablotin</b></nobr> à votre main.",
+                "german": "Nimm eine <b>Junger Kobold</b>-Karte auf die Hand.",
+                "russian": "Добавляет в вашу руку <b>Юного беса</b>.",
+                "portuguese": "Adiciona um <b>Diabinho Novato</b> à sua mão.",
+                "chinese": "将一张<b>懵懂小鬼</b>加入你的手牌。",
+                "spanish": "Añade un <b>Diablillo novel</b> a tu mano.",
+                "chinese_traditional": "將一張<b>發育小鬼</b>加入你的手牌。",
+                "korean": "<b>꼬맹이 임프</b>를 패에 추가합니다.",
+                "japanese": "手札に<b>ひよっこインプ</b>を追加する。"
+              },
+              "trigger": "post_combat",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3,
+                  "additionalParamInt": 1,
+                  "paramCardPool": "FledglingImpOnlyPool"
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-39971b651bf2a28b-385cb1e1aa034304ab3bffbe7e5ef8b6-v2",
+                "english": "Imp units cost [power][ember] on this floor.",
+                "french": "Les diablotins coûtent [power][ember] à ce niveau.",
+                "german": "Kobold-Einheiten kosten auf dieser Ebene [power][ember].",
+                "russian": "Цена бесов на этом этаже: [power][ember].",
+                "portuguese": "As unidades de Diabinho custam [power][ember] nesse andar.",
+                "chinese": "在本层中，小鬼单位的费用 [power][ember]。",
+                "spanish": "Las unidades Diablillo cuestan [power][ember] en este piso.",
+                "chinese_traditional": "在此樓層上，小鬼單位的費用為[power][ember]。",
+                "korean": "이 층의 임프 유닛 비용이 [power][ember]이 됩니다.",
+                "japanese": "このフロアでのインプユニットのコストが[power][ember]になる。"
+              },
+              "roomStateModifierClassName": "RoomStateUnitCostModifier",
+              "paramInt": -1
+            }
+          ],
+          "bonusDamage": 50,
+          "bonusHP": 10
+        },
+        {
+          "id": "ShardtailGainImps3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-6857132a1f6ce6c7-65b6971c36890a1408eae59d1c2289a4-v2",
+            "english": "Imp Parade III",
+            "french": "Défilé des diablotins III",
+            "german": "Koboldparade III",
+            "russian": "Парад бесов III",
+            "portuguese": "Parada do Diabinho III",
+            "chinese": "百鬼游行III",
+            "spanish": "Desfile de diablillos III",
+            "chinese_traditional": "小鬼遊行III",
+            "korean": "임프 행렬 III",
+            "japanese": "インプ・パレードIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-74cad8a598e682b4-65b6971c36890a1408eae59d1c2289a4-v2",
+                "english": "Add a <b>Fledgling Imp</b> and a <b>Welder Helper</b> to your hand.",
+                "french": "Ajoute un <b>jeune diablotin</b> et un <b>assistant soudeur</b> à votre main.",
+                "german": "Nimm eine <b>Junger Kobold</b>-Karte und eine <b>Schweißerbold</b>-Karte auf die Hand.",
+                "russian": "Добавляет в вашу руку <b>Юного беса</b> и <b>Помощника сварщика</b>.",
+                "portuguese": "Adiciona um <b>Diabinho Novato</b> e um <b>Ajudante Soldador</b> à sua mão.",
+                "chinese": "将一张<b>懵懂小鬼</b>和一张<b>焊工助手</b>加入你的手牌。",
+                "spanish": "Añade un <b>Diablillo novel</b> y un <b>Soldador ayudante</b> a tu mano.",
+                "chinese_traditional": "將一張<b>發育小鬼</b>和一張<b>焊接助手</b>加入你的手牌。",
+                "korean": "<b>꼬맹이 임프</b> 와 <b>용접 도우미</b>를 패에 추가합니다.",
+                "japanese": "手札に<b>ひよっこインプ</b>と<b>溶接助手</b>を追加する。"
+              },
+              "trigger": "post_combat",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3,
+                  "additionalParamInt": 1,
+                  "paramCardPool": "FledglingImpOnlyPool"
+                },
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3,
+                  "additionalParamInt": 1,
+                  "paramCardPool": "WelderHelperOnlyPool"
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-80b7748421c566c6-65b6971c36890a1408eae59d1c2289a4-v2",
+                "english": "Imp units cost [power][ember] on this floor.",
+                "french": "Les diablotins coûtent [power][ember] à ce niveau.",
+                "german": "Kobold-Einheiten kosten auf dieser Ebene [power][ember].",
+                "russian": "Цена бесов на этом этаже: [power][ember].",
+                "portuguese": "As unidades de Diabinho custam [power][ember] nesse andar.",
+                "chinese": "在本层中，小鬼单位的费用 [power][ember]。",
+                "spanish": "Las unidades Diablillo cuestan [power][ember] en este piso.",
+                "chinese_traditional": "在此樓層上，小鬼單位的費用為[power][ember]。",
+                "korean": "이 층의 임프 유닛 비용이 [power][ember]이 됩니다.",
+                "japanese": "このフロアでのインプユニットのコストが[power][ember]になる。"
+              },
+              "roomStateModifierClassName": "RoomStateUnitCostModifier",
+              "paramInt": -1
+            }
+          ],
+          "bonusDamage": 110,
+          "bonusHP": 15
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "ShardtailRallyBuff",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-9d88c3b502a5df6b-08f5b09b9f99fa54fb06e679fab33bac-v2",
+            "english": "Royalty",
+            "french": "Royauté",
+            "german": "Königlich",
+            "russian": "Королевская семья",
+            "portuguese": "Realeza",
+            "chinese": "王权",
+            "spanish": "Realeza",
+            "chinese_traditional": "皇族",
+            "korean": "왕족",
+            "japanese": "ロイヤルティ"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-45f39cfe222bd297-08f5b09b9f99fa54fb06e679fab33bac-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "card_monster_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "ShardtailAttackOnRally1",
+                    "bonusDamage": 10
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusHP": 5
+        },
+        {
+          "id": "ShardtailRallyBuff2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-a2ef79c842baa265-458ffffcac57af44cb801c4c1950ccec-v2",
+            "english": "Royalty II",
+            "french": "Royauté II",
+            "german": "Königlich II",
+            "russian": "Королевская семья II",
+            "portuguese": "Realeza II",
+            "chinese": "王权II",
+            "spanish": "Realeza II",
+            "chinese_traditional": "皇族II",
+            "korean": "왕족 II",
+            "japanese": "ロイヤルティII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-a45324720af64d83-458ffffcac57af44cb801c4c1950ccec-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "card_monster_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "ShardtailAttackOnRally2",
+                    "bonusDamage": 15
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 20
+        },
+        {
+          "id": "ShardtailRallyBuff3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-1304b85e5cb1a9dc-19f88c426d1679c48b24752017b8b69d-v2",
+            "english": "Royalty III",
+            "french": "Royauté III",
+            "german": "Königlich III",
+            "russian": "Королевская семья III",
+            "portuguese": "Realeza III",
+            "chinese": "王权III",
+            "spanish": "Realeza III",
+            "chinese_traditional": "皇族III",
+            "korean": "왕족 III",
+            "japanese": "ロイヤルティIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-85b281f842c9a923-19f88c426d1679c48b24752017b8b69d-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "card_monster_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "ShardtailAttackOnRally3",
+                    "bonusDamage": 25
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 50
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "ShardtailSacrificeImps",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-220001a2167396b3-eebce72c1be555e43bb42575f4882ead-v2",
+            "english": "Imperialist",
+            "french": "Impérialiste",
+            "german": "Hingabe",
+            "russian": "Империалист",
+            "portuguese": "Imperialista",
+            "chinese": "帝国主义者",
+            "spanish": "Imperialista",
+            "chinese_traditional": "帝國主義者",
+            "korean": "임프주의자",
+            "japanese": "インペリアリスト"
+          },
+          "unitAbilityUpgrade": {
+            "id": "ShardtailSacrificeImps1",
+            "nameKey": {
+              "key": "CardData_nameKey-49ce32ef984bac13-56d037c7edfb37b4cbe8f4e3f8a394f4-v2",
+              "english": "Imp Toss",
+              "french": "Lancer de diablotin",
+              "german": "Kobold-Wurf",
+              "russian": "Бросок беса",
+              "portuguese": "Arremesso de Diabinho",
+              "chinese": "小鬼投掷",
+              "spanish": "Lanzamiento de diablillo",
+              "chinese_traditional": "小鬼投擲",
+              "korean": "임프 토스",
+              "japanese": "インプ投げ"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-1da2e8ff826fbc2f-56d037c7edfb37b4cbe8f4e3f8a394f4-v2",
+              "english": "Kill all [imp] units. Deal [effect0.power] damage per [imp] to enemy units.",
+              "french": "Tue tous les <b>Diablotins</b>. Inflige <nobr>[effect0.power] DGT</nobr> par [imp] aux unités ennemies.",
+              "german": "Töte alle [imp]-Einheiten. Füge gegnerischen Einheiten [effect0.power] Schaden pro [imp] zu.",
+              "russian": "Убивает всех бесов. Наносит [effect0.power] урона вражеским бойцам за каждого беса.",
+              "portuguese": "Mata todas as unidades de [imp]. Causa [effect0.power] de dano às unidades inimigas para cada [imp].",
+              "chinese": "击杀所有[imp]单位。每个[imp]对所有敌方单位造成 [effect0.power] 点伤害",
+              "spanish": "Mata a todas las unidades [imp]. Inflige [effect0.power] de daño por [imp] a las unidades enemigas.",
+              "chinese_traditional": "殺死所有[imp]單位。對敵方單位造成等同於[imp]數量的[effect0.power]點傷害。",
+              "korean": "모든 [imp] 유닛을 처치합니다. [imp] 유닛 하나당 적 유닛에 [effect0.power]만큼 피해를 줍니다.",
+              "japanese": "すべての[imp]ユニットをキルする。敵ユニットに[imp]1体につき[effect0.power]のダメージを与える。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamageByUnitsKilled",
+                "targetMode": "room",
+                "targetTeamType": "both",
+                "paramInt": 20,
+                "paramStr": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "bonusHP": 10
+        },
+        {
+          "id": "ShardtailSacrificeImps2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-9e07273696a63ebd-247c9999a0f1af1499ff94df86a30dc0-v2",
+            "english": "Imperialist II",
+            "french": "Impérialiste II",
+            "german": "Hingabe II",
+            "russian": "Империалист II",
+            "portuguese": "Imperialista II",
+            "chinese": "帝国主义者II",
+            "spanish": "Imperialista II",
+            "chinese_traditional": "帝國主義者II",
+            "korean": "임프주의자 II",
+            "japanese": "インペリアリストII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "ShardtailSacrificeImps2",
+            "nameKey": {
+              "key": "CardData_nameKey-3a756183f64c8437-b162c6b890cdefc43b0f24eae7a11d89-v2",
+              "english": "Imp Toss II",
+              "french": "Lancer de diablotin II",
+              "german": "Kobold-Wurf II",
+              "russian": "Бросок беса II",
+              "portuguese": "Arremesso de Diabinho II",
+              "chinese": "小鬼投掷 II",
+              "spanish": "Lanzamiento de diablillo II",
+              "chinese_traditional": "小鬼投擲II",
+              "korean": "임프 토스 II",
+              "japanese": "インプ投げII"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-99601e49c0f73541-b162c6b890cdefc43b0f24eae7a11d89-v2",
+              "english": "Kill all [imp] units. Deal [effect0.power] damage per [imp] to enemy units.",
+              "french": "Tue tous les <b>Diablotins</b>. Inflige <nobr>[effect0.power] DGT</nobr> par [imp] aux unités ennemies.",
+              "german": "Töte alle [imp]-Einheiten. Füge gegnerischen Einheiten [effect0.power] Schaden pro [imp] zu.",
+              "russian": "Убивает всех бесов. Наносит [effect0.power] урона вражеским бойцам за каждого беса.",
+              "portuguese": "Mata todas as unidades de [imp]. Causa [effect0.power] de dano às unidades inimigas para cada [imp].",
+              "chinese": "击杀所有[imp]单位。每个[imp]对所有敌方单位造成 [effect0.power] 点伤害",
+              "spanish": "Mata a todas las unidades [imp]. Inflige [effect0.power] de daño por [imp] a las unidades enemigas.",
+              "chinese_traditional": "殺死所有[imp]單位。對敵方單位造成等同於[imp]數量的[effect0.power]點傷害。",
+              "korean": "모든 [imp] 유닛을 처치합니다. [imp] 유닛 하나당 적 유닛에 [effect0.power]만큼 피해를 줍니다.",
+              "japanese": "すべての[imp]ユニットをキルする。敵ユニットに[imp]1体につき[effect0.power]のダメージを与える。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamageByUnitsKilled",
+                "targetMode": "room",
+                "targetTeamType": "both",
+                "paramInt": 40,
+                "paramStr": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "bonusDamage": 10,
+          "bonusHP": 30
+        },
+        {
+          "id": "ShardtailSacrificeImps3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-d816ab527f920ab2-d199085d052b9e94aa9f43e0f10feec0-v2",
+            "english": "Imperialist III",
+            "french": "Impérialiste III",
+            "german": "Hingabe III",
+            "russian": "Империалист III",
+            "portuguese": "Imperialista III",
+            "chinese": "帝国主义者III",
+            "spanish": "Imperialista III",
+            "chinese_traditional": "帝國主義者III",
+            "korean": "임프주의자 III",
+            "japanese": "インペリアリストIII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "ShardtailSacrificeImps3",
+            "nameKey": {
+              "key": "CardData_nameKey-07a1dba918a61165-c59e42b0976a9a54cbdb6a18e4209306-v2",
+              "english": "Imp Toss III",
+              "french": "Lancer de diablotin III",
+              "german": "Kobold-Wurf III",
+              "russian": "Бросок беса III",
+              "portuguese": "Arremesso de Diabinho III",
+              "chinese": "小鬼投掷 III",
+              "spanish": "Lanzamiento de diablillo III",
+              "chinese_traditional": "小鬼投擲III",
+              "korean": "임프 토스 III",
+              "japanese": "インプ投げIII"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-9220665e3f4f3bf1-c59e42b0976a9a54cbdb6a18e4209306-v2",
+              "english": "Kill all [imp] units. Deal [effect0.power] damage per [imp] to enemy units.",
+              "french": "Tue tous les <b>Diablotins</b>. Inflige <nobr>[effect0.power] DGT</nobr> par [imp] aux unités ennemies.",
+              "german": "Töte alle [imp]-Einheiten. Füge gegnerischen Einheiten [effect0.power] Schaden pro [imp] zu.",
+              "russian": "Убивает всех бесов. Наносит [effect0.power] урона вражеским бойцам за каждого беса.",
+              "portuguese": "Mata todas as unidades de [imp]. Causa [effect0.power] de dano às unidades inimigas para cada [imp].",
+              "chinese": "击杀所有[imp]单位。每个[imp]对所有敌方单位造成 [effect0.power] 点伤害",
+              "spanish": "Mata a todas las unidades [imp]. Inflige [effect0.power] de daño por [imp] a las unidades enemigas.",
+              "chinese_traditional": "殺死所有[imp]單位。對敵方單位造成等同於[imp]數量的[effect0.power]點傷害。",
+              "korean": "모든 [imp] 유닛을 처치합니다. [imp] 유닛 하나당 적 유닛에 [effect0.power]만큼 피해를 줍니다.",
+              "japanese": "すべての[imp]ユニットをキルする。敵ユニットに[imp]1体につき[effect0.power]のダメージを与える。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamageByUnitsKilled",
+                "targetMode": "room",
+                "targetTeamType": "both",
+                "paramInt": 60,
+                "paramStr": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "bonusDamage": 40,
+          "bonusHP": 70
+        }
+      ]
+    }
+  ]
+}

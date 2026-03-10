@@ -1,0 +1,46 @@
+{
+  "id": "MothersRemnant1",
+  "name": "MothersRemnant1",
+  "regionRunEventPrefabVariant": {
+    "m_debugName": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_MothersRemnants_01.prefab",
+    "m_AssetGUID": "3ff8895ecaac2fa419e729b961bd39c7"
+  },
+  "followupEvents": [
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionBattleDelay",
+          "paramInt": 2
+        },
+        {
+          "conditionName": "FollowupConditionInkVariable",
+          "paramInt": 2,
+          "paramString": "growCounter"
+        }
+      ],
+      "followupEvent": "MothersRemnant2_Followup"
+    },
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionBattleDelay",
+          "paramInt": 1
+        },
+        {
+          "conditionName": "FollowupConditionInkVariable",
+          "paramInt": 1,
+          "paramString": "growCounter"
+        }
+      ],
+      "followupEvent": "MothersRemnant2_Followup"
+    }
+  ],
+  "storyId": "MothersRemnant",
+  "knotName": "MothersRemnant",
+  "numRunsCompletedToSee": 2,
+  "priorityTicketCount": 10,
+  "maxDistanceAllowed": 4,
+  "possibleRewards": [
+    "MothersRemnant1RelicReward"
+  ]
+}

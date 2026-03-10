@@ -1,0 +1,70 @@
+{
+  "id": "IncreaseFrostbiteStacks",
+  "name": "Cuttlebeard",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-bcae14c619c98041-6f9e791e50fa3c94e9318e08223dc9df-v2",
+    "english": "Cuttlebeard",
+    "french": "Barbe molluscicide",
+    "german": "Sepiabart",
+    "russian": "Щупальца",
+    "portuguese": "Barba de Lula",
+    "chinese": "乌贼触须",
+    "spanish": "Barbarcana",
+    "chinese_traditional": "烏賊鬍鬚",
+    "korean": "오징어 수염",
+    "japanese": "カトルの髭"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-0b3222b0af17d361-6f9e791e50fa3c94e9318e08223dc9df-v2",
+    "english": "When a unit gains [frostbite], it gains +[effect0.status0.power] stacks. [frostbite] does not decay.",
+    "french": "Lorsqu'une unité gagne [frostbite], elle obtient <nobr>+[effect0.status0.power] cumuls.</nobr> [frostbite] ne s'estompe pas.",
+    "german": "Erhält eine Einheit [frostbite], erlangt sie +[effect0.status0.power] Stapel. [frostbite] klingt nicht ab.",
+    "russian": "Когда на бойца накладывается [frostbite], он получает +[effect0.status0.power] слоя. [frostbite] не пропадает.",
+    "portuguese": "Quando uma unidade receber [frostbite], ela receberá +[effect0.status0.power] cargas. A [frostbite] não decai.",
+    "chinese": "当一个单位获得[frostbite]时，获得的层数 +[effect0.status0.power]。[frostbite]不会衰减。",
+    "spanish": "Cuando una unidad añade [frostbite], obtiene +[effect0.status0.power] acumulaciones.",
+    "chinese_traditional": "當一個單位獲得[frostbite]時，它獲得+[effect0.status0.power]層數。[frostbite]不會衰減。",
+    "korean": "유닛이 [frostbite] 효과를 획득하면 스택이 [effect0.status0.power] 늘어납니다. [frostbite] 효과는 소멸하지 않습니다.",
+    "japanese": "ユニットが[frostbite]を得ると、+[effect0.status0.power]スタックを得る。[frostbite]は減衰しない。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-1583688e3fe5d277-6f9e791e50fa3c94e9318e08223dc9df-v2",
+      "english": "It seems that the energy of the Cuttlehex and the Molluscmages does not die with them, but continues to surge through their beards so long as they are kept intact. I’ve kept some of the beards with me. They’ve been quite useful, but the tentacles make me a tad squeamish.",
+      "french": "Il semblerait que l'énergie d'un ensorsépion ou d'un limage ne périt pas avec eux, mais qu'elle continue de déferler dans leur barbe tant qu'elle reste intacte. J'ai gardé certaines de ces barbes et elles se sont avérées très utiles, mais les tentacules me mettent vraiment mal à l'aise.",
+      "german": "Scheinbar vergeht die Energie der Sepiahexe und der Molluskmagier nicht, wenn sie sterben, sondern verbleibt in ihren Bärten, solange diese intakt bleiben. Da sie durchaus nützlich sind, trage ich immer welche bei mir. Aber die Tentakel machen mich nervös.",
+      "russian": "Судя по всему, энергия, которую содержат Каракатицы и Моллюскомаги, не умирает вместе с ними, но продолжает наполнять их «бороды», пока те остаются в целости. Я сохранил несколько образцов на всякий случай. Они могут пригодиться, хотя эти щупальца и вызывают у меня брезгливость.",
+      "portuguese": "Parece que a energia dos Luliços e dos Magoluscos não morre com eles, mas continua a surgir por meio da barba deles, desde que seja mantida intacta. Eu mantive algumas comigo. Elas têm sido bastante úteis, mas os tentáculos me dão um pouco de nojo.",
+      "chinese": "似乎邪术乌贼与软体法师即便是在死亡之后，它们的能量也并不会随之消失。只要它们的触须仍然保持完整，这些能量就会涌动在触须之中。我保存了一部分触须。虽然它们非常有用，但触手还是会让我觉得有点恶心。",
+      "spanish": "Parece que la energía de las sepiarcanas y los magoluscos no muere con ellos, sino que permanece en sus barbas mientras estén intactas. Me he guardado algunas. Son muy útiles, pero los tentáculos me dan un poco de grima.",
+      "chinese_traditional": "看來烏賊妖和軟體魔法師的能量並不會隨著他們死亡而消失，而是只要他們的鬍鬚保持完整就會繼續湧動。我保留了一些鬍鬚。它們很有用，但觸手讓我有點不舒服。",
+      "korean": "주술 오징어와 연체 마법사가 지닌 에너지는 수염을 유지하는 한 죽지 않고 계속해서 강하게 흐른다. 나도 이들의 수염 몇 개를 지니고 다닌다. 많은 면에서 도움이 되지만, 촉수 때문에 좀 징그럽다.",
+      "japanese": "カトルヘックスとモラスクメイジのエネルギーは、彼らの死では消えず、そのままの保管している限り、彼らのヒゲを通して湧き続けるようだ。そのヒゲをいくつか保管している。とても役立っているが、触手は少々気味が悪い。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnStatusApplied",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 2
+        }
+      ],
+      "paramSourceTeam": "none",
+      "paramInt": 1
+    },
+    {
+      "relicEffectClassName": "RelicEffectPreventStatusEffectDecay",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "none"
+    }
+  ]
+}

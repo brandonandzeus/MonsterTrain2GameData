@@ -1,0 +1,83 @@
+{
+  "id": "TwinShards",
+  "name": "Helical Crystalis",
+  "nameKey": {
+    "key": "CardData_nameKey-afa867f54f335d6b-0494b3aaff86c5c4681944d663dfb0b7-v2",
+    "english": "Helical Crystalis",
+    "french": "Cristallisation hélicoïdale",
+    "german": "Helixkristalle",
+    "russian": "Спиральные кристаллы",
+    "portuguese": "Cristais Espirais",
+    "chinese": "螺旋结晶",
+    "spanish": "Cristales helicoidales",
+    "chinese_traditional": "螺旋結晶",
+    "korean": "나선 결정",
+    "japanese": "螺旋の水晶"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-e8be78cac15876a6-0494b3aaff86c5c4681944d663dfb0b7-v2",
+    "english": "Deal {[effect0.power]} damage to the front enemy unit, twice.",
+    "french": "Inflige <nobr>{[effect0.power]} DGT</nobr> à l'ennemi en 1re ligne, deux fois.",
+    "german": "Füge der vordersten gegnerischen Einheit 2x {[effect0.power]} Schaden zu.",
+    "russian": "Дважды наносит переднему вражескому бойцу {[effect0.power]} урона.",
+    "portuguese": "Causa {[effect0.power]} de dano à unidade inimiga à frente, duas vezes.",
+    "chinese": "对前排敌方单位造成 {[effect0.power]} 点伤害，重复两次。",
+    "spanish": "Inflige {[effect0.power]} de daño a la primera unidad enemiga dos veces.",
+    "chinese_traditional": "對前排敵方單位造成{[effect0.power]}點傷害，重複兩次。",
+    "korean": "전열 적 유닛에 {[effect0.power]}의 피해를 2회 입힙니다.",
+    "japanese": "前列の敵ユニットに{[effect0.power]}のダメージを2回与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a83d65663cd24502-0494b3aaff86c5c4681944d663dfb0b7-v2",
+      "english": "Physical combat has never been a strong suit of the Stygian Guard. Thankfully, their control of the energy coming from the Unnamed has made them deadly protectors of the inner Rings of Hell.",
+      "french": "Le combat physique n'a jamais été le point fort des Gardes stygiens. Fort heureusement, grâce à leur maîtrise de l'énergie du Sans-nom, ils sont devenus les protecteurs meurtriers des cercles intérieurs de l'enfer.",
+      "german": "Die Stygische Wache war noch nie besonders gut für körperbetonte Auseinandersetzungen geeignet. Dafür sind sie dank ihrer Kontrolle über die Energie des Namenlosen hervorragende Beschützer der inneren Kreise der Hölle.",
+      "russian": "Рукопашный бой никогда не входил в список сильных сторон Стигийской стражи. К счастью, они умеют контролировать энергию, получаемую от Безымянного, и благодаря ей являются смертоносными защитниками внутренних Кругов Ада.",
+      "portuguese": "O combate físico nunca foi a especialidade da Guarda do Estige. Por sorte, o controle que eles possuem sob a energia emanada pelo Inominado fazem deles protetores imbatíveis dos Círculos do Inferno.",
+      "chinese": "冥卫从来都不擅长近身战斗。幸好，它们可以控制来自无名者的力量，这使得它们成为地狱核心区域致命的守护者。",
+      "spanish": "El combate cuerpo a cuerpo nunca ha sido el punto fuerte de la Guardia Estigia. Por suerte, su control de la energía del Ignoto los ha convertido en protectores letales de los anillos interiores del Infierno.",
+      "chinese_traditional": "近身戰鬥從來就不是冥河守衛的強項。值得慶幸的是，他們對來自無名者能量的控制使他們成了為地獄界域內部致命的守護者。",
+      "korean": "물리적 전투는 명계 수비대의 강점이 아니었다. 다행히 이름 없는 자의 힘을 통제할 수 있게 되면서, 이들은 지옥의 고리 내에서 가장 치명적인 수호자가 되었다.",
+      "japanese": "ステュクスの墓守は物理的な戦闘が昔から苦手だ。しかし、名もなき巨人から放たれるエネルギーの制御に長けており、それにより地獄の内部のリングの強力な守護者となったのだ。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_HelicalCrystals.prefab",
+    "m_AssetGUID": "f2fcc54ec7b682046b73e14fa8a464cf"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 35,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Ancient Magic Impact_PS.prefab",
+          "m_AssetGUID": "cb226d23beb7dfd4f8bd15c19efeebfc"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 35,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Ancient Magic Impact_PS.prefab",
+          "m_AssetGUID": "cb226d23beb7dfd4f8bd15c19efeebfc"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Taylor Bray"
+}

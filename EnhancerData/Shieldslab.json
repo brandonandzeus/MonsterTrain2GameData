@@ -1,0 +1,83 @@
+{
+  "id": "SoulSavior_UnitUpgradeClanUmbraDamageShield",
+  "name": "Shieldslab",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-ae58b5f0810ed731-bb982d54739aad14a82ec80bb1b2dfe4-v2",
+    "english": "Shieldslab",
+    "french": "Gemme protectrice",
+    "german": "Platte des Schildes",
+    "russian": "Пласт щита",
+    "portuguese": "Placa do Escudo",
+    "chinese": "护盾石板",
+    "spanish": "Losa escudo",
+    "chinese_traditional": "護盾石板",
+    "korean": "방패의 서판",
+    "japanese": "盾の原石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-8abe33293d916a8a-bb982d54739aad14a82ec80bb1b2dfe4-v2",
+    "english": "Upgrade a unit with [damageshield] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec [damageshield] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit [damageshield] [effect0.upgrade.status0.power].",
+    "russian": "Усиление бойца: [damageshield] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com [damageshield] [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 [damageshield] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con [damageshield] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[damageshield][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드함과 동시에 [damageshield] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[damageshield] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassUmbra",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "SoulSavior_AddDamageShield",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-3369b5ced5c46bfa-be31feec9f1f49648a0dfcfffe5ee273-v2",
+          "english": "Shieldslab",
+          "french": "Gemme protectrice",
+          "german": "Platte des Schildes",
+          "russian": "Пласт щита",
+          "portuguese": "Placa do Escudo",
+          "chinese": "护盾石板",
+          "spanish": "Losa escudo",
+          "chinese_traditional": "護盾石板",
+          "korean": "방패의 서판",
+          "japanese": "盾の原石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-f580f2368243d771-be31feec9f1f49648a0dfcfffe5ee273-v2",
+          "english": "Gain [damageshield] [status0.power].",
+          "french": "Octroie [damageshield] [status0.power].",
+          "german": "Erhalte [damageshield] [status0.power].",
+          "russian": "Дается [damageshield] х[status0.power].",
+          "portuguese": "Recebe [damageshield] [status0.power].",
+          "chinese": "获得 [damageshield] [status0.power]。",
+          "spanish": "Añade [damageshield] [status0.power].",
+          "chinese_traditional": "獲得[damageshield][status0.power]。",
+          "korean": "[damageshield] [status0.power] 효과를 획득합니다.",
+          "japanese": "[damageshield] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "damage shield",
+            "count": 5
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

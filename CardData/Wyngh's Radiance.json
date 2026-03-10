@@ -1,0 +1,90 @@
+{
+  "id": "WynghsRadiance",
+  "name": "Wyngh's Radiance",
+  "nameKey": {
+    "key": "CardData_nameKey-3a3419122903ed0d-2c7b0cf30e710d446aec0e8ddfe00b11-v2",
+    "english": "Wyngh's Radiance",
+    "french": "Radiance de Wyngh",
+    "german": "Wynghs Strahlen",
+    "russian": "Сияние Винг",
+    "portuguese": "Radiância de Wyngh",
+    "chinese": "维格之光",
+    "spanish": "Resplandor de Wyngh",
+    "chinese_traditional": "溫格的輝煌",
+    "korean": "윙흐의 광휘",
+    "japanese": "ウィングの光"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-73fca46b0bef12ca-2c7b0cf30e710d446aec0e8ddfe00b11-v2",
+    "english": "[advance]. Apply [trait0.statusmultiplier][x] [meleeweakness].",
+    "french": "[advance]. Applique [trait0.statusmultiplier][x] [meleeweakness].",
+    "german": "[advance]. Wende [trait0.statusmultiplier][x] [meleeweakness] an.",
+    "russian": "[advance]. Накладывается [meleeweakness] [x][trait0.statusmultiplier].",
+    "portuguese": "<b>Avança</b>. Aplica [trait0.statusmultiplier][x] [meleeweakness].",
+    "chinese": "[advance]。施加 [trait0.statusmultiplier][x] [meleeweakness]。",
+    "spanish": "[advance]. Añade [meleeweakness] [trait0.statusmultiplier][x].",
+    "chinese_traditional": "[advance]。施加[trait0.statusmultiplier][x][meleeweakness]。",
+    "korean": "[advance]. [trait0.statusmultiplier][x] [meleeweakness] 효과를 적용합니다.",
+    "japanese": "[advance]。[trait0.statusmultiplier][x] [meleeweakness]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-b8563867d6c40710-2c7b0cf30e710d446aec0e8ddfe00b11-v2",
+      "english": "With an aching heart, Lieutenant Talos lifted her old friend’s spear and prayed to Wyngh for protection. She felt a familiar warmth fill her heart. Perhaps it was her friend, not Wyngh, who answered.",
+      "french": "Le cœur douloureux, Talos souleva la lance de sa vieille amie et pria Wyngh de la protéger. Elle sentit une chaleur familière envahir son cœur. Peut-être était-ce son amie, et non Wyngh, qui lui avait répondu.",
+      "german": "Mit schwerem Herzen hob Leutnant Talos den Speer ihrer alten Freundin und betete zu Wyngh um Schutz. Sie spürte, wie eine vertraute Wärme ihr Herz erfüllte. Vielleicht war es ihre Freundin, die antwortete, und nicht Wyngh.",
+      "russian": "С болью в сердце лейтенант Талос подняла копье своей старой подруги и попросила защиты у Винг. Она почувствовала, как ее сердце заполнило знакомое тепло. Возможно, это не Винг, а сама подруга ответила ей?",
+      "portuguese": "Com dor no coração, a Tenente Talos ergueu a lança de seu velho amigo e orou a Wyngh por proteção. Ela sentiu um calor familiar encher seu coração. Talvez tenha sido seu amigo, e não Wyngh, quem respondeu.",
+      "chinese": "伴随着心痛，塔洛丝中尉举起旧友的长矛，向维格祈祷，祈求庇佑。她感觉到一股熟悉的暖流充满自己内心。也许回应她的是她的朋友，而非维格。",
+      "spanish": "Con pesar en su corazón, la teniente Talos alzó la lanza de su viejo amigo y rezó a Wyngh en busca de protección. Sintió una calidez familiar llenar su corazón. Tal vez fuera su amigo quien respondiera, y no Wyngh.",
+      "chinese_traditional": "塔洛斯中尉懷著痛苦的心情，舉起她老朋友的長矛，向溫格祈求保護。她感到一股熟悉的暖意充滿了她的心。回應她的也許是她的朋友，而不是溫格。",
+      "korean": "탈로스 부관은 비통한 마음으로 옛 친우의 창을 들어 윙흐에게 보호를 청했다. 그러자 익숙한 따스함이 가슴 속에 퍼져 나갔다. 아마도 그 요청을 들어준 것은 윙흐가 아닌 옛 친구였으리라.",
+      "japanese": "タロス副官は心を痛めながら、古い友人の槍を持ち上げ、ウィングに加護を祈った。彼女は、懐かしい温かさが心を満たすのを感じた。おそらく、応えたのはウィングではなく、友人だったのだろう。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_WynghsRadiance.prefab",
+    "m_AssetGUID": "8de066955aabf4a4a9bc03f285f7b90c"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "melee weakness",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "played_cost",
+      "paramInt": 1,
+      "traitIsRemovable": false,
+      "stackMode": "param_int"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both"
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "melee weakness",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "unlockLevel": 10,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Aubrey Kim"
+}

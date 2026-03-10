@@ -1,0 +1,79 @@
+{
+  "id": "SelflessSacrifice",
+  "name": "Selfless Sacrifice",
+  "nameKey": {
+    "key": "CardData_nameKey-983745157ff886e3-50ee0a83a80ac2e41b821a757741a7ec-v2",
+    "english": "Selfless Sacrifice",
+    "french": "Pur sacrifice",
+    "german": "Selbstloses Opfer",
+    "russian": "Самозабвенная жертва",
+    "portuguese": "Sacrifício Altruísta",
+    "chinese": "无私牺牲",
+    "spanish": "Sacrificio altruista",
+    "chinese_traditional": "無私的犧牲",
+    "korean": "이타적인 희생",
+    "japanese": "無償の犠牲"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-c5f2ddbe7b9b9fac-50ee0a83a80ac2e41b821a757741a7ec-v2",
+    "english": "[advance]. Apply [damageshield] [effect1.status0.power].",
+    "french": "[advance]. Confère [damageshield] [effect1.status0.power].",
+    "german": "[advance]. Wende [damageshield] [effect1.status0.power] an.",
+    "russian": "[advance]. Накладывается [damageshield] х[effect1.status0.power].",
+    "portuguese": "<b>Avança</b>. Aplica [damageshield] [effect1.status0.power].",
+    "chinese": "[advance]。获得 [damageshield] [effect1.status0.power]。",
+    "spanish": "[advance]. Añade [damageshield] [effect1.status0.power].",
+    "chinese_traditional": "[advance]。施加[damageshield][effect1.status0.power]。",
+    "korean": "[advance]. [damageshield] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[advance]。[damageshield] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-e5a987155246cdcb-50ee0a83a80ac2e41b821a757741a7ec-v2",
+      "english": "“When you have no more weapons in your arsenal, all you can offer is yourself.”\n—Banished motto",
+      "french": "<nobr>« Lorsque</nobr> vous n'avez plus d'armes dans votre arsenal, tout ce que vous avez à donner, c'est <nobr>vous-même. »</nobr> \n— Devise des Bannis",
+      "german": "„Wenn du keine Waffen mehr in deinem Arsenal hast, bleibst nur mehr du selbst.“\n– Motto der Verbannten",
+      "russian": "«Когда арсенал опустеет, твоим единственным оружием будешь ты сам».\n— Девиз Изгнанников",
+      "portuguese": "“Quando não se tem mais armas em seu arsenal, tudo o que pode oferecer é você mesmo.”\n— Lema dos Expurgados",
+      "chinese": "“当你的军械库里没有武器时 ，你自己就是武器。”\n——流放者座右铭",
+      "spanish": "«Cuando no te quedan armas en el arsenal, solo puedes ofrecer tu propio cuerpo».\n—Lema de los Desterrados",
+      "chinese_traditional": "「當你的武器庫裡沒有更多武器時，你能拿得出手的就只有你自己。」\n——流放者座右銘",
+      "korean": "“무기고에 더는 무기가 없다면, 남은 것은 오직 자신의 육체 뿐이다.”\n- 추방자의 좌우명",
+      "japanese": "「武器庫の武器がなくなってしまったら、自分自身を武器とするしかないのだ」\n—脱天使のモットー"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_SelflessSacrifice.prefab",
+    "m_AssetGUID": "d51a6a6133185ba46b31d784e140693f"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both"
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

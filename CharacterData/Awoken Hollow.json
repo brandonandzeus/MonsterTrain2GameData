@@ -1,0 +1,138 @@
+{
+  "id": "MonsterHollowGolem",
+  "name": "Awoken Hollow",
+  "nameKey": {
+    "key": "CharacterData_nameKey-6acc6a42067bb9e0-0b15ea59d59e1e44a949e54d7274fb65-v2",
+    "english": "Awoken Hollow",
+    "french": "Réceptacle éveillé",
+    "german": "Erweckte Hülle",
+    "russian": "Пробужденный пустой",
+    "portuguese": "Oco Desperto",
+    "chinese": "觉者空灵",
+    "spanish": "Despertado hueco",
+    "chinese_traditional": "覺醒者空心人",
+    "korean": "깨어난 공허한 존재",
+    "japanese": "覚醒のホロウ"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-a1b3503436037b78-0b15ea59d59e1e44a949e54d7274fb65-v2",
+      "english": "These souls, imprisoned in steel, try to break free before they lose their minds to the Wildwood. I had no idea of this until the Channelers told me. It took me some time to trust them again after that revelation. ",
+      "french": "Emprisonnées dans de l'acier, ces âmes tentent de se libérer avant de devenir esclaves du Boissauvage. Je n'en avais aucune idée avant que les occultistes ne m'en parlent. Après cette révélation, il m'a fallu quelque temps pour arriver à me fier de nouveau à eux.",
+      "german": "Diese in Stahl gefangenen Seelen versuchen, sich zu befreien, bevor ihr Verstand sich dem Wildholz beugt. Ich hatte davon keine Ahnung, bis die Okkultisten es mir erklärten. Nach dieser Offenbarung dauerte es eine ganze Weile, bis ich ihnen wieder vertrauen konnte.",
+      "russian": "Эти души, заточенные в стальной клети, пытаются вырваться на свободу, пока Диколесье не лишило их рассудка. Об этом мне рассказали Заклинатели. И после таких откровений мне непросто было снова им довериться. ",
+      "portuguese": "Essas almas aprisionadas no aço tentam se libertar antes de perder a consciência para a Mata Selvagem. Não fazia ideia desse combate interior até os Canalizadores me contarem. Demorei para restaurar a confiança neles depois dessa revelação.",
+      "chinese": "这些生物的灵魂被囚禁在钢铁之中，渴望挣脱束缚，但最终还是被野林占据了神智。这些事情我一开始并不知道，是通灵者们告诉我的。知道了这个事实之后，我思考了一段时间之后才再次信任它们。",
+      "spanish": "Estas almas atrapadas en el acero intentan liberarse antes de perder su consciencia frente al Bosque Salvaje. No tenía constancia de ello hasta que me lo explicaron los canalizadores. Me llevó un tiempo volver a confiar en ellos tras esa revelación.",
+      "chinese_traditional": "這些被困在鋼鐵中的靈魂試圖在因為荒野而失去理智之前掙脫。直到引導者告訴我，我才知道這一點。在得知這件事情之後，我花了一些時間才重新信任他們。",
+      "korean": "강철 안에 갇힌 이 영혼은 와일드우드에게 정신을 침식당하기 전에 그곳을 벗어나려 한다. 연결자가 이 사실을 직접 말하기 전까지는 몰랐던 사실로, 이후 이들을 다시 믿기까지 약간의 시간이 필요했다.",
+      "japanese": "鋼鉄に閉じ込められた魂は、ワイルドウッドに精神を奪われる前に逃げ出そうとする。それをチャネラーから教えられるまで、私はまったく知らなかった。その暴露の後で、彼らを再び信頼するまでにしばらく時間がかかった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Golem.prefab",
+    "m_AssetGUID": "4dcca7a2b88b6294db89c10b9900bcd3"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-71b0459bc6d08a05-0b15ea59d59e1e44a949e54d7274fb65-v2",
+        "english": "Gain [effect0.power] max health.",
+        "french": "Octroie [effect0.power] PV max.",
+        "german": "Erhalte [effect0.power] maximale Gesundheit dazu.",
+        "russian": "Повышает макс. здоровье на [effect0.power].",
+        "portuguese": "Recebe [effect0.power] de vida máxima.",
+        "chinese": "获得 [effect0.power] 最大生命值。",
+        "spanish": "Añade [effect0.power] de salud máxima.",
+        "chinese_traditional": "獲得[effect0.power]點最大生命值。",
+        "korean": "최대 체력이 [effect0.power] 증가합니다.",
+        "japanese": "[effect0.power]の最大体力を得る。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAdjustMaxHealth",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramInt": 60
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-116088e5850e4d52-0b15ea59d59e1e44a949e54d7274fb65-v2",
+        "english": "<b><nobr>Cultivate [effect0.upgrade.bonusdamage]</nobr></b>.",
+        "french": "<b><nobr>Culture [effect0.upgrade.bonusdamage]</nobr></b>.",
+        "german": "<b><nobr>Kultivieren [effect0.upgrade.bonusdamage]</nobr></b>.",
+        "russian": "<b><nobr>Культивация [effect0.upgrade.bonusdamage]</nobr></b>.",
+        "portuguese": "<b><nobr>Cultivar [effect0.upgrade.bonusdamage]</nobr></b>.",
+        "chinese": "<b><nobr>滋养 [effect0.upgrade.bonusdamage]</nobr></b>。",
+        "spanish": "<b><nobr>Cultivo [effect0.upgrade.bonusdamage]</nobr></b>",
+        "chinese_traditional": "<b><nobr>培育[effect0.upgrade.bonusdamage]</nobr></b>。",
+        "korean": "<b><nobr>배양 [effect0.upgrade.bonusdamage]</nobr></b>.",
+        "japanese": "<b><nobr>培養[effect0.upgrade.bonusdamage]</nobr></b>。"
+      },
+      "trigger": "on_heal",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "weakest",
+          "targetTeamType": "monsters",
+          "paramCardUpgradeData": {
+            "id": "AwokenHollowTrigger",
+            "bonusDamage": 3,
+            "bonusHP": 3
+          },
+          "additionalTooltips": [
+            {
+              "descriptionKey": {
+                "key": "CharacterAbility_Cultivate_TooltipText",
+                "english": "Increase the [attack] and [health] of a non-morsel friendly unit with the lowest health by the <b>Cultivate</b> value.",
+                "french": "Augmente l'[attack] et les [health] de l'allié non sous-bistre ayant le moins de PV de la valeur <b>Culture</b>.",
+                "german": "Erhöhe [attack] und [health] einer verbündeten Nicht-Nugget-Einheit mit der niedrigsten Gesundheit um den <b>Kultivieren</b>-Wert.",
+                "russian": "Повышает [attack] и [health] союзника не-заморыша с наименьшим здоровьем на показатель <b>культивации</b>.",
+                "portuguese": "Aumenta o [attack] e a [health] de uma unidade aliada que não seja um Lancho com a menor quantidade de vida pelo valor de <b>Cultivar</b>.",
+                "chinese": "提高生命值最少的友方非影裔单位的[attack]和[health]，数值与<b>滋养</b>层数相同。",
+                "spanish": "Aumenta el [attack] y [health] de la unidad aliada no pincho con menor salud en el valor de <b>Cultivo</b>.",
+                "chinese_traditional": "使生命值最低的非莫塞爾友方單位的[attack]和[health]增加等同於<b>培育</b>值的數量。",
+                "korean": "<b>배양</b> 누적 수치만큼 체력이 가장 낮은 작은 그림자 외의 아군 유닛의 [attack]과 [health]이 증가합니다.",
+                "japanese": "体力が一番低い非モーゼルの味方ユニットの[attack]と[health]を<b>培養</b>と等しい値で増加させる。"
+              },
+              "titleKey": {
+                "key": "CharacterAbility_Cultivate_CardText",
+                "english": "<b>Cultivate</b>",
+                "french": "<b>Culture</b>",
+                "german": "<b>Kultivieren</b>",
+                "russian": "<b>Культивация</b>",
+                "portuguese": "<b>Cultivar</b>",
+                "chinese": "<b>滋养</b>",
+                "spanish": "<b>Cultivo</b>",
+                "chinese_traditional": "<b>培育</b>",
+                "korean": "<b>배양</b>",
+                "japanese": "<b>培養</b>"
+              }
+            }
+          ],
+          "targetCharacterExcludedSubtypes": [
+            "SubtypesData_Snack"
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 3,
+  "health": 25,
+  "attackDamage": 15,
+  "subtypeKeys": [
+    "SubtypesData_Golem_2d79cb56-4041-4d63-b7bf-8d2185923eda",
+    "SubtypesData_BannerUnit"
+  ],
+  "characterChatterData": "AwokenHollowChatterData"
+}

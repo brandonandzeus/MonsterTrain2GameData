@@ -1,0 +1,121 @@
+{
+  "id": "Boss_Level6_AngelDuo_Savage_Variant3_RevengeAttack",
+  "name": "Stryx Bloody Harvest",
+  "nameKey": {
+    "key": "CharacterData_nameKey-93d410e443ac4284-2daff4b3961c82249a2fb362c0ebb75f-v2",
+    "english": "Stryx",
+    "french": "Stryx",
+    "german": "Stryx",
+    "russian": "Стрикс",
+    "portuguese": "Stryx",
+    "chinese": "斯特里克斯",
+    "spanish": "Estrix",
+    "chinese_traditional": "史崔克斯",
+    "korean": "스트릭스",
+    "japanese": "ストリクス"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f2cdb7c856a9be90-2daff4b3961c82249a2fb362c0ebb75f-v2",
+      "english": "Her mind might be consumed by the bloodthirsty delirium of Savagery’s corruption, but she has never forgotten her promise to protect her younger brother. Wherever Hallow flies, Stryx is always close by.",
+      "french": "Son esprit a beau être corrompu par le délire sanguinaire de Sauvagerie, elle n'a jamais oublié la promesse de protéger son jeune frère. Où que Hallow aille, Stryx est toujours à ses côtés.",
+      "german": "Ihr Geist mag von der blutrünstigen Verderbnis der Grausamkeit verzehrt worden sein, doch sie hat nie ihr Versprechen vergessen, ihren jüngeren Bruder zu beschützen. Wo auch immer sich Hallow befindet, Stryx ist in der Nähe.",
+      "russian": "Ее разумом овладела Скверна Изувера. Стрикс жаждет крови, но она никогда не забудет, что поклялась защищать своего младшего брата. Куда бы ни полетел Хэллоу, Стрикс всегда будет рядом.",
+      "portuguese": "A mente pode estar consumida pelo delírio sanguinário da corrupção da Barbárie, mas ela nunca esqueceu a promessa de proteger seu irmão mais novo. Para onde quer que Hallow voe, Stryx está sempre por perto.",
+      "chinese": "她的心智或许被野蛮泰坦的腐化吞噬，变得嗜血而疯狂，但她从未忘记自己曾承诺过会守护好弟弟。哈洛无论飞去哪里，斯特里克斯都紧紧相随。",
+      "spanish": "Su mente ha caído ante la corrupción y el delirio sanguinario de Salvajismo, pero no ha olvidado la promesa de proteger a su hermano pequeño. Estrix seguirá a Sacro vaya a donde vaya.",
+      "chinese_traditional": "她的心智，或許早已被野性腐化後的嗜血狂熱所吞噬，但守護弟弟的承諾，卻從未遺忘。無論哈洛飛向何方，史崔克斯的身影，始終緊隨其後。",
+      "korean": "그녀의 정신은 세비저리의 타락이 불러온 피에 굶주린 망상에 잠식될지라도, 어린 남동생을 지키겠다는 약속만은 결코 잊지 않았다. 할로우가 어디로 날아가든, 스트릭스는 언제나 곁에 있다.",
+      "japanese": "彼女の精神はサベジャリーによる血に飢えたせん妄に囚われてしまっているかもしれないが、弟を守るという約束は決して忘れない。ハロウがどこに行こうとも、そばにはストリクスがいる。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Sava.prefab",
+    "m_AssetGUID": "05c88c521fe112541ad1f1e325411e9d"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "multistrike",
+      "count": 1
+    },
+    {
+      "statusId": "pyrebane",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-603cc94482582ded-2daff4b3961c82249a2fb362c0ebb75f-v2",
+        "english": "Hallow gains [multistrike] [effect0.status0.power]. Relentless begins next turn.",
+        "french": "Hallow gagne [multistrike] [effect0.status0.power]. Impitoyable au prochain tour.",
+        "german": "Hallow erhält [multistrike] [effect0.status0.power]. Unerbittlich beginnt im nächsten Zug.",
+        "russian": "Хэллоу дается [multistrike] х[effect0.status0.power]. Упорство начинается со следующего хода.",
+        "portuguese": "Hallow recebe [multistrike] [effect0.status0.power]. Implacável começará no próximo turno.",
+        "chinese": "哈洛获得 [multistrike] [effect0.status0.power]。下一回合开始时获得不懈。",
+        "spanish": "Sacro añade [multistrike] [effect0.status0.power]. Implacable comienza en el próximo turno.",
+        "chinese_traditional": "哈洛獲得[multistrike][effect0.status0.power]。下一回合開始無情。",
+        "korean": "할로우가 [multistrike] [effect0.status0.power] 효과를 얻습니다. 다음 턴부터 집요함이 시작됩니다.",
+        "japanese": "ハロウが[multistrike] [effect0.status0.power]を得る。次のターンに猛進が発動する。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "tower",
+          "targetTeamType": "both",
+          "targetCharacterSubtype": "SubtypesData_EntropicAngel",
+          "paramStatusEffects": [
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "effectStateName": "CardEffectForceRelentless",
+          "targetMode": "room",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ],
+          "paramInt": 1
+        }
+      ]
+    }
+  ],
+  "bossActionGroups": [
+    {
+      "actions": [
+        {
+          "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+          "paramTeamType": "monsters"
+        }
+      ],
+      "numRepeats": 0
+    }
+  ],
+  "size": 6,
+  "health": 1100,
+  "isCompanionBoss": true,
+  "validBossAttackPhase": "both",
+  "isMiniboss": true,
+  "deathType": "boss",
+  "loopsBetweenTrainFloors": true,
+  "attackDamage": 13,
+  "bossTitanAffinity": "savagery",
+  "statusEffectImmunities": [
+    "rooted"
+  ],
+  "subtypeKeys": [
+    "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
+    "SubtypesData_BossAll",
+    "SubtypesData_SavageAngel"
+  ],
+  "characterChatterData": "Boss11_AngelDuo_Savagery",
+  "enemyRelicData": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth",
+  "artistAttribution": "Genevieve Bega"
+}

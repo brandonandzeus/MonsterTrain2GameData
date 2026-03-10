@@ -1,0 +1,84 @@
+{
+  "id": "ShardChanneler",
+  "name": "Shard Channeler",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "rare",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ShardChanneler.prefab",
+    "m_AssetGUID": "59f6a6f5f6dfd36458c8f7539c1be5f3"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "ShardChanneler",
+        "nameKey": {
+          "key": "CharacterData_nameKey-44800192a2ad89e1-07bef0b8712e5374e9f1e20f1b06367a-v2",
+          "english": "Shard Channeler",
+          "french": "Pyroccultiste",
+          "german": "Splitterokkultist",
+          "russian": "Заклинатель осколков",
+          "portuguese": "Canalizador de Fragmentos",
+          "chinese": "碎片通灵者",
+          "spanish": "Canalizador de fragmentos",
+          "chinese_traditional": "碎片引導者",
+          "korean": "파편 연결자",
+          "japanese": "シャード・チャネラー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-7b928b4a2375a76a-07bef0b8712e5374e9f1e20f1b06367a-v2",
+            "english": "Rather than nurture and care for the growth of the Wildwood, some Channelers choose to defend and protect it by channeling the power of the Pyre shards embedded throughout the forest, using a method I developed for them.",
+            "french": "Au lieu de s'assurer directement de la bonne croissance du Boissauvage, certains occultistes choisissent de le défendre en exploitant la puissance des éclats de Brasier incrustés dans la forêt, à l'aide d'une méthode que je leur ai apprise.",
+            "german": "Manche Okkultisten verzichten darauf, Wildholz zu hegen und zu pflegen. Stattdessen beschwören sie die Höllenglutsplitter, die überall im Wald eingebettet sind, um diesen zu verteidigen. Die von ihnen verwendete Methode wurde von mir persönlich entwickelt.",
+            "russian": "Вместо того, чтобы ухаживать за Диколесьем, некоторые Заклинатели предпочитают защищать его с помощью моей технологии, используя силу разбросанных по лесу осколков Пекла.",
+            "portuguese": "Em vez de nutrir e cuidar do crescimento da Mata Selvagem, alguns Canalizadores optam por defendê-la e protegê-la, canalizando o poder dos fragmentos da Pira embutidos na floresta, usando um método que desenvolvi para eles.",
+            "chinese": "部分通灵者并不会花心血照顾野林林木的生长。相反，它们会通过某种由我研究出来的方法，引导整个森林中的薪火碎片的力量，以此来守护野林。",
+            "spanish": "En lugar de fomentar y asegurar el crecimiento del Bosque Salvaje, algunos canalizadores eligen defenderlo utilizando el poder de los fragmentos de la Pira incrustados en el bosque con un método que desarrollé para ellos.",
+            "chinese_traditional": "與其培育和照料荒野的生長，一些引導者選擇透過引導森林四處既有的火堆碎片的力量來保衛和保護它。而這其中的做法，便是我教他們的。",
+            "korean": "몇몇 연결자는 와일드우드의 성장을 지켜보거나 돌보는 대신, 내가 개발한 방법을 사용해 숲 전체에 깔린 화로 파편의 힘을 채널링하여 이들을 지키고 보호하는 방법을 선택했다.",
+            "japanese": "チャネラーの中には、ワイルドウッドの成長を育み世話をしない者もいる。森全体に埋め込まれた炉の破片の力を私が開発した方法で利用することによって、樹を守ることを選択する者もいるのだ。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShardChanneler.prefab",
+          "m_AssetGUID": "13b83ec45ff004d4ab5f202dd997ed73"
+        },
+        "roomModifiers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-edcc8beca986d582-07bef0b8712e5374e9f1e20f1b06367a-v2",
+              "english": "[spikes] on friendly units deal +[power] damage per stack.",
+              "french": "Les [spikes] des unités alliées infligent <nobr>+[power] DGT</nobr> par cumul.",
+              "german": "[spikes] bei verbündeten Einheiten fügen +[power] Schaden pro Stapel zu.",
+              "russian": "[spikes] союзников наносят +[power] урона за слой.",
+              "portuguese": "[spikes] em unidades aliadas causam +[power] de dano por carga.",
+              "chinese": "友方单位的每层[spikes]造成 +[power] 伤害。",
+              "spanish": "Las [spikes] de aliados infligen +[power] de daño por acumulación.",
+              "chinese_traditional": "友方單位的每層[spikes]造成+[power]傷害。",
+              "korean": "아군 유닛들의 [spikes] 효과가 스택당 피해를 [power] 더 입힙니다.",
+              "japanese": "味方ユニットの[power]の1スタックにつき+[spikes]のダメージを与える。"
+            },
+            "roomStateModifierClassName": "RoomStateSpikesDamageModifier",
+            "paramInt": 1
+          }
+        ],
+        "size": 1,
+        "health": 2,
+        "attackDamage": 0,
+        "subtypeKeys": [
+          "SubtypesData_Cultist_8a3bb2b5-8c56-4c86-bb08-85b95c488f23"
+        ],
+        "characterChatterData": "AwokenChannelerChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 6,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

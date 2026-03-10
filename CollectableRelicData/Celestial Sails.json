@@ -1,0 +1,74 @@
+{
+  "id": "DrawSpellOnDeployment",
+  "name": "Celestial Sails",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-d9419c6970e9ee13-5947afee68f8b0148adbbf2ffd496183-v2",
+    "english": "Celestial Sails",
+    "french": "Voiles célestes",
+    "german": "Himmlische Segel",
+    "russian": "Неземной парус",
+    "portuguese": "Velas Celestiais",
+    "chinese": "星界之帆",
+    "spanish": "Velas celestiales",
+    "chinese_traditional": "天界之帆",
+    "korean": "별빛 닻",
+    "japanese": "天空の帆"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-77d4ce61fa7f4b69-5947afee68f8b0148adbbf2ffd496183-v2",
+    "english": "On [deployphase], draw a non-damage spell from your deck. It costs -[effect0.upgrade.costreduction][ember]. ",
+    "french": "En [deployphase], piochez un sort non offensif dans votre deck. Il coûte -[effect0.upgrade.costreduction][ember]. ",
+    "german": "Während der [deployphase] ziehst du einen Nicht-Schadenszauber aus deinem Deck. Dieser kostet -[effect0.upgrade.costreduction][ember].",
+    "russian": "[deployphase]: возьмите не наносящее урон заклинание из колоды. Оно будет стоить -[effect0.upgrade.costreduction][ember].",
+    "portuguese": "Durante a [deployphase], compra um feitiço que não seja de dano do seu deck. Ele custa -[effect0.upgrade.costreduction][ember].",
+    "chinese": "在[deployphase]时，从卡组中抽取一张非伤害性法术。其费用-[effect0.upgrade.costreduction][ember]。",
+    "spanish": "En la [deployphase], roba un hechizo que no haga daño de tu mazo. Cuesta -[effect0.upgrade.costreduction][ember].",
+    "chinese_traditional": "在[deployphase]，從牌組抽一張非傷害法術。費用-[effect0.upgrade.costreduction][ember]。",
+    "korean": "[deployphase] 시, 덱에서 피해를 주지 않는 주문 카드 1장을 뽑습니다. 해당 카드의 비용은 -[effect0.upgrade.costreduction][ember] 감소합니다.",
+    "japanese": "[deployphase]にデッキから非ダメージ呪文をドローする。コストが-[effect0.upgrade.costreduction][ember]。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-148d8712cad21f78-5947afee68f8b0148adbbf2ffd496183-v2",
+      "english": "“After the Fall, I searched the wreckage of our moon and found this sail. I remembered how the flightless fae used to play with these in the wind.”\n—Ardania the Forbidden",
+      "french": "<nobr>« Après</nobr> la chute, j'ai fouillé les débris de notre lune et j'ai trouvé cette voile. Je me suis souvenue que les fées incapables de voler jouaient avec ces voiles dans le <nobr>vent. »</nobr> \n— Ardania l'Interdite",
+      "german": "„Nach dem Sturz durchsuchte ich die Trümmer des Mondes und fand dieses Segel. Ich wusste noch, wie die Elfen, die nicht fliegen konnten, damit spielten.“\n—Ardania die Verbotene",
+      "russian": "«После Падения я нашла этот парус среди обломков нашей луны и вспомнила, как бескрылые феи парили с помощью него на ветру». \n— Ардания Отверженная",
+      "portuguese": "“Após a Queda, vasculhei os destroços de nossa lua e encontrei esta vela. Lembrei-me de como os fae que não voavam costumavam brincar com elas ao vento.”\n— Ardania, a Proibida",
+      "chinese": "“坠落之后，我们搜索了月亮的残骸，找到了这张帆。我还记得那些不会飞的妖精们曾经在风中用它玩耍。”\n——禁忌的阿尔达尼亚",
+      "spanish": "«Tras la Caída, busqué entre los restos de nuestra luna y encontré esta vela. Recordé que las hadas incapaces de volar jugaban con ellas los días de viento».\n—Ardania la Prohibida",
+      "chinese_traditional": "「在大殞落之後，我在我們月亮的殘骸中找到了這面帆。我還記得無翼精靈過去如何在風中玩耍。」\n——『禁忌』阿黛尼亞",
+      "korean": "“타락 후, 고향 달의 잔해를 뒤지다 이 돛을 찾았다. 날지 못하던 요정이 이 돛을 메고 바람을 타며 놀던 모습이 떠올랐다.”\n- 금지된 자 아르다니아",
+      "japanese": "「月が落とされた後、私は月の残骸を捜索し、この帆を見つけた。飛べない妖精たちが風の中でこの帆で遊んでいたことを思い出した」\n—禁忌のアーダニア"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectDrawOnPreOpeningDraw",
+      "paramCardFilter": {
+        "id": "DrawSpellOnDeployment_CardMask",
+        "cardType": "spell",
+        "excludedCardEffectsOperator": "and",
+        "excludedCardEffects": [
+          "CardEffectDamage",
+          "CardEffectDamageByPercentRemainingHealth",
+          "CardEffectDamageByUnitsKilled",
+          "CardEffectDamagePerHp",
+          "CardEffectDamagePerSourceAttack",
+          "CardEffectDamagePerTargetAttack",
+          "CardEffectDamageWithTrample",
+          "CardEffectHealAndDamageRelative"
+        ]
+      },
+      "paramCardUpgradeData": {
+        "id": "DrawSpellOnDeployment_Upgrade",
+        "costReduction": 1,
+        "xCostReduction": 1
+      },
+      "paramInt": 1
+    }
+  ],
+  "unlockLevel": 5
+}

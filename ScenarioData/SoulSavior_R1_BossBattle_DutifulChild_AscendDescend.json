@@ -1,0 +1,316 @@
+{
+  "id": "SoulSavior_R1_BossBattle_DutifulChild_AscendDescend",
+  "name": "SoulSavior_R1_BossBattle_DutifulChild_AscendDescend",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-0a9bab1edbfe9383-aee4de0ad37b6364ca13e2faf1c0b2b6-v2",
+    "english": "Maera the Dutiful",
+    "french": "Maera la Dévouée",
+    "german": "Maera die Pflichtbewusste",
+    "russian": "Маэра Послушная",
+    "portuguese": "Maera, a Diligente",
+    "chinese": "尽职者梅拉",
+    "spanish": "Maera la Diligente",
+    "chinese_traditional": "盡責的瑪伊拉",
+    "korean": "충직한 자 메이라",
+    "japanese": "義理のマエラ"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-f01948aa5650d457-aee4de0ad37b6364ca13e2faf1c0b2b6-v2",
+    "english": "Like the Soulstream’s current, Maera blows are an unyielding celestial force. She empowers her allies with a surge of strength to explode past your defenses.",
+    "french": "À l'instar du Flux des âmes, les coups de Maera sont une force céleste implacable. Elle insuffle de la puissance à ses alliés pour qu'ils pulvérisent vos défenses.",
+    "german": "Maera entfesselt in ihren Hieben eine beispiellose himmlische Macht, ähnlich jene des Seelenstroms. Sie stärkt sämtliche Verbündete und bahnt sich den Weg an deinen Abwehrstellungen vorbei.",
+    "russian": "Подобно течению Ручья Душ, удары Маэры — небесная сила, что не знает преград. Она наполняет союзников мощью, способной прорвать любую оборону.",
+    "portuguese": "Assim como a corrente do Fluxo de Almas, os golpes de Maera são uma força celestial implacável. Ela fortalece seus aliados com uma onda de energia para explodir suas defesas.",
+    "chinese": "就像灵魂之流里奔流的灵魂一样，梅拉的攻击是一股不屈的天界之力。她用汹涌的力量强化友军，强行突破你的防线。",
+    "spanish": "Como la Corriente de Almas, Maera canaliza una fuerza celestial implacable. Refuerza a sus aliados con una gran potencia para que destruyan tus defensas.",
+    "chinese_traditional": "瑪伊拉的攻勢猶如靈魂之流的湍流，是一股勢不可擋的天界之力。她以能量浪潮強化盟友，助其一舉衝破你的防線。",
+    "korean": "소울스트림의 흐름처럼, 메이라는 거스를 수 없는 천상의 힘을 날립니다. 그녀는 아군에게 폭발적인 힘을 불어넣어 방어선을 단숨에 돌파합니다.",
+    "japanese": "ソウルストリームの流れのように、マエラは揺るぎない天の力を放つ。彼女は仲間を力の波動で強化し、防御を爆発的に突破しようとする。"
+  },
+  "displayedEnemyOffsets": [
+    {
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "x": 0.0,
+      "y": -2.0
+    }
+  ],
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Boss_Railforged_Region1_AscendDescend"
+  ],
+  "battleTrackNameData": "BattleMusic_SoulSavior_Children",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Maera_Intro",
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Enchant/Atk x3",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredDifficultyTier": 3,
+                "requiredMutator": "SoulSavior_RunDistance2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              }
+            ],
+            "waveMessageKey": "ScenarioData_waveMessageKey-19cbed7b7e3dd7e0-aee4de0ad37b6364ca13e2faf1c0b2b6-v2"
+          }
+        ]
+      },
+      {
+        "name": "Enchant/Atk/heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Bonus) Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Bonus) Enchant/Atk x3",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance3"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend"
+  }
+}

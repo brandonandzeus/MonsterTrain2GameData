@@ -1,0 +1,50 @@
+{
+  "id": "PyreHeartFhyraAbility",
+  "name": "Greedtouch",
+  "nameKey": {
+    "key": "CardData_nameKey-3b45d1591d09d71f-6c078c9a081cc4043826df6c94ae3b2a-v2",
+    "english": "Greedtouch",
+    "french": "Toucher avide",
+    "german": "Gierige Berührung",
+    "russian": "Жадное касание",
+    "portuguese": "Toque da Ganância",
+    "chinese": "贪婪之触",
+    "spanish": "Toque avaro",
+    "chinese_traditional": "貪婪之觸",
+    "korean": "탐욕의 손길",
+    "japanese": "強欲のタッチ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-95b10f517be10c67-6c078c9a081cc4043826df6c94ae3b2a-v2",
+    "english": "Gain [effect0.power][coin]. Pyre takes [effect1.power] damage.",
+    "french": "Confère [effect0.power][coin]. Le Brasier subit <nobr>[effect1.power] DGT.</nobr>",
+    "german": "Erhalte [effect0.power][coin]. Höllenglut erleidet [effect1.power] Schaden.",
+    "russian": "Дает [effect0.power][coin]. Пекло получает [effect1.power] урона.",
+    "portuguese": "Recebe [effect0.power][coin]. A Pira sofre [effect1.power] de dano.",
+    "chinese": "获得[effect0.power][coin]。薪火受到 [effect1.power] 点伤害。",
+    "spanish": "Obtienes [effect0.power][coin]. La Pira sufre [effect1.power] de daño.",
+    "chinese_traditional": "獲得[effect0.power][coin]。火堆受到[effect1.power]點傷害。",
+    "korean": "[effect0.power][coin]을 획득합니다. 화로가 [effect1.power]만큼 피해를 받습니다.",
+    "japanese": "[effect0.power][coin]を得る。炉が[effect1.power]のダメージを受ける。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectRewardGold",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramInt": 25
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "pyre",
+      "targetTeamType": "both",
+      "suppressPyreRoomFocus": true,
+      "paramInt": 10
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

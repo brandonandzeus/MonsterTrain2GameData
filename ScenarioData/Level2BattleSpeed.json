@@ -1,0 +1,151 @@
+{
+  "id": "Level2BattleSpeed",
+  "name": "Level2BattleSpeed",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-b86121693454e395-ea83337427601084c81e51b166f22a05-v2",
+    "english": "Quicksilver Cherubs",
+    "french": "Chérubins de vif-argent",
+    "german": "Quecksilber-Cherubim",
+    "russian": "Неугомонные херувимы",
+    "portuguese": "Querubins Imprevisíveis",
+    "chinese": "闪银小天使",
+    "spanish": "Querubines impredecibles",
+    "chinese_traditional": "快銀天使寶寶",
+    "korean": "변덕스러운 케루빔",
+    "japanese": "快活な智天使"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-1dfd8c56f91d0b1a-ea83337427601084c81e51b166f22a05-v2",
+    "english": "Dominion's power has given the cherubic chorus new powers.",
+    "french": "Le pouvoir de Domination a donné de nouvelles capacités au chœur des chérubins.",
+    "german": "Die Macht von Herrschaft hat dem Cherubim-Chor neue Kraft beschert.",
+    "russian": "Доминион наделил хор херувимов небывалой силой.",
+    "portuguese": "O Domínio deu novos poderes ao coro de querubins.",
+    "chinese": "统御泰坦的力量赋予了天使合唱团新的力量。",
+    "spanish": "El poder de Dominio ha otorgado nuevas capacidades al coro angelical.",
+    "chinese_traditional": "主宰的力量賦予了天使寶寶合唱團新的能力。",
+    "korean": "도미니온의 힘이 케루빔 합창단에 새로운 힘을 부여하였습니다.",
+    "japanese": "ドミニオンの力により、智天使の合唱は新たな力を得ている。"
+  },
+  "bossVariant": {
+    "id": "Level2Bosses",
+    "bossVariants": [
+      "Boss_Level2_BigStats",
+      "Boss_Level2_Spikes"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "EnchanterT1_Speed",
+    "HeavyT1_Basic",
+    "AttackerT1_Spearman"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT1_Speed"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT1_Speed"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "AttackerT1_Spearman",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-5fc50f260e5dc89e-ea83337427601084c81e51b166f22a05-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT1_Speed",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "Boss_Level2_BigStats",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "TidalTurning",
+  "name": "Tidal Turning",
+  "nameKey": {
+    "key": "CardData_nameKey-4b1b8558eaf45a8a-3ee8a9ac0873d7f4182a329d19b66040-v2",
+    "english": "Tidal Turning",
+    "french": "Inversion de marée",
+    "german": "Gezeitenwandel",
+    "russian": "Магия прилива",
+    "portuguese": "Virada da Maré",
+    "chinese": "潮汐之舞",
+    "spanish": "Cambio de marea",
+    "chinese_traditional": "潮汐逆轉",
+    "korean": "조수 전환",
+    "japanese": "潮の変わり目"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-629d43bb850907ad-3ee8a9ac0873d7f4182a329d19b66040-v2",
+    "english": "Restore [effect0.power] health to friendly units. Healing over max health applies [armor] instead.",
+    "french": "Restaure <nobr>[effect0.power] PV</nobr> aux alliés. Tout gain excédentaire s'applique à l'[armor].",
+    "german": "Regeneriere [effect0.power] Gesundheit bei verbündeten Einheiten. Heilung über max. Gesundheit hinaus wendet [armor] an.",
+    "russian": "Восстанавливает [effect0.power] здоровья союзникам. При достижении максимального здоровья вместо лечения накладывается [armor].",
+    "portuguese": "Restaura [effect0.power] de vida das unidades aliadas. Curar acima da vida máxima concede [armor].",
+    "chinese": "使所有友方单位恢复 [effect0.power] 点生命值。超过最大生命值的治疗量会变为[armor]。",
+    "spanish": "Restaura [effect0.power] de salud a las unidades aliadas. Curar por encima de la salud máxima añade [armor].",
+    "chinese_traditional": "使友方單位恢復[effect0.power]點生命值。超出最大生命值的治療改為施加[armor]。",
+    "korean": "아군 유닛들의 체력을 [effect0.power]만큼 회복합니다. 초과한 회복량은 [armor]으로 전환됩니다.",
+    "japanese": "味方ユニットの体力を[effect0.power]回復する。回復量が最大体力を超える場合は代わりに[armor]が付与される。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-6c31588cddd0fb61-3ee8a9ac0873d7f4182a329d19b66040-v2",
+      "english": "Moonlit shores attract millions of tiny fae to bathe in the moonlight. As the night deepens, the Selene dance, guided by the water’s glow.",
+      "french": "Les rivages éclairés par la lune attirent des millions de petites fées qui viennent se baigner. Alors que la nuit s'épaissit, les Sélènes dansent, guidées par la lueur de l'eau.",
+      "german": "Das im Mondlicht getränkte Ufer lockt Millionen kleiner Feen herbei, die darin baden wollen. Später in der Nacht tanzen die Selenen, geleitet vom Glanz des Wassers.",
+      "russian": "Тысячи фей устремляются к побережью, залитому лунным светом. И всю ночь пляшут Селены, ориентируясь на блики на воде.",
+      "portuguese": "As praias iluminadas pela lua atraem milhões de pequenos fae para se banharem ao luar. À medida que a noite se aprofunda, as Selenes dançam, guiadas pelo brilho da água.",
+      "chinese": "月光海岸吸引了大量小妖精沐浴在月光下。夜色渐深，月神女在水面反光的指引下翩翩起舞。",
+      "spanish": "Las costas iluminadas por la luna atraen a millones de pequeñas hadas para bañarse en la luz. Las selenitas bailan en la noche, guiados por el resplandor de las aguas.",
+      "chinese_traditional": "月光照耀的海岸吸引了數百萬隻小精靈在月光下沐浴。隨著夜色加深，塞勒涅在水光的指引下起舞。",
+      "korean": "달빛이 춤추는 해변에는 수많은 작은 요정들이 모여 달빛 속에서 목욕을 한다. 밤이 깊어지면 세레네는 물속에 비친 달빛을 따라 춤을 춘다.",
+      "japanese": "月明かりの浜辺には無数の小さな妖精が月光を浴びるために集まる。夜が更ける中で、セレーネは水の光に導かれて踊るのだ。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_TidalTurning.prefab",
+    "m_AssetGUID": "8c3c6f14939e6674f9f52e3cab5f7f55"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectHealAndOverheal",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 1
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "statusId": "armor",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ],
+      "paramInt": 10,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LunaCoven/GlitteringDraught/FX_HealLarge.prefab",
+          "m_AssetGUID": "4624613fb8d38e74f9a1aa31eaeba230"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

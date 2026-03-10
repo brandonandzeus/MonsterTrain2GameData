@@ -1,0 +1,103 @@
+{
+  "id": "EnlightenedInfery",
+  "name": "Impish Scholar",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Demon_Imp_DrawsCard.prefab",
+    "m_AssetGUID": "5225d8033bc0f804b9f328153b296b91"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitShowCardTargets"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterEnlightenedInfery",
+        "nameKey": {
+          "key": "CharacterData_nameKey-aad8ea7e02bd8778-8c32dfa47b7b4014a825217a4bfbadb3-v2",
+          "english": "Impish Scholar",
+          "french": "Diablotin-telligent",
+          "german": "Kobold-Gelehrter",
+          "russian": "Бес-грамотей",
+          "portuguese": "Diabinho Acadêmico",
+          "chinese": "小鬼学者",
+          "spanish": "Erudito diabólico",
+          "chinese_traditional": "小鬼學者",
+          "korean": "임프 학자",
+          "japanese": "インピッシュ・スコラー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-d4a6d5c1993679cd-8c32dfa47b7b4014a825217a4bfbadb3-v2",
+            "english": "Having chosen to mature in knowledge rather than strength, these imps decided not to molt and instead to travel between the Rings as ambassadors of the Scorched Plains and advocates of our Covenant with Heaven. Now with no home to return to, they’ve helped to advance our research of more efficient defensive techniques.",
+            "french": "Ces diablotins, qui ont choisi de développer leur savoir plutôt que leur force, ont décidé de ne pas muer, préférant voyager entre les cercles en tant qu'ambassadeurs des Plaines calcinées et représenter notre alliance au paradis. À présent sans foyer, ils nous aident à développer des techniques de défense plus efficaces.",
+            "german": "Diese Kobolde haben sich entschieden, ihren Geist statt ihrer Muskeln zu trainieren. Sie unterdrücken ihre Häutung, reisen als Botschafter der Verbrannten Ebenen durch die Kreise der Hölle und beraten uns zu unserem Pakt mit dem Himmel. Da sie nun keine Heimat mehr haben, in die sie zurückkehren könnten, helfen sie uns, bessere Verteidigungsmethoden zu erfinden.",
+            "russian": "Решив стремиться не к силе, но к знаниям, эти бесы отказались линять и стали перемещаться между Кругами в качестве посланников Выжженных равнин, а так же отстаивать Согласие перед Небесами. Лишившись дома, в который можно было бы вернуться, они помогают нам продумывать более совершенные оборонительные системы.",
+            "portuguese": "Tendo optado por amadurecer em conhecimento em vez de força, esses diabinhos decidiram não se fundir e, em vez disso, viajam entre os Círculos como embaixadores das Planícies Devastadas e defensores do nosso Pacto com o Céu. Agora, sem um lar para onde voltar, eles ajudaram a avançar nossa pesquisa de técnicas defensivas.",
+            "chinese": "这些小鬼没有选择力量，而是选择了知识之路。它们不再蜕皮，而是会作为燃烧平原的使者，在地狱各地到处穿梭，倡导我们与天堂之间的契约。现如今，无家可归的它们对我们研究有效防御技术的事业做出了贡献。",
+            "spanish": "Con la decisión de madurar en conocimiento y no en fuerza, estos diablillos eligieron no mudar y, en su lugar, recorrer los anillos como embajadores de las Llanuras Calcinadas y defensores de nuestra Coalición con el Cielo. Ahora que se encuentran sin hogar, nos ayudan en la investigación de técnicas de defensa más efectivas.",
+            "chinese_traditional": "這些小鬼選擇在知識而非力量方面變得成熟，於是決定不再蛻變，而是在界域之間旅行，扮演焦灼平原的大使以及我們與天堂新盟的倡導者。無家可歸的他們，協助貢獻給了我們更有效的防禦技術研究。",
+            "korean": "힘을 키우기보다 지식을 추구하기로 마음먹은 이들 임프는 탈피를 거부하고 불타는 평원의 대사로서 각 고리를 넘나들며 천상과의 맹약을 지지하는 역할을 맡았다. 이제 돌아갈 집을 잃은 이들은 더욱 효율적인 방어 기술을 연구하는 데 큰 도움을 주었다.",
+            "japanese": "強さよりも知識を身につけることを選んだこのインプたちは、脱皮せずに、代わりに焦土平原の使節として、また天界との盟約の提唱者としてリングの間を旅することに決めた。今や帰る家もなく、彼らはより効率的な防衛技術の研究を進めるのに貢献している。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/characters/Character_Prefabs/Character_ImpishScholar.prefab",
+          "m_AssetGUID": "14d1b9ab525213748a19ae373ce38c17"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-1cf08a2c76473cc5-8c32dfa47b7b4014a825217a4bfbadb3-v2",
+              "english": "Return a random consumed spell to your hand.",
+              "french": "Renvoie un sort détruit aléatoire dans votre main.",
+              "german": "Nimm einen zufälligen verbrauchten Zauber wieder auf die Hand.",
+              "russian": "Возвращает в вашу руку случайные поглощенные чары.",
+              "portuguese": "Retorna um feitiço consumido para sua mão.",
+              "chinese": "随机将一张被消耗的法术返回到你的手牌。",
+              "spanish": "Devuelve un hechizo consumido aleatorio a tu mano.",
+              "chinese_traditional": "將一張隨機被消耗的法術返回你的手牌。",
+              "korean": "소모된 주문 카드 중 하나를 무작위로 선택해 패로 되돌립니다.",
+              "japanese": "手札にランダムな消費済みの呪文を戻す。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectRecursion",
+                "targetMode": "exhaust",
+                "targetCardSelectionMode": "random_to_hand",
+                "paramInt": 1,
+                "hideTooltip": true
+              }
+            ]
+          }
+        ],
+        "size": 1,
+        "health": 1,
+        "attackDamage": 1,
+        "subtypeKeys": [
+          "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+        ],
+        "characterChatterData": "HellhornedImpChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

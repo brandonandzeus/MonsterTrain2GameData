@@ -1,0 +1,853 @@
+{
+  "id": "UpgradeTreeRailforged1",
+  "name": "Herzal",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "Railforged1Path1a",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-39a10351df33b6a8-6cc55d20e4054574d8863ffea30ab41e-v2",
+            "english": "Blacksmith",
+            "french": "Forgeron",
+            "german": "Schmied",
+            "russian": "Кузнец",
+            "portuguese": "Ferreiro",
+            "chinese": "铁匠",
+            "spanish": "Herrero",
+            "chinese_traditional": "鐵匠",
+            "korean": "대장장이",
+            "japanese": "ブラックスミス"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "burst",
+              "count": 2
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4fbd08c82b3ddcd1-6cc55d20e4054574d8863ffea30ab41e-v2",
+                "english": "[forge] [effect0.power].",
+                "french": "[forge] [effect0.power].",
+                "german": "[forge] [effect0.power].",
+                "russian": "[forge] х[effect0.power].",
+                "portuguese": "[forge] [effect0.power].",
+                "chinese": "[forge] [effect0.power]。",
+                "spanish": "[forge] [effect0.power].",
+                "chinese_traditional": "[forge][effect0.power]。",
+                "korean": "[forge] [effect0.power].",
+                "japanese": "[forge] [effect0.power]。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustForgePoints",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 1
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-bed7c76ed704078d-6cc55d20e4054574d8863ffea30ab41e-v2",
+                "english": "Gain [burst] [effect0.status0.power].",
+                "french": "Octroie [burst] [effect0.status0.power].",
+                "german": "Erhalte [burst] [effect0.status0.power].",
+                "russian": "Дается [burst] х[effect0.status0.power].",
+                "portuguese": "Recebe [burst] [effect0.status0.power].",
+                "chinese": "获得 [burst] [effect0.status0.power]。",
+                "spanish": "Añade [burst] [effect0.status0.power].",
+                "chinese_traditional": "獲得[burst][effect0.status0.power]。",
+                "korean": "[burst] [effect0.status0.power] 효과를 획득합니다.",
+                "japanese": "[burst] [effect0.status0.power]を得る。"
+              },
+              "trigger": "on_equipment_added",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "burst",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 10
+        },
+        {
+          "id": "Railforged1Path1b",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-076164db1718c088-8b538dca87bff1f4dbc862aa69ff1a5c-v2",
+            "english": "Blacksmith II",
+            "french": "<nobr>Forgeron II</nobr>",
+            "german": "Schmied II",
+            "russian": "Кузнец II",
+            "portuguese": "Ferreiro II",
+            "chinese": "铁匠 II",
+            "spanish": "Herrero II",
+            "chinese_traditional": "鐵匠II",
+            "korean": "대장장이 II",
+            "japanese": "ブラックスミスII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "burst",
+              "count": 3
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-efb4775914b9847d-8b538dca87bff1f4dbc862aa69ff1a5c-v2",
+                "english": "[forge] [effect0.power].",
+                "french": "[forge] [effect0.power].",
+                "german": "[forge] [effect0.power].",
+                "russian": "[forge] х[effect0.power].",
+                "portuguese": "[forge] [effect0.power].",
+                "chinese": "[forge] [effect0.power]。",
+                "spanish": "[forge] [effect0.power].",
+                "chinese_traditional": "[forge][effect0.power]。",
+                "korean": "[forge] [effect0.power].",
+                "japanese": "[forge] [effect0.power]。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustForgePoints",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 2
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-46c9b9c666a6cf26-8b538dca87bff1f4dbc862aa69ff1a5c-v2",
+                "english": "Gain [burst] [effect0.status0.power].",
+                "french": "Octroie [burst] [effect0.status0.power].",
+                "german": "Erhalte [burst] [effect0.status0.power].",
+                "russian": "Дается [burst] х[effect0.status0.power].",
+                "portuguese": "Recebe [burst] [effect0.status0.power].",
+                "chinese": "获得 [burst] [effect0.status0.power]。",
+                "spanish": "Añade [burst] [effect0.status0.power].",
+                "chinese_traditional": "獲得[burst][effect0.status0.power]。",
+                "korean": "[burst] [effect0.status0.power] 효과를 획득합니다.",
+                "japanese": "[burst] [effect0.status0.power]を得る。"
+              },
+              "trigger": "on_equipment_added",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "burst",
+                      "count": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 2
+        },
+        {
+          "id": "Railforged1Path1c",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-097401cfd6d3e38f-1038eb53ce24cb94290889b6a2047c17-v2",
+            "english": "Blacksmith III",
+            "french": "<nobr>Forgeron III</nobr>",
+            "german": "Schmied III",
+            "russian": "Кузнец III",
+            "portuguese": "Ferreiro III",
+            "chinese": "铁匠 III",
+            "spanish": "Herrero III",
+            "chinese_traditional": "鐵匠III",
+            "korean": "대장장이 III",
+            "japanese": "ブラックスミスIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "burst",
+              "count": 5
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-f8fe3d6cda96a6be-1038eb53ce24cb94290889b6a2047c17-v2",
+                "english": "[forge] [effect0.power].",
+                "french": "[forge] [effect0.power].",
+                "german": "[forge] [effect0.power].",
+                "russian": "[forge] х[effect0.power].",
+                "portuguese": "[forge] [effect0.power].",
+                "chinese": "[forge] [effect0.power]。",
+                "spanish": "[forge] [effect0.power].",
+                "chinese_traditional": "[forge][effect0.power]。",
+                "korean": "[forge] [effect0.power].",
+                "japanese": "[forge] [effect0.power]。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustForgePoints",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-bd7e6181af9edf6f-1038eb53ce24cb94290889b6a2047c17-v2",
+                "english": "Gain [burst] [effect0.status0.power].",
+                "french": "Octroie [burst] [effect0.status0.power].",
+                "german": "Erhalte [burst] [effect0.status0.power].",
+                "russian": "Дается [burst] х[effect0.status0.power].",
+                "portuguese": "Recebe [burst] [effect0.status0.power].",
+                "chinese": "获得 [burst] [effect0.status0.power]。",
+                "spanish": "Añade [burst] [effect0.status0.power].",
+                "chinese_traditional": "獲得[burst][effect0.status0.power]。",
+                "korean": "[burst] [effect0.status0.power] 효과를 획득합니다.",
+                "japanese": "[burst] [effect0.status0.power]を得る。"
+              },
+              "trigger": "on_equipment_added",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "burst",
+                      "count": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 30,
+          "bonusHP": 5
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Railforged1Path2a",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-6806a379de1521cd-9e11d3aba6a680b4898b336a1ddf3fb9-v2",
+            "english": "Pyresmith",
+            "french": "Forgebrasier",
+            "german": "Höllenglutschmied",
+            "russian": "Укротитель Пекла",
+            "portuguese": "Forja-Pira",
+            "chinese": "薪火工匠",
+            "spanish": "Pirúrgico",
+            "chinese_traditional": "火堆匠",
+            "korean": "화로 장인",
+            "japanese": "パイアスミス"
+          },
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionAbilityPyreshot",
+            "nameKey": {
+              "key": "CardData_nameKey-71607b51f26b3c78-5ef10c71fc3ce2b42a555c37cf201772-v2",
+              "english": "Pyrespeak",
+              "french": "Braiselangue",
+              "german": "Höllensprache",
+              "russian": "Глас Пекла",
+              "portuguese": "Língua da Pira",
+              "chinese": "薪火话语",
+              "spanish": "Susurro de Pira",
+              "chinese_traditional": "火堆之語",
+              "korean": "화로의 언어",
+              "japanese": "炉轟"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-b5c76e7487274778-5ef10c71fc3ce2b42a555c37cf201772-v2",
+              "english": "Add a 0[ember]<b>Pyreshot</b> to your hand with [consume].",
+              "french": "Ajoute à votre main un <b>Tir de Brasier</b> coûtant 0[ember] et doté de [consume].",
+              "german": "Füge deiner Hand mit [consume] einen 0[ember]-<b>Höllenglutschuss</b> hinzu.",
+              "russian": "Добавляет в вашу руку <b>Выстрел Пекла</b> ([consume]) за 0[ember].",
+              "portuguese": "Adiciona um <b>Disparo da Pira</b> de 0[ember] à sua mão com [consume].",
+              "chinese": "将一张带有 [consume] 的0[ember] <b>薪火射击</b>加入你的手牌。",
+              "spanish": "Añade un <b>Disparo de Pira</b> de 0[ember] y con [consume] a tu mano.",
+              "chinese_traditional": "將一張0[ember]<b>薪火射擊</b>加入你的手牌，帶有[consume]。",
+              "korean": "[consume] 속성을 가진 비용 0[ember]의 <b>화로탄</b>을 패에 추가합니다.",
+              "japanese": "0[ember]の属性が[consume]の<b>炉砲</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassRailforged",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "targetCharacterSubtype": "SubtypesData_TrainSteward",
+                "paramCardUpgradeData": {
+                  "id": "RailforgedChampionAbilityPyreshot_ConsumeReduceCost_Upgrade",
+                  "traitDataUpgrades": [
+                    {
+                      "traitStateName": "CardTraitExhaustState"
+                    }
+                  ],
+                  "costReduction": 99,
+                  "xCostReduction": 99
+                },
+                "shouldFailToCastIfTestFails": true,
+                "paramInt": 3,
+                "additionalParamInt": 1,
+                "paramBool": true,
+                "paramCardPool": "PyreshotOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 6,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-19f171b20b9fc679-9e11d3aba6a680b4898b336a1ddf3fb9-v2",
+                "english": "Your Pyre permanently gains +[effect0.power][attack] and +[effect1.power][pyrehealth].",
+                "french": "Votre Brasier gagne +[effect0.power][attack] et +[effect1.power][pyrehealth] définitivement.",
+                "german": "Deine Höllenglut erhält permanent +[effect0.power][attack] und +[effect1.power][pyrehealth].",
+                "russian": "Ваше Пекло навсегда получает +[effect0.power][attack] и +[effect1.power][pyrehealth].",
+                "portuguese": "Sua Pira ganha +[effect0.power][attack] e +[effect1.power][pyrehealth].",
+                "chinese": "你的薪火永久获得 +[effect0.power][attack] 和 +[effect1.power][pyrehealth]。",
+                "spanish": "Tu Pira añade +[effect0.power][attack] y +[effect1.power][pyrehealth] permanentemente.",
+                "chinese_traditional": "你的薪火永久獲得+[effect0.power][attack]和+[effect1.power][pyrehealth]。",
+                "korean": "영구적으로 화로가 +[effect0.power][attack] 및 +[effect1.power][pyrehealth]을 획득합니다.",
+                "japanese": "自軍の炉が+[effect0.power][attack]と+[effect1.power][pyrehealth]を永続的に得る。"
+              },
+              "trigger": "on_encounter_complete",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectPermanentlyAdjustPyreAttack",
+                  "targetMode": "room",
+                  "targetTeamType": "both",
+                  "paramInt": 5
+                },
+                {
+                  "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
+                  "targetMode": "room",
+                  "targetTeamType": "both",
+                  "paramInt": 3
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 10,
+          "bonusHP": 10
+        },
+        {
+          "id": "Railforged1Path2b",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-774915fa1f7604b1-6dc43800515fc1945957e441738dcd40-v2",
+            "english": "Pyresmith II",
+            "french": "<nobr>Forgebrasier II</nobr>",
+            "german": "Höllenglutschmied II",
+            "russian": "Укротитель Пекла II",
+            "portuguese": "Forja-Pira II",
+            "chinese": "薪火工匠 II",
+            "spanish": "Pirúrgico II",
+            "chinese_traditional": "火堆匠II",
+            "korean": "화로 장인 II",
+            "japanese": "パイアスミスII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionAbilityPyreshot 1",
+            "nameKey": {
+              "key": "CardData_nameKey-bf824c417468c73b-2c300219095e2a04e9eec23a411d0be4-v2",
+              "english": "Pyrespeak II",
+              "french": "<nobr>Braiselangue II</nobr>",
+              "german": "Höllensprache II",
+              "russian": "Глас Пекла II",
+              "portuguese": "Língua da Pira II",
+              "chinese": "薪火话语 II",
+              "spanish": "Susurro de Pira II",
+              "chinese_traditional": "火堆之語II",
+              "korean": "화로의 언어 II",
+              "japanese": "炉轟II"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-10f9e516a171ffb9-2c300219095e2a04e9eec23a411d0be4-v2",
+              "english": "Add a 0[ember] <b>Pyreshot</b> to your hand with [consume].",
+              "french": "Ajoute à votre main un <b>Tir de Brasier</b> coûtant 0[ember] et doté de [consume].",
+              "german": "Füge deiner Hand mit [consume] einen 0[ember]-<b>Höllenglutschuss</b> hinzu.",
+              "russian": "Добавляет в вашу руку <b>Выстрел Пекла</b> ([consume]) за 0[ember].",
+              "portuguese": "Adiciona um <b>Disparo da Pira</b> de 0[ember] à sua mão com [consume].",
+              "chinese": "将一张带有 [consume] 的0[ember] <b>薪火射击</b>加入你的手牌。",
+              "spanish": "Añade un <b>Disparo de Pira</b> de 0[ember] y con [consume] a tu mano.",
+              "chinese_traditional": "將一張0[ember]<b>薪火射擊</b>加入你的手牌，帶有[consume]。",
+              "korean": "[consume] 속성을 가진 비용 0[ember]의 <b>화로탄</b>을 패에 추가합니다.",
+              "japanese": "0[ember]の属性が[consume]の<b>炉砲</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassRailforged",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "targetCharacterSubtype": "SubtypesData_TrainSteward",
+                "paramCardUpgradeData": {
+                  "id": "RailforgedChampionAbilityPyreshot_ConsumeReduceCost_Upgrade",
+                  "traitDataUpgrades": [
+                    {
+                      "traitStateName": "CardTraitExhaustState"
+                    }
+                  ],
+                  "costReduction": 99,
+                  "xCostReduction": 99
+                },
+                "shouldFailToCastIfTestFails": true,
+                "paramInt": 3,
+                "additionalParamInt": 1,
+                "paramBool": true,
+                "paramCardPool": "PyreshotOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 4,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-6daf718f704b9655-6dc43800515fc1945957e441738dcd40-v2",
+                "english": "Your Pyre permanently gains +[effect0.power][attack] and +[effect1.power][pyrehealth].",
+                "french": "Votre Brasier gagne +[effect0.power][attack] et +[effect1.power][pyrehealth] définitivement.",
+                "german": "Deine Höllenglut erhält permanent +[effect0.power][attack] und +[effect1.power][pyrehealth].",
+                "russian": "Ваше Пекло навсегда получает +[effect0.power][attack] и +[effect1.power][pyrehealth].",
+                "portuguese": "Sua Pira ganha +[effect0.power][attack] e +[effect1.power][pyrehealth].",
+                "chinese": "你的薪火永久获得 +[effect0.power][attack] 和 +[effect1.power][pyrehealth]。",
+                "spanish": "Tu Pira añade +[effect0.power][attack] y +[effect1.power][pyrehealth] permanentemente.",
+                "chinese_traditional": "你的薪火永久獲得+[effect0.power][attack]和+[effect1.power][pyrehealth]。",
+                "korean": "영구적으로 화로가 +[effect0.power][attack] 및 +[effect1.power][pyrehealth]을 획득합니다.",
+                "japanese": "自軍の炉が+[effect0.power][attack]と+[effect1.power][pyrehealth]を永続的に得る。"
+              },
+              "trigger": "on_encounter_complete",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectPermanentlyAdjustPyreAttack",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 10
+                },
+                {
+                  "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 5
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 30,
+          "bonusHP": 30
+        },
+        {
+          "id": "Railforged1Path2c",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e0d6cb535ee8a4dd-e4af7165afa96c74da34c7a4f913df5b-v2",
+            "english": "Pyresmith III",
+            "french": "<nobr>Forgebrasier III</nobr>",
+            "german": "Höllenglutschmied III",
+            "russian": "Укротитель Пекла III",
+            "portuguese": "Forja-Pira III",
+            "chinese": "薪火工匠 III",
+            "spanish": "Pirúrgico III",
+            "chinese_traditional": "火堆匠III",
+            "korean": "화로 장인 III",
+            "japanese": "パイアスミスIII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionAbilityPyreshot 2",
+            "nameKey": {
+              "key": "CardData_nameKey-297d57f23491cf15-cb8683e502809754fa56cbe6b6d888e0-v2",
+              "english": "Pyrespeak III",
+              "french": "<nobr>Braiselangue III</nobr>",
+              "german": "Höllensprache III",
+              "russian": "Глас Пекла III",
+              "portuguese": "Língua da Pira III",
+              "chinese": "薪火话语 III",
+              "spanish": "Susurro de Pira III",
+              "chinese_traditional": "火堆之語III",
+              "korean": "화로의 언어 III",
+              "japanese": "炉轟III"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-cb5aec1af1dc43d3-cb8683e502809754fa56cbe6b6d888e0-v2",
+              "english": "Add a 0[ember] <b>Pyreshot</b> to your hand with [consume].",
+              "french": "Ajoute à votre main un <b>Tir de Brasier</b> coûtant 0[ember] et doté de [consume].",
+              "german": "Füge deiner Hand mit [consume] einen 0[ember]-<b>Höllenglutschuss</b> hinzu.",
+              "russian": "Добавляет в вашу руку <b>Выстрел Пекла</b> ([consume]) за 0[ember].",
+              "portuguese": "Adiciona um <b>Disparo da Pira</b> de 0[ember] à sua mão com [consume].",
+              "chinese": "将一张带有 [consume] 的0[ember] <b>薪火射击</b>加入你的手牌。",
+              "spanish": "Añade un <b>Disparo de Pira</b> de 0[ember] y con [consume] a tu mano.",
+              "chinese_traditional": "將一張0[ember]<b>薪火射擊</b>加入你的手牌，帶有[consume]。",
+              "korean": "[consume] 속성을 가진 비용 0[ember]의 <b>화로탄</b>을 패에 추가합니다.",
+              "japanese": "0[ember]の属性が[consume]の<b>炉砲</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassRailforged",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "targetCharacterSubtype": "SubtypesData_TrainSteward",
+                "paramCardUpgradeData": {
+                  "id": "RailforgedChampionAbilityPyreshot_ConsumeReduceCost_Upgrade",
+                  "traitDataUpgrades": [
+                    {
+                      "traitStateName": "CardTraitExhaustState"
+                    }
+                  ],
+                  "costReduction": 99,
+                  "xCostReduction": 99
+                },
+                "shouldFailToCastIfTestFails": true,
+                "paramInt": 3,
+                "additionalParamInt": 1,
+                "paramBool": true,
+                "paramCardPool": "PyreshotOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-7c05dbd1358dd37b-e4af7165afa96c74da34c7a4f913df5b-v2",
+                "english": "Your Pyre permanently gains +[effect0.power][attack] and +[effect1.power][pyrehealth].",
+                "french": "Votre Brasier gagne +[effect0.power][attack] et +[effect1.power][pyrehealth] définitivement.",
+                "german": "Deine Höllenglut erhält permanent +[effect0.power][attack] und +[effect1.power][pyrehealth].",
+                "russian": "Ваше Пекло навсегда получает +[effect0.power][attack] и +[effect1.power][pyrehealth].",
+                "portuguese": "Sua Pira ganha +[effect0.power][attack] e +[effect1.power][pyrehealth].",
+                "chinese": "你的薪火永久获得 +[effect0.power][attack] 和 +[effect1.power][pyrehealth]。",
+                "spanish": "Tu Pira añade +[effect0.power][attack] y +[effect1.power][pyrehealth] permanentemente.",
+                "chinese_traditional": "你的薪火永久獲得+[effect0.power][attack]和+[effect1.power][pyrehealth]。",
+                "korean": "영구적으로 화로가 +[effect0.power][attack] 및 +[effect1.power][pyrehealth]을 획득합니다.",
+                "japanese": "自軍の炉が+[effect0.power][attack]と+[effect1.power][pyrehealth]を永続的に得る。"
+              },
+              "trigger": "on_encounter_complete",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectPermanentlyAdjustPyreAttack",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 20
+                },
+                {
+                  "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 10
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 50,
+          "bonusHP": 50
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Railforged1Path3a",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-3b23b447da2bde88-3e1e82214e373274c9056978d972cfd9-v2",
+            "english": "Enduring Steel",
+            "french": "Acier durable",
+            "german": "Beständiger Stahl",
+            "russian": "Стойкосталь",
+            "portuguese": "Aço Resistente",
+            "chinese": "耐用钢材",
+            "spanish": "Acero firme",
+            "chinese_traditional": "耐久鋼鐵",
+            "korean": "불굴의 강철",
+            "japanese": "忍耐の鋼鉄"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-55c0c62e3190bfdf-3e1e82214e373274c9056978d972cfd9-v2",
+                "english": "[forge] is permanent. [forge] instead grants +[upgrade.bonusdamage][attack] and [armor] [upgrade.status0.power] for each [forgepoint].",
+                "french": "La [forge] est permanente et octroie désormais +[upgrade.bonusdamage][attack] et <nobr>[armor] [upgrade.status0.power]</nobr> pour chaque [forgepoint].",
+                "german": "[forge] bleibt permanent erhalten. [forge] bewirkt stattdessen +[upgrade.bonusdamage][attack] und [armor] [upgrade.status0.power] pro [forgepoint].",
+                "russian": "[forge] делается навсегда. Каждое <b>очко ковки</b> дает только [upgrade.bonusdamage][attack] и <b>Броню</b> х[upgrade.status0.power].",
+                "portuguese": "[forge] é permanente. [forge] passa a conceder +[upgrade.bonusdamage][attack] e [armor] [upgrade.status0.power] para cada [forgepoint].",
+                "chinese": "[forge] 永久有效。[forge] 效果变为每点 [forgepoint] 提供 +[upgrade.bonusdamage][attack] 和 [armor] [upgrade.status0.power]。",
+                "spanish": "[forge] es permanente. Ahora el efecto de [forge] es: Añade +[upgrade.bonusdamage][attack] y [armor] [upgrade.status0.power] por cada [forgepoint].",
+                "chinese_traditional": "[forge]是永久的。[forge]改為每[forgepoint]賦予+[upgrade.bonusdamage][attack]和[armor][upgrade.status0.power]。",
+                "korean": "[forge]가 영구적입니다. 이 경우 [forge] 대신 [forgepoint] 하나당 +[upgrade.bonusdamage][attack] 및 [armor] [upgrade.status0.power] 효과를 부여합니다.",
+                "japanese": "[forge]が永続的になる。[forge]は代わりに、[forgepoint]ごとに+[upgrade.bonusdamage][attack]と[armor] [upgrade.status0.power]を付与する。"
+              },
+              "descriptionKeyInPlay": "CardUpgradeData_descriptionKeyInPlay-dac64bc341490a28-3e1e82214e373274c9056978d972cfd9-v2",
+              "roomStateModifierClassName": "RoomStateForgeUpgradeModifier",
+              "overrideTitleKey": {
+                "key": "CardUpgradeData_overrideTitleKey-b092b842e386672e-3e1e82214e373274c9056978d972cfd9-v2",
+                "english": "Enduring Steel",
+                "french": "Acier durable",
+                "german": "Beständiger Stahl",
+                "russian": "Стойкосталь",
+                "portuguese": "Aço Resistente",
+                "chinese": "耐用钢材",
+                "spanish": "Acero firme",
+                "chinese_traditional": "耐久鋼鐵",
+                "korean": "불굴의 강철",
+                "japanese": "忍耐の鋼鉄"
+              },
+              "additionalTooltips": [
+                {
+                  "statusId": "",
+                  "descriptionKey": {
+                    "key": "CardEffectAdjustForgePoints_TooltipText",
+                    "english": "Add to your [forgepoint] total. <br>When you play a unit or equipment card, spend all [forgepoints], and grant it bonus [attack] and [armor] for each [forgepoint] spent. ",
+                    "french": "Incrémente votre total de <b>Points de forge</b>. <br>Quand vous jouez une unité ou un équipement, dépensez tous les [forgepoints] pour lui octroyer de l'[attack] et de l'[armor] bonus par [forgepoint] dépensé.",
+                    "german": "Erhöht deine gesamten [forgepoint]e. <br>Wenn du eine Einheit oder Ausrüstungskarte spielst, werden sämtliche [forgepoints] investiert und sie erhält pro investiertem [forgepoint] zusätzlichen [attack] und zusätzliche [armor].",
+                    "russian": "[forgepoint]: повышается запас. <br>При розыгрыше карты бойца или снаряжения потратьте все [forgepoints]. За каждое потраченное очко ей даются дополнительные [attack] и [armor]. ",
+                    "portuguese": "Adiciona ao seu total de [forgepoints]. <br>Quando você joga uma carta de unidade ou equipamento, gasta todos os [forgepoints] e concede um bônus de [attack] e [armor] para cada [forgepoint] gasto.",
+                    "chinese": "添加至你的总 [forgepoint]。<br>当你打出一张单位或装备卡时，花费所有 [forgepoints]。每花费一点 [forgepoint]，就使其额外获得 [attack] 和 [armor]。",
+                    "spanish": "Se añade a tus [forgepoints] totales. <br>Cuando juegas una carta de unidad o de equipo, consume todos tus [forgepoints] y añade [attack] y [armor] adicionales por cada [forgepoint] consumido.",
+                    "chinese_traditional": "增加你的[forgepoint]總數。<br>當你打出一張單位或裝備卡牌時，花費所有[forgepoints]，並每花費一點[forgepoint]賦予其加成[attack]和[armor]。",
+                    "korean": "[forgepoint] 총량에 추가합니다. <br>유닛 또는 장비 카드 하나를 사용할 때 모든 [forgepoints]를 소모하고, 소모한 [forgepoint]당 [attack] 및 [armor]를 추가로 부여합니다.",
+                    "japanese": "[forgepoint]の合計に追加される。<br>ユニットまたは装備品カードをプレイすると、[forgepoints]をすべて消費して、消費した[forgepoint]ごとに[attack]と[armor]のボーナスを付与する。"
+                  },
+                  "trigger": 0,
+                  "titleKey": {
+                    "key": "CardEffectAdjustForgePoints_TooltipTitle",
+                    "english": "[forge]",
+                    "french": "[forge]",
+                    "german": "[forge]",
+                    "russian": "[forge]",
+                    "portuguese": "[forge]",
+                    "chinese": "[forge]",
+                    "spanish": "[forge]",
+                    "chinese_traditional": "[forge]",
+                    "korean": "[forge]",
+                    "japanese": "[forge]"
+                  },
+                  "style": 8,
+                  "isStatusTooltip": false,
+                  "isTriggerTooltip": false,
+                  "allowSecondaryPlacement": false,
+                  "hideInTrainRoomUI": false
+                }
+              ]
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 5,
+          "bonusHP": 10
+        },
+        {
+          "id": "Railforged1Path3b",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-f01002444dba62c4-e40964533f066e943a8b566e83d0791b-v2",
+            "english": "Enduring Steel II",
+            "french": "Acier durable II",
+            "german": "Beständiger Stahl II",
+            "russian": "Стойкосталь II",
+            "portuguese": "Aço Resistente II",
+            "chinese": "耐用钢材 II",
+            "spanish": "Acero firme II",
+            "chinese_traditional": "耐久鋼鐵II",
+            "korean": "불굴의 강철 II",
+            "japanese": "忍耐の鋼鉄II"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-58976bf822d886c7-e40964533f066e943a8b566e83d0791b-v2",
+                "english": "[forge] is permanent. [forge] instead grants +[upgrade.bonusdamage][attack] and [armor] [upgrade.status0.power] for each [forgepoint].",
+                "french": "La [forge] est permanente et octroie désormais +[upgrade.bonusdamage][attack] et <nobr>[armor] [upgrade.status0.power]</nobr> pour chaque [forgepoint].",
+                "german": "[forge] bleibt permanent erhalten. [forge] bewirkt stattdessen +[upgrade.bonusdamage][attack] und [armor] [upgrade.status0.power] pro [forgepoint].",
+                "russian": "[forge] активна постоянно. За каждое <b>очко кузни</b> дается +[upgrade.bonusdamage][attack] и [armor] х[upgrade.status0.power].",
+                "portuguese": "[forge] é permanente. [forge] passa a conceder +[upgrade.bonusdamage][attack] e [armor] [upgrade.status0.power] para cada [forgepoint].",
+                "chinese": "[forge] 永久有效。[forge] 效果变为每点 [forgepoint] 提供 +[upgrade.bonusdamage][attack] 和 [armor] [upgrade.status0.power]。",
+                "spanish": "[forge] es permanente. Ahora el efecto de [forge] es: Añade +[upgrade.bonusdamage][attack] y [armor] [upgrade.status0.power] por cada [forgepoint].",
+                "chinese_traditional": "[forge]是永久的。[forge]改為每[forgepoint]賦予+[upgrade.bonusdamage][attack]和[armor][upgrade.status0.power]。",
+                "korean": "[forge]가 영구적입니다. 이 경우 [forge] 대신 [forgepoint] 하나당 +[upgrade.bonusdamage][attack] 및 [armor] [upgrade.status0.power] 효과를 부여합니다.",
+                "japanese": "[forge]が永続的になる。[forge]は代わりに、[forgepoint]ごとに+[upgrade.bonusdamage][attack]と[armor] [upgrade.status0.power]を付与する。"
+              },
+              "roomStateModifierClassName": "RoomStateForgeUpgradeModifier",
+              "overrideTitleKey": {
+                "key": "CardUpgradeData_overrideTitleKey-0fc44d3656ffdf56-e40964533f066e943a8b566e83d0791b-v2",
+                "english": "Enduring Steel II",
+                "french": "Acier durable II",
+                "german": "Beständiger Stahl II",
+                "russian": "Стойкосталь II",
+                "portuguese": "Aço Resistente II",
+                "chinese": "耐用钢材 II",
+                "spanish": "Acero firme II",
+                "chinese_traditional": "耐久鋼鐵II",
+                "korean": "불굴의 강철 II",
+                "japanese": "忍耐の鋼鉄II"
+              },
+              "additionalTooltips": [
+                {
+                  "statusId": "",
+                  "descriptionKey": {
+                    "key": "CardEffectAdjustForgePoints_TooltipText",
+                    "english": "Add to your [forgepoint] total. <br>When you play a unit or equipment card, spend all [forgepoints], and grant it bonus [attack] and [armor] for each [forgepoint] spent. ",
+                    "french": "Incrémente votre total de <b>Points de forge</b>. <br>Quand vous jouez une unité ou un équipement, dépensez tous les [forgepoints] pour lui octroyer de l'[attack] et de l'[armor] bonus par [forgepoint] dépensé.",
+                    "german": "Erhöht deine gesamten [forgepoint]e. <br>Wenn du eine Einheit oder Ausrüstungskarte spielst, werden sämtliche [forgepoints] investiert und sie erhält pro investiertem [forgepoint] zusätzlichen [attack] und zusätzliche [armor].",
+                    "russian": "[forgepoint]: повышается запас. <br>При розыгрыше карты бойца или снаряжения потратьте все [forgepoints]. За каждое потраченное очко ей даются дополнительные [attack] и [armor]. ",
+                    "portuguese": "Adiciona ao seu total de [forgepoints]. <br>Quando você joga uma carta de unidade ou equipamento, gasta todos os [forgepoints] e concede um bônus de [attack] e [armor] para cada [forgepoint] gasto.",
+                    "chinese": "添加至你的总 [forgepoint]。<br>当你打出一张单位或装备卡时，花费所有 [forgepoints]。每花费一点 [forgepoint]，就使其额外获得 [attack] 和 [armor]。",
+                    "spanish": "Se añade a tus [forgepoints] totales. <br>Cuando juegas una carta de unidad o de equipo, consume todos tus [forgepoints] y añade [attack] y [armor] adicionales por cada [forgepoint] consumido.",
+                    "chinese_traditional": "增加你的[forgepoint]總數。<br>當你打出一張單位或裝備卡牌時，花費所有[forgepoints]，並每花費一點[forgepoint]賦予其加成[attack]和[armor]。",
+                    "korean": "[forgepoint] 총량에 추가합니다. <br>유닛 또는 장비 카드 하나를 사용할 때 모든 [forgepoints]를 소모하고, 소모한 [forgepoint]당 [attack] 및 [armor]를 추가로 부여합니다.",
+                    "japanese": "[forgepoint]の合計に追加される。<br>ユニットまたは装備品カードをプレイすると、[forgepoints]をすべて消費して、消費した[forgepoint]ごとに[attack]と[armor]のボーナスを付与する。"
+                  },
+                  "trigger": 0,
+                  "titleKey": {
+                    "key": "CardEffectAdjustForgePoints_TooltipTitle",
+                    "english": "[forge]",
+                    "french": "[forge]",
+                    "german": "[forge]",
+                    "russian": "[forge]",
+                    "portuguese": "[forge]",
+                    "chinese": "[forge]",
+                    "spanish": "[forge]",
+                    "chinese_traditional": "[forge]",
+                    "korean": "[forge]",
+                    "japanese": "[forge]"
+                  },
+                  "style": 8,
+                  "isStatusTooltip": false,
+                  "isTriggerTooltip": false,
+                  "allowSecondaryPlacement": false,
+                  "hideInTrainRoomUI": false
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 30
+        },
+        {
+          "id": "Railforged1Path3c",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e47110388b01461c-b4749344a905b8f4eb50230f137ee2b1-v2",
+            "english": "Enduring Steel III",
+            "french": "Acier durable III",
+            "german": "Beständiger Stahl III",
+            "russian": "Стойкосталь III",
+            "portuguese": "Aço Resistente III",
+            "chinese": "耐用钢材 III",
+            "spanish": "Acero firme III",
+            "chinese_traditional": "耐久鋼鐵III",
+            "korean": "불굴의 강철 III",
+            "japanese": "忍耐の鋼鉄III"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-f1818a0d384676ab-b4749344a905b8f4eb50230f137ee2b1-v2",
+                "english": "[forge] is permanent. [forge] instead grants +[upgrade.bonusdamage][attack] and [armor] [upgrade.status0.power] for each [forgepoint].",
+                "french": "La [forge] est permanente et octroie désormais +[upgrade.bonusdamage][attack] et <nobr>[armor] [upgrade.status0.power]</nobr> pour chaque [forgepoint].",
+                "german": "[forge] bleibt permanent erhalten. [forge] bewirkt stattdessen +[upgrade.bonusdamage][attack] und [armor] [upgrade.status0.power] pro [forgepoint].",
+                "russian": "[forge] делается навсегда. Каждое <b>очко ковки</b> дает только [upgrade.bonusdamage][attack] и <b>Броню</b> х[upgrade.status0.power].",
+                "portuguese": "[forge] é permanente. [forge] passa a conceder +[upgrade.bonusdamage][attack] e [armor] [upgrade.status0.power] para cada [forgepoint].",
+                "chinese": "[forge] 永久有效。[forge] 效果变为每点 [forgepoint] 提供 +[upgrade.bonusdamage][attack] 和 [armor] [upgrade.status0.power]。",
+                "spanish": "[forge] es permanente. Ahora el efecto de [forge] es: Añade +[upgrade.bonusdamage][attack] y [armor] [upgrade.status0.power] por cada [forgepoint].",
+                "chinese_traditional": "[forge]是永久的。[forge]改為每[forgepoint]賦予+[upgrade.bonusdamage][attack]和[armor][upgrade.status0.power]。",
+                "korean": "[forge]가 영구적입니다. 이 경우 [forge] 대신 [forgepoint] 하나당 +[upgrade.bonusdamage][attack] 및 [armor] [upgrade.status0.power] 효과를 부여합니다.",
+                "japanese": "[forge]が永続的になる。[forge]は代わりに、[forgepoint]ごとに+[upgrade.bonusdamage][attack]と[armor] [upgrade.status0.power]を付与する。"
+              },
+              "roomStateModifierClassName": "RoomStateForgeUpgradeModifier",
+              "overrideTitleKey": {
+                "key": "CardUpgradeData_overrideTitleKey-bc04426f48e0caec-b4749344a905b8f4eb50230f137ee2b1-v2",
+                "english": "Enduring Steel III",
+                "french": "Acier durable III",
+                "german": "Beständiger Stahl III",
+                "russian": "Стойкосталь III",
+                "portuguese": "Aço Resistente III",
+                "chinese": "耐用钢材 III",
+                "spanish": "Acero firme III",
+                "chinese_traditional": "耐久鋼鐵III",
+                "korean": "불굴의 강철 III",
+                "japanese": "忍耐の鋼鉄III"
+              },
+              "additionalTooltips": [
+                {
+                  "statusId": "",
+                  "descriptionKey": {
+                    "key": "CardEffectAdjustForgePoints_TooltipText",
+                    "english": "Add to your [forgepoint] total. <br>When you play a unit or equipment card, spend all [forgepoints], and grant it bonus [attack] and [armor] for each [forgepoint] spent. ",
+                    "french": "Incrémente votre total de <b>Points de forge</b>. <br>Quand vous jouez une unité ou un équipement, dépensez tous les [forgepoints] pour lui octroyer de l'[attack] et de l'[armor] bonus par [forgepoint] dépensé.",
+                    "german": "Erhöht deine gesamten [forgepoint]e. <br>Wenn du eine Einheit oder Ausrüstungskarte spielst, werden sämtliche [forgepoints] investiert und sie erhält pro investiertem [forgepoint] zusätzlichen [attack] und zusätzliche [armor].",
+                    "russian": "[forgepoint]: повышается запас. <br>При розыгрыше карты бойца или снаряжения потратьте все [forgepoints]. За каждое потраченное очко ей даются дополнительные [attack] и [armor]. ",
+                    "portuguese": "Adiciona ao seu total de [forgepoints]. <br>Quando você joga uma carta de unidade ou equipamento, gasta todos os [forgepoints] e concede um bônus de [attack] e [armor] para cada [forgepoint] gasto.",
+                    "chinese": "添加至你的总 [forgepoint]。<br>当你打出一张单位或装备卡时，花费所有 [forgepoints]。每花费一点 [forgepoint]，就使其额外获得 [attack] 和 [armor]。",
+                    "spanish": "Se añade a tus [forgepoints] totales. <br>Cuando juegas una carta de unidad o de equipo, consume todos tus [forgepoints] y añade [attack] y [armor] adicionales por cada [forgepoint] consumido.",
+                    "chinese_traditional": "增加你的[forgepoint]總數。<br>當你打出一張單位或裝備卡牌時，花費所有[forgepoints]，並每花費一點[forgepoint]賦予其加成[attack]和[armor]。",
+                    "korean": "[forgepoint] 총량에 추가합니다. <br>유닛 또는 장비 카드 하나를 사용할 때 모든 [forgepoints]를 소모하고, 소모한 [forgepoint]당 [attack] 및 [armor]를 추가로 부여합니다.",
+                    "japanese": "[forgepoint]の合計に追加される。<br>ユニットまたは装備品カードをプレイすると、[forgepoints]をすべて消費して、消費した[forgepoint]ごとに[attack]と[armor]のボーナスを付与する。"
+                  },
+                  "trigger": 0,
+                  "titleKey": {
+                    "key": "CardEffectAdjustForgePoints_TooltipTitle",
+                    "english": "[forge]",
+                    "french": "[forge]",
+                    "german": "[forge]",
+                    "russian": "[forge]",
+                    "portuguese": "[forge]",
+                    "chinese": "[forge]",
+                    "spanish": "[forge]",
+                    "chinese_traditional": "[forge]",
+                    "korean": "[forge]",
+                    "japanese": "[forge]"
+                  },
+                  "style": 8,
+                  "isStatusTooltip": false,
+                  "isTriggerTooltip": false,
+                  "allowSecondaryPlacement": false,
+                  "hideInTrainRoomUI": false
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 25,
+          "bonusHP": 50
+        }
+      ]
+    }
+  ]
+}

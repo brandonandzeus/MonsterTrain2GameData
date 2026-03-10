@@ -1,0 +1,59 @@
+{
+  "id": "PyreStewardAbility",
+  "name": "Pyre Repair",
+  "nameKey": {
+    "key": "CardData_nameKey-774b75e0ff7583ef-e27dfd29d1d107149af7ef6d38747148-v2",
+    "english": "Pyre Repair",
+    "french": "Réparation de Brasier",
+    "german": "Höllenglut-Reparatur",
+    "russian": "Починка Пекла",
+    "portuguese": "Reparo da Pira",
+    "chinese": "薪火维修",
+    "spanish": "Reparación de Pira",
+    "chinese_traditional": "薪火修復",
+    "korean": "화로 수리",
+    "japanese": "炉修理"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-8158dbb23904e0ea-e27dfd29d1d107149af7ef6d38747148-v2",
+    "english": "Spend your remaining [ember]. Restore health to the Pyre equal to [ember] spent.",
+    "french": "Dépense les [ember] restantes. Le Brasier regagne autant de PV que de [ember] dépensées.",
+    "german": "Investiere deine verbleibende [ember]. Regeneriere im Ausmaß der investierten [ember] Gesundheit an der Höllenglut.",
+    "russian": "Тратит остаток [ember]. Восстанавливает здоровье Пекла, равное потраченному [ember].",
+    "portuguese": "Gasta a sua [ember] restante. Restaura a vida da Pira em um valor equivalente à [ember] gasta.",
+    "chinese": "花费你剩余的[ember]。恢复薪火生命值，数值相当于花费的 [ember]。",
+    "spanish": "Consume todas tus [ember] restantes. Restaura tanta salud a la Pira como [ember] consumidas.",
+    "chinese_traditional": "花費你剩餘的[ember]。恢復等同於所花費[ember]的薪火生命值。",
+    "korean": "남은 [ember]을 모두 소모합니다. 소모한 [ember]만큼 화로 체력을 회복합니다.",
+    "japanese": "残りの[ember]を消費する。炉の体力を消費した[ember]に等しい分回復する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_PyreStewardAbility.prefab",
+    "m_AssetGUID": "0e0b4ae137d765343bcd64262c250a87"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingHealTrain",
+      "paramTrackedValue": "played_cost",
+      "paramInt": 1,
+      "traitIsRemovable": false,
+      "paramTeamType": "monsters"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectHealTrain",
+      "targetMode": "pyre",
+      "targetTeamType": "heroes",
+      "suppressPyreRoomFocus": true,
+      "animToPlay": "attack",
+      "paramBool": true
+    }
+  ],
+  "costType": "x",
+  "cooldownAfterActivated": 2,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

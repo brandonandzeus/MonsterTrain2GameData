@@ -1,0 +1,108 @@
+{
+  "id": "SteelPulleyClaw",
+  "name": "Steel Pulley Claw",
+  "nameKey": {
+    "key": "CardData_nameKey-2c75644b68e17deb-2e8b7275825553f489e05410858e1bad-v2",
+    "english": "Steel Pulley Claw",
+    "french": "Arrache-poulie en acier",
+    "german": "Stählerner Greifer",
+    "russian": "Стальной подъемник",
+    "portuguese": "Garra de Polia de Aço",
+    "chinese": "钢质勾爪",
+    "spanish": "Grúa de garra",
+    "chinese_traditional": "鋼鐵滑輪爪",
+    "korean": "강철 도르래 집게",
+    "japanese": "鋼鉄のプーリークロー"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-0f35fe61641ea7c1-2e8b7275825553f489e05410858e1bad-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-d4523d677679abbd-2e8b7275825553f489e05410858e1bad-v2",
+      "english": "“The pulley needed a little dusting off when I found it but it worked like a charm. You should have seen dad’s face when he saw it inside the Skullcrusher.”—Heph",
+      "french": "<nobr>« La</nobr> poulie a nécessité un nettoyage quand je l'ai trouvée, mais elle fonctionnait parfaitement. Vous auriez dû voir la tête de papa quand il l'a vue montée dans le <nobr>Brise-crânes. »</nobr> — Heph",
+      "german": "„Der Greifer musste ein wenig abgestaubt werden, als ich ihn fand, aber er funktionierte einwandfrei. Du hättest das Gesicht meines Vaters sehen sollen, als er ihn im Schädelquetscher entdeckte.“ – Heph",
+      "russian": "Шкив всего лишь пришлось от пыли отряхнуть — и тот заработал как часы. Нужно было видеть папино лицо, когда он обнаружил его на «Крушителе черепов». — Геф",
+      "portuguese": "“Foi preciso bater um pouco da poeira da polia quando a encontrei, mas funcionou como mágica. Você devia ter visto o rosto do papai quando ele a viu dentro do Triturador de Crânios.” — Heph",
+      "chinese": "“我找到这个滑轮时，它上面积满了灰，但神奇的是，它居然还能用。你真该看看我父亲在碎颅者内部发现这个滑轮时的表情。”——赫芙",
+      "spanish": "«Tuve que desempolvar la polea cuando la encontré, pero funcionaba perfectamente. La cara de papá era para verla cuando se la encontró en el Rompecráneos». —Heph",
+      "chinese_traditional": "「我找到滑輪時，它需要稍微除塵一下，但它運作得像魔法一樣。你真該看看爸爸看到它在碎顱者裡面的表情。」——赫芙",
+      "korean": "“도르래는 찾았을 때 조금만 털어주면 될 정도였고, 실제로 써보니 아주 훌륭히 작동했어. 아빠가 그게 해골 분쇄자 안에 있는 걸 봤을 때의 표정은 정말 볼 만했지.”—헵",
+      "japanese": "「このプーリーを見つけたときは、ちょっとばかり埃をはたく必要があった。でも見事に動くようになった。これをスカルクラッシャーの中で見つけた父さんの顔は見ものだったわ」—ヘフ"
+    }
+  ],
+  "cost": 2,
+  "cardType": "room",
+  "rarity": "common",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_SteelPulleyClaw.prefab",
+    "m_AssetGUID": "a2afad7308fadb24eab4a4049ead8926"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "SteelPulleyClaw_Upgrade",
+        "roomAbilityUpgrade": {
+          "id": "SteelPulleyClawAbility",
+          "nameKey": {
+            "key": "CardData_nameKey-80c96a0aefbdd4ff-52b47e55d63b9b643822e5c1f45bfb26-v2",
+            "english": "Hoist",
+            "french": "Palan",
+            "german": "Winde",
+            "russian": "Подъем",
+            "portuguese": "Içar",
+            "chinese": "吊起",
+            "spanish": "Tirón",
+            "chinese_traditional": "起重",
+            "korean": "인양",
+            "japanese": "放り投げ"
+          },
+          "overrideDescriptionKey": {
+            "key": "CardData_overrideDescriptionKey-114b613fa42903d2-52b47e55d63b9b643822e5c1f45bfb26-v2",
+            "english": "Move a non-boss unit to this floor. ",
+            "french": "Déplace une unité hors boss à ce niveau. ",
+            "german": "Bewege eine Nicht-Boss-Einheit auf diese Ebene. ",
+            "russian": "Переносит не-летающего босса на этот этаж. ",
+            "portuguese": "Move uma unidade que não seja chefão para este andar. ",
+            "chinese": "将一个非首领单位移动到本层。 ",
+            "spanish": "Mueve a una unidad no jefe a este piso. ",
+            "chinese_traditional": "將一個非首領單位移動到此樓層。 ",
+            "korean": "보스 외 유닛 하나를 이 층으로 이동시킵니다. ",
+            "japanese": "非ボスのユニットをこのフロアに移動させる。 "
+          },
+          "cardType": "spell",
+          "rarity": "common",
+          "effects": [
+            {
+              "effectStateName": "CardEffectRoomAbilityBumpToCurrentRoom",
+              "targetMode": "drop_target_character",
+              "targetTeamType": "both",
+              "targetIgnoreBosses": true,
+              "paramStatusEffects": [
+                {
+                  "statusId": "armor",
+                  "count": 1
+                }
+              ],
+              "paramInt": 1,
+              "useHealthMissingStackMultiplier": true
+            }
+          ],
+          "cooldownAfterActivated": 1,
+          "isRoomAbility": true,
+          "targetless": false,
+          "requiredDLC": "railforged",
+          "initialKeyboardTarget": "front_enemy",
+          "canAbilityTargetOtherFloors": true
+        },
+        "showUpgradeDescriptionOnCards": true
+      }
+    }
+  ],
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

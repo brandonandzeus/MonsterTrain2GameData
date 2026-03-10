@@ -1,0 +1,86 @@
+{
+  "id": "Grovel",
+  "name": "Grovel",
+  "nameKey": {
+    "key": "CardData_nameKey-06f9bba5787be0d8-82b5df425338ac3498e60d63a0986c1d-v2",
+    "english": "Grovel",
+    "french": "Servilité",
+    "german": "Kriechen",
+    "russian": "Раболепие",
+    "portuguese": "Submeter-se",
+    "chinese": "卑躬屈膝",
+    "spanish": "Sumisión",
+    "chinese_traditional": "卑躬屈膝",
+    "korean": "굴복",
+    "japanese": "平身低頭"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-509ab3dc32eb11fe-82b5df425338ac3498e60d63a0986c1d-v2",
+    "english": "Apply [damageshield] [effect0.status0.power]. Add [effect1.secondarypower] uncommon or rare [snack] units to your hand.",
+    "french": "Confère [damageshield] [effect0.status0.power]. Ajoute [effect1.secondarypower] <b>sous-bistres</b> inhabituels ou rares à votre main.",
+    "german": "Wende [damageshield] [effect0.status0.power] an. Nimm [effect1.secondarypower] ungewöhnliche oder seltene [snack]-Einheiten auf die Hand.",
+    "russian": "Накладывается [damageshield] х[effect0.status0.power]. Добавляет в руку необычных или редких заморышей ([effect1.secondarypower]).",
+    "portuguese": "Concede [damageshield] [effect0.status0.power]. Adiciona [effect1.secondarypower] unidades de [snack] incomuns ou raras à sua mão.",
+    "chinese": "获得 [damageshield] [effect0.status0.power]。将 [effect1.secondarypower] 个高级或稀有 [snack] 单位加入你的手牌",
+    "spanish": "Añade [damageshield] [effect0.status0.power]. Añade [effect1.secondarypower] unidades [snack] poco comunes o raras a tu mano.",
+    "chinese_traditional": "施加[damageshield][effect0.status0.power]。將[effect1.secondarypower]張罕見或稀有的[snack]單位牌加入你的手牌。",
+    "korean": "[damageshield] [effect0.status0.power] 효과를 적용합니다. 특별 및 희귀 등급의 [snack] 유닛 카드 [effect1.secondarypower]장을 패에 추가합니다.",
+    "japanese": "[damageshield] [effect0.status0.power]を付与する。手札にアンコモンかレアの[snack]ユニットを[effect1.secondarypower]枚追加する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-b3054236f7d48669-82b5df425338ac3498e60d63a0986c1d-v2",
+      "english": "Some errant Morsels, in an effort to please the Wardens, will offer their valuable jewels to try and get in their good graces. This behavior has been noted for future bribes that occur within the Boneshaker.",
+      "french": "Pour entrer dans les bonnes grâces de leurs gardiens, certains sous-bistres dévoyés leur offrent leurs précieux joyaux. J'ai pris note de ce comportement afin de parer à d'éventuelles tentatives de corruption à bord du Hurleflammes.",
+      "german": "Einige verirrte Nuggets versuchen, die Gunst der Aufseher mit ihren wertvollen Edelsteinen zu erkaufen. Auf dieses Verhalten sollte auch im Knochenrüttler geachtet werden.",
+      "russian": "Заморыши-лодыри, стараясь подлизаться к надзирателям, преподносят им ценные камни. Эту особенность поведения следует учесть, чтобы предотвращать попытки подкупа на «Костоломе».",
+      "portuguese": "Alguns Lanchos errantes, em uma tentativa de agradar os Vigias, oferecem pedras preciosas para receber algum agrado. Este comportamento está devidamente registrado para tirar proveito em futuros subornos que ocorrerem no Ossuário.",
+      "chinese": "一些离经叛道的影裔会献上它们的珠宝，以取悦看守者，赢得它们的青睐。我已经留意到了这种行为，它日后可能会引起老爷车号上的贿赂之风。",
+      "spanish": "Algunos pinchos errantes, con intención de complacer a los guardianes, ofrecen joyas valiosas para tratar de ganarse su favor. He tomado nota de este comportamiento para futuros sobornos a bordo del Sacudehuesos.",
+      "chinese_traditional": "一些出格的莫塞爾為了討好看守，會交出他們寶貴的寶石，試圖贏得對方的好感。我們記錄下這種行為，以免日後在碎骨者內部發生賄賂情況。",
+      "korean": "말을 듣지 않는 일부 작은 그림자들은 간수들의 마음을 사기 위해 귀중한 보석을 바친다. 이 행동은 이후 본쉐이커 내에서 뇌물 수수로 이어졌다.",
+      "japanese": "モーゼルの中には、番人を喜ばせようと貴重な宝石を差し出し、好意を得ようとする者もいる。これは、ボーンシェイカー内での収賄行為として注目されている。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Grovel.prefab",
+    "m_AssetGUID": "2d594076fa71a1143bfba4b62ccd1947"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddBattleCard",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "shouldTest": false,
+      "paramInt": 3,
+      "additionalParamInt": 2,
+      "paramCardPool": "Class5Food"
+    }
+  ],
+  "targetless": false,
+  "sharedMasteryCards": [
+    "MorselJeweler",
+    "MoltenMorsel",
+    "MorselMiner",
+    "RubbleRaiser",
+    "ShadowMorsel",
+    "VoidExcavator"
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Cameron Archer"
+}

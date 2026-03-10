@@ -1,0 +1,65 @@
+{
+  "id": "EquilibriusT1",
+  "name": "EquilibriusT1",
+  "nameKey": {
+    "key": "SoulData_nameKey-c377ed22f95b0b76-07d24d9aea3d74c49a1b2ebdb1efee2a-v2",
+    "english": "Equilibrius",
+    "french": "Équilibrage",
+    "german": "Equilibrius",
+    "russian": "Эквилибрий",
+    "portuguese": "Equilibrius",
+    "chinese": "平衡者",
+    "spanish": "Equilibrius",
+    "chinese_traditional": "平衡者",
+    "korean": "평형술사",
+    "japanese": "イクイリブリアス"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-21b395cf89fbd9a3-07d24d9aea3d74c49a1b2ebdb1efee2a-v2",
+    "english": "At the end of battle, If your deck is over [effect1.power] cards then purge down to [effect1.power] cards. After you purge a total of [effect0.power] cards, permanently draw +1 each turn.",
+    "french": "À la fin de la bataille, si votre deck contient plus de <nobr>[effect1.power] cartes,</nobr> réduisez-le à [effect1.power]. Après avoir purgé <nobr>[effect0.power] cartes,</nobr> piochez définitivement +1 à chaque tour.",
+    "german": "Wenn du am Kampfende ein Deck mit über [effect1.power] Karten hast, wird dieses durch Verbannen auf [effect1.power] Karten reduziert. Nach dem Verbannen von insgesamt [effect0.power] Karten kannst du permanent pro Zug +1 Karte ziehen.",
+    "russian": "Если в конце боя у вас в колоде более [effect1.power] шт. карт, то она сокращается до [effect1.power]. За ликвидацию [effect0.power] шт. карт берите +1 каждый ход.",
+    "portuguese": "No final da batalha, se o seu deck tiver mais de [effect1.power] cartas, expurga até chegar a [effect1.power] cartas. Depois de expurgar um total de [effect0.power] cartas, compra +1 permanentemente a cada turno.",
+    "chinese": "战斗结束时，若你卡组中的卡牌超过 [effect1.power] 张，则移除至 [effect1.power] 张。总共移除 [effect0.power] 张卡牌后，每回合抽牌数永久 +1。",
+    "spanish": "Al final de la batalla, si tu mazo tiene más de [effect1.power] cartas, purga hasta tener [effect1.power]. Cuando hayas purgado [effect0.power] cartas en total, roba+1 cada turno permanentemente.",
+    "chinese_traditional": "在戰鬥結束時，如果你的牌組超過[effect1.power]張卡牌，則淨化至[effect1.power]張。在你總共淨化[effect0.power]張卡牌後，永久每回合抽+1張牌。",
+    "korean": "전투 종료 시 내 덱이 [effect1.power]장보다 많다면, [effect1.power]장까지 제외합니다. 이렇게 제외한 카드가 총 [effect0.power]장에 도달하면, 매 턴마다 영구적으로 카드 1장을 더 뽑습니다.",
+    "japanese": "バトル終了時に、デッキのカードが[effect1.power]枚を超えていると、[effect1.power]枚になるまで除外する。合計で[effect0.power]枚のカードを除外すると、永続的に毎ターンドロー回数が+1追加される。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectPurgeCardsUntilDeckLimitMet",
+      "paramInt": 9,
+      "paramInt2": 4
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramSourceTeam": "none",
+      "paramInt": 25,
+      "paramTargetMode": "front_in_room"
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-2ce7c62c75baa41a-07d24d9aea3d74c49a1b2ebdb1efee2a-v2",
+      "english": "Purge cards to unlock.",
+      "french": "Purgez des cartes pour déverrouiller.",
+      "german": "Verbanne Karten, um freizuschalten.",
+      "russian": "Чтобы разблокировать, ликвидируйте карты.",
+      "portuguese": "Expurgue cartas para desbloquear.",
+      "chinese": "移除卡牌以解锁。",
+      "spanish": "Purga cartas para desbloquear.",
+      "chinese_traditional": "淨化卡牌以解鎖。",
+      "korean": "카드를 제외하면 잠금 해제됩니다.",
+      "japanese": "カードを除外してアンロック。"
+    },
+    "unlockCondition": "soul_cards_purged",
+    "paramInt": 50
+  },
+  "tierLevel": 1,
+  "nextTier": "EquilibriusT2",
+  "draftMaxDistanceAllowed": 6,
+  "draftMaxBattlesCompleted": 5
+}

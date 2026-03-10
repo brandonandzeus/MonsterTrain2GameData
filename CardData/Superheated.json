@@ -1,0 +1,81 @@
+{
+  "id": "Superheated",
+  "name": "Superheated",
+  "nameKey": {
+    "key": "CardData_nameKey-2d2753b2b5a829c3-7061629a7d67be344887c5901069b4c1-v2",
+    "english": "Superheated",
+    "french": "Surchauffe",
+    "german": "Superhitze",
+    "russian": "Перегрев",
+    "portuguese": "Superaquecimento",
+    "chinese": "过热",
+    "spanish": "Calcinación",
+    "chinese_traditional": "過熱",
+    "korean": "초고열",
+    "japanese": "超高熱"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-fe1fa3c77fa034a9-7061629a7d67be344887c5901069b4c1-v2",
+    "english": "Double the amount of [pyregel] on a unit. ",
+    "french": "Double la quantité de [pyregel] d'une unité.",
+    "german": "Verdopple die Menge an [pyregel] einer Einheit.",
+    "russian": "Удваивает [pyregel] на бойце. ",
+    "portuguese": "Dobra a quantidade de [pyregel] em uma unidade.",
+    "chinese": "使目标单位的 [pyregel] 加倍。",
+    "spanish": "Duplica la cantidad de [pyregel] de una unidad.",
+    "chinese_traditional": "將一個單位的[pyregel]數量翻倍。",
+    "korean": "유닛의 [pyregel] 수치가 2배가 됩니다.",
+    "japanese": "ユニットの[pyregel]の値を2倍にする。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-9f7ec09165891284-7061629a7d67be344887c5901069b4c1-v2",
+      "english": "“Beneath the Pyreborne’s caves flows a river of Pyregel that runs so hot, it erodes the very stone itself. Watch where you step, you might get a superheated surprise.”\n—Dante’s Travel Guide",
+      "french": "<nobr>« Sous</nobr> les grottes des Draconides coule une rivière de pyrogel si chaude qu'elle érode la pierre elle-même. Faites attention où vous mettez les pieds, vous pourriez avoir une surprise <nobr>brûlante. »</nobr> \n— Guide de voyage de Dante",
+      "german": "„Unter den Höhlen der Höllenglutkinder fließt ein Strom aus Höllenglut-Gel. Er ist so heiß, dass selbst der Stein unter ihm schmilzt. Achte, wo du hintrittst – es könnte dein letzter Schritt sein.“\n—Dantes Reiseführer",
+      "russian": "«Под пещерами Пеклорожденных протекает пеклогелевая река. Она настолько горячая, что способна растворить даже камень. Смотрите под ноги, чтобы не обжечься».\n— Путеводитель Данте",
+      "portuguese": "“Sob as cavernas dos Píricos flui um rio de Gel Pírico que é tão quente que corrói a própria pedra. Cuidado onde pisa, você pode ter uma surpresa superaquecida.”\n— Guia de Viagem de Dante",
+      "chinese": "“在薪龙族的洞穴下，流淌着一条薪火熔胶之河，河流非常之热，侵蚀了石头本身。当心脚下，你也许会收获一份滚烫的惊喜。”\n——《但丁的旅行指南》",
+      "spanish": "«Bajo las cuevas de los Hijos de la Pira fluye un río de pirogel tan candente que erosiona la misma roca. Vigila tus pasos, porque puedes encontrar una sorpresa ardiente».\n—Guía de viaje de Dante",
+      "chinese_traditional": "「在火焰之子的洞穴下流淌著一條火膠河，流得如此之熱，甚至侵蝕了石頭本身。小心你的腳步，你可能會遇到一個超高溫的驚喜。」\n——但丁的旅行指南",
+      "korean": "“화로의 후예가 사는 동굴 아래에는 암석을 녹일 만큼 매우 뜨거운 화염 점액 강이 흐른다. 발밑을 조심하지 않으면 엄청난 열기에 깜짝 놀라게 될 것이다.”\n- 단테의 여행 가이드",
+      "japanese": "「火竜族の洞窟の下には炉油の川が流れている。あまりにも熱いので石にも侵食している。足元に気をつけないと、火傷では済まないかもしれないぞ」\n—ダンテの旅の手引"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Superheated.prefab",
+    "m_AssetGUID": "1d590de4b3894a64eb93e7ae87f35fa9"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectMultiplyStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "pyregel",
+          "count": 2
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/Superheated/FX_Superheated.prefab",
+          "m_AssetGUID": "a1aba0f66ab46274689b90022e1474f8"
+        },
+        "spawnLocation": "character_bottom"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Luke Banke"
+}

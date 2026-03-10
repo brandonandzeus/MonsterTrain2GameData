@@ -1,0 +1,191 @@
+{
+  "id": "Level5BattleHeavyHarvester",
+  "name": "Level5BattleHeavyHarvester",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-da0c257fe2c1cd80-bb5197329a922674da90da26873711e3-v2",
+    "english": "Relentless Zealots",
+    "french": "Zélotes acharnés",
+    "german": "Gnadenlose Fanatiker",
+    "russian": "Безжалостные зилоты",
+    "portuguese": "Fanáticos Implacáveis",
+    "chinese": "无情狂热者",
+    "spanish": "Fanáticos implacables",
+    "chinese_traditional": "不懈的狂熱者",
+    "korean": "가차없는 광신도",
+    "japanese": "執拗な狂信者"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-8a4a51e8ac77351b-bb5197329a922674da90da26873711e3-v2",
+    "english": "Their strength grows from the defeat of others, even their own. Be wary of their fierce power.",
+    "french": "Ils tirent leur force des défaites des autres, mais aussi des leurs. Méfiez-vous de leur puissance redoutable.",
+    "german": "Sie schöpfen ihre Stärke aus Niederlagen – auch aus den eigenen. Hüte dich vor ihrer unbändigen Kraft.",
+    "russian": "Они наращивают силу убийствами, уничтожая даже своих. Берегитесь их сокрушительной мощи.",
+    "portuguese": "A força deles cresce com a derrota de outros, até mesmo a deles própria. Tenha cuidado com esse poder feroz.",
+    "chinese": "他们的力量来源于他人的失败，甚至是自己的失败。小心提防他们凶暴的力量。",
+    "spanish": "Su fuerza crece cuando otros caen derrotados, incluso los suyos. Cuidado con su terrible poder.",
+    "chinese_traditional": "他們從他人的失敗中獲得力量，即使是自己人的失敗也不放過。要小心他們兇猛的力量。",
+    "korean": "이들은 자신 이외의 다른 자가 쓰러질 때마다 더욱 강해집니다. 매서운 일격을 경계하세요.",
+    "japanese": "他者が倒れることで、それがたとえ味方であろうとも、力を増していく。その獰猛な力に用心せよ。"
+  },
+  "bossVariant": {
+    "id": "Level5Bosses",
+    "bossVariants": [
+      "Boss_Level5_Reanimate",
+      "Boss_Level5_Titanskin"
+    ]
+  },
+  "trials": {
+    "id": "T2Trials",
+    "listName": "T2Trials",
+    "trialDatas": [
+      "T2ArtifactForEnemyMultistrike",
+      "T2ArtifactForHealOnAscend",
+      "T2Invasion",
+      "T2Ember",
+      "T2Draw",
+      "T2EnemyTitanskin",
+      "T2SpikeRocks",
+      "T2FrontReanimation"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl2Gold"
+  ],
+  "displayedEnemies": [
+    "HeavyT2_Zealot",
+    "ShieldGuardT2_Devout"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "HeavyT2_Zealot"
+              },
+              {
+                "characterData": "ShieldGuardT2_Devout"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              },
+              {
+                "characterData": "ShieldGuardT2_Devout"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-362f83029a0d334b-bb5197329a922674da90da26873711e3-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "AttackerT2_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT2_Zealot",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "Boss_Level5_Titanskin",
+                "useBossCharacter": true
+              },
+              {
+                "characterData": "ShieldGuardT2_Devout"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

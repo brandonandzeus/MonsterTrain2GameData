@@ -1,0 +1,136 @@
+{
+  "id": "Boss_Level7_Athane",
+  "name": "Athane, Last to Fall",
+  "nameKey": {
+    "key": "CharacterData_nameKey-362f9739c6b1a6a5-0002dae93200a2348b9dffb2c1625a92-v2",
+    "english": "Athane, Last to Fall",
+    "french": "Athane, la Dernière Déchue",
+    "german": "Athane die zuletzt Gestürzte",
+    "russian": "Афина Самая Стойкая",
+    "portuguese": "Athane, a Última a Cair",
+    "chinese": "阿塞恩，最后阵亡者",
+    "spanish": "Athane, Última en Caer",
+    "chinese_traditional": "『最終之殞』阿薩恩",
+    "korean": "마지막 타락자, 아테인",
+    "japanese": "最後に堕ちし者、アサネ"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d17733791123610c-0002dae93200a2348b9dffb2c1625a92-v2",
+      "english": "The last of Heaven’s champions to fall in battle. Athane was stoic and unyielding, prime qualities for Entropy. She was also Seraph’s right hand, as a more obedient and powerful counterpart to Fel.",
+      "french": "Dernière des championnes célestes à tomber au combat, Athane était stoïque et <nobr>inflexible ;</nobr> des qualités primordiales aux yeux d'Entropie. Plus obéissante et plus puissante que Fel, elle était également le bras droit de Séraphin.",
+      "german": "Die letzte der himmlischen Champions, die im Kampf fiel. Athane war stoisch und unnachgiebig – beste Voraussetzungen für Entropie. Sie war auch Seraphs rechte Hand, das gehorsamere und mächtigere Gegenstück zu Fel.",
+      "russian": "Из всех героев Рая ее победили последней. Афина тверда и непоколебима — именно такие качества ценит Энтропия. Она была правой рукой Серафима и достойной соперницей Фэл.",
+      "portuguese": "A última dos campeões do Céu a cair em batalha. Athane era estoica e inabalável, qualidades primordiais para a Entropia. Ela também era o braço-direito do Serafim, como uma contraparte mais obediente e poderosa da Fel.",
+      "chinese": "最后一位在战场上倒下的天堂勇者。阿塞恩坚韧而不屈，是混乱泰坦的最看重品质。她也是炽天使的助手，是一个比起菲尔更加听话也更加强大的副手。",
+      "spanish": "La última de los campeones del Cielo en caer en combate. Athane era estoica e inflexible, dos cualidades perfectas para Entropía. También era la mano derecha de Seraph; similar a Fel, pero más obediente y poderosa.",
+      "chinese_traditional": "最後一位在戰鬥中倒下的天堂勇士。阿薩恩堅忍不屈，擁有熵的完美特質。她也是撒拉弗的左右手，相比費爾更順從也更強大。",
+      "korean": "천상의 마지막 영웅이 전투에서 쓰러졌다. 금욕적이고 불굴의 정신을 지닌 아테인은 엔트로피의 특성에 걸맞은 인물이었다. 또한, 세라핌의 오른팔로서 펠보다 더욱 순종적이고 강력한 존재였다.",
+      "japanese": "戦いで倒れた最後の天界のチャンピオン。アサネは冷静で不屈の精神を持ち、最高のエントロピーの資質を備えていた。彼女はまた、フェルよりも従順で強力な相棒として、セラフの右腕でもあった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_NephilLastToFall.prefab",
+    "m_AssetGUID": "05e3d9e80d0354744ba71181632c46d8"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-55aa7ca863a1f9fb-0002dae93200a2348b9dffb2c1625a92-v2",
+        "english": "Apply [spikes] [effect0.status0.power] to enemy units.",
+        "french": "Applique [spikes] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [spikes] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает [spikes] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [spikes] [effect0.status0.power] a unidades inimigas.",
+        "chinese": "使所有敌方单位获得 [spikes] [effect0.status0.power]。",
+        "spanish": "Añade [spikes] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[spikes][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [spikes][effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[spikes] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "spikes",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-84c6da3c55dae713-0002dae93200a2348b9dffb2c1625a92-v2",
+        "english": "Spawn a <b>Chosen Prayerstone</b>.",
+        "french": "Fait apparaître une <b>Pierre offertoire d'élu</b>.",
+        "german": "Erzeuge einen <b>Auserwählten Gebetstein</b>.",
+        "russian": "Создает <b>Алтарь избранного</b>.",
+        "portuguese": "Faz surgir uma <b>Pedra de Oração do Escolhido</b>.",
+        "chinese": "生成一个<b>神选祷告石</b>。",
+        "spanish": "Genera una <b>Piedra oratoria elegida</b>.",
+        "chinese_traditional": "生成一個<b>天選祈禱石</b>。",
+        "korean": "<b>선택된 기도석</b>을 스폰합니다.",
+        "japanese": "<b>選ばれし祈念石</b>を出現させる。"
+      },
+      "trigger": "post_ascension",
+      "effects": [
+        {
+          "effectStateName": "CardEffectSpawnHero",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramCharacterDataPool": [
+            "SpikyRockT3_Chosen_Boss_BasicNonAttack"
+          ]
+        }
+      ]
+    },
+    {
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "effectStateName": "CardEffectSpawnHero",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramCharacterDataPool": [
+            "SpikyRockT3_Chosen_Boss_BasicNonAttack"
+          ]
+        }
+      ],
+      "hideVisualAndIgnoreSilence": true
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 3600,
+    "endlessAttack": 30
+  },
+  "size": 5,
+  "health": 1100,
+  "isMiniboss": true,
+  "deathType": "large",
+  "attackDamage": 12,
+  "subtypeKeys": [
+    "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss7_Athane_ChatterData",
+  "artistAttribution": "Taylor Bray"
+}

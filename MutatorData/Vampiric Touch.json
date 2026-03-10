@@ -1,0 +1,65 @@
+{
+  "id": "LifestealEveryone",
+  "name": "Vampiric Touch",
+  "nameKey": {
+    "key": "MutatorData_nameKey-2a0b5834b520e6b0-edab13eb6c15cc146ac762b1caac7001-v2",
+    "english": "Vampiric Touch",
+    "french": "Toucher vampirique",
+    "german": "Blutsauger",
+    "russian": "Прикосновение вампира",
+    "portuguese": "Toque Vampírico",
+    "chinese": "吸血鬼之触",
+    "spanish": "Toque vampírico",
+    "chinese_traditional": "吸血之觸",
+    "korean": "흡혈 접촉",
+    "japanese": "吸血鬼集団"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-f7c57fccc2f88708-edab13eb6c15cc146ac762b1caac7001-v2",
+    "english": "All units enter with [lifesteal] [effect1.status0.power].",
+    "french": "Toutes les unités entrent avec [lifesteal] [effect1.status0.power].",
+    "german": "Alle Einheiten starten mit [lifesteal] [effect1.status0.power].",
+    "russian": "На всех бойцов при входе накладывается [lifesteal] х[effect1.status0.power].",
+    "portuguese": "Todas as unidades entram com [lifesteal] [effect1.status0.power].",
+    "chinese": "所有单位进入战斗时获得 [lifesteal] [effect1.status0.power]。",
+    "spanish": "Todas las unidades entran con [lifesteal] [effect1.status0.power].",
+    "chinese_traditional": "所有單位登場時獲得[lifesteal][effect1.status0.power]。",
+    "korean": "모든 유닛이 [lifesteal] [effect1.status0.power] 상태로 등장합니다.",
+    "japanese": "すべてのユニットが[lifesteal] [effect1.status0.power]を付与された状態で出現する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTempUpgrade",
+      "paramCardUpgradeData": {
+        "id": "Lifesteal3",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "lifesteal",
+            "count": 3
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyUnit",
+            "cardType": "monster"
+          }
+        ],
+        "isUnique": true
+      },
+      "paramSourceTeam": "monsters",
+      "paramBool": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "lifesteal",
+          "count": 3
+        }
+      ],
+      "paramSourceTeam": "heroes"
+    }
+  ],
+  "boonValue": 2,
+  "disableInDailyChallenges": true
+}

@@ -1,0 +1,192 @@
+{
+  "id": "Level4BattleHunterAttackers",
+  "name": "Level4BattleHunterAttackers",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-30b60bdc32e9765e-7aefb76d8bf5cc541890e3fe9b961375-v2",
+    "english": "Savagery's Hunters",
+    "french": "Chasseurs de Sauvagerie",
+    "german": "Grausamkeits Jäger",
+    "russian": "Охотники Изувера",
+    "portuguese": "Caçadores de Barbárie",
+    "chinese": "野蛮泰坦的猎手",
+    "spanish": "Cazadores de Salvajismo",
+    "chinese_traditional": "野性的獵人",
+    "korean": "세비저리의 사냥꾼",
+    "japanese": "サベジャリーの狩人"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-2a94ede89e418ced-7aefb76d8bf5cc541890e3fe9b961375-v2",
+    "english": "These angels have lost their purpose, and have been given a new one by their new overlords. Do not let them carry it out.",
+    "french": "Ces anges ont perdu leur raison d'être et leurs nouveaux maîtres leur en ont donné une nouvelle. Ne les laissez pas réaliser leurs projets.",
+    "german": "Diese Engel haben ihren Bestimmung verloren und von ihren neuen Herren eine neuen bekommen. Sie dürfen sie nicht erfüllen!",
+    "russian": "Эти ангелы лишились своего предназначения, но с новыми покровителями появились и новые цели. Не дайте им их достичь.",
+    "portuguese": "Esses anjos perderam o propósito e receberam um novo dos novos senhores. Não permita que eles o cumpram.",
+    "chinese": "这些天使已经失去了原来的使命，他们的新主人已经赋予了他们全新的使命。不要让他们得逞。",
+    "spanish": "Estos ángeles han perdido su propósito y sus nuevos soberanos les han dado uno nuevo. No dejes que lo lleven a cabo.",
+    "chinese_traditional": "這些天使已失去他們的目標，並被新的主人賦予了新的使命。不要讓他們有機會完成任務。",
+    "korean": "목적을 잃고 방황하던 천사들이 새 주인의 명에 따라 새로운 목적을 얻었습니다. 저들의 행위를 막아야 합니다.",
+    "japanese": "この天使たちは目的を失い、新たな支配者に新たな目的を植え付けられた。それを達成させてはならない。"
+  },
+  "bossVariant": {
+    "id": "Level4Bosses",
+    "bossVariants": [
+      "Boss_Level4_Harvester",
+      "Boss_Level4_Corruptor",
+      "Boss_Level4_EmberGranter"
+    ]
+  },
+  "trials": {
+    "id": "T2Trials",
+    "listName": "T2Trials",
+    "trialDatas": [
+      "T2ArtifactForEnemyMultistrike",
+      "T2ArtifactForHealOnAscend",
+      "T2Invasion",
+      "T2Ember",
+      "T2Draw",
+      "T2EnemyTitanskin",
+      "T2SpikeRocks",
+      "T2FrontReanimation"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl2Gold"
+  ],
+  "displayedEnemies": [
+    "AttackerT2_Basic",
+    "AttackerT2_HunterSeeker"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_HunterSeeker"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_HunterSeeker"
+              },
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "AttackerT2_Basic",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "AttackerT2_HunterSeeker"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-20ac62b3ae1fcbc5-7aefb76d8bf5cc541890e3fe9b961375-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT2_Zealot",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "AttackerT2_Basic"
+              },
+              {
+                "characterData": "Boss_Level4_Harvester",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "Level2BattleHeavyAttackInFront_FTUE",
+  "name": "Level2BattleHeavyAttackInFront_FTUE",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-28a6eec3bf999e62-f6b20d634699f4d47b3c4ec8f71603b2-v2",
+    "english": "Knights of Entropy",
+    "french": "Chevaliers d'Entropie",
+    "german": "Entropies Ritter",
+    "russian": "Рыцари Энтропии",
+    "portuguese": "Cavaleiros da Entropia",
+    "chinese": "混乱泰坦的骑士",
+    "spanish": "Caballeros de Entropía",
+    "chinese_traditional": "熵之騎士",
+    "korean": "엔트로피의 기사",
+    "japanese": "エントロピーの騎士"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-049a54985d9f7a79-f6b20d634699f4d47b3c4ec8f71603b2-v2",
+    "english": "Slow moving soldiers blessed of Entropy will deal heavy damage if they reach the front.",
+    "french": "Les soldats à déplacement lent, bénis par Entropie, infligeront de lourds dégâts s'ils atteignent le front.",
+    "german": "Langsame Soldaten, die mit Entropie gesegnet sind, richten an der Front schweren Schaden an.",
+    "russian": "Медленно передвигающиеся солдаты, благословленные Энтропией, нанесут серьезный урон, если вырвутся вперед.",
+    "portuguese": "Os soldados com a Bênção da Entropia possuem movimentação lenta, mas causarão muito dano se chegarem à frente.",
+    "chinese": "受混乱泰坦祝福的士兵移动缓慢，一旦到达前方就会造成大量伤害。",
+    "spanish": "Los soldados lentos benditos por Entropía infligirán mucho daño si llegan al frente.",
+    "chinese_traditional": "受熵之祝福、移動速度緩慢的士兵如果到達前線，將造成巨大傷害。",
+    "korean": "엔트로피의 축복을 받아 느려진 병사가 전열에 나서면 엄청난 피해를 줍니다.",
+    "japanese": "エントロピーの祝福を受けた鈍足の兵士は、前列に出ると強力なダメージを与えてくる。"
+  },
+  "bossVariant": {
+    "id": "Level2Bosses",
+    "bossVariants": [
+      "Boss_Level2_BigStats",
+      "Boss_Level2_Spikes"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "displayedEnemies": [
+    "ClericT1_OminousAcolyte",
+    "HeavyT1_BigAttackUpFront"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "HeavyT1_BigAttackUpFront"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "AttackerT1_Spearman",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "HeavyT1_BigAttackUpFront"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-62245655e44a54a7-f6b20d634699f4d47b3c4ec8f71603b2-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "Boss_Level2_BigStats",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

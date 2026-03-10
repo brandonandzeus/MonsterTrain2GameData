@@ -1,0 +1,104 @@
+{
+  "id": "RuneboundGuardian",
+  "name": "Guard of the Unnamed",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_GuardianOfTheUnnamed.prefab",
+    "m_AssetGUID": "08430d0a5d30fbf4fa57cd4cb7cbb3f5"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterRuneboundGuardian",
+        "nameKey": {
+          "key": "CharacterData_nameKey-9f5cda850d71ca90-e0ee630d9703547419fe9f410026797c-v2",
+          "english": "Guard of the Unnamed",
+          "french": "Gardienne du Sans-nom",
+          "german": "Wache des Namenlosen",
+          "russian": "Стража Безымянного",
+          "portuguese": "Guardião do Inominado",
+          "chinese": "无名者护卫",
+          "spanish": "Guardia del Ignoto",
+          "chinese_traditional": "無名者守衛",
+          "korean": "이름 없는 자의 경비대",
+          "japanese": "名もなき巨人の墓守"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-b6b6c12f523842f7-e0ee630d9703547419fe9f410026797c-v2",
+            "english": "Original captors and protectors of the Titan, these Sirens have existed almost since the creation of the sea itself. They were the first to follow Tethys in recognizing the importance of the Titan’s survival and that its imprisonment would be the only way to ensure it.",
+            "french": "Ravisseuses et protectrices originelles du titan, ces sirènes existent presque depuis la création même de la mer. Elles ont été les premières à suivre Téthys dans sa reconnaissance de l'importance de la survie du titan et que son emprisonnement serait le seul moyen de la garantir.",
+            "german": "Diese Sirenen gibt es fast schon so lange wie das Meer, in dem Sie leben. Sie gehören zu den ursprünglichen Fängern und Beschützern des Titanen. Sie erkannten gemeinsam mit Tethys, dass das Überleben des Titanen entscheidend ist und dass seine Gefangenschaft die einzige Möglichkeit war, sein Überleben zu sichern.",
+            "russian": "Пленители и защитники Титана, эти сирены существуют с тех самых пор, как было создано море. Они первыми согласились с Тефией в том, что Титан должен жить и что гарантировать это можно, только пленив его.",
+            "portuguese": "Os detentores e protetores originais do Titã, estes Sereios existem desde a criação do mar. Foram os primeiros a seguir Tétis, reconhecendo a importância da sobrevivência do Titã e de seu encarceramento como única opção.",
+            "chinese": "这些海妖是泰坦最初的俘获者与保护者，几乎自海洋本身诞生以来就存在于世。它们是泰西丝最初的追随者，也是最初意识到泰坦存活重要性的人。它们明白，将泰坦监禁起来，才是保障泰坦生存的唯一途径。",
+            "spanish": "Las sirenas, captoras y protectoras originales del titán, existen casi desde la creación del propio mar. Fueron las primeras en seguir el ejemplo de Tethys al defender la supervivencia del titán y la necesidad de aprisionarlo para asegurarla.",
+            "chinese_traditional": "泰坦最初的捕捉者和保護者，這些海妖幾乎自海洋創始之初就存在。他們是第一批跟隨忒提斯認識到泰坦生存重要性的人，並且唯有透過囚禁的方式才能確保其生存。",
+            "korean": "티탄을 포획하고 봉인을 지키는 이 세이렌 무리는 바다가 태어날 때부터 존재했다. 티탄의 생존이 중요하고 이를 위해서는 봉인만이 유일한 방법이라는 것을 깨달은 이들은 처음으로 테티스와 뜻을 함께했다.",
+            "japanese": "巨人を最初に捕らえ、その守護者となったセイレーンたちは、海が誕生した頃から存在していた。彼女らは、テシスに続いて最初に巨人の生存の重要性を、そしてそれを確実にするには巨人を捕らえることが唯一の方法であることを認識したのだ。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_GuardianOfTheUnnamed.prefab",
+          "m_AssetGUID": "86ab1800c99f75a48acc6d26bbaf15c9"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-a265086f5e4882a9-e0ee630d9703547419fe9f410026797c-v2",
+              "english": "Gain [armor] [effect0.status0.power].",
+              "french": "Octroie <b>Armure</b> [effect0.status0.power].",
+              "german": "Erhalte [effect0.status0.power] <b>Rüstung</b>.",
+              "russian": "Дает [effect0.status0.power] х[armor].",
+              "portuguese": "Concede <b>Armadura</b> [effect0.status0.power].",
+              "chinese": "获得<b>护甲</b> [effect0.status0.power]。",
+              "spanish": "Añade [armor] [effect0.status0.power].",
+              "chinese_traditional": "獲得[armor][effect0.status0.power]。",
+              "korean": "[armor] [effect0.status0.power]을 획득합니다.",
+              "japanese": "[armor] [effect0.status0.power]を得る。"
+            },
+            "trigger": "card_spell_played",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "armor",
+                    "count": 3
+                  }
+                ],
+                "paramInt": 100
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 25,
+        "attackDamage": 5,
+        "subtypeKeys": [
+          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "StygianSirenChatterData_Male"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

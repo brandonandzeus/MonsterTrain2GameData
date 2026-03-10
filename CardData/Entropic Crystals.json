@@ -1,0 +1,99 @@
+{
+  "id": "TitanCurse",
+  "name": "Entropic Crystals",
+  "nameKey": {
+    "key": "CardData_nameKey-443444f2f3162378-599fa1f0df134034cada287f88e81489-v2",
+    "english": "Entropic Crystals",
+    "french": "Cristaux entropiques",
+    "german": "Entropische Kristalle",
+    "russian": "Кристаллы Энтропии",
+    "portuguese": "Cristais da Entropia",
+    "chinese": "混乱水晶",
+    "spanish": "Cristales entrópicos",
+    "chinese_traditional": "熵水晶",
+    "korean": "엔트로피 수정",
+    "japanese": "エントロピーの水晶"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-993e8e0596f0964d-599fa1f0df134034cada287f88e81489-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-099c89c006fbe2da-599fa1f0df134034cada287f88e81489-v2",
+      "english": "I’ve seen angels who were once my friends stumble from the weight of Entropy’s possession: crystal shards that grow beneath the skin and pierce the body once full control has been established.",
+      "french": "J'ai vu des anges qui étaient autrefois mes amis trébucher sous le poids de la possession <nobr>d'Entropie :</nobr> des éclats de cristal leur poussaient sous la peau et transperçaient leur corps une fois que le contrôle était total.",
+      "german": "Engel, die einst meine Freunde waren, taumeln unter dem Gewicht von Entropies Besitz: Kristallsplitter, die unter der Haut wachsen und den Körper durchbohren, sobald die vollständige Kontrolle erlangt wurde.",
+      "russian": "Мне доводилось видеть, как страдали мои бывшие друзья-ангелы, одержимые Энтропией: когда контроль становился абсолютным, осколки кристаллов в их телах прорастали наружу, раздирая кожу.",
+      "portuguese": "Já vi anjos que foram meus amigos perecerem com o peso da possessão da Entropia: fragmentos de cristal que crescem sob a pele e perfuram o corpo quando o controle total é estabelecido.",
+      "chinese": "我曾经见到，曾是我朋友的天使，被混乱泰坦的支配所压垮：皮肤下生长出水晶碎片，一旦被完全控制，水晶碎片就会刺穿身体。",
+      "spanish": "He visto a ángeles que eran amigos míos sucumbir a la posesión de Entropía: cristales que crecen bajo la piel y atraviesan el cuerpo cuando su control es absoluto.",
+      "chinese_traditional": "我看到我曾經的朋友天使們在熵的控制下跌跌撞撞：水晶碎片在皮膚下生長，一旦完全掌握控制權就會刺穿身體。",
+      "korean": "과거 동료였던 천사들이 엔트로피의 힘에 꼼짝 못하고 비틀거리는 모습을 본 적이 있다. 이 파편은 대상을 완전히 통제할 때 피부를 뚫고 나오는 결정에서 떨어진 것이다.",
+      "japanese": "かつて友だった天使がエントロピーに取り憑かれてよろめくのを見たことがある。皮下に水晶の欠片が生え、完全に乗っ取られるとそれが外に突き出してくるのだ。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "blight",
+  "rarity": "common",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_EntropicCrystal.prefab",
+    "m_AssetGUID": "5c72d0756fe87ac4eafff5b6dff96f2d"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitUnpurgable"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectNULL",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramBool2": true,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Blights/Entropic Crystals/FX_EntropicCrystal.prefab",
+          "m_AssetGUID": "bad524df02386be428c8e5b640221943"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-c2e0941e73684f25-599fa1f0df134034cada287f88e81489-v2",
+        "english": "Spells in your deck cost +[effect0.upgrade.costreductionabs][ember].",
+        "french": "Les sorts du deck coûtent +[effect0.upgrade.costreductionabs][ember].",
+        "german": "Zauber in deinem Deck kosten +[effect0.upgrade.costreductionabs][ember].",
+        "russian": "Чары в колоде стоят +[effect0.upgrade.costreductionabs][ember].",
+        "portuguese": "Os feitiços do seu deck custam +[effect0.upgrade.costreductionabs][ember].",
+        "chinese": "你卡组中的法术费用 +[effect0.upgrade.costreductionabs][ember]。",
+        "spanish": "Los hechizos de tu mazo cuestan +[effect0.upgrade.costreductionabs][ember].",
+        "chinese_traditional": "你牌組中的法術卡牌的費用增加[effect0.upgrade.costreductionabs][ember]。",
+        "korean": "덱에 있는 모든 주문 카드의 비용이 +[effect0.upgrade.costreductionabs][ember] 증가합니다.",
+        "japanese": "デッキ内の呪文のコスト+[effect0.upgrade.costreductionabs][ember]。"
+      },
+      "trigger": "on_unplayed_negative",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToSpellsInDeck",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramCardUpgradeData": {
+            "id": "TitanCurse_Upgrade",
+            "useUpgradeHighlightTextTags": false,
+            "costReduction": -1
+          }
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "specialEdgeVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_CardReserve_PS.prefab",
+      "m_AssetGUID": "8fd1704a586fb0b42a61a5e85cb590e5"
+    }
+  },
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hung Bui"
+}

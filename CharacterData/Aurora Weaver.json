@@ -1,0 +1,110 @@
+{
+  "id": "MonsterAuroraWeaver",
+  "name": "Aurora Weaver",
+  "nameKey": {
+    "key": "CharacterData_nameKey-8f415a5a00cf785e-13e9befbbcd0b4849a3a3a774673be3a-v2",
+    "english": "Aurora Weaver",
+    "french": "Tisseuse d'aube",
+    "german": "Morgenröte-Spinnerin",
+    "russian": "Плетельщица",
+    "portuguese": "Tecelã do Amanhecer",
+    "chinese": "灵气编织者",
+    "spanish": "Tejedora de auroras",
+    "chinese_traditional": "極光編織者",
+    "korean": "오로라 직조공",
+    "japanese": "オーロラ・ウィーヴァー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-5377a720c4756d75-13e9befbbcd0b4849a3a3a774673be3a-v2",
+      "english": "“Oh, your aura! It feels so...malevolent! Do not worry, I’ll cut away the negative energy with my blade!”",
+      "french": "<nobr>« Oh,</nobr> votre aura est si... <nobr>malveillante !</nobr> Ne vous inquiétez pas, je vais couper l'énergie négative avec ma <nobr>lame ! »</nobr>",
+      "german": "„Oh, deine Aura! Sie ist so ... bösartig! Keine Sorge, ich werde die negative Energie mit meiner Klinge entfernen!“",
+      "russian": "«Что с твоей аурой?! От нее веет злом! Не переживай, я отсеку негативную энергию своим клинком!»",
+      "portuguese": "“Ah, a sua aura! Ela parece tão... malévola! Não se preocupe, vou cortar a energia negativa com minha lâmina!”",
+      "chinese": "“哦，你的灵气！感觉很……恶毒！别担心，我会用刀刃把你的负能量全部切除！”",
+      "spanish": "«¡Oh, qué aura! Es muy... ¡malévola! No te preocupes, ¡cortaré la energía negativa con mi espada!».",
+      "chinese_traditional": "「哦，你的氣場！感覺如此……充滿惡意！別擔心，我會用我的刀刃切除負面能量！」",
+      "korean": "\"세상에, 네 오라! 아주... 악의로 가득 차 있구나! 걱정하지 마. 이 칼로 그 부정적인 에너지를 잘라줄 테니까!\"",
+      "japanese": "「ああ、あなたのオーラ！とても…邪悪よ！でも心配しないで、この刃で負のエネルギーを断ち切ってあげるから！」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_AuroraWeaver.prefab",
+    "m_AssetGUID": "76a88b36ce7467b4eb7f8cd9a267c6d4"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-fb8c6cfeaa48f69a-13e9befbbcd0b4849a3a3a774673be3a-v2",
+        "english": "Gain [conduit] [effect0.upgrade.status0.power].",
+        "french": "Octroie [conduit] [effect0.upgrade.status0.power].",
+        "german": "Erhalte [conduit] [effect0.upgrade.status0.power].",
+        "russian": "Дает [effect0.upgrade.status0.power] х[conduit].",
+        "portuguese": "Recebe [conduit] [effect0.upgrade.status0.power].",
+        "chinese": "获得 [conduit] [effect0.upgrade.status0.power]。",
+        "spanish": "Añade [conduit] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "獲得[conduit][effect0.upgrade.status0.power]。",
+        "korean": "[conduit] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+        "japanese": "[conduit] [effect0.upgrade.status0.power]を得る。"
+      },
+      "trigger": "on_moon_phase_shift",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "AuroraWeaverMagicPowerRoomUpgrade",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "conduit",
+                "count": 1
+              }
+            ]
+          },
+          "additionalTooltips": [
+            {
+              "descriptionKey": {
+                "key": "CardTraitMagicPower_TooltipText",
+                "english": "Increases the amount of damage dealt and health restored by spells.",
+                "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+                "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+                "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+                "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+                "chinese": "提高法术造成的伤害与恢复的生命值。",
+                "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+                "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+                "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+                "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+              },
+              "titleKey": {
+                "key": "CardTraitMagicPower_TooltipTitle",
+                "english": "Magic Power",
+                "french": "Puissance magique",
+                "german": "Magische Kraft",
+                "russian": "Сила магии",
+                "portuguese": "Poder Mágico",
+                "chinese": "魔法强度",
+                "spanish": "Poder mágico",
+                "chinese_traditional": "魔法力量",
+                "korean": "마법력",
+                "japanese": "魔力"
+              }
+            }
+          ],
+          "additionalParamInt1": 1
+        }
+      ],
+      "suppressTriggerNotification": true
+    }
+  ],
+  "size": 1,
+  "health": 5,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 5,
+  "subtypeKeys": [
+    "SubtypesData_Selene"
+  ],
+  "characterChatterData": "LunaCovenSeleneChatterdata"
+}

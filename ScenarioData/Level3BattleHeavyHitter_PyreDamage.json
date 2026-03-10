@@ -1,0 +1,156 @@
+{
+  "id": "Level3BattleHeavyHitter_PyreDamage",
+  "name": "Level3BattleHeavyHitter_PyreDamage",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-aacfd3e753572c8f-1f26f33e71b927246848e239ddd9ac84-v2",
+    "english": "Arkion, Scion of Savagery",
+    "french": "Arkion, Héritier de Sauvagerie",
+    "german": "Arkion, Grausamkeits Spross",
+    "russian": "Аркион Наследник Изувера",
+    "portuguese": "Arkion, Descendente da Barbárie",
+    "chinese": "阿尔基翁，野蛮泰坦的后裔",
+    "spanish": "Arkion, vástago de Salvajismo",
+    "chinese_traditional": "『野性之子』阿爾基昂",
+    "korean": "세비저리의 후손, 아키온",
+    "japanese": "サベジャリーの嗣子、アーキオン"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-ca8d64fd9c6e647c-1f26f33e71b927246848e239ddd9ac84-v2",
+    "english": "Arkion draws from the very essence of Savagery to strike the Pyre should he not be contained on every floor.",
+    "french": "Arkion puise dans l'essence même de Sauvagerie pour frapper le Brasier s'il n'est pas réfréné à chaque niveau.",
+    "german": "Arkion schöpft aus der Essenz von Grausamkeit, um die Höllenglut zu schlagen, wenn er nicht auf jeder Ebene eingedämmt wird.",
+    "russian": "Аркион будет бить по Пеклу со всей мощью Изувера, если хотя бы на одном этаже не окажется вашего бойца.",
+    "portuguese": "Arkion extrai a própria essência da Barbárie para atacar a Pira caso ele não seja contido em todos os andares.",
+    "chinese": "阿尔基翁能汲取野蛮泰坦的精华，若他在每层未被牵制，就会攻击薪火。",
+    "spanish": "Arkion obtiene poder de la esencia de Salvajismo para golpear a la Pira si no se contiene en todos los pisos.",
+    "chinese_traditional": "阿爾基昂從野性的本質中汲取力量，若他沒有在每個樓層都受到控制，就會攻擊火堆。",
+    "korean": "아키온은 막지 않으면 어떤 층에서든 세비저리의 정수에서 힘을 끌어내어 화로를 파괴하려 합니다.",
+    "japanese": "アーキオンは、各フロアで足止めされていない場合、サベジャリーのエッセンスを引き出して炉を攻撃する。"
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Enemy_Boss_Level3Rage"
+  ],
+  "titanTrialSin": "Enemy_Boss_Level3Rage_TitanTrial",
+  "battleTrackNameData": "BattleMusic_Arkios",
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Arkion_Intro",
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "HeavyT1_Basic"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              },
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_Level3_Arkion_DamagePyre",
+    "hardBossCharacter": "Boss_Level3_Arkion_DamagePyre"
+  }
+}

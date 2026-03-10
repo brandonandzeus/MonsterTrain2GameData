@@ -1,0 +1,267 @@
+{
+  "id": "SoulSavior_R1_Battle_AscendAttacker",
+  "name": "SoulSavior_R1_Battle_AscendAttacker",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-71626521a1eca63a-a93cc28462beda549834932e212ae54f-v2",
+    "english": "Favored Ascent",
+    "french": "Ascension sacrée",
+    "german": "Aufstieg zum Ruhm",
+    "russian": "Вознесенный избранник",
+    "portuguese": "Ascensão Favorável",
+    "chinese": "争先者上升",
+    "spanish": "Ascenso predilecto",
+    "chinese_traditional": "爭寵上升",
+    "korean": "총애의 승천",
+    "japanese": "恵みの上昇"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-7838bd04ee4298fe-a93cc28462beda549834932e212ae54f-v2",
+    "english": "With a serpent-like swiftness, the Lifemother’s servant rushes to the Pyre and gains strength with each new level they reach.",
+    "french": "Avec une célérité reptilienne, le serviteur de Mère Nature se rue vers le Brasier et gagne en puissance à mesure qu'il gagne en niveaux.",
+    "german": "Die Lebensmutter dringt schlangengleich voran und eilt zur Höllenglut. Sie wird mit jedem neu erreichten Level immer stärker.",
+    "russian": "С проворством змеи слуга Матери-природы несется к Пеклу и крепнет с каждым достигнутым уровнем.",
+    "portuguese": "Com a rapidez semelhante à de uma serpente, o servo da Genetriz corre para a Pira e ganha força a cada novo nível que alcança.",
+    "chinese": "生命之母的仆从像蛇一样迅捷，他们会朝着薪火飞奔，且每上爬一层都能获得力量。",
+    "spanish": "Con velocidad de serpiente, los sirvientes de la Madre Vida se abalanzan sobre la Pira y aumentan sus fuerzas con cada nivel que alcanzan.",
+    "chinese_traditional": "生命之母的僕從如蛇般迅疾地衝向薪火，每爬升一層，力量便隨之增強。",
+    "korean": "생명의 어머니를 섬기는 이 존재는 뱀처럼 재빠른 움직임으로 화로로 달려들고, 새로운 레벨에 도달할 때마다 더욱 강해집니다.",
+    "japanese": "ライフマザーの下僕たちは蛇のようなすばやさで炉に迫り、上階に昇るたびに力を増す。"
+  },
+  "bossVariant": {
+    "id": "SoulSavior_Region1Bosses",
+    "bossVariants": [
+      "Boss_SoulSavior_R1_TrainBoss_Athane",
+      "Boss_SoulSavior_R1_TrainBoss_Harvester"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "R1_Attacker_AscendGainAtk",
+    "R1_Heavy_HealOnShift"
+  ],
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Enchant/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_EnchanterT1_Speed_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "EnchanterT1_Speed"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atk x2 /Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Enchant/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_EnchanterT1_Speed_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "EnchanterT1_Speed"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Bonus) Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredDifficultyTier": 2,
+                "requiredMutator": "SoulSavior_RunDistance1"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Bonus) Atk x2 /Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "characterData": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "Boss_SoulSavior_R1_TrainBoss_Harvester",
+                "useBossCharacter": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 2
+              }
+            ],
+            "waveMessageKey": "ScenarioData_waveMessageKey-680b11bcfe787547-a93cc28462beda549834932e212ae54f-v2"
+          }
+        ]
+      }
+    ],
+    "bossType": "none",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend"
+  }
+}

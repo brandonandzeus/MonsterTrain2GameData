@@ -1,0 +1,47 @@
+{
+  "id": "HandDoesntDiscard",
+  "name": "Magic Hands",
+  "nameKey": {
+    "key": "MutatorData_nameKey-eb3526a1e8319dfc-dda7a8297590c504896df0328d26da8d-v2",
+    "english": "Magic Hands",
+    "french": "Mains magiques",
+    "german": "Magische Hände",
+    "russian": "Ловкость рук",
+    "portuguese": "Mãos Mágicas",
+    "chinese": "魔法之手",
+    "spanish": "Manos mágicas",
+    "chinese_traditional": "魔法之手",
+    "korean": "마법의 손",
+    "japanese": "魔法の手"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-50baea4bbefc4848-dda7a8297590c504896df0328d26da8d-v2",
+    "english": "Cards are not discarded at end of turn. [effect0.power] cards per turn.",
+    "french": "Les cartes ne sont pas défaussées à la fin du tour. [effect0.power] cartes par tour.",
+    "german": "Karten werden am Ende des Zuges nicht abgeworfen. [effect0.power] Karten pro Zug.",
+    "russian": "Карты не сбрасываются в конце хода. [effect0.power] шт. карт дается каждый ход.",
+    "portuguese": "As cartas não são descartadas no fim do turno. [effect0.power] cartas por turno.",
+    "chinese": "回合结束时不会舍弃手牌。每回合 [effect0.power] 张。",
+    "spanish": "No se descartan las cartas al final del turno. [effect0.power] cartas por turno.",
+    "chinese_traditional": "回合結束時卡牌不會被捨棄。每回合[effect0.power]張卡牌。",
+    "korean": "턴 종료 시 카드를 버리지 않습니다. 턴당 카드 [effect0.power]장.",
+    "japanese": "ターン終了時にカードが破棄されない。ターンごとにカード[effect0.power]枚。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectChangeStartingHandSize",
+      "paramInt": -2
+    },
+    {
+      "relicEffectClassName": "RelicEffectSuppressHandDiscard",
+      "paramCardType": "spell",
+      "paramSourceTeam": "none",
+      "paramTargetMode": "front_in_room"
+    }
+  ],
+  "boonValue": -5,
+  "tags": [
+    "handsize",
+    "blights"
+  ]
+}

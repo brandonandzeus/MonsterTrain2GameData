@@ -1,0 +1,77 @@
+{
+  "id": "ArmamentDrive",
+  "name": "Armament Drive ",
+  "nameKey": {
+    "key": "CardData_nameKey-4141de42bf9975c1-145dd323945dbe2478526e23916b8ce1-v2",
+    "english": "Armament Drive ",
+    "french": "Course à l'armement ",
+    "german": "Bewaffnungseifer ",
+    "russian": "Боевой режим ",
+    "portuguese": "Ímpeto de Armamento ",
+    "chinese": "军备激励 ",
+    "spanish": "Reparto de armamento ",
+    "chinese_traditional": "武裝驅動 ",
+    "korean": "무기 추진 장치 ",
+    "japanese": "武装供給 "
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-2b5dea755e1e981b-145dd323945dbe2478526e23916b8ce1-v2",
+    "english": "Add a +[effect0.upgrade.bonusdamage][attack] +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand for each unequipped friendly unit.",
+    "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] +[effect0.upgrade.bonushp][health] à votre main pour chaque unité alliée déséquipée.",
+    "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> pro nicht ausgerüsteter verbündeter Einheit hinzu.",
+    "russian": "Добавляет в вашу руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]) за каждого союзника без снаряжения.",
+    "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão para cada unidade aliada não equipada.",
+    "chinese": "每有一个无装备的友方单位，就将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌。",
+    "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano por cada unidad aliada no equipada.",
+    "chinese_traditional": "每有一個未裝備的友方單位，將一件+[effect0.upgrade.bonusdamage][attack]+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入手牌。",
+    "korean": "장비를 미장착한 아군 유닛 하나당 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health], <b>제작 장비</b>를 내 패에 추가합니다.",
+    "japanese": "装備解除した味方ユニット1体につき+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-fa63a0038815ee65-145dd323945dbe2478526e23916b8ce1-v2",
+      "english": "“Heh, you want somethin’ to kill angel zombies? Have I got the blade for ya.”—Heph",
+      "french": "<nobr>« Eh,</nobr> tu veux une arme pour tuer les anges <nobr>zombies ?</nobr> J'ai une lame pour <nobr>toi. »</nobr> — Heph",
+      "german": "„Hey, du brauchst was, womit man Engelzombies töten kann? Ich hätte da genau die richtige Klinge!“ – Heph",
+      "russian": "«Хе. Ищешь, чем прикончить этих ангелов-зомбяк? Есть у меня для тебя клинок» — Геф",
+      "portuguese": "“Heh, você quer algo para matar anjos zumbis? Eu tenho a espada certa.” — Heph",
+      "chinese": "“嘿，你想要杀天使丧尸的武器吗？我刚好为你准备了一把利刃呢。”——赫芙",
+      "spanish": "«Je, ¿quieres algo para matar ángeles zombi? Tengo justo lo que necesitas». —Heph",
+      "chinese_traditional": "「嘿，你想要能殺死天使殭屍的東西？我這兒正好有把適合你的刀。」——赫芙",
+      "korean": "“헤에, 천사 좀비를 벨 게 필요하다고? 그럼 맞춤형 칼 하나 보여줄게.”—헵",
+      "japanese": "「へえ、天使のゾンビを倒せるものが欲しいですって？この剣がおすすめよ」—ヘフ"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MassReinforcement.prefab",
+    "m_AssetGUID": "7eb63441ed758fd44b82bbdd6e53dc1d"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddBattleCardPerTarget",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Plus15Attack15Health",
+        "bonusDamage": 15,
+        "bonusHP": 15
+      },
+      "paramInt": 3,
+      "additionalParamInt": 1,
+      "paramBool2": true,
+      "paramCardPool": "CraftedEquipmentOnlyPool"
+    }
+  ],
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Mary Ngai-Virgo"
+}

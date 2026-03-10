@@ -1,0 +1,76 @@
+{
+  "id": "MoonPhaseModifyEmber",
+  "name": "Astrologer’s Orrery",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-9ce588b9669f5eb6-063a7073b30fe764f90d86a82508f29e-v2",
+    "english": "Astrologer’s Orrery",
+    "french": "Planétaire de l'astrologue",
+    "german": "Modell des Astrologen",
+    "russian": "Модель солнечной системы",
+    "portuguese": "Planetário da Astróloga",
+    "chinese": "占星师的星象仪",
+    "spanish": "Planetario de astrología",
+    "chinese_traditional": "占星師的天體儀",
+    "korean": "점성가의 천체의",
+    "japanese": "占星術師の太陽系儀"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-cc1fefd444f7ef8e-063a7073b30fe764f90d86a82508f29e-v2",
+    "english": "The first time each turn it becomes [full] gain [effect0.power][ember].",
+    "french": "À chaque tour, la première [full] octroie [effect0.power][ember].",
+    "german": "Bei jedem ersten [full] pro Zug erhälts du [effect0.power][ember].",
+    "russian": "Каждое первое [full] за ход дает [effect0.power][ember].",
+    "portuguese": "Na primeira vez, em cada turno, que for [full], ganha [effect0.power][ember].",
+    "chinese": "每回合月相首次变为[full]时，获得 [effect0.power][ember]。",
+    "spanish": "Cada turno, la primera vez que se pasa a [full] obtienes [effect0.power][ember].",
+    "chinese_traditional": "每回合第一次變為[full]時獲得[effect0.power][ember]。",
+    "korean": "각 턴마다 처음으로 [full]이 뜨면, [effect0.power][ember]을 획득합니다.",
+    "japanese": "毎ターン、初めて[full]になるたびに、[effect0.power][ember]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-34a281e0c4dd891e-063a7073b30fe764f90d86a82508f29e-v2",
+      "english": "“Hmm... I see a malicious moon is coming in your star chart. A few gold coins and I might see how you can avoid this calamity.”\n—Astrologer for the Luna Coven",
+      "french": "<nobr>« Hmm...</nobr> Je vois une lune malveillante dans votre thème astral. Donnez-moi quelques pièces d'or et je verrai comment vous pouvez éviter cette <nobr>calamité. »</nobr> \n— Astrologue des Lunariens",
+      "german": "„Hmm ... In deinem Horoskop taucht ein bösartiger Mond auf. Mit ein paar Goldmünzen kann ich vielleicht erkennen, wie sich dieses Unheil abwenden lässt.“\n—Astrologe des Mondzirkels",
+      "russian": "«Хм... Я вижу, что в твоей звездной карте появилась зловещая луна. За несколько золотых монет я посмотрю, как можно избежать несчастья». \n— Звездочетка из Лунного ковена",
+      "portuguese": "“Hum... Vejo que uma lua maliciosa está chegando em seu mapa astral. Com algumas moedas de ouro, posso ver como você pode evitar essa calamidade.”\n— Astróloga da Irmandade Lunar",
+      "chinese": "“唔……在你的星图里，我看见一轮即将到来的恶月。给我几枚金币，也许我就知道你如何避免这场灾难了。”\n——月巫团的占星师",
+      "spanish": "«Mmm... Veo en tu mapa estelar que se acerca una luna maligna. Con unas monedas de oro, puedo adivinar cómo evitar la calamidad».\n—Astróloga del Aquelarre de Selene",
+      "chinese_traditional": "「嗯……我在你的星圖中看到一個充滿惡意的月亮即將來臨。給我幾個金幣，我也許就能告訴你如何避免這場災難。」\n—月之女巫的占星師",
+      "korean": "“흠... 별자리에 사악한 달이 들어오고 있군요. 금화 몇 개면 이 재앙을 피할 방법을 알려줄 수 있을지도 모르죠.”\n- 달 집회 소속 점성가",
+      "japanese": "「どれどれ…星図に邪悪な月が来ているようね。金貨を数枚もらえば、この災難を避ける方法がわかるかもしれないわよ。」\n—月魔族の占星術師"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectModifyEnergyOnMoonPhase",
+      "additionalTooltips": [
+        {
+          "trigger": "on_moon_lit",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "moon_phase",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramInt": 1,
+      "paramInt2": 2
+    }
+  ],
+  "unlockLevel": 2
+}

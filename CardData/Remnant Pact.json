@@ -1,0 +1,77 @@
+{
+  "id": "RemnantPact",
+  "name": "Remnant Pact",
+  "nameKey": {
+    "key": "CardData_nameKey-826dc77d3c52e0f3-b8bafccffc8927246a36c228fb912935-v2",
+    "english": "Remnant Pact",
+    "french": "Pacte éphémérien",
+    "german": "Relikt-Pakt",
+    "russian": "Огарковое соглашение",
+    "portuguese": "Pacto do Resquício",
+    "chinese": "熔尸誓约",
+    "spanish": "Pacto del Vestigio",
+    "chinese_traditional": "殘餘誓約",
+    "korean": "잔존자의 계약",
+    "japanese": "蝋人協定"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-5a101fe602bf0205-b8bafccffc8927246a36c228fb912935-v2",
+    "english": "Apply [endless] to a friendly unit for the rest of battle.",
+    "french": "Confère [endless] à une unité alliée pour le reste du combat.",
+    "german": "Wende [endless] auf eine verbündete Einheit an. Hält bis zum Ende des Kampfes an.",
+    "russian": "Союзнику дается [endless] до конца боя.",
+    "portuguese": "Concede [endless] a uma unidade aliada pelo resto da batalha.",
+    "chinese": "使一个友方单位获得 [endless]，效果持续整场战斗。",
+    "spanish": "Añade [endless] a una unidad aliada hasta el final de la batalla.",
+    "chinese_traditional": "在本場戰鬥的剩餘時間內，對一個友方單位施加[endless]。",
+    "korean": "아군 유닛 하나에 전투가 끝날 때까지 [steelguard] 효과를 적용합니다.",
+    "japanese": "味方ユニットにバトル終了まで[endless]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-89e609682ff91832-b8bafccffc8927246a36c228fb912935-v2",
+      "english": "Despite their age-long feud, the Wickless and the Reformed were able to come to an armistice when the Covenant was formed. That doesn’t mean that the rules put in place for their peace were easy to follow.",
+      "french": "En dépit de leur dispute ancestrale, les sans-mèche et les reformés sont parvenus à négocier une trêve lorsque l'alliance a été créée. Cependant, cela ne signifie pas qu'il leur était facile de se conformer aux règles établies pour maintenir la paix.",
+      "german": "Trotz ihrer ewigen Streitigkeiten konnten die Dochtlosen und die Reformierten einen Waffenstillstand schließen, als der Pakt beschlossen wurde. Allerdings waren die Regeln zur Einhaltung des Friedens nicht leicht zu befolgen.",
+      "russian": "Невзирая на давнюю вражду, Безфитильники и Переплавленные заключили перемирие, когда было достигнуто Согласие. Но новым правилам было не так-то и просто следовать.",
+      "portuguese": "Apesar de sua rixa milenar, os Despaviados e os Renovados formaram uma trégua quando o Pacto foi instituído. Contudo, não quer dizer que as regras estabelecidas para manter a paz são facilmente respeitadas.",
+      "chinese": "尽管多年以来，无芯派与移形派之间一直彼此敌视，但当契约成立的时候，这两派之间也签订了停火协议。但这并不意味着两派为和平而制定的规则就那么容易遵守。",
+      "spanish": "A pesar de su largo conflicto, los sin mecha y los reformados firmaron una tregua cuando se formó la Coalición. Eso no significa que las reglas que impusieron para mantener la paz fueran fáciles de seguir.",
+      "chinese_traditional": "儘管無芯者和重鑄者之間存在長期的爭鬥，但在締結新盟時，他們仍能夠達成停戰協議。不過，這並不意味著為用來換取和平的規則很容易遵守。",
+      "korean": "심지 없는 자와 재탄회는 오랫동안 반목해 왔으나, 맹약이 체결되면서 휴전에 이르렀다. 그러나 그 평화의 규칙들을 지키는 일이 쉽지는 않았다.",
+      "japanese": "長年にわたって争っていたにもかかわらず、盟約が交わされた際にウィックレスとリフォームドは休戦に同意することができた。だからといって、平和のために制定された規則に従うのが容易だったというわけではないが。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_RemnantPact.prefab",
+    "m_AssetGUID": "917b6cc090d8f1e4aa474c76180c2a33"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "RemnantPact",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "endless",
+            "count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Tammy Chang"
+}

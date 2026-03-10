@@ -1,0 +1,684 @@
+{
+  "id": "UpgradeTreePyreborne1",
+  "name": "Lord Fenix",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "Lavamancer",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e12464f255b531f2-9ab2f6e4cdd333d4d98c290713c3c5bc-v2",
+            "english": "Overlord",
+            "french": "Chef suprême",
+            "german": "Oberherr",
+            "russian": "Владыка",
+            "portuguese": "Soberano",
+            "chinese": "霸主",
+            "spanish": "Déspota",
+            "chinese_traditional": "霸主",
+            "korean": "지배자",
+            "japanese": "オーバーロード"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-dcc6797d1a2ce503-9ab2f6e4cdd333d4d98c290713c3c5bc-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-0a0dbf75e16c19ff-9ab2f6e4cdd333d4d98c290713c3c5bc-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
+                "french": "+[effect0.upgrade.bonusdamage][attack] définitivement.",
+                "german": "Permanent +[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] навсегда.",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]이 증가합니다.",
+                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "Plus1Attack",
+                    "bonusDamage": 1
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 5
+        },
+        {
+          "id": "Lavamancer2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-aafef41a6a6636fd-51e23d64988fc164fa7a9aca678b77da-v2",
+            "english": "Overlord II",
+            "french": "Chef suprême II",
+            "german": "Oberherr II",
+            "russian": "Владыка II",
+            "portuguese": "Soberano II",
+            "chinese": "霸主 II",
+            "spanish": "Déspota II",
+            "chinese_traditional": "霸主II",
+            "korean": "지배자 II",
+            "japanese": "オーバーロードII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "PyreborneChampionAbilityAbilityLineUpgrade2",
+            "nameKey": {
+              "key": "CardData_nameKey-6b300e8419709c1d-35a740ae8e37af84896122bbb378f41a-v2",
+              "english": "Fenix Fire II",
+              "french": "Feu de Fenix II",
+              "german": "Fenix-Feuer II",
+              "russian": "Пламя Феникса II",
+              "portuguese": "Chama da Fênix II",
+              "chinese": "菲尼克斯之火 II",
+              "spanish": "Fuego de Fénix II",
+              "chinese_traditional": "費尼克斯之火II",
+              "korean": "페닉스의 불꽃 II",
+              "japanese": "フェニックスの火II"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-8ef8aec0d9dfcab8-35a740ae8e37af84896122bbb378f41a-v2",
+              "english": "Deal damage equal to this unit's attack. Apply [pyregel] [effect1.status0.power] to enemy units.",
+              "french": "Applique des dégâts valant l'attaque de cette unité. Applique [pyregel] [effect1.status0.power] aux unités ennemies.",
+              "german": "Füge Schaden in Höhe des Angriffs dieser Einheit zu. Wende [pyregel] [effect1.status0.power] auf gegnerische Einheiten an.",
+              "russian": "Наносит урон, равный атаке этого бойца. Накладывает [pyregel] х[effect1.status0.power] на врагов.",
+              "portuguese": "Causa dano igual ao ataque desta unidade. Aplica [pyregel] [effect1.status0.power] às unidades inimigas.",
+              "chinese": "对敌方单位造成相当于该单位攻击力的伤害，对所有敌方单位施加 [pyregel] [effect1.status0.power]。",
+              "spanish": "Inflige tanto daño como el ataque de esta unidad. Añade [pyregel] [effect1.status0.power] a las unidades enemigas.",
+              "chinese_traditional": "造成等於此單位攻擊力的傷害。對敵方單位施加[pyregel][effect1.status0.power]。",
+              "korean": "이 유닛의 공격력만큼 피해를 입힙니다. 적 유닛들에게 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+              "japanese": "このユニットの攻撃力に等しいダメージを与える。敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassPyreborne",
+            "traits": [
+              {
+                "traitStateName": "CardTraitDamageOverflow",
+                "paramInt": 2,
+                "traitIsRemovable": false,
+                "tooltipSuppressed": true
+              }
+            ],
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamagePerSourceAttack",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramInt": 1,
+                "appliedVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+                    "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+                  },
+                  "spawnLocation": "character_center"
+                },
+                "appliedToSelfVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/Abilities/Lava Laser/FX_LavaLaser.prefab",
+                    "m_AssetGUID": "1e7b433c7b279ab42a5fe24bb5d1eea9"
+                  },
+                  "spawnLocation": "character_side_fwd_center"
+                }
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "pyregel",
+                    "count": 4
+                  }
+                ],
+                "appliedVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+                    "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+                  },
+                  "spawnLocation": "character_center"
+                }
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "targetless": false,
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4d7ba76d63c9badf-51e23d64988fc164fa7a9aca678b77da-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
+                "french": "+[effect0.upgrade.bonusdamage][attack] définitivement.",
+                "german": "Permanent +[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] навсегда.",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]이 증가합니다.",
+                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "Plus1Attack",
+                    "bonusDamage": 1
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 15
+        },
+        {
+          "id": "Lavamancer3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-7f05627c69b4939b-4454d3aa878b6b347aade5f4558e34a8-v2",
+            "english": "Overlord III",
+            "french": "Chef suprême III",
+            "german": "Oberherr III",
+            "russian": "Владыка III",
+            "portuguese": "Soberano III",
+            "chinese": "霸主 III",
+            "spanish": "Déspota III",
+            "chinese_traditional": "霸主III",
+            "korean": "지배자 III",
+            "japanese": "オーバーロードIII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "PyreborneChampionAbilityAbilityLineUpgrade3",
+            "nameKey": {
+              "key": "CardData_nameKey-980c12250a9d50aa-be360258d86f0ca4ba0a2f9e2afc3e39-v2",
+              "english": "Fenix Fire III",
+              "french": "Feu de Fenix III",
+              "german": "Fenix-Feuer III",
+              "russian": "Пламя Феникса III",
+              "portuguese": "Chama da Fênix III",
+              "chinese": "菲尼克斯之火 III",
+              "spanish": "Fuego de Fénix III",
+              "chinese_traditional": "費尼克斯之火III",
+              "korean": "페닉스의 불꽃 III",
+              "japanese": "フェニックスの火III"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-76e5fc727b16d3b6-be360258d86f0ca4ba0a2f9e2afc3e39-v2",
+              "english": "Deal damage equal to [effect0.power][x] this unit's attack. Apply [pyregel] [effect1.status0.power] to enemy units.",
+              "french": "Inflige des dégâts valant [effect0.power][x] l'attaque de cette unité. Donne [pyregel] [effect1.status0.power] aux unités ennemies.",
+              "german": "Füge Schaden in Höhe von [effect0.power][x] des Angriffs dieser Einheit zu. Wende [pyregel] [effect1.status0.power] auf gegnerische Einheiten an.",
+              "russian": "Наносит урон, равный [x][effect0.power] атаке этого бойца. Накладывает [pyregel] х[effect1.status0.power] на врагов.",
+              "portuguese": "Causa dano igual a [effect0.power][x] o ataque desta unidade. Aplica [pyregel] [effect1.status0.power] às unidades inimigas.",
+              "chinese": "造成相当于该单位攻击力 [effect0.power][x] 的伤害。对所有敌方单位施加 [pyregel] [effect1.status0.power]。",
+              "spanish": "Inflige tanto daño como el ataque de esta unidad [effect0.power][x]. Añade [pyregel] [effect1.status0.power] a las unidades enemigas.",
+              "chinese_traditional": "造成等於此單位[effect0.power][x]攻擊力的傷害。對敵方單位施加[pyregel][effect1.status0.power]。",
+              "korean": "이 유닛의 공격력에 [effect0.power][x]를 곱한 만큼 피해를 줍니다. 적 유닛들에게 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+              "japanese": "[effect0.power][x]このユニットの攻撃力に等しいダメージを与える。敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassPyreborne",
+            "traits": [
+              {
+                "traitStateName": "CardTraitDamageOverflow",
+                "paramInt": 2,
+                "traitIsRemovable": false,
+                "tooltipSuppressed": true
+              }
+            ],
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamagePerSourceAttack",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramInt": 2,
+                "appliedVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+                    "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+                  },
+                  "spawnLocation": "character_center"
+                },
+                "appliedToSelfVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/Abilities/Lava Laser/FX_LavaLaser.prefab",
+                    "m_AssetGUID": "1e7b433c7b279ab42a5fe24bb5d1eea9"
+                  },
+                  "spawnLocation": "character_side_fwd_center"
+                }
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "pyregel",
+                    "count": 4
+                  }
+                ],
+                "appliedVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+                    "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+                  },
+                  "spawnLocation": "character_center"
+                }
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "targetless": false,
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-5de12522ecfaef71-4454d3aa878b6b347aade5f4558e34a8-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
+                "french": "+[effect0.upgrade.bonusdamage][attack] définitivement.",
+                "german": "Permanent +[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] навсегда.",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+                "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]이 증가합니다.",
+                "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "Plus2Attack",
+                    "bonusDamage": 2
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 25,
+          "bonusHP": 25
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Goldbeam1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-d3b7ec2dbb1482e7-6d6f83f3211459a46b8c503fccb10433-v2",
+            "english": "Golden Crown",
+            "french": "Couronne en or",
+            "german": "Goldene Krone",
+            "russian": "Золотая корона",
+            "portuguese": "Coroa Dourada",
+            "chinese": "金冠",
+            "spanish": "Corona dorada",
+            "chinese_traditional": "黃金王冠",
+            "korean": "황금 왕관",
+            "japanese": "ゴールデン・クラウン"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4537cad3022e7350-6d6f83f3211459a46b8c503fccb10433-v2",
+                "english": "Gain [effect0.power][dragonshoardicon].",
+                "french": "Octroie [effect0.power][dragonshoardicon].",
+                "german": "Erhalte [effect0.power][dragonshoardicon].",
+                "russian": "Дает [effect0.power][dragonshoardicon].",
+                "portuguese": "Recebe [effect0.power][dragonshoardicon].",
+                "chinese": "获得[effect0.power][dragonshoardicon]。",
+                "spanish": "Obtienes [effect0.power][dragonshoardicon].",
+                "chinese_traditional": "獲得[effect0.power][dragonshoardicon]。",
+                "korean": "[effect0.power][dragonshoardicon]를 획득합니다.",
+                "japanese": "[effect0.power][dragonshoardicon]を得る。"
+              },
+              "trigger": "on_pre_own_ability_activated",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustDragonsHoard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_DragonsHoardInactive_Body",
+                        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_DragonsHoard_Title",
+                        "english": "[dragonshoardicon]Dragon's Hoard",
+                        "french": "[dragonshoardicon]Trésor du dragon",
+                        "german": "[dragonshoardicon]Drachenschatz",
+                        "russian": "[dragonshoardicon] Драконий клад",
+                        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                        "chinese": "[dragonshoardicon]龙族宝藏",
+                        "spanish": "[dragonshoardicon]Tesoro de dragón",
+                        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                        "korean": "[dragonshoardicon]드래곤의 재보",
+                        "japanese": "竜の財宝[dragonshoardicon]"
+                      },
+                      "style": "default"
+                    }
+                  ],
+                  "paramInt": 1
+                }
+              ]
+            }
+          ],
+          "bonusHP": 10,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "Goldbeam2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-541f0387d4b80ac7-2662032d9172c3548a114e11e69105a4-v2",
+            "english": "Golden Crown II",
+            "french": "Couronne en or II",
+            "german": "Goldene Krone II",
+            "russian": "Золотая корона II",
+            "portuguese": "Coroa Dourada II",
+            "chinese": "金冠 II",
+            "spanish": "Corona dorada II",
+            "chinese_traditional": "黃金王冠II",
+            "korean": "황금 왕관 II",
+            "japanese": "ゴールデン・クラウンII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4d8f97cc9367be53-2662032d9172c3548a114e11e69105a4-v2",
+                "english": "Gain [effect0.power][dragonshoardicon] and [effect1.power][coin].",
+                "french": "Octroie [effect0.power][dragonshoardicon] et [effect1.power][coin].",
+                "german": "Erhalte [effect0.power][dragonshoardicon] und [effect1.power][coin].",
+                "russian": "Дает [effect0.power][dragonshoardicon] и [effect1.power][coin].",
+                "portuguese": "Recebe [effect0.power][dragonshoardicon] e [effect1.power][coin].",
+                "chinese": "获得 [effect0.power][dragonshoardicon]，[effect1.power][coin]。",
+                "spanish": "Obtienes [effect0.power][dragonshoardicon] y [effect1.power][coin].",
+                "chinese_traditional": "獲得[effect0.power][dragonshoardicon]和[effect1.power][coin]。",
+                "korean": "[effect0.power][dragonshoardicon] 및 [effect1.power][coin]을 획득합니다.",
+                "japanese": "[effect0.power][dragonshoardicon]と[effect1.power][coin]を得る。"
+              },
+              "trigger": "on_pre_own_ability_activated",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustDragonsHoard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_DragonsHoardInactive_Body",
+                        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_DragonsHoard_Title",
+                        "english": "[dragonshoardicon]Dragon's Hoard",
+                        "french": "[dragonshoardicon]Trésor du dragon",
+                        "german": "[dragonshoardicon]Drachenschatz",
+                        "russian": "[dragonshoardicon] Драконий клад",
+                        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                        "chinese": "[dragonshoardicon]龙族宝藏",
+                        "spanish": "[dragonshoardicon]Tesoro de dragón",
+                        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                        "korean": "[dragonshoardicon]드래곤의 재보",
+                        "japanese": "竜の財宝[dragonshoardicon]"
+                      },
+                      "style": "default"
+                    }
+                  ],
+                  "paramInt": 1
+                },
+                {
+                  "effectStateName": "CardEffectRewardGold",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 15
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 25,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "Goldbeam3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-1ba84a2e620152db-fdc68f1881350004990396c7828c221d-v2",
+            "english": "Golden Crown III",
+            "french": "Couronne en or III",
+            "german": "Goldene Krone III",
+            "russian": "Золотая корона III",
+            "portuguese": "Coroa Dourada III",
+            "chinese": "金冠 III",
+            "spanish": "Corona dorada III",
+            "chinese_traditional": "黃金王冠III",
+            "korean": "황금 왕관 III",
+            "japanese": "ゴールデン・クラウンIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-69a1aa448c145460-fdc68f1881350004990396c7828c221d-v2",
+                "english": "Gain [effect0.power][dragonshoardicon] and [effect1.power][coin].",
+                "french": "Octroie [effect0.power][dragonshoardicon] et [effect1.power][coin].",
+                "german": "Erhalte [effect0.power][dragonshoardicon] und [effect1.power][coin].",
+                "russian": "Дает [effect0.power][dragonshoardicon] и [effect1.power][coin].",
+                "portuguese": "Recebe [effect0.power][dragonshoardicon] e [effect1.power][coin].",
+                "chinese": "获得 [effect0.power][dragonshoardicon]，[effect1.power][coin]。",
+                "spanish": "Obtienes [effect0.power][dragonshoardicon] y [effect1.power][coin].",
+                "chinese_traditional": "獲得[effect0.power][dragonshoardicon]和[effect1.power][coin]。",
+                "korean": "[effect0.power][dragonshoardicon], [effect1.power][coin]을 획득합니다.",
+                "japanese": "[effect0.power][dragonshoardicon]と[effect1.power][coin]を得る。"
+              },
+              "trigger": "on_pre_own_ability_activated",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustDragonsHoard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_DragonsHoardInactive_Body",
+                        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_DragonsHoard_Title",
+                        "english": "[dragonshoardicon]Dragon's Hoard",
+                        "french": "[dragonshoardicon]Trésor du dragon",
+                        "german": "[dragonshoardicon]Drachenschatz",
+                        "russian": "[dragonshoardicon] Драконий клад",
+                        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                        "chinese": "[dragonshoardicon]龙族宝藏",
+                        "spanish": "[dragonshoardicon]Tesoro de dragón",
+                        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                        "korean": "[dragonshoardicon]드래곤의 재보",
+                        "japanese": "竜の財宝[dragonshoardicon]"
+                      },
+                      "style": "default"
+                    }
+                  ],
+                  "paramInt": 2
+                },
+                {
+                  "effectStateName": "CardEffectRewardGold",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 25
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 60,
+          "doNotReplaceExistingUnitAbility": true
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Pyremaniac1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e560b3f5dd3761df-4b72a9a063a4c7a4397d73f3b38d0025-v2",
+            "english": "Pyremaniac",
+            "french": "Pyromane",
+            "german": "Höllenglut-Wahn",
+            "russian": "Пироман",
+            "portuguese": "Piramaníaco",
+            "chinese": "薪火狂",
+            "spanish": "Piromanía",
+            "chinese_traditional": "火狂",
+            "korean": "화로광",
+            "japanese": "パイアマニアック"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-dabc2fc04d968199-4b72a9a063a4c7a4397d73f3b38d0025-v2",
+                "english": "When a unit gains [pyregel], it gains +[status0.power] stacks.",
+                "french": "Lorsqu'une unité obtient du [pyregel], elle gagne <nobr>+[status0.power] cumuls.</nobr>",
+                "german": "Wenn eine Einheit [pyregel] erhält, erhält sie +[status0.power] Stapel.",
+                "russian": "Когда на бойца накладывается [pyregel], он получает +[status0.power] слоя.",
+                "portuguese": "Quando uma unidade recebe [pyregel], ela recebe +[status0.power] cargas.",
+                "chinese": "当一个单位获得 [pyregel] 时，获得的层数 +[status0.power]。",
+                "spanish": "Cuando una unidad añade [pyregel], obtiene +[status0.power] acumulaciones.",
+                "chinese_traditional": "當一個單位獲得[pyregel]時，該單位獲得+[status0.power]層。",
+                "korean": "유닛이 [pyregel] 효과를 획득하면 스택이 +[status0.power] 늘어납니다.",
+                "japanese": "ユニットが[pyregel]を得ると、+[status0.power]スタックを得る。"
+              },
+              "roomStateModifierClassName": "RoomStateStatusEffectStackModifier",
+              "paramInt": 1
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 10,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "Pyremaniac2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-66b9bdb516247eff-5732de61458139b45b6fd3e908cb7818-v2",
+            "english": "Pyremaniac II",
+            "french": "Pyromane II",
+            "german": "Höllenglut-Wahn II",
+            "russian": "Пироман II",
+            "portuguese": "Piramaníaco II",
+            "chinese": "薪火狂 II",
+            "spanish": "Piromanía II",
+            "chinese_traditional": "火狂II",
+            "korean": "화로광 II",
+            "japanese": "パイアマニアックII"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-f3b80c054d91df02-5732de61458139b45b6fd3e908cb7818-v2",
+                "english": "When a unit gains [pyregel], it gains +[status0.power] stacks.",
+                "french": "Lorsqu'une unité obtient du [pyregel], elle gagne <nobr>+[status0.power] cumuls.</nobr>",
+                "german": "Wenn eine Einheit [pyregel] erhält, erhält sie +[status0.power] Stapel.",
+                "russian": "Когда на бойца накладывается [pyregel], он получает +[status0.power] слоя.",
+                "portuguese": "Quando uma unidade recebe [pyregel], ela recebe +[status0.power] cargas.",
+                "chinese": "当一个单位获得 [pyregel] 时，获得的层数 +[status0.power]。",
+                "spanish": "Cuando una unidad añade [pyregel], obtiene +[status0.power] acumulaciones.",
+                "chinese_traditional": "當一個單位獲得[pyregel]時，該單位獲得+[status0.power]層。",
+                "korean": "유닛이 [pyregel] 효과를 획득하면 스택이 +[status0.power] 늘어납니다.",
+                "japanese": "ユニットが[pyregel]を得ると、+[status0.power]スタックを得る。"
+              },
+              "roomStateModifierClassName": "RoomStateStatusEffectStackModifier",
+              "paramInt": 2
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 20,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "Pyremaniac3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-fd122ee48a5d2002-6d003c7cdefc6244fbcc0f3d94cdbd4f-v2",
+            "english": "Pyremaniac III",
+            "french": "Pyromane III",
+            "german": "Höllenglut-Wahn III",
+            "russian": "Пироман III",
+            "portuguese": "Piramaníaco III",
+            "chinese": "薪火狂 III",
+            "spanish": "Piromanía III",
+            "chinese_traditional": "火狂III",
+            "korean": "화로광 III",
+            "japanese": "パイアマニアックIII"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-8d5740cad8e2d8b8-6d003c7cdefc6244fbcc0f3d94cdbd4f-v2",
+                "english": "When a unit gains [pyregel], it gains +[status0.power] stacks.",
+                "french": "Lorsqu'une unité obtient du [pyregel], elle gagne <nobr>+[status0.power] cumuls.</nobr>",
+                "german": "Wenn eine Einheit [pyregel] erhält, erhält sie +[status0.power] Stapel.",
+                "russian": "Когда на бойца накладывается [pyregel], он получает +[status0.power] слоя.",
+                "portuguese": "Quando uma unidade recebe [pyregel], ela recebe +[status0.power] cargas.",
+                "chinese": "当一个单位获得 [pyregel] 时，获得的层数 +[status0.power]。",
+                "spanish": "Cuando una unidad añade [pyregel], obtiene +[status0.power] acumulaciones.",
+                "chinese_traditional": "當一個單位獲得[pyregel]時，該單位獲得+[status0.power]層。",
+                "korean": "유닛이 [pyregel] 효과를 획득하면 스택이 +[status0.power] 늘어납니다.",
+                "japanese": "ユニットが[pyregel]を得ると、+[status0.power]スタックを得る。"
+              },
+              "roomStateModifierClassName": "RoomStateStatusEffectStackModifier",
+              "paramInt": 4
+            }
+          ],
+          "bonusDamage": 25,
+          "bonusHP": 40,
+          "doNotReplaceExistingUnitAbility": true
+        }
+      ]
+    }
+  ]
+}

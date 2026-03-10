@@ -1,0 +1,145 @@
+{
+  "id": "PyreHeartTime",
+  "name": "Echo of the Time Father",
+  "nameKey": {
+    "key": "CharacterData_nameKey-daa5f7add7e4789e-c756ebbc28dbb214e90415b29dc1cb9e-v2",
+    "english": "Echo of the Time Father",
+    "french": "Écho du Père du temps",
+    "german": "Widerhall des Zeitvaters",
+    "russian": "Эхо Отца-времени",
+    "portuguese": "Eco do Pai do Tempo",
+    "chinese": "时间之父的回响水晶",
+    "spanish": "Eco del Padre Tiempo",
+    "chinese_traditional": "時間之父迴響",
+    "korean": "시간의 아버지의 메아리",
+    "japanese": "時間の父の残響"
+  },
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PyreHeart_EchoOfTimeFather.prefab",
+    "m_AssetGUID": "8b8a0575efea19a4bb1e796e7962eebf"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_PyreheartTimeAttack.prefab",
+      "m_AssetGUID": "ce0ee3455fde33a438caa490f3b3ed04"
+    },
+    "spawnLocation": "character_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_PyreheartTimeImpact.prefab",
+      "m_AssetGUID": "576ecebc57477424ba3f88b4e45ae95c"
+    },
+    "spawnLocation": "character_center"
+  },
+  "deathVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_EchoofTheTimefatherDeath.prefab",
+      "m_AssetGUID": "ed4e40938eff73a4789bb7cce3761828"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    },
+    {
+      "statusId": "sweep",
+      "count": 1
+    },
+    {
+      "statusId": "immobile",
+      "count": 1
+    },
+    {
+      "statusId": "immune",
+      "count": 1
+    }
+  ],
+  "unitAbility": {
+    "id": "PyreHeartTimeAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-b49716bb8b6c02a7-34c23a6623ef774459310856e9e06cd9-v2",
+      "english": "Time Stop",
+      "french": "Arrêt du temps",
+      "german": "Zeitstopp",
+      "russian": "Остановка времени",
+      "portuguese": "Paragem Temporal",
+      "chinese": "时间停止",
+      "spanish": "Tiempo detenido",
+      "chinese_traditional": "時間停止",
+      "korean": "시간 정지",
+      "japanese": "時間停止"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-277c770f9f8cf2d6-34c23a6623ef774459310856e9e06cd9-v2",
+      "english": "Apply [freeze] to all cards in hand.",
+      "french": "Confère [freeze] à toutes les cartes en main.",
+      "german": "Wende [freeze] auf alle Karten auf der Hand an.",
+      "russian": "На все карты в руке накладывается [freeze].",
+      "portuguese": "Aplica [freeze] a todas as cartas em sua mão.",
+      "chinese": "使所有手牌获得 [freeze]。",
+      "spanish": "Añade [freeze] a todas las cartas de tu mano.",
+      "chinese_traditional": "對手牌中的所有卡牌施加[freeze]。",
+      "korean": "패에 있는 모든 카드에 [freeze] 효과를 적용합니다.",
+      "japanese": "手札のすべてのカードに[freeze]を付与する。"
+    },
+    "cardType": "spell",
+    "rarity": "common",
+    "effects": [
+      {
+        "effectStateName": "CardEffectFreezeAllCards",
+        "targetMode": "hand",
+        "targetCardType": "invalid",
+        "paramCardFilter": {
+          "id": "ValidEchoOfTheTimeFatherCards",
+          "cardType": "spell",
+          "additionalCardTypes": [
+            "monster",
+            "equipment",
+            "room"
+          ],
+          "excludedCardTraitsOperator": "and",
+          "excludedCardTraits": [
+            "CardTraitPermafrost"
+          ],
+          "disallowedCardPools": [
+            "AllBlightsAndScourges"
+          ]
+        },
+        "showPyreNotification": true,
+        "appliedToSelfVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_EchoofthetimefatherAbility.prefab",
+            "m_AssetGUID": "88391bf23e23f2342ae662ac6f657b11"
+          },
+          "spawnLocation": "character_center"
+        }
+      },
+      {
+        "effectStateName": "CardEffectRemoveAbility",
+        "targetMode": "pyre",
+        "targetTeamType": "both",
+        "suppressPyreRoomFocus": true,
+        "paramRelicData": "Echoes_PyreCanUseAbilityMultipleTimes"
+      }
+    ],
+    "cooldownAfterActivated": 99,
+    "isUnitAbility": true,
+    "initialKeyboardTarget": "front_friendly"
+  },
+  "size": 2,
+  "health": 1,
+  "canBeHealed": false,
+  "attackDamage": 1,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Pyre"
+  ],
+  "characterChatterData": "PyreHeartChatter",
+  "characterLoreTooltipKeys": [
+    "CharacterData_data-254007ca9b7d843a-c756ebbc28dbb214e90415b29dc1cb9e-v2"
+  ],
+  "isPyreHeart": true
+}

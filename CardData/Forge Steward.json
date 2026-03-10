@@ -1,0 +1,106 @@
+{
+  "id": "ForgeSteward",
+  "name": "Forge Steward",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_ForgeSteward.prefab",
+    "m_AssetGUID": "a3e22bd2c111aef4db4fdc2058d5ed48"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCharacterData": {
+        "id": "MonsterForgeSteward",
+        "nameKey": {
+          "key": "CharacterData_nameKey-eee4009d536f8a41-dcfb081c1ee10824baca2540848f0431-v2",
+          "english": "Forge Steward",
+          "french": "Steward de la forge",
+          "german": "Schmiede-Begleiter",
+          "russian": "Стюард-кузнец",
+          "portuguese": "Guarda da Forja",
+          "chinese": "锻炉乘务员",
+          "spanish": "Auxiliar de forja",
+          "chinese_traditional": "鍛造僕役",
+          "korean": "대장간 잡부",
+          "japanese": "フォージ・スチュワード"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-5877f25fcb2b3619-dcfb081c1ee10824baca2540848f0431-v2",
+            "english": "“Though it defies all reason, I am certain my machines have become vessels for nascent souls, proof that, even without the Lifemother, new souls can be born in Hell.”—Herzal, “My Workshop, My Life”",
+            "french": "<nobr>« Bien</nobr> que cela défie toute logique, je suis persuadé que mes machines sont devenues des réceptacles pour les âmes naissantes. Ce qui prouve que, même sans Mère Nature, de nouvelles âmes peuvent naître en <nobr>enfer. »</nobr> <nobr>— Herzal,</nobr> <nobr>« Mon</nobr> atelier, ma <nobr>vie »</nobr>",
+            "german": "„Es ist wider jede Vernunft, doch ich bin sicher, dass meine Maschinen zu Gefäßen für aufkeimende Seelen geworden sind. Der Beweis dafür, dass neue Seelen auch ohne die Lebensmutter in der Hölle geboren werden können.“ – Herzal, „Meine Werkstatt, mein Leben“",
+            "russian": "«Хотя это и противоречит здравому смыслу, я уверен: мои машины стали сосудами для зарождения душ. Получается, что они могут появляться в Аду даже без участия Матери-природы». — Герцаль, «Моя мастерская — моя жизнь»",
+            "portuguese": "“Embora isso desafie a razão, estou certo de que minhas máquinas se tornaram receptáculos para almas nascentes, uma prova de que, mesmo sem a Genetriz, novas almas podem nascer no Inferno.” — Herzal, “Minha Oficina, Minha Vida”",
+            "chinese": "“虽然很荒唐，但我确信我的机械已经变成了新生灵魂的容器，这证明了即使没有生命之母，地狱里仍可以产生新的灵魂。”——赫扎尔所著的《我的工匠人生》",
+            "spanish": "«Aunque esta idea desafía toda lógica, estoy convencido de que mis máquinas se han convertido en receptáculos de nuevas almas, lo que demuestra que, aun sin la Madre Vida, pueden nacer almas en el Infierno». —Herzal, «Mi taller, mi vida»",
+            "chinese_traditional": "「儘管有違常理，但我確信，我造的機器已成為新生靈魂的容器，證明了即便沒有生命之母，地獄也能誕生新的靈魂。」——赫爾扎爾，《我的工坊，我的人生》",
+            "korean": "“모든 이성을 거스르는 일이지만, 내 기계들이 갓 태어난 영혼의 그릇이 되었다는 확신이 있다. 생명의 어머니 없이도 지옥에서 새로운 영혼이 태어날 수 있음을 증명한 셈이지.”—헤르잘, “나의 작업실, 나의 인생”",
+            "japanese": "「あらゆる理屈に反しているが、私の機械は新生の魂の器になるまでに至ったと確信している。ライフマザーがいなくとも、地獄で新たな魂が誕生することが可能だという証拠だ」—ハーザル著、『我が工房、我が人生』より"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ForgeSteward.prefab",
+          "m_AssetGUID": "7f3a0d0a93d084047a2f0bb2453b5aee"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "armor",
+            "count": 25
+          }
+        ],
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-a0183dc6dfa66fc3-dcfb081c1ee10824baca2540848f0431-v2",
+              "english": "[forge] [effect0.power].",
+              "french": "[forge] [effect0.power].",
+              "german": "[forge] [effect0.power].",
+              "russian": "[forge] х[effect0.power].",
+              "portuguese": "[forge] [effect0.power].",
+              "chinese": "[forge] [effect0.power]。",
+              "spanish": "[forge] [effect0.power].",
+              "chinese_traditional": "[forge][effect0.power]。",
+              "korean": "[forge] [effect0.power].",
+              "japanese": "[forge] [effect0.power]。"
+            },
+            "trigger": "on_hit",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAdjustForgePoints",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "size": 3,
+        "health": 20,
+        "attackDamage": 5,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Automaton2"
+        ],
+        "characterChatterData": "RailforgedForgeStewardChatter",
+        "artistAttribution": "Ron Kee"
+      }
+    }
+  ],
+  "targetless": false,
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Ron Kee"
+}

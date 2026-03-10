@@ -1,0 +1,101 @@
+{
+  "id": "AttackerT2_HunterSeeker_Chosen",
+  "name": "Chosen Sniper",
+  "nameKey": {
+    "key": "CharacterData_nameKey-dca6d2022d433603-af689922df9391c4b9c04207828393ee-v2",
+    "english": "Chosen Sniper",
+    "french": "Tireur élu",
+    "german": "Auserwählter Schütze",
+    "russian": "Избранный стрелок",
+    "portuguese": "Atirador Escolhido",
+    "chinese": "神选狙击手",
+    "spanish": "Tirador elegido",
+    "chinese_traditional": "天選狙擊手",
+    "korean": "선택받은 저격수",
+    "japanese": "選ばれしスナイパー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d5f81be20a8c335b-af689922df9391c4b9c04207828393ee-v2",
+      "english": "Spiteful and always looking for the next kill to appear in their sight.",
+      "french": "Méchants et toujours à la recherche de la prochaine victime qui aura le malheur d'apparaître dans leur champ de vision.",
+      "german": "Boshaft und immer auf der Suche nach ihrem nächsten Opfer.",
+      "russian": "Злобные и всегда ищут, кого бы еще убить.",
+      "portuguese": "Mal-intencionados e sempre procurando a próxima vítima aparecer em sua mira.",
+      "chinese": "他们满怀恶意，不断寻找下一个出现在他们视线中的杀戮对象。",
+      "spanish": "Lleno de rencor y siempre en busca de su próxima víctima.",
+      "chinese_traditional": "充滿怨恨，且總是在尋找下一個出現在視線中的獵物。",
+      "korean": "악의가 가득한 이들은 항상 다음 사냥감을 찾아다닌다.",
+      "japanese": "悪意に満ちており、常に次の獲物を狙っている。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SharpEyeSniper_Chosen.prefab",
+    "m_AssetGUID": "1620bf90956474049b74ec8baaf8cc2d"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeSniperProjectile.prefab",
+      "m_AssetGUID": "88c228c3d3ad7a34dad5712fbe72368e"
+    },
+    "spawnLocation": "bone_status_effect_slot3"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
+      "m_AssetGUID": "e78ec66e5b5232045acdc3b530057b00"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "buff",
+      "count": 2
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-0902e23f8422be4e-af689922df9391c4b9c04207828393ee-v2",
+        "english": "Gain [rage] [effect0.status0.power].",
+        "french": "Octroie [rage] [effect0.status0.power].",
+        "german": "Erhalte [rage] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[rage].",
+        "portuguese": "Recebe [rage] [effect0.status0.power].",
+        "chinese": "获得 [rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power].",
+        "chinese_traditional": "獲得[rage][effect0.status0.power]。",
+        "korean": "[rage] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[rage] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "buff",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 150,
+    "endlessAttack": 8
+  },
+  "size": 1,
+  "health": 75,
+  "attackDamage": 9,
+  "attackTeleportsToDefender": false,
+  "chosenVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_AttackerT2"
+  ],
+  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Genevieve Bega"
+}

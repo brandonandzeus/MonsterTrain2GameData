@@ -1,0 +1,47 @@
+{
+  "id": "Enemy_FrontReanimationT3",
+  "name": "Stone of the Undying III",
+  "nameKey": {
+    "key": "SinsData_nameKey-820fbb7d739e6d29-e2a14ca2cd4b98840af5b34042ba2483-v2",
+    "english": "Stone of the Undying",
+    "french": "Pierre des immortels",
+    "german": "Stein der Unsterblichen",
+    "russian": "Камень бессмертия",
+    "portuguese": "Pedra dos Imortais",
+    "chinese": "不死者之石",
+    "spanish": "Piedra de los inmortales",
+    "chinese_traditional": "不死之石",
+    "korean": "불멸석",
+    "japanese": "不死の石"
+  },
+  "descriptionKey": {
+    "key": "SinsData_descriptionKey-54322e0479577895-e2a14ca2cd4b98840af5b34042ba2483-v2",
+    "english": "The front non-boss enemy in each wave gets [undying] [effect0.status0.power].",
+    "french": "Le premier ennemi (hors boss) de chaque vague reçoit [undying] [effect0.status0.power].",
+    "german": "Der vorderste Gegner pro Welle (kein Boss) erhält [undying] [effect0.status0.power].",
+    "russian": "Каждую волну передний боец (не-босс) получает [undying] x[effect0.status0.power].",
+    "portuguese": "Em cada onda, o primeiro inimigo que não for um chefão recebe [undying] [effect0.status0.power].",
+    "chinese": "每个波次中，前排非首领敌方单位获得 [undying] [effect0.status0.power]。",
+    "spanish": "La primera unidad enemiga no jefe añade en cada oleada [undying] [effect0.status0.power].",
+    "chinese_traditional": "每個波次的前排非首領敵人獲得[undying][effect0.status0.power]。",
+    "korean": "웨이브마다 보스 외 전열 적 유닛이 [undying] [effect0.status0.power] 효과를 획득합니다.",
+    "japanese": "毎ウェーブ、前列の非ボスの敵が[undying] [effect0.status0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnFirstSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "undying",
+          "count": 2
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramExcludeCharacterSubtypes": [
+        "SubtypesData_TreasureCollector",
+        "SubtypesData_Boss",
+        "SubtypesData_ChosenSpikes"
+      ]
+    }
+  ]
+}

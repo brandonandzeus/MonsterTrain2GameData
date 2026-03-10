@@ -1,0 +1,148 @@
+{
+  "id": "Inhale",
+  "name": "Inhale",
+  "nameKey": {
+    "key": "CardData_nameKey-df0c83b729010192-4fc1a4f98df49554d99689f24e1041d2-v2",
+    "english": "Inhale",
+    "french": "Inhalation",
+    "german": "Inhalieren",
+    "russian": "Воздушный путь",
+    "portuguese": "Inalar",
+    "chinese": "大口吸入",
+    "spanish": "Inhalación",
+    "chinese_traditional": "吸入",
+    "korean": "포자 흡입",
+    "japanese": "吸入"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-0ccfaea81da17bf1-4fc1a4f98df49554d99689f24e1041d2-v2",
+    "english": "Deal [effect0.power] damage.",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+    "german": "Verursache [effect0.power] Schaden.",
+    "russian": "Наносит [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano.",
+    "chinese": "造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño.",
+    "chinese_traditional": "造成[effect0.power]點傷害。",
+    "korean": "[effect0.power]의 피해를 입힙니다.",
+    "japanese": "[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-194bea70c8eaaf57-4fc1a4f98df49554d99689f24e1041d2-v2",
+      "english": "Even the smallest shroomfolk have found ways to defend themselves. Some, when inhaled, consume the lungs of their victims from the inside out.",
+      "french": "Même les plus petits champignons ont trouvé le moyen de se défendre. Certains émettent un nuage toxique qui, une fois inhalé, consume les poumons de leurs victimes.",
+      "german": "Selbst die kleinsten Vertreter des Pilzvolks haben Wege, sich zu verteidigen. Manche können die Lungen ihrer Opfer von innen heraus zersetzen, nachdem sie eingeatmet wurden.",
+      "russian": "Даже самые крохотные грибы научились защищаться. Некоторые, если их вдохнуть, разъедают легкие врага изнутри.",
+      "portuguese": "Até mesmo o menor dos cogumelos consegue encontrar maneiras de se defender. Alguns, quando inalados, consomem os pulmões de suas vítimas de dentro para fora.",
+      "chinese": "即使是最矮小的蘑菇人也有办法保护自己。有些蘑菇被吸入之后，会从内到外蚕食受害者的肺部。",
+      "spanish": "Incluso los hongos más pequeños han encontrado métodos de defensa. Algunos destrozan los pulmones de sus víctimas con sus esporas.",
+      "chinese_traditional": "即使是最小的蘑菇族也找到了自我防衛的方法。有些被吸入後，會從內部吞噬受害者的肺部。",
+      "korean": "버섯 종족조차도 자신을 지킬 수단을 마련했다. 그 중 몇몇은 호흡기를 통해 침투한 뒤, 폐부터 갉아먹는다.",
+      "japanese": "小さなキノコですら自己防衛の手段を持っている。飲み込まれた際には胃袋を食い破ってくる者もいるのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Inhale.prefab",
+    "m_AssetGUID": "3c8d52e7889aaae46b084007e87a7c40"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 10,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/UnderLegion/Inhale/FX_Inhale.prefab",
+          "m_AssetGUID": "e768132de4065b3479dc22a2e0bd56b9"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-e68c82bc0be64d42-4fc1a4f98df49554d99689f24e1041d2-v2",
+        "english": "[spawn] [effect0.power].",
+        "french": "<b>Génère</b> [effect0.power].",
+        "german": "[spawn] [effect0.power].",
+        "russian": "[spawn] х[effect0.power].",
+        "portuguese": "[spawn] [effect0.power].",
+        "chinese": "[spawn] [effect0.power]。",
+        "spanish": "[spawn] [effect0.power].",
+        "chinese_traditional": "[spawn][effect0.power]。",
+        "korean": "[spawn] [effect0.power].",
+        "japanese": "[spawn] [effect0.power]。"
+      },
+      "trigger": "on_kill",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "targetCharacterSubtype": "SubtypesData_Horde",
+          "paramCharacterData": {
+            "id": "MonsterFunguy",
+            "nameKey": {
+              "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+              "english": "Funguy",
+              "french": "Champote",
+              "german": "Fungus",
+              "russian": "Грибоец",
+              "portuguese": "Fungo",
+              "chinese": "蘑菇人",
+              "spanish": "Lustrongo",
+              "chinese_traditional": "真菌人",
+              "korean": "균사체",
+              "japanese": "ファンガイ"
+            },
+            "characterPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+              "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+            },
+            "impactVFX": {
+              "vfxPrefabRefLeft": {
+                "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+              },
+              "spawnLocation": "character_center"
+            },
+            "size": 1,
+            "health": 4,
+            "attackDamage": 3,
+            "subtypeKeys": [
+              "SubtypesData_FunGuy",
+              "SubtypesData_Shroom",
+              "SubtypesData_Horde"
+            ],
+            "characterChatterData": "UnderlegionShroomFemaleChatterData"
+          },
+          "paramStatusEffects": [
+            {
+              "statusId": "horde",
+              "count": 2
+            }
+          ],
+          "additionalTooltips": [
+            {
+              "trigger": "card_monster_played",
+              "style": "default",
+              "isTriggerTooltip": true,
+              "allowSecondaryPlacement": true
+            }
+          ]
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Taylor Bray"
+}

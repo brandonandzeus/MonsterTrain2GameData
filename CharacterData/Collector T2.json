@@ -1,0 +1,136 @@
+{
+  "id": "TreasureBagLvl2Gold",
+  "name": "Collector T2",
+  "nameKey": {
+    "key": "CharacterData_nameKey-7c91a712b93f4d6b-066ba0847e31eff4f8dc782cfd61710d-v2",
+    "english": "Collector",
+    "french": "Grappilleur",
+    "german": "Sammler",
+    "russian": "Коллекционер",
+    "portuguese": "Colecionador",
+    "chinese": "收藏家",
+    "spanish": "Coleccionista",
+    "chinese_traditional": "收集者",
+    "korean": "수집가",
+    "japanese": "コレクター"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-60213f2327c025c9-066ba0847e31eff4f8dc782cfd61710d-v2",
+      "english": "Cael’s scavenger cherubs are constantly at work, searching for anything gold and shiny they can get their hands on. As for where these Cherubs stash Heaven’s treasure, no one knows.",
+      "french": "Les chérubins chapardeurs de Cael sont constamment à l'œuvre, à la recherche de tout objet en or ou brillant. Nul ne sait où ils cachent les trésors du paradis.",
+      "german": "Caels Plünderer-Cherubim sind ständig im Einsatz. Sie suchen nach Gold und edlen Dingen und raffen, was sie in die Finger bekommen. Wo diese Cherubim den Schatz des Himmels aufbewahren, ist unbekannt.",
+      "russian": "Херувимы-собиратели без устали ищут золото и любые другие блестящие безделушки, которые можно прихватить с собой. Никто не знает, куда они складывают свою добычу.",
+      "portuguese": "Os querubins catadores de Cael estão constantemente trabalhando, procurando por qualquer coisa dourada e brilhante. Ninguém sabe onde esses querubins guardam o tesouro do Céu.",
+      "chinese": "凯尔的清道夫小天使们一直在孜孜不倦地将他们能找到的所有金光闪闪的东西收入囊中。至于这些小天使们把天堂的宝藏藏在了哪里，没有人知道。",
+      "spanish": "Los querubines saqueadores de Cael trabajan incansables para hacerse con todo lo dorado y lo brillante que ven. Lo que nadie sabe es dónde esconden los tesoros del Cielo.",
+      "chinese_traditional": "凱爾的拾荒天使寶寶不斷工作，搜尋任何金色和閃亮的東西。至於這些天使寶寶把天堂的財寶藏在哪裡，沒人知道。",
+      "korean": "카엘의 청소부들은 황금과 반짝이는 물건을 찾아 쉬지 않고 움직인다. 이 케루빔들이 발견한 천상의 보물을 어디에 보관하는지 아는 이는 아무도 없다.",
+      "japanese": "キャエルに仕える宝探しの智天使たちは、金色で光り輝くものを求めて絶えず働いている。彼らが天界の宝物をどこに隠しているかは、誰も知らない。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_DevilishCollector_Treasure.prefab",
+    "m_AssetGUID": "8e91f62c84be5bc4e974ac9fe17e8e6c"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-f0d29aaba007d3ce-066ba0847e31eff4f8dc782cfd61710d-v2",
+        "english": "Gain [effect0.power] [coin].",
+        "french": "Octroie [effect0.power] [coin].",
+        "german": "Erhalte [effect0.power] [coin].",
+        "russian": "Дает [coin] х[effect0.power].",
+        "portuguese": "Recebe [effect0.power] [coin].",
+        "chinese": "获得 [effect0.power][coin]。",
+        "spanish": "Obtienes [effect0.power] [coin].",
+        "chinese_traditional": "獲得[effect0.power][coin]。",
+        "korean": "[effect0.power] [coin]을 획득합니다.",
+        "japanese": "[effect0.power] [coin]を得る。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        {
+          "effectStateName": "CardEffectRewardGold",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "paramInt": 75,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/FX/FX_CoinGain_PS.prefab",
+              "m_AssetGUID": "f5a595ac3f2ede94483684d774afd444"
+            },
+            "spawnLocation": "character_center"
+          }
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-6fd7e9bb3eaea0fa-066ba0847e31eff4f8dc782cfd61710d-v2",
+        "english": "Flees from battle if not [rooted] or [dazed].",
+        "french": "Quitte le combat sauf si <b>Enraciné</b> ou <b>Étourdi</b>.",
+        "german": "Flieht aus dem Kampf, wenn er nicht <b>verwurzelt</b> ist oder <b>Schwindel</b> hat.",
+        "russian": "Сбегает из боя, если не наложить [rooted]путы[dazed] или не ошеломить.",
+        "portuguese": "Foge da batalha quando não está <b>Imobilizado</b> ou <b>Atordoado</b>.",
+        "chinese": "只要不处于<b>缠绕</b>或<b>眩晕</b>状态时，就会逃离战斗。",
+        "spanish": "Huye de la batalla si no tiene [rooted] o [dazed].",
+        "chinese_traditional": "如果沒被[rooted]或[dazed]，從戰鬥中逃離。",
+        "korean": "[rooted] 또는 [dazed] 상태가 아니라면 전투에서 이탈합니다.",
+        "japanese": "[rooted]または[dazed]状態にならないと、バトルから逃走する。"
+      },
+      "trigger": "post_combat",
+      "additionalTextOnTriggerKey": {
+        "key": "CharacterData_additionalTextOnTriggerKey-d1d26717d5aeafdc-066ba0847e31eff4f8dc782cfd61710d-v2",
+        "english": "Escaped!",
+        "french": "Fuite !",
+        "german": "Entwischt!",
+        "russian": "Побег!",
+        "portuguese": "Escapou!",
+        "chinese": "已逃脱！",
+        "spanish": "¡Ha huido!",
+        "chinese_traditional": "逃脫成功！",
+        "korean": "이탈!",
+        "japanese": "逃走！"
+      },
+      "effects": [
+        {
+          "effectStateName": "CardEffectDespawnCharacter",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "paramInt": 1,
+          "paramBool": true,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/FX_CherubEscape.prefab",
+              "m_AssetGUID": "6c91d437126b4224dbb638b599ef521d"
+            },
+            "spawnLocation": "character_bottom"
+          }
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 20,
+    "endlessAttack": 0
+  },
+  "size": 2,
+  "health": 3,
+  "canAttack": false,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_TreasureCollector",
+    "SubtypesData_TreasureCollectorT2"
+  ],
+  "characterChatterData": "TreasureCherubChatterData",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "Divinity",
+  "name": "Divinity",
+  "nameKey": {
+    "key": "CardData_nameKey-049a577388ad4939-a3941ba4015cb4048b4fc7ce90559374-v2",
+    "english": "Divinity",
+    "french": "Divinité",
+    "german": "Göttlichkeit",
+    "russian": "Божественность",
+    "portuguese": "Divindade",
+    "chinese": "神祇",
+    "spanish": "Divinidad",
+    "chinese_traditional": "神性",
+    "korean": "신성한 힘",
+    "japanese": "神力"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-131b9bddecc6663c-a3941ba4015cb4048b4fc7ce90559374-v2",
+    "english": "Apply [valor] [effect0.status0.power].",
+    "french": "Inflige [valor] [effect0.status0.power].",
+    "german": "Wende [valor] [effect0.status0.power] an.",
+    "russian": "Накладывает [valor] х[effect0.status0.power].",
+    "portuguese": "Aplica [valor] [effect0.status0.power].",
+    "chinese": "获得 [valor] [effect0.status0.power]。",
+    "spanish": "Añade [valor] [effect0.status0.power].",
+    "chinese_traditional": "施加[valor][effect0.status0.power]。",
+    "korean": "[valor] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "[valor] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-442bbb54b05188fe-a3941ba4015cb4048b4fc7ce90559374-v2",
+      "english": "Fel bathed her warriors with an unfamiliar light. Heaven’s Light, usually harsh and blinding, became soft. Her warriors sensed it, perhaps Heaven’s Light had found a new steward.",
+      "french": "Fel plongea ses guerriers dans une lueur étrange. La lumière des cieux, d'habitude intense et éblouissante, se fit douce. Les guerriers le sentirent. La radiance céleste avait peut-être trouvé un nouvel intendant.",
+      "german": "Fel badete ihre Krieger in ungewohntem Licht. Das Himmelslicht, normalerweise gleißend und blendend, wurde weich. Ihre Krieger spürten, dass das Himmelslicht nun womöglich eine neue Begleiterin gefunden hatte.",
+      "russian": "Фэл озарила бойцов райским светом. В этот раз он был другим: не таким пронзительным и слепящим, как прежде. Он смягчился, и воины это почувствовали. Похоже, что у райского света появился новый направляющий.",
+      "portuguese": "Fel banhou seus guerreiros com uma luz desconhecida. A Luz do Céu, normalmente agressiva e ofuscante, tornou-se suave. Seus guerreiros sentiram isso, parece que a Luz do Céu encontrou uma nova dona.",
+      "chinese": "菲尔使她的战士们沐浴在一种陌生的光芒中。通常很刺眼的天堂之光，如今变得柔和起来。她的战士们感觉到，也许天堂之光已经有了新的管理者。",
+      "spanish": "Fel bañó a sus guerreros en una luz desconocida. La luz del Cielo, normalmente fiera y cegadora, se volvió suave. Sus guerreros sintieron que tal vez la luz del Cielo haya encontrado una nueva guardiana.",
+      "chinese_traditional": "費爾用一種陌生的光芒沐浴她的戰士。天堂之光原本很刺眼，但這次卻變得柔和。她的戰士感受到了，也許天堂之光已經找到了新的守護者。",
+      "korean": "펠에게서 나온 기이한 빛이 전사들을 감쌌다. 보통은 눈이 멀 정도로 강하고 눈부셨던 천상의 빛이 온화하게 변했다. 펠을 따르던 전사들은 그 빛을 느끼며, 아마도 천상의 빛이 새로운 주인을 만났음을 깨달았을 것이다.",
+      "japanese": "フェルは見慣れぬ光を戦士たちに浴びさせた。いつもは強く目がくらむような天界の光が柔らかくなったものだ。戦士たちは感じ取った。天界の光が新たな管理者を認めたのかもしれない。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Divinity.prefab",
+    "m_AssetGUID": "27761e461514e9748aae7de2d4232aec"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "valor",
+          "count": 10
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Banished/Divinity/FX_DivinitySpell_Parent.prefab",
+          "m_AssetGUID": "27b13585661a4334db680cd18f5172b0"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Genevieve Bega"
+}

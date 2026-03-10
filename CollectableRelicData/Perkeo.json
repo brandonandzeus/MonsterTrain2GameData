@@ -1,0 +1,193 @@
+{
+  "id": "BalatroEventPerkeo",
+  "name": "Perkeo",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-494a8f3e41639521-53d48e2bfe68aa54286f07927151f94b-v2",
+    "english": "Perkeo",
+    "french": "Perkeo",
+    "german": "Perkeo",
+    "russian": "Перкео",
+    "portuguese": "Perkeo",
+    "chinese": "帕奇欧",
+    "spanish": "Perkeo",
+    "chinese_traditional": "佩爾基",
+    "korean": "페르케오",
+    "japanese": "ペルケオ"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-cfbad99a271766de-53d48e2bfe68aa54286f07927151f94b-v2",
+    "english": "At the start of battle, gain a <b>Calcified Ember</b> that converts to <b>Excavated Ember</b> after not playing it once.",
+    "french": "Au début du combat, gagnez une <b>Braise calcifiée</b> qui se convertit en <b>Braise déterrée</b> après ne pas l'avoir jouée une fois.",
+    "german": "Erhalte zu Beginn des Kampfes <b>Verkalkte Glutasche</b>, die sich in <b>Freigelegte Glutasche</b> verwandelt, wenn du sie nicht ausspielst.",
+    "russian": "В начале боя дает <b>застывший уголь</b>, который, если его не использовать, превратится в <b>добытый</b>.",
+    "portuguese": "No início da batalha, ganha uma <b>Brasa Calcificada</b> que se converte em <b>Brasa Escavada</b> depois de não ser usada nenhuma vez.",
+    "chinese": "在战斗开始时，获得一张<b>钙化的余烬</b>，一回合后未使用则变为<b>采掘的余烬</b>。",
+    "spanish": "Al principio de la batalla recibes un <b>Ascua calcificada</b> que se convierte en <b>Ascua extraída</b> tras no jugarla.",
+    "chinese_traditional": "在戰鬥開始時，獲得一個<b>鈣化的餘燼</b>，在經過一回合且沒有打出後轉變為<b>挖掘出的餘燼</b>。",
+    "korean": "전투 시작 시, <b>굳어진 잔불</b>을 획득하며, 이를 한 번도 사용하지 않으면 <b>발굴한 잔불</b>로 변환됩니다.",
+    "japanese": "バトルの開始時に、1度プレイせずにいると<b>採掘エンバー</b>に変換される<b>石灰化エンバー</b>を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-e605de0a71a1c4b2-53d48e2bfe68aa54286f07927151f94b-v2",
+      "english": "“Why so serious?”",
+      "french": "<nobr>« Pourquoi</nobr> tant de <nobr>sérieux ? »</nobr>",
+      "german": "„Warum so ernst?“",
+      "russian": "«Че ты такой серьезный?»",
+      "portuguese": "“Por que está tão sério?”",
+      "chinese": "“干嘛这么严肃？”",
+      "spanish": "«¿Por qué tan serio?».",
+      "chinese_traditional": "「為什麼這麼認真？」",
+      "korean": "“뭐가 그리 심각하지?”",
+      "japanese": "「もっと肩の力抜きなよ」"
+    }
+  ],
+  "rarity": "champion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddCardsStartOfBattle",
+      "additionalTooltips": [
+        {
+          "statusId": "rooted",
+          "descriptionKey": {
+            "key": "Trigger_OnUnplayed_TooltipText",
+            "english": "Triggers if this card remains in hand at the end of the turn.",
+            "french": "Se déclenche si cette carte est restée dans la main à la fin du tour.",
+            "german": "Wird ausgelöst, wenn diese Karte sich am Ende des Zuges noch auf der Hand befindet.",
+            "russian": "Срабатывает, если эта карта остается в руке в конце хода.",
+            "portuguese": "Desencadeia se esta carta permanecer em sua mão ao fim do turno.",
+            "chinese": "若你的回合结束时，这张卡牌依然在你的手牌中，则在回合结束时触发。",
+            "spanish": "Se activa si esta carta se mantiene en la mano al final del turno.",
+            "chinese_traditional": "如果這張卡牌在回合結束時仍在手牌中則觸發。",
+            "korean": "턴이 끝날 때까지 이 카드가 패에 남아 있으면 효과가 발동합니다.",
+            "japanese": "ターンの終了時に、このカードが手札に残されていると発動する。"
+          },
+          "trigger": "on_unit_ability_available",
+          "titleKey": {
+            "key": "Trigger_OnUnplayed_CardText",
+            "english": "Reserve",
+            "french": "Réserve",
+            "german": "Behalten",
+            "russian": "Резерв",
+            "portuguese": "Reservar",
+            "chinese": "保存",
+            "spanish": "Reserva",
+            "chinese_traditional": "保留",
+            "korean": "남김패",
+            "japanese": "リザーブ"
+          },
+          "style": "trigger"
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "CalcifiedEmberConvert",
+        "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-187b01e8f013e0f7-a0c8a03bf97b0b94dbb9a623453d2ffa-v2",
+        "cardTriggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-cef486450082e404-a0c8a03bf97b0b94dbb9a623453d2ffa-v2",
+              "english": "Convert to <b>Excavated Ember</b>.",
+              "french": "Se convertit en <b>Braise déterrée</b>.",
+              "german": "Umwandlung zu <b>Freigelegte Glutasche</b>.",
+              "russian": "Превращается в <b>Добытый уголь</b>.",
+              "portuguese": "Converte para <b>Brasa Escavada</b>.",
+              "chinese": "转换为 <b>采掘的余烬</b>。",
+              "spanish": "Se convierte en <b>Ascua extraída</b>.",
+              "chinese_traditional": "轉化為<b>挖掘出的餘燼</b>。",
+              "korean": "<b>발굴한 잔불</b>로 변환합니다.",
+              "japanese": "<b>採掘エンバー</b>に変換する。"
+            },
+            "trigger": "on_unplayed_positive",
+            "cardEffects": [
+              {
+                "effectStateName": "CardEffectBalatroConvertCard",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramCardData": {
+                  "id": "SelfPurgeEnergyGain",
+                  "nameKey": {
+                    "key": "CardData_nameKey-7c6420e298826d81-a74ace2972b6868498545bad596e982a-v2",
+                    "english": "Excavated Ember",
+                    "french": "Braise déterrée",
+                    "german": "Freigelegte Glutasche",
+                    "russian": "Добытый уголь",
+                    "portuguese": "Brasa Escavada",
+                    "chinese": "采掘的余烬",
+                    "spanish": "Ascua extraída",
+                    "chinese_traditional": "挖掘出的餘燼",
+                    "korean": "발굴한 잔불",
+                    "japanese": "採掘エンバー"
+                  },
+                  "overrideDescriptionKey": {
+                    "key": "CardData_overrideDescriptionKey-9f02b5d9784c342d-a74ace2972b6868498545bad596e982a-v2",
+                    "english": "Gain [effect0.power][ember]. Draw [effect1.power].",
+                    "french": "Octroie [effect0.power][ember]. Piochez [effect1.power] carte(s).",
+                    "german": "Erhalte [effect0.power][ember]. Ziehe [effect1.power] Karte(n).",
+                    "russian": "Дает [effect0.power][ember]. Возьмите [effect1.power].",
+                    "portuguese": "Recebe [effect0.power][ember]. Compra [effect1.power].",
+                    "chinese": "获得 [effect0.power][ember]，抽 [effect1.power] 张牌。",
+                    "spanish": "Obtienes [effect0.power][ember]. Roba [effect1.power].",
+                    "chinese_traditional": "獲得[effect0.power][ember]。抽[effect1.power]張牌。",
+                    "korean": "[effect0.power][ember]을 획득합니다. [effect1.power]장을 뽑습니다.",
+                    "japanese": "[effect0.power][ember]を得る。ドロー[effect1.power]。"
+                  },
+                  "cardLoreTooltipKeys": [
+                    {
+                      "key": "CardData_data-b6b80055fb0e7a25-a74ace2972b6868498545bad596e982a-v2",
+                      "english": "Even the pressures of time can reverse the effects of calcified Ember. It only takes a worthy soul to carry the load, but one much worthier than myself.",
+                      "french": "Même la pression du temps peut inverser les effets d'une braise calcifiée. Il suffit simplement de trouver une âme assez méritante pour la transporter, mais une bien plus méritante que moi.",
+                      "german": "Der Zahn der Zeit kann verkalkte Glutasche wieder ans Tageslicht bringen. Nicht jeder ist eines solchen Schatzes würdig. Ganz sicher nicht ich …",
+                      "russian": "Застывший уголь можно со временем разморозить. Но эту ношу придется нести достойной душе. Куда более достойной, чем моя.",
+                      "portuguese": "Até a pressão temporal pode reverter os efeitos da Brasa Calcificada. Basta uma alma digna carregá-la, uma com muito mais dignidade do que eu.",
+                      "chinese": "即便是钙化的余烬，也会在时间的力量之下慢慢恢复作用。只能让某个有价值的灵魂来承受这份重担，某个比我还要有价值的灵魂。",
+                      "spanish": "Incluso la presión del tiempo puede revertir los efectos del ascua calcificada. Solo se necesita un alma digna para soportar la carga; una mucho más digna que la mía.",
+                      "chinese_traditional": "即使是時間的壓力也可以逆轉鈣化餘燼的影響。它只需要一個有價值的靈魂來承擔重負，但必須是比我自身更有價值的靈魂。",
+                      "korean": "시간의 압박조차 단단히 굳어진 잔불의 영향을 되돌릴 수 있다. 그 짐을 지기 위해서는 나보다 훨씬 더 고귀한 영혼이 필요하다.",
+                      "japanese": "時間の圧力さえも、石灰化したエンバーの効果を逆転させる可能性がある。その重荷を担うには価値ある魂が必要だが、それはこの魂よりもはるかに価値があるものでなければならない。"
+                    }
+                  ],
+                  "cardType": "spell",
+                  "rarity": "common",
+                  "cardArtPrefabVariantRef": {
+                    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_ExcavatedEmber.prefab",
+                    "m_AssetGUID": "01b05efc8316f6542812d620c32e0130"
+                  },
+                  "traits": [
+                    {
+                      "traitStateName": "CardTraitExhaustState"
+                    }
+                  ],
+                  "effects": [
+                    {
+                      "effectStateName": "CardEffectGainEnergy",
+                      "targetMode": "room",
+                      "targetTeamType": "none",
+                      "paramInt": 2
+                    },
+                    {
+                      "effectStateName": "CardEffectDraw",
+                      "targetMode": "room",
+                      "targetTeamType": "none",
+                      "paramInt": 1
+                    }
+                  ],
+                  "initialKeyboardTarget": "front_friendly",
+                  "artistAttribution": "Zihao Luo"
+                },
+                "paramInt": 1
+              }
+            ],
+            "triggerKeywordCardTextSuppressed": false
+          }
+        ],
+        "allowSecondaryTooltipPlacement": false,
+        "hideUpgradeIconOnCard": true,
+        "useUpgradeHighlightTextTags": false
+      },
+      "paramBool2": true,
+      "paramCardPool": "CalcifiedEmberOnlyPool"
+    }
+  ],
+  "fromStoryEvent": true,
+  "forceUpdateCountLabel": true
+}

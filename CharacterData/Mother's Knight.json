@@ -1,0 +1,96 @@
+{
+  "id": "RAny_Heavy_TitaniteUpFront_Ver2",
+  "name": "Mother's Knight",
+  "nameKey": {
+    "key": "CharacterData_nameKey-7818e5f5c7c4f3cf-af4fb8ffcd244f94da1c74c0fe44270b-v2",
+    "english": "Mother's Knight",
+    "french": "Chevalier de la Mère",
+    "german": "Mutters Ritter",
+    "russian": "Рыцарь Матери",
+    "portuguese": "Cavaleiro da Mãe",
+    "chinese": "母亲的骑士",
+    "spanish": "Caballero de Madre",
+    "chinese_traditional": "母親的騎士",
+    "korean": "어머니의 기사",
+    "japanese": "マザーの騎士"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-6e72c5e1ace82703-af4fb8ffcd244f94da1c74c0fe44270b-v2",
+      "english": "The Mother’s seeds struggle to mimic blades of steel, as they prefer organic form. However, this bloom proves that even the roots and vines of Her blooms can come together to form a deadly sword.",
+      "french": "Préférant les formes organiques, les graines de la Mère imitent difficilement les lames d'acier. Toutefois, cette plante prouve que même les racines et les sarments de Ses fleurs peuvent se combiner pour créer une épée redoutable.",
+      "german": "Die Saat der Mutter müht sich damit, Klingen aus Stahl nachzubilden, da sie organische Form bevorzugt. Doch diese Blüte beweist, dass selbst die Wurzeln und Ranken Ihrer Blüten in ihrer Gesamtheit ein tödliches Schwert zu formen vermögen.",
+      "russian": "Семенам Матери непросто имитировать стальные лезвия, потому что они предпочитают органические формы. Но это соцветие является прямым доказательством того, что острый меч можно воссоздать даже сплетением лоз и корней.",
+      "portuguese": "As sementes da Mãe lutam para imitar lâminas de aço, pois preferem a forma orgânica. No entanto, essa flor prova que mesmo as raízes e os cipós de suas flores podem se unir para formar uma espada letal.",
+      "chinese": "母亲的种子更喜欢有机形态，因此模仿钢铁利刃时十分费力。然而，这朵花证明，即使是她花朵的根须与藤蔓也能缠在一起，变成一把致命的利剑。",
+      "spanish": "Las semillas de la Madre prefieren las formas orgánicas al acero. Sin embargo, este brote demuestra que incluso las raíces y lianas de Sus retoños pueden unirse para formar una espada letal.",
+      "chinese_traditional": "母親的種子偏好有機形態，難以模仿鋼鐵利刃。然而這朵花卻證明了，即使是花朵的根鬚與藤蔓，亦能交織成一把致命的鋒劍。",
+      "korean": "어머니의 씨앗들은 유기적 형태를 선호하기에, 강철의 칼날을 모방하는 데에는 어려움을 겪는다. 하지만 이 개화는 그녀의 꽃을 이루는 뿌리와 덩굴조차 결집해 죽음을 부르는 검이 될 수 있음을 보여준다.",
+      "japanese": "マザーの種は、有機的な形態を好むため、鋼鉄の刃を模倣することは苦手だ。しかしこの花は、彼女の花の蔓と根が結束して鋭い刃となることが可能であることを証明している。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SlovenKnight_SoulSavior.prefab",
+    "m_AssetGUID": "26ef544df7dec2746a3a74e2ab4837c4"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-f1f810d85c280be5-af4fb8ffcd244f94da1c74c0fe44270b-v2",
+        "english": "Gain [titanite].",
+        "french": "Octroie [titanite].",
+        "german": "Erhalte [titanite].",
+        "russian": "Дается [titanite].",
+        "portuguese": "Recebe [titanite].",
+        "chinese": "获得 [titanite]。",
+        "spanish": "Añade [titanite].",
+        "chinese_traditional": "獲得[titanite]。",
+        "korean": "[titanite]를 획득합니다.",
+        "japanese": "[titanite]を得る。"
+      },
+      "trigger": "on_deathwish",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "titanite",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trigger": "on_deathwish_lost",
+      "effects": [
+        {
+          "effectStateName": "CardEffectRemoveStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "titanite",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 120,
+    "endlessAttack": 12
+  },
+  "size": 2,
+  "health": 60,
+  "attackDamage": 10,
+  "lifemotherVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Heavy_Enemy"
+  ],
+  "characterChatterData": "R1SoulSaviorEnemies_Male_ChatterData",
+  "artistAttribution": "Genevieve Bega"
+}

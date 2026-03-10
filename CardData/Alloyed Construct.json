@@ -1,0 +1,123 @@
+{
+  "id": "AlloyedConstruct",
+  "name": "Alloyed Construct",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_AlloyedConstruct.prefab",
+    "m_AssetGUID": "d2baa33ac605ed44397cbd08f0479329"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLevelMonsterState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "AlloyedConstruct",
+        "nameKey": {
+          "key": "CharacterData_nameKey-1e11de0500d18321-69b2e185d7f9a724aa86b2e6d46e8ae5-v2",
+          "english": "Alloyed Construct",
+          "french": "Automate en alliage",
+          "german": "Legiertes Konstrukt",
+          "russian": "Легированный конструкт",
+          "portuguese": "Autômato Blindado",
+          "chinese": "合金构装体",
+          "spanish": "Constructo de aleación",
+          "chinese_traditional": "合金造物",
+          "korean": "합금 구조",
+          "japanese": "合金コンストラクト"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-3d0d0f1624807e5c-69b2e185d7f9a724aa86b2e6d46e8ae5-v2",
+            "english": "As their understanding of the world around them grew, the Umbra were able to create autonomous machines to do the work of one thousand Morsels. They’ve since served the additional roles of Crucible defender and my personal guard into the depths of Hell.",
+            "french": "À mesure que leur compréhension du monde s'affina, les Umbras devinrent capables de créer des machines autonomes pouvant abattre le travail d'un millier de sous-bistres. Depuis, ces automates se sont vu confier la défense du creuset et constituent ma garde personnelle quand je m'aventure dans les profondeurs de l'enfer.",
+            "german": "Mit der Zeit sammelten die Umbra immer mehr Wissen und bauten eigenständige Maschinen, die die Arbeit von eintausend Nuggets erledigen konnten. Seitdem haben diese Maschinen auch die Verteidigung des Schmelztiegels und meiner selbst in den Tiefen der Hölle übernommen.",
+            "russian": "Постепенно начиная осознавать то, как устроен окружающий мир, Мрак научился создавать автономные машины, способные заменить собой тысячу заморышей. С тех пор эта техника использовалась и для защиты Горнила, и играла роль моих личных телохранителей в глубинах Ада.",
+            "portuguese": "Conforme o entendimento deles sobre o mundo cresceu, os Sombrios foram capazes de criar máquinas autônomas para fazer o trabalho de mil Lanchos. Desde então eles cumprem papéis adicionais como defensores do Crisol e guardas pessoais para quando preciso ir para as profundezas do Inferno.",
+            "chinese": "随着对世界的了解不断加深，影主学会了创造自动化机械，来完成本来需要一千个影裔才能完成的工作。在那之后，这些机械担任起了保护熔炉之地的重任，如今则成为了我地狱之旅的贴身保镖。",
+            "spanish": "Según aumentaba su comprensión del mundo que los rodeaba, los Umbra consiguieron crear máquinas autónomas que realizaban el trabajo de mil pinchos. Desde entonces, han pasado a ser defensores del Crisol y mi guardia personal en las profundidades del Infierno.",
+            "chinese_traditional": "隨著他們對周圍世界的理解不斷加深，暗影族能夠創造自主機器來完成一千個莫塞爾的工作量。從那時起，他們擔負起了地獄熔爐守護者的額外職責，也成為了我深入地獄時的私人衛隊。",
+            "korean": "주변 세상에 대한 이해가 더 깊어지면서, 어스름 일족은 작은 그림자 천 마리가 수행할 일을 대신할 자율 기계를 제작했다. 이 기계는 이후 지옥 깊숙한 곳에서 도가니 수호자이자 개인 경비원으로서의 역할을 추가로 수행했다.",
+            "japanese": "周囲の世界に対する理解が深まるにつれ、常闇族はモーゼル1,000体分の作業を行う自律型機械を作成できるようになった。それ以来、彼らはクルーシブルの守護者や、地獄の奥深くまで私を案内する護衛としての役割も果たしている。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_AlloyedConstruct.prefab",
+          "m_AssetGUID": "56aa517243f69b549be333bdaf87b6a4"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "inert",
+            "count": 1
+          },
+          {
+            "statusId": "multistrike",
+            "count": 1
+          },
+          {
+            "statusId": "spark",
+            "count": 2
+          }
+        ],
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-bf6c8e46ac8f77ff-69b2e185d7f9a724aa86b2e6d46e8ae5-v2",
+              "english": "Gain [spark] [effect0.status0.power].",
+              "french": "Octroie <b>Combustible</b> [effect0.status0.power].",
+              "german": "Erhalte [effect0.status0.power] <b>Brennstoff</b>.",
+              "russian": "Дает [effect0.status0.power] х[spark].",
+              "portuguese": "Concede <b>Combustível</b> [effect0.status0.power].",
+              "chinese": "获得<b>燃料</b> [effect0.status0.power]。",
+              "spanish": "Añade [spark] [effect0.status0.power].",
+              "chinese_traditional": "獲得[spark][effect0.status0.power]。",
+              "korean": "[spark] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[spark] [effect0.status0.power]を得る。"
+            },
+            "trigger": "on_feed",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "spark",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 25,
+        "deathType": "large",
+        "attackDamage": 25,
+        "subtypeKeys": [
+          "SubtypesData_Automaton",
+          "SubtypesData_BannerUnit"
+        ]
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 4,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Cameron Archer"
+}

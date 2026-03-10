@@ -1,0 +1,335 @@
+{
+  "id": "SoulSavior_UpgradedEquipmentMerchant",
+  "name": "SoulSavior_UpgradedEquipmentMerchant",
+  "tooltipTitleKey": {
+    "key": "MerchantData_tooltipTitleKey-06d8deb3e28f065c-769c8e4fb25a69a49990adc0ef2c5a11-v2",
+    "english": "Merchant of Arms+",
+    "french": "Marchand d'armes+",
+    "german": "Waffenhändler+",
+    "russian": "Продавец оружия+",
+    "portuguese": "Mercador de Armas+",
+    "chinese": "武器商人+",
+    "spanish": "Mercader de armas+",
+    "chinese_traditional": "軍備商人+",
+    "korean": "무기 상인+",
+    "japanese": "武器の商人+"
+  },
+  "tooltipBodyKey": {
+    "key": "MerchantData_tooltipBodyKey-851a9d441fdc5313-769c8e4fb25a69a49990adc0ef2c5a11-v2",
+    "english": "Upgraded Merchant of Arms. Offers random equipment and rooms and better ways to improve them.",
+    "french": "Marchand d'armes amélioré. Propose des équipements et des salles aléatoires, et de quoi les améliorer.",
+    "german": "Verbesserter Waffenhändler. Bietet zufällige Ausrüstungen und Räume und die Möglichkeiten, sie zu verbessern.",
+    "russian": "Улучшенный продавец оружия. Предлагает случайную подборку снаряжения и карт комнат.",
+    "portuguese": "Mercador de Armas melhorado. Oferece salas e equipamentos aleatórios, além de maneiras superiores de melhorá-los.",
+    "chinese": "高级武器商人提供随机装备和房间，且能用更好的方法将其强化。",
+    "spanish": "Mercader de armas potenciado. Ofrece una selección aleatoria de equipo, salas y formas de mejorarlos.",
+    "chinese_traditional": "升級後的軍備商人。提供隨機裝備和房間以及更好的改良方式。",
+    "korean": "업그레이드한 무기 상인. 무작위 장비와 객실을 제공하며, 이를 강화하는 더 나은 방법도 제공합니다.",
+    "japanese": "武器の商人が強化される。ランダムな装備品やルームと、それらの改善が提供されている。"
+  },
+  "rewards": [
+    {
+      "rewardData": {
+        "id": "MerchantRandomEquipmentCard",
+        "rarityFilter": [
+          "uncommon",
+          "rare"
+        ],
+        "cardPool": "RoomAndEquipmentMerchant_EquipmentPool"
+      },
+      "oncePerVisit": true
+    },
+    {
+      "rewardData": {
+        "id": "MerchantRandomRoomCard",
+        "rarityFilter": [
+          "uncommon",
+          "rare"
+        ],
+        "cardPool": "RoomAndEquipmentMerchant_RoomPool"
+      },
+      "oncePerVisit": true
+    },
+    {
+      "rewardData": {
+        "id": "MerchantRandomRoomOrEquipmentCardRare",
+        "allRaritiesEquallyLikely": true,
+        "rarityFilter": [
+          "rare"
+        ],
+        "cardPool": "RoomAndEquipmentMerchant_RoomAndEquipmentPool"
+      },
+      "oncePerVisit": true
+    },
+    {
+      "rewardData": {
+        "id": "PurgeRewardMerchant",
+        "_rewardTitleKey": {
+          "key": "PurgeRewardData__rewardTitleKey-5390ac522aaf2ee5-606fc10a139d918408e1f60139b29b7f-v2",
+          "english": "Purge Card",
+          "french": "Purge de carte",
+          "german": "Karte verbannen",
+          "russian": "Уничтожение карты",
+          "portuguese": "Expurgo de Carta",
+          "chinese": "移除卡牌",
+          "spanish": "Purgar carta",
+          "chinese_traditional": "淨化卡牌",
+          "korean": "카드 제외",
+          "japanese": "カードを除外"
+        },
+        "_rewardDescriptionKey": {
+          "key": "PurgeRewardData__rewardDescriptionKey-e3c057b6689a405f-606fc10a139d918408e1f60139b29b7f-v2",
+          "english": "Remove a card from your deck.",
+          "french": "Retirez une carte de votre deck.",
+          "german": "Entferne eine Karte aus deinem Deck.",
+          "russian": "Удалите карту из своей колоды.",
+          "portuguese": "Remove uma carta de seu deck.",
+          "chinese": "从卡组中移除一张卡牌。",
+          "spanish": "Elimina una carta del mazo",
+          "chinese_traditional": "從你的牌組中移除一張卡牌。",
+          "korean": "덱에서 카드 한 장을 제거하세요.",
+          "japanese": "デッキからカードを取り除く。"
+        },
+        "costs": [
+          40,
+          50,
+          75,
+          100,
+          125,
+          150,
+          200,
+          225,
+          250
+        ],
+        "_isServiceMerchantReward": true,
+        "_merchantServiceIndex": 0,
+        "numPurges": 1,
+        "secondaryCosts": [
+          40,
+          60,
+          90,
+          120,
+          160,
+          200,
+          250,
+          300
+        ]
+      }
+    },
+    {
+      "rewardData": {
+        "id": "RerollEquipmentMerchantRewardData",
+        "_rewardTitleKey": {
+          "key": "RerollMerchantRewardData__rewardTitleKey-5c939b3e59321dbb-bc435c2195581e5498dd7ab69bc5c759-v2",
+          "english": "Re-roll",
+          "french": "Renouveler",
+          "german": "Neue Angebote",
+          "russian": "Обновить",
+          "portuguese": "Trocar Ofertas",
+          "chinese": "刷新",
+          "spanish": "Cambiar",
+          "chinese_traditional": "重抽",
+          "korean": "갱신",
+          "japanese": "リロール"
+        },
+        "_rewardDescriptionKey": {
+          "key": "RerollMerchantRewardData__rewardDescriptionKey-fc930650c1ab7eb7-bc435c2195581e5498dd7ab69bc5c759-v2",
+          "english": "Randomize and refresh the offered goods.",
+          "french": "Renouvelez au hasard les articles proposés par les marchands.",
+          "german": "Erzeuge zufällige neue Handelswaren.",
+          "russian": "Обновляет товары торговцев случайным образом.",
+          "portuguese": "Sorteia e atualiza os itens oferecidos.",
+          "chinese": "随机刷新商品。",
+          "spanish": "Aleatoriza y renueva los artículos disponibles.",
+          "chinese_traditional": "隨機化並更新提供的商品。",
+          "korean": "제공하는 상품을 무작위로 갱신합니다.",
+          "japanese": "提供された品をランダム化して更新する。"
+        },
+        "costs": [
+          50
+        ],
+        "_isServiceMerchantReward": true,
+        "_merchantServiceIndex": 1
+      },
+      "oncePerVisit": true
+    },
+    {
+      "rewardData": {
+        "id": "SoulSavior_EquipmentMergeRewardMerchant_Upgraded",
+        "_rewardTitleKey": {
+          "key": "EquipmentMergeRewardData__rewardTitleKey-fc215994b7e78626-1e026debc18b38346bb04c6c9a52c232-v2",
+          "english": "Improved Merge",
+          "french": "Fusion améliorée",
+          "german": "Verbessertes Kombinieren",
+          "russian": "Улучшенное слияние",
+          "portuguese": "Mesclagem Melhorada",
+          "chinese": "强化融合",
+          "spanish": "Combinación reforzada",
+          "chinese_traditional": "改良合併",
+          "korean": "고급 합성",
+          "japanese": "改良型合成"
+        },
+        "_rewardDescriptionKey": {
+          "key": "EquipmentMergeRewardData__rewardDescriptionKey-c4a61cf483683b14-1e026debc18b38346bb04c6c9a52c232-v2",
+          "english": "Combine two Equipment cards into one. -2[ember].",
+          "french": "Fusionne deux cartes d'équipement. -2[ember].",
+          "german": "Kombiniere zwei Ausrüstungskarten zu einer. -2[ember].",
+          "russian": "Объедините две карты снаряжения. -2[ember].",
+          "portuguese": "Combina duas cartas de Equipamento em uma. -2[ember].",
+          "chinese": "将两张装备卡融合为一张。-2[ember]。",
+          "spanish": "Combina dos cartas de equipo en una. -2[ember].",
+          "chinese_traditional": "將兩張裝備卡合而為一。-2[ember]。",
+          "korean": "두 개의 장비 카드를 하나로 합칩니다. -2[ember].",
+          "japanese": "2枚の装備品カードを1枚に合成する。-2[ember]。"
+        },
+        "baseFilterData": {
+          "id": "OnlyEquipment_EquipmentMerge",
+          "cardType": "equipment",
+          "disallowedCardPools": [
+            "EquipmentMergeIgnore"
+          ],
+          "excludeXCost": true,
+          "upgradeDisabledReason": "not_eligible"
+        },
+        "equipmentNoAbilityFilterData": {
+          "id": "EquipmentNoAbility_EquipmentMerge",
+          "cardType": "equipment",
+          "disallowedCardPools": [
+            "EquipmentMergeIgnore"
+          ],
+          "excludeXCost": true,
+          "upgradeDisabledReason": "not_eligible",
+          "excludeIfHasUnitAbility": true
+        },
+        "equipmentMergeCardData": {
+          "selectionMaskFilter": {
+            "id": "OnlyEquipment_EquipmentMerge",
+            "cardType": "equipment",
+            "disallowedCardPools": [
+              "EquipmentMergeIgnore"
+            ],
+            "excludeXCost": true,
+            "upgradeDisabledReason": "not_eligible"
+          },
+          "cardData": "MergedEquipmentCard"
+        },
+        "disallowedPairs": [
+          {
+            "card1": "Irontongue",
+            "card2": "Equalizer"
+          },
+          {
+            "card1": "StasisCrystal",
+            "card2": "StoicPlatemail"
+          }
+        ],
+        "optionalUpgrade": {
+          "id": "SoulSavior_EquipmentMergeRewardMerchant_Upgrade",
+          "costReduction": 2
+        },
+        "costs": [
+          75
+        ],
+        "_isServiceMerchantReward": true,
+        "_merchantServiceIndex": 2
+      },
+      "oncePerVisit": true
+    },
+    {
+      "rewardData": {
+        "id": "SoulSavior_FrontlineRewardData_Upgraded",
+        "_rewardTitleKey": {
+          "key": "FrontlineRewardData__rewardTitleKey-b155515a731e54ab-271dfadf62200c345bcfa3954af46b79-v2",
+          "english": "Improved Deployable Upgrade",
+          "french": "Amélioration déployable renforcée",
+          "german": "Verstärkte Einsatzverbesserung",
+          "russian": "Продвинутое размещаемое улучшение",
+          "portuguese": "Melhoria Distribuível Aperfeiçoada",
+          "chinese": "强化可部署升级",
+          "spanish": "Mejora desplegable reforzada",
+          "chinese_traditional": "改良型可部署升級",
+          "korean": "개선형 배치 업그레이드",
+          "japanese": "配置勝手改良アップグレード"
+        },
+        "_rewardDescriptionKey": {
+          "key": "FrontlineRewardData__rewardDescriptionKey-0c4c2586c35a982e-271dfadf62200c345bcfa3954af46b79-v2",
+          "english": "Upgrades an Equipment or Room to be drawn in the deployment phase. -2[ember].",
+          "french": "Améliore un équipement ou une salle à piocher lors de la phase de déploiement. -2[ember].",
+          "german": "Verbessert eine Ausrüstung oder einen Raum für die Einsatzphase. -2[ember].",
+          "russian": "Улучшает снаряжение или комнату, попадает в руку в фазе размещения. -2[ember].",
+          "portuguese": "Melhora um Equipamento ou Sala a ser comprada na Fase de Distribuição. -2[ember].",
+          "chinese": "升级一个装备或房间，以便在部署阶段抽取。-2[ember]。",
+          "spanish": "Mejora un equipo o sala para robarlo en la fase de despliegue. -2[ember].",
+          "chinese_traditional": "將一個裝備或房間升級為在部署階段就能抽到。-2[ember]。",
+          "korean": "배치 단계에서 장비나 객실을 업그레이드하여 뽑을 수 있도록 합니다. -2[ember].",
+          "japanese": "配置フェーズでドローする装備品またはルームをアップグレードする。-2[ember]。"
+        },
+        "baseFilterData": {
+          "id": "OnlyEquipmentOrTrainRoomAttachments",
+          "cardType": "equipment",
+          "additionalCardTypes": [
+            "room"
+          ],
+          "excludedCardTraitsOperator": "and",
+          "excludedCardTraits": [
+            "CardTraitDrawInDeploymentPhase"
+          ],
+          "requiredCardEffectsOperator": "or",
+          "requiredCardEffects": [
+            "CardEffectAttachTrainRoomAttachment",
+            "CardEffectAttachEquipment"
+          ]
+        },
+        "unitFrontlineUpgradeData": {
+          "id": "AddFrontlineTrait_Upgraded",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-b239f43ce85daf74-74e207a12e1a86942abd29ab71fec5d0-v2",
+            "english": "Improved Deployable",
+            "french": "Déployable amélioré",
+            "german": "Verbesserte Einsatzbereitschaft",
+            "russian": "Улучшенное размещение",
+            "portuguese": "Distribuível Aperfeiçoado",
+            "chinese": "强化可部署",
+            "spanish": "Desplegable reforzada",
+            "chinese_traditional": "改良型可部署",
+            "korean": "개선형 배치",
+            "japanese": "配置勝手改良"
+          },
+          "upgradeDescriptionKey": {
+            "key": "CardUpgradeData_upgradeDescriptionKey-bc8999fcd27fa548-74e207a12e1a86942abd29ab71fec5d0-v2",
+            "english": "This card is drawn during the deployment phase.",
+            "french": "Cette carte est piochée pendant la phase de Déploiement.",
+            "german": "Diese Karte wird während der Einsatzphase gezogen.",
+            "russian": "Эта карта попадает в руку в фазе размещения.",
+            "portuguese": "Esta carta é comprada durante a Fase de Distribuição.",
+            "chinese": "该卡牌会在部署阶段抽取。",
+            "spanish": "Esta carta se roba en la fase de despliegue.",
+            "chinese_traditional": "此卡在部署階段抽取。",
+            "korean": "이 카드는 배치 단계에서 뽑습니다.",
+            "japanese": "このカードは配置フェーズ中にドローされる。"
+          },
+          "traitDataUpgrades": [
+            {
+              "traitStateName": "CardTraitDrawInDeploymentPhase",
+              "paramBool": true,
+              "traitIsRemovable": false,
+              "drawInDeploymentPhase": true
+            }
+          ],
+          "costReduction": 2
+        },
+        "costs": [
+          75
+        ],
+        "ShowRewardAnimationInEvent": true,
+        "_isServiceMerchantReward": true,
+        "_merchantServiceIndex": 3
+      },
+      "oncePerVisit": true
+    }
+  ],
+  "requiredDlc": "railforged",
+  "isSoulSaviorUpgradedNode": true,
+  "nodeSelectedSfxCue": "Node_Merchant",
+  "discountPercent": 0.5
+}

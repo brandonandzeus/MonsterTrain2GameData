@@ -1,0 +1,47 @@
+{
+  "id": "Enemy_CorruptSeraph_BuffAllies_TitanTrial",
+  "name": "Harbinger of Entropy II",
+  "nameKey": {
+    "key": "SinsData_nameKey-dd9afc382ca68520-63c7fb47617100d4383c9b3caa6e6877-v2",
+    "english": "Harbinger of Entropy II",
+    "french": "Messager d'Entropie II",
+    "german": "Entropies Bote II",
+    "russian": "Предвестник Энтропии II",
+    "portuguese": "Precursor da Entropia II",
+    "chinese": "混乱泰坦的预兆 II",
+    "spanish": "Presagio de Entropía II",
+    "chinese_traditional": "熵之先驅II",
+    "korean": "엔트로피의 선발대 II",
+    "japanese": "エントロピーの使者II"
+  },
+  "descriptionKey": {
+    "key": "SinsData_descriptionKey-8b2e548b354e12dd-63c7fb47617100d4383c9b3caa6e6877-v2",
+    "english": "<b>Seraph</b> enchants your units with [sap] [effect0.power] and adds a <b>Curse of Entropy</b> to your deck on [resolve].",
+    "french": "<b>Séraphin</b> enchante vos unités avec [sap] [effect0.power] et ajoute une <b>Malédiction d'Entropie</b> à votre deck à chaque [resolve].",
+    "german": "<b>Seraph</b> verzaubert deine Einheiten mit [sap] [effect0.power] und fügt deinem Deck bei [resolve] <b>Entropies Fluch</b> hinzu.",
+    "russian": "<b>Серафим</b> накладывает на ваших бойцов [sap] х[effect0.power] и добавляет в руку <b>Проклятие Энтропии</b> при <b>Решимости</b>.",
+    "portuguese": "<b>Serafim</b> encanta suas unidades com [sap] [effect0.power] e adiciona uma <b>Maldição da Entropia</b> ao seu deck em [resolve].",
+    "chinese": "<b>炽天使</b>对你的单位施加 [sap] [effect0.power]，[resolve] 时将一张<b>混乱泰坦的诅咒</b>加入你的卡组。",
+    "spanish": "<b>Seraph</b> debilita a tus unidades con [sap] [effect0.power] y añade una <b>Maldición entrópica</b> a tu mazo al activar [resolve].",
+    "chinese_traditional": "<b>撒拉弗</b>會在[resolve]時，對你的單位施[sap][effect0.power]並在你的牌組中增加一張<b>熵之詛咒</b>。",
+    "korean": "<b>세라핌</b>은 아군 유닛들에게 [sap] [effect0.power] 효과를 부여하고, [resolve] 시 <b>엔트로피의 저주</b>를 덱에 추가합니다.",
+    "japanese": "<b>セラフ</b>が自軍のユニットに[sap] [effect0.power]をエンチャントし、[resolve]時に<b>エントロピーの呪い</b>をデッキに追加する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddCardsNull",
+      "paramCardPool": "TFB_EntropyBlightPool"
+    },
+    {
+      "relicEffectClassName": "RelicEffectOnSpawnHeroSubstitution",
+      "additionalTooltips": [
+        {
+          "statusId": "debuff",
+          "trigger": "post_combat",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ]
+    }
+  ]
+}

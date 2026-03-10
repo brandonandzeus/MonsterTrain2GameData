@@ -1,0 +1,158 @@
+{
+  "id": "Level1BattleHorde",
+  "name": "Level1BattleHorde",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-57082b99fd3f7929-1622e66db62e05549b67b8e30f02fed4-v2",
+    "english": "Forsaken Few",
+    "french": "Les Délaissés",
+    "german": "Verlassene Minderheit",
+    "russian": "Группа отреченных",
+    "portuguese": "Minoria Rejeitada",
+    "chinese": "少数被遗忘者",
+    "spanish": "Los olvidados",
+    "chinese_traditional": "被遺棄的少數",
+    "korean": "소수의 버림받은 자",
+    "japanese": "わずかな許されし者たち"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-7eae81e1d820a53a-1622e66db62e05549b67b8e30f02fed4-v2",
+    "english": "The Forsaken wander the streets, seeking their own Blessing. Thin their number quickly.",
+    "french": "Les Délaissés errent dans les rues, à la recherche de leur propre bénédiction. Décimez-les.",
+    "german": "Die Verlassenen ziehen auf der Suche nach ihrem eigenen Segen durch die Straßen. Erledige sie schnell.",
+    "russian": "Отреченные бродят по улицам в поисках своего благословения. Избавьтесь от них в два счета.",
+    "portuguese": "Os Rejeitados vagam pelas ruas, buscando a própria Bênção. Diminua o número deles rapidamente.",
+    "chinese": "被遗忘者游荡在街上，寻求属于自己的祝福。快速削减他们的数量。",
+    "spanish": "Los olvidados vagan por las calles en busca de su propia bendición. Reduce su número rápidamente.",
+    "chinese_traditional": "被遺棄者徘徊在街道上，尋求屬於自己的祝福。請迅速削減他們的數量。",
+    "korean": "버림받은 자는 전역을 배회하며 자신만의 축복을 찾는다. 그들의 숫자를 빠르게 줄여야 한다.",
+    "japanese": "フォーセイクンたちが祝福を求めて徘徊している。素早く数を減らそう。"
+  },
+  "bossVariant": {
+    "id": "Level1Bosses",
+    "bossVariants": [
+      "Boss_Level1_Basic",
+      "Boss_Level1_Defensive"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "HordeT1_Forsaken",
+    "HordeT1_Forsaken"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "HordeT1_Forsaken"
+              },
+              {
+                "characterData": "HordeT1_Forsaken",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "HordeT1_Forsaken"
+              },
+              {
+                "characterData": "HordeT1_Forsaken"
+              },
+              {
+                "characterData": "HordeT1_Forsaken"
+              },
+              {
+                "characterData": "HordeT1_Forsaken",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-59f931f96243c8b8-1622e66db62e05549b67b8e30f02fed4-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "characterDataContainerList": [
+              {
+                "characterData": "HordeT1_Forsaken",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HordeT1_Forsaken",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HordeT1_Forsaken",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "Boss_Level1_Basic",
+                "useBossCharacter": true
+              },
+              {
+                "characterData": "HordeT1_Forsaken"
+              },
+              {
+                "characterData": "HordeT1_Forsaken"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

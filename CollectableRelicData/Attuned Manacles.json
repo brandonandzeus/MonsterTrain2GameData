@@ -1,0 +1,89 @@
+{
+  "id": "IncantTriggeredByUnitAbilities",
+  "name": "Attuned Manacles",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-5c5e0b3274117cda-741b64067709ce049bcc8eb7c8f09596-v2",
+    "english": "Attuned Manacles",
+    "french": "Menottes harmonisées",
+    "german": "Angepasste Fesseln",
+    "russian": "Раскаленные оковы",
+    "portuguese": "Algemas Afinadas",
+    "chinese": "协调镣铐",
+    "spanish": "Grilletes armónicos",
+    "chinese_traditional": "諧調枷鎖",
+    "korean": "조율의 족쇄",
+    "japanese": "同調の手錠"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-6575d91deff0d609-741b64067709ce049bcc8eb7c8f09596-v2",
+    "english": "The first time you summon a Whelp each turn, reduce the [cooldown] of friendly units on all floors by [effect0.power].",
+    "french": "À chaque tour, la première fois que vous invoquez un dragonnet, réduisez la [cooldown] des unités alliées à tous les niveaux de [effect0.power].",
+    "german": "Wenn du das erste Mal pro Zug einen Zögling herbeirufst, reduzierst du die [cooldown] von verbündeten Einheiten auf allen Ebenen um [effect0.power].",
+    "russian": "Каждый ход при призыве первого Дракончика, [cooldown] союзников на всех этажах уменьшается на [effect0.power].",
+    "portuguese": "Na primeira vez que você invocar um Filhote em cada turno, reduzirá o [cooldown] das unidades aliadas em todos os andares em [effect0.power].",
+    "chinese": "当你每回合首次召唤幼龙单位时，所有层的友方单位的[cooldown]缩短 [effect0.power]。",
+    "spanish": "Cada turno, la primera vez que invoques una Cría, reduce la [cooldown] de las unidades aliadas de todos los pisos en [effect0.power].",
+    "chinese_traditional": "每回合第一次召喚幼龍時，使所有樓層的友方單位[cooldown]減少[effect0.power]。",
+    "korean": "매 턴 처음으로 해츨링 유닛 하나를 소환하면, 모든 층의 아군 유닛들의 [cooldown]이 [effect0.power]만큼 감소합니다.",
+    "japanese": "毎ターン、小竜ユニットの最初の召喚時にすべてのフロアの味方ユニットの[cooldown]が[effect0.power]減少する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-6d661198fbf6abd2-741b64067709ce049bcc8eb7c8f09596-v2",
+      "english": "For the Pyreborne who desire to lead lives governed by love and joy instead of gold, their fate lies in imprisonment. They are left to tend to Fhyra’s temple and never seen again.",
+      "french": "Les Draconides qui souhaitent mener une vie gouvernée par l'amour et la joie plutôt que par l'or sont condamnés à l'emprisonnement. On les laisse s'occuper du temple de Fhyra et on ne les revoit plus jamais.",
+      "german": "Das Schicksal der Höllenglutkinder, deren Leben von Liebe statt von Gold bestimmt werden sollte, liegt in der Gefangenschaft. Sie müssen sich um Fhyras Tempel kümmern und werden nie wieder gesehen.",
+      "russian": "Пеклорожденных, желающих жить, во имя любви и радости, а не золота, ждет заточение. Их отправляют работать в храм Фиры без возможности вернуться назад.",
+      "portuguese": "A prisão é o destino dos Píricos que desejam levar uma vida regida pelo amor e pela alegria em vez do ouro. Eles são deixados para cuidar do templo de Fhyra e nunca mais são vistos.",
+      "chinese": "有些薪龙族渴望生活的主旋律是爱与欢乐而非黄金，他们的命运就是被囚禁。他们被派去打理菲拉的神殿，再也没有人见过他们。",
+      "spanish": "A los Hijos de la Pira que desean vidas llenas de amor y felicidad en lugar de oro solo les espera la prisión. Se los envía a mantener el templo de Fhyra y nunca se los vuelve a ver.",
+      "chinese_traditional": "對於那些渴望過著受愛與歡樂而非被黃金支配的生活的火焰之子，他們注定要遭到監禁。他們被留下來照料費拉的神廟，再也沒人見過他們。",
+      "korean": "황금 대신 사랑과 즐거움을 추구하는 화로의 후예의 말로는 감옥행이다. 이들은 휘라의 신전으로 이송되며, 두 번 다시 살아서 돌아오지 못한다.",
+      "japanese": "黄金ではなく愛と喜びに支配された人生を送りたいと願う火竜族は投獄される運命にある。彼らはファイラの寺院の元へと送られ、その姿は二度と見られることはない。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddEffectOnUnitSpawn",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "tower",
+          "targetTeamType": "monsters",
+          "paramStatusEffects": [
+            {
+              "statusId": "cooldown",
+              "count": -2
+            }
+          ]
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "trigger": "on_spawn",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Whelp"
+    }
+  ],
+  "unlockLevel": 2
+}

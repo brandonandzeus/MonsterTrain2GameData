@@ -1,0 +1,58 @@
+{
+  "id": "RandomCardCostOnDraw",
+  "name": "Volatile Gauge",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-1d43c81e3c8fc45a-4c655a288d373e048b28bff20a6ed979-v2",
+    "english": "Volatile Gauge",
+    "french": "Jauge capricieuse",
+    "german": "Ungenaues Messgerät",
+    "russian": "Капризный вентиль",
+    "portuguese": "Medidor Volátil",
+    "chinese": "不稳定计数器",
+    "spanish": "Medidor volátil",
+    "chinese_traditional": "不穩定量表",
+    "korean": "변덕스러운 측정기",
+    "japanese": "気まぐれなゲージ"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-8b70b38639da20d0-4c655a288d373e048b28bff20a6ed979-v2",
+    "english": "When you draw any non-Champion card, its cost is randomized between 0[ember] and 3[ember]. Draw +[effect1.power] each turn.",
+    "french": "Lorsque vous tirez une carte hors champion, son coût varie entre 0[ember] et 3[ember]. Piochez +[effect1.power] carte(s) à chaque tour.",
+    "german": "Wenn du eine Nicht-Champion-Karte ziehst, werden ihre Kosten zufällig zwischen 0[ember] und 3[ember] festgelegt. Ziehe jeden Zug +[effect1.power] Karte(n).",
+    "russian": "Когда вы берете любую карту, кроме карты Героя, ее стоимость колеблется от 0[ember] до 3[ember]. Берите +[effect1.power] каждый ход.",
+    "portuguese": "Quando você comprar qualquer carta diferente de Campeão, ela custará um valor aleatório entre 0[ember] e 3[ember]. Compre +[effect1.power] a cada turno.",
+    "chinese": "每当你抽到一张非勇者卡牌时，随机将这张牌的费用变为 0[ember] 至 3[ember] 之间。每回合抽 +[effect1.power] 张牌。",
+    "spanish": "Cuando robas cualquier carta que no sea de campeón, su coste pasa a ser entre 0[ember] y 3[ember] al azar. Roba +[effect1.power] cada turno.",
+    "chinese_traditional": "當你抽到任何非勇士卡牌時，其費用在0[ember]和3[ember]之間隨機決定。每回合多抽[effect1.power]張牌。",
+    "korean": "영웅 이외의 카드를 뽑을 때마다 카드의 비용이 0[ember]과 3[ember] 사이에서 랜덤으로 결정됩니다. 매 턴마다 +[effect1.power]장을 더 뽑습니다.",
+    "japanese": "チャンピオンでないカードをドローすると、[ember]0から[ember]3のランダムなコストになる。毎ターン、ドロー+[effect1.power]。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-a2a0446b22638afe-4c655a288d373e048b28bff20a6ed979-v2",
+      "english": "One of the first instruments I developed for the Boneshaker. Regrettably, it’s not very accurate and delivers entirely random heat output from the furnace.",
+      "french": "L'un des premiers instruments que j'ai développés pour le Hurleflammes. Malheureusement, il n'est pas très précis et offre un rendement calorifique complètement aléatoire.",
+      "german": "Eins der ersten Instrumente, die ich für den Knochenrüttler entwickelt habe. Leider ist es nicht besonders genau, sodass die Hitzezufuhr aus dem Kessel extrem unzuverlässig ist.",
+      "russian": "Одно из первых устройств, придуманных мной для «Костолома». К сожалению, оно выполнено недостаточно аккуратно и получает от топки нестабильный нагрев.",
+      "portuguese": "Um dos primeiros instrumentos que desenvolvi para o Ossuário. Infelizmente, não é muito preciso e causa uma saída de calor inteiramente aleatória da fornalha.",
+      "chinese": "这是我为老爷车号最早开发的一批设备。遗憾的是，它的精度不怎么样，只能从炉子中输出完全随机的热量。",
+      "spanish": "Uno de los primeros instrumentos que desarrollé para el Sacudehuesos. Por desgracia, resulta muy impreciso y su horno emite una cantidad de calor distinta cada vez que se utiliza.",
+      "chinese_traditional": "我為碎骨者開發的第一批儀器。遺憾的是，它不太準確，只能從熔爐輸出完全隨機的熱量。",
+      "korean": "본쉐이커를 만들면서 처음 고안한 기기 중 하나. 안타깝게도 정밀도가 떨어져 용광로의 열이 예측할 수 없이 들쭉날쭉하게 방출되곤 했다.",
+      "japanese": "ボーンシェイカー用に私が最初に開発した機器の1つだ。残念ながら、精度があまり高くなく、火炉から出力される熱はまったく予測できない。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectRandomCardCostOnDraw",
+      "paramMaxInt": 4,
+      "paramBool": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectChangeStartingHandSize",
+      "paramInt": 2
+    }
+  ],
+  "deprioritizeInFtueDrafts": true
+}

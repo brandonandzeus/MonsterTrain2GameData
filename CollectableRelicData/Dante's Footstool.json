@@ -1,0 +1,69 @@
+{
+  "id": "RandomTrainRoomCardFirstTurn",
+  "name": "Dante's Footstool",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-08c5d2b67c1eda54-62c71cb5703426f4c82ab97b4c31d368-v2",
+    "english": "Dante's Footstool",
+    "french": "Tabouret de Dante",
+    "german": "Dantes Schemel",
+    "russian": "Табурет Данте",
+    "portuguese": "Escabelo de Dante",
+    "chinese": "但丁的脚凳",
+    "spanish": "Taburete de Dante",
+    "chinese_traditional": "但丁的腳凳",
+    "korean": "단테의 발판",
+    "japanese": "ダンテのオットマン"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-78fa87364d850dc0-62c71cb5703426f4c82ab97b4c31d368-v2",
+    "english": "On [deployphase], draw a Room card from your deck. Reduce its cost to 0[ember].",
+    "french": "Pendant la [deployphase], piochez une carte de salle dans le deck. Elle coûte 0[ember].",
+    "german": "Ziehe in der [deployphase] eine Raumkarte aus deinem Deck. Reduziere ihre Kosten auf 0[ember].",
+    "russian": "[deployphase]: дает карту комнат из вашей колоды, снижая ее стоимость до 0[ember].",
+    "portuguese": "Na [deployphase], compra uma Carta de Sala do seu deck. Reduz o custo dela para 0[ember].",
+    "chinese": "在 [deployphase] 时，从你的卡组中抽一张房间卡。使其费用降低至 0[ember]。",
+    "spanish": "En la [deployphase], roba una carta de sala de tu mazo. Reduce su coste a 0[ember].",
+    "chinese_traditional": "在[deployphase]時，從你的牌組中抽一張房間牌。將其費用降為0[ember]。",
+    "korean": "[deployphase]가 되면 덱에서 객실 카드를 한 장 뽑습니다. 뽑은 카드의 비용이 0[ember]이 됩니다.",
+    "japanese": "[deployphase]時、デッキからルームカードをドローし、そのコストを0[ember]に減少させる。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-74aac20306bf9849-62c71cb5703426f4c82ab97b4c31d368-v2",
+      "english": "A strange object that somehow always seems to appear in a room before Dante himself.",
+      "french": "Un objet étrange qui semble toujours apparaître dans une pièce avant Dante lui-même.",
+      "german": "Ein seltsamer Gegenstand, der immer zu erscheinen scheint, bevor Dante den Raum betritt.",
+      "russian": "Странный объект, который появляется в комнате раньше самого Данте.",
+      "portuguese": "Um objeto estranho que, de alguma forma, sempre aparece nas salas diante do próprio Dante.",
+      "chinese": "一个奇怪的物体，不知为何，总是会出现在但丁面前。",
+      "spanish": "Un objeto extraño que, por algún motivo, siempre aparece en una sala antes que Dante.",
+      "chinese_traditional": "一個奇怪的物體，似乎總是在但丁本人之前出現在房間裡。",
+      "korean": "이 이상한 물체는 항상 단테가 있는 곳의 바로 앞쪽 객실에 모습을 드러낸다.",
+      "japanese": "どういうわけか、ダンテ自身が登場する前に部屋にいつも現れる奇妙な物体。"
+    }
+  ],
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectDrawOnPreOpeningDrawCascade",
+      "paramCardFilter": {
+        "id": "RandomTrainRoomCardFirstTurn_CardMask",
+        "cardType": "room",
+        "excludedCardTraitsOperator": "and",
+        "excludedCardTraits": [
+          "CardTraitDrawInDeploymentPhase"
+        ]
+      },
+      "paramCardFilterSecondary": {
+        "id": "RandomTrainRoomCardFirstTurn_CardMask_DeployableOk",
+        "cardType": "room"
+      },
+      "paramCardUpgradeData": {
+        "id": "RandomEquipmentOrTrainCardFirstTurn_Upgrade",
+        "costReduction": 99
+      },
+      "paramInt": 1,
+      "paramBool": true
+    }
+  ]
+}

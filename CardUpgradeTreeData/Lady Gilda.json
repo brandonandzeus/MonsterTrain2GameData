@@ -1,0 +1,997 @@
+{
+  "id": "UpgradeTreePyreborne2",
+  "name": "Lady Gilda",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "EggAtStart1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-7043fd2cd117b1f5-8461a4a92ac408c43bc8c50d7a7d1f59-v2",
+            "english": "Gildmother",
+            "french": "Mère d'or",
+            "german": "Gildenmutter",
+            "russian": "Златомать",
+            "portuguese": "Mãe Adornada",
+            "chinese": "金蛋之母",
+            "spanish": "Madre de oro",
+            "chinese_traditional": "鍍金之母",
+            "korean": "황금의 대모",
+            "japanese": "ギルドマザー"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "trample",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-9009ef29592bad5d-8461a4a92ac408c43bc8c50d7a7d1f59-v2",
+                "english": "Summon a Gilded Egg.",
+                "french": "Invoque un Dorœuf.",
+                "german": "Rufe ein Vergoldetes Ei.",
+                "russian": "Призывает Золотое яйцо.",
+                "portuguese": "Invoca um Ovo Folheado a Ouro.",
+                "chinese": "召唤一枚镀金龙蛋。",
+                "spanish": "Invoca un Huevo dorado.",
+                "chinese_traditional": "召喚一枚鍍金蛋。",
+                "korean": "금박 알 하나를 소환합니다.",
+                "japanese": "黄金の卵Iを召喚する。"
+              },
+              "trigger": "on_spawn",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonster",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCharacterData": {
+                    "id": "MonsterGildedEgg",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-1f8d71cb111fd8d8-34b53aa974e2b554b96dbdff774101d2-v2",
+                      "english": "Gilded Egg",
+                      "french": "Dorœuf",
+                      "german": "Vergoldetes Ei",
+                      "russian": "Золотое яйцо",
+                      "portuguese": "Ovo Folheado a Ouro",
+                      "chinese": "镀金龙蛋",
+                      "spanish": "Huevo dorado",
+                      "chinese_traditional": "鍍金蛋",
+                      "korean": "금박 알",
+                      "japanese": "黄金の卵I"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GildedEgg.prefab",
+                      "m_AssetGUID": "c454e2a1d95b22245bdf8e328a48ca28"
+                    },
+                    "triggers": [
+                      {
+                        "descriptionKey": {
+                          "key": "CharacterData_descriptionKey-e99dd810db144c39-34b53aa974e2b554b96dbdff774101d2-v2",
+                          "english": "[retreat].",
+                          "french": "[retreat].",
+                          "german": "[retreat].",
+                          "russian": "[retreat].",
+                          "portuguese": "[retreat].",
+                          "chinese": "[retreat]。",
+                          "spanish": "[retreat].",
+                          "chinese_traditional": "[retreat]。",
+                          "korean": "[retreat].",
+                          "japanese": "[retreat]。"
+                        },
+                        "trigger": "on_spawn",
+                        "effects": [
+                          {
+                            "effectStateName": "CardEffectFloorRearrange",
+                            "targetMode": "self",
+                            "targetTeamType": "none",
+                            "paramInt": 1
+                          }
+                        ]
+                      },
+                      {
+                        "descriptionKey": {
+                          "key": "CharacterData_descriptionKey-edb7e672a06b7355-34b53aa974e2b554b96dbdff774101d2-v2",
+                          "english": "Gain [effect0.power][dragonshoardicon].",
+                          "french": "Octroie [effect0.power][dragonshoardicon].",
+                          "german": "Erhalte [effect0.power][dragonshoardicon].",
+                          "russian": "Дает [effect0.power][dragonshoardicon].",
+                          "portuguese": "Recebe [effect0.power][dragonshoardicon].",
+                          "chinese": "获得[effect0.power][dragonshoardicon]。",
+                          "spanish": "Obtienes [effect0.power][dragonshoardicon].",
+                          "chinese_traditional": "獲得[effect0.power][dragonshoardicon]。",
+                          "korean": "[effect0.power][dragonshoardicon]를 획득합니다.",
+                          "japanese": "[effect0.power][dragonshoardicon]を得る。"
+                        },
+                        "trigger": "on_encounter_complete",
+                        "effects": [
+                          {
+                            "effectStateName": "CardEffectAdjustDragonsHoard",
+                            "targetMode": "room",
+                            "targetTeamType": "none",
+                            "additionalTooltips": [
+                              {
+                                "descriptionKey": {
+                                  "key": "HudTooltip_DragonsHoardInactive_Body",
+                                  "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                                  "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                                  "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                                  "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                                  "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                                  "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                                  "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                                  "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                                  "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                                  "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                                },
+                                "titleKey": {
+                                  "key": "HudTooltip_DragonsHoard_Title",
+                                  "english": "[dragonshoardicon]Dragon's Hoard",
+                                  "french": "[dragonshoardicon]Trésor du dragon",
+                                  "german": "[dragonshoardicon]Drachenschatz",
+                                  "russian": "[dragonshoardicon] Драконий клад",
+                                  "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                                  "chinese": "[dragonshoardicon]龙族宝藏",
+                                  "spanish": "[dragonshoardicon]Tesoro de dragón",
+                                  "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                                  "korean": "[dragonshoardicon]드래곤의 재보",
+                                  "japanese": "竜の財宝[dragonshoardicon]"
+                                },
+                                "style": "default"
+                              }
+                            ],
+                            "paramInt": 2
+                          }
+                        ]
+                      }
+                    ],
+                    "size": 1,
+                    "health": 5,
+                    "attackDamage": 0
+                  },
+                  "additionalTooltips": [
+                    {
+                      "trigger": "on_encounter_complete",
+                      "style": "default",
+                      "isTriggerTooltip": true
+                    },
+                    {
+                      "statusId": "rooted",
+                      "descriptionKey": {
+                        "key": "CardEffectFloorRearrange_BackSlot_TooltipText",
+                        "english": "Move to the back of the floor.",
+                        "french": "Déplace au fond du niveau.",
+                        "german": "Bewege dich auf der Ebene nach hinten.",
+                        "russian": "Двигает в конец этажа.",
+                        "portuguese": "Move para o fundo do andar.",
+                        "chinese": "移动到该层后方。",
+                        "spanish": "Se coloca en última posición.",
+                        "chinese_traditional": "移至本層後排。",
+                        "korean": "동일 층 후열로 이동합니다.",
+                        "japanese": "フロアの後列に移動する。"
+                      },
+                      "trigger": "on_encounter_complete",
+                      "titleKey": {
+                        "key": "CardEffectFloorRearrange_BackSlot_TooltipTitle",
+                        "english": "Retreat",
+                        "french": "Retraite",
+                        "german": "Rückzug",
+                        "russian": "Отступление",
+                        "portuguese": "Recuar",
+                        "chinese": "后退",
+                        "spanish": "Retirada",
+                        "chinese_traditional": "撤退",
+                        "korean": "후퇴",
+                        "japanese": "後退"
+                      },
+                      "allowSecondaryPlacement": true
+                    }
+                  ],
+                  "paramBool": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 25,
+          "bonusHP": 40,
+          "bonusSize": 1
+        },
+        {
+          "id": "EggAtStart2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-a7d683a08a065c3f-b546c2cb0e57e9c49a3e87f0b0f1335a-v2",
+            "english": "Gildmother II",
+            "french": "Mère d'or II",
+            "german": "Gildenmutter II",
+            "russian": "Златомать II",
+            "portuguese": "Mãe Adornada II",
+            "chinese": "金蛋之母 II",
+            "spanish": "Madre de oro II",
+            "chinese_traditional": "鍍金之母II",
+            "korean": "황금의 대모 II",
+            "japanese": "ギルドマザーII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "trample",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-00548509984997c3-b546c2cb0e57e9c49a3e87f0b0f1335a-v2",
+                "english": "Summon a Gildeder Egg.",
+                "french": "Invoque un <nobr>Dorœuf +.</nobr>",
+                "german": "Rufe ein Vergoldeteres Ei.",
+                "russian": "Призывает Очень золотое яйцо.",
+                "portuguese": "Invoca um Ovo Banhado a Ouro.",
+                "chinese": "召唤一枚半足金龙蛋。",
+                "spanish": "Invoca un Huevo muy dorado.",
+                "chinese_traditional": "召喚一枚高級鍍金蛋。",
+                "korean": "고급 금박 알 하나를 소환합니다.",
+                "japanese": "黄金の卵IIを召喚する。"
+              },
+              "trigger": "on_spawn",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonster",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCharacterData": {
+                    "id": "MonsterGildederEgg",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-7f690cae6d74794a-7fe81b95cdcdc6e4f80fe8fc2c185ba9-v2",
+                      "english": "Gildeder Egg",
+                      "french": "<nobr>Dorœuf +</nobr>",
+                      "german": "Vergoldeteres Ei",
+                      "russian": "Очень золотое яйцо",
+                      "portuguese": "Ovo Banhado a Ouro",
+                      "chinese": "半足金龙蛋",
+                      "spanish": "Huevo muy dorado",
+                      "chinese_traditional": "高級鍍金蛋",
+                      "korean": "고급 금박 알",
+                      "japanese": "黄金の卵II"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GildedEgg.prefab",
+                      "m_AssetGUID": "c454e2a1d95b22245bdf8e328a48ca28"
+                    },
+                    "triggers": [
+                      {
+                        "descriptionKey": {
+                          "key": "CharacterData_descriptionKey-0519b542d03faac7-7fe81b95cdcdc6e4f80fe8fc2c185ba9-v2",
+                          "english": "[retreat].",
+                          "french": "[retreat].",
+                          "german": "[retreat].",
+                          "russian": "[retreat].",
+                          "portuguese": "[retreat].",
+                          "chinese": "[retreat]。",
+                          "spanish": "[retreat].",
+                          "chinese_traditional": "[retreat]。",
+                          "korean": "[retreat].",
+                          "japanese": "[retreat]。"
+                        },
+                        "trigger": "on_spawn",
+                        "effects": [
+                          {
+                            "effectStateName": "CardEffectFloorRearrange",
+                            "targetMode": "self",
+                            "targetTeamType": "none",
+                            "paramInt": 1
+                          }
+                        ]
+                      },
+                      {
+                        "descriptionKey": {
+                          "key": "CharacterData_descriptionKey-b61101074c47491a-7fe81b95cdcdc6e4f80fe8fc2c185ba9-v2",
+                          "english": "Gain [effect0.power][dragonshoardicon] and [effect1.power][coin].",
+                          "french": "Octroie [effect0.power][dragonshoardicon] et [effect1.power][coin].",
+                          "german": "Erhalte [effect0.power][dragonshoardicon] und [effect1.power][coin].",
+                          "russian": "Дает [effect0.power][dragonshoardicon] и [effect1.power][coin].",
+                          "portuguese": "Recebe [effect0.power][dragonshoardicon] e [effect1.power][coin].",
+                          "chinese": "获得 [effect0.power][dragonshoardicon]，[effect1.power][coin]。",
+                          "spanish": "Obtienes [effect0.power][dragonshoardicon] y [effect1.power][coin].",
+                          "chinese_traditional": "獲得[effect0.power][dragonshoardicon]和[effect1.power][coin]。",
+                          "korean": "[effect0.power][dragonshoardicon] 및 [effect1.power][coin]을 획득합니다.",
+                          "japanese": "[effect0.power][dragonshoardicon]と[effect1.power][coin]を得る。"
+                        },
+                        "trigger": "on_encounter_complete",
+                        "effects": [
+                          {
+                            "effectStateName": "CardEffectAdjustDragonsHoard",
+                            "targetMode": "room",
+                            "targetTeamType": "none",
+                            "additionalTooltips": [
+                              {
+                                "descriptionKey": {
+                                  "key": "HudTooltip_DragonsHoardInactive_Body",
+                                  "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                                  "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                                  "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                                  "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                                  "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                                  "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                                  "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                                  "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                                  "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                                  "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                                },
+                                "titleKey": {
+                                  "key": "HudTooltip_DragonsHoard_Title",
+                                  "english": "[dragonshoardicon]Dragon's Hoard",
+                                  "french": "[dragonshoardicon]Trésor du dragon",
+                                  "german": "[dragonshoardicon]Drachenschatz",
+                                  "russian": "[dragonshoardicon] Драконий клад",
+                                  "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                                  "chinese": "[dragonshoardicon]龙族宝藏",
+                                  "spanish": "[dragonshoardicon]Tesoro de dragón",
+                                  "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                                  "korean": "[dragonshoardicon]드래곤의 재보",
+                                  "japanese": "竜の財宝[dragonshoardicon]"
+                                },
+                                "style": "default"
+                              }
+                            ],
+                            "paramInt": 4
+                          },
+                          {
+                            "effectStateName": "CardEffectRewardGold",
+                            "targetMode": "room",
+                            "targetTeamType": "none",
+                            "paramInt": 50
+                          }
+                        ]
+                      }
+                    ],
+                    "size": 1,
+                    "health": 15,
+                    "attackDamage": 0
+                  },
+                  "additionalTooltips": [
+                    {
+                      "trigger": "on_encounter_complete",
+                      "style": "default",
+                      "isTriggerTooltip": true
+                    },
+                    {
+                      "descriptionKey": {
+                        "key": "CardEffectFloorRearrange_BackSlot_TooltipText",
+                        "english": "Move to the back of the floor.",
+                        "french": "Déplace au fond du niveau.",
+                        "german": "Bewege dich auf der Ebene nach hinten.",
+                        "russian": "Двигает в конец этажа.",
+                        "portuguese": "Move para o fundo do andar.",
+                        "chinese": "移动到该层后方。",
+                        "spanish": "Se coloca en última posición.",
+                        "chinese_traditional": "移至本層後排。",
+                        "korean": "동일 층 후열로 이동합니다.",
+                        "japanese": "フロアの後列に移動する。"
+                      },
+                      "trigger": "on_encounter_complete",
+                      "titleKey": {
+                        "key": "CardEffectFloorRearrange_BackSlot_TooltipTitle",
+                        "english": "Retreat",
+                        "french": "Retraite",
+                        "german": "Rückzug",
+                        "russian": "Отступление",
+                        "portuguese": "Recuar",
+                        "chinese": "后退",
+                        "spanish": "Retirada",
+                        "chinese_traditional": "撤退",
+                        "korean": "후퇴",
+                        "japanese": "後退"
+                      },
+                      "allowSecondaryPlacement": true
+                    }
+                  ],
+                  "paramBool": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 50,
+          "bonusHP": 70,
+          "bonusSize": 1
+        },
+        {
+          "id": "EggAtStart3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-2e41ffbc33696efc-9f1799971b976ab4f9b7e27e2ad631d8-v2",
+            "english": "Gildmother III",
+            "french": "Mère d'or III",
+            "german": "Gildenmutter III",
+            "russian": "Златомать III",
+            "portuguese": "Mãe Adornada III",
+            "chinese": "金蛋之母 III",
+            "spanish": "Madre de oro III",
+            "chinese_traditional": "鍍金之母III",
+            "korean": "황금의 대모 III",
+            "japanese": "ギルドマザーIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "trample",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-44f1e2ae6b5c59fb-9f1799971b976ab4f9b7e27e2ad631d8-v2",
+                "english": "Summon a Gildedest Egg.",
+                "french": "Invoque un <nobr>Dorœuf max.</nobr>",
+                "german": "Rufe ein Vergoldetestes Ei.",
+                "russian": "Призывает Золотейшее яйцо.",
+                "portuguese": "Invoca um Ovo de Ouro.",
+                "chinese": "召唤一枚足金龙蛋。",
+                "spanish": "Invoca un Huevo doradísimo.",
+                "chinese_traditional": "召喚一枚至尊鍍金蛋。",
+                "korean": "최고급 금박 알 하나를 소환합니다.",
+                "japanese": "黄金の卵IIIを召喚する。"
+              },
+              "trigger": "on_spawn",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonster",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCharacterData": {
+                    "id": "MonsterGildedestEgg",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-29e485ad45e16b2f-bde354db39c9892498b750d93041c751-v2",
+                      "english": "Gildedest Egg",
+                      "french": "<nobr>Dorœuf max</nobr>",
+                      "german": "Vergoldetestes Ei",
+                      "russian": "Золотейшее яйцо",
+                      "portuguese": "Ovo de Ouro",
+                      "chinese": "足金龙蛋",
+                      "spanish": "Huevo doradísimo",
+                      "chinese_traditional": "至尊鍍金蛋",
+                      "korean": "최고급 금박 알",
+                      "japanese": "黄金の卵III"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GildedEgg.prefab",
+                      "m_AssetGUID": "c454e2a1d95b22245bdf8e328a48ca28"
+                    },
+                    "triggers": [
+                      {
+                        "descriptionKey": {
+                          "key": "CharacterData_descriptionKey-fabd25184b3150e5-bde354db39c9892498b750d93041c751-v2",
+                          "english": "[retreat].",
+                          "french": "[retreat].",
+                          "german": "[retreat].",
+                          "russian": "[retreat].",
+                          "portuguese": "[retreat].",
+                          "chinese": "[retreat]。",
+                          "spanish": "[retreat].",
+                          "chinese_traditional": "[retreat]。",
+                          "korean": "[retreat].",
+                          "japanese": "[retreat]。"
+                        },
+                        "trigger": "on_spawn",
+                        "effects": [
+                          {
+                            "effectStateName": "CardEffectFloorRearrange",
+                            "targetMode": "self",
+                            "targetTeamType": "none",
+                            "paramInt": 1
+                          }
+                        ]
+                      },
+                      {
+                        "descriptionKey": {
+                          "key": "CharacterData_descriptionKey-57555efa8b1e3826-bde354db39c9892498b750d93041c751-v2",
+                          "english": "Gain [effect0.power][dragonshoardicon] and [effect1.power][coin].",
+                          "french": "Octroie [effect0.power][dragonshoardicon] et [effect1.power][coin].",
+                          "german": "Erhalte [effect0.power][dragonshoardicon] und [effect1.power][coin].",
+                          "russian": "Дает [effect0.power][dragonshoardicon] и [effect1.power][coin].",
+                          "portuguese": "Recebe [effect0.power][dragonshoardicon] e [effect1.power][coin].",
+                          "chinese": "获得 [effect0.power][dragonshoardicon]，[effect1.power][coin]。",
+                          "spanish": "Obtienes [effect0.power][dragonshoardicon] y [effect1.power][coin].",
+                          "chinese_traditional": "獲得[effect0.power][dragonshoardicon]和[effect1.power][coin]。",
+                          "korean": "[effect0.power][dragonshoardicon], [effect1.power][coin]을 획득합니다.",
+                          "japanese": "[effect0.power][dragonshoardicon]と[effect1.power][coin]を得る。"
+                        },
+                        "trigger": "on_encounter_complete",
+                        "effects": [
+                          {
+                            "effectStateName": "CardEffectAdjustDragonsHoard",
+                            "targetMode": "room",
+                            "targetTeamType": "none",
+                            "additionalTooltips": [
+                              {
+                                "descriptionKey": {
+                                  "key": "HudTooltip_DragonsHoardInactive_Body",
+                                  "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                                  "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                                  "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                                  "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                                  "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                                  "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                                  "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                                  "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                                  "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                                  "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                                },
+                                "titleKey": {
+                                  "key": "HudTooltip_DragonsHoard_Title",
+                                  "english": "[dragonshoardicon]Dragon's Hoard",
+                                  "french": "[dragonshoardicon]Trésor du dragon",
+                                  "german": "[dragonshoardicon]Drachenschatz",
+                                  "russian": "[dragonshoardicon] Драконий клад",
+                                  "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                                  "chinese": "[dragonshoardicon]龙族宝藏",
+                                  "spanish": "[dragonshoardicon]Tesoro de dragón",
+                                  "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                                  "korean": "[dragonshoardicon]드래곤의 재보",
+                                  "japanese": "竜の財宝[dragonshoardicon]"
+                                },
+                                "style": "default"
+                              }
+                            ],
+                            "paramInt": 6
+                          },
+                          {
+                            "effectStateName": "CardEffectRewardGold",
+                            "targetMode": "room",
+                            "targetTeamType": "none",
+                            "paramInt": 400
+                          }
+                        ]
+                      }
+                    ],
+                    "size": 1,
+                    "health": 30,
+                    "attackDamage": 0
+                  },
+                  "additionalTooltips": [
+                    {
+                      "trigger": "on_encounter_complete",
+                      "style": "default",
+                      "isTriggerTooltip": true
+                    },
+                    {
+                      "descriptionKey": {
+                        "key": "CardEffectFloorRearrange_BackSlot_TooltipText",
+                        "english": "Move to the back of the floor.",
+                        "french": "Déplace au fond du niveau.",
+                        "german": "Bewege dich auf der Ebene nach hinten.",
+                        "russian": "Двигает в конец этажа.",
+                        "portuguese": "Move para o fundo do andar.",
+                        "chinese": "移动到该层后方。",
+                        "spanish": "Se coloca en última posición.",
+                        "chinese_traditional": "移至本層後排。",
+                        "korean": "동일 층 후열로 이동합니다.",
+                        "japanese": "フロアの後列に移動する。"
+                      },
+                      "trigger": "on_encounter_complete",
+                      "titleKey": {
+                        "key": "CardEffectFloorRearrange_BackSlot_TooltipTitle",
+                        "english": "Retreat",
+                        "french": "Retraite",
+                        "german": "Rückzug",
+                        "russian": "Отступление",
+                        "portuguese": "Recuar",
+                        "chinese": "后退",
+                        "spanish": "Retirada",
+                        "chinese_traditional": "撤退",
+                        "korean": "후퇴",
+                        "japanese": "後退"
+                      },
+                      "allowSecondaryPlacement": true
+                    }
+                  ],
+                  "paramBool": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 90,
+          "bonusHP": 130,
+          "bonusSize": 1
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "PyregelRevenge1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-3db8378ad19e7422-c7ca973eb13759a4fb502dc3824cdbc3-v2",
+            "english": "Bloat Matron",
+            "french": "Matrone boursouflée",
+            "german": "Aufgeblähte Oberin",
+            "russian": "Пышная матрона",
+            "portuguese": "Matrona Entumecida",
+            "chinese": "臃肿龙母",
+            "spanish": "Matrona abotargada",
+            "chinese_traditional": "膨脹母體",
+            "korean": "자만의 군주",
+            "japanese": "ブロート・マトロン"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-eea6d78aa0e3e5b9-c7ca973eb13759a4fb502dc3824cdbc3-v2",
+                "english": "Apply Pyregel [effect0.status0.power] to enemy units.",
+                "french": "Applique Pyrogel [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende Höllenglut-Gel [effect0.status0.power] auf gegnerische Einheiten an.",
+                "russian": "Накладывает на врагов Пеклогель х[effect0.status0.power].",
+                "portuguese": "Aplica Gel Pírico [effect0.status0.power] às unidades inimigas.",
+                "chinese": "对所有敌方单位施加薪火熔胶 [effect0.status0.power]。",
+                "spanish": "Añade Pirogel [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加火膠[effect0.status0.power]。",
+                "korean": "적 유닛들에게 화염 점액 [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに炉油[effect0.status0.power]を付与する。"
+              },
+              "trigger": "on_any_unit_death_on_floor",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "pyregel",
+                      "count": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-41716a0d6209b447-c7ca973eb13759a4fb502dc3824cdbc3-v2",
+                "english": "Whelp units cost [power][ember] on this floor.",
+                "french": "Les dragonnets coûtent [power][ember] à ce niveau.",
+                "german": "Zögling-Einheiten kosten auf dieser Ebene [power][ember].",
+                "russian": "Цена дракончиков на этом этаже: [power][ember].",
+                "portuguese": "As unidades de Filhote custam [power][ember] nesse andar.",
+                "chinese": "在本层中，幼龙单位的费用 [power][ember]。",
+                "spanish": "Las unidades Cría cuestan [power][ember] en este piso.",
+                "chinese_traditional": "在此樓層上，幼龍單位的費用為[power][ember]。",
+                "korean": "이 층의 해츨링 유닛 비용이 [power][ember]입니다.",
+                "japanese": "このフロアでの小竜ユニットのコストが[power][ember]になる。"
+              },
+              "roomStateModifierClassName": "RoomStateUnitCostModifier",
+              "paramInt": -1
+            }
+          ],
+          "bonusHP": 25
+        },
+        {
+          "id": "PyregelRevenge2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-ecc3a18da72ba037-b92c87b1f0e840441bf5429517458cd4-v2",
+            "english": "Bloat Matron II",
+            "french": "Matrone boursouflée II",
+            "german": "Aufgeblähte Oberin II",
+            "russian": "Пышная матрона II",
+            "portuguese": "Matrona Entumecida II",
+            "chinese": "臃肿龙母 II",
+            "spanish": "Matrona abotargada II",
+            "chinese_traditional": "膨脹母體II",
+            "korean": "자만의 군주 II",
+            "japanese": "ブロート・マトロンII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-0e9bac5af8a279e8-b92c87b1f0e840441bf5429517458cd4-v2",
+                "english": "Apply Pyregel [effect0.status0.power] to enemy units.",
+                "french": "Applique Pyrogel [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende Höllenglut-Gel [effect0.status0.power] auf gegnerische Einheiten an.",
+                "russian": "Накладывает на врагов Пеклогель х[effect0.status0.power].",
+                "portuguese": "Aplica Gel Pírico [effect0.status0.power] às unidades inimigas.",
+                "chinese": "对所有敌方单位施加薪火熔胶 [effect0.status0.power]。",
+                "spanish": "Añade Pirogel [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加火膠[effect0.status0.power]。",
+                "korean": "적 유닛들에게 화염 점액 [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに炉油[effect0.status0.power]を付与する。"
+              },
+              "trigger": "on_any_unit_death_on_floor",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "pyregel",
+                      "count": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-21255dfc6ba74e25-b92c87b1f0e840441bf5429517458cd4-v2",
+                "english": "Whelp units cost [power][ember] on this floor.",
+                "french": "Les dragonnets coûtent [power][ember] à ce niveau.",
+                "german": "Zögling-Einheiten kosten auf dieser Ebene [power][ember].",
+                "russian": "Цена дракончиков на этом этаже: [power][ember].",
+                "portuguese": "As unidades de Filhote custam [power][ember] nesse andar.",
+                "chinese": "在本层中，幼龙单位的费用 [power][ember]。",
+                "spanish": "Las unidades Cría cuestan [power][ember] en este piso.",
+                "chinese_traditional": "在此樓層上，幼龍單位的費用為[power][ember]。",
+                "korean": "이 층의 해츨링 유닛 비용이 [power][ember]입니다.",
+                "japanese": "このフロアでの小竜ユニットのコストが[power][ember]になる。"
+              },
+              "roomStateModifierClassName": "RoomStateUnitCostModifier",
+              "paramInt": -1
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 50
+        },
+        {
+          "id": "PyregelRevenge3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-c0b9bf9be27a7483-c6230b131ef0d8943919de55706bed8a-v2",
+            "english": "Bloat Matron III",
+            "french": "Matrone boursouflée III",
+            "german": "Aufgeblähte Oberin III",
+            "russian": "Пышная матрона III",
+            "portuguese": "Matrona Entumecida III",
+            "chinese": "臃肿龙母 III",
+            "spanish": "Matrona abotargada III",
+            "chinese_traditional": "膨脹母體III",
+            "korean": "자만의 군주 III",
+            "japanese": "ブロート・マトロンIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-89f148c5f6403b1e-c6230b131ef0d8943919de55706bed8a-v2",
+                "english": "Apply [pyregel] [effect0.status0.power] to enemy units.",
+                "french": "Inflige [pyregel] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [pyregel] [effect0.status0.power] auf gegnerische Einheiten an.",
+                "russian": "Накладывает [pyregel] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [pyregel] [effect0.status0.power] às unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [pyregel] [effect0.status0.power]。",
+                "spanish": "Añade [pyregel] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[pyregel][effect0.status0.power]。",
+                "korean": "적 유닛들에게 [pyregel] [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[pyregel] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "on_any_unit_death_on_floor",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "pyregel",
+                      "count": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-6a86e8b55793fd5d-c6230b131ef0d8943919de55706bed8a-v2",
+                "english": "Whelp units cost [power][ember] on this floor.",
+                "french": "Les dragonnets coûtent [power][ember] à ce niveau.",
+                "german": "Zögling-Einheiten kosten auf dieser Ebene [power][ember].",
+                "russian": "Цена дракончиков на этом этаже: [power][ember].",
+                "portuguese": "As unidades de Filhote custam [power][ember] nesse andar.",
+                "chinese": "在本层中，幼龙单位的费用 [power][ember]。",
+                "spanish": "Las unidades Cría cuestan [power][ember] en este piso.",
+                "chinese_traditional": "在此樓層上，幼龍單位的費用為[power][ember]。",
+                "korean": "이 층의 해츨링 유닛 비용이 [power][ember]입니다.",
+                "japanese": "このフロアでの小竜ユニットのコストが[power][ember]になる。"
+              },
+              "roomStateModifierClassName": "RoomStateUnitCostModifier",
+              "paramInt": -1
+            }
+          ],
+          "bonusDamage": 10,
+          "bonusHP": 80
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "AttackPerGold1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-73037f974317c416-4dd7f8d2fe2f20a438a3c2dcd583a3ea-v2",
+            "english": "Lady Avarice",
+            "french": "Dame Avarice",
+            "german": "Lady Habgier",
+            "russian": "Леди Алчность",
+            "portuguese": "Senhorita Avareza",
+            "chinese": "贪婪女士",
+            "spanish": "Dama de la avaricia",
+            "chinese_traditional": "貪婪女士",
+            "korean": "욕망의 여제",
+            "japanese": "レディ・アヴァリス"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-2bb9b90d6e1e45ca-4dd7f8d2fe2f20a438a3c2dcd583a3ea-v2",
+                "english": "Grant [avarice] [effect0.status0.power].",
+                "french": "Octroie [avarice] [effect0.status0.power].",
+                "german": "Verleiht [avarice] [effect0.status0.power].",
+                "russian": "Дает [avarice] х[effect0.status0.power].",
+                "portuguese": "Concede [avarice] [effect0.status0.power].",
+                "chinese": "获得 [avarice] [effect0.status0.power]。",
+                "spanish": "Añade [avarice] [effect0.status0.power].",
+                "chinese_traditional": "賦予[avarice][effect0.status0.power]。",
+                "korean": "[avarice] [effect0.status0.power] 효과를 부여합니다.",
+                "japanese": "[avarice] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "after_spawn_enchant",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectEnchant",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "avarice",
+                      "count": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 10
+        },
+        {
+          "id": "AttackPerGold2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-76ffa74775aa52c0-cdd7789c039fc994ab80afac9c7713e9-v2",
+            "english": "Lady Avarice II",
+            "french": "Dame Avarice II",
+            "german": "Lady Habgier II",
+            "russian": "Леди Алчность II",
+            "portuguese": "Senhorita Avareza II",
+            "chinese": "贪婪女士 II",
+            "spanish": "Dama de la avaricia II",
+            "chinese_traditional": "貪婪女士II",
+            "korean": "욕망의 여제 II",
+            "japanese": "レディ・アヴァリスII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-5fad65ff6e2282b0-cdd7789c039fc994ab80afac9c7713e9-v2",
+                "english": "Grant [avarice] [effect0.status0.power].",
+                "french": "Octroie [avarice] [effect0.status0.power].",
+                "german": "Verleiht [avarice] [effect0.status0.power].",
+                "russian": "Дается [avarice] х[effect0.status0.power].",
+                "portuguese": "Concede [avarice] [effect0.status0.power].",
+                "chinese": "获得 [avarice] [effect0.status0.power]。",
+                "spanish": "Añade [avarice] [effect0.status0.power].",
+                "chinese_traditional": "賦予[avarice][effect0.status0.power]。",
+                "korean": "[avarice] [effect0.status0.power] 효과를 부여합니다.",
+                "japanese": "[avarice] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "after_spawn_enchant",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectEnchant",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "avarice",
+                      "count": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-97d1f47c888b3b8e-cdd7789c039fc994ab80afac9c7713e9-v2",
+                "english": "+[power][attack] per [secondarypower][coin] you started the turn with.",
+                "french": "+[power][attack] par tranche de [secondarypower][coin] en début de tour.",
+                "german": "+[power][attack] pro [secondarypower][coin], die du zu Beginn des Zuges hattest.",
+                "russian": "+[power][attack] за каждое [secondarypower]-е [coin] в начале хода.",
+                "portuguese": "+[power][attack] para cada [secondarypower][coin] no início do turno.",
+                "chinese": "回合开始时，每拥有 [secondarypower][coin]，则+[power][attack]。",
+                "spanish": "+[power][attack] por cada [secondarypower][coin] que tuvieras al inicio del turno.",
+                "chinese_traditional": "回合開始時，每有[secondarypower][coin]獲得+[power][attack]。",
+                "korean": "턴 시작 시 가지고 있던 [secondarypower][coin]마다 +[power][attack]을 획득합니다.",
+                "japanese": "ターン開始時に、[secondarypower][coin]につき+[power][attack]。"
+              },
+              "roomStateModifierClassName": "RoomStateSelfDamagePerGoldModifier",
+              "paramInt": 10,
+              "paramInt2": 100
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 40
+        },
+        {
+          "id": "AttackPerGold3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e8872274e3ac8e4c-979ff12e83aaa5c4ba6197cee48d91d3-v2",
+            "english": "Lady Avarice III",
+            "french": "Dame Avarice III",
+            "german": "Lady Habgier III",
+            "russian": "Леди Алчность III",
+            "portuguese": "Senhorita Avareza III",
+            "chinese": "贪婪女士 III",
+            "spanish": "Dama de la avaricia III",
+            "chinese_traditional": "貪婪女士III",
+            "korean": "욕망의 여제 III",
+            "japanese": "レディ・アヴァリスIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-b1dc4513a9005762-979ff12e83aaa5c4ba6197cee48d91d3-v2",
+                "english": "Grant [avarice] [effect0.status0.power].",
+                "french": "Octroie [avarice] [effect0.status0.power].",
+                "german": "Verleiht [avarice] [effect0.status0.power].",
+                "russian": "Дает [avarice] х[effect0.status0.power].",
+                "portuguese": "Concede [avarice] [effect0.status0.power].",
+                "chinese": "获得 [avarice] [effect0.status0.power]。",
+                "spanish": "Añade [avarice] [effect0.status0.power].",
+                "chinese_traditional": "賦予[avarice][effect0.status0.power]。",
+                "korean": "[avarice] [effect0.status0.power] 효과를 부여합니다.",
+                "japanese": "[avarice] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "after_spawn_enchant",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectEnchant",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "avarice",
+                      "count": 10
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-c2b3c75974ac8986-979ff12e83aaa5c4ba6197cee48d91d3-v2",
+                "english": "+[power][attack] per [secondarypower][coin] you started the turn with.",
+                "french": "+[power][attack] par tranche de [secondarypower][coin] en début de tour.",
+                "german": "+[power][attack] pro [secondarypower][coin], die du zu Beginn des Zuges hattest.",
+                "russian": "+[power][attack] за каждое [secondarypower]-е [coin] в начале хода.",
+                "portuguese": "+[power][attack] para cada [secondarypower][coin] no início do turno.",
+                "chinese": "回合开始时，每拥有 [secondarypower][coin]，则+[power][attack]。",
+                "spanish": "+[power][attack] por cada [secondarypower][coin] que tuvieras al inicio del turno.",
+                "chinese_traditional": "回合開始時，每有[secondarypower][coin]獲得+[power][attack]。",
+                "korean": "턴 시작 시 가지고 있던 [secondarypower][coin]마다 +[power][attack]을 획득합니다.",
+                "japanese": "ターン開始時に、[secondarypower][coin]につき+[power][attack]。"
+              },
+              "roomStateModifierClassName": "RoomStateSelfDamagePerGoldModifier",
+              "paramInt": 20,
+              "paramInt2": 100
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 70
+        }
+      ]
+    }
+  ]
+}

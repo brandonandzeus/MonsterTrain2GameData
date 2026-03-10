@@ -1,0 +1,130 @@
+{
+  "id": "Infectory",
+  "name": "Infectory",
+  "nameKey": {
+    "key": "CardData_nameKey-c874fe9a10a0b3e1-0cea84493c993494d864725c3226d823-v2",
+    "english": "Infectory",
+    "french": "Contaminant",
+    "german": "Infektiös",
+    "russian": "Инфекционная",
+    "portuguese": "Infeccioso",
+    "chinese": "传染源",
+    "spanish": "Infestación",
+    "chinese_traditional": "感染室",
+    "korean": "감염 공장",
+    "japanese": "感染源"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-5d40b91ab8b45fb0-0cea84493c993494d864725c3226d823-v2",
+    "english": "[spawn] [effect0.upgrade.roommodifier0.effect0.power] when a unit without [troop] dies.",
+    "french": "<b>Génère</b> [effect0.upgrade.roommodifier0.effect0.power] quand une unité sans [troop] meurt.",
+    "german": "[spawn] [effect0.upgrade.roommodifier0.effect0.power], wenn eine Einheit ohne [troop] stirbt.",
+    "russian": "[spawn] х[effect0.upgrade.roommodifier0.effect0.power], когда умирает боец без <b>отряда</b>.",
+    "portuguese": "Usa [spawn] [effect0.upgrade.roommodifier0.effect0.power] quando uma unidade sem [troop] morre.",
+    "chinese": "当没有 [troop] 的单位死亡时，[spawn] [effect0.upgrade.roommodifier0.effect0.power]。",
+    "spanish": "[spawn] [effect0.upgrade.roommodifier0.effect0.power] cuando muere una unidad sin [troop].",
+    "chinese_traditional": "當一個沒有[troop]的單位死亡時，[spawn][effect0.upgrade.roommodifier0.effect0.power]。",
+    "korean": "[troop] 효과가 없는 유닛이 사망하면 [spawn] [effect0.upgrade.roommodifier0.effect0.power]이 발동됩니다.",
+    "japanese": "[troop]が付いていないユニットが死亡すると[spawn] [effect0.upgrade.roommodifier0.effect0.power]。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-549c708ab5e4c778-0cea84493c993494d864725c3226d823-v2",
+      "english": "“Thanks for the ride!” cried the funguy as they leapt from the demon’s torso. The angel gurgled in horror.",
+      "french": "<nobr>« Merci</nobr> pour la <nobr>balade ! »</nobr> s'écria le champote en sautant du torse du démon. L'ange poussa un gargouillis de terreur.",
+      "german": "„Danke fürs Mitnehmen!“, rief der Fungus aus, als er dem Oberkörper des Dämonen entsprang. Der Engel gurgelte entsetzt.",
+      "russian": "«Спасибо, что подвез!» — крикнул грибоец, спрыгивая с туловища демона. Ангел завопил от ужаса.",
+      "portuguese": "“Valeu pela carona!”, gritou o fungo ao saltar do torso do demônio. O anjo golfou de horror.",
+      "chinese": "“谢谢你送我一程。”当蘑菇人从恶魔的躯干上一跃而下时，如此喊道。天使惊恐地从喉咙里发出声响。",
+      "spanish": "«¡Gracias por llevarme!», gritó el lustrongo al tiempo que saltó del torso del demonio. El ángel balbuceó, horrorizado.",
+      "chinese_traditional": "「謝謝你載我一程！」真菌人從惡魔的軀幹上跳下時大喊。天使發出恐怖的咯咯聲。",
+      "korean": "“데려다 줘서 고마워!” 균사 생명체가 악마의 몸통을 찢고 뛰쳐나오며 외쳤다. 천사는 그 광경에 공포에 질려 목이 메었다.",
+      "japanese": "「乗せてくれてありがとな！」悪魔の胸部の中から飛び出たキノコが叫ぶ。天使は恐怖で喉を鳴らした。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "room",
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Infectory.prefab",
+    "m_AssetGUID": "980bb1298097eb247b5222ee6d4ad77f"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "InfectoryEffect_Upgrade",
+        "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-5fe1ff8b7fdfdc00-0437eaf54679a524cb74fc673b1106bd-v2",
+        "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-c1c7f383053b90c0-0437eaf54679a524cb74fc673b1106bd-v2",
+        "roomModifierUpgrades": [
+          {
+            "roomStateModifierClassName": "RoomStateAddEffectOnUnitDeath",
+            "paramCardEffects": [
+              {
+                "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "targetCharacterSubtype": "SubtypesData_Horde",
+                "paramCharacterData": {
+                  "id": "MonsterFunguy",
+                  "nameKey": {
+                    "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+                    "english": "Funguy",
+                    "french": "Champote",
+                    "german": "Fungus",
+                    "russian": "Грибоец",
+                    "portuguese": "Fungo",
+                    "chinese": "蘑菇人",
+                    "spanish": "Lustrongo",
+                    "chinese_traditional": "真菌人",
+                    "korean": "균사체",
+                    "japanese": "ファンガイ"
+                  },
+                  "characterPrefabVariantRef": {
+                    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+                    "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+                  },
+                  "impactVFX": {
+                    "vfxPrefabRefLeft": {
+                      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+                    },
+                    "spawnLocation": "character_center"
+                  },
+                  "size": 1,
+                  "health": 4,
+                  "attackDamage": 3,
+                  "subtypeKeys": [
+                    "SubtypesData_FunGuy",
+                    "SubtypesData_Shroom",
+                    "SubtypesData_Horde"
+                  ],
+                  "characterChatterData": "UnderlegionShroomFemaleChatterData"
+                },
+                "paramStatusEffects": [
+                  {
+                    "statusId": "horde",
+                    "count": 1
+                  }
+                ],
+                "additionalTooltips": [
+                  {
+                    "trigger": "card_monster_played",
+                    "style": "default",
+                    "isTriggerTooltip": true,
+                    "allowSecondaryPlacement": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Taylor Bray"
+}

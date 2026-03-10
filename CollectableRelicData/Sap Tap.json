@@ -1,0 +1,83 @@
+{
+  "id": "CardDrawOnHeal",
+  "name": "Sap Tap",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-7c359a331ed9874a-88f74bc16f5bb2646a61fd706c2223f7-v2",
+    "english": "Sap Tap",
+    "french": "Tuyau à sève",
+    "german": "Saftzapfen",
+    "russian": "Сбор сока",
+    "portuguese": "Torneira de Seiva",
+    "chinese": "树液吸取",
+    "spanish": "Grifo de savia",
+    "chinese_traditional": "樹液抽取器",
+    "korean": "수액 꼭지",
+    "japanese": "樹液栓"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-b8151050db4f1205-88f74bc16f5bb2646a61fd706c2223f7-v2",
+    "english": "The first time each turn a friendly unit is healed, draw [effect0.power].",
+    "french": "À chaque tour, la première fois qu'une unité alliée est soignée, piochez [effect0.power] carte(s).",
+    "german": "Wenn das erste Mal in jedem Zug eine verbündete Einheit geheilt wird, ziehe [effect0.power] Karte(n).",
+    "russian": "Первый раз в ход, когда союзник получает лечение, возьмите [effect0.power].",
+    "portuguese": "A primeira vez que uma unidade aliada é curada em um turno, compre [effect0.power].",
+    "chinese": "每回合友方单位首次获得治疗时，抽 [effect0.power] 张牌。",
+    "spanish": "La primera vez que una unidad aliada recibe curación cada turno, roba [effect0.power].",
+    "chinese_traditional": "每回合第一次有友方單位被治療時，抽[effect0.power]。",
+    "korean": "매 턴 처음으로 아군 유닛의 체력이 회복되면, 카드를 [effect0.power]장 뽑습니다.",
+    "japanese": "毎ターン、味方ユニット回復の初回時にドロー [effect0.power]。"
+  },
+  "relicActivatedKey": {
+    "key": "CollectableRelicData_relicActivatedKey-7a11f61c53d41a42-88f74bc16f5bb2646a61fd706c2223f7-v2",
+    "english": "Draw!",
+    "french": "Piochée !",
+    "german": "Ziehen!",
+    "russian": "Возьмите!",
+    "portuguese": "Compre!",
+    "chinese": "抽牌！",
+    "spanish": "¡Roba!",
+    "chinese_traditional": "抽牌！",
+    "korean": "카드 추가!",
+    "japanese": "ドロー！"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-3d12fb4bdfee7d1c-88f74bc16f5bb2646a61fd706c2223f7-v2",
+      "english": "Intruders often try to tap the Wildwood to harvest its sap, though the Wildwood usually ends up harvesting the intruders instead. The Edge Priory has allowed me to collect these taps for my own personal research.",
+      "french": "Nombre d'intrus tentent de récolter la sève du Boissauvage à l'aide de tuyaux, mais la plupart du temps, c'est le Boissauvage qui finit par absorber leur énergie vitale. Le prieuré de la Marche m'a autorisé à récupérer ces tuyaux pour mes recherches.",
+      "german": "Eindringlinge versuchen häufig, das Wildholz anzuzapfen und dessen Saft zu ernten. Meist endet der Versuch damit, dass das Wildholz den Eindringling anzapft. Die Rand-Priorei hat mir erlaubt, diese Zapfen für meine Forschungen mitzunehmen.",
+      "russian": "Чужаки часто пытаются проникнуть в Диколесье, чтобы набрать сока, хотя обычно сами становятся добычей. Аббаты Пограничья позволили мне сделать несколько надрезов во имя науки.",
+      "portuguese": "Invasores geralmente tentam explorar a Mata Selvagem para colher sua seiva, embora geralmente seja a Mata Selvagem que acabe colhendo os invasores. O Priorado da Fronteira me permitiu coletar esses aparelhos de extração para minha pesquisa.",
+      "chinese": "野林的入侵者们常常会割开树皮，从树液中吸取养分。不过到最后，他们往往会反而成了野林的养分。隐修会允许我收集这些树液，作为我个人研究之用。",
+      "spanish": "Los intrusos suelen intentar recolectar la savia del Bosque Salvaje, pero es el bosque quien suele acabar recolectándolos a ellos. El Priorato de la Linde me ha permitido guardarme esta savia robada para mi investigación personal.",
+      "chinese_traditional": "入侵者經常試圖攻擊荒野並收集其中的樹液，但荒野通常會反過來收割入侵者。邊際修道院允許我收集這些樹液用於我的個人研究。",
+      "korean": "침입자는 종종 와일드우드에 상처를 내어 수액을 채취하려 하지만, 와일드우드는 보통 그들을 먹이로 수확한다. 나는 칼날 수도원의 협력을 받아 연구에 필요한 수액을 모을 수 있었다.",
+      "japanese": "侵入者はしばしばワイルドウッドに穴を開けて樹液を採取しようとするが、逆にワイルドウッドに採取されることになる。境界の小修道院は、私が個人的な研究のために樹液を採取することを許可してくれた。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassAwoken",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardDrawOnHeal",
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": 1
+    }
+  ],
+  "disallowInDeploymentPhase": true,
+  "unlockLevel": 6
+}

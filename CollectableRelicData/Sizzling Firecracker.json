@@ -1,0 +1,62 @@
+{
+  "id": "GiveSpellStatsForUpgrades_DH",
+  "name": "Sizzling Firecracker",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-e79c1d0d8cf3919f-376d988957043524b9d59301e28f0575-v2",
+    "english": "Sizzling Firecracker",
+    "french": "Pétard crépitant",
+    "german": "Knisternder Knallfrosch",
+    "russian": "Искрящийся фейерверк",
+    "portuguese": "Rojão Crepitante",
+    "chinese": "嘶鸣烟花",
+    "spanish": "Petardo chisporroteante",
+    "chinese_traditional": "滋滋爆竹",
+    "korean": "발열 폭죽",
+    "japanese": "火花を散らす爆竹"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-995bd118fa7e18a3-376d988957043524b9d59301e28f0575-v2",
+    "english": "Spells gain +[effect0.power] damage for each upgrade on their card.",
+    "french": "Les sorts gagnent <nobr>+[effect0.power] DGT</nobr> par amélioration sur leur carte.",
+    "german": "Zauber erhalten +[effect0.power] Schaden für jede Verbesserung der Karte.",
+    "russian": "Чары получают +[effect0.power] к атаке за каждое улучшение своей карты.",
+    "portuguese": "Os feitiços recebem +[effect0.power] de dano para cada melhoria nas cartas deles.",
+    "chinese": "法术牌每拥有一项升级，获得 +[effect0.power] 点伤害。",
+    "spanish": "Los hechizos añaden +[effect0.power] de daño por cada mejora de su carta.",
+    "chinese_traditional": "法術牌每擁有一項升級，獲得+[effect0.power]傷害。",
+    "korean": "주문은 카드 업그레이드 횟수만큼 피해가 +[effect0.power]씩 증가합니다.",
+    "japanese": "呪文カードに適用されたアップグレード1つにつき、ダメージ+[effect0.power]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-aa84edf638487e46-376d988957043524b9d59301e28f0575-v2",
+      "english": "Although this product sounds cute, it’s enough to break into any vault along the Rail without destroying the gold inside.",
+      "french": "Aussi mignon soit-il, ce produit permet de forcer n'importe quel coffre-fort de la Voie sans détruire l'or qui s'y trouve.",
+      "german": "Obwohl es niedlich klingt, kann mit diesem Ding in jede Schatzkammer entlang des Gleises eingebrochen werden, ohne das Gold darin zu zerstören.",
+      "russian": "Несмотря на то, что у этого изделия милое название, его вполне достаточно, чтобы взломать любое хранилище у железной дороги, не уничтожив находящееся в нем золото.",
+      "portuguese": "Embora esse produto pareça bonitinho, ele é suficiente para arrombar qualquer cofre ao longo dos Trilhos sem destruir o ouro em seu interior.",
+      "chinese": "这种产品虽然听起来很可爱，但足以闯入铁道沿线上的任何金库，而且不会损伤到里面的金子。",
+      "spanish": "Por adorable que pudiera parecer este producto, es capaz de forzar cualquier cámara acorazada de los Raíles sin destruir el oro de su interior.",
+      "chinese_traditional": "雖然這個產品聽起來很可愛，但它卻有辦法闖入軌道沿線的任何金庫而不破壞裡面的黃金。",
+      "korean": "이 물건은 귀여운 것처럼 들리지만, 선로를 따라가면 황금을 훼손하지 않고도 금고에 쉽게 잠입할 수 있습니다.",
+      "japanese": "かわいらしい名前だが、線路沿いのどの金庫にも内部の黄金を破壊することなく侵入することのできる品だ。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectModifyCardAttack",
+      "paramCardType": "spell",
+      "paramCardFilter": {
+        "id": "GiveSpellStatsForUpgrades_DH_CardFilter",
+        "disallowedCardPools": [
+          "GiveSpellStatsForUpgrades_DH_ExclCardPool"
+        ]
+      },
+      "paramInt": 3,
+      "paramBool": true
+    }
+  ],
+  "isDragonsHoardRelic": true
+}

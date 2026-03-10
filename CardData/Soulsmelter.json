@@ -1,0 +1,135 @@
+{
+  "id": "Soulsmelter",
+  "name": "Soulsmelter",
+  "nameKey": {
+    "key": "CardData_nameKey-8c5cb08a8a83df18-03756fa18d20c54489b6eeb981754696-v2",
+    "english": "Soulsmelter",
+    "french": "Fondeur d'âme",
+    "german": "Seelenschmelze",
+    "russian": "Душеплав",
+    "portuguese": "Fundidor de Almas",
+    "chinese": "熔魂者",
+    "spanish": "Fundealmas",
+    "chinese_traditional": "靈魂熔煉器",
+    "korean": "영혼 제련기",
+    "japanese": "魂の製錬"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-b363567dadd79210-03756fa18d20c54489b6eeb981754696-v2",
+      "english": "A creation by the Pyreborne smelters and infused with a blessing by Fhyra, this staff consumed the souls of the bearer’s enemies and transformed them into gold.",
+      "french": "Créé par les fondeurs des Draconides et béni par Fhyra, ce bâton consume les âmes des ennemis de son porteur et les transforme en or.",
+      "german": "Dieser Stab wurde in den Hütten der Höllenglutkinder hergestellt und von Fhyra gesegnet. Er verzehrt die Seelen der Feinde seines Trägers und verwandelt sie zu Gold.",
+      "russian": "Этот посох выплавили Пеклорожденные под благословением Фиры. Он всасывал души врагов своего хозяина и превращал их в золото.",
+      "portuguese": "Uma criação dos fundidores dos Píricos e infundido com uma bênção de Fhyra, esse cajado consumia a alma dos inimigos do portador e transformava em ouro.",
+      "chinese": "这根法杖是出自薪龙族熔炉的杰作，并由菲拉施以祝福，它能吞噬持有者敌人的灵魂，将其转化为黄金。",
+      "spanish": "Este bastón, obra de fundidores Hijos de la Pira y con la bendición de Fhyra, consumía las almas de los enemigos de su portador y las transformaba en oro.",
+      "chinese_traditional": "由火焰之子冶煉廠創造，並由費拉賜福，這根法杖吞噬了持有者敵人的靈魂，並將它們變成了黃金。",
+      "korean": "화로의 후예 제련공들이 만든 이 지팡이는 휘라의 축복을 받아 소유자가 적들의 영혼을 빨아들여 황금으로 변하게 만든다.",
+      "japanese": "火竜族の製錬所で作られ、ファイラの祝福が込められたこの杖は、持ち主の敵の魂を消費し、それを黄金に変える。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "equipment",
+  "rarity": "uncommon",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SPL_Soulsmelter.prefab",
+    "m_AssetGUID": "f49b8c0e96ca6cb4f8eaeb61c7ea61dc"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Soulsmelter",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-3c3a532e1b037e82-efe5ebd88d79ecd45818f25682bc2206-v2",
+          "english": "Soulsmelter",
+          "french": "Fondeur d'âme",
+          "german": "Seelenschmelze",
+          "russian": "Душеплав",
+          "portuguese": "Fundidor de Almas",
+          "chinese": "熔魂者",
+          "spanish": "Fundealmas",
+          "chinese_traditional": "靈魂熔煉器",
+          "korean": "영혼 제련기",
+          "japanese": "魂の製錬"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-c54f2d7ac422fa16-efe5ebd88d79ecd45818f25682bc2206-v2",
+              "english": "Gain [effect0.status0.power] [soul].",
+              "french": "Octroie [effect0.status0.power] [soul].",
+              "german": "Erhalte [effect0.status0.power] [soul].",
+              "russian": "Дается [soul] х[effect0.status0.power].",
+              "portuguese": "Recebe [effect0.status0.power] [soul].",
+              "chinese": "获得 [effect0.status0.power] [soul]。",
+              "spanish": "Añade [effect0.status0.power] de [soul].",
+              "chinese_traditional": "獲得[effect0.status0.power][soul]。",
+              "korean": "[effect0.status0.power] [soul]을 획득합니다.",
+              "japanese": "[effect0.status0.power] [soul]を得る。"
+            },
+            "trigger": "on_any_hero_death_on_floor",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "captured_soul",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-498727e69d4055d0-efe5ebd88d79ecd45818f25682bc2206-v2",
+              "english": "Gain [effect0.power][dragonshoardicon] for every 4 [soul].",
+              "french": "Octroie [effect0.power][dragonshoardicon] par tranche de <nobr>4 [soul].</nobr>",
+              "german": "Erhalte [effect0.power][dragonshoardicon] pro 4 [soul].",
+              "russian": "Дает [effect0.power] [dragonshoardicon] за каждую 4-ю <b>Душу</b>.",
+              "portuguese": "Recebe [effect0.power][dragonshoardicon] para cada 4 [soul].",
+              "chinese": "每有 4 [soul] 就获得 [effect0.power][dragonshoardicon]。",
+              "spanish": "Obtienes [effect0.power][dragonshoardicon] por cada 4 de [soul].",
+              "chinese_traditional": "每有4%[soul]獲得[effect0.power][dragonshoardicon]。",
+              "korean": "4 [soul]마다 [effect0.power][dragonshoardicon]을 획득합니다.",
+              "japanese": "4 [soul]につき、[effect0.power][dragonshoardicon]を得る。"
+            },
+            "trigger": "on_encounter_complete",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAdjustDragonsHoardPerStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "captured_soul",
+                    "count": 4
+                  }
+                ],
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "bonusDamage": 10
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/Soulsmelter/FX_Soulsmelter.prefab",
+          "m_AssetGUID": "e4cac3830dd60b34bb5fca9832e1c78c"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Leonardo Dionisi"
+}

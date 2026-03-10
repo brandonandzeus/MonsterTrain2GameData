@@ -1,0 +1,81 @@
+{
+  "id": "MonsterEnthusiasticFan",
+  "name": "Waxcap",
+  "nameKey": {
+    "key": "CharacterData_nameKey-933d78d75b5c72dc-890505085bd4e7c4884497959185e46f-v2",
+    "english": "Waxcap",
+    "french": "Chapeau-de-cire",
+    "german": "Wachshaube",
+    "russian": "Воскошляп",
+    "portuguese": "Chapéu de Cera",
+    "chinese": "滴蜡菌伞",
+    "spanish": "Sombrero céreo",
+    "chinese_traditional": "蠟帽",
+    "korean": "밀랍 갓",
+    "japanese": "ワックスキャップ"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-0e5b43aa194bec59-890505085bd4e7c4884497959185e46f-v2",
+      "english": "“Why is it so sticky everywhere I go?”",
+      "french": "<nobr>« Pourquoi</nobr> est-ce que tout est si collant partout où je <nobr>vais ? »</nobr>",
+      "german": "„Wieso ist es bloß überall so klebrig?“",
+      "russian": "«И почему везде, куда я ни пойду, так липко?»",
+      "portuguese": "“Por que é tão pegajoso aonde quer que eu vá?”",
+      "chinese": "“为什么我走到哪里都感觉这么黏？”",
+      "spanish": "«¿Por qué está tan pegajoso todo lo que toco?».",
+      "chinese_traditional": "「為什麼我去哪裡都這麼黏糊糊的？」",
+      "korean": "\"왜 이렇게 가는 곳마다 끈적거리는 거지?\"",
+      "japanese": "「どこに行ってもベタベタなのはなぜだろう？」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_WaxCap.prefab",
+    "m_AssetGUID": "4fcf27519d122004bb1cd4621f51443b"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-f6816feaac6a89fd-890505085bd4e7c4884497959185e46f-v2",
+        "english": "Apply [sap] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [sap] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [sap] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает [sap] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [sap] [effect0.status0.power] a todas as unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [sap] [effect0.status0.power]。",
+        "spanish": "Añade [sap] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[sap][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [sap] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[sap] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "debuff",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 5,
+  "attackDamage": 5,
+  "subtypeKeys": [
+    "SubtypesData_Shroom"
+  ],
+  "characterChatterData": "UnderlegionShroomMaleChatterData"
+}

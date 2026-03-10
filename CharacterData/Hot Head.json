@@ -1,0 +1,133 @@
+{
+  "id": "MonsterHotHead",
+  "name": "Hot Head",
+  "nameKey": {
+    "key": "CharacterData_nameKey-bc7d573a439a604f-ae1a8053bcaf13441be3a295a43593b2-v2",
+    "english": "Hot Head",
+    "french": "Tête brûlée",
+    "german": "Hitzkopf",
+    "russian": "Горячая голова",
+    "portuguese": "Cabeça-Quente",
+    "chinese": "吞火龙",
+    "spanish": "Mascamagma",
+    "chinese_traditional": "熱頭",
+    "korean": "핫 헤드",
+    "japanese": "ホット・ヘッド"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f113495954d0ada3-ae1a8053bcaf13441be3a295a43593b2-v2",
+      "english": "The guard dragons for Lady Gilda chew magma all day, just in case they ever have to give a special spew to a tax collector.",
+      "french": "Les dragons de garde de Dame Gilda mâchent du magma toute la journée, juste au cas où ils devraient cracher du feu sur un percepteur.",
+      "german": "Die Wachdrachen von Lady Gilda kauen den ganzen Tag Magma. Nur für den Fall, dass sie mal einem Steuereintreiber einheizen müssen.",
+      "russian": "Охранники леди Гильды целыми днями жуют магму на случай, если придется заплевать сборщика налогов.",
+      "portuguese": "Os dragões de guarda da Senhorita Gilda mastigam magma o dia todo para o caso de terem que dar um sopro especial em um coletor de impostos.",
+      "chinese": "吉尔达女士的护卫龙整天都在嚼着岩浆，以防万一他们得对着收税员吐些特别的东西。",
+      "spanish": "Los dragones guardianes de lady Gilda se pasan el día mascando magma, por si en algún momento tienen que escupir a un recaudador de impuestos.",
+      "chinese_traditional": "吉爾達女士的守衛龍整天嚼著岩漿，以防哪天需要對稅收員噴出特別的東西。",
+      "korean": "레이디 길다를 지키는 드래곤은 세금 징수원에게 줄 특별 대접을 대비하여 마그마를 종일 입에 물고 다닌다.",
+      "japanese": "レディ・ギルダの護衛の竜たちは、取り立て人に特別な叱咤激励をしなければならない場合に備えて、一日中溶岩を噛んでいる。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_HotHead.prefab",
+    "m_AssetGUID": "9d3c044bcd24bc54182f306ef601591b"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hothead/FX_HotheadAttack.prefab",
+      "m_AssetGUID": "37c0bbb968f44d04bbdf4813b8416973"
+    },
+    "spawnLocation": "character_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+      "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+    },
+    "spawnLocation": "character_center"
+  },
+  "unitAbility": {
+    "id": "HotHeadAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-9d99371b7e396d28-a323b1e9ddde9784a896dfdc3d6a177f-v2",
+      "english": "Fire Breathing",
+      "french": "Souffle de feu",
+      "german": "Feueratem",
+      "russian": "Дыхание огнем",
+      "portuguese": "Sopro de Fogo",
+      "chinese": "火焰吐息",
+      "spanish": "Aliento de fuego",
+      "chinese_traditional": "噴火",
+      "korean": "화염 숨결",
+      "japanese": "火の吐息"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-593cbfdda8eabae3-a323b1e9ddde9784a896dfdc3d6a177f-v2",
+      "english": "Deal damage equal to this unit's attack to enemy units, twice.",
+      "french": "Inflige des dégâts valant l'Attaque de cette unité aux unités ennemies deux fois.",
+      "german": "Füge 2x Schaden in Höhe des Angriffs dieser Einheit zu.",
+      "russian": "Дважды наносит врагам урон, равный атаке этого бойца.",
+      "portuguese": "Causa dano igual ao ataque desta unidade às unidades inimigas, duas vezes.",
+      "chinese": "对敌方单位造成相当于该单位攻击力的伤害，重复两次。",
+      "spanish": "Inflige tanto daño como el ataque de esta unidad a las unidades enemigas dos veces.",
+      "chinese_traditional": "對敵方單位造成等於此單位攻擊力的傷害，重複兩次。",
+      "korean": "이 유닛의 공격력만큼 적 유닛들에게 피해를 두 번 줍니다.",
+      "japanese": "敵ユニットにこのユニットの攻撃力に等しいダメージを2回与える。"
+    },
+    "cardType": "spell",
+    "rarity": "common",
+    "linkedClass": "ClassPyreborne",
+    "cardArtPrefabVariantRef": {
+      "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_HotHeadAbility.prefab",
+      "m_AssetGUID": "912ce735b2ec6a74a960e70b2f015816"
+    },
+    "effects": [
+      {
+        "effectStateName": "CardEffectDamagePerSourceAttack",
+        "targetMode": "room",
+        "targetTeamType": "heroes",
+        "paramInt": 1,
+        "appliedVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Abilities/FireBreathing/FX_FirebreathingDamage.prefab",
+            "m_AssetGUID": "93b2cce9098a9cf41a78e1a32a659ebb"
+          },
+          "spawnLocation": "character_center"
+        },
+        "appliedToSelfVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Abilities/FireBreathing/FX_Firebreathing.prefab",
+            "m_AssetGUID": "a5a15e67f649842499105ce11fbc4349"
+          },
+          "spawnLocation": "character_side_fwd_center"
+        }
+      },
+      {
+        "effectStateName": "CardEffectDamagePerSourceAttack",
+        "targetMode": "room",
+        "targetTeamType": "heroes",
+        "paramInt": 1,
+        "appliedVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Abilities/FireBreathing/FX_FirebreathingDamage.prefab",
+            "m_AssetGUID": "93b2cce9098a9cf41a78e1a32a659ebb"
+          },
+          "spawnLocation": "character_center"
+        }
+      }
+    ],
+    "cooldownAfterActivated": 2,
+    "isUnitAbility": true,
+    "initialKeyboardTarget": "front_friendly"
+  },
+  "size": 2,
+  "health": 20,
+  "attackDamage": 5,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Dragon"
+  ],
+  "characterChatterData": "PyreborneDragonChatterData"
+}

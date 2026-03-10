@@ -1,0 +1,90 @@
+{
+  "id": "DantesCandle",
+  "name": "Dante's Candle",
+  "nameKey": {
+    "key": "CardData_nameKey-4c0535910423f0ef-86522f9da3f64e240bef5b46298ebcb8-v2",
+    "english": "Dante's Candle",
+    "french": "Bougie de Dante",
+    "german": "Dantes Kerze",
+    "russian": "Свеча Данте",
+    "portuguese": "Vela de Dante",
+    "chinese": "但丁的蜡烛",
+    "spanish": "Vela de Dante",
+    "chinese_traditional": "但丁的蠟燭",
+    "korean": "단테의 촛대",
+    "japanese": "ダンテのロウソク"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-d57583509413054f-86522f9da3f64e240bef5b46298ebcb8-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-821c11842c5a15e4-86522f9da3f64e240bef5b46298ebcb8-v2",
+      "english": "I’ve seen Dante roam beyond the walls of the Outpost, collecting souls to store and burn when he most needs them. ",
+      "french": "J'ai vu Dante errer au-delà des murs du Bastion, amassant des âmes pour les stocker et les consumer quand il en a le plus besoin.",
+      "german": "Ich sah Dante jenseits der Mauern des Außenpostens umherstreifen. Er sammelte Seelen, die er bei dringendem Bedarf verbrennen wollte.",
+      "russian": "За стенами форпоста мне встречался Данте. Он собирал души, которые мог бы сжечь в нужный момент. ",
+      "portuguese": "Vi Dante vagar por além dos muros do Posto Avançado, coletando almas para armazenar e usar quando for preciso.",
+      "chinese": "我看见但丁在前哨站墙外游荡，收集灵魂储存起来，并在最需要的时候烧掉。",
+      "spanish": "He visto a Dante vagar fuera de los muros del campamento, recogiendo almas para quemarlas cuando más las necesite.",
+      "chinese_traditional": "我見過但丁在前哨站的圍牆外遊蕩，收集靈魂並儲存起來，在有需要的時候燃燒它們。",
+      "korean": "단테는 전초 기지 벽을 넘나들며 영혼을 모은 뒤, 가장 필요할 때 이들을 꺼내 불태운다.",
+      "japanese": "ダンテが基地の外を徘徊しているのを見たことがある。必要なときに使える魂を溜め込んでいるのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "blight",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_DantesCandle_Updated.prefab",
+    "m_AssetGUID": "1d71a791c39542146bbe51db23fa654b"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitUnpurgable"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectNULL",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramBool2": true,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Blights/Dante'sCandle/FX_DantesCandle.prefab",
+          "m_AssetGUID": "8a6d658fe21120b48a37ece819bf6013"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-8716d91f8bfe867b-86522f9da3f64e240bef5b46298ebcb8-v2",
+        "english": "Your Pyre takes [effect0.power] damage.",
+        "french": "Votre Brasier subit <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Deine Höllenglut nimmt [effect0.power] Schaden.",
+        "russian": "Ваше Пекло получает [effect0.power] урона.",
+        "portuguese": "Sua Pira sofre [effect0.power] de dano.",
+        "chinese": "你的薪火受到 [effect0.power] 点伤害。",
+        "spanish": "Tu Pira sufre [effect0.power] de daño.",
+        "chinese_traditional": "你的火堆受到[effect0.power]點傷害。",
+        "korean": "화로가 [effect0.power]의 피해를 받습니다.",
+        "japanese": "自軍の炉が[effect0.power]のダメージを受ける。"
+      },
+      "trigger": "on_unplayed_negative",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "pyre",
+          "targetTeamType": "none",
+          "suppressPyreRoomFocus": true,
+          "paramInt": 3
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Loy Bouttamy"
+}

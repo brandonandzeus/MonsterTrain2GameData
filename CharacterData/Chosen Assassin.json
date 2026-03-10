@@ -1,0 +1,104 @@
+{
+  "id": "AttackerT3_Sweep_Chosen",
+  "name": "Chosen Assassin",
+  "nameKey": {
+    "key": "CharacterData_nameKey-bf4f32593daed835-7c861ce0683d006448ff3466e9a596ff-v2",
+    "english": "Chosen Assassin",
+    "french": "Assassin élu",
+    "german": "Auserwählter Assassine",
+    "russian": "Избранный убийца",
+    "portuguese": "Assassino Escolhido",
+    "chinese": "神选刺客",
+    "spanish": "Asesino elegido",
+    "chinese_traditional": "天選刺客",
+    "korean": "선택받은 암살자",
+    "japanese": "選ばれしアサシン"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-c6ba7ddd6e1b8446-7c861ce0683d006448ff3466e9a596ff-v2",
+      "english": "Once one of Heaven’s elite task force, Savagery has graced them with new powers and unleashed their urge to kill.",
+      "french": "Autrefois membres de la force d'intervention d'élite du paradis, Sauvagerie les a dotés de nouveaux pouvoirs et d'une féroce envie de tuer.",
+      "german": "Die einstige Elitetruppe des Himmels wurde von Grausamkeit mit neuen Kräften und neuem Tötungswillen ausgestattet.",
+      "russian": "Некогда один из элитных отрядов Рая. Изувер наделил их новыми силами и желанием убивать.",
+      "portuguese": "Outrora uma das forças-tarefa de elite do Céu, a Barbárie os agraciou com novos poderes e liberou o desejo de matar deles.",
+      "chinese": "曾经是天堂的精英特遣部队，但野蛮泰坦赋予他们新的力量，释放了他们的杀戮冲动。",
+      "spanish": "Antaño, parte de las fuerzas de élite del Cielo. Salvajismo les ha otorgado nuevos poderes y una sed de sangre insaciable.",
+      "chinese_traditional": "曾是天堂精銳部隊的一員，如今卻因野性而獲得新的力量，釋放了他們嗜殺的欲望。",
+      "korean": "과거 천상의 정예부대였던 이들은 세비저리에게 강력한 힘과 살인충동을 부여받았다.",
+      "japanese": "サベジャリーはかつて天界のエリート特別部隊であった彼らに新たな力を与え、その殺意を解き放った。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_RagewingAssassin.prefab",
+    "m_AssetGUID": "255f132f850a8c5499c6aeace4dbcb60"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/RagewingAssassin/FX_RagewingAssassinAttack.prefab",
+      "m_AssetGUID": "a36cdc26bfdcd6546bf2b9a9b3fec987"
+    },
+    "spawnLocation": "bone_status_effect_slot3"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "sweep",
+      "count": 1
+    },
+    {
+      "statusId": "multistrike",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-9d3c33882d824587-7c861ce0683d006448ff3466e9a596ff-v2",
+        "english": "Gain [rage] [effect0.status0.power].",
+        "french": "Octroie [rage] [effect0.status0.power].",
+        "german": "Erhalte [rage] [effect0.status0.power].",
+        "russian": "Дает [rage] х[effect0.status0.power].",
+        "portuguese": "Recebe [rage] [effect0.status0.power].",
+        "chinese": "获得 [rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power].",
+        "chinese_traditional": "獲得[rage][effect0.status0.power]。",
+        "korean": "[rage] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[rage] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "buff",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 7,
+    "endlessAttack": 8
+  },
+  "size": 1,
+  "health": 50,
+  "attackDamage": 5,
+  "chosenVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_AttackerT3"
+  ],
+  "characterChatterData": "T3TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Ishmael E. Hoover"
+}

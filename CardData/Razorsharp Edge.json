@@ -1,0 +1,76 @@
+{
+  "id": "RazorsharpEdge",
+  "name": "Razorsharp Edge",
+  "nameKey": {
+    "key": "CardData_nameKey-5e1b2941037bbc35-51d9a898ce17f6143994ae1348abf11b-v2",
+    "english": "Razorsharp Edge",
+    "french": "Extrémités tranchantes",
+    "german": "Rasiermesserschärfe",
+    "russian": "Бритвенное лезвие",
+    "portuguese": "Gume Afiado",
+    "chinese": "剃刀利刃",
+    "spanish": "Filo frágil",
+    "chinese_traditional": "銳利邊緣",
+    "korean": "예리한 칼날",
+    "japanese": "鋭い刃"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-e440dc44f849c703-51d9a898ce17f6143994ae1348abf11b-v2",
+    "english": "Apply +[effect0.upgrade.bonusdamage][attack] and [effect0.upgrade.bonushp][health].",
+    "french": "Confère +[effect0.upgrade.bonusdamage][attack] et [effect0.upgrade.bonushp][health].",
+    "german": "Wende +[effect0.upgrade.bonusdamage][attack] und [effect0.upgrade.bonushp][health] an.",
+    "russian": "Дает +[effect0.upgrade.bonusdamage][attack] и [effect0.upgrade.bonushp][health].",
+    "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack] e [effect0.upgrade.bonushp] de [health].",
+    "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]，[effect0.upgrade.bonushp][health]。",
+    "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+    "chinese_traditional": "施加+[effect0.upgrade.bonusdamage][attack]和[effect0.upgrade.bonushp][health]。",
+    "korean": "+[effect0.upgrade.bonusdamage][attack] 및 [effect0.upgrade.bonushp][health] 효과를 적용합니다.",
+    "japanese": "+[effect0.upgrade.bonusdamage][attack]と[effect0.upgrade.bonushp][health]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-8a9215816ecc4cc6-51d9a898ce17f6143994ae1348abf11b-v2",
+      "english": "Dried out vines can deal more deadly blows, but they risk shattering more easily than their hydrated counterparts. My efforts at strengthening these embrittled appendages have proven fruitless.",
+      "french": "Les lianes asséchées sont bien plus dangereuses, mais aussi bien plus fragiles que leurs consœurs hydratées. Mes tentatives visant à renforcer ces appendices frangibles ont toutes été vaines.",
+      "german": "Getrocknete Ranken teilen härtere Schläge aus, aber sie zerbrechen schneller als ihre grünen Gegenstücke. Meine Versuche, diese zerbrechlichen Pflanzenteile stabiler zu machen, waren leider erfolglos.",
+      "russian": "Высушенные лозы наносят усиленный урон, но и ломаются куда быстрее свежих. Мои попытки усилить эти хрупкие отростки к успеху не привели.",
+      "portuguese": "Vinhas secas podem causar ataques mais fortes, mas têm o risco de quebrarem mais facilmente do que quando hidratadas. Não tive muitos frutos ao tentar reforçar esses apêndices fragilizados.",
+      "chinese": "干枯的藤蔓可以造成更加致命的伤害，但与湿润的藤蔓相比，它们更容易碎裂。我曾试过强化这些干枯的藤蔓，但最后却徒劳无功。",
+      "spanish": "Los zarcillos secos pueden infligir golpes más letales, pero son más quebradizos que los hidratados. Mis intentos de reforzar estos frágiles apéndices no han dado resultado.",
+      "chinese_traditional": "乾燥的藤蔓可以造成更致命的打擊，但與含水的同類相比，它們更容易粉碎。我雖然努力加強這些脆弱的附肢，但最後均告失敗。",
+      "korean": "말라버린 덩굴은 수분이 있는 덩굴보다 더 치명적인 일격을 가할 수 있지만, 그만큼 쉽게 부러질 위험도 높다. 이처럼 약해진 덩굴의 내구도를 강화하려 노력했으나, 별 성과는 얻지 못했다.",
+      "japanese": "乾燥したツタはより致命的な打撃を与えることができるが、水分を含んだ蔓よりも簡単に折れてしまう危険性がある。この脆くなったツタを強くしようとするのは努力の無駄だった。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_RazorsharpEdge.prefab",
+    "m_AssetGUID": "a92e7970346f66d4bb21980d77441807"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "AwokenTradeHealthForAttackBuff",
+        "bonusDamage": 12,
+        "bonusHP": -2
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Buff_Attack_PS.prefab",
+          "m_AssetGUID": "75491630f33039343baa202d7f6f7a30"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 3,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Gary Laib"
+}

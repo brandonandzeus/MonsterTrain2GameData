@@ -1,0 +1,114 @@
+{
+  "id": "ButterballT1",
+  "name": "ButterballT1",
+  "nameKey": {
+    "key": "SoulData_nameKey-680788c46684a7de-ef1f30e7250cc0446aa243ced413173e-v2",
+    "english": "Butterball",
+    "french": "Noix de beurre",
+    "german": "Butterball",
+    "russian": "Пухляш",
+    "portuguese": "Delicioso",
+    "chinese": "黄油球",
+    "spanish": "Bola de sebo",
+    "chinese_traditional": "奶油球",
+    "korean": "버터볼",
+    "japanese": "バターボール"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-3b2f6c172b3184f6-ef1f30e7250cc0446aa243ced413173e-v2",
+    "english": "+[effect0.upgrade.bonushp][health]. This unit can be [eaten] to gain its [attack] and [health].",
+    "french": "+[effect0.upgrade.bonushp][health]. Cette unité peut être <b>mangée</b> pour gagner son [attack] et ses [health].",
+    "german": "+[effect0.upgrade.bonushp][health]. Diese Einheit kann [eaten] werden, wenn du ihren [attack] und ihre [health] erhalten willst.",
+    "russian": "+[effect0.upgrade.bonushp][health]. Примените на этом бойце [eaten] и получите его [attack] и [health].",
+    "portuguese": "+[effect0.upgrade.bonushp][health]. Esta unidade pode ser <b>Devorada</b> para ganhar seu [attack] e [health].",
+    "chinese": "+[effect0.upgrade.bonushp][health]。该单位可以 [eaten]，使吞食者获得该单位 [attack] 和 [health]。",
+    "spanish": "+[effect0.upgrade.bonushp][health]. Esta unidad se puede consumir como [eaten] para añadir su [attack] y [health].",
+    "chinese_traditional": "+[effect0.upgrade.bonushp][health]。此單位可以[eaten]以獲得其[attack]和[health]。",
+    "korean": "+[effect0.upgrade.bonushp][health]. 이 유닛을 [eaten]하여 해당 유닛의 [attack]과 [health]을 얻을 수 있습니다.",
+    "japanese": "+[effect0.upgrade.bonushp][health]。このユニットは、その[attack]と[health]を得るために[eaten]にすることができる。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "ButterballT1_Upgrade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-2034f4f54523a8ec-6cb95abfb6ebbf3448947e654ea734c5-v2",
+          "english": "Butterball",
+          "french": "Noix de beurre",
+          "german": "Butterball",
+          "russian": "Пухляш",
+          "portuguese": "Delicioso",
+          "chinese": "黄油球",
+          "spanish": "Bola de sebo",
+          "chinese_traditional": "奶油球",
+          "korean": "버터볼",
+          "japanese": "バターボール"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-66f88235e8f3860f-6cb95abfb6ebbf3448947e654ea734c5-v2",
+          "english": "+[bonushp][health]. This unit can be [eaten] to gain its [attack] and [health].",
+          "french": "+[bonushp][health]. Cette unité peut être <b>mangée</b> pour gagner son [attack] et ses [health].",
+          "german": "+[bonushp][health]. Diese Einheit kann [eaten] werden, wenn du ihren [attack] und ihre [health] erhalten willst.",
+          "russian": "+[bonushp][health]. Примените на этом бойце [eaten] и получите его [attack] и [health].",
+          "portuguese": "+[bonushp][health]. Esta unidade pode ser <b>Devorada</b> para ganhar seu [attack] e [health].",
+          "chinese": "+[bonushp][health]。该单位可以 [eaten]，使吞食者获得该单位 [attack] 和 [health]。",
+          "spanish": "+[bonushp][health]. Esta unidad se puede consumir como [eaten] para añadir su [attack] y [health].",
+          "chinese_traditional": "+[bonushp][health]。此單位可以[eaten]以獲得其[attack]和[health]。",
+          "korean": "+[bonushp][health]. 이 유닛을 [eaten]하여 해당 유닛의 [attack]과 [health]을 얻을 수 있습니다.",
+          "japanese": "+[bonushp][health]。このユニットは、その[attack]と[health]を得るために[eaten]にすることができる。"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-306d329b8322b808-6cb95abfb6ebbf3448947e654ea734c5-v2",
+              "english": "Eater gains this unit's [attack] and [health].",
+              "french": "Le mangeur gagne l'[attack] et les [health] de cette unité.",
+              "german": "Der Verschlinger erhält [attack] und [health] dieser Einheit.",
+              "russian": "Поглотитель получает [attack] и [health] этого бойца.",
+              "portuguese": "O devorador recebe o [attack] e a [health] desta unidade.",
+              "chinese": "吞食者获得此单位的 [attack] 和 [health]。",
+              "spanish": "Su devorador añade el [attack] y la [health] de esta unidad.",
+              "chinese_traditional": "吞噬者獲得此單位的[attack]和[health]。",
+              "korean": "포식자가 이 유닛의 [attack] 및 [health]을 획득합니다.",
+              "japanese": "捕食者がこのユニットの[attack]と[health]を得る。"
+            },
+            "trigger": "on_eaten",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatsFromSelf",
+                "targetMode": "last_feeder_character",
+                "targetTeamType": "none"
+              }
+            ],
+            "showAdditionalTriggerTextOnSuccessOnly": true,
+            "displayEffectHintText": true
+          }
+        ],
+        "isRegionRunUpgrade": true,
+        "excludeFromClones": true,
+        "bonusHP": 10
+      }
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-aefd6ec4d2af6c53-ef1f30e7250cc0446aa243ced413173e-v2",
+      "english": "Eat units to unlock.",
+      "french": "Mangez des unités pour déverrouiller.",
+      "german": "Verschlinge Einheiten, um freizuschalten.",
+      "russian": "Чтобы разблокировать, сожрите бойцов.",
+      "portuguese": "Devore unidades para desbloquear.",
+      "chinese": "吞食单位以解锁。",
+      "spanish": "Devora unidades para desbloquear.",
+      "chinese_traditional": "吃掉單位以解鎖。",
+      "korean": "유닛을 섭취하면 잠금 해제됩니다.",
+      "japanese": "ユニットを採食してアンロック。"
+    },
+    "unlockCondition": "soul_units_eaten",
+    "paramInt": 15
+  },
+  "tierLevel": 1,
+  "nextTier": "ButterballT2"
+}

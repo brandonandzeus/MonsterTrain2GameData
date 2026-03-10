@@ -1,0 +1,157 @@
+{
+  "id": "MonsterCrucibleSteward",
+  "name": "Crucible Steward",
+  "nameKey": {
+    "key": "CharacterData_nameKey-3962f21173127432-1b99177250c42694890e1c7bd3968cb5-v2",
+    "english": "Crucible Steward",
+    "french": "Steward porte-creuset",
+    "german": "Schmelztiegel-Begleiter",
+    "russian": "Стюард-тигель",
+    "portuguese": "Guarda do Crisol",
+    "chinese": "熔炉乘务员",
+    "spanish": "Auxiliar de crisol",
+    "chinese_traditional": "地獄熔爐僕役",
+    "korean": "도가니 잡부",
+    "japanese": "クルーシブル・スチュワード"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-95ef1a186d349331-1b99177250c42694890e1c7bd3968cb5-v2",
+      "english": "Designed to transport molten metal without cooling or spilling, Crucible Stewards originally ran fixed routes throughout the foundry. But on the train, their ability to carry live melt has made them invaluable, allowing casting and forging to be done in transit.",
+      "french": "Conçus pour transporter du métal en fusion sans qu'il se refroidisse ou se renverse, les stewards porte-creuset suivaient à l'origine des itinéraires fixes dans la fonderie. Mais le fait de pouvoir mouler et forger pendant le transport en train les a rendus inestimables.",
+      "german": "Schmelztiegel-Begleiter wurden für den Transport von geschmolzenem Metall ohne Abkühlung oder Verschütten entwickelt und verkehrten ursprünglich auf festen Strecken innerhalb der Gießerei. Im Zug sind sie jedoch aufgrund ihrer Fähigkeit, geschmolzenes Metall zu transportieren, von unschätzbarem Wert, da sie das Gießen und Schmieden während des Transports ermöglichen.",
+      "russian": "Стюарды Горнила были созданы для перевозки расплавленного металла без охлаждения и риска его пролить. Изначально они ходили по фиксированным маршрутам через весь литейный цех. Но на поезде они стали незаменимы: теперь ковку можно осуществлять даже в пути.",
+      "portuguese": "Projetados para transportar metal derretido sem resfriar ou derramar, os Guardas do Crisol originalmente executam rotinas fixas por toda a fundição. Mas no trem, sua habilidade de carregar metal quente os torna inestimáveis, permitindo que a fundição e a forja seja feita em movimento.",
+      "chinese": "熔炉乘务员用来运输熔融金属，且能确保其在途中不会冷却或溅出。它们最初在铸造厂里按固定路线执行着重复的任务。但在火车上，它们因为能运输熔融金属而变得非常宝贵，因为它们使在运输途中进行浇铸和锻造成为了可能。",
+      "spanish": "Los auxiliares del crisol, diseñados para transportar metal fundido sin que se enfríe ni se vierta, recorrían en un principio unas rutas fijas por la fundición. En el tren, en cambio, esta capacidad los ha hecho increíblemente valiosos, ya que hace posible fundir y forjar en movimiento.",
+      "chinese_traditional": "地獄熔爐機僕最初設計用於在不冷卻或溢出的情況下運送熔融金屬，在鑄造廠內沿固定路線運作。但在列車上，他們攜帶活性熔融物的能力使其變得無價，讓鑄造與鍛造得以在運輸途中進行。",
+      "korean": "냉각 및 누출 없이 용융 금속을 운송하기 위해 설계된 도가니 잡부는 원래 주조 공장 전역을 정해진 노선으로 이동했다. 그러나 열차에서는 실시간 용융 금속 운반 능력이 높은 효율성을 제공해, 이동 중에도 주조와 단조 작업이 가능해졌다.",
+      "japanese": "冷ましたり溢すことなく溶融金属を運ぶために設計されたクルーシブル・スチュワードは、元は鋳造工場の指定されたルートだけを移動していた。列車ではその真新しい溶解物を持ち運ぶ能力が重宝され、走行中に鋳造と鍛造を行うことを可能としている。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_CrucibleSteward.prefab",
+    "m_AssetGUID": "3279c58a1150ec34696a14f42d763378"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+      "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-368816e801d23d41-1b99177250c42694890e1c7bd3968cb5-v2",
+        "english": "Deal damage equal to this unit's attack to the front enemy unit.",
+        "french": "Inflige des dégâts valant l'attaque de cette unité à l'ennemi en 1re ligne.",
+        "german": "Füge der vordersten gegnerischen Einheit Schaden im Ausmaß des Angriffs dieser Einheit zu.",
+        "russian": "Наносит переднему врагу урон, равный атаке этого бойца.",
+        "portuguese": "Causa dano igual ao ataque desta unidade à unidade inimiga na frente.",
+        "chinese": "对前排敌方单位造成相当于该单位攻击力的伤害。",
+        "spanish": "Inflige tanto daño como el ataque de esta unidad a la primera unidad enemiga.",
+        "chinese_traditional": "對前排敵方單位造成等同於此單位攻擊力的傷害。",
+        "korean": "이 유닛의 공격력만큼 전열 적 유닛에 피해를 줍니다.",
+        "japanese": "前列の敵ユニットにこのユニットの攻撃力に等しいダメージを与える。"
+      },
+      "trigger": "card_exhausted",
+      "effects": [
+        {
+          "effectStateName": "CardEffectDamagePerSourceAttack",
+          "targetMode": "front_in_room",
+          "targetTeamType": "heroes",
+          "paramInt": 1
+        }
+      ]
+    }
+  ],
+  "unitAbility": {
+    "id": "SmeltAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-5051ea1dd4a5277b-fd1f76c8f1d5d6a489d2cd094f9c9548-v2",
+      "english": "Smelt",
+      "french": "Fusion",
+      "german": "Schmelzen",
+      "russian": "Плавка",
+      "portuguese": "Fundir",
+      "chinese": "熔炼",
+      "spanish": "Fundición",
+      "chinese_traditional": "熔煉",
+      "korean": "제련",
+      "japanese": "精錬"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-ef9ed4b5bc404a1b-fd1f76c8f1d5d6a489d2cd094f9c9548-v2",
+      "english": "[smelt] a card in hand. ",
+      "french": "<b>Fusionne</b> une carte en main. ",
+      "german": "Eine Karte auf der Hand [smelt]. ",
+      "russian": "[smelt] карты в руке. ",
+      "portuguese": "<b>Funde</b> uma carta na mão. ",
+      "chinese": "[smelt]一张手牌。 ",
+      "spanish": "<b>Funde</b> una carta de tu mano. ",
+      "chinese_traditional": "[smelt]一張手牌中的卡牌。 ",
+      "korean": "패에 있는 카드 하나를 [smelt]합니다. ",
+      "japanese": "手札のカードを[smelt]する。 "
+    },
+    "cardType": "spell",
+    "rarity": "common",
+    "linkedClass": "ClassRailforged",
+    "cardArtPrefabVariantRef": {
+      "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_CrucibleStewardAbility.prefab",
+      "m_AssetGUID": "33dfd52c22670bb4ba4ddc6e866c343f"
+    },
+    "effects": [
+      {
+        "effectStateName": "CardEffectChooseDiscard",
+        "targetMode": "room",
+        "targetTeamType": "both",
+        "additionalTooltips": [
+          {
+            "descriptionKey": {
+              "key": "CardEffectChooseDiscard_Consume_TooltipText",
+              "english": "[consume] a card in hand. Gain [ember] and [forgepoints] equal to its base [ember] cost.",
+              "french": "<b>Détruisez</b> une carte en main. Gagnez des [ember] et des [forgepoints] valant son coût de base en [ember].",
+              "german": "<b>Verbrauche</b> eine Karte von der Hand. Erhalte [ember] und [forgepoints] im Ausmaß ihrer [ember]-Basiskosten.",
+              "russian": "[consume] карты из руки. Даются [ember] и [forgepoints] равные ее обычной стоимости в [ember].",
+              "portuguese": "<b>Consome</b> uma carta na mão. Recebe [ember] e [forgepoints] equivalentes ao seu custo base de [ember].",
+              "chinese": "[consume]一张手牌。获得相当于其基础 [ember] 费用的 [ember] 和 [forgepoints]。",
+              "spanish": "<b>Consume</b> una carta de tu mano. Obtienes tantos [forgepoints] y [ember] como su coste base en [ember].",
+              "chinese_traditional": "[consume]一張手牌中的卡牌。獲得等同於其基礎[ember]費用的[ember]和[forgepoints]。",
+              "korean": "패에 있는 카드 하나를 [consume]합니다. 해당 카드의 기본 [ember] 비용만큼 [ember] 및 [forgepoints]를 획득합니다.",
+              "japanese": "手札のカードを[consume]する。その基本[ember]コストと等しい[ember]と[forgepoints]を得る。"
+            },
+            "titleKey": {
+              "key": "CardEffectChooseDiscard_Consume_TooltipTitle",
+              "english": "Smelt",
+              "french": "Fusion",
+              "german": "Schmelzen",
+              "russian": "Плавка",
+              "portuguese": "Fundir",
+              "chinese": "熔炼",
+              "spanish": "Fundición",
+              "chinese_traditional": "熔煉",
+              "korean": "제련",
+              "japanese": "精錬"
+            }
+          }
+        ],
+        "paramInt": 3,
+        "additionalParamInt": 5,
+        "paramBool2": true
+      }
+    ],
+    "cooldownAfterActivated": 2,
+    "isUnitAbility": true,
+    "initialKeyboardTarget": "front_friendly"
+  },
+  "size": 2,
+  "health": 10,
+  "attackDamage": 15,
+  "subtypeKeys": [
+    "SubtypesData_Automaton2",
+    "SubtypesData_BannerUnit"
+  ],
+  "characterChatterData": "RailforgedCrucibleStewardChatter",
+  "artistAttribution": "Ron Kee"
+}

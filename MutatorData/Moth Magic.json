@@ -1,0 +1,78 @@
+{
+  "id": "MoveUpOnSpellDamage",
+  "name": "Moth Magic",
+  "nameKey": {
+    "key": "MutatorData_nameKey-1ab511a65770fc0a-fcc62a0d33be5604cab4129fbef259d6-v2",
+    "english": "Moth Magic",
+    "french": "Magie phalénique",
+    "german": "Mottenmagie",
+    "russian": "Магия мотылька",
+    "portuguese": "Magia de Mariposa",
+    "chinese": "飞蛾魔法",
+    "spanish": "Magia de polillas",
+    "chinese_traditional": "蛾之魔法",
+    "korean": "갉아먹힌 마법",
+    "japanese": "上昇の魔法"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-b972a00d5bba994e-fcc62a0d33be5604cab4129fbef259d6-v2",
+    "english": "When a damage spell hits a unit, [ascend] it.",
+    "french": "Quand une unité subit des dégâts à cause d'un sort, elle <b>monte</b>.",
+    "german": "Wenn eine Einheit durch einen Zauber Schaden nimmt, wende [ascend] an.",
+    "russian": "[ascend] бойца, если он получит урон от чар.",
+    "portuguese": "<b>Eleva</b> uma unidade quando um feitiço de dano a atinge.",
+    "chinese": "当有单位受到法术伤害时，使该单位<b>上升</b>。",
+    "spanish": "Cuando un hechizo de daño impacta a una unidad, le causa [ascend].",
+    "chinese_traditional": "當傷害法術命中單位時，使其[ascend]。",
+    "korean": "피해 주문이 유닛을 적중하면, 해당 유닛을 [ascend]시킵니다.",
+    "japanese": "ダメージ呪文がユニットに命中すると、[ascend]させる。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectChanceAddEffectOnDamageCardPlayed",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectBump",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramInt": 1
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardEffectBump_Up_TooltipText",
+            "english": "Move up a floor and to the back of that floor.",
+            "french": "Fait monter d'un niveau et repousse à l'arrière du niveau.",
+            "german": "Eine Ebene nach oben und dort nach hinten versetzen.",
+            "russian": "Подъем на этаж и перемещение в его начало.",
+            "portuguese": "Move para o fundo do andar de cima.",
+            "chinese": "向上移动一层，到达该层后面。",
+            "spanish": "Sube un piso y se coloca en última posición.",
+            "chinese_traditional": "上移一層並移至該層後排。",
+            "korean": "한 층 위 후열로 이동합니다.",
+            "japanese": "1階上がり、そのフロアの後列に移動する。"
+          },
+          "titleKey": {
+            "key": "CardEffectBump_Up_TooltipTitle",
+            "english": "[ascend]",
+            "french": "<b>Ascension</b>",
+            "german": "<b>Aufsteigen</b>",
+            "russian": "[ascend]",
+            "portuguese": "<b>Elevar</b>",
+            "chinese": "<b>上升</b>",
+            "spanish": "[ascend]",
+            "chinese_traditional": "[ascend]",
+            "korean": "[ascend]",
+            "japanese": "[ascend]"
+          }
+        }
+      ],
+      "paramInt": 100
+    }
+  ],
+  "boonValue": -5,
+  "tags": [
+    "handsize"
+  ]
+}

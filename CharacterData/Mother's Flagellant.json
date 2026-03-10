@@ -1,0 +1,104 @@
+{
+  "id": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+  "name": "Mother's Flagellant",
+  "nameKey": {
+    "key": "CharacterData_nameKey-de350c98e8e809a7-43c7dc6586a2cd9459a1adca445c1592-v2",
+    "english": "Mother's Flagellant",
+    "french": "Flagelleur de la Mère",
+    "german": "Mutters Geißler",
+    "russian": "Флагеллант Матери",
+    "portuguese": "Flagelante da Mãe",
+    "chinese": "母亲的苦修者",
+    "spanish": "Flagelante de Madre",
+    "chinese_traditional": "母親的鞭笞者",
+    "korean": "어머니의 고행자",
+    "japanese": "マザーのフラジェラント"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f529afcc992e7cca-43c7dc6586a2cd9459a1adca445c1592-v2",
+      "english": "The Mother saw Dominian’s corruption upon this soul and saw an opportunity to mold them to Her own will.",
+      "french": "La Mère remarqua la corruption de Domination sur cette âme et saisit cette occasion pour la modeler à sa guise.",
+      "german": "Die Mutter erkannte die Verderbnis des Herrschaftstitanen in dieser Seele wieder und sah eine Gelegenheit, diese nach Ihrem eigenen Willen zu schmieden.",
+      "russian": "Мать увидела скверну Доминиона в этой Душе, как и шанс изменить ее, подчинив себе.",
+      "portuguese": "A Mãe viu a corrupção do Domínio nessa alma e percebeu uma oportunidade para moldá-la à Sua própria vontade.",
+      "chinese": "母亲在这个灵魂上看到了统御泰坦的腐化，并发现了一个机会，能将该灵魂按照她的意愿进行改造。",
+      "spanish": "La Madre vio la corrupción de Dominio en esta alma y la interpretó como una oportunidad de moldearla a Su voluntad.",
+      "chinese_traditional": "母親看見此靈魂身上沾染的主宰腐化，並從中看到了將他們塑造成執行己身意志之傀儡的良機。",
+      "korean": "어머니는 이 영혼 위에 드리운 도미니온의 타락을 알아보았고, 그들을 자신의 뜻대로 빚어낼 기회로 여겼다.",
+      "japanese": "マザーは、この魂にドミニオンの堕落を感じ取り、それを自由に変質させる機会を見出したのだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Flagellant_SoulSavior.prefab",
+    "m_AssetGUID": "cceba40fe119928478c2e983409e632f"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-9bfc1695fc6f1b8a-43c7dc6586a2cd9459a1adca445c1592-v2",
+        "english": "Take [effect0.power] damage. ",
+        "french": "Subit <nobr>[effect0.power] DGT.</nobr> ",
+        "german": "Erleide [effect0.power] Schaden. ",
+        "russian": "Получает [effect0.power] урона. ",
+        "portuguese": "Sofre [effect0.power] de dano. ",
+        "chinese": "受到 [effect0.power] 点伤害。 ",
+        "spanish": "Sufre [effect0.power] de daño. ",
+        "chinese_traditional": "受到[effect0.power]點傷害。 ",
+        "korean": "피해를 [effect0.power] 받습니다. ",
+        "japanese": "[effect0.power]のダメージを受ける。 "
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramInt": 20
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-d8b246726b480181-43c7dc6586a2cd9459a1adca445c1592-v2",
+        "english": "Gain [burst] [effect0.status0.power].",
+        "french": "Octroie [burst] [effect0.status0.power].",
+        "german": "Erhalte [burst] [effect0.status0.power].",
+        "russian": "Дается [burst] х[effect0.status0.power].",
+        "portuguese": "Recebe [burst] [effect0.status0.power].",
+        "chinese": "获得 [burst] [effect0.status0.power]。",
+        "spanish": "Añade [burst] [effect0.status0.power].",
+        "chinese_traditional": "獲得[burst][effect0.status0.power]。",
+        "korean": "[burst] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[burst] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "burst",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 80,
+    "endlessAttack": 4
+  },
+  "size": 2,
+  "health": 80,
+  "attackDamage": 3,
+  "lifemotherVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Heavy_Enemy"
+  ],
+  "characterChatterData": "R1SoulSaviorEnemies_Male_ChatterData",
+  "artistAttribution": "Herrick Ong"
+}

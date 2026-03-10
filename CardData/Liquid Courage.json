@@ -1,0 +1,85 @@
+{
+  "id": "LiquidCourage",
+  "name": "Liquid Courage",
+  "nameKey": {
+    "key": "CardData_nameKey-49116ca354cb74cd-49f7e4f20b274e045b8f254a0092204d-v2",
+    "english": "Liquid Courage",
+    "french": "Courage liquide",
+    "german": "Flüssiger Mut",
+    "russian": "Глоток мужества",
+    "portuguese": "Coragem Líquida",
+    "chinese": "勇气药水",
+    "spanish": "Valor líquido",
+    "chinese_traditional": "液態勇氣",
+    "korean": "용기의 물약",
+    "japanese": "勇気の液体"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-55440eedcd8e2a2c-49f7e4f20b274e045b8f254a0092204d-v2",
+    "english": "Apply [damageshield] [effect0.status0.power] and [valor] [effect1.status0.power].",
+    "french": "Applique [damageshield] [effect0.status0.power] et [valor] [effect1.status0.power].",
+    "german": "Wende [damageshield] [effect0.status0.power] und [valor] [effect1.status0.power] an.",
+    "russian": "Накладывает [damageshield] х[effect0.status0.power] и [valor] х[effect1.status0.power].",
+    "portuguese": "Concede [damageshield] [effect0.status0.power] e aplica [valor] [effect1.status0.power].",
+    "chinese": "施加 [damageshield] [effect0.status0.power] 和 [valor] [effect1.status0.power]。",
+    "spanish": "Añade [damageshield] [effect0.status0.power] y [valor] [effect1.status0.power].",
+    "chinese_traditional": "施加[damageshield][effect0.status0.power]和[valor][effect1.status0.power]。",
+    "korean": "[damageshield] [effect0.status0.power] 및 [valor] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[damageshield] [effect0.status0.power]と[valor] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-49fc1bc2e668862b-49f7e4f20b274e045b8f254a0092204d-v2",
+      "english": "Sunlight with a sprinkle of courage in a bottle.",
+      "french": "Une fiole contenant la lumière du soleil et une pincée de courage.",
+      "german": "Sonnenlicht mit einem Spritzer Mut in einer Flasche.",
+      "russian": "Солнечный свет и капелька смелости в бутылке.",
+      "portuguese": "Luz do sol, com uma pitada de coragem, em uma garrafa.",
+      "chinese": "瓶装的阳光和少许勇气。",
+      "spanish": "Luz solar embotellada con una pizca de valor.",
+      "chinese_traditional": "瓶子裡帶著一絲勇氣和陽光。",
+      "korean": "햇살과 약간의 용기를 담은 병.",
+      "japanese": "少々の勇気を加えた日光のボトル。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_LiquidCourage.prefab",
+    "m_AssetGUID": "a28ba4610791d1b419fb1d506eb67320"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "valor",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

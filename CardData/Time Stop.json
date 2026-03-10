@@ -1,0 +1,73 @@
+{
+  "id": "PyreHeartTimeAbility",
+  "name": "Time Stop",
+  "nameKey": {
+    "key": "CardData_nameKey-b49716bb8b6c02a7-34c23a6623ef774459310856e9e06cd9-v2",
+    "english": "Time Stop",
+    "french": "Arrêt du temps",
+    "german": "Zeitstopp",
+    "russian": "Остановка времени",
+    "portuguese": "Paragem Temporal",
+    "chinese": "时间停止",
+    "spanish": "Tiempo detenido",
+    "chinese_traditional": "時間停止",
+    "korean": "시간 정지",
+    "japanese": "時間停止"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-277c770f9f8cf2d6-34c23a6623ef774459310856e9e06cd9-v2",
+    "english": "Apply [freeze] to all cards in hand.",
+    "french": "Confère [freeze] à toutes les cartes en main.",
+    "german": "Wende [freeze] auf alle Karten auf der Hand an.",
+    "russian": "На все карты в руке накладывается [freeze].",
+    "portuguese": "Aplica [freeze] a todas as cartas em sua mão.",
+    "chinese": "使所有手牌获得 [freeze]。",
+    "spanish": "Añade [freeze] a todas las cartas de tu mano.",
+    "chinese_traditional": "對手牌中的所有卡牌施加[freeze]。",
+    "korean": "패에 있는 모든 카드에 [freeze] 효과를 적용합니다.",
+    "japanese": "手札のすべてのカードに[freeze]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectFreezeAllCards",
+      "targetMode": "hand",
+      "targetCardType": "invalid",
+      "paramCardFilter": {
+        "id": "ValidEchoOfTheTimeFatherCards",
+        "cardType": "spell",
+        "additionalCardTypes": [
+          "monster",
+          "equipment",
+          "room"
+        ],
+        "excludedCardTraitsOperator": "and",
+        "excludedCardTraits": [
+          "CardTraitPermafrost"
+        ],
+        "disallowedCardPools": [
+          "AllBlightsAndScourges"
+        ]
+      },
+      "showPyreNotification": true,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_EchoofthetimefatherAbility.prefab",
+          "m_AssetGUID": "88391bf23e23f2342ae662ac6f657b11"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectRemoveAbility",
+      "targetMode": "pyre",
+      "targetTeamType": "both",
+      "suppressPyreRoomFocus": true,
+      "paramRelicData": "Echoes_PyreCanUseAbilityMultipleTimes"
+    }
+  ],
+  "cooldownAfterActivated": 99,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

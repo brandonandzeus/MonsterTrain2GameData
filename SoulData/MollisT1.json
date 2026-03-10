@@ -1,0 +1,113 @@
+{
+  "id": "MollisT1",
+  "name": "MollisT1",
+  "nameKey": {
+    "key": "SoulData_nameKey-62f915646007e3bd-df22cfd1e3081e843b1dc64f99660701-v2",
+    "english": "Mollis",
+    "french": "Mollis",
+    "german": "Mollis",
+    "russian": "Мякиш",
+    "portuguese": "Mollis",
+    "chinese": "莫里斯",
+    "spanish": "Glacial",
+    "chinese_traditional": "軟體",
+    "korean": "말랑이",
+    "japanese": "モリス"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-8eda7aa7af30ee34-df22cfd1e3081e843b1dc64f99660701-v2",
+    "english": "Gain [juice3].",
+    "french": "Octroie [juice3].",
+    "german": "Erhalte [juice3].",
+    "russian": "Дается [juice3].",
+    "portuguese": "Recebe [juice3].",
+    "chinese": "获得 [juice3]。",
+    "spanish": "Añade [juice3].",
+    "chinese_traditional": "獲得[juice3]。",
+    "korean": "[juice3]을 획득합니다.",
+    "japanese": "[juice3]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "paramCardUpgradeData": {
+        "id": "MollisT1_Upgrade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-5496f3bd5083a190-70caf93cc1435ad43b8f26a5a5765bd5-v2",
+          "english": "Mollis",
+          "french": "Mollis",
+          "german": "Mollis",
+          "russian": "Мякиш",
+          "portuguese": "Mollis",
+          "chinese": "莫里斯",
+          "spanish": "Glacial",
+          "chinese_traditional": "軟體",
+          "korean": "말랑이",
+          "japanese": "モリス"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-c47ce0ad41d73961-70caf93cc1435ad43b8f26a5a5765bd5-v2",
+          "english": "Gain [juice3].",
+          "french": "Octroie [juice3].",
+          "german": "Erhalte [juice3].",
+          "russian": "Дается [juice3].",
+          "portuguese": "Recebe [juice3].",
+          "chinese": "获得 [juice3]。",
+          "spanish": "Añade [juice3].",
+          "chinese_traditional": "獲得[juice3]。",
+          "korean": "[juice3]을 획득합니다.",
+          "japanese": "[juice3]を得る。"
+        },
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitJuice3"
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeDoublestack",
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitJuice",
+              "CardTraitJuice3",
+              "CardTraitJuice4"
+            ]
+          },
+          {
+            "id": "OnlyStatusEffectSetting",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectAddStatusEffect",
+              "CardEffectAddStatusEffectNextMonster",
+              "CardEffectAddStatusEffectNull",
+              "CardEffectAddStatusEffectPerOtherEffect"
+            ],
+            "upgradeDisabledReason": "no_status"
+          }
+        ],
+        "isRegionRunUpgrade": true,
+        "excludeFromClones": true
+      }
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-771f9e354289cfee-df22cfd1e3081e843b1dc64f99660701-v2",
+      "english": "Defeat Lifemother while playing Stygian to unlock.",
+      "french": "Battez Mère Nature en jouant les Stygiens pour déverrouiller.",
+      "german": "Besiege zum Freischalten die Lebensmutter, während du mit den Stygiern spielst.",
+      "russian": "Чтобы разблокировать, победите Мать-природу, играя за Стигийцев.",
+      "portuguese": "Derrote a Genetriz jogando com os Estigeanos para desbloquear.",
+      "chinese": "用冥卫击败生命之母以解锁。",
+      "spanish": "Derrota a la Madre Vida con la Guardia Estigia para desbloquear.",
+      "chinese_traditional": "遊玩冥衛時擊敗生命之母以解鎖。",
+      "korean": "명계의 주민 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
+      "japanese": "ステュクス族でのプレイでライフマザーを倒してアンロック。"
+    },
+    "unlockCondition": "soul_kill_lifemother_using_stygian",
+    "paramInt": 1
+  },
+  "tierLevel": 1,
+  "nextTier": "MollisT2"
+}

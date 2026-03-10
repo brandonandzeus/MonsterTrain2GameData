@@ -1,0 +1,94 @@
+{
+  "id": "DragonsGainStrikeAddPyregel",
+  "name": "Fhyra’s Inferno",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-7c334c0edd7d1a78-95588c1f0c0b8ce43bd6602f6a45f463-v2",
+    "english": "Fhyra’s Inferno",
+    "french": "Brasier infernal de Fhyra",
+    "german": "Fhyras Inferno",
+    "russian": "Адское пламя Фиры",
+    "portuguese": "Inferno de Fhyra",
+    "chinese": "菲拉的地狱火",
+    "spanish": "Infierno de Fhyra",
+    "chinese_traditional": "費拉的地獄火",
+    "korean": "휘라의 업화",
+    "japanese": "ファイラの地獄"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-37e93f3c99cff080-95588c1f0c0b8ce43bd6602f6a45f463-v2",
+    "english": "Dragons apply [pyregel] [effect0.power] on [strike].",
+    "french": "Les dragons appliquent [pyregel] [effect0.power] à chaque [strike].",
+    "german": "Drachen wenden beim [strike] [pyregel] [effect0.power] an.",
+    "russian": "При <b>Выпаде</b> драконы накладывают [pyregel] х[effect0.power].",
+    "portuguese": "Os Dragões aplicam [pyregel] [effect0.power] ao [strike].",
+    "chinese": "龙 [strike] 时施加 [pyregel] [effect0.power]。",
+    "spanish": "Los dragones añaden [pyregel] [effect0.power] al <b>Impactar</b>.",
+    "chinese_traditional": "龍[strike]時施加[pyregel][effect0.power]。",
+    "korean": "드래곤은 [strike] 시 [pyregel] [effect0.power] 효과를 적용합니다.",
+    "japanese": "竜が、[strike]時に[pyregel] [effect0.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-9be0d2aede3a911b-95588c1f0c0b8ce43bd6602f6a45f463-v2",
+      "english": "A small effigy representing the mighty Fhyra, mother of the Pyreborne and whose rules all dragons must follow.",
+      "french": "Une petite effigie représentant la puissante Fhyra, mère des Draconides, dont les règles doivent être respectées par tous les dragons.",
+      "german": "Ein kleines Bildnis, das die mächtige Fhyra darstellt: Die Mutter der Höllenglutkinder, der alle Drachen folgen.",
+      "russian": "Небольшая фигурка всемогущей Фиры, матери Пеклорожденных и той, чьих правил должны придерживаться все драконы.",
+      "portuguese": "Uma pequena efígie representando a poderosa Fhyra, mãe dos Píricos, cujas regras todos os dragões devem seguir.",
+      "chinese": "一个小雕像，代表着强大的菲拉，她是薪龙族之母，所有的龙族都必须遵守她的法则。",
+      "spanish": "Una pequeña efigie que representa a la poderosa Fhyra, madre de los Hijos de la Pira y cuyos designios deben acatar todos los dragones.",
+      "chinese_traditional": "象徵著強大費拉的小雕像，所有的龍都必須遵循她的規則，她是火焰之子的母親。",
+      "korean": "화로의 후예의 어머니이자, 모든 드래곤이 따르는 위대한 존재 휘라를 형상화한 작은 인형.",
+      "japanese": "火竜族の母であり、すべての竜が従わなければならない掟である偉大なるファイラを象徴する小さな彫像。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "additionalTooltips": [
+        {
+          "trigger": "on_attacking",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "CollectableRelicData_descriptionKey-e2497ad2e4a15117-95588c1f0c0b8ce43bd6602f6a45f463-v2",
+            "english": "Apply [pyregel] [effect0.status0.power].",
+            "french": "Inflige [pyregel] [effect0.status0.power].",
+            "german": "Wende [pyregel] [effect0.status0.power] an.",
+            "russian": "Накладывает [pyregel] х[effect0.status0.power].",
+            "portuguese": "Aplica [pyregel] [effect0.status0.power].",
+            "chinese": "施加 [pyregel] [effect0.status0.power]。",
+            "spanish": "Añade [pyregel] [effect0.status0.power].",
+            "chinese_traditional": "施加[pyregel][effect0.status0.power]。",
+            "korean": "[pyregel] [effect0.status0.power] 효과를 적용합니다.",
+            "japanese": "[pyregel] [effect0.status0.power]を付与する。"
+          },
+          "trigger": "on_attacking",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "last_attacked_character",
+              "targetTeamType": "heroes",
+              "paramStatusEffects": [
+                {
+                  "statusId": "pyregel",
+                  "count": 5
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Dragon",
+      "paramBool": true
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "SavantaT3",
+  "name": "SavantaT3",
+  "nameKey": {
+    "key": "SoulData_nameKey-0000127e17343457-3c371068594723940b48f8433b0881b0-v2",
+    "english": "Savanta III",
+    "french": "Savanta III",
+    "german": "Savanta III",
+    "russian": "Саванта III",
+    "portuguese": "Savanta III",
+    "chinese": "萨凡塔 III",
+    "spanish": "Prodigio III",
+    "chinese_traditional": "薩凡塔III",
+    "korean": "사반타 III",
+    "japanese": "サヴァンタIII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-9fbbf64bc86f1c11-3c371068594723940b48f8433b0881b0-v2",
+    "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost -[effect0.upgrade0.trigger0.effect0.power][ember]. Spellchain.",
+    "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base -[effect0.upgrade0.trigger0.effect0.power][ember]. Sorts à la chaîne.",
+    "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten -[effect0.upgrade0.trigger0.effect0.power][ember]. Zauberkette.",
+    "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное стоимости -[effect0.upgrade0.trigger0.effect0.power][ember]. Цепочка чар.",
+    "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base -[effect0.upgrade0.trigger0.effect0.power][ember]. Corrente de Feitiços.",
+    "chinese": "此法术现在免费。受到等同于其基础费用的 -[effect0.upgrade0.trigger0.effect0.power][ember] 的 [pyrehealth] 伤害。法术连锁。",
+    "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base -[effect0.upgrade0.trigger0.effect0.power][ember]. Hechizo en cadena.",
+    "chinese_traditional": "此法術現在免費。受到等同於基礎費用-[effect0.upgrade0.trigger0.effect0.power][ember]的[pyrehealth]傷害。法術連鎖。",
+    "korean": "이 주문은 이제 무료입니다. 기본 비용에서 -[effect0.upgrade0.trigger0.effect0.power][ember]만큼의 [pyrehealth] 피해를 받습니다. 주문 연쇄.",
+    "japanese": "この呪文のコストが無料になる。基本コスト-[effect0.upgrade0.trigger0.effect0.power][ember]に等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "paramCardUpgradeData": {
+        "id": "SavantaT3_Upgrade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-e125339284f1a2b1-7267cb1014fc6ac4ba4261bfb21cc329-v2",
+          "english": "Savanta",
+          "french": "Savanta",
+          "german": "Savanta",
+          "russian": "Саванта",
+          "portuguese": "Savanta",
+          "chinese": "萨凡塔",
+          "spanish": "Prodigio",
+          "chinese_traditional": "薩凡塔",
+          "korean": "사반타",
+          "japanese": "サヴァンタ"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-93201bf9b06dfe4a-7267cb1014fc6ac4ba4261bfb21cc329-v2",
+          "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost -[trigger0.effect0.power][ember]. Spellchain.",
+          "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base -[trigger0.effect0.power][ember]. Sorts à la chaîne.",
+          "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten -[trigger0.effect0.power][ember]. Zauberkette.",
+          "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное стоимости -[trigger0.effect0.power][ember]. Цепочка чар.",
+          "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base -[trigger0.effect0.power][ember]. Corrente de Feitiços.",
+          "chinese": "此法术现在免费。受到等同于其基础费用的 -[trigger0.effect0.power][ember] 的 [pyrehealth] 伤害。法术连锁。",
+          "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base -[trigger0.effect0.power][ember]. Hechizo en cadena.",
+          "chinese_traditional": "此法術現在免費。受到等同於基礎費用-[trigger0.effect0.power][ember]的[pyrehealth]傷害。法術連鎖。",
+          "korean": "이 주문은 이제 무료입니다. 기본 비용에서 -[trigger0.effect0.power][ember]만큼의 [pyrehealth] 피해를 받습니다. 주문 연쇄.",
+          "japanese": "この呪文のコストが無料になる。基本コスト-[trigger0.effect0.power][ember]に等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
+        },
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitCopyOnPlay",
+            "paramCardUpgradeData": {
+              "id": "SavantaT3_UpgradeAfterCopy",
+              "traitDataUpgrades": [
+                {
+                  "traitStateName": "CardTraitEphemeral",
+                  "traitIsRemovable": false
+                }
+              ],
+              "cardTriggerUpgrades": [
+                {
+                  "trigger": "on_cast",
+                  "cardEffects": [
+                    {
+                      "effectStateName": "CardEffectPayCostWithPyreHealth",
+                      "targetMode": "room",
+                      "targetTeamType": "none",
+                      "paramInt": 1
+                    }
+                  ],
+                  "triggerKeywordCardTextSuppressed": false
+                }
+              ],
+              "filters": [
+                {
+                  "id": "OnlySpells",
+                  "cardType": "spell"
+                },
+                {
+                  "id": "ExcludeUnplayable",
+                  "excludedCardTraitsOperator": "and",
+                  "excludedCardTraits": [
+                    "CardTraitUnplayable"
+                  ]
+                }
+              ],
+              "isRegionRunUpgrade": true,
+              "excludeFromClones": true,
+              "removeTraitUpgrades": [
+                "CardTraitCopyOnPlay"
+              ],
+              "upgradesToRemove": [
+                "SavantaT3_Upgrade"
+              ]
+            },
+            "paramInt": 1
+          }
+        ],
+        "cardTriggerUpgrades": [
+          {
+            "trigger": "on_cast",
+            "cardEffects": [
+              {
+                "effectStateName": "CardEffectPayCostWithPyreHealth",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "paramInt": 1
+              }
+            ],
+            "triggerKeywordCardTextSuppressed": false
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlySpells",
+            "cardType": "spell"
+          },
+          {
+            "id": "ExcludeUnplayable",
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitUnplayable"
+            ]
+          }
+        ],
+        "isRegionRunUpgrade": true,
+        "excludeFromClones": true
+      }
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-99ff84fa88d2cb66-3c371068594723940b48f8433b0881b0-v2",
+      "english": "Defeat Lifemother while playing Wurmkin to upgrade.",
+      "french": "Battez Mère Nature en jouant le peuple ver pour améliorer.",
+      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Wurmlingen spielst.",
+      "russian": "Чтобы улучшить, победите Мать-природу, играя за Драконов.",
+      "portuguese": "Derrote a Genetriz jogando com os Vormoides para melhorar.",
+      "chinese": "用虫裔击败生命之母以升级。",
+      "spanish": "Derrota a la Madre Vida con las Sierpes para mejorar.",
+      "chinese_traditional": "遊玩蟲裔時擊敗生命之母以升級。",
+      "korean": "웜킨 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
+      "japanese": "ワームキンでのプレイでライフマザーを倒してアップグレード。"
+    },
+    "unlockCondition": "soul_kill_lifemother_using_wurmkin",
+    "paramInt": 1
+  },
+  "tierLevel": 3
+}

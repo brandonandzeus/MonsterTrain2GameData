@@ -1,0 +1,79 @@
+{
+  "id": "IceAndPyre",
+  "name": "Ice and Pyre",
+  "nameKey": {
+    "key": "CardData_nameKey-2578ba0fb906750a-c11e9cef1fe321d4eaaee3f680a93612-v2",
+    "english": "Ice and Pyre",
+    "french": "Glace et Brasier",
+    "german": "Höllenglut und Eis",
+    "russian": "Лед и Пламя",
+    "portuguese": "Fúria dos Elementos",
+    "chinese": "寒冰和薪火",
+    "spanish": "Pira glacial",
+    "chinese_traditional": "冰與火堆",
+    "korean": "얼음과 화로",
+    "japanese": "氷と炉"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-10b8f61b255fadc3-c11e9cef1fe321d4eaaee3f680a93612-v2",
+    "english": "Deal [effect0.power] damage to the front enemy unit.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'ennemi en 1re ligne.",
+    "german": "Füge der vordersten gegnerischen Einheit [effect0.power] Schaden zu.",
+    "russian": "Наносит переднему вражескому бойцу [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano à unidade inimiga na frente.",
+    "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño a la primera unidad enemiga.",
+    "chinese_traditional": "對前排敵方單位造成[effect0.power]點傷害。",
+    "korean": "전열 적 유닛에게 [effect0.power]의 피해를 입힙니다.",
+    "japanese": "前列の敵ユニットに[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-f22fda2134bdd858-c11e9cef1fe321d4eaaee3f680a93612-v2",
+      "english": "Having only limited control over the elements, the Stygian have learned to harness the energy of the Pyre and freeze it for even greater impact. Unfortunately, we’ve only been able to perfect this defense within a limited range.",
+      "french": "Les Stygiens ont leurs limites quand il s'agit de contrôler les éléments, mais ils sont parvenus à maîtriser l'énergie du Brasier et à la geler pour améliorer considérablement son impact. Malheureusement, cette défense a une portée limitée.",
+      "german": "Die Stygier können die Elemente nur begrenzt kontrollieren. Zum Ausgleich haben sie gelernt, die Energie der Höllenglut einzufrieren und sie als imposante Waffe zu verwenden. Leider konnten wir diese Technik bisher nur für Nahkämpfe perfektionieren.",
+      "russian": "Обладая лишь ограниченной властью над стихиями, стигийцы научились усмирять энергию Пекла и замораживать ее для нанесения дополнительного урона. К сожалению, мы можем использовать эту линию обороны на ограниченной дистанции.",
+      "portuguese": "Tendo apenas um controle limitado sobre os elementos, os Estigeanos aprenderam a aproveitar a energia da Pira e congelá-la para causar um impacto ainda maior. Infelizmente, só conseguimos aperfeiçoar essa defesa de forma limitada.",
+      "chinese": "冥卫对元素之力有着有限的控制力，它们学会了如何操纵薪火的能量，以及如何将其冰冻，使其爆发出更大的威力。遗憾的是，我们只能在有限的程度内完善防御系统。",
+      "spanish": "Con su control limitado sobre los elementos, los estigios han aprendido a acumular la energía de la Pira y congelarla para mayor impacto. Por desgracia, solo hemos podido perfeccionar esta defensa a corta distancia.",
+      "chinese_traditional": "冥河人只能有限地控制元素，他們學會了利用火堆的能量並將其凍結，以獲得更大的衝擊力。不幸的是，我們只能在有限的範圍內完善這種防禦。",
+      "korean": "원소를 제한하고 통제한 명계의 주민은 화로의 에너지를 끌어내 이를 얼려 더욱 강력한 충격을 주는 방법을 배웠다. 안타깝게도 이 방어 능력을 완벽하게 사용할 수 있는 범위는 제한되어 있다.",
+      "japanese": "元素の制御があまり得意でないステュクス族は、炉のエネルギーを制御し、より強い力を引き出すために凍結させることを学んだ。残念ながら、この防衛手段はまだ近距離での使用でしか信頼できない。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_IceAndPyre.prefab",
+    "m_AssetGUID": "0a88e4169229f8440ae0d1376ce3ac4d"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLimitedRange"
+    },
+    {
+      "traitStateName": "CardTraitStrongerMagicPower"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 90,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_IceDamage_PS.prefab",
+          "m_AssetGUID": "f4a94428add36c74d895b56763e07ce1"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "unlockLevel": 2,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

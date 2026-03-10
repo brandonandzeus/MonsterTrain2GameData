@@ -1,0 +1,49 @@
+{
+  "id": "Echoes_GainStatsPerDeckSize",
+  "name": "Brains and Brawn",
+  "nameKey": {
+    "key": "MutatorData_nameKey-8ea1f98ffe0c2cb3-336c341b54308a14f8c78819e5937d75-v2",
+    "english": "Brains and Brawn",
+    "french": "La tête et les jambes",
+    "german": "Hirn und Haue",
+    "russian": "Ум и сила",
+    "portuguese": "Cérebro e Músculos",
+    "chinese": "有勇有谋",
+    "spanish": "Cerebro y músculo",
+    "chinese_traditional": "智慧與肌肉",
+    "korean": "두뇌와 근육",
+    "japanese": "知力と体力"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-7e93adc1f6579723-336c341b54308a14f8c78819e5937d75-v2",
+    "english": "Your units gain +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] per 10 cards in your deck.",
+    "french": "Vos unités gagnent +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] par tranche de <nobr>10 cartes</nobr> dans votre deck.",
+    "german": "Deine Einheiten erhalten für alle 10 Karten in deinem Deck +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+    "russian": "Ваши бойцы получают +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health] за каждые 10 карт в колоде.",
+    "portuguese": "Suas unidades recebem +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] para cada 10 cartas em seu deck.",
+    "chinese": "你的卡组中每有 10 张卡牌，你的单位就获得 +[effect0.upgrade.bonusdamage][attack]和 +[effect0.upgrade.bonushp][health]。",
+    "spanish": "Todas las unidades añaden +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] por cada 10 cartas en tu mazo.",
+    "chinese_traditional": "你的單位每10張牌獲得+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+    "korean": "덱에 카드 10장당 내 유닛들이 +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health]를 획득합니다.",
+    "japanese": "デッキのカード10毎につき、ユニットが+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddUnitUpgradePerPile",
+      "paramCardUpgradeData": {
+        "id": "DeckSizeStats",
+        "filters": [
+          {
+            "id": "OnlyUnit",
+            "cardType": "monster"
+          }
+        ],
+        "bonusDamage": 2,
+        "bonusHP": 2
+      },
+      "paramSourceTeam": "monsters",
+      "paramMaxInt": 10
+    }
+  ],
+  "boonValue": 4
+}

@@ -1,0 +1,103 @@
+{
+  "id": "Sycophant",
+  "name": "Magma Mauler",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Sycophant.prefab",
+    "m_AssetGUID": "73b9680711d3c9941b4c883b6d840175"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterSycophant",
+        "nameKey": {
+          "key": "CharacterData_nameKey-3c1895e4cf08a481-18dec3dc9cea5c24ab59488671cc5dc5-v2",
+          "english": "Magma Mauler",
+          "french": "Brute de magma",
+          "german": "Magmahauer",
+          "russian": "Лавовый воин",
+          "portuguese": "Brigão do Magma",
+          "chinese": "熔岩锤击者",
+          "spanish": "Luchador magmático",
+          "chinese_traditional": "岩漿猛擊者",
+          "korean": "마그마 망치꾼",
+          "japanese": "マグマ・マウラー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-0e51788aaef1af02-18dec3dc9cea5c24ab59488671cc5dc5-v2",
+            "english": "“You better pay what you owe to Lady Gilda, or I’ll squash your toes!”",
+            "french": "<nobr>« Paie</nobr> ce que tu dois à Dame Gilda, ou je t'écrase les <nobr>orteils ! »</nobr>",
+            "german": "„Begleich besser deine Schulden bei Lady Gilda, sonst zerquetsche ich deine Zehen!“",
+            "russian": "«Заплати-ка Леди Гильде все долги, а не то я раздавлю тебе пальцы!»",
+            "portuguese": "“É melhor pagar o que deve à Senhorita Gilda, ou vou esmagar seus dedos do pé!”",
+            "chinese": "“你最好把欠吉尔达女士的欠款都还清，否则我就碾碎你的脚趾！”",
+            "spanish": "«¡O pagas tu deuda a lady Gilda o empiezo a partir dedos!».",
+            "chinese_traditional": "「你最好付清欠吉爾達夫人的債，否則我就把你的腳趾踩扁！」",
+            "korean": "\"레이디 길다께 진 빚을 갚지 않으면 발가락을 짓이겨버릴 테다!\"",
+            "japanese": "「レディ・ギルダへの借りを返さないと、つま先を踏み潰してやるぞ！」"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Sycophant.prefab",
+          "m_AssetGUID": "c419dd322432f454993522b3f76de94d"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-a8004289e11542e2-18dec3dc9cea5c24ab59488671cc5dc5-v2",
+              "english": "Apply [pyregel] [effect0.status0.power].",
+              "french": "Inflige [pyregel] [effect0.status0.power].",
+              "german": "Wende [pyregel] [effect0.status0.power] an.",
+              "russian": "Накладывает [pyregel] х[effect0.status0.power].",
+              "portuguese": "Aplica [pyregel] [effect0.status0.power].",
+              "chinese": "施加 [pyregel] [effect0.status0.power]。",
+              "spanish": "Añade [pyregel] [effect0.status0.power].",
+              "chinese_traditional": "施加[pyregel][effect0.status0.power]。",
+              "korean": "[pyregel] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "[pyregel] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_attacking",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "last_attacked_character",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "pyregel",
+                    "count": 8
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 25,
+        "attackDamage": 10,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Dragon"
+        ],
+        "characterChatterData": "PyreborneDragonChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

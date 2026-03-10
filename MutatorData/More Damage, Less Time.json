@@ -1,0 +1,56 @@
+{
+  "id": "Echoes_IncreasePotencyFrostbiteDecay",
+  "name": "More Damage, Less Time",
+  "nameKey": {
+    "key": "MutatorData_nameKey-f80e888a042fd577-10be6fe641002834cb9aa7de6269da6e-v2",
+    "english": "More Damage, Less Time",
+    "french": "Plus de dégâts, moins de temps",
+    "german": "Mehr Schaden, weniger Zeit",
+    "russian": "Больше урона, меньше времени",
+    "portuguese": "Mais Dano, Menos Tempo",
+    "chinese": "伤害太高，没时间了",
+    "spanish": "Más daño, menos tiempo",
+    "chinese_traditional": "更多傷害，更少時間",
+    "korean": "추가 피해, 짧은 시간",
+    "japanese": "時短でダメージ増大"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-719075b8826e11ba-10be6fe641002834cb9aa7de6269da6e-v2",
+    "english": "[frostbite] and [decay] deal an extra [effect0.power] damage per stack.",
+    "french": "[frostbite] et [decay] infligent <nobr>+[effect0.power] DGT</nobr> par cumul.",
+    "german": "[frostbite] und [decay] verursachen +[effect0.power] Schaden pro Stapel.",
+    "russian": "[frostbite] и [decay] наносят +[effect0.power] урона за слой.",
+    "portuguese": "[frostbite] e [decay] causam [effect0.power] de dano extra por carga.",
+    "chinese": "每层[frostbite]和[decay]额外造成 [effect0.power] 点伤害。",
+    "spanish": "[frostbite] y [decay] infligen [effect0.power] de daño adicional por acumulación.",
+    "chinese_traditional": "[frostbite]和[decay]每層額外造成[effect0.power]點傷害。",
+    "korean": "스택당 [frostbite] 및 [decay]가 입히는 피해가 +[effect0.power] 증가합니다.",
+    "japanese": "[frostbite]と[decay]が1スタックにつき[effect0.power]の追加ダメージを与える。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectModifyStatusMagnitude",
+      "paramStatusEffects": [
+        {
+          "statusId": "decay",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "none",
+      "paramInt": 1
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyStatusMagnitude",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "none",
+      "paramInt": 1
+    }
+  ],
+  "boonValue": 4,
+  "disableInDailyChallenges": true
+}

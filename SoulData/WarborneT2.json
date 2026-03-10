@@ -1,0 +1,61 @@
+{
+  "id": "WarborneT2",
+  "name": "WarborneT2",
+  "nameKey": {
+    "key": "SoulData_nameKey-3b8aac9fdc6735c3-e00844eedbe94684d873b31e94288151-v2",
+    "english": "Warborne II",
+    "french": "Guerroyeur II",
+    "german": "Kriegsgeboren II",
+    "russian": "Воитель II",
+    "portuguese": "Osso de Guerra II",
+    "chinese": "为战而生 II",
+    "spanish": "Combatiente II",
+    "chinese_traditional": "戰生II",
+    "korean": "전쟁 태생 II",
+    "japanese": "ウォーボーンII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-b9ec99f42f5d50f9-e00844eedbe94684d873b31e94288151-v2",
+    "english": "Draw +1 for each floor that has enemy units on it at turn end. Draw +[effect1.power] each turn during Relentless.",
+    "french": "Piochez +1 pour chaque niveau où se trouvent des ennemis à la fin du tour. Piochez +[effect1.power] à chaque tour pendant Impitoyable.",
+    "german": "Ziehe für jede Ebene mit gegnerischen Einheiten am Rundenende +1 Karte. Ziehe bei „Unerbittlich“ +[effect1.power] Karte(n).",
+    "russian": "В конце хода вытяните +1 за каждый этаж, где есть враг. Вытягивайте +[effect1.power] каждый ход, пока активно Упорство.",
+    "portuguese": "Compre +1 para cada andar que tenha unidades inimigas no final do turno. Compre +[effect1.power] a cada turno durante Implacável.",
+    "chinese": "回合结束时，每个存在敌方单位的楼层都会使抽牌数 +1。不懈生效期间，每回合抽 +[effect1.power] 张牌。",
+    "spanish": "Roba +1 por cada piso que tenga unidades enemigas al final del turno. Roba +[effect1.power] cada turno durante Implacable.",
+    "chinese_traditional": "在回合結束時，每個有敵方單位的樓層抽+1張牌。在猛攻期間每回合抽+[effect1.power]張牌。",
+    "korean": "턴 종료 시, 적 유닛들이 있는 층 하나당 카드를 1장 추가로 뽑습니다. 집요함 상태에서는 매 턴 +[effect1.power]장을 추가로 뽑습니다.",
+    "japanese": "ターン終了時に敵ユニットがいるフロア1つにつきドロー+1。猛進中、毎ターンドロー+[effect1.power]。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAdditionalDrawForEnemyOccupiedFloors",
+      "paramCardType": "spell",
+      "paramSourceTeam": "none",
+      "paramTargetMode": "front_in_room"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAdditionalDrawDuringRelentless",
+      "paramInt": 1
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-73b6792876439e56-e00844eedbe94684d873b31e94288151-v2",
+      "english": "Slay enemy units to upgrade.",
+      "french": "Éliminez des ennemis pour améliorer.",
+      "german": "Besiege zum Freischalten gegnerische Einheiten.",
+      "russian": "Чтобы улучшить, убейте врагов.",
+      "portuguese": "Abata unidades inimigas para melhorar.",
+      "chinese": "击杀敌方单位以升级。",
+      "spanish": "Ejecuta unidades enemigas para mejorar.",
+      "chinese_traditional": "擊殺敵方單位以升級。",
+      "korean": "적 유닛들을 처치하면 업그레이드됩니다.",
+      "japanese": "敵ユニットをキルしてアップグレード。"
+    },
+    "unlockCondition": "soul_enemy_units_killed",
+    "paramInt": 500
+  },
+  "tierLevel": 2,
+  "nextTier": "WarborneT3"
+}

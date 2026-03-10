@@ -1,0 +1,68 @@
+{
+  "id": "SilverT3",
+  "name": "SilverT3",
+  "nameKey": {
+    "key": "SoulData_nameKey-079d0656b6409bac-fcb3b865e4930624cb8736b18836467d-v2",
+    "english": "Silver III",
+    "french": "Argent III",
+    "german": "Silber III",
+    "russian": "Сильвер III",
+    "portuguese": "Prata III",
+    "chinese": "银灵 III",
+    "spanish": "Plata III",
+    "chinese_traditional": "銀色III",
+    "korean": "은 III",
+    "japanese": "シルバーIII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-2bf61f21c42c2d4b-fcb3b865e4930624cb8736b18836467d-v2",
+    "english": "Your Pyre randomly gains either +[effect0.power][health] or +[effect0.power][attack] after any boss is defeated. Gain an artifact that gives either +1 [ember], +1 [draw], or +2 [capacity] after the next [effect1.power] flying bosses are defeated.",
+    "french": "Votre Brasier gagne soit +[effect0.power][health], soit +[effect0.power][attack] après la défaite d'un boss. Gagnez un artéfact qui confère <nobr>+1 [ember],</nobr> <nobr>+1 [draw]</nobr> ou <nobr>+2 [capacity]</nobr> après la défaite des [effect1.power] prochains boss volants.",
+    "german": "Deine Höllenglut erhält per Zufall entweder +[effect0.power][health] oder +[effect0.power][attack], nachdem ein Boss besiegt wurde. Du erhältst ein Artefakt, das dir entweder +1 [ember], +1 [draw] oder +2 [capacity] gewährt, nachdem die nächsten [effect1.power] fliegenden Bosse besiegt wurden.",
+    "russian": "После смерти любого босса Пекло случайно получает либо +[effect0.power][health], либо +[effect0.power][attack]. Дает артефакт, добавляющий +1[ember] или +2 [capacity], либо позволяющий вытягивать на одну карту больше за победу над следующими летающими боссами в количестве [effect1.power].",
+    "portuguese": "Sua Pira ganha aleatoriamente +[effect0.power][health] ou +[effect0.power][attack] após qualquer chefão ser derrotado. Receba um artefato que dá +1 [ember], +1 <b>Compra</b> ou +2 [capacity] após os próximos [effect1.power] chefões voadores serem derrotados.",
+    "chinese": "击败任意首领后，你的薪火随机获得 +[effect0.power][health] 或 +[effect0.power][attack]。击败下 [effect1.power] 个飞行首领后，获得一件提供 +1 [ember]、+1 [draw] 或 +2 [capacity] 的神器。",
+    "spanish": "Tu Pira gana aleatoriamente o +[effect0.power][health] o +[effect0.power][attack] después de derrotar a un jefe. Obtienes un artefacto que otorga o +1[ember], o +1 <b>Robo</b> o +2 [capacity] tras derrotar a los [effect1.power] próximos jefes voladores.",
+    "chinese_traditional": "在任何首領被擊敗後，你的薪火隨機獲得+[effect0.power][health]或+[effect0.power][attack]。在接下來的[effect1.power]飛行首領被擊敗後，獲得一個賦予+1[ember]、+1[draw]或+2[capacity]的神器。",
+    "korean": "보스를 처치할 때마다, 화로가 무작위로 +[effect0.power][health] 또는 +[effect0.power][attack]을 획득합니다. 또한 다음 비행형 보스 [effect1.power]명을 처치하면, +1 [ember], +1 [draw], 또는 +2 [capacity] 중 하나를 부여하는 유물을 획득합니다.",
+    "japanese": "ボスを倒すと、自軍の炉がランダムで+[effect0.power][health]または+[effect0.power][attack]を得る。次の[effect1.power]体の飛行ボスを倒すたびに、+1 [ember]、+1 [draw]、または+2 [capacity]の効果のあるアーティファクトを得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectBuffPyreForBossKill",
+      "paramInt": 10,
+      "paramInt2": 10
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddPostBattleRewardOnBossDeath",
+      "paramInt": 3,
+      "paramExcludeCharacterSubtypes": [
+        "SubtypesData_SoulSavior_Region1_FlyingBoss",
+        "SubtypesData_SoulSavior_Region2_FlyingBoss",
+        "SubtypesData_SoulSavior_Region3_FlyingBoss",
+        "SubtypesData_SoulSavior_Region4_FlyingBoss"
+      ],
+      "paramReward": "SilverRewardData"
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-61f3d21655ab9266-fcb3b865e4930624cb8736b18836467d-v2",
+      "english": "Defeat any Boss to upgrade.",
+      "french": "Battez n'importe quel boss pour améliorer.",
+      "german": "Besiege für eine Verbesserung einen beliebigen Boss.",
+      "russian": "Чтобы улучшить, убейте любого босса.",
+      "portuguese": "Derrote qualquer Chefão para melhorar.",
+      "chinese": "击败任意首领以升级。",
+      "spanish": "Derrota a cualquier jefe para mejorar.",
+      "chinese_traditional": "擊敗任意首領以升級。",
+      "korean": "보스를 하나라도 처치하면 업그레이드됩니다.",
+      "japanese": "任意のボスを倒してアップグレード。"
+    },
+    "unlockCondition": "soul_kill_any_boss",
+    "paramInt": 50
+  },
+  "tierLevel": 3,
+  "draftMaxDistanceAllowed": 6,
+  "draftMaxBattlesCompleted": 5
+}

@@ -1,0 +1,159 @@
+{
+  "id": "SpellUpgradeTraitAddJuice",
+  "name": "Stackstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-b8ac068db697e7b1-144869ab4c93461429fe022b31bc73b6-v2",
+    "english": "Stackstone",
+    "french": "Pierre de cumul",
+    "german": "Stapelstein",
+    "russian": "Слоистый камень",
+    "portuguese": "Pedra de Compressão",
+    "chinese": "堆叠石",
+    "spanish": "Piedra doble",
+    "chinese_traditional": "堆疊石",
+    "korean": "스택스톤",
+    "japanese": "スタックの石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-42a55fb596cf410e-144869ab4c93461429fe022b31bc73b6-v2",
+    "english": "Upgrade a spell to gain [juice].",
+    "french": "Améliore un sort pour lui conférer [juice].",
+    "german": "Verbessere einen Zauber mit [juice].",
+    "russian": "Улучшенные чары получают [juice].",
+    "portuguese": "Melhora um feitiço para receber [juice].",
+    "chinese": "升级一个法术，使其获得 [juice]。",
+    "spanish": "Mejora un hechizo para añadir [juice].",
+    "chinese_traditional": "升級一個法術，使其獲得[juice]。",
+    "korean": "주문 업그레이드로 [juice]을 획득합니다.",
+    "japanese": "呪文アップグレード：[juice]を得る。"
+  },
+  "rarity": "rare",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "paramCardUpgradeData": {
+        "id": "TraitJuice",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-faccd142fc81d357-8cf22d302b6b4854799962ff7d5ca36a-v2",
+          "english": "Stackstone",
+          "french": "Pierre de cumul",
+          "german": "Stapelstein",
+          "russian": "Слоистый камень",
+          "portuguese": "Pedra de Compressão",
+          "chinese": "堆叠石",
+          "spanish": "Piedra doble",
+          "chinese_traditional": "堆疊石",
+          "korean": "스택스톤",
+          "japanese": "スタックの石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-102f451739bdedb5-8cf22d302b6b4854799962ff7d5ca36a-v2",
+          "english": "Gain [juice].",
+          "french": "Octroie [juice].",
+          "german": "Erhalte [juice].",
+          "russian": "Дает [juice].",
+          "portuguese": "Recebe [juice].",
+          "chinese": "获得 [juice]。",
+          "spanish": "Añade [juice].",
+          "chinese_traditional": "獲得[juice]。",
+          "korean": "[juice]을 획득합니다.",
+          "japanese": "[juice]を得る。"
+        },
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitJuice",
+            "paramInt": 2,
+            "paramTeamType": "heroes"
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyStatusEffectSetting",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectAddStatusEffect",
+              "CardEffectAddStatusEffectNextMonster",
+              "CardEffectAddStatusEffectNull",
+              "CardEffectAddStatusEffectPerOtherEffect"
+            ],
+            "upgradeDisabledReason": "no_status"
+          },
+          {
+            "id": "OnlySpells",
+            "cardType": "spell"
+          },
+          {
+            "id": "ExcludeDoublestack",
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitJuice",
+              "CardTraitJuice3",
+              "CardTraitJuice4"
+            ]
+          },
+          {
+            "id": "ExcludeNonstackableStatusEffects",
+            "excludedStatusEffects": [
+              {
+                "statusId": "ambush",
+                "count": 1
+              },
+              {
+                "statusId": "haste",
+                "count": 1
+              },
+              {
+                "statusId": "relentless",
+                "count": 1
+              },
+              {
+                "statusId": "inert",
+                "count": 1
+              },
+              {
+                "statusId": "restricted",
+                "count": 1
+              },
+              {
+                "statusId": "silenced",
+                "count": 1
+              },
+              {
+                "statusId": "trample",
+                "count": 1
+              },
+              {
+                "statusId": "endless",
+                "count": 1
+              },
+              {
+                "statusId": "immobile",
+                "count": 1
+              }
+            ],
+            "excludedStatusEffectsOperator": "or",
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitJuice"
+            ]
+          },
+          {
+            "id": "ExcludeCardsFromJuice",
+            "disallowedCardPools": [
+              "CardsExcludedFromJuice"
+            ]
+          },
+          {
+            "id": "ExcludeSoulSiphon",
+            "cardType": "spell",
+            "disallowedCardPools": [
+              "SoulSiphonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

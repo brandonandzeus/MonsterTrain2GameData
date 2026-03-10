@@ -1,0 +1,83 @@
+{
+  "id": "UnnamedTome",
+  "name": "Unnamed Tome",
+  "nameKey": {
+    "key": "CardData_nameKey-e321d65e84a21be4-2b37a3e13e5b98a479331e691d94ebc6-v2",
+    "english": "Unnamed Tome",
+    "french": "Livre du Sans-nom",
+    "german": "Foliant des Namenlosen",
+    "russian": "Книга Безымянного",
+    "portuguese": "Tomo Inominado",
+    "chinese": "无名者之书",
+    "spanish": "Tomo Ignoto",
+    "chinese_traditional": "無名者之書",
+    "korean": "이름 없는 자의 서",
+    "japanese": "名もなき書"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b98f67d7bc43663a-2b37a3e13e5b98a479331e691d94ebc6-v2",
+    "english": "Apply [mute] [effect0.status0.power] to enemy units.",
+    "french": "Inflige [mute] [effect0.status0.power] aux unités ennemies.",
+    "german": "Wende [mute] [effect0.status0.power] auf gegnerische Einheiten an.",
+    "russian": "Накладывает [mute] х[effect0.status0.power] на всех врагов.",
+    "portuguese": "Aplica <b>Calar</b> [effect0.status0.power] às unidades inimigas.",
+    "chinese": "对所有敌方单位施加 [mute] [effect0.status0.power]。",
+    "spanish": "Añade [mute] [effect0.status0.power] a las unidades enemigas.",
+    "chinese_traditional": "對敵方單位施加[mute][effect0.status0.power]。",
+    "korean": "적 유닛들에게 [mute] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "敵ユニットに[mute] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-715a58245b3fe5aa-2b37a3e13e5b98a479331e691d94ebc6-v2",
+      "english": "When the Titan was finally put to rest, the Stygian Guard was formed. Tethys and I wrote this tome to record the existence of the Unnamed Titan and prophesize its return.",
+      "french": "Après l'entrée en sommeil du titan, les Gardes stygiens ont été créés. Téthys et moi avons rédigé cet ouvrage afin de garder une trace de l'existence du titan sans nom et prophétiser son retour.",
+      "german": "Als der Titan endlich zur Ruhe kam, wurde die Stygische Wache gegründet. Tethys und ich haben diesen Folianten verfasst, um festzuhalten, dass der namenlose Titan existiert und um seine Rückkehr vorherzusagen.",
+      "russian": "Когда Титан наконец-то упокоился, была образована Стигийская стража. Мы с Тефией написали эту книгу, чтобы сохранить память о существовании Безымянного Титана и предупредить о его возможном возвращении.",
+      "portuguese": "Quando o Titã finalmente pereceu, a Guarda do Estige foi formada. Tétis e eu escrevemos este tomo para registrar a existência do Titã Inominado e profetizar seu retorno.",
+      "chinese": "当泰坦陷入沉眠之中时，冥卫也由此诞生。这本书卷是我和泰西丝共同撰写的。它记录了无名者泰坦的存在，预言了泰坦的回归。",
+      "spanish": "La Guardia Estigia se formó cuando el titán se sumió en el sueño. Tethys y yo escribimos este tomo para registrar la existencia del titán Ignoto y profetizar su regreso.",
+      "chinese_traditional": "當泰坦終於安息時，冥河守衛成立了。我和忒提斯寫下這本書來記錄無名者泰坦的存在，並預言它的歸來。",
+      "korean": "티탄이 마침내 봉인되자, 명계 수비대가 탄생했다. 테티스와 나는 이 서를 작성하여 이름 없는 티탄의 존재를 기록하고, 그가 다시 돌아올 날을 예언했다.",
+      "japanese": "ようやく巨人族を眠りにつかせたとき、ステュクスの墓守は結成された。テシスと私は名もなき巨人族の存在とその帰還について記録するためにこの書を残した。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_UnnamedTome.prefab",
+    "m_AssetGUID": "1dee01f1f5d8792468cc9f28f52abbf0"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitPermafrost"
+    },
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "muted",
+          "count": 3
+        }
+      ],
+      "paramInt": 100,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Tomes/UnnamedTome/FX_UnnamedTome.prefab",
+          "m_AssetGUID": "c905d5d18727b7d46a67e17f2d4f18f3"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Jordan Thomas"
+}

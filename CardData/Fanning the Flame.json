@@ -1,0 +1,102 @@
+{
+  "id": "FanningTheFlame",
+  "name": "Fanning the Flame",
+  "nameKey": {
+    "key": "CardData_nameKey-60141119327154e4-e946832b778aaff459e11c873b6f0c49-v2",
+    "english": "Fanning the Flame",
+    "french": "Attiser la flamme",
+    "german": "Geschürte Flamme",
+    "russian": "Раздутое пламя",
+    "portuguese": "Propagação da Chama",
+    "chinese": "煽风点火",
+    "spanish": "Avivar las llamas",
+    "chinese_traditional": "點燃戰火",
+    "korean": "화염 확산",
+    "japanese": "扇動"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-9e95fa2d7f272c1b-e946832b778aaff459e11c873b6f0c49-v2",
+    "english": "Deal [effect0.power] damage to a random enemy unit.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à un ennemi aléatoire.",
+    "german": "Füge einer zufälligen gegnerischen Einheit [effect0.power] Schaden zu.",
+    "russian": "Наносит [effect0.power] урона случайному вражескому бойцу.",
+    "portuguese": "Causa [effect0.power] de dano a uma unidade inimiga aleatória.",
+    "chinese": "随机对一个敌方单位造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño a una unidad aleatoria.",
+    "chinese_traditional": "隨機對一個單位造成[effect0.power]點傷害。",
+    "korean": "무작위 적 유닛에게 [effect0.power]의 피해를 입힙니다.",
+    "japanese": "ランダムな敵ユニットに[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-ca8ed8a88a866d64-e946832b778aaff459e11c873b6f0c49-v2",
+      "english": "“Fan the flames of war. It’s good for business.”\n—The Rules of Fhyra, Rule #19",
+      "french": "<nobr>« Attiser</nobr> les flammes de la guerre. C'est bon pour les <nobr>affaires. »</nobr> \n— Les règles de Fhyra, règle n°19",
+      "german": "„Facht die Flammen des Krieges an. Das ist gut fürs Geschäft.“\n– Fhyras Regeln, Regel 19",
+      "russian": "«Раздувайте пламя войны. Это полезно для бизнеса».\n— «Правила Фиры», правило 19",
+      "portuguese": "“Acenda as chamas da guerra. É bom para os negócios.”\n— As Regras de Fhyra, Regra n.º 19",
+      "chinese": "“煽风点火挑起战争。这对生意有好处。”\n————《菲拉法则》，条例#19",
+      "spanish": "«Aviva las llamas de la guerra. Es buena para el negocio».\n—Normas de Fhyra, norma 19",
+      "chinese_traditional": "「為戰爭助燃。這對生意有好處。」\n——費拉法則，第19條",
+      "korean": "“전쟁의 불씨를 지펴라. 그리하면 사업이 번성하리라.”\n- 휘라 율법 19조",
+      "japanese": "「戦火は煽り立てよ。商売にはいいことだ」\n—ファイラの法、19条"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_FanningTheFlame.prefab",
+    "m_AssetGUID": "07fb46df99926b14daeb8173bec05a56"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitDamageOverflow",
+      "paramInt": 2
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "random_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 3,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/FanningTheFlame/FX_FanningTheFlame.prefab",
+          "m_AssetGUID": "43514282ae0ecea499e154078e86ac72"
+        },
+        "spawnLocation": "character_bottom"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-0f430ef543548b0a-e946832b778aaff459e11c873b6f0c49-v2",
+        "english": "Increase damage by [triggereffect0.power] permanently.",
+        "french": "Augmente les dégâts de [triggereffect0.power] définitivement.",
+        "german": "Erhöht Schaden permanent um [triggereffect0.power].",
+        "russian": "Навсегда увеличивает урон на [triggereffect0.power].",
+        "portuguese": "Aumenta permanentemente o dano em [triggereffect0.power].",
+        "chinese": "永久增加[triggereffect0.power]点伤害。",
+        "spanish": "Aumenta el daño en [triggereffect0.power] permanentemente.",
+        "chinese_traditional": "永久提高[triggereffect0.power]點傷害。",
+        "korean": "피해가 영구적으로 [triggereffect0.power]만큼 증가합니다.",
+        "japanese": "ダメージを永続的に[triggereffect0.power]増加させる。"
+      },
+      "trigger": "on_kill",
+      "cardTriggerEffects": [
+        {
+          "persistenceMode": "single_run",
+          "cardTriggerEffect": "CardTriggerEffectBuffSpellDamage",
+          "paramInt": 3
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Luke Banke"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "PenanceFields",
+  "name": "PenanceFields",
+  "regionRunEventPrefabVariant": {
+    "m_debugName": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_Penance.prefab",
+    "m_AssetGUID": "0c6d974389b08254f9c8374b96e6e381"
+  },
+  "followupEvents": [
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionBattleDelay",
+          "paramInt": 3
+        },
+        {
+          "conditionName": "FollowupConditionCardUpgradePresent",
+          "paramInt": 1,
+          "paramCardUpgradeData": "MajorPenance"
+        }
+      ],
+      "followupEvent": "PenanceFields_FollowupMajor"
+    },
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionBattleDelay",
+          "paramInt": 3
+        },
+        {
+          "conditionName": "FollowupConditionCardUpgradePresent",
+          "paramInt": 1,
+          "paramCardUpgradeData": "MinorPenance"
+        }
+      ],
+      "followupEvent": "PenanceFields_FollowupMinor"
+    }
+  ],
+  "storyId": "PenanceFields",
+  "knotName": "PenanceFields",
+  "priorityTicketCount": 10,
+  "maxDistanceAllowed": 4,
+  "possibleRewards": [
+    "PenanceFieldsMinorPenanceUpgradeReward",
+    "PenanceFieldsMajorPenanceUpgradeReward"
+  ]
+}

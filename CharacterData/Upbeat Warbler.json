@@ -1,0 +1,90 @@
+{
+  "id": "MonsterUpbeatWarbler",
+  "name": "Upbeat Warbler",
+  "nameKey": {
+    "key": "CharacterData_nameKey-5a6312d70df8378a-4fd8a45e1c544af49807b503135c0670-v2",
+    "english": "Upbeat Warbler",
+    "french": "Fauvette enjouée",
+    "german": "Upbeat-Spötter",
+    "russian": "Джазоклюв",
+    "portuguese": "Rouxinol Animado",
+    "chinese": "林莺号手",
+    "spanish": "Sílvido rítmico",
+    "chinese_traditional": "樂觀鶯鳥",
+    "korean": "분위기메이커 휘파람새",
+    "japanese": "アップビート・ワーブラー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-ec8bc29e44bc9bc5-4fd8a45e1c544af49807b503135c0670-v2",
+      "english": "“Some souls live with rage in their hearts, others with a song. Anyway, does anyone know what this brass thing is? It sure does make a groovy sound.”",
+      "french": "<nobr>« Certains</nobr> vivent avec la rage au cœur, d'autres avec une chanson. Au fait, quelqu'un sait ce que c'est, ce truc en <nobr>cuivre ?</nobr> Parce que ça groove un <nobr>max. »</nobr>",
+      "german": "„Manche Seelen leben mit Wut im Herzen, andere mit einem Lied. Weiß jemand, was dieses Blechding ist? Klingt auf jeden Fall groovy.“",
+      "russian": "«Чье-то сердце наполнено яростью, а чье-то — песней. Может, кто-нибудь знает что это за духовой инструмент? Звучит отпадно».",
+      "portuguese": "“Algumas almas vivem com raiva no coração, outras com uma canção. De qualquer forma, alguém sabe o que é essa coisa de latão? Ela fez um som bem legal.”",
+      "chinese": "“有些灵魂心中充满愤怒，有些则满是歌声。总之，有人知道这个黄铜的玩意儿是啥吗？吹出来的声音倒是挺好听的。”",
+      "spanish": "«Algunas almas viven con ira en sus corazones, otras, con canciones. En fin, ¿sabe alguien qué es esta cosa de latón? Me gusta el sonido que hace».",
+      "chinese_traditional": "「有些靈魂活著時心中充滿憤怒，其他的則帶著歌聲。話說回來，有人知道這個銅製品是什麼嗎？它確實發出美妙的聲音。」",
+      "korean": "\"몇몇 영혼은 마음속에 분노를 품고 살고, 또 다른 이들은 노래를 품고 살아가죠. 그런데, 이 금속으로 된 게 뭔지 아시는 분 있나요? 정말 끝내주는 소리가 나던데요.\"",
+      "japanese": "「心の中に怒りを抱えて生きる魂もあれば、歌を抱えて生きる魂もある。ところで、この金管楽器は何だい？すごくグルーヴィーな音を奏でるじゃないか」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_JazzWarbler.prefab",
+    "m_AssetGUID": "5913a9ab8bf078c488d4c592922300e0"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistAttack.prefab",
+      "m_AssetGUID": "05e0702acde89074cbee9d97506515ff"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistImpact.prefab",
+      "m_AssetGUID": "dbc3d7264f40bc94791c3a4880396f2c"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-e3470b43ff00800c-4fd8a45e1c544af49807b503135c0670-v2",
+        "english": "Grant [quick].",
+        "french": "Octroie [quick].",
+        "german": "Verleiht [quick].",
+        "russian": "Дается [quick].",
+        "portuguese": "Concede [quick].",
+        "chinese": "获得[quick]。",
+        "spanish": "Otorga [quick].",
+        "chinese_traditional": "賦予[quick]。",
+        "korean": "[quick] 효과를 부여합니다.",
+        "japanese": "[quick]を付与する。"
+      },
+      "trigger": "after_spawn_enchant",
+      "effects": [
+        {
+          "effectStateName": "CardEffectEnchant",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramStatusEffects": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            }
+          ],
+          "shouldTest": false
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 2,
+  "attackDamage": 2,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Hymnist"
+  ],
+  "characterChatterData": "BanishedUpbeatWarblerChatterData"
+}

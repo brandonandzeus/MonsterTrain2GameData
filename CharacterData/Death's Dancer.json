@@ -1,0 +1,88 @@
+{
+  "id": "MonsterDeathsDancer",
+  "name": "Death's Dancer",
+  "nameKey": {
+    "key": "CharacterData_nameKey-6c3850d8014ed0ac-b76c9c394979ebc4ab376507a610ee23-v2",
+    "english": "Death's Dancer",
+    "french": "Danseuse funeste",
+    "german": "Totentänzerin",
+    "russian": "Плясунья смерти",
+    "portuguese": "Dançarina da Morte",
+    "chinese": "死亡舞者",
+    "spanish": "Bailarín de la muerte",
+    "chinese_traditional": "死亡舞者",
+    "korean": "죽음의 무용수",
+    "japanese": "デス・ダンサー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-5971e8ee052ec1a9-b76c9c394979ebc4ab376507a610ee23-v2",
+      "english": "“Dance is a poem in which each kill is a step.”",
+      "french": "<nobr>« La</nobr> mort est une danse dans laquelle chaque victime est un <nobr>pas. »</nobr>",
+      "german": "„In der Lyrik des Tanzes bedeutet jeder Schritt einen Tod.“",
+      "russian": "« Танец — это поэма, где каждая стопа равна убийству».",
+      "portuguese": "“A dança é um poema em que cada morte é um passo.”",
+      "chinese": "“舞蹈是一首诗，每一次杀戮都是一段舞步。”",
+      "spanish": "«El baile es un poema en el que cada muerte es un paso».",
+      "chinese_traditional": "「舞蹈是一首詩，每次殺戮都是一個舞步。」",
+      "korean": "\"춤이란 상대를 제거할 때마다 한 걸음씩 나아가는 시와 같다.\"",
+      "japanese": "「ダンスは詩なの。敵を倒しながらステップを踏むのよ」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_DeathsDancer.prefab",
+    "m_AssetGUID": "ee49f539693af4e4fa6b7350bd6e743f"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/DeathsDancer/FX_DeathsDancerAttack.prefab",
+      "m_AssetGUID": "7b4040ba5c134c84eaeb246a77b0a401"
+    },
+    "spawnLocation": "character_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+      "m_AssetGUID": "b856194664a6e4b4da8f1c47c5a0e765"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-0984c32882a7bd1c-b76c9c394979ebc4ab376507a610ee23-v2",
+        "english": "Apply +[effect0.upgrade.bonusdamage][attack] to friendly units.",
+        "french": "Confère +[effect0.upgrade.bonusdamage][attack] aux alliés.",
+        "german": "Wende +[effect0.upgrade.bonusdamage][attack] auf verbündete Einheiten an.",
+        "russian": "Дает союзникам +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Concede +[effect0.upgrade.bonusdamage][attack] às unidades aliadas.",
+        "chinese": "使所有友方单位获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] a las unidades aliadas.",
+        "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "아군 유닛들에게 +[effect0.upgrade.bonusdamage][attack]을 적용합니다.",
+        "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage][attack]を付与する。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramCardUpgradeData": {
+            "id": "DeathDancerUpgrade",
+            "bonusDamage": 4
+          }
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 14,
+  "attackDamage": 7,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Angel"
+  ],
+  "characterChatterData": "BanishedDeathorDivineDancerChatterData"
+}

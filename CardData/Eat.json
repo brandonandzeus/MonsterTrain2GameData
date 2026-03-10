@@ -1,0 +1,60 @@
+{
+  "id": "GlugsiderAbility",
+  "name": "Eat",
+  "nameKey": {
+    "key": "CardData_nameKey-8708a2a55b9a79d0-a5a1680cc2f24414c947c61b05bf7f31-v2",
+    "english": "Eat",
+    "french": "Dévoration",
+    "german": "Essen",
+    "russian": "Пир",
+    "portuguese": "Devorar",
+    "chinese": "进食",
+    "spanish": "Zampar",
+    "chinese_traditional": "吞噬",
+    "korean": "섭취",
+    "japanese": "採食"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-013ee02d78f51709-a5a1680cc2f24414c947c61b05bf7f31-v2",
+    "english": "Kill an enemy non-boss unit.",
+    "french": "Tue une unité ennemie hors boss.",
+    "german": "Töte eine feindliche Nicht-Boss-Einheit.",
+    "russian": "Убивает врага не-босса.",
+    "portuguese": "Mata uma unidade inimiga que não seja chefão.",
+    "chinese": "击杀一个敌方非首领单位。",
+    "spanish": "Mata a una unidad no jefe.",
+    "chinese_traditional": "殺死一個敵方非首領單位。",
+    "korean": "보스 외 적 유닛 하나를 처치합니다.",
+    "japanese": "非ボスの敵ユニットをキルする。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "traits": [
+    {
+      "traitStateName": "CardTraitCorruptRestricted",
+      "paramInt": 4,
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectKill",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "heroes",
+      "targetIgnoreBosses": true,
+      "animToPlay": "attack",
+      "paramBool3": true,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/Glugsider/FX_GlugsiderSelfAbility.prefab",
+          "m_AssetGUID": "265f4f58ced5043498624e6af4a127b6"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly"
+}

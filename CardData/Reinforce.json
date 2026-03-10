@@ -1,0 +1,75 @@
+{
+  "id": "Reinforce",
+  "name": "Reinforce",
+  "nameKey": {
+    "key": "CardData_nameKey-e758f9750abc3f66-c30eba51ff5bd0945a71292ec210d719-v2",
+    "english": "Reinforce",
+    "french": "Renforcement",
+    "german": "Verstärken",
+    "russian": "Армирование",
+    "portuguese": "Reforçar",
+    "chinese": "护甲增强",
+    "spanish": "Refuerzo",
+    "chinese_traditional": "加固",
+    "korean": "방어력 증강",
+    "japanese": "増援"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-f28d5be01b7a0ec6-c30eba51ff5bd0945a71292ec210d719-v2",
+    "english": "Double the amount of [armor] on a unit.",
+    "french": "Double l'<b>Armure</b> d'une unité.",
+    "german": "Verdopple die <b>Rüstung</b> einer Einheit.",
+    "russian": "Удваивает [armor] на бойце.",
+    "portuguese": "Dobra a quantidade de <b>Armadura</b> em uma unidade.",
+    "chinese": "使目标单位的[armor]加倍。",
+    "spanish": "Duplica la cantidad de [armor] de una unidad.",
+    "chinese_traditional": "將一個單位的[armor]數量翻倍。",
+    "korean": "유닛의 [armor] 수치가 2배가 됩니다.",
+    "japanese": "ユニットの[armor]の値を2倍にする。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-818db1554b7820a6-c30eba51ff5bd0945a71292ec210d719-v2",
+      "english": "Armor forged by Hellhorned steelworkers is among the sturdiest defense known to Hell. It is not, however, known to be particularly comfortable, so the Hellhorned wear it only when absolutely necessary.",
+      "french": "Les armures forgées par les sidérurgistes cornus sont réputées en enfer pour leur excellente robustesse. Cependant, elles ne sont pas réputées pour leur confort, les Cornus les portent donc uniquement lorsque cela est vraiment nécessaire.",
+      "german": "Die Rüstung aus den Schmieden der Höllenhörner gehört zu den stärksten der Hölle. Sie hat allerdings keinen sonderlich hohen Tragekomfort, und daher verwenden die Höllenhörner sie nur, wenn es unbedingt nötig ist.",
+      "russian": "Броня, выкованная кузнецами Адских отродий, ценится как одна из самых крепких в Аду. Впрочем, она настолько неудобна, что ее надевают только в исключительных случаях.",
+      "portuguese": "Armadura forjada pelos ferreiros Endiabrados, uma das formas de defesa mais robustas em todo o Inferno. Porém, nota-se que não é muito confortável, por isso os Endiabrados só equipam-na quando absolutamente necessário.",
+      "chinese": "狱魔铁匠锻造出来的护甲，是整个地狱最坚固的护甲。不过，它穿起来也相当不舒服，因此狱魔只有在特别有必要的时候，才会穿戴这种护甲。",
+      "spanish": "La armadura forjada por los armeros de los Astados Infernales es de las más resistentes de todo el Infierno. Lo que no es, en cambio, es cómoda, por lo que los Astados solo la usan cuando es absolutamente imprescindible.",
+      "chinese_traditional": "煉獄族鋼鐵工人鍛造的盔甲是地獄已知最堅固的防禦工具之一。然而，它穿起來並沒有特別舒適，所以煉獄族只在絕對必要時才穿戴它。",
+      "korean": "지옥뿔 군단의 강철공들이 만든 갑옷은 지옥에서 가장 견고한 방어구 중 하나로 알려져 있다. 하지만 착용감이 좋지 않기 때문에, 지옥뿔 군단은 꼭 필요할 때만 이 갑옷을 착용한다.",
+      "japanese": "獄角族の製鋼工が鍛えた鎧は、地獄で知られる中で最も頑丈な防具の1つだ。ただし、そのつけ心地はあまり良くない。そのため、獄角族は必要なとき以外には着用しようとしない。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Reinforce.prefab",
+    "m_AssetGUID": "24345684c391bba45b7f66502765267c"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectMultiplyStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 2
+        }
+      ],
+      "paramInt": 100
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

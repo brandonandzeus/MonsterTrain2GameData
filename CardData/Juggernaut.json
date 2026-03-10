@@ -1,0 +1,116 @@
+{
+  "id": "Juggernaut",
+  "name": "Juggernaut",
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-bc2c87fea1271154-ef398c3e77eff9445bf153a534e8c173-v2",
+  "cardType": "monster",
+  "rarity": "rare",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Juggernaut.prefab",
+    "m_AssetGUID": "b9c6d3f8d3318c741a889ca9df777566"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingUpgradeUnitAttack",
+      "paramTrackedValue": "played_cost",
+      "paramInt": 30,
+      "paramInt3": 1,
+      "traitIsRemovable": false,
+      "stackMode": "param_int"
+    },
+    {
+      "traitStateName": "CardTraitScalingUpgradeUnitHealth",
+      "paramTrackedValue": "played_cost",
+      "paramInt": 30,
+      "paramInt3": 1,
+      "traitIsRemovable": false,
+      "stackMode": "param_int"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCharacterData": {
+        "id": "MonsterJuggernaut",
+        "nameKey": {
+          "key": "CharacterData_nameKey-7fc2e3fafa761705-69ed60e54e842a44fa4b04631c77d81f-v2",
+          "english": "Juggernaut",
+          "french": "Excavatrice",
+          "german": "Moloch",
+          "russian": "Джаггернаут",
+          "portuguese": "Jamanta",
+          "chinese": "主宰",
+          "spanish": "Mastodonte",
+          "chinese_traditional": "主宰者",
+          "korean": "저거너트",
+          "japanese": "ジャガーノート"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-522832c601eb8a0b-69ed60e54e842a44fa4b04631c77d81f-v2",
+            "english": "Built to carve out sections of terrain for the construction of the Rail, these machines fell out of use once their work had finished. Their original design needed almost no repurposing for combat.",
+            "french": "Conçues pour creuser des tranchées afin de permettre la construction de la Voie, ces machines ont été mises hors service une fois leur travail terminé. Très peu de modifications ont été requises pour les adapter au combat.",
+            "german": "Diese Maschinen wurden dafür gemacht, für den Bau der Gleise Gelände zu durchschneiden. Als es getan war, wurden sie nicht mehr benutzt. Ihre ursprüngliche Bauweise musste für den Kampf kaum modifiziert werden.",
+            "russian": "Эти машины были созданы, чтобы вырезать участки местности для строительства дороги. Когда работа закончилась, они стали бесполезными. Их первоначальная конструкция почти не годилась для переделки под боевые задачи.",
+            "portuguese": "Construídas para escavar secções de terreno para a construção dos Trilhos, estas máquinas caíram em desuso após concluírem seu trabalho. Seu projeto original precisou de poucos ajustes para o combate.",
+            "chinese": "这些机械用来挖掘地形以便铺设铁道，任务完成后一度被弃置。它们几乎不需要改造就能用于战斗。",
+            "spanish": "Estas máquinas, creadas para excavar secciones de terreno para la construcción de los Raíles, quedaron abandonadas cuando su trabajo terminó. Apenas hubo que retocar el diseño original para darles uso en combate.",
+            "chinese_traditional": "這些機器是為了開闢地形以建造軌道而造，一旦完工便已停用。其原始設計幾乎無須改造，即可投入戰鬥。",
+            "korean": "선로 건설을 위해 지형을 깎아내도록 제작된 이 기계들은, 작업이 끝난 뒤로는 사용되지 않았다. 그러나 설계가 이미 전투에 적합해 거의 그대로 전장에 투입될 수 있었다.",
+            "japanese": "鉄道の敷設のための掘削作業のために製造されたこの機械は、目的を果たした後に使い道がなくなってしまった。しかし、オリジナルの設計をほぼ使い回して戦闘に転用することができた。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Juggernaut.prefab",
+          "m_AssetGUID": "f4a091fb8b6041743a936d2e0a28dfab"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-bf6758d448883f98-69ed60e54e842a44fa4b04631c77d81f-v2",
+              "english": "+[effect0.power][x][attack] and +[effect0.power][x][health].",
+              "french": "+[effect0.power][x][attack] et +[effect0.power][x][health].",
+              "german": "+[effect0.power][x][attack] und +[effect0.power][x][health].",
+              "russian": "+[x][effect0.power][attack] и [x][effect0.power][health].",
+              "portuguese": "+[effect0.power][x][attack] e +[effect0.power][x][health].",
+              "chinese": "+[effect0.power][x][attack]，+[effect0.power][x][health]。",
+              "spanish": "+[effect0.power][x][attack] y +[effect0.power][x][health].",
+              "chinese_traditional": "+[effect0.power][x][attack]和+[effect0.power][x][health]。",
+              "korean": "+[effect0.power][x][attack] 및 +[effect0.power][x][health].",
+              "japanese": "+[effect0.power][x][attack]と+[effect0.power][x][health]。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                "targetMode": "self",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Juggernaut_Upgrade"
+                }
+              }
+            ],
+            "hideVisualAndIgnoreSilence": true
+          }
+        ],
+        "size": 3,
+        "health": 30,
+        "attackDamage": 30,
+        "subtypeKeys": [
+          "SubtypesData_Machine",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "RailforgedJuggernautChatter",
+        "artistAttribution": "Loy Bouttamy"
+      }
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "requiredDLC": "railforged",
+  "unlockLevel": 3,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

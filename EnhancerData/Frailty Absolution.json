@@ -1,0 +1,110 @@
+{
+  "id": "MinorAbsolutionCardUpgrade",
+  "name": "Frailty Absolution",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-e15cb6713ae863c3-961f2a7623893b148a6f93ec1a29a377-v2",
+    "english": "Frailty Absolution",
+    "french": "Absolution de faiblesse",
+    "german": "Schwache Absolution",
+    "russian": "Абсолютная бренность",
+    "portuguese": "Absolvição da Fragilidade",
+    "chinese": "脆弱赦免",
+    "spanish": "Absolución de fragilidad",
+    "chinese_traditional": "脆弱赦免",
+    "korean": "약점 구제",
+    "japanese": "脆弱の許し"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-4bed9f0975395d23-961f2a7623893b148a6f93ec1a29a377-v2",
+    "english": "<b>Celebrate</b>: Permanently gain [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+    "french": "<nobr><b>Célébration</b> :</nobr> Octroie [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] définitivement.",
+    "german": "<b>Feiern</b>: Erhalte permanent [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+    "russian": "<b>Триумф</b>: Навсегда дает [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+    "portuguese": "<b>Celebrar</b>: recebe [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+    "chinese": "<b>庆祝</b>：永久获得 [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage] [attack]。",
+    "spanish": "<b>Celebración</b>: Añade [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+    "chinese_traditional": "<b>慶祝</b>：永久獲得[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+    "korean": "<b>공훈</b>: 영구적으로 [effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+    "japanese": "<b>祝勝</b>：永続的に[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]を得る。"
+  },
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "MinorAbsolution",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-ddfd3e70e448f2a1-af5888e0620757248acc971c68321f6e-v2",
+          "english": "Frailty Absolution",
+          "french": "Absolution de faiblesse",
+          "german": "Schwache Absolution",
+          "russian": "Абсолютная бренность",
+          "portuguese": "Absolvição da Fragilidade",
+          "chinese": "脆弱赦免",
+          "spanish": "Absolución de fragilidad",
+          "chinese_traditional": "脆弱赦免",
+          "korean": "약점 구제",
+          "japanese": "脆弱の許し"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-cca6d4a3d905e3b6-af5888e0620757248acc971c68321f6e-v2",
+          "english": "[celebrate]: Permanently gain [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+          "french": "<nobr>[celebrate] :</nobr> Octroie [charactertrigger0.effect0.upgrade.bonusdamage][attack] définitivement.",
+          "german": "[celebrate]: Erhalte permanent [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+          "russian": "[celebrate]: Навсегда даетcя [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+          "portuguese": "[celebrate]: recebe [charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+          "chinese": "[celebrate]：永久获得 [charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+          "spanish": "[celebrate]: Añade [charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+          "chinese_traditional": "[celebrate]：永久獲得[charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+          "korean": "[celebrate]: 영구적으로 [charactertrigger0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+          "japanese": "[celebrate]：永続的に[charactertrigger0.effect0.upgrade.bonusdamage][attack]を得る。"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-d9d65c4d417bd803-af5888e0620757248acc971c68321f6e-v2",
+              "english": "Permanently gain [effect0.upgrade.bonusdamage][attack].",
+              "french": "Octroie [effect0.upgrade.bonusdamage][attack] définitivement.",
+              "german": "Erhalte permanent [effect0.upgrade.bonusdamage][attack].",
+              "russian": "Навсегда дает [effect0.upgrade.bonusdamage][attack].",
+              "portuguese": "Recebe [effect0.upgrade.bonusdamage][attack] permanentemente.",
+              "chinese": "永久获得 [effect0.upgrade.bonusdamage] [attack]。",
+              "spanish": "Añade [effect0.upgrade.bonusdamage] [attack] permanentemente.",
+              "chinese_traditional": "永久獲得[effect0.upgrade.bonusdamage][attack]。",
+              "korean": "영구적으로 [effect0.upgrade.bonusdamage] [attack]을 획득합니다.",
+              "japanese": "永続的に[effect0.upgrade.bonusdamage][attack]を得る。"
+            },
+            "trigger": "on_encounter_complete",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramCardUpgradeData": {
+                  "id": "MinorAbsolution_Attack",
+                  "useUpgradeHighlightTextTags": false,
+                  "bonusDamage": 10
+                },
+                "additionalParamInt1": 2
+              }
+            ]
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyMinorPenanceCardUpgrade",
+            "requiredCardUpgradesOperator": "and",
+            "requiredCardUpgrades": [
+              "MinorPenance"
+            ]
+          }
+        ],
+        "isUnique": true,
+        "upgradesToRemove": [
+          "MinorPenance"
+        ]
+      }
+    }
+  ]
+}

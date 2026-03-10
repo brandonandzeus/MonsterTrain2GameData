@@ -1,0 +1,106 @@
+{
+  "id": "MonsterPyreblooded",
+  "name": "Pyreblooded",
+  "nameKey": {
+    "key": "CharacterData_nameKey-3cc2807494a882de-b3efdb0c1925d734ea87bba1a8bb5fa1-v2",
+    "english": "Pyreblooded",
+    "french": "Sang-de-braise",
+    "german": "Höllenblut",
+    "russian": "Пеклокровник",
+    "portuguese": "Sangue Pírico",
+    "chinese": "薪血龙",
+    "spanish": "Sangre pírica",
+    "chinese_traditional": "火血之人",
+    "korean": "화로의 피",
+    "japanese": "パイアブラッド"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-bc78a2569e56d4a4-b3efdb0c1925d734ea87bba1a8bb5fa1-v2",
+      "english": "Some dragons take their obsession with gold to a new level. Entranced by the golden hues of the Pyre, these dragons insert pyregel directly into their veins. Somehow, they survive the process.",
+      "french": "Certains dragons poussent l'obsession de l'or à son paroxysme. Hypnotisés par les teintes dorées du Brasier, ils s'injectent du pyrogel directement dans les veines. On ignore comment ils survivent au processus.",
+      "german": "Manche Drachen sind übertrieben besessen von Gold. Sie sind von den goldenen Farben der Höllenglut fasziniert und injizieren sich Höllenglut-Gel direkt in die Venen. Irgendwie überleben sie diesen Prozess.",
+      "russian": "Одержимость золотом заставляет некоторых драконов совершать безумные поступки. Одурманенные жгучим блеском Пекла, они вводят Пеклогель себе в вены и каким-то образом даже умудряются выжить.",
+      "portuguese": "Alguns dragões levam sua obsessão pelo ouro a um novo patamar. Encantados com os tons dourados da Pira, esses dragões inserem o Gel Pírico diretamente na veia. De alguma forma, eles sobrevivem ao processo.",
+      "chinese": "有些龙族对黄金的痴迷已经达到了新的高度。这些龙被薪火那黄金般的色调所吸引，直接将薪火熔胶注入了血管里。不知怎的，他们在这个过程中活了下来。",
+      "spanish": "Algunos dragones llevan su obsesión por el oro a cotas insospechadas. Fascinados por los tonos dorados de la Pira, deciden inyectar pirogel directamente en sus venas. Por algún motivo, sobreviven al proceso.",
+      "chinese_traditional": "幾條龍對黃金的癡迷程度提升到了新的層次。這些龍被火堆的金色光芒迷住，直接將火膠注射到自己的靜脈裡面。雖然不知道是怎麼辦到的，但總之他們活了下來。",
+      "korean": "몇몇 드래곤은 황금에 대한 집착을 새로운 단계로 끌어올렸다. 화로의 황금빛 불빛에 매료된 이들 드래곤은 화염 점액을 혈관에 직접 주입하고, 그 과정에서 어떻게든 살아남는다.",
+      "japanese": "竜の中には、黄金に対する執着心が異常なほどの強さに達する者もいる。炉の黄金色に魅了された竜は、炉油を自身の血管に直接注入する。どういうわけか、竜はそのプロセスを生き延びるのだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Pyreblooded.prefab",
+    "m_AssetGUID": "f4fa374460481eb4ab1e0c9396422299"
+  },
+  "unitAbility": {
+    "id": "PyrebloodedAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-da8f4b2658e85b46-7961a73a842f65c4a87f7035ae2cc127-v2",
+      "english": "Empower",
+      "french": "Renforcement",
+      "german": "Stärken",
+      "russian": "Усиление",
+      "portuguese": "Empoderar",
+      "chinese": "赋能",
+      "spanish": "Enardecimiento",
+      "chinese_traditional": "賦能",
+      "korean": "힘 부여",
+      "japanese": "力増幅"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-a4ed7608379af49c-7961a73a842f65c4a87f7035ae2cc127-v2",
+      "english": "Gain [attack] equal to [pyregel] stacks on all units.",
+      "french": "Gagne de l'[attack] correspondant au [pyregel] cumulé sur toutes les unités.",
+      "german": "Erhalte [attack] in Höhe der [pyregel]-Stapeln aller Einheiten.",
+      "russian": "Дает [attack], равную сумме слоев пеклогеля на всех бойцах.",
+      "portuguese": "Recebe [attack] igual à carga de [pyregel] em todas as unidades.",
+      "chinese": "获得 [attack]，数值等同于所有单位身上的 [pyregel] 层数。",
+      "spanish": "Añade tanto [attack] como las acumulaciones de [pyregel] de todas las unidades.",
+      "chinese_traditional": "獲得[attack], 數值等同於所有單位身上的[pyregel]層數。",
+      "korean": "모든 유닛의 [pyregel] 스택만큼의 [attack]을 획득합니다.",
+      "japanese": "すべてのユニットの[pyregel]のスタック数に等しい[attack]を得る。"
+    },
+    "cardType": "spell",
+    "rarity": "common",
+    "linkedClass": "ClassPyreborne",
+    "traits": [
+      {
+        "traitStateName": "CardTraitScalingUpgradeUnitAttack",
+        "paramStatusEffects": [
+          {
+            "statusId": "pyregel",
+            "count": 1
+          }
+        ],
+        "paramTrackedValue": "status_effect_count_in_target_room",
+        "paramInt": 1,
+        "traitIsRemovable": false,
+        "paramTeamType": null,
+        "stackMode": "param_int"
+      }
+    ],
+    "effects": [
+      {
+        "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+        "targetMode": "drop_target_character",
+        "targetTeamType": "both",
+        "paramCardUpgradeData": {
+          "id": "PyrebloodedAbility_Upgrade"
+        }
+      }
+    ],
+    "cooldownAfterActivated": 3,
+    "isUnitAbility": true,
+    "initialKeyboardTarget": "front_friendly"
+  },
+  "size": 1,
+  "health": 10,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 5,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Dragon"
+  ],
+  "characterChatterData": "PyrebornePyrebloodedChatterData"
+}

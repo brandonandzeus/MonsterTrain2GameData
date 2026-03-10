@@ -1,0 +1,78 @@
+{
+  "id": "DamageExtinguish",
+  "name": "A Fatal Melting",
+  "nameKey": {
+    "key": "CardData_nameKey-8a28280199a2159c-0c143996dd33c9b45b6c704a27914c88-v2",
+    "english": "A Fatal Melting",
+    "french": "Fonte fatale",
+    "german": "Fatales Schmelzen",
+    "russian": "Полное расплавление",
+    "portuguese": "Dissolução Fatal",
+    "chinese": "致命熔炼",
+    "spanish": "Derretimiento letal",
+    "chinese_traditional": "致命熔化",
+    "korean": "치명적인 용해",
+    "japanese": "死の溶解"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-292ac74bb40152ac-0c143996dd33c9b45b6c704a27914c88-v2",
+    "english": "Deal damage to enemy units equal to [trait0.power]x the number of friendly unit deaths this battle.",
+    "french": "Inflige des dégâts aux unités ennemies valant [trait0.power]x le nombre d'unités alliées mortes dans cette bataille.",
+    "german": "Füge gegnerischen Einheiten Schaden in Höhe von [trait0.power]x der in diesem Kampf gestorbenen verbündeten Einheiten zu.",
+    "russian": "Наносит вражеским бойцам урон, равный количеству союзников, погибших в этом бою x[trait0.power].",
+    "portuguese": "Causa dano às unidades inimigas igual a [trait0.power]x o número de mortes de unidades aliadas nesta batalha.",
+    "chinese": "对所有敌方单位造成伤害，伤害值为本场战斗阵亡友方单位数量的 [trait0.power] 倍。",
+    "spanish": "Inflige tanto daño a las unidades enemigas como las unidades aliadas que han muerto en esta batalla x[trait0.power].",
+    "chinese_traditional": "對敵方單位造成等於[trait0.power]x本次戰鬥友方單位死亡數的傷害。",
+    "korean": "이 전투에서 사망한 아군 유닛 수의 [trait0.power]배만큼 적 유닛들에게 피해를 줍니다.",
+    "japanese": "敵ユニットに[trait0.power]x このバトルで死亡した味方ユニット数と等しいダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-fd4bc0f99864889b-0c143996dd33c9b45b6c704a27914c88-v2",
+      "english": "Charged with both the extension of life and the acceleration of melting, the Reformed tend to large flames at each Votive House, allowing for Waxers to congregate and melt more quickly than they would on their own.",
+      "french": "Responsables du prolongement de l'existence au même titre que de l'accélération de la fonte, les reformés entretiennent les imposants foyers des maisons de cierges, ce qui permet aux cireux de s'assembler et de fondre plus rapidement.",
+      "german": "Die Reformierten sind für die Verlängerung von Leben und die Beschleunigung des Schmelzens zuständig. Sie unterhalten große Feuer in jedem Weihhaus, wo sich Wachser versammeln und schneller schmelzen können.",
+      "russian": "Обладающие большей продолжительностью жизни и силой плавления Переплавленные заботятся о больших кострах в каждом из молельных домов и помогают собравшимся Восковикам переплавляться быстрее.",
+      "portuguese": "Encarregados pela extensão da vida e aceleração do derretimento, os Renovados cuidam das enormes chamas nas Casas de Devoção, onde os Céreos podem conglomerar e dissolver mais rapidamente do que o natural.",
+      "chinese": "为了延长寿命，加速烛人的融化过程，移形者打算在每个蜡神祭坛上都放火。这样一来，就可以加速烛人凝结与熔化的过程了。",
+      "spanish": "Encargados tanto de la extensión de la vida como de la aceleración del derretimiento, los reformados alimentan grandes llamas en cada casa votiva, lo que permite a los encerados congregarse y derretirse más rápido que por separado.",
+      "chinese_traditional": "重鑄者負責延續生命和加速熔化，他們在每個祈禱屋點燃大火，讓蠟像聚集在一起，比他們自己更快速地熔化。",
+      "korean": "밀랍 인형의 생명 연장과 융해의 가속화를 맡은 재탄회는 각 봉헌실마다 거대한 불길을 두어 밀랍 인간들이 더 빨리 집중하고 융해될 수 있도록 돕는다.",
+      "japanese": "生命の延長と溶解の加速の両方を担うリフォームドは、各奉納の祠で大きな炎を管理し、ワクサーたちが集り、独りでいるよりも早く溶けることができるようにしている。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_AFatalMelting.prefab",
+    "m_AssetGUID": "f690a4fc62fd9f941b18eeeeba4063a0"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddDamage",
+      "paramTrackedValue": "any_monster_death",
+      "paramEntryDuration": "previous_turn",
+      "paramInt": 3
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramInt": 1,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_WaxImpact_PS.prefab",
+          "m_AssetGUID": "16baf7e5a46cc9748b8b32ab3aabec0f"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Brian Mutschler"
+}

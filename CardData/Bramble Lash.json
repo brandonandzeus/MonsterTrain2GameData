@@ -1,0 +1,84 @@
+{
+  "id": "BrambleLash",
+  "name": "Bramble Lash",
+  "nameKey": {
+    "key": "CardData_nameKey-20683f18f33c3a7f-49cf195192624e74c822889c66d7e420-v2",
+    "english": "Bramble Lash",
+    "french": "Fouet de ronces",
+    "german": "Dornenhieb",
+    "russian": "Колючая плеть",
+    "portuguese": "Ataque de Espinhos",
+    "chinese": "荆棘鞭笞",
+    "spanish": "Latigazo de zarza",
+    "chinese_traditional": "荊棘之鞭",
+    "korean": "가시나무 채찍",
+    "japanese": "茨の鞭"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-e5220bcda74ae27d-49cf195192624e74c822889c66d7e420-v2",
+    "english": "Deal damage to the front enemy unit equal to [trait0.power]x [spikes] on friendly units.",
+    "french": "Inflige des dégâts à l'ennemi en 1re ligne valant [trait0.power]x les [spikes] sur les unités alliées.",
+    "german": "Füge der vordersten gegnerischen Einheit Schaden in Höhe von [trait0.power]x [spikes] verbündeter Einheiten zu.",
+    "russian": "Наносит переднему вражескому бойцу урон, равный x[trait0.power] количеству <b>шипов</b> союзников.",
+    "portuguese": "Causa dano à unidade inimiga à frente igual a [trait0.power]x [spikes] das unidades aliadas.",
+    "chinese": "对前排敌方单位造成伤害，数值相当于所有友方单位 [spikes] 的 [trait0.power]倍 。",
+    "spanish": "Inflige tanto daño a la primera unidad enemiga como la [spikes] x[trait0.power] de las unidades aliadas.",
+    "chinese_traditional": "對前排敵方單位造成等於[trait0.power]x友方單位[spikes]數量的傷害。",
+    "korean": "전열 적 유닛에 아군 유닛들의 [spikes] 수치의 [trait0.power]배만큼 피해를 줍니다.",
+    "japanese": "前列の敵ユニットに味方ユニットの[trait0.power]x [spikes]に等しいダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-c5733ad01dc1ec8e-49cf195192624e74c822889c66d7e420-v2",
+      "english": "A single, concentrated influx of Wildwood sap can enlarge the thorns of an Awoken for a short time. Through some ill-advised experiments, I’ve discovered that several simultaneous injections can have devastating effects.",
+      "french": "Une administration unique et concentrée de sève du Boissauvage peut faire grossir brièvement les épines d'un Éveillé. Au terme d'expériences inconsidérées, j'ai découvert qu'une série d'injections simultanées peut produire des effets dévastateurs.",
+      "german": "Eine einzelne, konzentrierte Zufuhr an Wildholzsaft kann die Dornen eines Erweckten kurz vergrößern. Durch einige unüberlegte Experimente musste ich feststellen, dass mehrere gleichzeitige Injektionen eine zerstörerische Wirkung entfalten können.",
+      "russian": "Одной капли концентрированного сока Диколесья достаточно, чтобы временно увеличить шипы Пробужденного. Благодаря ряду не совсем благоразумных экспериментов мне удалось установить, что несколько инъекций подряд могут привести к разрушительным последствиям.",
+      "portuguese": "Um único influxo concentrado de seiva da Mata Selvagem pode aumentar os espinhos de um Desperto por um curto período. Por meio de alguns experimentos imprudentes, descobri que várias injeções simultâneas podem ter efeitos devastadores.",
+      "chinese": "向觉者体内注射一剂野林树液后，它们身上的荆棘会在短时间内膨大。通过一些不怎么周全的实验，我发现，若同时注射多剂树液，可能会带来毁灭性的后果。",
+      "spanish": "Una sola inyección de savia del Bosque Salvaje puede agrandar temporalmente las espinas de los Despertados. Mis experimentos poco sensatos me han llevado a descubrir que múltiples inyecciones simultáneas pueden tener efectos devastadores.",
+      "chinese_traditional": "單次集中注射荒野樹液可以在短時間內增大覺醒者的荊棘。透過一些不明智的實驗，我發現多次同時注射會產生毀滅性的效果。",
+      "korean": "와일드우드 수액을 한번에 집중적으로 주입하면 각성자의 덩굴에 난 가시가 잠시 동안 커진다. 하지만, 무분별하게 자행한 몇몇 실험을 통해, 동시에 여러 차례 수액을 주입할 경우 끔찍한 결과를 초래할 수 있다는 사실을 알게 되었다.",
+      "japanese": "ワイルドウッドの樹液を一度集中的に注入すると、覚醒者の棘を短時間大きくすることができる。無謀な実験で、複数回の同時注入は壊滅的な効果をもたらす可能性があることを発見した。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_BrambleLash.prefab",
+    "m_AssetGUID": "dfb1484c27dc2da49b5c9bed0cf9cc35"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddDamage",
+      "paramStatusEffects": [
+        {
+          "statusId": "spikes",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "status_effect_count_in_target_room",
+      "paramInt": 10,
+      "paramTeamType": "monsters"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_BrambleLash_PS.prefab",
+          "m_AssetGUID": "a016e821df4f92b43bd8507bec3f85a8"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "unlockLevel": 5,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Tammy Chang"
+}

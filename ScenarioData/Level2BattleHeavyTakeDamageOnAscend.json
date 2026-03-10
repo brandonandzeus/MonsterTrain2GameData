@@ -1,0 +1,150 @@
+{
+  "id": "Level2BattleHeavyTakeDamageOnAscend",
+  "name": "Level2BattleHeavyTakeDamageOnAscend",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-782b4c051a1a8333-ff2ebde04864f844d88f92d3d88e9bcb-v2",
+    "english": "Flagellant's March",
+    "french": "Marche des Flagelleurs",
+    "german": "Marsch der Geißler",
+    "russian": "Наступление флагеллантов",
+    "portuguese": "Marcha dos Flagelantes",
+    "chinese": "苦修者进军",
+    "spanish": "Marcha de los flagelantes",
+    "chinese_traditional": "鞭笞者的進軍",
+    "korean": "고행자의 행렬",
+    "japanese": "苦行者の行進"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-8caff3de01f01681-ff2ebde04864f844d88f92d3d88e9bcb-v2",
+    "english": "Dangerous Flagellants attempt to ascend to your Pyre. Fortunately they can be their own worst enemy.",
+    "french": "De dangereux Flagelleurs tentent d'atteindre votre Brasier. Heureusement, ils sont parfois leur pire ennemi.",
+    "german": "Gefährliche Geißler versuchen, deine Höllenglut zu erreichen. Oft stehen sie sich selbst im Weg.",
+    "russian": "Опасные флагелланты пытаются добраться до вашего Пекла. К счастью, они сами себе худшие враги.",
+    "portuguese": "Flagelantes perigosos tentam chegar até a sua Pira. Felizmente, são uma ameaça até para eles mesmos.",
+    "chinese": "危险的苦修者试图靠近你的薪火。幸运的是，他们最大的敌人可能就是他们自己。",
+    "spanish": "Los peligrosos flagelantes intentan subir a tu Pira. Afortunadamente, son una amenaza para sí mismos.",
+    "chinese_traditional": "危險的鞭笞者試圖升至你的火堆。幸運的是，對方可能才是自己最大的敵人。",
+    "korean": "위험하기 그지없는 고행자는 화로를 향해 전진합니다. 다행인 것은 저들의 숙적이 바로 자신이라는 것입니다.",
+    "japanese": "危険なフラジェラントたちが炉を目指して登ってくる。幸運なことに、彼ら自身が彼らの一番の敵となり得る。"
+  },
+  "bossVariant": {
+    "id": "Level2Bosses",
+    "bossVariants": [
+      "Boss_Level2_BigStats",
+      "Boss_Level2_Spikes"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "ClericT1_OminousAcolyte",
+    "HeavyT1_LoseHealthOnMove"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-06009367823d9a0b-ff2ebde04864f844d88f92d3d88e9bcb-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "Boss_Level2_BigStats",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

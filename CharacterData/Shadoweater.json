@@ -1,0 +1,76 @@
+{
+  "id": "MonsterGlutton",
+  "name": "Shadoweater",
+  "nameKey": {
+    "key": "CharacterData_nameKey-98e65039ba6b1a5b-2327020f80e424847ac8ee86603ac764-v2",
+    "english": "Shadoweater",
+    "french": "Goinfre des ombres",
+    "german": "Schattenfresser",
+    "russian": "Поглотитель теней",
+    "portuguese": "Glutão Sombrio",
+    "chinese": "噬影者",
+    "spanish": "Devorasombras",
+    "chinese_traditional": "暗影吞噬者",
+    "korean": "그림자 포식자",
+    "japanese": "シャドウイーター"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-c02d67e83afdaf37-2327020f80e424847ac8ee86603ac764-v2",
+      "english": "A piece of the Umbra Shroud, blindly searching for morsels and metals to collect, returning them to the collective Shroud consciousness. Though when I say collect, I really mean eat them whole.",
+      "french": "Un fragment du Suaire umbra toujours en quête de sous-bistres et de métaux à collecter pour les restituer à la conscience collective du Suaire. Et par collecter, je veux dire \"dévorer tout cru\".",
+      "german": "Ein Stück der Umbra-Mantelwesen, das blind nach Nuggets und Metallen sucht und alles wieder dem kollektiven Mantelwesen-Bewusstsein zuführt. Mit „suchen“ meine ich allerdings „mit Haut und Haaren auffressen“.",
+      "russian": "Составляющая часть Завесы Мрака, слепо ищущая заморышей и металлы, которые можно собрать, чтобы доставить коллективному разуму. И под «собрать» я имею в виду «сожрать».",
+      "portuguese": "Parte do Sombrio Velado. Eles buscam Lanchos e metais para coletar e trazer para o coletivo Velado. Com “coletar”, na verdade quero dizer devorar.",
+      "chinese": "雾影的一部分，会盲目地收集影裔与金属，并将它们送回到雾影的集体意识之中。这里“收集”一词的意思是：把它们一口吞掉。",
+      "spanish": "Una parte del Velo de Umbra que busca pinchos y metales a ciegas para devolverlos a la consciencia colectiva del Velo. Dicho proceso de devolución consiste en tragárselos enteros.",
+      "chinese_traditional": "黑暗幽影的殘片，盲目地尋找並收集著莫塞爾和金屬，將它們返回到幽影族的集體意識當中。雖然說是收集，但其實是整個吞噬對方。",
+      "korean": "어스름 장막의 파편 중 하나로, 이들은 작은 그림자와 금속을 쫓아 수집하여 장막의 집단 의식으로 되돌리는 일을 한다. 여기서 수집이란 통째로 집어삼킨다는 뜻이다.",
+      "japanese": "アンブラ・シュラウドの一部。集めるべき食料や金属を盲目的に探し、それらを集合的なシュラウドの意識に返す。集めるというのは、実際には丸ごと食べることを意味する。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Gorger.prefab",
+    "m_AssetGUID": "3fbb14a142e0cf7409d489cf4a0f7ea4"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-7d4c53bfdc365988-2327020f80e424847ac8ee86603ac764-v2",
+        "english": "Restore [effect0.power] health. Deal [effect1.power] damage to enemy units.",
+        "french": "Restaure <nobr>[effect0.power] PV.</nobr> Inflige <nobr>[effect1.power] DGT</nobr> aux unités ennemies.",
+        "german": "Stelle [effect0.power] Gesundheit wieder her. Füge gegnerischen Einheiten [effect1.power] Schaden zu.",
+        "russian": "Восстанавливает [effect0.power] здоровья. Наносит [effect1.power] урона вражеским бойцам.",
+        "portuguese": "Restaura [effect0.power] de vida. Causa [effect1.power] de dano às unidades inimigas.",
+        "chinese": "恢复 [effect0.power] 点生命值。对所有敌方单位造成 [effect1.power] 点伤害。",
+        "spanish": "Restaura [effect0.power] de salud. Inflige [effect1.power] de daño a las unidades enemigas.",
+        "chinese_traditional": "恢復[effect0.power]點生命值。對敵方單位造成[effect1.power]點傷害。",
+        "korean": "체력을 [effect0.power]만큼 회복합니다. 적 유닛들에게 [effect1.power]의 피해를 입힙니다.",
+        "japanese": "体力を[effect0.power]回復する。敵ユニットに[effect1.power]のダメージを与える。"
+      },
+      "trigger": "on_feed",
+      "effects": [
+        {
+          "effectStateName": "CardEffectHeal",
+          "targetMode": "self",
+          "targetTeamType": "heroes",
+          "paramInt": 10
+        },
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramInt": 20
+        }
+      ]
+    }
+  ],
+  "size": 3,
+  "health": 50,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_Forager",
+    "SubtypesData_BannerUnit"
+  ],
+  "characterChatterData": "UmbraShroudChatterData"
+}

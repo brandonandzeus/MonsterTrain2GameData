@@ -1,0 +1,83 @@
+{
+  "id": "MonsterTotemHealing",
+  "name": "Guardian Stone",
+  "nameKey": {
+    "key": "CharacterData_nameKey-1ff9c51bf6a24cf4-9753104f58db2f14caea0965e30e3538-v2",
+    "english": "Guardian Stone",
+    "french": "Pierre gardienne",
+    "german": "Wachenstein",
+    "russian": "Сторожевой камень",
+    "portuguese": "Rocha Guardiã",
+    "chinese": "冥卫之石",
+    "spanish": "Piedra guardián",
+    "chinese_traditional": "守護石",
+    "korean": "수호석",
+    "japanese": "墓守の石"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d40b317dedb99ed1-9753104f58db2f14caea0965e30e3538-v2",
+      "english": "I’ve been told these stones predate even the Guard. They have been etched by its various members, marking the only true record of each Stygian who has been inducted.",
+      "french": "J'ai entendu dire que ces pierres sont plus anciennes que les Gardes eux-mêmes, qui y ont réalisé des gravures au fil du temps. Elles constituent la seule trace écrite recensant les noms des Stygiens à avoir été initiés.",
+      "german": "Ich habe erfahren, dass diese Steine sogar älter sind als die Wache. Ihre Mitglieder haben sie verziert, was sie zu den einzig echten Aufzeichnungen zu den aufgenommenen Stygiern macht.",
+      "russian": "Говорят, эти камни возникли еще до появления Стражи. Многочисленные ее члены оставляли на них свои следы, являющиеся единственным достоверным свидетельством существования обращенного стигийца.",
+      "portuguese": "Disseram-me que essas pedras são anteriores até mesmo à Guarda. Elas foram gravadas por seus vários membros, marcando o único registro verdadeiro de cada novo Estigeano.",
+      "chinese": "我听说，这些石头甚至早在冥卫出现之前就存在了。无数部落曾在这些石头上留下自己的印记，宣称自己才是幽冥唯一的神选者。",
+      "spanish": "Según me dijeron, estas piedras son aún más antiguas que la Guardia. Sus miembros han dejado su marca en ellas, convirtiéndolas en el único registro de todos los estigios alistados.",
+      "chinese_traditional": "我聽說這些石頭甚至比守衛更古老。它們被各個成員蝕刻，標記著每個被接納的冥河人的唯一真實紀錄。",
+      "korean": "이 돌은 수비대 창설 이전부터 존재했다고 한다. 그 위에는 명계에 들어온 이들의 공적이 새겨져 있으며, 그들이 남긴 실로 유일한 기록이다.",
+      "japanese": "この石碑は墓守たちよりも古くあるものだと聞いている。さまざまな墓守の名が刻まれており、名を残す栄誉を得たステュクス族たちの唯一の真の記録となっているのだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_GuardianStone.prefab",
+    "m_AssetGUID": "0fed702d92fb71040af7d10be6f6541b"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-b167abe297bb57e4-9753104f58db2f14caea0965e30e3538-v2",
+        "english": "Apply [armor] [effect0.status0.power] to friendly units.",
+        "french": "Confère <b>Armure</b> [effect0.status0.power] aux unités alliées.",
+        "german": "Wende [effect0.status0.power] <b>Rüstung</b> auf verbündete Einheiten an.",
+        "russian": "На союзников накладывается [armor] х[effect0.status0.power].",
+        "portuguese": "Concede <b>Armadura</b> [effect0.status0.power] às unidades aliadas.",
+        "chinese": "使友方单位获得<b>护甲</b> [effect0.status0.power]。",
+        "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas.",
+        "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。",
+        "korean": "아군 유닛들에게 [armor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramStatusEffects": [
+            {
+              "statusId": "armor",
+              "count": 1
+            }
+          ],
+          "animToPlay": "attack",
+          "paramInt": 100
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 1,
+  "attackDamage": 0,
+  "deathSlidesBackwards": false,
+  "subtypeKeys": [
+    "SubtypesData_Totem_7c4e7151-d042-49e2-9700-29e7c760b691"
+  ]
+}

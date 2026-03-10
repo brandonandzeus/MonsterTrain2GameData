@@ -1,0 +1,97 @@
+{
+  "id": "Fortify",
+  "name": "Fortified Pauldrons",
+  "nameKey": {
+    "key": "CardData_nameKey-b3b5cc390b6ac49d-7a6fa80fc37d9c541b9e37625bf870e3-v2",
+    "english": "Fortified Pauldrons",
+    "french": "Épaulières renforcées",
+    "german": "Verstärkte Schulterpanzer",
+    "russian": "Прочные наплечники",
+    "portuguese": "Ombreiras Fortificadas",
+    "chinese": "加固护肩",
+    "spanish": "Hombreras reforzadas",
+    "chinese_traditional": "強化護肩",
+    "korean": "강화된 견갑",
+    "japanese": "補強された肩甲"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-800d2387e2bacf1b-7a6fa80fc37d9c541b9e37625bf870e3-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-27993336a6421d1b-7a6fa80fc37d9c541b9e37625bf870e3-v2",
+      "english": "Leather is a common material among the Hellhorned, so I’ve lined my garb with the material for protection. Given the stench, I’m sure the source of it is better left a mystery.",
+      "french": "Le cuir est très répandu parmi les Cornus, j'ai donc adapté mes vêtements à la mode locale. Étant donné son odeur, mieux vaut ne pas savoir d'où provient le matériau.",
+      "german": "Die Höllenhörner verwenden häufig Leder, darum habe ich meine Kleidung ebenfalls damit verstärkt. Es stinkt scheußlich. Ich ziehe es vor, seinen Ursprung nicht weiter zu hinterfragen.",
+      "russian": "Адские отродья любят использовать кожу, поэтому и я обшиваю ей свое снаряжение. Учитывая силу этой вони, я предпочту ничего не знать о ее источнике.",
+      "portuguese": "O couro é um material comum entre os Endiabrados, portanto, forrei meu traje com ele para me proteger. Dado o mau cheiro, tenho certeza de que é melhor deixar a origem dele como um mistério.",
+      "chinese": "在狱魔氏族里，皮革是一种广泛使用的材料，于是我也给衣服垫入了皮革衬里加强防护力。但皮革的气味很难闻，到底是什么皮还是不要知道为好。",
+      "spanish": "El cuero es un material común entre los Astados Infernales, de modo que he cubierto mi ropa con él para mejorar sus defensas. Por el olor, será mejor que su origen permanezca en el misterio.",
+      "chinese_traditional": "皮革是煉獄族常用的材料，所以我用這種材料當作我服裝的襯裡以利防身。因為它散發著惡臭，所以我想還是不要去深究這皮革的來源比較好。",
+      "korean": "지옥뿔 군단이 흔히 사용하는 가죽을 옷의 안감으로 사용하여 보호를 강화했다. 고약한 냄새의 원인에 대해서는 굳이 말하지 않는 게 좋을 것이다.",
+      "japanese": "革は獄角族がよく使う素材だ。防御のために、その革で衣服を補強した。酷い臭いだ。一体何の革なのかは知らずにおいた方がいいだろう。"
+    }
+  ],
+  "cardType": "equipment",
+  "rarity": "common",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Fortify.prefab",
+    "m_AssetGUID": "3df2bd7730a6fe84ba8653ad51f7e02a"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Fortify",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "armor",
+            "count": 6
+          }
+        ],
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-dd07966ba686a5e0-1a77eed5a07da6b4286cab89432cbaa3-v2",
+              "english": "Gain [armor] [effect0.status0.power].",
+              "french": "Octroie [armor] [effect0.status0.power].",
+              "german": "Erhalte [armor] [effect0.status0.power].",
+              "russian": "Дается [armor] х[effect0.status0.power].",
+              "portuguese": "Recebe [armor] [effect0.status0.power].",
+              "chinese": "获得 [armor] [effect0.status0.power]。",
+              "spanish": "Añade [armor] [effect0.status0.power].",
+              "chinese_traditional": "獲得[armor][effect0.status0.power]。",
+              "korean": "[armor][effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[armor] [effect0.status0.power]を得る。"
+            },
+            "trigger": "post_combat",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "armor",
+                    "count": 6
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/FortifiedPauldrons/FX_FortifiedPauldrons.prefab",
+          "m_AssetGUID": "1644f171d9ed985459778bcac233e2e9"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "StartOfTurnAddFunguysPerDeckSize",
+  "name": "Twisting Mycelium",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-0a82a5dfe2219cc9-8594465553af4554a9ea2ac82c5955e7-v2",
+    "english": "Twisting Mycelium",
+    "french": "Mycélium torsadé",
+    "german": "Verdrehtes Myzel",
+    "russian": "Витая грибница",
+    "portuguese": "Micélio Retorcido",
+    "chinese": "扭曲的菌丝",
+    "spanish": "Micelio retorcido",
+    "chinese_traditional": "扭曲菌絲",
+    "korean": "뒤틀린 균사체",
+    "japanese": "捻じれの菌糸体"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-b115421994f416c8-8594465553af4554a9ea2ac82c5955e7-v2",
+    "english": "On turn start [spawn] [effect0.effect0.status0.power] on each floor per [effect0.power] cards in your Deck.",
+    "french": "Au début du tour, <b>génère</b> [effect0.effect0.status0.power] à chaque niveau par tranche de <nobr>[effect0.power] cartes</nobr> dans le deck.",
+    "german": "Zu Beginn des Zugs [spawn] [effect0.effect0.status0.power] für alle [effect0.power] Karten in deinem Deck auf jeder Ebene.",
+    "russian": "В начале хода на все этажи накладывается [spawn] х[effect0.effect0.status0.power] за каждые несколько карт в колоде ([effect0.power]).",
+    "portuguese": "No início do turno, <b>Convoca</b> [effect0.effect0.status0.power] em cada andar para cada [effect0.power] cartas em seu deck.",
+    "chinese": "回合开始时，你的卡组里每有 [effect0.power] 张牌，每层 [spawn] [effect0.effect0.status0.power]。",
+    "spanish": "Al empezar el turno, [spawn] [effect0.effect0.status0.power] en cada piso por cada [effect0.power] cartas en tu mazo.",
+    "chinese_traditional": "在回合開始時，每有[effect0.power]張牌在你的牌組中，就在每個樓層[spawn][effect0.effect0.status0.power]。",
+    "korean": "턴 시작 시 덱에 있는 카드 [effect0.power]장마다 각 층에 [spawn] [effect0.effect0.status0.power] 효과가 적용됩니다.",
+    "japanese": "ターン開始時に、デッキ内のカード[effect0.power]枚につき、各フロアに[effect0.effect0.status0.power]体[spawn]出現する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-988ce7154ca1b3ba-8594465553af4554a9ea2ac82c5955e7-v2",
+      "english": "“In moments, the clearing was overrun with the Decay and the bones that housed our children were lifted from the earth to feed the evil.”\n—The Archives of the Great Decay",
+      "french": "<nobr>« En</nobr> quelques instants, la clairière fut envahie par le pourrissement, et les os qui abritaient nos enfants furent arrachés à la terre pour nourrir le <nobr>mal. »</nobr> \n— Les Archives du Grand Pourrissement",
+      "german": "„In wenigen Augenblicken wurde die Lichtung vom Zerfall heimgesucht und die Knochen unserer Kinder aus der Erde gehoben, um das Böse zu nähren.“\n—Die Archive des Großen Zerfalls",
+      "russian": "«В считанные мгновения поляну охватило разложение, и кости, в которых находились наши дети, вырвало из земли, чтобы ими напиталось зло»\n— Архивы Великого разложения",
+      "portuguese": "“Em instantes, a clareira foi invadida pela Decadência, e os ossos que abrigavam nossos filhos foram retirados da terra para alimentar o mal.”\n— Arquivos da Grande Decadência",
+      "chinese": "“顷刻之间，这片空地就被腐朽占领，我们孩子的尸骨从泥土中升起，成为邪恶的养料。”\n——《大腐朽纪事》",
+      "spanish": "En unos instantes, la Descomposición arrasó el claro, y los huesos que habitaban nuestros hijos se alzaron de la tierra para alimentar este mal».\n—Archivos de la Gran Descomposición",
+      "chinese_traditional": "「片刻之間，空地就被衰敗吞噬，庇蔭我們孩子的骨頭從地下被撬起來餵養邪惡。」\n——大腐壞紀實",
+      "korean": "“개간지가 순식간에 부패의 힘에 물들었고, 아이들의 영혼을 담고 있던 뼈는 땅 위로 튀어나와 사악한 존재의 양식이 되었다.”\n- 위대한 부패의 기록",
+      "japanese": "「一瞬にして辺りは荒廃に飲み込まれ、子供たちの骨は地面から持ち上げられ、悪魔の餌食となった。」\n—偉大なる枯死の記録"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddEffectPerPileStartOfTurn",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "targetCharacterSubtype": "SubtypesData_Horde",
+          "paramCharacterData": {
+            "id": "MonsterFunguy",
+            "nameKey": {
+              "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+              "english": "Funguy",
+              "french": "Champote",
+              "german": "Fungus",
+              "russian": "Грибоец",
+              "portuguese": "Fungo",
+              "chinese": "蘑菇人",
+              "spanish": "Lustrongo",
+              "chinese_traditional": "真菌人",
+              "korean": "균사체",
+              "japanese": "ファンガイ"
+            },
+            "characterPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+              "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+            },
+            "impactVFX": {
+              "vfxPrefabRefLeft": {
+                "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+              },
+              "spawnLocation": "character_center"
+            },
+            "size": 1,
+            "health": 4,
+            "attackDamage": 3,
+            "subtypeKeys": [
+              "SubtypesData_FunGuy",
+              "SubtypesData_Shroom",
+              "SubtypesData_Horde"
+            ],
+            "characterChatterData": "UnderlegionShroomFemaleChatterData"
+          },
+          "paramStatusEffects": [
+            {
+              "statusId": "horde",
+              "count": 1
+            }
+          ],
+          "additionalTooltips": [
+            {
+              "trigger": "card_monster_played",
+              "style": "default",
+              "isTriggerTooltip": true
+            }
+          ]
+        }
+      ],
+      "paramMaxInt": 20,
+      "paramBool": true
+    }
+  ],
+  "disallowInDeploymentPhase": true
+}

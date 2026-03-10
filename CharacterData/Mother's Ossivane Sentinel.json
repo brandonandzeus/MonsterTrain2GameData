@@ -1,0 +1,87 @@
+{
+  "id": "R1_Heavy_HealOnShift_Ver2",
+  "name": "Mother's Ossivane Sentinel",
+  "nameKey": {
+    "key": "CharacterData_nameKey-6ffb1ced1acfd7be-f29cb41b95c2a2a409e646c9dd919103-v2",
+    "english": "Mother's Ossivane Sentinel",
+    "french": "Sentinelle ossifiée de la Mère",
+    "german": "Mutters Knöcherner Wächter",
+    "russian": "Костяной страж Матери",
+    "portuguese": "Sentinela Ossivana da Mãe",
+    "chinese": "母亲的奥西维哨兵",
+    "spanish": "Centinela osivano de Madre",
+    "chinese_traditional": "母親的骨藤哨兵",
+    "korean": "어머니의 오시베인 감시병",
+    "japanese": "マザーのオッシヴェイン・センチネル"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d4671a27d4435e52-f29cb41b95c2a2a409e646c9dd919103-v2",
+      "english": "Shaped from an ossified bloom of souls, similar to Maera herself, these creatures serve as her silent defenders. Their nature reflects Maera’s rigid devotion to duty and obedience.",
+      "french": "Façonnées à partir d'une grappe d'âmes ossifiée, à l'instar de Maera elle-même, ces créatures sont ses gardiennes silencieuses. Leur nature reflète la dévotion inflexible de Maera au devoir et à l'obéissance.",
+      "german": "Diese Kreaturen sind, ähnlich Maera selbst, aus knöchernen Seelenblüten geformt und dienen als ihre stillen Verteidiger. In ihnen spiegelt sich Maeras unbeugsame Hingabe für Pflicht und Gehorsam wider.",
+      "russian": "Существа, сформированные из окаменевшего соцветия душ, подобно самой Маэре. Эти существа служат ей безмолвными защитниками. Их сущность отражает преданность Маэры долгу и дисциплине.",
+      "portuguese": "Moldadas a partir de um afloramento ossificado de almas similares à própria Maera, estas criaturas atuam como seus defensores silenciosos. Sua natureza reflete a devoção inabalável de Maera ao dever e à obediência.",
+      "chinese": "这些生物是梅拉无言的守卫者，与梅拉很像，是用骨化的灵魂之花塑造而成的。它们的本质映现出梅拉对职责与服从的刻板坚守。",
+      "spanish": "Formadas a partir de una aglomeración osificada de almas, como la propia Maera, estas criaturas actúan como sus guardianes silenciosos. Su naturaleza refleja la firme devoción de Maera al deber y la obediencia.",
+      "chinese_traditional": "這些生物由骨化的靈魂之花形成，與瑪伊拉本人相似，是她沉默的捍衛者。其本性反映了瑪伊拉對職責與服從的僵化奉獻。",
+      "korean": "메이라와 마찬가지로, 굳어버린 영혼의 꽃에서 태어난 이들은 말없이 그녀를 지키는 수호자들이다. 그들의 존재는 메이라가 신념처럼 품은 의무와 순종의 결의를 그대로 비춘다.",
+      "japanese": "マエラ自身と同様に、骨化した魂から形作らたこの生物は、彼女の静かなる守護者として仕えている。その性質はマエラの責務と服従への厳正な献身を反映している。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_OssivaneSentinel_SoulSavior.prefab",
+    "m_AssetGUID": "da9dba531fae659479611cbae95d124a"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-13cbaa0f2be9878d-f29cb41b95c2a2a409e646c9dd919103-v2",
+        "english": "Gain [effect0.status0.power] [armor].",
+        "french": "Octroie [effect0.status0.power] [armor].",
+        "german": "Erhalte [effect0.status0.power] [armor] an.",
+        "russian": "Дается [armor] х[effect0.status0.power].",
+        "portuguese": "Recebe [effect0.status0.power] [armor].",
+        "chinese": "获得 [effect0.status0.power] [armor]。",
+        "spanish": "Añade [effect0.status0.power] [armor].",
+        "chinese_traditional": "獲得[effect0.status0.power][armor]。",
+        "korean": "[effect0.status0.power] [armor] 효과를 획득합니다.",
+        "japanese": "[effect0.status0.power] [armor]を得る。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "armor",
+              "count": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 80,
+    "endlessAttack": 4
+  },
+  "size": 2,
+  "health": 200,
+  "attackDamage": 18,
+  "lifemotherVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Heavy_Enemy"
+  ],
+  "characterChatterData": "R1_Ossivane_ChatterData",
+  "artistAttribution": "Luke Banke"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ChanceToCleanse",
+  "name": "Cleansing Water",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-1f451319503e51e0-c58238f21d4609f4e8e70eb24aa593df-v2",
+    "english": "Cleansing Water",
+    "french": "Eau purifiante",
+    "german": "Reinigendes Wasser",
+    "russian": "Очистительная вода",
+    "portuguese": "Água Purificadora",
+    "chinese": "净化圣水",
+    "spanish": "Agua purificadora",
+    "chinese_traditional": "淨化之水",
+    "korean": "정화수",
+    "japanese": "浄化の水"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-98f2ef17e35ccfd2-c58238f21d4609f4e8e70eb24aa593df-v2",
+    "english": "[effect0.power]% chance to remove all [buff] effects on an enemy unit when it enters your train.",
+    "french": "<nobr>[effect0.power] %</nobr> de chances de retirer tous les [buff] d'un ennemi lorsqu'il entre dans le train.",
+    "german": "Chance von [effect0.power] %, dass alle [buff]-Effekte einer gegnerischen Einheit entfernt werden, wenn diese deinen Zug betritt.",
+    "russian": "С вероятностью [effect0.power]% снимает все [buff] с врага, проникающего в ваш поезд.",
+    "portuguese": "[effect0.power]% de chance de remover todos os efeitos de [buff] em uma unidade inimiga quando ela entrar no seu trem.",
+    "chinese": "当敌方单位进入火车时，有 [effect0.power]% 的几率移除一名敌方单位身上所有 [buff] 效果。",
+    "spanish": "[effect0.power] % de probabilidad de quitar todos los efectos de [buff] de una unidad enemiga cuando entra en tu tren.",
+    "chinese_traditional": "[effect0.power]%機率在敵方單位進入你的列車時移除其所有[buff]效果。",
+    "korean": "적 유닛이 열차에 진입하면 [effect0.power]% 확률로 모든 [buff] 효과를 제거합니다.",
+    "japanese": "敵ユニットが列車に侵入した際に、[effect0.power]%の確率で[buff]効果をすべて解除する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-27fa9cd5402c6660-c58238f21d4609f4e8e70eb24aa593df-v2",
+      "english": "During my time in Heaven, I was gifted some of their purifying water, but the liquid was so strong that it would burn anything it touched. So, I put it aside. It has now found a new use as a repellant in the Boneshaker.",
+      "french": "Lors de mon séjour au paradis, les anges m'ont offert de l'eau purifiante, mais le liquide était si puissant qu'il brûlait tout ce qu'il touchait. Je l'ai donc mis de côté. Aujourd'hui, je lui ai trouvé une nouvelle utilité comme répulsif à bord du Hurleflammes.",
+      "german": "Während meiner Zeit im Himmel habe ich etwas vom reinigenden Wasser der Himmelsbewohner erhalten. Die Flüssigkeit war aber so stark, dass sie alles verbrannte, was sie berührte. Ich verstaute sie daher sicher. Nun ist das Wasser als Abwehrmittel im Knochenrüttler sehr nützlich.",
+      "russian": "Пребывая в Раю, я сумел раздобыть немного их очищающей воды, но она оказалась настолько едкой, что прожигала все, чего касалась. И я предпочел убрать ее подальше. Но теперь ей нашлось применение в виде репеллента для помещений «Костолома».",
+      "portuguese": "Durante meu tempo no Céu, recebi um pouco da água purificadora, mas o líquido era tão forte que queimava tudo o que tocava. Então, eu deixei-o de lado. Agora, ele encontrou um novo uso como repelente no Ossuário.",
+      "chinese": "我在天堂的那段时间里，翼族给了我一些他们用来净化的圣水。不过这种圣水的效果太强，会烧掉一切触碰的东西。于是我便把这瓶圣水搁置起来了。如今，我可以用它消灭老爷车号上的害虫。",
+      "spanish": "Durante mi época en el Cielo, me regalaron unas botellas de su agua purificadora, pero era tan fuerte que quemaba todo lo que tocaba. Las guardé hasta que, por fin, se me ocurrió usarlas como repelente en el Sacudehuesos.",
+      "chinese_traditional": "我在天堂的期間，被贈予了一些他們的淨化之水，但液體太強烈以至於會燒毀接觸到的任何東西。所以，我把它放在一邊。它現在有了新的用途：用來驅逐碎骨者。",
+      "korean": "천상에 머무르는 동안 정화수를 선물로 받은 적이 있었는데, 그 액체는 닿는 것을 모조리 태워버릴 만큼 강력했기에 한동안 손이 닿지 않는 곳에 두었다. 지금은 본쉐이커의 퇴치제라는 새로운 용도가 생겼다.",
+      "japanese": "天界にいる間、彼らに浄化の水を少しもらったのだが、それは触れたものをすべて燃やしてしまうほど強烈な代物だった。私はそれを取っておくことにし、今ではボーンシェイカーの忌避剤としての新しい用途が見つかったのだ。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectChanceAddEffectAfterSpawn",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectRemoveAllStatusEffects",
+          "targetMode": "self",
+          "targetTeamType": "heroes"
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardEffectBuff_TooltipText",
+            "english": "Buff effects are generally positive for their target and are represented by green icons.",
+            "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+            "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+            "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+            "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+            "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+            "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+            "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+            "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+            "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectBuff_TooltipTitle",
+            "english": "Buff",
+            "french": "Bonus",
+            "german": "Buff",
+            "russian": "Усиление",
+            "portuguese": "Buff",
+            "chinese": "增益",
+            "spanish": "Potenciación",
+            "chinese_traditional": "增益",
+            "korean": "버프",
+            "japanese": "バフ"
+          }
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": 50
+    }
+  ],
+  "deprioritizeInFtueDrafts": true
+}

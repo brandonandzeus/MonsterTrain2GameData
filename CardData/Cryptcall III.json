@@ -1,0 +1,59 @@
+{
+  "id": "FlickerRaiseOnSlayAbility3",
+  "name": "Cryptcall III",
+  "nameKey": {
+    "key": "CardData_nameKey-164a561ccaf7e8a4-e167b4c84cbb1d34e838644d0e66aa82-v2",
+    "english": "Cryptcall III",
+    "french": "Appel de la crypte III",
+    "german": "Gruftruf III",
+    "russian": "Зов из склепа III",
+    "portuguese": "Chamado da Cripta III",
+    "chinese": "地穴呼唤 III",
+    "spanish": "Llamada a la cripta III",
+    "chinese_traditional": "墓穴呼喚III",
+    "korean": "크립트콜 III",
+    "japanese": "墓所の呼び声III"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-4bde5fee030faccc-e167b4c84cbb1d34e838644d0e66aa82-v2",
+    "english": "[raise] [effect0.power] random units and apply an additional +[effect0.upgrade.bonusdamage][attack].",
+    "french": "<b>Reforme</b> [effect0.power] unités aléatoires et leur confère +[effect0.upgrade.bonusdamage][attack].",
+    "german": "[raise] von [effect0.power] zufälligen Einheiten. Wende zusätzlich +[effect0.upgrade.bonusdamage][attack] an.",
+    "russian": "[raise] и усиление [effect0.power] шт. случайных бойцов на +[effect0.upgrade.bonusdamage][attack].",
+    "portuguese": "<b>Renova</b> [effect0.power] unidades aleatórias e aplica um adicional de +[effect0.upgrade.bonusdamage][attack].",
+    "chinese": "随机[raise] [effect0.power] 个单位，并使其获得 +[effect0.upgrade.bonusdamage][attack]。",
+    "spanish": "<b>Reforma</b> [effect0.power] unidades aleatorias y añade +[effect0.upgrade.bonusdamage][attack] adicional.",
+    "chinese_traditional": "[raise][effect0.power]個隨機單位並額外施加+[effect0.upgrade.bonusdamage][attack]。",
+    "korean": "[raise] 효과로 무작위 유닛을 [effect0.power]명 되살린 후 +[effect0.upgrade.bonusdamage][attack]을 추가 획득합니다.",
+    "japanese": "ランダムなユニットを[effect0.power] [raise]させ、追加で+[effect0.upgrade.bonusdamage][attack]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectRecursion",
+      "targetMode": "exhaust",
+      "targetCardType": "monster",
+      "targetCardSelectionMode": "random_to_hand",
+      "paramCardUpgradeData": {
+        "id": "RaiseForChampionLevel3",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "ephemeral",
+            "count": 1
+          }
+        ],
+        "bonusDamage": 25,
+        "bonusHP": 5,
+        "costReduction": 99
+      },
+      "shouldFailToCastIfTestFails": true,
+      "paramInt": 2,
+      "additionalParamInt": 19,
+      "paramBool": true
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

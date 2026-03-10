@@ -1,0 +1,88 @@
+{
+  "id": "PurifyingCleanse",
+  "name": "Purifying Cleanse",
+  "nameKey": {
+    "key": "CardData_nameKey-6b7f86936881d741-05ca026d5025dc74db778b976be27799-v2",
+    "english": "Purifying Cleanse",
+    "french": "Ciro-lustration",
+    "german": "Reinigungskur",
+    "russian": "Священное очищение",
+    "portuguese": "Purificação",
+    "chinese": "净化洗礼",
+    "spanish": "Limpieza ritual",
+    "chinese_traditional": "淨化儀式",
+    "korean": "정화 의식",
+    "japanese": "浄化の清め"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b6ecc2b83e6a26ee-05ca026d5025dc74db778b976be27799-v2",
+    "english": "Restore [effect0.power] health and apply [burnout] [effect1.status0.power] to a friendly unit.",
+    "french": "Restaure [effect0.power] PV et confère [burnout] [effect1.status0.power] à un allié.",
+    "german": "Stelle [effect0.power] Gesundheit wieder her und wende [burnout] [effect1.status0.power] auf eine verbündete Einheit an.",
+    "russian": "Восстанавливает союзнику [effect0.power] здоровья и накладывает [burnout] х[effect1.status0.power].",
+    "portuguese": "Restaura [effect0.power] de vida e aplica [burnout] [effect1.status0.power] a uma unidade aliada.",
+    "chinese": "恢复 [effect0.power]点生命值，并使一个友方单位获得 [burnout] [effect1.status0.power]。",
+    "spanish": "Restaura [effect0.power] de salud y añade [burnout] [effect1.status0.power] a una unidad aliada.",
+    "chinese_traditional": "恢復[effect0.power]點生命值並對一個友方單位施加[burnout][effect1.status0.power]。",
+    "korean": "체력을 [effect0.power]만큼 회복하고 아군 유닛에 [burnout] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "体力を[effect0.power]回復し、味方ユニットに[burnout] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-ff5a11d528c23bc1-05ca026d5025dc74db778b976be27799-v2",
+      "english": "Before entering a wax drip and applying new wax, a process I’ve been told is called “guttering”, Waxers are asked to cleanse themselves of any blemishes and impurities to keep the wax as clean as possible.",
+      "french": "Avant qu'ils ne reçoivent une nouvelle couche de cire, un procédé apparemment nommé <nobr>« ciro-lustration »,</nobr> les cireux sont tenus de se débarrasser de leurs imperfections et impuretés afin que la cire reste aussi propre que possible.",
+      "german": "Bevor sie unter einem Rinnsal neues Wachs auf sich auftragen – ich glaube, diesen Vorgang nennen sie „Berinnung“ –, müssen die Wachser Schmutz und Unreinheiten von sich abwaschen, um das Wachs so sauber wie möglich zu halten.",
+      "russian": "Прежде чем войти под капель и получить свежий воск (этот процесс называют «расплавлением»), Восковиков просят очиститься от всех изъянов и грязи, чтобы воск был как можно более чистым.",
+      "portuguese": "Antes de entrar em um gotejamento de cera e aplicar uma camada, um processo que, segundo me disseram, é chamado de “parafinamento”, os Céreos devem se livrar de quaisquer manchas e impurezas para manter a cera o mais limpa possível.",
+      "chinese": "在开始滴蜡、涂抹新蜡之前（据称这个过程名为“灌蜡”），烛人要先清洗自己身上的污秽与不洁之物，让蜡油尽可能地保持纯净。",
+      "spanish": "Antes de entrar a un baño de cera y aplicarse cera nueva, los encerados pasan por un proceso llamado «depuración» en el que deben purgarse de todo defecto e impureza para mantener la cera tan limpia como sea posible.",
+      "chinese_traditional": "在進入蠟滴並塗上新蠟之前，有人跟我說這個過程叫做「除垢」，蠟像必須清除任何瑕疵和雜質，以保持蠟的清潔。",
+      "korean": "이야기에 따르면 밀랍 인간은 밀랍 방울에 들어가 새 밀랍을 받기 전에 \"흘려 보내기\"라는 과정을 거친다. 자신의 몸을 이루는 밀랍을 최대한 깨끗하게 유지하기 위해, 이들은 밀랍에 묻은 먼지와 불순물을 흘려 보낸다.",
+      "japanese": "蝋を垂らして新しい蝋を塗る前に（「蝋浴」と呼ばれるプロセスだそうだ）、蝋をできるだけきれいに保つために、ワクサーは自身の体の汚れや不純物を洗い流すように求められる。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_PurifiedCleanse.prefab",
+    "m_AssetGUID": "b69f9c7fca3cc5c4eacb1225a1ad011b"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectHeal",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramInt": 15,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_HealImpactLarge_PS.prefab",
+          "m_AssetGUID": "da89d764437b23145875547344957522"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "ephemeral",
+          "count": 3
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_HealImpactLarge_PS.prefab",
+          "m_AssetGUID": "da89d764437b23145875547344957522"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Tammy Chang"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "Benediction",
+  "name": "Benediction",
+  "nameKey": {
+    "key": "CardData_nameKey-b47772e4d808ebaa-e21f9a2f6c470424181cd97d9381c560-v2",
+    "english": "Benediction",
+    "french": "Bénédiction",
+    "german": "Segen",
+    "russian": "Благословение",
+    "portuguese": "Bênção",
+    "chinese": "赐福",
+    "spanish": "Bendición",
+    "chinese_traditional": "祝福",
+    "korean": "은총",
+    "japanese": "祝祷"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-bbc07e450a5e8890-e21f9a2f6c470424181cd97d9381c560-v2",
+    "english": "Apply [valor] [effect0.status0.power] and [damageshield] [effect1.status0.power] to friendly units.",
+    "french": "Confère [valor] [effect0.status0.power] et [damageshield] [effect1.status0.power] aux unités alliées.",
+    "german": "Wende [valor] [effect0.status0.power] und [damageshield] [effect1.status0.power] auf verbündete Einheiten an.",
+    "russian": "На союзников накладываются [valor] х[effect0.status0.power] и [damageshield] х[effect1.status0.power].",
+    "portuguese": "Concede [valor] [effect0.status0.power] e [damageshield] [effect1.status0.power] a unidades aliadas.",
+    "chinese": "使所有友方单位获得 [valor] [effect0.status0.power] 和 [damageshield] [effect1.status0.power]。",
+    "spanish": "Añade [valor] [effect0.status0.power] y [damageshield] [effect1.status0.power] a las unidades aliadas.",
+    "chinese_traditional": "對友方單位施加[valor][effect0.status0.power]和[damageshield][effect1.status0.power]。",
+    "korean": "아군 유닛들에게 [valor] [effect0.status0.power] 및 [damageshield] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "味方ユニットに[valor] [effect0.status0.power]と[damageshield] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-e7a462f9b6b498c6-e21f9a2f6c470424181cd97d9381c560-v2",
+      "english": "“I am now the Judge of Souls and I find you all lacking.” said Seraph. “Do not worry, I will rectify your flaws.”",
+      "french": "<nobr>« Je</nobr> suis désormais le juge des âmes et je vous trouve tous <nobr>impurs »,</nobr> dit Séraphin. <nobr>« Ne</nobr> vous inquiétez pas, je vais corriger vos <nobr>défauts. »</nobr>",
+      "german": "„Ich bin jetzt der Richter der Seelen und ihr alle weist Mängel auf“, sagte Seraph. „Aber macht euch keine Sorgen. Ich werde eure Fehler korrigieren.“",
+      "russian": "«Сейчас я — Судья душ, и я считаю вас всех недостойными, — объявил Серафим. — Но не беспокойтесь, я исправлю ваши недостатки».",
+      "portuguese": "“Agora sou o Juiz das Almas e considero todos vocês falhos”, disse Serafim. “Não se preocupem, eu corrigirei suas falhas.”",
+      "chinese": "“现在，我是灵魂的审判者，而我发现你们全都有所欠缺。”炽天使说道。“别担心，我会纠正你们的缺点。”",
+      "spanish": "«Ahora soy el Juez de las Almas, y os sentencio a todos como deficientes», declaró Seraph. «No os preocupéis: corregiré vuestros defectos».",
+      "chinese_traditional": "「我現在是靈魂的審判者，我發現你們都不夠格。」撒拉弗說。「不用擔心，我會糾正你們的缺陷。」",
+      "korean": "“지금 나는 영혼의 심판자다, 그리고 내가 보기에 너희는 한참 부족하구나.” 세라핌이 입을 열었다. “걱정 말거라. 내가 너희의 결점을 고쳐줄 테니.”",
+      "japanese": "「私は今や魂の判定者であり、お前らは全員失格だ」と、セラフは言った。「心配するな、お前らの欠陥は私が正してやる」"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Benediction.prefab",
+    "m_AssetGUID": "64dd8b853e5158a42888bbc0aea2286c"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "valor",
+          "count": 2
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Banished/Benediction/FX_Benediction2.prefab",
+          "m_AssetGUID": "3d548e3361144c5499df32be4489441f"
+        },
+        "spawnLocation": "room_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

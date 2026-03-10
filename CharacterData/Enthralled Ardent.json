@@ -1,0 +1,83 @@
+{
+  "id": "ClericT3_IncantAttack",
+  "name": "Enthralled Ardent",
+  "nameKey": {
+    "key": "CharacterData_nameKey-6dbf60e22af9395d-a67e81a792f2dab46bc9429dc52f7316-v2",
+    "english": "Enthralled Ardent",
+    "french": "Fervent envoûté",
+    "german": "Feuereiferer",
+    "russian": "Преданный последователь",
+    "portuguese": "Ardente Encantado",
+    "chinese": "失心热忱者",
+    "spanish": "Exaltado cautivado",
+    "chinese_traditional": "著迷虔誠者",
+    "korean": "복종의 열성 신도",
+    "japanese": "魅了されたアーデント"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-bec8f934e663c46e-a67e81a792f2dab46bc9429dc52f7316-v2",
+      "english": "The highest rank of Heaven’s disciples, these ardents once helped steward Seraph’s Light. They now wield it against us.",
+      "french": "Ces hauts disciples du paradis ont autrefois aidé à canaliser la Lumière de Séraphin. Ils la brandissent maintenant contre nous.",
+      "german": "Dieser höchste Rang unter den Himmelsjüngern hat einst geholfen, das Licht des Seraphs zu verbreiten. Jetzt setzen sie es gegen uns ein.",
+      "russian": "Апостолы самого высокого ранга. Раньше они помогали Серафиму управлять Светом, который теперь используют против нас.",
+      "portuguese": "A mais alta classificação dos discípulos do Céu, esses ardentes já ajudaram a administrar a Luz do Serafim. Agora eles a usam contra nós.",
+      "chinese": "作为天堂最高阶的使徒，这些狂热者曾帮助管理炽天使的圣光。如今他们用这圣光来对付我们。",
+      "spanish": "Los discípulos de mayor rango del Cielo, que antes ayudaban a controlar la luz de Seraph, ahora la usan contra nosotros.",
+      "chinese_traditional": "這些虔誠者是天堂門徒中的最高級別，曾經幫助管理撒拉弗的光明。他們現在則用它來對付我們。",
+      "korean": "천상의 신도 중 가장 높은 계급에 속하는 열성 신도들은 과거 세라핌의 빛을 관리하는 일을 맡았다. 이제 그들은 그 빛을 우리에게 휘두른다.",
+      "japanese": "天界の信徒の最高位であるこの熱心な信者たちは、かつてはセラフの光の管理に尽力していた。彼らは今、その光を我々に対して行使している。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_EnthralledArdent.prefab",
+    "m_AssetGUID": "60bef9237cf3abf4da6114f476c9b9b8"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-bde77e2c21dd6d87-a67e81a792f2dab46bc9429dc52f7316-v2",
+        "english": "Grant non-boss enemy units +[effect0.power][attack].",
+        "french": "Octroie +[effect0.power][attack] aux unités ennemies (hors boss).",
+        "german": "Nicht-Boss-Einheiten erhalten +[effect0.power][attack].",
+        "russian": "Враги не-боссы получают +[effect0.power][attack].",
+        "portuguese": "Concede +[effect0.power][attack] às unidades inimigas que não são chefões.",
+        "chinese": "敌方非首领单位获得 +[effect0.power][attack]。",
+        "spanish": "Otorga +[effect0.power][attack] a las unidades enemigas no jefe.",
+        "chinese_traditional": "賦予非首領敵方單位+[effect0.power][attack]。",
+        "korean": "보스 외의 적 유닛들에게 +[effect0.power][attack]을 부여합니다.",
+        "japanese": "非ボスの敵ユニットに+[effect0.power][attack]を付与する。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        {
+          "effectStateName": "CardEffectBuffDamage",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "targetIgnoreBosses": true,
+          "paramInt": 5
+        }
+      ]
+    },
+    {
+      "trigger": "post_combat_healing",
+      "effects": [
+        {
+          "effectStateName": "CardEffectHeal",
+          "targetMode": "room_heal_targets",
+          "targetTeamType": "heroes",
+          "paramInt": 40
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 15,
+  "canAttack": false,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_AttackerEnemy_b7a79da2-ded9-4e26-8702-555817499f07"
+  ],
+  "characterChatterData": "T3TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

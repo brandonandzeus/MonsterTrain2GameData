@@ -1,0 +1,127 @@
+{
+  "id": "MonsterClusterColonel",
+  "name": "Cluster Colonel",
+  "nameKey": {
+    "key": "CharacterData_nameKey-fa08b09786c0d93c-81017a85f1a2e4249bc7dd0c644a1571-v2",
+    "english": "Cluster Colonel",
+    "french": "Colonel Bubon",
+    "german": "Schwammoberst",
+    "russian": "Полковник Кластер",
+    "portuguese": "Coronel Colônia",
+    "chinese": "菌簇上校",
+    "spanish": "Coronel Cúmulo",
+    "chinese_traditional": "簇生上校",
+    "korean": "클러스터 대령",
+    "japanese": "クラスター大佐"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-ea2a6e41cd72cf50-81017a85f1a2e4249bc7dd0c644a1571-v2",
+      "english": "“I would be willing—no, happy—to lead these Caps to battle every day!”",
+      "french": "<nobr>« Je</nobr> serais ravi de mener ces champis au combat tous les <nobr>jours ! »</nobr>",
+      "german": "„Ich wäre bereit – nein, geehrt – diese Hüte jeden Tag in die Schlacht zu führen!“",
+      "russian": "«Я готов... Нет, я просто счастлив ежедневно вести этих ребят в бой!»",
+      "portuguese": "“Eu estaria disposto... Quero dizer, feliz por liderar esses cogumelos em batalha todos os dias!”",
+      "chinese": "“我愿意——不，很乐意——每天率领这些蘑菇上阵杀敌！”",
+      "spanish": "«Sería un honor... ¡no, un placer, liderar a estos hongos en batalla todos los días!».",
+      "chinese_traditional": "「我願意——不，應該說我很榮幸每天帶領這些帽子去戰鬥！」",
+      "korean": "\"나는 반드시... 아니, 기꺼이 이 버섯들을 데리고 매일 싸울 것입니다!\"",
+      "japanese": "「毎日キノコたちを戦いで率いるのは構わない——いや、喜んで引き受けよう！」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ClusterColonel.prefab",
+    "m_AssetGUID": "e77bd95ef98c98943b8075afde52cf6e"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "armor",
+      "count": 10
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-d45ed6b6261e0a3f-81017a85f1a2e4249bc7dd0c644a1571-v2",
+        "english": "[spawn] [effect0.power].",
+        "french": "<b>Génère</b> [effect0.power].",
+        "german": "[spawn] [effect0.power].",
+        "russian": "[spawn] х[effect0.power].",
+        "portuguese": "[spawn] [effect0.power].",
+        "chinese": "[spawn] [effect0.power]。",
+        "spanish": "[spawn] [effect0.power].",
+        "chinese_traditional": "[spawn][effect0.power]。",
+        "korean": "[spawn] [effect0.power].",
+        "japanese": "[spawn] [effect0.power]。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "both",
+          "targetCharacterSubtype": "SubtypesData_Horde",
+          "paramCharacterData": {
+            "id": "MonsterFunguy",
+            "nameKey": {
+              "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+              "english": "Funguy",
+              "french": "Champote",
+              "german": "Fungus",
+              "russian": "Грибоец",
+              "portuguese": "Fungo",
+              "chinese": "蘑菇人",
+              "spanish": "Lustrongo",
+              "chinese_traditional": "真菌人",
+              "korean": "균사체",
+              "japanese": "ファンガイ"
+            },
+            "characterPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+              "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+            },
+            "impactVFX": {
+              "vfxPrefabRefLeft": {
+                "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+              },
+              "spawnLocation": "character_center"
+            },
+            "size": 1,
+            "health": 4,
+            "attackDamage": 3,
+            "subtypeKeys": [
+              "SubtypesData_FunGuy",
+              "SubtypesData_Shroom",
+              "SubtypesData_Horde"
+            ],
+            "characterChatterData": "UnderlegionShroomFemaleChatterData"
+          },
+          "paramStatusEffects": [
+            {
+              "statusId": "horde",
+              "count": 4
+            }
+          ],
+          "additionalTooltips": [
+            {
+              "trigger": "card_monster_played",
+              "style": "default",
+              "isTriggerTooltip": true,
+              "allowSecondaryPlacement": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 5,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 10,
+  "subtypeKeys": [
+    "SubtypesData_Shroom",
+    "SubtypesData_BannerUnit"
+  ],
+  "characterChatterData": "UnderlegionShroomMaleChatterData"
+}

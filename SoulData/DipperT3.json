@@ -1,0 +1,119 @@
+{
+  "id": "DipperT3",
+  "name": "DipperT3",
+  "nameKey": {
+    "key": "SoulData_nameKey-36bf88927614a72e-b7eb4a21cd2bf524098dd1e4462e9a6d-v2",
+    "english": "Dipper III",
+    "french": "Baigneur III",
+    "german": "Kelle III",
+    "russian": "Клевач III",
+    "portuguese": "Acompanhamento III",
+    "chinese": "浸染者 III",
+    "spanish": "Compañerismo III",
+    "chinese_traditional": "杓子III",
+    "korean": "디퍼 III",
+    "japanese": "ディッパーIII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-fdbcc4e779338d09-b7eb4a21cd2bf524098dd1e4462e9a6d-v2",
+    "english": "[summon]: Apply [effect0.power]% of this unit's Buff stacks to friendly units.",
+    "french": "<nobr>[summon] :</nobr> applique <nobr>[effect0.power] %</nobr> de mes bonus à tous les alliés du niveau.",
+    "german": "[summon]: Wende [effect0.power] % meiner Buffs auf andere verbündete Einheiten in dieser Ebene an.",
+    "russian": "[summon]: передает [effect0.power]% своих усилений союзникам на этаже.",
+    "portuguese": "[summon]: concede [effect0.power]% dos meus buffs às outras unidades aliadas no andar.",
+    "chinese": "[summon]：使本层其他友方单位获得自身增益的 [effect0.power]%。",
+    "spanish": "[summon]: Añade el [effect0.power] % de sus potenciaciones a otras unidades aliadas de este piso.",
+    "chinese_traditional": "[summon]：將我的增益的[effect0.power]%施加給樓層上的其他友方單位。",
+    "korean": "[summon]: 내 버프의 [effect0.power]%를 같은 층의 다른 아군 유닛들에 적용합니다.",
+    "japanese": "[summon]：同じフロア上の味方ユニットに自身のバフの[effect0.power]%を付与する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "DipperT3_Upgrade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-332212946caa29cb-c1df832dbf4c38f44bb448c6e73ac29e-v2",
+          "english": "Dipper",
+          "french": "Baigneur",
+          "german": "Kelle",
+          "russian": "Клевач",
+          "portuguese": "Acompanhamento",
+          "chinese": "阿杯",
+          "spanish": "Compañerismo",
+          "chinese_traditional": "杓子",
+          "korean": "디퍼",
+          "japanese": "ディッパー"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-e32c9746c66edd0d-c1df832dbf4c38f44bb448c6e73ac29e-v2",
+          "english": "[summon]: Apply [charactertrigger0.effect0.power]% of this unit's Buff stacks to other friendly units.",
+          "french": "<nobr>[summon] :</nobr> applique <nobr>[charactertrigger0.effect0.power] %</nobr> de mes bonus aux autres alliés du niveau.",
+          "german": "[summon]: Wende [charactertrigger0.effect0.power] % meiner Buffs auf andere verbündete Einheiten in dieser Ebene an.",
+          "russian": "[summon]: передает [charactertrigger0.effect0.power]% своих усилений союзникам на этаже.",
+          "portuguese": "[summon]: concede [charactertrigger0.effect0.power]% dos meus buffs às outras unidades aliadas no andar.",
+          "chinese": "[summon]：使本层其他友方单位获得自身增益的 [charactertrigger0.effect0.power]%。",
+          "spanish": "[summon]: Añade el [charactertrigger0.effect0.power] % de sus potenciaciones a otras unidades aliadas de este piso.",
+          "chinese_traditional": "[summon]：將我的增益的[charactertrigger0.effect0.power]%施加給樓層上的其他友方單位。",
+          "korean": "[summon]: 내 버프의 [charactertrigger0.effect0.power]%를 같은 층의 다른 아군 유닛들에 적용합니다.",
+          "japanese": "[summon]：同じフロア上の味方ユニットに自身のバフの[charactertrigger0.effect0.power]%を付与する。"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-ced375f62fe6a5a6-c1df832dbf4c38f44bb448c6e73ac29e-v2",
+              "english": "Apply [effect0.power]% of this unit's Buff stacks to friendly units.",
+              "french": "Applique <nobr>[effect0.power] %</nobr> de mes bonus aux autres alliés du niveau.",
+              "german": "Wende [effect0.power] % meiner Buffs auf andere verbündete Einheiten in dieser Ebene an.",
+              "russian": "Передает [effect0.power]% своих усилений союзникам на этаже.",
+              "portuguese": "Aplica [effect0.power]% dos meus buffs às outras unidades aliadas no andar.",
+              "chinese": "使本层其他友方单位获得自身增益的 [effect0.power]%。",
+              "spanish": "Añade el [effect0.power] % de sus potenciaciones a otras unidades aliadas de este piso.",
+              "chinese_traditional": "將我的增益的[effect0.power]%施加給樓層上的其他友方單位。",
+              "korean": "내 버프의 [effect0.power]%를 같은 층의 다른 아군 유닛들에 적용합니다.",
+              "japanese": "同じフロア上の味方ユニットに自身のバフの[effect0.power]%を付与する。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectNULL",
+                "targetMode": "self",
+                "targetTeamType": "monsters",
+                "paramBool": true
+              },
+              {
+                "effectStateName": "CardEffectTransferAllStatusEffectsFromUnit",
+                "targetMode": "self",
+                "targetTeamType": "monsters",
+                "paramInt": 8,
+                "additionalParamInt": 2,
+                "paramFloat": 1.0
+              }
+            ]
+          }
+        ],
+        "isRegionRunUpgrade": true,
+        "excludeFromClones": true
+      }
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-947bdd22c91c1811-b7eb4a21cd2bf524098dd1e4462e9a6d-v2",
+      "english": "Apply Buffs to upgrade.",
+      "french": "Appliquez des bonus pour améliorer.",
+      "german": "Wende Buffs zum Verbessern an.",
+      "russian": "Чтобы улучшить, примените усиления.",
+      "portuguese": "Aplique Buffs para melhorar.",
+      "chinese": "施加增益以升级。",
+      "spanish": "Añade potenciaciones para mejorar.",
+      "chinese_traditional": "施加增益以升級。",
+      "korean": "버프들을 적용하면 업그레이드됩니다.",
+      "japanese": "バフを付与してアップグレード。"
+    },
+    "unlockCondition": "soul_buffs_applied",
+    "paramInt": 2000
+  },
+  "tierLevel": 3
+}

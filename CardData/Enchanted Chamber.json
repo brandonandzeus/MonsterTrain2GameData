@@ -1,0 +1,103 @@
+{
+  "id": "EnchantedChamber",
+  "name": "Enchanted Chamber",
+  "nameKey": {
+    "key": "CardData_nameKey-b62fd646946fb402-62a9d5f6dcd82dc4ab56e9e42b483db7-v2",
+    "english": "Enchanted Chamber",
+    "french": "Chambre enchantée",
+    "german": "Verzauberte Kammer",
+    "russian": "Заколдованная комната",
+    "portuguese": "Câmara Encantada",
+    "chinese": "附魔室",
+    "spanish": "Cámara encantada",
+    "chinese_traditional": "魔法室",
+    "korean": "마력실",
+    "japanese": "魔法の間"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-76c6e0e61b365cff-62a9d5f6dcd82dc4ab56e9e42b483db7-v2",
+    "english": "+[effect0.upgrade.roommodifier0.power] [magicpower].",
+    "french": "+[effect0.upgrade.roommodifier0.power] [magicpower].",
+    "german": "+[effect0.upgrade.roommodifier0.power] [magicpower].",
+    "russian": "+[magicpower] х[effect0.upgrade.roommodifier0.power].",
+    "portuguese": "+[effect0.upgrade.roommodifier0.power] de [magicpower].",
+    "chinese": "+[effect0.upgrade.roommodifier0.power] [magicpower]。",
+    "spanish": "+[effect0.upgrade.roommodifier0.power] [magicpower].",
+    "chinese_traditional": "+[effect0.upgrade.roommodifier0.power][magicpower]。",
+    "korean": "+[effect0.upgrade.roommodifier0.power] [magicpower].",
+    "japanese": "+[effect0.upgrade.roommodifier0.power] [magicpower]。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-14f53ce7f1f61bf7-62a9d5f6dcd82dc4ab56e9e42b483db7-v2",
+      "english": "Building the train was a true test of engineering. But not all solutions could be hammered away. Sometimes it’s useful to know a thing or two about magic. ",
+      "french": "La construction du train a été une véritable prouesse d'ingénierie. Mais tout n'a pas pu être réalisé à la force de l'outil. Il est parfois utile d'avoir quelques notions de magie.",
+      "german": "Es war eine technische Herausforderung, den Zug zu bauen. Doch nicht alle Lösungen können mit dem Hammer behoben werden. Manchmal muss man sich auch mit Magie verstehen.",
+      "russian": "Сборка поезда потребовала большой инженерной работы, но молот — не универсальный инструмент. Некоторые идеи можно воплотить только с помощью магии. ",
+      "portuguese": "A construção do trem foi um verdadeiro teste de engenharia. Mas nem tudo pôde ser feito à base da martelada. Às vezes, é bastante útil saber um pouco de magia.",
+      "chinese": "造这辆火车是对工程技术的真正考验。但光靠工程学没法解决一切问题。有时候，对魔法略知一二是很有用的。",
+      "spanish": "Construir el tren fue una auténtica proeza de ingeniería, pero no todas las soluciones fueron mecánicas. A veces, es útil tener alguna noción de magia.",
+      "chinese_traditional": "建造列車是對工程學的真正考驗。但並非所有問題都能用錘子解決。有時候，懂一點魔法也很有用。",
+      "korean": "열차를 만드는 일은 기술적으로도 많은 실험이 필요했다. 하지만 망치로 두들기는 것만이 해결책은 아니었다. 가끔은 마법에 관한 지식 한두 개가 유용할 때도 있다.",
+      "japanese": "列車の製造は工学の限界を求められるようなものだった。ただし金槌ですべてが解決するわけではない。少々の魔法の知識が役に立つこともあるのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "room",
+  "rarity": "uncommon",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_EnchantedChamber.prefab",
+    "m_AssetGUID": "94473ea1a1b4d004480371becf545e60"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "EnchantedChamber",
+        "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-c8915c7096f7d0cb-2cc8dbcb535315f4086550693696ff4b-v2",
+        "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-e520d9a35523d4d2-2cc8dbcb535315f4086550693696ff4b-v2",
+        "roomModifierUpgrades": [
+          {
+            "descriptionKey": "CardUpgradeData_descriptionKey-08d82ae96e720fcd-2cc8dbcb535315f4086550693696ff4b-v2",
+            "roomStateModifierClassName": "RoomStateMagicalPowerModifier"
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardTraitMagicPower_TooltipText",
+            "english": "Increases the amount of damage dealt and health restored by spells.",
+            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+            "chinese": "提高法术造成的伤害与恢复的生命值。",
+            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+          },
+          "titleKey": {
+            "key": "CardTraitMagicPower_TooltipTitle",
+            "english": "Magic Power",
+            "french": "Puissance magique",
+            "german": "Magische Kraft",
+            "russian": "Сила магии",
+            "portuguese": "Poder Mágico",
+            "chinese": "魔法强度",
+            "spanish": "Poder mágico",
+            "chinese_traditional": "魔法力量",
+            "korean": "마법력",
+            "japanese": "魔力"
+          }
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Rithyra Bin"
+}

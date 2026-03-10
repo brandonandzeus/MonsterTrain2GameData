@@ -1,0 +1,86 @@
+{
+  "id": "DamageShieldOnEquip",
+  "name": "Radiant Arms",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-cd8860d35820fab2-e30ee1dbdd9337042aa6602ac534b536-v2",
+    "english": "Radiant Arms",
+    "french": "Bras rayonnants",
+    "german": "Strahlende Waffen",
+    "russian": "Сверкающие руки",
+    "portuguese": "Brasão Radiante",
+    "chinese": "闪亮臂甲",
+    "spanish": "Brazos radiantes",
+    "chinese_traditional": "光輝武器",
+    "korean": "광휘 무기",
+    "japanese": "光の腕"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-d887aff6da8de624-e30ee1dbdd9337042aa6602ac534b536-v2",
+    "english": "When you equip a unit, apply [damageshield] [effect0.trigger0.effect0.status0.power].",
+    "french": "Lorsque vous équipez une unité, confère [damageshield] [effect0.trigger0.effect0.status0.power].",
+    "german": "Wende beim Ausrüsten einer Einheit [damageshield] [effect0.trigger0.effect0.status0.power] an.",
+    "russian": "Когда боец надевает снаряжение, на него накладывается [damageshield] х[effect0.trigger0.effect0.status0.power].",
+    "portuguese": "Quando uma unidade é equipada, aplica [damageshield] [effect0.trigger0.effect0.status0.power].",
+    "chinese": "当你为单位穿戴装备时，使其获得 [damageshield] [effect0.trigger0.effect0.status0.power]。",
+    "spanish": "Cuando equipas a una unidad, aplicas [damageshield] [effect0.trigger0.effect0.status0.power].",
+    "chinese_traditional": "當你裝備一個單位時，施加[damageshield][effect0.trigger0.effect0.status0.power]。",
+    "korean": "유닛에 장비를 장착하면 [damageshield] [effect0.trigger0.effect0.status0.power] 효과가 적용됩니다.",
+    "japanese": "ユニットに装着すると、[damageshield] [effect0.trigger0.effect0.status0.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-301c16e91572fad4-e30ee1dbdd9337042aa6602ac534b536-v2",
+      "english": "“Can you make it match my wings? I have to think about my brand.”\n—Talos",
+      "french": "<nobr>« C'est</nobr> possible qu'il soit assorti à mes <nobr>ailes ?</nobr> Je dois penser à mon image de <nobr>marque. »</nobr> \n— Talos",
+      "german": "„Könnte das auf meine Flügel abgestimmt werden? Ich muss an meine Image denken.“\n—Talos",
+      "russian": "«А можно, чтобы они подходили к моим крыльям? Это важно для моего имиджа».\n —Талос",
+      "portuguese": "“Você pode fazer com que combine com as minhas asas? Quero causar uma boa impressão.”\n— Talos",
+      "chinese": "“可以让它和我的翅膀更搭一点吗？我得保持的我个人特色。”\n——塔洛丝",
+      "spanish": "«¿Puede ir a juego con mis alas? Tengo que cuidar mi imagen».\n—Talos",
+      "chinese_traditional": "「你能把它設計得跟我的翅膀相配嗎？我還得顧慮到品牌形象。」\n——塔洛斯",
+      "korean": "“내 날개에 맞게 만들어 줄 수 있을까? 내 브랜드도 생각해야지.”\n- 탈로스",
+      "japanese": "「翼とマッチするようにできる？イメージって大切なのよ」\n—タロス"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "CollectableRelicData_descriptionKey-f28f2ab433382b69-e30ee1dbdd9337042aa6602ac534b536-v2",
+            "english": "Apply [damageshield] [effect0.status0.power].",
+            "french": "Confère [damageshield] [effect0.status0.power].",
+            "german": "Wende [damageshield] [effect0.status0.power] an.",
+            "russian": "Накладывает [damageshield] х[effect0.status0.power].",
+            "portuguese": "Aplica [damageshield] [effect0.status0.power].",
+            "chinese": "获得 [damageshield] [effect0.status0.power]。",
+            "spanish": "Añade [damageshield] [effect0.status0.power].",
+            "chinese_traditional": "施加[damageshield][effect0.status0.power]。",
+            "korean": "[damageshield] [effect0.status0.power] 효과를 적용합니다.",
+            "japanese": "[damageshield] [effect0.status0.power]を付与する。"
+          },
+          "trigger": "on_equipment_added",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "both",
+              "paramStatusEffects": [
+                {
+                  "statusId": "damage shield",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramBool": true
+    }
+  ]
+}

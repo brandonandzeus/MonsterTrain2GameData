@@ -1,0 +1,83 @@
+{
+  "id": "SpellUpgradeReduceCostAddConsume",
+  "name": "Smolderstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-387260aae81c7a83-cb44237a452d11e4fbb619c5cde2e67a-v2",
+    "english": "Smolderstone",
+    "french": "Pierre de flambeau",
+    "german": "Schwelstein",
+    "russian": "Тлеющий осколок",
+    "portuguese": "Pedra Fumegante",
+    "chinese": "闷燃石",
+    "spanish": "Piedrardiente",
+    "chinese_traditional": "悶燼石",
+    "korean": "잿불석",
+    "japanese": "燻りの石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-de9fc0697ff48282-cb44237a452d11e4fbb619c5cde2e67a-v2",
+    "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember]</nobr> and gain [consume].",
+    "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember]</nobr> et gagne [consume].",
+    "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember]</nobr> kostet, und erhalte [consume].",
+    "russian": "Снижает цену чар на <nobr>-[effect0.upgrade.costreduction][ember]</nobr> и дает [consume].",
+    "portuguese": "Melhora um feitiço para custar <nobr>-[effect0.upgrade.costreduction][ember]</nobr> e recebe [consume].",
+    "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]</nobr> 并获得 [consume]。",
+    "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember]</nobr> y añade [consume].",
+    "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>，並獲得[consume]。",
+    "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember]</nobr> 감소하며, [consume]을 획득합니다.",
+    "japanese": "呪文アップグレード：<nobr>-[effect0.upgrade.costreduction][ember]</nobr>、[consume]を得る。"
+  },
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "paramCardUpgradeData": {
+        "id": "ReduceCostAddConsume",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-1729d9b97b02b296-f9f4e321fdad5144da12fcf6ac9e6312-v2",
+          "english": "Smolderstone",
+          "french": "Pierre de flambeau",
+          "german": "Schwelstein",
+          "russian": "Тлеющий осколок",
+          "portuguese": "Pedra Fumegante",
+          "chinese": "闷燃石",
+          "spanish": "Piedrardiente",
+          "chinese_traditional": "悶燼石",
+          "korean": "잿불석",
+          "japanese": "燻りの石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-8d310ba2e1053b9a-f9f4e321fdad5144da12fcf6ac9e6312-v2",
+          "english": "-[costreduction][ember] and gain [consume].",
+          "french": "-[costreduction][ember] et octroie [consume].",
+          "german": "-[costreduction][ember] und erhalte [consume].",
+          "russian": "-[costreduction][ember] и дается [consume].",
+          "portuguese": "-[costreduction][ember] e recebe [consume].",
+          "chinese": "-[costreduction][ember] 并获得 [consume]。",
+          "spanish": "-[costreduction][ember] y añade [consume].",
+          "chinese_traditional": "-[costreduction][ember]並獲得[consume]。",
+          "korean": "-[costreduction][ember] 및 [consume] 속성을 획득합니다.",
+          "japanese": "-[costreduction][ember]、[consume]を得る。"
+        },
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitExhaustState"
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeConsume",
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitExhaustState"
+            ]
+          }
+        ],
+        "costReduction": 2,
+        "xCostReduction": 2
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

@@ -1,0 +1,127 @@
+{
+  "id": "MonsterGenerousHost",
+  "name": "Green Recruit",
+  "nameKey": {
+    "key": "CharacterData_nameKey-84e7858b8194f657-66c82a10dcae0d14ebb49357b651a5fd-v2",
+    "english": "Green Recruit",
+    "french": "Fraîche recrue",
+    "german": "Grüner Rekrut",
+    "russian": "Новобранец",
+    "portuguese": "Recruta Verde",
+    "chinese": "绿色新兵",
+    "spanish": "Recluta verde",
+    "chinese_traditional": "綠色新兵",
+    "korean": "숲의 신병",
+    "japanese": "グリーン・リクルート"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-2aef1634687ea398-66c82a10dcae0d14ebb49357b651a5fd-v2",
+      "english": "“One day, I’ll command the soldiers of the Fatal Elm and be the greatest warrior in all of Limbo!”\n—unnamed soldier now deceased",
+      "french": "<nobr>« Un</nobr> jour, je commanderai les soldats de l'Orme funeste, et je serai le plus grand guerrier de tous les <nobr>Limbes ! »</nobr> \n— Soldat anonyme aujourd'hui décédé",
+      "german": "„Eines Tages werde ich die Soldaten der Schicksalsulme befehligen und der größte Krieger in ganz Limbo sein!“\n—Verstorbener unbekannter Soldat",
+      "russian": "«Однажды я буду командовать армией Рокового Вяза и стану величайшим воином в истории Лимбо!»\n— Ныне погибший неизвестный солдат.",
+      "portuguese": "“Um dia, eu comandarei os soldados do Ulmeiro Mortal e serei o maior guerreiro de todo o Limbo!”\n— soldado sem nome já falecido",
+      "chinese": "“总有一天，我会统率致命榆树的士兵，并成为地狱边缘最伟大的战士！”\n——现已去世的无名士兵",
+      "spanish": "«¡Algún día, lideraré a los soldados del Olmo Fatal y seré el mejor guerrero del Limbo!».\n—Guerrero desconocido, ya fallecido",
+      "chinese_traditional": "「總有一天，我會指揮致命榆樹的士兵，成為靈薄獄最偉大的戰士！」\n——某位已故的無名士兵",
+      "korean": "\"언젠가 나는 운명의 느릅나무가 이끄는 병사들을 지휘하고 지옥 변방 전역에서 가장 위대한 전사가 될 것이다!\"\n- 사망한 이름 없는 병사",
+      "japanese": "「いつの日か、私は宿命の樹の兵士たちを率いて、辺獄全体で最強の戦士となるのだ！」\n—死亡した無名の兵士"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_TrueBeliever.prefab",
+    "m_AssetGUID": "46f58bd8a626c9e40961863327b63bc7"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-cd35809f98d6e327-66c82a10dcae0d14ebb49357b651a5fd-v2",
+        "english": "[spawn] [effect0.power].",
+        "french": "<b>Génère</b> [effect0.power].",
+        "german": "[spawn] [effect0.power].",
+        "russian": "[spawn] х[effect0.power].",
+        "portuguese": "[spawn] [effect0.power].",
+        "chinese": "[spawn] [effect0.power]。",
+        "spanish": "[spawn] [effect0.power].",
+        "chinese_traditional": "[spawn][effect0.power]。",
+        "korean": "[spawn] [effect0.power].",
+        "japanese": "[spawn] [effect0.power]。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        {
+          "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "targetCharacterSubtype": "SubtypesData_Horde",
+          "paramCharacterData": {
+            "id": "MonsterFunguy",
+            "nameKey": {
+              "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+              "english": "Funguy",
+              "french": "Champote",
+              "german": "Fungus",
+              "russian": "Грибоец",
+              "portuguese": "Fungo",
+              "chinese": "蘑菇人",
+              "spanish": "Lustrongo",
+              "chinese_traditional": "真菌人",
+              "korean": "균사체",
+              "japanese": "ファンガイ"
+            },
+            "characterPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+              "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+            },
+            "impactVFX": {
+              "vfxPrefabRefLeft": {
+                "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+              },
+              "spawnLocation": "character_center"
+            },
+            "size": 1,
+            "health": 4,
+            "attackDamage": 3,
+            "subtypeKeys": [
+              "SubtypesData_FunGuy",
+              "SubtypesData_Shroom",
+              "SubtypesData_Horde"
+            ],
+            "characterChatterData": "UnderlegionShroomFemaleChatterData"
+          },
+          "paramStatusEffects": [
+            {
+              "statusId": "horde",
+              "count": 4
+            }
+          ],
+          "additionalTooltips": [
+            {
+              "trigger": "card_monster_played",
+              "style": "default",
+              "isTriggerTooltip": true,
+              "allowSecondaryPlacement": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 5,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 5,
+  "subtypeKeys": [
+    "SubtypesData_Shroom"
+  ],
+  "characterChatterData": "UnderlegionShroomMaleChatterData"
+}

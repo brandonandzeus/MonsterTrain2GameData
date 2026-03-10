@@ -1,0 +1,87 @@
+{
+  "id": "MeatShield",
+  "name": "Meat Shield",
+  "nameKey": {
+    "key": "CardData_nameKey-da1b5c2458c22a87-54c564735e8f9c64791a773376b55f6a-v2",
+    "english": "Meat Shield",
+    "french": "Bouclier de viande",
+    "german": "Fleischschild",
+    "russian": "Мясной щит",
+    "portuguese": "Escudo de Carne",
+    "chinese": "肉盾",
+    "spanish": "Escudo de carne",
+    "chinese_traditional": "肉盾",
+    "korean": "고기 방패",
+    "japanese": "肉の盾"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-29cc9627044a2df8-54c564735e8f9c64791a773376b55f6a-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-cce61e481300202f-54c564735e8f9c64791a773376b55f6a-v2",
+      "english": "A small plate made for the Bone Dog during a birthday ‘paint your own ceramics’ party. ",
+      "french": "Une petite assiette réalisée pour le chien squelette lors d'une fête d'anniversaire sur le thème <nobr>« Peignez</nobr> vos propres <nobr>céramiques ».</nobr>",
+      "german": "Ein kleiner Teller, der für den Knochenhund bei einer Geburtstagsfeier mit dem Thema „Keramik selbst bemalen“ entstanden ist.",
+      "russian": "Небольшая пластина, сделанная для Костяного пса на мастер-классе по росписи керамики. ",
+      "portuguese": "Um pequeno prato feito para o Cão de Ossos durante uma festa de aniversário na qual você “pintava sua própria cerâmica”.",
+      "chinese": "在一场“给自己的陶瓷上色”的生日派对上，为白骨犬制作的小盘子。",
+      "spanish": "Un pequeño plato para el Perro Esquelético creado durante una fiesta de cumpleaños de pintar tu propia cerámica.",
+      "chinese_traditional": "在一個生日「DIY陶瓷彩繪」派對上為骨狗製作的一個小盤子。",
+      "korean": "'나만의 도자기 만들기' 생일 파티에서 해골 강아지를 위해 만든 작은 접시.",
+      "japanese": "誕生日の\"自分の陶器に絵を描こう\"パーティーでホネイヌのために作られた小さな皿。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "uncommon",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MeatShield.prefab",
+    "m_AssetGUID": "8f8d63f9f80e5db41993dcb98b8dfcf0"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "MeatShield_Upgrade",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-42604c3e5a86be72-8f6382767e9837f4ea9b68cd81078b91-v2",
+              "english": "Restore [effect0.power] health.",
+              "french": "Restaure <nobr>[effect0.power] PV.</nobr>",
+              "german": "Stelle [effect0.power] Gesundheit wieder her.",
+              "russian": "Восстанавливает [effect0.power] здоровья.",
+              "portuguese": "Restaura [effect0.power] de vida.",
+              "chinese": "恢复 [effect0.power] 点生命值。",
+              "spanish": "Restaura [effect0.power] de salud.",
+              "chinese_traditional": "恢復[effect0.power]點生命值。",
+              "korean": "체력을 [effect0.power]만큼 회복합니다.",
+              "japanese": "体力を[effect0.power]回復する。"
+            },
+            "trigger": "post_combat",
+            "effects": [
+              {
+                "effectStateName": "CardEffectHeal",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramInt": 10
+              }
+            ]
+          }
+        ],
+        "bonusHP": 15
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/MeatShield/FX_MeatShield.prefab",
+          "m_AssetGUID": "1b63b68755c5f6b4f9e543ecb352bf70"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hannah Lim"
+}

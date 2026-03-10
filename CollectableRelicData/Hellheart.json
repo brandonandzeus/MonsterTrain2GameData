@@ -1,0 +1,60 @@
+{
+  "id": "PyregelOnEnterTopFloor",
+  "name": "Hellheart",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-d40feaaadd057a53-e0fb092be296f5c4da431c575986ed95-v2",
+    "english": "Hellheart",
+    "french": "Cœur d'enfer",
+    "german": "Höllenherz",
+    "russian": "Адское сердце",
+    "portuguese": "Coração Infernal",
+    "chinese": "地狱之心",
+    "spanish": "Corazón infernal",
+    "chinese_traditional": "地獄之心",
+    "korean": "지옥 심장",
+    "japanese": "ヘルハート"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-44e33e47b8e99ed5-e0fb092be296f5c4da431c575986ed95-v2",
+    "english": "Apply [pyregel] [effect0.status0.power] to Non-Flying Boss enemy units that enter the floor below the Pyre Room.",
+    "french": "Applique [pyregel] [effect0.status0.power] aux ennemis qui entrent dans le niveau sous la salle du Brasier.",
+    "german": "Wende [pyregel] [effect0.status0.power] auf gegnerische Einheiten an, wenn sie die Ebene unter der Höllenglut betreten.",
+    "russian": "Накладывает [pyregel] x[effect0.status0.power] на бойцов врага, проникающих на этаж под Пеклом.",
+    "portuguese": "Aplica [pyregel] [effect0.status0.power] às unidades inimigas que entrarem no andar abaixo da Sala da Pira.",
+    "chinese": "对进入薪火室下方楼层的敌方单位施加 [pyregel] [effect0.status0.power]。",
+    "spanish": "Añade [pyregel] [effect0.status0.power] a las unidades enemigas que entren al piso superior del tren.",
+    "chinese_traditional": "對進入列車頂層的敵方單位施加[pyregel][effect0.status0.power]。",
+    "korean": "화로실 아래층에 진입한 적 유닛들에게 [pyregel] [effect0.status0.power] 효과를 적용합니다. 비행형 보스에게는 적용되지 않습니다.",
+    "japanese": "炉室の下のフロアに入った敵ユニットに[pyregel] [effect0.status0.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-9e55177d2d374b67-e0fb092be296f5c4da431c575986ed95-v2",
+      "english": "Before the Pyreborne became the greedy dragons they are now, they would channel their passions into rubies they wore around their necks.",
+      "french": "Avant que les Draconides ne deviennent les dragons avides qu'ils sont aujourd'hui, ils canalisaient leur passion dans des rubis qu'ils portaient autour du cou.",
+      "german": "Bevor die Höllenglutkinder zu gierigen Drachen wurden, galt ihre Leidenschaft Rubinen, die sie um den Hals trugen.",
+      "russian": "Когда Пеклорожденные еще не были такими жадными, они питали безграничную страсть к рубинам, которые носили на шее.",
+      "portuguese": "Antes de os Píricos se tornarem os dragões gananciosos que são agora, eles canalizavam suas paixões em rubis que usavam no pescoço.",
+      "chinese": "在薪龙族变得像现在这样贪得无厌之前，他们会把激情注入红宝石，戴在脖子上。",
+      "spanish": "Antes de que los Hijos de la Pira se convirtieran en los codiciosos dragones que son ahora, canalizaban sus pasiones en rubíes que llevaban al cuello.",
+      "chinese_traditional": "在火焰之子成為現在這些貪婪的龍之前，他們會將自己的熱情注入戴在脖子上的紅寶石中。",
+      "korean": "화로의 후예가 지금처럼 탐욕에 물든 드래곤이 되기 전에는 모든 열정을 목에 건 루비에 쏟곤 했다.",
+      "japanese": "火竜族が今のような貪欲な竜になる前は、彼らは首に付けるルビーに情熱を注いでいた。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnEnterRoomIndex",
+      "paramStatusEffects": [
+        {
+          "statusId": "pyregel",
+          "count": 10
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": 2
+    }
+  ]
+}

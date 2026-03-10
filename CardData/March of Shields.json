@@ -1,0 +1,76 @@
+{
+  "id": "MarchOfShields",
+  "name": "March of Shields",
+  "nameKey": {
+    "key": "CardData_nameKey-e42ccf15e1c21890-d6bc50779e454a046aead75c24b87c16-v2",
+    "english": "March of Shields",
+    "french": "La marche des boucliers",
+    "german": "Marsch der Schilde",
+    "russian": "Натиск щитов",
+    "portuguese": "Marcha Escudeira",
+    "chinese": "盾墙冲锋",
+    "spanish": "Marcha de escudos",
+    "chinese_traditional": "盾牌進行曲",
+    "korean": "방패 진군",
+    "japanese": "盾の行進"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-2f813ba63e6fbdff-d6bc50779e454a046aead75c24b87c16-v2",
+    "english": "[advance]. Apply [armor] [effect0.status0.power].",
+    "french": "[advance]. Confère [armor] [effect0.status0.power].",
+    "german": "[advance]. Wende [armor] [effect0.status0.power] an.",
+    "russian": "[advance]. Накладывается [armor] х[effect0.status0.power].",
+    "portuguese": "<b>Avança</b>. Aplica [armor] [effect0.status0.power].",
+    "chinese": "[advance]。获得 [armor] [effect0.status0.power]。",
+    "spanish": "[advance]. Añade [armor] [effect0.status0.power].",
+    "chinese_traditional": "[advance]。施加[armor][effect0.status0.power]。",
+    "korean": "[advance]. [armor] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "[advance]。[armor] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-f0254463e6c63e90-d6bc50779e454a046aead75c24b87c16-v2",
+      "english": "Only the bravest, or dumbest, Hellhorned are chosen to bear a shield and hold the line. They are trained to take the brunt of most attacks through an intense regimen of magma-walking that kills more often than not.",
+      "french": "Seuls les Cornus les plus braves, ou les plus insensés, ont le droit de brandir un bouclier pour défendre leur position. Ces démons ont appris à résister aux attaques les plus violentes en marchant dans le magma au cours d'un entraînement brutal. Autant dire que très peu y survivent.",
+      "german": "Nur die mutigsten und die dümmsten Höllenhörner werden auserwählt, einen Schild zu tragen und die Stellung zu halten. Sie bereiten sich mit intensiven Magmamärschen, die ziemlich häufig tödlich enden, darauf vor, den stärksten Angriffen standzuhalten.",
+      "russian": "Только самые отважные или глупые Адские отродья берут в руки щит и становятся впереди строя. Усердные тренировки, сопряженные с маршами по лаве, во время которых чаще гибнут, чем выживают, подготовили этих созданий к отражению самых опасных атак.",
+      "portuguese": "Somente os Endiabrados mais corajosos, ou mais tolos, são escolhidos para segurar escudos na linha de frente. Eles são treinados para absorver a maioria dos ataques por meio de um treinamento rigoroso que consiste em andar na lava, geralmente provocando uma morte precoce.",
+      "chinese": "只有最勇猛或是最愚蠢的狱魔才会选择手持盾牌，坚守阵地。它们通过岩浆行走的魔鬼训练来强化体魄，从而足以承受绝大多数攻击，不过这种训练多数时候会要了它们的命。",
+      "spanish": "Solo los Astados Infernales más valientes o estúpidos son los elegidos para portar un escudo y mantener la posición. Entrenan para recibir lo peor de cada ataque con un intenso régimen de periplos de magma que suele acabar matándolos.",
+      "chinese_traditional": "只有最勇敢或最愚蠢的煉獄族才會被選中持盾並堅守陣線。他們接受高強度的熔岩行走訓練，以負責承受大部分攻擊，這種訓練通常會導致死亡。",
+      "korean": "방어선을 지키는 지옥뿔 군단은 가장 용감하거나, 가장 어리석은 자들만이 선택된다. 이들은 악마 대다수가 목숨을 잃는 혹독한 과정인 용암 걷기 의식을 진행하며 모든 공격을 최대한으로 활용할 수 있도록 훈련을 받는다.",
+      "japanese": "最も勇敢な、あるいは最も愚かな獄角族だけが、盾を持ち前線を守るために選ばれる。彼らは、大抵の場合には命を落とすことになる溶岩の中を歩くという厳しい訓練を通して、攻撃の矢面に立つように訓練されている。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_MarchOfShields.prefab",
+    "m_AssetGUID": "3405590e5d6dd4a4a9fc6bb762b2c91f"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 12
+        }
+      ],
+      "paramInt": 100
+    },
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both"
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 2,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Anita Tung"
+}

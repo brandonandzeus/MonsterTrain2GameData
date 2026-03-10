@@ -1,0 +1,54 @@
+{
+  "id": "LazarusLeagueChampDevour2_Ability",
+  "name": "Devour II",
+  "nameKey": {
+    "key": "CardData_nameKey-8f3b4568ce7d2b52-a85640d5e85b6094cabf26cc15baa9e1-v2",
+    "english": "Devour II",
+    "french": "Dévoration II",
+    "german": "Verschlingen II",
+    "russian": "Поглощение II",
+    "portuguese": "Devorar II",
+    "chinese": "吞噬 II",
+    "spanish": "Voracidad II",
+    "chinese_traditional": "吞噬II",
+    "korean": "삼키기 II",
+    "japanese": "貪りII"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-ff007cbda8ef9a13-a85640d5e85b6094cabf26cc15baa9e1-v2",
+    "english": "Gain twice their [attack].",
+    "french": "Confère deux fois son [attack].",
+    "german": "Erhalte ihren [attack] x2.",
+    "russian": "Забирает его двойную [attack].",
+    "portuguese": "Recebe o dobro do [attack] dele.",
+    "chinese": "获得其两倍的 [attack]。",
+    "spanish": "Añade el doble de su [attack].",
+    "chinese_traditional": "獲得其[attack]的兩倍。",
+    "korean": "그 유닛의 [attack]x2 을 획득합니다.",
+    "japanese": "対象の[attack]x 2を得る。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "effects": [
+    {
+      "effectStateName": "CardEffectTransferAttackFromUnit",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "targetCharacterSubtype": "SubtypesData_Assistant",
+      "paramInt": 1,
+      "additionalParamInt": 2
+    },
+    {
+      "effectStateName": "CardEffectSacrifice",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "targetCharacterSubtype": "SubtypesData_Assistant",
+      "paramSubtype": "SubtypesData_Assistant"
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly"
+}

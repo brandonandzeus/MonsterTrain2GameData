@@ -1,0 +1,82 @@
+{
+  "id": "StarterFireStarter",
+  "name": "Firestarter",
+  "nameKey": {
+    "key": "CardData_nameKey-27acfc1e280ea431-58991f5208fdf0445a7b83761893a2c5-v2",
+    "english": "Firestarter",
+    "french": "Allume-feu",
+    "german": "Anzünder",
+    "russian": "Поджог",
+    "portuguese": "Ignição",
+    "chinese": "引火",
+    "spanish": "Incandescencia",
+    "chinese_traditional": "縱火犯",
+    "korean": "불쏘시개",
+    "japanese": "発火具"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b9679e0a4c7adaff-58991f5208fdf0445a7b83761893a2c5-v2",
+    "english": "Deal [effect0.power] damage then apply [pyregel] [effect1.status0.power].",
+    "french": "Inflige <nobr>[effect0.power] DGT,</nobr> puis [pyregel] [effect1.status0.power].",
+    "german": "Füge [effect0.power] Schaden zu. Wende dann [pyregel] [effect1.status0.power] an.",
+    "russian": "Наносит [effect0.power] урона и накладывает [pyregel] х[effect1.status0.power].",
+    "portuguese": "Causa [effect0.power] de dano e, em seguida, aplica [pyregel] [effect1.status0.power].",
+    "chinese": "造成 [effect0.power] 点伤害，然后施加 [pyregel] [effect1.status0.power]。",
+    "spanish": "Inflige [effect0.power] de daño y añade [pyregel] [effect1.status0.power].",
+    "chinese_traditional": "造成[effect0.power]點傷害，然後施加[pyregel][effect1.status0.power]。",
+    "korean": "[effect0.power]만큼 피해를 준 뒤 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[effect0.power]のダメージを与え、[pyregel] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-091e301cbd3b37d0-58991f5208fdf0445a7b83761893a2c5-v2",
+      "english": "An incendiary mixture developed by the Pyreborne to add a little spark to battle.",
+      "french": "Un mélange incendiaire mis au point par les Draconides pour faire des étincelles au combat.",
+      "german": "Eine entflammbare Mischung nach Machart der Höllenglutkinder – für zusätzliche Funken im Kampf.",
+      "russian": "Зажигательная смесь от Пеклорожденных, чтобы разогреть заскучавших врагов.",
+      "portuguese": "Uma mistura incendiária desenvolvida pelos Píricos para adicionar um pouco de “calor” à batalha.",
+      "chinese": "一种由薪龙族研发的易燃混合物，可以在战斗中增添一点火花。",
+      "spanish": "Una mezcla incendiaria creada por los Hijos de la Pira para darle una chispita al combate.",
+      "chinese_traditional": "由火焰之子開發的燃燒混合物，為戰鬥添加一點火花。",
+      "korean": "화로의 후예가 전투에 강렬한 불꽃을 더할 목적으로 개발한 발화성 혼합물이다.",
+      "japanese": "火竜族が開発した発火力の強い調合。戦いを少し熱くする。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Firestarter.prefab",
+    "m_AssetGUID": "dea951acd30868c4bbbc9a93cea6bca4"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 1,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_ImpactFire_PS.prefab",
+          "m_AssetGUID": "2d1444371baed9a4e94156b585c6c64e"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "pyregel",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Luke Banke"
+}

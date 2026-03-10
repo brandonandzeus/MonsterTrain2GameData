@@ -1,0 +1,48 @@
+{
+  "id": "FriendlyUnitsGetHeartless",
+  "name": "Hollow",
+  "nameKey": {
+    "key": "MutatorData_nameKey-0df1ab27b40f014c-2f42d731ae4abb649a39b42ffd04ae81-v2",
+    "english": "Hollow",
+    "french": "Enveloppe vide",
+    "german": "Hülle",
+    "russian": "Пустой",
+    "portuguese": "Ocos",
+    "chinese": "空灵",
+    "spanish": "Hueco",
+    "chinese_traditional": "空心人",
+    "korean": "공허한 존재",
+    "japanese": "上の空"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-952d304aa45f9ff7-2f42d731ae4abb649a39b42ffd04ae81-v2",
+    "english": "Friendly units get [heal_immune].",
+    "french": "Les unités alliées gagnent <b>Sans-cœur</b>.",
+    "german": "Verbündete Einheiten erhalten <b>Herzlosigkeit</b>.",
+    "russian": "Союзники получают [heal_immune].",
+    "portuguese": "Unidades inimigas recebem <b>Desalmado</b>.",
+    "chinese": "友方单位获得[heal_immune]。",
+    "spanish": "Las unidades aliadas añaden [heal_immune].",
+    "chinese_traditional": "友方單位獲得[heal_immune]。",
+    "korean": "아군 유닛이 [heal_immune]을 얻습니다.",
+    "japanese": "味方ユニットが[heal_immune]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "heal immunity",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": -1
+    }
+  ],
+  "boonValue": -3,
+  "disableInDailyChallenges": true,
+  "tags": [
+    "friendlyeffect"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "ForcedContamination",
+  "name": "Forced Contamination",
+  "nameKey": {
+    "key": "CardData_nameKey-1a7644af7a7314b5-8197c93d465e52749b322e1b4aa3503e-v2",
+    "english": "Forced Contamination",
+    "french": "Contamination forcée",
+    "german": "Zwangskontaminierung",
+    "russian": "Принудительное заражение",
+    "portuguese": "Contaminação Forçada",
+    "chinese": "强行污染",
+    "spanish": "Contaminación forzada",
+    "chinese_traditional": "強制汙染",
+    "korean": "강제 오염",
+    "japanese": "強制汚染"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-47495c996a6fbe0c-8197c93d465e52749b322e1b4aa3503e-v2",
+    "english": "Apply [meleeweakness] [effect0.status0.power].",
+    "french": "Applique [meleeweakness] [effect0.status0.power].",
+    "german": "Wende [meleeweakness] [effect0.status0.power] an.",
+    "russian": "Накладывается [meleeweakness] х[effect0.status0.power].",
+    "portuguese": "Aplica [meleeweakness] [effect0.status0.power].",
+    "chinese": "施加 [meleeweakness] [effect0.status0.power]。",
+    "spanish": "Añade [meleeweakness] [effect0.status0.power].",
+    "chinese_traditional": "施加[meleeweakness][effect0.status0.power]。",
+    "korean": "[meleeweakness] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "[meleeweakness] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-10f315427d82be47-8197c93d465e52749b322e1b4aa3503e-v2",
+      "english": "The Echoes’ hunger for souls is what ultimately led to my discovery of this place. Their appetite had grown beyond the souls that were lured below so the Echoes had begun to extend their powers to the surface, leeching souls directly from those that would choose to wander the Bogs.",
+      "french": "La soif d'âmes des échos est ce qui m'a mené à la découverte de cet endroit. Leur appétit ne se limitant plus aux âmes attirées ici-bas, les échos commencèrent à étendre leur puissance en surface, se repaissant directement des âmes ayant choisi d'errer dans les marais.",
+      "german": "Das Lechzen der Echos nach Seelen hat mich letztendlich an diesen Ort geführt. Ihr Appetit überstieg bereits jene Seelen, die nach unten gelockt wurden. Die Echos breiteten ihre Macht folglich auf die Oberfläche aus, um jene Seelen zu verzehren, die in diesen Sümpfen umherirren.",
+      "russian": "Я узнал об этом месте из-за голодных эхо. Голод этот стал настолько велик, что душ, добровольно оказавшихся внизу, стало не хватать. Так эхо пришлось вылезти на поверхность и высасывать души из тех, кто просто решил прогуляться по болотам.",
+      "portuguese": "A fome por almas dos Ecos é o que definitivamente levou à minha descoberta deste lugar. Seu apetite cresceu além das almas que foram atraídas para o subsolo, então os Ecos começaram a estender seus poderes para a superfície, drenando almas diretamente daqueles que escolhiam vagar pelos Pântanos.",
+      "chinese": "回响水晶对灵魂的渴望最终带我找到了这个地方。被引诱至地下的灵魂早已满足不了回响水晶的胃口，所以它们把力量向地面扩散，直接对在沼泽中游荡的人下手，吸取他们的灵魂。",
+      "spanish": "La voracidad que sienten los ecos por las almas fue lo que me llevó a descubrir este lugar. Su apetito superaba a la cantidad de almas que se veían atraídas a las profundidades, de modo que los ecos empezaron a extender sus poderes hacia la superficie para absorber a las que recorrían el cenagal.",
+      "chinese_traditional": "迴響對靈魂的渴求，最終將我引來此地。牠們的胃口已非那些被誘至地下的靈魂所能滿足，於是迴響開始將力量延伸至地表，直接從那些徘徊於沼澤的靈魂身上吸取生命。",
+      "korean": "메아리들이 영혼을 갈구한 것이, 결국 내가 이곳을 발견하게 된 계기가 되었다. 그들의 탐욕은 지하로 끌어들인 영혼만으로는 더는 만족되지 않았고, 마침내 힘을 지상으로 뻗어 늪지대에 발을 들인 이들의 영혼을 직접 빨아들이기 시작했다.",
+      "japanese": "最終的に、この場所の発見を導いたのはエコーの魂に対する渇望だった。空腹が地中へと惹き寄せられた魂の量を上回ったため、エコーたちはその力を地上まで伸ばし、沼地に立ち入る者から直接魂を吸い取っていたのである。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassWurm",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_ForcedContamination.prefab",
+    "m_AssetGUID": "6e88f97aeb27830488327faa5f9de4cb"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitCorruptRestricted",
+      "paramInt": 3,
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "melee weakness",
+          "count": 2
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "HudTooltip_RoomCorruption_Body",
+            "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+            "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+            "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+            "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+            "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+            "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+            "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+            "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+            "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+            "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+          },
+          "titleKey": {
+            "key": "HudTooltip_RoomCorruption_Title",
+            "english": "Charged Echoes",
+            "french": "Échos chargés",
+            "german": "Geladene Echos",
+            "russian": "Заряженные эхо",
+            "portuguese": "Ecos Carregados",
+            "chinese": "充能的回响水晶",
+            "spanish": "Ecos cargados",
+            "chinese_traditional": "充能回響",
+            "korean": "충전된 메아리",
+            "japanese": "活性の残響"
+          }
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 3,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Andrew Vera"
+}

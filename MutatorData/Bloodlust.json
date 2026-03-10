@@ -1,0 +1,60 @@
+{
+  "id": "Echoes_AllNonBossUnitsFullyHealOnSlay",
+  "name": "Bloodlust",
+  "nameKey": {
+    "key": "MutatorData_nameKey-989fc38ca0f662f9-0e0f02b993c50e1409c3abb8da8eae62-v2",
+    "english": "Bloodlust",
+    "french": "Soif de sang",
+    "german": "Blutdurst",
+    "russian": "Мания крови",
+    "portuguese": "Sede de Sangue",
+    "chinese": "嗜血",
+    "spanish": "Sed de sangre",
+    "chinese_traditional": "嗜血",
+    "korean": "피의 갈망",
+    "japanese": "血の渇望"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-5f7e371700306a01-0e0f02b993c50e1409c3abb8da8eae62-v2",
+    "english": "All non-boss units fully heal on [slay].",
+    "french": "Toutes les unités hors boss regagnent tous leurs PV lors d'une [slay].",
+    "german": "Alle Nicht-Boss-Einheiten werden beim [slay] vollständig geheilt.",
+    "russian": "[slay]: бойцы не-боссы полностью излечиваются.",
+    "portuguese": "Todas as unidades que não sejam chefões se curam totalmente ao [slay].",
+    "chinese": "所有非首领单位 [slay] 时恢复所有生命值。",
+    "spanish": "Todas las unidades no jefe se curan por completo al <b>Ejecutar</b>.",
+    "chinese_traditional": "所有非首領單位在[slay]時完全治癒。",
+    "korean": "[slay] 시 모든 보스 외 유닛들이 체력을 전부 회복합니다.",
+    "japanese": "すべての非ボスユニットが[slay]時に全回復する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "additionalTooltips": [
+        {
+          "trigger": "on_kill",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "triggers": [
+        {
+          "trigger": "on_kill",
+          "effects": [
+            {
+              "effectStateName": "CardEffectHeal",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "targetIgnoreBosses": true,
+              "paramInt": 9999
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true,
+          "suppressTriggerNotification": true
+        }
+      ],
+      "paramSourceTeam": null
+    }
+  ],
+  "boonValue": 3
+}

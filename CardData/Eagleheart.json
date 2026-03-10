@@ -1,0 +1,92 @@
+{
+  "id": "Eagleheart",
+  "name": "Eagleheart",
+  "nameKey": {
+    "key": "CardData_nameKey-9ec692b22d6cfbdf-98ce3cd402268c144a33b97281b7066f-v2",
+    "english": "Eagleheart",
+    "french": "Cœur d'aigle",
+    "german": "Adlerherz",
+    "russian": "Орлиное сердце",
+    "portuguese": "Coração de Águia",
+    "chinese": "鹰之心",
+    "spanish": "Corazón de águila",
+    "chinese_traditional": "鷹心",
+    "korean": "독수리의 심장",
+    "japanese": "鷲の精神"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-86e12d2ca6649beb-98ce3cd402268c144a33b97281b7066f-v2",
+    "english": "[advance]. Apply [valor] [effect1.status0.power] to a friendly unit, then it attacks immediately.",
+    "french": "[advance]. Applique [valor] [effect1.status0.power] à un allié, qui attaque immédiatement.",
+    "german": "[advance]. Wende [valor] [effect1.status0.power] auf eine verbündete Einheit an, sie greift anschließend sofort an.",
+    "russian": "[advance]. Накладывает [valor] х[effect1.status0.power] на союзника, который сразу же атакует.",
+    "portuguese": "[advance]. Aplica [valor] [effect1.status0.power] a uma unidade aliada, então ataca imediatamente.",
+    "chinese": "[advance]。使一个友方单位获得 [valor] [effect1.status0.power]，然后使其立即发动攻击。",
+    "spanish": "[advance]. Añade [valor] [effect1.status0.power] a una unidad aliada y la hace atacar de inmediato.",
+    "chinese_traditional": "[advance]。將[valor][effect1.status0.power]施加到一個友方單位，然後使其立即發動攻擊。",
+    "korean": "[advance]. 아군 유닛에게 [valor] [effect1.status0.power] 효과를 부여하고, 즉시 공격을 수행합니다.",
+    "japanese": "[advance]。味方ユニットに[valor] [effect1.status0.power]を付与し、即座に攻撃を実行する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-25270b36c8660691-98ce3cd402268c144a33b97281b7066f-v2",
+      "english": "“And as she was lifted in the air, Fel felt the will of her soldiers give her strength.” —Tome of the Lost Path",
+      "french": "<nobr>« Et</nobr> alors qu'elle s'élevait dans les airs, Fel sentit la volonté de ses soldats lui donner de la <nobr>force. »</nobr> — Livre du Chemin Perdu",
+      "german": "„Und als sie in die Lüfte aufgestiegen war, fühlte Fel, wie ihr der Wille der Soldaten Kraft spendete.“ —Buch des Verlorenen Pfades",
+      "russian": "«И, поднявшись в воздух, Фэл почувствовала, что воодушевление ее воинов придает ей силы»— Книга утраченного пути",
+      "portuguese": "“E, quando ela foi erguida no ar, Fel sentiu a força de vontade de seus soldados e ficou mais forte.” — Tomo do Caminho Perdido",
+      "chinese": "“随着菲尔升到空中，她感觉到自己的力量来自士兵们的意志。”\n——《失落路途之书》",
+      "spanish": "«Y, cuando se alzó en el aire, Fel sintió que la voluntad de sus soldados le infundía fuerzas». —Tomo de la Senda Perdida",
+      "chinese_traditional": "「當費爾被舉到空中時，她感受到士兵們的意志賦予她力量。」——《迷失之路》典籍",
+      "korean": "\"하늘로 떠오르며 펠은 병사들의 의지가 자신에게 힘을 주는 것을 느꼈다.\" - 사라진 길의 서",
+      "japanese": "「胴上げされながら、フェルは戦士たちの意志が彼女に力を与えるのを感じた」—失われし道の書"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Eagleheart.prefab",
+    "m_AssetGUID": "facac724d1b08344caae86160b83471f"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Banished/Divinity/FX_DivinitySpell_Parent.prefab",
+          "m_AssetGUID": "27b13585661a4334db680cd18f5172b0"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "valor",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAttackWithUnit",
+      "targetMode": "front_in_room",
+      "targetTeamType": "monsters"
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 2,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

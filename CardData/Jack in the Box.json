@@ -1,0 +1,124 @@
+{
+  "id": "GarfieldBoxesJackInTheBoxBase",
+  "name": "Jack in the Box",
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-961aff579e52f6fe-f8171849f405f3c66ab9a70c764c2dd0-v2",
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_JackInTheBox.prefab",
+    "m_AssetGUID": "8dc08a2b942897d4ba72ac5db5b3ad66"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "GarfieldBoxesJackInTheBox",
+        "nameKey": {
+          "key": "CharacterData_nameKey-a07f57c7a70a63ba-306fecff30e639729b604277691ea8bd-v2",
+          "english": "Jack in the Box",
+          "french": "Diable en boîte",
+          "german": "Springteufel",
+          "russian": "Черт из табакерки",
+          "portuguese": "Caixa de Surpresas",
+          "chinese": "玩偶匣",
+          "spanish": "Caja sorpresa",
+          "chinese_traditional": "玩具盒",
+          "korean": "깜짝 상자",
+          "japanese": "びっくり箱"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-17d238727cd8bf99-306fecff30e639729b604277691ea8bd-v2",
+            "english": "A well-crafted music box with a surprise inside!",
+            "french": "Une boîte à musique finement ouvragée qui renferme une <nobr>surprise !</nobr>",
+            "german": "Eine herrlich gearbeitete Musikbox mit Überraschung!",
+            "russian": "Красивая музыкальная шкатулка с сюрпризом внутри!",
+            "portuguese": "Uma caixa de música bem-feita com uma surpresa dentro!",
+            "chinese": "一个精心制作的音乐盒，内藏惊喜！",
+            "spanish": "¡Una caja de música de calidad con una sorpresita!",
+            "chinese_traditional": "內有驚喜的精緻音樂盒！",
+            "korean": "깜짝 선물이 들어 있는 아주 잘 만든 음악 상자랍니다!",
+            "japanese": "サプライズ入りの精巧に作られたオルゴールだ！"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_JackInTheBox.prefab",
+          "m_AssetGUID": "eb3b92f051a5f6c4db6d0d5cdbb14294"
+        },
+        "attackVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/Jackinthebox/FX_JackintheBoxProc.prefab",
+            "m_AssetGUID": "bc4b92b09e038c544b4741a24c6fc874"
+          },
+          "spawnLocation": "character_center"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-1b69cec3e082fa29-306fecff30e639729b604277691ea8bd-v2",
+              "english": "Summon a boxed unit.[effect0.unboxedcardname]",
+              "french": "Fait sortir une unité d'une boîte.[effect0.unboxedcardname]",
+              "german": "Rufe eine eingepackte Einheit.[effect0.unboxedcardname]",
+              "russian": "Призывает бойца из коробки.[effect0.unboxedcardname]",
+              "portuguese": "Invoca uma unidade armazenada.[effect0.unboxedcardname]",
+              "chinese": "召唤一个盒子中的单位。[effect0.unboxedcardname]",
+              "spanish": "Invoca una unidad atrapada.[effect0.unboxedcardname]",
+              "chinese_traditional": "召喚一個被封印的單位。[effect0.unboxedcardname]",
+              "korean": "상자에 갇힌 유닛을 하나 소환합니다.[effect0.unboxedcardname]",
+              "japanese": "箱ユニットを召喚する。[effect0.unboxedcardname]"
+            },
+            "trigger": "post_combat",
+            "additionalTextOnTriggerKey": {
+              "key": "CharacterData_additionalTextOnTriggerKey-43932c5c50539af5-306fecff30e639729b604277691ea8bd-v2",
+              "english": "Pop goes the weasel!",
+              "french": "<nobr>Boïng !</nobr>",
+              "german": "Ringel, Ringel, Reihe!",
+              "russian": "*зловещая детская песенка*",
+              "portuguese": "Por essa eu não esperava!",
+              "chinese": "黄鼠狼之舞！",
+              "spanish": "¡Mejor fuera que dentro!",
+              "chinese_traditional": "黃鼠狼跳出來！",
+              "korean": "짜잔! 깜짝 놀랐지!",
+              "japanese": "イタチがぴょんと跳ねたってね！"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectUnboxJackInTheBoxUnitCard",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "appliedToSelfVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/VFX/CharacterFX/Attacks/Jackinthebox/FX_JackintheBoxProc.prefab",
+                    "m_AssetGUID": "bc4b92b09e038c544b4741a24c6fc874"
+                  },
+                  "spawnLocation": "character_center"
+                }
+              }
+            ],
+            "showAdditionalTriggerTextOnSuccessOnly": true
+          }
+        ],
+        "size": 1,
+        "health": 1,
+        "attackDamage": 0,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Box"
+        ],
+        "characterChatterData": "Event_JackInTheBoxChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hannah Lim"
+}

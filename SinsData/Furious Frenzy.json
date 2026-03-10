@@ -1,0 +1,80 @@
+{
+  "id": "Enemy_Boss_Level3SiphonRage",
+  "name": "Furious Frenzy",
+  "nameKey": {
+    "key": "SinsData_nameKey-aaac157b9741192b-3e26e649bd4b5a2438ad322fa11ab1ea-v2",
+    "english": "Furious Frenzy",
+    "french": "Frénésie furieuse",
+    "german": "Tobsucht",
+    "russian": "Неистовая ярость",
+    "portuguese": "Fúria Frenética",
+    "chinese": "愤怒狂热",
+    "spanish": "Frenesí furioso",
+    "chinese_traditional": "狂暴之怒",
+    "korean": "분노의 광기",
+    "japanese": "怒りの狂乱"
+  },
+  "descriptionKey": {
+    "key": "SinsData_descriptionKey-900dbb5086f7b8ef-3e26e649bd4b5a2438ad322fa11ab1ea-v2",
+    "english": "Arkion gains [rage] [effect0.power] on [siphon].",
+    "french": "Arkion gagne [rage] [effect0.power] lors du [siphon].",
+    "german": "Arkion erhält [rage] [effect0.power] bei [siphon].",
+    "russian": "При <b>Откачке</b> Аркион получает [rage] х[effect0.power].",
+    "portuguese": "Arkion recebe [rage] [effect0.power] durante o [siphon].",
+    "chinese": "阿尔基翁在 [siphon] 时获得 [rage] [effect0.power]。",
+    "spanish": "Arkion añade [rage] [effect0.power] al <b>Absorber</b>.",
+    "chinese_traditional": "阿爾基昂在[siphon]時獲得[rage][effect0.power]。",
+    "korean": "[siphon] 시, 아키온이 [rage] [effect0.power] 효과를 획득합니다.",
+    "japanese": "[siphon]時にアーキオンが[rage] [effect0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "SinsData_descriptionKey-cd5ebd7aa883e4d5-3e26e649bd4b5a2438ad322fa11ab1ea-v2",
+            "english": "Gain [rage] [effect0.status0.power].",
+            "french": "Octroie [rage] [effect0.status0.power].",
+            "german": "Erhalte [rage] [effect0.status0.power].",
+            "russian": "Дает [rage] х[effect0.status0.power].",
+            "portuguese": "Recebe [rage] [effect0.status0.power].",
+            "chinese": "获得 [rage] [effect0.status0.power]。",
+            "spanish": "Añade [rage] [effect0.status0.power].",
+            "chinese_traditional": "獲得[rage][effect0.status0.power]。",
+            "korean": "[rage] [effect0.status0.power] 효과를 획득합니다.",
+            "japanese": "[rage] [effect0.status0.power]を得る。"
+          },
+          "trigger": "on_any_hero_death_on_floor",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramStatusEffects": [
+                {
+                  "statusId": "buff",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "removeOnRelentlessChange": true
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "triggerTooltipsSuppressed": true,
+      "paramCharacters": [
+        "Boss_Level3_Arkion_SiphonRage"
+      ]
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramSourceTeam": "heroes",
+      "paramInt": 4,
+      "paramCharacterSubtype": "SubtypesData_ExplodingBarrel",
+      "paramTargetMode": "front_in_room"
+    }
+  ]
+}

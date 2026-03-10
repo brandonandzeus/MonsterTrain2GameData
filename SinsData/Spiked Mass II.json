@@ -1,0 +1,95 @@
+{
+  "id": "Enemy_Boss_Level3_ImmortalMass_Spike_TitanTrial",
+  "name": "Spiked Mass II",
+  "nameKey": {
+    "key": "SinsData_nameKey-540f98563e7d3bee-c7da6453aecd6004582cb8560c395c41-v2",
+    "english": "Spiked Mass II",
+    "french": "Masse épineuse II",
+    "german": "Dornenmasse II",
+    "russian": "Шипастая масса II",
+    "portuguese": "Massa Espinhosa II",
+    "chinese": "尖刺血肉 II",
+    "spanish": "Masa puntiaguda II",
+    "chinese_traditional": "尖刺巨塊II",
+    "korean": "가시 덩어리 II",
+    "japanese": "棘の集合体II"
+  },
+  "descriptionKey": {
+    "key": "SinsData_descriptionKey-a48efa1d2744de0e-c7da6453aecd6004582cb8560c395c41-v2",
+    "english": "Fleshlings have [effect0.power][attack] and [effect1.power][health] and gain [spikes] [effect3.power]. Fleshweaver has [effect4.power] more stacks of [mass].",
+    "french": "Les Lambeaux gagnent [effect0.power][attack], [effect1.power][health] et [spikes] [effect3.power]. Le Tisseur de chair gagne <nobr>[effect4.power] cumuls</nobr> de [mass] en plus.",
+    "german": "Fleischlinge verfügen über [effect0.power][attack] und [effect1.power][health] und erhalten [spikes] [effect3.power]. Fleischweber hat [effect4.power] zusätzliche Stapel [mass].",
+    "russian": "Мяско получает [effect0.power][attack], [effect1.power][health] и [spikes] [effect3.power]. Мясконосу дополнительно дается [mass] х[effect4.power].",
+    "portuguese": "Os Cárneos têm [effect0.power][attack] e [effect1.power][health] e ganham [spikes] [effect3.power]. O Tecelão Cárneo tem mais [effect4.power] cargas de [mass].",
+    "chinese": "血肉幼体拥有 [effect0.power][attack]，[effect1.power][health] 并获得 [spikes] [effect3.power]。血肉编织者的 [mass] 层数增加 [effect4.power]。",
+    "spanish": "Los Carnosos tienen [effect0.power][attack], [effect1.power][health] y añaden [spikes] [effect3.power]. El Tejecarnes tiene [effect4.power] acumulaciones más de [mass].",
+    "chinese_traditional": "血肉造物擁有[effect0.power][attack]和[effect1.power][health]並獲得[spikes][effect3.power]。血肉編織者擁有[effect4.power]層額外的[mass]。",
+    "korean": "플레시링들이 [effect0.power][attack], [effect1.power][health]을 지니며, [spikes] [effect3.power] 효과를 획득합니다. 플레시위버는 [mass]에 [effect4.power]스택이 더해집니다.",
+    "japanese": "肉塊は[effect0.power][attack]と[effect1.power][health]のステータスを得る。さらに、[spikes] [effect3.power]を得る。肉縫いは[mass]のスタックが[effect4.power]増加する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectOnSpawnHeroSubstitution",
+      "additionalTooltips": [
+        {
+          "statusId": "spikes",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ]
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramInt": 9,
+      "paramCharacterSubtype": "SubtypesData_BossAll",
+      "paramTargetMode": "front_in_room"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramCharacterSubtype": "SubtypesData_BossAll"
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramInt": 2,
+      "paramCharacterSubtype": "SubtypesData_BossAll",
+      "paramTargetMode": "front_in_room"
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramInt": 4,
+      "paramCharacterSubtype": "SubtypesData_BossAll",
+      "paramTargetMode": "front_in_room"
+    }
+  ]
+}

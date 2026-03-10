@@ -1,0 +1,156 @@
+{
+  "id": "Level3BattleHeavyHitter_PushAttack",
+  "name": "Level3BattleHeavyHitter_PushAttack",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-c9be187300012873-f2eb3bb844c370043813e514faed961e-v2",
+    "english": "Arkion, Scion of Savagery",
+    "french": "Arkion, Héritier de Sauvagerie",
+    "german": "Arkion, Grausamkeits Spross",
+    "russian": "Аркион Наследник Изувера",
+    "portuguese": "Arkion, Descendente da Barbárie",
+    "chinese": "阿尔基翁，野蛮泰坦的后裔",
+    "spanish": "Arkion, vástago de Salvajismo",
+    "chinese_traditional": "『野性之子』阿爾基昂",
+    "korean": "세비저리의 후손, 아키온",
+    "japanese": "サベジャリーの嗣子、アーキオン"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-83559417d29a3682-f2eb3bb844c370043813e514faed961e-v2",
+    "english": "Arkion is relentless, and will shove your forces back using sheer strength. Hold the line.",
+    "french": "Arkion est implacable. Il repoussera vos troupes par la force brute. Tenez bon.",
+    "german": "Arkion ist unerbittlich und wird deinen Truppen mit schierer Kraft begegnen. Bleib standhaft.",
+    "russian": "Аркион неумолим и будет отбрасывать ваши войска назад, используя свою силу. Удерживайте строй.",
+    "portuguese": "Arkion é implacável e atacará você com força total. Aguente firme.",
+    "chinese": "阿尔基翁残酷无情，他会用蛮力将你的部队推到后方。守住阵线。",
+    "spanish": "Arkion es implacable y empujará a tus unidades con su gran fuerza. Mantén la posición.",
+    "chinese_traditional": "阿爾基昂毫不留情，將用強大的力量推開你的軍隊。堅守防線。",
+    "korean": "아키온의 공격은 끈질기며, 무시무시한 힘으로 부대를 전멸로 몰고 갈 것입니다. 전선을 유지하는 데 집중하세요.",
+    "japanese": "アーキオンは純粋なる力による執拗な攻撃でとにかく押してくる。戦線の維持に努めよう。"
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Enemy_Boss_Level3Push"
+  ],
+  "titanTrialSin": "Enemy_Boss_Level3Push_TitanTrial",
+  "battleTrackNameData": "BattleMusic_Arkios",
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Arkion_Intro",
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "ShieldGuardT2_Devout_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "HeavyT1_Basic"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              },
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "ShieldGuardT2_Devout_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_Level3_Arkion_PushAttack",
+    "hardBossCharacter": "Boss_Level3_Arkion_PushAttack"
+  }
+}

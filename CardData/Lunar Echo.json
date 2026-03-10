@@ -1,0 +1,87 @@
+{
+  "id": "LunarEchoAbility",
+  "name": "Lunar Echo",
+  "nameKey": {
+    "key": "CardData_nameKey-508ebc359cf23f89-615d006d1c402d046809f53798bbcfad-v2",
+    "english": "Lunar Echo",
+    "french": "Écho lunaire",
+    "german": "Mond-Widerhall",
+    "russian": "Лунное эхо",
+    "portuguese": "Eco Lunar",
+    "chinese": "月之回响",
+    "spanish": "Eco lunar",
+    "chinese_traditional": "月亮回音",
+    "korean": "달빛의 울림",
+    "japanese": "月の共鳴"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-e1f5bc8e56d497ff-615d006d1c402d046809f53798bbcfad-v2",
+    "english": "Create an [ephemeral] copy of a random spell played last turn.",
+    "french": "Crée une copie [ephemeral] d'un sort aléatoire joué au dernier tour.",
+    "german": "Erzeuge eine [ephemeral]-Kopie eines zufälligen Zaubers, der beim letzten Zug gespielt wurde.",
+    "russian": "Создается [ephemeral] копия случайных чар, разыгранных в прошлый ход.",
+    "portuguese": "Cria uma cópia [ephemeral] de um feitiço aleatório jogado no último turno.",
+    "chinese": "随机获得一个上回合打出法术的[ephemeral]复制品。",
+    "spanish": "Crea una copia [ephemeral] de un hechizo aleatorio jugado el último turno.",
+    "chinese_traditional": "創造一個上回合隨機使用的法術的[ephemeral]複製。",
+    "korean": "지난 턴에 사용한 무작위 주문의 [ephemeral] 복제본을 생성합니다.",
+    "japanese": "前ターンにプレイしたランダムな呪文の[ephemeral]な複製を生成する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "effectStateName": "CardEffectCreateCopyOfCardPlayedLastTurn",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardFilter": {
+        "id": "OnlySpells",
+        "cardType": "spell"
+      },
+      "paramCardUpgradeData": {
+        "id": "AddEphemeral",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitEphemeral",
+            "traitIsRemovable": false
+          }
+        ]
+      },
+      "additionalTooltips": [
+        {
+          "statusId": "ephemeral",
+          "descriptionKey": {
+            "key": "CardTraitEphemeral_TooltipText",
+            "english": "Purges when played, discarded, or at end of turn.",
+            "french": "La carte est purgée lorsqu'elle est jouée, défaussée, ou à la fin du tour.",
+            "german": "Wird ausgespielt, abgelegt oder am Ende des Zuges entfernt.",
+            "russian": "Ликвидируется будучи сыгранной, или сброшенной, а также в конце хода",
+            "portuguese": "A carta é expurgada quando jogada ou descartada, ou ao fim do turno.",
+            "chinese": "在打出、舍弃，或结束回合时移除。",
+            "spanish": "Se purga al jugarla, descartarla o al acabar el turno.",
+            "chinese_traditional": "打出、捨棄或在回合結束時淨化。",
+            "korean": "카드를 사용하거나, 버리거나, 턴 종료 시 제외됩니다.",
+            "japanese": "プレイ時、破棄時、またはターン終了時に除外される。"
+          },
+          "titleKey": {
+            "key": "CardTraitEphemeral_TooltipTitle",
+            "english": "Ephemeral",
+            "french": "Éphémère",
+            "german": "Vergänglich",
+            "russian": "Временная",
+            "portuguese": "Efêmera",
+            "chinese": "短暂",
+            "spanish": "Efímera",
+            "chinese_traditional": "瞬逝",
+            "korean": "일회성",
+            "japanese": "一時的"
+          }
+        }
+      ]
+    }
+  ],
+  "cooldownAfterActivated": 2,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

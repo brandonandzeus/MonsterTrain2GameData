@@ -1,0 +1,107 @@
+{
+  "id": "AntumbraAssault",
+  "name": "Antumbra Assault",
+  "nameKey": {
+    "key": "CardData_nameKey-d31d7f084860258e-aaeeaf72d5e646440889d74125d943ce-v2",
+    "english": "Antumbra Assault",
+    "french": "Assaut antumbra",
+    "german": "Antumbra-Angriff",
+    "russian": "Сумрачный натиск",
+    "portuguese": "Ataque Antumbro",
+    "chinese": "影者猛袭",
+    "spanish": "Asalto de Antumbra",
+    "chinese_traditional": "反暗影突襲",
+    "korean": "어스름 돌격",
+    "japanese": "アントアンブラの猛攻"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-1f8266ceb6c7425f-aaeeaf72d5e646440889d74125d943ce-v2",
+    "english": "Deal [effect0.power] damage.",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+    "german": "Verursache [effect0.power] Schaden.",
+    "russian": "Наносит [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano.",
+    "chinese": "造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño.",
+    "chinese_traditional": "造成[effect0.power]點傷害。",
+    "korean": "[effect0.power]의 피해를 입힙니다.",
+    "japanese": "[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-12d38371dc555b10-aaeeaf72d5e646440889d74125d943ce-v2",
+      "english": "As the first line of defense in the Crucible, Morsels will rocket towards an intruder, often sacrificing themselves in the process. If they succeed in their defense, they live to mine another day.",
+      "french": "Première ligne défensive du creuset, les sous-bistres se ruent sur les intrus, ce qui leur coûte souvent la vie. Si leur défense tient bon, ils survivent un jour de plus.",
+      "german": "Die erste Verteidigungslinie des Schmelztiegels besteht aus Nuggets, die Eindringlinge angreifen und sich notfalls dabei opfern. Wenn sie den Gegner in die Flucht schlagen konnten, gehen sie wieder an die Arbeit in der Mine.",
+      "russian": "Заморыши - первая линия обороны Горнила - набрасываются на незваных гостей, зачастую жертвуя собой. Если им повезет уцелеть в бою, они смогут прожить еще один день, добывая ресурсы.",
+      "portuguese": "Como a linha de frente de defesa do Crisol, os Lanchos atacam intrusos com tudo, muitas vezes se sacrificando no processo. Se a defesa for bem-sucedida, eles ganham mais um dia nas minas.",
+      "chinese": "作为熔炉之地的第一道防线，影裔会一往无前地冲向入侵者，也时常会为此献出生命。如果能成功抵御敌人的话，它们就可以继续过着采矿的生活。",
+      "spanish": "Como primera línea de defensa del Crisol, los pinchos se abalanzan contra los intrusos, con frecuencia a costa de su vida. Si su defensa tiene éxito, viven para extraer minerales un día más.",
+      "chinese_traditional": "作為地獄熔爐的第一道防線，莫塞爾會朝入侵者猛衝，並且時常在這樣過程中犧牲自己。如果他們防守成功，就能活下去並繼續挖掘。",
+      "korean": "도가니의 첫 번째 방어선으로서, 작은 그림자는 침입자를 향해 돌진하며, 그 과정에서 종종 희생되기도 한다. 만약 방어에 성공한다면, 다음 날 다시 광산에서 일할 수 있게 된다.",
+      "japanese": "クルーシブルを防衛する第一の手段として、モーゼルたちは侵入者に向けて突撃し、しばしば自爆する。防衛に成功すれば、また明日採掘することができるのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_AntumbraAssault.prefab",
+    "m_AssetGUID": "38664c2184f7f3946b089ed73f658874"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 5,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_ShadowImpact_PS.prefab",
+          "m_AssetGUID": "7fc4324c349cb2b4f81e9ed0e62eb115"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-b409d6555292d690-aaeeaf72d5e646440889d74125d943ce-v2",
+        "english": "Add [effect0.secondarypower] uncommon or rare [snack] units to your hand.",
+        "french": "Ajoute [effect0.secondarypower] <b>sous-bistres</b> inhabituels ou rares à votre main.",
+        "german": "Nimm [effect0.secondarypower] ungewöhnliche oder seltene [snack]-Einheiten auf die Hand.",
+        "russian": "Добавляет в руку необычных или редких заморышей ([effect0.secondarypower]).",
+        "portuguese": "Adiciona [effect0.secondarypower] unidades de [snack] incomuns ou raras à sua mão.",
+        "chinese": "将 [effect0.secondarypower] 个高级或稀有 [snack] 单位加入你的手牌。",
+        "spanish": "Añade [effect0.secondarypower] unidades [snack] comunes o poco comunes a tu mano.",
+        "chinese_traditional": "將[effect0.secondarypower]張罕見或稀有的[snack]單位牌牌加入你的手牌。",
+        "korean": "특별 또는 희귀 등급의 [snack] 유닛 카드 [effect0.secondarypower]장을 패에 추가합니다.",
+        "japanese": "手札にアンコモンかレアの[snack]ユニットを[effect0.secondarypower]体追加する。"
+      },
+      "trigger": "on_kill",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectAddBattleCard",
+          "targetMode": "hand",
+          "paramInt": 3,
+          "additionalParamInt": 2,
+          "paramCardPool": "Class5Food"
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "targetless": false,
+  "sharedMasteryCards": [
+    "MorselJeweler",
+    "MoltenMorsel",
+    "MorselMiner",
+    "RubbleRaiser",
+    "ShadowMorsel",
+    "VoidExcavator"
+  ],
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Ali Hosseinkhan"
+}

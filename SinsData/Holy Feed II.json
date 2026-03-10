@@ -1,0 +1,56 @@
+{
+  "id": "Enemy_SpawnHeroEaterFeedDamageShield_TitanTrial",
+  "name": "Holy Feed II",
+  "nameKey": {
+    "key": "SinsData_nameKey-b645dfb5bcb46e30-f3d73c386b743644796eaa325f8ead20-v2",
+    "english": "Holy Feed II",
+    "french": "Nourriture sacrée II",
+    "german": "Heiliges Futter II",
+    "russian": "Священный пир II",
+    "portuguese": "Alimento Sagrado II",
+    "chinese": "圣洁进食 II",
+    "spanish": "Fuente sagrada II",
+    "chinese_traditional": "聖餵II",
+    "korean": "성스러운 먹이 II",
+    "japanese": "聖なる食料II"
+  },
+  "descriptionKey": {
+    "key": "SinsData_descriptionKey-72a35784e2c727a8-f3d73c386b743644796eaa325f8ead20-v2",
+    "english": "Cael and his cherubs grant [damageshield] [effect0.power] and [spellshield] [effect1.power] to enemy units.",
+    "french": "Cael et ses chérubins octroient [damageshield] [effect0.power] et [spellshield] [effect1.power] aux ennemis.",
+    "german": "Cael und seine Cherubim gewähren gegnerischen Einheiten [damageshield] [effect0.power] und [spellshield] [effect1.power].",
+    "russian": "Союзникам Каэля и херувимов даются [damageshield] х[effect0.power] и [spellshield] х[effect1.power].",
+    "portuguese": "Cael e seus querubins concedem [damageshield] [effect0.power] e [spellshield] [effect1.power] às unidades inimigas.",
+    "chinese": "凯尔和他的小天使会使敌方单位获得 [damageshield] [effect0.power] 和 [spellshield] [effect1.power]。",
+    "spanish": "Cael y sus querubines otorgan [damageshield] [effect0.power] y [spellshield] [effect1.power] a las unidades enemigas.",
+    "chinese_traditional": "凱爾和他的天使寶寶賦予敵方單位[damageshield][effect0.power]和[spellshield][effect1.power]。",
+    "korean": "카엘과 카엘의 케루빔이 적 유닛에 [damageshield] [effect0.power] 및 [spellshield] [effect1.power] 효과를 부여합니다.",
+    "japanese": "キャエルと智天使が敵ユニットに[damageshield] [effect0.power]と[spellshield] [effect1.power]を付与する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectOnSpawnHeroSubstitution",
+      "additionalTooltips": [
+        {
+          "statusId": "damage shield",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ]
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "additionalTooltips": [
+        {
+          "statusId": "spell shield",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ],
+      "paramSourceTeam": "none",
+      "paramInt": 1,
+      "paramTargetMode": "front_in_room"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "HeavyT3_PyreDamageIfUnblocked",
+  "name": "Terrifying Amalgam",
+  "nameKey": {
+    "key": "CharacterData_nameKey-e2f9501910572b17-4affef4c26f2666459a595d6098c17a7-v2",
+    "english": "Terrifying Amalgam",
+    "french": "Amalgame terrifiant",
+    "german": "Furchtbares Amalgam",
+    "russian": "Ужасающая амальгама",
+    "portuguese": "Amálgama Aterrorizante",
+    "chinese": "骇人混合怪",
+    "spanish": "Amalgama aterradora",
+    "chinese_traditional": "可怕融合物",
+    "korean": "무시무시한 아말감",
+    "japanese": "恐怖のアマルガム"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-192a9bbb3e0a0bcb-4affef4c26f2666459a595d6098c17a7-v2",
+      "english": "Wyngh made their fair share of winged heavenly creatures, not just angels. Even before the Titans came, these riders were inseparable from their mounts. Savagery merely made their bonds permanent.",
+      "french": "Wyngh a fabriqué son lot de créatures célestes ailées, et pas seulement des anges. Avant même l'arrivée des titans, ces cavaliers étaient inséparables de leurs montures. Sauvagerie n'a fait que pérenniser leurs liens.",
+      "german": "Wyngh schuf eine Reihe geflügelter Himmelskreaturen, nicht bloß Engel. Selbst vor der Ankunft der Titanen waren diese Reiter unzertrennlich mit ihren Reittieren verbunden. Grausamkeit verschmolz ihren Bund dauerhaft.",
+      "russian": "Винг создала немало крылатых существ, обитающих в Раю, а не только ангелов. Еще до прихода титанов, ее всадники не слезали со своих питомцев, но Изувер сделал это и вовсе невозможным.",
+      "portuguese": "Wyngh criou várias criaturas celestiais aladas, não apenas anjos. Mesmo antes da chegada dos Titãs, esses cavaleiros eram inseparáveis de suas montarias. A Barbárie apenas tornou esse laço permanente.",
+      "chinese": "除了天使，维格还创造了很多带翅膀的天堂生物。甚至在泰坦降临之前，这些骑士就与他们的坐骑密不可分。野蛮泰坦只是让他们的羁绊变为永恒。",
+      "spanish": "Wyngh creó una buena variedad de criaturas aladas celestiales, no solo ángeles. Incluso antes de la llegada de los titanes, estos jinetes y sus monturas eran inseparables. Salvajismo hizo permanente ese vínculo.",
+      "chinese_traditional": "溫格創造了不少有翅膀的天界生物，不僅僅是天使。甚至在泰坦到來之前，這些騎士就與他們的坐騎形影不離。野性只是讓他們之間的羈絆變得永垂不朽。",
+      "korean": "윙흐는 천사뿐만 아니라 천상의 날개 달린 생명체에게도 동등한 관용을 베풀었다. 티탄이 나타나기 전에도 이들은 탑승물과 하나 되어 움직였다. 세비저리가 한 일은 이 유대를 영원히 지속시키는 것뿐이다.",
+      "japanese": "ウィングは、天使だけでなく他の有翼の生物も作り出した。巨人族たちが来る以前から、騎手たちは騎獣と一体化した状態だった。サベジャリーはその状態を永遠のものにしただけである。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_TerrifyingAmalgam.prefab",
+    "m_AssetGUID": "48137a31a83682542b7192a847b06d0d"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-182224b5e1072197-4affef4c26f2666459a595d6098c17a7-v2",
+        "english": "If you have no units on the floor, deals [effect0.power] damage to the Pyre.",
+        "french": "Si vous n'avez pas d'unités à ce niveau, inflige <nobr>[effect0.power] DGT</nobr> au Brasier.",
+        "german": "Wenn du über keine Einheiten auf der Ebene verfügst, wird [effect0.power] Schaden gegen die Höllenglut verursacht.",
+        "russian": "Если на этаже нет врагов, наносит [effect0.power] урона Пеклу.",
+        "portuguese": "Se não houver unidades no andar, causa [effect0.power] de dano à Pira.",
+        "chinese": "若你在本层没有单位，则对薪火造成 [effect0.power] 点伤害。",
+        "spanish": "Si no tienes unidades en el piso, inflige [effect0.power] de daño a la Pira.",
+        "chinese_traditional": "若此樓層沒有友方單位，對火堆造成[effect0.power]點傷害。",
+        "korean": "해당 층에 내 유닛이 없으면, 화로에 [effect0.power]의 피해를 입힙니다.",
+        "japanese": "フロアにユニットが不在の場合、炉に[effect0.power]のダメージを与える。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectPyreDamageIfNoPlayerUnits",
+          "targetMode": "pyre",
+          "targetTeamType": "none",
+          "paramInt": 5,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/CharacterFX/Attacks/SavageryTitan/FX_SavageryPyreProc.prefab",
+              "m_AssetGUID": "25a16339511bc0149b3a048d91cf3be4"
+            },
+            "spawnLocation": "character_center"
+          },
+          "appliedToSelfVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/CharacterFX/Attacks/TerrifyingAmalgam/FX_SavageryPyreProcCharacterT3.prefab",
+              "m_AssetGUID": "e00d84f86c21b59449a8c74459fed673"
+            },
+            "spawnLocation": "character_center"
+          }
+        }
+      ],
+      "additionalTextOnTriggerKey": "CharacterData_additionalTextOnTriggerKey-94fac2bccf2fcc8f-4affef4c26f2666459a595d6098c17a7-v2"
+    }
+  ],
+  "size": 2,
+  "health": 250,
+  "attackDamage": 5,
+  "subtypeKeys": [
+    "SubtypesData_HeavyT3"
+  ],
+  "characterChatterData": "T3TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Taylor Bray"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "Echoes_AttackOnShift",
+  "name": "Fancy Footwork",
+  "nameKey": {
+    "key": "MutatorData_nameKey-4ba0fa6412b80d8e-d30a7ec033c893740a284439b4271106-v2",
+    "english": "Fancy Footwork",
+    "french": "Fort en jambes",
+    "german": "Flotte Fußarbeit",
+    "russian": "Ловкие ноги",
+    "portuguese": "Ataque Movimentado",
+    "chinese": "风骚走位",
+    "spanish": "Buen juego de pies",
+    "chinese_traditional": "花俏步法",
+    "korean": "화려한 풋워크",
+    "japanese": "理想的な足さばき"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-50ad13221872c24f-d30a7ec033c893740a284439b4271106-v2",
+    "english": "All units gain +[effect0.power][attack] on movement.",
+    "french": "Toutes les unités gagnent +[effect0.power][attack] en se déplaçant.",
+    "german": "Alle Einheiten erhalten +[effect0.power][attack], wenn sie sich bewegen.",
+    "russian": "При движении все бойцы получают +[effect0.power][attack].",
+    "portuguese": "Todas as unidades recebem +[effect0.power][attack] ao se moverem.",
+    "chinese": "所有单位移动时获得 +[effect0.power][attack]。",
+    "spanish": "Todas las unidades añaden +[effect0.power][attack] al moverse.",
+    "chinese_traditional": "所有單位移動時獲得+[effect0.power][attack]。",
+    "korean": "모든 유닛이 이동 시 +[effect0.power][attack]을 획득합니다.",
+    "japanese": "移動時にすべてのユニットが[effect0.power][attack]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_shift",
+          "effects": [
+            {
+              "effectStateName": "CardEffectBuffDamage",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramInt": 2
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramBool": true
+    }
+  ],
+  "boonValue": -2
+}

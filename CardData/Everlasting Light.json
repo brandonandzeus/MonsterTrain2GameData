@@ -1,0 +1,92 @@
+{
+  "id": "EverlastingLight",
+  "name": "Everlasting Light",
+  "nameKey": {
+    "key": "CardData_nameKey-30d5188c943a68d6-61ea2a04984a32c45be5a7fe6a7b31ed-v2",
+    "english": "Everlasting Light",
+    "french": "Lumière éternelle",
+    "german": "Ewiges Licht",
+    "russian": "Вечный свет",
+    "portuguese": "Luz Eterna",
+    "chinese": "永恒之光",
+    "spanish": "Luz eterna",
+    "chinese_traditional": "永恆之光",
+    "korean": "영원한 빛",
+    "japanese": "永遠の光"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-26abf4762f4f0016-61ea2a04984a32c45be5a7fe6a7b31ed-v2",
+      "english": "“I gripped my spear, knowing they would take it away from me. They blamed it for my success in the arena. In the end, I gave it to Talos. May it serve her as well as it did I.”\n—Finna the Doomed",
+      "french": "<nobr>« J'ai</nobr> serré ma lance, sachant qu'ils allaient me la prendre. Ils lui imputaient tous mes succès dans l'arène. Finalement, je l'ai remise à Talos. Puisse-t-elle lui servir aussi bien qu'à <nobr>moi. »</nobr> \n— Finna la Condamnée",
+      "german": "„Ich hielt meinen Speer fest, wissend, dass sie ihn mir wegnehmen würden. Sie betrachteten ihn als Geheimnis meines Erfolgs in der Arena. Schließlich gab ich ihn Talos. Möge er ihr ebenso gute Dienste leisten!“\n—Finna die Verdammte",
+      "russian": "«Я сжала свое копье, зная, что они заберут его. Они уверены, что это оно приносит мне победы на арене. Я отдала его Талос. Пусть оно служит ей так же, как и мне».\n— Финна Обреченная",
+      "portuguese": "“Agarrei minha lança, sabendo que eles a tirariam de mim. Eles a culparam por meu sucesso na arena. No final, eu a entreguei à Talos. Que sirva tão bem a ela quanto serviu a mim.”\n— Finna, a Condenada",
+      "chinese": "“我握紧长矛，知道他们会把它夺走。他们认为它是我在竞技场上的致胜法宝。最后，我将它交给了塔洛丝。愿它离开我后能好好为新主人效力。\n——命运已定的菲娜",
+      "spanish": "«Me aferré a mi lanza, consciente de que me la arrebatarían. Le atribuían mis triunfos en la arena. Al final, se la entregué a Talos. Espero que le sirva tan bien como me sirvió a mí».\n—Finna la Condenada",
+      "chinese_traditional": "「我握緊長矛，知道他們會把它從我手中奪走。他們把它歸咎於我在競技場中所斬獲的成功。最後，我把它交給了塔洛斯。願它能像幫助我一樣幫助她。」\n——『絕命者』費納",
+      "korean": "“저들이 창을 빼앗을 것을 알기에, 창을 쥔 손에 더욱 힘을 주었다. 그들은 내가 결투장에서 살아남은 이유가 창 덕분이라 주장했다. 결국, 나는 어쩔 수 없이 창을 탈로스에게 넘겨주었다. 바라건대, 나에게 그랬듯, 내 창이 탈로스에게도 도움이 되기를.”\n- 파멸자 피나",
+      "japanese": "「私は取り上げられると知りつつも、槍を握り締めた。闘技場で勝てたのは槍のおかげだと責め立てられた。終いには、タロスに渡した。私の力になってくれたように、彼女の力になってくれることを祈る」\n—絶望のフィナ"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "uncommon",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_EverlastingLight.prefab",
+    "m_AssetGUID": "4f46ca7cc33c9024581381a5de663c7e"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "EverlastingLight",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-0068dff19e692d9a-e03e95f3f006aae42bbee5a9abbdc53d-v2",
+              "english": "Apply [valor] [effect0.status0.power] to friendly units.",
+              "french": "Applique [valor] [effect0.status0.power] aux unités alliées.",
+              "german": "Wende [valor] [effect0.status0.power] auf verbündete Einheiten an.",
+              "russian": "На союзников накладывается [valor] х[effect0.status0.power].",
+              "portuguese": "Aplica [valor] [effect0.status0.power] às unidades aliadas.",
+              "chinese": "使所有友方单位获得 [valor] [effect0.status0.power]。",
+              "spanish": "Añade [valor] [effect0.status0.power] a las unidades aliadas.",
+              "chinese_traditional": "對友方單位施加[valor][effect0.status0.power]。",
+              "korean": "아군 유닛들에게 [valor] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "味方ユニットに[valor] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_attacking",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "valor",
+                    "count": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bonusDamage": 3
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/EverlastingLight/FX_EverlastingLight.prefab",
+          "m_AssetGUID": "c9264b196d7408d4b8f177732363f738"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

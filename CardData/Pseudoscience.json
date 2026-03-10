@@ -1,0 +1,77 @@
+{
+  "id": "Pseudoscience",
+  "name": "Pseudoscience",
+  "nameKey": {
+    "key": "CardData_nameKey-c70779bbd915e0bb-eb8ccb57fbd1d0d4fbeccf79fc04be4b-v2",
+    "english": "Pseudoscience",
+    "french": "Pseudoscience",
+    "german": "Pseudowissenschaft",
+    "russian": "Псевдонаука",
+    "portuguese": "Pseudociência",
+    "chinese": "伪科学",
+    "spanish": "Pseudociencia",
+    "chinese_traditional": "偽科學",
+    "korean": "유사과학",
+    "japanese": "疑似科学"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-8ec55c9632de05f2-eb8ccb57fbd1d0d4fbeccf79fc04be4b-v2",
+    "english": "Randomly apply either [lifesteal] [effect0.status0.power], [undying] [effect0.status1.power], or [spikes] [effect0.status2.power].",
+    "french": "Confère aléatoirement soit [lifesteal] [effect0.status0.power], soit [undying] [effect0.status1.power], soit [spikes] [effect0.status2.power].",
+    "german": "Wende zufällig [lifesteal] [effect0.status0.power], [undying] [effect0.status1.power] oder [spikes] [effect0.status2.power] an.",
+    "russian": "Случайно накладывается [lifesteal] х[effect0.status0.power], [undying] х[effect0.status1.power] или [spikes] х[effect0.status2.power].",
+    "portuguese": "Aplica aleatoriamente [lifesteal] [effect0.status0.power], [undying] [effect0.status1.power] ou [spikes] [effect0.status2.power].",
+    "chinese": "随机获得 [lifesteal] [effect0.status0.power]、[undying] [effect0.status1.power] 或 [spikes] [effect0.status2.power]。",
+    "spanish": "Añade aleatoriamente [lifesteal] [effect0.status0.power], [undying] [effect0.status1.power] o [spikes] [effect0.status2.power].",
+    "chinese_traditional": "隨機施加[lifesteal][effect0.status0.power]、[undying][effect0.status1.power]或[spikes][effect0.status2.power]。",
+    "korean": "[lifesteal] [effect0.status0.power], [undying] [effect0.status1.power], [spikes] [effect0.status2.power] 효과 중 하나를 무작위로 적용합니다.",
+    "japanese": "[lifesteal] [effect0.status0.power]、[undying] [effect0.status1.power]、または[spikes] [effect0.status2.power]をランダムで付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-e6b852a4681b013b-eb8ccb57fbd1d0d4fbeccf79fc04be4b-v2",
+      "english": "“I’m not sure how it works but I do know that, for some reason, shaking a bottle and making baby noises at my specimens makes them heal faster.”",
+      "french": "<nobr>« Je</nobr> ne sais pas comment ça fonctionne, mais je sais qu'en agitant un biberon et en faisant des bruits de bébé devant mes spécimens, ils guérissent plus <nobr>vite. »</nobr>",
+      "german": "„Ich weiß nicht genau, warum das so ist, aber meine Exemplare heilen aus irgendeinem Grund schneller, wenn ich eine Flasche schüttle und Babygeräusche mache.“",
+      "russian": "«Не могу сказать, как именно это работает, но если трясти перед моими созданиями бутылкой и имитировать детский плач, они выздоравливают быстрее».",
+      "portuguese": "“Não tenho certeza de como isso funciona, mas sei que, por algum motivo, sacudir uma mamadeira e fazer barulhos de bebê perto dos meus espécimes faz com que eles se curem mais rápido.”",
+      "chinese": "“我不清楚它是如何起作用的，我只知道，出于某种原因，对着我的实验样本摇晃瓶子，发出一些婴儿声能让它们愈合得更快。”",
+      "spanish": "«No sé muy bien cómo funciona, pero lo que es seguro es que agitar un frasco y hacer ruiditos de bebé para mis especímenes hace que se curen más rápido».",
+      "chinese_traditional": "「我不確定它是如何運作的，但我知道出於某種原因，搖晃瓶子並對我的樣本發出嬰兒的聲音會讓它們恢復得更快。」",
+      "korean": "“어떻게 작동하는지 이유는 모르겠지만, 병을 흔들며 표본을 향해 아기 울음소리를 내면 더 빠르게 치유되는 것을 확인할 수 있었다.”",
+      "japanese": "「どのような原理かはわからないが、どういうわけか、瓶を振って赤ちゃん言葉で話しかけることで、被験体の治癒速度が飛躍的に上がるのだ」"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_PseudoScience.prefab",
+    "m_AssetGUID": "d6350cef4b40d6643ac39c25115ad403"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "lifesteal",
+          "count": 2
+        },
+        {
+          "statusId": "undying",
+          "count": 1
+        },
+        {
+          "statusId": "spikes",
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Michaela Nienaber"
+}

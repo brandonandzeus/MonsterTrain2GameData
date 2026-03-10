@@ -1,0 +1,309 @@
+{
+  "id": "SoulSavior_R1_BossBattle_DutifulChild_Heal",
+  "name": "SoulSavior_R1_BossBattle_DutifulChild_Heal",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-8e27e4d06a21c471-11599581a112f9f4fb2595306cdd0f26-v2",
+    "english": "Maera the Dutiful",
+    "french": "Maera la Dévouée",
+    "german": "Maera die Pflichtbewusste",
+    "russian": "Маэра Послушная",
+    "portuguese": "Maera, a Diligente",
+    "chinese": "尽职者梅拉",
+    "spanish": "Maera la Diligente",
+    "chinese_traditional": "盡責的瑪伊拉",
+    "korean": "충직한 자 메이라",
+    "japanese": "義理のマエラ"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-17457e2752cbb5ed-11599581a112f9f4fb2595306cdd0f26-v2",
+    "english": "Maera enforces perfect formation among her ranks. Under her command, every ounce of strength is turned inward, hardening her allies against harm.",
+    "french": "Maera fait régner une discipline absolue parmi ses troupes. Sous ses ordres, la moindre parcelle d'énergie est canalisée pour forger une défense impénétrable autour de ses alliés.",
+    "german": "Maera duldet in ihren Reihen ausschließlich perfekte Formation. Unter ihrem Befehl wird jeder Funken Stärke nach innen gewandt, um ihre Verbündeten vor Leid zu bewahren.",
+    "russian": "В армии Маэры царит идеальный порядок. Под ее командованием каждая крупица силы уходит внутрь — закаляя союзников и делая их неуязвимыми.",
+    "portuguese": "Maera impõe uma formação perfeita entre suas fileiras. Sob seu comando, toda a força é direcionada para dentro, fortalecendo seus aliados contra qualquer dano.",
+    "chinese": "梅拉的部队拥有完美的阵型。在她的指挥下，一切力量都被内化，用于帮助她的盟友抵御伤害。",
+    "spanish": "Maera exige una formación perfecta entre sus filas. Bajo su mando, la fuerza se dirige hacia el interior, lo que robustece a sus aliados contra los ataques.",
+    "chinese_traditional": "瑪伊拉嚴格要求隊伍維持完美陣型。在她的指揮下，每一分力量都向內凝聚，強化盟友以抵禦傷害。",
+    "korean": "메이라는 자신의 부대가 완벽한 대열을 갖추도록 강요합니다. 그녀의 지휘 아래에서는 모든 힘이 내적으로 집중되어, 아군이 피해를 견디도록 합니다.",
+    "japanese": "マエラは、部下たちに完璧な編隊を強制する。彼女の指揮下ではすべての力が内に向けて使われ、外敵からの防御を固めている。"
+  },
+  "displayedEnemyOffsets": [
+    {
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "x": 0.0,
+      "y": -2.0
+    }
+  ],
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Boss_Railforged_Region1_Armor"
+  ],
+  "battleTrackNameData": "BattleMusic_SoulSavior_Children",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Maera_Intro",
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Enchant/Atk/heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredDifficultyTier": 3,
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Enchant/Atk/heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Bonus) Enchant/Atk x3",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Bonus) Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance3"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_Armor",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_Armor"
+  }
+}

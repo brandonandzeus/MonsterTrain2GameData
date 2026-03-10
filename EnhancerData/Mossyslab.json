@@ -1,0 +1,84 @@
+{
+  "id": "SoulSavior_UnitUpgradeClanUnderlegionAddRegen",
+  "name": "Mossyslab",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-78dc139b65f55396-8a1f636a97a3e264d8049f2146e1f6cc-v2",
+    "english": "Mossyslab",
+    "french": "Gemme moussue",
+    "german": "Moosplatte",
+    "russian": "Мшистый пласт",
+    "portuguese": "Placa Musguenta",
+    "chinese": "苔藓石板",
+    "spanish": "Losa musgosa",
+    "chinese_traditional": "苔石板",
+    "korean": "이끼의 서판",
+    "japanese": "苔の原石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-f178e1dc8ab86d64-8a1f636a97a3e264d8049f2146e1f6cc-v2",
+    "english": "Upgrade a unit with +[effect0.upgrade.bonushp][health] and [regen] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec +[effect0.upgrade.bonushp][health] et [regen] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit +[effect0.upgrade.bonushp][health] und [regen] [effect0.upgrade.status0.power].",
+    "russian": "Усиление бойца: +[effect0.upgrade.bonushp][health] и [regen] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com +[effect0.upgrade.bonushp][health] e [regen] [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonushp][health]，和[regen] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con +[effect0.upgrade.bonushp][health] y [regen] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得+[effect0.upgrade.bonushp][health]和[regen][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드함과 동시에 +[effect0.upgrade.bonushp][health] 및 [regen] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：+[effect0.upgrade.bonushp][health]、[regen] [effect0.upgrade.status0.power]。"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "SoulSavior_AddRegenUnderlegion",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-5fbef69f689b77cf-89cf55dc2c283cb48ba9f5e181a11680-v2",
+          "english": "Mossyslab",
+          "french": "Gemme moussue",
+          "german": "Moosplatte",
+          "russian": "Мшистый пласт",
+          "portuguese": "Placa Musguenta",
+          "chinese": "苔藓石板",
+          "spanish": "Losa musgosa",
+          "chinese_traditional": "苔石板",
+          "korean": "이끼의 서판",
+          "japanese": "苔の原石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-0136c7f11c835c8e-89cf55dc2c283cb48ba9f5e181a11680-v2",
+          "english": "Gain +[bonushp][health] and [regen] [status0.power].",
+          "french": "Octroie +[bonushp][health] et [regen] [status0.power].",
+          "german": "Erhalte +[bonushp][health] und [regen] [status0.power].",
+          "russian": "Даются +[bonushp][health] и [regen] х[status0.power].",
+          "portuguese": "Recebe +[bonushp][health] e [regen] [status0.power].",
+          "chinese": "获得 +[bonushp][health] 和 [regen] [status0.power]。",
+          "spanish": "Añade +[bonushp][health] y [regen] [status0.power].",
+          "chinese_traditional": "獲得+[bonushp][health]和[regen][status0.power]。",
+          "korean": "+[bonushp][health] 및 [regen] [status0.power] 효과를 획득합니다.",
+          "japanese": "+[bonushp][health]と[regen] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "regen",
+            "count": 15
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ],
+        "bonusHP": 20
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

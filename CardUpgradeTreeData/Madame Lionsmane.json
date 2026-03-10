@@ -1,0 +1,929 @@
+{
+  "id": "UpgradeTreeUnderlegion2",
+  "name": "Madame Lionsmane",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "Underlegion2PropagateOnIncant1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-b44070b3451437b4-72d90f94603738d45bcee5965f8c91d1-v2",
+            "english": "Everbloom",
+            "french": "Floraison éternelle",
+            "german": "Ewigblüte",
+            "russian": "Благоухающая",
+            "portuguese": "Germinação Infinita",
+            "chinese": "永恒之花",
+            "spanish": "Floración eterna",
+            "chinese_traditional": "長青",
+            "korean": "불멸의 꽃",
+            "japanese": "エバーブルーム"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-ab7e57ae7f06b3e6-72d90f94603738d45bcee5965f8c91d1-v2",
+                "english": "[spawn] [effect0.power].",
+                "french": "<b>Génère</b> [effect0.power].",
+                "german": "[spawn] [effect0.power].",
+                "russian": "[spawn] х[effect0.power].",
+                "portuguese": "[spawn] [effect0.power].",
+                "chinese": "[spawn] [effect0.power]。",
+                "spanish": "[spawn] [effect0.power].",
+                "chinese_traditional": "[spawn][effect0.power]。",
+                "korean": "[spawn] [effect0.power].",
+                "japanese": "[spawn] [effect0.power]。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Horde",
+                  "paramCharacterData": {
+                    "id": "MonsterFunguy",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+                      "english": "Funguy",
+                      "french": "Champote",
+                      "german": "Fungus",
+                      "russian": "Грибоец",
+                      "portuguese": "Fungo",
+                      "chinese": "蘑菇人",
+                      "spanish": "Lustrongo",
+                      "chinese_traditional": "真菌人",
+                      "korean": "균사체",
+                      "japanese": "ファンガイ"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+                      "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+                    },
+                    "impactVFX": {
+                      "vfxPrefabRefLeft": {
+                        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+                      },
+                      "spawnLocation": "character_center"
+                    },
+                    "size": 1,
+                    "health": 4,
+                    "attackDamage": 3,
+                    "subtypeKeys": [
+                      "SubtypesData_FunGuy",
+                      "SubtypesData_Shroom",
+                      "SubtypesData_Horde"
+                    ],
+                    "characterChatterData": "UnderlegionShroomFemaleChatterData"
+                  },
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "horde",
+                      "count": 1
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "trigger": "card_monster_played",
+                      "style": "default",
+                      "isTriggerTooltip": true,
+                      "allowSecondaryPlacement": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Underlegion2PropagateOnIncant2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-36a8b914689a324e-02007ff3787a9f0468268989f5525003-v2",
+            "english": "Everbloom II",
+            "french": "Floraison éternelle II",
+            "german": "Ewigblüte II",
+            "russian": "Благоухающая II",
+            "portuguese": "Germinação Infinita II",
+            "chinese": "永恒之花 II",
+            "spanish": "Floración eterna II",
+            "chinese_traditional": "長青II",
+            "korean": "불멸의 꽃 II",
+            "japanese": "エバーブルームII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-6f786b74b14bd5ae-02007ff3787a9f0468268989f5525003-v2",
+                "english": "[spawn] [effect0.power].",
+                "french": "<b>Génère</b> [effect0.power].",
+                "german": "[spawn] [effect0.power].",
+                "russian": "[spawn] х[effect0.power].",
+                "portuguese": "[spawn] [effect0.power].",
+                "chinese": "[spawn] [effect0.power]。",
+                "spanish": "[spawn] [effect0.power].",
+                "chinese_traditional": "[spawn][effect0.power]。",
+                "korean": "[spawn] [effect0.power].",
+                "japanese": "[spawn] [effect0.power]。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Horde",
+                  "paramCharacterData": {
+                    "id": "MonsterFunguy",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+                      "english": "Funguy",
+                      "french": "Champote",
+                      "german": "Fungus",
+                      "russian": "Грибоец",
+                      "portuguese": "Fungo",
+                      "chinese": "蘑菇人",
+                      "spanish": "Lustrongo",
+                      "chinese_traditional": "真菌人",
+                      "korean": "균사체",
+                      "japanese": "ファンガイ"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+                      "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+                    },
+                    "impactVFX": {
+                      "vfxPrefabRefLeft": {
+                        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+                      },
+                      "spawnLocation": "character_center"
+                    },
+                    "size": 1,
+                    "health": 4,
+                    "attackDamage": 3,
+                    "subtypeKeys": [
+                      "SubtypesData_FunGuy",
+                      "SubtypesData_Shroom",
+                      "SubtypesData_Horde"
+                    ],
+                    "characterChatterData": "UnderlegionShroomFemaleChatterData"
+                  },
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "horde",
+                      "count": 1
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "trigger": "card_monster_played",
+                      "style": "default",
+                      "isTriggerTooltip": true,
+                      "allowSecondaryPlacement": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-c1f5ed7a629f47ff-02007ff3787a9f0468268989f5525003-v2",
+                "english": "[spawn] [effect0.power].",
+                "french": "[spawn] [effect0.power].",
+                "german": "[spawn] [effect0.power].",
+                "russian": "[spawn] х[effect0.power].",
+                "portuguese": "[spawn] [effect0.power].",
+                "chinese": "[spawn] [effect0.power]。",
+                "spanish": "[spawn] [effect0.power].",
+                "chinese_traditional": "[spawn][effect0.power]。",
+                "korean": "[spawn] [effect0.power].",
+                "japanese": "[spawn] [effect0.power]。"
+              },
+              "trigger": "card_exhausted",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Horde",
+                  "paramCharacterData": {
+                    "id": "MonsterFunguy",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+                      "english": "Funguy",
+                      "french": "Champote",
+                      "german": "Fungus",
+                      "russian": "Грибоец",
+                      "portuguese": "Fungo",
+                      "chinese": "蘑菇人",
+                      "spanish": "Lustrongo",
+                      "chinese_traditional": "真菌人",
+                      "korean": "균사체",
+                      "japanese": "ファンガイ"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+                      "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+                    },
+                    "impactVFX": {
+                      "vfxPrefabRefLeft": {
+                        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+                      },
+                      "spawnLocation": "character_center"
+                    },
+                    "size": 1,
+                    "health": 4,
+                    "attackDamage": 3,
+                    "subtypeKeys": [
+                      "SubtypesData_FunGuy",
+                      "SubtypesData_Shroom",
+                      "SubtypesData_Horde"
+                    ],
+                    "characterChatterData": "UnderlegionShroomFemaleChatterData"
+                  },
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "horde",
+                      "count": 2
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "trigger": "card_monster_played",
+                      "style": "default",
+                      "isTriggerTooltip": true,
+                      "allowSecondaryPlacement": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 5
+        },
+        {
+          "id": "Underlegion2PropagateOnIncant3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-428bd826faa34ef4-397837395986d1141884317da9cff8f0-v2",
+            "english": "Everbloom III",
+            "french": "Floraison éternelle III",
+            "german": "Ewigblüte III",
+            "russian": "Благоухающая III",
+            "portuguese": "Germinação Infinita III",
+            "chinese": "永恒之花 III",
+            "spanish": "Floración eterna III",
+            "chinese_traditional": "長青III",
+            "korean": "불멸의 꽃 III",
+            "japanese": "エバーブルームIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-c32557b2eaee64ff-397837395986d1141884317da9cff8f0-v2",
+                "english": "[spawn] [effect0.power].",
+                "french": "<b>Génère</b> [effect0.power].",
+                "german": "[spawn] [effect0.power].",
+                "russian": "[spawn] х[effect0.power].",
+                "portuguese": "[spawn] [effect0.power].",
+                "chinese": "[spawn] [effect0.power]。",
+                "spanish": "[spawn] [effect0.power].",
+                "chinese_traditional": "[spawn][effect0.power]。",
+                "korean": "[spawn] [effect0.power].",
+                "japanese": "[spawn] [effect0.power]。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Horde",
+                  "paramCharacterData": {
+                    "id": "MonsterFunguy",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+                      "english": "Funguy",
+                      "french": "Champote",
+                      "german": "Fungus",
+                      "russian": "Грибоец",
+                      "portuguese": "Fungo",
+                      "chinese": "蘑菇人",
+                      "spanish": "Lustrongo",
+                      "chinese_traditional": "真菌人",
+                      "korean": "균사체",
+                      "japanese": "ファンガイ"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+                      "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+                    },
+                    "impactVFX": {
+                      "vfxPrefabRefLeft": {
+                        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+                      },
+                      "spawnLocation": "character_center"
+                    },
+                    "size": 1,
+                    "health": 4,
+                    "attackDamage": 3,
+                    "subtypeKeys": [
+                      "SubtypesData_FunGuy",
+                      "SubtypesData_Shroom",
+                      "SubtypesData_Horde"
+                    ],
+                    "characterChatterData": "UnderlegionShroomFemaleChatterData"
+                  },
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "horde",
+                      "count": 1
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "trigger": "card_monster_played",
+                      "style": "default",
+                      "isTriggerTooltip": true,
+                      "allowSecondaryPlacement": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-0c9459cf6c7c291d-397837395986d1141884317da9cff8f0-v2",
+                "english": "[spawn] [effect0.power].",
+                "french": "[spawn] [effect0.power].",
+                "german": "[spawn] [effect0.power].",
+                "russian": "[spawn] х[effect0.power].",
+                "portuguese": "[spawn] [effect0.power].",
+                "chinese": "[spawn] [effect0.power]。",
+                "spanish": "[spawn] [effect0.power].",
+                "chinese_traditional": "[spawn][effect0.power]。",
+                "korean": "[spawn] [effect0.power].",
+                "japanese": "[spawn] [effect0.power]。"
+              },
+              "trigger": "card_exhausted",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Horde",
+                  "paramCharacterData": {
+                    "id": "MonsterFunguy",
+                    "nameKey": {
+                      "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+                      "english": "Funguy",
+                      "french": "Champote",
+                      "german": "Fungus",
+                      "russian": "Грибоец",
+                      "portuguese": "Fungo",
+                      "chinese": "蘑菇人",
+                      "spanish": "Lustrongo",
+                      "chinese_traditional": "真菌人",
+                      "korean": "균사체",
+                      "japanese": "ファンガイ"
+                    },
+                    "characterPrefabVariantRef": {
+                      "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+                      "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+                    },
+                    "impactVFX": {
+                      "vfxPrefabRefLeft": {
+                        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+                        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+                      },
+                      "spawnLocation": "character_center"
+                    },
+                    "size": 1,
+                    "health": 4,
+                    "attackDamage": 3,
+                    "subtypeKeys": [
+                      "SubtypesData_FunGuy",
+                      "SubtypesData_Shroom",
+                      "SubtypesData_Horde"
+                    ],
+                    "characterChatterData": "UnderlegionShroomFemaleChatterData"
+                  },
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "horde",
+                      "count": 4
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "trigger": "card_monster_played",
+                      "style": "default",
+                      "isTriggerTooltip": true,
+                      "allowSecondaryPlacement": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 10
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Underlegion2Ability1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-3c228c0feb2979d9-d442c4c842da39246a50e81678a8adad-v2",
+            "english": "Maneater",
+            "french": "Mangeuse d'hommes",
+            "german": "Menschenfresser",
+            "russian": "Сердцеедка",
+            "portuguese": "Devoradora de Homens",
+            "chinese": "噬人者",
+            "spanish": "Drenadora",
+            "chinese_traditional": "噬人魔",
+            "korean": "맨이터",
+            "japanese": "マンイーター"
+          },
+          "unitAbilityUpgrade": {
+            "id": "ManeaterAbility1",
+            "nameKey": {
+              "key": "CardData_nameKey-c72bdc1b12f6bf58-9d8f1cdf1d7a8f341a7163e9d3b1976b-v2",
+              "english": "Maneating",
+              "french": "Anthropophagie",
+              "german": "Menschenfresser",
+              "russian": "Сердцеедка",
+              "portuguese": "Devorar Homens",
+              "chinese": "噬人",
+              "spanish": "Devorar",
+              "chinese_traditional": "食人",
+              "korean": "식인",
+              "japanese": "食人"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-96b7dceadb016fcb-9d8f1cdf1d7a8f341a7163e9d3b1976b-v2",
+              "english": "Apply [sap] [effect0.status0.power] and [decay] [effect1.status0.power] to a unit.",
+              "french": "Inflige [sap] [effect0.status0.power] et [decay] [effect1.status0.power] à une unité.",
+              "german": "Wende [sap] [effect0.status0.power] und [decay] [effect1.status0.power] auf eine Einheit an.",
+              "russian": "Накладывает на бойца [sap] х[effect0.status0.power] и [decay] х[effect1.status0.power].",
+              "portuguese": "Aplica [sap] [effect0.status0.power] e [decay] [effect1.status0.power] a uma unidade.",
+              "chinese": "对一个单位施加 [sap] [effect0.status0.power] 以及 [decay] [effect1.status0.power]。",
+              "spanish": "Añade [sap] [effect0.status0.power] y [decay] [effect1.status0.power] a una unidad.",
+              "chinese_traditional": "對一個單位施加[sap][effect0.status0.power]和[decay][effect1.status0.power]。",
+              "korean": "유닛에 [sap] [effect0.status0.power] 및 [decay] [effect1.status0.power] 효과를 적용합니다.",
+              "japanese": "ユニットに[sap] [effect0.status0.power]と[decay] [effect1.status0.power]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassUnderlegion",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "debuff",
+                    "count": 2
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "decay",
+                    "count": 5
+                  }
+                ]
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "targetless": false,
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "bonusDamage": 20
+        },
+        {
+          "id": "Underlegion2Ability2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-0f6725e93429d0b6-0aaf10428004d4b489c162d078ef4732-v2",
+            "english": "Maneater II",
+            "french": "Mangeuse d'hommes II",
+            "german": "Menschenfresser II",
+            "russian": "Сердцеедка II",
+            "portuguese": "Devoradora de Homens II",
+            "chinese": "噬人者 II",
+            "spanish": "Drenadora II",
+            "chinese_traditional": "噬人魔II",
+            "korean": "맨이터 II",
+            "japanese": "マンイーターII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "ManeaterAbility2",
+            "nameKey": {
+              "key": "CardData_nameKey-b961285148b22276-3c7ee53d49d228d478bcf7d078ec58bd-v2",
+              "english": "Maneating II",
+              "french": "Anthropophagie II",
+              "german": "Menschenfresser II",
+              "russian": "Сердцеедка II",
+              "portuguese": "Devorar Homens II",
+              "chinese": "噬人 II",
+              "spanish": "Devorar II",
+              "chinese_traditional": "吞噬II",
+              "korean": "식인 II",
+              "japanese": "食人II"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-e246b428f943b8fd-3c7ee53d49d228d478bcf7d078ec58bd-v2",
+              "english": "Apply [sap] [effect0.status0.power], [decay] [effect1.status0.power], and [mute] [effect2.status0.power] to a unit.",
+              "french": "Inflige [sap] [effect0.status0.power], [decay] [effect1.status0.power] et [mute] [effect2.status0.power] à une unité.",
+              "german": "Wende [sap] [effect0.status0.power], [decay] [effect1.status0.power] und [mute] [effect2.status0.power] auf eine Einheit an.",
+              "russian": "На бойца накладываются [sap] х[effect0.status0.power], [decay] х[effect1.status0.power] и [mute] х[effect2.status0.power].",
+              "portuguese": "Aplica [sap] [effect0.status0.power], [decay] [effect1.status0.power] e [mute] [effect2.status0.power] a uma unidade.",
+              "chinese": "对一个单位施加 [sap] [effect0.status0.power]，[decay] [effect1.status0.power]，和 [mute] [effect2.status0.power]。",
+              "spanish": "Añade [sap] [effect0.status0.power], [decay] [effect1.status0.power] y [mute] [effect2.status0.power] a una unidad.",
+              "chinese_traditional": "對一個單位施加[sap][effect0.status0.power]、[decay][effect1.status0.power]和[mute][effect2.status0.power]。",
+              "korean": "한 유닛에 [sap] [effect0.status0.power] 및 [decay] [effect1.status0.power], [mute] [effect2.status0.power] 효과를 적용합니다.",
+              "japanese": "ユニットに[sap] [effect0.status0.power]、[decay] [effect1.status0.power]、[mute] [effect2.status0.power]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassUnderlegion",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "debuff",
+                    "count": 3
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "decay",
+                    "count": 10
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "muted",
+                    "count": 1
+                  }
+                ]
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "targetless": false,
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "bonusDamage": 40,
+          "bonusHP": 5
+        },
+        {
+          "id": "Underlegion2Ability3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-2bee372c6b295972-743d14293a19e024b812693c20560fc6-v2",
+            "english": "Maneater III",
+            "french": "Mangeuse d'hommes III",
+            "german": "Menschenfresser III",
+            "russian": "Сердцеедка III",
+            "portuguese": "Devoradora de Homens III",
+            "chinese": "噬人者 III",
+            "spanish": "Drenadora III",
+            "chinese_traditional": "噬人魔III",
+            "korean": "맨이터 III",
+            "japanese": "マンイーターIII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "ManeaterAbility3",
+            "nameKey": {
+              "key": "CardData_nameKey-ac6f76b65e2bfbc5-834a24f6f02e1b047bbf604304660471-v2",
+              "english": "Maneating III",
+              "french": "Anthropophagie III",
+              "german": "Menschenfresser III",
+              "russian": "Сердцеедка III",
+              "portuguese": "Devorar Homens III",
+              "chinese": "噬人 III",
+              "spanish": "Devorar III",
+              "chinese_traditional": "吞噬III",
+              "korean": "식인 III",
+              "japanese": "食人III"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-f437a833ff5bedd4-834a24f6f02e1b047bbf604304660471-v2",
+              "english": "Apply [sap] [effect0.status0.power], [decay] [effect1.status0.power], and [mute] [effect2.status0.power] to a unit.",
+              "french": "Inflige [sap] [effect0.status0.power], [decay] [effect1.status0.power] et [mute] [effect2.status0.power] à une unité.",
+              "german": "Wende [sap] [effect0.status0.power], [decay] [effect1.status0.power] und [mute] [effect2.status0.power] auf eine Einheit an.",
+              "russian": "На бойца накладываются [sap] х[effect0.status0.power], [decay] х[effect1.status0.power] и [mute] х[effect2.status0.power].",
+              "portuguese": "Aplica [sap] [effect0.status0.power], [decay] [effect1.status0.power] e [mute] [effect2.status0.power] a uma unidade.",
+              "chinese": "对一个单位施加 [sap] [effect0.status0.power]，[decay] [effect1.status0.power]，和 [mute] [effect2.status0.power]。",
+              "spanish": "Añade [sap] [effect0.status0.power], [decay] [effect1.status0.power] y [mute] [effect2.status0.power] a una unidad.",
+              "chinese_traditional": "對一個單位施加[sap][effect0.status0.power]、[decay][effect1.status0.power]和[mute][effect2.status0.power]。",
+              "korean": "한 유닛에 [sap] [effect0.status0.power], [decay] [effect1.status0.power], [mute] [effect2.status0.power] 효과를 적용합니다.",
+              "japanese": "ユニットに[sap] [effect0.status0.power]、[decay] [effect1.status0.power]、[mute] [effect2.status0.power]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassUnderlegion",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "debuff",
+                    "count": 4
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "decay",
+                    "count": 15
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "drop_target_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "muted",
+                    "count": 2
+                  }
+                ]
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "targetless": false,
+            "initialKeyboardTarget": "front_enemy"
+          },
+          "bonusDamage": 60,
+          "bonusHP": 10
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Underlegion2ApplyMoreDecay",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-b1719c153243c200-9d40e6b137cc95045be4960463cf63ed-v2",
+            "english": "Sporesinger",
+            "french": "Chantespore",
+            "german": "Sporensängerin",
+            "russian": "Повелительница спор",
+            "portuguese": "Cantora Fúngica",
+            "chinese": "孢子歌手",
+            "spanish": "Canto de esporas",
+            "chinese_traditional": "孢子歌手",
+            "korean": "포자 기수",
+            "japanese": "スポアシンガー"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-0e30ed12f87e532b-9d40e6b137cc95045be4960463cf63ed-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-fc432f925dbc9bf4-9d40e6b137cc95045be4960463cf63ed-v2",
+                "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+                "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
+                "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [decay] [effect0.status0.power] a todas as unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
+                "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
+                "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "on_turn_begin",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "decay",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-707928bb291f79ad-9d40e6b137cc95045be4960463cf63ed-v2",
+                "english": "When a unit gains [decay], it gains +[power] stacks.",
+                "french": "Lorsqu'une unité obtient [decay], elle gagne <nobr>+[power] cumuls.</nobr>",
+                "german": "Wenn eine Einheit [decay] erhält, erhält sie +[power] Stapel.",
+                "russian": "Когда на бойца накладывается [decay], он получает +[power] слоя.",
+                "portuguese": "Quando uma unidade recebe [decay], ela recebe +[power] cargas.",
+                "chinese": "当一个单位获得 [decay] 时，获得的层数 +[power]。",
+                "spanish": "Cuando una unidad añade [decay], obtiene +[power] acumulaciones.",
+                "chinese_traditional": "當一個單位獲得[decay]時，該單位獲得+[power]層。",
+                "korean": "유닛이 [decay] 효과를 획득하면 스택이 +[power] 늘어납니다.",
+                "japanese": "ユニットが[decay]を得ると、+[power]スタックを得る。"
+              },
+              "roomStateModifierClassName": "RoomStateAddStatusEffectOnStatusApplied",
+              "paramStatusEffects": [
+                {
+                  "statusId": "decay",
+                  "count": 0
+                }
+              ],
+              "paramInt": 2
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 3,
+          "bonusHP": 6
+        },
+        {
+          "id": "Underlegion2ApplyMoreDecay2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-0dde27246916f39a-858464b96cd3a8346b7ac0e49b18a3f9-v2",
+            "english": "Sporesinger II",
+            "french": "Chantespore II",
+            "german": "Sporensängerin II",
+            "russian": "Повелительница спор II",
+            "portuguese": "Cantora Fúngica II",
+            "chinese": "孢子歌手 II",
+            "spanish": "Canto de esporas II",
+            "chinese_traditional": "孢子歌者II",
+            "korean": "포자 기수 II",
+            "japanese": "スポアシンガーII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-f011c63a74d22a6c-858464b96cd3a8346b7ac0e49b18a3f9-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-48fdf43ed458e1f2-858464b96cd3a8346b7ac0e49b18a3f9-v2",
+                "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+                "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
+                "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [decay] [effect0.status0.power] a todas as unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
+                "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
+                "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "on_turn_begin",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "decay",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-2342d1687bca759f-858464b96cd3a8346b7ac0e49b18a3f9-v2",
+                "english": "When a unit gains [decay], it gains +[power] stacks.",
+                "french": "Lorsqu'une unité obtient [decay], elle gagne <nobr>+[power] cumuls.</nobr>",
+                "german": "Wenn eine Einheit [decay] erhält, erhält sie +[power] Stapel.",
+                "russian": "Когда на бойца накладывается [decay], он получает +[power] слоя.",
+                "portuguese": "Quando uma unidade recebe [decay], ela recebe +[power] cargas.",
+                "chinese": "当一个单位获得 [decay] 时，获得的层数 +[power]。",
+                "spanish": "Cuando una unidad añade [decay], obtiene +[power] acumulaciones.",
+                "chinese_traditional": "當一個單位獲得[decay]時，該單位獲得+[power]層。",
+                "korean": "유닛이 [decay] 효과를 획득하면 스택이 +[power] 늘어납니다.",
+                "japanese": "ユニットが[decay]を得ると、+[power]スタックを得る。"
+              },
+              "roomStateModifierClassName": "RoomStateAddStatusEffectOnStatusApplied",
+              "paramStatusEffects": [
+                {
+                  "statusId": "decay",
+                  "count": 0
+                }
+              ],
+              "paramInt": 3
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 7,
+          "bonusHP": 14
+        },
+        {
+          "id": "Underlegion2ApplyMoreDecay3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-84af010709bdd997-8d171023cb02f9545bc67d3a4041808b-v2",
+            "english": "Sporesinger III",
+            "french": "Chantespore III",
+            "german": "Sporensängerin III",
+            "russian": "Повелительница спор III",
+            "portuguese": "Cantora Fúngica III",
+            "chinese": "孢子歌手 III",
+            "spanish": "Canto de esporas III",
+            "chinese_traditional": "孢子歌手III",
+            "korean": "포자 기수 III",
+            "japanese": "スポアシンガーIII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-2175bc1c3d378de1-8d171023cb02f9545bc67d3a4041808b-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-dd55aeddf1b339e7-8d171023cb02f9545bc67d3a4041808b-v2",
+                "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+                "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
+                "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [decay] [effect0.status0.power] a todas as unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
+                "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
+                "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "on_turn_begin",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "decay",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-e7b843c86b648ed8-8d171023cb02f9545bc67d3a4041808b-v2",
+                "english": "When a unit gains [decay], it gains +[power] stacks.",
+                "french": "Lorsqu'une unité obtient [decay], elle gagne <nobr>+[power] cumuls.</nobr>",
+                "german": "Wenn eine Einheit [decay] erhält, erhält sie +[power] Stapel.",
+                "russian": "Когда на бойца накладывается [decay], он получает +[power] слоя.",
+                "portuguese": "Quando uma unidade recebe [decay], ela recebe +[power] cargas.",
+                "chinese": "当一个单位获得 [decay] 时，获得的层数 +[power]。",
+                "spanish": "Cuando una unidad añade [decay], obtiene +[power] acumulaciones.",
+                "chinese_traditional": "當一個單位獲得[decay]時，該單位獲得+[power]層。",
+                "korean": "유닛이 [decay] 효과를 획득하면 스택이 +[power] 늘어납니다.",
+                "japanese": "ユニットが[decay]を得ると、+[power]スタックを得る。"
+              },
+              "roomStateModifierClassName": "RoomStateAddStatusEffectOnStatusApplied",
+              "paramStatusEffects": [
+                {
+                  "statusId": "decay",
+                  "count": 0
+                }
+              ],
+              "paramInt": 5
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 15,
+          "bonusHP": 30
+        }
+      ]
+    }
+  ]
+}

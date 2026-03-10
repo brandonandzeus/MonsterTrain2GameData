@@ -1,0 +1,138 @@
+{
+  "id": "MonsterSeleneAcolyte",
+  "name": "Selene Acolyte",
+  "nameKey": {
+    "key": "CharacterData_nameKey-65c3504294d9ad4c-acf815b5ed194fa46a6ef9f2dcb031cc-v2",
+    "english": "Selene Acolyte",
+    "french": "Acolyte sélène",
+    "german": "Selenen-Dienerin",
+    "russian": "Псаломщица Селен",
+    "portuguese": "Acólita Selene",
+    "chinese": "月神女侍从",
+    "spanish": "Acólita selenita",
+    "chinese_traditional": "塞勒涅侍從",
+    "korean": "세레네 추종자",
+    "japanese": "セレーネ・アコライト"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-20668d12d63bcb98-acf815b5ed194fa46a6ef9f2dcb031cc-v2",
+      "english": "“During the Plenilune I asked the moon about your fate. Her answer was clear: you will be defeated.”",
+      "french": "<nobr>« Pendant</nobr> la Plénilune, j'ai interrogé la lune sur votre sort. Sa réponse a été <nobr>claire :</nobr> vous serez <nobr>vaincus. »</nobr>",
+      "german": "„Während des Vollmondes befragte ich den Mond zu deinem Schicksal. Die Antwort war klar: Du wirst unterliegen.“",
+      "russian": "«Я спросила у полной луны, что вас ждет. Ее ответ был однозначен: поражение».",
+      "portuguese": "“Durante o Plenilúnio, perguntei à lua sobre seu destino. A resposta dela foi clara: você conhecerá a derrota.”",
+      "chinese": "“在满月时，我向月亮询问过你的命运。她十分明确地回答我：你必将被击败。”",
+      "spanish": "«Le pregunté tu destino a la luna durante el plenilunio. Su respuesta fue clara: caerás en combate».",
+      "chinese_traditional": "「在滿月之時，我向月亮詢問了你的命運。她的答案很明確：你將被打敗。」",
+      "korean": "\"만월 의식 동안 달에게 네 운명을 물어 보았다. 달의 대답은 확고했지. 네가 패배할 것이더라군.\"",
+      "japanese": "「満月の間に、あなたの運命を月様に聞いてみたわ。答えは明確だった。あなたは倒される運命よ」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SeleneAcolyte.prefab",
+    "m_AssetGUID": "39f8bb40cc571a145a4ddddf5e81ec17"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "mageblade",
+      "count": 2
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-19fb1ca5cff9d9b4-acf815b5ed194fa46a6ef9f2dcb031cc-v2",
+        "english": "[sweep].",
+        "french": "[sweep].",
+        "german": "[sweep].",
+        "russian": "[sweep].",
+        "portuguese": "[sweep].",
+        "chinese": "[sweep]。",
+        "spanish": "[sweep].",
+        "chinese_traditional": "[sweep]。",
+        "korean": "[sweep].",
+        "japanese": "[sweep]。"
+      },
+      "trigger": "on_moon_lit",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "SeleneAcolyte_MagicPower_Upgrade",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "sweep",
+                "count": 1
+              }
+            ],
+            "isUnique": true
+          },
+          "additionalTooltips": [
+            {
+              "descriptionKey": {
+                "key": "CardTraitMagicPower_TooltipText",
+                "english": "Increases the amount of damage dealt and health restored by spells.",
+                "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+                "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+                "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+                "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+                "chinese": "提高法术造成的伤害与恢复的生命值。",
+                "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+                "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+                "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+                "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+              },
+              "titleKey": {
+                "key": "CardTraitMagicPower_TooltipTitle",
+                "english": "Magic Power",
+                "french": "Puissance magique",
+                "german": "Magische Kraft",
+                "russian": "Сила магии",
+                "portuguese": "Poder Mágico",
+                "chinese": "魔法强度",
+                "spanish": "Poder mágico",
+                "chinese_traditional": "魔法力量",
+                "korean": "마법력",
+                "japanese": "魔力"
+              }
+            }
+          ],
+          "additionalParamInt1": 1
+        }
+      ]
+    },
+    {
+      "trigger": "on_moonlit_lost",
+      "effects": [
+        {
+          "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "SeleneAcolyte_MagicPower_Upgrade",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "sweep",
+                "count": 1
+              }
+            ],
+            "isUnique": true
+          },
+          "paramBool": true
+        }
+      ],
+      "hideVisualAndIgnoreSilence": true
+    }
+  ],
+  "size": 2,
+  "health": 5,
+  "attackDamage": 10,
+  "subtypeKeys": [
+    "SubtypesData_Selene",
+    "SubtypesData_BannerUnit"
+  ],
+  "characterChatterData": "LunaCovenSeleneChatterdata"
+}

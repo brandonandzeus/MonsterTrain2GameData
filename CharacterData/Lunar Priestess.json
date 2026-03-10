@@ -1,0 +1,207 @@
+{
+  "id": "MonsterLunarPriestess",
+  "name": "Lunar Priestess",
+  "nameKey": {
+    "key": "CharacterData_nameKey-201942955be0188b-f9d1439e5aebb8442b340cbcdd30d8bc-v2",
+    "english": "Lunar Priestess",
+    "french": "Prêtresse lunaire",
+    "german": "Mondpriesterin",
+    "russian": "Лунная жрица",
+    "portuguese": "Sacerdotisa Lunar",
+    "chinese": "月亮祭司",
+    "spanish": "Sacerdotisa lunar",
+    "chinese_traditional": "月亮女祭司",
+    "korean": "달 여사제",
+    "japanese": "ルナの巫女"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-e419ccd8d09b43a5-f9d1439e5aebb8442b340cbcdd30d8bc-v2",
+      "english": "“One day we will return to the space beyond the skies and I will resume my duties. Until then, I will keep the rituals alive in my memory.”",
+      "french": "<nobr>« Un</nobr> jour, nous retournerons dans l'espace au-delà des cieux, et je reprendrai mes fonctions. D'ici là, je préserverai les rituels dans ma <nobr>mémoire. »</nobr>",
+      "german": "„Eines Tages werden wir jenseits des Himmels zurückkehren und ich werde meine Pflichten wieder aufnehmen. Bis dahin leben die Rituale in meiner Erinnerung weiter.“",
+      "russian": "Однажды мы снова вознесемся над небесами и я вернусь к своим обязанностям. Но пока придется хранить ритуалы в памяти».",
+      "portuguese": "“Um dia retornaremos ao espaço além dos céus e eu retomarei minhas funções. Até lá, manterei os rituais vivos em minha memória.”",
+      "chinese": "“总有一天，我们会回到天空彼方的空间，我将重新履行自己的使命。在那之前，我会将仪式铭记于心。”",
+      "spanish": "«Algún día volveremos al espacio, más allá de los cielos, y continuaré con mi labor. Hasta entonces, mantendré los rituales vivos en el recuerdo».",
+      "chinese_traditional": "「有一天我們會回到天空彼岸，我將重拾我的職責。在那之前，我會靠記憶把儀式的一切繼續傳承下去。」",
+      "korean": "\"때가 오면 우리는 하늘 너머 저편으로 돌아갈 것이며, 나도 원래 임무를 다하게 되겠지. 그때까지 이 의식을 내 기억 속에 간직해야 할 것이다.\"",
+      "japanese": "「いつか私たちは空の向こうに戻り、私は再び役割を果たすことになるでしょう。それまで、儀式は記憶の中に留めておくわ」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_LunarPriestess.prefab",
+    "m_AssetGUID": "3b3a0db9ff1d4d949b12d7ff81a57791"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/LunarPriestess/FX_LunarPriestessAttack.prefab",
+      "m_AssetGUID": "87fd688e218e9334a8710c818f628efe"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-2d91e0b311ee622c-f9d1439e5aebb8442b340cbcdd30d8bc-v2",
+        "english": "Add a <b>Moon Ritual</b> spell with [ephemeral] to your hand.",
+        "french": "Ajoute un sort <b>Rituel lunaire</b> avec [ephemeral] à votre main.",
+        "german": "Nimm einen <b>Mondritual</b>-Zauber mit [ephemeral] auf die Hand.",
+        "russian": "В руку добавляется [ephemeral] карта с чарами <b>Ритуал под луной</b>.",
+        "portuguese": "Adiciona uma carta [ephemeral] feitiço de <b>Ritual Lunar</b> à sua mão.",
+        "chinese": "添加一张带有 [ephemeral] 的<b>月之仪式</b>法术牌到你的手牌。",
+        "spanish": "Añade un hechizo <b>Ritual lunar</b> con [ephemeral] a tu mano.",
+        "chinese_traditional": "將一張帶有[ephemeral]的<b>月之儀式</b>法術加入你的手牌。",
+        "korean": "[ephemeral] <b>달의 의식</b> 주문 카드를 패에 추가합니다.",
+        "japanese": "手札に属性が[ephemeral]の<b>月の儀式</b>の呪文を追加する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddBattleCard",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramCardUpgradeData": {
+            "id": "LunarPriestess_Upgrade",
+            "traitDataUpgrades": [
+              {
+                "traitStateName": "CardTraitEphemeral",
+                "traitIsRemovable": false
+              }
+            ]
+          },
+          "additionalTooltips": [
+            {
+              "descriptionKey": {
+                "key": "CardEffectSetMoonPhase_TooltipText",
+                "english": "Advances the current phase of the moon. There are two moon phases, [new] and [full]. Cannot occur during combat.",
+                "french": "Avance la phase de la lune (il y en a <nobr>deux :</nobr> [new] et [full]). Ne peut pas se produire pendant le combat.",
+                "german": "Lässt die aktuelle Mondphase voranschreiten. Es gibt zwei Mondphasen, [new] und [full]. Kann nicht im Kampf auftreten.",
+                "russian": "Ускоряет текущую фазу луны. Не срабатывает во время боя. Фазы движения две: [new] и [full].",
+                "portuguese": "Avança a fase atual da lua. Existem duas fases da lua, [new] e [full]. Não pode ocorrer durante o combate.",
+                "chinese": "推进当前的月相。有[new]和[full]两种月相。战斗期间无法触发。",
+                "spanish": "Avanza a la siguiente fase de la luna. La luna tiene dos fases: [new] y [full]. No puede ocurrir en combate.",
+                "chinese_traditional": "使目前的月亮階段向前演進。月亮有兩個階段，[new]與[full]。戰鬥中無法使用。",
+                "korean": "현재 달의 위상을 한 단계 진행시킵니다. 달의 위상은 [new]과 [full] 두 가지가 있으며, 교전 중에는 변화하지 않습니다.",
+                "japanese": "現在の月の満ち欠けを進行させる。月の満ち欠けには[new]と[full]の2種類がある。戦闘中は発生しない。"
+              },
+              "titleKey": {
+                "key": "CardEffectSetMoonPhase_TooltipTitle",
+                "english": "Phase",
+                "french": "Phase",
+                "german": "Phase",
+                "russian": "Фаза",
+                "portuguese": "Fase",
+                "chinese": "月相变化",
+                "spanish": "Cambio de fase",
+                "chinese_traditional": "相位",
+                "korean": "위상 변화",
+                "japanese": "月相進行"
+              }
+            },
+            {
+              "statusId": "conduit",
+              "descriptionKey": {
+                "key": "StatusEffect_Conduit_CardTooltipText",
+                "english": "+[codeint0] [magicpower] on this floor per stack.",
+                "french": "+[codeint0] [magicpower] à ce niveau par cumul.",
+                "german": "+[codeint0] [magicpower] pro Stapel auf dieser Ebene.",
+                "russian": "+[magicpower] x[codeint0] за слой на этом этаже.",
+                "portuguese": "+[codeint0] de [magicpower] nesse andar por carga.",
+                "chinese": "在本层时，每层 +[codeint0] [magicpower]。",
+                "spanish": "+[codeint0] [magicpower] en este piso por acumulación.",
+                "chinese_traditional": "每層在這個樓層+[codeint0][magicpower]。",
+                "korean": "스택당 해당 층에 [magicpower] +[codeint0] 효과가 적용됩니다.",
+                "japanese": "1スタックにつき、このフロアで+[codeint0] [magicpower]。"
+              },
+              "titleKey": {
+                "key": "StatusEffect_Conduit_CardText",
+                "english": "Conduit",
+                "french": "Canalisation",
+                "german": "Leitfähigkeit",
+                "russian": "Канал",
+                "portuguese": "Conduíte",
+                "chinese": "导流",
+                "spanish": "Conducto",
+                "chinese_traditional": "導體",
+                "korean": "마력 도관",
+                "japanese": "コンジット"
+              },
+              "style": "positive",
+              "isStatusTooltip": true
+            },
+            {
+              "statusId": "ephemeral",
+              "descriptionKey": {
+                "key": "CardTraitEphemeral_TooltipText",
+                "english": "Purges when played, discarded, or at end of turn.",
+                "french": "La carte est purgée lorsqu'elle est jouée, défaussée, ou à la fin du tour.",
+                "german": "Wird ausgespielt, abgelegt oder am Ende des Zuges entfernt.",
+                "russian": "Ликвидируется будучи сыгранной, или сброшенной, а также в конце хода",
+                "portuguese": "A carta é expurgada quando jogada ou descartada, ou ao fim do turno.",
+                "chinese": "在打出、舍弃，或结束回合时移除。",
+                "spanish": "Se purga al jugarla, descartarla o al acabar el turno.",
+                "chinese_traditional": "打出、捨棄或在回合結束時淨化。",
+                "korean": "카드를 사용하거나, 버리거나, 턴 종료 시 제외됩니다.",
+                "japanese": "プレイ時、破棄時、またはターン終了時に除外される。"
+              },
+              "titleKey": {
+                "key": "CardTraitEphemeral_TooltipTitle",
+                "english": "Ephemeral",
+                "french": "Éphémère",
+                "german": "Vergänglich",
+                "russian": "Временная",
+                "portuguese": "Efêmera",
+                "chinese": "短暂",
+                "spanish": "Efímera",
+                "chinese_traditional": "瞬逝",
+                "korean": "일회성",
+                "japanese": "一時的"
+              }
+            },
+            {
+              "statusId": "ephemeral",
+              "descriptionKey": {
+                "key": "CardTraitMagicPower_TooltipText",
+                "english": "Increases the amount of damage dealt and health restored by spells.",
+                "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+                "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+                "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+                "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+                "chinese": "提高法术造成的伤害与恢复的生命值。",
+                "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+                "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+                "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+                "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+              },
+              "titleKey": {
+                "key": "CardTraitMagicPower_TooltipTitle",
+                "english": "Magic Power",
+                "french": "Puissance magique",
+                "german": "Magische Kraft",
+                "russian": "Сила магии",
+                "portuguese": "Poder Mágico",
+                "chinese": "魔法强度",
+                "spanish": "Poder mágico",
+                "chinese_traditional": "魔法力量",
+                "korean": "마법력",
+                "japanese": "魔力"
+              }
+            }
+          ],
+          "paramInt": 3,
+          "paramCardPool": "MoonRitualOnlyPool"
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 8,
+  "attackDamage": 8,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Selene",
+    "SubtypesData_BannerUnit"
+  ],
+  "characterChatterData": "LunaCovenSeleneChatterdata"
+}

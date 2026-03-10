@@ -1,0 +1,110 @@
+{
+  "id": "SquadLeader",
+  "name": "Squad Leader",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SquadLeader.prefab",
+    "m_AssetGUID": "370e50e6d853a2243a6279f39668bcd6"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterSquadLeader",
+        "nameKey": {
+          "key": "CharacterData_nameKey-3d48b363682bba0d-dac96b8eeab736742b3fc3639dbaa222-v2",
+          "english": "Squad Leader",
+          "french": "Chef d'escadron",
+          "german": "Gruppenleiter",
+          "russian": "Командир отряда",
+          "portuguese": "Líder de Esquadrão",
+          "chinese": "蘑菇兵长",
+          "spanish": "Líder de escuadrón",
+          "chinese_traditional": "小隊領袖",
+          "korean": "분대장",
+          "japanese": "部隊長"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-4d7c90c6dc378b46-dac96b8eeab736742b3fc3639dbaa222-v2",
+            "english": "“Come on you sorry sprouts! Get those gills in gear and fight!”",
+            "french": "<nobr>« Allez,</nobr> jeunes <nobr>pousses !</nobr> Bougez-vous le bulbe et <nobr>battez-vous ! »</nobr>",
+            "german": "„Na los, ihr miesen Schösslinge! Kneift die Lamellen zusammen und kämpft!",
+            "russian": "«Ну же, жалкие отростки! Подтяните пластинки и сражайтесь!»",
+            "portuguese": "“Vamos lá, cogumelinhos! Arrumem essas lamelas e lutem!”",
+            "chinese": "“来吧，你们这些可怜的小芽！鼓起你们的菌褶来战斗吧！”",
+            "spanish": "«¡Vamos, brotes verdes! ¡Moved esas láminas y a luchar!».",
+            "chinese_traditional": "「來吧，你們這些可憐的幼苗！讓那些菌褶動起來戰鬥！」",
+            "korean": "\"서둘러, 이 여려 터진 새싹들아! 그 입을 열심히 움직이며 싸우라고!\"",
+            "japanese": "「どうした、ひよっ子ども！傘を広げて戦うんだ！」"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SquadLeader.prefab",
+          "m_AssetGUID": "c80678f30875f1043af7528ee3a21f98"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+            "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+          },
+          "spawnLocation": "character_center"
+        },
+        "roomModifiers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-f1233ea316671944-dac96b8eeab736742b3fc3639dbaa222-v2",
+              "english": "Grant [trample] to [funguy]. [troop] adds +[upgrade.bonusdamage][attack] per stack.",
+              "french": "Octroie [trample] aux <b>Champotes</b>. +[upgrade.bonusdamage][attack] par cumul de [troop].",
+              "german": "Erhalte [trample] für [funguy]. [troop] erhält +[upgrade.bonusdamage][attack] pro Stapel.",
+              "russian": "Накладывает [trample] на <b>грибойцов</b>. За каждый [troop] добавляется +[upgrade.bonusdamage][attack].",
+              "portuguese": "Concede [trample] ao [funguy]. [troop] adiciona +[upgrade.bonusdamage][attack] por carga.",
+              "chinese": "使 [funguy] 获得 [trample]。每层 [troop] 额外 +[upgrade.bonusdamage][attack]。",
+              "spanish": "Otorga [trample] a [funguy]. [troop] añade +[upgrade.bonusdamage][attack] por acumulación.",
+              "chinese_traditional": "賦予[funguy][trample]。[troop]每層增加+[upgrade.bonusdamage][attack]。",
+              "korean": "[funguy] 유닛에 [trample] 효과를 부여합니다. [troop] 효과 스택당 +[upgrade.bonusdamage][attack]이 증가합니다.",
+              "japanese": "[funguy]に[trample]を付与する。[troop]の1スタックにつき+[upgrade.bonusdamage][attack]が追加される。"
+            },
+            "roomStateModifierClassName": "RoomStateTroopUnitUpgradeModifier",
+            "paramStatusEffects": [
+              {
+                "statusId": "trample",
+                "count": 1
+              }
+            ],
+            "additionalTooltips": [
+              {
+                "statusId": "horde",
+                "descriptionKey": "",
+                "trigger": 0,
+                "titleKey": "",
+                "style": 0,
+                "isStatusTooltip": true,
+                "isTriggerTooltip": false,
+                "allowSecondaryPlacement": false,
+                "hideInTrainRoomUI": false
+              }
+            ],
+            "paramSubtype": "SubtypesData_FunGuy"
+          }
+        ],
+        "size": 1,
+        "health": 10,
+        "attackDamage": 10,
+        "subtypeKeys": [
+          "SubtypesData_Shroom",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "UnderlegionShroomMaleChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

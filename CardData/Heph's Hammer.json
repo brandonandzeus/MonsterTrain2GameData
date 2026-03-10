@@ -1,0 +1,129 @@
+{
+  "id": "EventCard_HephsHammer",
+  "name": "Heph's Hammer",
+  "nameKey": {
+    "key": "CardData_nameKey-24d0e7b3ee64ad6b-db2bb6d5cb639f44091ffd711b8084f2-v2",
+    "english": "Heph's Hammer",
+    "french": "Marteau de Heph",
+    "german": "Hephs Hammer",
+    "russian": "Молот Геф",
+    "portuguese": "Martelo de Heph",
+    "chinese": "赫芙的铁锤",
+    "spanish": "Martillo de Heph",
+    "chinese_traditional": "赫芙之錘",
+    "korean": "헵의 망치",
+    "japanese": "ヘフの金槌"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-3ee0bc9ecebfa60f-db2bb6d5cb639f44091ffd711b8084f2-v2",
+      "english": "What was once Herzal’s hammer, it has now passed down to his daughter Heph. Over the years, it forged the Rail and the trains that ride it, yet it shows no signs of wear.",
+      "french": "Transmis à Heph, la fille de Herzal, ce marteau fut utilisé pour forger la Voie et les trains qui l'empruntent, mais il ne montre aucun signe d'usure.",
+      "german": "Was einst Herzals Hammer war, wurde nun an seine Tochter Heph weitergegeben. Über die Jahre wurden Gleis und Züge damit geschmiedet, doch es zeigt sich keinerlei Abnutzung.",
+      "russian": "Молот Герцаля перешел к его дочери Геф. Долгие годы им ковали железную дорогу и поезда, но на самом инструменте не появилось ни царапины.",
+      "portuguese": "O antigo martelo de Herzal agora foi passado para sua filha, Heph. Ao longo dos anos, o martelo foi usado para forjar a ferrovia e os trens que a percorrem. Mesmo assim, ele não mostra sinais de desgaste.",
+      "chinese": "这曾经是赫扎尔的锤子，如今已传给了他的女儿赫芙。多年来，赫芙用它锻造了铁道与乘在铁道之上的火车，却仍然不见有丝毫磨损。",
+      "spanish": "El que una vez fue el martillo de Herzal es ahora propiedad de su hija Heph. A lo largo de los años, forjó los Raíles y los trenes que los recorren, pero no muestra el menor signo de desgaste.",
+      "chinese_traditional": "這曾是赫爾扎爾的錘子，現在已經傳給了他的女兒赫芙。多年來，它鍛造了軌道和在其上行駛的列車，但它卻沒有任何磨損的跡象。",
+      "korean": "한때 헤르잘이 사용하던 이 망치는 이제 그의 딸 헵에게로 넘어갔다. 수년간 선로와 그 위를 달리는 열차를 만드는 데 사용되었지만, 여저히 망치에는 흠집 하나 나지 않았다.",
+      "japanese": "ハーザルのものであった金槌は、彼の娘ヘフに受け継がれた。何年も鉄道や列車の製造に使われてきたが、すり減っている様子はまったくない。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_RailforgeHammer.prefab",
+    "m_AssetGUID": "75707d8273443ed47ae0d32b6d465cd0"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "EventCard_HephsHammer_Equipment",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-dfcc2152aff7e3a1-e3185523ecd1dc94a83431f689ff0e3a-v2",
+          "english": "Railforge Hammer",
+          "french": "Marteau Forgerail",
+          "german": "Gleisschmiedehammer",
+          "russian": "Молот для рельсов",
+          "portuguese": "Martelo Forja-Trilhos",
+          "chinese": "铁道锻造锤",
+          "spanish": "Martillo de forja de raíles",
+          "chinese_traditional": "軌道鍛造之錘",
+          "korean": "선로 단조 망치",
+          "japanese": "鉄道敷設の金槌"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-ec7f9118f6341f9e-e3185523ecd1dc94a83431f689ff0e3a-v2",
+              "english": "+[effect0.power][capacity].",
+              "french": "+[effect0.power][capacity].",
+              "german": "+[effect0.power][capacity].",
+              "russian": "+[effect0.power][capacity].",
+              "portuguese": "+[effect0.power][capacity].",
+              "chinese": "+[effect0.power][capacity]。",
+              "spanish": "+[effect0.power][capacity].",
+              "chinese_traditional": "+[effect0.power][capacity]。",
+              "korean": "+[effect0.power][capacity].",
+              "japanese": "+[effect0.power][capacity]。"
+            },
+            "trigger": "on_kill",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAdjustRoomCapacity",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "bonusDamage": 20
+      },
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "Capacity_TooltipText",
+            "english": "Units can only be summoned on a floor if it has enough capacity.",
+            "french": "Les unités ne peuvent être invoquées à un niveau que s'il dispose d'une capacité suffisante.",
+            "german": "Einheiten können nur in Ebenen mit genug Kapazität gerufen werden.",
+            "russian": "Бойцов можно призвать на этаж только в том случае, если там есть место.",
+            "portuguese": "Unidades só podem ser invocadas em um andar se houver espaço suficiente.",
+            "chinese": "只有当该层有足够大的容量时，才能召唤单位。",
+            "spanish": "Solo puedes invocar unidades en un piso si tiene capacidad suficiente.",
+            "chinese_traditional": "只有在樓層有足夠容量的情況下，單位才能被召喚到該樓層。",
+            "korean": "객실 내에 충분한 수용량이 있어야 유닛을 소환할 수 있습니다.",
+            "japanese": "キャパシティが足りないとユニットをフロアに召喚することはできない。"
+          },
+          "titleKey": {
+            "key": "Capacity_TooltipTitle",
+            "english": "[capacity] Capacity",
+            "french": "[capacity] Capacité",
+            "german": "[capacity] Kapazität",
+            "russian": "[capacity] Размеры",
+            "portuguese": "[capacity] Capacidade",
+            "chinese": "[capacity] 容量",
+            "spanish": "Capacidad [capacity]",
+            "chinese_traditional": "[capacity]容量",
+            "korean": "[capacity] 수용량",
+            "japanese": "[capacity] キャパシティ"
+          }
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/RailforgeHammer/FX_RailforgeHammer.prefab",
+          "m_AssetGUID": "567e54675b9dd9c4aa1b3da621c37371"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

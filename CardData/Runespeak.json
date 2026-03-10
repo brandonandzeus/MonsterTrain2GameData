@@ -1,0 +1,68 @@
+{
+  "id": "TethysSpellWeaknessOnStrike",
+  "name": "Runespeak",
+  "nameKey": {
+    "key": "CardData_nameKey-de293573ee4a87a0-a77272a15aa926e42b49d5834bc97aa1-v2",
+    "english": "Runespeak",
+    "french": "Langue runique",
+    "german": "Runensprache",
+    "russian": "Говорящие руны",
+    "portuguese": "Fala Rúnica",
+    "chinese": "符文话语",
+    "spanish": "Lengua rúnica",
+    "chinese_traditional": "符文之語",
+    "korean": "룬스피크",
+    "japanese": "ルーン語"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-8421bc3b47753a0d-a77272a15aa926e42b49d5834bc97aa1-v2",
+    "english": "Draw a damage spell and grant it +[effect0.upgrade.bonusdamage] [magicpower].",
+    "french": "Piochez un sort de dégâts, qui gagne +[effect0.upgrade.bonusdamage] [magicpower].",
+    "german": "Ziehe einen Schadenszauber und wende +[effect0.upgrade.bonusdamage] [magicpower] darauf an.",
+    "russian": "Вытяните чары урона. К ним добавится [magicpower] х[effect0.upgrade.bonusdamage].",
+    "portuguese": "Compra um feitiço de dano e concede +[effect0.upgrade.bonusdamage] [magicpower] a ele.",
+    "chinese": "抽一张伤害性法术牌并使其获得 +[effect0.upgrade.bonusdamage][magicpower]。",
+    "spanish": "Roba un hechizo de daño y añade +[effect0.upgrade.bonusdamage] [magicpower].",
+    "chinese_traditional": "抽一張傷害法術並賦予其+[effect0.upgrade.bonusdamage][magicpower]。",
+    "korean": "피해 주문 카드를 뽑고 +[effect0.upgrade.bonusdamage] [magicpower]을 부여합니다.",
+    "japanese": "ダメージ呪文をドローして、+[effect0.upgrade.bonusdamage] [magicpower]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+      "targetMode": "hand",
+      "paramCardUpgradeData": {
+        "id": "TethysSpellWeaknessOnStrike_Upgrade",
+        "bonusDamage": 5,
+        "bonusHeal": 5
+      }
+    },
+    {
+      "effectStateName": "CardEffectDrawType",
+      "targetMode": "draw_pile",
+      "paramCardFilter": {
+        "id": "OnlyDamageCardExcludeSpellsFromMagicPower",
+        "requiredCardEffectsOperator": "or",
+        "requiredCardEffects": [
+          "CardEffectDamage",
+          "CardEffectDamageByPercentRemainingHealth",
+          "CardEffectDamageByUnitsKilled",
+          "CardEffectDamagePerHp",
+          "CardEffectDamagePerSourceAttack",
+          "CardEffectDamagePerTargetAttack",
+          "CardEffectDamageWithTrample",
+          "CardEffectHealAndDamageRelative"
+        ],
+        "disallowedCardPools": [
+          "SpellsNotAllowedSpellPowerPool"
+        ]
+      },
+      "paramInt": 1
+    }
+  ],
+  "cooldownAfterActivated": 3,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

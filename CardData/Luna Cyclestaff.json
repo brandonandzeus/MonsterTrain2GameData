@@ -1,0 +1,95 @@
+{
+  "id": "LunaCyclestaff",
+  "name": "Luna Cyclestaff",
+  "nameKey": {
+    "key": "CardData_nameKey-5737bc869b61d337-d50dd516000f3a240a253224824d7386-v2",
+    "english": "Luna Cyclestaff",
+    "french": "Bâton lunarien",
+    "german": "Luna-Kreisstab",
+    "russian": "Посох фаз",
+    "portuguese": "Cajado Lunar",
+    "chinese": "月相循环法杖",
+    "spanish": "Bastón cíclico lunar",
+    "chinese_traditional": "月相循環法杖",
+    "korean": "달 주기 지팡이",
+    "japanese": "満ち欠けの杖"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-379c4dc60b2d0a11-d50dd516000f3a240a253224824d7386-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-daacbe1b0eaa98fc-d50dd516000f3a240a253224824d7386-v2",
+      "english": "“Under a full moon, take the staff made of the lunar shard and cast a circle. Watch the sands of Limbo flow towards you. A moon will be made for your coven to call home.”\n—The Ritual Tome",
+      "french": "<nobr>« Sous</nobr> la pleine lune, prenez le bâton qui contient l'éclat lunaire et tracez un cercle. Regardez les sables des Limbes s'écouler vers vous. Une lune sera créée pour votre <nobr>clan. »</nobr> \n— Livre des Rituels",
+      "german": "„Nimm bei Vollmond den Stab aus Mondsplitter und ziehe einen Kreis. Beobachte, wie der Sand des Limbo auf dich zu fließt. Dein Zirkel wird einen Mond bekommen, den er sein Zuhause nennen kann.“\n– Foliant der Rituale",
+      "russian": "«В полнолуние возьмите посох с осколком луны и начертите круг. Наблюдайте, как к вам потекут пески Лимбо. Так родится луна, которая станет новым домом для ковена».\n— Книга ритуалов",
+      "portuguese": "“Durante a lua cheia, pegue o cajado feito do fragmento lunar e faça um círculo. Veja as areias do Limbo fluírem em sua direção. Uma lua será criada para a sua Irmandade chamar de lar.”\n— Tomo Ritualístico",
+      "chinese": "“在满月之下，拿起月亮碎片所铸的法杖，画一个圈。看着地狱边缘的沙子向你们流过来。那将铸就一轮明月，作为你们月巫团的家。”\n——《仪式之书》",
+      "spanish": "«Bajo la luna llena, toma el bastón tallado del fragmento lunar y dibuja un círculo. Observa las arenas del Limbo fluir hacia ti. Formará una luna para acoger a tu Aquelarre».\n—Tomo de los Rituales",
+      "chinese_traditional": "「在滿月之下，拿起月亮碎片做成的法杖並施法。看著靈薄獄之沙流向你。一顆月亮將為你的女巫們製造一個可以稱之為家的地方。」\n——《儀式魔法書》",
+      "korean": "“보름달 아래서 달 조각으로 만든 지팡이를 쥐고 원을 그려라. 지옥 변방의 모래가 너에게 다가오는 것을 지켜보라. 그리하면 너의 집회가 부를 수 있는 고향의 달이 태어날 것이다.”\n- 의식의 서",
+      "japanese": "「満月の下で、月の欠片でできた杖を手に取り、円を描く。辺獄の砂がそちらへと流れていくのを見なさい。あなたの一族が故郷と呼べる月が作られるでしょう」\n—儀式の書"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "rare",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Cyclestaff.prefab",
+    "m_AssetGUID": "df14ff7c8a39bb249882f992c816dd45"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "LunaCyclestaff_Upgrade",
+        "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-bdd6005543310b81-6a8f7dfca357f7140b867ac8c9531b5a-v2",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-595ec7ee27c534ff-6a8f7dfca357f7140b867ac8c9531b5a-v2",
+              "english": "This equipment gains +[effect0.upgrade.bonusdamage][attack] permanently.",
+              "french": "Cet équipement gagne +[effect0.upgrade.bonusdamage][attack] définitivement.",
+              "german": "Diese Ausrüstung erhält permanent +[effect0.upgrade.bonusdamage][attack].",
+              "russian": "Это снаряжение навсегда получает +[effect0.upgrade.bonusdamage][attack].",
+              "portuguese": "Este equipamento recebe +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+              "chinese": "这件装备永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+              "spanish": "Este equipo añade +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+              "chinese_traditional": "此裝備永久獲得+[effect0.upgrade.bonusdamage][attack]。",
+              "korean": "이 장비가 영구적으로 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+              "japanese": "この装備品が永続的に+[effect0.upgrade.bonusdamage][attack]を得る。"
+            },
+            "trigger": "on_moon_phase_shift",
+            "effects": [
+              {
+                "effectStateName": "CardEffectBuffEquipment",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramCardUpgradeData": {
+                  "id": "LunaCyclestaff_EquipUpgrade",
+                  "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-7c36e4a264563942-71c2013b99d91c04c85333c6aadbd28a-v2",
+                  "hideUpgradeIconOnCard": true,
+                  "bonusDamage": 1
+                }
+              }
+            ],
+            "suppressTriggerNotification": true
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/Cyclestaff/FX_Cyclestaff.prefab",
+          "m_AssetGUID": "16cffea4d464e3b4598fe1bb352575a9"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hung Bui"
+}

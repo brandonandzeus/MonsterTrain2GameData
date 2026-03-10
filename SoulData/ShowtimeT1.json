@@ -1,0 +1,87 @@
+{
+  "id": "ShowtimeT1",
+  "name": "ShowtimeT1",
+  "nameKey": {
+    "key": "SoulData_nameKey-e8ce52e838e1a4f6-8b3fde7d294059445a41aad9373461a9-v2",
+    "english": "Showtime",
+    "french": "Mélodr'Âme",
+    "german": "Showtime",
+    "russian": "Браво",
+    "portuguese": "Espetáculo",
+    "chinese": "小明星",
+    "spanish": "Espectáculo",
+    "chinese_traditional": "表演時間",
+    "korean": "쇼타임",
+    "japanese": "ショータイム"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-36280f762cc3afd9-8b3fde7d294059445a41aad9373461a9-v2",
+    "english": "A random floor has +[effect0.upgrade.roommodifier0.power][capacity]. At the end of combat, the front friendly unit on that floor gains +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] if there is [capacity] available (max 6[capacity]).",
+    "french": "Un niveau aléatoire a +[effect0.upgrade.roommodifier0.power][capacity]. À la fin du combat, l'allié en 1re ligne de ce niveau gagne +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] si la [capacity] le permet.",
+    "german": "Eine zufällige Ebene hat +[effect0.upgrade.roommodifier0.power][capacity]. Am Kampfende erhält die vorderste verbündete Einheit in dieser Ebene +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health], wenn [capacity] verfügbar ist.",
+    "russian": "Случайный этаж получает +[effect0.upgrade.roommodifier0.power][capacity]. В конце боя передний союзник на этаже получает +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp][health], если позволяет [capacity].",
+    "portuguese": "Um andar aleatório tem +[effect0.upgrade.roommodifier0.power][capacity]. No final do combate, a unidade aliada na frente no andar ganha +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] se houver [capacity] disponível.",
+    "chinese": "随机一层获得 +[effect0.upgrade.roommodifier0.power][capacity]。战斗结束时，该层若有可用 [capacity]，则前排友方单位获得 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity]，+[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health]。",
+    "spanish": "Un piso aleatorio tiene +[effect0.upgrade.roommodifier0.power][capacity]. Al final de la batalla, la primera unidad aliada del piso añade +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] si hay [capacity] disponible.",
+    "chinese_traditional": "一個隨機樓層有+[effect0.upgrade.roommodifier0.power][capacity]。在戰鬥結束時，如果[capacity]可用，該樓層的前排友方單位獲得+[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity]、+[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp][health]。",
+    "korean": "무작위 층 하나에 +[effect0.upgrade.roommodifier0.power][capacity]이 부여됩니다. 전투 종료 시, 해당 층의 [capacity]에 여유가 있다면 전열 아군 유닛 하나가 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp][health]을 획득합니다.",
+    "japanese": "ランダムなフロアに+[effect0.upgrade.roommodifier0.power][capacity]。[capacity]が空いている場合、戦闘終了時にそのフロア上にいる味方ユニットが+[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity]、+[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectShowtime",
+      "paramCardUpgradeData": {
+        "id": "ShowtimeT1_Room",
+        "roomModifierUpgrades": [
+          {
+            "roomStateModifierClassName": "RoomStateCapacityModifier",
+            "paramInt": 3
+          },
+          {
+            "roomStateModifierClassName": "RoomStateAddEffectPostCombatModifier",
+            "paramCardEffects": [
+              {
+                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                "targetMode": "front_in_room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "ShowtimeT1_UnitBuffPerTurn",
+                  "hideUpgradeIconOnCard": true,
+                  "bonusDamage": 5,
+                  "bonusHP": 25,
+                  "bonusSize": 1,
+                  "restrictSizeToRoomCapacity": true
+                },
+                "appliedVFX": {
+                  "vfxPrefabLeft": "FX_FightClub"
+                }
+              }
+            ],
+            "disallowedInDeploymentPhase": true
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "paramInt": 1
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-74da617df0e70e48-8b3fde7d294059445a41aad9373461a9-v2",
+      "english": "Defeat Tivi to unlock.",
+      "french": "Battez Tivi pour déverrouiller.",
+      "german": "Besiege zum Freischalten Tivi.",
+      "russian": "Чтобы разблокировать, победите Тиви.",
+      "portuguese": "Derrote Tivi para desbloquear.",
+      "chinese": "击败蒂维以解锁。",
+      "spanish": "Derrota a Tivi para desbloquear.",
+      "chinese_traditional": "擊敗蒂維以解鎖。",
+      "korean": "티비를 처치하면 잠금 해제됩니다.",
+      "japanese": "ティヴィーを倒してアンロック。"
+    },
+    "unlockCondition": "soul_kill_region_3_boss",
+    "paramInt": 1
+  },
+  "tierLevel": 1,
+  "nextTier": "ShowtimeT2"
+}

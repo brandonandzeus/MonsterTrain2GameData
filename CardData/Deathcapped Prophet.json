@@ -1,0 +1,91 @@
+{
+  "id": "DeathcappedProphet",
+  "name": "Deathcapped Prophet",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "rare",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_DeathCappedProphet.prefab",
+    "m_AssetGUID": "59f9512d8673c35448daf6528ffd250a"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterDeathcappedProphet",
+        "nameKey": {
+          "key": "CharacterData_nameKey-e0c99d14a7c7c27d-bde45ef0acc3d1543a8ddeaf3ff8cf1c-v2",
+          "english": "Deathcapped Prophet",
+          "french": "Prophète tue-mouches",
+          "german": "Todeshauben-Prophet",
+          "russian": "Пророк-мухомор",
+          "portuguese": "Profeta Chapéu da Morte",
+          "chinese": "毒鹅膏先知",
+          "spanish": "Profeta de sombrero letal",
+          "chinese_traditional": "死帽預言家",
+          "korean": "죽음의 갓을 쓴 예언자",
+          "japanese": "デスキャップ・プロフェット"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-4311610381b2338b-bde45ef0acc3d1543a8ddeaf3ff8cf1c-v2",
+            "english": "“Don’t listen to those other so-called ‘prophets.’ I’m the real seer around here!”",
+            "french": "<nobr>« N'écoutez</nobr> pas les autres pseudo-\"prophètes\". C'est moi, le vrai voyant, <nobr>ici ! »</nobr>",
+            "german": "„Hör nicht auf die anderen so genannten ,Propheten’. Ich bin hier der einzig wahre Seher!“",
+            "russian": "«Не слушайте прочих так называемых пророков. Я здесь единственный настоящий предсказатель!»",
+            "portuguese": "“Não dê ouvidos a esses outros ‘profetas’. Eu sou o verdadeiro vidente por aqui!”",
+            "chinese": "“别听那些所谓的‘先知’的。我才是这里真正的先知。！”",
+            "spanish": "«No escuches a los otros supuestos \"profetas\". ¡Yo soy el único vidente real!».",
+            "chinese_traditional": "「別聽那些所謂的『預言家』的話。這裡只有我才是真正的先知！」",
+            "korean": "\"'예언자' 운운하는 자들의 말은 듣지 말게. 이 지역의 예언자는 바로 나니까!\"",
+            "japanese": "「他の\"預言者\"とやらには耳を傾けてはいけない。本当に未来が見えるのはこの私さ！」"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_DeathCappedProphet.prefab",
+          "m_AssetGUID": "471aa54f0a0a79c4bb3865e1d31226ce"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-899ca10538c6335d-bde45ef0acc3d1543a8ddeaf3ff8cf1c-v2",
+              "english": "Draw +[effect0.power] next turn.",
+              "french": "Piochez +[effect0.power] au prochain tour.",
+              "german": "Ziehe im nächsten Zug +[effect0.power].",
+              "russian": "Возьмите +[effect0.power] на следующий ход.",
+              "portuguese": "Compre +[effect0.power] no próximo turno.",
+              "chinese": "下个回合抽 +[effect0.power] 张牌。",
+              "spanish": "Roba +[effect0.power] en el próximo turno.",
+              "chinese_traditional": "下回合抽+[effect0.power]張牌。",
+              "korean": "다음 턴에 카드를 추가로 +[effect0.power]장 뽑습니다.",
+              "japanese": "次のターン、ドロー+[effect0.power]。"
+            },
+            "trigger": "card_monster_played",
+            "effects": [
+              {
+                "effectStateName": "CardEffectDrawAdditionalNextTurn",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "size": 1,
+        "health": 8,
+        "attackDamage": 3,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Shroom"
+        ],
+        "characterChatterData": "UnderlegionShroomMaleChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Ron Kee"
+}

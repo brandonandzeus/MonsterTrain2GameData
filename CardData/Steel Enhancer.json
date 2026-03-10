@@ -1,0 +1,74 @@
+{
+  "id": "SteelEnhancer",
+  "name": "Steel Enhancer",
+  "nameKey": {
+    "key": "CardData_nameKey-8ad35ee5ff40f26c-bac0951f3615f55489d639cc5908492d-v2",
+    "english": "Steel Enhancer",
+    "french": "Lustrage",
+    "german": "Stahlpolitur",
+    "russian": "Улучшитель стали",
+    "portuguese": "Soldador",
+    "chinese": "钢铁强化剂",
+    "spanish": "Acero reforzado",
+    "chinese_traditional": "鋼鐵強化器",
+    "korean": "강철 경화제",
+    "japanese": "鋼鉄強化"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-440239709cc90543-bac0951f3615f55489d639cc5908492d-v2",
+    "english": "Apply +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+    "french": "Confère +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+    "german": "Wende +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] an.",
+    "russian": "Дает +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+    "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack] e +[effect0.upgrade.bonushp] de [health].",
+    "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+    "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+    "chinese_traditional": "施加+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+    "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 적용합니다.",
+    "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-ab6348aab3a871e4-bac0951f3615f55489d639cc5908492d-v2",
+      "english": "I’ve used Wildwood sap as a mild steel polish as well, providing combat benefits to the Awoken that receive my treatment.",
+      "french": "J'ai également utilisé la sève du Boissauvage pour fourbir l'acier, ce qui offre des avantages en combat aux Éveillés qui bénéficient de mon traitement.",
+      "german": "Ich habe Wildholzsaft auch schon als Stahlpolitur verwendet. Die Erweckten, die ich so behandelt habe, waren besser für den Kampf gerüstet.",
+      "russian": "Я также использую сок Диколесья в качестве мягкого полирующего состава для стали, повышающего боевые качества обратившихся ко мне Пробужденных.",
+      "portuguese": "Também usei a seiva da Mata Selvagem como um polidor de aço suave, proporcionando benefícios de combate aos Despertos que receberam meu tratamento.",
+      "chinese": "我还会把野林树液当成无害的钢铁抛光剂使用，接受抛光处理的觉者在战斗中会拥有更大优势。",
+      "spanish": "También he usado la savia del Bosque Salvaje como abrillantador de acero, y el tratamiento ha proporcionado ventajas en combate a los Despertados.",
+      "chinese_traditional": "我也將荒野樹液用作溫和的鋼鐵拋光劑，為接受我治療的覺醒者提供戰鬥優勢。",
+      "korean": "나는 와일드우드의 수액을 부드러운 강철 연마제로 사용해, 치료를 받은 각성자가 전투에서 더 유리하게 싸울 수 있도록 도왔다.",
+      "japanese": "ワイルドウッドの樹液を軟鋼の磨き剤としても使用し、治療を受けた覚醒者に戦闘上の利益をもたらしたのだ。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Spell_Awoken_RegenMaxHealth.prefab",
+    "m_AssetGUID": "7e19adcc0adb1b14e9738829c8c0bd3b"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "AwokenSteelEnhancer",
+        "bonusDamage": 4,
+        "bonusHP": 4
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Buff_Health_PS.prefab",
+          "m_AssetGUID": "163c171f05bdd644fbadfa6fc01064a0"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

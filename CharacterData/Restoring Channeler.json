@@ -1,0 +1,40 @@
+{
+  "id": "MonsterChannelerHealer",
+  "name": "Restoring Channeler",
+  "nameKey": {
+    "key": "CharacterData_nameKey-200e2322c022482c-4e1e4461086619144813d5e58ce994e4-v2",
+    "english": "Restoring Channeler",
+    "french": "Occultiste revigorant",
+    "german": "Heilungsokkultist",
+    "russian": "Врач-заклинатель",
+    "portuguese": "Canalizador de Cura",
+    "chinese": "复苏的通灵者",
+    "spanish": "Canalizador restaurador",
+    "chinese_traditional": "恢復引導者",
+    "korean": "회복의 연결자",
+    "japanese": "回復のチャネラー"
+  },
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/characters/Character_Prefabs/Character_Channeler.prefab",
+    "m_AssetGUID": "82cb615347a68124cb2b87fbdd1f0c0f"
+  },
+  "triggers": [
+    {
+      "trigger": "post_combat_healing",
+      "effects": [
+        {
+          "effectStateName": "CardEffectHeal",
+          "targetMode": "room_heal_targets",
+          "targetTeamType": "monsters",
+          "paramInt": 4
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 3,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_Cultist_8a3bb2b5-8c56-4c86-bb08-85b95c488f23"
+  ]
+}

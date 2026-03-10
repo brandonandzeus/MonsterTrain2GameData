@@ -1,0 +1,178 @@
+{
+  "id": "Level3ImmortalMass_Corruption",
+  "name": "Level3ImmortalMass_Corruption",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-5ed4e336dede872c-31f6861ea50352b42bc0335db5de1375-v2",
+    "english": "The Fleshweaver",
+    "french": "Le Tisseur de chair",
+    "german": "Der Fleischweber",
+    "russian": "Мясконос",
+    "portuguese": "Tecelão Cárneo",
+    "chinese": "血肉编织者",
+    "spanish": "El Tejecarnes",
+    "chinese_traditional": "血肉編織者",
+    "korean": "플레시위버",
+    "japanese": "肉縫い"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-48d9e96c35551de0-31f6861ea50352b42bc0335db5de1375-v2",
+    "english": "Dominion’s powers have merged a huge mass of bodies together into a powerful amalgam. Carve it down to size and put them out of their misery.",
+    "french": "Les pouvoirs de Domination ont fusionné une énorme masse de corps en un puissant amalgame. Tranchez dans le vif et mettez fin à leurs souffrances.",
+    "german": "Die Kräfte der Herrschaft haben eine riesige Masse von Körpern zu einem mächtigen Gewächs verschmolzen. Dezimiere es und erlöse sie von ihrem Elend.",
+    "russian": "Сила Доминиона объединила огромную массу тел в мощный сгусток. Разрубите его на части и избавьте узников от страданий.",
+    "portuguese": "Os poderes do Domínio fundiram uma enorme massa de corpos em uma poderosa amálgama. Corte-a no tamanho certo e acabe com o sofrimento deles.",
+    "chinese": "统御泰坦的力量将无数躯体融合成了一个强大的混合体。将其破坏，让他们脱离苦海吧。",
+    "spanish": "Dominio ha usado sus poderes para unir a una gran masa de cuerpos en una poderosa amalgama. Divídela hasta que disminuya de tamaño y acaba con su sufrimiento.",
+    "chinese_traditional": "主宰的力量，將無數的血肉之軀融合成了一具強大的聚合體。將其斬削瓦解，才能讓其中的靈魂脫離苦海。",
+    "korean": "도미니온의 힘이 수많은 육체들을 하나로 뒤엉켜 강력한 융합체를 만들어냈습니다. 그것을 잘라내 크기를 줄이고, 그들의 고통을 끝내십시오.",
+    "japanese": "ドミニオンの力により、大量の肉体の集合体が強力な混合生物へと進化した。巨体を削ぎ落としてとどめを刺してやろう。"
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Enemy_Boss_Level3_ImmortalMass_Corruption"
+  ],
+  "titanTrialSin": "Enemy_Boss_Level3_ImmortalMass_Corruption_TitanTrial",
+  "battleTrackNameData": "BattleMusic_Fleshweaver",
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "ImmortalMass_Intro",
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Wave 1",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave 2",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave 3",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave 4",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "HeavyT1_LoseHealthOnMove_Chosen",
+                    "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+                  }
+                ],
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave 5",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "HeavyT1_LoseHealthOnMove_Chosen",
+                    "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+                  }
+                ],
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave 5",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "HeavyT1_LoseHealthOnMove"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_Level3_Fleshweaver_Corruption",
+    "hardBossCharacter": "Boss_Level3_Fleshweaver_Corruption"
+  }
+}

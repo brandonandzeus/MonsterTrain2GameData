@@ -1,0 +1,84 @@
+{
+  "id": "Pyreball",
+  "name": "Pyreball",
+  "nameKey": {
+    "key": "CardData_nameKey-a21e6e421e7bebce-ce673c15053ddb243841795dbddb4f86-v2",
+    "english": "Pyreball",
+    "french": "Pyroballe",
+    "german": "Ball der Höllenglut",
+    "russian": "Пеклошар",
+    "portuguese": "Bola Pírica",
+    "chinese": "薪火球",
+    "spanish": "Pirobola",
+    "chinese_traditional": "火球",
+    "korean": "화로탄",
+    "japanese": "火球"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7842b4f66e8e16d6-ce673c15053ddb243841795dbddb4f86-v2",
+    "english": "Deal [effect0.power] damage.",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+    "german": "Verursache [effect0.power] Schaden.",
+    "russian": "Наносит [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano.",
+    "chinese": "造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño.",
+    "chinese_traditional": "造成[effect0.power]點傷害。",
+    "korean": "[effect0.power]의 피해를 입힙니다.",
+    "japanese": "[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-4d43e2b97f63075c-ce673c15053ddb243841795dbddb4f86-v2",
+      "english": "“Do you think the angels will be able to fly around it?” asked Fenix. “I would like to see them try,” replied Lady Gilda.",
+      "french": "<nobr>« Penses-tu</nobr> que les anges sont capables de <nobr>l'éviter ? »</nobr> demanda Fenix. <nobr>« J'aimerais</nobr> bien les voir <nobr>essayer »,</nobr> répondit Dame Gilda.",
+      "german": "„Denkst du, die Engel können drumherum fliegen?“, fragte Fenix. „Den Versuch würde ich gerne sehen“, erwiderte Lady Gilda.",
+      "russian": "«Думаешь, ангелы смогут летать вокруг него?» —спросил Феникс. «Я бы на это посмотрела», — ответила леди Гильда.",
+      "portuguese": "“Você acha que os anjos serão capazes de voar ao redor disso?”, perguntou Fênix. “Eu quero vê-los tentar.”, respondeu a Senhorita Gilda.",
+      "chinese": "“你觉得，天使们能绕开它飞吗？”菲尼克斯问道。“我倒想看看他们试试能不能。”吉尔达女士如此回答。",
+      "spanish": "«¿Crees que los ángeles podrán sobrevolarla?», preguntó Fénix. «Que lo intenten», respondió lady Gilda.",
+      "chinese_traditional": "你覺得天使們能繞過它飛翔嗎？費尼克斯問道。「我倒想看他們試試。」吉爾達女士回答。",
+      "korean": "\"천사들이 이 주변을 날아다닐 수 있을 것 같소?\" 페닉스가 묻자, 길다가 답했다. \"최소한 시도하는 모습은 보고 싶군.\"",
+      "japanese": "「天使たちはあれを避けることができるだろうか？」フェニックスは聞いた。「やってるのをぜひ見てみたいものですわね」レディ・ギルダはそう返した。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardAr_SPL_Pyreball.prefab",
+    "m_AssetGUID": "e329b349dd8c02a478d09cebe6feb181"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitDamageOverflow",
+      "paramInt": 2
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 20,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+        },
+        "spawnLocation": "character_center"
+      },
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/Pyreball/FX_Pyreball.prefab",
+          "m_AssetGUID": "b82dad23e2a653149b163b6e32ce50c4"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Luke Banke"
+}

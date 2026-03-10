@@ -1,0 +1,266 @@
+{
+  "id": "SoulSavior_R4_BossBattle_EstrangedChild_3",
+  "name": "SoulSavior_R4_BossBattle_EstrangedChild_3",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-9fa1f57d1e69358d-458ead40e5d83cd418060cbd37c714c7-v2",
+    "english": "Lylith the Spurned",
+    "french": "Lylith la Mal-aimée",
+    "german": "Lylith die Verschmähte",
+    "russian": "Лилит Презренная",
+    "portuguese": "Lylith, a Rejeitada",
+    "chinese": "摒弃者莉莉丝",
+    "spanish": "Lylith la Repudiada",
+    "chinese_traditional": "被唾棄的莉莉絲",
+    "korean": "버림받은 자 릴리스",
+    "japanese": "拒絶のリリス"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-8015b9c77eea24fb-458ead40e5d83cd418060cbd37c714c7-v2",
+    "english": "Lylith will draw upon her powers to both wither and weaken your army.",
+    "french": "Lylith utilisera ses pouvoirs pour flétrir et affaiblir votre armée.",
+    "german": "Lylith zehrt an ihren Kräften, um deine Armee zu schwächen und entkräften.",
+    "russian": "Лилит использует свои силы, чтобы истощить и ослабить ваших бойцов.",
+    "portuguese": "Lylith usará seus poderes para enfraquecer e destruir seu exército.",
+    "chinese": "莉莉丝会运用自己的力量来削弱你的军队，使其失去活力。",
+    "spanish": "Lylith utiliza sus poderes para marchitar y debilitar a tu ejército.",
+    "chinese_traditional": "莉莉絲將運用神力，使你的軍隊陷入凋零與衰弱。",
+    "korean": "릴리스는 자신의 능력을 사용해 아군 전체를 쇠약하게 하고 전력을 약화시킵니다.",
+    "japanese": "リリスは敵の軍勢を枯れ果て、弱体化させるために力を振るう。"
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Boss_Railforged_Region4_BossBattle_3"
+  ],
+  "battleTrackNameData": "BattleMusic_SoulSavior_Children",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Lylith_Intro",
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave 1",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Support_RegenEnemies_T2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R4_Support_RegenEnemies",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Heavy_SpreadDebuffs_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Heavy_SpreadDebuffs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave 2",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Support_RegenEnemies_T2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R4_Support_RegenEnemies"
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2",
+                "requiredDifficultyTier": 2,
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Heavy_SpreadDebuffs_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Heavy_SpreadDebuffs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave 3",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Support_RegenEnemies_T2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R4_Support_RegenEnemies"
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2",
+                "requiredDifficultyTier": 3,
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Heavy_SpreadDebuffs_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Heavy_SpreadDebuffs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 Region Complete",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Support_RegenEnemies_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Support_RegenEnemies"
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Heavy_SpreadDebuffs_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Heavy_SpreadDebuffs"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "2 Regions Complete",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R4_Support_RegenEnemies_T2"
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Heavy_SpreadDebuffs_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Heavy_SpreadDebuffs"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Support_RegenEnemies_T2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R4_Support_RegenEnemies"
+              },
+              {
+                "characterData": "R4_Attacker_SweepDebuffer_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredDifficultyTier": 2,
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R4_Heavy_SpreadDebuffs_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R4_Heavy_SpreadDebuffs"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_SoulSavior_R4_Spurned_WitherbloomOnAction",
+    "hardBossCharacter": "Boss_SoulSavior_R4_Spurned_WitherbloomOnAction"
+  }
+}

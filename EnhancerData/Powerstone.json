@@ -1,0 +1,120 @@
+{
+  "id": "SpellMagicPower",
+  "name": "Powerstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-d84791f50ecf3517-f49bd05dfc351ec49b2e6a95eb514912-v2",
+    "english": "Powerstone",
+    "french": "Pierre de puissance",
+    "german": "Kraftstein",
+    "russian": "Камень мощи",
+    "portuguese": "Pedra do Poder",
+    "chinese": "魔法石",
+    "spanish": "Piedra potente",
+    "chinese_traditional": "力量石",
+    "korean": "힘의 돌",
+    "japanese": "力の石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-e8321a01ccf447d1-f49bd05dfc351ec49b2e6a95eb514912-v2",
+    "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower].",
+    "french": "Améliore un sort avec +[effect0.upgrade.bonusdamage] [magicpower].",
+    "german": "Verbessere einen Zauber mit +[effect0.upgrade.bonusdamage] [magicpower].",
+    "russian": "Улучшение чар: +[magicpower] х[effect0.upgrade.bonusdamage].",
+    "portuguese": "Melhora um feitiço com +[effect0.upgrade.bonusdamage] de [magicpower].",
+    "chinese": "升级一个法术，使其获得 +[effect0.upgrade.bonusdamage] [magicpower]。",
+    "spanish": "Mejora un hechizo con +[effect0.upgrade.bonusdamage] [magicpower].",
+    "chinese_traditional": "升級一個法術，使其獲得+[effect0.upgrade.bonusdamage][magicpower]。",
+    "korean": "주문을 업그레이드하여 +[effect0.upgrade.bonusdamage] [magicpower]이 됩니다.",
+    "japanese": "呪文アップグレード：+[effect0.upgrade.bonusdamage] [magicpower]"
+  },
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardTraitMagicPower_TooltipText",
+            "english": "Increases the amount of damage dealt and health restored by spells.",
+            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+            "chinese": "提高法术造成的伤害与恢复的生命值。",
+            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+          },
+          "titleKey": {
+            "key": "CardTraitMagicPower_TooltipTitle",
+            "english": "Magic Power",
+            "french": "Puissance magique",
+            "german": "Magische Kraft",
+            "russian": "Сила магии",
+            "portuguese": "Poder Mágico",
+            "chinese": "魔法强度",
+            "spanish": "Poder mágico",
+            "chinese_traditional": "魔法力量",
+            "korean": "마법력",
+            "japanese": "魔力"
+          }
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "Powerstone",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-1834f3ac185b2dca-29fc77bcfc5bba34fa2d52c5406ba87f-v2",
+          "english": "Powerstone",
+          "french": "Pierre de puissance",
+          "german": "Kraftstein",
+          "russian": "Камень мощи",
+          "portuguese": "Pedra do Poder",
+          "chinese": "魔法石",
+          "spanish": "Piedra potente",
+          "chinese_traditional": "力量石",
+          "korean": "힘의 돌",
+          "japanese": "力の石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-e4f6f3e89abdf735-29fc77bcfc5bba34fa2d52c5406ba87f-v2",
+          "english": "+[bonusdamage] [magicpower].",
+          "french": "+[bonusdamage] [magicpower].",
+          "german": "+[bonusdamage] [magicpower].",
+          "russian": "+[magicpower] х[bonusdamage].",
+          "portuguese": "+[bonusdamage] [magicpower].",
+          "chinese": "+[bonusdamage] [magicpower]。",
+          "spanish": "+[bonusdamage] [magicpower].",
+          "chinese_traditional": "+[bonusdamage][magicpower]。",
+          "korean": "+[bonusdamage] [magicpower].",
+          "japanese": "+[bonusdamage] [magicpower]。"
+        },
+        "filters": [
+          {
+            "id": "MagicPowerSpells",
+            "cardType": "spell",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectDamage",
+              "CardEffectHeal",
+              "CardEffectHealAndDamageRelative",
+              "CardEffectHealAndOverheal",
+              "CardEffectDamagePerSourceAttack",
+              "CardEffectDamagePerHp"
+            ]
+          },
+          {
+            "id": "ExcludedSpellsFromMagicPower",
+            "disallowedCardPools": [
+              "SpellsNotAllowedSpellPowerPool"
+            ]
+          }
+        ],
+        "bonusDamage": 10,
+        "bonusHeal": 10
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

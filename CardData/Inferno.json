@@ -1,0 +1,76 @@
+{
+  "id": "Inferno",
+  "name": "Inferno",
+  "nameKey": {
+    "key": "CardData_nameKey-a6435442acad93c1-64f8b55236b461741b1feea18f971216-v2",
+    "english": "Inferno",
+    "french": "Brasier infernal",
+    "german": "Inferno",
+    "russian": "Адское пламя",
+    "portuguese": "Conflagração",
+    "chinese": "地狱火",
+    "spanish": "Deflagración",
+    "chinese_traditional": "煉獄",
+    "korean": "지옥불",
+    "japanese": "地獄"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-ecb95717c140b89f-64f8b55236b461741b1feea18f971216-v2",
+    "english": "Deal [effect0.power] damage to all units.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à toutes les unités.",
+    "german": "Füge allen Einheiten [effect0.power] Schaden zu.",
+    "russian": "Наносит [effect0.power] урона всем бойцам.",
+    "portuguese": "Causa [effect0.power] de dano a todas as unidades.",
+    "chinese": "对所有单位造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño a todas las unidades.",
+    "chinese_traditional": "對所有單位造成[effect0.power]點傷害。",
+    "korean": "모든 유닛에 [effect0.power]만큼 피해를 줍니다.",
+    "japanese": "すべてのユニットに[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-cc5f425626cb4cf0-64f8b55236b461741b1feea18f971216-v2",
+      "english": "The Scorched Plains are known for frequent firestorms that can rain down at any moment, striking anyone unlucky enough to be caught below. This has made my travels through it particularly short.",
+      "french": "Les Plaines calcinées sont connues pour leurs fréquentes tempêtes de feu, qui peuvent se déclarer d'un instant à l'autre et s'abattent alors sur les malheureux n'ayant pas pu se mettre à l'abri. Mes expéditions y ont donc été de très courte durée.",
+      "german": "Die Verbrannten Ebenen sind bekannt für ihre häufigen Feuerstürme, die jederzeit losbrechen können und dann jeden in Schwierigkeiten bringen, der in sie hineingerät. Sie haben meine Reisen durch die Region stets stark verkürzt.",
+      "russian": "Выжженные равнины славятся своими огненными бурями, способными разразиться в любой момент и обрушиться на голову того, кому не посчастливилось оказаться внизу. Поэтому я стараюсь там не задерживаться.",
+      "portuguese": "As Planícies Devastadas são infames por suas tempestades de fogo frequentes e repentinas, acabando com a jornada de qualquer infeliz na região. Esse é o motivo de minhas viagens por lá serem breves.",
+      "chinese": "燃烧平原随时可能会降下地狱火雨，轰击所有不幸困在火雨之中的旅行者，并因此在地狱中闻名。正因如此，我尽可能短地在这个地方逗留。",
+      "spanish": "Las Llanuras Calcinadas son famosas por las frecuentes tormentas de fuego que pueden desatarse en cualquier momento, incinerando a quien quede atrapado en ellas. Esto ha limitado mucho mis viajes por la región.",
+      "chinese_traditional": "焦灼平原經常發生火災風暴，這些火災風暴隨時都可能從天而降，打擊任何不幸被困在下面的人。這使得我在那裡的旅行特別短暫。",
+      "korean": "불타는 평원은 시도 때도 없이 쏟아지는 화염 폭풍으로 유명하며, 그 폭풍에 맞을 운 나쁜 이들은 큰 피해를 입는다. 그래서 나는 이곳을 지나칠 때 유난히 빠르게 지나간다.",
+      "japanese": "焦土平原は、頻繁に炎の嵐が発生することで知られており、いつ降り注ぐかわからない火が、運悪く下にいた者を襲う。そのため、特に急いで通らなければならなかったのだ。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Spell_Awoken_Smite.prefab",
+    "m_AssetGUID": "c1ffdd3f20795fb46a210716ab0775fd"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitIgnoreArmor"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramInt": 120,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_ImpactFire_PS.prefab",
+          "m_AssetGUID": "2d1444371baed9a4e94156b585c6c64e"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "roomKeyboardDefaultTargetPos": "left",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

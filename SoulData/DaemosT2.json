@@ -1,0 +1,80 @@
+{
+  "id": "DaemosT2",
+  "name": "DaemosT2",
+  "nameKey": {
+    "key": "SoulData_nameKey-24be2db0a6c26d4d-c941c9189591fdf438076ab28b3242f5-v2",
+    "english": "Daemos II",
+    "french": "Déimos II",
+    "german": "Daemos II",
+    "russian": "Деймос II",
+    "portuguese": "Daemos II",
+    "chinese": "戴摩斯 II",
+    "spanish": "Daemos II",
+    "chinese_traditional": "惡魔II",
+    "korean": "심연의 사자 II",
+    "japanese": "デイモスII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-24160681bb3f28c1-c941c9189591fdf438076ab28b3242f5-v2",
+    "english": "Your Pyre takes an additional [effect0.power] damage from all sources and gains [revenge]: [draw] +[effect1.trigger0.effect0.power] next turn and gain +[effect1.trigger0.effect1.power] permanent [pyrehealth].",
+    "french": "Votre Brasier subit <nobr>[effect0.power] DGT</nobr> en plus de toutes les sources et gagne <nobr>[revenge] :</nobr> piochez +[effect1.trigger0.effect0.power] au prochain tour et gagnez +[effect1.trigger0.effect1.power][pyrehealth] définitivement.",
+    "german": "Deine Höllenglut erleidet zusätzlich [effect0.power] Schaden aus allen Quellen und erhält [revenge]: [draw] +[effect1.trigger0.effect0.power] im nächsten Zug und permanent +[effect1.trigger0.effect1.power] [pyrehealth].",
+    "russian": "Пекло получает +[effect1.trigger0.effect1.power][pyrehealth] навсегда, а также +[effect0.power] к урону от любых источников и [revenge]: [draw] +[effect1.trigger0.effect0.power] в следующий ход. ",
+    "portuguese": "Sua Pira recebe [effect0.power] de dano adicional de todas as fontes e recebe [revenge]: <b>Compra</b> +[effect1.trigger0.effect0.power] no próximo turno e recebe +[effect1.trigger0.effect1.power] permanente [pyrehealth].",
+    "chinese": "你的薪火受到的一切伤害额外增加 [effect0.power] 点，并获得 [revenge]：下回合 [draw] +[effect1.trigger0.effect0.power]，且获得 +[effect1.trigger0.effect1.power] 永久 [pyrehealth]。",
+    "spanish": "Tu Pira sufre un [effect0.power] de daño adicional de todas las fuentes y obtiene [revenge]: <b>Roba</b> +[effect1.trigger0.effect0.power] en el próximo turno y añade +[effect1.trigger0.effect1.power] [pyrehealth] permanentemente.",
+    "chinese_traditional": "你的薪火從所有來源額外受到[effect0.power]點傷害，並獲得[revenge]：[draw]下回合+[effect1.trigger0.effect0.power]並獲得+[effect1.trigger0.effect1.power]永久[pyrehealth]。",
+    "korean": "화로가 모든 피해로부터 [effect0.power]의 추가 피해를 받고 [revenge]을 획득합니다. 보복: 다음 턴에 [draw] +[effect1.trigger0.effect0.power]을 얻고, [pyrehealth]을 +[effect1.trigger0.effect1.power]만큼 영구적으로 부여받습니다.",
+    "japanese": "自軍の炉に対するあらゆる手段でのダメージが[effect0.power]増加し、[revenge]を得る：次のターン[draw] +[effect1.trigger0.effect0.power]。永続的に[pyrehealth] +[effect1.trigger0.effect1.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectApplyExtraPyreDamage",
+      "paramInt": 1
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_hit",
+          "effects": [
+            {
+              "effectStateName": "CardEffectDrawAdditionalNextTurn",
+              "targetMode": "room",
+              "targetTeamType": "none",
+              "paramInt": 1
+            },
+            {
+              "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
+              "targetMode": "room",
+              "targetTeamType": "none",
+              "paramInt": 1
+            }
+          ],
+          "suppressTriggerNotification": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Pyre"
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-7482cf99efb6d8d0-c941c9189591fdf438076ab28b3242f5-v2",
+      "english": "Defeat Lifemother while playing Hellhorned to upgrade.",
+      "french": "Battez Mère Nature en jouant les Cornus pour améliorer.",
+      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Höllenhörnern spielst.",
+      "russian": "Чтобы улучшить, победите Мать-природу, играя за Адских отродий.",
+      "portuguese": "Derrote a Genetriz jogando com os Endiabrados para melhorar.",
+      "chinese": "用狱魔击败生命之母以升级。",
+      "spanish": "Derrota a la Madre Vida con los Astados Infernales para mejorar.",
+      "chinese_traditional": "遊玩獄魔時擊敗生命之母以升級。",
+      "korean": "지옥뿔 군단 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
+      "japanese": "獄角族でのプレイでライフマザーを倒してアップグレード。"
+    },
+    "unlockCondition": "soul_kill_lifemother_using_hellhorned",
+    "paramInt": 1
+  },
+  "tierLevel": 2,
+  "nextTier": "DaemosT3"
+}

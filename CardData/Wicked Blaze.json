@@ -1,0 +1,88 @@
+{
+  "id": "WickedBlaze",
+  "name": "Wicked Blaze",
+  "nameKey": {
+    "key": "CardData_nameKey-81ee622014106d81-b7525edaccf109a469ab7c44b8236492-v2",
+    "english": "Wicked Blaze",
+    "french": "Flambée diabolique",
+    "german": "Lodernde Dochte",
+    "russian": "Нечестивое пламя",
+    "portuguese": "Pavio Curto",
+    "chinese": "烛芯速燃",
+    "spanish": "Llama voraz",
+    "chinese_traditional": "邪惡烈火",
+    "korean": "불붙은 심지",
+    "japanese": "献身の炎"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-1c65956097db2483-b7525edaccf109a469ab7c44b8236492-v2",
+    "english": "[raise] a unit and apply +10[attack].",
+    "french": "<b>Reforme</b> une unité et confère +10[attack].",
+    "german": "[raise] für eine Einheit und wende +10[attack] an.",
+    "russian": "[raise] и усиление бойца на +10[attack].",
+    "portuguese": "<b>Renova</b> uma unidade e aplica +10[attack].",
+    "chinese": "[raise]一个单位并使其获得 +10[attack]。",
+    "spanish": "<b>Reforma</b> a una unidad y añade +10[attack].",
+    "chinese_traditional": "[raise]一個單位並施加+10[attack]。",
+    "korean": "유닛을 [raise]하고 +10[attack]을 부여합니다.",
+    "japanese": "ユニットを[raise]し、+10[attack]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-b35ae9312642710b-b7525edaccf109a469ab7c44b8236492-v2",
+      "english": "Though not entirely under their control, the burning of a Waxer’s wick can accelerate with a great deal of focus and help from other Waxers. The resulting melting wax is then collected and donated to reform one of their kin.",
+      "french": "Bien qu'il ne puisse pas entièrement la contrôler, un cireux est capable d'accélérer la vitesse de consumation de sa mèche en se concentrant intensément et avec l'aide d'autres cireux. La cire fondue qui en résulte est alors collectée et utilisée pour reformer l'un de ses pairs.",
+      "german": "Die Flamme eines Wachsers ist zwar nicht vollständig kontrollierbar, aber die Verbrennung kann durch äußerste Konzentration und die Hilfe anderer Wachser beschleunigt werden. Das dabei schmelzende Wachs wird dann gesammelt und gespendet, um einen neuen Wachser hervorzubringen.",
+      "russian": "Хотя это и не до конца контролируемый процесс, но фитиль Восковика можно заставить гореть быстрее за счет силы воли и помощи других Восковиков. Полученный в результате расплавленный воск можно собрать и использовать для переплавки одного из их сородичей.",
+      "portuguese": "Embora não esteja completamente sob seu controle, a queima do pavio de um Céreo pode ser agilizada significativamente, desde que o interessado se concentre muito e receba ajuda de outros Céreos. A cera derretida gerada no processo é então coletada e doada para renovar outro ser de sua espécie.",
+      "chinese": "虽然烛人无法完全控制烛芯的燃烧速度，但当它们集中精神，同时有其他烛人帮忙的情况下，它们可以加快烛芯的燃烧速度。最后，它们会将熔化的蜡油收集到一起，捐赠出去，重塑别的族人。",
+      "spanish": "Aunque no está totalmente bajo su control, la mecha de un encerado puede consumirse más rápido con mucha concentración y la ayuda de otros encerados. Después, la cera derretida se recolecta y se dona para la reformación de otro de los suyos.",
+      "chinese_traditional": "儘管這種行為不完全可控，但只要極度專注並獲得其他蠟像的援助，就能加快燃燒蠟像燈芯的速度。接著，我們收集他人捐贈、熔化的蠟，藉此重塑對方的親屬。",
+      "korean": "완벽하게 통제할 수 있는 것은 아니지만, 막대한 집중력과 다른 밀랍 인간들의 도움을 받으면 심지를 빠르게 태울 수 있다. 이 과정에서 녹은 밀랍은 수거되어 동족의 재탄을 위한 재료로 기부된다.",
+      "japanese": "完全に制御できるわけではないが、ワクサーの芯の燃焼は、集中力と他のワクサーの助力によって加速させることができる。その結果として溶けた蝋は集められ、同族を蘇生させるために寄付される。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_WickedBlaze.prefab",
+    "m_AssetGUID": "4820cb4359825cc47879fb26efbbd0a9"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitShowCardTargets"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectRecursion",
+      "targetMode": "exhaust",
+      "targetCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "RaisePlusWickedBlaze",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "ephemeral",
+            "count": 1
+          }
+        ],
+        "bonusDamage": 15,
+        "bonusHP": 5,
+        "costReduction": 99
+      },
+      "paramInt": 1,
+      "additionalParamInt": 19,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Buff_Attack_PS.prefab",
+          "m_AssetGUID": "75491630f33039343baa202d7f6f7a30"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Andrew Vera"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "PricklyPuffball",
+  "name": "Prickly Puffball",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_PricklyPuffball.prefab",
+    "m_AssetGUID": "c2474f0ab84982340bc4d85abdddba0e"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterPricklyPuffball",
+        "nameKey": {
+          "key": "CharacterData_nameKey-6e16a2a2c893ff54-443692d37a7b7764b95ac152e679dff6-v2",
+          "english": "Prickly Puffball",
+          "french": "Lycoperdon perlé",
+          "german": "Stachelkugel",
+          "russian": "Колючий дождевик",
+          "portuguese": "Licoperdo Espinhoso",
+          "chinese": "多刺尘菌",
+          "spanish": "Diseminador espinoso",
+          "chinese_traditional": "多刺泡芙球",
+          "korean": "가시말불버섯",
+          "japanese": "プリクリー・パフボール"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-d516b9458c7d7b74-443692d37a7b7764b95ac152e679dff6-v2",
+            "english": "Although they do not possess much dangerous strength, they are hard to defeat as the Puffballs were born and raised on the burls of the Fatal Elm itself.",
+            "french": "Les Lycoperdons ont beau ne pas être très forts, ils n'en restent pas moins difficiles à vaincre, car ils sont nés et ont poussé sur les nœuds de l'Orme funeste lui-même.",
+            "german": "Obwohl sie über wenig gefährliche Kraft verfügen, sind die Stachelkugeln schwierig zu besiegen. Immerhin sind sie auf den Trieben der Schicksalsulme aufgewachsen.",
+            "russian": "Дождевики не обладают смертоносной мощью, но победить их довольно сложно, ведь они растут на корнях самого Рокового Вяза.",
+            "portuguese": "Embora não tenham uma força muito perigosa, são difíceis de derrotar, pois os Licoperdos nasceram e cresceram nas hastes do próprio Ulmeiro Mortal.",
+            "chinese": "这种尘菌虽然没有太多危险的力量，却很难被打败，因为它们是在致命榆树的树瘤上出生并长大的。",
+            "spanish": "Aunque no cuentan con mucha fuerza, son difíciles de derrotar, ya que los esporangios nacen de los nudos del propio Olmo Fatal.",
+            "chinese_traditional": "雖然泡芙球不具備多少危險的力量，但泡芙球卻很難打敗，因為他們生長在致命榆樹的瘤上，並在那裡長大。",
+            "korean": "이들은 강한 힘을 지니지 않지만, 운명의 느릅나무 껍질에서 태어나고 자란 말불버섯은 물리치기 매우 어렵다.",
+            "japanese": "パフボールはそれほど危険な力を持っていないが、宿命の樹の節で生まれ育っているため、倒すのは困難だ。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PricklyPuffball.prefab",
+          "m_AssetGUID": "b37323c5863abe44b8d14a0256e283a4"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-a8b9d353486804f0-443692d37a7b7764b95ac152e679dff6-v2",
+              "english": "Apply [decay] [effect0.status0.power] to the attacker.",
+              "french": "Inflige [decay] [effect0.status0.power] à l'attaquant.",
+              "german": "Wende [decay] [effect0.status0.power] auf den Angreifer an.",
+              "russian": "Накладывает на атакующего [decay] х[effect0.status0.power].",
+              "portuguese": "Aplica [decay] [effect0.status0.power] ao atacante.",
+              "chinese": "对攻击者施加 [decay] [effect0.status0.power]。",
+              "spanish": "Añade [decay] [effect0.status0.power] al atacante.",
+              "chinese_traditional": "對攻擊者施加[decay][effect0.status0.power]。",
+              "korean": "공격자에 [decay] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "攻撃者に[decay] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_hit",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "last_attacker_character",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "decay",
+                    "count": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 35,
+        "ascendsTrainAutomatically": false,
+        "attackDamage": 0,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Shroom"
+        ],
+        "characterChatterData": "UnderlegionShroomMaleChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Leonardo Dionisi"
+}

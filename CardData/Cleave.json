@@ -1,0 +1,87 @@
+{
+  "id": "Cleave",
+  "name": "Cleave",
+  "nameKey": {
+    "key": "CardData_nameKey-d21a4e06580458c0-03f5206f789c8e840aacd4985c1b0e36-v2",
+    "english": "Cleave",
+    "french": "Tranchage",
+    "german": "Spalten",
+    "russian": "Рассечение",
+    "portuguese": "Cutilada",
+    "chinese": "顺劈",
+    "spanish": "Seccionar",
+    "chinese_traditional": "劈砍",
+    "korean": "가르기",
+    "japanese": "切り裂き"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-fdfcd3535adea000-03f5206f789c8e840aacd4985c1b0e36-v2",
+    "english": "Deal damage to enemy units equal to [attack] of the front friendly unit.",
+    "french": "Inflige des dégâts aux unités ennemies valant l'[attack] de l'allié en 1re ligne.",
+    "german": "Füge gegnerischen Einheiten Schaden in Höhe des [attack] der vordersten verbündeten Einheit zu.",
+    "russian": "Наносит вражеским бойцам урон, равный [attack] переднего союзника.",
+    "portuguese": "Causa dano às unidades inimigas igual ao [attack] da unidade aliada na frente.",
+    "chinese": "对敌方单位造成等于前排友方单位[attack]的伤害。",
+    "spanish": "Inflige tanto daño a las unidades enemigas como el [attack] de la primera unidad aliada.",
+    "chinese_traditional": "對敵方單位造成等於前排友方單位[attack]的傷害。",
+    "korean": "적 유닛들에게 전열 아군 유닛의 [attack] 만큼 피해를 줍니다.",
+    "japanese": "敵ユニットに前列の味方ユニットの[attack]に等しいダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-fd9681f690752548-03f5206f789c8e840aacd4985c1b0e36-v2",
+      "english": "“Although my brother taught me that strength is in dominion, the Banished proved that true might is in our unity.”",
+      "french": "<nobr>« Si</nobr> mon frère m'a appris que la force réside dans la domination, les Bannis ont prouvé que la véritable puissance se trouve dans <nobr>l'unité. »</nobr>",
+      "german": "„Obwohl mein Bruder mich gelehrt hat, dass Stärke in der Herrschaft liegt, haben die Verbannten bewiesen, dass unsere Einheit wahre Macht bedeutet.“",
+      "russian": "«Хотя брат учил меня, что сила в господстве, Изгнанники доказали, что истинная мощь — это наше единство».",
+      "portuguese": "“Embora meu irmão tenha me ensinado que a força está no domínio, os Expurgados provaram que o verdadeiro poder está na união.”",
+      "chinese": "“虽然我的哥哥曾经教我，力量来自支配，但流放者证明了，真正的力量来自团结。”",
+      "spanish": "«Aunque mi hermano me enseñó que la fuerza reside en el control, los Desterrados hemos demostrado que la verdadera fuerza está en la unidad».",
+      "chinese_traditional": "「雖然我哥哥教導我力量源於統治與征服，但流放者證明了真正的力量源於我們的團結。」",
+      "korean": "“형제는 힘이 곧 지배의 원천이라고 이야기했지만, 추방자들은 단결을 통해 진정한 힘을 발휘할 수 있음을 증명했다.”",
+      "japanese": "「兄は私に強さとは支配力にあると説いたが、脱天使たちは真の力とは団結にあることを証明した。」"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Cleave.prefab",
+    "m_AssetGUID": "14fd4bf15f16c3648aede89948a0500e"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddDamage",
+      "paramTrackedValue": "magic_power_in_target_room",
+      "paramInt": 1,
+      "paramBool": true,
+      "traitIsRemovable": false,
+      "paramTeamType": "monsters"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectNULL",
+      "targetMode": "front_in_room",
+      "targetTeamType": "monsters",
+      "additionalParamInt": 1,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Banished/Cleave/FX_Cleave.prefab",
+          "m_AssetGUID": "9cb5e5c5065630444a56df37572acec0"
+        },
+        "spawnLocation": "room_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamagePerSourceAttack",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramInt": 1,
+      "paramBool": true
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

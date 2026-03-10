@@ -1,0 +1,55 @@
+{
+  "id": "PyreHeartDominion_ArtifactData",
+  "name": "PyreHeartDominion_ArtifactData",
+  "descriptionKey": {
+    "key": "PyreArtifactData_descriptionKey-2e6595be2a03a235-632d64af8df655c478596542e81c6743-v2",
+    "english": "Remove Train Stewards and starting cards. Immediately draft four packs, and double each card picked.",
+    "french": "Retirez les stewards et les cartes de départ. Draftez immédiatement quatre packs et doublez chaque carte choisie.",
+    "german": "Entferne Zugbegleiter und Startkarten. Ziehe sofort vier Packungen und verdopple jede Karte.",
+    "russian": "Нет стюардов и стартовых карт. Сразу запускаются четыре драфта подряд, и каждая выбранная карта дублируется.",
+    "portuguese": "Remova os Guardas do Trem e as cartas iniciais. Escolha imediatamente quatro pacotes e duplique cada carta escolhida.",
+    "chinese": "移除乘务员和初始卡牌。立刻获取四个自选卡包，并双倍获取挑选的卡牌。",
+    "spanish": "Elimina Auxiliares de tren y cartas iniciales. Abre de inmediato cuatro sobres y duplica cada carta elegida.",
+    "chinese_traditional": "移除列車服務員和初始卡牌。立即構築四個卡包，並且每張選中的卡牌複製一張。",
+    "korean": "열차 잡부와 시작 카드를 제거합니다. 즉시 4개의 카드 팩을 드래프트하고, 선택한 카드 수가 두 배로 증가합니다.",
+    "japanese": "トレイン・スチュワードと開始カードを取り除く。即座にパックを4つドラフトし、選択したカードをそれぞれ2倍にする。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectPurgeStarterDeckMatchingFilter",
+      "paramCardFilter": {
+        "id": "OnlyStarterCards",
+        "allowedCardPools": [
+          "StarterCardsOnly"
+        ]
+      },
+      "paramCardFilterSecondary": {
+        "id": "OnlyStewards",
+        "cardType": "monster",
+        "requiredSubtypesOperator": "and",
+        "requiredSubtypes": [
+          "SubtypesData_TrainSteward"
+        ]
+      }
+    },
+    {
+      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
+      "paramGrantableReward": "CardDraftMainClassUncommonReward2x"
+    },
+    {
+      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
+      "paramGrantableReward": "CardDraftSubClassUncommonReward2x",
+      "notificationSuppressed": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
+      "paramGrantableReward": "CardDraftMainClassBannerReward2x",
+      "notificationSuppressed": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
+      "paramGrantableReward": "CardDraftSubClassBannerReward2x",
+      "notificationSuppressed": true
+    }
+  ]
+}

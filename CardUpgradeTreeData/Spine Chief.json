@@ -1,0 +1,681 @@
+{
+  "id": "UpgradeTreeWurm1",
+  "name": "Spine Chief",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "Wurm1ShardbiteOnCorruption",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-fc5ee2eba750a273-aa8dca303d088f94a8d19d02e26f9898-v2",
+            "english": "The Decayer",
+            "french": "Le Désintégreur",
+            "german": "Verweser",
+            "russian": "Разлагатель",
+            "portuguese": "O Decadente",
+            "chinese": "腐朽者",
+            "spanish": "El Erosionador",
+            "chinese_traditional": "衰敗者",
+            "korean": "부패자",
+            "japanese": "ディケイヤー"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-ebdceec5731af8ef-aa8dca303d088f94a8d19d02e26f9898-v2",
+                "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
+                "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
+                "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
+                "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
+                "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "corruption_added",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "corrupt_poison",
+                      "count": 2
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_RoomCorruption_Body",
+                        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_RoomCorruption_Title",
+                        "english": "Charged Echoes",
+                        "french": "Échos chargés",
+                        "german": "Geladene Echos",
+                        "russian": "Заряженные эхо",
+                        "portuguese": "Ecos Carregados",
+                        "chinese": "充能的回响水晶",
+                        "spanish": "Ecos cargados",
+                        "chinese_traditional": "充能回響",
+                        "korean": "충전된 메아리",
+                        "japanese": "活性の残響"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 30
+        },
+        {
+          "id": "Wurm1ShardbiteOnCorruption2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-72ea6d17f1bdf97f-32c8fcccac244e348921a919f9567259-v2",
+            "english": "The Decayer II",
+            "french": "Le Désintégreur II",
+            "german": "Verweser II",
+            "russian": "Разлагатель II",
+            "portuguese": "O Decadente II",
+            "chinese": "腐朽者 II",
+            "spanish": "El Erosionador II",
+            "chinese_traditional": "衰敗者II",
+            "korean": "부패자 II",
+            "japanese": "ディケイヤーII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-874a3bbdbdb42aa7-32c8fcccac244e348921a919f9567259-v2",
+                "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
+                "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
+                "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
+                "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
+                "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "corruption_added",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "corrupt_poison",
+                      "count": 3
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_RoomCorruption_Body",
+                        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_RoomCorruption_Title",
+                        "english": "Charged Echoes",
+                        "french": "Échos chargés",
+                        "german": "Geladene Echos",
+                        "russian": "Заряженные эхо",
+                        "portuguese": "Ecos Carregados",
+                        "chinese": "充能的回响水晶",
+                        "spanish": "Ecos cargados",
+                        "chinese_traditional": "充能回響",
+                        "korean": "충전된 메아리",
+                        "japanese": "活性の残響"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 25,
+          "bonusHP": 70
+        },
+        {
+          "id": "Wurm1ShardbiteOnCorruption3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e2668fdb3e32c4bb-2e0d066f59f7d0542820f6704eea072f-v2",
+            "english": "The Decayer III",
+            "french": "Le Désintégreur III",
+            "german": "Verweser III",
+            "russian": "Разлагатель III",
+            "portuguese": "O Decadente III",
+            "chinese": "腐朽者 III",
+            "spanish": "El Erosionador III",
+            "chinese_traditional": "衰敗者III",
+            "korean": "부패자 III",
+            "japanese": "ディケイヤーIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-881d897c26a83a64-2e0d066f59f7d0542820f6704eea072f-v2",
+                "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
+                "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
+                "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
+                "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
+                "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
+                "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
+                "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
+                "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
+                "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
+                "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
+              },
+              "trigger": "corruption_added",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "corrupt_poison",
+                      "count": 4
+                    }
+                  ],
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_RoomCorruption_Body",
+                        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_RoomCorruption_Title",
+                        "english": "Charged Echoes",
+                        "french": "Échos chargés",
+                        "german": "Geladene Echos",
+                        "russian": "Заряженные эхо",
+                        "portuguese": "Ecos Carregados",
+                        "chinese": "充能的回响水晶",
+                        "spanish": "Ecos cargados",
+                        "chinese_traditional": "充能回響",
+                        "korean": "충전된 메아리",
+                        "japanese": "活性の残響"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 35,
+          "bonusHP": 100
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Wurm1DamagePerCorruption",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-01dd640070aa70aa-9b4fcc15d1166f24f8b4febd81678bb4-v2",
+            "english": "The Corruptor",
+            "french": "Le Corrupteur",
+            "german": "Verderber I",
+            "russian": "Осквернитель",
+            "portuguese": "O Corruptor",
+            "chinese": "腐化者",
+            "spanish": "El Corruptor",
+            "chinese_traditional": "腐化者",
+            "korean": "타락자",
+            "japanese": "コラプター"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-5aeaf50ab31c6d6d-9b4fcc15d1166f24f8b4febd81678bb4-v2",
+                "english": "Friendly units have +[paramint][attack] per [corrupt].",
+                "french": "Les alliés gagnent +[paramint][attack] par [corrupt].",
+                "german": "Verbündete Einheiten haben +[paramint][attack] pro [corrupt].",
+                "russian": "Союзники получают: +[paramint][attack] за [corrupt].",
+                "portuguese": "Unidades aliadas recebem +[paramint][attack] por [corrupt].",
+                "chinese": "每点 [corrupt] 使友方单位获得 +[paramint][attack]。",
+                "spanish": "Las unidades aliadas tienen +[paramint][attack] por cada [corrupt].",
+                "chinese_traditional": "友方單位每[corrupt]獲得+[paramint][attack]。",
+                "korean": "[corrupt]당 아군 유닛들이 +[paramint][attack]을 얻습니다.",
+                "japanese": "味方ユニットが[corrupt]1つにつき+[paramint][attack]を得る。"
+              },
+              "extraTooltipBodyKey": {
+                "key": "HudTooltip_RoomCorruption_Body",
+                "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+              },
+              "extraTooltipTitleKey": {
+                "key": "HudTooltip_RoomCorruption_Title",
+                "english": "Charged Echoes",
+                "french": "Échos chargés",
+                "german": "Geladene Echos",
+                "russian": "Заряженные эхо",
+                "portuguese": "Ecos Carregados",
+                "chinese": "充能的回响水晶",
+                "spanish": "Ecos cargados",
+                "chinese_traditional": "充能回響",
+                "korean": "충전된 메아리",
+                "japanese": "活性の残響"
+              },
+              "roomStateModifierClassName": "RoomStateFriendlyDamagePerCorruptionModifier",
+              "paramInt": 5
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 20
+        },
+        {
+          "id": "Wurm1DamagePerCorruption2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-cff984c842c4f222-44f2d249aef8b8d49ba0fcbb0096941a-v2",
+            "english": "The Corruptor II",
+            "french": "Le Corrupteur II",
+            "german": "Verderber II",
+            "russian": "Осквернитель II",
+            "portuguese": "O Corruptor II",
+            "chinese": "腐化者 II",
+            "spanish": "El Corruptor II",
+            "chinese_traditional": "腐化者II",
+            "korean": "타락자 II",
+            "japanese": "コラプターII"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-6a2480d41b0b7329-44f2d249aef8b8d49ba0fcbb0096941a-v2",
+                "english": "Friendly units have +[paramint][attack] per [corrupt].",
+                "french": "Les alliés gagnent +[paramint][attack] par [corrupt].",
+                "german": "Verbündete Einheiten haben +[paramint][attack] pro [corrupt].",
+                "russian": "Союзники получают: +[paramint][attack] за [corrupt].",
+                "portuguese": "Unidades aliadas recebem +[paramint][attack] por [corrupt].",
+                "chinese": "每点 [corrupt] 使友方单位获得 +[paramint][attack]。",
+                "spanish": "Las unidades aliadas tienen +[paramint][attack] por cada [corrupt].",
+                "chinese_traditional": "友方單位每[corrupt]獲得+[paramint][attack]。",
+                "korean": "[corrupt]당 아군 유닛들이 +[paramint][attack]을 얻습니다.",
+                "japanese": "味方ユニットが[corrupt]1つにつき+[paramint][attack]を得る。"
+              },
+              "extraTooltipBodyKey": {
+                "key": "HudTooltip_RoomCorruption_Body",
+                "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+              },
+              "extraTooltipTitleKey": {
+                "key": "HudTooltip_RoomCorruption_Title",
+                "english": "Charged Echoes",
+                "french": "Échos chargés",
+                "german": "Geladene Echos",
+                "russian": "Заряженные эхо",
+                "portuguese": "Ecos Carregados",
+                "chinese": "充能的回响水晶",
+                "spanish": "Ecos cargados",
+                "chinese_traditional": "充能回響",
+                "korean": "충전된 메아리",
+                "japanese": "活性の残響"
+              },
+              "roomStateModifierClassName": "RoomStateFriendlyDamagePerCorruptionModifier",
+              "paramInt": 10
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 50
+        },
+        {
+          "id": "Wurm1DamagePerCorruption3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e808b799000264ba-78d6f3b1658e96242aec3005e90e0ea1-v2",
+            "english": "The Corruptor III",
+            "french": "Le Corrupteur III",
+            "german": "Verderber III",
+            "russian": "Осквернитель III",
+            "portuguese": "O Corruptor III",
+            "chinese": "腐化者 III",
+            "spanish": "El Corruptor III",
+            "chinese_traditional": "腐化者III",
+            "korean": "타락자 III",
+            "japanese": "コラプターIII"
+          },
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-91ec8733dece48c0-78d6f3b1658e96242aec3005e90e0ea1-v2",
+                "english": "Friendly units have +[paramint][attack] per [corrupt].",
+                "french": "Les alliés gagnent +[paramint][attack] par [corrupt].",
+                "german": "Verbündete Einheiten haben +[paramint][attack] pro [corrupt].",
+                "russian": "Союзники получают: +[paramint][attack] за [corrupt].",
+                "portuguese": "Unidades aliadas recebem +[paramint][attack] por [corrupt].",
+                "chinese": "每点 [corrupt] 使友方单位获得 +[paramint][attack]。",
+                "spanish": "Las unidades aliadas tienen +[paramint][attack] por cada [corrupt].",
+                "chinese_traditional": "友方單位每[corrupt]獲得+[paramint][attack]。",
+                "korean": "[corrupt]당 아군 유닛들이 +[paramint][attack]을 얻습니다.",
+                "japanese": "味方ユニットが[corrupt]1つにつき+[paramint][attack]を得る。"
+              },
+              "extraTooltipBodyKey": {
+                "key": "HudTooltip_RoomCorruption_Body",
+                "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+              },
+              "extraTooltipTitleKey": {
+                "key": "HudTooltip_RoomCorruption_Title",
+                "english": "Charged Echoes",
+                "french": "Échos chargés",
+                "german": "Geladene Echos",
+                "russian": "Заряженные эхо",
+                "portuguese": "Ecos Carregados",
+                "chinese": "充能的回响水晶",
+                "spanish": "Ecos cargados",
+                "chinese_traditional": "充能回響",
+                "korean": "충전된 메아리",
+                "japanese": "活性の残響"
+              },
+              "roomStateModifierClassName": "RoomStateFriendlyDamagePerCorruptionModifier",
+              "paramInt": 15
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 90
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Wurm1StrikeAddCorruption",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-abdb3a52c81517db-ba587d28d95acb5498a6cc63d60774dc-v2",
+            "english": "The Infector",
+            "french": "Le Contaminant",
+            "german": "Infizierer",
+            "russian": "Заразитель",
+            "portuguese": "Contaminador",
+            "chinese": "感染者",
+            "spanish": "El Infectivo",
+            "chinese_traditional": "感染者",
+            "korean": "감염자",
+            "japanese": "インフェクター"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-24c19ece6755ad3b-ba587d28d95acb5498a6cc63d60774dc-v2",
+                "english": "Gain [effect0.power][corrupt].",
+                "french": "Octroie [effect0.power][corrupt].",
+                "german": "Erhalte [effect0.power][corrupt].",
+                "russian": "Дает [effect0.power][corrupt].",
+                "portuguese": "Recebe [effect0.power][corrupt].",
+                "chinese": "获得 [effect0.power][corrupt]。",
+                "spanish": "Añade [effect0.power][corrupt].",
+                "chinese_traditional": "獲得[effect0.power][corrupt]。",
+                "korean": "[effect0.power][corrupt]을 획득합니다.",
+                "japanese": "[effect0.power][corrupt]を得る。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustCorruption",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_RoomCorruption_Body",
+                        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_RoomCorruption_Title",
+                        "english": "Charged Echoes",
+                        "french": "Échos chargés",
+                        "german": "Geladene Echos",
+                        "russian": "Заряженные эхо",
+                        "portuguese": "Ecos Carregados",
+                        "chinese": "充能的回响水晶",
+                        "spanish": "Ecos cargados",
+                        "chinese_traditional": "充能回響",
+                        "korean": "충전된 메아리",
+                        "japanese": "活性の残響"
+                      }
+                    }
+                  ],
+                  "paramInt": 1,
+                  "paramBool": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 25
+        },
+        {
+          "id": "Wurm1StrikeAddCorruption2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-4ff23fee5cd1f1aa-621259f1e25d8d6458fc58f7287d9cc5-v2",
+            "english": "The Infector II",
+            "french": "Le Contaminant II",
+            "german": "Infizierer II",
+            "russian": "Заразитель II",
+            "portuguese": "Contaminador II",
+            "chinese": "感染者 II",
+            "spanish": "El Infectivo II",
+            "chinese_traditional": "感染者II",
+            "korean": "감염자 II",
+            "japanese": "インフェクターII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-9aaf6ab8beb62e7b-621259f1e25d8d6458fc58f7287d9cc5-v2",
+                "english": "Gain [effect0.power][corrupt].",
+                "french": "Octroie [effect0.power][corrupt].",
+                "german": "Erhalte [effect0.power][corrupt].",
+                "russian": "Дает [effect0.power][corrupt].",
+                "portuguese": "Recebe [effect0.power][corrupt].",
+                "chinese": "获得 [effect0.power][corrupt]。",
+                "spanish": "Añade [effect0.power][corrupt].",
+                "chinese_traditional": "獲得[effect0.power][corrupt]。",
+                "korean": "[effect0.power][corrupt]을 획득합니다.",
+                "japanese": "[effect0.power][corrupt]を得る。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustCorruption",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_RoomCorruption_Body",
+                        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_RoomCorruption_Title",
+                        "english": "Charged Echoes",
+                        "french": "Échos chargés",
+                        "german": "Geladene Echos",
+                        "russian": "Заряженные эхо",
+                        "portuguese": "Ecos Carregados",
+                        "chinese": "充能的回响水晶",
+                        "spanish": "Ecos cargados",
+                        "chinese_traditional": "充能回響",
+                        "korean": "충전된 메아리",
+                        "japanese": "活性の残響"
+                      }
+                    }
+                  ],
+                  "paramInt": 1,
+                  "paramBool": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 60
+        },
+        {
+          "id": "Wurm1StrikeAddCorruption3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-17a70f3e1d8893e5-87d5d296b0a960340a0eaad75570036b-v2",
+            "english": "The Infector III",
+            "french": "Le Contaminant III",
+            "german": "Infizierer III",
+            "russian": "Заразитель III",
+            "portuguese": "Contaminador III",
+            "chinese": "感染者 III",
+            "spanish": "El Infectivo III",
+            "chinese_traditional": "感染者III",
+            "korean": "감염자 III",
+            "japanese": "インフェクターIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "multistrike",
+              "count": 3
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-f4baf231bfaeda9e-87d5d296b0a960340a0eaad75570036b-v2",
+                "english": "Gain [effect0.power][corrupt].",
+                "french": "Octroie [effect0.power][corrupt].",
+                "german": "Erhalte [effect0.power][corrupt].",
+                "russian": "Дает [effect0.power][corrupt].",
+                "portuguese": "Recebe [effect0.power][corrupt].",
+                "chinese": "获得 [effect0.power][corrupt]。",
+                "spanish": "Añade [effect0.power][corrupt].",
+                "chinese_traditional": "獲得[effect0.power][corrupt]。",
+                "korean": "[effect0.power][corrupt]을 획득합니다.",
+                "japanese": "[effect0.power][corrupt]を得る。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAdjustCorruption",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "HudTooltip_RoomCorruption_Body",
+                        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+                        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+                        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+                        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+                        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+                        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+                        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+                        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+                        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+                        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+                      },
+                      "titleKey": {
+                        "key": "HudTooltip_RoomCorruption_Title",
+                        "english": "Charged Echoes",
+                        "french": "Échos chargés",
+                        "german": "Geladene Echos",
+                        "russian": "Заряженные эхо",
+                        "portuguese": "Ecos Carregados",
+                        "chinese": "充能的回响水晶",
+                        "spanish": "Ecos cargados",
+                        "chinese_traditional": "充能回響",
+                        "korean": "충전된 메아리",
+                        "japanese": "活性の残響"
+                      }
+                    }
+                  ],
+                  "paramInt": 1,
+                  "paramBool": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 90
+        }
+      ]
+    }
+  ]
+}

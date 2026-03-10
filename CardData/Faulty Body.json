@@ -1,0 +1,86 @@
+{
+  "id": "FaultyBody",
+  "name": "Faulty Body",
+  "nameKey": {
+    "key": "CardData_nameKey-899b774d89ec20d0-3b2904da381900047ae1c87ffc3449e8-v2",
+    "english": "Faulty Body",
+    "french": "Corps fragile",
+    "german": "Fehlerhafter Körper",
+    "russian": "Бренное тело",
+    "portuguese": "Corpo Defeituoso",
+    "chinese": "劣质躯体",
+    "spanish": "Cuerpo defectuoso",
+    "chinese_traditional": "缺陷軀體",
+    "korean": "불완전한 육체",
+    "japanese": "不完全な身体"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-76cef0e9d7697f89-3b2904da381900047ae1c87ffc3449e8-v2",
+    "english": "Apply [fragile] and [spikes] [effect1.status0.power] to a friendly unit.",
+    "french": "Confère [fragile] et [spikes] [effect1.status0.power] à un allié.",
+    "german": "Wende [fragile] und [spikes] [effect1.status0.power] auf eine verbündete Einheit an.",
+    "russian": "Накладывает на союзника [fragile] и [spikes] х[effect1.status0.power].",
+    "portuguese": "Aplica [fragile] e [spikes] [effect1.status0.power] a uma unidade aliada.",
+    "chinese": "对一个友方单位施加[fragile]和[spikes] [effect1.status0.power]。",
+    "spanish": "Añade [fragile] y [spikes] [effect1.status0.power] a una unidad aliada.",
+    "chinese_traditional": "對一個友方單位施加[fragile]和[spikes][effect1.status0.power]。",
+    "korean": "아군 유닛에게 [fragile] 및 [spikes] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "味方ユニットに[fragile]と[spikes] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-b71be0e6e72a6520-3b2904da381900047ae1c87ffc3449e8-v2",
+      "english": "“Poor Baron, he found a way to strengthen his love’s frail body but, just as beryllium is strong yet fragile, so too became Inga.”\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« Pauvre</nobr> Baron. Il avait trouvé un moyen de renforcer le corps délicat de son amour, mais le béryllium étant une matière à la fois dure et fragile, Inga l'est devenue <nobr>aussi. »</nobr> \n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Armer Baron. Er fand einen Weg, den schwachen Körper seiner großen Liebe zu stärken – aber so wie Beryllium stark und doch zerbrechlich ist, war das auch Ingas Schicksal.“\n– aus Dr. Orechis Notizbuch",
+      "russian": "«Бедный барон... нашел способ укрепить слабое тело своей возлюбленной Инги, но оно стало словно бериллий: прочным и хрупким одновременно».\n— Из записной книжки Оречи",
+      "portuguese": "“Pobre Barão, ele encontrou uma maneira de fortalecer o corpo frágil do seu amor. Infelizmente, assim como o berílio é forte, porém frágil, o mesmo aconteceu com Inga.”\n— Anotação do Dr. Orechi",
+      "chinese": "“可怜的男爵，他想出了强化爱人那虚弱身体的办法，可是，英伽变得像铍一样刚而易折。”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«Pobre barón. Encontró la forma de reforzar el cuerpo frágil de su amada, pero el cuerpo de Inga acabó volviéndose fuerte y quebradizo, como el berilio».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「可憐的男爵，他找到了一種方法來增強他愛人脆弱的身體，但就像鈹一樣堅固而易碎，英格也變得如此。」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“남작도 참 불쌍하군. 사랑하는 연인의 연약한 육체를 강하게 만들 방법을 찾아냈지만, 강하면서도 깨지기 쉬운 베릴륨처럼 잉가도 결국 같은 운명을 맞이하게 되었으니.”\n- 오레치 박사의 기록",
+      "japanese": "「哀れな男爵。愛する者の弱い体を強くする方法を見つけたはいいが、ベリリウムが強く、同時に脆いのと同じように、インガも脆くなってしまったのだな」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_FaultyBody.prefab",
+    "m_AssetGUID": "05cf0489a65c34c4b8a7f630be10fc7b"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "fragile",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "spikes",
+          "count": 40
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 9,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Mikhail Cang / Additional: Genevive Bega"
+}

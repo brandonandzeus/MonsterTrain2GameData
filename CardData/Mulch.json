@@ -1,0 +1,75 @@
+{
+  "id": "Mulch",
+  "name": "Mulch",
+  "nameKey": {
+    "key": "CardData_nameKey-35d86dce5845042f-b62409073774ad8489a40cc60af2d58c-v2",
+    "english": "Mulch",
+    "french": "Substrat",
+    "german": "Mulch",
+    "russian": "Мульча",
+    "portuguese": "Cobertura Vegetal",
+    "chinese": "盖土",
+    "spanish": "Mantillo",
+    "chinese_traditional": "覆蓋物",
+    "korean": "뿌리 덮개",
+    "japanese": "腐葉土"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7d23e7781907d392-b62409073774ad8489a40cc60af2d58c-v2",
+    "english": "Draw +[effect0.power] next turn. For every [trait1.tertiarypower] cards in your deck, draw +[trait1.power] more.",
+    "french": "Piochez <nobr>+[effect0.power] carte</nobr> au prochain tour, et +[trait1.power] toutes les <nobr>[trait1.tertiarypower] cartes</nobr> dans le deck.",
+    "german": "Ziehe +[effect0.power] im nächsten Zug. Ziehe pro [trait1.tertiarypower] Karten in deinem Deck +[trait1.power] mehr.",
+    "russian": "Возьмите +[effect0.power] на следующий ход. За каждую [trait1.tertiarypower] карту в колоде, берите еще [trait1.power].",
+    "portuguese": "Compra +[effect0.power] no próximo turno. Para cada [trait1.tertiarypower] cartas no seu deck, compre +[trait1.power].",
+    "chinese": "下个回合抽 +[effect0.power] 张牌。你的卡组中每有 [trait1.tertiarypower] 张卡牌，再抽 +[trait1.power] 张牌。",
+    "spanish": "Roba +[effect0.power] en el próximo turno. Por cada [trait1.tertiarypower] cartas en tu mazo, roba +[trait1.power] más.",
+    "chinese_traditional": "下回合抽+[effect0.power]張牌。每有[trait1.tertiarypower]張卡在你的牌組中，再抽+[trait1.power]張。",
+    "korean": "다음 턴에 카드를 +[effect0.power]장 더 뽑습니다. 덱에 존재하는 카드 [trait1.tertiarypower]장당 추가로 +[trait1.power]장을 더 뽑습니다.",
+    "japanese": "次のターン、ドロー+[effect0.power]。デッキ内のカード[trait1.tertiarypower]枚につき、さらに+[trait1.power]ドロー。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-83e049635b8b3be6-b62409073774ad8489a40cc60af2d58c-v2",
+      "english": "We grow in the shadow of Death.\r\n—old Underlegion saying",
+      "french": "<nobr>« Nous</nobr> grandissons dans l'ombre de la <nobr>mort. »</nobr> \n— Ancien dicton des Armillaires",
+      "german": "Wir wachsen im Schatten des Todes._x000D_\n—altes Unterlegion-Sprichwort",
+      "russian": "Мы растем в тени смерти.\n— старая поговорка Нижнего легиона",
+      "portuguese": "Crescemos à sombra da Morte. \n— Ditado antigo da Legião do Submundo",
+      "chinese": "我们生长于死亡的阴影中。\n——老一辈地下菌团如是说。",
+      "spanish": "Crecemos a la sombra de la muerte.\n—Antiguo dicho de la Infralegión",
+      "chinese_traditional": "「我們在死亡的陰影下成長。」\n——古老的地下軍團諺語",
+      "korean": "우리는 죽음의 그림자 안에서 자라난다.\n- 지하 군단의 옛 속담",
+      "japanese": "我々は死の影に生える。\n—古い菌糸族の格言"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Mulch.prefab",
+    "m_AssetGUID": "e0aa1467aca90d241a65d2c168837063"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    },
+    {
+      "traitStateName": "CardTraitScalingCardDrawCountPerPile",
+      "paramInt": 1,
+      "paramInt3": 15,
+      "paramBool": true,
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDrawAdditionalNextTurn",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramInt": 1
+    }
+  ],
+  "unlockLevel": 7,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

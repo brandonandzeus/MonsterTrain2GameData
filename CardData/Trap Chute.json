@@ -1,0 +1,114 @@
+{
+  "id": "TrapChute",
+  "name": "Trap Chute",
+  "nameKey": {
+    "key": "CardData_nameKey-1db8744a59dc2a15-fb2f597f5a8549d44929e10cb4413f5e-v2",
+    "english": "Trap Chute",
+    "french": "Trappe piégée",
+    "german": "Fallgrube",
+    "russian": "Желоб сброса",
+    "portuguese": "Armadilha Escotilha",
+    "chinese": "陷阱滑道",
+    "spanish": "Conducto trampa",
+    "chinese_traditional": "陷阱滑道",
+    "korean": "함정 낙하구",
+    "japanese": "トラップ台"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-f13bfb097344c8bd-fb2f597f5a8549d44929e10cb4413f5e-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-baf15ccbb485d02b-fb2f597f5a8549d44929e10cb4413f5e-v2",
+      "english": "“Heph recovered the old Trap Chute I built in my Rail days and fitted it into the Skull Crusher as a room fixture. Seeing it still function after all these years is a rare kind of statisfaction.”—Herzal, “My Workshop, My Life”",
+      "french": "<nobr>« Heph</nobr> a récupéré la trappe piégée que j'avais construite quand je travaillais sur la Voie et l'a adaptée aux salles du Brise-crânes. La voir utilisée après toutes ces années me procure une rare <nobr>satisfaction. »</nobr> — Herzal, <nobr>« Mon</nobr> atelier, ma <nobr>vie »</nobr>",
+      "german": "„Heph hat die alte Fallgrube, die ich in meiner Gleiszeit gebaut habe, wiederhergestellt und sie als Raumausstattung in den Schädelquetscher eingebaut. Zu sehen, dass sie nach all den Jahren immer noch funktioniert, ist eine besondere Genugtuung.“ – Herzal, „Meine Werkstatt, mein Leben“",
+      "russian": "«Геф нашла старый желоб сброса, который я сделал еще во время строительства дороги, и встроила его в «Крушителя черепов». Увидев его в рабочем состоянии столько лет спустя, я испытал необычайное удовлетворение». — Герцаль, «Моя мастерская — моя жизнь»",
+      "portuguese": "“Heph recuperou a velha Armadilha Escotilha que construí durante meus dias nos Trilhos e a adequou ao Triturador de Crânios como uma instalação de sala. Ver que ela ainda funciona após tantos anos é uma satisfação rara.” — Herzal, “Minha Oficina, Minha Vida”",
+      "chinese": "“赫芙找回了我在铺铁道的日子里建造的陷阱滑道，并将其装在了碎颅者上，当做房间的固定装置。看到它在这么多年之后依然能用，一种少有的喜悦之情油然而生。”——赫扎尔所著的《我的工匠人生》",
+      "spanish": "«Heph recuperó el viejo conducto trampa que diseñé cuando construía los Raíles y lo añadió al Rompecráneos como parte de una sala. Ver que funciona después de todos estos años es especialmente satisfactorio». —Herzal, «Mi taller, mi vida»",
+      "chinese_traditional": "「赫芙修復了我在軌道時代建造的舊陷阱滑道，並將其安裝到碎顱者中作為一節車廂。看到它在這麼多年後仍然能運作，是一種難得的滿足感。」——赫爾扎爾，《我的工作坊，我的人生》",
+      "korean": "“헵이 예전 내가 선로에서 일하던 때 만들어 두었던 오래된 함정 투하시설을 찾아와, 해골 분쇄자의 한 구역에 설치했다. 그렇게 오래된 장치가 지금도 멀쩡히 돌아가는 걸 보니 좀처럼 느끼기 힘든 묘한 만족감이 밀려온다.”—헤르잘, “나의 작업실, 나의 인생”",
+      "japanese": "「私が昔、鉄道に組み込んだトラップ台トをヘフが発見し、車両の備品としてスカルクラッシャーに装着した。これだけの年月が経っているのに正常に稼働しているのを見ると、得も言われぬ満足感に満たされる」—ハーザル著、『我が工房、我が人生』より"
+    }
+  ],
+  "cost": 2,
+  "cardType": "room",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Trapchute.prefab",
+    "m_AssetGUID": "d2f01bba9bf60b24e95df7f0544e9645"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLimitedRange"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "TrapChute_Upgrade",
+        "roomAbilityUpgrade": {
+          "id": "TrapChuteAbility",
+          "nameKey": {
+            "key": "CardData_nameKey-8b81f769314053f8-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
+            "english": "Trapdoor",
+            "french": "Trappe",
+            "german": "Falltür",
+            "russian": "Люк",
+            "portuguese": "Alçapão",
+            "chinese": "陷阱门",
+            "spanish": "Puerta trampa",
+            "chinese_traditional": "陷阱門",
+            "korean": "함정문",
+            "japanese": "落とし戸"
+          },
+          "overrideDescriptionKey": {
+            "key": "CardData_overrideDescriptionKey-bc38babedc78d2de-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
+            "english": "[descend] enemy units to the bottom floor. Apply [dazed] [effect0.status0.power].",
+            "french": "Fait <b>descendre</b> les unités au niveau inférieur. Inflige <nobr>[dazed] [effect0.status0.power]</nobr>.",
+            "german": "Lass gegnerische Einheiten auf die untere Ebene [descend]. Wende [dazed] [effect0.status0.power] an.",
+            "russian": "[descend] врагов на нижний этаж. Дает [dazed] х[effect0.status0.power].",
+            "portuguese": "<b>Derruba</b> unidades inimigas para o andar de baixo. Aplica [dazed] [effect0.status0.power].",
+            "chinese": "使所有敌方单位 [descend] 至底层，并施加 [dazed] [effect0.status0.power]。",
+            "spanish": "<b>Desciende</b> a las unidades enemigas al piso más bajo. Añade [dazed] [effect0.status0.power].",
+            "chinese_traditional": "使敵方單位[descend]至底層。施加[dazed][effect0.status0.power]。",
+            "korean": "적 유닛들을 최하층으로 [descend]시킵니다. [dazed] [effect0.status0.power] 효과를 적용합니다.",
+            "japanese": "敵ユニットを最下フロアに[descend]させる。[dazed] [effect0.status0.power]を付与する。"
+          },
+          "cardType": "spell",
+          "rarity": "common",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "room",
+              "targetTeamType": "heroes",
+              "paramStatusEffects": [
+                {
+                  "statusId": "dazed",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "effectStateName": "CardEffectBump",
+              "targetMode": "room",
+              "targetTeamType": "heroes",
+              "paramInt": -2
+            }
+          ],
+          "cooldownAfterActivated": 3,
+          "isRoomAbility": true,
+          "requiredDLC": "railforged",
+          "initialKeyboardTarget": "front_friendly"
+        },
+        "showUpgradeDescriptionOnCards": true
+      }
+    }
+  ],
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "GoldmanceAbility",
+  "name": "Moneymaker",
+  "nameKey": {
+    "key": "CardData_nameKey-3d8352e260d6c759-fb45937e8eacfb948914542d0ffb0800-v2",
+    "english": "Moneymaker",
+    "french": "Spéculateur",
+    "german": "Geldmaschine",
+    "russian": "Деньготворец",
+    "portuguese": "Faturando Alto",
+    "chinese": "赚钱高手",
+    "spanish": "Mina de oro",
+    "chinese_traditional": "錢來也",
+    "korean": "고수익",
+    "japanese": "金稼ぎ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b868c32e31b84e42-fb45937e8eacfb948914542d0ffb0800-v2",
+    "english": "Gain [effect0.power] [coin] for each [dragonshoardicon]. ",
+    "french": "Octroie [effect0.power] [coin] par [dragonshoardicon].",
+    "german": "Erhalte [effect0.power] [coin] pro [dragonshoardicon].",
+    "russian": "Дает [effect0.power] [coin] за каждый [dragonshoardicon].",
+    "portuguese": "Recebe [effect0.power] [coin] para cada [dragonshoardicon]. ",
+    "chinese": "每有一个[dragonshoardicon]就获得[effect0.power] [coin]。",
+    "spanish": "Obtienes [effect0.power] [coin] por cada [dragonshoardicon].",
+    "chinese_traditional": "每有一個[dragonshoardicon]獲得[effect0.power][coin]。",
+    "korean": "[dragonshoardicon] 하나당 [effect0.power] [coin]를 획득합니다.",
+    "japanese": "[dragonshoardicon]1つにつき[effect0.power] [coin]を得る。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_GoldmanceAbility.prefab",
+    "m_AssetGUID": "f85974cb278ba1b4c8154459bd164282"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectRewardGoldPerDragonHoard",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "HudTooltip_DragonsHoardInactive_Body",
+            "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+            "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+            "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+            "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+            "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+            "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+            "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+            "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+            "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+            "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+          },
+          "titleKey": {
+            "key": "HudTooltip_DragonsHoard_Title",
+            "english": "[dragonshoardicon]Dragon's Hoard",
+            "french": "[dragonshoardicon]Trésor du dragon",
+            "german": "[dragonshoardicon]Drachenschatz",
+            "russian": "[dragonshoardicon] Драконий клад",
+            "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+            "chinese": "[dragonshoardicon]龙族宝藏",
+            "spanish": "[dragonshoardicon]Tesoro de dragón",
+            "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+            "korean": "[dragonshoardicon]드래곤의 재보",
+            "japanese": "竜の財宝[dragonshoardicon]"
+          },
+          "style": "default"
+        }
+      ],
+      "paramInt": 5,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/Goldmance/FX_Goldmance.prefab",
+          "m_AssetGUID": "36df5437293517a40bb98754163ab3f9"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 2,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

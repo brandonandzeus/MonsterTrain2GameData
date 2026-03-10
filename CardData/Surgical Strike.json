@@ -1,0 +1,151 @@
+{
+  "id": "SurgicalStrike",
+  "name": "Surgical Strike",
+  "nameKey": {
+    "key": "CardData_nameKey-980151d022e220d2-54ff4576355beaf46b1957f59483bc26-v2",
+    "english": "Surgical Strike",
+    "french": "Frappe chirurgicale",
+    "german": "Chirurgischer Angriff",
+    "russian": "Тычок хирурга",
+    "portuguese": "Golpe Cirúrgico",
+    "chinese": "手术式打击",
+    "spanish": "Golpe quirúrgico",
+    "chinese_traditional": "精準打擊",
+    "korean": "정밀한 일격",
+    "japanese": "正確な一撃"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-6c6c0a7a7c544063-54ff4576355beaf46b1957f59483bc26-v2",
+    "english": "Deal [effect0.power] damage.",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+    "german": "Verursache [effect0.power] Schaden.",
+    "russian": "Наносит [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano.",
+    "chinese": "造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño.",
+    "chinese_traditional": "造成[effect0.power]點傷害。",
+    "korean": "[effect0.power]의 피해를 입힙니다.",
+    "japanese": "[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-d5b139e25f9609cc-54ff4576355beaf46b1957f59483bc26-v2",
+      "english": "“I‘ve found that the scalpel is mightier than the sword. It can cut with more deadly precision.”\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« J'ai</nobr> découvert que le scalpel était plus puissant que l'épée. Il tranche avec une précision bien plus <nobr>mortelle. »</nobr> \n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Ich musste feststellen, dass das Skalpell mächtiger ist als das Schwert. Es kann mit tödlicher Präzision schneiden.“\n– aus Dr. Orechis Notizbuch",
+      "russian": "«Я обнаружил, что скальпель опаснее меча. Он режет куда точнее».\n— Из записной книжки Оречи",
+      "portuguese": "“Descobri que o bisturi é mais poderoso do que a espada. Ele pode cortar com uma precisão mais mortal.”\n— Anotação do Dr. Orechi",
+      "chinese": "“我发现手术刀比长剑更加强大有力。它能以更精准的角度进行切割。”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«He descubierto que el bisturí es más fuerte que la espada. Puede cortar de forma más precisa y letal».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「我發現手術刀比劍更有力量。它可以更精確、更致命地切割。」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“메스가 칼보다 강하다는 사실을 발견했다. 메스는 대상을 더욱 정확하고, 치명적으로 절단할 수 있으니까.”\n- 오레치 박사의 기록",
+      "japanese": "「剣よりもメスの方が扱いやすい。より致命的な精度で切り裂くことができる」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_SurgicalStrike.prefab",
+    "m_AssetGUID": "2272d96b313a08a439a18ce518651b79"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitModifyCardTriggerSlayFireCount",
+      "paramTrackedValue": "any_character",
+      "paramSubtype": "SubtypesData_FunGuy",
+      "paramBool": true,
+      "paramTeamType": "monsters"
+    },
+    {
+      "traitStateName": "CardTraitIgnoreArmor"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardTraitEphemeral_TooltipText",
+            "english": "Purges when played, discarded, or at end of turn.",
+            "french": "La carte est purgée lorsqu'elle est jouée, défaussée, ou à la fin du tour.",
+            "german": "Wird ausgespielt, abgelegt oder am Ende des Zuges entfernt.",
+            "russian": "Ликвидируется будучи сыгранной, или сброшенной, а также в конце хода",
+            "portuguese": "A carta é expurgada quando jogada ou descartada, ou ao fim do turno.",
+            "chinese": "在打出、舍弃，或结束回合时移除。",
+            "spanish": "Se purga al jugarla, descartarla o al acabar el turno.",
+            "chinese_traditional": "打出、捨棄或在回合結束時淨化。",
+            "korean": "카드를 사용하거나, 버리거나, 턴 종료 시 제외됩니다.",
+            "japanese": "プレイ時、破棄時、またはターン終了時に除外される。"
+          },
+          "titleKey": {
+            "key": "CardTraitEphemeral_TooltipTitle",
+            "english": "Ephemeral",
+            "french": "Éphémère",
+            "german": "Vergänglich",
+            "russian": "Временная",
+            "portuguese": "Efêmera",
+            "chinese": "短暂",
+            "spanish": "Efímera",
+            "chinese_traditional": "瞬逝",
+            "korean": "일회성",
+            "japanese": "一時的"
+          }
+        }
+      ],
+      "paramInt": 4,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LazarusLeague/SurgicalStrike/FX_SurgicalStrike.prefab",
+          "m_AssetGUID": "88b2c11835a0e7346b5b1eca081a387e"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-d624eead6288d752-54ff4576355beaf46b1957f59483bc26-v2",
+        "english": "Add a copy of this card with [ephemeral] to your hand.",
+        "french": "Ajoute une copie de cette carte avec [ephemeral] à votre main.",
+        "german": "Füge deiner Hand eine Kopie dieser Karte mit [ephemeral] hinzu.",
+        "russian": "В вашу руку добавляется [ephemeral] копия этой карты.",
+        "portuguese": "Adiciona uma cópia [ephemeral] desta carta à sua mão.",
+        "chinese": "将这张卡牌带有[ephemeral]的复制品加入你的手牌。",
+        "spanish": "Añade a tu mano una copia de esta carta con [ephemeral].",
+        "chinese_traditional": "將帶有[ephemeral]的此卡牌複製加入你的手牌。",
+        "korean": "이 카드에 [ephemeral]이 부여된 복제본을 패에 추가합니다.",
+        "japanese": "手札にこのカードの複製を[ephemeral]付きで追加する。"
+      },
+      "trigger": "on_kill",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectAddUpgradedCopy",
+          "targetMode": "last_targeted_characters",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "SurgicalStrike_Upgrade",
+            "traitDataUpgrades": [
+              {
+                "traitStateName": "CardTraitEphemeral",
+                "traitIsRemovable": false,
+                "tooltipSuppressed": true
+              }
+            ]
+          },
+          "copyModifiersFromSource": true,
+          "paramInt": 3
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Seika Nakai"
+}

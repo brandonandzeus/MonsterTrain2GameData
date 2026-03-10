@@ -1,0 +1,49 @@
+{
+  "id": "RefuelAbility",
+  "name": "RefuelAbility",
+  "nameKey": {
+    "key": "CardData_nameKey-061aa9edad7774b9-c2d4629e37c48bf4ba41e68a1167ad5c-v2",
+    "english": "Refuel",
+    "french": "Ravitaillement",
+    "german": "Auftanken",
+    "russian": "Дозаправка",
+    "portuguese": "Reabastecer",
+    "chinese": "补充燃料",
+    "spanish": "Reabastecimiento",
+    "chinese_traditional": "補充燃料",
+    "korean": "연료 보충",
+    "japanese": "燃料補給"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-f0a6c968631ec3f6-c2d4629e37c48bf4ba41e68a1167ad5c-v2",
+    "english": "Grant [spark] [effect0.status0.power].",
+    "french": "Octroie [spark] [effect0.status0.power].",
+    "german": "Verleiht [spark] [effect0.status0.power].",
+    "russian": "Дается [spark] х[effect0.status0.power].",
+    "portuguese": "Concede [spark] [effect0.status0.power].",
+    "chinese": "获得 [spark] [effect0.status0.power]。",
+    "spanish": "Añade [spark] [effect0.status0.power].",
+    "chinese_traditional": "賦予[spark][effect0.status0.power]。",
+    "korean": "[spark] [effect0.status0.power] 효과를 부여합니다.",
+    "japanese": "[spark] [effect0.status0.power]を付与する。"
+  },
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "self",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "spark",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "BrandedWarrior",
+  "name": "Branded Warrior",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Demon_Shatter.prefab",
+    "m_AssetGUID": "112f283cefa4c784c923727e9e18d450"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLevelMonsterState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCharacterData": {
+        "id": "MonsterChaosBasic",
+        "nameKey": {
+          "key": "CharacterData_nameKey-299a287205950208-c4afac1bf1d093a4f871cf7eb20d5f2b-v2",
+          "english": "Branded Warrior",
+          "french": "Guerrier marqué",
+          "german": "Gebrandmarkter Krieger",
+          "russian": "Клейменый воин",
+          "portuguese": "Guerreiro Marcado",
+          "chinese": "烙印武士",
+          "spanish": "Guerrero marcado",
+          "chinese_traditional": "烙印戰士",
+          "korean": "낙인 찍힌 전사",
+          "japanese": "烙印の戦士"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-e066448099a05369-c4afac1bf1d093a4f871cf7eb20d5f2b-v2",
+            "english": "It is said that no one can match a fully matured Hellhorned Demon in combat. I have yet to see this proven false. Though I can’t say I’m seeking out that opportunity...",
+            "french": "Il est dit que nul ne peut égaler au combat un diable cornu parvenu au terme de son évolution. La véracité de cette rumeur est toujours valable, et je tiens sincèrement à ce qu'elle le reste.",
+            "german": "Angeblich kann niemand einem ausgewachsenen Höllenhorn im Kampf das Wasser reichen. Bisher konnte noch niemand das Gegenteil beweisen. Ich bin auch nicht erpicht darauf, es darauf ankommen zu lassen.",
+            "russian": "Говорили, что полностью сформировавшимся Адским отродьям нет равных в бою. Но, как выяснилось, это не так. Впрочем, не могу сказать, что мне хочется это проверять...",
+            "portuguese": "Diz-se que ninguém pode se igualar a um Demônio Endiabrado adulto em combate. Ainda não pude comprovar isso, mas também não tenho vontade...",
+            "chinese": "据说，完全成熟的狱魔在战斗中的表现无人能比，我到目前为止还没见过例外。不过我也没在寻找这种机会……",
+            "spanish": "Se dice que nadie puede igualar en combate a un demonio maduro de los Astados Infernales, y aún no he visto a nadie hacerlo. Aunque no puedo decir que esté incitando la ocasión...",
+            "chinese_traditional": "據說沒有人能在戰鬥中匹敵一個完全成熟的煉獄族惡魔。我還沒有見過有誰能搏倒這個論點。不過我可沒有想要自己出面證明什麼……",
+            "korean": "완전히 성장한 지옥뿔 군단을 상대로 전투에서 이길 수 있는 자는 아무도 없다고 한다. 나 역시 이 명제가 틀렸다는 증거를 본 적은 없다. 그렇다고 이를 직접 확인할 기회를 찾고 싶다고 직접적으로 말할 수는 없지만...",
+            "japanese": "戦いでは、完全に成長した獄角族の悪魔に適う者はいないと言われている。これが間違いだと証明されたのを私はまだ見たことがない。彼らが負けるところが見てみたいというのは、大声では言えないことだ…"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Demon_Shatter.prefab",
+          "m_AssetGUID": "024d63bbd3bcbb44e974dfe6a2cca1f8"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "buff",
+            "count": 5
+          }
+        ],
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-aab45c2138251e32-c4afac1bf1d093a4f871cf7eb20d5f2b-v2",
+              "english": "Apply [rage] [effect0.status0.power] to friendly units.",
+              "french": "Confère <b>Rage</b> [effect0.status0.power] aux unités alliées.",
+              "german": "Wende [effect0.status0.power] <b>Wut</b> auf verbündete Einheiten an.",
+              "russian": "На союзников накладывается [rage] х[effect0.status0.power].",
+              "portuguese": "Concede <b>Fúria</b> [effect0.status0.power] às unidades aliadas.",
+              "chinese": "使友方单位获得<b>狂怒</b> [effect0.status0.power]。",
+              "spanish": "Añade [rage] [effect0.status0.power] a las unidades aliadas.",
+              "chinese_traditional": "對友方單位施加[rage][effect0.status0.power]。",
+              "korean": "아군 유닛들에게 [rage] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "味方ユニットに[rage] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_kill",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "buff",
+                    "count": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 8,
+        "attackDamage": 20,
+        "subtypeKeys": [
+          "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "HellhornedDemonChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

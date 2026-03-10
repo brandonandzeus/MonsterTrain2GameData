@@ -1,0 +1,80 @@
+{
+  "id": "SkullCollectors",
+  "name": "Skull Collectors",
+  "nameKey": {
+    "key": "MutatorData_nameKey-9ac26b525a7914f9-b60a91abb97168da6b43e03d0b2d62ca-v2",
+    "english": "Skull Collectors",
+    "french": "Collectionneurs de crânes",
+    "german": "Schädelsammler",
+    "russian": "Собиратели черепов",
+    "portuguese": "Colecionadores de Crânios",
+    "chinese": "颅骨收藏家",
+    "spanish": "Coleccionistas de cráneos",
+    "chinese_traditional": "骷髏收集者",
+    "korean": "두개골 수집가",
+    "japanese": "スカル・コレクター"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-a5f6544c523f7fb6-b60a91abb97168da6b43e03d0b2d62ca-v2",
+    "english": "Collectors no longer retreat, and have increased stats.",
+    "french": "Les grappilleurs ne battent plus en retraite et ont des statistiques améliorées.",
+    "german": "Sammler ziehen sich nicht mehr zurück und sind stärker.",
+    "russian": "Собиратели больше не отступают и имеют повышенные характеристики.",
+    "portuguese": "Os Colecionadores não recuam mais e têm estatísticas aumentadas.",
+    "chinese": "收藏家不再撤退，且属性提高。",
+    "spanish": "Los Coleccionistas ya no se retiran y sus estadísticas aumentan.",
+    "chinese_traditional": "收集者不再撤退，並且擁有更強的屬性。",
+    "korean": "수집가가 더는 후퇴하지 않으며, 능력치가 증가합니다.",
+    "japanese": "コレクターが撤退しなくなり、ステータスが上昇する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectSubstituteTreasureUnitOnSpawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
+      "paramSourceTeam": "heroes",
+      "paramInt": 30,
+      "paramCharacterSubtype": "SubtypesData_TreasureCollectorT1",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
+      "paramSourceTeam": "heroes",
+      "paramInt": 60,
+      "paramCharacterSubtype": "SubtypesData_TreasureCollectorT2",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
+      "paramSourceTeam": "heroes",
+      "paramInt": 90,
+      "paramCharacterSubtype": "SubtypesData_TreasureCollectorT3",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
+      "paramCardType": "invalid",
+      "paramSourceTeam": "heroes",
+      "paramInt": 5,
+      "paramCharacterSubtype": "SubtypesData_TreasureCollectorT1",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
+      "paramCardType": "invalid",
+      "paramSourceTeam": "heroes",
+      "paramInt": 15,
+      "paramCharacterSubtype": "SubtypesData_TreasureCollectorT2",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
+      "paramCardType": "invalid",
+      "paramSourceTeam": "heroes",
+      "paramInt": 30,
+      "paramCharacterSubtype": "SubtypesData_TreasureCollectorT3",
+      "paramTrigger": "on_spawn"
+    }
+  ]
+}

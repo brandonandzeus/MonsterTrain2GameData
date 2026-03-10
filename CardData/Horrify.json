@@ -1,0 +1,75 @@
+{
+  "id": "Horrify",
+  "name": "Horrify",
+  "nameKey": {
+    "key": "CardData_nameKey-b34c095ad48402f7-f724ed21bd4772d4a8b154d37d69291e-v2",
+    "english": "Horrify",
+    "french": "Abjection",
+    "german": "Entsetzen",
+    "russian": "Устрашение",
+    "portuguese": "Horrorizar",
+    "chinese": "惊骇",
+    "spanish": "Horrorizar",
+    "chinese_traditional": "恐懼",
+    "korean": "공포",
+    "japanese": "恐れ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-d6394ce44bb412d2-f724ed21bd4772d4a8b154d37d69291e-v2",
+    "english": "[retreat]. Apply [dazed] [effect1.status0.power].",
+    "french": "[retreat]. Inflige [dazed] [effect1.status0.power].",
+    "german": "[retreat]. Wende [dazed] [effect1.status0.power] an.",
+    "russian": "[retreat]. Накладывается [dazed] х[effect1.status0.power].",
+    "portuguese": "<b>Avança</b>. Aplica [dazed] [effect1.status0.power].",
+    "chinese": "[retreat]。施加 [dazed] [effect1.status0.power]。",
+    "spanish": "[retreat]. Añade [dazed] [effect1.status0.power].",
+    "chinese_traditional": "[retreat]。施加[dazed][effect1.status0.power]。",
+    "korean": "[retreat]. [dazed] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[retreat]。[dazed] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-87de1ba3d794034a-f724ed21bd4772d4a8b154d37d69291e-v2",
+      "english": "“Stay back! Stay back, you monster!” cried the assistant. “I’m not a monster. I’m Grael!” he cried. “Don’t you recognize me?!”",
+      "french": "<nobr>« Arrière !</nobr> Recule, <nobr>monstre ! »</nobr> s'écria l'assistante. <nobr>« Je</nobr> ne suis pas un monstre. Je suis <nobr>Grael ! »</nobr> répondit-il. <nobr>« Tu</nobr> ne me reconnais donc <nobr>pas ? »</nobr>",
+      "german": "„Bleib zurück! Hinfort, du Monster!“, schrie die Assistentin. „Ich bin kein Monster. Ich bin Grael!“, rief er aus. „Erkennst du mich nicht?“",
+      "russian": "«Назад! Назад, чудище!» — завопила помощница. «Какое чудище? Это же я, Граэль! Не узнаешь меня?!»",
+      "portuguese": "“Afaste-se! Afaste-se, seu monstro!”, gritou o assistente. “Eu não sou um monstro. Sou Grael!”, gritou ele. “Não me reconhece?!”",
+      "chinese": "“退后！退后，你这个怪物！”助手喊道。“我不是怪物。我是格雷尔！”他喊道。“你不认识我了吗？！”",
+      "spanish": "«¡Atrás! ¡Atrás, monstruo!», gritó el ayudante. «¡No soy un monstruo! ¡Soy Grael!», respondió. «¡¿Es que no me reconoces?!».",
+      "chinese_traditional": "「別過來！別過來，你這個怪物！」助手喊道。「我不是怪物。我是葛雷爾！」他喊道。「你不認識我了嗎？！」",
+      "korean": "“물러서! 물러서라고 했잖아, 이 괴물아!” 조수가 외쳤다. “괴물이 아니에요! 그라엘이라고요!” 그라엘은 울부짖었다. “절 못 알아보시겠어요?!”",
+      "japanese": "「下がれ！下がれ、化け物め！」助手が叫ぶ。「化け物じゃない。グラエルだ！」彼は喚いた。「私がわからないのか！？」"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Horrify.prefab",
+    "m_AssetGUID": "96626f050a9099a498cc8af237f4af8e"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 1
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "dazed",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Hannah Lim"
+}

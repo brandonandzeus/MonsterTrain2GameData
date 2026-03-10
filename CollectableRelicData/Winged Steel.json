@@ -1,0 +1,81 @@
+{
+  "id": "CardDrawOnCardPlay",
+  "name": "Winged Steel",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-42d9c7cf1b2c8462-788763283544e324f96e2722406c6588-v2",
+    "english": "Winged Steel",
+    "french": "Acier angélique",
+    "german": "Geflügelter Stahl",
+    "russian": "Сталь Крылатого",
+    "portuguese": "Aço Alado",
+    "chinese": "翼族锻钢",
+    "spanish": "Acero alado",
+    "chinese_traditional": "有翼族鋼鐵",
+    "korean": "날개 달린 자의 강철",
+    "japanese": "有翼の鋼鉄"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-e37c878daaa86877-788763283544e324f96e2722406c6588-v2",
+    "english": "After [deployphase], when you play your third card of the turn, draw [effect0.power].",
+    "french": "Après la [deployphase], lorsque vous jouez la 3e carte de votre tour, piochez [effect0.power].",
+    "german": "Wenn du nach der [deployphase] in einem Zug deine dritte Karte spielst, ziehe [effect0.power].",
+    "russian": "Сыграв третью карту в свой ход после <b>Фазы Размещения</b>, возьмите [effect0.power].",
+    "portuguese": "Depois da [deployphase], quando você joga sua terceira carta do turno, compra [effect0.power].",
+    "chinese": "在 [deployphase] 之后，当本回合打出第三张牌时，抽 [effect0.power] 张牌。",
+    "spanish": "Después de la [deployphase], cuando juegues tu tercera carta del turno, roba [effect0.power].",
+    "chinese_traditional": "在[deployphase]之後，當你在一回合內打出第三張牌時，抽[effect0.power]。",
+    "korean": "[deployphase] 이후, 턴에 세 번째 카드를 사용하면 카드를 [effect0.power]장 뽑습니다.",
+    "japanese": "[deployphase]後、同一ターンで3枚目のカードをプレイするとドロー [effect0.power]。"
+  },
+  "relicActivatedKey": {
+    "key": "CollectableRelicData_relicActivatedKey-db2bad3e01d81c9c-788763283544e324f96e2722406c6588-v2",
+    "english": "Draw!",
+    "french": "Piochée !",
+    "german": "Ziehen!",
+    "russian": "Возьмите!",
+    "portuguese": "Compre!",
+    "chinese": "抽牌！",
+    "spanish": "¡Roba!",
+    "chinese_traditional": "抽牌！",
+    "korean": "카드 추가!",
+    "japanese": "ドロー！"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-d0e3bf4e110ac4bb-788763283544e324f96e2722406c6588-v2",
+      "english": "The Winged crafted a solid piece of steel to show me the creation process. The runes they placed on it made sure I could not melt it down again for my own use.",
+      "french": "Les anges ont créé une pièce en acier solide afin de me montrer le processus de fabrication. Les runes gravées dessus m'empêchent de la faire fondre à nouveau pour me l'approprier.",
+      "german": "Die Geflügelten erschufen einen massiven Stahlbarren, um mir den Produktionsvorgang zu zeigen. Die Runen, die sie darauf einließen, hinderten mich daran, es für meine Zwecke einzuschmelzen.",
+      "russian": "Крылатые изготовили кусок стали, чтобы объяснить мне суть процесса. Руны, которыми они украсили железку, не позволяют мне переплавить ее ради собственных целей.",
+      "portuguese": "Os Alados fizeram um pedaço sólido de aço para me mostrar o processo de criação. As runas que adicionaram nele me impediram de derretê-lo novamente para uso próprio.",
+      "chinese": "翼族曾为我打造过一块坚硬的钢铁，来展示这种钢材的制作工艺。他们在这块钢上打上了符文，确保我不会把这块钢熔炼掉据为己用。",
+      "spanish": "Los alados fabricaron una pieza de acero macizo para mostrarme cómo la creaban. Las runas que colocaron en ella me hicieron ver que no podría repetirlo para satisfacer mis deseos personales.",
+      "chinese_traditional": "有翼族製造了一塊堅實的鋼塊來向我展示製作過程。他們在上面放置了符文，確保我無法再次熔化它改作為自己的用途。",
+      "korean": "날개 달린 자는 제작 과정을 보여주겠다면서 단단한 강철 조각을 만들었다. 조각 위에 놓은 룬의 힘 덕분에, 이 강철은 다시 녹여서 사용할 수 없었다.",
+      "japanese": "その有翼は、私に作成過程を見せるために、頑丈な鋼鉄の塊を作った。その上に刻まれたルーン文字の効果で、私がそれを再び溶かして自分で利用することは不可能になった。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardDrawOnCardPlay",
+      "paramCardType": "invalid",
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "any_card_played",
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 3,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramInt": 1
+    }
+  ],
+  "disallowInDeploymentPhase": true,
+  "deprioritizeInFtueDrafts": true
+}

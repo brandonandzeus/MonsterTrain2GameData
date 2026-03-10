@@ -1,0 +1,83 @@
+{
+  "id": "BatteringRam",
+  "name": "Battering Ram",
+  "nameKey": {
+    "key": "CardData_nameKey-2fb0ce024545c793-2738bdc40aa6e1945ae7f59b8c3d95ae-v2",
+    "english": "Battering Ram",
+    "french": "Bélier",
+    "german": "Rammbock",
+    "russian": "Таран",
+    "portuguese": "Aríete",
+    "chinese": "攻城战槌",
+    "spanish": "Ariete",
+    "chinese_traditional": "衝車",
+    "korean": "공성추",
+    "japanese": "破城槌"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-19981672c1673256-2738bdc40aa6e1945ae7f59b8c3d95ae-v2",
+    "english": "Deal damage to the front enemy unit equal to [trait0.power]x [armor] on friendly units.",
+    "french": "Inflige des dégâts à l'ennemi en 1re ligne valant [trait0.power]x l'[armor] des unités alliées.",
+    "german": "Füge der vordersten gegnerischen Einheit Schaden in Höhe von [trait0.power]x [armor] verbündeter Einheiten zu.",
+    "russian": "Наносит переднему вражескому бойцу урон, равный x[trait0.power] количеству <b>брони</b> союзников.",
+    "portuguese": "Causa dano à unidade inimiga à frente igual a [trait0.power]x [armor] das unidades aliadas.",
+    "chinese": "对前排敌方单位造成伤害，数值相当于所有友方单位 [armor] 的 [trait0.power]倍 。",
+    "spanish": "Inflige tanto daño a la primera unidad enemiga como la [armor] x[trait0.power] de las unidades aliadas.",
+    "chinese_traditional": "對前排敵方單位造成等於[trait0.power]x友方單位[armor]數量的傷害。",
+    "korean": "전열 적 유닛에 아군 유닛들의 [armor] 값에 [trait0.power]배를 곱한 피해를 줍니다.",
+    "japanese": "前列の敵ユニットに味方ユニットの[trait0.power]x [armor]に等しいダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-17856855e88f2397-2738bdc40aa6e1945ae7f59b8c3d95ae-v2",
+      "english": "Working with the Railbeaters, I was able to devise a series of interlocking shields that turn the Hellhorned into a mobile battering ram.",
+      "french": "Avec l'aide des Marterails, j'ai mis au point une série de boucliers à emboîtement qui transforment les Cornus en véritables béliers.",
+      "german": "Gemeinsam mit den Gleishämmerern konnte ich ineinander verschränkbare Schilde entwickeln, mit deren Hilfe die Höllenhörner zu einer Art mobilem Rammbock werden.",
+      "russian": "Во время работы с Укладчиками мне удалось придумать систему из накладывающихся друг на друга щитов, позволяющих превратить Адское отродье в живой таран.",
+      "portuguese": "Em meu tempo trabalhando com os Trilhadores, pude desenvolver uma série de escudos interligados que transformam Endiabrados em aríetes móveis.",
+      "chinese": "与锻铁者一起工作的那段时间里，我发明了一种可以互锁的护盾系统，可以将狱魔变为机动攻城战槌。",
+      "spanish": "Colaborando con los forjarraíles, conseguí diseñar una serie de escudos entrelazados para convertir a los Astados Infernales en arietes ágiles.",
+      "chinese_traditional": "我與軌道擊打者合作，設計了一系列互鎖的盾牌，將煉獄族變成了一個能夠移動的衝車。",
+      "korean": "선로 파괴자와 협력한 끝에, 지옥뿔 군단을 이동 가능한 공성추처럼 변형시키는 연동형 방패를 고안했다.",
+      "japanese": "レイルビーターたちと協力して、連結するシールドを考案した。獄角族を携帯型の破城槌に変えるものだ。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_BatteringRam.prefab",
+    "m_AssetGUID": "faf47af243bf01d47a8c8642bb2d49cb"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddDamage",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "status_effect_count_in_target_room",
+      "paramInt": 4,
+      "paramTeamType": "monsters"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_BatteringRamSpell_L_PS.prefab",
+          "m_AssetGUID": "ea0c776644a9c8d4eafbcca3155acf4d"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

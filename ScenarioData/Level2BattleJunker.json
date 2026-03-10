@@ -1,0 +1,138 @@
+{
+  "id": "Level2BattleJunker",
+  "name": "Level2BattleJunker",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-693d85c03cfe16fc-fa3a3539906ddd7458c51aa3c3d39b31-v2",
+    "english": "March of the Supplicants",
+    "french": "Marche des Suppliants",
+    "german": "Marsch der Bittsteller",
+    "russian": "Поход сторонников",
+    "portuguese": "Marcha dos Suplicantes",
+    "chinese": "乞求者进军",
+    "spanish": "Marcha de los suplicantes",
+    "chinese_traditional": "祈願者的進軍",
+    "korean": "탄원자의 행렬",
+    "japanese": "嘆願者の行進"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-b9db91a8d9068646-fa3a3539906ddd7458c51aa3c3d39b31-v2",
+    "english": "Pitiful followers of Dominion will attempt to fill your deck with useless burdens.  ",
+    "french": "Ces pitoyables adeptes de Domination tenteront de remplir votre deck de fardeaux inutiles.",
+    "german": "Erbärmliche Anhänger von Herrschaft werden versuchen, dein Deck mit nutzlosem Kram zu füllen.",
+    "russian": "Жалкие последователи Доминиона будут пытаться заполнить вашу колоду бесполезным мусором.  ",
+    "portuguese": "Os seguidores miseráveis do Domínio tentarão encher seu deck com cargas inúteis.",
+    "chinese": "统御泰坦可怜的追随者会试图用无用的负担填满你的卡组。",
+    "spanish": "Los patéticos seguidores de Dominio intentarán llenar tu mazo de trabas inútiles.",
+    "chinese_traditional": "主宰的可悲追隨者會嘗試用無用的負擔填滿你的牌組。",
+    "korean": "도미니온을 따르는 이 불행한 추종자들은 쓸모 없는 짐덩이로 덱을 채울 것입니다.",
+    "japanese": "ドミニオンの哀れな信奉者たちは、デッキを役に立たない重荷で満たそうとする。"
+  },
+  "bossVariant": {
+    "id": "Level2Bosses",
+    "bossVariants": [
+      "Boss_Level2_BigStats",
+      "Boss_Level2_Spikes"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "MageT1_Junker",
+    "AttackerT1_Spearman"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker"
+              },
+              {
+                "characterData": "AttackerT1_Spearman",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker"
+              },
+              {
+                "characterData": "AttackerT1_Spearman"
+              },
+              {
+                "characterData": "AttackerT1_Spearman",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker"
+              },
+              {
+                "characterData": "Boss_Level1_Basic",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

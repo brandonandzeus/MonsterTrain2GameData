@@ -1,0 +1,85 @@
+{
+  "id": "PyreborneChampionAbilityAbilityLineUpgrade3",
+  "name": "Fenix Fire III",
+  "nameKey": {
+    "key": "CardData_nameKey-980c12250a9d50aa-be360258d86f0ca4ba0a2f9e2afc3e39-v2",
+    "english": "Fenix Fire III",
+    "french": "Feu de Fenix III",
+    "german": "Fenix-Feuer III",
+    "russian": "Пламя Феникса III",
+    "portuguese": "Chama da Fênix III",
+    "chinese": "菲尼克斯之火 III",
+    "spanish": "Fuego de Fénix III",
+    "chinese_traditional": "費尼克斯之火III",
+    "korean": "페닉스의 불꽃 III",
+    "japanese": "フェニックスの火III"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-76e5fc727b16d3b6-be360258d86f0ca4ba0a2f9e2afc3e39-v2",
+    "english": "Deal damage equal to [effect0.power][x] this unit's attack. Apply [pyregel] [effect1.status0.power] to enemy units.",
+    "french": "Inflige des dégâts valant [effect0.power][x] l'attaque de cette unité. Donne [pyregel] [effect1.status0.power] aux unités ennemies.",
+    "german": "Füge Schaden in Höhe von [effect0.power][x] des Angriffs dieser Einheit zu. Wende [pyregel] [effect1.status0.power] auf gegnerische Einheiten an.",
+    "russian": "Наносит урон, равный [x][effect0.power] атаке этого бойца. Накладывает [pyregel] х[effect1.status0.power] на врагов.",
+    "portuguese": "Causa dano igual a [effect0.power][x] o ataque desta unidade. Aplica [pyregel] [effect1.status0.power] às unidades inimigas.",
+    "chinese": "造成相当于该单位攻击力 [effect0.power][x] 的伤害。对所有敌方单位施加 [pyregel] [effect1.status0.power]。",
+    "spanish": "Inflige tanto daño como el ataque de esta unidad [effect0.power][x]. Añade [pyregel] [effect1.status0.power] a las unidades enemigas.",
+    "chinese_traditional": "造成等於此單位[effect0.power][x]攻擊力的傷害。對敵方單位施加[pyregel][effect1.status0.power]。",
+    "korean": "이 유닛의 공격력에 [effect0.power][x]를 곱한 만큼 피해를 줍니다. 적 유닛들에게 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[effect0.power][x]このユニットの攻撃力に等しいダメージを与える。敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "traits": [
+    {
+      "traitStateName": "CardTraitDamageOverflow",
+      "paramInt": 2,
+      "traitIsRemovable": false,
+      "tooltipSuppressed": true
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamagePerSourceAttack",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 2,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+        },
+        "spawnLocation": "character_center"
+      },
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/Lava Laser/FX_LavaLaser.prefab",
+          "m_AssetGUID": "1e7b433c7b279ab42a5fe24bb5d1eea9"
+        },
+        "spawnLocation": "character_side_fwd_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "pyregel",
+          "count": 4
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 3,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy"
+}

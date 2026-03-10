@@ -1,0 +1,94 @@
+{
+  "id": "ChompAbility",
+  "name": "Chomp",
+  "nameKey": {
+    "key": "CardData_nameKey-59b8454b41afad13-6e7b81c59a81b8243a3056e2880e2c03-v2",
+    "english": "Chomp",
+    "french": "Croq",
+    "german": "Haps",
+    "russian": "Чавк!",
+    "portuguese": "Mastigada",
+    "chinese": "大快朵颐",
+    "spanish": "Bocado",
+    "chinese_traditional": "啃咬",
+    "korean": "아그작",
+    "japanese": "ガブリ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-3a1464d5ad698482-6e7b81c59a81b8243a3056e2880e2c03-v2",
+    "english": "Destroy a friendly unit and gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health]. Triggers [gorge] and [eaten].",
+    "french": "Détruit un allié, octroie +[effect1.upgrade.bonusdamage][attack] et +[effect1.upgrade.bonushp][health]. Déclenchements de [gorge] et [eaten].",
+    "german": "Zerstöre eine verbündete Einheit und erhalte +[effect1.upgrade.bonusdamage][attack] und +[effect1.upgrade.bonushp][health]. Löst [gorge] und [eaten] aus.",
+    "russian": "Уничтожает союзника и дает +[effect1.upgrade.bonusdamage][attack] и +[effect1.upgrade.bonushp][health]. Вызывает [gorge] и [eaten].",
+    "portuguese": "Destrói uma unidade aliada e recebe +[effect1.upgrade.bonusdamage][attack] e +[effect1.upgrade.bonushp][health]. Aciona [gorge] e [eaten].",
+    "chinese": "消灭一个友方单位并获得 +[effect1.upgrade.bonusdamage][attack]和 +[effect1.upgrade.bonushp][health]。触发[gorge]和[eaten]。",
+    "spanish": "Destruye una unidad aliada y añade +[effect1.upgrade.bonusdamage][attack] y +[effect1.upgrade.bonushp][health]. Activa [gorge] y [eaten].",
+    "chinese_traditional": "摧毀一個友方單位並獲得+[effect1.upgrade.bonusdamage][attack]和+[effect1.upgrade.bonushp][health]。觸發[gorge]和[eaten]。",
+    "korean": "아군 유닛 하나를 파괴하고 +[effect1.upgrade.bonusdamage][attack] 및 +[effect1.upgrade.bonushp][health]을 획득합니다. [gorge] 및 [eaten] 효과를 발동합니다.",
+    "japanese": "味方ユニットを破壊し、+[effect1.upgrade.bonusdamage][attack]と+[effect1.upgrade.bonushp][health]を得る。[gorge]と[eaten]を発動する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectSacrificeOrFeed",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "shouldFailToCastIfTestFails": true,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+        },
+        "spawnLocation": "character_center"
+      },
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
+          "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "self",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Plus15Attack15Health",
+        "bonusDamage": 15,
+        "bonusHP": 15
+      },
+      "additionalTooltips": [
+        {
+          "trigger": "on_feed",
+          "style": "default",
+          "isTriggerTooltip": true
+        },
+        {
+          "trigger": "on_eaten",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+        },
+        "spawnLocation": "character_center"
+      },
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
+          "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly"
+}

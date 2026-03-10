@@ -1,0 +1,133 @@
+{
+  "id": "DanteTheDependable",
+  "name": "Dante the Dependable",
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-7d7186c8b9d95fae-df7492579f4aea941b38f61949283eb3-v2",
+  "cost": 2,
+  "cardType": "monster",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_DanteTheDependable.prefab",
+    "m_AssetGUID": "8b923121ef981804fa43ddd9b569e5cf"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramCardType": "blight",
+      "paramStatusEffects": [
+        {
+          "statusId": "multistrike",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "type_in_deck",
+      "paramInt": 1,
+      "traitIsRemovable": false,
+      "stackMode": "param_int"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterDante_Titan",
+        "nameKey": {
+          "key": "CharacterData_nameKey-255bff06804ddd90-856674c81c120204eb765977a2df472b-v2",
+          "english": "Dante the Dependable",
+          "french": "Dante le Fiable",
+          "german": "Dante der Verlässliche",
+          "russian": "Данте Надежный",
+          "portuguese": "Dante, o Confiável",
+          "chinese": "可靠的但丁",
+          "spanish": "Dante el Fiable",
+          "chinese_traditional": "可靠的但丁",
+          "korean": "믿음직한 단테",
+          "japanese": "凄腕のダンテ"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-cd6264dc90216a7a-856674c81c120204eb765977a2df472b-v2",
+            "english": "Dante, the only man who can sip tea with an angel at noon and share a pint with a demon by dusk. Heaven and Hell are just stops on his cultural itinerary, each with its own charms to savor.",
+            "french": "Dante est le seul homme qui peut siroter un thé avec un ange le matin et partager une pinte avec un démon le soir. Le paradis et l'enfer ne sont que des étapes de son itinéraire culturel, chacun avec ses propres charmes.",
+            "german": "Niemand anders als Dante vermag es, mittags mit einem Engel Tee und abends mit einem Dämon ein Bierchen zu trinken. Himmel und Hölle sind nur Stationen auf seiner kulturellen Reise, und jede davon hat ihre eigenen Reize.",
+            "russian": "Данте — единственный человек, который может в обед чаевничать с ангелом, а ближе к ночи распить по пинте пива с демоном. Рай и Ад — лишь остановки в его культурном маршруте, каждая со своими прелестями.",
+            "portuguese": "Dante, o único homem que pode tomar chá com um anjo ao meio-dia e compartilhar uma cerveja com um demônio ao anoitecer. O Céu e o Inferno são apenas paradas em seu itinerário cultural, cada um com seus próprios encantos.",
+            "chinese": "但丁，唯一一个能在中午和天使品茶，在黄昏与恶魔喝一杯的人。天堂与地狱都只不过他文化旅行中的站点，各有值得品味的魅力。",
+            "spanish": "Dante, el único hombre capaz de tomar té con un ángel por la mañana y compartir una cerveza con un demonio por la noche. El Cielo y el Infierno son solo paradas en su itinerario cultural, cada una con sus encantos.",
+            "chinese_traditional": "但丁是唯一一個能在正午與天使一起喝茶、黃昏與惡魔共飲的人。天堂和地獄只是他文化之旅的停靠站，各有其值得品味的魅力。",
+            "korean": "단테는 정오에 천사와 차를 마시며, 저녁에는 악마와 맥주 한 잔을 마실 수 있는 유일한 자이다. 천상과 지옥은 그가 문화 여행을 떠나는 여정에서 단지 잠깐의 정차일 뿐, 각기 다른 매력을 음미하는 곳이다.",
+            "japanese": "ダンテ。昼には天使とお茶を飲み、夕暮れには悪魔とビールを飲み交わすことができる唯一の男。天界と地獄は、彼の文化的な旅における単なる寄り道であり、それぞれに味わうべき独特な魅力があるのだ。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_DanteTheDependable.prefab",
+          "m_AssetGUID": "090b6d8cff9d71249a853093ba7802e6"
+        },
+        "projectilePrefab": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/Dante/FX_DanteAttack.prefab",
+            "m_AssetGUID": "45b26d3af3245bb4b976228250af20a7"
+          },
+          "spawnLocation": "character_side_fwd_center"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+            "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-0c77b5236ef955c0-856674c81c120204eb765977a2df472b-v2",
+              "english": "Add a permanent <b>Dante's Candle</b> to your deck. Gain a stack of [multistrike] for each [blight] card in your deck.",
+              "french": "Ajoute une <b>Bougie de Dante</b> permanente à votre deck. Gagne un cumul de [multistrike] par carte [blight] dans le deck.",
+              "german": "Fügt deinem Deck permanent <b>Dantes Kerze</b> hinzu. Erhalte pro [blight]-Karte in deinem Deck einen Stapel [multistrike].",
+              "russian": "Добавляет постоянную <b>Свечу Данте</b> в колоду. Дает [multistrike] за каждый [blight] в колоде.",
+              "portuguese": "Adiciona permanentemente uma carta de <b>Vela de Dante</b> ao seu deck. Recebe uma carga de [multistrike] para cada carta de [blight] em seu deck.",
+              "chinese": "永久添加一张<b>但丁的蜡烛</b>到你的手牌。你的卡组里每有一张 [blight] 卡牌就获得一层 [multistrike]。",
+              "spanish": "Añade una <b>Vela de Dante</b> permanente a tu mazo. Añade una acumulación de [multistrike] por cada carta de [blight] en tu mazo.",
+              "chinese_traditional": "永久加入一張<b>但丁的蠟燭</b>到你的牌組。每有一張[blight]牌在你的牌組中獲得一層[multistrike]。",
+              "korean": "덱에 <b>단테의 촛대</b> 카드를 영구적으로 추가합니다. 덱에 있는 [blight] 카드 하나당 [multistrike] 스택을 획득합니다.",
+              "japanese": "デッキに永続的な<b>ダンテのロウソク</b>を追加する。デッキ内の[blight]カード1枚につき、[multistrike]のスタックを得る。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddRunCard",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "paramCardPool": "DantesCandleOnlyPool"
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "multistrike",
+                    "count": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 10,
+        "attackDamage": 3,
+        "attackTeleportsToDefender": false,
+        "subtypeKeys": [
+          "SubtypesData_Dante",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "Event_DanteChatterData_Titan"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Loy Bouttamy"
+}

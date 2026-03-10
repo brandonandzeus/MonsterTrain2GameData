@@ -1,0 +1,106 @@
+{
+  "id": "StarterDamageForMorsel",
+  "name": "Plink",
+  "nameKey": {
+    "key": "CardData_nameKey-795f54f86efcba7e-250076515ad4c12458a78941994b450d-v2",
+    "english": "Plink",
+    "french": "Tintement",
+    "german": "Schaben",
+    "russian": "Звон",
+    "portuguese": "Plink",
+    "chinese": "随意射击",
+    "spanish": "Clin, clin",
+    "chinese_traditional": "叮！",
+    "korean": "딸랑임",
+    "japanese": "軽快なる音"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-f3f639080aa3af37-250076515ad4c12458a78941994b450d-v2",
+    "english": "Deal [effect0.power] damage to a random enemy unit, twice.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à un ennemi aléatoire deux fois.",
+    "german": "Füge einer zufälligen gegnerischen Einheit 2x [effect0.power] Schaden zu.",
+    "russian": "Дважды наносит [effect0.power] урона случайному вражескому бойцу.",
+    "portuguese": "Causa [effect0.power] de dano a uma unidade inimiga aleatória duas vezes.",
+    "chinese": "随机对敌方单位造成 [effect0.power] 点伤害，重复两次。",
+    "spanish": "Inflige [effect0.power] de daño a una unidad enemiga aleatoria dos veces.",
+    "chinese_traditional": "隨機對一個敵方單位造成[effect0.power]點傷害，兩次。",
+    "korean": "무작위 적 유닛에 [effect0.power]의 피해를 2회 입힙니다.",
+    "japanese": "ランダムな敵ユニットに[effect0.power]のダメージを2回与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-583d17b261239c79-250076515ad4c12458a78941994b450d-v2",
+      "english": "The Primordium does not speak through words but through floods of feeling. The bounds of its mind seem endless. It’s no wonder that the ultimate split of the Primordium created a varying number of personalities, not the least of which are my friendly Morsels.",
+      "french": "Le Primordium s'exprime, non par des mots, mais par des déferlantes d'émotions. Son esprit semble sans limite. On ne s'étonnera donc pas que l'ultime scission du Primordium ait créé un vaste éventail de personnalités, dont mes fidèles sous-bistres.",
+      "german": "Das Primordium verständigt sich nicht mit Worten, sondern mit Gefühlsfluten. Seinem Verstand scheinen keine Grenzen gesetzt zu sein. Es ist daher kein Wunder, dass die endgültige Spaltung des Primordiums eine Vielzahl von Persönlichkeiten schuf, zu denen auch meine lieben Nuggets gehören.",
+      "russian": "Примордий общается не с помощью слов, но с помощью потоков эмоций. Кажется, что у его разума нет границ. Неудивительно, что, разделившись, Примордий породил огромное количество личностей — в том числе моих дружелюбных заморышей.",
+      "portuguese": "O Primordium não fala por meio de palavras, mas por enxurradas de sentimentos. Os limites de sua mente parecem infinitos. Não é surpresa que a divisão final do Primordium tenha criado diversas personalidades, das quais destacam-se meus amigáveis Lanchos.",
+      "chinese": "原基交谈时靠的不是言语，而是情感的洪流。它的思维仿佛广阔无边。因此原基最终分裂后产生出多种多样的人格也不足为奇了，而我友善的影裔也是其中之一。",
+      "spanish": "El Primordium no se comunica con palabras, sino con oleadas de sensaciones. Su mente parece no tener límites. No es de extrañar que su división final creara todo un abanico de personalidades, entre las que se cuentan los agradables pinchos.",
+      "chinese_traditional": "原始意識不是透過語言傳達的，而是透過洪水般的感覺來表達。它的思維似乎無邊無際。難怪原始意識的最終分裂產生了不同數量的人格，其中最不重要的就是我友好的莫塞爾。",
+      "korean": "초기 원시 생명체는 언어가 아닌 밀려오는 감정으로 소통했다. 그 감정의 경계는 끝이 없는 것으로 보인다. 결국 원시 생명체는 종국에 분열을 거듭해 다양한 개성을 가진 존재들을 만들어냈다. 물론, 친숙한 작은 그림자 무리도 예외는 아니다.",
+      "japanese": "祖なる菌は言葉ではなく、多くの感情で話す。その精神の境界は無限のようだ。祖なる菌の最終的な分裂によってさまざまな人格が生まれたのも不思議ではない。人懐っこいモーゼルたちも、その1つだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Plink.prefab",
+    "m_AssetGUID": "c2df266179cf96949ba2a3afe956034f"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "random_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 2,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Plink_PS.prefab",
+          "m_AssetGUID": "c59da0456fb0e1546b61fb3ad983009a"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "random_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 2
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-1f7ea17ab909c7b6-250076515ad4c12458a78941994b450d-v2",
+        "english": "Add a common or uncommon [snack] unit to your hand.",
+        "french": "Ajoute un <b>sous-bistre</b> ordinaire ou inhabituel à votre main.",
+        "german": "Nimm eine gewöhnliche oder ungewöhnliche Nugget-Einheit auf die Hand.",
+        "russian": "Добавляет в руку одного обычного или необычного заморыша.",
+        "portuguese": "Adiciona um <b>lancho</b> comum ou incomum à sua mão.",
+        "chinese": "将一个普通或高级[snack]单位加入你的手牌。",
+        "spanish": "Añade una unidad [snack] común o poco común a tu mano.",
+        "chinese_traditional": "將一張普通或罕見的[snack]單位牌牌加入你的手牌。",
+        "korean": "일반 혹은 특별 등급의 [snack] 유닛을 패에 추가합니다.",
+        "japanese": "手札にコモンかアンコモンの[snack]ユニットを追加する。"
+      },
+      "trigger": "on_kill",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectAddBattleCard",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "shouldTest": false,
+          "paramInt": 3,
+          "additionalParamInt": 1,
+          "paramCardPool": "Class5StarterFoodCard"
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Andrew Vera"
+}

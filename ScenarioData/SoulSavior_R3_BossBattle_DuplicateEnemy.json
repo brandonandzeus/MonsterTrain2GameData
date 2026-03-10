@@ -1,0 +1,291 @@
+{
+  "id": "SoulSavior_R3_BossBattle_DuplicateEnemy",
+  "name": "SoulSavior_R3_BossBattle_DuplicateEnemy",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-a639b9838b1825a4-8746f23f443e3f445bd7f61a1decfa18-v2",
+    "english": "Tivi the Unruly",
+    "french": "Tivi l'Indocile",
+    "german": "Tivi der Ungezogene",
+    "russian": "Тиви Непокорный",
+    "portuguese": "Tivi, o Baderneiro",
+    "chinese": "任性者蒂维",
+    "spanish": "Tivi el Inquieto",
+    "chinese_traditional": "不羈的蒂維",
+    "korean": "무법자 티비",
+    "japanese": "悪童のティヴィー"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-7c45e0dd65147bf5-8746f23f443e3f445bd7f61a1decfa18-v2",
+    "english": "Tivi never fights fair. True to his duplicitous nature, he creates copies of his allies to sow confusion on the battlefield.",
+    "french": "Tivi ne se bat jamais à la loyale. Fourbe par nature, il crée des doubles de ses alliés pour semer la confusion sur le champ de bataille.",
+    "german": "Tivi kämpft niemals mit fairen Mitteln. Er bleibt seiner doppelzüngigen Natur treu und erschafft Duplikate seiner Verbündeten, um auf dem Schlachtfeld für Verwirrung zu sorgen.",
+    "russian": "Тиви не знает честного боя. Верный своей натуре, он множит облики своих союзников и превращает поле битвы в обманчивый хаос.",
+    "portuguese": "Tivi nunca luta de forma justa. Fiel à sua natureza traiçoeira, ele cria cópias de seus aliados para semear a confusão no campo de batalha.",
+    "chinese": "蒂维从来都不讲武德。本性奸诈的他会创造自己友军的复制体，在战场上制造混乱。",
+    "spanish": "Tivi nunca juega limpio. Fiel a su naturaleza engañosa, crea copias de sus aliados para sembrar la confusión en el campo de batalla.",
+    "chinese_traditional": "蒂維從不正大光明地戰鬥。他忠於自己的詐欺本性，會製造盟友的幻象複製品，在戰場上播撒混亂。",
+    "korean": "티비는 항상 비열한 방식으로 싸웁니다. 이중적인 성향에 걸맞게, 그는 동료들을 복제해 전장을 혼란에 빠뜨립니다.",
+    "japanese": "ティヴィーは決して公平に戦わない。嘘つきの本性のままに、味方の複製を作り出して戦場に混乱を巻き起こす。"
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Boss_Railforged_Region3_DuplicateEnemy"
+  ],
+  "battleTrackNameData": "BattleMusic_SoulSavior_Children",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Tivi_Intro",
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Heavy/Decoy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy"
+              },
+              {
+                "characterData": "RAny_Heavy_TitaniteUpFront_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Attack x3/Decoy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "requiredDifficultyTier": 2,
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "characterData": "RAny_Heavy_TitaniteUpFront_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Attack x2/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "characterData": "RAny_Heavy_TitaniteUpFront_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Bonus) Heavy/Decoy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Bonus) Attack/Heavy/Decoy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "characterData": "R3_Horde_T3_Decoy_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance3"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Decoy x2",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R3_Horde_T3_Decoy_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance3"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy",
+    "hardBossCharacter": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy"
+  }
+}

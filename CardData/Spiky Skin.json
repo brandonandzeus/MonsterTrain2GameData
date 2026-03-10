@@ -1,0 +1,99 @@
+{
+  "id": "SpikySkin",
+  "name": "Spiky Skin",
+  "nameKey": {
+    "key": "CardData_nameKey-47ed6ceb6fcfcaeb-3d3aa1b61f36047439e28a75c2b56a57-v2",
+    "english": "Spiky Skin",
+    "french": "Peau épineuse",
+    "german": "Stachelhaut",
+    "russian": "Колючка",
+    "portuguese": "Pele Pontiaguda",
+    "chinese": "尖刺皮肤",
+    "spanish": "Piel espinosa",
+    "chinese_traditional": "尖刺皮膚",
+    "korean": "가시 피부",
+    "japanese": "棘の肌"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-e44afc328cab0618-3d3aa1b61f36047439e28a75c2b56a57-v2",
+      "english": "“I took a sample from a demon’s flesh whose skin was as strong as steel and combined it with a bristle brush. Voila! My sharpest creation!”\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« J'ai</nobr> pris un échantillon de la chair d'un démon dont la peau était aussi solide que l'acier et je l'ai greffé sur une brosse à poils. Et <nobr>voilà !</nobr> Ma création la plus <nobr>pointue ! »</nobr> \n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Ich habe eine Probe aus dem Fleisch eines Dämons mit stahlharter Haut entnommen und sie mit einer Borstenbürste kombiniert. Voilà! Meine schärfste Kreation!“\n– aus Dr. Orechis Notizbuch",
+      "russian": "«Я взял образец плоти демона, чья кожа была прочной, как сталь, соединил его с щетинной щеткой — и вуаля! Мое самое острое творение!»\n— Из записной книжки Оречи",
+      "portuguese": "“Peguei uma amostra da carne de um demônio cuja pele era forte como aço e a combinei com uma escova de cerdas. Voilà! Minha criação mais afiada!”\n— Anotação do Dr. Orechi",
+      "chinese": "“我从一个皮肤如钢铁般坚硬的恶魔肉体中提取了一份样本，然后和刚毛刷结合在一起。瞧！我最锋利的作品！”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«Tomé una muestra de un demonio cuya piel era dura como el acero y la combiné con un cepillo de cerdas. ¡Voilà! ¡Mi creación más afilada!».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「我從某個惡魔的肉上取了一個樣本，它的皮膚堅硬如鋼，我將它與鬃毛刷結合在一起。瞧！這是我最犀利的作品！」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“강철 피부를 지닌 악마의 살점에서 표본을 채취해 칫솔모와 결합했다. 보라! 내가 만든 가장 날카로운 창조물을!”\n- 오레치 박사의 기록",
+      "japanese": "「肌が鋼鉄のように堅い悪魔の肉のサンプルを毛ブラシに合わせてみた。そしたらなんとも鋭い作品ができたのじゃ！」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_PufferFlesh.prefab",
+    "m_AssetGUID": "620387cd008560f439dc2f047ed6a087"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitGraftedEquipment",
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "SpikySkin_Upgrade",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-4b4eb2245d1a0511-0e813fee626cb3141b8d4a79020dd051-v2",
+              "english": "Gain [spikes] [effect0.status0.power].",
+              "french": "Octroie [spikes] [effect0.status0.power].",
+              "german": "Erhalte [spikes] [effect0.status0.power].",
+              "russian": "Дает [effect0.status0.power] х[spikes].",
+              "portuguese": "Recebe [spikes] [effect0.status0.power].",
+              "chinese": "获得 [spikes] [effect0.status0.power]。",
+              "spanish": "Añade [spikes] [effect0.status0.power].",
+              "chinese_traditional": "獲得[spikes][effect0.status0.power]。",
+              "korean": "[spikes] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[spikes] [effect0.status0.power]を得る。"
+            },
+            "trigger": "on_hit",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "spikes",
+                    "count": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bonusHP": 10
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/SpikySkin/FX_SpikySkin.prefab",
+          "m_AssetGUID": "47302993c616c4f41bdb5bd84707eda3"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "ignoreWhenCountingMastery": true,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

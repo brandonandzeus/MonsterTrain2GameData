@@ -1,0 +1,182 @@
+{
+  "id": "StartOfTurnPropagate",
+  "name": "Shroomponics",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-2688b19cee4fe6f3-4c586dad3e86bd2498f49e7744627fe4-v2",
+    "english": "Shroomponics",
+    "french": "Champidule",
+    "german": "Pilzkultur",
+    "russian": "Грибопоника",
+    "portuguese": "Hidroponia Fúngica",
+    "chinese": "蘑菇水培",
+    "spanish": "Hongoponía",
+    "chinese_traditional": "蘑菇水培",
+    "korean": "버섯 교향곡",
+    "japanese": "シュルームポニック"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-4211f68d85b77933-4c586dad3e86bd2498f49e7744627fe4-v2",
+    "english": "At start of turn, friendly units [propagate] [effect0.power].",
+    "french": "Au début du tour, [propagate] [effect0.power] pour les alliés.",
+    "german": "Zu Beginn des Zuges setzen verbündete Einheiten [propagate] [effect0.power] ein.",
+    "russian": "В начале каждого хода накладывает на союзников [propagate] х[effect0.power].",
+    "portuguese": "No início do turno, as unidades aliadas recebem [propagate] [effect0.power].",
+    "chinese": "回合开始时，友方单位 [propagate] [effect0.power]。",
+    "spanish": "Al principio del turno, las unidades aliadas <b>Propagan</b> [effect0.power].",
+    "chinese_traditional": "在每回合始時，友方單位[propagate][effect0.power]。",
+    "korean": "턴 시작 시, 아군 유닛들에게 [propagate] [effect0.power] 효과가 적용됩니다.",
+    "japanese": "毎ターン開始時に味方ユニットが[effect0.power][propagate]する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-9f749419fb971fa5-4c586dad3e86bd2498f49e7744627fe4-v2",
+      "english": "When their forest was threatened by the Great Decay, the shroomfolk made this device to carry their young and keep them safe.",
+      "french": "Lorsque leur forêt a été menacée par le Grand Pourrissement, les champignons ont fabriqué ce dispositif pour porter leurs petits et les mettre en sécurité.",
+      "german": "Als ihr Wald vom Großen Zerfall heimgesucht wurde, entwickelte das Pilzvolk diese Vorrichtung, um ihre Jungen zu tragen und zu schützen.",
+      "russian": "Когда лесу угрожало Великое разложение, грибной народец создал это устройство для переноски своих малышей в безопасные места.",
+      "portuguese": "Quando sua floresta foi ameaçada pela Grande Decadência, os cogumelos criaram esse dispositivo para carregar os filhotes e mantê-los seguros.",
+      "chinese": "当蘑菇人的森林被大腐朽所威胁时，他们制作了这个装置，用以携带他们的孩子，并保护其安全。",
+      "spanish": "Cuando la Gran Descomposición amenazó a su bosque, los hongos crearon este dispositivo para transportar con seguridad a sus pequeños.",
+      "chinese_traditional": "當蘑菇族的森林受到大腐壞紀實的威脅時，他們製造了這個裝置來攜帶幼崽並保護他們安全。",
+      "korean": "위대한 부패가 숲을 덮쳤을 때, 버섯 종족은 이 장치를 만들어 어린 자식들을 지키려 했다.",
+      "japanese": "森が偉大なる枯死の脅威にさらされたとき、キノコたちは子供たちを運び、安全を確保するためにこの装置を作った。"
+    }
+  ],
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddEffectStartOfTurn",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectAdjustAllStatusEffects",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramInt": 1,
+          "additionalParamInt": 1
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardEffectAdjustAllStatusEffects_Inc_TooltipText",
+            "english": "Increase the stack count of [buff] effects on friendly units and [debuff] effects on enemy units, except [dazed].",
+            "french": "Augmente les cumuls des effets de [buff] sur les alliés et de [debuff] sur les ennemis, sauf [dazed].",
+            "german": "Erhöhe den Stapel von [buff]-Effekten verbündeter Einheiten und [debuff]-Effekte gegnerischer Einheiten (ausgenommen [dazed]).",
+            "russian": "Приумножает эффекты со свойством [buff] для союзников и со свойством [debuff] для врагов, кроме <b>ошеломления</b>.",
+            "portuguese": "Aumenta a carga dos efeitos de [buff] em unidades aliadas e efeitos de [debuff] em unidades inimigas, exceto [dazed].",
+            "chinese": "增加友方单位[buff]效果和敌方单位[debuff]效果的层数，[dazed]除外。",
+            "spanish": "Aumenta el número de acumulaciones de los efectos de [buff] en unidades aliadas y de [debuff] en unidades enemigas, excepto [dazed].",
+            "chinese_traditional": "增加友方單位身上[buff]效果和敵方單位身上[debuff]效果的層數，[dazed]除外。",
+            "korean": "아군 유닛의 [buff] 및 적 유닛의 [debuff] 스택이 증가합니다. [dazed] 효과에는 적용되지 않습니다.",
+            "japanese": "味方ユニットの[buff]効果と、[dazed]を除く敵ユニットの[debuff]効果のスタックを増加させる。"
+          },
+          "titleKey": {
+            "key": "CardEffectAdjustAllStatusEffects_Inc_TooltipTitle",
+            "english": "[propagate]",
+            "french": "[propagate]",
+            "german": "[propagate]",
+            "russian": "[propagate]",
+            "portuguese": "[propagate]",
+            "chinese": "[propagate]",
+            "spanish": "[propagate]",
+            "chinese_traditional": "[propagate]",
+            "korean": "[propagate]",
+            "japanese": "[propagate]"
+          }
+        },
+        {
+          "descriptionKey": {
+            "key": "CardEffectBuff_TooltipText",
+            "english": "Buff effects are generally positive for their target and are represented by green icons.",
+            "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+            "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+            "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+            "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+            "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+            "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+            "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+            "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+            "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectBuff_TooltipTitle",
+            "english": "Buff",
+            "french": "Bonus",
+            "german": "Buff",
+            "russian": "Усиление",
+            "portuguese": "Buff",
+            "chinese": "增益",
+            "spanish": "Potenciación",
+            "chinese_traditional": "增益",
+            "korean": "버프",
+            "japanese": "バフ"
+          },
+          "style": "positive"
+        },
+        {
+          "descriptionKey": {
+            "key": "CardEffectDebuff_TooltipText",
+            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectDebuff_TooltipTitle",
+            "english": "Debuff",
+            "french": "Malus",
+            "german": "Debuff",
+            "russian": "Ослабление",
+            "portuguese": "Debuff",
+            "chinese": "减益",
+            "spanish": "Debilitación",
+            "chinese_traditional": "減益",
+            "korean": "디버프",
+            "japanese": "デバフ"
+          },
+          "style": "negative"
+        },
+        {
+          "statusId": "dazed",
+          "descriptionKey": {
+            "key": "CardEffectDebuff_TooltipText",
+            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectDebuff_TooltipTitle",
+            "english": "Debuff",
+            "french": "Malus",
+            "german": "Debuff",
+            "russian": "Ослабление",
+            "portuguese": "Debuff",
+            "chinese": "减益",
+            "spanish": "Debilitación",
+            "chinese_traditional": "減益",
+            "korean": "디버프",
+            "japanese": "デバフ"
+          },
+          "style": "negative",
+          "isStatusTooltip": true
+        }
+      ],
+      "paramInt": 1,
+      "tooltipTitleKey": "CollectableRelicData_tooltipTitleKey-10f7deefde0d52aa-4c586dad3e86bd2498f49e7744627fe4-v2"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "Echoes_UnitsGetReanimate",
+  "name": "Zombies!",
+  "nameKey": {
+    "key": "MutatorData_nameKey-5ecb89afb35612d6-9e15e876a2909714399c47916cdc7b2a-v2",
+    "english": "Zombies!",
+    "french": "Dernier train pour Big Fan",
+    "german": "Zombies!",
+    "russian": "Зомби!",
+    "portuguese": "Zumbis!",
+    "chinese": "有僵尸！",
+    "spanish": "¡Zombis!",
+    "chinese_traditional": "殭屍！",
+    "korean": "좀비 떼!",
+    "japanese": "ゾンビ！"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-eb9bad2d18d3cb87-9e15e876a2909714399c47916cdc7b2a-v2",
+    "english": "Enemy units enter with [undying] [effect0.power]. Friendly units enter with [undying] [effect1.power].",
+    "french": "Les unités ennemies entrent avec [undying] [effect0.power]. Les unités alliées entrent avec [undying] [effect1.power].",
+    "german": "Gegnerische Einheiten kommen mit [undying] [effect0.power] ins Spiel. Verbündete Einheiten kommen mit [undying] [effect1.power] ins Spiel.",
+    "russian": "На бойцов врага при входе накладывается [undying] х[effect0.power], а на союзников — [undying] х[effect1.power].",
+    "portuguese": "As unidades inimigas entram com [undying] [effect0.power]. As unidades aliadas entram com [undying] [effect1.power].",
+    "chinese": "敌方单位进入战斗时获得[undying] [effect0.power]。友方单位进入战斗时获得[undying] [effect1.power]。",
+    "spanish": "Las unidades enemigas entran con [undying] [effect0.power]. Las unidades aliadas entran con [undying] [effect1.power].",
+    "chinese_traditional": "敵方單位進場時獲得[undying][effect0.power]。友方單位進場時獲得[undying][effect1.power]。",
+    "korean": "적 유닛들이 [undying] [effect0.power] 상태로 등장합니다. 아군 유닛들은 [undying] [effect1.power] 상태로 등장합니다.",
+    "japanese": "敵ユニットが[undying] [effect0.power]が付与された状態で出現する。味方ユニットが[undying] [effect1.power]が付与された状態で出現する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_spawn",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramStatusEffects": [
+                {
+                  "statusId": "undying",
+                  "count": 3
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramBool": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_spawn",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramStatusEffects": [
+                {
+                  "statusId": "undying",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramBool": true
+    }
+  ],
+  "boonValue": -6
+}

@@ -1,0 +1,105 @@
+{
+  "id": "MajorAbsolutionCardUpgrade",
+  "name": "Ascetic Absolution",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-46d32af42973a9cd-492b690eff26f324a81e7c009e06c04a-v2",
+    "english": "Ascetic Absolution",
+    "french": "Absolution ascétique",
+    "german": "Asketische Absolution",
+    "russian": "Абсолютный аскетизм",
+    "portuguese": "Absolvição Ascética",
+    "chinese": "苦修赦免",
+    "spanish": "Absolución ascética",
+    "chinese_traditional": "苦行赦免",
+    "korean": "고행 구제",
+    "japanese": "禁欲の許し"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-366375ae3449ca70-492b690eff26f324a81e7c009e06c04a-v2",
+    "english": "<b>Summon</b>: Gain [effect0.upgrade.charactertrigger0.effect0.power][ember].",
+    "french": "<nobr><b>Invocation</b> :</nobr> Octroie [effect0.upgrade.charactertrigger0.effect0.power][ember].",
+    "german": "<b>Rufen</b>: Erhalte [effect0.upgrade.charactertrigger0.effect0.power][ember].",
+    "russian": "<b>Призыв</b>: Дает [effect0.upgrade.charactertrigger0.effect0.power][ember].",
+    "portuguese": "<b>Invocar</b>: recebe [effect0.upgrade.charactertrigger0.effect0.power][ember].",
+    "chinese": "<b>召唤</b>：获得[effect0.upgrade.charactertrigger0.effect0.power][ember]。",
+    "spanish": "<b>Invocación</b>: Añade [effect0.upgrade.charactertrigger0.effect0.power][ember].",
+    "chinese_traditional": "<b>召喚</b>：獲得[effect0.upgrade.charactertrigger0.effect0.power][ember]。",
+    "korean": "<b>소환</b>: [effect0.upgrade.charactertrigger0.effect0.power][ember]을 획득합니다.",
+    "japanese": "<b>召喚</b>：[effect0.upgrade.charactertrigger0.effect0.power][ember]を得る。"
+  },
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "MajorAbsolution",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-496368c2f3244cd9-a7f6b3c60a7a2b24b96122b096aedeab-v2",
+          "english": "Ascetic Absolution",
+          "french": "Absolution ascétique",
+          "german": "Asketische Absolution",
+          "russian": "Абсолютный аскетизм",
+          "portuguese": "Absolvição Ascética",
+          "chinese": "苦修赦免",
+          "spanish": "Absolución ascética",
+          "chinese_traditional": "苦行赦免",
+          "korean": "고행 구제",
+          "japanese": "禁欲の許し"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-b24d2d448cdc4c9e-a7f6b3c60a7a2b24b96122b096aedeab-v2",
+          "english": "<b>Summon</b>: Gain [charactertrigger0.effect0.power][ember].",
+          "french": "<nobr><b>Invocation</b> :</nobr> Octroie [charactertrigger0.effect0.power][ember].",
+          "german": "<b>Rufen</b>: Erhalte [charactertrigger0.effect0.power][ember].",
+          "russian": "<b>Призыв</b>: Дает [charactertrigger0.effect0.power][ember].",
+          "portuguese": "<b>Invocar</b>: recebe [charactertrigger0.effect0.power][ember].",
+          "chinese": "<b>召唤</b>：获得 [charactertrigger0.effect0.power][ember]。",
+          "spanish": "<b>Invocación</b>: Añade [charactertrigger0.effect0.power][ember].",
+          "chinese_traditional": "<b>召喚</b>：獲得[charactertrigger0.effect0.power][ember]。",
+          "korean": "<b>소환</b>: [charactertrigger0.effect0.power][ember]을 획득합니다.",
+          "japanese": "<b>召喚</b>：[charactertrigger0.effect0.power][ember]を得る。"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-7d41fd520ee6e8d2-a7f6b3c60a7a2b24b96122b096aedeab-v2",
+              "english": "Gain [effect0.power][ember].",
+              "french": "Octroie [effect0.power][ember].",
+              "german": "Erhalte [effect0.power][ember].",
+              "russian": "Дает [effect0.power][ember].",
+              "portuguese": "Recebe [effect0.power][ember].",
+              "chinese": "获得[effect0.power][ember]。",
+              "spanish": "Obtienes [effect0.power][ember].",
+              "chinese_traditional": "獲得[effect0.power][ember]。",
+              "korean": "[effect0.power][ember]을 획득합니다.",
+              "japanese": "[effect0.power][ember]を得る。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectGainEnergy",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "paramInt": 3
+              }
+            ]
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyMajorPenanceCardUpgrade",
+            "requiredCardUpgradesOperator": "and",
+            "requiredCardUpgrades": [
+              "MajorPenance"
+            ]
+          }
+        ],
+        "isUnique": true,
+        "upgradesToRemove": [
+          "MajorPenance"
+        ]
+      }
+    }
+  ]
+}

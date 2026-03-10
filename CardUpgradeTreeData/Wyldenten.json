@@ -1,0 +1,633 @@
+{
+  "id": "UpgradeTreeWyldenten",
+  "name": "Wyldenten",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "WyldentenSlayForSting",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-1784775cbd5335cf-c68aed0837f4ac448a763b139e7deb6b-v2",
+            "english": "Thornlord",
+            "french": "Seigneur des ronces",
+            "german": "Dornengebieter",
+            "russian": "Владыка шипов",
+            "portuguese": "Senhor dos Espinhos",
+            "chinese": "荆棘领主",
+            "spanish": "Señor de las espinas",
+            "chinese_traditional": "荊棘之王",
+            "korean": "가시 군주",
+            "japanese": "ソーンロード"
+          },
+          "unitAbilityUpgrade": {
+            "id": "WyldentenSlayForStingAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-c19dc508027dd94d-cfb864648fd45fa458021626a7ca15af-v2",
+              "english": "Needlebloom",
+              "french": "Floraison d'épines",
+              "german": "Nadelblüte",
+              "russian": "Смертоносная игла",
+              "portuguese": "Florescer Espinhoso",
+              "chinese": "针刺绽放",
+              "spanish": "Flor de espino",
+              "chinese_traditional": "針刺綻放",
+              "korean": "바늘꽃",
+              "japanese": "針の花"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-98d54c695440698c-cfb864648fd45fa458021626a7ca15af-v2",
+              "english": "Add [effect0.power] <b>Sting</b> spells to hand.",
+              "french": "Ajoute [effect0.power] sorts <b>Piqûre</b> à la main.",
+              "german": "Nimm [effect0.power] <b>Stachel</b>-Zauber auf die Hand.",
+              "russian": "Добавляет [effect0.power] шт. карт <b>Укол</b> в руку.",
+              "portuguese": "Adiciona [effect0.power] feitiços de <b>Ferroada</b> à mão.",
+              "chinese": "将 [effect0.power] 张<b>蛰刺</b>法术加入手牌。",
+              "spanish": "Añade [effect0.power] hechizos <b>Aguijonazo</b> a tu mano.",
+              "chinese_traditional": "將[effect0.power]張<b>蜇刺</b>法術卡加入手牌。",
+              "korean": "<b>가시 발사</b> 주문 [effect0.power]장을 패에 추가합니다.",
+              "japanese": "手札に<b>刺突</b>の呪文を[effect0.power]枚追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassBanished",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramInt": 3,
+                "additionalParamInt": 3,
+                "paramCardPool": "StingOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-919833bc2deff88b-c68aed0837f4ac448a763b139e7deb6b-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "WyldentenBuffOnIncant1",
+                    "bonusDamage": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusHP": 10
+        },
+        {
+          "id": "WyldentenSlayForSting2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-3da2325ba71f200d-0dbdd189430530448931657bac2af911-v2",
+            "english": "Thornlord II",
+            "french": "Seigneur des ronces II",
+            "german": "Dornengebieter II",
+            "russian": "Владыка шипов II",
+            "portuguese": "Senhor dos Espinhos II",
+            "chinese": "荆棘领主II",
+            "spanish": "Señor de las espinas II",
+            "chinese_traditional": "荊棘之王II",
+            "korean": "가시 군주 II",
+            "japanese": "ソーンロードII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "WyldentenSlayForStingAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-c19dc508027dd94d-cfb864648fd45fa458021626a7ca15af-v2",
+              "english": "Needlebloom",
+              "french": "Floraison d'épines",
+              "german": "Nadelblüte",
+              "russian": "Смертоносная игла",
+              "portuguese": "Florescer Espinhoso",
+              "chinese": "针刺绽放",
+              "spanish": "Flor de espino",
+              "chinese_traditional": "針刺綻放",
+              "korean": "바늘꽃",
+              "japanese": "針の花"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-98d54c695440698c-cfb864648fd45fa458021626a7ca15af-v2",
+              "english": "Add [effect0.power] <b>Sting</b> spells to hand.",
+              "french": "Ajoute [effect0.power] sorts <b>Piqûre</b> à la main.",
+              "german": "Nimm [effect0.power] <b>Stachel</b>-Zauber auf die Hand.",
+              "russian": "Добавляет [effect0.power] шт. карт <b>Укол</b> в руку.",
+              "portuguese": "Adiciona [effect0.power] feitiços de <b>Ferroada</b> à mão.",
+              "chinese": "将 [effect0.power] 张<b>蛰刺</b>法术加入手牌。",
+              "spanish": "Añade [effect0.power] hechizos <b>Aguijonazo</b> a tu mano.",
+              "chinese_traditional": "將[effect0.power]張<b>蜇刺</b>法術卡加入手牌。",
+              "korean": "<b>가시 발사</b> 주문 [effect0.power]장을 패에 추가합니다.",
+              "japanese": "手札に<b>刺突</b>の呪文を[effect0.power]枚追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassBanished",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramInt": 3,
+                "additionalParamInt": 3,
+                "paramCardPool": "StingOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-77a89bb2b082491c-0dbdd189430530448931657bac2af911-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "WyldentenBuffOnIncant2",
+                    "bonusDamage": 3
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 40,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "WyldentenSlayForSting3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-c09fe276f3c527db-8e26f6dfcce9e5d4c9868c2077345e3f-v2",
+            "english": "Thornlord III",
+            "french": "Seigneur des ronces III",
+            "german": "Dornengebieter III",
+            "russian": "Владыка шипов III",
+            "portuguese": "Senhor dos Espinhos III",
+            "chinese": "荆棘领主III",
+            "spanish": "Señor de las espinas III",
+            "chinese_traditional": "荊棘領主III",
+            "korean": "가시 군주 III",
+            "japanese": "ソーンロードIII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "WyldentenSlayForStingAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-c19dc508027dd94d-cfb864648fd45fa458021626a7ca15af-v2",
+              "english": "Needlebloom",
+              "french": "Floraison d'épines",
+              "german": "Nadelblüte",
+              "russian": "Смертоносная игла",
+              "portuguese": "Florescer Espinhoso",
+              "chinese": "针刺绽放",
+              "spanish": "Flor de espino",
+              "chinese_traditional": "針刺綻放",
+              "korean": "바늘꽃",
+              "japanese": "針の花"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-98d54c695440698c-cfb864648fd45fa458021626a7ca15af-v2",
+              "english": "Add [effect0.power] <b>Sting</b> spells to hand.",
+              "french": "Ajoute [effect0.power] sorts <b>Piqûre</b> à la main.",
+              "german": "Nimm [effect0.power] <b>Stachel</b>-Zauber auf die Hand.",
+              "russian": "Добавляет [effect0.power] шт. карт <b>Укол</b> в руку.",
+              "portuguese": "Adiciona [effect0.power] feitiços de <b>Ferroada</b> à mão.",
+              "chinese": "将 [effect0.power] 张<b>蛰刺</b>法术加入手牌。",
+              "spanish": "Añade [effect0.power] hechizos <b>Aguijonazo</b> a tu mano.",
+              "chinese_traditional": "將[effect0.power]張<b>蜇刺</b>法術卡加入手牌。",
+              "korean": "<b>가시 발사</b> 주문 [effect0.power]장을 패에 추가합니다.",
+              "japanese": "手札に<b>刺突</b>の呪文を[effect0.power]枚追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassBanished",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramInt": 3,
+                "additionalParamInt": 3,
+                "paramCardPool": "StingOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-030f8546ec3495f5-8e26f6dfcce9e5d4c9868c2077345e3f-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "WyldentenBuffOnIncant3",
+                    "bonusDamage": 4
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 70,
+          "doNotReplaceExistingUnitAbility": true
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "WyldentenRootOnStrike",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-4af857993ee0785a-c329ca88b555c584fb7f664df5b267ea-v2",
+            "english": "Strangler",
+            "french": "Étrangleur",
+            "german": "Würger",
+            "russian": "Душитель",
+            "portuguese": "Estrangulador",
+            "chinese": "扼杀者",
+            "spanish": "Apresador",
+            "chinese_traditional": "絞殺者",
+            "korean": "덩굴 속박자",
+            "japanese": "ストラングラー"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "sweep",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-abf2df8aa1812d7e-c329ca88b555c584fb7f664df5b267ea-v2",
+                "english": "Apply [rooted].",
+                "french": "Confère [rooted].",
+                "german": "Wende [rooted] an.",
+                "russian": "Накладывает [rooted].",
+                "portuguese": "Aplica [rooted].",
+                "chinese": "施加 [rooted]。",
+                "spanish": "Añade [rooted].",
+                "chinese_traditional": "施加[rooted]。",
+                "korean": "[rooted] 효과를 적용합니다.",
+                "japanese": "[rooted]を付与する。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "last_attacked_character",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "rooted",
+                      "count": 1
+                    }
+                  ],
+                  "paramInt": 100
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 10
+        },
+        {
+          "id": "WyldentenRootOnStrike2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-9be98e08a7958af1-f75f5e05d2bceae4ca41fbe0eb197789-v2",
+            "english": "Strangler II",
+            "french": "Étrangleur II",
+            "german": "Würger II",
+            "russian": "Душитель II",
+            "portuguese": "Estrangulador II",
+            "chinese": "扼杀者II",
+            "spanish": "Apresador II",
+            "chinese_traditional": "絞殺者II",
+            "korean": "덩굴 속박자 II",
+            "japanese": "ストラングラーII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "sweep",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-738a39c56a6ff451-f75f5e05d2bceae4ca41fbe0eb197789-v2",
+                "english": "Apply [rooted].",
+                "french": "Confère [rooted].",
+                "german": "Wende [rooted] an.",
+                "russian": "Накладывает [rooted].",
+                "portuguese": "Aplica [rooted].",
+                "chinese": "施加 [rooted]。",
+                "spanish": "Añade [rooted].",
+                "chinese_traditional": "施加[rooted]。",
+                "korean": "[rooted] 효과를 적용합니다.",
+                "japanese": "[rooted]を付与する。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "last_attacked_character",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "rooted",
+                      "count": 1
+                    }
+                  ],
+                  "paramInt": 100
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15,
+          "bonusHP": 35
+        },
+        {
+          "id": "WyldentenRootOnStrike3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-fb0539d305eaa7c4-aef8f1a9c362be14aa0be170bc41e9be-v2",
+            "english": "Strangler III",
+            "french": "Étrangleur III",
+            "german": "Würger III",
+            "russian": "Душитель III",
+            "portuguese": "Estrangulador III",
+            "chinese": "扼杀者III",
+            "spanish": "Apresador III",
+            "chinese_traditional": "絞殺者III",
+            "korean": "덩굴 속박자 III",
+            "japanese": "ストラングラーIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "sweep",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-d0f0bde2166de427-aef8f1a9c362be14aa0be170bc41e9be-v2",
+                "english": "Apply [rooted].",
+                "french": "Confère [rooted].",
+                "german": "Wende [rooted] an.",
+                "russian": "Накладывает [rooted].",
+                "portuguese": "Aplica [rooted].",
+                "chinese": "施加 [rooted]。",
+                "spanish": "Añade [rooted].",
+                "chinese_traditional": "施加[rooted]。",
+                "korean": "[rooted] 효과를 적용합니다.",
+                "japanese": "[rooted]を付与する。"
+              },
+              "trigger": "on_attacking",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "last_attacked_character",
+                  "targetTeamType": "heroes",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "rooted",
+                      "count": 1
+                    }
+                  ],
+                  "paramInt": 100
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 35,
+          "bonusHP": 60
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "WyldentenQuickAndDamage",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-191abfa53921d7d7-925f07fcf341a3040aba35f2775dcce2-v2",
+            "english": "Predator",
+            "french": "Prédateur",
+            "german": "Jagdtrieb",
+            "russian": "Хищник",
+            "portuguese": "Predador",
+            "chinese": "掠夺者",
+            "spanish": "Depredador",
+            "chinese_traditional": "掠食者",
+            "korean": "상위 포식자",
+            "japanese": "プレデター"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-8a71bab5ede5435f-925f07fcf341a3040aba35f2775dcce2-v2",
+                "english": "Grant [quick].",
+                "french": "Octroie <b>Rapidité</b>.",
+                "german": "Verleiht <b>Flink</b>.",
+                "russian": "Дается [quick].",
+                "portuguese": "Concede <b>Iniciativa</b>.",
+                "chinese": "获得[quick]。",
+                "spanish": "Otorga [quick].",
+                "chinese_traditional": "賦予[quick]。",
+                "korean": "[quick] 효과를 부여합니다.",
+                "japanese": "[quick]を付与する。"
+              },
+              "trigger": "after_spawn_enchant",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectEnchant",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "ambush",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15
+        },
+        {
+          "id": "WyldentenQuickAndDamage2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-adbc6dafdbd4c58e-11c20beb1567ade409e2a933258f86ff-v2",
+            "english": "Predator II",
+            "french": "Prédateur II",
+            "german": "Jagdtrieb II",
+            "russian": "Хищник II",
+            "portuguese": "Predador II",
+            "chinese": "掠夺者II",
+            "spanish": "Depredador II",
+            "chinese_traditional": "掠食者II",
+            "korean": "상위 포식자 II",
+            "japanese": "プレデターII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            },
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-8907a52451acf0a6-11c20beb1567ade409e2a933258f86ff-v2",
+                "english": "Grant [quick].",
+                "french": "Octroie <b>Rapidité</b>.",
+                "german": "Verleiht <b>Flink</b>.",
+                "russian": "Дается [quick].",
+                "portuguese": "Concede <b>Iniciativa</b>.",
+                "chinese": "获得[quick]。",
+                "spanish": "Otorga [quick].",
+                "chinese_traditional": "賦予[quick]。",
+                "korean": "[quick] 효과를 부여합니다.",
+                "japanese": "[quick]を付与する。"
+              },
+              "trigger": "after_spawn_enchant",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectEnchant",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "ambush",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 15
+        },
+        {
+          "id": "WyldentenQuickAndDamage3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-03759c8ccbc41b0c-bc9cbe3a899ebc14186abe7bb4645835-v2",
+            "english": "Predator III",
+            "french": "Prédateur III",
+            "german": "Jagdtrieb III",
+            "russian": "Хищник III",
+            "portuguese": "Predador III",
+            "chinese": "掠夺者III",
+            "spanish": "Depredador III",
+            "chinese_traditional": "掠食者III",
+            "korean": "상위 포식자 III",
+            "japanese": "プレデターIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            },
+            {
+              "statusId": "multistrike",
+              "count": 2
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-fe7ec26e4f1b1e7d-bc9cbe3a899ebc14186abe7bb4645835-v2",
+                "english": "Grant [quick].",
+                "french": "Octroie <b>Rapidité</b>.",
+                "german": "Verleiht <b>Flink</b>.",
+                "russian": "Дается [quick].",
+                "portuguese": "Concede <b>Iniciativa</b>.",
+                "chinese": "获得[quick]。",
+                "spanish": "Otorga [quick].",
+                "chinese_traditional": "賦予[quick]。",
+                "korean": "[quick] 효과를 부여합니다.",
+                "japanese": "[quick]を付与する。"
+              },
+              "trigger": "after_spawn_enchant",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectEnchant",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "ambush",
+                      "count": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20
+        }
+      ]
+    }
+  ]
+}

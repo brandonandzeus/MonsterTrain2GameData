@@ -1,0 +1,99 @@
+{
+  "id": "Boilerplate",
+  "name": "Boilerplate",
+  "nameKey": {
+    "key": "CardData_nameKey-e3c976dae3725d1c-91e68a539695f034bb7685f555627902-v2",
+    "english": "Boilerplate",
+    "french": "Coque de chaudière",
+    "german": "Kesselblech",
+    "russian": "Заготовка",
+    "portuguese": "Placa de Caldeira",
+    "chinese": "锅炉板甲",
+    "spanish": "Coraza de caldera",
+    "chinese_traditional": "鍋爐板",
+    "korean": "보일러 판",
+    "japanese": "ボイラー板"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-626f9f875484d527-91e68a539695f034bb7685f555627902-v2",
+      "english": "“The only steel I trust is the kind that doesn’t buckle under the Pyre’s pressure. If a boiler can endure that heat, a breastplate can endure anything else.”—Herzal, “My Workshop, My Life”",
+      "french": "<nobr>« Le</nobr> seul acier auquel je fais confiance est celui qui ne se déforme pas sous l'intensité du Brasier. Si une chaudière peut résister à une telle chaleur, une cuirasse peut résister à <nobr>tout. »</nobr> — Herzal, <nobr>« Mon</nobr> atelier, ma <nobr>vie »</nobr>",
+      "german": "„Ich vertraue nur jenem Stahl, der unter dem Druck der Höllenglut nicht nachgibt. Wenn ein Kessel dieser Hitze standhalten kann, kann ein Brustpanzer alles andere aushalten.“ – Herzal, „Meine Werkstatt, mein Leben“",
+      "russian": "«Единственная сталь, которой я доверяю, — та, что не гнется под жаром Пекла. Если котел выдерживает такие температуры, значит, и кираса выдержит все остальное». — Герцаль, «Моя мастерская — моя жизнь»",
+      "portuguese": "“O único aço em que confio é aquele que não entorta sob a pressão da Pira. Se uma caldeira pode suportar aquele calor, então um peitoral é capaz de resistir a qualquer coisa.” — Herzal, “Minha Oficina, Minha Vida”",
+      "chinese": "“在我看来，只有不会被薪火的压力压弯的钢才是好钢。如果锅炉能承受住那种热度，那么胸甲就能承受住热度之外的一切。”——赫扎尔所著的《我的工匠人生》",
+      "spanish": "«El único acero en el que confío es el que no cede bajo la presión de la Pira. Si una caldera puede soportar ese calor, una coraza puede soportar todo lo demás». —Herzal, «Mi taller, mi vida»",
+      "chinese_traditional": "「我唯一信任的鋼鐵，是那種在火堆的壓力下也不會屈服的。如果一個鍋爐能承受那樣的熱度，一件胸甲就能承受其他任何東西。」——赫爾扎爾，《我的工作坊，我的人生》",
+      "korean": "“내가 신뢰하는 강철은 화로의 압력에도 굴하지 않는 강철뿐이다. 그 불길을 견뎌내는 보일러라면, 흉갑은 물론 어떤 상황도 버텨낼 수 있다.”—헤르잘, “나의 작업실, 나의 인생”",
+      "japanese": "「私が信用する鋼は、炉の圧力でゆがまないものだけだ。ボイラーがあの熱に耐えることができるならば、胸当ては他の何にも耐えられるはずだ」—ハーザル著、『我が工房、我が人生』より"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "common",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Boilerplate.prefab",
+    "m_AssetGUID": "b55838163037d254fa8f8c3d8db1d6dd"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Boilerplate_Upgrade"
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/Boilerplate/FX_Boilerplate.prefab",
+          "m_AssetGUID": "8ad6f149a159eb948a1dd6a4cf4b2200"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-c6d1e0b0215f2ffe-91e68a539695f034bb7685f555627902-v2",
+        "english": "Gain [armor] [effect0.upgrade.status0.power] permanently for each [forgepoint] spent.",
+        "french": "Octroie <nobr>[armor] [effect0.upgrade.status0.power]</nobr> définitivement pour chaque [forgepoint] dépensé.",
+        "german": "Erhalte pro investiertem [forgepoint] dauerhaft [armor] [effect0.upgrade.status0.power].",
+        "russian": "За каждое потраченное очко кузни дается [armor] х[effect0.upgrade.status0.power].",
+        "portuguese": "Recebe [armor] [effect0.upgrade.status0.power] permanentemente para cada [forgepoint] gasto.",
+        "chinese": "每花费一点 [forgepoint]，就永久获得 [armor] [effect0.upgrade.status0.power]。",
+        "spanish": "Añade [armor] [effect0.upgrade.status0.power] permanentemente por cada [forgepoint] consumido.",
+        "chinese_traditional": "每花費一點[forgepoint]，永久獲得[armor][effect0.upgrade.status0.power]。",
+        "korean": "사용한 [forgepoint] 하나당 [armor] [effect0.upgrade.status0.power] 효과를 영구적으로 획득합니다.",
+        "japanese": "消費した[forgepoint]ごとに[armor] [effect0.upgrade.status0.power]を得る。"
+      },
+      "trigger": "on_forge",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectAddUpgradeToCurrentCard",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "Boilerplate_ArmorUpgrade",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "armor",
+                "count": 2,
+                "fromPermanentUpgrade": true
+              }
+            ],
+            "skipDefaultStatusEffectNotif": true
+          },
+          "additionalParamInt1": 1
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "targetless": false,
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "Scrivener",
+  "name": "Scrivener",
+  "nameKey": {
+    "key": "CharacterData_nameKey-478a3fda08c307d7-f0749e4336eea2d4f84f2a332b54c1a3-v2",
+    "english": "Scrivener",
+    "french": "Scribe",
+    "german": "Schreiber",
+    "russian": "Писчица",
+    "portuguese": "Escriba",
+    "chinese": "代笔人",
+    "spanish": "Escriba",
+    "chinese_traditional": "書記員",
+    "korean": "대서인",
+    "japanese": "スクライヴナー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-60cde8379776235f-f0749e4336eea2d4f84f2a332b54c1a3-v2",
+      "english": "“All my books, lost in the Fall. It will take me centuries to rewrite them. I just hope my memory is correct...”",
+      "french": "<nobr>« Tous</nobr> mes livres, perdus dans la chute. Il me faudra des siècles pour les réécrire. J'espère juste que ma mémoire est <nobr>bonne... »</nobr>",
+      "german": "„All meine Bücher, verloren während des Sturzes. Es wird Jahrhunderte dauern, sie erneut zu verfassen. Hoffentlich erinnere ich mich ...“",
+      "russian": "«Все мои книги утеряны при падении, и у меня уйдут века на то, чтобы переписать их. Лишь бы память не подвела...»",
+      "portuguese": "“Todos os meus livros perdidos na Queda. Levarei séculos para reescrevê-los. Só espero que minha memória não falhe...”",
+      "chinese": "“我所有的书籍，都在陷落时遗失了。我要花几个世纪才能重写他们。但愿我的记忆靠得住……”",
+      "spanish": "«He perdido todos mis libros en la Caída. Me llevará siglos rescribirlos. Solo espero que la memoria no me falle...».",
+      "chinese_traditional": "「我的所有書籍都在墜落中遺失了。重寫它們需要花我幾個世紀的時間。我只希望我還記得其中的內容……」",
+      "korean": "\"파멸이 닥쳤을 때 모든 서적을 잃어버렸다. 다시 쓰려면 몇 세기가 걸릴 거야. 제발 기억이 온전해야 할 텐데...\"",
+      "japanese": "「月が落とされた際に私の本はすべて失われた。書き直すには何百年もかかるわ。記憶違いがなければいいのだけれど…」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Scrivener.prefab",
+    "m_AssetGUID": "f80f7492f86aaae4a95ef2898974cf54"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Scrivener/FX_ScrivenerAttack.prefab",
+      "m_AssetGUID": "310221325bcec464f95581a737be4f22"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Scrivener/FX_ScrivenerImpact.prefab",
+      "m_AssetGUID": "1218d43061fb4284db44ed127f5a3eab"
+    },
+    "spawnLocation": "character_center"
+  },
+  "unitAbility": {
+    "id": "ScrivenerAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-575a3bb2fcd05b73-06092911555445847bff080321eb3397-v2",
+      "english": "Spellweave",
+      "french": "Tissage de sort",
+      "german": "Zauberflechte",
+      "russian": "Сплетение чар",
+      "portuguese": "Feitiçaria",
+      "chinese": "织法",
+      "spanish": "Enlace arcano",
+      "chinese_traditional": "咒語編織",
+      "korean": "마법 직조",
+      "japanese": "呪文織工"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-6687abf5ecf0038e-06092911555445847bff080321eb3397-v2",
+      "english": "Draw a spell and apply -[effect0.upgrade.costreduction][ember].",
+      "french": "Piochez un sort avec -[effect0.upgrade.costreduction][ember].",
+      "german": "Ziehe einen Zauber und wende -[effect0.upgrade.costreduction][ember] an.",
+      "russian": "Возьмите чары. У них будет -[effect0.upgrade.costreduction][ember].",
+      "portuguese": "Compra um feitiço e aplica -[effect0.upgrade.costreduction][ember].",
+      "chinese": "抽一张法术，并获得 -[effect0.upgrade.costreduction][ember]。",
+      "spanish": "Roba un hechizo y añade -[effect0.upgrade.costreduction][ember].",
+      "chinese_traditional": "抽一張法術卡並施加-[effect0.upgrade.costreduction][ember]。",
+      "korean": "주문 카드를 뽑고 -[effect0.upgrade.costreduction][ember]을 적용합니다.",
+      "japanese": "呪文をドローして、-[effect0.upgrade.costreduction][ember]を付与する。"
+    },
+    "cardType": "spell",
+    "rarity": "rare",
+    "linkedClass": "ClassLunaCoven",
+    "cardArtPrefabVariantRef": {
+      "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Scrivener.prefab",
+      "m_AssetGUID": "92769b864e4ef11408efd7173f420634"
+    },
+    "effects": [
+      {
+        "effectStateName": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+        "targetMode": "room",
+        "targetTeamType": "none",
+        "paramCardUpgradeData": {
+          "id": "ScrivenerAbility_Upgrade",
+          "costReduction": 1,
+          "xCostReduction": 1
+        }
+      },
+      {
+        "effectStateName": "CardEffectDrawType",
+        "targetMode": "draw_pile",
+        "paramCardFilter": {
+          "id": "SpellsOnlyExcludeStarterCards",
+          "cardType": "spell",
+          "disallowedCardPools": [
+            "StarterCardsOnly"
+          ]
+        },
+        "paramInt": 1
+      }
+    ],
+    "cooldownAfterActivated": 2,
+    "isUnitAbility": true,
+    "initialKeyboardTarget": "front_friendly",
+    "artistAttribution": "Genevieve Bega"
+  },
+  "size": 1,
+  "health": 8,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 15,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Selene"
+  ],
+  "characterChatterData": "LunaCovenSeleneChatterdata"
+}

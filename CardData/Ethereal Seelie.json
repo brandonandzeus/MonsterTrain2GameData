@@ -1,0 +1,149 @@
+{
+  "id": "EtherealSeelie",
+  "name": "Ethereal Seelie",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "rare",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_EtherealSeelie.prefab",
+    "m_AssetGUID": "2e06d554a335fef4892aa4175ba436a9"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterEtherealSeelie",
+        "nameKey": {
+          "key": "CharacterData_nameKey-ad1852079ad5228a-f41f8a6bc6cf17143b51f673a3697c31-v2",
+          "english": "Ethereal Seelie",
+          "french": "Fée éthérée",
+          "german": "Ätherische Seelie",
+          "russian": "Воздушная фея",
+          "portuguese": "Fada Etérea",
+          "chinese": "优雅小仙女",
+          "spanish": "Fata etérea",
+          "chinese_traditional": "虛幻精靈",
+          "korean": "천계 요정",
+          "japanese": "エセリアル・シーリー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-f64ec5d637330b74-f41f8a6bc6cf17143b51f673a3697c31-v2",
+            "english": "When the seelie sing their duets, misfortune is said to be near. However, it is when they are silent that true calamity is feared.",
+            "french": "Lorsque les fées chantent leurs duos, on dit que le malheur est proche. Cependant, c'est lorsqu'elles se taisent que l'on craint une véritable calamité.",
+            "german": "Wenn die Seelie ihre Duette singen, soll das Unglück nah sein. Doch erst wenn sie schweigen, steht Schreckliches bevor.",
+            "russian": "Когда воздушные феи запевают свои дуэты, это дурной знак, предвещающий неприятности. А если они замолкают совсем, то нужно ждать настоящей беды.",
+            "portuguese": "Quando as fadas cantam seus duetos, diz-se que o infortúnio está próximo. Entretanto, é quando elas se calam que a verdadeira calamidade acontece.",
+            "chinese": "据说当小仙女唱起二重唱，不幸就会降临。然而，当她们沉默时，真正的灾难才令人畏惧。",
+            "spanish": "Se dice que, cuando las fatas cantan duetos, la desgracia está cerca. Sin embargo, las verdaderas calamidades llegan cuando guardan silencio.",
+            "chinese_traditional": "當精靈唱出他們的二重唱時，不幸就會接踵而至。然而，當他們沉默時，才是真正最可怕的災難。",
+            "korean": "천계 요정이 한 쌍으로 노래를 부르면 불행이 임박했다고 여겨진다. 그러나 이들이 침묵할 때 진정한 재앙이 다가온다고 두려워한다.",
+            "japanese": "妖精たちがデュエットを歌うとき、不幸が近づいていると言われている。しかし、真の災難が訪れるのは彼女らが沈黙しているときこそなのだ。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_EtherealSeelie.prefab",
+          "m_AssetGUID": "37e76713644193d42b50e48acbf7000a"
+        },
+        "attackVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieAttack2.prefab",
+            "m_AssetGUID": "50436e5870431eb4d89cda0584d38e59"
+          },
+          "spawnLocation": "character_center"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+            "m_AssetGUID": "b856194664a6e4b4da8f1c47c5a0e765"
+          },
+          "spawnLocation": "character_center"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "conduit",
+            "count": 5
+          }
+        ],
+        "roomModifiers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-7ce1a5593f827874-f41f8a6bc6cf17143b51f673a3697c31-v2",
+              "english": "Apply +[power] stack of [conduit] each time it is applied.",
+              "french": "Confère +[power]x [conduit] à chaque application.",
+              "german": "Wende bei jeder Verwendung +[power] Stapel [conduit] an.",
+              "russian": "Когда на бойца накладывается [conduit], он получает +[power] слоя.",
+              "portuguese": "Concede +[power] cargas de [conduit] cada vez que for aplicado.",
+              "chinese": "每次获得[conduit]时，获得的层数+[power]。",
+              "spanish": "Cada vez que añade [conduit], añade +[power] acumulación adicional.",
+              "chinese_traditional": "每次施加時增加+[power]層[conduit]。",
+              "korean": "유닛에게 [conduit] 효과를 적용할 때, 그 스택이 +[power] 증가합니다.",
+              "japanese": "付与されるたびに+[power]の[conduit]のスタックを付与する。"
+            },
+            "roomStateModifierClassName": "RoomStateAddStatusEffectOnStatusApplied",
+            "paramStatusEffects": [
+              {
+                "statusId": "conduit",
+                "count": 0
+              }
+            ],
+            "additionalTooltips": [
+              {
+                "statusId": "",
+                "descriptionKey": {
+                  "key": "CardTraitMagicPower_TooltipText",
+                  "english": "Increases the amount of damage dealt and health restored by spells.",
+                  "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+                  "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+                  "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+                  "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+                  "chinese": "提高法术造成的伤害与恢复的生命值。",
+                  "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+                  "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+                  "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+                  "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+                },
+                "trigger": 0,
+                "titleKey": {
+                  "key": "CardTraitMagicPower_TooltipTitle",
+                  "english": "Magic Power",
+                  "french": "Puissance magique",
+                  "german": "Magische Kraft",
+                  "russian": "Сила магии",
+                  "portuguese": "Poder Mágico",
+                  "chinese": "魔法强度",
+                  "spanish": "Poder mágico",
+                  "chinese_traditional": "魔法力量",
+                  "korean": "마법력",
+                  "japanese": "魔力"
+                },
+                "style": 8,
+                "isStatusTooltip": false,
+                "isTriggerTooltip": false,
+                "allowSecondaryPlacement": false,
+                "hideInTrainRoomUI": false
+              }
+            ],
+            "paramInt": 1
+          }
+        ],
+        "size": 1,
+        "health": 5,
+        "attackDamage": 5,
+        "attackTeleportsToDefender": false,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Fae"
+        ],
+        "characterChatterData": "LunaCovenFaeFemaleChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 6,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Samuel Lim"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "OrganHarvester",
+  "name": "Organ Harvester",
+  "nameKey": {
+    "key": "CardData_nameKey-823bdff3ae135b1c-7c38dea4e90c7a742bb9d0c986822e1c-v2",
+    "english": "Organ Harvester",
+    "french": "Collecteur d'organe",
+    "german": "Organernte",
+    "russian": "Сборщик органов",
+    "portuguese": "Colhedor de Órgãos",
+    "chinese": "器官采集器",
+    "spanish": "Extractor de órganos",
+    "chinese_traditional": "器官收割者",
+    "korean": "장기 수확기",
+    "japanese": "臓器収穫"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-98baa7fa5167bec4-7c38dea4e90c7a742bb9d0c986822e1c-v2",
+      "english": "“My experiments tend to take a toll on my the bodies of my assistants. I made this contraption so I could collect new parts with more efficiency.”\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« Mes</nobr> expériences ont tendance à faire des ravages sur les corps de mes assistants. J'ai créé cet appareil pour pouvoir prélever des organes avec plus <nobr>d'efficacité. »</nobr> \n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Meine Experimente scheinen den Körpern meiner Assistenten zuzusetzen. Mit diesem Apparat kann ich neue Teile mit größerer Effizienz beschaffen.“\n—aus Dr. Orechis Notizbuch",
+      "russian": "«Эксперименты, как правило, истощают тела моих помощников. Я создал это устройство, чтобы эффективнее собирать новые материалы».\n— Из записной книжки Оречи",
+      "portuguese": "“Meus experimentos tendem a prejudicar o corpo dos meus assistentes. Criei essa engenhoca para poder coletar novas ‘partes’ com mais eficiência.”\n— Anotação do Dr. Orechi",
+      "chinese": "“我的实验往往会对助手的身体造成伤害。我做了这个装置，让我能更高效地收集新的部件。”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«Mis experimentos suelen cobrarse su precio en los cuerpos de mis ayudantes. Diseñé este artilugio para poder recolectar nuevas piezas con mayor eficiencia».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「我的實驗往往會對我助手的身體造成損害。我製作了這個裝置，這樣我就能更有效率地收集新的身體部位。」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“내 실험은 종종 내 조수들의 신체에 큰 부담을 주곤 한다. 그래서 이 장치를 만들어 더 효율적으로 새로운 부품을 수집할 수 있게 되었다.”\n- 오레치 박사의 기록",
+      "japanese": "「わしの実験は助手たちの身体の負担になる傾向にあるようじゃ。この装置は、より効率的に新たな部品を入手できるように作ったものじゃ」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "cost": 2,
+  "cardType": "equipment",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_OrganHarvester.prefab",
+    "m_AssetGUID": "c0ef71b7493ae3a478be98889d03bcd8"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "SoulStealer_Upgrade",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-8b66a0951e559b31-747960c83c251594b939963572185eae-v2",
+              "english": "Gain [undying] [effect0.status0.power].",
+              "french": "Octroie [undying] [effect0.status0.power].",
+              "german": "Erhalte [undying] [effect0.status0.power].",
+              "russian": "Дает [effect0.status0.power] х[undying].",
+              "portuguese": "Recebe [undying] [effect0.status0.power].",
+              "chinese": "获得 [undying] [effect0.status0.power]。",
+              "spanish": "Añade [undying] [effect0.status0.power].",
+              "chinese_traditional": "獲得[undying][effect0.status0.power]。",
+              "korean": "[undying] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[undying] [effect0.status0.power]を得る。"
+            },
+            "trigger": "on_kill",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "undying",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bonusDamage": 10
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LazarusLeague/OrganHarvester/FX_OrganHarvester.prefab",
+          "m_AssetGUID": "a2c9953e8a66ac840baa17f977894c47"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Seika Nakai"
+}

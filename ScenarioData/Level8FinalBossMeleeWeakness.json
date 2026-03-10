@@ -1,0 +1,245 @@
+{
+  "id": "Level8FinalBossMeleeWeakness",
+  "name": "Level8FinalBossMeleeWeakness",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-3c119e9e34491368-241ebf0f129728a45932e8f475e6b8b5-v2",
+    "english": "Seraph Aeternus, Chosen of Savagery",
+    "french": "Séraphin Aeternus, Élu de Sauvagerie",
+    "german": "Seraph Aeternus, Grausamkeits Erwählter",
+    "russian": "Серафим Бессмертный — Избранник Изувера",
+    "portuguese": "Serafim Aeternus, o Escolhido da Barbárie",
+    "chinese": "永恒炽天使，野蛮泰坦的神选者",
+    "spanish": "Seraph Aeternus, elegido de Salvajismo",
+    "chinese_traditional": "『野性天選』撒拉弗‧艾特努斯",
+    "korean": "세비저리의 선택을 받은 자, 세라핌 아이테르누스",
+    "japanese": "セラフ・エーテルヌス、サベジャリーに選ばれし者"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-114350a40970205a-241ebf0f129728a45932e8f475e6b8b5-v2",
+    "english": "Unrecognizable from his original form, Seraph has returned as a puppet of Titans from the abyss. Seraph's Savage form will <b>weaken the defense</b> of your units and <b>enrage his own</b>.",
+    "french": "Méconnaissable sous son aspect actuel, Séraphin est revenu de l'abîme réduit à l'état de marionnette des titans. Sa forme sauvage <b>affaiblit la défense</b> de vos unités et <b>fait enrager les siennes</b>.",
+    "german": "Seraph kehrte bis zur Unkenntlichkeit verändert als Marionette der Titanen aus dem Abgrund zurück. Seine grausame Form wird die <b>Verteidigung deiner Einheiten schwächen</b> und <b>seine eigenen erzürnen</b>.",
+    "russian": "Серафим вернулся из Бездны, став марионеткой титанов — теперь его сложно узнать. В обличии, данном ему Изувером, Серафим будет <b>ослаблять защиту</b> ваших бойцов и <b>усиливать свою собственную</b>.",
+    "portuguese": "Agora irreconhecível, Serafim retornou do abismo como um fantoche dos Titãs. A forma da Barbárie do Serafim <b>enfraquecerá a defesa</b> de suas unidades e <b>enfurecerá as dele</b>.",
+    "chinese": "面目全非的炽天使已作为泰坦的傀儡从深渊中归来。炽天使的野蛮泰坦形态将会对你的单位造成<b>防御削弱</b>，并<b>激怒他自己的单位</b>。",
+    "spanish": "Seraph, irreconocible frente a su forma original, ha regresado como títere de los titanes. La forma Salvaje de Seraph <b>debilitará la defensa</b> de tus unidades y <b>enfurecerá a las suyas</b>.",
+    "chinese_traditional": "撒拉弗原本的形態難以辨認，這次變成深淵泰坦的傀儡歸來。撒拉弗的野蠻形態將<b>削弱</b>你單位的防禦並使<b>自己的單位進入狂怒</b>。",
+    "korean": "원래 모습마저 잃어버린 채, 세라핌이 티탄의 꼭두각시가 되어 심연 너머에서 돌아왔습니다. 새비저리의 힘을 얻은 세라핌은 <b>아군 유닛의 방어력</b>을 떨어뜨리고, <b>적 유닛을 격노 상태로 만듭니다</b>.",
+    "japanese": "以前の姿は見る影もなくなってしまったセラフは、深淵から来た巨人族の操り人形となって戻ってきた。セラフのサベージ形態はこちらのユニットの<b>防御を弱体化</b>し、<b>自身の怒りを強く</b>する。"
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Enemy_CorruptSeraph_AddMeleeWeaknessToUnit"
+  ],
+  "titanTrialSin": "Enemy_CorruptSeraph_AddMeleeWeaknessToUnit_TitanTrial",
+  "battleTrackNameData": "BattleMusic_Seraph",
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Seraph_Intro",
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT3_Sweep_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_Sweep",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "AttackerT3_Sweep"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT2_Titanskin"
+              },
+              {
+                "characterData": "AttackerT3_Sweep",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_Sweep"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked"
+              },
+              {
+                "characterData": "HeavyT2_Zealot_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT3_Sweep",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_Sweep"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT2_Titanskin"
+              },
+              {
+                "characterData": "AttackerT3_Sweep_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_Sweep",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT2_Titanskin",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_Sweep"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT2_Zealot"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT3_Sweep",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_Sweep"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Zealot_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "AttackerT3_Sweep_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_Sweep",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "EnchanterT2_Titanskin",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_Sweep_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked"
+              },
+              {
+                "characterData": "HeavyT3_PyreDamageIfUnblocked"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_Level8_Fragile",
+    "hardBossCharacter": "Boss_Level8_Fragile"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "Wicklash",
+  "name": "Wicklash",
+  "nameKey": {
+    "key": "CardData_nameKey-4d6b89d3f35cd2d1-0a8521d528e582d49b7cf2ac5e41dde3-v2",
+    "english": "Wicklash",
+    "french": "Lumignon",
+    "german": "Dochthiebe",
+    "russian": "Удар фитилем",
+    "portuguese": "Último Suspiro",
+    "chinese": "加速燃烧",
+    "spanish": "Mecha extintora",
+    "chinese_traditional": "燭芯之鞭",
+    "korean": "심지 채찍",
+    "japanese": "芯打ち"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7aae18d2a8ea4f3e-0a8521d528e582d49b7cf2ac5e41dde3-v2",
+    "english": "Apply +[effect0.upgrade.bonusdamage][attack] and [burnout] [effect1.status0.power] to a friendly unit.",
+    "french": "Confère +[effect0.upgrade.bonusdamage][attack] et <b>Consumation</b> [effect1.status0.power] à une unité alliée.",
+    "german": "Wende +[effect0.upgrade.bonusdamage][attack] und [effect1.status0.power] <b>Ausbrennen</b> auf eine verbündete Einheit an.",
+    "russian": "Дает союзнику +[effect0.upgrade.bonusdamage][attack] и [burnout] x[effect1.status0.power].",
+    "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack] e [effect1.status0.power] de <b>Derretimento</b> a uma unidade aliada.",
+    "chinese": "使一个友方单位获得 +[effect0.upgrade.bonusdamage][attack]与[burnout] [effect1.status0.power]。",
+    "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [burnout] [effect1.status0.power] a una unidad aliada.",
+    "chinese_traditional": "對一個友方單位施加+[effect0.upgrade.bonusdamage][attack]和[burnout][effect1.status0.power]。",
+    "korean": "아군 유닛에 +[effect0.upgrade.bonusdamage][attack] 및 [burnout] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage][attack]と[burnout] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-2a3f7bcac43c93f4-0a8521d528e582d49b7cf2ac5e41dde3-v2",
+      "english": "Those who truly cannot wait for their wax to melt can fasten additional wicks to their bodies, ensuring they burn with a brief, but beautiful, light.",
+      "french": "Les cireux les plus impatients de fondre s'affublent de mèches supplémentaires afin de disparaître dans un embrasement fugace, mais majestueux.",
+      "german": "Wer absolut nicht darauf warten kann, dass das Wachs schmilzt, kann weitere Dochte am Körper anbringen und innerhalb kurzer Zeit mit einem wunderschönen Licht verbrennen.",
+      "russian": "Те, кому не терпится быстрее растопить свой воск, могут прикрепить к телам дополнительные фитили, чтобы вспыхнуть красивым, но недолговечным огнем.",
+      "portuguese": "Aqueles que mal conseguem esperar o derretimento de sua cera podem adicionar mais pavios ao seu corpo, garantindo que brilharão intensamente, mesmo que por um breve período.",
+      "chinese": "那些不愿等待蜡烛慢慢燃烧的烛人，可以在身上插入更多烛芯。虽然这样的烛人只能绽放出短暂的烛光，但非常美丽。",
+      "spanish": "Quienes son incapaces de esperar a que su cera se derrita pueden añadir más mechas a su cuerpo, asegurando que arden con una luz fugaz, pero hermosa.",
+      "chinese_traditional": "那些真的等不及蠟燭熔化的人可以在身上裝上更多燈芯，確保他們能燃燒出短暫但美麗的光芒。",
+      "korean": "밀랍이 녹기를 참을 수 없는 몇몇 밀랍 인간은 몸에 추가로 심지를 달아 짧지만 아름다운 빛을 내며 타오르는 방법을 선택한다.",
+      "japanese": "蝋が溶けるのを待ちきれないのならば、身体に芯を足せばいい。短く、しかし美しい光を放ち燃えるであろう。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Wicklash.prefab",
+    "m_AssetGUID": "f93fed2d190a7504c917bddf927f4e80"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Wicklash",
+        "bonusDamage": 10
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Buff_Attack_PS.prefab",
+          "m_AssetGUID": "75491630f33039343baa202d7f6f7a30"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "ephemeral",
+          "count": 2
+        }
+      ],
+      "paramInt": 100
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Andrew Vera"
+}

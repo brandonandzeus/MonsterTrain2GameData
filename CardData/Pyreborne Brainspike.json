@@ -1,0 +1,119 @@
+{
+  "id": "PyreborneBrainspike",
+  "name": "Pyreborne Brainspike",
+  "nameKey": {
+    "key": "CardData_nameKey-c89d0c6102b86261-e2607088029d38747ab1f4d13ad072e6-v2",
+    "english": "Pyreborne Brainspike",
+    "french": "Neurocrampon draconide",
+    "german": "Hirnnadel der Höllenglutkinder",
+    "russian": "Пронзатель разума",
+    "portuguese": "Perfurador Cerebral Pírico",
+    "chinese": "薪龙族脑钉",
+    "spanish": "Clavo cerebral dracónico",
+    "chinese_traditional": "火焰之子腦尖刺",
+    "korean": "화로의 후예의 두뇌 쐐기",
+    "japanese": "火竜族の犬釘"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-1b9c481b9524390e-e2607088029d38747ab1f4d13ad072e6-v2",
+    "english": "Reduce [cooldown] by [x]. Apply [trait1.statusmultiplier][x] [avarice].",
+    "french": "Accélère la [cooldown] de [x]. Inflige [trait1.statusmultiplier][x] [avarice].",
+    "german": "Verringere [cooldown] um [x]. Wende [trait1.statusmultiplier][x] [avarice] an.",
+    "russian": "[cooldown] уменьшается на [x]. Накладывает [avarice] [x][trait1.statusmultiplier].",
+    "portuguese": "Reduz o [cooldown] em [x]. Aplica [trait1.statusmultiplier][x] [avarice].",
+    "chinese": "[cooldown]缩短[x]。获得[trait1.statusmultiplier][x] [avarice]。",
+    "spanish": "Reduce la [cooldown] en [x]. Añade [avarice] [trait1.statusmultiplier][x].",
+    "chinese_traditional": "[cooldown]減少[x]。施加[trait1.statusmultiplier][x][avarice]。",
+    "korean": "[cooldown]이 [x]만큼 감소합니다. [avarice] 효과를 [trait1.statusmultiplier][x] 적용합니다.",
+    "japanese": "[cooldown]を[x]減少させる。[trait1.statusmultiplier][x] [avarice]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-37a54690388747c2-e2607088029d38747ab1f4d13ad072e6-v2",
+      "english": "“And in your minds, I will hide the true location of my Hoard. However, only those willing to use my key will find it.”\n—The Rules of Fhyra, Rule #20",
+      "french": "<nobr>« Et</nobr> dans vos esprits, je dissimulerai le véritable emplacement de mon trésor. Cependant, seuls ceux qui sont prêts à utiliser ma clé le <nobr>trouveront. »</nobr> \n— Les règles de Fhyra, règle n°20",
+      "german": "„Und in euren Köpfen werde ich den genauen Standort meines Hortes verbergen. Nur jene, die bereit sind, meinen Schlüssel zu benutzen, werden ihn finden.“\n—Fhyras Regeln, Regel 20",
+      "russian": "«В чертогах вашего разума я спрячу местонахождение своего клада. Но найти его смогут лишь те, кто готов использовать мой ключ».\n— «Правила Фиры», правило 20",
+      "portuguese": "“Na mente de vocês, eu esconderei a verdadeira localização do meu tesouro. No entanto, somente aqueles que estiverem dispostos a usar minha chave o encontrarão.”\n— As Regras de Fhyra, Regra n.º 20",
+      "chinese": "“在你们心中，我会将我宝藏的真正所在之处藏起来。然而，只有那些愿意使用我的钥匙的人才能找到它。”\n——《菲拉法则》，条例#20",
+      "spanish": "«Y, en vuestras mentes, ocultaré la verdadera ubicación de mi tesoro. No obstante, solo aquellos dispuestos a usar mi llave lo encontrarán».\n—Normas de Fhyra, norma 20",
+      "chinese_traditional": "「在你們的腦海中，我會隱藏我寶藏的真正位置。然而，只有那些願意使用我鑰匙的人才能找到它。」\n——費拉法則，第20條",
+      "korean": "“보물을 모아둔 장소는 너희 마음속에 있다. 이를 찾는 것은 내 열쇠를 사용할 자격이 있는 자뿐이다.”\n- 휘라 율법 20조",
+      "japanese": "「そしてあなたの意思の中では、私の財宝の真の隠し場所を隠そう。私の鍵を使う勇気のある者のみが見つけられるだろう」\n—ファイラの法、20条"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SPL_Brainspike.prefab",
+    "m_AssetGUID": "8f31b36d35a7393439e371563fa08d13"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingRemoveStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "cooldown",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "played_cost",
+      "paramEntryDuration": "previous_turn",
+      "paramInt": 1,
+      "paramTeamType": null
+    },
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "avarice",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "played_cost",
+      "paramEntryDuration": "previous_turn",
+      "paramInt": 2,
+      "paramTeamType": null
+    },
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectRemoveStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "cooldown",
+          "count": 0
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/PyreSpike/FX_Pyrespike.prefab",
+          "m_AssetGUID": "0a156ce7aa0e9c64499194e06696d5a5"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "avarice",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "unlockLevel": 9,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Leonardo Dionisi"
+}

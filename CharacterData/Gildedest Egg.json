@@ -1,0 +1,111 @@
+{
+  "id": "MonsterGildedestEgg",
+  "name": "Gildedest Egg",
+  "nameKey": {
+    "key": "CharacterData_nameKey-29e485ad45e16b2f-bde354db39c9892498b750d93041c751-v2",
+    "english": "Gildedest Egg",
+    "french": "<nobr>Dorœuf max</nobr>",
+    "german": "Vergoldetestes Ei",
+    "russian": "Золотейшее яйцо",
+    "portuguese": "Ovo de Ouro",
+    "chinese": "足金龙蛋",
+    "spanish": "Huevo doradísimo",
+    "chinese_traditional": "至尊鍍金蛋",
+    "korean": "최고급 금박 알",
+    "japanese": "黄金の卵III"
+  },
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GildedEgg.prefab",
+    "m_AssetGUID": "c454e2a1d95b22245bdf8e328a48ca28"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-fabd25184b3150e5-bde354db39c9892498b750d93041c751-v2",
+        "english": "[retreat].",
+        "french": "[retreat].",
+        "german": "[retreat].",
+        "russian": "[retreat].",
+        "portuguese": "[retreat].",
+        "chinese": "[retreat]。",
+        "spanish": "[retreat].",
+        "chinese_traditional": "[retreat]。",
+        "korean": "[retreat].",
+        "japanese": "[retreat]。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "effectStateName": "CardEffectFloorRearrange",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramInt": 1
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-57555efa8b1e3826-bde354db39c9892498b750d93041c751-v2",
+        "english": "Gain [effect0.power][dragonshoardicon] and [effect1.power][coin].",
+        "french": "Octroie [effect0.power][dragonshoardicon] et [effect1.power][coin].",
+        "german": "Erhalte [effect0.power][dragonshoardicon] und [effect1.power][coin].",
+        "russian": "Дает [effect0.power][dragonshoardicon] и [effect1.power][coin].",
+        "portuguese": "Recebe [effect0.power][dragonshoardicon] e [effect1.power][coin].",
+        "chinese": "获得 [effect0.power][dragonshoardicon]，[effect1.power][coin]。",
+        "spanish": "Obtienes [effect0.power][dragonshoardicon] y [effect1.power][coin].",
+        "chinese_traditional": "獲得[effect0.power][dragonshoardicon]和[effect1.power][coin]。",
+        "korean": "[effect0.power][dragonshoardicon], [effect1.power][coin]을 획득합니다.",
+        "japanese": "[effect0.power][dragonshoardicon]と[effect1.power][coin]を得る。"
+      },
+      "trigger": "on_encounter_complete",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAdjustDragonsHoard",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "additionalTooltips": [
+            {
+              "descriptionKey": {
+                "key": "HudTooltip_DragonsHoardInactive_Body",
+                "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+              },
+              "titleKey": {
+                "key": "HudTooltip_DragonsHoard_Title",
+                "english": "[dragonshoardicon]Dragon's Hoard",
+                "french": "[dragonshoardicon]Trésor du dragon",
+                "german": "[dragonshoardicon]Drachenschatz",
+                "russian": "[dragonshoardicon] Драконий клад",
+                "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                "chinese": "[dragonshoardicon]龙族宝藏",
+                "spanish": "[dragonshoardicon]Tesoro de dragón",
+                "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                "korean": "[dragonshoardicon]드래곤의 재보",
+                "japanese": "竜の財宝[dragonshoardicon]"
+              },
+              "style": "default"
+            }
+          ],
+          "paramInt": 6
+        },
+        {
+          "effectStateName": "CardEffectRewardGold",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "paramInt": 400
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 30,
+  "attackDamage": 0
+}

@@ -1,0 +1,70 @@
+{
+  "id": "StarterIceSpear",
+  "name": "Frozen Lance",
+  "nameKey": {
+    "key": "CardData_nameKey-cf98d38af789ae23-337a4227e5d4cce41aafe3304937a72f-v2",
+    "english": "Frozen Lance",
+    "french": "Lance gelée",
+    "german": "Gefrorene Lanze",
+    "russian": "Ледяное копье",
+    "portuguese": "Lança Congelada",
+    "chinese": "寒冰长枪",
+    "spanish": "Lanza helada",
+    "chinese_traditional": "冰凍長矛",
+    "korean": "얼음창",
+    "japanese": "凍り付いた槍"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-d8e87d13cee59cc9-337a4227e5d4cce41aafe3304937a72f-v2",
+    "english": "Deal [effect0.power] damage to the front enemy unit.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'ennemi en 1re ligne.",
+    "german": "Füge der vordersten gegnerischen Einheit [effect0.power] Schaden zu.",
+    "russian": "Наносит переднему вражескому бойцу [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano à unidade inimiga na frente.",
+    "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño a la primera unidad enemiga.",
+    "chinese_traditional": "對前排敵方單位造成[effect0.power]點傷害。",
+    "korean": "전열 적 유닛에게 [effect0.power]의 피해를 입힙니다.",
+    "japanese": "前列の敵ユニットに[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-fb9bb1cbabc7a7d0-337a4227e5d4cce41aafe3304937a72f-v2",
+      "english": "An ancient relic of a time before the Covenant. When I first came to the Stygian Sea, every resident of the Ring carried one to aid in their defense of the reigning Titan. There still lies some magic within the surrounding ice.",
+      "french": "Une relique antique datant d'avant la création de l'alliance. Lors de ma première visite de la mer Stygienne, chaque résident du cercle en avait une afin de défendre le titan régnant. La glace qui l'entoure contient encore quelques traces de magie.",
+      "german": "Ein uraltes Relikt aus der Zeit vor dem Pakt. Als ich die Stygische See das erste Mal besuchte, trug jeder Bewohner des Kreises eine solche Waffe mit sich, um den herrschenden Titanen zu verteidigen. Im umliegenden Eis ist immer noch etwas Magie enthalten.",
+      "russian": "Древняя реликвия, сохранившаяся со времен, предшествующих Согласию. Во время моего первого визита в Стигийское море такая штука для защиты правящего Титана была у каждого из обитателей того Круга. И под слоем льда все еще ощущаются остатки магии.",
+      "portuguese": "Uma antiguidade, vinda de uma era anterior ao Pacto. Quando fui para o Mar de Estige pela primeira vez, todos os residentes do Círculo portavam uma dessas para ajudar na defesa do Titã dominante. O gelo ainda emana uma certa magia.",
+      "chinese": "这件武器是契约成立之前的古代遗物。当我第一次来到冥界之海时，当地的每位居民都携带着这种长枪，用来保护它们的统治者泰坦。如今，它周身的寒冰中依然包含着部分魔力。",
+      "spanish": "Una reliquia antigua de la época anterior a la Coalición. En mi primera visita al mar Estigio, todos los residentes del anillo llevaban una para asistir en la defensa del titán. Aún quedan restos de magia en el hielo que la rodea.",
+      "chinese_traditional": "在新盟成立之前的一個古老遺物。當我第一次來到冥河海時，這個界域的每個居民都帶著一個這種東西來幫助他們保衛統治的泰坦。周圍的冰中仍然存在著一些魔力。",
+      "korean": "맹약 이전에 존재했던 고대 유물. 내가 처음 명계 바다에 왔을 당시, 고리의 모든 주민이 현지에 군림 중이던 티탄의 힘으로부터 몸을 지키기 위해 지니던 것이다. 지금도 얼어붙은 대지 곳곳에 마법의 힘이 깃들어 있다.",
+      "japanese": "盟約以前の時代の古代の遺物。初めてステュクス海に来たとき、リングの住人はみな、支配する巨人族から身を守るためにこれを持っていた。周囲の氷の中には、まだ魔法がいくらか残っている。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_FrozenLance.prefab",
+    "m_AssetGUID": "b9d9571446ec9134586ba477828b6ffc"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 10,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_IceDamage_PS.prefab",
+          "m_AssetGUID": "f4a94428add36c74d895b56763e07ce1"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Jordan Thomas"
+}

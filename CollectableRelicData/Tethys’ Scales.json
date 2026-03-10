@@ -1,0 +1,68 @@
+{
+  "id": "ChanceForSpellWeakness",
+  "name": "Tethys’ Scales",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-43b21b34eb80c149-f7476f86cbc984c41adec571005b85ef-v2",
+    "english": "Tethys’ Scales",
+    "french": "Écailles de Téthys",
+    "german": "Tethys’ Schuppen",
+    "russian": "Чешуя Тефии",
+    "portuguese": "Escamas de Tétis",
+    "chinese": "泰西丝之鳞",
+    "spanish": "Escamas de Tethys",
+    "chinese_traditional": "忒提斯的鱗片",
+    "korean": "테티스의 비늘",
+    "japanese": "テシスの鱗"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-651cfa3e984f98be-f7476f86cbc984c41adec571005b85ef-v2",
+    "english": "[effect0.power]% chance to apply [spellweakness] [effect0.effect0.status0.power] when an enemy unit enters your train.",
+    "french": "<nobr>[effect0.power] %</nobr> de chances d'infliger [spellweakness] [effect0.effect0.status0.power] lorsqu'un ennemi entre dans le train.",
+    "german": "Chance von [effect0.power] %, einer gegnerischen Einheit [spellweakness] [effect0.effect0.status0.power] zuzufügen, wenn sie deinen Zug betritt.",
+    "russian": "На бойцов врага при входе с [effect0.power]% вероятностью накладывается [spellweakness] х[effect0.effect0.status0.power].",
+    "portuguese": "[effect0.power]% de chance de aplicar [spellweakness] [effect0.effect0.status0.power] quando uma unidade inimiga entrar no seu trem.",
+    "chinese": "当敌方单位进入火车时，有 [effect0.power]% 的几率对其施加[spellweakness] [effect0.effect0.status0.power]。",
+    "spanish": "[effect0.power] % de probabilidad de añadir [spellweakness] [effect0.effect0.status0.power] cuando un enemigo entra en tu tren.",
+    "chinese_traditional": "[effect0.power]%機率在敵方單位進入你的列車時施加[spellweakness][effect0.effect0.status0.power]。",
+    "korean": "적 유닛이 열차에 진입하면 [effect0.power]% 확률로 [spellweakness] [effect0.effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "敵ユニットが列車に侵入した際に、[effect0.power]%の確率で[spellweakness] [effect0.effect0.status0.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-3d80d114962583a4-f7476f86cbc984c41adec571005b85ef-v2",
+      "english": "As a symbolic sacrifice to convince her fellow sea dwellers of her commitment to the Covenant and the confinement of the Titan, Tethys removed her own scales. I don’t understand their ways, but the gesture worked as she intended.",
+      "french": "Afin de convaincre ses frères et sœurs aquatiques de son engagement envers l'alliance et le confinement du titan, Téthys a symboliquement sacrifié ses propres écailles. Je ne comprends pas les coutumes stygiennes, mais le fait est que son geste a eu l'effet voulu.",
+      "german": "Als symbolische Opfergabe, mit der sie die anderen Meeresbewohner vom Pakt und der Gefangennahme des Titanen überzeugen wollte, entfernte sich Tethys ihre eigenen Schuppen. Ihre Kultur ist mir nach wie vor ein Rätsel, aber die Geste hatte die gewünschte Wirkung.",
+      "russian": "В качестве символической жертвы Тефия сбросила собственную чешую, чтобы убедить своих сородичей примкнуть к Согласию и пленить титана. Я не слишком разбираюсь в их культуре, но это определенно сработало.",
+      "portuguese": "Como um sacrifício simbólico para convencer seus companheiros habitantes do mar de seu compromisso com o Pacto e o confinamento do Titã, Tétis removeu suas próprias escamas. Não entendo seus métodos, mas o gesto funcionou como ela pretendia.",
+      "chinese": "为了让她的同族相信她会遵守契约，严格恪守对泰坦的控制，她拔掉了自己的鳞片作为仪式性的牺牲之举。虽然我无法理解他们这种习俗，但结果确实按照泰西丝意料的方向进行了。",
+      "spanish": "En un sacrificio simbólico para convencer a los demás habitantes del mar de su dedicación a la Coalición y al confinamiento del titán, Tethys se arrancó las escamas. No entiendo sus tradiciones, pero el gesto tuvo el efecto deseado.",
+      "chinese_traditional": "作為象徵性的犧牲並試圖說服她的海洋同伴相信她對新盟和監禁泰坦的決心，忒提斯剝除了自己的鱗片。我不理解他們這樣的做法，但這樣的態度如她所期望的那樣起了作用。",
+      "korean": "테티스는 자신을 따르는 심해 거주자들에게 맹약에 대한 헌신과 티탄을 봉인해야 하는 이유를 설득하면서 자신의 비늘을 떼어 그 의지를 밝혔다. 그 방식을 이해할 수는 없지만, 그 행동은 그녀의 의도대로 효과를 보았다.",
+      "japanese": "テシスは、盟約への誓約と巨人の封印を海の仲間たちに納得させるための象徴的な犠牲として、自らの鱗を剥ぎ取った。彼らのやり方は理解できないが、その行為は彼女の意図通りの結果をもたらすことになった。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectChanceAddEffectAfterSpawn",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "spell weakness",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": 50
+    }
+  ],
+  "unlockLevel": 6
+}

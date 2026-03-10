@@ -1,0 +1,71 @@
+{
+  "id": "EquippedUnitsGainArmor",
+  "name": "Deepwood Oil",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-9b43cdac4cb2e8e3-6ea29c1ccd312534f9718b213bfea818-v2",
+    "english": "Deepwood Oil",
+    "french": "Huile du Boissauvage",
+    "german": "Tiefwald-Öl",
+    "russian": "Лесное масло",
+    "portuguese": "Óleo da Mata Profunda",
+    "chinese": "深林油",
+    "spanish": "Aceite abisal",
+    "chinese_traditional": "深木油",
+    "korean": "깊은 숲 기름",
+    "japanese": "深き森の油"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-40bba99a1b6645bc-6ea29c1ccd312534f9718b213bfea818-v2",
+    "english": "Equipped units gain [armor] [effect0.trigger0.effect0.status0.power].",
+    "french": "Les unités équipées gagnent [armor] [effect0.trigger0.effect0.status0.power].",
+    "german": "Ausgerüstete Einheiten erhalten [armor] [effect0.trigger0.effect0.status0.power].",
+    "russian": "Бойцам со снаряжением дается [armor] х[effect0.trigger0.effect0.status0.power].",
+    "portuguese": "As unidades equipadas recebem [armor] [effect0.trigger0.effect0.status0.power].",
+    "chinese": "有装备的单位获得 [armor] [effect0.trigger0.effect0.status0.power]。",
+    "spanish": "Las unidades equipadas añaden [armor] [effect0.trigger0.effect0.status0.power].",
+    "chinese_traditional": "已裝備的單位獲得[armor][effect0.trigger0.effect0.status0.power]。",
+    "korean": "장비를 장착한 유닛이 [armor] [effect0.trigger0.effect0.status0.power] 효과를 획득합니다.",
+    "japanese": "装備したユニットが[armor] [effect0.trigger0.effect0.status0.power]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-1b31e4e4002bbb76-6ea29c1ccd312534f9718b213bfea818-v2",
+      "english": "Long ago, young demons ventured into the Wild Woods and dipped their blades in the forest rivers. Their reward for their bravery was a blade that would never break.",
+      "french": "Il y a bien longtemps, de jeunes démons s'aventurèrent dans le Boissauvage et trempèrent leurs lames dans les rivières de la forêt. En récompense pour leur bravoure, ils reçurent une lame qui ne se briserait jamais.",
+      "german": "Vor langer Zeit wagten sich junge Dämonen ins Wildholz und tauchten ihre Klingen in die Flüsse dort. Die Belohnung für ihren Mut war eine Klinge, die niemals brechen würde.",
+      "russian": "Давным-давно юные демоны отважились зайти в Диколесье и омыть свои мечи в лесных реках. Наградой за их храбрость стал клинок, который никогда не сломается.",
+      "portuguese": "Há muito tempo, jovens demônios se aventuraram na Mata Selvagem e mergulharam as lâminas nos rios da floresta. A recompensa por sua bravura era uma lâmina que nunca se quebraria.",
+      "chinese": "很久以前，年轻的恶魔冒险进入野林，将他们的刀刃浸入森林的河水里。他们以勇敢换来的奖励是一把永不折断的利刃。",
+      "spanish": "Hace mucho, los demonios jóvenes se adentraban en el Bosque Salvaje para empapar las espadas en sus ríos. La recompensa por su valor era un filo inquebrantable.",
+      "chinese_traditional": "很久以前，年輕的惡魔冒險進入荒野森林，將他們的刀刃浸入森林之河。他們的勇氣獲得了永不斷裂的刀刃作為獎勵。",
+      "korean": "오래 전, 와일드우드로 여행을 떠난 젊은 악마가 강에 칼을 담갔다. 용맹함을 증명한 그에게 주어진 보상은 결코 부서지지 않는 칼이었다.",
+      "japanese": "ずっと昔、若い悪魔たちがワイルドウッドに足を踏み入れ、森の川に刃を浸した。その勇敢さに対する報酬として、決して折れない刃が与えられたのだ。"
+    }
+  ],
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_equipment_added",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "monsters",
+              "paramStatusEffects": [
+                {
+                  "statusId": "armor",
+                  "count": 10
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters"
+    }
+  ]
+}

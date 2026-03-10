@@ -1,0 +1,77 @@
+{
+  "id": "BossCapacityDH",
+  "name": "Pyreforged Light",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-b670d864ba91b057-c7ae0de1fb2861c4382e3a6e20e1fed4-v2",
+    "english": "Pyreforged Light",
+    "french": "Lumière pyroforgée",
+    "german": "Licht der Höllenglut-Schmiede",
+    "russian": "Свет из Пекла",
+    "portuguese": "Luz Pírica",
+    "chinese": "薪火铸造之光",
+    "spanish": "Luz piroforjada",
+    "chinese_traditional": "火堆鍛造之光",
+    "korean": "화로 단조 등불",
+    "japanese": "炉力の光"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-f4bb31fe1d9d32af-c7ae0de1fb2861c4382e3a6e20e1fed4-v2",
+    "english": "+[effect0.power][capacity] on each floor. [halfbreak]Your Pyre gets +[effect2.pyreattackpower][attack] and +[effect1.pyrehealthpower][pyrehealth].",
+    "french": "+[effect0.power][capacity] à chaque niveau. [halfbreak]Votre Brasier gagne +[effect2.pyreattackpower][attack] et +[effect1.pyrehealthpower][pyrehealth].",
+    "german": "+[effect0.power][capacity] auf jeder Ebene. [halfbreak]Deine Höllenglut erhält +[effect2.pyreattackpower][attack] und +[effect1.pyrehealthpower][pyrehealth].",
+    "russian": "+[effect0.power][capacity] на каждом этаже. [halfbreak]Ваше Пекло получает +[effect2.pyreattackpower][attack] и +[effect1.pyrehealthpower][pyrehealth].",
+    "portuguese": "+[effect0.power][capacity] em cada andar. [halfbreak]Sua Pira recebe +[effect2.pyreattackpower][attack] e +[effect1.pyrehealthpower][pyrehealth].",
+    "chinese": "每层获得 +[effect0.power][capacity]。[halfbreak] 你的薪火获得 +[effect2.pyreattackpower][attack] 和 +[effect1.pyrehealthpower][pyrehealth]。",
+    "spanish": "+[effect0.power][capacity] en cada piso. [halfbreak]Tu Pira añade +[effect2.pyreattackpower][attack] y +[effect1.pyrehealthpower][pyrehealth].",
+    "chinese_traditional": "在每個樓層+[effect0.power][capacity]。[halfbreak]你的火堆獲得+[effect2.pyreattackpower][attack]和+[effect1.pyrehealthpower][pyrehealth]。",
+    "korean": "각 층이 +[effect0.power][capacity]을 갖습니다. [halfbreak]화로가 +[effect2.pyreattackpower][attack] 및 +[effect1.pyrehealthpower][pyrehealth]을 획득합니다.",
+    "japanese": "各フロアに+[effect0.power][capacity]。[halfbreak]自軍の炉が+[effect2.pyreattackpower][attack]と+[effect1.pyrehealthpower][pyrehealth]を得る。"
+  },
+  "rarity": "champion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectChangeFloorCapacity",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "Capacity_TooltipText",
+            "english": "Units can only be summoned on a floor if it has enough capacity.",
+            "french": "Les unités ne peuvent être invoquées à un niveau que s'il dispose d'une capacité suffisante.",
+            "german": "Einheiten können nur in Ebenen mit genug Kapazität gerufen werden.",
+            "russian": "Бойцов можно призвать на этаж только в том случае, если там есть место.",
+            "portuguese": "Unidades só podem ser invocadas em um andar se houver espaço suficiente.",
+            "chinese": "只有当该层有足够大的容量时，才能召唤单位。",
+            "spanish": "Solo puedes invocar unidades en un piso si tiene capacidad suficiente.",
+            "chinese_traditional": "只有在樓層有足夠容量的情況下，單位才能被召喚到該樓層。",
+            "korean": "객실 내에 충분한 수용량이 있어야 유닛을 소환할 수 있습니다.",
+            "japanese": "キャパシティが足りないとユニットをフロアに召喚することはできない。"
+          },
+          "titleKey": {
+            "key": "Capacity_TooltipTitle",
+            "english": "[capacity] Capacity",
+            "french": "[capacity] Capacité",
+            "german": "[capacity] Kapazität",
+            "russian": "[capacity] Размеры",
+            "portuguese": "[capacity] Capacidade",
+            "chinese": "[capacity] 容量",
+            "spanish": "Capacidad [capacity]",
+            "chinese_traditional": "[capacity]容量",
+            "korean": "[capacity] 수용량",
+            "japanese": "[capacity] キャパシティ"
+          }
+        }
+      ],
+      "paramInt": 2
+    },
+    {
+      "relicEffectClassName": "RelicEffectIncreasePyreHealth",
+      "paramInt2": 1
+    },
+    {
+      "relicEffectClassName": "RelicEffectIncreasePyreAttack",
+      "paramInt2": 1
+    }
+  ],
+  "isBossGivenRelic": true,
+  "ignoreForNoRelicAchievement": true
+}

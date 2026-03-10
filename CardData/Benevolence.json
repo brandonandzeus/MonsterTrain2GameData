@@ -1,0 +1,52 @@
+{
+  "id": "BenevolenceAbility",
+  "name": "Benevolence",
+  "nameKey": {
+    "key": "CardData_nameKey-a9cd512edbd93059-226cc1551ac84984cb34d9201398cf71-v2",
+    "english": "Benevolence",
+    "french": "Bienveillance",
+    "german": "Nächstenliebe",
+    "russian": "Милосердие",
+    "portuguese": "Benevolência",
+    "chinese": "仁慈",
+    "spanish": "Benevolencia",
+    "chinese_traditional": "仁慈",
+    "korean": "자비",
+    "japanese": "博愛"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-9f887c9d5af63adb-226cc1551ac84984cb34d9201398cf71-v2",
+    "english": "Restore friendly units to full health and grant +[effect1.upgrade.bonushp][health].",
+    "french": "Restaure tous les PV des unités alliées et confère +[effect1.upgrade.bonushp][health].",
+    "german": "Stellt die volle Gesundheit von verbündeten Einheiten wieder her und gewährt +[effect1.upgrade.bonushp][health].",
+    "russian": "Восстанавливает здоровье союзников до максимума и дает +[effect1.upgrade.bonushp][health].",
+    "portuguese": "Restaura toda a vida das unidades aliadas e concede +[effect1.upgrade.bonushp][health].",
+    "chinese": "完全恢复所有友方单位的生命值并使其获得 +[effect1.upgrade.bonushp][health]。",
+    "spanish": "Restaura toda la salud de las unidades aliadas y añade +[effect1.upgrade.bonushp][health].",
+    "chinese_traditional": "恢復友方單位至滿血並賦予+[effect1.upgrade.bonushp][health]。",
+    "korean": "아군 유닛들의 체력을 완전히 회복하고 +[effect1.upgrade.bonushp][health]을 부여합니다.",
+    "japanese": "味方ユニットの体力を全回復し、+[effect1.upgrade.bonushp][health]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectHeal",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramInt": 9999
+    },
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Plus5HP",
+        "bonusHP": 5
+      }
+    }
+  ],
+  "cooldownAfterActivated": 3,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

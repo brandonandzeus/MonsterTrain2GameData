@@ -1,0 +1,92 @@
+{
+  "id": "LazarusLeagueSpike",
+  "name": "Spike of the League",
+  "nameKey": {
+    "key": "CardData_nameKey-368248365285830f-adcc75644ff297e49b9d7d066d10c080-v2",
+    "english": "Spike of the League",
+    "french": "Crampon lazarien",
+    "german": "Nagel der Liga",
+    "russian": "Костыль Лиги",
+    "portuguese": "Prego da Liga",
+    "chinese": "联盟道钉",
+    "spanish": "Clavo de la Liga",
+    "chinese_traditional": "聯盟尖刺",
+    "korean": "연맹의 쐐기",
+    "japanese": "同盟の犬釘"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-30bede58bb9174e4-adcc75644ff297e49b9d7d066d10c080-v2",
+    "english": "Apply [trait1.statusmultiplier][x] [undying].",
+    "french": "Applique [trait1.statusmultiplier][x] [undying].",
+    "german": "Wende [trait1.statusmultiplier][x] [undying] an.",
+    "russian": "Дается [undying] [x][trait1.statusmultiplier].",
+    "portuguese": "Concede [trait1.statusmultiplier][x] [undying].",
+    "chinese": "获得[trait1.statusmultiplier][x] [undying]。",
+    "spanish": "Añade [undying] [trait1.statusmultiplier][x].",
+    "chinese_traditional": "施加[trait1.statusmultiplier][x][undying]。",
+    "korean": "[trait1.statusmultiplier][x] [undying] 효과를 적용합니다.",
+    "japanese": "[trait1.statusmultiplier][x] [undying]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-aea4afdf9cbbeff8-adcc75644ff297e49b9d7d066d10c080-v2",
+      "english": "Once, Dr. Orechi was someone who would bristle at the thought of his creations being used for war. He sighed and drove his spike into the Rail. Times had changed.",
+      "french": "Autrefois, le <nobr>Dr Orechi</nobr> se hérissait à l'idée que ses créations puissent être utilisées pour faire la guerre. Il soupira et planta son crampon sur la Voie. Les temps avaient changé.",
+      "german": "Einst sträubte sich Dr. Orechi gegen den Gedanken, dass seine Kreationen für den Krieg eingesetzt werden könnten. Er seufzte und rammte seinen Speer in das Gleis. Die Zeiten hatten sich geändert.",
+      "russian": "Еще совсем недавно мысль о том, что его создания можно использовать на войне, приводила доктора Оречи в ярость. Он вздохнул и вогнал свой костыль в рельсы. Времена изменились.",
+      "portuguese": "Antes, o Dr. Orechi era alguém que se irritava com a ideia de suas criações serem usadas para a guerra. Ele suspirou e cravou seu espinho no Trilho. Os tempos mudaram.",
+      "chinese": "曾经，奥莱奇博士一想到自己的作品会被用于战争，就气不打一处来。他叹了叹气，将自己的道钉刺入铁道。时代已经变了。",
+      "spanish": "En otra época, el Dr. Orechi enfurecía ante la idea de que sus creaciones se usaran en la guerra. Suspiró y fijó su clavo en los Raíles. Los tiempos han cambiado.",
+      "chinese_traditional": "曾經，奧雷奇博士一想到自己的作品被用於戰爭就會怒不可遏。他嘆了口氣，將尖刺釘進了軌道。時代變了。",
+      "korean": "오래 전, 오레치 박사는 자신이 만든 창조물을 전쟁에 사용하는 것에 극도로 분노했었다. 그랬던 박사도 선로에 쐐기를 박을 수밖에 없었다. 시대가 변했기 때문이다.",
+      "japanese": "かつて、ドクター・オレチは自身の発明品が戦争に使われると考えるだけで憤慨するような人物だった。彼はため息をつき、鉄道に釘を打ち込んだ。時代は変わったのだ。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_SpikeOfTheLeague.prefab",
+    "m_AssetGUID": "6f0b6ae313f1f0842b5d884b3e64a982"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    },
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "undying",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "played_cost",
+      "paramInt": 1
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "undying",
+          "count": 0
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LazarusLeague/LazLeagueSpike/FX_LeagueSpike.prefab",
+          "m_AssetGUID": "390edc4e902e698468fd8d1bc6749f22"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Mikhail Cang"
+}

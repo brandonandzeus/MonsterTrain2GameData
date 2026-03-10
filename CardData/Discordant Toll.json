@@ -1,0 +1,89 @@
+{
+  "id": "ScourgeT2",
+  "name": "Discordant Toll",
+  "nameKey": {
+    "key": "CardData_nameKey-b76147faecb7dd3d-0cc050cac6894c645a96f4b9e195f4aa-v2",
+    "english": "Discordant Toll",
+    "french": "Tintement dissonant",
+    "german": "Zerrissener Tribut",
+    "russian": "Неблагозвучный звон",
+    "portuguese": "Som Discordante",
+    "chinese": "不谐钟声",
+    "spanish": "Tañido discordante",
+    "chinese_traditional": "不諧之鐘",
+    "korean": "거슬리는 종소리",
+    "japanese": "不協和音の警鐘"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-93bf189ef481cf07-0cc050cac6894c645a96f4b9e195f4aa-v2",
+      "english": "As Dominion arrived upon Heaven its acolytes began to ring the bells, their hands bloodied until they could ring no more.",
+      "french": "Quand Domination arriva au paradis, ses acolytes se mirent à sonner les cloches jusqu'à avoir les mains totalement ensanglantées.",
+      "german": "Als Herrschaft im Himmel eintraf, läuteten seine Schergen die Glocken, bis ihre blutenden Hände vor Erschöpfung versagten.",
+      "russian": "Когда Доминион прибыл на в Рай, его прислужники начали звонить в колокола, и звонили до тех пор, пока не стерли руки в кровь и не выбились из сил.",
+      "portuguese": "Quando o Domínio chegou ao Céu, seus acólitos começaram a tocar os sinos com as mãos ensanguentadas até não poderem mais.",
+      "chinese": "当统御泰坦抵达天堂时，它的侍从们开始敲响钟声，直到他们的双手鲜血淋漓，再也敲不动。",
+      "spanish": "Cuando Dominio llegó al Cielo, sus acólitos hicieron repicar sus campanas hasta que sus manos se cubrieron de sangre y fueron incapaces de continuar.",
+      "chinese_traditional": "當主宰到達天堂時，它的信徒們開始敲響鐘聲，雙手流著血，直到再也敲不動為止。",
+      "korean": "도미니온이 천상에 도달하자, 그의 추종자들은 손이 피로 물들어 더 이상 울릴 수 없을 때까지 쉬지 않고 종을 울렸다.",
+      "japanese": "ドミニオンが天界に到着すると、信奉者たちは鐘を鳴らし始めた。手が血だらけになろうとも、腕が上がらなくなるまで鳴らし続けた。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "junk",
+  "rarity": "uncommon",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_DiscordantToll.prefab",
+    "m_AssetGUID": "9ee5980029666924aa7e5fe3f10e95c9"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitSelfPurge"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectNULL",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramBool2": true,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Blights/DiscordantToll/FX_DiscordantToll.prefab",
+          "m_AssetGUID": "cd06ead0c16957844adf8b6a8d265871"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-2fe22be58530412e-0cc050cac6894c645a96f4b9e195f4aa-v2",
+        "english": "Your Pyre takes [effect0.power] damage.",
+        "french": "Votre Brasier subit <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Deine Höllenglut nimmt [effect0.power] Schaden.",
+        "russian": "Ваше Пекло получает [effect0.power] урона.",
+        "portuguese": "Sua Pira sofre [effect0.power] de dano.",
+        "chinese": "你的薪火受到 [effect0.power] 点伤害。",
+        "spanish": "Tu Pira sufre [effect0.power] de daño.",
+        "chinese_traditional": "你的火堆受到[effect0.power]點傷害。",
+        "korean": "화로가 [effect0.power]의 피해를 받습니다.",
+        "japanese": "自軍の炉が[effect0.power]のダメージを受ける。"
+      },
+      "trigger": "on_unplayed_negative",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "pyre",
+          "targetTeamType": "none",
+          "suppressPyreRoomFocus": true,
+          "paramInt": 3
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

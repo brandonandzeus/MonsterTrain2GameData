@@ -1,0 +1,48 @@
+{
+  "id": "GiveAvariceWhelpAbility",
+  "name": "Expensive Taste",
+  "nameKey": {
+    "key": "CardData_nameKey-9d83faff2048131f-7fc660d73776f134384daefbfc648867-v2",
+    "english": "Expensive Taste",
+    "french": "Goûts de luxe",
+    "german": "Teurer Geschmack",
+    "russian": "Любовь к роскоши",
+    "portuguese": "Gosto Refinado",
+    "chinese": "昂贵品味",
+    "spanish": "Gustos caros",
+    "chinese_traditional": "高貴品味",
+    "korean": "고급 취향",
+    "japanese": "高価な趣味"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-d5495b3f266833f0-7fc660d73776f134384daefbfc648867-v2",
+    "english": "Apply [avarice] [effect0.status0.power] to friendly units.",
+    "french": "Applique [avarice] [effect0.status0.power] aux unités alliées.",
+    "german": "Wende [avarice] [effect0.status0.power] auf verbündete Einheiten an.",
+    "russian": "На союзников накладывается [avarice] х[effect0.status0.power].",
+    "portuguese": "Aplica [avarice] [effect0.status0.power] às unidades aliadas.",
+    "chinese": "使所有友方单位获得 [avarice] [effect0.status0.power]。",
+    "spanish": "Añade [avarice] [effect0.status0.power] a las unidades aliadas.",
+    "chinese_traditional": "對友方單位施加[avarice][effect0.status0.power]。",
+    "korean": "아군 유닛들에게 [avarice] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "味方ユニットに[avarice] [effect0.status0.power]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "avarice",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "cooldownAfterActivated": 3,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

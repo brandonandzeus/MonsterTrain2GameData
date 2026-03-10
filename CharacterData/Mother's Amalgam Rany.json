@@ -1,0 +1,96 @@
+{
+  "id": "RAny_Heavy_T2_BurstIfUnblocked",
+  "name": "Mother's Amalgam Rany",
+  "nameKey": {
+    "key": "CharacterData_nameKey-561f6d0223661c95-a741473f83810b7499c6ddfbbce4f5b5-v2",
+    "english": "Mother's Amalgam",
+    "french": "Amalgame de la Mère",
+    "german": "Mutters Amalgam",
+    "russian": "Амальгама Матери",
+    "portuguese": "Amálgama da Mãe",
+    "chinese": "母亲的混合怪",
+    "spanish": "Amalgama de Madre",
+    "chinese_traditional": "母親的融合體",
+    "korean": "어머니의 아말감",
+    "japanese": "マザーの水銀合金"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-a26a30a3fa9e3081-a741473f83810b7499c6ddfbbce4f5b5-v2",
+      "english": "Born by the brute spirit of Savagery as a twisted combination between an angel and its stead, this angel was further transformed into a deadly bloom by the Mother.",
+      "french": "Né de l'esprit brutal de Sauvagerie, cet amalgame impie d'un ange et de sa monture fut ensuite transformé en une fleur redoutable par la Mère.",
+      "german": "Dieser Engel, geboren aus dem brutalen Geist der Grausamkeit und als verderbte Mixtur aus einem Engel und seinem Reittier, wurde von der Mutter in eine tödlichen Blüte verwandelt.",
+      "russian": "Это порождение жестокой воли Изувера, уродливый гибрид ангела и его скакуна, Мать-природа превратила в смертоносное соцветие.",
+      "portuguese": "Nascido do espírito bruto da Barbárie como uma combinação distorcida entre um anjo e sua montaria, este anjo ainda foi mais transformado em uma flor letal pela Mãe.",
+      "chinese": "这个天使由野蛮泰坦以其残暴意志，将一名天使与其坐骑扭曲融合而成，后来母亲将其进一步改造成了一朵致命之花。",
+      "spanish": "Esta creación, combinación de un ángel y su corcel a manos del espíritu brutal de Salvajismo, floreció en algo aún más letal bajo la influencia de la Madre.",
+      "chinese_traditional": "此天使誕生於「野性」的殘暴意志，是天使與其坐騎的扭曲結合體，隨後更被母親轉化為致命的殺戮之花。",
+      "korean": "세비저리의 난폭한 영혼에서 태어나, 천사와 그 탈것이 뒤틀린 형태로 결합된 이 천사는 어머니에 의해 다시금 변형되어 치명적인 꽃으로 거듭났다.",
+      "japanese": "サベジャリーの凶暴な精神により捻じ曲げられ一体化した天使とその馬。この天使は、マザーの力により凶悪な花へとさらなる変化を遂げた。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TerrifyingAmalgam_SoulSavior.prefab",
+    "m_AssetGUID": "31303d24f7f1ef24eaf7ca69d65edf3e"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-35269a1a6a5203c9-a741473f83810b7499c6ddfbbce4f5b5-v2",
+        "english": "If you have no units on the floor, deals [effect1.power] damage to the Pyre and gains [burst] [effect0.status0.power].",
+        "french": "Si vous n'avez pas d'unités à ce niveau, inflige <nobr>[effect1.power] DGT</nobr> au Brasier et octroie <nobr>[burst] [effect0.status0.power]</nobr>.",
+        "german": "Wenn du über keine Einheiten auf der Ebene verfügst, wird [effect1.power] Schaden gegen die Höllenglut verursacht und du erhältst [burst] [effect0.status0.power].",
+        "russian": "Если на этаже нет врагов, наносит [effect1.power] урона Пеклу и получает [burst] х[effect0.status0.power].",
+        "portuguese": "Se não houver unidades no andar, causa [effect1.power] de dano à Pira e recebe [burst] [effect0.status0.power].",
+        "chinese": "若你在本层没有单位，则对薪火造成 [effect1.power] 点伤害并获得 [burst] [effect0.status0.power]。",
+        "spanish": "Si no tienes unidades en el piso, inflige [effect1.power] de daño a la Pira y añade [burst] [effect0.status0.power].",
+        "chinese_traditional": "如果你在此樓層沒有單位，對薪火造成[effect1.power]點傷害並獲得[burst][effect0.status0.power]。",
+        "korean": "해당 층에 유닛이 없으면, 화로에 [effect1.power]의 피해를 입히고 [burst] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "フロアにユニットが不在の場合、炉に[effect1.power]のダメージを与え、[burst] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffectIfNoPlayerUnits",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "burst",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "effectStateName": "CardEffectPyreDamageIfNoPlayerUnits",
+          "targetMode": "pyre",
+          "targetTeamType": "both",
+          "paramInt": 3,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/CharacterFX/Attacks/SavageryTitan/FX_SavageryPyreProc.prefab",
+              "m_AssetGUID": "25a16339511bc0149b3a048d91cf3be4"
+            },
+            "spawnLocation": "character_center"
+          },
+          "appliedToSelfVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/CharacterFX/Attacks/TerrifyingAmalgam/FX_SavageryPyreProcCharacterT3.prefab",
+              "m_AssetGUID": "e00d84f86c21b59449a8c74459fed673"
+            },
+            "spawnLocation": "character_center"
+          }
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 140,
+  "attackDamage": 8,
+  "lifemotherVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Heavy_Enemy"
+  ],
+  "characterChatterData": "R3SoulSaviorEnemies_Male_ChatterData",
+  "artistAttribution": "Taylor Bray"
+}

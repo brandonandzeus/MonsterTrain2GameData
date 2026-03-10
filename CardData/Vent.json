@@ -1,0 +1,77 @@
+{
+  "id": "Vent",
+  "name": "Vent",
+  "nameKey": {
+    "key": "CardData_nameKey-3a4216d3ba22561a-fc3ab4b5fb3e22e44be42f96a62edbf6-v2",
+    "english": "Vent",
+    "french": "Évacuation de vapeur",
+    "german": "Dampf ablassen",
+    "russian": "Клапан",
+    "portuguese": "Soltar Pressão",
+    "chinese": "排气",
+    "spanish": "Purga",
+    "chinese_traditional": "排氣",
+    "korean": "환기구",
+    "japanese": "排出口"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-ba1f4236475ea94c-fc3ab4b5fb3e22e44be42f96a62edbf6-v2",
+    "english": "Deal [trait0.power][x] damage to enemy units.",
+    "french": "Inflige <nobr>[trait0.power][x] DGT</nobr> aux unités ennemies.",
+    "german": "Füge gegnerischen Einheiten [trait0.power][x] Schaden zu.",
+    "russian": "Наносит [trait0.power][x] урона вражеским бойцам.",
+    "portuguese": "Causa [trait0.power][x] de dano às unidades inimigas.",
+    "chinese": "对所有敌方单位造成 [trait0.power][x] 点伤害。",
+    "spanish": "Inflige [trait0.power][x] de daño a las unidades enemigas.",
+    "chinese_traditional": "對敵方單位造成[trait0.power][x]點傷害。",
+    "korean": "적 유닛들에게 [trait0.power][x]의 피해를 입힙니다.",
+    "japanese": "敵ユニットに[trait0.power][x]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-90fff73f719b4a57-fc3ab4b5fb3e22e44be42f96a62edbf6-v2",
+      "english": "The Boneshaker is of my own design. Fueled by the last shards of the Pyre, the train is robust and dependable. One of its lesser-known features is the ability to unleash pressurized steam on invaders.",
+      "french": "Je suis à l'origine de la conception du Hurleflammes. Alimenté par les derniers éclats du Brasier, le train est robuste et fiable. Beaucoup ignorent sa capacité à cracher de la vapeur sous pression sur les intrus.",
+      "german": "Den Knochenrüttler habe ich selbst entworfen. Er wird durch die letzten Splitter der Höllenglut angetrieben, ist robust und zuverlässig. Was viele nicht wissen: Er kann auch heißen Dampf durch Druckventile auf mögliche Feinde sprühen.",
+      "russian": "«Костолом» был сконструирован мной. Этот поезд мощен и надежен благодаря тому, что работает на последних из осколков Пекла. Одним из его малоизвестных свойств является умение обваривать непрошеных гостей горячим паром.",
+      "portuguese": "O Ossuário é criação minha. Sendo movido pelos últimos fragmentos da Pira, o trem é eficaz e robusto. Um de seus recursos pouco conhecidos é a capacidade de soltar vapor pressurizado nos invasores.",
+      "chinese": "老爷车号是我亲手设计的火车，它由薪火最后的碎片提供动力，性能强大，非常可靠。它还有一个不为人知的能力，那就是向入侵者身上排放高压蒸气。",
+      "spanish": "El Sacudehuesos es obra mía. Alimentado por los últimos fragmentos de la Pira, es un tren robusto y de confianza. Una de sus funciones menos conocidas es la de lanzar vapor a presión contra los invasores.",
+      "chinese_traditional": "碎骨者是我自己設計的。這列列車以火堆的最後碎片作為燃料，結實可靠。它鮮為人知的特點之一，是能夠向入侵者釋放高壓蒸汽。",
+      "korean": "본쉐이커는 내가 직접 설계한 작품으로, 화로의 마지막 파편을 연료로 사용해 견고하고 믿을 수 있다. 잘 알려지지는 않았지만, 침입자를 향해 고압의 증기를 발사하는 기능도 갖추고 있다.",
+      "japanese": "ボーンシェイカーは私が設計したものだ。炉の最後の欠片を燃料とし、列車は頑丈で安全だ。これはあまり知られていない機能なのだが、圧縮した蒸気を侵入者に噴射することもできる。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Vent.prefab",
+    "m_AssetGUID": "9c270b874a79d0b4280b278fae7d4de5"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAddDamage",
+      "paramTrackedValue": "played_cost",
+      "paramInt": 5,
+      "paramTeamType": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_FireSpellImpact_PS.prefab",
+          "m_AssetGUID": "8cf67fd667051b649b76811fe44a4577"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "costType": "x",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "SolgardStasisGoodStatsAbility2",
+  "name": "Resurgence II",
+  "nameKey": {
+    "key": "CardData_nameKey-4ad850f35b9fe277-3ad844367dc48af4aad215fc311fff2b-v2",
+    "english": "Resurgence II",
+    "french": "Résurgence II",
+    "german": "Wiederauferstehung II",
+    "russian": "Возрождение II",
+    "portuguese": "Ressurgimento II",
+    "chinese": "复苏 II",
+    "spanish": "Resurgimiento II",
+    "chinese_traditional": "復甦II",
+    "korean": "부활 II",
+    "japanese": "復活II"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-53c188188ab2675e-3ad844367dc48af4aad215fc311fff2b-v2",
+    "english": "Remove [stasis] and gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] per [stygianblessing]. Removes ability on use.",
+    "french": "Retire [stasis], octroie +[effect1.upgrade.bonusdamage][attack] et +[effect1.upgrade.bonushp][health] par [stygianblessing]. Capacité retirée à l'utilisation.",
+    "german": "Entferne [stasis] und erhalte +[effect1.upgrade.bonusdamage][attack] und +[effect1.upgrade.bonushp][health] pro [stygianblessing]. Fähigkeit wird bei Verwendung entfernt.",
+    "russian": "Снимает [stasis] и дает +[effect1.upgrade.bonusdamage][attack] и +[effect1.upgrade.bonushp][health] за каждый [stygianblessing]. Убирает способность после применения.",
+    "portuguese": "Remove [stasis] e recebe +[effect1.upgrade.bonusdamage][attack] e +[effect1.upgrade.bonushp][health] por [stygianblessing]. Remove a habilidade após o uso.",
+    "chinese": "移除[stasis]，每层[stygianblessing]获得 +[effect1.upgrade.bonusdamage][attack]和 +[effect1.upgrade.bonushp][health]。使用后移除该能力。",
+    "spanish": "Elimina [stasis] y añade +[effect1.upgrade.bonusdamage][attack] y +[effect1.upgrade.bonushp][health] por cada [stygianblessing]. Al usarla, elimina la habilidad.",
+    "chinese_traditional": "移除[stasis]並每[stygianblessing]獲得+[effect1.upgrade.bonusdamage][attack]和+[effect1.upgrade.bonushp][health]。使用後移除此能力。",
+    "korean": "[stasis]을 제거하고 [stygianblessing]마다 +[effect1.upgrade.bonusdamage][attack] 및 +[effect1.upgrade.bonushp][health]을 획득합니다. 사용 시 능력을 제거합니다.",
+    "japanese": "[stasis]を解除し、[stygianblessing]ごとに+[effect1.upgrade.bonusdamage][attack]と+[effect1.upgrade.bonushp][health]を得る。使用時にアビリティを解除する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectRemoveStatusEffect",
+      "targetMode": "self",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "untouchable",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddCardUpgradeToUnitsPerStatusEffect",
+      "targetMode": "self",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "stygian_blessing",
+          "count": 1
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "SolgardStasisGoodStatsAbility_Upgrade2",
+        "bonusDamage": 12,
+        "bonusHP": 12
+      }
+    },
+    {
+      "effectStateName": "CardEffectRemoveAbility",
+      "targetMode": "self",
+      "targetTeamType": "both"
+    }
+  ],
+  "cooldownAfterActivated": 99,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

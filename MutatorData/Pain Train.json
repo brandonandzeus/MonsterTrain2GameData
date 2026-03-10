@@ -1,0 +1,48 @@
+{
+  "id": "EnemiesGetSpikes",
+  "name": "Pain Train",
+  "nameKey": {
+    "key": "MutatorData_nameKey-0047278988d29613-084e6f2877284b4428cd96b4b41d6b04-v2",
+    "english": "Pain Train",
+    "french": "Entrée épineuse",
+    "german": "Sticheleien",
+    "russian": "Поезд боли",
+    "portuguese": "Trem da Dor",
+    "chinese": "痛苦列车",
+    "spanish": "Tren del dolor",
+    "chinese_traditional": "痛苦列車",
+    "korean": "고통의 열차",
+    "japanese": "拷問列車"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-95c864862e2a84b3-084e6f2877284b4428cd96b4b41d6b04-v2",
+    "english": "Enemy units enter with [spikes] [effect0.status0.power].",
+    "french": "Les unités ennemies entrent avec [spikes] [effect0.status0.power].",
+    "german": "Gegnerische Einheiten starten mit [spikes] [effect0.status0.power].",
+    "russian": "Бойцам врага при входе дается [spikes] х[effect0.status0.power].",
+    "portuguese": "Unidades inimigas entram com [spikes] [effect0.status0.power].",
+    "chinese": "敌方单位进入战斗时获得[spikes] [effect0.status0.power]。",
+    "spanish": "Las unidades enemigas entran con [spikes] [effect0.status0.power].",
+    "chinese_traditional": "敵方單位登場時獲得[spikes][effect0.status0.power]。",
+    "korean": "적 유닛이 [spikes] [effect0.status0.power] 상태로 등장합니다.",
+    "japanese": "敵ユニットが[spikes] [effect0.status0.power]が付与された状態で出現する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "spikes",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": -1
+    }
+  ],
+  "boonValue": -4,
+  "disableInDailyChallenges": true,
+  "tags": [
+    "enemyeffect"
+  ]
+}

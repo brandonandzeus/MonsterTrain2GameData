@@ -1,0 +1,102 @@
+{
+  "id": "IncreaseRoomCapacity",
+  "name": "Crucible Extension",
+  "nameKey": {
+    "key": "CardData_nameKey-40e5c58567896a57-1703b63f5c38c7044999bf2ee1ae099a-v2",
+    "english": "Crucible Extension",
+    "french": "Extension du creuset",
+    "german": "Schmelztiegel-Erweiterung",
+    "russian": "Доступ к Горнилу",
+    "portuguese": "Extensão do Crisol",
+    "chinese": "熔炉延展",
+    "spanish": "Extensión del Crisol",
+    "chinese_traditional": "地獄熔爐擴建",
+    "korean": "도가니 확장",
+    "japanese": "クルーシブル拡張"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b52790c719eeed0a-1703b63f5c38c7044999bf2ee1ae099a-v2",
+    "english": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "french": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "german": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "russian": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "portuguese": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "chinese": "+[effect0.upgrade.roommodifier0.power][capacity]。",
+    "spanish": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "chinese_traditional": "+[effect0.upgrade.roommodifier0.power][capacity]。",
+    "korean": "+[effect0.upgrade.roommodifier0.power][capacity].",
+    "japanese": "+[effect0.upgrade.roommodifier0.power][capacity]。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-688b785c556216af-1703b63f5c38c7044999bf2ee1ae099a-v2",
+      "english": "The number of Morsels within the Crucible seems to be endless, making the work they accomplish proceed near instantaneously. Should I need to do future work on the Boneshaker, I will remember to take this into account.",
+      "french": "Le creuset semble disposer d'un nombre illimité de sous-bistres, ce qui permet de réaliser des travaux en un temps record. Je tâcherai de m'en souvenir au cas où le Hurleflammes aurait un jour besoin d'aménagements.",
+      "german": "Es gibt scheinbar unendlich viele Nuggets im Schmelztiegel, die aufgrund ihrer schieren Menge alle anfallenden Aufgaben beinahe sofort erledigen können. Wenn ich einmal Arbeiten am Knochenrüttler zu erledigen habe, werde ich daran denken.",
+      "russian": "Кажется, будто заморышей в Горниле просто неисчислимое количество, и поэтому они справляются с работой практически моментально. Если мне однажды придется доработать «Костолом», я приму этот факт во внимание.",
+      "portuguese": "A quantidade de Lanchos no Crisol parece ser infinita, fazendo com que qualquer tarefa recebida seja concluída quase que instantaneamente. Levarei isso em consideração caso precise fazer alguns ajustes no Ossuário futuramente.",
+      "chinese": "熔炉之地影裔的数量似乎是无穷无尽的，无论它们想做什么事情，似乎都能一瞬间就完成。如果以后我在老爷车号上有什么工作要做，我应该记住这一点。",
+      "spanish": "La cantidad de pinchos en el Crisol parece ser infinita, por lo que su trabajo tiende a completarse casi al instante. Si necesito reforzar el Sacudehuesos, recordaré este dato.",
+      "chinese_traditional": "地獄熔爐內的莫塞爾數量似乎是無窮無盡的，使得它們的工作近乎都能瞬間完成。如果我將來需要在碎骨者那邊進行更多工作，我會記住將這一點納入考量。",
+      "korean": "도가니에서 태어나는 작은 그림자의 수는 거의 무한에 가까우며, 이들이 수행하는 작업은 거의 즉시 이루어진다. 앞으로 본쉐이커 관련 작업을 할 때는 이 점을 고려해야겠다.",
+      "japanese": "クルーシブルの中には数え切れないほどのモーゼルたちがおり、作業が一瞬で終わるように思える。ボーンシェイカーに手を加えるときには、このことを思い出すとしよう。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "room",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_CrucibleExtension.prefab",
+    "m_AssetGUID": "df315fecc8874e449af9a968a52d2119"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "IncreaseRoomCapacity",
+        "roomModifierUpgrades": [
+          {
+            "roomStateModifierClassName": "RoomStateCapacityModifier",
+            "paramInt": 4
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "Capacity_TooltipText",
+            "english": "Units can only be summoned on a floor if it has enough capacity.",
+            "french": "Les unités ne peuvent être invoquées à un niveau que s'il dispose d'une capacité suffisante.",
+            "german": "Einheiten können nur in Ebenen mit genug Kapazität gerufen werden.",
+            "russian": "Бойцов можно призвать на этаж только в том случае, если там есть место.",
+            "portuguese": "Unidades só podem ser invocadas em um andar se houver espaço suficiente.",
+            "chinese": "只有当该层有足够大的容量时，才能召唤单位。",
+            "spanish": "Solo puedes invocar unidades en un piso si tiene capacidad suficiente.",
+            "chinese_traditional": "只有在樓層有足夠容量的情況下，單位才能被召喚到該樓層。",
+            "korean": "객실 내에 충분한 수용량이 있어야 유닛을 소환할 수 있습니다.",
+            "japanese": "キャパシティが足りないとユニットをフロアに召喚することはできない。"
+          },
+          "titleKey": {
+            "key": "Capacity_TooltipTitle",
+            "english": "[capacity] Capacity",
+            "french": "[capacity] Capacité",
+            "german": "[capacity] Kapazität",
+            "russian": "[capacity] Размеры",
+            "portuguese": "[capacity] Capacidade",
+            "chinese": "[capacity] 容量",
+            "spanish": "Capacidad [capacity]",
+            "chinese_traditional": "[capacity]容量",
+            "korean": "[capacity] 수용량",
+            "japanese": "[capacity] キャパシティ"
+          }
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

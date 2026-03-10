@@ -1,0 +1,109 @@
+{
+  "id": "CrucibleWarden",
+  "name": "Crucible Warden",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_SalvagerWarden.prefab",
+    "m_AssetGUID": "c8b2fbad14b19fd4b84a20a0d8a0bfe7"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLevelMonsterState",
+      "paramCardData": "CrucibleCollector"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterDrainingSalvager",
+        "nameKey": {
+          "key": "CharacterData_nameKey-3aff1edfc78f308a-ff326df83cc365b4a90e2437d1dbb013-v2",
+          "english": "Crucible Warden",
+          "french": "Gardien du creuset",
+          "german": "Schmelztiegel-Aufseher",
+          "russian": "Надзиратель Горнила",
+          "portuguese": "Vigia do Crisol",
+          "chinese": "熔炉看守者",
+          "spanish": "Guardián del Crisol",
+          "chinese_traditional": "地獄熔爐守衛",
+          "korean": "도가니 간수",
+          "japanese": "クルーシブル・ウォーデン"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-450dda5cc549345b-ff326df83cc365b4a90e2437d1dbb013-v2",
+            "english": "The dreaded patrols of the Crucible Mines, wandering the long pathways in search of slacking Morsels and idle researchers. Though originally a mark of their lowly status, the Void that protrudes from their shadowed torso serves as a useful guard against worker uprisings.",
+            "french": "Les terribles patrouilles des mines du creuset errent dans les passages à la recherche de sous-bistres paresseux et de chercheurs désœuvrés. À l'origine une marque de leur statut inférieur, le Néant saillant de leur sombre torse est une protection efficace contre les insurrections de travailleurs.",
+            "german": "Die gefürchteten Patrouillen der Schmelztiegel-Minen durchstreifen die Gänge auf der Suche nach faulen Nuggets und nutzlosen Forschern. Ursprünglich war es ein Zeichen ihres niederen Status, aber die Leere, die aus ihrem schattenhaften Oberkörper herausragt, ist ein effektiver Schutz gegen Aufstände der Arbeiter.",
+            "russian": "Жуткие патрульные рудников Горнила, выслеживающие заморышей-бездельников и лентяйничающих исследователей. Изначально свидетельствуя о низком социальном статусе, печать Бездны на их темных телах также служит предупреждением тем, кто захочет поднять восстание рабочих.",
+            "portuguese": "Pavorosos patrulheiros das minas do Crisol, eles vagam pelos extensos corredores em busca de Lanchos vagabundos e pesquisadores à toa. Originalmente, a protuberância de Vácuo em seus torsos era uma marca de baixo escalão, mas agora é uma ferramenta útil contra rebeliões trabalhistas.",
+            "chinese": "熔炉矿井中令人畏惧的巡逻者。它们会在漫长的道路上巡逻，寻找偷懒的影裔和闲散的研究人员。它们的阴影之躯上镶嵌着虚空物质。尽管这些物质的本意是用来标记它们底层的社会地位，不过当发生工人起义时，这些物质可以为它们提供保护。",
+            "spanish": "Las temibles patrullas de las minas del Crisol recorren sus largos túneles en busca de pinchos gandules e investigadores holgazanes. Aunque originalmente era una marca de su baja estación, el vacío que sobresale de su torso sombrío también les protege contra las revueltas obreras.",
+            "chinese_traditional": "地獄熔爐礦井中可怕的巡邏者，在長廊中遊蕩，尋找偷懶的莫塞爾和閒置的研究者。他們陰影軀幹中突出的虛空雖然最初是他們低下地位的象徵，但現在卻成為了對抗工人起義的有用防護。",
+            "korean": "이 무시무시한 순찰병은 굼뜬 작은 그림자나 농땡이를 피우는 연구원들을 찾아 도가니 광산의 기나긴 길을 배회한다. 본래 그들의 낮은 지위를 나타내는 상징이었던 어두운 몸통 속 공허는 이제 노동 계급의 반란을 막는 유용한 방어막 역할을 한다.",
+            "japanese": "クルーシブルの坑道の恐ろしい巡回隊。怠け者のモーゼルや休憩中の研究者を探して長い道をさまよう。本来は低い身分の印だが、影の胴体から突き出た虚無は労働者の反撃に対する有効な防護具として機能している。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_SalvagerWarden.prefab",
+          "m_AssetGUID": "69df45be967219c46ba000e2bf7d0079"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-d311b5b391a6602b-ff326df83cc365b4a90e2437d1dbb013-v2",
+              "english": "Gain [damageshield] [effect0.status0.power].",
+              "french": "Octroie <nobr><b>Bouclier protecteur</b></nobr> [effect0.status0.power].",
+              "german": "Erhalte <b>Schadensschild</b> [effect0.status0.power].",
+              "russian": "Дает [effect0.status0.power] х[damageshield].",
+              "portuguese": "Concede <nobr><b>Escudo Protetor</b></nobr> [effect0.status0.power].",
+              "chinese": "获得<nobr><b>伤害护盾</b></nobr> [effect0.status0.power]。",
+              "spanish": "Añade [damageshield] [effect0.status0.power].",
+              "chinese_traditional": "獲得[damageshield][effect0.status0.power]。",
+              "korean": "[damageshield] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[damageshield] [effect0.status0.power]を得る。"
+            },
+            "trigger": "on_feed",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "damage shield",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 30,
+        "attackDamage": 20,
+        "subtypeKeys": [
+          "SubtypesData_Forager",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "UmbraShroudChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Tammy Chang"
+}

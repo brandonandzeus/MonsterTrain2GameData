@@ -1,0 +1,112 @@
+{
+  "id": "Sporelauncher",
+  "name": "Spore Launcher",
+  "cost": 2,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Sporelauncher.prefab",
+    "m_AssetGUID": "3ceed0af94a15624ab10aa219f94220e"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterSporelauncher",
+        "nameKey": {
+          "key": "CharacterData_nameKey-a8225f6176fe258f-e8cebe6928047624394ffcca19bbaa20-v2",
+          "english": "Spore Launcher",
+          "french": "Lanceur de spores",
+          "german": "Sporenwerfer",
+          "russian": "Споропускатель",
+          "portuguese": "Lançador de Esporos",
+          "chinese": "孢子发射者",
+          "spanish": "Lanzaesporas",
+          "chinese_traditional": "孢子發射者",
+          "korean": "포자 발사기",
+          "japanese": "スポア・ランチャー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-376f53b74214212d-e8cebe6928047624394ffcca19bbaa20-v2",
+            "english": "Pulled into war after the Fatal Elm’s destruction, the Spore Launchers never desired weapons and war. All these gentle shroomfolk desired was to reintroduce the native Hell Inferno Mushroom to Hell.",
+            "french": "Entraînés dans la guerre après la destruction de l'Orme funeste, les paisibles Lanceurs de spores n'ont jamais désiré prendre les armes. Leur seul souhait était de réintroduire le champignon infernal en enfer.",
+            "german": "Die Sporenwerfer wurden nach der Zerstörung der Schicksalsulme in den Krieg hineingezogen, obwohl ihnen Waffen und Gefechte fremd waren. Das sanftmütige Pilzvolk begehrte lediglich die erneute Aufzucht des Höllen-Infernalpilzes.",
+            "russian": "После уничтожения Рокового Вяза, споропускатели оказались втянутыми в войну. Но оружие и битвы их никогда не привлекали. Они просто хотели, чтобы их эндемичный вид инферномицетов поскорее вернулся в Ад.",
+            "portuguese": "Levados à guerra após a destruição do Ulmeiro Mortal, os Lançadores de Esporos nunca desejaram armas e guerra. Tudo o que esses gentis habitantes cogumelos desejavam era reintroduzir o Cogumelo Érebo no Inferno.",
+            "chinese": "在致命榆树被摧毁之后，孢子发射者被卷入了战争，尽管他们从来都不曾渴望过武器或战火。这些温文尔雅的蘑菇人，渴望的只有将当地的地狱火蘑菇重新送回地狱。",
+            "spanish": "Los lanzadores de esporas nunca se interesaron por las armas ni la guerra, aunque la destrucción del Olmo Fatal les obligó a tomar partido. Estos amables hongos solo querían reintroducir el hongo infernal en el Infierno.",
+            "chinese_traditional": "孢子發射者在致命榆樹毀滅後被捲入戰爭，他們從未渴望過武器和戰爭。這些溫和的蘑菇族所渴望的，只是將原生的地獄烈焰蘑菇重新引入地獄。",
+            "korean": "운명의 느릅나무가 무너지고 전쟁에 휘말리게 되었지만, 포자 발사대는 무기와 전쟁을 추구하지 않았다. 이 온화한 버섯 종족의 유일한 바람은 지옥화염 버섯을 지옥에 다시 되돌리는 것이었다.",
+            "japanese": "宿命の樹の破壊の後に戦いに巻き込まれたスポア・ランチャーたちは、武器も戦争も望んではいなかった。心優しきキノコたちが望んでいたのは、地獄キノコを地獄に連れ帰ることだけだった。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SporeLauncher.prefab",
+          "m_AssetGUID": "956baa2568c8aa147ba6d73dd924f1aa"
+        },
+        "projectilePrefab": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/SporeLauncher/FX_SporeLauncherAttack.prefab",
+            "m_AssetGUID": "4a35a925354baff4b8e35792f9b2a15d"
+          },
+          "spawnLocation": "character_side_fwd_center"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/StatusFX/Decay/FX_DecayProc.prefab",
+            "m_AssetGUID": "ee20c38e12da5444fb6bb40f2677cc8e"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-6e9d2d43404dff1d-e8cebe6928047624394ffcca19bbaa20-v2",
+              "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+              "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
+              "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
+              "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
+              "portuguese": "Aplica [decay] [effect0.status0.power] às unidades inimigas.",
+              "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
+              "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
+              "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
+              "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "card_monster_played",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "decay",
+                    "count": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 3,
+        "health": 30,
+        "ascendsTrainAutomatically": false,
+        "attackDamage": 30,
+        "attackTeleportsToDefender": false,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Shroom"
+        ],
+        "characterChatterData": "UnderlegionShroomMaleChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Ron Kee"
+}

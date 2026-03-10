@@ -1,0 +1,187 @@
+{
+  "id": "Boss_Level9_Savagery_V2",
+  "name": "Savagery",
+  "nameKey": {
+    "key": "CharacterData_nameKey-211769dc020cfc3e-5a9c9994b52e32945ac3c5abaac1605e-v2",
+    "english": "Savagery",
+    "french": "Sauvagerie",
+    "german": "Grausamkeit",
+    "russian": "Изувер",
+    "portuguese": "Barbárie",
+    "chinese": "野蛮泰坦",
+    "spanish": "Salvajismo",
+    "chinese_traditional": "野性",
+    "korean": "세비저리",
+    "japanese": "サベジャリー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-23a677a6f83e0012-5a9c9994b52e32945ac3c5abaac1605e-v2",
+      "english": "Savagery is the embodiment of unbridled fury. He knows no restraint, only the overwhelming instinct to conquer. Those who follow him share his thirst for destruction.",
+      "french": "Sauvagerie est l'incarnation de la fureur débridée. Il n'a aucune retenue, et n'est mû que par un irrésistible instinct de conquête. Ceux qui le suivent partagent sa soif de destruction.",
+      "german": "Grausamkeit ist das Manifest ungezügelten Zornes. Er kennt keine Zurückhaltung, nur den überwältigenden Instinkt, alles zu erobern. Seine Anhänger teilen seine Zerstörungswut.",
+      "russian": "Изувер — воплощение безудержной ярости. Им движет ничем не ограниченный инстинкт завоевателя, и разделяющие эту жажду насилия становятся его почитателями.",
+      "portuguese": "O Titã da Barbárie é a personificação da fúria desenfreada. Ele não conhece nenhuma restrição, apenas o instinto avassalador de conquistar. Aqueles que o seguem compartilham de sua sede de destruição.",
+      "chinese": "野蛮泰坦是肆无忌惮的狂怒的化身。他不知何为克制，只有一个来自本能的强大念头：杀伐。那些追随他的人都变得和他一样渴望毁灭。",
+      "spanish": "Salvajismo es la encarnación de la furia desatada. No conoce la mesura, tan solo el impulso irrefrenable de la conquista. Quienes lo siguen comparten su ansia de destrucción.",
+      "chinese_traditional": "野性是無拘無束的憤怒化身。他不知克制為何物，只知征服的本能。追隨他的人都分享著他對破壞的渴望。",
+      "korean": "세비저리는 억누를 수 없는 분노의 화신이다. 세비저리에게 인내라는 단어는 존재하지 않으며, 오직 본능에 가까운 강력한 정복욕만 존재할 뿐이다. 그의 추종자는 모두 세비저리의 파괴 충동을 공유한다.",
+      "japanese": "サベジャリーは抑えの効かない怒りの権化だ。自制を知らず、本能の支配欲にだけ従っている。彼の信奉者は同じく破壊に飢えている。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TitanOfSavagery.prefab",
+    "m_AssetGUID": "98b844b04b5d36b4995334c6fc129352"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_SeraphSpellCast_PS.prefab",
+      "m_AssetGUID": "337f088e9573a334cbb9f79b14193bd4"
+    },
+    "spawnLocation": "character_center"
+  },
+  "deathVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/MapFX/TFB Sequence/SavageryDeathFX.prefab",
+      "m_AssetGUID": "c686e8f77cc79574483cf44802c0e721"
+    },
+    "spawnLocation": "character_center"
+  },
+  "bossSpellCastVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_SeraphSpellCast_PS.prefab",
+      "m_AssetGUID": "337f088e9573a334cbb9f79b14193bd4"
+    },
+    "spawnLocation": "character_center"
+  },
+  "bossRoomSpellCastVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_SeraphSpellCastRoom_PS.prefab",
+      "m_AssetGUID": "f75ca9cf4ec66dd47b1eeaaf0b6e261f"
+    },
+    "spawnLocation": "room_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "lifelink",
+      "count": 1
+    },
+    {
+      "statusId": "pyrebane",
+      "count": 1
+    },
+    {
+      "statusId": "trample",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-8ac1427792095e0e-5a9c9994b52e32945ac3c5abaac1605e-v2",
+        "english": "Gain [rage] [effect0.status0.power]. If you have no units on the floor, deals [effect1.power] damage to the Pyre.",
+        "french": "Octroie [rage] [effect0.status0.power]. Si vous n'avez pas d'unités à ce niveau, inflige <nobr>[effect1.power] DGT</nobr> au Brasier.",
+        "german": "Erhalte [rage] [effect0.status0.power]. Wenn über keine Einheiten auf der Ebene verfügst, wird [effect1.power] Schaden gegen die Höllenglut verursacht.",
+        "russian": "Дает [rage] х[effect0.status0.power]. Если на этаже нет ваших бойцов, наносит пеклу [effect1.power] урона.",
+        "portuguese": "Recebe [rage] [effect0.status0.power]. Se não houver unidades no andar, causa [effect1.power] de dano à Pira.",
+        "chinese": "获得 [rage] [effect0.status0.power]。若你在本层没有单位，则对薪火造成 [effect1.power] 点伤害。",
+        "spanish": "Añade [rage] [effect0.status0.power]. Si no tienes unidades en el piso, inflige [effect1.power] de daño a la Pira.",
+        "chinese_traditional": "獲得[rage][effect0.status0.power]。若此樓層沒有友方單位，對火堆造成[effect1.power]點傷害。",
+        "korean": "[rage] [effect0.status0.power] 효과를 획득합니다. 해당 층에 내 유닛이 없으면, 화로에 [effect1.power]의 피해를 입힙니다.",
+        "japanese": "[rage] [effect0.status0.power]を得る。フロアにユニットが不在の場合、炉に[effect1.power]のダメージを与える。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "buff",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "effectStateName": "CardEffectPyreDamageIfNoPlayerUnits",
+          "targetMode": "pyre",
+          "targetTeamType": "both",
+          "paramInt": 5,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/CharacterFX/Attacks/SavageryTitan/FX_SavageryPyreProc.prefab",
+              "m_AssetGUID": "25a16339511bc0149b3a048d91cf3be4"
+            },
+            "spawnLocation": "character_center"
+          },
+          "appliedToSelfVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/VFX/CharacterFX/Attacks/SavageryTitan/FX_SavageryPyreProcCharacter.prefab",
+              "m_AssetGUID": "a4853d820832be841acecf1cc738d68e"
+            },
+            "spawnLocation": "character_center"
+          }
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-5bc636de61c3755e-5a9c9994b52e32945ac3c5abaac1605e-v2",
+        "english": "Gain [multistrike] [effect0.status0.power].",
+        "french": "Octroie [multistrike] [effect0.status0.power].",
+        "german": "Erhalte [multistrike] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[multistrike].",
+        "portuguese": "Recebe [multistrike] [effect0.status0.power].",
+        "chinese": "获得 [multistrike] [effect0.status0.power]。",
+        "spanish": "Añade [multistrike] [effect0.status0.power].",
+        "chinese_traditional": "獲得[multistrike][effect0.status0.power]。",
+        "korean": "[multistrike] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[multistrike] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_train_room_loop",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bossActionGroups": [
+    {
+      "actions": [
+        {
+          "actionBehaviorName": "RandomBossActionBehavior",
+          "paramTeamType": "none"
+        }
+      ],
+      "numRepeats": 0
+    }
+  ],
+  "size": 1,
+  "health": 2750,
+  "validBossAttackPhase": "both",
+  "isMiniboss": true,
+  "deathType": "none",
+  "loopsBetweenTrainFloors": true,
+  "attackDamage": 10,
+  "statusEffectImmunities": [
+    "rooted",
+    "silenced"
+  ],
+  "subtypeKeys": [
+    "SubtypesData_FinalBoss",
+    "SubtypesData_BossSavagery",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss9_Savagery_ChatterData",
+  "artistAttribution": "Luke Banke"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "GenericDuplicator",
+  "name": "Card Duplicator",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-7f78ed1884b6c4fa-11419880785057b44b129a2a26d50272-v2",
+    "english": "Card Duplicator",
+    "french": "Duplicateur de carte",
+    "german": "Karten-Duplikator",
+    "russian": "Удвоитель карт",
+    "portuguese": "Duplicador de Carta",
+    "chinese": "卡牌复制器",
+    "spanish": "Duplicador de cartas",
+    "chinese_traditional": "卡牌複製器",
+    "korean": "카드 복사기",
+    "japanese": "カードデュプリケーター"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-659419843e19d83c-11419880785057b44b129a2a26d50272-v2",
+    "english": "Duplicate any card except your Champion.",
+    "french": "Dupliquez n'importe quelle carte hors champion.",
+    "german": "Erzeuge eine Kopie einer Karte, die nicht dein Champion ist.",
+    "russian": "Создает копию любой карты, если это не Герой.",
+    "portuguese": "Duplique qualquer carta, exceto seu Campeão.",
+    "chinese": "复制任意一张非勇者卡牌。",
+    "spanish": "Haz una copia de cualquier carta menos la de campeón.",
+    "chinese_traditional": "複製任何除了你的勇士以外的卡牌。",
+    "korean": "영웅을 제외한 모든 카드를 복제합니다.",
+    "japanese": "チャンピオン以外のカードをどれでも複製する。"
+  },
+  "rarity": "rare",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardDuplicator",
+      "paramCardFilter": {
+        "id": "ExcludeChampions",
+        "excludedSubtypesOperator": "and",
+        "excludedSubtypes": [
+          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+        ]
+      },
+      "paramInt": 1
+    }
+  ]
+}

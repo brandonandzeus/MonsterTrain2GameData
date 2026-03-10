@@ -1,0 +1,74 @@
+{
+  "id": "DaemosT1",
+  "name": "DaemosT1",
+  "nameKey": {
+    "key": "SoulData_nameKey-12a8532f411fda71-815371bdf299c6647982da10fdbfd8fe-v2",
+    "english": "Daemos",
+    "french": "Déimos",
+    "german": "Daemos",
+    "russian": "Деймос",
+    "portuguese": "Daemos",
+    "chinese": "戴摩斯",
+    "spanish": "Daemos",
+    "chinese_traditional": "惡魔",
+    "korean": "심연의 사자",
+    "japanese": "デイモス"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-eac3c34f9eea2933-815371bdf299c6647982da10fdbfd8fe-v2",
+    "english": "Your Pyre takes an additional [effect0.power] damage from all sources and gains [revenge]: [draw] +[effect1.trigger0.effect0.power] next turn.",
+    "french": "Votre Brasier subit <nobr>[effect0.power] DGT</nobr> en plus de toutes les sources et gagne <nobr>[revenge] :</nobr> piochez +[effect1.trigger0.effect0.power] au prochain tour.",
+    "german": "Deine Höllenglut erleidet zusätzlich [effect0.power] Schaden aus allen Quellen und erhält [revenge]: [draw] +[effect1.trigger0.effect0.power] im nächsten Zug.",
+    "russian": "Пекло получает +[effect0.power] к урону от любых источников и [revenge]: [draw] +[effect1.trigger0.effect0.power] в следующий ход.",
+    "portuguese": "Sua Pira recebe [effect0.power] de dano adicional de todas as fontes e recebe [revenge]: <b>Compra</b> +[effect1.trigger0.effect0.power] no próximo turno.",
+    "chinese": "你的薪火受到的一切伤害额外增加 [effect0.power] 点，并获得 [revenge]：下回合 [draw] +[effect1.trigger0.effect0.power]。",
+    "spanish": "Tu Pira sufre un [effect0.power] de daño adicional de todas las fuentes y obtiene [revenge]: <b>Roba</b> +[effect1.trigger0.effect0.power] en el próximo turno.",
+    "chinese_traditional": "你的薪火從所有來源額外受到[effect0.power]點傷害，並獲得[revenge]：[draw]下回合+[effect1.trigger0.effect0.power]。",
+    "korean": "화로가 모든 피해로부터 [effect0.power]의 추가 피해를 받고 [revenge]을 획득합니다. 보복: 다음 턴에 [draw] +[effect1.trigger0.effect0.power]을 얻습니다.",
+    "japanese": "自軍の炉に対するあらゆる手段でのダメージが[effect0.power]増加し、[revenge]を得る：次のターン[draw] +[effect1.trigger0.effect0.power]。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectApplyExtraPyreDamage",
+      "paramInt": 1
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_hit",
+          "effects": [
+            {
+              "effectStateName": "CardEffectDrawAdditionalNextTurn",
+              "targetMode": "room",
+              "targetTeamType": "none",
+              "paramInt": 1
+            }
+          ],
+          "suppressTriggerNotification": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Pyre"
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-f2ec00507d14e429-815371bdf299c6647982da10fdbfd8fe-v2",
+      "english": "Defeat Lifemother while playing Hellhorned to unlock.",
+      "french": "Battez Mère Nature en jouant les Cornus pour déverrouiller.",
+      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Höllenhörnern spielst.",
+      "russian": "Чтобы разблокировать, победите Мать-природу, играя за Адские отродья.",
+      "portuguese": "Derrote a Genetriz jogando com os Endiabrados para desbloquear.",
+      "chinese": "用狱魔击败生命之母以解锁。",
+      "spanish": "Derrota a la Madre Vida con los Astados Infernales para desbloquear.",
+      "chinese_traditional": "遊玩獄魔時擊敗生命之母以解鎖。",
+      "korean": "지옥뿔 군단 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
+      "japanese": "獄角族でのプレイでライフマザーを倒してアンロック。"
+    },
+    "unlockCondition": "soul_kill_lifemother_using_hellhorned",
+    "paramInt": 1
+  },
+  "tierLevel": 1,
+  "nextTier": "DaemosT2"
+}

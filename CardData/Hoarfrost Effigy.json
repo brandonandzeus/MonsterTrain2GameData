@@ -1,0 +1,81 @@
+{
+  "id": "FrostChanneling",
+  "name": "Hoarfrost Effigy",
+  "nameKey": {
+    "key": "CardData_nameKey-3fa6a7dec7246d89-a8a975a6ce290e14eaa3d2e2cf0d8e07-v2",
+    "english": "Hoarfrost Effigy",
+    "french": "Effigie de givre",
+    "german": "Raufrost-Monument",
+    "russian": "Ледяная статуя",
+    "portuguese": "Efígies de Cristal",
+    "chinese": "凝霜雕像",
+    "spanish": "Efigie de escarcha",
+    "chinese_traditional": "冰霜遺物",
+    "korean": "흰서리상",
+    "japanese": "霜の彫像"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-3907c5e7b67120a6-a8a975a6ce290e14eaa3d2e2cf0d8e07-v2",
+    "english": "Transfer all [frostbite] on this floor to a unit, then double the amount of [frostbite].",
+    "french": "Transfère toutes les <b>Gelures</b> à ce niveau à une unité, puis double la quantité de <b>Gelures</b>.",
+    "german": "Übertrage den gesamten <b>Frostschaden</b> auf dieser Ebene auf eine Einheit, verdopple dann die Menge an <b>Frostschaden</b>.",
+    "russian": "Перенесите все эффекты <b>Обморожения</b> с этого этажа на бойца, а затем удвойте [frostbite].",
+    "portuguese": "Transfere todos os efeitos de <b>Friagem</b> neste andar para uma única unidade e dobra a <b>Friagem</b>.",
+    "chinese": "将本层所有的<b>霜冻</b>都转移到目标单位身上，之后将<b>霜冻</b>数量加倍。",
+    "spanish": "Transfiere toda la [frostbite] de este piso a una unidad y duplica la cantidad de [frostbite].",
+    "chinese_traditional": "將此樓層所有[frostbite]轉移到一個單位，然後將[frostbite]數量翻倍。",
+    "korean": "이 층의 [frostbite] 효과를 한 유닛으로 옮긴 뒤, [frostbite]의 양을 2배로 늘립니다.",
+    "japanese": "このフロアのすべての[frostbite]をユニット1体に移し、[frostbite]の値を2倍にする。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-8503115d019e48b6-a8a975a6ce290e14eaa3d2e2cf0d8e07-v2",
+      "english": "Even before the freeze, the granite monuments of the Titan dotting the sea were cold structures. Now they’ve become permanently frozen fixtures of the seascape, ominous presences easily recognizable by their sharp profiles.",
+      "french": "Même avant la Glaciation, les monuments de granit du titan qui parsèment la mer étaient des édifices glacés. À présent éternellement gelées, ces constructions sinistres déchirent le paysage marin de leurs silhouettes effilées.",
+      "german": "Selbst vor dieser Eiszeit waren die über die See verteilten Granitmonumente des Titanen kalte Strukturen. Nun sind sie Orientierungspunkte aus ewigem Eis, deren unheilvolles Profil scharf in die Höhe ragt.",
+      "russian": "Даже до наступления морозов гранитные изваяния Титана, усеивающие морское дно, излучали холод. А теперь они и вовсе превратились в навеки застывшие ледяные глыбы, чье зловещее присутствие опознается благодаря острым граням.",
+      "portuguese": "Mesmo antes do congelamento, os monumentos de granito do Titã que enfeitam o mar já eram frios. Agora que são pontos frígidos e fixos nas águas, sua presença sinistra é ainda mais marcante, graças às suas silhuetas pontiagudas.",
+      "chinese": "早在冰冻之前，泰坦的花岗岩纪念碑就装点在海岸的各个地方，冰冷袭人。而如今，它们已经永远冻结在了那里，成为了海景的一部分。从它们锋利的轮廓，不难判断出这些纪念碑乃是不祥之物。",
+      "spanish": "Incluso antes de la Congelación, los monumentos de granito de los titanes esparcidos por el mar eran estructuras frías. Ahora son una presencia gélida y siniestra, fáciles de reconocer por su silueta afilada.",
+      "chinese_traditional": "即使在被凍結之前，點綴海洋的泰坦花崗岩紀念碑也是冰冷的結構。現在它們已經成為永久凍結的海景裝置藝術，其銳利的輪廓很容易識別，並散發著不祥的存在。",
+      "korean": "티탄을 가격해 바다에 봉인한 화강암 기념물은 본래부터 차가운 구조물이었다. 이제는 얼어붙은 바다를 지탱하는 불길한 존재가 되어, 날카로운 윤곽 덕분에 쉽게 알아볼 수 있다.",
+      "japanese": "凍結の前でさえ、海に点在する巨人族の花崗岩の記念碑は冷たい構造物だった。現在、それらは海の風景に永久に凍りつき、鋭い輪郭のため簡単に認識できる不吉な存在となっている。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_HoarfrostEffigy.prefab",
+    "m_AssetGUID": "079d7ff8eaf7e814f9a50012a01dfc0f"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectTransferAllStatusEffects",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectMultiplyStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 2
+        }
+      ],
+      "paramInt": 100
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Luke Banke"
+}

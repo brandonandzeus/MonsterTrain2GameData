@@ -1,0 +1,113 @@
+{
+  "id": "Mooncaller",
+  "name": "Mooncaller",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Mooncaller.prefab",
+    "m_AssetGUID": "b83f9af03af6b634b884300a9232e925"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterMooncaller",
+        "nameKey": {
+          "key": "CharacterData_nameKey-da33c5df44f97986-b214525f369fabe488ec6c2e7b5fbadd-v2",
+          "english": "Mooncaller",
+          "french": "Chantelune",
+          "german": "Mondrufer",
+          "russian": "Призывательница",
+          "portuguese": "Chamaluna",
+          "chinese": "唤月者",
+          "spanish": "Llamadora lunar",
+          "chinese_traditional": "月召者",
+          "korean": "달부름 무녀",
+          "japanese": "ムーンコーラー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-bd397114d11514fd-b214525f369fabe488ec6c2e7b5fbadd-v2",
+            "english": "“I used to sing to the moon as one voice of thousands. Now, my voice is alone among their spirits.”",
+            "french": "<nobr>« Lorsque</nobr> je chantais pour la lune, ma voix était perdue parmi des milliers d'autres. Maintenant, ma voix est seule parmi leurs <nobr>esprits. »</nobr>",
+            "german": "„Früher besang ich als eine Stimme von Tausenden den Mond. Jetzt ist meine Stimme allein unter ihren Geistern.“",
+            "russian": "«Раньше я пела луне вместе с тысячами других. Теперь мой голос звучит один среди их умолкших душ».",
+            "portuguese": "“Eu costumava cantar para a lua como uma voz entre milhares. Agora, minha voz está sozinha entre seus espíritos.”",
+            "chinese": "“我的声音，曾是对月高歌时，千万个声音中的一个。而如今，我的声音，是他们灵魂中唯一的一个。”",
+            "spanish": "«Antes, cantaba a la luna como una voz de miles. Ahora, mi voz está sola entre sus espíritus».",
+            "chinese_traditional": "「我曾經作為萬千聲音中的其中一個向月亮歌唱。現在，只剩下我孤獨的聲音還在他們的靈魂之中。」",
+            "korean": "\"난 수천 명의 목소리를 담아 달에게 노래를 보냈어. 지금은 저들의 영혼 속에서 혼자 남아있는 것 같아.\"",
+            "japanese": "「私はかつて、何千もの声の1つとして月に向かって歌った。今、他の者たちは魂となり、私は唯一の声となった。」"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Mooncaller.prefab",
+          "m_AssetGUID": "d26aaf5adf3e38d4195d72bfb3e3c9ac"
+        },
+        "attackVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/Mooncaller/FX_MooncallerAttackFX.prefab",
+            "m_AssetGUID": "2eb896236bab1434c87a2a7497c2503e"
+          },
+          "spawnLocation": "character_center"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/Mooncaller/FX_MooncallerImpact.prefab",
+            "m_AssetGUID": "72c9a17680e5b1148b3f36ca41f0197e"
+          },
+          "spawnLocation": "character_center"
+        },
+        "roomModifiers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-af7b9dde485a5dab-b214525f369fabe488ec6c2e7b5fbadd-v2",
+              "english": "[mooncycle] triggers an additional time.",
+              "french": "Déclenche [mooncycle] une fois de plus.",
+              "german": "[mooncycle] wird ein weiteres Mal ausgelöst.",
+              "russian": "[mooncycle] срабатывает еще раз.",
+              "portuguese": "[mooncycle] aciona tempo adicional.",
+              "chinese": "[mooncycle] 额外触发一次。",
+              "spanish": "[mooncycle] se activa una vez más.",
+              "chinese_traditional": "[mooncycle]額外觸發一次。",
+              "korean": "[mooncycle] 효과가 한 번 더 발동합니다.",
+              "japanese": "[mooncycle]が追加で発動する。"
+            },
+            "roomStateModifierClassName": "RoomStateModifyTriggerCount",
+            "additionalTooltips": [
+              {
+                "statusId": "",
+                "descriptionKey": "",
+                "trigger": 51,
+                "titleKey": "",
+                "style": 0,
+                "isStatusTooltip": false,
+                "isTriggerTooltip": true,
+                "allowSecondaryPlacement": false,
+                "hideInTrainRoomUI": false
+              }
+            ],
+            "paramInt": 1,
+            "paramTrigger": "on_moon_phase_shift"
+          }
+        ],
+        "size": 1,
+        "health": 5,
+        "ascendsTrainAutomatically": false,
+        "attackDamage": 3,
+        "attackTeleportsToDefender": false,
+        "subtypeKeys": [
+          "SubtypesData_Selene"
+        ],
+        "characterChatterData": "LunaCovenSeleneChatterdata"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Leonardo Dionisi"
+}

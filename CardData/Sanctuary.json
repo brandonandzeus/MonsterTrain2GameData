@@ -1,0 +1,80 @@
+{
+  "id": "Sanctuary",
+  "name": "Sanctuary",
+  "nameKey": {
+    "key": "CardData_nameKey-47106c911816e23c-55aa9f37a256818458b859712cbcca8b-v2",
+    "english": "Sanctuary",
+    "french": "Sanctuaire",
+    "german": "Heiligtum",
+    "russian": "Святилище",
+    "portuguese": "Santuário",
+    "chinese": "避难所",
+    "spanish": "Santuario",
+    "chinese_traditional": "聖殿",
+    "korean": "성역",
+    "japanese": "避難所"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7d30d80a934b0349-55aa9f37a256818458b859712cbcca8b-v2",
+    "english": "Apply [damageshield] [effect0.status0.power] to friendly units.",
+    "french": "Confère [damageshield] [effect0.status0.power] aux unités alliées.",
+    "german": "Wende [damageshield] [effect0.status0.power] auf verbündete Einheiten an.",
+    "russian": "На союзников накладывается [damageshield] х[effect0.status0.power].",
+    "portuguese": "Concede [damageshield] [effect0.status0.power] às unidades aliadas.",
+    "chinese": "使所有友方单位获得 [damageshield] [effect0.status0.power]。",
+    "spanish": "Añade [damageshield] [effect0.status0.power] a las unidades aliadas.",
+    "chinese_traditional": "對友方單位施加[damageshield][effect0.status0.power]。",
+    "korean": "아군 유닛들에게 [damageshield] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "味方ユニットに[damageshield] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-5909821393a3bebd-55aa9f37a256818458b859712cbcca8b-v2",
+      "english": "“The Outpost would become a sanctuary for all those threatened by Heaven—be they Angel or Demon—and a place of safety from the plague that had consumed the Empyrial Palace.”\n—Tome of the Lost Path",
+      "french": "<nobr>« Le Bastion</nobr> allait devenir un sanctuaire pour tous ceux, anges ou démons, qui étaient menacés par le paradis, et un lieu sécurisé contre le fléau qui dévasta le Palais <nobr>empyréen. »</nobr> \n— Livre du Chemin Perdu",
+      "german": "„Der Außenposten würde ein Heiligtum für alle vom Himmel Bedrohten werden – seien es Engel oder Dämonen – und ein sicherer Zufluchtsort vor der Pest, die den Empyräeischen Palast verschlungen hatte.“\n—Buch des Verlorenen Pfades",
+      "russian": "«Форпост станет убежищем для всех, кто видит в Раю угрозу, будь то ангел или демон. Здесь можно укрыться от заразы, охватившей Неземной дворец».\n— Книга утраченного пути",
+      "portuguese": "“O Posto Avançado se tornaria um santuário para todos aqueles ameaçados pelo Céu, sejam eles anjos ou demônios, e um lugar seguro contra a praga que consumiu o Palácio Celestial.”\n— Tomo do Caminho Perdido",
+      "chinese": "“前哨站将成为所有受天堂威胁之人——无论天使还是恶魔——的避难所，也将是远离了那吞噬了至高天宫殿瘟疫的安全之地。”\n——《失落路途之书》",
+      "spanish": "«El campamento se acabaría convirtiendo en un santuario para todos aquellos amenazados por el Cielo, fueran ángeles o demonios, y un refugio ante la plaga que había consumido el Palacio Empíreo».\n—Tomo de la Senda Perdida",
+      "chinese_traditional": "「前哨站將成為所有受到天堂威脅的人的避難所，無論是對天使還是惡魔來說都是如此。那將是一個免受吞噬帝國宮殿瘟疫侵害的安全之地。」\n——《迷失之路》典籍",
+      "korean": "“전초기지는 천사나 악마를 막론하고 천상의 위협을 받은 모든 이들의 안식처이자, 천상의 궁전을 집어삼킨 역병으로부터 안전한 장소가 되어줄 것이다.”\n- 사라진 길의 서",
+      "japanese": "「基地は天使であれ、悪魔であれ、天界に脅かされている者のすべての避難所、そして天の宮殿を飲み込んだ疫病から安全な場所となるだろう」\n—失われし道の書"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Sanctuary.prefab",
+    "m_AssetGUID": "048d1794966cfb24cbf041fd45f205b4"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 2
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Banished/Sanctuary/FX_Sanctuary.prefab",
+          "m_AssetGUID": "76644c90ff01eac449740aa5aaadf56e"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

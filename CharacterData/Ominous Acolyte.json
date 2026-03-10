@@ -1,0 +1,69 @@
+{
+  "id": "ClericT1_OminousAcolyte",
+  "name": "Ominous Acolyte",
+  "nameKey": {
+    "key": "CharacterData_nameKey-fac7802a9670b5d0-e6adff919883b89448b7e36567cee97b-v2",
+    "english": "Ominous Acolyte",
+    "french": "Acolyte sinistre",
+    "german": "Unheilvoller Diener",
+    "russian": "Грозный аколит",
+    "portuguese": "Acólito Sinistro",
+    "chinese": "不详侍从",
+    "spanish": "Acólito siniestro",
+    "chinese_traditional": "不祥侍從",
+    "korean": "사악한 추종자",
+    "japanese": "オミナス・アコライト"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f2dfe5981831cd7b-e6adff919883b89448b7e36567cee97b-v2",
+      "english": "To the Titans go the glory, and these worshippers keep their flock in line.",
+      "french": "La gloire revient aux titans, et ces adorateurs s'assurent que leurs fidèles obéissent.",
+      "german": "Den Titanen gebührt der Ruhm. Diese Anhänger halten ihre Herde in Schach.",
+      "russian": "Пока титаны купаются в славе, их прислужники держат в узде паству.",
+      "portuguese": "A glória vai para os Titãs, e esses adoradores mantêm seu rebanho na linha.",
+      "chinese": "荣耀归于泰坦，而这些崇拜者负责管理好信徒们。",
+      "spanish": "La gloria es de los titanes, y estos adoradores mantienen a su rebaño controlado.",
+      "chinese_traditional": "榮耀歸於泰坦，這些崇拜者負責讓他們的羊群保持秩序。",
+      "korean": "이 숭배자들은 티탄에게 영광을 바치며, 무리를 이끌어 간다.",
+      "japanese": "栄光は巨人族のものとなり、崇拝者たちは信者を統率する。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_OminousAcolyte.prefab",
+    "m_AssetGUID": "f97376a68055e6142b6c1edf9ee70757"
+  },
+  "triggers": [
+    {
+      "trigger": "post_combat_healing",
+      "effects": [
+        {
+          "effectStateName": "CardEffectHeal",
+          "targetMode": "room_heal_targets",
+          "targetTeamType": "heroes",
+          "paramInt": 15,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/FX/FX_HealImpactSmall_PS.prefab",
+              "m_AssetGUID": "43d81144eb85739409501ee485f55b0f"
+            },
+            "spawnLocation": "character_center"
+          }
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 8,
+    "endlessAttack": 0
+  },
+  "size": 1,
+  "health": 1,
+  "canAttack": false,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_AttackerEnemy_b7a79da2-ded9-4e26-8702-555817499f07"
+  ],
+  "characterChatterData": "T1TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Katherine Bartlett"
+}

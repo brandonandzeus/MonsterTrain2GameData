@@ -1,0 +1,129 @@
+{
+  "id": "SilverInk",
+  "name": "Silver Ink",
+  "nameKey": {
+    "key": "CardData_nameKey-485a482c445f313a-38bc09a0a78961e489a5437970260db2-v2",
+    "english": "Silver Ink",
+    "french": "Encre argentée",
+    "german": "Silbertinte",
+    "russian": "Серебряные чернила",
+    "portuguese": "Tinta Prateada",
+    "chinese": "银墨粉",
+    "spanish": "Tinta plateada",
+    "chinese_traditional": "銀墨",
+    "korean": "은제 잉크",
+    "japanese": "銀のインク"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-bcd6420644f59249-38bc09a0a78961e489a5437970260db2-v2",
+    "english": "Apply [attuned] and +[effect1.upgrade.bonusdamage] [magicpower] to spells in your hand.",
+    "french": "Confère [attuned] et +[effect1.upgrade.bonusdamage] [magicpower] aux sorts dans votre main.",
+    "german": "Wende [attuned] und +[effect1.upgrade.bonusdamage] [magicpower] auf Zauber auf deiner Hand an.",
+    "russian": "На чары в вашей руке накладывается [attuned] и [magicpower] х[effect1.upgrade.bonusdamage].",
+    "portuguese": "Concede [attuned] e +[effect1.upgrade.bonusdamage] [magicpower] aos feitiços na sua mão.",
+    "chinese": "使手牌中的法术牌获得 [attuned] 和 +[effect1.upgrade.bonusdamage] [magicpower]。",
+    "spanish": "Añade [attuned] y +[effect1.upgrade.bonusdamage] [magicpower] a los hechizos de tu mano.",
+    "chinese_traditional": "對你手牌中的法術牌施加[attuned]和+[effect1.upgrade.bonusdamage][magicpower]。",
+    "korean": "패에 있는 모든 주문 카드에 [attuned] 및 +[effect1.upgrade.bonusdamage] [magicpower]을 적용합니다.",
+    "japanese": "手札の呪文に[attuned]と+[effect1.upgrade.bonusdamage] [magicpower]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-188f581734f82b99-38bc09a0a78961e489a5437970260db2-v2",
+      "english": "“Take stardust and mix it with oil. Cast a blessing. Only the fae shall read your words written in this ink.”\n—The Ritual Tome",
+      "french": "<nobr>« Prenez</nobr> de la poussière d'étoiles et mélangez-la à de l'huile. Lancez une bénédiction. Seules les fées liront les mots écrits avec cette <nobr>encre. »</nobr> \n— Livre des Rituels",
+      "german": "„Man nehme Sternenstaub und mische ihn mit Öl. Dann ein Zauber. Nur Feen können Worte lesen, die mit dieser Tinte geschrieben wurden.“\n—Foliant der Rituale",
+      "russian": "«Возьмите звездную пыль и смешайте с маслом. Произнесите заклинание. Написанное этими чернилами смогут прочесть только феи».\n— Книга ритуалов",
+      "portuguese": "“Pegue a Poeira Estelar e a misture com óleo. Lance uma bênção. Somente os fae saberão ler o que foi escrito com esta tinta.”\n— Tomo Ritualístico",
+      "chinese": "“将星尘与油混合。施以祝福。只有妖精会阅读你用这墨水写下的文字。”\n——《仪式之书》",
+      "spanish": "«Coge una pizca de polvo estelar y mézclala con aceite. Bendícelo. Solo las hadas podrán leer las palabras que escribas con esta tinta».\n—Tomo de los Rituales",
+      "chinese_traditional": "「取星塵，與油混合。施加祝福。唯有精靈才能讀懂你用此墨水寫下的字。」\n——《儀式魔法書》",
+      "korean": "“별가루를 기름과 섞어라. 축복의 마법을 부여하라. 오직 요정만 이 잉크로 쓴 글자를 알아볼 수 있을 것이다.”\n- 의식의 서",
+      "japanese": "「スターダストと油を混ぜ、祈りを捧げるのだ。このインクで書かれた言葉は、妖精にしか解読することができない」\n—儀式の書"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_SilverInk.prefab",
+    "m_AssetGUID": "53f08eb4cb7c65e4a83d4c6a63724b54"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToCardsInHand",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCardUpgradeData": {
+        "id": "SilverInk_Attuned_Upgrade",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitStrongerMagicPower"
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludedSpellsFromMagicPower",
+            "disallowedCardPools": [
+              "SpellsNotAllowedSpellPowerPool"
+            ]
+          },
+          {
+            "id": "MagicPowerSpells",
+            "cardType": "spell",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectDamage",
+              "CardEffectHeal",
+              "CardEffectHealAndDamageRelative",
+              "CardEffectHealAndOverheal",
+              "CardEffectDamagePerSourceAttack",
+              "CardEffectDamagePerHp"
+            ]
+          }
+        ],
+        "isUnique": true
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToCardsInHand",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCardUpgradeData": {
+        "id": "SilverInk_Upgrade",
+        "filters": [
+          {
+            "id": "ExcludedSpellsFromMagicPower",
+            "disallowedCardPools": [
+              "SpellsNotAllowedSpellPowerPool"
+            ]
+          },
+          {
+            "id": "MagicPowerSpells",
+            "cardType": "spell",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectDamage",
+              "CardEffectHeal",
+              "CardEffectHealAndDamageRelative",
+              "CardEffectHealAndOverheal",
+              "CardEffectDamagePerSourceAttack",
+              "CardEffectDamagePerHp"
+            ]
+          }
+        ],
+        "bonusDamage": 3,
+        "bonusHeal": 3
+      }
+    }
+  ],
+  "unlockLevel": 9,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

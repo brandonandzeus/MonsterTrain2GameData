@@ -1,0 +1,59 @@
+{
+  "id": "SpawnWithArmor",
+  "name": "Scorched Steel",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-2f2cc42e65001149-e89ecd3414689ec4fb75023126b587fe-v2",
+    "english": "Scorched Steel",
+    "french": "Acier calciné",
+    "german": "Verbrannter Stahl",
+    "russian": "Опаленная сталь",
+    "portuguese": "Aço Chamuscado",
+    "chinese": "灼热锻钢",
+    "spanish": "Acero calcinado",
+    "chinese_traditional": "焦土鋼鐵",
+    "korean": "그을린 강철",
+    "japanese": "焦げた鋼鉄"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-505872aeb41a66c6-e89ecd3414689ec4fb75023126b587fe-v2",
+    "english": "Friendly units enter with [armor] [effect0.status0.power].",
+    "french": "Les unités alliées entrent avec <b>Armure</b> [effect0.status0.power].",
+    "german": "Verbündete Einheiten kommen mit [effect0.status0.power] <b>Rüstung</b> ins Spiel.",
+    "russian": "Союзники при появлении получают [armor] х[effect0.status0.power].",
+    "portuguese": "Unidades aliadas entram com <b>Armadura</b> [effect0.status0.power].",
+    "chinese": "友方单位进入战斗时获得<b>护甲</b> [effect0.status0.power]。",
+    "spanish": "Las unidades aliadas entran con [armor] [effect0.status0.power].",
+    "chinese_traditional": "友方單位登場時獲得[armor][effect0.status0.power]。",
+    "korean": "아군 유닛들이 [armor] [effect0.status0.power] 상태로 등장합니다.",
+    "japanese": "味方ユニットが[armor] [effect0.status0.power]が付与された状態で出現する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-f3d6fb171e698ba9-e89ecd3414689ec4fb75023126b587fe-v2",
+      "english": "Steel hammered in the heat of the Scorched Plains is easily recognized by its banding. After the freeze, the steel became in short supply, but I’ve still been able to stockpile a small amount for defensive enhancements.",
+      "french": "L'acier martelé dans la chaleur des Plaines calcinées est facilement reconnaissable grâce à ses marques. Après la Glaciation, l'acier est tombé en pénurie, mais j'ai tout de même réussi à m'en constituer une petite réserve afin de renforcer nos défenses.",
+      "german": "In der Hitze der Verbrannten Ebenen gehämmerter Stahl ist leicht an der Streifenbildung zu erkennen. Nachdem die Hölle einfror, gab es immer weniger davon, aber ich habe noch etwas davon auf Lager, um die Verteidigung des Zuges zu verbessern.",
+      "russian": "Сталь, выкованную в огне Выжженных равнин, легко опознать. После того как Ад замерз, ее стало трудно достать, но у меня пока есть запасы, позволяющие обороняться.",
+      "portuguese": "O aço martelado no calor das Planícies Devastadas é facilmente reconhecido por suas marcas. Após o congelamento, o aço ficou escasso, mas consegui estocar uma pequena quantia para melhorias defensivas.",
+      "chinese": "在燃烧平原锻造而成的钢材，可以很容易地从钢上面的印记中辨认出来。地狱被冰冻之后，这种钢材供不应求，但我依然储备了一小部分这种锻钢，用来强化防御设施。",
+      "spanish": "El acero forjado en el calor de las Llanuras Calcinadas es reconocible por las bandas que se forman. Tras la Congelación, el acero empezó a escasear, pero he podido guardar un poco para mejoras defensivas.",
+      "chinese_traditional": "在焦灼平原的熱量中鍛造的鋼鐵以其條紋而聞名。在凍結之後，鋼鐵變得供不應求，但我仍然設法為防禦增強儲存了一小部分這種東西。",
+      "korean": "불타는 평원의 열기 속에서 단조된 강철은 밴딩 방식만 봐도 알 수 있다. 지옥이 얼어붙은 뒤로 강철 수급이 어려워진 것은 사실이지만, 방어 강화용으로 소량을 비축해 두었다.",
+      "japanese": "焦土平原で打ち出された鋼は、その縞模様ですぐに見分けられる。凍結後、鋼は不足したが、防御強化のために少量を備蓄することができた。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassHellhorned",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 5
+        }
+      ],
+      "paramSourceTeam": "monsters"
+    }
+  ]
+}

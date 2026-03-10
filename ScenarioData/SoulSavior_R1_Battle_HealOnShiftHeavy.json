@@ -1,0 +1,322 @@
+{
+  "id": "SoulSavior_R1_Battle_HealOnShiftHeavy",
+  "name": "SoulSavior_R1_Battle_HealOnShiftHeavy",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-f8437f36bb5fcaa6-988813ef2f5772e439e610d5df4daeda-v2",
+    "english": "Dutiful Sentinels",
+    "french": "Sentinelles dévouées",
+    "german": "Pflichtbewusste Wächter",
+    "russian": "Преданные стражи",
+    "portuguese": "Sentinelas Diligentes",
+    "chinese": "尽职哨兵",
+    "spanish": "Centinelas diligentes",
+    "chinese_traditional": "盡責的哨兵",
+    "korean": "충직한 감시병",
+    "japanese": "義理のセンチネル"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-d136862ce2880316-988813ef2f5772e439e610d5df4daeda-v2",
+    "english": "These souls have been shaped to only know obedience, and will stand in the way of any foe with silent loyalty.",
+    "french": "Façonnées pour ne connaître que l'obéissance, ces âmes feront barrage à n'importe quel adversaire avec une loyauté mutique.",
+    "german": "Diese Seelen kennen nur den Gehorsam und werden sich in stummer Loyalität gegen jeden Gegner stellen.",
+    "russian": "Эти преданные Души знают лишь повиновение и безмолвно встанут на пути любого приближающегося врага.",
+    "portuguese": "Essas almas foram moldadas para conhecer apenas a obediência e enfrentarão qualquer inimigo com lealdade silenciosa.",
+    "chinese": "这些灵魂被塑造成了唯命是从的忠仆，会一言不发地抵挡一切敌人。",
+    "spanish": "Estas almas se han creado para conocer únicamente la obediencia, y se interpondrán en el camino de todo enemigo con una lealtad silente.",
+    "chinese_traditional": "這些靈魂經塑造後只知服從，他們將懷著沉默的忠誠，阻擋任何敵人的去路。",
+    "korean": "이 영혼들은 복종만을 위해 만들어졌고, 말없는 충성심으로 모든 적 앞에 맞섭니다.",
+    "japanese": "この者たちは絶対服従するように形作られており、無言の忠誠心でどんな相手の前にも立ちふさがる。"
+  },
+  "bossVariant": {
+    "id": "SoulSavior_Region1Bosses",
+    "bossVariants": [
+      "Boss_SoulSavior_R1_TrainBoss_Athane",
+      "Boss_SoulSavior_R1_TrainBoss_Harvester"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "R1_Attacker_AscendGainAtk",
+    "R1_Heavy_HealOnShift"
+  ],
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Enchant/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R1_EnchanterT1_Speed_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredDifficultyTier": 3,
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atk x2/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredDifficultyTier": 2,
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Enchant/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_EnchanterT1_Speed_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "EnchanterT1_Speed"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 3,
+                "requiredMutator": "SoulSavior_RunDistance1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Bonus) Atk x2/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Bonus) Heavy x2",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "Boss_SoulSavior_R1_TrainBoss_Athane"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Attacker_AscendGainAtk_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Attacker_AscendGainAtk"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R1_Heavy_HealOnShift_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R1_Heavy_HealOnShift",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend"
+  }
+}

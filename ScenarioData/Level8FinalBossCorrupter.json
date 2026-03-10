@@ -1,0 +1,288 @@
+{
+  "id": "Level8FinalBossCorrupter",
+  "name": "Level8FinalBossCorrupter",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-6a80dad7d5a7d68b-0bddf9568713e9840b281a27d4f9a03f-v2",
+    "english": "Seraph Aeternus, Chosen of Dominion",
+    "french": "Séraphin Aeternus, Élu de Domination",
+    "german": "Seraph Aeternus, Herrschafts Erwählter",
+    "russian": "Серафим Бессмертный — Избранник Доминиона",
+    "portuguese": "Serafim Aeternus, o Escolhido do Domínio",
+    "chinese": "永恒炽天使，统御泰坦的神选者",
+    "spanish": "Seraph Aeternus, elegido de Dominio",
+    "chinese_traditional": "『主宰天選』撒拉弗‧艾特努斯",
+    "korean": "도미니온의 선택을 받은 자, 세라핌 아이테르누스",
+    "japanese": "セラフ・エーテルヌス、ドミニオンに選ばれし者"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-6966063441c749a1-0bddf9568713e9840b281a27d4f9a03f-v2",
+    "english": "Unrecognizable from his original form, Seraph has returned as a puppet of Titans from the abyss. Seraph's Dominating form will <b>spread corruption</b> to your units.",
+    "french": "Méconnaissable sous son aspect actuel, Séraphin est revenu de l'abîme réduit à l'état de marionnette des titans. Sa forme dominatrice <b>répand la corruption</b> parmi vos unités.",
+    "german": "Seraph kehrte bis zur Unkenntlichkeit verändert als Marionette der Titanen aus dem Abgrund zurück. Seine herrschende Form wird deine Einheiten <b>verderben</b>.",
+    "russian": "Серафим вернулся из Бездны, став марионеткой титанов — теперь его сложно узнать. В обличии, данном ему Доминионом, Серафим будет <b>накладывать скверну</b> на ваших бойцов.",
+    "portuguese": "Agora irreconhecível, Serafim retornou do abismo como um fantoche dos Titãs. A forma do Domínio do Serafim <b>espalhará a corrupção</b> às suas unidades.",
+    "chinese": "面目全非的炽天使已作为泰坦的傀儡从深渊中归来。炽天使的统御泰坦形态会对你的单位<b>散播腐化</b>。",
+    "spanish": "Seraph, irreconocible de su forma original, ha regresado del abismo como títere de los titanes. La forma Dominante de Seraph <b>propagará la corrupción</b> a tus unidades.",
+    "chinese_traditional": "撒拉弗原本的形態難以辨認，這次變成深淵泰坦的傀儡歸來。撒拉弗的主宰形態將<b>散播腐化</b>給你的單位。",
+    "korean": "원래 모습마저 잃어버린 채, 세라핌이 티탄의 꼭두각시가 되어 심연 너머에서 돌아왔습니다. 세라핌의 지배적 형태는 아군 유닛에 <b>타락을 퍼뜨립니다</b>.",
+    "japanese": "以前の姿は見る影もなくなってしまったセラフは、深淵から来た巨人族の操り人形となって戻ってきた。セラフのドミニオン形態はユニットに<b>堕落を振りまく</b>。"
+  },
+  "difficulty": "boss",
+  "enemyBlessingData": [
+    "Enemy_CorruptSeraph_ApplyStatuses"
+  ],
+  "titanTrialSin": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial",
+  "battleTrackNameData": "BattleMusic_Seraph",
+  "displayedEnemies": [],
+  "bossSpawnSFXCue": "Seraph_Intro",
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT3_Junker"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT2_Junker_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT3_Junker",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT2_Junker_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT2_Junker_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "MageT3_Junker",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT2_Junker_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "MageT3_Junker",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT3_Junker",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "MageT2_Junker_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT2_Junker_Chosen",
+                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
+              },
+              {
+                "characterData": "AttackerT3_CorruptionAdder"
+              },
+              {
+                "characterData": "HeavyT3_Basic"
+              },
+              {
+                "characterData": "HeavyT2_Corruptor",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              },
+              {
+                "characterData": "HordeT2_DeathAddsCorruption"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "outer_train_boss",
+    "bossCharacter": "Boss_Level8_Corrupter",
+    "hardBossCharacter": "Boss_Level8_Corrupter"
+  }
+}

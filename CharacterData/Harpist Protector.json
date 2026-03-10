@@ -1,0 +1,91 @@
+{
+  "id": "EnchanterT2_Titanskin",
+  "name": "Harpist Protector",
+  "nameKey": {
+    "key": "CharacterData_nameKey-ff4137778db24a52-8f672c54f863c84449d6720177d33efb-v2",
+    "english": "Harpist Protector",
+    "french": "Harpiste protecteur",
+    "german": "Hafenbeschützer",
+    "russian": "Арфист-защитник",
+    "portuguese": "Protetor Harpista",
+    "chinese": "竖琴保卫者",
+    "spanish": "Arpista protector",
+    "chinese_traditional": "豎琴保護者",
+    "korean": "보호의 하프 연주자",
+    "japanese": "ハーピスト・プロテクター"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-b462c293c376de27-8f672c54f863c84449d6720177d33efb-v2",
+      "english": "The Celestial Chorus is an eternal melody, a celebration of the divine. Even demons of Hell cannot deny its beauty. ",
+      "french": "Le Chœur céleste est une mélodie éternelle, une célébration du divin. Même les démons de l'enfer ne peuvent nier sa beauté.",
+      "german": "Der Himmelschor ist eine ewige Melodie zur Feier des Göttlichen. Selbst Dämonen der Hölle können seiner Schönheit nicht widerstehen.",
+      "russian": "Небесный хор — это вечная мелодия, воспевающая все божественное. Даже демоны Ада не отрицают ее красоту. ",
+      "portuguese": "O Coro Celestial é uma melodia eterna, uma celebração do divino. Nem mesmo os demônios do Inferno podem negar sua beleza.",
+      "chinese": "天籁合唱团是永恒的旋律，是对神圣的赞颂。就连地狱的恶魔也无法否认它的美妙。",
+      "spanish": "El Coro Celestial es una melodía eterna, una celebración de lo divino. Ni siquiera los demonios pueden negar su belleza.",
+      "chinese_traditional": "天界合唱團的歌聲是永恆的旋律，也是對神聖的慶典。即便是地獄的惡魔也無法否認它的美麗。",
+      "korean": "천상에서 울리는 합창은 영원한 선율이며, 신성한 존재를 기린다. 그 선율의 아름다움은 지옥의 악마조차도 부정할 수 없다.",
+      "japanese": "天の合唱は永遠の旋律であり、神を讃えるものだ。地獄の悪魔でさえその美しさを否定することはできない。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_HarpistProtector.prefab",
+    "m_AssetGUID": "0cbaecd155b412c47a86d93707d6b088"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EnemyHymnist/FX_EnemyHymnistAttack.prefab",
+      "m_AssetGUID": "84c715bda74bdee42b2e3a9c3b7468e1"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EnemyHymnist/FX_EnemyHymnistImpact.prefab",
+      "m_AssetGUID": "9e0324e360de6514d83edca3e5740f6f"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-a7918d825b81dd17-8f672c54f863c84449d6720177d33efb-v2",
+        "english": "Grant enemy units [titanskin] [effect0.status0.power].",
+        "french": "Octroie [titanskin] [effect0.status0.power] aux ennemis.",
+        "german": "Gegnerische Einheiten erhalten [titanskin] [effect0.status0.power].",
+        "russian": "Врагам дается [titanskin] х[effect0.status0.power].",
+        "portuguese": "Concede [titanskin] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "使所有敌方单位获得 [titanskin] [effect0.status0.power]。",
+        "spanish": "Añade [titanskin] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "賦予敵方單位[titanskin][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [titanskin] [effect0.status0.power] 효과를 부여합니다.",
+        "japanese": "敵ユニットに[titanskin] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "after_spawn_enchant",
+      "effects": [
+        {
+          "effectStateName": "CardEffectEnchant",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "titanskin",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 20,
+    "endlessAttack": 0
+  },
+  "size": 1,
+  "health": 10,
+  "attackDamage": 0,
+  "attackTeleportsToDefender": false,
+  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Samuel Lim"
+}

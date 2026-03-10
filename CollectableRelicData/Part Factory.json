@@ -1,0 +1,62 @@
+{
+  "id": "PartFactory",
+  "name": "Part Factory",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-8fe3033d2983dc87-b57ce0b529401cd4dae1a225f5f95aff-v2",
+    "english": "Part Factory",
+    "french": "Chaîne de production",
+    "german": "Teilefabrik",
+    "russian": "Фабрика трансплантатов",
+    "portuguese": "Fábrica de Partes",
+    "chinese": "零件工厂",
+    "spanish": "Fábrica de piezas",
+    "chinese_traditional": "部件工廠",
+    "korean": "신체 공장",
+    "japanese": "部品工場"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-d3132ea7493c4010-b57ce0b529401cd4dae1a225f5f95aff-v2",
+    "english": "On [deployphase], add a random [graft] unit to your hand.",
+    "french": "En [deployphase], ajoute une [graft] aléatoire à votre main.",
+    "german": "Füge deiner Hand während der [deployphase] eine zufällige [graft]-Einheit hinzu.",
+    "russian": "[deployphase]: добавляет в руку одного случайного бойца с <b>Трансплантатом</b>.",
+    "portuguese": "Durante a [deployphase], adiciona uma unidade [graft] aleatória à sua mão.",
+    "chinese": "[deployphase]期间，随机将一个 [graft] 单位加入你的手牌。",
+    "spanish": "En la [deployphase], añade una unidad con [graft] a tu mano.",
+    "chinese_traditional": "在[deployphase]，將張隨機[graft]單位牌加入你的手牌。",
+    "korean": "[deployphase] 시, 무작위 [graft] 유닛 한 장을 패에 추가합니다.",
+    "japanese": "[deployphase]時に、手札にランダムな[graft]ユニットを追加する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-abd7d2d462ad72d6-b57ce0b529401cd4dae1a225f5f95aff-v2",
+      "english": "“The craftsman approach is no more! Time to use an assembly line to create my monsters.”\r\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« L'artisanat,</nobr> c'est <nobr>révolu !</nobr> Il est temps d'utiliser une chaîne de montage pour créer mes <nobr>monstres. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Mit dem Handwerken ist es vorbei! Ich brauche jetzt ein Fließband, um meine Monster zu erschaffen.“_x000D_\n—aus Dr. Orechis Notizbuch",
+      "russian": "«С кустарным подходом покончено! Пора собирать чудовищ на конвейере».\n\n— Из записной книжки доктора Оречи.",
+      "portuguese": "“Chega de fazer tudo artesanalmente! Chegou a hora de usar uma linha de montagem para criar meus monstros.”\n— Anotação do Dr. Orechi",
+      "chinese": "”不需要工匠精神了！是时候用流水线来创造我们的怪物了。”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«¡El enfoque artesanal se ha quedado anticuado! Ha llegado el momento de crear en masa a mis monstruos».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「工匠的手藝已經過時！是時候使用流水線來創造我的怪物了。」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“장인의 방식 따위 집어치워! 이제는 생산 라인으로 내 괴물들을 만들어낼 테니까.”\n- 오레치 박사의 기록",
+      "japanese": "「職人的なアプローチはもう十分じゃ！組立ラインを使ってモンスターを製造するぞい！」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddCardsStartOfBattle",
+      "additionalTooltips": [
+        {
+          "statusId": "unit_grafted_equipment",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ],
+      "paramBool3": true,
+      "paramCardPool": "PartFactory_Pool"
+    }
+  ],
+  "unlockLevel": 6
+}

@@ -1,0 +1,60 @@
+{
+  "id": "WormgutT3",
+  "name": "WormgutT3",
+  "nameKey": {
+    "key": "SoulData_nameKey-a94812aa69385f5e-2db7ffb85164d3a4697cfa39724f55b2-v2",
+    "english": "Wormgut III",
+    "french": "Verpic III",
+    "german": "Wormgut III",
+    "russian": "Червь III",
+    "portuguese": "Barriga de Verme III",
+    "chinese": "蠕虫内脏 III",
+    "spanish": "Tripagusano III",
+    "chinese_traditional": "蟲腸III",
+    "korean": "벌레 내장 III",
+    "japanese": "ワームガットIII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-950ba6b36ba093af-2db7ffb85164d3a4697cfa39724f55b2-v2",
+    "english": "+[effect1.power][capacity] on each floor. If all three floors have friendly units at turn start, gain [effect0.minpower][ember]. If you are filling at least [effect0.maxpower] capacity, gain [effect0.power][ember].",
+    "french": "+[effect1.power][capacity] à chaque niveau. S'il y a des alliés aux trois niveaux au début du tour, gagnez [effect0.minpower][ember]. Si vous occupez au moins [effect0.maxpower] en capacité, gagnez [effect0.power][ember].",
+    "german": "+[effect1.power][capacity] auf jeder Ebene. Sind auf allen drei Ebenen verbündete Einheiten zu Beginn präsent, erhältst du [effect0.minpower][ember]. Ist mindestens [effect0.maxpower] Kapazität erreicht, erhältst du [effect0.power][ember].",
+    "russian": "+[effect1.power][capacity] на каждом этаже. Если в начале хода союзники есть на каждом из этажей, дается +[effect0.minpower][ember]. Если занято минимум [effect0.maxpower] ед. места, то дается +[effect0.power][ember].",
+    "portuguese": "+[effect1.power][capacity] em cada andar. Se todos os três andares tiverem unidades aliadas no início do turno, recebe [effect0.minpower][ember]. Se você estiver com pelo menos [effect0.maxpower] de capacidade, recebe [effect0.power][ember].",
+    "chinese": "每层获得 +[effect1.power][capacity]。若回合开始时三层都有友方单位，获得 [effect0.minpower][ember]。如果你占据至少 [effect0.maxpower] 点容量，获得 +[effect0.power][ember]。",
+    "spanish": "+[effect1.power][capacity] en cada piso. Si hay unidades aliadas en los tres pisos al comienzo del turno, obtienes [effect0.minpower][ember]. Si ocupan al menos [effect0.maxpower] de capacidad, obtienes [effect0.power][ember].",
+    "chinese_traditional": "+[effect1.power][capacity]在每個樓層。如果回合開始時所有三個樓層都有友方單位，獲得[effect0.minpower][ember]。如果你至少佔用[effect0.maxpower]容量，獲得[effect0.power][ember]。",
+    "korean": "각 층마다 +[effect1.power][capacity]. 턴 시작 시 세 층 모두에 아군 유닛이 있으면 [effect0.minpower][ember]을 얻습니다. 수용량이 [effect0.maxpower] 이상인 경우 [effect0.power][ember]을 얻습니다.",
+    "japanese": "各フロアに+[effect1.power][capacity]。ターン開始時にすべてのフロアに味方ユニットがいると、[effect0.minpower][ember]を得る。キャパシティが[effect0.maxpower]以上埋まっていると、[effect0.power][ember]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectModifyEnergyWhenFloorsOccupied",
+      "paramInt": 2,
+      "paramMinInt": 1,
+      "paramMaxInt": 20
+    },
+    {
+      "relicEffectClassName": "RelicEffectChangeFloorCapacity",
+      "paramInt": 1
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-7afbce292fe20941-2db7ffb85164d3a4697cfa39724f55b2-v2",
+      "english": "Defeat Lifemother while playing Umbra to upgrade.",
+      "french": "Battez Mère Nature en jouant les Umbras pour améliorer.",
+      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Umbra spielst.",
+      "russian": "Чтобы улучшить, победите Мать-природу, играя за Мрак.",
+      "portuguese": "Derrote a Genetriz jogando com os Sombrios para melhorar.",
+      "chinese": "用影主击败生命之母以升级。",
+      "spanish": "Derrota a la Madre Vida con Umbra para mejorar.",
+      "chinese_traditional": "遊玩暗氏時擊敗生命之母以升級。",
+      "korean": "어스름 일족 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
+      "japanese": "常闇族でのプレイでライフマザーを倒してアップグレード。"
+    },
+    "unlockCondition": "soul_kill_lifemother_using_umbra",
+    "paramInt": 1
+  },
+  "tierLevel": 3
+}

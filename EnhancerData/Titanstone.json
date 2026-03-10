@@ -1,0 +1,92 @@
+{
+  "id": "UnitUpgradeTitanite",
+  "name": "Titanstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-7d55bd76f4863799-d41633c27540f914fba6d091fe564832-v2",
+    "english": "Titanstone",
+    "french": "Pierre de titan",
+    "german": "Titanenstein",
+    "russian": "Камень титанов",
+    "portuguese": "Pedra do Titã",
+    "chinese": "泰坦石",
+    "spanish": "Piedra titánica",
+    "chinese_traditional": "泰坦石",
+    "korean": "티탄석",
+    "japanese": "巨人の石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-4007a89da20656b1-d41633c27540f914fba6d091fe564832-v2",
+    "english": "Upgrade a unit with [titanite].",
+    "french": "Améliore une unité avec [titanite].",
+    "german": "Verbessere eine Einheit mit [titanite].",
+    "russian": "Усиливает бойца, используя [titanite].",
+    "portuguese": "Melhora uma unidade com [titanite].",
+    "chinese": "升级一个单位，使其获得[titanite]。",
+    "spanish": "Mejora una unidad con [titanite].",
+    "chinese_traditional": "升級一個單位，使其獲得[titanite]。",
+    "korean": "유닛을 업그레이드하여 [titanite] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[titanite]を得る。"
+  },
+  "rarity": "rare",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "AddTitanite",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-33696c12686a37de-bb7f3aee5b4236543bb75ecc7813382e-v2",
+          "english": "Titanstone",
+          "french": "Pierre de titan",
+          "german": "Titanenstein",
+          "russian": "Камень титанов",
+          "portuguese": "Pedra do Titã",
+          "chinese": "泰坦石",
+          "spanish": "Piedra titánica",
+          "chinese_traditional": "泰坦石",
+          "korean": "티탄석",
+          "japanese": "巨人の石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-127d2d2aede877f4-bb7f3aee5b4236543bb75ecc7813382e-v2",
+          "english": "Gain [titanite].",
+          "french": "Octroie [titanite].",
+          "german": "Erhalte [titanite].",
+          "russian": "Дает [titanite].",
+          "portuguese": "Recebe [titanite].",
+          "chinese": "获得 [titanite]。",
+          "spanish": "Añade [titanite].",
+          "chinese_traditional": "獲得[titanite]。",
+          "korean": "[titanite] 효과를 획득합니다.",
+          "japanese": "[titanite]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "titanite",
+            "count": 1
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeTitanite",
+            "excludedStatusEffects": [
+              {
+                "statusId": "titanite",
+                "count": 1
+              }
+            ],
+            "excludedStatusEffectsOperator": "and"
+          },
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

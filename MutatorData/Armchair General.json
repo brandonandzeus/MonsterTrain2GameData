@@ -1,0 +1,61 @@
+{
+  "id": "ChampionSapAndHeartless",
+  "name": "Armchair General",
+  "nameKey": {
+    "key": "MutatorData_nameKey-cd27aeb48b7b1c90-ecd465e184ede64408a77372d045468a-v2",
+    "english": "Armchair General",
+    "french": "Pseudo général",
+    "german": "Sesselgeneral",
+    "russian": "Диванный генерал",
+    "portuguese": "General de Poltrona",
+    "chinese": "光说不练",
+    "spanish": "General de retaguardia",
+    "chinese_traditional": "扶手椅將軍",
+    "korean": "말 많은 전문가",
+    "japanese": "満身創痍"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-8e36f9ae1d89c3ce-ecd465e184ede64408a77372d045468a-v2",
+    "english": "Your Champion enters with [sap] [effect0.status0.power] and [heal_immune].",
+    "french": "Votre champion entre avec [sap] [effect0.status0.power] et [heal_immune].",
+    "german": "Dein Champion startet mit [sap] [effect0.status0.power] und [heal_immune].",
+    "russian": "Ваш Герой при появлении получает [sap] х[effect0.status0.power] и [heal_immune].",
+    "portuguese": "Seu Campeão entra com [sap] [effect0.status0.power] e [heal_immune].",
+    "chinese": "你的勇者进入战斗时获得[sap] [effect0.status0.power] 和[heal_immune]。",
+    "spanish": "Tu campeón entra con [sap] [effect0.status0.power] y [heal_immune].",
+    "chinese_traditional": "你的勇士登場時獲得[sap][effect0.status0.power]和[heal_immune]。",
+    "korean": "영웅이 [sap] [effect0.status0.power] 및 [heal_immune] 상태로 등장합니다.",
+    "japanese": "チャンピオンが[sap] [effect0.status0.power]と[heal_immune]が付与された状態で出現する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "debuff",
+          "count": 10
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": -1,
+      "paramCharacterSubtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "heal immunity",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": -1,
+      "paramCharacterSubtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+    }
+  ],
+  "boonValue": -6,
+  "tags": [
+    "friendlyeffect",
+    "subtype"
+  ]
+}

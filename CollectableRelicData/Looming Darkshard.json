@@ -1,0 +1,67 @@
+{
+  "id": "CorruptedAngelsArtifact",
+  "name": "Looming Darkshard",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-f94c787a89eaab27-5f49f21bec1073f42b608c0b77b854da-v2",
+    "english": "Looming Darkshard",
+    "french": "Éclat noir menaçant",
+    "german": "Drohender Dunkelsplitter",
+    "russian": "Осколок мрака",
+    "portuguese": "Fragmento Sombrio Iminente",
+    "chinese": "朦胧黑暗碎片",
+    "spanish": "Fragmento oscuro siniestro",
+    "chinese_traditional": "陰影籠罩",
+    "korean": "흐릿한 어둠의 파편",
+    "japanese": "おぼろげな闇の欠片"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-38e732dacc809e30-5f49f21bec1073f42b608c0b77b854da-v2",
+    "english": "When you draw a Blight or Scourge, gain 1[ember] and draw a non-Blight or non-Scourge card.",
+    "french": "Lorsque vous piochez un Fléau ou une Plaie, gagnez 1[ember] et piochez une carte hors Fléau ou Plaie.",
+    "german": "Wenn du einen Fluch oder eine Geißel ziehst, erhältst du 1[ember] und ziehst eine Nicht-Fluch- oder Nicht-Geißelkarte.",
+    "russian": "Вытянув Плеть или Пагубник, получите 1[ember] и возьмите еще одну карту: не Плеть и не Пагубник.",
+    "portuguese": "Quando comprar uma Praga ou Flagelo, receberá 1[ember] e comprará uma carta que não seja Praga ou Flagelo.",
+    "chinese": "当你抽到一张祸患或天灾时，获得 1[ember] 并且抽一张非祸患或天灾卡牌。",
+    "spanish": "Cuando robas una Ruina o Azote, obtienes 1[ember] y roba una carta que no sea ni Ruina ni Azote.",
+    "chinese_traditional": "當你抽到禍害牌或瘟疫牌時，獲得1[ember]並抽一張非禍害牌或非瘟疫牌。",
+    "korean": "저주 또는 재앙 카드를 뽑으면 1[ember]을 획득하고, 대신 저주 또는 재앙이 아닌 카드를 한 장 더 뽑습니다.",
+    "japanese": "劣化または災難をドローすると1[ember]を得て、非劣化または非災難カードをドローする。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-9cddf4a54f0953ab-5f49f21bec1073f42b608c0b77b854da-v2",
+      "english": "Sometimes a curse can be a blessing in disguise. While Hell is filled with so many opportunities for pain, they often make a demon stronger.",
+      "french": "Parfois, une malédiction peut être une bénédiction déguisée. Bien que l'enfer soit rempli de souffrances, ces dernières rendent souvent plus fort.",
+      "german": "Manchmal kann ein Fluch auch Segen sein: In der Hölle gibt es so viele Möglichkeiten für Schmerzen, dass die Dämonen dadurch gestärkt werden.",
+      "russian": "Иногда проклятие может маскироваться под благословение. В Аду есть множество возможностей испытать боль, но часто именно она делает демона сильнее.",
+      "portuguese": "Às vezes, uma maldição pode ser uma bênção disfarçada. Embora o Inferno esteja repleto de coisas que causam dor, elas geralmente tornam os demônios mais fortes.",
+      "chinese": "有时候，祸兮福所倚。虽然地狱充满了痛苦的机遇，但这往往能让恶魔变得更加强大。",
+      "spanish": "En ocasiones, una maldición puede ser una bendición encubierta. Si bien en el Infierno no faltan oportunidades para sufrir, suelen acabar fortaleciendo al demonio que las experimenta.",
+      "chinese_traditional": "有時詛咒也可能是祝福。雖然地獄充滿了許多令人痛苦的因素，但它們經常讓惡魔變得更強大。",
+      "korean": "가끔 저주는 은밀한 축복이 될 수 있다. 고통이 가득한 지옥이지만, 그런 고통이 오히려 악마를 더 강하게 만드는 경우가 많다.",
+      "japanese": "呪いは、時には幸運の裏返しとなることもある。地獄には苦痛が与えられ機会がたくさんあるが、それによって悪魔が強くなることもよくあるのだ。"
+    }
+  ],
+  "rarity": "champion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectDrawCardAndGainEmberOnDrawType",
+      "paramCardFilter": {
+        "id": "OnlyScourgeAndBlight",
+        "cardType": "blight",
+        "additionalCardTypes": [
+          "junk"
+        ]
+      },
+      "paramCardFilterSecondary": {
+        "id": "ExcludeScourgeAndBlight",
+        "disallowedCardPools": [
+          "AllBlightsAndScourges"
+        ]
+      },
+      "paramInt": 1,
+      "paramInt2": 1
+    }
+  ],
+  "fromStoryEvent": true
+}

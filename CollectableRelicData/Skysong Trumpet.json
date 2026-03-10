@@ -1,0 +1,61 @@
+{
+  "id": "HymnistsApplyValorOnSummon",
+  "name": "Skysong Trumpet",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-13a37e92a91487ad-3b35149fbc3163440afde2c6ce9ac936-v2",
+    "english": "Skysong Trumpet",
+    "french": "Trompette céleste",
+    "german": "Himmelsklang-Trompete",
+    "russian": "Небесная труба",
+    "portuguese": "Trombeta Celeste",
+    "chinese": "天音小号",
+    "spanish": "Trompeta celestial",
+    "chinese_traditional": "天歌號角",
+    "korean": "찬송의 트럼펫",
+    "japanese": "天歌のトランペット"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-3df06734a356fb43-3b35149fbc3163440afde2c6ce9ac936-v2",
+    "english": "Summoning a Hymnist applies [valor] [effect0.status0.power] to friendly units.",
+    "french": "Invoquer un Harpiste confère [valor] [effect0.status0.power] aux unités alliées.",
+    "german": "Wende [valor] [effect0.status0.power] auf verbündete Einheiten an, wenn ein Hymnist beschworen wird.",
+    "russian": "Призыв певчего дает союзникам [valor] х[effect0.status0.power].",
+    "portuguese": "Invocar um Hinógrafo concede [valor] [effect0.status0.power] a unidades aliadas.",
+    "chinese": "召唤圣乐团成员可使友方单位获得 [valor] [effect0.status0.power]。",
+    "spanish": "Invocar a un Himnista añade [valor] [effect0.status0.power] a las unidades aliadas.",
+    "chinese_traditional": "召喚頌唱者時，對友方單位施加[valor][effect0.status0.power]。",
+    "korean": "성가대를 소환하면 아군 유닛들에게 [valor] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "ヒュムニストを召喚すると味方ユニットに[valor] [effect0.status0.power]が付与される。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-60fad867cee46dc3-3b35149fbc3163440afde2c6ce9ac936-v2",
+      "english": "Taken from a fallen guard of Heaven’s Maw, the Deathmetal Hymnist is now learning to play this rockin’ horn.",
+      "french": "Le Harpiste deathmetal apprend maintenant à jouer de cette corne qu'il a prise à une garde déchue de la Cime du paradis.",
+      "german": "Der Deathmetal-Hymnist wurde von einem gefallenen Wächter aus dem Himmelsschlund entführt. Jetzt rockt er das Horn.",
+      "russian": "Взята у павшего стража Небесного зева. Теперь на этой крутой штуке учится играть Трель-металлист.",
+      "portuguese": "Tomada de um guarda caído da Gorja do Céu, o Hinógrafo Metaleiro agora está aprendendo a tocar essa trombeta.",
+      "chinese": "这支号角是从天堂之喉的堕落守卫手中夺过来的，死亡金属竖琴手现在正学着吹奏这只摇滚号角。",
+      "spanish": "Tras arrebatárselo a un guardia caído de las Fauces del Cielo, el Himnista de death metal está aprendiendo a tocar este cuerno brutal.",
+      "chinese_traditional": "從天堂之門某個倒下的守衛那裡奪取，死亡金屬讚美詩歌手現在正在學習如何演奏這支搖滾號角。",
+      "korean": "천상의 입구를 지키던 타락한 수호병에게서 빼앗은 뒤, 데스메탈 성가대는 이 록 뿔피리 연주를 배우는 중이다.",
+      "japanese": "天界の胃袋の倒れた衛兵から奪われたもの。デスメタル・ヒュムニストは、このロックなホルンの演奏を学んでいる最中だ。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectToTeamOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "valor",
+          "count": 5
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Hymnist"
+    }
+  ],
+  "unlockLevel": 2
+}

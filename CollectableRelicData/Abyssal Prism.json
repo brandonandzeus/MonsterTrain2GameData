@@ -1,0 +1,68 @@
+{
+  "id": "SingleToTeamMonsterSpellTargeting",
+  "name": "Abyssal Prism",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-69a042d16ca881c7-79f023d3fd5d19b4eb04fc7ce7433769-v2",
+    "english": "Abyssal Prism",
+    "french": "Prisme abyssal",
+    "german": "Untiefenprisma",
+    "russian": "Призма Бездны",
+    "portuguese": "Prisma Abissal",
+    "chinese": "深渊棱镜",
+    "spanish": "Prisma abisal",
+    "chinese_traditional": "深淵棱鏡",
+    "korean": "심연 편광석",
+    "japanese": "深淵のプリズム"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-55efe3df8f1a31ea-79f023d3fd5d19b4eb04fc7ce7433769-v2",
+    "english": "The first time each turn you target a friendly unit with a spell, non-move effects also hit all other friendly units on the floor.",
+    "french": "À chaque tour, la première fois que vous ciblez un allié avec un sort, les effets hors déplacements touchent aussi les autres alliés du niveau.",
+    "german": "Nicht-Bewegungseffekte durch Zauber auf eine verbündete Einheit wirken beim ersten Wirken pro Zug auch auf alle anderen verbündeten Einheiten auf der Ebene.",
+    "russian": "Каждый ход при первом наложении чар на союзника эти чары, исключая эффекты передвижения, действуют на всех остальных союзников на этаже.",
+    "portuguese": "Na primeira vez que você atingir uma unidade aliada com um feitiço em cada turno, os efeitos que não são de movimento também atingirão todas as outras unidades aliadas no andar.",
+    "chinese": "当你每回合首次对友方单位使用法术时，非移动效果也会对该层的其他友方单位生效。",
+    "spanish": "Cada turno, la primera vez que afectes a una unidad aliada con un hechizo, los efectos que no sean de movimiento afectan a todas las unidades aliadas del piso.",
+    "chinese_traditional": "每回合第一次用法術指定一個友方單位時，非移動效果也會擊中該樓層的所有其他友方單位。",
+    "korean": "매 턴 처음 아군 유닛 하나를 대상으로 주문 카드를 사용하면, 이동 효과를 제외한 다른 효과가 해당 층의 모든 아군 유닛에게도 적용됩니다.",
+    "japanese": "各ターンで初めて呪文を味方ユニットに使用すると、移動でないすべての効果が、同じフロアにいるすべての味方ユニットに適用される。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-82994b90b80fcca1-79f023d3fd5d19b4eb04fc7ce7433769-v2",
+      "english": "When I look into the Pyre, I see the monster I have become. Perhaps, if I was to remove my Titanhood from my body, this nightmare might end.",
+      "french": "Quand je regarde dans le Brasier, je vois le monstre que je suis devenu. Peut-être qu'en retirant le titan qui est en moi, ce cauchemar prendrait fin.",
+      "german": "Wenn ich in die Höllenglut blicke, sehe ich das Monster, zu dem ich geworden bin. Vielleicht hat dieser Albtraum ein Ende, wenn ich den Titanen aus meinem Körper entferne.",
+      "russian": "Когда смотрю в Пекло, то вижу в нем чудовище, которым я стал. Возможно, если бы мне удалось избавиться от своей титанической сущности, этот кошмар бы закончился.",
+      "portuguese": "Quando olho para a Pira, vejo o monstro que me tornei. Se eu removesse minha parte Titã, talvez esse pesadelo acabasse.",
+      "chinese": "当我看着薪火时，我看到了变成怪物的自己。也许，如果我除去体内的泰坦血脉，噩梦可能就会结束了。",
+      "spanish": "Cuando me asomo a la Pira, veo al monstruo en el que me he convertido. Tal vez, si consiguiera despojarme de mi condición de titán, podría poner fin a esta pesadilla.",
+      "chinese_traditional": "當我凝視著營火，我看見了自己如今這副怪物的模樣。或許只要能將泰坦的影響從我體內根除，這場惡夢就有結束的一天。",
+      "korean": "화로를 들여다보면 괴물이 되어버린 나의 모습이 보인다. 아마도 내 몸에서 티탄의 신격을 떼어낼 수 있다면, 이 악몽도 끝날지 모른다.",
+      "japanese": "炉を覗くと、自分が怪物になってしまったのがわかる。この身体から巨人の姿を取り除くことができれば、この悪夢は終わるのかもしれない。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectMonsterSpellSingleToTeamTargeting",
+      "paramCardType": "spell",
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramTargetMode": "front_in_room"
+    }
+  ]
+}

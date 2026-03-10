@@ -1,0 +1,123 @@
+{
+  "id": "ExcavationEruption",
+  "name": "Excavation Eruption",
+  "nameKey": {
+    "key": "CardData_nameKey-73baa0a8ee08b8ba-caae2c1c84c8e884ca65fd3c1572d1da-v2",
+    "english": "Excavation Eruption",
+    "french": "Éruption excavatrice",
+    "german": "Grubenexplosion",
+    "russian": "Взрыв шахты",
+    "portuguese": "Erupção de Escavação",
+    "chinese": "爆裂喷发",
+    "spanish": "Explosión minera",
+    "chinese_traditional": "挖掘爆發",
+    "korean": "발굴지 폭발",
+    "japanese": "採掘場の噴火"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-601479eba280387d-caae2c1c84c8e884ca65fd3c1572d1da-v2",
+    "english": "Deal [effect0.power] damage to a random enemy unit, three times.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à un ennemi aléatoire trois fois.",
+    "german": "Füge einer zufälligen gegnerischen Einheit 3x [effect0.power] Schaden zu.",
+    "russian": "Три раза наносит [effect0.power] урона случайному вражескому бойцу.",
+    "portuguese": "Causa [effect0.power] de dano a uma unidade inimiga aleatória, três vezes.",
+    "chinese": "随机对一个敌方单位造成 [effect0.power] 点伤害，重复三次。",
+    "spanish": "Inflige [effect0.power] de daño a una unidad enemiga aleatoria tres veces.",
+    "chinese_traditional": "隨機對一個敵方單位造成[effect0.power]點傷害，重複三次。",
+    "korean": "무작위 적 유닛에게 [effect0.power]의 피해를 3회 입힙니다.",
+    "japanese": "3回ランダムな敵ユニットに[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-ab86f5a6d1c5ec58-caae2c1c84c8e884ca65fd3c1572d1da-v2",
+      "english": "With little regard for their own lives, these Morsels seem to explode carelessly in the mines, paying no mind to the possible consequences of their actions. I’ve seen this backfire on more than one occasion...",
+      "french": "Indifférents à leur propre sort, ces sous-bistres se font sauter dans les mines sans considération pour les dommages collatéraux. Plus d'une fois, j'ai été témoin d'un retour de flammes, au sens littéral...",
+      "german": "Diese Nuggets schätzen ihr eigenes Leben offenbar sehr gering. Sie explodieren sorglos in den Minen und kümmern sich nicht um die möglichen Konsequenzen. Ich habe mehr als einmal gesehen, wie diese Sorglosigkeit nach hinten losging …",
+      "russian": "Эти заморыши совсем не дорожат своей жизнью и запросто взрываются в рудниках, не задумываясь о последствиях. А с таковыми мне не раз доводилось сталкиваться.",
+      "portuguese": "Descuidados com suas vidas e suas minas, esses Lanchos explodem constantemente, ignorando as ramificações de seus atos. Vi esse comportamento se demonstrar contraproducente diversas vezes...",
+      "chinese": "这种影裔完全不在乎自己的生命，可能会在矿井里随随便便地爆炸，完全不在意这种行为会造成什么后果。我已经不止一次看到它们自爆引起惨重后果的情况了……",
+      "spanish": "Estos pinchos, aparentemente carentes de aprecio por su vida, explotan sin provocación en las minas, ignorando las consecuencias de sus actos. En más de una ocasión he visto en persona que pueden ser muy graves...",
+      "chinese_traditional": "這些莫塞爾似乎在礦井裡隨意爆炸，絲毫不顧自己的生命安危，也完全不在乎他們行為可能造成的後果。我不只一次看到這種做法適得其反……",
+      "korean": "이 작은 그림자들은 자기 목숨이나 자기가 한 행동이 어떤 결과를 불러올지 전혀 신경 쓰지 않는 듯, 부주의로 광산을 날려 먹는 일이 잦다. 이런 광경은 이미 수차례나 보았다...",
+      "japanese": "モーゼルたちは命をほとんど顧みず、自分の行動がどのような結果をもたらすかなど気にも留めず、鉱山で不注意に爆発するようだ。これが裏目に出るのを何度も見てきた…"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_ExcavationEruption.prefab",
+    "m_AssetGUID": "6adcc8f9e448dcc478d64ffb0a8943a8"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "random_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 25,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_MetalStoneImpact_PS.prefab",
+          "m_AssetGUID": "a73a73d5c9eeb1e4ea72b5831b39bf0b"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "random_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 25,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_MetalStoneImpact_PS.prefab",
+          "m_AssetGUID": "a73a73d5c9eeb1e4ea72b5831b39bf0b"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "random_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 25,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_MetalStoneImpact_PS.prefab",
+          "m_AssetGUID": "a73a73d5c9eeb1e4ea72b5831b39bf0b"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-2dd17db6d41ec0fa-caae2c1c84c8e884ca65fd3c1572d1da-v2",
+        "english": "Gain [effect0.power][ember].",
+        "french": "Octroie [effect0.power][ember].",
+        "german": "Erhalte [effect0.power][ember].",
+        "russian": "Дает [effect0.power][ember].",
+        "portuguese": "Recebe [effect0.power][ember].",
+        "chinese": "获得[effect0.power][ember]。",
+        "spanish": "Obtienes [effect0.power][ember].",
+        "chinese_traditional": "獲得[effect0.power][ember]。",
+        "korean": "[effect0.power][ember]을 획득합니다.",
+        "japanese": "[effect0.power][ember]を得る。"
+      },
+      "trigger": "on_kill",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectGainEnergy",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "paramInt": 2
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "John Lee"
+}

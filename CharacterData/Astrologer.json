@@ -1,0 +1,90 @@
+{
+  "id": "MonsterAstrologer",
+  "name": "Astrologer",
+  "nameKey": {
+    "key": "CharacterData_nameKey-cfd48ad235904ec6-90c2477ab4c8c8d439882c0dcb2d749c-v2",
+    "english": "Astrologer",
+    "french": "Astrologue",
+    "german": "Astrologin",
+    "russian": "Звездочетка",
+    "portuguese": "Astróloga",
+    "chinese": "占星师",
+    "spanish": "Astróloga",
+    "chinese_traditional": "占星師",
+    "korean": "점성가",
+    "japanese": "占星術師"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-4da7d01deef2ec92-90c2477ab4c8c8d439882c0dcb2d749c-v2",
+      "english": "“Let me look at your star chart. I see you were born under the Blessed Moon? Oh dear, that’s no good...”",
+      "french": "<nobr>« Laissez-moi</nobr> regarder votre thème astral. Oh, la Lune <nobr>bénie ?</nobr> <nobr>Misère... »</nobr>",
+      "german": "„Lass mich mal deine Sterne ansehen. Du wurdest also im Segensmond geboren? Grundgütiger, das ist nicht gut ...“",
+      "russian": "«Дай взгляну на твою звездную карту. Хм, день твоего рождения пришелся на Благословенную луну. Это очень плохо...»",
+      "portuguese": "“Deixe-me dar uma olhada em seu mapa astral. Vejo que você nasceu sob a Lua Abençoada? Ai, caramba, isso não é nada bom.”",
+      "chinese": "“让我来看看你的星图。我看见你是在祝福之月下出生的？哦，亲爱的，这可不太好……”",
+      "spanish": "«Deja que consulte tu mapa celeste. Parece que naciste bajo una luna bendita, ¿verdad? Me temo que no es buena señal...».",
+      "chinese_traditional": "「我來看看你的星圖。你似乎是在祝福之月高掛天空時出生的。哦親愛的，這不太妙……」",
+      "korean": "\"별자리를 좀 보죠. 축복받은 달 아래서 태어났나요? 이런, 좋지 않은 징조로군요...\"",
+      "japanese": "「星占いしてあげる。祝福の月の下に生まれたの？ああ、それはよくないわ…」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Astrologer.prefab",
+    "m_AssetGUID": "26ff9d609fcff71449867fec7f9c5173"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttack.prefab",
+      "m_AssetGUID": "3ff51f50bdf4381488d19d48af5ecedc"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttackImpact.prefab",
+      "m_AssetGUID": "e403cf7dbfbb9df498327589983ce551"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-70810b3b1cac649e-90c2477ab4c8c8d439882c0dcb2d749c-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack].",
+        "french": "+[effect0.upgrade.bonusdamage][attack].",
+        "german": "+[effect0.upgrade.bonusdamage][attack].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "+[effect0.upgrade.bonusdamage][attack].",
+        "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "trigger": "on_moon_phase_shift",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "AstrologerAttackUpgrade",
+            "bonusDamage": 5
+          }
+        }
+      ],
+      "suppressTriggerNotification": true
+    }
+  ],
+  "size": 2,
+  "health": 10,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 5,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Selene"
+  ],
+  "characterChatterData": "LunaCovenSeleneChatterdata"
+}

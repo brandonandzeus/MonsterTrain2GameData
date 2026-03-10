@@ -1,0 +1,109 @@
+{
+  "id": "MakeshiftGolem",
+  "name": "Makeshift  Golem",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MakeshiftGolem.prefab",
+    "m_AssetGUID": "1fad9e1b6478e684d8671499388522c2"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterGolem",
+        "nameKey": {
+          "key": "CharacterData_nameKey-169260e2137a805b-0b991962b14781148906a478d01559e8-v2",
+          "english": "Makeshift  Golem",
+          "french": "Golem de fortune",
+          "german": "Behelfsgolem",
+          "russian": "Мусорный голем",
+          "portuguese": "Golem Improvisado",
+          "chinese": "临时魔像",
+          "spanish": "Gólem improvisado",
+          "chinese_traditional": "拼湊魔像",
+          "korean": "임시 골렘",
+          "japanese": "間に合わせゴーレム"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-63c18196ab06f8a2-0b991962b14781148906a478d01559e8-v2",
+            "english": "“I am made of mud but I have a heart of gold.”",
+            "french": "<nobr>« Je</nobr> suis fait de boue, mais j'ai un cœur <nobr>d'or. »</nobr>",
+            "german": "„Ich bestehe aus Matsch, doch ich habe ein Herz aus Gold.“",
+            "russian": "«Я слеплен из грязи, но у меня золотое сердце».",
+            "portuguese": "“Sou feito de lama, mas tenho um coração de ouro.”",
+            "chinese": "“我是泥做的，但我有一颗金子般的心。”",
+            "spanish": "«Estaré hecho de barro, pero tengo un corazón de oro».",
+            "chinese_traditional": "「我是由泥土做成的，但我有顆金子般的心。」",
+            "korean": "\"내 몸은 진흙으로 이루어졌지만, 심장은 황금으로 이루어져 있다.\"",
+            "japanese": "「この身体は泥でできているけれど、精神は黄金なんだ」"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MakeshiftGolem.prefab",
+          "m_AssetGUID": "c74b083d863fff14bb589827000660cd"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+            "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+          },
+          "spawnLocation": "character_center"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "armor",
+            "count": 12
+          }
+        ],
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-4c5c44e74aff19dc-0b991962b14781148906a478d01559e8-v2",
+              "english": "Apply [armor] [effect0.status0.power] to friendly units.",
+              "french": "Confère [armor] [effect0.status0.power] aux unités alliées.",
+              "german": "Wende [armor] [effect0.status0.power] auf verbündete Einheiten an.",
+              "russian": "Союзным бойцам дается [armor] х[effect0.status0.power].",
+              "portuguese": "Concede [armor] [effect0.status0.power] às unidades aliadas.",
+              "chinese": "使所有友方单位获得 [armor] [effect0.status0.power]。",
+              "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas.",
+              "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。",
+              "korean": "아군 유닛들에게 [armor] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_death",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "armor",
+                    "count": 12
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 12,
+        "attackDamage": 12,
+        "subtypeKeys": [
+          "SubtypesData_Monstrosity",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "LazarusLeagueMonstrosityChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

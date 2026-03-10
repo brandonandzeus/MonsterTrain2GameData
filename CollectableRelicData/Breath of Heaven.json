@@ -1,0 +1,98 @@
+{
+  "id": "ChanceRetreatEnemiesOnSpawn",
+  "name": "Breath of Heaven",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-a649b3abadbef6a8-3a23510b5911bf847b2f9608074fdadb-v2",
+    "english": "Breath of Heaven",
+    "french": "Souffle du paradis",
+    "german": "Atem des Himmels",
+    "russian": "Дыхание Рая",
+    "portuguese": "Sopro do Céu",
+    "chinese": "天堂之息",
+    "spanish": "Aliento del Cielo",
+    "chinese_traditional": "天堂之息",
+    "korean": "천상의 숨결",
+    "japanese": "天界の吐息"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-f05e3cb4dee3d35b-3a23510b5911bf847b2f9608074fdadb-v2",
+    "english": "[advance] the back enemy unit when it enters your train.",
+    "french": "<b>Avance</b> l'ennemi en dernière ligne lorsqu'il entre dans le train.",
+    "german": "[advance] für die hintere Einheit, wenn sie den Zug betritt.",
+    "russian": "Переводит в [advance] заднего врага, проникающего в ваш поезд.",
+    "portuguese": "<b>Avança</b> a unidade inimiga no fundo quando ela entra no seu trem.",
+    "chinese": "使进入火车的后排敌方单位 [advance] 。",
+    "spanish": "Aplica [advance] a la última unidad enemiga cuando entra a tu tren.",
+    "chinese_traditional": "當後排敵方單位進入你的列車時，使其[advance]。",
+    "korean": "적 유닛이 열차에 진입하면 후열 적 유닛이 [advance]합니다.",
+    "japanese": "列車への進入時に、後列の敵ユニットを[advance]させる。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-e94212f93220c7b4-3a23510b5911bf847b2f9608074fdadb-v2",
+      "english": "When Angels and Demons were created, they were given the Breath of Life. Over time, Seraph manipulated this innate ability in all beings so that it became a powerful force that knocks an enemy back.",
+      "french": "Lorsque les anges et les démons ont été créés, ils ont reçu le souffle de vie. Au fil du temps, Séraphin a manipulé cette capacité innée chez tous les êtres pour en faire une force puissante à même de repousser l'ennemi.",
+      "german": "Als Engel und Dämonen erschaffen wurden, erhielten sie den Atem des Lebens. Im Laufe der Zeit manipulierte Seraph diese angeborene Fähigkeit aller Wesen zu einer mächtigen Kraft, die Gegner zurückstößt.",
+      "russian": "При появлении все ангелы и демоны были наделены особой способностью — Дыханием жизни. Спустя долгое время Серафим использовал других, чтобы подчинить себе эту силу и превратил ее в мощное оружие.",
+      "portuguese": "Quando os anjos e demônios foram criados, eles receberam o Sopro da Vida. Com o passar do tempo, Serafim manipulou essa habilidade inata em todos os seres para que ela se tornasse uma força poderosa que consegue repelir inimigos.",
+      "chinese": "当天使与恶魔被创造之时，被赋予了生命之息。随着时间的推移，炽天使操控了这种所有生命与生俱来的能力，使其成为一股能击退敌人的强大力量。",
+      "spanish": "Cuando ángeles y demonios fueron creados, les fue otorgado el aliento de la vida. Con el tiempo, Seraph manipuló esta habilidad intrínseca a todos los seres vivos para que fuera una gran fuerza que hiciera retroceder al enemigo.",
+      "chinese_traditional": "天使和惡魔被創造時，他們被賦予了生命之息。隨著時間推移，撒拉弗操縱了所有生物中這種與生俱來的能力，使其成為一種能夠擊退敵人的強大力量。",
+      "korean": "천사와 악마가 창조되었을 때, 이들은 생명의 숨결을 받았다. 그리고 오랜 시간이 지나, 세라핌은 모든 존재가 지닌 이 능력을 조종해 적을 물리칠 강력한 힘을 손에 넣었다.",
+      "japanese": "天使と悪魔が創造されたとき、彼らには生命の息吹が与えられた。時が経つにつれ、セラフはすべての生物のこの生来の能力を操作し、敵を押し戻す強大な力としたのだ。"
+    }
+  ],
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectChanceAddEffectAfterSpawn",
+      "paramCardEffects": [
+        {
+          "effectStateName": "CardEffectFloorRearrange",
+          "targetMode": "back_in_room",
+          "targetTeamType": "heroes"
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardEffectFloorRearrange_FrontSlot_TooltipText",
+            "english": "Move to the front of the floor.",
+            "french": "Déplace à l'avant du niveau.",
+            "german": "Bewege dich auf der Ebene nach vorne.",
+            "russian": "Двигает на переднюю линию этажа.",
+            "portuguese": "Move para a frente do andar.",
+            "chinese": "移动到该层前方。",
+            "spanish": "Se coloca en primera posición.",
+            "chinese_traditional": "移至本層前排。",
+            "korean": "동일 층의 전열로 이동합니다.",
+            "japanese": "フロアの前列に移動する。"
+          },
+          "titleKey": {
+            "key": "CardEffectFloorRearrange_FrontSlot_TooltipTitle",
+            "english": "Advance",
+            "french": "Avancée",
+            "german": "Voranschreiten",
+            "russian": "Наступление",
+            "portuguese": "Avançar",
+            "chinese": "前进",
+            "spanish": "Avance",
+            "chinese_traditional": "前進",
+            "korean": "전진",
+            "japanese": "前進"
+          },
+          "style": "default"
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": 100,
+      "paramInt2": 1,
+      "paramExcludeCharacterSubtypes": [
+        "SubtypesData_BigBossT1_50952308-e0f3-4acb-b0cc-e0d662b868b8",
+        "SubtypesData_BigBoss2_e3e6f1a2-34a7-4493-b9d7-a123e182241e",
+        "SubtypesData_BigBossT3_f7449215-5071-4671-909c-a02e2cceb821",
+        "SubtypesData_BossEntropy"
+      ]
+    }
+  ]
+}

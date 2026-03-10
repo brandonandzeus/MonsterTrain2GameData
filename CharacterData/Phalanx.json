@@ -1,0 +1,100 @@
+{
+  "id": "Boss_SoulSavior_R3_TrainBoss_Spikes",
+  "name": "Phalanx",
+  "nameKey": {
+    "key": "CharacterData_nameKey-efb21ddb09935249-40dcc0442d016844cbc274ec21d40371-v2",
+    "english": "Phalanx",
+    "french": "Phalange",
+    "german": "Phalanx",
+    "russian": "Фаланга",
+    "portuguese": "Falange",
+    "chinese": "方阵",
+    "spanish": "Falange",
+    "chinese_traditional": "方陣",
+    "korean": "팔랑크스",
+    "japanese": "ファランクス"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-2d02f1ac6ea05548-40dcc0442d016844cbc274ec21d40371-v2",
+      "english": "Though the Titan of Dominion may have dabbled in creation when shaping this Forsaken, his power paled in comparison to the transformative might of the Mother. Her vines easily pulled a Forsaken into the Soulstream and replicated it for Her own army.",
+      "french": "Bien que le titan de Domination ait démontré sa capacité de création en façonnant ce Délaissé, son pouvoir était insignifiant comparé à la puissance transformatrice de la Mère. Les sarments de celle-ci parvenaient aisément à entraîner les Délaissés dans le Flux des âmes pour les reproduire et les intégrer dans son armée.",
+      "german": "Wenngleich der Titan der Herrschaft bei der Schöpfung dieses Verlassenen nicht seinen besten Tag hatte, verblasste selbst seine vollumfängliche Macht im Vergleich mit der transformativen Gewalt der Mutter. Mit ihren Ranken zog Sie Verlassene mit Leichtigkeit in den Seelenstrom, um sie für Ihre eigene Armee zu replizieren.",
+      "russian": "Хотя Титан Доминион и попытался поиграть в Творца, создавая этих Отреченных, его сила меркла перед преобразующей мощью Матери. Ее лозы без труда утягивали Отреченного в Ручей Душ и выращивали его отражение — уже для собственной армии.",
+      "portuguese": "Embora o Titã do Domínio possa ter se envolvido na criação ao moldar este Rejeitado, seu poder empalideceu em comparação com o poder transformador da Mãe. Suas vinhas facilmente puxaram um Rejeitado para o Fluxo de Almas e o replicaram para seu próprio exército.",
+      "chinese": "统御泰坦塑造了这个被遗忘者，说明他也拥有一定的创造之力，但在母亲无与伦比的改造之力面前，他的力量就黯然失色了。她的藤蔓轻而易举地将一名被遗忘者拖进灵魂之流，并将其复制，以壮大自己的军队。",
+      "spanish": "Aunque el titán de Dominio jugó con la creación al dar forma a este olvidado, su poder palidece frente a las dotes transformadoras de la Madre. Sus lianas arrastraron con facilidad a un olvidado a la Corriente de Almas y lo replicaron para Su propio ejército.",
+      "chinese_traditional": "雖說主宰泰坦在塑造這名「遺棄者」時或許涉足了創造領域，但其力量與母親的轉化神力相比，簡直相形見絀。她的藤蔓能輕易將遺棄者拉入靈魂之流，並為己方大軍進行複製。",
+      "korean": "도미니온의 티탄이 이 버려진 자를 빚어낼 때 창조에 손을 댔을지도 모르나, 그 힘은 어머니의 변형적 위력에 비하면 보잘것없었다. 그녀의 덩굴은 버림받은 자를 손쉽게 영혼의 흐름으로 끌어당겨, 자신의 군세를 위해 그대로 복제했다.",
+      "japanese": "このフォーセイクンを創造したドミニオンの巨人の力は、マザーの変革的な能力に比べてしまうと色褪せて見える。彼女の蔓はいとも簡単にこのフォーセイクンをソウルストリームへと引きずり込み、複製して軍勢に取り込んでしまった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Legion_SoulSavior.prefab",
+    "m_AssetGUID": "e186c2c5fa5afc44187f00ff49c94151"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    },
+    {
+      "statusId": "spikes",
+      "count": 8
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-a298bf5cb7c090f2-40dcc0442d016844cbc274ec21d40371-v2",
+        "english": "Lose [spikes] [effect0.status0.power].",
+        "french": "Perdez [spikes] [effect0.status0.power].",
+        "german": "Verliere [spikes] [effect0.status0.power].",
+        "russian": "Вы теряете [spikes] х[effect0.status0.power].",
+        "portuguese": "Perde [spikes] [effect0.status0.power].",
+        "chinese": "失去 [spikes] [effect0.status0.power]。",
+        "spanish": "Pierde [spikes] [effect0.status0.power].",
+        "chinese_traditional": "失去[spikes][effect0.status0.power]。",
+        "korean": "[spikes] [effect0.status0.power] 효과를 잃습니다.",
+        "japanese": "[spikes] [effect0.status0.power]を失う。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        {
+          "effectStateName": "CardEffectRemoveStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "spikes",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 1800,
+    "endlessAttack": 16
+  },
+  "size": 5,
+  "health": 500,
+  "isMiniboss": true,
+  "deathType": "large",
+  "attackDamage": 12,
+  "bossTitanAffinity": "lifemother",
+  "subtypeKeys": [
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss2_SoulSaviorLegion_ChatterData",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

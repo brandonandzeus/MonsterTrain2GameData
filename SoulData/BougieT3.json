@@ -1,0 +1,113 @@
+{
+  "id": "BougieT3",
+  "name": "BougieT3",
+  "nameKey": {
+    "key": "SoulData_nameKey-07c832a4c18bd549-f68047bc9b4828f4faf2f2c485650478-v2",
+    "english": "Bougie III",
+    "french": "Bougie III",
+    "german": "Bougie III",
+    "russian": "Франт III",
+    "portuguese": "Sofisticado III",
+    "chinese": "中产阶级 III",
+    "spanish": "Capitalista III",
+    "chinese_traditional": "時髦III",
+    "korean": "사치광 III",
+    "japanese": "ブジーIII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-5902e7c85d2ff1f6-f68047bc9b4828f4faf2f2c485650478-v2",
+    "english": "Gain [attuned] and +[effect0.power] [magicpower].",
+    "french": "Octroie [attuned]. +[effect0.power] [magicpower].",
+    "german": "Erhalte [attuned]. +[effect0.power] [magicpower].",
+    "russian": "Дается [attuned]. +[magicpower] х[effect0.power].",
+    "portuguese": "Recebe [attuned]. +[effect0.power] de [magicpower].",
+    "chinese": "获得 [attuned]。+[effect0.power] [magicpower]。",
+    "spanish": "Añade [attuned]. +[effect0.power] [magicpower].",
+    "chinese_traditional": "獲得[attuned]。+[effect0.power][magicpower]。",
+    "korean": "[attuned]을 획득합니다. +[effect0.power] [magicpower].",
+    "japanese": "[attuned]を得る。+[effect0.power] [magicpower]。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "paramCardUpgradeData": {
+        "id": "BougieT3_Upgrade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-030b10a0d650b6d4-ad469dd3355bb1c4381bb8bb7b986883-v2",
+          "english": "Bougie",
+          "french": "Bougie",
+          "german": "Bougie",
+          "russian": "Франт",
+          "portuguese": "Sofisticado",
+          "chinese": "布吉",
+          "spanish": "Capitalista",
+          "chinese_traditional": "時髦",
+          "korean": "사치광",
+          "japanese": "ブジー"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-d14da65006f3b961-ad469dd3355bb1c4381bb8bb7b986883-v2",
+          "english": "Gain [attuned] and +[bonusdamage] [magicpower].",
+          "french": "Octroie [attuned]. +[bonusdamage] [magicpower].",
+          "german": "Erhalte [attuned]. +[bonusdamage] [magicpower].",
+          "russian": "Дается [attuned]. +[magicpower] х[bonusdamage].",
+          "portuguese": "Recebe [attuned]. +[bonusdamage] de [magicpower].",
+          "chinese": "获得 [attuned]。+[bonusdamage] [magicpower]。",
+          "spanish": "Añade [attuned]. +[bonusdamage] [magicpower].",
+          "chinese_traditional": "獲得[attuned]。+[bonusdamage][magicpower]。",
+          "korean": "[attuned]을 획득합니다. +[bonusdamage] [magicpower].",
+          "japanese": "[attuned]を得る。+[bonusdamage] [magicpower]。"
+        },
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitStrongerMagicPower"
+          }
+        ],
+        "filters": [
+          {
+            "id": "MagicPowerSpells",
+            "cardType": "spell",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectDamage",
+              "CardEffectHeal",
+              "CardEffectHealAndDamageRelative",
+              "CardEffectHealAndOverheal",
+              "CardEffectDamagePerSourceAttack",
+              "CardEffectDamagePerHp"
+            ]
+          },
+          {
+            "id": "ExcludedSpellsFromMagicPower",
+            "disallowedCardPools": [
+              "SpellsNotAllowedSpellPowerPool"
+            ]
+          }
+        ],
+        "isRegionRunUpgrade": true,
+        "excludeFromClones": true,
+        "bonusDamage": 30,
+        "bonusHeal": 30
+      }
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-d1f8f314ed8b38ea-f68047bc9b4828f4faf2f2c485650478-v2",
+      "english": "Deal damage with [magicpower] to upgrade.",
+      "french": "Infligez des dégâts avec [magicpower] pour améliorer.",
+      "german": "Verursache zum Verbessern Schaden mit [magicpower].",
+      "russian": "Чтобы улучшить, нанесите урон <b>силой магии</b>.",
+      "portuguese": "Causa dano com [magicpower] para melhorar.",
+      "chinese": "用 [magicpower] 造成伤害以升级。",
+      "spanish": "Inflige daño con [magicpower] para mejorar.",
+      "chinese_traditional": "用[magicpower]造成傷害以升級。",
+      "korean": "[magicpower]으로 피해를 주면 업그레이드됩니다.",
+      "japanese": "[magicpower]でダメージを与えてアップグレード。"
+    },
+    "unlockCondition": "soul_magic_power_bonus_damage",
+    "paramInt": 20000
+  },
+  "tierLevel": 3
+}

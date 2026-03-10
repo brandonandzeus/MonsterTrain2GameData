@@ -1,0 +1,91 @@
+{
+  "id": "SpellUpgradeReduceCost",
+  "name": "Emberstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-bec61796155935a7-d6a9e22a1c3fc7d4db253f26d17061ab-v2",
+    "english": "Emberstone",
+    "french": "Pierre de braise",
+    "german": "Glutstein",
+    "russian": "Каменный уголь",
+    "portuguese": "Pedra de Brasa",
+    "chinese": "余烬石",
+    "spanish": "Piedra de ascua",
+    "chinese_traditional": "餘燼石",
+    "korean": "잔불석",
+    "japanese": "エンバー石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-3edafe734e231647-d6a9e22a1c3fc7d4db253f26d17061ab-v2",
+    "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+    "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+    "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember] kostet.</nobr>",
+    "russian": "Снижает цену чар на <nobr>[effect0.upgrade.costreduction][ember].</nobr>",
+    "portuguese": "Melhora um feitiço para custar <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+    "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]。</nobr>",
+    "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+    "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>。",
+    "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember] 됩니다.</nobr>",
+    "japanese": "呪文アップグレード：コスト<nobr>-[effect0.upgrade.costreduction][ember]</nobr>"
+  },
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "spell",
+      "paramCardUpgradeData": {
+        "id": "ReduceCost",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-4f25f111aee15ec7-540196578c3d6f742864d533cacf7ccb-v2",
+          "english": "Emberstone",
+          "french": "Pierre de braise",
+          "german": "Glutstein",
+          "russian": "Каменный уголь",
+          "portuguese": "Pedra de Brasa",
+          "chinese": "余烬石",
+          "spanish": "Piedra de ascua",
+          "chinese_traditional": "餘燼石",
+          "korean": "잔불석",
+          "japanese": "エンバー石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-11217f673e6e0e5b-540196578c3d6f742864d533cacf7ccb-v2",
+          "english": "-[costreduction][ember].",
+          "french": "-[costreduction][ember].",
+          "german": "-[costreduction][ember].",
+          "russian": "-[costreduction][ember].",
+          "portuguese": "-[costreduction][ember].",
+          "chinese": "-[costreduction][ember]。",
+          "spanish": "-[costreduction][ember].",
+          "chinese_traditional": "-[costreduction][ember]。",
+          "korean": "-[costreduction][ember].",
+          "japanese": "-[costreduction][ember]。"
+        },
+        "filters": [
+          {
+            "id": "ExcludeChampions",
+            "excludedSubtypesOperator": "and",
+            "excludedSubtypes": [
+              "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+            ]
+          },
+          {
+            "id": "ExcludeZeroCost",
+            "costRange": {
+              "x": 1.0,
+              "y": 99.0
+            },
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitUnplayable"
+            ]
+          }
+        ],
+        "costReduction": 1,
+        "xCostReduction": 1
+      },
+      "paramMinInt": 1,
+      "paramMaxInt": 99
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

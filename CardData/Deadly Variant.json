@@ -1,0 +1,81 @@
+{
+  "id": "DeadlyVariant",
+  "name": "Deadly Variant",
+  "nameKey": {
+    "key": "CardData_nameKey-e33015df2a03738e-93de79339dfc9424b9c936e53092b04c-v2",
+    "english": "Deadly Variant",
+    "french": "Variante mortelle",
+    "german": "Tödliche Variante",
+    "russian": "Смертельный исход",
+    "portuguese": "Variante Mortal",
+    "chinese": "致命变形",
+    "spanish": "Cepa letal",
+    "chinese_traditional": "致命變體",
+    "korean": "끔찍한 변종",
+    "japanese": "死の変異"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-0488057260e0ea3f-93de79339dfc9424b9c936e53092b04c-v2",
+    "english": "Apply [decay] equal to [effect0.status1.power]x [sap].",
+    "french": "Applique une [decay] valant [effect0.status1.power]x [sap].",
+    "german": "Wende [decay] in Höhe von [effect0.status1.power]x [sap] an.",
+    "russian": "Накладывает [decay], равное x[effect0.status1.power] количеству <b>Сока</b>.",
+    "portuguese": "Aplica [decay] igual a [effect0.status1.power]x o [sap].",
+    "chinese": "施加 [decay]，层数相当于[effect0.status1.power]x [sap]。",
+    "spanish": "Añade tanta [decay] como [sap] x[effect0.status1.power].",
+    "chinese_traditional": "施加[decay]，數量等於[effect0.status1.power]x[sap]。",
+    "korean": "[decay]를 [sap] x[effect0.status1.power]만큼 적용합니다.",
+    "japanese": "[effect0.status1.power]x [sap]に等しい[decay]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-bd4ffaec0a9a4e24-93de79339dfc9424b9c936e53092b04c-v2",
+      "english": "The angel tried to escape the frenzy of battle but it was too late. The Fatal Elm had its spores in him. Soon, they would eat away at him and transform his body until he was more fungus than flesh.",
+      "french": "L'ange tenta d'échapper à la frénésie du combat, mais il était trop <nobr>tard :</nobr> les spores de l'Orme funeste étaient en lui. Bientôt, elles le rongeraient et transformeraient son corps jusqu'à ce qu'il ne fût plus qu'un amas fongique.",
+      "german": "Der Engel versuchte, dem Chaos des Kampfes zu entkommen, aber es war zu spät. Die Sporen der Schicksalsulme hatten ihn bereits befallen. Bald würden sie ihn zerfressen und sein Körper wird mehr Pilz als Fleisch sein.",
+      "russian": "Ангел попытался вырваться из битвы, но было слишком поздно. Споры Рокового Вяза уже попали внутрь. Вскоре они начнут разъедать его тело и покрывать кожу, пока от него самого ничего не останется.",
+      "portuguese": "O anjo tentou escapar do frenesi da batalha, mas já era tarde demais. Os esporos do Ulmeiro Mortal já estavam dentro dele. Em breve, eles o corroeriam e transformariam seu corpo até que ele se tornasse mais fungo do que carne.",
+      "chinese": "天使试图逃离疯狂的战斗，但为时已晚。致命榆树的孢子已经进入了他的身体。很快，它们就会吞噬并改造他的身体，直到他的肉体都变成真菌。",
+      "spanish": "El ángel trató de escapar del caos de la batalla, pero era demasiado tarde. El Olmo Fatal ya le había implantado sus esporas. Pronto, devorarían y transformarían su cuerpo hasta que fuera más hongo que carne.",
+      "chinese_traditional": "天使試圖逃離戰鬥的狂熱，但已經太遲了。致命榆樹已經把孢子植入了他的體內。很快，它們就會侵蝕他，將他的身體轉化，直到他更像是一個真菌而不是肉體。",
+      "korean": "천사는 전장의 광란에서 벗어나고 싶었지만, 이미 때는 늦었다. 운명의 느릅나무의 포자가 그에게 침투했기 때문이었다. 포자는 즉시 천사를 먹어치웠고, 그 육체를 균사체로 바꾸었다.",
+      "japanese": "天使は戦いの狂乱から逃れようとしたが、遅すぎた。宿命の樹の胞子が彼の体内に宿っていたのだ。すぐに胞子は彼を食い尽くし、菌類に変貌させてしまうだろう。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_DeadlyVariant.prefab",
+    "m_AssetGUID": "d9f08473ac326894bac7012d0a3d3b76"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffectPerOtherEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "decay",
+          "count": 1
+        },
+        {
+          "statusId": "debuff",
+          "count": 5
+        }
+      ],
+      "paramInt": 5,
+      "paramBool": true
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 2,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Leonardo Dionisi"
+}

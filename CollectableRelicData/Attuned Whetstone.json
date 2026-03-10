@@ -1,0 +1,69 @@
+{
+  "id": "RandomEquipmentCardFirstTurn",
+  "name": "Attuned Whetstone",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-53df75565a5a4209-049357f47a1007a4999e480f34cbde7f-v2",
+    "english": "Attuned Whetstone",
+    "french": "Pierre à aiguiser",
+    "german": "Schleifstein des Einklangs",
+    "russian": "Заряженный точильный камень",
+    "portuguese": "Pedra de Amolar Sintonizada",
+    "chinese": "调合磨石",
+    "spanish": "Afiladera vinculada",
+    "chinese_traditional": "調諧磨石",
+    "korean": "조율의 숫돌",
+    "japanese": "同調済み砥石"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-b629c0698cb08647-049357f47a1007a4999e480f34cbde7f-v2",
+    "english": "On [deployphase], draw an Equipment card from your deck. Reduce its cost to 0[ember].",
+    "french": "Pendant la [deployphase], piochez une carte d'équipement dans le deck. Elle coûte 0[ember].",
+    "german": "Ziehe in der [deployphase] eine Ausrüstungskarte aus deinem Deck. Reduziere ihre Kosten auf 0[ember].",
+    "russian": "[deployphase]: дает карту снаряжения из вашей колоды, снижая ее стоимость до 0[ember].",
+    "portuguese": "Na [deployphase], compra uma Carta de Equipamento do seu deck. Reduz o custo para 0[ember].",
+    "chinese": "在 [deployphase] 时，从你的卡组里抽一张装备牌。使其费用降低至 0[ember]。",
+    "spanish": "En la [deployphase], roba una carta de equipo de tu mazo. Reduce su coste a 0[ember].",
+    "chinese_traditional": "在[deployphase]時，從你的牌組中抽一張裝備卡。將其費用降為0[ember]。",
+    "korean": "[deployphase]가 되면 덱에서 장비 카드를 뽑습니다. 뽑은 장비 카드의 비용은 0[ember]이 됩니다.",
+    "japanese": "[deployphase]時、デッキから装備品カードをドローし、そのコストを0[ember]に減少させる。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-cb9dc4b6fb3f2bda-049357f47a1007a4999e480f34cbde7f-v2",
+      "english": "As I sharpened the blades of clan soldiers, I wondered if I would ever see them again. Quartz absorbs the emotions around it and soon my whetstone absorbed my wishes for the safety of my friends.",
+      "french": "En affûtant les lames des soldats du clan, je me demandais si je les reverrais un jour. Or, comme le quartz absorbe les émotions ambiantes, mes inquiétudes furent vite emportées par ma pierre à aiguiser.",
+      "german": "Während ich die Klingen der Stammessoldaten schärfte, fragte ich mich, ob ich sie jemals wiedersehen würde. Quarz absorbiert Emotionen – und bald absorbierte mein Schleifstein meine Wünsche für die Sicherheit meine Freunde.",
+      "russian": "Затачивая клинки для воинов клана, я размышлял, увидимся ли мы снова. Кварц впитывает окружающие эмоции, и вскоре точильный камень наполнился моей надеждой на их возвращение.",
+      "portuguese": "Enquanto afiava as lâminas dos soldados do clã, eu me perguntava se algum dia os veria novamente. O quartzo consegue absorver as emoções ao seu redor e logo minha pedra de amolar absorveu meus desejos pela segurança de meus amigos.",
+      "chinese": "当我替氏族的战士们磨刀时，我不禁思索能否再见到他们。石英会吸收周围的情感，很快，我的磨刀石就吸收了我希望朋友们平安的心愿。",
+      "spanish": "Mientras afilaba las espadas de los soldados del clan, me preguntaba si volvería a verlos. El cuarzo absorbe las emociones que lo rodean y, poco después, mi piedra de afilar absorbió mi anhelo de que mis amigos regresaran a salvo.",
+      "chinese_traditional": "當我為氏族士兵磨利刀刃時，我想知道自己能否再見到他們。石英會吸收周圍的情感，很快我的磨石吸收了我對朋友安全的祝願。",
+      "korean": "클랜 병사의 검을 날카롭게 다듬으며 이들을 다시 볼 수 있을지 모르겠다는 걱정이 든다. 석영이 주변의 감정을 담기 시작하면서, 내 숫돌에 동료들의 안전을 바라는 마음도 담겼다.",
+      "japanese": "一族の兵士たちの刃を研ぎながら、私は彼らにまた会えるのだろうかと考えた。石英は周囲の感情を吸収し、やがて砥石は友たちの安全を願う私の願いを吸収した。"
+    }
+  ],
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectDrawOnPreOpeningDrawCascade",
+      "paramCardFilter": {
+        "id": "RandomEquipmentCardFirstTurn_CardMask",
+        "cardType": "equipment",
+        "excludedCardTraitsOperator": "and",
+        "excludedCardTraits": [
+          "CardTraitDrawInDeploymentPhase"
+        ]
+      },
+      "paramCardFilterSecondary": {
+        "id": "RandomEquipmentCardFirstTurn_CardMask_DeployableOk",
+        "cardType": "equipment"
+      },
+      "paramCardUpgradeData": {
+        "id": "RandomEquipmentOrTrainCardFirstTurn_Upgrade",
+        "costReduction": 99
+      },
+      "paramInt": 1,
+      "paramBool": true
+    }
+  ]
+}

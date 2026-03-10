@@ -1,0 +1,60 @@
+{
+  "id": "MothersRemnant1Relic",
+  "name": "Lifemother's Seed",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-a7d2949e53a56592-270003e71916e6747bdf90ff8ee4609d-v2",
+    "english": "Lifemother's Seed",
+    "french": "Graine de Mère Nature",
+    "german": "Saat der Lebensmutter",
+    "russian": "Семя Матери-природы",
+    "portuguese": "Semente da Genetriz",
+    "chinese": "生命之母的种子",
+    "spanish": "Semilla de la Madre Vida",
+    "chinese_traditional": "生命之母的種子",
+    "korean": "생명의 어머니의 씨앗",
+    "japanese": "ライフマザーの種"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-569b7905ceb3fa48-270003e71916e6747bdf90ff8ee4609d-v2",
+    "english": "At the end of combat, create a permanent copy of a random non-champion card in your deck.",
+    "french": "À la fin du combat, créez une copie permanente d'une carte hors champion aléatoire dans votre deck.",
+    "german": "Erstelle am Ende des Kampfes eine permanente Kopie einer zufälligen Nicht-Champion-Karte aus deinem Deck.",
+    "russian": "В конце боя создает постоянную копию случайной карты из вашей колоды, кроме карты героя.",
+    "portuguese": "No final do combate, criará uma cópia permanente de uma carta aleatória que não seja Campeão em seu deck.",
+    "chinese": "战斗结束时，为你卡组中的一张随机非勇者卡牌创建一个永久复制体。",
+    "spanish": "Al final del combate, crea una copia permanente de una carta aleatoria de tu mazo que no sea de campeón.",
+    "chinese_traditional": "在戰鬥結束時，創造一張你牌組中隨機非勇士卡牌的永久複製。",
+    "korean": "전투 종료 시, 무작위 영웅 외 카드를 덱에 영구히 복사합니다.",
+    "japanese": "戦闘終了時、デッキ内のランダムな非チャンピオンカードの永続的な複製を作成する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-570567a6135be8ec-270003e71916e6747bdf90ff8ee4609d-v2",
+      "english": "“Interesting, indeed, and not uncharacteristic of the Lifemother. This has not been the first time a fragment of Her magic has bloomed from beneath marbled floors. Nor, I fear, will it be the last.”—The Historian",
+      "french": "<nobr>« C'est</nobr> un fait intéressant, et tout à fait caractéristique de Mère Nature. Ce n'est pas la première fois qu'un fragment de sa magie fleurit sous un sol de marbre. Et je crains que ce ne soit pas la dernière non <nobr>plus. »</nobr> — L'historien",
+      "german": "„Interessant, in der Tat – und nicht untypisch für die Lebensmutter. Es war nicht das erste Mal, dass ein Fragment ihrer Magie unter dem Marmorboden aufgeblüht ist. Und ich fürchte, es wird auch nicht das letzte Mal sein.“ – Der Historiker",
+      "russian": "«Любопытно и очень в духе Матери-природы. Не в первый раз частица Ее волшебства прорастает из-под мраморных плит. И боюсь, не в последний». — Историк",
+      "portuguese": "“Interessante, de fato, e nada incomum para a Genetriz. Essa não foi a primeira vez em que um fragmento da magia Dela floresceu sob pisos de mármore. Nem, receio, será a última.” — O Historiador",
+      "chinese": "“确实很有意思，但也的确符合生命之母的作风。她魔法的碎片即使被大理石地板压着也能开出花来已经不是第一次了。恐怕也不会是最后一次。”——历史学家",
+      "spanish": "«Es interesante, sin duda, y no me sorprende de la Madre Vida. No es la primera vez que un fragmento de Su magia florece a través de suelos de mármol. Y me temo que no será la última». —El Historiador",
+      "chinese_traditional": "「有趣，確實有趣，這倒也符合『生命之母』的行事風格。這已不是第一次，有祂的魔法碎片從大理石地磚下自行綻放。恐怕這也不會是最後一次了。」——史官",
+      "korean": "\"실로 흥미롭다. 그리고 생명의 어머니라면 충분히 그럴 만한 일이기도 하다. 그녀의 마법의 파편이 대리석 바닥 아래에서 꽃피운 것이 이번이 처음은 아니었다. 그리고 두려운 일이지만, 마지막도 아닐 것이다.\"—역사가",
+      "japanese": "「実に興味深い。まさにライフマザーの特徴だ。大理石の床の下から彼女の魔法の欠片が開花したのはこれが初めてではないだろう。そして最後であるはずもない」—歴史家"
+    }
+  ],
+  "rarity": "champion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCopyRandomCardFromDeckEndOfBattle",
+      "paramCardFilter": {
+        "id": "ExcludeChampions",
+        "excludedSubtypesOperator": "and",
+        "excludedSubtypes": [
+          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+        ]
+      }
+    }
+  ],
+  "fromStoryEvent": true,
+  "forceUpdateCountLabel": true
+}

@@ -1,0 +1,70 @@
+{
+  "id": "EmberCache",
+  "name": "Ember Cache",
+  "nameKey": {
+    "key": "CardData_nameKey-1c0bbcb8b7ae3010-2addebb941e1aac4ba142869befa20b4-v2",
+    "english": "Ember Cache",
+    "french": "Cache de braises",
+    "german": "Glutaschetruhe",
+    "russian": "Ящик с углем",
+    "portuguese": "Cofre de Brasas",
+    "chinese": "余烬贮藏",
+    "spanish": "Caja de ascuas",
+    "chinese_traditional": "餘燼寶箱",
+    "korean": "잔불 보관함",
+    "japanese": "貯蔵エンバー"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-c1fbd139a4e70195-2addebb941e1aac4ba142869befa20b4-v2",
+    "english": "Add [effect0.secondarypower] <b>Excavated Ember</b> cards to your discard pile.",
+    "french": "Ajoute [effect0.secondarypower] cartes <b>Braise déterrée</b> à votre défausse.",
+    "german": "Füge deinem Ablagestapel [effect0.secondarypower] <b>Freigelegte Glutasche</b>-Karten hinzu.",
+    "russian": "Добавляет в ваш сброс карты <b>Добытый уголь</b> ([effect0.secondarypower]).",
+    "portuguese": "Adiciona [effect0.secondarypower] cartas de <b>Brasa Escavada</b> à sua pilha de descarte.",
+    "chinese": "将 [effect0.secondarypower] 张<b>采掘的余烬</b>卡牌加入你的弃牌堆。",
+    "spanish": "Añade [effect0.secondarypower] cartas de <b>Ascua extraída</b> a tu pila de descartes.",
+    "chinese_traditional": "將[effect0.secondarypower]張<b>挖掘出的餘燼</b>卡牌加入你的棄牌堆。",
+    "korean": "버린 카드 더미에 <b>발굴한 잔불</b> [effect0.secondarypower]장을 추가합니다.",
+    "japanese": "<b>採掘エンバー</b>[effect0.secondarypower]を破棄山札に追加する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-684ccb567c1f1af9-2addebb941e1aac4ba142869befa20b4-v2",
+      "english": "I created fortified steel boxes to house the dormant Ember mined in the Crucible, increasing its effectiveness through pressure and time.",
+      "french": "J'ai fabriqué des boîtes en acier renforcé pour abriter la braise en sommeil extraite du creuset et en améliorer l'efficacité au fil du temps grâce à la pression.",
+      "german": "Ich habe verstärkte Stahlkästen gebaut, um die inaktive Glutasche aus dem Schmelztiegel aufzubewahren. Druck und Zeit erhöhen ihre Effektivität.",
+      "russian": "Мне удалось создать усиленные стальные ящики для хранения дремлющего угля, добытого в Горниле, чтобы повысить эффективность за счет давления и большей длительности горения.",
+      "portuguese": "Eu criei caixas de aço fortificadas para armazenar as Brasas dormentes mineradas no Crisol, fazendo com que sua eficácia aumente com a pressão e o tempo.",
+      "chinese": "我制造了这些坚固的钢匣子，用来保存从熔炉之地中发现的休眠余烬，通过高压与漫长的保存来增强它的效果。",
+      "spanish": "Creé cajas de acero reforzado para contener las ascuas durmientes extraídas del Crisol, lo que aumenta su efectividad gracias a la presión y el paso del tiempo.",
+      "chinese_traditional": "我創造了一個強化鋼盒來裝載在地獄熔爐中開採的休眠餘燼，透過壓力和時間來提高其效力。",
+      "korean": "도가니에서 채굴한 비활성 잔불을 보관하고 압력과 시간을 통해 그 효과를 극대화할 수 있는 튼튼한 강철 상자를 만들었다.",
+      "japanese": "クルーシブルで採掘された、すぐに使わないエンバーを保管するための補強された鋼鉄の箱を作った。圧力をかけて寝かせることで、よりエネルギーを増すだろう。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_EmberCache.prefab",
+    "m_AssetGUID": "43c68e92c0e71e144a4c8da36c1b089c"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddBattleCard",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramInt": 1,
+      "additionalParamInt": 3,
+      "paramCardPool": "ExcavatedEmberOnlyPool"
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Zihao Luo"
+}

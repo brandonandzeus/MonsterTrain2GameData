@@ -1,0 +1,151 @@
+{
+  "id": "DregsTomb",
+  "name": "Remnant Host",
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_RemnantHost.prefab",
+    "m_AssetGUID": "be025320070fbf44bbad3eff035b556d"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "RemnantHost",
+        "nameKey": {
+          "key": "CharacterData_nameKey-257590e80c9ae749-23caaea7ff575224bb27ebc4d40ec2b5-v2",
+          "english": "Remnant Host",
+          "french": "Hôte éphémérien",
+          "german": "Relikt-Wirt",
+          "russian": "Огарковый носитель",
+          "portuguese": "Hóspede Resquício",
+          "chinese": "宿主残渣",
+          "spanish": "Anfitrión vestigial",
+          "chinese_traditional": "殘餘宿主",
+          "korean": "잔존자의 숙주",
+          "japanese": "レムナント・ホスト"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-3e3c63f9acc31af8-23caaea7ff575224bb27ebc4d40ec2b5-v2",
+            "english": "Tombs are usually formed as the consequence of some horrible accident when guttering. If a Waxer happens to be caught in the wax drip of another, they can be trapped inside until their host melts away.",
+            "french": "La formation de tombeaux résulte le plus souvent d'un terrible accident lors de la ciro-lustration. En effet, si un cireux se retrouve pris dans les gouttes de cire d'un autre, il peut y rester emprisonné jusqu'à ce que son hôte ait complètement fondu.",
+            "german": "Normalerweise bilden sich Tropfe durch schreckliche Unfälle mit rinnendem Wachs. Wenn ein Wachser in das tropfende Wachs eines anderen gerät, kann der erste darin gefangen sein, bis der zweite dahingeschmolzen ist.",
+            "russian": "Вплавления обычно возникают в результате ужасных несчастных случаев при расплавлении. Если Восковика заливает расплавленными остатками другого, он может оказаться в заточении до тех пор, пока окончательно не растопится тело-носитель.",
+            "portuguese": "Tumbas costumam ser formadas como uma consequência de algum acidente horrível durante o parafinamento. Se um Céreo for pego na cera que derreteu de outro, eles podem ficar presos entre si até alguém derreter primeiro.",
+            "chinese": "墓灵通常都是灌蜡事故的可怕产物。如果一个烛人刚好被另一个烛人滴下来的蜡油困住的话，它们就会一直被困，直到它们的宿主熔化殆尽为止。",
+            "spanish": "Las tumbas suelen formarse como consecuencia de un espantoso accidente durante la depuración. Si la cera alcanza a otro encerado, puede quedar atrapado en su interior hasta que el anfitrión se derrita.",
+            "chinese_traditional": "墓碑通常是在滴蠟時發生可怕事故的結果。如果一個蠟像不幸被捲入另一個蠟像的蠟滴中，他們可能會被困在裡面，直到宿主熔化。",
+            "korean": "밀랍 인간의 무덤은 보통 배수구에서 발생하는 끔찍한 사고의 결과물이다. 만약 밀랍 인간이 다른 밀랍 인간의 밀랍 방울에 휘말리면, 그 주인이 녹기 전까지 그 안에 갇히게 된다.",
+            "japanese": "墓は通常、蝋浴で起きた恐ろしい事故の結果として作られる。ワクサーが偶然他の蝋の滴に巻き込まれると、宿主が溶けるまでその中に閉じ込められることがあるのだ。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_RemnantHost.prefab",
+          "m_AssetGUID": "8136de965c2bd8d4e9daae7b06442194"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-5bc881d6cbd85b06-23caaea7ff575224bb27ebc4d40ec2b5-v2",
+              "english": "Summon [effect0.power] <b>Draff</b> units.",
+              "french": "Invoque [effect0.power] <b>Drêches</b>.",
+              "german": "Rufe [effect0.power] <b>Harzwachser</b>-Einheiten.",
+              "russian": "Призывает бойцов из <b>Отходов</b> х[effect0.power].",
+              "portuguese": "Invoca [effect0.power] unidades de <b>Acerado</b>.",
+              "chinese": "召唤 [effect0.power] 个<b>重塑烛人</b>单位。",
+              "spanish": "Invoca [effect0.power] unidades <b>Sobrante</b>.",
+              "chinese_traditional": "召喚[effect0.power]<b>德拉夫</b>單位。",
+              "korean": "<b>잔해</b> 유닛 [effect0.power]명을 소환합니다.",
+              "japanese": "<b>ドラフ</b>ユニットを[effect0.power]体召喚する。"
+            },
+            "trigger": "on_death",
+            "effects": [
+              {
+                "effectStateName": "CardEffectSpawnMonster",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "paramCharacterData": {
+                  "id": "Draff",
+                  "nameKey": {
+                    "key": "CharacterData_nameKey-a09582df06a6e0c4-633eff7c4b07bc543984e120636254b2-v2",
+                    "english": "Draff",
+                    "french": "Drêche",
+                    "german": "Harzwachser",
+                    "russian": "Отходы",
+                    "portuguese": "Acerado",
+                    "chinese": "重塑烛人",
+                    "spanish": "Sobrante",
+                    "chinese_traditional": "德拉夫",
+                    "korean": "잔해",
+                    "japanese": "ドラフ"
+                  },
+                  "characterLoreTooltipKeys": [
+                    {
+                      "key": "CharacterData_data-d50e0cde41338b6d-633eff7c4b07bc543984e120636254b2-v2",
+                      "english": "When wax has been melted and reapplied over and over again, it can turn into a fragile resin. This makes the edges of a Waxer sharper and more dangerous, but much more brittle.",
+                      "french": "Après fonte et réapplication répétées, la cire peut se changer en résine fragile, ce qui augmente le tranchant et la puissance d'un cireux, mais le rend bien plus friable.",
+                      "german": "Wenn Wachs immer wieder geschmolzen und neu geformt wird, kann es zu einer brüchigen, harzigen Substanz werden. Diese macht die Kanten des Wachsers schärfer und gefährlicher, allerdings auch brüchiger.",
+                      "russian": "Когда растаявший воск много раз используется повторно, он становится хрупким, из-за чего слепленные из него Восковики более угловаты и опасны, но в то же время менее прочны.",
+                      "portuguese": "Quando a cera é derretida e reaplicada várias vezes, ela pode se tornar uma resina frágil, o que simultaneamente afia as pontas de um Céreo e o deixa quebradiço.",
+                      "chinese": "当蜡烛一遍遍熔化、塑型之后，它会变为易碎的树脂。树脂会让烛人的身体变得更加锋利，更加危险，但也会变得更加脆弱。",
+                      "spanish": "Cuando la cera se derrite y reincorpora una y otra vez, puede convertirse en una resina frágil. Esto afila las extremidades del encerado, lo que las hace más letales, pero también más frágiles.",
+                      "chinese_traditional": "當蠟燭被反覆熔化和重新塗抹時，可能會變成易碎的樹脂。這使得蠟像的邊緣更為鋒利且危險，但也更脆弱。",
+                      "korean": "밀랍을 여러 번 녹이고 다시 바르면 깨지기 쉬운 수지로 변한다. 수지로 변한 밀랍의 가장자리는 날카롭고 위험하지만, 아주 쉽게 부서진다.",
+                      "japanese": "蝋を溶かして何度も塗り直すと、脆い樹脂に変化する。これにより、ワクサーの刃先はより鋭くより危険になるが、当然折れやすくもなるのだ。"
+                    }
+                  ],
+                  "characterPrefabVariantRef": {
+                    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Draff.prefab",
+                    "m_AssetGUID": "9fc4ea395ca978547a1d94ea8894ef24"
+                  },
+                  "startingStatusEffects": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 1
+                    },
+                    {
+                      "statusId": "multistrike",
+                      "count": 1
+                    }
+                  ],
+                  "size": 1,
+                  "health": 5,
+                  "attackDamage": 15,
+                  "subtypeKeys": [
+                    "SubtypesData_Waxer_3446e5ee-216e-4cc2-b027-d77dee269c15"
+                  ],
+                  "characterChatterData": "RemnantWaxerChatterData_Male"
+                },
+                "paramInt": 2,
+                "paramBool": true
+              }
+            ]
+          }
+        ],
+        "size": 1,
+        "health": 1,
+        "attackDamage": 0,
+        "deathSlidesBackwards": false,
+        "subtypeKeys": [
+          "SubtypesData_Tomb"
+        ],
+        "characterChatterData": "RemnantTombChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 7,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Andrew Vera"
+}

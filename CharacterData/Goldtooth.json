@@ -1,0 +1,70 @@
+{
+  "id": "MonsterPlunderer",
+  "name": "Goldtooth",
+  "nameKey": {
+    "key": "CharacterData_nameKey-39c63b0d39a4781c-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
+    "english": "Goldtooth",
+    "french": "Dendoré",
+    "german": "Goldzahn",
+    "russian": "Златозуб",
+    "portuguese": "Presa de Ouro",
+    "chinese": "金牙",
+    "spanish": "Diente de oro",
+    "chinese_traditional": "金牙",
+    "korean": "황금 이빨",
+    "japanese": "ゴールドトゥース"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d06e71aaa303910c-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
+      "english": "“Do I have gold in my teeth?”",
+      "french": "<nobr>« Est-ce</nobr> que j'ai de l'or entre les <nobr>dents ? »</nobr>",
+      "german": "„Habe ich Gold zwischen den Zähnen?“",
+      "russian": "«У меня золото в зубах?»",
+      "portuguese": "“Estou com ouro nos dentes?”",
+      "chinese": "“我的牙齿里有金子吗？”",
+      "spanish": "«¿Tengo oro en los dientes?».",
+      "chinese_traditional": "「我的牙齒裡有金子嗎？」",
+      "korean": "\"내 이빨에 금이 박혀 있어?\"",
+      "japanese": "「歯に黄金が挟まってない？」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Goldtooth.prefab",
+    "m_AssetGUID": "a4d9c5a3461b04e45b51ccf91fba063e"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "avarice",
+      "count": 5
+    }
+  ],
+  "roomModifiers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-ae703aa30bbd0100-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
+        "english": "+[power][attack] per [secondarypower][coin] you started the turn with.",
+        "french": "+[power][attack] par tranche de [secondarypower][coin] en début de tour.",
+        "german": "+[power][attack] pro [secondarypower][coin], die du zu Beginn des Zuges hattest.",
+        "russian": "+[power][attack] за каждое [secondarypower]-е [coin] в начале хода.",
+        "portuguese": "+[power][attack] para cada [secondarypower][coin] no início do turno.",
+        "chinese": "回合开始时，每拥有 [secondarypower][coin]，则+[power][attack]。",
+        "spanish": "+[power][attack] por cada [secondarypower][coin] que tuvieras al inicio del turno.",
+        "chinese_traditional": "回合開始時，每有[secondarypower][coin]獲得+[power][attack]。",
+        "korean": "턴 시작 시 가지고 있던 [secondarypower][coin]마다 +[power][attack]을 획득합니다.",
+        "japanese": "ターン開始時に、[secondarypower][coin]につき+[power][attack]。"
+      },
+      "roomStateModifierClassName": "RoomStateSelfDamagePerGoldModifier",
+      "paramInt": 15,
+      "paramInt2": 100
+    }
+  ],
+  "size": 2,
+  "health": 30,
+  "attackDamage": 15,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Dragon"
+  ],
+  "characterChatterData": "PyreborneDragonChatterData"
+}

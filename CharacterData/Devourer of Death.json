@@ -1,0 +1,110 @@
+{
+  "id": "MonsterDeathEater",
+  "name": "Devourer of Death",
+  "nameKey": {
+    "key": "CharacterData_nameKey-d06e49cad2006d23-c5fb54b6c2cb6b44eb87dd468e302e7b-v2",
+    "english": "Devourer of Death",
+    "french": "Dévoreur de mort",
+    "german": "Todestilger",
+    "russian": "Пожиратель смерти",
+    "portuguese": "Devorador da Morte",
+    "chinese": "死亡吞没者",
+    "spanish": "Devorador de muerte",
+    "chinese_traditional": "死亡吞噬者",
+    "korean": "죽음의 파괴자",
+    "japanese": "死を貪る者"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-712321a08e018526-c5fb54b6c2cb6b44eb87dd468e302e7b-v2",
+      "english": "The unfortunate souls who are unable to melt must instead feed off the deaths of those around them. They accumulate more energy as others’ souls are freed from their waxen forms, but they are doomed to never be able to free their own.",
+      "french": "Les âmes malheureuses incapables de fondre doivent se repaître des morts de ceux qui les entourent. Elles accumulent toujours plus d'énergie en ingérant les âmes libérées de leurs enveloppes de cire, mais sont condamnées à ne jamais pouvoir libérer la leur.",
+      "german": "Jene unglücklichen Seelen, die nicht schmelzen können, nähren sich von den Toden in ihrer Umgebung. Sie nehmen mehr Energie in sich auf, wenn andere Seelen ihre wächsernen Hüllen verlassen, können sich jedoch nie selbst befreien.",
+      "russian": "Несчастные души, неспособные расплавиться, вынуждены питаться за счет смертей окружающих. Они собирают энергию, когда находящиеся рядом освобождаются из своих восковых оболочек, но сами спастись не могут.",
+      "portuguese": "As almas infelizes que não conseguem se fundir precisam se alimentar da morte daqueles que as cercam. Elas acumulam mais energia à medida que a alma dos outros é liberada da forma cérea, mas estão condenadas a nunca conseguir liberar a própria.",
+      "chinese": "那些无法融化的可怜灵魂，只能从周围死者的灵魂中汲取营养。当其他的灵魂从它们的蜡像形态中获得解脱时，这些食尸者会积累更多的能量，但它们永远都没办法让自己的灵魂从诅咒中获得解脱。",
+      "spanish": "Las pobres almas que no pueden derretirse deben alimentarse de la muerte de quienes los rodean. Acumulan energía cuando las almas ajenas abandonan sus cuerpos encerados, pero jamás podrán escapar del suyo propio.",
+      "chinese_traditional": "那些無法熔化的不幸靈魂必須靠周圍人的死亡為生。當其他人的靈魂從蠟燭形態中解脫時，他們積累更多能量，但他們注定永遠無法釋放自己的靈魂。",
+      "korean": "녹을 수 없는 불행한 영혼은 다른 이들의 죽음을 돕는다. 이들은 밀랍에서 다른 이의 영혼이 풀려나면 더 많은 에너지를 얻지만, 자신의 영혼은 결코 밀랍에서 벗어날 수 없다.",
+      "japanese": "溶けることができない不幸な魂は、代わりに周囲の者たちの死を糧にしなければならない。他の魂が蝋の形から解放されるにつれて、魂はより多くのエネルギーを蓄積するが、自身の魂は決して解放できない運命にある。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_DevourerOfDeath.prefab",
+    "m_AssetGUID": "9de81cc4cfcc1b24eb22b988f3cb1479"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-e850c25829d12dd3-c5fb54b6c2cb6b44eb87dd468e302e7b-v2",
+        "english": "Gain <nobr><b>Soul [effect0.status0.power]</b></nobr>.",
+        "french": "Octroie <nobr><b>Âme [effect0.status0.power]</b></nobr>.",
+        "german": "Erhalte <nobr><b>Seele [effect0.status0.power]</b></nobr>.",
+        "russian": "Дает <b>Душу</b> х[effect0.status0.power].",
+        "portuguese": "Recebe <nobr><b>Alma [effect0.status0.power]</b></nobr>.",
+        "chinese": "获得<nobr><b>灵魂[effect0.status0.power]</b></nobr>。",
+        "spanish": "Añade <nobr><b>Alma [effect0.status0.power]</b></nobr>.",
+        "chinese_traditional": "獲得<nobr><b>靈魂[effect0.status0.power]</b></nobr>。",
+        "korean": "<nobr><b>영혼 [effect0.status0.power]</b></nobr>개를 획득합니다.",
+        "japanese": "<nobr><b>魂[effect0.status0.power]</b></nobr>を得る。"
+      },
+      "trigger": "on_any_unit_death_on_floor",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "captured_soul",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-cc3453d2b3db8598-c5fb54b6c2cb6b44eb87dd468e302e7b-v2",
+        "english": "Deal damage to enemy units equal to [effect0.power]x the <b>Soul</b> count.",
+        "french": "Inflige des dégâts aux unités ennemies valant [effect0.power]x le nombre d'<b>Âmes</b>.",
+        "german": "Füge gegnerischen Einheiten Schaden in Höhe von [effect0.power]x der <b>Seelen</b> zu.",
+        "russian": "Наносит вражеским бойцам урон, равный [effect0.power]x числу <b>Душ</b>.",
+        "portuguese": "Causa dano às unidades inimigas igual a [effect0.power]x a contagem de <b>Alma</b>.",
+        "chinese": "对所有敌方单位造成伤害，伤害值为<b>灵魂</b>数量的 [effect0.power]倍。",
+        "spanish": "Inflige tanto daño a las unidades enemigas como la cantidad de <b>Almas</b> x[effect0.power].",
+        "chinese_traditional": "對敵方單位造成等同於[effect0.power]x<b>靈魂</b>數量的傷害。",
+        "korean": "누적한 <b>영혼</b> 수의 [effect0.power]배만큼 적 유닛들에게 피해를 입힙니다.",
+        "japanese": "敵ユニットに[effect0.power]x <b>魂</b>の数に等しいダメージを与える。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramInt": 15,
+          "paramMultiplier": 2.0,
+          "useStatusEffectStackMultiplier": true,
+          "statusEffectStackMultiplier": "captured_soul"
+        }
+      ],
+      "displayEffectHintText": true
+    }
+  ],
+  "size": 1,
+  "health": 5,
+  "attackDamage": 0,
+  "deathSlidesBackwards": false,
+  "subtypeKeys": [
+    "SubtypesData_Wickless_517faf2f-8836-42d3-b84d-75a99b7dc735"
+  ],
+  "characterChatterData": "RemnantTombChatterData"
+}

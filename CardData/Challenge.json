@@ -1,0 +1,74 @@
+{
+  "id": "Challenge",
+  "name": "Challenge",
+  "nameKey": {
+    "key": "CardData_nameKey-8f70cbbf4676f0ab-2e1ed327673afb745ac41dd9df32f9d7-v2",
+    "english": "Challenge",
+    "french": "Défi",
+    "german": "Herausforderung",
+    "russian": "Вызов",
+    "portuguese": "Desafio",
+    "chinese": "挑战",
+    "spanish": "Desafío",
+    "chinese_traditional": "挑戰",
+    "korean": "도전장",
+    "japanese": "挑戦"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-fe8cdd80369d6c52-2e1ed327673afb745ac41dd9df32f9d7-v2",
+    "english": "[advance]. Apply [meleeweakness] [effect1.status0.power].",
+    "french": "[advance]. Inflige [meleeweakness] [effect1.status0.power].",
+    "german": "[advance]. Wende [meleeweakness] [effect1.status0.power] an.",
+    "russian": "[advance]. Накладывается [meleeweakness] х[effect1.status0.power].",
+    "portuguese": "<b>Avança</b>. Aplica [meleeweakness] [effect1.status0.power].",
+    "chinese": "[advance]。施加 [meleeweakness] [effect1.status0.power]。",
+    "spanish": "[advance]. Añade [meleeweakness] [effect1.status0.power].",
+    "chinese_traditional": "[advance]。施加[meleeweakness][effect1.status0.power]。",
+    "korean": "[advance]. [meleeweakness] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[advance]。[meleeweakness] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a4e5ab6417d126be-2e1ed327673afb745ac41dd9df32f9d7-v2",
+      "english": "“The new recruit stood on the bodies of her fallen enemies and pointed towards the Walls. Although she spoke no words, the challenge to Heaven was clear.”\r\n—Tome of the Lost Path",
+      "french": "<nobr>« La</nobr> nouvelle recrue se tenait sur les corps de ses ennemis et pointait du doigt les murs. Bien qu'elle ne prononçât aucun mot, le défi lancé au royaume des cieux était <nobr>clair. »</nobr> \n— Livre du Chemin Perdu",
+      "german": "„Die neue Rekrutin stieg auf die Leichen ihrer gefallenen Feinde und deutete in Richtung der Mauern. Sie sprach kein Wort, doch es war eindeutig, dass sie den Himmel forderte.“_x000D_\n—Buch des Verlorenen Pfades",
+      "russian": "«Новобранка стояла на трупах поверженных врагов и указывала на Стены. Не произнося ни слова, она бросила вызов Раю».\n\n— Книга утраченного пути",
+      "portuguese": "“A nova recruta estava sobre os corpos de seus inimigos mortos e apontou para as Muralhas. Embora ela não dissesse nada, o desafio ao Céu era evidente.”\n— Tomo do Caminho Perdido",
+      "chinese": "“新兵站在倒下的敌人的尸体上，指向城墙。虽然她一言不发，但她对天堂的挑战不言自明。”\n——《失落路途之书》",
+      "spanish": "«La nueva recluta se alzó sobre los cuerpos de sus enemigos caídos y apuntó a los muros. No dijo palabra, pero el desafío al Cielo era evidente».\n—Tomo de la Senda Perdida",
+      "chinese_traditional": "「新兵站在倒下的敵人屍體身上，指向城牆。儘管她沒有說話，但對天堂的挑戰意味卻很明顯。」\n——《迷失之路》典籍",
+      "korean": "“신병이 적의 시체로 만든 산 위에 서서 성벽을 가리켰다. 비록 아무 말도 하지 않았지만, 천상을 향해 도전장을 내민 것은 확실했다.”\n- 사라진 길의 서",
+      "japanese": "「新兵は倒れた敵の上に立ち、壁を指差した。彼女は言葉を発しなかったが、天界への挑発であることは明確であった」\n—失われし道の書"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Challenge.prefab",
+    "m_AssetGUID": "9746b382b5b20794c85843375444db26"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both"
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "melee weakness",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "back_enemy",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "AddConduitOnSpawn",
+  "name": "Stardust Treat",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-339465baec8f675f-f3c2771f23270cc438cd6a988abfb6ae-v2",
+    "english": "Stardust Treat",
+    "french": "En-cas stellaire",
+    "german": "Sternenstaub-Leckerei",
+    "russian": "Десерт из звездной пыли",
+    "portuguese": "Guloseima de Poeira Estelar",
+    "chinese": "星尘点心",
+    "spanish": "Dulce de polvo estelar",
+    "chinese_traditional": "星塵點心",
+    "korean": "별가루 과자",
+    "japanese": "スターダストのお菓子"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-d1c5ae0c65ae586c-f3c2771f23270cc438cd6a988abfb6ae-v2",
+    "english": "The first unit you summon each turn gains [conduit] [effect0.status0.power].",
+    "french": "À chaque tour, la première unité que vous invoquez gagne [conduit] [effect0.status0.power].",
+    "german": "Die erste gerufene Einheit pro Zug erhält [conduit] [effect0.status0.power].",
+    "russian": "На каждого первого призванного бойца за ход накладывается [conduit] х[effect0.status0.power].",
+    "portuguese": "A primeira unidade que você invocar a cada turno receberá [conduit] [effect0.status0.power].",
+    "chinese": "每回合召唤的第一个单位获得 [conduit] [effect0.status0.power]。",
+    "spanish": "La primera unidad que invocas cada turno añade [conduit] [effect0.status0.power].",
+    "chinese_traditional": "你召喚的第一個單位每回合獲得[conduit][effect0.status0.power]。",
+    "korean": "매 턴 처음으로 소환한 유닛이 [conduit] [effect0.status0.power] 효과를 획득합니다.",
+    "japanese": "毎ターン最初に召喚するユニットが[conduit] [effect0.status0.power]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-82d8b8f689446a43-f3c2771f23270cc438cd6a988abfb6ae-v2",
+      "english": "A tasty treat made of stardust, the coven love to take a pause when the moon is half full and eat these with tea.",
+      "french": "Une délicieuse friandise à base de poussière d'étoiles, que les Lunariens aiment déguster avec du thé lorsque la lune est à moitié pleine.",
+      "german": "Diese schmackhafte Leckerei aus Sternenstaub wird vom Hexenzirkel bei Halbmond zum Tee genossen.",
+      "russian": "Лакомство, сделанное из звездной пыли. Когда луна видна лишь наполовину, в ковене отдыхают и едят его вприкуску с чаем.",
+      "portuguese": "Uma guloseima saborosa feita de Poeira Estelar. Quando a lua está crescente, a Irmandade adora fazer uma pequena pausa e comer isto tomando chá.",
+      "chinese": "一种由星尘制成的可口小吃，月巫团喜欢在弦月的时候休息一下，以此作为喝茶时的点心。",
+      "spanish": "Un sabroso manjar hecho a base de polvo de estrellas. El Aquelarre tiene por costumbre darse un respiro cuando la luna está medio llena y degustarlo con un té.",
+      "chinese_traditional": "一種由星塵製成的美味點心，女巫喜歡在半月時稍作休息，喝著茶享用這些。",
+      "korean": "별가루로 만든 맛있는 간식. 집회 사람들은 달이 반쯤 찼을 때 차와 함께 먹으며 휴식을 즐기곤 한다.",
+      "japanese": "スターダストで作られたおいしいお菓子。月魔族は、半月のときに休憩を取り、これをお茶と一緒に食べるのを好んでいる。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "conduit",
+          "count": 4
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardTraitMagicPower_TooltipText",
+            "english": "Increases the amount of damage dealt and health restored by spells.",
+            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+            "chinese": "提高法术造成的伤害与恢复的生命值。",
+            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+          },
+          "titleKey": {
+            "key": "CardTraitMagicPower_TooltipTitle",
+            "english": "Magic Power",
+            "french": "Puissance magique",
+            "german": "Magische Kraft",
+            "russian": "Сила магии",
+            "portuguese": "Poder Mágico",
+            "chinese": "魔法强度",
+            "spanish": "Poder mágico",
+            "chinese_traditional": "魔法力量",
+            "korean": "마법력",
+            "japanese": "魔力"
+          },
+          "style": "default"
+        }
+      ],
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramSourceTeam": "monsters"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "SoulSavior_UnitUpgradeClanLunaCovenAddConduit",
+  "name": "Glimmerslab",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-5dd6602377137709-0118ffab507992a4a9e2a5342b59c3f1-v2",
+    "english": "Glimmerslab",
+    "french": "Gemme luisante",
+    "german": "Platte des Schimmerns",
+    "russian": "Пласт сияния",
+    "portuguese": "Placa do Brilho",
+    "chinese": "微光石板",
+    "spanish": "Losa brillante",
+    "chinese_traditional": "閃石板",
+    "korean": "희광의 서판",
+    "japanese": "輝きの原石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-c070625bd76a27e4-0118ffab507992a4a9e2a5342b59c3f1-v2",
+    "english": "Upgrade a unit with [conduit] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec [conduit] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit [conduit] [effect0.upgrade.status0.power].",
+    "russian": "Усиление бойца: [conduit] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com [conduit] [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 [conduit] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con [conduit] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[conduit][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드함과 동시에 [conduit] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[conduit] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "SoulSavior_AddConduitLunaCoven",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-2fe1f829b2656d05-2f77ea0c919629847966df94d1cfd32a-v2",
+          "english": "Glimmerslab",
+          "french": "Gemme luisante",
+          "german": "Platte des Schimmerns",
+          "russian": "Пласт сияния",
+          "portuguese": "Placa do Brilho",
+          "chinese": "微光石板",
+          "spanish": "Losa brillante",
+          "chinese_traditional": "閃石板",
+          "korean": "희광의 서판",
+          "japanese": "輝きの原石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-31b56ee6e48ed19f-2f77ea0c919629847966df94d1cfd32a-v2",
+          "english": "Gain [conduit] [status0.power].",
+          "french": "Octroie [conduit] [status0.power].",
+          "german": "Erhalte [conduit] [status0.power].",
+          "russian": "Дается [conduit] х[status0.power].",
+          "portuguese": "Recebe [conduit] [status0.power].",
+          "chinese": "获得 [conduit] [status0.power]。",
+          "spanish": "Añade [conduit] [status0.power].",
+          "chinese_traditional": "獲得[conduit][status0.power]。",
+          "korean": "[conduit] [status0.power] 효과를 획득합니다.",
+          "japanese": "[conduit] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "conduit",
+            "count": 10
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

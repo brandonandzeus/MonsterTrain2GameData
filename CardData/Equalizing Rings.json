@@ -1,0 +1,77 @@
+{
+  "id": "Equalizer",
+  "name": "Equalizing Rings",
+  "nameKey": {
+    "key": "CardData_nameKey-6a3a5fb2fec160f6-4e9982316e0e3f2438621a28bd46df99-v2",
+    "english": "Equalizing Rings",
+    "french": "Anneaux d'égalisation",
+    "german": "Verstärkungsringe",
+    "russian": "Кольца-уравнители",
+    "portuguese": "Anéis do Equilíbrio",
+    "chinese": "均衡对戒",
+    "spanish": "Anillos de equilibrio",
+    "chinese_traditional": "平等界域",
+    "korean": "균등화 고리",
+    "japanese": "同化の指輪"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-bf0a76428a439e20-4e9982316e0e3f2438621a28bd46df99-v2",
+    "english": "This unit's [attack] is equal to its max health.",
+    "french": "L'[attack] de cette unité est égale à ses PV max.",
+    "german": "Der [attack] dieser Einheit entspricht ihrer max. Gesundheit.",
+    "russian": "Приравнивает [attack] этого бойца к его макс. здоровью.",
+    "portuguese": "O [attack] desta unidade é igual à vida máxima dela.",
+    "chinese": "使该单位的 [attack] 等同于其最大生命值。",
+    "spanish": "El [attack] de esta unidad es igual a su salud máxima.",
+    "chinese_traditional": "此單位的[attack]等於其最大生命值。",
+    "korean": "이 유닛의 [attack]은 해당 유닛의 최대 체력과 동일합니다.",
+    "japanese": "このユニットの[attack]が最大体力と等しくなる。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-78685421197c8fbb-4e9982316e0e3f2438621a28bd46df99-v2",
+      "english": "Two gold rings that might have once belonged to a couple who loved each other with a deep, true love. Along the edge, there is a faint inscription and the words ‘for my beloved’ can be read.",
+      "french": "Deux bagues en or, peut-être celles d'un couple qui s'aimait d'un amour profond et sincère. Sur le pourtour intérieur, une inscription à peine <nobr>visible :</nobr> <nobr>« Pour</nobr> ma <nobr>bien-aimée »</nobr> et <nobr>« Pour</nobr> mon <nobr>bien-aimé ».</nobr>",
+      "german": "Zwei Goldringe, die einst einem Paar gehörten, das sich gegenseitig in tiefer, inniger Liebe verehrte. Am Rand befindet sich eine schwache Inschrift. „Für meine Liebe“ ist dort zu lesen.",
+      "russian": "Два золотых кольца, которые, вероятно, принадлежали влюбленным, чьи чувства были крепкими и искренними. На внутренней стороне едва читается гравировка: «Моей второй половинке».",
+      "portuguese": "Dois anéis de ouro que podem ter pertencido a um casal que se amava profundamente. Ao longo da borda, há uma leve inscrição e as palavras “para quem tanto amo” podem ser lidas.",
+      "chinese": "两枚金戒指可能曾经属于一对深爱着彼此的真情爱侣。戒指边缘处，有一处模糊的铭文，上面写着“给我的爱人”字样。",
+      "spanish": "Dos anillos de oro que tal vez pertenecieran a un matrimonio unido por un amor profundo y verdadero. En su reborde, hay una leve inscripción con las palabras «Para mi amor».",
+      "chinese_traditional": "兩枚金戒指，可能曾經屬於一對深愛彼此的夫婦。邊緣處有一行模糊的銘文，似乎是「獻給我的摯愛」。",
+      "korean": "서로를 진심으로 사랑한 부부의 것으로 보이는 한 쌍의 금반지다. 가장자리에 '사랑하는 그대에게'라는 비문이 흐릿하게 새겨져 있다.",
+      "japanese": "深い、真の愛情で愛し合った2人の持ち物であったかもしれない2つの金の指輪。縁に「愛する人へ」と彫り込まれているのが微かに読み取れる。"
+    }
+  ],
+  "cardType": "equipment",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_EqualizingRings.prefab",
+    "m_AssetGUID": "145323ec59d7b794b90135c8d31d4d72"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Equalizer_Upgrade",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "equalizer",
+            "count": 1
+          }
+        ]
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/EqualizingRings/FX_EqualizingRings.prefab",
+          "m_AssetGUID": "834c0dd509f0e1a4b8cd648eb56ce883"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

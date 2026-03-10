@@ -1,0 +1,541 @@
+{
+  "id": "UpgradeTreeLittleFade",
+  "name": "Little Fade",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "LittleFadeBuffFriendlyOnDeath",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-1c7abb0fc1ffde98-26f579df43ea085449824346c52710a2-v2",
+            "english": "Fire Light",
+            "french": "Lumière incendiaire",
+            "german": "Feuerschein",
+            "russian": "Свет пламени",
+            "portuguese": "Luz do Fogo",
+            "chinese": "火光",
+            "spanish": "Luz llameante",
+            "chinese_traditional": "火光",
+            "korean": "불빛",
+            "japanese": "ファイア・ライト"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-96847f9a3ae0602d-26f579df43ea085449824346c52710a2-v2",
+                "english": "Apply +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], and [burnout] [effect1.status0.power] to friendly units.",
+                "french": "Confère +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] et <b>Consumation</b> [effect1.status0.power] aux unités alliées.",
+                "german": "Wende +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] und [effect1.status0.power] <b>Ausbrennen</b> auf verbündete Einheiten an.",
+                "russian": "Дает +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] и [burnout] x[effect1.status0.power] союзникам.",
+                "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack], +[effect0.upgrade.bonushp] de [health] e [effect1.status0.power] de <b>Derretimento</b> a unidades aliadas.",
+                "chinese": "使友方单位获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，[burnout] [effect1.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] y [burnout] [effect1.status0.power] a las unidades aliadas.",
+                "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]和[burnout][effect1.status0.power]。",
+                "korean": "아군 유닛들에게 +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], 및 [burnout] [effect1.status0.power] 효과를 적용합니다.",
+                "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]、[burnout] [effect1.status0.power]を付与する。"
+              },
+              "trigger": "on_death",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "RemnantChampBuffFriendly1",
+                    "bonusDamage": 5,
+                    "bonusHP": 5
+                  }
+                },
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LittleFadeBuffFriendlyOnDeath2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e979ef6547e42a4f-f360357a75905fd4f9c62a84eb0b681d-v2",
+            "english": "Fire Light II",
+            "french": "Lumière incendiaire II",
+            "german": "Feuerschein II",
+            "russian": "Свет пламени II",
+            "portuguese": "Luz do Fogo II",
+            "chinese": "火光II",
+            "spanish": "Luz llameante II",
+            "chinese_traditional": "火光II",
+            "korean": "불빛 II",
+            "japanese": "ファイア・ライトII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4e259f0b8308b3d2-f360357a75905fd4f9c62a84eb0b681d-v2",
+                "english": "Apply +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], and [burnout] [effect1.status0.power] to friendly units.",
+                "french": "Confère +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] et <b>Consumation</b> [effect1.status0.power] aux unités alliées.",
+                "german": "Wende +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] und [effect1.status0.power] <b>Ausbrennen</b> auf verbündete Einheiten an.",
+                "russian": "Дает +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] и [burnout] x[effect1.status0.power] союзникам.",
+                "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack], +[effect0.upgrade.bonushp] de [health] e [effect1.status0.power] de <b>Derretimento</b> a unidades aliadas.",
+                "chinese": "使友方单位获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，[burnout] [effect1.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] y [burnout] [effect1.status0.power] a las unidades aliadas.",
+                "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]和[burnout][effect1.status0.power]。",
+                "korean": "아군 유닛들에게 +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], 및 [burnout] [effect1.status0.power] 효과를 적용합니다.",
+                "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]、[burnout] [effect1.status0.power]を付与する。"
+              },
+              "trigger": "on_death",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "RemnantChampBuffFriendly2",
+                    "bonusDamage": 12,
+                    "bonusHP": 5
+                  }
+                },
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LittleFadeBuffFriendlyOnDeath3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-2cce362da375ad2e-6cd3cf097ab0a1f4aa48b2a357aa7e82-v2",
+            "english": "Fire Light III",
+            "french": "Lumière incendiaire III",
+            "german": "Feuerschein III",
+            "russian": "Свет пламени III",
+            "portuguese": "Luz do Fogo III",
+            "chinese": "火光III",
+            "spanish": "Luz llameante III",
+            "chinese_traditional": "火光III",
+            "korean": "불빛 III",
+            "japanese": "ファイア・ライトIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-1db9498e2b8d46f8-6cd3cf097ab0a1f4aa48b2a357aa7e82-v2",
+                "english": "Apply +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], and [burnout] [effect1.status0.power] to friendly units.",
+                "french": "Confère +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] et <b>Consumation</b> [effect1.status0.power] aux unités alliées.",
+                "german": "Wende +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] und [effect1.status0.power] <b>Ausbrennen</b> auf verbündete Einheiten an.",
+                "russian": "Дает +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] и [burnout] x[effect1.status0.power] союзникам.",
+                "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack], +[effect0.upgrade.bonushp] de [health] e [effect1.status0.power] de <b>Derretimento</b> a unidades aliadas.",
+                "chinese": "使友方单位获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，[burnout] [effect1.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] y [burnout] [effect1.status0.power] a las unidades aliadas.",
+                "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]和[burnout][effect1.status0.power]。",
+                "korean": "아군 유닛들에게 +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], 및 [burnout] [effect1.status0.power] 효과를 적용합니다.",
+                "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]、[burnout] [effect1.status0.power]を付与する。"
+              },
+              "trigger": "on_death",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "RemnantChampBuffFriendly3",
+                    "bonusDamage": 20,
+                    "bonusHP": 5
+                  }
+                },
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "LittleFadeIncreaseCostOnDeath",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-53c879d39353e981-b52eb336ddc4d1145a818992406e7905-v2",
+            "english": "Eternal Flame",
+            "french": "Flamme éternelle",
+            "german": "Flamme der Ewigkeit",
+            "russian": "Вечный огонь",
+            "portuguese": "Chama Eterna",
+            "chinese": "永恒之火",
+            "spanish": "Llama eterna",
+            "chinese_traditional": "永恆火焰",
+            "korean": "영원한 불꽃",
+            "japanese": "エターナル・フレイム"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            },
+            {
+              "statusId": "endless",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-f79fc3fc914798eb-b52eb336ddc4d1145a818992406e7905-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+                "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+                "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack] e +[effect0.upgrade.bonushp] de [health].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+              },
+              "trigger": "on_death",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "RemnantChampIncreaseCost1",
+                    "bonusDamage": 15,
+                    "bonusHP": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LittleFadeIncreaseCostOnDeath2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-71917eec9737443c-eadf5de8162de574bb3d1a2a0a339dac-v2",
+            "english": "Eternal Flame II",
+            "french": "Flamme éternelle II",
+            "german": "Flamme der Ewigkeit II",
+            "russian": "Вечный огонь II",
+            "portuguese": "Chama Eterna II",
+            "chinese": "永恒之火II",
+            "spanish": "Llama eterna II",
+            "chinese_traditional": "永恆火焰II",
+            "korean": "영원한 불꽃 II",
+            "japanese": "エターナル・フレイムII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            },
+            {
+              "statusId": "endless",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-aa557d5a09c7e073-eadf5de8162de574bb3d1a2a0a339dac-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+                "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+                "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack] e +[effect0.upgrade.bonushp] de [health].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+              },
+              "trigger": "on_death",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "RemnantChampIncreaseCost2",
+                    "bonusDamage": 30,
+                    "bonusHP": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LittleFadeIncreaseCostOnDeath3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-5eba73c6a63f7823-4ad9e667ee0b141429e51d03df861627-v2",
+            "english": "Eternal Flame III",
+            "french": "Flamme éternelle III",
+            "german": "Flamme der Ewigkeit III",
+            "russian": "Вечный огонь III",
+            "portuguese": "Chama Eterna III",
+            "chinese": "永恒之火III",
+            "spanish": "Llama eterna III",
+            "chinese_traditional": "永恆火焰III",
+            "korean": "영원한 불꽃 III",
+            "japanese": "エターナル・フレイムIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ambush",
+              "count": 1
+            },
+            {
+              "statusId": "endless",
+              "count": 1
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-dd9dbe2b2bfbfc5e-4ad9e667ee0b141429e51d03df861627-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+                "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+                "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage] de [attack] e +[effect0.upgrade.bonushp] de [health].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+              },
+              "trigger": "on_death",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "RemnantChampIncreaseCost3",
+                    "bonusDamage": 60,
+                    "bonusHP": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "LittleFadePermanentSpikes",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-5eedbce483c48656-6cd5c7d48e3c2c34a8e498057d3d8f1a-v2",
+            "english": "Little Icarus",
+            "french": "Frêle Icare",
+            "german": "Kleiner Ikarus",
+            "russian": "Маленький Икар",
+            "portuguese": "Pequeno Ícaro",
+            "chinese": "小蜡翼人",
+            "spanish": "Pequeña Ícaro",
+            "chinese_traditional": "小小伊卡洛斯",
+            "korean": "작은 이카루스",
+            "japanese": "リトル・イカルス"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "spikes",
+              "count": 7
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-8272ea0062b311b3-6cd5c7d48e3c2c34a8e498057d3d8f1a-v2",
+                "english": "Gain +[effect0.upgrade.bonusdamage][attack] and [spikes] [effect0.upgrade.status0.power] permanently.",
+                "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et [spikes] [effect0.upgrade.status0.power] définitivement.",
+                "german": "Erhalte permanent +[effect0.upgrade.bonusdamage][attack] und [spikes] [effect0.upgrade.status0.power].",
+                "russian": "Навсегда дает +[effect0.upgrade.bonusdamage][attack] и +[spikes] х[effect0.upgrade.status0.power].",
+                "portuguese": "Recebe +[effect0.upgrade.bonusdamage][attack] e [spikes] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack] 和 [spikes] [effect0.upgrade.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [spikes] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese_traditional": "永久獲得+[effect0.upgrade.bonusdamage][attack]和[spikes][effect0.upgrade.status0.power]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack] 및 [spikes] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と[spikes] [effect0.upgrade.status0.power]を永続的に得る。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "LittleFadeSpikes1",
+                    "statusEffectUpgrades": [
+                      {
+                        "statusId": "spikes",
+                        "count": 2
+                      }
+                    ],
+                    "hideUpgradeIconOnCard": true,
+                    "bonusDamage": 2
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "LittleFadePermanentSpikes2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-9de51114cc70cf31-3ba1169ad3347674ebcb9424f633434b-v2",
+            "english": "Little Icarus II",
+            "french": "Frêle Icare II",
+            "german": "Kleiner Ikarus II",
+            "russian": "Маленький Икар II",
+            "portuguese": "Pequeno Ícaro II",
+            "chinese": "小蜡翼人II",
+            "spanish": "Pequeña Ícaro II",
+            "chinese_traditional": "小小伊卡洛斯II",
+            "korean": "작은 이카루스 II",
+            "japanese": "リトル・イカルスII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "spikes",
+              "count": 7
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-34cdf9ffdd20f33f-3ba1169ad3347674ebcb9424f633434b-v2",
+                "english": "Gain +[effect0.upgrade.bonusdamage][attack] and [spikes] [effect0.upgrade.status0.power] permanently.",
+                "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et [spikes] [effect0.upgrade.status0.power] définitivement.",
+                "german": "Erhalte permanent +[effect0.upgrade.bonusdamage][attack] und [spikes] [effect0.upgrade.status0.power].",
+                "russian": "Навсегда дает +[effect0.upgrade.bonusdamage][attack] и +[spikes] х[effect0.upgrade.status0.power].",
+                "portuguese": "Recebe +[effect0.upgrade.bonusdamage][attack] e [spikes] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack] 和 [spikes] [effect0.upgrade.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [spikes] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese_traditional": "永久獲得+[effect0.upgrade.bonusdamage][attack]和[spikes][effect0.upgrade.status0.power]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack] 및 [spikes] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と[spikes] [effect0.upgrade.status0.power]を永続的に得る。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "LittleFadeSpikes2",
+                    "statusEffectUpgrades": [
+                      {
+                        "statusId": "spikes",
+                        "count": 3
+                      }
+                    ],
+                    "hideUpgradeIconOnCard": true,
+                    "bonusDamage": 3
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "upgradesToRemove": [
+            "LittleFadePermanentSpikes"
+          ]
+        },
+        {
+          "id": "LittleFadePermanentSpikes3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-7592f464801aee55-46d9c55368f740b4e98d3d67d43f00c4-v2",
+            "english": "Little Icarus III",
+            "french": "Frêle Icare III",
+            "german": "Kleiner Ikarus III",
+            "russian": "Маленький Икар III",
+            "portuguese": "Pequeno Ícaro III",
+            "chinese": "小蜡翼人III",
+            "spanish": "Pequeña Ícaro III",
+            "chinese_traditional": "小小伊卡洛斯III",
+            "korean": "작은 이카루스 III",
+            "japanese": "リトル・イカルスIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "spikes",
+              "count": 7
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-749dc91d4b93e9fc-46d9c55368f740b4e98d3d67d43f00c4-v2",
+                "english": "Gain +[effect0.upgrade.bonusdamage][attack] and [spikes] [effect0.upgrade.status0.power] permanently.",
+                "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et [spikes] [effect0.upgrade.status0.power] définitivement.",
+                "german": "Erhalte permanent +[effect0.upgrade.bonusdamage][attack] und [spikes] [effect0.upgrade.status0.power].",
+                "russian": "Навсегда дает +[effect0.upgrade.bonusdamage][attack] и +[spikes] х[effect0.upgrade.status0.power].",
+                "portuguese": "Recebe +[effect0.upgrade.bonusdamage][attack] e [spikes] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack] 和 [spikes] [effect0.upgrade.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [spikes] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese_traditional": "永久獲得+[effect0.upgrade.bonusdamage][attack]和[spikes][effect0.upgrade.status0.power]。",
+                "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack] 및 [spikes] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と[spikes] [effect0.upgrade.status0.power]を永続的に得る。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "LittleFadeSpikes3",
+                    "statusEffectUpgrades": [
+                      {
+                        "statusId": "spikes",
+                        "count": 4
+                      }
+                    ],
+                    "hideUpgradeIconOnCard": true,
+                    "bonusDamage": 4
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "upgradesToRemove": [
+            "LittleFadePermanentSpikes",
+            "LittleFadePermanentSpikes2"
+          ]
+        }
+      ]
+    }
+  ]
+}

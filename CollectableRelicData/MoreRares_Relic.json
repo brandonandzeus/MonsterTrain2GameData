@@ -1,0 +1,36 @@
+{
+  "id": "MoreRares_Relic",
+  "name": "MoreRares_Relic",
+  "rarity": "common",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTempUpgrade",
+      "paramCardUpgradeData": {
+        "id": "AddEndlessToNonMorsels",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "endless",
+            "count": 1
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeMorsels",
+            "excludedSubtypesOperator": "and",
+            "excludedSubtypes": [
+              "SubtypesData_Snack"
+            ]
+          },
+          {
+            "id": "OnlyUnitIncludingChamps",
+            "cardType": "monster"
+          }
+        ]
+      },
+      "paramSourceTeam": "monsters"
+    }
+  ],
+  "relicLoreTooltipStyle": "malicka",
+  "fromStoryEvent": true,
+  "requiredDLC": "railforged"
+}

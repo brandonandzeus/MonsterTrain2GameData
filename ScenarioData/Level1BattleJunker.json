@@ -1,0 +1,131 @@
+{
+  "id": "Level1BattleJunker",
+  "name": "Level1BattleJunker",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-44257f4c7f96db2a-69e6ea55f42e2fd4183329096d94cae2-v2",
+    "english": "Heavenly Toll",
+    "french": "Offrande céleste",
+    "german": "Himmlischer Zoll",
+    "russian": "Небесный звон",
+    "portuguese": "Tributo Celestial",
+    "chinese": "天堂之钟",
+    "spanish": "Tañido celestial",
+    "chinese_traditional": "天堂之鐘",
+    "korean": "천상의 종소리",
+    "japanese": "天界の鐘"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-a1cb8fc66c02f873-69e6ea55f42e2fd4183329096d94cae2-v2",
+    "english": "These Bellringers muddle your forces with their discordant bells. Do not succumb to their ringing.",
+    "french": "Ces carillonneurs déstabilisent vos troupes avec leurs cloches discordantes. Ne succombez pas à leur tintement.",
+    "german": "Diese Glöckner verwirren deine Truppen mit ihren disharmonischen Klängen. Erliege nicht ihrem Geläut.",
+    "russian": "Эти звонари отвлекают ваши войска испорченными колоколами. Не поддавайтесь их звону.",
+    "portuguese": "Esses Tocadores de Sinos desorientam suas forças com sinos discordantes. Não sucumba ao som deles.",
+    "chinese": "这些敲钟人会用不谐钟声扰乱你的部队。不要屈服于他们的钟声。",
+    "spanish": "Estos campaneros confunden a tus fuerzas con sus tañidos discordantes. No sucumbas a su sonido.",
+    "chinese_traditional": "這些敲鐘者用他們不諧的鐘聲擾亂你的軍隊。不要屈服於他們的鐘聲。",
+    "korean": "이 종지기는 거슬리는 종소리로 아군을 혼란에 빠뜨립니다. 종소리에 현혹되지 마세요.",
+    "japanese": "この鐘撞きたちは不協和音の鐘で軍を混乱させてくる。その音色に屈してはならない。"
+  },
+  "bossVariant": {
+    "id": "Level1Bosses",
+    "bossVariants": [
+      "Boss_Level1_Basic",
+      "Boss_Level1_Defensive"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "MageT1_Junker",
+    "ShieldGuardT1_BasicNonAttack"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker"
+              },
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              },
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "MageT1_Junker",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "Boss_Level1_Basic",
+                "useBossCharacter": true
+              },
+              {
+                "characterData": "ShieldGuardT1_BasicNonAttack"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

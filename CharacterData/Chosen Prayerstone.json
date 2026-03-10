@@ -1,0 +1,102 @@
+{
+  "id": "SpikyRockT3_Chosen_Boss_BasicNonAttack",
+  "name": "Chosen Prayerstone",
+  "nameKey": {
+    "key": "CharacterData_nameKey-a425f2af35fd7412-95f8c2c0343bbb1488c7656309b5dd0c-v2",
+    "english": "Chosen Prayerstone",
+    "french": "Pierre offertoire d'élu",
+    "german": "Auserwählter Gebetstein",
+    "russian": "Алтарь избранного",
+    "portuguese": "Pedra de Oração do Escolhido",
+    "chinese": "神选祷告石",
+    "spanish": "Piedra oratoria elegida",
+    "chinese_traditional": "天選祈禱石",
+    "korean": "선택된 기도석",
+    "japanese": "選ばれし祈念石"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-fd61d9040f053a56-95f8c2c0343bbb1488c7656309b5dd0c-v2",
+      "english": "Most of Fel’s loyal entourage left Heaven when she did. Some wavered and it would be their undoing.",
+      "french": "La plupart des fidèles de Fel quittèrent le paradis avec elle. Certains <nobr>hésitèrent ;</nobr> bien mal leur en prit.",
+      "german": "Die meisten von Fels treuen Gefolgsleuten verließen den Himmel gemeinsam mit ihr. Einige zögerten, was ihnen zum Verhängnis wurde.",
+      "russian": "Большая часть солдат Фэл ушли из Рая вместе с ней. Те же, кто струсил, поплатились за это.",
+      "portuguese": "A maior parte da comitiva leal de Fel deixou o Céu junto com ela. Alguns hesitaram, o que acabou sendo a perdição deles.",
+      "chinese": "菲尔离开天堂时，她大部分忠心的随从也一起离开了。有些人犹豫了，最后都遭了殃。",
+      "spanish": "La mayor parte del séquito leal de Fel abandonó el Cielo junto a ella. Algunos dudaron, lo que supuso su perdición.",
+      "chinese_traditional": "費爾身邊忠誠的部下都隨著她離開，而那些動搖的人下場都很慘。",
+      "korean": "펠이 천상을 떠날 때, 그녀를 따르던 충성스러운 자들도 대부분 그녀의 뒤를 따랐다. 하지만 일부는 흔들렸고, 그 흔들림이 곧 그들의 종말이 되었다.",
+      "japanese": "フェルの忠実な側近のほとんどは、フェルが天界を去ったときに自分たちも天界を去った。何人かは動揺し、それが彼らの破滅を招いた。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PenitentPrayerstone.prefab",
+    "m_AssetGUID": "a953cfe7dcfc13540bfccc254d88d305"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "spikes",
+      "count": 7
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-da4781b8486cfb7b-95f8c2c0343bbb1488c7656309b5dd0c-v2",
+        "english": "Grant boss units on the train +[effect0.power][attack].",
+        "french": "Les boss dans le train gagnent +[effect0.power][attack].",
+        "german": "Gewährt Boss-Einheiten auf dem Zug +[effect0.power][attack].",
+        "russian": "Дает врагам-боссам в поезде +[effect0.power][attack].",
+        "portuguese": "Concede +[effect0.power][attack] às unidades de chefão no trem.",
+        "chinese": "火车上的首领单位获得+[effect0.power][attack]。",
+        "spanish": "Otorga +[effect0.power][attack] a las unidades jefe en el tren.",
+        "chinese_traditional": "賦予列車上的首領 +[effect0.power][attack]。",
+        "korean": "열차 내 보스 유닛들에 +[effect0.power][attack]을 부여합니다.",
+        "japanese": "列車のボスユニットに+[effect0.power][attack]を付与する。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        {
+          "effectStateName": "CardEffectBuffDamage",
+          "targetMode": "tower",
+          "targetTeamType": "heroes",
+          "targetCharacterSubtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+          "paramInt": 4
+        }
+      ]
+    },
+    {
+      "trigger": "on_spawn",
+      "effects": [
+        {
+          "effectStateName": "CardEffectFloorRearrange",
+          "targetMode": "self",
+          "targetTeamType": "none"
+        },
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "immobile",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "hideVisualAndIgnoreSilence": true
+    }
+  ],
+  "size": 3,
+  "health": 250,
+  "canAttack": false,
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 0,
+  "chosenVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_ChosenSpikes"
+  ],
+  "characterChatterData": "StatueChatterData",
+  "artistAttribution": "Lauren Russo"
+}

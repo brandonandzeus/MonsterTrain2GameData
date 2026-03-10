@@ -1,0 +1,75 @@
+{
+  "id": "CopyFirstSpellPlayed",
+  "name": "Emot Tome",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-be86f695492b80c8-8443d75c4f7cf5b4eb2e7a7a130e978b-v2",
+    "english": "Emot Tome",
+    "french": "Vieux grimoire",
+    "german": "Emot-Foliant",
+    "russian": "Книга Агинк",
+    "portuguese": "Tomo Omot",
+    "chinese": "伊莫特之书",
+    "spanish": "Tomo de Emot",
+    "chinese_traditional": "情緒典籍",
+    "korean": "에못의 서",
+    "japanese": "エモットの書"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-93e1ee6e1092d34a-8443d75c4f7cf5b4eb2e7a7a130e978b-v2",
+    "english": "Create an [ephemeral] copy of the first spell you play each turn.",
+    "french": "Crée une copie [ephemeral] du premier sort que vous jouez à chaque tour.",
+    "german": "Erzeuge eine [ephemeral]-Kopie des ersten gespielten Zaubers pro Zug.",
+    "russian": "Каждый ход создается [ephemeral] копия первой сыгранной карты с чарами.",
+    "portuguese": "Cria uma cópia [ephemeral] do primeiro feitiço que você jogar em cada turno.",
+    "chinese": "得到你每回合使用的第一个法术的 [ephemeral] 复制体。",
+    "spanish": "Crea una copia [ephemeral] del primer hechizo que juegas cada turno.",
+    "chinese_traditional": "為你每回合打出的第一個法術創造[ephemeral]複製品。",
+    "korean": "매 턴 처음 사용하는 주문의 [ephemeral] 복제본을 생성합니다.",
+    "japanese": "毎ターン、最初にプレイする呪文の[ephemeral]複製を生成する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-707e4bf45d689a86-8443d75c4f7cf5b4eb2e7a7a130e978b-v2",
+      "english": "A historical account of the great battles between Heaven and Hell before the Covenant. Written in the back is a first hand account from a demon about the first days after the Covenant was broken.",
+      "french": "Un récit historique des grandes batailles entre le paradis et l'enfer avant l'alliance. Au verso, un démon raconte les premiers jours qui ont suivi la rupture de l'alliance.",
+      "german": "Ein historischer Bericht über die großen Schlachten zwischen Himmel und Hölle vor dem Pakt. Auf der Rückseite steht ein Bericht von einem Dämon über die ersten Tage nach dem Bruch.",
+      "russian": "Исторический очерк о великих битвах между Раем и Адом до заключения Согласия. На задней стороне — воспоминания одного демона о первых днях после того, как Согласие было нарушено.",
+      "portuguese": "Um relato histórico das grandes batalhas entre o Céu e o Inferno antes do Pacto. No verso, há um relato em primeira mão de um demônio sobre os primeiros dias após a quebra do Pacto.",
+      "chinese": "这是在缔结契约之前，天堂与地狱屡次大战的历史记录。背面是一名恶魔的第一手记录，写的是契约破裂之后最初几天的情况。",
+      "spanish": "Un registro histórico de las grandes batallas entre el Cielo y el Infierno antes de la Coalición. Al final, incluye un relato de primera mano de un demonio sobre los primeros días tras la rotura de la Coalición.",
+      "chinese_traditional": "一份關於新盟之前天堂與地獄之間偉大戰役的歷史記載。在背面寫著一個惡魔的第一手記述，內容提及新盟破裂後最初幾天的事情。",
+      "korean": "맹약 이전, 천상과 지옥 사이에 벌어진 장대한 전투가 기록된 역사적인 기록서다. 그 뒤쪽에는 맹약 파기 이후의 초기 상황에 관한 내용이 악마의 시점으로 적혀 있다.",
+      "japanese": "盟約以前の天界と地獄の間の大戦争の歴史的記録。巻末には盟約が破られた後の最初の数日間に関する、悪魔の直接の証言が記されている。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCopyCardOnCardPlay",
+      "paramCardType": "spell",
+      "effectConditions": [
+        {
+          "paramCardType": "spell",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "AddEphemeral",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitEphemeral",
+            "traitIsRemovable": false
+          }
+        ]
+      },
+      "paramInt": 1
+    }
+  ]
+}

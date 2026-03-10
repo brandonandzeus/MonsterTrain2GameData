@@ -1,0 +1,66 @@
+{
+  "id": "ReduceStarterCost",
+  "name": "Vola's Tuning Fork",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-06bf1877b823cd13-49f88d7fa3bb88f4ca54994f30a1535e-v2",
+    "english": "Vola's Tuning Fork",
+    "french": "Diapason de Vola",
+    "german": "Volas Stimmgabel",
+    "russian": "Камертон Волы",
+    "portuguese": "Diapasão de Vola",
+    "chinese": "沃拉的音叉",
+    "spanish": "Diapasón de Vola",
+    "chinese_traditional": "沃拉的調音叉",
+    "korean": "볼라의 소리굽쇠",
+    "japanese": "ヴォラの音叉"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-36158425e2045bca-49f88d7fa3bb88f4ca54994f30a1535e-v2",
+    "english": "Starter cards cost -[effect0.upgrade.costreduction][ember].",
+    "french": "Les cartes de départ coûtent -[effect0.upgrade.costreduction][ember].",
+    "german": "Startkarten kosten -[effect0.upgrade.costreduction][ember].",
+    "russian": "Стоимость начальных карт: -[effect0.upgrade.costreduction][ember].",
+    "portuguese": "As cartas iniciais custam -[effect0.upgrade.costreduction][ember]",
+    "chinese": "初始卡牌费用 -[effect0.upgrade.costreduction][ember]。",
+    "spanish": "Las cartas iniciales cuestan -[effect0.upgrade.costreduction][ember].",
+    "chinese_traditional": "新手卡牌費用-[effect0.upgrade.costreduction][ember]。",
+    "korean": "모든 초기 카드의 비용이 -[effect0.upgrade.costreduction][ember] 됩니다.",
+    "japanese": "開始カードのコストが-[effect0.upgrade.costreduction][ember]になる。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-4638ab2143096638-49f88d7fa3bb88f4ca54994f30a1535e-v2",
+      "english": "Her celestial song was said to be sweet enough to bring peace to a battlefield. Some still hold out hope that she will one day return.",
+      "french": "On dit que son chant céleste est assez doux pour apporter la paix sur un champ de bataille. Certains espèrent encore qu'elle reviendra un jour.",
+      "german": "Es heißt, ihr himmlischer Gesang sei so schön, dass er Frieden auf jedes Schlachtfeld bringt. Manche hoffen immer noch, dass sie einst zurückkehren wird.",
+      "russian": "Считается, что ее неземная песнь так сладка, что может принести мир на поле боя. Некоторые до сих пор надеются на ее возвращение.",
+      "portuguese": "Dizia-se que sua canção celestial era doce o suficiente para trazer paz a um campo de batalha. Alguns ainda mantêm a esperança de que ela retornará um dia.",
+      "chinese": "据说，她的天籁之音甜美到足以为战场带来和平。有些人仍然盼望着她有朝一日能回来。",
+      "spanish": "Se dice que su canción celestial era tan dulce como para crear la paz en el campo de batalla. Algunos siguen confiando en su regreso.",
+      "chinese_traditional": "據說她的天界之歌甜美得能為戰場帶來和平。有些人仍然懷著希望，相信她有朝一日會回歸。",
+      "korean": "그 천상의 노래는 전장에 평화를 가져올 만큼 달콤하다고 한다. 몇몇은 지금도 그 노래가 다시 돌아올 것이라는 희망을 품고 있다.",
+      "japanese": "彼女の天の歌は戦場に平和をもたらすほど甘美だったと言われており、彼女がいつか戻ってくると期待する者もいる。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTempUpgrade",
+      "paramCardUpgradeData": {
+        "id": "ReduceStarterCost_Upgrade",
+        "filters": [
+          {
+            "id": "OnlyStarterCards",
+            "allowedCardPools": [
+              "StarterCardsOnly"
+            ]
+          }
+        ],
+        "isUnique": true,
+        "costReduction": 1,
+        "xCostReduction": 1
+      },
+      "paramSourceTeam": "monsters"
+    }
+  ]
+}

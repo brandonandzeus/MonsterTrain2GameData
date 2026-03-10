@@ -1,0 +1,264 @@
+{
+  "id": "SoulSavior_R3_Battle_StealthSniper",
+  "name": "SoulSavior_R3_Battle_StealthSniper",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-34873ec9771235d9-3e18e4b65bc97aa45b563b6b70cf63e6-v2",
+    "english": "Harassing Snipers",
+    "french": "Tireurs tyranniques",
+    "german": "Scharfschützen stören",
+    "russian": "Снайперы-преследователи",
+    "portuguese": "Atiradores Perseguidores",
+    "chinese": "狙击骚扰者",
+    "spanish": "Tiradores hostigadores",
+    "chinese_traditional": "騷擾的狙擊手",
+    "korean": "교란하는 저격수",
+    "japanese": "悪意のスナイパー"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-a572ca832cd6bdfe-3e18e4b65bc97aa45b563b6b70cf63e6-v2",
+    "english": "These souls favor mischief over strength, choosing to harass your most vulnerable units on the rear.",
+    "french": "Ces âmes privilégient la ruse à la puissance, préférant harceler vos unités les plus vulnérables en dernière ligne.",
+    "german": "Diese Seelen setzen auf Hinterhalt statt Stärke und fallen von hinten über deine besonders verwundbaren Einheiten her.",
+    "russian": "Эти Души воюют исподтишка: они будут терзать ваших самых уязвимых бойцов с тыла.",
+    "portuguese": "Essas almas preferem a malícia à força, escolhendo atacar suas unidades mais vulneráveis na retaguarda.",
+    "chinese": "比起硬碰硬，这些灵魂更喜欢搞恶作剧，并选择骚扰你后排最脆弱的单位。",
+    "spanish": "Estas almas prefieren la sutileza a la fuerza, por lo que golpean a las unidades más vulnerables de tu retaguardia.",
+    "chinese_traditional": "這些靈魂更愛惡作劇而非正面蠻力，專挑你後排最脆弱的單位進行騷擾。",
+    "korean": "이 영혼들은 힘을 겨루기보다는 장난을 일삼으며, 후방에 있는 가장 취약한 유닛들을 집요하게 괴롭힙니다.",
+    "japanese": "この者たちは力を振るうことよりイタズラを好み、後方の最も脆弱なユニットを攻撃する。"
+  },
+  "bossVariant": {
+    "id": "SoulSavior_Region3Bosses",
+    "bossVariants": [
+      "Boss_SoulSavior_R3_TrainBoss_Reanimate",
+      "Boss_SoulSavior_R3_TrainBoss_Spikes"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "R3_Attacker_T1_StealthSniper",
+    "R3_HeavyT1_Basic_Ver2"
+  ],
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Junker/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R3_MageT3_Junker_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper",
+                "suppressSpawn": true,
+                "requiredDifficultyTier": 2
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atk x2/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R3_MageT3_Junker_Ver2",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                "suppressSpawn": true,
+                "requiredMutator": "SoulSavior_RunDistance3"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Regions Complete 1) Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Regions Complete 2) Junker/Atk/Heavy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R3_MageT3_Junker_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked"
+              },
+              {
+                "characterData": "RAny_Heavy_T2_BurstIfUnblocked",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Sniper / Boss",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R3_MageT3_Junker_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Attacker_T3_StealthSniper_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Attacker_T1_StealthSniper"
+              },
+              {
+                "characterData": "Boss_SoulSavior_R3_TrainBoss_Spikes",
+                "useBossCharacter": true
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend"
+  }
+}

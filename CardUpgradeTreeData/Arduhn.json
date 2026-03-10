@@ -1,0 +1,703 @@
+{
+  "id": "UpgradeTreeLunaCoven2",
+  "name": "Arduhn",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "ArduhnMoonshade1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e6695885ba92191d-0f088ccba79354843ac035202b88999d-v2",
+            "english": "Mystic Hammer",
+            "french": "Marteau mystique",
+            "german": "Mystischer Hammer",
+            "russian": "Волшебный молот",
+            "portuguese": "Martelo Místico",
+            "chinese": "神秘之锤",
+            "spanish": "Martillo místico",
+            "chinese_traditional": "神秘之錘",
+            "korean": "신비한 망치",
+            "japanese": "ミスティック・ハンマー"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-69ba6aca8a43c924-0f088ccba79354843ac035202b88999d-v2",
+          "upgradeNotificationKey": "CardUpgradeData_upgradeNotificationKey-28823d0d2a0afe5c-0f088ccba79354843ac035202b88999d-v2",
+          "unitAbilityUpgrade": {
+            "id": "NewMoonAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-a4ca9de98f21460a-ad34a511edacaa640821a3d355b482c4-v2",
+              "english": "Shadowcast",
+              "french": "Projection d'ombre",
+              "german": "Schattenwurf",
+              "russian": "Отброшенная тень",
+              "portuguese": "Invocação Sombria",
+              "chinese": "暗影施法",
+              "spanish": "En tinieblas",
+              "chinese_traditional": "暗影投射",
+              "korean": "암영술",
+              "japanese": "影落とし"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-d83922f119665e4f-ad34a511edacaa640821a3d355b482c4-v2",
+              "english": "[phase] to [moonshade].",
+              "french": "[phase] en [moonshade].",
+              "german": "[phase] bis [moonshade].",
+              "russian": "Запускается [phase] «[moonshade]».",
+              "portuguese": "A [phase] muda para [moonshade].",
+              "chinese": "[phase] 至 [moonshade]。",
+              "spanish": "[phase] a [moonshade].",
+              "chinese_traditional": "[phase]到[moonshade]。",
+              "korean": "[moonshade]로 [phase]가 이루어집니다.",
+              "japanese": "[phase]が[moonshade]になる。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassLunaCoven",
+            "effects": [
+              {
+                "effectStateName": "CardEffectSetMoonPhase",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramInt": 1
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4f5e44bc3fc2ac1b-0f088ccba79354843ac035202b88999d-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "on_moon_shade",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMoonshade1_Upgrade",
+                    "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-ca9be4cba55bad5a-8cbb222ea137ae845b22a71d765cd554-v2",
+                    "useUpgradeHighlightTextTags": false,
+                    "bonusDamage": 50
+                  },
+                  "additionalParamInt1": 1
+                }
+              ]
+            },
+            {
+              "trigger": "on_moonshade_lost",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMoonshade1_Upgrade",
+                    "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-ca9be4cba55bad5a-8cbb222ea137ae845b22a71d765cd554-v2",
+                    "useUpgradeHighlightTextTags": false,
+                    "bonusDamage": 50
+                  }
+                }
+              ],
+              "hideVisualAndIgnoreSilence": true
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusHP": 20
+        },
+        {
+          "id": "ArduhnMoonshade2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-be84807265ba80b2-84754fa783b13b04790195115a5a5661-v2",
+            "english": "Mystic Hammer II",
+            "french": "Marteau mystique II",
+            "german": "Mystischer Hammer II",
+            "russian": "Волшебный молот II",
+            "portuguese": "Martelo Místico II",
+            "chinese": "神秘之锤 II",
+            "spanish": "Martillo místico II",
+            "chinese_traditional": "神秘之錘II",
+            "korean": "신비한 망치 II",
+            "japanese": "ミスティック・ハンマーII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-0d35604bf523c0ba-84754fa783b13b04790195115a5a5661-v2",
+          "upgradeNotificationKey": "CardUpgradeData_upgradeNotificationKey-b38aa24f08c81b19-84754fa783b13b04790195115a5a5661-v2",
+          "unitAbilityUpgrade": {
+            "id": "NewMoonAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-a4ca9de98f21460a-ad34a511edacaa640821a3d355b482c4-v2",
+              "english": "Shadowcast",
+              "french": "Projection d'ombre",
+              "german": "Schattenwurf",
+              "russian": "Отброшенная тень",
+              "portuguese": "Invocação Sombria",
+              "chinese": "暗影施法",
+              "spanish": "En tinieblas",
+              "chinese_traditional": "暗影投射",
+              "korean": "암영술",
+              "japanese": "影落とし"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-d83922f119665e4f-ad34a511edacaa640821a3d355b482c4-v2",
+              "english": "[phase] to [moonshade].",
+              "french": "[phase] en [moonshade].",
+              "german": "[phase] bis [moonshade].",
+              "russian": "Запускается [phase] «[moonshade]».",
+              "portuguese": "A [phase] muda para [moonshade].",
+              "chinese": "[phase] 至 [moonshade]。",
+              "spanish": "[phase] a [moonshade].",
+              "chinese_traditional": "[phase]到[moonshade]。",
+              "korean": "[moonshade]로 [phase]가 이루어집니다.",
+              "japanese": "[phase]が[moonshade]になる。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassLunaCoven",
+            "effects": [
+              {
+                "effectStateName": "CardEffectSetMoonPhase",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramInt": 1
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-8d6cbb395fee432a-84754fa783b13b04790195115a5a5661-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "on_moon_shade",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMoonshade2_Upgrade",
+                    "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-6665248f6cf8efd2-87b82c825b706d9478fd4692d8395077-v2",
+                    "useUpgradeHighlightTextTags": false,
+                    "bonusDamage": 100
+                  },
+                  "additionalParamInt1": 1
+                }
+              ]
+            },
+            {
+              "trigger": "on_moonshade_lost",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMoonshade2_Upgrade",
+                    "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-6665248f6cf8efd2-87b82c825b706d9478fd4692d8395077-v2",
+                    "useUpgradeHighlightTextTags": false,
+                    "bonusDamage": 100
+                  }
+                }
+              ],
+              "hideVisualAndIgnoreSilence": true
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 15,
+          "bonusHP": 35
+        },
+        {
+          "id": "ArduhnMoonshade3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-d639a91c5b71b1a0-6b29d0bffb32c9e42b7d45bc4afdba09-v2",
+            "english": "Mystic Hammer III",
+            "french": "Marteau mystique III",
+            "german": "Mystischer Hammer III",
+            "russian": "Волшебный молот III",
+            "portuguese": "Martelo Místico III",
+            "chinese": "神秘之锤 III",
+            "spanish": "Martillo místico III",
+            "chinese_traditional": "神秘之錘III",
+            "korean": "신비한 망치 III",
+            "japanese": "ミスティック・ハンマーIII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-48765bca803227a3-6b29d0bffb32c9e42b7d45bc4afdba09-v2",
+          "unitAbilityUpgrade": {
+            "id": "NewMoonAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-a4ca9de98f21460a-ad34a511edacaa640821a3d355b482c4-v2",
+              "english": "Shadowcast",
+              "french": "Projection d'ombre",
+              "german": "Schattenwurf",
+              "russian": "Отброшенная тень",
+              "portuguese": "Invocação Sombria",
+              "chinese": "暗影施法",
+              "spanish": "En tinieblas",
+              "chinese_traditional": "暗影投射",
+              "korean": "암영술",
+              "japanese": "影落とし"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-d83922f119665e4f-ad34a511edacaa640821a3d355b482c4-v2",
+              "english": "[phase] to [moonshade].",
+              "french": "[phase] en [moonshade].",
+              "german": "[phase] bis [moonshade].",
+              "russian": "Запускается [phase] «[moonshade]».",
+              "portuguese": "A [phase] muda para [moonshade].",
+              "chinese": "[phase] 至 [moonshade]。",
+              "spanish": "[phase] a [moonshade].",
+              "chinese_traditional": "[phase]到[moonshade]。",
+              "korean": "[moonshade]로 [phase]가 이루어집니다.",
+              "japanese": "[phase]が[moonshade]になる。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "linkedClass": "ClassLunaCoven",
+            "effects": [
+              {
+                "effectStateName": "CardEffectSetMoonPhase",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramInt": 1
+              }
+            ],
+            "cooldownAfterActivated": 3,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-234394ffef735fdf-6b29d0bffb32c9e42b7d45bc4afdba09-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack].",
+                "french": "+[effect0.upgrade.bonusdamage][attack].",
+                "german": "+[effect0.upgrade.bonusdamage][attack].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+              },
+              "trigger": "on_moon_shade",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMoonshade3_Upgrade",
+                    "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-e3b1843efa1f187e-15ba0a0b2c19b3e4e887ab840e3a0f46-v2",
+                    "useUpgradeHighlightTextTags": false,
+                    "bonusDamage": 150
+                  },
+                  "additionalParamInt1": 1
+                }
+              ]
+            },
+            {
+              "trigger": "on_moonshade_lost",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMoonshade3_Upgrade",
+                    "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-e3b1843efa1f187e-15ba0a0b2c19b3e4e887ab840e3a0f46-v2",
+                    "useUpgradeHighlightTextTags": false,
+                    "bonusDamage": 150
+                  }
+                }
+              ],
+              "hideVisualAndIgnoreSilence": true
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 40,
+          "bonusHP": 80
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "ArduhnMageblade1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-bab3e3901e094e73-78d944a3533c80a428b8e3d1064d880f-v2",
+            "english": "Battleborne",
+            "french": "Aptitude au combat",
+            "german": "Kampfgeboren",
+            "russian": "Воитель",
+            "portuguese": "Nascido para Lutar",
+            "chinese": "战狂",
+            "spanish": "Vínculo de batalla",
+            "chinese_traditional": "戰生",
+            "korean": "전투광",
+            "japanese": "バトルボーン"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-56afae59192edd13-78d944a3533c80a428b8e3d1064d880f-v2",
+                "english": "Permanently gain [conduit] [effect0.upgrade.status0.power].",
+                "french": "Octroie [conduit] [effect0.upgrade.status0.power] définitivement.",
+                "german": "Erhalte permanent [conduit] [effect0.upgrade.status0.power].",
+                "russian": "Навсегда даетcя [conduit] х[effect0.upgrade.status0.power].",
+                "portuguese": "Recebe [conduit] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese": "永久获得 [conduit] [effect0.upgrade.status0.power]。",
+                "spanish": "Añade [conduit] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese_traditional": "永久獲得[conduit][effect0.upgrade.status0.power]。",
+                "korean": "영구적으로 [conduit] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+                "japanese": "[conduit] [effect0.upgrade.status0.power]を永続的に得る。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMageblade1_Upgrade",
+                    "statusEffectUpgrades": [
+                      {
+                        "statusId": "conduit",
+                        "count": 1
+                      }
+                    ]
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 10,
+          "bonusHP": 2
+        },
+        {
+          "id": "ArduhnMageblade2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-cb2cb74a5248d943-97f75b82abba62145984f8d8ab3e7f6b-v2",
+            "english": "Battleborne II",
+            "french": "Aptitude au combat II",
+            "german": "Kampfgeboren II",
+            "russian": "Воитель II",
+            "portuguese": "Nascido para Lutar II",
+            "chinese": "战狂 II",
+            "spanish": "Vínculo de batalla II",
+            "chinese_traditional": "戰生II",
+            "korean": "전투광 II",
+            "japanese": "バトルボーンII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "mageblade",
+              "count": 2
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-1eed006bdc991302-97f75b82abba62145984f8d8ab3e7f6b-v2",
+                "english": "Permanently gain [conduit] [effect0.upgrade.status0.power].",
+                "french": "Octroie [conduit] [effect0.upgrade.status0.power] définitivement.",
+                "german": "Erhalte permanent [conduit] [effect0.upgrade.status0.power].",
+                "russian": "Навсегда даетcя [conduit] х[effect0.upgrade.status0.power].",
+                "portuguese": "Recebe [conduit] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese": "永久获得 [conduit] [effect0.upgrade.status0.power]。",
+                "spanish": "Añade [conduit] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese_traditional": "永久獲得[conduit][effect0.upgrade.status0.power]。",
+                "korean": "영구적으로 [conduit] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+                "japanese": "[conduit] [effect0.upgrade.status0.power]を永続的に得る。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMageblade1_Upgrade",
+                    "statusEffectUpgrades": [
+                      {
+                        "statusId": "conduit",
+                        "count": 1
+                      }
+                    ]
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 25,
+          "bonusHP": 10
+        },
+        {
+          "id": "ArduhnMageblade3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-7f02c7f614d513e8-75ead33b4b39d4d45b5fd4e1aec7a56f-v2",
+            "english": "Battleborne III",
+            "french": "Aptitude au combat III",
+            "german": "Kampfgeboren III",
+            "russian": "Воитель III",
+            "portuguese": "Nascido para Lutar III",
+            "chinese": "战狂 III",
+            "spanish": "Vínculo de batalla III",
+            "chinese_traditional": "戰生III",
+            "korean": "전투광 III",
+            "japanese": "バトルボーンIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "mageblade",
+              "count": 4
+            }
+          ],
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4615404a3874352c-75ead33b4b39d4d45b5fd4e1aec7a56f-v2",
+                "english": "Permanently gain [conduit] [effect0.upgrade.status0.power].",
+                "french": "Octroie [conduit] [effect0.upgrade.status0.power] définitivement.",
+                "german": "Erhalte permanent [conduit] [effect0.upgrade.status0.power].",
+                "russian": "Навсегда даетcя [conduit] х[effect0.upgrade.status0.power].",
+                "portuguese": "Recebe [conduit] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese": "永久获得 [conduit] [effect0.upgrade.status0.power]。",
+                "spanish": "Añade [conduit] [effect0.upgrade.status0.power] permanentemente.",
+                "chinese_traditional": "永久獲得[conduit][effect0.upgrade.status0.power]。",
+                "korean": "영구적으로 [conduit] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+                "japanese": "[conduit] [effect0.upgrade.status0.power]を永続的に得る。"
+              },
+              "trigger": "on_kill",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "ArduhnMageblade1_Upgrade",
+                    "statusEffectUpgrades": [
+                      {
+                        "statusId": "conduit",
+                        "count": 1
+                      }
+                    ]
+                  },
+                  "additionalParamInt1": 2
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 40,
+          "bonusHP": 20
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "ArduhnIncant1",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-c35ebe389189f7ff-155eaa2f9a0c52741a7de73c668ab501-v2",
+            "english": "Hierophant",
+            "french": "Hiérophante",
+            "german": "Hierophant",
+            "russian": "Верховный жрец",
+            "portuguese": "Hierofante",
+            "chinese": "圣职者",
+            "spanish": "Hierofante",
+            "chinese_traditional": "咒術師",
+            "korean": "대사제",
+            "japanese": "ハイエロファント"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-155f25060f538e5b-155eaa2f9a0c52741a7de73c668ab501-v2",
+                "english": "Apply [armor] [effect0.status0.power] to friendly units. <b>Silent</b> units gain +[effect1.upgrade.bonusdamage][attack].",
+                "french": "Confère [armor] [effect0.status0.power] aux alliés. Les <b>Silencieux</b> gagnent +[effect1.upgrade.bonusdamage][attack].",
+                "german": "Wende [armor] [effect0.status0.power] auf verbündete Einheiten an. Einheiten mit <b>Stille</b> erhalten +[effect1.upgrade.bonusdamage][attack].",
+                "russian": "Союзным бойцам дается [armor] х[effect0.status0.power]. <b>Молчуны</b> получают +[effect1.upgrade.bonusdamage][attack].",
+                "portuguese": "Concede [armor] [effect0.status0.power] a unidades aliadas. As unidades de <b>Silenciosos</b> ganham +[effect1.upgrade.bonusdamage][attack].",
+                "chinese": "使所有友方单位获得 [armor] [effect0.status0.power]。<b>寂静者</b>单位获得 +[effect1.upgrade.bonusdamage][attack]。",
+                "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas. Los <b>silenciosos</b> añaden +[effect1.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。<b>無聲者</b>單位獲得+[effect1.upgrade.bonusdamage][attack]。",
+                "korean": "아군 유닛들에게 [armor] [effect0.status0.power]을 적용합니다. <b>묵언자</b> 유닛이 +[effect1.upgrade.bonusdamage][attack]을 얻습니다.",
+                "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。<b>サイレント</b>ユニットは+[effect1.upgrade.bonusdamage][attack]を得る。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "armor",
+                      "count": 2
+                    }
+                  ]
+                },
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Silent",
+                  "paramCardUpgradeData": {
+                    "id": "Plus1Attack",
+                    "bonusDamage": 1
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 10,
+          "bonusHP": 10
+        },
+        {
+          "id": "ArduhnIncant2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-444fb07daed6b911-5c7609448eda44b4f8a29f506985b22d-v2",
+            "english": "Hierophant II",
+            "french": "Hiérophante II",
+            "german": "Hierophant II",
+            "russian": "Верховный жрец II",
+            "portuguese": "Hierofante II",
+            "chinese": "圣职者 II",
+            "spanish": "Hierofante II",
+            "chinese_traditional": "咒術師II",
+            "korean": "대사제 II",
+            "japanese": "ハイエロファントII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-92e44bfde8443014-5c7609448eda44b4f8a29f506985b22d-v2",
+                "english": "Apply [armor] [effect0.status0.power] to friendly units. <b>Silent</b> units gain +[effect1.upgrade.bonusdamage][attack].",
+                "french": "Confère [armor] [effect0.status0.power] aux alliés. Les <b>Silencieux</b> gagnent +[effect1.upgrade.bonusdamage][attack].",
+                "german": "Wende [armor] [effect0.status0.power] auf verbündete Einheiten an. Einheiten mit <b>Stille</b> erhalten +[effect1.upgrade.bonusdamage][attack].",
+                "russian": "Союзным бойцам дается [armor] х[effect0.status0.power]. <b>Молчуны</b> получают +[effect1.upgrade.bonusdamage][attack].",
+                "portuguese": "Concede [armor] [effect0.status0.power] a unidades aliadas. As unidades de <b>Silenciosos</b> ganham +[effect1.upgrade.bonusdamage][attack].",
+                "chinese": "使所有友方单位获得 [armor] [effect0.status0.power]。<b>寂静者</b>单位获得 +[effect1.upgrade.bonusdamage][attack]。",
+                "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas. Los <b>silenciosos</b> añaden +[effect1.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。<b>無聲者</b>單位獲得+[effect1.upgrade.bonusdamage][attack]。",
+                "korean": "아군 유닛들에게 [armor] [effect0.status0.power]을 적용합니다. <b>묵언자</b> 유닛이 +[effect1.upgrade.bonusdamage][attack]을 얻습니다.",
+                "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。<b>サイレント</b>ユニットは+[effect1.upgrade.bonusdamage][attack]を得る。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "armor",
+                      "count": 3
+                    }
+                  ]
+                },
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Silent",
+                  "paramCardUpgradeData": {
+                    "id": "Plus2Attack",
+                    "bonusDamage": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 20
+        },
+        {
+          "id": "ArduhnIncant3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-8420f43299fc41ed-d4e08c3b68b15be49a8057dd9eaa3ccb-v2",
+            "english": "Hierophant III",
+            "french": "Hiérophante III",
+            "german": "Hierophant III",
+            "russian": "Верховный жрец III",
+            "portuguese": "Hierofante III",
+            "chinese": "圣职者 III",
+            "spanish": "Hierofante III",
+            "chinese_traditional": "咒術師III",
+            "korean": "대사제 III",
+            "japanese": "ハイエロファントIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-e44001f9db44b570-d4e08c3b68b15be49a8057dd9eaa3ccb-v2",
+                "english": "Apply [armor] [effect0.status0.power] to friendly units. <b>Silent</b> units gain +[effect1.upgrade.bonusdamage][attack].",
+                "french": "Confère [armor] [effect0.status0.power] aux alliés. Les <b>Silencieux</b> gagnent +[effect1.upgrade.bonusdamage][attack].",
+                "german": "Wende [armor] [effect0.status0.power] auf verbündete Einheiten an. Einheiten mit <b>Stille</b> erhalten +[effect1.upgrade.bonusdamage][attack].",
+                "russian": "Союзным бойцам дается [armor] х[effect0.status0.power]. <b>Молчуны</b> получают +[effect1.upgrade.bonusdamage][attack].",
+                "portuguese": "Concede [armor] [effect0.status0.power] a unidades aliadas. As unidades de <b>Silenciosos</b> ganham +[effect1.upgrade.bonusdamage][attack].",
+                "chinese": "使所有友方单位获得 [armor] [effect0.status0.power]。<b>寂静者</b>单位获得 +[effect1.upgrade.bonusdamage][attack]。",
+                "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas. Los <b>silenciosos</b> añaden +[effect1.upgrade.bonusdamage][attack].",
+                "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。<b>無聲者</b>單位獲得+[effect1.upgrade.bonusdamage][attack]。",
+                "korean": "아군 유닛들에게 [armor] [effect0.status0.power]을 적용합니다. <b>묵언자</b> 유닛이 +[effect1.upgrade.bonusdamage][attack]을 얻습니다.",
+                "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。<b>サイレント</b>ユニットは+[effect1.upgrade.bonusdamage][attack]を得る。"
+              },
+              "trigger": "card_spell_played",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "armor",
+                      "count": 4
+                    }
+                  ]
+                },
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "room",
+                  "targetTeamType": "monsters",
+                  "targetCharacterSubtype": "SubtypesData_Silent",
+                  "paramCardUpgradeData": {
+                    "id": "Plus3Attack",
+                    "bonusDamage": 3
+                  }
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 40,
+          "bonusHP": 40
+        }
+      ]
+    }
+  ]
+}

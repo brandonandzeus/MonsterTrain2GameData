@@ -1,0 +1,72 @@
+{
+  "id": "RailforgedChampionAbilityConductorsCommand3",
+  "name": "Conductor's Command III",
+  "nameKey": {
+    "key": "CardData_nameKey-f5d6778e140c6830-64193d599bc5f544985e910879e097a9-v2",
+    "english": "Conductor's Command III",
+    "french": "Ordre du <nobr>contrôleur III</nobr>",
+    "german": "Befehl des Schaffners III",
+    "russian": "Приказ машиниста III",
+    "portuguese": "Comando do Condutor III",
+    "chinese": "列车长之令 III",
+    "spanish": "Orden del revisor III",
+    "chinese_traditional": "列車長指令III",
+    "korean": "기관사의 명령 III",
+    "japanese": "車掌の指揮III"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7e6ab151d86eeaad-64193d599bc5f544985e910879e097a9-v2",
+    "english": "Summon a random Steward from your deck. Stewards attack immediately.",
+    "french": "Invoque un steward aléatoire de votre deck. Les stewards attaquent immédiatement.",
+    "german": "Beschwöre einen zufälligen Begleiter aus deinem Deck. Begleiter greifen sofort an.",
+    "russian": "Призывает случайного стюарда из вашей колоды. Стюарды мгновенно атакуют.",
+    "portuguese": "Invoca um Guarda aleatório do seu deck. Guardas atacam imediatamente.",
+    "chinese": "从你的卡组中随机召唤一个乘务员。乘务员立即发动攻击。",
+    "spanish": "Invoca un Auxiliar aleatorio de tu mazo. Los Auxiliares atacan de inmediato.",
+    "chinese_traditional": "從你的牌組中召喚一個隨機僕役。僕役立刻攻擊。",
+    "korean": "덱에서 잡부 하나를 무작위로 소환합니다. 잡부는 곧바로 공격합니다.",
+    "japanese": "デッキからランダムなスチュワードを召喚する。スチュワードは即座に攻撃を実行する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
+    "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnUnitFromDeck",
+      "targetMode": "draw_pile",
+      "targetTeamType": "monsters",
+      "targetCardType": "monster",
+      "targetCharacterSubtype": "SubtypesData_TrainSteward",
+      "targetCardSelectionMode": "random_to_room",
+      "paramCardUpgradeData": {
+        "id": "RailforgedChampionAbilityPyrelink_Upgrade",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitEphemeral",
+            "traitIsRemovable": false
+          }
+        ],
+        "costReduction": 99,
+        "xCostReduction": 99
+      },
+      "shouldFailToCastIfTestFails": true,
+      "paramInt": 1,
+      "additionalParamInt": 1,
+      "paramCardPool": "PyreshotOnlyPool"
+    },
+    {
+      "effectStateName": "CardEffectAttackWithUnit",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "targetCharacterSubtype": "SubtypesData_TrainSteward"
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_enemy"
+}

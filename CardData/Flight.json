@@ -1,0 +1,56 @@
+{
+  "id": "AngelFlightAbility",
+  "name": "Flight",
+  "nameKey": {
+    "key": "CardData_nameKey-a44296787bec78c4-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+    "english": "Flight",
+    "french": "Vol",
+    "german": "Flug",
+    "russian": "Полет",
+    "portuguese": "Voo",
+    "chinese": "飞行",
+    "spanish": "Vuelo",
+    "chinese_traditional": "飛行",
+    "korean": "비행",
+    "japanese": "飛翔"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-f70caef0bbd9b60e-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+    "english": "Move to a targeted location on any floor.",
+    "french": "Déplace l'unité à la position ciblée du niveau choisi.",
+    "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene.",
+    "russian": "Перемещение в выбранное место на любом этаже.",
+    "portuguese": "Desloca-se para um local específico em qualquer andar.",
+    "chinese": "移动到任意层的目标位置。",
+    "spanish": "Se mueve a la ubicación seleccionada de cualquier piso.",
+    "chinese_traditional": "移動到任意樓層的指定位置。",
+    "korean": "선택한 층의 목표 위치로 이동합니다.",
+    "japanese": "任意のフロアの指定した位置へ移動する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
+    "m_AssetGUID": "b7d9137dc005eb345800500fcaa4823f"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectUnitAbilityTeleport",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+          "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
+        },
+        "spawnLocation": "character_bottom"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 2,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "canAbilityTargetOtherFloors": true
+}

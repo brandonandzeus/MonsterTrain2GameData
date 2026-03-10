@@ -1,0 +1,102 @@
+{
+  "id": "ColdstrikeSiren",
+  "name": "Icy Cilophyte",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ColdstrikeCilophyte.prefab",
+    "m_AssetGUID": "f6876aabf9223e74c8f4d3557ad6b36d"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterColdstrikeSiren",
+        "nameKey": {
+          "key": "CharacterData_nameKey-8ad888312cfe407b-7950aac77d7d92343b181181dec60509-v2",
+          "english": "Icy Cilophyte",
+          "french": "Cilophyte de glace",
+          "german": "Eisige Celophyte",
+          "russian": "Ледяная целофитка",
+          "portuguese": "Cecaelia Gélida",
+          "chinese": "寒冰之子",
+          "spanish": "Cilofita gélida",
+          "chinese_traditional": "冰冷絲蘿菲特",
+          "korean": "냉혹한 실로파이트",
+          "japanese": "アイシー・シロファイト"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-d80148813fc89cb3-7950aac77d7d92343b181181dec60509-v2",
+            "english": "Even further communion with the ice has allowed these Sirens to master its freezing nature. This leads me to believe that the Stygian may be the only clan that has benefited from the Freeze.",
+            "french": "Une communion plus approfondie avec la glace a permis à ces sirènes de maîtriser cet élément à la perfection. Cette prouesse m'incite à penser que les Stygiens constituent peut-être le seul clan ayant bénéficié de la Glaciation.",
+            "german": "Eine noch engere Bindung zum Eis hat es diesen Sirenen ermöglicht, seine frostige Natur zu beherrschen. Daher glaube ich, dass die Stygier vielleicht der einzige Stamm sind, der vom Frost profitiert hat.",
+            "russian": "Дальнейшее изучение льда позволило сиренам постигнуть тайны его морозной сути. Полагаю, Стигия оказалась единственной, кто выиграл из-за застывания Ада.",
+            "portuguese": "Todo o tempo gasto em comunhão com o gelo permitiu que estas Sereias dominassem tal natureza congelante. Isso me faz acreditar que os Estigeanos foram o único clã a se beneficiar do congelamento.",
+            "chinese": "通过寒冰之间的不断交流，这些海妖掌握了寒冰的特性。这不由得让我认为，冥卫氏族可能是唯一一个从这场冰冻中得到好处的氏族。",
+            "spanish": "Una comunión más profunda con el hielo ha permitido a estas sirenas dominar sus capacidades gélidas. Esto me lleva a creer que los estigios son el único clan que se ha beneficiado de la Congelación.",
+            "chinese_traditional": "更深入地與冰雪交融，讓這些海妖精通了其冰凍的本質。這讓我相信冥河人可能是唯一能從冰凍中受益的氏族。",
+            "korean": "얼음과의 더욱 깊은 교감을 통해 이 사이렌 무리는 얼음의 냉기를 완벽히 다룰 수 있게 되었다. 이는 명계의 주민들이 얼음의 힘을 유일하게 혜택으로 삼은 종족이라는 확신을 갖게 만든다.",
+            "japanese": "氷とのさらなる交信により、セイレーンたちは氷の凍結の本質をマスターすることができた。このことから、ステュクス族は氷結の恩恵を受けた唯一の一族であると私は考えている。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ColdstrikeCilophyte.prefab",
+          "m_AssetGUID": "67349ca375b7cb843ad757ca7c5124b2"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "sweep",
+            "count": 1
+          }
+        ],
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-5e46f1c65c7ec112-7950aac77d7d92343b181181dec60509-v2",
+              "english": "Apply [spellweakness] [effect0.status0.power].",
+              "french": "Applique [spellweakness] [effect0.status0.power].",
+              "german": "Wende [spellweakness] [effect0.status0.power] an.",
+              "russian": "Накладывает [spellweakness] х[effect0.status0.power].",
+              "portuguese": "Aplica [spellweakness] [effect0.status0.power].",
+              "chinese": "施加 [spellweakness] [effect0.status0.power]。",
+              "spanish": "Añade [spellweakness] [effect0.status0.power].",
+              "chinese_traditional": "施加[spellweakness][effect0.status0.power]。",
+              "korean": "[spellweakness] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "[spellweakness] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_attacking",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "last_attacked_character",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "spell weakness",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 20,
+        "attackDamage": 3,
+        "subtypeKeys": [
+          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "StygianSirenChatterData_Female"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Jordan Thomas"
+}

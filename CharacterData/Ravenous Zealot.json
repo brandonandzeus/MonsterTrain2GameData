@@ -1,0 +1,76 @@
+{
+  "id": "HeavyT2_Zealot",
+  "name": "Ravenous Zealot",
+  "nameKey": {
+    "key": "CharacterData_nameKey-5d77b65153ebd0d4-e9d1de827d71f114db33af6c1cdcb2ea-v2",
+    "english": "Ravenous Zealot",
+    "french": "Zélote vorace",
+    "german": "Gefräßiger Fanatiker",
+    "russian": "Беспощадный зилот",
+    "portuguese": "Fanático Voraz",
+    "chinese": "贪婪的狂热者",
+    "spanish": "Fanático voraz",
+    "chinese_traditional": "貪婪狂熱者",
+    "korean": "굶주린 광신도",
+    "japanese": "ラヴェナス・ジーロット"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-9c34accdc4a5d36f-e9d1de827d71f114db33af6c1cdcb2ea-v2",
+      "english": "These angels that once used their bloodlust for power were the natural fit for Savagery’s blessing.",
+      "french": "Ces anges, qui ont jadis utilisé leur soif de sang pour obtenir plus de puissance, étaient tout désignés pour recevoir la bénédiction de Sauvagerie.",
+      "german": "Diese Engel verschafften sich einst durch Blutdurst Macht und eigneten sich perfekt für Grausamkeits Segen.",
+      "russian": "Ангелы, которых к власти привела кровожадность, как никто другой подходили для благословения Изувером.",
+      "portuguese": "Esses anjos, que antes usavam sua sede de sangue para obter poder, eram o ajuste natural para a bênção de Barbárie.",
+      "chinese": "这些曾经凭借嗜血获得力量的天使们，自然而然地就获得了野蛮泰坦的祝福。",
+      "spanish": "Estos ángeles, que ya utilizaban su sed de sangre como fuente de poder, eran los receptáculos idóneos para la bendición de Salvajismo.",
+      "chinese_traditional": "這些曾經利用自身嗜血天性來獲得力量的天使，自然值得擁有野性的祝福。",
+      "korean": "피를 취해 힘을 얻었던 이 천사들은 세비저리의 축복과 아주 잘 맞았다.",
+      "japanese": "かつて権力のために血への渇望を利用していたこの天使たちは、サベジャリーの祝福にふさわしい存在だった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_RavenousZealot.prefab",
+    "m_AssetGUID": "f7644770069f33b4492baa136747cef4"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "multistrike",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-1938ebc164813dce-e9d1de827d71f114db33af6c1cdcb2ea-v2",
+        "english": "+[effect0.power][attack].",
+        "french": "+[effect0.power][attack].",
+        "german": "+[effect0.power][attack].",
+        "russian": "+[effect0.power][attack].",
+        "portuguese": "+[effect0.power][attack].",
+        "chinese": "+[effect0.power][attack]。",
+        "spanish": "+[effect0.power][attack].",
+        "chinese_traditional": "+[effect0.power][attack]。",
+        "korean": "+[effect0.power][attack].",
+        "japanese": "+[effect0.power][attack]。"
+      },
+      "trigger": "on_any_unit_death_on_floor",
+      "effects": [
+        {
+          "effectStateName": "CardEffectBuffDamage",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramInt": 1
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 110,
+  "attackDamage": 3,
+  "subtypeKeys": [
+    "SubtypesData_HeavyT2"
+  ],
+  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Michael Sanchez"
+}

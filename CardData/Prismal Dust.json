@@ -1,0 +1,86 @@
+{
+  "id": "PrismalDust",
+  "name": "Prismal Dust",
+  "nameKey": {
+    "key": "CardData_nameKey-8905b5765cf97bad-60e64958fe11330488ec2df330078826-v2",
+    "english": "Prismal Dust",
+    "french": "Poussière prismatique",
+    "german": "Prismastaub",
+    "russian": "Призматическая пыль",
+    "portuguese": "Pó de Prisma",
+    "chinese": "棱晶之尘",
+    "spanish": "Polvo prismático",
+    "chinese_traditional": "稜鏡塵",
+    "korean": "편광석 가루",
+    "japanese": "プリズムの塵"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-01ff3111cc2fa91a-60e64958fe11330488ec2df330078826-v2",
+    "english": "Apply [trait1.statusmultiplier][x] [damageshield].",
+    "french": "Confère <b>Bouclier protecteur</b> [trait1.statusmultiplier][x].",
+    "german": "Wende [trait1.statusmultiplier][x] <nobr><b>Schadensschild</b></nobr> an.",
+    "russian": "Дается [damageshield] [x][trait1.statusmultiplier].",
+    "portuguese": "Concede [trait1.statusmultiplier][x] [damageshield].",
+    "chinese": "获得 [trait1.statusmultiplier][x] [damageshield]。",
+    "spanish": "Añade [damageshield] [trait1.statusmultiplier][x].",
+    "chinese_traditional": "施加[trait1.statusmultiplier][x][damageshield]。",
+    "korean": "[trait1.statusmultiplier][x] [damageshield]를 적용합니다.",
+    "japanese": "[trait1.statusmultiplier][x] [damageshield]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-1e7089ad5e230b4d-60e64958fe11330488ec2df330078826-v2",
+      "english": "The dust gathered from mining Prism stones can be collected to create a similar, though less effective, defensive support around the owner.",
+      "french": "La poussière produite lors du minage de pierres prismatiques peut être récoltée pour créer une protection, même si moins efficace que celle des pierres, autour de son utilisateur.",
+      "german": "Der beim Abbau von Prismasteinen anfallende Staub kann gesammelt werden, um einen weniger effektiven, aber ähnlichen Schutzeffekt um den Nutzer zu erzielen.",
+      "russian": "Пыль, собранная при добывании Призматических камней, позволяет создать вокруг использующего броню, пусть и менее прочную, чем сами камни.",
+      "portuguese": "A poeira gerada ao minerar prismas pode ser coletada para criar uma defesa similar, porém menos efetiva, ao redor do usuário.",
+      "chinese": "这种从棱晶石上收集的粉尘可以在使用者周围创造出类似的棱晶护盾，不过不像棱晶石的护盾那么坚固。",
+      "spanish": "El polvo resultante de extraer rocas de prisma se puede recolectar para crear una defensa similar, aunque menos efectiva, en torno a su usuario.",
+      "chinese_traditional": "採集稜鏡石時得來的這種粉塵，可以用來創造效果類似但較弱的防禦支持來圍繞著持有者。",
+      "korean": "편광석을 채굴하는 과정에서 쌓인 가루를 모아 두면, 보유자 주변에 효과는 낮지만 유사한 방어를 제공하는 지원 장치를 만들 수 있다.",
+      "japanese": "プリズム石の採掘で集められた粉塵は、性能は劣るものの似たような防御効果を発揮する。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_PrismalDust.prefab",
+    "m_AssetGUID": "543d1a4b15376ac4284a953aeb68172c"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    },
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 0
+        }
+      ],
+      "paramTrackedValue": "played_cost",
+      "paramInt": 1,
+      "paramTeamType": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Zihao Luo"
+}

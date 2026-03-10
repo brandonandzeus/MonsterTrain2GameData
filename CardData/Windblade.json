@@ -1,0 +1,128 @@
+{
+  "id": "Windblade",
+  "name": "Windblade",
+  "nameKey": {
+    "key": "CardData_nameKey-49ef388af1435748-03fda38beeb1f284f83a43c828169194-v2",
+    "english": "Windblade",
+    "french": "Aérolame",
+    "german": "Windklinge",
+    "russian": "Ветряной клинок",
+    "portuguese": "Lâmina Eólica",
+    "chinese": "风之刃",
+    "spanish": "Hoja del viento",
+    "chinese_traditional": "風刃",
+    "korean": "바람칼날",
+    "japanese": "ウィンドブレード"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a425258ff585f7e7-03fda38beeb1f284f83a43c828169194-v2",
+      "english": "None can escape the Windblade’s path, whose blade turns a breeze into a slice and a gust into a cut. For who can dodge the very air they breathe?",
+      "french": "Personne ne peut échapper à la trajectoire de l'aérolame, capable de transformer une brise en tranches. Car qui peut éviter l'air qu'il <nobr>respire ?</nobr>",
+      "german": "Niemand kann dem Pfad der Windklinge entrinnen. Sie schneidet und schlitzt schon mit einer leichten Brise. Wer kann schon vor der Luft fliehen, die wir atmen?",
+      "russian": "Никому не сбежать от этого клинка, превращающего ветер в лезвие, а дуновение — в глубокую рану. Ведь нельзя же уклониться от воздуха, которым дышишь.",
+      "portuguese": "Ninguém pode escapar do caminho da Lâmina Eólica, que transforma uma brisa ou uma rajada em um corte. Afinal, quem consegue desviar do próprio ar que respira?",
+      "chinese": "没人能逃过风之刃的轨迹，它的锋刃能让微风和狂风变成锋利的斩击。谁能躲过自己呼吸的空气呢？",
+      "spanish": "Nada puede escapar a la hoja del viento, cuyo filo convierte la brisa en un corte y el vendaval en un tajo. ¿Quién puede esquivar el aire que respira?",
+      "chinese_traditional": "沒有人能逃脫風刃的魔爪，它的刀刃將微風變成切口、將陣風變成鋒口。畢竟，沒有人能躲開空氣，大家還得呼吸。",
+      "korean": "산들바람을 얇게 자르고 돌풍을 가르는 바람칼날의 궤적은 누구도 피할 수 없다. 누군들 자신이 숨 쉬는 공기를 피할 수 있으리?",
+      "japanese": "ウィンドブレードの進路からは誰も逃れられない。その刃はそよ風も、突風をも武器と化する。呼吸している空気を避けられる者などいないのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_WindBlade.prefab",
+    "m_AssetGUID": "be38dbf9e7c57a54da6062c76d782f20"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Windblade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-a418c53b5e1547e2-9ffcc04b5a9d1504a9407c7bd3674b59-v2",
+          "english": "Windblade",
+          "french": "Aérolame",
+          "german": "Windklinge",
+          "russian": "Ветряной клинок",
+          "portuguese": "Lâmina Eólica",
+          "chinese": "风之刃",
+          "spanish": "Hoja del viento",
+          "chinese_traditional": "風刃",
+          "korean": "바람칼날",
+          "japanese": "ウィンドブレード"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-3b8a08670195bea6-9ffcc04b5a9d1504a9407c7bd3674b59-v2",
+              "english": "Gain [valor] [effect0.status0.power].",
+              "french": "Octroie [valor] [effect0.status0.power].",
+              "german": "Erhalte [valor] [effect0.status0.power].",
+              "russian": "Дает [effect0.status0.power] х[valor].",
+              "portuguese": "Recebe [valor] [effect0.status0.power].",
+              "chinese": "获得 [valor] [effect0.status0.power]。",
+              "spanish": "Añade [valor] [effect0.status0.power].",
+              "chinese_traditional": "獲得[valor][effect0.status0.power]。",
+              "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[valor] [effect0.status0.power]を得る。"
+            },
+            "trigger": "on_shift",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "valor",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-7bae1db535932d86-9ffcc04b5a9d1504a9407c7bd3674b59-v2",
+              "english": "Trigger [shift].",
+              "french": "Déclenche [shift].",
+              "german": "Löse [shift] aus.",
+              "russian": "Активирует [shift].",
+              "portuguese": "Aciona [shift].",
+              "chinese": "触发 [shift]。",
+              "spanish": "Activa [shift].",
+              "chinese_traditional": "觸發[shift]。",
+              "korean": "[shift] 효과를 발동합니다.",
+              "japanese": "[shift]を発動する。"
+            },
+            "trigger": "post_combat",
+            "effects": [
+              {
+                "effectStateName": "CardEffectPlayUnitTrigger",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramTrigger": "on_shift"
+              }
+            ]
+          }
+        ]
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/Windblade/FX_Windblade.prefab",
+          "m_AssetGUID": "256dcb89a7fb4344193df96531d45e70"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Aubrey Kim"
+}

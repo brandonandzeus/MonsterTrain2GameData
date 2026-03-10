@@ -1,0 +1,97 @@
+{
+  "id": "Boss_SoulSavior_R1_TrainBoss_Harvester",
+  "name": "Korin the Judged",
+  "nameKey": {
+    "key": "CharacterData_nameKey-eb4c3ce08429cc8f-cab57000ec2af8545966a202fb90c09b-v2",
+    "english": "Korin the Judged",
+    "french": "Korin la Jugée",
+    "german": "Korin die Verurteilte",
+    "russian": "Корин Осужденная",
+    "portuguese": "Korin, a Juíza",
+    "chinese": "受审者科林",
+    "spanish": "Korin, la Juzgada",
+    "chinese_traditional": "被審判的科琳",
+    "korean": "심판받은 자 코린",
+    "japanese": "審判されしコリン"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-186a425b21c73d6f-cab57000ec2af8545966a202fb90c09b-v2",
+      "english": "When the Mother sought to grow a partner of moral conviction, She used the form of Korin, mistaking Savagery-enforced bloodlust for a fierce strength of character.",
+      "french": "Lorsque la Mère voulut engendrer un partenaire doté de convictions morales, Elle utilisa la forme de Korin, confondant la soif de sang suscitée par Sauvagerie avec une force de caractère farouche.",
+      "german": "Als die Mutter einen Partner mit der gleichen moralischen Überzeugung zu erwählen trachtete, nutzte Sie die Gestalt von Korim und verwechselte dabei Grausamkeits-induzierten Blutdurst mit einem bitteren Charakterzug.",
+      "russian": "Когда Матери понадобился спутник с твердой нравственной опорой, она придала ему облик Корин, ошибочно приняв навязанную Изувером кровожадность за подлинную силу характера.",
+      "portuguese": "Quando a Mãe procurou cultivar um parceiro de convicção moral, Ela usou a forma de Korin, confundindo a sede de sangue imposta pela Barbárie com uma força de caráter feroz.",
+      "chinese": "当母亲想要培养出拥有道德信念的同伴时，她选择了科林的形体，因为她错把野蛮泰坦施加的嗜血欲望当成了勇猛坚强的性格特质。",
+      "spanish": "Cuando la Madre quiso cultivar a un compañero de su misma convicción moral, utilizó a Korin, confundiendo la sed de sangre que le infundía Salvajismo por un carácter fiero.",
+      "chinese_traditional": "當母親試圖培育一位具備道德信念的伴侶時，她借用了科琳的形態，卻誤將那因野性驅使的嗜血，當成了堅毅的品格。",
+      "korean": "어머니가 도덕적 신념을 지닌 동반자를 키우고자 했을 때, 그녀는 코린의 형상을 빌렸다. 그러나 세비저리가 강요한 피의 갈망을, 강인한 인격의 힘으로 오인하고 말았다.",
+      "japanese": "マザーは、道徳的信念の賛同者を探す際にコリンの姿を取った。非常に力強い性格の持ち主だと考えたのだが、それは誤りだった。サベジャリーの影響を受けた血への渇望だったのだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_KorinTheJudge_SoulSavior.prefab",
+    "m_AssetGUID": "303a56e508cca674194bef5a1673f64d"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-74814d9cd7a69833-cab57000ec2af8545966a202fb90c09b-v2",
+        "english": "[descend] all friendly units to this floor and [retreat].",
+        "french": "[descend] de tous les alliés à ce niveau et [retreat].",
+        "german": "Lass alle verbündeten Einheiten auf diese Ebene [descend] und [retreat] anwenden.",
+        "russian": "[descend] всех союзников на этот этаж, а затем [retreat].",
+        "portuguese": "<b>Derruba</b> todas as unidades aliadas para esse andar e <b>Recua</b>.",
+        "chinese": "使本层所有友方单位 [descend] 并 [retreat]。",
+        "spanish": "<b>Desciende</b> a todas las unidades aliadas a este piso y se <b>Retira</b>.",
+        "chinese_traditional": "所有友方單位[descend]至此樓層並[retreat]。",
+        "korean": "모든 아군 유닛을 이 층으로 [descend]하고 [retreat]시킵니다.",
+        "japanese": "すべての味方ユニットをこのフロアに[descend]させ、[retreat]する。"
+      },
+      "trigger": "on_spawn_not_from_card",
+      "effects": [
+        {
+          "effectStateName": "CardEffectBump",
+          "targetMode": "tower",
+          "targetTeamType": "heroes",
+          "paramInt": -2
+        },
+        {
+          "effectStateName": "CardEffectFloorRearrange",
+          "targetMode": "self",
+          "targetTeamType": "heroes",
+          "paramInt": 1
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 2400,
+    "endlessAttack": 9
+  },
+  "size": 4,
+  "health": 400,
+  "isMiniboss": true,
+  "deathType": "large",
+  "attackDamage": 12,
+  "bossTitanAffinity": "lifemother",
+  "subtypeKeys": [
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss4_SoulSaviorKorin_ChatterData",
+  "artistAttribution": "Merilliza Chan"
+}

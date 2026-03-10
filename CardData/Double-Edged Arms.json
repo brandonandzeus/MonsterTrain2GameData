@@ -1,0 +1,74 @@
+{
+  "id": "DoubleEdgedArms",
+  "name": "Double-Edged Arms",
+  "nameKey": {
+    "key": "CardData_nameKey-8df5d314279a2548-9d14a2c3eb330714da95b157a52633ce-v2",
+    "english": "Double-Edged Arms",
+    "french": "Bras à doubles tranchants",
+    "german": "Zweischneidige Waffen",
+    "russian": "Двуклешник",
+    "portuguese": "Braços de Dois Gumes",
+    "chinese": "双刃臂",
+    "spanish": "Pinzas de doble filo",
+    "chinese_traditional": "雙刃武器",
+    "korean": "양날검 팔",
+    "japanese": "両刃のペンチ"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a3db323a388c013e-9d14a2c3eb330714da95b157a52633ce-v2",
+      "english": "Inspired by the Hell Lobster’s own appendages, these pincers can grip, cut, and twist the most stubborn of materials.",
+      "french": "Inspirées des appendices du homard, ces pinces peuvent saisir, couper et tordre les matériaux les plus rigides.",
+      "german": "Diese Scheren wurden nach Inspiration des Höllenhummers erschaffen und können selbst zähstes Material greifen, schneiden und drehen.",
+      "russian": "Эти клешни, вдохновленные конечностями адского омара, могут захватывать, резать и гнуть даже самые прочные материалы.",
+      "portuguese": "Inspiradas nos próprios apêndices da Lagosta do Inferno, essas pinças podem agarrar, cortar e torcer os materiais complicados.",
+      "chinese": "这些钳子的灵感来源于地狱龙虾自身的附肢，可以抓取、切割，还可以扭曲质地最为坚实的材料。",
+      "spanish": "Inspiradas en los apéndices de las langostas infernales, estas pinzas agarran, cortan y retuercen hasta los materiales más resistentes.",
+      "chinese_traditional": "以地獄龍蝦自身的附肢為靈感，這些鉗子可以抓住、切割和扭轉最頑固的材料。",
+      "korean": "지옥 바닷가재의 지느러미에서 영감을 받아 만든 이 집게는 가장 단단한 재료를 잡고, 자르고, 비틀어버릴 수 있다.",
+      "japanese": "ヘル・ロブスターの脚からヒントを得たこのペンチは、どんなに頑固な素材でも掴み、切り、捻じることができる。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "rare",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_DoubleEdgedBearersArms.prefab",
+    "m_AssetGUID": "65ea820d54083d94f894046d77da4c31"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitGraftedEquipment",
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "DoubleEdgedArms_Upgrade",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "multistrike",
+            "count": 1
+          }
+        ],
+        "bonusDamage": 10
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/DoubleEdged/FX_DoubleEdge.prefab",
+          "m_AssetGUID": "87c245f47e5c92949bcbc0cb76e6f81e"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "ignoreWhenCountingMastery": true,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "Echoes_CorruptPlayerUnits",
+  "name": "Agony",
+  "nameKey": {
+    "key": "MutatorData_nameKey-e5dde88dac9f0ce2-f1d21e11877733946a6b144447b8508f-v2",
+    "english": "Agony",
+    "french": "Calvaire",
+    "german": "Qual",
+    "russian": "Агония",
+    "portuguese": "Agonia",
+    "chinese": "苦痛",
+    "spanish": "Agonía",
+    "chinese_traditional": "痛苦",
+    "korean": "고통",
+    "japanese": "苦悶"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-43988c3853b30e25-f1d21e11877733946a6b144447b8508f-v2",
+    "english": "All your units gain [corruption] [effect0.power] after combat.",
+    "french": "Toutes vos unités gagnent [corruption] [effect0.power] à la fin du combat.",
+    "german": "Alle deine Einheiten erhalten nach dem Kampf [corruption] [effect0.power].",
+    "russian": "На каждого союзника накладывается [corruption] х[effect0.power] после битвы.",
+    "portuguese": "Todas as suas unidades recebem [corruption] [effect0.power] após o combate.",
+    "chinese": "战斗结束后，你的所有单位获得 [corruption] [effect0.power]。",
+    "spanish": "Todas tus unidades añaden [corruption] [effect0.power] tras el combate.",
+    "chinese_traditional": "你的所有單位在戰鬥後獲得[corruption][effect0.power]。",
+    "korean": "모든 아군 유닛이 교전 후 [corruption] [effect0.power]을 획득합니다.",
+    "japanese": "戦闘後にすべての自ユニットが[corruption] [effect0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "MutatorData_descriptionKey-7bca644e9761b092-f1d21e11877733946a6b144447b8508f-v2",
+            "english": "Gain Corruption [effect0.status0.power].",
+            "french": "Octroie Corruption [effect0.status0.power].",
+            "german": "Erhalte [effect0.status0.power] Verderbnis.",
+            "russian": "Накладывается Скверна х[effect0.status0.power].",
+            "portuguese": "Aplica Corrupção [effect0.status0.power].",
+            "chinese": "获得腐化 [effect0.status0.power]。",
+            "spanish": "Añade corrupción [effect0.status0.power].",
+            "chinese_traditional": "獲得腐化[effect0.status0.power]。",
+            "korean": "타락 [effect0.status0.power]을 획득합니다.",
+            "japanese": "[effect0.status0.power]の堕落を得る。"
+          },
+          "trigger": "post_combat",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramStatusEffects": [
+                {
+                  "statusId": "corruption",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramBool": true
+    }
+  ],
+  "boonValue": -7
+}

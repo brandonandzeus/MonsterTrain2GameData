@@ -1,0 +1,89 @@
+{
+  "id": "Boss_Level4_EmberGranter",
+  "name": "Ajax the Unyielding",
+  "nameKey": {
+    "key": "CharacterData_nameKey-68eab0c5af54b571-1e21f53ab4c23fb46838720b9ee15676-v2",
+    "english": "Ajax the Unyielding",
+    "french": "Ajax l'Inflexible",
+    "german": "Ajax der Unnachgiebige",
+    "russian": "Аякс Непреклонный",
+    "portuguese": "Ajax, o Implacável",
+    "chinese": "不屈者阿贾克斯",
+    "spanish": "Ájax el Firme",
+    "chinese_traditional": "『不屈者』艾賈克斯",
+    "korean": "불굴의 아약스",
+    "japanese": "不屈のエイジャックス"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-2c61a98f61676248-1e21f53ab4c23fb46838720b9ee15676-v2",
+      "english": "Ajax believed that the greatest sins were the ones that rippled through generations. This made him made an easy target for Entropy, who has a similarly single minded view on the power of time.",
+      "french": "Ajax croyait que les pires péchés étaient ceux qui se répercutaient d'une génération à l'autre. C'était donc une cible facile pour Entropie, qui partage la même vision étroite du pouvoir du temps.",
+      "german": "Ajax glaubte, dass die größten Sünden jene sind, die sich über Generationen hinweg ausbreiten. Das machte ihn zu einem leichten Ziel für Entropie, der eine ähnlich zielstrebige Sicht auf die Macht der Zeit hat.",
+      "russian": "Аякс считал, что величайшие грехи передаются из поколения в поколение. Он стал легкой добычей для Энтропии, также убежденном в могуществе времени.",
+      "portuguese": "Ajax acreditava que os maiores pecados eram aqueles que perduravam por gerações. Isso fez dele um alvo fácil para a Entropia, que tem uma visão igualmente obstinada sobre o poder do tempo.",
+      "chinese": "阿贾克斯认为能影响后世的才是最深重的罪孽。这导致他一下子就成了混乱泰坦的目标，因为混乱泰坦对于时间的力量也持类似的观点。",
+      "spanish": "Ájax creía que los peores pecados eran los que repercutían en generaciones futuras. Esto lo convirtió en objetivo fácil para Entropía, que tenía una opinión similar sobre el poder del tiempo.",
+      "chinese_traditional": "艾賈克斯長期以來認為最大的罪惡是世代相傳的那些，這使他成為熵的囊中之物，因為熵對時間的力量也持有類似的偏執觀點。",
+      "korean": "아약스는 대대로 이어지는 죄야말로 가장 중대한 죄악이라 여겼다. 이러한 확고한 신념은, 시간의 힘에 대해 비슷한 시각을 지닌 엔트로피에게 있어 그를 쉽게 꿰뚫을 수 있는 표적으로 만들었다.",
+      "japanese": "エイジャックスはかねてより、最大の罪とは世代を超えて波及するものだと信じていた。そのため、同じように時間の力を一途に信じるエントロピーにとって格好の標的となった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_EntropicParagon.prefab",
+    "m_AssetGUID": "4b67af7004c777644a8a627439b3160a"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-1518713be73c74c8-1e21f53ab4c23fb46838720b9ee15676-v2",
+        "english": "Apply [sap] [effect0.status0.power] to your units.",
+        "french": "Applique [sap] [effect0.status0.power] à vos unités.",
+        "german": "Wende [sap] [effect0.status0.power] auf deine Einheiten an.",
+        "russian": "Накладывает [sap] х[effect0.status0.power] на ваших бойцов.",
+        "portuguese": "Aplica [sap] [effect0.status0.power] às suas unidades.",
+        "chinese": "对你的所有单位施加 [sap] [effect0.status0.power]。",
+        "spanish": "Añade [sap] [effect0.status0.power] a tus unidades.",
+        "chinese_traditional": "對你的單位施加[sap][effect0.status0.power]。",
+        "korean": "내 유닛들에게 [sap] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "自軍のユニットに[sap] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_turn_begin",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramStatusEffects": [
+            {
+              "statusId": "debuff",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 2400,
+    "endlessAttack": 12
+  },
+  "size": 4,
+  "health": 550,
+  "isMiniboss": true,
+  "deathType": "large",
+  "attackDamage": 9,
+  "subtypeKeys": [
+    "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss4_Ajax_ChatterData",
+  "artistAttribution": "Herrick Ong"
+}

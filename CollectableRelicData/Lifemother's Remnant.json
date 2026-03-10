@@ -1,0 +1,70 @@
+{
+  "id": "MothersRemnant3Relic",
+  "name": "Lifemother's Remnant",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-ccd375c6eb3dfe53-2ecae9bd63769f44098c13c3e83a497a-v2",
+    "english": "Lifemother's Remnant",
+    "french": "Vestige de Mère Nature",
+    "german": "Relikt der Lebensmutter",
+    "russian": "Сувенир Матери-природы",
+    "portuguese": "Vestígio da Genetriz",
+    "chinese": "生命之母的残骸",
+    "spanish": "Resto de la Madre Vida",
+    "chinese_traditional": "生命之母的殘餘",
+    "korean": "생명의 어머니의 잔재",
+    "japanese": "ライフマザーの残滓"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-8d00fe2d07f56c21-2ecae9bd63769f44098c13c3e83a497a-v2",
+    "english": "Create a permanent copy of the first non-champion card played each turn.",
+    "french": "Créez une copie permanente de la première carte hors champion jouée à chaque tour.",
+    "german": "Kopiere die erste ausgespielte Nicht-Champion-Karte jedes Zuges permanent.",
+    "russian": "Каждый ход создается постоянная копия первой сыгранной карты, кроме карты героя.",
+    "portuguese": "Cria uma cópia permanente da primeira carta que não seja Campeão jogada a cada turno.",
+    "chinese": "为每回合打出的第一张非勇者卡牌创建一个永久复制体。",
+    "spanish": "Crea una copia permanente de la primera carta que no sea de campeón que juegas cada turno.",
+    "chinese_traditional": "每回合永久複製第一張打出的非勇士卡牌。",
+    "korean": "매 턴 처음 사용한 영웅 외 카드를 영구히 복사합니다.",
+    "japanese": "各ターンで最初にプレイされた非チャンピオンカードの永続的な複製を生成する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-dfbf91dc08fc4b0d-2ecae9bd63769f44098c13c3e83a497a-v2",
+      "english": "“There are countless records of Angels and Demons claiming they heard whispers from the Lifemother from beneath the roots and that She cries from her prison. I’ve searched for traces of Her power but have yet to find proof. That is, until today.”—The Historian",
+      "french": "<nobr>« Les</nobr> archives regorgent de récits d'anges et de démons affirmant avoir entendu Mère Nature murmurer et pleurer depuis sa prison, sous les racines. J'ai cherché des traces de son pouvoir, sans jamais trouver de preuves. Jusqu'à <nobr>aujourd'hui. »</nobr> — L'historien",
+      "german": "„Es gibt zahllose Berichte von Engeln und Dämonen, die behaupten, das Flüstern der Lebensmutter unter den Wurzeln gehört zu haben. Wie sie in ihrem Gefängnis weint. Ich habe nach Spuren ihrer Macht gesucht, aber noch keinen Beweis dafür gefunden. Bis heute.“ – Der Historiker",
+      "russian": "Существует бесчисленное количество записей ангелов и демонов, утверждающих, что они слышали шепот Матери-природы, как Она плачет, находясь в заточении. Я искал следы Ее силы, но пока не нашел доказательств». — Историк",
+      "portuguese": "“Existem inúmeros registros de Anjos e Demônios alegando ter ouvido sussurros da Genetriz vindos de baixo das raízes e que Ela chora em sua prisão. Eu procurei por vestígios do poder Dela, mas ainda não encontrei provas. Isto é, até hoje.” — O Historiador",
+      "chinese": "“无数记载里提到有天使和恶魔声称自己听到了生命之母来自根须之下的低语，以及在她在监狱中的哭泣声。我一直在搜寻她力量的痕迹，但尚未找到证据。今天终于给我找到了。”——史学家",
+      "spanish": "«Hay cientos de registros de ángeles y demonios afirmando escuchar susurros de la Madre Vida bajo las raíces, afirmando que llora desde Su prisión. He buscado rastros de Su poder, pero no he encontrado pruebas. Eso cambia hoy». —El Historiador",
+      "chinese_traditional": "「無數的文獻記載著，天使與惡魔都曾聲稱，他們從樹根深處聽見了『生命之母』的低語，訴說著祂在囚牢中的哭泣。我曾四處尋覓祂力量的蹤跡，卻始終一無所獲。直到今天。」——史官",
+      "korean": "\"수많은 기록에는 천사들과 악마들이 뿌리 아래에서 생명의 어머니의 속삭임을 들었으며, 그녀가 감옥에서 울부짖는다고 주장한 내용이 담겨 있다. 나는 그녀의 힘의 흔적을 찾아 헤매었으나, 아직 증거를 발견하지 못했다. 적어도 오늘까지는 그랬다.\"—역사가",
+      "japanese": "「根の下の牢獄の中から嘆く、ライフマザーの囁きが聞こえるとの天使や悪魔の証言が数え切れないほど残されている。彼女の力の痕跡を探してみたが、それを証明できるものは未だに発見できていない。だが、それも今日までのことだ」—歴史家"
+    }
+  ],
+  "rarity": "champion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCopyCardOnCardPlay",
+      "paramCardType": "invalid",
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "equal",
+            "less_than"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramInt": 1,
+      "paramBool": true,
+      "paramBool2": true
+    }
+  ],
+  "fromStoryEvent": true
+}

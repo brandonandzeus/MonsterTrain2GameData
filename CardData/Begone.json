@@ -1,0 +1,74 @@
+{
+  "id": "Begone",
+  "name": "Begone",
+  "nameKey": {
+    "key": "CardData_nameKey-677fdc8a65180254-299ef48fe8f43e349a8d15e5c5c9ccb9-v2",
+    "english": "Begone",
+    "french": "<nobr>Disparaissez !</nobr>",
+    "german": "Hinfort",
+    "russian": "Прочь",
+    "portuguese": "Expulsão",
+    "chinese": "斥退",
+    "spanish": "Fuera",
+    "chinese_traditional": "退散",
+    "korean": "사라져라!",
+    "japanese": "一喝"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-677e01d447fd1d07-299ef48fe8f43e349a8d15e5c5c9ccb9-v2",
+    "english": "[retreat] the front enemy unit. Apply [meleeweakness] [effect1.status0.power] to enemy units.",
+    "french": "[retreat] de l'ennemi en 1re ligne. Inflige [meleeweakness] [effect1.status0.power] aux unités ennemies.",
+    "german": "Wende [retreat] auf die vorderste gegnerische Einheit an. Wende [meleeweakness] [effect1.status0.power] auf gegnerische Einheiten an.",
+    "russian": "[retreat] переднего вражеского бойца. Накладывает на врагов [meleeweakness] х[effect1.status0.power].",
+    "portuguese": "Faz a unidade inimiga à frente [retreat]. Aplica [meleeweakness] [effect1.status0.power] às unidades inimigas.",
+    "chinese": "[retreat] 前排敌方单位。对所有敌方单位施加 [meleeweakness] [effect1.status0.power]。",
+    "spanish": "[retreat] a la primera unidad enemiga. Añade [meleeweakness] [effect1.status0.power] a las unidades enemigas.",
+    "chinese_traditional": "[retreat]前排敵方單位。對敵方單位施加[meleeweakness][effect1.status0.power]。",
+    "korean": "전열 적 유닛을 [retreat]시킵니다. 적 유닛들에게 [meleeweakness] [effect1.status0.power]을 적용합니다.",
+    "japanese": "前列の敵ユニットを[retreat]させる。敵ユニットに[meleeweakness] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-500e8d11fed3a2df-299ef48fe8f43e349a8d15e5c5c9ccb9-v2",
+      "english": "“Will you stop your preaching?!” cried Fel. With a single flutter of her wings, she sent a dozen angels tumbling to the ground.",
+      "french": "<nobr>« Faites</nobr> cesser ce <nobr>prêche ! »</nobr> s'écria Fel. D'un seul battement d'ailes, elle projeta une dizaine d'anges à terre.",
+      "german": "„Hört ihr wohl auf zu predigen?!“, schrie Fel aus. Mit einem einzigen Flügelschlag ließ sie ein Dutzend Engel zu Boden donnern.",
+      "russian": "«Бросайте свои проповеди!»— вскричала Фэл и одним взмахом крыльев свалила с ног дюжину ангелов.",
+      "portuguese": "“Será que podem parar de orar?”, gritou Fel. Com um simples bater de suas asas, ela fez com que uma dúzia de anjos caísse no chão.",
+      "chinese": "“你们能不能别说教了？！”菲尔喊道。她一次振翅，就把十几个天使掀翻在地。",
+      "spanish": "«¡¿Queréis dejar de darme la tabarra?!», gritó Fel. Con un solo aleteo, envió a una veintena de ángeles al suelo.",
+      "chinese_traditional": "你能不能別再說教了？！費爾喊道。她輕輕一振翅膀，就讓一群天使摔倒在地。",
+      "korean": "“설교는 그만두겠나?!” 펠이 외치며 날개를 한 번 휘두르자, 열두 명의 천사가 땅에 쓰러졌다.",
+      "japanese": "「説教はやめてくれる！？」フェルは叫んだ。翼を一度羽ばたかせるだけで、何人もの天使たちが倒れ込んだ。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Begone.prefab",
+    "m_AssetGUID": "07150463b4b22744b861f7ba1daa4dc3"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "front_in_room",
+      "targetTeamType": "heroes",
+      "paramInt": 1
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "melee weakness",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "SeleneandSilentBuff",
+  "name": "Lunar Lantern",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-9121040d51ee286e-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+    "english": "Lunar Lantern",
+    "french": "Lanterne lunaire",
+    "german": "Mondlaterne",
+    "russian": "Лунный фонарь",
+    "portuguese": "Lanterna Lunar",
+    "chinese": "月亮灯",
+    "spanish": "Farol lunar",
+    "chinese_traditional": "月亮燈籠",
+    "korean": "달빛 랜턴",
+    "japanese": "ルナ・ランタン"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-d95710a2fa35e84f-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+    "english": "<b>Selene</b> units get +[effect1.upgrade.bonusdamage][attack] during [fullmoon]. <b>Silent</b> units get +[effect0.upgrade.bonusdamage][attack] during [newmoon].",
+    "french": "Les <b>Sélènes</b> gagnent +[effect1.upgrade.bonusdamage][attack] pendant la [fullmoon]. Les <b>Silencieux</b> gagnent +[effect0.upgrade.bonusdamage][attack] pendant la [newmoon].",
+    "german": "<b>Selene</b>-Einheiten erhalten +[effect1.upgrade.bonusdamage][attack] bei [fullmoon]. <b>Stille</b>-Einheiten erhalten +[effect0.upgrade.bonusdamage][attack] bei [newmoon].",
+    "russian": "<b>Селены</b> получают +[effect1.upgrade.bonusdamage][attack] в [fullmoon]. <b>Молчуны</b> получают +[effect0.upgrade.bonusdamage][attack] в [newmoon].",
+    "portuguese": "As unidades de <b>Selenes</b> recebem +[effect1.upgrade.bonusdamage][attack] durante a [fullmoon]. As unidades de <b>Silenciosos</b> recebem +[effect0.upgrade.bonusdamage][attack] durante a [newmoon].",
+    "chinese": "[fullmoon]期间，<b>月神女</b>单位获得 +[effect1.upgrade.bonusdamage][attack]。[newmoon]期间，<b>寂静者</b>单位获得 +[effect0.upgrade.bonusdamage][attack]。",
+    "spanish": "Las unidades <b>selenitas</b> añaden +[effect1.upgrade.bonusdamage][attack] durante la [fullmoon]. Las unidades de <b>silenciosos</b> añaden +[effect0.upgrade.bonusdamage][attack] durante la [newmoon].",
+    "chinese_traditional": "<b>塞勒涅</b>單位在[fullmoon]期間獲得+[effect1.upgrade.bonusdamage][attack]。<b>沉默</b>單位在[newmoon]期間獲得+[effect0.upgrade.bonusdamage][attack]。",
+    "korean": "<b>세레네</b> 유닛은 [fullmoon] 동안 +[effect1.upgrade.bonusdamage][attack]을 획득합니다. <b>묵언자</b> 유닛은 [newmoon] 동안 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+    "japanese": "[fullmoon]中に<b>セレーネ</b>ユニットが+[effect1.upgrade.bonusdamage][attack]を得る。[newmoon]中に<b>サイレント</b>ユニットが+[effect0.upgrade.bonusdamage][attack]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-4eaa63aa19bcda67-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+      "english": "A lantern that illuminates depending on the phase of the moon.",
+      "french": "Une lanterne qui s'allume en fonction de la phase de la lune.",
+      "german": "Eine Laterne, die je nach Mondphase leuchtet.",
+      "russian": "Фонарь, который светит в соответствии с фазами луны.",
+      "portuguese": "Uma lanterna que se ilumina de acordo com a fase da lua.",
+      "chinese": "一种光亮会随着月相变化的灯笼。",
+      "spanish": "Un farol cuya intensidad cambia según la fase de la luna.",
+      "chinese_traditional": "一盞根據月相來照明的燈籠。",
+      "korean": "달의 위상에 따라 빛을 발하는 등불.",
+      "japanese": "月の満ち欠けによって光を放つランタン。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "additionalTooltips": [
+        {
+          "trigger": "on_moon_lit",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "SilentBuff_Atk_UpgradeData",
+        "isUnique": true,
+        "bonusDamage": 20
+      },
+      "paramSourceTeam": "monsters",
+      "paramInt2": 1,
+      "paramCharacterSubtype": "SubtypesData_Silent",
+      "paramTrigger": "on_moon_shade"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "paramCardUpgradeData": {
+        "id": "SilentBuff_Atk_UpgradeData",
+        "isUnique": true,
+        "bonusDamage": 20
+      },
+      "paramSourceTeam": "monsters",
+      "paramInt2": 1,
+      "paramCharacterSubtype": "SubtypesData_Silent",
+      "paramBool": true,
+      "paramTrigger": "on_moonshade_lost"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "additionalTooltips": [
+        {
+          "trigger": "on_moon_shade",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "SeleneBuff_Atk_UpgradeData",
+        "isUnique": true,
+        "bonusDamage": 20
+      },
+      "paramSourceTeam": "monsters",
+      "paramInt2": 1,
+      "paramCharacterSubtype": "SubtypesData_Selene",
+      "paramTrigger": "on_moon_lit"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "paramCardUpgradeData": {
+        "id": "SeleneBuff_Atk_UpgradeData",
+        "isUnique": true,
+        "bonusDamage": 20
+      },
+      "paramSourceTeam": "monsters",
+      "paramInt2": 1,
+      "paramCharacterSubtype": "SubtypesData_Selene",
+      "paramBool": true,
+      "paramTrigger": "on_moonlit_lost"
+    }
+  ],
+  "unlockLevel": 6
+}

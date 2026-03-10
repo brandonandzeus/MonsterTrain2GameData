@@ -1,0 +1,83 @@
+{
+  "id": "SoulSavior_UnitUpgradeClanLazarusLeagueAddReanimate",
+  "name": "Frankenslab",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-300f00912149ef11-9461aebce28ac5e469d907e522441312-v2",
+    "english": "Frankenslab",
+    "french": "Gemme de réanimation",
+    "german": "Frankensteins Platte",
+    "russian": "Франкенпласт",
+    "portuguese": "Plakenstein",
+    "chinese": "弗兰肯石板",
+    "spanish": "Frankenlosa",
+    "chinese_traditional": "科學怪人石板",
+    "korean": "봉합의 서판",
+    "japanese": "フランケンの原石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-6fb1e8ef05cdc38f-9461aebce28ac5e469d907e522441312-v2",
+    "english": "Upgrade a unit with [undying] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec [undying] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit [undying] [effect0.upgrade.status0.power].",
+    "russian": "Усиление бойца: [undying] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com [undying] [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 [undying] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con [undying] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[undying][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드함과 동시에 [undying] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[undying] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "SoulSavior_AddReanimateLazarusLeague",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-7d7fa112830feda7-e285cdf84966534419ad00241990a3a9-v2",
+          "english": "Frankenslab",
+          "french": "Gemme de réanimation",
+          "german": "Frankensteins Platte",
+          "russian": "Франкенпласт",
+          "portuguese": "Plakenstein",
+          "chinese": "弗兰肯石板",
+          "spanish": "Frankenlosa",
+          "chinese_traditional": "科學怪人石板",
+          "korean": "봉합의 서판",
+          "japanese": "フランケンの原石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-bcfd705b2ec96fd8-e285cdf84966534419ad00241990a3a9-v2",
+          "english": "Gain [undying] [status0.power].",
+          "french": "Octroie [undying] [status0.power].",
+          "german": "Erhalte [undying] [status0.power].",
+          "russian": "Дается [undying] х[status0.power].",
+          "portuguese": "Recebe [undying] [status0.power].",
+          "chinese": "获得 [undying] [status0.power]。",
+          "spanish": "Añade [undying] [status0.power].",
+          "chinese_traditional": "獲得[undying][status0.power]。",
+          "korean": "[undying] [status0.power] 효과를 획득합니다.",
+          "japanese": "[undying] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "undying",
+            "count": 2
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

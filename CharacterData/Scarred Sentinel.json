@@ -1,0 +1,86 @@
+{
+  "id": "HeavyT2_DefenseOnAdvance",
+  "name": "Scarred Sentinel",
+  "nameKey": {
+    "key": "CharacterData_nameKey-10ae8ca9cfe2783c-e38d190810f44f74e89a21cab6032c5a-v2",
+    "english": "Scarred Sentinel",
+    "french": "Sentinelle balafrée",
+    "german": "Vernarbter Wächter",
+    "russian": "Шрамоносец",
+    "portuguese": "Sentinela Desfigurada",
+    "chinese": "伤痕累累的哨兵",
+    "spanish": "Centinela desfigurado",
+    "chinese_traditional": "受傷哨兵",
+    "korean": "상처입은 감시병",
+    "japanese": "傷跡のセンチネル"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f0e5d0593b6faf2a-e38d190810f44f74e89a21cab6032c5a-v2",
+      "english": "These steadfast knights defend the upper reaches of Heaven. Forged through relentless trials, they bear their training scars with pride. No enemy’s strike can match the pain they’ve already received.",
+      "french": "Ces chevaliers inébranlables défendent les hautes sphères du paradis. Forgés par des épreuves implacables, ils portent fièrement les cicatrices de leur entraînement. Aucun coup ennemi ne peut égaler la douleur qu'ils ont déjà endurée.",
+      "german": "Diese unerschütterlichen Ritter wachen über die oberen Bereiche des Himmels. Sie tragen die Narben ihrer unerbittlichen Prüfungen mit Stolz. Kein Schlag kommt dem Schmerz gleich, den sie bereits erlitten haben.",
+      "russian": "Эти храбрые рыцари защищают верхушку Рая. Закаленные в бесконечных испытаниях, они гордо носят шрамы, полученные во время учений: ни один вражеский удар не сравнится с той болью, которую они уже испытали.",
+      "portuguese": "Esses cavaleiros inabaláveis defendem os limites superiores do Céu. Forjados por meio de provações implacáveis, eles carregam suas cicatrizes do treinamento com muito orgulho. Nenhum ataque inimigo pode se igualar à dor que já passaram.",
+      "chinese": "这些坚定的骑士守卫着天堂的最高处。他们经过各种无情的磨练，骄傲地带着训练时留下的伤痕。没有任何敌人的攻击，能比得上他们已经承受过的痛苦。",
+      "spanish": "Estos caballeros inquebrantables defienden las regiones más elevadas del Cielo. Tras la brutalidad de su entrenamiento, muestran sus cicatrices con orgullo. Ningún enemigo puede infligirles más daño del que ya han sufrido.",
+      "chinese_traditional": "這些堅定的騎士守衛著天堂的高處。他們經過無情的訓練打磨，為自己訓練時的傷痕感到自豪。沒有敵人的打擊能比得上他們所承受過的痛苦。",
+      "korean": "신념으로 가득한 이 기사단은 천상의 상층부를 지킨다. 끝없는 시련을 거치며 단련을 거듭한 이들은 훈련 중에 얻은 상처를 긍지로 여긴다. 적에게 받은 고통도 훈련을 통해 받은 고통에 비하면 저들에게는 아무것도 아니다.",
+      "japanese": "この不屈の騎士たちは天界の上層部を守っている。過酷な試練を乗り越え鍛え上げられた彼らは、訓練でできた傷に誇りを持っている。敵の攻撃も、彼らがこれまでに受けた痛みに比べれば大したことはない。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ScarredSentinel.prefab",
+    "m_AssetGUID": "a849251f6b8d6244cbc76deacedeb6d1"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-8685b68552d7459c-e38d190810f44f74e89a21cab6032c5a-v2",
+        "english": "Gain [titanskin] [effect0.status0.power].",
+        "french": "Octroie [titanskin] [effect0.status0.power].",
+        "german": "Erhalte [titanskin] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[titanskin].",
+        "portuguese": "Recebe [titanskin] [effect0.status0.power].",
+        "chinese": "获得 [titanskin] [effect0.status0.power]。",
+        "spanish": "Añade [titanskin] [effect0.status0.power].",
+        "chinese_traditional": "獲得[titanskin][effect0.status0.power]。",
+        "korean": "[titanskin] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[titanskin] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "titanskin",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 160,
+    "endlessAttack": 6
+  },
+  "size": 2,
+  "health": 80,
+  "attackDamage": 6,
+  "subtypeKeys": [
+    "SubtypesData_HeavyT2"
+  ],
+  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

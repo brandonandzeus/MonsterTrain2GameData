@@ -1,0 +1,82 @@
+{
+  "id": "RitualTome",
+  "name": "Ritual Tome",
+  "nameKey": {
+    "key": "CardData_nameKey-60e01f40df3356ce-76ffcd3ceae9b4b45a20b4c9659b5984-v2",
+    "english": "Ritual Tome",
+    "french": "Livre des Rituels",
+    "german": "Foliant der Rituale",
+    "russian": "Книга ритуалов",
+    "portuguese": "Tomo Ritualístico",
+    "chinese": "仪式之书",
+    "spanish": "Tomo de los Rituales",
+    "chinese_traditional": "儀式魔法書",
+    "korean": "의식의 서",
+    "japanese": "儀式の書"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7add6d5caf8174e9-76ffcd3ceae9b4b45a20b4c9659b5984-v2",
+    "english": "Apply [titanskin] [effect0.status0.power] to a friendly unit.",
+    "french": "Confère [titanskin] [effect0.status0.power] à un allié.",
+    "german": "Wende [titanskin] [effect0.status0.power] auf eine verbündete Einheit an.",
+    "russian": "На союзника накладывается [titanskin] х[effect0.status0.power].",
+    "portuguese": "Concede [titanskin] [effect0.status0.power] a uma unidade aliada.",
+    "chinese": "使一个友方单位获得 [titanskin] [effect0.status0.power]。",
+    "spanish": "Añade [titanskin] [effect0.status0.power] a una unidad aliada.",
+    "chinese_traditional": "對一個友方單位施加[titanskin][effect0.status0.power]。",
+    "korean": "아군 유닛에 [titanskin] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "味方ユニットに[titanskin] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-f6e2f92db2b33e2e-76ffcd3ceae9b4b45a20b4c9659b5984-v2",
+      "english": "“May all fae, noble and not, write their spells in this tome. For each voice belongs to the coven’s chorus.”\n—The Ritual Tome",
+      "french": "<nobr>« Que</nobr> toutes les fées, nobles ou non, écrivent leurs sorts dans ce livre. Car chaque voix appartient au chœur de la <nobr>communauté. »</nobr> \n— Livre des Rituels",
+      "german": "„Mögen alle Feen, ob edel oder nicht, ihre Zaubersprüche in dieses Buch schreiben. Denn jede Stimme gehört zum Chor des Zirkels.“\n– Foliant der Rituale",
+      "russian": "«Пусть все феи любого происхождения записывают свои заклинания в эту книгу. Ведь каждый глас звучит с хором ковена».\n— Книга ритуалов",
+      "portuguese": "“Que todos os fae, nobres ou não, escrevam seus feitiços neste tomo. Pois todas as vozes pertencem ao coro da Irmandade.”\n— Tomo Ritualístico",
+      "chinese": "“愿所有妖精，无论高贵与否，都能将他们的法术编入此书。因为每个声音都属于月巫团的合唱\n——《仪式之书》",
+      "spanish": "«Que todas las hadas, nobles o no, inscriban sus hechizos en este libro, pues todas las voces pertenecen al coro del Aquelarre».\n—Tomo de los Rituales",
+      "chinese_traditional": "「願所有的精靈無論高貴與否，都在這本書中寫下他們的咒語。因為每一個聲音都屬於女巫們的合唱。」\n——《儀式魔法書》",
+      "korean": "“모든 요정은 귀천을 막론하고 이 서에 주문을 남겨야 한다. 그들의 목소리는 집회의 창가가 되리라.”\n- 의식의 서",
+      "japanese": "「高貴な者もそうでない者もすべての妖精がこの書に呪文を書き記すように。すべての声が一族の合唱となるのだ」\n—儀式の書"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_RitualTome.prefab",
+    "m_AssetGUID": "d2516678bf50c8e4eb1b3799ff265a12"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "titanskin",
+          "count": 2
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Tomes/RitualTome/FX_RitualTome.prefab",
+          "m_AssetGUID": "9a6191f3aba57364ea6d65db2fa0fe79"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 7,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hung Bui"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "StarterImp",
+  "name": "Queen's Impling",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "common",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Impling.prefab",
+    "m_AssetGUID": "cf41b81521525c5439139138b074bbf8"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterQueensImp",
+        "nameKey": {
+          "key": "CharacterData_nameKey-be46fd89b6603e3b-90b3253ccd2a5314588b252c9dc347cf-v2",
+          "english": "Queen's Impling",
+          "french": "Diabloteau de la Reine",
+          "german": "Kleinbold der Königin",
+          "russian": "Королевский бесенок",
+          "portuguese": "Diabinho da Rainha",
+          "chinese": "女王的小鬼",
+          "spanish": "Diablillo de la Reina",
+          "chinese_traditional": "女王的小鬼",
+          "korean": "여왕의 임프",
+          "japanese": "王女の子インプ"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-b48ea8a5c55a1275-90b3253ccd2a5314588b252c9dc347cf-v2",
+            "english": "In these dreams, the Shardtail has shown me the result of her Exodus: the first cycling imps in the Scorched Plains. I’ve never encountered these sharded imps in Hell, but their resemblance to those I have met is uncanny. Perhaps these dreams are something more...",
+            "french": "Dans ces rêves, le Dernier Éclat m'a montré le résultat de son <nobr>exode :</nobr> les premiers diablotins du cycle dans les Plaines calcinées. Jamais je n'ai rencontré ces diablotins fragmentés en enfer, mais leur ressemblance à ceux que je connais est frappante. Peut-être y a-t-il autre chose derrière ces rêves...",
+            "german": "In den Träumen zeigte mir Splitterschweif, wozu ihr Exodus führte: zur ersten Kobold-Generation in den Verbrannten Ebenen. Ich habe derartige Splitterkobolde noch nie in der Hölle gesehen, doch die Ähnlichkeit mit mir bekannten Kobolden ist unbestreitbar. Vielleicht steckt mehr hinter diesen Träumen ...",
+            "russian": "В этих снах Острохвост показала мне результаты своего исхода — первых вращающихся бесов на Выжженных равнинах. В Аду мне никогда ранее не встречались эти колючие бесы, однако они обладают поразительным сходством с уже знакомыми мне чертями. Возможно, это не просто сны...",
+            "portuguese": "Nesses sonhos, a Estilhaçada me mostrou o resultado de seu êxodo: os primeiros diabinhos cíclicos nas Planícies Devastadas. Nunca encontrei esses diabinhos no Inferno, e a semelhança deles com conhecidos meus é perturbante. Será que esses sonhos significam algo mais...?",
+            "chinese": "在梦里，碎尾向我展示了她流亡的成果：在燃烧平原上的第一批循环小鬼。我在地狱中从未遇到过这种碎片般的小鬼，但它们无疑与我见过的小鬼十分相像。也许这些梦不仅仅是梦而已……",
+            "spanish": "En estos sueños, la Fragmentada me ha enseñado los resultados de su éxodo: los primeros diablillos cíclicos de las Llanuras Calcinadas. Nunca he visto diablillos con fragmentos en el Infierno, pero su semejanza con los que conozco es inquietante. Quizá estos sueños sean algo más...",
+            "chinese_traditional": "在這些夢境中，碎尾向我展示了她大逃亡的結果：焦灼平原第一批輪迴的小鬼。我從未在地獄遇到過這些碎片小鬼，但他們與我遇到的那些相似度極高，令人難以置信。也許這些夢境蘊藏著更進一步的含意……",
+            "korean": "꿈에서, 파편 꼬리 여왕은 엑소더스의 결과물을 보여주었다. 처음 탈피한 임프들이 불타는 평원에서 나타났다. 실제로 지옥에서 파편 임프를 본 적은 없지만, 이제까지 봤던 임프들과 닮은 것이 이상하게 느껴졌다. 어쩌면 이 꿈은 무엇인가를 더 감추고 있는 것일지도 모른다...",
+            "japanese": "夢の中で、シャードテイルは彼女のエクソダスの結果を見せてくれた。それは、焦土平原の原初の成長と後退を繰り返すインプたちだ。地獄でこのような尻尾が水晶化したインプに出会ったことはないが、これまで見たインプたちと驚くほど似ている。おそらくこの夢にはもっと何か意味があるのだろう…"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Impling.prefab",
+          "m_AssetGUID": "9e584b90f8c0773418aba569a81377f1"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-e12851f34a0453f9-90b3253ccd2a5314588b252c9dc347cf-v2",
+              "english": "Deal [effect0.power] damage to the front enemy unit.",
+              "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'ennemi en 1re ligne.",
+              "german": "Füge der vordersten gegnerischen Einheit [effect0.power] Schaden zu.",
+              "russian": "Наносит переднему вражескому бойцу [effect0.power] урона.",
+              "portuguese": "Causa [effect0.power] de dano à unidade inimiga na frente.",
+              "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
+              "spanish": "Inflige [effect0.power] de daño a la primera unidad enemiga.",
+              "chinese_traditional": "對前排敵方單位造成[effect0.power]點傷害。",
+              "korean": "전열 적 유닛에게 [effect0.power]의 피해를 입힙니다.",
+              "japanese": "前列の敵ユニットに[effect0.power]のダメージを与える。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamage",
+                "targetMode": "front_in_room",
+                "targetTeamType": "heroes",
+                "paramInt": 16,
+                "appliedVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/FX/FX_ImpactFire_PS.prefab",
+                    "m_AssetGUID": "2d1444371baed9a4e94156b585c6c64e"
+                  },
+                  "spawnLocation": "character_center"
+                }
+              }
+            ]
+          }
+        ],
+        "size": 1,
+        "health": 1,
+        "ascendsTrainAutomatically": false,
+        "attackDamage": 1,
+        "subtypeKeys": [
+          "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+        ],
+        "characterChatterData": "HellhornedImplingChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

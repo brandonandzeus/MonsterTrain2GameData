@@ -1,0 +1,109 @@
+{
+  "id": "Metallurgy",
+  "name": "Metallurgy",
+  "nameKey": {
+    "key": "CardData_nameKey-9a105d45208c0f1c-81bbee09f8f5a4142a7e46d8868535cf-v2",
+    "english": "Metallurgy",
+    "french": "Métallurgie",
+    "german": "Metallurgie",
+    "russian": "Металлургия",
+    "portuguese": "Metalurgia",
+    "chinese": "冶金学",
+    "spanish": "Metalurgia",
+    "chinese_traditional": "冶金學",
+    "korean": "금속학",
+    "japanese": "冶金"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-8e6a4195a11c68ed-81bbee09f8f5a4142a7e46d8868535cf-v2",
+    "english": "[smelt] a card in hand. Apply [armor] [effect0.status0.power] to friendly units.",
+    "french": "<b>Fusionne</b> une carte en main. Confère [armor] [effect0.status0.power] aux unités alliées.",
+    "german": "Eine Karte auf der Hand [smelt]. Wende [armor] [effect0.status0.power] auf verbündete Einheiten an.",
+    "russian": "[smelt] карты в руке. На союзников накладывается [armor] х[effect0.status0.power].",
+    "portuguese": "<b>Funde</b> uma carta na mão. Concede [armor] [effect0.status0.power] às unidades aliadas.",
+    "chinese": "[smelt]一张手牌。使所有友方单位获得 [armor] [effect0.status0.power]。",
+    "spanish": "<b>Funde</b> una carta de tu mano. Añade [armor] [effect0.status0.power] a las unidades aliadas.",
+    "chinese_traditional": "[smelt]一張手牌中的卡牌。對友方單位施加[armor][effect0.status0.power]。",
+    "korean": "패에 있는 카드 한 장을 [smelt]합니다. 아군 유닛들에 [armor] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "手札のカードを[smelt]する。味方ユニットに[armor] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-f6f79e87d63bc788-81bbee09f8f5a4142a7e46d8868535cf-v2",
+      "english": "“A machine is only as trustworthy as the metal beneath its paint. Every new alloy must be tested to withstand the Pyre itself before it is put to work.”—Herzal, “My Workshop, My Life”",
+      "french": "<nobr>« La</nobr> fiabilité d'une machine dépend de la qualité du métal qui la constitue. Chaque nouvel alliage doit être testé pour résister au Brasier lui-même avant d'être mis en <nobr>service. »</nobr> — Herzal, <nobr>« Mon</nobr> atelier, ma <nobr>vie »</nobr>",
+      "german": "„Eine Maschine ist nur so vertrauenswürdig wie das Metall unter ihrer Lackierung. Jede neue Legierung muss getestet werden und der Höllenglut selbst widerstehen, ehe sie ihre Arbeit tun kann.“ – Herzal, „Meine Werkstatt, mein Leben“",
+      "russian": "«Машина заслуживает доверия ровно настолько, насколько надежен металл под ее краской. Каждый новый сплав нужно испытать огнем Пекла, прежде чем пускать в дело». — Герцаль, «Моя мастерская — моя жизнь»",
+      "portuguese": "“Uma máquina é tão confiável quanto o metal que a compõe. Cada nova liga deve ser testada para resistir à própria Pira antes que possa ter utilidade.” — Herzal, “Minha Oficina, Minha Vida”",
+      "chinese": "“所用金属够坚固的机器才是好机器。每一种新合金都必须经过薪火本身的压力测试，之后才能投入使用。“——赫扎尔所著的《我的工匠人生》",
+      "spanish": "«Las máquinas solo son tan fiables como el metal de su armazón. Cada nueva aleación debe demostrar que puede resistir la Pira antes de utilizarse». —Herzal, «Mi taller, mi vida»",
+      "chinese_traditional": "「一台機器是否值得信賴，取決於其油漆底下的金屬。每種新合金在投入使用前，都必須經過測試，以承受火堆本身的考驗。」——赫爾扎爾，《我的工作坊，我的人生》",
+      "korean": "“기계가 믿을 만한지 아닌지는, 화려한 도장 아래 숨겨진 금속이 말해준다. 새 합금은 무엇이든, 쓰이기 전에 먼저 화로의 불길을 견딜 수 있는지 시험을 거쳐야 한다.”—헤르잘, “나의 작업실, 나의 인생”",
+      "japanese": "「機械の信頼度は、塗装の下の金属に依存する。新たに製造された合金はすべて、使用される前に炉そのものに耐えることができるかどうかを試験する必要がある」—ハーザル著、『我が工房、我が人生』より"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SPL_Metallurgy.prefab",
+    "m_AssetGUID": "8448d8a97c4c01647bedaeabca491864"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 4
+        }
+      ],
+      "paramBool2": true
+    },
+    {
+      "effectStateName": "CardEffectChooseDiscard",
+      "targetMode": "hand",
+      "targetCardType": "invalid",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardEffectChooseDiscard_Consume_TooltipText",
+            "english": "[consume] a card in hand. Gain [ember] and [forgepoints] equal to its base [ember] cost.",
+            "french": "<b>Détruisez</b> une carte en main. Gagnez des [ember] et des [forgepoints] valant son coût de base en [ember].",
+            "german": "<b>Verbrauche</b> eine Karte von der Hand. Erhalte [ember] und [forgepoints] im Ausmaß ihrer [ember]-Basiskosten.",
+            "russian": "[consume] карты из руки. Даются [ember] и [forgepoints] равные ее обычной стоимости в [ember].",
+            "portuguese": "<b>Consome</b> uma carta na mão. Recebe [ember] e [forgepoints] equivalentes ao seu custo base de [ember].",
+            "chinese": "[consume]一张手牌。获得相当于其基础 [ember] 费用的 [ember] 和 [forgepoints]。",
+            "spanish": "<b>Consume</b> una carta de tu mano. Obtienes tantos [forgepoints] y [ember] como su coste base en [ember].",
+            "chinese_traditional": "[consume]一張手牌中的卡牌。獲得等同於其基礎[ember]費用的[ember]和[forgepoints]。",
+            "korean": "패에 있는 카드 하나를 [consume]합니다. 해당 카드의 기본 [ember] 비용만큼 [ember] 및 [forgepoints]를 획득합니다.",
+            "japanese": "手札のカードを[consume]する。その基本[ember]コストと等しい[ember]と[forgepoints]を得る。"
+          },
+          "titleKey": {
+            "key": "CardEffectChooseDiscard_Consume_TooltipTitle",
+            "english": "Smelt",
+            "french": "Fusion",
+            "german": "Schmelzen",
+            "russian": "Плавка",
+            "portuguese": "Fundir",
+            "chinese": "熔炼",
+            "spanish": "Fundición",
+            "chinese_traditional": "熔煉",
+            "korean": "제련",
+            "japanese": "精錬"
+          }
+        }
+      ],
+      "paramInt": 3,
+      "additionalParamInt": 5,
+      "paramBool2": true
+    }
+  ],
+  "requiredDLC": "railforged",
+  "unlockLevel": 4,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

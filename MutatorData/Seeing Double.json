@@ -1,0 +1,56 @@
+{
+  "id": "DoubleUnits",
+  "name": "Seeing Double",
+  "nameKey": {
+    "key": "MutatorData_nameKey-8a648e6ac2ec11a2-9b4a202c23f142f45abeec79c4564382-v2",
+    "english": "Seeing Double",
+    "french": "Vision double",
+    "german": "Doppelt sehen",
+    "russian": "Встреча с близнецом",
+    "portuguese": "Vendo em Dobro",
+    "chinese": "好事成双",
+    "spanish": "Visión doble",
+    "chinese_traditional": "眼花撩亂",
+    "korean": "이중 시야",
+    "japanese": "ダブル・トラブル"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-56a049e9cc7401f8-9b4a202c23f142f45abeec79c4564382-v2",
+    "english": "When the first friendly unit is summoned each turn, summon that same unit again.",
+    "french": "Lorsque la première unité alliée est invoquée à chaque tour, elle est de nouveau invoquée.",
+    "german": "Wenn die erste verbündete Einheit in jedem Zug gerufen wird, rufe diese Einheit erneut.",
+    "russian": "Призовите первого бойца за ход еще раз.",
+    "portuguese": "Quando a primeira unidade aliada for invocada em cada turno, invoca novamente a mesma unidade.",
+    "chinese": "当你每回合首次召唤友方单位时，会再召唤一个相同的单位。",
+    "spanish": "Cuando se invoque la primera unidad aliada en cada turno, se volverá a invocar la misma unidad.",
+    "chinese_traditional": "每回合首次召喚友方單位時，再次召喚相同單位。",
+    "korean": "아군 턴에 첫 번째로 소환한 아군 유닛을 한 번 더 소환합니다.",
+    "japanese": "毎ターン、味方ユニットの初回召喚時に、同一のユニットをもう一度召喚する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectExtraSpawnsFirstUnitPerTurn",
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": 1
+    }
+  ],
+  "boonValue": 12,
+  "tags": [
+    "doublespawn",
+    "firstsummon"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "R2_Attacker_Zealot_Ver2",
+  "name": "Mother's Zealot",
+  "nameKey": {
+    "key": "CharacterData_nameKey-9cfb581ae869b5df-b1d96b74a6967c3449095be9fb5c0bf8-v2",
+    "english": "Mother's Zealot",
+    "french": "Zélote de la Mère",
+    "german": "Mutters Fanatiker",
+    "russian": "Зилот Матери",
+    "portuguese": "Fanático da Mãe",
+    "chinese": "母亲的狂热者",
+    "spanish": "Fanático de Madre",
+    "chinese_traditional": "母親的狂熱者",
+    "korean": "어머니의 광신도",
+    "japanese": "マザーのジーロット"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-14b21d424d7ca17d-b1d96b74a6967c3449095be9fb5c0bf8-v2",
+      "english": "These angels that once used their bloodlust for power were the natural fit to protect the Mother and Her Children.",
+      "french": "Ces anges, qui jadis utilisèrent leur soif de sang pour obtenir plus de puissance, étaient tout désignés pour protéger la Mère et Ses Enfants.",
+      "german": "Diese Engel verschafften sich einst durch Blutdurst Macht und eigneten sich perfekt, um die Mutter und Ihre Kinder zu schützen.",
+      "russian": "Ангелы, которых к власти привела кровожадность, как никто другой подходили для защиты Матери и ее Детей.",
+      "portuguese": "Esses anjos, que antes usavam sua sede de sangue para obter poder, eram os mais indicados para proteger a Mãe e suas Crianças.",
+      "chinese": "这些曾经凭借嗜血获得力量的天使们，非常适合充当母亲和她子嗣的保卫者。",
+      "spanish": "Estos ángeles, que antaño canalizaron su sed de sangre para obtener poder, han sido la elección más lógica para proteger a la Madre y a Sus Hijos.",
+      "chinese_traditional": "這些天使曾藉由嗜血本性換取力量，如今自然成為守護母親與其子嗣的不二人選。",
+      "korean": "피에 대한 갈증을 힘으로 승화시켰던 천사들이야말로, 어머니와 자손들을 수호하기에 가장 적합한 수호자였다.",
+      "japanese": "かつて権力のために血への渇望を利用していたこの天使たちは、マザーと子供たちを守るのにふさわしい存在だった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_RavenousZealot_SoulSavior.prefab",
+    "m_AssetGUID": "443cf5fa3eb304d46b85604121056ee1"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-cfbcce12b10163be-b1d96b74a6967c3449095be9fb5c0bf8-v2",
+        "english": "Gain [multistrike] [effect0.status0.power].",
+        "french": "Octroie [multistrike] [effect0.status0.power].",
+        "german": "Erhalte [multistrike] [effect0.status0.power].",
+        "russian": "Дается [multistrike] х[effect0.status0.power].",
+        "portuguese": "Recebe [multistrike] [effect0.status0.power].",
+        "chinese": "获得 [multistrike] [effect0.status0.power]。",
+        "spanish": "Añade [multistrike] [effect0.status0.power].",
+        "chinese_traditional": "獲得[multistrike][effect0.status0.power]。",
+        "korean": "[multistrike] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[multistrike] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_feed",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 45,
+  "attackDamage": 14,
+  "lifemotherVariant": true,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Attacker_Enemy"
+  ],
+  "characterChatterData": "R2SoulSaviorEnemies_Male_ChatterData",
+  "artistAttribution": "Michael Sanchez"
+}

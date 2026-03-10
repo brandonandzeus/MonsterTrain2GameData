@@ -1,0 +1,60 @@
+{
+  "id": "RootBeforePyre",
+  "name": "Rootsplit Mask",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-2c05cd2c79b33cf6-775abecbad62b8d438e6f0e844fec94b-v2",
+    "english": "Rootsplit Mask",
+    "french": "Masque brisé d'Éveillé",
+    "german": "Entzweite Maske",
+    "russian": "Рассеченная маска",
+    "portuguese": "Máscara de Raiz Rachada",
+    "chinese": "根须面具",
+    "spanish": "Máscara partida de raíz",
+    "chinese_traditional": "根裂面具",
+    "korean": "뿌리가르개 가면",
+    "japanese": "根割の仮面"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-c19b02b8a7a39460-775abecbad62b8d438e6f0e844fec94b-v2",
+    "english": "Apply [rooted] to enemy units when they enter the floor below the Pyre Room.",
+    "french": "Inflige <b>Enraciné</b> aux unités ennemies lorsqu'elles entrent dans le niveau sous la salle du Brasier.",
+    "german": "Wende <b>Verwurzelt</b> auf gegnerische Einheiten an, wenn sie die Ebene unter der Höllenglut betreten.",
+    "russian": "Накладывает [rooted] на бойцов врага, проникающих на этаж под Пеклом.",
+    "portuguese": "Cause <b>Imobilização</b> a unidades inimigas quando elas entram no andar abaixo da Sala da Pira.",
+    "chinese": "当敌方单位进入薪火室下方的楼层时，对其施加<b>缠绕</b>。",
+    "spanish": "Añade [rooted] a las unidades enemigas cuando entran al piso bajo la sala de la Pira.",
+    "chinese_traditional": "當敵方單位進入火堆房間下方的樓層時，對其施加[rooted]。",
+    "korean": "화로실 아래층에 진입한 적 유닛들에게 [rooted] 효과를 적용합니다.",
+    "japanese": "炉室の下のフロアに入った敵ユニットに[rooted]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-35163e4ef39d6709-775abecbad62b8d438e6f0e844fec94b-v2",
+      "english": "Breaking through their armor is considered a rite of passage for the Awoken, marking their shift from Hollow to Animus. This old armor breaks under the weight of new vines making up the Animus.",
+      "french": "Pour un Éveillé, briser son armure est un rite d'initiation qui marque le passage du stade de réceptacle à celui d'animus. La vieille armure cède alors sous le poids des nouvelles lianes qui caractérisent cette évolution.",
+      "german": "Das Durchbrechen ihrer Rüstung gilt bei den Erweckten als Initiationsritus, der ihren Übergang von der Hülle zum Animus markiert. Diese alte Rüstung zerbricht unter dem Gewicht neuer Ranken, aus denen der Animus hervorgeht.",
+      "russian": "Прорыв через собственную броню среди Пробужденных считается ритуалом, отмечающим их переход из Пустых в Анимы. Старая броня крошится под весом новых лоз, создающих Аниму.",
+      "portuguese": "Quebrar sua armadura é considerado um rito de passagem para os Despertos, marcando sua passagem de Ocos para Animus. Essa velha armadura se rompe com o peso das novas vinhas que compõem um Animus.",
+      "chinese": "对觉者而言，从已有的盔甲中突破出来是一种成年仪式，这标志着它们从空灵进化成为了蔓灵。这副老旧的盔甲便是在蔓灵新生藤蔓的重量之下被压碎的。",
+      "spanish": "Partir la armadura es un rito de iniciación para los Despertados que marca su paso de hueco a ánimus. La vieja armadura se quiebra bajo el peso de los nuevos zarcillos que componen al ánimus.",
+      "chinese_traditional": "突破盔甲被認為是覺醒者的成人禮，標誌著他們從空心人蛻變為靈魂的轉變。這種舊盔甲會被組成靈魂的新藤蔓壓到破裂。",
+      "korean": "각성자 사이에서 갑옷을 부수는 것은 통과 의례로 여겨지며, 공허한 존재에서 의사생명체로 진화하는 과정이기도 하다. 이 낡은 갑옷은 의사생명체를 이루는 새 덩굴의 무게에 짓눌리며 부서진다.",
+      "japanese": "鎧を破ることは覚醒者にとっての通過儀礼であり、ホロウからアニムスへの移行を示すものと考えられている。この古い鎧は、アニムスを構成する新たなツタの重みで壊れるのだ。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassAwoken",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnEnterRoomIndex",
+      "paramStatusEffects": [
+        {
+          "statusId": "rooted",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": 2
+    }
+  ]
+}

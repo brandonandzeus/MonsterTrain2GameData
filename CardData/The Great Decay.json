@@ -1,0 +1,77 @@
+{
+  "id": "TheGreatDecay",
+  "name": "The Great Decay",
+  "nameKey": {
+    "key": "CardData_nameKey-0ee1fc38b5b471ea-c8f48943f9197a94fa2098db7d93dbce-v2",
+    "english": "The Great Decay",
+    "french": "Grand Pourrissement",
+    "german": "Der Große Zerfall",
+    "russian": "Великое разложение",
+    "portuguese": "A Grande Decadência",
+    "chinese": "大腐朽",
+    "spanish": "La Gran Descomposición",
+    "chinese_traditional": "大腐壞",
+    "korean": "위대한 부패",
+    "japanese": "偉大なる枯死"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-cbd8be4355be3bd7-c8f48943f9197a94fa2098db7d93dbce-v2",
+    "english": "Apply [consume] and -[effect0.upgrade.costreduction][ember] to all spells in your deck.",
+    "french": "Applique [consume] et -[effect0.upgrade.costreduction][ember] à tous les sorts de votre deck.",
+    "german": "Wende [consume] und -[effect0.upgrade.costreduction][ember] auf alle Zauber in deinem Deck an.",
+    "russian": "Все чары в вашей колоде получают [consume] и -[effect0.upgrade.costreduction][ember].",
+    "portuguese": "Concede [consume] e -[effect0.upgrade.costreduction][ember] a todos os feitiços no seu deck.",
+    "chinese": "使卡组中的所有法术牌获得[consume]和-[effect0.upgrade.costreduction][ember]。",
+    "spanish": "Añade [consume] y -[effect0.upgrade.costreduction][ember] a todos los hechizos de tu mazo.",
+    "chinese_traditional": "對你牌組中所有法術卡施加[consume]和-[effect0.upgrade.costreduction][ember]。",
+    "korean": "내 덱 모든 주문에 [consume] 및 [effect0.upgrade.costreduction][ember] 효과를 적용합니다.",
+    "japanese": "[consume]と-[effect0.upgrade.costreduction][ember]をデッキ内のすべての呪文に付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-4c216eddb654e292-c8f48943f9197a94fa2098db7d93dbce-v2",
+      "english": "“Spore to mycelium, mushroom to mulch, the Great Decay is the cycle that rules our lives. To go against the Decay is to go against life.”— Traditional epitaph found on the graves of the Underlegion",
+      "french": "<nobr>« Des</nobr> spores au mycélium, du champignon au substrat, le Grand Pourrissement est le cycle qui régit nos vies. S'opposer au Pourrissement, c'est s'opposer à la <nobr>vie. »</nobr> — Épitaphe traditionnelle des Armillaires",
+      "german": "„Von Sporen zu Myzel, von Pilzen zu Mulch – der Großen Zerfall ist der Kreislauf, der unser Leben bestimmt. Sich dem Zerfall zu widersetzen, bedeutet, sich dem Leben zu widersetzen.“ – Traditionelle Inschrift auf den Gräbern der Unterlegion",
+      "russian": "«От споры к мицелию, от гриба к мульче — мы подчиняемся Великому разложению. Пойти против него — значит пойти против самой жизни» — Популярная эпитафия с могил Нижнего легиона",
+      "portuguese": "“Do esporo ao micélio, do cogumelo à cobertura vegetal, a Grande Decadência é o ciclo que rege nossas vidas. Ir contra a Decadência é ir contra a vida.” — Epitáfio tradicional encontrado nos túmulos da Legião do Submundo",
+      "chinese": "“从孢子到菌丝，从蘑菇到盖土，大腐朽是支配我们生命的循环。违抗腐朽就是违抗生命。”—发现于地下菌团墓碑上的传统碑文",
+      "spanish": "«De espora a micelio, de hongo a mantillo, la Gran Descomposición es el ciclo que gobierna nuestras vidas. Rechazar la Descomposición es rechazar la vida». —Epitafio tradicional de las tumbas de la Infralegión",
+      "chinese_traditional": "「從孢子到菌絲，從蘑菇到腐植土，大腐壞主宰著我們生命的循環。對抗腐壞就是對抗生命。」——地下軍團墳墓上發現的傳統墓誌銘",
+      "korean": "\"포자에서 균사체로, 버섯에서 부식으로, 위대한 부패는 우리 삶을 지배하는 순환이다. 부패를 거스르는 것은 곧 삶을 거스르는 것이다.\" - 지하 군단의 무덤에서 발견된 전통적인 묘비명",
+      "japanese": "「胞子から菌糸体へ、キノコから腐葉土へ。偉大なる枯死はその命を支配する循環だ。枯死に逆らうことは、命に逆らうことなのだ」—菌糸族の墓に刻まれた伝統的な墓碑銘"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_TheGreatDecay.prefab",
+    "m_AssetGUID": "88d8b342794131a4c98ba517fcc0a474"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToSpellsInDeck",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "TheGreatDecay_Upgrade",
+        "traitDataUpgrades": [
+          {
+            "traitStateName": "CardTraitExhaustState"
+          }
+        ],
+        "costReduction": 1,
+        "xCostReduction": 1
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Genevieve Bega"
+}

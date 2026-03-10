@@ -1,0 +1,106 @@
+{
+  "id": "PotionKit",
+  "name": "Potion Kit",
+  "nameKey": {
+    "key": "CardData_nameKey-d3c47786f4e24fe2-b4b6e77c5624e7947b10aa5b2f78121a-v2",
+    "english": "Potion Kit",
+    "french": "Kit de potions",
+    "german": "Trank-Set",
+    "russian": "Набор для снадобья",
+    "portuguese": "Conjunto de Poções",
+    "chinese": "药剂套装",
+    "spanish": "Kit de pociones",
+    "chinese_traditional": "藥劑工具箱",
+    "korean": "물약 도구",
+    "japanese": "ポーションキット"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-d87c4268cd68d23a-b4b6e77c5624e7947b10aa5b2f78121a-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-c4f45fb8dfcfcbd7-b4b6e77c5624e7947b10aa5b2f78121a-v2",
+      "english": "“An essential collection of tools that every lab technician needs: powdered Titan bone, a beaker, a faulty burner, and chili, of course.”\n—OHELL Safety Regulations and Guidelines",
+      "french": "<nobr>« Nécessaire</nobr> de base dont tout technicien de laboratoire a <nobr>besoin :</nobr> de l'os de titan en poudre, un bécher, un brûleur défectueux et du piment, bien <nobr>sûr. »</nobr> \n— Ministère du Travail infernal, consignes de sécurité",
+      "german": "„Eine unverzichtbare Sammlung von Werkzeugen für jeden Labortechniker: Titan-Knochenpulver, ein Becherglas, ein defekter Brenner und natürlich Chili.“\n– OHELL-Sicherheitsvorschriften und -richtlinien",
+      "russian": "«Необходимый минимум инструментов для любого лаборанта: порошок из кости титана, мензурка, неисправная горелка и, конечно же, чили».\n— Рекомендации Адздрава",
+      "portuguese": "“Uma coleção essencial de ferramentas que todo técnico de laboratório precisa: pó de osso de titã, um béquer, um queimador com defeito e pimenta, é claro.”\n— Regulamentos e Diretrizes de Segurança da Vigilância Infernal",
+      "chinese": "“每个实验技术人员都应该配备的工具有：泰坦骨粉、烧杯、有缺陷的燃烧器，当然还有一些辣椒。”\n——《地狱安全准则与指引》",
+      "spanish": "«Un conjunto esencial de herramientas para todo técnico de laboratorio: hueso de titán en polvo, matraz, mechero defectuoso y chili, por supuesto».\n—Protocolo de prevención de riesgos infernales",
+      "chinese_traditional": "「每個實驗室技術人員都需要的基本工具組：泰坦骨粉、燒杯、故障的燃燒器以及辣椒，當然少不了辣椒。」\n——OHELL安全規定和指南",
+      "korean": "“모든 실험실 기술자는 티탄 뼛가루, 비커, 고장 난 버너를 필수 도구로 지참해야 합니다. 물론 칠리도 잊지 마십시오.”\n- OHELL 안전 규정 및 지침",
+      "japanese": "「あらゆる研究所の技術者が必要とする、必携道具のコレクションです。粉末状の巨人族の骨、ビーカー、故障したバーナー、そしてもちろん、チリです」\n—オーヘル社安全規則とガイドライン"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_PotionKit.prefab",
+    "m_AssetGUID": "5c333f40e823a9645bb52270d7efc260"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "PotionKit_Upgrade",
+        "unitAbilityUpgrade": {
+          "id": "PotionKit_Ability",
+          "nameKey": {
+            "key": "CardData_nameKey-a6e5bf1b863ad473-7609b4ab01538d9499a598ed8c37226d-v2",
+            "english": "Brew",
+            "french": "Brassage",
+            "german": "Brauen",
+            "russian": "Отвароварение",
+            "portuguese": "Preparar",
+            "chinese": "调配",
+            "spanish": "Elaboración",
+            "chinese_traditional": "釀造",
+            "korean": "증류",
+            "japanese": "醸造"
+          },
+          "overrideDescriptionKey": {
+            "key": "CardData_overrideDescriptionKey-59841d45737c73d9-7609b4ab01538d9499a598ed8c37226d-v2",
+            "english": "[mix].",
+            "french": "[mix].",
+            "german": "[mix].",
+            "russian": "[mix].",
+            "portuguese": "[mix].",
+            "chinese": "[mix]。",
+            "spanish": "[mix].",
+            "chinese_traditional": "[mix]。",
+            "korean": "[mix].",
+            "japanese": "[mix]。"
+          },
+          "cardType": "spell",
+          "rarity": "common",
+          "linkedClass": "ClassLazarusLeague",
+          "effects": [
+            {
+              "effectStateName": "CardEffectMix",
+              "targetMode": "room",
+              "targetTeamType": "both",
+              "paramInt": 2
+            }
+          ],
+          "cooldownAfterActivated": 3,
+          "isUnitAbility": true,
+          "initialKeyboardTarget": "front_friendly"
+        },
+        "bonusDamage": 8,
+        "bonusHP": 4
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LazarusLeague/PotionKit/FX_PotionKit.prefab",
+          "m_AssetGUID": "dc4726b70a10fe2469d8d5ed8e9f4e77"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Herrick Ong"
+}

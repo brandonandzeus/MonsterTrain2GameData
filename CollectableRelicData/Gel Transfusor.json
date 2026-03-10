@@ -1,0 +1,82 @@
+{
+  "id": "ExtinguishSpreadPyregel",
+  "name": "Gel Transfusor",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-30d8fcfe4bf39222-00c44508218c25f40b04724b4dc47d7c-v2",
+    "english": "Gel Transfusor",
+    "french": "Transfuseur de gel",
+    "german": "Gelüberträger",
+    "russian": "Шприц с гелем",
+    "portuguese": "Transfusor de Gel",
+    "chinese": "熔胶注射器",
+    "spanish": "Transfusor de gel",
+    "chinese_traditional": "凝膠轉換器",
+    "korean": "점액 수혈기",
+    "japanese": "炉油注射器"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-1d0b23911952d42b-00c44508218c25f40b04724b4dc47d7c-v2",
+    "english": "When any unit dies, their [pyregel] is spread among enemy units.",
+    "french": "Lorsqu'une unité meurt, son [pyregel] est réparti aléatoirement entre les ennemis.",
+    "german": "Wenn eine Einheit stirbt, wird ihr [pyregel] zufällig auf die gegnerischen Einheiten verteilt.",
+    "russian": "Когда любой боец умирает, его [pyregel] распределяется врагам.",
+    "portuguese": "Quando qualquer unidade morrer, seu [pyregel] será distribuído aleatoriamente entre as unidades inimigas.",
+    "chinese": "当任意单位死亡时，其 [pyregel] 会传播给其他敌方单位。",
+    "spanish": "Cuando cualquier unidad muere, divide su [pyregel] entre las unidades enemigas.",
+    "chinese_traditional": "當任何單位死亡時，他們的[pyregel]隨機分散給敵方單位。",
+    "korean": "유닛이 사망 시, 해당 유닛의 [pyregel]이 무작위로 적 유닛에게 퍼집니다.",
+    "japanese": "どれでもユニットが死亡すると、その[pyregel]がランダムで敵ユニットに配分される。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-f592d0ff1ab13369-00c44508218c25f40b04724b4dc47d7c-v2",
+      "english": "There are rumors amongst the whelps that if they don’t get their numbers up, Lady Gilda will shoot Pyregel in their veins to ‘put a little fire’ in them.",
+      "french": "Le bruit court parmi les dragonnets que s'ils n'augmentent pas leurs profits, Dame Gilda leur injectera du pyrogel dans les veines pour <nobr>« rallumer</nobr> la flamme de la <nobr>passion ».</nobr>",
+      "german": "Unter den Zöglingen wird gemunkelt, dass Lady Gilda ihnen Höllenglut-Gel injizieren wird, um sie ein wenig zu motivieren.",
+      "russian": "Среди дракончиков ходят слухи, что если они не поднимут свою численность, то леди Гильда впрыснет им в вены пеклогель, чтобы «разжечь огонь».",
+      "portuguese": "Há rumores entre os filhotes de que, se não renderem o suficiente, a Senhorita Gilda vai colocar Gel Pírico nas veias deles para “acender a chama” do incentivo.",
+      "chinese": "幼龙中有传言说，如果他们的数量不够，吉尔达女士就会在他们的血管里注射薪火熔胶，给他们“点上一把火”。",
+      "spanish": "Corren rumores entre las crías que dicen que, si no mejoran sus resultados, lady Gilda les inyectará pirogel en vena para que «entren en calor».",
+      "chinese_traditional": "在幼龍中有傳言說，如果他們的金額不提高，吉爾達女士會在他們的靜脈中注入火膠來「點燃他們的火焰」。",
+      "korean": "해츨링 사이에서는 수익을 올리지 못하면 레이디 길다가 혈관에 직접 화염 점액을 주입해 불을 붙여버린다는 소문이 돌고 있다.",
+      "japanese": "小竜たちの間では、もし売上を増やすことができなければ、レディ・ギルダが\"少し火をつける\"ために彼らの血管に炉油を注射するだろうという噂がある。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "additionalTooltips": [
+        {
+          "statusId": "pyregel",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ],
+      "triggers": [
+        {
+          "trigger": "on_death",
+          "effects": [
+            {
+              "effectStateName": "CardEffectTransferAllStatusEffectsFromUnit",
+              "targetMode": "self",
+              "targetTeamType": "both",
+              "paramStatusEffects": [
+                {
+                  "statusId": "pyregel",
+                  "count": 1
+                }
+              ],
+              "paramInt": 12
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramBool": true
+    }
+  ],
+  "unlockLevel": 8
+}

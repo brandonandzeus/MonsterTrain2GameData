@@ -1,0 +1,74 @@
+{
+  "id": "FirstUnitGainDamageShield",
+  "name": "Chain of Gems",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-16bf676bc43eaf6b-62bcbf6772391f549a00e096b274285c-v2",
+    "english": "Chain of Gems",
+    "french": "Collier de gemmes",
+    "german": "Edelsteinkette",
+    "russian": "Самоцветное ожерелье",
+    "portuguese": "Corrente de Gemas",
+    "chinese": "宝石项链",
+    "spanish": "Cadena de gemas",
+    "chinese_traditional": "寶石鍊",
+    "korean": "보석 엮은 목걸이",
+    "japanese": "宝石の首飾り"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-08bcfb24bf712488-62bcbf6772391f549a00e096b274285c-v2",
+    "english": "Apply [damageshield] [effect0.status0.power] to the first friendly unit summoned each turn.",
+    "french": "À chaque tour, confère <nobr><b>Bouclier protecteur</b></nobr> [effect0.status0.power] à la première unité alliée invoquée.",
+    "german": "Wende [effect0.status0.power] <nobr><b>Schadensschild</b></nobr> auf die erste verbündete Einheit an, die in jedem Zug gerufen wird.",
+    "russian": "Каждый ход дает [damageshield] [effect0.status0.power] первому призванному бойцу.",
+    "portuguese": "Concede <nobr><b>Escudo Protetor</b></nobr> [effect0.status0.power] à primeira unidade aliada invocada por turno.",
+    "chinese": "每回合首个被召唤出来的友方单位获得<nobr><b>伤害护盾</b></nobr> [effect0.status0.power]。",
+    "spanish": "Añade [damageshield] [effect0.status0.power] a la primera unidad aliada invocada cada turno.",
+    "chinese_traditional": "對每回合召喚的第一個友方單位施加[damageshield][effect0.status0.power]。",
+    "korean": "매 턴마다 소환한 첫 아군 유닛에 [damageshield] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "毎ターン、最初に召喚された味方ユニットに[damageshield] [effect0.status0.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-ff41cebb90a1a272-62bcbf6772391f549a00e096b274285c-v2",
+      "english": "I constructed this as a gift to Penumbra for his help with the Covenant. The necklace is made out of the finest gems found in the Crucible. For whatever reason, Penumbra tossed it aside, perhaps considering it too gaudy.",
+      "french": "Pour le remercier de son aide avec l'alliance, j'ai fabriqué et offert ceci à Penumbra. Ce collier a été créé à partir des plus belles pierres précieuses du creuset. Pour une raison que j'ignore, Penumbra l'a jeté, il le trouvait peut-être trop voyant.",
+      "german": "Dies war ein Geschenk für Penumbra für die Unterstützung des Pakts. Die Kette ist mit den feinsten Edelsteinen des Schmelztiegels besetzt. Aus irgendeinem Grund legte Penumbra sie ab. Vielleicht war sie ja zu kitschig …",
+      "russian": "Я создал это для Полутьмы в благодарность за помощь в создании Согласия. Ожерелье изготовлено из лучших самоцветов Горнила. Но по какой-то причине Полутьма выбросил украшение. Возможно, счел слишком вульгарным.",
+      "portuguese": "Construí isso como um presente para Penumbra por sua ajuda com o Pacto. O colar é feito com as melhores joias encontradas no Crisol. Por alguma razão, Penumbra deixou-o de lado, talvez considerando-o muito chamativo.",
+      "chinese": "这条项链由熔炉之地中最精致的宝石制成，是我送给影祖的礼物，感谢他在契约中提供的帮助。但不知出于什么原因，影祖把这条项链丢在一旁，可能是嫌它太花里胡哨了吧。",
+      "spanish": "Preparé esto como regalo para agradecerle su ayuda con la Coalición. El collar está hecho con las mejores gemas del Crisol. Por lo que sea, Penumbra lo desechó al instante. Tal vez fuera demasiado ostentoso.",
+      "chinese_traditional": "我把這個當作禮物製作給半影族，感謝他對新盟的幫助。項鍊是用地獄熔爐中最好的寶石製成的。不知道是因為什麼原因，半影族把它扔在一邊，也許是認為它太華而不實了吧。",
+      "korean": "나는 맹약을 맺게 도와준 페넘브라에게 줄 선물을 만들었다. 이 목걸이는 도가니에서 찾은 최고의 보석으로 만든 것이다. 하지만 무슨 이유에서인지 페넘브라는 목걸이를 받자마자 던져버렸다. 어쩌면 이것을 걸기에는 너무 화려하다고 생각했는지도 모른다.",
+      "japanese": "これは盟約への協力に対するペナンブラへの贈り物として作ったものだ。このネックレスにはクルーシブルで見つかった最高級の宝石を使っている。しかし、何らかの理由でペナンブラはそれを投げ捨てた。おそらく派手すぎると思ったのだろう。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassUmbra",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 2
+        }
+      ],
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "this_turn",
+          "paramComparator": [
+            "greater_than",
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ],
+      "paramSourceTeam": "monsters"
+    }
+  ],
+  "unlockLevel": 8
+}

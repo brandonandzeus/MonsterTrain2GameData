@@ -1,0 +1,81 @@
+{
+  "id": "TFB_PyreAttack",
+  "name": "Pyre Light",
+  "nameKey": {
+    "key": "CardData_nameKey-a13c037a2a30a759-06b9dea93e0f11b418cd6af439d0858e-v2",
+    "english": "Pyre Light",
+    "french": "Lumière du Brasier",
+    "german": "Licht der Höllenglut",
+    "russian": "Свет Пекла",
+    "portuguese": "Luz da Pira",
+    "chinese": "薪火之光",
+    "spanish": "Luz de la Pira",
+    "chinese_traditional": "火堆之光",
+    "korean": "화로의 빛",
+    "japanese": "炉の光"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-d3fde37840991f8e-06b9dea93e0f11b418cd6af439d0858e-v2",
+    "english": "Apply +[effect0.upgrade.bonusdamage][attack] to the Pyre. The Pyre then attacks immediately.",
+    "french": "Confère +[effect0.upgrade.bonusdamage][attack] au Brasier, qui attaque immédiatement.",
+    "german": "Wende +[effect0.upgrade.bonusdamage][attack] auf die Höllenglut an. Die Höllenglut greift danach sofort an.",
+    "russian": "Дает Пеклу +[effect0.upgrade.bonusdamage][attack]. Сразу после этого Пекло атакует.",
+    "portuguese": "Concede +[effect0.upgrade.bonusdamage][attack] à Pira. A Pira, então, ataca imediatamente.",
+    "chinese": "使薪火获得 +[effect0.upgrade.bonusdamage][attack]。随后薪火会立即发动攻击。",
+    "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] a la Pira. La Pira ataca de inmediato.",
+    "chinese_traditional": "對火堆施加+[effect0.upgrade.bonusdamage][attack]。接著，火堆立即攻擊。",
+    "korean": "화로에 +[effect0.upgrade.bonusdamage][attack] 효과를 적용한 뒤, 화로가 즉시 공격합니다.",
+    "japanese": "炉に+[effect0.upgrade.bonusdamage][attack]を付与する。炉は即座に攻撃を実行する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-5c5ea0cdc7435fb3-06b9dea93e0f11b418cd6af439d0858e-v2",
+      "english": "The Pyre clearly has a mind of its own, as anyone who has been near it will tell you. Perhaps it’s the latent mind of the former Titan it once was. Thankfully, it seems to still be on Hell’s side.",
+      "french": "Le brasier a manifestement un esprit propre, comme vous le diront tous ceux qui l'ont approché. Il s'agit peut-être de l'esprit de l'ancien titan qu'il fut jadis. Fort heureusement, il semble toujours du côté de l'enfer.",
+      "german": "Die Höllenglut hat eindeutig einen eigenen Verstand, was alle bestätigen werden, die je in ihrer Nähe waren. Vielleicht jener des ehemaligen Titanen, der sie einst war. Glücklicherweise scheint sie auf Seiten der Hölle zu stehen.",
+      "russian": "У Пекла несомненно есть собственный разум, что подтвердит любой, кто хоть раз оказывался поблизости. Возможно, в нем остался разум титана. Хорошо, что оно до сих пор на стороне Ада.",
+      "portuguese": "A Pira, claramente, tem mente própria, e qualquer pessoa que tenha estado perto dela pode confirmar. Talvez seja a mente latente do antigo Titã que ela já foi. Felizmente, parece ainda estar do lado do Inferno.",
+      "chinese": "薪火显然有自己的思想，任何靠近过它的人都会这么告诉你。也许这就是那曾经的泰坦残留的潜在意识。值得庆幸的是，他似乎仍然站在地狱这一边。",
+      "spanish": "Es evidente que la Pira tiene mente propia, como puede confirmar cualquiera que se haya acercado a ella. Tal vez sea el alma latente del titán que una vez fue. Por suerte, parece estar de lado del Infierno.",
+      "chinese_traditional": "火堆顯然有自己的想法，任何靠近它的人都會這樣告訴你。也許這是它曾經身為泰坦時的潛在意識。值得慶幸的是，它似乎仍然站在地獄這一邊。",
+      "korean": "화로는 분명 자신만의 마음을 지니고 있다. 가까이 다가갔던 사람이라면 누구나 그렇게 느낄 것이다. 아마도 한때 티탄이었던 그 존재의 잠재적인 의식일지도 모른다. 다행스럽게도 아직 지옥의 편에 있는 것 같다.",
+      "japanese": "炉には明らかに意思があり、それは近づいたことがある者たちが口を揃えて言うことだ。炉と化す前の巨人族の潜在的な精神なのかもしれない。ありがたいことに、今はまだ地獄の味方であるようだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Pyrelight.prefab",
+    "m_AssetGUID": "d649d7acf25e867499e41698ae904d9c"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitSelfPurge"
+    },
+    {
+      "traitStateName": "CardTraitEphemeral",
+      "paramTeamType": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "pyre",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "Plus10Attack",
+        "bonusDamage": 10
+      },
+      "suppressPyreRoomFocus": true
+    },
+    {
+      "effectStateName": "CardEffectAttackWithUnit",
+      "targetMode": "pyre",
+      "targetTeamType": "monsters"
+    }
+  ],
+  "ignoreWhenCountingMastery": true,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

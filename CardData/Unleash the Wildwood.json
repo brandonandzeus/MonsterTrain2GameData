@@ -1,0 +1,70 @@
+{
+  "id": "UnleashTheWildwood",
+  "name": "Unleash the Wildwood",
+  "nameKey": {
+    "key": "CardData_nameKey-d89e7b54b930c172-936c2015becd56e42a804cd2f7533c2c-v2",
+    "english": "Unleash the Wildwood",
+    "french": "Déchaînement du Boissauvage",
+    "german": "Das Wildholz entfesseln",
+    "russian": "Воля Диколесья",
+    "portuguese": "Libertação da Mata Selvagem",
+    "chinese": "野林之力",
+    "spanish": "Bosque Salvaje desatado",
+    "chinese_traditional": "釋放荒野",
+    "korean": "와일드우드의 해방",
+    "japanese": "ワイルドウッド解放"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-a8b18fab6bab1179-936c2015becd56e42a804cd2f7533c2c-v2",
+    "english": "Restore friendly units to full health.",
+    "french": "Restaure tous les PV des unités alliées.",
+    "german": "Stelle die volle Gesundheit von verbündeten Einheiten wieder her.",
+    "russian": "Восстанавливает здоровье союзников до максимума.",
+    "portuguese": "Restaura toda a vida das unidades aliadas.",
+    "chinese": "完全恢复所有友方单位的生命值。",
+    "spanish": "Restaura toda la salud de las unidades aliadas.",
+    "chinese_traditional": "恢復友方單位至滿血。",
+    "korean": "아군 유닛들의 체력을 완전히 회복합니다.",
+    "japanese": "味方ユニットの体力を全回復する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-12848beb62d8aaf4-936c2015becd56e42a804cd2f7533c2c-v2",
+      "english": "The vines of the Wildwood stockpile harvested energy to use during unexpected droughts. When these stores are tapped into, the energy provides a surge of new life and power to the host.",
+      "french": "Les lianes du Boissauvage récupèrent et accumulent de l'énergie en vue de sécheresses imprévues. Lorsque ces réserves sont exploitées, l'énergie fournit un regain de vie et de puissance à l'hôte.",
+      "german": "Die Ranken des Wildholzes speichern Energie für schlechte Zeiten. Wer diese Lager anzapft, erhält neue Lebenskraft und Stärke.",
+      "russian": "Лозы Диколесья сохраняют собранную энергию на случай неожиданной засухи. В случае необходимости, эти запасы даруют носителю новую жизнь и силы.",
+      "portuguese": "As vinhas da Mata Selvagem armazenam energia coletada para ser usada caso ocorram alagamentos inesperados. Aquele que consumir essas essências receberá um influxo de vida e poder.",
+      "chinese": "生长在野林的藤蔓会不断吸收、贮存能量，用以度过意料之外的旱灾。当这些能量被使用时，会为宿主提供新的生命与动力。",
+      "spanish": "Las enredaderas del Bosque Salvaje acumulan energía para utilizarla en épocas de sequía inesperadas. Acceder a estas reservas les proporciona una explosión de vigor y fuerza.",
+      "chinese_traditional": "荒野的藤蔓會儲存收集到的能量，以備意外乾旱時使用。在利用這些儲備時，能量會為宿主提供新的生命力和力量。",
+      "korean": "와일드우드의 덩굴은 수확한 에너지를 비축해 예상치 못한 가뭄을 대비한다. 비축한 에너지를 활성화하면 사용자에게 새로운 생명력과 놀라운 힘을 선사한다.",
+      "japanese": "ワイルドウッドのツタは、吸収したエネルギーを予期せぬ干ばつで使うために貯蔵している。このエネルギーを使用すると、新たな生命力が流れ込むのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Spell_Awoken_HealthBuff.prefab",
+    "m_AssetGUID": "12eaee1288bd74d488b25e95a8a580b4"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectHeal",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramInt": 9999,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_PhysicalSpellImpact_PS.prefab",
+          "m_AssetGUID": "c992a3660ae2eaa4faba33f41af19e5b"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

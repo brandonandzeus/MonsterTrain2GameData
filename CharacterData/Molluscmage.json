@@ -1,0 +1,107 @@
+{
+  "id": "MonsterMagicTotem",
+  "name": "Molluscmage",
+  "nameKey": {
+    "key": "CharacterData_nameKey-00857b91c85bd114-e4091c4b86bbd1244823c88421760583-v2",
+    "english": "Molluscmage",
+    "french": "Limage",
+    "german": "Molluskmagier",
+    "russian": "Моллюскомаг",
+    "portuguese": "Magolusco",
+    "chinese": "软体法师",
+    "spanish": "Magolusco",
+    "chinese_traditional": "軟體魔法師",
+    "korean": "연체 마법사",
+    "japanese": "モラスクメイジ"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-13266f83d54fde8f-e4091c4b86bbd1244823c88421760583-v2",
+      "english": "These dark mages have made themselves known through their control of the power that radiates from the Titan. Though small in stature, these mages have a striking resemblance to the Titan itself, which has resulted in the spread of many unproven theories of their origin.",
+      "french": "Ces sombres mages se sont fait connaître grâce à leur capacité à contrôler l'énergie qui émane du titan. Bien qu'ils soient de petite taille, leur ressemblance avec le titan est frappante, ce qui a entraîné la propagation de théories infondées sur leur origine.",
+      "german": "Diese finsteren Magier sind für ihre hervorragende Kontrolle über die Energie bekannt, die der Titan ausstrahlt. Sie mögen klein sein, aber sie sehen dem Titanen selbst erstaunlich ähnlich. Es gibt viele Theorien über den Ursprung dieser Mini-Titanen, aber keine konnte je bestätigt werden.",
+      "russian": "Эти темные маги прославились способностью управлять силой, которую излучает Титан. Пусть они и выглядят не слишком грозно, колдуны внешне подозрительно похожи на самого Титана, что порождает ничем не подтвержденные теории об их происхождении.",
+      "portuguese": "Estes magos sombrios ficaram famosos pelo domínio que possuem sob o poder emanado pelo Titã. Embora tenham estatura baixa, esses feiticeiros carregam grande semelhança com o próprio Titã, o que resultou na propagação de diversas teorias não comprovadas sobre suas origens.",
+      "chinese": "这种邪恶的法师知道如何控制泰坦释放出来的辐射，因而广为人知。尽管它们身材矮小，但它们与泰坦本体存在着惊人的相似之处，许多未经证实的传闻也因此不胫而走。",
+      "spanish": "Estos magos negros son notables por su control del poder que irradia el titán. Aun con su cuerpo menudo, su apariencia es sorprendentemente similar a la del titán, lo que ha dado lugar a muchas teorías sin verificar acerca de su origen.",
+      "chinese_traditional": "這些黑暗法師因能控制泰坦散發的力量而聞名。雖然身材矮小，但這些法師與泰坦有著驚人的相似之處，這導致了許多未經證實的起源理論開始傳播。",
+      "korean": "이 암흑 마법사들은 티탄이 내뿜는 힘을 통제하는 능력으로 자신들의 존재를 알렸다. 체구는 왜소하지만, 이 마법사들은 티탄과 많은 공통점을 지니고 있어 그들의 기원에 대해 입증되지 않은 이론들이 퍼져나갔다.",
+      "japanese": "この闇の魔術師たちは、巨人族から放たれる力を制御することで知られている。身体は小さいが巨人族を強く思い起こさせる外見をしており、その出自に関するさまざまな憶測が飛び交うこととなった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Molluscmage.prefab",
+    "m_AssetGUID": "3841b6754aa1c3e4b859af1e557e2304"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Molluscmage/FX_MolluscmageProjectile.prefab",
+      "m_AssetGUID": "ccd93bd1e0690514999880e91963cb27"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+      "m_AssetGUID": "b856194664a6e4b4da8f1c47c5a0e765"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "conduit",
+      "count": 10
+    }
+  ],
+  "triggers": [
+    {
+      "trigger": "on_death",
+      "effects": [
+        {
+          "effectStateName": "CardEffectNULL",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "additionalTooltips": [
+            {
+              "descriptionKey": {
+                "key": "CardTraitMagicPower_TooltipText",
+                "english": "Increases the amount of damage dealt and health restored by spells.",
+                "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+                "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+                "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+                "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+                "chinese": "提高法术造成的伤害与恢复的生命值。",
+                "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+                "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+                "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+                "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+              },
+              "titleKey": {
+                "key": "CardTraitMagicPower_TooltipTitle",
+                "english": "Magic Power",
+                "french": "Puissance magique",
+                "german": "Magische Kraft",
+                "russian": "Сила магии",
+                "portuguese": "Poder Mágico",
+                "chinese": "魔法强度",
+                "spanish": "Poder mágico",
+                "chinese_traditional": "魔法力量",
+                "korean": "마법력",
+                "japanese": "魔力"
+              }
+            }
+          ]
+        }
+      ],
+      "hideVisualAndIgnoreSilence": true,
+      "allowAdditionalTooltipsWhenVisualIsHidden": true
+    }
+  ],
+  "size": 1,
+  "health": 3,
+  "attackDamage": 5,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Mage"
+  ]
+}

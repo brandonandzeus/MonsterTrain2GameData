@@ -1,0 +1,79 @@
+{
+  "id": "ReduceRandomCardCostOnUnitPlay",
+  "name": "Flicker’s Liquor",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-80dc926b89dda33d-6adacca0d4808c3439a0ce9b431eb798-v2",
+    "english": "Flicker’s Liquor",
+    "french": "Spiritueux de Vacilly",
+    "german": "Flackers Feuerwasser",
+    "russian": "Выпивка Мерцало",
+    "portuguese": "Bebida do Bruxuleio",
+    "chinese": "烛焰的烈酒",
+    "spanish": "Licor de Cirio",
+    "chinese_traditional": "火光的烈酒",
+    "korean": "플리커의 증류주",
+    "japanese": "フリッカーの酒"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-3c43fd14d126916f-6adacca0d4808c3439a0ce9b431eb798-v2",
+    "english": "After [deployphase], when you play a unit a random card in hand is reduced to 0[ember] until played or discarded.",
+    "french": "Après la [deployphase], lorsque vous jouez une unité, une carte en main aléatoire tombe à 0[ember] jusqu'à être jouée ou défaussée.",
+    "german": "Wenn du nach der [deployphase] eine Einheit spielst, werden die Kosten einer zufälligen Karte auf deiner Hand auf 0[ember] reduziert, bis sie gespielt oder abgeworfen wird.",
+    "russian": "Когда вы призываете бойца после <b>фазы размещения</b>, стоимость случайной карты в руке снижается до 0[ember] до тех пор, пока она не будет сыграна или сброшена.",
+    "portuguese": "Após a [deployphase], quando você joga uma unidade, uma carta aleatória da sua mão é reduzida a 0[ember] até ser jogada ou descartada.",
+    "chinese": "在[deployphase]之后，当你打出一个单位时，该回合手牌内的一张随机卡牌费用会降为 0[ember]，直到其被打出或丢弃。",
+    "spanish": "Tras la [deployphase], cada vez que juegas una unidad, una carta de tu mano al azar se reduce a 0[ember] hasta que la juegas o la descartas.",
+    "chinese_traditional": "在[deployphase]後，當你打出一個單位時，手牌中的一張隨機卡牌費用降為0[ember]，直到被打出或捨棄。",
+    "korean": "[deployphase] 이후, 유닛을 사용하면, 패에 있는 무작위 카드의 비용이 0[ember]로 감소합니다. 이 효과는 해당 카드를 사용하거나 버릴 때까지 유지됩니다.",
+    "japanese": "[deployphase]の後にユニットをプレイすると、手札のランダムなカードが、プレイされるか破棄されるまで0[ember]に減少する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-903b328c14678886-6adacca0d4808c3439a0ce9b431eb798-v2",
+      "english": "Flicker has been known to imbibe on occasion, and when he can’t find me to drink with him, he’ll corner unlucky Waxers who quickly succumb to its effects.",
+      "french": "Vacilly a un certain penchant pour la boisson. Quand je ne suis pas là pour trinquer avec lui, il se rabat sur de pauvres cireux, qui succombent rapidement aux effets de l'alcool.",
+      "german": "Es ist bekannt, dass Flacker gerne mal einen trinkt. Wenn ich gerade nicht da bin, tut er das mit armen Wachsern, die schnell seinen Getränken erliegen.",
+      "russian": "Мерцало известен тем, что порой любит выпить, и если не может найти меня, он ловит неудачливых Восковиков, быстро поддающихся его чарам.",
+      "portuguese": "Bruxuleio é conhecido por beber ocasionalmente e, quando não consegue me encontrar para beber com ele, encurrala Céreos azarados que sucumbem rapidamente aos efeitos da bebida.",
+      "chinese": "众所周知，烛焰这个人有时候会喝上几杯。当他找不到我一起喝酒的时候，他就会随便找上几个不走运的烛人，这些人往往喝不了多少就会被灌趴下。",
+      "spanish": "No es un secreto que Cirio le da a la bebida de vez en cuando y, cuando no da conmigo para que le acompañe, acorrala a los pobres encerados que sucumben fácilmente a sus efectos.",
+      "chinese_traditional": "火光有時會沉溺放縱，當他找不到我一起喝酒時，他會逼迫倒楣的蠟像陪他，而蠟像也很快就會喝醉。",
+      "korean": "플리커는 가끔 술을 마시곤 했다. 그리고 나와 함께 마실 수 없을 때는 술에 금방 취하는 불행한 밀랍 인간을 끌어들이곤 했다.",
+      "japanese": "フリッカーは時々酒を飲むことで知られており、飲み仲間の私を見つけられないときは、すぐに酔いが回ってしまう不運なワクサーを追い詰めるのだ。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassRemnant",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTempUpgradeToRandomCardInHand",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "FreeFromBlessing",
+        "filters": [
+          {
+            "id": "ExcludeZeroAndXCost",
+            "costRange": {
+              "x": 1.0,
+              "y": 99.0
+            },
+            "excludeXCost": true
+          },
+          {
+            "id": "ExcludeUnplayable",
+            "excludedCardTraitsOperator": "and",
+            "excludedCardTraits": [
+              "CardTraitUnplayable"
+            ]
+          }
+        ],
+        "hideUpgradeIconOnCard": true,
+        "isUnique": true,
+        "costReduction": 99
+      },
+      "paramInt": 1
+    }
+  ],
+  "disallowInDeploymentPhase": true,
+  "unlockLevel": 2
+}

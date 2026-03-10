@@ -1,0 +1,464 @@
+{
+  "id": "UpgradeTreeFlicker",
+  "name": "Rector Flicker",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "FlickerAddBurnoutToSelf",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-0714befbca26c8b2-8bfafc3bb9c592b4f892ce98c94d59e0-v2",
+            "english": "Burn Bright",
+            "french": "Brillant de mille feux",
+            "german": "Helle Flamme",
+            "russian": "Яркое пламя",
+            "portuguese": "Resplandecer",
+            "chinese": "光芒四射",
+            "spanish": "Llama brillante",
+            "chinese_traditional": "熾烈燃燒",
+            "korean": "불타는 광채",
+            "japanese": "バーン・ブライト"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ephemeral",
+              "count": 3
+            }
+          ],
+          "bonusDamage": 40,
+          "bonusHP": 40
+        },
+        {
+          "id": "FlickerAddBurnoutToSelf2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-5abba02521e7e0ed-3d920ea868c877d419769886c419ad57-v2",
+            "english": "Burn Bright II",
+            "french": "Brillant de mille feux II",
+            "german": "Helle Flamme II",
+            "russian": "Яркое пламя II",
+            "portuguese": "Resplandecer II",
+            "chinese": "光芒四射 II",
+            "spanish": "Llama brillante II",
+            "chinese_traditional": "耀燃II",
+            "korean": "불타는 광채 II",
+            "japanese": "バーン・ブライトII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ephemeral",
+              "count": 3
+            }
+          ],
+          "bonusDamage": 90,
+          "bonusHP": 90
+        },
+        {
+          "id": "FlickerAddBurnoutToSelf3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-9ae9f1ee159542a7-80030ddeb28f79b4aa31c334b90664d6-v2",
+            "english": "Burn Bright III",
+            "french": "Brillant de mille feux III",
+            "german": "Helle Flamme III",
+            "russian": "Яркое пламя III",
+            "portuguese": "Resplandecer III",
+            "chinese": "光芒四射 III",
+            "spanish": "Llama brillante III",
+            "chinese_traditional": "耀燃III",
+            "korean": "불타는 광채 III",
+            "japanese": "バーン・ブライトIII"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "ephemeral",
+              "count": 3
+            }
+          ],
+          "bonusDamage": 190,
+          "bonusHP": 190
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "FlickerHealOnHarvest",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-cec4ae6eb4885e41-269ad86781ade3a4589cc5536d018cf9-v2",
+            "english": "Accumulator",
+            "french": "Accumulateur",
+            "german": "Akkumulator",
+            "russian": "Накопитель",
+            "portuguese": "Acumulador",
+            "chinese": "蓄能",
+            "spanish": "Acumulación",
+            "chinese_traditional": "蓄能者",
+            "korean": "축적가",
+            "japanese": "アキュムレータ"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-8c908e5a9eca27e2-269ad86781ade3a4589cc5536d018cf9-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+                "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+                "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+              },
+              "trigger": "on_any_unit_death_on_floor",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "HealOnHarvestTrigger1",
+                    "bonusDamage": 1,
+                    "bonusHP": 5
+                  },
+                  "hideTooltip": true
+                }
+              ]
+            }
+          ],
+          "bonusHP": 5
+        },
+        {
+          "id": "FlickerHealOnHarvest2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-6064c513307d08a2-26433560b6cd64144b13021c8ff9e8ed-v2",
+            "english": "Accumulator II",
+            "french": "Accumulateur II",
+            "german": "Akkumulator II",
+            "russian": "Накопитель II",
+            "portuguese": "Acumulador II",
+            "chinese": "蓄能 II",
+            "spanish": "Acumulación II",
+            "chinese_traditional": "蓄能者II",
+            "korean": "축적가 II",
+            "japanese": "アキュムレータII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-31b43f6b86be3aa8-26433560b6cd64144b13021c8ff9e8ed-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+                "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+                "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+              },
+              "trigger": "on_any_unit_death_on_floor",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "HealOnHarvestTrigger2",
+                    "bonusDamage": 2,
+                    "bonusHP": 10
+                  },
+                  "hideTooltip": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 5,
+          "bonusHP": 15
+        },
+        {
+          "id": "FlickerHealOnHarvest3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-6f1ca6ad0659333e-36a8bdfbe1e867e4795bd92052265335-v2",
+            "english": "Accumulator III",
+            "french": "Accumulateur III",
+            "german": "Akkumulator III",
+            "russian": "Накопитель III",
+            "portuguese": "Acumulador III",
+            "chinese": "蓄能 III",
+            "spanish": "Acumulación III",
+            "chinese_traditional": "蓄能者III",
+            "korean": "축적가 III",
+            "japanese": "アキュムレータIII"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-3ef5a1bed82e3ccf-36a8bdfbe1e867e4795bd92052265335-v2",
+                "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+                "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+                "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+                "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+                "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
+                "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+                "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+                "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+                "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+                "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+              },
+              "trigger": "on_any_unit_death_on_floor",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "self",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "HealOnHarvestTrigger3",
+                    "bonusDamage": 4,
+                    "bonusHP": 20
+                  },
+                  "hideTooltip": true
+                }
+              ]
+            }
+          ],
+          "bonusDamage": 20,
+          "bonusHP": 40
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "FlickerRaiseOnSlay",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-3fe925aef5dea875-ca8dcdd109eb4e54bbca0bc80ded5777-v2",
+            "english": "Dark Calling",
+            "french": "Appel des ténèbres",
+            "german": "Dunkle Berufung",
+            "russian": "Зов тьмы",
+            "portuguese": "Chamado Sombrio",
+            "chinese": "黑暗呼唤",
+            "spanish": "Llamada oscura",
+            "chinese_traditional": "黑暗呼喚",
+            "korean": "어둠의 사도",
+            "japanese": "ダーク・コーリング"
+          },
+          "unitAbilityUpgrade": {
+            "id": "FlickerRaiseOnSlayAbility1",
+            "nameKey": {
+              "key": "CardData_nameKey-266ec8486d254fcb-495151f1152d3fc45a55f270703736b2-v2",
+              "english": "Cryptcall",
+              "french": "Appel de la crypte",
+              "german": "Gruftruf",
+              "russian": "Зов из склепа",
+              "portuguese": "Chamado da Cripta",
+              "chinese": "地穴呼唤",
+              "spanish": "Llamada a la cripta",
+              "chinese_traditional": "墓穴呼喚",
+              "korean": "크립트콜",
+              "japanese": "墓所の呼び声"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-3449ef7a83b51c53-495151f1152d3fc45a55f270703736b2-v2",
+              "english": "[raise] [effect0.power] random units and apply an additional +[effect0.upgrade.bonusdamage][attack].",
+              "french": "<b>Reforme</b> [effect0.power] unités aléatoires et leur confère +[effect0.upgrade.bonusdamage][attack].",
+              "german": "[raise] von [effect0.power] zufälligen Einheiten. Wende zusätzlich +[effect0.upgrade.bonusdamage][attack] an.",
+              "russian": "[raise] и усиление [effect0.power] шт. случайных бойцов на +[effect0.upgrade.bonusdamage][attack].",
+              "portuguese": "<b>Renova</b> [effect0.power] unidades aleatórias e aplica um adicional de +[effect0.upgrade.bonusdamage][attack].",
+              "chinese": "随机[raise] [effect0.power] 个单位，并使其获得 +[effect0.upgrade.bonusdamage][attack]。",
+              "spanish": "<b>Reforma</b> [effect0.power] unidades aleatorias y añade +[effect0.upgrade.bonusdamage][attack] adicional.",
+              "chinese_traditional": "[raise][effect0.power]個隨機單位並額外施加+[effect0.upgrade.bonusdamage][attack]。",
+              "korean": "[raise] 효과로 무작위 유닛을 [effect0.power]명 되살린 후 +[effect0.upgrade.bonusdamage][attack]을 추가 획득합니다.",
+              "japanese": "ランダムなユニットを[effect0.power] [raise]させ、追加で+[effect0.upgrade.bonusdamage][attack]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "effects": [
+              {
+                "effectStateName": "CardEffectRecursion",
+                "targetMode": "exhaust",
+                "targetCardType": "monster",
+                "targetCardSelectionMode": "random_to_hand",
+                "paramCardUpgradeData": {
+                  "id": "RaiseForChampionLevel1",
+                  "statusEffectUpgrades": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 1
+                    }
+                  ],
+                  "bonusDamage": 10,
+                  "bonusHP": 5,
+                  "costReduction": 99
+                },
+                "shouldFailToCastIfTestFails": true,
+                "paramInt": 2,
+                "additionalParamInt": 19,
+                "paramBool": true
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "bonusDamage": 5,
+          "bonusHP": 5
+        },
+        {
+          "id": "FlickerRaiseOnSlay2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-105f1a8505b57c02-061d5ba1d51216648b61caaf0a3a5a14-v2",
+            "english": "Dark Calling II",
+            "french": "Appel des ténèbres II",
+            "german": "Dunkle Berufung II",
+            "russian": "Зов тьмы II",
+            "portuguese": "Chamado Sombrio II",
+            "chinese": "黑暗呼唤 II",
+            "spanish": "Llamada oscura II",
+            "chinese_traditional": "黑暗呼喚II",
+            "korean": "어둠의 사도 II",
+            "japanese": "ダーク・コーリングII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "FlickerRaiseOnSlayAbility2",
+            "nameKey": {
+              "key": "CardData_nameKey-a700e980850293be-80aa411171af5384781767dfb03bc129-v2",
+              "english": "Cryptcall II",
+              "french": "Appel de la crypte II",
+              "german": "Gruftruf II",
+              "russian": "Зов из склепа II",
+              "portuguese": "Chamado da Cripta II",
+              "chinese": "地穴呼唤 II",
+              "spanish": "Llamada a la cripta II",
+              "chinese_traditional": "墓穴呼喚II",
+              "korean": "크립트콜 II",
+              "japanese": "墓所の呼び声II"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-919791421367962a-80aa411171af5384781767dfb03bc129-v2",
+              "english": "[raise] [effect0.power] random units and apply an additional +[effect0.upgrade.bonusdamage][attack].",
+              "french": "<b>Reforme</b> [effect0.power] unités aléatoires et leur confère +[effect0.upgrade.bonusdamage][attack].",
+              "german": "[raise] von [effect0.power] zufälligen Einheiten. Wende zusätzlich +[effect0.upgrade.bonusdamage][attack] an.",
+              "russian": "[raise] и усиление [effect0.power] шт. случайных бойцов на +[effect0.upgrade.bonusdamage][attack].",
+              "portuguese": "<b>Renova</b> [effect0.power] unidades aleatórias e aplica um adicional de +[effect0.upgrade.bonusdamage][attack].",
+              "chinese": "随机[raise] [effect0.power] 个单位，并使其获得 +[effect0.upgrade.bonusdamage][attack]。",
+              "spanish": "<b>Reforma</b> [effect0.power] unidades aleatorias y añade +[effect0.upgrade.bonusdamage][attack] adicional.",
+              "chinese_traditional": "[raise][effect0.power]個隨機單位並額外施加+[effect0.upgrade.bonusdamage][attack]。",
+              "korean": "[raise] 효과로 무작위 유닛을 [effect0.power]명 되살린 후 +[effect0.upgrade.bonusdamage][attack]을 추가 획득합니다.",
+              "japanese": "ランダムなユニットを[effect0.power] [raise]させ、追加で+[effect0.upgrade.bonusdamage][attack]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "effects": [
+              {
+                "effectStateName": "CardEffectRecursion",
+                "targetMode": "exhaust",
+                "targetCardType": "monster",
+                "targetCardSelectionMode": "random_to_hand",
+                "paramCardUpgradeData": {
+                  "id": "RaiseForChampionLevel2",
+                  "statusEffectUpgrades": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 1
+                    }
+                  ],
+                  "bonusDamage": 15,
+                  "bonusHP": 5,
+                  "costReduction": 99
+                },
+                "shouldFailToCastIfTestFails": true,
+                "paramInt": 2,
+                "additionalParamInt": 19,
+                "paramBool": true
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "bonusDamage": 20,
+          "bonusHP": 20
+        },
+        {
+          "id": "FlickerRaiseOnSlay3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-f21c05b3c51ff1ea-5f0e72228d221f94487fb590d81d69c5-v2",
+            "english": "Dark Calling III",
+            "french": "Appel des ténèbres III",
+            "german": "Dunkle Berufung III",
+            "russian": "Зов тьмы III",
+            "portuguese": "Chamado Sombrio III",
+            "chinese": "黑暗呼唤 III",
+            "spanish": "Llamada oscura III",
+            "chinese_traditional": "黑暗呼喚III",
+            "korean": "어둠의 사도 III",
+            "japanese": "ダーク・コーリングIII"
+          },
+          "unitAbilityUpgrade": {
+            "id": "FlickerRaiseOnSlayAbility3",
+            "nameKey": {
+              "key": "CardData_nameKey-164a561ccaf7e8a4-e167b4c84cbb1d34e838644d0e66aa82-v2",
+              "english": "Cryptcall III",
+              "french": "Appel de la crypte III",
+              "german": "Gruftruf III",
+              "russian": "Зов из склепа III",
+              "portuguese": "Chamado da Cripta III",
+              "chinese": "地穴呼唤 III",
+              "spanish": "Llamada a la cripta III",
+              "chinese_traditional": "墓穴呼喚III",
+              "korean": "크립트콜 III",
+              "japanese": "墓所の呼び声III"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-4bde5fee030faccc-e167b4c84cbb1d34e838644d0e66aa82-v2",
+              "english": "[raise] [effect0.power] random units and apply an additional +[effect0.upgrade.bonusdamage][attack].",
+              "french": "<b>Reforme</b> [effect0.power] unités aléatoires et leur confère +[effect0.upgrade.bonusdamage][attack].",
+              "german": "[raise] von [effect0.power] zufälligen Einheiten. Wende zusätzlich +[effect0.upgrade.bonusdamage][attack] an.",
+              "russian": "[raise] и усиление [effect0.power] шт. случайных бойцов на +[effect0.upgrade.bonusdamage][attack].",
+              "portuguese": "<b>Renova</b> [effect0.power] unidades aleatórias e aplica um adicional de +[effect0.upgrade.bonusdamage][attack].",
+              "chinese": "随机[raise] [effect0.power] 个单位，并使其获得 +[effect0.upgrade.bonusdamage][attack]。",
+              "spanish": "<b>Reforma</b> [effect0.power] unidades aleatorias y añade +[effect0.upgrade.bonusdamage][attack] adicional.",
+              "chinese_traditional": "[raise][effect0.power]個隨機單位並額外施加+[effect0.upgrade.bonusdamage][attack]。",
+              "korean": "[raise] 효과로 무작위 유닛을 [effect0.power]명 되살린 후 +[effect0.upgrade.bonusdamage][attack]을 추가 획득합니다.",
+              "japanese": "ランダムなユニットを[effect0.power] [raise]させ、追加で+[effect0.upgrade.bonusdamage][attack]を付与する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "effects": [
+              {
+                "effectStateName": "CardEffectRecursion",
+                "targetMode": "exhaust",
+                "targetCardType": "monster",
+                "targetCardSelectionMode": "random_to_hand",
+                "paramCardUpgradeData": {
+                  "id": "RaiseForChampionLevel3",
+                  "statusEffectUpgrades": [
+                    {
+                      "statusId": "ephemeral",
+                      "count": 1
+                    }
+                  ],
+                  "bonusDamage": 25,
+                  "bonusHP": 5,
+                  "costReduction": 99
+                },
+                "shouldFailToCastIfTestFails": true,
+                "paramInt": 2,
+                "additionalParamInt": 19,
+                "paramBool": true
+              }
+            ],
+            "cooldownAfterActivated": 1,
+            "isUnitAbility": true,
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "bonusDamage": 40,
+          "bonusHP": 40
+        }
+      ]
+    }
+  ]
+}

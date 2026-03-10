@@ -1,0 +1,105 @@
+{
+  "id": "VampiresTooth",
+  "name": "Vampire's Tooth",
+  "nameKey": {
+    "key": "CardData_nameKey-21aff0d44aa90883-565a11151f012f84e91809f00fcde05e-v2",
+    "english": "Vampire's Tooth",
+    "french": "Dent de vampire",
+    "german": "Vampirzahn",
+    "russian": "Клык вампира",
+    "portuguese": "Dente de Vampiro",
+    "chinese": "吸血鬼之牙",
+    "spanish": "Colmillo de vampiro",
+    "chinese_traditional": "吸血鬼之牙",
+    "korean": "뱀파이어 이빨",
+    "japanese": "吸血鬼の牙"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-88eb66bfd57f02e0-565a11151f012f84e91809f00fcde05e-v2",
+      "english": "“The name is a little tongue-in-cheek, my assistant wanted eternal life so I made her an implant that would let her, let’s say, ‘drink the life force’ of others.”\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« Le</nobr> nom est un peu ironique. Mon assistante voulait la vie éternelle, je lui ai donc fabriqué un implant permettant, disons, de \"boire la force vitale\" des <nobr>autres. »</nobr> \n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Der Name birgt eine gewisse Ironie. Meine Assistentin wünschte sich ewiges Leben, also fertigte ich ihr ein Implantat an, mit dem sie anderen ,den Lebenssaft aussaugen’ könnte.“\n—aus Dr. Orechis Notizbuch",
+      "russian": "«Моя помощница хотела вечной жизни, поэтому я создал для нее имплант, позволяющий, скажем так, \"питаться жизненной силой других\". А название выбрали в шутку».\n— Из записной книжки Оречи",
+      "portuguese": "“O nome é um pouco irreverente: minha assistente queria a vida eterna, então eu fiz um implante que permitiria que ela, digamos, ‘bebesse a força vital’ dos outros.”\n— Anotação do Dr. Orechi",
+      "chinese": "“有点滑稽的是，我的助手想要永恒的生命，所以我给她做了个植入物，让她可以，怎么说呢，‘饮用其他人的生命能量’。”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«El nombre es un poco irónico: mi ayudante quería la vida eterna, así que le preparé un implante que le permitiría, por así decirlo, \"beber la fuerza vital\" de los demás».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「這個名字有點諷刺，我的助手想要永生，所以我幫她做了一個植入物，讓她可以……『吸取別人的生命力』。」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“약간 비꼬는 듯한 의미를 담은 이름이 특징이지. 내 조수가 영원한 생명을 원하기에, 다른 자의 생명력을 흡수할 수 있는 장치를 만들어주었다.”\n- 오레치 박사의 기록",
+      "japanese": "「名前は少々冗談めいたものだが、助手が永遠の命を望んでいたものでな。彼女のために…そうじゃな、いわば\"他人の生命力を飲む\"ことのできる組織を移植してやったのじゃよ」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_VampireTooth.prefab",
+    "m_AssetGUID": "db8e84a00c646954685b1e0d9853037c"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitGraftedEquipment",
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "VampiresTooth_Upgrade",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "lifesteal",
+            "count": 1
+          }
+        ],
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-3794497575f56224-b1d4965a9b184cc4d8392d3b5d042766-v2",
+              "english": "Gain [lifesteal] [effect0.status0.power].",
+              "french": "Octroie [lifesteal] [effect0.status0.power].",
+              "german": "Erhalte [lifesteal] [effect0.status0.power].",
+              "russian": "Дает [effect0.status0.power] х[lifesteal].",
+              "portuguese": "Recebe [lifesteal] [effect0.status0.power].",
+              "chinese": "获得 [lifesteal] [effect0.status0.power]。",
+              "spanish": "Añade [lifesteal] [effect0.status0.power].",
+              "chinese_traditional": "獲得[lifesteal][effect0.status0.power]。",
+              "korean": "[lifesteal] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[lifesteal] [effect0.status0.power]を得る。"
+            },
+            "trigger": "post_combat",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "lifesteal",
+                    "count": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bonusDamage": 15
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/VampireTooth/FX_VampireTooth.prefab",
+          "m_AssetGUID": "63d1a1bac16460744a071a54e3a7564a"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "ignoreWhenCountingMastery": true,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

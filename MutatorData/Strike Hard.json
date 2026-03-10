@@ -1,0 +1,64 @@
+{
+  "id": "AllUnitsMultistrike",
+  "name": "Strike Hard",
+  "nameKey": {
+    "key": "MutatorData_nameKey-9fabd51cbfd9033f-b83ee16a8d0a12b46b1dcfef24b0b05e-v2",
+    "english": "Strike Hard",
+    "french": "Coup de boutoir",
+    "german": "Hart zuschlagen",
+    "russian": "Тяжелый удар",
+    "portuguese": "Golpe Forte",
+    "chinese": "重击",
+    "spanish": "Mano dura",
+    "chinese_traditional": "猛力一擊",
+    "korean": "강타",
+    "japanese": "叩き込め"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-7ba9f78a96131c6e-b83ee16a8d0a12b46b1dcfef24b0b05e-v2",
+    "english": "All units get [multistrike] [effect0.upgrade.status0.power].",
+    "french": "Toutes les unités gagnent [multistrike] [effect0.upgrade.status0.power].",
+    "german": "Alle Einheiten erhalten [multistrike] [effect0.upgrade.status0.power].",
+    "russian": "Все бойцы получают [multistrike] х[effect0.upgrade.status0.power].",
+    "portuguese": "Todas as unidades recebem [multistrike] [effect0.upgrade.status0.power].",
+    "chinese": "所有单位获得[multistrike] [effect0.upgrade.status0.power]。",
+    "spanish": "Todas las unidades añaden [multistrike] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "所有單位獲得[multistrike][effect0.upgrade.status0.power]。",
+    "korean": "모든 유닛이 [multistrike] [effect0.upgrade.status0.power]를 획득합니다.",
+    "japanese": "すべてのユニットが[multistrike] [effect0.upgrade.status0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTempUpgrade",
+      "paramCardUpgradeData": {
+        "id": "Multistrike1",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "multistrike",
+            "count": 1
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyUnit",
+            "cardType": "monster"
+          }
+        ],
+        "isUnique": true
+      },
+      "paramSourceTeam": "monsters",
+      "paramBool": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "multistrike",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "heroes"
+    }
+  ],
+  "boonValue": -3
+}

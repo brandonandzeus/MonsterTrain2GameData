@@ -1,0 +1,173 @@
+{
+  "id": "SpikeOfTheLegion",
+  "name": "Spike of the Legion",
+  "nameKey": {
+    "key": "CardData_nameKey-44ff1798069143af-256f74431d0a5c54596bcb382b00975d-v2",
+    "english": "Spike of the Legion",
+    "french": "Crampon armillaire",
+    "german": "Nagel der Legion",
+    "russian": "Костыль легиона",
+    "portuguese": "Prego da Legião",
+    "chinese": "菌团道钉",
+    "spanish": "Clavo de la Legión",
+    "chinese_traditional": "軍團尖刺",
+    "korean": "군단의 쐐기",
+    "japanese": "菌糸族の犬釘"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-8de6d38fd6d058c3-256f74431d0a5c54596bcb382b00975d-v2",
+    "english": "[propagate] [trait1.power][x].",
+    "french": "[propagate] [trait1.power][x].",
+    "german": "[propagate] [trait1.power][x].",
+    "russian": "[propagate] [x][trait1.power].",
+    "portuguese": "Recebe [propagate] [trait1.power][x].",
+    "chinese": "[propagate] [trait1.power][x]。",
+    "spanish": "[propagate] [trait1.power][x].",
+    "chinese_traditional": "[propagate][trait1.power][x]。",
+    "korean": "[propagate] [trait1.power][x].",
+    "japanese": "[propagate] [trait1.power][x]。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-b07bde17a52aca41-256f74431d0a5c54596bcb382b00975d-v2",
+      "english": "Whenever anyone has tried to build the Rail through the Underlegion’s realm, they found the iron overcome by spores and fungi.",
+      "french": "Chaque fois que quelqu'un a essayé de construire la Voie à travers le royaume des Armillaires, il a été confronté à l'invasion du fer par les spores et les champignons.",
+      "german": "Wann immer jemand versucht hat, das Gleis durch das Reich der Unterlegion zu legen, wurde das Eisen von Sporen und Pilzen überwuchert.",
+      "russian": "Всякий раз, когда кто-нибудь пытался проложить железную дорогу через царство Нижнего легиона, он обнаруживал, что железо поражено спорами и грибками.",
+      "portuguese": "Sempre que alguém tentava construir a ferrovia através do reino da Legião do Submundo, encontrava o ferro tomado por esporos e fungos.",
+      "chinese": "每当有人试图在地下菌团的领地上建造铁道，都会发现那些铁已经被孢子和真菌所铺满。",
+      "spanish": "Cada intento de construir los Raíles en el reino de la Infralegión ha acabado con el hierro corroído con esporas y hongos.",
+      "chinese_traditional": "每當有人試圖穿過地下軍團的領域修建軌道時，他們就會發現自己的鐵器被孢子和真菌所侵蝕。",
+      "korean": "지하 군단이 서식하는 영역을 가로지르는 선로를 만들 때마다 선로에 들러붙은 포자와 곰팡이가 철을 부식시키는 광경을 보게 되었다.",
+      "japanese": "菌糸族の領域を通る鉄道を敷設しようとすると、鉄が胞子や菌類に侵食されることが判明した。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_UnderlegionsSpike.prefab",
+    "m_AssetGUID": "23afbe0d2e69335428b0ccc5b0121543"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    },
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramTrackedValue": "played_cost",
+      "paramInt": 2,
+      "paramInt2": 1
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAdjustAllStatusEffects",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardEffectBuff_TooltipText",
+            "english": "Buff effects are generally positive for their target and are represented by green icons.",
+            "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+            "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+            "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+            "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+            "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+            "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+            "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+            "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+            "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectBuff_TooltipTitle",
+            "english": "Buff",
+            "french": "Bonus",
+            "german": "Buff",
+            "russian": "Усиление",
+            "portuguese": "Buff",
+            "chinese": "增益",
+            "spanish": "Potenciación",
+            "chinese_traditional": "增益",
+            "korean": "버프",
+            "japanese": "バフ"
+          },
+          "style": "positive"
+        },
+        {
+          "descriptionKey": {
+            "key": "CardEffectDebuff_TooltipText",
+            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectDebuff_TooltipTitle",
+            "english": "Debuff",
+            "french": "Malus",
+            "german": "Debuff",
+            "russian": "Ослабление",
+            "portuguese": "Debuff",
+            "chinese": "减益",
+            "spanish": "Debilitación",
+            "chinese_traditional": "減益",
+            "korean": "디버프",
+            "japanese": "デバフ"
+          },
+          "style": "negative"
+        },
+        {
+          "statusId": "dazed",
+          "descriptionKey": {
+            "key": "CardEffectDebuff_TooltipText",
+            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+          },
+          "titleKey": {
+            "key": "CardEffectDebuff_TooltipTitle",
+            "english": "Debuff",
+            "french": "Malus",
+            "german": "Debuff",
+            "russian": "Ослабление",
+            "portuguese": "Debuff",
+            "chinese": "减益",
+            "spanish": "Debilitación",
+            "chinese_traditional": "減益",
+            "korean": "디버프",
+            "japanese": "デバフ"
+          },
+          "style": "negative",
+          "isStatusTooltip": true
+        }
+      ],
+      "additionalParamInt": 1,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/UnderLegion/LegionSpike/FX_LegionSpike.prefab",
+          "m_AssetGUID": "598d62e08d875484cb5ce06debf1ba87"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hung Bui"
+}

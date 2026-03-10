@@ -1,0 +1,48 @@
+{
+  "id": "Echoes_FriendlyUnitsGetDominionBuffs",
+  "name": "Dominion's Reign",
+  "nameKey": {
+    "key": "MutatorData_nameKey-ba3378e8dc4bf0f3-0be2fdccdb6b14340bde782a7ab99eab-v2",
+    "english": "Dominion's Reign",
+    "french": "Règne de Domination",
+    "german": "Regime der Herrschaft",
+    "russian": "Царство Доминиона",
+    "portuguese": "Reinado do Domínio",
+    "chinese": "统御之治",
+    "spanish": "Reino de Dominio",
+    "chinese_traditional": "主宰之治",
+    "korean": "도미니온의 군림",
+    "japanese": "ドミニオンの支配"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-199b5cfb34207bf8-0be2fdccdb6b14340bde782a7ab99eab-v2",
+    "english": "Friendly units have one of Dominion's Boons at random.",
+    "french": "Les unités alliées gagnent une bénédiction de Domination aléatoire.",
+    "german": "Verbündete Einheiten erhalten eine zufällige Gabe der Herrschaft.",
+    "russian": "У союзников будет случайное благо от Доминиона.",
+    "portuguese": "As unidades aliadas recebem um dos Benefícios do Domínio aleatoriamente.",
+    "chinese": "友方单位随机拥有一项统御泰坦的祝福。",
+    "spanish": "Las unidades aliadas tienen un don de Dominio al azar.",
+    "chinese_traditional": "友方單位隨機獲得一個主宰的恩惠。",
+    "korean": "아군 유닛들이 무작위로 도미니온의 혜택 하나를 얻습니다.",
+    "japanese": "味方ユニットがドミニオンの恵みをランダムで1つ得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStartingUpgradeToUnitCards",
+      "paramCardFilter": {
+        "id": "ExcludeChampions",
+        "excludedSubtypesOperator": "and",
+        "excludedSubtypes": [
+          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+        ]
+      },
+      "paramEnhancerPool": "DominionUpgradePool"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStartingUpgradeToCardDrafts",
+      "paramEnhancerPool": "DominionUpgradePool"
+    }
+  ],
+  "boonValue": 8
+}

@@ -1,0 +1,74 @@
+{
+  "id": "EventCard_BeaconsLight",
+  "name": "Beacon's Light",
+  "nameKey": {
+    "key": "CardData_nameKey-92bc6ef9b4b6e98c-a286caa10ceb42b478eecdbb6c6261a5-v2",
+    "english": "Beacon's Light",
+    "french": "Lumière de la balise",
+    "german": "Licht des Leuchtfeuers",
+    "russian": "Свет маяка",
+    "portuguese": "Luz do Farol",
+    "chinese": "信标之光",
+    "spanish": "Luz del faro",
+    "chinese_traditional": "烽火台的光芒",
+    "korean": "봉화의 빛",
+    "japanese": "篝火の明かり"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-82ca7b2cb550324c-a286caa10ceb42b478eecdbb6c6261a5-v2",
+    "english": "Apply [dazed] [effect0.status0.power] to enemy units on all floors.",
+    "french": "Applique [dazed] [effect0.status0.power] aux ennemis à tous les niveaux.",
+    "german": "Wende [dazed] [effect0.status0.power] auf gegnerische Einheiten auf allen Ebenen an.",
+    "russian": "Накладывает на врагов на всех этажах [dazed] х[effect0.status0.power].",
+    "portuguese": "Aplica [dazed] [effect0.status0.power] às unidades inimigas em todos os andares.",
+    "chinese": "对所有层的敌方单位施加 [dazed] [effect0.status0.power]。",
+    "spanish": "Añade [dazed] [effect0.status0.power] a las unidades enemigas en todos los pisos.",
+    "chinese_traditional": "對所有樓層的敵方單位施加[dazed][effect0.status0.power]。",
+    "korean": "모든 층의 적 유닛들에 [dazed] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "すべてのフロアの敵ユニットに[dazed] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-3a6907dd3560b329-a286caa10ceb42b478eecdbb6c6261a5-v2",
+      "english": "The Beacon’s light swallows up every shape and shadow. Those foolish enough to meet its gaze will leave with their senses seared away.",
+      "french": "La lumière de la balise engloutit toute forme et toute ombre. Ceux qui sont assez fous pour la fixer repartent avec les yeux brûlés.",
+      "german": "Das Licht des Leuchtfeuers verschluckt jede Form und jeden Schatten. Wer töricht genug ist, hineinzublicken, verliert seine Sinne.",
+      "russian": "Свет маяка выжигает все очертания и тени глупцов, оказавшихся под его лучами.",
+      "portuguese": "A luz do Farol engole todas as formas e sombras. Aqueles que forem tolos o suficiente para cruzar com a luz dele sairão com os sentidos queimados.",
+      "chinese": "信标的光芒吞噬一切形状和阴影。与它对视的愚者将在烧灼的痛苦中被剥夺感官。",
+      "spanish": "La luz del faro envuelve por completo todo lo que ilumina. Aquellos necios que la miren directamente se verán despojados de sus sentidos.",
+      "chinese_traditional": "烽火台的光芒吞噬了所有形體與陰影。任何膽敢直視其光芒的愚者，感官都將被灼燒殆盡。",
+      "korean": "봉화의 빛은 모든 형체와 그림자를 삼켜 버린다. 그 시선을 감히 마주한 어리석은 자들은 감각이 모조리 불타 사라질 것이다.",
+      "japanese": "篝火の灯りはあらゆる形と影を飲み込む。その光を直視するような愚か者は、感覚が焼き尽くされる。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_BeaconsLight.prefab",
+    "m_AssetGUID": "b6232684d2d5e1f4bad2eed52a963f42"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "tower",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "dazed",
+          "count": 1
+        }
+      ],
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Railforged/BeaconsLight/FX_BeaconsLight.prefab",
+          "m_AssetGUID": "98defaa75486f1d4abe15043efc730e8"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

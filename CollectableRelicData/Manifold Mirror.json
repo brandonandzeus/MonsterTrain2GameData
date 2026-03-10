@@ -1,0 +1,64 @@
+{
+  "id": "FirstRoomCardOnAllFloors",
+  "name": "Manifold Mirror",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-54c564808bf312c9-9cb6c3cd73a9ca44b86cb9c109a984a5-v2",
+    "english": "Manifold Mirror",
+    "french": "Miroir multiple",
+    "german": "Vielfachspiegel",
+    "russian": "Копировальное зеркало",
+    "portuguese": "Espelho Multíplice",
+    "chinese": "多面镜",
+    "spanish": "Espejo múltiple",
+    "chinese_traditional": "多重鏡像",
+    "korean": "복제 거울",
+    "japanese": "多面の鏡"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-9b4a495c765602e2-9cb6c3cd73a9ca44b86cb9c109a984a5-v2",
+    "english": "The first Room card played each battle is applied to all floors.",
+    "french": "La première carte de salle jouée à chaque bataille s'applique à tous les niveaux.",
+    "german": "Die erste pro Kampf gespielte Raumkarte wird auf alle Ebenen angewendet.",
+    "russian": "Каждая первая карта комнат, сыгранная за бой, применяется ко всем этажам.",
+    "portuguese": "A primeira Carta de Sala jogada em cada batalha é aplicada a todos os andares.",
+    "chinese": "每场战斗使用的第一张房间卡对所有层生效。",
+    "spanish": "La primera carta de sala que juegas en cada batalla se aplica a todos los pisos.",
+    "chinese_traditional": "每場戰鬥打出的第一個房間卡會套用到所有樓層。",
+    "korean": "전투마다 처음 사용한 객실 카드가 모든 층에 영향을 미칩니다.",
+    "japanese": "各バトルで最初にプレイされたルームカードがすべてのフロアに適用される。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-cc8792613d3afcb1-9cb6c3cd73a9ca44b86cb9c109a984a5-v2",
+      "english": "A mirror that reflects not only who you are but who you wish to be.",
+      "french": "Un miroir qui reflète non seulement qui vous êtes, mais aussi qui vous souhaitez être.",
+      "german": "Ein Spiegel, der nicht nur dein Selbst reflektiert, sondern auch, wer du sein möchtest.",
+      "russian": "Это зеркало покажет не только какой ты есть, но и кем ты желаешь стать.",
+      "portuguese": "Um espelho que reflete não apenas quem você é, mas quem você deseja ser.",
+      "chinese": "这个镜子不但能照出你的倒影，还能呈现你想成为的样子。",
+      "spanish": "Un espejo que no solo refleja quien eres, sino también quien quieres ser.",
+      "chinese_traditional": "這面鏡子不只映照你的現在，還能映照你想成為的樣子。",
+      "korean": "이 거울은 당신의 본모습뿐만 아니라, 당신이 바라던 모습까지 보여준다.",
+      "japanese": "自分が何者であるかだけでなく、何者になりたいかをも映し出す鏡。"
+    }
+  ],
+  "rarity": "uncommon",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectFirstRoomCardIsPlayedOnAllFloors",
+      "effectConditions": [
+        {
+          "paramCardType": "any",
+          "paramTrackedValue": "subtype_in_deck",
+          "paramTrackTriggerCount": true,
+          "paramEntryDuration": "previous_turn",
+          "paramComparator": [
+            "equal"
+          ],
+          "paramInt": 1,
+          "allowMultipleTriggersPerDuration": false
+        }
+      ]
+    }
+  ]
+}

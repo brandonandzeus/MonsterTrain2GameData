@@ -1,0 +1,72 @@
+{
+  "id": "MagicJuice",
+  "name": "Urchin Spines",
+  "nameKey": {
+    "key": "CardData_nameKey-7ff790cfcf7c996f-d9d327e8d4208c54f9d614cc9f1eacea-v2",
+    "english": "Urchin Spines",
+    "french": "Aiguilles d'oursins",
+    "german": "Seeigelstacheln",
+    "russian": "Хребты морских ежей",
+    "portuguese": "Espinhos de Ouriço",
+    "chinese": "海胆尖刺",
+    "spanish": "Espinas de erizo",
+    "chinese_traditional": "海膽刺",
+    "korean": "성게 가시",
+    "japanese": "ウニの棘"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-8a04893bcd0398b1-d9d327e8d4208c54f9d614cc9f1eacea-v2",
+    "english": "Apply [spellweakness] [effect0.status0.power] to enemy units.",
+    "french": "Inflige <nobr><b>Faiblesse magique</b></nobr> [effect0.status0.power] aux unités ennemies.",
+    "german": "Wende [effect0.status0.power] <nobr><b>Zauberanfälligkeit</b></nobr> auf gegnerische Einheiten an.",
+    "russian": "Накладывает [spellweakness] х[effect0.status0.power] на всех врагов.",
+    "portuguese": "Causa <nobr><b>Fraqueza à Magia</b></nobr> [effect0.status0.power] às unidades inimigas.",
+    "chinese": "对所有敌方单位施加<nobr><b>法术易伤</b></nobr> [effect0.status0.power]。",
+    "spanish": "Añade [spellweakness] [effect0.status0.power] a las unidades enemigas.",
+    "chinese_traditional": "對敵方單位施加[spellweakness][effect0.status0.power]。",
+    "korean": "적 유닛들에게 [spellweakness] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "敵ユニットに[spellweakness] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-2152aa1deab8bd5c-d9d327e8d4208c54f9d614cc9f1eacea-v2",
+      "english": "Electrified urchins swarm around the openings of the Titan’s seafloor resting place. Their spines shock any predators, providing a natural defense in the dangerous depths of the sea. Unbeknownst to Tethys, I collected some of these specimens for my studies.",
+      "french": "Les oursins électriques s'amassent dans les crevasses du fond marin où repose le titan. Leurs aiguilles envoient une décharge électrique à leurs prédateurs, offrant une défense naturelle contre les dangereuses profondeurs sous-marines. À l'insu de Téthys, j'ai récupéré quelques spécimens pour mes études.",
+      "german": "Elektrische Seeigel bevölkern die Ränder der Öffnungen zur Ruhestätte des Titanen am Meeresboden. Ihre Stacheln schocken ihre Feinde und bilden eine natürliche Abwehr in den gefährlichen Tiefen des Meeres. Ich habe ein paar Studienexemplare gesammelt, ohne Tethys etwas davon zu sagen.",
+      "russian": "Вокруг разломов над могилой Титана расплодились электрические морские ежи. Их шипы отгоняют любых хищников, обеспечивая надежную защиту в опасных водных глубинах. Тефии незачем об этом знать, но по моему приказу было собрано несколько этих существ.",
+      "portuguese": "As entradas para o leito do Titã são repletas de ouriços-do-mar eletrificados. Seus espinhos eletrocutam predadores, fornecendo uma defesa natural nas perigosas profundezas do mar. Sem a Tétis saber, eu coletei alguns espécimes para fins de estudo.",
+      "chinese": "这种会放电的海胆在泰坦栖身之地附近开阔的海床上四处游弋，它们的尖刺可以电击捕食者，从而在危机四伏的海底中保护自己免受危险。我背着泰西丝，偷偷收集了一部分海胆样本进行研究。",
+      "spanish": "Erizos de mar electrificados nadan por las entradas al lugar de descanso del titán bajo las aguas. Sus espinas electrocutan a los depredadores para otorgar una defensa natural en las peligrosas profundidades del mar. Me llevé algunos de ellos para mis estudios a espaldas de Tethys.",
+      "chinese_traditional": "帶電的海膽在泰坦海底休息地的開口處成群結隊。它們的刺會電擊任何掠食者，在危險的海底深處提供天然防禦。在忒提斯不知情的情況下，我收集了一些標本用於研究。",
+      "korean": "전기성게는 티탄의 해저 안식처 입구에 주로 서식한다. 이들은 가시를 통해 포식자에게 전기 충격을 가해 위험한 심해에서 스스로를 지킨다. 연구 목적으로 테티스에게 알리지 않고 몇 마리를 가져왔다.",
+      "japanese": "電気ウニは、巨人族の海底墓所の開けた場所に集まっている。そのトゲは捕食者を感電させ、深海での堅牢な防衛手段となっている。テシスには内緒で、研究のためにいくつか検体を確保しておいた。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_UrchinSpines.prefab",
+    "m_AssetGUID": "b648b1a0ce833874da3c49e5fae4e261"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "spell weakness",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Ali Hosseinkhan"
+}

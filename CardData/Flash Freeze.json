@@ -1,0 +1,75 @@
+{
+  "id": "FlashFreeze",
+  "name": "Flash Freeze",
+  "nameKey": {
+    "key": "CardData_nameKey-63a790ceb1bcf0c8-705ea064154a2624a8e7af1aabc85bb1-v2",
+    "english": "Flash Freeze",
+    "french": "Glaciation éclair",
+    "german": "Blitzeis",
+    "russian": "Быстрая заморозка",
+    "portuguese": "Congelamento Instantâneo",
+    "chinese": "急速冰冻",
+    "spanish": "Congelación instantánea",
+    "chinese_traditional": "閃電凍結",
+    "korean": "급속 동결",
+    "japanese": "瞬間冷凍"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-4486d0ea967ad410-705ea064154a2624a8e7af1aabc85bb1-v2",
+    "english": "Deal [effect0.power] damage. Apply [frostbite] [effect1.status0.power].",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> et [frostbite] [effect1.status0.power].",
+    "german": "Verursache [effect0.power] Schaden. Wende [frostbite] [effect1.status0.power] an.",
+    "russian": "Наносит [effect0.power] урона. Накладывает [frostbite] х[effect1.status0.power].",
+    "portuguese": "Causa [effect0.power] de dano. Concede [frostbite] [effect1.status0.power].",
+    "chinese": "造成 [effect0.power] 点伤害，施加 [frostbite] [effect1.status0.power]。",
+    "spanish": "Inflige [effect0.power] de daño. Añade [frostbite] [effect1.status0.power].",
+    "chinese_traditional": "造成[effect0.power]點傷害。施加[frostbite][effect1.status0.power]。",
+    "korean": "[effect0.power]의 피해를 입힙니다. [frostbite] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[effect0.power]のダメージを与える。[frostbite] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-88daad22bf573de1-705ea064154a2624a8e7af1aabc85bb1-v2",
+      "english": "After the freezing of Hell, the Stygian Sea’s weather became much more erratic. Instant freezes are now frequent occurrences, much to the dismay of anyone unlucky enough to be caught in their icy grasp.",
+      "french": "Après la Glaciation, les conditions météorologiques de la mer Stygienne devinrent beaucoup plus instables. Les gelées soudaines sont aujourd'hui monnaie courante, pour le plus grand malheur de ceux qui se retrouvent prisonniers de leur étreinte glacée.",
+      "german": "Als die Hölle einfror, wurde das Wetter auf der Stygischen See viel unberechenbarer. Inzwischen sind plötzliche Kälteeinbrüche keine Seltenheit mehr, wie manch glückloser Reisender bereits erfahren musste.",
+      "russian": "Когда Ад замерз, погода над Стигийским морем стала еще менее предсказуема. К великому прискорбию тех, кто попал в его ледяные объятия, быстрая заморозка вошла в порядок вещей.",
+      "portuguese": "Após o congelamento do Inferno, o clima do Mar de Estige tornou-se muito mais descontrolado. É comum ocorrerem congelamentos imediatos, acabando com o calor dos desafortunados.",
+      "chinese": "地狱被冻结之后，冥界之海的气候变得更加极端。如今，瞬间冰冻时常会发生，不幸被困在冰牢之中的人只能长吁短叹。",
+      "spanish": "Tras la Congelación del Infierno, el clima del mar Estigio se volvió mucho más errático. Ahora las congelaciones instantáneas son un suceso habitual, para irritación de aquellos que tienen la desgracia de quedar atrapados en su gélido agarre.",
+      "chinese_traditional": "地獄凍結後，冥河海的天氣變得更加不穩定。瞬間凍結的情況現在經常發生，讓任何不幸被困在冰冷懷抱中的人感到沮喪。",
+      "korean": "지옥이 얼어붙은 뒤로 명계 바다의 날씨는 더욱 변덕스럽게 변했다. 주변이 순식간에 얼어붙는 일이 빈번히 일어나게 되어, 불행히도 그 얼음에 갇히게 된 이들에게는 낭패가 아닐 수 없다.",
+      "japanese": "地獄が凍結した後、ステュクス海の気候は大幅に不安定になった。瞬間凍結は今では頻繁に発生しており、不運にもその氷の手に掴まれた者は無事では済まない。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_FlashFreeze.prefab",
+    "m_AssetGUID": "52471f4f40ea12d4a9a80a91f211fd07"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 3
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Luke Banke"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "Boss_Level6_Cael_Lifesteal",
+  "name": "Cael, Lord of the Cherubs Vampiric Feed",
+  "nameKey": {
+    "key": "CharacterData_nameKey-56269afbe5cbd1ad-e45ac519d970cec419b17c8596cef015-v2",
+    "english": "Cael, Lord of the Cherubs",
+    "french": "Cael, Seigneur des chérubins",
+    "german": "Cael, Herr der Cherubim",
+    "russian": "Каэль Повелитель херувимов",
+    "portuguese": "Cael, Senhor dos Querubins",
+    "chinese": "凯尔，小天使之主",
+    "spanish": "Cael, Señor de los Querubines",
+    "chinese_traditional": "『天使寶寶領主』凱爾",
+    "korean": "케루빔의 통솔자, 카엘",
+    "japanese": "智天使の王、キャエル"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-03c7bb9e44b81d55-e45ac519d970cec419b17c8596cef015-v2",
+      "english": "Cael, the eldest of Heaven’s cherubs calls upon his kin with his illustrious horn. Now, it is Dominion that truly wields the horn.",
+      "french": "Cael, l'aîné des chérubins, appelle ses semblables de son illustre cor. Aujourd'hui, c'est Domination qui manie l'instrument.",
+      "german": "Cael, der älteste der Himmels-Cherubim, ruft seine Sippe mit seinem wohlbekannten Horn. Nun ist Herrschaft der wahrhaftige Hornträger.",
+      "russian": "Каэль, старейший из херувимов, призывающий собратьев с помощью своего легендарного горна. Теперь же в этот горн трубит Доминион.",
+      "portuguese": "Cael, o mais velho dos querubins do Céu, invoca seus irmãos com sua trombeta gloriosa. Atualmente, é o Domínio que a empunha.",
+      "chinese": "凯尔是天堂最年长的小天使，他会用自己著名的号角召唤亲族。现在，真正掌握号角的是统御泰坦。",
+      "spanish": "Cael, el primero de los querubines del Cielo, toca su ilustre cuerno para convocar a los suyos. Ahora es Dominio quien los controla.",
+      "chinese_traditional": "凱爾，天堂天使寶寶中最年長的一位，用他響亮的號角呼喚著同伴們。如今，這號角真正為主宰所掌控。",
+      "korean": "천상의 케루빔 중 가장 나이가 많은 카엘은 멋진 뿔피리를 불어 동족을 부른다. 지금 이 뿔은 도미니온이 사용한다.",
+      "japanese": "天界の智天使の最年長であるキャエルが輝かしい角笛で眷属たちを呼ぶ。今や、角笛の真の持ち主はドミニオンだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_CaelLordOfTheCherubs.prefab",
+    "m_AssetGUID": "33ad2baf0a6f82543afe95e8a3188d20"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Cael/FX_CaelProjectile.prefab",
+      "m_AssetGUID": "41ed80fa0ccc74747bc63b15bbb590bc"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/MisshapenFiend/FX_MisshapenFiendImact.prefab",
+      "m_AssetGUID": "4ce9cbdd88a93f54ab5e98cbb3f7ead8"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-1449ce6934466b3d-e45ac519d970cec419b17c8596cef015-v2",
+        "english": "Grant +[effect0.upgrade.bonusdamage][attack] and [lifesteal] [effect0.upgrade.status0.power] to the front non-boss enemy unit.",
+        "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et [lifesteal] [effect0.upgrade.status0.power] à l'ennemi en 1re ligne (hors boss).",
+        "german": "Wende +[effect0.upgrade.bonusdamage][attack] und [lifesteal] [effect0.upgrade.status0.power] auf die vorderste gegnerische Nicht-Boss-Einheit an.",
+        "russian": "Переднему вражескому бойцу не-боссу даются +[effect0.upgrade.bonusdamage][attack] и [lifesteal] х[effect0.upgrade.status0.power].",
+        "portuguese": "Concede +[effect0.upgrade.bonusdamage][attack] e [lifesteal] [effect0.upgrade.status0.power] à unidade inimiga na frente que não seja chefão.",
+        "chinese": "使前排非首领敌方单位获得 +[effect0.upgrade.bonusdamage][attack] 和 [lifesteal] [effect0.upgrade.status0.power]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [lifesteal] [effect0.upgrade.status0.power] a la primera unidad enemiga no jefe.",
+        "chinese_traditional": "賦予前排敵方單位+[effect0.upgrade.bonusdamage][attack]和[lifesteal][effect0.upgrade.status0.power]。",
+        "korean": "전열의 보스 외 적 유닛에 +[effect0.upgrade.bonusdamage][attack] 및 [lifesteal] [effect0.upgrade.status0.power] 효과를 부여합니다.",
+        "japanese": "前列の非ボスの敵ユニットに+[effect0.upgrade.bonusdamage][attack]と[lifesteal] [effect0.upgrade.status0.power]を付与する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "front_in_room",
+          "targetTeamType": "heroes",
+          "targetIgnoreBosses": true,
+          "paramCardUpgradeData": {
+            "id": "Boss_Level6_FeedLifestealUpgrade",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "lifesteal",
+                "count": 1
+              }
+            ],
+            "bonusDamage": 7
+          }
+        }
+      ]
+    }
+  ],
+  "bossActionGroups": [
+    {
+      "actions": [
+        {
+          "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+          "tooltipOverrideKey": "CharacterData__tooltipOverrideKey-348696cbe3d29fc9-e45ac519d970cec419b17c8596cef015-v2",
+          "paramTeamType": "monsters"
+        }
+      ],
+      "numRepeats": 0
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 3000,
+    "endlessAttack": 30
+  },
+  "size": 6,
+  "health": 1800,
+  "isOuterTrainBoss": true,
+  "validBossAttackPhase": "both",
+  "attackDamage": 22,
+  "attackTeleportsToDefender": false,
+  "bossTitanAffinity": "dominion",
+  "statusEffectImmunities": [
+    "rooted"
+  ],
+  "subtypeKeys": [
+    "SubtypesData_BigBoss2_e3e6f1a2-34a7-4493-b9d7-a123e182241e",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss6_Cael_ChatterData",
+  "enemyRelicData": "Enemy_SpawnHeroEaterFeedLifesteal",
+  "artistAttribution": "Genevieve Bega"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "EnemyDeathHurtsFriendlyUnit",
+  "name": "Explosive Personality",
+  "nameKey": {
+    "key": "MutatorData_nameKey-a89bec25d7ca120e-6d5a5ae1cc4826a439d40c92c430fe2d-v2",
+    "english": "Explosive Personality",
+    "french": "Personnalité explosive",
+    "german": "Explosiver Charakter",
+    "russian": "Взрывной характер",
+    "portuguese": "Personalidade Explosiva",
+    "chinese": "爆炸型人格",
+    "spanish": "Personalidad explosiva",
+    "chinese_traditional": "爆裂個性",
+    "korean": "욱하는 성격",
+    "japanese": "自爆精神"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-61323ecd25147783-6d5a5ae1cc4826a439d40c92c430fe2d-v2",
+    "english": "When enemy units die they deal [effect0.power] damage to the front friendly unit.",
+    "french": "Quand des ennemis meurent, ils infligent <nobr>[effect0.power] DGT</nobr> à l'allié en 1re ligne.",
+    "german": "Wenn gegnerische Einheiten Sterben fügen sie der vorderen verbündeten Einheit [effect0.power] Schaden zu.",
+    "russian": "Умирая, враги наносят [effect0.power] урона переднему союзнику.",
+    "portuguese": "Quando unidades inimigas morrem, elas causam [effect0.power] de dano à unidade aliada na frente.",
+    "chinese": "敌方单位死亡时，会对前排友方单位造成 [effect0.power] 点伤害。",
+    "spanish": "Cuando las unidades enemigas mueren, infligen [effect0.power] de daño a la primera unidad aliada.",
+    "chinese_traditional": "當敵方單位死亡時，對前排友方單位造成[effect0.power]點傷害。",
+    "korean": "적 유닛이 사망할 때, 전열 아군 유닛에 [effect0.power]의 피해를 줍니다.",
+    "japanese": "敵ユニットが死亡すると、前列の味方ユニットに[effect0.power]のダメージを与える。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "MutatorData_descriptionKey-196d571e286a71b3-6d5a5ae1cc4826a439d40c92c430fe2d-v2",
+            "english": "Deal [effect0.power] damage to the front friendly unit.",
+            "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'allié en 1re ligne.",
+            "german": "Vordere verbündete Einheit erleidet [effect0.power] Schaden.",
+            "russian": "Наносит [effect0.power] урона переднему союзному бойцу.",
+            "portuguese": "Cause [effect0.power] de dano à unidade aliada à frente.",
+            "chinese": "对前排友方单位造成 [effect0.power] 点伤害。",
+            "spanish": "La primera unidad aliada sufre [effect0.power] de daño.",
+            "chinese_traditional": "對前排友方單位造成[effect0.power]點傷害。",
+            "korean": "전열 아군 유닛에 [effect0.power]의 피해를 줍니다.",
+            "japanese": "前列の味方ユニットに[effect0.power]のダメージを与える。"
+          },
+          "trigger": "on_death",
+          "effects": [
+            {
+              "effectStateName": "CardEffectDamage",
+              "targetMode": "front_in_room",
+              "targetTeamType": "monsters",
+              "paramInt": 5
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramBool": true
+    }
+  ],
+  "boonValue": -6,
+  "disableInDailyChallenges": true
+}

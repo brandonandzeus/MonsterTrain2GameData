@@ -1,0 +1,79 @@
+{
+  "id": "MorselMoltenMorsel",
+  "name": "Magma Morsel",
+  "nameKey": {
+    "key": "CharacterData_nameKey-3a3626fba318bd69-851b86a59ea80b64f8226ccd6bbf915a-v2",
+    "english": "Magma Morsel",
+    "french": "Sous-bistre de magma",
+    "german": "Magma-Nugget",
+    "russian": "Лавовый заморыш",
+    "portuguese": "Lancho Magmático",
+    "chinese": "熔岩影裔",
+    "spanish": "Pincho de magma",
+    "chinese_traditional": "岩漿莫塞爾",
+    "korean": "마그마 그림자",
+    "japanese": "マグマ・モーゼル"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-0b878e2dc749ca75-851b86a59ea80b64f8226ccd6bbf915a-v2",
+      "english": "Originally heated by the nearby Pyre, molten rock can be found throughout the Crucible. Morsels excavate it like anything else, but there was no use for it until I showed them how to use the residual energy to strengthen themselves.",
+      "french": "À l'origine chauffée par le Brasier avoisinant, la roche fondue peut être trouvée à travers tout le creuset. Les sous-bistres la minent comme tout le reste, mais ils n'en voyaient pas l'utilité jusqu'à ce que je leur montre comment utiliser son énergie résiduelle pour se renforcer.",
+      "german": "Im ganzen Schmelztiegel gibt es durch die Hitze der nahen Höllenglut entstandene Lavamassen. Die Nuggets bauen auch diese ab, aber sie hatten keine Verwendung dafür, bis ich ihnen zeigte, wie sie die darin enthaltene Restenergie zu ihrer eigenen Stärkung nutzen können.",
+      "russian": "В Горниле можно найти оплавленные камни, некогда нагретые Пеклом. Заморыши не видели в них ничего особенного, пока я не показал им, как использовать остаточную энергию, чтобы стать сильнее.",
+      "portuguese": "Originalmente aquecida pela Pira próxima, rochas vulcânicas podem ser encontradas por todo o Crisol. Os Lanchos as escavam como se nada fossem, mas não havia necessidade para tal, até que mostrei como usar a energia residual para ficarem mais fortes.",
+      "chinese": "熔融的岩石在熔炉之地随处可见，最初是被附近的薪火烧至滚烫的。与其他的矿物相似，影裔也同样会开采这种岩石，但它们并不知道该如何使用。直到我亲自向它们展示，该如何使用熔岩残存的能量来武装自己。",
+      "spanish": "A lo largo del Crisol, es posible encontrar roca fundida por el calor de la cercana Pira. Los pinchos la extraen como todo lo demás, a pesar de que les era inútil hasta que les enseñé a utilizar su energía residual para reforzar sus cuerpos.",
+      "chinese_traditional": "最初由附近的火堆加熱，熔岩遍佈於地獄熔爐之中。莫塞爾像挖掘其他東西一樣開採它，但直到我向他們展示如何利用殘餘能量來強化自己之前，它都毫無用處。",
+      "korean": "초기에는 화로 근처에서만 발견할 수 있었던 이 녹은 암석은 지금 도가니 전역에서 볼 수 있다. 작은 그림자들은 다른 보석과 마찬가지로 이를 채굴했지만, 암석에 남아 있는 에너지를 이용해 자신들의 힘을 강화하는 방법을 내가 가르쳐주기 전까지는 쓸모없는 돌로 여겼다.",
+      "japanese": "付近の炉により熱され溶けた岩は、クルーシブルのあらゆる場所で見ることができる。モーゼルは価値も知らずにそれを採掘していたが、活用できるようになったのは残存エネルギーを使って自己強化する方法を教えてやってからだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MoltenMorsel.prefab",
+    "m_AssetGUID": "96e8b049c64465941b8d29736b4411a9"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-7edc9add64ecc086-851b86a59ea80b64f8226ccd6bbf915a-v2",
+        "english": "Eater gains +[effect0.upgrade.bonusdamage][attack].",
+        "french": "Le mangeur gagne +[effect0.upgrade.bonusdamage][attack].",
+        "german": "Der Verschlinger erhält +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Поглотитель получает +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "O Devorador recebe +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Su devorador añade [effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "포식자가 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "捕食者が+[effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "trigger": "on_eaten",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "last_feeder_character",
+          "targetTeamType": "both",
+          "paramCardUpgradeData": {
+            "id": "MoltenMorselTrigger",
+            "bonusDamage": 9
+          }
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 1,
+  "attackDamage": 9,
+  "subtypeKeys": [
+    "SubtypesData_Snack"
+  ],
+  "characterChatterData": "UmbraMorselChatterData"
+}

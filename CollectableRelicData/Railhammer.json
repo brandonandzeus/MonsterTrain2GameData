@@ -1,0 +1,61 @@
+{
+  "id": "IncreaseArmorStacks",
+  "name": "Railhammer",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-0628e1d7ddc9eba3-edb6b6446646776449e30ec5d4e1211b-v2",
+    "english": "Railhammer",
+    "french": "Marteau ferroviaire",
+    "german": "Gleishammer",
+    "russian": "Дорожный молот",
+    "portuguese": "Martelo do Trilho",
+    "chinese": "铁道锻锤",
+    "spanish": "Martillo de raíles",
+    "chinese_traditional": "軌道錘",
+    "korean": "선로 망치",
+    "japanese": "レールハンマー"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-c733b0339e40f95d-edb6b6446646776449e30ec5d4e1211b-v2",
+    "english": "When a friendly unit gains [armor], it gains +[effect0.status0.power] stacks.",
+    "french": "Lorsqu'un allié gagne de l'[armor], il gagne <nobr>+[effect0.status0.power] cumuls.</nobr>",
+    "german": "Wenn eine verbündete Einheit [armor] erhält, erhält sie +[effect0.status0.power] Stapel.",
+    "russian": "Когда на бойца накладывается [armor], он получает +[effect0.status0.power] слоя.",
+    "portuguese": "Quando uma unidade aliada recebe [armor], ela recebe +[effect0.status0.power] cargas.",
+    "chinese": "当一个友方单位获得 [armor] 时，其获得的层数 +[effect0.status0.power]。",
+    "spanish": "Cuando una unidad aliada añade [armor], recibe +[effect0.status0.power] acumulaciones.",
+    "chinese_traditional": "當一個友方單位獲得[armor]時，該單位獲得+[effect0.status0.power]層數。",
+    "korean": "아군 유닛이 [armor]을 획득하면, +[effect0.status0.power] 스택이 늘어납니다.",
+    "japanese": "味方ユニットが[armor]を得ると、+[effect0.status0.power]スタックを得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-6b290820812b259f-edb6b6446646776449e30ec5d4e1211b-v2",
+      "english": "Railhammers have been forged in the deep pits of the Scorched Plains since the founding of our Covenant, making them durable tools in the construction of Hellhorned armor.",
+      "french": "Les marteaux ferroviaires sont forgés dans les profondeurs des Plaines calcinées depuis la fondation de l'alliance, ce qui en fait des outils idéals pour fabriquer les armures cornues.",
+      "german": "Schon seit der Begründung des Pakts wurden in den Tiefen der Verbrannten Ebenen Gleishämmer geschmiedet. Es sind haltbare Werkzeuge, die auch im Rüstungsbau für die Höllenhörner gute Dienste leisten.",
+      "russian": "Дорожные молоты были выкованы в глубочайших ямах Выжженных равнин после достижения Согласия и весьма пригодились при создании брони для Адских отродий.",
+      "portuguese": "Martelos de Trilho são forjados nas profundezas das Planícies Devastadas desde o início do nosso Pacto, tornando-os ferramentas duráveis na criação de armaduras para Endiabrados.",
+      "chinese": "自契约创立以来，我们便在燃烧平原的深渊底部锻造铁道锻锤。这种锻锤结实耐用，非常适合锻造狱魔的盔甲。",
+      "spanish": "Los martillos de raíles se han forjado en las profundidades de las Llanuras Calcinadas desde la fundación de la Coalición. Son herramientas resistentes para forjar la armadura de los Astados.",
+      "chinese_traditional": "自從我們的新盟成立以來，軌道錘就在焦灼平原的深處進行鍛造，使它們成為建造煉獄族盔甲的耐用工具。",
+      "korean": "불타는 평원의 깊은 구덩이에서 제작한 선로 망치는 맹약 성립 이후 지옥뿔 군단이 입는 갑옷을 만드는 튼튼한 도구가 되었다.",
+      "japanese": "レールハンマーは、盟約の設立以来、焦土平原の深い坑道で鍛造されており、獄角族の鎧の製造に使用される耐久性の高い道具となっている。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassHellhorned",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnStatusApplied",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": 1
+    }
+  ],
+  "unlockLevel": 1
+}

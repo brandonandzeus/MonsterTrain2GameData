@@ -1,0 +1,59 @@
+{
+  "id": "FragilePyre",
+  "name": "Final Shard",
+  "nameKey": {
+    "key": "MutatorData_nameKey-19e650aed439334d-724c2680769270d42a46174075f779f6-v2",
+    "english": "Final Shard",
+    "french": "Éclat ultime",
+    "german": "Der letzte Splitter",
+    "russian": "Последний осколок",
+    "portuguese": "Último Fragmento",
+    "chinese": "最后的碎片",
+    "spanish": "Fragmento final",
+    "chinese_traditional": "最後碎片",
+    "korean": "마지막 파편",
+    "japanese": "最後の欠片"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-5c91ebdbf30e5903-724c2680769270d42a46174075f779f6-v2",
+    "english": "At the start of battle, apply [fragile] and [damageshield] [effect1.status0.power] to your Pyre.",
+    "french": "Au début du combat, confère [fragile] et [damageshield] [effect1.status0.power] à votre Brasier.",
+    "german": "Wende zu Beginn des Kampfes [fragile] und [damageshield] [effect1.status0.power] auf deine Höllenglut an.",
+    "russian": "В начале боя накладывает на ваше Пекло накладываются [fragile] и [damageshield] х[effect1.status0.power].",
+    "portuguese": "No início da batalha, aplica [fragile] e concede [damageshield] [effect1.status0.power] à sua Pira.",
+    "chinese": "战斗开始时，你的薪火获得[fragile]和[damageshield][effect1.status0.power]。",
+    "spanish": "Al inicio de la batalla, añade [fragile] y [damageshield] [effect1.status0.power] a tu Pira.",
+    "chinese_traditional": "在戰鬥開始時，對你的火堆施加[fragile]和[damageshield][effect1.status0.power]。",
+    "korean": "전투 시작 시, 화로에 [fragile] 및 [damageshield] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "バトルの開始時に、自軍の炉に[fragile]と[damageshield] [effect1.status0.power]を付与する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "fragile",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Pyre"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "damage shield",
+          "count": 2
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramCharacterSubtype": "SubtypesData_Pyre"
+    }
+  ],
+  "boonValue": -9,
+  "disableInDailyChallenges": true,
+  "tags": [
+    "pyrefragile"
+  ]
+}

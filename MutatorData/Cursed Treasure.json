@@ -1,0 +1,50 @@
+{
+  "id": "AdditionalUnitNegativeModifierPerUpgrade",
+  "name": "Cursed Treasure",
+  "nameKey": {
+    "key": "MutatorData_nameKey-04c1da7bf6650f01-5ce722f995136e8428ecb6b1fcf0ae1e-v2",
+    "english": "Cursed Treasure",
+    "french": "Trésor maudit",
+    "german": "Verfluchter Schatz",
+    "russian": "Проклятое сокровище",
+    "portuguese": "Tesouro Amaldiçoado",
+    "chinese": "被诅咒的宝藏",
+    "spanish": "Tesoro maldito",
+    "chinese_traditional": "詛咒寶藏",
+    "korean": "저주받은 보물",
+    "japanese": "呪われた財宝"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-3b81687ee4a84ce2-5ce722f995136e8428ecb6b1fcf0ae1e-v2",
+    "english": "Units get [effect0.upgrade.bonusdamage][attack] for each upgrade on their card.",
+    "french": "Les unités obtiennent [effect0.upgrade.bonusdamage][attack] par amélioration sur leur carte.",
+    "german": "Einheiten erhalten [effect0.upgrade.bonusdamage][attack] für jede Verbesserung ihrer Karte.",
+    "russian": "Боец получает [effect0.upgrade.bonusdamage][attack] за каждое улучшение своей карты.",
+    "portuguese": "As unidades recebem [effect0.upgrade.bonusdamage][attack] para cada melhoria nas cartas delas.",
+    "chinese": "单位牌每拥有一项升级，获得 +[effect0.upgrade.bonusdamage][attack]。",
+    "spanish": "Las unidades añaden [effect0.upgrade.bonusdamage][attack] por cada mejora que tengan.",
+    "chinese_traditional": "單位牌每擁有一項升級，獲得[effect0.upgrade.bonusdamage][attack]。",
+    "korean": "유닛 카드를 업그레이드할 때마다 해당 유닛이 [effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+    "japanese": "ユニットが、カードに適用されているアップグレード1つにつき[effect0.upgrade.bonusdamage][attack]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectUpgradeCardOnPurchasingUpgrade",
+      "paramCardUpgradeData": {
+        "id": "CursedTreasure",
+        "filters": [
+          {
+            "id": "OnlyUnit",
+            "cardType": "monster"
+          }
+        ],
+        "bonusDamage": -5
+      }
+    }
+  ],
+  "boonValue": -3,
+  "tags": [
+    "unitupgrades",
+    "upgrades"
+  ]
+}

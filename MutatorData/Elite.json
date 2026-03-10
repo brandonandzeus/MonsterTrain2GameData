@@ -1,0 +1,51 @@
+{
+  "id": "AdditionalUnitModifierPerUpgrade",
+  "name": "Elite",
+  "nameKey": {
+    "key": "MutatorData_nameKey-c25630eecec23e35-f72562a3d1be47e48976f82a650534d0-v2",
+    "english": "Elite",
+    "french": "L'élite",
+    "german": "Elite",
+    "russian": "Элита",
+    "portuguese": "Elite",
+    "chinese": "精英",
+    "spanish": "Élite",
+    "chinese_traditional": "精英",
+    "korean": "정예",
+    "japanese": "エリート"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-628a9c687ad9fcce-f72562a3d1be47e48976f82a650534d0-v2",
+    "english": "Units get +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] for each upgrade on their card.",
+    "french": "Les unités gagnent +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] par amélioration sur leur carte.",
+    "german": "Einheiten erhalten +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] für jede Verbesserung der Karte.",
+    "russian": "Боец получает +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health] за каждое улучшение своей карты.",
+    "portuguese": "As unidades recebem +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] para cada melhoria nas cartas delas.",
+    "chinese": "单位牌每拥有一项升级，获得 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
+    "spanish": "Las unidades añaden +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] por cada mejora que tengan.",
+    "chinese_traditional": "每次升級卡牌，單位獲得+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+    "korean": "유닛 카드를 업그레이드할 때마다 해당 유닛이 +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health]를 획득합니다.",
+    "japanese": "カードに適用されたアップグレード1つにつき、ユニットが+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectUpgradeCardOnPurchasingUpgrade",
+      "paramCardUpgradeData": {
+        "id": "Elite",
+        "filters": [
+          {
+            "id": "OnlyUnit",
+            "cardType": "monster"
+          }
+        ],
+        "bonusDamage": 10,
+        "bonusHP": 5
+      }
+    }
+  ],
+  "boonValue": 4,
+  "tags": [
+    "unitupgrades",
+    "upgrades"
+  ]
+}

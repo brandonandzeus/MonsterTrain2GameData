@@ -1,0 +1,90 @@
+{
+  "id": "StarterHeal",
+  "name": "Restore",
+  "nameKey": {
+    "key": "CardData_nameKey-0ad83af660d9ff36-27fca88960edf6241bcb6c68d9610f33-v2",
+    "english": "Restore",
+    "french": "Restauration",
+    "german": "Wiederherstellen",
+    "russian": "Восстановление",
+    "portuguese": "Restaurar",
+    "chinese": "恢复",
+    "spanish": "Restauración",
+    "chinese_traditional": "恢復",
+    "korean": "복원",
+    "japanese": "治癒"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-6bd8e4248d737898-27fca88960edf6241bcb6c68d9610f33-v2",
+    "english": "Restore [effect0.power] health. Apply [regen] [effect1.status0.power].",
+    "french": "Restaure [effect0.power] PV. Confère [regen] [effect1.status0.power].",
+    "german": "Stelle [effect0.power] Gesundheit wieder her. Wende [regen] [effect1.status0.power] an.",
+    "russian": "Восстанавливает [effect0.power] здоровья. Дается [regen] х[effect1.status0.power].",
+    "portuguese": "Restaura [effect0.power] de vida. Concede [regen] [effect1.status0.power].",
+    "chinese": "恢复 [effect0.power] 点生命值，获得 [regen] [effect1.status0.power]。",
+    "spanish": "Restaura [effect0.power] de salud. Añade [regen] [effect1.status0.power].",
+    "chinese_traditional": "恢復[effect0.power]點生命值。施加[regen][effect1.status0.power]。",
+    "korean": "체력을 [effect0.power]만큼 회복합니다. [regen] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "体力を[effect0.power]回復する。[regen] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-4aee12ec16035b28-27fca88960edf6241bcb6c68d9610f33-v2",
+      "english": "One of the many strengths of the Channelers of the Wildwood is their ability to heal their fellow Awoken. Upon our completion of the Rail, they agreed to extend this practice to other Hellborne in need.",
+      "french": "L'un des nombreux talents des occultistes du Boissauvage est leur capacité à soigner leurs camarades Éveillés. À la fin de la construction de la Voie, ils ont accepté de partager ce pouvoir avec tous les autres démons dans le besoin.",
+      "german": "Eine der vielen Stärken der Okkultisten des Wildholzes ist ihre Fähigkeit, verbündete Erweckte zu heilen. Als das Gleis fertig war, erklärten sie sich bereit, diese Fähigkeit auch für andere Angehörige der Höllenbrut einzusetzen.",
+      "russian": "Одной из сильных сторон Заклинателей из Диколесья является их способность исцелять Пробужденных. И когда мы проложили Железную дорогу, они согласились помогать и другим Адским отродьям.",
+      "portuguese": "Uma das capacidades dos Canalizadores da Mata Selvagem é o poder de curar seus colegas Despertos. Após a finalização dos Trilhos, eles concordaram em expandir a prática para outros Infernais necessitados.",
+      "chinese": "野林的通灵者拥有很多强大的力量，其中包括治疗它们的觉者盟友。当我们的铁道完成之后，它们答应使用这种力量治疗其他的地狱之子。",
+      "spanish": "Una de las numerosas ventajas de los canalizadores del Bosque Salvaje es su capacidad de curar a otros Despertados. Tras completar los Raíles, accedieron a extender la práctica a otros infernales heridos.",
+      "chinese_traditional": "荒野引導者的眾多優勢之一，是他們能夠治療其他的覺醒者同伴。在我們完成軌道後，他們同意將這種做法延伸到其他需要幫助的地獄居民身上。",
+      "korean": "와일드우드의 연결자들이 지닌 다양한 강점 중 하나는 바로 동료 각성자를 치유하는 능력이다. 선로를 완공한 후, 그들은 이 능력을 도움이 필요한 다른 지옥 주민들에게도 사용하기로 합의했다.",
+      "japanese": "ワイルドウッドのチャネラーの多くの長所の1つに、味方の覚醒者を治癒する能力がある。鉄道の完成後に、彼らはその力を必要とする魔族を助けることに同意したのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Spell_Heal.prefab",
+    "m_AssetGUID": "15efe8b0647afa74b8c387bfa259a5f6"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectHeal",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 4,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_HealImpactSmall_PS.prefab",
+          "m_AssetGUID": "43d81144eb85739409501ee485f55b0f"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "regen",
+          "count": 2
+        }
+      ],
+      "paramInt": 100,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_HealImpactSmall_PS.prefab",
+          "m_AssetGUID": "43d81144eb85739409501ee485f55b0f"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Loy Bouttamy"
+}

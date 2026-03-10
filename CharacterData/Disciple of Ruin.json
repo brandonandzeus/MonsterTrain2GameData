@@ -1,0 +1,76 @@
+{
+  "id": "ClericT2_DiscipleofRuin",
+  "name": "Disciple of Ruin",
+  "nameKey": {
+    "key": "CharacterData_nameKey-10ec579a764bfe9d-76ed9ca47c192404f8f23dc92b032d6f-v2",
+    "english": "Disciple of Ruin",
+    "french": "Disciple de la ruine",
+    "german": "Jünger des Verderbens",
+    "russian": "Послушник Руин",
+    "portuguese": "Discípulo da Ruína",
+    "chinese": "毁灭使徒",
+    "spanish": "Discípulo de la ruina",
+    "chinese_traditional": "毀滅門徒",
+    "korean": "파멸의 신도",
+    "japanese": "崩壊の信者"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-735c97cfa4162e5f-76ed9ca47c192404f8f23dc92b032d6f-v2",
+      "english": "These worshippers deliver the blessings of Dominion directly to the masses, reviving their spirits and their limbs.",
+      "french": "Ces adorateurs apportent les bénédictions de Domination directement aux masses, ravivant leurs esprits et leurs membres.",
+      "german": "Diese Anhänger übermitteln Herrschafts Segen direkt an die Massen und hauchen Geist und Körper neues Leben ein.",
+      "russian": "Эти последователи раздают благословения Доминиона простым жителям, оживляя их души и конечности.",
+      "portuguese": "Esses adoradores oferecem as bênçãos do Domínio diretamente às massas, fazendo reviver seus espíritos e seus membros.",
+      "chinese": "这些崇拜者将统御泰坦的祝福直接传递给信徒，让信徒们的精神与四肢恢复活力。",
+      "spanish": "Estos adoradores entregan las bendiciones de Dominio directamente a las masas, reviviendo sus ánimos y sus extremidades.",
+      "chinese_traditional": "這些崇拜者直接將主宰的祝福傳遞給群眾，復甦他們的精神和肢體。",
+      "korean": "이 숭배자들은 도미니온의 축복을 다른 집단에 직접 전파하며, 그 대가로 자신의 영혼과 사지를 되살린다.",
+      "japanese": "この崇拝者は、ドミニオンの祝福を大衆に直接伝え、彼らの精神と手足に再び力を与える。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_DiscipleOfRuin.prefab",
+    "m_AssetGUID": "14ca40804593a7e4196bc1b52201841d"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "trigger": "post_combat_healing",
+      "effects": [
+        {
+          "effectStateName": "CardEffectHeal",
+          "targetMode": "room_heal_targets",
+          "targetTeamType": "heroes",
+          "paramInt": 25,
+          "appliedVFX": {
+            "vfxPrefabRefLeft": {
+              "m_debugName": "Assets/FX/FX_HealImpactSmall_PS.prefab",
+              "m_AssetGUID": "43d81144eb85739409501ee485f55b0f"
+            },
+            "spawnLocation": "character_center"
+          }
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 20,
+    "endlessAttack": 0
+  },
+  "size": 1,
+  "health": 5,
+  "canAttack": false,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_AttackerEnemy_b7a79da2-ded9-4e26-8702-555817499f07"
+  ],
+  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Ishmael E. Hoover"
+}

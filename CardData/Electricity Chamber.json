@@ -1,0 +1,121 @@
+{
+  "id": "ElectricityChamber",
+  "name": "Electricity Chamber",
+  "nameKey": {
+    "key": "CardData_nameKey-741e3e741414507b-7a4e316e017ed2c41b92dbd26bfd5678-v2",
+    "english": "Electricity Chamber",
+    "french": "Chambre électrique",
+    "german": "Elektrische Kammer",
+    "russian": "Комната под напряжением",
+    "portuguese": "Câmara Elétrica",
+    "chinese": "电力室",
+    "spanish": "Cámara eléctrica",
+    "chinese_traditional": "發電室",
+    "korean": "전력실",
+    "japanese": "電気室"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-e4f245b10a5335f2-7a4e316e017ed2c41b92dbd26bfd5678-v2",
+    "english": "Friendly units gain [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power] on [summon] and [reanimated].",
+    "french": "Les alliés gagnent [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power] à chaque [summon] et [reanimated].",
+    "german": "Verbündete Einheiten erhalten [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power] beim [summon] und [reanimated].",
+    "russian": "В [summon] и [reanimated] на союзников накладываются [spikes] х[effect0.upgrade.charactertrigger0.effect0.status0.power].",
+    "portuguese": "As unidades aliadas recebem [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power] ao [summon] e [reanimated].",
+    "chinese": "友方单位 [summon] 和 [reanimated] 时获得 [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power]。",
+    "spanish": "Las unidades aliadas añaden [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power] al <b>Invocarlas</b> y <b>Reanimarlas</b>.",
+    "chinese_traditional": "友方單位在[summon]與[reanimated]時獲得[spikes][effect0.upgrade.charactertrigger0.effect0.status0.power]。",
+    "korean": "[summon] 및 [reanimated] 시, 아군 유닛이 [spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power] 효과를 획득합니다.",
+    "japanese": "[summon]と[reanimated]時に味方ユニットが[spikes] [effect0.upgrade.charactertrigger0.effect0.status0.power]を得る。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-3879f0ea16a0c8dd-7a4e316e017ed2c41b92dbd26bfd5678-v2",
+      "english": "“When an assistant has fallen, take them to the chamber so that their bodies can be \nreawakened with a little zap.”\n—OHELL Safety Regulations and Guidelines",
+      "french": "<nobr>« Lorsqu'un</nobr> assistant tombe, il doit être emmené dans la chambre pour que son corps puisse être \nranimé par une petite <nobr>décharge. »</nobr> \n— Ministère du Travail infernal, consignes de sécurité",
+      "german": "„Sind Assistenten gefallen, müssen sie in die Kammer gebracht und ihre Körper \nmit einem kleinen Impuls wiedererweckt werden.“\n—OHELL-Sicherheitsvorschriften und -richtlinien",
+      "russian": "«В случае смерти помощника, отнесите его тело в палату для \nоживления легким разрядом тока».\n— Рекомендации Адздрава",
+      "portuguese": "“Quando um assistente ‘apagar’, leve-o para a câmara para que seu corpo possa ser \ndespertado com um pequeno choque.”\n— Regulamentos e Diretrizes de Segurança da Vigilância Infernal",
+      "chinese": "“当有助手倒下时，把他们带到密室里，\n用一点电击来唤醒他们的躯体。”\n——《地狱安全准则与指引》",
+      "spanish": "«Cuando un ayudante cae, debe transportarse a la cámara para\nreanimar su cuerpo con una pequeña descarga».\n—Protocolo de prevención de riesgos infernales",
+      "chinese_traditional": "「如果有助手倒下，就把對方帶到房間裡，然後用一點電重新喚醒他們的身體。」\n——OHELL安全規定和指南",
+      "korean": "“조수가 쓰러지면 방으로 옮긴 뒤 \n전기 충격으로 정신을 되찾을 수 있도록 하십시오.”\n- OHELL 안전 규정 및 지침",
+      "japanese": "「助手が倒れたら、医務室に連れて行って電気ショックで叩き起こしてください」\n—オーヘル社安全規則とガイドライン"
+    }
+  ],
+  "cost": 1,
+  "cardType": "room",
+  "rarity": "rare",
+  "linkedClass": "ClassLazarusLeague",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_ElectricityChamber.prefab",
+    "m_AssetGUID": "a21049b1ae456144d95e2e93ca62e18b"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "ElectricityChamber_Upgrade",
+        "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-dcd49dac165c4180-bf71286fdc44c664d890c347b3aae392-v2",
+        "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-ce6d2cd6000ab1de-bf71286fdc44c664d890c347b3aae392-v2",
+        "triggerUpgrades": [
+          {
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "spikes",
+                    "count": 8
+                  }
+                ]
+              }
+            ],
+            "hideVisualAndIgnoreSilence": true
+          },
+          {
+            "trigger": "on_reanimated",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "spikes",
+                    "count": 8
+                  }
+                ]
+              }
+            ],
+            "hideVisualAndIgnoreSilence": true
+          }
+        ]
+      },
+      "additionalTooltips": [
+        {
+          "trigger": "on_spawn",
+          "style": "default",
+          "isTriggerTooltip": true
+        },
+        {
+          "trigger": "on_reanimated",
+          "style": "default",
+          "isTriggerTooltip": true
+        },
+        {
+          "statusId": "undying",
+          "trigger": "on_reanimated",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

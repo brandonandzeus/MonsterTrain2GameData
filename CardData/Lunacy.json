@@ -1,0 +1,126 @@
+{
+  "id": "Lunacy",
+  "name": "Lunacy",
+  "nameKey": {
+    "key": "CardData_nameKey-d7a487fc1c93ae70-b0da924c17708494ba7437361e784f7d-v2",
+    "english": "Lunacy",
+    "french": "Démence",
+    "german": "Irrsinn",
+    "russian": "Лунатизм",
+    "portuguese": "Loucura",
+    "chinese": "月相魔导",
+    "spanish": "Lunomancia",
+    "chinese_traditional": "瘋狂",
+    "korean": "달의 서",
+    "japanese": "精神錯乱"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-170c8fdb77dacdde-b0da924c17708494ba7437361e784f7d-v2",
+    "english": "[phase] [x] times. Apply [trait1.statusmultiplier][x] [conduit].",
+    "french": "[phase] [x] fois. Donne [trait1.statusmultiplier][x] [conduit].",
+    "german": "[x]-mal [phase]. Wende [trait1.statusmultiplier][x] [conduit] an.",
+    "russian": "[phase] [x] раз(а). Накладывается [conduit] [x][trait1.statusmultiplier].",
+    "portuguese": "[phase] [x] vezes. Concede [trait1.statusmultiplier][x] [conduit].",
+    "chinese": "[phase] [x] 次。获得 [trait1.statusmultiplier][x] [conduit]。",
+    "spanish": "<b>Cambia de fase</b> [x] veces. Añade [trait1.statusmultiplier][x] [conduit].",
+    "chinese_traditional": "[phase][x]次。施加[trait1.statusmultiplier][x][conduit]。",
+    "korean": "[phase]를 [x]회 진행합니다. [trait1.statusmultiplier][x] [conduit]을 적용합니다.",
+    "japanese": "[x]回[phase]。[trait1.statusmultiplier][x] [conduit]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-388a1cc310042f32-b0da924c17708494ba7437361e784f7d-v2",
+      "english": "“Some believe that the Selene control the moon and her phases. What lunacy. The moon can not be forced to do what she does not wish. Time, on the other hand, can be manipulated.”\n—The Ritual Tome",
+      "french": "<nobr>« Certains</nobr> croient que les Sélènes contrôlent la lune et ses phases. Quelle <nobr>folie !</nobr> Personne ne peut imposer sa volonté à la lune. Le temps, en revanche, peut être <nobr>manipulé. »</nobr> \n— Livre des Rituels",
+      "german": "„Manche denken, dass die Selenen den Mond und seine Phasen kontrollieren. Narretei. Niemand kann den Mond zu etwas zwingen. Die Zeit, hingegen, kann sehr wohl manipuliert werden.“\n—Foliant der Rituale",
+      "russian": "«Некоторые убеждены, что Селены контролируют луну и ее фазы. Что за глупости! Луну нельзя заставить делать то, чего она не хочет. А вот временем управлять можно».\n— Книга ритуалов",
+      "portuguese": "“Alguns acreditam que as Selenes controlam a lua e suas fases. Que loucura. A lua não pode ser forçada a fazer o que não deseja. O tempo, por outro lado, pode ser manipulado.”\n— Tomo Ritualístico",
+      "chinese": "“有些人认为，月神女可以控制月亮及月相。简直胡说八道。没有人可以迫使月亮做违背自己的意愿的事。而另一方面，时间却可以被操纵。”\n——《仪式之书》",
+      "spanish": "«Algunos creen que las selenitas controlan la luna y sus fases. Qué ridiculez. Es imposible forzar a la luna a hacer algo que no desea. El tiempo, en cambio, se puede manipular».\n—Tomo de los Rituales",
+      "chinese_traditional": "「有些人認為塞勒涅控制著月亮和她的相位。真是太瘋狂了。我們不能強迫月亮去做她不願做的事。但時間的話，則是可以操控的。」\n——《儀式魔法書》",
+      "korean": "“세레네가 달과 그 위상을 조절한다고 믿는 이들이 있다. 하지만 그것은 실로 어리석은 생각이다. 달은 원하지 않는 일을 억지로 하지 않는다. 대신, 시간을 교묘하게 다룰 수 있을 뿐이다.”\n- 의식의 서",
+      "japanese": "「セレーネが月とその満ち欠けを制御していると信じている者もいる。馬鹿げたことだ。月に望まないことを強制することなどできない。ただし一方で、時間を制御することはできる」\n—儀式の書"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Lunacy.prefab",
+    "m_AssetGUID": "f91ce4571bde0124880a4c49f7e308e0"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingAdvanceMoonPhase",
+      "paramTrackedValue": "played_cost",
+      "traitIsRemovable": false,
+      "paramTeamType": "monsters"
+    },
+    {
+      "traitStateName": "CardTraitScalingAddStatusEffect",
+      "paramStatusEffects": [
+        {
+          "statusId": "conduit",
+          "count": 1
+        }
+      ],
+      "paramTrackedValue": "played_cost",
+      "paramInt": 1,
+      "traitIsRemovable": false,
+      "paramTeamType": "monsters",
+      "stackMode": "param_int"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAdvanceMoonPhase",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "CardTraitMagicPower_TooltipText",
+            "english": "Increases the amount of damage dealt and health restored by spells.",
+            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+            "chinese": "提高法术造成的伤害与恢复的生命值。",
+            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+          },
+          "titleKey": {
+            "key": "CardTraitMagicPower_TooltipTitle",
+            "english": "Magic Power",
+            "french": "Puissance magique",
+            "german": "Magische Kraft",
+            "russian": "Сила магии",
+            "portuguese": "Poder Mágico",
+            "chinese": "魔法强度",
+            "spanish": "Poder mágico",
+            "chinese_traditional": "魔法力量",
+            "korean": "마법력",
+            "japanese": "魔力"
+          }
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "conduit",
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "costType": "x",
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Taylor Bray"
+}

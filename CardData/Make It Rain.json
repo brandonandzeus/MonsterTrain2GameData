@@ -1,0 +1,126 @@
+{
+  "id": "MakeItRain",
+  "name": "Make It Rain",
+  "nameKey": {
+    "key": "CardData_nameKey-d5ddc8eb56fead15-6f6a78b5bf728794c8ae131383256960-v2",
+    "english": "Make It Rain",
+    "french": "L'or et la flamme",
+    "german": "Lass es regnen",
+    "russian": "Да будет дождь",
+    "portuguese": "Muita Grana",
+    "chinese": "燃烧经费",
+    "spanish": "Derroche",
+    "chinese_traditional": "錢雨",
+    "korean": "자금 투자",
+    "japanese": "散財"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-5a449c6bed5deffe-6f6a78b5bf728794c8ae131383256960-v2",
+    "english": "Deal [effect1.power] damage to enemy units. Spend [effect2.powerabs][coin] and repeat this card's effect, up to three more times.",
+    "french": "Inflige <nobr>[effect1.power] DGT</nobr> aux unités ennemies. Dépense [effect2.powerabs][coin] pour répéter cet effet, jusqu'à trois fois de plus.",
+    "german": "Füge gegnerischen Einheiten [effect1.power] Schaden zu. Gib [effect2.powerabs][coin] aus und wiederhole den Effekt dieser Karte (bis zu 3x).",
+    "russian": "Наносит [effect1.power] урона вражеским бойцам. Потратьте [effect2.powerabs][coin], чтобы повторить эффект этой карты. Доступно до трех раз.",
+    "portuguese": "Causa [effect1.power] de dano às unidades inimigas. Gasta [effect2.powerabs][coin] e repete o efeito desta carta até três vezes.",
+    "chinese": "对所有敌方单位造成 [effect1.power] 点伤害。花费 [effect2.powerabs][coin] 并重复该卡牌的效果，最多可以重复三次。",
+    "spanish": "Inflige [effect1.power] de daño a las unidades enemigas. Usa [effect2.powerabs][coin] para repetir este efecto hasta tres veces.",
+    "chinese_traditional": "對敵方單位造成[effect1.power]點傷害。花費[effect2.powerabs][coin]並重複此卡牌的效果，最多三次。",
+    "korean": "적 유닛들에게 [effect1.power]만큼 피해를 줍니다. [effect2.powerabs][coin]을 지불하여 이 카드 효과를 최대 세 번 더 발동할 수 있습니다.",
+    "japanese": "敵ユニットに[effect1.power]のダメージを与える。[effect2.powerabs][coin]を使い、このカードの効果を最大で3回繰り返す。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-710fb7737a0f50a5-6f6a78b5bf728794c8ae131383256960-v2",
+      "english": "Although it goes against the instincts of every dragon in Hell, sometimes you have to loosen the purse strings to win the battle.",
+      "french": "Même si cela va à l'encontre de l'instinct de tous les dragons de l'enfer, il faut parfois savoir délester sa bourse pour gagner la bataille.",
+      "german": "Obwohl es den Instinkten aller Drachen der Hölle widerspricht, muss man manchmal den Geldbeutel zücken, um einen Kampf gewinnen zu können.",
+      "russian": "Хотя это противоречит инстинктам любого дракона в Аду, иногда приходится опустошить кошелек, чтобы выиграть битву.",
+      "portuguese": "Embora isso vá contra os instintos de todos os dragões do inferno, às vezes é preciso abrir a mão para vencer a batalha.",
+      "chinese": "有时候，你得松松钱包才能赢得战斗，虽然这违背了地狱里每一条龙的本能。",
+      "spanish": "Aunque va en contra de los instintos de todos los dragones del Infierno, a veces es necesario hacer una inversión para ganar la batalla.",
+      "chinese_traditional": "儘管這違背了地獄裡每條龍的本能，但有時你必須鬆開錢袋才能贏得戰鬥。",
+      "korean": "지옥에 서식하는 모든 드래곤의 본능에 어긋나는 일이지만, 가끔은 전투에서 승리하기 위해 지갑을 열어야 할 때도 있다.",
+      "japanese": "地獄のあらゆる竜の本能に反することではあるが、戦いに勝つために財布の紐を緩めないといけないときもあるのだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MakeItRain.prefab",
+    "m_AssetGUID": "03b873a6706c0d540a9a3aca447bfbb2"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectNULL",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/MakeItRain/FX_MakeItRain.prefab",
+          "m_AssetGUID": "c70d3085f78f74d45996f9113220d835"
+        },
+        "spawnLocation": "room_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramInt": 5,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectRewardGold",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "shouldCancelSubsequentEffectsIfTestFails": true,
+      "paramInt": -5,
+      "paramBool": true
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "shouldTest": false,
+      "paramInt": 5
+    },
+    {
+      "effectStateName": "CardEffectRewardGold",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "shouldCancelSubsequentEffectsIfTestFails": true,
+      "paramInt": -5,
+      "paramBool": true
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "shouldTest": false,
+      "paramInt": 5
+    },
+    {
+      "effectStateName": "CardEffectRewardGold",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "shouldCancelSubsequentEffectsIfTestFails": true,
+      "paramInt": -5,
+      "paramBool": true
+    },
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramInt": 5
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Nicole Anne Alfonso"
+}

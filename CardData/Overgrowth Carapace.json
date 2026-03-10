@@ -1,0 +1,121 @@
+{
+  "id": "BogwurmsBulk",
+  "name": "Overgrowth Carapace",
+  "nameKey": {
+    "key": "CardData_nameKey-70af4bd3056c37a5-fd5f71511e65c5e4cacc910a522efd75-v2",
+    "english": "Overgrowth Carapace",
+    "french": "Carapace démesurée",
+    "german": "Wuchernder Panzer",
+    "russian": "Панцирь из наростов",
+    "portuguese": "Carapaça Selvagem",
+    "chinese": "过度生长的甲壳",
+    "spanish": "Caparazón agigantado",
+    "chinese_traditional": "長青外殼",
+    "korean": "증식 갑각",
+    "japanese": "繁茂の甲皮"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-7c2b44d8197f6972-fd5f71511e65c5e4cacc910a522efd75-v2",
+      "english": "Don’t think too hard about what is in this supplement. Just know that it will certainly make you FEEL stronger.",
+      "french": "Ne cherchez pas à savoir de quoi est fait cet équipement. Sachez simplement que grâce à lui, vous vous sentirez plus fort.",
+      "german": "Denk lieber nicht zu lange darüber nach, was in diesem Mittel enthalten ist. Sei dir nur sicher, dass du dich damit stärker FÜHLST.",
+      "russian": "Не задумывайтесь о том, что содержится в этом снадобье. Просто знайте, что оно заставит вас ПОЧУВСТВОВАТЬ себя сильнее.",
+      "portuguese": "Não pense muito sobre o que tem neste suplemento. Saiba apenas que ele fará você SE SENTIR mais forte.",
+      "chinese": "不用琢磨这件装备是什么制成的。只需知道，它确实能让你感觉更强壮就行了。",
+      "spanish": "No pienses demasiado en el contenido de este suplemento. Solo necesitas saber que te hará SENTIR más fuerte.",
+      "chinese_traditional": "別去想這個補帖裡有什麼。你只需要知道，它肯定會讓你感覺更強壯。",
+      "korean": "이 비약의 성분이 무엇인지는 깊게 생각하지 말도록. 확실하게 강해질 수 있다는 것만 기억하라.",
+      "japanese": "この補助食品に何が入っているかなんて気にしてはならない。強くなった\"気分になる\"ということだけ知っていればいい。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "equipment",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_BogwurmsBulk.prefab",
+    "m_AssetGUID": "c75248d1f8d3e4c4c84ac288f9ef2c24"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "BogwurmsBulk_Equipment",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-e0df3b12b319577d-ac0c09c703ac9fd429dbc92c9bbe5b97-v2",
+              "english": "Gain +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack], and +[effect0.upgrade.bonushp][health] if there is [capacity] available.",
+              "french": "Octroie +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] si la [capacity] le permet.",
+              "german": "Erhalte +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health], wenn du über [capacity] verfügst.",
+              "russian": "Дает +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health], если позволяют [capacity].",
+              "portuguese": "Recebe +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] se tiver [capacity] disponível.",
+              "chinese": "若有可用[capacity]，则获得 +[effect0.upgrade.bonussize][size]、+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+              "spanish": "Añade +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] si hay [capacity] disponible.",
+              "chinese_traditional": "如果有[capacity]可用，獲得+[effect0.upgrade.bonussize][size]、+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+              "korean": "[capacity]이 남아 있다면 +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] 효과를 부여합니다.",
+              "japanese": "[capacity]がある場合、+[effect0.upgrade.bonussize][size]、+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]を得る。"
+            },
+            "trigger": "post_combat",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                "targetMode": "self",
+                "targetTeamType": "both",
+                "paramCardUpgradeData": {
+                  "id": "BogwurmsBulk_Equipment_Upgrade",
+                  "bonusDamage": 20,
+                  "bonusHP": 20,
+                  "bonusSize": 1,
+                  "restrictSizeToRoomCapacity": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "Capacity_TooltipText",
+            "english": "Units can only be summoned on a floor if it has enough capacity.",
+            "french": "Les unités ne peuvent être invoquées à un niveau que s'il dispose d'une capacité suffisante.",
+            "german": "Einheiten können nur in Ebenen mit genug Kapazität gerufen werden.",
+            "russian": "Бойцов можно призвать на этаж только в том случае, если там есть место.",
+            "portuguese": "Unidades só podem ser invocadas em um andar se houver espaço suficiente.",
+            "chinese": "只有当该层有足够大的容量时，才能召唤单位。",
+            "spanish": "Solo puedes invocar unidades en un piso si tiene capacidad suficiente.",
+            "chinese_traditional": "只有在樓層有足夠容量的情況下，單位才能被召喚到該樓層。",
+            "korean": "객실 내에 충분한 수용량이 있어야 유닛을 소환할 수 있습니다.",
+            "japanese": "キャパシティが足りないとユニットをフロアに召喚することはできない。"
+          },
+          "titleKey": {
+            "key": "Capacity_TooltipTitle",
+            "english": "[capacity] Capacity",
+            "french": "[capacity] Capacité",
+            "german": "[capacity] Kapazität",
+            "russian": "[capacity] Размеры",
+            "portuguese": "[capacity] Capacidade",
+            "chinese": "[capacity] 容量",
+            "spanish": "Capacidad [capacity]",
+            "chinese_traditional": "[capacity]容量",
+            "korean": "[capacity] 수용량",
+            "japanese": "[capacity] キャパシティ"
+          }
+        }
+      ],
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/BogwurmsBulwark/FX_BogwurmsBulk.prefab",
+          "m_AssetGUID": "53ec1b3777fb9d34ebd205ee4c53dbe4"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Merilliza Chan"
+}

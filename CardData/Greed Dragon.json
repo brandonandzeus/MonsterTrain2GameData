@@ -1,0 +1,126 @@
+{
+  "id": "GreedDragon",
+  "name": "Greed Dragon",
+  "cost": 2,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_GreedDragon.prefab",
+    "m_AssetGUID": "744a12bc85895244e9b311800d541084"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterGreedDragon",
+        "nameKey": {
+          "key": "CharacterData_nameKey-6e7799f8fed553c2-89ebb4fa8d04a164badcee90831f2a81-v2",
+          "english": "Greed Dragon",
+          "french": "Dragon cupide",
+          "german": "Gierdrache",
+          "russian": "Алчный дракон",
+          "portuguese": "Dragão Ganancioso",
+          "chinese": "贪婪之龙",
+          "spanish": "Dragón codicioso",
+          "chinese_traditional": "貪婪龍",
+          "korean": "탐욕스러운 드래곤",
+          "japanese": "グリード・ドラゴン"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-547c3b21ed90ebac-89ebb4fa8d04a164badcee90831f2a81-v2",
+            "english": "These Master Keepers of the Coin tend to take their job to the literal conclusion and hoard every small gold flake they can find.",
+            "french": "Ces gardiens de la monnaie ont tendance à prendre leur travail au pied de la lettre et à s'emparer de la moindre piécette qui traîne.",
+            "german": "Diese Obersten Schatzmeister nehmen ihren Job ein wenig zu ernst und horten jedes noch so kleine Goldstück, das sie finden können.",
+            "russian": "Эти хранители монет склонны доводить свою работу до конца и собирать даже мельчайшие крупицы золота.",
+            "portuguese": "Esses Mestres Guardiões da Moeda tendem a levar o trabalho ao pé da letra e acumular qualquer lasquinha de ouro que encontram.",
+            "chinese": "这些财务总管总是会把工作做到极致，把一切能找到的小金片都囤起来。",
+            "spanish": "Estos guardianes maestros de la moneda se toman tan en serio su trabajo que acumulan hasta la última mota de oro que encuentran.",
+            "chinese_traditional": "這些硬幣的大師守護者往往會誤會自己工作的職責，囤積每一片金屑據為己有。",
+            "korean": "이 금화의 대수호자들은 자신들의 역할을 아주 글자 그대로 받아들이는 편이라, 금가루 하나도 그냥 지나치지 않고 죄다 쓸어 담는다.",
+            "japanese": "この金貨の番人は文字通りに徹底的に仕事を遂行し、見つけられるすべての小さな金くずをかき集める。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GreedDragon.prefab",
+          "m_AssetGUID": "49afa74189a2bc4418345b5c742f826a"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-63cd8fcc6cb80017-89ebb4fa8d04a164badcee90831f2a81-v2",
+              "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] for each [dragonshoardicon].",
+              "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] pour chaque [dragonshoardicon].",
+              "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] pro [dragonshoardicon].",
+              "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health] за каждый [dragonshoardicon].",
+              "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] para cada [dragonshoardicon].",
+              "chinese": "每有一个[dragonshoardicon]就+[effect0.upgrade.bonusdamage][attack]并+[effect0.upgrade.bonushp][health]。",
+              "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] por cada [dragonshoardicon].",
+              "chinese_traditional": "每個[dragonshoardicon]賦予+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+              "korean": "[dragonshoardicon] 하나당 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+              "japanese": "[dragonshoardicon]1つにつき、+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddCardUpgradeToUnitsPerDragonsHoard",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramCardUpgradeData": {
+                  "id": "GreedDragonSpawn_Upgrade",
+                  "bonusDamage": 10,
+                  "bonusHP": 10
+                },
+                "additionalTooltips": [
+                  {
+                    "descriptionKey": {
+                      "key": "HudTooltip_DragonsHoardInactive_Body",
+                      "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                      "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                      "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                      "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                      "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                      "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                      "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                      "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                      "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                      "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+                    },
+                    "titleKey": {
+                      "key": "HudTooltip_DragonsHoard_Title",
+                      "english": "[dragonshoardicon]Dragon's Hoard",
+                      "french": "[dragonshoardicon]Trésor du dragon",
+                      "german": "[dragonshoardicon]Drachenschatz",
+                      "russian": "[dragonshoardicon] Драконий клад",
+                      "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                      "chinese": "[dragonshoardicon]龙族宝藏",
+                      "spanish": "[dragonshoardicon]Tesoro de dragón",
+                      "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                      "korean": "[dragonshoardicon]드래곤의 재보",
+                      "japanese": "竜の財宝[dragonshoardicon]"
+                    },
+                    "style": "default"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "size": 3,
+        "health": 35,
+        "attackDamage": 20,
+        "subtypeKeys": [
+          "SubtypesData_Dragon",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "PyreborneGreedDragonChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

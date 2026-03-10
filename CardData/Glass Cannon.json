@@ -1,0 +1,67 @@
+{
+  "id": "GlassCannon",
+  "name": "Glass Cannon",
+  "nameKey": {
+    "key": "CardData_nameKey-bdd521526a3de08c-7b4d1bedfe89a15449df7074ef4fcadb-v2",
+    "english": "Glass Cannon",
+    "french": "Canon de verre",
+    "german": "Glaskanone",
+    "russian": "Стеклянная пушка",
+    "portuguese": "Canhão de Vidro",
+    "chinese": "玻璃大炮",
+    "spanish": "Cañón de cristal",
+    "chinese_traditional": "玻璃大炮",
+    "korean": "유리 대포",
+    "japanese": "硝子の大砲"
+  },
+  "overrideDescriptionKey": "CardData_overrideDescriptionKey-df4b6cbdd57675c8-7b4d1bedfe89a15449df7074ef4fcadb-v2",
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-ada59ab71ed36aed-7b4d1bedfe89a15449df7074ef4fcadb-v2",
+      "english": "As powerful as this weapon is, it is just as fragile. Handle with care.",
+      "french": "Aussi puissante que soit cette arme, elle est extrêmement fragile. À manipuler avec précaution.",
+      "german": "Diese Waffe ist genauso empfindlich wie mächtig. Gib Acht damit.",
+      "russian": "Это оружие настолько же мощное, насколько хрупкое. Будьте осторожны.",
+      "portuguese": "Por mais poderosa que seja essa arma, ela é igualmente frágil. Manuseie com cuidado.",
+      "chinese": "这种武器虽然强大，却也很脆弱。小心使用。",
+      "spanish": "Por potente que sea esta arma, es igual de frágil. Trátala con cuidado.",
+      "chinese_traditional": "儘管這件武器很強大，但它卻也很脆弱。請小心使用。",
+      "korean": "매우 강력하지만 그만큼 깨지기도 쉬운 무기다. 조심해서 다룰 것.",
+      "japanese": "この武器は強力だが、その分脆くもある。慎重に扱うことだ。"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "uncommon",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_GlassCannon.prefab",
+    "m_AssetGUID": "bf1c74084722b1e4fabb09841dfeb953"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "GlassCannon_Upgrade",
+        "statusEffectUpgrades": [
+          {
+            "statusId": "fragile",
+            "count": 1
+          }
+        ],
+        "bonusDamage": 50
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/GlassCannon/FX_GlassCannon.prefab",
+          "m_AssetGUID": "71ca88b4d295daf45b5bbb011e59ca98"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Rithyra Bin"
+}

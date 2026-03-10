@@ -1,0 +1,55 @@
+{
+  "id": "EmergeAbility",
+  "name": "Emerge",
+  "nameKey": {
+    "key": "CardData_nameKey-0af3cfdf65724bfb-1851b994b9c55de44bc2c73b58e9c5ef-v2",
+    "english": "Emerge",
+    "french": "Émergence",
+    "german": "Auftauchen",
+    "russian": "Возникновение",
+    "portuguese": "Emergir",
+    "chinese": "现身",
+    "spanish": "Alzamiento",
+    "chinese_traditional": "浮現",
+    "korean": "출현",
+    "japanese": "出現"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-9228738e653af144-1851b994b9c55de44bc2c73b58e9c5ef-v2",
+    "english": "Remove [stasis]. Starts battle on cooldown. Removes ability on use.",
+    "french": "Retire [stasis]. Temps de recharge appliqué au début de la bataille. Capacité retirée à l'utilisation.",
+    "german": "Entferne [stasis]. Kampf beginnt mit Abklingzeit. Fähigkeit wird bei Verwendung entfernt.",
+    "russian": "Снимает [stasis]. В начале боя на перезарядке. Убирает способность после применения.",
+    "portuguese": "Remove [stasis]. Inicia a batalha em recarga. Remove a habilidade após o uso.",
+    "chinese": "移除[stasis]。战斗开始时处于冷却中。使用后移除该能力。",
+    "spanish": "Elimina [stasis]. Empieza la batalla en recarga. Al usarla, elimina la habilidad.",
+    "chinese_traditional": "移除[stasis]。戰鬥開始時處於冷卻狀態。使用後移除此能力。",
+    "korean": "[stasis] 효과를 제거합니다. 전투 시작 시 재사용 대기시간을 적용합니다. 사용 시 능력을 제거합니다.",
+    "japanese": "[stasis]を解除する。クールダウン状態でバトルを開始する。使用時にアビリティを解除する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectRemoveStatusEffect",
+      "targetMode": "self",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "untouchable",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectRemoveAbility",
+      "targetMode": "self",
+      "targetTeamType": "both"
+    }
+  ],
+  "cooldownAtSpawn": 1,
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly",
+  "canAbilityTargetOtherFloors": true
+}

@@ -1,0 +1,133 @@
+{
+  "id": "MonsterBloatedWhelp",
+  "name": "Bloated Whelp",
+  "nameKey": {
+    "key": "CharacterData_nameKey-81b8d30a27672999-bb7bba1822083c640a93eeff446f0024-v2",
+    "english": "Bloated Whelp",
+    "french": "Dragonnet boursouflé",
+    "german": "Aufgeblähter Zögling",
+    "russian": "Пухлый дракончик",
+    "portuguese": "Filhote Entumecido",
+    "chinese": "膨胀幼龙",
+    "spanish": "Cría hinchada",
+    "chinese_traditional": "腫脹幼龍",
+    "korean": "뚱뚱한 해츨링",
+    "japanese": "肥満小竜"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-9513daf4bac72508-bb7bba1822083c640a93eeff446f0024-v2",
+      "english": "“Look, I know I’m gold-intolerant, but I’m not going to stop eating coins.”",
+      "french": "<nobr>« Écoutez,</nobr> je sais que je suis intolérant à l'or, mais je ne vais pas arrêter de manger des pièces pour <nobr>autant. »</nobr>",
+      "german": "„Tja, ich habe zwar eine Goldintoleranz, werde aber trotzdem weiterhin Münzen fressen.“",
+      "russian": "«Да, у меня аллергия на золото, но я все равно не перестану есть монеты».",
+      "portuguese": "“Olha, sei que tenho intolerância a ouro, mas não vou parar de comer moedas.”",
+      "chinese": "“听着，我知道自己患有黄金不耐症，但我就是要继续吃金币。”",
+      "spanish": "«Mira, sé que soy intolerante al oro, pero no pienso dejar de comer monedas».",
+      "chinese_traditional": "「是這樣的，雖然我知道我對金子過敏，但我不會停止吃金幣。」",
+      "korean": "“이봐, 내가 황금에 내성은 없지만, 그렇다고 동전을 먹는 걸 멈출 생각은 없어.”",
+      "japanese": "「黄金は自分の身体に合わないっていうことには気づいてるけど、金貨を食べるのをやめるつもりはないよ」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_BloatedWhelp.prefab",
+    "m_AssetGUID": "2123eb9c59211c0449b0af13f5366315"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SnottyWhelp/FX_SneezyDrakeProjectile.prefab",
+      "m_AssetGUID": "db9dc19d1e33f3d47b7fefeea220fd24"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+      "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+    },
+    "spawnLocation": "character_center"
+  },
+  "unitAbility": {
+    "id": "BloatedWhelpAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-49ea55487bad199f-34f9cc90de87c134b892dcd2d4135b09-v2",
+      "english": "Indigestion",
+      "french": "Indigestion",
+      "german": "Magenverstimmung",
+      "russian": "Несварение",
+      "portuguese": "Indigestão",
+      "chinese": "消化不良",
+      "spanish": "Indigestión",
+      "chinese_traditional": "消化不良",
+      "korean": "위장 트러블",
+      "japanese": "消化不良"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-6353e5d4baa33f94-34f9cc90de87c134b892dcd2d4135b09-v2",
+      "english": "Deal [effect0.power] damage to enemy units.",
+      "french": "Inflige <nobr>[effect0.power] DGT</nobr> aux unités ennemies.",
+      "german": "Füge gegnerischen Einheiten [effect0.power] Schaden zu.",
+      "russian": "Наносит [effect0.power] урона всем врагам.",
+      "portuguese": "Causa [effect0.power] de dano às unidades inimigas.",
+      "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。",
+      "spanish": "Inflige [effect0.power] de daño a las unidades enemigas.",
+      "chinese_traditional": "對敵方單位造成[effect0.power]點傷害。",
+      "korean": "적 유닛들에게 [effect0.power]의 피해를 입힙니다.",
+      "japanese": "敵ユニットに[effect0.power]のダメージを与える。"
+    },
+    "cardType": "spell",
+    "rarity": "common",
+    "effects": [
+      {
+        "effectStateName": "CardEffectDamage",
+        "targetMode": "room",
+        "targetTeamType": "heroes",
+        "paramInt": 1,
+        "appliedVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+            "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+          },
+          "spawnLocation": "character_center"
+        },
+        "appliedToSelfVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
+            "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
+          },
+          "spawnLocation": "character_center"
+        }
+      },
+      {
+        "effectStateName": "CardEffectSacrifice",
+        "targetMode": "self",
+        "targetTeamType": "monsters",
+        "appliedVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+            "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+          },
+          "spawnLocation": "character_center"
+        },
+        "appliedToSelfVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
+            "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
+          },
+          "spawnLocation": "character_center"
+        }
+      }
+    ],
+    "cooldownAfterActivated": 1,
+    "isUnitAbility": true,
+    "initialKeyboardTarget": "front_friendly"
+  },
+  "size": 1,
+  "health": 1,
+  "attackDamage": 4,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Whelp"
+  ],
+  "characterChatterData": "PyreborneBloatedWhelpChatterData"
+}

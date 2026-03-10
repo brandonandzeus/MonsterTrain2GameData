@@ -1,0 +1,122 @@
+{
+  "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2",
+  "name": "Athane the Fallen V2",
+  "nameKey": {
+    "key": "CharacterData_nameKey-163533cead46783e-edd336dfbd052c84086480a39d1c2319-v2",
+    "english": "Athane the Fallen",
+    "french": "Athane la Déchue",
+    "german": "Athane die Gefallene",
+    "russian": "Афина Падшая",
+    "portuguese": "Athane, a Caída",
+    "chinese": "堕落者阿塞恩",
+    "spanish": "Athane la Caída",
+    "chinese_traditional": "墮落的阿薩恩",
+    "korean": "타락자 아테인",
+    "japanese": "堕ちし者アサネ"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-955137f37393787e-edd336dfbd052c84086480a39d1c2319-v2",
+      "english": "Entropy’s erratic corruption proved to be the energy-rich soil for the Mother’s seed to root and grow. Now, having served as a bodily vessel for both a Titan and the Giver of Life, all that remains of Athane is a muted voice that pleads for help.",
+      "french": "La corruption chaotique d'Entropie s'est avérée propice au développement des graines de la Mère. Désormais, après avoir accueilli à la fois un titan et le Créateur de vie, Athane n'est plus qu'une voix étouffée qui implore qu'on l'aide.",
+      "german": "Die erratische Verderbnis der Entropie stellte sich als energiereicher Boden heraus, in dem die Saat der Mutter wurzeln und gedeihen konnte. Nun, da sie als Gefäß für Titanen und Lebensschöpferin gedient hatte, blieb von Athane nur noch eine leise Stimme übrig, die um Hilfe flehte.",
+      "russian": "Рваная и нестабильная скверна Энтропии стала насыщенной почвой для прорастания материнского семени. Тело Афины побывало сосудом и для Титана, и для Дарующей жизни, и теперь от нее самой остался лишь приглушенный голос, умоляющий о помощи.",
+      "portuguese": "A corrupção errática da Entropia provou ser o solo rico em energia para a semente da Mãe criar raízes e crescer. Agora, tendo servido como um receptáculo corporal tanto para um Titã quanto para a Genetriz, tudo o que resta de Athane é uma voz abafada que implora por ajuda.",
+      "chinese": "事实证明，混乱泰坦的不稳定腐化富含母亲的种子生根发芽所需的养分。充当过泰坦以及生命赐予者身体容器之后，现在阿塞恩只能凭残存的意识无声地求救。",
+      "spanish": "La corrupción errática de Entropía demostró ser un suelo rico en energía para las semillas de la Madre. Ahora que ha servido como receptáculo tanto para un titán como para la Dadora de Vida, todo lo que queda de Athane es una voz apagada que suplica auxilio.",
+      "chinese_traditional": "熵那反覆無常的腐化力量，竟成了母親種子扎根生長的肥沃養料。如今，阿薩恩這具曾同時承載泰坦與生命賜予者的肉身容器，僅剩下一道微弱的求救聲還在迴盪。",
+      "korean": "엔트로피의 변덕스러운 타락은 어머니의 씨앗이 뿌리내리고 성장하기에 충분히 에너지로 가득 찬 토양임이 증명되었다. 이제 티탄과 생명의 수여자, 두 존재 모두의 육체적 그릇으로 쓰이고 난 뒤 아테인에게 남은 것은 도움을 애원하는 희미한 목소리뿐이다.",
+      "japanese": "エントロピーの不安定な堕落は、マザーの種が根を張り成長するには願ってもいない栄養豊富な土であることが判明した。巨人族と生命を与える者の両方の肉体の器となったアサネの残骸は、押し殺された助けを呼ぶ声だけである。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_NephilLastToFall_SoulSavior.prefab",
+    "m_AssetGUID": "35f50216e03c8a44a878aeac3ad57475"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-91981f8e6fe18861-edd336dfbd052c84086480a39d1c2319-v2",
+        "english": "Apply [spikes] [effect0.status0.power] to enemy units.",
+        "french": "Applique [spikes] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [effect0.status0.power] [spikes] auf gegnerische Einheiten an.",
+        "russian": "На всех врагов накладываются [spikes] х[effect0.status0.power].",
+        "portuguese": "Aplica [spikes] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [spikes] [effect0.status0.power]。",
+        "spanish": "Añade [spikes] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[spikes][effect0.status0.power]。",
+        "korean": "적 유닛들에 [spikes][effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[spikes] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "spikes",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-7765dbcda639187b-edd336dfbd052c84086480a39d1c2319-v2",
+        "english": "Spawn a <b>Chosen Prayerstone</b>.",
+        "french": "Fait apparaître une <b>Pierre offertoire d'élu</b>.",
+        "german": "Erzeuge einen <b>Auserwählten Gebetstein</b>.",
+        "russian": "Создает <b>Алтарь избранного</b>.",
+        "portuguese": "Faz surgir uma <b>Pedra de Oração do Escolhido</b>.",
+        "chinese": "生成一个<b>神选祷告石</b>。",
+        "spanish": "Genera una <b>Piedra oratoria elegida</b>.",
+        "chinese_traditional": "生成一個<b>天選祈禱石</b>。",
+        "korean": "<b>선택된 기도석</b>을 스폰합니다.",
+        "japanese": "<b>選ばれし祈念石</b>を出現させる。"
+      },
+      "trigger": "post_ascension",
+      "effects": [
+        {
+          "effectStateName": "CardEffectSpawnHero",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramCharacterDataPool": [
+            "SpikyRockT3_Chosen_Boss_BasicNonAttack"
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 3600,
+    "endlessAttack": 30
+  },
+  "size": 5,
+  "health": 400,
+  "isMiniboss": true,
+  "deathType": "large",
+  "attackDamage": 5,
+  "bossTitanAffinity": "lifemother",
+  "subtypeKeys": [
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss7_SoulSaviorAthane_ChatterData",
+  "artistAttribution": "Taylor Bray"
+}

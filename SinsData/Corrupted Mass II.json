@@ -1,0 +1,81 @@
+{
+  "id": "Enemy_Boss_Level3_ImmortalMass_Corruption_TitanTrial",
+  "name": "Corrupted Mass II",
+  "nameKey": {
+    "key": "SinsData_nameKey-973618d4e92bb1c3-afead997895c1a9499e16e7fc0196b90-v2",
+    "english": "Corrupted Mass II",
+    "french": "Masse corrompue II",
+    "german": "Verdorbene Masse II",
+    "russian": "Скверная масса II",
+    "portuguese": "Massa Corrompida II",
+    "chinese": "腐化血肉 II",
+    "spanish": "Masa corrupta II",
+    "chinese_traditional": "腐化巨塊II",
+    "korean": "타락한 덩어리 II",
+    "japanese": "堕落の集合体II"
+  },
+  "descriptionKey": {
+    "key": "SinsData_descriptionKey-4c7d011e669bccf3-afead997895c1a9499e16e7fc0196b90-v2",
+    "english": "Fleshlings have [effect0.power][attack] and [effect0.power][health] and apply Corruption [effect2.power] on death to the unit that killed it. Fleshweaver has [effect3.power] more stacks of [mass].",
+    "french": "Les Lambeaux gagnent [effect0.power][attack] et [effect0.power][health]. À leur mort, ils infligent Corruption [effect2.power] à l'unité qui les a tués. Le Tisseur de chair gagne <nobr>[effect3.power] cumuls</nobr> de [mass] en plus.",
+    "german": "Fleischlinge verfügen über [effect0.power][attack] und [effect0.power][health] und wirken beim Tod [effect2.power] Verderbnis auf die Einheit, die sie getötet hat. Fleischweber hat [effect3.power] zusätzliche Stapel [mass].",
+    "russian": "Мяско получает [effect0.power][attack], [effect0.power][health] и накладывает Скверну х[effect2.power] на своего убийцу. Мясконосу дается дополнительно [mass] х[effect3.power].",
+    "portuguese": "Os Cárneos têm [effect0.power][attack] e [effect0.power][health] e, ao morrerem, aplicam Corrupção [effect2.power] na unidade que os matou. O Tecelão Cárneo tem mais [effect3.power] cargas de [mass].",
+    "chinese": "血肉幼体拥有 [effect0.power][attack]，[effect0.power][health]，并在死亡时对击杀它的单位施加腐化 [effect2.power]。血肉编织者的 [mass] 层数增加 [effect3.power]。",
+    "spanish": "Los Carnosos tienen [effect0.power][attack], [effect0.power][health] y, al morir, añaden Corrupción [effect2.power] a la unidad que los mata. El Tejecarnes tiene [effect3.power] acumulaciones más de [mass].",
+    "chinese_traditional": "血肉造物擁有[effect0.power][attack]和[effect0.power][health]，並在死亡時對殺死它的單位施加腐化[effect2.power]。血肉編織者擁有[effect3.power]層額外的[mass]。",
+    "korean": "플레시링이 [effect0.power][attack], [effect0.power][health]을 지니며, 죽을 때 자신을 처치한 유닛에 타락 [effect2.power]을 적용합니다. 플레시위버는 [mass]에 [effect3.power]스택이 더해집니다.",
+    "japanese": "肉塊は[effect0.power][attack]と[effect0.power][health]のステータスを得る。倒された時に攻撃したユニットに[effect2.power]の堕落を付与する。肉縫いは[mass]のスタックが[effect3.power]増加する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectOnSpawnHeroSubstitution",
+      "additionalTooltips": [
+        {
+          "statusId": "corruption",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ]
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramCharacterSubtype": "SubtypesData_BossAll"
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramInt": 2,
+      "paramCharacterSubtype": "SubtypesData_BossAll",
+      "paramTargetMode": "front_in_room"
+    },
+    {
+      "relicEffectClassName": "RelicEffectNull",
+      "paramCardType": "spell",
+      "paramStatusEffects": [
+        {
+          "statusId": "mass",
+          "count": 4
+        }
+      ],
+      "paramSourceTeam": null,
+      "paramInt": 4,
+      "paramCharacterSubtype": "SubtypesData_BossAll",
+      "paramTargetMode": "front_in_room"
+    }
+  ]
+}

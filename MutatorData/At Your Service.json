@@ -1,0 +1,54 @@
+{
+  "id": "TrainStewardImprovement",
+  "name": "At Your Service",
+  "nameKey": {
+    "key": "MutatorData_nameKey-2a7e71feef82be51-c1abbbf95de63dd47bac2ceaef00e14a-v2",
+    "english": "At Your Service",
+    "french": "À votre service",
+    "german": "Stets zu Diensten",
+    "russian": "К вашим услугам",
+    "portuguese": "Ao seu Dispor",
+    "chinese": "为你效劳",
+    "spanish": "A su servicio",
+    "chinese_traditional": "聽候差遣",
+    "korean": "분부대로 하지요",
+    "japanese": "私にお任せを"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-6bc48d97c8d0a8db-c1abbbf95de63dd47bac2ceaef00e14a-v2",
+    "english": "Upgrading Steward units gives them an additional +[effect0.power][attack] and +[effect0.power][health].",
+    "french": "L'amélioration des stewards leur confère +[effect0.power][attack] et +[effect0.power][health].",
+    "german": "Die Aufwertung von Begleiter-Einheiten gewährt ihnen zusätzlich +[effect0.power][attack] und +[effect0.power][health].",
+    "russian": "Улучшение стюардов дает им дополнительно +[effect0.power][attack] и +[effect0.power][health].",
+    "portuguese": "Melhorar unidades de Guardas concede um adicional de +[effect0.power][attack] e +[effect0.power][health].",
+    "chinese": "升级乘务员单位会使其额外获得+[effect0.power][attack] 和 +[effect0.power][health]。",
+    "spanish": "Al mejorar unidades Auxiliares, añaden también +[effect0.power][attack] y +[effect0.power][health].",
+    "chinese_traditional": "升級服務員單位時給予它們額外的+[effect0.power][attack]和+[effect0.power][health]。",
+    "korean": "잡부 유닛을 업그레이드하면 추가로 +[effect0.power][attack] 및 +[effect0.power][health]을 획득합니다.",
+    "japanese": "スチュワードユニットをアップグレードすると、追加で+[effect0.power][attack]と+[effect0.power][health]を付与する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectUpgradeCardOnPurchasingUpgrade",
+      "paramCardUpgradeData": {
+        "id": "TrainStewardImprovement_Upgrade",
+        "filters": [
+          {
+            "id": "OnlyStewards",
+            "cardType": "monster",
+            "requiredSubtypesOperator": "and",
+            "requiredSubtypes": [
+              "SubtypesData_TrainSteward"
+            ]
+          }
+        ],
+        "bonusDamage": 10,
+        "bonusHP": 10
+      }
+    }
+  ],
+  "boonValue": 5,
+  "tags": [
+    "subtype"
+  ]
+}

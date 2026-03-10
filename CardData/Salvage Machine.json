@@ -1,0 +1,174 @@
+{
+  "id": "SalvageMachine",
+  "name": "Salvage Machine",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassRailforged",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SalvageMachine.prefab",
+    "m_AssetGUID": "7bff066081e3a8d49b9affc9226f37b9"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCharacterData": {
+        "id": "MonsterSalvageSteward",
+        "nameKey": {
+          "key": "CharacterData_nameKey-23ffc4b80a6cb147-bb9463ccfc6f8384bb1f0711af4e1583-v2",
+          "english": "Salvage Machine",
+          "french": "Machine de récupération",
+          "german": "Bergemaschine",
+          "russian": "Дробильщик",
+          "portuguese": "Máquina de Recuperação",
+          "chinese": "回收机",
+          "spanish": "Máquina de reciclaje",
+          "chinese_traditional": "回收機器",
+          "korean": "회수 기계",
+          "japanese": "サルベージ・マシン"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-b6cd96a5584a513e-bb9463ccfc6f8384bb1f0711af4e1583-v2",
+            "english": "Nearly everything can be salvaged, so long as you can break it down. Shredding scrap into smaller pieces was an important step, so that the smelt can occur quickly and evenly. Which, naturally, meant Herzal already had a machine designed for exactly that.",
+            "french": "Tout ou presque peut être récupéré, tant qu'on peut le déchiqueter. Le broyage de la ferraille en petits copeaux était une étape importante pour que la fusion soit rapide et homogène. Ce qui signifiait naturellement que Herzal disposait déjà d'une machine conçue spécialement à cet effet.",
+            "german": "Fast alles kann geborgen werden, wenn es sich nur zerlegen lässt. Das Zerkleinern von Schrott in Elemente geringerer Größe war ein wichtiger Schritt und erlaubt ein schnelleres, gleichmäßigeres Schmelzen. Herzal hatte so eine Maschine natürlich schon längst erschaffen.",
+            "russian": "Почти все можно пустить в дело — нужно лишь разобрать на части. Измельчение металлолома на мелкие куски — важный этап для быстрой переплавки. Разумеется, и для этого у Герцаля машина наготове.",
+            "portuguese": "Quase tudo pode ser recuperado, contanto que seja desmontado. Quebrar sucata em pedaços menores era um passo importante, para que a fundição possa correr de forma rápida e ordenada. O que, naturalmente, significa que Herzal tinha uma máquina especialmente para isso.",
+            "chinese": "几乎万物皆可回收，前提是你有办法将其分解。将废料切成小块是非常重要的一步，因为这样才能快速且均匀地将其熔化。可想而知，这就意味着赫扎尔已经设计出用来切碎废料的机器了。",
+            "spanish": "Casi todo puede reutilizarse, siempre que se pueda descomponer. Dividir la chatarra en piezas más pequeñas fue un paso importante para que la fundición ganara velocidad y uniformidad. Lógicamente, eso significaba que Herzal ya había creado una máquina para hacerlo.",
+            "chinese_traditional": "幾乎任何東西都能回收，只要你能將其拆解。將廢料切成小塊是重要的一步，如此熔煉才能快速均勻地進行。這自然意味著赫爾扎爾已為此設計了一台機器。",
+            "korean": "대부분의 자원은 해체 과정만 거친다면 재활용이 가능하다. 고철을 미세 조각으로 분쇄하는 공정은 용해를 신속하고 균일하게 진행하기 위한 필수 단계였다. 그리고 예상했겠지만, 헤르잘은 해당 목적을 위해 사전에 설계된 전용 장비를 보유하고 있었다.",
+            "japanese": "分解することができるならば、ほとんどのものは回収できる。精錬を素早く、均等に行うために、鉄屑を小さな破片にすることは大事な手順だった。つまり、当然ながら、ハーザルはすでにそのために設計された機械を作っていたのである。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SalvageMachine.prefab",
+          "m_AssetGUID": "4e0109c09caae88478be3e3c3fc9d8d0"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-9729e4924ff856e3-bb9463ccfc6f8384bb1f0711af4e1583-v2",
+              "english": "[forge] [effect0.power].",
+              "french": "[forge] [effect0.power].",
+              "german": "[forge] [effect0.power].",
+              "russian": "[forge] х[effect0.power].",
+              "portuguese": "[forge] [effect0.power].",
+              "chinese": "[forge] [effect0.power]。",
+              "spanish": "[forge] [effect0.power].",
+              "chinese_traditional": "[forge][effect0.power]。",
+              "korean": "[forge] [effect0.power].",
+              "japanese": "[forge] [effect0.power]。"
+            },
+            "trigger": "on_any_unit_death_on_floor",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAdjustForgePoints",
+                "targetMode": "room",
+                "targetTeamType": "both",
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "unitAbility": {
+          "id": "SalvageMachineAbility",
+          "nameKey": {
+            "key": "CardData_nameKey-9b6840fb376eb44f-9e5ce7b009af5cd469af71539e29744c-v2",
+            "english": "Scrap Harvest",
+            "french": "Collecte de rebuts",
+            "german": "Schrotternte",
+            "russian": "Сбор лома",
+            "portuguese": "Coleta de Sucata",
+            "chinese": "收获废料",
+            "spanish": "Cosecha de chatarra",
+            "chinese_traditional": "廢料收割",
+            "korean": "잔해 수거",
+            "japanese": "鉄屑回収"
+          },
+          "overrideDescriptionKey": {
+            "key": "CardData_overrideDescriptionKey-795f9d1811b0ba51-9e5ce7b009af5cd469af71539e29744c-v2",
+            "english": "Add a <b>Scrap Metal</b> to your hand.",
+            "french": "Ajoute un <b>Métal de récupération</b> à votre main.",
+            "german": "Nimm eine <b>Schrottmetall</b>-Karte auf die Hand.",
+            "russian": "Добавляет в руку <b>Металлолом</b>.",
+            "portuguese": "Adiciona uma <b>Sucata de Metal</b> à sua mão.",
+            "chinese": "将一张<b>废金属</b>加入你的手牌。",
+            "spanish": "Añade una <b>Chatarra metálica</b> a tu mano.",
+            "chinese_traditional": "將一張<b>廢金屬</b>加入你的手牌。",
+            "korean": "<b>고철</b>을 패에 추가합니다.",
+            "japanese": "手札に<b>鉄屑</b>を追加する。"
+          },
+          "cardType": "spell",
+          "rarity": "common",
+          "linkedClass": "ClassBanished",
+          "cardArtPrefabVariantRef": {
+            "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SalvageMachineAbility.prefab",
+            "m_AssetGUID": "5ff734d8caa90fb4381a54d1af12542f"
+          },
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddBattleCard",
+              "targetMode": "room",
+              "targetTeamType": "both",
+              "paramInt": 3,
+              "additionalParamInt": 1,
+              "paramCardPool": "ScrapMetalOnlyPool"
+            }
+          ],
+          "cooldownAfterActivated": 3,
+          "isUnitAbility": true,
+          "initialKeyboardTarget": "front_friendly"
+        },
+        "size": 1,
+        "health": 9,
+        "attackDamage": 9,
+        "subtypeKeys": [
+          "SubtypesData_Machine",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "RailforgedSalvageMachineChatter",
+        "artistAttribution": "Ron Kee"
+      },
+      "additionalTooltips": [
+        {
+          "statusId": "rooted",
+          "descriptionKey": {
+            "key": "CardTraitSalvage_TooltipText",
+            "english": "If <b>Smelted</b>, play the card's effects.",
+            "french": "Si elle <b>fusionne</b>, jouez les effets de cette carte.",
+            "german": "Falls diese Karte <b>geschmolzen</b> wird, werden die Effekte dieser Karte ausgespielt.",
+            "russian": "При <b>плавке</b> разыгрываются эффекты карты.",
+            "portuguese": "Ao <b>Fundir</b>, jogue os efeitos da carta.",
+            "chinese": "若被<b>熔炼</b>，则触发卡牌的效果。",
+            "spanish": "Si se <b>Funde</b>, activa los efectos de la carta.",
+            "chinese_traditional": "如果<b>已熔煉</b>，打出卡牌的效果。",
+            "korean": "<b>제련</b>된 상태라면 카드 효과를 발동합니다.",
+            "japanese": "<b>精錬</b>されると、このカードの効果がプレイされる。"
+          },
+          "titleKey": {
+            "key": "CardTraitSalvage_CardText",
+            "english": "Salvage",
+            "french": "Récupération",
+            "german": "Erhalt",
+            "russian": "Обломки",
+            "portuguese": "Recuperar",
+            "chinese": "回收",
+            "spanish": "Reutilización",
+            "chinese_traditional": "回收",
+            "korean": "회수",
+            "japanese": "サルベージ"
+          },
+          "allowSecondaryPlacement": true
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "requiredDLC": "railforged",
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Ron Kee"
+}

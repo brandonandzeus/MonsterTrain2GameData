@@ -1,0 +1,52 @@
+{
+  "id": "FriendlySapPlusAttack",
+  "name": "Slow and Steady",
+  "nameKey": {
+    "key": "MutatorData_nameKey-48026580df536737-e214c064807a961438844f9fa1b19eb8-v2",
+    "english": "Slow and Steady",
+    "french": "Lenteur et régularité",
+    "german": "Langsam aber stetig",
+    "russian": "Медленный и крепкий",
+    "portuguese": "Lento e Estável",
+    "chinese": "稳扎稳打",
+    "spanish": "Lento pero seguro",
+    "chinese_traditional": "穩紮穩打",
+    "korean": "느리고 꾸준하게",
+    "japanese": "ゆっくりと着実"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-db010ddcb94ba5da-e214c064807a961438844f9fa1b19eb8-v2",
+    "english": "Friendly units enter with +[effect0.power][attack] and [sap] [effect1.status0.power].",
+    "french": "Les alliés entrent avec +[effect0.power][attack] et [sap] [effect1.status0.power].",
+    "german": "Verbündete Einheiten starten mit +[effect0.power][attack] und [sap] [effect1.status0.power].",
+    "russian": "Союзники при появлении получают [effect0.power][attack] и [sap] х[effect1.status0.power].",
+    "portuguese": "As unidades aliadas entram com +[effect0.power][attack] e [sap] [effect1.status0.power].",
+    "chinese": "友方单位进入战斗时获得+[effect0.power][attack]，[sap] [effect1.status0.power]。",
+    "spanish": "Las unidades aliadas entran con +[effect0.power][attack] y [sap] [effect1.status0.power].",
+    "chinese_traditional": "友方單位登場時獲得+[effect0.power][attack]和[sap][effect1.status0.power]。",
+    "korean": "아군 유닛이 +[effect0.power][attack] 및 [sap] [effect1.status0.power] 상태로 등장합니다.",
+    "japanese": "味方ユニットが+[effect0.power][attack]と[sap] [effect1.status0.power]が付与された状態で出現する。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectModifyCardAttack",
+      "paramCardType": "monster",
+      "paramInt": 10
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "debuff",
+          "count": 7
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": -1
+    }
+  ],
+  "disableInDailyChallenges": true,
+  "tags": [
+    "friendlyeffect"
+  ]
+}

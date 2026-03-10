@@ -1,0 +1,65 @@
+{
+  "id": "Retch",
+  "name": "Retch",
+  "nameKey": {
+    "key": "CardData_nameKey-98be9a402c73c3d1-6c5f6c837e91bd84ab7cde7b6e401f5b-v2",
+    "english": "Retch",
+    "french": "Haut-le-cœur",
+    "german": "Würgen",
+    "russian": "Рвота",
+    "portuguese": "Expelir",
+    "chinese": "反胃",
+    "spanish": "Vomitar",
+    "chinese_traditional": "乾嘔",
+    "korean": "구토",
+    "japanese": "嘔吐"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-fb3f0dc22ee0feb2-6c5f6c837e91bd84ab7cde7b6e401f5b-v2",
+    "english": "Return eaten units to your hand.",
+    "french": "Renvoie les unités mangées dans votre main.",
+    "german": "Nimm verschlungene Einheiten auf die Hand zurück.",
+    "russian": "Возвращает в руку поглощенных существ.",
+    "portuguese": "Retorna unidades devoradas à sua mão.",
+    "chinese": "将被吞食的单位返还至你的手牌。",
+    "spanish": "Devuelve las unidades devoradas a tu mano.",
+    "chinese_traditional": "將被吞噬的單位放回你的手牌。",
+    "korean": "먹이로 사용된 유닛들을 패로 되돌립니다.",
+    "japanese": "被食者ユニットを手札に戻す。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a1748d0b0fd93652-6c5f6c837e91bd84ab7cde7b6e401f5b-v2",
+      "english": "Even the Shroud knows little restraint, sometimes consuming Morsels when, as far as I can tell, no hunger remains. This compulsion, unfortunately, can lead to… ”involuntary expulsion.”",
+      "french": "Même le Suaire a du mal à se contrôler, il va même parfois jusqu'à consommer des sous-bistres alors que, pour autant que je sache, il n'a plus faim. Cette compulsion peut malheureusement provoquer des... \"expulsions involontaires\".",
+      "german": "Selbst die Mantelwesen können sich oft nicht zurückhalten und verspeisen Nuggets, wenn sie allem Anschein nach satt sind. Diese Gewohnheit kann leider auch zu „ungewollten Reflexen“ führen …",
+      "russian": "Даже Завеса плохо умеет себя контролировать и порой, не испытывая голода, поглощает заморышей. Подобная неумеренность в еде, к прискорбию, способна вызвать... «непроизвольное извержение».",
+      "portuguese": "Até mesmo o Velado não sabe se conter, às vezes consumindo Lanchos quando, até onde sei, não há fome. Uma consequência inconveniente desta compulsão é uma... “ejeção involuntária”.",
+      "chinese": "据我所知，就连雾影有的时候也毫无克制，即便是在不饿的时候也会吞噬影裔。遗憾的是，这种吞噬可能会导致……“非自愿性的逆流”。",
+      "spanish": "Incluso el Velo es ajeno a la moderación, pues en ocasiones consume pinchos cuando, hasta donde puedo identificar, no siente ningún hambre. Este impulso, por desgracia, puede provocar una... «expulsión involuntaria».",
+      "chinese_traditional": "即使是幽影也很少受到約束，幽影有時會吞噬莫塞爾，據我所知，直到它不再有飢餓感。不幸的是，這種衝動可能導致……「非自願排出行為」。",
+      "korean": "장막이 늘 자제력을 지닌 것은 아니다. 가끔은 배가 고프지 않아도 작은 그림자를 집어삼킬 때가 있다. 이 욕망의 끝은… \"본의 아닌 추방\"으로 이어진다.",
+      "japanese": "シュラウドでさえも抑制をほとんど知らない。知る限りでは、空腹でないときにもしばしばモーゼルを食べてしまう。残念ながら、この衝動は\"不本意な追放\"につながる可能性がある。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassUmbra",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Retch.prefab",
+    "m_AssetGUID": "eb52b6eb0e848c74c8936b8e5c619961"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectRecursion",
+      "targetMode": "eaten",
+      "targetCardType": "monster",
+      "targetCardSelectionMode": "random_to_hand",
+      "paramInt": 99,
+      "paramBool2": true,
+      "hideTooltip": true
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Brian Mutschler"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "Rot",
+  "name": "Rot",
+  "nameKey": {
+    "key": "CardData_nameKey-2359e683e539ce07-7d8684175e7890b48b826e59a04cc363-v2",
+    "english": "Rot",
+    "french": "Putréfaction",
+    "german": "Fäulnis",
+    "russian": "Гниение",
+    "portuguese": "Podridão",
+    "chinese": "腐烂",
+    "spanish": "Putrefacción",
+    "chinese_traditional": "腐爛",
+    "korean": "부패",
+    "japanese": "腐敗"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-30e6e69bf74cdcff-7d8684175e7890b48b826e59a04cc363-v2",
+    "english": "Deal [effect0.power] damage. Apply [decay] [effect1.status0.power].",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr> Confère [decay] [effect1.status0.power].",
+    "german": "Verursache [effect0.power] Schaden. Wende [decay] [effect1.status0.power] an.",
+    "russian": "Наносит [effect0.power] урона. Накладывает [decay] х[effect1.status0.power].",
+    "portuguese": "Causa [effect0.power] de dano. Aplica [decay] [effect1.status0.power].",
+    "chinese": "造成 [effect0.power] 点伤害，施加 [decay] [effect1.status0.power]。",
+    "spanish": "Inflige [effect0.power] de daño. Añade [decay] [effect1.status0.power].",
+    "chinese_traditional": "造成[effect0.power]點傷害。施加[decay][effect1.status0.power]。",
+    "korean": "[effect0.power]의 피해를 입힙니다. [decay] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[effect0.power]のダメージを与える。[decay] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-2f69291eed0bfdc1-7d8684175e7890b48b826e59a04cc363-v2",
+      "english": "When he drew his hand back from the tree’s roots, he found spores had settled on his skin like dust. First, he felt warm, then hot. Until his limb was engulfed in the unbearable pain of rotting alive.",
+      "french": "Quand il retira sa main des racines de l'arbre, il constata que des spores s'étaient déposées sur sa peau comme de la poussière. Il se sentit d'abord chaud, puis brûlant... Puis son membre fut englouti par la douleur insupportable de se putréfier vivant.",
+      "german": "Als er seine Hand aus den Wurzeln des Baumes zurückzog, sah er, dass sich Sporen wie Staub darauf niedergelassen hatten. Erst wurde ihm kalt, dann heiß – bis sein Arm schließlich bei lebendigem Leib verdarb und höllisch schmerzte.",
+      "russian": "Оторвав руку от корней дерева, он обнаружил, что споры осели на его коже, точно пыль. Сначала он почувствовал тепло, затем жар. В конце концов, его руку охватила невыносимая боль от гниения заживо.",
+      "portuguese": "Quando afastou a mão das raízes da árvore, descobriu que esporos haviam caído em sua pele, como se fossem poeira. Primeiro, ele sentiu o corpo ficar morno, depois quente. Até que seu braço foi envolvido pela dor insuportável de apodrecer vivo.",
+      "chinese": "但他把手从树根上抽回来时，他发现孢子像灰尘一样落在他的皮肤上。起初，他觉得很温暖，然后，开始感觉灼热。直到他的肢体活生生地被难以忍受的腐烂之痛所吞没。",
+      "spanish": "Cuando apartó la mano de las raíces del árbol, encontró esporas cubriendo su piel como una capa de polvo. Al principio sintió calidez, y después calor, hasta que su brazo quedó envuelto en el dolor insufrible de la putrefacción en vida.",
+      "chinese_traditional": "當他把手從樹根上抽回時，他發現孢子像灰塵一樣落在他的皮膚上。起初，他感到溫暖，然後變熱。直到他的肢體被腐爛的劇痛活生生吞沒。",
+      "korean": "나무 뿌리에서 손을 뗀 뒤, 그는 포자가 먼지처럼 내려와 피부에 달라붙은 것을 알았다. 처음에는 피부가 따뜻하게 느껴졌지만, 곧 뜨겁게 달아올랐다. 결국, 그는 사지가 산 채로 썩어들어가는 참을 수 없는 고통을 겪어야 했다.",
+      "japanese": "樹の根から手を引いたとき、彼は肌に胞子が埃のように積もっていることに気づいた。温かく感じたものが次第に熱くなった。そして彼の四肢は生きたまま腐る耐えられぬほどの痛みに包みこまれたのだった。"
+    }
+  ],
+  "cost": 3,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Rot.prefab",
+    "m_AssetGUID": "c1b5bf64b23b3a84d941c46223512230"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 15
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "decay",
+          "count": 15
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Ron Kee"
+}

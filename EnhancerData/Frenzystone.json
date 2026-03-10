@@ -1,0 +1,87 @@
+{
+  "id": "UnitUpgradeMultistrike",
+  "name": "Frenzystone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-c3fcaea1a1279b77-376d600134b872846a1f41fe592c76fe-v2",
+    "english": "Frenzystone",
+    "french": "Pierre de frénésie",
+    "german": "Rasereistein",
+    "russian": "Камень бешенства",
+    "portuguese": "Pedra do Delírio",
+    "chinese": "狂战石",
+    "spanish": "Piedra frenética",
+    "chinese_traditional": "狂躁石",
+    "korean": "광란의 돌",
+    "japanese": "狂乱の石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-76974f17414819b5-376d600134b872846a1f41fe592c76fe-v2",
+    "english": "Upgrade a unit with [multistrike] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec <b>Frappe multiple</b> [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit [effect0.upgrade.status0.power] <b>Multischlag</b>.",
+    "russian": "Усиление бойца: [multistrike] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com <b>Golpe Múltiplo</b> [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得<b>多重攻击</b> [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con [multistrike] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[multistrike][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드하여 [multistrike] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[multistrike] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "rare",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "AddMultistrike",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-2f7b0852097f1b45-d1df7342d8d559f4580b35a30141db39-v2",
+          "english": "Frenzystone",
+          "french": "Pierre de frénésie",
+          "german": "Rasereistein",
+          "russian": "Камень бешенства",
+          "portuguese": "Pedra do Delírio",
+          "chinese": "狂战石",
+          "spanish": "Piedra frenética",
+          "chinese_traditional": "狂躁石",
+          "korean": "광란의 돌",
+          "japanese": "狂乱の石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-2e66884435603a09-d1df7342d8d559f4580b35a30141db39-v2",
+          "english": "Gain [multistrike] [status0.power].",
+          "french": "Octroie [multistrike] [status0.power].",
+          "german": "Erhalte [multistrike] [status0.power].",
+          "russian": "Дает [status0.power] х[multistrike].",
+          "portuguese": "Recebe [multistrike] [status0.power].",
+          "chinese": "获得 [multistrike] [status0.power]。",
+          "spanish": "Añade [multistrike] [status0.power].",
+          "chinese_traditional": "獲得[multistrike][status0.power]。",
+          "korean": "[multistrike] [status0.power] 효과를 획득합니다.",
+          "japanese": "[multistrike] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "multistrike",
+            "count": 1
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyAttackingUnits",
+            "cardType": "monster",
+            "excludeNonAttackingMonsters": true
+          },
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

@@ -1,0 +1,109 @@
+{
+  "id": "AmorousEnoki",
+  "name": "Amorous Enoki",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_AmorousEnoki.prefab",
+    "m_AssetGUID": "9c92139ecd75d8e449df50f98fb156dc"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterAmorousEnoki",
+        "nameKey": {
+          "key": "CharacterData_nameKey-df0515464187dd6d-e8aa4f017bb18c24689924dbb03a9943-v2",
+          "english": "Amorous Enoki",
+          "french": "Enoki amoureuse",
+          "german": "Verliebter Enoki",
+          "russian": "Влюбчивая Эноки",
+          "portuguese": "Enoki Amorosa",
+          "chinese": "多情金菇",
+          "spanish": "Enoki cariñosa",
+          "chinese_traditional": "多情榎木茸",
+          "korean": "매혹적인 에노키",
+          "japanese": "なまめかしいエノキ"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-49ba6ab574622c50-e8aa4f017bb18c24689924dbb03a9943-v2",
+            "english": "A lover of love and all things lovely, this mushroom can charm the bark off a tree.",
+            "french": "Adepte de l'amour et de la beauté, ce champignon peut charmer l'écorce d'un arbre.",
+            "german": "Dieser Pilz liebt die Liebe und alles Liebliche. Sein Charme ist geradezu unwiderstehlich.",
+            "russian": "Облюбованная любовью и влюбленная в весь мир — такая девушка увлечет за собой кого угодно!",
+            "portuguese": "Amante do amor e de todas as coisas belas, esse cogumelo pode encantar a casca de uma árvore.",
+            "chinese": "这种蘑菇崇尚爱和一切美好的事物，是个人见人爱花见花开的家伙。",
+            "spanish": "Este hongo, amante del amor y todo lo amoroso, es capaz de encandilar hasta a un árbol.",
+            "chinese_traditional": "一個熱愛愛情和所有可愛事物的蘑菇，能讓樹木為之傾倒。",
+            "korean": "모든 것을, 심지어 사랑까지도 사랑하는 이 버섯은 나무 껍질도 벗겨낼 정도로 매혹적인 마력을 지녔다.",
+            "japanese": "愛と愛らしいものすべてを愛するこのキノコの魅力の前では、木も樹皮を落としてその身を差し出してしまう。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_AmorousEnoki.prefab",
+          "m_AssetGUID": "8e5b16c7aef47fc4fb714575d3ef5849"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-ae1cfde98d5301b1-e8aa4f017bb18c24689924dbb03a9943-v2",
+              "english": "Apply [regen] [effect0.status0.power] and +[effect1.power][health] to friendly units.",
+              "french": "Applique [regen] [effect0.status0.power] et +[effect1.power][health] aux alliés.",
+              "german": "Wende [regen] [effect0.status0.power] und +[effect1.power][health] auf verbündete Einheiten an.",
+              "russian": "Союзникам даются [regen] х[effect0.status0.power] и +[effect1.power][health]",
+              "portuguese": "Aplica [regen] [effect0.status0.power] e +[effect1.power][health] às unidades aliadas.",
+              "chinese": "使所有友方单位获得 [regen] [effect0.status0.power] 和+[effect1.power][health]。",
+              "spanish": "Añade [regen] [effect0.status0.power] y +[effect1.power][health] a las unidades aliadas.",
+              "chinese_traditional": "對友方單位施加[regen][effect0.status0.power]和+[effect1.power][health]。",
+              "korean": "아군 유닛들에게 [regen] [effect0.status0.power] 및 +[effect1.power][health]을 적용합니다.",
+              "japanese": "味方ユニットに[regen] [effect0.status0.power]と+[effect1.power][health]を付与する。"
+            },
+            "trigger": "card_monster_played",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "regen",
+                    "count": 1
+                  }
+                ]
+              },
+              {
+                "effectStateName": "CardEffectBuffMaxHealth",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramInt": 1
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 10,
+        "attackDamage": 10,
+        "subtypeKeys": [
+          "SubtypesData_BannerUnit",
+          "SubtypesData_Shroom"
+        ],
+        "characterChatterData": "UnderlegionShroomFemaleChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Hung Bui"
+}

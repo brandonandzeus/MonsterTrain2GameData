@@ -1,0 +1,92 @@
+{
+  "id": "R2_Heavy_HealGorge",
+  "name": "Glutmass",
+  "nameKey": {
+    "key": "CharacterData_nameKey-62ef66a60ba4b1f5-d706380176d42cd49814731fb4f2a0ff-v2",
+    "english": "Glutmass",
+    "french": "Bourrelet",
+    "german": "Fressmasse",
+    "russian": "Жрущая туша",
+    "portuguese": "Massa Glutona",
+    "chinese": "暴食团块",
+    "spanish": "Masa sobrante",
+    "chinese_traditional": "暴食巨塊",
+    "korean": "탐식괴",
+    "japanese": "グラットマス"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d4b94c13f2bf4153-d706380176d42cd49814731fb4f2a0ff-v2",
+      "english": "Throughout their short lives, these creatures spend their time feeding on drifting souls. Their excessive consumption leads to accumulate pus beneath their skin, which makes for an unpleasant surprise to any who face them.",
+      "french": "Durant leur brève existence, ces créatures se nourrissent sans relâche d'âmes errantes. Leur consommation outrancière provoque une accumulation de pus sous la peau, réservant une désagréable surprise à quiconque les affronte.",
+      "german": "Während ihres kurzen Lebens verbringen diese Kreaturen ihre Zeit meist damit, sich an umherstreifenden Seelen zu nähren. Ihr überbordender Verbrauch führt zu zusätzlicher Eiterbildung unter ihrer Haut – ein unerfreuliches Erlebnis für alle, die es mit ihnen zu tun bekommen.",
+      "russian": "Свои короткие жизни эти существа проводят, пожирая блуждающие души. Чрезмерное объедание приводит к накоплению гноя под кожей, что становится очень неприятным сюрпризом для тех, кто с ними сталкивается.",
+      "portuguese": "Durante todas as suas curtas vidas, estas criaturas passam seu tempo se alimentando de almas errantes. Seu consumo em excesso leva ao acúmulo de pus sob a pele, tornando-as uma surpresa desagradável para todos que as enfrentam.",
+      "chinese": "这些生物在自己短暂的一生里不停地进食漂泊的灵魂。它们的过度饮食导致皮下积聚脓液，这成了它们为对手准备的恶心“惊喜”。",
+      "spanish": "Estas criaturas pasan sus efímeras vidas alimentándose de almas errantes. El consumo excesivo les hace acumular pus bajo la piel, lo que supone una desagradable sorpresa para quienes se enfrentan a ellas.",
+      "chinese_traditional": "在短暫的生命中，這些生物以漂泊的靈魂為食。過度的消耗導致皮膚下積聚膿液，這對任何與之對敵的人來說，都是個噁心的驚喜。",
+      "korean": "덧없이 짧은 생 동안, 이들은 떠돌이 영혼을 탐식하며 시간을 보낸다. 탐욕의 대가로 피부 아래에는 고름이 가득 차오르며, 그 결과 이들을 상대하는 이들에게 예기치 못한 불쾌함을 유발하게 된다.",
+      "japanese": "その短い生涯を通して、この生物は漂う魂を食らうことに時間を費やす。過剰な摂取により皮の下に膿汁が溜まり、相対した者には不快なサプライズが与えられることになる。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Glutmass.prefab",
+    "m_AssetGUID": "548dc33d62d175a4aae9d58bf2e6a477"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "trample",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-312e0db97f7d906c-d706380176d42cd49814731fb4f2a0ff-v2",
+        "english": "Gain [titanskin] [effect0.status0.power] and restore [effect1.power] health.",
+        "french": "Octroie [titanskin] [effect0.status0.power] et rend <nobr>[effect1.power] PV</nobr>.",
+        "german": "Erhalte [titanskin] [effect0.status0.power] und stelle [effect1.power] wieder her.",
+        "russian": "Накладывается [titanskin] х[effect0.status0.power] и восстанавливается [effect1.power] здоровья.",
+        "portuguese": "Recebe [titanskin] [effect0.status0.power] e restaura [effect1.power] de vida.",
+        "chinese": "获得 [titanskin] [effect0.status0.power] 并恢复 [effect1.power] 点生命值。",
+        "spanish": "Añade [titanskin] y [effect0.status0.power] y restaura [effect1.power] de salud.",
+        "chinese_traditional": "獲得[titanskin][effect0.status0.power]並恢復[effect1.power]點生命值。",
+        "korean": "[titanskin] [effect0.status0.power] 효과를 획득하며, [effect1.power] 체력을 회복합니다.",
+        "japanese": "[titanskin] [effect0.status0.power]を得て、体力を[effect1.power]回復する。"
+      },
+      "trigger": "on_feed",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramStatusEffects": [
+            {
+              "statusId": "titanskin",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "effectStateName": "CardEffectHeal",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramInt": 20
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 80,
+    "endlessAttack": 4
+  },
+  "size": 2,
+  "health": 60,
+  "attackDamage": 8,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Heavy_Enemy",
+    "SubtypesData_SoulSavior_Region2_Enemy1"
+  ],
+  "characterChatterData": "R2_Glutmass_ChatterData",
+  "artistAttribution": "Lauren Russo"
+}

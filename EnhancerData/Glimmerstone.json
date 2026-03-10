@@ -1,0 +1,83 @@
+{
+  "id": "UnitUpgradeClanLunaCovenAddConduit",
+  "name": "Glimmerstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-eefca47019aced76-261ec48c5b8fb2f4d93803f73409784a-v2",
+    "english": "Glimmerstone",
+    "french": "Pierre luisante",
+    "german": "Schimmerstein",
+    "russian": "Сияющий камень",
+    "portuguese": "Pedra Cintilante",
+    "chinese": "微光石",
+    "spanish": "Piedra brillante",
+    "chinese_traditional": "閃石",
+    "korean": "점멸석",
+    "japanese": "輝きの石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-d47eadea41b7f300-261ec48c5b8fb2f4d93803f73409784a-v2",
+    "english": "Upgrade a unit with [conduit] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec [conduit] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit [conduit] [effect0.upgrade.status0.power].",
+    "russian": "Усиление бойца: [conduit] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com [conduit] [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 [conduit] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con [conduit] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[conduit][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드하여 [conduit] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[conduit] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "AddConduitLunaCoven",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-b715680fbcaa3b6a-0c3ab0d6ede47984bb40941e5e8d2a61-v2",
+          "english": "Glimmerstone",
+          "french": "Pierre luisante",
+          "german": "Schimmerstein",
+          "russian": "Сияющий камень",
+          "portuguese": "Pedra Cintilante",
+          "chinese": "微光石",
+          "spanish": "Piedra brillante",
+          "chinese_traditional": "閃石",
+          "korean": "점멸석",
+          "japanese": "輝きの石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-05f0e7d945f9bb35-0c3ab0d6ede47984bb40941e5e8d2a61-v2",
+          "english": "Gain [conduit] [status0.power].",
+          "french": "Octroie [conduit] [status0.power].",
+          "german": "Erhalte [conduit] [status0.power].",
+          "russian": "Дает [status0.power] х[conduit].",
+          "portuguese": "Recebe [conduit] [status0.power].",
+          "chinese": "获得 [conduit] [status0.power]。",
+          "spanish": "Añade [conduit] [status0.power].",
+          "chinese_traditional": "獲得[conduit][status0.power]。",
+          "korean": "[conduit] [status0.power] 효과를 획득합니다.",
+          "japanese": "[conduit] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "conduit",
+            "count": 5
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

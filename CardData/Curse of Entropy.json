@@ -1,0 +1,114 @@
+{
+  "id": "TFB_EntropyScourge",
+  "name": "Curse of Entropy",
+  "nameKey": {
+    "key": "CardData_nameKey-f203e328877d2e18-70fabe8e7137f5e40976ee7b87b9033b-v2",
+    "english": "Curse of Entropy",
+    "french": "Malédiction d'Entropie",
+    "german": "Entropies Fluch",
+    "russian": "Проклятие Энтропии",
+    "portuguese": "Maldição da Entropia",
+    "chinese": "混乱泰坦的诅咒",
+    "spanish": "Maldición entrópica",
+    "chinese_traditional": "熵之詛咒",
+    "korean": "엔트로피의 저주",
+    "japanese": "エントロピーの呪い"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-c34ff2c71998f314-70fabe8e7137f5e40976ee7b87b9033b-v2",
+    "english": "Apply [sap] [effect0.status0.power] to friendly units on all floors.",
+    "french": "Applique [sap] [effect0.status0.power] aux unités alliées à tous les niveaux.",
+    "german": "Wende [sap] [effect0.status0.power] auf verbündete Einheiten auf allen Ebenen an.",
+    "russian": "На союзников со всех этажей накладывается [sap] х[effect0.status0.power].",
+    "portuguese": "Aplica [sap] [effect0.status0.power] às unidades aliadas em todos os andares.",
+    "chinese": "对所有层的友方单位施加 [sap] [effect0.status0.power]。",
+    "spanish": "Añade [sap] [effect0.status0.power] a las unidades aliadas en todos los pisos.",
+    "chinese_traditional": "對所有樓層的友方單位施加[sap][effect0.status0.power]。",
+    "korean": "모든 층의 아군 유닛들에게 [sap] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "すべてのフロアの味方ユニットに[sap] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-63af70b427720764-70fabe8e7137f5e40976ee7b87b9033b-v2",
+      "english": "The Titans, within their nature, each work towards their own twisted form of peace. For Entropy, eternal peace can only be achieved through the stasis of all things. ",
+      "french": "Les titans, de par leur nature, œuvrent chacun à atteindre leur propre forme de paix. Pour Entropie, la paix éternelle ne peut être atteinte que par un état de stase global.",
+      "german": "Es liegt in der Natur der Titanen, ihre eigene verzerrte Art des Friedens anzustreben. Entropie kann ewigen Frieden nur durch vollkommenen Stillstand aller Dinge erreichen.",
+      "russian": "Натура титанов такова, что каждый из них стремится к миру в своем собственном представлении. Для Энтропии это мир, где все вещи пребывают в состоянии стазиса. ",
+      "portuguese": "Cada um dos Titãs, em sua natureza, trabalha em prol de sua própria forma distorcida de paz. Para a Entropia, a paz eterna só pode ser alcançada por meio da estase.",
+      "chinese": "泰坦，因为天性使然，每一个都为了实现他们自己那扭曲的和平形式而努力。对于混乱泰坦来说，永远的和平只有通过万物的停滞来实现。",
+      "spanish": "Los titanes, dentro de sus capacidades, persiguen una forma retorcida y particular de paz. Para Entropía, la paz eterna solo puede darse en la estasis de todas las cosas.",
+      "chinese_traditional": "每個泰坦都依據本性，以自己扭曲的方式追求和平。對於熵來說，只有透過萬物的停滯才能實現永恆的和平。",
+      "korean": "티탄들은 각자의 본성에 따라 각기 다른 형태의 뒤틀린 평화를 추구한다. 엔트로피가 바라는 평화는 모든 세력의 균형이 안정적으로 이루어진 상태에서만 이루어질 수 있다.",
+      "japanese": "巨人族は、本能でそれぞれの捻じ曲げられた平和を実現しようと動く。エントロピーにとっては、永遠の平和はすべてを静止することでしか得ることができないものなのだ。"
+    }
+  ],
+  "cardType": "junk",
+  "rarity": "common",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_CurseOfEntropy.prefab",
+    "m_AssetGUID": "8ca80c270e089bf42a774ba0a2a204b0"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitEphemeral",
+      "paramTeamType": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "tower",
+      "targetTeamType": "monsters",
+      "paramStatusEffects": [
+        {
+          "statusId": "debuff",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectNULL",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramBool2": true,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Blights/CurseofEntropy/FX_CurseofEntropy.prefab",
+          "m_AssetGUID": "85062de4392c4094da4ea02e3325dcda"
+        },
+        "spawnLocation": "room_center"
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CardData_descriptionKey-db06af2a3ab1b1d2-70fabe8e7137f5e40976ee7b87b9033b-v2",
+        "english": "Your Pyre takes [effect0.power] damage.",
+        "french": "Votre Brasier subit <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Deine Höllenglut nimmt [effect0.power] Schaden.",
+        "russian": "Ваше Пекло получает [effect0.power] урона.",
+        "portuguese": "Sua Pira sofre [effect0.power] de dano.",
+        "chinese": "你的薪火受到 [effect0.power] 点伤害。",
+        "spanish": "Tu Pira sufre [effect0.power] de daño.",
+        "chinese_traditional": "你的火堆受到[effect0.power]點傷害。",
+        "korean": "화로가 [effect0.power]의 피해를 받습니다.",
+        "japanese": "自軍の炉が[effect0.power]のダメージを受ける。"
+      },
+      "trigger": "on_unplayed_negative",
+      "cardEffects": [
+        {
+          "effectStateName": "CardEffectDamage",
+          "targetMode": "pyre",
+          "targetTeamType": "both",
+          "suppressPyreRoomFocus": true,
+          "paramInt": 3
+        }
+      ],
+      "triggerKeywordCardTextSuppressed": false
+    }
+  ],
+  "targetsRoom": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Lauren Russo"
+}

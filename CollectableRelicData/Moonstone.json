@@ -1,0 +1,115 @@
+{
+  "id": "MoonPhaseRoomsGainMagicPower",
+  "name": "Moonstone",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-6095645b58fe1bfc-2a2820af1b7df9c48ac3172bd4e3c057-v2",
+    "english": "Moonstone",
+    "french": "Pierre de lune",
+    "german": "Mondstein",
+    "russian": "Лунный камень",
+    "portuguese": "Pedra da Lua",
+    "chinese": "月之石",
+    "spanish": "Piedra lunar",
+    "chinese_traditional": "月石",
+    "korean": "월석",
+    "japanese": "月の石"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-5e6888fd28f1636a-2a2820af1b7df9c48ac3172bd4e3c057-v2",
+    "english": "At end of turn, if it is [full], spells in hand gain +[effect0.upgrade.bonusdamage] [magicpower].",
+    "french": "En fin de tour, par [full], les sorts en main gagnent +[effect0.upgrade.bonusdamage] [magicpower].",
+    "german": "Ist am Ende des Zuges [full], erhalten die Zauber in deiner Hand +[effect0.upgrade.bonusdamage] [magicpower].",
+    "russian": "В конце хода в [full], чарам в руке дается [magicpower] х[effect0.upgrade.bonusdamage].",
+    "portuguese": "No final do turno, se for [full], os feitiços na mão receberão +[effect0.upgrade.bonusdamage] [magicpower].",
+    "chinese": "回合结束时，若月相为 [full]，手牌中的法术获得+[effect0.upgrade.bonusdamage] [magicpower]。",
+    "spanish": "Al final del turno, si es [full], los hechizos de tu mano añaden +[effect0.upgrade.bonusdamage] [magicpower].",
+    "chinese_traditional": "回合結束時若為[full]期間，手中法術獲得+[effect0.upgrade.bonusdamage][magicpower]。",
+    "korean": "턴 종료 시, [full] 상태라면 패에 있는 주문 카드들이 +[effect0.upgrade.bonusdamage] [magicpower] 효과를 획득합니다.",
+    "japanese": "ターン終了時、[full]の間は手札の呪文が+[effect0.upgrade.bonusdamage] [magicpower]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-e9e665624143b949-2a2820af1b7df9c48ac3172bd4e3c057-v2",
+      "english": "“Take this stone, marked by Ekka’s blessing, and place it outside when the moon is full. You will always have a piece of the moon’s protection with you wherever you go.”\r\n—The Ritual Tome",
+      "french": "<nobr>« Prenez</nobr> cette pierre marquée par la bénédiction d'Ekka, et placez-la dehors lorsque la lune est pleine. La protection de la lune sera toujours avec vous, où que vous <nobr>alliez. »</nobr> \n— Livre des Rituels",
+      "german": "„Nimm diesen von Ekka gesegneten Stein und lege ihn bei Vollmond nach draußen. So hast du immer ein Stück des Mondschutzes bei dir, wohin du auch gehst.“_x000D_\n—Foliant der Rituale",
+      "russian": "«Возьмите благословленный Эккой камень и оставьте его лежать под полной луной. Теперь, куда бы вы ни пошли, вас будет защищать этот лунный оберег».\n\n— Книга ритуалов",
+      "portuguese": "“Leve esta pedra, marcada com a bênção de Ekka, e coloque-a do lado de fora quando a lua estiver cheia. Depois disso, você sempre terá um pedaço da proteção da lua com você.”\n— Tomo Ritualístico",
+      "chinese": "“带上这块刻有艾卡祝福的石头，在月圆之夜把它放在外面。无论你身在何处，都会得到月亮的一部分庇佑。”\n——《仪式之书》",
+      "spanish": "«Toma esta piedra, marcada por la bendición de Ekka, y colócala en el exterior durante la luna llena. Siempre gozarás de la protección de la luna, vayas donde vayas».\n—Tomo de los Rituales",
+      "chinese_traditional": "「拿著這塊石頭，它是被艾卡祝福過的，在滿月時放在外面。無論你去哪裡，你都會擁有月亮的保護。」\n——儀式魔法書",
+      "korean": "“보름달이 뜰 때, 에카의 축복이 담긴 표식을 새긴 돌을 바깥에 두어라. 그리 하면 언제 어디서든 달의 수호가 그대와 함께 하리라.”\n- 의식의 서",
+      "japanese": "「エッカの祝福が刻まれたこの石を、満月のときに外に置くのだ。どこへ行っても、月の加護の一部が常にあなたとともにあるだろう」\n—儀式の書"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLunaCoven",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectApplyCardUpgradeToHandEndOfTurnOnMoon",
+      "additionalTooltips": [
+        {
+          "trigger": "on_moon_lit",
+          "style": "default",
+          "isTriggerTooltip": true
+        },
+        {
+          "descriptionKey": {
+            "key": "CardTraitMagicPower_TooltipText",
+            "english": "Increases the amount of damage dealt and health restored by spells.",
+            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+            "chinese": "提高法术造成的伤害与恢复的生命值。",
+            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+          },
+          "trigger": "on_moon_lit",
+          "titleKey": {
+            "key": "CardTraitMagicPower_TooltipTitle",
+            "english": "Magic Power",
+            "french": "Puissance magique",
+            "german": "Magische Kraft",
+            "russian": "Сила магии",
+            "portuguese": "Poder Mágico",
+            "chinese": "魔法强度",
+            "spanish": "Poder mágico",
+            "chinese_traditional": "魔法力量",
+            "korean": "마법력",
+            "japanese": "魔力"
+          }
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "MoonPhaseRooms_UpgradeData",
+        "filters": [
+          {
+            "id": "MagicPowerSpells",
+            "cardType": "spell",
+            "requiredCardEffectsOperator": "or",
+            "requiredCardEffects": [
+              "CardEffectDamage",
+              "CardEffectHeal",
+              "CardEffectHealAndDamageRelative",
+              "CardEffectHealAndOverheal",
+              "CardEffectDamagePerSourceAttack",
+              "CardEffectDamagePerHp"
+            ]
+          },
+          {
+            "id": "ExcludedSpellsFromMagicPower",
+            "disallowedCardPools": [
+              "SpellsNotAllowedSpellPowerPool"
+            ]
+          }
+        ],
+        "bonusDamage": 10,
+        "bonusHeal": 10
+      },
+      "paramInt2": 2
+    }
+  ]
+}

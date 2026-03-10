@@ -1,0 +1,57 @@
+{
+  "id": "PyreHeartSavagery_ArtifactData",
+  "name": "PyreHeartSavagery_ArtifactData",
+  "descriptionKey": {
+    "key": "PyreArtifactData_descriptionKey-9d3d107cf9efcede-d423c5ab840c3254ea61406fb83e9dac-v2",
+    "english": "Friendly units gain [slay]: +1[attack] permanently.",
+    "french": "Les alliés gagnent <nobr>[slay] :</nobr> +1[attack] définitivement.",
+    "german": "Verbündete Einheiten erhalten [slay]: Permanent +1 [attack].",
+    "russian": "Союзники получают [slay]: +1[attack] навсегда.",
+    "portuguese": "As unidades aliadas recebem [slay]: +1[attack] permanentemente.",
+    "chinese": "友方单位获得 [slay]：永久+1[attack]。",
+    "spanish": "Las unidades aliadas añaden [slay]: +1[attack] permanentemente.",
+    "chinese_traditional": "友方單位獲得[slay]：永久+1[attack]。",
+    "korean": "아군 유닛이 [slay]: 영구적으로 +1[attack]을 획득합니다.",
+    "japanese": "味方ユニットが[slay]を得る。永続的に+1[attack]。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTempUpgrade",
+      "paramCardUpgradeData": {
+        "id": "PyreHeartSavagery_UpgradeData",
+        "triggerUpgrades": [
+          {
+            "trigger": "on_kill",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddCardUpgradeToUnits",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramCardUpgradeData": {
+                  "id": "PyreHeartSavagery_BonusStats_UpgradeData",
+                  "filters": [
+                    {
+                      "id": "OnlyUnit",
+                      "cardType": "monster"
+                    }
+                  ],
+                  "bonusDamage": 1
+                },
+                "additionalParamInt1": 2
+              }
+            ],
+            "hideVisualAndIgnoreSilence": true
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyUnit",
+            "cardType": "monster"
+          }
+        ],
+        "isUnique": true
+      },
+      "paramSourceTeam": "monsters"
+    }
+  ]
+}

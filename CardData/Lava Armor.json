@@ -1,0 +1,92 @@
+{
+  "id": "LavaArmor",
+  "name": "Lava Armor",
+  "nameKey": {
+    "key": "CardData_nameKey-e1414bb3b5d47b54-f3dfacddef667d04da31f5f8f8bf1316-v2",
+    "english": "Lava Armor",
+    "french": "Armure de lave",
+    "german": "Lavarüstung",
+    "russian": "Лавовая броня",
+    "portuguese": "Armadura de Lava",
+    "chinese": "熔岩护甲",
+    "spanish": "Armadura de lava",
+    "chinese_traditional": "熔岩盔甲",
+    "korean": "용암 갑옷",
+    "japanese": "溶岩の鎧"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-fa45447b25bd56bc-f3dfacddef667d04da31f5f8f8bf1316-v2",
+      "english": "“Fenix does love to dote on me, but I have to say, my favorite gift was the patent for this armor of his that uses lava to protect the wearer. It’s his most profitable creation yet!”\n—Lady Gilda",
+      "french": "<nobr>« Fenix</nobr> adore me chouchouter, mais je dois dire que mon cadeau préféré a été le brevet de l'armure qui utilise la lave pour protéger son porteur. C'est sa création la plus lucrative à ce <nobr>jour ! »</nobr> \n— Dame Gilda",
+      "german": "„Fenix liebt es, mich zu verwöhnen. Aber ich muss sagen, das beste Geschenk war das Patent für diese Rüstung von ihm, die den Träger mit Lava schützt. Das ist seine bisher profitabelste Kreation!“\n– Lady Gilda",
+      "russian": "«Феникс очень любит баловать меня, но признаюсь, лучшим его подарком стал патент на эту броню, которая защищает владельца с помощью лавы. Пока что это его самое прибыльное изобретение!»\n— Леди Гильда",
+      "portuguese": "“O Fênix gosta muito de me mimar, mas devo dizer que meu presente favorito foi a patente dessa armadura dele, que usa lava para proteger o usuário. É a criação mais lucrativa dele até hoje!”\n— Senhorita Gilda",
+      "chinese": "“菲尼克斯确实很宠爱我，但我不得不说，我最喜欢的礼物是这份专利，让他的这件盔甲能用熔岩保护穿戴者。这是迄今为止他最赚钱的创作！”\n——吉尔达女士",
+      "spanish": "«A Fénix le encanta mimarme, pero debo decir que mi regalo favorito fue la patente por esta armadura suya que usa lava como protección. ¡Es su creación más lucrativa hasta la fecha!».\n—Lady Gilda",
+      "chinese_traditional": "「費尼克斯確實很喜歡寵我，但我不得不說，我最喜歡的禮物是他這套使用熔岩保護穿戴者盔甲的專利。這是他迄今為止最賺錢的作品！」\n——吉爾達女士",
+      "korean": "“페닉스는 날 챙기는 것을 좋아하긴 하지만, 내가 가장 좋아하는 선물은 용암을 이용해 착용자를 보호하는 갑옷의 특허지. 페닉스가 만든 것 중에서도 가장 수익성이 높은 작품이었어!”\n- 길다",
+      "japanese": "フェニックスは私を溺愛しているけれど、あたくしが一番気に入った贈り物は、着用者を守るために溶岩を使用するこの鎧の特許ですわ。これまでで最も利益を生んでいる商品ですのよ！」\n—レディ・ギルダ"
+    }
+  ],
+  "cost": 1,
+  "cardType": "equipment",
+  "rarity": "common",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SPL_LavaArmor.prefab",
+    "m_AssetGUID": "5762f327dfb85eb47b926051174ef5cc"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachEquipment",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "LavaArmor",
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-00bbc147d9ee5edb-990508665d72e4749af6392b969c452b-v2",
+              "english": "Apply [pyregel] [effect0.status0.power] to the attacker.",
+              "french": "Inflige [pyregel] [effect0.status0.power] à l'attaquant.",
+              "german": "Wende [pyregel] [effect0.status0.power] auf den Angreifer an.",
+              "russian": "Накладывает на атакующего [pyregel] х[effect0.status0.power].",
+              "portuguese": "Aplica [pyregel] [effect0.status0.power] ao atacante.",
+              "chinese": "对攻击者施加 [pyregel] [effect0.status0.power]。",
+              "spanish": "Añade [pyregel] [effect0.status0.power] al atacante.",
+              "chinese_traditional": "對攻擊者施加[pyregel][effect0.status0.power]。",
+              "korean": "공격자에 [pyregel] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "攻撃者に[pyregel] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_hit",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "last_attacker_character",
+                "targetTeamType": "both",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "pyregel",
+                    "count": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bonusHP": 10
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Equipment/LavaArmor/FX_LavaArmor.prefab",
+          "m_AssetGUID": "df4cb1891bafc424fa202a6abc864240"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Genevieve Bega"
+}

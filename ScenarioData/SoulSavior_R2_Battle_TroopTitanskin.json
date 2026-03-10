@@ -1,0 +1,268 @@
+{
+  "id": "SoulSavior_R2_Battle_TroopTitanskin",
+  "name": "SoulSavior_R2_Battle_TroopTitanskin",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-7e3dc105ff319b8f-a960e76285f7ad94daa5e28be55b1261-v2",
+    "english": "Forbidden Fruit",
+    "french": "Fruit défendu",
+    "german": "Verbotene Frucht",
+    "russian": "Запретный плод",
+    "portuguese": "Fruto Proibido",
+    "chinese": "禁果",
+    "spanish": "Fruta prohibida",
+    "chinese_traditional": "禁果",
+    "korean": "금단의 열매",
+    "japanese": "禁断の果実"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-5ef0025cb72e32c9-a960e76285f7ad94daa5e28be55b1261-v2",
+    "english": "Souls willing to be devoured, created for the sole purpose to nourish other souls. With each consumption, their gift compounds, strengthening all who take part in the feast.\t",
+    "french": "Des âmes prêtes à être dévorées, créées dans l'unique but d'en nourrir d'autres. Chaque sacrifice amplifie leur pouvoir, renforçant tous ceux qui prennent part au festin.\t",
+    "german": "Seelen, die nur als Nahrung für andere Seelen erschaffen wurden, warten darauf, verschlungen zu werden. Mit jedem Verzehr verdichtet sich ihre Gabe und stärkt alle, die am Festmahl teilhaben.\t",
+    "russian": "Эти Души созданы лишь затем, чтобы быть поглощенными и питать других. С каждой трапезой их дар множится, усиливая всех, кто участвует в этом пире.\t",
+    "portuguese": "Almas dispostas a serem devoradas, criadas com o único propósito de nutrir outras almas. A cada consumo, seu dom se intensifica, fortalecendo todos os que participam do banquete.\t",
+    "chinese": "这些灵魂自愿被吞噬，因为他们被创造出来的唯一目的就是滋养其他灵魂。每次被吞噬，他们提供的养分都会积累，使一切受滋养者愈发强大。\t",
+    "spanish": "Almas que desean ser devoradas, creadas únicamente para alimentar a otras. Con cada consumición, su don crece, reforzando a todos los participantes del festín.\t",
+    "chinese_traditional": "這些甘願受噬的靈魂，是專為滋養他人而生。每被吞噬一次，其恩賜便會疊加，強化所有參與這場盛宴的對象。\t",
+    "korean": "이 영혼들은 스스로를 내어주기 위해 창조된 존재들로, 다른 영혼을 기르는 것만이 그들의 유일한 사명입니다. 그 사의는 포식될 때마다 축적되어, 이 만찬에 참여한 전원을 더욱 강인하게 만듭니다.\t",
+    "japanese": "進んで捕食される魂。他の魂の栄養となるためだけに創り出された。食らわれるたびにその能力が混ぜ合わさり、その宴に参加した者はすべて力を増す。"
+  },
+  "bossVariant": {
+    "id": "SoulSavior_Region2Bosses",
+    "bossVariants": [
+      "Boss_SoulSavior_R2_TrainBoss_BigStats",
+      "Boss_SoulSavior_R2_TrainBoss_Titanskin"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "R2_Heavy_HealGorge",
+    "R2_Support_FeedInfested"
+  ],
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Troop/Feed",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R2_Support_FeedBuffs_Ver2",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Support_FeedInfested_T2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R2_Support_FeedInfested"
+              },
+              {
+                "characterData": "R2_Attacker_Zealot_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Heavy_HealGorge_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R2_Heavy_HealGorge",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Troop/HiveAttacker",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R2_Support_FeedBuffs_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Support_FeedInfested_T2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R2_Support_FeedInfested",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "characterData": "R2_Attacker_Zealot_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "characterData": "RAny_Heavy_TitaniteUpFront_Ver2"
+              },
+              {
+                "characterData": "RAny_Heavy_TitaniteUpFront_Ver2",
+                "requiredMutator": "SoulSavior_RunDistance3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Troop/Feed",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Support_FeedInfested_T2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R2_Support_FeedInfested",
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Support_FeedInfested_T2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R2_Support_FeedInfested",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Heavy_HealGorge_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R2_Heavy_HealGorge"
+              },
+              {
+                "characterData": "R2_Attacker_Zealot_Ver2",
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1 Region Complete",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Support_FeedInfested_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R2_Support_FeedInfested"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Heavy_HealGorge_T2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R2_Heavy_HealGorge"
+              },
+              {
+                "characterData": "R2_Attacker_Zealot_Ver2",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "2 Regions Complete",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "R2_Support_FeedInfested_T2"
+              },
+              {
+                "characterData": "R2_Support_FeedInfested_T2",
+                "requiredDifficultyTier": 3
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Heavy_HealGorge_T2",
+                    "requiredMutator": "SoulSavior_RunDistance3"
+                  }
+                ],
+                "characterData": "R2_Heavy_HealGorge"
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Feed",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R2_Support_FeedInfested_T2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R2_Support_FeedInfested"
+              },
+              {
+                "characterData": "RAny_Attacker_Hunter_Hivemind_Ver2",
+                "requiredDifficultyTier": 2
+              },
+              {
+                "characterData": "RAny_Attacker_Hunter_Hivemind_Ver2",
+                "requiredDifficultyTier": 2,
+                "requiredMutator": "SoulSavior_RunDistance3"
+              },
+              {
+                "characterData": "Boss_SoulSavior_R2_TrainBoss_BigStats",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend"
+  }
+}

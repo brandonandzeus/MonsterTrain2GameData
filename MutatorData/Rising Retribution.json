@@ -1,0 +1,72 @@
+{
+  "id": "EnemySpikesOnMove",
+  "name": "Rising Retribution",
+  "nameKey": {
+    "key": "MutatorData_nameKey-39abd6fd7b0b6db4-baeb58d897983ee489e71f0c07a4442f-v2",
+    "english": "Rising Retribution",
+    "french": "Châtiment croissant",
+    "german": "Steigende Vergeltung",
+    "russian": "Неисчерпаемое воздаяние",
+    "portuguese": "Retribuição Crescente",
+    "chinese": "移动反伤",
+    "spanish": "Represalia en aumento",
+    "chinese_traditional": "崛起復仇",
+    "korean": "솟아나는 복수심",
+    "japanese": "感知スパイク"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-07838875bc35001b-baeb58d897983ee489e71f0c07a4442f-v2",
+    "english": "Enemy units gain [spikes] [effect0.power] when they move.",
+    "french": "Les unités ennemies gagnent [spikes] [effect0.power] quand elles se déplacent.",
+    "german": "Gegner erhalten bei Bewegung [spikes] [effect0.power].",
+    "russian": "Накладывает [spikes] х[effect0.power] на вражеских бойцов во время их движения.",
+    "portuguese": "As unidades inimigas recebem [spikes] [effect0.power] quando se movem.",
+    "chinese": "当敌方单位移动时，获得 [spikes] [effect0.power]。",
+    "spanish": "Las unidades enemigas añaden [spikes] [effect0.power] al moverse.",
+    "chinese_traditional": "敵方單位移動時獲得[spikes][effect0.power]。",
+    "korean": "이동할 때마다 적 유닛이 [spikes] [effect0.power] 효과를 획득합니다.",
+    "japanese": "敵ユニットが移動時に[spikes] [effect0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "MutatorData_descriptionKey-09bb9735e902a0ce-baeb58d897983ee489e71f0c07a4442f-v2",
+            "english": "Apply [spikes] [effect0.power].",
+            "french": "Applique [spikes] [effect0.power].",
+            "german": "Wende [spikes] [effect0.power] an.",
+            "russian": "Накладывает [spikes] х[effect0.power].",
+            "portuguese": "Aplica [spikes] [effect0.power].",
+            "chinese": "获得 [spikes] [effect0.power]。",
+            "spanish": "Añade [spikes] [effect0.power].",
+            "chinese_traditional": "施加[spikes][effect0.power]。",
+            "korean": "[spikes] [effect0.power] 효과를 적용합니다.",
+            "japanese": "[spikes] [effect0.power]を付与する。"
+          },
+          "trigger": "on_shift",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "targetIgnoreBosses": true,
+              "paramStatusEffects": [
+                {
+                  "statusId": "spikes",
+                  "count": 3
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramBool": true
+    }
+  ],
+  "boonValue": -5,
+  "disableInDailyChallenges": true
+}

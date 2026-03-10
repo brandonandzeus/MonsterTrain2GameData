@@ -1,0 +1,68 @@
+{
+  "id": "SlamAbility",
+  "name": "Slam",
+  "nameKey": {
+    "key": "CardData_nameKey-e7f944c0239a6e23-43538892ff67fba42bb8b0a461b3df93-v2",
+    "english": "Slam",
+    "french": "Ruée",
+    "german": "Schlag",
+    "russian": "Рывок",
+    "portuguese": "Investida",
+    "chinese": "猛击",
+    "spanish": "Carga",
+    "chinese_traditional": "猛擊",
+    "korean": "충돌",
+    "japanese": "叩きつけ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-716abb61efee0398-43538892ff67fba42bb8b0a461b3df93-v2",
+    "english": "[advance]. Deal damage to the front enemy unit equal to this unit's current [health] and [armor].",
+    "french": "[advance]. Inflige des dégâts à l'ennemi en 1re ligne égaux aux [health] et à l'[armor] actuels de cette unité.",
+    "german": "[advance]. Füge der vordersten gegnerischen Einheit Schaden in Höhe der aktuellen [health] und [armor] dieser Einheit zu.",
+    "russian": "[advance]. Наносит переднему врагу урон, равный [health] и <b>Броне</b> этого бойца.",
+    "portuguese": "<b>Avança</b>. Causa dano à unidade inimiga na frente igual à [health] e [armor] atuais desta unidade.",
+    "chinese": "[advance]。对前排敌方单位造成相当于该单位当前[health]和[armor]的伤害。",
+    "spanish": "[advance]. Inflige tanto daño a la primera unidad enemiga como la [health] y [armor] actuales de esta unidad.",
+    "chinese_traditional": "[advance]。對前排敵方單位造成等於此單位目前[health]與[armor]的傷害。",
+    "korean": "[advance]. 이 유닛의 현재 [health] 및 [armor]만큼 전열 적 유닛에게 피해를 입힙니다.",
+    "japanese": "[advance]。前列の敵ユニットにこのユニットの現在の[health]と[armor]に等しいダメージを与える。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassBanished",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
+    "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectFloorRearrange",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
+          "m_AssetGUID": "32a4025b924311e4995d1dc47611df0f"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectDamagePerHp",
+      "targetMode": "self",
+      "targetTeamType": "heroes",
+      "paramInt": 1,
+      "paramBool2": true,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+          "m_AssetGUID": "b856194664a6e4b4da8f1c47c5a0e765"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 2,
+  "isUnitAbility": true,
+  "initialKeyboardTarget": "front_friendly"
+}

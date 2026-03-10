@@ -1,0 +1,113 @@
+{
+  "id": "MonsterNightshadow",
+  "name": "Nightingale",
+  "nameKey": {
+    "key": "CharacterData_nameKey-2e59efd6a3ba33a9-f9cef086ce44c3a419e1402c210a3d51-v2",
+    "english": "Nightingale",
+    "french": "Rossignol",
+    "german": "Nachtigall",
+    "russian": "Соловей",
+    "portuguese": "Vendaval Noturno",
+    "chinese": "夜莺",
+    "spanish": "Viento nocturno",
+    "chinese_traditional": "夜鶯",
+    "korean": "나이팅게일",
+    "japanese": "ナイチンゲール"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-dd5b4c5cce775399-f9cef086ce44c3a419e1402c210a3d51-v2",
+      "english": "“I don’t need magic to disappear into the night.”",
+      "french": "<nobr>« Je</nobr> n'ai pas besoin de magie pour disparaître dans la <nobr>nuit. »</nobr>",
+      "german": "„Ich brauche keine Magie, um in der Nacht zu verschwinden.“",
+      "russian": "«Мне не нужна магия, чтобы скрыться под покровом ночи».",
+      "portuguese": "“Não preciso de magia para desaparecer na noite.”",
+      "chinese": "“我不需要魔法就能消失在黑夜里。”",
+      "spanish": "«No necesito magia para desaparecer en la noche».",
+      "chinese_traditional": "「我不需要魔法就能消失在夜色中。」",
+      "korean": "\"난 밤 속으로 사라지는 데 마법 따위 필요 없어.\"",
+      "japanese": "「夜闇に溶け込むのに魔法は必要ない」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Nightingale.prefab",
+    "m_AssetGUID": "080e7ee3e2bcbbb4796d3febf1da1e6f"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "stealth",
+      "count": 2
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-06e8776cbedbde2d-f9cef086ce44c3a419e1402c210a3d51-v2",
+        "english": "[multistrike] [effect0.upgrade.status0.power].",
+        "french": "[multistrike] [effect0.upgrade.status0.power].",
+        "german": "[multistrike] [effect0.upgrade.status0.power].",
+        "russian": "[multistrike] х[effect0.upgrade.status0.power].",
+        "portuguese": "[multistrike] [effect0.upgrade.status0.power].",
+        "chinese": "[multistrike] [effect0.upgrade.status0.power]。",
+        "spanish": "[multistrike] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "[multistrike][effect0.upgrade.status0.power]。",
+        "korean": "[multistrike] [effect0.upgrade.status0.power].",
+        "japanese": "[multistrike] [effect0.upgrade.status0.power]。"
+      },
+      "trigger": "on_moon_shade",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramCardUpgradeData": {
+            "id": "Nightingale_Upgrade",
+            "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-06d49cfdcfefc23a-e4567b4891dd30e48b38b5ca2c257969-v2",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "multistrike",
+                "count": 2
+              }
+            ]
+          },
+          "additionalParamInt1": 1
+        }
+      ]
+    },
+    {
+      "trigger": "on_moonshade_lost",
+      "effects": [
+        {
+          "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
+          "targetMode": "self",
+          "targetTeamType": "none",
+          "paramCardUpgradeData": {
+            "id": "Nightingale_Upgrade",
+            "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-06d49cfdcfefc23a-e4567b4891dd30e48b38b5ca2c257969-v2",
+            "statusEffectUpgrades": [
+              {
+                "statusId": "multistrike",
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 5,
+  "attackDamage": 10,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Silent"
+  ],
+  "characterChatterData": "LunaCovenSilentChatterData"
+}

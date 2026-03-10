@@ -1,0 +1,61 @@
+{
+  "id": "EvergrowthAbility",
+  "name": "Evergrowth",
+  "nameKey": {
+    "key": "CardData_nameKey-6f1efad2e782d811-880cd4ff60459954291f12f16127c70b-v2",
+    "english": "Evergrowth",
+    "french": "Sempervirence",
+    "german": "Ewiges Wachstum",
+    "russian": "Вечная зелень",
+    "portuguese": "Crescimento Eterno",
+    "chinese": "生生不息",
+    "spanish": "Crecimiento eterno",
+    "chinese_traditional": "長青",
+    "korean": "끝없는 성장",
+    "japanese": "永遠なる繁殖"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-bbd84e64d85770dc-880cd4ff60459954291f12f16127c70b-v2",
+    "english": "Apply [regen] [effect0.status0.power] and [sap] [effect1.status0.power].",
+    "french": "Confère [regen] [effect0.status0.power] et [sap] [effect1.status0.power].",
+    "german": "Wende [regen] [effect0.status0.power] und [sap] [effect1.status0.power] an.",
+    "russian": "Накладывает [regen] х[effect0.status0.power] и [sap] х[effect1.status0.power].",
+    "portuguese": "Concede [regen] [effect0.status0.power] e aplica [sap] [effect1.status0.power].",
+    "chinese": "施加[regen] [effect0.status0.power] 和 [sap] [effect1.status0.power]。",
+    "spanish": "Añade [regen] [effect0.status0.power] y [sap] [effect1.status0.power].",
+    "chinese_traditional": "施加[regen][effect0.status0.power]和[sap][effect1.status0.power]。",
+    "korean": "[regen] [effect0.status0.power] 및 [sap] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[regen] [effect0.status0.power]と[sap] [effect1.status0.power]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "regen",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "debuff",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly"
+}

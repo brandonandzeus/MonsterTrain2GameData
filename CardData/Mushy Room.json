@@ -1,0 +1,85 @@
+{
+  "id": "MushyRoom",
+  "name": "Mushy Room",
+  "nameKey": {
+    "key": "CardData_nameKey-bbb8b231afd57f79-09c379cc5ca83624b90d8c82945c8015-v2",
+    "english": "Mushy Room",
+    "french": "Salle de spores",
+    "german": "Schwammiger Raum",
+    "russian": "Грибничная",
+    "portuguese": "Sala Fúngica",
+    "chinese": "黏糊房间",
+    "spanish": "Sala pulposa",
+    "chinese_traditional": "蘑菇房",
+    "korean": "걸쭉한 방",
+    "japanese": "マッシュ・ルーム"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-5dda4b89df08beba-09c379cc5ca83624b90d8c82945c8015-v2",
+    "english": "Apply [sap] [effect0.upgrade.roommodifier0.effect0.status0.power] to enemy units at the end of combat.",
+    "french": "Applique [sap] [effect0.upgrade.roommodifier0.effect0.status0.power] aux unités ennemies à la fin du combat.",
+    "german": "Wende am Ende des Kampfes [sap] [effect0.upgrade.roommodifier0.effect0.status0.power] auf gegnerische Einheiten an.",
+    "russian": "В конце хода на всех вражеских бойцов накладывается [sap] х[effect0.upgrade.roommodifier0.effect0.status0.power].",
+    "portuguese": "Aplica [sap] [effect0.upgrade.roommodifier0.effect0.status0.power] às unidades inimigas no fim do combate.",
+    "chinese": "在战斗结束时，对敌方单位施加 [sap] [effect0.upgrade.roommodifier0.effect0.status0.power]。",
+    "spanish": "Añade [sap] [effect0.upgrade.roommodifier0.effect0.status0.power] a las unidades enemigas al final del combate.",
+    "chinese_traditional": "在戰鬥結束時，對敵方單位施加[sap][effect0.upgrade.roommodifier0.effect0.status0.power]。",
+    "korean": "교전이 끝나면 적 유닛들에게 [sap] [effect0.upgrade.roommodifier0.effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "戦闘終了時に敵ユニットに[sap] [effect0.upgrade.roommodifier0.effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-03225821bc6dab3f-09c379cc5ca83624b90d8c82945c8015-v2",
+      "english": "“Do you think they’ll make a wonderful perfume once the fungus is done with them?”\n—Madame Lionsmane",
+      "french": "<nobr>« Croyez-vous</nobr> que leur parfum sera toujours aussi doux quand le champignon en aura fini avec <nobr>elles ? »</nobr> \n— Dame Crinière",
+      "german": "„Ob sie wohl ein herrliches Parfüm abgeben, wenn der Pilz sie erst erledigt hat?“\n—Madame Löwenmähne",
+      "russian": "«Думаете, из них получатся отменные духи после смерти?»\n— Мадам Ежовика",
+      "portuguese": "“Você acha que isso vai gerar um perfume maravilhoso quando o fungo devorar tudo?”\n— Madame Juba de Leão",
+      "chinese": "“你觉得，真菌把它们料理完后，它们会不会变成一种很棒的香水呢？”\n——狮鬃夫人",
+      "spanish": "«¿Crees que se convertirán en un buen perfume cuando los hongos acaben con ellos?».\n—Madame Meleona",
+      "chinese_traditional": "「你覺得它們最終會成為一款美妙的香水嗎？在真菌完工後？」\n——獅鬃女士",
+      "korean": "“이 안에 핀 곰팡이가 다 자라면 훌륭한 향수를 만들 수 있을까?”\n- 마담 라이온즈맨",
+      "japanese": "「カビが分解した後には、素敵な香水になるかしら？」\n—マダム・ライオンズメイン"
+    }
+  ],
+  "cost": 1,
+  "cardType": "room",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MushyRoom.prefab",
+    "m_AssetGUID": "fb248e91be84d38448bdb7623a01855e"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "MushyRoom_Upgrade",
+        "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-305e654a67f43561-11e7c39f0889eff4c8a021a5d456cdd6-v2",
+        "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-871465a407c9ace8-11e7c39f0889eff4c8a021a5d456cdd6-v2",
+        "roomModifierUpgrades": [
+          {
+            "roomStateModifierClassName": "RoomStateAddEffectPostCombatModifier",
+            "paramCardEffects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "debuff",
+                    "count": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

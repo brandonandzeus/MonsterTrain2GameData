@@ -1,0 +1,61 @@
+{
+  "id": "ManeaterAbility1",
+  "name": "Maneating",
+  "nameKey": {
+    "key": "CardData_nameKey-c72bdc1b12f6bf58-9d8f1cdf1d7a8f341a7163e9d3b1976b-v2",
+    "english": "Maneating",
+    "french": "Anthropophagie",
+    "german": "Menschenfresser",
+    "russian": "Сердцеедка",
+    "portuguese": "Devorar Homens",
+    "chinese": "噬人",
+    "spanish": "Devorar",
+    "chinese_traditional": "食人",
+    "korean": "식인",
+    "japanese": "食人"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-96b7dceadb016fcb-9d8f1cdf1d7a8f341a7163e9d3b1976b-v2",
+    "english": "Apply [sap] [effect0.status0.power] and [decay] [effect1.status0.power] to a unit.",
+    "french": "Inflige [sap] [effect0.status0.power] et [decay] [effect1.status0.power] à une unité.",
+    "german": "Wende [sap] [effect0.status0.power] und [decay] [effect1.status0.power] auf eine Einheit an.",
+    "russian": "Накладывает на бойца [sap] х[effect0.status0.power] и [decay] х[effect1.status0.power].",
+    "portuguese": "Aplica [sap] [effect0.status0.power] e [decay] [effect1.status0.power] a uma unidade.",
+    "chinese": "对一个单位施加 [sap] [effect0.status0.power] 以及 [decay] [effect1.status0.power]。",
+    "spanish": "Añade [sap] [effect0.status0.power] y [decay] [effect1.status0.power] a una unidad.",
+    "chinese_traditional": "對一個單位施加[sap][effect0.status0.power]和[decay][effect1.status0.power]。",
+    "korean": "유닛에 [sap] [effect0.status0.power] 및 [decay] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットに[sap] [effect0.status0.power]と[decay] [effect1.status0.power]を付与する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "debuff",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "decay",
+          "count": 5
+        }
+      ]
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy"
+}

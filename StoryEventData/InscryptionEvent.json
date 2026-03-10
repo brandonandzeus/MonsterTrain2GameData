@@ -1,0 +1,68 @@
+{
+  "id": "InscryptionEvent",
+  "name": "InscryptionEvent",
+  "regionRunEventPrefabVariant": {
+    "m_debugName": "Assets/GameData/Story/Event Prefabs/SoulSavior/Event_SS_Background_Inscryption.prefab",
+    "m_AssetGUID": "0f641d19fff2c1b4facc28f4f5438c57"
+  },
+  "followupEvents": [
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionInscryptionEvent"
+        },
+        {
+          "conditionName": "FollowupConditionCardUpgradePresent",
+          "paramCardUpgradeData": "InscryptionEventFecundity_Upgrade"
+        },
+        {
+          "conditionName": "FollowupConditionInscryptionEventIncomplete",
+          "paramCardUpgradeData": "InscryptionEventFecundity_Upgrade"
+        }
+      ],
+      "followupEvent": "InscryptionFollowupEventCorpseEater"
+    },
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionInscryptionEvent"
+        },
+        {
+          "conditionName": "FollowupConditionCardUpgradePresent",
+          "paramCardUpgradeData": "InscryptionEventManyLives_Upgrade"
+        },
+        {
+          "conditionName": "FollowupConditionInscryptionEventIncomplete",
+          "paramCardUpgradeData": "InscryptionEventManyLives_Upgrade"
+        }
+      ],
+      "followupEvent": "InscryptionFollowupEventManyLives"
+    },
+    {
+      "conditions": [
+        {
+          "conditionName": "FollowupConditionInscryptionEvent"
+        },
+        {
+          "conditionName": "FollowupConditionCardUpgradePresent",
+          "paramCardUpgradeData": "InscryptionEventWorthySacrifice_Upgrade"
+        },
+        {
+          "conditionName": "FollowupConditionInscryptionEventIncomplete",
+          "paramCardUpgradeData": "InscryptionEventWorthySacrifice_Upgrade"
+        }
+      ],
+      "followupEvent": "InscryptionFollowupEventWorthySacrifice"
+    }
+  ],
+  "storyId": "InscryptionEvent",
+  "knotName": "InscryptionEvent",
+  "numRunsCompletedToSee": 7,
+  "priorityTicketCount": 15,
+  "maxDistanceAllowed": 4,
+  "possibleRewards": [
+    "InscryptionEventFecundityUpgradeReward",
+    "InscryptionEventWorthySacrificeUpgradeReward",
+    "InscryptionEventManyLivesUpgradeReward"
+  ]
+}

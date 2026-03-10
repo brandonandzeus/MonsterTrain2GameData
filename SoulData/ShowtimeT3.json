@@ -1,0 +1,86 @@
+{
+  "id": "ShowtimeT3",
+  "name": "ShowtimeT3",
+  "nameKey": {
+    "key": "SoulData_nameKey-3b803ae9fb581960-6f3339dfd2601414a8f1f0e1fd1af44a-v2",
+    "english": "Showtime III",
+    "french": "Mélodr'Âme III",
+    "german": "Showtime III",
+    "russian": "Браво III",
+    "portuguese": "Espetáculo III",
+    "chinese": "小明星 III",
+    "spanish": "Espectáculo III",
+    "chinese_traditional": "表演時間III",
+    "korean": "쇼타임 III",
+    "japanese": "ショータイムIII"
+  },
+  "descriptionKey": {
+    "key": "SoulData_descriptionKey-7ac1d355fc46b0e6-6f3339dfd2601414a8f1f0e1fd1af44a-v2",
+    "english": "A random floor has +[effect0.upgrade.roommodifier0.power][capacity]. At the end of combat, the front friendly unit on that floor gains +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] if there is [capacity] available (max 6[capacity]).",
+    "french": "Une salle aléatoire a +[effect0.upgrade.roommodifier0.power][capacity]. À la fin du combat, l'allié en 1re ligne de cette salle gagne +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] si la [capacity] le permet.",
+    "german": "Ein zufälliger Raum hat +[effect0.upgrade.roommodifier0.power][capacity]. Am Kampfende erhält die vorderste verbündete Einheit in diesem Raum +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health], wenn [capacity] verfügbar ist.",
+    "russian": "Случайная комната получает +[effect0.upgrade.roommodifier0.power][capacity]. В конце боя передний союзник в комнате получает +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp][health], если позволяет [capacity].",
+    "portuguese": "Uma sala aleatória tem +[effect0.upgrade.roommodifier0.power][capacity]. No final do combate, a unidade aliada na frente na sala ganha +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] se houver [capacity] disponível.",
+    "chinese": "一个随机房间获得 +[effect0.upgrade.roommodifier0.power][capacity]。战斗结束时，该房间若有可用 [capacity]，则前排友方单位获得 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity]，+[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health]。",
+    "spanish": "Una sala aleatoria tiene +[effect0.upgrade.roommodifier0.power][capacity]. Al final de la batalla, la primera unidad aliada de la sala añade +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health] si hay [capacity] disponible.",
+    "chinese_traditional": "一個隨機房間有+[effect0.upgrade.roommodifier0.power][capacity]。在戰鬥結束時，如果[capacity]可用，該房間的前排友方單位獲得+[effect0.upgrade.charactertrigger0.effect0.upgrade.charactertrigger0.effect0.upgrade.bonussize][capacity]、+[effect0.upgrade.charactertrigger0.effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.charactertrigger0.effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。",
+    "korean": "무작위 객실 하나에 +[effect0.upgrade.roommodifier0.power][capacity]이 부여됩니다. 전투 종료 시, 해당 객실의 [capacity]에 여유가 있다면 전열 아군 유닛 하나가 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity], +[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp][health]을 획득합니다.",
+    "japanese": "ランダムなルームに+[effect0.upgrade.roommodifier0.power][capacity]。が空いている場合、戦闘終了時にそのルーム内にいる味方ユニットが+[effect0.upgrade.roommodifier1.effect0.upgrade.bonussize][capacity][capacity]、+[effect0.upgrade.roommodifier1.effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.roommodifier1.effect0.upgrade.bonushp] [health]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectShowtime",
+      "paramCardUpgradeData": {
+        "id": "ShowtimeT3_Room",
+        "roomModifierUpgrades": [
+          {
+            "roomStateModifierClassName": "RoomStateCapacityModifier",
+            "paramInt": 5
+          },
+          {
+            "roomStateModifierClassName": "RoomStateAddEffectPostCombatModifier",
+            "paramCardEffects": [
+              {
+                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                "targetMode": "front_in_room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "ShowtimeT3_UnitBuffPerTurn",
+                  "hideUpgradeIconOnCard": true,
+                  "bonusDamage": 10,
+                  "bonusHP": 35,
+                  "bonusSize": 1,
+                  "restrictSizeToRoomCapacity": true
+                },
+                "appliedToSelfVFX": {
+                  "vfxPrefabLeft": "FX_FightClub"
+                }
+              }
+            ],
+            "disallowedInDeploymentPhase": true
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "paramInt": 1
+    }
+  ],
+  "unlockData": {
+    "descriptionKey": {
+      "key": "SoulData_descriptionKey-7b1fc979d2122cba-6f3339dfd2601414a8f1f0e1fd1af44a-v2",
+      "english": "Defeat Tivi to upgrade.",
+      "french": "Battez Tivi pour améliorer.",
+      "german": "Besiege für eine Verbesserung Tivi.",
+      "russian": "Чтобы улучшить, победите Тиви.",
+      "portuguese": "Derrote Tivi para melhorar.",
+      "chinese": "击败蒂维以升级。",
+      "spanish": "Derrota a Tivi para mejorar.",
+      "chinese_traditional": "擊敗蒂維以升級。",
+      "korean": "티비를 처치하면 업그레이드됩니다.",
+      "japanese": "ティヴィーを倒してアップグレード。"
+    },
+    "unlockCondition": "soul_kill_region_3_boss",
+    "paramInt": 3
+  },
+  "tierLevel": 3
+}

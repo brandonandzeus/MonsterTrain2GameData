@@ -1,0 +1,80 @@
+{
+  "id": "Pyreclasm",
+  "name": "Pyreclasm",
+  "nameKey": {
+    "key": "CardData_nameKey-7bd6ff6681aa8d6f-5e67e5e30ed0adb4e803b30f1df7392c-v2",
+    "english": "Pyreclasm",
+    "french": "Pyroclasme",
+    "german": "Pyroklasma",
+    "russian": "Пеклострофа",
+    "portuguese": "Destruição Pírica",
+    "chinese": "薪火爆发",
+    "spanish": "Piroclasmo",
+    "chinese_traditional": "火山爆發",
+    "korean": "화로 붕괴",
+    "japanese": "火竜の成長"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b2d07a0331732f46-5e67e5e30ed0adb4e803b30f1df7392c-v2",
+    "english": "Deal [effect0.power] damage.",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+    "german": "Verursache [effect0.power] Schaden.",
+    "russian": "Наносит [effect0.power] урона.",
+    "portuguese": "Causa [effect0.power] de dano.",
+    "chinese": "造成 [effect0.power] 点伤害。",
+    "spanish": "Inflige [effect0.power] de daño.",
+    "chinese_traditional": "造成[effect0.power]點傷害。",
+    "korean": "[effect0.power]의 피해를 입힙니다.",
+    "japanese": "[effect0.power]のダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-73803bf19bdec9ab-5e67e5e30ed0adb4e803b30f1df7392c-v2",
+      "english": "“And when you have followed my commandments and led a life devoted to gold, then your spirit will experience an explosive transformation.” \n—The Rules of Fhyra, Rule #1071",
+      "french": "<nobr>« Et</nobr> lorsque vous aurez suivi mes commandements et mené une vie consacrée à l'or, alors votre esprit connaîtra une transformation <nobr>explosive. »</nobr> \n— Les règles de Fhyra, règle n°1071",
+      "german": "„Und wenn ihr meinen Vorgaben gefolgt seid und eure Leben dem Gold gewidmet habt, wird euer Geist eine sprunghafte Verwandlung erfahren.“\n—Fhyras Regeln, Regel 1071",
+      "russian": "«Когда вы последуете моим заповедям и посвятите жизнь золоту, ваш дух переживет взрывную трансформацию». \n— «Правила Фиры», правило 1071",
+      "portuguese": "“Se você tiver seguido meus mandamentos e levado uma vida dedicada ao ouro, seu espírito vivenciará uma transformação explosiva.” \n— As Regras de Fhyra, Regra n.º 1.071",
+      "chinese": "“当你遵从我的戒律，将一生都奉献给黄金，你的精神就会经历爆炸性的转变。”\n——《菲拉法则》，条例#1071",
+      "spanish": "«Y, cuando hayas seguido mis órdenes y hayas dedicado tu vida al oro, tu espíritu experimentará una transformación explosiva».\n—Normas de Fhyra, norma 1071",
+      "chinese_traditional": "「當你遵循我的誡命，過著致力於黃金的生活時，你的靈魂將經歷一次爆炸性的轉變。」\n——費拉法則，第1071條",
+      "korean": "“내 계명에 따라 황금에 헌신하는 삶을 산다면, 그 영혼은 폭발적인 변화를 경험하게 되리라.”\n- 휘라 율법 1071조",
+      "japanese": "「そして、私の戒律に従い黄金に捧げられた人生を送ったとき、その精神は爆発的な変化を経験するだろう」\n—ファイラの法、1071条"
+    }
+  ],
+  "cost": 4,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Pyreclasm.prefab",
+    "m_AssetGUID": "94cfafc300204e24385187cc0bb2721b"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitStrongerMagicPower"
+    },
+    {
+      "traitStateName": "CardTraitDamageOverflow",
+      "paramInt": 2
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 150,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/Pyreclasm/FX_Pyreclasm.prefab",
+          "m_AssetGUID": "be0b8061d49114f40a1aa78ef893f162"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Taylor Bray"
+}

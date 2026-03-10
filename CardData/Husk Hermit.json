@@ -1,0 +1,112 @@
+{
+  "id": "HuskHermit",
+  "name": "Husk Hermit",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/cards/Portrait_Prefabs/CardArt_HuskHermit.prefab",
+    "m_AssetGUID": "85253ed3ea40b9841aada693049b36c7"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLevelMonsterState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCharacterData": {
+        "id": "HuskHermit",
+        "nameKey": {
+          "key": "CharacterData_nameKey-a88577320b3de739-42c38ef504e15af428455c5e06db7f24-v2",
+          "english": "Husk Hermit",
+          "french": "Ermite carapacé",
+          "german": "Hülleneremit",
+          "russian": "Отшельница",
+          "portuguese": "Eremita Carapaça",
+          "chinese": "坚壳隐者",
+          "spanish": "Ermitaño hueco",
+          "chinese_traditional": "軀殼隱士",
+          "korean": "껍질 은자",
+          "japanese": "ハスク・ハーミット"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-8f535ac87fbe685a-42c38ef504e15af428455c5e06db7f24-v2",
+            "english": "Using Wildwood sap to expedite the growth of their vines, these Animus inhabit the remains of their armor. Their larger vines allow them to strike multiple enemies at once, while still being able to retreat into their shell if necessary.",
+            "french": "Ces animus, qui ont recours à la sève du Boissauvage pour accélérer la croissance de leurs lianes, occupent ce qui reste de leur armure. Leurs plus grandes lianes leur permettent de frapper plusieurs ennemis à la fois et peuvent trouver refuge dans leur carapace en cas de besoin.",
+            "german": "Diese Animus leben in den Überresten ihrer Rüstung und nutzen Wildholzsaft, um ihre Ranken schneller wachsen zu lassen. Ihre größeren Ranken ermöglichen ihnen Angriffe gegen mehrere Gegner gleichzeitig, und ihre harte Schale dient als Rückzugsort.",
+            "russian": "Эти Анимы используют соки Диколесья, чтобы ускорить рост своих лоз, прячась в остатках собственной брони. Наиболее длинные плети позволяют им атаковать сразу нескольких врагов, что не мешает Анимам своевременно скрыться в своем убежище.",
+            "portuguese": "Usando seiva da Mata Selvagem para agilizar o crescimento de suas vinhas, essas Animus habitam o que sobrou de suas armaduras. As vinhas maiores permitem que atinjam vários inimigos de uma vez, enquanto mantêm a capacidade de voltar para dentro do casco, se necessário.",
+            "chinese": "这种蔓灵依然隐藏在盔甲的残骸之中，通过使用野林树液，让自己的藤蔓得以快速生长。它们的巨大藤蔓可以同时攻击多个敌人。当情况不妙的时候，它们也可以撤回到自己的坚壳之中。",
+            "spanish": "Estos ánimus habitan los restos de su armadura y utilizan la savia del Bosque Salvaje para acelerar el crecimiento de sus zarcillos. Al alargarlos, pueden golpear a varios enemigos al mismo tiempo y tienen la opción de retirarse a su caparazón, de ser necesario.",
+            "chinese_traditional": "這些靈魂使用荒野樹液來加速藤蔓的生長，居住在他們盔甲的殘骸中。他們擁有較大的藤蔓，能夠同時攻擊多個敵人，且仍能在必要時撤退回自己的外殼裡面。",
+            "korean": "이 의사생명체는 갑옷 잔해에 서식하면서 와일드우드 수액으로 덩굴이 빠르게 자라도록 돕는다. 더욱 거대한 덩굴로 한꺼번에 여러 적을 공격할 수 있으며, 필요하면 언제든 갑옷 잔해 속으로 몸을 숨길 수도 있다.",
+            "japanese": "ワイルドウッドの樹液を使ってツタの成長を早めるアニムスは、鎧の残骸に住み着く。ツタが大きくなると一度に複数の敵を攻撃することができ、必要に応じて殻の中に退却することもできる。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/characters/Character_Prefabs/Character_HuskHermit.prefab",
+          "m_AssetGUID": "b4e4bcbfba1f7de41a02ec6548fe2732"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/FX/FX_VineDamage_PS.prefab",
+            "m_AssetGUID": "aef8b97a4697ca444af7fd6e028dbe41"
+          },
+          "spawnLocation": "character_center"
+        },
+        "startingStatusEffects": [
+          {
+            "statusId": "sweep",
+            "count": 1
+          }
+        ],
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-21960ec7d436584c-42c38ef504e15af428455c5e06db7f24-v2",
+              "english": "+[effect0.power][attack].",
+              "french": "+[effect0.power][attack].",
+              "german": "+[effect0.power][attack].",
+              "russian": "+[effect0.power][attack].",
+              "portuguese": "+[effect0.power][attack].",
+              "chinese": "+[effect0.power][attack]。",
+              "spanish": "+[effect0.power][attack].",
+              "chinese_traditional": "+[effect0.power][attack]。",
+              "korean": "+[effect0.power][attack].",
+              "japanese": "+[effect0.power][attack]。"
+            },
+            "trigger": "on_hit",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramCardUpgradeData": {
+                  "id": "HuskHermitTrigger",
+                  "bonusDamage": 3
+                }
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 35,
+        "attackDamage": 3,
+        "subtypeKeys": [
+          "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "AwokenAnimusChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Brian Mutschler"
+}

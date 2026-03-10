@@ -1,0 +1,52 @@
+{
+  "id": "FriendlyUnitsGetEndless",
+  "name": "Never Say Die",
+  "nameKey": {
+    "key": "MutatorData_nameKey-aeffb24c9d183aaf-8c65c77642199b54a9089af55cd0ae1d-v2",
+    "english": "Never Say Die",
+    "french": "Réincarnation",
+    "german": "Stirb an einem anderen Tag",
+    "russian": "Никогда не говори «Умри»",
+    "portuguese": "Nunca Diga “Morra”",
+    "chinese": "永不言灭",
+    "spanish": "No mires a la muerte",
+    "chinese_traditional": "永不言敗",
+    "korean": "죽음은 없다",
+    "japanese": "死ぬなどと言うな"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-ba7f1c2adb0dcb09-8c65c77642199b54a9089af55cd0ae1d-v2",
+    "english": "Friendly non-Morsel units get [endless].",
+    "french": "Les unités alliées hors sous-bistre gagnent <b>Infinité</b>.",
+    "german": "Verbündete Nicht-Nugget-Einheiten erhalten <b>Endlos</b>.",
+    "russian": "Союзники, кроме заморышей, получают [endless].",
+    "portuguese": "Unidades aliadas que não sejam Lanchos recebem <b>Perpétuo</b>.",
+    "chinese": "友方非影裔单位获得[endless]。",
+    "spanish": "Las unidades aliadas que no sean pinchos añaden [endless].",
+    "chinese_traditional": "友方非莫塞爾單位獲得[endless]。",
+    "korean": "작은 그림자 이외의 아군 유닛이 [endless]을 얻습니다.",
+    "japanese": "味方の非モーゼルユニットが[endless]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "endless",
+          "count": 1
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramInt": -1,
+      "paramExcludeCharacterSubtypes": [
+        "SubtypesData_Snack"
+      ]
+    }
+  ],
+  "boonValue": 5,
+  "tags": [
+    "friendlyeffect",
+    "endless",
+    "attrition"
+  ]
+}

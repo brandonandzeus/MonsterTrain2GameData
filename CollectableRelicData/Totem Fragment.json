@@ -1,0 +1,61 @@
+{
+  "id": "SpellWeaknessBelowPyre",
+  "name": "Totem Fragment",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-3df91a630bf3d4bf-b9728e23004c3514193eccbb27c5b348-v2",
+    "english": "Totem Fragment",
+    "french": "Fragment de totem",
+    "german": "Totem-Fragment",
+    "russian": "Фрагмент тотема",
+    "portuguese": "Fragmento de Totem",
+    "chinese": "图腾碎片",
+    "spanish": "Fragmento de tótem",
+    "chinese_traditional": "圖騰碎片",
+    "korean": "토템 조각",
+    "japanese": "トーテムの欠片"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-affafa5ff7b9b6b6-b9728e23004c3514193eccbb27c5b348-v2",
+    "english": "Apply [spellweakness] [effect0.status0.power] to enemy units when they enter the floor below the Pyre Room.",
+    "french": "Inflige <nobr><b>Faiblesse magique</b></nobr> [effect0.status0.power] aux unités ennemies lorsqu'elles entrent dans le niveau sous la salle du Brasier.",
+    "german": "Wende [effect0.status0.power] <nobr><b>Zauberanfälligkeit</b></nobr> auf gegnerische Einheiten an, wenn diese die Ebene unter dem Höllenglutraum betreten.",
+    "russian": "Накладывает [spellweakness] [effect0.status0.power] на бойцов врага, проникающих в комнату под Пеклом.",
+    "portuguese": "Causa <nobr><b>Fraqueza à Magia</b></nobr> [effect0.status0.power] a unidades inimigas quando elas entrarem no andar abaixo da Sala da Pira.",
+    "chinese": "当敌方单位进入薪火室下方的楼层时，对其施加<nobr><b>法术易伤</b></nobr> [effect0.status0.power]。",
+    "spanish": "Añade [spellweakness] [effect0.status0.power] a las unidades enemigas cuando entran al piso bajo la sala de la Pira.",
+    "chinese_traditional": "當敵方單位進入火堆房間下方的樓層時，對其施加[spellweakness][effect0.status0.power]。",
+    "korean": "화로실 아래층에 진입한 적 유닛들에게 [spellweakness] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "炉室の下のフロアに入った敵ユニットに[spellweakness] [effect0.status0.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-6a70462e8fdc3b49-b9728e23004c3514193eccbb27c5b348-v2",
+      "english": "From my studies of the Stygian totems, I’ve found that the sidestones that circle around them help to focus their energy. When removed from their totem host, these sidestones can produce a similar, though much weaker, effect on their target.",
+      "french": "Après avoir étudié les totems stygiens, j'ai découvert que les pierres qui les entourent leur permettent de concentrer leur énergie. Lorsqu'elles sont retirées de leur hôte totémique, ces pierres peuvent produire un effet similaire, bien que moindre, sur leur cible.",
+      "german": "Meine Studien der stygischen Totems haben ergeben, dass die kreisförmig angeordneten Steine um das Totem herum dabei helfen, die Energie zu bündeln. Wenn diese Steine von ihrem Totem entfernt werden, können sie eine viel schwächere, aber ähnliche Wirkung auf ein Ziel haben.",
+      "russian": "Изучая стигийские тотемы, я выяснил, что окружающие их камни помогают аккумулировать энергию. И если их забрать, они продолжают оказывать пусть и меньшее, но схожее воздействие на цель.",
+      "portuguese": "Em meus estudos sobre os Totens Estigeanos, descobri que as pedras laterais que os circulam ajudam a concentrar sua energia. Quando removidas do totem, essas pedras podem produzir um efeito semelhante, embora muito mais fraco, em um alvo.",
+      "chinese": "通过对冥卫图腾的研究，我发现这些图腾周围的方石有助于帮助冥卫集中能量。当把这些方石从原本的图腾上敲下来之后，它们也同样会对目标产生类似的效果，不过要弱得多。",
+      "spanish": "En mis estudios sobre los tótems estigios, he descubierto que las piedras laterales que los rodean sirven para focalizar su energía. Al eliminarlas del tótem, estas piedras pueden producir un efecto similar, aunque mucho más débil, sobre un objetivo.",
+      "chinese_traditional": "從我對冥河圖騰的研究中，我發現環繞它們的側石有助於集中它們的能量。當我把這些側石從它們的圖騰宿主中移除時，能在目標身上產生類似但較弱的效果。",
+      "korean": "명계의 토템을 연구한 결과, 토템 주변을 도는 사이드 스톤이 에너지 집중에 도움을 준다는 것을 확인했다. 사이드 스톤을 토템에서 멀리 떨어뜨려도 비슷한 효과를 발휘하지만, 그 효과는 훨씬 약하다.",
+      "japanese": "ステュクス族のトーテムの研究から、トーテムを囲む石がエネルギーを集中させるのに役立っていることがわかった。トーテムから取り外すと、この石は標的に対して同様の効果を発揮するが、効果ははるかに弱くなる。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddStatusEffectOnEnterRoomIndex",
+      "paramStatusEffects": [
+        {
+          "statusId": "spell weakness",
+          "count": 2
+        }
+      ],
+      "paramSourceTeam": "heroes",
+      "paramInt": 2
+    }
+  ],
+  "unlockLevel": 5
+}

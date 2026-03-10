@@ -1,0 +1,78 @@
+{
+  "id": "HairOfTheHybrid",
+  "name": "Hair of the Hybrid",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-88d9db639a7548fd-405dbaa511846a943a097ad72412b61d-v2",
+    "english": "Hair of the Hybrid",
+    "french": "Cheveux de l'hybride",
+    "german": "Haar des Hybriden",
+    "russian": "Волосы гибрида",
+    "portuguese": "Cabelo de Híbrido",
+    "chinese": "混种生物的头发",
+    "spanish": "Cabello híbrido",
+    "chinese_traditional": "混種生物的毛髮",
+    "korean": "혼종의 머리카락",
+    "japanese": "異種配合の髪"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-e8c916212805977b-405dbaa511846a943a097ad72412b61d-v2",
+    "english": "Equipping a friendly unit under half health applies [armor] [effect0.trigger0.effect0.status0.power], otherwise it applies [rage] [effect0.trigger0.effect0.status1.power].",
+    "french": "Équiper un allié à moins de <nobr>50 %</nobr> de PV confère [armor] [effect0.trigger0.effect0.status0.power]. Sinon, confère [rage] [effect0.trigger0.effect0.status1.power].",
+    "german": "Das Ausrüsten einer verbündeten Einheit mit weniger als ihrer halben Gesundheit wendet [armor] [effect0.trigger0.effect0.status0.power] an. Sonst wird [rage] [effect0.trigger0.effect0.status1.power] angewandt.",
+    "russian": "Если у игрока, на которого надевается снаряжение, меньше половины здоровья, на него накладывается [armor] х[effect0.trigger0.effect0.status0.power], в противном случае — [rage] х[effect0.trigger0.effect0.status1.power].",
+    "portuguese": "Equipar uma unidade aliada que estiver com menos da metade da vida concede [armor] [effect0.trigger0.effect0.status0.power]. Caso contrário, aplica [rage] [effect0.trigger0.effect0.status1.power].",
+    "chinese": "为一个友方单位穿戴装备时，若该单位生命值低于50%，获得 [armor] [effect0.trigger0.effect0.status0.power]，否则获得 [rage] [effect0.trigger0.effect0.status1.power]。",
+    "spanish": "Equipar a una unidad aliada con menos de la mitad de su salud le otorga [armor] [effect0.trigger0.effect0.status0.power], de lo contrario aplica [rage] [effect0.trigger0.effect0.status1.power].",
+    "chinese_traditional": "裝備生命值低於一半的友方單位時施加[armor][effect0.trigger0.effect0.status0.power]，否則施加[rage][effect0.trigger0.effect0.status1.power]。",
+    "korean": "체력이 절반 이하로 떨어진 아군 유닛에 장착하면 [armor] [effect0.trigger0.effect0.status0.power] 효과를 적용하며, 그 외의 경우 [rage] [effect0.trigger0.effect0.status1.power] 효과가 적용됩니다.",
+    "japanese": "体力が半分を下回っている味方ユニットに装着すると[armor] [effect0.trigger0.effect0.status0.power]を付与し、そうでない場合は[rage] [effect0.trigger0.effect0.status1.power]を付与する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-5fab151354e1576e-405dbaa511846a943a097ad72412b61d-v2",
+      "english": "“When hair strands are powdered, mixed, and then ingested, the resulting mixture has shown promise in energizing my subjects.”\n—from Dr. Orechi’s notebook",
+      "french": "<nobr>« Une</nobr> fois les mèches de cheveux pulvérisées, mélangées puis ingérées, la mixture obtenue s'est révélée prometteuse pour dynamiser mes <nobr>cobayes. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
+      "german": "„Durch den Verzehr von pulverisierten Haarsträhnen werden meine Probanden verlässlich mit Energie versorgt“\n—aus Dr. Orechis Notizbuch",
+      "russian": "«Если волосы измельчить в порошок, смешать, а затем проглотить, то полученная смесь демонстрирует многообещающую способность заряжать моих созданий энергией»\n— Из записной книжки доктора Оречи",
+      "portuguese": "“Quando os fios de cabelo são pulverizados, misturados e depois ingeridos, a mistura resultante tem se mostrado promissora na energização das minhas cobaias.”\n— Anotação do Dr. Orechi",
+      "chinese": "“把头发磨成粉，调合，然后摄入，得到的混合物有希望让我的实验对象充满活力。”\n——摘自奥莱奇博士的笔记本",
+      "spanish": "«Pulverizar, mezclar e ingerir una mezcla de mechones de pelo ha tenido resultados prometedores en la revitalización de mis sujetos».\n—Cuaderno del Dr. Orechi",
+      "chinese_traditional": "「當髮絲被粉末化、混合，然後吃下肚時，最終得出的混合物展示出了潛力，能讓我的實驗體變得充滿活力。」\n——摘自奧雷奇博士的筆記本",
+      "korean": "“머리카락을 가루로 만들어 혼합한 뒤 먹여본 결과, 이 혼합물이 실험체에 활력을 불어넣는 것을 발견했다.\"\n- 오레치 박사의 기록",
+      "japanese": "「髪の毛を粉末にして混ぜ、内服し、その結果得られた混合物は、被験者に活力を与えることが期待できる」\n—ドクター・オレチのメモ帳より"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_equipment_added",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffectBasedOnHealth",
+              "targetMode": "self",
+              "targetTeamType": "both",
+              "paramStatusEffects": [
+                {
+                  "statusId": "armor",
+                  "count": 10
+                },
+                {
+                  "statusId": "buff",
+                  "count": 5
+                }
+              ],
+              "paramInt": 50
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters",
+      "paramBool": true
+    }
+  ]
+}

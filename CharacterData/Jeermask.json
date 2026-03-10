@@ -1,0 +1,80 @@
+{
+  "id": "R3_Horde_T1_Decoy",
+  "name": "Jeermask",
+  "nameKey": {
+    "key": "CharacterData_nameKey-20f9a0cbcf178ecc-10d046676ddac9e47b258c17a08088b5-v2",
+    "english": "Jeermask",
+    "french": "Masque huant",
+    "german": "Spottmaske",
+    "russian": "Пересмешник",
+    "portuguese": "Máscara da Zombaria",
+    "chinese": "嘲笑面具",
+    "spanish": "Máscara burlona",
+    "chinese_traditional": "嘲諷面具",
+    "korean": "조롱 가면",
+    "japanese": "ジーアマスク"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-7cd990d6443698c2-10d046676ddac9e47b258c17a08088b5-v2",
+      "english": "Temperamental, inquisitive, and mischievous, these creatures have a malicious sense of humor. They torment their foes with mocking taunts. It is believed that they must have been formed from the souls of the most turbulent of pests.",
+      "french": "Capricieuses, curieuses et malicieuses, ces créatures tourmentent leurs ennemis en se moquant d'eux. On pense qu'elles ont été créées à partir des âmes des nuisibles les plus agaçants.",
+      "german": "Temperamentvoll, neugierig und schelmisch. Diese Kreaturen haben einen bösen Sinn für Humor. Sie quälen ihre Feinde mit spöttischem Hohn. Es heißt, sie hätten sich aus den Seelen der schlimmsten Schädlinge gebildet.",
+      "russian": "Это вспыльчивые, любопытные и вредные существа с жестоким чувством юмора, которые издеваются и злобно насмехаются над врагами. Считается, что созданы они из душ самых отъявленных вредителей.",
+      "portuguese": "Temperamentais, curiosas e travessas, estas criaturas têm um senso de humor malicioso. Elas atormentam seus inimigos com provocações. Acredita-se que elas tenham se originado das almas das pestes mais arruaceiras.",
+      "chinese": "这些生灵天性暴躁、好奇心重且淘气顽皮，恶趣味是捉弄他人。它们最爱用嘲弄讥讽来折磨对手。据信，构成它们的灵魂一定来自最不安分的害虫。",
+      "spanish": "Estas criaturas temperamentales, curiosas y traviesas cuentan con un maligno sentido del humor. Atormentan a sus enemigos con burlas constantes. Se cree que proceden de las almas de las sabandijas más turbulentas.",
+      "chinese_traditional": "這些生物脾氣暴躁、好奇心強且愛惡作劇，有著惡意的幽默感。牠們以尖酸的嘲弄來折磨敵人。據信牠們是由最不安分的害蟲靈魂所形成。",
+      "korean": "변덕스럽고 호기심 많으며 장난을 좋아하는 이 생물들은 악의적인 유머 감각을 지니고 있다. 그들은 조롱 섞인 도발로 적을 괴롭힌다. 아마 가장 난폭하고 소란스러운 영혼들이 모여 만들어진 산물일 것이다.",
+      "japanese": "気まぐれで、好奇心が強く、いたずら好き。この生物のユーモアのセンスは意地の悪いものだ。あざけるような挑発で敵を悩ませる。よほど気性の荒い害獣の魂から生まれたのであろうと信じられている。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Jeermask.prefab",
+    "m_AssetGUID": "8c833299f8d13dd49b66453e833e8ccd"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-f1b2052c29cbdf7a-10d046676ddac9e47b258c17a08088b5-v2",
+        "english": "Apply [dazed] [effect0.status0.power] to the attacker.",
+        "french": "Inflige [dazed] [effect0.status0.power] à l'attaquant.",
+        "german": "Wende [dazed] [effect0.status0.power] auf den Angreifer an.",
+        "russian": "На атакующего накладывается [dazed] х[effect0.status0.power].",
+        "portuguese": "Aplica [dazed] [effect0.status0.power] ao atacante.",
+        "chinese": "对攻击者施加 [dazed] [effect0.status0.power]。",
+        "spanish": "Añade [dazed] [effect0.status0.power] al atacante.",
+        "chinese_traditional": "對攻擊者施加[dazed][effect0.status0.power]。",
+        "korean": "공격자에 [dazed] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "攻撃者に[dazed] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "last_attacker_character",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "dazed",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 4,
+    "endlessAttack": 6
+  },
+  "size": 1,
+  "health": 1,
+  "canAttack": false,
+  "attackDamage": 0,
+  "subtypeKeys": [
+    "SubtypesData_SoulSavior_Horde_Enemy"
+  ],
+  "characterChatterData": "R1SoulSaviorEnemies_Male_ChatterData",
+  "artistAttribution": "Luke Banke"
+}

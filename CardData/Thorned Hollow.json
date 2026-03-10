@@ -1,0 +1,133 @@
+{
+  "id": "ThornedHollow",
+  "name": "Thorned Hollow",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Golem_Spiked.prefab",
+    "m_AssetGUID": "f1004d28cb6c65d46a62d8235b447248"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLevelMonsterState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramCharacterData": {
+        "id": "MonsterIronMaiden",
+        "nameKey": {
+          "key": "CharacterData_nameKey-4bebc515c220d81d-177d4572e5dbc3846bb7f3196bacf680-v2",
+          "english": "Thorned Hollow",
+          "french": "Réceptacle épineux",
+          "german": "Dornige Hülle",
+          "russian": "Колючий Пустой",
+          "portuguese": "Oco Espinhoso",
+          "chinese": "荆棘空灵",
+          "spanish": "Hueco espinoso",
+          "chinese_traditional": "荊棘空心人",
+          "korean": "가시 돋친 공허한 존재",
+          "japanese": "ソーンド・ホロウ"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-185bf761b01738c9-177d4572e5dbc3846bb7f3196bacf680-v2",
+            "english": "There is a clearing in the Wildwood where the vines turn brittle and become covered in thorns. While impossible for me to visit, I’ve heard that the Hollows that root there are afflicted with a similar transformation.",
+            "french": "Il existe une clairière dans le Boissauvage où les plantes deviennent cassantes et couvertes d'épines. Bien qu'il me soit impossible de m'y rendre, j'ai entendu dire que les réceptacles qui y prennent racine subissent la même transformation.",
+            "german": "Im Wildholz gibt es eine Lichtung, auf der die Ranken brüchig und dornig werden. Ich konnte sie nicht besuchen, doch ich habe gehört, dass die Hüllen, die dort Wurzeln schlagen, eine ähnliche Entwicklung durchmachen.",
+            "russian": "Посреди Диколесья есть поляна, где лианы становятся хрупкими и покрываются шипами. Хотя мне так и не удалось побывать на ней, ходят слухи, что Пустые, обитающие там, претерпевают схожие трансформации.",
+            "portuguese": "Há uma clareira na Mata Selvagem onde as videiras se tornam frágeis e ficam cobertas de espinhos. Embora seja impossível para mim visitá-la, ouvi dizer que os Ocos que se enraízam ali sofrem uma transformação semelhante.",
+            "chinese": "野林里有一处空地，那里被荆棘所占据，生长在其中的藤蔓也变得十分脆弱。虽然我没办法亲自前往，但我听说扎根在那边的空灵身上也产生了类似的变化。",
+            "spanish": "Hay un claro en el Bosque Salvaje en el que las enredaderas se vuelven quebradizas y se cubren de espinas. Aunque no puedo visitarlo, he oído que los huecos que arraigan allí sufren una transformación similar.",
+            "chinese_traditional": "在荒野中有一片空地，那裡的藤蔓變得脆弱並長滿荊棘。雖然我無法前往，但我聽說在那裡生根的空心人也遭遇了類似的轉變。",
+            "korean": "와일드우드 안쪽에는 갈라진 덩굴과 그 위를 덮은 가시로 이루어진 공터가 있다. 직접 찾아가는 것은 어렵지만, 그곳에 뿌리를 내린 공거한 존재들도 비슷한 변화를 겪고 있다는 이야기는 들은 적이 있다.",
+            "japanese": "ワイルドウッドには、ツタが脆くなり棘に覆われる広場がある。訪れることは不可能だが、そこに根を下ろしているホロウたちは同じような姿に変化するらしい。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Golem_Spiked.prefab",
+          "m_AssetGUID": "6c10825cd5ba75b4b87c79da9c5b2192"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-fd926ba1432a7f9e-177d4572e5dbc3846bb7f3196bacf680-v2",
+              "english": "Gain [effect0.power] max health.",
+              "french": "Octroie [effect0.power] PV max.",
+              "german": "Erhalte [effect0.power] maximale Gesundheit dazu.",
+              "russian": "Повышает макс. здоровье на [effect0.power].",
+              "portuguese": "Recebe [effect0.power] de vida máxima.",
+              "chinese": "获得 [effect0.power] 最大生命值。",
+              "spanish": "Añade [effect0.power] de salud máxima.",
+              "chinese_traditional": "獲得[effect0.power]點最大生命值。",
+              "korean": "최대 체력이 [effect0.power] 증가합니다.",
+              "japanese": "[effect0.power]の最大体力を得る。"
+            },
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAdjustMaxHealth",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramInt": 60
+              }
+            ]
+          },
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-cfdec10f023d4cae-177d4572e5dbc3846bb7f3196bacf680-v2",
+              "english": "Gain [spikes] [effect0.status0.power].",
+              "french": "Octroie <b>Épines</b> [effect0.status0.power].",
+              "german": "Erhalte <b>Dornen</b>[effect0.status0.power].",
+              "russian": "Дает [effect0.status0.power] х[spikes].",
+              "portuguese": "Concede <b>Espinhos</b> [effect0.status0.power].",
+              "chinese": "获得<b>尖刺</b> [effect0.status0.power]。",
+              "spanish": "Añade [spikes] [effect0.status0.power].",
+              "chinese_traditional": "獲得[spikes][effect0.status0.power]。",
+              "korean": "[spikes] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[spikes] [effect0.status0.power]を得る。"
+            },
+            "trigger": "on_heal",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "spikes",
+                    "count": 4
+                  }
+                ],
+                "paramInt": 100
+              }
+            ]
+          }
+        ],
+        "size": 3,
+        "health": 25,
+        "attackDamage": 15,
+        "subtypeKeys": [
+          "SubtypesData_Golem_2d79cb56-4041-4d63-b7bf-8d2185923eda",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "AwokenHollowChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Evan Yovaisis"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "PyreHeartAquathAbility",
+  "name": "Aquath's Reservation",
+  "nameKey": {
+    "key": "CardData_nameKey-0da93fb657730e2f-dbb1f08e30157bb488750f386d72c7e7-v2",
+    "english": "Aquath's Reservation",
+    "french": "Réserve d'Aquath",
+    "german": "Aquaths Vorbehalt",
+    "russian": "Обитель Аквата",
+    "portuguese": "Ressalva de Aquath",
+    "chinese": "阿奎斯的预备余烬",
+    "spanish": "Reserva de Aquath",
+    "chinese_traditional": "艾闊斯的儲備",
+    "korean": "아콰스의 유보",
+    "japanese": "アクアスの予備"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-18b07712329e92fc-dbb1f08e30157bb488750f386d72c7e7-v2",
+    "english": "Gain [effect0.power][ember].",
+    "french": "Octroie [effect0.power][ember].",
+    "german": "Erhalte [effect0.power][ember].",
+    "russian": "Дает [effect0.power][ember].",
+    "portuguese": "Recebe [effect0.power][ember].",
+    "chinese": "获得[effect0.power][ember]。",
+    "spanish": "Obtienes [effect0.power][ember].",
+    "chinese_traditional": "獲得[effect0.power][ember]。",
+    "korean": "[effect0.power][ember]을 획득합니다.",
+    "japanese": "[effect0.power][ember]を得る。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "effects": [
+    {
+      "effectStateName": "CardEffectGainEnergy",
+      "targetMode": "room",
+      "targetTeamType": "both",
+      "paramInt": 3,
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/PyreFX/Aquath/FX_AquathAbility.prefab",
+          "m_AssetGUID": "ba28eb7c538dd7c46b31db9a88e8a65c"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectRemoveAbility",
+      "targetMode": "pyre",
+      "targetTeamType": "both",
+      "paramRelicData": "Echoes_PyreCanUseAbilityMultipleTimes"
+    }
+  ],
+  "cooldownAfterActivated": 99,
+  "isUnitAbility": true,
+  "targetsRoom": false,
+  "initialKeyboardTarget": "front_friendly"
+}

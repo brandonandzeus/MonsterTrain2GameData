@@ -1,0 +1,92 @@
+{
+  "id": "UnitUpgradeEndless",
+  "name": "Immortalstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-2555d193b21c2d3e-2456e6ce2476d6a4baea032f94048869-v2",
+    "english": "Immortalstone",
+    "french": "Pierre immortelle",
+    "german": "Unsterblichkeitsstein",
+    "russian": "Бессмертный камень",
+    "portuguese": "Pedra Imortal",
+    "chinese": "永生石",
+    "spanish": "Piedra inmortal",
+    "chinese_traditional": "不朽石",
+    "korean": "불멸석",
+    "japanese": "不死の石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-64f7cab56b83e0fa-2456e6ce2476d6a4baea032f94048869-v2",
+    "english": "Upgrade a unit with [endless].",
+    "french": "Améliore une unité avec <b>Infinité</b>.",
+    "german": "Verbessere eine Einheit mit <b>Endlos</b>.",
+    "russian": "Усиливает бойца, используя [endless].",
+    "portuguese": "Melhorar uma unidade com <b>Perpétuo</b>.",
+    "chinese": "升级一个单位，使其获得[endless]。",
+    "spanish": "Mejora una unidad con [endless].",
+    "chinese_traditional": "升級一個單位，使其獲得[endless]。",
+    "korean": "유닛을 업그레이드하여 [endless] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[endless]を得る。"
+  },
+  "rarity": "rare",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "AddEndless",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-294fbb4086f7b0f5-e2bb19ee7e63e604d9856e0ae430b206-v2",
+          "english": "Immortalstone",
+          "french": "Pierre immortelle",
+          "german": "Unsterblichkeitsstein",
+          "russian": "Бессмертный камень",
+          "portuguese": "Pedra Imortal",
+          "chinese": "永生石",
+          "spanish": "Piedra inmortal",
+          "chinese_traditional": "不朽石",
+          "korean": "불멸석",
+          "japanese": "不死の石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-c87816c0b36ad714-e2bb19ee7e63e604d9856e0ae430b206-v2",
+          "english": "Gain [endless].",
+          "french": "Octroie <b>Infinité</b>.",
+          "german": "Erhalte <b>Endlos</b>.",
+          "russian": "Дает [endless].",
+          "portuguese": "Recebe [endless].",
+          "chinese": "获得 [endless]。",
+          "spanish": "Añade [endless].",
+          "chinese_traditional": "獲得[endless]。",
+          "korean": "[endless] 효과를 획득합니다.",
+          "japanese": "[endless]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "endless",
+            "count": 1
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEndless",
+            "excludedStatusEffects": [
+              {
+                "statusId": "endless",
+                "count": 1
+              }
+            ],
+            "excludedStatusEffectsOperator": "and"
+          },
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

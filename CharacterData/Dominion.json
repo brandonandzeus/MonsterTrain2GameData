@@ -1,0 +1,149 @@
+{
+  "id": "Boss_Level9_Dominion_V2",
+  "name": "Dominion",
+  "nameKey": {
+    "key": "CharacterData_nameKey-9dcceacad4c9879a-4e29e15c4b80df648b69cdefbfbef802-v2",
+    "english": "Dominion",
+    "french": "Domination",
+    "german": "Herrschaft",
+    "russian": "Доминион",
+    "portuguese": "Domínio",
+    "chinese": "统御泰坦",
+    "spanish": "Dominio",
+    "chinese_traditional": "主宰",
+    "korean": "도미니온",
+    "japanese": "ドミニオン"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-7bdbe916e494ea35-4e29e15c4b80df648b69cdefbfbef802-v2",
+      "english": "Dominion does not command by strength alone. Instead, he twists one’s will to his own. Under Dominion, you are not just compelled to obey, you are reshaped to want it.",
+      "french": "Domination ne commande pas par la seule force, mais en faisant plier la volonté d'autrui à la sienne. Il ne vous contraint pas seulement <nobr>d'obéir :</nobr> il vous remodèle pour que vous le vouliez.",
+      "german": "Herrschaft regiert nicht durch Stärke allein, sondern beeinflusst den Willen der Leute zu seinem Vorteil. Unter ihm ist man nicht bloß gehorsam, sondern wird nach seinen Vorstellungen geformt.",
+      "russian": "Доминион правит без помощи силы. Напротив, он подчиняет волю других своей собственной. Под властью Доминиона вас не принуждают к покорности: вы сами готовы покориться.",
+      "portuguese": "O Domínio não comanda apenas pela força. Em vez disso, ele distorce a vontade do indivíduo de acordo com a sua. Sob o Domínio, você não é apenas obrigado a obedecer, mas é moldado para querer isso.",
+      "chinese": "统御泰坦并不只靠力量来进行掌控。相反，他将人的意志扭曲为自己的意志。在统御之下，你不只是被强迫服从，而且被重塑为想要去服从。",
+      "spanish": "Dominio no gobierna con pura fuerza. En lugar de eso, doblega la voluntad de sus víctimas. Bajo su control, uno no está solo obligado a obedecer, sino que cambia para desear hacerlo.",
+      "chinese_traditional": "主宰不僅靠力量來命令。相反，他會扭曲一個人的意志為己所用。在主宰的統治之下，你不僅會被迫服從，更會被重塑為渴望服從。",
+      "korean": "도미니온은 강제로 명령하지 않는다. 대신 자신의 의지를 주입해 상대의 의지를 꺾는다. 도미니온 아래에 있는 자들은 복종을 강요하는 게 아니라 스스로 복종하도록 재구성된 존재이다.",
+      "japanese": "ドミニオンは力だけで支配するわけではない。奴は人の意志を自分の意志に沿うように捻じ曲げるのだ。ドミニオンの下では、ただ従うことを強いられるだけでなく、それを望むように作り変えられるのだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TitanOfDominion.prefab",
+    "m_AssetGUID": "71cd4fef0ef3ab649b01f70c683935a3"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/DominionTitan/FX_DominionTitanAttack.prefab",
+      "m_AssetGUID": "1588dfafc192c88458f0a5c6ecceb679"
+    },
+    "spawnLocation": "character_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/DominionTitan/FX_DominionTitanImpact.prefab",
+      "m_AssetGUID": "7f66615157fdeab439dd7d3635de1abf"
+    },
+    "spawnLocation": "character_center"
+  },
+  "deathVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/MapFX/TFB Sequence/DominionDeathFX.prefab",
+      "m_AssetGUID": "c83d20c43eab7ce4b908c5fad0e5e811"
+    },
+    "spawnLocation": "character_center"
+  },
+  "bossSpellCastVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_LastDivinitySpellCast_PS.prefab",
+      "m_AssetGUID": "fba8663a070857c48b1a509ffbd7217d"
+    },
+    "spawnLocation": "character_center"
+  },
+  "bossRoomSpellCastVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/FX/FX_LastDivinitySpellCastRoom_PS.prefab",
+      "m_AssetGUID": "c7649cc9a3a3d91499361cf2a34bdc01"
+    },
+    "spawnLocation": "room_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "lifelink",
+      "count": 1
+    },
+    {
+      "statusId": "immobile",
+      "count": 1
+    },
+    {
+      "statusId": "pyrebound",
+      "count": 1
+    },
+    {
+      "statusId": "spell shield",
+      "count": 4
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-4bf81607510b7298-4e29e15c4b80df648b69cdefbfbef802-v2",
+        "english": "Add <b>Pyre Light</b> to your hand. Apply [corruption] [effect1.status0.power] to your front unit on all floors.",
+        "french": "Ajoute <b>Lumière du Brasier</b> à votre main. Inflige [corruption] [effect1.status0.power] à votre unité en 1re ligne à tous les niveaux.",
+        "german": "Nimm <b>Licht der Höllenglut</b> auf die Hand. Wende [corruption] [effect1.status0.power] auf deine vorderste Einheit auf allen Ebenen an.",
+        "russian": "Добавляет в вашу руку <b>Свет Пекла</b>. На ваших передних бойцов на всех этажах накладывается [corruption] х[effect1.status0.power].",
+        "portuguese": "Adiciona uma carta de <b>Luz da Pira</b> à sua mão. Aplica [corruption] [effect1.status0.power] à sua unidade na frente em todos os andares.",
+        "chinese": "添加<b>薪火之光</b>到你的手牌。对你所有层的前排单位施加 [corruption] [effect1.status0.power]。",
+        "spanish": "Añade <b>Luz de la Pira</b> a tu mano. Añade [corruption] [effect1.status0.power] a tu primera unidad de cada piso.",
+        "chinese_traditional": "將<b>火堆之光</b>加入手牌。對所有樓層前排友方單位施加[corruption][effect1.status0.power]。",
+        "korean": "<b>화로의 빛</b> 카드를 패에 추가합니다. 모든 층의 내 전열 유닛에 [corruption] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "手札に<b>炉の光</b>を追加する。すべてのフロアの前列の自軍ユニットに[corruption] [effect1.status0.power]を付与する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddBattleCard",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "targetIgnoreBosses": true,
+          "paramInt": 3,
+          "additionalParamInt": 1,
+          "paramCardPool": "TFB_PyreAttackPool"
+        },
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "front_in_all_rooms",
+          "targetTeamType": "monsters",
+          "targetIgnoreBosses": true,
+          "paramStatusEffects": [
+            {
+              "statusId": "corruption",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 1555,
+  "validBossAttackPhase": "both",
+  "isMiniboss": true,
+  "deathType": "none",
+  "ascendsTrainAutomatically": false,
+  "attackDamage": 3,
+  "attackTeleportsToDefender": false,
+  "bossTitanAffinity": "dominion",
+  "statusEffectImmunities": [
+    "silenced"
+  ],
+  "subtypeKeys": [
+    "SubtypesData_FinalBoss",
+    "SubtypesData_BossDominion",
+    "SubtypesData_BossAll"
+  ],
+  "characterChatterData": "Boss9_Dominion_ChatterData",
+  "artistAttribution": "Luke Banke"
+}

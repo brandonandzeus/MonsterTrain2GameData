@@ -1,0 +1,99 @@
+{
+  "id": "WeaponsCache",
+  "name": "Weapons Cache",
+  "nameKey": {
+    "key": "CardData_nameKey-b250b91f4ca86937-1055a05c92ba67040902d93c7dc91058-v2",
+    "english": "Weapons Cache",
+    "french": "Cache d'armes",
+    "german": "Waffentruhe",
+    "russian": "Тайник с оружием",
+    "portuguese": "Esconderijo de Armas",
+    "chinese": "武器库",
+    "spanish": "Alijo de armas",
+    "chinese_traditional": "武器秘藏",
+    "korean": "무기 보관함",
+    "japanese": "武器貯蔵庫"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-62cd3f096120e772-1055a05c92ba67040902d93c7dc91058-v2",
+    "english": "When you summon a friendly unit, draw an Equipment and apply -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember].",
+    "french": "Quand vous invoquez un allié, piochez un équipement et appliquez -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember].",
+    "german": "Wenn du eine verbündete Einheit beschwörst, ziehe eine Ausrüstung und wende -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember] an.",
+    "russian": "Призвав союзника, вытяните снаряжение. Оно получит -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember].",
+    "portuguese": "Ao invocar uma unidade aliada, compra um Equipamento e aplica -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember].",
+    "chinese": "召唤友方单位时，抽一张装备牌并使其获得 -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember]。",
+    "spanish": "Cuando invocas a una unidad aliada, roba un equipo y añade -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember].",
+    "chinese_traditional": "當你召喚一個友方單位時，抽一張裝備牌並施加-[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember]。",
+    "korean": "아군 유닛을 소환할 때, 장비 카드를 1장 뽑고 -[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember]을 적용합니다.",
+    "japanese": "味方ユニットを召喚したとき、装備品をドローし、-[effect0.upgrade.charactertrigger0.effect0.upgrade.costreduction][ember]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-026d3d70543e2c52-1055a05c92ba67040902d93c7dc91058-v2",
+      "english": "“Although I do not know who forged these weapons, I do know the Skull Crusher’s armory always seemed to know when I needed them most.” —Tales of the Inferno ",
+      "french": "<nobr>« J'ai</nobr> beau ne pas savoir qui a forgé ces armes, l'armurerie du Brise-crânes paraissait toujours savoir quand j'en avais le plus besoin. » — Récits du Brasier ",
+      "german": "„Ich weiß zwar nicht, wer diese Waffen geschmiedet hat, aber ich weiß, dass die Waffenkammer des Schädelquetschers immer genau wusste, wann ich sie am dringendsten brauchte.“ – Geschichten des Infernos ",
+      "russian": "«Мне неизвестно, чья это работа, но на «Крушителе черепов» всегда можно отыскать оружие в самый нужный момент». — «Сказания Адского пламени». ",
+      "portuguese": "“Embora eu não saiba quem forjou essas armas, sei que o arsenal do Triturador de Crânios sempre parecia saber quando eu mais precisava delas.” — Contos do Inferno ",
+      "chinese": "“我虽不知道是谁铸造了这些武器，但我知道碎颅者的军械库似乎永远知道我何时最需要它们。”—《地狱的故事》 ",
+      "spanish": "«Aunque ignoro quién forjó estas armas, el arsenal de Rompecráneos siempre parecía saber cuándo las necesitaba». —Historias del Infierno ",
+      "chinese_traditional": "「雖然我不知道是誰鍛造了這些武器，但我肯定碎顱者的軍械庫似乎總是在我最需要的時候出現。」——《煉獄傳說》 ",
+      "korean": "\"이 무기들을 누가 만들었는지는 알지 못하지만, 해골 분쇄자의 무기고는 내가 무기가 언제 가장 필요할지 항상 알고 있는 것 같았다.\" - 지옥의 이야기 ",
+      "japanese": "「これらの武器を誰が鍛造したのかは知らないが、スカルクラッシャーの武器庫は、私がそれを最も必要とする時をいつも知っていたようだ」—『地獄の物語』 "
+    }
+  ],
+  "cost": 2,
+  "cardType": "room",
+  "rarity": "uncommon",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_WeaponsCache.prefab",
+    "m_AssetGUID": "04535ac3b20e66942affc90d68d80436"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAttachTrainRoomAttachment",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "paramCardUpgradeData": {
+        "id": "WeaponsCache",
+        "triggerUpgrades": [
+          {
+            "trigger": "on_spawn",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "WeaponsCache_ReduceCost",
+                  "allowSecondaryTooltipPlacement": false,
+                  "useUpgradeHighlightTextTags": false,
+                  "costReduction": 2,
+                  "xCostReduction": 2
+                }
+              },
+              {
+                "effectStateName": "CardEffectDrawType",
+                "targetMode": "draw_pile",
+                "targetCardType": "equipment",
+                "targetCardSelectionMode": "random_to_hand",
+                "paramInt": 1
+              }
+            ],
+            "hideVisualAndIgnoreSilence": true
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "additionalTooltips": [
+        {
+          "trigger": "on_spawn",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Genevieve Bega"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "Echoes_FriendlyUnitsGetCorruptionOnStrike",
+  "name": "Die By the Sword",
+  "nameKey": {
+    "key": "MutatorData_nameKey-531dc6c9bc56f3e0-5fa1f05a4d910a642928856139c44597-v2",
+    "english": "Die By the Sword",
+    "french": "Mort par l'épée",
+    "german": "Tod durch Schwert",
+    "russian": "Смерть от меча",
+    "portuguese": "Morte pela Espada",
+    "chinese": "死于剑下",
+    "spanish": "Muerte por acero",
+    "chinese_traditional": "死於劍下",
+    "korean": "칼에 죽다",
+    "japanese": "剣とともに死す"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-b9847e166a23be17-5fa1f05a4d910a642928856139c44597-v2",
+    "english": "Friendly units gain [corruption] [effect0.trigger0.effect0.status0.power] on [strike].",
+    "french": "Les alliés gagnent [corruption] [effect0.trigger0.effect0.status0.power] lors d'une [strike].",
+    "german": "Verbündete Einheiten erhalten [corruption] [effect0.trigger0.effect0.status0.power] beim [strike].",
+    "russian": "[strike]: на союзников накладывается [corruption] х[effect0.trigger0.effect0.status0.power].",
+    "portuguese": "As unidades aliadas recebem [corruption] [effect0.trigger0.effect0.status0.power] ao [strike].",
+    "chinese": "友方单位 [strike] 时获得 [corruption] [effect0.trigger0.effect0.status0.power]。",
+    "spanish": "Las unidades aliadas añaden [corruption] [effect0.trigger0.effect0.status0.power] al <b>Impactar</b>.",
+    "chinese_traditional": "友方單位在[strike]時獲得[corruption][effect0.trigger0.effect0.status0.power]。",
+    "korean": "[strike] 시 아군 유닛들이 [corruption] [effect0.trigger0.effect0.status0.power] 효과를 획득합니다.",
+    "japanese": "[strike]時に味方ユニットが[corruption] [effect0.trigger0.effect0.status0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "additionalTooltips": [
+        {
+          "trigger": "on_attacking",
+          "style": "default",
+          "isTriggerTooltip": true
+        }
+      ],
+      "triggers": [
+        {
+          "descriptionKey": {
+            "key": "MutatorData_descriptionKey-4ee1cab4f943f0fc-5fa1f05a4d910a642928856139c44597-v2",
+            "english": "Gain [effect0.status0.power] [corruption].",
+            "french": "Octroie [effect0.status0.power] [corruption].",
+            "german": "Erhalte [effect0.status0.power] [corruption].",
+            "russian": "Накладывается [corruption] х[effect0.status0.power].",
+            "portuguese": "Recebe [effect0.status0.power] [corruption].",
+            "chinese": "获得 [effect0.status0.power] [corruption]。",
+            "spanish": "Añade [corruption] [effect0.status0.power].",
+            "chinese_traditional": "獲得[effect0.status0.power][corruption]。",
+            "korean": "[effect0.status0.power] [corruption] 효과를 획득합니다.",
+            "japanese": "[effect0.status0.power] [corruption]を得る。"
+          },
+          "trigger": "on_attacking",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramStatusEffects": [
+                {
+                  "statusId": "corruption",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "monsters"
+    }
+  ],
+  "boonValue": -7
+}

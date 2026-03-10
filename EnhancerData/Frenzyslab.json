@@ -1,0 +1,87 @@
+{
+  "id": "SoulSavior_UnitUpgradeMultistrike",
+  "name": "Frenzyslab",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-df71d10fc8084e03-3952b36e10a2c344bbeeb7092ec21b9a-v2",
+    "english": "Frenzyslab",
+    "french": "Gemme de frénésie",
+    "german": "Platte der Raserei",
+    "russian": "Пласт неистовства",
+    "portuguese": "Placa do Frenesi",
+    "chinese": "狂乱石板",
+    "spanish": "Losa de frenesí",
+    "chinese_traditional": "狂躁石板",
+    "korean": "광란의 서판",
+    "japanese": "狂乱の原石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-9a289d81ef807d78-3952b36e10a2c344bbeeb7092ec21b9a-v2",
+    "english": "Upgrade a unit with [multistrike] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec [multistrike] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit [multistrike] [effect0.upgrade.status0.power].",
+    "russian": "Усиление бойца: [multistrike] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com [multistrike] [effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 [multistrike] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con [multistrike] [effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[multistrike][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드함과 동시에 [multistrike] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[multistrike] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "rare",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "SoulSavior_AddMultistrike",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-a0661f7fa3a189f4-145557e7b8a026a48aa8001e728a213f-v2",
+          "english": "Frenzyslab",
+          "french": "Gemme de frénésie",
+          "german": "Platte der Raserei",
+          "russian": "Пласт неистовства",
+          "portuguese": "Placa do Frenesi",
+          "chinese": "狂乱石板",
+          "spanish": "Losa de frenesí",
+          "chinese_traditional": "狂躁石板",
+          "korean": "광란의 서판",
+          "japanese": "狂乱の原石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-a8e5ab458bbb7a7e-145557e7b8a026a48aa8001e728a213f-v2",
+          "english": "Gain [multistrike] [status0.power].",
+          "french": "Octroie [multistrike] [status0.power].",
+          "german": "Erhalte [multistrike] [status0.power].",
+          "russian": "Дается [multistrike] х[status0.power].",
+          "portuguese": "Recebe [multistrike] [status0.power].",
+          "chinese": "获得 [multistrike] [status0.power]。",
+          "spanish": "Añade [multistrike] [status0.power].",
+          "chinese_traditional": "獲得[multistrike][status0.power]。",
+          "korean": "[multistrike] [status0.power] 효과를 획득합니다.",
+          "japanese": "[multistrike] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "multistrike",
+            "count": 2
+          }
+        ],
+        "filters": [
+          {
+            "id": "OnlyAttackingUnits",
+            "cardType": "monster",
+            "excludeNonAttackingMonsters": true
+          },
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

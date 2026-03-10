@@ -1,0 +1,72 @@
+{
+  "id": "JarOfFrost",
+  "name": "Crystalline Seeds",
+  "nameKey": {
+    "key": "CardData_nameKey-7c16eb3d46f415bc-92b031bb609fb70429201b3455d2aa36-v2",
+    "english": "Crystalline Seeds",
+    "french": "Graines cristallines",
+    "german": "Kristallisierte Samen",
+    "russian": "Кристаллические семена",
+    "portuguese": "Sementes Cristalinas",
+    "chinese": "结晶之种",
+    "spanish": "Semillas cristalinas",
+    "chinese_traditional": "晶體種子",
+    "korean": "결정체 씨앗",
+    "japanese": "水晶の種"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-7af1bedb2de3ea46-92b031bb609fb70429201b3455d2aa36-v2",
+    "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+    "french": "Inflige <b>Gelure</b> [effect0.status0.power] aux unités ennemies.",
+    "german": "Wende [effect0.status0.power] <b>Frostschaden</b> auf gegnerische Einheiten an.",
+    "russian": "Накладывает [frostbite] х[effect0.status0.power] на всех врагов.",
+    "portuguese": "Causa <b>Friagem</b> [effect0.status0.power] às unidades inimigas.",
+    "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。",
+    "spanish": "Añade [frostbite] [effect0.status0.power] a las unidades enemigas.",
+    "chinese_traditional": "對敵方單位施加[frostbite][effect0.status0.power]。",
+    "korean": "적 유닛들에게 [frostbite] [effect0.status0.power] 효과를 적용합니다.",
+    "japanese": "敵ユニットに[frostbite] [effect0.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-358095c11dc866d0-92b031bb609fb70429201b3455d2aa36-v2",
+      "english": "I’ve been able to capture shards of ice from the now-frozen sea and distill them into seed crystals, making the instantaneous freezing of objects even easier.",
+      "french": "J'ai été en mesure de récupérer des éclats de glaces de la mer (aujourd'hui) gelée et de les distiller afin d'obtenir des cristaux d'essence, ce qui permet de congeler instantanément des choses bien plus facilement.",
+      "german": "Ich habe einige Eissplitter aus der nun gefrorenen See ergattert und sie zu Samenkristallen destilliert. Damit ist es noch einfacher, Objekte in Sekundenschnelle einzufrieren.",
+      "russian": "Мне удалось добыть осколки льда из замерзшего моря и преобразовать их в «семена», чтобы можно было еще проще мгновенно замораживать предметы.",
+      "portuguese": "Consegui capturar fragmentos de gelo do mar agora congelado e destilá-los em sementes cristalinas, facilitando ainda mais o congelamento instantâneo de objetos.",
+      "chinese": "如今海已经冻结，我已经掌握了如何采掘冰块碎片，并将其蒸馏成结晶之种的技术。这样一来，想要瞬间冷冻什么东西就容易多了。",
+      "spanish": "He conseguido capturar fragmentos de hielo del mar ahora congelado y destilarlos en cristales semilla, lo que facilita aún más congelar objetos instantáneamente.",
+      "chinese_traditional": "我已經能夠從現在冰凍的海洋中捕獲冰碎片，並將它們提煉成種子晶體，進而更容易地使物體瞬間凍結。",
+      "korean": "얼어붙은 바다에서 건져 올린 얼음 조각을 증류해 만든 모결정으로 원하는 물건을 쉽고 빠르게 얼릴 수 있다.",
+      "japanese": "凍りついた海の氷の欠片を回収し、種の水晶を蒸留することに成功した。これでものを瞬時に凍結させるのがより簡単になった。"
+    }
+  ],
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_CrystallineSeeds.prefab",
+    "m_AssetGUID": "83956988997215641a7c21bff6c27c8e"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "paramStatusEffects": [
+        {
+          "statusId": "poison",
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "John Lee"
+}

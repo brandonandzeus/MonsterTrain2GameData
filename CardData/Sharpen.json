@@ -1,0 +1,86 @@
+{
+  "id": "Sharpen",
+  "name": "Sharpen",
+  "nameKey": {
+    "key": "CardData_nameKey-7654bc7dfea23fb3-68ca3acafc6f4de4b907525dd8c0d88b-v2",
+    "english": "Sharpen",
+    "french": "Aiguisoir",
+    "german": "Schärfen",
+    "russian": "Заточка",
+    "portuguese": "Afiar",
+    "chinese": "磨砺武器",
+    "spanish": "Afilar",
+    "chinese_traditional": "磨礪",
+    "korean": "날 갈기",
+    "japanese": "研磨"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-f257e56d71769740-68ca3acafc6f4de4b907525dd8c0d88b-v2",
+    "english": "Apply +[effect0.upgrade.bonusdamage][attack] and [spikes] [effect1.status0.power].",
+    "french": "Confère +[effect0.upgrade.bonusdamage][attack] et <b>Épines</b> [effect1.status0.power].",
+    "german": "Wende +[effect0.upgrade.bonusdamage][attack] und [effect1.status0.power] <b>Dornen</b> an.",
+    "russian": "Даются +[effect0.upgrade.bonusdamage][attack] и [spikes]  x[effect1.status0.power].",
+    "portuguese": "Concede +[effect0.upgrade.bonusdamage] de [attack] e <b>Espinhos</b> [effect1.status0.power].",
+    "chinese": "获得 +[effect0.upgrade.bonusdamage][attack]，[spikes] [effect1.status0.power]。",
+    "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y +[spikes] [effect1.status0.power].",
+    "chinese_traditional": "施加+[effect0.upgrade.bonusdamage][attack]和[spikes][effect1.status0.power]。",
+    "korean": "+[effect0.upgrade.bonusdamage][attack] 및 [spikes] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "+[effect0.upgrade.bonusdamage][attack]と[spikes] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a5822a1420d5cfb8-68ca3acafc6f4de4b907525dd8c0d88b-v2",
+      "english": "I’ve found discarded Hollow armor serves as a perfect tool to sharpen dull weapons.",
+      "french": "J'ai découvert que les armures abandonnées sont parfaites pour aiguiser les armes émoussées.",
+      "german": "Wie ich lernte, eignen sich abgeworfene Rüstungsteile der Hüllen perfekt zum Schärfen stumpfer Waffen.",
+      "russian": "Как выяснилось, оставшаяся после Пустых броня отлично подходит для заточки оружия.",
+      "portuguese": "Descobri que a Armadura Oca descartada serve como uma ferramenta perfeita para afiar armas cegas.",
+      "chinese": "我发现，被丢弃的空灵护甲可以当做磨砺武器的完美工具。",
+      "spanish": "He descubierto que la armadura abandonada de los huecos es una herramienta perfecta para afilar armas.",
+      "chinese_traditional": "我發現沒人要的空心人盔甲是磨利鈍化武器的完美工具。",
+      "korean": "버려진 공허한 존재의 갑옷이 무딘 무기를 갈아낼 때 완벽한 도구가 될 수 있음을 발견했다.",
+      "japanese": "破棄されたホロウの鎧は、切れ味が鈍った武器を研ぐものとして最適であることに気づいた。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassAwoken",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Sharpen.prefab",
+    "m_AssetGUID": "89fbf26faa2dc224cafa5647c48471e9"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramCardUpgradeData": {
+        "id": "Sharpen",
+        "bonusDamage": 6
+      },
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_Buff_Attack_PS.prefab",
+          "m_AssetGUID": "75491630f33039343baa202d7f6f7a30"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "spikes",
+          "count": 6
+        }
+      ],
+      "paramInt": 100
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Gary Laib"
+}

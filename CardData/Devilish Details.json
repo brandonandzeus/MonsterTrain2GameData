@@ -1,0 +1,114 @@
+{
+  "id": "DevilishDetails",
+  "name": "Devilish Details",
+  "nameKey": {
+    "key": "CardData_nameKey-900354aecfaa6a74-3c390bd415a9a95498db797a4b03dbf4-v2",
+    "english": "Devilish Details",
+    "french": "Détails diaboliques",
+    "german": "Teuflische Details",
+    "russian": "Дьявол в деталях",
+    "portuguese": "Detalhes Diabólicos",
+    "chinese": "邪恶交易",
+    "spanish": "Detalles diabólicos",
+    "chinese_traditional": "魔鬼的細節",
+    "korean": "흉악한 제안",
+    "japanese": "悪魔の取り引き"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-dcf1a01d2dd00f7d-3c390bd415a9a95498db797a4b03dbf4-v2",
+    "english": "Gain [effect1.power][dragonshoardicon]. Your Pyre takes [effect0.power] damage.",
+    "french": "Confère [effect1.power][dragonshoardicon]. Votre Brasier subit <nobr>[effect0.power] DGT.</nobr>",
+    "german": "Erhalte [effect1.power][dragonshoardicon]. Deine Höllenglut erleidet [effect0.power] Schaden.",
+    "russian": "Дает [effect1.power][dragonshoardicon]. Пекло получает [effect0.power] урона.",
+    "portuguese": "Recebe [effect1.power] [dragonshoardicon]. Sua Pira sofre [effect0.power] de dano.",
+    "chinese": "获得 [effect1.power][dragonshoardicon]。你的薪火受到 [effect0.power] 点伤害。",
+    "spanish": "Obtienes [effect1.power][dragonshoardicon]. Tu Pira sufre [effect0.power] de daño.",
+    "chinese_traditional": "獲得[effect1.power][dragonshoardicon]。你的火堆受到[effect0.power]點傷害。",
+    "korean": "[effect1.power][dragonshoardicon]를 획득합니다. 화로가 [effect0.power]의 피해를 받습니다.",
+    "japanese": "[effect1.power][dragonshoardicon]を得る。自軍の炉が[effect0.power]のダメージを受ける。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-d79735c4b199bb75-3c390bd415a9a95498db797a4b03dbf4-v2",
+      "english": "“Nothing is off the market, not even the Pyre itself.”",
+      "french": "<nobr>« Tout</nobr> est à vendre, y compris le Brasier <nobr>lui-même. »</nobr>",
+      "german": "„Nichts ist vom Markt. Nicht einmal die Höllenglut selbst.“",
+      "russian": "«Купить можно все. Даже Пекло».",
+      "portuguese": "“Tudo pode ser vendido, até mesmo a própria Pira.”",
+      "chinese": "“一切皆可以明码标价，哪怕是薪火本身。”",
+      "spanish": "«Todo está a la venta, incluso la misma Pira».",
+      "chinese_traditional": "「任何東西都有市場，甚至連火堆本身也不例外。」",
+      "korean": "“시장에 나오지 않는 물건은 없다, 화로도 예외는 아니다.”",
+      "japanese": "「取り引きの対象にならないものはない。炉でさえもな」"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassPyreborne",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_DevilishDetails.prefab",
+    "m_AssetGUID": "1250a24dd94740f49925f812f1c13f28"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "pyre",
+      "targetTeamType": "none",
+      "suppressPyreRoomFocus": true,
+      "paramInt": 8,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/Pyreborne/DevilishDetails/FX_DevilishDetails.prefab",
+          "m_AssetGUID": "1c89a590525007347b17fce04abe557e"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAdjustDragonsHoard",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "additionalTooltips": [
+        {
+          "descriptionKey": {
+            "key": "HudTooltip_DragonsHoardInactive_Body",
+            "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+            "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+            "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+            "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+            "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+            "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+            "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+            "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+            "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+            "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+          },
+          "titleKey": {
+            "key": "HudTooltip_DragonsHoard_Title",
+            "english": "[dragonshoardicon]Dragon's Hoard",
+            "french": "[dragonshoardicon]Trésor du dragon",
+            "german": "[dragonshoardicon]Drachenschatz",
+            "russian": "[dragonshoardicon] Драконий клад",
+            "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+            "chinese": "[dragonshoardicon]龙族宝藏",
+            "spanish": "[dragonshoardicon]Tesoro de dragón",
+            "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+            "korean": "[dragonshoardicon]드래곤의 재보",
+            "japanese": "竜の財宝[dragonshoardicon]"
+          },
+          "style": "default"
+        }
+      ],
+      "paramInt": 3
+    }
+  ],
+  "unlockLevel": 10,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

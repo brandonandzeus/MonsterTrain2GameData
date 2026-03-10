@@ -1,0 +1,129 @@
+{
+  "id": "DigDeep",
+  "name": "Dig Deep",
+  "nameKey": {
+    "key": "CardData_nameKey-920a8053ca1af999-3e386ef0f79f1fb4896f1fa85aea5f9c-v2",
+    "english": "Dig Deep",
+    "french": "Recherche en profondeur",
+    "german": "Tief hinab",
+    "russian": "Глубокий окоп",
+    "portuguese": "Cavando Fundo",
+    "chinese": "深度挖掘",
+    "spanish": "De las profundidades",
+    "chinese_traditional": "深挖",
+    "korean": "깊은 굴",
+    "japanese": "深淵へ"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-99f540179a1bd8b7-3e386ef0f79f1fb4896f1fa85aea5f9c-v2",
+    "english": "[spawn] [effect0.power]. For every [trait0.tertiarypower] cards in your deck [spawn] [trait0.power] more.",
+    "french": "Génère [effect0.power], plus [trait0.power] par tranche de [trait0.tertiarypower] cartes dans le deck.",
+    "german": "[spawn] [effect0.power]. Für alle [trait0.tertiarypower] Karten in deinem Deck [spawn] [trait0.power] mehr.",
+    "russian": "[spawn] х[effect0.power]. За каждую [trait0.tertiarypower] карту в вашей колоде дает дополнительно [spawn] х[trait0.power].",
+    "portuguese": "[spawn] [effect0.power]. Para cada [trait0.tertiarypower] cartas em seu deck, <b>Convoque</b> mais [trait0.power].",
+    "chinese": "[spawn] [effect0.power]。你的卡组每有 [trait0.tertiarypower] 张牌，再[spawn] [trait0.power]。",
+    "spanish": "[spawn] [effect0.power]. Por cada [trait0.tertiarypower] cartas en tu mazo, <b>Genera</b> [trait0.power] más.",
+    "chinese_traditional": "[spawn][effect0.power]。你牌組中每張[trait0.tertiarypower]牌，_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x000D_\n都可額外獲得[spawn][trait0.power]。",
+    "korean": "[spawn] [effect0.power]. 덱의 카드 [trait0.tertiarypower]장당 추가로 [trait0.power]회 [spawn]합니다.",
+    "japanese": "[spawn] [effect0.power]。デッキ内のカード[trait0.tertiarypower]枚につき、さらに[spawn] [trait0.power]。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-f64aa6cea8d201fd-3e386ef0f79f1fb4896f1fa85aea5f9c-v2",
+      "english": "“Come sit with us in the shade. Don’t worry, we won’t hurt you.”",
+      "french": "<nobr>« Viens</nobr> t'asseoir avec nous à l'ombre. Ne t'inquiète pas, on ne te fera pas de <nobr>mal. »</nobr>",
+      "german": "„Komm, setz dich zu uns in den Schatten. Keine Angst, wir tun dir nichts.“",
+      "russian": "«Присядь с нами в темноте. Не бойся, мы тебя не тронем».",
+      "portuguese": "“Venha se sentar conosco na sombra. Não se preocupe, não vamos machucar você.”",
+      "chinese": "“和我们一起在树荫下坐会吧。别担心，我们不会伤害你。”",
+      "spanish": "«Ven a sentarte a la sombra con nosotros. No te preocupes, no te haremos daño».",
+      "chinese_traditional": "「來跟我們一起坐在樹蔭下吧。別擔心，我們不會傷害你的。」",
+      "korean": "“그늘로 와서 앉아. 걱정 마, 해치지 않을 테니까.”",
+      "japanese": "「おいで、影の中で一緒に座ろう。安心して、傷つけたりしないから」"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassUnderlegion",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_DigDeep.prefab",
+    "m_AssetGUID": "b6bb3e9ee05851e4486bfadd7327086e"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitScalingStatusEffectPerPile",
+      "paramStatusEffects": [
+        {
+          "statusId": "horde",
+          "count": 0
+        }
+      ],
+      "paramInt": 1,
+      "paramInt3": 10,
+      "paramBool": true,
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonsterOrAddStatusEffect",
+      "targetMode": "room",
+      "targetTeamType": "monsters",
+      "targetCharacterSubtype": "SubtypesData_Horde",
+      "paramCharacterData": {
+        "id": "MonsterFunguy",
+        "nameKey": {
+          "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+          "english": "Funguy",
+          "french": "Champote",
+          "german": "Fungus",
+          "russian": "Грибоец",
+          "portuguese": "Fungo",
+          "chinese": "蘑菇人",
+          "spanish": "Lustrongo",
+          "chinese_traditional": "真菌人",
+          "korean": "균사체",
+          "japanese": "ファンガイ"
+        },
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+          "m_AssetGUID": "fe7cd97536db857489cc2e44c9f58c6b"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "size": 1,
+        "health": 4,
+        "attackDamage": 3,
+        "subtypeKeys": [
+          "SubtypesData_FunGuy",
+          "SubtypesData_Shroom",
+          "SubtypesData_Horde"
+        ],
+        "characterChatterData": "UnderlegionShroomFemaleChatterData"
+      },
+      "paramStatusEffects": [
+        {
+          "statusId": "horde",
+          "count": 1
+        }
+      ],
+      "additionalTooltips": [
+        {
+          "trigger": "card_monster_played",
+          "style": "default",
+          "isTriggerTooltip": true,
+          "allowSecondaryPlacement": true
+        }
+      ]
+    }
+  ],
+  "unlockLevel": 9,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

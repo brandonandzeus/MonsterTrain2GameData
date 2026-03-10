@@ -1,0 +1,88 @@
+{
+  "id": "MonsterHulkingMass",
+  "name": "Hulking Mass",
+  "nameKey": {
+    "key": "CharacterData_nameKey-dd4be867f11710c9-7e0923ae54d41f54eb3d1cdca71c9672-v2",
+    "english": "Hulking Mass",
+    "french": "Mastodonte",
+    "german": "Schwere Masse",
+    "russian": "Верзила",
+    "portuguese": "Massa Corpulenta",
+    "chinese": "笨拙大块头",
+    "spanish": "Masa descomunal",
+    "chinese_traditional": "龐大軀體",
+    "korean": "거대 살덩어리",
+    "japanese": "ハルキング・マス"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-43b9cb65381c8018-7e0923ae54d41f54eb3d1cdca71c9672-v2",
+      "english": "“Don’t judge a book by its cover. I might not look like it but I have dancer’s feet. Literally.”",
+      "french": "<nobr>« Ne</nobr> vous fiez pas aux apparences. Je n'en ai peut-être pas l'air, mais j'ai des pieds de danseur. <nobr>Littéralement. »</nobr>",
+      "german": "„Der Schein kann trügen. Es sieht vielleicht nicht so aus, doch ich tanze meisterlich. Wirklich.“",
+      "russian": "«Не стоить судить о книге по обложке. С виду ни за что не догадаться, но у меня ноги танцора. В буквальном смысле».",
+      "portuguese": "“Não julgue um livro pela capa. Pode não parecer, mas tenho pés de bailarina. Literalmente.”",
+      "chinese": "“不要以貌取人。也许你们看不出来，但我确实有舞者的双脚。就是字面意思。”",
+      "spanish": "«Las apariencias engañan. Nadie lo diría, pero tengo pies de bailarín. Literalmente».",
+      "chinese_traditional": "「不要以貌取人。我雖然看起來不像，但我有舞者的腳。真的。」",
+      "korean": "\"겉모습만 보고 판단하지 마. 그렇지 않게 보일지 몰라도, 난 무용수처럼 발이 빠르다. 정말이야.\"",
+      "japanese": "「本を表紙で判断してはならない。そうは見えないかもしれないけれど、この脚はダンサーの脚なのだ。文字通りに」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_HukingMass.prefab",
+    "m_AssetGUID": "b589600ce7c92fb429a561511f4520f0"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "armor",
+      "count": 40
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-d5fdb994ad6e21a1-7e0923ae54d41f54eb3d1cdca71c9672-v2",
+        "english": "Gain [armor] [effect0.status0.power].",
+        "french": "Octroie [armor] [effect0.status0.power].",
+        "german": "Erhalte [armor] [effect0.status0.power].",
+        "russian": "Даетcя [armor] х[effect0.status0.power].",
+        "portuguese": "Recebe [armor] [effect0.status0.power].",
+        "chinese": "获得 [armor] [effect0.status0.power]。",
+        "spanish": "Añade [armor] [effect0.status0.power].",
+        "chinese_traditional": "獲得[armor][effect0.status0.power]。",
+        "korean": "[armor] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[armor] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_reanimated",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "armor",
+              "count": 40
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 3,
+  "health": 20,
+  "attackDamage": 15,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Monstrosity"
+  ],
+  "characterChatterData": "LazarusLeagueMonstrosityChatterData"
+}

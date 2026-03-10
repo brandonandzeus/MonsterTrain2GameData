@@ -1,0 +1,142 @@
+{
+  "id": "PyreHeartWyngh",
+  "name": "Wyngh's Spirit",
+  "nameKey": {
+    "key": "CharacterData_nameKey-a5bf53ab66c1bf5d-16ba6cf9b7fbcc54eae36d74fab90fbb-v2",
+    "english": "Wyngh's Spirit",
+    "french": "Esprit de Wyngh",
+    "german": "Wynghs Geist",
+    "russian": "Дух Винг",
+    "portuguese": "Espírito de Wyngh",
+    "chinese": "维格之魂",
+    "spanish": "Espíritu de Wyngh",
+    "chinese_traditional": "溫格之魂",
+    "korean": "윙흐의 정신",
+    "japanese": "ウィングの精神"
+  },
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Wyngh.prefab",
+    "m_AssetGUID": "a2917536f8cd347458e059e3af09a904"
+  },
+  "attackVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/PyreFX/Wyngh/FX_WynghPyreAttack.prefab",
+      "m_AssetGUID": "7a482a78175e5854497304ec61892e6c"
+    },
+    "spawnLocation": "character_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+      "m_AssetGUID": "b856194664a6e4b4da8f1c47c5a0e765"
+    },
+    "spawnLocation": "character_center"
+  },
+  "deathVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/PyreFX/Wyngh/FX_WynghPyreDeath.prefab",
+      "m_AssetGUID": "ccbffc4197614aa44b9cd41b62609811"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "relentless",
+      "count": 1
+    },
+    {
+      "statusId": "sweep",
+      "count": 1
+    },
+    {
+      "statusId": "immobile",
+      "count": 1
+    },
+    {
+      "statusId": "immune",
+      "count": 1
+    }
+  ],
+  "unitAbility": {
+    "id": "PyreHeartWynghAbility",
+    "nameKey": {
+      "key": "CardData_nameKey-b50fda43aedb0699-f9e614bc048bb3d46870339c740b0b31-v2",
+      "english": "Wyngh's Spirit",
+      "french": "Esprit de Wyngh",
+      "german": "Wynghs Geist",
+      "russian": "Дух Винг",
+      "portuguese": "Espírito de Wyngh",
+      "chinese": "维格之魂",
+      "spanish": "Espíritu de Wyngh",
+      "chinese_traditional": "溫格之魂",
+      "korean": "윙흐의 정신",
+      "japanese": "ウィングの精神"
+    },
+    "overrideDescriptionKey": {
+      "key": "CardData_overrideDescriptionKey-b38e6913fb05954c-f9e614bc048bb3d46870339c740b0b31-v2",
+      "english": "Restore the front friendly units on all floors to full health.",
+      "french": "Restaure tous les PV des alliés en 1re ligne à tous les niveaux.",
+      "german": "Stelle Gesundheit für die vorderen verbündeten Einheiten auf allen Ebenen wieder her.",
+      "russian": "Полностью восстанавливает здоровье передних союзников на каждом этаже.",
+      "portuguese": "Restaura completamente a vida das unidades aliadas na frente em todos os andares.",
+      "chinese": "为所有层的前排友方单位恢复所有生命值",
+      "spanish": "Restaura toda la salud de la primera unidad aliada de cada piso.",
+      "chinese_traditional": "為所有樓層前排友方單位恢復所有生命值。",
+      "korean": "모든 층의 전열 아군 유닛을 최대 체력까지 회복합니다.",
+      "japanese": "すべてのフロアの味方ユニットの体力を全回復する。"
+    },
+    "cardType": "spell",
+    "rarity": "common",
+    "effects": [
+      {
+        "effectStateName": "CardEffectHeal",
+        "targetMode": "front_in_all_rooms",
+        "targetTeamType": "monsters",
+        "paramInt": 999,
+        "appliedVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Spells/LunaCoven/GlitteringDraught/FX_HealLargeRevamp.prefab",
+            "m_AssetGUID": "c6381f8b769f2084493c517bfffa192c"
+          },
+          "spawnLocation": "character_center"
+        },
+        "appliedToSelfVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/Spells/Banished/Divinity/FX_DivinitySpell_Parent.prefab",
+            "m_AssetGUID": "27b13585661a4334db680cd18f5172b0"
+          },
+          "spawnLocation": "character_center"
+        }
+      }
+    ],
+    "triggers": [
+      {
+        "trigger": "on_cast",
+        "cardEffects": [
+          {
+            "effectStateName": "CardEffectRemoveAbility",
+            "targetMode": "pyre",
+            "targetTeamType": "none",
+            "suppressPyreRoomFocus": true,
+            "paramRelicData": "Echoes_PyreCanUseAbilityMultipleTimes"
+          }
+        ],
+        "triggerKeywordCardTextSuppressed": false
+      }
+    ],
+    "cooldownAfterActivated": 99,
+    "isUnitAbility": true,
+    "targetsRoom": false,
+    "initialKeyboardTarget": "front_friendly"
+  },
+  "size": 2,
+  "health": 1,
+  "canBeHealed": false,
+  "attackDamage": 1,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Pyre"
+  ],
+  "characterChatterData": "PyreHeartChatter",
+  "isPyreHeart": true
+}

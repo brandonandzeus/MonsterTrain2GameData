@@ -1,0 +1,112 @@
+{
+  "id": "RuneboundProtector",
+  "name": "Titan Sentry",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "uncommon",
+  "linkedClass": "ClassStygian",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_TitanSentry.prefab",
+    "m_AssetGUID": "f56c868a76602d74aac69f34f57ddc6f"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitLevelMonsterState",
+      "paramCardData": "RuneboundGuardian",
+      "paramTeamType": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterRuneboundProtector",
+        "nameKey": {
+          "key": "CharacterData_nameKey-92846007e35c90b8-95031c6e57ffb4841994d669ae1824a5-v2",
+          "english": "Titan Sentry",
+          "french": "Sentinelle du titan",
+          "german": "Titanen-Wachposten",
+          "russian": "Охрана Титана",
+          "portuguese": "Sentinela do Titã",
+          "chinese": "泰坦哨兵",
+          "spanish": "Centinela del titán",
+          "chinese_traditional": "泰坦哨兵",
+          "korean": "티탄 감시병",
+          "japanese": "タイタン・セントリー"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-b3b0dcb3569040fe-95031c6e57ffb4841994d669ae1824a5-v2",
+            "english": "Stationed all across the Sea floor, generations of these Guardians have been tasked with the protection of the Unnamed Titan. Their role was entirely ceremonial until now.",
+            "french": "Postés à travers tout le fond marin, ces gardiens ont été chargés de protéger le titan sans nom de génération en génération. Leur rôle était entièrement cérémoniel jusqu'à aujourd'hui.",
+            "german": "Viele Generationen dieser über den ganzen Meeresgrund verteilten Wachen waren bereits mit dem Schutz des namenlosen Titanen betraut. Bis vor Kurzem war es eine rein zeremonielle Aufgabe.",
+            "russian": "Эти стражи из поколения в поколение охраняют на дне моря Безымянного Титана. И до этого дня их роль была сугубо церемониальной.",
+            "portuguese": "Posicionados por todo o Mar, gerações destes Guardiões têm o dever de proteger o Titã Inominado. Sua função fora simbólica até agora.",
+            "chinese": "这些护卫驻扎在海底，世世代代肩负着守护无名者泰坦的任务。它们的角色纯粹是仪式性的，直到现在。",
+            "spanish": "Estos guardias se encuentran por todo el fondo marino, encargados durante generaciones de defender el titán Ignoto. Su función era puramente ceremonial hasta ahora.",
+            "chinese_traditional": "駐守在海床的各處，這些守護者的世世代代被賦予保護無名者泰坦的任務。他們的角色原本完全是儀式性的，但現在不同了。",
+            "korean": "해저에 주둔하는 이 수비대는 여러 세대에 걸쳐 이름 없는 티탄을 지키는 임무를 수행해왔다. 지금까지 이들의 역할은 의례에 불과했다.",
+            "japanese": "海底全体に駐留するこの守護者たちは、何世代にもわたって名もなき巨人を守る任務を負ってきた。彼らの役割は、これまでは完全に儀式的なものだった。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_TitanSentry.prefab",
+          "m_AssetGUID": "d7279822986abfc4cad92d8871863ddb"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-ee8c134207d91a83-95031c6e57ffb4841994d669ae1824a5-v2",
+              "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+              "french": "Inflige <b>Gelure</b> [effect0.status0.power] aux unités ennemies.",
+              "german": "Wende [effect0.status0.power] <b>Frostschaden</b> auf gegnerische Einheiten an.",
+              "russian": "Накладывает [frostbite] х[effect0.status0.power] на всех врагов.",
+              "portuguese": "Causa <b>Friagem</b> [effect0.status0.power] às unidades inimigas.",
+              "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。",
+              "spanish": "Añade [frostbite] [effect0.status0.power] a las unidades enemigas.",
+              "chinese_traditional": "對敵方單位施加[frostbite][effect0.status0.power]。",
+              "korean": "적 유닛들에게 [frostbite] [effect0.status0.power] 효과를 적용합니다.",
+              "japanese": "敵ユニットに[frostbite] [effect0.status0.power]を付与する。"
+            },
+            "trigger": "on_hit",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "heroes",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "poison",
+                    "count": 3
+                  }
+                ],
+                "paramInt": 100
+              }
+            ]
+          }
+        ],
+        "size": 2,
+        "health": 40,
+        "attackDamage": 0,
+        "subtypeKeys": [
+          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da",
+          "SubtypesData_BannerUnit"
+        ],
+        "characterChatterData": "StygianSirenChatterData_Male"
+      }
+    }
+  ],
+  "targetless": false,
+  "unlockLevel": 7,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Luke Banke"
+}

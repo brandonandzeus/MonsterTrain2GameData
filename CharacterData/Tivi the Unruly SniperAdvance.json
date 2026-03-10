@@ -1,0 +1,104 @@
+{
+  "id": "Boss_SoulSavior_R3_Unruly_SniperAdvance",
+  "name": "Tivi the Unruly SniperAdvance",
+  "nameKey": {
+    "key": "CharacterData_nameKey-cc4d4158566b8596-cb07a7d59cba76b44b70bb08c008f2d4-v2",
+    "english": "Tivi the Unruly",
+    "french": "Tivi l'Indocile",
+    "german": "Tivi der Ungezogene",
+    "russian": "Тиви Непокорный",
+    "portuguese": "Tivi, o Baderneiro",
+    "chinese": "任性者蒂维",
+    "spanish": "Tivi el Inquieto",
+    "chinese_traditional": "不羈的蒂維",
+    "korean": "무법자 티비",
+    "japanese": "悪童のティヴィー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-2e583f700eb875c2-cb07a7d59cba76b44b70bb08c008f2d4-v2",
+      "english": "Tivi, third Child of the Lifemother, inherited none the regal elegance of his mother. Instead, his mother’s insidious nature shaped him, granting a mischievous glint in his eyes, a sly smile, and an insatiable lust for trouble.",
+      "french": "Troisième enfant de Mère Nature, Tivi ne disposait pas de l'élégance majestueuse de sa mère. C'est au contraire la nature insidieuse de cette dernière qui le modela, lui donnant un regard espiègle, un sourire narquois et une envie insatiable de semer le chaos.",
+      "german": "Tivi, der dritte Spross der Lebensmutter, erbte nichts von der königlichen Eleganz seiner Mutter. Stattdessen prägte ihn ihr heimtückisches Naturell, weshalb er stets einen spitzbübischen Blick und ein hinterhältiges Lächeln im Gesicht trägt und ein notorischer Unruhestifter ist.",
+      "russian": "Тиви, третье Дитя Матери-природы, не унаследовал ни капли царственного изящества своей матери, но взял от нее коварную натуру: озорной блеск в глазах, хитрую ухмылку и бесконечную тягу к неприятностям.",
+      "portuguese": "Tivi, a terceira Criança da Genetriz, não herdou a elegância régia de sua mãe. Pelo contrário, a natureza insidiosa dela o moldou, conferindo aos seus olhos um brilho travesso, um sorriso malicioso e um desejo insaciável por problemas.",
+      "chinese": "生命之母的第三个孩子蒂维没有继承到母亲丝毫的雍容典雅。他母亲本性中阴险的一面塑造了他，令他目光狡黠，微笑狡诈，且每时每刻都想惹是生非。",
+      "spanish": "Tivi, tercer Hijo de la Madre Vida, no heredó la elegancia regia de su madre. En su lugar, fue su naturaleza traicionera la que le determinó su personalidad, otorgándole un brillo pícaro en la mirada, una sonrisa torva y un ansia insaciable de causar problemas.",
+      "chinese_traditional": "蒂維，生命之母的三子，絲毫未繼承母親那高貴優雅的氣質。反之，母親陰險的本性在他身上展露無遺——那眼中促狹的光芒、狡黠的笑容，以及對惹是生非的無盡渴望。",
+      "korean": "생명의 어머니의 셋째 아이 티비는, 어머니가 지닌 왕가의 우아함을 전혀 물려받지 못했다. 대신 어머니의 은밀하고 교활한 기질이 그를 빚었고, 그의 눈엔 장난스러운 번뜩임이, 입가엔 교활한 미소가, 그리고 골칫거리를 향한 끝없는 갈망이 자리하게 되었다.",
+      "japanese": "ライフマザーの第3子のティヴィーは、母の威厳のある気品を一切受け継がなかった。彼を形作ったのは母の狡猾な性質であり、いたずらっぽい目の輝き、狡猾な笑み、そして飽くなき厄介事への渇望が与えられたのだ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TivvyTheUnruly.prefab",
+    "m_AssetGUID": "10307ef0b8dc5624aa8c6326d1550c61"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "sniper",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-6d4b5e3e66f837be-cb07a7d59cba76b44b70bb08c008f2d4-v2",
+        "english": "[advance] the attacked unit.",
+        "french": "Fait <b>avancer</b> l'unité attaquée.",
+        "german": "Angegriffene Einheit: [advance].",
+        "russian": "[advance] атакованного бойца.",
+        "portuguese": "<b>Avança</b> a unidade atacada.",
+        "chinese": "使被攻击的单位 [advance]。",
+        "spanish": "<b>Avanza</b> a la unidad atacada.",
+        "chinese_traditional": "[advance]被攻擊的單位。",
+        "korean": "공격받은 유닛 하나를 [advance]시킵니다.",
+        "japanese": "攻撃されたユニットを[advance]させる。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        {
+          "effectStateName": "CardEffectFloorRearrange",
+          "targetMode": "last_attacked_character",
+          "targetTeamType": "monsters"
+        }
+      ]
+    }
+  ],
+  "bossActionGroups": [
+    {
+      "actions": [
+        {
+          "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+          "paramTeamType": "monsters"
+        }
+      ],
+      "numRepeats": 0
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 1500,
+    "endlessAttack": 16
+  },
+  "size": 5,
+  "health": 800,
+  "isOuterTrainBoss": true,
+  "validBossAttackPhase": "both",
+  "deathType": "large",
+  "attackDamage": 14,
+  "bossTitanAffinity": "lifemother",
+  "subtypeKeys": [
+    "SubtypesData_Boss",
+    "SubtypesData_BossAll",
+    "SubtypesData_SoulSavior_Region3_FlyingBoss"
+  ],
+  "characterChatterData": "Boss18_Tivvy_ChatterData",
+  "enemyRelicData": "Boss_Railforged_Region3_SniperAdvance",
+  "artistAttribution": "Herrick Ong"
+}

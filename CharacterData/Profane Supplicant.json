@@ -1,0 +1,82 @@
+{
+  "id": "MageT2_Junker",
+  "name": "Profane Supplicant",
+  "nameKey": {
+    "key": "CharacterData_nameKey-23c2fa54894d7a9e-e40eed10fd208f44ebd729c6b7c542bf-v2",
+    "english": "Profane Supplicant",
+    "french": "Suppliant profane",
+    "german": "Weltlicher Bittsteller",
+    "russian": "Обреченный молельщик",
+    "portuguese": "Suplicante Profano",
+    "chinese": "亵渎乞求者",
+    "spanish": "Suplicante profano",
+    "chinese_traditional": "褻瀆祈求者",
+    "korean": "불경한 탄원자",
+    "japanese": "冒涜の嘆願者"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-d7b314b34f22ae98-e40eed10fd208f44ebd729c6b7c542bf-v2",
+      "english": "Heaven’s bellringers, wielding a symbol of faith as their weapon, now toll their church bells as harbingers of Dominion.",
+      "french": "Les carillonneurs du paradis, dont l'arme est un symbole de foi, font désormais sonner les cloches de leurs églises en tant que messagers de Domination.",
+      "german": "Die Glöckner des Himmels, die ein Symbol des Glaubens als Waffe benutzen, läuten nun ihre Kirchenglocken als Herrschafts Vorboten.",
+      "russian": "Райские звонари, сделавшие символ веры своим оружием, теперь бьют в колокола как предвестники Доминиона.",
+      "portuguese": "Os tocadores de sinos do Céu, empunhando um símbolo de fé como arma, agora tocam os sinos de suas igrejas como arautos do Domínio.",
+      "chinese": "天堂的敲钟人，曾以他们的信仰为武器，如今他们敲响教堂的钟声，是预示着统御泰坦的到来。",
+      "spanish": "Los campaneros del Cielo, con el símbolo de su fe como arma, ahora tocan sus instrumentos como heraldos de Dominio.",
+      "chinese_traditional": "曾以信仰的象徵作為武器的天堂敲鐘人，如今擔任主宰的使者敲響他們教堂的鐘聲。",
+      "korean": "믿음의 상징을 무기처럼 휘두르는 천상의 종지기들은 이제 도미니온의 전조를 알리는 종소리를 울린다.",
+      "japanese": "天界の鐘撞きたちは、信仰のシンボルを武器として扱うようになった。今はドミニオンの使者として教会の鐘を鳴らし続けている。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ProfaneAcolyte.prefab",
+    "m_AssetGUID": "0cb68e5dfb143a047b059674bdc2c0c1"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-ce7ef6f2c42308de-e40eed10fd208f44ebd729c6b7c542bf-v2",
+        "english": "Add a [scourget2] card to the top of your draw pile.",
+        "french": "Ajoute une carte [scourget2] au-dessus de votre pioche.",
+        "german": "Füge deinem Ziehstapel eine [scourget2]-Karte hinzu.",
+        "russian": "Делает верхней картой вашей активной стопки [scourget2].",
+        "portuguese": "Adiciona uma carta de [scourget2] ao topo da sua pilha de compra.",
+        "chinese": "将一张 [scourget2] 卡牌置于你的抽牌堆顶部。",
+        "spanish": "Añade una carta [scourget2] como la primera de tu pila de robo.",
+        "chinese_traditional": "將一張[scourget2]牌加入你的抽牌堆頂部。",
+        "korean": "[scourget2] 카드를 사용 카드 더미 맨 위에 추가합니다.",
+        "japanese": "ドローの山の最上に[scourget2]カードを追加する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddBattleCard",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "paramInt": 5,
+          "paramCardPool": "JunkPoolT2"
+        }
+      ]
+    }
+  ],
+  "endlessBaselineStats": {
+    "endlessHealth": 6,
+    "endlessAttack": 4
+  },
+  "size": 2,
+  "health": 4,
+  "attackDamage": 3,
+  "subtypeKeys": [
+    "SubtypesData_AttackerT2"
+  ],
+  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Michaela Nienaber"
+}

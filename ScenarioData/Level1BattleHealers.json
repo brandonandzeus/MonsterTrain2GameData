@@ -1,0 +1,141 @@
+{
+  "id": "Level1BattleHealers",
+  "name": "Level1BattleHealers",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-b3169c0e54a1bdf0-0ded376484b0df64b82106973e04a43b-v2",
+    "english": "Dominion's Preservation",
+    "french": "Préservation de Domination",
+    "german": "Herrschafts Bewahrung",
+    "russian": "Лекари Доминиона",
+    "portuguese": "Preservação do Domínio",
+    "chinese": "统御泰坦的庇护",
+    "spanish": "Salvaguarda de Dominio",
+    "chinese_traditional": "主宰的保護",
+    "korean": "도미니온의 보호",
+    "japanese": "ドミニオンの保護"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-79b5cf7da163610b-0ded376484b0df64b82106973e04a43b-v2",
+    "english": "Healers blessed by Dominion bolster their allies. Attack in large bursts to achieve victory.",
+    "french": "Bénis par Domination, les guérisseurs soutiennent leurs alliés. Attaquez sans relâche pour remporter la victoire.",
+    "german": "Von Herrschaft gesegnete Heiler stärken ihre Verbündeten. Erringe den Sieg durch heftige Angriffe.",
+    "russian": "Благословленные Доминионом целители готовы поддержать своих союзников. Атакуйте большим числом, чтобы победить.",
+    "portuguese": "Os Curandeiros com a Bênção do Domínio fortalecem os próprios aliados. Realize ataques devastadores para alcançar a vitória.",
+    "chinese": "受统御泰坦祝福的治疗者会支援其盟友。造成爆发伤害才能取胜。",
+    "spanish": "Los sanadores benditos de Dominio fortalecen a sus aliados. Destrúyelos de un golpe para hacerte con la victoria.",
+    "chinese_traditional": "被主宰祝福的治療者能夠增強他們的盟友。集中火力發動攻擊才能取得勝利。",
+    "korean": "도미니온의 축복을 받은 치유사는 아군의 능력을 강화합니다. 강력한 일격으로 승리를 거머쥐세요.",
+    "japanese": "ドミニオンの祝福を受けた癒し手が敵軍を強化する。集中攻撃を仕掛けて勝利を収めよ。"
+  },
+  "bossVariant": {
+    "id": "Level1Bosses",
+    "bossVariants": [
+      "Boss_Level1_Basic",
+      "Boss_Level1_Defensive"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "ClericT1_OminousAcolyte",
+    "HeavyT1_Basic"
+  ],
+  "backgroundData": "CaveBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "requiredCovenant": "Covenant02_BattlesNewEnemies"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "HeavyT1_Basic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "waveMessageKey": {
+              "key": "ScenarioData_waveMessageKey-fcc99e0b4bb35d8c-0ded376484b0df64b82106973e04a43b-v2",
+              "english": "[respite]",
+              "french": "[respite]",
+              "german": "[respite]",
+              "russian": "[respite]",
+              "portuguese": "[respite]",
+              "chinese": "[respite]",
+              "spanish": "[respite]",
+              "chinese_traditional": "[respite]",
+              "korean": "[respite]",
+              "japanese": "[respite]"
+            },
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte",
+                "requiredCovenant": "Covenant07_NoRespite"
+              },
+              {
+                "characterData": "HeavyT1_Basic",
+                "requiredCovenant": "Covenant07_NoRespite"
+              }
+            ],
+            "hasWaveMessage": true
+          }
+        ]
+      },
+      {
+        "name": "Spawn Wave",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "ClericT1_OminousAcolyte"
+              },
+              {
+                "characterData": "Boss_Level1_Basic",
+                "useBossCharacter": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none"
+  }
+}

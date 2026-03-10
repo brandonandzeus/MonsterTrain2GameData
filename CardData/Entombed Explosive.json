@@ -1,0 +1,105 @@
+{
+  "id": "EntombedExplosive",
+  "name": "Entombed Explosive",
+  "cost": 1,
+  "cardType": "monster",
+  "rarity": "common",
+  "linkedClass": "ClassRemnant",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_EntombedExplosive.prefab",
+    "m_AssetGUID": "845445e4ecd46b14781bfe54950b530a"
+  },
+  "effects": [
+    {
+      "effectStateName": "CardEffectSpawnMonster",
+      "targetMode": "room",
+      "targetTeamType": "none",
+      "paramCharacterData": {
+        "id": "MonsterTombExploding",
+        "nameKey": {
+          "key": "CharacterData_nameKey-40ce699a854420ba-585e1205f6cc16144a303d0d7196ac7b-v2",
+          "english": "Entombed Explosive",
+          "french": "Explosif enseveli",
+          "german": "Eingebetteter Sprengstoff",
+          "russian": "Вплавленная взрывчатка",
+          "portuguese": "Explosivo Interior",
+          "chinese": "蜡封炸弹",
+          "spanish": "Explosivo contenido",
+          "chinese_traditional": "埋葬爆裂",
+          "korean": "매장된 폭발물",
+          "japanese": "体内爆弾"
+        },
+        "characterLoreTooltipKeys": [
+          {
+            "key": "CharacterData_data-883f04f9fe9c3ef4-585e1205f6cc16144a303d0d7196ac7b-v2",
+            "english": "A common, but unfortunate, occurrence for the Melting Remnant is the entrapment of inanimate objects within their melting wax. While often considered an inconvenience, the Wickless have utilized this phenomenon for more combat-focused applications.",
+            "french": "Les Éphémériens ont une fâcheuse tendance à recouvrir par accident les objets inanimés de leur cire fondue. Bien que cela soit le plus souvent vu comme un simple désagrément, les sans-mèche ont appris à exploiter le potentiel offensif de ce phénomène.",
+            "german": "Bei den Schmelzenden Relikten kommt es leider immer wieder vor, dass Gegenstände im schmelzenden Wachs eingeschlossen werden. Das ist zwar oft unpraktisch, aber die Dochtlosen nutzen diesen Umstand auch in Kämpfen.",
+            "russian": "Заточение в воске неподвижных объектов - обыденное, пусть и неприятное, явление для Тающих огарков. И хотя обычно это доставляет неудобства, Безфитильники научились использовать данный феномен в военных целях.",
+            "portuguese": "Uma ocorrência comum, e desafortunada, entre os Resquícios é a mistura de objetos inanimados na cera derretendo. Apesar de geralmente ser inconveniente, os Despaviados aproveitam este fenômeno para obter certas vantagens no combate.",
+            "chinese": "遗憾的是，对熔尸而言，它们时常会不慎将无机物质包裹在熔化的蜡油之中。尽管烛人认为这种事故会带来不便，但无芯者却学会了利用这种特性，将其运用在战斗之中。",
+            "spanish": "El Vestigio Titilante sufre el suceso común, aunque desafortunado, de la inclusión de objetos inanimados en su cera derretida. Normalmente, es una molestia, pero los sin mecha han encontrado aplicaciones en combate a este fenómeno.",
+            "chinese_traditional": "對熔化殘餘者來說，一個常見但不幸的現象是沒有生物體被困在他們熔化的蠟燭中。雖然這通常被認為是一種不便，但無芯者已經將這一點運用在了更多戰鬥相關的方面。",
+            "korean": "녹아 내린 자에게 흔하지만 안타까운 현상 중 하나는 녹은 밀랍 안에 무생물이 갇히는 것이다. 불편할 때도 있지만, 심지 없는 자는 이 상황을 응용해 좀 더 전투적으로 활용했다.",
+            "japanese": "蝋人族にとってよくある、しかし不幸な出来事は、溶けた蝋の中に無生物が閉じ込められることだ。これはよく不便なことだと考えられているが、ウィックレスはこの現象をより戦闘に重点を置いた用途に利用している。"
+          }
+        ],
+        "characterPrefabVariantRef": {
+          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_EntombedExplosive.prefab",
+          "m_AssetGUID": "65d779f727848004b97944d3796b85aa"
+        },
+        "impactVFX": {
+          "vfxPrefabRefLeft": {
+            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+          },
+          "spawnLocation": "character_center"
+        },
+        "triggers": [
+          {
+            "descriptionKey": {
+              "key": "CharacterData_descriptionKey-4c89ffab8280f20c-585e1205f6cc16144a303d0d7196ac7b-v2",
+              "english": "Deal [effect0.power] damage to the front enemy unit.",
+              "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'ennemi en 1re ligne.",
+              "german": "Füge der vordersten gegnerischen Einheit [effect0.power] Schaden zu.",
+              "russian": "Наносит переднему вражескому бойцу [effect0.power] урона.",
+              "portuguese": "Causa [effect0.power] de dano à unidade inimiga na frente.",
+              "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
+              "spanish": "Inflige [effect0.power] de daño a la primera unidad enemiga.",
+              "chinese_traditional": "對前排敵方單位造成[effect0.power]點傷害。",
+              "korean": "전열 적 유닛에게 [effect0.power]의 피해를 입힙니다.",
+              "japanese": "前列の敵ユニットに[effect0.power]のダメージを与える。"
+            },
+            "trigger": "on_death",
+            "effects": [
+              {
+                "effectStateName": "CardEffectDamage",
+                "targetMode": "front_in_room",
+                "targetTeamType": "heroes",
+                "paramInt": 65,
+                "appliedVFX": {
+                  "vfxPrefabRefLeft": {
+                    "m_debugName": "Assets/FX/FX_WaxImpact_PS.prefab",
+                    "m_AssetGUID": "16baf7e5a46cc9748b8b32ab3aabec0f"
+                  },
+                  "spawnLocation": "character_center"
+                }
+              }
+            ]
+          }
+        ],
+        "size": 1,
+        "health": 1,
+        "attackDamage": 0,
+        "deathSlidesBackwards": false,
+        "subtypeKeys": [
+          "SubtypesData_Tomb"
+        ],
+        "characterChatterData": "RemnantTombChatterData"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Andrew Vera"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "LazarusLeagueChampDevour1_Ability",
+  "name": "Devour",
+  "nameKey": {
+    "key": "CardData_nameKey-11c43bbf423c8266-3eb80bcc9d4323e4cb22d1f2eb89d576-v2",
+    "english": "Devour",
+    "french": "Dévoration",
+    "german": "Verschlingen",
+    "russian": "Поглощение",
+    "portuguese": "Devorar",
+    "chinese": "吞噬",
+    "spanish": "Voracidad",
+    "chinese_traditional": "吞噬",
+    "korean": "삼키기",
+    "japanese": "貪り"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-896202c77a74c373-3eb80bcc9d4323e4cb22d1f2eb89d576-v2",
+    "english": "Gain their [attack].",
+    "french": "Confère son [attack].",
+    "german": "Erhalte ihren [attack].",
+    "russian": "Забирает его [attack].",
+    "portuguese": "Recebe o [attack] dele.",
+    "chinese": "获得其 [attack]。",
+    "spanish": "Añade su [attack].",
+    "chinese_traditional": "獲得其[attack]。",
+    "korean": "그 유닛의 [attack]을 획득합니다.",
+    "japanese": "対象の[attack]を得る。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassLazarusLeague",
+  "effects": [
+    {
+      "effectStateName": "CardEffectTransferAttackFromUnit",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "targetCharacterSubtype": "SubtypesData_Assistant",
+      "paramInt": 1,
+      "additionalParamInt": 1
+    },
+    {
+      "effectStateName": "CardEffectSacrifice",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "targetCharacterSubtype": "SubtypesData_Assistant",
+      "paramSubtype": "SubtypesData_Assistant"
+    }
+  ],
+  "cooldownAfterActivated": 1,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly"
+}

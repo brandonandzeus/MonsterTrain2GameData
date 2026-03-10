@@ -1,0 +1,77 @@
+{
+  "id": "DantesInferno",
+  "name": "Dante's Inferno",
+  "nameKey": {
+    "key": "CardData_nameKey-8c45a3a23e8350f3-804c51e180ed164488651f23ac28fbb5-v2",
+    "english": "Dante's Inferno",
+    "french": "L'Enfer de Dante",
+    "german": "Dantes Inferno",
+    "russian": "Адское пламя Данте",
+    "portuguese": "Inferno de Dante",
+    "chinese": "但丁的地狱",
+    "spanish": "Infierno de Dante",
+    "chinese_traditional": "但丁煉獄",
+    "korean": "단테의 업화",
+    "japanese": "ダンテの地獄"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-c74ab8e7d274abd2-804c51e180ed164488651f23ac28fbb5-v2",
+    "english": "Deal damage to enemy units on all floors equal to [trait1.power]x the number of <b>Dante's Candle</b> cards in your deck.",
+    "french": "Inflige des dégâts aux unités ennemies à tous les niveaux valant [trait1.power]x le nombre de cartes <b>Bougie de Dante</b> dans le deck.",
+    "german": "Füge der gegnerischen Einheit auf allen Ebenen Schaden in Höhe von [trait1.power]x der Anzahl an <b>Dantes Kerze</b>-Karten in deinem Deck zu.",
+    "russian": "Наносит врагам со всех этажей урон, равный х[trait1.power] количеству <b>Свечей Данте</b> в вашей колоде.",
+    "portuguese": "Causa dano às unidades inimigas em todos os andares igual a [trait1.power]x o número de <b>Velas de Dante</b> no seu deck.",
+    "chinese": "对所有层中的所有敌方单位造成伤害，数值相当于你卡组中<b>但丁的蜡烛</b>卡牌数量的 [trait1.power]倍。",
+    "spanish": "Inflige tanto daño a las unidades enemigas en todos los pisos como las cartas de <b>Vela de Dante</b> de tu mazo x[trait1.power].",
+    "chinese_traditional": "對所有樓層的敵方單位造成傷害，數值等於你牌組中<b>但丁的蠟燭</b>卡牌數的[trait1.power]倍。",
+    "korean": "덱에 보유한 <b>단테의 촛대</b> 카드 수의 [trait1.power]배만큼 적 유닛들에게 피해를 줍니다.",
+    "japanese": "すべてのフロアの敵ユニットに[trait1.power]x デッキ内の<b>ダンテのロウソク</b>の枚数に等しいダメージを与える。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-a3397d1ebbac2fe3-804c51e180ed164488651f23ac28fbb5-v2",
+      "english": "Little is known of Dante, but what I’ve seen of his magic puts fear in my heart. I am just glad that he is on our side, for now.",
+      "french": "On sait peu de choses sur Dante, mais ce que j'ai vu de sa magie me terrifie. Je me félicite qu'il soit de notre côté, pour l'instant.",
+      "german": "Über Dante ist nur wenig bekannt. Doch was ich von seiner Magie kenne, erfüllt mich mit Angst. Ich bin froh, dass er vorerst auf unserer Seite steht.",
+      "russian": "О Данте известно немного, но его магия пробудила во мне настоящий страх. Хорошо, что он на нашей стороне, по крайней мере, пока.",
+      "portuguese": "Pouco se sabe sobre Dante, mas o que vi de sua magia enche meu coração de medo. Fico feliz que ele esteja, por enquanto, do nosso lado.",
+      "chinese": "我对但丁知之甚少，但我见识过他的可怕魔法。我很高兴他是帮我们的，至少现在是。",
+      "spanish": "Poco se sabe acerca de Dante, pero lo que he visto de su magia me aterra. Solo me alegro de que esté de nuestro lado... por ahora.",
+      "chinese_traditional": "關於但丁，人們知之甚少，但我見過他的魔法，那讓我心生恐懼。我很高興他站在我們這邊，至少暫時是這樣。",
+      "korean": "단테에 대해 알려진 바는 거의 없지만, 내가 본 그의 마법은 두려움을 안겨주었다. 적어도 지금은, 그가 우리 편에 있다는 것이 다행일 뿐이다.",
+      "japanese": "ダンテは謎に包まれた人物だ。しかし、彼の魔法は心に恐怖を落とす。今は味方であることに安心するばかりだ。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "rare",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_DantesInferno.prefab",
+    "m_AssetGUID": "1f4e77ae5330dd74bbde7cc52ad3085d"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitIgnoreArmor"
+    },
+    {
+      "traitStateName": "CardTraitScalingAddDamagePerCard",
+      "paramTrackedValue": "num_specific_cards_in_deck",
+      "paramInt": 10,
+      "traitIsRemovable": false,
+      "paramCardData": "DantesCandle",
+      "stackMode": "param_int"
+    },
+    {
+      "traitStateName": "CardTraitExhaustState"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "tower",
+      "targetTeamType": "heroes"
+    }
+  ],
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Leonardo Dionisi"
+}

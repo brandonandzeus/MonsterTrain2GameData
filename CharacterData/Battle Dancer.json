@@ -1,0 +1,75 @@
+{
+  "id": "MonsterBattleDancer",
+  "name": "Battle Dancer",
+  "nameKey": {
+    "key": "CharacterData_nameKey-f1e27228056033a0-eaf834cdd34b3134683287759551b7ee-v2",
+    "english": "Battle Dancer",
+    "french": "Danseur de combat",
+    "german": "Kampftänzer",
+    "russian": "Воин-танцор",
+    "portuguese": "Dançarina de Batalha",
+    "chinese": "战斗舞者",
+    "spanish": "Bailarín de combate",
+    "chinese_traditional": "戰鬥舞者",
+    "korean": "전투 무용수",
+    "japanese": "バトル・ダンサー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-de82fc3817770426-eaf834cdd34b3134683287759551b7ee-v2",
+      "english": "“I used to say, ‘dance is for everybody.’ Now, I say the same of death.”",
+      "french": "<nobr>« Avant,</nobr> je disais toujours \"la danse, c'est pour tout le monde\". Maintenant, je dis la même chose de la <nobr>mort. »</nobr>",
+      "german": "„Früher sagte ich immer: Der Tanz ist für alle da. Jetzt sage ich dasselbe über den Tod.“",
+      "russian": "«Раньше я повторял, что танцевать может каждый. Теперь я говорю то же самое о смерти».",
+      "portuguese": "“Eu costumava dizer: ‘a dança é para todos’. Agora, digo o mesmo sobre a morte.”",
+      "chinese": "“以前我会说，‘人人都可以起舞。’现在我会说，人人终有一死。”",
+      "spanish": "«Antes decía que el baile era para todo el mundo. Ahora digo lo mismo de la muerte».",
+      "chinese_traditional": "「我曾經說過，『舞蹈是屬於每個人的。』現在，我對死亡也要說同樣的話。」",
+      "korean": "\"오래 전에 '춤은 모든 이의 것이다'라고 말했지. 지금은 죽음에 관해서도 똑같이 말할 수 있어.\"",
+      "japanese": "「ダンスはみんなのものだ。しかしそれは死も同じだ」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_BattleDancer.prefab",
+    "m_AssetGUID": "6858a17eafd77464a9cce3ba6b34f25f"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-33958608087e0b87-eaf834cdd34b3134683287759551b7ee-v2",
+        "english": "Gain [valor] [effect0.status0.power].",
+        "french": "Octroie [valor] [effect0.status0.power].",
+        "german": "Erhalte [valor] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[valor].",
+        "portuguese": "Recebe [valor] [effect0.status0.power].",
+        "chinese": "获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power].",
+        "chinese_traditional": "獲得[valor][effect0.status0.power]。",
+        "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[valor] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "self",
+          "targetTeamType": "both",
+          "paramStatusEffects": [
+            {
+              "statusId": "valor",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 14,
+  "attackDamage": 7,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Angel"
+  ],
+  "characterChatterData": "BanishedBattleDancerChatterData"
+}

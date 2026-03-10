@@ -1,0 +1,53 @@
+{
+  "id": "SoulSavior_Region1Complete_1",
+  "name": "Anxious",
+  "nameKey": {
+    "key": "MutatorData_nameKey-bbc543fb47f47451-debbc24a510348648bb2f24df56f226e-v2",
+    "english": "Anxious",
+    "french": "Anxiété",
+    "german": "Ängstlich",
+    "russian": "Тревога",
+    "portuguese": "Ansioso",
+    "chinese": "焦虑",
+    "spanish": "Ansiedad",
+    "chinese_traditional": "焦慮",
+    "korean": "불안",
+    "japanese": "気がかり"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-65d319677b30ed8e-debbc24a510348648bb2f24df56f226e-v2",
+    "english": "Enemy units gain +[effect0.trigger0.effect0.power][attack] on [shift].",
+    "french": "Les ennemis gagnent +[effect0.trigger0.effect0.power][attack] lors d'un [shift].",
+    "german": "Gegnerische Einheiten erhalten +[effect0.trigger0.effect0.power][attack] beim [shift].",
+    "russian": "[shift]: врагам дается +[effect0.trigger0.effect0.power][attack].",
+    "portuguese": "Unidades inimigas ganham [effect0.trigger0.effect0.power][attack] ao usar [shift].",
+    "chinese": "敌方单位[shift]时，获得 +[effect0.trigger0.effect0.power][attack]。",
+    "spanish": "Las unidades enemigas añaden +[effect0.trigger0.effect0.power][attack] al <b>Desplazarse</b>.",
+    "chinese_traditional": "敵方單位在[shift]時獲得+[effect0.trigger0.effect0.power][attack]。",
+    "korean": "[shift] 시 적 유닛들이 +[effect0.trigger0.effect0.power][attack]을 획득합니다.",
+    "japanese": "[shift]時に敵ユニットが+[effect0.trigger0.effect0.power][attack]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_shift",
+          "effects": [
+            {
+              "effectStateName": "CardEffectBuffDamage",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramInt": 3
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "heroes"
+    }
+  ],
+  "boonValue": 4,
+  "disableInDailyChallenges": true,
+  "isSoulSaviorModeOnly": true
+}

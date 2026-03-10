@@ -1,0 +1,90 @@
+{
+  "id": "SoulSavior_RunDistance3",
+  "name": "Run Distance 3",
+  "nameKey": {
+    "key": "MutatorData_nameKey-d907ab518f052c19-a2372fff1283cf64fab75131069f9cad-v2",
+    "english": "Run Distance 3",
+    "french": "Distance de la partie 3",
+    "german": "Reisedistanz 3",
+    "russian": "Длина маршрута 3",
+    "portuguese": "Distância de Corrida 3",
+    "chinese": "一轮距离 3",
+    "spanish": "Distancia de partida 3",
+    "chinese_traditional": "闖關距離3",
+    "korean": "여정 거리 3",
+    "japanese": "運行距離3"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
+      "paramSourceTeam": "heroes",
+      "paramInt": 2000,
+      "paramCharacterSubtype": "SubtypesData_Boss",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
+      "paramCardType": "invalid",
+      "paramSourceTeam": "heroes",
+      "paramInt": 20,
+      "paramCharacterSubtype": "SubtypesData_Boss",
+      "paramTrigger": "on_spawn"
+    },
+    {
+      "relicEffectClassName": "RelicEffectScaleStatusApplicationsOnSpawn",
+      "paramStatusEffects": [
+        {
+          "statusId": "buff",
+          "count": 0
+        },
+        {
+          "statusId": "hivemind",
+          "count": 0
+        },
+        {
+          "statusId": "burst",
+          "count": 0
+        },
+        {
+          "statusId": "malaise",
+          "count": 0
+        },
+        {
+          "statusId": "decay",
+          "count": 0
+        },
+        {
+          "statusId": "corruption",
+          "count": 0
+        },
+        {
+          "statusId": "debuff",
+          "count": 0
+        },
+        {
+          "statusId": "witherbloom",
+          "count": 0
+        },
+        {
+          "statusId": "armor",
+          "count": 0
+        }
+      ],
+      "paramFloat": 1.2,
+      "paramBool": true,
+      "paramBool2": true,
+      "paramBool3": true
+    },
+    {
+      "relicEffectClassName": "RelicEffectIncreasePyreHealth",
+      "paramInt2": 2
+    },
+    {
+      "relicEffectClassName": "RelicEffectIncreasePyreAttack",
+      "paramInt2": 2
+    }
+  ],
+  "isHidden": true,
+  "disableInDailyChallenges": true,
+  "isSoulSaviorModeOnly": true
+}

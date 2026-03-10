@@ -1,0 +1,108 @@
+{
+  "id": "SoulSavior_UnitUpgradeClanStygianIncantArmor",
+  "name": "Runeslab",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-bc53b0026c39ed9a-19ab258e787d28449ba167e39434f6c8-v2",
+    "english": "Runeslab",
+    "french": "Gemme runique",
+    "german": "Platte der Rune",
+    "russian": "Пласт рун",
+    "portuguese": "Placa da Runa",
+    "chinese": "符文石板",
+    "spanish": "Losa rúnica",
+    "chinese_traditional": "符文石板",
+    "korean": "룬의 서판",
+    "japanese": "ルーンの原石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-6d3ad33bd51b8e6e-19ab258e787d28449ba167e39434f6c8-v2",
+    "english": "Upgrade a unit with [incant]: Gain [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+    "french": "Améliore une unité avec <nobr>[incant] :</nobr> Octroie [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+    "german": "Verbessere eine Einheit mit [incant]: Erhalte [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+    "russian": "Усиление бойца «[incant]»: [armor] х[effect0.upgrade.charactertrigger0.effect0.status0.power]",
+    "portuguese": "Melhora uma unidade com [incant]: recebe [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+    "chinese": "升级一个单位，使其获得 [incant]：获得 [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]。",
+    "spanish": "Mejora una unidad con [incant]: Añade [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得[incant]：獲得[armor][effect0.upgrade.charactertrigger0.effect0.status0.power]。",
+    "korean": "유닛을 업그레이드함과 동시에 [incant]: [armor] [effect0.upgrade.charactertrigger0.effect0.status0.power] 획득 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：[incant]、[armor] [effect0.upgrade.charactertrigger0.effect0.status0.power]を得る。"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassStygian",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "SoulSavior_AddIncantArmor",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-71355d59c8a7130d-839a9ea63a97a644795138188ce3e62e-v2",
+          "english": "Runeslab",
+          "french": "Gemme runique",
+          "german": "Platte der Rune",
+          "russian": "Пласт рун",
+          "portuguese": "Placa da Runa",
+          "chinese": "符文石板",
+          "spanish": "Losa rúnica",
+          "chinese_traditional": "符文石板",
+          "korean": "룬의 서판",
+          "japanese": "ルーンの原石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-e6f63182b07db523-839a9ea63a97a644795138188ce3e62e-v2",
+          "english": "Gain '[incant]: Gain [armor] [charactertrigger0.effect0.status0.power]'",
+          "french": "Octroie <nobr>« [incant] :</nobr> Octroie [armor] <nobr>[charactertrigger0.effect0.status0.power] ».</nobr>",
+          "german": "Erhalte „[incant]: Erhalte [armor] [charactertrigger0.effect0.status0.power]“",
+          "russian": "Дает «[incant]: Накладывается [armor] х[charactertrigger0.effect0.status0.power]».",
+          "portuguese": "Recebe '[incant]: recebe [armor] [charactertrigger0.effect0.status0.power]'",
+          "chinese": "获得 “[incant]：获得 [armor] [charactertrigger0.effect0.status0.power]”",
+          "spanish": "Obtiene «[incant]: Añade [armor] [charactertrigger0.effect0.status0.power]».",
+          "chinese_traditional": "獲得「[incant]：獲得[armor][charactertrigger0.effect0.status0.power]」",
+          "korean": "'[incant]: [armor] [charactertrigger0.effect0.status0.power] 획득'을 획득합니다.",
+          "japanese": "'[incant]を得る：[armor] [charactertrigger0.effect0.status0.power]を得る。'"
+        },
+        "triggerUpgrades": [
+          {
+            "descriptionKey": {
+              "key": "CardUpgradeData_descriptionKey-e899ee35e300c0dd-839a9ea63a97a644795138188ce3e62e-v2",
+              "english": "Gain [armor] [effect0.status0.power].",
+              "french": "Octroie [armor] [effect0.status0.power].",
+              "german": "Erhalte [armor] [effect0.status0.power].",
+              "russian": "Дается [armor] х[effect0.status0.power].",
+              "portuguese": "Recebe [armor] [effect0.status0.power].",
+              "chinese": "获得 [armor] [effect0.status0.power]。",
+              "spanish": "Añade [armor] [effect0.status0.power].",
+              "chinese_traditional": "獲得[armor][effect0.status0.power]。",
+              "korean": "[armor] [effect0.status0.power] 효과를 획득합니다.",
+              "japanese": "[armor] [effect0.status0.power]を得る。"
+            },
+            "trigger": "card_spell_played",
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "self",
+                "targetTeamType": "none",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "armor",
+                    "count": 4
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}

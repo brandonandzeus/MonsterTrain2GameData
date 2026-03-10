@@ -1,0 +1,99 @@
+{
+  "id": "AddAttackToFunguy",
+  "name": "Spotted Spore",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-1a14d7d5836d361f-9e26b79a1239bca4c9474ef745ca5335-v2",
+    "english": "Spotted Spore",
+    "french": "Spore tachetée",
+    "german": "Punktspore",
+    "russian": "Крапчатые споры",
+    "portuguese": "Esporo Pintado",
+    "chinese": "斑点孢子",
+    "spanish": "Espora moteada",
+    "chinese_traditional": "斑點孢子",
+    "korean": "점박이 포자",
+    "japanese": "まだらの胞子"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-60ffedff48dc3b6c-9e26b79a1239bca4c9474ef745ca5335-v2",
+    "english": "[funguy] gain +[effect0.power][attack] per [troop] stack.",
+    "french": "Les <b>Champotes</b> gagnent +[effect0.power][attack] par cumul de [troop].",
+    "german": "+[effect0.power][attack] für [funguy] pro [troop]-Stapel.",
+    "russian": "<b>Грибойцы</b> получают +[effect0.power][attack] за каждый слой <b>Отряда</b>.",
+    "portuguese": "[funguy] recebe +[effect0.power][attack] por carga de [troop].",
+    "chinese": "每层[troop]，[funguy]获得 +[effect0.power][attack]。",
+    "spanish": "Cada [funguy] añade +[effect0.power][attack] por acumulación de [troop].",
+    "chinese_traditional": "每[troop]層[funguy]獲得+[effect0.power][attack]。",
+    "korean": "[troop] 스택당 [funguy]의 +[effect0.power][attack]이 증가합니다.",
+    "japanese": "[funguy]が[troop]の1スタックにつき+[effect0.power][attack]を得る。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-ec487ae05264dbf7-9e26b79a1239bca4c9474ef745ca5335-v2",
+      "english": "Although the Underlegion fled their forest hoping to escape the Great Decay, they brought with them a few unwanted spores. One day, they might find a place to grow and I hope to never see that day.",
+      "french": "Bien que les Armillaires aient fui leur forêt dans l'espoir d'échapper au Grand Pourrissement, ils ont apporté avec eux quelques spores indésirables. Un jour, elles trouveront peut-être un endroit où se développer, et j'espère ne jamais voir ce jour.",
+      "german": "Obwohl die Unterlegion vor dem Großen Zerfall aus ihrem Wald geflohen ist, haben sie unerwünschte Sporen mitgebracht. Irgendwann werden sie vielleicht einen Platz zum Gedeihen finden. Ich hoffe, dass ich diesen Tag nie erlebe.",
+      "russian": "Когда Нижний легион покинул лес, спасаясь от Великого разложения, то прихватил с собой несколько агрессивных спор. Надеюсь, что я не доживу до того дня, когда они прорастут.",
+      "portuguese": "Embora a Legião do Submundo tenha fugido de sua floresta na esperança de escapar da Grande Decadência, ela trouxe consigo alguns esporos indesejados. Um dia, eles encontrarão um lugar para crescer, e eu espero nunca ver esse dia chegar.",
+      "chinese": "虽然地下菌团逃离森林是为了躲避大腐朽，但他们带走了一些并不想要的孢子。有朝一日，这些孢子会找到一片可以生长的地方，而我希望永远看不到那一天。",
+      "spanish": "Aunque la Infralegión abandonó su bosque para huir de la Gran Descomposición, llevaron consigo algunas esporas malignas. Algún día, podrían encontrar un lugar donde crecer. Espero no llegar a verlo.",
+      "chinese_traditional": "雖然地下軍團逃離自己的森林，希望能逃脫大腐壞，但他們帶來了一些不受歡迎的孢子。有朝一日，它們可能會找到生長的地方，我希望永遠不會看到那一天。",
+      "korean": "지하 군단은 위대한 부패를 피하려 숲을 떠났으나, 원치 않는 포자 몇 개와 함께 돌아왔다. 언젠가는 저들이 자랄 곳을 찾을 수 있겠지만, 나는 그날이 절대 오지 않기를 바란다.",
+      "japanese": "菌糸族は偉大なる枯死から逃れるために森から逃げたが、いくつか望ましくない胞子を持ち帰ってしまった。いつかそれが育つ場所を見つけるかもしれないが、私はその日が来ないことを祈っている。"
+    }
+  ],
+  "rarity": "common",
+  "linkedClass": "ClassUnderlegion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "additionalTooltips": [
+        {
+          "statusId": "horde",
+          "style": "default",
+          "isStatusTooltip": true
+        }
+      ],
+      "paramCardUpgradeData": {
+        "id": "AddAttackToFunguy_Upgrade",
+        "filters": [
+          {
+            "id": "OnlyFunguy",
+            "cardType": "monster",
+            "requiredSubtypesOperator": "and",
+            "requiredSubtypes": [
+              "SubtypesData_FunGuy"
+            ]
+          }
+        ],
+        "bonusDamage": 2
+      },
+      "paramSourceTeam": "monsters",
+      "paramInt2": 1,
+      "paramCharacterSubtype": "SubtypesData_FunGuy",
+      "paramTrigger": "on_troop_added"
+    },
+    {
+      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "paramCardUpgradeData": {
+        "id": "AddAttackToFunguy_Upgrade",
+        "filters": [
+          {
+            "id": "OnlyFunguy",
+            "cardType": "monster",
+            "requiredSubtypesOperator": "and",
+            "requiredSubtypes": [
+              "SubtypesData_FunGuy"
+            ]
+          }
+        ],
+        "bonusDamage": 2
+      },
+      "paramSourceTeam": "monsters",
+      "paramInt2": 1,
+      "paramCharacterSubtype": "SubtypesData_FunGuy",
+      "paramBool": true,
+      "paramTrigger": "on_troop_removed"
+    }
+  ]
+}

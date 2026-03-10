@@ -1,0 +1,87 @@
+{
+  "id": "BrandingRite",
+  "name": "Branding Rite",
+  "nameKey": {
+    "key": "CardData_nameKey-6d9d5b6fcdf59b12-6871166eddbc42742a3bce921ea8bf81-v2",
+    "english": "Branding Rite",
+    "french": "Marquage au fer rouge",
+    "german": "Brandmark-Ritus",
+    "russian": "Ритуал обжига",
+    "portuguese": "Ritual de Marcação",
+    "chinese": "烙印仪式",
+    "spanish": "Rito de marcado",
+    "chinese_traditional": "烙印儀式",
+    "korean": "낙인 의식",
+    "japanese": "火炎の儀式"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-4fe05257fbf191f7-6871166eddbc42742a3bce921ea8bf81-v2",
+    "english": "Deal [effect0.power] damage. Apply [armor] [effect1.status0.power].",
+    "french": "Inflige <nobr>[effect0.power] DGT.</nobr> Confère [armor] [effect1.status0.power].",
+    "german": "Verursache [effect0.power] Schaden. Wende [armor] [effect1.status0.power] an.",
+    "russian": "Наносит [effect0.power] урона. Накладывает [armor] х[effect1.status0.power].",
+    "portuguese": "Causa [effect0.power] de dano. Concede [armor] [effect1.status0.power].",
+    "chinese": "造成 [effect0.power] 点伤害，获得 [armor] [effect1.status0.power]。",
+    "spanish": "Inflige [effect0.power] de daño. Añade [armor] [effect1.status0.power].",
+    "chinese_traditional": "造成[effect0.power]點傷害。施加[armor][effect1.status0.power]。",
+    "korean": "[effect0.power]만큼 피해를 줍니다. [armor] [effect1.status0.power] 효과를 적용합니다.",
+    "japanese": "[effect0.power]のダメージを与える。[armor] [effect1.status0.power]を付与する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-c91e86d735cf3d73-6871166eddbc42742a3bce921ea8bf81-v2",
+      "english": "The focused application of heat on a Hellhorned hide will force it to calcify and provide a natural defense. Though I can tell you that the smell is truly...unique.",
+      "french": "L'application ciblée d'une source de chaleur sur la peau d'un Cornu entraîne une calcification qui constitue une défense naturelle. Mais je dois avouer que l'odeur est vraiment... unique.",
+      "german": "Die konzentrierte Anwendung von Hitze führt bei Höllenhörnern zur Verkalkung, sodass eine natürliche Schutzschicht entsteht. Allerdings ist der Geruch absolut … einzigartig.",
+      "russian": "Подвергшись обработке жаром, шкура Адского отродья отвердевает, превращаясь в природную броню. Но надо сказать, что и воняет она... своеобразно.",
+      "portuguese": "A aplicação de calor concentrado na pele de um Endiabrado fará com que se calcifique e gere uma defesa natural. Mas devo dizer que os odores que surgem neste processo são... peculiares.",
+      "chinese": "这种仪式会将热量聚集在狱魔的皮肤上，迫使其钙化，从而提供天然的防御效果。不过我可以告诉你，仪式的味道真的很……特别。",
+      "spanish": "La aplicación de calor concentrado en la piel de los Astados Infernales la calcifica, proporcionándole una defensa natural. Aunque el olor que desprende es... único.",
+      "chinese_traditional": "將熱量集中在煉獄族的皮膚上，會迫使它鈣化並提供天然防禦。不過我可以告訴你，這種氣味真的……很獨特。",
+      "korean": "지옥뿔 군단의 피부에 뜨거운 열을 집중적으로 가하면, 피부가 단단히 석회화되며 자연 방어력을 얻게 된다. 하지만 그 냄새는... 독특하다고 말할 수밖에 없다.",
+      "japanese": "獄角族の皮に集中的に熱を加えると石灰化し、防御の手段となる。ただし香りが…かなり独特だ。"
+    }
+  ],
+  "cost": 2,
+  "cardType": "spell",
+  "rarity": "uncommon",
+  "linkedClass": "ClassHellhorned",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_BrandingRite.prefab",
+    "m_AssetGUID": "d7364578506be4044b10a6f63a1f0e6b"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitIgnoreArmor"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "both",
+      "paramInt": 3,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/FX/FX_FireSpellImpact_PS.prefab",
+          "m_AssetGUID": "8cf67fd667051b649b76811fe44a4577"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectAddStatusEffect",
+      "targetMode": "last_targeted_characters",
+      "targetTeamType": "both",
+      "paramStatusEffects": [
+        {
+          "statusId": "armor",
+          "count": 20
+        }
+      ]
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+}

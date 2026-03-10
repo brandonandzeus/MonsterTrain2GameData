@@ -1,0 +1,89 @@
+{
+  "id": "Duality",
+  "name": "Duality",
+  "nameKey": {
+    "key": "CardData_nameKey-99ebda91c0e4e702-17acd36231ceeb24bb5558bb1b3e080f-v2",
+    "english": "Duality",
+    "french": "Dualité",
+    "german": "Dualität",
+    "russian": "Дуальность",
+    "portuguese": "Dualidade",
+    "chinese": "二元性",
+    "spanish": "Dualidad",
+    "chinese_traditional": "二元性",
+    "korean": "이중성",
+    "japanese": "二元性"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-b7ba0c234a65f118-17acd36231ceeb24bb5558bb1b3e080f-v2",
+    "english": "Deal [effect0.power] damage to an enemy unit or restore [effect1.power] health to a friendly unit.",
+    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à un ennemi ou restaure <nobr>[effect1.power] PV</nobr> à un allié.",
+    "german": "Füge einer gegnerischen Einheit [effect0.power] Schaden zu oder stelle [effect1.power] Gesundheit einer verbündeten Einheit wieder her.",
+    "russian": "Восстанавливает [effect1.power] здоровья союзнику или наносит [effect0.power] урона вражескому бойцу.",
+    "portuguese": "Causa [effect0.power] de dano a uma unidade inimiga ou restaura [effect1.power] de vida a uma unidade aliada.",
+    "chinese": "对一个敌方单位造成 [effect0.power] 点伤害，或为一个友方单位恢复 [effect1.power]点生命值。",
+    "spanish": "Inflige [effect0.power] de daño a una unidad enemiga o restaura [effect1.power] de salud a una unidad aliada.",
+    "chinese_traditional": "對一個敵方單位造成[effect0.power]點傷害，或為一個友方單位恢復[effect1.power]點生命值。",
+    "korean": "적 유닛에 [effect0.power]만큼 피해를 주거나 아군 유닛의 체력을 [effect1.power]만큼 회복합니다.",
+    "japanese": "敵ユニットに[effect1.power]のダメージを与えるか、味方ユニットの体力を[effect0.power]回復する。"
+  },
+  "cardLoreTooltipKeys": [
+    {
+      "key": "CardData_data-8db8dda2b4ac47ad-17acd36231ceeb24bb5558bb1b3e080f-v2",
+      "english": "“Silent or Selene, magic user or fighter, we are each a part the whole.”\n—The Ritual Tome",
+      "french": "<nobr>« Silencieux</nobr> ou Sélènes, magiciens ou guerriers, nous sommes chacun une partie du <nobr>tout. »</nobr> \n— Livre des Rituels",
+      "german": "„Ob Stille, Selenen, Magienutzer oder Krieger – wir sind alle Teil eines Großen, Ganzen.“\n—Foliant der Rituale",
+      "russian": "«Неважно, Селена или Молчун, магия или меч — мы часть единого целого».\n— Книга ритуалов",
+      "portuguese": "“Silenciosos ou Selenes, usuário de magia ou lutador, cada um de nós é uma parte do todo.“\n— Tomo Ritualístico",
+      "chinese": "“无论是寂静者或月神女，无论是魔法的使用者还是战士，我们都是整体的一部分。”\n——《仪式之书》",
+      "spanish": "«Silenciosos o selenitas, magas o guerreros, todos somos parte de la misma unión».\n—Tomo de los Rituales",
+      "chinese_traditional": "「無論是無聲者還是塞勒涅、魔法使用者或戰士，我們每個人都是整體的一部分。」\n——《儀式魔法書》",
+      "korean": "“묵언자도, 세레네도, 마법을 사용하는 자도, 전사도 모두 전체를 이루는 하나이다.”\n- 의식의 서",
+      "japanese": "「サイレントかセレーネ、魔術の使い手か戦士。我々は2つで1つなのだ」\n—儀式の書"
+    }
+  ],
+  "cost": 1,
+  "cardType": "spell",
+  "rarity": "rare",
+  "linkedClass": "ClassLunaCoven",
+  "cardArtPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Duality.prefab",
+    "m_AssetGUID": "1256a66bd6a70654b993a8ef0f0cf78d"
+  },
+  "traits": [
+    {
+      "traitStateName": "CardTraitStrongerMagicPower"
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectDamage",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "heroes",
+      "paramInt": 10,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LunaCoven/Duality/FX_Duality.prefab",
+          "m_AssetGUID": "cc6e5f958800f7b4a8ad0be27f70c327"
+        },
+        "spawnLocation": "character_center"
+      }
+    },
+    {
+      "effectStateName": "CardEffectHeal",
+      "targetMode": "drop_target_character",
+      "targetTeamType": "monsters",
+      "paramInt": 10,
+      "appliedVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Spells/LunaCoven/Duality/FX_Duality.prefab",
+          "m_AssetGUID": "cc6e5f958800f7b4a8ad0be27f70c327"
+        },
+        "spawnLocation": "character_center"
+      }
+    }
+  ],
+  "targetless": false,
+  "initialKeyboardTarget": "front_enemy",
+  "artistAttribution": "Loy Bouttamy"
+}

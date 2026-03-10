@@ -1,0 +1,58 @@
+{
+  "id": "SoulSavior_Region4Complete_3",
+  "name": "Masochist",
+  "nameKey": {
+    "key": "MutatorData_nameKey-b57a1cb49862ddc4-f06805f2fbf9f66458d5fa6911bf2739-v2",
+    "english": "Masochist",
+    "french": "Masochisme",
+    "german": "Masochist",
+    "russian": "Мазохист",
+    "portuguese": "Masoquista",
+    "chinese": "受虐狂",
+    "spanish": "Masoquismo",
+    "chinese_traditional": "受虐狂",
+    "korean": "피학주의자",
+    "japanese": "マゾヒスト"
+  },
+  "descriptionKey": {
+    "key": "MutatorData_descriptionKey-71621ad06b4e8d16-f06805f2fbf9f66458d5fa6911bf2739-v2",
+    "english": "Enemy units gain [regen] [effect0.power] when hit.",
+    "french": "Les ennemis gagnent [regen] [effect0.power] lorsqu'ils sont touchés.",
+    "german": "Gegnerische Einheiten erhalten [regen] [effect0.power], wenn sie getroffen werden.",
+    "russian": "При попадании врагам дается [regen] х[effect0.power].",
+    "portuguese": "As unidades inimigas recebem [regen] [effect0.power] quando atingidas.",
+    "chinese": "敌方单位被命中时，获得 [regen] [effect0.power]。",
+    "spanish": "Las unidades enemigas añaden [regen] [effect0.power] al recibir un impacto.",
+    "chinese_traditional": "敵方單位被擊中時獲得[regen][effect0.power]。",
+    "korean": "타격 시 적 유닛들이 [regen] [effect0.power] 효과를 획득합니다.",
+    "japanese": "敵ユニットが攻撃を受けた時[regen] [effect0.power]を得る。"
+  },
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrigger",
+      "triggers": [
+        {
+          "trigger": "on_hit",
+          "effects": [
+            {
+              "effectStateName": "CardEffectAddStatusEffect",
+              "targetMode": "self",
+              "targetTeamType": "none",
+              "paramStatusEffects": [
+                {
+                  "statusId": "regen",
+                  "count": 2
+                }
+              ]
+            }
+          ],
+          "hideVisualAndIgnoreSilence": true
+        }
+      ],
+      "paramSourceTeam": "heroes"
+    }
+  ],
+  "boonValue": 4,
+  "disableInDailyChallenges": true,
+  "isSoulSaviorModeOnly": true
+}

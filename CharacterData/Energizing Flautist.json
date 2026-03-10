@@ -1,0 +1,93 @@
+{
+  "id": "EnchanterT1_Speed",
+  "name": "Energizing Flautist",
+  "nameKey": {
+    "key": "CharacterData_nameKey-8c6cc85812821091-2d32b3804236d5744a30719a8c48c281-v2",
+    "english": "Energizing Flautist",
+    "french": "Flûtiste énergique",
+    "german": "Energetischer Flötist",
+    "russian": "Неутомимый флейтист",
+    "portuguese": "Flautista Energizante",
+    "chinese": "激情吹奏者",
+    "spanish": "Flautista vigorizante",
+    "chinese_traditional": "充能長笛手",
+    "korean": "활력의 플루트 연주자",
+    "japanese": "エナジャイズ・フロウティスト"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-c5f9e1bec21f2137-2d32b3804236d5744a30719a8c48c281-v2",
+      "english": "Cherubs aren’t merely Heaven’s workers, they’re also keepers of the Celestial Chorus, ensuring divine music always fills the Heavens. Even under the Titan’s corruption, their music never wavered. ",
+      "french": "Les chérubins ne sont pas seulement les ouvriers du <nobr>paradis :</nobr> ce sont aussi les gardiens du Chœur céleste, veillant à ce que la musique divine résonne toujours dans les cieux. Même sous la corruption des titans, leur musique n'a jamais faibli.",
+      "german": "Die Cherubim sind nicht nur die Arbeiter des Himmels, sondern auch die Hüter seines Chors und sorgen dafür, dass der Himmel stets von göttlicher Musik erfüllt ist. Nicht einmal unter der Verderbnis der Titanen ist sie je verstummt.",
+      "russian": "Помимо выполнения заурядной работы, Херувимы следят за тем, чтобы в Раю никогда не смолкала музыка Небесного хора. Она играет постоянно даже под влиянием скверны титанов. ",
+      "portuguese": "Os querubins não são apenas trabalhadores, mas também os guardiões do Coro Celestial, garantindo que a música divina sempre preencha os Céus. Mesmo sob a corrupção do Titã, sua música nunca vacilou.",
+      "chinese": "小天使不仅是天堂的工人，也是天籁合唱团的守护者，确保神圣的音乐永远响彻天堂。即使在泰坦的腐化之下，他们的音乐也未曾动摇。",
+      "spanish": "Los querubines no son solo los trabajadores del Cielo: también son los guardianes del Coro Celestial, encargados de que la música divina siempre resuene en el Cielo. Ni la corrupción de los titanes ha interrumpido su melodía.",
+      "chinese_traditional": "天使寶寶不僅是天堂的工人，他們也是天界合唱團的守護者，確保神聖音樂能永遠在天堂縈繞。即使受到泰坦的腐化影響，他們的音樂也從未動搖。",
+      "korean": "케루빔은 천상의 노동자이자 신성한 음악으로 천상을 가득 채우는 일을 하는 천상 합창단의 수호자이기도 하다. 티탄의 타락한 힘에도 불구하고, 그 음악은 결코 흔들리지 않았다.",
+      "japanese": "智天使は単に天界で働く者というだけでなく、天の合唱団の守護者でもあり、神聖な音楽が常に天界に満ちるようにしている。巨人族の堕落の下でも、彼らの音楽は決して揺らぐことはなかった。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_EnergizingFlautist.prefab",
+    "m_AssetGUID": "f020e02e4897fa54e88303a0650afc88"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EnemyHymnist/FX_EnemyHymnistAttack.prefab",
+      "m_AssetGUID": "84c715bda74bdee42b2e3a9c3b7468e1"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EnemyHymnist/FX_EnemyHymnistImpact.prefab",
+      "m_AssetGUID": "9e0324e360de6514d83edca3e5740f6f"
+    },
+    "spawnLocation": "character_center"
+  },
+  "startingStatusEffects": [
+    {
+      "statusId": "haste",
+      "count": 1
+    }
+  ],
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-5766c5514d30ae7a-2d32b3804236d5744a30719a8c48c281-v2",
+        "english": "Grant enemy units [haste].",
+        "french": "Inflige [haste] aux unités ennemies.",
+        "german": "Gegnerische Einheiten erhalten [haste].",
+        "russian": "Врагам дается [haste].",
+        "portuguese": "Aplica [haste] às unidades inimigas.",
+        "chinese": "使所有敌方单位获得 [haste]。",
+        "spanish": "Añade [haste] a las unidades enemigas.",
+        "chinese_traditional": "賦予敵方單位[haste]。",
+        "korean": "적 유닛들에게 [haste] 효과를 부여합니다.",
+        "japanese": "敵ユニットに[haste]を付与する。"
+      },
+      "trigger": "after_spawn_enchant",
+      "effects": [
+        {
+          "effectStateName": "CardEffectEnchant",
+          "targetMode": "room",
+          "targetTeamType": "heroes",
+          "paramStatusEffects": [
+            {
+              "statusId": "haste",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 1,
+  "attackDamage": 0,
+  "attackTeleportsToDefender": false,
+  "characterChatterData": "T1TitanEnemies_Male_ChatterData",
+  "artistAttribution": "Samuel Lim"
+}

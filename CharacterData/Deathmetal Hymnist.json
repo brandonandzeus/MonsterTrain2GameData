@@ -1,0 +1,90 @@
+{
+  "id": "MonsterHymnist",
+  "name": "Deathmetal Hymnist",
+  "nameKey": {
+    "key": "CharacterData_nameKey-3f417a5cdfac8574-edbbc1fd3aec1bb438e8aeb7b2160ed8-v2",
+    "english": "Deathmetal Hymnist",
+    "french": "Harpiste deathmetal",
+    "german": "Deathmetal-Hymnist",
+    "russian": "Трель-металлист",
+    "portuguese": "Hinógrafo Metaleiro",
+    "chinese": "死亡金属竖琴手",
+    "spanish": "Himnista de death metal",
+    "chinese_traditional": "死亡金屬讚美詩歌手",
+    "korean": "데스메탈 성가대",
+    "japanese": "デスメタル・ヒュムニスト"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f20c16a7dbf90a33-edbbc1fd3aec1bb438e8aeb7b2160ed8-v2",
+      "english": "“We’re all a flash in the abyss, a song in the void. Dust will be our legacy!”",
+      "french": "<nobr>« Nous</nobr> ne sommes qu'un éclair dans l'abîme, une chanson dans le Néant. La poussière sera notre <nobr>héritage ! »</nobr>",
+      "german": "„Wir sind alle ein Blitz im Abgrund, ein Lied in der Leere. Der Staub wird unser Vermächtnis sein!“",
+      "russian": "«Все мы — вспышка в Бездне; песнь, звучащая в пустоте. После нас останется лишь прах!»",
+      "portuguese": "“Somos todos uma luz no abismo, uma canção no vácuo. O pó será o nosso legado!”",
+      "chinese": "“我们都是深渊中的闪光，虚空中的歌谣。尘埃将是我们的遗产！”",
+      "spanish": "«No somos más que un destello en el abismo, una canción en el vacío. ¡El polvo será nuestro legado!».",
+      "chinese_traditional": "「我們都是深淵中的閃光、虛空中的歌聲。塵埃將是我們的遺產！」",
+      "korean": "\"우리는 심연 속의 번쩍임이요, 공허 속의 한 줄기 노래이니. 남는 건 오직 먼지뿐이리라!\"",
+      "japanese": "「俺たちはみな深淵の中の閃光、虚無の中の歌。塵が俺たちの遺産となる！」"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Hymnist.prefab",
+    "m_AssetGUID": "a6dcd486d5260954699418acb859ed68"
+  },
+  "projectilePrefab": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistAttack.prefab",
+      "m_AssetGUID": "05e0702acde89074cbee9d97506515ff"
+    },
+    "spawnLocation": "character_side_fwd_center"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistImpact.prefab",
+      "m_AssetGUID": "dbc3d7264f40bc94791c3a4880396f2c"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-d61d042095d895da-edbbc1fd3aec1bb438e8aeb7b2160ed8-v2",
+        "english": "Grant [multistrike] [effect0.status0.power].",
+        "french": "Octroie [multistrike] [effect0.status0.power].",
+        "german": "Verleiht [multistrike] [effect0.status0.power].",
+        "russian": "Дается [multistrike] х[effect0.status0.power].",
+        "portuguese": "Concede [multistrike] [effect0.status0.power].",
+        "chinese": "获得 [multistrike] [effect0.status0.power]。",
+        "spanish": "Otorga [multistrike] [effect0.status0.power].",
+        "chinese_traditional": "賦予[multistrike][effect0.status0.power]。",
+        "korean": "[multistrike] [effect0.status0.power] 효과를 부여합니다.",
+        "japanese": "[multistrike] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "after_spawn_enchant",
+      "effects": [
+        {
+          "effectStateName": "CardEffectEnchant",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "paramStatusEffects": [
+            {
+              "statusId": "multistrike",
+              "count": 1
+            }
+          ],
+          "shouldTest": false
+        }
+      ]
+    }
+  ],
+  "size": 1,
+  "health": 2,
+  "attackDamage": 2,
+  "attackTeleportsToDefender": false,
+  "subtypeKeys": [
+    "SubtypesData_Hymnist"
+  ],
+  "characterChatterData": "BanishedHymnistChatterData"
+}

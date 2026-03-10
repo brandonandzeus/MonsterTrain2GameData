@@ -1,0 +1,109 @@
+{
+  "id": "MonsterAlchemicalAssistant",
+  "name": "Gildmonger",
+  "nameKey": {
+    "key": "CharacterData_nameKey-76dd78f6dcb528ee-d967988d0bc2768458f2c0dc32dad708-v2",
+    "english": "Gildmonger",
+    "french": "Couvor",
+    "german": "Goldhorter",
+    "russian": "Златоторговец",
+    "portuguese": "Monge Dourado",
+    "chinese": "金蛋龙",
+    "spanish": "Dorador",
+    "chinese_traditional": "金商",
+    "korean": "길몽거",
+    "japanese": "ギルドモンガー"
+  },
+  "characterLoreTooltipKeys": [
+    {
+      "key": "CharacterData_data-f99b9260e64da7f9-d967988d0bc2768458f2c0dc32dad708-v2",
+      "english": "To protect their eggs, dragons encase them in gold and give them to the care of the Gildmongers until they are ready to hatch. Whether or not they are good caretakers, that is more of a toss-up.",
+      "french": "Pour protéger leurs œufs, les dragons les enveloppent d'or et les confient aux soins des Couvors jusqu'à ce qu'ils soient prêts à éclore. Quant à savoir s'ils font de bonnes nounous, la question est plus délicate.",
+      "german": "Um ihre Eier zu schützen, hüllen die Drachen sie in Gold ein und geben sie in die Obhut der Goldhorter, bis sie bereit sind zu schlüpfen. Ob diese sich gut um die Eier kümmern, ist eine andere Frage.",
+      "russian": "Чтобы защитить свои яйца, драконы покрывают их золотом и отдают на попечение златоторговцам до самого вылупления. Хорошие ли те воспитатели — вопрос спорный.",
+      "portuguese": "Para proteger seus ovos, os dragões os envolvem em ouro e os entregam aos cuidados dos Monges Dourados até que estejam prontos para eclodir. Agora, se eles são bons cuidadores ou não, aí é outra história.",
+      "chinese": "为了保护龙蛋，龙会用黄金将其包裹，然后交给金蛋龙照料，直到龙蛋孵化。他们到底适不适合照料龙蛋，就不得而知了。",
+      "spanish": "Para proteger sus huevos, los dragones los cubren de oro y los entregan al cuidado de los doradores hasta que están listos para eclosionar. Que sean buenos cuidadores o no es otro asunto.",
+      "chinese_traditional": "為了保護他們的蛋，龍都會將蛋包裹在黃金中並交給金商照顧，直到蛋準備孵化。至於他們是否是好的看護人，那就更像是碰運氣了。",
+      "korean": "알을 지키기 위해 드래곤은 알에 황금을 씌워 부화할 때까지 길몽거에게 맡긴다. 저들이 알을 잘 돌볼지는 장담할 수 없지만, 적어도 부화할 확률이 반반인 것보다는 조금 더 나은 편이다.",
+      "japanese": "竜たちは卵を黄金で包んで保護し、孵化する準備ができるまでギルドモンガーに預ける。彼らが良い世話人であるかどうかは…運次第だ。"
+    }
+  ],
+  "characterPrefabVariantRef": {
+    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_AlchemicalAssistant.prefab",
+    "m_AssetGUID": "876667de3eea7b44e9aad5876a765ef3"
+  },
+  "impactVFX": {
+    "vfxPrefabRefLeft": {
+      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+    },
+    "spawnLocation": "character_center"
+  },
+  "triggers": [
+    {
+      "descriptionKey": {
+        "key": "CharacterData_descriptionKey-7e3755b63b5ddf0d-d967988d0bc2768458f2c0dc32dad708-v2",
+        "english": "Gain [effect0.power][dragonshoardicon].",
+        "french": "Octroie [effect0.power][dragonshoardicon].",
+        "german": "Erhalte [effect0.power][dragonshoardicon].",
+        "russian": "Дает [effect0.power][dragonshoardicon].",
+        "portuguese": "Recebe [effect0.power][dragonshoardicon].",
+        "chinese": "获得[effect0.power][dragonshoardicon]。",
+        "spanish": "Obtienes [effect0.power][dragonshoardicon].",
+        "chinese_traditional": "獲得[effect0.power][dragonshoardicon]。",
+        "korean": "[effect0.power][dragonshoardicon]를 획득합니다.",
+        "japanese": "[effect0.power][dragonshoardicon]を得る。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        {
+          "effectStateName": "CardEffectAdjustDragonsHoard",
+          "targetMode": "room",
+          "targetTeamType": "none",
+          "additionalTooltips": [
+            {
+              "statusId": "rooted",
+              "descriptionKey": {
+                "key": "HudTooltip_DragonsHoardInactive_Body",
+                "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+                "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+                "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+                "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+                "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+                "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+                "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+                "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+                "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+                "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+              },
+              "titleKey": {
+                "key": "HudTooltip_DragonsHoard_Title",
+                "english": "[dragonshoardicon]Dragon's Hoard",
+                "french": "[dragonshoardicon]Trésor du dragon",
+                "german": "[dragonshoardicon]Drachenschatz",
+                "russian": "[dragonshoardicon] Драконий клад",
+                "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+                "chinese": "[dragonshoardicon]龙族宝藏",
+                "spanish": "[dragonshoardicon]Tesoro de dragón",
+                "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+                "korean": "[dragonshoardicon]드래곤의 재보",
+                "japanese": "竜の財宝[dragonshoardicon]"
+              },
+              "style": "default"
+            }
+          ],
+          "paramInt": 1
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "health": 30,
+  "attackDamage": 10,
+  "subtypeKeys": [
+    "SubtypesData_BannerUnit",
+    "SubtypesData_Dragon"
+  ],
+  "characterChatterData": "PyreborneDragonChatterData"
+}

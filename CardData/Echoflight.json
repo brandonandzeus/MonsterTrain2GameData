@@ -1,0 +1,60 @@
+{
+  "id": "BogFlyFlightAbility",
+  "name": "Echoflight",
+  "nameKey": {
+    "key": "CardData_nameKey-f98ed720c7fe30d4-fa631acc55a061948ba8dcd2807b6b13-v2",
+    "english": "Echoflight",
+    "french": "Vol échoïque",
+    "german": "Echoflug",
+    "russian": "Полет эхо",
+    "portuguese": "Voo do Eco",
+    "chinese": "水晶飞行",
+    "spanish": "Vuelo resonante",
+    "chinese_traditional": "迴響飛行",
+    "korean": "메아리 비행",
+    "japanese": "エコー飛翔"
+  },
+  "overrideDescriptionKey": {
+    "key": "CardData_overrideDescriptionKey-d2aa3e0df8517c00-fa631acc55a061948ba8dcd2807b6b13-v2",
+    "english": "Move to a targeted location on any floor.",
+    "french": "Déplace l'unité à la position ciblée du niveau choisi.",
+    "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene.",
+    "russian": "Перемещение в выбранное место на любом этаже.",
+    "portuguese": "Desloca-se para um local específico em qualquer andar.",
+    "chinese": "移动到任意层的目标位置。",
+    "spanish": "Se mueve a la ubicación seleccionada de cualquier piso.",
+    "chinese_traditional": "移動到任意樓層的指定位置。",
+    "korean": "선택한 층의 목표 위치로 이동합니다.",
+    "japanese": "任意のフロアの指定した位置へ移動する。"
+  },
+  "cardType": "spell",
+  "rarity": "common",
+  "linkedClass": "ClassWurm",
+  "traits": [
+    {
+      "traitStateName": "CardTraitCorruptRestricted",
+      "paramInt": 1,
+      "paramBool": true,
+      "traitIsRemovable": false
+    }
+  ],
+  "effects": [
+    {
+      "effectStateName": "CardEffectUnitAbilityTeleport",
+      "targetMode": "room",
+      "targetTeamType": "heroes",
+      "appliedToSelfVFX": {
+        "vfxPrefabRefLeft": {
+          "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+          "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
+        },
+        "spawnLocation": "character_bottom"
+      }
+    }
+  ],
+  "cooldownAfterActivated": 2,
+  "isUnitAbility": true,
+  "targetless": false,
+  "initialKeyboardTarget": "front_friendly",
+  "canAbilityTargetOtherFloors": true
+}

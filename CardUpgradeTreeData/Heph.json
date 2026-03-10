@@ -1,0 +1,1098 @@
+{
+  "id": "UpgradeTreeRailforged2",
+  "name": "Heph",
+  "upgradeTrees": [
+    {
+      "cardUpgrades": [
+        {
+          "id": "Railforged2Roomsmith",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-2d45cc62bfac10e7-930f1220384ee4b48a2c65ad8426cf6e-v2",
+            "english": "Handy",
+            "french": "Talent manuel",
+            "german": "Geschickt",
+            "russian": "Умелец",
+            "portuguese": "Conveniente",
+            "chinese": "巧手",
+            "spanish": "Manitas",
+            "chinese_traditional": "靈巧",
+            "korean": "손재주꾼",
+            "japanese": "ハンディー"
+          },
+          "upgradeDescriptionKey": {
+            "key": "CardUpgradeData_upgradeDescriptionKey-47c729c42a8cf62e-930f1220384ee4b48a2c65ad8426cf6e-v2",
+            "english": "Can equip [bonusequipment] additional equipment.",
+            "french": "Équipement supplémentaire <nobr>possible :</nobr> [bonusequipment].",
+            "german": "Kann [bonusequipment] zusätzliche Ausrüstung anlegen.",
+            "russian": "Открывает дополнительное снаряжение: [bonusequipment].",
+            "portuguese": "Pode usar mais [bonusequipment] equipamento(s).",
+            "chinese": "可穿戴 [bonusequipment] 件额外装备。",
+            "spanish": "Puede añadir [bonusequipment] de equipo adicional.",
+            "chinese_traditional": "可額外裝備[bonusequipment]件裝備。",
+            "korean": "[bonusequipment]개의 추가 장비를 장착합니다.",
+            "japanese": "追加で装備品を[bonusequipment]つ装着できる。"
+          },
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionWeaponsmithAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-b47cff4b94813993-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Weaponcraft",
+              "french": "Armurier",
+              "german": "Waffenmeister",
+              "russian": "Оружейное дело",
+              "portuguese": "Criação de Armas",
+              "chinese": "武器制作",
+              "spanish": "Armería",
+              "chinese_traditional": "武器工藝",
+              "korean": "무기 제작",
+              "japanese": "武器鍛造"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-248a518bf9ee2765-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Add a +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand.",
+              "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à votre main.",
+              "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> hinzu.",
+              "russian": "Добавляет в руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]).",
+              "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão.",
+              "chinese": "将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌",
+              "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano.",
+              "chinese_traditional": "將一件帶有+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入你的手牌。",
+              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health] <b>제작 장비</b>를 패에 추가합니다.",
+              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Plus5Attack5Health",
+                  "bonusDamage": 5,
+                  "bonusHP": 5
+                },
+                "paramInt": 3,
+                "paramCardPool": "CraftedEquipmentOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "allowSecondaryTooltipPlacement": false,
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 20,
+          "bonusHP": 10,
+          "bonusEquipment": 1,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "Railforged2Roomsmith2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-e3a9262766d1d775-827c633062150064e8ebaa93e1699b2f-v2",
+            "english": "Handy II",
+            "french": "Talent manuel II",
+            "german": "Geschickt II",
+            "russian": "Умелец II",
+            "portuguese": "Conveniente II",
+            "chinese": "巧手 II",
+            "spanish": "Manitas II",
+            "chinese_traditional": "靈巧II",
+            "korean": "손재주꾼 II",
+            "japanese": "ハンディーII"
+          },
+          "upgradeDescriptionKey": {
+            "key": "CardUpgradeData_upgradeDescriptionKey-1c907720d44f0e93-827c633062150064e8ebaa93e1699b2f-v2",
+            "english": "Can equip [bonusequipment] additional equipment.",
+            "french": "Équipement supplémentaire <nobr>possible :</nobr> [bonusequipment].",
+            "german": "Kann [bonusequipment] zusätzliche Ausrüstung anlegen.",
+            "russian": "Открывает дополнительное снаряжение: [bonusequipment].",
+            "portuguese": "Pode usar mais [bonusequipment] equipamento(s).",
+            "chinese": "可穿戴 [bonusequipment] 件额外装备。",
+            "spanish": "Puede añadir [bonusequipment] de equipo adicional.",
+            "chinese_traditional": "可額外裝備[bonusequipment]件裝備。",
+            "korean": "[bonusequipment]개의 추가 장비를 장착합니다.",
+            "japanese": "追加で装備品を[bonusequipment]つ装着できる。"
+          },
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionWeaponsmithAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-b47cff4b94813993-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Weaponcraft",
+              "french": "Armurier",
+              "german": "Waffenmeister",
+              "russian": "Оружейное дело",
+              "portuguese": "Criação de Armas",
+              "chinese": "武器制作",
+              "spanish": "Armería",
+              "chinese_traditional": "武器工藝",
+              "korean": "무기 제작",
+              "japanese": "武器鍛造"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-248a518bf9ee2765-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Add a +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand.",
+              "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à votre main.",
+              "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> hinzu.",
+              "russian": "Добавляет в руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]).",
+              "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão.",
+              "chinese": "将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌",
+              "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano.",
+              "chinese_traditional": "將一件帶有+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入你的手牌。",
+              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health] <b>제작 장비</b>를 패에 추가합니다.",
+              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Plus5Attack5Health",
+                  "bonusDamage": 5,
+                  "bonusHP": 5
+                },
+                "paramInt": 3,
+                "paramCardPool": "CraftedEquipmentOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "allowSecondaryTooltipPlacement": false,
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 50,
+          "bonusHP": 20,
+          "bonusEquipment": 2,
+          "doNotReplaceExistingUnitAbility": true
+        },
+        {
+          "id": "Railforged2Roomsmith3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-6ca6e6fd97cc32f3-ed9e14cb6db508445a7847df6436df56-v2",
+            "english": "Handy III",
+            "french": "Talent manuel III",
+            "german": "Geschickt III",
+            "russian": "Умелец III",
+            "portuguese": "Conveniente III",
+            "chinese": "巧手 III",
+            "spanish": "Manitas III",
+            "chinese_traditional": "靈巧III",
+            "korean": "손재주꾼 III",
+            "japanese": "ハンディーIII"
+          },
+          "upgradeDescriptionKey": {
+            "key": "CardUpgradeData_upgradeDescriptionKey-4c37c4124fef6aec-ed9e14cb6db508445a7847df6436df56-v2",
+            "english": "Can equip [bonusequipment] additional equipment.",
+            "french": "Équipement supplémentaire <nobr>possible :</nobr> [bonusequipment].",
+            "german": "Kann [bonusequipment] zusätzliche Ausrüstung anlegen.",
+            "russian": "Открывает дополнительное снаряжение: [bonusequipment].",
+            "portuguese": "Pode usar mais [bonusequipment] equipamento(s).",
+            "chinese": "可穿戴 [bonusequipment] 件额外装备。",
+            "spanish": "Puede añadir [bonusequipment] de equipo adicional.",
+            "chinese_traditional": "可額外裝備[bonusequipment]件裝備。",
+            "korean": "[bonusequipment]개의 추가 장비를 장착합니다.",
+            "japanese": "追加で装備品を[bonusequipment]つ装着できる。"
+          },
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionWeaponsmithAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-b47cff4b94813993-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Weaponcraft",
+              "french": "Armurier",
+              "german": "Waffenmeister",
+              "russian": "Оружейное дело",
+              "portuguese": "Criação de Armas",
+              "chinese": "武器制作",
+              "spanish": "Armería",
+              "chinese_traditional": "武器工藝",
+              "korean": "무기 제작",
+              "japanese": "武器鍛造"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-248a518bf9ee2765-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Add a +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand.",
+              "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à votre main.",
+              "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> hinzu.",
+              "russian": "Добавляет в руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]).",
+              "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão.",
+              "chinese": "将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌",
+              "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano.",
+              "chinese_traditional": "將一件帶有+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入你的手牌。",
+              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health] <b>제작 장비</b>를 패에 추가합니다.",
+              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Plus5Attack5Health",
+                  "bonusDamage": 5,
+                  "bonusHP": 5
+                },
+                "paramInt": 3,
+                "paramCardPool": "CraftedEquipmentOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "statusEffectUpgrades": [
+            {
+              "statusId": "trample",
+              "count": 1
+            }
+          ],
+          "allowSecondaryTooltipPlacement": false,
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 80,
+          "bonusHP": 30,
+          "bonusEquipment": 3,
+          "doNotReplaceExistingUnitAbility": true
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Railforged2Weaponsmith",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-c72134283dfb6986-90dbef6f67400434187af8255bf2baaf-v2",
+            "english": "Weaponsmith",
+            "french": "Fabricant d'armes",
+            "german": "Waffenschmied",
+            "russian": "Оружейник",
+            "portuguese": "Forja-Armas",
+            "chinese": "武器匠",
+            "spanish": "Armera",
+            "chinese_traditional": "武器匠",
+            "korean": "무기 장인",
+            "japanese": "ウェポンスミス"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-66f3829de443b8f1-90dbef6f67400434187af8255bf2baaf-v2",
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionWeaponsmithAbility",
+            "nameKey": {
+              "key": "CardData_nameKey-b47cff4b94813993-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Weaponcraft",
+              "french": "Armurier",
+              "german": "Waffenmeister",
+              "russian": "Оружейное дело",
+              "portuguese": "Criação de Armas",
+              "chinese": "武器制作",
+              "spanish": "Armería",
+              "chinese_traditional": "武器工藝",
+              "korean": "무기 제작",
+              "japanese": "武器鍛造"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-248a518bf9ee2765-d5d9b251f817a354987386cdeb59c913-v2",
+              "english": "Add a +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand.",
+              "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à votre main.",
+              "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> hinzu.",
+              "russian": "Добавляет в руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]).",
+              "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão.",
+              "chinese": "将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌",
+              "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano.",
+              "chinese_traditional": "將一件帶有+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入你的手牌。",
+              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health] <b>제작 장비</b>를 패에 추가합니다.",
+              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Plus5Attack5Health",
+                  "bonusDamage": 5,
+                  "bonusHP": 5
+                },
+                "paramInt": 3,
+                "paramCardPool": "CraftedEquipmentOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-dabc418014c58c5f-90dbef6f67400434187af8255bf2baaf-v2",
+                "english": "Apply +[effect0.upgrade.bonusdamage] [attack] and [armor] [effect1.status0.power] to the equipped friendly unit.",
+                "french": "Octroie <nobr>+[effect0.upgrade.bonusdamage] [attack]</nobr> et <nobr>[armor] [effect1.status0.power]</nobr> à l'allié équipé.",
+                "german": "Wende +[effect0.upgrade.bonusdamage] [attack] und [armor] [effect1.status0.power] auf die ausgerüstete verbündete Einheit an.",
+                "russian": "Союзнику со снаряжением дается +[effect0.upgrade.bonusdamage][attack] и [armor] х[effect1.status0.power].",
+                "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [armor] [effect1.status0.power] à unidade aliada equipada.",
+                "chinese": "使有装备的友方单位获得 +[effect0.upgrade.bonusdamage] [attack] 和 [armor] [effect1.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [armor] [effect1.status0.power] a la unidad aliada equipada.",
+                "chinese_traditional": "對已裝備的友方單位施加+[effect0.upgrade.bonusdamage][attack]和[armor][effect1.status0.power]。",
+                "korean": "장착된 아군 유닛들에 +[effect0.upgrade.bonusdamage][attack] 및 [armor] [effect1.status0.power] 효과를 적용합니다.",
+                "japanese": "装備している味方ユニットに+[effect0.upgrade.bonusdamage] [attack]と[armor] [effect1.status0.power]を付与する。"
+              },
+              "trigger": "on_equipment_added_to_any",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "last_equipped_character",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "Plus10Attack",
+                    "bonusDamage": 10
+                  }
+                },
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "last_equipped_character",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "armor",
+                      "count": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 5,
+          "bonusHP": 5
+        },
+        {
+          "id": "Railforged2Weaponsmith2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-6757ccf25773d755-7d892683d0cab544a9349f96368c39a0-v2",
+            "english": "Weaponsmith II",
+            "french": "Fabricant <nobr>d'armes II</nobr>",
+            "german": "Waffenschmied II",
+            "russian": "Оружейник II",
+            "portuguese": "Forja-Armas II",
+            "chinese": "武器匠 II",
+            "spanish": "Armera II",
+            "chinese_traditional": "武器匠II",
+            "korean": "무기 장인 II",
+            "japanese": "ウェポンスミスII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-a4df0cbf92473563-7d892683d0cab544a9349f96368c39a0-v2",
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionWeaponsmithAbility 1",
+            "nameKey": {
+              "key": "CardData_nameKey-8883a7e97bba1d70-18df99e086eee654cbe7c566f819c469-v2",
+              "english": "Weaponcraft II",
+              "french": "<nobr>Armurier II</nobr>",
+              "german": "Waffenmeister II",
+              "russian": "Оружейное дело II",
+              "portuguese": "Criação de Armas II",
+              "chinese": "武器制作 II",
+              "spanish": "Armería II",
+              "chinese_traditional": "武器工藝II",
+              "korean": "무기 제작 II",
+              "japanese": "武器鍛造II"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-e2148b0449ec2870-18df99e086eee654cbe7c566f819c469-v2",
+              "english": "Add a +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand.",
+              "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à votre main.",
+              "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> hinzu.",
+              "russian": "Добавляет в руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]).",
+              "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão.",
+              "chinese": "将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌",
+              "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano.",
+              "chinese_traditional": "將一件帶有+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入你的手牌。",
+              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health] <b>제작 장비</b>를 패에 추가합니다.",
+              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Plus10Attack10Health",
+                  "bonusDamage": 10,
+                  "bonusHP": 10
+                },
+                "paramInt": 3,
+                "paramCardPool": "CraftedEquipmentOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-77810ab266bf6ef8-7d892683d0cab544a9349f96368c39a0-v2",
+                "english": "Apply +[effect0.upgrade.bonusdamage] [attack] and [armor] [effect1.status0.power] to the equipped friendly unit.",
+                "french": "Octroie <nobr>+[effect0.upgrade.bonusdamage] [attack]</nobr> et <nobr>[armor] [effect1.status0.power]</nobr> à l'allié équipé.",
+                "german": "Wende +[effect0.upgrade.bonusdamage] [attack] und [armor] [effect1.status0.power] auf die ausgerüstete verbündete Einheit an.",
+                "russian": "Союзнику со снаряжением дается +[effect0.upgrade.bonusdamage][attack] и [armor] х[effect1.status0.power].",
+                "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [armor] [effect1.status0.power] à unidade aliada equipada.",
+                "chinese": "使有装备的友方单位获得 +[effect0.upgrade.bonusdamage] [attack] 和 [armor] [effect1.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [armor] [effect1.status0.power] a la unidad aliada equipada.",
+                "chinese_traditional": "對已裝備的友方單位施加+[effect0.upgrade.bonusdamage][attack]和[armor][effect1.status0.power]。",
+                "korean": "장착된 아군 유닛들에 +[effect0.upgrade.bonusdamage][attack] 및 [armor] [effect1.status0.power] 효과를 적용합니다.",
+                "japanese": "装備している味方ユニットに+[effect0.upgrade.bonusdamage] [attack]と[armor] [effect1.status0.power]を付与する。"
+              },
+              "trigger": "on_equipment_added_to_any",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "last_equipped_character",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "Plus20Attack",
+                    "bonusDamage": 20
+                  }
+                },
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "last_equipped_character",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "armor",
+                      "count": 10
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 10,
+          "bonusHP": 20
+        },
+        {
+          "id": "Railforged2Weaponsmith3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-4a6b24c2771f18e5-32bfff2d4685c0c47a9dee2fb7d7c304-v2",
+            "english": "Weaponsmith III",
+            "french": "Fabricant <nobr>d'armes III</nobr>",
+            "german": "Waffenschmied III",
+            "russian": "Оружейник III",
+            "portuguese": "Forja-Armas III",
+            "chinese": "武器匠 III",
+            "spanish": "Armera III",
+            "chinese_traditional": "武器匠III",
+            "korean": "무기 장인 III",
+            "japanese": "ウェポンスミスIII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-9356ed9266e6205f-32bfff2d4685c0c47a9dee2fb7d7c304-v2",
+          "unitAbilityUpgrade": {
+            "id": "RailforgedChampionWeaponsmithAbility 2",
+            "nameKey": {
+              "key": "CardData_nameKey-25bc470b50ca526c-bee592504981d6040ad158dcd5a8ea1f-v2",
+              "english": "Weaponcraft III",
+              "french": "<nobr>Armurier III</nobr>",
+              "german": "Waffenmeister III",
+              "russian": "Оружейное дело III",
+              "portuguese": "Criação de Armas III",
+              "chinese": "武器制作 III",
+              "spanish": "Armería III",
+              "chinese_traditional": "武器工藝III",
+              "korean": "무기 제작 III",
+              "japanese": "武器鍛造III"
+            },
+            "overrideDescriptionKey": {
+              "key": "CardData_overrideDescriptionKey-12dbf34bc9cf72df-bee592504981d6040ad158dcd5a8ea1f-v2",
+              "english": "Add a +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] <b>Crafted Equipment</b> to your hand.",
+              "french": "Ajoute un <b>Équipement artisanal</b> +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à votre main.",
+              "german": "Füge deiner Hand +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health] <b>Hergestellte Ausrüstung</b> hinzu.",
+              "russian": "Добавляет в руку <b>Мастеровое снаряжение</b> (+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health]).",
+              "portuguese": "Adiciona um <b>Equipamento Fabricado</b> com +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à sua mão.",
+              "chinese": "将一件带有 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health] 的<b>手作装备</b>加入你的手牌",
+              "spanish": "Añade un <b>Equipo artesanal</b> +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a tu mano.",
+              "chinese_traditional": "將一件帶有+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]的<b>手工裝備</b>加入你的手牌。",
+              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health] <b>제작 장비</b>를 패에 추가합니다.",
+              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]の<b>精巧な装備品</b>を手札に追加する。"
+            },
+            "cardType": "spell",
+            "rarity": "common",
+            "cardArtPrefabVariantRef": {
+              "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailforgedCraftAbility.prefab",
+              "m_AssetGUID": "02767095d4d7e7448b56c801c5c8f0c8"
+            },
+            "effects": [
+              {
+                "effectStateName": "CardEffectAddBattleCard",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramCardUpgradeData": {
+                  "id": "Plus20Attack20Health1",
+                  "bonusDamage": 20,
+                  "bonusHP": 20
+                },
+                "paramInt": 3,
+                "paramCardPool": "CraftedEquipmentOnlyPool"
+              }
+            ],
+            "cooldownAfterActivated": 2,
+            "isUnitAbility": true,
+            "requiredDLC": "railforged",
+            "initialKeyboardTarget": "front_friendly"
+          },
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-f8567b48f23e1778-32bfff2d4685c0c47a9dee2fb7d7c304-v2",
+                "english": "Apply +[effect0.upgrade.bonusdamage] [attack] and [armor] [effect1.status0.power] to the equipped friendly unit.",
+                "french": "Octroie <nobr>+[effect0.upgrade.bonusdamage] [attack]</nobr> et <nobr>[armor] [effect1.status0.power]</nobr> à l'allié équipé.",
+                "german": "Wende +[effect0.upgrade.bonusdamage] [attack] und [armor] [effect1.status0.power] auf die ausgerüstete verbündete Einheit an.",
+                "russian": "Союзникам со снаряжением дается +[effect0.upgrade.bonusdamage][attack] и [armor] х[effect1.status0.power].",
+                "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [armor] [effect1.status0.power] à unidade aliada equipada.",
+                "chinese": "使有装备的友方单位获得 +[effect0.upgrade.bonusdamage] [attack] 和 [armor] [effect1.status0.power]。",
+                "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [armor] [effect1.status0.power] a la unidad aliada equipada.",
+                "chinese_traditional": "對已裝備的友方單位施加+[effect0.upgrade.bonusdamage][attack]和[armor][effect1.status0.power]。",
+                "korean": "장착된 아군 유닛들에 +[effect0.upgrade.bonusdamage][attack] 및 [armor] [effect1.status0.power] 효과를 적용합니다.",
+                "japanese": "装備している味方ユニットに+[effect0.upgrade.bonusdamage] [attack]と[armor] [effect1.status0.power]を付与する。"
+              },
+              "trigger": "on_equipment_added_to_any",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+                  "targetMode": "last_equipped_character",
+                  "targetTeamType": "monsters",
+                  "paramCardUpgradeData": {
+                    "id": "Plus30Attack",
+                    "bonusDamage": 30
+                  }
+                },
+                {
+                  "effectStateName": "CardEffectAddStatusEffect",
+                  "targetMode": "last_equipped_character",
+                  "targetTeamType": "monsters",
+                  "paramStatusEffects": [
+                    {
+                      "statusId": "armor",
+                      "count": 20
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 20,
+          "bonusHP": 55
+        }
+      ]
+    },
+    {
+      "cardUpgrades": [
+        {
+          "id": "Railforged2Metalworker",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-0aa96ae4e8f40b2d-04bf3127bef637445af07bcaf777d652-v2",
+            "english": "Metalworker",
+            "french": "Métallier",
+            "german": "Metallarbeiter",
+            "russian": "Мастер по металлу",
+            "portuguese": "Metalúrgico",
+            "chinese": "金属工人",
+            "spanish": "Metalúrgica",
+            "chinese_traditional": "金屬工匠",
+            "korean": "금속 작업자",
+            "japanese": "メタルワーカー"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-325ac757ca838c90-04bf3127bef637445af07bcaf777d652-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-211ce4ba0f0a6654-04bf3127bef637445af07bcaf777d652-v2",
+                "english": "Add [effect0.secondarypower] <b>Scrap Metal</b> cards to your hand.",
+                "french": "Ajoute <nobr>[effect0.secondarypower] cartes</nobr> <b>Métal de récupération</b> à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Schrottmetall</b>-Karten hinzu.",
+                "russian": "Добавляет в вашу руку <b>Металлолом</b> х[effect0.secondarypower].",
+                "portuguese": "Adicione [effect0.secondarypower] cartas de <b>Sucata de Metal</b> à sua mão.",
+                "chinese": "将 [effect0.secondarypower] 张<b>废金属</b>卡牌加入你的手牌。",
+                "spanish": "Añade [effect0.secondarypower] cartas de <b>Chatarra metálica</b> a tu mano.",
+                "chinese_traditional": "將[effect0.secondarypower]張<b>廢金屬</b>卡牌加入你的手牌。",
+                "korean": "패에 있는 카드들에 [effect0.secondarypower] <b>고철</b> 효과를 적용합니다.",
+                "japanese": "手札に<b>鉄屑</b>のカード[effect0.secondarypower]枚追加する。"
+              },
+              "trigger": "on_spawn",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "both",
+                  "paramInt": 3,
+                  "additionalParamInt": 2,
+                  "paramCardPool": "ScrapMetalOnlyPool"
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-92a7d5f4b51e1691-04bf3127bef637445af07bcaf777d652-v2",
+                "english": "Apply [refined] [effect0.upgrade.trait0.power] to <b>Scrap Metal</b> cards in hand.",
+                "french": "Confère [refined] [effect0.upgrade.trait0.power] aux cartes <b>Métal de récupération</b> en main.",
+                "german": "Wende [refined] [effect0.upgrade.trait0.power] auf <b>Schrottmetall</b>-Karten auf der Hand an.",
+                "russian": "Картам <b>Металлолома</b> в руке добавляется [refined] х[effect0.upgrade.trait0.power].",
+                "portuguese": "Concede [refined] [effect0.upgrade.trait0.power] às cartas de <b>Sucata de Metal</b> na mão.",
+                "chinese": "使手牌中的<b>废金属</b>卡牌获得 [refined] [effect0.upgrade.trait0.power]。",
+                "spanish": "Añade [refined] [effect0.upgrade.trait0.power] a las cartas <b>Chatarra metálica</b> de tu mano.",
+                "chinese_traditional": "對手牌中的<b>廢金屬</b>卡牌施加[refined][effect0.upgrade.trait0.power]。",
+                "korean": "패에 있는 <b>고철</b> 카드들에 [refined] [effect0.upgrade.trait0.power] 효과를 적용합니다.",
+                "japanese": "手札の<b>鉄屑</b>のカードに[refined] [effect0.upgrade.trait0.power]を付与する。"
+              },
+              "trigger": "end_turn_pre_hand_discard",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToCardsInHand",
+                  "targetMode": "room",
+                  "targetTeamType": "both",
+                  "paramCardUpgradeData": {
+                    "id": "Refined1",
+                    "traitDataUpgrades": [
+                      {
+                        "traitStateName": "CardTraitRefine",
+                        "paramInt": 1,
+                        "traitIsRemovable": false,
+                        "stackMode": "param_int"
+                      }
+                    ],
+                    "filters": [
+                      {
+                        "id": "OnlyScrapMetal",
+                        "allowedCardPools": [
+                          "ScrapMetalOnlyPool"
+                        ]
+                      }
+                    ]
+                  },
+                  "additionalTooltips": [
+                    {
+                      "statusId": "rooted",
+                      "descriptionKey": {
+                        "key": "CardTraitRefine_TooltipText",
+                        "english": "Increases [forgepoints] and [ember] gained from [smelt] by 1 per stack.",
+                        "french": "Augmente les [forgepoints] et [ember] obtenus par [smelt] de 1 par effet cumulé.",
+                        "german": "Erhöht die durch [smelt] erlangten [forgepoints] und [ember] pro Stapel um 1.",
+                        "russian": "[smelt] повышает [forgepoints] и [ember] по 1 за слой.",
+                        "portuguese": "Aumenta em 1 por carga os [forgepoints] e [ember] obtidos ao [smelt].",
+                        "chinese": "每层使通过[smelt]获得的 [forgepoints] 和 [ember] 增加 1 点",
+                        "spanish": "Aumenta los [forgepoints] y las [ember] obtenidas mediante [smelt] en 1 por acumulación.",
+                        "chinese_traditional": "每層使從[smelt]獲得的[forgepoints]和[ember]增加1。",
+                        "korean": "스택당 [smelt]에서 얻는 [forgepoints] 및 [ember]이 1 증가합니다.",
+                        "japanese": "[smelt]によって得る[forgepoints]と[ember]を1スタックごとに1増加させる。"
+                      },
+                      "titleKey": {
+                        "key": "CardTraitRefine_CardText",
+                        "english": "Refined",
+                        "french": "Raffinement",
+                        "german": "Veredelt",
+                        "russian": "Очистка",
+                        "portuguese": "Refino",
+                        "chinese": "精炼",
+                        "spanish": "Refinación",
+                        "chinese_traditional": "精煉",
+                        "korean": "정제",
+                        "japanese": "精製"
+                      }
+                    },
+                    {
+                      "statusId": "rooted",
+                      "descriptionKey": {
+                        "key": "CardTraitPersistent_TooltipText",
+                        "english": "This card cannot be discarded for any reason, and is not discarded at the end of the turn.",
+                        "french": "Cette carte ne peut pas être défaussée et n'est pas défaussée à la fin du tour.",
+                        "german": "Diese Karte kann unter keinen Umständen abgeworfen werden und wird am Ende des Zuges abgeworfen",
+                        "russian": "Эту карту нельзя сбросить ни во время хода, ни в конце.",
+                        "portuguese": "Esta carta não pode ser descartada por qualquer motivo e não é descartada no final do turno.",
+                        "chinese": "此卡牌不会因为任何理由而被舍弃，回合结束时也不会被舍弃。",
+                        "spanish": "Esta carta no puede descartarse por ningún motivo y no se descarta al final del turno.",
+                        "chinese_traditional": "此卡無法因任何原因被捨棄，且不會在回合結束時捨棄。",
+                        "korean": "이 카드는 어떤 효과로도 버릴 수 없으며, 턴이 끝날 때 버려지지 않습니다.",
+                        "japanese": "このカードはいかなる理由でも破棄ができず、ターン終了時にも破棄されない。"
+                      },
+                      "titleKey": {
+                        "key": "CardTraitPersistent_CardText",
+                        "english": "Persistent",
+                        "french": "Persistance",
+                        "german": "Beständig",
+                        "russian": "Стойкость",
+                        "portuguese": "Persistência",
+                        "chinese": "持久",
+                        "spanish": "Persistente",
+                        "chinese_traditional": "持續",
+                        "korean": "지속",
+                        "japanese": "持続性"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 5,
+          "bonusHP": 5
+        },
+        {
+          "id": "Railforged2Metalworker2",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-536d03045d51f914-2921420d7892f79479cfd8a138845353-v2",
+            "english": "Metalworker II",
+            "french": "<nobr>Métallier II</nobr>",
+            "german": "Metallarbeiter II",
+            "russian": "Мастер по металлу II",
+            "portuguese": "Metalúrgico II",
+            "chinese": "金属工人 II",
+            "spanish": "Metalúrgica II",
+            "chinese_traditional": "金屬工匠II",
+            "korean": "금속 작업자 II",
+            "japanese": "メタルワーカーII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-ecd98ec23b82a3cb-2921420d7892f79479cfd8a138845353-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-a4e4bd02bf785f68-2921420d7892f79479cfd8a138845353-v2",
+                "english": "Add [effect0.secondarypower] <b>Scrap Metal</b> cards to your hand.",
+                "french": "Ajoute <nobr>[effect0.secondarypower] cartes</nobr> <b>Métal de récupération</b> à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Schrottmetall</b>-Karten hinzu.",
+                "russian": "Добавляет в вашу руку <b>Металлолом</b> х[effect0.secondarypower].",
+                "portuguese": "Adicione [effect0.secondarypower] cartas de <b>Sucata de Metal</b> à sua mão.",
+                "chinese": "将 [effect0.secondarypower] 张<b>废金属</b>卡牌加入你的手牌。",
+                "spanish": "Añade [effect0.secondarypower] cartas de <b>Chatarra metálica</b> a tu mano.",
+                "chinese_traditional": "將[effect0.secondarypower]張<b>廢金屬</b>卡牌加入你的手牌。",
+                "korean": "패에 있는 카드들에 [effect0.secondarypower] <b>고철</b> 효과를 적용합니다.",
+                "japanese": "手札に<b>鉄屑</b>のカード[effect0.secondarypower]枚追加する。"
+              },
+              "trigger": "on_spawn",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3,
+                  "additionalParamInt": 2,
+                  "paramCardPool": "ScrapMetalOnlyPool"
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-55127d7563c29e7b-2921420d7892f79479cfd8a138845353-v2",
+                "english": "Apply [refined] [effect0.upgrade.trait0.power] to <b>Scrap Metal</b> cards in hand.",
+                "french": "Confère [refined] [effect0.upgrade.trait0.power] aux cartes <b>Métal de récupération</b> en main.",
+                "german": "Wende [refined] [effect0.upgrade.trait0.power] auf <b>Schrottmetall</b>-Karten auf der Hand an.",
+                "russian": "Картам <b>Металлолома</b> в руке добавляется [refined] х[effect0.upgrade.trait0.power].",
+                "portuguese": "Concede [refined] [effect0.upgrade.trait0.power] às cartas de <b>Sucata de Metal</b> na mão.",
+                "chinese": "使手牌中的<b>废金属</b>卡牌获得 [refined] [effect0.upgrade.trait0.power]。",
+                "spanish": "Añade [refined] [effect0.upgrade.trait0.power] a las cartas <b>Chatarra metálica</b> de tu mano.",
+                "chinese_traditional": "對手牌中的<b>廢金屬</b>卡牌施加[refined][effect0.upgrade.trait0.power]。",
+                "korean": "패에 있는 <b>고철</b> 카드들에 [refined] [effect0.upgrade.trait0.power] 효과를 적용합니다.",
+                "japanese": "手札の<b>鉄屑</b>のカードに[refined] [effect0.upgrade.trait0.power]を付与する。"
+              },
+              "trigger": "end_turn_pre_hand_discard",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToCardsInHand",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "Refined2",
+                    "traitDataUpgrades": [
+                      {
+                        "traitStateName": "CardTraitRefine",
+                        "paramInt": 2,
+                        "traitIsRemovable": false,
+                        "stackMode": "param_int"
+                      }
+                    ],
+                    "filters": [
+                      {
+                        "id": "OnlyScrapMetal",
+                        "allowedCardPools": [
+                          "ScrapMetalOnlyPool"
+                        ]
+                      }
+                    ]
+                  },
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "CardTraitRefine_TooltipText",
+                        "english": "Increases [forgepoints] and [ember] gained from [smelt] by 1 per stack.",
+                        "french": "Augmente les [forgepoints] et [ember] obtenus par [smelt] de 1 par effet cumulé.",
+                        "german": "Erhöht die durch [smelt] erlangten [forgepoints] und [ember] pro Stapel um 1.",
+                        "russian": "[smelt] повышает [forgepoints] и [ember] по 1 за слой.",
+                        "portuguese": "Aumenta em 1 por carga os [forgepoints] e [ember] obtidos ao [smelt].",
+                        "chinese": "每层使通过[smelt]获得的 [forgepoints] 和 [ember] 增加 1 点",
+                        "spanish": "Aumenta los [forgepoints] y las [ember] obtenidas mediante [smelt] en 1 por acumulación.",
+                        "chinese_traditional": "每層使從[smelt]獲得的[forgepoints]和[ember]增加1。",
+                        "korean": "스택당 [smelt]에서 얻는 [forgepoints] 및 [ember]이 1 증가합니다.",
+                        "japanese": "[smelt]によって得る[forgepoints]と[ember]を1スタックごとに1増加させる。"
+                      },
+                      "titleKey": {
+                        "key": "CardTraitRefine_CardText",
+                        "english": "Refined",
+                        "french": "Raffinement",
+                        "german": "Veredelt",
+                        "russian": "Очистка",
+                        "portuguese": "Refino",
+                        "chinese": "精炼",
+                        "spanish": "Refinación",
+                        "chinese_traditional": "精煉",
+                        "korean": "정제",
+                        "japanese": "精製"
+                      }
+                    },
+                    {
+                      "descriptionKey": {
+                        "key": "CardTraitPersistent_TooltipText",
+                        "english": "This card cannot be discarded for any reason, and is not discarded at the end of the turn.",
+                        "french": "Cette carte ne peut pas être défaussée et n'est pas défaussée à la fin du tour.",
+                        "german": "Diese Karte kann unter keinen Umständen abgeworfen werden und wird am Ende des Zuges abgeworfen",
+                        "russian": "Эту карту нельзя сбросить ни во время хода, ни в конце.",
+                        "portuguese": "Esta carta não pode ser descartada por qualquer motivo e não é descartada no final do turno.",
+                        "chinese": "此卡牌不会因为任何理由而被舍弃，回合结束时也不会被舍弃。",
+                        "spanish": "Esta carta no puede descartarse por ningún motivo y no se descarta al final del turno.",
+                        "chinese_traditional": "此卡無法因任何原因被捨棄，且不會在回合結束時捨棄。",
+                        "korean": "이 카드는 어떤 효과로도 버릴 수 없으며, 턴이 끝날 때 버려지지 않습니다.",
+                        "japanese": "このカードはいかなる理由でも破棄ができず、ターン終了時にも破棄されない。"
+                      },
+                      "titleKey": {
+                        "key": "CardTraitPersistent_CardText",
+                        "english": "Persistent",
+                        "french": "Persistance",
+                        "german": "Beständig",
+                        "russian": "Стойкость",
+                        "portuguese": "Persistência",
+                        "chinese": "持久",
+                        "spanish": "Persistente",
+                        "chinese_traditional": "持續",
+                        "korean": "지속",
+                        "japanese": "持続性"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 15,
+          "bonusHP": 15
+        },
+        {
+          "id": "Railforged2Metalworker3",
+          "upgradeTitleKey": {
+            "key": "CardUpgradeData_upgradeTitleKey-3d03d1446a2aabe6-6db31b2d229784841af78abfe51df67b-v2",
+            "english": "Metalworker III",
+            "french": "<nobr>Métallier III</nobr>",
+            "german": "Metallarbeiter III",
+            "russian": "Мастер по металлу III",
+            "portuguese": "Metalúrgico III",
+            "chinese": "金属工人 III",
+            "spanish": "Metalúrgica III",
+            "chinese_traditional": "金屬工匠III",
+            "korean": "금속 작업자 III",
+            "japanese": "メタルワーカーIII"
+          },
+          "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-d237a951cf343994-6db31b2d229784841af78abfe51df67b-v2",
+          "triggerUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-4e6a9e1232ea124d-6db31b2d229784841af78abfe51df67b-v2",
+                "english": "Add [effect0.secondarypower] <b>Scrap Metal</b> cards to your hand.",
+                "french": "Ajoute <nobr>[effect0.secondarypower] cartes</nobr> <b>Métal de récupération</b> à votre main.",
+                "german": "Füge deiner Hand [effect0.secondarypower] <b>Schrottmetall</b>-Karten hinzu.",
+                "russian": "Добавляет в вашу руку <b>Металлолом</b> х[effect0.secondarypower].",
+                "portuguese": "Adicione [effect0.secondarypower] cartas de <b>Sucata de Metal</b> à sua mão.",
+                "chinese": "将 [effect0.secondarypower] 张<b>废金属</b>卡牌加入你的手牌。",
+                "spanish": "Añade [effect0.secondarypower] cartas de <b>Chatarra metálica</b> a tu mano.",
+                "chinese_traditional": "將[effect0.secondarypower]張<b>廢金屬</b>卡牌加入你的手牌。",
+                "korean": "패에 있는 카드들에 [effect0.secondarypower] <b>고철</b> 효과를 적용합니다.",
+                "japanese": "手札に<b>鉄屑</b>のカード[effect0.secondarypower]枚追加する。"
+              },
+              "trigger": "on_spawn",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddBattleCard",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramInt": 3,
+                  "additionalParamInt": 3,
+                  "paramCardPool": "ScrapMetalOnlyPool"
+                }
+              ]
+            },
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-58c27391621dad23-6db31b2d229784841af78abfe51df67b-v2",
+                "english": "Apply [refined] [effect0.upgrade.trait0.power] to <b>Scrap Metal</b> cards in hand.",
+                "french": "Confère [refined] [effect0.upgrade.trait0.power] aux cartes <b>Métal de récupération</b> en main.",
+                "german": "Wende [refined] [effect0.upgrade.trait0.power] auf <b>Schrottmetall</b>-Karten auf der Hand an.",
+                "russian": "Картам <b>Металлолома</b> в руке добавляется [refined] х[effect0.upgrade.trait0.power].",
+                "portuguese": "Concede [refined] [effect0.upgrade.trait0.power] às cartas de <b>Sucata de Metal</b> na mão.",
+                "chinese": "使手牌中的<b>废金属</b>卡牌获得 [refined] [effect0.upgrade.trait0.power]。",
+                "spanish": "Añade [refined] [effect0.upgrade.trait0.power] a las cartas <b>Chatarra metálica</b> de tu mano.",
+                "chinese_traditional": "對手牌中的<b>廢金屬</b>卡牌施加[refined][effect0.upgrade.trait0.power]。",
+                "korean": "패에 있는 <b>고철</b> 카드들에 [refined] [effect0.upgrade.trait0.power] 효과를 적용합니다.",
+                "japanese": "手札の<b>鉄屑</b>のカードに[refined] [effect0.upgrade.trait0.power]を付与する。"
+              },
+              "trigger": "end_turn_pre_hand_discard",
+              "effects": [
+                {
+                  "effectStateName": "CardEffectAddTempCardUpgradeToCardsInHand",
+                  "targetMode": "room",
+                  "targetTeamType": "none",
+                  "paramCardUpgradeData": {
+                    "id": "Refined2",
+                    "traitDataUpgrades": [
+                      {
+                        "traitStateName": "CardTraitRefine",
+                        "paramInt": 2,
+                        "traitIsRemovable": false,
+                        "stackMode": "param_int"
+                      }
+                    ],
+                    "filters": [
+                      {
+                        "id": "OnlyScrapMetal",
+                        "allowedCardPools": [
+                          "ScrapMetalOnlyPool"
+                        ]
+                      }
+                    ]
+                  },
+                  "additionalTooltips": [
+                    {
+                      "descriptionKey": {
+                        "key": "CardTraitRefine_TooltipText",
+                        "english": "Increases [forgepoints] and [ember] gained from [smelt] by 1 per stack.",
+                        "french": "Augmente les [forgepoints] et [ember] obtenus par [smelt] de 1 par effet cumulé.",
+                        "german": "Erhöht die durch [smelt] erlangten [forgepoints] und [ember] pro Stapel um 1.",
+                        "russian": "[smelt] повышает [forgepoints] и [ember] по 1 за слой.",
+                        "portuguese": "Aumenta em 1 por carga os [forgepoints] e [ember] obtidos ao [smelt].",
+                        "chinese": "每层使通过[smelt]获得的 [forgepoints] 和 [ember] 增加 1 点",
+                        "spanish": "Aumenta los [forgepoints] y las [ember] obtenidas mediante [smelt] en 1 por acumulación.",
+                        "chinese_traditional": "每層使從[smelt]獲得的[forgepoints]和[ember]增加1。",
+                        "korean": "스택당 [smelt]에서 얻는 [forgepoints] 및 [ember]이 1 증가합니다.",
+                        "japanese": "[smelt]によって得る[forgepoints]と[ember]を1スタックごとに1増加させる。"
+                      },
+                      "titleKey": {
+                        "key": "CardTraitRefine_CardText",
+                        "english": "Refined",
+                        "french": "Raffinement",
+                        "german": "Veredelt",
+                        "russian": "Очистка",
+                        "portuguese": "Refino",
+                        "chinese": "精炼",
+                        "spanish": "Refinación",
+                        "chinese_traditional": "精煉",
+                        "korean": "정제",
+                        "japanese": "精製"
+                      }
+                    },
+                    {
+                      "descriptionKey": {
+                        "key": "CardTraitPersistent_TooltipText",
+                        "english": "This card cannot be discarded for any reason, and is not discarded at the end of the turn.",
+                        "french": "Cette carte ne peut pas être défaussée et n'est pas défaussée à la fin du tour.",
+                        "german": "Diese Karte kann unter keinen Umständen abgeworfen werden und wird am Ende des Zuges abgeworfen",
+                        "russian": "Эту карту нельзя сбросить ни во время хода, ни в конце.",
+                        "portuguese": "Esta carta não pode ser descartada por qualquer motivo e não é descartada no final do turno.",
+                        "chinese": "此卡牌不会因为任何理由而被舍弃，回合结束时也不会被舍弃。",
+                        "spanish": "Esta carta no puede descartarse por ningún motivo y no se descarta al final del turno.",
+                        "chinese_traditional": "此卡無法因任何原因被捨棄，且不會在回合結束時捨棄。",
+                        "korean": "이 카드는 어떤 효과로도 버릴 수 없으며, 턴이 끝날 때 버려지지 않습니다.",
+                        "japanese": "このカードはいかなる理由でも破棄ができず、ターン終了時にも破棄されない。"
+                      },
+                      "titleKey": {
+                        "key": "CardTraitPersistent_CardText",
+                        "english": "Persistent",
+                        "french": "Persistance",
+                        "german": "Beständig",
+                        "russian": "Стойкость",
+                        "portuguese": "Persistência",
+                        "chinese": "持久",
+                        "spanish": "Persistente",
+                        "chinese_traditional": "持續",
+                        "korean": "지속",
+                        "japanese": "持続性"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "roomModifierUpgrades": [
+            {
+              "descriptionKey": {
+                "key": "CardUpgradeData_descriptionKey-d6d78de85a0f0614-6db31b2d229784841af78abfe51df67b-v2",
+                "english": "[smelt] yields are doubled on this floor.",
+                "french": "Les rendements de la [smelt] sont doublés.",
+                "german": "[smelt]-Ertrag wird verdoppelt.",
+                "russian": "[smelt]: удвоенный эффект.",
+                "portuguese": "Dobra os produtos de [smelt].",
+                "chinese": "[smelt] 的收益加倍。",
+                "spanish": "Duplica los beneficios de [smelt].",
+                "chinese_traditional": "[smelt]產量加倍。",
+                "korean": "[smelt] 산출량이 두 배가 됩니다.",
+                "japanese": "[smelt]での生産量が2倍になる。"
+              },
+              "roomStateModifierClassName": "RoomStateEmberForCostModifier",
+              "overrideTitleKey": "CardUpgradeData_overrideTitleKey-6c9c7f48c9811c05-6db31b2d229784841af78abfe51df67b-v2",
+              "paramFloat": 1.0
+            },
+            {
+              "roomStateModifierClassName": "RoomStateForgePointsForCostModifier",
+              "tooltipsSuppressed": true,
+              "paramFloat": 1.0
+            }
+          ],
+          "showUpgradeDescriptionOnCards": true,
+          "bonusDamage": 30,
+          "bonusHP": 30
+        }
+      ]
+    }
+  ]
+}

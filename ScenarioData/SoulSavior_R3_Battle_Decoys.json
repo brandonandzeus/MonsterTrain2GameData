@@ -1,0 +1,332 @@
+{
+  "id": "SoulSavior_R3_Battle_Decoys",
+  "name": "SoulSavior_R3_Battle_Decoys",
+  "battleNameKey": {
+    "key": "ScenarioData_battleNameKey-4fe5248d4958cf4a-e4c3719c3336edb4f818eccd05cbbe34-v2",
+    "english": "Rabble-Rousers",
+    "french": "Trublions",
+    "german": "Aufwiegler",
+    "russian": "Смутьяны",
+    "portuguese": "Agitadores",
+    "chinese": "暴民煽动者",
+    "spanish": "Agitadores",
+    "chinese_traditional": "煽動者",
+    "korean": "선동꾼",
+    "japanese": "ラブル・ラウザー"
+  },
+  "battleDescriptionKey": {
+    "key": "ScenarioData_battleDescriptionKey-b3f07a7f01f62b33-e4c3719c3336edb4f818eccd05cbbe34-v2",
+    "english": "Cruel laughter reverberates along the train. These enemies seek to taunt and disrupt as much as they wish to destroy.",
+    "french": "Des ricanements sadiques résonnent à travers le train. Ces adversaires ne cherchent pas seulement à vous détruire, mais aussi à vous narguer et à briser vos rangs.",
+    "german": "Grausames Gelächter erklingt durch den Zug. Diese Feinde wollen nicht nur zerstören, sondern ebenso bereitwillig verspotten und stören.",
+    "russian": "Жестокий смех катится вдоль состава: эти твари живут, чтобы дразнить, сбивать строй и ломать все, до чего дотянутся.",
+    "portuguese": "Risos cruéis ecoam ao longo do trem. Estes inimigos procuram provocar e perturbar tanto quanto desejam destruir.",
+    "chinese": "无情的笑声在车厢里回荡。这些敌人既想消灭你，又想嘲讽你以及制造混乱。",
+    "spanish": "Unas risas crueles resuenan por el tren. Estos enemigos quieren provocar e interferir tanto como quieren destruir.",
+    "chinese_traditional": "殘酷的笑聲在列車間迴盪。這些敵人渴望破壞，更樂於進行嘲弄與擾亂。",
+    "korean": "잔혹한 웃음소리가 열차 안에 울려 퍼집니다. 이 적들은 적을 파괴하는 동시에, 도발하고 혼란을 일으키려 합니다.",
+    "japanese": "列車の中を残酷な笑いが響き渡る。この敵は破壊だけでなく、挑発や妨害も同じくらい好む。"
+  },
+  "bossVariant": {
+    "id": "SoulSavior_Region3Bosses",
+    "bossVariants": [
+      "Boss_SoulSavior_R3_TrainBoss_Reanimate",
+      "Boss_SoulSavior_R3_TrainBoss_Spikes"
+    ]
+  },
+  "trials": {
+    "id": "T1Trials",
+    "listName": "T1Trials",
+    "trialDatas": [
+      "T1nvasion",
+      "T1Draw",
+      "T1EnemyTitanskin",
+      "T1Ember"
+    ]
+  },
+  "difficulty": "normal",
+  "minTreasureUnits": 1,
+  "maxTreasureUnits": 1,
+  "treasureCharacterPool": [
+    "TreasureBagLvl1Gold"
+  ],
+  "displayedEnemies": [
+    "R3_Horde_T1_Decoy",
+    "R3_AttackerT2_HunterSeeker_Ver2"
+  ],
+  "backgroundData": "SoulSaviorBackgroundData",
+  "spawnPattern": {
+    "spawnGroupWaves": [
+      {
+        "name": "Decoy x2/Attack",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true,
+                "requiredDifficultyTier": 3
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Decoy/Heavy/Attack",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2",
+                "suppressSpawn": true
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2",
+                "suppressSpawn": true,
+                "requiredMutator": "SoulSavior_RunDistance1"
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true,
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Decoy/Attack x2",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true,
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "(Regions Complete 1) Decoy/Heavy/Attack",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true,
+                "requiredDifficultyTier": 2
+              },
+              {
+                "characterData": "R3_HeavyT1_Basic_Ver2",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance1"
+      },
+      {
+        "name": "(Regions Complete 2) Decoy/Attack x2",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_AttackerT2_HunterSeeker_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance1"
+                  }
+                ],
+                "characterData": "R3_AttackerT2_HunterSeeker",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 3,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "suppressSpawn": true,
+                "requiredDifficultyTier": 3
+              }
+            ]
+          }
+        ],
+        "requiredMutator": "SoulSavior_RunDistance2"
+      },
+      {
+        "name": "Boss/Decoy",
+        "possibleGroups": [
+          {
+            "characterDataContainerList": [
+              {
+                "characterData": "Boss_SoulSavior_R3_TrainBoss_Reanimate",
+                "useBossCharacter": true
+              },
+              {
+                "replacements": [
+                  {
+                    "characterData": "R3_Horde_T3_Decoy_Ver2",
+                    "requiredDifficultyTier": 2,
+                    "requiredMutator": "SoulSavior_RunDistance2"
+                  }
+                ],
+                "characterData": "R3_Horde_T1_Decoy",
+                "requiredDifficultyTier": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bossType": "none",
+    "bossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend",
+    "hardBossCharacter": "Boss_SoulSavior_R1_Dutiful_AscendDescend"
+  }
+}

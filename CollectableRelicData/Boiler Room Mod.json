@@ -1,0 +1,97 @@
+{
+  "id": "TrainRoomInstallFloor1AtStartOfCombat",
+  "name": "Boiler Room Mod",
+  "nameKey": {
+    "key": "CollectableRelicData_nameKey-58b5c1c685663e06-9cc59f3c9d524ab75886b89a4c686cc1-v2",
+    "english": "Boiler Room Mod",
+    "french": "Mod Chaufferie",
+    "german": "Heizraum-Mod",
+    "russian": "Котельная",
+    "portuguese": "Modificação da Sala da Caldeira",
+    "chinese": "锅炉房模组",
+    "spanish": "Mod de Cuarto de calderas",
+    "chinese_traditional": "鍋爐房改造",
+    "korean": "보일러실 모드",
+    "japanese": "ボイラー室の補正"
+  },
+  "descriptionKey": {
+    "key": "CollectableRelicData_descriptionKey-bdcdaeb9c68742f0-9cc59f3c9d524ab75886b89a4c686cc1-v2",
+    "english": "At the start of battle, apply <b>Boiler Room</b> on the first floor.",
+    "french": "Au début du combat, applique <b>Chaufferie</b> au premier niveau.",
+    "german": "Wende zu Beginn des Kampfes <b>Heizraum</b> auf die erste Ebene an.",
+    "russian": "В начале боя накладывает на первый этаж эффект <b>Котельная</b>.",
+    "portuguese": "No início da batalha, aplica <b>Sala da Caldeira</b> no primeiro andar.",
+    "chinese": "在战斗开始时，对第一层施加<b>锅炉房</b>。",
+    "spanish": "Al principio de la batalla, añade <b>Cuarto de calderas</b> al primer piso.",
+    "chinese_traditional": "在戰鬥開始時，在第一樓層施加<b>鍋爐房</b>。",
+    "korean": "전투 시작 시, 1층에 <b>보일러실</b> 효과를 적용합니다.",
+    "japanese": "バトルの開始時に、1階のフロアに<b>ボイラー室</b>を適用する。"
+  },
+  "relicLoreTooltipKeys": [
+    {
+      "key": "CollectableRelicData_data-e6fbd65484a5cf54-9cc59f3c9d524ab75886b89a4c686cc1-v2",
+      "english": "Trains don’t run on dreams and wishes. Behind every sheet of metal is an intricately engineered piece of work.",
+      "french": "Les trains ne sont pas alimentés par des rêves et des souhaits. Derrière chaque plaque de métal se cache un travail d'ingénierie complexe.",
+      "german": "Züge werden nicht von Träumen angetrieben. Hinter jedem Blech steckt ein ausgeklügeltes Stück Technik.",
+      "russian": "Чтобы поезд ехал, недостаточно об этом помечтать. За каждым листом металла скрывается сложнейшая конструкция.",
+      "portuguese": "Os trens não funcionam com sonhos e desejos. Por trás de cada chapa de metal há uma peça de engenharia complexa.",
+      "chinese": "火车可不是靠梦想和愿望就能行驶的。在每一块金属板背后都是错综复杂的工程学作品。",
+      "spanish": "Los trenes no funcionan a base de sueños y deseos. Tras cada lámina de metal hay una compleja obra de ingeniería.",
+      "chinese_traditional": "列車不是靠夢想和願望驅動的。每一片金屬背後都是一件精心設計的作品。",
+      "korean": "열차는 꿈과 소망으로 달리지 않는다. 모든 금속 뒤에는 정교하게 설계한 작품이 있기 때문이다.",
+      "japanese": "列車は夢や希望で走るのではない。金属板の裏には、精巧に設計された傑作が隠されているのだ。"
+    }
+  ],
+  "rarity": "champion",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
+      "paramCardUpgradeData": {
+        "id": "FuelCar_Upgrade",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-78e06ceffe1afab0-159f8ad9106796141acec5b8a4ed8e5b-v2",
+          "english": "Boiler Room",
+          "french": "Chaufferie",
+          "german": "Heizraum",
+          "russian": "Котельная",
+          "portuguese": "Sala da Caldeira",
+          "chinese": "锅炉房",
+          "spanish": "Cuarto de calderas",
+          "chinese_traditional": "鍋爐房",
+          "korean": "보일러실",
+          "japanese": "ボイラー室"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-3799adce9094bfce-159f8ad9106796141acec5b8a4ed8e5b-v2",
+          "english": "Gain [charactertrigger0.effect0.power][ember] when a unit dies.",
+          "french": "Octroie [charactertrigger0.effect0.power][ember] quand une unité meurt.",
+          "german": "Erhalte [charactertrigger0.effect0.power][ember], wenn eine Einheit stirbt.",
+          "russian": "Дает [effect0.upgrade.charactertrigger0.effect0.power][ember], когда погибает боец.",
+          "portuguese": "Recebe [charactertrigger0.effect0.power][ember] quando uma unidade morre.",
+          "chinese": "每当一个单位死亡时，获得 [charactertrigger0.effect0.power][ember]。",
+          "spanish": "Obtienes [charactertrigger0.effect0.power][ember] cuando una unidad muere.",
+          "chinese_traditional": "當一個單位死亡時，獲得[charactertrigger0.effect0.power][ember]。",
+          "korean": "유닛이 사망하면 [charactertrigger0.effect0.power][ember]을 획득합니다.",
+          "japanese": "ユニットが死亡すると、[charactertrigger0.effect0.power][ember]を得る。"
+        },
+        "triggerUpgrades": [
+          {
+            "trigger": "on_death",
+            "effects": [
+              {
+                "effectStateName": "CardEffectGainEnergy",
+                "targetMode": "room",
+                "targetTeamType": "none",
+                "paramInt": 1
+              }
+            ],
+            "hideVisualAndIgnoreSilence": true
+          }
+        ],
+        "hideUpgradeIconOnCard": true
+      },
+      "paramSourceTeam": null
+    }
+  ],
+  "fromStoryEvent": true
+}

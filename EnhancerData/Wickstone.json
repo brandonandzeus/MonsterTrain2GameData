@@ -1,0 +1,85 @@
+{
+  "id": "UnitUpgradeClanRemnantAddBurnout",
+  "name": "Wickstone",
+  "nameKey": {
+    "key": "EnhancerData_nameKey-177f6171ef3f8f41-d2e981fcbc4815c4a997c7937384b1cf-v2",
+    "english": "Wickstone",
+    "french": "Pierre de mèche",
+    "german": "Dochtstein",
+    "russian": "Каменный фитиль",
+    "portuguese": "Pedra de Pavio",
+    "chinese": "烛芯石",
+    "spanish": "Piedra mecha",
+    "chinese_traditional": "燭芯石",
+    "korean": "심지석",
+    "japanese": "芯の石"
+  },
+  "descriptionKey": {
+    "key": "EnhancerData_descriptionKey-abdb7560f1cadfe9-d2e981fcbc4815c4a997c7937384b1cf-v2",
+    "english": "Upgrade a unit with +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], and [burnout] [effect0.upgrade.status0.power].",
+    "french": "Améliore une unité avec +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] et [burnout] [effect0.upgrade.status0.power].",
+    "german": "Verbessere eine Einheit mit +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] und [burnout] [effect0.upgrade.status0.power].",
+    "russian": "Усиливает бойца, добавляя +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] [burnout] х[effect0.upgrade.status0.power].",
+    "portuguese": "Melhora uma unidade com +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] e [burnout][effect0.upgrade.status0.power].",
+    "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，和[burnout] [effect0.upgrade.status0.power]。",
+    "spanish": "Mejora una unidad con +[effect0.upgrade.bonusdamage][attack], [effect0.upgrade.bonushp][health] y [burnout][effect0.upgrade.status0.power].",
+    "chinese_traditional": "升級一個單位，使其獲得+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]和[burnout][effect0.upgrade.status0.power]。",
+    "korean": "유닛을 업그레이드하여 +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health], [burnout] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+    "japanese": "ユニットアップグレード：+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]、[burnout] [effect0.upgrade.status0.power]"
+  },
+  "rarity": "common",
+  "linkedClass": "ClassRemnant",
+  "effects": [
+    {
+      "relicEffectClassName": "RelicEffectCardUpgrade",
+      "paramCardType": "monster",
+      "paramCardUpgradeData": {
+        "id": "AddBurnout",
+        "upgradeTitleKey": {
+          "key": "CardUpgradeData_upgradeTitleKey-3fa2773155ddaa8f-105d57234fce65043949ca28ccf93db2-v2",
+          "english": "Wickstone",
+          "french": "Pierre de mèche",
+          "german": "Dochtstein",
+          "russian": "Каменный фитиль",
+          "portuguese": "Pedra de Pavio",
+          "chinese": "烛芯石",
+          "spanish": "Piedra mecha",
+          "chinese_traditional": "燭芯石",
+          "korean": "심지석",
+          "japanese": "芯の石"
+        },
+        "upgradeDescriptionKey": {
+          "key": "CardUpgradeData_upgradeDescriptionKey-990a47e44c5e821e-105d57234fce65043949ca28ccf93db2-v2",
+          "english": "+[bonusdamage][attack], +[bonushp][health], and gain [burnout] [status0.power].",
+          "french": "+[bonusdamage][attack], +[bonushp][health] et octroie [burnout] [status0.power].",
+          "german": "+[bonusdamage][attack], +[bonushp][health] und erhalte [burnout] [status0.power].",
+          "russian": "+[bonusdamage][attack], +[bonushp][health] и [burnout] х[status0.power].",
+          "portuguese": "+[bonusdamage][attack], +[bonushp][health] e recebe [burnout] [status0.power].",
+          "chinese": "+[bonusdamage][attack]，+[bonushp][health]，并获得 [burnout] [status0.power]。",
+          "spanish": "+[bonusdamage][attack], +[bonushp][health] y añade [burnout] [status0.power].",
+          "chinese_traditional": "+[bonusdamage][attack]，+[bonushp][health]，並獲得[burnout][status0.power]。",
+          "korean": "+[bonusdamage][attack], +[bonushp][health], 및 [burnout] [status0.power] 효과를 획득합니다.",
+          "japanese": "+[bonusdamage][attack]、+[bonushp][health]、[burnout] [status0.power]を得る。"
+        },
+        "statusEffectUpgrades": [
+          {
+            "statusId": "ephemeral",
+            "count": 1
+          }
+        ],
+        "filters": [
+          {
+            "id": "ExcludeEelGorgon",
+            "cardType": "monster",
+            "disallowedCardPools": [
+              "EelGorgonOnlyPool"
+            ]
+          }
+        ],
+        "bonusDamage": 15,
+        "bonusHP": 5
+      }
+    }
+  ],
+  "numCardsToShowInUpgradeScreen": 0
+}
