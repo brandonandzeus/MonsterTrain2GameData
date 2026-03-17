@@ -1,5 +1,6 @@
 {
   "id": "SteelPulleyClaw",
+  "guid": "8fbd9c3b-f027-4fdb-9a14-1ddae9c24d60",
   "name": "Steel Pulley Claw",
   "nameKey": {
     "key": "CardData_nameKey-2c75644b68e17deb-2e8b7275825553f489e05410858e1bad-v2",
@@ -34,6 +35,13 @@
   "cardType": "room",
   "rarity": "common",
   "linkedClass": "ClassRailforged",
+  "pools": [
+    "MegaPool",
+    "RoomAndEquipmentDraftPool",
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+    "RoomAndEquipmentMerchant_RoomPool",
+    "TrainRoomPool"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_SteelPulleyClaw.prefab",
     "m_AssetGUID": "a2afad7308fadb24eab4a4049ead8926"
@@ -45,8 +53,10 @@
       "targetTeamType": "monsters",
       "paramCardUpgradeData": {
         "id": "SteelPulleyClaw_Upgrade",
+        "guid": "3c11be5c-a6b6-4615-bb75-113e89fe00aa",
         "roomAbilityUpgrade": {
           "id": "SteelPulleyClawAbility",
+          "guid": "971a1f3e-0342-43e1-b9b0-9fbb210191d1",
           "nameKey": {
             "key": "CardData_nameKey-80c96a0aefbdd4ff-52b47e55d63b9b643822e5c1f45bfb26-v2",
             "english": "Hoist",
@@ -75,6 +85,7 @@
           },
           "cardType": "spell",
           "rarity": "common",
+          "pools": [],
           "effects": [
             {
               "effectStateName": "CardEffectRoomAbilityBumpToCurrentRoom",

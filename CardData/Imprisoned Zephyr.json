@@ -1,5 +1,6 @@
 {
   "id": "ImprisonedZephyr",
+  "guid": "f73bc157-ef23-4641-a938-ecd31945ca28",
   "name": "Imprisoned Zephyr",
   "nameKey": {
     "key": "CardData_nameKey-d7aa1fcdd9d93441-0ba216a1bd66a934fbb477ca21a454fc-v2",
@@ -45,6 +46,14 @@
   "cardType": "room",
   "rarity": "uncommon",
   "linkedClass": "ClassBanished",
+  "pools": [
+    "MegaPool",
+    "RoomAndEquipmentDraftPool",
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+    "RoomAndEquipmentMerchant_RoomPool",
+    "TrainRoomPool",
+    "UnitsBanishedBannerReplacementMutator"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt _Spell_ImprisonedZephyr.prefab",
     "m_AssetGUID": "cfe8d9e7e144ad24fbabe1b7bf548ae5"
@@ -56,6 +65,7 @@
       "targetTeamType": "monsters",
       "paramCardUpgradeData": {
         "id": "ImprisonedZephyr",
+        "guid": "2dbddc69-8926-46ce-8128-3d84be0e5da4",
         "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-54dd24904309d2db-73394d5ceb709d24ba1d0c3459e94061-v2",
         "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-3ab9f0aad2280a0a-73394d5ceb709d24ba1d0c3459e94061-v2",
         "triggerUpgrades": [
@@ -81,7 +91,6 @@
           "isTriggerTooltip": true
         },
         {
-          "statusId": "rooted",
           "descriptionKey": {
             "key": "CardEffectFloorRearrange_FrontSlot_TooltipText",
             "english": "Move to the front of the floor.",
@@ -95,7 +104,6 @@
             "korean": "동일 층의 전열로 이동합니다.",
             "japanese": "フロアの前列に移動する。"
           },
-          "trigger": "on_attacking",
           "titleKey": {
             "key": "CardEffectFloorRearrange_FrontSlot_TooltipTitle",
             "english": "Advance",

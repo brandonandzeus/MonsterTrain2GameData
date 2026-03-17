@@ -1,5 +1,6 @@
 {
   "id": "StasisCrystal",
+  "guid": "764f9b75-daf1-4deb-a6a2-f09964fb5296",
   "name": "Stasis Crystal",
   "nameKey": {
     "key": "CardData_nameKey-08153e34066ee77c-3574f982278f81b4bb1e71df86ee2a74-v2",
@@ -32,6 +33,15 @@
   "cost": 2,
   "cardType": "equipment",
   "rarity": "rare",
+  "pools": [
+    "ArsenalOnlyPool",
+    "EquipmentPool",
+    "EquipmentPoolNonEnemy",
+    "FreeEquipmentMutatorPool",
+    "RoomAndEquipmentDraftPool",
+    "RoomAndEquipmentMerchant_EquipmentPool",
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_StasisCrystal.prefab",
     "m_AssetGUID": "5779656bc8b07fd46a0433e4c4675e52"
@@ -43,8 +53,10 @@
       "targetTeamType": "monsters",
       "paramCardUpgradeData": {
         "id": "StasisCrystal_Equipment",
+        "guid": "e3393292-1b8f-4df3-b7df-cc9c7297d1a6",
         "unitAbilityUpgrade": {
           "id": "EmergeAbility",
+          "guid": "91fc348d-5b7a-4114-ad4b-a234b3dfd8d1",
           "nameKey": {
             "key": "CardData_nameKey-0af3cfdf65724bfb-1851b994b9c55de44bc2c73b58e9c5ef-v2",
             "english": "Emerge",
@@ -73,6 +85,7 @@
           },
           "cardType": "spell",
           "rarity": "common",
+          "pools": [],
           "effects": [
             {
               "effectStateName": "CardEffectRemoveStatusEffect",
@@ -132,6 +145,7 @@
                 ],
                 "paramCardUpgradeData": {
                   "id": "Plus20Attack20HealthOnlyUnit",
+                  "guid": "b16feaf0-bc18-438e-b7c4-859aca76c420",
                   "filters": [
                     {
                       "id": "OnlyUnit",

@@ -1,5 +1,6 @@
 {
   "id": "EclipseChamber",
+  "guid": "0fcb1ed0-49e2-465f-b8fa-444699348dfc",
   "name": "Eclipse Chamber",
   "nameKey": {
     "key": "CardData_nameKey-c1c98c2aeab824ef-f7aab3c27a1a65f44bd7edc420356464-v2",
@@ -46,6 +47,14 @@
   "cardType": "room",
   "rarity": "uncommon",
   "linkedClass": "ClassLunaCoven",
+  "pools": [
+    "MegaPool",
+    "RoomAndEquipmentDraftPool",
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+    "RoomAndEquipmentMerchant_RoomPool",
+    "TrainRoomPool",
+    "UnitsLunaCovenBannerReplacementMutator"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Eclipse.prefab",
     "m_AssetGUID": "01562f10f70cdb249a2b9694937eadea"
@@ -57,6 +66,7 @@
       "targetTeamType": "monsters",
       "paramCardUpgradeData": {
         "id": "EclipseChamber_Upgrade",
+        "guid": "42f867d3-2328-4143-8a05-77851390a5eb",
         "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-176b0d84be29cb9b-7b0991adf3a852e45aa6e4c3f13fc21e-v2",
         "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-d7817113f26e5840-7b0991adf3a852e45aa6e4c3f13fc21e-v2",
         "roomModifierUpgrades": [
@@ -75,6 +85,7 @@
                 "targetCharacterSubtype": "SubtypesData_Silent",
                 "paramCardUpgradeData": {
                   "id": "Plus15Attack",
+                  "guid": "f9a9fd6b-de5b-46d9-b733-0db48a8902a7",
                   "bonusDamage": 15
                 }
               }
@@ -96,7 +107,6 @@
       "targetTeamType": "both",
       "additionalTooltips": [
         {
-          "statusId": "rooted",
           "trigger": "post_combat",
           "style": "default",
           "isTriggerTooltip": true

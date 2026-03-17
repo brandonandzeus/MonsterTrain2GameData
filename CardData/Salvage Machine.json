@@ -1,10 +1,15 @@
 {
   "id": "SalvageMachine",
+  "guid": "4e517f8b-3caa-4a2c-98ba-ebee99075eed",
   "name": "Salvage Machine",
   "cost": 1,
   "cardType": "monster",
   "rarity": "uncommon",
   "linkedClass": "ClassRailforged",
+  "pools": [
+    "UnitsAllBanner",
+    "UnitsRailforgedBanner"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SalvageMachine.prefab",
     "m_AssetGUID": "7bff066081e3a8d49b9affc9226f37b9"
@@ -16,6 +21,7 @@
       "targetTeamType": "monsters",
       "paramCharacterData": {
         "id": "MonsterSalvageSteward",
+        "guid": "7cdfb974-2391-4736-96c2-88bb038184a3",
         "nameKey": {
           "key": "CharacterData_nameKey-23ffc4b80a6cb147-bb9463ccfc6f8384bb1f0711af4e1583-v2",
           "english": "Salvage Machine",
@@ -76,6 +82,7 @@
         ],
         "unitAbility": {
           "id": "SalvageMachineAbility",
+          "guid": "3790f33e-47da-4b53-a9b1-b507d8707173",
           "nameKey": {
             "key": "CardData_nameKey-9b6840fb376eb44f-9e5ce7b009af5cd469af71539e29744c-v2",
             "english": "Scrap Harvest",
@@ -105,6 +112,7 @@
           "cardType": "spell",
           "rarity": "common",
           "linkedClass": "ClassBanished",
+          "pools": [],
           "cardArtPrefabVariantRef": {
             "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SalvageMachineAbility.prefab",
             "m_AssetGUID": "5ff734d8caa90fb4381a54d1af12542f"
@@ -135,7 +143,6 @@
       },
       "additionalTooltips": [
         {
-          "statusId": "rooted",
           "descriptionKey": {
             "key": "CardTraitSalvage_TooltipText",
             "english": "If <b>Smelted</b>, play the card's effects.",

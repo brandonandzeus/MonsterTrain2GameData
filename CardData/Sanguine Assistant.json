@@ -1,10 +1,18 @@
 {
   "id": "SanguineAssistant",
+  "guid": "31faf1a8-4838-4c5f-9c4b-605baa37b5ef",
   "name": "Sanguine Assistant",
   "cost": 1,
   "cardType": "monster",
   "rarity": "common",
   "linkedClass": "ClassLazarusLeague",
+  "pools": [
+    "LazarusLeagueGraftedUnitNoStarterPool",
+    "LazarusLeagueGraftedUnitPool",
+    "MegaPool",
+    "PartFactory_Pool",
+    "UnitsLazarusLeagueBannerReplacementMutator"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SanguineAssistant.prefab",
     "m_AssetGUID": "79ed525e382060f4cb73e08ab91057da"
@@ -16,6 +24,7 @@
       "targetTeamType": "none",
       "paramCharacterData": {
         "id": "SanguineAssistant",
+        "guid": "4d6a887d-64c2-48d8-981f-e04d55c6f763",
         "nameKey": {
           "key": "CharacterData_nameKey-b1d2af3feeeb1b34-dc708cdf05c54fa49b63eb5f6831ed6a-v2",
           "english": "Sanguine Assistant",
@@ -57,6 +66,7 @@
         },
         "graftedEquipment": {
           "id": "VampiresTooth",
+          "guid": "96f46995-23fe-4c0b-8325-54826e95c333",
           "nameKey": {
             "key": "CardData_nameKey-21aff0d44aa90883-565a11151f012f84e91809f00fcde05e-v2",
             "english": "Vampire's Tooth",
@@ -89,6 +99,10 @@
           "cardType": "equipment",
           "rarity": "common",
           "linkedClass": "ClassLazarusLeague",
+          "pools": [
+            "EquipmentPool",
+            "EquipmentPoolNonEnemy"
+          ],
           "cardArtPrefabVariantRef": {
             "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_VampireTooth.prefab",
             "m_AssetGUID": "db8e84a00c646954685b1e0d9853037c"
@@ -106,6 +120,7 @@
               "targetTeamType": "monsters",
               "paramCardUpgradeData": {
                 "id": "VampiresTooth_Upgrade",
+                "guid": "39869441-a4e6-40dd-bc0b-6f50ff60356e",
                 "statusEffectUpgrades": [
                   {
                     "statusId": "lifesteal",

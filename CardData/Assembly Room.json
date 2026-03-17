@@ -1,5 +1,6 @@
 {
   "id": "AssemblyRoom",
+  "guid": "9d18f2c2-1141-494d-943c-6ea6e13ff509",
   "name": "Assembly Room",
   "nameKey": {
     "key": "CardData_nameKey-32460eb3ba86734f-6d4274dd440a3e4469a73951844a14da-v2",
@@ -34,6 +35,13 @@
   "cardType": "room",
   "rarity": "rare",
   "linkedClass": "ClassRailforged",
+  "pools": [
+    "MegaPool",
+    "RoomAndEquipmentDraftPool",
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+    "RoomAndEquipmentMerchant_RoomPool",
+    "TrainRoomPool"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_AssemblyRoom.prefab",
     "m_AssetGUID": "cc7624e3aad077045ba9543754cc0ac3"
@@ -45,8 +53,10 @@
       "targetTeamType": "monsters",
       "paramCardUpgradeData": {
         "id": "AssemblyRoom_Upgrade",
+        "guid": "a24c0e6e-1e7d-47b9-826d-873d4b35d0ff",
         "roomAbilityUpgrade": {
           "id": "AssemblyRoomAbility",
+          "guid": "601fa82c-1912-4f27-8454-ed82ac92cbdd",
           "nameKey": {
             "key": "CardData_nameKey-adc40e22250079ad-bc6c55315ab9ee443b86fd83b27d7d24-v2",
             "english": "Assemble",
@@ -75,6 +85,7 @@
           },
           "cardType": "spell",
           "rarity": "common",
+          "pools": [],
           "effects": [
             {
               "effectStateName": "CardEffectCopyUnits",

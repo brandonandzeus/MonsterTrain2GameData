@@ -1,5 +1,6 @@
 {
   "id": "RageRoom",
+  "guid": "93759003-bb97-44e4-9ef6-472c55bee2d9",
   "name": "Rage Room",
   "nameKey": {
     "key": "CardData_nameKey-e930d65739221d8b-515b9246e4a65cd42ba1ec3aee162cd0-v2",
@@ -46,6 +47,15 @@
   "cardType": "room",
   "rarity": "rare",
   "linkedClass": "ClassHellhorned",
+  "pools": [
+    "ArsenalOnlyPool",
+    "MegaPool",
+    "RoomAndEquipmentDraftPool",
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+    "RoomAndEquipmentMerchant_RoomPool",
+    "TrainRoomPool",
+    "UnitsHellhornedBannerReplacementMutator"
+  ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_RageRoom.prefab",
     "m_AssetGUID": "03efd2602b15dc54baf198d4a2ce6cee"
@@ -57,6 +67,7 @@
       "targetTeamType": "monsters",
       "paramCardUpgradeData": {
         "id": "RageRoom",
+        "guid": "0c3531a3-a491-46fc-8135-3564bc52adfa",
         "triggerUpgrades": [
           {
             "descriptionKey": "CardUpgradeData_descriptionKey-470360633642989e-b7bb585a4ceb18343bf4d6e8fa2e66aa-v2",
@@ -104,13 +115,11 @@
           "isStatusTooltip": true
         },
         {
-          "statusId": "buff",
           "trigger": "on_attacking",
           "style": "default",
           "isTriggerTooltip": true
         },
         {
-          "statusId": "buff",
           "trigger": "on_hit",
           "style": "default",
           "isTriggerTooltip": true
