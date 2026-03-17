@@ -1,0 +1,63 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SilverHour",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_SilverHour_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SilverHour_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_SilverHour_Base_02",
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SilverHour_Base_01",
+              "tint": {
+                "r": 0.542452753,
+                "g": 0.9686846,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SilverHour_Main_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SilverHour_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SilverHour_Main_01",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

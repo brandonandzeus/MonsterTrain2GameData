@@ -1,0 +1,60 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HellhornedSpike",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HellhornedSpike_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HellhornedSpike_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_HellhornedSpike_02",
+              "tint": {
+                "r": 0.395938724,
+                "g": 0.0560697466,
+                "b": 0.7924528,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Spores_03",
+              "motion_texture": "FX_Flow_WelderHelper_01",
+              "mask_texture": "MSK_HellhornedSpike_01",
+              "tint": {
+                "r": 0.0518867746,
+                "g": 0.9709167,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_HellhornedSpike_02",
+              "linear_speed": {
+                "x": 16.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

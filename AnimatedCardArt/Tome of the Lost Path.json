@@ -1,0 +1,92 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_TomeOfTheLostPath",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_TomeOfTheLostPath_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_TomeOfTheLostPath_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "MSK_LightStreams_03",
+              "tint": {
+                "r": 0.006674961,
+                "g": 0.444196731,
+                "b": 0.4716981,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 20.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -35.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_TomeOfTheLostPath_Glow",
+              "tint": {
+                "r": 0.7028302,
+                "g": 1.0,
+                "b": 0.9915696,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 5.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_TomeOfTheLostPath_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_03",
+              "mask_texture": "MSK_TomeOfTheLostPath_Gem",
+              "tint": {
+                "r": 0.278301865,
+                "g": 1.0,
+                "b": 0.963951051,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              },
+              "scale": {
+                "x": 0.15,
+                "y": 0.15
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_TomeOfTheLostPath_Flames",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Mooncaller",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Mooncaller_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Mooncaller_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Mooncaller_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Mooncaller_Main",
+              "tint": {
+                "r": 0.8915094,
+                "g": 0.9802744,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              },
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.017,
+                "y": -0.29,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_OfferingToken",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_OfferingToken_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_OfferingToken_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_OfferingToken_01",
+              "motion_texture": "FX_Aura_02",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_OfferingToken_02",
+              "mask_texture": "MSK_OfferingToken_01",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_Sphere",
+              "mask_texture": "MSK_OfferingToken_03",
+              "tint": {
+                "r": 0.009122463,
+                "g": 0.149157256,
+                "b": 0.386792451,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_OfferingToken_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_OfferingToken_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.466981,
+                "b": 0.937036633,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 15.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

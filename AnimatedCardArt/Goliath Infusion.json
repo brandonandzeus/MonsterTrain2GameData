@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_InfusionsGoliath",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_InfusionsGoliath_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_InfusionsGoliath_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_InfusionsGoliath_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_InfusionsGoliath_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.035,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.06,
+                "y": 0.056,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

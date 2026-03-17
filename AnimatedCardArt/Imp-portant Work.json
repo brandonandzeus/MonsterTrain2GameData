@@ -1,0 +1,59 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ImpPortantWork",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_ImpPortantWork_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ImpPortantWork_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_ImpPortantWork_01",
+              "motion_texture": "FX_Aura_02",
+              "mask_texture": "MSK_ImpPortantWork_01"
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_ImpPortantWork_02",
+              "motion_texture": "FX_Clouds_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ImpPortantWork_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_Gradient_Sphere_02",
+              "tint": {
+                "r": 0.6367924,
+                "g": 0.9316315,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

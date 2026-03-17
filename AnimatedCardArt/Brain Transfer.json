@@ -1,0 +1,56 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_BrainTransfer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_BrainTransfer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_BrainTransfer_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_BrainTransfer_Main_FX_01",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_BrainTransfer",
+              "mask_texture": "MSK_BrainTransfer_Base",
+              "tint": {
+                "r": 0.590877,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.04,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

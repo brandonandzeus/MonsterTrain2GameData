@@ -1,0 +1,82 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MoonPixie",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "PRT_MoonPixie_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MoonPixie_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_MoonPixie_Base",
+              "tint": {
+                "r": 0.8443396,
+                "g": 0.979679048,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_MoonPixie_Main",
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Stars",
+              "mask_texture": "MSK_MoonPixie_Lantern",
+              "tint": {
+                "r": 1.0,
+                "g": 0.978782952,
+                "b": 0.552941144,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_MoonPixie_Lantern",
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              },
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_MoonPixie_Lantern",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_MoonPixie_Main",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

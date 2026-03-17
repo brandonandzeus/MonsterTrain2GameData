@@ -1,0 +1,99 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SacrificialChamber",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_SacrificialChamber_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SacrificialChamber_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_SacrificialChamber_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SacrificialChamber_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SacrificialChamber_FG",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sparks_02",
+              "mask_texture": "MSK_SacrificialChamber_Main",
+              "tint": {
+                "r": 0.990565956,
+                "g": 0.8257663,
+                "b": 0.3130562,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 0.25
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SacrificialChamber_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.055,
+                "y": -0.11,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.025,
+                "y": -0.108,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "FG",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.363,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

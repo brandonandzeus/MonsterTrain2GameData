@@ -1,0 +1,50 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_HotHead",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Hothead_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Hothead_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeRight",
+              "mask_texture": "MSK_Hothead_Base",
+              "tint": {
+                "r": 0.995196044,
+                "g": 1.0,
+                "b": 0.6367924,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Hothead_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_Hothead_Main",
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

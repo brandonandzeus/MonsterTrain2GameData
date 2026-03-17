@@ -1,0 +1,77 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Pyreclasm",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Pyreclasm_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Pyreclasm_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Pyreclasm_Base",
+              "motion_texture": "FX_Aura_03",
+              "mask_texture": "MSK_Pyreclasm_Base"
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_Map_Coins",
+              "mask_texture": "MSK_Pyreclasm_Main_FX_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9090102,
+                "b": 0.146226376,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Map_Coins",
+              "mask_texture": "MSK_Pyreclasm_Main_FX_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.821780264,
+                "b": 0.0896225944,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 16.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Pyreclasm_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_Pyreclasm_Main_FX",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

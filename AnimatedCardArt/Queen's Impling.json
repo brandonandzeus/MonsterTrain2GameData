@@ -1,0 +1,90 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Impling",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Impling_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Impling_01"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT_Impling_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_Impling_01",
+              "tint": {
+                "r": 0.972508,
+                "g": 0.6155215,
+                "b": 0.9811321,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "MSK_Gradient_Up",
+              "tint": {
+                "r": 0.9811321,
+                "g": 0.0,
+                "b": 0.110617928,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -4.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_GradientCone_Down",
+              "tint": {
+                "r": 0.8962264,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.7372549
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 1.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Impling",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.0125,
+                "y": 0.0125,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "TailFX",
+              "layers": [
+                1
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_HydraArmedHorror",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_HydraArmedHorror_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_HydraArmedHorror_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_HydraArmedHorror_Base",
+              "tint": {
+                "r": 0.814672768,
+                "g": 1.0,
+                "b": 0.6745283,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_HydraArmedHorror_Main",
+              "tint": {
+                "r": 0.8526202,
+                "g": 1.0,
+                "b": 0.7216981,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

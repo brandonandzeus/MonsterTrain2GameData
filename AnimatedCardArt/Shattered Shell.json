@@ -1,0 +1,86 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ShatteredShell",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ShatteredShell_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ShatteredShell_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_ShatteredShell_02",
+              "tint": {
+                "r": 0.34659043,
+                "g": 1.0,
+                "b": 0.24999997,
+                "a": 0.509803951
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_ShatteredShell_02",
+              "tint": {
+                "r": 0.514151,
+                "g": 0.9459298,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_ShatteredShell_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9173442,
+                "b": 0.0990565643,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_ShatteredShell_03",
+              "tint": {
+                "r": 1.0,
+                "g": 0.32547164,
+                "b": 0.32547164,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

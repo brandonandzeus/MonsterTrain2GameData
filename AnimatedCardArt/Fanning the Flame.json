@@ -1,0 +1,95 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_FanningTheFlame",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_FanningTheFlame_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_FanningTheFlame_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_FanningTheFlame_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_FanningTheFlame_FG_FX_01",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_FanningTheFlame_FG_FX_02",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_FanningTheFlame_Main",
+              "tint": {
+                "r": 0.960658,
+                "g": 1.0,
+                "b": 0.117924489,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 6.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.001,
+                "y": 0.013,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "FG_FX_01",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.179,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "FG_FX_02",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.298,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

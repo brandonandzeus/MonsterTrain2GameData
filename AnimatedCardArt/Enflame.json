@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Enflame",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Enflame_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Enflame_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Enflame_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Enflame_01",
+              "tint": {
+                "r": 0.9716981,
+                "g": 0.8805138,
+                "b": 0.5637682,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Enflame_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.7808927,
+                "b": 0.07058818,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Sparks",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Enflame_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.976623237,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

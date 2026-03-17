@@ -1,0 +1,48 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HerzalsHammer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HerzalsHammer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HerzalsHammer_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_HerzalsHammer_Base",
+              "motion_texture": "FX_Aura_03",
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_HerzalsHammer_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_HerzalsHammer",
+              "mask_texture": "MSK_HerzalsHammer_Main",
+              "tint": {
+                "r": 0.9811321,
+                "g": 0.44891417,
+                "b": 0.678940535,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 20.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

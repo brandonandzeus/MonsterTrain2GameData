@@ -1,0 +1,58 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ShadowMorsel",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ShadowMorsel_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ShadowMorsel_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_ShadowMorsel_01",
+              "motion_texture": "FX_Aura_02",
+              "mask_texture": "MSK_ShadowMorsel_01"
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_ShadowMorsel_02",
+              "tint": {
+                "r": 0.801185131,
+                "g": 1.0,
+                "b": 0.6462264,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_ShadowMorsel_02",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

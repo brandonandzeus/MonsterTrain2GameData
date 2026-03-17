@@ -1,0 +1,58 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Mulch",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Mulch_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Mulch_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Mulch_Base",
+              "tint": {
+                "r": 0.9958157,
+                "g": 1.0,
+                "b": 0.740565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "FX_CharacterOutline_01",
+              "mask_texture": "EMS_Mulch_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9778301,
+                "b": 0.7783019,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Mulch_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

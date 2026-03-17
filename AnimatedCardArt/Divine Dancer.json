@@ -1,0 +1,91 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_DivineDancer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_DivineDancer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_DivineDancer_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_DivineDancer_Base_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_DivineDancer_FG",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_DivineDancer_Main_FX",
+              "motion_texture": "FX_Flicker",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_DivineDancer_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.1,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Base_FG",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.04,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.22,
+                "y": 0.11,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": -0.03,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

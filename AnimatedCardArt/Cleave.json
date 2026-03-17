@@ -1,0 +1,50 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Cleave",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Cleave_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Cleave_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Cleave_Base",
+              "tint": {
+                "r": 0.683962166,
+                "g": 0.8318518,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Cleave_Main_FX_01",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Cleave_Main_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

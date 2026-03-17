@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_IronTongue",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_IronTongue_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_IronTongue_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_IronTongue_Base",
+              "motion_texture": "FX_Aura_03"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_IronTongue_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.015,
+                "y": -0.005,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.02,
+                "y": -0.03,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

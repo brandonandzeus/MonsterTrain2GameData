@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Challenge",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Challenge_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Challenge_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Up",
+              "tint": {
+                "r": 0.5566037,
+                "g": 0.112896033,
+                "b": 0.112896033,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -10.0,
+                "y": -3.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_Challenge_Main_Aura",
+              "tint": {
+                "r": 0.429245234,
+                "g": 1.0,
+                "b": 0.936172068,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Challenge_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

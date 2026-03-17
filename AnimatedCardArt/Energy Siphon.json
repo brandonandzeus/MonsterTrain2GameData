@@ -1,0 +1,52 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EnergySiphon",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EnergySiphon_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EnergySiphon_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_EnergySiphon_01",
+              "motion_texture": "FX_Noise",
+              "mask_texture": "MSK_Gradient_Bottom"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_EnergySiphon_02",
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_EnergySiphon_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_EnergySiphon_04",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_EnergySiphon_05",
+              "motion_texture": "FX_Clouds_01"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

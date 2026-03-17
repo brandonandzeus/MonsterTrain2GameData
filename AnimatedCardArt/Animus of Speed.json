@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_AnimusOfWill",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_AnimusOfWill_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_AnimusOfWill_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "mask_texture": "MSK_AnimusOfWill_01",
+              "tint": {
+                "r": 0.5151611,
+                "g": 0.8867924,
+                "b": 0.171502262,
+                "a": 0.5019608
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_AnimusOfWill_02",
+              "motion_texture": "FX_Noise",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_LightStreams_02",
+              "tint": {
+                "r": 0.4690658,
+                "g": 0.9622641,
+                "b": 0.285955817,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

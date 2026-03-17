@@ -1,0 +1,50 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Gorger",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Gorger_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Gorger_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gorger_01",
+              "tint": {
+                "r": 0.8867924,
+                "g": 0.7245336,
+                "b": 0.347187549,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.25,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Gorger_03",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_Gorger_02",
+              "linear_speed": {
+                "x": 15.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

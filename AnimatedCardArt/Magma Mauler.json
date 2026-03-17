@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Sycophant",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Sycophant_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Sycophant_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Sycophant",
+              "mask_texture": "MSK_Sycophant_Base_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.7531516,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "MSK_Sycophant_Base_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.5221448,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 5.0,
+                "y": 5.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Sycophant_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

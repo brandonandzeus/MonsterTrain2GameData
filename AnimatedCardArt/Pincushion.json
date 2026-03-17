@@ -1,0 +1,110 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MeatShedder",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MeatShedder_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MeatShedder_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT_MeatShedder_Main_FX",
+              "stretch": false,
+              "additive": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_MeatShedder_Main_FX",
+              "stretch": false,
+              "additive": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_MeatShedder_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_MeatShedder",
+              "mask_texture": "MSK_MeatShedder_Main",
+              "tint": {
+                "r": 0.8050986,
+                "g": 1.0,
+                "b": 0.448113084,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_MeatShedder_Main",
+              "tint": {
+                "r": 0.6448133,
+                "g": 1.0,
+                "b": 0.30660373,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.175,
+                "y": 0.06,
+                "z": 0.0
+              },
+              "scale": {
+                "x": 1.25,
+                "y": 1.25,
+                "z": 1.0
+              }
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.03,
+                "y": 0.035,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": -0.048,
+                "y": -0.002,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

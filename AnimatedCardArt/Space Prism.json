@@ -1,0 +1,65 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SpacePrism",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SpacePrism_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SpacePrism_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "SPL_SpacePrism_02",
+              "mask_texture": "MSK_SpacePrism_03",
+              "linear_speed": {
+                "x": -0.125,
+                "y": 0.125
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SpacePrism_01",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.08627448,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_SpacePrism",
+              "mask_texture": "MSK_SpacePrism_02",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0509803742,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

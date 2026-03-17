@@ -1,0 +1,60 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Fortify",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_Fortify_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Fortify_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_Fortify_01",
+              "tint": {
+                "r": 0.244481981,
+                "g": 0.7735849,
+                "b": 0.7617613,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "scale": {
+                "x": 3.0,
+                "y": 3.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Fortify_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Fortify_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Fortify_04",
+              "motion_texture": "effect_noise",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

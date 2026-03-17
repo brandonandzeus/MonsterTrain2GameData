@@ -1,0 +1,42 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Pyreshot",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Pyreshot_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Pyreshot_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_IceAndPyre",
+              "mask_texture": "MSK_Pyreshot_Main_FX_01",
+              "tint": {
+                "r": 0.9433962,
+                "g": 0.9398259,
+                "b": 0.6363475,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 40.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Pyreshot_Main_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

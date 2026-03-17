@@ -1,0 +1,42 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_CultDisciple",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_CultDisciple_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_CultDisciple_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_CultDisciple_Base",
+              "tint": {
+                "r": 0.9150943,
+                "g": 0.470496535,
+                "b": 0.8128879,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_CultDisciple_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

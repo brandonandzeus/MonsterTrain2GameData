@@ -1,0 +1,81 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Fenix",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Fenix_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Fenix_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Fenix_Base",
+              "tint": {
+                "r": 0.9921569,
+                "g": 0.4117647,
+                "b": 0.0470588,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 15.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sparks",
+              "mask_texture": "MSK_Fenix_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.8980393,
+                "b": 0.105882324,
+                "a": 1.0
+              },
+              "linear_offset": {
+                "x": 0.5,
+                "y": 0.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 15.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Fenix_Main_FX",
+              "motion_texture": "FX_Noise",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Fenix_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

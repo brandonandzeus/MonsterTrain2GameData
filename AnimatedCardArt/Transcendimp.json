@@ -1,0 +1,82 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_TranscendImp",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_TranscendImp_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_TranscendImp_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "MSK_Gradient_Up",
+              "tint": {
+                "r": 1.0,
+                "g": 0.117924459,
+                "b": 0.117924459,
+                "a": 0.454901963
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -60.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_TranscendImp_02",
+              "motion_texture": "FX_Sheen_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_TranscendImp_04",
+              "motion_texture": "FX_Sheen",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.8703704
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_TranscendImp_03",
+              "motion_texture": "FX_Sheen_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_GradientCone_Down",
+              "tint": {
+                "r": 0.278301865,
+                "g": 0.672976732,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

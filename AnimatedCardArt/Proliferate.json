@@ -1,0 +1,51 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Proliferate",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Proliferate_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Proliferate_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Proliferate_Base",
+              "tint": {
+                "r": 0.565993249,
+                "g": 0.745283,
+                "b": 0.565993249,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_IceAndPyre",
+              "mask_texture": "MSK_Proliferate_Main",
+              "tint": {
+                "r": 0.983527958,
+                "g": 1.0,
+                "b": 0.740565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 5.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

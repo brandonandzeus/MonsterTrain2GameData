@@ -1,0 +1,64 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Shadeguard",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ShadeGuard_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ShadeGuard_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_ShadeGuard_Base",
+              "tint": {
+                "r": 0.825471759,
+                "g": 0.8523222,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_ShadeGuard_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.5254902
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Stars",
+              "mask_texture": "MSK_ShadeGuard_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.993195,
+                "b": 0.8160377,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_TitanSentry",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_TitanSentry_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_TitanSentry_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_TitanSentry_01",
+              "motion_texture": "FX_Noise",
+              "mask_texture": "MSK_Vignette"
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_TitanSentry_02",
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_TitanSentry_03",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Eclipse",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Eclipse_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Eclipse_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Eclipse_Base",
+              "tint": {
+                "r": 0.211685628,
+                "g": 0.435796261,
+                "b": 0.6320754,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Eclipse",
+              "mask_texture": "MSK_Eclipse_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.6137123,
+                "b": 0.164705843,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

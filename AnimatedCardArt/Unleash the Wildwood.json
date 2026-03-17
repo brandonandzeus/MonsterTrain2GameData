@@ -1,0 +1,77 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Awoken_HealthBuff",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Awoken_HealthBuff",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Awoken_HealthBuff",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "MSK_FireFlies",
+              "motion_texture": "FX_Flow_S_Curve",
+              "tint": {
+                "r": 0.07058821,
+                "g": 1.0,
+                "b": 0.721427143,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Awoken_HealthBuff",
+              "motion_texture": "FX_Aura",
+              "mask_texture": "MSK_Gradient_Up",
+              "tint": {
+                "r": 0.0,
+                "g": 0.7426259,
+                "b": 1.0,
+                "a": 0.4
+              },
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_LightShards_NW",
+              "mask_texture": "MSK_Awoken_HealthBuff_02",
+              "tint": {
+                "r": 0.6127115,
+                "g": 0.09019602,
+                "b": 1.0,
+                "a": 0.7921569
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

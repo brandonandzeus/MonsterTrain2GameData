@@ -1,0 +1,63 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Duality",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Duality_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Duality_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_Duality_Base",
+              "tint": {
+                "r": 0.935534537,
+                "g": 0.8066038,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Duality_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_Duality_Main",
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Stars",
+              "mask_texture": "MSK_Duality_Main",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

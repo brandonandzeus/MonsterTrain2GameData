@@ -1,0 +1,95 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HiddenPassage",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HiddenPassage_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HiddenPassage_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeLeft_Neg15",
+              "mask_texture": "MSK_HiddenPassage_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.63438946,
+                "b": 0.212264031,
+                "a": 0.607843161
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_HiddenPassage_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_HiddenPassage_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_HiddenPassage_02",
+              "mask_texture": "MSK_HiddenPassage_02",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "position_offset": {
+                "x": 0.145,
+                "y": 0.304
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_HiddenPassage_02",
+              "mask_texture": "MSK_HiddenPassage_02",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0485925078
+              },
+              "position_offset": {
+                "x": 0.235,
+                "y": 0.37
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "FX_T_Glow",
+              "motion_texture": "effect_noise",
+              "tint": {
+                "r": 0.6320754,
+                "g": 0.406894565,
+                "b": 0.0208704267,
+                "a": 0.205
+              },
+              "linear_speed": {
+                "x": 150.0,
+                "y": 0.0
+              },
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

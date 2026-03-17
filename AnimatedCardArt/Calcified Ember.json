@@ -1,0 +1,96 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ExcavatedEmber",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ExcavatedEmber_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ExcavatedEmber_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_ExcavatedEmber_02",
+              "tint": {
+                "r": 0.7654859,
+                "g": 0.826139152,
+                "b": 0.8867924,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ExcavatedEmber_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_ExcavatedEmber_01",
+              "tint": {
+                "r": 0.7254902,
+                "g": 0.721568644,
+                "b": 0.854902,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 5.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_02",
+              "mask_texture": "MSK_LightStreams_02",
+              "tint": {
+                "r": 0.6177687,
+                "g": 0.609158039,
+                "b": 0.764151,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Glows",
+              "layers": [
+                0,
+                2
+              ]
+            },
+            {
+              "id": "Ember",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.009,
+                "y": 0.038,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

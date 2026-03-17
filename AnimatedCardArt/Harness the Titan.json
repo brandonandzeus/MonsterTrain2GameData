@@ -1,0 +1,64 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HarnessTheTitan",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HarnessTheTitan_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HarnessTheTitan_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_HarnessTheTitan_01",
+              "motion_texture": "FX_Aura",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "tint": {
+                "r": 0.514103055,
+                "g": 0.07329119,
+                "b": 0.57547164,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_HarnessTheTitan_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_HarnessTheTitan_01",
+              "tint": {
+                "r": 0.9620002,
+                "g": 0.671057343,
+                "b": 0.9811321,
+                "a": 0.6156863
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_RageRoom",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_RageRoom_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_RageRoom_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RageRoom_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.930691838,
+                "b": 0.410377353,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_RageRoom_Main_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

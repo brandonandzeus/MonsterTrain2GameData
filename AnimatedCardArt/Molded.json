@@ -1,0 +1,69 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Reform",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Reform_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Reform_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "SPL_Reform_02",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_Reform_01",
+              "position_offset": {
+                "x": 0.0,
+                "y": -0.368071347
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Reform_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Reform_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.8745098,
+                "b": 0.3176469,
+                "a": 0.06439996
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.5
+              },
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_Reform",
+              "mask_texture": "MSK_Reform_03",
+              "tint": {
+                "r": 0.054957293,
+                "g": 0.5495215,
+                "b": 0.8962264,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 2.5,
+                "y": 2.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

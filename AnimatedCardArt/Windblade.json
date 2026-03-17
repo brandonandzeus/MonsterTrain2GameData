@@ -1,0 +1,72 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_WindBlade",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_WindBlade_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_WindBlade_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_WindBlade_Base_FX",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_WindBlade_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_WindBlade_Main",
+              "linear_speed": {
+                "x": 6.0,
+                "y": 1.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -30.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_WindBlade_Main_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main",
+              "layers": [
+                0,
+                1
+              ],
+              "position": {
+                "x": 0.02,
+                "y": -0.055,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

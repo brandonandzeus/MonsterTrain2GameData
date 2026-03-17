@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ForgeSteward",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ForgeSteward_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ForgeSteward_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_ForgeSteward_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_ForgeSteward_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "EMS_ForgeSteward_Main",
+              "motion_texture": "FX_Clouds_03"
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.1,
+                "y": 0.02,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.13,
+                "y": 0.011,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

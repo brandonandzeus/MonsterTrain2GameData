@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SoulSiphon",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SoulSiphon_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SoulSiphon_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SoulSiphon_01",
+              "tint": {
+                "r": 0.790007,
+                "g": 0.8773585,
+                "b": 0.0620772243,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SoulSiphon_02",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SoulSiphon_04",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SoulSiphon_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_SoulSiphon_02",
+              "linear_speed": {
+                "x": 2.0,
+                "y": 3.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_SoulSiphon_05",
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

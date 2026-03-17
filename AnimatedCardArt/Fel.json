@@ -1,0 +1,84 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Fel",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Fel_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Fel_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Fel_Base_Flames",
+              "motion_texture": "FX_Clouds_02",
+              "tilt": {
+                "x": 50.0,
+                "y": 40.0,
+                "z": 0.0
+              },
+              "rotation_speed": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 400.0
+              },
+              "scale": {
+                "x": 1.4,
+                "y": 1.4
+              },
+              "position_offset": {
+                "x": -0.05,
+                "y": 0.04
+              },
+              "stretch": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_LightShards_03",
+              "tint": {
+                "r": 0.6886792,
+                "g": 0.495552063,
+                "b": 0.4125578,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Fel_Main",
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Fel_Main_Flames",
+              "motion_texture": "FX_Clouds_02",
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_Flames",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.3675,
+                "y": -0.11,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

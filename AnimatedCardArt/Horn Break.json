@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HornBreak",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HornBreak",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HornBreak",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "MSK_FireFlies",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_CloudsDiff_01",
+              "tint": {
+                "r": 0.945098,
+                "g": 0.906466663,
+                "b": 0.2196078,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Noise",
+              "motion_texture": "FX_Flow_Sphere",
+              "mask_texture": "MSK_HornBreak_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.5295493,
+                "b": 0.495283,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              },
+              "rotation_speed": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 150.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

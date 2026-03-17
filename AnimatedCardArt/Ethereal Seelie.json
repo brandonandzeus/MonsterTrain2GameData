@@ -1,0 +1,68 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_EtherealSeelie",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "PRT_EtherealSeelie_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_EtherealSeelie_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_EtherealSeelie_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "PRT_EtherealSeelie_PixieDust",
+              "mask_texture": "MSK_EtherealSeelie_Main",
+              "linear_speed": {
+                "x": -0.25,
+                "y": 0.5
+              },
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_EtherealSeelie_Wings",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_EtherealSeelie_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_EtherealSeelie_Main",
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.025,
+                "y": -0.0425,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

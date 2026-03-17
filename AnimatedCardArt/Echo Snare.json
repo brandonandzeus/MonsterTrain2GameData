@@ -1,0 +1,75 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ShardTrap",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ShardTrap_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ShardTrap_05"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_ShardTrap_01",
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ShardTrap_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ShardTrap_03",
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_ShardTrap_04",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "linear_speed": {
+                "x": 16.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "BG",
+              "layers": [
+                0
+              ]
+            },
+            {
+              "id": "Character",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.06,
+                "y": -0.16,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Spikes",
+              "layers": [
+                2
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

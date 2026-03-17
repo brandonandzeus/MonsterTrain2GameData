@@ -1,0 +1,78 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_AwokensRailSpike",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_AwokensRailSpike_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_AwokensRailSpike_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_02",
+              "motion_texture": "FX_Flow_SpiralOut",
+              "mask_texture": "MSK_AwokensRailSpike_01",
+              "tint": {
+                "r": 0.5814198,
+                "g": 1.0,
+                "b": 0.485849023,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_AwokensRailSpike_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_AwokensRailSpike_02",
+              "tint": {
+                "r": 0.476415038,
+                "g": 0.9178234,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Glow",
+              "layers": [
+                0,
+                2
+              ]
+            },
+            {
+              "id": "Spike",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": 0.025,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

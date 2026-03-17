@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_HeroInTraining",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_HeroInTraining_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_HeroInTraining_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_HeroInTraining_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sparks",
+              "mask_texture": "MSK_HeroInTraining_Main_FX",
+              "tint": {
+                "r": 0.240565985,
+                "g": 1.0,
+                "b": 0.959974,
+                "a": 0.105882354
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 40.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.75
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_HeroInTraining_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.17,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

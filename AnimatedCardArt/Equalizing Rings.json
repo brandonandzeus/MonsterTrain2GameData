@@ -1,0 +1,88 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EqualizingRings",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EqualizingRings_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EqualizingRings_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_EqualizingRings_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_EqualizingRings_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_EqualizingRings",
+              "mask_texture": "MSK_EqualizingRings_Main_FX_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.883561969,
+                "b": 0.6462264,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_EqualizingRings",
+              "mask_texture": "MSK_EqualizingRings_Main_FX_02",
+              "tint": {
+                "r": 0.721568644,
+                "g": 0.8392136,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.02,
+                "y": -0.06,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.05,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

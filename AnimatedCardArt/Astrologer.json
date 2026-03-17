@@ -1,0 +1,50 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Astrologer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Astrologer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Astrologer_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_Astrologer_Base",
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_Astrologer_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9045238,
+                "b": 0.504717,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": -1.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Astrologer_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_CuttleHex",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Cuttlehex_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Cuttlehex_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Cuttlehex_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Bottom"
+            },
+            {
+              "type": "moving_texture",
+              "texture": "PRT_Cuttlehex_02",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Cuttlehex_03",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

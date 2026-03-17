@@ -1,0 +1,49 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_FaesBlessing",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_FaesBlessing_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_FaesBlessing_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeRight_Neg15",
+              "mask_texture": "MSK_FaesBlessing_Main",
+              "tint": {
+                "r": 0.6084906,
+                "g": 0.9323755,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -20.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_FaesBlessing_Base",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

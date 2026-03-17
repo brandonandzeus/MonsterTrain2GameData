@@ -1,0 +1,90 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_TheGreatDecay",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_TheGreatDecay_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_TheGreatDecay_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_TheGreatDecay_Main_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_TheGreatDecay_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_TheGreatDecay_Main_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_BDeeohgee",
+              "mask_texture": "MSK_TheGreatDecay_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.7028302,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.08,
+                "y": 0.085,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_01",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.205,
+                "y": 0.07,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_02",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.1925,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

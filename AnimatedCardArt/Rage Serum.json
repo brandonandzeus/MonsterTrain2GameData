@@ -1,0 +1,74 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_RageSerum",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_RageSerum_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_RageSerum_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_RageSerum_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RageSerum_02",
+              "tint": {
+                "r": 0.08962255,
+                "g": 1.0,
+                "b": 0.2858767,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 5.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Bubbles",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RageSerum_02",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.1764704,
+                "a": 0.403921574
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_RageSerum_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_RageSerum_02",
+              "motion_texture": "FX_Flow_S_Curve",
+              "mask_texture": "MSK_RageSerum_01",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.5
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

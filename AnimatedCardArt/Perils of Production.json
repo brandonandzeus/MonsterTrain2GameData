@@ -1,0 +1,54 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_PerilsOfProduction",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_PerilsOfProduction_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_PerilsOfProduction_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_PerilsOfProduction_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_PerilsOfProduction_01"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_PerilsOfProduction_02",
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_PerilsOfProduction_03",
+              "linear_speed": {
+                "x": 20.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "MSK_PerilsOfProduction_03",
+              "mask_texture": "MSK_PerilsOfProduction_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.624981463,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

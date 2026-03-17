@@ -1,0 +1,76 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EchoBreak",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EchoBreak_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EchoBreak_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_SpiralOut",
+              "mask_texture": "MSK_EchoBreak_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.999573767,
+                "b": 0.542452633,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -4.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeLeft_Neg45_Up",
+              "mask_texture": "MSK_EchoBreak_03",
+              "tint": {
+                "r": 0.429245234,
+                "g": 0.9200324,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_EchoBreak_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.429245234,
+                "b": 0.9278302,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_EchoBreak_02",
+              "motion_texture": "FX_Aura"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

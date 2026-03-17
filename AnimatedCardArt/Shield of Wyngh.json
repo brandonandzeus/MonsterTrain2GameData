@@ -1,0 +1,84 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ShieldOfWyngh",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ShieldOfWyngh_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ShieldOfWyngh_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_ShieldOfWyngh_Base_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_ShieldOfWyngh_Main_FX",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ShieldOfWyngh_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_ShieldOfWyngh_Main",
+              "tint": {
+                "r": 0.8066038,
+                "g": 0.981869042,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 4.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main",
+              "layers": [
+                0,
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.051,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.05,
+                "y": -0.085,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

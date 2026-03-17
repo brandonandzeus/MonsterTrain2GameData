@@ -1,0 +1,98 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_RfrFlicker",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_RfrFlicker_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_RfrFlicker_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_RfrFlicker_02",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_RfrFlicker_01",
+              "tint": {
+                "r": 0.9245283,
+                "g": 0.459748149,
+                "b": 0.213688076,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RfrFlicker_02",
+              "tint": {
+                "r": 0.990565956,
+                "g": 0.5433691,
+                "b": 0.00467249239,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.25,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_RfrFlicker_03",
+              "tint": {
+                "r": 0.9660358,
+                "g": 1.0,
+                "b": 0.6084906,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Flame",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.035,
+                "y": 0.4,
+                "z": 0.0
+              },
+              "scale": {
+                "x": 0.8,
+                "y": 0.8,
+                "z": 1.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Sharded",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Sharded_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Sharded_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Sharded_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9768594,
+                "b": 0.183962256,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -16.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_Sharded_02",
+              "tint": {
+                "r": 0.9892964,
+                "g": 0.649474859,
+                "b": 0.990565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 3.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_Sharded_02",
+              "tint": {
+                "r": 0.8066038,
+                "g": 0.8201638,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

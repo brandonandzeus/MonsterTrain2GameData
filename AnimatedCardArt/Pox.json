@@ -1,0 +1,44 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Pox",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Pox_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Pox_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_Pox_Base",
+              "tint": {
+                "r": 0.03137255,
+                "g": 0.137254864,
+                "b": 0.0901960656,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 5.0
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Pox_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

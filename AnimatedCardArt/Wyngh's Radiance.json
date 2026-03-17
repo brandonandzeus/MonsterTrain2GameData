@@ -1,0 +1,83 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_WynghsRadiance",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_WynghsRadiance_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_WynghsRadiance_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_WynghsRadiance_Figures",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_WynghsRadiance_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9669811,
+                "b": 0.8349056,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 20.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_WynghsRadiance_Feathers",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_WynghsRadiance_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "FX_Flash",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.501201153
+              },
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Figures",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.02,
+                "y": 0.205,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

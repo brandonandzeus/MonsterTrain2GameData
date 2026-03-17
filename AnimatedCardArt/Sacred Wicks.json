@@ -1,0 +1,69 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SacredWicks",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SacredWicks_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SacredWicks_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SacredWicks_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.8431373,
+                "b": 0.450980425,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_SacredWicks_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.7063164,
+                "b": 0.155660331,
+                "a": 0.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -30.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SacredWicks_02",
+              "motion_texture": "FX_Aura",
+              "stretch": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SacredWicks_03",
+              "motion_texture": "FX_Aura",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

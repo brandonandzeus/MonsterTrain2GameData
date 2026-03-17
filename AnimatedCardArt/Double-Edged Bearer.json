@@ -1,0 +1,66 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_DoubleEdgedBearer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_DoubleEdgedBearer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_DoubleEdgedBearer_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_DoubleEdgedBearer_Main_FX_01",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_DoubleEdgedBearer_Main_FX_02",
+              "motion_texture": "FX_Clouds_01"
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_DoubleEdgedBearer",
+              "mask_texture": "MSK_DoubleEdgedBearer_Main",
+              "tint": {
+                "r": 0.8117463,
+                "g": 0.9811321,
+                "b": 0.6062656,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.33,
+                "y": 0.34,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                1
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

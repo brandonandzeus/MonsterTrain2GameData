@@ -1,0 +1,88 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_DevilishDetails",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_DevilishDetails_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_DevilishDetails_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_DevilishDetails_Main_FX_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_DevilishDetails_Main_FX_01",
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_DevilishDetails_Main_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_DevilishDetails_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.07,
+                "y": -0.13,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX_Glow",
+              "layers": [
+                1
+              ]
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.06,
+                "y": -0.155,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": -0.02,
+                "y": -0.024,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

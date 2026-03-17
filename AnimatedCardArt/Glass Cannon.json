@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_GlassCannon",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_GlassCannon_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_GlassCannon_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_GlassCannon_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_GlassCannon_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.025,
+                "y": -0.1,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.022,
+                "y": -0.055,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

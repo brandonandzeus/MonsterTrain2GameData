@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Railgun",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Railgun_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Railgun_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Railgun_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Railgun_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9434461,
+                "b": 0.514151,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "CardEffectTransform",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.225,
+                "y": 0.295,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

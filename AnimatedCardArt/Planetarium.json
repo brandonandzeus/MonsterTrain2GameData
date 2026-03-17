@@ -1,0 +1,39 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Planetarium",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Planetarium_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Planetarium_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_GameOver_Victory",
+              "mask_texture": "MSK_Planetarium_Main",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_Planetarium_Base",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

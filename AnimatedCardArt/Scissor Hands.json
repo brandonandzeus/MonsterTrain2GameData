@@ -1,0 +1,52 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ScissorHands",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ScissorHands_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ScissorHands_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_ScissorHands_Base",
+              "motion_texture": "FX_Aura_03",
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ScissorHands_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ScissorHands",
+              "mask_texture": "MSK_ScissorHands_Main",
+              "tint": {
+                "r": 0.7639947,
+                "g": 1.0,
+                "b": 0.419811219,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -8.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Scrivener",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Scrivener_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Scrivener_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT_Scrivener_Book_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Scrivener_Book_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Scrivener_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_Scrivener_Main_FX",
+              "tint": {
+                "r": 0.5669465,
+                "g": 0.221475571,
+                "b": 0.5943396,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 1.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Book_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.277,
+                "y": -0.105,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Book_02",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.3115,
+                "y": -0.1275,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": -0.06325,
+                "y": 0.005,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

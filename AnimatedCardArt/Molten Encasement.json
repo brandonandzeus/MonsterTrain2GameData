@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_EffusiveEncasement",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_EffusiveEncasement_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_EffusiveEncasement_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_EffusiveEncasement_02",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_EffusiveEncasement_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.6533778,
+                "b": 0.0141509175,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 15.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Liquid",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.048,
+                "y": 0.02,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

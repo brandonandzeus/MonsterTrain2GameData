@@ -1,0 +1,71 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_VineGrasp",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_VineGrasp_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_VineGrasp_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_SpiralOut",
+              "mask_texture": "MSK_VineGrasp_01",
+              "tint": {
+                "r": 0.105865069,
+                "g": 0.5079759,
+                "b": 0.57547164,
+                "a": 0.784313738
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_VineGrasp_02",
+              "motion_texture": "FX_Flow_SpiralOut_02",
+              "tint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_VineGrasp_03",
+              "motion_texture": "FX_Clouds_02",
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_VineGrasp_04",
+              "motion_texture": "FX_Clouds_02",
+              "tint": {
+                "r": 0.24328047,
+                "g": 0.512172639,
+                "b": 0.6698113,
+                "a": 0.670588255
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 5.0
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

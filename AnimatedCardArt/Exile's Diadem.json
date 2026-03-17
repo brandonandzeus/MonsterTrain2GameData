@@ -1,0 +1,45 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ExilesDiadem",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ExilesDiadem_Main",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ExilesDiadem_Main"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_EmberCache",
+              "mask_texture": "MSK_ExilesDiadem_Base",
+              "tint": {
+                "r": 0.372641474,
+                "g": 0.983270466,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Aura",
+              "mask_texture": "MSK_ExilesDiadem_Main",
+              "linear_speed": {
+                "x": 2.0,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Talos",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "PRT_Talos_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Talos_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Talos_Base_Flames",
+              "motion_texture": "FX_Clouds_02",
+              "tilt": {
+                "x": 50.0,
+                "y": 40.0,
+                "z": 0.0
+              },
+              "rotation_speed": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 400.0
+              },
+              "scale": {
+                "x": 1.4,
+                "y": 1.4
+              },
+              "position_offset": {
+                "x": -0.05,
+                "y": 0.04
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Talos_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_SpiralIn",
+              "mask_texture": "MSK_Talos_Main_Spear",
+              "tint": {
+                "r": 1.0,
+                "g": 0.259433955,
+                "b": 0.892595,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.25,
+                "y": 0.25
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Talos_Main_Spear",
+              "motion_texture": "effect_noise",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Flames",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.048,
+                "y": 0.09,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Talos",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.1,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Spear",
+              "layers": [
+                2,
+                3
+              ],
+              "position": {
+                "x": 0.375,
+                "y": 0.08,
+                "z": 0.0
+              },
+              "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -16.1
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

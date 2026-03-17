@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Ekka",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Ekka_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Ekka_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "PRT_LunarPriestess_Base_FX",
+              "mask_texture": "MSK_Ekka_Base",
+              "tint": {
+                "r": 0.76886797,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Ekka_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_Ekka_Main_FX_01",
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_Ekka_Main_FX_02",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

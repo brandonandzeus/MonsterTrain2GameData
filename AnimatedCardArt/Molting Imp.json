@@ -1,0 +1,46 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MoultingImp",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MoultingImp_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MoultingImp_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "PRT_MoultingImp_02",
+              "mask_texture": "MSK_MoultingImp_03",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 35.0
+              },
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_MoultingImp_04",
+              "mask_texture": "MSK_MoultingImp_04",
+              "tint": {
+                "r": 0.967074931,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

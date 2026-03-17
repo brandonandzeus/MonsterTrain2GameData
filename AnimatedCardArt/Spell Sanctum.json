@@ -1,0 +1,67 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_CorridorOfConvergence",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_CorridorofConvergence_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_CorridorofConvergence_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_CorridorofConvergence_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_CorridorofConvergence_Base",
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.25
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_CorridorofConvergence_Base",
+              "tint": {
+                "r": 0.9716981,
+                "g": 0.859815,
+                "b": 0.4354307,
+                "a": 0.533333361
+              },
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.23,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MorelMistress",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MorelMistress_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MorelMistress_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_MorelMistress_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_MorelMistress_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_MorelMistress_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ]
+            },
+            {
+              "id": "Main_FX",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.0235,
+                "y": 0.045,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.051,
+                "y": 0.142,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

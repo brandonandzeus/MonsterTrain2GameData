@@ -1,0 +1,48 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Meathook",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Meathook_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Meathook_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Meathook_Base",
+              "tint": {
+                "r": 0.3882353,
+                "g": 0.380392134,
+                "b": 0.3882353,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Meathook_Main_FX_01",
+              "stretch": false,
+              "additive": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Meathook_Main_FX_02",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

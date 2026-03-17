@@ -1,0 +1,46 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_TrueBeliever",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_TrueBeliever_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_TrueBeliever_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_TrueBeliever_Base",
+              "tint": {
+                "r": 0.8103124,
+                "g": 0.8207547,
+                "b": 0.251646459,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_TrueBeliever_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

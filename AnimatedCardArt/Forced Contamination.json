@@ -1,0 +1,68 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ForcedContamination",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ForcedContamination_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ForcedContamination_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_ForcedContamination_02",
+              "tint": {
+                "r": 0.318029046,
+                "g": 0.1683428,
+                "b": 0.367924482,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -2.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_ForcedContamination_02",
+              "motion_texture": "FX_Clouds_01"
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_ConeDown",
+              "mask_texture": "MSK_ForcedContamination_01",
+              "tint": {
+                "r": 0.881039143,
+                "g": 0.6273585,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 15.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_ForcedContamination_03",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

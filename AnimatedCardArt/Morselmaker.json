@@ -1,0 +1,53 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MorselMaker",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MorselMaker_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MorselMaker_01"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT_MorselMaker_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_MorselMaker_02",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Up",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_MorselMaker_03",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              },
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "MorselMaker",
+              "layers": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

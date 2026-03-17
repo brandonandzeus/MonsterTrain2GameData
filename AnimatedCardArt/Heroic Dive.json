@@ -1,0 +1,49 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HeroicDive",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HeroicDive_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HeroicDive_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_HeroicDive_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9475891,
+                "b": 0.6462264,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_HeroicDive_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_HeroicDive_Flames",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

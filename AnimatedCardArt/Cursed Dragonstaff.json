@@ -1,0 +1,92 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_CursedDragonstaff",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_CursedDragonstaff_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_CursedDragonstaff_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_CursedDragonstaff_Base",
+              "motion_texture": "FX_Aura_03"
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_CursedDragonstaff_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_CursedDragonstaff_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_03",
+              "mask_texture": "MSK_CursedDragonstaff_Main",
+              "tint": {
+                "r": 0.839752138,
+                "g": 1.0,
+                "b": 0.174528271,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 4.0,
+                "y": 6.0
+              },
+              "scale": {
+                "x": 0.25,
+                "y": 0.25
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.025,
+                "y": -0.0195,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.07,
+                "y": -0.055,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.032,
+                "y": -0.092,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

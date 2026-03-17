@@ -1,0 +1,84 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Sting",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Sting_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Sting_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_LightShards_02",
+              "tint": {
+                "r": 0.902594566,
+                "g": 0.565370142,
+                "b": 0.990565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 1.0,
+                "y": -1.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_Sting_02",
+              "motion_texture": "FX_Flow_Sphere",
+              "scale": {
+                "x": 1.2,
+                "y": 1.2
+              },
+              "position_offset": {
+                "x": 0.45,
+                "y": -0.45
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_Sting_03",
+              "motion_texture": "FX_Flow_S_Curve",
+              "scale": {
+                "x": 1.1,
+                "y": 1.1
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_02",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_LightStreams_02",
+              "tint": {
+                "r": 0.9647059,
+                "g": 0.976470649,
+                "b": 0.199999988,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 3.0,
+                "y": -3.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

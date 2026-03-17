@@ -1,0 +1,74 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_LilFade",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_LilFade_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_LilFade_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Aura_02",
+              "mask_texture": "MSK_LilFade_01",
+              "tint": {
+                "r": 0.8915029,
+                "g": 0.117924489,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 1.5,
+                "y": 2.5
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Noise",
+              "mask_texture": "MSK_LilFade_02",
+              "tint": {
+                "r": 0.4575472,
+                "g": 0.922492564,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_LilFade_02",
+              "motion_texture": "FX_Aura"
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "MSK_LilFade_03",
+              "tint": {
+                "r": 0.9811321,
+                "g": 0.7006605,
+                "b": 0.180491269,
+                "a": 0.6156863
+              },
+              "linear_speed": {
+                "x": -2.0,
+                "y": 0.25
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

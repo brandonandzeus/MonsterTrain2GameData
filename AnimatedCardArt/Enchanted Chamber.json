@@ -1,0 +1,80 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EnchantedChamber",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EnchantedChamber_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EnchantedChamber_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_EnchantedChamber_Base_FX_01",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_EnchantedChamber_Base_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_EmberCache",
+              "mask_texture": "MSK_EnchantedChamber_Main",
+              "tint": {
+                "r": 0.966303647,
+                "g": 0.8349056,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_EnchantedChamber_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.042,
+                "y": -0.165,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Base_FX_02",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.005,
+                "y": -0.085,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

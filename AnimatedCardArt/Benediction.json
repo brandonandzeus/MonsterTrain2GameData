@@ -1,0 +1,58 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Benediction",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Benediction_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Benediction_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_Benediction_Main",
+              "tint": {
+                "r": 0.0,
+                "g": 0.9209695,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Benediction_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_Benediction_Main_02_Glow",
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Benediction_Main_02",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

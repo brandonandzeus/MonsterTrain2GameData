@@ -1,0 +1,59 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EternalKinstone",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EternalKinstone_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EternalKinstone_01"
+          },
+          "layers": [
+            {
+              "type": "glow",
+              "texture": "SPL_EternalKinstone_02",
+              "linear_speed": {
+                "x": 13.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Vertical",
+              "mask_texture": "MSK_EternalKinstone_01",
+              "tint": {
+                "r": 0.8489826,
+                "g": 0.580188632,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_PixieDust",
+              "mask_texture": "MSK_EternalKinstone_02",
+              "tint": {
+                "r": 0.683962166,
+                "g": 0.905095935,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

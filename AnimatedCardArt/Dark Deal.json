@@ -1,0 +1,85 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_DarkOffering",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_DarkOffering",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_DarkOffering",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_DarkOffering_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.5153111,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 25.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "MSK_FireFlies",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_Gradient_45L",
+              "tint": {
+                "r": 0.945098,
+                "g": 0.906466663,
+                "b": 0.21960777,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_DarkOffering_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_DarkOffering_02",
+              "motion_texture": "MSK_CloudsDiff_01",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "rotation_speed": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 150.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_DarkOffering_01",
+              "motion_texture": "MSK_CloudsDiff_01",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

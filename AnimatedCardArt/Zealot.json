@@ -1,0 +1,80 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Zealot",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Zealot_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Zealot_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_02",
+              "motion_texture": "FX_Flow_Vertical",
+              "mask_texture": "MSK_Zealot_Base_FX",
+              "tint": {
+                "r": 1.0,
+                "g": 0.5604902,
+                "b": 0.297169775,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -2.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Zealot_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_Zealot_Base_FX",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.192156866
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_06",
+              "mask_texture": "MSK_Zealot_Main_FX",
+              "tint": {
+                "r": 1.0,
+                "g": 0.6129882,
+                "b": 0.30660376,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 0.0
+              },
+              "scale": {
+                "x": 0.4,
+                "y": 0.4
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

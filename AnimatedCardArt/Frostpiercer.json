@@ -1,0 +1,74 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_FrostPiercer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_FrostPiercer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_FrostPiercer_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_FrostPiercer_Base",
+              "motion_texture": "FX_Aura_03"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_FrostPiercer_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_FrostPiercer_Main",
+              "tint": {
+                "r": 0.7896493,
+                "g": 0.9805202,
+                "b": 0.990565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.025,
+                "y": -0.01,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.01,
+                "y": -0.04745,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

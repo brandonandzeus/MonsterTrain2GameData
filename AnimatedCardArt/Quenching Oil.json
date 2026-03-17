@@ -1,0 +1,54 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_QuenchingOil",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_QuenchingOil_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_QuenchingOil_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_QuenchingOil_Base",
+              "tint": {
+                "r": 0.9652515,
+                "g": 0.9386792,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 20.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_QuenchingOil_Main_FX_01",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_QuenchingOil_Main_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

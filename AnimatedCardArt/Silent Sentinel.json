@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_SilentSentinel",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_SilentSentinel_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_SilentSentinel_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_SilentSentinel_Base_FX",
+              "tint": {
+                "r": 0.990565956,
+                "g": 0.9204788,
+                "b": 0.936053753,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_SilentSentinel_Base",
+              "tint": {
+                "r": 0.495283,
+                "g": 0.6159762,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Pyreball",
+              "mask_texture": "MSK_SilentSentinel_Main",
+              "tint": {
+                "r": 0.8537736,
+                "g": 1.0,
+                "b": 0.8781447,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_SilentSentinel_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

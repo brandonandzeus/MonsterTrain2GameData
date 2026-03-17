@@ -1,0 +1,76 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_BloatedWhelp",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_BloatedWhelp_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_BloatedWhelp_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_BloatedWhelp_Base_FX",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Sphere_02",
+              "tint": {
+                "r": 0.6415094,
+                "g": 0.203610092,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_BloatedWhelp_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_BloatedWhelp_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_BloatedWhelp_Base_Glow",
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": 0.058,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

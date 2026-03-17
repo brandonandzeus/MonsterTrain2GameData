@@ -1,0 +1,47 @@
+{
+  "game_objects": [
+    {
+      "id": "CardAr_SPL_Pyreball",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Pyreball_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Pyreball_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Pyreball",
+              "mask_texture": "MSK_Pyreball_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.8014858,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 30.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Pyreball_Main",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

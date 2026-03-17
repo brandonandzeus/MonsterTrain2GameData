@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MorselMiner",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MorselMiner_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MorselMiner_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_MorselMiner_02",
+              "motion_texture": "FX_Noise",
+              "mask_texture": "MSK_AntumbraJeweler_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_MorselMiner_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_MorselMiner_03",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.7058824
+              },
+              "linear_speed": {
+                "x": 14.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Morsel",
+              "layers": [
+                0,
+                1
+              ],
+              "position": {
+                "x": -0.025,
+                "y": 0.075,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

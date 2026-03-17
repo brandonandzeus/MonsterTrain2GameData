@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ReplicatorRay",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ReplicatorRay_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ReplicatorRay_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_ReplicatorRay_Main_FX_01",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_ReplicatorRay_Main_FX_02",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ReplicatorRay_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.095,
+                "y": 0.04,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.05,
+                "y": 0.0275,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.133,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Enchantrelle",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "PRT_Enchantrelle_Base_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Enchantrelle_Base_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Enchantrelle_Main_FX_01",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Enchantrelle_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Enchantrelle_Main_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "PRT_Enchantrelle_Main_FX_03",
+              "mask_texture": "MSK_Enchantrelle_Main",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Enchantrelle_Base_02",
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.1275,
+                "y": 0.169,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_01",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.035,
+                "y": -0.01,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.125,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

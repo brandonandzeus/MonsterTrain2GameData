@@ -1,0 +1,47 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_DragonsRoar",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_DragonsRoar_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_DragonsRoar_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeRight_Neg15",
+              "mask_texture": "MSK_DragonsRoar_Main_FX",
+              "tint": {
+                "r": 0.377358466,
+                "g": 0.0220355317,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 40.0
+              },
+              "scale": {
+                "x": 3.0,
+                "y": 3.0
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_DragonsRoar_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

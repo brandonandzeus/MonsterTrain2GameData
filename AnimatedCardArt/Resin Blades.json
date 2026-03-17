@@ -1,0 +1,47 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ResinBlades",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ResinBlades_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ResinBlades_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_ResinBlades_Base",
+              "motion_texture": "FX_Aura_03"
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ScissorHands",
+              "mask_texture": "MSK_ResinBlades_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.408647537,
+                "b": 0.165094286,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ResinBlades_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

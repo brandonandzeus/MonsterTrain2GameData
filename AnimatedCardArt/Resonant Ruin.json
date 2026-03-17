@@ -1,0 +1,47 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ResonantRuin",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ResonantRuin_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ResonantRuin_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_ResonantRuin_Base",
+              "motion_texture": "FX_Aura_03"
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_ResonantRuin_Main",
+              "tint": {
+                "r": 0.990565956,
+                "g": 0.990565956,
+                "b": 0.3971609,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ResonantRuin_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Demon_Imp",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Demon_Imp_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_Demon_Imp_01",
+              "motion_texture": "FX_Clouds_02",
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_Gradient_45L",
+              "tint": {
+                "r": 1.0,
+                "g": 0.313630074,
+                "b": 0.145098,
+                "a": 0.6156863
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "PRT_Demon_Imp_02",
+              "motion_texture": "FX_Flow_DemonImp",
+              "position_offset": {
+                "x": -0.02,
+                "y": 0.0
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "motion_texture": "FX_Flow_S_Curve_02",
+              "mask_texture": "MSK_Gradient_Up",
+              "tint": {
+                "r": 1.0,
+                "g": 0.1453081,
+                "b": 0.09905658,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -20.0,
+                "y": 5.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

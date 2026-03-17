@@ -1,0 +1,53 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SilverInk",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_SilverInk_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SilverInk_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_SilverInk_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SilverInk_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SilverInk_Main_02",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_SilverInk_Main",
+              "linear_speed": {
+                "x": 1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SilverInk_Main_03",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

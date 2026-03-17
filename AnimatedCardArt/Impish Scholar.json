@@ -1,0 +1,74 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ImpishScholar",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ImpishScholar_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ImpishScholar_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_ImpishScholar_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_ImpishScholar_03",
+              "tint": {
+                "r": 0.7048772,
+                "g": 0.8731651,
+                "b": 0.9056604,
+                "a": 0.894117653
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 1.0
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "motion_texture": "FX_Flow_DemonImp",
+              "mask_texture": "MSK_ImpishScholar_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.997206867,
+                "b": 0.2877358,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -4.0,
+                "y": 4.0
+              },
+              "scale": {
+                "x": 0.25,
+                "y": 0.25
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Spores_03",
+              "motion_texture": "FX_Flow_SpiralIn",
+              "mask_texture": "MSK_ImpishScholar_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.912737548,
+                "b": 0.00392156839,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -2.0,
+                "y": 5.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

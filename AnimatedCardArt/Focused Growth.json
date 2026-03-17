@@ -1,0 +1,71 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_FocusedGrowth",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_FocusedGrowth_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_FocusedGrowth_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "SPL_FocusedGrowth_03",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_FocusedGrowth_04",
+              "motion_texture": "FX_Aura",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_FocusedGrowth_02",
+              "motion_texture": "FX_LightShards_NW",
+              "scale": {
+                "x": 0.85,
+                "y": 1.0
+              },
+              "position_offset": {
+                "x": -0.08,
+                "y": 0.0
+              },
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Spores_03",
+              "motion_texture": "FX_Flow_FocusedGrowth_01",
+              "mask_texture": "MSK_FocusedGrowth_01",
+              "tint": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 0.149661243,
+                "a": 0.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 18.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 5.371411
+              },
+              "position_offset": {
+                "x": -0.0100166155,
+                "y": -0.0175290778
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

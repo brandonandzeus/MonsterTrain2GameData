@@ -1,0 +1,83 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_PyreShards",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_PyreShards_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_PyreShards_01",
+            "motion_texture": "tiled_distortions",
+            "mask_texture": "MSK_GradientCone_Down"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "SPL_PyreShards_01",
+              "motion_texture": "FX_Flow_SpiralOut",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.8352941
+              },
+              "scale": {
+                "x": 1.01754069,
+                "y": 1.01754069
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_PyreShards_02",
+              "motion_texture": "FX_Aura",
+              "linear_offset": {
+                "x": -0.000519999769,
+                "y": 0.000519999769
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.207999825
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_PyreShards_04",
+              "motion_texture": "FX_LightShards_NW",
+              "mask_texture": "MSK_PyreShards_02",
+              "linear_speed": {
+                "x": 15.0,
+                "y": -10.0
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_PyreShards_03",
+              "mask_texture": "MSK_PyreShards_02",
+              "linear_speed": {
+                "x": -10.0,
+                "y": 10.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

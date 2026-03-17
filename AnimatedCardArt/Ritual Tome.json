@@ -1,0 +1,66 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_RitualTome",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_RitualTome_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_RitualTome_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_RitualTome_Base",
+              "motion_texture": "FX_Aura_03"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_RitualTome_Main",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RitualTome_Base",
+              "tint": {
+                "r": 0.514151,
+                "g": 0.711307049,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 0.0
+              },
+              "scale": {
+                "x": 3.0,
+                "y": 3.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Stars",
+              "mask_texture": "MSK_RitualTome_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9710161,
+                "b": 0.759434,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

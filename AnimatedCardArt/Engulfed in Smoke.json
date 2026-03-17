@@ -1,0 +1,63 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EngulfedInSmoke",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EngulfedInSmoke_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EngulfedInSmoke_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "tint": {
+                "r": 0.1878337,
+                "g": 0.3439186,
+                "b": 0.6320754,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_EngulfedInSmoke_01",
+              "motion_texture": "FX_Aura"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_EngulfedInSmoke_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_EngulfedInSmoke_04",
+              "motion_texture": "FX_Aura_02",
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_EngulfedInSmoke_03",
+              "linear_speed": {
+                "x": 15.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

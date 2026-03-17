@@ -1,0 +1,53 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_PowerOfKnowledge",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_PowerOfKnowledge_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_PowerOfKnowledge_01"
+          },
+          "layers": [
+            {
+              "type": "glow",
+              "texture": "SPL_PowerOfKnowledge_03",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_PowerOfKnowledge_01",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 40.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -10.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_PowerOfKnowledge_02",
+              "motion_texture": "FX_Clouds_01"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_PowerOfKnowledge_04",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

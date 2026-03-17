@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Moonrise",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_Moonrise_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Moonrise_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_Moonrise_Main",
+              "tint": {
+                "r": 0.9811321,
+                "g": 0.7771732,
+                "b": 0.5970096,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Moonrise_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Moonrise_Main_FX",
+              "motion_texture": "FX_Clouds_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Moonrise_Main_02",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

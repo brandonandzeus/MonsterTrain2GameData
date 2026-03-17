@@ -1,0 +1,56 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_LadyOfTheHouse",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_LadyoftheHouse_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_LadyoftheHouse_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_LadyoftheHouse_02",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_LadyoftheHouse_01",
+              "tint": {
+                "r": 0.9686275,
+                "g": 0.764705956,
+                "b": 0.5803921,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": -1.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Flame",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.01,
+                "y": 0.38,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_NamelessSiren",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_NamelessSiren_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_NamelessSiren_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_NamelessSiren_01",
+              "motion_texture": "FX_Noise",
+              "mask_texture": "MSK_Gradient_Bottom"
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_CryptBuilder_05",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              },
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_NamelessSiren_02",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

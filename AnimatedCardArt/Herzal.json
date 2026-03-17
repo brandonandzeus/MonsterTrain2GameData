@@ -1,0 +1,39 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Herzal",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Herzal_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Herzal_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "PRT_Herzal_Base_FX",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.2627451
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "EMS_Herzal_Main",
+              "motion_texture": "FX_Clouds_03"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Divinity",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_Divinity_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Divinity_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_Divinity_Hymnist",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Divinity_Base_Lights",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeRight_60",
+              "mask_texture": "MSK_Divinity_Base_Lights",
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Divinity_Main_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Divinity_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Divinity_Main_LightShaft",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeLeft_Neg45_Up",
+              "mask_texture": "MSK_Divinity_Main_LightShaft",
+              "tint": {
+                "r": 0.9292453,
+                "g": 0.9971717,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -16.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -15.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Divinity_Main_FX_Hand",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Hymnist",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.335,
+                "y": 0.2,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Base_Lights",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.017,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Draff",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "PRT_Draff_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Draff_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Draff_01",
+              "tint": {
+                "r": 0.7075471,
+                "g": 0.4765786,
+                "b": 0.3437611,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "FX_CandleFlame_03",
+              "motion_texture": "FX_Flicker",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Draff_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Draff_02",
+              "motion_texture": "effect_noise",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Draff_03"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

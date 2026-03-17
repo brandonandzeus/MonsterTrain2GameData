@@ -1,0 +1,67 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Moonbeam",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Moonbeam_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Moonbeam_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Moonbeam_Base_FX_01",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Reform",
+              "mask_texture": "MSK_Moonbeam_Main",
+              "tint": {
+                "r": 0.836374164,
+                "g": 0.9861606,
+                "b": 0.990565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "scale": {
+                "x": 3.0,
+                "y": 3.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Moonbeam_Base_FX_02",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.01,
+                "y": -0.04,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

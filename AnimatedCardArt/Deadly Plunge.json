@@ -1,0 +1,60 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_RushDown",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_RushDown_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_RushDown_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_RushDown_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9882353,
+                "b": 0.7176471,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_RushDown_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_RushDown_Flash",
+              "stretch": false,
+              "additive": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "FX_Flash",
+              "stretch": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "MSK_RushDown_FG",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

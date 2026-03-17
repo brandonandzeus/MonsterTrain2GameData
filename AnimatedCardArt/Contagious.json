@@ -1,0 +1,93 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Contagion",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Contagion_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Contagion_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Contagion_Main_FX_01",
+              "motion_texture": "FX_Clouds_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Contagion_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Contagion_Main_FX_02",
+              "motion_texture": "FX_Clouds_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Contagion_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.075,
+                "y": -0.025,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.075,
+                "y": -0.094,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.012,
+                "y": -0.07,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Base_FX",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.0375,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

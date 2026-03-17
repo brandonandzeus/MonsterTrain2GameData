@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_FrozenLance",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_FrozenLance_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_FrozenLance_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeRight_60",
+              "mask_texture": "MSK_Vignette",
+              "tint": {
+                "r": 0.0439213,
+                "g": 0.214570612,
+                "b": 0.443396181,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_FrozenLance_02",
+              "motion_texture": "FX_Aura"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_FrozenLance_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_FrozenLance_01",
+              "tint": {
+                "r": 0.8117926,
+                "g": 0.372641474,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

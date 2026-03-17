@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_DeepOffering",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_DeepOffering_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_DeepOffering_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_DeepOffering_01",
+              "tint": {
+                "r": 0.00654147752,
+                "g": 0.180369735,
+                "b": 0.198113173,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 0.25
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_DeepOffering_02",
+              "motion_texture": "FX_Aura_02"
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_DeepOffering_02",
+              "tint": {
+                "r": 0.447058856,
+                "g": 0.9607844,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

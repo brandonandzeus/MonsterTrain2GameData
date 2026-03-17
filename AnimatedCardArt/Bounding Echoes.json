@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_BouncingEchoes",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_BouncingEchoes_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_BouncingEchoes_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_BouncingEchoes_02",
+              "motion_texture": "FX_Clouds_01"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_BouncingEchoes_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_BouncingEchoes_04",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              },
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_BouncingEchoes_06",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.5019608
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_BouncingEchoes_05",
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Crystal",
+              "layers": [
+                0,
+                1,
+                2
+              ],
+              "position": {
+                "x": -0.01,
+                "y": 0.03,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

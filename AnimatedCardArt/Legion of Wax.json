@@ -1,0 +1,40 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_LegionOfWax",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_LegionOfWax_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_LegionOfWax_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_LegionOfWax_01",
+              "tint": {
+                "r": 0.2352941,
+                "g": 0.368627429,
+                "b": 0.3098039,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_LegionOfWax_02",
+              "motion_texture": "FX_Clouds_01"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

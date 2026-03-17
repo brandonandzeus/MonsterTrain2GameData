@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Railbeater",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Railbeater_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Railbeater_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "mask_texture": "MSK_Railbeater_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.4892997,
+                "b": 0.0518867746,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Railbeater_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.6975164,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 15.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "FX_Clouds_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.633014858,
+                "b": 0.0,
+                "a": 0.466666669
+              },
+              "linear_speed": {
+                "x": -20.0,
+                "y": 8.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_BigSludge",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_BigSludge_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_BigSludge_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Noise",
+              "motion_texture": "FX_Flow_ConeDown",
+              "mask_texture": "MSK_BigSludge_01",
+              "tint": {
+                "r": 0.24999997,
+                "g": 0.453703761,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_BigSludge_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.8643901,
+                "b": 0.30660376,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 20.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

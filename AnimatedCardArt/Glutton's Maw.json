@@ -1,0 +1,65 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_GluttonsMaw",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_GluttonsMaw_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_GluttonsMaw_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_GluttonsMaw_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.593492031,
+                "b": 0.240565985,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_GluttonsMaw_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_02",
+              "mask_texture": "MSK_GluttonsMaw_Main",
+              "tint": {
+                "r": 0.514151,
+                "g": 1.0,
+                "b": 0.8833962,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -4.0,
+                "y": -4.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

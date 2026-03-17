@@ -1,0 +1,66 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_VoidBinding",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_VoidBinding_01",
+          "base_layer": {
+            "type": "texture"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_VoidBinding_01",
+              "motion_texture": "FX_Aura_02"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_VoidBinding_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_VoidBinding_02",
+              "tint": {
+                "r": 0.9498238,
+                "g": 0.240565985,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_VoidBinding_01",
+              "tint": {
+                "r": 0.992499053,
+                "g": 0.542452753,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

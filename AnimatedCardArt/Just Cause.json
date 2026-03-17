@@ -1,0 +1,61 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_JustCause",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_JustCause_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_JustCause_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_JustCause_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Gradient_Sphere_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.842477143,
+                "b": 0.514151,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_JustCause_Main_02",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0845,
+                "y": 0.054,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

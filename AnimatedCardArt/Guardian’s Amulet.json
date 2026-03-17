@@ -1,0 +1,51 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_GuardiansAmulet",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_GuardiansAmulet_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_GuardiansAmulet_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_GuardiansAmulet_01",
+              "tint": {
+                "r": 0.490994453,
+                "g": 0.2663314,
+                "b": 0.5943396,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_GuardiansAmulet_03",
+              "motion_texture": "FX_Sheen_02",
+              "mask_texture": "MSK_GuardiansAmulet_02",
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_GuardiansAmulet_02",
+              "linear_speed": {
+                "x": 20.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

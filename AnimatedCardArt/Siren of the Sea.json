@@ -1,0 +1,40 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ColdstingSiren",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ColdstingSiren_01",
+          "base_layer": {
+            "type": "texture"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_ColdstingSiren_01",
+              "motion_texture": "FX_Aura_02",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "PRT_ColdstingSiren_02",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_ColdstingSiren_03",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

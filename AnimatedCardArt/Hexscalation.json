@@ -1,0 +1,75 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Hexcalation",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Hexcalation_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Hexcalation_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeDown",
+              "mask_texture": "MSK_Hexcalation_Base",
+              "tint": {
+                "r": 0.221698076,
+                "g": 0.9607131,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Hexcalation",
+              "mask_texture": "MSK_Hexcalation_Base_FX",
+              "tint": {
+                "r": 0.372641474,
+                "g": 0.896670461,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Hexcalation_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Hexcalation_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Hexcalation_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

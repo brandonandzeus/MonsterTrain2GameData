@@ -1,0 +1,72 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_TheSentient",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_TheSentient_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_TheSentient_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_TheSentient_02",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_TheSentient_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_LightStreams_02",
+              "tint": {
+                "r": 0.517647,
+                "g": 1.0,
+                "b": 0.937254965,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 3.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 30.0
+              },
+              "scale": {
+                "x": 3.0,
+                "y": 3.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Hair",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.03,
+                "y": 0.39,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

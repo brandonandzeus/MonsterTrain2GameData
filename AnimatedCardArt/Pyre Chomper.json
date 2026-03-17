@@ -1,0 +1,92 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_PyreChomper",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_PyreChomper_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_PyreChomper_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "MSK_CloudsDiff_01",
+              "motion_texture": "FX_Flow_ConeRight",
+              "mask_texture": "MSK_PyreChomper_03",
+              "tint": {
+                "r": 1.0,
+                "g": 0.702133834,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "mask_texture": "MSK_PyreChomper_05",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9030837,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.5,
+                "y": 4.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "mask_texture": "MSK_PyreChomper_04",
+              "tint": {
+                "r": 1.0,
+                "g": 0.411764681,
+                "b": 0.0,
+                "a": 0.6784314
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_PyreChomper_06",
+              "tint": {
+                "r": 1.0,
+                "g": 0.03455183,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_PyreChomper_01",
+              "motion_texture": "FX_Noise",
+              "mask_texture": "MSK_PyreChomper_02",
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

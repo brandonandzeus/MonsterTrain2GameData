@@ -1,0 +1,68 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_LunarPriestess",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_LunarPriestess_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_LunarPriestess_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "PRT_LunarPriestess_Base_FX",
+              "mask_texture": "FX_Noise",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.25
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "PRT_LunarPriestess_Main_FX",
+              "mask_texture": "MSK_LunarPriestess_Main_FX",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_LunarPriestess_Base_FX",
+              "tint": {
+                "r": 0.457769632,
+                "g": 0.68422544,
+                "b": 0.764151,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -0.25,
+                "y": 0.0
+              },
+              "scale": {
+                "x": 3.0,
+                "y": 3.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_LunarPriestess_Main",
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

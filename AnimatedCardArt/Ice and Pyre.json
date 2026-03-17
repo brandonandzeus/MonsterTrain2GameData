@@ -1,0 +1,65 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_IceAndPyre",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_IceAndPyre_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_IceAndPyre_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_IceAndPyre_02",
+              "motion_texture": "FX_Clouds_01"
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_IceAndPyre_02",
+              "tint": {
+                "r": 0.990565956,
+                "g": 0.597391069,
+                "b": 0.3410911,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_IceAndPyre",
+              "mask_texture": "MSK_IceAndPyre_01",
+              "tint": {
+                "r": 0.7311321,
+                "g": 0.9338706,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 12.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

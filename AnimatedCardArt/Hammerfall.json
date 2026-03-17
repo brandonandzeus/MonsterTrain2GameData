@@ -1,0 +1,97 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Hammerfall",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_Hammerfall_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Hammerfall_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Hammerfall_Base",
+              "motion_texture": "FX_Clouds_01"
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Hammerfall_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Hammerfall_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeDown",
+              "mask_texture": "MSK_Hammerfall_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.979401648,
+                "b": 0.9009434,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -50.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Hammerfall_Main_02",
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.02,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Base_FX_02",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": 0.315,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_01",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.071,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

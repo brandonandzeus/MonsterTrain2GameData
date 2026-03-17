@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_PlagueDoctor",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_PlagueDoctor_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_PlagueDoctor_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_PlagueDoctor_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_PlagueDoctor",
+              "mask_texture": "MSK_PlagueDoctor_Main",
+              "tint": {
+                "r": 0.6590862,
+                "g": 0.9811321,
+                "b": 0.578497648,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.27,
+                "y": 0.222,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

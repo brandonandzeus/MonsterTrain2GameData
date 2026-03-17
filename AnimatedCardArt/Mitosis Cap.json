@@ -1,0 +1,54 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_MitosisCap",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_MitosisCap_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_MitosisCap_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "SPL_MitosisCap_Base_FX",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.25
+              },
+              "position_offset": {
+                "x": 0.25,
+                "y": 0.0
+              },
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_MitosisCap_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_MitosisCap_Base_FX",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_MitosisCap_Main",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

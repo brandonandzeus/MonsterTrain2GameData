@@ -1,0 +1,95 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Demonize",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Demonize_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Demonize_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_Demonize_Main_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Demonize_Main_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_ConeLeft_Neg45_Up",
+              "mask_texture": "MSK_Demonize_Base",
+              "tint": {
+                "r": 1.0,
+                "g": 0.7935077,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              },
+              "scale": {
+                "x": 4.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Demonize_Main_03",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.046,
+                "y": -0.1486,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_02",
+              "layers": [
+                1,
+                2
+              ],
+              "position": {
+                "x": 0.005,
+                "y": -0.15,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_03",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": 0.21975,
+                "y": 0.192,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

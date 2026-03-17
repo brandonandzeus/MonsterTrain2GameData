@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_WurmkinMark",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_WurmkinMark_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_WurmkinMark_01"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_SpiralIn_02",
+              "mask_texture": "MSK_WurmkinMark_01",
+              "tint": {
+                "r": 0.79624,
+                "g": 0.216981053,
+                "b": 0.8679245,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK_WurmkinMark_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.9874826,
+                "b": 0.759434,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 3.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Gradient_Sphere_02",
+              "mask_texture": "MSK_WurmkinMark_03",
+              "tint": {
+                "r": 1.0,
+                "g": 0.06132076,
+                "b": 0.366391331,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

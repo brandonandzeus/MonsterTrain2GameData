@@ -1,0 +1,79 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SteelPulleyClaw",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SteelPulleyClaw_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SteelPulleyClaw_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_SteelPulleyClaw_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SteelPulleyClaw_Main_FX",
+              "tint": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SteelPulleyClaw_Main_FX",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 40.0
+              },
+              "enabled": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.0065,
+                "y": -0.15,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.065,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

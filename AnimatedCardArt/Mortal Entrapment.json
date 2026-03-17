@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_MortalEntrapment",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_MortalEntrapment_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_MortalEntrapment_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Noise",
+              "motion_texture": "FX_Flow_Wicklash",
+              "mask_texture": "MSK_MortalEntrapment_02",
+              "tint": {
+                "r": 0.6,
+                "g": 0.7411765,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Noise",
+              "motion_texture": "FX_Flow_Vertical",
+              "mask_texture": "MSK_MortalEntrapment_01",
+              "tint": {
+                "r": 0.5990566,
+                "g": 0.741161168,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -2.0
+              },
+              "scale": {
+                "x": 1.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "FX_WaxDrop",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

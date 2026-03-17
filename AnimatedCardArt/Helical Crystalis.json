@@ -1,0 +1,61 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HelicalCrystals",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HelicalCrystals_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HelicalCrystals_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_HelicalCrystals_01",
+              "tint": {
+                "r": 0.863147438,
+                "g": 0.542452753,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -45.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_HelicalCrystals",
+              "mask_texture": "MSK_HelicalCrystals_02",
+              "tint": {
+                "r": 0.7052576,
+                "g": 0.3207992,
+                "b": 0.8396226,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -5.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_HelicalCrystals_02",
+              "motion_texture": "FX_Clouds_01"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

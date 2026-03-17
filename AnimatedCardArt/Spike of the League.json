@@ -1,0 +1,54 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SpikeOfTheLeague",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SpikeOfTheLeague_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SpikeOfTheLeague_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_SpikeOfTheLeague_Base",
+              "motion_texture": "FX_Aura"
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SpikeOfTheLeague_Base_FX",
+              "motion_texture": "FX_Clouds_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SpikeOfTheLeague_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_SpiralOut_02",
+              "mask_texture": "MSK_SpikeOfTheLeague_Main",
+              "tint": {
+                "r": 0.414382339,
+                "g": 0.9056604,
+                "b": 0.7393221,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ScrappySongbird",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ScrappySongbird_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ScrappySongbird_Base"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT_ScrappySongbird_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_ScrappySongbird_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "mask_texture": "MSK_ScrappySongbird_Main",
+              "tint": {
+                "r": 0.6132076,
+                "g": 0.467567384,
+                "b": 0.205366671,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": -0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.031,
+                "y": -0.053,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "FX",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.05,
+                "y": 0.125,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

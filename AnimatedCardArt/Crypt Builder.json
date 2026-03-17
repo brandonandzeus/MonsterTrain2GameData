@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_CryptBuilder",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_CryptBuilder_01",
+          "base_layer": {
+            "type": "texture"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_CryptBuilder_01",
+              "motion_texture": "FX_Clouds_01",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_CryptBuilder_05",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_CryptBuilder_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_CryptBuilder_04",
+              "linear_speed": {
+                "x": 20.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_CryptBuilder_01",
+              "tint": {
+                "r": 0.921834,
+                "g": 0.480909526,
+                "b": 0.952830136,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_CryptBuilder_03",
+              "motion_texture": "FX_Aura",
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SpikeOfTheBanished",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SpikeOfTheBanished_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SpikeOfTheBanished_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_SpikeOfTheBanished_Wisps",
+              "motion_texture": "FX_Noise",
+              "stretch": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SpikeOfTheBanished_Main",
+              "tint": {
+                "r": 0.797169864,
+                "g": 1.0,
+                "b": 0.9942767,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SpikeOfTheBanished_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

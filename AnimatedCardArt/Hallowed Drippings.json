@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_HallowedDrippings",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_HallowedDrippings_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_HallowedDrippings_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_HallowedDrippings_01",
+              "tint": {
+                "r": 0.495283,
+                "g": 0.702647448,
+                "b": 1.0,
+                "a": 0.498039216
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_HallowedDrippings_02",
+              "stretch": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_HallowedDrippings_03",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_HallowedDrippings_04",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

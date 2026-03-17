@@ -1,0 +1,49 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Hymnist",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Hymnist_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Bubbles_02",
+              "motion_texture": "FX_Flow_SpiralIn_02",
+              "mask_texture": "MSK_Hymnist_Stars",
+              "tint": {
+                "r": 0.759434,
+                "g": 0.9975695,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Hymnist_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Hymnist_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

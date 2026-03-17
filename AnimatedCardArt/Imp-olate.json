@@ -1,0 +1,59 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ImpPlosion",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_ImpPlosion_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ImpPlosion_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeRight_15",
+              "mask_texture": "MSK_ImpPlosion_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.42144838,
+                "b": 0.06132076,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -30.0,
+                "y": -10.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_ImpPlosion_02",
+              "motion_texture": "FX_Aura_02"
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ImpPlosion_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ImpPlosion_04",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ImpPlosion_05",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

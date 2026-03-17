@@ -1,0 +1,76 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_SolgardTheMartyr",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_SolgardTheMartyr_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_SolgardTheMartyr_01"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT_SolgardTheMartyr_02",
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Rings",
+              "motion_texture": "FX_Flow_VortexCenter",
+              "mask_texture": "MSK_SolgardTheMartyr_01",
+              "tint": {
+                "r": 0.664604843,
+                "g": 0.9650716,
+                "b": 0.9716981,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 6.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SolgardTheMartyr_02",
+              "tint": {
+                "r": 0.894085,
+                "g": 0.60355103,
+                "b": 0.9339623,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_SolgardTheMartyr_03",
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Solgard",
+              "layers": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Witchweave",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_Witchweave_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Witchweave_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Witchweave_Main_FX_01",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Witchweave_Main_FX_02",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Witchweave_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_SpiralIn_02",
+              "mask_texture": "MSK_Witchweave_Main",
+              "tint": {
+                "r": 0.740565956,
+                "g": 0.882636964,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Witchweave_Main_FX_04",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "stretch": false,
+              "additive": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Witchweave_Main_FX_04",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.7839998
+              },
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Witchweave_Main_FX_03",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "stretch": false,
+              "additive": false,
+              "enabled": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Witchweave_Main_FX_03",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX_01",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.084,
+                "y": -0.03,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX_02",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.08,
+                "y": -0.155,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.011,
+                "y": -0.084,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

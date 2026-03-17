@@ -1,0 +1,56 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_TivisScourge",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_TivisScourge_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_TivisScourge_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_TivisScourge_Base",
+              "motion_texture": "FX_Clouds_01",
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_TivisScourge_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.015,
+                "y": -0.015,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.085,
+                "y": -0.055,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MorselMan",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MorselMan_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MorselMan_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "tint": {
+                "r": 0.3445484,
+                "g": 0.308339268,
+                "b": 0.386792451,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.5
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_MorselMan_02",
+              "motion_texture": "FX_Clouds_02",
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

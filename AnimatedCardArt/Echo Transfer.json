@@ -1,0 +1,56 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EchoTransfer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EchoTransfer_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EchoTransfer_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_EchoTransfer_02",
+              "motion_texture": "FX_Aura"
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_EchoTransfer_01",
+              "tint": {
+                "r": 1.0,
+                "g": 0.6084906,
+                "b": 0.981729567,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_EchoTransfer_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_EchoTransfer_04",
+              "motion_texture": "FX_Clouds_01"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

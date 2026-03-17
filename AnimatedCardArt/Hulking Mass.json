@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_HulkingMass",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_HulkingMass_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_HulkingMass_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_HulkingMass_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_HulkingMass_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_HulkingMass_Main",
+              "tint": {
+                "r": 0.7410583,
+                "g": 1.0,
+                "b": 0.4386792,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 6.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.15,
+                "y": -0.12,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.0875,
+                "y": 0.0205,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

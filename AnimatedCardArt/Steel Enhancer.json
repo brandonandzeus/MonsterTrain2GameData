@@ -1,0 +1,52 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SteelEnhancer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SteelEnhancer_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SteelEnhancer_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_Gradient_Bottom",
+              "tint": {
+                "r": 0.2168031,
+                "g": 0.5254008,
+                "b": 0.5283019,
+                "a": 0.627451
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_SteelEnhancer_03",
+              "mask_texture": "MSK_SteelEnhancer_01",
+              "linear_speed": {
+                "x": 10.0,
+                "y": 20.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SteelEnhancer_02",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_StasisCrystal",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_StasisCrystal_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_StasisCrystal_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_EmberCache",
+              "mask_texture": "SPL_StasisCrystal_Base",
+              "tint": {
+                "r": 0.9605134,
+                "g": 0.8632076,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_StasisCrystal_Base",
+              "tint": {
+                "r": 0.9925069,
+                "g": 0.78773576,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_StasisCrystal_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

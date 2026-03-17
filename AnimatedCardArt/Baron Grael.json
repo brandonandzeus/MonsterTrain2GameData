@@ -1,0 +1,87 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_BulbousAbomination",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_BulbousAbomination_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_BulbousAbomination_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_BulbousAbomination_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_BulbousAbomination_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_BulbousAbomination",
+              "mask_texture": "MSK_BulbousAbomination_Main",
+              "tint": {
+                "r": 0.8400666,
+                "g": 1.0,
+                "b": 0.382075459,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_BulbousAbomination_Main",
+              "tint": {
+                "r": 0.198348463,
+                "g": 0.6603774,
+                "b": 0.133944422,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.06,
+                "y": 0.24,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.025,
+                "y": 0.0045,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

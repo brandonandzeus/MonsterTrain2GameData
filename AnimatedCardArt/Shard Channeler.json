@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_ShardChanneler",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_ShardChanneler_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_ShardChanneler_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_LightShards_02",
+              "tint": {
+                "r": 0.9622641,
+                "g": 0.122552417,
+                "b": 0.122552417,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_ShardChanneler_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_ShardChanneler_01",
+              "tint": {
+                "r": 0.960784256,
+                "g": 0.121568553,
+                "b": 0.121568553,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

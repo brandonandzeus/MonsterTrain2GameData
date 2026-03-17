@@ -1,0 +1,48 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_SalvagerWarden",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_SalvagerWarden_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_SalvagerWarden_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_SalvagerWarden_01",
+              "tint": {
+                "r": 0.301960766,
+                "g": 0.137254864,
+                "b": 0.0509803742,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.25
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_SalvagerWarden_03",
+              "motion_texture": "FX_Noise"
+            },
+            {
+              "type": "glow",
+              "texture": "PRT_SalvagerWarden_02",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

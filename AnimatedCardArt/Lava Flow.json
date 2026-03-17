@@ -1,0 +1,61 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_LavaFlow",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_LavaFlow_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_LavaFlow_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_LavaFlow",
+              "mask_texture": "MSK_LavaFlow_Main",
+              "tint": {
+                "r": 0.9529411,
+                "g": 0.7564982,
+                "b": 0.0313725322,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_LavaFlow_Main",
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_LavaFlow_Bodies",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_LavaFlow_Angel_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_LavaFlow_Angel_02",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

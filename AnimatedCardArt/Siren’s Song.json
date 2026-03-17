@@ -1,0 +1,53 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SirenSong",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SirenSong_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SirenSong_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_SirenSong_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_SirenSong_01",
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_SirenSong_03",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Clergymen",
+              "layers": [
+                0
+              ]
+            },
+            {
+              "id": "Sirens",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.06,
+                "y": 0.28,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

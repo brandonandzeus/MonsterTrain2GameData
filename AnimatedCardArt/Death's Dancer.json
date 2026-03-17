@@ -1,0 +1,92 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_DeathsDancer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_DeathsDancer_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_DeathsDancer_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_DeathsDancer_Base_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_DeathsDancer_FG",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_DeathsDancer_Main_FX",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_DeathsDancer_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.0,
+                "y": 0.03,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "FG",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.35,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main_FX",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": 0.0,
+                "y": 0.22,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                3
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.03,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

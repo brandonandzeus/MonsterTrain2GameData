@@ -1,0 +1,70 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_PenitentsDeathsuit",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_PenitentsDeathsuit_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_PenitentsDeathsuit_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_PenitentsDeathsuit_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_PenitentsDeathsuit_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_PenitentsDeathsuit_Main_FX",
+              "tint": {
+                "r": 1.0,
+                "g": 0.974547446,
+                "b": 0.9103774,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.01,
+                "y": -0.08,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.115,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

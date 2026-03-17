@@ -1,0 +1,111 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_RestoringRetreat",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_RestoringRetreat_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_RestoringRetreat_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_03",
+              "motion_texture": "effect_noise",
+              "mask_texture": "MSK_RestoringRetreat_02",
+              "tint": {
+                "r": 0.737978041,
+                "g": 1.0,
+                "b": 0.325471669,
+                "a": 0.372549027
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 0.75
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_RestoringRetreat_03",
+              "mask_texture": "MSK_RestoringRetreat_02",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.1254902
+              },
+              "linear_speed": {
+                "x": -0.5,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_RestoringRetreat_02",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_RestoringRetreat_03",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.1254902
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Spores_03",
+              "motion_texture": "FX_Flow_ConeLeft_45",
+              "mask_texture": "MSK_RestoringRetreat_01",
+              "tint": {
+                "r": 0.127523988,
+                "g": 1.0,
+                "b": 0.0424527675,
+                "a": 0.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_RestoringRetreat_03",
+              "tint": {
+                "r": 0.145587474,
+                "g": 1.0,
+                "b": 0.108474813,
+                "a": 0.466688573
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -15.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

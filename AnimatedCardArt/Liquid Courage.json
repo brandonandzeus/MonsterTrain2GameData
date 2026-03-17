@@ -1,0 +1,49 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_LiquidCourage",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_LiquidCourage_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_LiquidCourage_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_BDeeohgee",
+              "mask_texture": "MSK_LiquidCourage_Main",
+              "tint": {
+                "r": 0.570754647,
+                "g": 0.880903,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_LiquidCourage_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_LiquidCourage_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

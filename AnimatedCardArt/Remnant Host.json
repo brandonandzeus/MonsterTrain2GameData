@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_RemnantHost",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_RemnantHost_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_RemnantHost_01"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RemnantHost_03",
+              "tint": {
+                "r": 0.7924528,
+                "g": 0.3811249,
+                "b": 0.302776754,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.25
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Sphere_02",
+              "mask_texture": "MSK_RemnantHost_01",
+              "tint": {
+                "r": 0.003921569,
+                "g": 0.8000001,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_RemnantHost_01",
+              "motion_texture": "FX_Noise",
+              "mask_texture": "MSK_RemnantHost_02"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

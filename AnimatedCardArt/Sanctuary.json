@@ -1,0 +1,78 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Sanctuary",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Sanctuary_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Sanctuary_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_WelderHelper_01",
+              "mask_texture": "MSK_Sanctuary_Base_01",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Sanctuary_Base_FX",
+              "motion_texture": "FX_Clouds_02",
+              "mask_texture": "MSK_Sanctuary_Base_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Sanctuary_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_GodRays",
+              "layers": [
+                0
+              ]
+            },
+            {
+              "id": "Base_FX",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": -0.035,
+                "y": -0.05,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Main",
+              "layers": [
+                2
+              ],
+              "position": {
+                "x": -0.104,
+                "y": -0.006,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

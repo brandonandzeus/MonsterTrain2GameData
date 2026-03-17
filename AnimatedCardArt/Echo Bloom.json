@@ -1,0 +1,55 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_EchoBloom",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_EchoBloom_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_EchoBloom_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeUp",
+              "mask_texture": "MSK_EchoBloom_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.87645787,
+                "b": 0.429245263,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen",
+              "mask_texture": "MSK_EchoBloom_Base",
+              "tint": {
+                "r": 0.7924528,
+                "g": 0.100925557,
+                "b": 0.5832871,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 3.0,
+                "y": 0.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

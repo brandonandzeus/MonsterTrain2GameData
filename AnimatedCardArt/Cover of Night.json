@@ -1,0 +1,53 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_CoverOfNight",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_CoverOfNight_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_CoverOfNight_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Flicker",
+              "mask_texture": "MSK_CoverOfNight_Base",
+              "linear_speed": {
+                "x": 2.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_AnimusOfSpeed_01",
+              "mask_texture": "MSK_CoverOfNight_Main",
+              "tint": {
+                "r": 0.6650944,
+                "g": 0.7815833,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_CoverOfNight_Main",
+              "linear_speed": {
+                "x": 4.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

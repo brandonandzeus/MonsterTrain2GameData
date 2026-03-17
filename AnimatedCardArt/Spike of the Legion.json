@@ -1,0 +1,45 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_UnderlegionsSpike",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_UnderlegionsSpike_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_UnderlegionsSpike_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_UnderlegionsSpike_Base",
+              "tint": {
+                "r": 0.9685016,
+                "g": 1.0,
+                "b": 0.316037685,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 6.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_UnderlegionsSpike_FX",
+              "mask_texture": "MSK_UnderlegionsSpike_Main",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 0.25
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

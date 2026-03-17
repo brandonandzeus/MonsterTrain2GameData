@@ -1,0 +1,47 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Balmabello",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Balmabello_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Balmabello_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_Vertical",
+              "mask_texture": "MSK_Balmabello_Main",
+              "tint": {
+                "r": 1.0,
+                "g": 0.6397175,
+                "b": 0.21226415,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Balmabello_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_AwokenHollow",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_AwokenHollow_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_AwokenHollow_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_AwokenHollow_02",
+              "tint": {
+                "r": 0.605180562,
+                "g": 0.7830188,
+                "b": 0.3952029,
+                "a": 0.3647059
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_FireFlies",
+              "motion_texture": "FX_Aura",
+              "mask_texture": "MSK_LightStreams_02",
+              "tint": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 0.120131887,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "scale": {
+                "x": 0.75,
+                "y": 0.75
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_AwokenHollow_01",
+              "tint": {
+                "r": 0.254538983,
+                "g": 0.9811321,
+                "b": 0.46519047,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 8.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

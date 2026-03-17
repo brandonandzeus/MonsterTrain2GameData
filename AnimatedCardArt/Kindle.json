@@ -1,0 +1,72 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Kindle",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Kindle_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Kindle_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sparks",
+              "motion_texture": "FX_Flow_S_Curve",
+              "tint": {
+                "r": 0.952941239,
+                "g": 0.8941177,
+                "b": 0.478431284,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 10.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -60.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Kindle_02",
+              "motion_texture": "FX_Aura",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_FlyingDebris_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.108490504,
+                "b": 0.108490504,
+                "a": 0.243137255
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 20.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -60.0
+              },
+              "scale": {
+                "x": 0.9,
+                "y": 0.9
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_TheEdgePrior",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_TheEdgePrior_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_TheEdgePrior_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_TheEdgePrior_02",
+              "motion_texture": "FX_Noise",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_TheEdgePrior_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "MSK_Vignette",
+              "mask_texture": "MSK_TheEdgePrior_02",
+              "tint": {
+                "r": 0.730239153,
+                "g": 0.990565956,
+                "b": 0.172881752,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 10.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Smoke",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.03,
+                "y": -0.19,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Character",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.044,
+                "y": 0.065,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Glow",
+              "layers": [
+                2
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

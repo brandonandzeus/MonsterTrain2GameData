@@ -1,0 +1,71 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_CycleOfLife",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects Non-Additive",
+          "sprite": "SPL_CycleOfLife_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_CycleOfLife_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_CycleOfLife_02",
+              "tint": {
+                "r": 0.282767,
+                "g": 1.0,
+                "b": 0.24999997,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_CycleOfLife_01",
+              "tint": {
+                "r": 0.429973572,
+                "g": 1.0,
+                "b": 0.183962256,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_02",
+              "mask_texture": "MSK_CycleOfLife_03",
+              "tint": {
+                "r": 0.143640518,
+                "g": 0.990565956,
+                "b": 0.107467063,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 3.0
+              },
+              "scale": {
+                "x": 0.25,
+                "y": 0.25
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

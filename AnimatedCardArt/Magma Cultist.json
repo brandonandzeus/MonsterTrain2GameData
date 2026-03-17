@@ -1,0 +1,68 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_MagmaCultist",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_MagmaCultist_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_MagmaCultist_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_MagmaCultist_Main_FX",
+              "motion_texture": "FX_Flicker",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Flicker",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_MagmaCultist_Base",
+              "tint": {
+                "r": 0.9716981,
+                "g": 0.8082751,
+                "b": 0.187922686,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 2.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_MagmaCultist_Main",
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Main_FX",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.21,
+                "y": 0.27,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

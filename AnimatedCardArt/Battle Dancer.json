@@ -1,0 +1,75 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_BattleDancer",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_BattleDancer_Base_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_BattleDancer_Base_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "PRT_BattleDancer_Base_FX",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_HellDebris",
+              "mask_texture": "MSK_LightShards_03",
+              "tint": {
+                "r": 1.0,
+                "g": 0.136792451,
+                "b": 0.199444324,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 8.0
+              },
+              "tilt": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 45.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_BattleDancer_Base_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_BattleDancer_Main",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "EMS_BattleDancer_Main",
+              "linear_speed": {
+                "x": 6.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Base_FX",
+              "layers": [
+                0
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

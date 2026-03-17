@@ -1,0 +1,62 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_KinhostVessel",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT _KinhostVessel_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT _KinhostVessel_01"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "PRT _KinhostVessel_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Sheen_04",
+              "mask_texture": "MSK _KinhostVessel_01",
+              "tint": {
+                "r": 0.9607789,
+                "g": 0.752269447,
+                "b": 0.990565956,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 2.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "glow",
+              "texture": "PRT _KinhostVessel_03",
+              "linear_speed": {
+                "x": 12.0,
+                "y": 0.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Creature",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.02,
+                "y": -0.14,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

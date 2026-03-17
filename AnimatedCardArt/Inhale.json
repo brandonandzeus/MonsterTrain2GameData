@@ -1,0 +1,50 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Inhale",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Inhale_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Inhale_Base"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_Inhale_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Inhale_Main_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Clouds_01",
+              "motion_texture": "FX_Flow_EmberCache",
+              "mask_texture": "MSK_Inhale_Main_FX",
+              "tint": {
+                "r": 0.7028302,
+                "g": 0.9757785,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -10.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

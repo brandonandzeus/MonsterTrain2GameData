@@ -1,0 +1,58 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_RoomOfReanimation",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_RoomOfReanimation_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_RoomOfReanimation_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_RoomOfReanimation",
+              "mask_texture": "MSK_RoomOfReanimation_Main",
+              "tint": {
+                "r": 0.482298672,
+                "g": 0.9339623,
+                "b": 0.4097098,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_RoomOfReanimation_Base_FX",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_RoomOfReanimation_Base",
+              "tint": {
+                "r": 0.592318,
+                "g": 1.0,
+                "b": 0.429245263,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.5,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

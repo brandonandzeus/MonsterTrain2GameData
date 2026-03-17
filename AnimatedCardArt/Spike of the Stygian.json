@@ -1,0 +1,49 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_SpikeOfTheStygianGuard",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_SpikeOfTheStygianGuard_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_SpikeOfTheStygianGuard_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_SpikeOfTheStygianGuard_01",
+              "motion_texture": "FX_Aura",
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_SpikeOfTheStygianGuard_01",
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_SpikeOfTheStygianGuard_02",
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_SpikeOfTheStygianGuard_03",
+              "linear_speed": {
+                "x": 15.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

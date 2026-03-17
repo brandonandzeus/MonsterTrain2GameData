@@ -1,0 +1,90 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_ImpInABox",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_ImpInABox_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_ImpInABox_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_ImpInABox_03",
+              "stretch": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_ImpInABox_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_01",
+              "mask_texture": "MSK_ImpInABox_01",
+              "tint": {
+                "r": 0.6933962,
+                "g": 0.9200147,
+                "b": 1.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 1.0
+              }
+            },
+            {
+              "type": "moving_texture",
+              "texture": "FX_Spores_01",
+              "mask_texture": "MSK_Gradient_Sphere_02",
+              "tint": {
+                "r": 0.0470595956,
+                "g": 1.0,
+                "b": 0.0424527824,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 4.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "TranscendImp",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": 0.03,
+                "y": 0.26,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Box",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.1,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

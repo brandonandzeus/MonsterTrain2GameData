@@ -1,0 +1,65 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Firebrand",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "PRT_Firebrand_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "PRT_Firebrand_Base"
+          },
+          "layers": [
+            {
+              "type": "moving_texture",
+              "texture": "FX_Clouds_Transparent",
+              "mask_texture": "MSK_Gradient_Up",
+              "tint": {
+                "r": 0.745283,
+                "g": 0.527163,
+                "b": 0.425373763,
+                "a": 0.129411772
+              },
+              "linear_speed": {
+                "x": -1.0,
+                "y": 0.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "PRT_Firebrand_Main",
+              "motion_texture": "effect_noise",
+              "tilt": {
+                "x": 50.0,
+                "y": 40.0,
+                "z": 0.0
+              },
+              "rotation_speed": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 400.0
+              },
+              "scale": {
+                "x": 1.4,
+                "y": 1.4
+              },
+              "position_offset": {
+                "x": -0.05,
+                "y": 0.04
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "PRT_Firebrand_Flames",
+              "motion_texture": "FX_Clouds_01",
+              "stretch": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

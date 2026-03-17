@@ -1,0 +1,95 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_IntentOnDeath",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_IntentOnDeath_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_IntentOnDeath_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_IntentOnDeath_02",
+              "motion_texture": "FX_Aura_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_IntentOnDeath_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_Vertical",
+              "mask_texture": "MSK_IntentOnDeath_01",
+              "tint": {
+                "r": 0.231130242,
+                "g": 0.796480358,
+                "b": 1.0,
+                "a": 0.500000238
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -16.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "MSK_Gradient_Sphere_02",
+              "mask_texture": "MSK_Gradient_Sphere_02",
+              "tint": {
+                "r": 1.0,
+                "g": 0.7467635,
+                "b": 0.164705813,
+                "a": 0.966108263
+              },
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Flames",
+              "layers": [
+                0
+              ],
+              "position": {
+                "x": -0.035,
+                "y": 0.15,
+                "z": 0.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1.0
+              }
+            },
+            {
+              "id": "Unit",
+              "layers": [
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.198,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

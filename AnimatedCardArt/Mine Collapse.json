@@ -1,0 +1,95 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_MineCollapse",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_MineCollapse_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_MineCollapse_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_MineCollapse_02",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Sphere_01",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_MineCollapse_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_MineCollapse_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "glow",
+              "texture": "SPL_MineCollapse_04",
+              "linear_speed": {
+                "x": 16.0,
+                "y": 0.0
+              },
+              "stretch": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura",
+              "motion_texture": "FX_Flow_ConeDown",
+              "mask_texture": "MSK_MineCollapse_01",
+              "tint": {
+                "r": 0.9339623,
+                "g": 0.173237085,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -25.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Cliff",
+              "layers": [
+                0,
+                1
+              ],
+              "position": {
+                "x": 0.0,
+                "y": -0.1,
+                "z": 0.0
+              }
+            },
+            {
+              "id": "Embers",
+              "layers": [
+                2,
+                3
+              ],
+              "position": {
+                "x": 0.023,
+                "y": -0.213,
+                "z": 0.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

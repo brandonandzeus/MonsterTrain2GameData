@@ -1,0 +1,56 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Gravity",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Gravity_Base",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Gravity_Base"
+          },
+          "layers": [
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Aura_03",
+              "motion_texture": "FX_Flow_ConeDown",
+              "mask_texture": "MSK_Gravity_Base_FX",
+              "tint": {
+                "r": 0.0,
+                "g": 0.0509803742,
+                "b": 0.105882324,
+                "a": 1.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": -2.0
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_Gravity_Base_FX",
+              "motion_texture": "FX_Aura_03",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Gravity_Main_FX",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Gravity_Main",
+              "stretch": false,
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_IceTornado",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_IceTornado_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_IceTornado_01"
+          },
+          "layers": [
+            {
+              "type": "distortion",
+              "texture": "SPL_IceTornado_01",
+              "motion_texture": "FX_Clouds_01",
+              "mask_texture": "MSK_Gradient_Up",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_IceTornado_03",
+              "mask_texture": "MSK_IceTornado_02",
+              "linear_speed": {
+                "x": 30.0,
+                "y": 0.0
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "additive": false
+            },
+            {
+              "type": "distortion",
+              "texture": "SPL_IceTornado_02",
+              "motion_texture": "FX_Flicker",
+              "additive": false
+            },
+            {
+              "type": "moving_texture",
+              "texture": "SPL_IceTornado_03",
+              "mask_texture": "MSK_IceTornado_01",
+              "linear_speed": {
+                "x": -40.0,
+                "y": 0.0
+              },
+              "additive": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

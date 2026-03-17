@@ -1,0 +1,73 @@
+{
+  "game_objects": [
+    {
+      "id": "CardArt_Spell_Sharpen",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "shader": "Shiny Shoe/CardEffects",
+          "sprite": "SPL_Sharpen_01",
+          "base_layer": {
+            "type": "texture",
+            "texture": "SPL_Sharpen_01",
+            "motion_texture": "tiled_distortions"
+          },
+          "layers": [
+            {
+              "type": "texture",
+              "texture": "SPL_Sharpen_02",
+              "stretch": false,
+              "additive": false
+            },
+            {
+              "type": "flowing_texture",
+              "texture": "FX_Sparks_02",
+              "motion_texture": "FX_Flow_Starburst",
+              "mask_texture": "MSK_Gradient_Sphere_02",
+              "tint": {
+                "r": 0.9854142,
+                "g": 0.990565956,
+                "b": 0.247614563,
+                "a": 0.0
+              },
+              "linear_speed": {
+                "x": 0.0,
+                "y": 20.0
+              },
+              "scale": {
+                "x": 2.0,
+                "y": 2.0
+              }
+            },
+            {
+              "type": "texture",
+              "texture": "SPL_Sharpen_03",
+              "tint": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+              },
+              "stretch": false
+            }
+          ],
+          "transforms": [
+            {
+              "id": "Blade",
+              "layers": [
+                0
+              ]
+            },
+            {
+              "id": "Sparks",
+              "layers": [
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
