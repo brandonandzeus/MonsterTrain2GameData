@@ -17,3 +17,6 @@ This repo only contains JSON files, each representing a particular GameData obje
 Note that not all fields present in the data are included, file an issue if data you would like to be present is not included.
 
 Note that currently the JSON format this data is in is NOT COMPATIBLE with the official JSON schema for Trainworks-Reloaded, the fields will need to be translated to the appropriate field, but should serve as a gentle hint as to what fields need to be set. (See [#1](https://github.com/brandonandzeus/MonsterTrain2GameData/issues/1))
+
+## Lastly
+This repo only contains the core game data in human readable format with none of the assets, code, or program executables/libraries. That said this repo can't be used to pirate the game, nor can it be used to make a build of the game. Support the devs by purchasing the game.
