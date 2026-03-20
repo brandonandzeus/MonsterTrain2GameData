@@ -1,5 +1,6 @@
 {
   "id": "BalatroEventPerkeo",
+  "guid": "94f7f915-2a2d-4b56-afe6-76ce875ba54d",
   "name": "Perkeo",
   "nameKey": {
     "key": "CollectableRelicData_nameKey-494a8f3e41639521-53d48e2bfe68aa54286f07927151f94b-v2",
@@ -48,7 +49,6 @@
       "relicEffectClassName": "RelicEffectAddCardsStartOfBattle",
       "additionalTooltips": [
         {
-          "statusId": "rooted",
           "descriptionKey": {
             "key": "Trigger_OnUnplayed_TooltipText",
             "english": "Triggers if this card remains in hand at the end of the turn.",
@@ -62,7 +62,6 @@
             "korean": "턴이 끝날 때까지 이 카드가 패에 남아 있으면 효과가 발동합니다.",
             "japanese": "ターンの終了時に、このカードが手札に残されていると発動する。"
           },
-          "trigger": "on_unit_ability_available",
           "titleKey": {
             "key": "Trigger_OnUnplayed_CardText",
             "english": "Reserve",
@@ -81,6 +80,7 @@
       ],
       "paramCardUpgradeData": {
         "id": "CalcifiedEmberConvert",
+        "guid": "95278115-d14a-45f4-aec7-6cb437f441c1",
         "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-187b01e8f013e0f7-a0c8a03bf97b0b94dbb9a623453d2ffa-v2",
         "cardTriggerUpgrades": [
           {
@@ -105,6 +105,7 @@
                 "targetTeamType": "both",
                 "paramCardData": {
                   "id": "SelfPurgeEnergyGain",
+                  "guid": "d0e1fe8a-fb2a-44e0-9d9b-a3ddd7475c34",
                   "nameKey": {
                     "key": "CardData_nameKey-7c6420e298826d81-a74ace2972b6868498545bad596e982a-v2",
                     "english": "Excavated Ember",
@@ -148,6 +149,9 @@
                   ],
                   "cardType": "spell",
                   "rarity": "common",
+                  "pools": [
+                    "ExcavatedEmberOnlyPool"
+                  ],
                   "cardArtPrefabVariantRef": {
                     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_ExcavatedEmber.prefab",
                     "m_AssetGUID": "01b05efc8316f6542812d620c32e0130"
