@@ -43,7 +43,8 @@
     "RedCrownEquipmentPool",
     "RoomAndEquipmentDraftPool",
     "RoomAndEquipmentMerchant_EquipmentPool",
-    "RoomAndEquipmentMerchant_RoomAndEquipmentPool"
+    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+    "UnitsRailforgedBannerReplacementMutator"
   ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_HerzalsHammer.prefab",
@@ -61,16 +62,16 @@
           {
             "descriptionKey": {
               "key": "CardUpgradeData_descriptionKey-6b962375f39e2afa-844d0bdfaf75a914cb2c8c528b86d32b-v2",
-              "english": "Apply +[effect0.upgrade.bonusdamage] [attack] and [armor] [effect0.upgrade.status0.power] to friendly units.",
-              "french": "Confère <nobr>+[effect0.upgrade.bonusdamage] [attack]</nobr> et <nobr>[armor] [effect0.upgrade.status0.power]</nobr> aux unités alliées.",
-              "german": "Erhalte +[effect0.upgrade.bonusdamage] [attack] und [armor] [effect0.upgrade.status0.power] für verbündete Einheiten.",
-              "russian": "Союзникам дается +[effect0.upgrade.bonusdamage][attack] и [armor] х[effect0.upgrade.status0.power].",
-              "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [armor] [effect0.upgrade.status0.power] às unidades aliadas.",
-              "chinese": "使所有友方单位获得 +[effect0.upgrade.bonusdamage] [attack] 和 [armor] [effect0.upgrade.status0.power]。",
-              "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [armor] [effect0.upgrade.status0.power] a las unidades aliadas.",
-              "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]和[armor][effect0.upgrade.status0.power]。",
-              "korean": "아군 유닛들에 +[effect0.upgrade.bonusdamage][attack] 및 [armor] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-              "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage] [attack]と[armor] [effect0.upgrade.status0.power]を付与する。"
+              "english": "Apply +[effect0.upgrade.bonusdamage] [attack] and [armor] [effect1.status0.power] to friendly units.",
+              "french": "Confère <nobr>+[effect0.upgrade.bonusdamage] [attack]</nobr> et <nobr>[armor] [effect1.status0.power]</nobr> aux unités alliées.",
+              "german": "Erhalte +[effect0.upgrade.bonusdamage] [attack] und [armor] [effect1.status0.power] für verbündete Einheiten.",
+              "russian": "Союзникам дается +[effect0.upgrade.bonusdamage][attack] и [armor] х[effect1.status0.power].",
+              "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [armor] [effect1.status0.power] às unidades aliadas.",
+              "chinese": "使所有友方单位获得 +[effect0.upgrade.bonusdamage] [attack] 和 [armor] [effect1.status0.power]。",
+              "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [armor] [effect1.status0.power] a las unidades aliadas.",
+              "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]和[armor][effect1.status0.power]。",
+              "korean": "아군 유닛들에 +[effect0.upgrade.bonusdamage][attack] 및 [armor] [effect1.status0.power] 효과를 적용합니다.",
+              "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage] [attack]と[armor] [effect1.status0.power]を付与する。"
             },
             "trigger": "on_attacking",
             "effects": [
@@ -79,26 +80,21 @@
                 "targetMode": "room",
                 "targetTeamType": "monsters",
                 "paramCardUpgradeData": {
-                  "id": "Forge1",
-                  "guid": "b09bac95-4925-4a8c-a8da-3eb2a8db9463",
-                  "statusEffectUpgrades": [
-                    {
-                      "statusId": "armor",
-                      "count": 3
-                    }
-                  ],
-                  "filters": [
-                    {
-                      "id": "ForgeFilter",
-                      "cardType": "monster",
-                      "additionalCardTypes": [
-                        "equipment"
-                      ]
-                    }
-                  ],
-                  "bonusDamage": 3,
-                  "upgradeWillBeScaledByNonMagicPowerTrait": true
+                  "id": "HerzalsHammer_Upgrade_AtkArmor",
+                  "guid": "3e865115-eb4c-4690-9496-2681386d3bcb",
+                  "bonusDamage": 3
                 }
+              },
+              {
+                "effectStateName": "CardEffectAddStatusEffect",
+                "targetMode": "room",
+                "targetTeamType": "monsters",
+                "paramStatusEffects": [
+                  {
+                    "statusId": "armor",
+                    "count": 3
+                  }
+                ]
               }
             ],
             "suppressTriggerNotification": true

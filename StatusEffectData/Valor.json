@@ -1,5 +1,57 @@
 {
   "statusId": "valor",
+  "nameKey": {
+    "key": "StatusEffect_Valor_CardText",
+    "english": "Valor",
+    "french": "Vaillance",
+    "german": "Heldenmut",
+    "russian": "Доблесть",
+    "portuguese": "Bravura",
+    "chinese": "英勇",
+    "spanish": "Valor",
+    "chinese_traditional": "勇氣",
+    "korean": "용기",
+    "japanese": "勇気"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Valor_Stack_CardText",
+    "english": "Valor {0}",
+    "french": "Vaillance {0}",
+    "german": "Heldenmut {0}",
+    "russian": "Доблесть {0}",
+    "portuguese": "Bravura {0}",
+    "chinese": "英勇 {0}",
+    "spanish": "Valor {0}",
+    "chinese_traditional": "勇氣 {0}",
+    "korean": "용기 {0}",
+    "japanese": "勇気{0}"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Valor_CardTooltipText",
+    "english": "+1[attack] per stack. Raise [armor] to stack count if this is the front unit after combat.",
+    "french": "+1[attack] par cumul. Gagne une quantité d'[armor] égale aux cumuls si c'est l'unité en 1re ligne après le combat.",
+    "german": "+1[attack] pro Stapel. Erhöht [armor] auf die Anzahl der Stapel, wenn dies die vorderste Einheit nach dem Kampf ist.",
+    "russian": "+1[attack] за уровень. После битвы, если боец находится впереди, он получит <b>броню</b> равную количеству слоев.",
+    "portuguese": "+1[attack] por carga. Após o combate, se a unidade estiver na frente, ganhará [armor] equivalente à quantidade de cargas.",
+    "chinese": "每层 +1[attack]。战斗之后，如果该单位处于前排，则将 [armor] 提高至与层数相等。",
+    "spanish": "+1[attack] por acumulación. Aumenta su [armor] al número de acumulaciones si acaba el combate en primera posición.",
+    "chinese_traditional": "每層+1[attack]。如果單位在前排，在戰鬥後獲得最多等同於層數的[armor]。",
+    "korean": "중첩당 +1[attack]. 교전 후, 이 유닛이 전열에 있으면 [armor]을 [valor]의 중첩 수까지 증가합니다.",
+    "japanese": "1スタックにつき+1[attack]。戦闘後、このユニットが前列にいる場合、[armor]をスタック数と同じ値まで増加させる。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Valor_CharacterTooltipText",
+    "english": "+1[attack] per stack. After combat, the front unit gains [armor] up to the stack count.",
+    "french": "+1[attack] par cumul. Après le combat, l'unité en 1re ligne gagne une quantité d'[armor] égale aux cumuls.",
+    "german": "+1[attack] pro Stapel. Nach dem Kampf erhält die vordere Einheit [armor] in Höhe der Stapel.",
+    "russian": "+1[attack] за слой. После битвы переднему бойцу может выдаваться [armor] — так, чтобы слоев <b>брони</b> получилось столько же, сколько <b>доблести</b>.",
+    "portuguese": "+1[attack] por carga. Após o combate, a unidade na frente receberá [armor] equivalente à quantidade de cargas.",
+    "chinese": "每层 +1[attack]。战斗之后，前排单位根据层数获得 [armor]。",
+    "spanish": "+1[attack] por acumulación. Tras el combate, la unidad del frente recibe tanta [armor] como acumulaciones tenga.",
+    "chinese_traditional": "每層+1[attack]。戰鬥後，前排單位獲得最多等同於層數的[armor]。",
+    "korean": "중첩당 +1[attack]. 교전 후, 전열에 있는 유닛의 [armor]이 [valor]의 중첩 수까지 증가합니다.",
+    "japanese": "1スタックにつき+1[attack]。戦闘終了時に前列のユニットであれば、スタック数と同じ値までの[armor]を得る。"
+  },
   "statusEffectStateName": "StatusEffectValor",
   "appliedSFXName": "Status_Valor_Applied",
   "displayCategory": "positive",
@@ -7,5 +59,13 @@
   "isPropagatable": true,
   "excludeHeroPropagation": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_ValorStatusStart_FX_Parent",
+    "spawnLocation": null
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_ValorStatus_FX",
+    "spawnLocation": null
+  }
 }

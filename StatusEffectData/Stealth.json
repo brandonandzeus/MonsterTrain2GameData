@@ -1,5 +1,57 @@
 {
   "statusId": "stealth",
+  "nameKey": {
+    "key": "StatusEffect_Stealth_CardText",
+    "english": "Stealth",
+    "french": "Dissimulation",
+    "german": "Tarnung",
+    "russian": "Незаметность",
+    "portuguese": "Furtividade",
+    "chinese": "潜行",
+    "spanish": "Sigilo",
+    "chinese_traditional": "隱身",
+    "korean": "은신",
+    "japanese": "ステルス"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Stealth_Stack_CardText",
+    "english": "<nobr>Stealth {0}</nobr>",
+    "french": "<nobr>Dissimulation {0}</nobr>",
+    "german": "<nobr>{0} Tarnung</nobr>",
+    "russian": "<nobr>Незаметность {0}</nobr>",
+    "portuguese": "<nobr>Furtividade {0}</nobr>",
+    "chinese": "<nobr>潜行 {0}</nobr>",
+    "spanish": "<nobr>Sigilo {0}</nobr>",
+    "chinese_traditional": "<nobr>隱身 {0}</nobr>",
+    "korean": "<nobr>은신 {0}</nobr>",
+    "japanese": "<nobr>ステルス{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Stealth_CardTooltipText",
+    "english": "Not a target in combat.<br>Decreases every turn.",
+    "french": "Unité non ciblée en combat.<br>Diminue à chaque tour.",
+    "german": "Kein Ziel im Kampf.<br>Wird jeden Zug reduziert.",
+    "russian": "Не является целью в бою.<br>Снижается каждый ход.",
+    "portuguese": "A unidade não é alvo no combate.<br>Diminui a cada turno.",
+    "chinese": "在战斗中无法被选定为目标。<br>每回合不断减少。",
+    "spanish": "Deja de ser un objetivo en combate.<br>Disminuye en cada turno.",
+    "chinese_traditional": "不是戰鬥目標。<br>每回合減少。",
+    "korean": "교전에서 공격 대상이 되지 않습니다.<br>매 턴마다 감소합니다.",
+    "japanese": "戦闘で標的にならない。<br>毎ターン減少する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Stealth_CharacterTooltipText",
+    "english": "Not a target in combat for the next [codeint0] turns.",
+    "french": "Unité non ciblée en combat pour les [codeint0] prochains tours.",
+    "german": "Kein Ziel im Kampf für die nächsten [codeint0] Züge.",
+    "russian": "В течение следующих ходов в количестве [codeint0] не является целью в бою.",
+    "portuguese": "A unidade não é alvo no combate por [codeint0] turnos.",
+    "chinese": "在接下来的 [codeint0] 回合内无法被选定为目标。",
+    "spanish": "Deja de ser un objetivo en combate durante los próximos [codeint0] turnos.",
+    "chinese_traditional": "在接下來的[codeint0]回合中不是戰鬥目標。",
+    "korean": "다음 [codeint0]턴 동안 교전에서 공격 대상이 되지 않습니다.",
+    "japanese": "[codeint0]ターンの間、戦闘で標的にならない。"
+  },
   "statusEffectStateName": "StatusEffectStealthState",
   "appliedSFXName": "Status_Stealth",
   "displayCategory": "positive",
@@ -8,5 +60,9 @@
   "isPropagatable": true,
   "scalesInEndless": false,
   "excludeHeroPropagation": true,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_StealthStatus",
+    "spawnLocation": "character_bottom"
+  }
 }

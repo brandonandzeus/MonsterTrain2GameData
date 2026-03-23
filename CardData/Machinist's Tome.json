@@ -19,7 +19,7 @@
     "key": "CardData_overrideDescriptionKey-4255248fb375d17d-4307d87e6fc2bd84e8a9368820bb2606-v2",
     "english": "Apply [steelguard] to a friendly unit.",
     "french": "Confère [steelguard] à une unité alliée.",
-    "german": "Wende <b>Endlos</b> auf eine verbündete Einheit an.",
+    "german": "Wende [steelguard] auf eine verbündete Einheit an.",
     "russian": "Союзнику дается [steelguard].",
     "portuguese": "Concede [steelguard] a uma unidade aliada.",
     "chinese": "使一个友方单位获得[steelguard]。",
@@ -48,7 +48,8 @@
   "rarity": "uncommon",
   "linkedClass": "ClassRailforged",
   "pools": [
-    "MegaPool"
+    "MegaPool",
+    "UnitsRailforgedBannerReplacementMutator"
   ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MachinistTome.prefab",
@@ -67,11 +68,10 @@
       "paramCardUpgradeData": {
         "id": "MachinistsTome_Upgrade",
         "guid": "41c36210-fc2b-4b22-94e3-0c6310e5b62b",
-        "traitDataUpgrades": [
+        "statusEffectUpgrades": [
           {
-            "traitStateName": "CardTraitModifyArmorOnHit",
-            "paramInt": 15,
-            "traitIsRemovable": false
+            "statusId": "steelguard",
+            "count": 1
           }
         ]
       },

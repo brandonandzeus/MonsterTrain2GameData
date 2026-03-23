@@ -1,5 +1,57 @@
 {
   "statusId": "pyrestain",
+  "nameKey": {
+    "key": "StatusEffect_Pyrestain_CardText",
+    "english": "Pyrestain",
+    "french": "Stigmate",
+    "german": "Glutfleck",
+    "russian": "Пятно Пекла",
+    "portuguese": "Marca da Pira",
+    "chinese": "薪渍",
+    "spanish": "Marca de Pira",
+    "chinese_traditional": "火堆污漬",
+    "korean": "화염 자국",
+    "japanese": "炉染"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Pyrestain_Stack_CardText",
+    "english": "Pyrestain {0}",
+    "french": "Stigmate {0}",
+    "german": "{0} Glutfleck",
+    "russian": "Пятно Пекла {0}",
+    "portuguese": "Marca da Pira {0}",
+    "chinese": "薪渍 {0}",
+    "spanish": "Marca de Pira {0}",
+    "chinese_traditional": "火堆污漬 {0}",
+    "korean": "화염 자국 {0}",
+    "japanese": "炉染{0}"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Pyrestain_CardTooltipText",
+    "english": "+[codeint0] incoming damage per stack.",
+    "french": "<nobr>+[codeint0] DGT</nobr> subis par cumul.",
+    "german": "+[codeint0] erlittener Schaden pro Stapel.",
+    "russian": "+[codeint0] урона за слой.",
+    "portuguese": "+[codeint0] de dano recebido por carga.",
+    "chinese": "每层使下次受到的伤害 +[codeint0]。",
+    "spanish": "+[codeint0] de daño entrante por acumulación.",
+    "chinese_traditional": "+[codeint0]受到傷害每層。",
+    "korean": "스택당 받는 피해가 +[codeint0] 증가합니다.",
+    "japanese": "1スタックにつき被ダメージ+[codeint0]。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Pyrestain_CharacterTooltipText",
+    "english": "+[codeint0] incoming damage (+[codeint1] per stack).",
+    "french": "<nobr>+[codeint0] DGT</nobr> subis (+[codeint1] par cumul).",
+    "german": "+[codeint0] erlittener Schaden pro Stapel (+[codeint1] pro Stapel).",
+    "russian": "+[codeint0] урона (+[codeint1] за слой).",
+    "portuguese": "+[codeint0] de dano recebido (+[codeint1] por carga).",
+    "chinese": "使下次受到的伤害 +[codeint0]（每层 +[codeint1]）。",
+    "spanish": "+[codeint0] de daño entrante (+[codeint1] por acumulación).",
+    "chinese_traditional": "+[codeint0]受到傷害（+[codeint1]每層）。",
+    "korean": "받는 피해가 +[codeint0](스택당 +[codeint1]) 증가합니다.",
+    "japanese": "被ダメージ+[codeint0]（1スタックにつき+[codeint1]）。"
+  },
   "statusEffectStateName": "StatusEffectPyrestainState",
   "appliedSFXName": "Status_Pyregel_Applied",
   "displayCategory": "negative",
@@ -8,5 +60,17 @@
   "excludeMonsterPropagation": true,
   "showOnPyreHeart": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_PyregelStart_PS",
+    "spawnLocation": "character_center"
+  },
+  "triggeredVFX": {
+    "vfxPrefabLeft": "FX_PyregelStart_PS",
+    "spawnLocation": "character_center"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_Pyregel_PS",
+    "spawnLocation": "character_center"
+  }
 }

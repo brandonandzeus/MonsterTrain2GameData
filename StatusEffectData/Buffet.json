@@ -1,5 +1,57 @@
 {
   "statusId": "eatmany",
+  "nameKey": {
+    "key": "StatusEffect_Eatmany_CardText",
+    "english": "Buffet",
+    "french": "Buffet",
+    "german": "Büfett",
+    "russian": "Закуска",
+    "portuguese": "Bufê",
+    "chinese": "自助餐",
+    "spanish": "Bufé",
+    "chinese_traditional": "自助餐",
+    "korean": "뷔페",
+    "japanese": "ビュッフェ"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Eatmany_Stack_CardText",
+    "english": "Buffet {0}",
+    "french": "Buffet {0}",
+    "german": "{0} Büfett",
+    "russian": "Закуска {0}",
+    "portuguese": "Bufê {0}",
+    "chinese": "自助餐 {0}",
+    "spanish": "Bufé {0}",
+    "chinese_traditional": "自助餐 {0}",
+    "korean": "뷔페 {0}",
+    "japanese": "ビュッフェ{0}"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Eatmany_CardTooltipText",
+    "english": "This unit can be eaten multiple times.",
+    "french": "Cette unité peut être mangée à plusieurs reprises.",
+    "german": "Diese Einheit kann mehrfach verschlungen werden.",
+    "russian": "Этого бойца можно сожрать несколько раз.",
+    "portuguese": "Esta unidade pode ser devorada várias vezes.",
+    "chinese": "此单位可被吞食多次。",
+    "spanish": "Esta unidad se puede devorar varias veces.",
+    "chinese_traditional": "這個單位可以被多次吞噬。",
+    "korean": "이 유닛은 여러 번 먹을 수 있습니다.",
+    "japanese": "このユニットを複数回捕食できる。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Eatmany_CharacterTooltipText",
+    "english": "This unit can be eaten [codeint0] more times.",
+    "french": "Cette unité peut encore être mangée [codeint0] fois.",
+    "german": "Diese Einheit kann noch [codeint0]-mal verschlungen werden.",
+    "russian": "Этого бойца можно сожрать еще [codeint0] раз(а).",
+    "portuguese": "Essa unidade pode ser devorada mais [codeint0] vezes.",
+    "chinese": "此单位可被多吞食 [codeint0] 次。",
+    "spanish": "Esta unidad se puede devorar [codeint0] veces más.",
+    "chinese_traditional": "這個單位還可以被吞噬[codeint0]次。",
+    "korean": "이 유닛은 [codeint0]회까지 먹힐 수 있습니다.",
+    "japanese": "このユニットを追加で[codeint0]回捕食できる。"
+  },
   "statusEffectStateName": "StatusEffectEatManyState",
   "displayCategory": "persistent",
   "vfxDisplayType": "last_stack",
@@ -7,5 +59,13 @@
   "removeWhenTriggered": true,
   "scalesInEndless": false,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_BuffetApply_PS",
+    "spawnLocation": "character_side_back_bottom"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_BuffetPersistent_PS",
+    "spawnLocation": "character_side_back_bottom"
+  }
 }

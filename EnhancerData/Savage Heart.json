@@ -29,17 +29,13 @@
     "japanese": "[rage] [effect0.upgrade.status0.power]。[revenge]：永続的に[rage] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power]を得る。"
   },
   "rarity": "common",
+  "pools": [
+    "TitanSavageryUpgradePool"
+  ],
   "effects": [
     {
       "relicEffectClassName": "RelicEffectCardUpgrade",
       "paramCardType": "monster",
-      "additionalTooltips": [
-        {
-          "statusId": "buff",
-          "style": "default",
-          "isStatusTooltip": true
-        }
-      ],
       "paramCardUpgradeData": {
         "id": "RevengeRageAbove50PrecentLifestealBelow50Percent",
         "guid": "e1d5efa3-b3d0-41af-aed7-d3218f364207",
@@ -107,9 +103,11 @@
                   ],
                   "allowSecondaryTooltipPlacement": false,
                   "hideUpgradeIconOnCard": true,
-                  "useUpgradeHighlightTextTags": false
+                  "useUpgradeHighlightTextTags": false,
+                  "upgradeWillBeScaledByNonMagicPowerTrait": true
                 },
-                "additionalParamInt1": 2
+                "additionalParamInt1": 2,
+                "paramBool": true
               }
             ]
           }

@@ -1,5 +1,57 @@
 {
   "statusId": "horde",
+  "nameKey": {
+    "key": "StatusEffect_Horde_CardText",
+    "english": "[troop]",
+    "french": "[troop]",
+    "german": "[troop]",
+    "russian": "[troop]",
+    "portuguese": "[troop]",
+    "chinese": "[troop]",
+    "spanish": "[troop]",
+    "chinese_traditional": "[troop]",
+    "korean": "[troop]",
+    "japanese": "[troop]"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Horde_Stack_CardText",
+    "english": "<nobr>[troop] {0}</nobr>",
+    "french": "<nobr>[troop] {0}</nobr>",
+    "german": "<nobr>[troop] {0}</nobr>",
+    "russian": "<nobr>[troop] х{0}</nobr>",
+    "portuguese": "<nobr>[troop] {0}</nobr>",
+    "chinese": "<nobr>[troop] {0}</nobr>",
+    "spanish": "<nobr>[troop] {0}</nobr>",
+    "chinese_traditional": "<nobr>[troop]{0}</nobr>",
+    "korean": "<nobr>[troop] {0}</nobr>",
+    "japanese": "<nobr>[troop]{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Horde_CardTooltipText",
+    "english": "Troop gains bonus [attack] and [health] per stack. Additional Troop stacks on a floor are added to any existing Troop. When this unit loses health equal to the [health] granted by one stack, it loses a Troop stack.",
+    "french": "La troupe gagne un bonus d'[attack] et de [health] par cumul. Les cumuls de troupe supplémentaires à un niveau sont ajoutés à une troupe existante. Quand cette unité perd des [health] égaux à un cumul, elle perd un cumule de troupes.",
+    "german": "Die Truppe erhält zusätzlich [attack] und [health] pro Stapel. Zusätzliche Truppenstapel auf einer Ebene werden zu jeder vorhandenen Truppe hinzugefügt. Verliert diese Einheit Gesundheit in Höhe der [health], die ein Stapel gewährt, geht ein Truppenstapel verloren.",
+    "russian": "Отряд получает дополнительные [attack] и [health] за каждый уровень. Ко всем отрядам на этаже добавляются дополнительные уровни. Когда этот боец теряет [health], равное тому, что дает один уровень, он теряет и 1 отряд.",
+    "portuguese": "A Tropa ganha um bônus de [attack] e [health] por carga. As cargas de Tropa adicionais em um andar são adicionadas a qualquer Tropa existente. Quando essa unidade perde vida igual à [health] concedida por uma carga, ela perde uma carga de Tropa.",
+    "chinese": "每层使部队获得 [attack] 与 [health] 加成。一层中的额外部队层数会叠加在现有部队身上。当该单位失去的生命值等同于一层提供的 [health] 时，则会失去一层部队。",
+    "spanish": "La tropa recibe [attack] y [health] por acumulación. Las acumulaciones adicionales de tropa en un piso se añaden a la tropa existente. Cuando la unidad pierde tanta [health] como la que otorga una acumulación, pierde una acumulación.",
+    "chinese_traditional": "部隊每層獲得額外的[attack]和[health]。樓層上的額外部隊層數會加入到任何現有部隊中。當此單位失去的生命值等同於一層所提供的[health]，則失去一個部隊層數。",
+    "korean": "무리는 스택당 [attack] 및 [health] 보너스를 얻습니다. 해당 층에 추가된 무리 스택은 기존 무리에 합쳐집니다. 무리 스택 1개당 부여되는 [health] 수치만큼 피해를 입을 때마다, 해당 스택이 하나 제거됩니다.",
+    "japanese": "部隊が1スタックにつき[attack]と[health]のボーナスを得る。フロアでの部隊のスタックは、既存の部隊に加算される。このユニットが1スタック分の[health]に等しい体力を失った場合、部隊スタックを失う。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Horde_CharacterTooltipText",
+    "english": "Funguy gain bonus 3[attack] and 4[health] per [troop] stack. Lose a [troop] stack every 4[health] lost.",
+    "french": "Le champote gagne un bonus de 3[attack] et 4[health] par cumul de [troop]. Vous perdez un cumul de [troop] tous les 4[health] perdus.",
+    "german": "Fungus erhält zusätzlich 3[attack] und 4[health] pro [troop]-Stapel. Verliere einen [troop]-Stapel pro 4 verlorener [health].",
+    "russian": "Грибоец получает 3[attack] и 4[health] за каждый слой <b>Отряда</b>. За потерю каждых 4[health] снимается один [troop].",
+    "portuguese": "O Fungo recebe um bônus de 3[attack] e 4[health] por cada carga de [troop]. Perde uma carga de [troop] sempre que perde 4[health].",
+    "chinese": "每层 [troop] 使蘑菇人获得 3[attack] 与 4[health] 加成。每失去 4[health]，失去一层 [troop]。",
+    "spanish": "Los Lustrongos reciben 3[attack] y 4[health] por acumulación de [troop]. Pierden una acumulación de [troop] por cada 4 puntos de [health] que pierdan.",
+    "chinese_traditional": "真菌人每層[troop]獲得額外3點[attack]和4點[health]。每失去4點[health]失去一層[troop]。",
+    "korean": "균사체는 [troop]의 스택당 3[attack], 4[health]을 얻습니다. 4[health]을 잃을 때마다 [troop] 스택이 1 줄어듭니다.",
+    "japanese": "[troop]1スタックにつきファンガイがボーナスの3[attack]と4[health]を得る。4[health]を失うたびに[troop]のスタックを1失う。"
+  },
   "statusEffectStateName": "StatusEffectHordeState",
   "displayCategory": "positive",
   "triggerStage": "on_hit",
@@ -7,5 +59,11 @@
   "scalesInEndless": false,
   "excludeHeroPropagation": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_EagerConscript",
+    "vfxPrefabRight": "FX_TroopEnemy",
+    "spawnLocation": "character_bottom",
+    "facing": "forward"
+  }
 }

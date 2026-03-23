@@ -1,5 +1,57 @@
 {
   "statusId": "spell weakness",
+  "nameKey": {
+    "key": "StatusEffect_SpellWeakness_CardText",
+    "english": "Spell Weakness",
+    "french": "Faiblesse magique",
+    "german": "Zauberanfälligkeit",
+    "russian": "Уязвимость к чарам",
+    "portuguese": "Fraqueza à Magia",
+    "chinese": "法术易伤",
+    "spanish": "Debilidad mágica",
+    "chinese_traditional": "法術弱點",
+    "korean": "주문 약화",
+    "japanese": "対呪文弱化"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_SpellWeakness_Stack_CardText",
+    "english": "<nobr>Spell Weakness {0}</nobr>",
+    "french": "<nobr>Faiblesse magique {0}</nobr>",
+    "german": "<nobr>{0} Zauberanfälligkeit</nobr>",
+    "russian": "<nobr>Уязвимость к чарам {0}</nobr>",
+    "portuguese": "<nobr>Fraqueza à Magia {0}</nobr>",
+    "chinese": "<nobr>法术易伤 {0}</nobr>",
+    "spanish": "<nobr>Debilidad mágica {0}</nobr>",
+    "chinese_traditional": "<nobr>法術弱點 {0}</nobr>",
+    "korean": "<nobr>주문 약화 {0}</nobr>",
+    "japanese": "<nobr>対呪文弱化{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_SpellWeakness_CardTooltipText",
+    "english": "The next time the unit is hit by a damage spell or ability, it takes that much damage again for each stack of [spellweakness].",
+    "french": "La prochaine fois que l'unité est blessée par un sort ou une capacité, les dégâts subis sont multipliés par le nombre de cumuls de [spellweakness].",
+    "german": "Wenn die Einheit das nächste Mal von einem Schadenszauber oder einer Fähigkeit getroffen wird, nimmt sie für jeden Stapel [spellweakness] noch einmal so viel Schaden.",
+    "russian": "Попав в следующий раз под удар чар или способностей, боец получит дополнительно тот же урон, умноженный на количество уровней уязвимости к <b>чарам</b>.",
+    "portuguese": "Da próxima vez que essa unidade for atingida por uma habilidade ou feitiço de dano, ela recebe novamente essa quantia de dano para cada carga de [spellweakness].",
+    "chinese": "此单位下次受到法术或能力攻击时，每有一层[spellweakness]，就额外承受一次同等的伤害值。",
+    "spanish": "La próxima vez que la unidad reciba daño de hechizo o de habilidad, recibirá el doble de daño por cada acumulación de [spellweakness].",
+    "chinese_traditional": "單位下次被傷害法術或能力命中時，每層[spellweakness]都會使其再次受到相同傷害。",
+    "korean": "다음에 이 유닛이 피해 주문이나 능력으로 공격받을 때, [spellweakness]의 중첩마다 받은 피해량 만큼의 추가 피해를 입습니다.",
+    "japanese": "次にこのユニットがダメージ呪文またはアビリティを受けると、[spellweakness]の1スタックにつき同等のダメージを追加で受ける。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_SpellWeakness_CharacterTooltipText",
+    "english": "Takes [codeint0]x damage from the next damage spell or ability.",
+    "french": "Le prochain sort ou une capacité infligera [codeint0]x les dégâts de base.",
+    "german": "Erleidet [codeint0]-mal Schaden durch den nächsten Schadenszauber oder einer Fähigkeit.",
+    "russian": "Получает дополнительно x[codeint0] урона от следующих чар или способностей.",
+    "portuguese": "Recebe [codeint0]x de dano do próximo feitiço ou habilidade de dano.",
+    "chinese": "下次受到法术或能力攻击时，承受[codeint0]倍伤害。",
+    "spanish": "Recibe [codeint0] de daño con el próximo hechizo o de habilidad.",
+    "chinese_traditional": "下次受到法術或能力傷害變為[codeint0]倍。",
+    "korean": "다음에 시전된 피해 주문이나 능력으로부터 [codeint0]배만큼 피해를 입습니다.",
+    "japanese": "次のダメージ呪文またはアビリティによる被ダメージが[codeint0]xになる。"
+  },
   "statusEffectStateName": "StatusEffectSpellWeaknessState",
   "appliedSFXName": "Status_SpellWeakness",
   "displayCategory": "negative",
@@ -9,5 +61,13 @@
   "isPropagatable": true,
   "scalesInEndless": false,
   "excludeMonsterPropagation": true,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_SpellWeaknessApplied",
+    "spawnLocation": "character_center"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_SpellWeaknessNew",
+    "spawnLocation": "character_center"
+  }
 }

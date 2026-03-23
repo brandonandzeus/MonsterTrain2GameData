@@ -1,15 +1,64 @@
 {
   "statusId": "untouchable",
-  "statusEffectStateName": "StatusEffectUntouchableState",
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_Map_FireRing",
-    "spawnLocation": "character_center"
+  "nameKey": {
+    "key": "StatusEffect_Untouchable_CardText",
+    "english": "Stasis",
+    "french": "Stase",
+    "german": "Stase",
+    "russian": "Стазис",
+    "portuguese": "Estase",
+    "chinese": "静滞",
+    "spanish": "Estasis",
+    "chinese_traditional": "靜止",
+    "korean": "역장",
+    "japanese": "静止"
   },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Untouchable_CardTooltipText",
+    "english": "Cannot attack. Cannot be damaged or targeted in any way.",
+    "french": "Impossible d'attaquer. Cette unité ne peut pas être blessée ni ciblée.",
+    "german": "Kann nicht angreifen. Kann unter keinen Umständen Schaden erleiden oder als Ziel ausgewählt werden.",
+    "russian": "Не может атаковать. Нельзя ранить или выбрать в качестве цели.",
+    "portuguese": "Não pode atacar. Não pode ser danificado ou mirado de modo algum.",
+    "chinese": "无法攻击。无法以任何方式受到伤害或成为目标。",
+    "spanish": "No puede atacar. No puede recibir daño ni ser objetivo de ningún modo.",
+    "chinese_traditional": "無法攻擊。無法受到傷害或以任何方式被指定為目標。",
+    "korean": "공격할 수 없습니다. 피해를 받지 않으며, 대상으로도 지정받지 않습니다.",
+    "japanese": "攻撃できない。いかなる手段でもダメージを受けたり標的にされることがない。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Untouchable_CharacterTooltipText",
+    "english": "Cannot attack. Cannot be damaged or targeted in any way.",
+    "french": "Impossible d'attaquer. Cette unité ne peut pas être blessée ni ciblée.",
+    "german": "Kann nicht angreifen. Kann unter keinen Umständen Schaden erleiden oder als Ziel ausgewählt werden.",
+    "russian": "Не может атаковать. Нельзя ранить или выбрать в качестве цели.",
+    "portuguese": "Não pode atacar. Não pode ser danificado ou mirado de modo algum.",
+    "chinese": "无法攻击。无法以任何方式受到伤害或成为目标。",
+    "spanish": "No puede atacar. No puede recibir daño ni ser objetivo de ningún modo.",
+    "chinese_traditional": "無法攻擊。無法受到傷害或以任何方式被指定為目標。",
+    "korean": "공격할 수 없습니다. 피해를 받지 않으며, 대상으로도 지정받지 않습니다.",
+    "japanese": "攻撃できない。いかなる手段でもダメージを受けたり標的にされることがない。"
+  },
+  "statusEffectStateName": "StatusEffectUntouchableState",
   "displayCategory": "persistent",
   "triggerStage": "on_combat_turn_dazed",
   "isStackable": false,
   "scalesInEndless": false,
   "showNotificationsOnRemoval": false,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_TitanphasedApply_PS",
+    "spawnLocation": "character_center"
+  },
+  "triggeredVFX": {
+    "vfxPrefabLeft": "FX_Titanphased_TriggeredR_PS",
+    "vfxPrefabRight": "FX_Titanphased_TriggeredL_PS",
+    "spawnLocation": "character_center",
+    "facing": "forward"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_TitanphasedPersistent_PS",
+    "spawnLocation": "character_center"
+  }
 }

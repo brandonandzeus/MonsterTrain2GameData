@@ -1,5 +1,57 @@
 {
   "statusId": "muted",
+  "nameKey": {
+    "key": "StatusEffect_Muted_CardText",
+    "english": "Mute",
+    "french": "Muet",
+    "german": "Stummschalten",
+    "russian": "Заглушение",
+    "portuguese": "Calar",
+    "chinese": "静默",
+    "spanish": "Silencio",
+    "chinese_traditional": "靜音",
+    "korean": "침묵",
+    "japanese": "ミュート"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Muted_CardTooltipText",
+    "english": "Disables <b>Triggers</b>, <b>Abilities</b>, and <b>Enchants</b>. Decreases every turn.",
+    "french": "Neutralise les <b>déclenchements</b>, <b>capacités</b> et <b>enchantements</b>. Diminue à chaque tour.",
+    "german": "Deaktiviert <b>Auslöser</b>, <b>Fähigkeiten</b> und <b>Verzauberungen</b>. Wird jeden Zug reduziert.",
+    "russian": "Отключает <b>триггеры</b>, <b>умения</b> и <b>усиления</b>. Уменьшается каждый ход.",
+    "portuguese": "Desativa <b>Acionadores</b>, <b>Habilidades</b> e <b>Encantamentos</b>. Diminui a cada turno.",
+    "chinese": "无法发动<b>触发</b>，无法使用<b>能力</b>，<b>附魔</b>无法生效。每回合不断减少。",
+    "spanish": "Inutiliza las <b>activaciones</b>, las <b>habilidades</b> y los efectos de <b>Hechizar</b>. Disminuye en cada turno.",
+    "chinese_traditional": "禁用<b>觸發</b>、<b>能力</b>與<b>強化</b>。每回合遞減。",
+    "korean": "<b>발동 효과</b>, <b>능력</b> 및 <b>마법 부여</b>를 비활성화합니다. 매 턴마다 감소합니다.",
+    "japanese": "<b>トリガー</b>、<b>アビリティ</b>、<b>エンチャント</b>を使用不可にする。毎ターン減少する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Muted_CharacterTooltipText",
+    "english": "Disables <b>Triggers</b>, <b>Abilities</b>, and <b>Enchants</b>. Decreases every turn.",
+    "french": "Neutralise les <b>déclenchements</b>, <b>capacités</b> et <b>enchantements</b>. Diminue à chaque tour.",
+    "german": "Deaktiviert <b>Auslöser</b>, <b>Fähigkeiten</b> und <b>Verzauberungen</b>. Wird jeden Zug reduziert.",
+    "russian": "Отключает <b>триггеры</b>, <b>умения</b> и <b>усиления</b>. Уменьшается каждый ход.",
+    "portuguese": "Desativa <b>Acionadores</b>, <b>Habilidades</b> e <b>Encantamentos</b>. Diminui a cada turno.",
+    "chinese": "无法发动<b>触发</b>，无法使用<b>能力</b>，<b>附魔</b>无法生效。每回合不断减少。",
+    "spanish": "Inutiliza las <b>activaciones</b>, las <b>habilidades</b> y los efectos de <b>Hechizar</b>. Disminuye en cada turno.",
+    "chinese_traditional": "禁用<b>觸發</b>、<b>能力</b>與<b>強化</b>。每回合遞減。",
+    "korean": "<b>발동 효과</b>, <b>능력</b> 및 <b>마법 부여</b>를 비활성화합니다. 매 턴마다 감소합니다.",
+    "japanese": "<b>トリガー</b>、<b>アビリティ</b>、<b>エンチャント</b>を使用不可にする。毎ターン減少する。"
+  },
+  "notificationKey": {
+    "key": "StatusEffect_Muted_NotificationText",
+    "english": "Muted!",
+    "french": "<nobr>Muet !</nobr>",
+    "german": "Stumm!",
+    "russian": "Заглушение!",
+    "portuguese": "Calado!",
+    "chinese": "被静默！",
+    "spanish": "¡Silencio!",
+    "chinese_traditional": "被沉默！",
+    "korean": "침묵당함!",
+    "japanese": "ミュート！"
+  },
   "statusEffectStateName": "StatusEffectMutedState",
   "appliedSFXName": "Status_Silence",
   "displayCategory": "negative",
@@ -9,5 +61,9 @@
   "isPropagatable": true,
   "excludeMonsterPropagation": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_SilenceNew",
+    "spawnLocation": "character_side_fwd_bottom"
+  }
 }

@@ -1,5 +1,57 @@
 {
   "statusId": "lifesteal",
+  "nameKey": {
+    "key": "StatusEffect_Lifesteal_CardText",
+    "english": "Lifesteal",
+    "french": "Vol de vie",
+    "german": "Lebensraub",
+    "russian": "Кража жизни",
+    "portuguese": "Vampirismo",
+    "chinese": "吸血",
+    "spanish": "Robo de vida",
+    "chinese_traditional": "生命竊取",
+    "korean": "체력 강탈",
+    "japanese": "生命吸収"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Lifesteal_Stack_CardText",
+    "english": "<nobr>Lifesteal {0}</nobr>",
+    "french": "<nobr>Vol de vie {0}</nobr>",
+    "german": "<nobr>{0} Lebensraub</nobr>",
+    "russian": "<nobr>Кража жизни {0}</nobr>",
+    "portuguese": "<nobr>Vampirismo {0}</nobr>",
+    "chinese": "<nobr>吸血 {0}</nobr>",
+    "spanish": "<nobr>Robo de vida {0}</nobr>",
+    "chinese_traditional": "<nobr>生命竊取 {0}</nobr>",
+    "korean": "<nobr>체력 강탈 {0}</nobr>",
+    "japanese": "<nobr>生命吸収{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Lifesteal_CardTooltipText",
+    "english": "When a unit with [lifesteal] attacks, it restores health equal to the damage dealt.<br>Decreases each time the unit attacks.",
+    "french": "Lorsqu'une unité avec <b>Vol de vie</b> attaque, elle récupère des PV à hauteur des dégâts infligés.<br>Diminue à chaque fois que l'unité attaque.",
+    "german": "Wenn diese Einheit Schaden zufügt, stellt sie für jedes Mal Schaden Gesundheit wieder her und verbraucht einen Stapel.<br>Wird nach jedem Angriff reduziert.",
+    "russian": "Атакуя, боец с <b>Кражей жизни</b> восстанавливает свое здоровье соответственно нанесенному урону. Снижается при каждой атаке бойца.",
+    "portuguese": "Quando uma unidade com <b>Vampirismo</b> ataca, ela restaura vida igual ao dano causado.<br>Diminui a cada vez que a unidade ataca.",
+    "chinese": "当带有[lifesteal]的单位攻击时，该单位恢复等同于伤害量的生命值。<br>该单位每次攻击不断减少。",
+    "spanish": "Cuando una unidad con [lifesteal] ataca, recupera salud equivalente al daño infligido.<br>Disminuye cada vez que la unidad ataca.",
+    "chinese_traditional": "當帶有[lifesteal]的單位攻擊時，恢復等同於造成傷害的生命值。<br>每次單位攻擊時減少。",
+    "korean": "[lifesteal] 효과를 지닌 유닛은 입힌 피해만큼 체력을 회복합니다.<br>이 유닛이 공격할 때마다 스택이 감소합니다.",
+    "japanese": "[lifesteal]のあるユニットが攻撃すると、与えたダメージに等しい体力を回復する。<br>ユニットが攻撃するたびに減少する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Lifesteal_CharacterTooltipText",
+    "english": "For the next [codeint0] attacks, restore health equal to the damage dealt.",
+    "french": "Pour les [codeint0] prochaines attaques, restaure des PV à hauteur des dégâts infligés.",
+    "german": "Stelle die nächsten [codeint0] Angriffe Gesundheit in Höhe des zugefügten Schadens her.",
+    "russian": "В течение следующих атак в количестве [codeint0] восстанавливает свое здоровье соответственно нанесенному урону.",
+    "portuguese": "Nos próximos [codeint0] ataques, restaura vida igual ao dano causado.",
+    "chinese": "接下来的 [codeint0] 次攻击会恢复等同于伤害量的生命值。",
+    "spanish": "Los siguientes [codeint0] ataques, recuperará salud equivalente al daño infligido.",
+    "chinese_traditional": "在接下來的[codeint0]次攻擊中，恢復等同於造成傷害的生命值。",
+    "korean": "다음 [codeint0]회 동안 공격할 때마다 입힌 피해만큼 체력을 회복합니다.",
+    "japanese": "次の攻撃[codeint0]回分、与えたダメージに等しい体力を回復する。"
+  },
   "statusEffectStateName": "StatusEffectLifestealState",
   "appliedSFXName": "Status_Lifesteal",
   "displayCategory": "positive",
@@ -8,5 +60,17 @@
   "removeDuringDeployment": true,
   "isPropagatable": true,
   "excludeHeroPropagation": true,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_LifeStealApply_PS",
+    "spawnLocation": "character_side_back_center"
+  },
+  "triggeredVFX": {
+    "vfxPrefabLeft": "FX_LifeStealTriggered_PS",
+    "spawnLocation": "character_side_back_center"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_LifeStealPersistent_PS",
+    "spawnLocation": "character_side_back_center"
+  }
 }

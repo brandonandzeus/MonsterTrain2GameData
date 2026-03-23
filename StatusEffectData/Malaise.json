@@ -1,12 +1,68 @@
 {
   "statusId": "malaise",
-  "statusEffectStateName": "StatusEffectReduceMaxHpAndAttackState",
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_ImpactFire_PS",
-    "spawnLocation": "character_center"
+  "nameKey": {
+    "key": "StatusEffect_Malaise_CardText",
+    "english": "Malaise",
+    "french": "Mal-être",
+    "german": "Unwohlsein",
+    "russian": "Недуг",
+    "portuguese": "Moléstia",
+    "chinese": "不适",
+    "spanish": "Afección",
+    "chinese_traditional": "病痛",
+    "korean": "무력감",
+    "japanese": "倦怠感"
   },
+  "stackableNameKey": {
+    "key": "StatusEffect_Malaise_Stack_CardText",
+    "english": "Malaise {0}",
+    "french": "Mal-être {0}",
+    "german": "Unwohlsein {0}",
+    "russian": "Недуг х{0}",
+    "portuguese": "Moléstia {0}",
+    "chinese": "不适 {0}",
+    "spanish": "Afección {0}",
+    "chinese_traditional": "病痛{0}",
+    "korean": "무력감 {0}",
+    "japanese": "倦怠感 {0}"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Malaise_CardTooltipText",
+    "english": "-1[attack] and -1[health] per stack. [health] cannot be reduced below 1.",
+    "french": "-1[attack] et -1[health] par cumul. Les [health] ne peuvent pas être réduits à moins de 1.",
+    "german": "-1[attack] und -1[health] pro Stapel. [health] kann nicht unter 1 fallen.",
+    "russian": "-1[attack] и -1[health] за слой. [health] не может упасть ниже 1.",
+    "portuguese": "-1[attack] e -1[health] por carga. [health] não pode cair abaixo de 1.",
+    "chinese": "每层 -1[attack] 并 -1[health]。[health]不会降低到1点以下。",
+    "spanish": "-1[attack] y -1[health] por acumulación. La [health] no puede reducirse por debajo de 1.",
+    "chinese_traditional": "每層-1[attack]和-1[health]。[health]不能降至1以下。",
+    "korean": "스택당 -1[attack] 및 -1[health]. [health]은 1 이하로 감소하지 않습니다.",
+    "japanese": "スタック1つにつき、-1[attack]と-1[health]。[health]を1未満に減らすことはできない。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Malaise_CharacterTooltipText",
+    "english": "-[codeint1][attack] and -[codeint1][health] per stack. [health] cannot be reduced below 1.",
+    "french": "-[codeint1][attack] et -[codeint1][health] par cumul. Les [health] ne peuvent pas être réduits à moins de 1.",
+    "german": "-[codeint1][attack] und -[codeint1][health] pro Stapel. [health] kann nicht unter 1 fallen.",
+    "russian": "-[codeint1][attack] и -[codeint1][health] за слой. [health] не может упасть ниже 1.",
+    "portuguese": "-[codeint1][attack] e -[codeint1][health] por carga. [health] não pode cair abaixo de 1.",
+    "chinese": "每层 -[codeint1][attack] 并 -[codeint1][health]。[health]不会降低到1点以下。",
+    "spanish": "-[codeint1][attack] y -[codeint1][health] por acumulación. La [health] no puede reducirse por debajo de 1.",
+    "chinese_traditional": "每層-[codeint1][attack]和-[codeint1][health]。[health]不能降至1以下。",
+    "korean": "스택당 -[codeint1][attack] 및 -[codeint1][health] [health]은 1 이하로 감소하지 않습니다.",
+    "japanese": "スタック1つにつき、-1[codeint1][attack]と-1[codeint1][health]。[health]を1未満に減らすことはできない。"
+  },
+  "statusEffectStateName": "StatusEffectReduceMaxHpAndAttackState",
   "displayCategory": "negative",
   "triggerStage": "none",
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_MalaiseNewApplied",
+    "spawnLocation": "character_center"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_MalaiseNew",
+    "spawnLocation": "character_center"
+  }
 }

@@ -1,9 +1,78 @@
 {
   "statusId": "haste",
+  "nameKey": {
+    "key": "StatusEffect_Haste_CardText",
+    "english": "Haste",
+    "french": "Célérité",
+    "german": "Eile",
+    "russian": "Ускорение",
+    "portuguese": "Ímpeto",
+    "chinese": "加速",
+    "spanish": "Celeridad",
+    "chinese_traditional": "急速",
+    "korean": "가속",
+    "japanese": "ジャンプ"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Haste_Stack_CardText",
+    "english": "<nobr>Haste {0}</nobr>",
+    "french": "<nobr>Célérité {0}</nobr>",
+    "german": "<nobr>{0} Eile</nobr>",
+    "russian": "<nobr>Ускорение {0}</nobr>",
+    "portuguese": "<nobr>Ímpeto {0}</nobr>",
+    "chinese": "<nobr>加速 {0}</nobr>",
+    "spanish": "<nobr>Celeridad {0}</nobr>",
+    "chinese_traditional": "<nobr>急速 {0}</nobr>",
+    "korean": "<nobr>가속 {0}</nobr>",
+    "japanese": "<nobr>ジャンプ{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Haste_CardTooltipText",
+    "english": "Moves directly from the first floor to the third floor.",
+    "french": "Passe directement du 1er au 3e niveau lors du déplacement.",
+    "german": "Steigt von der ersten Ebene direkt in die dritte Ebene auf.",
+    "russian": "Мгновенно перемещается с первого этажа на третий.",
+    "portuguese": "Move-se diretamente do primeiro para o terceiro andar.",
+    "chinese": "直接从第一层前往第三层。",
+    "spanish": "Se mueve del primer piso directamente al tercero.",
+    "chinese_traditional": "直接從第一層移動到第三層。",
+    "korean": "1층에서 3층으로 즉시 이동합니다.",
+    "japanese": "1階のフロアから3階のフロアへ直接移動する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Haste_CharacterTooltipText",
+    "english": "Moves directly from the first floor to the third floor.",
+    "french": "Passe directement du 1er au 3e niveau lors du déplacement.",
+    "german": "Steigt von der ersten Ebene direkt in die dritte Ebene auf.",
+    "russian": "Мгновенно перемещается с первого этажа на третий.",
+    "portuguese": "Move-se diretamente do primeiro para o terceiro andar.",
+    "chinese": "直接从第一层前往第三层。",
+    "spanish": "Se mueve del primer piso directamente al tercero.",
+    "chinese_traditional": "直接從第一層移動到第三層。",
+    "korean": "1층에서 3층으로 즉시 이동합니다.",
+    "japanese": "1階のフロアから3階のフロアへ直接移動する。"
+  },
+  "notificationKey": {
+    "key": "StatusEffect_Haste_NotificationText",
+    "english": "Haste",
+    "french": "Célérité",
+    "german": "Eile",
+    "russian": "Ускорение",
+    "portuguese": "Ímpeto",
+    "chinese": "加速",
+    "spanish": "Celeridad",
+    "chinese_traditional": "急速",
+    "korean": "가속",
+    "japanese": "ジャンプ"
+  },
   "statusEffectStateName": "StatusEffectHasteState",
   "displayCategory": "persistent",
   "triggerStage": "on_pre_movement",
   "scalesInEndless": false,
   "showStackCount": false,
-  "paramInt": 2
+  "paramInt": 2,
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_HasteNew",
+    "spawnLocation": "character_bottom"
+  }
 }

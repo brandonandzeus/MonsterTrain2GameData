@@ -1,9 +1,67 @@
 {
   "statusId": "titanite",
+  "nameKey": {
+    "key": "StatusEffect_Titanite_CardText",
+    "english": "Titanite",
+    "french": "Titanite",
+    "german": "Titanit",
+    "russian": "Титанит",
+    "portuguese": "Titanita",
+    "chinese": "泰坦之躯",
+    "spanish": "Titanita",
+    "chinese_traditional": "泰坦石",
+    "korean": "티타나이트",
+    "japanese": "巨人の守護"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Titanite_Stack_CardText",
+    "english": "<nobr>Titanite</nobr>",
+    "french": "<nobr>Titanite</nobr>",
+    "german": "<nobr>Titanit</nobr>",
+    "russian": "<nobr>Титанит</nobr>",
+    "portuguese": "<nobr>Titanita</nobr>",
+    "chinese": "<nobr>泰坦之躯</nobr>",
+    "spanish": "<nobr>Titanita</nobr>",
+    "chinese_traditional": "<nobr>泰坦石</nobr>",
+    "korean": "<nobr>티타나이트</nobr>",
+    "japanese": "<nobr>巨人の守護</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Titanite_CardTooltipText",
+    "english": "Incoming damage reduced by half.",
+    "french": "Les dégâts subis sont réduits de moitié.",
+    "german": "Eingehender Schaden wird um die Hälfte reduziert.",
+    "russian": "Полученный урон сокращается вдвое",
+    "portuguese": "O dano recebido é reduzido pela metade.",
+    "chinese": "受到的伤害减半。",
+    "spanish": "El daño entrante disminuye a la mitad.",
+    "chinese_traditional": "受到的傷害減半。",
+    "korean": "받는 피해가 절반으로 감소합니다.",
+    "japanese": "被ダメージが半減する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Titanite_CharacterTooltipText",
+    "english": "Incoming damage reduced by half.",
+    "french": "Les dégâts subis sont réduits de moitié.",
+    "german": "Eingehender Schaden wird um die Hälfte reduziert.",
+    "russian": "Полученный урон сокращается вдвое",
+    "portuguese": "O dano recebido é reduzido pela metade.",
+    "chinese": "受到的伤害减半。",
+    "spanish": "El daño entrante disminuye a la mitad.",
+    "chinese_traditional": "受到的傷害減半。",
+    "korean": "받는 피해가 절반으로 감소합니다.",
+    "japanese": "被ダメージが半減する。"
+  },
   "statusEffectStateName": "StatusEffectDamageReductionState",
   "appliedSFXName": "Status_SpellShield_Applied",
   "displayCategory": "persistent",
   "triggerStage": "on_pre_attacked_damage_shield",
   "isStackable": false,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_TitanskinFriendly(Clone)",
+    "vfxPrefabRight": "FX_TitanSkinEnemy(Clone)",
+    "spawnLocation": "character_side_fwd_center",
+    "facing": "forward"
+  }
 }

@@ -17,16 +17,16 @@
   },
   "descriptionKey": {
     "key": "CollectableRelicData_descriptionKey-a4171d42e9a781fc-67d74b03e56d28e4995574c7d78383f9-v2",
-    "english": "Fae gain [conduit] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack] on [mooncycle].",
-    "french": "Les Fées gagnent [conduit] [effect0.upgrade.status0.power] et +[effect0.upgrade.bonusdamage][attack] lors du [mooncycle].",
-    "german": "Feen erhalten [conduit] [effect0.upgrade.status0.power] und +[effect0.upgrade.bonusdamage][attack] im [mooncycle].",
-    "russian": "Каждый [mooncycle] Феям дается [conduit] х[effect0.upgrade.status0.power] и +[effect0.upgrade.bonusdamage][attack].",
-    "portuguese": "Os fae recebem [conduit] [effect0.upgrade.status0.power] e +[effect0.upgrade.bonusdamage][attack] durante o [mooncycle].",
-    "chinese": "在 [mooncycle] 时，妖精获得 [conduit] [effect0.upgrade.status0.power]和 +[effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Las hadas añaden [conduit] [effect0.upgrade.status0.power] y +[effect0.upgrade.bonusdamage][attack] durante el [mooncycle].",
-    "chinese_traditional": "仙子在[mooncycle]時獲得[conduit][effect0.upgrade.status0.power]和+[effect0.upgrade.bonusdamage][attack]。",
-    "korean": "[mooncycle] 시, 요정이 [conduit] [effect0.upgrade.status0.power] 및 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
-    "japanese": "妖精が[mooncycle]時に[conduit] [effect0.upgrade.status0.power]と+[effect0.upgrade.bonusdamage][attack]を得る。"
+    "english": "Fae gain [conduit] [effect0.effect1.status0.power] and +[effect0.effect0.upgrade.bonusdamage][attack] on [mooncycle].",
+    "french": "Les Fées gagnent [conduit] [effect0.effect1.status0.power] et +[effect0.upgrade.bonusdamage][attack] lors du [mooncycle].",
+    "german": "Feen erhalten [conduit] [effect0.effect1.status0.power] und +[effect0.effect0.upgrade.bonusdamage][attack] im [mooncycle].",
+    "russian": "Каждый [mooncycle] Феям дается [conduit] х[effect0.effect1.status0.power] и +[effect0.effect0.upgrade.bonusdamage][attack].",
+    "portuguese": "Os fae recebem [conduit] [effect0.effect1.status0.power] e +[effect0.effect0.upgrade.bonusdamage][attack] durante o [mooncycle].",
+    "chinese": "在 [mooncycle] 时，妖精获得 [conduit] [effect0.effect1.status0.power]和 +[effect0.effect0.upgrade.bonusdamage][attack]。",
+    "spanish": "Las hadas añaden [conduit] [effect0.effect1.status0.power] y +[effect0.effect0.upgrade.bonusdamage][attack] durante el [mooncycle].",
+    "chinese_traditional": "仙子在[mooncycle]時獲得[conduit][effect0.effect1.status0.power]和+[effect0.effect0.upgrade.bonusdamage][attack]。",
+    "korean": "[mooncycle] 시, 요정이 [conduit] [effect0.effect1.status0.power] 및 +[effect0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+    "japanese": "妖精が[mooncycle]時に[conduit] [effect0.effect1.status0.power]と+[effect0.effect0.upgrade.bonusdamage][attack]を得る。"
   },
   "relicLoreTooltipKeys": [
     {
@@ -45,58 +45,58 @@
   ],
   "rarity": "uncommon",
   "linkedClass": "ClassLunaCoven",
+  "pools": [
+    "MegaRelicPool"
+  ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "additionalTooltips": [
+      "relicEffectClassName": "RelicEffectAddEffectOnMooncycle",
+      "paramCardEffects": [
         {
-          "trigger": "on_moon_phase_shift",
-          "style": "default",
-          "isTriggerTooltip": true
+          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "targetCharacterSubtype": "SubtypesData_Fae",
+          "paramCardUpgradeData": {
+            "id": "MooncycleFaeAddMagicPower_UpgradeData",
+            "guid": "6922ecb5-0835-451c-8ca7-8348d2e66079",
+            "bonusDamage": 5
+          }
         },
         {
-          "descriptionKey": {
-            "key": "CardTraitMagicPower_TooltipText",
-            "english": "Increases the amount of damage dealt and health restored by spells.",
-            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-            "chinese": "提高法术造成的伤害与恢复的生命值。",
-            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-          },
-          "titleKey": {
-            "key": "CardTraitMagicPower_TooltipTitle",
-            "english": "Magic Power",
-            "french": "Puissance magique",
-            "german": "Magische Kraft",
-            "russian": "Сила магии",
-            "portuguese": "Poder Mágico",
-            "chinese": "魔法强度",
-            "spanish": "Poder mágico",
-            "chinese_traditional": "魔法力量",
-            "korean": "마법력",
-            "japanese": "魔力"
-          }
+          "effectStateName": "CardEffectAddStatusEffect",
+          "targetMode": "room",
+          "targetTeamType": "monsters",
+          "targetCharacterSubtype": "SubtypesData_Fae",
+          "paramStatusEffects": [
+            {
+              "statusId": "conduit",
+              "count": 1
+            }
+          ]
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "MooncycleFaeAddMagicPower_UpgradeData",
-        "guid": "6922ecb5-0835-451c-8ca7-8348d2e66079",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "conduit",
-            "count": 1
-          }
-        ],
-        "bonusDamage": 5
+      "paramInt": 1
+    }
+  ],
+  "descriptionModifiers": [
+    {
+      "modifierClassName": "CardCountDescriptionModifier",
+      "paramCardType": "monster",
+      "textFormatKey": {
+        "key": "CollectableRelicData_textFormatKey-1558642f1b4ff840-67d74b03e56d28e4995574c7d78383f9-v2",
+        "english": "([value] Fae)",
+        "french": "([value] Fée)",
+        "german": "([value] Fee)",
+        "russian": "([value] Фея)",
+        "portuguese": "([value] Fae)",
+        "chinese": "([value] 妖精)",
+        "spanish": "([value] Hada)",
+        "chinese_traditional": "([value] 仙子)",
+        "korean": "([value] 요정)",
+        "japanese": "([value] 妖精)"
       },
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Fae",
-      "paramTrigger": "on_moon_phase_shift"
+      "paramCharacterSubtype": "SubtypesData_Fae"
     }
   ]
 }

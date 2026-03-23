@@ -1,9 +1,65 @@
 {
   "statusId": "burst",
+  "nameKey": {
+    "key": "StatusEffect_Burst_CardText",
+    "english": "Burst",
+    "french": "Salve",
+    "german": "Feuerstoß",
+    "russian": "Импульс",
+    "portuguese": "Surto",
+    "chinese": "爆发",
+    "spanish": "Aluvión",
+    "chinese_traditional": "爆發",
+    "korean": "분출",
+    "japanese": "追撃"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Burst_Stack_CardText",
+    "english": "<nobr>Burst {0}</nobr>",
+    "french": "<nobr>Salve {0}</nobr>",
+    "german": "<nobr>Feuerstoß {0}</nobr>",
+    "russian": "<nobr>Импульс х{0}</nobr>",
+    "portuguese": "<nobr>Surto {0}</nobr>",
+    "chinese": "<nobr>爆发{0}</nobr>",
+    "spanish": "<nobr>Aluvión {0}</nobr>",
+    "chinese_traditional": "<nobr>爆發{0}</nobr>",
+    "korean": "<nobr>분출 {0}</nobr>",
+    "japanese": "<nobr>追撃 {0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Burst_CardTooltipText",
+    "english": "Attacks an additional time per stack. Remove 1 stack after each attack made this way.",
+    "french": "Attaque une fois de plus. Retire <nobr>1 cumul</nobr> lors d'une [strike].",
+    "german": "Greift ein weiteres Mal an. Entfernt 1 Stapel beim [strike].",
+    "russian": "Каждый ход проводит дополнительную атаку. [strike] снимает 1 слой.",
+    "portuguese": "Ataca uma vez mais. Remove 1 carga ao usar [strike].",
+    "chinese": "额外攻击一次。[strike]时移除 1 层。",
+    "spanish": "Ataca una vez más. Elimina 1 acumulación al <b>Impactar</b>.",
+    "chinese_traditional": "額外攻擊一次。在[strike]時移除1層。",
+    "korean": "추가로 한 번 더 공격합니다. [strike] 시 스택 1개를 제거합니다.",
+    "japanese": "追加で攻撃を実行する。[strike]時にスタックが1減る。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Burst_CharacterTooltipText",
+    "english": "Attacks [codeint0] times. Remove 1 stack after each attack made this way.",
+    "french": "Attaque <nobr>[codeint0] fois.</nobr> Retire <nobr>1 cumul</nobr> lors d'une [strike].",
+    "german": "Greift [codeint0]-mal an. Entfernt 1 Stapel beim [strike].",
+    "russian": "Атакует [codeint0] р. [strike]: снимается один слой.",
+    "portuguese": "Ataca [codeint0] vezes. Remove 1 carga ao usar [strike].",
+    "chinese": "攻击 [codeint0] 次。[strike]时移除 1 层。",
+    "spanish": "Ataca [codeint0] veces. Elimina 1 acumulación al <b>Impactar</b>.",
+    "chinese_traditional": "攻擊[codeint0]次。在[strike]時移除1層。",
+    "korean": "[codeint0]회 공격합니다. [strike] 시 스택 1개를 제거합니다.",
+    "japanese": "攻撃を[codeint0]回実行する。[strike]時にスタックが1減る。"
+  },
   "statusEffectStateName": "StatusEffectBurstState",
   "displayCategory": "persistent",
   "triggerStage": "on_multistrike",
   "scalesInEndless": false,
   "showOnPyreHeart": true,
-  "paramInt": 2
+  "paramInt": 2,
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_BurstPersistant",
+    "spawnLocation": "character_side_back_center"
+  }
 }

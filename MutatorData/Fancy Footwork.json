@@ -36,10 +36,14 @@
           "trigger": "on_shift",
           "effects": [
             {
-              "effectStateName": "CardEffectBuffDamage",
+              "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
               "targetMode": "self",
-              "targetTeamType": "none",
-              "paramInt": 2
+              "targetTeamType": "monsters",
+              "paramCardUpgradeData": {
+                "id": "Plus2Attack",
+                "guid": "c7c68726-bd6d-403e-9d23-a005344f2774",
+                "bonusDamage": 2
+              }
             }
           ],
           "hideVisualAndIgnoreSilence": true

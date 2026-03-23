@@ -36,11 +36,13 @@
   "rarity": "uncommon",
   "linkedClass": "ClassRailforged",
   "pools": [
+    "FreeRealEstatePool",
     "MegaPool",
     "RoomAndEquipmentDraftPool",
     "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
     "RoomAndEquipmentMerchant_RoomPool",
-    "TrainRoomPool"
+    "TrainRoomPool",
+    "UnitsRailforgedBannerReplacementMutator"
   ],
   "cardArtPrefabVariantRef": {
     "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Trapchute.prefab",
@@ -114,7 +116,10 @@
           "requiredDLC": "railforged",
           "initialKeyboardTarget": "front_friendly"
         },
-        "showUpgradeDescriptionOnCards": true
+        "showUpgradeDescriptionOnCards": true,
+        "persistentVFX": {
+          "vfxPrefabLeft": "FX_TrapChuteRoom"
+        }
       }
     }
   ],

@@ -1,5 +1,70 @@
 {
   "statusId": "fragile",
+  "nameKey": {
+    "key": "StatusEffect_Fragile_CardText",
+    "english": "Fragile",
+    "french": "Fragilité",
+    "german": "Fragil",
+    "russian": "Хрупкость",
+    "portuguese": "Frágil",
+    "chinese": "不堪一击",
+    "spanish": "Fragilidad",
+    "chinese_traditional": "脆弱",
+    "korean": "취약",
+    "japanese": "脆弱"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Fragile_Stack_CardText",
+    "english": "<nobr>Fragile</nobr>",
+    "french": "<nobr>Fragilité</nobr>",
+    "german": "<nobr>Fragil</nobr>",
+    "russian": "<nobr>Хрупкость</nobr>",
+    "portuguese": "<nobr>Frágil</nobr>",
+    "chinese": "<nobr>不堪一击</nobr>",
+    "spanish": "<nobr>Fragilidad</nobr>",
+    "chinese_traditional": "<nobr>脆弱</nobr>",
+    "korean": "<nobr>취약</nobr>",
+    "japanese": "<nobr>脆弱</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Fragile_CardTooltipText",
+    "english": "If this unit loses health, it dies.",
+    "french": "Si cette unité perd de la santé, elle meurt.",
+    "german": "Diese Einheit stirbt, wenn sie Gesundheit verliert.",
+    "russian": "Боец погибает, когда получает урон.",
+    "portuguese": "Se esta unidade perder vida, ela morre.",
+    "chinese": "若此单位失去生命值，就会直接死亡。",
+    "spanish": "Esta unidad muere si pierde salud.",
+    "chinese_traditional": "如果這個單位失去生命值，就會死亡。",
+    "korean": "이 유닛은 체력을 잃으면 사망합니다.",
+    "japanese": "このユニットは体力を失うと死亡する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Fragile_CharacterTooltipText",
+    "english": "If this unit loses health, it dies.",
+    "french": "Si cette unité perd de la santé, elle meurt.",
+    "german": "Diese Einheit stirbt, wenn sie Gesundheit verliert.",
+    "russian": "Боец погибает, когда получает урон.",
+    "portuguese": "Se esta unidade perder vida, ela morre.",
+    "chinese": "若此单位失去生命值，就会直接死亡。",
+    "spanish": "Esta unidad muere si pierde salud.",
+    "chinese_traditional": "如果這個單位失去生命值，就會死亡。",
+    "korean": "이 유닛은 체력을 잃으면 사망합니다.",
+    "japanese": "このユニットは体力を失うと死亡する。"
+  },
+  "notificationKey": {
+    "key": "StatusEffect_Fragile_NotificationText",
+    "english": "Fragile!",
+    "french": "<nobr>Fragilité !</nobr>",
+    "german": "Fragil!",
+    "russian": "Хрупкость!",
+    "portuguese": "Frágil!",
+    "chinese": "不堪一击！",
+    "spanish": "¡Fragilidad!",
+    "chinese_traditional": "脆弱！",
+    "korean": "취약!",
+    "japanese": "脆弱！"
+  },
   "statusEffectStateName": "StatusEffectFragileState",
   "displayCategory": "persistent",
   "triggerStage": "on_pre_attacked_fragile",
@@ -8,5 +73,13 @@
   "showNotificationsOnRemoval": false,
   "showOnPyreHeart": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_Fragile_Applied",
+    "spawnLocation": "character_center"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_Fragile_Persistent",
+    "spawnLocation": "character_center"
+  }
 }

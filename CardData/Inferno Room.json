@@ -47,6 +47,7 @@
   "cardType": "room",
   "rarity": "rare",
   "pools": [
+    "FreeRealEstatePool",
     "RoomAndEquipmentDraftPool",
     "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
     "RoomAndEquipmentMerchant_RoomPool",
@@ -103,11 +104,18 @@
                 "paramInt": 50
               }
             ],
-            "disallowedInDeploymentPhase": true
+            "disallowedInDeploymentPhase": true,
+            "triggeredVFX": {
+              "vfxPrefabLeft": "FX_InfernoRoomProc",
+              "spawnLocation": "room_center"
+            }
           }
         ],
         "hideUpgradeIconOnCard": true,
-        "showUpgradeDescriptionOnCards": true
+        "showUpgradeDescriptionOnCards": true,
+        "persistentVFX": {
+          "vfxPrefabLeft": "FX_InfernoRoomPersistent"
+        }
       }
     }
   ],

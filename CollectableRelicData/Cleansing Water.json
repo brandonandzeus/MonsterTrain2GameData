@@ -44,6 +44,9 @@
     }
   ],
   "rarity": "uncommon",
+  "pools": [
+    "MegaRelicPool"
+  ],
   "effects": [
     {
       "relicEffectClassName": "RelicEffectChanceAddEffectAfterSpawn",
@@ -51,7 +54,11 @@
         {
           "effectStateName": "CardEffectRemoveAllStatusEffects",
           "targetMode": "self",
-          "targetTeamType": "heroes"
+          "targetTeamType": "heroes",
+          "appliedVFX": {
+            "vfxPrefabLeft": "FX_Cleanse_PS",
+            "spawnLocation": "character_center"
+          }
         }
       ],
       "additionalTooltips": [

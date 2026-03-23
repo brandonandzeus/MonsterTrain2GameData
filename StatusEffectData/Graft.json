@@ -1,5 +1,44 @@
 {
   "statusId": "unit_grafted_equipment",
+  "nameKey": {
+    "key": "StatusEffect_UnitGraftedEquipment_CardText",
+    "english": "Graft",
+    "french": "Greffe",
+    "german": "Transplantieren",
+    "russian": "Трансплантат",
+    "portuguese": "Enxerto",
+    "chinese": "嫁接",
+    "spanish": "Injerto",
+    "chinese_traditional": "嫁接",
+    "korean": "접목",
+    "japanese": "移植"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_UnitGraftedEquipment_CardTooltipText",
+    "english": "Unit has equipment grafted to their body. When they die, the graft is severed for the rest of combat and the equipment goes into your hand.",
+    "french": "L'unité a un équipement greffé sur son corps. Lorsqu'elle meurt, le greffon est retiré et l'équipement passe dans votre main.",
+    "german": "Die Einheit hat Ausrüstung transplantiert. Wenn sie stirbt, wird das Transplantat für den Rest des Kampfes abgetrennt und die Ausrüstung landet auf deiner Hand.",
+    "russian": "У бойца есть снаряжение, вживленное в его тело. Когда он умирает, то теряет трансплантат до конца боя, а снаряжение переходит в вашу руку.",
+    "portuguese": "A unidade tem equipamentos enxertados no corpo. Quando ela morrer, o enxerto será removido pelo resto do combate e o equipamento irá para sua mão.",
+    "chinese": "该单位的身上嫁接了装备当该单位死亡时，嫁接的装备会被切除，并加入你的手牌中。",
+    "spanish": "La unidad tiene equipo injertado en su cuerpo. Cuando muera, el injerto quedará seccionado durante el resto del combate y el equipo pasará a tu mano.",
+    "chinese_traditional": "單位身上嫁接了裝備。當單位死亡時，嫁接效果在本場戰鬥剩餘時間內被切斷，且裝備進入你的手牌。",
+    "korean": "대상 유닛에 장비를 이식합니다. 유닛이 사망하면 접목에 사용한 장비는 분리되어 패로 돌아갑니다.",
+    "japanese": "このユニットは装備品が身体に移植されている。死亡すると移植されたものは切り離され、戦闘終了後に手札に配置される。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_UnitGraftedEquipment_CharacterTooltipText",
+    "english": "Unit has equipment grafted to their body. When they die, the graft is severed for the rest of combat and the equipment goes into your hand.",
+    "french": "L'unité a un équipement greffé sur son corps. Lorsqu'elle meurt, le greffon est retiré et l'équipement passe dans votre main.",
+    "german": "Die Einheit hat Ausrüstung transplantiert. Wenn sie stirbt, wird das Transplantat für den Rest des Kampfes abgetrennt und die Ausrüstung landet auf deiner Hand.",
+    "russian": "У бойца есть снаряжение, вживленное в его тело. Когда он умирает, то теряет трансплантат до конца боя, а снаряжение переходит в вашу руку.",
+    "portuguese": "A unidade tem equipamentos enxertados no corpo. Quando ela morrer, o enxerto será removido pelo resto do combate e o equipamento irá para sua mão.",
+    "chinese": "该单位的身上嫁接了装备当该单位死亡时，嫁接的装备会被切除，并加入你的手牌中。",
+    "spanish": "La unidad tiene equipo injertado en su cuerpo. Cuando muera, el injerto quedará seccionado durante el resto del combate y el equipo pasará a tu mano.",
+    "chinese_traditional": "單位身上嫁接了裝備。當單位死亡時，嫁接效果在本場戰鬥剩餘時間內被切斷，且裝備進入你的手牌。",
+    "korean": "대상 유닛에 장비를 이식합니다. 유닛이 사망하면 접목에 사용한 장비는 분리되어 패로 돌아갑니다.",
+    "japanese": "このユニットは装備品が身体に移植されている。死亡すると移植されたものは切り離され、戦闘終了後に手札に配置される。"
+  },
   "statusEffectStateName": "StatusEffectUnitGraftedEquipmentState",
   "displayCategory": "persistent",
   "triggerStage": "none",
@@ -7,5 +46,9 @@
   "scalesInEndless": false,
   "showNotificationsOnRemoval": false,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_RageApplied_PS",
+    "spawnLocation": "character_center"
+  }
 }

@@ -1,5 +1,57 @@
 {
   "statusId": "scorch",
+  "nameKey": {
+    "key": "StatusEffect_Scorch_CardText",
+    "english": "Emberdrain",
+    "french": "Mortebraises",
+    "german": "Glutentzug",
+    "russian": "Поглощение угля",
+    "portuguese": "Flamejar",
+    "chinese": "余烬流失",
+    "spanish": "Drenaje de ascuas",
+    "chinese_traditional": "餘燼流失",
+    "korean": "잔불 누수",
+    "japanese": "エンバー吸収"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Scorch_Stack_CardText",
+    "english": "<nobr>Emberdrain {0}</nobr>",
+    "french": "<nobr>Mortebraises {0}</nobr>",
+    "german": "<nobr>{0} Glutentzug</nobr>",
+    "russian": "<nobr>Поглощение угля {0}</nobr>",
+    "portuguese": "<nobr>Flamejar {0}</nobr>",
+    "chinese": "<nobr>余烬流失 {0}</nobr>",
+    "spanish": "<nobr>Drenaje de ascuas {0}</nobr>",
+    "chinese_traditional": "<nobr>餘燼流失 {0}</nobr>",
+    "korean": "<nobr>잔불 누수 {0}</nobr>",
+    "japanese": "<nobr>エンバー吸収{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Scorch_CardTooltipText",
+    "english": "At the start of turn, you lose 1[ember] for every stack of [emberdrain].<br>Decreases every turn.",
+    "french": "Au début du tour, vous perdez 1[ember] par cumul de <b>Mortebraises</b>.<br>Diminue à chaque tour.",
+    "german": "Du verlierst zu Beginn des Zuges 1[ember] für jeden Stapel <b>Glutentzug</b>.<br>Wird jeden Zug reduziert.",
+    "russian": "Вы теряете по 1[ember] в начале хода за каждый слой <b>Поглощения угля</b><br>.Уменьшается каждый ход.",
+    "portuguese": "No começo do turno, perca 1[ember] para cada carga de <b>Flamejar</b>.<br>Diminui a cada turno.",
+    "chinese": "每有一层<b>余烬流失</b>，回合开始时都会失去 1[ember]。<br>每回合不断减少。",
+    "spanish": "Al inicio del turno pierdes 1[ember] por cada acumulación de [emberdrain].<br>Disminuye en cada turno.",
+    "chinese_traditional": "在回合開始時，每層[emberdrain]使你失去1[ember]。<br>每回合減少。",
+    "korean": "턴 시작 시, [emberdrain] 스택당 1[ember]을 잃습니다.<br>매 턴마다 감소합니다.",
+    "japanese": "ターン開始時、[emberdrain]のスタック1につき1[ember]を失う。<br>毎ターン減少する。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Scorch_CharacterTooltipText",
+    "english": "You lose [codeint0][ember] at the start of the next turn.<br>Decreases every turn.",
+    "french": "Vous perdrez [codeint0][ember] au début du prochain tour.<br>Diminue à chaque tour.",
+    "german": "Du verlierst zu Beginn des nächsten Zuges [codeint0][ember].<br>Wird jeden Zug reduziert.",
+    "russian": "В начале следующего хода вы теряете [codeint0][ember].<br>Уменьшается каждый ход.",
+    "portuguese": "Você perde [codeint0][ember] no início do próximo turno.<br>Diminui a cada turno.",
+    "chinese": "下回合开始时，你失去 [codeint0][ember]。<br>每回合不断减少。",
+    "spanish": "Pierdes [codeint0][ember] al inicio del próximo turno.<br>Disminuye en cada turno.",
+    "chinese_traditional": "你在下回合開始時失去[codeint0][ember]。<br>每回合減少。",
+    "korean": "다음 턴 시작 시, [codeint0][ember]을 잃습니다.<br>매 턴마다 감소합니다.",
+    "japanese": "次のターン開始時に[codeint0][ember]を失う。<br>毎ターン減少する。"
+  },
   "statusEffectStateName": "StatusEffectScorchState",
   "appliedSFXName": "Status_Emberdrain",
   "displayCategory": "negative",
@@ -9,5 +61,9 @@
   "scalesInEndless": false,
   "excludeMonsterPropagation": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_Emberdrain_New",
+    "spawnLocation": "character_center"
+  }
 }

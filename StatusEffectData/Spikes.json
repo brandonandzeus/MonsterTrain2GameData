@@ -1,11 +1,79 @@
 {
   "statusId": "spikes",
+  "nameKey": {
+    "key": "StatusEffect_Spikes_CardText",
+    "english": "Spikes",
+    "french": "Épines",
+    "german": "Dornen",
+    "russian": "Шипы",
+    "portuguese": "Espinhos",
+    "chinese": "尖刺",
+    "spanish": "Espinas",
+    "chinese_traditional": "尖刺",
+    "korean": "가시",
+    "japanese": "スパイク"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Spikes_Stack_CardText",
+    "english": "<nobr>Spikes {0}</nobr>",
+    "french": "<nobr>Épines {0}</nobr>",
+    "german": "<nobr>{0} Dornen</nobr>",
+    "russian": "<nobr>Шипы {0}</nobr>",
+    "portuguese": "<nobr>Espinhos {0}</nobr>",
+    "chinese": "<nobr>尖刺 {0}</nobr>",
+    "spanish": "<nobr>Espinas {0}</nobr>",
+    "chinese_traditional": "<nobr>尖刺 {0}</nobr>",
+    "korean": "<nobr>가시 {0}</nobr>",
+    "japanese": "<nobr>スパイク{0}</nobr>"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Spikes_CardTooltipText",
+    "english": "When a unit with [spikes] is attacked, the attacker takes [codeint0] damage per stack.",
+    "french": "Lorsqu'une unité avec [spikes] est attaquée, l'attaquant subit <nobr>[codeint0] DGT</nobr> par cumul.",
+    "german": "Wenn eine Einheit mit [spikes] angegriffen wird, erleidet der Angreifer [codeint0] Schaden pro Stapel.",
+    "russian": "Боец, имеющий [spikes], наносит напавшему на него противнику по [codeint0] урона за слой.",
+    "portuguese": "Quando uma unidade com [spikes] é atacada, o atacante recebe [codeint0] de dano por carga.",
+    "chinese": "当拥有[spikes]的单位受到攻击时，每有一层尖刺，都会对攻击者造成 [codeint0] 点伤害。",
+    "spanish": "Cuando una unidad con [spikes] reciba un ataque, el atacante recibirá [codeint0] de daño por acumulación.",
+    "chinese_traditional": "當帶有[spikes]的單位被攻擊時，每層使攻擊者受到[codeint0]點傷害。",
+    "korean": "[spikes] 효과를 지닌 유닛이 공격을 받으면, 공격자는 스택당 [codeint0]의 피해를 입습니다.",
+    "japanese": "[spikes]のあるユニットが攻撃されると、攻撃者がスタック1につき[codeint0]のダメージを受ける。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Spikes_CharacterTooltipText",
+    "english": "Deal [codeint0] damage to any unit that attacks this one.",
+    "french": "Inflige <nobr>[codeint0] DGT</nobr> à toute unité attaquant celle-ci.",
+    "german": "Fügt jeder Einheit, die angreift, [codeint0] Schaden zu.",
+    "russian": "Наносит [codeint0] урона тому, кто нападет на этого бойца.",
+    "portuguese": "Causa [codeint0] de dano a qualquer unidade que atacar essa.",
+    "chinese": "受到攻击时，对攻击者造成 [codeint0] 点伤害。",
+    "spanish": "Inflige [codeint0] de daño a cualquier unidad que ataque a esta.",
+    "chinese_traditional": "對任何攻擊這個單位的單位造成[codeint0]點傷害。",
+    "korean": "해당 효과를 보유한 유닛을 공격하는 유닛은 [codeint0]의 피해를 입습니다.",
+    "japanese": "このユニットを攻撃したユニットに[codeint0]のダメージを与える。"
+  },
   "statusEffectStateName": "StatusEffectSpikesState",
+  "affectedVFX": {
+    "vfxPrefabLeft": "FX_SpikeDamaged_PS",
+    "spawnLocation": "character_center"
+  },
   "appliedSFXName": "Status_Spikes",
   "displayCategory": "positive",
   "triggerStage": "on_attacked",
   "isPropagatable": true,
   "excludeHeroPropagation": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_SpikesApplied_PS",
+    "vfxPrefabRight": "FX_SpikesApplied_FacingLeft_PS",
+    "spawnLocation": "character_bottom",
+    "facing": "forward"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_SpikePersistant_PS",
+    "vfxPrefabRight": "FX_SpikePersistant_FacingLeft_PS",
+    "spawnLocation": "bone_status_effect_slot2",
+    "facing": "forward"
+  }
 }

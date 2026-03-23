@@ -1,5 +1,57 @@
 {
   "statusId": "pyregel",
+  "nameKey": {
+    "key": "StatusEffect_Pyregel_CardText",
+    "english": "Pyregel",
+    "french": "Pyrogel",
+    "german": "Höllenglut-Gel",
+    "russian": "Пеклогель",
+    "portuguese": "Gel Pírico",
+    "chinese": "薪火熔胶",
+    "spanish": "Pirogel",
+    "chinese_traditional": "火膠",
+    "korean": "화염 점액",
+    "japanese": "炉油"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Pyregel_Stack_CardText",
+    "english": "Pyregel {0}",
+    "french": "Pyrogel {0}",
+    "german": "Höllenglut-Gel {0}",
+    "russian": "Пеклогель {0}",
+    "portuguese": "Gel Pírico {0}",
+    "chinese": "薪火熔胶 {0}",
+    "spanish": "Pirogel {0}",
+    "chinese_traditional": "火膠 {0}",
+    "korean": "화염 점액 {0}",
+    "japanese": "炉油{0}"
+  },
+  "cardTooltipKey": {
+    "key": "StatusEffect_Pyregel_CardTooltipText",
+    "english": "+[codeint0] incoming damage per stack.",
+    "french": "<nobr>+[codeint0] DGT</nobr> subis par cumul.",
+    "german": "+[codeint0] erlittener Schaden pro Stapel.",
+    "russian": "+[codeint0] урона за слой.",
+    "portuguese": "+[codeint0] dano recebido por carga.",
+    "chinese": "每层薪火熔胶使受到的伤害 +[codeint0]。",
+    "spanish": "+[codeint0] de daño entrante por acumulación.",
+    "chinese_traditional": "每層+[codeint0]受到的傷害。",
+    "korean": "스택당 받는 피해가 +[codeint0] 증가합니다.",
+    "japanese": "1スタックにつき被ダメージ+[codeint0]。"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Pyregel_CharacterTooltipText",
+    "english": "+[codeint0] incoming damage (+[codeint1] per stack).",
+    "french": "<nobr>+[codeint0] DGT</nobr> subis (+[codeint1] par cumul).",
+    "german": "+[codeint0] erlittener Schaden pro Stapel (+[codeint1] pro Stapel).",
+    "russian": "+[codeint0] урона (+[codeint1] за слой).",
+    "portuguese": "+[codeint0] dano recebido (+[codeint1] por carga).",
+    "chinese": "使受到的伤害 +[codeint0]（每层 +[codeint1]）。",
+    "spanish": "+[codeint0] de daño entrante (+[codeint1] por acumulación).",
+    "chinese_traditional": "每層+[codeint0]受到的傷害（每層+[codeint1]）。",
+    "korean": "받는 피해가 +[codeint0](스택당 +[codeint1]) 증가합니다.",
+    "japanese": "被ダメージ+[codeint0]（1スタックにつき+[codeint1]）。"
+  },
   "statusEffectStateName": "StatusEffectPyregelState",
   "appliedSFXName": "Status_Pyregel_Applied",
   "displayCategory": "negative",
@@ -7,5 +59,17 @@
   "isPropagatable": true,
   "excludeMonsterPropagation": true,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "addedVFX": {
+    "vfxPrefabLeft": "FX_PyregelStart_PS",
+    "spawnLocation": "character_side_back_bottom"
+  },
+  "triggeredVFX": {
+    "vfxPrefabLeft": "FX_PyregelStart_PS",
+    "spawnLocation": "character_side_back_bottom"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_Pyregel_PS",
+    "spawnLocation": "character_side_back_bottom"
+  }
 }

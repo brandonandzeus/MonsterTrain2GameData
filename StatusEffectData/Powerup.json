@@ -1,9 +1,56 @@
 {
   "statusId": "powerup",
+  "nameKey": {
+    "key": "StatusEffect_Powerup_CardText",
+    "english": "[powerup]",
+    "french": "[powerup]",
+    "german": "[powerup]",
+    "russian": "[powerup]",
+    "portuguese": "[powerup]",
+    "chinese": "[powerup]",
+    "spanish": "[powerup]",
+    "chinese_traditional": "[powerup]",
+    "korean": "[powerup]",
+    "japanese": "[powerup]"
+  },
+  "stackableNameKey": {
+    "key": "StatusEffect_Powerup_Stack_CardText",
+    "english": "<nobr>[powerup] {0}</nobr>",
+    "french": "<nobr>[powerup] {0}</nobr>",
+    "german": "<nobr>[powerup] {0}</nobr>",
+    "russian": "<nobr>[powerup] х{0}</nobr>",
+    "portuguese": "<nobr>[powerup] {0}</nobr>",
+    "chinese": "<nobr>[powerup] {0}</nobr>",
+    "spanish": "<nobr>[powerup] {0}</nobr>",
+    "chinese_traditional": "<nobr>[powerup]{0}</nobr>",
+    "korean": "<nobr>[powerup] {0}</nobr>",
+    "japanese": "<nobr>[powerup] {0}</nobr>"
+  },
+  "characterTooltipKey": {
+    "key": "StatusEffect_Powerup_CharacterTooltipText",
+    "english": "Adjacent allies gain a bonus. If only one ally is adjacent, they gain it twice.",
+    "french": "Les alliés adjacents gagnent un bonus. S'il n'y a qu'un seul allié adjacent, il le gagne deux fois.",
+    "german": "Benachbarte Verbündete erhalten einen Bonus. Gibt es nur einen benachbarten Verbündeten, erhält er den Bonus doppelt.",
+    "russian": "Соседним союзникам дается бонус. Если сосед только один, то он получает двойной эффект.",
+    "portuguese": "Aliados adjacentes recebem um bônus. Se apenas um aliado estiver adjacente, ele ganhará duas vezes.",
+    "chinese": "相邻盟友获得加成。若只有一个相邻盟友，则该盟友获得两次。",
+    "spanish": "Los aliados adyacentes añaden una bonificación. Si solo hay un aliado adyacente, la añade dos veces.",
+    "chinese_traditional": "相鄰盟友獲得加成。如果只有一個相鄰盟友，則獲得兩次。",
+    "korean": "인접한 아군들이 보너스를 획득합니다. 인접한 아군이 한 명뿐이라면, 해당 효과를 두 번 획득합니다.",
+    "japanese": "隣接する味方がボーナスを得る。1体の味方のみが隣接している場合は、その味方が2回得る。"
+  },
   "statusEffectStateName": "StatusEffectPowerupState",
   "displayCategory": "persistent",
   "triggerStage": "none",
   "scalesInEndless": false,
   "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "allowSecondaryTooltipPlacement": true,
+  "triggeredVFX": {
+    "vfxPrefabLeft": "FX_ReapTriggered_PS",
+    "spawnLocation": "character_center"
+  },
+  "persistentVFX": {
+    "vfxPrefabLeft": "FX_ReapPersistent_PS",
+    "spawnLocation": "character_center"
+  }
 }
