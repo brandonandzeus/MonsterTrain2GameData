@@ -63,7 +63,6 @@
   "effects": [
     {
       "effectStateName": "CardEffectAttachTrainRoomAttachment",
-      "targetMode": "room",
       "targetTeamType": "both",
       "paramCardUpgradeData": {
         "id": "AmplificationChamber",
@@ -73,6 +72,12 @@
         "roomModifierUpgrades": [
           {
             "roomStateModifierClassName": "RoomStateStatusEffectStackModifier",
+            "paramStatusEffects": [
+              {
+                "statusId": "pyregel",
+                "count": 3
+              }
+            ],
             "paramInt": 3
           }
         ],
