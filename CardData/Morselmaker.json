@@ -1,270 +1,287 @@
 {
-  "id": "Morselmaker",
-  "guid": "7ff3a3e0-655c-4492-a015-a96441728882",
-  "name": "Morselmaker",
-  "cost": 2,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "LevelableUnits",
-    "UnitsAllBanner",
-    "UnitsUmbraBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_MorselMaker.prefab",
-    "m_AssetGUID": "c35dd2bf3bb0ab848b172d46d9c8e7d0"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterGorger",
-        "guid": "ccaac5e7-75ff-4227-8764-0457fcb61676",
-        "nameKey": {
-          "key": "CharacterData_nameKey-e1de3643e5433e91-d77a8ade152623a4ebb75fa1579408c4-v2",
-          "english": "Morselmaker",
-          "french": "Créateur de sous-bistres",
-          "german": "Nuggetformer",
-          "russian": "Творец заморышей",
-          "portuguese": "Criador de Lanchos",
-          "chinese": "影裔制造者",
-          "spanish": "Creapinchos",
-          "chinese_traditional": "莫塞爾製造者",
-          "korean": "그림자 생성기",
-          "japanese": "モーゼルメイカー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-6c8e4662ff873893-d77a8ade152623a4ebb75fa1579408c4-v2",
-            "english": "Neither Umbra nor Antumbra, these in-between shades roam the mines as independent troublemakers, often splitting their own Morsels to undo the work done in the Crucible. I’ve been unable to decipher any sort of motive other than spite.",
-            "french": "Ces ombres éthérées, ni umbras ni antumbras, rôdent et sèment le trouble dans les mines, allant même jusqu'à fractionner leur propre corps en sous-bistres pour gêner les excavations du creuset. Je n'ai trouvé aucun motif à leur comportement, excepté la malveillance pure et simple.",
-            "german": "Diese Gestalten sind weder Umbra noch Antumbra und durchstreifen die Minen als unabhängige Unruhestifter. Nicht selten weisen sie ihre eigenen Nuggets an, die Arbeit im Schmelztiegel rückgängig zu machen. Ich konnte außer Hass kein anderes Motiv ausmachen.",
-            "russian": "Чем дальше в глубины Ада уходят шахты Горнила, тем в большей безопасности чувствуют себя заморыши. В самых дальних уголках Горнила заморыши объединились, чтобы создать единые сущности и увеличить тем самым свои общие шансы на выживание перед угрозой Завесы.",
-            "portuguese": "Nem Sombrios e nem Antumbra, estas sombras intermediárias perambulam pelas minas criando confusão, muitas vezes dividindo seus próprios Lanchos para desfazer o trabalho feito no Crisol. Não consegui decifrar o motivo disso, mas acho que é puro rancor.",
-            "chinese": "这种游荡于矿洞中的生物既不是影主，也不是影者，而是介于两者之间。它们擅长制造麻烦，经常会复制出自己的影裔，把熔炉之地已经做好的工作再次搞得一团乱。这种行为除了解释为恶意之外，我无法找到其他任何动机。",
-            "spanish": "Estas sombras, ni Umbra ni Antumbra, vagan por las minas como alborotadores independientes, creando con frecuencia sus propios pinchos para deshacer el trabajo realizado en el Crisol. He sido incapaz de dilucidar una motivación más allá del rencor.",
-            "chinese_traditional": "既非暗影族也非影者，這些中間地帶的陰影在礦場中四處遊蕩、製造麻煩，經常分裂自己的莫塞爾來破壞地獄熔爐中完成的工作。除了惡意之外，我無法理解他們背後的任何動機。",
-            "korean": "어스름 일족이나 외부 어스름 일족도 아닌, 중간 색조를 가진 이들은 광산을 돌아다니며 작은 그림자를 절단해 종종 '도가니'에서 끝낸 작업을 허사로 만들곤 한다. 이들에게 악의 외에는 어떤 동기도 파악할 수 없었다.",
-            "japanese": "常闇族でもアントアンブラでもない、この中途半端な影は独立したトラブルメーカーとして坑道を歩き回り、しばしばモーゼルを分裂させてクルーシブルでの作業を台無しにする。私は悪意以外の動機を読み取ることはできなかった。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MorselMaker.prefab",
-          "m_AssetGUID": "664e5834022ab1a49aa6e7f638a068fe"
-        },
-        "projectilePrefab": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/MorselMaster/FX_MorselMasterProjectile.prefab",
-            "m_AssetGUID": "1990fcc42adcfb942977f1a0b69bfda8"
-          },
-          "spawnLocation": "character_side_fwd_center"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/MisshapenFiend/FX_MisshapenFiendImact.prefab",
-            "m_AssetGUID": "4ce9cbdd88a93f54ab5e98cbb3f7ead8"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-df5d28ee837a0ecc-d77a8ade152623a4ebb75fa1579408c4-v2",
-              "english": "Summon an <b>Antumbra Morsel</b> and a <b>Magma Morsel</b>.",
-              "french": "Invoque un <b>sous-bistre antumbra</b> et un <b>sous-bistre de magma</b>.",
-              "german": "Rufe ein <b>Antumbra-Nugget</b> und ein <b>Magma-Nugget</b>.",
-              "russian": "Призывает <b>Сумрачного заморыша</b> и <b>Лавового заморыша</b>.",
-              "portuguese": "Invoca um <b>Lancho Antumbra</b> e um <b>Lancho Magmático</b>.",
-              "chinese": "召唤一个<b>影者影裔</b>和<b>熔岩影裔</b>。",
-              "spanish": "Invoca un <b>Pincho de Antumbra</b> y un <b>Pincho de magma</b>.",
-              "chinese_traditional": "召喚一個<b>影者莫塞爾</b>和一個<b>岩漿莫塞爾</b>。",
-              "korean": "<b>외부 어스름 그림자</b>와 <b>마그마 그림자</b>를 소환합니다.",
-              "japanese": "<b>アントアンブラ・モーゼル</b>と<b>マグマ・モーゼル</b>を召喚する。"
-            },
-            "trigger": "post_combat",
-            "effects": [
-              {
-                "effectStateName": "CardEffectSpawnMonster",
-                "paramCharacterData": {
-                  "id": "MorselShadowMorsel",
-                  "guid": "fd7e0f91-c2ff-4f6d-a548-2e387c168577",
-                  "nameKey": {
-                    "key": "CharacterData_nameKey-5a4f54cc4e0739ad-91bff760f73827642b73e6aacef9c4c8-v2",
-                    "english": "Antumbra Morsel",
-                    "french": "Sous-bistre antumbra",
-                    "german": "Antumbra-Nugget",
-                    "russian": "Сумрачный заморыш",
-                    "portuguese": "Lancho Antumbra",
-                    "chinese": "影者影裔",
-                    "spanish": "Pincho de Antumbra",
-                    "chinese_traditional": "反暗影莫塞爾",
-                    "korean": "외부 어스름 그림자",
-                    "japanese": "アントアンブラ・モーゼル"
-                  },
-                  "characterLoreTooltipKeys": [
-                    {
-                      "key": "CharacterData_data-892dd5a945dcdf3e-91bff760f73827642b73e6aacef9c4c8-v2",
-                      "english": "These precursors of the souls of Hell, called Antumbra, are fragments of the Umbra Shroud. Their friendly personalities make them my constant companions anytime I travel to the Crucible.",
-                      "french": "Précurseurs des âmes de l'enfer, les Antumbras sont des fragments du Suaire umbra. En raison de leur personnalité amicale, je fais d'eux mes compagnons de choix chaque fois que je me rends au creuset.",
-                      "german": "Diese Vorläufer der Seelen der Hölle werden Antumbra genannt. Sie sind Fragmente der Umbra-Mantelwesen. Weil sie so freundlich sind, habe ich sie gerne auf all meinen Reisen zum Schmelztiegel dabei.",
-                      "russian": "Эти малые души Ада, называемые Сумрачными, входят в состав Завесы Мрака. Они дружелюбны и составляют мне компанию всякий раз, когда я посещаю Горнило.",
-                      "portuguese": "Esses precursores das almas do Inferno, chamados de Antumbra, são fragmentos do Sombrio Velado. Suas personalidades simpáticas fazem deles minha companhia constante quando viajo para o Crisol.",
-                      "chinese": "这些地狱灵魂的前身被称为影者，是影主氏族雾影的碎片。它们的性格友善，每当我去熔炉之地的时候，它们都会成为我忠诚的伙伴。",
-                      "spanish": "Estos precursores de las almas del Infierno, conocidos como Antumbra, son fragmentos del Velo de Umbra. Su personalidad amistosa los convierte en compañeros constantes durante mis viajes por el Crisol.",
-                      "chinese_traditional": "這些地獄靈魂的前驅被稱為影者，是黑暗幽影的碎片。他們友好的性格使他們成為我在地獄熔爐旅行時的常伴。",
-                      "korean": "지옥 영혼의 선구자라 불리는 외부 어스름 일족은 어스름 장막의 파편에 가까운 존재다. 친밀한 성격을 지닌 이들 덕분에, 도가니를 찾아갈 때마다 늘 함께 이동한다.",
-                      "japanese": "アントアンブラと呼ばれる地獄の魂の先駆者たちは、アンブラ・シュラウドの破片だ。彼らは友好的な性格なので、私がクルーシブルに行くときはいつも一緒に行動することにしている。"
-                    }
-                  ],
-                  "characterPrefabVariantRef": {
-                    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShadowMorsel.prefab",
-                    "m_AssetGUID": "9a29746b88b448a44a4c34a8d947aefb"
-                  },
-                  "impactVFX": {
-                    "vfxPrefabRefLeft": {
-                      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-                      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-                    },
-                    "spawnLocation": "character_center"
-                  },
-                  "triggers": [
-                    {
-                      "descriptionKey": {
-                        "key": "CharacterData_descriptionKey-da87b665853af570-91bff760f73827642b73e6aacef9c4c8-v2",
-                        "english": "Eater gains +[effect0.upgrade.bonushp][health].",
-                        "french": "Le mangeur gagne +[effect0.upgrade.bonushp][health].",
-                        "german": "Der Verschlinger erhält +[effect0.upgrade.bonushp][health].",
-                        "russian": "Поглотитель получает +[effect0.upgrade.bonushp][health].",
-                        "portuguese": "O Devorador recebe +[effect0.upgrade.bonushp][health].",
-                        "chinese": "吞食者获得 +[effect0.upgrade.bonushp][health]。",
-                        "spanish": "Su devorador añade +[effect0.upgrade.bonushp][health].",
-                        "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonushp][health]。",
-                        "korean": "포식자가 +[effect0.upgrade.bonushp][health]을 획득합니다.",
-                        "japanese": "捕食者が+[effect0.upgrade.bonushp][health]を得る。"
-                      },
-                      "trigger": "on_eaten",
-                      "effects": [
-                        {
-                          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                          "targetMode": "last_feeder_character",
-                          "targetTeamType": "both",
-                          "paramCardUpgradeData": {
-                            "id": "ShadowMorselTrigger",
-                            "guid": "477e608b-5764-4619-acb3-aaad2eee5be1",
-                            "bonusHP": 9
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "size": 1,
-                  "health": 9,
-                  "attackDamage": 0,
-                  "subtypeKeys": [
-                    "SubtypesData_Snack"
-                  ],
-                  "characterChatterData": "UmbraMorselChatterData"
-                },
-                "paramAdditionalCharacterData": {
-                  "id": "MorselMoltenMorsel",
-                  "guid": "72a92249-1269-4089-8402-f9721a80adb4",
-                  "nameKey": {
-                    "key": "CharacterData_nameKey-3a3626fba318bd69-851b86a59ea80b64f8226ccd6bbf915a-v2",
-                    "english": "Magma Morsel",
-                    "french": "Sous-bistre de magma",
-                    "german": "Magma-Nugget",
-                    "russian": "Лавовый заморыш",
-                    "portuguese": "Lancho Magmático",
-                    "chinese": "熔岩影裔",
-                    "spanish": "Pincho de magma",
-                    "chinese_traditional": "岩漿莫塞爾",
-                    "korean": "마그마 그림자",
-                    "japanese": "マグマ・モーゼル"
-                  },
-                  "characterLoreTooltipKeys": [
-                    {
-                      "key": "CharacterData_data-0b878e2dc749ca75-851b86a59ea80b64f8226ccd6bbf915a-v2",
-                      "english": "Originally heated by the nearby Pyre, molten rock can be found throughout the Crucible. Morsels excavate it like anything else, but there was no use for it until I showed them how to use the residual energy to strengthen themselves.",
-                      "french": "À l'origine chauffée par le Brasier avoisinant, la roche fondue peut être trouvée à travers tout le creuset. Les sous-bistres la minent comme tout le reste, mais ils n'en voyaient pas l'utilité jusqu'à ce que je leur montre comment utiliser son énergie résiduelle pour se renforcer.",
-                      "german": "Im ganzen Schmelztiegel gibt es durch die Hitze der nahen Höllenglut entstandene Lavamassen. Die Nuggets bauen auch diese ab, aber sie hatten keine Verwendung dafür, bis ich ihnen zeigte, wie sie die darin enthaltene Restenergie zu ihrer eigenen Stärkung nutzen können.",
-                      "russian": "В Горниле можно найти оплавленные камни, некогда нагретые Пеклом. Заморыши не видели в них ничего особенного, пока я не показал им, как использовать остаточную энергию, чтобы стать сильнее.",
-                      "portuguese": "Originalmente aquecida pela Pira próxima, rochas vulcânicas podem ser encontradas por todo o Crisol. Os Lanchos as escavam como se nada fossem, mas não havia necessidade para tal, até que mostrei como usar a energia residual para ficarem mais fortes.",
-                      "chinese": "熔融的岩石在熔炉之地随处可见，最初是被附近的薪火烧至滚烫的。与其他的矿物相似，影裔也同样会开采这种岩石，但它们并不知道该如何使用。直到我亲自向它们展示，该如何使用熔岩残存的能量来武装自己。",
-                      "spanish": "A lo largo del Crisol, es posible encontrar roca fundida por el calor de la cercana Pira. Los pinchos la extraen como todo lo demás, a pesar de que les era inútil hasta que les enseñé a utilizar su energía residual para reforzar sus cuerpos.",
-                      "chinese_traditional": "最初由附近的火堆加熱，熔岩遍佈於地獄熔爐之中。莫塞爾像挖掘其他東西一樣開採它，但直到我向他們展示如何利用殘餘能量來強化自己之前，它都毫無用處。",
-                      "korean": "초기에는 화로 근처에서만 발견할 수 있었던 이 녹은 암석은 지금 도가니 전역에서 볼 수 있다. 작은 그림자들은 다른 보석과 마찬가지로 이를 채굴했지만, 암석에 남아 있는 에너지를 이용해 자신들의 힘을 강화하는 방법을 내가 가르쳐주기 전까지는 쓸모없는 돌로 여겼다.",
-                      "japanese": "付近の炉により熱され溶けた岩は、クルーシブルのあらゆる場所で見ることができる。モーゼルは価値も知らずにそれを採掘していたが、活用できるようになったのは残存エネルギーを使って自己強化する方法を教えてやってからだ。"
-                    }
-                  ],
-                  "characterPrefabVariantRef": {
-                    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MoltenMorsel.prefab",
-                    "m_AssetGUID": "96e8b049c64465941b8d29736b4411a9"
-                  },
-                  "impactVFX": {
-                    "vfxPrefabRefLeft": {
-                      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-                      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-                    },
-                    "spawnLocation": "character_center"
-                  },
-                  "triggers": [
-                    {
-                      "descriptionKey": {
-                        "key": "CharacterData_descriptionKey-7edc9add64ecc086-851b86a59ea80b64f8226ccd6bbf915a-v2",
-                        "english": "Eater gains +[effect0.upgrade.bonusdamage][attack].",
-                        "french": "Le mangeur gagne +[effect0.upgrade.bonusdamage][attack].",
-                        "german": "Der Verschlinger erhält +[effect0.upgrade.bonusdamage][attack].",
-                        "russian": "Поглотитель получает +[effect0.upgrade.bonusdamage][attack].",
-                        "portuguese": "O Devorador recebe +[effect0.upgrade.bonusdamage][attack].",
-                        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]。",
-                        "spanish": "Su devorador añade [effect0.upgrade.bonusdamage][attack].",
-                        "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonusdamage][attack]。",
-                        "korean": "포식자가 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
-                        "japanese": "捕食者が+[effect0.upgrade.bonusdamage][attack]を得る。"
-                      },
-                      "trigger": "on_eaten",
-                      "effects": [
-                        {
-                          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                          "targetMode": "last_feeder_character",
-                          "targetTeamType": "both",
-                          "paramCardUpgradeData": {
-                            "id": "MoltenMorselTrigger",
-                            "guid": "12faba37-4edb-4e6a-8e84-d46b7b096852",
-                            "bonusDamage": 9
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "size": 1,
-                  "health": 1,
-                  "attackDamage": 9,
-                  "subtypeKeys": [
-                    "SubtypesData_Snack"
-                  ],
-                  "characterChatterData": "UmbraMorselChatterData"
-                },
-                "paramInt": 1,
-                "paramBool": true
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 15,
-        "attackDamage": 5,
-        "attackTeleportsToDefender": false,
-        "subtypeKeys": [
-          "SubtypesData_Forager",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "UmbraShroudChatterData"
-      }
+      "id": "Morselmaker",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassUmbra",
+      "pools": [
+        "LevelableUnits",
+        "UnitsAllBanner",
+        "UnitsUmbraBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_MorselMaker.prefab",
+        "m_AssetGUID": "c35dd2bf3bb0ab848b172d46d9c8e7d0"
+      },
+      "effects": [
+        "@Morselmaker.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Adam Lee"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Adam Lee"
+  "characters": [
+    {
+      "id": "MorselShadowMorsel",
+      "names": {
+        "key": "CharacterData_nameKey-5a4f54cc4e0739ad-91bff760f73827642b73e6aacef9c4c8-v2",
+        "english": "Antumbra Morsel",
+        "french": "Sous-bistre antumbra",
+        "german": "Antumbra-Nugget",
+        "russian": "Сумрачный заморыш",
+        "portuguese": "Lancho Antumbra",
+        "chinese": "影者影裔",
+        "spanish": "Pincho de Antumbra",
+        "chinese_traditional": "反暗影莫塞爾",
+        "korean": "외부 어스름 그림자",
+        "japanese": "アントアンブラ・モーゼル"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-892dd5a945dcdf3e-91bff760f73827642b73e6aacef9c4c8-v2",
+          "english": "These precursors of the souls of Hell, called Antumbra, are fragments of the Umbra Shroud. Their friendly personalities make them my constant companions anytime I travel to the Crucible.",
+          "french": "Précurseurs des âmes de l'enfer, les Antumbras sont des fragments du Suaire umbra. En raison de leur personnalité amicale, je fais d'eux mes compagnons de choix chaque fois que je me rends au creuset.",
+          "german": "Diese Vorläufer der Seelen der Hölle werden Antumbra genannt. Sie sind Fragmente der Umbra-Mantelwesen. Weil sie so freundlich sind, habe ich sie gerne auf all meinen Reisen zum Schmelztiegel dabei.",
+          "russian": "Эти малые души Ада, называемые Сумрачными, входят в состав Завесы Мрака. Они дружелюбны и составляют мне компанию всякий раз, когда я посещаю Горнило.",
+          "portuguese": "Esses precursores das almas do Inferno, chamados de Antumbra, são fragmentos do Sombrio Velado. Suas personalidades simpáticas fazem deles minha companhia constante quando viajo para o Crisol.",
+          "chinese": "这些地狱灵魂的前身被称为影者，是影主氏族雾影的碎片。它们的性格友善，每当我去熔炉之地的时候，它们都会成为我忠诚的伙伴。",
+          "spanish": "Estos precursores de las almas del Infierno, conocidos como Antumbra, son fragmentos del Velo de Umbra. Su personalidad amistosa los convierte en compañeros constantes durante mis viajes por el Crisol.",
+          "chinese_traditional": "這些地獄靈魂的前驅被稱為影者，是黑暗幽影的碎片。他們友好的性格使他們成為我在地獄熔爐旅行時的常伴。",
+          "korean": "지옥 영혼의 선구자라 불리는 외부 어스름 일족은 어스름 장막의 파편에 가까운 존재다. 친밀한 성격을 지닌 이들 덕분에, 도가니를 찾아갈 때마다 늘 함께 이동한다.",
+          "japanese": "アントアンブラと呼ばれる地獄の魂の先駆者たちは、アンブラ・シュラウドの破片だ。彼らは友好的な性格なので、私がクルーシブルに行くときはいつも一緒に行動することにしている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShadowMorsel.prefab",
+        "m_AssetGUID": "9a29746b88b448a44a4c34a8d947aefb"
+      },
+      "impact_vfx": "@Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 9,
+      "attack_damage": 0,
+      "subtypes": [
+        "SubtypesData_Snack"
+      ],
+      "chatter": "UmbraMorselChatterData"
+    },
+    {
+      "id": "MorselMoltenMorsel",
+      "names": {
+        "key": "CharacterData_nameKey-3a3626fba318bd69-851b86a59ea80b64f8226ccd6bbf915a-v2",
+        "english": "Magma Morsel",
+        "french": "Sous-bistre de magma",
+        "german": "Magma-Nugget",
+        "russian": "Лавовый заморыш",
+        "portuguese": "Lancho Magmático",
+        "chinese": "熔岩影裔",
+        "spanish": "Pincho de magma",
+        "chinese_traditional": "岩漿莫塞爾",
+        "korean": "마그마 그림자",
+        "japanese": "マグマ・モーゼル"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-0b878e2dc749ca75-851b86a59ea80b64f8226ccd6bbf915a-v2",
+          "english": "Originally heated by the nearby Pyre, molten rock can be found throughout the Crucible. Morsels excavate it like anything else, but there was no use for it until I showed them how to use the residual energy to strengthen themselves.",
+          "french": "À l'origine chauffée par le Brasier avoisinant, la roche fondue peut être trouvée à travers tout le creuset. Les sous-bistres la minent comme tout le reste, mais ils n'en voyaient pas l'utilité jusqu'à ce que je leur montre comment utiliser son énergie résiduelle pour se renforcer.",
+          "german": "Im ganzen Schmelztiegel gibt es durch die Hitze der nahen Höllenglut entstandene Lavamassen. Die Nuggets bauen auch diese ab, aber sie hatten keine Verwendung dafür, bis ich ihnen zeigte, wie sie die darin enthaltene Restenergie zu ihrer eigenen Stärkung nutzen können.",
+          "russian": "В Горниле можно найти оплавленные камни, некогда нагретые Пеклом. Заморыши не видели в них ничего особенного, пока я не показал им, как использовать остаточную энергию, чтобы стать сильнее.",
+          "portuguese": "Originalmente aquecida pela Pira próxima, rochas vulcânicas podem ser encontradas por todo o Crisol. Os Lanchos as escavam como se nada fossem, mas não havia necessidade para tal, até que mostrei como usar a energia residual para ficarem mais fortes.",
+          "chinese": "熔融的岩石在熔炉之地随处可见，最初是被附近的薪火烧至滚烫的。与其他的矿物相似，影裔也同样会开采这种岩石，但它们并不知道该如何使用。直到我亲自向它们展示，该如何使用熔岩残存的能量来武装自己。",
+          "spanish": "A lo largo del Crisol, es posible encontrar roca fundida por el calor de la cercana Pira. Los pinchos la extraen como todo lo demás, a pesar de que les era inútil hasta que les enseñé a utilizar su energía residual para reforzar sus cuerpos.",
+          "chinese_traditional": "最初由附近的火堆加熱，熔岩遍佈於地獄熔爐之中。莫塞爾像挖掘其他東西一樣開採它，但直到我向他們展示如何利用殘餘能量來強化自己之前，它都毫無用處。",
+          "korean": "초기에는 화로 근처에서만 발견할 수 있었던 이 녹은 암석은 지금 도가니 전역에서 볼 수 있다. 작은 그림자들은 다른 보석과 마찬가지로 이를 채굴했지만, 암석에 남아 있는 에너지를 이용해 자신들의 힘을 강화하는 방법을 내가 가르쳐주기 전까지는 쓸모없는 돌로 여겼다.",
+          "japanese": "付近の炉により熱され溶けた岩は、クルーシブルのあらゆる場所で見ることができる。モーゼルは価値も知らずにそれを採掘していたが、活用できるようになったのは残存エネルギーを使って自己強化する方法を教えてやってからだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MoltenMorsel.prefab",
+        "m_AssetGUID": "96e8b049c64465941b8d29736b4411a9"
+      },
+      "impact_vfx": "@Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramAdditionalCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 1,
+      "attack_damage": 9,
+      "subtypes": [
+        "SubtypesData_Snack"
+      ],
+      "chatter": "UmbraMorselChatterData"
+    },
+    {
+      "id": "MonsterGorger",
+      "names": {
+        "key": "CharacterData_nameKey-e1de3643e5433e91-d77a8ade152623a4ebb75fa1579408c4-v2",
+        "english": "Morselmaker",
+        "french": "Créateur de sous-bistres",
+        "german": "Nuggetformer",
+        "russian": "Творец заморышей",
+        "portuguese": "Criador de Lanchos",
+        "chinese": "影裔制造者",
+        "spanish": "Creapinchos",
+        "chinese_traditional": "莫塞爾製造者",
+        "korean": "그림자 생성기",
+        "japanese": "モーゼルメイカー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-6c8e4662ff873893-d77a8ade152623a4ebb75fa1579408c4-v2",
+          "english": "Neither Umbra nor Antumbra, these in-between shades roam the mines as independent troublemakers, often splitting their own Morsels to undo the work done in the Crucible. I’ve been unable to decipher any sort of motive other than spite.",
+          "french": "Ces ombres éthérées, ni umbras ni antumbras, rôdent et sèment le trouble dans les mines, allant même jusqu'à fractionner leur propre corps en sous-bistres pour gêner les excavations du creuset. Je n'ai trouvé aucun motif à leur comportement, excepté la malveillance pure et simple.",
+          "german": "Diese Gestalten sind weder Umbra noch Antumbra und durchstreifen die Minen als unabhängige Unruhestifter. Nicht selten weisen sie ihre eigenen Nuggets an, die Arbeit im Schmelztiegel rückgängig zu machen. Ich konnte außer Hass kein anderes Motiv ausmachen.",
+          "russian": "Чем дальше в глубины Ада уходят шахты Горнила, тем в большей безопасности чувствуют себя заморыши. В самых дальних уголках Горнила заморыши объединились, чтобы создать единые сущности и увеличить тем самым свои общие шансы на выживание перед угрозой Завесы.",
+          "portuguese": "Nem Sombrios e nem Antumbra, estas sombras intermediárias perambulam pelas minas criando confusão, muitas vezes dividindo seus próprios Lanchos para desfazer o trabalho feito no Crisol. Não consegui decifrar o motivo disso, mas acho que é puro rancor.",
+          "chinese": "这种游荡于矿洞中的生物既不是影主，也不是影者，而是介于两者之间。它们擅长制造麻烦，经常会复制出自己的影裔，把熔炉之地已经做好的工作再次搞得一团乱。这种行为除了解释为恶意之外，我无法找到其他任何动机。",
+          "spanish": "Estas sombras, ni Umbra ni Antumbra, vagan por las minas como alborotadores independientes, creando con frecuencia sus propios pinchos para deshacer el trabajo realizado en el Crisol. He sido incapaz de dilucidar una motivación más allá del rencor.",
+          "chinese_traditional": "既非暗影族也非影者，這些中間地帶的陰影在礦場中四處遊蕩、製造麻煩，經常分裂自己的莫塞爾來破壞地獄熔爐中完成的工作。除了惡意之外，我無法理解他們背後的任何動機。",
+          "korean": "어스름 일족이나 외부 어스름 일족도 아닌, 중간 색조를 가진 이들은 광산을 돌아다니며 작은 그림자를 절단해 종종 '도가니'에서 끝낸 작업을 허사로 만들곤 한다. 이들에게 악의 외에는 어떤 동기도 파악할 수 없었다.",
+          "japanese": "常闇族でもアントアンブラでもない、この中途半端な影は独立したトラブルメーカーとして坑道を歩き回り、しばしばモーゼルを分裂させてクルーシブルでの作業を台無しにする。私は悪意以外の動機を読み取ることはできなかった。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MorselMaker.prefab",
+        "m_AssetGUID": "664e5834022ab1a49aa6e7f638a068fe"
+      },
+      "projectile_vfx": "@Morselmaker.effects0.paramCharacterData.projectilePrefab",
+      "impact_vfx": "@Morselmaker.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@Morselmaker.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 15,
+      "attack_damage": 5,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Forager",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "UmbraShroudChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-da87b665853af570-91bff760f73827642b73e6aacef9c4c8-v2",
+        "english": "Eater gains +[effect0.upgrade.bonushp][health].",
+        "french": "Le mangeur gagne +[effect0.upgrade.bonushp][health].",
+        "german": "Der Verschlinger erhält +[effect0.upgrade.bonushp][health].",
+        "russian": "Поглотитель получает +[effect0.upgrade.bonushp][health].",
+        "portuguese": "O Devorador recebe +[effect0.upgrade.bonushp][health].",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Su devorador añade +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonushp][health]。",
+        "korean": "포식자가 +[effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "捕食者が+[effect0.upgrade.bonushp][health]を得る。"
+      },
+      "trigger": "on_eaten",
+      "effects": [
+        "@Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramAdditionalCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-7edc9add64ecc086-851b86a59ea80b64f8226ccd6bbf915a-v2",
+        "english": "Eater gains +[effect0.upgrade.bonusdamage][attack].",
+        "french": "Le mangeur gagne +[effect0.upgrade.bonusdamage][attack].",
+        "german": "Der Verschlinger erhält +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Поглотитель получает +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "O Devorador recebe +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Su devorador añade [effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "포식자가 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "捕食者が+[effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "trigger": "on_eaten",
+      "effects": [
+        "@Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramAdditionalCharacterData.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-df5d28ee837a0ecc-d77a8ade152623a4ebb75fa1579408c4-v2",
+        "english": "Summon an <b>Antumbra Morsel</b> and a <b>Magma Morsel</b>.",
+        "french": "Invoque un <b>sous-bistre antumbra</b> et un <b>sous-bistre de magma</b>.",
+        "german": "Rufe ein <b>Antumbra-Nugget</b> und ein <b>Magma-Nugget</b>.",
+        "russian": "Призывает <b>Сумрачного заморыша</b> и <b>Лавового заморыша</b>.",
+        "portuguese": "Invoca um <b>Lancho Antumbra</b> e um <b>Lancho Magmático</b>.",
+        "chinese": "召唤一个<b>影者影裔</b>和<b>熔岩影裔</b>。",
+        "spanish": "Invoca un <b>Pincho de Antumbra</b> y un <b>Pincho de magma</b>.",
+        "chinese_traditional": "召喚一個<b>影者莫塞爾</b>和一個<b>岩漿莫塞爾</b>。",
+        "korean": "<b>외부 어스름 그림자</b>와 <b>마그마 그림자</b>를 소환합니다.",
+        "japanese": "<b>アントアンブラ・モーゼル</b>と<b>マグマ・モーゼル</b>を召喚する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Morselmaker.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "target_team": "both",
+      "param_upgrade": "ShadowMorselTrigger"
+    },
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramAdditionalCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "target_team": "both",
+      "param_upgrade": "MoltenMorselTrigger"
+    },
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MorselShadowMorsel",
+      "param_character_2": "MorselMoltenMorsel",
+      "param_int": 1,
+      "param_bool": true
+    },
+    {
+      "id": "Morselmaker.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterGorger"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.projectilePrefab",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/MorselMaster/FX_MorselMasterProjectile.prefab",
+        "m_AssetGUID": "1990fcc42adcfb942977f1a0b69bfda8"
+      },
+      "spawn_location": "character_side_fwd_center"
+    },
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/MisshapenFiend/FX_MisshapenFiendImact.prefab",
+        "m_AssetGUID": "4ce9cbdd88a93f54ab5e98cbb3f7ead8"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "Morselmaker.effects0.paramCharacterData.triggers0.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

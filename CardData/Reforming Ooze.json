@@ -1,116 +1,129 @@
 {
-  "id": "ReformingOoze",
-  "guid": "357a72e3-935c-4946-9e5a-6449482641c1",
-  "name": "Reforming Ooze",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsLazarusLeagueBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_ReformingOoze.prefab",
-    "m_AssetGUID": "358fe7d47a3788a41a75553fb83ad4d4"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterReformingOoze",
-        "guid": "ca7a7487-366d-45ea-8a80-87f78606cd14",
-        "nameKey": {
-          "key": "CharacterData_nameKey-55929ce6e1984e96-0040ae3d30dea9a49ad7711f970614e3-v2",
-          "english": "Reforming Ooze",
-          "french": "Blob régénératif",
-          "german": "Reformationsschleim",
-          "russian": "Текучая жижа",
-          "portuguese": "Gosma Imutável",
-          "chinese": "重组软泥怪",
-          "spanish": "Cieno reformador",
-          "chinese_traditional": "重鑄軟泥",
-          "korean": "되살아난 점액",
-          "japanese": "リフォーミング・ウーズ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-1dd06501e8699926-0040ae3d30dea9a49ad7711f970614e3-v2",
-            "english": "“I found it cowering amongst some broken beakers. I think I’ll keep it and one day give it to my darling as a pet. If she ever awakens, that is.”\n—Baron Grael",
-            "french": "<nobr>« Je</nobr> l'ai trouvé recroquevillé parmi des béchers cassés. Je pense que je vais le garder et l'offrir comme animal de compagnie à ma bien-aimée. Si elle se réveille, bien <nobr>sûr. »</nobr> \n— Baron Grael",
-            "german": "„Als ich es fand, kauerte es unter ein paar kaputten Bechern. Ich werde es behalten und eines Tages meiner Liebsten geben. Wenn sie denn jemals erwacht.“\n—Baron Grael",
-            "russian": "«Я нашел его среди разбитых мензурок и решил забрать себе: подарю любимой в качестве домашнего питомца. Если, конечно, она когда-нибудь проснется».\n— Барон Граэль",
-            "portuguese": "“Eu o encontrei encolhido entre alguns béqueres quebrados. Acho que vou guardá-lo e, um dia, o darei como animal de estimação ao meu amor. Se ela acordar, é claro.”\n— Barão Grael",
-            "chinese": "“我发现它蜷缩在一堆打碎的烧杯里。我想留着它，等有一天，把它送给我亲爱的当宠物。如果她能醒过来的话。”\n——格雷尔男爵",
-            "spanish": "«Lo encontré temblando entre matraces rotos. Creo que me lo quedaré y, cuando sea posible, se lo daré a mi querida como mascota. Si es que despierta algún día...».\n—Barón Grael",
-            "chinese_traditional": "「我發現它躲在一些破碎的燒杯中間。我想我會留著它，有朝一日送給我親愛的人當寵物。如果她有一天醒來的話。」\n—葛雷爾男爵",
-            "korean": "“깨진 비커 사이에서 몸을 숨기고 있는 것을 발견했다. 잘 간직했다가 애완동물로 줄 생각이다. 잉가가 눈을 뜬다면 말이다.”\n- 그라엘 남작",
-            "japanese": "「壊れたビーカーの中に縮こまっているのを見つけた。連れて行って、愛しい人にペットとして贈ろうと思う。彼女が目覚めることがあるのならば、だが」\n—グラエル男爵"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ReformingOoze.prefab",
-          "m_AssetGUID": "d283ec9462067e64e84cafdc5041210b"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
-            "m_AssetGUID": "e78ec66e5b5232045acdc3b530057b00"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "undying",
-            "count": 1
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-ff17dc7b26bc225c-0040ae3d30dea9a49ad7711f970614e3-v2",
-              "english": "+[effect0.power][attack] permanently.",
-              "french": "+[effect0.power][attack] définitivement.",
-              "german": "Permanent +[effect0.power][attack].",
-              "russian": "+[effect0.power][attack] навсегда.",
-              "portuguese": "+[effect0.power][attack] permanentemente.",
-              "chinese": "永久获得 +[effect0.power][attack]。",
-              "spanish": "+[effect0.power][attack] permanentemente.",
-              "chinese_traditional": "永久+[effect0.power][attack]。",
-              "korean": "영구적으로 +[effect0.power][attack]이 증가합니다.",
-              "japanese": "永続的に+[effect0.power][attack]。"
-            },
-            "trigger": "on_reanimated",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddCardUpgradeToUnits",
-                "targetMode": "self",
-                "targetTeamType": "both",
-                "paramCardUpgradeData": {
-                  "id": "ReformingOoze_Upgrade",
-                  "guid": "3c9ca7a0-8438-4001-be58-ae2db0226e2e",
-                  "bonusDamage": 6,
-                  "upgradeWillBeScaledByNonMagicPowerTrait": true
-                },
-                "additionalParamInt1": 2,
-                "paramBool": true
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 15,
-        "attackDamage": 7,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Monstrosity"
-        ],
-        "characterChatterData": "LazarusLeagueReformingOozeChatterData"
-      }
+      "id": "ReformingOoze",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassLazarusLeague",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsLazarusLeagueBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_ReformingOoze.prefab",
+        "m_AssetGUID": "358fe7d47a3788a41a75553fb83ad4d4"
+      },
+      "effects": [
+        "@ReformingOoze.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 6,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Genevieve Bega"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 6,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Genevieve Bega"
+  "characters": [
+    {
+      "id": "MonsterReformingOoze",
+      "names": {
+        "key": "CharacterData_nameKey-55929ce6e1984e96-0040ae3d30dea9a49ad7711f970614e3-v2",
+        "english": "Reforming Ooze",
+        "french": "Blob régénératif",
+        "german": "Reformationsschleim",
+        "russian": "Текучая жижа",
+        "portuguese": "Gosma Imutável",
+        "chinese": "重组软泥怪",
+        "spanish": "Cieno reformador",
+        "chinese_traditional": "重鑄軟泥",
+        "korean": "되살아난 점액",
+        "japanese": "リフォーミング・ウーズ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-1dd06501e8699926-0040ae3d30dea9a49ad7711f970614e3-v2",
+          "english": "“I found it cowering amongst some broken beakers. I think I’ll keep it and one day give it to my darling as a pet. If she ever awakens, that is.”\n—Baron Grael",
+          "french": "<nobr>« Je</nobr> l'ai trouvé recroquevillé parmi des béchers cassés. Je pense que je vais le garder et l'offrir comme animal de compagnie à ma bien-aimée. Si elle se réveille, bien <nobr>sûr. »</nobr> \n— Baron Grael",
+          "german": "„Als ich es fand, kauerte es unter ein paar kaputten Bechern. Ich werde es behalten und eines Tages meiner Liebsten geben. Wenn sie denn jemals erwacht.“\n—Baron Grael",
+          "russian": "«Я нашел его среди разбитых мензурок и решил забрать себе: подарю любимой в качестве домашнего питомца. Если, конечно, она когда-нибудь проснется».\n— Барон Граэль",
+          "portuguese": "“Eu o encontrei encolhido entre alguns béqueres quebrados. Acho que vou guardá-lo e, um dia, o darei como animal de estimação ao meu amor. Se ela acordar, é claro.”\n— Barão Grael",
+          "chinese": "“我发现它蜷缩在一堆打碎的烧杯里。我想留着它，等有一天，把它送给我亲爱的当宠物。如果她能醒过来的话。”\n——格雷尔男爵",
+          "spanish": "«Lo encontré temblando entre matraces rotos. Creo que me lo quedaré y, cuando sea posible, se lo daré a mi querida como mascota. Si es que despierta algún día...».\n—Barón Grael",
+          "chinese_traditional": "「我發現它躲在一些破碎的燒杯中間。我想我會留著它，有朝一日送給我親愛的人當寵物。如果她有一天醒來的話。」\n—葛雷爾男爵",
+          "korean": "“깨진 비커 사이에서 몸을 숨기고 있는 것을 발견했다. 잘 간직했다가 애완동물로 줄 생각이다. 잉가가 눈을 뜬다면 말이다.”\n- 그라엘 남작",
+          "japanese": "「壊れたビーカーの中に縮こまっているのを見つけた。連れて行って、愛しい人にペットとして贈ろうと思う。彼女が目覚めることがあるのならば、だが」\n—グラエル男爵"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ReformingOoze.prefab",
+        "m_AssetGUID": "d283ec9462067e64e84cafdc5041210b"
+      },
+      "impact_vfx": "@ReformingOoze.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "undying",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@ReformingOoze.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 15,
+      "attack_damage": 7,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Monstrosity"
+      ],
+      "chatter": "LazarusLeagueReformingOozeChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ReformingOoze.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-ff17dc7b26bc225c-0040ae3d30dea9a49ad7711f970614e3-v2",
+        "english": "+[effect0.power][attack] permanently.",
+        "french": "+[effect0.power][attack] définitivement.",
+        "german": "Permanent +[effect0.power][attack].",
+        "russian": "+[effect0.power][attack] навсегда.",
+        "portuguese": "+[effect0.power][attack] permanentemente.",
+        "chinese": "永久获得 +[effect0.power][attack]。",
+        "spanish": "+[effect0.power][attack] permanentemente.",
+        "chinese_traditional": "永久+[effect0.power][attack]。",
+        "korean": "영구적으로 +[effect0.power][attack]이 증가합니다.",
+        "japanese": "永続的に+[effect0.power][attack]。"
+      },
+      "trigger": "on_reanimated",
+      "effects": [
+        "@ReformingOoze.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ReformingOoze.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "ReformingOoze_Upgrade",
+      "param_int_3": 2,
+      "param_bool": true
+    },
+    {
+      "id": "ReformingOoze.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterReformingOoze"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "ReformingOoze.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
+        "m_AssetGUID": "e78ec66e5b5232045acdc3b530057b00"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

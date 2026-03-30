@@ -1,66 +1,75 @@
 {
-  "id": "TrainStewardSpear",
-  "guid": "38e70e6a-20f3-4e36-8d31-c5110be07f87",
-  "name": "Spear Steward",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "common",
-  "pools": [
-    "TrainStewardSmallOnly"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_TrainSteward_Sword.prefab",
-    "m_AssetGUID": "ec9a23f812280fe47b96e5491f038e46"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "TrainStewardSmall",
-        "guid": "e18b8593-4085-4aae-8152-8acab6c40e65",
-        "nameKey": {
-          "key": "CharacterData_nameKey-1c7d47d352c2651d-135b45c33311fe3499ac37f539ec8d03-v2",
-          "english": "Spear Steward",
-          "french": "Steward lancier",
-          "german": "Speer-Begleiter",
-          "russian": "Стюард-копейщик",
-          "portuguese": "Guarda Lanceiro",
-          "chinese": "长矛乘务员",
-          "spanish": "Auxiliar de lanza",
-          "chinese_traditional": "長矛服務員",
-          "korean": "창의 관리자",
-          "japanese": "スピア・スチュワード"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-07ba51fdd3531b53-135b45c33311fe3499ac37f539ec8d03-v2",
-            "english": "The original Boneshaker was built during a time of peace. Herzal had the foresight to build several sentient guards should the worst come to happen. In the end, they’ve proved quite useful.",
-            "french": "Le Hurleflammes original a été construit en temps de paix. Herzal a eu la prévoyance de construire plusieurs gardes autonomes au cas où le pire se produirait. En fin de compte, ils se sont révélés très utiles.",
-            "german": "Der erste Knochenrüttler entstand in einer Zeit des Friedens. Herzal war so weise, mehrere Wächter zu bauen, falls das Schlimmste eintreten sollte. Sie stellten sich schließlich als sehr nützlich heraus.",
-            "russian": "Первый «Костолом» был построен в мирное время. Но Герцаль предусмотрительно создал для него несколько разумных охранников, что в конечном итоге оказалось очень кстати.",
-            "portuguese": "O Ossuário original foi construído em um período de paz. Herzal teve a visão de construir vários guardas sencientes caso o pior viesse a acontecer. No final, eles se mostraram bastante úteis.",
-            "chinese": "原先的老爷车号是在和平时期建造的。赫扎尔很有远见，造出了一批有智慧的守卫，以防备最糟糕的情况。最后，事实证明他们非常有用。",
-            "spanish": "El Sacudehuesos original se construyó en época de paz, pero Herzal fue lo bastante previsor como para crear guardias inteligentes en caso de necesidad. Al final, han resultado muy útiles.",
-            "chinese_traditional": "最初的碎骨者建造於和平時期。赫爾扎爾有先見之明，建造了數個具有智慧的守衛，以防最壞情況發生。最終，他們確實派上了用場。",
-            "korean": "첫 번째 본쉐이커는 평화로운 시기에 만들어졌다. 최악의 상황이 발생할 경우를 대비하여 헤르잘은 자아를 지닌 방어병을 만들어 놓았고, 그 결과 이들은 매우 유용한 존재가 되었다.",
-            "japanese": "オリジナルのボーンシェイカーは平和な時期に製造された。ハーザルには最悪な事態に備えて、人工的な衛兵を作っておくという先見の明があった。実際に、非常に役立っている。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TrainSteward_Sword.prefab",
-          "m_AssetGUID": "eed55e60d8e70ab4180044741d297c2b"
-        },
-        "size": 2,
-        "health": 5,
-        "attackDamage": 14,
-        "subtypeKeys": [
-          "SubtypesData_TrainSteward"
-        ],
-        "characterChatterData": "TrainStewardChatterData"
-      }
+      "id": "TrainStewardSpear",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "pools": [
+        "TrainStewardSmallOnly"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_TrainSteward_Sword.prefab",
+        "m_AssetGUID": "ec9a23f812280fe47b96e5491f038e46"
+      },
+      "effects": [
+        "@TrainStewardSpear.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Nicole Anne Alfonso"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Nicole Anne Alfonso"
+  "characters": [
+    {
+      "id": "TrainStewardSmall",
+      "names": {
+        "key": "CharacterData_nameKey-1c7d47d352c2651d-135b45c33311fe3499ac37f539ec8d03-v2",
+        "english": "Spear Steward",
+        "french": "Steward lancier",
+        "german": "Speer-Begleiter",
+        "russian": "Стюард-копейщик",
+        "portuguese": "Guarda Lanceiro",
+        "chinese": "长矛乘务员",
+        "spanish": "Auxiliar de lanza",
+        "chinese_traditional": "長矛服務員",
+        "korean": "창의 관리자",
+        "japanese": "スピア・スチュワード"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-07ba51fdd3531b53-135b45c33311fe3499ac37f539ec8d03-v2",
+          "english": "The original Boneshaker was built during a time of peace. Herzal had the foresight to build several sentient guards should the worst come to happen. In the end, they’ve proved quite useful.",
+          "french": "Le Hurleflammes original a été construit en temps de paix. Herzal a eu la prévoyance de construire plusieurs gardes autonomes au cas où le pire se produirait. En fin de compte, ils se sont révélés très utiles.",
+          "german": "Der erste Knochenrüttler entstand in einer Zeit des Friedens. Herzal war so weise, mehrere Wächter zu bauen, falls das Schlimmste eintreten sollte. Sie stellten sich schließlich als sehr nützlich heraus.",
+          "russian": "Первый «Костолом» был построен в мирное время. Но Герцаль предусмотрительно создал для него несколько разумных охранников, что в конечном итоге оказалось очень кстати.",
+          "portuguese": "O Ossuário original foi construído em um período de paz. Herzal teve a visão de construir vários guardas sencientes caso o pior viesse a acontecer. No final, eles se mostraram bastante úteis.",
+          "chinese": "原先的老爷车号是在和平时期建造的。赫扎尔很有远见，造出了一批有智慧的守卫，以防备最糟糕的情况。最后，事实证明他们非常有用。",
+          "spanish": "El Sacudehuesos original se construyó en época de paz, pero Herzal fue lo bastante previsor como para crear guardias inteligentes en caso de necesidad. Al final, han resultado muy útiles.",
+          "chinese_traditional": "最初的碎骨者建造於和平時期。赫爾扎爾有先見之明，建造了數個具有智慧的守衛，以防最壞情況發生。最終，他們確實派上了用場。",
+          "korean": "첫 번째 본쉐이커는 평화로운 시기에 만들어졌다. 최악의 상황이 발생할 경우를 대비하여 헤르잘은 자아를 지닌 방어병을 만들어 놓았고, 그 결과 이들은 매우 유용한 존재가 되었다.",
+          "japanese": "オリジナルのボーンシェイカーは平和な時期に製造された。ハーザルには最悪な事態に備えて、人工的な衛兵を作っておくという先見の明があった。実際に、非常に役立っている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TrainSteward_Sword.prefab",
+        "m_AssetGUID": "eed55e60d8e70ab4180044741d297c2b"
+      },
+      "size": 2,
+      "health": 5,
+      "attack_damage": 14,
+      "subtypes": [
+        "SubtypesData_TrainSteward"
+      ],
+      "chatter": "TrainStewardChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "TrainStewardSpear.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "TrainStewardSmall"
+    }
+  ]
 }

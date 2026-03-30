@@ -1,95 +1,112 @@
 {
-  "id": "DerangedBrute",
-  "guid": "3cb0976c-7cf5-4470-bb5a-7eacfb404e9a",
-  "name": "Deranged Brute",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsHellhornedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_UnshackledBrute.prefab",
-    "m_AssetGUID": "fdb14ab2e5ae82743b61a92c3c27f134"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "DerangedBrute",
-        "guid": "c1b9aedf-33d0-4081-a227-08b9a6c11c54",
-        "nameKey": {
-          "key": "CharacterData_nameKey-f71cc65df3354a5f-de076dcd44a0be44ba6137fc2a652c66-v2",
-          "english": "Deranged Brute",
-          "french": "Brute dérangée",
-          "german": "Irrer Wüstling",
-          "russian": "Безумный крушитель",
-          "portuguese": "Brutamontes Enlouquecido",
-          "chinese": "狂乱蛮兽",
-          "spanish": "Bestia demente",
-          "chinese_traditional": "狂亂野蠻人",
-          "korean": "미쳐버린 짐승",
-          "japanese": "ディレインジド・ブルート"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-da7ca77525f44440-de076dcd44a0be44ba6137fc2a652c66-v2",
-            "english": "For a race that is bred on violence, even the Hellhorned have limits to the amount of aggression that is acceptable. But desperate times have forced the Hellhorned to agree with my suggestion to release their most dangerous prisoners.",
-            "french": "Même une race pétrie de violence comme les Cornus reconnaît des limites au niveau d'agressivité qu'il est possible de tolérer. Mais compte tenu des circonstances, j'ai réussi à les convaincre de libérer leurs prisonniers les plus dangereux.",
-            "german": "Selbst die Höllenhörner, bei denen Gewalt zum guten Ton gehört, erlauben nicht jede Form der Aggression. Doch in diesen verzweifelten Zeiten hatten die Höllenhörner keine andere Möglichkeit, als meinem Vorschlag zuzustimmen und ihre gefährlichsten Gefangenen freizulassen.",
-            "russian": "Пусть Адские отродья и принадлежат к расе, в основе которой лежит насилие, но даже у них имеются моральные рамки, за которые нельзя переступать. Но отчаяние вынудило Адских отродий согласиться со мной и освободить своих самых опасных преступников.",
-            "portuguese": "Mesmo sendo uma raça com suas raízes na violência, até os Endiabrados têm limites para quanta agressão é aceitável. No entanto, os atuais tempos desesperadores os forçaram a aceitar minha sugestão de libertar os prisioneiros mais perigosos do clã.",
-            "chinese": "即便是对在暴力中成长的狱魔而言，它们也无法一直忍受毫无休止的好斗者。不过在这紧急的时刻，狱魔不得不答应我的提议，释放了它们之中最危险的囚犯。",
-            "spanish": "A pesar de su gusto por la violencia, incluso los Astados Infernales ponen límites a la agresividad aceptable en su sociedad. Aun así, estos tiempos desesperados les han forzado a liberar a sus prisioneros más peligrosos, como les sugerí.",
-            "chinese_traditional": "煉獄族是依靠暴力繁衍的種族，但即使是煉獄族也有對攻擊性的忍受極限。不過，現在情況緊急，這迫使煉獄族同意我的建議，決定釋放出他們最危險的囚犯。",
-            "korean": "폭력을 생존 방식으로 삼는 지옥뿔 군단에게도 나름의 한계는 존재한다. 하지만 절망적인 시대에 직면한 끝에, 지옥뿔 군단은 가장 위험한 죄수를 풀어야 한다는 내 제안을 받아들이고 말았다.",
-            "japanese": "暴力によって育てられた種族である獄角族でさえ、許容できる攻撃性には限度がある。しかし、絶望的な状況により、獄角族は最も危険な囚人を解放するという私の提案に同意せざるを得なくなった。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_UnshackledBrute.prefab",
-          "m_AssetGUID": "6927cb5f26d5ab24f89999cec94efbb5"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "roomModifiers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-a26e1dc31d6bb1c6-de076dcd44a0be44ba6137fc2a652c66-v2",
-              "english": "[rage] on friendly units adds <nobr>+[power][attack]</nobr> per stack.",
-              "french": "La [rage] sur les alliés ajoute <nobr>+[power][attack]</nobr> par cumul.",
-              "german": "[rage] bei verbündeten Einheiten fügt <nobr>+[power][attack]</nobr> pro Stapel hinzu.",
-              "russian": "[rage] союзников добавляет +[power][attack] за слой.",
-              "portuguese": "[rage] em unidades aliadas adiciona <nobr>+[power][attack]</nobr> por carga.",
-              "chinese": "友方单位的 [rage]，每一层额外 <nobr>+[power][attack]</nobr>。",
-              "spanish": "La [rage] de las unidades aliadas añade <nobr>+[power][attack]</nobr> por acumulación.",
-              "chinese_traditional": "友方單位的每層[rage]賦予<nobr>+[power][attack]</nobr>。",
-              "korean": "아군 유닛들의 [rage]는 스택당 <nobr>+[power][attack]</nobr>을 더 추가합니다.",
-              "japanese": "味方ユニットの[rage]の1スタックにつき<nobr>+[power][attack]</nobr>が追加される。"
-            },
-            "roomStateModifierClassName": "RoomStateBuffModifier",
-            "paramInt": 3
-          }
-        ],
-        "size": 2,
-        "health": 25,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "HellhornedDemonChatterData"
-      }
+      "id": "DerangedBrute",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassHellhorned",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsHellhornedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_UnshackledBrute.prefab",
+        "m_AssetGUID": "fdb14ab2e5ae82743b61a92c3c27f134"
+      },
+      "effects": [
+        "@DerangedBrute.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "characters": [
+    {
+      "id": "DerangedBrute",
+      "names": {
+        "key": "CharacterData_nameKey-f71cc65df3354a5f-de076dcd44a0be44ba6137fc2a652c66-v2",
+        "english": "Deranged Brute",
+        "french": "Brute dérangée",
+        "german": "Irrer Wüstling",
+        "russian": "Безумный крушитель",
+        "portuguese": "Brutamontes Enlouquecido",
+        "chinese": "狂乱蛮兽",
+        "spanish": "Bestia demente",
+        "chinese_traditional": "狂亂野蠻人",
+        "korean": "미쳐버린 짐승",
+        "japanese": "ディレインジド・ブルート"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-da7ca77525f44440-de076dcd44a0be44ba6137fc2a652c66-v2",
+          "english": "For a race that is bred on violence, even the Hellhorned have limits to the amount of aggression that is acceptable. But desperate times have forced the Hellhorned to agree with my suggestion to release their most dangerous prisoners.",
+          "french": "Même une race pétrie de violence comme les Cornus reconnaît des limites au niveau d'agressivité qu'il est possible de tolérer. Mais compte tenu des circonstances, j'ai réussi à les convaincre de libérer leurs prisonniers les plus dangereux.",
+          "german": "Selbst die Höllenhörner, bei denen Gewalt zum guten Ton gehört, erlauben nicht jede Form der Aggression. Doch in diesen verzweifelten Zeiten hatten die Höllenhörner keine andere Möglichkeit, als meinem Vorschlag zuzustimmen und ihre gefährlichsten Gefangenen freizulassen.",
+          "russian": "Пусть Адские отродья и принадлежат к расе, в основе которой лежит насилие, но даже у них имеются моральные рамки, за которые нельзя переступать. Но отчаяние вынудило Адских отродий согласиться со мной и освободить своих самых опасных преступников.",
+          "portuguese": "Mesmo sendo uma raça com suas raízes na violência, até os Endiabrados têm limites para quanta agressão é aceitável. No entanto, os atuais tempos desesperadores os forçaram a aceitar minha sugestão de libertar os prisioneiros mais perigosos do clã.",
+          "chinese": "即便是对在暴力中成长的狱魔而言，它们也无法一直忍受毫无休止的好斗者。不过在这紧急的时刻，狱魔不得不答应我的提议，释放了它们之中最危险的囚犯。",
+          "spanish": "A pesar de su gusto por la violencia, incluso los Astados Infernales ponen límites a la agresividad aceptable en su sociedad. Aun así, estos tiempos desesperados les han forzado a liberar a sus prisioneros más peligrosos, como les sugerí.",
+          "chinese_traditional": "煉獄族是依靠暴力繁衍的種族，但即使是煉獄族也有對攻擊性的忍受極限。不過，現在情況緊急，這迫使煉獄族同意我的建議，決定釋放出他們最危險的囚犯。",
+          "korean": "폭력을 생존 방식으로 삼는 지옥뿔 군단에게도 나름의 한계는 존재한다. 하지만 절망적인 시대에 직면한 끝에, 지옥뿔 군단은 가장 위험한 죄수를 풀어야 한다는 내 제안을 받아들이고 말았다.",
+          "japanese": "暴力によって育てられた種族である獄角族でさえ、許容できる攻撃性には限度がある。しかし、絶望的な状況により、獄角族は最も危険な囚人を解放するという私の提案に同意せざるを得なくなった。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_UnshackledBrute.prefab",
+        "m_AssetGUID": "6927cb5f26d5ab24f89999cec94efbb5"
+      },
+      "impact_vfx": "@DerangedBrute.effects0.paramCharacterData.impactVFX",
+      "room_modifiers": [
+        "@DerangedBrute.effects0.paramCharacterData.roomModifiers0"
+      ],
+      "size": 2,
+      "health": 25,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "HellhornedDemonChatterData"
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "DerangedBrute.effects0.paramCharacterData.roomModifiers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-a26e1dc31d6bb1c6-de076dcd44a0be44ba6137fc2a652c66-v2",
+        "english": "[rage] on friendly units adds <nobr>+[power][attack]</nobr> per stack.",
+        "french": "La [rage] sur les alliés ajoute <nobr>+[power][attack]</nobr> par cumul.",
+        "german": "[rage] bei verbündeten Einheiten fügt <nobr>+[power][attack]</nobr> pro Stapel hinzu.",
+        "russian": "[rage] союзников добавляет +[power][attack] за слой.",
+        "portuguese": "[rage] em unidades aliadas adiciona <nobr>+[power][attack]</nobr> por carga.",
+        "chinese": "友方单位的 [rage]，每一层额外 <nobr>+[power][attack]</nobr>。",
+        "spanish": "La [rage] de las unidades aliadas añade <nobr>+[power][attack]</nobr> por acumulación.",
+        "chinese_traditional": "友方單位的每層[rage]賦予<nobr>+[power][attack]</nobr>。",
+        "korean": "아군 유닛들의 [rage]는 스택당 <nobr>+[power][attack]</nobr>을 더 추가합니다.",
+        "japanese": "味方ユニットの[rage]の1スタックにつき<nobr>+[power][attack]</nobr>が追加される。"
+      },
+      "name": "RoomStateBuffModifier",
+      "param_int": 3
+    }
+  ],
+  "effects": [
+    {
+      "id": "DerangedBrute.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "DerangedBrute"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "DerangedBrute.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

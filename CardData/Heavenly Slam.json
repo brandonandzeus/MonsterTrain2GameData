@@ -1,72 +1,82 @@
 {
-  "id": "AngelFlightSlamAbility",
-  "guid": "126787b8-2d30-4c9c-bd3f-d6ec936aa8d6",
-  "name": "Heavenly Slam",
-  "nameKey": {
-    "key": "CardData_nameKey-90e597d57970a72e-d1937ca703ad78d439f95e36139fc903-v2",
-    "english": "Heavenly Slam",
-    "french": "Ruée céleste",
-    "german": "Himmlischer Schlag",
-    "russian": "Атака с небес",
-    "portuguese": "Pancada Celestial",
-    "chinese": "天堂猛击",
-    "spanish": "Carga celestial",
-    "chinese_traditional": "天堂重擊",
-    "korean": "천상의 강타",
-    "japanese": "天の強打"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-859a461e81c39b49-d1937ca703ad78d439f95e36139fc903-v2",
-    "english": "Move to a targeted location on any floor. Deal damage to the front enemy unit equal to this unit's [health] and [armor].",
-    "french": "Déplace l'unité à la position ciblée. Inflige des dégâts égaux aux [health] et à l'[armor] de cette unité à l'ennemi en 1re ligne.",
-    "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene. Fügt der vordersten gegnerischen Einheit Schaden in Höhe von [health] und [armor] dieser Einheit zu.",
-    "russian": "Перемещение в выбранное место на любом этаже. Наносит урон переднему врагу, равный [health] и <b>Броне</b> этого бойца.",
-    "portuguese": "Desloca-se para um local específico em qualquer andar. Causa dano à unidade inimiga na frente igual à [health] e à [armor] desta unidade.",
-    "chinese": "移动到任意层的目标位置。对前排敌方单位造成相当于该单位 [health] 和 [armor] 的伤害。",
-    "spanish": "Se mueve a la ubicación seleccionada de cualquier piso. Inflige tanto daño a la primera unidad enemiga como la [health] y [armor] de esta unidad.",
-    "chinese_traditional": "移動到任意樓層的指定位置。對前排敵方單位造成等於此單位[health]與[armor]的傷害。",
-    "korean": "어떤 층이든 대상 위치로 이동합니다. 전열 적 유닛에 이 유닛의 [health] 및 [armor]만큼 피해를 입힙니다.",
-    "japanese": "任意のフロアの指定した位置へ移動する。前列の敵ユニットにこのユニットの[health]と[armor]に等しいダメージを与える。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectUnitAbilityTeleport",
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
-          "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
-        },
-        "spawnLocation": "character_bottom"
-      }
-    },
-    {
-      "effectStateName": "CardEffectDamagePerHp",
-      "targetMode": "self",
-      "targetTeamType": "heroes",
-      "additionalTooltips": [
-        {
-          "statusId": "armor",
-          "style": "default",
-          "isStatusTooltip": true
-        }
+      "id": "AngelFlightSlamAbility",
+      "names": {
+        "key": "CardData_nameKey-90e597d57970a72e-d1937ca703ad78d439f95e36139fc903-v2",
+        "english": "Heavenly Slam",
+        "french": "Ruée céleste",
+        "german": "Himmlischer Schlag",
+        "russian": "Атака с небес",
+        "portuguese": "Pancada Celestial",
+        "chinese": "天堂猛击",
+        "spanish": "Carga celestial",
+        "chinese_traditional": "天堂重擊",
+        "korean": "천상의 강타",
+        "japanese": "天の強打"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-859a461e81c39b49-d1937ca703ad78d439f95e36139fc903-v2",
+        "english": "Move to a targeted location on any floor. Deal damage to the front enemy unit equal to this unit's [health] and [armor].",
+        "french": "Déplace l'unité à la position ciblée. Inflige des dégâts égaux aux [health] et à l'[armor] de cette unité à l'ennemi en 1re ligne.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene. Fügt der vordersten gegnerischen Einheit Schaden in Höhe von [health] und [armor] dieser Einheit zu.",
+        "russian": "Перемещение в выбранное место на любом этаже. Наносит урон переднему врагу, равный [health] и <b>Броне</b> этого бойца.",
+        "portuguese": "Desloca-se para um local específico em qualquer andar. Causa dano à unidade inimiga na frente igual à [health] e à [armor] desta unidade.",
+        "chinese": "移动到任意层的目标位置。对前排敌方单位造成相当于该单位 [health] 和 [armor] 的伤害。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso. Inflige tanto daño a la primera unidad enemiga como la [health] y [armor] de esta unidad.",
+        "chinese_traditional": "移動到任意樓層的指定位置。對前排敵方單位造成等於此單位[health]與[armor]的傷害。",
+        "korean": "어떤 층이든 대상 위치로 이동합니다. 전열 적 유닛에 이 유닛의 [health] 및 [armor]만큼 피해를 입힙니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。前列の敵ユニットにこのユニットの[health]と[armor]に等しいダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "effects": [
+        "@AngelFlightSlamAbility.effects0",
+        "@AngelFlightSlamAbility.effects1"
       ],
-      "paramInt": 1,
-      "paramBool2": true,
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
-          "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
-        },
-        "spawnLocation": "character_bottom"
-      }
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "canAbilityTargetOtherFloors": true
+  "effects": [
+    {
+      "id": "AngelFlightSlamAbility.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@AngelFlightSlamAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "AngelFlightSlamAbility.effects1",
+      "name": "CardEffectDamagePerHp",
+      "target_mode": "self",
+      "additional_tooltips": [
+        "@AngelFlightSlamAbility.effects1.additionalTooltips0"
+      ],
+      "param_int": 1,
+      "param_bool_2": true,
+      "applied_to_self_vfx": "@AngelFlightSlamAbility.effects0.appliedToSelfVFX"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "isStatusTooltip": true,
+      "id": "AngelFlightSlamAbility.effects1.additionalTooltips0",
+      "status": "armor",
+      "style": "default"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "AngelFlightSlamAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+        "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
+      },
+      "spawn_location": "character_bottom"
+    }
+  ]
 }

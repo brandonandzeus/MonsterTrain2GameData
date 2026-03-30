@@ -1,111 +1,130 @@
 {
-  "id": "ParrafinEnforcer",
-  "guid": "b9788a77-50da-4654-acfa-960c23649984",
-  "name": "Paraffin Enforcer",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassRemnant",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsRemnantBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ParrafinEnforcer.prefab",
-    "m_AssetGUID": "376cd6d18108c76409e3f39a634d012d"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "ParrafinEnforcer",
-        "guid": "b88af9e0-9761-4ff9-97d4-aa3c6125e9cc",
-        "nameKey": {
-          "key": "CharacterData_nameKey-18710078b1ac1b9a-76133b80e16423d48b8c011dd15f276b-v2",
-          "english": "Paraffin Enforcer",
-          "french": "Exécuteur de paraffine",
-          "german": "Paraffin-Vollstrecker",
-          "russian": "Парафиновый вышибала",
-          "portuguese": "Cabo Parafina",
-          "chinese": "石蜡执法者",
-          "spanish": "Vigilante de parafina",
-          "chinese_traditional": "石蠟執法者",
-          "korean": "파라핀 집행자",
-          "japanese": "パラフィン・エンフォーサー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-bd62a216d6461982-76133b80e16423d48b8c011dd15f276b-v2",
-            "english": "Once a footsoldier has been promoted to an Enforcer, they are no longer considered the punching bags of the Wickless Remains. But that doesn’t mean that they won’t haze any new recruits the same way they were.",
-            "french": "Anciens fantassins promus au rang d'exécuteurs, ils ne sont plus les souffre-douleurs des Vestiges des sans-mèche. Mais cela ne signifie pas qu'ils ne brimeront pas les nouvelles recrues de la même manière qu'ils l'ont été.",
-            "german": "Sobald ein Fußsoldat zum Vollstrecker befördert wurde, ist er nicht mehr der Fußabtreter der Dochtlosen Reste. Stattdessen kann er dann seinerseits neue Rekruten schikanieren.",
-            "russian": "О бывших пехотинцев, ставших вышибалами, Безфитильные Остатки больше не вытирают ноги. Но это не значит, что над новобранцами перестают зло подшучивать.",
-            "portuguese": "Depois que um Soldado é promovido para o cargo de Capo, eles deixam de ser o saco de pancadas dos Resquícios Despaviados. Mas isso não quer dizer que vão deixar de atormentar novos recrutas.",
-            "chinese": "新兵一旦晋升成为执法者之后，就不再是熔尸无芯者们的出气筒了。不过，这并不意味着它们不会把其他的新兵当成出气筒。",
-            "spanish": "Cuando un soldado raso asciende a vigilante, deja de ser objeto del abuso de los sin mecha. Esto no significa que no vaya a tratar a nuevos reclutas tal y como le trataron a él.",
-            "chinese_traditional": "步兵只要被提升為執法者，就不再會被視為無芯遺民的沙包。但這並不意味著他們不會以同樣的方式欺負新兵。",
-            "korean": "집행자 지위에 오른 보병은 심지 없는 자의 샌드백이 되지 않는다. 그렇다고 이들이 예전 방식으로 신병을 괴롭하지 않는다는 것은 아니다.",
-            "japanese": "歩兵がエンフォーサーに昇進すると、彼らはもはやウィックレス・リメインズのストレス発散の対象とは見なされなくなる。しかし、それは彼らが新兵の虐めをやめるという意味ではない。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ParrafinEnforcer.prefab",
-          "m_AssetGUID": "a010d4771331ba847bb8a0c1712924da"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-74f79aa2d5dd7831-76133b80e16423d48b8c011dd15f276b-v2",
-              "english": "Apply [rage] [effect0.status0.power] to friendly [burnout] units.",
-              "french": "Les unités alliées affectées par <b>Consumation</b> gagnent <b>Rage</b> [effect0.status0.power].",
-              "german": "Wende [effect0.status0.power] <b>Wut</b> auf verbündete <b>Ausbrennen</b>-Einheiten an.",
-              "russian": "Накладывает [rage] x[effect0.status0.power] на союзников с <b>Выгоранием</b>.",
-              "portuguese": "Concede [effect0.status0.power] de <b>Fúria</b> às unidades aliadas com <b>Derretimento</b>.",
-              "chinese": "友方[burnout]单位获得[rage] [effect0.status0.power]。",
-              "spanish": "Añade [rage] [effect0.status0.power] a las unidades aliadas con [burnout].",
-              "chinese_traditional": "對友方[burnout]單位施加[rage][effect0.status0.power]。",
-              "korean": "아군 [burnout] 유닛들에게 [rage] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "味方の[burnout]ユニットに[rage] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "on_attacking",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "monsters",
-                "targetModeStatusEffectsFilter": [
-                  "ephemeral"
-                ],
-                "paramStatusEffects": [
-                  {
-                    "statusId": "buff",
-                    "count": 3
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 25,
-        "attackDamage": 15,
-        "subtypeKeys": [
-          "SubtypesData_Wickless_517faf2f-8836-42d3-b84d-75a99b7dc735",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "RemnantWicklessChatterData"
-      }
+      "id": "ParrafinEnforcer",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassRemnant",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsRemnantBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ParrafinEnforcer.prefab",
+        "m_AssetGUID": "376cd6d18108c76409e3f39a634d012d"
+      },
+      "effects": [
+        "@ParrafinEnforcer.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 7,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 7,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "characters": [
+    {
+      "id": "ParrafinEnforcer",
+      "names": {
+        "key": "CharacterData_nameKey-18710078b1ac1b9a-76133b80e16423d48b8c011dd15f276b-v2",
+        "english": "Paraffin Enforcer",
+        "french": "Exécuteur de paraffine",
+        "german": "Paraffin-Vollstrecker",
+        "russian": "Парафиновый вышибала",
+        "portuguese": "Cabo Parafina",
+        "chinese": "石蜡执法者",
+        "spanish": "Vigilante de parafina",
+        "chinese_traditional": "石蠟執法者",
+        "korean": "파라핀 집행자",
+        "japanese": "パラフィン・エンフォーサー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-bd62a216d6461982-76133b80e16423d48b8c011dd15f276b-v2",
+          "english": "Once a footsoldier has been promoted to an Enforcer, they are no longer considered the punching bags of the Wickless Remains. But that doesn’t mean that they won’t haze any new recruits the same way they were.",
+          "french": "Anciens fantassins promus au rang d'exécuteurs, ils ne sont plus les souffre-douleurs des Vestiges des sans-mèche. Mais cela ne signifie pas qu'ils ne brimeront pas les nouvelles recrues de la même manière qu'ils l'ont été.",
+          "german": "Sobald ein Fußsoldat zum Vollstrecker befördert wurde, ist er nicht mehr der Fußabtreter der Dochtlosen Reste. Stattdessen kann er dann seinerseits neue Rekruten schikanieren.",
+          "russian": "О бывших пехотинцев, ставших вышибалами, Безфитильные Остатки больше не вытирают ноги. Но это не значит, что над новобранцами перестают зло подшучивать.",
+          "portuguese": "Depois que um Soldado é promovido para o cargo de Capo, eles deixam de ser o saco de pancadas dos Resquícios Despaviados. Mas isso não quer dizer que vão deixar de atormentar novos recrutas.",
+          "chinese": "新兵一旦晋升成为执法者之后，就不再是熔尸无芯者们的出气筒了。不过，这并不意味着它们不会把其他的新兵当成出气筒。",
+          "spanish": "Cuando un soldado raso asciende a vigilante, deja de ser objeto del abuso de los sin mecha. Esto no significa que no vaya a tratar a nuevos reclutas tal y como le trataron a él.",
+          "chinese_traditional": "步兵只要被提升為執法者，就不再會被視為無芯遺民的沙包。但這並不意味著他們不會以同樣的方式欺負新兵。",
+          "korean": "집행자 지위에 오른 보병은 심지 없는 자의 샌드백이 되지 않는다. 그렇다고 이들이 예전 방식으로 신병을 괴롭하지 않는다는 것은 아니다.",
+          "japanese": "歩兵がエンフォーサーに昇進すると、彼らはもはやウィックレス・リメインズのストレス発散の対象とは見なされなくなる。しかし、それは彼らが新兵の虐めをやめるという意味ではない。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ParrafinEnforcer.prefab",
+        "m_AssetGUID": "a010d4771331ba847bb8a0c1712924da"
+      },
+      "impact_vfx": "@ParrafinEnforcer.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@ParrafinEnforcer.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 25,
+      "attack_damage": 15,
+      "subtypes": [
+        "SubtypesData_Wickless_517faf2f-8836-42d3-b84d-75a99b7dc735",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "RemnantWicklessChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ParrafinEnforcer.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-74f79aa2d5dd7831-76133b80e16423d48b8c011dd15f276b-v2",
+        "english": "Apply [rage] [effect0.status0.power] to friendly [burnout] units.",
+        "french": "Les unités alliées affectées par <b>Consumation</b> gagnent <b>Rage</b> [effect0.status0.power].",
+        "german": "Wende [effect0.status0.power] <b>Wut</b> auf verbündete <b>Ausbrennen</b>-Einheiten an.",
+        "russian": "Накладывает [rage] x[effect0.status0.power] на союзников с <b>Выгоранием</b>.",
+        "portuguese": "Concede [effect0.status0.power] de <b>Fúria</b> às unidades aliadas com <b>Derretimento</b>.",
+        "chinese": "友方[burnout]单位获得[rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power] a las unidades aliadas con [burnout].",
+        "chinese_traditional": "對友方[burnout]單位施加[rage][effect0.status0.power]。",
+        "korean": "아군 [burnout] 유닛들에게 [rage] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "味方の[burnout]ユニットに[rage] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@ParrafinEnforcer.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ParrafinEnforcer.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "target_mode_status_effects_filter": [
+        "ephemeral"
+      ],
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ParrafinEnforcer.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "ParrafinEnforcer"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "ParrafinEnforcer.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

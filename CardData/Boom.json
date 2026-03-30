@@ -1,50 +1,58 @@
 {
-  "id": "StewardSacrificeDamageAbility",
-  "guid": "5ea5b8fc-806f-4d25-ba1d-be02d8a774ad",
-  "name": "Boom",
-  "nameKey": {
-    "key": "CardData_nameKey-7764ae9161da0837-7d2ec46bbae1b8841a02e552ca746df3-v2",
-    "english": "Boom",
-    "french": "<nobr>Boum !</nobr>",
-    "german": "Knaller",
-    "russian": "Бум",
-    "portuguese": "Cabum",
-    "chinese": "自爆",
-    "spanish": "Pum",
-    "chinese_traditional": "轟炸",
-    "korean": "폭발",
-    "japanese": "爆破"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-6e7382e046b21eb1-7d2ec46bbae1b8841a02e552ca746df3-v2",
-    "english": "Deal [effect0.power] damage to the front enemy.",
-    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'ennemi en 1re ligne.",
-    "german": "Füge dem vordersten Gegner [x] Schaden zu.",
-    "russian": "Наносит переднему вражескому бойцу [effect0.power] урона.",
-    "portuguese": "Causa [effect0.power] de dano ao inimigo na frente.",
-    "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
-    "spanish": "Inflige [effect0.power] de daño al primer enemigo.",
-    "chinese_traditional": "對前排敵方造成[effect0.power]點傷害。",
-    "korean": "전열 적에게 [effect0.power]의 피해를 입힙니다.",
-    "japanese": "前列の敵に[effect0.power]のダメージを与える。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectDamage",
-      "targetMode": "front_in_room",
-      "targetTeamType": "heroes",
-      "paramInt": 50
-    },
-    {
-      "effectStateName": "CardEffectSacrifice",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "hideTooltip": true
+      "id": "StewardSacrificeDamageAbility",
+      "names": {
+        "key": "CardData_nameKey-7764ae9161da0837-7d2ec46bbae1b8841a02e552ca746df3-v2",
+        "english": "Boom",
+        "french": "<nobr>Boum !</nobr>",
+        "german": "Knaller",
+        "russian": "Бум",
+        "portuguese": "Cabum",
+        "chinese": "自爆",
+        "spanish": "Pum",
+        "chinese_traditional": "轟炸",
+        "korean": "폭발",
+        "japanese": "爆破"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-6e7382e046b21eb1-7d2ec46bbae1b8841a02e552ca746df3-v2",
+        "english": "Deal [effect0.power] damage to the front enemy.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> à l'ennemi en 1re ligne.",
+        "german": "Füge dem vordersten Gegner [x] Schaden zu.",
+        "russian": "Наносит переднему вражескому бойцу [effect0.power] урона.",
+        "portuguese": "Causa [effect0.power] de dano ao inimigo na frente.",
+        "chinese": "对前排敌方单位造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño al primer enemigo.",
+        "chinese_traditional": "對前排敵方造成[effect0.power]點傷害。",
+        "korean": "전열 적에게 [effect0.power]의 피해를 입힙니다.",
+        "japanese": "前列の敵に[effect0.power]のダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@StewardSacrificeDamageAbility.effects0",
+        "@StewardSacrificeDamageAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "StewardSacrificeDamageAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_int": 50
+    },
+    {
+      "id": "StewardSacrificeDamageAbility.effects1",
+      "name": "CardEffectSacrifice",
+      "target_mode": "self",
+      "hide_tooltip": true
+    }
+  ]
 }

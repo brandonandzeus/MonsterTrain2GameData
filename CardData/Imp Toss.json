@@ -1,45 +1,52 @@
 {
-  "id": "ShardtailSacrificeImps1",
-  "guid": "d9c0c510-ccb5-4a89-9f3b-99799e765540",
-  "name": "Imp Toss",
-  "nameKey": {
-    "key": "CardData_nameKey-49ce32ef984bac13-56d037c7edfb37b4cbe8f4e3f8a394f4-v2",
-    "english": "Imp Toss",
-    "french": "Lancer de diablotin",
-    "german": "Kobold-Wurf",
-    "russian": "Бросок беса",
-    "portuguese": "Arremesso de Diabinho",
-    "chinese": "小鬼投掷",
-    "spanish": "Lanzamiento de diablillo",
-    "chinese_traditional": "小鬼投擲",
-    "korean": "임프 토스",
-    "japanese": "インプ投げ"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-1da2e8ff826fbc2f-56d037c7edfb37b4cbe8f4e3f8a394f4-v2",
-    "english": "Kill all [imp] units. Deal [effect0.power] damage per [imp] to enemy units.",
-    "french": "Tue tous les <b>Diablotins</b>. Inflige <nobr>[effect0.power] DGT</nobr> par [imp] aux unités ennemies.",
-    "german": "Töte alle [imp]-Einheiten. Füge gegnerischen Einheiten [effect0.power] Schaden pro [imp] zu.",
-    "russian": "Убивает всех бесов. Наносит [effect0.power] урона вражеским бойцам за каждого беса.",
-    "portuguese": "Mata todas as unidades de [imp]. Causa [effect0.power] de dano às unidades inimigas para cada [imp].",
-    "chinese": "击杀所有[imp]单位。每个[imp]对所有敌方单位造成 [effect0.power] 点伤害",
-    "spanish": "Mata a todas las unidades [imp]. Inflige [effect0.power] de daño por [imp] a las unidades enemigas.",
-    "chinese_traditional": "殺死所有[imp]單位。對敵方單位造成等同於[imp]數量的[effect0.power]點傷害。",
-    "korean": "모든 [imp] 유닛을 처치합니다. [imp] 유닛 하나당 적 유닛에 [effect0.power]만큼 피해를 줍니다.",
-    "japanese": "すべての[imp]ユニットをキルする。敵ユニットに[imp]1体につき[effect0.power]のダメージを与える。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectDamageByUnitsKilled",
-      "targetMode": "room",
-      "targetTeamType": "both",
-      "paramInt": 20,
-      "paramStr": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+      "id": "ShardtailSacrificeImps1",
+      "names": {
+        "key": "CardData_nameKey-49ce32ef984bac13-56d037c7edfb37b4cbe8f4e3f8a394f4-v2",
+        "english": "Imp Toss",
+        "french": "Lancer de diablotin",
+        "german": "Kobold-Wurf",
+        "russian": "Бросок беса",
+        "portuguese": "Arremesso de Diabinho",
+        "chinese": "小鬼投掷",
+        "spanish": "Lanzamiento de diablillo",
+        "chinese_traditional": "小鬼投擲",
+        "korean": "임프 토스",
+        "japanese": "インプ投げ"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-1da2e8ff826fbc2f-56d037c7edfb37b4cbe8f4e3f8a394f4-v2",
+        "english": "Kill all [imp] units. Deal [effect0.power] damage per [imp] to enemy units.",
+        "french": "Tue tous les <b>Diablotins</b>. Inflige <nobr>[effect0.power] DGT</nobr> par [imp] aux unités ennemies.",
+        "german": "Töte alle [imp]-Einheiten. Füge gegnerischen Einheiten [effect0.power] Schaden pro [imp] zu.",
+        "russian": "Убивает всех бесов. Наносит [effect0.power] урона вражеским бойцам за каждого беса.",
+        "portuguese": "Mata todas as unidades de [imp]. Causa [effect0.power] de dano às unidades inimigas para cada [imp].",
+        "chinese": "击杀所有[imp]单位。每个[imp]对所有敌方单位造成 [effect0.power] 点伤害",
+        "spanish": "Mata a todas las unidades [imp]. Inflige [effect0.power] de daño por [imp] a las unidades enemigas.",
+        "chinese_traditional": "殺死所有[imp]單位。對敵方單位造成等同於[imp]數量的[effect0.power]點傷害。",
+        "korean": "모든 [imp] 유닛을 처치합니다. [imp] 유닛 하나당 적 유닛에 [effect0.power]만큼 피해를 줍니다.",
+        "japanese": "すべての[imp]ユニットをキルする。敵ユニットに[imp]1体につき[effect0.power]のダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@ShardtailSacrificeImps1.effects0"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "ShardtailSacrificeImps1.effects0",
+      "name": "CardEffectDamageByUnitsKilled",
+      "target_mode": "room",
+      "target_team": "both",
+      "param_int": 20,
+      "param_str": "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+    }
+  ]
 }

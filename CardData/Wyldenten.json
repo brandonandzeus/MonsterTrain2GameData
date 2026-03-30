@@ -1,75 +1,88 @@
 {
-  "id": "AwokenChampionRoot",
-  "guid": "bd2fe27a-e8d9-4f1b-ae3c-549f1428e441",
-  "name": "Wyldenten",
-  "cardType": "monster",
-  "rarity": "champion",
-  "linkedClass": "ClassAwoken",
-  "pools": [
-    "ChampionPool",
-    "NewChallengerChampionPool"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_RootsOfWyldenten.prefab",
-    "m_AssetGUID": "6a3c135c49bfa0d4cb92c2171c0a9d0c"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterChampionAwokenRoot",
-        "guid": "8cdf2b11-27b8-4600-9dbf-5d23d301a271",
-        "nameKey": {
-          "key": "CharacterData_nameKey-d24b1712ab5166e5-9f502c0f32fc7b240b43372ea2a7b9f2-v2",
-          "english": "Wyldenten",
-          "french": "Wyldenten",
-          "german": "Wyldenten",
-          "russian": "Вилдентен",
-          "portuguese": "Wyldenten",
-          "chinese": "威尔丹顿",
-          "spanish": "Wyldenten",
-          "chinese_traditional": "維爾登頓",
-          "korean": "발덴튼",
-          "japanese": "ワイルデンテン"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-eafcdc0b547f71c9-9f502c0f32fc7b240b43372ea2a7b9f2-v2",
-            "english": "Something in the Wildwood unsettles my mind, granting me visions of its very Roots when I rest there. But these Roots form a creature predating both Hollows and Channelers. Was there some soul before the Wildwood?",
-            "french": "Quelque chose dans le Boissauvage me déstabilise, m'envoie des visions des propres racines du Boissauvage dès lors que je m'y repose. Or ces racines forment une créature antérieure aux deux réceptacles des occultistes. Y a-t-il eu une âme avant le Boissauvage ?",
-            "german": "Irgendetwas im Wildholz beunruhigt mich. Es zeigt mir Visionen seiner Wurzeln, wenn ich mich dort ausruhe, doch sie bilden eine Kreatur, die noch älter als die Hüllen und Okkultisten ist. Existierte noch vor dem Wildholz eine Seele?",
-            "russian": "Когда я нахожусь в этом месте, что-то влияет на мой рассудок, навевая видения о самих корнях Диколесья. Эти корни принадлежат существу, которое старше и Пустых, и Заклинателей. Неужели до Диколесья уже существовала какая-то душа?",
-            "portuguese": "Algo na Mata Selvagem perturba a minha mente, me trazendo visões das suas próprias Raízes quando descanso lá. Mas essas Raízes formam uma criatura anterior aos Ocos e Canalizadores. Será que havia alguma alma antes da Mata Selvagem?",
-            "chinese": "野林中有东西令我心神不宁，我在那里休息时，看到了这片森林的根。但这些根须构成了一只比空灵与通灵者更古老的生物。在野林之前存在灵魂吗？",
-            "spanish": "Algo en el Bosque Salvaje inquieta mi mente y me envía visiones de sus raíces cuando descanso allí. Pero estas raíces forman una criatura más antigua que los huecos y los canalizadores. ¿Había un alma aquí antes del Bosque Salvaje?",
-            "chinese_traditional": "荒野中的某些東西讓我的心神不安，我在那裡休息時，它們讓我看見了其根源的幻象。這些根源形成了一個早於空心人和引導者存在的生物。在荒野還沒形成之前，是否有某個靈魂？",
-            "korean": "와일드우드에 있는 어떤 존재가 내 마음을 흔들며, 그곳에서 쉴 때마다 뿌리의 기억을 엿볼 수 있다. 하지만 이 뿌리가 만들어내는 것은 공허한 존재나 연결자보다 훨씬 원시적인 존재다. 어쩌면 와일드우드 이전에 존재한 영혼이 이곳에 남아 있는 건 아닐까?",
-            "japanese": "ワイルドウッドの何かが心を不安にさせる。そこで休んでいると、その根源の幻影を私に見せてくるのだ。しかし、その根源はホロウとチャネラーの両方よりも古い生物であるようだ。ワイルドウッドよりも前に何かが存在していたのだろうか？"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_RootsOfWyldenten.prefab",
-          "m_AssetGUID": "80c26d99c3a11fc4a9f0343bc659acde"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "size": 3,
-        "health": 30,
-        "deathType": "large",
-        "attackDamage": 5,
-        "subtypeKeys": [
-          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-        ],
-        "characterChatterData": "AwokenChampionChatterData_Exile"
-      }
+      "id": "AwokenChampionRoot",
+      "card_type": "monster",
+      "rarity": "champion",
+      "class": "ClassAwoken",
+      "pools": [
+        "ChampionPool",
+        "NewChallengerChampionPool"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_RootsOfWyldenten.prefab",
+        "m_AssetGUID": "6a3c135c49bfa0d4cb92c2171c0a9d0c"
+      },
+      "effects": [
+        "@AwokenChampionRoot.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Brian Mutschler"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Brian Mutschler"
+  "characters": [
+    {
+      "id": "MonsterChampionAwokenRoot",
+      "names": {
+        "key": "CharacterData_nameKey-d24b1712ab5166e5-9f502c0f32fc7b240b43372ea2a7b9f2-v2",
+        "english": "Wyldenten",
+        "french": "Wyldenten",
+        "german": "Wyldenten",
+        "russian": "Вилдентен",
+        "portuguese": "Wyldenten",
+        "chinese": "威尔丹顿",
+        "spanish": "Wyldenten",
+        "chinese_traditional": "維爾登頓",
+        "korean": "발덴튼",
+        "japanese": "ワイルデンテン"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-eafcdc0b547f71c9-9f502c0f32fc7b240b43372ea2a7b9f2-v2",
+          "english": "Something in the Wildwood unsettles my mind, granting me visions of its very Roots when I rest there. But these Roots form a creature predating both Hollows and Channelers. Was there some soul before the Wildwood?",
+          "french": "Quelque chose dans le Boissauvage me déstabilise, m'envoie des visions des propres racines du Boissauvage dès lors que je m'y repose. Or ces racines forment une créature antérieure aux deux réceptacles des occultistes. Y a-t-il eu une âme avant le Boissauvage ?",
+          "german": "Irgendetwas im Wildholz beunruhigt mich. Es zeigt mir Visionen seiner Wurzeln, wenn ich mich dort ausruhe, doch sie bilden eine Kreatur, die noch älter als die Hüllen und Okkultisten ist. Existierte noch vor dem Wildholz eine Seele?",
+          "russian": "Когда я нахожусь в этом месте, что-то влияет на мой рассудок, навевая видения о самих корнях Диколесья. Эти корни принадлежат существу, которое старше и Пустых, и Заклинателей. Неужели до Диколесья уже существовала какая-то душа?",
+          "portuguese": "Algo na Mata Selvagem perturba a minha mente, me trazendo visões das suas próprias Raízes quando descanso lá. Mas essas Raízes formam uma criatura anterior aos Ocos e Canalizadores. Será que havia alguma alma antes da Mata Selvagem?",
+          "chinese": "野林中有东西令我心神不宁，我在那里休息时，看到了这片森林的根。但这些根须构成了一只比空灵与通灵者更古老的生物。在野林之前存在灵魂吗？",
+          "spanish": "Algo en el Bosque Salvaje inquieta mi mente y me envía visiones de sus raíces cuando descanso allí. Pero estas raíces forman una criatura más antigua que los huecos y los canalizadores. ¿Había un alma aquí antes del Bosque Salvaje?",
+          "chinese_traditional": "荒野中的某些東西讓我的心神不安，我在那裡休息時，它們讓我看見了其根源的幻象。這些根源形成了一個早於空心人和引導者存在的生物。在荒野還沒形成之前，是否有某個靈魂？",
+          "korean": "와일드우드에 있는 어떤 존재가 내 마음을 흔들며, 그곳에서 쉴 때마다 뿌리의 기억을 엿볼 수 있다. 하지만 이 뿌리가 만들어내는 것은 공허한 존재나 연결자보다 훨씬 원시적인 존재다. 어쩌면 와일드우드 이전에 존재한 영혼이 이곳에 남아 있는 건 아닐까?",
+          "japanese": "ワイルドウッドの何かが心を不安にさせる。そこで休んでいると、その根源の幻影を私に見せてくるのだ。しかし、その根源はホロウとチャネラーの両方よりも古い生物であるようだ。ワイルドウッドよりも前に何かが存在していたのだろうか？"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_RootsOfWyldenten.prefab",
+        "m_AssetGUID": "80c26d99c3a11fc4a9f0343bc659acde"
+      },
+      "impact_vfx": "@AwokenChampionRoot.effects0.paramCharacterData.impactVFX",
+      "size": 3,
+      "health": 30,
+      "death_type": "large",
+      "attack_damage": 5,
+      "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "chatter": "AwokenChampionChatterData_Exile"
+    }
+  ],
+  "effects": [
+    {
+      "id": "AwokenChampionRoot.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterChampionAwokenRoot"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "AwokenChampionRoot.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

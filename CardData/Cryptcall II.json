@@ -1,61 +1,56 @@
 {
-  "id": "FlickerRaiseOnSlayAbility2",
-  "guid": "e4437169-e7b5-4f08-9db1-75a4c54ac962",
-  "name": "Cryptcall II",
-  "nameKey": {
-    "key": "CardData_nameKey-a700e980850293be-80aa411171af5384781767dfb03bc129-v2",
-    "english": "Cryptcall II",
-    "french": "Appel de la crypte II",
-    "german": "Gruftruf II",
-    "russian": "Зов из склепа II",
-    "portuguese": "Chamado da Cripta II",
-    "chinese": "地穴呼唤 II",
-    "spanish": "Llamada a la cripta II",
-    "chinese_traditional": "墓穴呼喚II",
-    "korean": "크립트콜 II",
-    "japanese": "墓所の呼び声II"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-919791421367962a-80aa411171af5384781767dfb03bc129-v2",
-    "english": "[raise] [effect0.power] random units and apply an additional +[effect0.upgrade.bonusdamage][attack].",
-    "french": "<b>Reforme</b> [effect0.power] unités aléatoires et leur confère +[effect0.upgrade.bonusdamage][attack].",
-    "german": "[raise] von [effect0.power] zufälligen Einheiten. Wende zusätzlich +[effect0.upgrade.bonusdamage][attack] an.",
-    "russian": "[raise] и усиление [effect0.power] шт. случайных бойцов на +[effect0.upgrade.bonusdamage][attack].",
-    "portuguese": "<b>Renova</b> [effect0.power] unidades aleatórias e aplica um adicional de +[effect0.upgrade.bonusdamage][attack].",
-    "chinese": "随机[raise] [effect0.power] 个单位，并使其获得 +[effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "<b>Reforma</b> [effect0.power] unidades aleatorias y añade +[effect0.upgrade.bonusdamage][attack] adicional.",
-    "chinese_traditional": "[raise][effect0.power]個隨機單位並額外施加+[effect0.upgrade.bonusdamage][attack]。",
-    "korean": "[raise] 효과로 무작위 유닛을 [effect0.power]명 되살린 후 +[effect0.upgrade.bonusdamage][attack]을 추가 획득합니다.",
-    "japanese": "ランダムなユニットを[effect0.power] [raise]させ、追加で+[effect0.upgrade.bonusdamage][attack]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectRecursion",
-      "targetMode": "exhaust",
-      "targetCardType": "monster",
-      "targetCardSelectionMode": "random_to_hand",
-      "paramCardUpgradeData": {
-        "id": "RaiseForChampionLevel2",
-        "guid": "5e0cbe36-6dd3-4ff7-8a2b-46903655356f",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "ephemeral",
-            "count": 1
-          }
-        ],
-        "bonusDamage": 15,
-        "bonusHP": 5,
-        "costReduction": 99
+      "id": "FlickerRaiseOnSlayAbility2",
+      "names": {
+        "key": "CardData_nameKey-a700e980850293be-80aa411171af5384781767dfb03bc129-v2",
+        "english": "Cryptcall II",
+        "french": "Appel de la crypte II",
+        "german": "Gruftruf II",
+        "russian": "Зов из склепа II",
+        "portuguese": "Chamado da Cripta II",
+        "chinese": "地穴呼唤 II",
+        "spanish": "Llamada a la cripta II",
+        "chinese_traditional": "墓穴呼喚II",
+        "korean": "크립트콜 II",
+        "japanese": "墓所の呼び声II"
       },
-      "shouldFailToCastIfTestFails": true,
-      "paramInt": 2,
-      "additionalParamInt": 19,
-      "paramBool": true
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-919791421367962a-80aa411171af5384781767dfb03bc129-v2",
+        "english": "[raise] [effect0.power] random units and apply an additional +[effect0.upgrade.bonusdamage][attack].",
+        "french": "<b>Reforme</b> [effect0.power] unités aléatoires et leur confère +[effect0.upgrade.bonusdamage][attack].",
+        "german": "[raise] von [effect0.power] zufälligen Einheiten. Wende zusätzlich +[effect0.upgrade.bonusdamage][attack] an.",
+        "russian": "[raise] и усиление [effect0.power] шт. случайных бойцов на +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "<b>Renova</b> [effect0.power] unidades aleatórias e aplica um adicional de +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "随机[raise] [effect0.power] 个单位，并使其获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "<b>Reforma</b> [effect0.power] unidades aleatorias y añade +[effect0.upgrade.bonusdamage][attack] adicional.",
+        "chinese_traditional": "[raise][effect0.power]個隨機單位並額外施加+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[raise] 효과로 무작위 유닛을 [effect0.power]명 되살린 후 +[effect0.upgrade.bonusdamage][attack]을 추가 획득합니다.",
+        "japanese": "ランダムなユニットを[effect0.power] [raise]させ、追加で+[effect0.upgrade.bonusdamage][attack]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@FlickerRaiseOnSlayAbility2.effects0"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "FlickerRaiseOnSlayAbility2.effects0",
+      "name": "CardEffectRecursion",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand",
+      "param_upgrade": "RaiseForChampionLevel2",
+      "should_fail_to_cast_if_test_fails": true,
+      "param_int": 2,
+      "param_int_2": 19,
+      "param_bool": true
+    }
+  ]
 }

@@ -1,73 +1,84 @@
 {
-  "id": "ManeaterAbility2",
-  "guid": "4d52f8d7-690d-4ac1-be9e-2b407201cb91",
-  "name": "Maneating II",
-  "nameKey": {
-    "key": "CardData_nameKey-b961285148b22276-3c7ee53d49d228d478bcf7d078ec58bd-v2",
-    "english": "Maneating II",
-    "french": "Anthropophagie II",
-    "german": "Menschenfresser II",
-    "russian": "Сердцеедка II",
-    "portuguese": "Devorar Homens II",
-    "chinese": "噬人 II",
-    "spanish": "Devorar II",
-    "chinese_traditional": "吞噬II",
-    "korean": "식인 II",
-    "japanese": "食人II"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-e246b428f943b8fd-3c7ee53d49d228d478bcf7d078ec58bd-v2",
-    "english": "Apply [sap] [effect0.status0.power], [decay] [effect1.status0.power], and [mute] [effect2.status0.power] to a unit.",
-    "french": "Inflige [sap] [effect0.status0.power], [decay] [effect1.status0.power] et [mute] [effect2.status0.power] à une unité.",
-    "german": "Wende [sap] [effect0.status0.power], [decay] [effect1.status0.power] und [mute] [effect2.status0.power] auf eine Einheit an.",
-    "russian": "На бойца накладываются [sap] х[effect0.status0.power], [decay] х[effect1.status0.power] и [mute] х[effect2.status0.power].",
-    "portuguese": "Aplica [sap] [effect0.status0.power], [decay] [effect1.status0.power] e [mute] [effect2.status0.power] a uma unidade.",
-    "chinese": "对一个单位施加 [sap] [effect0.status0.power]，[decay] [effect1.status0.power]，和 [mute] [effect2.status0.power]。",
-    "spanish": "Añade [sap] [effect0.status0.power], [decay] [effect1.status0.power] y [mute] [effect2.status0.power] a una unidad.",
-    "chinese_traditional": "對一個單位施加[sap][effect0.status0.power]、[decay][effect1.status0.power]和[mute][effect2.status0.power]。",
-    "korean": "한 유닛에 [sap] [effect0.status0.power] 및 [decay] [effect1.status0.power], [mute] [effect2.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットに[sap] [effect0.status0.power]、[decay] [effect1.status0.power]、[mute] [effect2.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassUnderlegion",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "ManeaterAbility2",
+      "names": {
+        "key": "CardData_nameKey-b961285148b22276-3c7ee53d49d228d478bcf7d078ec58bd-v2",
+        "english": "Maneating II",
+        "french": "Anthropophagie II",
+        "german": "Menschenfresser II",
+        "russian": "Сердцеедка II",
+        "portuguese": "Devorar Homens II",
+        "chinese": "噬人 II",
+        "spanish": "Devorar II",
+        "chinese_traditional": "吞噬II",
+        "korean": "식인 II",
+        "japanese": "食人II"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-e246b428f943b8fd-3c7ee53d49d228d478bcf7d078ec58bd-v2",
+        "english": "Apply [sap] [effect0.status0.power], [decay] [effect1.status0.power], and [mute] [effect2.status0.power] to a unit.",
+        "french": "Inflige [sap] [effect0.status0.power], [decay] [effect1.status0.power] et [mute] [effect2.status0.power] à une unité.",
+        "german": "Wende [sap] [effect0.status0.power], [decay] [effect1.status0.power] und [mute] [effect2.status0.power] auf eine Einheit an.",
+        "russian": "На бойца накладываются [sap] х[effect0.status0.power], [decay] х[effect1.status0.power] и [mute] х[effect2.status0.power].",
+        "portuguese": "Aplica [sap] [effect0.status0.power], [decay] [effect1.status0.power] e [mute] [effect2.status0.power] a uma unidade.",
+        "chinese": "对一个单位施加 [sap] [effect0.status0.power]，[decay] [effect1.status0.power]，和 [mute] [effect2.status0.power]。",
+        "spanish": "Añade [sap] [effect0.status0.power], [decay] [effect1.status0.power] y [mute] [effect2.status0.power] a una unidad.",
+        "chinese_traditional": "對一個單位施加[sap][effect0.status0.power]、[decay][effect1.status0.power]和[mute][effect2.status0.power]。",
+        "korean": "한 유닛에 [sap] [effect0.status0.power] 및 [decay] [effect1.status0.power], [mute] [effect2.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットに[sap] [effect0.status0.power]、[decay] [effect1.status0.power]、[mute] [effect2.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassUnderlegion",
+      "effects": [
+        "@ManeaterAbility2.effects0",
+        "@ManeaterAbility2.effects1",
+        "@ManeaterAbility2.effects2"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both",
-      "paramStatusEffects": [
+      "id": "ManeaterAbility2.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_status_effects": [
         {
-          "statusId": "debuff",
+          "status": "debuff",
           "count": 3
         }
       ]
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both",
-      "paramStatusEffects": [
+      "id": "ManeaterAbility2.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_status_effects": [
         {
-          "statusId": "decay",
+          "status": "decay",
           "count": 10
         }
       ]
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both",
-      "paramStatusEffects": [
+      "id": "ManeaterAbility2.effects2",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_status_effects": [
         {
-          "statusId": "muted",
+          "status": "muted",
           "count": 1
         }
       ]
     }
-  ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "front_enemy"
+  ]
 }

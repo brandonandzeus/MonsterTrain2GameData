@@ -1,107 +1,122 @@
 {
-  "id": "ColdstingSiren",
-  "guid": "ca84a9e5-f167-49d1-91cc-ba662d3c1dc4",
-  "name": "Coldcaelia",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassStygian",
-  "pools": [
-    "LevelableUnits",
-    "UnitsAllBanner",
-    "UnitsStygianBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ColdstingCilophyte.prefab",
-    "m_AssetGUID": "2f808fc5868d22544a2297055a5cfea4"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterColdstingSiren",
-        "guid": "c81d7a91-8ecf-4e77-93b9-4da1133f28c5",
-        "nameKey": {
-          "key": "CharacterData_nameKey-bea799cc72bdddd1-4662d8efeb786184986f83a6da8d07e7-v2",
-          "english": "Coldcaelia",
-          "french": "Caelia de glace",
-          "german": "Kalcelia",
-          "russian": "Ледяная силия",
-          "portuguese": "Gelaelia",
-          "chinese": "寒流",
-          "spanish": "Caelia gélida",
-          "chinese_traditional": "寒凱利亞",
-          "korean": "콜드 카엘리아",
-          "japanese": "コールドカエリア"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-24dfff950f65d94a-4662d8efeb786184986f83a6da8d07e7-v2",
-            "english": "These Sirens have used the freezing of Hell to their advantage, enchanting their blades with ice to damage their enemies more deeply. They lack formal training in classical combat, but make up for it in their magical prowess.",
-            "french": "Ces sirènes ont tourné la Glaciation à leur avantage en enchantant leurs lames avec de la glace pour infliger de plus lourds dégâts à leurs ennemis. Elles compensent leur manque de formation au combat classique par leur puissance magique.",
-            "german": "Diese Sirenen haben die Eiszeit in der Hölle zu ihrem Vorteil genutzt und ihre Klingen mit dem Eis verzaubert, um ihren Gegnern mehr Schaden zufügen zu können. Sie haben kein formales Kampftraining, dafür aber beachtliche magische Fähigkeiten.",
-            "russian": "Сирены сумели извлечь выгоду из замораживания Ада, усилив свое оружие с помощью льда, чтобы наносить врагам более значительный урон. Им недостает опыта в классическом методе ведения боя, зато они хорошо разбираются в магии.",
-            "portuguese": "Essas Sereias usaram o congelamento do Inferno a seu favor, encantando suas espadas com gelo para deixá-las ainda mais letais. Elas não possuem treinamento formal em combate, mas compensam em habilidade mágica.",
-            "chinese": "这些海妖将地狱冻结起来，使它们在战斗中更有优势。它们附魔过的刀刃可以造成冰冻伤害，进一步杀伤敌人。尽管它们缺乏正规的战斗训练，但它们用魔法的力量弥补了这个劣势。",
-            "spanish": "Estas sirenas han aprovechado la congelación del Infierno para encantar sus armas con hielo y herir más profundamente a sus enemigos. No tienen entrenamiento en combate, pero lo compensan con sus capacidades mágicas.",
-            "chinese_traditional": "這些海妖利用地獄的冰凍來增強自己的優勢，用魔法讓他們的刀刃結冰以更進一步地傷害敵人。他們缺乏正統戰鬥訓練，但用魔法天賦彌補了這一點。",
-            "korean": "이 사이렌은 얼어붙은 지옥의 환경을 유리하게 사용하여 칼날에 얼음 마법을 휘감아 적에게 더욱 치명적인 피해를 준다. 일반 전투 훈련은 한참 부족하지만 이를 마법 능력으로 보완하는 것이다.",
-            "japanese": "セイレーンたちは地獄の凍結を逆手に取り、刃に氷の力をまとわせてより深く敵を切りつけることができるようにした。戦闘の訓練不足は、魔法の技術で補っているのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ColdstingCilophyte.prefab",
-          "m_AssetGUID": "3798a5b14c969524fb0b781f4c8e0fef"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "sweep",
-            "count": 1
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-0500506631b8ead3-4662d8efeb786184986f83a6da8d07e7-v2",
-              "english": "Apply [frostbite] {[effect0.status0.power]}.",
-              "french": "Applique [frostbite] {[effect0.status0.power]}.",
-              "german": "Wende [frostbite] an {[effect0.status0.power]}.",
-              "russian": "Накладывается [frostbite] {[effect0.status0.power]}.",
-              "portuguese": "Aplica [frostbite] {[effect0.status0.power]}.",
-              "chinese": "施加 [frostbite] {[effect0.status0.power]}。",
-              "spanish": "Añade [frostbite] {[effect0.status0.power]}.",
-              "chinese_traditional": "施加[frostbite]{[effect0.status0.power]}。",
-              "korean": "[frostbite] {[effect0.status0.power]} 효과를 적용합니다.",
-              "japanese": "[frostbite] {[effect0.status0.power]}を付与する。"
-            },
-            "trigger": "on_attacking",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "last_attacked_character",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "poison",
-                    "count": 6
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 15,
-        "attackDamage": 3,
-        "subtypeKeys": [
-          "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "StygianSirenChatterData_Female"
-      }
+      "id": "ColdstingSiren",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassStygian",
+      "pools": [
+        "LevelableUnits",
+        "UnitsAllBanner",
+        "UnitsStygianBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ColdstingCilophyte.prefab",
+        "m_AssetGUID": "2f808fc5868d22544a2297055a5cfea4"
+      },
+      "effects": [
+        "@ColdstingSiren.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Jordan Thomas"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Jordan Thomas"
+  "characters": [
+    {
+      "id": "MonsterColdstingSiren",
+      "names": {
+        "key": "CharacterData_nameKey-bea799cc72bdddd1-4662d8efeb786184986f83a6da8d07e7-v2",
+        "english": "Coldcaelia",
+        "french": "Caelia de glace",
+        "german": "Kalcelia",
+        "russian": "Ледяная силия",
+        "portuguese": "Gelaelia",
+        "chinese": "寒流",
+        "spanish": "Caelia gélida",
+        "chinese_traditional": "寒凱利亞",
+        "korean": "콜드 카엘리아",
+        "japanese": "コールドカエリア"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-24dfff950f65d94a-4662d8efeb786184986f83a6da8d07e7-v2",
+          "english": "These Sirens have used the freezing of Hell to their advantage, enchanting their blades with ice to damage their enemies more deeply. They lack formal training in classical combat, but make up for it in their magical prowess.",
+          "french": "Ces sirènes ont tourné la Glaciation à leur avantage en enchantant leurs lames avec de la glace pour infliger de plus lourds dégâts à leurs ennemis. Elles compensent leur manque de formation au combat classique par leur puissance magique.",
+          "german": "Diese Sirenen haben die Eiszeit in der Hölle zu ihrem Vorteil genutzt und ihre Klingen mit dem Eis verzaubert, um ihren Gegnern mehr Schaden zufügen zu können. Sie haben kein formales Kampftraining, dafür aber beachtliche magische Fähigkeiten.",
+          "russian": "Сирены сумели извлечь выгоду из замораживания Ада, усилив свое оружие с помощью льда, чтобы наносить врагам более значительный урон. Им недостает опыта в классическом методе ведения боя, зато они хорошо разбираются в магии.",
+          "portuguese": "Essas Sereias usaram o congelamento do Inferno a seu favor, encantando suas espadas com gelo para deixá-las ainda mais letais. Elas não possuem treinamento formal em combate, mas compensam em habilidade mágica.",
+          "chinese": "这些海妖将地狱冻结起来，使它们在战斗中更有优势。它们附魔过的刀刃可以造成冰冻伤害，进一步杀伤敌人。尽管它们缺乏正规的战斗训练，但它们用魔法的力量弥补了这个劣势。",
+          "spanish": "Estas sirenas han aprovechado la congelación del Infierno para encantar sus armas con hielo y herir más profundamente a sus enemigos. No tienen entrenamiento en combate, pero lo compensan con sus capacidades mágicas.",
+          "chinese_traditional": "這些海妖利用地獄的冰凍來增強自己的優勢，用魔法讓他們的刀刃結冰以更進一步地傷害敵人。他們缺乏正統戰鬥訓練，但用魔法天賦彌補了這一點。",
+          "korean": "이 사이렌은 얼어붙은 지옥의 환경을 유리하게 사용하여 칼날에 얼음 마법을 휘감아 적에게 더욱 치명적인 피해를 준다. 일반 전투 훈련은 한참 부족하지만 이를 마법 능력으로 보완하는 것이다.",
+          "japanese": "セイレーンたちは地獄の凍結を逆手に取り、刃に氷の力をまとわせてより深く敵を切りつけることができるようにした。戦闘の訓練不足は、魔法の技術で補っているのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ColdstingCilophyte.prefab",
+        "m_AssetGUID": "3798a5b14c969524fb0b781f4c8e0fef"
+      },
+      "starting_status_effects": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@ColdstingSiren.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 15,
+      "attack_damage": 3,
+      "subtypes": [
+        "SubtypesData_Siren_727cf19f-3b27-4ad2-92ab-3552449e52da",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "StygianSirenChatterData_Female"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ColdstingSiren.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-0500506631b8ead3-4662d8efeb786184986f83a6da8d07e7-v2",
+        "english": "Apply [frostbite] {[effect0.status0.power]}.",
+        "french": "Applique [frostbite] {[effect0.status0.power]}.",
+        "german": "Wende [frostbite] an {[effect0.status0.power]}.",
+        "russian": "Накладывается [frostbite] {[effect0.status0.power]}.",
+        "portuguese": "Aplica [frostbite] {[effect0.status0.power]}.",
+        "chinese": "施加 [frostbite] {[effect0.status0.power]}。",
+        "spanish": "Añade [frostbite] {[effect0.status0.power]}.",
+        "chinese_traditional": "施加[frostbite]{[effect0.status0.power]}。",
+        "korean": "[frostbite] {[effect0.status0.power]} 효과를 적용합니다.",
+        "japanese": "[frostbite] {[effect0.status0.power]}を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@ColdstingSiren.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ColdstingSiren.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "ColdstingSiren.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterColdstingSiren"
+    }
+  ]
 }

@@ -1,110 +1,122 @@
 {
-  "id": "Pincushion",
-  "guid": "64a3fd58-b7b3-466a-be8d-78bb2b9bdea4",
-  "name": "Pincushion",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsLazarusLeagueBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MeatShedder.prefab",
-    "m_AssetGUID": "4cfab5f1f1716aa4baac162b6284ca87"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterPincushion",
-        "guid": "bead82ee-d65c-40dc-a22e-6ae4aa1d2b31",
-        "nameKey": {
-          "key": "CharacterData_nameKey-8341a9d4b15b42da-9c08c1af8fccf0342a8403a31d9e8133-v2",
-          "english": "Pincushion",
-          "french": "Pique-seringue",
-          "german": "Nadelkissen",
-          "russian": "Игольник",
-          "portuguese": "Saco de Alfinetada",
-          "chinese": "扎针怪",
-          "spanish": "Alfiletero",
-          "chinese_traditional": "針墊",
-          "korean": "핀쿠션",
-          "japanese": "ピンクッション"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-1a4403ce86c31964-9c08c1af8fccf0342a8403a31d9e8133-v2",
-            "english": "“Greeeeeeegh!”",
-            "french": "<nobr>« Greeeeeeegh ! »</nobr>",
-            "german": "„Graaaaagh!“",
-            "russian": "«Гр-р-р-р-р-р-гх!»",
-            "portuguese": "“Greeeeeeegh!”",
-            "chinese": "“咯噜噜噜咯！”",
-            "spanish": "«¡Greeeeegh!».",
-            "chinese_traditional": "「噁唔唔！」",
-            "korean": "\"그르르!!!\"",
-            "japanese": "「グゲエエエエエ！」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MeatShedder.prefab",
-          "m_AssetGUID": "4229e9cbba2fe004c8d0837bd7101091"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-621bd0d3d5477eed-9c08c1af8fccf0342a8403a31d9e8133-v2",
-              "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] permanently.",
-              "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] définitivement.",
-              "german": "Permanent +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
-              "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health] навсегда.",
-              "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] permanentemente.",
-              "chinese": "永久+[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
-              "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] permanentemente.",
-              "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
-              "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 획득합니다.",
-              "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
-            },
-            "trigger": "on_equipment_added",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddCardUpgradeToUnits",
-                "targetMode": "self",
-                "targetTeamType": "both",
-                "paramCardUpgradeData": {
-                  "id": "Pincushion_Upgrade",
-                  "guid": "27c7cd17-0642-474b-b4a3-bba8a4f77923",
-                  "bonusDamage": 3,
-                  "bonusHP": 3,
-                  "upgradeWillBeScaledByNonMagicPowerTrait": true
-                },
-                "additionalParamInt1": 2,
-                "paramBool": true
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 12,
-        "attackDamage": 12,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Monstrosity"
-        ],
-        "characterChatterData": "LazarusLeaguePincushionChatterData"
-      }
+      "id": "Pincushion",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassLazarusLeague",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsLazarusLeagueBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MeatShedder.prefab",
+        "m_AssetGUID": "4cfab5f1f1716aa4baac162b6284ca87"
+      },
+      "effects": [
+        "@Pincushion.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Luke Banke"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Luke Banke"
+  "characters": [
+    {
+      "id": "MonsterPincushion",
+      "names": {
+        "key": "CharacterData_nameKey-8341a9d4b15b42da-9c08c1af8fccf0342a8403a31d9e8133-v2",
+        "english": "Pincushion",
+        "french": "Pique-seringue",
+        "german": "Nadelkissen",
+        "russian": "Игольник",
+        "portuguese": "Saco de Alfinetada",
+        "chinese": "扎针怪",
+        "spanish": "Alfiletero",
+        "chinese_traditional": "針墊",
+        "korean": "핀쿠션",
+        "japanese": "ピンクッション"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-1a4403ce86c31964-9c08c1af8fccf0342a8403a31d9e8133-v2",
+          "english": "“Greeeeeeegh!”",
+          "french": "<nobr>« Greeeeeeegh ! »</nobr>",
+          "german": "„Graaaaagh!“",
+          "russian": "«Гр-р-р-р-р-р-гх!»",
+          "portuguese": "“Greeeeeeegh!”",
+          "chinese": "“咯噜噜噜咯！”",
+          "spanish": "«¡Greeeeegh!».",
+          "chinese_traditional": "「噁唔唔！」",
+          "korean": "\"그르르!!!\"",
+          "japanese": "「グゲエエエエエ！」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MeatShedder.prefab",
+        "m_AssetGUID": "4229e9cbba2fe004c8d0837bd7101091"
+      },
+      "impact_vfx": "@Pincushion.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@Pincushion.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 12,
+      "attack_damage": 12,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Monstrosity"
+      ],
+      "chatter": "LazarusLeaguePincushionChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Pincushion.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-621bd0d3d5477eed-9c08c1af8fccf0342a8403a31d9e8133-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] permanently.",
+        "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] définitivement.",
+        "german": "Permanent +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health] навсегда.",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] permanentemente.",
+        "chinese": "永久+[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] permanentemente.",
+        "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+      },
+      "trigger": "on_equipment_added",
+      "effects": [
+        "@Pincushion.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Pincushion.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "Pincushion_Upgrade",
+      "param_int_3": 2,
+      "param_bool": true
+    },
+    {
+      "id": "Pincushion.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterPincushion"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Pincushion.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

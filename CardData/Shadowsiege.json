@@ -1,83 +1,96 @@
 {
-  "id": "Shadowsiege",
-  "guid": "4dd2be98-c73c-4f96-865f-6c24cc42e91d",
-  "name": "Shadowsiege",
-  "cost": 4,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsUmbraBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_SiegeOfShadows.prefab",
-    "m_AssetGUID": "1bb63b456e8e62e439e08d02c36f3912"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "Shadowsiege",
-        "guid": "8105abd1-3aa1-42f0-8f03-6adcc3e2499d",
-        "nameKey": {
-          "key": "CharacterData_nameKey-37ee0a54555210a8-6f836f95d2fbdc64ca711ec5c482306a-v2",
-          "english": "Shadowsiege",
-          "french": "Siège ténébreux",
-          "german": "Schattenbelagerung",
-          "russian": "Теневой разрушитель",
-          "portuguese": "Brutamontes das Trevas",
-          "chinese": "暗影破城傀儡",
-          "spanish": "Asedio sombrío",
-          "chinese_traditional": "陰影圍城",
-          "korean": "그림자 공성병기",
-          "japanese": "シャドウシージ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-f518bc76211e0e3c-6f836f95d2fbdc64ca711ec5c482306a-v2",
-            "english": "I was told that the first Constructs were made of discarded stone and a coordinated Antumbra effort. It is considered a prestigious position among Morsels. These were able to speed up the excavation of the Crucible tenfold. ",
-            "french": "On m'a dit que les premiers automates furent l'aboutissement d'un effort coordonné des Antumbras, qui les créèrent à partir de pierres mises au rebut. Les automates jouissent d'un statut prestigieux parmi les sous-bistres et ont permis de multiplier par dix la vitesse d'excavation du creuset.",
-            "german": "Ich habe gehört, dass die ersten Konstrukte von den Antumbra aus Geröll erschaffen wurden. Unter den Nuggets werden sie sehr geschätzt. Sie konnten die Minenarbeiten am Schmelztiegel um das Zehnfache beschleunigen.",
-            "russian": "Мне рассказывали, что первые Конструкты были созданы из выброшенных камней и служили на благо Сумрака. Они пользуются уважением среди заморышей. Благодаря им скорость земляных работ, ведущихся в Горниле, десятикратно возросла. ",
-            "portuguese": "Ouvi histórias de que os primeiros Autômatos foram feitos de pedras descartadas e um esforço Antumbra coordenado. Ser um Autômato é uma posição prestigiada entre os Lanchos. Eles são capazes de agilizar a escavação do Crisol em até dez vezes.",
-            "chinese": "我听说，最初的构装生物是由废弃的石头制成的。加上影者的通力合作，赋予了它生命。构装生物在影裔之中拥有着显赫的地位，因为它们可以以十倍的速度进行熔炉之地的采掘工作。",
-            "spanish": "Me dijeron que los primeros constructos se crearon con piedras inútiles y los esfuerzos de los Antumbra. Se considera un puesto prestigioso para los pinchos. Gracias a ellos, la velocidad de excavación en el Crisol se multiplicó por diez.",
-            "chinese_traditional": "我聽說第一批造物是由廢棄的石頭和協調的影者努力製成的。這被莫塞爾認為是個有聲望的職位。這些東西能夠使地獄熔爐的挖掘速度增加十倍。",
-            "korean": "첫 인공물은 버려진 돌과 외부 어스름 일족의 조직적인 협력으로 만들어졌다고 한다. 작은 그림자 사이에서 이 존재는 굉장한 권위를 지닌 것으로 여겨지며, 덕분에 도가니의 발굴 속도가 10배 빨라졌다.",
-            "japanese": "最初のコンストラクトは廃棄された石とアントアンブラの協力により作られたと聞いている。これはモーゼルの中では名誉ある地位とみなされている。このコンストラクトにより、クルーシブルの発掘が10倍も加速されたのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_SiegeOfShadows.prefab",
-          "m_AssetGUID": "e71de771768dc0a4681f4f13c4ce328c"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "scorch",
-            "count": 3
-          }
-        ],
-        "size": 6,
-        "health": 250,
-        "deathType": "large",
-        "attackDamage": 250,
-        "subtypeKeys": [
-          "SubtypesData_Automaton",
-          "SubtypesData_BannerUnit"
-        ]
-      }
+      "id": "Shadowsiege",
+      "cost": 4,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassUmbra",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsUmbraBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_SiegeOfShadows.prefab",
+        "m_AssetGUID": "1bb63b456e8e62e439e08d02c36f3912"
+      },
+      "effects": [
+        "@Shadowsiege.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 10,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Cameron Archer"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 10,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Cameron Archer"
+  "characters": [
+    {
+      "id": "Shadowsiege",
+      "names": {
+        "key": "CharacterData_nameKey-37ee0a54555210a8-6f836f95d2fbdc64ca711ec5c482306a-v2",
+        "english": "Shadowsiege",
+        "french": "Siège ténébreux",
+        "german": "Schattenbelagerung",
+        "russian": "Теневой разрушитель",
+        "portuguese": "Brutamontes das Trevas",
+        "chinese": "暗影破城傀儡",
+        "spanish": "Asedio sombrío",
+        "chinese_traditional": "陰影圍城",
+        "korean": "그림자 공성병기",
+        "japanese": "シャドウシージ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-f518bc76211e0e3c-6f836f95d2fbdc64ca711ec5c482306a-v2",
+          "english": "I was told that the first Constructs were made of discarded stone and a coordinated Antumbra effort. It is considered a prestigious position among Morsels. These were able to speed up the excavation of the Crucible tenfold. ",
+          "french": "On m'a dit que les premiers automates furent l'aboutissement d'un effort coordonné des Antumbras, qui les créèrent à partir de pierres mises au rebut. Les automates jouissent d'un statut prestigieux parmi les sous-bistres et ont permis de multiplier par dix la vitesse d'excavation du creuset.",
+          "german": "Ich habe gehört, dass die ersten Konstrukte von den Antumbra aus Geröll erschaffen wurden. Unter den Nuggets werden sie sehr geschätzt. Sie konnten die Minenarbeiten am Schmelztiegel um das Zehnfache beschleunigen.",
+          "russian": "Мне рассказывали, что первые Конструкты были созданы из выброшенных камней и служили на благо Сумрака. Они пользуются уважением среди заморышей. Благодаря им скорость земляных работ, ведущихся в Горниле, десятикратно возросла. ",
+          "portuguese": "Ouvi histórias de que os primeiros Autômatos foram feitos de pedras descartadas e um esforço Antumbra coordenado. Ser um Autômato é uma posição prestigiada entre os Lanchos. Eles são capazes de agilizar a escavação do Crisol em até dez vezes.",
+          "chinese": "我听说，最初的构装生物是由废弃的石头制成的。加上影者的通力合作，赋予了它生命。构装生物在影裔之中拥有着显赫的地位，因为它们可以以十倍的速度进行熔炉之地的采掘工作。",
+          "spanish": "Me dijeron que los primeros constructos se crearon con piedras inútiles y los esfuerzos de los Antumbra. Se considera un puesto prestigioso para los pinchos. Gracias a ellos, la velocidad de excavación en el Crisol se multiplicó por diez.",
+          "chinese_traditional": "我聽說第一批造物是由廢棄的石頭和協調的影者努力製成的。這被莫塞爾認為是個有聲望的職位。這些東西能夠使地獄熔爐的挖掘速度增加十倍。",
+          "korean": "첫 인공물은 버려진 돌과 외부 어스름 일족의 조직적인 협력으로 만들어졌다고 한다. 작은 그림자 사이에서 이 존재는 굉장한 권위를 지닌 것으로 여겨지며, 덕분에 도가니의 발굴 속도가 10배 빨라졌다.",
+          "japanese": "最初のコンストラクトは廃棄された石とアントアンブラの協力により作られたと聞いている。これはモーゼルの中では名誉ある地位とみなされている。このコンストラクトにより、クルーシブルの発掘が10倍も加速されたのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_SiegeOfShadows.prefab",
+        "m_AssetGUID": "e71de771768dc0a4681f4f13c4ce328c"
+      },
+      "impact_vfx": "@Shadowsiege.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "scorch",
+          "count": 3
+        }
+      ],
+      "size": 6,
+      "health": 250,
+      "death_type": "large",
+      "attack_damage": 250,
+      "subtypes": [
+        "SubtypesData_Automaton",
+        "SubtypesData_BannerUnit"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Shadowsiege.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "Shadowsiege"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Shadowsiege.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

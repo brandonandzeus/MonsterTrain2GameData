@@ -1,114 +1,133 @@
 {
-  "id": "Railbeater",
-  "guid": "c8b428ac-a1e9-4e52-96e0-5eed522195a2",
-  "name": "Railbeater",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsHellhornedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Railbeater.prefab",
-    "m_AssetGUID": "6a809b9a7944dae45bdd0b276f647443"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "Railbeater",
-        "guid": "b4daa805-365a-4bfc-b358-3fd9476122ac",
-        "nameKey": {
-          "key": "CharacterData_nameKey-b466fb1221595497-207bc586be04f2f40b7d1660dfcdb4ea-v2",
-          "english": "Railbeater",
-          "french": "Marterail",
-          "german": "Gleishämmerer",
-          "russian": "Укладчик",
-          "portuguese": "Trilhador",
-          "chinese": "锻铁者",
-          "spanish": "Clavarraíles",
-          "chinese_traditional": "軌道擊打者",
-          "korean": "선로 파괴자",
-          "japanese": "レイルビーター"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-dac4e90a38965a8a-207bc586be04f2f40b7d1660dfcdb4ea-v2",
-            "english": "These Hellhorned are some of the most respected blacksmiths in Hell from spending several cycles on steelwork. Not to mention, they’re a fantastic help in the construction of our Rail.",
-            "french": "Connus pour passer des cycles entiers sur le peaufinage de leur travail sidérurgique, ces Cornus font partie des forgerons les plus respectés de l'enfer. N'oublions évidemment pas leur aide inestimable pour la construction de notre Voie.",
-            "german": "Diese Höllenhörner gehören zu den angesehensten Schmieden der Hölle und sie haben sich mehrere Zyklen lang mit dem Schmiedehandwerk beschäftigt. Sie sind unschätzbar wertvolle Helfer beim Bau des Gleises.",
-            "russian": "Эти Адские отродья принадлежат к самым почитаемым кузнецам Ада и несколько циклов своей жизни посвятили работе с металлом. И это я еще молчу о том, какую грандиозную помощь они оказывают Железной дороге.",
-            "portuguese": "Esses Endiabrados são alguns dos ferreiros mais respeitados do Inferno por terem passado vários ciclos trabalhando com aço. Sem falar que eles são uma ajuda fantástica na construção da nossa ferrovia.",
-            "chinese": "这些狱魔在打铁这一行里度过了几生几世的时间，在整个地狱中都是最受人尊敬的铁匠。自不必说，它们在我们的铁道建设方面提供了极为出色的帮助。",
-            "spanish": "Estos Astados están entre los herreros más respetados del Infierno después de varios ciclos dedicados a la forja. Por supuesto, también son de gran ayuda en la construcción de los Raíles.",
-            "chinese_traditional": "這些煉獄族是地獄中最受尊敬的鐵匠，因為他們在鋼鐵工藝這方面下了數個週期的心血。更不用說，他們在我們的軌道建設中還提供了極大的幫助。",
-            "korean": "여러 주기 동안 강철을 다뤄온 이 지옥뿔 군단 소속 악마들은 지옥에서 가장 존경받는 대장장이들 중 하나이다. 선로 건설에 있어서도 이들이 지대한 도움을 주었다는 사실은 두말할 나위 없다.",
-            "japanese": "この獄角族は、数サイクルにわたって鋼鉄の加工をしてきた、地獄で最も尊敬される鍛冶師だ。言うまでもなく、鉄道の敷設に多大なる助けとなっている。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Railbeater.prefab",
-          "m_AssetGUID": "3498c9bea2185a445975195d85ea7bf0"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "armor",
-            "count": 30
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-5a91e55c372c21b8-207bc586be04f2f40b7d1660dfcdb4ea-v2",
-              "english": "Apply [meleeweakness] [effect0.status0.power].",
-              "french": "Applique [meleeweakness] [effect0.status0.power].",
-              "german": "Wende [meleeweakness] [effect0.status0.power] an.",
-              "russian": "Накладывает [meleeweakness] х[effect0.status0.power].",
-              "portuguese": "Aplica [meleeweakness] [effect0.status0.power].",
-              "chinese": "施加 [meleeweakness] [effect0.status0.power]。",
-              "spanish": "Añade [meleeweakness] [effect0.status0.power].",
-              "chinese_traditional": "施加[meleeweakness][effect0.status0.power]。",
-              "korean": "[meleeweakness] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "[meleeweakness] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "on_attacking",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "last_attacked_character",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "melee weakness",
-                    "count": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 10,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "HellhornedDemonChatterData"
-      }
+      "id": "Railbeater",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassHellhorned",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsHellhornedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Railbeater.prefab",
+        "m_AssetGUID": "6a809b9a7944dae45bdd0b276f647443"
+      },
+      "effects": [
+        "@Railbeater.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 4,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Gary Laib"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 4,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Gary Laib"
+  "characters": [
+    {
+      "id": "Railbeater",
+      "names": {
+        "key": "CharacterData_nameKey-b466fb1221595497-207bc586be04f2f40b7d1660dfcdb4ea-v2",
+        "english": "Railbeater",
+        "french": "Marterail",
+        "german": "Gleishämmerer",
+        "russian": "Укладчик",
+        "portuguese": "Trilhador",
+        "chinese": "锻铁者",
+        "spanish": "Clavarraíles",
+        "chinese_traditional": "軌道擊打者",
+        "korean": "선로 파괴자",
+        "japanese": "レイルビーター"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-dac4e90a38965a8a-207bc586be04f2f40b7d1660dfcdb4ea-v2",
+          "english": "These Hellhorned are some of the most respected blacksmiths in Hell from spending several cycles on steelwork. Not to mention, they’re a fantastic help in the construction of our Rail.",
+          "french": "Connus pour passer des cycles entiers sur le peaufinage de leur travail sidérurgique, ces Cornus font partie des forgerons les plus respectés de l'enfer. N'oublions évidemment pas leur aide inestimable pour la construction de notre Voie.",
+          "german": "Diese Höllenhörner gehören zu den angesehensten Schmieden der Hölle und sie haben sich mehrere Zyklen lang mit dem Schmiedehandwerk beschäftigt. Sie sind unschätzbar wertvolle Helfer beim Bau des Gleises.",
+          "russian": "Эти Адские отродья принадлежат к самым почитаемым кузнецам Ада и несколько циклов своей жизни посвятили работе с металлом. И это я еще молчу о том, какую грандиозную помощь они оказывают Железной дороге.",
+          "portuguese": "Esses Endiabrados são alguns dos ferreiros mais respeitados do Inferno por terem passado vários ciclos trabalhando com aço. Sem falar que eles são uma ajuda fantástica na construção da nossa ferrovia.",
+          "chinese": "这些狱魔在打铁这一行里度过了几生几世的时间，在整个地狱中都是最受人尊敬的铁匠。自不必说，它们在我们的铁道建设方面提供了极为出色的帮助。",
+          "spanish": "Estos Astados están entre los herreros más respetados del Infierno después de varios ciclos dedicados a la forja. Por supuesto, también son de gran ayuda en la construcción de los Raíles.",
+          "chinese_traditional": "這些煉獄族是地獄中最受尊敬的鐵匠，因為他們在鋼鐵工藝這方面下了數個週期的心血。更不用說，他們在我們的軌道建設中還提供了極大的幫助。",
+          "korean": "여러 주기 동안 강철을 다뤄온 이 지옥뿔 군단 소속 악마들은 지옥에서 가장 존경받는 대장장이들 중 하나이다. 선로 건설에 있어서도 이들이 지대한 도움을 주었다는 사실은 두말할 나위 없다.",
+          "japanese": "この獄角族は、数サイクルにわたって鋼鉄の加工をしてきた、地獄で最も尊敬される鍛冶師だ。言うまでもなく、鉄道の敷設に多大なる助けとなっている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Railbeater.prefab",
+        "m_AssetGUID": "3498c9bea2185a445975195d85ea7bf0"
+      },
+      "impact_vfx": "@Railbeater.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "armor",
+          "count": 30
+        }
+      ],
+      "triggers": [
+        "@Railbeater.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 10,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "HellhornedDemonChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Railbeater.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-5a91e55c372c21b8-207bc586be04f2f40b7d1660dfcdb4ea-v2",
+        "english": "Apply [meleeweakness] [effect0.status0.power].",
+        "french": "Applique [meleeweakness] [effect0.status0.power].",
+        "german": "Wende [meleeweakness] [effect0.status0.power] an.",
+        "russian": "Накладывает [meleeweakness] х[effect0.status0.power].",
+        "portuguese": "Aplica [meleeweakness] [effect0.status0.power].",
+        "chinese": "施加 [meleeweakness] [effect0.status0.power]。",
+        "spanish": "Añade [meleeweakness] [effect0.status0.power].",
+        "chinese_traditional": "施加[meleeweakness][effect0.status0.power]。",
+        "korean": "[meleeweakness] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[meleeweakness] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@Railbeater.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Railbeater.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "melee weakness",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Railbeater.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "Railbeater"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Railbeater.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

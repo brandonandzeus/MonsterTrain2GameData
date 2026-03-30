@@ -1,67 +1,76 @@
 {
-  "id": "ImpQueenChampion",
-  "guid": "7cff7749-0803-402c-8a9a-965222c24b4b",
-  "name": "Shardtail Queen",
-  "cardType": "monster",
-  "rarity": "champion",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "ChampionPool",
-    "NewChallengerChampionPool"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ShardtailQueen.prefab",
-    "m_AssetGUID": "fd8b85290d9a54c46acffb9f70838088"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterChampionHellhornedShardtail",
-        "guid": "39c56358-2852-4a65-971a-fa3dbcc6d180",
-        "nameKey": {
-          "key": "CharacterData_nameKey-013100f1a2deef6c-aa82776c51ec63743bf477e75529c921-v2",
-          "english": "Shardtail Queen",
-          "french": "Reine Dernier Éclat",
-          "german": "Splitterschweif-Königin",
-          "russian": "Королева Острохвост",
-          "portuguese": "Rainha Estilhaçada",
-          "chinese": "碎尾女王",
-          "spanish": "Reina Fragmentada",
-          "chinese_traditional": "碎尾女王",
-          "korean": "파편 꼬리 여왕",
-          "japanese": "シャードテイル・クイーン"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-46c2d9842b4e5338-aa82776c51ec63743bf477e75529c921-v2",
-            "english": "In my dreams, I see a demon more powerful than any of the Hellhorned. One with sharded tail and command over all imps. Did she save the Hellhorned from total destruction, this forgotten Queen?",
-            "french": "En songe, je vois une démone plus puissante que tous ceux des Cornus. La queue écailleuse, elle commande à tous les diablotins. A-t-elle épargné la destruction totale à tous les Cornus, cette reine oubliée ?",
-            "german": "In meinen Träumen sehe ich eine Dämonin, die noch mächtiger als alle mir bekannten Höllenhörner ist. Sie hat einen Splitterscheif und regiert über alle Kobolde. Hat diese längst vergessene Königin einst die Höllenhörner vor der Vernichtung bewahrt?",
-            "russian": "Во сне я вижу демона, который сильнее любого Адского отродья. У него колючий хвост, и ему подчиняются все бесы. Возможно ли, чтобы эта забытая королева спасла Адские отродья от полного уничтожения?",
-            "portuguese": "Nos meus sonhos, vejo um demônio, ela é mais poderosa do que qualquer um dos Endiabrados. Uma com a cauda estilhaçada e comando sobre todos os diabinhos. Será que essa Rainha esquecida salvou os Endiabrados da destruição total?",
-            "chinese": "我在梦里见到了一个比任何狱魔都要强大的恶魔。她长着碎片般的尾巴，号令着所有小鬼。是这位被遗忘的女王把狱魔氏族从彻底灭亡的边缘拉回来的吗？",
-            "spanish": "En mis sueños, veo una demonia más poderosa que ningún otro Astado. Tenía una cola fragmentada y autoridad sobre todos los diablillos. ¿Salvaría a los Astados Infernales de la destrucción esta reina olvidada?",
-            "chinese_traditional": "在我的夢中，我看到一個比任何煉獄族都強大的惡魔。一個有著破碎尾巴並掌管所有小鬼的惡魔。這位被遺忘的女王是否拯救了煉獄族免受滅頂之災？",
-            "korean": "지옥뿔 군단의 어떤 악마보다도 더 강력한 악마를 꿈 속에서 보았다. 그 악마는 파편 꼬리를 지니고 모든 임프를 다루고 있었다. 이 잊혀진 여왕이 지옥뿔 군단을 온전한 파괴에서 구원한 것일까?",
-            "japanese": "夢の中に、獄角族の誰よりも強力な悪魔が出てくる。水晶のような尻尾を持ち、すべてのインプを支配する悪魔。この忘れられた女王は、獄角族を完全な破滅から救ったのだろうか？"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShardtailQueen.prefab",
-          "m_AssetGUID": "b92c7babba9d38140974ece7416fae2f"
-        },
-        "size": 2,
-        "health": 10,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-        ],
-        "characterChatterData": "HellhornedChampionChatterData_Exile"
-      }
+      "id": "ImpQueenChampion",
+      "card_type": "monster",
+      "rarity": "champion",
+      "class": "ClassHellhorned",
+      "pools": [
+        "ChampionPool",
+        "NewChallengerChampionPool"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ShardtailQueen.prefab",
+        "m_AssetGUID": "fd8b85290d9a54c46acffb9f70838088"
+      },
+      "effects": [
+        "@ImpQueenChampion.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "characters": [
+    {
+      "id": "MonsterChampionHellhornedShardtail",
+      "names": {
+        "key": "CharacterData_nameKey-013100f1a2deef6c-aa82776c51ec63743bf477e75529c921-v2",
+        "english": "Shardtail Queen",
+        "french": "Reine Dernier Éclat",
+        "german": "Splitterschweif-Königin",
+        "russian": "Королева Острохвост",
+        "portuguese": "Rainha Estilhaçada",
+        "chinese": "碎尾女王",
+        "spanish": "Reina Fragmentada",
+        "chinese_traditional": "碎尾女王",
+        "korean": "파편 꼬리 여왕",
+        "japanese": "シャードテイル・クイーン"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-46c2d9842b4e5338-aa82776c51ec63743bf477e75529c921-v2",
+          "english": "In my dreams, I see a demon more powerful than any of the Hellhorned. One with sharded tail and command over all imps. Did she save the Hellhorned from total destruction, this forgotten Queen?",
+          "french": "En songe, je vois une démone plus puissante que tous ceux des Cornus. La queue écailleuse, elle commande à tous les diablotins. A-t-elle épargné la destruction totale à tous les Cornus, cette reine oubliée ?",
+          "german": "In meinen Träumen sehe ich eine Dämonin, die noch mächtiger als alle mir bekannten Höllenhörner ist. Sie hat einen Splitterscheif und regiert über alle Kobolde. Hat diese längst vergessene Königin einst die Höllenhörner vor der Vernichtung bewahrt?",
+          "russian": "Во сне я вижу демона, который сильнее любого Адского отродья. У него колючий хвост, и ему подчиняются все бесы. Возможно ли, чтобы эта забытая королева спасла Адские отродья от полного уничтожения?",
+          "portuguese": "Nos meus sonhos, vejo um demônio, ela é mais poderosa do que qualquer um dos Endiabrados. Uma com a cauda estilhaçada e comando sobre todos os diabinhos. Será que essa Rainha esquecida salvou os Endiabrados da destruição total?",
+          "chinese": "我在梦里见到了一个比任何狱魔都要强大的恶魔。她长着碎片般的尾巴，号令着所有小鬼。是这位被遗忘的女王把狱魔氏族从彻底灭亡的边缘拉回来的吗？",
+          "spanish": "En mis sueños, veo una demonia más poderosa que ningún otro Astado. Tenía una cola fragmentada y autoridad sobre todos los diablillos. ¿Salvaría a los Astados Infernales de la destrucción esta reina olvidada?",
+          "chinese_traditional": "在我的夢中，我看到一個比任何煉獄族都強大的惡魔。一個有著破碎尾巴並掌管所有小鬼的惡魔。這位被遺忘的女王是否拯救了煉獄族免受滅頂之災？",
+          "korean": "지옥뿔 군단의 어떤 악마보다도 더 강력한 악마를 꿈 속에서 보았다. 그 악마는 파편 꼬리를 지니고 모든 임프를 다루고 있었다. 이 잊혀진 여왕이 지옥뿔 군단을 온전한 파괴에서 구원한 것일까?",
+          "japanese": "夢の中に、獄角族の誰よりも強力な悪魔が出てくる。水晶のような尻尾を持ち、すべてのインプを支配する悪魔。この忘れられた女王は、獄角族を完全な破滅から救ったのだろうか？"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShardtailQueen.prefab",
+        "m_AssetGUID": "b92c7babba9d38140974ece7416fae2f"
+      },
+      "size": 2,
+      "health": 10,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "chatter": "HellhornedChampionChatterData_Exile"
+    }
+  ],
+  "effects": [
+    {
+      "id": "ImpQueenChampion.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterChampionHellhornedShardtail"
+    }
+  ]
 }

@@ -1,43 +1,50 @@
 {
-  "id": "WrathAbility",
-  "guid": "be1db530-e216-461a-ad4b-44384e088945",
-  "name": "Wrath",
-  "nameKey": {
-    "key": "CardData_nameKey-4d2b0e7ffc732868-526f7f48b6342ea4682ddfd1648a7ab9-v2",
-    "english": "Wrath",
-    "french": "Courroux",
-    "german": "Zorn",
-    "russian": "Гнев",
-    "portuguese": "Ira",
-    "chinese": "狂怒",
-    "spanish": "Ira",
-    "chinese_traditional": "憤怒",
-    "korean": "격노",
-    "japanese": "激怒"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-7d4f1e27b37eef77-526f7f48b6342ea4682ddfd1648a7ab9-v2",
-    "english": "Attack immediately.",
-    "french": "Attaquez immédiatement.",
-    "german": "Greife sofort an.",
-    "russian": "Мгновенная атака.",
-    "portuguese": "Ataca imediatamente.",
-    "chinese": "立即攻击。",
-    "spanish": "Ataca de inmediato.",
-    "chinese_traditional": "立即攻擊。",
-    "korean": "즉시 공격합니다.",
-    "japanese": "即座に攻撃を実行する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAttackWithUnit",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both"
+      "id": "WrathAbility",
+      "names": {
+        "key": "CardData_nameKey-4d2b0e7ffc732868-526f7f48b6342ea4682ddfd1648a7ab9-v2",
+        "english": "Wrath",
+        "french": "Courroux",
+        "german": "Zorn",
+        "russian": "Гнев",
+        "portuguese": "Ira",
+        "chinese": "狂怒",
+        "spanish": "Ira",
+        "chinese_traditional": "憤怒",
+        "korean": "격노",
+        "japanese": "激怒"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-7d4f1e27b37eef77-526f7f48b6342ea4682ddfd1648a7ab9-v2",
+        "english": "Attack immediately.",
+        "french": "Attaquez immédiatement.",
+        "german": "Greife sofort an.",
+        "russian": "Мгновенная атака.",
+        "portuguese": "Ataca imediatamente.",
+        "chinese": "立即攻击。",
+        "spanish": "Ataca de inmediato.",
+        "chinese_traditional": "立即攻擊。",
+        "korean": "즉시 공격합니다.",
+        "japanese": "即座に攻撃を実行する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@WrathAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "WrathAbility.effects0",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    }
+  ]
 }

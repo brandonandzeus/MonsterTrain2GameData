@@ -1,56 +1,67 @@
 {
-  "id": "GlareminderAbility",
-  "guid": "4e267e2a-89cc-4eba-a28e-fa0cdbbe3670",
-  "name": "The Reaping",
-  "nameKey": {
-    "key": "CardData_nameKey-7e0b8a26fd64981d-3519b1c9b88e41448b07676d9fc1a70b-v2",
-    "english": "The Reaping",
-    "french": "Vague toxique",
-    "german": "Die Ernte",
-    "russian": "Жатва",
-    "portuguese": "A Colheita",
-    "chinese": "全域晶爆",
-    "spanish": "Hora de segar",
-    "chinese_traditional": "收割",
-    "korean": "수확",
-    "japanese": "刈り入れ"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-bd791bf666a3b4dc-3519b1c9b88e41448b07676d9fc1a70b-v2",
-    "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units on all floors.",
-    "french": "Applique [corruptpoison] [effect0.status0.power] aux ennemis à tous les niveaux.",
-    "german": "Wende [corruptpoison] [effect0.status0.power] auf gegnerische Einheiten auf allen Ebenen an.",
-    "russian": "Накладывает на врагов на всех этажах [corruptpoison] х[effect0.status0.power].",
-    "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas em todos os andares.",
-    "chinese": "对所有层的敌方单位施加 [corruptpoison] [effect0.status0.power]。",
-    "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas en todos los pisos.",
-    "chinese_traditional": "對所有樓層的敵方單位施加[corruptpoison][effect0.status0.power]。",
-    "korean": "모든 층의 적 유닛들에 [corruptpoison] [effect0.status0.power] 효과를 적용합니다.",
-    "japanese": "すべてのフロアの敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "GlareminderAbility",
+      "names": {
+        "key": "CardData_nameKey-7e0b8a26fd64981d-3519b1c9b88e41448b07676d9fc1a70b-v2",
+        "english": "The Reaping",
+        "french": "Vague toxique",
+        "german": "Die Ernte",
+        "russian": "Жатва",
+        "portuguese": "A Colheita",
+        "chinese": "全域晶爆",
+        "spanish": "Hora de segar",
+        "chinese_traditional": "收割",
+        "korean": "수확",
+        "japanese": "刈り入れ"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-bd791bf666a3b4dc-3519b1c9b88e41448b07676d9fc1a70b-v2",
+        "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units on all floors.",
+        "french": "Applique [corruptpoison] [effect0.status0.power] aux ennemis à tous les niveaux.",
+        "german": "Wende [corruptpoison] [effect0.status0.power] auf gegnerische Einheiten auf allen Ebenen an.",
+        "russian": "Накладывает на врагов на всех этажах [corruptpoison] х[effect0.status0.power].",
+        "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas em todos os andares.",
+        "chinese": "对所有层的敌方单位施加 [corruptpoison] [effect0.status0.power]。",
+        "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas en todos los pisos.",
+        "chinese_traditional": "對所有樓層的敵方單位施加[corruptpoison][effect0.status0.power]。",
+        "korean": "모든 층의 적 유닛들에 [corruptpoison] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "すべてのフロアの敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@GlareminderAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "tower",
-      "targetTeamType": "heroes",
-      "paramStatusEffects": [
+      "id": "GlareminderAbility.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "tower",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "statusId": "corrupt_poison",
+          "status": "corrupt_poison",
           "count": 6
         }
       ],
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Spells/Wurmkin/EchoSnare/FX_EchoSnare.prefab",
-          "m_AssetGUID": "e16e9b56751ec374b877f3cedf70889b"
-        },
-        "spawnLocation": "room_center"
-      }
+      "applied_to_self_vfx": "@GlareminderAbility.effects0.appliedToSelfVFX"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "vfxs": [
+    {
+      "id": "GlareminderAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Spells/Wurmkin/EchoSnare/FX_EchoSnare.prefab",
+        "m_AssetGUID": "e16e9b56751ec374b877f3cedf70889b"
+      },
+      "spawn_location": "room_center"
+    }
+  ]
 }

@@ -1,68 +1,56 @@
 {
-  "id": "TethysSpellWeaknessOnStrike3",
-  "guid": "7a3a126b-84e2-4732-b3ba-7d011b3db779",
-  "name": "Runespeak III",
-  "nameKey": {
-    "key": "CardData_nameKey-c12e722b0b016b04-4555913574f26e246bac3b77b7da2f15-v2",
-    "english": "Runespeak III",
-    "french": "Langue runique III",
-    "german": "Runensprache III",
-    "russian": "Говорящие руны III",
-    "portuguese": "Fala Rúnica III",
-    "chinese": "符文话语 III",
-    "spanish": "Lengua rúnica III",
-    "chinese_traditional": "符文之語III",
-    "korean": "룬스피크 III",
-    "japanese": "ルーン語III"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-bfa51095f64074b3-4555913574f26e246bac3b77b7da2f15-v2",
-    "english": "Draw a damage spell and grant it +[effect0.upgrade.bonusdamage] [magicpower].",
-    "french": "Piochez un sort de dégâts, qui gagne +[effect0.upgrade.bonusdamage] [magicpower].",
-    "german": "Ziehe einen Schadenszauber und wende +[effect0.upgrade.bonusdamage] [magicpower] darauf an.",
-    "russian": "Вытяните чары урона. К ним добавится [magicpower] х[effect0.upgrade.bonusdamage].",
-    "portuguese": "Compra um feitiço de dano e concede +[effect0.upgrade.bonusdamage] [magicpower] a ele.",
-    "chinese": "抽一张伤害性法术牌并使其获得 +[effect0.upgrade.bonusdamage][magicpower]。",
-    "spanish": "Roba un hechizo de daño y añade +[effect0.upgrade.bonusdamage] [magicpower].",
-    "chinese_traditional": "抽一張傷害法術並賦予其+[effect0.upgrade.bonusdamage][magicpower]。",
-    "korean": "피해 주문 카드를 뽑고 +[effect0.upgrade.bonusdamage] [magicpower]을 부여합니다.",
-    "japanese": "ダメージ呪文をドローして、+[effect0.upgrade.bonusdamage] [magicpower]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAddTempCardUpgradeToNextDrawnCard",
-      "paramCardUpgradeData": {
-        "id": "TethysSpellWeaknessOnStrike_Upgrade3",
-        "guid": "688e80d1-0660-4481-9454-5e3dc24138d6",
-        "bonusDamage": 20,
-        "bonusHeal": 20
-      }
-    },
-    {
-      "effectStateName": "CardEffectDrawType",
-      "paramCardFilter": {
-        "id": "OnlyDamageCardExcludeSpellsFromMagicPower",
-        "requiredCardEffectsOperator": "or",
-        "requiredCardEffects": [
-          "CardEffectDamage",
-          "CardEffectDamageByPercentRemainingHealth",
-          "CardEffectDamageByUnitsKilled",
-          "CardEffectDamagePerHp",
-          "CardEffectDamagePerSourceAttack",
-          "CardEffectDamagePerTargetAttack",
-          "CardEffectDamageWithTrample",
-          "CardEffectHealAndDamageRelative"
-        ],
-        "disallowedCardPools": [
-          "SpellsNotAllowedSpellPowerPool"
-        ]
+      "id": "TethysSpellWeaknessOnStrike3",
+      "names": {
+        "key": "CardData_nameKey-c12e722b0b016b04-4555913574f26e246bac3b77b7da2f15-v2",
+        "english": "Runespeak III",
+        "french": "Langue runique III",
+        "german": "Runensprache III",
+        "russian": "Говорящие руны III",
+        "portuguese": "Fala Rúnica III",
+        "chinese": "符文话语 III",
+        "spanish": "Lengua rúnica III",
+        "chinese_traditional": "符文之語III",
+        "korean": "룬스피크 III",
+        "japanese": "ルーン語III"
       },
-      "paramInt": 1
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-bfa51095f64074b3-4555913574f26e246bac3b77b7da2f15-v2",
+        "english": "Draw a damage spell and grant it +[effect0.upgrade.bonusdamage] [magicpower].",
+        "french": "Piochez un sort de dégâts, qui gagne +[effect0.upgrade.bonusdamage] [magicpower].",
+        "german": "Ziehe einen Schadenszauber und wende +[effect0.upgrade.bonusdamage] [magicpower] darauf an.",
+        "russian": "Вытяните чары урона. К ним добавится [magicpower] х[effect0.upgrade.bonusdamage].",
+        "portuguese": "Compra um feitiço de dano e concede +[effect0.upgrade.bonusdamage] [magicpower] a ele.",
+        "chinese": "抽一张伤害性法术牌并使其获得 +[effect0.upgrade.bonusdamage][magicpower]。",
+        "spanish": "Roba un hechizo de daño y añade +[effect0.upgrade.bonusdamage] [magicpower].",
+        "chinese_traditional": "抽一張傷害法術並賦予其+[effect0.upgrade.bonusdamage][magicpower]。",
+        "korean": "피해 주문 카드를 뽑고 +[effect0.upgrade.bonusdamage] [magicpower]을 부여합니다.",
+        "japanese": "ダメージ呪文をドローして、+[effect0.upgrade.bonusdamage] [magicpower]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@TethysSpellWeaknessOnStrike3.effects0",
+        "@TethysSpellWeaknessOnStrike3.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "TethysSpellWeaknessOnStrike3.effects0",
+      "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+      "param_upgrade": "TethysSpellWeaknessOnStrike_Upgrade3"
+    },
+    {
+      "id": "TethysSpellWeaknessOnStrike3.effects1",
+      "name": "CardEffectDrawType",
+      "param_card_filter": "@TethysSpellWeaknessOnStrike3.effects1.paramCardFilter",
+      "param_int": 1
+    }
+  ]
 }

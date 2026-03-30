@@ -1,43 +1,50 @@
 {
-  "id": "PhaseAbility",
-  "guid": "d55e402f-326b-4b20-918f-4d8afd1fd0aa",
-  "name": "Moonipulate",
-  "nameKey": {
-    "key": "CardData_nameKey-33ae516deb4eafa4-0c09a945546d55f4aaac1e352b70bce9-v2",
-    "english": "Moonipulate",
-    "french": "Manipulation lunaire",
-    "german": "Mondipulation",
-    "russian": "Лунипуляция",
-    "portuguese": "Manipulação Lunar",
-    "chinese": "月相操控",
-    "spanish": "Manilunación",
-    "chinese_traditional": "月之操縱",
-    "korean": "달빛 환상",
-    "japanese": "月操作"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-d485406036dfdda8-0c09a945546d55f4aaac1e352b70bce9-v2",
-    "english": "[phase].",
-    "french": "[phase].",
-    "german": "[phase].",
-    "russian": "[phase].",
-    "portuguese": "[phase].",
-    "chinese": "[phase]。",
-    "spanish": "[phase].",
-    "chinese_traditional": "[phase]。",
-    "korean": "[phase].",
-    "japanese": "[phase]。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAdvanceMoonPhase",
-      "paramInt": 1
+      "id": "PhaseAbility",
+      "names": {
+        "key": "CardData_nameKey-33ae516deb4eafa4-0c09a945546d55f4aaac1e352b70bce9-v2",
+        "english": "Moonipulate",
+        "french": "Manipulation lunaire",
+        "german": "Mondipulation",
+        "russian": "Лунипуляция",
+        "portuguese": "Manipulação Lunar",
+        "chinese": "月相操控",
+        "spanish": "Manilunación",
+        "chinese_traditional": "月之操縱",
+        "korean": "달빛 환상",
+        "japanese": "月操作"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-d485406036dfdda8-0c09a945546d55f4aaac1e352b70bce9-v2",
+        "english": "[phase].",
+        "french": "[phase].",
+        "german": "[phase].",
+        "russian": "[phase].",
+        "portuguese": "[phase].",
+        "chinese": "[phase]。",
+        "spanish": "[phase].",
+        "chinese_traditional": "[phase]。",
+        "korean": "[phase].",
+        "japanese": "[phase]。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "effects": [
+        "@PhaseAbility.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "PhaseAbility.effects0",
+      "name": "CardEffectAdvanceMoonPhase",
+      "param_int": 1
+    }
+  ]
 }

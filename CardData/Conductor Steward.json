@@ -1,156 +1,172 @@
 {
-  "id": "ConductorSteward",
-  "guid": "52b17dc7-968f-4748-a2ea-b6c09c5c8931",
-  "name": "Conductor Steward",
-  "cost": 2,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsRailforgedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_ConductorSteward.prefab",
-    "m_AssetGUID": "cd3c2e0dbc885194aa0c1d50a25cc5c0"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterForemanSteward",
-        "guid": "7c322a41-c343-4aba-bcdd-f2a536428385",
-        "nameKey": {
-          "key": "CharacterData_nameKey-4f755b973523785b-9f6e0fff207b541478f6ed4b72f4bc63-v2",
-          "english": "Conductor Steward",
-          "french": "Steward contrôleur",
-          "german": "Schaffner-Begleiter",
-          "russian": "Кондуктор",
-          "portuguese": "Guarda Condutor",
-          "chinese": "列车长乘务员",
-          "spanish": "Auxiliar revisor",
-          "chinese_traditional": "列車長僕役",
-          "korean": "기관사 잡부",
-          "japanese": "コンダクター・スチュワード"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-0de92a92e6a40ffa-9f6e0fff207b541478f6ed4b72f4bc63-v2",
-            "english": "Without instruction, these Conductors instinctively know exactly when the train will stop and start. They also have the unique ability to communicate through their whistles, which has allowed the coordinating of troops aboard the train to be much more efficient.",
-            "french": "Sans aucune instruction, ces contrôleurs savent instinctivement très précisément quand le train va s'arrêter et redémarrer. Ils possèdent également la capacité unique de communiquer par sifflets, ce qui a permis une coordination beaucoup plus efficace des troupes à bord.",
-            "german": "Diese Schaffner wissen instinktiv genau, wann der Zug anhält und weiterfährt. Sie besitzen außerdem die einzigartige Fähigkeit, mit ihren Pfeifen zu kommunizieren, wodurch die Koordination der Truppen an Bord des Zugs deutlich effizienter abläuft.",
-            "russian": "Без всякого обучения эти Кондукторы инстинктивно знают, когда поезд остановится и когда двинется. Есть у них еще одна особенность: они общаются свистками. Из-за этого координировать войска в поезде стало куда проще.",
-            "portuguese": "Sem instruções, estes Condutores sabem instintivamente o momento exato quando o trem vai parar e partir. Eles também têm uma habilidade única para se comunicar com seus apitos, que os permitem coordenar as tropas a bordo do trem de modo muito mais eficiente.",
-            "chinese": "这些列车长并没有接收到指令，却本能地知道火车何时停靠，何时发车。它们还有一项独特的本领，就是通过汽笛声交流，从而更高效地协调火车上的部队。",
-            "spanish": "Sin ningún adiestramiento, estos revisores saben instintivamente cuándo para y arranca el tren. También poseen la capacidad única de comunicarse mediante sus silbatos, lo que nos permite coordinar las tropas a bordo de forma eficiente.",
-            "chinese_traditional": "無須任何指示，這些列車長便能本能地知曉列車的啟停。他們還能透過汽笛溝通，此獨特能力使列車上部隊的協調效率大為提升。",
-            "korean": "훈련 없이도 이 지휘자들은 열차의 정지와 출발 타이밍을 본능처럼 정확히 파악한다. 여기에 호각으로 명령을 주고받는 특유의 소통 능력이 더해져, 열차 내 부대 운영은 이전보다 훨씬 높은 효율을 얻게 되었다.",
-            "japanese": "指示を与えずとも、この車掌たちはいつ列車が停車、あるいは発車するかを本能的に知っている。彼らは笛でコミュニケーションを取るという特殊な能力も有しており、戦士たちの乗車の整理を、大幅に効率的にできるのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ConductorSteward.prefab",
-          "m_AssetGUID": "d320ded29402257439c2816b375fa4b7"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-cf8f227952fd25f4-9f6e0fff207b541478f6ed4b72f4bc63-v2",
-              "english": "Apply +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] to the summoned unit.",
-              "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à l'unité invoquée.",
-              "german": "Verleiht der gerufenen Einheit +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
-              "russian": "Призванному бойцу дается +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
-              "portuguese": "Concede +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à unidade invocada.",
-              "chinese": "使被召唤的单位获得 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
-              "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a la unidad invocada.",
-              "chinese_traditional": "賦予召喚的單位+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
-              "korean": "소환된 유닛 하나에 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 부여합니다.",
-              "japanese": "召喚されたユニットに+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を付与する。"
-            },
-            "trigger": "card_monster_played",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                "targetMode": "last_spawned_character",
-                "targetTeamType": "monsters",
-                "paramCardUpgradeData": {
-                  "id": "Plus5Attack5Health",
-                  "guid": "5b38fa40-8776-4a23-af0c-22845e4ea552",
-                  "bonusDamage": 5,
-                  "bonusHP": 5
-                }
-              }
-            ]
-          }
-        ],
-        "unitAbility": {
-          "id": "RailforgedChampionConductorStewardAbility",
-          "guid": "8a8b394d-3dda-48dd-b157-20ca0c5fd7fb",
-          "nameKey": {
-            "key": "CardData_nameKey-15647850884ba452-1d372bc2578cb4146a64b474ccc0f724-v2",
-            "english": "Train Whistle",
-            "french": "Coup de sifflet",
-            "german": "Zugpfeife",
-            "russian": "Гудок поезда",
-            "portuguese": "Apito do Trem",
-            "chinese": "火车汽笛",
-            "spanish": "Silbato del tren",
-            "chinese_traditional": "列車汽笛",
-            "korean": "기적",
-            "japanese": "汽笛"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-d620ef6bbd2ca3cb-1d372bc2578cb4146a64b474ccc0f724-v2",
-            "english": "Friendly units attack immediately.",
-            "french": "Les unités alliées attaquent immédiatement.",
-            "german": "Verbündete Einheiten greifen sofort an.",
-            "russian": "Союзники атакуют немедленно.",
-            "portuguese": "Unidades aliadas atacam imediatamente.",
-            "chinese": "友方单位立即发动攻击。",
-            "spanish": "Las unidades aliadas atacan de inmediato.",
-            "chinese_traditional": "友方單位立刻攻擊。",
-            "korean": "아군 유닛들이 즉각적으로 공격합니다.",
-            "japanese": "味方ユニットが即座に攻撃を実行する。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "cardArtPrefabVariantRef": {
-            "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
-            "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
-          },
-          "effects": [
-            {
-              "effectStateName": "CardEffectAttackWithUnit",
-              "targetMode": "room",
-              "targetTeamType": "monsters"
-            }
-          ],
-          "cooldownAfterActivated": 3,
-          "isUnitAbility": true,
-          "requiredDLC": "railforged",
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "size": 2,
-        "health": 10,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Automaton2",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "RailforgedConductorStewardChatterData",
-        "artistAttribution": "Ron Kee"
-      }
+      "id": "ConductorSteward",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassRailforged",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsRailforgedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_ConductorSteward.prefab",
+        "m_AssetGUID": "cd3c2e0dbc885194aa0c1d50a25cc5c0"
+      },
+      "effects": [
+        "@ConductorSteward.effects0"
+      ],
+      "targetless": false,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Ron Kee"
+    },
+    {
+      "id": "ConductorSteward.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-15647850884ba452-1d372bc2578cb4146a64b474ccc0f724-v2",
+        "english": "Train Whistle",
+        "french": "Coup de sifflet",
+        "german": "Zugpfeife",
+        "russian": "Гудок поезда",
+        "portuguese": "Apito do Trem",
+        "chinese": "火车汽笛",
+        "spanish": "Silbato del tren",
+        "chinese_traditional": "列車汽笛",
+        "korean": "기적",
+        "japanese": "汽笛"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-d620ef6bbd2ca3cb-1d372bc2578cb4146a64b474ccc0f724-v2",
+        "english": "Friendly units attack immediately.",
+        "french": "Les unités alliées attaquent immédiatement.",
+        "german": "Verbündete Einheiten greifen sofort an.",
+        "russian": "Союзники атакуют немедленно.",
+        "portuguese": "Unidades aliadas atacam imediatamente.",
+        "chinese": "友方单位立即发动攻击。",
+        "spanish": "Las unidades aliadas atacan de inmediato.",
+        "chinese_traditional": "友方單位立刻攻擊。",
+        "korean": "아군 유닛들이 즉각적으로 공격합니다.",
+        "japanese": "味方ユニットが即座に攻撃を実行する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
+        "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
+      },
+      "effects": [
+        "@ConductorSteward.effects0.paramCharacterData.unitAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "targetless": false,
-  "requiredDLC": "railforged",
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Ron Kee"
+  "characters": [
+    {
+      "id": "MonsterForemanSteward",
+      "names": {
+        "key": "CharacterData_nameKey-4f755b973523785b-9f6e0fff207b541478f6ed4b72f4bc63-v2",
+        "english": "Conductor Steward",
+        "french": "Steward contrôleur",
+        "german": "Schaffner-Begleiter",
+        "russian": "Кондуктор",
+        "portuguese": "Guarda Condutor",
+        "chinese": "列车长乘务员",
+        "spanish": "Auxiliar revisor",
+        "chinese_traditional": "列車長僕役",
+        "korean": "기관사 잡부",
+        "japanese": "コンダクター・スチュワード"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-0de92a92e6a40ffa-9f6e0fff207b541478f6ed4b72f4bc63-v2",
+          "english": "Without instruction, these Conductors instinctively know exactly when the train will stop and start. They also have the unique ability to communicate through their whistles, which has allowed the coordinating of troops aboard the train to be much more efficient.",
+          "french": "Sans aucune instruction, ces contrôleurs savent instinctivement très précisément quand le train va s'arrêter et redémarrer. Ils possèdent également la capacité unique de communiquer par sifflets, ce qui a permis une coordination beaucoup plus efficace des troupes à bord.",
+          "german": "Diese Schaffner wissen instinktiv genau, wann der Zug anhält und weiterfährt. Sie besitzen außerdem die einzigartige Fähigkeit, mit ihren Pfeifen zu kommunizieren, wodurch die Koordination der Truppen an Bord des Zugs deutlich effizienter abläuft.",
+          "russian": "Без всякого обучения эти Кондукторы инстинктивно знают, когда поезд остановится и когда двинется. Есть у них еще одна особенность: они общаются свистками. Из-за этого координировать войска в поезде стало куда проще.",
+          "portuguese": "Sem instruções, estes Condutores sabem instintivamente o momento exato quando o trem vai parar e partir. Eles também têm uma habilidade única para se comunicar com seus apitos, que os permitem coordenar as tropas a bordo do trem de modo muito mais eficiente.",
+          "chinese": "这些列车长并没有接收到指令，却本能地知道火车何时停靠，何时发车。它们还有一项独特的本领，就是通过汽笛声交流，从而更高效地协调火车上的部队。",
+          "spanish": "Sin ningún adiestramiento, estos revisores saben instintivamente cuándo para y arranca el tren. También poseen la capacidad única de comunicarse mediante sus silbatos, lo que nos permite coordinar las tropas a bordo de forma eficiente.",
+          "chinese_traditional": "無須任何指示，這些列車長便能本能地知曉列車的啟停。他們還能透過汽笛溝通，此獨特能力使列車上部隊的協調效率大為提升。",
+          "korean": "훈련 없이도 이 지휘자들은 열차의 정지와 출발 타이밍을 본능처럼 정확히 파악한다. 여기에 호각으로 명령을 주고받는 특유의 소통 능력이 더해져, 열차 내 부대 운영은 이전보다 훨씬 높은 효율을 얻게 되었다.",
+          "japanese": "指示を与えずとも、この車掌たちはいつ列車が停車、あるいは発車するかを本能的に知っている。彼らは笛でコミュニケーションを取るという特殊な能力も有しており、戦士たちの乗車の整理を、大幅に効率的にできるのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ConductorSteward.prefab",
+        "m_AssetGUID": "d320ded29402257439c2816b375fa4b7"
+      },
+      "impact_vfx": "@ConductorSteward.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@ConductorSteward.effects0.paramCharacterData.triggers0"
+      ],
+      "ability": "@ConductorSteward.effects0.paramCharacterData.unitAbility",
+      "size": 2,
+      "health": 10,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Automaton2",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "RailforgedConductorStewardChatterData",
+      "artist": "Ron Kee"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ConductorSteward.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-cf8f227952fd25f4-9f6e0fff207b541478f6ed4b72f4bc63-v2",
+        "english": "Apply +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] to the summoned unit.",
+        "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] à l'unité invoquée.",
+        "german": "Verleiht der gerufenen Einheit +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+        "russian": "Призванному бойцу дается +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+        "portuguese": "Concede +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] à unidade invocada.",
+        "chinese": "使被召唤的单位获得 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] a la unidad invocada.",
+        "chinese_traditional": "賦予召喚的單位+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "소환된 유닛 하나에 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 부여합니다.",
+        "japanese": "召喚されたユニットに+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を付与する。"
+      },
+      "trigger": "card_monster_played",
+      "effects": [
+        "@ConductorSteward.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ConductorSteward.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_spawned_character",
+      "target_team": "monsters",
+      "param_upgrade": "Plus5Attack5Health"
+    },
+    {
+      "id": "ConductorSteward.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "room",
+      "target_team": "monsters"
+    },
+    {
+      "id": "ConductorSteward.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterForemanSteward"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "ConductorSteward.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

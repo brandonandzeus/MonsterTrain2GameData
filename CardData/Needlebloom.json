@@ -1,45 +1,52 @@
 {
-  "id": "WyldentenSlayForStingAbility",
-  "guid": "08a0835a-88e4-414a-907e-36a619e7aef9",
-  "name": "Needlebloom",
-  "nameKey": {
-    "key": "CardData_nameKey-c19dc508027dd94d-cfb864648fd45fa458021626a7ca15af-v2",
-    "english": "Needlebloom",
-    "french": "Floraison d'épines",
-    "german": "Nadelblüte",
-    "russian": "Смертоносная игла",
-    "portuguese": "Florescer Espinhoso",
-    "chinese": "针刺绽放",
-    "spanish": "Flor de espino",
-    "chinese_traditional": "針刺綻放",
-    "korean": "바늘꽃",
-    "japanese": "針の花"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-98d54c695440698c-cfb864648fd45fa458021626a7ca15af-v2",
-    "english": "Add [effect0.power] <b>Sting</b> spells to hand.",
-    "french": "Ajoute [effect0.power] sorts <b>Piqûre</b> à la main.",
-    "german": "Nimm [effect0.power] <b>Stachel</b>-Zauber auf die Hand.",
-    "russian": "Добавляет [effect0.power] шт. карт <b>Укол</b> в руку.",
-    "portuguese": "Adiciona [effect0.power] feitiços de <b>Ferroada</b> à mão.",
-    "chinese": "将 [effect0.power] 张<b>蛰刺</b>法术加入手牌。",
-    "spanish": "Añade [effect0.power] hechizos <b>Aguijonazo</b> a tu mano.",
-    "chinese_traditional": "將[effect0.power]張<b>蜇刺</b>法術卡加入手牌。",
-    "korean": "<b>가시 발사</b> 주문 [effect0.power]장을 패에 추가합니다.",
-    "japanese": "手札に<b>刺突</b>の呪文を[effect0.power]枚追加する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAddBattleCard",
-      "paramInt": 3,
-      "additionalParamInt": 3,
-      "paramCardPool": "StingOnlyPool"
+      "id": "WyldentenSlayForStingAbility",
+      "names": {
+        "key": "CardData_nameKey-c19dc508027dd94d-cfb864648fd45fa458021626a7ca15af-v2",
+        "english": "Needlebloom",
+        "french": "Floraison d'épines",
+        "german": "Nadelblüte",
+        "russian": "Смертоносная игла",
+        "portuguese": "Florescer Espinhoso",
+        "chinese": "针刺绽放",
+        "spanish": "Flor de espino",
+        "chinese_traditional": "針刺綻放",
+        "korean": "바늘꽃",
+        "japanese": "針の花"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-98d54c695440698c-cfb864648fd45fa458021626a7ca15af-v2",
+        "english": "Add [effect0.power] <b>Sting</b> spells to hand.",
+        "french": "Ajoute [effect0.power] sorts <b>Piqûre</b> à la main.",
+        "german": "Nimm [effect0.power] <b>Stachel</b>-Zauber auf die Hand.",
+        "russian": "Добавляет [effect0.power] шт. карт <b>Укол</b> в руку.",
+        "portuguese": "Adiciona [effect0.power] feitiços de <b>Ferroada</b> à mão.",
+        "chinese": "将 [effect0.power] 张<b>蛰刺</b>法术加入手牌。",
+        "spanish": "Añade [effect0.power] hechizos <b>Aguijonazo</b> a tu mano.",
+        "chinese_traditional": "將[effect0.power]張<b>蜇刺</b>法術卡加入手牌。",
+        "korean": "<b>가시 발사</b> 주문 [effect0.power]장을 패에 추가합니다.",
+        "japanese": "手札に<b>刺突</b>の呪文を[effect0.power]枚追加する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "effects": [
+        "@WyldentenSlayForStingAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "WyldentenSlayForStingAbility.effects0",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 3,
+      "param_int_2": 3,
+      "param_card_pool": "StingOnlyPool"
+    }
+  ]
 }

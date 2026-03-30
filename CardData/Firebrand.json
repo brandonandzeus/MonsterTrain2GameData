@@ -1,100 +1,114 @@
 {
-  "id": "Firebrand",
-  "guid": "3d20e7fd-0c1f-478e-8845-4a11e27baca5",
-  "name": "Firebrand",
-  "cost": 2,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsBanishedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Firebrand.prefab",
-    "m_AssetGUID": "a8c3d82c696cd3848a456e8620f78d59"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterFirebrand",
-        "guid": "1d948498-083a-4195-80b5-cbe3e6aed1b4",
-        "nameKey": {
-          "key": "CharacterData_nameKey-9c0842d57957c62a-3ff6685a9d86a3146a4ea09974c8bb84-v2",
-          "english": "Firebrand",
-          "french": "Boutefeu",
-          "german": "Heißsporn",
-          "russian": "Подстрекательница",
-          "portuguese": "Porta-Chamas",
-          "chinese": "放火者",
-          "spanish": "Inflamadora",
-          "chinese_traditional": "火種",
-          "korean": "화염의 선동자",
-          "japanese": "ファイアブランド"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-60a198ab13ef5fe9-3ff6685a9d86a3146a4ea09974c8bb84-v2",
-            "english": "They were once tasked with dousing the flames along the Rail. Now, they set the rails aflame.",
-            "french": "Ils étaient autrefois chargés d'éteindre les flammes le long de la Voie. Aujourd'hui, ils mettent le feu aux rails.",
-            "german": "Sie waren einst damit betraut, die Flammen entlang des Gleises zu löschen. Nun setzen sie diese in Brand.",
-            "russian": "Когда-то им было поручено гасить пламя на железной дороге. Теперь они поджигают рельсы.",
-            "portuguese": "Antes eles tinham a tarefa de apagar as chamas ao longo dos Trilhos. Agora os incendeiam.",
-            "chinese": "他们曾经负责浇灭沿着铁道燃烧的火焰。如今，他们又将铁道点燃。",
-            "spanish": "Hace tiempo, su misión era apagar incendios a lo largo de los Raíles. Ahora existen para prenderlos.",
-            "chinese_traditional": "他們曾經負責熄滅軌道沿線的火焰。現在，他們則負責點燃軌道。",
-            "korean": "이들은 한때 선로를 따라 화재를 진압하는 임무를 맡았었다. 지금은 그들이 선로에 불을 지르고 있다.",
-            "japanese": "彼らはかつて、線路沿いの火を消す任務を負っていた。しかし今では、鉄道に火をつけている。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Firebrand.prefab",
-          "m_AssetGUID": "bb5bc2a69ca18bf42aa9b32d0cd55c5f"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-ffc8c5de5b514c4c-3ff6685a9d86a3146a4ea09974c8bb84-v2",
-              "english": "Gain [valor] [effect0.status0.power].",
-              "french": "Octroie [valor] [effect0.status0.power].",
-              "german": "Erhalte [valor] [effect0.status0.power].",
-              "russian": "Дает [valor] х[effect0.status0.power].",
-              "portuguese": "Recebe [valor] [effect0.status0.power].",
-              "chinese": "获得 [valor] [effect0.status0.power]。",
-              "spanish": "Añade [valor] [effect0.status0.power].",
-              "chinese_traditional": "獲得[valor][effect0.status0.power]。",
-              "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
-              "japanese": "[valor] [effect0.status0.power]を得る。"
-            },
-            "trigger": "on_hit",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "self",
-                "targetTeamType": "monsters",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "valor",
-                    "count": 2
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 30,
-        "attackDamage": 15,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Angel"
-        ],
-        "characterChatterData": "BanishedAngelFemaleChatterData"
-      }
+      "id": "Firebrand",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassBanished",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsBanishedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Firebrand.prefab",
+        "m_AssetGUID": "a8c3d82c696cd3848a456e8620f78d59"
+      },
+      "effects": [
+        "@Firebrand.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Luke Banke"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Luke Banke"
+  "characters": [
+    {
+      "id": "MonsterFirebrand",
+      "names": {
+        "key": "CharacterData_nameKey-9c0842d57957c62a-3ff6685a9d86a3146a4ea09974c8bb84-v2",
+        "english": "Firebrand",
+        "french": "Boutefeu",
+        "german": "Heißsporn",
+        "russian": "Подстрекательница",
+        "portuguese": "Porta-Chamas",
+        "chinese": "放火者",
+        "spanish": "Inflamadora",
+        "chinese_traditional": "火種",
+        "korean": "화염의 선동자",
+        "japanese": "ファイアブランド"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-60a198ab13ef5fe9-3ff6685a9d86a3146a4ea09974c8bb84-v2",
+          "english": "They were once tasked with dousing the flames along the Rail. Now, they set the rails aflame.",
+          "french": "Ils étaient autrefois chargés d'éteindre les flammes le long de la Voie. Aujourd'hui, ils mettent le feu aux rails.",
+          "german": "Sie waren einst damit betraut, die Flammen entlang des Gleises zu löschen. Nun setzen sie diese in Brand.",
+          "russian": "Когда-то им было поручено гасить пламя на железной дороге. Теперь они поджигают рельсы.",
+          "portuguese": "Antes eles tinham a tarefa de apagar as chamas ao longo dos Trilhos. Agora os incendeiam.",
+          "chinese": "他们曾经负责浇灭沿着铁道燃烧的火焰。如今，他们又将铁道点燃。",
+          "spanish": "Hace tiempo, su misión era apagar incendios a lo largo de los Raíles. Ahora existen para prenderlos.",
+          "chinese_traditional": "他們曾經負責熄滅軌道沿線的火焰。現在，他們則負責點燃軌道。",
+          "korean": "이들은 한때 선로를 따라 화재를 진압하는 임무를 맡았었다. 지금은 그들이 선로에 불을 지르고 있다.",
+          "japanese": "彼らはかつて、線路沿いの火を消す任務を負っていた。しかし今では、鉄道に火をつけている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Firebrand.prefab",
+        "m_AssetGUID": "bb5bc2a69ca18bf42aa9b32d0cd55c5f"
+      },
+      "triggers": [
+        "@Firebrand.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 30,
+      "attack_damage": 15,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Angel"
+      ],
+      "chatter": "BanishedAngelFemaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Firebrand.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-ffc8c5de5b514c4c-3ff6685a9d86a3146a4ea09974c8bb84-v2",
+        "english": "Gain [valor] [effect0.status0.power].",
+        "french": "Octroie [valor] [effect0.status0.power].",
+        "german": "Erhalte [valor] [effect0.status0.power].",
+        "russian": "Дает [valor] х[effect0.status0.power].",
+        "portuguese": "Recebe [valor] [effect0.status0.power].",
+        "chinese": "获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power].",
+        "chinese_traditional": "獲得[valor][effect0.status0.power]。",
+        "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[valor] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@Firebrand.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Firebrand.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "valor",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "Firebrand.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterFirebrand"
+    }
+  ]
 }

@@ -1,108 +1,122 @@
 {
-  "id": "AlphaFiend",
-  "guid": "4aa37169-c5cf-4a5b-b927-dc31b05f6e24",
-  "name": "Alpha Fiend",
-  "cost": 2,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsHellhornedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Omegademon.prefab",
-    "m_AssetGUID": "338e37e2fe9e08f4dbe42f0b9cd267f6"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "AlphaFiend",
-        "guid": "1cffb6ed-add9-4d8d-9962-ab7b7862ed07",
-        "nameKey": {
-          "key": "CharacterData_nameKey-3136c43ce835b000-d12e27b33d6c5c848b9f4a9ff82d845e-v2",
-          "english": "Alpha Fiend",
-          "french": "Monstre alpha",
-          "german": "Alpha-Unhold",
-          "russian": "Альфа-изувер",
-          "portuguese": "Maldito Alfa",
-          "chinese": "恐魔领主",
-          "spanish": "Demonio alfa",
-          "chinese_traditional": "阿爾法惡魔",
-          "korean": "악마 우두머리",
-          "japanese": "アルファ・フィーンド"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-1f648e65e8da3dce-d12e27b33d6c5c848b9f4a9ff82d845e-v2",
-            "english": "These ancient demons of the Hellhorned live a reclusive life on the edge of the Scorched Plains. Their isolated existence has made them even more difficult to communicate with, but they seem to understand the peril their clan is in since they’ve joined me on this dangerous journey.",
-            "french": "Ces diables Cornus ancestraux mènent une vie recluse aux abords des Plaines calcinées. Leur existence isolée rend toute communication particulièrement difficile, mais ils semblent comprendre le péril qu'encourt leur clan puisqu'ils m'ont rejoint dans mon dangereux périple.",
-            "german": "Diese uralten Dämonen der Höllenhörner leben zurückgezogen am Rande der Verbrannten Ebenen. Durch ihre lange Isolation kann man kaum mit ihnen kommunizieren, doch sie scheinen zu verstehen, dass ihr Stamm in Gefahr ist. Schließlich folgen sie mir auf dieser gefährlichen Reise.",
-            "russian": "Эти древние демоны ведут затворнический образ жизни на краю Выжженных равнин. Переговоры усложнялись тем, что они привыкли держаться обособленно, но, кажется, им удалось понять, какая угроза нависла над их кланом, раз они присоединились ко мне в этом опасном путешествии.",
-            "portuguese": "Estes demônios Endiabrados anciões viviam reclusos nas fronteiras das Planícies Devastadas. Sua existência ermitã complica ainda mais a comunicação, mas eles aparentam entender o perigo que seu clã está sofrendo, visto que se juntaram a mim nessa jornada arriscada.",
-            "chinese": "这种古代狱魔在燃烧平原的边境过着隐居的生活。由于过着与世隔绝的生活，几乎没什么人能与它们进行沟通。不过，它们似乎已经了解到了自己的氏族所面临的危险，因而加入了我这场危险的旅程。",
-            "spanish": "Estos antiguos demonios de los Astados Infernales viven aislados en las fronteras de las Llanuras Calcinadas. Su existencia solitaria ha dificultado aún más la comunicación con ellos, pero parecen entender el peligro al que se enfrenta su clan, ya que me acompañan en este peligroso viaje.",
-            "chinese_traditional": "這些煉獄族的遠古惡魔，在焦灼平原的邊緣過著隱居的生活。他們的孤立生活使他們變得更難溝通，但自從他們加入我踏上這趟危險的旅程以來，他們似乎理解了他們氏族所面臨的危險。",
-            "korean": "고대 지옥뿔 군단 악마는 불타는 평원 가장자리에 은둔하며 살아간다. 이들은 고립된 생활을 하고 있어 소통이 더욱 어려워졌지만, 이 위험한 여정에 합류한 이후 자신들의 클랜이 처한 위기를 깨닫게 된 것 같다.",
-            "japanese": "獄角族の古代の悪魔たちは、焦土平原の端で隠遁生活をしている。隔離されていることで彼らとの交流は以前にも増して難しくなったが、この危険な旅に同行するということは一族の危機を理解しているからのようだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Omegademon.prefab",
-          "m_AssetGUID": "aa6e0f0f0a1dc0f4b85346368b76de28"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-3ae21bd4270cca36-d12e27b33d6c5c848b9f4a9ff82d845e-v2",
-              "english": "+[effect0.upgrade.bonusdamage][attack].",
-              "french": "+[effect0.upgrade.bonusdamage][attack].",
-              "german": "+[effect0.upgrade.bonusdamage][attack].",
-              "russian": "+[effect0.upgrade.bonusdamage][attack].",
-              "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
-              "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
-              "spanish": "+[effect0.upgrade.bonusdamage][attack].",
-              "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
-              "korean": "+[effect0.upgrade.bonusdamage][attack].",
-              "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
-            },
-            "trigger": "on_attacking",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                "targetMode": "self",
-                "targetTeamType": "none",
-                "paramCardUpgradeData": {
-                  "id": "AlphaFiendTrigger",
-                  "guid": "5438dad3-5d7f-4ef5-9311-728d5c7c45b9",
-                  "bonusDamage": 15
-                }
-              }
-            ]
-          }
-        ],
-        "size": 3,
-        "health": 25,
-        "deathType": "large",
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "HellhornedDemonChatterData"
-      }
+      "id": "AlphaFiend",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassHellhorned",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsHellhornedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Omegademon.prefab",
+        "m_AssetGUID": "338e37e2fe9e08f4dbe42f0b9cd267f6"
+      },
+      "effects": [
+        "@AlphaFiend.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 7,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 7,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "characters": [
+    {
+      "id": "AlphaFiend",
+      "names": {
+        "key": "CharacterData_nameKey-3136c43ce835b000-d12e27b33d6c5c848b9f4a9ff82d845e-v2",
+        "english": "Alpha Fiend",
+        "french": "Monstre alpha",
+        "german": "Alpha-Unhold",
+        "russian": "Альфа-изувер",
+        "portuguese": "Maldito Alfa",
+        "chinese": "恐魔领主",
+        "spanish": "Demonio alfa",
+        "chinese_traditional": "阿爾法惡魔",
+        "korean": "악마 우두머리",
+        "japanese": "アルファ・フィーンド"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-1f648e65e8da3dce-d12e27b33d6c5c848b9f4a9ff82d845e-v2",
+          "english": "These ancient demons of the Hellhorned live a reclusive life on the edge of the Scorched Plains. Their isolated existence has made them even more difficult to communicate with, but they seem to understand the peril their clan is in since they’ve joined me on this dangerous journey.",
+          "french": "Ces diables Cornus ancestraux mènent une vie recluse aux abords des Plaines calcinées. Leur existence isolée rend toute communication particulièrement difficile, mais ils semblent comprendre le péril qu'encourt leur clan puisqu'ils m'ont rejoint dans mon dangereux périple.",
+          "german": "Diese uralten Dämonen der Höllenhörner leben zurückgezogen am Rande der Verbrannten Ebenen. Durch ihre lange Isolation kann man kaum mit ihnen kommunizieren, doch sie scheinen zu verstehen, dass ihr Stamm in Gefahr ist. Schließlich folgen sie mir auf dieser gefährlichen Reise.",
+          "russian": "Эти древние демоны ведут затворнический образ жизни на краю Выжженных равнин. Переговоры усложнялись тем, что они привыкли держаться обособленно, но, кажется, им удалось понять, какая угроза нависла над их кланом, раз они присоединились ко мне в этом опасном путешествии.",
+          "portuguese": "Estes demônios Endiabrados anciões viviam reclusos nas fronteiras das Planícies Devastadas. Sua existência ermitã complica ainda mais a comunicação, mas eles aparentam entender o perigo que seu clã está sofrendo, visto que se juntaram a mim nessa jornada arriscada.",
+          "chinese": "这种古代狱魔在燃烧平原的边境过着隐居的生活。由于过着与世隔绝的生活，几乎没什么人能与它们进行沟通。不过，它们似乎已经了解到了自己的氏族所面临的危险，因而加入了我这场危险的旅程。",
+          "spanish": "Estos antiguos demonios de los Astados Infernales viven aislados en las fronteras de las Llanuras Calcinadas. Su existencia solitaria ha dificultado aún más la comunicación con ellos, pero parecen entender el peligro al que se enfrenta su clan, ya que me acompañan en este peligroso viaje.",
+          "chinese_traditional": "這些煉獄族的遠古惡魔，在焦灼平原的邊緣過著隱居的生活。他們的孤立生活使他們變得更難溝通，但自從他們加入我踏上這趟危險的旅程以來，他們似乎理解了他們氏族所面臨的危險。",
+          "korean": "고대 지옥뿔 군단 악마는 불타는 평원 가장자리에 은둔하며 살아간다. 이들은 고립된 생활을 하고 있어 소통이 더욱 어려워졌지만, 이 위험한 여정에 합류한 이후 자신들의 클랜이 처한 위기를 깨닫게 된 것 같다.",
+          "japanese": "獄角族の古代の悪魔たちは、焦土平原の端で隠遁生活をしている。隔離されていることで彼らとの交流は以前にも増して難しくなったが、この危険な旅に同行するということは一族の危機を理解しているからのようだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Omegademon.prefab",
+        "m_AssetGUID": "aa6e0f0f0a1dc0f4b85346368b76de28"
+      },
+      "impact_vfx": "@AlphaFiend.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@AlphaFiend.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 3,
+      "health": 25,
+      "death_type": "large",
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "HellhornedDemonChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "AlphaFiend.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-3ae21bd4270cca36-d12e27b33d6c5c848b9f4a9ff82d845e-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack].",
+        "french": "+[effect0.upgrade.bonusdamage][attack].",
+        "german": "+[effect0.upgrade.bonusdamage][attack].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "+[effect0.upgrade.bonusdamage][attack].",
+        "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@AlphaFiend.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AlphaFiend.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "AlphaFiendTrigger"
+    },
+    {
+      "id": "AlphaFiend.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "AlphaFiend"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "AlphaFiend.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,91 +1,106 @@
 {
-  "id": "AnimusOfWill",
-  "guid": "e66178fd-b8e7-401c-b570-7832840ea902",
-  "name": "Animus of Will",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassAwoken",
-  "pools": [
-    "LevelableUnits",
-    "UnitsAllBanner",
-    "UnitsAwokenBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Animus_Uncommon.prefab",
-    "m_AssetGUID": "10e69271841c3014cb32ef24dc0ce290"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterAnimusBow",
-        "guid": "9564b190-0436-412e-b34e-e2d48c12e2c0",
-        "nameKey": {
-          "key": "CharacterData_nameKey-d84b8a6cabf1a7ad-e213e225193344b459319e9f31b2b1f3-v2",
-          "english": "Animus of Will",
-          "french": "Animus de la volonté",
-          "german": "Animus des Willens",
-          "russian": "Анима воли",
-          "portuguese": "Animus da Vontade",
-          "chinese": "刚毅蔓灵",
-          "spanish": "Ánimus de voluntad",
-          "chinese_traditional": "意志靈魂",
-          "korean": "의지의 의사생명체",
-          "japanese": "意志のアニムス"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-f4c9b3ccfd426440-e213e225193344b459319e9f31b2b1f3-v2",
-            "english": "These Animus have grown to see beyond their Ring. Preternaturally aware of the actions of their enemies, they can predict their movements and strike accordingly. I’ve learned that they are rarely created by Channelers since their gift of sight can expose them to the reality of their imprisonment.",
-            "french": "Ces animus ont appris à voir au-delà de leur propre cercle et sont pour cette raison prodigieusement au fait des agissements de nos ennemis, ce qui permet d'anticiper leurs mouvements et d'attaquer en conséquence. Cependant, j'ai appris que les occultistes évitent en général de créer ce genre d'animus, car leur don de vision peut les exposer à la réalité de leur servitude.",
-            "german": "Diese Anima sehen weit über ihren Kreis hinaus und sind sich auf übernatürliche Weise der Handlungen ihrer Gegner bewusst. Sie ahnen ihre Bewegungen voraus und handeln entsprechend. Ich habe gelernt, dass die Okkultisten es nur selten wagen, sie zu beschwören – aufgrund ihrer Gabe werden sie sich nur zu einfach ihrer eigenen Gefangenschaft bewusst.",
-            "russian": "Эти Анимы росли, привыкая следить за происходящим за пределами их круга. Они странным образом предугадывают действия наших врагов и наносят ответный удар. Но, насколько мне известно, заклинатели редко создают этих существ, ведь те, благодаря своему дару провидения, могут осознать, что пребывают в неволе.",
-            "portuguese": "Esses Animus cresceram para enxergar além de seu Círculo. Cientes, de maneira extraordinária, das ações de seus inimigos, eles podem prever os movimentos deles e atacar de acordo. Aprendi que raramente são criados por Canalizadores, pois o dom da visão pode expô-los à realidade do seu aprisionamento.",
-            "chinese": "这种蔓灵已经成长到了一定程度，足以观察到地狱之外的世界，并能以超自然的力量意识到敌人的行动，预测对方的行为并作出相应的回击。我听说通灵者很少会创造出这种蔓灵，因为它们的洞察能力会让它们意识到自己正处于囚禁之中。",
-            "spanish": "Estos ánimus han aprendido a ver más allá de su anillo. Con una consciencia sobrenatural de las acciones enemigas, pueden predecir sus movimientos y golpear con precisión. He descubierto que los canalizadores no suelen crearlos, pues su don puede revelarles la realidad de su encierro.",
-            "chinese_traditional": "這些靈魂已經成長到能夠看到自身界域之外的地方。他們超乎自然的限制，意識到敵人的行動，能夠預測對方的動作並採取相應地打擊。我了解到他們大多數都不是由引導者創造，因為他們的洞察力會讓他們明白自己被囚禁的現實。",
-            "korean": "이들 의사생명체는 각 고리를 넘어서는 시야를 갖추게 되었다. 적의 행동을 사전에 파악하여 움직임을 예측하고 반격할 수 있는 것이다. 그러나 이들은 감옥 같은 현실을 마주할 위험이 있어, 연결자들이 극히 소수만을 창조한다는 것을 알게 되었다.",
-            "japanese": "このアニムスは、リングを越えて物事を見通すことができるようになった。敵の行動を超自然的に察知し、動きを予測して攻撃することができる。その見通す力によって自らが監禁されていることを認識できる恐れがあるため、チャネラーは彼女らを作成することはめったにない。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Animus_Uncommon.prefab",
-          "m_AssetGUID": "5320aea7e281869449441a01aefeddab"
-        },
-        "projectilePrefab": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/FX/FX_Projectile_AnimusOfSpeed.prefab",
-            "m_AssetGUID": "d88510f3c65990142b266c068f3f29e6"
-          },
-          "spawnLocation": "character_center"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/FX/FX_PiercingProjectileImpactL_PS.prefab",
-            "m_AssetGUID": "8201d40b1a1cd3d479d2147a6d66bef4"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "multistrike",
-            "count": 2
-          }
-        ],
-        "size": 2,
-        "health": 8,
-        "attackDamage": 3,
-        "attackTeleportsToDefender": false,
-        "subtypeKeys": [
-          "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "AwokenAnimusChatterData"
-      }
+      "id": "AnimusOfWill",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassAwoken",
+      "pools": [
+        "LevelableUnits",
+        "UnitsAllBanner",
+        "UnitsAwokenBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Animus_Uncommon.prefab",
+        "m_AssetGUID": "10e69271841c3014cb32ef24dc0ce290"
+      },
+      "effects": [
+        "@AnimusOfWill.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Taylor Bray"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Taylor Bray"
+  "characters": [
+    {
+      "id": "MonsterAnimusBow",
+      "names": {
+        "key": "CharacterData_nameKey-d84b8a6cabf1a7ad-e213e225193344b459319e9f31b2b1f3-v2",
+        "english": "Animus of Will",
+        "french": "Animus de la volonté",
+        "german": "Animus des Willens",
+        "russian": "Анима воли",
+        "portuguese": "Animus da Vontade",
+        "chinese": "刚毅蔓灵",
+        "spanish": "Ánimus de voluntad",
+        "chinese_traditional": "意志靈魂",
+        "korean": "의지의 의사생명체",
+        "japanese": "意志のアニムス"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-f4c9b3ccfd426440-e213e225193344b459319e9f31b2b1f3-v2",
+          "english": "These Animus have grown to see beyond their Ring. Preternaturally aware of the actions of their enemies, they can predict their movements and strike accordingly. I’ve learned that they are rarely created by Channelers since their gift of sight can expose them to the reality of their imprisonment.",
+          "french": "Ces animus ont appris à voir au-delà de leur propre cercle et sont pour cette raison prodigieusement au fait des agissements de nos ennemis, ce qui permet d'anticiper leurs mouvements et d'attaquer en conséquence. Cependant, j'ai appris que les occultistes évitent en général de créer ce genre d'animus, car leur don de vision peut les exposer à la réalité de leur servitude.",
+          "german": "Diese Anima sehen weit über ihren Kreis hinaus und sind sich auf übernatürliche Weise der Handlungen ihrer Gegner bewusst. Sie ahnen ihre Bewegungen voraus und handeln entsprechend. Ich habe gelernt, dass die Okkultisten es nur selten wagen, sie zu beschwören – aufgrund ihrer Gabe werden sie sich nur zu einfach ihrer eigenen Gefangenschaft bewusst.",
+          "russian": "Эти Анимы росли, привыкая следить за происходящим за пределами их круга. Они странным образом предугадывают действия наших врагов и наносят ответный удар. Но, насколько мне известно, заклинатели редко создают этих существ, ведь те, благодаря своему дару провидения, могут осознать, что пребывают в неволе.",
+          "portuguese": "Esses Animus cresceram para enxergar além de seu Círculo. Cientes, de maneira extraordinária, das ações de seus inimigos, eles podem prever os movimentos deles e atacar de acordo. Aprendi que raramente são criados por Canalizadores, pois o dom da visão pode expô-los à realidade do seu aprisionamento.",
+          "chinese": "这种蔓灵已经成长到了一定程度，足以观察到地狱之外的世界，并能以超自然的力量意识到敌人的行动，预测对方的行为并作出相应的回击。我听说通灵者很少会创造出这种蔓灵，因为它们的洞察能力会让它们意识到自己正处于囚禁之中。",
+          "spanish": "Estos ánimus han aprendido a ver más allá de su anillo. Con una consciencia sobrenatural de las acciones enemigas, pueden predecir sus movimientos y golpear con precisión. He descubierto que los canalizadores no suelen crearlos, pues su don puede revelarles la realidad de su encierro.",
+          "chinese_traditional": "這些靈魂已經成長到能夠看到自身界域之外的地方。他們超乎自然的限制，意識到敵人的行動，能夠預測對方的動作並採取相應地打擊。我了解到他們大多數都不是由引導者創造，因為他們的洞察力會讓他們明白自己被囚禁的現實。",
+          "korean": "이들 의사생명체는 각 고리를 넘어서는 시야를 갖추게 되었다. 적의 행동을 사전에 파악하여 움직임을 예측하고 반격할 수 있는 것이다. 그러나 이들은 감옥 같은 현실을 마주할 위험이 있어, 연결자들이 극히 소수만을 창조한다는 것을 알게 되었다.",
+          "japanese": "このアニムスは、リングを越えて物事を見通すことができるようになった。敵の行動を超自然的に察知し、動きを予測して攻撃することができる。その見通す力によって自らが監禁されていることを認識できる恐れがあるため、チャネラーは彼女らを作成することはめったにない。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Animus_Uncommon.prefab",
+        "m_AssetGUID": "5320aea7e281869449441a01aefeddab"
+      },
+      "projectile_vfx": "@AnimusOfWill.effects0.paramCharacterData.projectilePrefab",
+      "impact_vfx": "@AnimusOfWill.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 2
+        }
+      ],
+      "size": 2,
+      "health": 8,
+      "attack_damage": 3,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Animus_c0f95969-ae86-4477-9458-57bb235d965b",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "AwokenAnimusChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "AnimusOfWill.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterAnimusBow"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "AnimusOfWill.effects0.paramCharacterData.projectilePrefab",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/FX/FX_Projectile_AnimusOfSpeed.prefab",
+        "m_AssetGUID": "d88510f3c65990142b266c068f3f29e6"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "AnimusOfWill.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/FX/FX_PiercingProjectileImpactL_PS.prefab",
+        "m_AssetGUID": "8201d40b1a1cd3d479d2147a6d66bef4"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

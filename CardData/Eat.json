@@ -1,61 +1,76 @@
 {
-  "id": "GlugsiderAbility",
-  "guid": "127b5582-1e59-4ce0-afdb-9ccc2d59f913",
-  "name": "Eat",
-  "nameKey": {
-    "key": "CardData_nameKey-8708a2a55b9a79d0-a5a1680cc2f24414c947c61b05bf7f31-v2",
-    "english": "Eat",
-    "french": "Dévoration",
-    "german": "Essen",
-    "russian": "Пир",
-    "portuguese": "Devorar",
-    "chinese": "进食",
-    "spanish": "Zampar",
-    "chinese_traditional": "吞噬",
-    "korean": "섭취",
-    "japanese": "採食"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-013ee02d78f51709-a5a1680cc2f24414c947c61b05bf7f31-v2",
-    "english": "Kill an enemy non-boss unit.",
-    "french": "Tue une unité ennemie hors boss.",
-    "german": "Töte eine feindliche Nicht-Boss-Einheit.",
-    "russian": "Убивает врага не-босса.",
-    "portuguese": "Mata uma unidade inimiga que não seja chefão.",
-    "chinese": "击杀一个敌方非首领单位。",
-    "spanish": "Mata a una unidad no jefe.",
-    "chinese_traditional": "殺死一個敵方非首領單位。",
-    "korean": "보스 외 적 유닛 하나를 처치합니다.",
-    "japanese": "非ボスの敵ユニットをキルする。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "GlugsiderAbility",
+      "names": {
+        "key": "CardData_nameKey-8708a2a55b9a79d0-a5a1680cc2f24414c947c61b05bf7f31-v2",
+        "english": "Eat",
+        "french": "Dévoration",
+        "german": "Essen",
+        "russian": "Пир",
+        "portuguese": "Devorar",
+        "chinese": "进食",
+        "spanish": "Zampar",
+        "chinese_traditional": "吞噬",
+        "korean": "섭취",
+        "japanese": "採食"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-013ee02d78f51709-a5a1680cc2f24414c947c61b05bf7f31-v2",
+        "english": "Kill an enemy non-boss unit.",
+        "french": "Tue une unité ennemie hors boss.",
+        "german": "Töte eine feindliche Nicht-Boss-Einheit.",
+        "russian": "Убивает врага не-босса.",
+        "portuguese": "Mata uma unidade inimiga que não seja chefão.",
+        "chinese": "击杀一个敌方非首领单位。",
+        "spanish": "Mata a una unidad no jefe.",
+        "chinese_traditional": "殺死一個敵方非首領單位。",
+        "korean": "보스 외 적 유닛 하나를 처치합니다.",
+        "japanese": "非ボスの敵ユニットをキルする。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "traits": [
+        "@GlugsiderAbility.traits0"
+      ],
+      "effects": [
+        "@GlugsiderAbility.effects0"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "traits": [
     {
-      "traitStateName": "CardTraitCorruptRestricted",
-      "paramInt": 4,
-      "traitIsRemovable": false
+      "id": "GlugsiderAbility.traits0",
+      "name": "CardTraitCorruptRestricted",
+      "param_int": 4,
+      "trait_is_removable": false
     }
   ],
   "effects": [
     {
-      "effectStateName": "CardEffectKill",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "heroes",
-      "targetIgnoreBosses": true,
-      "animToPlay": "attack",
-      "paramBool3": true,
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/Glugsider/FX_GlugsiderSelfAbility.prefab",
-          "m_AssetGUID": "265f4f58ced5043498624e6af4a127b6"
-        },
-        "spawnLocation": "character_center"
-      }
+      "id": "GlugsiderAbility.effects0",
+      "name": "CardEffectKill",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "target_ignore_bosses": true,
+      "anim_to_play": "attack",
+      "param_bool_3": true,
+      "applied_to_self_vfx": "@GlugsiderAbility.effects0.appliedToSelfVFX"
     }
   ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly"
+  "vfxs": [
+    {
+      "id": "GlugsiderAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/Glugsider/FX_GlugsiderSelfAbility.prefab",
+        "m_AssetGUID": "265f4f58ced5043498624e6af4a127b6"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

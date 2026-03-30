@@ -1,43 +1,50 @@
 {
-  "id": "NewMoonAbility",
-  "guid": "43e96c06-18d3-4925-a92d-4aea81cff051",
-  "name": "Shadowcast",
-  "nameKey": {
-    "key": "CardData_nameKey-a4ca9de98f21460a-ad34a511edacaa640821a3d355b482c4-v2",
-    "english": "Shadowcast",
-    "french": "Projection d'ombre",
-    "german": "Schattenwurf",
-    "russian": "Отброшенная тень",
-    "portuguese": "Invocação Sombria",
-    "chinese": "暗影施法",
-    "spanish": "En tinieblas",
-    "chinese_traditional": "暗影投射",
-    "korean": "암영술",
-    "japanese": "影落とし"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-d83922f119665e4f-ad34a511edacaa640821a3d355b482c4-v2",
-    "english": "[phase] to [moonshade].",
-    "french": "[phase] en [moonshade].",
-    "german": "[phase] bis [moonshade].",
-    "russian": "Запускается [phase] «[moonshade]».",
-    "portuguese": "A [phase] muda para [moonshade].",
-    "chinese": "[phase] 至 [moonshade]。",
-    "spanish": "[phase] a [moonshade].",
-    "chinese_traditional": "[phase]到[moonshade]。",
-    "korean": "[moonshade]로 [phase]가 이루어집니다.",
-    "japanese": "[phase]が[moonshade]になる。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSetMoonPhase",
-      "paramInt": 1
+      "id": "NewMoonAbility",
+      "names": {
+        "key": "CardData_nameKey-a4ca9de98f21460a-ad34a511edacaa640821a3d355b482c4-v2",
+        "english": "Shadowcast",
+        "french": "Projection d'ombre",
+        "german": "Schattenwurf",
+        "russian": "Отброшенная тень",
+        "portuguese": "Invocação Sombria",
+        "chinese": "暗影施法",
+        "spanish": "En tinieblas",
+        "chinese_traditional": "暗影投射",
+        "korean": "암영술",
+        "japanese": "影落とし"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-d83922f119665e4f-ad34a511edacaa640821a3d355b482c4-v2",
+        "english": "[phase] to [moonshade].",
+        "french": "[phase] en [moonshade].",
+        "german": "[phase] bis [moonshade].",
+        "russian": "Запускается [phase] «[moonshade]».",
+        "portuguese": "A [phase] muda para [moonshade].",
+        "chinese": "[phase] 至 [moonshade]。",
+        "spanish": "[phase] a [moonshade].",
+        "chinese_traditional": "[phase]到[moonshade]。",
+        "korean": "[moonshade]로 [phase]가 이루어집니다.",
+        "japanese": "[phase]が[moonshade]になる。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "effects": [
+        "@NewMoonAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "NewMoonAbility.effects0",
+      "name": "CardEffectSetMoonPhase",
+      "param_int": 1
+    }
+  ]
 }

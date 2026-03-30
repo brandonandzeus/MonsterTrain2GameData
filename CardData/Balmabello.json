@@ -1,146 +1,168 @@
 {
-  "id": "Balmabello",
-  "guid": "75ce6859-dd29-4c88-a67a-5159a753f2db",
-  "name": "Balmabello",
-  "cost": 3,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsUnderlegionBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Balmabello.prefab",
-    "m_AssetGUID": "096c390358a15924f9c4234a0ec28717"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterBalmabello",
-        "guid": "17922025-c342-4e0b-a7bb-067e78836686",
-        "nameKey": {
-          "key": "CharacterData_nameKey-1f2a60a2980e3169-6b6aa86abba33674fb231eb4413a554a-v2",
-          "english": "Balmabello",
-          "french": "Entobaume",
-          "german": "Balmabello",
-          "russian": "Бальзабелло",
-          "portuguese": "Balmabello",
-          "chinese": "巴尔马贝洛",
-          "spanish": "Balmabello",
-          "chinese_traditional": "巴爾馬貝洛",
-          "korean": "발마벨로",
-          "japanese": "バルマベロ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-8a358d18cca6b2de-6b6aa86abba33674fb231eb4413a554a-v2",
-            "english": "“On victory, you deserve a glass of my special Spore-brew. Upon defeat, you’ll need it.”",
-            "french": "<nobr>« En</nobr> cas de victoire, vous aurez droit à un verre de ma bière spéciale aux spores. En cas de défaite aussi, vous en aurez <nobr>besoin. »</nobr>",
-            "german": "„Wenn wir gewinnen, bekommst du ein Glas von meinem Sporenbräu! Wenn wir verlieren, wirst du’s brauchen.“",
-            "russian": "«Победитель заслуживает стакан моей фирменной настойки на спорах, а проигравшему она жизненно необходима».",
-            "portuguese": "“Se vencer, você merecerá um copo da minha bebida especial de esporos. Se perder, você precisará dela.”",
-            "chinese": "“等你胜利之时，一定要喝一杯我特调的孢子精酿庆功。而等你失败之时，你也非喝不可。”",
-            "spanish": "«Al ganar, te mereces un trago de mi brebaje de esporas especial. Al perder, lo necesitas».",
-            "chinese_traditional": "「勝利時，你值得喝一杯我特製的孢子佳釀。失敗時，你則需要它。」",
-            "korean": "\"이기면 내가 만든 특별한 포자 증류주를 마실 자격을 갖지. 져도 한 잔 필요할 거야.\"",
-            "japanese": "「勝ったときには、特別な胞子酒を褒美としてやろう。負けたときは、飲まないとやってられないな」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Balmabello.prefab",
-          "m_AssetGUID": "68fa4464c0801e546bd90cba031990e9"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-            "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "regen",
-            "count": 6
-          },
-          {
-            "statusId": "spikes",
-            "count": 6
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-3cef6a100322ddb6-6b6aa86abba33674fb231eb4413a554a-v2",
-              "english": "Apply this unit's [buff] stacks to friendly units.",
-              "french": "Confère les cumuls de [buff] de cette unité aux unités alliées.",
-              "german": "Wende [buff]-Stapel der Einheit auf verbündete Einheiten an.",
-              "russian": "Накладывает все слои <b>усиления</b> этого бойца на его союзников.",
-              "portuguese": "Aplica as cargas de [buff] desta unidade às unidades aliadas.",
-              "chinese": "使所有友方单位获得该单位的 [buff] 层数。",
-              "spanish": "Añade las acumulaciones de [buff] de esta unidad a sus aliados.",
-              "chinese_traditional": "將此單位的[buff]層數施加給友方單位。",
-              "korean": "이 유닛의 [buff] 스택을 아군 유닛들에게 적용합니다.",
-              "japanese": "味方ユニットにこのユニットの[buff]のスタックを付与する。"
-            },
-            "trigger": "on_death",
-            "effects": [
-              {
-                "effectStateName": "CardEffectTransferAllStatusEffectsFromUnit",
-                "targetMode": "self",
-                "targetTeamType": "monsters",
-                "additionalTooltips": [
-                  {
-                    "descriptionKey": {
-                      "key": "CardEffectBuff_TooltipText",
-                      "english": "Buff effects are generally positive for their target and are represented by green icons.",
-                      "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
-                      "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
-                      "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
-                      "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
-                      "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
-                      "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
-                      "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
-                      "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
-                      "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
-                    },
-                    "titleKey": {
-                      "key": "CardEffectBuff_TooltipTitle",
-                      "english": "Buff",
-                      "french": "Bonus",
-                      "german": "Buff",
-                      "russian": "Усиление",
-                      "portuguese": "Buff",
-                      "chinese": "增益",
-                      "spanish": "Potenciación",
-                      "chinese_traditional": "增益",
-                      "korean": "버프",
-                      "japanese": "バフ"
-                    },
-                    "style": "positive"
-                  }
-                ],
-                "paramInt": 8,
-                "additionalParamInt": 2,
-                "hideTooltip": true
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 50,
-        "ascendsTrainAutomatically": false,
-        "attackDamage": 15,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Shroom"
-        ],
-        "characterChatterData": "UnderlegionShroomMaleChatterData"
-      }
+      "id": "Balmabello",
+      "cost": 3,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassUnderlegion",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsUnderlegionBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Balmabello.prefab",
+        "m_AssetGUID": "096c390358a15924f9c4234a0ec28717"
+      },
+      "effects": [
+        "@Balmabello.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Taylor Bray"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Taylor Bray"
+  "characters": [
+    {
+      "id": "MonsterBalmabello",
+      "names": {
+        "key": "CharacterData_nameKey-1f2a60a2980e3169-6b6aa86abba33674fb231eb4413a554a-v2",
+        "english": "Balmabello",
+        "french": "Entobaume",
+        "german": "Balmabello",
+        "russian": "Бальзабелло",
+        "portuguese": "Balmabello",
+        "chinese": "巴尔马贝洛",
+        "spanish": "Balmabello",
+        "chinese_traditional": "巴爾馬貝洛",
+        "korean": "발마벨로",
+        "japanese": "バルマベロ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-8a358d18cca6b2de-6b6aa86abba33674fb231eb4413a554a-v2",
+          "english": "“On victory, you deserve a glass of my special Spore-brew. Upon defeat, you’ll need it.”",
+          "french": "<nobr>« En</nobr> cas de victoire, vous aurez droit à un verre de ma bière spéciale aux spores. En cas de défaite aussi, vous en aurez <nobr>besoin. »</nobr>",
+          "german": "„Wenn wir gewinnen, bekommst du ein Glas von meinem Sporenbräu! Wenn wir verlieren, wirst du’s brauchen.“",
+          "russian": "«Победитель заслуживает стакан моей фирменной настойки на спорах, а проигравшему она жизненно необходима».",
+          "portuguese": "“Se vencer, você merecerá um copo da minha bebida especial de esporos. Se perder, você precisará dela.”",
+          "chinese": "“等你胜利之时，一定要喝一杯我特调的孢子精酿庆功。而等你失败之时，你也非喝不可。”",
+          "spanish": "«Al ganar, te mereces un trago de mi brebaje de esporas especial. Al perder, lo necesitas».",
+          "chinese_traditional": "「勝利時，你值得喝一杯我特製的孢子佳釀。失敗時，你則需要它。」",
+          "korean": "\"이기면 내가 만든 특별한 포자 증류주를 마실 자격을 갖지. 져도 한 잔 필요할 거야.\"",
+          "japanese": "「勝ったときには、特別な胞子酒を褒美としてやろう。負けたときは、飲まないとやってられないな」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Balmabello.prefab",
+        "m_AssetGUID": "68fa4464c0801e546bd90cba031990e9"
+      },
+      "impact_vfx": "@Balmabello.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "regen",
+          "count": 6
+        },
+        {
+          "status": "spikes",
+          "count": 6
+        }
+      ],
+      "triggers": [
+        "@Balmabello.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 50,
+      "ascends_train_automatically": false,
+      "attack_damage": 15,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Shroom"
+      ],
+      "chatter": "UnderlegionShroomMaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Balmabello.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-3cef6a100322ddb6-6b6aa86abba33674fb231eb4413a554a-v2",
+        "english": "Apply this unit's [buff] stacks to friendly units.",
+        "french": "Confère les cumuls de [buff] de cette unité aux unités alliées.",
+        "german": "Wende [buff]-Stapel der Einheit auf verbündete Einheiten an.",
+        "russian": "Накладывает все слои <b>усиления</b> этого бойца на его союзников.",
+        "portuguese": "Aplica as cargas de [buff] desta unidade às unidades aliadas.",
+        "chinese": "使所有友方单位获得该单位的 [buff] 层数。",
+        "spanish": "Añade las acumulaciones de [buff] de esta unidad a sus aliados.",
+        "chinese_traditional": "將此單位的[buff]層數施加給友方單位。",
+        "korean": "이 유닛의 [buff] 스택을 아군 유닛들에게 적용합니다.",
+        "japanese": "味方ユニットにこのユニットの[buff]のスタックを付与する。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        "@Balmabello.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Balmabello.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectTransferAllStatusEffectsFromUnit",
+      "target_mode": "self",
+      "additional_tooltips": [
+        "@Balmabello.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
+      ],
+      "param_int": 8,
+      "param_int_2": 2,
+      "hide_tooltip": true
+    },
+    {
+      "id": "Balmabello.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterBalmabello"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Balmabello.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardEffectBuff_TooltipText",
+        "english": "Buff effects are generally positive for their target and are represented by green icons.",
+        "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+        "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+        "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+        "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+        "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+        "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+        "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+        "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+        "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectBuff_TooltipTitle",
+        "english": "Buff",
+        "french": "Bonus",
+        "german": "Buff",
+        "russian": "Усиление",
+        "portuguese": "Buff",
+        "chinese": "增益",
+        "spanish": "Potenciación",
+        "chinese_traditional": "增益",
+        "korean": "버프",
+        "japanese": "バフ"
+      },
+      "style": "positive"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Balmabello.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+        "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

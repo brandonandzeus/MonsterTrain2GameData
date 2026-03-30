@@ -1,109 +1,128 @@
 {
-  "id": "WelderHelper",
-  "guid": "61d9f4f1-80f5-416b-bf22-1836925c8ccd",
-  "name": "Welder Helper",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "common",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "ImpPool",
-    "MegaPool",
-    "UnitsHellhornedBannerReplacementMutator",
-    "WelderHelperOnlyPool"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_WelderHelper.prefab",
-    "m_AssetGUID": "5903524ef51df7346bd021ec7c1e2a59"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "WelderHelper",
-        "guid": "ddf010ac-3548-4ee6-91ef-706c0397885f",
-        "nameKey": {
-          "key": "CharacterData_nameKey-fd58491aba13bbdd-fbdb9442f0ec2054caf79f7b7c646a87-v2",
-          "english": "Welder Helper",
-          "french": "Assistant soudeur",
-          "german": "Schweißerbold",
-          "russian": "Помощник сварщика",
-          "portuguese": "Ajudante Soldador",
-          "chinese": "焊工助手",
-          "spanish": "Soldador ayudante",
-          "chinese_traditional": "焊接助手",
-          "korean": "용접 도우미",
-          "japanese": "ウェルダー・ヘルパー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-2ec7a30f4987b58a-fbdb9442f0ec2054caf79f7b7c646a87-v2",
-            "english": "It was a surprise to learn that even the imps craft weapons and armor for the Hellhorned. Instead of hammers, they use their innate control of fire.",
-            "french": "Ce fut une surprise d'apprendre que même les diablotins fabriquent des armes et des armures pour les Cornus. À la place de marteaux, ils utilisent leur maîtrise innée du feu.",
-            "german": "Ich war überrascht, dass selbst die Kobolde Waffen und Rüstung für die Höllenhörner herstellen. Sie hämmern allerdings nicht, sondern nutzen ihre angeborene Kontrolle über das Feuer zur Arbeit.",
-            "russian": "Было неожиданно узнать, что даже бесы создают оружие и броню для Адских отродий. Вместо молотов они используют свое врожденное умение повелевать огнем.",
-            "portuguese": "Foi uma surpresa descobrir que até os diabinhos forjam equipamentos para Endiabrados. Em vez de martelos, eles utilizam seu controle natural sobre o fogo.",
-            "chinese": "让我惊讶的是，就连小鬼都会为狱魔锻造武器与护甲。它们虽然不会用铁锤，但却会用自身的能力控制火焰。",
-            "spanish": "Fue sorprendente descubrir que incluso los diablillos fabrican armas y armaduras para los Astados Infernales. En lugar de martillos, usan su control innato sobre el fuego.",
-            "chinese_traditional": "令人驚訝的是，就連小鬼也負責為煉獄族製造武器和盔甲。他們不用錘子，而是用他們與生俱來的火焰掌控能力。",
-            "korean": "임프도 지옥뿔 군단이 사용할 무기와 갑옷을 만든다는 사실은 날 깜짝 놀라게 했다. 이들은 망치 대신 섬세한 화력 조절 능력을 사용한다.",
-            "japanese": "インプたちすらも獄角族の武器や防具を作っていることを知ったときは驚きだった。金槌ではなく、生まれつきの火を操る能力を駆使しているのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_WelderHelper.prefab",
-          "m_AssetGUID": "47dfd514f877d924c9974d2b198bbfab"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-453049304ba03be6-fbdb9442f0ec2054caf79f7b7c646a87-v2",
-              "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",
-              "french": "Confère <b>Armure</b> [effect0.status0.power] à l'unité alliée en première ligne.",
-              "german": "Wende [effect0.status0.power] <b>Rüstung</b> auf die vordere verbündete Einheit an.",
-              "russian": "[armor] x[effect0.status0.power] дается переднему союзнику.",
-              "portuguese": "Concede <b>Armadura</b> [effect0.status0.power] à unidade aliada na frente.",
-              "chinese": "使前排友方单位获得<b>护甲</b> [effect0.status0.power]。",
-              "spanish": "Añade [armor] [effect0.status0.power] a la primera unidad aliada.",
-              "chinese_traditional": "對前排友方單位施加[armor][effect0.status0.power]。",
-              "korean": "전열 아군 유닛에 [armor] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "前列の味方ユニットに[armor] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "on_spawn",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "front_in_room",
-                "targetTeamType": "monsters",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "armor",
-                    "count": 20
-                  }
-                ],
-                "paramInt": 100
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 1,
-        "attackDamage": 1,
-        "subtypeKeys": [
-          "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
-        ],
-        "characterChatterData": "HellhornedImpChatterData"
-      }
+      "id": "WelderHelper",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "ClassHellhorned",
+      "pools": [
+        "ImpPool",
+        "MegaPool",
+        "UnitsHellhornedBannerReplacementMutator",
+        "WelderHelperOnlyPool"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_WelderHelper.prefab",
+        "m_AssetGUID": "5903524ef51df7346bd021ec7c1e2a59"
+      },
+      "effects": [
+        "@WelderHelper.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Loy Bouttamy"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Loy Bouttamy"
+  "characters": [
+    {
+      "id": "WelderHelper",
+      "names": {
+        "key": "CharacterData_nameKey-fd58491aba13bbdd-fbdb9442f0ec2054caf79f7b7c646a87-v2",
+        "english": "Welder Helper",
+        "french": "Assistant soudeur",
+        "german": "Schweißerbold",
+        "russian": "Помощник сварщика",
+        "portuguese": "Ajudante Soldador",
+        "chinese": "焊工助手",
+        "spanish": "Soldador ayudante",
+        "chinese_traditional": "焊接助手",
+        "korean": "용접 도우미",
+        "japanese": "ウェルダー・ヘルパー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-2ec7a30f4987b58a-fbdb9442f0ec2054caf79f7b7c646a87-v2",
+          "english": "It was a surprise to learn that even the imps craft weapons and armor for the Hellhorned. Instead of hammers, they use their innate control of fire.",
+          "french": "Ce fut une surprise d'apprendre que même les diablotins fabriquent des armes et des armures pour les Cornus. À la place de marteaux, ils utilisent leur maîtrise innée du feu.",
+          "german": "Ich war überrascht, dass selbst die Kobolde Waffen und Rüstung für die Höllenhörner herstellen. Sie hämmern allerdings nicht, sondern nutzen ihre angeborene Kontrolle über das Feuer zur Arbeit.",
+          "russian": "Было неожиданно узнать, что даже бесы создают оружие и броню для Адских отродий. Вместо молотов они используют свое врожденное умение повелевать огнем.",
+          "portuguese": "Foi uma surpresa descobrir que até os diabinhos forjam equipamentos para Endiabrados. Em vez de martelos, eles utilizam seu controle natural sobre o fogo.",
+          "chinese": "让我惊讶的是，就连小鬼都会为狱魔锻造武器与护甲。它们虽然不会用铁锤，但却会用自身的能力控制火焰。",
+          "spanish": "Fue sorprendente descubrir que incluso los diablillos fabrican armas y armaduras para los Astados Infernales. En lugar de martillos, usan su control innato sobre el fuego.",
+          "chinese_traditional": "令人驚訝的是，就連小鬼也負責為煉獄族製造武器和盔甲。他們不用錘子，而是用他們與生俱來的火焰掌控能力。",
+          "korean": "임프도 지옥뿔 군단이 사용할 무기와 갑옷을 만든다는 사실은 날 깜짝 놀라게 했다. 이들은 망치 대신 섬세한 화력 조절 능력을 사용한다.",
+          "japanese": "インプたちすらも獄角族の武器や防具を作っていることを知ったときは驚きだった。金槌ではなく、生まれつきの火を操る能力を駆使しているのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_WelderHelper.prefab",
+        "m_AssetGUID": "47dfd514f877d924c9974d2b198bbfab"
+      },
+      "impact_vfx": "@WelderHelper.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@WelderHelper.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 1,
+      "attack_damage": 1,
+      "subtypes": [
+        "SubtypesData_Imp_0f9b989f-15b5-4b16-8378-5d8ed8691e7c"
+      ],
+      "chatter": "HellhornedImpChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WelderHelper.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-453049304ba03be6-fbdb9442f0ec2054caf79f7b7c646a87-v2",
+        "english": "Apply [armor] [effect0.status0.power] to the front friendly unit.",
+        "french": "Confère <b>Armure</b> [effect0.status0.power] à l'unité alliée en première ligne.",
+        "german": "Wende [effect0.status0.power] <b>Rüstung</b> auf die vordere verbündete Einheit an.",
+        "russian": "[armor] x[effect0.status0.power] дается переднему союзнику.",
+        "portuguese": "Concede <b>Armadura</b> [effect0.status0.power] à unidade aliada na frente.",
+        "chinese": "使前排友方单位获得<b>护甲</b> [effect0.status0.power]。",
+        "spanish": "Añade [armor] [effect0.status0.power] a la primera unidad aliada.",
+        "chinese_traditional": "對前排友方單位施加[armor][effect0.status0.power]。",
+        "korean": "전열 아군 유닛에 [armor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "前列の味方ユニットに[armor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        "@WelderHelper.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "WelderHelper.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "front_in_room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 20
+        }
+      ],
+      "param_int": 100
+    },
+    {
+      "id": "WelderHelper.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "WelderHelper"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "WelderHelper.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

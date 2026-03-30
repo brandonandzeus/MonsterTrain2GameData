@@ -1,101 +1,95 @@
 {
-  "id": "BloodyMoon",
-  "guid": "24a256cd-715e-4423-b2e9-c0925b285fd4",
-  "name": "Bloody Moon",
-  "nameKey": {
-    "key": "CardData_nameKey-d8fae5328591faee-546705a5a85cd194382062187121c2f8-v2",
-    "english": "Bloody Moon",
-    "french": "Lune sanglante",
-    "german": "Blutmond",
-    "russian": "Кровавая луна",
-    "portuguese": "Lua Sangrenta",
-    "chinese": "血月",
-    "spanish": "Luna de sangre",
-    "chinese_traditional": "血腥之月",
-    "korean": "핏빛 달",
-    "japanese": "血に染まった月"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-cd41418c92fbd378-546705a5a85cd194382062187121c2f8-v2",
-    "english": "Deal [effect0.power] damage.",
-    "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
-    "german": "Verursache [effect0.power] Schaden.",
-    "russian": "Наносит [effect0.power] урона.",
-    "portuguese": "Causa [effect0.power] de dano.",
-    "chinese": "造成 [effect0.power] 点伤害。",
-    "spanish": "Inflige [effect0.power] de daño.",
-    "chinese_traditional": "造成[effect0.power]點傷害。",
-    "korean": "[effect0.power]의 피해를 입힙니다.",
-    "japanese": "[effect0.power]のダメージを与える。"
-  },
-  "cardLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "key": "CardData_data-1ef19b491e2e7914-546705a5a85cd194382062187121c2f8-v2",
-      "english": "“When Seraph came to destroy our home, the moon shone red. At the sight, Lady Ekka grieved the souls that would fall in the upcoming battle.”\n—Ardania the Forbidden",
-      "french": "<nobr>« Lorsque</nobr> Séraphin vint détruire notre foyer, la lune prit une teinte rouge. À cette vue, Dame Ekka pleura les braves qui allaient tomber dans la bataille à <nobr>venir. »</nobr> \n— Ardania l'Interdite",
-      "german": "„Als Seraph kam, um unsere Heimat zu vernichten, strahlte der Mond rot. Beim Anblick beweinte Lady Ekka die Seelen, die in der kommenden Schlacht fallen würden.“\n—Ardania die Verbotene",
-      "russian": "«Когда Серафим пришел уничтожить наш дом, луна окрасилась в красный. Увидев это, леди Экка начала скорбеть по тем, кто погибнет в грядущей битве».\n— Ардания Отверженная",
-      "portuguese": "“Quando o Serafim veio destruir nosso lar, a lua brilhou em vermelho. Ao ver isso, a Senhorita Ekka lamentou as vidas que seriam perdidas na batalha que se aproximava.”\n— Ardania, a Proibida",
-      "chinese": "“炽天使来摧毁我们的家园时，月亮变成了血红色。看到这一幕，艾卡女士便为那些将要在即将到来的战斗中陨落的灵魂感到悲伤。”\n——禁忌的阿尔达尼亚",
-      "spanish": "«Cuando Seraph vino a destruir nuestro hogar, la luna brilló en tonos escarlata. Al presenciarlo, lady Ekka se lamentó por las almas que perderíamos en la batalla».\n—Ardania la Prohibida",
-      "chinese_traditional": "「當撒拉弗前來摧毀我們的家園時，月亮閃耀著紅光。看到這一幕，艾卡女士為即將在戰鬥中倒下的靈魂哀悼。」\n——『禁忌』阿黛尼亞",
-      "korean": "“세라핌이 고향을 파괴하러 온 날, 달이 붉게 빛났다. 그 모습을 본 에카 님은 앞으로 벌어질 전투에서 사라질 영혼을 떠올리며 애도했다.”\n- 금기를 범한 자 아르다니아",
-      "japanese": "「セラフが我々の故郷を滅ぼしに来たとき、月は赤く光った。それを見て、エッカ様は戦いにより失われるであろう魂のために深く悲しんだのだ」\n—禁断のアーダニア"
-    }
-  ],
-  "cost": 2,
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaPool",
-    "UnitsLunaCovenBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_BloodyMoon.prefab",
-    "m_AssetGUID": "20a6d52c068b2294b818f4c365ef8557"
-  },
-  "effects": [
-    {
-      "effectStateName": "CardEffectDamage",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both",
-      "paramInt": 25,
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Spells/LunaCoven/BloodyMoon/FX_BloodyMoonSpell.prefab",
-          "m_AssetGUID": "d441223ba798113498bc756ffe5c9f79"
-        },
-        "spawnLocation": "character_center"
-      }
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
-        "key": "CardData_descriptionKey-3498f664ab459698-546705a5a85cd194382062187121c2f8-v2",
-        "english": "Gain [effect0.power][ember].",
-        "french": "Octroie [effect0.power][ember].",
-        "german": "Erhalte [effect0.power][ember].",
-        "russian": "Дает [effect0.power][ember].",
-        "portuguese": "Recebe [effect0.power][ember].",
-        "chinese": "获得[effect0.power][ember]。",
-        "spanish": "Obtienes [effect0.power][ember].",
-        "chinese_traditional": "獲得[effect0.power][ember]。",
-        "korean": "[effect0.power][ember]을 획득합니다.",
-        "japanese": "[effect0.power][ember]を得る。"
+      "id": "BloodyMoon",
+      "names": {
+        "key": "CardData_nameKey-d8fae5328591faee-546705a5a85cd194382062187121c2f8-v2",
+        "english": "Bloody Moon",
+        "french": "Lune sanglante",
+        "german": "Blutmond",
+        "russian": "Кровавая луна",
+        "portuguese": "Lua Sangrenta",
+        "chinese": "血月",
+        "spanish": "Luna de sangre",
+        "chinese_traditional": "血腥之月",
+        "korean": "핏빛 달",
+        "japanese": "血に染まった月"
       },
-      "trigger": "on_kill",
-      "cardEffects": [
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-cd41418c92fbd378-546705a5a85cd194382062187121c2f8-v2",
+        "english": "Deal [effect0.power] damage.",
+        "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Verursache [effect0.power] Schaden.",
+        "russian": "Наносит [effect0.power] урона.",
+        "portuguese": "Causa [effect0.power] de dano.",
+        "chinese": "造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño.",
+        "chinese_traditional": "造成[effect0.power]點傷害。",
+        "korean": "[effect0.power]의 피해를 입힙니다.",
+        "japanese": "[effect0.power]のダメージを与える。"
+      },
+      "lore_tooltips": [
         {
-          "effectStateName": "CardEffectGainEnergy",
-          "paramInt": 2
+          "key": "CardData_data-1ef19b491e2e7914-546705a5a85cd194382062187121c2f8-v2",
+          "english": "“When Seraph came to destroy our home, the moon shone red. At the sight, Lady Ekka grieved the souls that would fall in the upcoming battle.”\n—Ardania the Forbidden",
+          "french": "<nobr>« Lorsque</nobr> Séraphin vint détruire notre foyer, la lune prit une teinte rouge. À cette vue, Dame Ekka pleura les braves qui allaient tomber dans la bataille à <nobr>venir. »</nobr> \n— Ardania l'Interdite",
+          "german": "„Als Seraph kam, um unsere Heimat zu vernichten, strahlte der Mond rot. Beim Anblick beweinte Lady Ekka die Seelen, die in der kommenden Schlacht fallen würden.“\n—Ardania die Verbotene",
+          "russian": "«Когда Серафим пришел уничтожить наш дом, луна окрасилась в красный. Увидев это, леди Экка начала скорбеть по тем, кто погибнет в грядущей битве».\n— Ардания Отверженная",
+          "portuguese": "“Quando o Serafim veio destruir nosso lar, a lua brilhou em vermelho. Ao ver isso, a Senhorita Ekka lamentou as vidas que seriam perdidas na batalha que se aproximava.”\n— Ardania, a Proibida",
+          "chinese": "“炽天使来摧毁我们的家园时，月亮变成了血红色。看到这一幕，艾卡女士便为那些将要在即将到来的战斗中陨落的灵魂感到悲伤。”\n——禁忌的阿尔达尼亚",
+          "spanish": "«Cuando Seraph vino a destruir nuestro hogar, la luna brilló en tonos escarlata. Al presenciarlo, lady Ekka se lamentó por las almas que perderíamos en la batalla».\n—Ardania la Prohibida",
+          "chinese_traditional": "「當撒拉弗前來摧毀我們的家園時，月亮閃耀著紅光。看到這一幕，艾卡女士為即將在戰鬥中倒下的靈魂哀悼。」\n——『禁忌』阿黛尼亞",
+          "korean": "“세라핌이 고향을 파괴하러 온 날, 달이 붉게 빛났다. 그 모습을 본 에카 님은 앞으로 벌어질 전투에서 사라질 영혼을 떠올리며 애도했다.”\n- 금기를 범한 자 아르다니아",
+          "japanese": "「セラフが我々の故郷を滅ぼしに来たとき、月は赤く光った。それを見て、エッカ様は戦いにより失われるであろう魂のために深く悲しんだのだ」\n—禁断のアーダニア"
         }
       ],
-      "triggerKeywordCardTextSuppressed": false
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "pools": [
+        "MegaPool",
+        "UnitsLunaCovenBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_BloodyMoon.prefab",
+        "m_AssetGUID": "20a6d52c068b2294b818f4c365ef8557"
+      },
+      "effects": [
+        "@BloodyMoon.effects0"
+      ],
+      "triggers": [
+        "@BloodyMoon.triggers0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_enemy",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_enemy",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "effects": [
+    {
+      "id": "BloodyMoon.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_int": 25,
+      "applied_vfx": "@BloodyMoon.effects0.appliedVFX"
+    },
+    {
+      "id": "BloodyMoon.triggers0.cardEffects0",
+      "name": "CardEffectGainEnergy",
+      "param_int": 2
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "BloodyMoon.effects0.appliedVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Spells/LunaCoven/BloodyMoon/FX_BloodyMoonSpell.prefab",
+        "m_AssetGUID": "d441223ba798113498bc756ffe5c9f79"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

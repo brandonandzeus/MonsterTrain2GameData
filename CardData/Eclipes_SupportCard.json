@@ -1,15 +1,22 @@
 {
-  "id": "Eclipes_SupportCard",
-  "guid": "9bee2809-87c3-481a-a72b-aa2e29d8d1a5",
-  "name": "Eclipes_SupportCard",
-  "cardType": "spell",
-  "rarity": "rare",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectUpdateMoonPhaseResource"
+      "id": "Eclipes_SupportCard",
+      "card_type": "spell",
+      "rarity": "rare",
+      "effects": [
+        "@Eclipes_SupportCard.effects0"
+      ],
+      "linked_mastery_card": "EclipseChamber",
+      "ignore_when_counting_mastery": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "linkedMasteryCard": "EclipseChamber",
-  "ignoreWhenCountingMastery": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "Eclipes_SupportCard.effects0",
+      "name": "CardEffectUpdateMoonPhaseResource"
+    }
+  ]
 }

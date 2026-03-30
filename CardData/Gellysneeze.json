@@ -1,70 +1,77 @@
 {
-  "id": "BackdraftAbility",
-  "guid": "f3c7769a-4f9b-43cf-aacd-cf32c14e3082",
-  "name": "Gellysneeze",
-  "nameKey": {
-    "key": "CardData_nameKey-4cd37103631a5be1-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
-    "english": "Gellysneeze",
-    "french": "Projection de morve",
-    "german": "Gelnieser",
-    "russian": "Сопливый чих",
-    "portuguese": "Espirro Gosmento",
-    "chinese": "熔胶喷嚏",
-    "spanish": "Estornudo ígneo",
-    "chinese_traditional": "厭膠噴嚏",
-    "korean": "점액 재채기",
-    "japanese": "ゲルのくしゃみ"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-079e48b4f5b2a770-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
-    "english": "Deal [effect0.power] damage then apply [pyregel] [effect1.status0.power] to the front enemy unit.",
-    "french": "Inflige <nobr>[effect0.power] DGT,</nobr> puis [pyregel] [effect1.status0.power] à l'ennemi en 1re ligne.",
-    "german": "Verursache [effect0.power] Schaden gegen die vorderste gegnerische Einheit und wende [pyregel] [effect1.status0.power] auf sie an.",
-    "russian": "Наносит переднему вражескому бойцу [effect0.power] урона и накладывает на него [pyregel] х[effect1.status0.power].",
-    "portuguese": "Causa [effect0.power] de dano e aplica [pyregel] [effect1.status0.power] à unidade inimiga na frente.",
-    "chinese": "造成 [effect0.power] 点伤害，然后对前排敌方单位施加 [pyregel] [effect1.status0.power]。",
-    "spanish": "Inflige [effect0.power] de daño y añade [pyregel] [effect1.status0.power] a la primera unidad enemiga.",
-    "chinese_traditional": "對前排敵方單位施加[effect0.power]點傷害與[pyregel][effect1.status0.power]。",
-    "korean": "전열 적 유닛에 [effect0.power]의 피해를 입힌 후 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
-    "japanese": "[effect0.power]のダメージを与え、前列の敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "BackdraftAbility",
+      "names": {
+        "key": "CardData_nameKey-4cd37103631a5be1-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
+        "english": "Gellysneeze",
+        "french": "Projection de morve",
+        "german": "Gelnieser",
+        "russian": "Сопливый чих",
+        "portuguese": "Espirro Gosmento",
+        "chinese": "熔胶喷嚏",
+        "spanish": "Estornudo ígneo",
+        "chinese_traditional": "厭膠噴嚏",
+        "korean": "점액 재채기",
+        "japanese": "ゲルのくしゃみ"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-079e48b4f5b2a770-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
+        "english": "Deal [effect0.power] damage then apply [pyregel] [effect1.status0.power] to the front enemy unit.",
+        "french": "Inflige <nobr>[effect0.power] DGT,</nobr> puis [pyregel] [effect1.status0.power] à l'ennemi en 1re ligne.",
+        "german": "Verursache [effect0.power] Schaden gegen die vorderste gegnerische Einheit und wende [pyregel] [effect1.status0.power] auf sie an.",
+        "russian": "Наносит переднему вражескому бойцу [effect0.power] урона и накладывает на него [pyregel] х[effect1.status0.power].",
+        "portuguese": "Causa [effect0.power] de dano e aplica [pyregel] [effect1.status0.power] à unidade inimiga na frente.",
+        "chinese": "造成 [effect0.power] 点伤害，然后对前排敌方单位施加 [pyregel] [effect1.status0.power]。",
+        "spanish": "Inflige [effect0.power] de daño y añade [pyregel] [effect1.status0.power] a la primera unidad enemiga.",
+        "chinese_traditional": "對前排敵方單位施加[effect0.power]點傷害與[pyregel][effect1.status0.power]。",
+        "korean": "전열 적 유닛에 [effect0.power]의 피해를 입힌 후 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "[effect0.power]のダメージを与え、前列の敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPyreborne",
+      "effects": [
+        "@BackdraftAbility.effects0",
+        "@BackdraftAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectDamage",
-      "targetMode": "front_in_room",
-      "targetTeamType": "heroes",
-      "paramInt": 1,
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/GellySneeze/FX_GellySneeze.prefab",
-          "m_AssetGUID": "44d035819732a3a4daa8ebb059ef0e0d"
-        },
-        "spawnLocation": "character_side_fwd_center"
-      }
+      "id": "BackdraftAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_int": 1,
+      "applied_to_self_vfx": "@BackdraftAbility.effects0.appliedToSelfVFX"
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "front_in_room",
-      "targetTeamType": "heroes",
-      "paramStatusEffects": [
+      "id": "BackdraftAbility.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "statusId": "pyregel",
+          "status": "pyregel",
           "count": 12
         }
       ],
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/GellySneeze/FX_GellySneeze.prefab",
-          "m_AssetGUID": "44d035819732a3a4daa8ebb059ef0e0d"
-        },
-        "spawnLocation": "character_side_fwd_center"
-      }
+      "applied_to_self_vfx": "@BackdraftAbility.effects0.appliedToSelfVFX"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "vfxs": [
+    {
+      "id": "BackdraftAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/GellySneeze/FX_GellySneeze.prefab",
+        "m_AssetGUID": "44d035819732a3a4daa8ebb059ef0e0d"
+      },
+      "spawn_location": "character_side_fwd_center"
+    }
+  ]
 }

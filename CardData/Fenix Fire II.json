@@ -1,86 +1,99 @@
 {
-  "id": "PyreborneChampionAbilityAbilityLineUpgrade2",
-  "guid": "8fb5ca1c-2ae0-4083-983a-b87d70c0ef6c",
-  "name": "Fenix Fire II",
-  "nameKey": {
-    "key": "CardData_nameKey-6b300e8419709c1d-35a740ae8e37af84896122bbb378f41a-v2",
-    "english": "Fenix Fire II",
-    "french": "Feu de Fenix II",
-    "german": "Fenix-Feuer II",
-    "russian": "Пламя Феникса II",
-    "portuguese": "Chama da Fênix II",
-    "chinese": "菲尼克斯之火 II",
-    "spanish": "Fuego de Fénix II",
-    "chinese_traditional": "費尼克斯之火II",
-    "korean": "페닉스의 불꽃 II",
-    "japanese": "フェニックスの火II"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-8ef8aec0d9dfcab8-35a740ae8e37af84896122bbb378f41a-v2",
-    "english": "Deal damage equal to this unit's attack. Apply [pyregel] [effect1.status0.power] to enemy units.",
-    "french": "Applique des dégâts valant l'attaque de cette unité. Applique [pyregel] [effect1.status0.power] aux unités ennemies.",
-    "german": "Füge Schaden in Höhe des Angriffs dieser Einheit zu. Wende [pyregel] [effect1.status0.power] auf gegnerische Einheiten an.",
-    "russian": "Наносит урон, равный атаке этого бойца. Накладывает [pyregel] х[effect1.status0.power] на врагов.",
-    "portuguese": "Causa dano igual ao ataque desta unidade. Aplica [pyregel] [effect1.status0.power] às unidades inimigas.",
-    "chinese": "对敌方单位造成相当于该单位攻击力的伤害，对所有敌方单位施加 [pyregel] [effect1.status0.power]。",
-    "spanish": "Inflige tanto daño como el ataque de esta unidad. Añade [pyregel] [effect1.status0.power] a las unidades enemigas.",
-    "chinese_traditional": "造成等於此單位攻擊力的傷害。對敵方單位施加[pyregel][effect1.status0.power]。",
-    "korean": "이 유닛의 공격력만큼 피해를 입힙니다. 적 유닛들에게 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
-    "japanese": "このユニットの攻撃力に等しいダメージを与える。敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "PyreborneChampionAbilityAbilityLineUpgrade2",
+      "names": {
+        "key": "CardData_nameKey-6b300e8419709c1d-35a740ae8e37af84896122bbb378f41a-v2",
+        "english": "Fenix Fire II",
+        "french": "Feu de Fenix II",
+        "german": "Fenix-Feuer II",
+        "russian": "Пламя Феникса II",
+        "portuguese": "Chama da Fênix II",
+        "chinese": "菲尼克斯之火 II",
+        "spanish": "Fuego de Fénix II",
+        "chinese_traditional": "費尼克斯之火II",
+        "korean": "페닉스의 불꽃 II",
+        "japanese": "フェニックスの火II"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-8ef8aec0d9dfcab8-35a740ae8e37af84896122bbb378f41a-v2",
+        "english": "Deal damage equal to this unit's attack. Apply [pyregel] [effect1.status0.power] to enemy units.",
+        "french": "Applique des dégâts valant l'attaque de cette unité. Applique [pyregel] [effect1.status0.power] aux unités ennemies.",
+        "german": "Füge Schaden in Höhe des Angriffs dieser Einheit zu. Wende [pyregel] [effect1.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Наносит урон, равный атаке этого бойца. Накладывает [pyregel] х[effect1.status0.power] на врагов.",
+        "portuguese": "Causa dano igual ao ataque desta unidade. Aplica [pyregel] [effect1.status0.power] às unidades inimigas.",
+        "chinese": "对敌方单位造成相当于该单位攻击力的伤害，对所有敌方单位施加 [pyregel] [effect1.status0.power]。",
+        "spanish": "Inflige tanto daño como el ataque de esta unidad. Añade [pyregel] [effect1.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "造成等於此單位攻擊力的傷害。對敵方單位施加[pyregel][effect1.status0.power]。",
+        "korean": "이 유닛의 공격력만큼 피해를 입힙니다. 적 유닛들에게 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "このユニットの攻撃力に等しいダメージを与える。敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPyreborne",
+      "traits": [
+        "@PyreborneChampionAbilityAbilityLineUpgrade2.traits0"
+      ],
+      "effects": [
+        "@PyreborneChampionAbilityAbilityLineUpgrade2.effects0",
+        "@PyreborneChampionAbilityAbilityLineUpgrade2.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
   "traits": [
     {
-      "traitStateName": "CardTraitDamageOverflow",
-      "paramInt": 2,
-      "traitIsRemovable": false,
-      "tooltipSuppressed": true
+      "id": "PyreborneChampionAbilityAbilityLineUpgrade2.traits0",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2,
+      "trait_is_removable": false,
+      "tooltip_suppressed": true
     }
   ],
   "effects": [
     {
-      "effectStateName": "CardEffectDamagePerSourceAttack",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both",
-      "paramInt": 1,
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-        },
-        "spawnLocation": "character_center"
-      },
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/Lava Laser/FX_LavaLaser.prefab",
-          "m_AssetGUID": "1e7b433c7b279ab42a5fe24bb5d1eea9"
-        },
-        "spawnLocation": "character_side_fwd_center"
-      }
+      "id": "PyreborneChampionAbilityAbilityLineUpgrade2.effects0",
+      "name": "CardEffectDamagePerSourceAttack",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_int": 1,
+      "applied_vfx": "@PyreborneChampionAbilityAbilityLineUpgrade2.effects0.appliedVFX",
+      "applied_to_self_vfx": "@PyreborneChampionAbilityAbilityLineUpgrade2.effects0.appliedToSelfVFX"
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "room",
-      "targetTeamType": "heroes",
-      "paramStatusEffects": [
+      "id": "PyreborneChampionAbilityAbilityLineUpgrade2.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "statusId": "pyregel",
+          "status": "pyregel",
           "count": 4
         }
       ],
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-        },
-        "spawnLocation": "character_center"
-      }
+      "applied_vfx": "@PyreborneChampionAbilityAbilityLineUpgrade2.effects0.appliedVFX"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "front_enemy"
+  "vfxs": [
+    {
+      "id": "PyreborneChampionAbilityAbilityLineUpgrade2.effects0.appliedVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+        "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreborneChampionAbilityAbilityLineUpgrade2.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/Lava Laser/FX_LavaLaser.prefab",
+        "m_AssetGUID": "1e7b433c7b279ab42a5fe24bb5d1eea9"
+      },
+      "spawn_location": "character_side_fwd_center"
+    }
+  ]
 }

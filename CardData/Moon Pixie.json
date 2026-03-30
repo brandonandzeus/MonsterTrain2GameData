@@ -1,143 +1,166 @@
 {
-  "id": "FaeMoonPixie",
-  "guid": "7d46efd0-2ed7-4fe3-bd49-1c2e840d2ba5",
-  "name": "Moon Pixie",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaPool",
-    "UnitsLunaCovenBannerReplacementMutator"
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "FaeMoonPixie",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "pools": [
+        "MegaPool",
+        "UnitsLunaCovenBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MoonPixie.prefab",
+        "m_AssetGUID": "9d6bc33fb2a68e1479edb7699c0f5d04"
+      },
+      "effects": [
+        "@FaeMoonPixie.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Samuel Lim"
+    }
   ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MoonPixie.prefab",
-    "m_AssetGUID": "9d6bc33fb2a68e1479edb7699c0f5d04"
-  },
+  "characters": [
+    {
+      "id": "MonsterFaeMooncaller",
+      "names": {
+        "key": "CharacterData_nameKey-8aab5901d19cad1e-9c4684cf63aa8ec499390c0ad86ec8bf-v2",
+        "english": "Moon Pixie",
+        "french": "Fée lunaire",
+        "german": "Mondelfe",
+        "russian": "Пикси",
+        "portuguese": "Fada Lunar",
+        "chinese": "月之仙子",
+        "spanish": "Hada lunar",
+        "chinese_traditional": "月亮精靈",
+        "korean": "달 요정",
+        "japanese": "ムーン・ピクシー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-cc3d530ed7b63087-9c4684cf63aa8ec499390c0ad86ec8bf-v2",
+          "english": "“These sands of Limbo are no moon rock. They will have to do for my night blooms.”",
+          "french": "<nobr>« Ce</nobr> sable des Limbes ne vaut pas les roches lunaires. Mes fleurs nocturnes devront s'en <nobr>contenter. »</nobr>",
+          "german": "„Dieser Limbo-Sand ist kein Mondgestein. Er muss für meine Nachtblüten reichen.“",
+          "russian": "«Пески Лимбо — это не камни на луне. Здесь мои ночные цветы должны прижиться».",
+          "portuguese": "“Essas areias do Limbo não são rochas lunares. Ainda assim, terei que usá-las para cultivar minhas flores noturnas.”",
+          "chinese": "“这些地狱边缘的沙地可不是月亮上的岩石。我的夜之花只能用它们凑合了。”",
+          "spanish": "«Las arenas del Limbo no son exactamente roca lunar, pero tendrán que servir para mis flores nocturnas».",
+          "chinese_traditional": "「靈薄獄的這些沙子不是月岩。我的夜花就全靠它們了。」",
+          "korean": "\"이 지옥 변방의 모래는 달 암석과 달라. 저 모래로 밤의 꽃을 피워야겠어.\"",
+          "japanese": "「辺獄の砂は月の石ではないけど、夜の花のために代用しないといけないようね」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MoonPixie.prefab",
+        "m_AssetGUID": "08201584f263ecc44a9cf3cfa27b32c7"
+      },
+      "impact_vfx": "@FaeMoonPixie.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "conduit",
+          "count": 3
+        }
+      ],
+      "triggers": [
+        "@FaeMoonPixie.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 3,
+      "ascends_train_automatically": false,
+      "attack_damage": 3,
+      "subtypes": [
+        "SubtypesData_Fae"
+      ],
+      "chatter": "LunaCovenFaeFemaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "FaeMoonPixie.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-e2de34116b4f7fb5-9c4684cf63aa8ec499390c0ad86ec8bf-v2",
+        "english": "Grant [conduit] [effect0.status0.power].",
+        "french": "Octroie [conduit] [effect0.status0.power].",
+        "german": "Verleiht [conduit] [effect0.status0.power].",
+        "russian": "Дается [conduit] х[effect0.status0.power].",
+        "portuguese": "Concede [conduit] [effect0.status0.power].",
+        "chinese": "获得 [conduit] [effect0.status0.power]。",
+        "spanish": "Añade [conduit] [effect0.status0.power].",
+        "chinese_traditional": "賦予[conduit][effect0.status0.power]。",
+        "korean": "[conduit] [effect0.status0.power] 효과를 부여합니다.",
+        "japanese": "[conduit] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "after_spawn_enchant",
+      "effects": [
+        "@FaeMoonPixie.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterFaeMooncaller",
-        "guid": "6bec62d7-f244-44b5-9e7c-286059127459",
-        "nameKey": {
-          "key": "CharacterData_nameKey-8aab5901d19cad1e-9c4684cf63aa8ec499390c0ad86ec8bf-v2",
-          "english": "Moon Pixie",
-          "french": "Fée lunaire",
-          "german": "Mondelfe",
-          "russian": "Пикси",
-          "portuguese": "Fada Lunar",
-          "chinese": "月之仙子",
-          "spanish": "Hada lunar",
-          "chinese_traditional": "月亮精靈",
-          "korean": "달 요정",
-          "japanese": "ムーン・ピクシー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-cc3d530ed7b63087-9c4684cf63aa8ec499390c0ad86ec8bf-v2",
-            "english": "“These sands of Limbo are no moon rock. They will have to do for my night blooms.”",
-            "french": "<nobr>« Ce</nobr> sable des Limbes ne vaut pas les roches lunaires. Mes fleurs nocturnes devront s'en <nobr>contenter. »</nobr>",
-            "german": "„Dieser Limbo-Sand ist kein Mondgestein. Er muss für meine Nachtblüten reichen.“",
-            "russian": "«Пески Лимбо — это не камни на луне. Здесь мои ночные цветы должны прижиться».",
-            "portuguese": "“Essas areias do Limbo não são rochas lunares. Ainda assim, terei que usá-las para cultivar minhas flores noturnas.”",
-            "chinese": "“这些地狱边缘的沙地可不是月亮上的岩石。我的夜之花只能用它们凑合了。”",
-            "spanish": "«Las arenas del Limbo no son exactamente roca lunar, pero tendrán que servir para mis flores nocturnas».",
-            "chinese_traditional": "「靈薄獄的這些沙子不是月岩。我的夜花就全靠它們了。」",
-            "korean": "\"이 지옥 변방의 모래는 달 암석과 달라. 저 모래로 밤의 꽃을 피워야겠어.\"",
-            "japanese": "「辺獄の砂は月の石ではないけど、夜の花のために代用しないといけないようね」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MoonPixie.prefab",
-          "m_AssetGUID": "08201584f263ecc44a9cf3cfa27b32c7"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "conduit",
-            "count": 3
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-e2de34116b4f7fb5-9c4684cf63aa8ec499390c0ad86ec8bf-v2",
-              "english": "Grant [conduit] [effect0.status0.power].",
-              "french": "Octroie [conduit] [effect0.status0.power].",
-              "german": "Verleiht [conduit] [effect0.status0.power].",
-              "russian": "Дается [conduit] х[effect0.status0.power].",
-              "portuguese": "Concede [conduit] [effect0.status0.power].",
-              "chinese": "获得 [conduit] [effect0.status0.power]。",
-              "spanish": "Añade [conduit] [effect0.status0.power].",
-              "chinese_traditional": "賦予[conduit][effect0.status0.power]。",
-              "korean": "[conduit] [effect0.status0.power] 효과를 부여합니다.",
-              "japanese": "[conduit] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "after_spawn_enchant",
-            "effects": [
-              {
-                "effectStateName": "CardEffectEnchant",
-                "targetMode": "room",
-                "targetTeamType": "monsters",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "conduit",
-                    "count": 3
-                  }
-                ],
-                "additionalTooltips": [
-                  {
-                    "descriptionKey": {
-                      "key": "CardTraitMagicPower_TooltipText",
-                      "english": "Increases the amount of damage dealt and health restored by spells.",
-                      "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-                      "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-                      "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-                      "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-                      "chinese": "提高法术造成的伤害与恢复的生命值。",
-                      "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-                      "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-                      "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-                      "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-                    },
-                    "titleKey": {
-                      "key": "CardTraitMagicPower_TooltipTitle",
-                      "english": "Magic Power",
-                      "french": "Puissance magique",
-                      "german": "Magische Kraft",
-                      "russian": "Сила магии",
-                      "portuguese": "Poder Mágico",
-                      "chinese": "魔法强度",
-                      "spanish": "Poder mágico",
-                      "chinese_traditional": "魔法力量",
-                      "korean": "마법력",
-                      "japanese": "魔力"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 3,
-        "ascendsTrainAutomatically": false,
-        "attackDamage": 3,
-        "subtypeKeys": [
-          "SubtypesData_Fae"
-        ],
-        "characterChatterData": "LunaCovenFaeFemaleChatterData"
+      "id": "FaeMoonPixie.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectEnchant",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 3
+        }
+      ],
+      "additional_tooltips": [
+        "@FaeMoonPixie.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
+      ]
+    },
+    {
+      "id": "FaeMoonPixie.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterFaeMooncaller"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "FaeMoonPixie.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
       }
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Samuel Lim"
+  "vfxs": [
+    {
+      "id": "FaeMoonPixie.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,43 +1,50 @@
 {
-  "id": "PotionKit_Ability",
-  "guid": "d18c5f9a-72c0-4c27-ad3f-24bd9cf54736",
-  "name": "Brew",
-  "nameKey": {
-    "key": "CardData_nameKey-a6e5bf1b863ad473-7609b4ab01538d9499a598ed8c37226d-v2",
-    "english": "Brew",
-    "french": "Brassage",
-    "german": "Brauen",
-    "russian": "Отвароварение",
-    "portuguese": "Preparar",
-    "chinese": "调配",
-    "spanish": "Elaboración",
-    "chinese_traditional": "釀造",
-    "korean": "증류",
-    "japanese": "醸造"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-59841d45737c73d9-7609b4ab01538d9499a598ed8c37226d-v2",
-    "english": "[mix].",
-    "french": "[mix].",
-    "german": "[mix].",
-    "russian": "[mix].",
-    "portuguese": "[mix].",
-    "chinese": "[mix]。",
-    "spanish": "[mix].",
-    "chinese_traditional": "[mix]。",
-    "korean": "[mix].",
-    "japanese": "[mix]。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2
+      "id": "PotionKit_Ability",
+      "names": {
+        "key": "CardData_nameKey-a6e5bf1b863ad473-7609b4ab01538d9499a598ed8c37226d-v2",
+        "english": "Brew",
+        "french": "Brassage",
+        "german": "Brauen",
+        "russian": "Отвароварение",
+        "portuguese": "Preparar",
+        "chinese": "调配",
+        "spanish": "Elaboración",
+        "chinese_traditional": "釀造",
+        "korean": "증류",
+        "japanese": "醸造"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-59841d45737c73d9-7609b4ab01538d9499a598ed8c37226d-v2",
+        "english": "[mix].",
+        "french": "[mix].",
+        "german": "[mix].",
+        "russian": "[mix].",
+        "portuguese": "[mix].",
+        "chinese": "[mix]。",
+        "spanish": "[mix].",
+        "chinese_traditional": "[mix]。",
+        "korean": "[mix].",
+        "japanese": "[mix]。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "effects": [
+        "@PotionKit_Ability.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "PotionKit_Ability.effects0",
+      "name": "CardEffectMix",
+      "param_int": 2
+    }
+  ]
 }

@@ -1,60 +1,68 @@
 {
-  "id": "SpellSlamAbility",
-  "guid": "7617850d-a72f-46de-87e4-dbcaa50fe1c2",
-  "name": "Spell Slam",
-  "nameKey": {
-    "key": "CardData_nameKey-564d4bae4e763702-b47d793ebc047c2448f4e139ccef1026-v2",
-    "english": "Spell Slam",
-    "french": "Ruée de sorts",
-    "german": "Zauber-Slam",
-    "russian": "Шквал чар",
-    "portuguese": "Golpe Mágico",
-    "chinese": "法术猛击",
-    "spanish": "Choque arcano",
-    "chinese_traditional": "法術重擊",
-    "korean": "주문 강타",
-    "japanese": "スペル・スラム"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-43e4040966318207-b47d793ebc047c2448f4e139ccef1026-v2",
-    "english": "Restore to full health. Apply [spellweakness] [effect1.status0.power] to enemy units.",
-    "french": "Restaure tous les PV. Inflige [spellweakness] [effect1.status0.power] aux ennemis.",
-    "german": "Stellt die Gesundheit vollständig wieder her. Wende [spellweakness] [effect1.status0.power] auf gegnerische Einheiten an.",
-    "russian": "Полностью восстанавливает здоровье. Накладывает [spellweakness] х[effect1.status0.power] на врагов.",
-    "portuguese": "Restaura a vida completamente. Aplica [spellweakness] [effect1.status0.power] às unidades inimigas.",
-    "chinese": "恢复所有生命值。对所有敌方单位施加 [spellweakness] [effect1.status0.power]。",
-    "spanish": "Restaura toda su salud. Añade [spellweakness] [effect1.status0.power] a las unidades enemigas.",
-    "chinese_traditional": "恢復至滿血。對敵方單位施加[spellweakness][effect1.status0.power]。",
-    "korean": "체력을 모두 회복합니다. 적 유닛들에게 [spellweakness] [effect1.status0.power] 효과를 적용합니다.",
-    "japanese": "体力を全回復する。敵ユニットに[spellweakness] [effect1.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
-    "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
-  },
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "SpellSlamAbility",
+      "names": {
+        "key": "CardData_nameKey-564d4bae4e763702-b47d793ebc047c2448f4e139ccef1026-v2",
+        "english": "Spell Slam",
+        "french": "Ruée de sorts",
+        "german": "Zauber-Slam",
+        "russian": "Шквал чар",
+        "portuguese": "Golpe Mágico",
+        "chinese": "法术猛击",
+        "spanish": "Choque arcano",
+        "chinese_traditional": "法術重擊",
+        "korean": "주문 강타",
+        "japanese": "スペル・スラム"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-43e4040966318207-b47d793ebc047c2448f4e139ccef1026-v2",
+        "english": "Restore to full health. Apply [spellweakness] [effect1.status0.power] to enemy units.",
+        "french": "Restaure tous les PV. Inflige [spellweakness] [effect1.status0.power] aux ennemis.",
+        "german": "Stellt die Gesundheit vollständig wieder her. Wende [spellweakness] [effect1.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Полностью восстанавливает здоровье. Накладывает [spellweakness] х[effect1.status0.power] на врагов.",
+        "portuguese": "Restaura a vida completamente. Aplica [spellweakness] [effect1.status0.power] às unidades inimigas.",
+        "chinese": "恢复所有生命值。对所有敌方单位施加 [spellweakness] [effect1.status0.power]。",
+        "spanish": "Restaura toda su salud. Añade [spellweakness] [effect1.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "恢復至滿血。對敵方單位施加[spellweakness][effect1.status0.power]。",
+        "korean": "체력을 모두 회복합니다. 적 유닛들에게 [spellweakness] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "体力を全回復する。敵ユニットに[spellweakness] [effect1.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
+        "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
+      },
+      "effects": [
+        "@SpellSlamAbility.effects0",
+        "@SpellSlamAbility.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectHeal",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "paramInt": 9999
+      "id": "SpellSlamAbility.effects0",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "param_int": 9999
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "room",
-      "targetTeamType": "heroes",
-      "paramStatusEffects": [
+      "id": "SpellSlamAbility.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "statusId": "spell weakness",
+          "status": "spell weakness",
           "count": 1
         }
       ]
     }
-  ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  ]
 }

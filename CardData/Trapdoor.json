@@ -1,56 +1,65 @@
 {
-  "id": "TrapChuteAbility",
-  "guid": "1fd6ef15-e044-4e0e-93c4-3766602282ab",
-  "name": "Trapdoor",
-  "nameKey": {
-    "key": "CardData_nameKey-8b81f769314053f8-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
-    "english": "Trapdoor",
-    "french": "Trappe",
-    "german": "Falltür",
-    "russian": "Люк",
-    "portuguese": "Alçapão",
-    "chinese": "陷阱门",
-    "spanish": "Puerta trampa",
-    "chinese_traditional": "陷阱門",
-    "korean": "함정문",
-    "japanese": "落とし戸"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-bc38babedc78d2de-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
-    "english": "[descend] enemy units to the bottom floor. Apply [dazed] [effect0.status0.power].",
-    "french": "Fait <b>descendre</b> les unités au niveau inférieur. Inflige <nobr>[dazed] [effect0.status0.power]</nobr>.",
-    "german": "Lass gegnerische Einheiten auf die untere Ebene [descend]. Wende [dazed] [effect0.status0.power] an.",
-    "russian": "[descend] врагов на нижний этаж. Дает [dazed] х[effect0.status0.power].",
-    "portuguese": "<b>Derruba</b> unidades inimigas para o andar de baixo. Aplica [dazed] [effect0.status0.power].",
-    "chinese": "使所有敌方单位 [descend] 至底层，并施加 [dazed] [effect0.status0.power]。",
-    "spanish": "<b>Desciende</b> a las unidades enemigas al piso más bajo. Añade [dazed] [effect0.status0.power].",
-    "chinese_traditional": "使敵方單位[descend]至底層。施加[dazed][effect0.status0.power]。",
-    "korean": "적 유닛들을 최하층으로 [descend]시킵니다. [dazed] [effect0.status0.power] 효과를 적용합니다.",
-    "japanese": "敵ユニットを最下フロアに[descend]させる。[dazed] [effect0.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "TrapChuteAbility",
+      "names": {
+        "key": "CardData_nameKey-8b81f769314053f8-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
+        "english": "Trapdoor",
+        "french": "Trappe",
+        "german": "Falltür",
+        "russian": "Люк",
+        "portuguese": "Alçapão",
+        "chinese": "陷阱门",
+        "spanish": "Puerta trampa",
+        "chinese_traditional": "陷阱門",
+        "korean": "함정문",
+        "japanese": "落とし戸"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-bc38babedc78d2de-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
+        "english": "[descend] enemy units to the bottom floor. Apply [dazed] [effect0.status0.power].",
+        "french": "Fait <b>descendre</b> les unités au niveau inférieur. Inflige <nobr>[dazed] [effect0.status0.power]</nobr>.",
+        "german": "Lass gegnerische Einheiten auf die untere Ebene [descend]. Wende [dazed] [effect0.status0.power] an.",
+        "russian": "[descend] врагов на нижний этаж. Дает [dazed] х[effect0.status0.power].",
+        "portuguese": "<b>Derruba</b> unidades inimigas para o andar de baixo. Aplica [dazed] [effect0.status0.power].",
+        "chinese": "使所有敌方单位 [descend] 至底层，并施加 [dazed] [effect0.status0.power]。",
+        "spanish": "<b>Desciende</b> a las unidades enemigas al piso más bajo. Añade [dazed] [effect0.status0.power].",
+        "chinese_traditional": "使敵方單位[descend]至底層。施加[dazed][effect0.status0.power]。",
+        "korean": "적 유닛들을 최하층으로 [descend]시킵니다. [dazed] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットを最下フロアに[descend]させる。[dazed] [effect0.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@TrapChuteAbility.effects0",
+        "@TrapChuteAbility.effects1"
+      ],
+      "cooldown": 3,
+      "is_room_ability": true,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "room",
-      "targetTeamType": "heroes",
-      "paramStatusEffects": [
+      "id": "TrapChuteAbility.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "statusId": "dazed",
+          "status": "dazed",
           "count": 2
         }
       ]
     },
     {
-      "effectStateName": "CardEffectBump",
-      "targetMode": "room",
-      "targetTeamType": "heroes",
-      "paramInt": -2
+      "id": "TrapChuteAbility.effects1",
+      "name": "CardEffectBump",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": -2
     }
-  ],
-  "cooldownAfterActivated": 3,
-  "isRoomAbility": true,
-  "requiredDLC": "railforged",
-  "initialKeyboardTarget": "front_friendly"
+  ]
 }

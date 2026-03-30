@@ -1,109 +1,128 @@
 {
-  "id": "Steelworker",
-  "guid": "600ef4bf-59ec-45b6-a3e7-273cbb43c7bb",
-  "name": "Steelworker",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "LevelableUnits",
-    "UnitsAllBanner",
-    "UnitsHellhornedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Steelworker.prefab",
-    "m_AssetGUID": "7bd6f50ae74d2cb4488992ae449d66f9"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "Steelworker",
-        "guid": "8260061a-16da-48dc-8d35-2c7813fea8a6",
-        "nameKey": {
-          "key": "CharacterData_nameKey-ad85f089c4b7fd31-0dbdfbcc89073344f9b0402c959eacd6-v2",
-          "english": "Steelworker",
-          "french": "Sidérurgiste",
-          "german": "Stahlwerker",
-          "russian": "Сталевар",
-          "portuguese": "Ferreiro",
-          "chinese": "锻铁工人",
-          "spanish": "Siderúrgico",
-          "chinese_traditional": "鋼鐵工人",
-          "korean": "강철공",
-          "japanese": "スティールワーカー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-d584662c63c00293-0dbdfbcc89073344f9b0402c959eacd6-v2",
-            "english": "Along with a team of imps, these demons are responsible for the creation of all Hellhorned armor and weapons. While not usually on the front lines, their centuries of working metal gives them a comfortable tendency towards combat.",
-            "french": "Aidés par des diablotins, ces diables sont responsables de la création de toutes les armes et armures des Cornus. Bien qu'ils ne soient pas en général en première ligne, leurs siècles passés à travailler le métal les ont dotés d'une certaine aisance au combat.",
-            "german": "Gemeinsam mit einigen Kobolden sind diese Dämonen für die Produktion aller Rüstungen und Waffen der Höllenhörner verantwortlich. Sie kämpfen üblicherweise nicht direkt an der Front, aber da sie so gut mit Metall umgehen können, haben sie auch keine besondere Angst vor Kämpfen.",
-            "russian": "Эти демоны и помогающие им бесы создают всю броню и оружие Адских отродий. Хотя их и редко можно увидеть на передовой, но веками обрабатывая металл, они вполне уютно ощущают себя в бою.",
-            "portuguese": "Acompanhados de uma equipe de diabinhos, esses demônios são responsáveis pela forja das armas e armaduras Endiabradas. Embora não costumem estar nas linhas de frente, os séculos gastos trabalhando com metal os prepararam para o combate.",
-            "chinese": "这些恶魔和一群小鬼一起工作，负责为狱魔打造合身的武器与护甲。虽然它们通常不会上前线，但它们数百年的锻铁经验会让它们在战斗中更具优势。",
-            "spanish": "Junto con un equipo de diablillos, estos demonios están a cargo de la producción de todas las armas y armaduras de los Astados Infernales. Aunque no suelen luchar en el frente, sus siglos como herreros les dan cierta comodidad en combate.",
-            "chinese_traditional": "這些惡魔率領一眾小鬼，負責創造所有煉獄族的盔甲和武器。雖然他們通常不在前線，但他們數世紀以來不斷從事金屬方面的工作，這使得他們的戰鬥能力也不虞匱乏。",
-            "korean": "이들 악마는 임프들과 함께 지옥뿔 군단이 사용하는 모든 무기와 방어구를 제작한다. 평소에는 최전선에 나서지 않지만, 수세기 동안 익힌 금속 가공술 덕분에 전투에 능숙하다.",
-            "japanese": "この悪魔は、インプのグループとともに、獄角族のあらゆる鎧や武器の作成を担っている。通常は前線に立つことはないが、何世紀にもわたって金属を鍛えてきた技術は戦闘にも応用できる。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Steelworker.prefab",
-          "m_AssetGUID": "a212514ec3169c040bddf601cd613cfb"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-9d0bef6695b21c0e-0dbdfbcc89073344f9b0402c959eacd6-v2",
-              "english": "Apply [armor] [effect0.status0.power] to friendly units.",
-              "french": "Confère <b>Armure</b> [effect0.status0.power] aux unités alliées.",
-              "german": "Wende [effect0.status0.power] <b>Rüstung</b> auf verbündete Einheiten an.",
-              "russian": "На союзников накладывается [armor] х[effect0.status0.power].",
-              "portuguese": "Concede <b>Armadura</b> [effect0.status0.power] às unidades aliadas.",
-              "chinese": "所有友方单位获得[armor] [effect0.status0.power]。",
-              "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas.",
-              "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。",
-              "korean": "아군 유닛들에게 [armor] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "post_combat",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "monsters",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "armor",
-                    "count": 6
-                  }
-                ],
-                "paramInt": 100
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 15,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "HellhornedDemonChatterData"
-      }
+      "id": "Steelworker",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassHellhorned",
+      "pools": [
+        "LevelableUnits",
+        "UnitsAllBanner",
+        "UnitsHellhornedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/Portrait_Prefabs/CardArt_Steelworker.prefab",
+        "m_AssetGUID": "7bd6f50ae74d2cb4488992ae449d66f9"
+      },
+      "effects": [
+        "@Steelworker.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Gary Laib"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Gary Laib"
+  "characters": [
+    {
+      "id": "Steelworker",
+      "names": {
+        "key": "CharacterData_nameKey-ad85f089c4b7fd31-0dbdfbcc89073344f9b0402c959eacd6-v2",
+        "english": "Steelworker",
+        "french": "Sidérurgiste",
+        "german": "Stahlwerker",
+        "russian": "Сталевар",
+        "portuguese": "Ferreiro",
+        "chinese": "锻铁工人",
+        "spanish": "Siderúrgico",
+        "chinese_traditional": "鋼鐵工人",
+        "korean": "강철공",
+        "japanese": "スティールワーカー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-d584662c63c00293-0dbdfbcc89073344f9b0402c959eacd6-v2",
+          "english": "Along with a team of imps, these demons are responsible for the creation of all Hellhorned armor and weapons. While not usually on the front lines, their centuries of working metal gives them a comfortable tendency towards combat.",
+          "french": "Aidés par des diablotins, ces diables sont responsables de la création de toutes les armes et armures des Cornus. Bien qu'ils ne soient pas en général en première ligne, leurs siècles passés à travailler le métal les ont dotés d'une certaine aisance au combat.",
+          "german": "Gemeinsam mit einigen Kobolden sind diese Dämonen für die Produktion aller Rüstungen und Waffen der Höllenhörner verantwortlich. Sie kämpfen üblicherweise nicht direkt an der Front, aber da sie so gut mit Metall umgehen können, haben sie auch keine besondere Angst vor Kämpfen.",
+          "russian": "Эти демоны и помогающие им бесы создают всю броню и оружие Адских отродий. Хотя их и редко можно увидеть на передовой, но веками обрабатывая металл, они вполне уютно ощущают себя в бою.",
+          "portuguese": "Acompanhados de uma equipe de diabinhos, esses demônios são responsáveis pela forja das armas e armaduras Endiabradas. Embora não costumem estar nas linhas de frente, os séculos gastos trabalhando com metal os prepararam para o combate.",
+          "chinese": "这些恶魔和一群小鬼一起工作，负责为狱魔打造合身的武器与护甲。虽然它们通常不会上前线，但它们数百年的锻铁经验会让它们在战斗中更具优势。",
+          "spanish": "Junto con un equipo de diablillos, estos demonios están a cargo de la producción de todas las armas y armaduras de los Astados Infernales. Aunque no suelen luchar en el frente, sus siglos como herreros les dan cierta comodidad en combate.",
+          "chinese_traditional": "這些惡魔率領一眾小鬼，負責創造所有煉獄族的盔甲和武器。雖然他們通常不在前線，但他們數世紀以來不斷從事金屬方面的工作，這使得他們的戰鬥能力也不虞匱乏。",
+          "korean": "이들 악마는 임프들과 함께 지옥뿔 군단이 사용하는 모든 무기와 방어구를 제작한다. 평소에는 최전선에 나서지 않지만, 수세기 동안 익힌 금속 가공술 덕분에 전투에 능숙하다.",
+          "japanese": "この悪魔は、インプのグループとともに、獄角族のあらゆる鎧や武器の作成を担っている。通常は前線に立つことはないが、何世紀にもわたって金属を鍛えてきた技術は戦闘にも応用できる。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/Characters/Character_Prefabs/Character_Steelworker.prefab",
+        "m_AssetGUID": "a212514ec3169c040bddf601cd613cfb"
+      },
+      "impact_vfx": "@Steelworker.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@Steelworker.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 15,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "HellhornedDemonChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Steelworker.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-9d0bef6695b21c0e-0dbdfbcc89073344f9b0402c959eacd6-v2",
+        "english": "Apply [armor] [effect0.status0.power] to friendly units.",
+        "french": "Confère <b>Armure</b> [effect0.status0.power] aux unités alliées.",
+        "german": "Wende [effect0.status0.power] <b>Rüstung</b> auf verbündete Einheiten an.",
+        "russian": "На союзников накладывается [armor] х[effect0.status0.power].",
+        "portuguese": "Concede <b>Armadura</b> [effect0.status0.power] às unidades aliadas.",
+        "chinese": "所有友方单位获得[armor] [effect0.status0.power]。",
+        "spanish": "Añade [armor] [effect0.status0.power] a las unidades aliadas.",
+        "chinese_traditional": "對友方單位施加[armor][effect0.status0.power]。",
+        "korean": "아군 유닛들에게 [armor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "味方ユニットに[armor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Steelworker.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Steelworker.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 6
+        }
+      ],
+      "param_int": 100
+    },
+    {
+      "id": "Steelworker.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "Steelworker"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Steelworker.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

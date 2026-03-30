@@ -1,164 +1,184 @@
 {
-  "id": "Railgun",
-  "guid": "9b8f9080-0001-4994-bf1f-cf8bb247222f",
-  "name": "Railgun",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaPool",
-    "UnitsRailforgedBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Railgun.prefab",
-    "m_AssetGUID": "998aa06bf03b0a946a92032599ccff04"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterRailgun",
-        "guid": "743bb0bc-4c82-4836-9f3b-0dbbf02eceb9",
-        "nameKey": {
-          "key": "CharacterData_nameKey-18e9c81bfbac7185-6f187f4100a6ed54fa7795f2549e9311-v2",
-          "english": "Railgun",
-          "french": "Canon électrique",
-          "german": "Railgun",
-          "russian": "Рельсотрон",
-          "portuguese": "Canhão Magnético",
-          "chinese": "磁轨枪",
-          "spanish": "Cañón de riel",
-          "chinese_traditional": "軌道炮",
-          "korean": "레일건",
-          "japanese": "レールガン"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-2d7afd70507fc6c9-6f187f4100a6ed54fa7795f2549e9311-v2",
-            "english": "“So I said, ‘You know what this train needs? GUNS!’ All it took was a little tinkering of one of those spider-thingies my dad made, slap a cannon on it, and I had a machine gun that could walk AND shoot!”—Heph",
-            "french": "<nobr>« Alors</nobr> j'ai dit, vous savez ce qu'il manque à ce <nobr>train ?</nobr> Des <nobr>FLINGUES !</nobr> Il m'a suffi de bricoler une de ces espèces d'araignées que mon père avait fabriquées, de mettre un canon dessus, et <nobr>hop :</nobr> j'avais une mitrailleuse sur <nobr>pattes ! »</nobr> <nobr>— Heph</nobr>",
-            "german": "„Also, sagte ich, wisst ihr, was dieser Zug braucht? WAFFEN! Es braucht bloß ein wenig Tüftelei mit einem dieser Spinnendinger, die mein Vater hergestellt hatte. Kanone drauf und schon hatte ich ein Maschinengewehr, das laufen UND schießen konnte!“ – Heph",
-            "russian": "И я такая: \"Знаете, чего этому поезду не хватает? ОРУДИЙ!\" Всего-то нужно было немного поковыряться в одной из этих паукомашин отца, прикрутить к ней пушку — и все! Теперь у меня есть пулемет, который может ХОДИТЬ И СТРЕЛЯТЬ! — Геф",
-            "portuguese": "“Então eu disse: ‘Sabe do que esse trem precisa? De ARMAS!’ Bastou mexer um pouco em uma dessas aranhas que meu pai criou, enfiar um canhão nela e pronto! Eu tinha uma metralhadora que podia andar E atirar!” — Heph",
-            "chinese": "“于是我说：‘你知道这列火车需要什么吗？枪炮！’我把老爸制作的蜘蛛玩意儿改造了一番，装上火炮，然后我就造出了会行走射击的机枪！”——赫芙",
-            "spanish": "«Así que le dije, \"¿Sabes lo que necesita este tren? ¡ARMAS!\". Trasteé un poco con esas arañas que hizo mi padre, les metí un cañón y ¡así conseguí metralletas que disparan y andan!». —Heph",
-            "chinese_traditional": "「所以我就說，『你知道這輛列車需要什麼嗎？槍！』只要稍微改造一下我爸做的那些蜘蛛玩意兒，再裝上一門大砲，我就有了一台能走又能射的機關槍！」——赫芙",
-            "korean": "“그래서 내가 말했지. ‘이 열차에 뭐가 필요한지 알아? 총!’ 아빠가 만든 그 거미 기계들 중 하나를 좀 만져 보고, 대포를 하나 얹었더니, 걷기도 하고 쏘기도 하는 기관총이 되어버렸지 뭐야!”—헵",
-            "japanese": "「それで、こう言ったのよ。『この列車に必要なものは何だと思う？銃よ！』あの父さんが作ったクモみたいなやつをちょっといじくるだけでよかった。大砲を取り付けて、歩くだけじゃなくて撃つことができるマシンガンが出来たってわけ！」—ヘフ"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Railgun.prefab",
-          "m_AssetGUID": "09a23850be65b384282c893648ed014c"
-        },
-        "attackVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/Railgun/FX_RailgunAttack.prefab",
-            "m_AssetGUID": "4117c1f46c5860048976436001d93e33"
-          },
-          "spawnLocation": "character_center"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/Railgun/FX_RailgunImpact.prefab",
-            "m_AssetGUID": "44a482dae8b624248808983c9301adc8"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "immobile",
-            "count": 1
-          },
-          {
-            "statusId": "burst",
-            "count": 1
-          }
-        ],
-        "unitAbility": {
-          "id": "RailgunnerFireAbility",
-          "guid": "15e01480-4faf-429e-ad21-71190a3d3106",
-          "nameKey": {
-            "key": "CardData_nameKey-1f44c74cdda66dc7-193fec2dd53d8394e9503d4d4b906ca5-v2",
-            "english": "Overdrive",
-            "french": "Surrégime",
-            "german": "Überladung",
-            "russian": "Форсаж",
-            "portuguese": "Sobrecarga",
-            "chinese": "超速传动",
-            "spanish": "Potencia máxima",
-            "chinese_traditional": "超速運轉",
-            "korean": "오버드라이브",
-            "japanese": "加熱駆動"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-aff4565a4be67bb1-193fec2dd53d8394e9503d4d4b906ca5-v2",
-            "english": "Spend your remaining [ember]. Gain [burst] [trait0.power] for each ember spent.",
-            "french": "Dépense les <b>braises</b> restantes. Octroie [burst] [trait0.power] par <b>braise</b> dépensée.",
-            "german": "Investiere deine übrige [ember]. Erhalte pro investierter Glutasche [burst] [trait0.power].",
-            "russian": "Тратится оставшийся [ember]. Дает [burst] х[trait0.power] за каждый потраченный уголь.",
-            "portuguese": "Gasta suas [ember] restantes. Recebe [burst] [trait0.power] para cada brasa gasta.",
-            "chinese": "花费你剩余的[ember]。每花费一点余烬，就获得 [burst] [trait0.power]。",
-            "spanish": "Consume tus [ember] restantes. Añade [burst] [trait0.power] por cada ascua consumida.",
-            "chinese_traditional": "花費你剩餘的[ember]。每花費一點餘燼獲得[burst][trait0.power]。",
-            "korean": "남은 [ember]을 소모합니다. 소모한 잔불 하나당 [burst] [trait0.power]을 획득합니다.",
-            "japanese": "残りの[ember]を消費する。消費した炉炭ごとに[burst] [trait0.power]を得る。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "linkedClass": "ClassBanished",
-          "cardArtPrefabVariantRef": {
-            "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailgunAbility.prefab",
-            "m_AssetGUID": "5e36b0f58d247e44ca55a4c916a6e1d2"
-          },
-          "traits": [
-            {
-              "traitStateName": "CardTraitScalingAddStatusEffect",
-              "paramStatusEffects": [
-                {
-                  "statusId": "burst",
-                  "count": 0
-                }
-              ],
-              "paramTrackedValue": "played_cost",
-              "paramInt": 1,
-              "traitIsRemovable": false,
-              "tooltipSuppressed": true
-            }
-          ],
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramStatusEffects": [
-                {
-                  "statusId": "burst",
-                  "count": 0
-                }
-              ]
-            }
-          ],
-          "costType": "x",
-          "cooldownAfterActivated": 1,
-          "isUnitAbility": true,
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "size": 2,
-        "health": 5,
-        "attackDamage": 20,
-        "attackTeleportsToDefender": false,
-        "subtypeKeys": [
-          "SubtypesData_Machine"
-        ],
-        "characterChatterData": "RailforgedRailgunChatter",
-        "artistAttribution": "Daniel Sarmiento Chuquisengo"
-      }
+      "id": "Railgun",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassRailforged",
+      "pools": [
+        "MegaPool",
+        "UnitsRailforgedBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Railgun.prefab",
+        "m_AssetGUID": "998aa06bf03b0a946a92032599ccff04"
+      },
+      "effects": [
+        "@Railgun.effects0"
+      ],
+      "targetless": false,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
+    },
+    {
+      "id": "Railgun.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-1f44c74cdda66dc7-193fec2dd53d8394e9503d4d4b906ca5-v2",
+        "english": "Overdrive",
+        "french": "Surrégime",
+        "german": "Überladung",
+        "russian": "Форсаж",
+        "portuguese": "Sobrecarga",
+        "chinese": "超速传动",
+        "spanish": "Potencia máxima",
+        "chinese_traditional": "超速運轉",
+        "korean": "오버드라이브",
+        "japanese": "加熱駆動"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-aff4565a4be67bb1-193fec2dd53d8394e9503d4d4b906ca5-v2",
+        "english": "Spend your remaining [ember]. Gain [burst] [trait0.power] for each ember spent.",
+        "french": "Dépense les <b>braises</b> restantes. Octroie [burst] [trait0.power] par <b>braise</b> dépensée.",
+        "german": "Investiere deine übrige [ember]. Erhalte pro investierter Glutasche [burst] [trait0.power].",
+        "russian": "Тратится оставшийся [ember]. Дает [burst] х[trait0.power] за каждый потраченный уголь.",
+        "portuguese": "Gasta suas [ember] restantes. Recebe [burst] [trait0.power] para cada brasa gasta.",
+        "chinese": "花费你剩余的[ember]。每花费一点余烬，就获得 [burst] [trait0.power]。",
+        "spanish": "Consume tus [ember] restantes. Añade [burst] [trait0.power] por cada ascua consumida.",
+        "chinese_traditional": "花費你剩餘的[ember]。每花費一點餘燼獲得[burst][trait0.power]。",
+        "korean": "남은 [ember]을 소모합니다. 소모한 잔불 하나당 [burst] [trait0.power]을 획득합니다.",
+        "japanese": "残りの[ember]を消費する。消費した炉炭ごとに[burst] [trait0.power]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_RailgunAbility.prefab",
+        "m_AssetGUID": "5e36b0f58d247e44ca55a4c916a6e1d2"
+      },
+      "traits": [
+        "@Railgun.effects0.paramCharacterData.unitAbility.traits0"
+      ],
+      "effects": [
+        "@Railgun.effects0.paramCharacterData.unitAbility.effects0"
+      ],
+      "cost_type": "x",
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "targetless": false,
-  "requiredDLC": "railforged",
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "traits": [
+    {
+      "id": "Railgun.effects0.paramCharacterData.unitAbility.traits0",
+      "name": "CardTraitScalingAddStatusEffect",
+      "param_status_effects": [
+        {
+          "status": "burst",
+          "count": 0
+        }
+      ],
+      "param_tracked_value": "played_cost",
+      "param_int": 1,
+      "trait_is_removable": false,
+      "tooltip_suppressed": true
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterRailgun",
+      "names": {
+        "key": "CharacterData_nameKey-18e9c81bfbac7185-6f187f4100a6ed54fa7795f2549e9311-v2",
+        "english": "Railgun",
+        "french": "Canon électrique",
+        "german": "Railgun",
+        "russian": "Рельсотрон",
+        "portuguese": "Canhão Magnético",
+        "chinese": "磁轨枪",
+        "spanish": "Cañón de riel",
+        "chinese_traditional": "軌道炮",
+        "korean": "레일건",
+        "japanese": "レールガン"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-2d7afd70507fc6c9-6f187f4100a6ed54fa7795f2549e9311-v2",
+          "english": "“So I said, ‘You know what this train needs? GUNS!’ All it took was a little tinkering of one of those spider-thingies my dad made, slap a cannon on it, and I had a machine gun that could walk AND shoot!”—Heph",
+          "french": "<nobr>« Alors</nobr> j'ai dit, vous savez ce qu'il manque à ce <nobr>train ?</nobr> Des <nobr>FLINGUES !</nobr> Il m'a suffi de bricoler une de ces espèces d'araignées que mon père avait fabriquées, de mettre un canon dessus, et <nobr>hop :</nobr> j'avais une mitrailleuse sur <nobr>pattes ! »</nobr> <nobr>— Heph</nobr>",
+          "german": "„Also, sagte ich, wisst ihr, was dieser Zug braucht? WAFFEN! Es braucht bloß ein wenig Tüftelei mit einem dieser Spinnendinger, die mein Vater hergestellt hatte. Kanone drauf und schon hatte ich ein Maschinengewehr, das laufen UND schießen konnte!“ – Heph",
+          "russian": "И я такая: \"Знаете, чего этому поезду не хватает? ОРУДИЙ!\" Всего-то нужно было немного поковыряться в одной из этих паукомашин отца, прикрутить к ней пушку — и все! Теперь у меня есть пулемет, который может ХОДИТЬ И СТРЕЛЯТЬ! — Геф",
+          "portuguese": "“Então eu disse: ‘Sabe do que esse trem precisa? De ARMAS!’ Bastou mexer um pouco em uma dessas aranhas que meu pai criou, enfiar um canhão nela e pronto! Eu tinha uma metralhadora que podia andar E atirar!” — Heph",
+          "chinese": "“于是我说：‘你知道这列火车需要什么吗？枪炮！’我把老爸制作的蜘蛛玩意儿改造了一番，装上火炮，然后我就造出了会行走射击的机枪！”——赫芙",
+          "spanish": "«Así que le dije, \"¿Sabes lo que necesita este tren? ¡ARMAS!\". Trasteé un poco con esas arañas que hizo mi padre, les metí un cañón y ¡así conseguí metralletas que disparan y andan!». —Heph",
+          "chinese_traditional": "「所以我就說，『你知道這輛列車需要什麼嗎？槍！』只要稍微改造一下我爸做的那些蜘蛛玩意兒，再裝上一門大砲，我就有了一台能走又能射的機關槍！」——赫芙",
+          "korean": "“그래서 내가 말했지. ‘이 열차에 뭐가 필요한지 알아? 총!’ 아빠가 만든 그 거미 기계들 중 하나를 좀 만져 보고, 대포를 하나 얹었더니, 걷기도 하고 쏘기도 하는 기관총이 되어버렸지 뭐야!”—헵",
+          "japanese": "「それで、こう言ったのよ。『この列車に必要なものは何だと思う？銃よ！』あの父さんが作ったクモみたいなやつをちょっといじくるだけでよかった。大砲を取り付けて、歩くだけじゃなくて撃つことができるマシンガンが出来たってわけ！」—ヘフ"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Railgun.prefab",
+        "m_AssetGUID": "09a23850be65b384282c893648ed014c"
+      },
+      "attack_vfx": "@Railgun.effects0.paramCharacterData.attackVFX",
+      "impact_vfx": "@Railgun.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "burst",
+          "count": 1
+        }
+      ],
+      "ability": "@Railgun.effects0.paramCharacterData.unitAbility",
+      "size": 2,
+      "health": 5,
+      "attack_damage": 20,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Machine"
+      ],
+      "chatter": "RailforgedRailgunChatter",
+      "artist": "Daniel Sarmiento Chuquisengo"
+    }
+  ],
+  "effects": [
+    {
+      "id": "Railgun.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "burst",
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Railgun.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterRailgun"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Railgun.effects0.paramCharacterData.attackVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/Railgun/FX_RailgunAttack.prefab",
+        "m_AssetGUID": "4117c1f46c5860048976436001d93e33"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "Railgun.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/Railgun/FX_RailgunImpact.prefab",
+        "m_AssetGUID": "44a482dae8b624248808983c9301adc8"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,73 +1,86 @@
 {
-  "id": "LazarusLeagueChamp2",
-  "guid": "b0def3ad-c519-4ef7-b2d0-4af0467806b9",
-  "name": "Baron Grael",
-  "cardType": "monster",
-  "rarity": "champion",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "NewChallengerChampionPool"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_BulbousAbomination.prefab",
-    "m_AssetGUID": "732d3c8b3ee22544f81e2b254e31359d"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterLazarusLeagueChampion2",
-        "guid": "6701a490-0186-432c-a258-9bf79f5633b3",
-        "nameKey": {
-          "key": "CharacterData_nameKey-44988eb41929af9d-199131ed57b39c54ca1cef1ff6d461a8-v2",
-          "english": "Baron Grael",
-          "french": "Baron Grael",
-          "german": "Baron Grael",
-          "russian": "Барон Граэль",
-          "portuguese": "Barão Grael",
-          "chinese": "格雷尔男爵",
-          "spanish": "Barón Grael",
-          "chinese_traditional": "葛雷爾男爵",
-          "korean": "그라엘 남작",
-          "japanese": "グラエル男爵"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-acd59e6524551f15-199131ed57b39c54ca1cef1ff6d461a8-v2",
-            "english": "He has no noble lineage yet calls himself ‘Baron’ and forever pursues a cure to a disease he does not suffer from. Some assistants believe his work is not for his sake, but for one he holds very dear.",
-            "french": "Bien qu'il ne soit pas de lignée noble, il se fait appeler <nobr>« baron »</nobr> et cherche toujours à trouver un remède à une maladie dont il ne souffre pas. Certains assistants pensent qu'il ne fait pas ça pour lui, mais pour quelqu'un qui lui est cher.",
-            "german": "Obwohl er nicht adeliger Herkunft ist, nennt er sich „Baron“ und sucht stets nach Heilung für eine Krankheit, die ihn nicht plagt. Manche Assistenten denken, dass er dies nicht für sich, sondern für eine geliebte Person tut.",
-            "russian": "У него в роду нет аристократов, но он зовет себя «бароном» и уже давно ищет лекарство от болезни, которой не страдает. Некоторые помощники уверены, что он делает это не для себя, а для того, кого любит.",
-            "portuguese": "Ele não tem linhagem nobre, mas se autodenomina “Barão” e sempre busca a cura para uma doença da qual não sofre. Alguns assistentes acreditam que seu trabalho não é para o seu bem, mas para o bem de alguém que ele ama muito.",
-            "chinese": "他没有贵族血统，却称自己为“男爵”，他并未患上疾病，却永远地追求着治愈。一些助手认为，他的工作并不是为了自己获益，而是为了一个他非常珍视的人。",
-            "spanish": "A pesar de no tener sangre noble, se hace llamar «barón» y busca sin descanso la cura a una enfermedad que no padece. Algunos ayudantes creen que trabaja por salvar a un ser querido.",
-            "chinese_traditional": "他沒有高貴的血統，卻自稱「男爵」，永遠在尋求方法治療一種他其實並沒有罹患的疾病。一些助手相信他的工作不是為了他自己，而是為了一個他非常珍視的人。",
-            "korean": "그라엘은 귀족 혈통이 아니지만 자신을 '남작'이라 칭하며, 앓지도 않은 병의 치료법을 찾아다닌다. 몇몇 조수는 그의 행동이 자신을 위한 것이 아니라 소중히 생각하는 사람을 위한 것이라 믿고 있다.",
-            "japanese": "彼は貴族の家系ではないが、自らを「男爵」と名乗り、自分のものではない病気の治療法を永遠に追い求めている。助手たちの中には、彼は自身のためではなく、とても大切にしている誰かのために戦っているのだと考える者もいる。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_BulbousAbomination.prefab",
-          "m_AssetGUID": "39d489f845a21c44cba659ad338aaa59"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "size": 2,
-        "health": 5,
-        "attackDamage": 5,
-        "subtypeKeys": [
-          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-        ],
-        "characterChatterData": "LazarusLeagueBaronGraelChatterData"
-      }
+      "id": "LazarusLeagueChamp2",
+      "card_type": "monster",
+      "rarity": "champion",
+      "class": "ClassLazarusLeague",
+      "pools": [
+        "NewChallengerChampionPool"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_BulbousAbomination.prefab",
+        "m_AssetGUID": "732d3c8b3ee22544f81e2b254e31359d"
+      },
+      "effects": [
+        "@LazarusLeagueChamp2.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Luke Banke"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Luke Banke"
+  "characters": [
+    {
+      "id": "MonsterLazarusLeagueChampion2",
+      "names": {
+        "key": "CharacterData_nameKey-44988eb41929af9d-199131ed57b39c54ca1cef1ff6d461a8-v2",
+        "english": "Baron Grael",
+        "french": "Baron Grael",
+        "german": "Baron Grael",
+        "russian": "Барон Граэль",
+        "portuguese": "Barão Grael",
+        "chinese": "格雷尔男爵",
+        "spanish": "Barón Grael",
+        "chinese_traditional": "葛雷爾男爵",
+        "korean": "그라엘 남작",
+        "japanese": "グラエル男爵"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-acd59e6524551f15-199131ed57b39c54ca1cef1ff6d461a8-v2",
+          "english": "He has no noble lineage yet calls himself ‘Baron’ and forever pursues a cure to a disease he does not suffer from. Some assistants believe his work is not for his sake, but for one he holds very dear.",
+          "french": "Bien qu'il ne soit pas de lignée noble, il se fait appeler <nobr>« baron »</nobr> et cherche toujours à trouver un remède à une maladie dont il ne souffre pas. Certains assistants pensent qu'il ne fait pas ça pour lui, mais pour quelqu'un qui lui est cher.",
+          "german": "Obwohl er nicht adeliger Herkunft ist, nennt er sich „Baron“ und sucht stets nach Heilung für eine Krankheit, die ihn nicht plagt. Manche Assistenten denken, dass er dies nicht für sich, sondern für eine geliebte Person tut.",
+          "russian": "У него в роду нет аристократов, но он зовет себя «бароном» и уже давно ищет лекарство от болезни, которой не страдает. Некоторые помощники уверены, что он делает это не для себя, а для того, кого любит.",
+          "portuguese": "Ele não tem linhagem nobre, mas se autodenomina “Barão” e sempre busca a cura para uma doença da qual não sofre. Alguns assistentes acreditam que seu trabalho não é para o seu bem, mas para o bem de alguém que ele ama muito.",
+          "chinese": "他没有贵族血统，却称自己为“男爵”，他并未患上疾病，却永远地追求着治愈。一些助手认为，他的工作并不是为了自己获益，而是为了一个他非常珍视的人。",
+          "spanish": "A pesar de no tener sangre noble, se hace llamar «barón» y busca sin descanso la cura a una enfermedad que no padece. Algunos ayudantes creen que trabaja por salvar a un ser querido.",
+          "chinese_traditional": "他沒有高貴的血統，卻自稱「男爵」，永遠在尋求方法治療一種他其實並沒有罹患的疾病。一些助手相信他的工作不是為了他自己，而是為了一個他非常珍視的人。",
+          "korean": "그라엘은 귀족 혈통이 아니지만 자신을 '남작'이라 칭하며, 앓지도 않은 병의 치료법을 찾아다닌다. 몇몇 조수는 그의 행동이 자신을 위한 것이 아니라 소중히 생각하는 사람을 위한 것이라 믿고 있다.",
+          "japanese": "彼は貴族の家系ではないが、自らを「男爵」と名乗り、自分のものではない病気の治療法を永遠に追い求めている。助手たちの中には、彼は自身のためではなく、とても大切にしている誰かのために戦っているのだと考える者もいる。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_BulbousAbomination.prefab",
+        "m_AssetGUID": "39d489f845a21c44cba659ad338aaa59"
+      },
+      "impact_vfx": "@LazarusLeagueChamp2.effects0.paramCharacterData.impactVFX",
+      "size": 2,
+      "health": 5,
+      "attack_damage": 5,
+      "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "chatter": "LazarusLeagueBaronGraelChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "LazarusLeagueChamp2.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterLazarusLeagueChampion2"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "LazarusLeagueChamp2.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

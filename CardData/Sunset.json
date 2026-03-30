@@ -1,43 +1,50 @@
 {
-  "id": "SunsetAbility",
-  "guid": "64abda64-7b59-4563-9267-67b7f941883c",
-  "name": "Sunset",
-  "nameKey": {
-    "key": "CardData_nameKey-c78bd6e1bbaa3682-c74cc79357d2beb4aa45d4f89bb9a772-v2",
-    "english": "Sunset",
-    "french": "Coucher de soleil",
-    "german": "Sonnenuntergang",
-    "russian": "Закат",
-    "portuguese": "Pôr do Sol",
-    "chinese": "日落时分",
-    "spanish": "Ocaso",
-    "chinese_traditional": "日落",
-    "korean": "일몰",
-    "japanese": "日没"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-7b9ecea35df3cc95-c74cc79357d2beb4aa45d4f89bb9a772-v2",
-    "english": "[phase] to [new].",
-    "french": "[phase] en [new].",
-    "german": "[phase] bis [new].",
-    "russian": "Запускается [phase] «[new]».",
-    "portuguese": "A [phase] muda para [new].",
-    "chinese": "[phase] 至 [new]。",
-    "spanish": "[phase] a [new].",
-    "chinese_traditional": "[phase]到[new]。",
-    "korean": "[new]로 [phase]가 이루어집니다.",
-    "japanese": "[new]に[phase]。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSetMoonPhase",
-      "paramInt": 1
+      "id": "SunsetAbility",
+      "names": {
+        "key": "CardData_nameKey-c78bd6e1bbaa3682-c74cc79357d2beb4aa45d4f89bb9a772-v2",
+        "english": "Sunset",
+        "french": "Coucher de soleil",
+        "german": "Sonnenuntergang",
+        "russian": "Закат",
+        "portuguese": "Pôr do Sol",
+        "chinese": "日落时分",
+        "spanish": "Ocaso",
+        "chinese_traditional": "日落",
+        "korean": "일몰",
+        "japanese": "日没"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-7b9ecea35df3cc95-c74cc79357d2beb4aa45d4f89bb9a772-v2",
+        "english": "[phase] to [new].",
+        "french": "[phase] en [new].",
+        "german": "[phase] bis [new].",
+        "russian": "Запускается [phase] «[new]».",
+        "portuguese": "A [phase] muda para [new].",
+        "chinese": "[phase] 至 [new]。",
+        "spanish": "[phase] a [new].",
+        "chinese_traditional": "[phase]到[new]。",
+        "korean": "[new]로 [phase]가 이루어집니다.",
+        "japanese": "[new]に[phase]。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "effects": [
+        "@SunsetAbility.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "SunsetAbility.effects0",
+      "name": "CardEffectSetMoonPhase",
+      "param_int": 1
+    }
+  ]
 }

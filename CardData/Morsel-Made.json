@@ -1,131 +1,148 @@
 {
-  "id": "MorselMade",
-  "guid": "13876e8d-b111-429d-acdb-2e095fda897e",
-  "name": "Morsel-Made",
-  "cost": 2,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsUmbraBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_MorselMan.prefab",
-    "m_AssetGUID": "41af6a354bdc39c439d1a4a85658f2fc"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterMorselMade",
-        "guid": "fbd0d6e8-5e82-4466-af6c-9776ca8b5ba9",
-        "nameKey": {
-          "key": "CharacterData_nameKey-bfd217e10ddbed19-6c9046852d9050b45883c23f7cfd5795-v2",
-          "english": "Morsel-Made",
-          "french": "Made in sous-bistre",
-          "german": "Nugget-Golem",
-          "russian": "Творение заморышей",
-          "portuguese": "Feito por Lanchos",
-          "chinese": "影裔造物",
-          "spanish": "Obra de pinchos",
-          "chinese_traditional": "莫塞爾造物",
-          "korean": "그림자 창조물",
-          "japanese": "モーゼル・メイド"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-41be748fbceb1036-6c9046852d9050b45883c23f7cfd5795-v2",
-            "english": "As the mines of the Crucible twist farther into the depths of Hell, Morsels find themselves safe from the Shroud in their solitude. In the furthest reaches of the Crucible, the Morsels have banded together to create singular entities that further increases their collective chances of survival.",
-            "french": "Alors que les mines du creuset s'enfoncent au cœur de l'enfer, les sous-bistres sont protégés du Suaire dans leur solitude. Aux confins du creuset, ils se sont transformés en entités singulières augmentant ainsi leurs chances de survie.",
-            "german": "Während die Minen des Schmelztiegels immer weiter in die Tiefen der Hölle vordringen, sind die Nuggets in ihrer Einsamkeit vor dem Mantelwesen sicher. In den entlegensten Winkeln des Schmelztiegels haben sich die Nuggets zu einzigartigen Einheiten zusammengeschlossen, die ihre kollektiven Überlebenschancen weiter erhöhen.",
-            "russian": "В наиболее отдаленных уголках Горнила, где Завеса уже не может их настичь, заморыши объединились и создали единые сущности, чтобы повысить свои шансы на выживание.",
-            "portuguese": "Conforme as minas do Crisol se distorcem cada vez mais longe nas profundezas do Inferno, os Lanchos se encontram salvos do Velado em sua solidão. Nas regiões mais recônditas do Crisol, os Lanchos se reuniram para criar entidades singulares que aumentam ainda mais suas chances coletivas de sobrevivência.",
-            "chinese": "随着熔炉之地的矿洞向着地狱深处不断曲折延伸，独居的影裔发现他们可以免受雾影的侵扰。在熔炉之地的最深处，影裔团结成了一个个单独的实体，以进一步提高他们全体的生存几率。",
-            "spanish": "Cuando las minas se adentran en las entrañas del Infierno, los pinchos se sienten más refugiados ante el Velo en su soledad. En los límites del Crisol, los pinchos se han unido para crear entidades singulares que aumentan aún más sus probabilidades de supervivencia como grupo.",
-            "chinese_traditional": "在地獄熔爐礦坑扭曲的存在之中，莫塞爾發現他們能不受幽影的影響。在熔爐的最深處，莫塞爾集結在一起形成一個單一個體來提升群體的生存機率。",
-            "korean": "도가니의 광산이 지옥 깊숙한 곳까지 비틀리며 뻗어 내려가자, 작은 그림자들은 장막의 위협에서 벗어나 홀로 살아남을 수 있는 공간을 갖게 되었다. 도가니의 가장 깊은 곳에서, 이들은 생존 확률을 높이기 위해 서로 힘을 모아 하나의 존재로 결속하기 시작했다.",
-            "japanese": "クルーシブルの坑道が地獄の底へとねじれ進むにつれ、モーゼルたちは孤独の中でシュラウドから身を守る。クルーシブルの最果ての地では、モーゼルたちが結束して唯一の存在を作り出し、生存の可能性を高めている。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MorselMan.prefab",
-          "m_AssetGUID": "81097a5c388d92447ac6f57a1037084c"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-c178d2cd3adb49c4-6c9046852d9050b45883c23f7cfd5795-v2",
-              "english": "Feed on units with [eaten].",
-              "french": "Se nourrit des unités avec <b>Mangé</b>.",
-              "german": "Verschlingt Einheiten mit <b>Verschlungen</b>.",
-              "russian": "Поедает бойцов с [b]Пожиранием</b>.",
-              "portuguese": "Devora unidades com <b>Devorado</b>.",
-              "chinese": "吞食带有[eaten]的单位。",
-              "spanish": "Devora unidades con [eaten].",
-              "chinese_traditional": "以擁有[eaten]的單位為食。",
-              "korean": "[eaten] 효과를 가진 유닛들을 먹습니다.",
-              "japanese": "[eaten]のユニットを捕食する。"
-            },
-            "trigger": "on_food_spawn",
-            "effects": [
-              {
-                "effectStateName": "CardEffectFeederRules",
-                "targetMode": "room",
-                "targetTeamType": "monsters",
-                "paramBool": true
-              }
-            ]
-          },
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-40b11626c1c7681e-6c9046852d9050b45883c23f7cfd5795-v2",
-              "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
-              "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
-              "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
-              "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
-              "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
-              "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
-              "spanish": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
-              "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
-              "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
-              "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
-            },
-            "trigger": "on_feed",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                "targetMode": "self",
-                "targetTeamType": "none",
-                "paramCardUpgradeData": {
-                  "id": "Plus4Attack4Health",
-                  "guid": "fa52757c-9491-4c78-aaef-732f69fb03be",
-                  "bonusDamage": 4,
-                  "bonusHP": 4
-                }
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 20,
-        "attackDamage": 5,
-        "subtypeKeys": [
-          "SubtypesData_Automaton",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "UmbraMorselManChatterData"
-      }
+      "id": "MorselMade",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassUmbra",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsUmbraBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_MorselMan.prefab",
+        "m_AssetGUID": "41af6a354bdc39c439d1a4a85658f2fc"
+      },
+      "effects": [
+        "@MorselMade.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Andrew Vera"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Andrew Vera"
+  "characters": [
+    {
+      "id": "MonsterMorselMade",
+      "names": {
+        "key": "CharacterData_nameKey-bfd217e10ddbed19-6c9046852d9050b45883c23f7cfd5795-v2",
+        "english": "Morsel-Made",
+        "french": "Made in sous-bistre",
+        "german": "Nugget-Golem",
+        "russian": "Творение заморышей",
+        "portuguese": "Feito por Lanchos",
+        "chinese": "影裔造物",
+        "spanish": "Obra de pinchos",
+        "chinese_traditional": "莫塞爾造物",
+        "korean": "그림자 창조물",
+        "japanese": "モーゼル・メイド"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-41be748fbceb1036-6c9046852d9050b45883c23f7cfd5795-v2",
+          "english": "As the mines of the Crucible twist farther into the depths of Hell, Morsels find themselves safe from the Shroud in their solitude. In the furthest reaches of the Crucible, the Morsels have banded together to create singular entities that further increases their collective chances of survival.",
+          "french": "Alors que les mines du creuset s'enfoncent au cœur de l'enfer, les sous-bistres sont protégés du Suaire dans leur solitude. Aux confins du creuset, ils se sont transformés en entités singulières augmentant ainsi leurs chances de survie.",
+          "german": "Während die Minen des Schmelztiegels immer weiter in die Tiefen der Hölle vordringen, sind die Nuggets in ihrer Einsamkeit vor dem Mantelwesen sicher. In den entlegensten Winkeln des Schmelztiegels haben sich die Nuggets zu einzigartigen Einheiten zusammengeschlossen, die ihre kollektiven Überlebenschancen weiter erhöhen.",
+          "russian": "В наиболее отдаленных уголках Горнила, где Завеса уже не может их настичь, заморыши объединились и создали единые сущности, чтобы повысить свои шансы на выживание.",
+          "portuguese": "Conforme as minas do Crisol se distorcem cada vez mais longe nas profundezas do Inferno, os Lanchos se encontram salvos do Velado em sua solidão. Nas regiões mais recônditas do Crisol, os Lanchos se reuniram para criar entidades singulares que aumentam ainda mais suas chances coletivas de sobrevivência.",
+          "chinese": "随着熔炉之地的矿洞向着地狱深处不断曲折延伸，独居的影裔发现他们可以免受雾影的侵扰。在熔炉之地的最深处，影裔团结成了一个个单独的实体，以进一步提高他们全体的生存几率。",
+          "spanish": "Cuando las minas se adentran en las entrañas del Infierno, los pinchos se sienten más refugiados ante el Velo en su soledad. En los límites del Crisol, los pinchos se han unido para crear entidades singulares que aumentan aún más sus probabilidades de supervivencia como grupo.",
+          "chinese_traditional": "在地獄熔爐礦坑扭曲的存在之中，莫塞爾發現他們能不受幽影的影響。在熔爐的最深處，莫塞爾集結在一起形成一個單一個體來提升群體的生存機率。",
+          "korean": "도가니의 광산이 지옥 깊숙한 곳까지 비틀리며 뻗어 내려가자, 작은 그림자들은 장막의 위협에서 벗어나 홀로 살아남을 수 있는 공간을 갖게 되었다. 도가니의 가장 깊은 곳에서, 이들은 생존 확률을 높이기 위해 서로 힘을 모아 하나의 존재로 결속하기 시작했다.",
+          "japanese": "クルーシブルの坑道が地獄の底へとねじれ進むにつれ、モーゼルたちは孤独の中でシュラウドから身を守る。クルーシブルの最果ての地では、モーゼルたちが結束して唯一の存在を作り出し、生存の可能性を高めている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_MorselMan.prefab",
+        "m_AssetGUID": "81097a5c388d92447ac6f57a1037084c"
+      },
+      "impact_vfx": "@MorselMade.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@MorselMade.effects0.paramCharacterData.triggers0",
+        "@MorselMade.effects0.paramCharacterData.triggers1"
+      ],
+      "size": 2,
+      "health": 20,
+      "attack_damage": 5,
+      "subtypes": [
+        "SubtypesData_Automaton",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "UmbraMorselManChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MorselMade.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-c178d2cd3adb49c4-6c9046852d9050b45883c23f7cfd5795-v2",
+        "english": "Feed on units with [eaten].",
+        "french": "Se nourrit des unités avec <b>Mangé</b>.",
+        "german": "Verschlingt Einheiten mit <b>Verschlungen</b>.",
+        "russian": "Поедает бойцов с [b]Пожиранием</b>.",
+        "portuguese": "Devora unidades com <b>Devorado</b>.",
+        "chinese": "吞食带有[eaten]的单位。",
+        "spanish": "Devora unidades con [eaten].",
+        "chinese_traditional": "以擁有[eaten]的單位為食。",
+        "korean": "[eaten] 효과를 가진 유닛들을 먹습니다.",
+        "japanese": "[eaten]のユニットを捕食する。"
+      },
+      "trigger": "on_food_spawn",
+      "effects": [
+        "@MorselMade.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "MorselMade.effects0.paramCharacterData.triggers1",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-40b11626c1c7681e-6c9046852d9050b45883c23f7cfd5795-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+        "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+        "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+      },
+      "trigger": "on_feed",
+      "effects": [
+        "@MorselMade.effects0.paramCharacterData.triggers1.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MorselMade.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectFeederRules",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_bool": true
+    },
+    {
+      "id": "MorselMade.effects0.paramCharacterData.triggers1.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "Plus4Attack4Health"
+    },
+    {
+      "id": "MorselMade.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterMorselMade"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MorselMade.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

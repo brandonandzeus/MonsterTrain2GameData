@@ -1,76 +1,84 @@
 {
-  "id": "SaviorAbility1",
-  "guid": "1cbb4a0b-9ad5-4d05-91e5-d94da55d21e5",
-  "name": "Savior",
-  "nameKey": {
-    "key": "CardData_nameKey-6f748f750d7832a2-ff713d0931c881a4b848fe38fd4e46db-v2",
-    "english": "Savior",
-    "french": "Sauveur",
-    "german": "Retter",
-    "russian": "Спасительница",
-    "portuguese": "Salvadora",
-    "chinese": "救世主",
-    "spanish": "Salvadora",
-    "chinese_traditional": "救世主",
-    "korean": "구원자",
-    "japanese": "セイヴィア"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-696c7999d76d1204-ff713d0931c881a4b848fe38fd4e46db-v2",
-    "english": "[advance]. Gain [valor] [effect1.status0.power]. Gain [armor] equal to 1x [valor].",
-    "french": "[advance]. Octroie [valor] [effect1.status0.power]. Octroie de l'[armor] valant 1x la [valor].",
-    "german": "[advance]. Erhalte [valor] [effect1.status0.power]. Erhalte [armor] in Höhe von 1x [valor].",
-    "russian": "[advance]. Дает [valor] х[effect1.status0.power]. Дает <b>Броню</b>, равную количеству <b>Доблести</b>.",
-    "portuguese": "<b>Avança</b>. Recebe [valor] [effect1.status0.power]. Recebe [armor] igual a 1x a [valor].",
-    "chinese": "[advance]。获得 [valor] [effect1.status0.power]。获得等同于1x[valor]的[armor]。",
-    "spanish": "[advance]. Añade [valor] [effect1.status0.power]. Añade [armor] igual al [valor].",
-    "chinese_traditional": "[advance]。獲得[valor][effect1.status0.power]。獲得等同於[valor]1倍的[armor]。",
-    "korean": "[advance]. [valor] [effect1.status0.power] 효과를 획득합니다. [valor] x1에 해당하는 [armor]을 획득합니다.",
-    "japanese": "[advance]。[valor] [effect1.status0.power]を得る。1x [valor]に等しい[armor]を得る。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
-    "m_AssetGUID": "b7d9137dc005eb345800500fcaa4823f"
-  },
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "SaviorAbility1",
+      "names": {
+        "key": "CardData_nameKey-6f748f750d7832a2-ff713d0931c881a4b848fe38fd4e46db-v2",
+        "english": "Savior",
+        "french": "Sauveur",
+        "german": "Retter",
+        "russian": "Спасительница",
+        "portuguese": "Salvadora",
+        "chinese": "救世主",
+        "spanish": "Salvadora",
+        "chinese_traditional": "救世主",
+        "korean": "구원자",
+        "japanese": "セイヴィア"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-696c7999d76d1204-ff713d0931c881a4b848fe38fd4e46db-v2",
+        "english": "[advance]. Gain [valor] [effect1.status0.power]. Gain [armor] equal to 1x [valor].",
+        "french": "[advance]. Octroie [valor] [effect1.status0.power]. Octroie de l'[armor] valant 1x la [valor].",
+        "german": "[advance]. Erhalte [valor] [effect1.status0.power]. Erhalte [armor] in Höhe von 1x [valor].",
+        "russian": "[advance]. Дает [valor] х[effect1.status0.power]. Дает <b>Броню</b>, равную количеству <b>Доблести</b>.",
+        "portuguese": "<b>Avança</b>. Recebe [valor] [effect1.status0.power]. Recebe [armor] igual a 1x a [valor].",
+        "chinese": "[advance]。获得 [valor] [effect1.status0.power]。获得等同于1x[valor]的[armor]。",
+        "spanish": "[advance]. Añade [valor] [effect1.status0.power]. Añade [armor] igual al [valor].",
+        "chinese_traditional": "[advance]。獲得[valor][effect1.status0.power]。獲得等同於[valor]1倍的[armor]。",
+        "korean": "[advance]. [valor] [effect1.status0.power] 효과를 획득합니다. [valor] x1에 해당하는 [armor]을 획득합니다.",
+        "japanese": "[advance]。[valor] [effect1.status0.power]を得る。1x [valor]に等しい[armor]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
+        "m_AssetGUID": "b7d9137dc005eb345800500fcaa4823f"
+      },
+      "effects": [
+        "@SaviorAbility1.effects0",
+        "@SaviorAbility1.effects1",
+        "@SaviorAbility1.effects2"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectFloorRearrange",
-      "targetMode": "self",
-      "targetTeamType": "monsters"
+      "id": "SaviorAbility1.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self"
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "paramStatusEffects": [
+      "id": "SaviorAbility1.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "statusId": "valor",
+          "status": "valor",
           "count": 5
         }
       ]
     },
     {
-      "effectStateName": "CardEffectAddStatusEffectPerOtherEffect",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "paramStatusEffects": [
+      "id": "SaviorAbility1.effects2",
+      "name": "CardEffectAddStatusEffectPerOtherEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "statusId": "armor",
+          "status": "armor",
           "count": 1
         },
         {
-          "statusId": "valor",
+          "status": "valor",
           "count": 1
         }
       ],
-      "paramInt": 1,
-      "paramBool": true
+      "param_int": 1,
+      "param_bool": true
     }
-  ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  ]
 }

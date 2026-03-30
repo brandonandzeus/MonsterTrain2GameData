@@ -1,49 +1,56 @@
 {
-  "id": "SalvageMachineAbility",
-  "guid": "3790f33e-47da-4b53-a9b1-b507d8707173",
-  "name": "SalvageMachineAbility",
-  "nameKey": {
-    "key": "CardData_nameKey-9b6840fb376eb44f-9e5ce7b009af5cd469af71539e29744c-v2",
-    "english": "Scrap Harvest",
-    "french": "Collecte de rebuts",
-    "german": "Schrotternte",
-    "russian": "Сбор лома",
-    "portuguese": "Coleta de Sucata",
-    "chinese": "收获废料",
-    "spanish": "Cosecha de chatarra",
-    "chinese_traditional": "廢料收割",
-    "korean": "잔해 수거",
-    "japanese": "鉄屑回収"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-795f9d1811b0ba51-9e5ce7b009af5cd469af71539e29744c-v2",
-    "english": "Add a <b>Scrap Metal</b> to your hand.",
-    "french": "Ajoute un <b>Métal de récupération</b> à votre main.",
-    "german": "Nimm eine <b>Schrottmetall</b>-Karte auf die Hand.",
-    "russian": "Добавляет в руку <b>Металлолом</b>.",
-    "portuguese": "Adiciona uma <b>Sucata de Metal</b> à sua mão.",
-    "chinese": "将一张<b>废金属</b>加入你的手牌。",
-    "spanish": "Añade una <b>Chatarra metálica</b> a tu mano.",
-    "chinese_traditional": "將一張<b>廢金屬</b>加入你的手牌。",
-    "korean": "<b>고철</b>을 패에 추가합니다.",
-    "japanese": "手札に<b>鉄屑</b>を追加する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SalvageMachineAbility.prefab",
-    "m_AssetGUID": "5ff734d8caa90fb4381a54d1af12542f"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAddBattleCard",
-      "paramInt": 3,
-      "additionalParamInt": 1,
-      "paramCardPool": "ScrapMetalOnlyPool"
+      "id": "SalvageMachineAbility",
+      "names": {
+        "key": "CardData_nameKey-9b6840fb376eb44f-9e5ce7b009af5cd469af71539e29744c-v2",
+        "english": "Scrap Harvest",
+        "french": "Collecte de rebuts",
+        "german": "Schrotternte",
+        "russian": "Сбор лома",
+        "portuguese": "Coleta de Sucata",
+        "chinese": "收获废料",
+        "spanish": "Cosecha de chatarra",
+        "chinese_traditional": "廢料收割",
+        "korean": "잔해 수거",
+        "japanese": "鉄屑回収"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-795f9d1811b0ba51-9e5ce7b009af5cd469af71539e29744c-v2",
+        "english": "Add a <b>Scrap Metal</b> to your hand.",
+        "french": "Ajoute un <b>Métal de récupération</b> à votre main.",
+        "german": "Nimm eine <b>Schrottmetall</b>-Karte auf die Hand.",
+        "russian": "Добавляет в руку <b>Металлолом</b>.",
+        "portuguese": "Adiciona uma <b>Sucata de Metal</b> à sua mão.",
+        "chinese": "将一张<b>废金属</b>加入你的手牌。",
+        "spanish": "Añade una <b>Chatarra metálica</b> a tu mano.",
+        "chinese_traditional": "將一張<b>廢金屬</b>加入你的手牌。",
+        "korean": "<b>고철</b>을 패에 추가합니다.",
+        "japanese": "手札に<b>鉄屑</b>を追加する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SalvageMachineAbility.prefab",
+        "m_AssetGUID": "5ff734d8caa90fb4381a54d1af12542f"
+      },
+      "effects": [
+        "@SalvageMachineAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "SalvageMachineAbility.effects0",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_card_pool": "ScrapMetalOnlyPool"
+    }
+  ]
 }

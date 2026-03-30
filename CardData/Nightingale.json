@@ -1,141 +1,142 @@
 {
-  "id": "Nightingale",
-  "guid": "7775c5b5-eed9-4864-9976-9c86896becc1",
-  "name": "Nightingale",
-  "overrideDescriptionKey": "CardData_overrideDescriptionKey-5aa3587faa80c34b-93c9fc1551de33d4bb070c04bfa5e810-v2",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsLunaCovenBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Nightingale.prefab",
-    "m_AssetGUID": "2bdd11ac47903474993b81ce5b10d942"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterNightshadow",
-        "guid": "db5318c1-a85f-4315-92bd-3e5f7e02a7a3",
-        "nameKey": {
-          "key": "CharacterData_nameKey-2e59efd6a3ba33a9-f9cef086ce44c3a419e1402c210a3d51-v2",
-          "english": "Nightingale",
-          "french": "Rossignol",
-          "german": "Nachtigall",
-          "russian": "Соловей",
-          "portuguese": "Vendaval Noturno",
-          "chinese": "夜莺",
-          "spanish": "Viento nocturno",
-          "chinese_traditional": "夜鶯",
-          "korean": "나이팅게일",
-          "japanese": "ナイチンゲール"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-dd5b4c5cce775399-f9cef086ce44c3a419e1402c210a3d51-v2",
-            "english": "“I don’t need magic to disappear into the night.”",
-            "french": "<nobr>« Je</nobr> n'ai pas besoin de magie pour disparaître dans la <nobr>nuit. »</nobr>",
-            "german": "„Ich brauche keine Magie, um in der Nacht zu verschwinden.“",
-            "russian": "«Мне не нужна магия, чтобы скрыться под покровом ночи».",
-            "portuguese": "“Não preciso de magia para desaparecer na noite.”",
-            "chinese": "“我不需要魔法就能消失在黑夜里。”",
-            "spanish": "«No necesito magia para desaparecer en la noche».",
-            "chinese_traditional": "「我不需要魔法就能消失在夜色中。」",
-            "korean": "\"난 밤 속으로 사라지는 데 마법 따위 필요 없어.\"",
-            "japanese": "「夜闇に溶け込むのに魔法は必要ない」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Nightingale.prefab",
-          "m_AssetGUID": "080e7ee3e2bcbbb4796d3febf1da1e6f"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
-            "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "stealth",
-            "count": 2
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-06e8776cbedbde2d-f9cef086ce44c3a419e1402c210a3d51-v2",
-              "english": "[multistrike] [effect0.upgrade.status0.power].",
-              "french": "[multistrike] [effect0.upgrade.status0.power].",
-              "german": "[multistrike] [effect0.upgrade.status0.power].",
-              "russian": "[multistrike] х[effect0.upgrade.status0.power].",
-              "portuguese": "[multistrike] [effect0.upgrade.status0.power].",
-              "chinese": "[multistrike] [effect0.upgrade.status0.power]。",
-              "spanish": "[multistrike] [effect0.upgrade.status0.power].",
-              "chinese_traditional": "[multistrike][effect0.upgrade.status0.power]。",
-              "korean": "[multistrike] [effect0.upgrade.status0.power].",
-              "japanese": "[multistrike] [effect0.upgrade.status0.power]。"
-            },
-            "trigger": "on_moon_shade",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                "targetMode": "self",
-                "targetTeamType": "none",
-                "paramCardUpgradeData": {
-                  "id": "Nightingale_Upgrade",
-                  "guid": "ed61942e-8c6c-400d-a61f-3d60e792a085",
-                  "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-06d49cfdcfefc23a-e4567b4891dd30e48b38b5ca2c257969-v2",
-                  "statusEffectUpgrades": [
-                    {
-                      "statusId": "multistrike",
-                      "count": 2
-                    }
-                  ]
-                },
-                "additionalParamInt1": 1
-              }
-            ]
-          },
-          {
-            "trigger": "on_moonshade_lost",
-            "effects": [
-              {
-                "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
-                "targetMode": "self",
-                "targetTeamType": "none",
-                "paramCardUpgradeData": {
-                  "id": "Nightingale_Upgrade",
-                  "guid": "ed61942e-8c6c-400d-a61f-3d60e792a085",
-                  "upgradeDescriptionKey": "CardUpgradeData_upgradeDescriptionKey-06d49cfdcfefc23a-e4567b4891dd30e48b38b5ca2c257969-v2",
-                  "statusEffectUpgrades": [
-                    {
-                      "statusId": "multistrike",
-                      "count": 2
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 5,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Silent"
-        ],
-        "characterChatterData": "LunaCovenSilentChatterData"
-      }
+      "id": "Nightingale",
+      "descriptions": "CardData_overrideDescriptionKey-5aa3587faa80c34b-93c9fc1551de33d4bb070c04bfa5e810-v2",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassLunaCoven",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsLunaCovenBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Nightingale.prefab",
+        "m_AssetGUID": "2bdd11ac47903474993b81ce5b10d942"
+      },
+      "effects": [
+        "@Nightingale.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "characters": [
+    {
+      "id": "MonsterNightshadow",
+      "names": {
+        "key": "CharacterData_nameKey-2e59efd6a3ba33a9-f9cef086ce44c3a419e1402c210a3d51-v2",
+        "english": "Nightingale",
+        "french": "Rossignol",
+        "german": "Nachtigall",
+        "russian": "Соловей",
+        "portuguese": "Vendaval Noturno",
+        "chinese": "夜莺",
+        "spanish": "Viento nocturno",
+        "chinese_traditional": "夜鶯",
+        "korean": "나이팅게일",
+        "japanese": "ナイチンゲール"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-dd5b4c5cce775399-f9cef086ce44c3a419e1402c210a3d51-v2",
+          "english": "“I don’t need magic to disappear into the night.”",
+          "french": "<nobr>« Je</nobr> n'ai pas besoin de magie pour disparaître dans la <nobr>nuit. »</nobr>",
+          "german": "„Ich brauche keine Magie, um in der Nacht zu verschwinden.“",
+          "russian": "«Мне не нужна магия, чтобы скрыться под покровом ночи».",
+          "portuguese": "“Não preciso de magia para desaparecer na noite.”",
+          "chinese": "“我不需要魔法就能消失在黑夜里。”",
+          "spanish": "«No necesito magia para desaparecer en la noche».",
+          "chinese_traditional": "「我不需要魔法就能消失在夜色中。」",
+          "korean": "\"난 밤 속으로 사라지는 데 마법 따위 필요 없어.\"",
+          "japanese": "「夜闇に溶け込むのに魔法は必要ない」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Nightingale.prefab",
+        "m_AssetGUID": "080e7ee3e2bcbbb4796d3febf1da1e6f"
+      },
+      "impact_vfx": "@Nightingale.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "stealth",
+          "count": 2
+        }
+      ],
+      "triggers": [
+        "@Nightingale.effects0.paramCharacterData.triggers0",
+        "@Nightingale.effects0.paramCharacterData.triggers1"
+      ],
+      "size": 2,
+      "health": 5,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Silent"
+      ],
+      "chatter": "LunaCovenSilentChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Nightingale.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-06e8776cbedbde2d-f9cef086ce44c3a419e1402c210a3d51-v2",
+        "english": "[multistrike] [effect0.upgrade.status0.power].",
+        "french": "[multistrike] [effect0.upgrade.status0.power].",
+        "german": "[multistrike] [effect0.upgrade.status0.power].",
+        "russian": "[multistrike] х[effect0.upgrade.status0.power].",
+        "portuguese": "[multistrike] [effect0.upgrade.status0.power].",
+        "chinese": "[multistrike] [effect0.upgrade.status0.power]。",
+        "spanish": "[multistrike] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "[multistrike][effect0.upgrade.status0.power]。",
+        "korean": "[multistrike] [effect0.upgrade.status0.power].",
+        "japanese": "[multistrike] [effect0.upgrade.status0.power]。"
+      },
+      "trigger": "on_moon_shade",
+      "effects": [
+        "@Nightingale.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Nightingale.effects0.paramCharacterData.triggers1",
+      "trigger": "on_moonshade_lost",
+      "effects": [
+        "@Nightingale.effects0.paramCharacterData.triggers1.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Nightingale.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "Nightingale_Upgrade",
+      "param_int_3": 1
+    },
+    {
+      "id": "Nightingale.effects0.paramCharacterData.triggers1.effects0",
+      "name": "CardEffectRemoveTempUpgradeFromUnit",
+      "target_mode": "self",
+      "param_upgrade": "Nightingale_Upgrade"
+    },
+    {
+      "id": "Nightingale.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterNightshadow"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Nightingale.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+        "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

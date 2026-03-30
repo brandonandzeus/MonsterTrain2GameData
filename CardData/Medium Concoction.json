@@ -1,48 +1,57 @@
 {
-  "id": "LazarusLeagueChampMix2_Ability",
-  "guid": "90366301-c0b5-4639-8a0a-387eddff089b",
-  "name": "Medium Concoction",
-  "nameKey": {
-    "key": "CardData_nameKey-bf95782745233bc1-6a08d503f45f2a84fa9326e2b671e5a0-v2",
-    "english": "Medium Concoction",
-    "french": "Concoction intermédiaire",
-    "german": "Mittelgroßes Gebräu",
-    "russian": "Среднее зелье",
-    "portuguese": "Mistura Média",
-    "chinese": "中份调合",
-    "spanish": "Brebaje medio",
-    "chinese_traditional": "中型藥劑",
-    "korean": "중형 혼합물",
-    "japanese": "調合薬（中）"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-a816135b04d19161-6a08d503f45f2a84fa9326e2b671e5a0-v2",
-    "english": "[mix] twice.",
-    "french": "[mix] deux fois.",
-    "german": "2x [mix].",
-    "russian": "Двойное [mix].",
-    "portuguese": "Usa [mix] duas vezes.",
-    "chinese": "[mix] 两次。",
-    "spanish": "[mix] dos veces.",
-    "chinese_traditional": "[mix]兩次。",
-    "korean": "[mix]을 2회 실시합니다.",
-    "japanese": "2回[mix]。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2,
-      "paramCardPool": "InfusionPool"
-    },
-    {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2
+      "id": "LazarusLeagueChampMix2_Ability",
+      "names": {
+        "key": "CardData_nameKey-bf95782745233bc1-6a08d503f45f2a84fa9326e2b671e5a0-v2",
+        "english": "Medium Concoction",
+        "french": "Concoction intermédiaire",
+        "german": "Mittelgroßes Gebräu",
+        "russian": "Среднее зелье",
+        "portuguese": "Mistura Média",
+        "chinese": "中份调合",
+        "spanish": "Brebaje medio",
+        "chinese_traditional": "中型藥劑",
+        "korean": "중형 혼합물",
+        "japanese": "調合薬（中）"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-a816135b04d19161-6a08d503f45f2a84fa9326e2b671e5a0-v2",
+        "english": "[mix] twice.",
+        "french": "[mix] deux fois.",
+        "german": "2x [mix].",
+        "russian": "Двойное [mix].",
+        "portuguese": "Usa [mix] duas vezes.",
+        "chinese": "[mix] 两次。",
+        "spanish": "[mix] dos veces.",
+        "chinese_traditional": "[mix]兩次。",
+        "korean": "[mix]을 2회 실시합니다.",
+        "japanese": "2回[mix]。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "effects": [
+        "@LazarusLeagueChampMix2_Ability.effects0",
+        "@LazarusLeagueChampMix2_Ability.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "LazarusLeagueChampMix2_Ability.effects0",
+      "name": "CardEffectMix",
+      "param_int": 2,
+      "param_card_pool": "InfusionPool"
+    },
+    {
+      "id": "LazarusLeagueChampMix2_Ability.effects1",
+      "name": "CardEffectMix",
+      "param_int": 2
+    }
+  ]
 }

@@ -1,142 +1,165 @@
 {
-  "id": "KinhostPupa",
-  "guid": "caa7dad5-e3a5-45f7-a5d6-1133162dd528",
-  "name": "Kinhost Pupa",
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassWurm",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_KinhostPupa.prefab",
-    "m_AssetGUID": "dcc541d871b8a7d4a8842164c94a9fd4"
-  },
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "KinhostPupa",
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassWurm",
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_KinhostPupa.prefab",
+        "m_AssetGUID": "dcc541d871b8a7d4a8842164c94a9fd4"
+      },
+      "effects": [
+        "@KinhostPupa.effects0"
+      ],
+      "cost_type": "unplayable",
+      "targetless": false,
+      "ignore_when_counting_mastery": true,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Adam Lee"
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterKinhostPupa",
+      "names": {
+        "key": "CharacterData_nameKey-c8974e656cd84d1e-f83d8a195ea0adf4697455f4280b567c-v2",
+        "english": "Kinhost Pupa",
+        "french": "Nymphe hôtespèce",
+        "german": "Wirtlingspuppe",
+        "russian": "Куколка Главы рода",
+        "portuguese": "Pupa do Hospedeiro",
+        "chinese": "亲族宿主虫蛹",
+        "spanish": "Larva de portador de estirpe",
+        "chinese_traditional": "親族宿主蛹",
+        "korean": "킨호스트 번데기",
+        "japanese": "キンホスト・ピュパ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-3ceb5786716ecb72-f83d8a195ea0adf4697455f4280b567c-v2",
+          "english": "The Wurmkin wait for Kinhost to fully mature before making them the mindless slaves more often seen throughout the tunnels. This allows the Wurmkin to breed the Kinhost for strength and size, making them perfect mobile transports for the many Echoes scattered around the tunnels.",
+          "french": "Le peuple ver attend que les hôtespèces soient parfaitement matures pour en faire des robots-esclaves qui parcourent les tunnels. Ainsi, le peuple ver peut élever des hôtespèces pour leur force et leur taille, les transformant en navettes idéales pour les nombreux échos éparpillés aux quatre coins des tunnels.",
+          "german": "Die Wirtlinge werden von den Wurmlingen erst dann zu willenlosen Sklaven gemacht, wenn sie ausgewachsen sind. Dadurch ist es den Wurmlingen möglich, die Wirtlinge speziell auf Stärke und Größe zu züchten, was sie zu den perfekten Transportern für die vielen in den Tunneln verteilten Echos macht.",
+          "russian": "Жители клана дожидаются, пока хранитель рода полностью не повзрослеет, и лишь потом превращают его в безвольного раба, которого частенько можно встретить в туннелях. Так они могут разводить их как вьючный скот для быстрой транспортировки большого числа эхо.",
+          "portuguese": "Os Vormoides aguardam o amadurecimento completo do Hospedeiro antes de transformá-lo nos escravos de mente vazia normalmente vistos pelos túneis. Isso permite aos Vormoides criar o Hospedeiro para obter força e tamanho, tornando-o o transporte perfeito para os muitos Ecos espalhados pelos túneis.",
+          "chinese": "虫裔等待亲族宿主完全成熟，然后把他们变成隧道各处更为常见的无脑奴隶。这令虫裔能为了力量和体型而繁育亲族宿主，将其变成散落在隧道各处的回响水晶的理想运输工具。",
+          "spanish": "Las Sierpes esperan que los portadores de estirpe maduren por completo antes de convertirlos en los esclavos inconscientes que es común encontrar en los túmulos. Así, las Sierpes pueden utilizar solo a los portadores más grandes y fuertes y obtener los transportes perfectos para los ecos esparcidos por los túneles.",
+          "chinese_traditional": "沃姆金會等到親族宿主完全成熟，才將其轉化為隧道中常見的無腦奴隸。如此一來，他們便能培育出力量與體型兼備的親族宿主，使其成為散布於隧道中眾多迴響的絕佳移動載體。",
+          "korean": "웜킨은 킨호스트가 충분히 성체가 될 때까지 개입하지 않는다. 그리고 때가 되면 그들을 터널에서 흔히 볼 수 있는 무감각한 노예로 전환한다. 이 과정 덕분에 웜킨은 킨호스트를 더 크고 강하게 사육할 수 있으며, 이는 터널 전역에 흩어진 메아리를 운송하는 데 이상적인 수단이 된다.",
+          "japanese": "ワームキンは、キンホストが成長しきるのを待ってから、意思のない奴隷にする。そのような姿はトンネルの至る所で見ることができる。そのようにしてワームキンは強く大きなキンホストを繁殖し、トンネル中に散らばったたくさんのエコーの、完璧で機動力のある輸送手段としているのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_KinhostPupa.prefab",
+        "m_AssetGUID": "ca41a1de196a201448c52b0a71e88bc3"
+      },
+      "impact_vfx": "@KinhostPupa.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "armor",
+          "count": 20
+        },
+        {
+          "status": "multistrike",
+          "count": 2
+        }
+      ],
+      "triggers": [
+        "@KinhostPupa.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 10,
+      "attack_damage": 30,
+      "subtypes": [
+        "SubtypesData_Host"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "KinhostPupa.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-03ee3656ce7e7999-f83d8a195ea0adf4697455f4280b567c-v2",
+        "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
+        "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
+        "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
+        "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
+        "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking_before_damage",
+      "effects": [
+        "@KinhostPupa.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterKinhostPupa",
-        "guid": "e2f7a12a-b33b-4dbe-b95b-73f39cdf3a70",
-        "nameKey": {
-          "key": "CharacterData_nameKey-c8974e656cd84d1e-f83d8a195ea0adf4697455f4280b567c-v2",
-          "english": "Kinhost Pupa",
-          "french": "Nymphe hôtespèce",
-          "german": "Wirtlingspuppe",
-          "russian": "Куколка Главы рода",
-          "portuguese": "Pupa do Hospedeiro",
-          "chinese": "亲族宿主虫蛹",
-          "spanish": "Larva de portador de estirpe",
-          "chinese_traditional": "親族宿主蛹",
-          "korean": "킨호스트 번데기",
-          "japanese": "キンホスト・ピュパ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-3ceb5786716ecb72-f83d8a195ea0adf4697455f4280b567c-v2",
-            "english": "The Wurmkin wait for Kinhost to fully mature before making them the mindless slaves more often seen throughout the tunnels. This allows the Wurmkin to breed the Kinhost for strength and size, making them perfect mobile transports for the many Echoes scattered around the tunnels.",
-            "french": "Le peuple ver attend que les hôtespèces soient parfaitement matures pour en faire des robots-esclaves qui parcourent les tunnels. Ainsi, le peuple ver peut élever des hôtespèces pour leur force et leur taille, les transformant en navettes idéales pour les nombreux échos éparpillés aux quatre coins des tunnels.",
-            "german": "Die Wirtlinge werden von den Wurmlingen erst dann zu willenlosen Sklaven gemacht, wenn sie ausgewachsen sind. Dadurch ist es den Wurmlingen möglich, die Wirtlinge speziell auf Stärke und Größe zu züchten, was sie zu den perfekten Transportern für die vielen in den Tunneln verteilten Echos macht.",
-            "russian": "Жители клана дожидаются, пока хранитель рода полностью не повзрослеет, и лишь потом превращают его в безвольного раба, которого частенько можно встретить в туннелях. Так они могут разводить их как вьючный скот для быстрой транспортировки большого числа эхо.",
-            "portuguese": "Os Vormoides aguardam o amadurecimento completo do Hospedeiro antes de transformá-lo nos escravos de mente vazia normalmente vistos pelos túneis. Isso permite aos Vormoides criar o Hospedeiro para obter força e tamanho, tornando-o o transporte perfeito para os muitos Ecos espalhados pelos túneis.",
-            "chinese": "虫裔等待亲族宿主完全成熟，然后把他们变成隧道各处更为常见的无脑奴隶。这令虫裔能为了力量和体型而繁育亲族宿主，将其变成散落在隧道各处的回响水晶的理想运输工具。",
-            "spanish": "Las Sierpes esperan que los portadores de estirpe maduren por completo antes de convertirlos en los esclavos inconscientes que es común encontrar en los túmulos. Así, las Sierpes pueden utilizar solo a los portadores más grandes y fuertes y obtener los transportes perfectos para los ecos esparcidos por los túneles.",
-            "chinese_traditional": "沃姆金會等到親族宿主完全成熟，才將其轉化為隧道中常見的無腦奴隸。如此一來，他們便能培育出力量與體型兼備的親族宿主，使其成為散布於隧道中眾多迴響的絕佳移動載體。",
-            "korean": "웜킨은 킨호스트가 충분히 성체가 될 때까지 개입하지 않는다. 그리고 때가 되면 그들을 터널에서 흔히 볼 수 있는 무감각한 노예로 전환한다. 이 과정 덕분에 웜킨은 킨호스트를 더 크고 강하게 사육할 수 있으며, 이는 터널 전역에 흩어진 메아리를 운송하는 데 이상적인 수단이 된다.",
-            "japanese": "ワームキンは、キンホストが成長しきるのを待ってから、意思のない奴隷にする。そのような姿はトンネルの至る所で見ることができる。そのようにしてワームキンは強く大きなキンホストを繁殖し、トンネル中に散らばったたくさんのエコーの、完璧で機動力のある輸送手段としているのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_KinhostPupa.prefab",
-          "m_AssetGUID": "ca41a1de196a201448c52b0a71e88bc3"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "armor",
-            "count": 20
-          },
-          {
-            "statusId": "multistrike",
-            "count": 2
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-03ee3656ce7e7999-f83d8a195ea0adf4697455f4280b567c-v2",
-              "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
-              "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
-              "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
-              "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
-              "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
-              "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
-              "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
-              "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
-              "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "on_attacking_before_damage",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "corrupt_poison",
-                    "count": 1
-                  }
-                ],
-                "additionalTooltips": [
-                  {
-                    "descriptionKey": {
-                      "key": "HudTooltip_RoomCorruption_Body",
-                      "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
-                      "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
-                      "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
-                      "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
-                      "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
-                      "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
-                      "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
-                      "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
-                      "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
-                      "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
-                    },
-                    "titleKey": {
-                      "key": "HudTooltip_RoomCorruption_Title",
-                      "english": "Charged Echoes",
-                      "french": "Échos chargés",
-                      "german": "Geladene Echos",
-                      "russian": "Заряженные эхо",
-                      "portuguese": "Ecos Carregados",
-                      "chinese": "充能的回响水晶",
-                      "spanish": "Ecos cargados",
-                      "chinese_traditional": "充能回響",
-                      "korean": "충전된 메아리",
-                      "japanese": "活性の残響"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 10,
-        "attackDamage": 30,
-        "subtypeKeys": [
-          "SubtypesData_Host"
-        ]
+      "id": "KinhostPupa.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "corrupt_poison",
+          "count": 1
+        }
+      ],
+      "additional_tooltips": [
+        "@KinhostPupa.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
+      ]
+    },
+    {
+      "id": "KinhostPupa.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterKinhostPupa"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "KinhostPupa.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_RoomCorruption_Body",
+        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+      },
+      "titles": {
+        "key": "HudTooltip_RoomCorruption_Title",
+        "english": "Charged Echoes",
+        "french": "Échos chargés",
+        "german": "Geladene Echos",
+        "russian": "Заряженные эхо",
+        "portuguese": "Ecos Carregados",
+        "chinese": "充能的回响水晶",
+        "spanish": "Ecos cargados",
+        "chinese_traditional": "充能回響",
+        "korean": "충전된 메아리",
+        "japanese": "活性の残響"
       }
     }
   ],
-  "costType": "unplayable",
-  "targetless": false,
-  "ignoreWhenCountingMastery": true,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Adam Lee"
+  "vfxs": [
+    {
+      "id": "KinhostPupa.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,64 +1,62 @@
 {
-  "id": "ScrivenerAbility",
-  "guid": "c9992436-99b3-45bd-b4c4-5305ab00d0d6",
-  "name": "Spellweave",
-  "nameKey": {
-    "key": "CardData_nameKey-575a3bb2fcd05b73-06092911555445847bff080321eb3397-v2",
-    "english": "Spellweave",
-    "french": "Tissage de sort",
-    "german": "Zauberflechte",
-    "russian": "Сплетение чар",
-    "portuguese": "Feitiçaria",
-    "chinese": "织法",
-    "spanish": "Enlace arcano",
-    "chinese_traditional": "咒語編織",
-    "korean": "마법 직조",
-    "japanese": "呪文織工"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-6687abf5ecf0038e-06092911555445847bff080321eb3397-v2",
-    "english": "Draw a non-starter spell and apply -[effect0.upgrade.costreduction][ember].",
-    "french": "Piochez un sort non de départ et appliquez -[effect0.upgrade.costreduction][ember].",
-    "german": "Ziehe einen Nicht-Anfangs-Zauber und wende -[effect0.upgrade.costreduction][ember] an.",
-    "russian": "Возьмите чару, не являющуюся начальной, и получите -[effect0.upgrade.costreduction][ember].",
-    "portuguese": "Compre um feitiço não inicial e aplique -[effect0.upgrade.costreduction][ember].",
-    "chinese": "抽一张非初始法术，并获得 -[effect0.upgrade.costreduction][ember]。",
-    "spanish": "Roba un hechizo que no sea inicial y añade -[effect0.upgrade.costreduction][ember].",
-    "chinese_traditional": "抽一張非初始法術卡並施加-[effect0.upgrade.costreduction][ember]。",
-    "korean": "초기 주문이 아닌 주문을 뽑고 -[effect0.upgrade.costreduction][ember]을 적용합니다.",
-    "japanese": "非初期呪文をドローし、-[effect0.upgrade.costreduction][ember]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "rare",
-  "linkedClass": "ClassLunaCoven",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Scrivener.prefab",
-    "m_AssetGUID": "92769b864e4ef11408efd7173f420634"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAddTempCardUpgradeToNextDrawnCard",
-      "paramCardUpgradeData": {
-        "id": "ScrivenerAbility_Upgrade",
-        "guid": "682d484b-84f8-4a4f-83c6-fb0db87c7eda",
-        "costReduction": 1,
-        "xCostReduction": 1
-      }
-    },
-    {
-      "effectStateName": "CardEffectDrawType",
-      "paramCardFilter": {
-        "id": "SpellsOnlyExcludeStarterCards",
-        "cardType": "spell",
-        "disallowedCardPools": [
-          "StarterCardsOnly"
-        ]
+      "id": "ScrivenerAbility",
+      "names": {
+        "key": "CardData_nameKey-575a3bb2fcd05b73-06092911555445847bff080321eb3397-v2",
+        "english": "Spellweave",
+        "french": "Tissage de sort",
+        "german": "Zauberflechte",
+        "russian": "Сплетение чар",
+        "portuguese": "Feitiçaria",
+        "chinese": "织法",
+        "spanish": "Enlace arcano",
+        "chinese_traditional": "咒語編織",
+        "korean": "마법 직조",
+        "japanese": "呪文織工"
       },
-      "paramInt": 1
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-6687abf5ecf0038e-06092911555445847bff080321eb3397-v2",
+        "english": "Draw a non-starter spell and apply -[effect0.upgrade.costreduction][ember].",
+        "french": "Piochez un sort non de départ et appliquez -[effect0.upgrade.costreduction][ember].",
+        "german": "Ziehe einen Nicht-Anfangs-Zauber und wende -[effect0.upgrade.costreduction][ember] an.",
+        "russian": "Возьмите чару, не являющуюся начальной, и получите -[effect0.upgrade.costreduction][ember].",
+        "portuguese": "Compre um feitiço não inicial e aplique -[effect0.upgrade.costreduction][ember].",
+        "chinese": "抽一张非初始法术，并获得 -[effect0.upgrade.costreduction][ember]。",
+        "spanish": "Roba un hechizo que no sea inicial y añade -[effect0.upgrade.costreduction][ember].",
+        "chinese_traditional": "抽一張非初始法術卡並施加-[effect0.upgrade.costreduction][ember]。",
+        "korean": "초기 주문이 아닌 주문을 뽑고 -[effect0.upgrade.costreduction][ember]을 적용합니다.",
+        "japanese": "非初期呪文をドローし、-[effect0.upgrade.costreduction][ember]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "ClassLunaCoven",
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Scrivener.prefab",
+        "m_AssetGUID": "92769b864e4ef11408efd7173f420634"
+      },
+      "effects": [
+        "@ScrivenerAbility.effects0",
+        "@ScrivenerAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Genevieve Bega"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Genevieve Bega"
+  "effects": [
+    {
+      "id": "ScrivenerAbility.effects0",
+      "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
+      "param_upgrade": "ScrivenerAbility_Upgrade"
+    },
+    {
+      "id": "ScrivenerAbility.effects1",
+      "name": "CardEffectDrawType",
+      "param_card_filter": "@ScrivenerAbility.effects1.paramCardFilter",
+      "param_int": 1
+    }
+  ]
 }

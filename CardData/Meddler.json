@@ -1,142 +1,158 @@
 {
-  "id": "FaeMeddler",
-  "guid": "d10e2dac-fa58-4509-b0ee-112b3bf78800",
-  "name": "Meddler",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaPool",
-    "UnitsLunaCovenBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_FaeTrickster.prefab",
-    "m_AssetGUID": "af2d2f5c0f71e4147812238d53728280"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterFaeMeddler",
-        "guid": "12cf2d0b-f259-421f-ab51-96d50eb7cf31",
-        "nameKey": {
-          "key": "CharacterData_nameKey-4b65cc8789f7daa3-5080385e80e90414a829ad60ff53eb2b-v2",
-          "english": "Meddler",
-          "french": "Fouineuse",
-          "german": "Pfuscher",
-          "russian": "Проказник",
-          "portuguese": "Abelhudo",
-          "chinese": "搞事精",
-          "spanish": "Metomentodo",
-          "chinese_traditional": "愛管閒事者",
-          "korean": "메들러",
-          "japanese": "メドラー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-8589d7b9c76afde6-5080385e80e90414a829ad60ff53eb2b-v2",
-            "english": "“You can’t take the dust out of stardust just as you can’t take the meddle out of the meddler.”",
-            "french": "<nobr>« À</nobr> fouineuse, fouineuse et <nobr>demi. »</nobr>",
-            "german": "„Wo Sternenstaub ist, sind auch Sterne. Und wo der Pfuscher ist, wird eben gepfuscht.“",
-            "russian": "«Нельзя вынуть из звездной пыли пыль, а из Проказника — проказы».",
-            "portuguese": "“Não se pode tirar a poeira da Poeira Estelar, assim como não se pode tirar a abelha do abelhudo.”",
-            "chinese": "“等鸡吃完米，狗舔完面，火烧断锁，搞事精就不会搞事情了。”",
-            "spanish": "«No puedes quitarle el polvo al polvo estelar ni el entrometimiento al Metomentodo».",
-            "chinese_traditional": "「你不能把塵埃從星塵中分離，就像你不能把愛管閒事的個性從愛管閒事的人體內抽離一樣。」",
-            "korean": "\"매들러에게 참견을 빼놓을 수 없듯, 별가루에서 가루가 빠질 수는 없는 법이지.\"",
-            "japanese": "「口を挟んでくる者から口だけを取り除くことができないのと同じように、スターダストから塵だけを取り除くことはできない」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_FaeTrickster.prefab",
-          "m_AssetGUID": "dbabe0d4b67a12642bc9f69b0dedc853"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-02b15aaf7c389d5d-5080385e80e90414a829ad60ff53eb2b-v2",
-              "english": "[phase].",
-              "french": "[phase].",
-              "german": "[phase].",
-              "russian": "[phase].",
-              "portuguese": "[phase].",
-              "chinese": "[phase]。",
-              "spanish": "[phase].",
-              "chinese_traditional": "[phase]。",
-              "korean": "[phase].",
-              "japanese": "[phase]。"
-            },
-            "trigger": "on_spawn",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAdvanceMoonPhase",
-                "paramInt": 1
-              }
-            ]
-          }
-        ],
-        "unitAbility": {
-          "id": "MoonipulateAbility",
-          "guid": "d1ab03ed-fe63-4eca-b68e-3090524f325e",
-          "nameKey": {
-            "key": "CardData_nameKey-e74852ddbe426dbb-958d8418591d34c4c961a3eddd91fa1f-v2",
-            "english": "Moonipulate",
-            "french": "Manipulation lunaire",
-            "german": "Mondipulation",
-            "russian": "Лунипуляция",
-            "portuguese": "Manipulação Lunar",
-            "chinese": "月相操控",
-            "spanish": "Manilunación",
-            "chinese_traditional": "月之操縱",
-            "korean": "달부림",
-            "japanese": "月操作"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-3476e7757fc7ba0a-958d8418591d34c4c961a3eddd91fa1f-v2",
-            "english": "[phase].",
-            "french": "[phase].",
-            "german": "[phase].",
-            "russian": "[phase].",
-            "portuguese": "[phase].",
-            "chinese": "[phase]。",
-            "spanish": "[phase].",
-            "chinese_traditional": "[phase]。",
-            "korean": "[phase].",
-            "japanese": "[phase]。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "linkedClass": "ClassLunaCoven",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAdvanceMoonPhase",
-              "paramInt": 1
-            }
-          ],
-          "cooldownAfterActivated": 2,
-          "isUnitAbility": true,
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "size": 1,
-        "health": 3,
-        "ascendsTrainAutomatically": false,
-        "attackDamage": 6,
-        "subtypeKeys": [
-          "SubtypesData_Fae"
-        ],
-        "characterChatterData": "LunaCovenTricksterChatterData"
-      }
+      "id": "FaeMeddler",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "pools": [
+        "MegaPool",
+        "UnitsLunaCovenBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_FaeTrickster.prefab",
+        "m_AssetGUID": "af2d2f5c0f71e4147812238d53728280"
+      },
+      "effects": [
+        "@FaeMeddler.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Genevieve Bega"
+    },
+    {
+      "id": "FaeMeddler.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-e74852ddbe426dbb-958d8418591d34c4c961a3eddd91fa1f-v2",
+        "english": "Moonipulate",
+        "french": "Manipulation lunaire",
+        "german": "Mondipulation",
+        "russian": "Лунипуляция",
+        "portuguese": "Manipulação Lunar",
+        "chinese": "月相操控",
+        "spanish": "Manilunación",
+        "chinese_traditional": "月之操縱",
+        "korean": "달부림",
+        "japanese": "月操作"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-3476e7757fc7ba0a-958d8418591d34c4c961a3eddd91fa1f-v2",
+        "english": "[phase].",
+        "french": "[phase].",
+        "german": "[phase].",
+        "russian": "[phase].",
+        "portuguese": "[phase].",
+        "chinese": "[phase]。",
+        "spanish": "[phase].",
+        "chinese_traditional": "[phase]。",
+        "korean": "[phase].",
+        "japanese": "[phase]。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLunaCoven",
+      "effects": [
+        "@FaeMeddler.effects0.paramCharacterData.triggers0.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Genevieve Bega"
+  "characters": [
+    {
+      "id": "MonsterFaeMeddler",
+      "names": {
+        "key": "CharacterData_nameKey-4b65cc8789f7daa3-5080385e80e90414a829ad60ff53eb2b-v2",
+        "english": "Meddler",
+        "french": "Fouineuse",
+        "german": "Pfuscher",
+        "russian": "Проказник",
+        "portuguese": "Abelhudo",
+        "chinese": "搞事精",
+        "spanish": "Metomentodo",
+        "chinese_traditional": "愛管閒事者",
+        "korean": "메들러",
+        "japanese": "メドラー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-8589d7b9c76afde6-5080385e80e90414a829ad60ff53eb2b-v2",
+          "english": "“You can’t take the dust out of stardust just as you can’t take the meddle out of the meddler.”",
+          "french": "<nobr>« À</nobr> fouineuse, fouineuse et <nobr>demi. »</nobr>",
+          "german": "„Wo Sternenstaub ist, sind auch Sterne. Und wo der Pfuscher ist, wird eben gepfuscht.“",
+          "russian": "«Нельзя вынуть из звездной пыли пыль, а из Проказника — проказы».",
+          "portuguese": "“Não se pode tirar a poeira da Poeira Estelar, assim como não se pode tirar a abelha do abelhudo.”",
+          "chinese": "“等鸡吃完米，狗舔完面，火烧断锁，搞事精就不会搞事情了。”",
+          "spanish": "«No puedes quitarle el polvo al polvo estelar ni el entrometimiento al Metomentodo».",
+          "chinese_traditional": "「你不能把塵埃從星塵中分離，就像你不能把愛管閒事的個性從愛管閒事的人體內抽離一樣。」",
+          "korean": "\"매들러에게 참견을 빼놓을 수 없듯, 별가루에서 가루가 빠질 수는 없는 법이지.\"",
+          "japanese": "「口を挟んでくる者から口だけを取り除くことができないのと同じように、スターダストから塵だけを取り除くことはできない」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_FaeTrickster.prefab",
+        "m_AssetGUID": "dbabe0d4b67a12642bc9f69b0dedc853"
+      },
+      "impact_vfx": "@FaeMeddler.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@FaeMeddler.effects0.paramCharacterData.triggers0"
+      ],
+      "ability": "@FaeMeddler.effects0.paramCharacterData.unitAbility",
+      "size": 1,
+      "health": 3,
+      "ascends_train_automatically": false,
+      "attack_damage": 6,
+      "subtypes": [
+        "SubtypesData_Fae"
+      ],
+      "chatter": "LunaCovenTricksterChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "FaeMeddler.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-02b15aaf7c389d5d-5080385e80e90414a829ad60ff53eb2b-v2",
+        "english": "[phase].",
+        "french": "[phase].",
+        "german": "[phase].",
+        "russian": "[phase].",
+        "portuguese": "[phase].",
+        "chinese": "[phase]。",
+        "spanish": "[phase].",
+        "chinese_traditional": "[phase]。",
+        "korean": "[phase].",
+        "japanese": "[phase]。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        "@FaeMeddler.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "FaeMeddler.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAdvanceMoonPhase",
+      "param_int": 1
+    },
+    {
+      "id": "FaeMeddler.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterFaeMeddler"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "FaeMeddler.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

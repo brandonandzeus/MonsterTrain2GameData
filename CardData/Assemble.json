@@ -1,57 +1,66 @@
 {
-  "id": "AssemblyRoomAbility",
-  "guid": "601fa82c-1912-4f27-8454-ed82ac92cbdd",
-  "name": "Assemble",
-  "nameKey": {
-    "key": "CardData_nameKey-adc40e22250079ad-bc6c55315ab9ee443b86fd83b27d7d24-v2",
-    "english": "Assemble",
-    "french": "Assemblage",
-    "german": "Zusammensetzen",
-    "russian": "Сборка",
-    "portuguese": "Montagem",
-    "chinese": "组装",
-    "spanish": "Ensamblaje",
-    "chinese_traditional": "組裝",
-    "korean": "조립",
-    "japanese": "組み立て"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-6c9535e9104f6f34-bc6c55315ab9ee443b86fd83b27d7d24-v2",
-    "english": "Create a copy of the front friendly non-champion unit and [descend] it. ",
-    "french": "Crée une copie de l'unité hors champion en première ligne et la fait <b>descendre</b>. ",
-    "german": "Erstelle eine Kopie der vordersten verbündeten Nicht-Champion-Einheit und zwinge sie zum <b>Absteigen</b>. ",
-    "russian": "Копирует переднего союзника не-героя и <b>спускает</b> его. ",
-    "portuguese": "Cria uma cópia da unidade aliada na frente que não seja um campeão e a <b>Derruba</b>. ",
-    "chinese": "产生一个前排非勇者友方单位的复制体，并使其[descend]。 ",
-    "spanish": "Crea una copia de la primera unidad no campeón aliada y la <b>Desciende</b>. ",
-    "chinese_traditional": "創造前排友方非勇士單位的複製並使其[descend]。 ",
-    "korean": "영웅 외 아군 유닛의 복제본을 생성하고 [descend]시킵니다. ",
-    "japanese": "前列にいる非チャンピオンの味方ユニットの複製を作成し、[descend]させる。 "
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectCopyUnits",
-      "targetMode": "front_in_room",
-      "targetTeamType": "monsters",
-      "targetCharacterExcludedSubtypes": [
-        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      "id": "AssemblyRoomAbility",
+      "names": {
+        "key": "CardData_nameKey-adc40e22250079ad-bc6c55315ab9ee443b86fd83b27d7d24-v2",
+        "english": "Assemble",
+        "french": "Assemblage",
+        "german": "Zusammensetzen",
+        "russian": "Сборка",
+        "portuguese": "Montagem",
+        "chinese": "组装",
+        "spanish": "Ensamblaje",
+        "chinese_traditional": "組裝",
+        "korean": "조립",
+        "japanese": "組み立て"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-6c9535e9104f6f34-bc6c55315ab9ee443b86fd83b27d7d24-v2",
+        "english": "Create a copy of the front friendly non-champion unit and [descend] it. ",
+        "french": "Crée une copie de l'unité hors champion en première ligne et la fait <b>descendre</b>. ",
+        "german": "Erstelle eine Kopie der vordersten verbündeten Nicht-Champion-Einheit und zwinge sie zum <b>Absteigen</b>. ",
+        "russian": "Копирует переднего союзника не-героя и <b>спускает</b> его. ",
+        "portuguese": "Cria uma cópia da unidade aliada na frente que não seja um campeão e a <b>Derruba</b>. ",
+        "chinese": "产生一个前排非勇者友方单位的复制体，并使其[descend]。 ",
+        "spanish": "Crea una copia de la primera unidad no campeón aliada y la <b>Desciende</b>. ",
+        "chinese_traditional": "創造前排友方非勇士單位的複製並使其[descend]。 ",
+        "korean": "영웅 외 아군 유닛의 복제본을 생성하고 [descend]시킵니다. ",
+        "japanese": "前列にいる非チャンピオンの味方ユニットの複製を作成し、[descend]させる。 "
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@AssemblyRoomAbility.effects0",
+        "@AssemblyRoomAbility.effects1"
       ],
-      "paramInt": 1
-    },
-    {
-      "effectStateName": "CardEffectBump",
-      "targetMode": "last_spawned_character",
-      "targetTeamType": "monsters",
-      "targetCharacterExcludedSubtypes": [
-        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-      ],
-      "paramInt": -1
+      "cooldown": 2,
+      "is_room_ability": true,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isRoomAbility": true,
-  "requiredDLC": "railforged",
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "AssemblyRoomAbility.effects0",
+      "name": "CardEffectCopyUnits",
+      "target_mode": "front_in_room",
+      "target_team": "monsters",
+      "target_character_excluded_subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "param_int": 1
+    },
+    {
+      "id": "AssemblyRoomAbility.effects1",
+      "name": "CardEffectBump",
+      "target_mode": "last_spawned_character",
+      "target_team": "monsters",
+      "target_character_excluded_subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "param_int": -1
+    }
+  ]
 }

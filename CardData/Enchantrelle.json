@@ -1,107 +1,126 @@
 {
-  "id": "Enchantrelle",
-  "guid": "658321b4-08bd-443c-b4e1-b8a8931d3299",
-  "name": "Enchantrelle",
-  "cost": 3,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsUnderlegionBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Enchantrelle.prefab",
-    "m_AssetGUID": "26221080349b0d5469262f2ea60d0319"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterEnchantrelle",
-        "guid": "37736049-8457-4740-9ec3-0117fcc89b64",
-        "nameKey": {
-          "key": "CharacterData_nameKey-c32cd8bfa89d9d9e-aef57b1fa7d418f46aa17fada076bc95-v2",
-          "english": "Enchantrelle",
-          "french": "Enchanterelle",
-          "german": "Schwammmagierin",
-          "russian": "Шантарель",
-          "portuguese": "Encantogumela",
-          "chinese": "迷人的贵妇人",
-          "spanish": "Enchantarela",
-          "chinese_traditional": "魅惑者",
-          "korean": "버섯술사",
-          "japanese": "エンチャントレル"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-abc258181eb0261a-aef57b1fa7d418f46aa17fada076bc95-v2",
-            "english": "“I know a mushroom has fallen in love with me when they fear to sleep. My lovely spores give them nightmares of their heart’s greatest fear: being away from me.”",
-            "french": "<nobr>« Je</nobr> sais qu'un champignon est tombé amoureux de moi lorsqu'il a peur de dormir. Mes jolies spores lui font faire des cauchemars de ce qu'il craint le <nobr>plus :</nobr> être loin de <nobr>moi. »</nobr>",
-            "german": "„Wenn ein Pilz den Schlaf fürchtet, hat er sich in mich verliebt. Und die Albträume meiner lieblichen Sporen sind seine gefürchtetsten – in denen ich nicht bei ihm bin.“",
-            "russian": "«Я узнаю, что гриб влюбился в меня, по его страху уснуть. Ведь под влиянием моих спор ему снятся кошмары, будто я от него слишком далеко».",
-            "portuguese": "“Eu sei que um cogumelo se apaixonou por mim quando tinha medo de dormir. Meus adoráveis esporos o fazem ter pesadelos sobre o maior medo em seu coração: ficar longe de mim.”",
-            "chinese": "“当蘑菇人害怕睡着时，我就知道他们已经爱上我了。我可爱的孢子让他们做噩梦，梦到他们心中最害怕的事：与我分离。”",
-            "spanish": "«Sé que un hongo se ha enamorado de mí cuando teme dormirse. Mis encantadoras esporas le provocan pesadillas sobre su mayor temor: verse apartados de mí».",
-            "chinese_traditional": "「當蘑菇開始變得害怕睡眠時，我就知道對方愛上了我。我可愛的孢子會讓他們夢見內心最深的恐懼：也就是離開我。」",
-            "korean": "\"버섯이 잠드는 것을 두려워할 때 내게 푹 빠졌다는 것을 알아. 그리고 내 사랑스러운 포자들은 저들이 가장 두려워하는 악몽을 꾸게 하지. 바로 내게서 멀어지는 거야.\"",
-            "japanese": "「眠りを恐れるとき、それはキノコが私に恋をしているということよ。私の愛しい胞子によって、最も恐れていること—私と離れ離れになること—の悪夢を見せられるのだから」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Enchantrelle.prefab",
-          "m_AssetGUID": "bc9dfda2d20d1ca468f0b4096cead6e0"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-7b83e0f6b8dc6b70-aef57b1fa7d418f46aa17fada076bc95-v2",
-              "english": "Apply [sap] [effect0.status0.power] to enemy units.",
-              "french": "Inflige [sap] [effect0.status0.power] aux unités ennemies.",
-              "german": "Wende [sap] [effect0.status0.power] auf gegnerische Einheiten an.",
-              "russian": "Накладывает на вражеских бойцов [sap] [effect0.status0.power].",
-              "portuguese": "Aplica [sap] [effect0.status0.power] às unidades inimigas.",
-              "chinese": "对所有敌方单位施加 [sap] [effect0.status0.power]。",
-              "spanish": "Añade [sap] [effect0.status0.power] a las unidades enemigas.",
-              "chinese_traditional": "對敵方單位施加[sap][effect0.status0.power]。",
-              "korean": "적 유닛들에게 [sap] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "敵ユニットに[sap] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "card_monster_played",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "debuff",
-                    "count": 1
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 8,
-        "attackDamage": 8,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Shroom"
-        ],
-        "characterChatterData": "UnderlegionShroomFemaleChatterData"
-      }
+      "id": "Enchantrelle",
+      "cost": 3,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassUnderlegion",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsUnderlegionBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Enchantrelle.prefab",
+        "m_AssetGUID": "26221080349b0d5469262f2ea60d0319"
+      },
+      "effects": [
+        "@Enchantrelle.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Hung Bui"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Hung Bui"
+  "characters": [
+    {
+      "id": "MonsterEnchantrelle",
+      "names": {
+        "key": "CharacterData_nameKey-c32cd8bfa89d9d9e-aef57b1fa7d418f46aa17fada076bc95-v2",
+        "english": "Enchantrelle",
+        "french": "Enchanterelle",
+        "german": "Schwammmagierin",
+        "russian": "Шантарель",
+        "portuguese": "Encantogumela",
+        "chinese": "迷人的贵妇人",
+        "spanish": "Enchantarela",
+        "chinese_traditional": "魅惑者",
+        "korean": "버섯술사",
+        "japanese": "エンチャントレル"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-abc258181eb0261a-aef57b1fa7d418f46aa17fada076bc95-v2",
+          "english": "“I know a mushroom has fallen in love with me when they fear to sleep. My lovely spores give them nightmares of their heart’s greatest fear: being away from me.”",
+          "french": "<nobr>« Je</nobr> sais qu'un champignon est tombé amoureux de moi lorsqu'il a peur de dormir. Mes jolies spores lui font faire des cauchemars de ce qu'il craint le <nobr>plus :</nobr> être loin de <nobr>moi. »</nobr>",
+          "german": "„Wenn ein Pilz den Schlaf fürchtet, hat er sich in mich verliebt. Und die Albträume meiner lieblichen Sporen sind seine gefürchtetsten – in denen ich nicht bei ihm bin.“",
+          "russian": "«Я узнаю, что гриб влюбился в меня, по его страху уснуть. Ведь под влиянием моих спор ему снятся кошмары, будто я от него слишком далеко».",
+          "portuguese": "“Eu sei que um cogumelo se apaixonou por mim quando tinha medo de dormir. Meus adoráveis esporos o fazem ter pesadelos sobre o maior medo em seu coração: ficar longe de mim.”",
+          "chinese": "“当蘑菇人害怕睡着时，我就知道他们已经爱上我了。我可爱的孢子让他们做噩梦，梦到他们心中最害怕的事：与我分离。”",
+          "spanish": "«Sé que un hongo se ha enamorado de mí cuando teme dormirse. Mis encantadoras esporas le provocan pesadillas sobre su mayor temor: verse apartados de mí».",
+          "chinese_traditional": "「當蘑菇開始變得害怕睡眠時，我就知道對方愛上了我。我可愛的孢子會讓他們夢見內心最深的恐懼：也就是離開我。」",
+          "korean": "\"버섯이 잠드는 것을 두려워할 때 내게 푹 빠졌다는 것을 알아. 그리고 내 사랑스러운 포자들은 저들이 가장 두려워하는 악몽을 꾸게 하지. 바로 내게서 멀어지는 거야.\"",
+          "japanese": "「眠りを恐れるとき、それはキノコが私に恋をしているということよ。私の愛しい胞子によって、最も恐れていること—私と離れ離れになること—の悪夢を見せられるのだから」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Enchantrelle.prefab",
+        "m_AssetGUID": "bc9dfda2d20d1ca468f0b4096cead6e0"
+      },
+      "impact_vfx": "@Enchantrelle.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@Enchantrelle.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 8,
+      "attack_damage": 8,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Shroom"
+      ],
+      "chatter": "UnderlegionShroomFemaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Enchantrelle.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-7b83e0f6b8dc6b70-aef57b1fa7d418f46aa17fada076bc95-v2",
+        "english": "Apply [sap] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [sap] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [sap] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает на вражеских бойцов [sap] [effect0.status0.power].",
+        "portuguese": "Aplica [sap] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [sap] [effect0.status0.power]。",
+        "spanish": "Añade [sap] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[sap][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [sap] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[sap] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "card_monster_played",
+      "effects": [
+        "@Enchantrelle.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Enchantrelle.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Enchantrelle.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterEnchantrelle"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Enchantrelle.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

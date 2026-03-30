@@ -1,48 +1,55 @@
 {
-  "id": "RailforgedChampionConductorAbility 2",
-  "guid": "a0b1d2c5-4ccd-49e4-b508-9b6feabbcd14",
-  "name": "Train Whistle III",
-  "nameKey": {
-    "key": "CardData_nameKey-e29b73ba215f3f1f-d4f8bfc12c375874ab41097953c8c8b3-v2",
-    "english": "Train Whistle III",
-    "french": "Coup de <nobr>sifflet III</nobr>",
-    "german": "Zugpfeife III",
-    "russian": "Гудок поезда III",
-    "portuguese": "Apito do Trem III",
-    "chinese": "火车汽笛 III",
-    "spanish": "Silbato del tren III",
-    "chinese_traditional": "列車汽笛III",
-    "korean": "기적 III",
-    "japanese": "汽笛III"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-667f06f397e3c14c-d4f8bfc12c375874ab41097953c8c8b3-v2",
-    "english": "Friendly units attack immediately.",
-    "french": "Les unités alliées attaquent immédiatement.",
-    "german": "Verbündete Einheiten greifen sofort an.",
-    "russian": "Союзники атакуют немедленно.",
-    "portuguese": "Unidades aliadas atacam imediatamente.",
-    "chinese": "友方单位立即发动攻击。",
-    "spanish": "Las unidades aliadas atacan de inmediato.",
-    "chinese_traditional": "友方單位立刻攻擊。",
-    "korean": "아군 유닛들이 즉각적으로 공격합니다.",
-    "japanese": "味方ユニットが即座に攻撃を実行する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
-    "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAttackWithUnit",
-      "targetMode": "room",
-      "targetTeamType": "monsters"
+      "id": "RailforgedChampionConductorAbility 2",
+      "names": {
+        "key": "CardData_nameKey-e29b73ba215f3f1f-d4f8bfc12c375874ab41097953c8c8b3-v2",
+        "english": "Train Whistle III",
+        "french": "Coup de <nobr>sifflet III</nobr>",
+        "german": "Zugpfeife III",
+        "russian": "Гудок поезда III",
+        "portuguese": "Apito do Trem III",
+        "chinese": "火车汽笛 III",
+        "spanish": "Silbato del tren III",
+        "chinese_traditional": "列車汽笛III",
+        "korean": "기적 III",
+        "japanese": "汽笛III"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-667f06f397e3c14c-d4f8bfc12c375874ab41097953c8c8b3-v2",
+        "english": "Friendly units attack immediately.",
+        "french": "Les unités alliées attaquent immédiatement.",
+        "german": "Verbündete Einheiten greifen sofort an.",
+        "russian": "Союзники атакуют немедленно.",
+        "portuguese": "Unidades aliadas atacam imediatamente.",
+        "chinese": "友方单位立即发动攻击。",
+        "spanish": "Las unidades aliadas atacan de inmediato.",
+        "chinese_traditional": "友方單位立刻攻擊。",
+        "korean": "아군 유닛들이 즉각적으로 공격합니다.",
+        "japanese": "味方ユニットが即座に攻撃を実行する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
+        "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
+      },
+      "effects": [
+        "@RailforgedChampionConductorAbility 2.effects0"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "requiredDLC": "railforged",
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "RailforgedChampionConductorAbility 2.effects0",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "room",
+      "target_team": "monsters"
+    }
+  ]
 }

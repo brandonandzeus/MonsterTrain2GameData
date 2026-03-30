@@ -1,52 +1,58 @@
 {
-  "id": "LazarusLeagueChampMix3_Ability",
-  "guid": "30f01490-06b8-43f1-bf3a-ccbffa80079c",
-  "name": "Huge Concoction",
-  "nameKey": {
-    "key": "CardData_nameKey-409f9507f00e9ece-64254d3592e34074b922afcd10d8e2be-v2",
-    "english": "Huge Concoction",
-    "french": "Grande concoction",
-    "german": "Riesiges Gebräu",
-    "russian": "Большое зелье",
-    "portuguese": "Mistura Grande",
-    "chinese": "大份调合",
-    "spanish": "Brebaje enorme",
-    "chinese_traditional": "大型藥劑",
-    "korean": "대형 혼합물",
-    "japanese": "調合薬（大）"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-20e193305419b322-64254d3592e34074b922afcd10d8e2be-v2",
-    "english": "[mix] three times.",
-    "french": "[mix] trois fois.",
-    "german": "3x [mix].",
-    "russian": "Тройное [mix].",
-    "portuguese": "Usa [mix] três vezes.",
-    "chinese": "[mix] 三次。",
-    "spanish": "[mix] tres veces.",
-    "chinese_traditional": "[mix]三次。",
-    "korean": "[mix]을 3회 실시합니다.",
-    "japanese": "3回[mix]を実行する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2,
-      "paramCardPool": "InfusionPool"
-    },
-    {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2
-    },
-    {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2
+      "id": "LazarusLeagueChampMix3_Ability",
+      "names": {
+        "key": "CardData_nameKey-409f9507f00e9ece-64254d3592e34074b922afcd10d8e2be-v2",
+        "english": "Huge Concoction",
+        "french": "Grande concoction",
+        "german": "Riesiges Gebräu",
+        "russian": "Большое зелье",
+        "portuguese": "Mistura Grande",
+        "chinese": "大份调合",
+        "spanish": "Brebaje enorme",
+        "chinese_traditional": "大型藥劑",
+        "korean": "대형 혼합물",
+        "japanese": "調合薬（大）"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-20e193305419b322-64254d3592e34074b922afcd10d8e2be-v2",
+        "english": "[mix] three times.",
+        "french": "[mix] trois fois.",
+        "german": "3x [mix].",
+        "russian": "Тройное [mix].",
+        "portuguese": "Usa [mix] três vezes.",
+        "chinese": "[mix] 三次。",
+        "spanish": "[mix] tres veces.",
+        "chinese_traditional": "[mix]三次。",
+        "korean": "[mix]을 3회 실시합니다.",
+        "japanese": "3回[mix]を実行する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "effects": [
+        "@LazarusLeagueChampMix3_Ability.effects0",
+        "@LazarusLeagueChampMix3_Ability.effects1",
+        "@LazarusLeagueChampMix3_Ability.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "LazarusLeagueChampMix3_Ability.effects0",
+      "name": "CardEffectMix",
+      "param_int": 2,
+      "param_card_pool": "InfusionPool"
+    },
+    {
+      "id": "LazarusLeagueChampMix3_Ability.effects1",
+      "name": "CardEffectMix",
+      "param_int": 2
+    }
+  ]
 }

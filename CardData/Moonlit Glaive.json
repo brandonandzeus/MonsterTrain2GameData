@@ -1,112 +1,116 @@
 {
-  "id": "MoonlitGlaive",
-  "guid": "99fed8d9-e235-4109-860f-04a0293ba821",
-  "name": "Moonlit Glaive",
-  "nameKey": {
-    "key": "CardData_nameKey-c89570a2d3e79473-1761d25f3c9c0f444b3cd39e0c789f2a-v2",
-    "english": "Moonlit Glaive",
-    "french": "Glaive lunaire",
-    "german": "Mondlicht-Glefe",
-    "russian": "Лунная глефа",
-    "portuguese": "Glaive Enluarado",
-    "chinese": "月光弯刃剑",
-    "spanish": "Guja de luz lunar",
-    "chinese_traditional": "月光長槍",
-    "korean": "달빛 검",
-    "japanese": "月明かりの剣"
-  },
-  "cardLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "key": "CardData_data-8065945f117e40a4-1761d25f3c9c0f444b3cd39e0c789f2a-v2",
-      "english": "At the end of the Plenilune, the priestess return all weapons to the Silent. For now that the blades have been blessed by the Empress Moon, they have no place in her temple.",
-      "french": "À la fin de la Plénilune, la prêtresse rend leurs armes aux Silencieux. Une fois les lames bénies par l'Impératrice lunaire, elles n'ont plus leur place dans son temple.",
-      "german": "Wenn der Vollmond endet, gibt die Priesterin alle Waffen an die Stillen zurück. Jetzt, wo die Klingen durch die Mondherrin gesegnet wurden, gibt es für sie keinen Platz mehr in ihrem Tempel.",
-      "russian": "После полнолуния жрица возвращает все оружие Молчунам. Ведь клинкам, благословленным владычицей луной, нет места в ее храме.",
-      "portuguese": "Ao final do Plenilúnio, a sacerdotisa devolve todas as armas aos Silenciosos. Agora que as lâminas foram abençoadas pela Imperatriz Lunar, elas não devem ficar dentro do templo.",
-      "chinese": "在满月结束时，祭司会将所有武器还给寂静者。这些刀剑已经得到了女皇之月的祝福，没有搁置在神殿里的必要了。",
-      "spanish": "Al final del plenilunio, la sacerdotisa devuelve todas las armas a los silenciosos, pues ahora que han recibido la bendición de la Emperatriz Lunar, no tienen cabida en su templo.",
-      "chinese_traditional": "在滿月節結束時，女祭司將所有武器歸還給無聲者。這些刀刃已經得到了月之女王的祝福，它們不應再繼續擱置在神廟裡。",
-      "korean": "만월 의식이 끝남과 동시에 사제는 묵언자에게 무기를 돌려준다. 달의 여제의 축복을 받았으니 더 이상 신전에 두어야 할 이유가 없는 것이다.",
-      "japanese": "満月の終わりに、巫女はすべての武器をサイレントに返す。月の女帝に祝福された刃は、寺院に置いておくべきではないのだ。"
-    }
-  ],
-  "cost": 2,
-  "cardType": "equipment",
-  "rarity": "uncommon",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "EquipmentPool",
-    "EquipmentPoolNonEnemy",
-    "FreeEquipmentMutatorPool",
-    "MegaPool",
-    "RandomGraftedEquipmentForEvent_NoVoidArms_EquipmentPool",
-    "RedCrownEquipmentPool",
-    "RoomAndEquipmentDraftPool",
-    "RoomAndEquipmentMerchant_EquipmentPool",
-    "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
-    "UnitsLunaCovenBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MoonlitBlade.prefab",
-    "m_AssetGUID": "42e2eac03d0092843b18f6de68bca62e"
-  },
-  "effects": [
-    {
-      "effectStateName": "CardEffectAttachEquipment",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "monsters",
-      "paramCardUpgradeData": {
-        "id": "MoonlitGlaive_upgrade",
-        "guid": "78e13e0a-81b8-418c-86d1-14f525d94877",
-        "upgradeTitleKey": "CardUpgradeData_upgradeTitleKey-41d390e34b193ae8-c64b48ab0eb2da14e88f4258e1ac4c3a-v2",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "mageblade",
-            "count": 3
-          }
-        ],
-        "bonusDamage": 5
+      "id": "MoonlitGlaive",
+      "names": {
+        "key": "CardData_nameKey-c89570a2d3e79473-1761d25f3c9c0f444b3cd39e0c789f2a-v2",
+        "english": "Moonlit Glaive",
+        "french": "Glaive lunaire",
+        "german": "Mondlicht-Glefe",
+        "russian": "Лунная глефа",
+        "portuguese": "Glaive Enluarado",
+        "chinese": "月光弯刃剑",
+        "spanish": "Guja de luz lunar",
+        "chinese_traditional": "月光長槍",
+        "korean": "달빛 검",
+        "japanese": "月明かりの剣"
       },
-      "additionalTooltips": [
+      "lore_tooltips": [
         {
-          "descriptionKey": {
-            "key": "CardTraitMagicPower_TooltipText",
-            "english": "Increases the amount of damage dealt and health restored by spells.",
-            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-            "chinese": "提高法术造成的伤害与恢复的生命值。",
-            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-          },
-          "titleKey": {
-            "key": "CardTraitMagicPower_TooltipTitle",
-            "english": "Magic Power",
-            "french": "Puissance magique",
-            "german": "Magische Kraft",
-            "russian": "Сила магии",
-            "portuguese": "Poder Mágico",
-            "chinese": "魔法强度",
-            "spanish": "Poder mágico",
-            "chinese_traditional": "魔法力量",
-            "korean": "마법력",
-            "japanese": "魔力"
-          }
+          "key": "CardData_data-8065945f117e40a4-1761d25f3c9c0f444b3cd39e0c789f2a-v2",
+          "english": "At the end of the Plenilune, the priestess return all weapons to the Silent. For now that the blades have been blessed by the Empress Moon, they have no place in her temple.",
+          "french": "À la fin de la Plénilune, la prêtresse rend leurs armes aux Silencieux. Une fois les lames bénies par l'Impératrice lunaire, elles n'ont plus leur place dans son temple.",
+          "german": "Wenn der Vollmond endet, gibt die Priesterin alle Waffen an die Stillen zurück. Jetzt, wo die Klingen durch die Mondherrin gesegnet wurden, gibt es für sie keinen Platz mehr in ihrem Tempel.",
+          "russian": "После полнолуния жрица возвращает все оружие Молчунам. Ведь клинкам, благословленным владычицей луной, нет места в ее храме.",
+          "portuguese": "Ao final do Plenilúnio, a sacerdotisa devolve todas as armas aos Silenciosos. Agora que as lâminas foram abençoadas pela Imperatriz Lunar, elas não devem ficar dentro do templo.",
+          "chinese": "在满月结束时，祭司会将所有武器还给寂静者。这些刀剑已经得到了女皇之月的祝福，没有搁置在神殿里的必要了。",
+          "spanish": "Al final del plenilunio, la sacerdotisa devuelve todas las armas a los silenciosos, pues ahora que han recibido la bendición de la Emperatriz Lunar, no tienen cabida en su templo.",
+          "chinese_traditional": "在滿月節結束時，女祭司將所有武器歸還給無聲者。這些刀刃已經得到了月之女王的祝福，它們不應再繼續擱置在神廟裡。",
+          "korean": "만월 의식이 끝남과 동시에 사제는 묵언자에게 무기를 돌려준다. 달의 여제의 축복을 받았으니 더 이상 신전에 두어야 할 이유가 없는 것이다.",
+          "japanese": "満月の終わりに、巫女はすべての武器をサイレントに返す。月の女帝に祝福された刃は、寺院に置いておくべきではないのだ。"
         }
       ],
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Equipment/MoonlitBlade/FX_MoonlitBladeEquip.prefab",
-          "m_AssetGUID": "36cf89fb58ea2014cb1933c35119fd42"
-        },
-        "spawnLocation": "character_center"
+      "cost": 2,
+      "card_type": "equipment",
+      "rarity": "uncommon",
+      "class": "ClassLunaCoven",
+      "pools": [
+        "EquipmentPool",
+        "EquipmentPoolNonEnemy",
+        "FreeEquipmentMutatorPool",
+        "MegaPool",
+        "RandomGraftedEquipmentForEvent_NoVoidArms_EquipmentPool",
+        "RedCrownEquipmentPool",
+        "RoomAndEquipmentDraftPool",
+        "RoomAndEquipmentMerchant_EquipmentPool",
+        "RoomAndEquipmentMerchant_RoomAndEquipmentPool",
+        "UnitsLunaCovenBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_MoonlitBlade.prefab",
+        "m_AssetGUID": "42e2eac03d0092843b18f6de68bca62e"
+      },
+      "effects": [
+        "@MoonlitGlaive.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Luke Banke"
+    }
+  ],
+  "effects": [
+    {
+      "id": "MoonlitGlaive.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "MoonlitGlaive_upgrade",
+      "additional_tooltips": [
+        "@MoonlitGlaive.effects0.additionalTooltips0"
+      ],
+      "applied_vfx": "@MoonlitGlaive.effects0.appliedVFX"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "MoonlitGlaive.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
       }
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Luke Banke"
+  "vfxs": [
+    {
+      "id": "MoonlitGlaive.effects0.appliedVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Equipment/MoonlitBlade/FX_MoonlitBladeEquip.prefab",
+        "m_AssetGUID": "36cf89fb58ea2014cb1933c35119fd42"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

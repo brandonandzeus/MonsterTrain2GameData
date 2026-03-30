@@ -1,107 +1,126 @@
 {
-  "id": "BlightedTotem",
-  "guid": "21ad4f07-1568-4461-8be4-6fb2670bd90d",
-  "name": "Glacial Seal",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassStygian",
-  "pools": [
-    "MegaPool",
-    "UnitsStygianBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt _GlacialBolt.prefab",
-    "m_AssetGUID": "3f1e6b6c6c59d2f4c974abbe10f4390d"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterBlightedTotem",
-        "guid": "e6ec9687-a227-4b02-bd85-b109b0c79279",
-        "nameKey": {
-          "key": "CharacterData_nameKey-c3287ae9aa6cb9f6-fe204451b4721c445870b04950df0056-v2",
-          "english": "Glacial Seal",
-          "french": "Sceau glacial",
-          "german": "Gletschersiegel",
-          "russian": "Ледяная печать",
-          "portuguese": "Selamento Gélido",
-          "chinese": "寒冰封印",
-          "spanish": "Sello glacial",
-          "chinese_traditional": "冰川海豹",
-          "korean": "얼어붙은 봉인",
-          "japanese": "氷の封印"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-1623cefadd80e788-fe204451b4721c445870b04950df0056-v2",
-            "english": "Enchanted granite pegs were used in the sealing of the Titan’s tomb. When the Sea froze, ice formed around each bolt, prying it loose to drift through the open water.",
-            "french": "Le tombeau du titan fut scellé à l'aide de chevilles de granit enchantées. Lorsque la mer gela, la glace s'accumula autour de ces pièces, qui se dévissèrent et furent charriées par l'eau jusqu'au large.",
-            "german": "Verzauberte Granitpflöcke, die zur Versiegelung der Grabstätte des Titanen verwendet wurden. Als die See gefror, bildete sich Eis um jeden Pflock, sodass sie sich lösten und durch das Wasser trieben.",
-            "russian": "Зачарованные гранитные клинья, которыми запечатали гробницу Титана. Когда Море застывало, их выдавило в воду льдом.",
-            "portuguese": "Para selar a tumba do Titã, foram usadas estacas de granito encantadas. Quando o Mar congelou, gelo se formou em volta delas, fazendo com que se soltassem e dispersassem pelas águas.",
-            "chinese": "泰坦之墓是用附过魔的花岗岩钉封印起来的。当海面冻结时，每个钉子周围都结了冰，钉子也因此被撬了出来，在开阔的海域四处漂荡。",
-            "spanish": "Se utilizaron estacas de granito encantadas para sellar la tumba del titán. Cuando el mar se congeló, el hielo las extrajo de su posición, y ahora flotan sin rumbo por las aguas.",
-            "chinese_traditional": "施了魔法的花崗岩栓被用來封印泰坦的陵墓。當海水凍結時，冰層在每個栓周圍形成，將它們撬鬆，使其漂流到開闊的水域中。",
-            "korean": "티탄의 무덤은 마법을 부여한 화강암 말뚝으로 봉인되었다. 바다가 얼어붙으면서 말뚝 주위가 얼었고, 그 여파로 느슨해진 말뚝은 넓은 바다를 떠돌게 된다.",
-            "japanese": "巨人族の墓の封印には、魔力が込められた花崗岩の杭が使用された。海が凍り付いたとき、ボルトの周りに氷が生成されたため緩んでしまい、水中へ流れてしまうこととなったのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_GlacialBolt.prefab",
-          "m_AssetGUID": "df1e0c6530c5e7a49a262e464860f676"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-3dcba55fd60eeb1f-fe204451b4721c445870b04950df0056-v2",
-              "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
-              "french": "Inflige <b>Gelure</b> [effect0.status0.power] aux unités ennemies.",
-              "german": "Wende [effect0.status0.power] <b>Frostschaden</b> auf gegnerische Einheiten an.",
-              "russian": "Накладывает [frostbite] х[effect0.status0.power] на всех врагов.",
-              "portuguese": "Causa <b>Friagem</b> [effect0.status0.power] às unidades inimigas.",
-              "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。",
-              "spanish": "Añade [frostbite] [effect0.status0.power] a las unidades enemigas.",
-              "chinese_traditional": "對敵方單位施加[frostbite][effect0.status0.power]。",
-              "korean": "적 유닛들에게 [frostbite] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "敵ユニットに[frostbite] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "card_spell_played",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "poison",
-                    "count": 2
-                  }
-                ],
-                "animToPlay": "attack"
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 1,
-        "attackDamage": 0,
-        "deathSlidesBackwards": false,
-        "subtypeKeys": [
-          "SubtypesData_Totem_7c4e7151-d042-49e2-9700-29e7c760b691"
-        ]
-      }
+      "id": "BlightedTotem",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassStygian",
+      "pools": [
+        "MegaPool",
+        "UnitsStygianBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt _GlacialBolt.prefab",
+        "m_AssetGUID": "3f1e6b6c6c59d2f4c974abbe10f4390d"
+      },
+      "effects": [
+        "@BlightedTotem.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Jordan Thomas"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Jordan Thomas"
+  "characters": [
+    {
+      "id": "MonsterBlightedTotem",
+      "names": {
+        "key": "CharacterData_nameKey-c3287ae9aa6cb9f6-fe204451b4721c445870b04950df0056-v2",
+        "english": "Glacial Seal",
+        "french": "Sceau glacial",
+        "german": "Gletschersiegel",
+        "russian": "Ледяная печать",
+        "portuguese": "Selamento Gélido",
+        "chinese": "寒冰封印",
+        "spanish": "Sello glacial",
+        "chinese_traditional": "冰川海豹",
+        "korean": "얼어붙은 봉인",
+        "japanese": "氷の封印"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-1623cefadd80e788-fe204451b4721c445870b04950df0056-v2",
+          "english": "Enchanted granite pegs were used in the sealing of the Titan’s tomb. When the Sea froze, ice formed around each bolt, prying it loose to drift through the open water.",
+          "french": "Le tombeau du titan fut scellé à l'aide de chevilles de granit enchantées. Lorsque la mer gela, la glace s'accumula autour de ces pièces, qui se dévissèrent et furent charriées par l'eau jusqu'au large.",
+          "german": "Verzauberte Granitpflöcke, die zur Versiegelung der Grabstätte des Titanen verwendet wurden. Als die See gefror, bildete sich Eis um jeden Pflock, sodass sie sich lösten und durch das Wasser trieben.",
+          "russian": "Зачарованные гранитные клинья, которыми запечатали гробницу Титана. Когда Море застывало, их выдавило в воду льдом.",
+          "portuguese": "Para selar a tumba do Titã, foram usadas estacas de granito encantadas. Quando o Mar congelou, gelo se formou em volta delas, fazendo com que se soltassem e dispersassem pelas águas.",
+          "chinese": "泰坦之墓是用附过魔的花岗岩钉封印起来的。当海面冻结时，每个钉子周围都结了冰，钉子也因此被撬了出来，在开阔的海域四处漂荡。",
+          "spanish": "Se utilizaron estacas de granito encantadas para sellar la tumba del titán. Cuando el mar se congeló, el hielo las extrajo de su posición, y ahora flotan sin rumbo por las aguas.",
+          "chinese_traditional": "施了魔法的花崗岩栓被用來封印泰坦的陵墓。當海水凍結時，冰層在每個栓周圍形成，將它們撬鬆，使其漂流到開闊的水域中。",
+          "korean": "티탄의 무덤은 마법을 부여한 화강암 말뚝으로 봉인되었다. 바다가 얼어붙으면서 말뚝 주위가 얼었고, 그 여파로 느슨해진 말뚝은 넓은 바다를 떠돌게 된다.",
+          "japanese": "巨人族の墓の封印には、魔力が込められた花崗岩の杭が使用された。海が凍り付いたとき、ボルトの周りに氷が生成されたため緩んでしまい、水中へ流れてしまうこととなったのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_GlacialBolt.prefab",
+        "m_AssetGUID": "df1e0c6530c5e7a49a262e464860f676"
+      },
+      "impact_vfx": "@BlightedTotem.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@BlightedTotem.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 1,
+      "attack_damage": 0,
+      "death_slides_backwards": false,
+      "subtypes": [
+        "SubtypesData_Totem_7c4e7151-d042-49e2-9700-29e7c760b691"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BlightedTotem.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-3dcba55fd60eeb1f-fe204451b4721c445870b04950df0056-v2",
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+        "french": "Inflige <b>Gelure</b> [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [effect0.status0.power] <b>Frostschaden</b> auf gegnerische Einheiten an.",
+        "russian": "Накладывает [frostbite] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Causa <b>Friagem</b> [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加<b>霜冻</b> [effect0.status0.power]。",
+        "spanish": "Añade [frostbite] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[frostbite][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [frostbite] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[frostbite] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        "@BlightedTotem.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "BlightedTotem.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 2
+        }
+      ],
+      "anim_to_play": "attack"
+    },
+    {
+      "id": "BlightedTotem.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterBlightedTotem"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "BlightedTotem.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

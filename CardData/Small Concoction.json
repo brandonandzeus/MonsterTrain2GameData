@@ -1,44 +1,51 @@
 {
-  "id": "LazarusLeagueChampMix1_Ability",
-  "guid": "1e1d021c-712b-4edf-9bd5-fe7ae5e234e6",
-  "name": "Small Concoction",
-  "nameKey": {
-    "key": "CardData_nameKey-240df34506a7d25c-b476e01c2909d7740b69d50f66d376a5-v2",
-    "english": "Small Concoction",
-    "french": "Petite concoction",
-    "german": "Kleines Gebräu",
-    "russian": "Маленькое зелье",
-    "portuguese": "Mistura Pequena",
-    "chinese": "小份调合",
-    "spanish": "Brebaje pequeño",
-    "chinese_traditional": "小型藥劑",
-    "korean": "소형 혼합물",
-    "japanese": "調合薬（小）"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-e86039e9a9b4c212-b476e01c2909d7740b69d50f66d376a5-v2",
-    "english": "[mix].",
-    "french": "[mix].",
-    "german": "[mix].",
-    "russian": "[mix].",
-    "portuguese": "[mix].",
-    "chinese": "[mix]。",
-    "spanish": "[mix].",
-    "chinese_traditional": "[mix]。",
-    "korean": "[mix].",
-    "japanese": "[mix]。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectMix",
-      "paramInt": 2,
-      "paramCardPool": "InfusionPool"
+      "id": "LazarusLeagueChampMix1_Ability",
+      "names": {
+        "key": "CardData_nameKey-240df34506a7d25c-b476e01c2909d7740b69d50f66d376a5-v2",
+        "english": "Small Concoction",
+        "french": "Petite concoction",
+        "german": "Kleines Gebräu",
+        "russian": "Маленькое зелье",
+        "portuguese": "Mistura Pequena",
+        "chinese": "小份调合",
+        "spanish": "Brebaje pequeño",
+        "chinese_traditional": "小型藥劑",
+        "korean": "소형 혼합물",
+        "japanese": "調合薬（小）"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-e86039e9a9b4c212-b476e01c2909d7740b69d50f66d376a5-v2",
+        "english": "[mix].",
+        "french": "[mix].",
+        "german": "[mix].",
+        "russian": "[mix].",
+        "portuguese": "[mix].",
+        "chinese": "[mix]。",
+        "spanish": "[mix].",
+        "chinese_traditional": "[mix]。",
+        "korean": "[mix].",
+        "japanese": "[mix]。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "effects": [
+        "@LazarusLeagueChampMix1_Ability.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "LazarusLeagueChampMix1_Ability.effects0",
+      "name": "CardEffectMix",
+      "param_int": 2,
+      "param_card_pool": "InfusionPool"
+    }
+  ]
 }

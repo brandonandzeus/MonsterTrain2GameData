@@ -1,149 +1,165 @@
 {
-  "id": "Hostguard",
-  "guid": "c682012e-b5fc-4f75-9cb4-f6ade997b72f",
-  "name": "Hostguard",
-  "overrideDescriptionKey": "CardData_overrideDescriptionKey-599c3312fb0c9407-c8a66e0545205ca46b98d1ce11c4dbc3-v2",
-  "cost": 3,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsBanishedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Hostguard.prefab",
-    "m_AssetGUID": "5195276267b3adf44b06629e11f122d4"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterHostguard",
-        "guid": "6cb8f2ca-2737-4bc2-8551-2a4b1d8fd099",
-        "nameKey": {
-          "key": "CharacterData_nameKey-4c5fe09ddd20e7ad-75ea4adc436e6b748ba257a4f0faa008-v2",
-          "english": "Hostguard",
-          "french": "Gardien de fer",
-          "german": "Hüterherr",
-          "russian": "Стражник",
-          "portuguese": "Princiguarda",
-          "chinese": "军团守卫",
-          "spanish": "Guardia anfitrión",
-          "chinese_traditional": "領地守衛",
-          "korean": "천사 수호병",
-          "japanese": "ホストガード"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-0828338ae8c8754c-75ea4adc436e6b748ba257a4f0faa008-v2",
-            "english": "“Seraph ripped the wings from my back. That pain will be dealt back tenfold.”",
-            "french": "<nobr>« Séraphin</nobr> a arraché les ailes de mon dos. Cette douleur se paiera au <nobr>centuple. »</nobr>",
-            "german": "„Seraph riss mir die Flügel aus meinem Rücken. Diesen Schmerz werde ich zehnfach vergelten.“",
-            "russian": "«Серафим срезал с моей спины крылья. Эту боль я воздам ему в десятикратном размере».",
-            "portuguese": "“Serafim arrancou as asas de minhas costas. Devolverei essa dor para ele dez vezes mais forte.”",
-            "chinese": "“炽天使把翅膀从我的背上撕了下来。这种痛苦将十倍奉还。”",
-            "spanish": "«Seraph me arrancó las alas de la espalda. Pienso devolverle diez veces ese dolor».",
-            "chinese_traditional": "「撒拉弗撕下了我背上的翅膀。這份痛苦我將十倍奉還。」",
-            "korean": "\"세라핌이 내 등에서 날개를 잘라냈어. 이 고통은 열 배로 되갚아 줄 거야.\"",
-            "japanese": "「セラフに翼を毟り取られたのだ。あの痛みは10倍にして返してやる」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Hostguard.prefab",
-          "m_AssetGUID": "f090f521afe549e479d6d2fc975c6610"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "unitAbility": {
-          "id": "AngelFlightSlamAbility",
-          "guid": "126787b8-2d30-4c9c-bd3f-d6ec936aa8d6",
-          "nameKey": {
-            "key": "CardData_nameKey-90e597d57970a72e-d1937ca703ad78d439f95e36139fc903-v2",
-            "english": "Heavenly Slam",
-            "french": "Ruée céleste",
-            "german": "Himmlischer Schlag",
-            "russian": "Атака с небес",
-            "portuguese": "Pancada Celestial",
-            "chinese": "天堂猛击",
-            "spanish": "Carga celestial",
-            "chinese_traditional": "天堂重擊",
-            "korean": "천상의 강타",
-            "japanese": "天の強打"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-859a461e81c39b49-d1937ca703ad78d439f95e36139fc903-v2",
-            "english": "Move to a targeted location on any floor. Deal damage to the front enemy unit equal to this unit's [health] and [armor].",
-            "french": "Déplace l'unité à la position ciblée. Inflige des dégâts égaux aux [health] et à l'[armor] de cette unité à l'ennemi en 1re ligne.",
-            "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene. Fügt der vordersten gegnerischen Einheit Schaden in Höhe von [health] und [armor] dieser Einheit zu.",
-            "russian": "Перемещение в выбранное место на любом этаже. Наносит урон переднему врагу, равный [health] и <b>Броне</b> этого бойца.",
-            "portuguese": "Desloca-se para um local específico em qualquer andar. Causa dano à unidade inimiga na frente igual à [health] e à [armor] desta unidade.",
-            "chinese": "移动到任意层的目标位置。对前排敌方单位造成相当于该单位 [health] 和 [armor] 的伤害。",
-            "spanish": "Se mueve a la ubicación seleccionada de cualquier piso. Inflige tanto daño a la primera unidad enemiga como la [health] y [armor] de esta unidad.",
-            "chinese_traditional": "移動到任意樓層的指定位置。對前排敵方單位造成等於此單位[health]與[armor]的傷害。",
-            "korean": "어떤 층이든 대상 위치로 이동합니다. 전열 적 유닛에 이 유닛의 [health] 및 [armor]만큼 피해를 입힙니다.",
-            "japanese": "任意のフロアの指定した位置へ移動する。前列の敵ユニットにこのユニットの[health]と[armor]に等しいダメージを与える。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "linkedClass": "ClassBanished",
-          "effects": [
-            {
-              "effectStateName": "CardEffectUnitAbilityTeleport",
-              "appliedToSelfVFX": {
-                "vfxPrefabRefLeft": {
-                  "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
-                  "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
-                },
-                "spawnLocation": "character_bottom"
-              }
-            },
-            {
-              "effectStateName": "CardEffectDamagePerHp",
-              "targetMode": "self",
-              "targetTeamType": "heroes",
-              "additionalTooltips": [
-                {
-                  "statusId": "armor",
-                  "style": "default",
-                  "isStatusTooltip": true
-                }
-              ],
-              "paramInt": 1,
-              "paramBool2": true,
-              "appliedToSelfVFX": {
-                "vfxPrefabRefLeft": {
-                  "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
-                  "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
-                },
-                "spawnLocation": "character_bottom"
-              }
-            }
-          ],
-          "cooldownAfterActivated": 3,
-          "isUnitAbility": true,
-          "targetless": false,
-          "initialKeyboardTarget": "front_friendly",
-          "canAbilityTargetOtherFloors": true
-        },
-        "size": 3,
-        "health": 60,
-        "attackDamage": 25,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Angel"
-        ],
-        "characterChatterData": "BanishedHostguardChatterData"
-      }
+      "id": "Hostguard",
+      "descriptions": "CardData_overrideDescriptionKey-599c3312fb0c9407-c8a66e0545205ca46b98d1ce11c4dbc3-v2",
+      "cost": 3,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassBanished",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsBanishedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Hostguard.prefab",
+        "m_AssetGUID": "5195276267b3adf44b06629e11f122d4"
+      },
+      "effects": [
+        "@Hostguard.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 6,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Taylor Bray"
+    },
+    {
+      "id": "Hostguard.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-90e597d57970a72e-d1937ca703ad78d439f95e36139fc903-v2",
+        "english": "Heavenly Slam",
+        "french": "Ruée céleste",
+        "german": "Himmlischer Schlag",
+        "russian": "Атака с небес",
+        "portuguese": "Pancada Celestial",
+        "chinese": "天堂猛击",
+        "spanish": "Carga celestial",
+        "chinese_traditional": "天堂重擊",
+        "korean": "천상의 강타",
+        "japanese": "天の強打"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-859a461e81c39b49-d1937ca703ad78d439f95e36139fc903-v2",
+        "english": "Move to a targeted location on any floor. Deal damage to the front enemy unit equal to this unit's [health] and [armor].",
+        "french": "Déplace l'unité à la position ciblée. Inflige des dégâts égaux aux [health] et à l'[armor] de cette unité à l'ennemi en 1re ligne.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene. Fügt der vordersten gegnerischen Einheit Schaden in Höhe von [health] und [armor] dieser Einheit zu.",
+        "russian": "Перемещение в выбранное место на любом этаже. Наносит урон переднему врагу, равный [health] и <b>Броне</b> этого бойца.",
+        "portuguese": "Desloca-se para um local específico em qualquer andar. Causa dano à unidade inimiga na frente igual à [health] e à [armor] desta unidade.",
+        "chinese": "移动到任意层的目标位置。对前排敌方单位造成相当于该单位 [health] 和 [armor] 的伤害。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso. Inflige tanto daño a la primera unidad enemiga como la [health] y [armor] de esta unidad.",
+        "chinese_traditional": "移動到任意樓層的指定位置。對前排敵方單位造成等於此單位[health]與[armor]的傷害。",
+        "korean": "어떤 층이든 대상 위치로 이동합니다. 전열 적 유닛에 이 유닛의 [health] 및 [armor]만큼 피해를 입힙니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。前列の敵ユニットにこのユニットの[health]と[armor]に等しいダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "effects": [
+        "@Hostguard.effects0.paramCharacterData.unitAbility.effects0",
+        "@Hostguard.effects0.paramCharacterData.unitAbility.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
     }
   ],
-  "targetless": false,
-  "unlockLevel": 6,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Taylor Bray"
+  "characters": [
+    {
+      "id": "MonsterHostguard",
+      "names": {
+        "key": "CharacterData_nameKey-4c5fe09ddd20e7ad-75ea4adc436e6b748ba257a4f0faa008-v2",
+        "english": "Hostguard",
+        "french": "Gardien de fer",
+        "german": "Hüterherr",
+        "russian": "Стражник",
+        "portuguese": "Princiguarda",
+        "chinese": "军团守卫",
+        "spanish": "Guardia anfitrión",
+        "chinese_traditional": "領地守衛",
+        "korean": "천사 수호병",
+        "japanese": "ホストガード"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-0828338ae8c8754c-75ea4adc436e6b748ba257a4f0faa008-v2",
+          "english": "“Seraph ripped the wings from my back. That pain will be dealt back tenfold.”",
+          "french": "<nobr>« Séraphin</nobr> a arraché les ailes de mon dos. Cette douleur se paiera au <nobr>centuple. »</nobr>",
+          "german": "„Seraph riss mir die Flügel aus meinem Rücken. Diesen Schmerz werde ich zehnfach vergelten.“",
+          "russian": "«Серафим срезал с моей спины крылья. Эту боль я воздам ему в десятикратном размере».",
+          "portuguese": "“Serafim arrancou as asas de minhas costas. Devolverei essa dor para ele dez vezes mais forte.”",
+          "chinese": "“炽天使把翅膀从我的背上撕了下来。这种痛苦将十倍奉还。”",
+          "spanish": "«Seraph me arrancó las alas de la espalda. Pienso devolverle diez veces ese dolor».",
+          "chinese_traditional": "「撒拉弗撕下了我背上的翅膀。這份痛苦我將十倍奉還。」",
+          "korean": "\"세라핌이 내 등에서 날개를 잘라냈어. 이 고통은 열 배로 되갚아 줄 거야.\"",
+          "japanese": "「セラフに翼を毟り取られたのだ。あの痛みは10倍にして返してやる」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Hostguard.prefab",
+        "m_AssetGUID": "f090f521afe549e479d6d2fc975c6610"
+      },
+      "impact_vfx": "@Hostguard.effects0.paramCharacterData.impactVFX",
+      "ability": "@Hostguard.effects0.paramCharacterData.unitAbility",
+      "size": 3,
+      "health": 60,
+      "attack_damage": 25,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Angel"
+      ],
+      "chatter": "BanishedHostguardChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "Hostguard.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@Hostguard.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "Hostguard.effects0.paramCharacterData.unitAbility.effects1",
+      "name": "CardEffectDamagePerHp",
+      "target_mode": "self",
+      "additional_tooltips": [
+        "@Hostguard.effects0.paramCharacterData.unitAbility.effects1.additionalTooltips0"
+      ],
+      "param_int": 1,
+      "param_bool_2": true,
+      "applied_to_self_vfx": "@Hostguard.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "Hostguard.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterHostguard"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "isStatusTooltip": true,
+      "id": "Hostguard.effects0.paramCharacterData.unitAbility.effects1.additionalTooltips0",
+      "status": "armor",
+      "style": "default"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Hostguard.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "Hostguard.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+        "m_AssetGUID": "ad2e43302906f5e4b9dca11c8ae1e68e"
+      },
+      "spawn_location": "character_bottom"
+    }
+  ]
 }

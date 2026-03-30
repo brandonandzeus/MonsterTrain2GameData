@@ -1,44 +1,51 @@
 {
-  "id": "AnimusOfSpeedAbility",
-  "guid": "c2055882-a6f3-4b74-81f4-53f9350e51a0",
-  "name": "Swiftshot",
-  "nameKey": {
-    "key": "CardData_nameKey-f555a11176245688-c369fec75d0057d44a9d289114423075-v2",
-    "english": "Swiftshot",
-    "french": "Tir fulgurant",
-    "german": "Schnellschuss",
-    "russian": "Быстрый выстрел",
-    "portuguese": "Disparo Rápido",
-    "chinese": "迅速射击",
-    "spanish": "Disparo veloz",
-    "chinese_traditional": "迅捷射擊",
-    "korean": "스위프트샷",
-    "japanese": "早撃ち"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-23643bd3d493881b-c369fec75d0057d44a9d289114423075-v2",
-    "english": "Attack any enemy unit immediately.",
-    "french": "Attaque immédiatement n'importe quel ennemi.",
-    "german": "Greift sofort eine beliebige Einheit an.",
-    "russian": "Мгновенная атака любого врага.",
-    "portuguese": "Ataca qualquer unidade inimiga imediatamente.",
-    "chinese": "立即攻击任意敌方单位。",
-    "spanish": "Ataca de inmediato a cualquier unidad enemiga.",
-    "chinese_traditional": "立即攻擊任意敵方單位。",
-    "korean": "즉시 무작위 적 유닛을 공격합니다.",
-    "japanese": "即座にいずれかの敵ユニットを攻撃する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAttackTargetsWithSelfUnit",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "heroes"
+      "id": "AnimusOfSpeedAbility",
+      "names": {
+        "key": "CardData_nameKey-f555a11176245688-c369fec75d0057d44a9d289114423075-v2",
+        "english": "Swiftshot",
+        "french": "Tir fulgurant",
+        "german": "Schnellschuss",
+        "russian": "Быстрый выстрел",
+        "portuguese": "Disparo Rápido",
+        "chinese": "迅速射击",
+        "spanish": "Disparo veloz",
+        "chinese_traditional": "迅捷射擊",
+        "korean": "스위프트샷",
+        "japanese": "早撃ち"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-23643bd3d493881b-c369fec75d0057d44a9d289114423075-v2",
+        "english": "Attack any enemy unit immediately.",
+        "french": "Attaque immédiatement n'importe quel ennemi.",
+        "german": "Greift sofort eine beliebige Einheit an.",
+        "russian": "Мгновенная атака любого врага.",
+        "portuguese": "Ataca qualquer unidade inimiga imediatamente.",
+        "chinese": "立即攻击任意敌方单位。",
+        "spanish": "Ataca de inmediato a cualquier unidad enemiga.",
+        "chinese_traditional": "立即攻擊任意敵方單位。",
+        "korean": "즉시 무작위 적 유닛을 공격합니다.",
+        "japanese": "即座にいずれかの敵ユニットを攻撃する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@AnimusOfSpeedAbility.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "AnimusOfSpeedAbility.effects0",
+      "name": "CardEffectAttackTargetsWithSelfUnit",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes"
+    }
+  ]
 }

@@ -1,125 +1,141 @@
 {
-  "id": "BountyStalker",
-  "guid": "3e86422e-c8e4-4ec7-bc0a-0c622b7237b4",
-  "name": "Bounty Stalker",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassRemnant",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsRemnantBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_BountyStalker.prefab",
-    "m_AssetGUID": "28303104b4aa2b24c9929b01a36b38e4"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "BountyStalker",
-        "guid": "a6b3f5dc-22a6-41cb-b8f5-7d2dd17cfd8e",
-        "nameKey": {
-          "key": "CharacterData_nameKey-fbba9c15201a4755-11a15f5949523af41804f162c783d725-v2",
-          "english": "Bounty Stalker",
-          "french": "Traqueur de primes",
-          "german": "Kopfgeldjäger",
-          "russian": "Охотник за головами",
-          "portuguese": "Caçador de Recompensas",
-          "chinese": "赏金猎手",
-          "spanish": "Acechador a sueldo",
-          "chinese_traditional": "賞金獵人",
-          "korean": "현상금 사냥꾼",
-          "japanese": "バウンティ・ストーカー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-ff8dd14fb5d5c8ac-11a15f5949523af41804f162c783d725-v2",
-            "english": "Contracted assassins often employed by the Wickless to accomplish what even they cannot. Their incredible prowess in hunting Waxers has made them feared across the entire Ring, from Reformed to Wickless alike. I can’t say I much like them myself.",
-            "french": "Les sans-mèche emploient souvent des assassins pour accomplir les tâches dont ils sont incapables. Les reformés comme les sans-mèche craignent leur incroyable capacité à traquer et abattre les cireux. Je ne les apprécie pas particulièrement non plus.",
-            "german": "Häufig arbeiten diese Assassinen für die Dochtlosen, um zu erreichen, was sie selbst nicht bewerkstelligen können: Ihre Effektivität beim Aufspüren von Wachsern lässt Reformierte und Dochtlose gleichermaßen erschaudern. Ich finde sie auch nicht gerade sympathisch, muss ich sagen.",
-            "russian": "Наемные убийцы часто помогают Безфитильникам решать сложные задачи. Они так мастерски выслеживают Восковиков, что наводят ужас на весь Круг: от Переплавленных до Безфитильников. Да и у меня они любви не вызывают.",
-            "portuguese": "Assassinos contratados, muitas vezes empregados pelos Despaviados para realizar o que nem mesmo eles conseguem. Sua incrível habilidade em caçar Céreos os tornou temidos em todos os Círculos, tanto pelos Renovados quanto pelos Despaviados. Eu mesmo não posso dizer que gosto muito deles.",
-            "chinese": "无芯者经常会雇佣职业杀手，去做那些就连它们都做不到的事情。这些职业杀手极为擅长猎杀烛人，无论是无芯者还是移形者，都对它们畏惧三分。就连我都不怎么喜欢它们。",
-            "spanish": "Asesinos a sueldo contratados con frecuencia por los sin mecha para hacer lo que ellos no pueden. Sus increíbles dotes para dar caza a los encerados aterran a todo el anillo, tanto reformados como sin mecha. No puedo decir que les tenga mucho aprecio.",
-            "chinese_traditional": "經常被無芯者僱用的合約刺客，負責完成無芯者做不到的事。他們在獵殺蠟像方面的驚人能力，使他們在整個界域都令人恐懼，從重鑄者到無芯者都一樣。我不是很喜歡他們。",
-            "korean": "심지 없는 자들은 종종 자신들이 할 수 없는 일들을 이루기 위해 계약된 암살자를 고용한다. 밀랍 인간을 사냥하는 탁월한 능력 덕분에, 이들은 재탄회와 심지 없는 자를 포함한 고리 전체에서 공포의 대상이 되었다. 나 역시 그들을 좋아한다고 할 수는 없다.",
-            "japanese": "ウィックレスに雇われ、不可能も可能にする暗殺者。ワクサーを狩る彼らの恐るべき才能は、リフォームドからウィックレスまでリング全体で恐れられている。私は彼らがあまり好きだとは言えない。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_BountyStalker.prefab",
-          "m_AssetGUID": "e1aba014db47cd345b5b6b7cef2698a4"
-        },
-        "projectilePrefab": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/FX/FX_Projectile_BountyStalker.prefab",
-            "m_AssetGUID": "318007af6a1396348ba5e78a504e0c84"
-          },
-          "spawnLocation": "bone_status_effect_slot2"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "startingStatusEffects": [
-          {
-            "statusId": "ephemeral",
-            "count": 1
-          },
-          {
-            "statusId": "stealth",
-            "count": 1
-          }
-        ],
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-d3aaa2180b56e7c6-11a15f5949523af41804f162c783d725-v2",
-              "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
-              "french": "+[effect0.upgrade.bonusdamage][attack] définitivement.",
-              "german": "Permanent +[effect0.upgrade.bonusdamage][attack].",
-              "russian": "+[effect0.upgrade.bonusdamage][attack] навсегда.",
-              "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
-              "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
-              "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
-              "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]。",
-              "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]이 증가합니다.",
-              "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。"
-            },
-            "trigger": "on_death",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddCardUpgradeToUnits",
-                "targetMode": "self",
-                "targetTeamType": "none",
-                "paramCardUpgradeData": {
-                  "id": "Plus10Attack",
-                  "guid": "6d9f8b4d-8be0-4bd1-bd7e-edff5b557a31",
-                  "bonusDamage": 10
-                },
-                "additionalParamInt1": 2
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 5,
-        "attackDamage": 30,
-        "attackTeleportsToDefender": false,
-        "subtypeKeys": [
-          "SubtypesData_Wickless_517faf2f-8836-42d3-b84d-75a99b7dc735",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "RemnantWicklessChatterData"
-      }
+      "id": "BountyStalker",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassRemnant",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsRemnantBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_BountyStalker.prefab",
+        "m_AssetGUID": "28303104b4aa2b24c9929b01a36b38e4"
+      },
+      "effects": [
+        "@BountyStalker.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Taylor Bray"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Taylor Bray"
+  "characters": [
+    {
+      "id": "BountyStalker",
+      "names": {
+        "key": "CharacterData_nameKey-fbba9c15201a4755-11a15f5949523af41804f162c783d725-v2",
+        "english": "Bounty Stalker",
+        "french": "Traqueur de primes",
+        "german": "Kopfgeldjäger",
+        "russian": "Охотник за головами",
+        "portuguese": "Caçador de Recompensas",
+        "chinese": "赏金猎手",
+        "spanish": "Acechador a sueldo",
+        "chinese_traditional": "賞金獵人",
+        "korean": "현상금 사냥꾼",
+        "japanese": "バウンティ・ストーカー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-ff8dd14fb5d5c8ac-11a15f5949523af41804f162c783d725-v2",
+          "english": "Contracted assassins often employed by the Wickless to accomplish what even they cannot. Their incredible prowess in hunting Waxers has made them feared across the entire Ring, from Reformed to Wickless alike. I can’t say I much like them myself.",
+          "french": "Les sans-mèche emploient souvent des assassins pour accomplir les tâches dont ils sont incapables. Les reformés comme les sans-mèche craignent leur incroyable capacité à traquer et abattre les cireux. Je ne les apprécie pas particulièrement non plus.",
+          "german": "Häufig arbeiten diese Assassinen für die Dochtlosen, um zu erreichen, was sie selbst nicht bewerkstelligen können: Ihre Effektivität beim Aufspüren von Wachsern lässt Reformierte und Dochtlose gleichermaßen erschaudern. Ich finde sie auch nicht gerade sympathisch, muss ich sagen.",
+          "russian": "Наемные убийцы часто помогают Безфитильникам решать сложные задачи. Они так мастерски выслеживают Восковиков, что наводят ужас на весь Круг: от Переплавленных до Безфитильников. Да и у меня они любви не вызывают.",
+          "portuguese": "Assassinos contratados, muitas vezes empregados pelos Despaviados para realizar o que nem mesmo eles conseguem. Sua incrível habilidade em caçar Céreos os tornou temidos em todos os Círculos, tanto pelos Renovados quanto pelos Despaviados. Eu mesmo não posso dizer que gosto muito deles.",
+          "chinese": "无芯者经常会雇佣职业杀手，去做那些就连它们都做不到的事情。这些职业杀手极为擅长猎杀烛人，无论是无芯者还是移形者，都对它们畏惧三分。就连我都不怎么喜欢它们。",
+          "spanish": "Asesinos a sueldo contratados con frecuencia por los sin mecha para hacer lo que ellos no pueden. Sus increíbles dotes para dar caza a los encerados aterran a todo el anillo, tanto reformados como sin mecha. No puedo decir que les tenga mucho aprecio.",
+          "chinese_traditional": "經常被無芯者僱用的合約刺客，負責完成無芯者做不到的事。他們在獵殺蠟像方面的驚人能力，使他們在整個界域都令人恐懼，從重鑄者到無芯者都一樣。我不是很喜歡他們。",
+          "korean": "심지 없는 자들은 종종 자신들이 할 수 없는 일들을 이루기 위해 계약된 암살자를 고용한다. 밀랍 인간을 사냥하는 탁월한 능력 덕분에, 이들은 재탄회와 심지 없는 자를 포함한 고리 전체에서 공포의 대상이 되었다. 나 역시 그들을 좋아한다고 할 수는 없다.",
+          "japanese": "ウィックレスに雇われ、不可能も可能にする暗殺者。ワクサーを狩る彼らの恐るべき才能は、リフォームドからウィックレスまでリング全体で恐れられている。私は彼らがあまり好きだとは言えない。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_BountyStalker.prefab",
+        "m_AssetGUID": "e1aba014db47cd345b5b6b7cef2698a4"
+      },
+      "projectile_vfx": "@BountyStalker.effects0.paramCharacterData.projectilePrefab",
+      "impact_vfx": "@BountyStalker.effects0.paramCharacterData.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "ephemeral",
+          "count": 1
+        },
+        {
+          "status": "stealth",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@BountyStalker.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 5,
+      "attack_damage": 30,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Wickless_517faf2f-8836-42d3-b84d-75a99b7dc735",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "RemnantWicklessChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BountyStalker.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-d3aaa2180b56e7c6-11a15f5949523af41804f162c783d725-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack] permanently.",
+        "french": "+[effect0.upgrade.bonusdamage][attack] définitivement.",
+        "german": "Permanent +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack] навсегда.",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese_traditional": "永久+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]이 증가합니다.",
+        "japanese": "永続的に+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        "@BountyStalker.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "BountyStalker.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "Plus10Attack",
+      "param_int_3": 2
+    },
+    {
+      "id": "BountyStalker.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "BountyStalker"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "BountyStalker.effects0.paramCharacterData.projectilePrefab",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/FX/FX_Projectile_BountyStalker.prefab",
+        "m_AssetGUID": "318007af6a1396348ba5e78a504e0c84"
+      },
+      "spawn_location": "bone_status_effect_slot2"
+    },
+    {
+      "id": "BountyStalker.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

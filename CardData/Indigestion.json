@@ -1,77 +1,79 @@
 {
-  "id": "BloatedWhelpAbility",
-  "guid": "46ffe4e9-eb1e-417b-a37a-70d343706bdb",
-  "name": "Indigestion",
-  "nameKey": {
-    "key": "CardData_nameKey-49ea55487bad199f-34f9cc90de87c134b892dcd2d4135b09-v2",
-    "english": "Indigestion",
-    "french": "Indigestion",
-    "german": "Magenverstimmung",
-    "russian": "Несварение",
-    "portuguese": "Indigestão",
-    "chinese": "消化不良",
-    "spanish": "Indigestión",
-    "chinese_traditional": "消化不良",
-    "korean": "위장 트러블",
-    "japanese": "消化不良"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-6353e5d4baa33f94-34f9cc90de87c134b892dcd2d4135b09-v2",
-    "english": "Deal [effect0.power] damage to enemy units.",
-    "french": "Inflige <nobr>[effect0.power] DGT</nobr> aux unités ennemies.",
-    "german": "Füge gegnerischen Einheiten [effect0.power] Schaden zu.",
-    "russian": "Наносит [effect0.power] урона всем врагам.",
-    "portuguese": "Causa [effect0.power] de dano às unidades inimigas.",
-    "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。",
-    "spanish": "Inflige [effect0.power] de daño a las unidades enemigas.",
-    "chinese_traditional": "對敵方單位造成[effect0.power]點傷害。",
-    "korean": "적 유닛들에게 [effect0.power]의 피해를 입힙니다.",
-    "japanese": "敵ユニットに[effect0.power]のダメージを与える。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectDamage",
-      "targetMode": "room",
-      "targetTeamType": "heroes",
-      "paramInt": 1,
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-        },
-        "spawnLocation": "character_center"
+      "id": "BloatedWhelpAbility",
+      "names": {
+        "key": "CardData_nameKey-49ea55487bad199f-34f9cc90de87c134b892dcd2d4135b09-v2",
+        "english": "Indigestion",
+        "french": "Indigestion",
+        "german": "Magenverstimmung",
+        "russian": "Несварение",
+        "portuguese": "Indigestão",
+        "chinese": "消化不良",
+        "spanish": "Indigestión",
+        "chinese_traditional": "消化不良",
+        "korean": "위장 트러블",
+        "japanese": "消化不良"
       },
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
-          "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
-        },
-        "spawnLocation": "character_center"
-      }
-    },
-    {
-      "effectStateName": "CardEffectSacrifice",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-          "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-        },
-        "spawnLocation": "character_center"
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-6353e5d4baa33f94-34f9cc90de87c134b892dcd2d4135b09-v2",
+        "english": "Deal [effect0.power] damage to enemy units.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> aux unités ennemies.",
+        "german": "Füge gegnerischen Einheiten [effect0.power] Schaden zu.",
+        "russian": "Наносит [effect0.power] урона всем врагам.",
+        "portuguese": "Causa [effect0.power] de dano às unidades inimigas.",
+        "chinese": "对所有敌方单位造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位造成[effect0.power]點傷害。",
+        "korean": "적 유닛들에게 [effect0.power]의 피해를 입힙니다.",
+        "japanese": "敵ユニットに[effect0.power]のダメージを与える。"
       },
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
-          "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
-        },
-        "spawnLocation": "character_center"
-      }
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@BloatedWhelpAbility.effects0",
+        "@BloatedWhelpAbility.effects1"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "BloatedWhelpAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 1,
+      "applied_vfx": "@BloatedWhelpAbility.effects0.appliedVFX",
+      "applied_to_self_vfx": "@BloatedWhelpAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "BloatedWhelpAbility.effects1",
+      "name": "CardEffectSacrifice",
+      "target_mode": "self",
+      "applied_vfx": "@BloatedWhelpAbility.effects0.appliedVFX",
+      "applied_to_self_vfx": "@BloatedWhelpAbility.effects0.appliedToSelfVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "BloatedWhelpAbility.effects0.appliedVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+        "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "BloatedWhelpAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
+        "m_AssetGUID": "bc07db97f715e9f4a8c151cc2c8c8293"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,146 +1,133 @@
 {
-  "id": "Truffles",
-  "guid": "9a63e469-ae29-4199-ae41-4060ecd92853",
-  "name": "Truffles",
-  "overrideDescriptionKey": "CardData_overrideDescriptionKey-fe656cfed5bbdb80-866cfa162d61d644bb4232e2a999f5ec-v2",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaPool",
-    "UnitsUnderlegionBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Truffles.prefab",
-    "m_AssetGUID": "4d5078ebfc127834291629efbfd74d90"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterTruffles",
-        "guid": "808141bb-9eac-4e1c-9eb4-9e625895d537",
-        "nameKey": {
-          "key": "CharacterData_nameKey-d6e94c75453eb53e-4314b99bab215ff4893c8b2733caebdd-v2",
-          "english": "Truffles",
-          "french": "Truffe",
-          "german": "Trüffler",
-          "russian": "Трюфель",
-          "portuguese": "Trufas",
-          "chinese": "松露犬",
-          "spanish": "Trufa",
-          "chinese_traditional": "松露",
-          "korean": "트뤼플스",
-          "japanese": "トリュフ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-a07f5e7d68302836-4314b99bab215ff4893c8b2733caebdd-v2",
-            "english": "“Mush-woof!”",
-            "french": "<nobr>« Champi-wouf ! »</nobr>",
-            "german": "„Pilz-Wuff!“",
-            "russian": "«Гри-и-и-гав!»",
-            "portuguese": "“Cogu-au!”",
-            "chinese": "“蘑——汪！”",
-            "spanish": "«¡Champiguau!».",
-            "chinese_traditional": "「菇菇——汪！」",
-            "korean": "\"왕왕!\"",
-            "japanese": "「キノコ、ワオン！」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Truffles.prefab",
-          "m_AssetGUID": "91fc3c5a71ff317498405c8f769ba1b0"
-        },
-        "unitAbility": {
-          "id": "FetchAbility",
-          "guid": "8d54f68b-5660-4507-84c3-a0cf092bfbf1",
-          "nameKey": {
-            "key": "CardData_nameKey-43b250820a004a6a-03556847874fd334588d0dd1b633e3e4-v2",
-            "english": "Fetch",
-            "french": "Pioche",
-            "german": "Holen",
-            "russian": "Взять!",
-            "portuguese": "Buscar",
-            "chinese": "接住",
-            "spanish": "Busca",
-            "chinese_traditional": "提取",
-            "korean": "회수",
-            "japanese": "調達"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-f21fab95877bb471-03556847874fd334588d0dd1b633e3e4-v2",
-            "english": "Add a random equipment with [ephemeral] to your hand and apply -[effect0.upgrade.costreduction][ember].",
-            "french": "Ajoute à votre main un équipement aléatoire avec [ephemeral] et applique -[effect0.upgrade.costreduction][ember].",
-            "german": "Füge deiner Hand eine zufällige Ausrüstung mit [ephemeral] hinzu und wende -[effect0.upgrade.costreduction][ember] an.",
-            "russian": "В вашу руку добавляется [ephemeral] карта случайного снаряжение. У неё будет -[effect0.upgrade.costreduction][ember].",
-            "portuguese": "Adiciona um equipamento aleatório com [ephemeral] à sua mão e aplica -[effect0.upgrade.costreduction][ember].",
-            "chinese": "随机将一张带有[ephemeral]的装备卡加入你的手牌并施加-[effect0.upgrade.costreduction][ember]。",
-            "spanish": "Añade a tu mano un equipo aleatorio con [ephemeral] y -[effect0.upgrade.costreduction][ember].",
-            "chinese_traditional": "將隨機[ephemeral]裝備加入手牌並施加-[effect0.upgrade.costreduction][ember]。",
-            "korean": "[ephemeral] 효과가 있는 무작위 장비를 패에 추가하고, -[effect0.upgrade.costreduction][ember]을 적용합니다.",
-            "japanese": "手札に[ephemeral]のランダムな装備品を追加し、-[effect0.upgrade.costreduction][ember]を付与する。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "linkedClass": "ClassUnderlegion",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddBattleCard",
-              "paramCardUpgradeData": {
-                "id": "FetchCostReduction",
-                "guid": "79cf0ffd-531d-41c1-83ba-28387db1b06b",
-                "traitDataUpgrades": [
-                  {
-                    "traitStateName": "CardTraitEphemeral",
-                    "traitIsRemovable": false
-                  }
-                ],
-                "filters": [
-                  {
-                    "id": "ExcludeChampions",
-                    "excludedSubtypesOperator": "and",
-                    "excludedSubtypes": [
-                      "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-                    ]
-                  },
-                  {
-                    "id": "ExcludeZeroCost",
-                    "costRange": {
-                      "x": 1.0,
-                      "y": 99.0
-                    },
-                    "excludedCardTraitsOperator": "and",
-                    "excludedCardTraits": [
-                      "CardTraitUnplayable"
-                    ]
-                  }
-                ],
-                "costReduction": 1,
-                "xCostReduction": 1
-              },
-              "paramInt": 3,
-              "additionalParamInt": 1,
-              "paramBool": true,
-              "paramCardPool": "FreeEquipmentMutatorPool"
-            }
-          ],
-          "cooldownAfterActivated": 2,
-          "isUnitAbility": true,
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "size": 1,
-        "health": 5,
-        "attackDamage": 5,
-        "subtypeKeys": [
-          "SubtypesData_Shroom"
-        ],
-        "characterChatterData": "UnderlegionTrufflesChatterData"
-      }
+      "id": "Truffles",
+      "descriptions": "CardData_overrideDescriptionKey-fe656cfed5bbdb80-866cfa162d61d644bb4232e2a999f5ec-v2",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassUnderlegion",
+      "pools": [
+        "MegaPool",
+        "UnitsUnderlegionBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Truffles.prefab",
+        "m_AssetGUID": "4d5078ebfc127834291629efbfd74d90"
+      },
+      "effects": [
+        "@Truffles.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Mary Ngai-Virgo"
+    },
+    {
+      "id": "Truffles.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-43b250820a004a6a-03556847874fd334588d0dd1b633e3e4-v2",
+        "english": "Fetch",
+        "french": "Pioche",
+        "german": "Holen",
+        "russian": "Взять!",
+        "portuguese": "Buscar",
+        "chinese": "接住",
+        "spanish": "Busca",
+        "chinese_traditional": "提取",
+        "korean": "회수",
+        "japanese": "調達"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-f21fab95877bb471-03556847874fd334588d0dd1b633e3e4-v2",
+        "english": "Add a random equipment with [ephemeral] to your hand and apply -[effect0.upgrade.costreduction][ember].",
+        "french": "Ajoute à votre main un équipement aléatoire avec [ephemeral] et applique -[effect0.upgrade.costreduction][ember].",
+        "german": "Füge deiner Hand eine zufällige Ausrüstung mit [ephemeral] hinzu und wende -[effect0.upgrade.costreduction][ember] an.",
+        "russian": "В вашу руку добавляется [ephemeral] карта случайного снаряжение. У неё будет -[effect0.upgrade.costreduction][ember].",
+        "portuguese": "Adiciona um equipamento aleatório com [ephemeral] à sua mão e aplica -[effect0.upgrade.costreduction][ember].",
+        "chinese": "随机将一张带有[ephemeral]的装备卡加入你的手牌并施加-[effect0.upgrade.costreduction][ember]。",
+        "spanish": "Añade a tu mano un equipo aleatorio con [ephemeral] y -[effect0.upgrade.costreduction][ember].",
+        "chinese_traditional": "將隨機[ephemeral]裝備加入手牌並施加-[effect0.upgrade.costreduction][ember]。",
+        "korean": "[ephemeral] 효과가 있는 무작위 장비를 패에 추가하고, -[effect0.upgrade.costreduction][ember]을 적용합니다.",
+        "japanese": "手札に[ephemeral]のランダムな装備品を追加し、-[effect0.upgrade.costreduction][ember]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassUnderlegion",
+      "effects": [
+        "@Truffles.effects0.paramCharacterData.unitAbility.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Mary Ngai-Virgo"
+  "traits": [
+    {
+      "id": "Truffles.effects0.paramCharacterData.unitAbility.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitEphemeral",
+      "trait_is_removable": false
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterTruffles",
+      "names": {
+        "key": "CharacterData_nameKey-d6e94c75453eb53e-4314b99bab215ff4893c8b2733caebdd-v2",
+        "english": "Truffles",
+        "french": "Truffe",
+        "german": "Trüffler",
+        "russian": "Трюфель",
+        "portuguese": "Trufas",
+        "chinese": "松露犬",
+        "spanish": "Trufa",
+        "chinese_traditional": "松露",
+        "korean": "트뤼플스",
+        "japanese": "トリュフ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-a07f5e7d68302836-4314b99bab215ff4893c8b2733caebdd-v2",
+          "english": "“Mush-woof!”",
+          "french": "<nobr>« Champi-wouf ! »</nobr>",
+          "german": "„Pilz-Wuff!“",
+          "russian": "«Гри-и-и-гав!»",
+          "portuguese": "“Cogu-au!”",
+          "chinese": "“蘑——汪！”",
+          "spanish": "«¡Champiguau!».",
+          "chinese_traditional": "「菇菇——汪！」",
+          "korean": "\"왕왕!\"",
+          "japanese": "「キノコ、ワオン！」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Truffles.prefab",
+        "m_AssetGUID": "91fc3c5a71ff317498405c8f769ba1b0"
+      },
+      "ability": "@Truffles.effects0.paramCharacterData.unitAbility",
+      "size": 1,
+      "health": 5,
+      "attack_damage": 5,
+      "subtypes": [
+        "SubtypesData_Shroom"
+      ],
+      "chatter": "UnderlegionTrufflesChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "Truffles.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectAddBattleCard",
+      "param_upgrade": "FetchCostReduction",
+      "param_int": 3,
+      "param_int_2": 1,
+      "param_bool": true,
+      "param_card_pool": "FreeEquipmentMutatorPool"
+    },
+    {
+      "id": "Truffles.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterTruffles"
+    }
+  ]
 }

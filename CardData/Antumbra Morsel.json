@@ -1,105 +1,120 @@
 {
-  "id": "ShadowMorsel",
-  "guid": "0347419a-2e3a-492d-a054-f6e340be3db2",
-  "name": "Antumbra Morsel",
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "Class5Food",
-    "Class5StarterFoodCard"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ShadowMorsel.prefab",
-    "m_AssetGUID": "10c705429e1c673418407d36eda713ab"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MorselShadowMorsel",
-        "guid": "fd7e0f91-c2ff-4f6d-a548-2e387c168577",
-        "nameKey": {
-          "key": "CharacterData_nameKey-5a4f54cc4e0739ad-91bff760f73827642b73e6aacef9c4c8-v2",
-          "english": "Antumbra Morsel",
-          "french": "Sous-bistre antumbra",
-          "german": "Antumbra-Nugget",
-          "russian": "Сумрачный заморыш",
-          "portuguese": "Lancho Antumbra",
-          "chinese": "影者影裔",
-          "spanish": "Pincho de Antumbra",
-          "chinese_traditional": "反暗影莫塞爾",
-          "korean": "외부 어스름 그림자",
-          "japanese": "アントアンブラ・モーゼル"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-892dd5a945dcdf3e-91bff760f73827642b73e6aacef9c4c8-v2",
-            "english": "These precursors of the souls of Hell, called Antumbra, are fragments of the Umbra Shroud. Their friendly personalities make them my constant companions anytime I travel to the Crucible.",
-            "french": "Précurseurs des âmes de l'enfer, les Antumbras sont des fragments du Suaire umbra. En raison de leur personnalité amicale, je fais d'eux mes compagnons de choix chaque fois que je me rends au creuset.",
-            "german": "Diese Vorläufer der Seelen der Hölle werden Antumbra genannt. Sie sind Fragmente der Umbra-Mantelwesen. Weil sie so freundlich sind, habe ich sie gerne auf all meinen Reisen zum Schmelztiegel dabei.",
-            "russian": "Эти малые души Ада, называемые Сумрачными, входят в состав Завесы Мрака. Они дружелюбны и составляют мне компанию всякий раз, когда я посещаю Горнило.",
-            "portuguese": "Esses precursores das almas do Inferno, chamados de Antumbra, são fragmentos do Sombrio Velado. Suas personalidades simpáticas fazem deles minha companhia constante quando viajo para o Crisol.",
-            "chinese": "这些地狱灵魂的前身被称为影者，是影主氏族雾影的碎片。它们的性格友善，每当我去熔炉之地的时候，它们都会成为我忠诚的伙伴。",
-            "spanish": "Estos precursores de las almas del Infierno, conocidos como Antumbra, son fragmentos del Velo de Umbra. Su personalidad amistosa los convierte en compañeros constantes durante mis viajes por el Crisol.",
-            "chinese_traditional": "這些地獄靈魂的前驅被稱為影者，是黑暗幽影的碎片。他們友好的性格使他們成為我在地獄熔爐旅行時的常伴。",
-            "korean": "지옥 영혼의 선구자라 불리는 외부 어스름 일족은 어스름 장막의 파편에 가까운 존재다. 친밀한 성격을 지닌 이들 덕분에, 도가니를 찾아갈 때마다 늘 함께 이동한다.",
-            "japanese": "アントアンブラと呼ばれる地獄の魂の先駆者たちは、アンブラ・シュラウドの破片だ。彼らは友好的な性格なので、私がクルーシブルに行くときはいつも一緒に行動することにしている。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShadowMorsel.prefab",
-          "m_AssetGUID": "9a29746b88b448a44a4c34a8d947aefb"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-da87b665853af570-91bff760f73827642b73e6aacef9c4c8-v2",
-              "english": "Eater gains +[effect0.upgrade.bonushp][health].",
-              "french": "Le mangeur gagne +[effect0.upgrade.bonushp][health].",
-              "german": "Der Verschlinger erhält +[effect0.upgrade.bonushp][health].",
-              "russian": "Поглотитель получает +[effect0.upgrade.bonushp][health].",
-              "portuguese": "O Devorador recebe +[effect0.upgrade.bonushp][health].",
-              "chinese": "吞食者获得 +[effect0.upgrade.bonushp][health]。",
-              "spanish": "Su devorador añade +[effect0.upgrade.bonushp][health].",
-              "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonushp][health]。",
-              "korean": "포식자가 +[effect0.upgrade.bonushp][health]을 획득합니다.",
-              "japanese": "捕食者が+[effect0.upgrade.bonushp][health]を得る。"
-            },
-            "trigger": "on_eaten",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-                "targetMode": "last_feeder_character",
-                "targetTeamType": "both",
-                "paramCardUpgradeData": {
-                  "id": "ShadowMorselTrigger",
-                  "guid": "477e608b-5764-4619-acb3-aaad2eee5be1",
-                  "bonusHP": 9
-                }
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 9,
-        "attackDamage": 0,
-        "subtypeKeys": [
-          "SubtypesData_Snack"
-        ],
-        "characterChatterData": "UmbraMorselChatterData"
-      }
+      "id": "ShadowMorsel",
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassUmbra",
+      "pools": [
+        "Class5Food",
+        "Class5StarterFoodCard"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_ShadowMorsel.prefab",
+        "m_AssetGUID": "10c705429e1c673418407d36eda713ab"
+      },
+      "effects": [
+        "@ShadowMorsel.effects0"
+      ],
+      "targetless": false,
+      "ignore_when_counting_mastery": true,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Anita Tung"
     }
   ],
-  "targetless": false,
-  "ignoreWhenCountingMastery": true,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Anita Tung"
+  "characters": [
+    {
+      "id": "MorselShadowMorsel",
+      "names": {
+        "key": "CharacterData_nameKey-5a4f54cc4e0739ad-91bff760f73827642b73e6aacef9c4c8-v2",
+        "english": "Antumbra Morsel",
+        "french": "Sous-bistre antumbra",
+        "german": "Antumbra-Nugget",
+        "russian": "Сумрачный заморыш",
+        "portuguese": "Lancho Antumbra",
+        "chinese": "影者影裔",
+        "spanish": "Pincho de Antumbra",
+        "chinese_traditional": "反暗影莫塞爾",
+        "korean": "외부 어스름 그림자",
+        "japanese": "アントアンブラ・モーゼル"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-892dd5a945dcdf3e-91bff760f73827642b73e6aacef9c4c8-v2",
+          "english": "These precursors of the souls of Hell, called Antumbra, are fragments of the Umbra Shroud. Their friendly personalities make them my constant companions anytime I travel to the Crucible.",
+          "french": "Précurseurs des âmes de l'enfer, les Antumbras sont des fragments du Suaire umbra. En raison de leur personnalité amicale, je fais d'eux mes compagnons de choix chaque fois que je me rends au creuset.",
+          "german": "Diese Vorläufer der Seelen der Hölle werden Antumbra genannt. Sie sind Fragmente der Umbra-Mantelwesen. Weil sie so freundlich sind, habe ich sie gerne auf all meinen Reisen zum Schmelztiegel dabei.",
+          "russian": "Эти малые души Ада, называемые Сумрачными, входят в состав Завесы Мрака. Они дружелюбны и составляют мне компанию всякий раз, когда я посещаю Горнило.",
+          "portuguese": "Esses precursores das almas do Inferno, chamados de Antumbra, são fragmentos do Sombrio Velado. Suas personalidades simpáticas fazem deles minha companhia constante quando viajo para o Crisol.",
+          "chinese": "这些地狱灵魂的前身被称为影者，是影主氏族雾影的碎片。它们的性格友善，每当我去熔炉之地的时候，它们都会成为我忠诚的伙伴。",
+          "spanish": "Estos precursores de las almas del Infierno, conocidos como Antumbra, son fragmentos del Velo de Umbra. Su personalidad amistosa los convierte en compañeros constantes durante mis viajes por el Crisol.",
+          "chinese_traditional": "這些地獄靈魂的前驅被稱為影者，是黑暗幽影的碎片。他們友好的性格使他們成為我在地獄熔爐旅行時的常伴。",
+          "korean": "지옥 영혼의 선구자라 불리는 외부 어스름 일족은 어스름 장막의 파편에 가까운 존재다. 친밀한 성격을 지닌 이들 덕분에, 도가니를 찾아갈 때마다 늘 함께 이동한다.",
+          "japanese": "アントアンブラと呼ばれる地獄の魂の先駆者たちは、アンブラ・シュラウドの破片だ。彼らは友好的な性格なので、私がクルーシブルに行くときはいつも一緒に行動することにしている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ShadowMorsel.prefab",
+        "m_AssetGUID": "9a29746b88b448a44a4c34a8d947aefb"
+      },
+      "impact_vfx": "@ShadowMorsel.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@ShadowMorsel.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 9,
+      "attack_damage": 0,
+      "subtypes": [
+        "SubtypesData_Snack"
+      ],
+      "chatter": "UmbraMorselChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ShadowMorsel.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-da87b665853af570-91bff760f73827642b73e6aacef9c4c8-v2",
+        "english": "Eater gains +[effect0.upgrade.bonushp][health].",
+        "french": "Le mangeur gagne +[effect0.upgrade.bonushp][health].",
+        "german": "Der Verschlinger erhält +[effect0.upgrade.bonushp][health].",
+        "russian": "Поглотитель получает +[effect0.upgrade.bonushp][health].",
+        "portuguese": "O Devorador recebe +[effect0.upgrade.bonushp][health].",
+        "chinese": "吞食者获得 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Su devorador añade +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "吞噬者獲得+[effect0.upgrade.bonushp][health]。",
+        "korean": "포식자가 +[effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "捕食者が+[effect0.upgrade.bonushp][health]を得る。"
+      },
+      "trigger": "on_eaten",
+      "effects": [
+        "@ShadowMorsel.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ShadowMorsel.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "last_feeder_character",
+      "target_team": "both",
+      "param_upgrade": "ShadowMorselTrigger"
+    },
+    {
+      "id": "ShadowMorsel.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MorselShadowMorsel"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "ShadowMorsel.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,149 +1,170 @@
 {
-  "id": "BrainTransfer",
-  "guid": "560b9623-f130-4848-9f9f-56cc6e8bf19e",
-  "name": "Brain Transfer",
-  "nameKey": {
-    "key": "CardData_nameKey-c703a0aacc186754-7213b504983c7f842aa5e828d7ee90d1-v2",
-    "english": "Brain Transfer",
-    "french": "Transfert de cerveau",
-    "german": "Gehirnübertragung",
-    "russian": "Пересадка мозга",
-    "portuguese": "Transferência Cerebral",
-    "chinese": "大脑转移",
-    "spanish": "Transferencia de cerebro",
-    "chinese_traditional": "大腦轉移",
-    "korean": "뇌 이식",
-    "japanese": "脳移植"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-aa27bc7346afc104-7213b504983c7f842aa5e828d7ee90d1-v2",
-    "english": "Transfer [attack] and all [buff] and [debuff] effects to front friendly unit.",
-    "french": "Transfère l'[attack] et tous les effets de [buff] et [debuff] vers l'allié en 1re ligne.",
-    "german": "Transferiere [attack] und alle [buff]- und [debuff]-Effekte zur vordersten verbündeten Einheit.",
-    "russian": "Переносит [attack], все <b>усиления</b> и <b>ослабления </b> на переднего союзника.",
-    "portuguese": "Transfere [attack] e todos os efeitos de [buff] e [debuff] para a unidade aliada à frente.",
-    "chinese": "将 [attack] 和所有 [buff] 以及 [debuff] 效果转移到前排友方单位。",
-    "spanish": "Transfiere el [attack] y todos los [buff] y [debuff] a la primera unidad aliada.",
-    "chinese_traditional": "將[attack]和所有[buff]和[debuff]效果轉移到前排友方單位。",
-    "korean": "전열 아군 유닛에 [attack] 수치와 모든 [buff] 및 [debuff] 효과를 옮깁니다.",
-    "japanese": "[attack]とすべての[buff]と[debuff]効果を前列の味方ユニットに移す。"
-  },
-  "cardLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "key": "CardData_data-f42d4adc67dfbd71-7213b504983c7f842aa5e828d7ee90d1-v2",
-      "english": "“While a body can still be usable if preserved correctly, brain matter must be transferred to a host within hours.”\n—from Dr. Orechi’s notebook",
-      "french": "<nobr>« Bien</nobr> que le corps puisse être réutilisé sans problème s'il est correctement conservé, la matière cérébrale doit être transférée à un hôte très rapidement pour pouvoir fonctionner.\n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
-      "german": "„Während Körper nach korrekter Konservierung noch verwendbar sein können, muss Hirnmasse innerhalb von wenigen Stunden auf einen Wirt übertragen werden.“\n– aus Dr. Orechis Notizbuch",
-      "russian": "«Если в правильно подобранных условиях тело еще можно хранить, то мозг необходимо пересаживать в считанные часы».\n— Из записной книжки Оречи",
-      "portuguese": "“Embora um corpo ainda possa ser utilizado se preservado corretamente, a matéria cerebral deve ser transferida para um hospedeiro em poucas horas.”\n— Anotação do Dr. Orechi",
-      "chinese": "“虽然保存得当的躯体在很久之后依然可以使用，但脑部物质必须在几个小时内转移给受体。”\n——摘自奥莱奇博士的笔记本",
-      "spanish": "«Aunque el cuerpo puede usarse libremente si se conserva correctamente, la materia gris debe transferirse a un nuevo huésped en unas horas».\n—Cuaderno del Dr. Orechi",
-      "chinese_traditional": "「雖然如果正確保存，身體仍然可以使用，但腦物質必須在幾個小時內轉移到宿主體內。」\n——摘自奧雷奇博士的筆記本",
-      "korean": "“육체는 온전히 보존하면 언제든 사용할 수 있지만, 뇌 조직은 몇 시간 내에 숙주로 옮겨야 한다.”\n- 오레치 박사의 기록",
-      "japanese": "「身体は適切に保存すれば活用することができる。しかし、脳の物質は数時間以内に宿主に移植しなければならん」\n—ドクター・オレチのメモ帳より"
-    }
-  ],
-  "cost": 2,
-  "cardType": "spell",
-  "rarity": "rare",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaPool",
-    "UnitsLazarusLeagueBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_BrainTransfer.prefab",
-    "m_AssetGUID": "00ff31926505d804598e4030e612cae2"
-  },
-  "effects": [
-    {
-      "effectStateName": "CardEffectSacrifice",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "monsters"
-    },
-    {
-      "effectStateName": "CardEffectTransferAllStatusEffectsFromUnit",
-      "targetMode": "last_sacrificed_character",
-      "targetTeamType": "monsters",
-      "additionalTooltips": [
+      "id": "BrainTransfer",
+      "names": {
+        "key": "CardData_nameKey-c703a0aacc186754-7213b504983c7f842aa5e828d7ee90d1-v2",
+        "english": "Brain Transfer",
+        "french": "Transfert de cerveau",
+        "german": "Gehirnübertragung",
+        "russian": "Пересадка мозга",
+        "portuguese": "Transferência Cerebral",
+        "chinese": "大脑转移",
+        "spanish": "Transferencia de cerebro",
+        "chinese_traditional": "大腦轉移",
+        "korean": "뇌 이식",
+        "japanese": "脳移植"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-aa27bc7346afc104-7213b504983c7f842aa5e828d7ee90d1-v2",
+        "english": "Transfer [attack] and all [buff] and [debuff] effects to front friendly unit.",
+        "french": "Transfère l'[attack] et tous les effets de [buff] et [debuff] vers l'allié en 1re ligne.",
+        "german": "Transferiere [attack] und alle [buff]- und [debuff]-Effekte zur vordersten verbündeten Einheit.",
+        "russian": "Переносит [attack], все <b>усиления</b> и <b>ослабления </b> на переднего союзника.",
+        "portuguese": "Transfere [attack] e todos os efeitos de [buff] e [debuff] para a unidade aliada à frente.",
+        "chinese": "将 [attack] 和所有 [buff] 以及 [debuff] 效果转移到前排友方单位。",
+        "spanish": "Transfiere el [attack] y todos los [buff] y [debuff] a la primera unidad aliada.",
+        "chinese_traditional": "將[attack]和所有[buff]和[debuff]效果轉移到前排友方單位。",
+        "korean": "전열 아군 유닛에 [attack] 수치와 모든 [buff] 및 [debuff] 효과를 옮깁니다.",
+        "japanese": "[attack]とすべての[buff]と[debuff]効果を前列の味方ユニットに移す。"
+      },
+      "lore_tooltips": [
         {
-          "descriptionKey": {
-            "key": "CardEffectBuff_TooltipText",
-            "english": "Buff effects are generally positive for their target and are represented by green icons.",
-            "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
-            "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
-            "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
-            "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
-            "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
-            "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
-            "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
-            "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
-            "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectBuff_TooltipTitle",
-            "english": "Buff",
-            "french": "Bonus",
-            "german": "Buff",
-            "russian": "Усиление",
-            "portuguese": "Buff",
-            "chinese": "增益",
-            "spanish": "Potenciación",
-            "chinese_traditional": "增益",
-            "korean": "버프",
-            "japanese": "バフ"
-          },
-          "style": "positive"
-        },
-        {
-          "descriptionKey": {
-            "key": "CardEffectDebuff_TooltipText",
-            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
-            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
-            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
-            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
-            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
-            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
-            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
-            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
-            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
-            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectDebuff_TooltipTitle",
-            "english": "Debuff",
-            "french": "Malus",
-            "german": "Debuff",
-            "russian": "Ослабление",
-            "portuguese": "Debuff",
-            "chinese": "减益",
-            "spanish": "Debilitación",
-            "chinese_traditional": "減益",
-            "korean": "디버프",
-            "japanese": "デバフ"
-          },
-          "style": "negative"
+          "key": "CardData_data-f42d4adc67dfbd71-7213b504983c7f842aa5e828d7ee90d1-v2",
+          "english": "“While a body can still be usable if preserved correctly, brain matter must be transferred to a host within hours.”\n—from Dr. Orechi’s notebook",
+          "french": "<nobr>« Bien</nobr> que le corps puisse être réutilisé sans problème s'il est correctement conservé, la matière cérébrale doit être transférée à un hôte très rapidement pour pouvoir fonctionner.\n— Extrait du carnet du <nobr>Dr Orechi</nobr>",
+          "german": "„Während Körper nach korrekter Konservierung noch verwendbar sein können, muss Hirnmasse innerhalb von wenigen Stunden auf einen Wirt übertragen werden.“\n– aus Dr. Orechis Notizbuch",
+          "russian": "«Если в правильно подобранных условиях тело еще можно хранить, то мозг необходимо пересаживать в считанные часы».\n— Из записной книжки Оречи",
+          "portuguese": "“Embora um corpo ainda possa ser utilizado se preservado corretamente, a matéria cerebral deve ser transferida para um hospedeiro em poucas horas.”\n— Anotação do Dr. Orechi",
+          "chinese": "“虽然保存得当的躯体在很久之后依然可以使用，但脑部物质必须在几个小时内转移给受体。”\n——摘自奥莱奇博士的笔记本",
+          "spanish": "«Aunque el cuerpo puede usarse libremente si se conserva correctamente, la materia gris debe transferirse a un nuevo huésped en unas horas».\n—Cuaderno del Dr. Orechi",
+          "chinese_traditional": "「雖然如果正確保存，身體仍然可以使用，但腦物質必須在幾個小時內轉移到宿主體內。」\n——摘自奧雷奇博士的筆記本",
+          "korean": "“육체는 온전히 보존하면 언제든 사용할 수 있지만, 뇌 조직은 몇 시간 내에 숙주로 옮겨야 한다.”\n- 오레치 박사의 기록",
+          "japanese": "「身体は適切に保存すれば活用することができる。しかし、脳の物質は数時間以内に宿主に移植しなければならん」\n—ドクター・オレチのメモ帳より"
         }
       ],
-      "shouldTest": false,
-      "paramInt": 2,
-      "appliedToSelfVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Spells/LazarusLeague/BrainTransfer/FX_BrainTransfer.prefab",
-          "m_AssetGUID": "3b051ebb70bf7264aa2eae7be2135f7b"
-        },
-        "spawnLocation": "character_center"
-      }
-    },
-    {
-      "effectStateName": "CardEffectTransferAttackFromUnit",
-      "targetMode": "last_sacrificed_character",
-      "targetTeamType": "monsters",
-      "shouldTest": false
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "rare",
+      "class": "ClassLazarusLeague",
+      "pools": [
+        "MegaPool",
+        "UnitsLazarusLeagueBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_BrainTransfer.prefab",
+        "m_AssetGUID": "00ff31926505d804598e4030e612cae2"
+      },
+      "effects": [
+        "@BrainTransfer.effects0",
+        "@BrainTransfer.effects1",
+        "@BrainTransfer.effects2"
+      ],
+      "targetless": false,
+      "unlock_level": 2,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Hannah Lim"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 2,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Hannah Lim"
+  "effects": [
+    {
+      "id": "BrainTransfer.effects0",
+      "name": "CardEffectSacrifice",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters"
+    },
+    {
+      "id": "BrainTransfer.effects1",
+      "name": "CardEffectTransferAllStatusEffectsFromUnit",
+      "target_mode": "last_sacrificed_character",
+      "target_team": "monsters",
+      "additional_tooltips": [
+        "@BrainTransfer.effects1.additionalTooltips0",
+        "@BrainTransfer.effects1.additionalTooltips1"
+      ],
+      "should_test": false,
+      "param_int": 2,
+      "applied_to_self_vfx": "@BrainTransfer.effects1.appliedToSelfVFX"
+    },
+    {
+      "id": "BrainTransfer.effects2",
+      "name": "CardEffectTransferAttackFromUnit",
+      "target_mode": "last_sacrificed_character",
+      "target_team": "monsters",
+      "should_test": false
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "BrainTransfer.effects1.additionalTooltips0",
+      "descriptions": {
+        "key": "CardEffectBuff_TooltipText",
+        "english": "Buff effects are generally positive for their target and are represented by green icons.",
+        "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+        "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+        "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+        "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+        "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+        "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+        "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+        "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+        "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectBuff_TooltipTitle",
+        "english": "Buff",
+        "french": "Bonus",
+        "german": "Buff",
+        "russian": "Усиление",
+        "portuguese": "Buff",
+        "chinese": "增益",
+        "spanish": "Potenciación",
+        "chinese_traditional": "增益",
+        "korean": "버프",
+        "japanese": "バフ"
+      },
+      "style": "positive"
+    },
+    {
+      "id": "BrainTransfer.effects1.additionalTooltips1",
+      "descriptions": {
+        "key": "CardEffectDebuff_TooltipText",
+        "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+        "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+        "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+        "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+        "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+        "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+        "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+        "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+        "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+        "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectDebuff_TooltipTitle",
+        "english": "Debuff",
+        "french": "Malus",
+        "german": "Debuff",
+        "russian": "Ослабление",
+        "portuguese": "Debuff",
+        "chinese": "减益",
+        "spanish": "Debilitación",
+        "chinese_traditional": "減益",
+        "korean": "디버프",
+        "japanese": "デバフ"
+      },
+      "style": "negative"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "BrainTransfer.effects1.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Spells/LazarusLeague/BrainTransfer/FX_BrainTransfer.prefab",
+        "m_AssetGUID": "3b051ebb70bf7264aa2eae7be2135f7b"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

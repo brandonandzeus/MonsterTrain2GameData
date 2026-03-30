@@ -1,161 +1,182 @@
 {
-  "id": "GoldyWhelp",
-  "guid": "5fcb0af2-7bab-4998-94c9-e74a828fff01",
-  "name": "Wealthy Whelp",
-  "overrideDescriptionKey": "CardData_overrideDescriptionKey-be381b0bea03d2a1-4da3f7f66313f3a41bfde47e7c7269b7-v2",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "MegaPool",
-    "UnitsPyreborneBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_GoldyWhelp.prefab",
-    "m_AssetGUID": "c27acd953c086934d8f327e0688c7a3d"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterGoldyWhelp",
-        "guid": "b512803f-8a26-4b51-a446-8ffad8b9462b",
-        "nameKey": {
-          "key": "CharacterData_nameKey-a71e0be5d9ec9703-cc04db781d317a141b2b8a51b9abc448-v2",
-          "english": "Wealthy Whelp",
-          "french": "Dragonnet nanti",
-          "german": "Reicher Zögling",
-          "russian": "Богатый дракончик",
-          "portuguese": "Filhote Abastado",
-          "chinese": "土豪幼龙",
-          "spanish": "Cría adinerada",
-          "chinese_traditional": "富有幼龍",
-          "korean": "부유한 해츨링",
-          "japanese": "裕福な小竜"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-3ef39e19ec65ea08-cc04db781d317a141b2b8a51b9abc448-v2",
-            "english": "Keen business dragons with an eye for all that sparkle. They hold their coins close to their chest.",
-            "french": "Des dragons qui ont l'œil pour tout ce qui brille. Ils gardent toujours leurs trésors sur eux.",
-            "german": "Eifrige Geschäftsdrachen mit einem Auge für alles Glitzernde. Sie tragen ihre Münzen stets nahe am Herzen.",
-            "russian": "Увлеченные бизнесом драконы, которым нравится все, что блестит. Хорошенько прячут свои монеты.",
-            "portuguese": "Dragões de negócios ávidos e atentos a tudo o que brilha. Eles guardam suas moedas bem perto do peito.",
-            "chinese": "热衷于做生意的龙族，对一切闪闪发光的东西情有独钟。金币就是他们的命根子。",
-            "spanish": "Astutos dragones de negocios con buen ojo para todo lo que reluce. No se separan de su dinero.",
-            "chinese_traditional": "有著精明商業頭腦的龍族，對閃閃發光的東西都特別在意。他們的錢不隨便與人分享。",
-            "korean": "반짝이는 모든 것에 눈독을 들이는 사업 수완이 좋은 드래곤. 이들은 언제나 동전을 가슴 가까이에 두고 있다.",
-            "japanese": "輝くものすべてに目を光らせる鋭い事業家の竜。金貨を肌見離さず持ち歩いている。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GoldyWhelp.prefab",
-          "m_AssetGUID": "5b68ec9cbec568a4397d455d3a19c687"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "unitAbility": {
-          "id": "GoldmanceAbility",
-          "guid": "ac258de8-8765-4856-87c2-03868ebbf27e",
-          "nameKey": {
-            "key": "CardData_nameKey-3d8352e260d6c759-fb45937e8eacfb948914542d0ffb0800-v2",
-            "english": "Moneymaker",
-            "french": "Spéculateur",
-            "german": "Geldmaschine",
-            "russian": "Деньготворец",
-            "portuguese": "Faturando Alto",
-            "chinese": "赚钱高手",
-            "spanish": "Mina de oro",
-            "chinese_traditional": "錢來也",
-            "korean": "고수익",
-            "japanese": "金稼ぎ"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-b868c32e31b84e42-fb45937e8eacfb948914542d0ffb0800-v2",
-            "english": "Gain [effect0.power] [coin] for each [dragonshoardicon]. ",
-            "french": "Octroie [effect0.power] [coin] par [dragonshoardicon].",
-            "german": "Erhalte [effect0.power] [coin] pro [dragonshoardicon].",
-            "russian": "Дает [effect0.power] [coin] за каждый [dragonshoardicon].",
-            "portuguese": "Recebe [effect0.power] [coin] para cada [dragonshoardicon]. ",
-            "chinese": "每有一个[dragonshoardicon]就获得[effect0.power] [coin]。",
-            "spanish": "Obtienes [effect0.power] [coin] por cada [dragonshoardicon].",
-            "chinese_traditional": "每有一個[dragonshoardicon]獲得[effect0.power][coin]。",
-            "korean": "[dragonshoardicon] 하나당 [effect0.power] [coin]를 획득합니다.",
-            "japanese": "[dragonshoardicon]1つにつき[effect0.power] [coin]を得る。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "linkedClass": "ClassPyreborne",
-          "cardArtPrefabVariantRef": {
-            "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_GoldmanceAbility.prefab",
-            "m_AssetGUID": "f85974cb278ba1b4c8154459bd164282"
-          },
-          "effects": [
-            {
-              "effectStateName": "CardEffectRewardGoldPerDragonHoard",
-              "additionalTooltips": [
-                {
-                  "descriptionKey": {
-                    "key": "HudTooltip_DragonsHoardInactive_Body",
-                    "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
-                    "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
-                    "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
-                    "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
-                    "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
-                    "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
-                    "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
-                    "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
-                    "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
-                    "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
-                  },
-                  "titleKey": {
-                    "key": "HudTooltip_DragonsHoard_Title",
-                    "english": "[dragonshoardicon]Dragon's Hoard",
-                    "french": "[dragonshoardicon]Trésor du dragon",
-                    "german": "[dragonshoardicon]Drachenschatz",
-                    "russian": "[dragonshoardicon] Драконий клад",
-                    "portuguese": "[dragonshoardicon]Tesouro do Dragão",
-                    "chinese": "[dragonshoardicon]龙族宝藏",
-                    "spanish": "[dragonshoardicon]Tesoro de dragón",
-                    "chinese_traditional": "[dragonshoardicon]龍之寶藏",
-                    "korean": "[dragonshoardicon]드래곤의 재보",
-                    "japanese": "竜の財宝[dragonshoardicon]"
-                  },
-                  "style": "default"
-                }
-              ],
-              "paramInt": 5,
-              "appliedToSelfVFX": {
-                "vfxPrefabRefLeft": {
-                  "m_debugName": "Assets/VFX/Abilities/Goldmance/FX_Goldmance.prefab",
-                  "m_AssetGUID": "36df5437293517a40bb98754163ab3f9"
-                },
-                "spawnLocation": "character_center"
-              }
-            }
-          ],
-          "cooldownAfterActivated": 2,
-          "isUnitAbility": true,
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "size": 1,
-        "health": 1,
-        "ascendsTrainAutomatically": false,
-        "attackDamage": 4,
-        "subtypeKeys": [
-          "SubtypesData_Whelp"
-        ],
-        "characterChatterData": "PyreborneWhelpChatterData"
-      }
+      "id": "GoldyWhelp",
+      "descriptions": "CardData_overrideDescriptionKey-be381b0bea03d2a1-4da3f7f66313f3a41bfde47e7c7269b7-v2",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassPyreborne",
+      "pools": [
+        "MegaPool",
+        "UnitsPyreborneBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_GoldyWhelp.prefab",
+        "m_AssetGUID": "c27acd953c086934d8f327e0688c7a3d"
+      },
+      "effects": [
+        "@GoldyWhelp.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Loy Bouttamy"
+    },
+    {
+      "id": "GoldyWhelp.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-3d8352e260d6c759-fb45937e8eacfb948914542d0ffb0800-v2",
+        "english": "Moneymaker",
+        "french": "Spéculateur",
+        "german": "Geldmaschine",
+        "russian": "Деньготворец",
+        "portuguese": "Faturando Alto",
+        "chinese": "赚钱高手",
+        "spanish": "Mina de oro",
+        "chinese_traditional": "錢來也",
+        "korean": "고수익",
+        "japanese": "金稼ぎ"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-b868c32e31b84e42-fb45937e8eacfb948914542d0ffb0800-v2",
+        "english": "Gain [effect0.power] [coin] for each [dragonshoardicon]. ",
+        "french": "Octroie [effect0.power] [coin] par [dragonshoardicon].",
+        "german": "Erhalte [effect0.power] [coin] pro [dragonshoardicon].",
+        "russian": "Дает [effect0.power] [coin] за каждый [dragonshoardicon].",
+        "portuguese": "Recebe [effect0.power] [coin] para cada [dragonshoardicon]. ",
+        "chinese": "每有一个[dragonshoardicon]就获得[effect0.power] [coin]。",
+        "spanish": "Obtienes [effect0.power] [coin] por cada [dragonshoardicon].",
+        "chinese_traditional": "每有一個[dragonshoardicon]獲得[effect0.power][coin]。",
+        "korean": "[dragonshoardicon] 하나당 [effect0.power] [coin]를 획득합니다.",
+        "japanese": "[dragonshoardicon]1つにつき[effect0.power] [coin]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPyreborne",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_GoldmanceAbility.prefab",
+        "m_AssetGUID": "f85974cb278ba1b4c8154459bd164282"
+      },
+      "effects": [
+        "@GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Loy Bouttamy"
+  "characters": [
+    {
+      "id": "MonsterGoldyWhelp",
+      "names": {
+        "key": "CharacterData_nameKey-a71e0be5d9ec9703-cc04db781d317a141b2b8a51b9abc448-v2",
+        "english": "Wealthy Whelp",
+        "french": "Dragonnet nanti",
+        "german": "Reicher Zögling",
+        "russian": "Богатый дракончик",
+        "portuguese": "Filhote Abastado",
+        "chinese": "土豪幼龙",
+        "spanish": "Cría adinerada",
+        "chinese_traditional": "富有幼龍",
+        "korean": "부유한 해츨링",
+        "japanese": "裕福な小竜"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-3ef39e19ec65ea08-cc04db781d317a141b2b8a51b9abc448-v2",
+          "english": "Keen business dragons with an eye for all that sparkle. They hold their coins close to their chest.",
+          "french": "Des dragons qui ont l'œil pour tout ce qui brille. Ils gardent toujours leurs trésors sur eux.",
+          "german": "Eifrige Geschäftsdrachen mit einem Auge für alles Glitzernde. Sie tragen ihre Münzen stets nahe am Herzen.",
+          "russian": "Увлеченные бизнесом драконы, которым нравится все, что блестит. Хорошенько прячут свои монеты.",
+          "portuguese": "Dragões de negócios ávidos e atentos a tudo o que brilha. Eles guardam suas moedas bem perto do peito.",
+          "chinese": "热衷于做生意的龙族，对一切闪闪发光的东西情有独钟。金币就是他们的命根子。",
+          "spanish": "Astutos dragones de negocios con buen ojo para todo lo que reluce. No se separan de su dinero.",
+          "chinese_traditional": "有著精明商業頭腦的龍族，對閃閃發光的東西都特別在意。他們的錢不隨便與人分享。",
+          "korean": "반짝이는 모든 것에 눈독을 들이는 사업 수완이 좋은 드래곤. 이들은 언제나 동전을 가슴 가까이에 두고 있다.",
+          "japanese": "輝くものすべてに目を光らせる鋭い事業家の竜。金貨を肌見離さず持ち歩いている。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GoldyWhelp.prefab",
+        "m_AssetGUID": "5b68ec9cbec568a4397d455d3a19c687"
+      },
+      "impact_vfx": "@GoldyWhelp.effects0.paramCharacterData.impactVFX",
+      "ability": "@GoldyWhelp.effects0.paramCharacterData.unitAbility",
+      "size": 1,
+      "health": 1,
+      "ascends_train_automatically": false,
+      "attack_damage": 4,
+      "subtypes": [
+        "SubtypesData_Whelp"
+      ],
+      "chatter": "PyreborneWhelpChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectRewardGoldPerDragonHoard",
+      "additional_tooltips": [
+        "@GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0.additionalTooltips0"
+      ],
+      "param_int": 5,
+      "applied_to_self_vfx": "@GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "GoldyWhelp.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterGoldyWhelp"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_DragonsHoardInactive_Body",
+        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+      },
+      "titles": {
+        "key": "HudTooltip_DragonsHoard_Title",
+        "english": "[dragonshoardicon]Dragon's Hoard",
+        "french": "[dragonshoardicon]Trésor du dragon",
+        "german": "[dragonshoardicon]Drachenschatz",
+        "russian": "[dragonshoardicon] Драконий клад",
+        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+        "chinese": "[dragonshoardicon]龙族宝藏",
+        "spanish": "[dragonshoardicon]Tesoro de dragón",
+        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+        "korean": "[dragonshoardicon]드래곤의 재보",
+        "japanese": "竜の財宝[dragonshoardicon]"
+      },
+      "style": "default"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "GoldyWhelp.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Abilities/Goldmance/FX_Goldmance.prefab",
+        "m_AssetGUID": "36df5437293517a40bb98754163ab3f9"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

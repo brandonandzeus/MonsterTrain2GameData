@@ -1,56 +1,66 @@
 {
-  "id": "SacrificialLambAbility3",
-  "guid": "7f2e369d-d698-44c1-9388-23ae1bf82899",
-  "name": "Sacrificial 3",
-  "nameKey": {
-    "key": "CardData_nameKey-ac2426235dc99873-39c83492c4ea5224098e589e40cc41e8-v2",
-    "english": "Sacrificial",
-    "french": "Sacrificiel",
-    "german": "Versuchskaninchen",
-    "russian": "Жертвенный агнец",
-    "portuguese": "Sacrificial",
-    "chinese": "献祭",
-    "spanish": "Sacrificio",
-    "chinese_traditional": "犧牲",
-    "korean": "희생 정신",
-    "japanese": "犠牲の精神"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-61766630682bc68b-39c83492c4ea5224098e589e40cc41e8-v2",
-    "english": "[sacrifice]. Gain [effect1.power][ember] and draw [effect2.power] cards.",
-    "french": "[sacrifice]. Vous gagnez [effect1.power][ember] et piochez <nobr>[effect2.power] cartes.</nobr>",
-    "german": "[sacrifice]. Erhalte [effect1.power][ember] und ziehe [effect2.power] Karte(n).",
-    "russian": "[sacrifice]. Получите [effect1.power][ember] и вытяните карты: [effect2.power].",
-    "portuguese": "<b>Sacrifica</b>. Recebe [effect1.power][ember] e compra [effect2.power] cartas.",
-    "chinese": "[sacrifice]。获得 [effect1.power][ember] 并抽 [effect2.power] 张牌。",
-    "spanish": "[sacrifice]. Obtienes [effect1.power][ember]. Roba [effect2.power] cartas.",
-    "chinese_traditional": "[sacrifice]。獲得[effect1.power][ember]並抽[effect2.power]張牌。",
-    "korean": "[sacrifice]. [effect1.power][ember]을 획득하고 카드 [effect2.power]장을 뽑습니다.",
-    "japanese": "[sacrifice]。[effect1.power][ember]を得る。さらに、カードを[effect2.power]枚ドローする。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
-    "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSacrifice",
-      "targetMode": "self",
-      "targetTeamType": "both",
-      "hideTooltip": true
-    },
-    {
-      "effectStateName": "CardEffectGainEnergy",
-      "paramInt": 4
-    },
-    {
-      "effectStateName": "CardEffectDraw",
-      "paramInt": 4
+      "id": "SacrificialLambAbility3",
+      "names": {
+        "key": "CardData_nameKey-ac2426235dc99873-39c83492c4ea5224098e589e40cc41e8-v2",
+        "english": "Sacrificial",
+        "french": "Sacrificiel",
+        "german": "Versuchskaninchen",
+        "russian": "Жертвенный агнец",
+        "portuguese": "Sacrificial",
+        "chinese": "献祭",
+        "spanish": "Sacrificio",
+        "chinese_traditional": "犧牲",
+        "korean": "희생 정신",
+        "japanese": "犠牲の精神"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-61766630682bc68b-39c83492c4ea5224098e589e40cc41e8-v2",
+        "english": "[sacrifice]. Gain [effect1.power][ember] and draw [effect2.power] cards.",
+        "french": "[sacrifice]. Vous gagnez [effect1.power][ember] et piochez <nobr>[effect2.power] cartes.</nobr>",
+        "german": "[sacrifice]. Erhalte [effect1.power][ember] und ziehe [effect2.power] Karte(n).",
+        "russian": "[sacrifice]. Получите [effect1.power][ember] и вытяните карты: [effect2.power].",
+        "portuguese": "<b>Sacrifica</b>. Recebe [effect1.power][ember] e compra [effect2.power] cartas.",
+        "chinese": "[sacrifice]。获得 [effect1.power][ember] 并抽 [effect2.power] 张牌。",
+        "spanish": "[sacrifice]. Obtienes [effect1.power][ember]. Roba [effect2.power] cartas.",
+        "chinese_traditional": "[sacrifice]。獲得[effect1.power][ember]並抽[effect2.power]張牌。",
+        "korean": "[sacrifice]. [effect1.power][ember]을 획득하고 카드 [effect2.power]장을 뽑습니다.",
+        "japanese": "[sacrifice]。[effect1.power][ember]を得る。さらに、カードを[effect2.power]枚ドローする。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
+        "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
+      },
+      "effects": [
+        "@SacrificialLambAbility3.effects0",
+        "@SacrificialLambAbility3.effects1",
+        "@SacrificialLambAbility3.effects2"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "SacrificialLambAbility3.effects0",
+      "name": "CardEffectSacrifice",
+      "target_mode": "self",
+      "hide_tooltip": true
+    },
+    {
+      "id": "SacrificialLambAbility3.effects1",
+      "name": "CardEffectGainEnergy",
+      "param_int": 4
+    },
+    {
+      "id": "SacrificialLambAbility3.effects2",
+      "name": "CardEffectDraw",
+      "param_int": 4
+    }
+  ]
 }

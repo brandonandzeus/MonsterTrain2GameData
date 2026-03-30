@@ -1,137 +1,143 @@
 {
-  "id": "Swordmaiden",
-  "guid": "d653e83e-3f70-419d-b3f9-4b920d5c9e56",
-  "name": "Swordmaiden",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsBanishedBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_VengefulSwordmaiden.prefab",
-    "m_AssetGUID": "2d7994f4360931c4b84ead1b27586b09"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterVengefulSwordmaiden",
-        "guid": "f58d2cb6-0c2c-42f5-98e2-69d4354d42c6",
-        "nameKey": {
-          "key": "CharacterData_nameKey-3be586ef4ba7a15a-3302764011b80644c9b785086b97090b-v2",
-          "english": "Swordmaiden",
-          "french": "Lamoiselle",
-          "german": "Schwertmaid",
-          "russian": "Мечница",
-          "portuguese": "Donzela da Espada",
-          "chinese": "持剑侍女",
-          "spanish": "Dama de la espada",
-          "chinese_traditional": "劍女",
-          "korean": "여전사",
-          "japanese": "ソードメイデン"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-b34930af86ad68e5-3302764011b80644c9b785086b97090b-v2",
-            "english": "When they begin their training, the Swordmaidens chain themselves to their swords. They grow and live with their weapons until it is as much a part of themselves as a limb.",
-            "french": "Au début de leur formation, les Lamoiselles s'enchaînent à leur épée. Elles grandissent et vivent avec leur arme jusqu'à ce que celle-ci devienne un membre à part entière.",
-            "german": "Wenn Schwertmaiden ihre Ausbildung beginnen, ketten sie sich selbst an ihre Schwerter. Sie wachsen und leben mit ihrer Waffe, bis sie wie eine weitere Gliedmaße zu ihnen gehört.",
-            "russian": "В начале обучения мечницы приковывают свои мечи к себе. Они живут и учатся, не разлучаясь с оружием, пока не овладеют им как собственной рукой.",
-            "portuguese": "Quando começam o treinamento, as Donzelas da Espada se acorrentam às suas lâminas. Elas crescem e vivem com armas até que se tornem parte de si mesmas, como se fossem parte de seu corpo.",
-            "chinese": "当持剑侍女开始训练时，她们会把自己和剑用锁链束缚在一起。她们和自己的武器一起成长，一起生活，直到剑变得像肢体一样成为自己的一部分。",
-            "spanish": "Cuando empiezan su entrenamiento, las damas de la espada se encadenan a sus armas. Crecen y viven con sus espadas hasta que se convierten en una extremidad más de su cuerpo.",
-            "chinese_traditional": "劍女在訓練時，會將自己鏈在劍上。她們與武器一起成長和生活，直到武器像肢體一樣成為她們的一部分。",
-            "korean": "여전사는 훈련을 시작함과 동시에 검과 몸을 하나로 묶는다. 이들은 신체가 성장하고 무기를 자기 손발처럼 휘두를 때까지 무기와 함께 살아간다.",
-            "japanese": "ソードメイデンたちは、訓練を始めると自らを剣に縛り付ける。そして、武器が自分の一部になるまで武器とともに成長し、生きていくのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_VengefulSwordmaiden.prefab",
-          "m_AssetGUID": "38062fe6139573642bc6be31c7f2a2ec"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-d858ea5b47ac546e-3302764011b80644c9b785086b97090b-v2",
-              "english": "Draw an equipment card from your deck.",
-              "french": "Piochez une carte d'équipement dans le deck.",
-              "german": "Ziehe eine Ausrüstungskarte aus deinem Deck.",
-              "russian": "Берет карту снаряжения из вашей колоды.",
-              "portuguese": "Compra uma carta de equipamento do seu deck.",
-              "chinese": "从你的卡组中抽一张装备卡。",
-              "spanish": "Roba una carta de equipo de tu mazo.",
-              "chinese_traditional": "從你的牌組中抽一張裝備卡。",
-              "korean": "덱에서 장비 카드를 뽑습니다.",
-              "japanese": "デッキから装備品カードをドローする。"
-            },
-            "trigger": "on_spawn",
-            "effects": [
-              {
-                "effectStateName": "CardEffectDrawType",
-                "targetCardType": "equipment",
-                "paramCardFilter": {
-                  "id": "OnlyEquipmentNoEnemyTargetted",
-                  "cardType": "equipment",
-                  "allowedCardPools": [
-                    "EquipmentPoolNonEnemy"
-                  ]
-                },
-                "paramCardFilterSecondary": {
-                  "id": "OnlyEquipmentEnemyTargetted",
-                  "cardType": "equipment",
-                  "allowedCardPools": [
-                    "EquipmentPoolEnemy"
-                  ]
-                },
-                "paramInt": 1
-              }
-            ]
-          },
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-8bab1d172def10da-3302764011b80644c9b785086b97090b-v2",
-              "english": "Gain [valor] [effect0.status0.power].",
-              "french": "Octroie [valor] [effect0.status0.power].",
-              "german": "Erhalte [valor] [effect0.status0.power].",
-              "russian": "Дает [effect0.status0.power] х[valor].",
-              "portuguese": "Recebe [valor] [effect0.status0.power].",
-              "chinese": "获得 [valor] [effect0.status0.power]。",
-              "spanish": "Añade [valor] [effect0.status0.power].",
-              "chinese_traditional": "獲得[valor][effect0.status0.power]。",
-              "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
-              "japanese": "[valor] [effect0.status0.power]を得る。"
-            },
-            "trigger": "on_equipment_added_to_any",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "self",
-                "targetTeamType": "monsters",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "valor",
-                    "count": 8
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 20,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Angel",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "BanishedAngelFemaleChatterData"
-      }
+      "id": "Swordmaiden",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassBanished",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsBanishedBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_VengefulSwordmaiden.prefab",
+        "m_AssetGUID": "2d7994f4360931c4b84ead1b27586b09"
+      },
+      "effects": [
+        "@Swordmaiden.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Genevieve Bega"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Genevieve Bega"
+  "characters": [
+    {
+      "id": "MonsterVengefulSwordmaiden",
+      "names": {
+        "key": "CharacterData_nameKey-3be586ef4ba7a15a-3302764011b80644c9b785086b97090b-v2",
+        "english": "Swordmaiden",
+        "french": "Lamoiselle",
+        "german": "Schwertmaid",
+        "russian": "Мечница",
+        "portuguese": "Donzela da Espada",
+        "chinese": "持剑侍女",
+        "spanish": "Dama de la espada",
+        "chinese_traditional": "劍女",
+        "korean": "여전사",
+        "japanese": "ソードメイデン"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-b34930af86ad68e5-3302764011b80644c9b785086b97090b-v2",
+          "english": "When they begin their training, the Swordmaidens chain themselves to their swords. They grow and live with their weapons until it is as much a part of themselves as a limb.",
+          "french": "Au début de leur formation, les Lamoiselles s'enchaînent à leur épée. Elles grandissent et vivent avec leur arme jusqu'à ce que celle-ci devienne un membre à part entière.",
+          "german": "Wenn Schwertmaiden ihre Ausbildung beginnen, ketten sie sich selbst an ihre Schwerter. Sie wachsen und leben mit ihrer Waffe, bis sie wie eine weitere Gliedmaße zu ihnen gehört.",
+          "russian": "В начале обучения мечницы приковывают свои мечи к себе. Они живут и учатся, не разлучаясь с оружием, пока не овладеют им как собственной рукой.",
+          "portuguese": "Quando começam o treinamento, as Donzelas da Espada se acorrentam às suas lâminas. Elas crescem e vivem com armas até que se tornem parte de si mesmas, como se fossem parte de seu corpo.",
+          "chinese": "当持剑侍女开始训练时，她们会把自己和剑用锁链束缚在一起。她们和自己的武器一起成长，一起生活，直到剑变得像肢体一样成为自己的一部分。",
+          "spanish": "Cuando empiezan su entrenamiento, las damas de la espada se encadenan a sus armas. Crecen y viven con sus espadas hasta que se convierten en una extremidad más de su cuerpo.",
+          "chinese_traditional": "劍女在訓練時，會將自己鏈在劍上。她們與武器一起成長和生活，直到武器像肢體一樣成為她們的一部分。",
+          "korean": "여전사는 훈련을 시작함과 동시에 검과 몸을 하나로 묶는다. 이들은 신체가 성장하고 무기를 자기 손발처럼 휘두를 때까지 무기와 함께 살아간다.",
+          "japanese": "ソードメイデンたちは、訓練を始めると自らを剣に縛り付ける。そして、武器が自分の一部になるまで武器とともに成長し、生きていくのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_VengefulSwordmaiden.prefab",
+        "m_AssetGUID": "38062fe6139573642bc6be31c7f2a2ec"
+      },
+      "triggers": [
+        "@Swordmaiden.effects0.paramCharacterData.triggers0",
+        "@Swordmaiden.effects0.paramCharacterData.triggers1"
+      ],
+      "size": 2,
+      "health": 20,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Angel",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "BanishedAngelFemaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Swordmaiden.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-d858ea5b47ac546e-3302764011b80644c9b785086b97090b-v2",
+        "english": "Draw an equipment card from your deck.",
+        "french": "Piochez une carte d'équipement dans le deck.",
+        "german": "Ziehe eine Ausrüstungskarte aus deinem Deck.",
+        "russian": "Берет карту снаряжения из вашей колоды.",
+        "portuguese": "Compra uma carta de equipamento do seu deck.",
+        "chinese": "从你的卡组中抽一张装备卡。",
+        "spanish": "Roba una carta de equipo de tu mazo.",
+        "chinese_traditional": "從你的牌組中抽一張裝備卡。",
+        "korean": "덱에서 장비 카드를 뽑습니다.",
+        "japanese": "デッキから装備品カードをドローする。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        "@Swordmaiden.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Swordmaiden.effects0.paramCharacterData.triggers1",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-8bab1d172def10da-3302764011b80644c9b785086b97090b-v2",
+        "english": "Gain [valor] [effect0.status0.power].",
+        "french": "Octroie [valor] [effect0.status0.power].",
+        "german": "Erhalte [valor] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[valor].",
+        "portuguese": "Recebe [valor] [effect0.status0.power].",
+        "chinese": "获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power].",
+        "chinese_traditional": "獲得[valor][effect0.status0.power]。",
+        "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[valor] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_equipment_added_to_any",
+      "effects": [
+        "@Swordmaiden.effects0.paramCharacterData.triggers1.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Swordmaiden.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectDrawType",
+      "target_card_type": "equipment",
+      "param_card_filter": "@Swordmaiden.effects0.paramCharacterData.triggers0.effects0.paramCardFilter",
+      "param_card_filter_2": "@Swordmaiden.effects0.paramCharacterData.triggers0.effects0.paramCardFilterSecondary",
+      "param_int": 1
+    },
+    {
+      "id": "Swordmaiden.effects0.paramCharacterData.triggers1.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "valor",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "Swordmaiden.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterVengefulSwordmaiden"
+    }
+  ]
 }

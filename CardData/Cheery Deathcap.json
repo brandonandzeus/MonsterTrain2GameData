@@ -1,106 +1,125 @@
 {
-  "id": "CheeryDeathcap",
-  "guid": "97260e75-4e11-439e-8eda-cd961143fc12",
-  "name": "Cheery Deathcap",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaPool",
-    "UnitsUnderlegionBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_CheeryDeathcap.prefab",
-    "m_AssetGUID": "457cfd45915cdd146af93ee61bc702f5"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterCheeryDeathcap",
-        "guid": "6a2cc7ce-1246-4450-be81-78492df7261a",
-        "nameKey": {
-          "key": "CharacterData_nameKey-f6a0dcccb73e94d9-76ad96b37a14c944c9ecc3ca23e2bec4-v2",
-          "english": "Cheery Deathcap",
-          "french": "Amanite joyeuse",
-          "german": "Heiterer Knollenblätterpilz",
-          "russian": "Веселый поганец",
-          "portuguese": "Chapéu da Morte Alegre",
-          "chinese": "欢快毒鹅膏",
-          "spanish": "Sombrero letal alegre",
-          "chinese_traditional": "快樂死帽",
-          "korean": "명랑한 죽음의 갓",
-          "japanese": "陽気なデスキャップ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-1f3f4745ce69dc28-76ad96b37a14c944c9ecc3ca23e2bec4-v2",
-            "english": "“In a world of mulch and rot, I’ve learned to put on a happy face.”",
-            "french": "<nobr>« Dans</nobr> un monde de décomposition et de pourriture, j'ai appris à faire bonne <nobr>figure. »</nobr>",
-            "german": "„In einer Welt aus Mulch und Fäule gilt es, gute Laune zu bewahren!“",
-            "russian": "«В этом прогнившем и полном мульчи мире я научился улыбаться».",
-            "portuguese": "“Em um mundo de cobertura vegetal e podridão, aprendi a fazer uma cara feliz.”",
-            "chinese": "“在一个都是腐烂和盖土的世界里，我学会了面带笑容。”",
-            "spanish": "«He aprendido a sonreír en un mundo de mantillo y podredumbre».",
-            "chinese_traditional": "「在這個腐爛和朽壞的世界裡，我學會了保持微笑。」",
-            "korean": "\"뿌리덮개와 부패가 만연한 세상에서, 나는 행복한 표정을 짓는 법을 배웠다.\"",
-            "japanese": "「腐葉土と腐敗の世界では、笑顔でいようと思ったんだ」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_CheeryDeathcap.prefab",
-          "m_AssetGUID": "0015e774a03cd0041b70fd8aa305c0c0"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-779daea7551bc8fe-76ad96b37a14c944c9ecc3ca23e2bec4-v2",
-              "english": "Apply [decay] [effect0.status0.power] to enemy units.",
-              "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
-              "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
-              "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
-              "portuguese": "Aplica [decay] [effect0.status0.power] às unidades inimigas.",
-              "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
-              "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
-              "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
-              "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "on_spawn",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "decay",
-                    "count": 7
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 3,
-        "attackDamage": 5,
-        "subtypeKeys": [
-          "SubtypesData_Shroom"
-        ],
-        "characterChatterData": "UnderlegionShroomMaleChatterData"
-      }
+      "id": "CheeryDeathcap",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassUnderlegion",
+      "pools": [
+        "MegaPool",
+        "UnitsUnderlegionBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_CheeryDeathcap.prefab",
+        "m_AssetGUID": "457cfd45915cdd146af93ee61bc702f5"
+      },
+      "effects": [
+        "@CheeryDeathcap.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Daniel Sarmiento Chuquisengo"
+  "characters": [
+    {
+      "id": "MonsterCheeryDeathcap",
+      "names": {
+        "key": "CharacterData_nameKey-f6a0dcccb73e94d9-76ad96b37a14c944c9ecc3ca23e2bec4-v2",
+        "english": "Cheery Deathcap",
+        "french": "Amanite joyeuse",
+        "german": "Heiterer Knollenblätterpilz",
+        "russian": "Веселый поганец",
+        "portuguese": "Chapéu da Morte Alegre",
+        "chinese": "欢快毒鹅膏",
+        "spanish": "Sombrero letal alegre",
+        "chinese_traditional": "快樂死帽",
+        "korean": "명랑한 죽음의 갓",
+        "japanese": "陽気なデスキャップ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-1f3f4745ce69dc28-76ad96b37a14c944c9ecc3ca23e2bec4-v2",
+          "english": "“In a world of mulch and rot, I’ve learned to put on a happy face.”",
+          "french": "<nobr>« Dans</nobr> un monde de décomposition et de pourriture, j'ai appris à faire bonne <nobr>figure. »</nobr>",
+          "german": "„In einer Welt aus Mulch und Fäule gilt es, gute Laune zu bewahren!“",
+          "russian": "«В этом прогнившем и полном мульчи мире я научился улыбаться».",
+          "portuguese": "“Em um mundo de cobertura vegetal e podridão, aprendi a fazer uma cara feliz.”",
+          "chinese": "“在一个都是腐烂和盖土的世界里，我学会了面带笑容。”",
+          "spanish": "«He aprendido a sonreír en un mundo de mantillo y podredumbre».",
+          "chinese_traditional": "「在這個腐爛和朽壞的世界裡，我學會了保持微笑。」",
+          "korean": "\"뿌리덮개와 부패가 만연한 세상에서, 나는 행복한 표정을 짓는 법을 배웠다.\"",
+          "japanese": "「腐葉土と腐敗の世界では、笑顔でいようと思ったんだ」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_CheeryDeathcap.prefab",
+        "m_AssetGUID": "0015e774a03cd0041b70fd8aa305c0c0"
+      },
+      "impact_vfx": "@CheeryDeathcap.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@CheeryDeathcap.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 3,
+      "attack_damage": 5,
+      "subtypes": [
+        "SubtypesData_Shroom"
+      ],
+      "chatter": "UnderlegionShroomMaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "CheeryDeathcap.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-779daea7551bc8fe-76ad96b37a14c944c9ecc3ca23e2bec4-v2",
+        "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [decay] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
+        "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        "@CheeryDeathcap.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "CheeryDeathcap.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "decay",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": "CheeryDeathcap.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterCheeryDeathcap"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "CheeryDeathcap.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

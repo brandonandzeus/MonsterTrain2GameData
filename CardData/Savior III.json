@@ -1,75 +1,84 @@
 {
-  "id": "SaviorAbility3",
-  "guid": "2479c736-4463-4346-8464-d517dae23f40",
-  "name": "Savior III",
-  "nameKey": {
-    "key": "CardData_nameKey-2f39f2949ec1f744-f744184c43fa88544b05ebf7d9b3a38b-v2",
-    "english": "Savior III",
-    "french": "Sauveur III",
-    "german": "Retter III",
-    "russian": "Спасительница III",
-    "portuguese": "Salvadora III",
-    "chinese": "救世主 III",
-    "spanish": "Salvadora III",
-    "chinese_traditional": "救世主III",
-    "korean": "구원자 III",
-    "japanese": "セイヴィアIII"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-eed01c8d216f4df4-f744184c43fa88544b05ebf7d9b3a38b-v2",
-    "english": "[advance]. Gain [valor] [effect1.status0.power]. Friendly units gain [armor] equal to 1x Fel's [valor].",
-    "french": "[advance]. Octroie [valor] [effect1.status0.power]. Les alliés gagnent de l'[armor] valant 1x la [valor] de Fel.",
-    "german": "[advance]. Erhalte [valor] [effect1.status0.power]. Verbündete Einheiten erhalten [armor] in Höhe von 1x [valor] von Fel.",
-    "russian": "[advance]. Дает [valor] х[effect1.status0.power]. Союзники получают <b>Броню</b> равную <b>Доблести</b> Фэл.",
-    "portuguese": "[advance]. Recebe [valor] [effect1.status0.power]. Unidades aliadas recebem [armor] igual a 1x a [valor] de Fel.",
-    "chinese": "[advance]。获得 [valor] [effect1.status0.power]。所有友方单位获得等同于1x 菲尔[valor]的[armor]。",
-    "spanish": "[advance]. Añade [valor] [effect1.status0.power]. Las unidades aliadas añaden tanta [armor] como el [valor] de Fel.",
-    "chinese_traditional": "[advance]。獲得[valor][effect1.status0.power]。友方單位獲得等同於費爾[valor]1倍的[armor]。",
-    "korean": "[advance]. [valor] [effect1.status0.power] 효과를 획득합니다. 아군 유닛들이 펠의 [valor] x1에 해당하는 [armor]을 획득합니다.",
-    "japanese": "[advance]。[valor] [effect1.status0.power]を得る。味方ユニットが1x フェルの[valor]に等しい[armor]を得る。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
-    "m_AssetGUID": "b7d9137dc005eb345800500fcaa4823f"
-  },
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "SaviorAbility3",
+      "names": {
+        "key": "CardData_nameKey-2f39f2949ec1f744-f744184c43fa88544b05ebf7d9b3a38b-v2",
+        "english": "Savior III",
+        "french": "Sauveur III",
+        "german": "Retter III",
+        "russian": "Спасительница III",
+        "portuguese": "Salvadora III",
+        "chinese": "救世主 III",
+        "spanish": "Salvadora III",
+        "chinese_traditional": "救世主III",
+        "korean": "구원자 III",
+        "japanese": "セイヴィアIII"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-eed01c8d216f4df4-f744184c43fa88544b05ebf7d9b3a38b-v2",
+        "english": "[advance]. Gain [valor] [effect1.status0.power]. Friendly units gain [armor] equal to 1x Fel's [valor].",
+        "french": "[advance]. Octroie [valor] [effect1.status0.power]. Les alliés gagnent de l'[armor] valant 1x la [valor] de Fel.",
+        "german": "[advance]. Erhalte [valor] [effect1.status0.power]. Verbündete Einheiten erhalten [armor] in Höhe von 1x [valor] von Fel.",
+        "russian": "[advance]. Дает [valor] х[effect1.status0.power]. Союзники получают <b>Броню</b> равную <b>Доблести</b> Фэл.",
+        "portuguese": "[advance]. Recebe [valor] [effect1.status0.power]. Unidades aliadas recebem [armor] igual a 1x a [valor] de Fel.",
+        "chinese": "[advance]。获得 [valor] [effect1.status0.power]。所有友方单位获得等同于1x 菲尔[valor]的[armor]。",
+        "spanish": "[advance]. Añade [valor] [effect1.status0.power]. Las unidades aliadas añaden tanta [armor] como el [valor] de Fel.",
+        "chinese_traditional": "[advance]。獲得[valor][effect1.status0.power]。友方單位獲得等同於費爾[valor]1倍的[armor]。",
+        "korean": "[advance]. [valor] [effect1.status0.power] 효과를 획득합니다. 아군 유닛들이 펠의 [valor] x1에 해당하는 [armor]을 획득합니다.",
+        "japanese": "[advance]。[valor] [effect1.status0.power]を得る。味方ユニットが1x フェルの[valor]に等しい[armor]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
+        "m_AssetGUID": "b7d9137dc005eb345800500fcaa4823f"
+      },
+      "effects": [
+        "@SaviorAbility3.effects0",
+        "@SaviorAbility3.effects1",
+        "@SaviorAbility3.effects2"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectFloorRearrange",
-      "targetMode": "self",
-      "targetTeamType": "monsters"
+      "id": "SaviorAbility3.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self"
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "paramStatusEffects": [
+      "id": "SaviorAbility3.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "statusId": "valor",
+          "status": "valor",
           "count": 15
         }
       ]
     },
     {
-      "effectStateName": "CardEffectAddStatusToRoomScalingByCasterStatusCount",
-      "targetMode": "room",
-      "targetTeamType": "monsters",
-      "paramStatusEffects": [
+      "id": "SaviorAbility3.effects2",
+      "name": "CardEffectAddStatusToRoomScalingByCasterStatusCount",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
         {
-          "statusId": "armor",
+          "status": "armor",
           "count": 1
         },
         {
-          "statusId": "valor",
+          "status": "valor",
           "count": 1
         }
       ],
-      "paramInt": 1
+      "param_int": 1
     }
-  ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  ]
 }

@@ -1,56 +1,63 @@
 {
-  "id": "GearedGauntletAbility",
-  "guid": "d6f310bf-de3e-4627-a5c0-5b3fb68d235f",
-  "name": "GearedGauntletAbility",
-  "nameKey": {
-    "key": "CardData_nameKey-255cfce7ad28ad68-3aa0579408aa4ea40bfea399c004e252-v2",
-    "english": "Wind-Up Punch",
-    "french": "Coup à remontoir",
-    "german": "Aufgezogener Schlag",
-    "russian": "Заводной удар",
-    "portuguese": "Soco Mecânico",
-    "chinese": "蓄力出拳",
-    "spanish": "Puño cargado",
-    "chinese_traditional": "發條拳",
-    "korean": "태엽 펀치",
-    "japanese": "ワインドアップパンチ"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-75ae6b93416119d1-3aa0579408aa4ea40bfea399c004e252-v2",
-    "english": "Attack immediately. Remove all stacks of [burst].",
-    "french": "Attaque immédiatement. Supprime les cumuls de [burst].",
-    "german": "Greife sofort an. Entferne alle [burst]-Stapel.",
-    "russian": "Мгновенная атака. Убирает весь [burst].",
-    "portuguese": "Ataca imediatamente. Remove todas as cargas de [burst].",
-    "chinese": "立即攻击。移除所有 [burst] 层数",
-    "spanish": "Ataca de inmediato. Elimina todas las acumulaciones de [burst].",
-    "chinese_traditional": "立即攻擊。移除所有[burst]層數。",
-    "korean": "즉시 공격합니다. [burst]의 모든 스택을 제거합니다.",
-    "japanese": "即座に攻撃する。[burst]のスタックをすべて解除する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "GearedGauntletAbility",
+      "names": {
+        "key": "CardData_nameKey-255cfce7ad28ad68-3aa0579408aa4ea40bfea399c004e252-v2",
+        "english": "Wind-Up Punch",
+        "french": "Coup à remontoir",
+        "german": "Aufgezogener Schlag",
+        "russian": "Заводной удар",
+        "portuguese": "Soco Mecânico",
+        "chinese": "蓄力出拳",
+        "spanish": "Puño cargado",
+        "chinese_traditional": "發條拳",
+        "korean": "태엽 펀치",
+        "japanese": "ワインドアップパンチ"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-75ae6b93416119d1-3aa0579408aa4ea40bfea399c004e252-v2",
+        "english": "Attack immediately. Remove all stacks of [burst].",
+        "french": "Attaque immédiatement. Supprime les cumuls de [burst].",
+        "german": "Greife sofort an. Entferne alle [burst]-Stapel.",
+        "russian": "Мгновенная атака. Убирает весь [burst].",
+        "portuguese": "Ataca imediatamente. Remove todas as cargas de [burst].",
+        "chinese": "立即攻击。移除所有 [burst] 层数",
+        "spanish": "Ataca de inmediato. Elimina todas las acumulaciones de [burst].",
+        "chinese_traditional": "立即攻擊。移除所有[burst]層數。",
+        "korean": "즉시 공격합니다. [burst]의 모든 스택을 제거합니다.",
+        "japanese": "即座に攻撃する。[burst]のスタックをすべて解除する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "effects": [
+        "@GearedGauntletAbility.effects0",
+        "@GearedGauntletAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectAttackWithUnit",
-      "targetMode": "self",
-      "targetTeamType": "monsters"
+      "id": "GearedGauntletAbility.effects0",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "self"
     },
     {
-      "effectStateName": "CardEffectRemoveStatusEffect",
-      "targetMode": "self",
-      "targetTeamType": "monsters",
-      "paramStatusEffects": [
+      "id": "GearedGauntletAbility.effects1",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "statusId": "burst",
+          "status": "burst",
           "count": 999
         }
       ]
     }
-  ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly",
-  "canAbilityTargetOtherFloors": true
+  ]
 }

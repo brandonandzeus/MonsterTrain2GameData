@@ -1,55 +1,64 @@
 {
-  "id": "LazarusLeagueChampDevour3_Ability",
-  "guid": "3eba8cc7-ff26-4ed2-9f59-e7a23d977547",
-  "name": "Devour III",
-  "nameKey": {
-    "key": "CardData_nameKey-17c0cf08a5c68784-282374ed8e03dd749b0dfa8492b340e5-v2",
-    "english": "Devour III",
-    "french": "Dévoration III",
-    "german": "Verschlingen III",
-    "russian": "Поглощение III",
-    "portuguese": "Devorar III",
-    "chinese": "吞噬 III",
-    "spanish": "Voracidad III",
-    "chinese_traditional": "吞噬III",
-    "korean": "삼키기 III",
-    "japanese": "貪りIII"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-99a86030b7a8ba44-282374ed8e03dd749b0dfa8492b340e5-v2",
-    "english": "Gain three times their [attack].",
-    "french": "Confère trois fois son [attack].",
-    "german": "Erhalte ihren [attack] x3.",
-    "russian": "Забирает его тройную [attack].",
-    "portuguese": "Recebe três vezes o [attack] dele.",
-    "chinese": "获得其三倍的 [attack]。",
-    "spanish": "Añade el triple de su [attack].",
-    "chinese_traditional": "獲得其三倍的[attack]。",
-    "korean": "그 유닛의 [attack]x3 을 획득합니다.",
-    "japanese": "対象の[attack]x 3を得る。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectTransferAttackFromUnit",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "monsters",
-      "targetCharacterSubtype": "SubtypesData_Assistant",
-      "paramInt": 1,
-      "additionalParamInt": 3
-    },
-    {
-      "effectStateName": "CardEffectSacrifice",
-      "targetMode": "last_targeted_characters",
-      "targetTeamType": "both",
-      "targetCharacterSubtype": "SubtypesData_Assistant",
-      "paramSubtype": "SubtypesData_Assistant"
+      "id": "LazarusLeagueChampDevour3_Ability",
+      "names": {
+        "key": "CardData_nameKey-17c0cf08a5c68784-282374ed8e03dd749b0dfa8492b340e5-v2",
+        "english": "Devour III",
+        "french": "Dévoration III",
+        "german": "Verschlingen III",
+        "russian": "Поглощение III",
+        "portuguese": "Devorar III",
+        "chinese": "吞噬 III",
+        "spanish": "Voracidad III",
+        "chinese_traditional": "吞噬III",
+        "korean": "삼키기 III",
+        "japanese": "貪りIII"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-99a86030b7a8ba44-282374ed8e03dd749b0dfa8492b340e5-v2",
+        "english": "Gain three times their [attack].",
+        "french": "Confère trois fois son [attack].",
+        "german": "Erhalte ihren [attack] x3.",
+        "russian": "Забирает его тройную [attack].",
+        "portuguese": "Recebe três vezes o [attack] dele.",
+        "chinese": "获得其三倍的 [attack]。",
+        "spanish": "Añade el triple de su [attack].",
+        "chinese_traditional": "獲得其三倍的[attack]。",
+        "korean": "그 유닛의 [attack]x3 을 획득합니다.",
+        "japanese": "対象の[attack]x 3を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "effects": [
+        "@LazarusLeagueChampDevour3_Ability.effects0",
+        "@LazarusLeagueChampDevour3_Ability.effects1"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 1,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "LazarusLeagueChampDevour3_Ability.effects0",
+      "name": "CardEffectTransferAttackFromUnit",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_Assistant",
+      "param_int": 1,
+      "param_int_2": 3
+    },
+    {
+      "id": "LazarusLeagueChampDevour3_Ability.effects1",
+      "name": "CardEffectSacrifice",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_Assistant",
+      "param_subtype": "SubtypesData_Assistant"
+    }
+  ]
 }

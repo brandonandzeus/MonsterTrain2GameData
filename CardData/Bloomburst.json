@@ -1,43 +1,50 @@
 {
-  "id": "EchoBloomAbility",
-  "guid": "367a961c-7319-4112-8c46-4ba7d01799d3",
-  "name": "Bloomburst",
-  "nameKey": {
-    "key": "CardData_nameKey-5196a881757dedbd-88366f312cd9e9e47bcc264abfcbc095-v2",
-    "english": "Bloomburst",
-    "french": "Éclosion soudaine",
-    "german": "Blütensalve",
-    "russian": "Вспышка соцветий",
-    "portuguese": "Explosão Floral",
-    "chinese": "绽放爆发",
-    "spanish": "Explosión floral",
-    "chinese_traditional": "綻放爆裂",
-    "korean": "개화 폭발",
-    "japanese": "ブルームバースト"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-380b9dbf09406507-88366f312cd9e9e47bcc264abfcbc095-v2",
-    "english": "Gain [effect0.power] [corrupt].",
-    "french": "Octroie [effect0.power] [corrupt].",
-    "german": "Erhalte [effect0.power] [corrupt].",
-    "russian": "Дается [corrupt] х[effect0.power].",
-    "portuguese": "Recebe [effect0.power] de [corrupt].",
-    "chinese": "获得 [effect0.power] [corrupt]。",
-    "spanish": "Añade [effect0.power] [corrupt].",
-    "chinese_traditional": "獲得[effect0.power][corrupt]。",
-    "korean": "[effect0.power] [corrupt] 효과를 획득합니다.",
-    "japanese": "[effect0.power] [corrupt]を得る。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAdjustCorruption",
-      "paramInt": 4,
-      "paramBool": true
+      "id": "EchoBloomAbility",
+      "names": {
+        "key": "CardData_nameKey-5196a881757dedbd-88366f312cd9e9e47bcc264abfcbc095-v2",
+        "english": "Bloomburst",
+        "french": "Éclosion soudaine",
+        "german": "Blütensalve",
+        "russian": "Вспышка соцветий",
+        "portuguese": "Explosão Floral",
+        "chinese": "绽放爆发",
+        "spanish": "Explosión floral",
+        "chinese_traditional": "綻放爆裂",
+        "korean": "개화 폭발",
+        "japanese": "ブルームバースト"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-380b9dbf09406507-88366f312cd9e9e47bcc264abfcbc095-v2",
+        "english": "Gain [effect0.power] [corrupt].",
+        "french": "Octroie [effect0.power] [corrupt].",
+        "german": "Erhalte [effect0.power] [corrupt].",
+        "russian": "Дается [corrupt] х[effect0.power].",
+        "portuguese": "Recebe [effect0.power] de [corrupt].",
+        "chinese": "获得 [effect0.power] [corrupt]。",
+        "spanish": "Añade [effect0.power] [corrupt].",
+        "chinese_traditional": "獲得[effect0.power][corrupt]。",
+        "korean": "[effect0.power] [corrupt] 효과를 획득합니다.",
+        "japanese": "[effect0.power] [corrupt]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@EchoBloomAbility.effects0"
+      ],
+      "cooldown": 4,
+      "is_room_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 4,
-  "isRoomAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "EchoBloomAbility.effects0",
+      "name": "CardEffectAdjustCorruption",
+      "param_int": 4,
+      "param_bool": true
+    }
+  ]
 }

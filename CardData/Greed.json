@@ -1,100 +1,94 @@
 {
-  "id": "Greed",
-  "guid": "27e9ee82-fc42-4aa5-b845-90d7e31b61d9",
-  "name": "Greed",
-  "nameKey": {
-    "key": "CardData_nameKey-a59f17ad4c690074-5777b7d73bc7a584ebac61efcb069595-v2",
-    "english": "Greed",
-    "french": "Avidité",
-    "german": "Gier",
-    "russian": "Жадность",
-    "portuguese": "Ganância",
-    "chinese": "贪婪",
-    "spanish": "Codicia",
-    "chinese_traditional": "貪婪",
-    "korean": "탐욕",
-    "japanese": "貪欲"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-ebb731ac53cf204b-5777b7d73bc7a584ebac61efcb069595-v2",
-    "english": "Deal [effect0.power] damage to all units.",
-    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à toutes les unités.",
-    "german": "Füge allen Einheiten [effect0.power] Schaden zu.",
-    "russian": "Наносит [effect0.power] урона всем бойцам.",
-    "portuguese": "Causa [effect0.power] de dano a todas as unidades.",
-    "chinese": "对所有单位造成 [effect0.power] 点伤害。",
-    "spanish": "Inflige [effect0.power] de daño a todas las unidades.",
-    "chinese_traditional": "對所有單位造成[effect0.power]點傷害。",
-    "korean": "모든 유닛에 [effect0.power]만큼 피해를 줍니다.",
-    "japanese": "すべてのユニットに[effect0.power]のダメージを与える。"
-  },
-  "cardLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "key": "CardData_data-0e8db4919b3d0e25-5777b7d73bc7a584ebac61efcb069595-v2",
-      "english": "Leave the gold for the dragons or else they’ll add you to their treasure pile.",
-      "french": "Laissez l'or aux dragons, ou vous rejoindrez leurs trophées.",
-      "german": "Überlass das Gold den Drachen, sonst werden sie dich selbst in ihre Schatztruhen stecken.",
-      "russian": "Лучше оставить золото дракону, а не то сам станешь трофеем в его сокровищнице.",
-      "portuguese": "Deixe o ouro para os dragões ou eles colocarão você na pilha de tesouros deles.",
-      "chinese": "把金子留给龙吧，不然他们就会把你当成财宝囤积起来。",
-      "spanish": "Deja el oro para los dragones si no quieres que te añadan a su tesoro.",
-      "chinese_traditional": "把金子留給龍，否則他們會把你納入他們的寶藏堆。",
-      "korean": "드래곤이 지키는 황금에 손을 댄 자는 그 보물의 일부가 되리라.",
-      "japanese": "黄金は竜に譲るんだ。さもないと、自分が財宝のコレクションにされてしまう。"
-    }
-  ],
-  "cost": 1,
-  "cardType": "spell",
-  "rarity": "uncommon",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "MegaPool",
-    "UnitsPyreborneBannerReplacementMutator"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Greed.prefab",
-    "m_AssetGUID": "6e0ac3d456108cb489cefebb2d251652"
-  },
-  "effects": [
-    {
-      "effectStateName": "CardEffectDamage",
-      "targetMode": "room",
-      "targetTeamType": "both",
-      "paramInt": 20,
-      "appliedVFX": {
-        "vfxPrefabRefLeft": {
-          "m_debugName": "Assets/VFX/Spells/Pyreborne/Greed/FX_Greed.prefab",
-          "m_AssetGUID": "0ed94d97470cdda4ea1af178010b635f"
-        },
-        "spawnLocation": "character_bottom"
-      }
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
-        "key": "CardData_descriptionKey-ff0033b209dd68a5-5777b7d73bc7a584ebac61efcb069595-v2",
-        "english": "Gain [effect0.power][coin].",
-        "french": "Octroie [effect0.power][coin].",
-        "german": "Erhalte [effect0.power][coin].",
-        "russian": "Дает [effect0.power][coin].",
-        "portuguese": "Recebe [effect0.power][coin].",
-        "chinese": "获得[effect0.power][coin]。",
-        "spanish": "Obtienes [effect0.power][coin].",
-        "chinese_traditional": "獲得[effect0.power][coin]。",
-        "korean": "[effect0.power][coin]을 획득합니다.",
-        "japanese": "[effect0.power][coin]を得る。"
+      "id": "Greed",
+      "names": {
+        "key": "CardData_nameKey-a59f17ad4c690074-5777b7d73bc7a584ebac61efcb069595-v2",
+        "english": "Greed",
+        "french": "Avidité",
+        "german": "Gier",
+        "russian": "Жадность",
+        "portuguese": "Ganância",
+        "chinese": "贪婪",
+        "spanish": "Codicia",
+        "chinese_traditional": "貪婪",
+        "korean": "탐욕",
+        "japanese": "貪欲"
       },
-      "trigger": "on_kill",
-      "cardEffects": [
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-ebb731ac53cf204b-5777b7d73bc7a584ebac61efcb069595-v2",
+        "english": "Deal [effect0.power] damage to all units.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> à toutes les unités.",
+        "german": "Füge allen Einheiten [effect0.power] Schaden zu.",
+        "russian": "Наносит [effect0.power] урона всем бойцам.",
+        "portuguese": "Causa [effect0.power] de dano a todas as unidades.",
+        "chinese": "对所有单位造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño a todas las unidades.",
+        "chinese_traditional": "對所有單位造成[effect0.power]點傷害。",
+        "korean": "모든 유닛에 [effect0.power]만큼 피해를 줍니다.",
+        "japanese": "すべてのユニットに[effect0.power]のダメージを与える。"
+      },
+      "lore_tooltips": [
         {
-          "effectStateName": "CardEffectRewardGold",
-          "paramInt": 10
+          "key": "CardData_data-0e8db4919b3d0e25-5777b7d73bc7a584ebac61efcb069595-v2",
+          "english": "Leave the gold for the dragons or else they’ll add you to their treasure pile.",
+          "french": "Laissez l'or aux dragons, ou vous rejoindrez leurs trophées.",
+          "german": "Überlass das Gold den Drachen, sonst werden sie dich selbst in ihre Schatztruhen stecken.",
+          "russian": "Лучше оставить золото дракону, а не то сам станешь трофеем в его сокровищнице.",
+          "portuguese": "Deixe o ouro para os dragões ou eles colocarão você na pilha de tesouros deles.",
+          "chinese": "把金子留给龙吧，不然他们就会把你当成财宝囤积起来。",
+          "spanish": "Deja el oro para los dragones si no quieres que te añadan a su tesoro.",
+          "chinese_traditional": "把金子留給龍，否則他們會把你納入他們的寶藏堆。",
+          "korean": "드래곤이 지키는 황금에 손을 댄 자는 그 보물의 일부가 되리라.",
+          "japanese": "黄金は竜に譲るんだ。さもないと、自分が財宝のコレクションにされてしまう。"
         }
       ],
-      "triggerKeywordCardTextSuppressed": false
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "ClassPyreborne",
+      "pools": [
+        "MegaPool",
+        "UnitsPyreborneBannerReplacementMutator"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_Greed.prefab",
+        "m_AssetGUID": "6e0ac3d456108cb489cefebb2d251652"
+      },
+      "effects": [
+        "@Greed.effects0"
+      ],
+      "triggers": [
+        "@Greed.triggers0"
+      ],
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Leonardo Dionisi"
     }
   ],
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Leonardo Dionisi"
+  "effects": [
+    {
+      "id": "Greed.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "both",
+      "param_int": 20,
+      "applied_vfx": "@Greed.effects0.appliedVFX"
+    },
+    {
+      "id": "Greed.triggers0.cardEffects0",
+      "name": "CardEffectRewardGold",
+      "param_int": 10
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Greed.effects0.appliedVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/Spells/Pyreborne/Greed/FX_Greed.prefab",
+        "m_AssetGUID": "0ed94d97470cdda4ea1af178010b635f"
+      },
+      "spawn_location": "character_bottom"
+    }
+  ]
 }

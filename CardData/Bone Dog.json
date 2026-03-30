@@ -1,86 +1,101 @@
 {
-  "id": "BoneDogTitan",
-  "guid": "f3406a6d-69f0-46e8-8db9-d829db017716",
-  "name": "Bone Dog",
-  "cardType": "monster",
-  "rarity": "rare",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_BoneDog.prefab",
-    "m_AssetGUID": "f91b6bbcb26cda54d921a021e18ce7bc"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterBoneDog",
-        "guid": "09a13491-aeeb-4d10-bcb8-4b8e2912e109",
-        "nameKey": {
-          "key": "CharacterData_nameKey-29545a7f3c152c8b-5ff1374e23418924cbde08307dec229b-v2",
-          "english": "Bone Dog",
-          "french": "Chien squelette",
-          "german": "Knochenhund",
-          "russian": "Костяной пес",
-          "portuguese": "Cão de Ossos",
-          "chinese": "白骨犬",
-          "spanish": "Perro Esquelético",
-          "chinese_traditional": "骨狗",
-          "korean": "해골 강아지",
-          "japanese": "ホネイヌ"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-bc6a6df50a9483b9-5ff1374e23418924cbde08307dec229b-v2",
-            "english": "This cute pup appeared when I hammered the Covenant Outpost’s first nail. I could not leave him behind. Also, his collar seemed familiar... It looked like the work of a certain forger I once knew.",
-            "french": "Cet adorable chiot est apparu lorsque j'ai planté le premier clou du Bastion du Pacte. Je ne pouvais pas l'abandonner. De plus, son collier me dit quelque chose... On dirait le travail d'un certain forgeron que j'ai connu.",
-            "german": "Dieser süße Welpe tauchte auf, als ich den ersten Nagel in den Pakt-Außenposten schlug. Ich konnte ihn nicht zurücklassen. Außerdem kam mir sein Halsband bekannt vor ... Es sah aus wie das Werk von jemanden, den ich einst kannte.",
-            "russian": "Этот малыш появился, когда я вбивал первый гвоздь в будущий форпост Согласия. Я не мог не приютить его. К тому же его ошейник очень показался очень знакомым... Как будто его делал один кузнец, которого я когда-то знал.",
-            "portuguese": "Esse filhote fofo apareceu quando bati o primeiro prego do Posto Avançado do Pacto. Eu não podia deixá-lo para trás. Além disso, sua coleira me pareceu familiar... Parecia o trabalho de certo artesão que eu conhecia.",
-            "chinese": "在我把前哨站的第一课钉子敲进去的时候，这只可爱的小狗就出现了。我不能丢下他不管。而且，他的项圈看起来很眼熟……看起来很像是我曾经认识的某个铁匠的作品。",
-            "spanish": "Este cachorrito apareció cuando fijé el primer clavo del campamento de la Coalición. No podía dejarle atrás. Además, su collar me resultaba familiar... parecía obra de cierto herrero que conozco.",
-            "chinese_traditional": "當我在新盟前哨站敲下第一根釘子時，這隻可愛的小狗就出現了。我不能不把他帶走。而且他的項圈看起來很眼熟……看起來像是我以前認識的某個鍛造者的作品。",
-            "korean": "이 귀여운 강아지는 맹약의 전초기지에 처음 못을 박을 때 모습을 드러냈다. 이 강아지를 그대로 두고 떠날 수는 없었다. 거기다 강아지가 걸친 목걸이도 익숙해 보였다... 한때 알고 지냈던 대장장이의 작업물 같았다.",
-            "japanese": "このかわいい子犬は、盟約の基地の最初の釘を打ち付けた時に現れた。放っておけなかった。それに、この首輪は見覚えがあるような…かつての知り合いであった、とある贋作者の作品のように思えたのだ。"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_BoneDog.prefab",
-          "m_AssetGUID": "ae2e4f2c88fb4114fa07593b17ec856f"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-4061b8813efa8c1f-5ff1374e23418924cbde08307dec229b-v2",
-              "english": "Your Pyre permanently gains +[effect0.power][pyrehealth].",
-              "french": "Votre Brasier gagne +[effect0.power][pyrehealth] définitivement.",
-              "german": "Deine Höllenglut erhält permanent +[effect0.power][pyrehealth].",
-              "russian": "Ваше Пекло навсегда получает [effect0.power][pyrehealth].",
-              "portuguese": "Sua Pira ganha +[effect0.power][pyrehealth] permanentemente.",
-              "chinese": "你的薪火永久获得 +[effect0.power][pyrehealth]。",
-              "spanish": "Tu Pira añade +[effect0.power][pyrehealth] permanentemente.",
-              "chinese_traditional": "你的火堆永久獲得+[effect0.power][pyrehealth]。",
-              "korean": "영구적으로 화로가 +[effect0.power] [pyrehealth]을 획득합니다.",
-              "japanese": "自軍の炉が+[effect0.power][pyrehealth]を永続的に得る。"
-            },
-            "trigger": "on_encounter_complete",
-            "effects": [
-              {
-                "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
-                "suppressPyreRoomFocus": true,
-                "paramInt": 10
-              }
-            ]
-          }
-        ],
-        "size": 1,
-        "health": 3,
-        "attackDamage": 8,
-        "subtypeKeys": [
-          "SubtypesData_Dog"
-        ]
-      }
+      "id": "BoneDogTitan",
+      "card_type": "monster",
+      "rarity": "rare",
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_BoneDog.prefab",
+        "m_AssetGUID": "f91b6bbcb26cda54d921a021e18ce7bc"
+      },
+      "effects": [
+        "@BoneDogTitan.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Loy Bouttamy"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Loy Bouttamy"
+  "characters": [
+    {
+      "id": "MonsterBoneDog",
+      "names": {
+        "key": "CharacterData_nameKey-29545a7f3c152c8b-5ff1374e23418924cbde08307dec229b-v2",
+        "english": "Bone Dog",
+        "french": "Chien squelette",
+        "german": "Knochenhund",
+        "russian": "Костяной пес",
+        "portuguese": "Cão de Ossos",
+        "chinese": "白骨犬",
+        "spanish": "Perro Esquelético",
+        "chinese_traditional": "骨狗",
+        "korean": "해골 강아지",
+        "japanese": "ホネイヌ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-bc6a6df50a9483b9-5ff1374e23418924cbde08307dec229b-v2",
+          "english": "This cute pup appeared when I hammered the Covenant Outpost’s first nail. I could not leave him behind. Also, his collar seemed familiar... It looked like the work of a certain forger I once knew.",
+          "french": "Cet adorable chiot est apparu lorsque j'ai planté le premier clou du Bastion du Pacte. Je ne pouvais pas l'abandonner. De plus, son collier me dit quelque chose... On dirait le travail d'un certain forgeron que j'ai connu.",
+          "german": "Dieser süße Welpe tauchte auf, als ich den ersten Nagel in den Pakt-Außenposten schlug. Ich konnte ihn nicht zurücklassen. Außerdem kam mir sein Halsband bekannt vor ... Es sah aus wie das Werk von jemanden, den ich einst kannte.",
+          "russian": "Этот малыш появился, когда я вбивал первый гвоздь в будущий форпост Согласия. Я не мог не приютить его. К тому же его ошейник очень показался очень знакомым... Как будто его делал один кузнец, которого я когда-то знал.",
+          "portuguese": "Esse filhote fofo apareceu quando bati o primeiro prego do Posto Avançado do Pacto. Eu não podia deixá-lo para trás. Além disso, sua coleira me pareceu familiar... Parecia o trabalho de certo artesão que eu conhecia.",
+          "chinese": "在我把前哨站的第一课钉子敲进去的时候，这只可爱的小狗就出现了。我不能丢下他不管。而且，他的项圈看起来很眼熟……看起来很像是我曾经认识的某个铁匠的作品。",
+          "spanish": "Este cachorrito apareció cuando fijé el primer clavo del campamento de la Coalición. No podía dejarle atrás. Además, su collar me resultaba familiar... parecía obra de cierto herrero que conozco.",
+          "chinese_traditional": "當我在新盟前哨站敲下第一根釘子時，這隻可愛的小狗就出現了。我不能不把他帶走。而且他的項圈看起來很眼熟……看起來像是我以前認識的某個鍛造者的作品。",
+          "korean": "이 귀여운 강아지는 맹약의 전초기지에 처음 못을 박을 때 모습을 드러냈다. 이 강아지를 그대로 두고 떠날 수는 없었다. 거기다 강아지가 걸친 목걸이도 익숙해 보였다... 한때 알고 지냈던 대장장이의 작업물 같았다.",
+          "japanese": "このかわいい子犬は、盟約の基地の最初の釘を打ち付けた時に現れた。放っておけなかった。それに、この首輪は見覚えがあるような…かつての知り合いであった、とある贋作者の作品のように思えたのだ。"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_BoneDog.prefab",
+        "m_AssetGUID": "ae2e4f2c88fb4114fa07593b17ec856f"
+      },
+      "triggers": [
+        "@BoneDogTitan.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 3,
+      "attack_damage": 8,
+      "subtypes": [
+        "SubtypesData_Dog"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BoneDogTitan.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-4061b8813efa8c1f-5ff1374e23418924cbde08307dec229b-v2",
+        "english": "Your Pyre permanently gains +[effect0.power][pyrehealth].",
+        "french": "Votre Brasier gagne +[effect0.power][pyrehealth] définitivement.",
+        "german": "Deine Höllenglut erhält permanent +[effect0.power][pyrehealth].",
+        "russian": "Ваше Пекло навсегда получает [effect0.power][pyrehealth].",
+        "portuguese": "Sua Pira ganha +[effect0.power][pyrehealth] permanentemente.",
+        "chinese": "你的薪火永久获得 +[effect0.power][pyrehealth]。",
+        "spanish": "Tu Pira añade +[effect0.power][pyrehealth] permanentemente.",
+        "chinese_traditional": "你的火堆永久獲得+[effect0.power][pyrehealth]。",
+        "korean": "영구적으로 화로가 +[effect0.power] [pyrehealth]을 획득합니다.",
+        "japanese": "自軍の炉が+[effect0.power][pyrehealth]を永続的に得る。"
+      },
+      "trigger": "on_encounter_complete",
+      "effects": [
+        "@BoneDogTitan.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "BoneDogTitan.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectPermanentlyAdjustMaxPyreHealth",
+      "suppress_pyre_room_focus": true,
+      "param_int": 10
+    },
+    {
+      "id": "BoneDogTitan.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterBoneDog"
+    }
+  ]
 }

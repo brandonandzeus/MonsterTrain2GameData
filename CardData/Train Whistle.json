@@ -1,48 +1,55 @@
 {
-  "id": "RailforgedChampionConductorStewardAbility",
-  "guid": "8a8b394d-3dda-48dd-b157-20ca0c5fd7fb",
-  "name": "Train Whistle",
-  "nameKey": {
-    "key": "CardData_nameKey-15647850884ba452-1d372bc2578cb4146a64b474ccc0f724-v2",
-    "english": "Train Whistle",
-    "french": "Coup de sifflet",
-    "german": "Zugpfeife",
-    "russian": "Гудок поезда",
-    "portuguese": "Apito do Trem",
-    "chinese": "火车汽笛",
-    "spanish": "Silbato del tren",
-    "chinese_traditional": "列車汽笛",
-    "korean": "기적",
-    "japanese": "汽笛"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-d620ef6bbd2ca3cb-1d372bc2578cb4146a64b474ccc0f724-v2",
-    "english": "Friendly units attack immediately.",
-    "french": "Les unités alliées attaquent immédiatement.",
-    "german": "Verbündete Einheiten greifen sofort an.",
-    "russian": "Союзники атакуют немедленно.",
-    "portuguese": "Unidades aliadas atacam imediatamente.",
-    "chinese": "友方单位立即发动攻击。",
-    "spanish": "Las unidades aliadas atacan de inmediato.",
-    "chinese_traditional": "友方單位立刻攻擊。",
-    "korean": "아군 유닛들이 즉각적으로 공격합니다.",
-    "japanese": "味方ユニットが即座に攻撃を実行する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
-    "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAttackWithUnit",
-      "targetMode": "room",
-      "targetTeamType": "monsters"
+      "id": "RailforgedChampionConductorStewardAbility",
+      "names": {
+        "key": "CardData_nameKey-15647850884ba452-1d372bc2578cb4146a64b474ccc0f724-v2",
+        "english": "Train Whistle",
+        "french": "Coup de sifflet",
+        "german": "Zugpfeife",
+        "russian": "Гудок поезда",
+        "portuguese": "Apito do Trem",
+        "chinese": "火车汽笛",
+        "spanish": "Silbato del tren",
+        "chinese_traditional": "列車汽笛",
+        "korean": "기적",
+        "japanese": "汽笛"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-d620ef6bbd2ca3cb-1d372bc2578cb4146a64b474ccc0f724-v2",
+        "english": "Friendly units attack immediately.",
+        "french": "Les unités alliées attaquent immédiatement.",
+        "german": "Verbündete Einheiten greifen sofort an.",
+        "russian": "Союзники атакуют немедленно.",
+        "portuguese": "Unidades aliadas atacam imediatamente.",
+        "chinese": "友方单位立即发动攻击。",
+        "spanish": "Las unidades aliadas atacan de inmediato.",
+        "chinese_traditional": "友方單位立刻攻擊。",
+        "korean": "아군 유닛들이 즉각적으로 공격합니다.",
+        "japanese": "味方ユニットが即座に攻撃を実行する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ConductorAbility.prefab",
+        "m_AssetGUID": "ac123180aa1b1994ebc1903ba9289cf2"
+      },
+      "effects": [
+        "@RailforgedChampionConductorStewardAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "required_dlc": "railforged",
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "requiredDLC": "railforged",
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "RailforgedChampionConductorStewardAbility.effects0",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "room",
+      "target_team": "monsters"
+    }
+  ]
 }

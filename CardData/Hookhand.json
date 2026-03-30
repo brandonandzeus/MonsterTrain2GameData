@@ -1,63 +1,74 @@
 {
-  "id": "Meathook_Ability",
-  "guid": "a7dac277-0718-442d-8903-e21187ff56e6",
-  "name": "Hookhand",
-  "nameKey": {
-    "key": "CardData_nameKey-33e90a23d8e913b1-e2c7d5aa11ea3fd429b0cc122f8aa259-v2",
-    "english": "Hookhand",
-    "french": "Crochet",
-    "german": "Hakenhand",
-    "russian": "Рука-крюк",
-    "portuguese": "Mão de Gancho",
-    "chinese": "钩手",
-    "spanish": "Garfio",
-    "chinese_traditional": "鉤手",
-    "korean": "갈고리 손",
-    "japanese": "鈎の手"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-4dbc0682b2dcd248-e2c7d5aa11ea3fd429b0cc122f8aa259-v2",
-    "english": "[advance]. Apply [dazed] [effect1.status0.power].",
-    "french": "[advance]. Inflige [dazed] [effect1.status0.power].",
-    "german": "[advance]. Wende [dazed] [effect1.status0.power] an.",
-    "russian": "[advance]. Накладывается [dazed] х[effect1.status0.power].",
-    "portuguese": "<b>Avança</b>. Aplica [dazed] [effect1.status0.power].",
-    "chinese": "[advance]。施加 [dazed] [effect1.status0.power]。",
-    "spanish": "[advance]. Añade [dazed] [effect1.status0.power].",
-    "chinese_traditional": "[advance]。施加[dazed][effect1.status0.power]。",
-    "korean": "[advance]. [dazed] [effect1.status0.power] 효과를 적용합니다.",
-    "japanese": "[advance]。[dazed] [effect1.status0.power]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_MeathookAbility.prefab",
-    "m_AssetGUID": "555b6e4a348dd2544af5eabdec086474"
-  },
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "Meathook_Ability",
+      "names": {
+        "key": "CardData_nameKey-33e90a23d8e913b1-e2c7d5aa11ea3fd429b0cc122f8aa259-v2",
+        "english": "Hookhand",
+        "french": "Crochet",
+        "german": "Hakenhand",
+        "russian": "Рука-крюк",
+        "portuguese": "Mão de Gancho",
+        "chinese": "钩手",
+        "spanish": "Garfio",
+        "chinese_traditional": "鉤手",
+        "korean": "갈고리 손",
+        "japanese": "鈎の手"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-4dbc0682b2dcd248-e2c7d5aa11ea3fd429b0cc122f8aa259-v2",
+        "english": "[advance]. Apply [dazed] [effect1.status0.power].",
+        "french": "[advance]. Inflige [dazed] [effect1.status0.power].",
+        "german": "[advance]. Wende [dazed] [effect1.status0.power] an.",
+        "russian": "[advance]. Накладывается [dazed] х[effect1.status0.power].",
+        "portuguese": "<b>Avança</b>. Aplica [dazed] [effect1.status0.power].",
+        "chinese": "[advance]。施加 [dazed] [effect1.status0.power]。",
+        "spanish": "[advance]. Añade [dazed] [effect1.status0.power].",
+        "chinese_traditional": "[advance]。施加[dazed][effect1.status0.power]。",
+        "korean": "[advance]. [dazed] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "[advance]。[dazed] [effect1.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_MeathookAbility.prefab",
+        "m_AssetGUID": "555b6e4a348dd2544af5eabdec086474"
+      },
+      "effects": [
+        "@Meathook_Ability.effects0",
+        "@Meathook_Ability.effects1",
+        "@Meathook_Ability.effects2"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "targetless": false,
+      "initial_keyboard_target": "back_enemy"
+    }
+  ],
   "effects": [
     {
-      "effectStateName": "CardEffectAddStatusEffectNull"
+      "id": "Meathook_Ability.effects0",
+      "name": "CardEffectAddStatusEffectNull"
     },
     {
-      "effectStateName": "CardEffectAddStatusEffect",
-      "targetMode": "last_targeted_characters",
-      "targetTeamType": "both",
-      "paramStatusEffects": [
+      "id": "Meathook_Ability.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
+      "param_status_effects": [
         {
-          "statusId": "dazed",
+          "status": "dazed",
           "count": 1
         }
       ]
     },
     {
-      "effectStateName": "CardEffectFloorRearrange",
-      "targetMode": "last_targeted_characters",
-      "targetTeamType": "both"
+      "id": "Meathook_Ability.effects2",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both"
     }
-  ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "targetless": false,
-  "initialKeyboardTarget": "back_enemy"
+  ]
 }

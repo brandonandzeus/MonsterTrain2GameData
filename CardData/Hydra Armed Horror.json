@@ -1,114 +1,133 @@
 {
-  "id": "HydraArmedHorror",
-  "guid": "6d6c72ab-890b-4275-bb52-2544befbc12b",
-  "name": "Hydra Armed Horror",
-  "overrideDescriptionKey": "CardData_overrideDescriptionKey-b60034bb7449aa8a-dbe61ed8e09ff8349b2c6cba746f649a-v2",
-  "cost": 2,
-  "cardType": "monster",
-  "rarity": "rare",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsLazarusLeagueBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_HydraArmedHorror.prefab",
-    "m_AssetGUID": "106366f1183062b418e4161eee848e03"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterHydraArmedHorror",
-        "guid": "7c12758f-8a63-45f1-bbb2-acc300705050",
-        "nameKey": {
-          "key": "CharacterData_nameKey-f5816c22a724a99a-d9d403d3333d3414fa171df674601ebc-v2",
-          "english": "Hydra Armed Horror",
-          "french": "Horreur à neuf bras",
-          "german": "Gerüstete Schreckenshydra",
-          "russian": "Многорукая гидра",
-          "portuguese": "Hidra Monstruosa",
-          "chinese": "恐怖多臂怪",
-          "spanish": "Engendro brazos de hidra",
-          "chinese_traditional": "海德拉武裝恐懼",
-          "korean": "공포로 무장한 히드라",
-          "japanese": "ヒュドラアーム・ホラー"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-f1b405c8731c8b83-d9d403d3333d3414fa171df674601ebc-v2",
-            "english": "“Look, I needed someone to hold all my tools while I worked!”\n—from Dr. Orechi’s notebook",
-            "french": "<nobr>« Écoutez,</nobr> j'avais besoin de quelqu'un pour tenir tous mes outils pendant que je <nobr>travaillais ! »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
-            "german": "„Ich brauchte jemanden, der meine Werkzeuge hält, während ich arbeite!“\n—aus Dr. Orechis Notizbuch",
-            "russian": "«Мне просто нужен был кто-то, кто будет держать мои инструменты, пока я работаю!»\n— Из записной книжки доктора Оречи",
-            "portuguese": "“Olha, eu precisava de alguém para segurar minhas ferramentas enquanto trabalhava!”\n— Anotação do Dr. Orechi",
-            "chinese": "“听着，我工作时需要有人帮我拿着所有的工具！”\n——摘自奥莱奇博士的笔记本",
-            "spanish": "«A ver, ¡necesitaba a alguien que me sujetara todas las herramientas mientras trabajo!».\n—Cuaderno del Dr. Orechi",
-            "chinese_traditional": "「是這樣的，我在工作時需要有人拿著我所有的工具！」\n—摘自奧雷奇博士的筆記本",
-            "korean": "“이봐, 작업하는 동안 필요한 도구를 들고 있을 녀석이 필요했다고!”\n- 오레치 박사의 기록",
-            "japanese": "「仕事中に道具を全部持っててくれるやつが必要だったんじゃよ！」\n—ドクター・オレチのメモ帳より"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_HydraArmedHorror.prefab",
-          "m_AssetGUID": "e68a603d2984d4442ba5664094e119b2"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-2130be644a3e0dcb-d9d403d3333d3414fa171df674601ebc-v2",
-              "english": "The equipment is removed. Gain [multistrike] [effect0.status0.power].",
-              "french": "L'équipement est retiré. Octroie [multistrike] [effect0.status0.power].",
-              "german": "Die Ausrüstung wird entfernt. Erhalte [multistrike] [effect0.status0.power].",
-              "russian": "Снаряжение убирается. Дает [multistrike] х[effect0.status0.power].",
-              "portuguese": "O equipamento é removido. Recebe [multistrike] [effect0.status0.power].",
-              "chinese": "移除装备。获得 [multistrike] [effect0.status0.power]。",
-              "spanish": "El equipo se elimina. Añade [multistrike] [effect0.status0.power].",
-              "chinese_traditional": "移除裝備。獲得[multistrike][effect0.status0.power]。",
-              "korean": "장비가 제거됩니다. [multistrike] [effect0.status0.power] 효과를 획득합니다.",
-              "japanese": "装備品が解除される。[multistrike] [effect0.status0.power]を得る。"
-            },
-            "trigger": "on_equipment_added",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "self",
-                "targetTeamType": "both",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "multistrike",
-                    "count": 1
-                  }
-                ]
-              },
-              {
-                "effectStateName": "CardEffectRemoveEquipment",
-                "targetMode": "self",
-                "targetTeamType": "both"
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 15,
-        "attackDamage": 15,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Monstrosity"
-        ],
-        "characterChatterData": "LazarusLeagueMonstrosityChatterData",
-        "preventAbilitiesFromEquipment": true
-      }
+      "id": "HydraArmedHorror",
+      "descriptions": "CardData_overrideDescriptionKey-b60034bb7449aa8a-dbe61ed8e09ff8349b2c6cba746f649a-v2",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassLazarusLeague",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsLazarusLeagueBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_HydraArmedHorror.prefab",
+        "m_AssetGUID": "106366f1183062b418e4161eee848e03"
+      },
+      "effects": [
+        "@HydraArmedHorror.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Ron Kee"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Ron Kee"
+  "characters": [
+    {
+      "id": "MonsterHydraArmedHorror",
+      "names": {
+        "key": "CharacterData_nameKey-f5816c22a724a99a-d9d403d3333d3414fa171df674601ebc-v2",
+        "english": "Hydra Armed Horror",
+        "french": "Horreur à neuf bras",
+        "german": "Gerüstete Schreckenshydra",
+        "russian": "Многорукая гидра",
+        "portuguese": "Hidra Monstruosa",
+        "chinese": "恐怖多臂怪",
+        "spanish": "Engendro brazos de hidra",
+        "chinese_traditional": "海德拉武裝恐懼",
+        "korean": "공포로 무장한 히드라",
+        "japanese": "ヒュドラアーム・ホラー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-f1b405c8731c8b83-d9d403d3333d3414fa171df674601ebc-v2",
+          "english": "“Look, I needed someone to hold all my tools while I worked!”\n—from Dr. Orechi’s notebook",
+          "french": "<nobr>« Écoutez,</nobr> j'avais besoin de quelqu'un pour tenir tous mes outils pendant que je <nobr>travaillais ! »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
+          "german": "„Ich brauchte jemanden, der meine Werkzeuge hält, während ich arbeite!“\n—aus Dr. Orechis Notizbuch",
+          "russian": "«Мне просто нужен был кто-то, кто будет держать мои инструменты, пока я работаю!»\n— Из записной книжки доктора Оречи",
+          "portuguese": "“Olha, eu precisava de alguém para segurar minhas ferramentas enquanto trabalhava!”\n— Anotação do Dr. Orechi",
+          "chinese": "“听着，我工作时需要有人帮我拿着所有的工具！”\n——摘自奥莱奇博士的笔记本",
+          "spanish": "«A ver, ¡necesitaba a alguien que me sujetara todas las herramientas mientras trabajo!».\n—Cuaderno del Dr. Orechi",
+          "chinese_traditional": "「是這樣的，我在工作時需要有人拿著我所有的工具！」\n—摘自奧雷奇博士的筆記本",
+          "korean": "“이봐, 작업하는 동안 필요한 도구를 들고 있을 녀석이 필요했다고!”\n- 오레치 박사의 기록",
+          "japanese": "「仕事中に道具を全部持っててくれるやつが必要だったんじゃよ！」\n—ドクター・オレチのメモ帳より"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_HydraArmedHorror.prefab",
+        "m_AssetGUID": "e68a603d2984d4442ba5664094e119b2"
+      },
+      "impact_vfx": "@HydraArmedHorror.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@HydraArmedHorror.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 15,
+      "attack_damage": 15,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Monstrosity"
+      ],
+      "chatter": "LazarusLeagueMonstrosityChatterData",
+      "prevent_abilities_from_equipment": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HydraArmedHorror.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-2130be644a3e0dcb-d9d403d3333d3414fa171df674601ebc-v2",
+        "english": "The equipment is removed. Gain [multistrike] [effect0.status0.power].",
+        "french": "L'équipement est retiré. Octroie [multistrike] [effect0.status0.power].",
+        "german": "Die Ausrüstung wird entfernt. Erhalte [multistrike] [effect0.status0.power].",
+        "russian": "Снаряжение убирается. Дает [multistrike] х[effect0.status0.power].",
+        "portuguese": "O equipamento é removido. Recebe [multistrike] [effect0.status0.power].",
+        "chinese": "移除装备。获得 [multistrike] [effect0.status0.power]。",
+        "spanish": "El equipo se elimina. Añade [multistrike] [effect0.status0.power].",
+        "chinese_traditional": "移除裝備。獲得[multistrike][effect0.status0.power]。",
+        "korean": "장비가 제거됩니다. [multistrike] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "装備品が解除される。[multistrike] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_equipment_added",
+      "effects": [
+        "@HydraArmedHorror.effects0.paramCharacterData.triggers0.effects0",
+        "@HydraArmedHorror.effects0.paramCharacterData.triggers0.effects1"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "HydraArmedHorror.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "HydraArmedHorror.effects0.paramCharacterData.triggers0.effects1",
+      "name": "CardEffectRemoveEquipment",
+      "target_mode": "self"
+    },
+    {
+      "id": "HydraArmedHorror.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterHydraArmedHorror"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "HydraArmedHorror.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

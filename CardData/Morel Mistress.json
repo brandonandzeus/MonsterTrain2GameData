@@ -1,109 +1,128 @@
 {
-  "id": "MorelMistress",
-  "guid": "ec5dbc45-0053-4dc3-84c3-528efcba6b26",
-  "name": "Morel Mistress",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsUnderlegionBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MorelMistress.prefab",
-    "m_AssetGUID": "0cb7a42d892a4904b9521c63463d8096"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterMorelMistress",
-        "guid": "b7382f37-5e45-4d6b-ac47-fc5ea897b989",
-        "nameKey": {
-          "key": "CharacterData_nameKey-5018a3f652dd52ed-668082d43f1860f488a21ac09ae9eb5d-v2",
-          "english": "Morel Mistress",
-          "french": "Maîtresse Morille",
-          "german": "Morchelinchen",
-          "russian": "Моршелла",
-          "portuguese": "Senhorita Morel",
-          "chinese": "羊笃珺女士",
-          "spanish": "Maestra morilla",
-          "chinese_traditional": "莫雷爾夫人",
-          "korean": "모렐 미스트레스",
-          "japanese": "モレル・ミストレス"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-7691eb190bfa5001-668082d43f1860f488a21ac09ae9eb5d-v2",
-            "english": "“A mushroom’s rotting scent tells you all you need to know about them.”",
-            "french": "<nobr>« L'odeur</nobr> de pourriture d'un champignon vous dit tout ce que vous avez besoin de savoir à son <nobr>sujet. »</nobr>",
-            "german": "„Der faulige Duft eines Pilzes verrät alles, was man über sie wissen muss.“",
-            "russian": "«Грибы источают особый запах сырости, способный многое о них рассказать».",
-            "portuguese": "“O cheiro de podridão de um cogumelo diz tudo o que você precisa saber sobre ele.”",
-            "chinese": "“你关于蘑菇需要了解的一切都在其腐烂的香味中。”",
-            "spanish": "«El aroma putrefacto de una seta te dice todo lo que necesitas saber sobre ella».",
-            "chinese_traditional": "「從蘑菇的腐爛氣味中，就能得知有關蘑菇的一切。」",
-            "korean": "\"버섯이 썩으며 내는 냄새 안에는 그 버섯에 관한 정보가 모두 담겨 있지.\"",
-            "japanese": "「キノコの腐臭を嗅げば、彼らについての知るべきことはすべてわかる」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MorelMistress.prefab",
-          "m_AssetGUID": "ca8740168c48b6042bbd1d7dcdff764a"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
-            "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
-          },
-          "spawnLocation": "character_center"
-        },
-        "triggers": [
-          {
-            "descriptionKey": {
-              "key": "CharacterData_descriptionKey-a9d19d6c362fc343-668082d43f1860f488a21ac09ae9eb5d-v2",
-              "english": "Apply [decay] [effect0.status0.power] to enemy units.",
-              "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
-              "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
-              "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
-              "portuguese": "Aplica [decay] [effect0.status0.power] às unidades inimigas.",
-              "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
-              "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
-              "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
-              "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
-              "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
-            },
-            "trigger": "card_exhausted",
-            "effects": [
-              {
-                "effectStateName": "CardEffectAddStatusEffect",
-                "targetMode": "room",
-                "targetTeamType": "heroes",
-                "paramStatusEffects": [
-                  {
-                    "statusId": "decay",
-                    "count": 8
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "size": 2,
-        "health": 15,
-        "ascendsTrainAutomatically": false,
-        "attackDamage": 15,
-        "subtypeKeys": [
-          "SubtypesData_BannerUnit",
-          "SubtypesData_Shroom"
-        ],
-        "characterChatterData": "UnderlegionShroomFemaleChatterData"
-      }
+      "id": "MorelMistress",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassUnderlegion",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsUnderlegionBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_MorelMistress.prefab",
+        "m_AssetGUID": "0cb7a42d892a4904b9521c63463d8096"
+      },
+      "effects": [
+        "@MorelMistress.effects0"
+      ],
+      "targetless": false,
+      "unlock_level": 4,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Genevieve Bega"
     }
   ],
-  "targetless": false,
-  "unlockLevel": 4,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Genevieve Bega"
+  "characters": [
+    {
+      "id": "MonsterMorelMistress",
+      "names": {
+        "key": "CharacterData_nameKey-5018a3f652dd52ed-668082d43f1860f488a21ac09ae9eb5d-v2",
+        "english": "Morel Mistress",
+        "french": "Maîtresse Morille",
+        "german": "Morchelinchen",
+        "russian": "Моршелла",
+        "portuguese": "Senhorita Morel",
+        "chinese": "羊笃珺女士",
+        "spanish": "Maestra morilla",
+        "chinese_traditional": "莫雷爾夫人",
+        "korean": "모렐 미스트레스",
+        "japanese": "モレル・ミストレス"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-7691eb190bfa5001-668082d43f1860f488a21ac09ae9eb5d-v2",
+          "english": "“A mushroom’s rotting scent tells you all you need to know about them.”",
+          "french": "<nobr>« L'odeur</nobr> de pourriture d'un champignon vous dit tout ce que vous avez besoin de savoir à son <nobr>sujet. »</nobr>",
+          "german": "„Der faulige Duft eines Pilzes verrät alles, was man über sie wissen muss.“",
+          "russian": "«Грибы источают особый запах сырости, способный многое о них рассказать».",
+          "portuguese": "“O cheiro de podridão de um cogumelo diz tudo o que você precisa saber sobre ele.”",
+          "chinese": "“你关于蘑菇需要了解的一切都在其腐烂的香味中。”",
+          "spanish": "«El aroma putrefacto de una seta te dice todo lo que necesitas saber sobre ella».",
+          "chinese_traditional": "「從蘑菇的腐爛氣味中，就能得知有關蘑菇的一切。」",
+          "korean": "\"버섯이 썩으며 내는 냄새 안에는 그 버섯에 관한 정보가 모두 담겨 있지.\"",
+          "japanese": "「キノコの腐臭を嗅げば、彼らについての知るべきことはすべてわかる」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MorelMistress.prefab",
+        "m_AssetGUID": "ca8740168c48b6042bbd1d7dcdff764a"
+      },
+      "impact_vfx": "@MorelMistress.effects0.paramCharacterData.impactVFX",
+      "triggers": [
+        "@MorelMistress.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 15,
+      "ascends_train_automatically": false,
+      "attack_damage": 15,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Shroom"
+      ],
+      "chatter": "UnderlegionShroomFemaleChatterData"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MorelMistress.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-a9d19d6c362fc343-668082d43f1860f488a21ac09ae9eb5d-v2",
+        "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [decay] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [decay] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает [decay] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [decay] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [decay] [effect0.status0.power]。",
+        "spanish": "Añade [decay] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[decay][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [decay] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[decay] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "card_exhausted",
+      "effects": [
+        "@MorelMistress.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MorelMistress.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "decay",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "MorelMistress.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterMorelMistress"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MorelMistress.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+        "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

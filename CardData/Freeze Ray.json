@@ -1,42 +1,49 @@
 {
-  "id": "FreezeAbility",
-  "guid": "7a0103bd-9bbb-4a9e-af38-334ed948db5f",
-  "name": "Freeze Ray",
-  "nameKey": {
-    "key": "CardData_nameKey-f4bc7cb388c8e95c-3bcee3753571b4445a424e7542499b2e-v2",
-    "english": "Freeze Ray",
-    "french": "Rayon glaçant",
-    "german": "Froststrahl",
-    "russian": "Морозный луч",
-    "portuguese": "Raio Congelante",
-    "chinese": "冻结射线",
-    "spanish": "Rayo congelante",
-    "chinese_traditional": "冰凍射線",
-    "korean": "동결 광선",
-    "japanese": "凍結光線"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-604fcf07612950f1-3bcee3753571b4445a424e7542499b2e-v2",
-    "english": "Apply [freeze] to a card in hand.",
-    "french": "Confère [freeze] à une carte en main.",
-    "german": "Wende [freeze] auf eine Karte auf deiner Hand an.",
-    "russian": "Накладывает <b>заморозку</b> на карту в руке.",
-    "portuguese": "Aplica [freeze] a uma carta na mão.",
-    "chinese": "使一张手牌获得[freeze]。",
-    "spanish": "Añade [freeze] a una carta de tu mano.",
-    "chinese_traditional": "對手牌中的一張牌施加[freeze]。",
-    "korean": "패에 있는 카드 하나에 [freeze] 효과를 적용합니다.",
-    "japanese": "手札のカードに[freeze]を付与する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectFreezeCard",
-      "shouldFailToCastIfTestFails": true
+      "id": "FreezeAbility",
+      "names": {
+        "key": "CardData_nameKey-f4bc7cb388c8e95c-3bcee3753571b4445a424e7542499b2e-v2",
+        "english": "Freeze Ray",
+        "french": "Rayon glaçant",
+        "german": "Froststrahl",
+        "russian": "Морозный луч",
+        "portuguese": "Raio Congelante",
+        "chinese": "冻结射线",
+        "spanish": "Rayo congelante",
+        "chinese_traditional": "冰凍射線",
+        "korean": "동결 광선",
+        "japanese": "凍結光線"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-604fcf07612950f1-3bcee3753571b4445a424e7542499b2e-v2",
+        "english": "Apply [freeze] to a card in hand.",
+        "french": "Confère [freeze] à une carte en main.",
+        "german": "Wende [freeze] auf eine Karte auf deiner Hand an.",
+        "russian": "Накладывает <b>заморозку</b> на карту в руке.",
+        "portuguese": "Aplica [freeze] a uma carta na mão.",
+        "chinese": "使一张手牌获得[freeze]。",
+        "spanish": "Añade [freeze] a una carta de tu mano.",
+        "chinese_traditional": "對手牌中的一張牌施加[freeze]。",
+        "korean": "패에 있는 카드 하나에 [freeze] 효과를 적용합니다.",
+        "japanese": "手札のカードに[freeze]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@FreezeAbility.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 2,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "FreezeAbility.effects0",
+      "name": "CardEffectFreezeCard",
+      "should_fail_to_cast_if_test_fails": true
+    }
+  ]
 }

@@ -1,135 +1,151 @@
 {
-  "id": "SilentSentinel",
-  "guid": "4f0f249f-2a0e-4704-b8e2-8395505e6bdb",
-  "name": "Silent Sentinel",
-  "cost": 1,
-  "cardType": "monster",
-  "rarity": "uncommon",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "UnitsAllBanner",
-    "UnitsLunaCovenBanner"
-  ],
-  "cardArtPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SilentSentinel.prefab",
-    "m_AssetGUID": "2d75d41f52c91b44f9f9d91157339ea1"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectSpawnMonster",
-      "paramCharacterData": {
-        "id": "MonsterSilentSentinel",
-        "guid": "6a3e3de8-46c7-4644-b9bf-238a528ae3a8",
-        "nameKey": {
-          "key": "CharacterData_nameKey-31f4987984f950b1-43c1d09cb53ec9d45b2b9414e4256132-v2",
-          "english": "Silent Sentinel",
-          "french": "Sentinelle silencieuse",
-          "german": "Stiller Wächter",
-          "russian": "Безмолвный дозорный",
-          "portuguese": "Sentinela Silenciosa",
-          "chinese": "寂静者哨兵",
-          "spanish": "Centinela silencioso",
-          "chinese_traditional": "沉默哨兵",
-          "korean": "묵언자 파수병",
-          "japanese": "サイレント・センチネル"
-        },
-        "characterLoreTooltipKeys": [
-          {
-            "key": "CharacterData_data-0274d2ee7064573a-43c1d09cb53ec9d45b2b9414e4256132-v2",
-            "english": "“...”",
-            "french": "<nobr>« ... »</nobr>",
-            "german": "„...“",
-            "russian": "«...»",
-            "portuguese": "“...”",
-            "chinese": "“……”",
-            "spanish": "«...».",
-            "chinese_traditional": "「……」",
-            "korean": "\"...\"",
-            "japanese": "「…」"
-          }
-        ],
-        "characterPrefabVariantRef": {
-          "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SilentSentinel.prefab",
-          "m_AssetGUID": "0ec9afcc63f6101499d9086f2b0d9e82"
-        },
-        "impactVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-            "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-          },
-          "spawnLocation": "character_center"
-        },
-        "unitAbility": {
-          "id": "SpellSlamAbility",
-          "guid": "7617850d-a72f-46de-87e4-dbcaa50fe1c2",
-          "nameKey": {
-            "key": "CardData_nameKey-564d4bae4e763702-b47d793ebc047c2448f4e139ccef1026-v2",
-            "english": "Spell Slam",
-            "french": "Ruée de sorts",
-            "german": "Zauber-Slam",
-            "russian": "Шквал чар",
-            "portuguese": "Golpe Mágico",
-            "chinese": "法术猛击",
-            "spanish": "Choque arcano",
-            "chinese_traditional": "法術重擊",
-            "korean": "주문 강타",
-            "japanese": "スペル・スラム"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-43e4040966318207-b47d793ebc047c2448f4e139ccef1026-v2",
-            "english": "Restore to full health. Apply [spellweakness] [effect1.status0.power] to enemy units.",
-            "french": "Restaure tous les PV. Inflige [spellweakness] [effect1.status0.power] aux ennemis.",
-            "german": "Stellt die Gesundheit vollständig wieder her. Wende [spellweakness] [effect1.status0.power] auf gegnerische Einheiten an.",
-            "russian": "Полностью восстанавливает здоровье. Накладывает [spellweakness] х[effect1.status0.power] на врагов.",
-            "portuguese": "Restaura a vida completamente. Aplica [spellweakness] [effect1.status0.power] às unidades inimigas.",
-            "chinese": "恢复所有生命值。对所有敌方单位施加 [spellweakness] [effect1.status0.power]。",
-            "spanish": "Restaura toda su salud. Añade [spellweakness] [effect1.status0.power] a las unidades enemigas.",
-            "chinese_traditional": "恢復至滿血。對敵方單位施加[spellweakness][effect1.status0.power]。",
-            "korean": "체력을 모두 회복합니다. 적 유닛들에게 [spellweakness] [effect1.status0.power] 효과를 적용합니다.",
-            "japanese": "体力を全回復する。敵ユニットに[spellweakness] [effect1.status0.power]を付与する。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "linkedClass": "ClassBanished",
-          "cardArtPrefabVariantRef": {
-            "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
-            "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
-          },
-          "effects": [
-            {
-              "effectStateName": "CardEffectHeal",
-              "targetMode": "self",
-              "targetTeamType": "monsters",
-              "paramInt": 9999
-            },
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "room",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "spell weakness",
-                  "count": 1
-                }
-              ]
-            }
-          ],
-          "cooldownAfterActivated": 3,
-          "isUnitAbility": true,
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "size": 2,
-        "health": 40,
-        "attackDamage": 10,
-        "subtypeKeys": [
-          "SubtypesData_Silent",
-          "SubtypesData_BannerUnit"
-        ],
-        "characterChatterData": "LunaCovenSilentChatterData"
-      }
+      "id": "SilentSentinel",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassLunaCoven",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsLunaCovenBanner"
+      ],
+      "card_art": {
+        "m_debugName": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SilentSentinel.prefab",
+        "m_AssetGUID": "2d75d41f52c91b44f9f9d91157339ea1"
+      },
+      "effects": [
+        "@SilentSentinel.effects0"
+      ],
+      "targetless": false,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Ron Kee"
+    },
+    {
+      "id": "SilentSentinel.effects0.paramCharacterData.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-564d4bae4e763702-b47d793ebc047c2448f4e139ccef1026-v2",
+        "english": "Spell Slam",
+        "french": "Ruée de sorts",
+        "german": "Zauber-Slam",
+        "russian": "Шквал чар",
+        "portuguese": "Golpe Mágico",
+        "chinese": "法术猛击",
+        "spanish": "Choque arcano",
+        "chinese_traditional": "法術重擊",
+        "korean": "주문 강타",
+        "japanese": "スペル・スラム"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-43e4040966318207-b47d793ebc047c2448f4e139ccef1026-v2",
+        "english": "Restore to full health. Apply [spellweakness] [effect1.status0.power] to enemy units.",
+        "french": "Restaure tous les PV. Inflige [spellweakness] [effect1.status0.power] aux ennemis.",
+        "german": "Stellt die Gesundheit vollständig wieder her. Wende [spellweakness] [effect1.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Полностью восстанавливает здоровье. Накладывает [spellweakness] х[effect1.status0.power] на врагов.",
+        "portuguese": "Restaura a vida completamente. Aplica [spellweakness] [effect1.status0.power] às unidades inimigas.",
+        "chinese": "恢复所有生命值。对所有敌方单位施加 [spellweakness] [effect1.status0.power]。",
+        "spanish": "Restaura toda su salud. Añade [spellweakness] [effect1.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "恢復至滿血。對敵方單位施加[spellweakness][effect1.status0.power]。",
+        "korean": "체력을 모두 회복합니다. 적 유닛들에게 [spellweakness] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "体力を全回復する。敵ユニットに[spellweakness] [effect1.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "m_debugName": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
+        "m_AssetGUID": "188ce146d4e77254288d6457a06bbaa6"
+      },
+      "effects": [
+        "@SilentSentinel.effects0.paramCharacterData.unitAbility.effects0",
+        "@SilentSentinel.effects0.paramCharacterData.unitAbility.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "targetless": false,
-  "initialKeyboardTarget": "front_friendly",
-  "artistAttribution": "Ron Kee"
+  "characters": [
+    {
+      "id": "MonsterSilentSentinel",
+      "names": {
+        "key": "CharacterData_nameKey-31f4987984f950b1-43c1d09cb53ec9d45b2b9414e4256132-v2",
+        "english": "Silent Sentinel",
+        "french": "Sentinelle silencieuse",
+        "german": "Stiller Wächter",
+        "russian": "Безмолвный дозорный",
+        "portuguese": "Sentinela Silenciosa",
+        "chinese": "寂静者哨兵",
+        "spanish": "Centinela silencioso",
+        "chinese_traditional": "沉默哨兵",
+        "korean": "묵언자 파수병",
+        "japanese": "サイレント・センチネル"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-0274d2ee7064573a-43c1d09cb53ec9d45b2b9414e4256132-v2",
+          "english": "“...”",
+          "french": "<nobr>« ... »</nobr>",
+          "german": "„...“",
+          "russian": "«...»",
+          "portuguese": "“...”",
+          "chinese": "“……”",
+          "spanish": "«...».",
+          "chinese_traditional": "「……」",
+          "korean": "\"...\"",
+          "japanese": "「…」"
+        }
+      ],
+      "character_art": {
+        "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SilentSentinel.prefab",
+        "m_AssetGUID": "0ec9afcc63f6101499d9086f2b0d9e82"
+      },
+      "impact_vfx": "@SilentSentinel.effects0.paramCharacterData.impactVFX",
+      "ability": "@SilentSentinel.effects0.paramCharacterData.unitAbility",
+      "size": 2,
+      "health": 40,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Silent",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "LunaCovenSilentChatterData"
+    }
+  ],
+  "effects": [
+    {
+      "id": "SilentSentinel.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "param_int": 9999
+    },
+    {
+      "id": "SilentSentinel.effects0.paramCharacterData.unitAbility.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "spell weakness",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "SilentSentinel.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "MonsterSilentSentinel"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SilentSentinel.effects0.paramCharacterData.impactVFX",
+      "vfx_prefab_ref_left": {
+        "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

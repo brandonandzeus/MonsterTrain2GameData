@@ -1,43 +1,50 @@
 {
-  "id": "HornbreakerAttackOnKill_Ability2",
-  "guid": "f7fec3af-db53-4c50-ab16-c5220e07e838",
-  "name": "Culling II",
-  "nameKey": {
-    "key": "CardData_nameKey-d20a9f4502c78c85-844d1641ebdf554439d8f16201ff7515-v2",
-    "english": "Culling II",
-    "french": "Abattage II",
-    "german": "Keulung II",
-    "russian": "Забой II",
-    "portuguese": "Abate II",
-    "chinese": "剔除 II",
-    "spanish": "Matanza II",
-    "chinese_traditional": "剔除II",
-    "korean": "도태 II",
-    "japanese": "淘汰II"
-  },
-  "overrideDescriptionKey": {
-    "key": "CardData_overrideDescriptionKey-afaf15d3948aa44f-844d1641ebdf554439d8f16201ff7515-v2",
-    "english": "Attack immediately.",
-    "french": "Attaquez immédiatement.",
-    "german": "Greife sofort an.",
-    "russian": "Мгновенная атака.",
-    "portuguese": "Ataca imediatamente.",
-    "chinese": "立即攻击。",
-    "spanish": "Ataca de inmediato.",
-    "chinese_traditional": "立即攻擊。",
-    "korean": "즉시 공격합니다.",
-    "japanese": "即座に攻撃する。"
-  },
-  "cardType": "spell",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
     {
-      "effectStateName": "CardEffectAttackWithUnit",
-      "targetMode": "drop_target_character",
-      "targetTeamType": "both"
+      "id": "HornbreakerAttackOnKill_Ability2",
+      "names": {
+        "key": "CardData_nameKey-d20a9f4502c78c85-844d1641ebdf554439d8f16201ff7515-v2",
+        "english": "Culling II",
+        "french": "Abattage II",
+        "german": "Keulung II",
+        "russian": "Забой II",
+        "portuguese": "Abate II",
+        "chinese": "剔除 II",
+        "spanish": "Matanza II",
+        "chinese_traditional": "剔除II",
+        "korean": "도태 II",
+        "japanese": "淘汰II"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-afaf15d3948aa44f-844d1641ebdf554439d8f16201ff7515-v2",
+        "english": "Attack immediately.",
+        "french": "Attaquez immédiatement.",
+        "german": "Greife sofort an.",
+        "russian": "Мгновенная атака.",
+        "portuguese": "Ataca imediatamente.",
+        "chinese": "立即攻击。",
+        "spanish": "Ataca de inmediato.",
+        "chinese_traditional": "立即攻擊。",
+        "korean": "즉시 공격합니다.",
+        "japanese": "即座に攻撃する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@HornbreakerAttackOnKill_Ability2.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
-  "cooldownAfterActivated": 3,
-  "isUnitAbility": true,
-  "initialKeyboardTarget": "front_friendly"
+  "effects": [
+    {
+      "id": "HornbreakerAttackOnKill_Ability2.effects0",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "drop_target_character",
+      "target_team": "both"
+    }
+  ]
 }
