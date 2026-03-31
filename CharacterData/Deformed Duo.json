@@ -1,62 +1,71 @@
 {
-  "id": "AttackerT3_CorruptionAdder",
-  "guid": "f1b2dfc0-b7d3-4686-b573-2729669581bd",
-  "name": "Deformed Duo",
-  "nameKey": {
-    "key": "CharacterData_nameKey-e9bfe9302e157045-7f5a56cda8a9d344686980350cfb2b7a-v2",
-    "english": "Deformed Duo",
-    "french": "Duo difforme",
-    "german": "Deformiertes Duo",
-    "russian": "Омерзительная парочка",
-    "portuguese": "Dupla Deformada",
-    "chinese": "畸形双人组",
-    "spanish": "Dúo deforme",
-    "chinese_traditional": "畸形雙子",
-    "korean": "기형의 듀오",
-    "japanese": "ディフォーム・デュオ"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-94e924da9a588b48-7f5a56cda8a9d344686980350cfb2b7a-v2",
-      "english": "A bond forged through combat has turned into a twisted codependency, their permanent bond fueling an onslaught of corruption.",
-      "french": "Un lien forgé par le combat s'est transformé en une co-dépendance malsaine, alimentant en permanence un assaut de corruption.",
-      "german": "Ein im Gefecht geschmiedeter Bund wurde zu einer verfluchten gegenseitigen Abhängigkeit, die der Verderbnis Tür und Tor öffnete.",
-      "russian": "Узы, рожденные на поле боя, превратились в разрушительную созависимость. Эта неразрывная связь подпитывает потоки скверны.",
-      "portuguese": "Um vínculo forjado em combate se transformou em uma codependência distorcida, alimentando para sempre a corrupção.",
-      "chinese": "通过战斗建立的情谊变成了一种扭曲的互相依赖，他们之间永恒的羁绊助长着腐化的蔓延。",
-      "spanish": "Su vínculo forjado en batalla se ha convertido en una codependencia enfermiza que dedican ahora a extender la corrupción.",
-      "chinese_traditional": "在戰鬥中塑造出來的羈絆，已經轉變成扭曲的相互依賴，他們永久的羈絆助長了腐化的氾濫。",
-      "korean": "전장에서 형성한 유대감이 뒤틀린 의존성으로 변하면서, 이들의 영원한 유대는 타락한 세력의 매서운 공격을 부추기는 원동력이 되었다.",
-      "japanese": "戦闘を通じて築かれた絆は歪んだ共依存関係に変わり、彼らの永続的な絆は堕落をさらに促進している。"
+      "id": "AttackerT3_CorruptionAdder",
+      "name": "Deformed Duo",
+      "names": {
+        "key": "CharacterData_nameKey-e9bfe9302e157045-7f5a56cda8a9d344686980350cfb2b7a-v2",
+        "english": "Deformed Duo",
+        "french": "Duo difforme",
+        "german": "Deformiertes Duo",
+        "russian": "Омерзительная парочка",
+        "portuguese": "Dupla Deformada",
+        "chinese": "畸形双人组",
+        "spanish": "Dúo deforme",
+        "chinese_traditional": "畸形雙子",
+        "korean": "기형의 듀오",
+        "japanese": "ディフォーム・デュオ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-94e924da9a588b48-7f5a56cda8a9d344686980350cfb2b7a-v2",
+          "english": "A bond forged through combat has turned into a twisted codependency, their permanent bond fueling an onslaught of corruption.",
+          "french": "Un lien forgé par le combat s'est transformé en une co-dépendance malsaine, alimentant en permanence un assaut de corruption.",
+          "german": "Ein im Gefecht geschmiedeter Bund wurde zu einer verfluchten gegenseitigen Abhängigkeit, die der Verderbnis Tür und Tor öffnete.",
+          "russian": "Узы, рожденные на поле боя, превратились в разрушительную созависимость. Эта неразрывная связь подпитывает потоки скверны.",
+          "portuguese": "Um vínculo forjado em combate se transformou em uma codependência distorcida, alimentando para sempre a corrupção.",
+          "chinese": "通过战斗建立的情谊变成了一种扭曲的互相依赖，他们之间永恒的羁绊助长着腐化的蔓延。",
+          "spanish": "Su vínculo forjado en batalla se ha convertido en una codependencia enfermiza que dedican ahora a extender la corrupción.",
+          "chinese_traditional": "在戰鬥中塑造出來的羈絆，已經轉變成扭曲的相互依賴，他們永久的羈絆助長了腐化的氾濫。",
+          "korean": "전장에서 형성한 유대감이 뒤틀린 의존성으로 변하면서, 이들의 영원한 유대는 타락한 세력의 매서운 공격을 부추기는 원동력이 되었다.",
+          "japanese": "戦闘を通じて築かれた絆は歪んだ共依存関係に変わり、彼らの永続的な絆は堕落をさらに促進している。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ViciousDuo.prefab",
+        "asset_guid": "72940db026e9fa34ba0df188e3bc11b5"
+      },
+      "projectile_vfx": "@AttackerT3_CorruptionAdder.projectilePrefab",
+      "impact_vfx": "@AttackerT3_CorruptionAdder.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "undying",
+          "count": 2
+        }
+      ],
+      "triggers": [
+        "@AttackerT3_CorruptionAdder.triggers0"
+      ],
+      "endless_stats": {
+        "attack": 20,
+        "health": 6
+      },
+      "size": 1,
+      "health": 10,
+      "attack_damage": 7,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_AttackerT3"
+      ],
+      "chatter": "T3TitanEnemies_Male_ChatterData",
+      "artist": "Mikhail Cang"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ViciousDuo.prefab",
-    "m_AssetGUID": "72940db026e9fa34ba0df188e3bc11b5"
-  },
-  "projectilePrefab": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/VicousDuo/FX_ViciousDuoProjectile.prefab",
-      "m_AssetGUID": "822ef87e39128f34dbb4ba3d747ef7bf"
-    },
-    "spawnLocation": "character_side_back_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
-      "m_AssetGUID": "e78ec66e5b5232045acdc3b530057b00"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "undying",
-      "count": 2
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "AttackerT3_CorruptionAdder.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-0ad9c459b935484b-7f5a56cda8a9d344686980350cfb2b7a-v2",
         "english": "Apply [corruption] [effect0.status0.power].",
         "french": "Inflige [corruption] [effect0.status0.power].",
@@ -71,31 +80,40 @@
       },
       "trigger": "on_attacking",
       "effects": [
+        "@AttackerT3_CorruptionAdder.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AttackerT3_CorruptionAdder.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "none",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "last_attacked_character",
-          "targetTeamType": "none",
-          "paramStatusEffects": [
-            {
-              "statusId": "corruption",
-              "count": 6
-            }
-          ]
+          "status": "corruption",
+          "count": 6
         }
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 6,
-    "endlessAttack": 20
-  },
-  "size": 1,
-  "health": 10,
-  "attackDamage": 7,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_AttackerT3"
-  ],
-  "characterChatterData": "T3TitanEnemies_Male_ChatterData",
-  "artistAttribution": "Mikhail Cang"
+  "vfxs": [
+    {
+      "id": "AttackerT3_CorruptionAdder.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/VicousDuo/FX_ViciousDuoProjectile.prefab",
+        "asset_guid": "822ef87e39128f34dbb4ba3d747ef7bf"
+      },
+      "spawn_location": "character_side_back_center"
+    },
+    {
+      "id": "AttackerT3_CorruptionAdder.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
+        "asset_guid": "e78ec66e5b5232045acdc3b530057b00"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

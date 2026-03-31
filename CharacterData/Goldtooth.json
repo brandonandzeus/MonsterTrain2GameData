@@ -1,48 +1,64 @@
 {
-  "id": "MonsterPlunderer",
-  "guid": "eced394b-82c6-4a3d-8201-ffb1083d3163",
-  "name": "Goldtooth",
-  "nameKey": {
-    "key": "CharacterData_nameKey-39c63b0d39a4781c-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
-    "english": "Goldtooth",
-    "french": "Dendoré",
-    "german": "Goldzahn",
-    "russian": "Златозуб",
-    "portuguese": "Presa de Ouro",
-    "chinese": "金牙",
-    "spanish": "Diente de oro",
-    "chinese_traditional": "金牙",
-    "korean": "황금 이빨",
-    "japanese": "ゴールドトゥース"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-d06e71aaa303910c-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
-      "english": "“Do I have gold in my teeth?”",
-      "french": "<nobr>« Est-ce</nobr> que j'ai de l'or entre les <nobr>dents ? »</nobr>",
-      "german": "„Habe ich Gold zwischen den Zähnen?“",
-      "russian": "«У меня золото в зубах?»",
-      "portuguese": "“Estou com ouro nos dentes?”",
-      "chinese": "“我的牙齿里有金子吗？”",
-      "spanish": "«¿Tengo oro en los dientes?».",
-      "chinese_traditional": "「我的牙齒裡有金子嗎？」",
-      "korean": "\"내 이빨에 금이 박혀 있어?\"",
-      "japanese": "「歯に黄金が挟まってない？」"
+      "id": "MonsterPlunderer",
+      "name": "Goldtooth",
+      "names": {
+        "key": "CharacterData_nameKey-39c63b0d39a4781c-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
+        "english": "Goldtooth",
+        "french": "Dendoré",
+        "german": "Goldzahn",
+        "russian": "Златозуб",
+        "portuguese": "Presa de Ouro",
+        "chinese": "金牙",
+        "spanish": "Diente de oro",
+        "chinese_traditional": "金牙",
+        "korean": "황금 이빨",
+        "japanese": "ゴールドトゥース"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-d06e71aaa303910c-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
+          "english": "“Do I have gold in my teeth?”",
+          "french": "<nobr>« Est-ce</nobr> que j'ai de l'or entre les <nobr>dents ? »</nobr>",
+          "german": "„Habe ich Gold zwischen den Zähnen?“",
+          "russian": "«У меня золото в зубах?»",
+          "portuguese": "“Estou com ouro nos dentes?”",
+          "chinese": "“我的牙齿里有金子吗？”",
+          "spanish": "«¿Tengo oro en los dientes?».",
+          "chinese_traditional": "「我的牙齒裡有金子嗎？」",
+          "korean": "\"내 이빨에 금이 박혀 있어?\"",
+          "japanese": "「歯に黄金が挟まってない？」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Goldtooth.prefab",
+        "asset_guid": "a4d9c5a3461b04e45b51ccf91fba063e"
+      },
+      "starting_status_effects": [
+        {
+          "status": "avarice",
+          "count": 5
+        }
+      ],
+      "room_modifiers": [
+        "@MonsterPlunderer.roomModifiers0"
+      ],
+      "size": 2,
+      "health": 30,
+      "attack_damage": 15,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Dragon"
+      ],
+      "chatter": "PyreborneDragonChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Goldtooth.prefab",
-    "m_AssetGUID": "a4d9c5a3461b04e45b51ccf91fba063e"
-  },
-  "startingStatusEffects": [
+  "room_modifiers": [
     {
-      "statusId": "avarice",
-      "count": 5
-    }
-  ],
-  "roomModifiers": [
-    {
-      "descriptionKey": {
+      "id": "MonsterPlunderer.roomModifiers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-ae703aa30bbd0100-f8dcd7dfe28f50c45a7dca5cacbf26c5-v2",
         "english": "+[power][attack] per [secondarypower][coin] you started the turn with.",
         "french": "+[power][attack] par tranche de [secondarypower][coin] en début de tour.",
@@ -55,17 +71,9 @@
         "korean": "턴 시작 시 가지고 있던 [secondarypower][coin]마다 +[power][attack]을 획득합니다.",
         "japanese": "ターン開始時に、[secondarypower][coin]につき+[power][attack]。"
       },
-      "roomStateModifierClassName": "RoomStateSelfDamagePerGoldModifier",
-      "paramInt": 15,
-      "paramInt2": 100
+      "name": "RoomStateSelfDamagePerGoldModifier",
+      "param_int": 15,
+      "param_int_2": 100
     }
-  ],
-  "size": 2,
-  "health": 30,
-  "attackDamage": 15,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Dragon"
-  ],
-  "characterChatterData": "PyreborneDragonChatterData"
+  ]
 }

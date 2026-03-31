@@ -1,59 +1,77 @@
 {
-  "id": "Boss_Level5_Titanskin",
-  "guid": "a5d657d1-45e6-4281-a9c1-acc6dda66c20",
-  "name": "Quoto the Absolute",
-  "nameKey": {
-    "key": "CharacterData_nameKey-f0a7d5500f486af6-d9ff951fc3613b147866441731557542-v2",
-    "english": "Quoto the Absolute",
-    "french": "Quoto l'Absolu",
-    "german": "Quoto der Volkommene",
-    "russian": "Квото Абсолютный",
-    "portuguese": "Quoto, o Absoluto",
-    "chinese": "专制者库尔托",
-    "spanish": "Quoto el Absoluto",
-    "chinese_traditional": "『絕對』庫托",
-    "korean": "절대자 쿼토",
-    "japanese": "絶対のクオート"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-2727f719c82e4f31-d9ff951fc3613b147866441731557542-v2",
-      "english": "Quoto believed in the beauty of Heaven above all else. And now he believes in the beauty of something beyond it.",
-      "french": "Quoto croyait à la beauté du paradis avant tout. Aujourd'hui, il croit en la beauté de quelque chose de plus grand.",
-      "german": "Quoto glaubte vor allem an die Schönheit des Himmels. Jetzt glaubt er auch an die Schönheit von etwas, das darüber hinausgeht.",
-      "russian": "Раньше Квото преклонялся перед величием Рая, а теперь преклоняется перед величием места, находящегося за его пределами.",
-      "portuguese": "Quoto acreditava na beleza do Céu acima de tudo. E agora ele acredita na beleza de algo além.",
-      "chinese": "库尔托曾坚信天堂的美高于一切。现在他相信还有比天堂更美的存在。",
-      "spanish": "Quoto creía en la belleza del Cielo sobre todo lo demás. Ahora cree en la belleza de algo más allá del Cielo.",
-      "chinese_traditional": "庫托曾經認為天堂之美勝過一切。如今他信仰著超越天堂的某種存在。",
-      "korean": "쿼토는 무엇보다도 천상의 아름다움을 믿었다. 그리고 이제, 그는 그 너머의 아름다움을 믿는다.",
-      "japanese": "クオートは何よりも天界の美しさを信じていた。そして今彼は、それを超越した何かの美しさを信じている。"
+      "id": "Boss_Level5_Titanskin",
+      "name": "Quoto the Absolute",
+      "names": {
+        "key": "CharacterData_nameKey-f0a7d5500f486af6-d9ff951fc3613b147866441731557542-v2",
+        "english": "Quoto the Absolute",
+        "french": "Quoto l'Absolu",
+        "german": "Quoto der Volkommene",
+        "russian": "Квото Абсолютный",
+        "portuguese": "Quoto, o Absoluto",
+        "chinese": "专制者库尔托",
+        "spanish": "Quoto el Absoluto",
+        "chinese_traditional": "『絕對』庫托",
+        "korean": "절대자 쿼토",
+        "japanese": "絶対のクオート"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-2727f719c82e4f31-d9ff951fc3613b147866441731557542-v2",
+          "english": "Quoto believed in the beauty of Heaven above all else. And now he believes in the beauty of something beyond it.",
+          "french": "Quoto croyait à la beauté du paradis avant tout. Aujourd'hui, il croit en la beauté de quelque chose de plus grand.",
+          "german": "Quoto glaubte vor allem an die Schönheit des Himmels. Jetzt glaubt er auch an die Schönheit von etwas, das darüber hinausgeht.",
+          "russian": "Раньше Квото преклонялся перед величием Рая, а теперь преклоняется перед величием места, находящегося за его пределами.",
+          "portuguese": "Quoto acreditava na beleza do Céu acima de tudo. E agora ele acredita na beleza de algo além.",
+          "chinese": "库尔托曾坚信天堂的美高于一切。现在他相信还有比天堂更美的存在。",
+          "spanish": "Quoto creía en la belleza del Cielo sobre todo lo demás. Ahora cree en la belleza de algo más allá del Cielo.",
+          "chinese_traditional": "庫托曾經認為天堂之美勝過一切。如今他信仰著超越天堂的某種存在。",
+          "korean": "쿼토는 무엇보다도 천상의 아름다움을 믿었다. 그리고 이제, 그는 그 너머의 아름다움을 믿는다.",
+          "japanese": "クオートは何よりも天界の美しさを信じていた。そして今彼は、それを超越した何かの美しさを信じている。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_QuotoTheAbsolute.prefab",
+        "asset_guid": "f7a704695e4ac8347a702695d2446e95"
+      },
+      "impact_vfx": "@Boss_Level5_Titanskin.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "titanskin",
+          "count": 40
+        }
+      ],
+      "triggers": [
+        "@Boss_Level5_Titanskin.triggers0"
+      ],
+      "endless_stats": {
+        "attack": 20,
+        "health": 2700
+      },
+      "size": 4,
+      "health": 900,
+      "is_mini_boss": true,
+      "death_type": "large",
+      "attack_damage": 16,
+      "subtypes": [
+        "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
+        "SubtypesData_Boss",
+        "SubtypesData_BossAll"
+      ],
+      "chatter": "Boss5_Quoto_ChatterData",
+      "artist": "Ishmael E. Hoover"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_QuotoTheAbsolute.prefab",
-    "m_AssetGUID": "f7a704695e4ac8347a702695d2446e95"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "titanskin",
-      "count": 40
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "Boss_Level5_Titanskin.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-a97ebd54e18bc57d-d9ff951fc3613b147866441731557542-v2",
         "english": "Lose [titanskin] [effect0.status0.power].",
         "french": "Perdez [titanskin] [effect0.status0.power].",
@@ -68,34 +86,31 @@
       },
       "trigger": "on_hit",
       "effects": [
+        "@Boss_Level5_Titanskin.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Boss_Level5_Titanskin.triggers0.effects0",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectRemoveStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "heroes",
-          "paramStatusEffects": [
-            {
-              "statusId": "titanskin",
-              "count": 1
-            }
-          ]
+          "status": "titanskin",
+          "count": 1
         }
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 2700,
-    "endlessAttack": 20
-  },
-  "size": 4,
-  "health": 900,
-  "isMiniboss": true,
-  "deathType": "large",
-  "attackDamage": 16,
-  "subtypeKeys": [
-    "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
-    "SubtypesData_Boss",
-    "SubtypesData_BossAll"
-  ],
-  "characterChatterData": "Boss5_Quoto_ChatterData",
-  "artistAttribution": "Ishmael E. Hoover"
+  "vfxs": [
+    {
+      "id": "Boss_Level5_Titanskin.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

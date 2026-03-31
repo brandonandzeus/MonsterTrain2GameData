@@ -1,56 +1,60 @@
 {
-  "id": "MonsterReveler",
-  "guid": "b675ae9c-5ad7-4d5d-868c-36bf48a4513b",
-  "name": "Punk Shredder",
-  "nameKey": {
-    "key": "CharacterData_nameKey-c074cd51bccc3717-54e8b9e60183e9240b23366993848372-v2",
-    "english": "Punk Shredder",
-    "french": "Guitariste punk",
-    "german": "Punk-Shredder",
-    "russian": "Панк-Курлокер",
-    "portuguese": "Roqueiro Brigão",
-    "chinese": "朋克吉他手",
-    "spanish": "Guitarrista punk",
-    "chinese_traditional": "龐克粉碎者",
-    "korean": "펑크 분쇄자",
-    "japanese": "パンク・シュレッダー"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-82acdf78a41aa046-54e8b9e60183e9240b23366993848372-v2",
-      "english": "“Punk rock will always be there for you when nothing else will.”",
-      "french": "<nobr>« Le</nobr> punk rock sera toujours là pour vous quand tout le reste vous fera <nobr>défaut. »</nobr>",
-      "german": "„Selbst, wenn alle dich allein lassen – Punkrock ist immer für dich da.“",
-      "russian": "«Панк-рок спасет тебя даже там, где не спасет никто другой».",
-      "portuguese": "“O punk rock nunca deixará você na mão.”",
-      "chinese": "“当你一无所有之时，朋克摇滚会一直陪伴着你。”",
-      "spanish": "«Cuando no te quede nada más, el punk rock seguirá ahí, a tu lado».",
-      "chinese_traditional": "「當其他一切都不在時，龐克搖滾依舊永遠在你身邊。」",
-      "korean": "\"곁에 아무도 없어도, 펑크 록은 언제나 너와 함께 있을 거야.\"",
-      "japanese": "「すべてを失ったと思えるときにも、パンクロックは常にそこにある」"
+      "id": "MonsterReveler",
+      "name": "Punk Shredder",
+      "names": {
+        "key": "CharacterData_nameKey-c074cd51bccc3717-54e8b9e60183e9240b23366993848372-v2",
+        "english": "Punk Shredder",
+        "french": "Guitariste punk",
+        "german": "Punk-Shredder",
+        "russian": "Панк-Курлокер",
+        "portuguese": "Roqueiro Brigão",
+        "chinese": "朋克吉他手",
+        "spanish": "Guitarrista punk",
+        "chinese_traditional": "龐克粉碎者",
+        "korean": "펑크 분쇄자",
+        "japanese": "パンク・シュレッダー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-82acdf78a41aa046-54e8b9e60183e9240b23366993848372-v2",
+          "english": "“Punk rock will always be there for you when nothing else will.”",
+          "french": "<nobr>« Le</nobr> punk rock sera toujours là pour vous quand tout le reste vous fera <nobr>défaut. »</nobr>",
+          "german": "„Selbst, wenn alle dich allein lassen – Punkrock ist immer für dich da.“",
+          "russian": "«Панк-рок спасет тебя даже там, где не спасет никто другой».",
+          "portuguese": "“O punk rock nunca deixará você na mão.”",
+          "chinese": "“当你一无所有之时，朋克摇滚会一直陪伴着你。”",
+          "spanish": "«Cuando no te quede nada más, el punk rock seguirá ahí, a tu lado».",
+          "chinese_traditional": "「當其他一切都不在時，龐克搖滾依舊永遠在你身邊。」",
+          "korean": "\"곁에 아무도 없어도, 펑크 록은 언제나 너와 함께 있을 거야.\"",
+          "japanese": "「すべてを失ったと思えるときにも、パンクロックは常にそこにある」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_PunkrockReveler.prefab",
+        "asset_guid": "f4d3d1e130138c14080b95770db37c4b"
+      },
+      "projectile_vfx": "@MonsterReveler.projectilePrefab",
+      "impact_vfx": "@MonsterReveler.impactVFX",
+      "triggers": [
+        "@MonsterReveler.triggers0"
+      ],
+      "size": 1,
+      "health": 2,
+      "attack_damage": 2,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Hymnist"
+      ],
+      "chatter": "BanishedPunkrockRevelerChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_PunkrockReveler.prefab",
-    "m_AssetGUID": "f4d3d1e130138c14080b95770db37c4b"
-  },
-  "projectilePrefab": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistAttack.prefab",
-      "m_AssetGUID": "05e0702acde89074cbee9d97506515ff"
-    },
-    "spawnLocation": "character_side_fwd_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistImpact.prefab",
-      "m_AssetGUID": "dbc3d7264f40bc94791c3a4880396f2c"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MonsterReveler.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-e8eefd24f8dbac6d-54e8b9e60183e9240b23366993848372-v2",
         "english": "Grant [trample].",
         "french": "Octroie [trample].",
@@ -65,27 +69,41 @@
       },
       "trigger": "after_spawn_enchant",
       "effects": [
-        {
-          "effectStateName": "CardEffectEnchant",
-          "targetMode": "room",
-          "targetTeamType": "monsters",
-          "paramStatusEffects": [
-            {
-              "statusId": "trample",
-              "count": 1
-            }
-          ],
-          "shouldTest": false
-        }
+        "@MonsterReveler.triggers0.effects0"
       ]
     }
   ],
-  "size": 1,
-  "health": 2,
-  "attackDamage": 2,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Hymnist"
+  "effects": [
+    {
+      "id": "MonsterReveler.triggers0.effects0",
+      "name": "CardEffectEnchant",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ],
+      "should_test": false
+    }
   ],
-  "characterChatterData": "BanishedPunkrockRevelerChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterReveler.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistAttack.prefab",
+        "asset_guid": "05e0702acde89074cbee9d97506515ff"
+      },
+      "spawn_location": "character_side_fwd_center"
+    },
+    {
+      "id": "MonsterReveler.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistImpact.prefab",
+        "asset_guid": "dbc3d7264f40bc94791c3a4880396f2c"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

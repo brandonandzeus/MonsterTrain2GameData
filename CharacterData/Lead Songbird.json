@@ -1,56 +1,60 @@
 {
-  "id": "MonsterLeadSongbird",
-  "guid": "b3610437-a454-4214-930f-b76cb91dac01",
-  "name": "Lead Songbird",
-  "nameKey": {
-    "key": "CharacterData_nameKey-5d4e4bbb4e1934bd-6184fbe5823cdd6489edc84a3eaa99ba-v2",
-    "english": "Lead Songbird",
-    "french": "Oiseau chanteur",
-    "german": "Singvogel-Anführer",
-    "russian": "Пернатый Прим",
-    "portuguese": "Ave Vocalista",
-    "chinese": "领唱鸣鸟",
-    "spanish": "Ave cantora líder",
-    "chinese_traditional": "領唱鳥",
-    "korean": "리드 싱어 송버드",
-    "japanese": "リード・ソングバード"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-7361461661c9d03f-6184fbe5823cdd6489edc84a3eaa99ba-v2",
-      "english": "“Holding the mic in my feet, \nDestroying enemies to the beat,\nWon’t ever admit defeat!”",
-      "french": "<nobr>« Micro</nobr> en main,\nj'écrase mes ennemis dans un refrain,\nma défaite c'est pas pour <nobr>demain ! »</nobr>",
-      "german": "„Singend vernichtet,\nmeine Feinde sind machtlos.\nIch gebe nie auf!“",
-      "russian": "«В лапке сжимаю я микрофон,\n Вместо мелодии вражеский стон\nМы победим, если вместе петь\nВсем в унисон!»",
-      "portuguese": "“Segurando o microfone sem parar, \nÉ nessa batida que eu vou batalhar,\nNinguém vai me derrotar!”",
-      "chinese": "“金鸡独立单爪握麦，\n跟着节奏把敌人击败，\n我们绝不认输金刚不坏！”",
-      "spanish": "«¡Sin soltar el micro jamás,\ntumbando enemigos al compás,\nnunca me acallarán!».",
-      "chinese_traditional": "「腳握麥克風，\n跟著節拍將敵人破壞，\n永不承認失敗！」",
-      "korean": "\"발로 마이크를 쥐고,\n비트에 맞춰 적을 박살내지,\n저들은 절대 패배를 인정하지 않을 거야!\"",
-      "japanese": "「前足でマイクを掴み、\nビートで敵を刻み、\n敗北は認めない！」"
+      "id": "MonsterLeadSongbird",
+      "name": "Lead Songbird",
+      "names": {
+        "key": "CharacterData_nameKey-5d4e4bbb4e1934bd-6184fbe5823cdd6489edc84a3eaa99ba-v2",
+        "english": "Lead Songbird",
+        "french": "Oiseau chanteur",
+        "german": "Singvogel-Anführer",
+        "russian": "Пернатый Прим",
+        "portuguese": "Ave Vocalista",
+        "chinese": "领唱鸣鸟",
+        "spanish": "Ave cantora líder",
+        "chinese_traditional": "領唱鳥",
+        "korean": "리드 싱어 송버드",
+        "japanese": "リード・ソングバード"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-7361461661c9d03f-6184fbe5823cdd6489edc84a3eaa99ba-v2",
+          "english": "“Holding the mic in my feet, \nDestroying enemies to the beat,\nWon’t ever admit defeat!”",
+          "french": "<nobr>« Micro</nobr> en main,\nj'écrase mes ennemis dans un refrain,\nma défaite c'est pas pour <nobr>demain ! »</nobr>",
+          "german": "„Singend vernichtet,\nmeine Feinde sind machtlos.\nIch gebe nie auf!“",
+          "russian": "«В лапке сжимаю я микрофон,\n Вместо мелодии вражеский стон\nМы победим, если вместе петь\nВсем в унисон!»",
+          "portuguese": "“Segurando o microfone sem parar, \nÉ nessa batida que eu vou batalhar,\nNinguém vai me derrotar!”",
+          "chinese": "“金鸡独立单爪握麦，\n跟着节奏把敌人击败，\n我们绝不认输金刚不坏！”",
+          "spanish": "«¡Sin soltar el micro jamás,\ntumbando enemigos al compás,\nnunca me acallarán!».",
+          "chinese_traditional": "「腳握麥克風，\n跟著節拍將敵人破壞，\n永不承認失敗！」",
+          "korean": "\"발로 마이크를 쥐고,\n비트에 맞춰 적을 박살내지,\n저들은 절대 패배를 인정하지 않을 거야!\"",
+          "japanese": "「前足でマイクを掴み、\nビートで敵を刻み、\n敗北は認めない！」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ScrappySongbird.prefab",
+        "asset_guid": "ba7dd6b55e0d51340a46ca9bb0c7bfa8"
+      },
+      "projectile_vfx": "@MonsterLeadSongbird.projectilePrefab",
+      "impact_vfx": "@MonsterLeadSongbird.impactVFX",
+      "room_modifiers": [
+        "@MonsterLeadSongbird.roomModifiers0"
+      ],
+      "size": 1,
+      "health": 2,
+      "attack_damage": 2,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Hymnist"
+      ],
+      "chatter": "BanishedScrappySongbirdChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ScrappySongbird.prefab",
-    "m_AssetGUID": "ba7dd6b55e0d51340a46ca9bb0c7bfa8"
-  },
-  "projectilePrefab": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistAttack.prefab",
-      "m_AssetGUID": "05e0702acde89074cbee9d97506515ff"
-    },
-    "spawnLocation": "character_side_fwd_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistImpact.prefab",
-      "m_AssetGUID": "dbc3d7264f40bc94791c3a4880396f2c"
-    },
-    "spawnLocation": "character_center"
-  },
-  "roomModifiers": [
+  "room_modifiers": [
     {
-      "descriptionKey": {
+      "id": "MonsterLeadSongbird.roomModifiers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-cedb7190d64e8075-6184fbe5823cdd6489edc84a3eaa99ba-v2",
         "english": "[valor] on friendly units adds <nobr>+[power][attack]</nobr> per stack.",
         "french": "La [valor] sur les alliés ajoute <nobr>+[power][attack]</nobr> par cumul.",
@@ -63,17 +67,26 @@
         "korean": "[valor] 효과를 지닌 아군 유닛들이 스택당 <nobr>+[power][attack]</nobr>을 획득합니다.",
         "japanese": "味方ユニットの[valor]の1スタックにつき<nobr>+[power][attack]</nobr>が追加される。"
       },
-      "descriptionKeyInPlay": "CharacterData_descriptionKeyInPlay-3afff8226f8f95d8-6184fbe5823cdd6489edc84a3eaa99ba-v2",
-      "roomStateModifierClassName": "RoomStateValorModifier",
-      "paramInt": 1
+      "name": "RoomStateValorModifier",
+      "param_int": 1
     }
   ],
-  "size": 1,
-  "health": 2,
-  "attackDamage": 2,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Hymnist"
-  ],
-  "characterChatterData": "BanishedScrappySongbirdChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterLeadSongbird.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistAttack.prefab",
+        "asset_guid": "05e0702acde89074cbee9d97506515ff"
+      },
+      "spawn_location": "character_side_fwd_center"
+    },
+    {
+      "id": "MonsterLeadSongbird.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Hymnists/FX_HymnistImpact.prefab",
+        "asset_guid": "dbc3d7264f40bc94791c3a4880396f2c"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

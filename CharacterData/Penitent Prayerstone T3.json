@@ -1,74 +1,86 @@
 {
-  "id": "SpikyRockT3_BasicNonAttack",
-  "guid": "c375a1bc-d9bd-4ed5-b03c-68ca40323473",
-  "name": "Penitent Prayerstone T3",
-  "nameKey": {
-    "key": "CharacterData_nameKey-0988b763527c55b2-e73fc9e1d439fde419d59c3f4aed1d81-v2",
-    "english": "Penitent Prayerstone",
-    "french": "Pierre offertoire de pénitent",
-    "german": "Büßer-Gebetstein",
-    "russian": "Статуя покаяния",
-    "portuguese": "Pedra de Oração do Penitente",
-    "chinese": "虔信者祷告石",
-    "spanish": "Piedra oratoria penitente",
-    "chinese_traditional": "懺悔者祈禱石",
-    "korean": "참회의 기도석",
-    "japanese": "悔悟者の祈念石"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-6d75654ac359c390-e73fc9e1d439fde419d59c3f4aed1d81-v2",
-      "english": "These statues were around long before the Titans came. No one knows what made them, or who these angels once were...",
-      "french": "Ces statues existaient bien avant l'arrivée des titans. Personne ne sait comment elles ont été fabriquées, ni qui étaient ces anges...",
-      "german": "Diese Statuen gab es schon lange vor den Titanen. Niemand weiß, wie sie entstanden sind oder wer diese Engel einst waren ...",
-      "russian": "Статуи появились задолго до прихода титанов. Никто не знает, кто их создал и кем были эти ангелы...",
-      "portuguese": "Essas estátuas já existiam muito antes da chegada dos Titãs. Ninguém sabe o que as criou ou quem foram esses anjos...",
-      "chinese": "早在泰坦来临之前，这些雕像就已经在这了。没有人知道是谁建造了这些雕像，也没有人知道这些天使曾经到底是谁……",
-      "spanish": "Estas estatuas llevan aquí mucho más tiempo que los titanes. Nadie sabe quién las esculpió ni quiénes fueron estos ángeles...",
-      "chinese_traditional": "這些雕像在泰坦到來之前就已經存在。沒人知道是誰製造了它們，或者這些天使曾經是誰……",
-      "korean": "이 석상은 티탄이 이 세계에 나타나기 전부터 존재했다. 이것들이 어떤 목적으로 만들어졌으며, 어떤 천사를 모사한 것인지는 아무도 모른다...",
-      "japanese": "これらの像は、巨人族が来るずっと前から存在していた。何がこれらの像を作ったのか、またこれらの天使たちが何者であったのかは誰も知らない…"
-    }
-  ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PenitentPrayerstone.prefab",
-    "m_AssetGUID": "a953cfe7dcfc13540bfccc254d88d305"
-  },
-  "startingStatusEffects": [
-    {
-      "statusId": "spikes",
-      "count": 6
-    }
-  ],
-  "triggers": [
-    {
-      "trigger": "on_spawn",
-      "effects": [
+      "id": "SpikyRockT3_BasicNonAttack",
+      "name": "Penitent Prayerstone T3",
+      "names": {
+        "key": "CharacterData_nameKey-0988b763527c55b2-e73fc9e1d439fde419d59c3f4aed1d81-v2",
+        "english": "Penitent Prayerstone",
+        "french": "Pierre offertoire de pénitent",
+        "german": "Büßer-Gebetstein",
+        "russian": "Статуя покаяния",
+        "portuguese": "Pedra de Oração do Penitente",
+        "chinese": "虔信者祷告石",
+        "spanish": "Piedra oratoria penitente",
+        "chinese_traditional": "懺悔者祈禱石",
+        "korean": "참회의 기도석",
+        "japanese": "悔悟者の祈念石"
+      },
+      "lore_tooltips": [
         {
-          "effectStateName": "CardEffectFloorRearrange",
-          "targetMode": "self",
-          "targetTeamType": "none"
-        },
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramStatusEffects": [
-            {
-              "statusId": "immobile",
-              "count": 1
-            }
-          ]
+          "key": "CharacterData_data-6d75654ac359c390-e73fc9e1d439fde419d59c3f4aed1d81-v2",
+          "english": "These statues were around long before the Titans came. No one knows what made them, or who these angels once were...",
+          "french": "Ces statues existaient bien avant l'arrivée des titans. Personne ne sait comment elles ont été fabriquées, ni qui étaient ces anges...",
+          "german": "Diese Statuen gab es schon lange vor den Titanen. Niemand weiß, wie sie entstanden sind oder wer diese Engel einst waren ...",
+          "russian": "Статуи появились задолго до прихода титанов. Никто не знает, кто их создал и кем были эти ангелы...",
+          "portuguese": "Essas estátuas já existiam muito antes da chegada dos Titãs. Ninguém sabe o que as criou ou quem foram esses anjos...",
+          "chinese": "早在泰坦来临之前，这些雕像就已经在这了。没有人知道是谁建造了这些雕像，也没有人知道这些天使曾经到底是谁……",
+          "spanish": "Estas estatuas llevan aquí mucho más tiempo que los titanes. Nadie sabe quién las esculpió ni quiénes fueron estos ángeles...",
+          "chinese_traditional": "這些雕像在泰坦到來之前就已經存在。沒人知道是誰製造了它們，或者這些天使曾經是誰……",
+          "korean": "이 석상은 티탄이 이 세계에 나타나기 전부터 존재했다. 이것들이 어떤 목적으로 만들어졌으며, 어떤 천사를 모사한 것인지는 아무도 모른다...",
+          "japanese": "これらの像は、巨人族が来るずっと前から存在していた。何がこれらの像を作ったのか、またこれらの天使たちが何者であったのかは誰も知らない…"
         }
       ],
-      "hideVisualAndIgnoreSilence": true
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PenitentPrayerstone.prefab",
+        "asset_guid": "a953cfe7dcfc13540bfccc254d88d305"
+      },
+      "starting_status_effects": [
+        {
+          "status": "spikes",
+          "count": 6
+        }
+      ],
+      "triggers": [
+        "@SpikyRockT3_BasicNonAttack.triggers0"
+      ],
+      "size": 3,
+      "health": 200,
+      "can_attack": false,
+      "ascends_train_automatically": false,
+      "attack_damage": 0,
+      "chatter": "StatueChatterData",
+      "artist": "Lauren Russo"
     }
   ],
-  "size": 3,
-  "health": 200,
-  "canAttack": false,
-  "ascendsTrainAutomatically": false,
-  "attackDamage": 0,
-  "characterChatterData": "StatueChatterData",
-  "artistAttribution": "Lauren Russo"
+  "character_triggers": [
+    {
+      "id": "SpikyRockT3_BasicNonAttack.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@SpikyRockT3_BasicNonAttack.triggers0.effects0",
+        "@SpikyRockT3_BasicNonAttack.triggers0.effects1"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpikyRockT3_BasicNonAttack.triggers0.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self"
+    },
+    {
+      "id": "SpikyRockT3_BasicNonAttack.triggers0.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "immobile",
+          "count": 1
+        }
+      ]
+    }
+  ]
 }

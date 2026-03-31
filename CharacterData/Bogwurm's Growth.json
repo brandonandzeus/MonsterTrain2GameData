@@ -1,71 +1,83 @@
 {
-  "id": "PyreHeartBogworm",
-  "guid": "c2636669-3937-40a2-8cdc-278e4ff76d87",
-  "name": "Bogwurm's Growth",
-  "nameKey": {
-    "key": "CharacterData_nameKey-387774a115c5ec99-1c16958f139fc0546ba85bc615084434-v2",
-    "english": "Bogwurm's Growth",
-    "french": "Croissance du Vermarais",
-    "german": "Sumpfwurm-Wachstum",
-    "russian": "Нарост Болотного Червя",
-    "portuguese": "Crescimento de Vormoide",
-    "chinese": "帕格乌的生长",
-    "spanish": "Crecimiento de Sierpe",
-    "chinese_traditional": "沼蟲生長",
-    "korean": "보그웜의 성장",
-    "japanese": "ボグワームの巨体"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Bogwurm.prefab",
-    "m_AssetGUID": "a05e94daeaf33f74aa288517e19f36de"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/PyreFX/Bogwurms/FX_BogwurmPyreAttack.prefab",
-      "m_AssetGUID": "89a2b18ee5e60374b9b598928ad08c19"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
-      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/PyreFX/Bogwurms/FX_BogwurmPyreDeath.prefab",
-      "m_AssetGUID": "f831d0be4b7695847ac12ba79c5cb063"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "sweep",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    },
-    {
-      "statusId": "immune",
-      "count": 1
+      "id": "PyreHeartBogworm",
+      "name": "Bogwurm's Growth",
+      "names": {
+        "key": "CharacterData_nameKey-387774a115c5ec99-1c16958f139fc0546ba85bc615084434-v2",
+        "english": "Bogwurm's Growth",
+        "french": "Croissance du Vermarais",
+        "german": "Sumpfwurm-Wachstum",
+        "russian": "Нарост Болотного Червя",
+        "portuguese": "Crescimento de Vormoide",
+        "chinese": "帕格乌的生长",
+        "spanish": "Crecimiento de Sierpe",
+        "chinese_traditional": "沼蟲生長",
+        "korean": "보그웜의 성장",
+        "japanese": "ボグワームの巨体"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Bogwurm.prefab",
+        "asset_guid": "a05e94daeaf33f74aa288517e19f36de"
+      },
+      "attack_vfx": "@PyreHeartBogworm.attackVFX",
+      "impact_vfx": "@PyreHeartBogworm.impactVFX",
+      "death_vfx": "@PyreHeartBogworm.deathVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "immune",
+          "count": 1
+        }
+      ],
+      "size": 2,
+      "health": 1,
+      "can_be_healed": false,
+      "attack_damage": 1,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Pyre"
+      ],
+      "chatter": "PyreHeartChatter",
+      "is_pyre_heart": true
     }
   ],
-  "size": 2,
-  "health": 1,
-  "canBeHealed": false,
-  "attackDamage": 1,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Pyre"
-  ],
-  "characterChatterData": "PyreHeartChatter",
-  "isPyreHeart": true
+  "vfxs": [
+    {
+      "id": "PyreHeartBogworm.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/PyreFX/Bogwurms/FX_BogwurmPyreAttack.prefab",
+        "asset_guid": "89a2b18ee5e60374b9b598928ad08c19"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartBogworm.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+        "asset_guid": "d465da54296b79d4299ab63c1d6eadba"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartBogworm.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/PyreFX/Bogwurms/FX_BogwurmPyreDeath.prefab",
+        "asset_guid": "f831d0be4b7695847ac12ba79c5cb063"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,55 +1,66 @@
 {
-  "id": "MonsterZealot",
-  "guid": "0bdc2804-1a9d-41bd-bd85-4bf579453ec2",
-  "name": "Zealot",
-  "nameKey": {
-    "key": "CharacterData_nameKey-f28becf40de0161a-8424d723c9ab4bb4f802296efb464a08-v2",
-    "english": "Zealot",
-    "french": "Zélote",
-    "german": "Fanatiker",
-    "russian": "Зилот",
-    "portuguese": "Fanático",
-    "chinese": "狂热者",
-    "spanish": "Fanático",
-    "chinese_traditional": "狂熱者",
-    "korean": "광신도",
-    "japanese": "ジーロット"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-37a87240f7bd8edb-8424d723c9ab4bb4f802296efb464a08-v2",
-      "english": "Debtors to the Pyreborne imprisoned in The Pit learn that the Zealot’s tongue is just as harsh as their whip.",
-      "french": "Les débiteurs des Draconides emprisonnés dans la Fosse apprennent que la langue des zélotes est aussi cinglante que leur fouet.",
-      "german": "Die in der Grube inhaftierten Schuldner der Höllenglutkinder erfahren, dass die Zunge des Fanatikers genauso scharf ist wie seine Peitsche.",
-      "russian": "Заключенные в Яме должники Пеклорожденных, очень скоро узнают, что язык у зилота так же жгуч, как и его кнут.",
-      "portuguese": "Os devedores dos Píricos aprisionados no Fosso aprendem que a língua dos Fanáticos é tão afiada quanto o chicote deles.",
-      "chinese": "被薪龙族囚禁在深渊的欠债人知道，狂热者的舌头和鞭子一样无情。",
-      "spanish": "Los deudores de los Hijos de la Pira encerrados en el Foso descubren que la lengua del fanático es tan hiriente como su látigo.",
-      "chinese_traditional": "在深坑中被囚禁的火焰之子債務人明白了一件事，那就是狂熱者的舌頭跟鞭子一樣嚴厲。",
-      "korean": "구덩이에 갇힌 화로의 후예 클랜의 징집관은 광신도가 내두르는 혀가 채찍만큼 가혹하다는 것을 알게 된다.",
-      "japanese": "地下牢に幽閉された火竜族の債務者は、ジーロットの舌は鞭ほど苛烈であることを知ることになる。"
+      "id": "MonsterZealot",
+      "name": "Zealot",
+      "names": {
+        "key": "CharacterData_nameKey-f28becf40de0161a-8424d723c9ab4bb4f802296efb464a08-v2",
+        "english": "Zealot",
+        "french": "Zélote",
+        "german": "Fanatiker",
+        "russian": "Зилот",
+        "portuguese": "Fanático",
+        "chinese": "狂热者",
+        "spanish": "Fanático",
+        "chinese_traditional": "狂熱者",
+        "korean": "광신도",
+        "japanese": "ジーロット"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-37a87240f7bd8edb-8424d723c9ab4bb4f802296efb464a08-v2",
+          "english": "Debtors to the Pyreborne imprisoned in The Pit learn that the Zealot’s tongue is just as harsh as their whip.",
+          "french": "Les débiteurs des Draconides emprisonnés dans la Fosse apprennent que la langue des zélotes est aussi cinglante que leur fouet.",
+          "german": "Die in der Grube inhaftierten Schuldner der Höllenglutkinder erfahren, dass die Zunge des Fanatikers genauso scharf ist wie seine Peitsche.",
+          "russian": "Заключенные в Яме должники Пеклорожденных, очень скоро узнают, что язык у зилота так же жгуч, как и его кнут.",
+          "portuguese": "Os devedores dos Píricos aprisionados no Fosso aprendem que a língua dos Fanáticos é tão afiada quanto o chicote deles.",
+          "chinese": "被薪龙族囚禁在深渊的欠债人知道，狂热者的舌头和鞭子一样无情。",
+          "spanish": "Los deudores de los Hijos de la Pira encerrados en el Foso descubren que la lengua del fanático es tan hiriente como su látigo.",
+          "chinese_traditional": "在深坑中被囚禁的火焰之子債務人明白了一件事，那就是狂熱者的舌頭跟鞭子一樣嚴厲。",
+          "korean": "구덩이에 갇힌 화로의 후예 클랜의 징집관은 광신도가 내두르는 혀가 채찍만큼 가혹하다는 것을 알게 된다.",
+          "japanese": "地下牢に幽閉された火竜族の債務者は、ジーロットの舌は鞭ほど苛烈であることを知ることになる。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Zealot.prefab",
+        "asset_guid": "31000643a5514d34e89ed5d3744545ff"
+      },
+      "impact_vfx": "@MonsterZealot.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@MonsterZealot.triggers0"
+      ],
+      "size": 2,
+      "health": 20,
+      "ascends_train_automatically": false,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Dragon"
+      ],
+      "chatter": "PyreborneDragonChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Zealot.prefab",
-    "m_AssetGUID": "31000643a5514d34e89ed5d3744545ff"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
-      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "sweep",
-      "count": 1
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "MonsterZealot.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-c34bcff916be9bc6-8424d723c9ab4bb4f802296efb464a08-v2",
         "english": "Apply [pyregel] [effect0.status0.power] to enemy units.",
         "french": "Inflige [pyregel] [effect0.status0.power] aux unités ennemies.",
@@ -64,27 +75,32 @@
       },
       "trigger": "on_turn_begin",
       "effects": [
+        "@MonsterZealot.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterZealot.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "room",
-          "targetTeamType": "heroes",
-          "paramStatusEffects": [
-            {
-              "statusId": "pyregel",
-              "count": 5
-            }
-          ]
+          "status": "pyregel",
+          "count": 5
         }
       ]
     }
   ],
-  "size": 2,
-  "health": 20,
-  "ascendsTrainAutomatically": false,
-  "attackDamage": 10,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Dragon"
-  ],
-  "characterChatterData": "PyreborneDragonChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterZealot.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+        "asset_guid": "d465da54296b79d4299ab63c1d6eadba"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

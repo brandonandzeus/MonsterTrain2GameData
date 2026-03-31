@@ -1,48 +1,69 @@
 {
-  "id": "HeavyT1_LoseHealthOnMove_Chosen",
-  "guid": "3b756aef-4abc-415e-8035-cf01d2c3862e",
-  "name": "Chosen Flagellant",
-  "nameKey": {
-    "key": "CharacterData_nameKey-8bb5e50325713454-f80c5057ac6029d47b654a72a9b7d0a1-v2",
-    "english": "Chosen Flagellant",
-    "french": "Flagelleur élu",
-    "german": "Auserwählter Geißler",
-    "russian": "Избранный флагеллант",
-    "portuguese": "Flagelante Escolhido",
-    "chinese": "神选苦修者",
-    "spanish": "Flagelante elegido",
-    "chinese_traditional": "天選鞭笞者",
-    "korean": "선택받은 고행자",
-    "japanese": "選ばれしフラジェラント"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-5c0aec93bd2a55dc-f80c5057ac6029d47b654a72a9b7d0a1-v2",
-      "english": "Dominion saw an opportunity in the Flagellants and granted them strength in their misery.",
-      "french": "Domination a perçu le potentiel des Flagelleurs et leur a donné la force dans leur calvaire.",
-      "german": "Herrschaft sah in den Geißlern eine Chance und verlieh ihnen Kraft in ihrem Elend.",
-      "russian": "Доминиона впечатлили флагелланты, и он наделил этих несчастных силой.",
-      "portuguese": "O Domínio viu uma oportunidade nos Flagelantes e lhes concedeu força em sua miséria.",
-      "chinese": "统御泰坦在苦修者身上看到了机会，在他们受苦之际赐予其力量。",
-      "spanish": "Dominio vio una oportunidad en los flagelantes y les otorgó fuerza en su miseria.",
-      "chinese_traditional": "主宰在鞭笞者身上看到了機會，並藉由他們的痛苦來賦予他們力量。",
-      "korean": "도미니온은 고행자들에게 그들의 불행 속에서 힘을 부여할 기회를 보았다.",
-      "japanese": "ドミニオンはフラジェラントたちに利用価値を見出し、彼らの苦痛の中に力を与えた。"
+      "id": "HeavyT1_LoseHealthOnMove_Chosen",
+      "name": "Chosen Flagellant",
+      "names": {
+        "key": "CharacterData_nameKey-8bb5e50325713454-f80c5057ac6029d47b654a72a9b7d0a1-v2",
+        "english": "Chosen Flagellant",
+        "french": "Flagelleur élu",
+        "german": "Auserwählter Geißler",
+        "russian": "Избранный флагеллант",
+        "portuguese": "Flagelante Escolhido",
+        "chinese": "神选苦修者",
+        "spanish": "Flagelante elegido",
+        "chinese_traditional": "天選鞭笞者",
+        "korean": "선택받은 고행자",
+        "japanese": "選ばれしフラジェラント"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-5c0aec93bd2a55dc-f80c5057ac6029d47b654a72a9b7d0a1-v2",
+          "english": "Dominion saw an opportunity in the Flagellants and granted them strength in their misery.",
+          "french": "Domination a perçu le potentiel des Flagelleurs et leur a donné la force dans leur calvaire.",
+          "german": "Herrschaft sah in den Geißlern eine Chance und verlieh ihnen Kraft in ihrem Elend.",
+          "russian": "Доминиона впечатлили флагелланты, и он наделил этих несчастных силой.",
+          "portuguese": "O Domínio viu uma oportunidade nos Flagelantes e lhes concedeu força em sua miséria.",
+          "chinese": "统御泰坦在苦修者身上看到了机会，在他们受苦之际赐予其力量。",
+          "spanish": "Dominio vio una oportunidad en los flagelantes y les otorgó fuerza en su miseria.",
+          "chinese_traditional": "主宰在鞭笞者身上看到了機會，並藉由他們的痛苦來賦予他們力量。",
+          "korean": "도미니온은 고행자들에게 그들의 불행 속에서 힘을 부여할 기회를 보았다.",
+          "japanese": "ドミニオンはフラジェラントたちに利用価値を見出し、彼らの苦痛の中に力を与えた。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Flagellant_Chosen.prefab",
+        "asset_guid": "38cfc82e2a896894c8fed9269e7cac6a"
+      },
+      "starting_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@HeavyT1_LoseHealthOnMove_Chosen.triggers0"
+      ],
+      "endless_stats": {
+        "attack": 8,
+        "health": 250
+      },
+      "size": 2,
+      "health": 90,
+      "attack_damage": 3,
+      "chosen_variant": true,
+      "subtypes": [
+        "SubtypesData_HeavyT1"
+      ],
+      "chatter": "T1TitanEnemies_Male_ChatterData",
+      "artist": "Herrick Ong"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Flagellant_Chosen.prefab",
-    "m_AssetGUID": "38cfc82e2a896894c8fed9269e7cac6a"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "multistrike",
-      "count": 1
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "HeavyT1_LoseHealthOnMove_Chosen.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-716b4b784bf0ea14-f80c5057ac6029d47b654a72a9b7d0a1-v2",
         "english": "+[effect1.power][attack] and take [effect0.power] damage. ",
         "french": "+[effect1.power][attack] et subit <nobr>[effect0.power] DGT.</nobr>",
@@ -57,32 +78,23 @@
       },
       "trigger": "post_combat",
       "effects": [
-        {
-          "effectStateName": "CardEffectDamage",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramInt": 20
-        },
-        {
-          "effectStateName": "CardEffectBuffDamage",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramInt": 4
-        }
+        "@HeavyT1_LoseHealthOnMove_Chosen.triggers0.effects0",
+        "@HeavyT1_LoseHealthOnMove_Chosen.triggers0.effects1"
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 250,
-    "endlessAttack": 8
-  },
-  "size": 2,
-  "health": 90,
-  "attackDamage": 3,
-  "chosenVariant": true,
-  "subtypeKeys": [
-    "SubtypesData_HeavyT1"
-  ],
-  "characterChatterData": "T1TitanEnemies_Male_ChatterData",
-  "artistAttribution": "Herrick Ong"
+  "effects": [
+    {
+      "id": "HeavyT1_LoseHealthOnMove_Chosen.triggers0.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "self",
+      "param_int": 20
+    },
+    {
+      "id": "HeavyT1_LoseHealthOnMove_Chosen.triggers0.effects1",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "self",
+      "param_int": 4
+    }
+  ]
 }

@@ -1,48 +1,65 @@
 {
-  "id": "MonsterMoonguard",
-  "guid": "8ec41389-aad1-4db0-b4c2-29474f3181fd",
-  "name": "Moonguard",
-  "nameKey": {
-    "key": "CharacterData_nameKey-73ba47c01c9df112-98933fb5ab2094b48bda1f750d7b5288-v2",
-    "english": "Moonguard",
-    "french": "Garde lunaire",
-    "german": "Mondhüter",
-    "russian": "Лунный страж",
-    "portuguese": "Lunaguarda",
-    "chinese": "月之守卫",
-    "spanish": "Guardia lunar",
-    "chinese_traditional": "月光守衛",
-    "korean": "달 경비병",
-    "japanese": "ムーンガード"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-5265472aa87bee73-98933fb5ab2094b48bda1f750d7b5288-v2",
-      "english": "Although a gentle folk, the Moonguard had to put aside their love for learning and defend the coven during desperate times.",
-      "french": "Bien qu'il s'agisse d'un peuple pacifique, les Gardiens lunaires ont dû mettre de côté leur amour de l'apprentissage pour se défendre dans les situations désespérées.",
-      "german": "Die Mondhüter sind eigentlich sanftmütig, doch die schlimmen Zeiten zwangen sie dazu, die Verteidigung ihres Zirkels zu priorisieren.",
-      "russian": "В момент отчаяния добродушному Лунному стражу пришлось забыть о любимых учебниках и защищать свой ковен.",
-      "portuguese": "Apesar de ser um povo gentil, os Lunaguardas tiveram que deixar de lado seu amor pelo aprendizado e defender a Irmandade em momentos de desespero.",
-      "chinese": "虽然月之守卫是一群温文尔雅的人，但他们不得不放下他们对学习的热爱，只为在最绝望的时刻保卫月巫团。",
-      "spanish": "A pesar de su pacifismo, la Guardia Lunar ha dejado de lado su pasión por el aprendizaje para defender al Aquelarre en estos tiempos desesperados.",
-      "chinese_traditional": "月光守衛雖然是溫和的民族，但他們不得不在危急時刻放下對學習的熱愛來保衛女巫。",
-      "korean": "온화한 성격을 지녔음에도, 달 경비병은 절박한 시기 동안 그들이 사랑하던 학문을 버리고 성역을 지키는 데 힘을 쏟아야 했다.",
-      "japanese": "ムーンガードは温厚ではあるが、絶望的な状況においては学問への愛を脇に置いて一族を守らなければならなかった。"
+      "id": "MonsterMoonguard",
+      "name": "Moonguard",
+      "names": {
+        "key": "CharacterData_nameKey-73ba47c01c9df112-98933fb5ab2094b48bda1f750d7b5288-v2",
+        "english": "Moonguard",
+        "french": "Garde lunaire",
+        "german": "Mondhüter",
+        "russian": "Лунный страж",
+        "portuguese": "Lunaguarda",
+        "chinese": "月之守卫",
+        "spanish": "Guardia lunar",
+        "chinese_traditional": "月光守衛",
+        "korean": "달 경비병",
+        "japanese": "ムーンガード"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-5265472aa87bee73-98933fb5ab2094b48bda1f750d7b5288-v2",
+          "english": "Although a gentle folk, the Moonguard had to put aside their love for learning and defend the coven during desperate times.",
+          "french": "Bien qu'il s'agisse d'un peuple pacifique, les Gardiens lunaires ont dû mettre de côté leur amour de l'apprentissage pour se défendre dans les situations désespérées.",
+          "german": "Die Mondhüter sind eigentlich sanftmütig, doch die schlimmen Zeiten zwangen sie dazu, die Verteidigung ihres Zirkels zu priorisieren.",
+          "russian": "В момент отчаяния добродушному Лунному стражу пришлось забыть о любимых учебниках и защищать свой ковен.",
+          "portuguese": "Apesar de ser um povo gentil, os Lunaguardas tiveram que deixar de lado seu amor pelo aprendizado e defender a Irmandade em momentos de desespero.",
+          "chinese": "虽然月之守卫是一群温文尔雅的人，但他们不得不放下他们对学习的热爱，只为在最绝望的时刻保卫月巫团。",
+          "spanish": "A pesar de su pacifismo, la Guardia Lunar ha dejado de lado su pasión por el aprendizaje para defender al Aquelarre en estos tiempos desesperados.",
+          "chinese_traditional": "月光守衛雖然是溫和的民族，但他們不得不在危急時刻放下對學習的熱愛來保衛女巫。",
+          "korean": "온화한 성격을 지녔음에도, 달 경비병은 절박한 시기 동안 그들이 사랑하던 학문을 버리고 성역을 지키는 데 힘을 쏟아야 했다.",
+          "japanese": "ムーンガードは温厚ではあるが、絶望的な状況においては学問への愛を脇に置いて一族を守らなければならなかった。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Moonguard.prefab",
+        "asset_guid": "8b38cd7e4a5e8694081b807bf963f160"
+      },
+      "starting_status_effects": [
+        {
+          "status": "mageblade",
+          "count": 3
+        }
+      ],
+      "triggers": [
+        "@MonsterMoonguard.triggers0",
+        "@MonsterMoonguard.triggers1"
+      ],
+      "size": 2,
+      "health": 30,
+      "attack_damage": 30,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Silent"
+      ],
+      "chatter": "LunaCovenSilentChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Moonguard.prefab",
-    "m_AssetGUID": "8b38cd7e4a5e8694081b807bf963f160"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "mageblade",
-      "count": 3
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "MonsterMoonguard.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-eebb51e7edcdfc13-98933fb5ab2094b48bda1f750d7b5288-v2",
         "english": "[mageblade] [effect0.upgrade.status0.power].",
         "french": "[mageblade] [effect0.upgrade.status0.power].",
@@ -57,83 +74,66 @@
       },
       "trigger": "on_moon_shade",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramCardUpgradeData": {
-            "id": "Moonguard_Upgrade",
-            "guid": "a437b78a-285c-4b29-bfa1-3ee3b78f99c1",
-            "statusEffectUpgrades": [
-              {
-                "statusId": "mageblade",
-                "count": 3
-              }
-            ]
-          },
-          "additionalTooltips": [
-            {
-              "descriptionKey": {
-                "key": "CardTraitMagicPower_TooltipText",
-                "english": "Increases the amount of damage dealt and health restored by spells.",
-                "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-                "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-                "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-                "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-                "chinese": "提高法术造成的伤害与恢复的生命值。",
-                "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-                "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-                "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-                "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-              },
-              "titleKey": {
-                "key": "CardTraitMagicPower_TooltipTitle",
-                "english": "Magic Power",
-                "french": "Puissance magique",
-                "german": "Magische Kraft",
-                "russian": "Сила магии",
-                "portuguese": "Poder Mágico",
-                "chinese": "魔法强度",
-                "spanish": "Poder mágico",
-                "chinese_traditional": "魔法力量",
-                "korean": "마법력",
-                "japanese": "魔力"
-              }
-            }
-          ],
-          "additionalParamInt1": 1
-        }
+        "@MonsterMoonguard.triggers0.effects0"
       ]
     },
     {
+      "id": "MonsterMoonguard.triggers1",
       "trigger": "on_moonshade_lost",
       "effects": [
-        {
-          "effectStateName": "CardEffectRemoveTempUpgradeFromUnit",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramCardUpgradeData": {
-            "id": "Moonguard_Upgrade",
-            "guid": "a437b78a-285c-4b29-bfa1-3ee3b78f99c1",
-            "statusEffectUpgrades": [
-              {
-                "statusId": "mageblade",
-                "count": 3
-              }
-            ]
-          },
-          "paramBool": true
-        }
+        "@MonsterMoonguard.triggers1.effects0"
       ],
-      "hideVisualAndIgnoreSilence": true
+      "hide_visual_and_ignore_silence": true
     }
   ],
-  "size": 2,
-  "health": 30,
-  "attackDamage": 30,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Silent"
+  "effects": [
+    {
+      "id": "MonsterMoonguard.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "Moonguard_Upgrade",
+      "additional_tooltips": [
+        "@MonsterMoonguard.triggers0.effects0.additionalTooltips0"
+      ],
+      "param_int_3": 1
+    },
+    {
+      "id": "MonsterMoonguard.triggers1.effects0",
+      "name": "CardEffectRemoveTempUpgradeFromUnit",
+      "target_mode": "self",
+      "param_upgrade": "Moonguard_Upgrade",
+      "param_bool": true
+    }
   ],
-  "characterChatterData": "LunaCovenSilentChatterData"
+  "additional_tooltips": [
+    {
+      "id": "MonsterMoonguard.triggers0.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
+      }
+    }
+  ]
 }

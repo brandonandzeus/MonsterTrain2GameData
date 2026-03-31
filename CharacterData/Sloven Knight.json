@@ -1,42 +1,63 @@
 {
-  "id": "HeavyT1_BigAttackUpFront",
-  "guid": "4d618c9a-b092-43d3-b28f-63a6d3d4edaa",
-  "name": "Sloven Knight",
-  "nameKey": {
-    "key": "CharacterData_nameKey-28865601d004ecbd-ede7049ad3833e14e8f8730ec6a3e16b-v2",
-    "english": "Sloven Knight",
-    "french": "Chevalier négligé",
-    "german": "Schlampiger Ritter",
-    "russian": "Сломленный рыцарь",
-    "portuguese": "Cavaleiro Desleixado",
-    "chinese": "懒散的骑士",
-    "spanish": "Caballero desharrapado",
-    "chinese_traditional": "懶散騎士",
-    "korean": "더럽혀진 기사",
-    "japanese": "スロヴェン・ナイト"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-7e7ab9fceab4e5cf-ede7049ad3833e14e8f8730ec6a3e16b-v2",
-      "english": "Though Entropy weighs them down, if their blow finds purchase it is often devastating.",
-      "french": "Malgré le joug d'Entropie, si leur coup touche sa cible, il est souvent dévastateur.",
-      "german": "Wenngleich Entropie sie niederdrückt, ist ihr Hieb bei Erfolg dennoch zerstörerisch.",
-      "russian": "И хотя под тяжестью Энтропии они больше не летают, их точные удары часто бывают сокрушительными.",
-      "portuguese": "Embora a Entropia seja um peso para eles, um golpe deles geralmente é devastador.",
-      "chinese": "虽然混乱泰坦让他们不堪重负，但如果被他们的攻击击中，后果往往是毁灭性的。",
-      "spanish": "Aunque Entropía los ralentiza, sus ataques son devastadores si llegan a impactar.",
-      "chinese_traditional": "雖然熵使他們變得笨重，但如果他們的攻擊命中目標，結果通常是毀滅性的。",
-      "korean": "엔트로피의 압제에도 불구하고, 종종 이들이 발하는 강력한 일격은 실로 파괴적이다.",
-      "japanese": "エントロピーが重荷となってのしかかっているが、彼らの攻撃が当たれば致命的であることが多い。"
+      "id": "HeavyT1_BigAttackUpFront",
+      "name": "Sloven Knight",
+      "names": {
+        "key": "CharacterData_nameKey-28865601d004ecbd-ede7049ad3833e14e8f8730ec6a3e16b-v2",
+        "english": "Sloven Knight",
+        "french": "Chevalier négligé",
+        "german": "Schlampiger Ritter",
+        "russian": "Сломленный рыцарь",
+        "portuguese": "Cavaleiro Desleixado",
+        "chinese": "懒散的骑士",
+        "spanish": "Caballero desharrapado",
+        "chinese_traditional": "懶散騎士",
+        "korean": "더럽혀진 기사",
+        "japanese": "スロヴェン・ナイト"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-7e7ab9fceab4e5cf-ede7049ad3833e14e8f8730ec6a3e16b-v2",
+          "english": "Though Entropy weighs them down, if their blow finds purchase it is often devastating.",
+          "french": "Malgré le joug d'Entropie, si leur coup touche sa cible, il est souvent dévastateur.",
+          "german": "Wenngleich Entropie sie niederdrückt, ist ihr Hieb bei Erfolg dennoch zerstörerisch.",
+          "russian": "И хотя под тяжестью Энтропии они больше не летают, их точные удары часто бывают сокрушительными.",
+          "portuguese": "Embora a Entropia seja um peso para eles, um golpe deles geralmente é devastador.",
+          "chinese": "虽然混乱泰坦让他们不堪重负，但如果被他们的攻击击中，后果往往是毁灭性的。",
+          "spanish": "Aunque Entropía los ralentiza, sus ataques son devastadores si llegan a impactar.",
+          "chinese_traditional": "雖然熵使他們變得笨重，但如果他們的攻擊命中目標，結果通常是毀滅性的。",
+          "korean": "엔트로피의 압제에도 불구하고, 종종 이들이 발하는 강력한 일격은 실로 파괴적이다.",
+          "japanese": "エントロピーが重荷となってのしかかっているが、彼らの攻撃が当たれば致命的であることが多い。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SlovenKnight.prefab",
+        "asset_guid": "bab205d35068e754b8b6b825c0ab8cd8"
+      },
+      "triggers": [
+        "@HeavyT1_BigAttackUpFront.triggers0",
+        "@HeavyT1_BigAttackUpFront.triggers1"
+      ],
+      "endless_stats": {
+        "attack": 12,
+        "health": 120
+      },
+      "size": 2,
+      "health": 50,
+      "attack_damage": 2,
+      "subtypes": [
+        "SubtypesData_HeavyT1"
+      ],
+      "chatter": "T1TitanEnemies_Male_ChatterData",
+      "artist": "Genevieve Bega"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SlovenKnight.prefab",
-    "m_AssetGUID": "bab205d35068e754b8b6b825c0ab8cd8"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "HeavyT1_BigAttackUpFront.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-7f15ed64abd330c9-ede7049ad3833e14e8f8730ec6a3e16b-v2",
         "english": "+[effect0.power][attack].",
         "french": "+[effect0.power][attack].",
@@ -51,36 +72,29 @@
       },
       "trigger": "on_deathwish",
       "effects": [
-        {
-          "effectStateName": "CardEffectBuffDamage",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramInt": 8
-        }
+        "@HeavyT1_BigAttackUpFront.triggers0.effects0"
       ]
     },
     {
+      "id": "HeavyT1_BigAttackUpFront.triggers1",
       "trigger": "on_deathwish_lost",
       "effects": [
-        {
-          "effectStateName": "CardEffectDebuffDamage",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramInt": 8
-        }
+        "@HeavyT1_BigAttackUpFront.triggers1.effects0"
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 120,
-    "endlessAttack": 12
-  },
-  "size": 2,
-  "health": 50,
-  "attackDamage": 2,
-  "subtypeKeys": [
-    "SubtypesData_HeavyT1"
-  ],
-  "characterChatterData": "T1TitanEnemies_Male_ChatterData",
-  "artistAttribution": "Genevieve Bega"
+  "effects": [
+    {
+      "id": "HeavyT1_BigAttackUpFront.triggers0.effects0",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "self",
+      "param_int": 8
+    },
+    {
+      "id": "HeavyT1_BigAttackUpFront.triggers1.effects0",
+      "name": "CardEffectDebuffDamage",
+      "target_mode": "self",
+      "param_int": 8
+    }
+  ]
 }

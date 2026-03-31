@@ -1,56 +1,65 @@
 {
-  "id": "AttackerT2_HunterSeeker",
-  "guid": "e7a07af5-6b6e-40f2-862a-a6e59f8d8d1b",
-  "name": "Sharp-Eye Sniper",
-  "nameKey": {
-    "key": "CharacterData_nameKey-763b79fef71c3914-9b11d41a3e89fa2428d8ae27fb3040fd-v2",
-    "english": "Sharp-Eye Sniper",
-    "french": "Tireur Vif-œil",
-    "german": "Scharfsichtiger Schütze",
-    "russian": "Зоркий стрелок",
-    "portuguese": "Atirador de Elite",
-    "chinese": "锐眼狙击手",
-    "spanish": "Tirador certero",
-    "chinese_traditional": "銳眼狙擊手",
-    "korean": "예리한 저격수",
-    "japanese": "シャープアイ・スナイパー"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-991cd11acd23eabb-9b11d41a3e89fa2428d8ae27fb3040fd-v2",
-      "english": "Spiteful and always looking for the next kill to appear in their sight.",
-      "french": "Méchants et toujours à la recherche de la prochaine victime qui aura le malheur d'apparaître dans leur champ de vision.",
-      "german": "Boshaft und immer auf der Suche nach ihrem nächsten Opfer.",
-      "russian": "Злобные и всегда ищут, кого бы еще убить.",
-      "portuguese": "Mal-intencionados e sempre procurando a próxima vítima aparecer em sua mira.",
-      "chinese": "他们满怀恶意，不断寻找下一个出现在他们视线中的杀戮对象。",
-      "spanish": "Lleno de rencor y siempre en busca de su próxima víctima.",
-      "chinese_traditional": "充滿怨恨，且總是在尋找下一個出現在視線中的獵物。",
-      "korean": "악의가 가득한 이들은 항상 다음 사냥감을 찾아다닌다.",
-      "japanese": "悪意に満ちており、常に次の獲物を狙っている。"
+      "id": "AttackerT2_HunterSeeker",
+      "name": "Sharp-Eye Sniper",
+      "names": {
+        "key": "CharacterData_nameKey-763b79fef71c3914-9b11d41a3e89fa2428d8ae27fb3040fd-v2",
+        "english": "Sharp-Eye Sniper",
+        "french": "Tireur Vif-œil",
+        "german": "Scharfsichtiger Schütze",
+        "russian": "Зоркий стрелок",
+        "portuguese": "Atirador de Elite",
+        "chinese": "锐眼狙击手",
+        "spanish": "Tirador certero",
+        "chinese_traditional": "銳眼狙擊手",
+        "korean": "예리한 저격수",
+        "japanese": "シャープアイ・スナイパー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-991cd11acd23eabb-9b11d41a3e89fa2428d8ae27fb3040fd-v2",
+          "english": "Spiteful and always looking for the next kill to appear in their sight.",
+          "french": "Méchants et toujours à la recherche de la prochaine victime qui aura le malheur d'apparaître dans leur champ de vision.",
+          "german": "Boshaft und immer auf der Suche nach ihrem nächsten Opfer.",
+          "russian": "Злобные и всегда ищут, кого бы еще убить.",
+          "portuguese": "Mal-intencionados e sempre procurando a próxima vítima aparecer em sua mira.",
+          "chinese": "他们满怀恶意，不断寻找下一个出现在他们视线中的杀戮对象。",
+          "spanish": "Lleno de rencor y siempre en busca de su próxima víctima.",
+          "chinese_traditional": "充滿怨恨，且總是在尋找下一個出現在視線中的獵物。",
+          "korean": "악의가 가득한 이들은 항상 다음 사냥감을 찾아다닌다.",
+          "japanese": "悪意に満ちており、常に次の獲物を狙っている。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SharpEyeSniper.prefab",
+        "asset_guid": "282e01657471a674cb6d5bda5a73a12b"
+      },
+      "projectile_vfx": "@AttackerT2_HunterSeeker.projectilePrefab",
+      "impact_vfx": "@AttackerT2_HunterSeeker.impactVFX",
+      "triggers": [
+        "@AttackerT2_HunterSeeker.triggers0"
+      ],
+      "endless_stats": {
+        "attack": 8,
+        "health": 4
+      },
+      "size": 1,
+      "health": 3,
+      "attack_damage": 7,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_AttackerT2"
+      ],
+      "chatter": "T2TitanEnemies_Male_ChatterData",
+      "artist": "Genevieve Bega"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SharpEyeSniper.prefab",
-    "m_AssetGUID": "282e01657471a674cb6d5bda5a73a12b"
-  },
-  "projectilePrefab": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeSniperProjectile.prefab",
-      "m_AssetGUID": "88c228c3d3ad7a34dad5712fbe72368e"
-    },
-    "spawnLocation": "character_side_back_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
-      "m_AssetGUID": "e78ec66e5b5232045acdc3b530057b00"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "AttackerT2_HunterSeeker.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-fb5c3c104f9f531a-9b11d41a3e89fa2428d8ae27fb3040fd-v2",
         "english": "Gain [effect0.status0.power] [rage].",
         "french": "Confère [effect0.status0.power] [rage].",
@@ -65,31 +74,39 @@
       },
       "trigger": "on_kill",
       "effects": [
+        "@AttackerT2_HunterSeeker.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AttackerT2_HunterSeeker.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramStatusEffects": [
-            {
-              "statusId": "buff",
-              "count": 3
-            }
-          ]
+          "status": "buff",
+          "count": 3
         }
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 4,
-    "endlessAttack": 8
-  },
-  "size": 1,
-  "health": 3,
-  "attackDamage": 7,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_AttackerT2"
-  ],
-  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
-  "artistAttribution": "Genevieve Bega"
+  "vfxs": [
+    {
+      "id": "AttackerT2_HunterSeeker.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeSniperProjectile.prefab",
+        "asset_guid": "88c228c3d3ad7a34dad5712fbe72368e"
+      },
+      "spawn_location": "character_side_back_center"
+    },
+    {
+      "id": "AttackerT2_HunterSeeker.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
+        "asset_guid": "e78ec66e5b5232045acdc3b530057b00"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

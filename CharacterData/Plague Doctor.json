@@ -1,56 +1,62 @@
 {
-  "id": "MonsterPlagueDoctor",
-  "guid": "ce63e149-01f7-46e6-99cb-15d1c14e2a1f",
-  "name": "Plague Doctor",
-  "nameKey": {
-    "key": "CharacterData_nameKey-8cee36708d151fa4-07cdf682104055e4380a3cab93bb83bf-v2",
-    "english": "Plague Doctor",
-    "french": "Médecin du fléau",
-    "german": "Pestärztin",
-    "russian": "Чумной доктор",
-    "portuguese": "Médico de Pragas",
-    "chinese": "瘟疫医生",
-    "spanish": "Doctora de la peste",
-    "chinese_traditional": "瘟疫醫生",
-    "korean": "역병 의사",
-    "japanese": "プレイグ・ドクター"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-33d90cdb392561d7-07cdf682104055e4380a3cab93bb83bf-v2",
-      "english": "“Nothing is quite so poetic as an ancient plague. For some reason, no one wants to hear about my research at dinner parties.”",
-      "french": "<nobr>« Quoi</nobr> de plus poétique qu'une ancienne <nobr>peste ?</nobr> Je ne comprends pas pourquoi personne ne veut entendre parler de mes recherches lors des dîners <nobr>mondains. »</nobr>",
-      "german": "„Nichts ist so poetisch wie eine geschichtsträchtige Seuche. Leider ist meine Forschung nicht gerade Gesprächsstoff auf Partys.“",
-      "russian": "«Нет темы более поэтичной, чем древние эпидемии. Но почему-то на вечеринках мои исследования отказываются обсуждать».",
-      "portuguese": "“Nada é tão poético quanto uma praga antiga. Por alguma razão, ninguém gosta de ouvir sobre minhas pesquisas quando participo de jantares.”",
-      "chinese": "“没有什么比古老的瘟疫更有诗意的了。出于一些原因，没人想听我在晚宴上聊我的研究。”",
-      "spanish": "«No hay nada tan poético como una plaga ancestral, pero, curiosamente, nadie quiere que hable de mi investigación en las fiestas».",
-      "chinese_traditional": "「沒有什麼比古老的瘟疫更富有詩意了。不知為何，沒人願意在晚宴上聽我談論我的研究。」",
-      "korean": "“고대 전염병만큼 시적일 수 있는 것은 없다. 이유는 모르겠지만 저녁 파티 자리에서 내 연구에 관한 이야기를 듣고 싶은 녀석은 아무도 없더군.”",
-      "japanese": "「古代の疫病ほど詩的なものはない。なのにどういうわけか、晩餐会では誰も私の研究のことを聞きたがらないのだ」"
+      "id": "MonsterPlagueDoctor",
+      "name": "Plague Doctor",
+      "names": {
+        "key": "CharacterData_nameKey-8cee36708d151fa4-07cdf682104055e4380a3cab93bb83bf-v2",
+        "english": "Plague Doctor",
+        "french": "Médecin du fléau",
+        "german": "Pestärztin",
+        "russian": "Чумной доктор",
+        "portuguese": "Médico de Pragas",
+        "chinese": "瘟疫医生",
+        "spanish": "Doctora de la peste",
+        "chinese_traditional": "瘟疫醫生",
+        "korean": "역병 의사",
+        "japanese": "プレイグ・ドクター"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-33d90cdb392561d7-07cdf682104055e4380a3cab93bb83bf-v2",
+          "english": "“Nothing is quite so poetic as an ancient plague. For some reason, no one wants to hear about my research at dinner parties.”",
+          "french": "<nobr>« Quoi</nobr> de plus poétique qu'une ancienne <nobr>peste ?</nobr> Je ne comprends pas pourquoi personne ne veut entendre parler de mes recherches lors des dîners <nobr>mondains. »</nobr>",
+          "german": "„Nichts ist so poetisch wie eine geschichtsträchtige Seuche. Leider ist meine Forschung nicht gerade Gesprächsstoff auf Partys.“",
+          "russian": "«Нет темы более поэтичной, чем древние эпидемии. Но почему-то на вечеринках мои исследования отказываются обсуждать».",
+          "portuguese": "“Nada é tão poético quanto uma praga antiga. Por alguma razão, ninguém gosta de ouvir sobre minhas pesquisas quando participo de jantares.”",
+          "chinese": "“没有什么比古老的瘟疫更有诗意的了。出于一些原因，没人想听我在晚宴上聊我的研究。”",
+          "spanish": "«No hay nada tan poético como una plaga ancestral, pero, curiosamente, nadie quiere que hable de mi investigación en las fiestas».",
+          "chinese_traditional": "「沒有什麼比古老的瘟疫更富有詩意了。不知為何，沒人願意在晚宴上聽我談論我的研究。」",
+          "korean": "“고대 전염병만큼 시적일 수 있는 것은 없다. 이유는 모르겠지만 저녁 파티 자리에서 내 연구에 관한 이야기를 듣고 싶은 녀석은 아무도 없더군.”",
+          "japanese": "「古代の疫病ほど詩的なものはない。なのにどういうわけか、晩餐会では誰も私の研究のことを聞きたがらないのだ」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PlagueDoctor.prefab",
+        "asset_guid": "72c4dda7038f1c64398f82e2a313654f"
+      },
+      "projectile_vfx": "@MonsterPlagueDoctor.projectilePrefab",
+      "impact_vfx": "@MonsterPlagueDoctor.impactVFX",
+      "triggers": [
+        "@MonsterPlagueDoctor.triggers0"
+      ],
+      "size": 1,
+      "health": 9,
+      "attack_damage": 9,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Assistant",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "LazarusLeagueAssistantFemaleChatterData",
+      "artist": "Genevieve Bega"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PlagueDoctor.prefab",
-    "m_AssetGUID": "72c4dda7038f1c64398f82e2a313654f"
-  },
-  "projectilePrefab": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/PlagueDoctor/FX_PlagueDoctorAttack.prefab",
-      "m_AssetGUID": "e1e7f2e996f6db448a681aea83a180bb"
-    },
-    "spawnLocation": "character_side_fwd_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
-      "m_AssetGUID": "e78ec66e5b5232045acdc3b530057b00"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MonsterPlagueDoctor.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-5406aaf1baf89337-07cdf682104055e4380a3cab93bb83bf-v2",
         "english": "Apply [unstable] equal to the damage dealt.",
         "french": "Applique [unstable] à hauteur des dégâts infligés.",
@@ -65,29 +71,41 @@
       },
       "trigger": "on_attacking_before_damage",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "last_attacked_character",
-          "targetTeamType": "both",
-          "paramStatusEffects": [
-            {
-              "statusId": "unstable",
-              "count": 0
-            }
-          ],
-          "paramBool2": true
-        }
+        "@MonsterPlagueDoctor.triggers0.effects0"
       ]
     }
   ],
-  "size": 1,
-  "health": 9,
-  "attackDamage": 9,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Assistant",
-    "SubtypesData_BannerUnit"
+  "effects": [
+    {
+      "id": "MonsterPlagueDoctor.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "unstable",
+          "count": 0
+        }
+      ],
+      "param_bool_2": true
+    }
   ],
-  "characterChatterData": "LazarusLeagueAssistantFemaleChatterData",
-  "artistAttribution": "Genevieve Bega"
+  "vfxs": [
+    {
+      "id": "MonsterPlagueDoctor.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/PlagueDoctor/FX_PlagueDoctorAttack.prefab",
+        "asset_guid": "e1e7f2e996f6db448a681aea83a180bb"
+      },
+      "spawn_location": "character_side_fwd_center"
+    },
+    {
+      "id": "MonsterPlagueDoctor.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SharpEyeSniper/FX_SharpEyeImpact.prefab",
+        "asset_guid": "e78ec66e5b5232045acdc3b530057b00"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

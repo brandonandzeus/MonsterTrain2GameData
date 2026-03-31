@@ -1,55 +1,73 @@
 {
-  "id": "Boss_Level2_BigStats",
-  "guid": "b045aba0-fb68-49c9-b4a6-152e7ea6a09e",
-  "name": "Elebor the Wall",
-  "nameKey": {
-    "key": "CharacterData_nameKey-ed65db21d78eb001-e4694bb3a4ddf1845b8d24af91e4d29f-v2",
-    "english": "Elebor the Wall",
-    "french": "Elebor le Mur",
-    "german": "Elebor die Mauer",
-    "russian": "Элебор Стена",
-    "portuguese": "Elebor, a Muralha",
-    "chinese": "“高墙”艾勒博",
-    "spanish": "Elebor el Muro",
-    "chinese_traditional": "『高牆』艾勒博",
-    "korean": "장벽의 엘레보르",
-    "japanese": "壁のエレボール"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-5cea22820bb5356b-e4694bb3a4ddf1845b8d24af91e4d29f-v2",
-      "english": "Elebor once mocked the Clipped, whose flight was forcefully taken from them. Now he too knows their pain.",
-      "french": "Elebor s'est un jour moqué des Sans-ailes, dont la capacité à voler leur a été retirée par la force. Aujourd'hui, il connaît lui aussi leur douleur.",
-      "german": "Früher verspottete Elebor die Gestutzten, denen man die Flugfähigkeit mit Gewalt genommen hatte. Nun kennt er ihren Schmerz.",
-      "russian": "Раньше Элебор посмеивался над Бескрылыми. Теперь он понял, как это больно, когда тебя лишают возможности летать.",
-      "portuguese": "Elebor já zombou dos Podados, que tiveram a capacidade de voar tirada deles à força. Agora ele também conhece essa dor.",
-      "chinese": "艾勒博曾经嘲笑被强行剥夺飞行能力的片翼者。如今，他也体会到了他们的痛苦。",
-      "spanish": "Elebor se burló una vez de los alas cortadas, a quienes arrebataron su capacidad de volar. Ahora conoce su dolor.",
-      "chinese_traditional": "艾勒博曾經嘲笑被斷翼者，也就是被強行奪走飛行能力的人。現在他也明白了他們的痛苦。",
-      "korean": "엘레보르는 한때 강제로 날개가 잘린 자들을 공개적으로 조롱했다. 이제 그 역시 그들의 고통을 이해하게 되었다.",
-      "japanese": "エレボールは飛ぶ力を強制的に取り上げられた無翼たちを嘲笑った。そして彼もその苦痛を知ることとなった。"
+      "id": "Boss_Level2_BigStats",
+      "name": "Elebor the Wall",
+      "names": {
+        "key": "CharacterData_nameKey-ed65db21d78eb001-e4694bb3a4ddf1845b8d24af91e4d29f-v2",
+        "english": "Elebor the Wall",
+        "french": "Elebor le Mur",
+        "german": "Elebor die Mauer",
+        "russian": "Элебор Стена",
+        "portuguese": "Elebor, a Muralha",
+        "chinese": "“高墙”艾勒博",
+        "spanish": "Elebor el Muro",
+        "chinese_traditional": "『高牆』艾勒博",
+        "korean": "장벽의 엘레보르",
+        "japanese": "壁のエレボール"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-5cea22820bb5356b-e4694bb3a4ddf1845b8d24af91e4d29f-v2",
+          "english": "Elebor once mocked the Clipped, whose flight was forcefully taken from them. Now he too knows their pain.",
+          "french": "Elebor s'est un jour moqué des Sans-ailes, dont la capacité à voler leur a été retirée par la force. Aujourd'hui, il connaît lui aussi leur douleur.",
+          "german": "Früher verspottete Elebor die Gestutzten, denen man die Flugfähigkeit mit Gewalt genommen hatte. Nun kennt er ihren Schmerz.",
+          "russian": "Раньше Элебор посмеивался над Бескрылыми. Теперь он понял, как это больно, когда тебя лишают возможности летать.",
+          "portuguese": "Elebor já zombou dos Podados, que tiveram a capacidade de voar tirada deles à força. Agora ele também conhece essa dor.",
+          "chinese": "艾勒博曾经嘲笑被强行剥夺飞行能力的片翼者。如今，他也体会到了他们的痛苦。",
+          "spanish": "Elebor se burló una vez de los alas cortadas, a quienes arrebataron su capacidad de volar. Ahora conoce su dolor.",
+          "chinese_traditional": "艾勒博曾經嘲笑被斷翼者，也就是被強行奪走飛行能力的人。現在他也明白了他們的痛苦。",
+          "korean": "엘레보르는 한때 강제로 날개가 잘린 자들을 공개적으로 조롱했다. 이제 그 역시 그들의 고통을 이해하게 되었다.",
+          "japanese": "エレボールは飛ぶ力を強制的に取り上げられた無翼たちを嘲笑った。そして彼もその苦痛を知ることとなった。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ENM_EleborTheWall.prefab",
+        "asset_guid": "d41a0988af3dfc4438fe792c99afde61"
+      },
+      "impact_vfx": "@Boss_Level2_BigStats.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@Boss_Level2_BigStats.triggers0"
+      ],
+      "endless_stats": {
+        "attack": 16,
+        "health": 1800
+      },
+      "size": 5,
+      "health": 260,
+      "is_mini_boss": true,
+      "death_type": "large",
+      "attack_damage": 7,
+      "subtypes": [
+        "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
+        "SubtypesData_Boss",
+        "SubtypesData_BossAll"
+      ],
+      "chatter": "Boss2_Elebor_ChatterData",
+      "artist": "Genevieve Bega"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ENM_EleborTheWall.prefab",
-    "m_AssetGUID": "d41a0988af3dfc4438fe792c99afde61"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "relentless",
-      "count": 1
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "Boss_Level2_BigStats.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-3f5b803c312280c3-e4694bb3a4ddf1845b8d24af91e4d29f-v2",
         "english": "Gain [armor] [effect0.status0.power].",
         "french": "Octroie [armor] [effect0.status0.power].",
@@ -64,34 +82,31 @@
       },
       "trigger": "on_turn_begin",
       "effects": [
+        "@Boss_Level2_BigStats.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Boss_Level2_BigStats.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramStatusEffects": [
-            {
-              "statusId": "armor",
-              "count": 5
-            }
-          ]
+          "status": "armor",
+          "count": 5
         }
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 1800,
-    "endlessAttack": 16
-  },
-  "size": 5,
-  "health": 260,
-  "isMiniboss": true,
-  "deathType": "large",
-  "attackDamage": 7,
-  "subtypeKeys": [
-    "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
-    "SubtypesData_Boss",
-    "SubtypesData_BossAll"
-  ],
-  "characterChatterData": "Boss2_Elebor_ChatterData",
-  "artistAttribution": "Genevieve Bega"
+  "vfxs": [
+    {
+      "id": "Boss_Level2_BigStats.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

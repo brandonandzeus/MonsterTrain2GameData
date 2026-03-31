@@ -1,73 +1,84 @@
 {
-  "id": "Boss_Level9_Entropy_Bot_V2",
-  "guid": "dc2743cb-0019-41c8-9823-b9b1ec80daad",
-  "name": "Entropy Bottom",
-  "nameKey": {
-    "key": "CharacterData_nameKey-80199530a95c83c2-0d5dcf7fd6e2e254a94417b7bfb80d77-v2",
-    "english": "Entropy",
-    "french": "Entropie",
-    "german": "Entropie",
-    "russian": "Энтропия",
-    "portuguese": "Entropia",
-    "chinese": "混乱泰坦",
-    "spanish": "Entropía",
-    "chinese_traditional": "熵",
-    "korean": "엔트로피",
-    "japanese": "エントロピー"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-bfdea2138a5c37b9-0d5dcf7fd6e2e254a94417b7bfb80d77-v2",
-      "english": "Everything moves towards the inevitable. Entropy is neither fury, nor command, but is instead an unyielding, unfeeling force of nature.",
-      "french": "Tout se dirige vers l'inévitable. Entropie n'est ni fureur, ni ordre, mais une force de la nature inflexible et insensible.",
-      "german": "Alles steuert auf das Unvermeidliche zu. Entropie kennt weder Wut noch Befehl, sondern nur unnachgiebige, gefühllose Gewalt.",
-      "russian": "Все движется к неизбежному. Энтропия далек от слепой ярости и контроля. Ему близка непреклонная и безразличная сила природы.",
-      "portuguese": "Tudo se move em direção ao inevitável. A Entropia não é nem fúria nem comando, mas sim uma força da natureza inflexível e insensível.",
-      "chinese": "万事万物都朝着必然的方向发展。混乱泰坦既不是愤怒，也不是掌控，而是一种不屈又无情的自然力量。",
-      "spanish": "Todo avanza hacia lo inevitable. Entropía no es furia ni control, sino una fuerza de la naturaleza imparable e indiferente.",
-      "chinese_traditional": "一切都走向不可避免的結局。熵既不是憤怒，也不是命令，而是一種無情、無感的自然力量。",
-      "korean": "모든 것은 피할 수 없는 운명을 향해 나아간다. 엔트로피는 분노도, 명령도 아닌, 감정도 없고 양보조차 않는 자연의 힘 그 자체이다.",
-      "japanese": "すべては必然に向かって進む。エントロピーは激怒でも支配でもなく、むしろ不屈で冷酷な自然の力なのだ。"
+      "id": "Boss_Level9_Entropy_Bot_V2",
+      "name": "Entropy Bottom",
+      "names": {
+        "key": "CharacterData_nameKey-80199530a95c83c2-0d5dcf7fd6e2e254a94417b7bfb80d77-v2",
+        "english": "Entropy",
+        "french": "Entropie",
+        "german": "Entropie",
+        "russian": "Энтропия",
+        "portuguese": "Entropia",
+        "chinese": "混乱泰坦",
+        "spanish": "Entropía",
+        "chinese_traditional": "熵",
+        "korean": "엔트로피",
+        "japanese": "エントロピー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-bfdea2138a5c37b9-0d5dcf7fd6e2e254a94417b7bfb80d77-v2",
+          "english": "Everything moves towards the inevitable. Entropy is neither fury, nor command, but is instead an unyielding, unfeeling force of nature.",
+          "french": "Tout se dirige vers l'inévitable. Entropie n'est ni fureur, ni ordre, mais une force de la nature inflexible et insensible.",
+          "german": "Alles steuert auf das Unvermeidliche zu. Entropie kennt weder Wut noch Befehl, sondern nur unnachgiebige, gefühllose Gewalt.",
+          "russian": "Все движется к неизбежному. Энтропия далек от слепой ярости и контроля. Ему близка непреклонная и безразличная сила природы.",
+          "portuguese": "Tudo se move em direção ao inevitável. A Entropia não é nem fúria nem comando, mas sim uma força da natureza inflexível e insensível.",
+          "chinese": "万事万物都朝着必然的方向发展。混乱泰坦既不是愤怒，也不是掌控，而是一种不屈又无情的自然力量。",
+          "spanish": "Todo avanza hacia lo inevitable. Entropía no es furia ni control, sino una fuerza de la naturaleza imparable e indiferente.",
+          "chinese_traditional": "一切都走向不可避免的結局。熵既不是憤怒，也不是命令，而是一種無情、無感的自然力量。",
+          "korean": "모든 것은 피할 수 없는 운명을 향해 나아간다. 엔트로피는 분노도, 명령도 아닌, 감정도 없고 양보조차 않는 자연의 힘 그 자체이다.",
+          "japanese": "すべては必然に向かって進む。エントロピーは激怒でも支配でもなく、むしろ不屈で冷酷な自然の力なのだ。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TitanOfEntropy.prefab",
+        "asset_guid": "f35745fedb277f04d8515223926b47c6"
+      },
+      "impact_vfx": "@Boss_Level9_Entropy_Bot_V2.impactVFX",
+      "death_vfx": "@Boss_Level9_Entropy_Bot_V2.deathVFX",
+      "boss_room_cast_vfx": "@Boss_Level9_Entropy_Bot_V2.bossRoomSpellCastVFX",
+      "starting_status_effects": [
+        {
+          "status": "lifelink",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@Boss_Level9_Entropy_Bot_V2.triggers0",
+        "@Boss_Level9_Entropy_Bot_V2.triggers1"
+      ],
+      "size": 6,
+      "health": 3500,
+      "is_outer_train_boss": true,
+      "valid_boss_attack_phase": "both",
+      "death_type": "none",
+      "ascends_train_automatically": false,
+      "attack_damage": 15,
+      "attack_teleports_to_defender": false,
+      "status_effect_immunities": [
+        "rooted",
+        "silenced",
+        "dazed"
+      ],
+      "subtypes": [
+        "SubtypesData_FinalBoss",
+        "SubtypesData_BossEntropy",
+        "SubtypesData_BossAll"
+      ],
+      "chatter": "Boss9_Entropy_ChatterData",
+      "artist": "William Smith / Genevieve Bega"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_TitanOfEntropy.prefab",
-    "m_AssetGUID": "f35745fedb277f04d8515223926b47c6"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttackImpact.prefab",
-      "m_AssetGUID": "e403cf7dbfbb9df498327589983ce551"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/MapFX/TFB Sequence/EntropyDeathFX.prefab",
-      "m_AssetGUID": "43b76e35168505242b30471d6a9d037e"
-    },
-    "spawnLocation": "character_center"
-  },
-  "bossRoomSpellCastVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/PersistentFX/EntropyTitan/FX_EntropyTitanAttack.prefab",
-      "m_AssetGUID": "d592d3d1aeaae0941a36455979415ce6"
-    },
-    "spawnLocation": "room_center"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "lifelink",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "Boss_Level9_Entropy_Bot_V2.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-f6819115adfc1eb6-0d5dcf7fd6e2e254a94417b7bfb80d77-v2",
         "english": "Add a <b>Curse of Entropy</b> to your deck.",
         "french": "Ajoute une <b>Malédiction d'Entropie</b> à votre deck.",
@@ -82,45 +93,58 @@
       },
       "trigger": "post_combat",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddBattleCard",
-          "paramInt": 7,
-          "paramCardPool": "TFB_EntropyBlightPool"
-        }
+        "@Boss_Level9_Entropy_Bot_V2.triggers0.effects0"
       ]
     },
     {
+      "id": "Boss_Level9_Entropy_Bot_V2.triggers1",
       "trigger": "on_spawn",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddBattleCard",
-          "paramInt": 7,
-          "additionalParamInt": 1,
-          "paramCardPool": "TFB_EntropyBlightPool"
-        }
+        "@Boss_Level9_Entropy_Bot_V2.triggers1.effects0"
       ],
-      "hideVisualAndIgnoreSilence": true,
-      "suppressTriggerNotification": true
+      "hide_visual_and_ignore_silence": true,
+      "suppress_notifications": true
     }
   ],
-  "size": 6,
-  "health": 3500,
-  "isOuterTrainBoss": true,
-  "validBossAttackPhase": "both",
-  "deathType": "none",
-  "ascendsTrainAutomatically": false,
-  "attackDamage": 15,
-  "attackTeleportsToDefender": false,
-  "statusEffectImmunities": [
-    "rooted",
-    "silenced",
-    "dazed"
+  "effects": [
+    {
+      "id": "Boss_Level9_Entropy_Bot_V2.triggers0.effects0",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 7,
+      "param_card_pool": "TFB_EntropyBlightPool"
+    },
+    {
+      "id": "Boss_Level9_Entropy_Bot_V2.triggers1.effects0",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 7,
+      "param_int_2": 1,
+      "param_card_pool": "TFB_EntropyBlightPool"
+    }
   ],
-  "subtypeKeys": [
-    "SubtypesData_FinalBoss",
-    "SubtypesData_BossEntropy",
-    "SubtypesData_BossAll"
-  ],
-  "characterChatterData": "Boss9_Entropy_ChatterData",
-  "artistAttribution": "William Smith / Genevieve Bega"
+  "vfxs": [
+    {
+      "id": "Boss_Level9_Entropy_Bot_V2.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttackImpact.prefab",
+        "asset_guid": "e403cf7dbfbb9df498327589983ce551"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "Boss_Level9_Entropy_Bot_V2.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/MapFX/TFB Sequence/EntropyDeathFX.prefab",
+        "asset_guid": "43b76e35168505242b30471d6a9d037e"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "Boss_Level9_Entropy_Bot_V2.bossRoomSpellCastVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/PersistentFX/EntropyTitan/FX_EntropyTitanAttack.prefab",
+        "asset_guid": "d592d3d1aeaae0941a36455979415ce6"
+      },
+      "spawn_location": "room_center"
+    }
+  ]
 }

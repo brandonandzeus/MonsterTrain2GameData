@@ -1,71 +1,83 @@
 {
-  "id": "PyreHeartHerzal",
-  "guid": "de172717-46cc-4df9-909a-77b29d2c9d50",
-  "name": "Herzal's Horde",
-  "nameKey": {
-    "key": "CharacterData_nameKey-3c69fe49e2bfe64f-9f83c6f95dd6bd44ebf64ea74c4e9006-v2",
-    "english": "Herzal's Horde",
-    "french": "Horde de Herzal",
-    "german": "Herzals Horde",
-    "russian": "Орда Герцаля",
-    "portuguese": "Horda de Herzal",
-    "chinese": "赫扎尔群落",
-    "spanish": "Horda de Herzal",
-    "chinese_traditional": "赫爾扎爾之群",
-    "korean": "헤르잘의 무리",
-    "japanese": "ハーザルの従者"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Herzal.prefab",
-    "m_AssetGUID": "839d20c0f985cce47963a10964d74316"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/HerzalPyre/FX_HerzalPyreAttack.prefab",
-      "m_AssetGUID": "05a6272a3389a57448a5b7875e2cbc55"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-      "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/HerzalPyre/FX_HerzalPyreDeath(Clone).prefab",
-      "m_AssetGUID": "3d9dfb32fb132b544bccd36aeb93afef"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "sweep",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    },
-    {
-      "statusId": "immune",
-      "count": 1
+      "id": "PyreHeartHerzal",
+      "name": "Herzal's Horde",
+      "names": {
+        "key": "CharacterData_nameKey-3c69fe49e2bfe64f-9f83c6f95dd6bd44ebf64ea74c4e9006-v2",
+        "english": "Herzal's Horde",
+        "french": "Horde de Herzal",
+        "german": "Herzals Horde",
+        "russian": "Орда Герцаля",
+        "portuguese": "Horda de Herzal",
+        "chinese": "赫扎尔群落",
+        "spanish": "Horda de Herzal",
+        "chinese_traditional": "赫爾扎爾之群",
+        "korean": "헤르잘의 무리",
+        "japanese": "ハーザルの従者"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Herzal.prefab",
+        "asset_guid": "839d20c0f985cce47963a10964d74316"
+      },
+      "attack_vfx": "@PyreHeartHerzal.attackVFX",
+      "impact_vfx": "@PyreHeartHerzal.impactVFX",
+      "death_vfx": "@PyreHeartHerzal.deathVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "immune",
+          "count": 1
+        }
+      ],
+      "size": 2,
+      "health": 1,
+      "can_be_healed": false,
+      "attack_damage": 1,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Pyre"
+      ],
+      "chatter": "PyreHeartChatter",
+      "is_pyre_heart": true
     }
   ],
-  "size": 2,
-  "health": 1,
-  "canBeHealed": false,
-  "attackDamage": 1,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Pyre"
-  ],
-  "characterChatterData": "PyreHeartChatter",
-  "isPyreHeart": true
+  "vfxs": [
+    {
+      "id": "PyreHeartHerzal.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/HerzalPyre/FX_HerzalPyreAttack.prefab",
+        "asset_guid": "05a6272a3389a57448a5b7875e2cbc55"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartHerzal.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+        "asset_guid": "3264e2908c5ba3549a14df8cb8e8e37d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartHerzal.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/HerzalPyre/FX_HerzalPyreDeath(Clone).prefab",
+        "asset_guid": "3d9dfb32fb132b544bccd36aeb93afef"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

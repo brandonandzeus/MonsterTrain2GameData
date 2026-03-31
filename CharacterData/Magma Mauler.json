@@ -1,49 +1,59 @@
 {
-  "id": "MonsterSycophant",
-  "guid": "88026a50-fa8f-4b31-9d3b-878071a30e0f",
-  "name": "Magma Mauler",
-  "nameKey": {
-    "key": "CharacterData_nameKey-3c1895e4cf08a481-18dec3dc9cea5c24ab59488671cc5dc5-v2",
-    "english": "Magma Mauler",
-    "french": "Brute de magma",
-    "german": "Magmahauer",
-    "russian": "Лавовый воин",
-    "portuguese": "Brigão do Magma",
-    "chinese": "熔岩锤击者",
-    "spanish": "Luchador magmático",
-    "chinese_traditional": "岩漿猛擊者",
-    "korean": "마그마 망치꾼",
-    "japanese": "マグマ・マウラー"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-0e51788aaef1af02-18dec3dc9cea5c24ab59488671cc5dc5-v2",
-      "english": "“You better pay what you owe to Lady Gilda, or I’ll squash your toes!”",
-      "french": "<nobr>« Paie</nobr> ce que tu dois à Dame Gilda, ou je t'écrase les <nobr>orteils ! »</nobr>",
-      "german": "„Begleich besser deine Schulden bei Lady Gilda, sonst zerquetsche ich deine Zehen!“",
-      "russian": "«Заплати-ка Леди Гильде все долги, а не то я раздавлю тебе пальцы!»",
-      "portuguese": "“É melhor pagar o que deve à Senhorita Gilda, ou vou esmagar seus dedos do pé!”",
-      "chinese": "“你最好把欠吉尔达女士的欠款都还清，否则我就碾碎你的脚趾！”",
-      "spanish": "«¡O pagas tu deuda a lady Gilda o empiezo a partir dedos!».",
-      "chinese_traditional": "「你最好付清欠吉爾達夫人的債，否則我就把你的腳趾踩扁！」",
-      "korean": "\"레이디 길다께 진 빚을 갚지 않으면 발가락을 짓이겨버릴 테다!\"",
-      "japanese": "「レディ・ギルダへの借りを返さないと、つま先を踏み潰してやるぞ！」"
+      "id": "MonsterSycophant",
+      "name": "Magma Mauler",
+      "names": {
+        "key": "CharacterData_nameKey-3c1895e4cf08a481-18dec3dc9cea5c24ab59488671cc5dc5-v2",
+        "english": "Magma Mauler",
+        "french": "Brute de magma",
+        "german": "Magmahauer",
+        "russian": "Лавовый воин",
+        "portuguese": "Brigão do Magma",
+        "chinese": "熔岩锤击者",
+        "spanish": "Luchador magmático",
+        "chinese_traditional": "岩漿猛擊者",
+        "korean": "마그마 망치꾼",
+        "japanese": "マグマ・マウラー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-0e51788aaef1af02-18dec3dc9cea5c24ab59488671cc5dc5-v2",
+          "english": "“You better pay what you owe to Lady Gilda, or I’ll squash your toes!”",
+          "french": "<nobr>« Paie</nobr> ce que tu dois à Dame Gilda, ou je t'écrase les <nobr>orteils ! »</nobr>",
+          "german": "„Begleich besser deine Schulden bei Lady Gilda, sonst zerquetsche ich deine Zehen!“",
+          "russian": "«Заплати-ка Леди Гильде все долги, а не то я раздавлю тебе пальцы!»",
+          "portuguese": "“É melhor pagar o que deve à Senhorita Gilda, ou vou esmagar seus dedos do pé!”",
+          "chinese": "“你最好把欠吉尔达女士的欠款都还清，否则我就碾碎你的脚趾！”",
+          "spanish": "«¡O pagas tu deuda a lady Gilda o empiezo a partir dedos!».",
+          "chinese_traditional": "「你最好付清欠吉爾達夫人的債，否則我就把你的腳趾踩扁！」",
+          "korean": "\"레이디 길다께 진 빚을 갚지 않으면 발가락을 짓이겨버릴 테다!\"",
+          "japanese": "「レディ・ギルダへの借りを返さないと、つま先を踏み潰してやるぞ！」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Sycophant.prefab",
+        "asset_guid": "c419dd322432f454993522b3f76de94d"
+      },
+      "impact_vfx": "@MonsterSycophant.impactVFX",
+      "triggers": [
+        "@MonsterSycophant.triggers0"
+      ],
+      "size": 2,
+      "health": 25,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Dragon"
+      ],
+      "chatter": "PyreborneDragonChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Sycophant.prefab",
-    "m_AssetGUID": "c419dd322432f454993522b3f76de94d"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MonsterSycophant.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-a8004289e11542e2-18dec3dc9cea5c24ab59488671cc5dc5-v2",
         "english": "Apply [pyregel] [effect0.status0.power].",
         "french": "Inflige [pyregel] [effect0.status0.power].",
@@ -58,26 +68,32 @@
       },
       "trigger": "on_attacking",
       "effects": [
+        "@MonsterSycophant.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterSycophant.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "last_attacked_character",
-          "targetTeamType": "heroes",
-          "paramStatusEffects": [
-            {
-              "statusId": "pyregel",
-              "count": 8
-            }
-          ]
+          "status": "pyregel",
+          "count": 8
         }
       ]
     }
   ],
-  "size": 2,
-  "health": 25,
-  "attackDamage": 10,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Dragon"
-  ],
-  "characterChatterData": "PyreborneDragonChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterSycophant.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,49 +1,64 @@
 {
-  "id": "MageT2_Junker_Chosen",
-  "guid": "3c06440e-5ab2-4e22-84ee-3bdb9016b409",
-  "name": "Chosen Supplicant",
-  "nameKey": {
-    "key": "CharacterData_nameKey-b0fdb5933c574f0c-7996ad61d90643c48b50991f9a9d5450-v2",
-    "english": "Chosen Supplicant",
-    "french": "Suppliant élu",
-    "german": "Erwählter Bittsteller",
-    "russian": "Избранный проситель",
-    "portuguese": "Suplicante Escolhido",
-    "chinese": "神选乞求者",
-    "spanish": "Suplicante elegido",
-    "chinese_traditional": "天選祈求者",
-    "korean": "선택받은 탄원자",
-    "japanese": "選ばれし嘆願者"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-21b62d5b5542c0fc-7996ad61d90643c48b50991f9a9d5450-v2",
-      "english": "Heaven’s bellringers, wielding a symbol of faith as their weapon, now toll their church bells as harbingers of Dominion.",
-      "french": "Les carillonneurs du paradis, dont l'arme est un symbole de foi, font désormais sonner les cloches de leurs églises en tant que messagers de Domination.",
-      "german": "Die Glöckner des Himmels, die ein Symbol des Glaubens als Waffe benutzen, läuten nun ihre Kirchenglocken als Herrschafts Vorboten.",
-      "russian": "Райские звонари, сделавшие символ веры своим оружием, теперь бьют в колокола как предвестники Доминиона.",
-      "portuguese": "Os tocadores de sinos do Céu, empunhando um símbolo de fé como arma, agora tocam os sinos de suas igrejas como arautos do Domínio.",
-      "chinese": "天堂的敲钟人，曾以他们的信仰为武器，如今他们敲响教堂的钟声，是预示着统御泰坦的到来。",
-      "spanish": "Los campaneros del Cielo, con el símbolo de su fe como arma, ahora tocan sus instrumentos como heraldos de Dominio.",
-      "chinese_traditional": "曾以信仰的象徵作為武器的天堂敲鐘人，如今擔任主宰的使者敲響他們教堂的鐘聲。",
-      "korean": "믿음의 상징을 무기처럼 휘두르는 천상의 종지기들은 이제 도미니온의 전조를 알리는 종소리를 울린다.",
-      "japanese": "天界の鐘撞きたちは、信仰のシンボルを武器として扱うようになった。今はドミニオンの使者として教会の鐘を鳴らし続けている。"
+      "id": "MageT2_Junker_Chosen",
+      "name": "Chosen Supplicant",
+      "names": {
+        "key": "CharacterData_nameKey-b0fdb5933c574f0c-7996ad61d90643c48b50991f9a9d5450-v2",
+        "english": "Chosen Supplicant",
+        "french": "Suppliant élu",
+        "german": "Erwählter Bittsteller",
+        "russian": "Избранный проситель",
+        "portuguese": "Suplicante Escolhido",
+        "chinese": "神选乞求者",
+        "spanish": "Suplicante elegido",
+        "chinese_traditional": "天選祈求者",
+        "korean": "선택받은 탄원자",
+        "japanese": "選ばれし嘆願者"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-21b62d5b5542c0fc-7996ad61d90643c48b50991f9a9d5450-v2",
+          "english": "Heaven’s bellringers, wielding a symbol of faith as their weapon, now toll their church bells as harbingers of Dominion.",
+          "french": "Les carillonneurs du paradis, dont l'arme est un symbole de foi, font désormais sonner les cloches de leurs églises en tant que messagers de Domination.",
+          "german": "Die Glöckner des Himmels, die ein Symbol des Glaubens als Waffe benutzen, läuten nun ihre Kirchenglocken als Herrschafts Vorboten.",
+          "russian": "Райские звонари, сделавшие символ веры своим оружием, теперь бьют в колокола как предвестники Доминиона.",
+          "portuguese": "Os tocadores de sinos do Céu, empunhando um símbolo de fé como arma, agora tocam os sinos de suas igrejas como arautos do Domínio.",
+          "chinese": "天堂的敲钟人，曾以他们的信仰为武器，如今他们敲响教堂的钟声，是预示着统御泰坦的到来。",
+          "spanish": "Los campaneros del Cielo, con el símbolo de su fe como arma, ahora tocan sus instrumentos como heraldos de Dominio.",
+          "chinese_traditional": "曾以信仰的象徵作為武器的天堂敲鐘人，如今擔任主宰的使者敲響他們教堂的鐘聲。",
+          "korean": "믿음의 상징을 무기처럼 휘두르는 천상의 종지기들은 이제 도미니온의 전조를 알리는 종소리를 울린다.",
+          "japanese": "天界の鐘撞きたちは、信仰のシンボルを武器として扱うようになった。今はドミニオンの使者として教会の鐘を鳴らし続けている。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ProfaneAcolyte_Chosen.prefab",
+        "asset_guid": "0f71990163b199143947d658a7b51fb8"
+      },
+      "impact_vfx": "@MageT2_Junker_Chosen.impactVFX",
+      "triggers": [
+        "@MageT2_Junker_Chosen.triggers0"
+      ],
+      "endless_stats": {
+        "attack": 8,
+        "health": 70
+      },
+      "size": 2,
+      "health": 35,
+      "attack_damage": 3,
+      "chosen_variant": true,
+      "subtypes": [
+        "SubtypesData_AttackerT2"
+      ],
+      "chatter": "T2TitanEnemies_Male_ChatterData",
+      "artist": "Michaela Nienaber"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ProfaneAcolyte_Chosen.prefab",
-    "m_AssetGUID": "0f71990163b199143947d658a7b51fb8"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MageT2_Junker_Chosen.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-bc31d25e17c4f931-7996ad61d90643c48b50991f9a9d5450-v2",
         "english": "Add a [scourget2] card to the top of your draw pile and to a random location in your draw pile.",
         "french": "Ajoute une carte [scourget2] au-dessus de votre pioche et à un emplacement aléatoire dans votre pioche.",
@@ -58,30 +73,33 @@
       },
       "trigger": "post_combat",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddBattleCard",
-          "paramInt": 5,
-          "paramCardPool": "JunkPoolT2"
-        },
-        {
-          "effectStateName": "CardEffectAddBattleCard",
-          "paramInt": 7,
-          "paramCardPool": "JunkPoolT2"
-        }
+        "@MageT2_Junker_Chosen.triggers0.effects0",
+        "@MageT2_Junker_Chosen.triggers0.effects1"
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 70,
-    "endlessAttack": 8
-  },
-  "size": 2,
-  "health": 35,
-  "attackDamage": 3,
-  "chosenVariant": true,
-  "subtypeKeys": [
-    "SubtypesData_AttackerT2"
+  "effects": [
+    {
+      "id": "MageT2_Junker_Chosen.triggers0.effects0",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 5,
+      "param_card_pool": "JunkPoolT2"
+    },
+    {
+      "id": "MageT2_Junker_Chosen.triggers0.effects1",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 7,
+      "param_card_pool": "JunkPoolT2"
+    }
   ],
-  "characterChatterData": "T2TitanEnemies_Male_ChatterData",
-  "artistAttribution": "Michaela Nienaber"
+  "vfxs": [
+    {
+      "id": "MageT2_Junker_Chosen.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

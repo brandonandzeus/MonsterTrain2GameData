@@ -1,49 +1,59 @@
 {
-  "id": "MonsterSquadLeader",
-  "guid": "7d35d67a-a50b-4a60-a45d-ac6a06dddc51",
-  "name": "Squad Leader",
-  "nameKey": {
-    "key": "CharacterData_nameKey-3d48b363682bba0d-dac96b8eeab736742b3fc3639dbaa222-v2",
-    "english": "Squad Leader",
-    "french": "Chef d'escadron",
-    "german": "Gruppenleiter",
-    "russian": "Командир отряда",
-    "portuguese": "Líder de Esquadrão",
-    "chinese": "蘑菇兵长",
-    "spanish": "Líder de escuadrón",
-    "chinese_traditional": "小隊領袖",
-    "korean": "분대장",
-    "japanese": "部隊長"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-4d7c90c6dc378b46-dac96b8eeab736742b3fc3639dbaa222-v2",
-      "english": "“Come on you sorry sprouts! Get those gills in gear and fight!”",
-      "french": "<nobr>« Allez,</nobr> jeunes <nobr>pousses !</nobr> Bougez-vous le bulbe et <nobr>battez-vous ! »</nobr>",
-      "german": "„Na los, ihr miesen Schösslinge! Kneift die Lamellen zusammen und kämpft!",
-      "russian": "«Ну же, жалкие отростки! Подтяните пластинки и сражайтесь!»",
-      "portuguese": "“Vamos lá, cogumelinhos! Arrumem essas lamelas e lutem!”",
-      "chinese": "“来吧，你们这些可怜的小芽！鼓起你们的菌褶来战斗吧！”",
-      "spanish": "«¡Vamos, brotes verdes! ¡Moved esas láminas y a luchar!».",
-      "chinese_traditional": "「來吧，你們這些可憐的幼苗！讓那些菌褶動起來戰鬥！」",
-      "korean": "\"서둘러, 이 여려 터진 새싹들아! 그 입을 열심히 움직이며 싸우라고!\"",
-      "japanese": "「どうした、ひよっ子ども！傘を広げて戦うんだ！」"
+      "id": "MonsterSquadLeader",
+      "name": "Squad Leader",
+      "names": {
+        "key": "CharacterData_nameKey-3d48b363682bba0d-dac96b8eeab736742b3fc3639dbaa222-v2",
+        "english": "Squad Leader",
+        "french": "Chef d'escadron",
+        "german": "Gruppenleiter",
+        "russian": "Командир отряда",
+        "portuguese": "Líder de Esquadrão",
+        "chinese": "蘑菇兵长",
+        "spanish": "Líder de escuadrón",
+        "chinese_traditional": "小隊領袖",
+        "korean": "분대장",
+        "japanese": "部隊長"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-4d7c90c6dc378b46-dac96b8eeab736742b3fc3639dbaa222-v2",
+          "english": "“Come on you sorry sprouts! Get those gills in gear and fight!”",
+          "french": "<nobr>« Allez,</nobr> jeunes <nobr>pousses !</nobr> Bougez-vous le bulbe et <nobr>battez-vous ! »</nobr>",
+          "german": "„Na los, ihr miesen Schösslinge! Kneift die Lamellen zusammen und kämpft!",
+          "russian": "«Ну же, жалкие отростки! Подтяните пластинки и сражайтесь!»",
+          "portuguese": "“Vamos lá, cogumelinhos! Arrumem essas lamelas e lutem!”",
+          "chinese": "“来吧，你们这些可怜的小芽！鼓起你们的菌褶来战斗吧！”",
+          "spanish": "«¡Vamos, brotes verdes! ¡Moved esas láminas y a luchar!».",
+          "chinese_traditional": "「來吧，你們這些可憐的幼苗！讓那些菌褶動起來戰鬥！」",
+          "korean": "\"서둘러, 이 여려 터진 새싹들아! 그 입을 열심히 움직이며 싸우라고!\"",
+          "japanese": "「どうした、ひよっ子ども！傘を広げて戦うんだ！」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SquadLeader.prefab",
+        "asset_guid": "c80678f30875f1043af7528ee3a21f98"
+      },
+      "impact_vfx": "@MonsterSquadLeader.impactVFX",
+      "room_modifiers": [
+        "@MonsterSquadLeader.roomModifiers0"
+      ],
+      "size": 1,
+      "health": 10,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Shroom",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "UnderlegionShroomMaleChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SquadLeader.prefab",
-    "m_AssetGUID": "c80678f30875f1043af7528ee3a21f98"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
-      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
-    },
-    "spawnLocation": "character_center"
-  },
-  "roomModifiers": [
+  "room_modifiers": [
     {
-      "descriptionKey": {
+      "id": "MonsterSquadLeader.roomModifiers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-f1233ea316671944-dac96b8eeab736742b3fc3639dbaa222-v2",
         "english": "Grant [trample] to [funguy]. [troop] adds +[upgrade.bonusdamage][attack] per stack.",
         "french": "Octroie [trample] aux <b>Champotes</b>. +[upgrade.bonusdamage][attack] par cumul de [troop].",
@@ -56,35 +66,35 @@
         "korean": "[funguy] 유닛에 [trample] 효과를 부여합니다. [troop] 효과 스택당 +[upgrade.bonusdamage][attack]이 증가합니다.",
         "japanese": "[funguy]に[trample]を付与する。[troop]の1スタックにつき+[upgrade.bonusdamage][attack]が追加される。"
       },
-      "roomStateModifierClassName": "RoomStateTroopUnitUpgradeModifier",
-      "paramStatusEffects": [
+      "name": "RoomStateTroopUnitUpgradeModifier",
+      "param_status_effects": [
         {
-          "statusId": "trample",
+          "status": "trample",
           "count": 1
         }
       ],
-      "additionalTooltips": [
-        {
-          "statusId": "horde",
-          "descriptionKey": "",
-          "trigger": 0,
-          "titleKey": "",
-          "style": 0,
-          "isStatusTooltip": true,
-          "isTriggerTooltip": false,
-          "allowSecondaryPlacement": false,
-          "hideInTrainRoomUI": false
-        }
+      "additional_tooltips": [
+        "@MonsterSquadLeader.roomModifiers0.additionalTooltips0"
       ],
-      "paramSubtype": "SubtypesData_FunGuy"
+      "param_subtype": "SubtypesData_FunGuy"
     }
   ],
-  "size": 1,
-  "health": 10,
-  "attackDamage": 10,
-  "subtypeKeys": [
-    "SubtypesData_Shroom",
-    "SubtypesData_BannerUnit"
+  "additional_tooltips": [
+    {
+      "isStatusTooltip": true,
+      "id": "MonsterSquadLeader.roomModifiers0.additionalTooltips0",
+      "status": "horde",
+      "style": "default"
+    }
   ],
-  "characterChatterData": "UnderlegionShroomMaleChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterSquadLeader.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+        "asset_guid": "d465da54296b79d4299ab63c1d6eadba"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

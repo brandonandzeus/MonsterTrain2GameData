@@ -1,56 +1,60 @@
 {
-  "id": "GarfieldBoxesJackInTheBox",
-  "guid": "5a438371-8f7e-43c6-a433-5d9b1bf376df",
-  "name": "Jack in the Box",
-  "nameKey": {
-    "key": "CharacterData_nameKey-a07f57c7a70a63ba-306fecff30e639729b604277691ea8bd-v2",
-    "english": "Jack in the Box",
-    "french": "Diable en boîte",
-    "german": "Springteufel",
-    "russian": "Черт из табакерки",
-    "portuguese": "Caixa de Surpresas",
-    "chinese": "玩偶匣",
-    "spanish": "Caja sorpresa",
-    "chinese_traditional": "玩具盒",
-    "korean": "깜짝 상자",
-    "japanese": "びっくり箱"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-17d238727cd8bf99-306fecff30e639729b604277691ea8bd-v2",
-      "english": "A well-crafted music box with a surprise inside!",
-      "french": "Une boîte à musique finement ouvragée qui renferme une <nobr>surprise !</nobr>",
-      "german": "Eine herrlich gearbeitete Musikbox mit Überraschung!",
-      "russian": "Красивая музыкальная шкатулка с сюрпризом внутри!",
-      "portuguese": "Uma caixa de música bem-feita com uma surpresa dentro!",
-      "chinese": "一个精心制作的音乐盒，内藏惊喜！",
-      "spanish": "¡Una caja de música de calidad con una sorpresita!",
-      "chinese_traditional": "內有驚喜的精緻音樂盒！",
-      "korean": "깜짝 선물이 들어 있는 아주 잘 만든 음악 상자랍니다!",
-      "japanese": "サプライズ入りの精巧に作られたオルゴールだ！"
+      "id": "GarfieldBoxesJackInTheBox",
+      "name": "Jack in the Box",
+      "names": {
+        "key": "CharacterData_nameKey-a07f57c7a70a63ba-306fecff30e639729b604277691ea8bd-v2",
+        "english": "Jack in the Box",
+        "french": "Diable en boîte",
+        "german": "Springteufel",
+        "russian": "Черт из табакерки",
+        "portuguese": "Caixa de Surpresas",
+        "chinese": "玩偶匣",
+        "spanish": "Caja sorpresa",
+        "chinese_traditional": "玩具盒",
+        "korean": "깜짝 상자",
+        "japanese": "びっくり箱"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-17d238727cd8bf99-306fecff30e639729b604277691ea8bd-v2",
+          "english": "A well-crafted music box with a surprise inside!",
+          "french": "Une boîte à musique finement ouvragée qui renferme une <nobr>surprise !</nobr>",
+          "german": "Eine herrlich gearbeitete Musikbox mit Überraschung!",
+          "russian": "Красивая музыкальная шкатулка с сюрпризом внутри!",
+          "portuguese": "Uma caixa de música bem-feita com uma surpresa dentro!",
+          "chinese": "一个精心制作的音乐盒，内藏惊喜！",
+          "spanish": "¡Una caja de música de calidad con una sorpresita!",
+          "chinese_traditional": "內有驚喜的精緻音樂盒！",
+          "korean": "깜짝 선물이 들어 있는 아주 잘 만든 음악 상자랍니다!",
+          "japanese": "サプライズ入りの精巧に作られたオルゴールだ！"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_JackInTheBox.prefab",
+        "asset_guid": "eb3b92f051a5f6c4db6d0d5cdbb14294"
+      },
+      "attack_vfx": "@GarfieldBoxesJackInTheBox.attackVFX",
+      "impact_vfx": "@GarfieldBoxesJackInTheBox.impactVFX",
+      "triggers": [
+        "@GarfieldBoxesJackInTheBox.triggers0"
+      ],
+      "size": 1,
+      "health": 1,
+      "attack_damage": 0,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Box"
+      ],
+      "chatter": "Event_JackInTheBoxChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_JackInTheBox.prefab",
-    "m_AssetGUID": "eb3b92f051a5f6c4db6d0d5cdbb14294"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Jackinthebox/FX_JackintheBoxProc.prefab",
-      "m_AssetGUID": "bc4b92b09e038c544b4741a24c6fc874"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "GarfieldBoxesJackInTheBox.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-1b69cec3e082fa29-306fecff30e639729b604277691ea8bd-v2",
         "english": "Summon a boxed unit.[effect0.unboxedcardname]",
         "french": "Fait sortir une unité d'une boîte.[effect0.unboxedcardname]",
@@ -64,7 +68,7 @@
         "japanese": "箱ユニットを召喚する。[effect0.unboxedcardname]"
       },
       "trigger": "post_combat",
-      "additionalTextOnTriggerKey": {
+      "additional_text_on_trigger": {
         "key": "CharacterData_additionalTextOnTriggerKey-43932c5c50539af5-306fecff30e639729b604277691ea8bd-v2",
         "english": "Pop goes the weasel!",
         "french": "<nobr>Boïng !</nobr>",
@@ -78,26 +82,34 @@
         "japanese": "イタチがぴょんと跳ねたってね！"
       },
       "effects": [
-        {
-          "effectStateName": "CardEffectUnboxJackInTheBoxUnitCard",
-          "appliedToSelfVFX": {
-            "vfxPrefabRefLeft": {
-              "m_debugName": "Assets/VFX/CharacterFX/Attacks/Jackinthebox/FX_JackintheBoxProc.prefab",
-              "m_AssetGUID": "bc4b92b09e038c544b4741a24c6fc874"
-            },
-            "spawnLocation": "character_center"
-          }
-        }
+        "@GarfieldBoxesJackInTheBox.triggers0.effects0"
       ],
-      "showAdditionalTriggerTextOnSuccessOnly": true
+      "show_additional_trigger_text_on_success_only": true
     }
   ],
-  "size": 1,
-  "health": 1,
-  "attackDamage": 0,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Box"
+  "effects": [
+    {
+      "id": "GarfieldBoxesJackInTheBox.triggers0.effects0",
+      "name": "CardEffectUnboxJackInTheBoxUnitCard",
+      "applied_to_self_vfx": "@GarfieldBoxesJackInTheBox.attackVFX"
+    }
   ],
-  "characterChatterData": "Event_JackInTheBoxChatterData"
+  "vfxs": [
+    {
+      "id": "GarfieldBoxesJackInTheBox.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Jackinthebox/FX_JackintheBoxProc.prefab",
+        "asset_guid": "bc4b92b09e038c544b4741a24c6fc874"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "GarfieldBoxesJackInTheBox.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

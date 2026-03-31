@@ -1,103 +1,124 @@
 {
-  "id": "MonsterChampionLunaCoven1",
-  "guid": "e69dd713-1fa6-4226-9a54-a0110dd27e92",
-  "name": "Ekka",
-  "nameKey": {
-    "key": "CharacterData_nameKey-f7d59415b8b011a2-980106e40759689498907805006b3637-v2",
-    "english": "Ekka",
-    "french": "Ekka",
-    "german": "Ekka",
-    "russian": "Экка",
-    "portuguese": "Ekka",
-    "chinese": "艾卡",
-    "spanish": "Ekka",
-    "chinese_traditional": "艾卡",
-    "korean": "에카",
-    "japanese": "エッカ"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-77e8649fd39085ea-980106e40759689498907805006b3637-v2",
-      "english": "The High Witch of the Luna Coven, Lady Ekka led the Selene in both ritual and life. Though even she did not know of the prophecy looming over the coven until it was far too late.",
-      "french": "En tant que grande sorcière des Lunariens, Dame Ekka dirigeait les rituels et la vie des Sélènes. Cependant, même elle n'a appris que trop tard l'existence de la prophétie qui menaçait le clan.",
-      "german": "Die Großhexe des Luna-Zirkels, Lady Ekka, führte die Selenen in Ritual und Leben. Doch selbst sie wusste nichts von der Prophezeiung, die dem Zirkel drohte – bis es zu spät war.",
-      "russian": "Верховная ведьма Лунного Ковена леди Экка — пример для всех Селен в магии и в жизни. Но даже она не узнала о пророчестве, висевшем над ковеном, пока не стало слишком поздно.",
-      "portuguese": "Bruxa-mor da Irmandade Lunar, a Senhorita Ekka liderava as Selenes tanto nos rituais quanto na vida. Infelizmente, nem mesmo ela sabia da profecia que pairava sobre a Irmandade até ser tarde demais.",
-      "chinese": "月巫团的高阶女巫艾卡，在仪式与生活中都领导着月神女。但即使是她，也不知道迫近月巫团的预言，而当她知道时，为时已晚。",
-      "spanish": "Lady Ekka, Bruja Suprema del Aquelarre de Selene, dirige a las selenitas en los rituales y en la vida diaria, pero ni siquiera ella conocía la profecía que amenazaba al Aquelarre hasta que fue muy tarde.",
-      "chinese_traditional": "艾卡女士是月之女巫當中的高等女巫，她在儀式和生活中都負責領導塞勒涅。然而，就連她都不知道那則關於女巫的預言，直到為時已晚。",
-      "korean": "달 집회의 고위 마녀인 에카 여왕은 의식과 삶 양쪽으로 세레네를 이끌었다. 그런 에카 여왕도 예언에서 언급한 집회의 위기가 다가온다는 사실을 너무 늦게 깨달았다.",
-      "japanese": "月魔族の高位魔女であるエッカは、儀式と生活の両方でセレーネたちを率いていた。しかし、彼女でさえ、一族に迫りくる脅威の予言を知ったのは手遅れになってからだったのだ。"
-    }
-  ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Ekka.prefab",
-    "m_AssetGUID": "ab65570bfbff5b648840a0798ea81960"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Ekka/FX_EkkaAttack.prefab",
-      "m_AssetGUID": "c7e542f2b751e704d93e28e27fa469b4"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/Scrivener/FX_ScrivenerImpact.prefab",
-      "m_AssetGUID": "1218d43061fb4284db44ed127f5a3eab"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
-    {
-      "trigger": "on_death",
-      "effects": [
+      "id": "MonsterChampionLunaCoven1",
+      "name": "Ekka",
+      "names": {
+        "key": "CharacterData_nameKey-f7d59415b8b011a2-980106e40759689498907805006b3637-v2",
+        "english": "Ekka",
+        "french": "Ekka",
+        "german": "Ekka",
+        "russian": "Экка",
+        "portuguese": "Ekka",
+        "chinese": "艾卡",
+        "spanish": "Ekka",
+        "chinese_traditional": "艾卡",
+        "korean": "에카",
+        "japanese": "エッカ"
+      },
+      "lore_tooltips": [
         {
-          "effectStateName": "CardEffectNULL",
-          "targetMode": "self",
-          "targetTeamType": "both",
-          "additionalTooltips": [
-            {
-              "descriptionKey": {
-                "key": "CardTraitMagicPower_TooltipText",
-                "english": "Increases the amount of damage dealt and health restored by spells.",
-                "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-                "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-                "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-                "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-                "chinese": "提高法术造成的伤害与恢复的生命值。",
-                "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-                "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-                "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-                "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-              },
-              "titleKey": {
-                "key": "CardTraitMagicPower_TooltipTitle",
-                "english": "Magic Power",
-                "french": "Puissance magique",
-                "german": "Magische Kraft",
-                "russian": "Сила магии",
-                "portuguese": "Poder Mágico",
-                "chinese": "魔法强度",
-                "spanish": "Poder mágico",
-                "chinese_traditional": "魔法力量",
-                "korean": "마법력",
-                "japanese": "魔力"
-              }
-            }
-          ]
+          "key": "CharacterData_data-77e8649fd39085ea-980106e40759689498907805006b3637-v2",
+          "english": "The High Witch of the Luna Coven, Lady Ekka led the Selene in both ritual and life. Though even she did not know of the prophecy looming over the coven until it was far too late.",
+          "french": "En tant que grande sorcière des Lunariens, Dame Ekka dirigeait les rituels et la vie des Sélènes. Cependant, même elle n'a appris que trop tard l'existence de la prophétie qui menaçait le clan.",
+          "german": "Die Großhexe des Luna-Zirkels, Lady Ekka, führte die Selenen in Ritual und Leben. Doch selbst sie wusste nichts von der Prophezeiung, die dem Zirkel drohte – bis es zu spät war.",
+          "russian": "Верховная ведьма Лунного Ковена леди Экка — пример для всех Селен в магии и в жизни. Но даже она не узнала о пророчестве, висевшем над ковеном, пока не стало слишком поздно.",
+          "portuguese": "Bruxa-mor da Irmandade Lunar, a Senhorita Ekka liderava as Selenes tanto nos rituais quanto na vida. Infelizmente, nem mesmo ela sabia da profecia que pairava sobre a Irmandade até ser tarde demais.",
+          "chinese": "月巫团的高阶女巫艾卡，在仪式与生活中都领导着月神女。但即使是她，也不知道迫近月巫团的预言，而当她知道时，为时已晚。",
+          "spanish": "Lady Ekka, Bruja Suprema del Aquelarre de Selene, dirige a las selenitas en los rituales y en la vida diaria, pero ni siquiera ella conocía la profecía que amenazaba al Aquelarre hasta que fue muy tarde.",
+          "chinese_traditional": "艾卡女士是月之女巫當中的高等女巫，她在儀式和生活中都負責領導塞勒涅。然而，就連她都不知道那則關於女巫的預言，直到為時已晚。",
+          "korean": "달 집회의 고위 마녀인 에카 여왕은 의식과 삶 양쪽으로 세레네를 이끌었다. 그런 에카 여왕도 예언에서 언급한 집회의 위기가 다가온다는 사실을 너무 늦게 깨달았다.",
+          "japanese": "月魔族の高位魔女であるエッカは、儀式と生活の両方でセレーネたちを率いていた。しかし、彼女でさえ、一族に迫りくる脅威の予言を知ったのは手遅れになってからだったのだ。"
         }
       ],
-      "hideVisualAndIgnoreSilence": true,
-      "allowAdditionalTooltipsWhenVisualIsHidden": true
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Ekka.prefab",
+        "asset_guid": "ab65570bfbff5b648840a0798ea81960"
+      },
+      "attack_vfx": "@MonsterChampionLunaCoven1.attackVFX",
+      "impact_vfx": "@MonsterChampionLunaCoven1.impactVFX",
+      "triggers": [
+        "@MonsterChampionLunaCoven1.triggers0"
+      ],
+      "size": 2,
+      "health": 5,
+      "attack_damage": 5,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "chatter": "LunaCovenEkkaChatterData"
     }
   ],
-  "size": 2,
-  "health": 5,
-  "attackDamage": 5,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+  "character_triggers": [
+    {
+      "id": "MonsterChampionLunaCoven1.triggers0",
+      "trigger": "on_death",
+      "effects": [
+        "@MonsterChampionLunaCoven1.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true,
+      "allow_additional_tooltips_when_visual_is_hidden": true
+    }
   ],
-  "characterChatterData": "LunaCovenEkkaChatterData"
+  "effects": [
+    {
+      "id": "MonsterChampionLunaCoven1.triggers0.effects0",
+      "name": "CardEffectNULL",
+      "target_mode": "self",
+      "additional_tooltips": [
+        "@MonsterChampionLunaCoven1.triggers0.effects0.additionalTooltips0"
+      ]
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "MonsterChampionLunaCoven1.triggers0.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
+      }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MonsterChampionLunaCoven1.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Ekka/FX_EkkaAttack.prefab",
+        "asset_guid": "c7e542f2b751e704d93e28e27fa469b4"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterChampionLunaCoven1.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Scrivener/FX_ScrivenerImpact.prefab",
+        "asset_guid": "1218d43061fb4284db44ed127f5a3eab"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

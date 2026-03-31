@@ -1,126 +1,149 @@
 {
-  "id": "PyreHeartAquath",
-  "guid": "69d7a5ad-8d6e-4fa6-897f-e152931a009a",
-  "name": "Aquath's Reservation",
-  "nameKey": {
-    "key": "CharacterData_nameKey-c688e4fb8d791bf1-0440f568f7ccd0846b87e96b30c7b812-v2",
-    "english": "Aquath's Reservation",
-    "french": "Réserve d'Aquath",
-    "german": "Aquaths Vorbehalt",
-    "russian": "Обитель Аквата",
-    "portuguese": "Ressalva de Aquath",
-    "chinese": "阿奎斯的预备余烬",
-    "spanish": "Reserva de Aquath",
-    "chinese_traditional": "艾闊斯的儲備",
-    "korean": "아콰스의 유보",
-    "japanese": "アクアスの遠慮"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Aquath.prefab",
-    "m_AssetGUID": "7ee30de6ff17a9248918ca3a6a80ba14"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/PyreFX/Aquath/FX_AquathPyreAttack.prefab",
-      "m_AssetGUID": "0a4b84770b6e42247b625b81f8e9316d"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
-      "m_AssetGUID": "b856194664a6e4b4da8f1c47c5a0e765"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/PyreFX/Aquath/FX_AquathPyreDeath.prefab",
-      "m_AssetGUID": "2aa2029e92445214bb590af52c49fa4c"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "sweep",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    },
-    {
-      "statusId": "immune",
-      "count": 1
+      "id": "PyreHeartAquath",
+      "name": "Aquath's Reservation",
+      "names": {
+        "key": "CharacterData_nameKey-c688e4fb8d791bf1-0440f568f7ccd0846b87e96b30c7b812-v2",
+        "english": "Aquath's Reservation",
+        "french": "Réserve d'Aquath",
+        "german": "Aquaths Vorbehalt",
+        "russian": "Обитель Аквата",
+        "portuguese": "Ressalva de Aquath",
+        "chinese": "阿奎斯的预备余烬",
+        "spanish": "Reserva de Aquath",
+        "chinese_traditional": "艾闊斯的儲備",
+        "korean": "아콰스의 유보",
+        "japanese": "アクアスの遠慮"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Aquath.prefab",
+        "asset_guid": "7ee30de6ff17a9248918ca3a6a80ba14"
+      },
+      "attack_vfx": "@PyreHeartAquath.attackVFX",
+      "impact_vfx": "@PyreHeartAquath.impactVFX",
+      "death_vfx": "@PyreHeartAquath.deathVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "immune",
+          "count": 1
+        }
+      ],
+      "ability": "@PyreHeartAquath.unitAbility",
+      "size": 2,
+      "health": 1,
+      "can_be_healed": false,
+      "attack_damage": 1,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Pyre"
+      ],
+      "chatter": "PyreHeartChatter",
+      "is_pyre_heart": true
     }
   ],
-  "unitAbility": {
-    "id": "PyreHeartAquathAbility",
-    "guid": "cf28dea5-d340-4792-8fb2-044eca98d5d0",
-    "nameKey": {
-      "key": "CardData_nameKey-0da93fb657730e2f-dbb1f08e30157bb488750f386d72c7e7-v2",
-      "english": "Aquath's Reservation",
-      "french": "Réserve d'Aquath",
-      "german": "Aquaths Vorbehalt",
-      "russian": "Обитель Аквата",
-      "portuguese": "Ressalva de Aquath",
-      "chinese": "阿奎斯的预备余烬",
-      "spanish": "Reserva de Aquath",
-      "chinese_traditional": "艾闊斯的儲備",
-      "korean": "아콰스의 유보",
-      "japanese": "アクアスの予備"
-    },
-    "overrideDescriptionKey": {
-      "key": "CardData_overrideDescriptionKey-18b07712329e92fc-dbb1f08e30157bb488750f386d72c7e7-v2",
-      "english": "Gain [effect0.power][ember].",
-      "french": "Octroie [effect0.power][ember].",
-      "german": "Erhalte [effect0.power][ember].",
-      "russian": "Дает [effect0.power][ember].",
-      "portuguese": "Recebe [effect0.power][ember].",
-      "chinese": "获得[effect0.power][ember]。",
-      "spanish": "Obtienes [effect0.power][ember].",
-      "chinese_traditional": "獲得[effect0.power][ember]。",
-      "korean": "[effect0.power][ember]을 획득합니다.",
-      "japanese": "[effect0.power][ember]を得る。"
-    },
-    "cardType": "spell",
-    "rarity": "common",
-    "effects": [
-      {
-        "effectStateName": "CardEffectGainEnergy",
-        "paramInt": 3,
-        "appliedToSelfVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/PyreFX/Aquath/FX_AquathAbility.prefab",
-            "m_AssetGUID": "ba28eb7c538dd7c46b31db9a88e8a65c"
-          },
-          "spawnLocation": "character_center"
-        }
+  "cards": [
+    {
+      "id": "PyreHeartAquath.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-0da93fb657730e2f-dbb1f08e30157bb488750f386d72c7e7-v2",
+        "english": "Aquath's Reservation",
+        "french": "Réserve d'Aquath",
+        "german": "Aquaths Vorbehalt",
+        "russian": "Обитель Аквата",
+        "portuguese": "Ressalva de Aquath",
+        "chinese": "阿奎斯的预备余烬",
+        "spanish": "Reserva de Aquath",
+        "chinese_traditional": "艾闊斯的儲備",
+        "korean": "아콰스의 유보",
+        "japanese": "アクアスの予備"
       },
-      {
-        "effectStateName": "CardEffectRemoveAbility",
-        "targetMode": "pyre",
-        "targetTeamType": "both",
-        "paramRelicData": "Echoes_PyreCanUseAbilityMultipleTimes"
-      }
-    ],
-    "cooldownAfterActivated": 99,
-    "isUnitAbility": true,
-    "targetsRoom": false,
-    "initialKeyboardTarget": "front_friendly"
-  },
-  "size": 2,
-  "health": 1,
-  "canBeHealed": false,
-  "attackDamage": 1,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Pyre"
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-18b07712329e92fc-dbb1f08e30157bb488750f386d72c7e7-v2",
+        "english": "Gain [effect0.power][ember].",
+        "french": "Octroie [effect0.power][ember].",
+        "german": "Erhalte [effect0.power][ember].",
+        "russian": "Дает [effect0.power][ember].",
+        "portuguese": "Recebe [effect0.power][ember].",
+        "chinese": "获得[effect0.power][ember]。",
+        "spanish": "Obtienes [effect0.power][ember].",
+        "chinese_traditional": "獲得[effect0.power][ember]。",
+        "korean": "[effect0.power][ember]을 획득합니다.",
+        "japanese": "[effect0.power][ember]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@PyreHeartAquath.unitAbility.effects0",
+        "@PyreHeartAquath.unitAbility.effects1"
+      ],
+      "cooldown": 99,
+      "is_an_ability": true,
+      "targets_room": false,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
+    }
   ],
-  "characterChatterData": "PyreHeartChatter",
-  "isPyreHeart": true
+  "effects": [
+    {
+      "id": "PyreHeartAquath.unitAbility.effects0",
+      "name": "CardEffectGainEnergy",
+      "param_int": 3,
+      "applied_to_self_vfx": "@PyreHeartAquath.unitAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "PyreHeartAquath.unitAbility.effects1",
+      "name": "CardEffectRemoveAbility",
+      "target_mode": "pyre",
+      "target_team": "both",
+      "param_relic": "Echoes_PyreCanUseAbilityMultipleTimes"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "PyreHeartAquath.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/PyreFX/Aquath/FX_AquathPyreAttack.prefab",
+        "asset_guid": "0a4b84770b6e42247b625b81f8e9316d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartAquath.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
+        "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartAquath.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/PyreFX/Aquath/FX_AquathPyreDeath.prefab",
+        "asset_guid": "2aa2029e92445214bb590af52c49fa4c"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartAquath.unitAbility.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/PyreFX/Aquath/FX_AquathAbility.prefab",
+        "asset_guid": "ba28eb7c538dd7c46b31db9a88e8a65c"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

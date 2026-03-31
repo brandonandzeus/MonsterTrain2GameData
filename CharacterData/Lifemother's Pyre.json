@@ -1,71 +1,83 @@
 {
-  "id": "PyreHeartLife",
-  "guid": "e713df73-c8e7-4866-87d5-6249a1f7fc26",
-  "name": "Lifemother's Pyre",
-  "nameKey": {
-    "key": "CharacterData_nameKey-948d3ed0bc67c527-fd2969554e5859b4f8dcbe29e291dee2-v2",
-    "english": "Lifemother's Pyre",
-    "french": "Brasier de Mère Nature",
-    "german": "Höllenglut der Lebensmutter",
-    "russian": "Пекло Матери-природы",
-    "portuguese": "Pira da Genetriz",
-    "chinese": "生命之母的薪火",
-    "spanish": "Pira de la Madre Vida",
-    "chinese_traditional": "生命之母火堆",
-    "korean": "생명의 어머니의 화로",
-    "japanese": "ライフマザーの炉"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PyreHeart_LivingPyre.prefab",
-    "m_AssetGUID": "c7563bb9f98c6af4cbb2a3f9e663e2e6"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/LivingPyre/FX_LivingPyreAttack.prefab",
-      "m_AssetGUID": "4d4cf41ab1141e040b06faeec3f5dc2d"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/StatusFX/Decay/FX_DecayProc.prefab",
-      "m_AssetGUID": "ee20c38e12da5444fb6bb40f2677cc8e"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/LivingPyre/FX_LivingPyreDeath.prefab",
-      "m_AssetGUID": "052037d51bfb0da4dbc2d9b425bb46c1"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "sweep",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    },
-    {
-      "statusId": "immune",
-      "count": 1
+      "id": "PyreHeartLife",
+      "name": "Lifemother's Pyre",
+      "names": {
+        "key": "CharacterData_nameKey-948d3ed0bc67c527-fd2969554e5859b4f8dcbe29e291dee2-v2",
+        "english": "Lifemother's Pyre",
+        "french": "Brasier de Mère Nature",
+        "german": "Höllenglut der Lebensmutter",
+        "russian": "Пекло Матери-природы",
+        "portuguese": "Pira da Genetriz",
+        "chinese": "生命之母的薪火",
+        "spanish": "Pira de la Madre Vida",
+        "chinese_traditional": "生命之母火堆",
+        "korean": "생명의 어머니의 화로",
+        "japanese": "ライフマザーの炉"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PyreHeart_LivingPyre.prefab",
+        "asset_guid": "c7563bb9f98c6af4cbb2a3f9e663e2e6"
+      },
+      "attack_vfx": "@PyreHeartLife.attackVFX",
+      "impact_vfx": "@PyreHeartLife.impactVFX",
+      "death_vfx": "@PyreHeartLife.deathVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "immune",
+          "count": 1
+        }
+      ],
+      "size": 2,
+      "health": 1,
+      "can_be_healed": false,
+      "attack_damage": 1,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Pyre"
+      ],
+      "chatter": "PyreHeartChatter",
+      "is_pyre_heart": true
     }
   ],
-  "size": 2,
-  "health": 1,
-  "canBeHealed": false,
-  "attackDamage": 1,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Pyre"
-  ],
-  "characterChatterData": "PyreHeartChatter",
-  "isPyreHeart": true
+  "vfxs": [
+    {
+      "id": "PyreHeartLife.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/LivingPyre/FX_LivingPyreAttack.prefab",
+        "asset_guid": "4d4cf41ab1141e040b06faeec3f5dc2d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartLife.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/StatusFX/Decay/FX_DecayProc.prefab",
+        "asset_guid": "ee20c38e12da5444fb6bb40f2677cc8e"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartLife.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/LivingPyre/FX_LivingPyreDeath.prefab",
+        "asset_guid": "052037d51bfb0da4dbc2d9b425bb46c1"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

@@ -1,71 +1,79 @@
 {
-  "id": "Boss_Level2_Spikes",
-  "guid": "28efa55a-6ca2-4c4a-856b-fbbc17e15c5c",
-  "name": "Legion",
-  "nameKey": {
-    "key": "CharacterData_nameKey-9cae0a09ade3e4af-7b7308e003b8e9346a729185ffba85e9-v2",
-    "english": "Legion",
-    "french": "Légion",
-    "german": "Legion",
-    "russian": "Легион",
-    "portuguese": "Legião",
-    "chinese": "军团",
-    "spanish": "Legión",
-    "chinese_traditional": "軍團",
-    "korean": "군단",
-    "japanese": "レギオン"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-d0c866d25bfd2e1d-7b7308e003b8e9346a729185ffba85e9-v2",
-      "english": "Dominion created something new from the willingness of the Forsaken to accept any power.",
-      "french": "De la volonté des Délaissés de se soumettre à n'importe quel pouvoir, Domination a créé quelque chose de nouveau.",
-      "german": "Dominion schuf etwas Neues aus der Bereitschaft der Verlassenen, jegliche Macht zu akzeptieren.",
-      "russian": "Доминион воспользовался готовностью Отреченных подчиниться любому хозяину и создал кое-что новое.",
-      "portuguese": "O Dominion criou algo novo a partir da disposição dos Rejeitados de aceitar qualquer poder.",
-      "chinese": "被遗忘者愿意接受一切力量，统御泰坦利用这一点创造出了新的存在。",
-      "spanish": "Dominio creó algo nuevo gracias a la predisposición de los olvidados a aceptar cualquier poder.",
-      "chinese_traditional": "被遺棄者願意接受任何力量，主宰利用這點創造出了新事物。",
-      "korean": "도미니온은 버림받은 자의 끝없는 힘의 추구에서 새로운 존재를 창조했다.",
-      "japanese": "ドミニオンは、フォーセイクンたちのどんな力でも受け入れるという意志より、新しいものを生み出した。"
+      "id": "Boss_Level2_Spikes",
+      "name": "Legion",
+      "names": {
+        "key": "CharacterData_nameKey-9cae0a09ade3e4af-7b7308e003b8e9346a729185ffba85e9-v2",
+        "english": "Legion",
+        "french": "Légion",
+        "german": "Legion",
+        "russian": "Легион",
+        "portuguese": "Legião",
+        "chinese": "军团",
+        "spanish": "Legión",
+        "chinese_traditional": "軍團",
+        "korean": "군단",
+        "japanese": "レギオン"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-d0c866d25bfd2e1d-7b7308e003b8e9346a729185ffba85e9-v2",
+          "english": "Dominion created something new from the willingness of the Forsaken to accept any power.",
+          "french": "De la volonté des Délaissés de se soumettre à n'importe quel pouvoir, Domination a créé quelque chose de nouveau.",
+          "german": "Dominion schuf etwas Neues aus der Bereitschaft der Verlassenen, jegliche Macht zu akzeptieren.",
+          "russian": "Доминион воспользовался готовностью Отреченных подчиниться любому хозяину и создал кое-что новое.",
+          "portuguese": "O Dominion criou algo novo a partir da disposição dos Rejeitados de aceitar qualquer poder.",
+          "chinese": "被遗忘者愿意接受一切力量，统御泰坦利用这一点创造出了新的存在。",
+          "spanish": "Dominio creó algo nuevo gracias a la predisposición de los olvidados a aceptar cualquier poder.",
+          "chinese_traditional": "被遺棄者願意接受任何力量，主宰利用這點創造出了新事物。",
+          "korean": "도미니온은 버림받은 자의 끝없는 힘의 추구에서 새로운 존재를 창조했다.",
+          "japanese": "ドミニオンは、フォーセイクンたちのどんな力でも受け入れるという意志より、新しいものを生み出した。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Legion.prefab",
+        "asset_guid": "fd67f8db24a307a4a8fcd7519b25694f"
+      },
+      "impact_vfx": "@Boss_Level2_Spikes.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "spikes",
+          "count": 3
+        }
+      ],
+      "endless_stats": {
+        "attack": 16,
+        "health": 1800
+      },
+      "size": 5,
+      "health": 260,
+      "is_mini_boss": true,
+      "death_type": "large",
+      "attack_damage": 4,
+      "boss_titan_affinity": "dominion",
+      "subtypes": [
+        "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
+        "SubtypesData_Boss",
+        "SubtypesData_BossAll"
+      ],
+      "chatter": "Boss2_Legion_ChatterData",
+      "artist": "Nicole Anne Alfonso"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Legion.prefab",
-    "m_AssetGUID": "fd67f8db24a307a4a8fcd7519b25694f"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "vfxs": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "spikes",
-      "count": 3
+      "id": "Boss_Level2_Spikes.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
     }
-  ],
-  "endlessBaselineStats": {
-    "endlessHealth": 1800,
-    "endlessAttack": 16
-  },
-  "size": 5,
-  "health": 260,
-  "isMiniboss": true,
-  "deathType": "large",
-  "attackDamage": 4,
-  "bossTitanAffinity": "dominion",
-  "subtypeKeys": [
-    "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
-    "SubtypesData_Boss",
-    "SubtypesData_BossAll"
-  ],
-  "characterChatterData": "Boss2_Legion_ChatterData",
-  "artistAttribution": "Nicole Anne Alfonso"
+  ]
 }

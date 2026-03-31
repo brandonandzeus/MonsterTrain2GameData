@@ -1,42 +1,59 @@
 {
-  "id": "MonsterHeroInTraining",
-  "guid": "d438f424-fc02-418f-ab68-e34766719ccd",
-  "name": "Demonic Fledgling",
-  "nameKey": {
-    "key": "CharacterData_nameKey-46239db186e5334a-ad30cb8f3aeeca34aa5cc65cfe543bbd-v2",
-    "english": "Demonic Fledgling",
-    "french": "Novice démoniaque",
-    "german": "Dämonen-Zögling",
-    "russian": "Демоненок",
-    "portuguese": "Novato Demoníaco",
-    "chinese": "恶魔新兵",
-    "spanish": "Demonio novato",
-    "chinese_traditional": "惡魔幼崽",
-    "korean": "꼬맹이 악마",
-    "japanese": "駆け出し悪魔"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-1701a7d56cdf1244-ad30cb8f3aeeca34aa5cc65cfe543bbd-v2",
-      "english": "“Is it time for a break yet?”",
-      "french": "<nobr>« C'est</nobr> bientôt l'heure de la <nobr>pause ? »</nobr>",
-      "german": "„Ist es schon Zeit für eine Pause?“",
-      "russian": "«Еще не пора перекусить?»",
-      "portuguese": "“Já está na hora de fazer uma pausa?”",
-      "chinese": "“到休息时间了吗？”",
-      "spanish": "«¿Cuánto queda para el descanso?».",
-      "chinese_traditional": "「現在可以休息了嗎？」",
-      "korean": "\"쉬는 시간 아직 멀었어?\"",
-      "japanese": "「まだ休憩じゃないんですか？」"
+      "id": "MonsterHeroInTraining",
+      "name": "Demonic Fledgling",
+      "names": {
+        "key": "CharacterData_nameKey-46239db186e5334a-ad30cb8f3aeeca34aa5cc65cfe543bbd-v2",
+        "english": "Demonic Fledgling",
+        "french": "Novice démoniaque",
+        "german": "Dämonen-Zögling",
+        "russian": "Демоненок",
+        "portuguese": "Novato Demoníaco",
+        "chinese": "恶魔新兵",
+        "spanish": "Demonio novato",
+        "chinese_traditional": "惡魔幼崽",
+        "korean": "꼬맹이 악마",
+        "japanese": "駆け出し悪魔"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-1701a7d56cdf1244-ad30cb8f3aeeca34aa5cc65cfe543bbd-v2",
+          "english": "“Is it time for a break yet?”",
+          "french": "<nobr>« C'est</nobr> bientôt l'heure de la <nobr>pause ? »</nobr>",
+          "german": "„Ist es schon Zeit für eine Pause?“",
+          "russian": "«Еще не пора перекусить?»",
+          "portuguese": "“Já está na hora de fazer uma pausa?”",
+          "chinese": "“到休息时间了吗？”",
+          "spanish": "«¿Cuánto queda para el descanso?».",
+          "chinese_traditional": "「現在可以休息了嗎？」",
+          "korean": "\"쉬는 시간 아직 멀었어?\"",
+          "japanese": "「まだ休憩じゃないんですか？」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_HeroInTraining.prefab",
+        "asset_guid": "84daf4ed1e3203a46bfd4a68a692bd0f"
+      },
+      "triggers": [
+        "@MonsterHeroInTraining.triggers0",
+        "@MonsterHeroInTraining.triggers1"
+      ],
+      "size": 2,
+      "health": 10,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Angel"
+      ],
+      "chatter": "BanishedHeroInTrainingChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_HeroInTraining.prefab",
-    "m_AssetGUID": "84daf4ed1e3203a46bfd4a68a692bd0f"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MonsterHeroInTraining.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-8a586835c2c942bb-ad30cb8f3aeeca34aa5cc65cfe543bbd-v2",
         "english": "Gain [valor] [effect0.status0.power].",
         "french": "Octroie [valor] [effect0.status0.power].",
@@ -51,21 +68,12 @@
       },
       "trigger": "on_attacking",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "monsters",
-          "paramStatusEffects": [
-            {
-              "statusId": "valor",
-              "count": 1
-            }
-          ]
-        }
+        "@MonsterHeroInTraining.triggers0.effects0"
       ]
     },
     {
-      "descriptionKey": {
+      "id": "MonsterHeroInTraining.triggers1",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-ab23808ca24baa89-ad30cb8f3aeeca34aa5cc65cfe543bbd-v2",
         "english": "Gain [rage] [effect0.status0.power].",
         "french": "Octroie [rage] [effect0.status0.power].",
@@ -80,26 +88,32 @@
       },
       "trigger": "on_shift",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "monsters",
-          "paramStatusEffects": [
-            {
-              "statusId": "buff",
-              "count": 2
-            }
-          ]
-        }
+        "@MonsterHeroInTraining.triggers1.effects0"
       ]
     }
   ],
-  "size": 2,
-  "health": 10,
-  "attackDamage": 10,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Angel"
-  ],
-  "characterChatterData": "BanishedHeroInTrainingChatterData"
+  "effects": [
+    {
+      "id": "MonsterHeroInTraining.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "valor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "MonsterHeroInTraining.triggers1.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 2
+        }
+      ]
+    }
+  ]
 }

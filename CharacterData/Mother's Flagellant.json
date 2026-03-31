@@ -1,42 +1,64 @@
 {
-  "id": "R1_HeavyT1_LoseHealthOnMove_Ver2",
-  "guid": "e95009f7-cc74-40fb-90f5-e343b5964bcd",
-  "name": "Mother's Flagellant",
-  "nameKey": {
-    "key": "CharacterData_nameKey-de350c98e8e809a7-43c7dc6586a2cd9459a1adca445c1592-v2",
-    "english": "Mother's Flagellant",
-    "french": "Flagelleur de la Mère",
-    "german": "Mutters Geißler",
-    "russian": "Флагеллант Матери",
-    "portuguese": "Flagelante da Mãe",
-    "chinese": "母亲的苦修者",
-    "spanish": "Flagelante de Madre",
-    "chinese_traditional": "母親的鞭笞者",
-    "korean": "어머니의 고행자",
-    "japanese": "マザーのフラジェラント"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-f529afcc992e7cca-43c7dc6586a2cd9459a1adca445c1592-v2",
-      "english": "The Mother saw Dominian’s corruption upon this soul and saw an opportunity to mold them to Her own will.",
-      "french": "La Mère remarqua la corruption de Domination sur cette âme et saisit cette occasion pour la modeler à sa guise.",
-      "german": "Die Mutter erkannte die Verderbnis des Herrschaftstitanen in dieser Seele wieder und sah eine Gelegenheit, diese nach Ihrem eigenen Willen zu schmieden.",
-      "russian": "Мать увидела скверну Доминиона в этой Душе, как и шанс изменить ее, подчинив себе.",
-      "portuguese": "A Mãe viu a corrupção do Domínio nessa alma e percebeu uma oportunidade para moldá-la à Sua própria vontade.",
-      "chinese": "母亲在这个灵魂上看到了统御泰坦的腐化，并发现了一个机会，能将该灵魂按照她的意愿进行改造。",
-      "spanish": "La Madre vio la corrupción de Dominio en esta alma y la interpretó como una oportunidad de moldearla a Su voluntad.",
-      "chinese_traditional": "母親看見此靈魂身上沾染的主宰腐化，並從中看到了將他們塑造成執行己身意志之傀儡的良機。",
-      "korean": "어머니는 이 영혼 위에 드리운 도미니온의 타락을 알아보았고, 그들을 자신의 뜻대로 빚어낼 기회로 여겼다.",
-      "japanese": "マザーは、この魂にドミニオンの堕落を感じ取り、それを自由に変質させる機会を見出したのだ。"
+      "id": "R1_HeavyT1_LoseHealthOnMove_Ver2",
+      "name": "Mother's Flagellant",
+      "names": {
+        "key": "CharacterData_nameKey-de350c98e8e809a7-43c7dc6586a2cd9459a1adca445c1592-v2",
+        "english": "Mother's Flagellant",
+        "french": "Flagelleur de la Mère",
+        "german": "Mutters Geißler",
+        "russian": "Флагеллант Матери",
+        "portuguese": "Flagelante da Mãe",
+        "chinese": "母亲的苦修者",
+        "spanish": "Flagelante de Madre",
+        "chinese_traditional": "母親的鞭笞者",
+        "korean": "어머니의 고행자",
+        "japanese": "マザーのフラジェラント"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-f529afcc992e7cca-43c7dc6586a2cd9459a1adca445c1592-v2",
+          "english": "The Mother saw Dominian’s corruption upon this soul and saw an opportunity to mold them to Her own will.",
+          "french": "La Mère remarqua la corruption de Domination sur cette âme et saisit cette occasion pour la modeler à sa guise.",
+          "german": "Die Mutter erkannte die Verderbnis des Herrschaftstitanen in dieser Seele wieder und sah eine Gelegenheit, diese nach Ihrem eigenen Willen zu schmieden.",
+          "russian": "Мать увидела скверну Доминиона в этой Душе, как и шанс изменить ее, подчинив себе.",
+          "portuguese": "A Mãe viu a corrupção do Domínio nessa alma e percebeu uma oportunidade para moldá-la à Sua própria vontade.",
+          "chinese": "母亲在这个灵魂上看到了统御泰坦的腐化，并发现了一个机会，能将该灵魂按照她的意愿进行改造。",
+          "spanish": "La Madre vio la corrupción de Dominio en esta alma y la interpretó como una oportunidad de moldearla a Su voluntad.",
+          "chinese_traditional": "母親看見此靈魂身上沾染的主宰腐化，並從中看到了將他們塑造成執行己身意志之傀儡的良機。",
+          "korean": "어머니는 이 영혼 위에 드리운 도미니온의 타락을 알아보았고, 그들을 자신의 뜻대로 빚어낼 기회로 여겼다.",
+          "japanese": "マザーは、この魂にドミニオンの堕落を感じ取り、それを自由に変質させる機会を見出したのだ。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Flagellant_SoulSavior.prefab",
+        "asset_guid": "cceba40fe119928478c2e983409e632f"
+      },
+      "triggers": [
+        "@R1_HeavyT1_LoseHealthOnMove_Ver2.triggers0",
+        "@R1_HeavyT1_LoseHealthOnMove_Ver2.triggers1"
+      ],
+      "endless_stats": {
+        "attack": 4,
+        "health": 80
+      },
+      "size": 2,
+      "health": 80,
+      "attack_damage": 3,
+      "lifemother_variant": true,
+      "subtypes": [
+        "SubtypesData_SoulSavior_Heavy_Enemy"
+      ],
+      "chatter": "R1SoulSaviorEnemies_Male_ChatterData",
+      "artist": "Herrick Ong"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Flagellant_SoulSavior.prefab",
-    "m_AssetGUID": "cceba40fe119928478c2e983409e632f"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "R1_HeavyT1_LoseHealthOnMove_Ver2.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-9bfc1695fc6f1b8a-43c7dc6586a2cd9459a1adca445c1592-v2",
         "english": "Take [effect0.power] damage. ",
         "french": "Subit <nobr>[effect0.power] DGT.</nobr> ",
@@ -51,16 +73,12 @@
       },
       "trigger": "post_combat",
       "effects": [
-        {
-          "effectStateName": "CardEffectDamage",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramInt": 20
-        }
+        "@R1_HeavyT1_LoseHealthOnMove_Ver2.triggers0.effects0"
       ]
     },
     {
-      "descriptionKey": {
+      "id": "R1_HeavyT1_LoseHealthOnMove_Ver2.triggers1",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-d8b246726b480181-43c7dc6586a2cd9459a1adca445c1592-v2",
         "english": "Gain [burst] [effect0.status0.power].",
         "french": "Octroie [burst] [effect0.status0.power].",
@@ -75,31 +93,27 @@
       },
       "trigger": "on_hit",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "both",
-          "paramStatusEffects": [
-            {
-              "statusId": "burst",
-              "count": 1
-            }
-          ]
-        }
+        "@R1_HeavyT1_LoseHealthOnMove_Ver2.triggers1.effects0"
       ]
     }
   ],
-  "endlessBaselineStats": {
-    "endlessHealth": 80,
-    "endlessAttack": 4
-  },
-  "size": 2,
-  "health": 80,
-  "attackDamage": 3,
-  "lifemotherVariant": true,
-  "subtypeKeys": [
-    "SubtypesData_SoulSavior_Heavy_Enemy"
-  ],
-  "characterChatterData": "R1SoulSaviorEnemies_Male_ChatterData",
-  "artistAttribution": "Herrick Ong"
+  "effects": [
+    {
+      "id": "R1_HeavyT1_LoseHealthOnMove_Ver2.triggers0.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "self",
+      "param_int": 20
+    },
+    {
+      "id": "R1_HeavyT1_LoseHealthOnMove_Ver2.triggers1.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "burst",
+          "count": 1
+        }
+      ]
+    }
+  ]
 }

@@ -1,99 +1,114 @@
 {
-  "id": "MonsterRoyalWhelp",
-  "guid": "b0237b4d-8a97-4fd8-b618-6dfb1fac31f3",
-  "name": "Stuck Up Whelp",
-  "nameKey": {
-    "key": "CharacterData_nameKey-7bbb5a0345a372fe-a21aff51c1802f345bb3b894f92c6a61-v2",
-    "english": "Stuck Up Whelp",
-    "french": "Dragonnet snob",
-    "german": "Verklemmter Zögling",
-    "russian": "Зазнавшийся дракончик",
-    "portuguese": "Filhote Arrogante",
-    "chinese": "自大的幼龙",
-    "spanish": "Cría estirada",
-    "chinese_traditional": "自大幼龍",
-    "korean": "거만한 해츨링",
-    "japanese": "生意気小竜"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-545aec000ed77cb2-a21aff51c1802f345bb3b894f92c6a61-v2",
-      "english": "“I’m not stuck up, I just know you’re not worth my time.”",
-      "french": "<nobr>« Je</nobr> ne suis pas snob, je sais juste que tu ne mérites pas que je t'accorde mon <nobr>temps. »</nobr>",
-      "german": "„Ich bin nicht eingebildet. Du bist nur meine Zeit nicht wert.“",
-      "russian": "«Я не зазнался, я просто знаю, что ты не стоишь моего времени».",
-      "portuguese": "“Não sou arrogante, só não quero perder tempo com isso.”",
-      "chinese": "“我不是自大，我只是知道你并不值得我浪费时间。”",
-      "spanish": "«No es que sea un estirado, es que no eres digno de mi tiempo».",
-      "chinese_traditional": "「我不是高傲，我只是知道你不值得我浪費時間。」",
-      "korean": "\"거만하게 굴려는 게 아니야. 너는 내 시간을 낭비할 가치가 없다는 걸 알거든.\"",
-      "japanese": "「生意気なんじゃないよ、ただ君に時間をかける価値がないってわかるんだ」"
+      "id": "MonsterRoyalWhelp",
+      "name": "Stuck Up Whelp",
+      "names": {
+        "key": "CharacterData_nameKey-7bbb5a0345a372fe-a21aff51c1802f345bb3b894f92c6a61-v2",
+        "english": "Stuck Up Whelp",
+        "french": "Dragonnet snob",
+        "german": "Verklemmter Zögling",
+        "russian": "Зазнавшийся дракончик",
+        "portuguese": "Filhote Arrogante",
+        "chinese": "自大的幼龙",
+        "spanish": "Cría estirada",
+        "chinese_traditional": "自大幼龍",
+        "korean": "거만한 해츨링",
+        "japanese": "生意気小竜"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-545aec000ed77cb2-a21aff51c1802f345bb3b894f92c6a61-v2",
+          "english": "“I’m not stuck up, I just know you’re not worth my time.”",
+          "french": "<nobr>« Je</nobr> ne suis pas snob, je sais juste que tu ne mérites pas que je t'accorde mon <nobr>temps. »</nobr>",
+          "german": "„Ich bin nicht eingebildet. Du bist nur meine Zeit nicht wert.“",
+          "russian": "«Я не зазнался, я просто знаю, что ты не стоишь моего времени».",
+          "portuguese": "“Não sou arrogante, só não quero perder tempo com isso.”",
+          "chinese": "“我不是自大，我只是知道你并不值得我浪费时间。”",
+          "spanish": "«No es que sea un estirado, es que no eres digno de mi tiempo».",
+          "chinese_traditional": "「我不是高傲，我只是知道你不值得我浪費時間。」",
+          "korean": "\"거만하게 굴려는 게 아니야. 너는 내 시간을 낭비할 가치가 없다는 걸 알거든.\"",
+          "japanese": "「生意気なんじゃないよ、ただ君に時間をかける価値がないってわかるんだ」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_RoyalWhelp.prefab",
+        "asset_guid": "b71f90045c9c0a34b84f372f482c1913"
+      },
+      "impact_vfx": "@MonsterRoyalWhelp.impactVFX",
+      "ability": "@MonsterRoyalWhelp.unitAbility",
+      "size": 1,
+      "health": 1,
+      "attack_damage": 4,
+      "subtypes": [
+        "SubtypesData_Whelp"
+      ],
+      "chatter": "PyreborneWhelpChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_RoyalWhelp.prefab",
-    "m_AssetGUID": "b71f90045c9c0a34b84f372f482c1913"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "unitAbility": {
-    "id": "GiveAvariceWhelpAbility",
-    "guid": "3e5b7e96-9cd1-468b-a439-8b66f9d10a30",
-    "nameKey": {
-      "key": "CardData_nameKey-9d83faff2048131f-7fc660d73776f134384daefbfc648867-v2",
-      "english": "Expensive Taste",
-      "french": "Goûts de luxe",
-      "german": "Teurer Geschmack",
-      "russian": "Любовь к роскоши",
-      "portuguese": "Gosto Refinado",
-      "chinese": "昂贵品味",
-      "spanish": "Gustos caros",
-      "chinese_traditional": "高貴品味",
-      "korean": "고급 취향",
-      "japanese": "高価な趣味"
-    },
-    "overrideDescriptionKey": {
-      "key": "CardData_overrideDescriptionKey-d5495b3f266833f0-7fc660d73776f134384daefbfc648867-v2",
-      "english": "Apply [avarice] [effect0.status0.power] to friendly units.",
-      "french": "Applique [avarice] [effect0.status0.power] aux unités alliées.",
-      "german": "Wende [avarice] [effect0.status0.power] auf verbündete Einheiten an.",
-      "russian": "На союзников накладывается [avarice] х[effect0.status0.power].",
-      "portuguese": "Aplica [avarice] [effect0.status0.power] às unidades aliadas.",
-      "chinese": "使所有友方单位获得 [avarice] [effect0.status0.power]。",
-      "spanish": "Añade [avarice] [effect0.status0.power] a las unidades aliadas.",
-      "chinese_traditional": "對友方單位施加[avarice][effect0.status0.power]。",
-      "korean": "아군 유닛들에게 [avarice] [effect0.status0.power] 효과를 적용합니다.",
-      "japanese": "味方ユニットに[avarice] [effect0.status0.power]を付与する。"
-    },
-    "cardType": "spell",
-    "rarity": "common",
-    "effects": [
-      {
-        "effectStateName": "CardEffectAddStatusEffect",
-        "targetMode": "room",
-        "targetTeamType": "monsters",
-        "paramStatusEffects": [
-          {
-            "statusId": "avarice",
-            "count": 2
-          }
-        ]
-      }
-    ],
-    "cooldownAfterActivated": 3,
-    "isUnitAbility": true,
-    "initialKeyboardTarget": "front_friendly"
-  },
-  "size": 1,
-  "health": 1,
-  "attackDamage": 4,
-  "subtypeKeys": [
-    "SubtypesData_Whelp"
+  "cards": [
+    {
+      "id": "MonsterRoyalWhelp.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-9d83faff2048131f-7fc660d73776f134384daefbfc648867-v2",
+        "english": "Expensive Taste",
+        "french": "Goûts de luxe",
+        "german": "Teurer Geschmack",
+        "russian": "Любовь к роскоши",
+        "portuguese": "Gosto Refinado",
+        "chinese": "昂贵品味",
+        "spanish": "Gustos caros",
+        "chinese_traditional": "高貴品味",
+        "korean": "고급 취향",
+        "japanese": "高価な趣味"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-d5495b3f266833f0-7fc660d73776f134384daefbfc648867-v2",
+        "english": "Apply [avarice] [effect0.status0.power] to friendly units.",
+        "french": "Applique [avarice] [effect0.status0.power] aux unités alliées.",
+        "german": "Wende [avarice] [effect0.status0.power] auf verbündete Einheiten an.",
+        "russian": "На союзников накладывается [avarice] х[effect0.status0.power].",
+        "portuguese": "Aplica [avarice] [effect0.status0.power] às unidades aliadas.",
+        "chinese": "使所有友方单位获得 [avarice] [effect0.status0.power]。",
+        "spanish": "Añade [avarice] [effect0.status0.power] a las unidades aliadas.",
+        "chinese_traditional": "對友方單位施加[avarice][effect0.status0.power]。",
+        "korean": "아군 유닛들에게 [avarice] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "味方ユニットに[avarice] [effect0.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@MonsterRoyalWhelp.unitAbility.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
+    }
   ],
-  "characterChatterData": "PyreborneWhelpChatterData"
+  "effects": [
+    {
+      "id": "MonsterRoyalWhelp.unitAbility.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "avarice",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MonsterRoyalWhelp.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

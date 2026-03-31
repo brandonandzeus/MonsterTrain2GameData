@@ -1,49 +1,59 @@
 {
-  "id": "MonsterAmorousEnoki",
-  "guid": "19cbfa59-1f7d-4c2e-bd44-a05214644d1f",
-  "name": "Amorous Enoki",
-  "nameKey": {
-    "key": "CharacterData_nameKey-df0515464187dd6d-e8aa4f017bb18c24689924dbb03a9943-v2",
-    "english": "Amorous Enoki",
-    "french": "Enoki amoureuse",
-    "german": "Verliebter Enoki",
-    "russian": "Влюбчивая Эноки",
-    "portuguese": "Enoki Amorosa",
-    "chinese": "多情金菇",
-    "spanish": "Enoki cariñosa",
-    "chinese_traditional": "多情榎木茸",
-    "korean": "매혹적인 에노키",
-    "japanese": "なまめかしいエノキ"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-49ba6ab574622c50-e8aa4f017bb18c24689924dbb03a9943-v2",
-      "english": "A lover of love and all things lovely, this mushroom can charm the bark off a tree.",
-      "french": "Adepte de l'amour et de la beauté, ce champignon peut charmer l'écorce d'un arbre.",
-      "german": "Dieser Pilz liebt die Liebe und alles Liebliche. Sein Charme ist geradezu unwiderstehlich.",
-      "russian": "Облюбованная любовью и влюбленная в весь мир — такая девушка увлечет за собой кого угодно!",
-      "portuguese": "Amante do amor e de todas as coisas belas, esse cogumelo pode encantar a casca de uma árvore.",
-      "chinese": "这种蘑菇崇尚爱和一切美好的事物，是个人见人爱花见花开的家伙。",
-      "spanish": "Este hongo, amante del amor y todo lo amoroso, es capaz de encandilar hasta a un árbol.",
-      "chinese_traditional": "一個熱愛愛情和所有可愛事物的蘑菇，能讓樹木為之傾倒。",
-      "korean": "모든 것을, 심지어 사랑까지도 사랑하는 이 버섯은 나무 껍질도 벗겨낼 정도로 매혹적인 마력을 지녔다.",
-      "japanese": "愛と愛らしいものすべてを愛するこのキノコの魅力の前では、木も樹皮を落としてその身を差し出してしまう。"
+      "id": "MonsterAmorousEnoki",
+      "name": "Amorous Enoki",
+      "names": {
+        "key": "CharacterData_nameKey-df0515464187dd6d-e8aa4f017bb18c24689924dbb03a9943-v2",
+        "english": "Amorous Enoki",
+        "french": "Enoki amoureuse",
+        "german": "Verliebter Enoki",
+        "russian": "Влюбчивая Эноки",
+        "portuguese": "Enoki Amorosa",
+        "chinese": "多情金菇",
+        "spanish": "Enoki cariñosa",
+        "chinese_traditional": "多情榎木茸",
+        "korean": "매혹적인 에노키",
+        "japanese": "なまめかしいエノキ"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-49ba6ab574622c50-e8aa4f017bb18c24689924dbb03a9943-v2",
+          "english": "A lover of love and all things lovely, this mushroom can charm the bark off a tree.",
+          "french": "Adepte de l'amour et de la beauté, ce champignon peut charmer l'écorce d'un arbre.",
+          "german": "Dieser Pilz liebt die Liebe und alles Liebliche. Sein Charme ist geradezu unwiderstehlich.",
+          "russian": "Облюбованная любовью и влюбленная в весь мир — такая девушка увлечет за собой кого угодно!",
+          "portuguese": "Amante do amor e de todas as coisas belas, esse cogumelo pode encantar a casca de uma árvore.",
+          "chinese": "这种蘑菇崇尚爱和一切美好的事物，是个人见人爱花见花开的家伙。",
+          "spanish": "Este hongo, amante del amor y todo lo amoroso, es capaz de encandilar hasta a un árbol.",
+          "chinese_traditional": "一個熱愛愛情和所有可愛事物的蘑菇，能讓樹木為之傾倒。",
+          "korean": "모든 것을, 심지어 사랑까지도 사랑하는 이 버섯은 나무 껍질도 벗겨낼 정도로 매혹적인 마력을 지녔다.",
+          "japanese": "愛と愛らしいものすべてを愛するこのキノコの魅力の前では、木も樹皮を落としてその身を差し出してしまう。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_AmorousEnoki.prefab",
+        "asset_guid": "8e5b16c7aef47fc4fb714575d3ef5849"
+      },
+      "impact_vfx": "@MonsterAmorousEnoki.impactVFX",
+      "triggers": [
+        "@MonsterAmorousEnoki.triggers0"
+      ],
+      "size": 2,
+      "health": 10,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_BannerUnit",
+        "SubtypesData_Shroom"
+      ],
+      "chatter": "UnderlegionShroomFemaleChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_AmorousEnoki.prefab",
-    "m_AssetGUID": "8e5b16c7aef47fc4fb714575d3ef5849"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MonsterAmorousEnoki.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-ae1cfde98d5301b1-e8aa4f017bb18c24689924dbb03a9943-v2",
         "english": "Apply [regen] [effect0.status0.power] and +[effect1.power][health] to friendly units.",
         "french": "Applique [regen] [effect0.status0.power] et +[effect1.power][health] aux alliés.",
@@ -58,32 +68,40 @@
       },
       "trigger": "card_monster_played",
       "effects": [
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "room",
-          "targetTeamType": "monsters",
-          "paramStatusEffects": [
-            {
-              "statusId": "regen",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "effectStateName": "CardEffectBuffMaxHealth",
-          "targetMode": "room",
-          "targetTeamType": "monsters",
-          "paramInt": 1
-        }
+        "@MonsterAmorousEnoki.triggers0.effects0",
+        "@MonsterAmorousEnoki.triggers0.effects1"
       ]
     }
   ],
-  "size": 2,
-  "health": 10,
-  "attackDamage": 10,
-  "subtypeKeys": [
-    "SubtypesData_BannerUnit",
-    "SubtypesData_Shroom"
+  "effects": [
+    {
+      "id": "MonsterAmorousEnoki.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "MonsterAmorousEnoki.triggers0.effects1",
+      "name": "CardEffectBuffMaxHealth",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 1
+    }
   ],
-  "characterChatterData": "UnderlegionShroomFemaleChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterAmorousEnoki.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

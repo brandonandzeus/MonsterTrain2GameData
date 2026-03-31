@@ -1,72 +1,84 @@
 {
-  "id": "PyreHeartStarter",
-  "guid": "e9dc7827-5178-4189-9849-3d4e8cc1f093",
-  "name": "Proto Heartcage",
-  "nameKey": {
-    "key": "CharacterData_nameKey-de6c4aecb66c2234-500f16540d027c14893f31bbce2de7c2-v2",
-    "english": "Proto Heartcage",
-    "french": "Cardiocage",
-    "german": "Proto-Herzkäfig",
-    "russian": "Железная решетка",
-    "portuguese": "Protótipo de Porta-Núcleo",
-    "chinese": "原型心笼",
-    "spanish": "Protojaula de esencia",
-    "chinese_traditional": "原型心籠",
-    "korean": "초기형 노심로",
-    "japanese": "試作型ハートケージ"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PyreHeart_ProtoHeartCage.prefab",
-    "m_AssetGUID": "3dfcd7250fddab9418af7622236e52b2"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/ProtoHeartcage/FX_ProtoHeartcageAttack.prefab",
-      "m_AssetGUID": "77920425acae2f8409ce635251acd006"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-      "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/ProtoHeartcage/FX_ProtoHeartcageDeath.prefab",
-      "m_AssetGUID": "e11c3cc8ba2c1bc47a5893fe06b03f3e"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "sweep",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    },
-    {
-      "statusId": "immune",
-      "count": 1
+      "id": "PyreHeartStarter",
+      "name": "Proto Heartcage",
+      "names": {
+        "key": "CharacterData_nameKey-de6c4aecb66c2234-500f16540d027c14893f31bbce2de7c2-v2",
+        "english": "Proto Heartcage",
+        "french": "Cardiocage",
+        "german": "Proto-Herzkäfig",
+        "russian": "Железная решетка",
+        "portuguese": "Protótipo de Porta-Núcleo",
+        "chinese": "原型心笼",
+        "spanish": "Protojaula de esencia",
+        "chinese_traditional": "原型心籠",
+        "korean": "초기형 노심로",
+        "japanese": "試作型ハートケージ"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_PyreHeart_ProtoHeartCage.prefab",
+        "asset_guid": "3dfcd7250fddab9418af7622236e52b2"
+      },
+      "attack_vfx": "@PyreHeartStarter.attackVFX",
+      "impact_vfx": "@PyreHeartStarter.impactVFX",
+      "death_vfx": "@PyreHeartStarter.deathVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "immune",
+          "count": 1
+        }
+      ],
+      "size": 2,
+      "health": 1,
+      "can_be_healed": false,
+      "attack_damage": 1,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Pyre"
+      ],
+      "chatter": "PyreHeartChatter",
+      "is_pyre_heart": true,
+      "disable_in_daily_challenges": true
     }
   ],
-  "size": 2,
-  "health": 1,
-  "canBeHealed": false,
-  "attackDamage": 1,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Pyre"
-  ],
-  "characterChatterData": "PyreHeartChatter",
-  "isPyreHeart": true,
-  "disableInDailyChallenges": true
+  "vfxs": [
+    {
+      "id": "PyreHeartStarter.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/ProtoHeartcage/FX_ProtoHeartcageAttack.prefab",
+        "asset_guid": "77920425acae2f8409ce635251acd006"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartStarter.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+        "asset_guid": "3264e2908c5ba3549a14df8cb8e8e37d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartStarter.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/ProtoHeartcage/FX_ProtoHeartcageDeath.prefab",
+        "asset_guid": "e11c3cc8ba2c1bc47a5893fe06b03f3e"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

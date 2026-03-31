@@ -1,55 +1,65 @@
 {
-  "id": "MonsterGolem",
-  "guid": "cf84a934-88b4-4242-aafa-c4bb31976dbd",
-  "name": "Makeshift Golem",
-  "nameKey": {
-    "key": "CharacterData_nameKey-169260e2137a805b-0b991962b14781148906a478d01559e8-v2",
-    "english": "Makeshift Golem",
-    "french": "Golem de fortune",
-    "german": "Behelfsgolem",
-    "russian": "Мусорный голем",
-    "portuguese": "Golem Improvisado",
-    "chinese": "临时魔像",
-    "spanish": "Gólem improvisado",
-    "chinese_traditional": "拼湊魔像",
-    "korean": "임시 골렘",
-    "japanese": "間に合わせゴーレム"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-63c18196ab06f8a2-0b991962b14781148906a478d01559e8-v2",
-      "english": "“I am made of mud but I have a heart of gold.”",
-      "french": "<nobr>« Je</nobr> suis fait de boue, mais j'ai un cœur <nobr>d'or. »</nobr>",
-      "german": "„Ich bestehe aus Matsch, doch ich habe ein Herz aus Gold.“",
-      "russian": "«Я слеплен из грязи, но у меня золотое сердце».",
-      "portuguese": "“Sou feito de lama, mas tenho um coração de ouro.”",
-      "chinese": "“我是泥做的，但我有一颗金子般的心。”",
-      "spanish": "«Estaré hecho de barro, pero tengo un corazón de oro».",
-      "chinese_traditional": "「我是由泥土做成的，但我有顆金子般的心。」",
-      "korean": "\"내 몸은 진흙으로 이루어졌지만, 심장은 황금으로 이루어져 있다.\"",
-      "japanese": "「この身体は泥でできているけれど、精神は黄金なんだ」"
+      "id": "MonsterGolem",
+      "name": "Makeshift Golem",
+      "names": {
+        "key": "CharacterData_nameKey-169260e2137a805b-0b991962b14781148906a478d01559e8-v2",
+        "english": "Makeshift Golem",
+        "french": "Golem de fortune",
+        "german": "Behelfsgolem",
+        "russian": "Мусорный голем",
+        "portuguese": "Golem Improvisado",
+        "chinese": "临时魔像",
+        "spanish": "Gólem improvisado",
+        "chinese_traditional": "拼湊魔像",
+        "korean": "임시 골렘",
+        "japanese": "間に合わせゴーレム"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-63c18196ab06f8a2-0b991962b14781148906a478d01559e8-v2",
+          "english": "“I am made of mud but I have a heart of gold.”",
+          "french": "<nobr>« Je</nobr> suis fait de boue, mais j'ai un cœur <nobr>d'or. »</nobr>",
+          "german": "„Ich bestehe aus Matsch, doch ich habe ein Herz aus Gold.“",
+          "russian": "«Я слеплен из грязи, но у меня золотое сердце».",
+          "portuguese": "“Sou feito de lama, mas tenho um coração de ouro.”",
+          "chinese": "“我是泥做的，但我有一颗金子般的心。”",
+          "spanish": "«Estaré hecho de barro, pero tengo un corazón de oro».",
+          "chinese_traditional": "「我是由泥土做成的，但我有顆金子般的心。」",
+          "korean": "\"내 몸은 진흙으로 이루어졌지만, 심장은 황금으로 이루어져 있다.\"",
+          "japanese": "「この身体は泥でできているけれど、精神は黄金なんだ」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MakeshiftGolem.prefab",
+        "asset_guid": "c74b083d863fff14bb589827000660cd"
+      },
+      "impact_vfx": "@MonsterGolem.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "armor",
+          "count": 12
+        }
+      ],
+      "triggers": [
+        "@MonsterGolem.triggers0"
+      ],
+      "size": 2,
+      "health": 12,
+      "attack_damage": 12,
+      "subtypes": [
+        "SubtypesData_Monstrosity",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "LazarusLeagueMonstrosityChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MakeshiftGolem.prefab",
-    "m_AssetGUID": "c74b083d863fff14bb589827000660cd"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
-      "m_AssetGUID": "d465da54296b79d4299ab63c1d6eadba"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "character_triggers": [
     {
-      "statusId": "armor",
-      "count": 12
-    }
-  ],
-  "triggers": [
-    {
-      "descriptionKey": {
+      "id": "MonsterGolem.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-4c5c44e74aff19dc-0b991962b14781148906a478d01559e8-v2",
         "english": "Apply [armor] [effect0.status0.power] to friendly units.",
         "french": "Confère [armor] [effect0.status0.power] aux unités alliées.",
@@ -64,26 +74,32 @@
       },
       "trigger": "on_death",
       "effects": [
+        "@MonsterGolem.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterGolem.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "room",
-          "targetTeamType": "monsters",
-          "paramStatusEffects": [
-            {
-              "statusId": "armor",
-              "count": 12
-            }
-          ]
+          "status": "armor",
+          "count": 12
         }
       ]
     }
   ],
-  "size": 2,
-  "health": 12,
-  "attackDamage": 12,
-  "subtypeKeys": [
-    "SubtypesData_Monstrosity",
-    "SubtypesData_BannerUnit"
-  ],
-  "characterChatterData": "LazarusLeagueMonstrosityChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterGolem.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitSlashHorizontal.prefab",
+        "asset_guid": "d465da54296b79d4299ab63c1d6eadba"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

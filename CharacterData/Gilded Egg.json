@@ -1,27 +1,39 @@
 {
-  "id": "MonsterGildedEgg",
-  "guid": "915a4270-8d52-4dfc-92bd-42ab8c2672c2",
-  "name": "Gilded Egg",
-  "nameKey": {
-    "key": "CharacterData_nameKey-1f8d71cb111fd8d8-34b53aa974e2b554b96dbdff774101d2-v2",
-    "english": "Gilded Egg",
-    "french": "Dorœuf",
-    "german": "Vergoldetes Ei",
-    "russian": "Золотое яйцо",
-    "portuguese": "Ovo Folheado a Ouro",
-    "chinese": "镀金龙蛋",
-    "spanish": "Huevo dorado",
-    "chinese_traditional": "鍍金蛋",
-    "korean": "금박 알",
-    "japanese": "黄金の卵I"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GildedEgg.prefab",
-    "m_AssetGUID": "c454e2a1d95b22245bdf8e328a48ca28"
-  },
-  "triggers": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "descriptionKey": {
+      "id": "MonsterGildedEgg",
+      "name": "Gilded Egg",
+      "names": {
+        "key": "CharacterData_nameKey-1f8d71cb111fd8d8-34b53aa974e2b554b96dbdff774101d2-v2",
+        "english": "Gilded Egg",
+        "french": "Dorœuf",
+        "german": "Vergoldetes Ei",
+        "russian": "Золотое яйцо",
+        "portuguese": "Ovo Folheado a Ouro",
+        "chinese": "镀金龙蛋",
+        "spanish": "Huevo dorado",
+        "chinese_traditional": "鍍金蛋",
+        "korean": "금박 알",
+        "japanese": "黄金の卵I"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_GildedEgg.prefab",
+        "asset_guid": "c454e2a1d95b22245bdf8e328a48ca28"
+      },
+      "triggers": [
+        "@MonsterGildedEgg.triggers0",
+        "@MonsterGildedEgg.triggers1"
+      ],
+      "size": 1,
+      "health": 5,
+      "attack_damage": 0
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MonsterGildedEgg.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-e99dd810db144c39-34b53aa974e2b554b96dbdff774101d2-v2",
         "english": "[retreat].",
         "french": "[retreat].",
@@ -36,16 +48,12 @@
       },
       "trigger": "on_spawn",
       "effects": [
-        {
-          "effectStateName": "CardEffectFloorRearrange",
-          "targetMode": "self",
-          "targetTeamType": "none",
-          "paramInt": 1
-        }
+        "@MonsterGildedEgg.triggers0.effects0"
       ]
     },
     {
-      "descriptionKey": {
+      "id": "MonsterGildedEgg.triggers1",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-edb7e672a06b7355-34b53aa974e2b554b96dbdff774101d2-v2",
         "english": "Gain [effect0.power][dragonshoardicon].",
         "french": "Octroie [effect0.power][dragonshoardicon].",
@@ -60,47 +68,58 @@
       },
       "trigger": "on_encounter_complete",
       "effects": [
-        {
-          "effectStateName": "CardEffectAdjustDragonsHoard",
-          "targetMode": "room",
-          "targetTeamType": "none",
-          "additionalTooltips": [
-            {
-              "descriptionKey": {
-                "key": "HudTooltip_DragonsHoardInactive_Body",
-                "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
-                "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
-                "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
-                "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
-                "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
-                "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
-                "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
-                "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
-                "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
-                "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
-              },
-              "titleKey": {
-                "key": "HudTooltip_DragonsHoard_Title",
-                "english": "[dragonshoardicon]Dragon's Hoard",
-                "french": "[dragonshoardicon]Trésor du dragon",
-                "german": "[dragonshoardicon]Drachenschatz",
-                "russian": "[dragonshoardicon] Драконий клад",
-                "portuguese": "[dragonshoardicon]Tesouro do Dragão",
-                "chinese": "[dragonshoardicon]龙族宝藏",
-                "spanish": "[dragonshoardicon]Tesoro de dragón",
-                "chinese_traditional": "[dragonshoardicon]龍之寶藏",
-                "korean": "[dragonshoardicon]드래곤의 재보",
-                "japanese": "竜の財宝[dragonshoardicon]"
-              },
-              "style": "default"
-            }
-          ],
-          "paramInt": 2
-        }
+        "@MonsterGildedEgg.triggers1.effects0"
       ]
     }
   ],
-  "size": 1,
-  "health": 5,
-  "attackDamage": 0
+  "effects": [
+    {
+      "id": "MonsterGildedEgg.triggers0.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self",
+      "param_int": 1
+    },
+    {
+      "id": "MonsterGildedEgg.triggers1.effects0",
+      "name": "CardEffectAdjustDragonsHoard",
+      "target_mode": "room",
+      "target_team": "none",
+      "additional_tooltips": [
+        "@MonsterGildedEgg.triggers1.effects0.additionalTooltips0"
+      ],
+      "param_int": 2
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "MonsterGildedEgg.triggers1.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_DragonsHoardInactive_Body",
+        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+      },
+      "titles": {
+        "key": "HudTooltip_DragonsHoard_Title",
+        "english": "[dragonshoardicon]Dragon's Hoard",
+        "french": "[dragonshoardicon]Trésor du dragon",
+        "german": "[dragonshoardicon]Drachenschatz",
+        "russian": "[dragonshoardicon] Драконий клад",
+        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+        "chinese": "[dragonshoardicon]龙族宝藏",
+        "spanish": "[dragonshoardicon]Tesoro de dragón",
+        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+        "korean": "[dragonshoardicon]드래곤의 재보",
+        "japanese": "竜の財宝[dragonshoardicon]"
+      },
+      "style": "default"
+    }
+  ]
 }

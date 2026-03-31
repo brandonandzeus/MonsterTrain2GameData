@@ -1,69 +1,84 @@
 {
-  "id": "Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial",
-  "guid": "4159e8ac-faec-4dae-a55f-dde1320b7c5b",
-  "name": "Fleshling More Mass Titan Trial",
-  "nameKey": {
-    "key": "CharacterData_nameKey-0d74a19349b36d13-26d453415f9360a46ae171404c9c7538-v2",
-    "english": "Fleshling",
-    "french": "Lambeau",
-    "german": "Fleischling",
-    "russian": "Мяско",
-    "portuguese": "Cárneo",
-    "chinese": "血肉幼体",
-    "spanish": "Carnoso",
-    "chinese_traditional": "血肉造物",
-    "korean": "플레시링",
-    "japanese": "肉塊"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-637e74e09efe866e-26d453415f9360a46ae171404c9c7538-v2",
-      "english": "Torn from the whole, yet no longer what they once were. Each fragment gives rise to another. No matter how many bodies are consumed, the Titan’s hunger endures.",
-      "french": "Arrachés à l'ensemble, ils ne sont plus eux-mêmes. Chaque fragment donne naissance à un autre. Peu importe le nombre de corps consommés, la faim du titan ne s'éteint jamais.",
-      "german": "Aus dem Ganzen gerissen und doch nicht mehr so wie einst. Jedes Fragment lässt ein neues entstehen. Egal wie viele Körper verzehrt werden, der Titan ist unersättlich.",
-      "russian": "Высвободившийся из целого, но все равно не тот, кем был раньше. Один фрагмент порождает другой. Неважно, сколько тел поглощено — голод Титанов не утолить.",
-      "portuguese": "Arrancados do todo, mas já não são o que eram antes. Cada fragmento dá origem a outro. Não importa quantos corpos sejam consumidos, a fome do Titã perdura.",
-      "chinese": "与整体分离的部分已经不再是以前的样子了。每个碎块都能产生更多碎块。泰坦无论吞噬多少具躯体，还是无法消除饥饿感。",
-      "spanish": "Ya no forman parte del conjunto, pero siguen sin recuperar su verdadera forma. Cada fragmento da lugar a otro. No importa cuántos cuerpos consuma: el hambre del titán es insaciable.",
-      "chinese_traditional": "雖自本體撕裂而出，卻早已面目全非。每一塊碎片，又會催生出新的碎片。無論吞噬多少血肉，泰坦的飢渴，永無滿足之日。",
-      "korean": "전체에서 찢겨 나왔으나, 더는 예전의 그들이 아니다. 각 파편은 또 다른 존재를 낳는다. 아주 많은 육체가 삼켜지더라도, 티탄의 굶주림은 끝나지 않는다.",
-      "japanese": "集合体から分かたれても、かつての姿を取り戻すことはない。その欠片が新たな欠片を生み出すだけだ。どれだけの肉体を喰らおうとも、巨人族の飢えが尽きることはない。"
-    }
-  ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MiniMass.prefab",
-    "m_AssetGUID": "0a3ea0c9761ef314caa44457f02ab3c2"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
-    {
-      "statusId": "rooted",
-      "count": 1
-    }
-  ],
-  "triggers": [
-    {
-      "trigger": "on_spawn",
-      "effects": [
+      "id": "Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial",
+      "name": "Fleshling More Mass Titan Trial",
+      "names": {
+        "key": "CharacterData_nameKey-0d74a19349b36d13-26d453415f9360a46ae171404c9c7538-v2",
+        "english": "Fleshling",
+        "french": "Lambeau",
+        "german": "Fleischling",
+        "russian": "Мяско",
+        "portuguese": "Cárneo",
+        "chinese": "血肉幼体",
+        "spanish": "Carnoso",
+        "chinese_traditional": "血肉造物",
+        "korean": "플레시링",
+        "japanese": "肉塊"
+      },
+      "lore_tooltips": [
         {
-          "effectStateName": "CardEffectFloorRearrange",
-          "targetMode": "self",
-          "targetTeamType": "both"
+          "key": "CharacterData_data-637e74e09efe866e-26d453415f9360a46ae171404c9c7538-v2",
+          "english": "Torn from the whole, yet no longer what they once were. Each fragment gives rise to another. No matter how many bodies are consumed, the Titan’s hunger endures.",
+          "french": "Arrachés à l'ensemble, ils ne sont plus eux-mêmes. Chaque fragment donne naissance à un autre. Peu importe le nombre de corps consommés, la faim du titan ne s'éteint jamais.",
+          "german": "Aus dem Ganzen gerissen und doch nicht mehr so wie einst. Jedes Fragment lässt ein neues entstehen. Egal wie viele Körper verzehrt werden, der Titan ist unersättlich.",
+          "russian": "Высвободившийся из целого, но все равно не тот, кем был раньше. Один фрагмент порождает другой. Неважно, сколько тел поглощено — голод Титанов не утолить.",
+          "portuguese": "Arrancados do todo, mas já não são o que eram antes. Cada fragmento dá origem a outro. Não importa quantos corpos sejam consumidos, a fome do Titã perdura.",
+          "chinese": "与整体分离的部分已经不再是以前的样子了。每个碎块都能产生更多碎块。泰坦无论吞噬多少具躯体，还是无法消除饥饿感。",
+          "spanish": "Ya no forman parte del conjunto, pero siguen sin recuperar su verdadera forma. Cada fragmento da lugar a otro. No importa cuántos cuerpos consuma: el hambre del titán es insaciable.",
+          "chinese_traditional": "雖自本體撕裂而出，卻早已面目全非。每一塊碎片，又會催生出新的碎片。無論吞噬多少血肉，泰坦的飢渴，永無滿足之日。",
+          "korean": "전체에서 찢겨 나왔으나, 더는 예전의 그들이 아니다. 각 파편은 또 다른 존재를 낳는다. 아주 많은 육체가 삼켜지더라도, 티탄의 굶주림은 끝나지 않는다.",
+          "japanese": "集合体から分かたれても、かつての姿を取り戻すことはない。その欠片が新たな欠片を生み出すだけだ。どれだけの肉体を喰らおうとも、巨人族の飢えが尽きることはない。"
         }
       ],
-      "hideVisualAndIgnoreSilence": true
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_MiniMass.prefab",
+        "asset_guid": "0a3ea0c9761ef314caa44457f02ab3c2"
+      },
+      "impact_vfx": "@Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "rooted",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial.triggers0"
+      ],
+      "hide_in_logbook": true,
+      "size": 1,
+      "health": 7,
+      "attack_damage": 7,
+      "chatter": "Boss13_MiniMass",
+      "artist": "Loy Bouttamy"
     }
   ],
-  "hideInLogbook": true,
-  "size": 1,
-  "health": 7,
-  "attackDamage": 7,
-  "characterChatterData": "Boss13_MiniMass",
-  "artistAttribution": "Loy Bouttamy"
+  "character_triggers": [
+    {
+      "id": "Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial.triggers0.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Boss_Level3_MiniFleshweaver_MoreMass_TitanTrial.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

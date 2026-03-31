@@ -1,71 +1,83 @@
 {
-  "id": "PyreHeartPact",
-  "guid": "707491d7-0dde-4670-b129-d0356c641829",
-  "name": "Heart of the Pact",
-  "nameKey": {
-    "key": "CharacterData_nameKey-0cc0c4735ee21d52-7891d95881d909b47adddba8c5d3ef00-v2",
-    "english": "Heart of the Pact",
-    "french": "Cœur du pacte",
-    "german": "Herz des Paktes",
-    "russian": "Сердце Договора",
-    "portuguese": "Núcleo do Pacto",
-    "chinese": "契约之心",
-    "spanish": "Corazón del pacto",
-    "chinese_traditional": "誓約之心",
-    "korean": "계약의 심장",
-    "japanese": "盟約の精神"
-  },
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Pact.prefab",
-    "m_AssetGUID": "d75d3cff2a9ad5a459539509e133f331"
-  },
-  "attackVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/PactPyre/FX_PactPyreAttack.prefab",
-      "m_AssetGUID": "11c4674d9e3557549815d80f53e24069"
-    },
-    "spawnLocation": "character_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/PactPyre/FX_PactPyreImpact.prefab",
-      "m_AssetGUID": "bf82b9ba6a02edc4582d1f59cded01e3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "deathVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/PactPyre/FX_PactPyreDeath.prefab",
-      "m_AssetGUID": "7c47f4f02d2dee645ab9ee99114357df"
-    },
-    "spawnLocation": "character_center"
-  },
-  "startingStatusEffects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "statusId": "relentless",
-      "count": 1
-    },
-    {
-      "statusId": "sweep",
-      "count": 1
-    },
-    {
-      "statusId": "immobile",
-      "count": 1
-    },
-    {
-      "statusId": "immune",
-      "count": 1
+      "id": "PyreHeartPact",
+      "name": "Heart of the Pact",
+      "names": {
+        "key": "CharacterData_nameKey-0cc0c4735ee21d52-7891d95881d909b47adddba8c5d3ef00-v2",
+        "english": "Heart of the Pact",
+        "french": "Cœur du pacte",
+        "german": "Herz des Paktes",
+        "russian": "Сердце Договора",
+        "portuguese": "Núcleo do Pacto",
+        "chinese": "契约之心",
+        "spanish": "Corazón del pacto",
+        "chinese_traditional": "誓約之心",
+        "korean": "계약의 심장",
+        "japanese": "盟約の精神"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Pyreheart_Pact.prefab",
+        "asset_guid": "d75d3cff2a9ad5a459539509e133f331"
+      },
+      "attack_vfx": "@PyreHeartPact.attackVFX",
+      "impact_vfx": "@PyreHeartPact.impactVFX",
+      "death_vfx": "@PyreHeartPact.deathVFX",
+      "starting_status_effects": [
+        {
+          "status": "relentless",
+          "count": 1
+        },
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        },
+        {
+          "status": "immune",
+          "count": 1
+        }
+      ],
+      "size": 2,
+      "health": 1,
+      "can_be_healed": false,
+      "attack_damage": 1,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Pyre"
+      ],
+      "chatter": "PyreHeartChatter",
+      "is_pyre_heart": true
     }
   ],
-  "size": 2,
-  "health": 1,
-  "canBeHealed": false,
-  "attackDamage": 1,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Pyre"
-  ],
-  "characterChatterData": "PyreHeartChatter",
-  "isPyreHeart": true
+  "vfxs": [
+    {
+      "id": "PyreHeartPact.attackVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/PactPyre/FX_PactPyreAttack.prefab",
+        "asset_guid": "11c4674d9e3557549815d80f53e24069"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartPact.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/PactPyre/FX_PactPyreImpact.prefab",
+        "asset_guid": "bf82b9ba6a02edc4582d1f59cded01e3"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "PyreHeartPact.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/PactPyre/FX_PactPyreDeath.prefab",
+        "asset_guid": "7c47f4f02d2dee645ab9ee99114357df"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

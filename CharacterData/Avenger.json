@@ -1,49 +1,59 @@
 {
-  "id": "MonsterAvenger",
-  "guid": "991eab53-43ad-40d9-a48c-c9bd889e1427",
-  "name": "Avenger",
-  "nameKey": {
-    "key": "CharacterData_nameKey-626e875f3cbe1c84-e73448331101b1943aedd8e7714d6255-v2",
-    "english": "Avenger",
-    "french": "Vengeur",
-    "german": "Rächer",
-    "russian": "Мститель",
-    "portuguese": "Vingador",
-    "chinese": "复仇者",
-    "spanish": "Vengador",
-    "chinese_traditional": "復仇者",
-    "korean": "복수자",
-    "japanese": "アヴェンジャー"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-b6015cd7e44b113a-e73448331101b1943aedd8e7714d6255-v2",
-      "english": "Once the keepers of Heaven’s Walls, their flails now protect Fel’s army from their former allies.",
-      "french": "Autrefois gardiens des murs du paradis, ils protègent aujourd'hui l'armée de Fel contre leurs anciens alliés.",
-      "german": "Die Morgensterne dieser einstigen Hüter der Himmelsmauern schützen nun Fel vor ihren ehemaligen Verbündeten.",
-      "russian": "Некогда стражники райских стен теперь защищают армию Фэл от своих бывших союзников.",
-      "portuguese": "Outrora guardiões das Muralhas do Céu, seus manguais agora protegem o exército da Fel de seus antigos aliados.",
-      "chinese": "手持链枷的他们曾是天堂城墙的守护者，如今负责保护菲尔的军队抵挡他们昔日的盟友。",
-      "spanish": "Antes, defendían los muros del Cielo. Ahora, sus manguales protegen al ejército de Fel de sus antiguos aliados.",
-      "chinese_traditional": "曾經是天堂高牆的守護者，他們的連枷現在保護著費爾的軍隊免受他們前盟友的傷害。",
-      "korean": "천상의 벽을 지켰던 이들의 도리깨는 이제 그들의 과거 동맹으로부터 펠의 병력을 지킨다.",
-      "japanese": "かつては天界の壁の守護者だった彼らは、今では鉄球を振るってフェルの軍隊をかつての同胞から守っている。"
+      "id": "MonsterAvenger",
+      "name": "Avenger",
+      "names": {
+        "key": "CharacterData_nameKey-626e875f3cbe1c84-e73448331101b1943aedd8e7714d6255-v2",
+        "english": "Avenger",
+        "french": "Vengeur",
+        "german": "Rächer",
+        "russian": "Мститель",
+        "portuguese": "Vingador",
+        "chinese": "复仇者",
+        "spanish": "Vengador",
+        "chinese_traditional": "復仇者",
+        "korean": "복수자",
+        "japanese": "アヴェンジャー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-b6015cd7e44b113a-e73448331101b1943aedd8e7714d6255-v2",
+          "english": "Once the keepers of Heaven’s Walls, their flails now protect Fel’s army from their former allies.",
+          "french": "Autrefois gardiens des murs du paradis, ils protègent aujourd'hui l'armée de Fel contre leurs anciens alliés.",
+          "german": "Die Morgensterne dieser einstigen Hüter der Himmelsmauern schützen nun Fel vor ihren ehemaligen Verbündeten.",
+          "russian": "Некогда стражники райских стен теперь защищают армию Фэл от своих бывших союзников.",
+          "portuguese": "Outrora guardiões das Muralhas do Céu, seus manguais agora protegem o exército da Fel de seus antigos aliados.",
+          "chinese": "手持链枷的他们曾是天堂城墙的守护者，如今负责保护菲尔的军队抵挡他们昔日的盟友。",
+          "spanish": "Antes, defendían los muros del Cielo. Ahora, sus manguales protegen al ejército de Fel de sus antiguos aliados.",
+          "chinese_traditional": "曾經是天堂高牆的守護者，他們的連枷現在保護著費爾的軍隊免受他們前盟友的傷害。",
+          "korean": "천상의 벽을 지켰던 이들의 도리깨는 이제 그들의 과거 동맹으로부터 펠의 병력을 지킨다.",
+          "japanese": "かつては天界の壁の守護者だった彼らは、今では鉄球を振るってフェルの軍隊をかつての同胞から守っている。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Avenger.prefab",
+        "asset_guid": "76670ee0dc0bb3c418cd04644c897c8d"
+      },
+      "impact_vfx": "@MonsterAvenger.impactVFX",
+      "triggers": [
+        "@MonsterAvenger.triggers0"
+      ],
+      "size": 2,
+      "health": 40,
+      "attack_damage": 20,
+      "subtypes": [
+        "SubtypesData_Angel",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "BanishedAvengerChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Avenger.prefab",
-    "m_AssetGUID": "76670ee0dc0bb3c418cd04644c897c8d"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-      "m_AssetGUID": "b406ebbc34725774bad8985dfc3a77a3"
-    },
-    "spawnLocation": "character_center"
-  },
-  "triggers": [
+  "character_triggers": [
     {
-      "descriptionKey": {
+      "id": "MonsterAvenger.triggers0",
+      "descriptions": {
         "key": "CharacterData_descriptionKey-dc3f349b8ae07410-e73448331101b1943aedd8e7714d6255-v2",
         "english": "Apply [meleeweakness] [effect0.status0.power] to the attacker.",
         "french": "Inflige [meleeweakness] [effect0.status0.power] à l'attaquant.",
@@ -58,26 +68,32 @@
       },
       "trigger": "on_hit",
       "effects": [
+        "@MonsterAvenger.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterAvenger.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacker_character",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "last_attacker_character",
-          "targetTeamType": "heroes",
-          "paramStatusEffects": [
-            {
-              "statusId": "melee weakness",
-              "count": 1
-            }
-          ]
+          "status": "melee weakness",
+          "count": 1
         }
       ]
     }
   ],
-  "size": 2,
-  "health": 40,
-  "attackDamage": 20,
-  "subtypeKeys": [
-    "SubtypesData_Angel",
-    "SubtypesData_BannerUnit"
-  ],
-  "characterChatterData": "BanishedAvengerChatterData"
+  "vfxs": [
+    {
+      "id": "MonsterAvenger.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
 }

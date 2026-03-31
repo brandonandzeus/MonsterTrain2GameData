@@ -1,128 +1,143 @@
 {
-  "id": "MonsterSneezyWhelp",
-  "guid": "0ff913bb-5224-444f-8843-f0d2c1262d31",
-  "name": "Snotty Whelp",
-  "nameKey": {
-    "key": "CharacterData_nameKey-2b560a6ecc01b0f8-f3aba09c26a275a4fb65f35d94df4fdf-v2",
-    "english": "Snotty Whelp",
-    "french": "Dragonnet morveux",
-    "german": "Rotznase",
-    "russian": "Сопливый дракончик",
-    "portuguese": "Filhote Ranhoso",
-    "chinese": "流涕幼龙",
-    "spanish": "Cría mocosa",
-    "chinese_traditional": "傲慢幼龍",
-    "korean": "코흘리개 해츨링",
-    "japanese": "鼻タレ小竜"
-  },
-  "characterLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
     {
-      "key": "CharacterData_data-739786707c22f4e1-f3aba09c26a275a4fb65f35d94df4fdf-v2",
-      "english": "The carrier whelps are excellent at delivering important materials quickly, just so long as you don’t mind a little mucus.",
-      "french": "Ces petits livreurs sont bien pratiques pour transmettre rapidement des documents importants, à condition de ne pas avoir peur d'un peu de morve.",
-      "german": "Die Trägerwelpen können wichtige Materialien schnell liefern – solange du über das bisschen Schleim hinwegsehen kannst.",
-      "russian": "Дракончики — прекрасные курьеры и могут быстро доставить необходимые материалы, если, конечно, вас не смущают следы соплей.",
-      "portuguese": "Os filhotes portadores são excelentes para entregar materiais importantes rapidamente, desde que você não se importe com um pouco de muco.",
-      "chinese": "这种负责搬运的幼龙在快速运送重要材料方面十分出色，只要你不介意沾上一点粘液。",
-      "spanish": "Las crías mensajeras son excelentes para la entrega rápida de materiales, siempre que no importe que lleguen con un poco de moco.",
-      "chinese_traditional": "運輸幼龍非常擅長快速運送重要材料，但你難免會沾染一點黏液。",
-      "korean": "이 해츨링 운반자는 점액만 감수할 수 있다면 필요한 재료를 빠르게 전달해 준다.",
-      "japanese": "運搬係の小竜は、多少の鼻水さえ気にしなければ、重要な資材を素早く運ぶのに優れている。"
+      "id": "MonsterSneezyWhelp",
+      "name": "Snotty Whelp",
+      "names": {
+        "key": "CharacterData_nameKey-2b560a6ecc01b0f8-f3aba09c26a275a4fb65f35d94df4fdf-v2",
+        "english": "Snotty Whelp",
+        "french": "Dragonnet morveux",
+        "german": "Rotznase",
+        "russian": "Сопливый дракончик",
+        "portuguese": "Filhote Ranhoso",
+        "chinese": "流涕幼龙",
+        "spanish": "Cría mocosa",
+        "chinese_traditional": "傲慢幼龍",
+        "korean": "코흘리개 해츨링",
+        "japanese": "鼻タレ小竜"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-739786707c22f4e1-f3aba09c26a275a4fb65f35d94df4fdf-v2",
+          "english": "The carrier whelps are excellent at delivering important materials quickly, just so long as you don’t mind a little mucus.",
+          "french": "Ces petits livreurs sont bien pratiques pour transmettre rapidement des documents importants, à condition de ne pas avoir peur d'un peu de morve.",
+          "german": "Die Trägerwelpen können wichtige Materialien schnell liefern – solange du über das bisschen Schleim hinwegsehen kannst.",
+          "russian": "Дракончики — прекрасные курьеры и могут быстро доставить необходимые материалы, если, конечно, вас не смущают следы соплей.",
+          "portuguese": "Os filhotes portadores são excelentes para entregar materiais importantes rapidamente, desde que você não se importe com um pouco de muco.",
+          "chinese": "这种负责搬运的幼龙在快速运送重要材料方面十分出色，只要你不介意沾上一点粘液。",
+          "spanish": "Las crías mensajeras son excelentes para la entrega rápida de materiales, siempre que no importe que lleguen con un poco de moco.",
+          "chinese_traditional": "運輸幼龍非常擅長快速運送重要材料，但你難免會沾染一點黏液。",
+          "korean": "이 해츨링 운반자는 점액만 감수할 수 있다면 필요한 재료를 빠르게 전달해 준다.",
+          "japanese": "運搬係の小竜は、多少の鼻水さえ気にしなければ、重要な資材を素早く運ぶのに優れている。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SneezyDrake.prefab",
+        "asset_guid": "20f2196d850a1b944ab364261a77f408"
+      },
+      "projectile_vfx": "@MonsterSneezyWhelp.projectilePrefab",
+      "impact_vfx": "@MonsterSneezyWhelp.impactVFX",
+      "ability": "@MonsterSneezyWhelp.unitAbility",
+      "size": 1,
+      "health": 1,
+      "attack_damage": 4,
+      "attack_teleports_to_defender": false,
+      "subtypes": [
+        "SubtypesData_Whelp"
+      ],
+      "chatter": "PyreborneSneezyWhelpChatterData"
     }
   ],
-  "characterPrefabVariantRef": {
-    "m_debugName": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_SneezyDrake.prefab",
-    "m_AssetGUID": "20f2196d850a1b944ab364261a77f408"
-  },
-  "projectilePrefab": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/CharacterFX/Attacks/SnottyWhelp/FX_SneezyDrakeProjectile.prefab",
-      "m_AssetGUID": "db9dc19d1e33f3d47b7fefeea220fd24"
-    },
-    "spawnLocation": "character_side_fwd_center"
-  },
-  "impactVFX": {
-    "vfxPrefabRefLeft": {
-      "m_debugName": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
-      "m_AssetGUID": "3264e2908c5ba3549a14df8cb8e8e37d"
-    },
-    "spawnLocation": "character_center"
-  },
-  "unitAbility": {
-    "id": "BackdraftAbility",
-    "guid": "f3c7769a-4f9b-43cf-aacd-cf32c14e3082",
-    "nameKey": {
-      "key": "CardData_nameKey-4cd37103631a5be1-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
-      "english": "Gellysneeze",
-      "french": "Projection de morve",
-      "german": "Gelnieser",
-      "russian": "Сопливый чих",
-      "portuguese": "Espirro Gosmento",
-      "chinese": "熔胶喷嚏",
-      "spanish": "Estornudo ígneo",
-      "chinese_traditional": "厭膠噴嚏",
-      "korean": "점액 재채기",
-      "japanese": "ゲルのくしゃみ"
-    },
-    "overrideDescriptionKey": {
-      "key": "CardData_overrideDescriptionKey-079e48b4f5b2a770-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
-      "english": "Deal [effect0.power] damage then apply [pyregel] [effect1.status0.power] to the front enemy unit.",
-      "french": "Inflige <nobr>[effect0.power] DGT,</nobr> puis [pyregel] [effect1.status0.power] à l'ennemi en 1re ligne.",
-      "german": "Verursache [effect0.power] Schaden gegen die vorderste gegnerische Einheit und wende [pyregel] [effect1.status0.power] auf sie an.",
-      "russian": "Наносит переднему вражескому бойцу [effect0.power] урона и накладывает на него [pyregel] х[effect1.status0.power].",
-      "portuguese": "Causa [effect0.power] de dano e aplica [pyregel] [effect1.status0.power] à unidade inimiga na frente.",
-      "chinese": "造成 [effect0.power] 点伤害，然后对前排敌方单位施加 [pyregel] [effect1.status0.power]。",
-      "spanish": "Inflige [effect0.power] de daño y añade [pyregel] [effect1.status0.power] a la primera unidad enemiga.",
-      "chinese_traditional": "對前排敵方單位施加[effect0.power]點傷害與[pyregel][effect1.status0.power]。",
-      "korean": "전열 적 유닛에 [effect0.power]의 피해를 입힌 후 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
-      "japanese": "[effect0.power]のダメージを与え、前列の敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
-    },
-    "cardType": "spell",
-    "rarity": "common",
-    "linkedClass": "ClassPyreborne",
-    "effects": [
-      {
-        "effectStateName": "CardEffectDamage",
-        "targetMode": "front_in_room",
-        "targetTeamType": "heroes",
-        "paramInt": 1,
-        "appliedToSelfVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/Abilities/GellySneeze/FX_GellySneeze.prefab",
-            "m_AssetGUID": "44d035819732a3a4daa8ebb059ef0e0d"
-          },
-          "spawnLocation": "character_side_fwd_center"
-        }
+  "cards": [
+    {
+      "id": "MonsterSneezyWhelp.unitAbility",
+      "names": {
+        "key": "CardData_nameKey-4cd37103631a5be1-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
+        "english": "Gellysneeze",
+        "french": "Projection de morve",
+        "german": "Gelnieser",
+        "russian": "Сопливый чих",
+        "portuguese": "Espirro Gosmento",
+        "chinese": "熔胶喷嚏",
+        "spanish": "Estornudo ígneo",
+        "chinese_traditional": "厭膠噴嚏",
+        "korean": "점액 재채기",
+        "japanese": "ゲルのくしゃみ"
       },
-      {
-        "effectStateName": "CardEffectAddStatusEffect",
-        "targetMode": "front_in_room",
-        "targetTeamType": "heroes",
-        "paramStatusEffects": [
-          {
-            "statusId": "pyregel",
-            "count": 12
-          }
-        ],
-        "appliedToSelfVFX": {
-          "vfxPrefabRefLeft": {
-            "m_debugName": "Assets/VFX/Abilities/GellySneeze/FX_GellySneeze.prefab",
-            "m_AssetGUID": "44d035819732a3a4daa8ebb059ef0e0d"
-          },
-          "spawnLocation": "character_side_fwd_center"
-        }
-      }
-    ],
-    "cooldownAfterActivated": 2,
-    "isUnitAbility": true,
-    "initialKeyboardTarget": "front_friendly"
-  },
-  "size": 1,
-  "health": 1,
-  "attackDamage": 4,
-  "attackTeleportsToDefender": false,
-  "subtypeKeys": [
-    "SubtypesData_Whelp"
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-079e48b4f5b2a770-b5a569c3e27ee9d4e992097ef4cbf6d0-v2",
+        "english": "Deal [effect0.power] damage then apply [pyregel] [effect1.status0.power] to the front enemy unit.",
+        "french": "Inflige <nobr>[effect0.power] DGT,</nobr> puis [pyregel] [effect1.status0.power] à l'ennemi en 1re ligne.",
+        "german": "Verursache [effect0.power] Schaden gegen die vorderste gegnerische Einheit und wende [pyregel] [effect1.status0.power] auf sie an.",
+        "russian": "Наносит переднему вражескому бойцу [effect0.power] урона и накладывает на него [pyregel] х[effect1.status0.power].",
+        "portuguese": "Causa [effect0.power] de dano e aplica [pyregel] [effect1.status0.power] à unidade inimiga na frente.",
+        "chinese": "造成 [effect0.power] 点伤害，然后对前排敌方单位施加 [pyregel] [effect1.status0.power]。",
+        "spanish": "Inflige [effect0.power] de daño y añade [pyregel] [effect1.status0.power] a la primera unidad enemiga.",
+        "chinese_traditional": "對前排敵方單位施加[effect0.power]點傷害與[pyregel][effect1.status0.power]。",
+        "korean": "전열 적 유닛에 [effect0.power]의 피해를 입힌 후 [pyregel] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "[effect0.power]のダメージを与え、前列の敵ユニットに[pyregel] [effect1.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPyreborne",
+      "effects": [
+        "@MonsterSneezyWhelp.unitAbility.effects0",
+        "@MonsterSneezyWhelp.unitAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
+    }
   ],
-  "characterChatterData": "PyreborneSneezyWhelpChatterData"
+  "effects": [
+    {
+      "id": "MonsterSneezyWhelp.unitAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_int": 1,
+      "applied_to_self_vfx": "@MonsterSneezyWhelp.unitAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "MonsterSneezyWhelp.unitAbility.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pyregel",
+          "count": 12
+        }
+      ],
+      "applied_to_self_vfx": "@MonsterSneezyWhelp.unitAbility.effects0.appliedToSelfVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MonsterSneezyWhelp.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SnottyWhelp/FX_SneezyDrakeProjectile.prefab",
+        "asset_guid": "db9dc19d1e33f3d47b7fefeea220fd24"
+      },
+      "spawn_location": "character_side_fwd_center"
+    },
+    {
+      "id": "MonsterSneezyWhelp.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
+        "asset_guid": "3264e2908c5ba3549a14df8cb8e8e37d"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterSneezyWhelp.unitAbility.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/GellySneeze/FX_GellySneeze.prefab",
+        "asset_guid": "44d035819732a3a4daa8ebb059ef0e0d"
+      },
+      "spawn_location": "character_side_fwd_center"
+    }
+  ]
 }
