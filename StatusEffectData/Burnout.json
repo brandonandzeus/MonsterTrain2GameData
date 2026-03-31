@@ -1,75 +1,88 @@
 {
-  "statusId": "ephemeral",
-  "nameKey": {
-    "key": "StatusEffect_Ephemeral_CardText",
-    "english": "Burnout",
-    "french": "Consumation",
-    "german": "Ausbrennen",
-    "russian": "Выгорание",
-    "portuguese": "Derretimento",
-    "chinese": "燃命",
-    "spanish": "Fugacidad",
-    "chinese_traditional": "燃盡",
-    "korean": "연소",
-    "japanese": "燃え尽き"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Ephemeral_Stack_CardText",
-    "english": "<nobr>Burnout {0}</nobr>",
-    "french": "<nobr>Consumation {0}</nobr>",
-    "german": "<nobr>{0} Ausbrennen</nobr>",
-    "russian": "<nobr>Выгорание {0}</nobr>",
-    "portuguese": "<nobr>Derretimento {0}</nobr>",
-    "chinese": "<nobr>燃命 {0}</nobr>",
-    "spanish": "<nobr>Fugacidad {0}</nobr>",
-    "chinese_traditional": "<nobr>燃盡 {0}</nobr>",
-    "korean": "<nobr>연소 {0}</nobr>",
-    "japanese": "<nobr>燃え尽き{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Ephemeral_CardTooltipText",
-    "english": "When [burnout] runs out, the unit dies.<br>Decreases every turn.",
-    "french": "Lorsque [burnout] tombe à zéro, cette unité meurt. <br>Diminue à chaque tour.",
-    "german": "Wenn [burnout] abläuft, stirbt die Einheit.<br>Wird jeden Zug reduziert.",
-    "russian": "Когда последний слой эффекта [burnout] исчезает, боец погибает.<br>Уменьшается каждый ход.",
-    "portuguese": "Quando [burnout] se esgota, a unidade morre.<br>Diminui a cada turno.",
-    "chinese": "[burnout]耗尽时，单位死亡。<br>每回合不断减少。",
-    "spanish": "Cuando [burnout] se agota, la unidad muere.<br>Disminuye en cada turno.",
-    "chinese_traditional": "當[burnout]結束時，單位死亡。<br>每回合遞減。",
-    "korean": "[burnout]가 0이 되면 유닛이 사망합니다.<br>매 턴마다 감소합니다.",
-    "japanese": "[burnout]が0になると、ユニットは死亡する。<br>毎ターン減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Ephemeral_CharacterTooltipText",
-    "english": "This unit will die in [codeint0] turns unless it gets more [burnout].",
-    "french": "Cette unité mourra dans [codeint0] tour(s) à moins d'obtenir plus de [burnout].",
-    "german": "Diese Einheit stirbt in [codeint0] Zügen, außer sie erhält mehr [burnout].",
-    "russian": "Этот боец погибнет через несколько ходов ([codeint0]), если не повысить его [burnout].",
-    "portuguese": "Esta unidade morrerá em [codeint0] turnos, a menos que receba mais [burnout].",
-    "chinese": "如果无法获得更多 [burnout]，此单位会在 [codeint0] 回合后死亡。",
-    "spanish": "Esta unidad morirá en [codeint0] turnos, a menos que consiga más [burnout].",
-    "chinese_traditional": "這個單位將在[codeint0]回合後死亡，除非獲得更多[burnout]。",
-    "korean": "[burnout]를 추가로 얻지 않으면 이 유닛이 [codeint0]턴 후 사망합니다.",
-    "japanese": "[burnout]が追加されない限り、このユニットは[codeint0]ターンで死亡する。"
-  },
-  "statusEffectStateName": "StatusEffectEphemeralState",
-  "appliedSFXName": "Status_Burnout",
-  "displayCategory": "positive",
-  "triggerStage": "on_post_combat_poison",
-  "removeWhenTriggered": true,
-  "isPropagatable": true,
-  "scalesInEndless": false,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_Burnout_Applied_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_Burnout_Triggered_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_Burnout_Persistent_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "ephemeral",
+      "names": {
+        "key": "StatusEffect_Ephemeral_CardText",
+        "english": "Burnout",
+        "french": "Consumation",
+        "german": "Ausbrennen",
+        "russian": "Выгорание",
+        "portuguese": "Derretimento",
+        "chinese": "燃命",
+        "spanish": "Fugacidad",
+        "chinese_traditional": "燃盡",
+        "korean": "연소",
+        "japanese": "燃え尽き"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Ephemeral_Stack_CardText",
+        "english": "<nobr>Burnout {0}</nobr>",
+        "french": "<nobr>Consumation {0}</nobr>",
+        "german": "<nobr>{0} Ausbrennen</nobr>",
+        "russian": "<nobr>Выгорание {0}</nobr>",
+        "portuguese": "<nobr>Derretimento {0}</nobr>",
+        "chinese": "<nobr>燃命 {0}</nobr>",
+        "spanish": "<nobr>Fugacidad {0}</nobr>",
+        "chinese_traditional": "<nobr>燃盡 {0}</nobr>",
+        "korean": "<nobr>연소 {0}</nobr>",
+        "japanese": "<nobr>燃え尽き{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Ephemeral_CardTooltipText",
+        "english": "When [burnout] runs out, the unit dies.<br>Decreases every turn.",
+        "french": "Lorsque [burnout] tombe à zéro, cette unité meurt. <br>Diminue à chaque tour.",
+        "german": "Wenn [burnout] abläuft, stirbt die Einheit.<br>Wird jeden Zug reduziert.",
+        "russian": "Когда последний слой эффекта [burnout] исчезает, боец погибает.<br>Уменьшается каждый ход.",
+        "portuguese": "Quando [burnout] se esgota, a unidade morre.<br>Diminui a cada turno.",
+        "chinese": "[burnout]耗尽时，单位死亡。<br>每回合不断减少。",
+        "spanish": "Cuando [burnout] se agota, la unidad muere.<br>Disminuye en cada turno.",
+        "chinese_traditional": "當[burnout]結束時，單位死亡。<br>每回合遞減。",
+        "korean": "[burnout]가 0이 되면 유닛이 사망합니다.<br>매 턴마다 감소합니다.",
+        "japanese": "[burnout]が0になると、ユニットは死亡する。<br>毎ターン減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Ephemeral_CharacterTooltipText",
+        "english": "This unit will die in [codeint0] turns unless it gets more [burnout].",
+        "french": "Cette unité mourra dans [codeint0] tour(s) à moins d'obtenir plus de [burnout].",
+        "german": "Diese Einheit stirbt in [codeint0] Zügen, außer sie erhält mehr [burnout].",
+        "russian": "Этот боец погибнет через несколько ходов ([codeint0]), если не повысить его [burnout].",
+        "portuguese": "Esta unidade morrerá em [codeint0] turnos, a menos que receba mais [burnout].",
+        "chinese": "如果无法获得更多 [burnout]，此单位会在 [codeint0] 回合后死亡。",
+        "spanish": "Esta unidad morirá en [codeint0] turnos, a menos que consiga más [burnout].",
+        "chinese_traditional": "這個單位將在[codeint0]回合後死亡，除非獲得更多[burnout]。",
+        "korean": "[burnout]를 추가로 얻지 않으면 이 유닛이 [codeint0]턴 후 사망합니다.",
+        "japanese": "[burnout]が追加されない限り、このユニットは[codeint0]ターンで死亡する。"
+      },
+      "class_name": "StatusEffectEphemeralState",
+      "applied_sfx": "Status_Burnout",
+      "display_category": "positive",
+      "trigger_stage": "on_post_combat_poison",
+      "remove_when_triggered": true,
+      "is_propagatable": true,
+      "scales_in_endless": false,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectEphemeralState.addedVFX",
+      "triggered_vfx": "@StatusEffectEphemeralState.triggeredVFX",
+      "persistent_vfx": "@StatusEffectEphemeralState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectEphemeralState.addedVFX",
+      "vfx_prefab_left": "FX_Burnout_Applied_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    },
+    {
+      "id": "StatusEffectEphemeralState.triggeredVFX",
+      "vfx_prefab_left": "FX_Burnout_Triggered_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    },
+    {
+      "id": "StatusEffectEphemeralState.persistentVFX",
+      "vfx_prefab_left": "FX_Burnout_Persistent_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    }
+  ]
 }

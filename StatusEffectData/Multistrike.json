@@ -1,67 +1,76 @@
 {
-  "statusId": "multistrike",
-  "nameKey": {
-    "key": "StatusEffect_Multistrike_CardText",
-    "english": "Multistrike",
-    "french": "Frappe multiple",
-    "german": "Multischlag",
-    "russian": "Мультиудар",
-    "portuguese": "Golpe Múltiplo",
-    "chinese": "多重攻击",
-    "spanish": "Multimpacto",
-    "chinese_traditional": "多重打擊",
-    "korean": "연속 공격",
-    "japanese": "連撃"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Multistrike_Stack_CardText",
-    "english": "<nobr>Multistrike {0}</nobr>",
-    "french": "<nobr>Frappe multiple {0}</nobr>",
-    "german": "<nobr>{0} Multischlag</nobr>",
-    "russian": "<nobr>Мультиудар {0}</nobr>",
-    "portuguese": "<nobr>Golpe Múltiplo {0}</nobr>",
-    "chinese": "<nobr>多重攻击 {0}</nobr>",
-    "spanish": "<nobr>Multimpacto {0}</nobr>",
-    "chinese_traditional": "<nobr>多重打擊 {0}</nobr>",
-    "korean": "<nobr>연속 공격 {0}</nobr>",
-    "japanese": "<nobr>連撃{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Multistrike_CardTooltipText",
-    "english": "Attacks an additional time per turn.",
-    "french": "Attaque une fois de plus à chaque tour.",
-    "german": "Greift jeden Zug ein weiteres Mal an.",
-    "russian": "Каждый ход проводит дополнительную атаку.",
-    "portuguese": "Ataca uma vez a mais em cada turno.",
-    "chinese": "每回合额外攻击一次。",
-    "spanish": "Ataca una vez más en cada turno.",
-    "chinese_traditional": "每回合額外攻擊一次。",
-    "korean": "공격 턴마다 추가 공격을 합니다.",
-    "japanese": "毎ターン攻撃回数が1増える。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Multistrike_CharacterTooltipText",
-    "english": "Attacks [codeint0] times per turn.",
-    "french": "Attaque [codeint0] fois par tour.",
-    "german": "Greift [codeint0]-mal pro Zug an.",
-    "russian": "Каждый ход атакует [codeint0] раз(а).",
-    "portuguese": "Ataca [codeint0] vezes a cada turno.",
-    "chinese": "每回合攻击 [codeint0] 次。",
-    "spanish": "Ataca [codeint0] veces en cada turno.",
-    "chinese_traditional": "每回合攻擊[codeint0]次。",
-    "korean": "매 턴 [codeint0]회 공격합니다.",
-    "japanese": "毎ターン[codeint0]回攻撃する。"
-  },
-  "statusEffectStateName": "StatusEffectMultistrikeState",
-  "appliedSFXName": "Status_Multistrike",
-  "displayCategory": "persistent",
-  "triggerStage": "on_multistrike",
-  "scalesInEndless": false,
-  "showOnPyreHeart": true,
-  "paramInt": 2,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_TriggerIcon_Triggered_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "multistrike",
+      "names": {
+        "key": "StatusEffect_Multistrike_CardText",
+        "english": "Multistrike",
+        "french": "Frappe multiple",
+        "german": "Multischlag",
+        "russian": "Мультиудар",
+        "portuguese": "Golpe Múltiplo",
+        "chinese": "多重攻击",
+        "spanish": "Multimpacto",
+        "chinese_traditional": "多重打擊",
+        "korean": "연속 공격",
+        "japanese": "連撃"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Multistrike_Stack_CardText",
+        "english": "<nobr>Multistrike {0}</nobr>",
+        "french": "<nobr>Frappe multiple {0}</nobr>",
+        "german": "<nobr>{0} Multischlag</nobr>",
+        "russian": "<nobr>Мультиудар {0}</nobr>",
+        "portuguese": "<nobr>Golpe Múltiplo {0}</nobr>",
+        "chinese": "<nobr>多重攻击 {0}</nobr>",
+        "spanish": "<nobr>Multimpacto {0}</nobr>",
+        "chinese_traditional": "<nobr>多重打擊 {0}</nobr>",
+        "korean": "<nobr>연속 공격 {0}</nobr>",
+        "japanese": "<nobr>連撃{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Multistrike_CardTooltipText",
+        "english": "Attacks an additional time per turn.",
+        "french": "Attaque une fois de plus à chaque tour.",
+        "german": "Greift jeden Zug ein weiteres Mal an.",
+        "russian": "Каждый ход проводит дополнительную атаку.",
+        "portuguese": "Ataca uma vez a mais em cada turno.",
+        "chinese": "每回合额外攻击一次。",
+        "spanish": "Ataca una vez más en cada turno.",
+        "chinese_traditional": "每回合額外攻擊一次。",
+        "korean": "공격 턴마다 추가 공격을 합니다.",
+        "japanese": "毎ターン攻撃回数が1増える。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Multistrike_CharacterTooltipText",
+        "english": "Attacks [codeint0] times per turn.",
+        "french": "Attaque [codeint0] fois par tour.",
+        "german": "Greift [codeint0]-mal pro Zug an.",
+        "russian": "Каждый ход атакует [codeint0] раз(а).",
+        "portuguese": "Ataca [codeint0] vezes a cada turno.",
+        "chinese": "每回合攻击 [codeint0] 次。",
+        "spanish": "Ataca [codeint0] veces en cada turno.",
+        "chinese_traditional": "每回合攻擊[codeint0]次。",
+        "korean": "매 턴 [codeint0]회 공격합니다.",
+        "japanese": "毎ターン[codeint0]回攻撃する。"
+      },
+      "class_name": "StatusEffectMultistrikeState",
+      "applied_sfx": "Status_Multistrike",
+      "display_category": "persistent",
+      "trigger_stage": "on_multistrike",
+      "scales_in_endless": false,
+      "show_on_pyre_heart": true,
+      "param_int": 2,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectMultistrikeState.addedVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectMultistrikeState.addedVFX",
+      "vfx_prefab_left": "FX_TriggerIcon_Triggered_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    }
+  ]
 }

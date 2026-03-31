@@ -1,67 +1,76 @@
 {
-  "statusId": "avarice",
-  "nameKey": {
-    "key": "StatusEffect_Avarice_CardText",
-    "english": "Avarice",
-    "french": "Avarice",
-    "german": "Habgier",
-    "russian": "Алчность",
-    "portuguese": "Avareza",
-    "chinese": "贪婪",
-    "spanish": "Avaricia",
-    "chinese_traditional": "貪婪",
-    "korean": "욕망",
-    "japanese": "強欲"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Avarice_Stack_CardText",
-    "english": "<nobr>Avarice {0}</nobr>",
-    "french": "<nobr>Avarice {0}</nobr>",
-    "german": "<nobr>Habgier {0}</nobr>",
-    "russian": "<nobr>Алчность х{0}</nobr>",
-    "portuguese": "<nobr>Avareza {0}</nobr>",
-    "chinese": "<nobr>贪婪 {0}</nobr>",
-    "spanish": "<nobr>Avaricia {0}</nobr>",
-    "chinese_traditional": "<nobr>貪婪 {0}</nobr>",
-    "korean": "<nobr>욕망 {0}</nobr>",
-    "japanese": "<nobr>強欲{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Avarice_CardTooltipText",
-    "english": "When a unit with [avarice] deals unblocked damage, gain [coin] equal to stacks of [avarice].",
-    "french": "Quand une unité avec [avarice] inflige des dégâts non bloqués, donne des [coin] valant les cumuls d'[avarice].",
-    "german": "Wenn eine Einheit mit [avarice] ungeblockten Schaden verursacht, erhältst du [coin] in Höhe der [avarice]-Stapel.",
-    "russian": "Когда боец со статусом [avarice], наносит незаблокированный урон, то получает [coin], равное количеству слоев <b>алчности</b>.",
-    "portuguese": "Quando uma unidade com [avarice] causar dano não bloqueado, receba [coin] igual às cargas de [avarice].",
-    "chinese": "当带有 [avarice] 的单位造成未被格挡的伤害时，获得等同于 [avarice] 层数的 [coin]。",
-    "spanish": "Cuando una unidad con [avarice] inflige daño directo, obtienes tantas [coin] como las acumulaciones de [avarice].",
-    "chinese_traditional": "當帶有[avarice]的單位造成未被阻擋的傷害時，獲得等同於[avarice]層數的[coin]。",
-    "korean": "[avarice] 효과를 지닌 유닛이 직접적인 피해를 입히면, [avarice]의 스택만큼 [coin]을 획득합니다.",
-    "japanese": "[avarice]が付与されているユニットがブロックに防がれないダメージを与えると、[avarice]のスタックに等しい[coin]を得る。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Avarice_CharacterTooltipText",
-    "english": "When dealing unblocked damage, +[codeint0][coin] (+[codeint1][coin] per stack).",
-    "french": "Quand des dégâts non bloqués sont infligés, +[codeint0][coin] (+[codeint1][coin] par cumul).",
-    "german": "+[codeint0][coin], wenn du ungeblockten Schaden verursachst (+[codeint1][coin] pro Stapel).",
-    "russian": "При нанесении незаблокированного урона +[codeint0][coin] (+[codeint1][coin] за слой).",
-    "portuguese": "Ao causar dano não bloqueado, +[codeint0][coin] (+[codeint1][coin] por carga).",
-    "chinese": "造成未被格挡的伤害时，+[codeint0][coin]（每层+[codeint1][coin]）。",
-    "spanish": "Al infligir daño directo, +[codeint0] [coin] (+[codeint1] [coin] por acumulación).",
-    "chinese_traditional": "在造成未被阻擋的傷害時，+[codeint0][coin]（每層+[codeint1][coin]）。",
-    "korean": "직접적인 피해를 입히면 +[codeint0][coin] 효과를 얻습니다. (스택당 +[codeint1][coin])",
-    "japanese": "ブロックに防がれないダメージを与えると、+[codeint0][coin]（1スタックにつき+[codeint1][coin]）。"
-  },
-  "statusEffectStateName": "StatusEffectAvariceState",
-  "displayCategory": "positive",
-  "triggerStage": "on_post_attacking",
-  "isPropagatable": true,
-  "scalesInEndless": false,
-  "excludeHeroPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_RageApplied_PS",
-    "spawnLocation": "character_center"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "avarice",
+      "names": {
+        "key": "StatusEffect_Avarice_CardText",
+        "english": "Avarice",
+        "french": "Avarice",
+        "german": "Habgier",
+        "russian": "Алчность",
+        "portuguese": "Avareza",
+        "chinese": "贪婪",
+        "spanish": "Avaricia",
+        "chinese_traditional": "貪婪",
+        "korean": "욕망",
+        "japanese": "強欲"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Avarice_Stack_CardText",
+        "english": "<nobr>Avarice {0}</nobr>",
+        "french": "<nobr>Avarice {0}</nobr>",
+        "german": "<nobr>Habgier {0}</nobr>",
+        "russian": "<nobr>Алчность х{0}</nobr>",
+        "portuguese": "<nobr>Avareza {0}</nobr>",
+        "chinese": "<nobr>贪婪 {0}</nobr>",
+        "spanish": "<nobr>Avaricia {0}</nobr>",
+        "chinese_traditional": "<nobr>貪婪 {0}</nobr>",
+        "korean": "<nobr>욕망 {0}</nobr>",
+        "japanese": "<nobr>強欲{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Avarice_CardTooltipText",
+        "english": "When a unit with [avarice] deals unblocked damage, gain [coin] equal to stacks of [avarice].",
+        "french": "Quand une unité avec [avarice] inflige des dégâts non bloqués, donne des [coin] valant les cumuls d'[avarice].",
+        "german": "Wenn eine Einheit mit [avarice] ungeblockten Schaden verursacht, erhältst du [coin] in Höhe der [avarice]-Stapel.",
+        "russian": "Когда боец со статусом [avarice], наносит незаблокированный урон, то получает [coin], равное количеству слоев <b>алчности</b>.",
+        "portuguese": "Quando uma unidade com [avarice] causar dano não bloqueado, receba [coin] igual às cargas de [avarice].",
+        "chinese": "当带有 [avarice] 的单位造成未被格挡的伤害时，获得等同于 [avarice] 层数的 [coin]。",
+        "spanish": "Cuando una unidad con [avarice] inflige daño directo, obtienes tantas [coin] como las acumulaciones de [avarice].",
+        "chinese_traditional": "當帶有[avarice]的單位造成未被阻擋的傷害時，獲得等同於[avarice]層數的[coin]。",
+        "korean": "[avarice] 효과를 지닌 유닛이 직접적인 피해를 입히면, [avarice]의 스택만큼 [coin]을 획득합니다.",
+        "japanese": "[avarice]が付与されているユニットがブロックに防がれないダメージを与えると、[avarice]のスタックに等しい[coin]を得る。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Avarice_CharacterTooltipText",
+        "english": "When dealing unblocked damage, +[codeint0][coin] (+[codeint1][coin] per stack).",
+        "french": "Quand des dégâts non bloqués sont infligés, +[codeint0][coin] (+[codeint1][coin] par cumul).",
+        "german": "+[codeint0][coin], wenn du ungeblockten Schaden verursachst (+[codeint1][coin] pro Stapel).",
+        "russian": "При нанесении незаблокированного урона +[codeint0][coin] (+[codeint1][coin] за слой).",
+        "portuguese": "Ao causar dano não bloqueado, +[codeint0][coin] (+[codeint1][coin] por carga).",
+        "chinese": "造成未被格挡的伤害时，+[codeint0][coin]（每层+[codeint1][coin]）。",
+        "spanish": "Al infligir daño directo, +[codeint0] [coin] (+[codeint1] [coin] por acumulación).",
+        "chinese_traditional": "在造成未被阻擋的傷害時，+[codeint0][coin]（每層+[codeint1][coin]）。",
+        "korean": "직접적인 피해를 입히면 +[codeint0][coin] 효과를 얻습니다. (스택당 +[codeint1][coin])",
+        "japanese": "ブロックに防がれないダメージを与えると、+[codeint0][coin]（1スタックにつき+[codeint1][coin]）。"
+      },
+      "class_name": "StatusEffectAvariceState",
+      "display_category": "positive",
+      "trigger_stage": "on_post_attacking",
+      "is_propagatable": true,
+      "scales_in_endless": false,
+      "exclude_hero_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectAvariceState.addedVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectAvariceState.addedVFX",
+      "vfx_prefab_left": "FX_RageApplied_PS",
+      "spawn_location": "character_center"
+    }
+  ]
 }

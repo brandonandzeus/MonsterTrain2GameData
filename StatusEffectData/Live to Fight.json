@@ -1,36 +1,41 @@
 {
-  "statusId": "pyrebane",
-  "nameKey": {
-    "key": "StatusEffect_PyreBane_CardText",
-    "english": "Live to Fight",
-    "french": "Vivre pour se battre",
-    "german": "Leben für den Kampf",
-    "russian": "Жизнь ради сражений",
-    "portuguese": "Vivendo para Lutar",
-    "chinese": "为战而生",
-    "spanish": "Vivir para luchar",
-    "chinese_traditional": "戰鬥使命",
-    "korean": "전투 본능",
-    "japanese": "戦闘狂"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_PyreBane_CharacterTooltipText",
-    "english": "Instead of entering the Pyre Room this unit moves back to the bottom floor.",
-    "french": "Au lieu d'entrer dans la salle du Brasier, cette unité retourne au niveau inférieur.",
-    "german": "Anstatt den Höllenglut-Raum zu betreten, geht diese Einheit zurück auf die unterste Ebene.",
-    "russian": "Вместо того, чтобы подняться в комнату с Пеклом, этот боец вернется на первый этаж.",
-    "portuguese": "Em vez de entrar na Sala da Pira, essa unidade volta para o andar de baixo.",
-    "chinese": "该单位即将进入薪火室时，会返回底层。",
-    "spanish": "En lugar de entrar a la sala de la Pira, esta unidad vuelve al piso de abajo del todo.",
-    "chinese_traditional": "這個單位不進入火堆室而是返回底層。",
-    "korean": "이 유닛은 화로실로 들어가지 않고, 아래층으로 되돌아갑니다.",
-    "japanese": "このユニットは炉室に入る代わりに最下層のフロアに戻る。"
-  },
-  "statusEffectStateName": "StatusEffectPyreBaneState",
-  "displayCategory": "persistent",
-  "triggerStage": "on_post_room_combat",
-  "isStackable": false,
-  "scalesInEndless": false,
-  "showNotificationsOnRemoval": false,
-  "paramInt": 6
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "pyrebane",
+      "names": {
+        "key": "StatusEffect_PyreBane_CardText",
+        "english": "Live to Fight",
+        "french": "Vivre pour se battre",
+        "german": "Leben für den Kampf",
+        "russian": "Жизнь ради сражений",
+        "portuguese": "Vivendo para Lutar",
+        "chinese": "为战而生",
+        "spanish": "Vivir para luchar",
+        "chinese_traditional": "戰鬥使命",
+        "korean": "전투 본능",
+        "japanese": "戦闘狂"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_PyreBane_CharacterTooltipText",
+        "english": "Instead of entering the Pyre Room this unit moves back to the bottom floor.",
+        "french": "Au lieu d'entrer dans la salle du Brasier, cette unité retourne au niveau inférieur.",
+        "german": "Anstatt den Höllenglut-Raum zu betreten, geht diese Einheit zurück auf die unterste Ebene.",
+        "russian": "Вместо того, чтобы подняться в комнату с Пеклом, этот боец вернется на первый этаж.",
+        "portuguese": "Em vez de entrar na Sala da Pira, essa unidade volta para o andar de baixo.",
+        "chinese": "该单位即将进入薪火室时，会返回底层。",
+        "spanish": "En lugar de entrar a la sala de la Pira, esta unidad vuelve al piso de abajo del todo.",
+        "chinese_traditional": "這個單位不進入火堆室而是返回底層。",
+        "korean": "이 유닛은 화로실로 들어가지 않고, 아래층으로 되돌아갑니다.",
+        "japanese": "このユニットは炉室に入る代わりに最下層のフロアに戻る。"
+      },
+      "class_name": "StatusEffectPyreBaneState",
+      "display_category": "persistent",
+      "trigger_stage": "on_post_room_combat",
+      "is_stackable": false,
+      "scales_in_endless": false,
+      "show_notifications_on_removal": false,
+      "param_int": 6
+    }
+  ]
 }

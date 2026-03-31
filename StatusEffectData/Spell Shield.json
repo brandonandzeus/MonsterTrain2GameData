@@ -1,70 +1,79 @@
 {
-  "statusId": "spell shield",
-  "nameKey": {
-    "key": "StatusEffect_SpellShield_CardText",
-    "english": "Spell Shield",
-    "french": "Bouclier anti-sorts",
-    "german": "Zauberschild",
-    "russian": "Защита от чар",
-    "portuguese": "Escudo de Feitiço",
-    "chinese": "法术护盾",
-    "spanish": "Escudo de hechizos",
-    "chinese_traditional": "法術護盾",
-    "korean": "주문 보호막",
-    "japanese": "呪文シールド"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_SpellShield_Stack_CardText",
-    "english": "<nobr>Spell Shield {0}</nobr>",
-    "french": "<nobr>Bouclier anti-sorts {0}</nobr>",
-    "german": "<nobr>{0} Zauberschild</nobr>",
-    "russian": "<nobr>Защита от чар {0}</nobr>",
-    "portuguese": "<nobr>Escudo de Feitiço {0}</nobr>",
-    "chinese": "<nobr>法术护盾 {0}</nobr>",
-    "spanish": "<nobr>Escudo de hechizos {0}</nobr>",
-    "chinese_traditional": "<nobr>法術護盾 {0}</nobr>",
-    "korean": "<nobr>주문 보호막 {0}</nobr>",
-    "japanese": "<nobr>呪文シールド{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_SpellShield_CardTooltipText",
-    "english": "Absorbs the next damage from a spell or ability.",
-    "french": "Annule les prochains dégâts de sort ou de capacité.",
-    "german": "Absorbiert den nächsten Schaden durch Zauber/Fähigkeiten.",
-    "russian": "Поглощает урон от следующих чар.",
-    "portuguese": "Absorve o próximo dano de um feitiço ou habilidade.",
-    "chinese": "吸收下个法术或能力造成的伤害。",
-    "spanish": "Absorbe el daño del próximo ataque de hechizo o habilidad.",
-    "chinese_traditional": "吸收下一次來自法術或能力的傷害。",
-    "korean": "다음에 발생하는 주문 및 능력 피해를 흡수합니다.",
-    "japanese": "次の呪文またはアビリティによるダメージを吸収する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_SpellShield_CharacterTooltipText",
-    "english": "Nullify the next damage from a spell or ability.",
-    "french": "Annule les prochains dégâts de sort ou de capacité.",
-    "german": "Neutralisiert den nächsten Schaden durch Zauber/Fähigkeiten.",
-    "russian": "Обнуляет урон от следующих чар.",
-    "portuguese": "Anula o próximo dano de um feitiço ou habilidade.",
-    "chinese": "使下一次法术或能力伤害无效化。",
-    "spanish": "Anula el daño del próximo hechizo o habilidad.",
-    "chinese_traditional": "抵銷下一次來自法術或能力的傷害。",
-    "korean": "다음에 발생하는 주문 및 능력 피해를 무효화합니다.",
-    "japanese": "呪文またはアビリティによる次のダメージを無効化する。"
-  },
-  "statusEffectStateName": "StatusEffectSpellShieldState",
-  "appliedSFXName": "Status_SpellShield_Applied",
-  "displayCategory": "positive",
-  "triggerStage": "on_pre_attacked_spell_shield",
-  "removeWhenTriggered": true,
-  "removeDuringDeployment": true,
-  "isPropagatable": true,
-  "excludeHeroPropagation": true,
-  "allowSecondaryTooltipPlacement": true,
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_SpellShieldNewFriendly 1",
-    "vfxPrefabRight": "FX_SpellShieldNewEnemy 1",
-    "spawnLocation": "character_side_fwd_center",
-    "facing": "forward"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "spell shield",
+      "names": {
+        "key": "StatusEffect_SpellShield_CardText",
+        "english": "Spell Shield",
+        "french": "Bouclier anti-sorts",
+        "german": "Zauberschild",
+        "russian": "Защита от чар",
+        "portuguese": "Escudo de Feitiço",
+        "chinese": "法术护盾",
+        "spanish": "Escudo de hechizos",
+        "chinese_traditional": "法術護盾",
+        "korean": "주문 보호막",
+        "japanese": "呪文シールド"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_SpellShield_Stack_CardText",
+        "english": "<nobr>Spell Shield {0}</nobr>",
+        "french": "<nobr>Bouclier anti-sorts {0}</nobr>",
+        "german": "<nobr>{0} Zauberschild</nobr>",
+        "russian": "<nobr>Защита от чар {0}</nobr>",
+        "portuguese": "<nobr>Escudo de Feitiço {0}</nobr>",
+        "chinese": "<nobr>法术护盾 {0}</nobr>",
+        "spanish": "<nobr>Escudo de hechizos {0}</nobr>",
+        "chinese_traditional": "<nobr>法術護盾 {0}</nobr>",
+        "korean": "<nobr>주문 보호막 {0}</nobr>",
+        "japanese": "<nobr>呪文シールド{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_SpellShield_CardTooltipText",
+        "english": "Absorbs the next damage from a spell or ability.",
+        "french": "Annule les prochains dégâts de sort ou de capacité.",
+        "german": "Absorbiert den nächsten Schaden durch Zauber/Fähigkeiten.",
+        "russian": "Поглощает урон от следующих чар.",
+        "portuguese": "Absorve o próximo dano de um feitiço ou habilidade.",
+        "chinese": "吸收下个法术或能力造成的伤害。",
+        "spanish": "Absorbe el daño del próximo ataque de hechizo o habilidad.",
+        "chinese_traditional": "吸收下一次來自法術或能力的傷害。",
+        "korean": "다음에 발생하는 주문 및 능력 피해를 흡수합니다.",
+        "japanese": "次の呪文またはアビリティによるダメージを吸収する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_SpellShield_CharacterTooltipText",
+        "english": "Nullify the next damage from a spell or ability.",
+        "french": "Annule les prochains dégâts de sort ou de capacité.",
+        "german": "Neutralisiert den nächsten Schaden durch Zauber/Fähigkeiten.",
+        "russian": "Обнуляет урон от следующих чар.",
+        "portuguese": "Anula o próximo dano de um feitiço ou habilidade.",
+        "chinese": "使下一次法术或能力伤害无效化。",
+        "spanish": "Anula el daño del próximo hechizo o habilidad.",
+        "chinese_traditional": "抵銷下一次來自法術或能力的傷害。",
+        "korean": "다음에 발생하는 주문 및 능력 피해를 무효화합니다.",
+        "japanese": "呪文またはアビリティによる次のダメージを無効化する。"
+      },
+      "class_name": "StatusEffectSpellShieldState",
+      "applied_sfx": "Status_SpellShield_Applied",
+      "display_category": "positive",
+      "trigger_stage": "on_pre_attacked_spell_shield",
+      "remove_when_triggered": true,
+      "remove_during_deployment": true,
+      "is_propagatable": true,
+      "exclude_hero_propagation": true,
+      "allow_secondary_tooltip_placement": true,
+      "persistent_vfx": "@StatusEffectSpellShieldState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectSpellShieldState.persistentVFX",
+      "vfx_prefab_left": "FX_SpellShieldNewFriendly 1",
+      "vfx_prefab_right": "FX_SpellShieldNewEnemy 1",
+      "spawn_location": "character_side_fwd_center",
+      "facing": "forward"
+    }
+  ]
 }

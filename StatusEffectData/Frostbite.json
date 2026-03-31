@@ -1,76 +1,89 @@
 {
-  "statusId": "poison",
-  "nameKey": {
-    "key": "StatusEffect_Poison_CardText",
-    "english": "Frostbite",
-    "french": "Gelure",
-    "german": "Frostschaden",
-    "russian": "Обморожение",
-    "portuguese": "Friagem",
-    "chinese": "霜冻",
-    "spanish": "Escarcha",
-    "chinese_traditional": "凍傷",
-    "korean": "서리",
-    "japanese": "凍傷"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Poison_Stack_CardText",
-    "english": "<nobr>Poison {0}</nobr>",
-    "french": "<nobr>Poison {0}</nobr>",
-    "german": "<nobr>Gift {0}</nobr>",
-    "russian": "<nobr>Отравление х{0}</nobr>",
-    "portuguese": "<nobr>Veneno {0}</nobr>",
-    "chinese": "<nobr>剧毒 {0}</nobr>",
-    "spanish": "<nobr>Veneno {0}</nobr>",
-    "chinese_traditional": "<nobr>中毒 {0}</nobr>",
-    "korean": "<nobr>독 {0}</nobr>",
-    "japanese": "<nobr>毒{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Poison_CardTooltipText",
-    "english": "Unit takes 1 damage per stack at the end of turn.<br>Decreases every turn.",
-    "french": "L'unité subit 1 dégât par cumul à la fin du tour.<br>Diminue à chaque tour.",
-    "german": "Die Einheit nimmt am Ende des Zuges 1 Schaden pro Stapel.<br>Wird jeden Zug reduziert.",
-    "russian": "Получает 1 урона за слой в конце хода.<br>Уменьшается каждый ход.",
-    "portuguese": "A unidade toma 1 de dano por carga no fim do turno.<br>Diminui a cada turno.",
-    "chinese": "回合结束时，每有一层霜冻，单位受到 1 点伤害。<br>每回合不断减少。",
-    "spanish": "La unidad recibe 1 punto de daño por acumulación al final del turno.<br>Disminuye en cada turno.",
-    "chinese_traditional": "在回合結束時，每層使單位受到1點傷害。<br>每回合減少。",
-    "korean": "턴 종료 시 유닛이 스택당 1의 피해를 입습니다.<br>매 턴마다 감소합니다.",
-    "japanese": "ターン終了時に、ユニットが1スタックにつき1のダメージを受ける。<br>毎ターン減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Poison_CharacterTooltipText",
-    "english": "Takes [codeint0] damage at the end of turn.<br>Decreases every turn.",
-    "french": "Subit <nobr>[codeint0] DGT</nobr> à la fin du tour.<br>Diminue à chaque tour.",
-    "german": "Erleidet am Ende des Zuges [codeint0] Schaden pro Stapel.<br>Wird jeden Zug reduziert.",
-    "russian": "Получает [codeint0] урона в конце хода.<br>Уменьшается каждый ход.",
-    "portuguese": "Sofre [codeint0] de dano no fim do turno.<br>Diminui a cada turno.",
-    "chinese": "回合结束时，受到 [codeint0] 点伤害。<br>每回合不断减少。",
-    "spanish": "Recibe [codeint0] de daño al final del turno.<br>Disminuye en cada turno.",
-    "chinese_traditional": "在回合結束時受到[codeint0]點傷害。<br>每回合減少。",
-    "korean": "턴 종료 시 [codeint0]의 피해를 입습니다.<br>매 턴마다 감소합니다.",
-    "japanese": "ターン終了時に[codeint0]のダメージを受ける。<br>毎ターン減少する。"
-  },
-  "statusEffectStateName": "StatusEffectPoisonState",
-  "appliedSFXName": "Status_Frostbite",
-  "displayCategory": "negative",
-  "triggerStage": "on_post_combat_poison",
-  "removeWhenTriggered": true,
-  "isPropagatable": true,
-  "excludeMonsterPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_Frostbite_PS",
-    "spawnLocation": "character_bottom"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_TriggerIcon_Triggered_PS",
-    "spawnLocation": "character_center"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_Frostbite_Persistent_PS",
-    "spawnLocation": "character_top"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "poison",
+      "names": {
+        "key": "StatusEffect_Poison_CardText",
+        "english": "Frostbite",
+        "french": "Gelure",
+        "german": "Frostschaden",
+        "russian": "Обморожение",
+        "portuguese": "Friagem",
+        "chinese": "霜冻",
+        "spanish": "Escarcha",
+        "chinese_traditional": "凍傷",
+        "korean": "서리",
+        "japanese": "凍傷"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Poison_Stack_CardText",
+        "english": "<nobr>Poison {0}</nobr>",
+        "french": "<nobr>Poison {0}</nobr>",
+        "german": "<nobr>Gift {0}</nobr>",
+        "russian": "<nobr>Отравление х{0}</nobr>",
+        "portuguese": "<nobr>Veneno {0}</nobr>",
+        "chinese": "<nobr>剧毒 {0}</nobr>",
+        "spanish": "<nobr>Veneno {0}</nobr>",
+        "chinese_traditional": "<nobr>中毒 {0}</nobr>",
+        "korean": "<nobr>독 {0}</nobr>",
+        "japanese": "<nobr>毒{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Poison_CardTooltipText",
+        "english": "Unit takes 1 damage per stack at the end of turn.<br>Decreases every turn.",
+        "french": "L'unité subit 1 dégât par cumul à la fin du tour.<br>Diminue à chaque tour.",
+        "german": "Die Einheit nimmt am Ende des Zuges 1 Schaden pro Stapel.<br>Wird jeden Zug reduziert.",
+        "russian": "Получает 1 урона за слой в конце хода.<br>Уменьшается каждый ход.",
+        "portuguese": "A unidade toma 1 de dano por carga no fim do turno.<br>Diminui a cada turno.",
+        "chinese": "回合结束时，每有一层霜冻，单位受到 1 点伤害。<br>每回合不断减少。",
+        "spanish": "La unidad recibe 1 punto de daño por acumulación al final del turno.<br>Disminuye en cada turno.",
+        "chinese_traditional": "在回合結束時，每層使單位受到1點傷害。<br>每回合減少。",
+        "korean": "턴 종료 시 유닛이 스택당 1의 피해를 입습니다.<br>매 턴마다 감소합니다.",
+        "japanese": "ターン終了時に、ユニットが1スタックにつき1のダメージを受ける。<br>毎ターン減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Poison_CharacterTooltipText",
+        "english": "Takes [codeint0] damage at the end of turn.<br>Decreases every turn.",
+        "french": "Subit <nobr>[codeint0] DGT</nobr> à la fin du tour.<br>Diminue à chaque tour.",
+        "german": "Erleidet am Ende des Zuges [codeint0] Schaden pro Stapel.<br>Wird jeden Zug reduziert.",
+        "russian": "Получает [codeint0] урона в конце хода.<br>Уменьшается каждый ход.",
+        "portuguese": "Sofre [codeint0] de dano no fim do turno.<br>Diminui a cada turno.",
+        "chinese": "回合结束时，受到 [codeint0] 点伤害。<br>每回合不断减少。",
+        "spanish": "Recibe [codeint0] de daño al final del turno.<br>Disminuye en cada turno.",
+        "chinese_traditional": "在回合結束時受到[codeint0]點傷害。<br>每回合減少。",
+        "korean": "턴 종료 시 [codeint0]의 피해를 입습니다.<br>매 턴마다 감소합니다.",
+        "japanese": "ターン終了時に[codeint0]のダメージを受ける。<br>毎ターン減少する。"
+      },
+      "class_name": "StatusEffectPoisonState",
+      "applied_sfx": "Status_Frostbite",
+      "display_category": "negative",
+      "trigger_stage": "on_post_combat_poison",
+      "remove_when_triggered": true,
+      "is_propagatable": true,
+      "exclude_monster_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectPoisonState.addedVFX",
+      "triggered_vfx": "@StatusEffectPoisonState.triggeredVFX",
+      "persistent_vfx": "@StatusEffectPoisonState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectPoisonState.addedVFX",
+      "vfx_prefab_left": "FX_Frostbite_PS",
+      "spawn_location": "character_bottom"
+    },
+    {
+      "id": "StatusEffectPoisonState.triggeredVFX",
+      "vfx_prefab_left": "FX_TriggerIcon_Triggered_PS",
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "StatusEffectPoisonState.persistentVFX",
+      "vfx_prefab_left": "FX_Frostbite_Persistent_PS",
+      "spawn_location": "character_top"
+    }
+  ]
 }

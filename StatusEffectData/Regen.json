@@ -1,76 +1,89 @@
 {
-  "statusId": "regen",
-  "nameKey": {
-    "key": "StatusEffect_Regen_CardText",
-    "english": "Regen",
-    "french": "Régénération",
-    "german": "Regeneration",
-    "russian": "Регенерация",
-    "portuguese": "Regeneração",
-    "chinese": "再生",
-    "spanish": "Regeneración",
-    "chinese_traditional": "再生",
-    "korean": "자가 치유",
-    "japanese": "再生"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Regen_Stack_CardText",
-    "english": "<nobr>Regen {0}</nobr>",
-    "french": "<nobr>Régénération {0}</nobr>",
-    "german": "<nobr>{0} Regeneration</nobr>",
-    "russian": "<nobr>Регенерация {0}</nobr>",
-    "portuguese": "<nobr>Regeneração {0}</nobr>",
-    "chinese": "<nobr>再生 {0}</nobr>",
-    "spanish": "<nobr>Regeneración {0}</nobr>",
-    "chinese_traditional": "<nobr>再生 {0}</nobr>",
-    "korean": "<nobr>자가 치유 {0}</nobr>",
-    "japanese": "<nobr>再生{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Regen_CardTooltipText",
-    "english": "Restores [codeint0] health per stack at the end of turn.<br>Decreases every turn.",
-    "french": "Restaure [codeint0] PV par cumul à la fin du tour.<br>Diminue à chaque tour.",
-    "german": "Stellt am Ende des Zuges [codeint0] Gesundheit pro Stapel wieder her.<br>Wird jeden Zug reduziert.",
-    "russian": "Восстанавливает [codeint0] здоровья за слой в конце хода.<br>Уменьшается каждый ход.",
-    "portuguese": "Restaura [codeint0] de vida por carga no fim do turno.<br>Diminui a cada turno.",
-    "chinese": "回合结束时，每有一层再生，恢复 [codeint0] 点生命值。<br>每回合不断减少。",
-    "spanish": "Recupera [codeint0] de salud por acumulación al final del turno.<br>Disminuye en cada turno.",
-    "chinese_traditional": "每層在回合結束時恢復[codeint0]點生命值。<br>每回合減少。",
-    "korean": "턴 종료 시마다 스택당 체력을 [codeint0]씩 회복합니다.<br>매 턴마다 감소합니다.",
-    "japanese": "ターン終了時に、1スタックにつき体力を[codeint0]回復する。<br>毎ターン減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Regen_CharacterTooltipText",
-    "english": "Restores [codeint0] health at the end of turn.<br>Decreases every turn.",
-    "french": "Restaure [codeint0] PV à la fin du tour.<br>Diminue à chaque tour.",
-    "german": "Stellt am Ende des Zuges [codeint0] Gesundheit wieder her.<br>Wird jeden Zug reduziert.",
-    "russian": "Восстанавливает [codeint0] здоровья в конце хода.<br>Уменьшается каждый ход.",
-    "portuguese": "Restaura [codeint0] de vida no fim do turno.<br>Diminui a cada turno.",
-    "chinese": "回合结束时，恢复 [codeint0] 点生命值。<br>每回合不断减少。",
-    "spanish": "Recupera [codeint0] de salud al final del turno.<br>Disminuye en cada turno.",
-    "chinese_traditional": "在回合結束時恢復[codeint0]點生命值。<br>每回合減少。",
-    "korean": "턴 종료 시 체력을 [codeint0]씩 회복합니다.<br>매 턴마다 감소합니다.",
-    "japanese": "ターン終了時に、体力を[codeint0]回復する。<br>毎ターン減少する。"
-  },
-  "statusEffectStateName": "StatusEffectRegenState",
-  "appliedSFXName": "Status_Regen",
-  "displayCategory": "positive",
-  "triggerStage": "on_post_combat_regen",
-  "removeStackAtEndOfTurn": true,
-  "isPropagatable": true,
-  "excludeHeroPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_RegenApplied_PS",
-    "spawnLocation": "character_center"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_RegenTriggered_PS",
-    "spawnLocation": "character_bottom"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_RegenPersistent_PS",
-    "spawnLocation": "character_center"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "regen",
+      "names": {
+        "key": "StatusEffect_Regen_CardText",
+        "english": "Regen",
+        "french": "Régénération",
+        "german": "Regeneration",
+        "russian": "Регенерация",
+        "portuguese": "Regeneração",
+        "chinese": "再生",
+        "spanish": "Regeneración",
+        "chinese_traditional": "再生",
+        "korean": "자가 치유",
+        "japanese": "再生"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Regen_Stack_CardText",
+        "english": "<nobr>Regen {0}</nobr>",
+        "french": "<nobr>Régénération {0}</nobr>",
+        "german": "<nobr>{0} Regeneration</nobr>",
+        "russian": "<nobr>Регенерация {0}</nobr>",
+        "portuguese": "<nobr>Regeneração {0}</nobr>",
+        "chinese": "<nobr>再生 {0}</nobr>",
+        "spanish": "<nobr>Regeneración {0}</nobr>",
+        "chinese_traditional": "<nobr>再生 {0}</nobr>",
+        "korean": "<nobr>자가 치유 {0}</nobr>",
+        "japanese": "<nobr>再生{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Regen_CardTooltipText",
+        "english": "Restores [codeint0] health per stack at the end of turn.<br>Decreases every turn.",
+        "french": "Restaure [codeint0] PV par cumul à la fin du tour.<br>Diminue à chaque tour.",
+        "german": "Stellt am Ende des Zuges [codeint0] Gesundheit pro Stapel wieder her.<br>Wird jeden Zug reduziert.",
+        "russian": "Восстанавливает [codeint0] здоровья за слой в конце хода.<br>Уменьшается каждый ход.",
+        "portuguese": "Restaura [codeint0] de vida por carga no fim do turno.<br>Diminui a cada turno.",
+        "chinese": "回合结束时，每有一层再生，恢复 [codeint0] 点生命值。<br>每回合不断减少。",
+        "spanish": "Recupera [codeint0] de salud por acumulación al final del turno.<br>Disminuye en cada turno.",
+        "chinese_traditional": "每層在回合結束時恢復[codeint0]點生命值。<br>每回合減少。",
+        "korean": "턴 종료 시마다 스택당 체력을 [codeint0]씩 회복합니다.<br>매 턴마다 감소합니다.",
+        "japanese": "ターン終了時に、1スタックにつき体力を[codeint0]回復する。<br>毎ターン減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Regen_CharacterTooltipText",
+        "english": "Restores [codeint0] health at the end of turn.<br>Decreases every turn.",
+        "french": "Restaure [codeint0] PV à la fin du tour.<br>Diminue à chaque tour.",
+        "german": "Stellt am Ende des Zuges [codeint0] Gesundheit wieder her.<br>Wird jeden Zug reduziert.",
+        "russian": "Восстанавливает [codeint0] здоровья в конце хода.<br>Уменьшается каждый ход.",
+        "portuguese": "Restaura [codeint0] de vida no fim do turno.<br>Diminui a cada turno.",
+        "chinese": "回合结束时，恢复 [codeint0] 点生命值。<br>每回合不断减少。",
+        "spanish": "Recupera [codeint0] de salud al final del turno.<br>Disminuye en cada turno.",
+        "chinese_traditional": "在回合結束時恢復[codeint0]點生命值。<br>每回合減少。",
+        "korean": "턴 종료 시 체력을 [codeint0]씩 회복합니다.<br>매 턴마다 감소합니다.",
+        "japanese": "ターン終了時に、体力を[codeint0]回復する。<br>毎ターン減少する。"
+      },
+      "class_name": "StatusEffectRegenState",
+      "applied_sfx": "Status_Regen",
+      "display_category": "positive",
+      "trigger_stage": "on_post_combat_regen",
+      "remove_stack_at_end_of_turn": true,
+      "is_propagatable": true,
+      "exclude_hero_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectRegenState.addedVFX",
+      "triggered_vfx": "@StatusEffectRegenState.triggeredVFX",
+      "persistent_vfx": "@StatusEffectRegenState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectRegenState.addedVFX",
+      "vfx_prefab_left": "FX_RegenApplied_PS",
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "StatusEffectRegenState.triggeredVFX",
+      "vfx_prefab_left": "FX_RegenTriggered_PS",
+      "spawn_location": "character_bottom"
+    },
+    {
+      "id": "StatusEffectRegenState.persistentVFX",
+      "vfx_prefab_left": "FX_RegenPersistent_PS",
+      "spawn_location": "character_center"
+    }
+  ]
 }

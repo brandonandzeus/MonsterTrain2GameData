@@ -1,14 +1,23 @@
 {
-  "statusId": "fixedattack",
-  "statusEffectStateName": "StatusEffectFixedAttackState",
-  "displayCategory": "persistent",
-  "triggerStage": "none",
-  "hidden": true,
-  "scalesInEndless": false,
-  "showStackCount": false,
-  "paramInt": 1,
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_Soulsmelter",
-    "spawnLocation": "bone_status_effect_slot1"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "fixedattack",
+      "class_name": "StatusEffectFixedAttackState",
+      "display_category": "persistent",
+      "trigger_stage": "none",
+      "hidden": true,
+      "scales_in_endless": false,
+      "show_stack_count": false,
+      "param_int": 1,
+      "persistent_vfx": "@StatusEffectFixedAttackState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectFixedAttackState.persistentVFX",
+      "vfx_prefab_left": "FX_Soulsmelter",
+      "spawn_location": "bone_status_effect_slot1"
+    }
+  ]
 }

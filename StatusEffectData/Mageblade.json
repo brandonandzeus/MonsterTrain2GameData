@@ -1,61 +1,66 @@
 {
-  "statusId": "mageblade",
-  "nameKey": {
-    "key": "StatusEffect_Mageblade_CardText",
-    "english": "Mageblade",
-    "french": "Magelame",
-    "german": "Zauberklinge",
-    "russian": "Магический клинок",
-    "portuguese": "Lâmina Mágica",
-    "chinese": "魔刃",
-    "spanish": "Filo mágico",
-    "chinese_traditional": "法師之刃",
-    "korean": "마법검",
-    "japanese": "魔術師の刃"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Mageblade_Stack_CardText",
-    "english": "<nobr>Mageblade {0}</nobr>",
-    "french": "<nobr>Magelame {0}</nobr>",
-    "german": "<nobr>Zauberklinge {0}</nobr>",
-    "russian": "<nobr>Магический клинок х{0}</nobr>",
-    "portuguese": "<nobr>Lâmina Mágica {0}</nobr>",
-    "chinese": "<nobr>魔刃 {0}</nobr>",
-    "spanish": "<nobr>Filo mágico {0}</nobr>",
-    "chinese_traditional": "<nobr>法師之刃{0}</nobr>",
-    "korean": "<nobr>마법검 {0}</nobr>",
-    "japanese": "<nobr>魔術師の刃{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Mageblade_CardTooltipText",
-    "english": "+[codeint0][attack] per stack for each [magicpower] on the floor.",
-    "french": "+[codeint0][attack] par cumul pour chaque [magicpower] à ce niveau.",
-    "german": "+[codeint0][attack] pro Stapel für jede [magicpower] auf der Ebene.",
-    "russian": "+[codeint0][attack] за каждый слой эффекта [magicpower] на этаже.",
-    "portuguese": "+[codeint0][attack] por carga para cada [magicpower] no andar.",
-    "chinese": "在本层时，每有一点 [magicpower]，获得 +[codeint0][attack]。",
-    "spanish": "+[codeint0][attack] por acumulación de cada [magicpower] que haya en el piso.",
-    "chinese_traditional": "樓層每有一個[magicpower]，每層+[codeint0][attack]。",
-    "korean": "해당 층에서 [magicpower]의 스택당 +[codeint0][attack]이 됩니다.",
-    "japanese": "フロア上の[magicpower]の1スタックにつき+[codeint0][attack]。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Mageblade_CharacterTooltipText",
-    "english": "+[codeint1][attack] per stack for each [magicpower] on the floor (+[codeint0][attack]).",
-    "french": "+[codeint1][attack] par cumul pour chaque [magicpower] à ce niveau (+[codeint0][attack]).",
-    "german": "+[codeint1][attack] pro Stapel für jede [magicpower] auf der Ebene (+[codeint0][attack]).",
-    "russian": "+[codeint1][attack] за каждый слой эффекта [magicpower] на этаже (+[codeint0][attack]).",
-    "portuguese": "+[codeint1][attack] por carga para cada [magicpower] no andar (+[codeint0][attack]).",
-    "chinese": "在本层时，每有一点 [magicpower]，获得 +[codeint1][attack]（+[codeint0][attack]）。",
-    "spanish": "+[codeint1][attack] por acumulación de cada [magicpower] que haya en el piso (+[codeint0][attack]).",
-    "chinese_traditional": "樓層每有一個[magicpower]，每層+[codeint1][attack]（+[codeint0][attack]）。",
-    "korean": "해당 층에서 [magicpower]의 스택당 +[codeint1][attack] ([attack] +[codeint0])이 됩니다.",
-    "japanese": "フロア上の[magicpower]の1スタックにつき+[codeint1][attack]（+[codeint0][attack]）。"
-  },
-  "statusEffectStateName": "StatusEffectMagebladeState",
-  "displayCategory": "persistent",
-  "triggerStage": "none",
-  "scalesInEndless": false,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "mageblade",
+      "names": {
+        "key": "StatusEffect_Mageblade_CardText",
+        "english": "Mageblade",
+        "french": "Magelame",
+        "german": "Zauberklinge",
+        "russian": "Магический клинок",
+        "portuguese": "Lâmina Mágica",
+        "chinese": "魔刃",
+        "spanish": "Filo mágico",
+        "chinese_traditional": "法師之刃",
+        "korean": "마법검",
+        "japanese": "魔術師の刃"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Mageblade_Stack_CardText",
+        "english": "<nobr>Mageblade {0}</nobr>",
+        "french": "<nobr>Magelame {0}</nobr>",
+        "german": "<nobr>Zauberklinge {0}</nobr>",
+        "russian": "<nobr>Магический клинок х{0}</nobr>",
+        "portuguese": "<nobr>Lâmina Mágica {0}</nobr>",
+        "chinese": "<nobr>魔刃 {0}</nobr>",
+        "spanish": "<nobr>Filo mágico {0}</nobr>",
+        "chinese_traditional": "<nobr>法師之刃{0}</nobr>",
+        "korean": "<nobr>마법검 {0}</nobr>",
+        "japanese": "<nobr>魔術師の刃{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Mageblade_CardTooltipText",
+        "english": "+[codeint0][attack] per stack for each [magicpower] on the floor.",
+        "french": "+[codeint0][attack] par cumul pour chaque [magicpower] à ce niveau.",
+        "german": "+[codeint0][attack] pro Stapel für jede [magicpower] auf der Ebene.",
+        "russian": "+[codeint0][attack] за каждый слой эффекта [magicpower] на этаже.",
+        "portuguese": "+[codeint0][attack] por carga para cada [magicpower] no andar.",
+        "chinese": "在本层时，每有一点 [magicpower]，获得 +[codeint0][attack]。",
+        "spanish": "+[codeint0][attack] por acumulación de cada [magicpower] que haya en el piso.",
+        "chinese_traditional": "樓層每有一個[magicpower]，每層+[codeint0][attack]。",
+        "korean": "해당 층에서 [magicpower]의 스택당 +[codeint0][attack]이 됩니다.",
+        "japanese": "フロア上の[magicpower]の1スタックにつき+[codeint0][attack]。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Mageblade_CharacterTooltipText",
+        "english": "+[codeint1][attack] per stack for each [magicpower] on the floor (+[codeint0][attack]).",
+        "french": "+[codeint1][attack] par cumul pour chaque [magicpower] à ce niveau (+[codeint0][attack]).",
+        "german": "+[codeint1][attack] pro Stapel für jede [magicpower] auf der Ebene (+[codeint0][attack]).",
+        "russian": "+[codeint1][attack] за каждый слой эффекта [magicpower] на этаже (+[codeint0][attack]).",
+        "portuguese": "+[codeint1][attack] por carga para cada [magicpower] no andar (+[codeint0][attack]).",
+        "chinese": "在本层时，每有一点 [magicpower]，获得 +[codeint1][attack]（+[codeint0][attack]）。",
+        "spanish": "+[codeint1][attack] por acumulación de cada [magicpower] que haya en el piso (+[codeint0][attack]).",
+        "chinese_traditional": "樓層每有一個[magicpower]，每層+[codeint1][attack]（+[codeint0][attack]）。",
+        "korean": "해당 층에서 [magicpower]의 스택당 +[codeint1][attack] ([attack] +[codeint0])이 됩니다.",
+        "japanese": "フロア上の[magicpower]の1スタックにつき+[codeint1][attack]（+[codeint0][attack]）。"
+      },
+      "class_name": "StatusEffectMagebladeState",
+      "display_category": "persistent",
+      "trigger_stage": "none",
+      "scales_in_endless": false,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true
+    }
+  ]
 }

@@ -1,70 +1,81 @@
 {
-  "statusId": "corrupt_poison",
-  "nameKey": {
-    "key": "StatusEffect_CorruptPoison_CardText",
-    "english": "Reap",
-    "french": "Fauchage",
-    "german": "Schnitter",
-    "russian": "Жнец",
-    "portuguese": "Ceifar",
-    "chinese": "晶爆",
-    "spanish": "Siega",
-    "chinese_traditional": "收割",
-    "korean": "수확",
-    "japanese": "刈り取り"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_CorruptPoison_Stack_CardText",
-    "english": "<nobr>Reap {0}</nobr>",
-    "french": "<nobr>Fauchage {0}</nobr>",
-    "german": "<nobr>{0} Schnitter</nobr>",
-    "russian": "<nobr>Жнец {0}</nobr>",
-    "portuguese": "<nobr>Ceifar{0}</nobr>",
-    "chinese": "<nobr>晶爆 {0}</nobr>",
-    "spanish": "<nobr>Siega {0}</nobr>",
-    "chinese_traditional": "<nobr>收割 {0}</nobr>",
-    "korean": "<nobr>수확 {0}</nobr>",
-    "japanese": "<nobr>刈り取り{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_CorruptPoison_CardTooltipText",
-    "english": "Unit takes 1 damage per stack of [corrupt] after combat ends.<br>Does not decrease.",
-    "french": "L'unité subit <nobr>1 DGT</nobr> par cumul de [corrupt] à la fin du combat.<br>Ne diminue pas.",
-    "german": "Nach dem Kampf erleidet die Einheit 1 Schaden pro [corrupt]-Stapel.<br>Wird nicht reduziert.",
-    "russian": "В конце боя боец получает 1 за каждый [corrupt].<br>Не уменьшается.",
-    "portuguese": "Unidades sofrem 1 de dano por carga de [corrupt] após o fim do combate.<br>Não diminui.",
-    "chinese": "战斗结束时，单位身上每层[corrupt]都会使其受到 1 点伤害。<br>不会降低。",
-    "spanish": "La unidad sufre 1 de daño por acumulación de [corrupt] después del combate.<br>No se reduce.",
-    "chinese_traditional": "單位在戰鬥結束後，每層[corrupt]受到1點傷害。<br>不會減少。",
-    "korean": "전투가 끝나면, [corrupt] 스택 하나당 유닛이 1의 피해를 받습니다.<br>이 수치는 감소하지 않습니다.",
-    "japanese": "戦闘終了後に、ユニットは[corrupt]のスタック1ごとに1のダメージを受ける。<br>減少しない。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_CorruptPoison_CharacterTooltipText",
-    "english": "Unit takes 1 damage per stack of [corrupt] after combat ends.<br>Does not decrease.<br>([codeint0] damage)",
-    "french": "L'unité subit <nobr>1 DGT</nobr> par cumul de [corrupt] à la fin du combat.<br>Ne diminue <nobr>pas.<br>([codeint0] DGT)</nobr>",
-    "german": "Nach dem Kampf erleidet die Einheit 1 Schaden pro [corrupt]-Stapel.<br>Wird nicht reduziert.<br>([codeint0] Schaden)",
-    "russian": "В конце боя боец получает 1 за каждый [corrupt].<br>Не уменьшается.<br>([codeint0] урона).",
-    "portuguese": "Unidades sofrem 1 de dano por carga de [corrupt] após o fim do combate.<br>Não diminui.<br>([codeint0] de dano)",
-    "chinese": "战斗结束时，单位身上每层[corrupt]都会使其受到 1 点伤害。<br>不会降低。<br>（[codeint0] 点伤害）",
-    "spanish": "La unidad sufre 1 de daño por acumulación de [corrupt] después del combate.<br>No se reduce.<br>([codeint0] de daño).",
-    "chinese_traditional": "單位在戰鬥結束後，每層[corrupt]受到1點傷害。<br>不會減少。<br>（[codeint0]點傷害）",
-    "korean": "전투가 끝나면, [corrupt] 스택 하나당 유닛이 1의 피해를 받습니다.<br>이 수치는 감소하지 않습니다.<br>([codeint0] 피해)",
-    "japanese": "戦闘終了後に、ユニットは[corrupt]のスタック1ごとに1のダメージを受ける。<br>減少しない。<br>（[codeint0]ダメージ）"
-  },
-  "statusEffectStateName": "StatusEffectCorruptPoisonState",
-  "displayCategory": "negative",
-  "triggerStage": "on_almost_post_room_combat",
-  "isPropagatable": true,
-  "excludeMonsterPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_ReapTriggered_PS",
-    "spawnLocation": "character_center"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_ReapPersistent_PS",
-    "spawnLocation": "character_center"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "corrupt_poison",
+      "names": {
+        "key": "StatusEffect_CorruptPoison_CardText",
+        "english": "Reap",
+        "french": "Fauchage",
+        "german": "Schnitter",
+        "russian": "Жнец",
+        "portuguese": "Ceifar",
+        "chinese": "晶爆",
+        "spanish": "Siega",
+        "chinese_traditional": "收割",
+        "korean": "수확",
+        "japanese": "刈り取り"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_CorruptPoison_Stack_CardText",
+        "english": "<nobr>Reap {0}</nobr>",
+        "french": "<nobr>Fauchage {0}</nobr>",
+        "german": "<nobr>{0} Schnitter</nobr>",
+        "russian": "<nobr>Жнец {0}</nobr>",
+        "portuguese": "<nobr>Ceifar{0}</nobr>",
+        "chinese": "<nobr>晶爆 {0}</nobr>",
+        "spanish": "<nobr>Siega {0}</nobr>",
+        "chinese_traditional": "<nobr>收割 {0}</nobr>",
+        "korean": "<nobr>수확 {0}</nobr>",
+        "japanese": "<nobr>刈り取り{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_CorruptPoison_CardTooltipText",
+        "english": "Unit takes 1 damage per stack of [corrupt] after combat ends.<br>Does not decrease.",
+        "french": "L'unité subit <nobr>1 DGT</nobr> par cumul de [corrupt] à la fin du combat.<br>Ne diminue pas.",
+        "german": "Nach dem Kampf erleidet die Einheit 1 Schaden pro [corrupt]-Stapel.<br>Wird nicht reduziert.",
+        "russian": "В конце боя боец получает 1 за каждый [corrupt].<br>Не уменьшается.",
+        "portuguese": "Unidades sofrem 1 de dano por carga de [corrupt] após o fim do combate.<br>Não diminui.",
+        "chinese": "战斗结束时，单位身上每层[corrupt]都会使其受到 1 点伤害。<br>不会降低。",
+        "spanish": "La unidad sufre 1 de daño por acumulación de [corrupt] después del combate.<br>No se reduce.",
+        "chinese_traditional": "單位在戰鬥結束後，每層[corrupt]受到1點傷害。<br>不會減少。",
+        "korean": "전투가 끝나면, [corrupt] 스택 하나당 유닛이 1의 피해를 받습니다.<br>이 수치는 감소하지 않습니다.",
+        "japanese": "戦闘終了後に、ユニットは[corrupt]のスタック1ごとに1のダメージを受ける。<br>減少しない。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_CorruptPoison_CharacterTooltipText",
+        "english": "Unit takes 1 damage per stack of [corrupt] after combat ends.<br>Does not decrease.<br>([codeint0] damage)",
+        "french": "L'unité subit <nobr>1 DGT</nobr> par cumul de [corrupt] à la fin du combat.<br>Ne diminue <nobr>pas.<br>([codeint0] DGT)</nobr>",
+        "german": "Nach dem Kampf erleidet die Einheit 1 Schaden pro [corrupt]-Stapel.<br>Wird nicht reduziert.<br>([codeint0] Schaden)",
+        "russian": "В конце боя боец получает 1 за каждый [corrupt].<br>Не уменьшается.<br>([codeint0] урона).",
+        "portuguese": "Unidades sofrem 1 de dano por carga de [corrupt] após o fim do combate.<br>Não diminui.<br>([codeint0] de dano)",
+        "chinese": "战斗结束时，单位身上每层[corrupt]都会使其受到 1 点伤害。<br>不会降低。<br>（[codeint0] 点伤害）",
+        "spanish": "La unidad sufre 1 de daño por acumulación de [corrupt] después del combate.<br>No se reduce.<br>([codeint0] de daño).",
+        "chinese_traditional": "單位在戰鬥結束後，每層[corrupt]受到1點傷害。<br>不會減少。<br>（[codeint0]點傷害）",
+        "korean": "전투가 끝나면, [corrupt] 스택 하나당 유닛이 1의 피해를 받습니다.<br>이 수치는 감소하지 않습니다.<br>([codeint0] 피해)",
+        "japanese": "戦闘終了後に、ユニットは[corrupt]のスタック1ごとに1のダメージを受ける。<br>減少しない。<br>（[codeint0]ダメージ）"
+      },
+      "class_name": "StatusEffectCorruptPoisonState",
+      "display_category": "negative",
+      "trigger_stage": "on_almost_post_room_combat",
+      "is_propagatable": true,
+      "exclude_monster_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "triggered_vfx": "@StatusEffectCorruptPoisonState.triggeredVFX",
+      "persistent_vfx": "@StatusEffectCorruptPoisonState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectCorruptPoisonState.triggeredVFX",
+      "vfx_prefab_left": "FX_ReapTriggered_PS",
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "StatusEffectCorruptPoisonState.persistentVFX",
+      "vfx_prefab_left": "FX_ReapPersistent_PS",
+      "spawn_location": "character_center"
+    }
+  ]
 }

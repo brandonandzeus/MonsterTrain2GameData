@@ -1,87 +1,100 @@
 {
-  "statusId": "dazed",
-  "nameKey": {
-    "key": "StatusEffect_Dazed_CardText",
-    "english": "Dazed",
-    "french": "Étourdi",
-    "german": "Schwindel",
-    "russian": "Ошеломление",
-    "portuguese": "Atordoado",
-    "chinese": "眩晕",
-    "spanish": "Aturdimiento",
-    "chinese_traditional": "暈眩",
-    "korean": "기절",
-    "japanese": "放心"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Dazed_Stack_CardText",
-    "english": "<nobr>Dazed {0}</nobr>",
-    "french": "<nobr>Étourdi {0}</nobr>",
-    "german": "<nobr>{0} Schwindel</nobr>",
-    "russian": "<nobr>Ошеломление {0}</nobr>",
-    "portuguese": "<nobr>Atordoado {0}</nobr>",
-    "chinese": "<nobr>眩晕 {0}</nobr>",
-    "spanish": "<nobr>Aturdimiento {0}</nobr>",
-    "chinese_traditional": "<nobr>暈眩 {0}</nobr>",
-    "korean": "<nobr>기절 {0}</nobr>",
-    "japanese": "<nobr>放心{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Dazed_CardTooltipText",
-    "english": "As long as a unit is [dazed], it can't attack or use any <b>Action</b> or <b>Resolve</b> abilities.<br>Decreases every turn.",
-    "french": "Tant qu'une unité est <b>Étourdie</b>, elle ne peut ni attaquer ni utiliser ses capacités de <b>Résolution</b> ou d'<b>Action</b>. <br>Diminue à chaque tour.",
-    "german": "Solange eine Einheit [dazed] hat, kann sie nicht angreifen und weder <b>Aktion</b>- noch <b>Verrechnen</b>-Fähigkeiten verwenden.<br>Wird jeden Zug reduziert.",
-    "russian": "[dazed] не позволяет бойцу атаковать или использовать умения <b>действия</b> или <b>решимости</b>.<br>Уменьшается каждый ход.",
-    "portuguese": "Enquanto uma unidade está <b>Atordoada</b>, ela não pode atacar nem usar habilidades de <b>Ação</b> ou de <b>Resolução</b>.<br>Diminui a cada turno.",
-    "chinese": "被[dazed]的单位无法攻击，无法采取任何<b>行动</b>，也无法使用<b>结算</b>技能。<br>每回合不断减少。",
-    "spanish": "Mientras una unidad tenga [dazed], no podrá atacar ni usar ninguna habilidad de <b>Acción</b> o <b>Resolución</b>.<br>Disminuye en cada turno.",
-    "chinese_traditional": "只要單位處於[dazed]狀態，該單位就不能攻擊或使用任何<b>行動</b>或<b>決心</b>能力。<br>每回合遞減。",
-    "korean": "[dazed] 상태인 유닛은 공격하거나 <b>행동 개시</b>, <b>분석</b> 능력을 사용할 수 없습니다.<br>매 턴마다 감소합니다.",
-    "japanese": "ユニットが[dazed]していると、攻撃、<b>アクション</b>の使用、<b>決意</b>アビリティの使用ができない。<br>毎ターン減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Dazed_CharacterTooltipText",
-    "english": "Can't attack or use any <b>Action</b> or <b>Resolve</b> abilities for the next [codeint0] turns.",
-    "french": "Incapable d'attaquer ou d'utiliser les capacités d'<b>Action</b> ou de <b>Résolution</b> pour les [codeint0] prochains tours.",
-    "german": "Kann für die nächsten [codeint0] Züge nicht angreifen und weder <b>Aktion</b>- noch <b>Verrechnen</b>-Fähigkeiten verwenden.",
-    "russian": "Ходов до атаки и использования умений <b>действия</b> или <b>решимости</b>: [codeint0].",
-    "portuguese": "Não pode atacar nem usar nenhuma habilidade de <b>Ação</b> ou de <b>Resolução</b> nos próximos [codeint0] turnos.",
-    "chinese": "在接下来的 [codeint0] 个回合内无法攻击，无法采取任何<b>行动</b>，也无法触发<b>结算</b>能力。",
-    "spanish": "No puede atacar ni usar ninguna habilidad de <b>Acción</b> o <b>Resolución</b> durante los próximos [codeint0] turnos.",
-    "chinese_traditional": "在接下來的[codeint0]回合不能攻擊或使用任何<b>行動</b>或<b>決心</b>能力。",
-    "korean": "다음 [codeint0]턴 동안 공격하거나 <b>행동 개시</b>, <b>분석</b> 능력을 사용할 수 없습니다.",
-    "japanese": "[codeint0]ターンの間、攻撃、<b>アクション</b>の使用、<b>決意</b>アビリティの使用ができない。"
-  },
-  "notificationKey": {
-    "key": "StatusEffect_Dazed_NotificationText",
-    "english": "Dazed",
-    "french": "Étourdi",
-    "german": "Schwindel",
-    "russian": "Ошеломление",
-    "portuguese": "Atordoado",
-    "chinese": "眩晕",
-    "spanish": "Aturdimiento",
-    "chinese_traditional": "暈眩",
-    "korean": "기절",
-    "japanese": "放心"
-  },
-  "statusEffectStateName": "StatusEffectDazedState",
-  "appliedSFXName": "Status_Dazed",
-  "displayCategory": "negative",
-  "triggerStage": "on_combat_turn_dazed",
-  "removeStackAtEndOfTurn": true,
-  "scalesInEndless": false,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_Dazed_Applied_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_Dazed_Triggered_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_Dazed_Persistent_PS",
-    "spawnLocation": "bone_status_effect_slot1"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "dazed",
+      "names": {
+        "key": "StatusEffect_Dazed_CardText",
+        "english": "Dazed",
+        "french": "Étourdi",
+        "german": "Schwindel",
+        "russian": "Ошеломление",
+        "portuguese": "Atordoado",
+        "chinese": "眩晕",
+        "spanish": "Aturdimiento",
+        "chinese_traditional": "暈眩",
+        "korean": "기절",
+        "japanese": "放心"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Dazed_Stack_CardText",
+        "english": "<nobr>Dazed {0}</nobr>",
+        "french": "<nobr>Étourdi {0}</nobr>",
+        "german": "<nobr>{0} Schwindel</nobr>",
+        "russian": "<nobr>Ошеломление {0}</nobr>",
+        "portuguese": "<nobr>Atordoado {0}</nobr>",
+        "chinese": "<nobr>眩晕 {0}</nobr>",
+        "spanish": "<nobr>Aturdimiento {0}</nobr>",
+        "chinese_traditional": "<nobr>暈眩 {0}</nobr>",
+        "korean": "<nobr>기절 {0}</nobr>",
+        "japanese": "<nobr>放心{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Dazed_CardTooltipText",
+        "english": "As long as a unit is [dazed], it can't attack or use any <b>Action</b> or <b>Resolve</b> abilities.<br>Decreases every turn.",
+        "french": "Tant qu'une unité est <b>Étourdie</b>, elle ne peut ni attaquer ni utiliser ses capacités de <b>Résolution</b> ou d'<b>Action</b>. <br>Diminue à chaque tour.",
+        "german": "Solange eine Einheit [dazed] hat, kann sie nicht angreifen und weder <b>Aktion</b>- noch <b>Verrechnen</b>-Fähigkeiten verwenden.<br>Wird jeden Zug reduziert.",
+        "russian": "[dazed] не позволяет бойцу атаковать или использовать умения <b>действия</b> или <b>решимости</b>.<br>Уменьшается каждый ход.",
+        "portuguese": "Enquanto uma unidade está <b>Atordoada</b>, ela não pode atacar nem usar habilidades de <b>Ação</b> ou de <b>Resolução</b>.<br>Diminui a cada turno.",
+        "chinese": "被[dazed]的单位无法攻击，无法采取任何<b>行动</b>，也无法使用<b>结算</b>技能。<br>每回合不断减少。",
+        "spanish": "Mientras una unidad tenga [dazed], no podrá atacar ni usar ninguna habilidad de <b>Acción</b> o <b>Resolución</b>.<br>Disminuye en cada turno.",
+        "chinese_traditional": "只要單位處於[dazed]狀態，該單位就不能攻擊或使用任何<b>行動</b>或<b>決心</b>能力。<br>每回合遞減。",
+        "korean": "[dazed] 상태인 유닛은 공격하거나 <b>행동 개시</b>, <b>분석</b> 능력을 사용할 수 없습니다.<br>매 턴마다 감소합니다.",
+        "japanese": "ユニットが[dazed]していると、攻撃、<b>アクション</b>の使用、<b>決意</b>アビリティの使用ができない。<br>毎ターン減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Dazed_CharacterTooltipText",
+        "english": "Can't attack or use any <b>Action</b> or <b>Resolve</b> abilities for the next [codeint0] turns.",
+        "french": "Incapable d'attaquer ou d'utiliser les capacités d'<b>Action</b> ou de <b>Résolution</b> pour les [codeint0] prochains tours.",
+        "german": "Kann für die nächsten [codeint0] Züge nicht angreifen und weder <b>Aktion</b>- noch <b>Verrechnen</b>-Fähigkeiten verwenden.",
+        "russian": "Ходов до атаки и использования умений <b>действия</b> или <b>решимости</b>: [codeint0].",
+        "portuguese": "Não pode atacar nem usar nenhuma habilidade de <b>Ação</b> ou de <b>Resolução</b> nos próximos [codeint0] turnos.",
+        "chinese": "在接下来的 [codeint0] 个回合内无法攻击，无法采取任何<b>行动</b>，也无法触发<b>结算</b>能力。",
+        "spanish": "No puede atacar ni usar ninguna habilidad de <b>Acción</b> o <b>Resolución</b> durante los próximos [codeint0] turnos.",
+        "chinese_traditional": "在接下來的[codeint0]回合不能攻擊或使用任何<b>行動</b>或<b>決心</b>能力。",
+        "korean": "다음 [codeint0]턴 동안 공격하거나 <b>행동 개시</b>, <b>분석</b> 능력을 사용할 수 없습니다.",
+        "japanese": "[codeint0]ターンの間、攻撃、<b>アクション</b>の使用、<b>決意</b>アビリティの使用ができない。"
+      },
+      "notifications": {
+        "key": "StatusEffect_Dazed_NotificationText",
+        "english": "Dazed",
+        "french": "Étourdi",
+        "german": "Schwindel",
+        "russian": "Ошеломление",
+        "portuguese": "Atordoado",
+        "chinese": "眩晕",
+        "spanish": "Aturdimiento",
+        "chinese_traditional": "暈眩",
+        "korean": "기절",
+        "japanese": "放心"
+      },
+      "class_name": "StatusEffectDazedState",
+      "applied_sfx": "Status_Dazed",
+      "display_category": "negative",
+      "trigger_stage": "on_combat_turn_dazed",
+      "remove_stack_at_end_of_turn": true,
+      "scales_in_endless": false,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectDazedState.addedVFX",
+      "triggered_vfx": "@StatusEffectDazedState.triggeredVFX",
+      "persistent_vfx": "@StatusEffectDazedState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectDazedState.addedVFX",
+      "vfx_prefab_left": "FX_Dazed_Applied_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    },
+    {
+      "id": "StatusEffectDazedState.triggeredVFX",
+      "vfx_prefab_left": "FX_Dazed_Triggered_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    },
+    {
+      "id": "StatusEffectDazedState.persistentVFX",
+      "vfx_prefab_left": "FX_Dazed_Persistent_PS",
+      "spawn_location": "bone_status_effect_slot1"
+    }
+  ]
 }

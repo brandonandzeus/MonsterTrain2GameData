@@ -1,72 +1,83 @@
 {
-  "statusId": "debuff",
-  "nameKey": {
-    "key": "StatusEffect_Debuff_CardText",
-    "english": "Sap",
-    "french": "Affaiblissement",
-    "german": "Zehren",
-    "russian": "Сок",
-    "portuguese": "Dreno",
-    "chinese": "弱化",
-    "spanish": "Marchitar",
-    "chinese_traditional": "弱化",
-    "korean": "수액",
-    "japanese": "衰弱"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Debuff_Stack_CardText",
-    "english": "<nobr>Sap {0}</nobr>",
-    "french": "<nobr>Affaiblissement {0}</nobr>",
-    "german": "<nobr>{0} Zehren</nobr>",
-    "russian": "<nobr>Сок {0}</nobr>",
-    "portuguese": "<nobr>Dreno {0}</nobr>",
-    "chinese": "<nobr>弱化 {0}</nobr>",
-    "spanish": "<nobr>Marchitar {0}</nobr>",
-    "chinese_traditional": "<nobr>弱化 {0}</nobr>",
-    "korean": "<nobr>수액 {0}</nobr>",
-    "japanese": "<nobr>衰弱{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Debuff_CardTooltipText",
-    "english": "-[codeint0][attack] per stack.<br>Decreases every turn.",
-    "french": "-[codeint0][attack] par cumul.<br>Diminue à chaque tour.",
-    "german": "-[codeint0][attack] pro Stapel.<br>Wird jeden Zug reduziert.",
-    "russian": "-[codeint0][attack] за слой.<br>Уменьшается каждый ход.",
-    "portuguese": "-[codeint0][attack] por carga.<br>Diminui a cada turno.",
-    "chinese": "每层 -[codeint0][attack]。<br>每回合不断减少。",
-    "spanish": "-[codeint0][attack] por acumulación.<br>Disminuye en cada turno.",
-    "chinese_traditional": "每層-[codeint0][attack]。<br>每回合減少。",
-    "korean": "스택당 -[codeint0][attack].<br>매 턴마다 감소합니다.",
-    "japanese": "1スタックにつき-[codeint0][attack]。<br>毎ターン減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Debuff_CharacterTooltipText",
-    "english": "-[codeint0][attack] (-[codeint1][attack] per stack).<br>Decreases every turn.",
-    "french": "-[codeint0][attack] (-[codeint1][attack] par cumul).<br>Diminue à chaque tour.",
-    "german": "-[codeint0][attack] (-[codeint1][attack] pro Stapel).<br>Wird jeden Zug reduziert.",
-    "russian": "-[codeint0][attack] (-[codeint1][attack] за слой).<br>Уменьшается каждый ход.",
-    "portuguese": "-[codeint0][attack] (-[codeint1][attack] por carga).<br>Diminui a cada turno.",
-    "chinese": "-[codeint0][attack]（每层 -[codeint1][attack]）。<br>每回合不断减少。",
-    "spanish": "-[codeint0][attack] (-[codeint1][attack] por acumulación).<br>Disminuye en cada turno.",
-    "chinese_traditional": "-[codeint0][attack]（每層-[codeint1][attack]）。<br>每回合減少。",
-    "korean": "-[codeint0][attack] (스택당 -[codeint1][attack]).<br>매 턴마다 감소합니다.",
-    "japanese": "-[codeint0][attack]（1スタックにつき-[codeint1][attack]）。<br>毎ターン減少する。"
-  },
-  "statusEffectStateName": "StatusEffectDebuffState",
-  "appliedSFXName": "Status_Sap",
-  "displayCategory": "negative",
-  "triggerStage": "none",
-  "removeStackAtEndOfTurn": true,
-  "isPropagatable": true,
-  "excludeMonsterPropagation": true,
-  "paramInt": 2,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_NewSapApplied",
-    "spawnLocation": "bone_status_effect_slot3"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_NewSap",
-    "spawnLocation": "bone_status_effect_slot3"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "debuff",
+      "names": {
+        "key": "StatusEffect_Debuff_CardText",
+        "english": "Sap",
+        "french": "Affaiblissement",
+        "german": "Zehren",
+        "russian": "Сок",
+        "portuguese": "Dreno",
+        "chinese": "弱化",
+        "spanish": "Marchitar",
+        "chinese_traditional": "弱化",
+        "korean": "수액",
+        "japanese": "衰弱"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Debuff_Stack_CardText",
+        "english": "<nobr>Sap {0}</nobr>",
+        "french": "<nobr>Affaiblissement {0}</nobr>",
+        "german": "<nobr>{0} Zehren</nobr>",
+        "russian": "<nobr>Сок {0}</nobr>",
+        "portuguese": "<nobr>Dreno {0}</nobr>",
+        "chinese": "<nobr>弱化 {0}</nobr>",
+        "spanish": "<nobr>Marchitar {0}</nobr>",
+        "chinese_traditional": "<nobr>弱化 {0}</nobr>",
+        "korean": "<nobr>수액 {0}</nobr>",
+        "japanese": "<nobr>衰弱{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Debuff_CardTooltipText",
+        "english": "-[codeint0][attack] per stack.<br>Decreases every turn.",
+        "french": "-[codeint0][attack] par cumul.<br>Diminue à chaque tour.",
+        "german": "-[codeint0][attack] pro Stapel.<br>Wird jeden Zug reduziert.",
+        "russian": "-[codeint0][attack] за слой.<br>Уменьшается каждый ход.",
+        "portuguese": "-[codeint0][attack] por carga.<br>Diminui a cada turno.",
+        "chinese": "每层 -[codeint0][attack]。<br>每回合不断减少。",
+        "spanish": "-[codeint0][attack] por acumulación.<br>Disminuye en cada turno.",
+        "chinese_traditional": "每層-[codeint0][attack]。<br>每回合減少。",
+        "korean": "스택당 -[codeint0][attack].<br>매 턴마다 감소합니다.",
+        "japanese": "1スタックにつき-[codeint0][attack]。<br>毎ターン減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Debuff_CharacterTooltipText",
+        "english": "-[codeint0][attack] (-[codeint1][attack] per stack).<br>Decreases every turn.",
+        "french": "-[codeint0][attack] (-[codeint1][attack] par cumul).<br>Diminue à chaque tour.",
+        "german": "-[codeint0][attack] (-[codeint1][attack] pro Stapel).<br>Wird jeden Zug reduziert.",
+        "russian": "-[codeint0][attack] (-[codeint1][attack] за слой).<br>Уменьшается каждый ход.",
+        "portuguese": "-[codeint0][attack] (-[codeint1][attack] por carga).<br>Diminui a cada turno.",
+        "chinese": "-[codeint0][attack]（每层 -[codeint1][attack]）。<br>每回合不断减少。",
+        "spanish": "-[codeint0][attack] (-[codeint1][attack] por acumulación).<br>Disminuye en cada turno.",
+        "chinese_traditional": "-[codeint0][attack]（每層-[codeint1][attack]）。<br>每回合減少。",
+        "korean": "-[codeint0][attack] (스택당 -[codeint1][attack]).<br>매 턴마다 감소합니다.",
+        "japanese": "-[codeint0][attack]（1スタックにつき-[codeint1][attack]）。<br>毎ターン減少する。"
+      },
+      "class_name": "StatusEffectDebuffState",
+      "applied_sfx": "Status_Sap",
+      "display_category": "negative",
+      "trigger_stage": "none",
+      "remove_stack_at_end_of_turn": true,
+      "is_propagatable": true,
+      "exclude_monster_propagation": true,
+      "param_int": 2,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectDebuffState.addedVFX",
+      "persistent_vfx": "@StatusEffectDebuffState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectDebuffState.addedVFX",
+      "vfx_prefab_left": "FX_NewSapApplied",
+      "spawn_location": "bone_status_effect_slot3"
+    },
+    {
+      "id": "StatusEffectDebuffState.persistentVFX",
+      "vfx_prefab_left": "FX_NewSap",
+      "spawn_location": "bone_status_effect_slot3"
+    }
+  ]
 }

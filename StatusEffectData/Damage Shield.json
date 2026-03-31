@@ -1,71 +1,80 @@
 {
-  "statusId": "damage shield",
-  "nameKey": {
-    "key": "StatusEffect_DamageShield_CardText",
-    "english": "Damage Shield",
-    "french": "Bouclier protecteur",
-    "german": "Schadensschild",
-    "russian": "Защита от урона",
-    "portuguese": "Escudo Protetor",
-    "chinese": "伤害护盾",
-    "spanish": "Escudo de daño",
-    "chinese_traditional": "傷害護盾",
-    "korean": "피해 방어",
-    "japanese": "ダメージシールド"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_DamageShield_Stack_CardText",
-    "english": "<nobr>Damage Shield {0}</nobr>",
-    "french": "<nobr>Bouclier protecteur {0}</nobr>",
-    "german": "<nobr>{0} Schadensschild</nobr>",
-    "russian": "<nobr>Защита от урона {0}</nobr>",
-    "portuguese": "<nobr>Escudo Protetor {0}</nobr>",
-    "chinese": "<nobr>伤害护盾 {0}</nobr>",
-    "spanish": "<nobr>Escudo de daño {0}</nobr>",
-    "chinese_traditional": "<nobr>傷害護盾 {0}</nobr>",
-    "korean": "<nobr>피해 방어 {0}</nobr>",
-    "japanese": "<nobr>ダメージシールド{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_DamageShield_CardTooltipText",
-    "english": "Nullify the next source of damage.",
-    "french": "Annule la prochaine source de dégâts.",
-    "german": "Neutralisiere die nächste Schadensquelle.",
-    "russian": "Отменяет следующую попытку нанесения урона.",
-    "portuguese": "Anule o próximo dano tomado.",
-    "chinese": "免疫接下来的一次伤害。",
-    "spanish": "Anula la siguiente fuente de daño.",
-    "chinese_traditional": "抵銷下一次傷害來源。",
-    "korean": "다음 공격 피해를 무효화합니다.",
-    "japanese": "次の被ダメージを無効化する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_DamageShield_CharacterTooltipText",
-    "english": "Nullify the next source of damage.",
-    "french": "Annule la prochaine source de dégâts.",
-    "german": "Neutralisiere die nächste Schadensquelle.",
-    "russian": "Отменяет следующую попытку нанесения урона.",
-    "portuguese": "Anule o próximo dano tomado.",
-    "chinese": "免疫接下来的一次伤害。",
-    "spanish": "Anula la siguiente fuente de daño.",
-    "chinese_traditional": "抵銷下一次傷害來源。",
-    "korean": "다음 공격 피해를 무효화합니다.",
-    "japanese": "次の被ダメージを無効化する。"
-  },
-  "statusEffectStateName": "StatusEffectDamageShieldState",
-  "appliedSFXName": "Status_DamageShield",
-  "displayCategory": "positive",
-  "triggerStage": "on_pre_attacked_damage_shield",
-  "removeWhenTriggered": true,
-  "removeDuringDeployment": true,
-  "isPropagatable": true,
-  "excludeHeroPropagation": true,
-  "showOnPyreHeart": true,
-  "allowSecondaryTooltipPlacement": true,
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_DamageShieldNewFriendly",
-    "vfxPrefabRight": "FX_DamageShieldNewEnemy",
-    "spawnLocation": "character_side_fwd_center",
-    "facing": "forward"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "damage shield",
+      "names": {
+        "key": "StatusEffect_DamageShield_CardText",
+        "english": "Damage Shield",
+        "french": "Bouclier protecteur",
+        "german": "Schadensschild",
+        "russian": "Защита от урона",
+        "portuguese": "Escudo Protetor",
+        "chinese": "伤害护盾",
+        "spanish": "Escudo de daño",
+        "chinese_traditional": "傷害護盾",
+        "korean": "피해 방어",
+        "japanese": "ダメージシールド"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_DamageShield_Stack_CardText",
+        "english": "<nobr>Damage Shield {0}</nobr>",
+        "french": "<nobr>Bouclier protecteur {0}</nobr>",
+        "german": "<nobr>{0} Schadensschild</nobr>",
+        "russian": "<nobr>Защита от урона {0}</nobr>",
+        "portuguese": "<nobr>Escudo Protetor {0}</nobr>",
+        "chinese": "<nobr>伤害护盾 {0}</nobr>",
+        "spanish": "<nobr>Escudo de daño {0}</nobr>",
+        "chinese_traditional": "<nobr>傷害護盾 {0}</nobr>",
+        "korean": "<nobr>피해 방어 {0}</nobr>",
+        "japanese": "<nobr>ダメージシールド{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_DamageShield_CardTooltipText",
+        "english": "Nullify the next source of damage.",
+        "french": "Annule la prochaine source de dégâts.",
+        "german": "Neutralisiere die nächste Schadensquelle.",
+        "russian": "Отменяет следующую попытку нанесения урона.",
+        "portuguese": "Anule o próximo dano tomado.",
+        "chinese": "免疫接下来的一次伤害。",
+        "spanish": "Anula la siguiente fuente de daño.",
+        "chinese_traditional": "抵銷下一次傷害來源。",
+        "korean": "다음 공격 피해를 무효화합니다.",
+        "japanese": "次の被ダメージを無効化する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_DamageShield_CharacterTooltipText",
+        "english": "Nullify the next source of damage.",
+        "french": "Annule la prochaine source de dégâts.",
+        "german": "Neutralisiere die nächste Schadensquelle.",
+        "russian": "Отменяет следующую попытку нанесения урона.",
+        "portuguese": "Anule o próximo dano tomado.",
+        "chinese": "免疫接下来的一次伤害。",
+        "spanish": "Anula la siguiente fuente de daño.",
+        "chinese_traditional": "抵銷下一次傷害來源。",
+        "korean": "다음 공격 피해를 무효화합니다.",
+        "japanese": "次の被ダメージを無効化する。"
+      },
+      "class_name": "StatusEffectDamageShieldState",
+      "applied_sfx": "Status_DamageShield",
+      "display_category": "positive",
+      "trigger_stage": "on_pre_attacked_damage_shield",
+      "remove_when_triggered": true,
+      "remove_during_deployment": true,
+      "is_propagatable": true,
+      "exclude_hero_propagation": true,
+      "show_on_pyre_heart": true,
+      "allow_secondary_tooltip_placement": true,
+      "persistent_vfx": "@StatusEffectDamageShieldState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectDamageShieldState.persistentVFX",
+      "vfx_prefab_left": "FX_DamageShieldNewFriendly",
+      "vfx_prefab_right": "FX_DamageShieldNewEnemy",
+      "spawn_location": "character_side_fwd_center",
+      "facing": "forward"
+    }
+  ]
 }

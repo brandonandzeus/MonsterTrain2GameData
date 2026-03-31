@@ -1,79 +1,89 @@
 {
-  "statusId": "corruption",
-  "nameKey": {
-    "key": "StatusEffect_Corruption_CardText",
-    "english": "Corruption",
-    "french": "Corruption",
-    "german": "Verderbnis",
-    "russian": "Скверна",
-    "portuguese": "Corrupção",
-    "chinese": "腐化",
-    "spanish": "Corrupción",
-    "chinese_traditional": "腐化",
-    "korean": "타락",
-    "japanese": "堕落"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Corruption_Stack_CardText",
-    "english": "<nobr>Corruption {0}</nobr>",
-    "french": "<nobr>Corruption {0}</nobr>",
-    "german": "<nobr>Verderbnis {0}</nobr>",
-    "russian": "<nobr>Скверна х{0}</nobr>",
-    "portuguese": "<nobr>Corrupção {0}</nobr>",
-    "chinese": "<nobr>腐化 {0}</nobr>",
-    "spanish": "<nobr>Corrupción {0}</nobr>",
-    "chinese_traditional": "<nobr>腐化 {0}</nobr>",
-    "korean": "<nobr>타락 {0}</nobr>",
-    "japanese": "<nobr>堕落{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Corruption_CardTooltipText",
-    "english": "Unit takes 1 damage per stack at the end of turn.<br>Stacks remain across turns.",
-    "french": "L'unité subit <nobr>1 dégât</nobr> par cumul à la fin du tour.<br>Les cumuls restent d'un tour sur l'autre.",
-    "german": "Die Einheit erleidet am Ende des Zuges 1 Schaden pro Stapel.<br>Stapel bleibt bestehen.",
-    "russian": "Получает 1 урона за слой в конце хода.<br>Слои сохраняются между ходами.",
-    "portuguese": "A unidade sofre 1 de dano por carga no fim do turno.<br>As cargas permanecem entre os turnos.",
-    "chinese": "回合结束时，每层腐化使单位受到 1 点伤害。<br>层数会跨回合保留。",
-    "spanish": "La unidad recibe 1 punto de daño por acumulación al final del turno.<br>Las acumulaciones se mantienen de un turno a otro.",
-    "chinese_traditional": "在回合結束時，每層使單位受到1點傷害。<br>層數在回合之間保持。",
-    "korean": "턴 종료 시 유닛이 스택당 1의 피해를 입습니다.<br>턴이 지나도 스택은 사라지지 않습니다.",
-    "japanese": "ターン終了時に、ユニットが1スタックにつき1のダメージを受ける。<br>ターンが移行してもスタックは維持される。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Corruption_CharacterTooltipText",
-    "english": "Takes [codeint0] damage at the end of turn.<br>Stacks remain across turns.",
-    "french": "Subit [codeint0] dégât à la fin du tour.<br>Les cumuls restent d'un tour sur l'autre.",
-    "german": "Erleidet am Ende des Zuges [codeint0] Schaden.<br>Stapel bleiben bestehen.",
-    "russian": "Получает [codeint0] урона за слой в конце хода.<br>Слои сохраняются между ходами.",
-    "portuguese": "Sofre [codeint0] dano no fim do turno.<br>As cargas permanecem entre os turnos.",
-    "chinese": "回合结束时受到 [codeint0] 点伤害。<br>层数会跨回合保留。",
-    "spanish": "Recibe [codeint0] de daño al final del turno.<br>Las acumulaciones se mantienen de un turno a otro.",
-    "chinese_traditional": "在回合結束時受到[codeint0]點傷害。<br>層數在回合之間保持。",
-    "korean": "턴 종료 시 [codeint0]의 피해를 입습니다.<br>턴이 지나도 스택은 사라지지 않습니다.",
-    "japanese": "ターン終了時に[codeint0]のダメージを受ける。<br>ターンが移行してもスタックは維持される。"
-  },
-  "statusEffectStateName": "StatusEffectCorruptionState",
-  "affectedVFX": {
-    "vfxPrefabLeft": "FX_CorruptionProc",
-    "spawnLocation": "character_center"
-  },
-  "appliedSFXName": "Status_Frostbite",
-  "displayCategory": "negative",
-  "triggerStage": "on_post_combat_poison",
-  "isPropagatable": true,
-  "excludeMonsterPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_CorruptionProc",
-    "spawnLocation": "bone_status_effect_slot3"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_CorruptionProc",
-    "spawnLocation": "character_center"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_CorruptionPersistant",
-    "spawnLocation": "bone_status_effect_slot3"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "corruption",
+      "names": {
+        "key": "StatusEffect_Corruption_CardText",
+        "english": "Corruption",
+        "french": "Corruption",
+        "german": "Verderbnis",
+        "russian": "Скверна",
+        "portuguese": "Corrupção",
+        "chinese": "腐化",
+        "spanish": "Corrupción",
+        "chinese_traditional": "腐化",
+        "korean": "타락",
+        "japanese": "堕落"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Corruption_Stack_CardText",
+        "english": "<nobr>Corruption {0}</nobr>",
+        "french": "<nobr>Corruption {0}</nobr>",
+        "german": "<nobr>Verderbnis {0}</nobr>",
+        "russian": "<nobr>Скверна х{0}</nobr>",
+        "portuguese": "<nobr>Corrupção {0}</nobr>",
+        "chinese": "<nobr>腐化 {0}</nobr>",
+        "spanish": "<nobr>Corrupción {0}</nobr>",
+        "chinese_traditional": "<nobr>腐化 {0}</nobr>",
+        "korean": "<nobr>타락 {0}</nobr>",
+        "japanese": "<nobr>堕落{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Corruption_CardTooltipText",
+        "english": "Unit takes 1 damage per stack at the end of turn.<br>Stacks remain across turns.",
+        "french": "L'unité subit <nobr>1 dégât</nobr> par cumul à la fin du tour.<br>Les cumuls restent d'un tour sur l'autre.",
+        "german": "Die Einheit erleidet am Ende des Zuges 1 Schaden pro Stapel.<br>Stapel bleibt bestehen.",
+        "russian": "Получает 1 урона за слой в конце хода.<br>Слои сохраняются между ходами.",
+        "portuguese": "A unidade sofre 1 de dano por carga no fim do turno.<br>As cargas permanecem entre os turnos.",
+        "chinese": "回合结束时，每层腐化使单位受到 1 点伤害。<br>层数会跨回合保留。",
+        "spanish": "La unidad recibe 1 punto de daño por acumulación al final del turno.<br>Las acumulaciones se mantienen de un turno a otro.",
+        "chinese_traditional": "在回合結束時，每層使單位受到1點傷害。<br>層數在回合之間保持。",
+        "korean": "턴 종료 시 유닛이 스택당 1의 피해를 입습니다.<br>턴이 지나도 스택은 사라지지 않습니다.",
+        "japanese": "ターン終了時に、ユニットが1スタックにつき1のダメージを受ける。<br>ターンが移行してもスタックは維持される。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Corruption_CharacterTooltipText",
+        "english": "Takes [codeint0] damage at the end of turn.<br>Stacks remain across turns.",
+        "french": "Subit [codeint0] dégât à la fin du tour.<br>Les cumuls restent d'un tour sur l'autre.",
+        "german": "Erleidet am Ende des Zuges [codeint0] Schaden.<br>Stapel bleiben bestehen.",
+        "russian": "Получает [codeint0] урона за слой в конце хода.<br>Слои сохраняются между ходами.",
+        "portuguese": "Sofre [codeint0] dano no fim do turno.<br>As cargas permanecem entre os turnos.",
+        "chinese": "回合结束时受到 [codeint0] 点伤害。<br>层数会跨回合保留。",
+        "spanish": "Recibe [codeint0] de daño al final del turno.<br>Las acumulaciones se mantienen de un turno a otro.",
+        "chinese_traditional": "在回合結束時受到[codeint0]點傷害。<br>層數在回合之間保持。",
+        "korean": "턴 종료 시 [codeint0]의 피해를 입습니다.<br>턴이 지나도 스택은 사라지지 않습니다.",
+        "japanese": "ターン終了時に[codeint0]のダメージを受ける。<br>ターンが移行してもスタックは維持される。"
+      },
+      "class_name": "StatusEffectCorruptionState",
+      "affected_vfx": "@StatusEffectCorruptionState.affectedVFX",
+      "applied_sfx": "Status_Frostbite",
+      "display_category": "negative",
+      "trigger_stage": "on_post_combat_poison",
+      "is_propagatable": true,
+      "exclude_monster_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectCorruptionState.addedVFX",
+      "triggered_vfx": "@StatusEffectCorruptionState.affectedVFX",
+      "persistent_vfx": "@StatusEffectCorruptionState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectCorruptionState.affectedVFX",
+      "vfx_prefab_left": "FX_CorruptionProc",
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "StatusEffectCorruptionState.addedVFX",
+      "vfx_prefab_left": "FX_CorruptionProc",
+      "spawn_location": "bone_status_effect_slot3"
+    },
+    {
+      "id": "StatusEffectCorruptionState.persistentVFX",
+      "vfx_prefab_left": "FX_CorruptionPersistant",
+      "spawn_location": "bone_status_effect_slot3"
+    }
+  ]
 }

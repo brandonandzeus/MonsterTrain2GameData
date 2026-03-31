@@ -1,23 +1,26 @@
 {
-  "statusId": "showtime",
-  "statusEffectStateName": "StatusEffectShowtimeState",
-  "affectedVFX": {
-    "vfxPrefabLeft": "FX_Showtime",
-    "spawnLocation": "character_bottom"
-  },
-  "displayCategory": "persistent",
-  "triggerStage": "none",
-  "hidden": true,
-  "isStackable": false,
-  "scalesInEndless": false,
-  "showNotificationsOnRemoval": false,
-  "paramInt": 1,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_Showtime",
-    "spawnLocation": "character_bottom"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_Showtime",
-    "spawnLocation": "character_bottom"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "showtime",
+      "class_name": "StatusEffectShowtimeState",
+      "affected_vfx": "@StatusEffectShowtimeState.affectedVFX",
+      "display_category": "persistent",
+      "trigger_stage": "none",
+      "hidden": true,
+      "is_stackable": false,
+      "scales_in_endless": false,
+      "show_notifications_on_removal": false,
+      "param_int": 1,
+      "added_vfx": "@StatusEffectShowtimeState.affectedVFX",
+      "triggered_vfx": "@StatusEffectShowtimeState.affectedVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectShowtimeState.affectedVFX",
+      "vfx_prefab_left": "FX_Showtime",
+      "spawn_location": "character_bottom"
+    }
+  ]
 }

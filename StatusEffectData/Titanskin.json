@@ -1,68 +1,77 @@
 {
-  "statusId": "titanskin",
-  "nameKey": {
-    "key": "StatusEffect_Titanskin_CardText",
-    "english": "Titanskin",
-    "french": "Peau de titan",
-    "german": "Titanenhaut",
-    "russian": "Кожа титана",
-    "portuguese": "Pele de Titã",
-    "chinese": "泰坦皮肤",
-    "spanish": "Piel titánica",
-    "chinese_traditional": "泰坦之膚",
-    "korean": "티탄 피부",
-    "japanese": "巨人の皮膚"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Titanskin_Stack_CardText",
-    "english": "Titanskin {0}",
-    "french": "Peau de titan {0}",
-    "german": "Titanenhaut {0}",
-    "russian": "Кожа титана {0}",
-    "portuguese": "Pele de Titã {0}",
-    "chinese": "泰坦皮肤 {0}",
-    "spanish": "Piel titánica {0}",
-    "chinese_traditional": "泰坦之膚 {0}",
-    "korean": "티탄 피부 {0}",
-    "japanese": "巨人の皮膚{0}"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Titanskin_CardTooltipText",
-    "english": "[codeint0] damage reduction per stack.",
-    "french": "Réduction de dégâts de [codeint0] par cumul.",
-    "german": "[codeint0] Schadensreduktion pro Stapel.",
-    "russian": "Уменьшение урона за слой: [codeint0].",
-    "portuguese": "Redução de [codeint0] de dano por carga.",
-    "chinese": "每层泰坦皮肤减免 [codeint0] 点伤害。",
-    "spanish": "Reduce [codeint0] de daño por acumulación.",
-    "chinese_traditional": "每層減免[codeint0]點傷害。",
-    "korean": "스택당 받는 피해가 [codeint0] 감소합니다.",
-    "japanese": "1スタックにつき被ダメージが[codeint0]減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Titanskin_CharacterTooltipText",
-    "english": "[codeint0] damage reduction (+[codeint1] per stack).",
-    "french": "Réduction de dégâts de [codeint0] (+[codeint1] par cumul).",
-    "german": "[codeint0] Schadensreduktion (+[codeint1] pro Stapel).",
-    "russian": "Уменьшение урона: [codeint0] (+[codeint1] за слой).",
-    "portuguese": "Redução de [codeint0] de dano por carga (+[codeint1] por carga).",
-    "chinese": "减免 [codeint0] 点伤害（每层 +[codeint1]）。",
-    "spanish": "Reduce [codeint0] de daño (+[codeint1] por acumulación).",
-    "chinese_traditional": "減免[codeint0]點傷害（每層+[codeint1]）。",
-    "korean": "받는 피해가 [codeint0] 감소(스택당 +[codeint1])합니다.",
-    "japanese": "被ダメージが[codeint0]減少する（1スタックにつき+[codeint1]）。"
-  },
-  "statusEffectStateName": "StatusEffectTitanskinState",
-  "appliedSFXName": "Status_Titanskin_Applied",
-  "displayCategory": "persistent",
-  "triggerStage": "on_pre_attacked_titan_skin",
-  "showOnPyreHeart": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_TitanskinFriendly(Clone)",
-    "vfxPrefabRight": "FX_TitanSkinEnemy(Clone)",
-    "spawnLocation": "character_side_fwd_center",
-    "facing": "forward"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "titanskin",
+      "names": {
+        "key": "StatusEffect_Titanskin_CardText",
+        "english": "Titanskin",
+        "french": "Peau de titan",
+        "german": "Titanenhaut",
+        "russian": "Кожа титана",
+        "portuguese": "Pele de Titã",
+        "chinese": "泰坦皮肤",
+        "spanish": "Piel titánica",
+        "chinese_traditional": "泰坦之膚",
+        "korean": "티탄 피부",
+        "japanese": "巨人の皮膚"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Titanskin_Stack_CardText",
+        "english": "Titanskin {0}",
+        "french": "Peau de titan {0}",
+        "german": "Titanenhaut {0}",
+        "russian": "Кожа титана {0}",
+        "portuguese": "Pele de Titã {0}",
+        "chinese": "泰坦皮肤 {0}",
+        "spanish": "Piel titánica {0}",
+        "chinese_traditional": "泰坦之膚 {0}",
+        "korean": "티탄 피부 {0}",
+        "japanese": "巨人の皮膚{0}"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Titanskin_CardTooltipText",
+        "english": "[codeint0] damage reduction per stack.",
+        "french": "Réduction de dégâts de [codeint0] par cumul.",
+        "german": "[codeint0] Schadensreduktion pro Stapel.",
+        "russian": "Уменьшение урона за слой: [codeint0].",
+        "portuguese": "Redução de [codeint0] de dano por carga.",
+        "chinese": "每层泰坦皮肤减免 [codeint0] 点伤害。",
+        "spanish": "Reduce [codeint0] de daño por acumulación.",
+        "chinese_traditional": "每層減免[codeint0]點傷害。",
+        "korean": "스택당 받는 피해가 [codeint0] 감소합니다.",
+        "japanese": "1スタックにつき被ダメージが[codeint0]減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Titanskin_CharacterTooltipText",
+        "english": "[codeint0] damage reduction (+[codeint1] per stack).",
+        "french": "Réduction de dégâts de [codeint0] (+[codeint1] par cumul).",
+        "german": "[codeint0] Schadensreduktion (+[codeint1] pro Stapel).",
+        "russian": "Уменьшение урона: [codeint0] (+[codeint1] за слой).",
+        "portuguese": "Redução de [codeint0] de dano por carga (+[codeint1] por carga).",
+        "chinese": "减免 [codeint0] 点伤害（每层 +[codeint1]）。",
+        "spanish": "Reduce [codeint0] de daño (+[codeint1] por acumulación).",
+        "chinese_traditional": "減免[codeint0]點傷害（每層+[codeint1]）。",
+        "korean": "받는 피해가 [codeint0] 감소(스택당 +[codeint1])합니다.",
+        "japanese": "被ダメージが[codeint0]減少する（1スタックにつき+[codeint1]）。"
+      },
+      "class_name": "StatusEffectTitanskinState",
+      "applied_sfx": "Status_Titanskin_Applied",
+      "display_category": "persistent",
+      "trigger_stage": "on_pre_attacked_titan_skin",
+      "show_on_pyre_heart": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "persistent_vfx": "@StatusEffectTitanskinState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectTitanskinState.persistentVFX",
+      "vfx_prefab_left": "FX_TitanskinFriendly(Clone)",
+      "vfx_prefab_right": "FX_TitanSkinEnemy(Clone)",
+      "spawn_location": "character_side_fwd_center",
+      "facing": "forward"
+    }
+  ]
 }

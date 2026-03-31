@@ -1,66 +1,75 @@
 {
-  "statusId": "trample",
-  "nameKey": {
-    "key": "StatusEffect_Trample_CardText",
-    "english": "Trample",
-    "french": "Piétinement",
-    "german": "Trampelschaden",
-    "russian": "Сминание",
-    "portuguese": "Atropelar",
-    "chinese": "践踏",
-    "spanish": "Arrollar",
-    "chinese_traditional": "踐踏",
-    "korean": "짓밟기",
-    "japanese": "踏みつけ"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Trample_Stack_CardText",
-    "english": "<nobr>Trample {0}</nobr>",
-    "french": "<nobr>Piétinement {0}</nobr>",
-    "german": "<nobr>{0} Trampelschaden</nobr>",
-    "russian": "<nobr>Сминание {0}</nobr>",
-    "portuguese": "<nobr>Atropelar {0}</nobr>",
-    "chinese": "<nobr>践踏 {0}</nobr>",
-    "spanish": "<nobr>Arrollar{0}</nobr>",
-    "chinese_traditional": "<nobr>踐踏 {0}</nobr>",
-    "korean": "<nobr>짓밟기 {0}</nobr>",
-    "japanese": "<nobr>踏みつけ{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Trample_CardTooltipText",
-    "english": "When attacking, excess damage is applied to the subsequent enemy unit.",
-    "french": "Après une attaque, le surplus de dégâts est appliqué à l'unité ennemie suivante.",
-    "german": "Beim Angreifen wird überschüssiger Schaden der nächsten gegnerischen Einheit zugefügt.",
-    "russian": "При нападении избыточный урон наносится следующему бойцу врага.",
-    "portuguese": "Ao atacar, o dano em excesso é aplicado à unidade inimiga subsequente.",
-    "chinese": "攻击时，溢出的伤害会施加到后面的敌方单位身上。",
-    "spanish": "Al atacar, se aplica el daño sobrante a la siguiente unidad enemiga.",
-    "chinese_traditional": "攻擊時，過量傷害會施加到後續的敵方單位。",
-    "korean": "공격할 때, 초과 피해가 공격 대상의 뒤에 있는 적 유닛에게 적용됩니다.",
-    "japanese": "攻撃時、後続の敵ユニットに過剰ダメージが与えられる。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Trample_CharacterTooltipText",
-    "english": "When attacking, excess damage is applied to the subsequent enemy unit.",
-    "french": "Après une attaque, le surplus de dégâts est appliqué à l'unité ennemie suivante.",
-    "german": "Beim Angreifen wird überschüssiger Schaden der nächsten gegnerischen Einheit zugefügt.",
-    "russian": "При нападении избыточный урон наносится следующему бойцу врага.",
-    "portuguese": "Ao atacar, o dano em excesso é aplicado à unidade inimiga subsequente.",
-    "chinese": "攻击时，溢出的伤害会施加到后面的敌方单位身上。",
-    "spanish": "Al atacar, se aplica el daño sobrante a la siguiente unidad enemiga.",
-    "chinese_traditional": "攻擊時，過量傷害會施加到後續的敵方單位。",
-    "korean": "공격할 때, 초과 피해가 공격 대상의 뒤에 있는 적 유닛에게 적용됩니다.",
-    "japanese": "攻撃時、後続の敵ユニットに過剰ダメージが与えられる。"
-  },
-  "statusEffectStateName": "StatusEffectTrampleState",
-  "appliedSFXName": "Status_Trample",
-  "displayCategory": "persistent",
-  "triggerStage": "on_post_attacking",
-  "scalesInEndless": false,
-  "showStackCount": false,
-  "allowSecondaryTooltipPlacement": true,
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_TrampleStatusNew",
-    "spawnLocation": "character_bottom"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "trample",
+      "names": {
+        "key": "StatusEffect_Trample_CardText",
+        "english": "Trample",
+        "french": "Piétinement",
+        "german": "Trampelschaden",
+        "russian": "Сминание",
+        "portuguese": "Atropelar",
+        "chinese": "践踏",
+        "spanish": "Arrollar",
+        "chinese_traditional": "踐踏",
+        "korean": "짓밟기",
+        "japanese": "踏みつけ"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Trample_Stack_CardText",
+        "english": "<nobr>Trample {0}</nobr>",
+        "french": "<nobr>Piétinement {0}</nobr>",
+        "german": "<nobr>{0} Trampelschaden</nobr>",
+        "russian": "<nobr>Сминание {0}</nobr>",
+        "portuguese": "<nobr>Atropelar {0}</nobr>",
+        "chinese": "<nobr>践踏 {0}</nobr>",
+        "spanish": "<nobr>Arrollar{0}</nobr>",
+        "chinese_traditional": "<nobr>踐踏 {0}</nobr>",
+        "korean": "<nobr>짓밟기 {0}</nobr>",
+        "japanese": "<nobr>踏みつけ{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Trample_CardTooltipText",
+        "english": "When attacking, excess damage is applied to the subsequent enemy unit.",
+        "french": "Après une attaque, le surplus de dégâts est appliqué à l'unité ennemie suivante.",
+        "german": "Beim Angreifen wird überschüssiger Schaden der nächsten gegnerischen Einheit zugefügt.",
+        "russian": "При нападении избыточный урон наносится следующему бойцу врага.",
+        "portuguese": "Ao atacar, o dano em excesso é aplicado à unidade inimiga subsequente.",
+        "chinese": "攻击时，溢出的伤害会施加到后面的敌方单位身上。",
+        "spanish": "Al atacar, se aplica el daño sobrante a la siguiente unidad enemiga.",
+        "chinese_traditional": "攻擊時，過量傷害會施加到後續的敵方單位。",
+        "korean": "공격할 때, 초과 피해가 공격 대상의 뒤에 있는 적 유닛에게 적용됩니다.",
+        "japanese": "攻撃時、後続の敵ユニットに過剰ダメージが与えられる。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Trample_CharacterTooltipText",
+        "english": "When attacking, excess damage is applied to the subsequent enemy unit.",
+        "french": "Après une attaque, le surplus de dégâts est appliqué à l'unité ennemie suivante.",
+        "german": "Beim Angreifen wird überschüssiger Schaden der nächsten gegnerischen Einheit zugefügt.",
+        "russian": "При нападении избыточный урон наносится следующему бойцу врага.",
+        "portuguese": "Ao atacar, o dano em excesso é aplicado à unidade inimiga subsequente.",
+        "chinese": "攻击时，溢出的伤害会施加到后面的敌方单位身上。",
+        "spanish": "Al atacar, se aplica el daño sobrante a la siguiente unidad enemiga.",
+        "chinese_traditional": "攻擊時，過量傷害會施加到後續的敵方單位。",
+        "korean": "공격할 때, 초과 피해가 공격 대상의 뒤에 있는 적 유닛에게 적용됩니다.",
+        "japanese": "攻撃時、後続の敵ユニットに過剰ダメージが与えられる。"
+      },
+      "class_name": "StatusEffectTrampleState",
+      "applied_sfx": "Status_Trample",
+      "display_category": "persistent",
+      "trigger_stage": "on_post_attacking",
+      "scales_in_endless": false,
+      "show_stack_count": false,
+      "allow_secondary_tooltip_placement": true,
+      "persistent_vfx": "@StatusEffectTrampleState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectTrampleState.persistentVFX",
+      "vfx_prefab_left": "FX_TrampleStatusNew",
+      "spawn_location": "character_bottom"
+    }
+  ]
 }

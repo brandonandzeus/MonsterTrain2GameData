@@ -1,85 +1,96 @@
 {
-  "statusId": "rooted",
-  "nameKey": {
-    "key": "StatusEffect_Rooted_CardText",
-    "english": "Rooted",
-    "french": "Enraciné",
-    "german": "Verwurzelt",
-    "russian": "Путы",
-    "portuguese": "Imobilizado",
-    "chinese": "缠绕",
-    "spanish": "Inmóvil",
-    "chinese_traditional": "定身",
-    "korean": "뿌리 속박",
-    "japanese": "拘束"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Rooted_Stack_CardText",
-    "english": "<nobr>Rooted {0}</nobr>",
-    "french": "<nobr>Enraciné {0}</nobr>",
-    "german": "<nobr>{0} Verwurzelt</nobr>",
-    "russian": "<nobr>Путы {0}</nobr>",
-    "portuguese": "<nobr>Imobilizado {0}</nobr>",
-    "chinese": "<nobr>缠绕 {0}</nobr>",
-    "spanish": "<nobr>Inmóvil {0}</nobr>",
-    "chinese_traditional": "<nobr>定身 {0}</nobr>",
-    "korean": "<nobr>뿌리 속박 {0}</nobr>",
-    "japanese": "<nobr>拘束{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Rooted_CardTooltipText",
-    "english": "Prevents the next time a unit would move between floors.<br>Bosses are immune.",
-    "french": "La prochaine tentative de changement de niveau de l'unité est empêchée.<br>Ne fonctionne pas sur les boss.",
-    "german": "Verhindert die nächste Bewegung einer Einheit zwischen Ebenen.<br>Bosse sind immun.",
-    "russian": "Разово запрещает бойцу перемещение между этажами.<br>Боссы обладают иммунитетом.",
-    "portuguese": "Impede a próxima vez que uma unidade mudaria de andar.<br>Chefões são imunes.",
-    "chinese": "单位下次尝试移动到其它层时，该移动会被限制。<br>首领对缠绕免疫。",
-    "spanish": "Impide el próximo movimiento de una unidad de un piso a otro.<br>Los jefes son inmunes.",
-    "chinese_traditional": "阻止下一次單位在樓層間移動。<br>首領免疫此效果。",
-    "korean": "다음 차례에 유닛이 층을 이동하는 것을 방지합니다.<br>보스는 영향을 받지 않습니다.",
-    "japanese": "次にユニットがフロア間を移動する際にそれを阻止する。<br>ボスには無効。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Rooted_CharacterTooltipText",
-    "english": "Prevent the next [codeint0] times this unit would move between floors.",
-    "french": "Les [codeint0] prochaines tentatives de changement de niveau de l'unité sont empêchées.",
-    "german": "Verhindere die nächsten [codeint0] Bewegungen dieser Einheit zwischen Ebenen.",
-    "russian": "[codeint0] раз(а) не дает этому бойцу переместиться между этажами.",
-    "portuguese": "Impede [codeint0] vezes que essa unidade se mova entre os andares.",
-    "chinese": "该单位接下来 [codeint0] 次尝试移动到其它层时，限制其移动。",
-    "spanish": "Impide los próximos [codeint0] movimientos de esta unidad de un piso a otro.",
-    "chinese_traditional": "阻止這個單位接下來[codeint0]次在樓層間的移動。",
-    "korean": "다음 [codeint0]회 동안 유닛이 층을 이동하는 것을 방지합니다.",
-    "japanese": "ユニットがフロア間を移動するのを[codeint0]回阻止する。"
-  },
-  "notificationKey": {
-    "key": "StatusEffect_Rooted_NotificationText",
-    "english": "Rooted",
-    "french": "Enraciné",
-    "german": "Verwurzelt",
-    "russian": "Путы",
-    "portuguese": "Imobilizado",
-    "chinese": "缠绕",
-    "spanish": "Inmóvil",
-    "chinese_traditional": "定身",
-    "korean": "뿌리 속박",
-    "japanese": "拘束"
-  },
-  "statusEffectStateName": "StatusEffectRootedState",
-  "appliedSFXName": "Status_Rooted",
-  "displayCategory": "negative",
-  "triggerStage": "on_pre_movement",
-  "removeWhenTriggered": true,
-  "isPropagatable": true,
-  "scalesInEndless": false,
-  "excludeMonsterPropagation": true,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_RootApplied_PS",
-    "spawnLocation": "character_bottom"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_RootPersistence_PS",
-    "spawnLocation": "character_bottom"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "rooted",
+      "names": {
+        "key": "StatusEffect_Rooted_CardText",
+        "english": "Rooted",
+        "french": "Enraciné",
+        "german": "Verwurzelt",
+        "russian": "Путы",
+        "portuguese": "Imobilizado",
+        "chinese": "缠绕",
+        "spanish": "Inmóvil",
+        "chinese_traditional": "定身",
+        "korean": "뿌리 속박",
+        "japanese": "拘束"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Rooted_Stack_CardText",
+        "english": "<nobr>Rooted {0}</nobr>",
+        "french": "<nobr>Enraciné {0}</nobr>",
+        "german": "<nobr>{0} Verwurzelt</nobr>",
+        "russian": "<nobr>Путы {0}</nobr>",
+        "portuguese": "<nobr>Imobilizado {0}</nobr>",
+        "chinese": "<nobr>缠绕 {0}</nobr>",
+        "spanish": "<nobr>Inmóvil {0}</nobr>",
+        "chinese_traditional": "<nobr>定身 {0}</nobr>",
+        "korean": "<nobr>뿌리 속박 {0}</nobr>",
+        "japanese": "<nobr>拘束{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Rooted_CardTooltipText",
+        "english": "Prevents the next time a unit would move between floors.<br>Bosses are immune.",
+        "french": "La prochaine tentative de changement de niveau de l'unité est empêchée.<br>Ne fonctionne pas sur les boss.",
+        "german": "Verhindert die nächste Bewegung einer Einheit zwischen Ebenen.<br>Bosse sind immun.",
+        "russian": "Разово запрещает бойцу перемещение между этажами.<br>Боссы обладают иммунитетом.",
+        "portuguese": "Impede a próxima vez que uma unidade mudaria de andar.<br>Chefões são imunes.",
+        "chinese": "单位下次尝试移动到其它层时，该移动会被限制。<br>首领对缠绕免疫。",
+        "spanish": "Impide el próximo movimiento de una unidad de un piso a otro.<br>Los jefes son inmunes.",
+        "chinese_traditional": "阻止下一次單位在樓層間移動。<br>首領免疫此效果。",
+        "korean": "다음 차례에 유닛이 층을 이동하는 것을 방지합니다.<br>보스는 영향을 받지 않습니다.",
+        "japanese": "次にユニットがフロア間を移動する際にそれを阻止する。<br>ボスには無効。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Rooted_CharacterTooltipText",
+        "english": "Prevent the next [codeint0] times this unit would move between floors.",
+        "french": "Les [codeint0] prochaines tentatives de changement de niveau de l'unité sont empêchées.",
+        "german": "Verhindere die nächsten [codeint0] Bewegungen dieser Einheit zwischen Ebenen.",
+        "russian": "[codeint0] раз(а) не дает этому бойцу переместиться между этажами.",
+        "portuguese": "Impede [codeint0] vezes que essa unidade se mova entre os andares.",
+        "chinese": "该单位接下来 [codeint0] 次尝试移动到其它层时，限制其移动。",
+        "spanish": "Impide los próximos [codeint0] movimientos de esta unidad de un piso a otro.",
+        "chinese_traditional": "阻止這個單位接下來[codeint0]次在樓層間的移動。",
+        "korean": "다음 [codeint0]회 동안 유닛이 층을 이동하는 것을 방지합니다.",
+        "japanese": "ユニットがフロア間を移動するのを[codeint0]回阻止する。"
+      },
+      "notifications": {
+        "key": "StatusEffect_Rooted_NotificationText",
+        "english": "Rooted",
+        "french": "Enraciné",
+        "german": "Verwurzelt",
+        "russian": "Путы",
+        "portuguese": "Imobilizado",
+        "chinese": "缠绕",
+        "spanish": "Inmóvil",
+        "chinese_traditional": "定身",
+        "korean": "뿌리 속박",
+        "japanese": "拘束"
+      },
+      "class_name": "StatusEffectRootedState",
+      "applied_sfx": "Status_Rooted",
+      "display_category": "negative",
+      "trigger_stage": "on_pre_movement",
+      "remove_when_triggered": true,
+      "is_propagatable": true,
+      "scales_in_endless": false,
+      "exclude_monster_propagation": true,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectRootedState.addedVFX",
+      "persistent_vfx": "@StatusEffectRootedState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectRootedState.addedVFX",
+      "vfx_prefab_left": "FX_RootApplied_PS",
+      "spawn_location": "character_bottom"
+    },
+    {
+      "id": "StatusEffectRootedState.persistentVFX",
+      "vfx_prefab_left": "FX_RootPersistence_PS",
+      "spawn_location": "character_bottom"
+    }
+  ]
 }

@@ -1,75 +1,83 @@
 {
-  "statusId": "witherbloom",
-  "nameKey": {
-    "key": "StatusEffect_Witherbloom_CardText",
-    "english": "Witherbloom",
-    "french": "Flétrissement",
-    "german": "Welkblüte",
-    "russian": "Увядание",
-    "portuguese": "Floração Murcha",
-    "chinese": "凋零绽放",
-    "spanish": "Floración marchita",
-    "chinese_traditional": "凋零綻放",
-    "korean": "쇠락의 꽃",
-    "japanese": "屍花"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Witherbloom_Stack_CardText",
-    "english": "<nobr>Witherbloom {0}</nobr>",
-    "french": "<nobr>Flétrissement {0}</nobr>",
-    "german": "<nobr>Welkblüte {0}</nobr>",
-    "russian": "<nobr>Увядание х{0}</nobr>",
-    "portuguese": "<nobr>Floração Murcha {0}</nobr>",
-    "chinese": "<nobr>凋零绽放 {0}</nobr>",
-    "spanish": "<nobr>Floración marchita {0}</nobr>",
-    "chinese_traditional": "<nobr>凋零綻放{0}</nobr>",
-    "korean": "<nobr>쇠락의 꽃 {0}</nobr>",
-    "japanese": "<nobr>屍花{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Witherbloom_CardTooltipText",
-    "english": "Unit and adjacent units take 1 damage per stack at the end of turn.",
-    "french": "L'unité et les unités adjacentes subissent <nobr>1 DGT</nobr> par cumul à la fin du tour.",
-    "german": "Diese Einheit und benachbarte Einheiten erleiden am Ende des Zuges 1 Schaden pro Stapel.",
-    "russian": "Боец и его соседи получают 1 урона за слой в конце хода.",
-    "portuguese": "A unidade e unidades adjacentes sofrem 1 de dano por carga no fim do turno.",
-    "chinese": "回合结束时，每层使受影响单位以及相邻单位受到 1 点伤害。",
-    "spanish": "La unidad y las unidades adyacentes reciben 1 punto de daño por acumulación al final del turno.",
-    "chinese_traditional": "此單位和相鄰單位在回合結束時，每層受到1點傷害。",
-    "korean": "턴 종료 시, 유닛과 인접한 유닛들은 스택 1개당 1의 피해를 받습니다.",
-    "japanese": "ターン終了時に、このユニットと隣接ユニットが1スタックにつき1のダメージを受ける。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Witherbloom_CharacterTooltipText",
-    "english": "This unit and adjacent units take [codeint0] damage per stack at the end of turn.",
-    "french": "Cette unité et les unités adjacentes subissent <nobr>[codeint0] DGT</nobr> par cumul à la fin du tour.",
-    "german": "Einheiten und benachbarte Einheiten erleiden am Ende des Zuges [codeint0] Schaden pro Stapel.",
-    "russian": "Боец и его соседи получают [codeint0] урона за слой в конце хода.",
-    "portuguese": "Esta unidade e unidades adjacentes sofrem [codeint0] de dano por carga no fim do turno.",
-    "chinese": "回合结束时，每层使受影响单位以及相邻单位受到 [codeint0] 点伤害。",
-    "spanish": "Esta unidad y las unidades adyacentes reciben [codeint0] de daño por acumulación al final del turno.",
-    "chinese_traditional": "此單位和相鄰單位在回合結束時，每層受到[codeint0]點傷害。",
-    "korean": "턴 종료 시, 이 유닛과 인접한 유닛들은 스택 1개당 [codeint0]의 피해를 받습니다.",
-    "japanese": "ターン終了時に、このユニットと隣接ユニットが1スタックにつき[codeint0]のダメージを受ける。"
-  },
-  "statusEffectStateName": "StatusEffectWitherbloomState",
-  "affectedVFX": {
-    "vfxPrefabLeft": "FX_WitherbloomDamage",
-    "spawnLocation": "bone_status_effect_slot3"
-  },
-  "displayCategory": "negative",
-  "triggerStage": "on_post_combat_poison",
-  "skipTriggerDuringDeployment": true,
-  "isPropagatable": true,
-  "excludeMonsterPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_WitherbloomDamage",
-    "spawnLocation": "bone_status_effect_slot3"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_Witherbloom",
-    "spawnLocation": "bone_status_effect_slot3"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "witherbloom",
+      "names": {
+        "key": "StatusEffect_Witherbloom_CardText",
+        "english": "Witherbloom",
+        "french": "Flétrissement",
+        "german": "Welkblüte",
+        "russian": "Увядание",
+        "portuguese": "Floração Murcha",
+        "chinese": "凋零绽放",
+        "spanish": "Floración marchita",
+        "chinese_traditional": "凋零綻放",
+        "korean": "쇠락의 꽃",
+        "japanese": "屍花"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Witherbloom_Stack_CardText",
+        "english": "<nobr>Witherbloom {0}</nobr>",
+        "french": "<nobr>Flétrissement {0}</nobr>",
+        "german": "<nobr>Welkblüte {0}</nobr>",
+        "russian": "<nobr>Увядание х{0}</nobr>",
+        "portuguese": "<nobr>Floração Murcha {0}</nobr>",
+        "chinese": "<nobr>凋零绽放 {0}</nobr>",
+        "spanish": "<nobr>Floración marchita {0}</nobr>",
+        "chinese_traditional": "<nobr>凋零綻放{0}</nobr>",
+        "korean": "<nobr>쇠락의 꽃 {0}</nobr>",
+        "japanese": "<nobr>屍花{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Witherbloom_CardTooltipText",
+        "english": "Unit and adjacent units take 1 damage per stack at the end of turn.",
+        "french": "L'unité et les unités adjacentes subissent <nobr>1 DGT</nobr> par cumul à la fin du tour.",
+        "german": "Diese Einheit und benachbarte Einheiten erleiden am Ende des Zuges 1 Schaden pro Stapel.",
+        "russian": "Боец и его соседи получают 1 урона за слой в конце хода.",
+        "portuguese": "A unidade e unidades adjacentes sofrem 1 de dano por carga no fim do turno.",
+        "chinese": "回合结束时，每层使受影响单位以及相邻单位受到 1 点伤害。",
+        "spanish": "La unidad y las unidades adyacentes reciben 1 punto de daño por acumulación al final del turno.",
+        "chinese_traditional": "此單位和相鄰單位在回合結束時，每層受到1點傷害。",
+        "korean": "턴 종료 시, 유닛과 인접한 유닛들은 스택 1개당 1의 피해를 받습니다.",
+        "japanese": "ターン終了時に、このユニットと隣接ユニットが1スタックにつき1のダメージを受ける。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Witherbloom_CharacterTooltipText",
+        "english": "This unit and adjacent units take [codeint0] damage per stack at the end of turn.",
+        "french": "Cette unité et les unités adjacentes subissent <nobr>[codeint0] DGT</nobr> par cumul à la fin du tour.",
+        "german": "Einheiten und benachbarte Einheiten erleiden am Ende des Zuges [codeint0] Schaden pro Stapel.",
+        "russian": "Боец и его соседи получают [codeint0] урона за слой в конце хода.",
+        "portuguese": "Esta unidade e unidades adjacentes sofrem [codeint0] de dano por carga no fim do turno.",
+        "chinese": "回合结束时，每层使受影响单位以及相邻单位受到 [codeint0] 点伤害。",
+        "spanish": "Esta unidad y las unidades adyacentes reciben [codeint0] de daño por acumulación al final del turno.",
+        "chinese_traditional": "此單位和相鄰單位在回合結束時，每層受到[codeint0]點傷害。",
+        "korean": "턴 종료 시, 이 유닛과 인접한 유닛들은 스택 1개당 [codeint0]의 피해를 받습니다.",
+        "japanese": "ターン終了時に、このユニットと隣接ユニットが1スタックにつき[codeint0]のダメージを受ける。"
+      },
+      "class_name": "StatusEffectWitherbloomState",
+      "affected_vfx": "@StatusEffectWitherbloomState.affectedVFX",
+      "display_category": "negative",
+      "trigger_stage": "on_post_combat_poison",
+      "skip_trigger_during_deployment": true,
+      "is_propagatable": true,
+      "exclude_monster_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "triggered_vfx": "@StatusEffectWitherbloomState.affectedVFX",
+      "persistent_vfx": "@StatusEffectWitherbloomState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectWitherbloomState.affectedVFX",
+      "vfx_prefab_left": "FX_WitherbloomDamage",
+      "spawn_location": "bone_status_effect_slot3"
+    },
+    {
+      "id": "StatusEffectWitherbloomState.persistentVFX",
+      "vfx_prefab_left": "FX_Witherbloom",
+      "spawn_location": "bone_status_effect_slot3"
+    }
+  ]
 }

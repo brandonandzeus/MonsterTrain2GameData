@@ -1,76 +1,89 @@
 {
-  "statusId": "buff",
-  "nameKey": {
-    "key": "StatusEffect_Buff_CardText",
-    "english": "Rage",
-    "french": "Rage",
-    "german": "Wut",
-    "russian": "Ярость",
-    "portuguese": "Fúria",
-    "chinese": "狂怒",
-    "spanish": "Furia",
-    "chinese_traditional": "狂怒",
-    "korean": "분노",
-    "japanese": "怒り"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Buff_Stack_CardText",
-    "english": "<nobr>Rage {0}</nobr>",
-    "french": "<nobr>Rage {0}</nobr>",
-    "german": "<nobr>{0} Wut</nobr>",
-    "russian": "<nobr>Ярость {0}</nobr>",
-    "portuguese": "<nobr>Fúria {0}</nobr>",
-    "chinese": "<nobr>狂怒 {0}</nobr>",
-    "spanish": "<nobr>Furia {0}</nobr>",
-    "chinese_traditional": "<nobr>狂怒 {0}</nobr>",
-    "korean": "<nobr>분노 {0}</nobr>",
-    "japanese": "<nobr>怒り{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Buff_CardTooltipText",
-    "english": "+[codeint0][attack] per stack.<br>Decreases every turn.",
-    "french": "+[codeint0][attack] par cumul.<br>Diminue à chaque tour.",
-    "german": "+[codeint0][attack] pro Stapel.<br>Wird jeden Zug reduziert.",
-    "russian": "+[codeint0][attack] за слой.<br>Уменьшается каждый ход.",
-    "portuguese": "+[codeint0][attack] por carga.<br>Diminui a cada turno.",
-    "chinese": "每层 +[codeint0][attack]。<br>每回合不断减少。",
-    "spanish": "+[codeint0][attack] por acumulación.<br>Disminuye en cada turno.",
-    "chinese_traditional": "每層+[codeint0][attack]。<br>每回合減少。",
-    "korean": "스택당 +[codeint0][attack].<br>매 턴마다 감소합니다.",
-    "japanese": "1スタックにつき+[codeint0][attack]。<br>毎ターン減少する。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Buff_CharacterTooltipText",
-    "english": "+[codeint0][attack] (+[codeint1][attack] per stack).<br>Decreases every turn.",
-    "french": "+[codeint0][attack] (+[codeint1][attack] par cumul).<br>Diminue à chaque tour.",
-    "german": "+[codeint0][attack] (+[codeint1][attack] pro Stapel).<br>Wird jeden Zug reduziert.",
-    "russian": "+[codeint0][attack] (+[codeint1][attack] за слой).<br>Уменьшается каждый ход.",
-    "portuguese": "+[codeint0][attack] (+[codeint1][attack] por carga).<br>Diminui a cada turno.",
-    "chinese": "+[codeint0][attack]（每层 +[codeint1][attack]）。<br>每回合不断减少。",
-    "spanish": "+[codeint0][attack] (+[codeint1][attack] por acumulación).<br>Disminuye en cada turno.",
-    "chinese_traditional": "+[codeint0][attack]（每層+[codeint1][attack]）。<br>每回合減少。",
-    "korean": "+[codeint0][attack] (스택당 +[codeint1][attack]).<br>매 턴마다 감소합니다.",
-    "japanese": "+[codeint0][attack]（1スタックにつき+[codeint1][attack]）。<br>毎ターン減少する。"
-  },
-  "statusEffectStateName": "StatusEffectBuffState",
-  "appliedSFXName": "Status_Rage",
-  "displayCategory": "positive",
-  "triggerStage": "none",
-  "removeStackAtEndOfTurn": true,
-  "isPropagatable": true,
-  "excludeHeroPropagation": true,
-  "paramInt": 2,
-  "allowSecondaryTooltipPlacement": true,
-  "addedVFX": {
-    "vfxPrefabLeft": "FX_RageApplied_PS",
-    "spawnLocation": "character_bottom"
-  },
-  "triggeredVFX": {
-    "vfxPrefabLeft": "FX_RageTriggered_PS",
-    "spawnLocation": "bone_status_effect_slot2"
-  },
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_RagePersistent_PS",
-    "spawnLocation": "bone_status_effect_slot2"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "buff",
+      "names": {
+        "key": "StatusEffect_Buff_CardText",
+        "english": "Rage",
+        "french": "Rage",
+        "german": "Wut",
+        "russian": "Ярость",
+        "portuguese": "Fúria",
+        "chinese": "狂怒",
+        "spanish": "Furia",
+        "chinese_traditional": "狂怒",
+        "korean": "분노",
+        "japanese": "怒り"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Buff_Stack_CardText",
+        "english": "<nobr>Rage {0}</nobr>",
+        "french": "<nobr>Rage {0}</nobr>",
+        "german": "<nobr>{0} Wut</nobr>",
+        "russian": "<nobr>Ярость {0}</nobr>",
+        "portuguese": "<nobr>Fúria {0}</nobr>",
+        "chinese": "<nobr>狂怒 {0}</nobr>",
+        "spanish": "<nobr>Furia {0}</nobr>",
+        "chinese_traditional": "<nobr>狂怒 {0}</nobr>",
+        "korean": "<nobr>분노 {0}</nobr>",
+        "japanese": "<nobr>怒り{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Buff_CardTooltipText",
+        "english": "+[codeint0][attack] per stack.<br>Decreases every turn.",
+        "french": "+[codeint0][attack] par cumul.<br>Diminue à chaque tour.",
+        "german": "+[codeint0][attack] pro Stapel.<br>Wird jeden Zug reduziert.",
+        "russian": "+[codeint0][attack] за слой.<br>Уменьшается каждый ход.",
+        "portuguese": "+[codeint0][attack] por carga.<br>Diminui a cada turno.",
+        "chinese": "每层 +[codeint0][attack]。<br>每回合不断减少。",
+        "spanish": "+[codeint0][attack] por acumulación.<br>Disminuye en cada turno.",
+        "chinese_traditional": "每層+[codeint0][attack]。<br>每回合減少。",
+        "korean": "스택당 +[codeint0][attack].<br>매 턴마다 감소합니다.",
+        "japanese": "1スタックにつき+[codeint0][attack]。<br>毎ターン減少する。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Buff_CharacterTooltipText",
+        "english": "+[codeint0][attack] (+[codeint1][attack] per stack).<br>Decreases every turn.",
+        "french": "+[codeint0][attack] (+[codeint1][attack] par cumul).<br>Diminue à chaque tour.",
+        "german": "+[codeint0][attack] (+[codeint1][attack] pro Stapel).<br>Wird jeden Zug reduziert.",
+        "russian": "+[codeint0][attack] (+[codeint1][attack] за слой).<br>Уменьшается каждый ход.",
+        "portuguese": "+[codeint0][attack] (+[codeint1][attack] por carga).<br>Diminui a cada turno.",
+        "chinese": "+[codeint0][attack]（每层 +[codeint1][attack]）。<br>每回合不断减少。",
+        "spanish": "+[codeint0][attack] (+[codeint1][attack] por acumulación).<br>Disminuye en cada turno.",
+        "chinese_traditional": "+[codeint0][attack]（每層+[codeint1][attack]）。<br>每回合減少。",
+        "korean": "+[codeint0][attack] (스택당 +[codeint1][attack]).<br>매 턴마다 감소합니다.",
+        "japanese": "+[codeint0][attack]（1スタックにつき+[codeint1][attack]）。<br>毎ターン減少する。"
+      },
+      "class_name": "StatusEffectBuffState",
+      "applied_sfx": "Status_Rage",
+      "display_category": "positive",
+      "trigger_stage": "none",
+      "remove_stack_at_end_of_turn": true,
+      "is_propagatable": true,
+      "exclude_hero_propagation": true,
+      "param_int": 2,
+      "allow_secondary_tooltip_placement": true,
+      "added_vfx": "@StatusEffectBuffState.addedVFX",
+      "triggered_vfx": "@StatusEffectBuffState.triggeredVFX",
+      "persistent_vfx": "@StatusEffectBuffState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectBuffState.addedVFX",
+      "vfx_prefab_left": "FX_RageApplied_PS",
+      "spawn_location": "character_bottom"
+    },
+    {
+      "id": "StatusEffectBuffState.triggeredVFX",
+      "vfx_prefab_left": "FX_RageTriggered_PS",
+      "spawn_location": "bone_status_effect_slot2"
+    },
+    {
+      "id": "StatusEffectBuffState.persistentVFX",
+      "vfx_prefab_left": "FX_RagePersistent_PS",
+      "spawn_location": "bone_status_effect_slot2"
+    }
+  ]
 }

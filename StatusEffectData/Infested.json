@@ -1,60 +1,65 @@
 {
-  "statusId": "hivemind",
-  "nameKey": {
-    "key": "StatusEffect_Hivemind_CardText",
-    "english": "[infested]",
-    "french": "[infested]",
-    "german": "[infested]",
-    "russian": "[infested]",
-    "portuguese": "[infested]",
-    "chinese": "[infested]",
-    "spanish": "[infested]",
-    "chinese_traditional": "[infested]",
-    "korean": "[infested]",
-    "japanese": "[infested]"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Hivemind_Stack_CardText",
-    "english": "<nobr>[infested] {0}</nobr>",
-    "french": "<nobr>[infested] {0}</nobr>",
-    "german": "<nobr>[infested] {0}</nobr>",
-    "russian": "<nobr>[infested] х{0}</nobr>",
-    "portuguese": "<nobr>[infested] {0}</nobr>",
-    "chinese": "<nobr>[infested] {0}</nobr>",
-    "spanish": "<nobr>[infested] {0}</nobr>",
-    "chinese_traditional": "<nobr>[infested]{0}</nobr>",
-    "korean": "<nobr>[infested] {0}</nobr>",
-    "japanese": "<nobr>[infested] {0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Hivemind_CardTooltipText",
-    "english": "+1[attack] per [infested] stacks on the Train at turn start.",
-    "french": "+1[attack] par cumul d'<b>Infestation</b> sur le train au début du tour.",
-    "german": "+1[attack] pro [infested]en Stapeln am Zug am Beginn der Runde.",
-    "russian": "В начале хода дается +1[attack] за каждый слой <b>Заражения</b> на поезде.",
-    "portuguese": "+1[attack] por cargas de [infested] no Trem no início do turno.",
-    "chinese": "回合开始时，火车每有一层 [infested] 就 +1[attack]。",
-    "spanish": "+1[attack] por acumulación de [infested] en el tren al inicio del turno.",
-    "chinese_traditional": "在回合開始時，列車上每[infested]層+1[attack]。",
-    "korean": "턴 시작 시 열차에 쌓인 [infested] 스택 하나당 +1[attack]을 적용합니다.",
-    "japanese": "列車にスタックされた[infested]1つにつき+1[attack]。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Hivemind_CharacterTooltipText",
-    "english": "+1[attack] per [infested] stacks on the Train at turn start.",
-    "french": "+1[attack] par cumul d'<b>Infestation</b> sur le train au début du tour.",
-    "german": "+1[attack] pro [infested]en Stapeln am Zug am Beginn der Runde.",
-    "russian": "В начале хода дается +1[attack] за каждый слой <b>Заражения</b> на поезде.",
-    "portuguese": "+1[attack] por cargas de [infested] no Trem no início do turno.",
-    "chinese": "回合开始时，火车每有一层 [infested] 就 +1[attack]。",
-    "spanish": "+1[attack] por acumulación de [infested] en el tren al inicio del turno.",
-    "chinese_traditional": "在回合開始時，列車上每[infested]層+1[attack]。",
-    "korean": "턴 시작 시 열차에 쌓인 [infested] 스택 하나당 +1[attack]을 적용합니다.",
-    "japanese": "列車にスタックされた[infested]1つにつき+1[attack]。"
-  },
-  "statusEffectStateName": "StatusEffectHivemindState",
-  "displayCategory": "positive",
-  "triggerStage": "on_monster_team_turn_begin",
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "hivemind",
+      "names": {
+        "key": "StatusEffect_Hivemind_CardText",
+        "english": "[infested]",
+        "french": "[infested]",
+        "german": "[infested]",
+        "russian": "[infested]",
+        "portuguese": "[infested]",
+        "chinese": "[infested]",
+        "spanish": "[infested]",
+        "chinese_traditional": "[infested]",
+        "korean": "[infested]",
+        "japanese": "[infested]"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Hivemind_Stack_CardText",
+        "english": "<nobr>[infested] {0}</nobr>",
+        "french": "<nobr>[infested] {0}</nobr>",
+        "german": "<nobr>[infested] {0}</nobr>",
+        "russian": "<nobr>[infested] х{0}</nobr>",
+        "portuguese": "<nobr>[infested] {0}</nobr>",
+        "chinese": "<nobr>[infested] {0}</nobr>",
+        "spanish": "<nobr>[infested] {0}</nobr>",
+        "chinese_traditional": "<nobr>[infested]{0}</nobr>",
+        "korean": "<nobr>[infested] {0}</nobr>",
+        "japanese": "<nobr>[infested] {0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Hivemind_CardTooltipText",
+        "english": "+1[attack] per [infested] stacks on the Train at turn start.",
+        "french": "+1[attack] par cumul d'<b>Infestation</b> sur le train au début du tour.",
+        "german": "+1[attack] pro [infested]en Stapeln am Zug am Beginn der Runde.",
+        "russian": "В начале хода дается +1[attack] за каждый слой <b>Заражения</b> на поезде.",
+        "portuguese": "+1[attack] por cargas de [infested] no Trem no início do turno.",
+        "chinese": "回合开始时，火车每有一层 [infested] 就 +1[attack]。",
+        "spanish": "+1[attack] por acumulación de [infested] en el tren al inicio del turno.",
+        "chinese_traditional": "在回合開始時，列車上每[infested]層+1[attack]。",
+        "korean": "턴 시작 시 열차에 쌓인 [infested] 스택 하나당 +1[attack]을 적용합니다.",
+        "japanese": "列車にスタックされた[infested]1つにつき+1[attack]。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Hivemind_CharacterTooltipText",
+        "english": "+1[attack] per [infested] stacks on the Train at turn start.",
+        "french": "+1[attack] par cumul d'<b>Infestation</b> sur le train au début du tour.",
+        "german": "+1[attack] pro [infested]en Stapeln am Zug am Beginn der Runde.",
+        "russian": "В начале хода дается +1[attack] за каждый слой <b>Заражения</b> на поезде.",
+        "portuguese": "+1[attack] por cargas de [infested] no Trem no início do turno.",
+        "chinese": "回合开始时，火车每有一层 [infested] 就 +1[attack]。",
+        "spanish": "+1[attack] por acumulación de [infested] en el tren al inicio del turno.",
+        "chinese_traditional": "在回合開始時，列車上每[infested]層+1[attack]。",
+        "korean": "턴 시작 시 열차에 쌓인 [infested] 스택 하나당 +1[attack]을 적용합니다.",
+        "japanese": "列車にスタックされた[infested]1つにつき+1[attack]。"
+      },
+      "class_name": "StatusEffectHivemindState",
+      "display_category": "positive",
+      "trigger_stage": "on_monster_team_turn_begin",
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true
+    }
+  ]
 }

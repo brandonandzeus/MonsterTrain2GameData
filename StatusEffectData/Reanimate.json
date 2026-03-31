@@ -1,67 +1,76 @@
 {
-  "statusId": "undying",
-  "nameKey": {
-    "key": "StatusEffect_Undying_CardText",
-    "english": "Reanimate",
-    "french": "Réanimation",
-    "german": "Wiederbeleben",
-    "russian": "Воскрешение",
-    "portuguese": "Reanimar",
-    "chinese": "复活",
-    "spanish": "Reanimación",
-    "chinese_traditional": "復活",
-    "korean": "소생",
-    "japanese": "蘇生"
-  },
-  "stackableNameKey": {
-    "key": "StatusEffect_Undying_Stack_CardText",
-    "english": "<nobr>Reanimate {0}</nobr>",
-    "french": "<nobr>Réanimation {0}</nobr>",
-    "german": "<nobr>Wiederbeleben {0}</nobr>",
-    "russian": "<nobr>Воскрешение х{0}</nobr>",
-    "portuguese": "<nobr>Reanimar {0}</nobr>",
-    "chinese": "<nobr>复活 {0}</nobr>",
-    "spanish": "<nobr>Reanimación {0}</nobr>",
-    "chinese_traditional": "<nobr>復活 {0}</nobr>",
-    "korean": "<nobr>소생 {0}</nobr>",
-    "japanese": "<nobr>蘇生{0}</nobr>"
-  },
-  "cardTooltipKey": {
-    "key": "StatusEffect_Undying_CardTooltipText",
-    "english": "When a unit with [undying] is killed, it will be revived with 1 [health] and lose 1 stack of [undying].",
-    "french": "Quand une unité avec [undying] est tuée, elle est ranimée avec <nobr>1 [health]</nobr> et perd <nobr>1 cumul</nobr> de [undying].",
-    "german": "Wenn eine Einheit mit [undying] getötet wird, wird sie mit 1 [health] wiederbelebt und verliert 1 Stapel [undying].",
-    "russian": "После смерти боец со статусом [undying] воскресает с 1 [health] и потерей одного слоя <b>воскрешения</b>.",
-    "portuguese": "Quando uma unidade com [undying] for morta, ela será reanimada com 1 [health] e perderá 1 carga de [undying].",
-    "chinese": "当带有 [undying] 的单位被击杀时，将以 1[health] 复活，并损失1层 [undying]。",
-    "spanish": "Cuando muera una unidad con [undying], revivirá con 1 de [health] y perderá 1 acumulación de [undying].",
-    "chinese_traditional": "當帶有[undying]的單位被殺死時，該單位會以1點[health]復活並失去1層[undying]。",
-    "korean": "[undying]이 있는 유닛이 사망하면 1[health]으로 부활하고 [undying] 1 스택을 잃습니다.",
-    "japanese": "[undying]のあるユニットが死亡すると1[health]で復活し、[undying]のスタックを1失う。"
-  },
-  "characterTooltipKey": {
-    "key": "StatusEffect_Undying_CharacterTooltipText",
-    "english": "When this unit is killed, it will be revived with 1 [health] and lose 1 stack of [undying].",
-    "french": "Quand cette unité est tuée, elle est ranimée avec <nobr>1 [health]</nobr> et perd <nobr>1 cumul</nobr> de [undying].",
-    "german": "Wenn diese Einheit getötet wird, wird sie mit 1 [health] wiederbelebt und verliert 1 Stapel [undying].",
-    "russian": "После смерти этот боец воскреснет с 1 [health] и потерей одного слоя эффекта [undying]",
-    "portuguese": "Quando essa unidade for morta, ela será reanimada com 1 [health] e perderá 1 carga de [undying].",
-    "chinese": "当该单位被击杀时，将以 1[health] 复活，并损失1层 [undying]。",
-    "spanish": "Cuando esta unidad muera, revivirá con 1 de [health] y perderá 1 acumulación de [undying].",
-    "chinese_traditional": "當這個單位被殺死時，該單位會以1點[health]復活並失去1層[undying]。",
-    "korean": "이 유닛이 사망하면 1[health]으로 부활하고 [undying] 1 스택을 잃습니다.",
-    "japanese": "このユニットが死亡すると1[health]で復活し、[undying]のスタックを1失う。"
-  },
-  "statusEffectStateName": "StatusEffectUndyingState",
-  "appliedSFXName": "Status_Reanimate_Applied",
-  "displayCategory": "positive",
-  "triggerStage": "none",
-  "isPropagatable": true,
-  "excludeHeroPropagation": true,
-  "paramInt": 1,
-  "allowSecondaryTooltipPlacement": true,
-  "persistentVFX": {
-    "vfxPrefabLeft": "FX_ReanimateGreen",
-    "spawnLocation": "character_bottom"
-  }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "undying",
+      "names": {
+        "key": "StatusEffect_Undying_CardText",
+        "english": "Reanimate",
+        "french": "Réanimation",
+        "german": "Wiederbeleben",
+        "russian": "Воскрешение",
+        "portuguese": "Reanimar",
+        "chinese": "复活",
+        "spanish": "Reanimación",
+        "chinese_traditional": "復活",
+        "korean": "소생",
+        "japanese": "蘇生"
+      },
+      "stackable_names": {
+        "key": "StatusEffect_Undying_Stack_CardText",
+        "english": "<nobr>Reanimate {0}</nobr>",
+        "french": "<nobr>Réanimation {0}</nobr>",
+        "german": "<nobr>Wiederbeleben {0}</nobr>",
+        "russian": "<nobr>Воскрешение х{0}</nobr>",
+        "portuguese": "<nobr>Reanimar {0}</nobr>",
+        "chinese": "<nobr>复活 {0}</nobr>",
+        "spanish": "<nobr>Reanimación {0}</nobr>",
+        "chinese_traditional": "<nobr>復活 {0}</nobr>",
+        "korean": "<nobr>소생 {0}</nobr>",
+        "japanese": "<nobr>蘇生{0}</nobr>"
+      },
+      "card_tooltips": {
+        "key": "StatusEffect_Undying_CardTooltipText",
+        "english": "When a unit with [undying] is killed, it will be revived with 1 [health] and lose 1 stack of [undying].",
+        "french": "Quand une unité avec [undying] est tuée, elle est ranimée avec <nobr>1 [health]</nobr> et perd <nobr>1 cumul</nobr> de [undying].",
+        "german": "Wenn eine Einheit mit [undying] getötet wird, wird sie mit 1 [health] wiederbelebt und verliert 1 Stapel [undying].",
+        "russian": "После смерти боец со статусом [undying] воскресает с 1 [health] и потерей одного слоя <b>воскрешения</b>.",
+        "portuguese": "Quando uma unidade com [undying] for morta, ela será reanimada com 1 [health] e perderá 1 carga de [undying].",
+        "chinese": "当带有 [undying] 的单位被击杀时，将以 1[health] 复活，并损失1层 [undying]。",
+        "spanish": "Cuando muera una unidad con [undying], revivirá con 1 de [health] y perderá 1 acumulación de [undying].",
+        "chinese_traditional": "當帶有[undying]的單位被殺死時，該單位會以1點[health]復活並失去1層[undying]。",
+        "korean": "[undying]이 있는 유닛이 사망하면 1[health]으로 부활하고 [undying] 1 스택을 잃습니다.",
+        "japanese": "[undying]のあるユニットが死亡すると1[health]で復活し、[undying]のスタックを1失う。"
+      },
+      "character_tooltips": {
+        "key": "StatusEffect_Undying_CharacterTooltipText",
+        "english": "When this unit is killed, it will be revived with 1 [health] and lose 1 stack of [undying].",
+        "french": "Quand cette unité est tuée, elle est ranimée avec <nobr>1 [health]</nobr> et perd <nobr>1 cumul</nobr> de [undying].",
+        "german": "Wenn diese Einheit getötet wird, wird sie mit 1 [health] wiederbelebt und verliert 1 Stapel [undying].",
+        "russian": "После смерти этот боец воскреснет с 1 [health] и потерей одного слоя эффекта [undying]",
+        "portuguese": "Quando essa unidade for morta, ela será reanimada com 1 [health] e perderá 1 carga de [undying].",
+        "chinese": "当该单位被击杀时，将以 1[health] 复活，并损失1层 [undying]。",
+        "spanish": "Cuando esta unidad muera, revivirá con 1 de [health] y perderá 1 acumulación de [undying].",
+        "chinese_traditional": "當這個單位被殺死時，該單位會以1點[health]復活並失去1層[undying]。",
+        "korean": "이 유닛이 사망하면 1[health]으로 부활하고 [undying] 1 스택을 잃습니다.",
+        "japanese": "このユニットが死亡すると1[health]で復活し、[undying]のスタックを1失う。"
+      },
+      "class_name": "StatusEffectUndyingState",
+      "applied_sfx": "Status_Reanimate_Applied",
+      "display_category": "positive",
+      "trigger_stage": "none",
+      "is_propagatable": true,
+      "exclude_hero_propagation": true,
+      "param_int": 1,
+      "allow_secondary_tooltip_placement": true,
+      "persistent_vfx": "@StatusEffectUndyingState.persistentVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "StatusEffectUndyingState.persistentVFX",
+      "vfx_prefab_left": "FX_ReanimateGreen",
+      "spawn_location": "character_bottom"
+    }
+  ]
 }
