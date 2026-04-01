@@ -1,87 +1,106 @@
 {
-  "id": "TinkermasterTools",
-  "guid": "db2193eb-a476-4cc4-9a26-2d0e35f46b74",
-  "name": "Inga’s Beaker",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-7cc1417cc6a9288c-43102a7b94547bf4386cd830490d7024-v2",
-    "english": "Inga’s Beaker",
-    "french": "Bécher d'Inga",
-    "german": "Ingas Humpen",
-    "russian": "Колба Инги",
-    "portuguese": "Béquer da Inga",
-    "chinese": "英伽的烧杯",
-    "spanish": "Matraz de Inga",
-    "chinese_traditional": "英格的燒杯",
-    "korean": "잉가의 비커",
-    "japanese": "インガのビーカー"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-246f86c3e18e1e94-43102a7b94547bf4386cd830490d7024-v2",
-    "english": "Increase the number of choices when using [mix] by [effect0.power].",
-    "french": "Augmente de [effect0.power] les choix à l'utilisation de [mix].",
-    "german": "Erhöhe die Anzahl an Optionen beim [mix] um [effect0.power].",
-    "russian": "[mix]: увеличивает варианты выбора на [effect0.power].",
-    "portuguese": "Aumenta o número de opções ao usar [mix] para [effect0.power].",
-    "chinese": "当使用 [mix] 时，选项数量增加 [effect0.power]。",
-    "spanish": "Aumenta el número de opciones al usar [mix] en [effect0.power].",
-    "chinese_traditional": "使用[mix]時，選擇數量增加[effect0.power]。",
-    "korean": "[mix]을 사용할 때 선택할 수 있는 옵션 수가 [effect0.power] 늘어납니다.",
-    "japanese": "[mix]使用時の選択肢を[effect0.power]増加させる。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-586d368c7cb62835-43102a7b94547bf4386cd830490d7024-v2",
-      "english": "A forgotten piece of equipment collecting dust in the corner of Dr. Orechi’s lab. Once used by a renowned researcher not soon forgotten, the unknown liquid inside still bubbles from time to time. ",
-      "french": "Utilisée jadis par un chercheur renommé, cette pièce d'équipement oubliée prend la poussière dans un coin du laboratoire du <nobr>Dr Orechi.</nobr> Le liquide inconnu à l'intérieur bouillonne encore de temps en temps.",
-      "german": "Ein vergessenes Gerät, das in der Ecke des Labors von Dr. Orechi verstaubt. Enthält eine unbekannte Flüssigkeit, die einst von einem renommierten Forscher benutzt wurde und immer noch von Zeit zu Zeit Blasen wirft.",
-      "russian": "В самом дальнем углу лаборатории доктора Оречи пылится одно старое устройство. Когда-то его использовал известный исследователь, о котором еще не скоро забудут, а неизвестная жидкость внутри до сих пор иногда пузырится. ",
-      "portuguese": "Uma peça de equipamento esquecida, acumulando poeira no canto do laboratório do Dr. Orechi. Outrora usado por um renomado pesquisador que não será esquecido tão cedo, o líquido desconhecido em seu interior ainda borbulha.",
-      "chinese": "一件被遗忘设备，尘封于奥莱奇博士实验室的角落。曾被一名不会被轻易遗忘的知名研究人员所使用，里面的不明液体还会时不时冒着气泡。",
-      "spanish": "Una pieza de equipo olvidada y cubierta de polvo en una esquina del laboratorio del Dr. Orechi. El líquido desconocido de su interior, obra de un investigador de renombre, aún burbujea ocasionalmente.",
-      "chinese_traditional": "一件在奧雷奇博士實驗室角落積灰塵的被遺忘設備。曾被一位大家都還記得的著名研究者使用，裡面不明的液體仍時不時冒泡。",
-      "korean": "오레치 박사의 실험실 구석에서 먼지에 쌓인 채 방치된 장비 파편. 저명한 연구자가 사용했던 그 시절, 한 번의 사용으로도 쉽게 잊혀지지 않았다. 내부에 담긴 정체불명의 액체는 지금도 가끔 거품을 일으킨다.",
-      "japanese": "ドクター・オレチの研究室の片隅で埃をかぶっている忘れられた装置。かつては有名な研究者が使用していたもので、内部の未知の液体は今でも時々泡立っている。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAdjustMixAmount",
-      "additionalTooltips": [
+      "id": "TinkermasterTools",
+      "name": "Inga’s Beaker",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "Tooltip_Mix",
-            "english": "Create a new Infusion card if you don't have one, otherwise upgrade the Infusion you have. ",
-            "french": "Crée une nouvelle carte d'Imprégnation si vous n'en avez pas. Sinon, améliore l'Imprégnation dont vous disposez.",
-            "german": "Erzeuge eine neue Infusionskarte, wenn du keine hast. Ansonsten wird eine vorhandene Infusion verbessert.",
-            "russian": "Создает новую карту с зельем, если у вас его нет, а если есть — улучшает уже имеющееся. ",
-            "portuguese": "Cria uma nova carta de Infusão se você não tiver uma. Caso tenha, a Infusão será melhorada.",
-            "chinese": "如果你没有注入物卡牌，则产生一张注入物卡牌，否则升级你已有的注入物卡牌。",
-            "spanish": "Crea una nueva carta de Infusión si no tienes una o mejora la que tienes.",
-            "chinese_traditional": "如果你沒有賦能卡牌，則生成一張新的，否則升級你已有的賦能卡牌。",
-            "korean": "혼합물 카드가 없다면 새로운 혼합물 카드를 생성하며, 혼합물 카드가 있다면 보유한 카드를 업그레이드합니다.",
-            "japanese": "持っていない場合は新たな薬カードを生成する。持っている場合は所有している薬を強化する。"
-          },
-          "titleKey": {
-            "key": "CardEffectMix_CardText",
-            "english": "Mix",
-            "french": "Mélange",
-            "german": "Mischen",
-            "russian": "Смешение",
-            "portuguese": "Misturar",
-            "chinese": "调配",
-            "spanish": "Mezcla",
-            "chinese_traditional": "混合",
-            "korean": "혼합",
-            "japanese": "調合"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassLazarusLeague"
           }
         }
       ],
-      "paramInt": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-7cc1417cc6a9288c-43102a7b94547bf4386cd830490d7024-v2",
+        "english": "Inga’s Beaker",
+        "french": "Bécher d'Inga",
+        "german": "Ingas Humpen",
+        "russian": "Колба Инги",
+        "portuguese": "Béquer da Inga",
+        "chinese": "英伽的烧杯",
+        "spanish": "Matraz de Inga",
+        "chinese_traditional": "英格的燒杯",
+        "korean": "잉가의 비커",
+        "japanese": "インガのビーカー"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-246f86c3e18e1e94-43102a7b94547bf4386cd830490d7024-v2",
+        "english": "Increase the number of choices when using [mix] by [effect0.power].",
+        "french": "Augmente de [effect0.power] les choix à l'utilisation de [mix].",
+        "german": "Erhöhe die Anzahl an Optionen beim [mix] um [effect0.power].",
+        "russian": "[mix]: увеличивает варианты выбора на [effect0.power].",
+        "portuguese": "Aumenta o número de opções ao usar [mix] para [effect0.power].",
+        "chinese": "当使用 [mix] 时，选项数量增加 [effect0.power]。",
+        "spanish": "Aumenta el número de opciones al usar [mix] en [effect0.power].",
+        "chinese_traditional": "使用[mix]時，選擇數量增加[effect0.power]。",
+        "korean": "[mix]을 사용할 때 선택할 수 있는 옵션 수가 [effect0.power] 늘어납니다.",
+        "japanese": "[mix]使用時の選択肢を[effect0.power]増加させる。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-586d368c7cb62835-43102a7b94547bf4386cd830490d7024-v2",
+          "english": "A forgotten piece of equipment collecting dust in the corner of Dr. Orechi’s lab. Once used by a renowned researcher not soon forgotten, the unknown liquid inside still bubbles from time to time. ",
+          "french": "Utilisée jadis par un chercheur renommé, cette pièce d'équipement oubliée prend la poussière dans un coin du laboratoire du <nobr>Dr Orechi.</nobr> Le liquide inconnu à l'intérieur bouillonne encore de temps en temps.",
+          "german": "Ein vergessenes Gerät, das in der Ecke des Labors von Dr. Orechi verstaubt. Enthält eine unbekannte Flüssigkeit, die einst von einem renommierten Forscher benutzt wurde und immer noch von Zeit zu Zeit Blasen wirft.",
+          "russian": "В самом дальнем углу лаборатории доктора Оречи пылится одно старое устройство. Когда-то его использовал известный исследователь, о котором еще не скоро забудут, а неизвестная жидкость внутри до сих пор иногда пузырится. ",
+          "portuguese": "Uma peça de equipamento esquecida, acumulando poeira no canto do laboratório do Dr. Orechi. Outrora usado por um renomado pesquisador que não será esquecido tão cedo, o líquido desconhecido em seu interior ainda borbulha.",
+          "chinese": "一件被遗忘设备，尘封于奥莱奇博士实验室的角落。曾被一名不会被轻易遗忘的知名研究人员所使用，里面的不明液体还会时不时冒着气泡。",
+          "spanish": "Una pieza de equipo olvidada y cubierta de polvo en una esquina del laboratorio del Dr. Orechi. El líquido desconocido de su interior, obra de un investigador de renombre, aún burbujea ocasionalmente.",
+          "chinese_traditional": "一件在奧雷奇博士實驗室角落積灰塵的被遺忘設備。曾被一位大家都還記得的著名研究者使用，裡面不明的液體仍時不時冒泡。",
+          "korean": "오레치 박사의 실험실 구석에서 먼지에 쌓인 채 방치된 장비 파편. 저명한 연구자가 사용했던 그 시절, 한 번의 사용으로도 쉽게 잊혀지지 않았다. 내부에 담긴 정체불명의 액체는 지금도 가끔 거품을 일으킨다.",
+          "japanese": "ドクター・オレチの研究室の片隅で埃をかぶっている忘れられた装置。かつては有名な研究者が使用していたもので、内部の未知の液体は今でも時々泡立っている。"
+        }
+      ],
+      "relic_effects": [
+        "@TinkermasterTools.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "TinkermasterTools.effects0",
+      "name": "RelicEffectAdjustMixAmount",
+      "additional_tooltips": [
+        "@TinkermasterTools.effects0.additionalTooltips0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "TinkermasterTools.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "Tooltip_Mix",
+        "english": "Create a new Infusion card if you don't have one, otherwise upgrade the Infusion you have. ",
+        "french": "Crée une nouvelle carte d'Imprégnation si vous n'en avez pas. Sinon, améliore l'Imprégnation dont vous disposez.",
+        "german": "Erzeuge eine neue Infusionskarte, wenn du keine hast. Ansonsten wird eine vorhandene Infusion verbessert.",
+        "russian": "Создает новую карту с зельем, если у вас его нет, а если есть — улучшает уже имеющееся. ",
+        "portuguese": "Cria uma nova carta de Infusão se você não tiver uma. Caso tenha, a Infusão será melhorada.",
+        "chinese": "如果你没有注入物卡牌，则产生一张注入物卡牌，否则升级你已有的注入物卡牌。",
+        "spanish": "Crea una nueva carta de Infusión si no tienes una o mejora la que tienes.",
+        "chinese_traditional": "如果你沒有賦能卡牌，則生成一張新的，否則升級你已有的賦能卡牌。",
+        "korean": "혼합물 카드가 없다면 새로운 혼합물 카드를 생성하며, 혼합물 카드가 있다면 보유한 카드를 업그레이드합니다.",
+        "japanese": "持っていない場合は新たな薬カードを生成する。持っている場合は所有している薬を強化する。"
+      },
+      "titles": {
+        "key": "CardEffectMix_CardText",
+        "english": "Mix",
+        "french": "Mélange",
+        "german": "Mischen",
+        "russian": "Смешение",
+        "portuguese": "Misturar",
+        "chinese": "调配",
+        "spanish": "Mezcla",
+        "chinese_traditional": "混合",
+        "korean": "혼합",
+        "japanese": "調合"
+      }
     }
   ]
 }

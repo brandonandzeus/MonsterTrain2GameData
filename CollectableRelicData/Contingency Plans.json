@@ -1,85 +1,101 @@
 {
-  "id": "ContingencyPlans",
-  "guid": "0278309e-d15c-4041-a8dc-b76f360f306b",
-  "name": "Contingency Plans",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-c2ac0027391bacc8-aed1cdf3453db614db8642bd0f97ac93-v2",
-    "english": "Contingency Plans",
-    "french": "Plans d'urgence",
-    "german": "Notfallpläne",
-    "russian": "Запасной план",
-    "portuguese": "Planos de Contingência",
-    "chinese": "应急计划书",
-    "spanish": "Planes de contingencia",
-    "chinese_traditional": "應變計畫",
-    "korean": "긴급 대책",
-    "japanese": "非常事態対応策"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-7b1ef42f72a8ee09-aed1cdf3453db614db8642bd0f97ac93-v2",
-    "english": "Monstrosities enter with [spikes] [effect0.status0.power].",
-    "french": "Les Monstruosités entrent avec [spikes] [effect0.status0.power].",
-    "german": "Monster erscheinen mit [spikes] [effect0.status0.power].",
-    "russian": "Чудовищам при входе даются [spikes] х[effect0.status0.power].",
-    "portuguese": "Monstruosidades entram com [spikes] [effect0.status0.power].",
-    "chinese": "怪异造物进入战斗时获得 [spikes] [effect0.status0.power]。",
-    "spanish": "Las monstruosidades entran con [spikes] [effect0.status0.power].",
-    "chinese_traditional": "怪物進場時獲得[spikes][effect0.status0.power]。",
-    "korean": "기형체가 [spikes] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "モンストロシティが[spikes] [effect0.status0.power]で出現する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-579a64d26bc020ac-aed1cdf3453db614db8642bd0f97ac93-v2",
-      "english": "“The effects of grafting body parts to creatures of opposite demonic species often results in surprising abilities.”\n—from Dr. Orechi’s notebook",
-      "french": "<nobr>« La</nobr> greffe de membres sur des créatures d'espèces démoniaques opposées donne souvent des capacités <nobr>surprenantes. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
-      "german": "„Die Transplantation von Körperteilen anderer dämonischer Spezies kann oft zu überraschenden Fähigkeiten führen.“\n—aus Dr. Orechis Notizbuch",
-      "russian": "«Эффект от пересадки частей тела существам противоположных демонических видов часто приводит к появлению удивительных способностей».\n—Из записной книжки доктора Оречи",
-      "portuguese": "“O ato de unir partes do corpo de espécies demoníacas diferentes geralmente resulta em habilidades surpreendentes.”\n— Anotação do Dr. Orechi",
-      "chinese": "“将身体部位移植到相反的恶魔物种身上，往往会产生令人惊讶的能力。”\n——摘自奥莱奇博士的笔记本",
-      "spanish": "«Combinar partes del cuerpo de especies demoníacas distintas suele dar como resultado habilidades sorprendentes».\n—Cuaderno del Dr. Orechi",
-      "chinese_traditional": "「將身體部位移植到相反惡魔種類的生物上，經常會產生令人驚訝的能力。」\n——摘自奧雷奇博士的筆記本",
-      "korean": "“서로 다른 악마 종족의 신체 부위를 이식하면 종종 놀라운 능력을 발휘한다.”\n- 오레치 박사의 기록",
-      "japanese": "「生物に異種の悪魔の一部を移植すると、驚くべき能力が生まれることが多い」\n—ドクター・オレチのメモ帳より"
+      "id": "ContingencyPlans",
+      "name": "Contingency Plans",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassLazarusLeague",
+            "description_modifiers": [
+              {
+                "id": "ContingencyPlans.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-e6f235bb3d6aa12e-aed1cdf3453db614db8642bd0f97ac93-v2",
+                  "english": "([value] Monstrosities)",
+                  "french": "([value] Monstruosités)",
+                  "german": "([value] Monster)",
+                  "russian": "([value] Чудовищ)",
+                  "portuguese": "([value] Monstruosidades)",
+                  "chinese": "([value] 怪异造物)",
+                  "spanish": "([value] Monstruosidades)",
+                  "chinese_traditional": "([value] 怪物)",
+                  "korean": "([value] 기형체)",
+                  "japanese": "([value] モンスター)"
+                },
+                "param_subtype": "SubtypesData_Monstrosity"
+              }
+            ],
+            "unlock_level": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-c2ac0027391bacc8-aed1cdf3453db614db8642bd0f97ac93-v2",
+        "english": "Contingency Plans",
+        "french": "Plans d'urgence",
+        "german": "Notfallpläne",
+        "russian": "Запасной план",
+        "portuguese": "Planos de Contingência",
+        "chinese": "应急计划书",
+        "spanish": "Planes de contingencia",
+        "chinese_traditional": "應變計畫",
+        "korean": "긴급 대책",
+        "japanese": "非常事態対応策"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-7b1ef42f72a8ee09-aed1cdf3453db614db8642bd0f97ac93-v2",
+        "english": "Monstrosities enter with [spikes] [effect0.status0.power].",
+        "french": "Les Monstruosités entrent avec [spikes] [effect0.status0.power].",
+        "german": "Monster erscheinen mit [spikes] [effect0.status0.power].",
+        "russian": "Чудовищам при входе даются [spikes] х[effect0.status0.power].",
+        "portuguese": "Monstruosidades entram com [spikes] [effect0.status0.power].",
+        "chinese": "怪异造物进入战斗时获得 [spikes] [effect0.status0.power]。",
+        "spanish": "Las monstruosidades entran con [spikes] [effect0.status0.power].",
+        "chinese_traditional": "怪物進場時獲得[spikes][effect0.status0.power]。",
+        "korean": "기형체가 [spikes] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "モンストロシティが[spikes] [effect0.status0.power]で出現する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-579a64d26bc020ac-aed1cdf3453db614db8642bd0f97ac93-v2",
+          "english": "“The effects of grafting body parts to creatures of opposite demonic species often results in surprising abilities.”\n—from Dr. Orechi’s notebook",
+          "french": "<nobr>« La</nobr> greffe de membres sur des créatures d'espèces démoniaques opposées donne souvent des capacités <nobr>surprenantes. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
+          "german": "„Die Transplantation von Körperteilen anderer dämonischer Spezies kann oft zu überraschenden Fähigkeiten führen.“\n—aus Dr. Orechis Notizbuch",
+          "russian": "«Эффект от пересадки частей тела существам противоположных демонических видов часто приводит к появлению удивительных способностей».\n—Из записной книжки доктора Оречи",
+          "portuguese": "“O ato de unir partes do corpo de espécies demoníacas diferentes geralmente resulta em habilidades surpreendentes.”\n— Anotação do Dr. Orechi",
+          "chinese": "“将身体部位移植到相反的恶魔物种身上，往往会产生令人惊讶的能力。”\n——摘自奥莱奇博士的笔记本",
+          "spanish": "«Combinar partes del cuerpo de especies demoníacas distintas suele dar como resultado habilidades sorprendentes».\n—Cuaderno del Dr. Orechi",
+          "chinese_traditional": "「將身體部位移植到相反惡魔種類的生物上，經常會產生令人驚訝的能力。」\n——摘自奧雷奇博士的筆記本",
+          "korean": "“서로 다른 악마 종족의 신체 부위를 이식하면 종종 놀라운 능력을 발휘한다.”\n- 오레치 박사의 기록",
+          "japanese": "「生物に異種の悪魔の一部を移植すると、驚くべき能力が生まれることが多い」\n—ドクター・オレチのメモ帳より"
+        }
+      ],
+      "relic_effects": [
+        "@ContingencyPlans.effects0"
+      ]
     }
   ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "ContingencyPlans.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "spikes",
+          "status": "spikes",
           "count": 7
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Monstrosity"
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Monstrosity"
     }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-e6f235bb3d6aa12e-aed1cdf3453db614db8642bd0f97ac93-v2",
-        "english": "([value] Monstrosities)",
-        "french": "([value] Monstruosités)",
-        "german": "([value] Monster)",
-        "russian": "([value] Чудовищ)",
-        "portuguese": "([value] Monstruosidades)",
-        "chinese": "([value] 怪异造物)",
-        "spanish": "([value] Monstruosidades)",
-        "chinese_traditional": "([value] 怪物)",
-        "korean": "([value] 기형체)",
-        "japanese": "([value] モンスター)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Monstrosity"
-    }
-  ],
-  "unlockLevel": 3
+  ]
 }

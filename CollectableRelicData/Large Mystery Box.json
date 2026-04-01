@@ -1,55 +1,70 @@
 {
-  "id": "GarfieldBoxRandomCardPerTurn",
-  "guid": "d537c198-899f-4385-9552-f35f58826be4",
-  "name": "Large Mystery Box",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-d0ed2d74923ce500-2663df56e1c2493488549248b6a65a40-v2",
-    "english": "Large Mystery Box",
-    "french": "Grande boîte mystère",
-    "german": "Große mysteriöse Kiste",
-    "russian": "Большая загадочная коробка",
-    "portuguese": "Caixa Misteriosa Grande",
-    "chinese": "大号神秘箱",
-    "spanish": "Caja grande y misteriosa",
-    "chinese_traditional": "大謎之盒",
-    "korean": "대형 수수께끼 상자",
-    "japanese": "大型びっくり箱"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-66559055c25a4eca-2663df56e1c2493488549248b6a65a40-v2",
-    "english": "Add a random card to your hand each turn.",
-    "french": "À chaque tour, ajoute une carte aléatoire à votre main.",
-    "german": "Nimm eine zufällige Karte pro Zug auf die Hand.",
-    "russian": "Каждый ход добавляет в вашу руку случайную карту.",
-    "portuguese": "Adiciona uma carta aleatória à sua mão a cada turno.",
-    "chinese": "每回合在你的手牌中增加一张随机牌。",
-    "spanish": "Añade una carta aleatoria a tu mano cada turno.",
-    "chinese_traditional": "每回合將一張隨機卡牌加入你的手牌。",
-    "korean": "턴을 시작할 때마다 무작위 카드를 패에 추가합니다.",
-    "japanese": "毎ターンランダムなカードを手札に追加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-3a936a46b59dc988-2663df56e1c2493488549248b6a65a40-v2",
-      "english": "What’s inside?",
-      "french": "Qu'y a-t-il à <nobr>l'intérieur ?</nobr>",
-      "german": "Was ist da drin?",
-      "russian": "Что внутри?",
-      "portuguese": "O que há dentro?",
-      "chinese": "里面有什么？",
-      "spanish": "¿Qué habrá dentro?",
-      "chinese_traditional": "裡面有什麼？",
-      "korean": "뭐가 들어 있을까?",
-      "japanese": "中身は何かな？"
+      "id": "GarfieldBoxRandomCardPerTurn",
+      "name": "Large Mystery Box",
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "champion",
+            "from_story_event": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-d0ed2d74923ce500-2663df56e1c2493488549248b6a65a40-v2",
+        "english": "Large Mystery Box",
+        "french": "Grande boîte mystère",
+        "german": "Große mysteriöse Kiste",
+        "russian": "Большая загадочная коробка",
+        "portuguese": "Caixa Misteriosa Grande",
+        "chinese": "大号神秘箱",
+        "spanish": "Caja grande y misteriosa",
+        "chinese_traditional": "大謎之盒",
+        "korean": "대형 수수께끼 상자",
+        "japanese": "大型びっくり箱"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-66559055c25a4eca-2663df56e1c2493488549248b6a65a40-v2",
+        "english": "Add a random card to your hand each turn.",
+        "french": "À chaque tour, ajoute une carte aléatoire à votre main.",
+        "german": "Nimm eine zufällige Karte pro Zug auf die Hand.",
+        "russian": "Каждый ход добавляет в вашу руку случайную карту.",
+        "portuguese": "Adiciona uma carta aleatória à sua mão a cada turno.",
+        "chinese": "每回合在你的手牌中增加一张随机牌。",
+        "spanish": "Añade una carta aleatoria a tu mano cada turno.",
+        "chinese_traditional": "每回合將一張隨機卡牌加入你的手牌。",
+        "korean": "턴을 시작할 때마다 무작위 카드를 패에 추가합니다.",
+        "japanese": "毎ターンランダムなカードを手札に追加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-3a936a46b59dc988-2663df56e1c2493488549248b6a65a40-v2",
+          "english": "What’s inside?",
+          "french": "Qu'y a-t-il à <nobr>l'intérieur ?</nobr>",
+          "german": "Was ist da drin?",
+          "russian": "Что внутри?",
+          "portuguese": "O que há dentro?",
+          "chinese": "里面有什么？",
+          "spanish": "¿Qué habrá dentro?",
+          "chinese_traditional": "裡面有什麼？",
+          "korean": "뭐가 들어 있을까?",
+          "japanese": "中身は何かな？"
+        }
+      ],
+      "relic_effects": [
+        "@GarfieldBoxRandomCardPerTurn.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "rarity": "champion",
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAddPrecachedBattleCardToHand",
-      "paramCardPool": "MegaPool"
+      "id": "GarfieldBoxRandomCardPerTurn.effects0",
+      "name": "RelicEffectAddPrecachedBattleCardToHand",
+      "param_card_pool": "MegaPool"
     }
-  ],
-  "disallowInDeploymentPhase": true,
-  "fromStoryEvent": true
+  ]
 }

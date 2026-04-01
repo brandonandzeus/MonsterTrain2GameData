@@ -1,87 +1,106 @@
 {
-  "id": "DrawOnSnackPlayed",
-  "guid": "8b00c46d-374e-4afb-aa27-526873e242d1",
-  "name": "Mask of Penumbra",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-2b4379056ca0d33d-52f663b0300f3ad4f91c7c80e5128988-v2",
-    "english": "Mask of Penumbra",
-    "french": "Masque de Penumbra",
-    "german": "Penumbras Maske",
-    "russian": "Маска Полутьмы",
-    "portuguese": "Máscara da Penumbra",
-    "chinese": "影祖面具",
-    "spanish": "Máscara de Penumbra",
-    "chinese_traditional": "半影族的面具",
-    "korean": "페넘브라의 가면",
-    "japanese": "ペナンブラの仮面"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-5a9b40336b4f7099-52f663b0300f3ad4f91c7c80e5128988-v2",
-    "english": "When you play your first [snack] unit each turn, draw [effect0.power].",
-    "french": "À chaque tour, lorsque vous invoquez votre premier <b>sous-bistre</b>, piochez [effect0.power] carte(s).",
-    "german": "Wenn du deine erste Nugget-Einheit in jedem Zug spielst, ziehe [effect0.power] Karte(n).",
-    "russian": "Каждый ход при призыве первого <b>Заморыша</b> возьмите [effect0.power].",
-    "portuguese": "Ao invocar seu primeiro <b>Lancho</b> a cada turno, compre [effect0.power].",
-    "chinese": "当你每回合首次召唤[snack]单位时，抽 [effect0.power] 张牌。",
-    "spanish": "Al jugar tu primera unidad [snack] de cada turno, roba [effect0.power].",
-    "chinese_traditional": "當你打出第一個[snack]單位時，抽[effect0.power]張牌。",
-    "korean": "매 턴에 첫 번째 [snack] 유닛을 사용할 때마다 [effect0.power]장을 뽑습니다.",
-    "japanese": "毎ターン最初の[snack]ユニットのプレイ時、ドロー[effect0.power]。"
-  },
-  "relicActivatedKey": {
-    "key": "CollectableRelicData_relicActivatedKey-5ae1ffd340699664-52f663b0300f3ad4f91c7c80e5128988-v2",
-    "english": "Draw!",
-    "french": "Piochée !",
-    "german": "Ziehen!",
-    "russian": "Возьмите!",
-    "portuguese": "Compre!",
-    "chinese": "抽牌！",
-    "spanish": "¡Roba!",
-    "chinese_traditional": "抽牌！",
-    "korean": "카드 추가!",
-    "japanese": "ドロー！"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-11bda17e527257c4-52f663b0300f3ad4f91c7c80e5128988-v2",
-      "english": "A discarded mask of the shadow known as Penumbra. I’ve encountered several of these throughout the mines. The shadow seems to outgrow them quickly.",
-      "french": "Un masque abandonné par l'ombre du nom de Penumbra. J'en ai déjà trouvé plusieurs dans les mines. La créature des ténèbres semble devenir trop grande pour eux très rapidement.",
-      "german": "Eine abgeworfene Maske des Schattens namens Penumbra. Ich habe einige davon in den Minen gefunden; der Schatten scheint schnell aus ihnen herauszuwachsen.",
-      "russian": "Потерянная маска тени, именующей себя Полутьмой. Я не раз находил такие в шахтах. Похоже, тень быстро вырастает из них.",
-      "portuguese": "Uma máscara descartada da sombra conhecida como Penumbra. Encontrei várias delas nas minas; a sombra parece descartá-las com frequência.",
-      "chinese": "被称为“影祖”的影子所丢弃的面具。在整个矿山中，我遇到过几次影祖。它们身上的影子似乎会将它们的身型快速吞没。",
-      "spanish": "Una máscara abandonada de la sombra conocida como Penumbra. Me he encontrado varias de ellas en las minas. Parece que no tardan en quedarse pequeñas.",
-      "chinese_traditional": "被半影族丟棄的面具。我在礦井中遇到過幾個。陰影似乎很快就不再需要它們了。",
-      "korean": "페넘브라라는 이름으로 알려진 그림자의 버려진 가면이다. 비슷한 가면을 광산 곳곳에서 여러 번 본 적이 있다. 이 그림자의 성장 속도는 매우 빨라 보인다.",
-      "japanese": "ペナンブラとして知られる影が破棄したマスク。鉱山のあちこちでこれに何度か遭遇した。どうやら影の成長が早いため、すぐにマスクが小さくなってしまうようだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectCardDrawOnCardPlay",
-      "paramCardType": "monster",
-      "effectConditions": [
+      "id": "DrawOnSnackPlayed",
+      "name": "Mask of Penumbra",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "paramCardType": "monster",
-          "paramTrackedValue": "times_played",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "greater_than",
-            "equal"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassUmbra",
+            "unlock_level": 6
+          }
         }
       ],
-      "paramInt": 1,
-      "paramCharacterSubtype": "SubtypesData_Snack"
+      "names": {
+        "key": "CollectableRelicData_nameKey-2b4379056ca0d33d-52f663b0300f3ad4f91c7c80e5128988-v2",
+        "english": "Mask of Penumbra",
+        "french": "Masque de Penumbra",
+        "german": "Penumbras Maske",
+        "russian": "Маска Полутьмы",
+        "portuguese": "Máscara da Penumbra",
+        "chinese": "影祖面具",
+        "spanish": "Máscara de Penumbra",
+        "chinese_traditional": "半影族的面具",
+        "korean": "페넘브라의 가면",
+        "japanese": "ペナンブラの仮面"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-5a9b40336b4f7099-52f663b0300f3ad4f91c7c80e5128988-v2",
+        "english": "When you play your first [snack] unit each turn, draw [effect0.power].",
+        "french": "À chaque tour, lorsque vous invoquez votre premier <b>sous-bistre</b>, piochez [effect0.power] carte(s).",
+        "german": "Wenn du deine erste Nugget-Einheit in jedem Zug spielst, ziehe [effect0.power] Karte(n).",
+        "russian": "Каждый ход при призыве первого <b>Заморыша</b> возьмите [effect0.power].",
+        "portuguese": "Ao invocar seu primeiro <b>Lancho</b> a cada turno, compre [effect0.power].",
+        "chinese": "当你每回合首次召唤[snack]单位时，抽 [effect0.power] 张牌。",
+        "spanish": "Al jugar tu primera unidad [snack] de cada turno, roba [effect0.power].",
+        "chinese_traditional": "當你打出第一個[snack]單位時，抽[effect0.power]張牌。",
+        "korean": "매 턴에 첫 번째 [snack] 유닛을 사용할 때마다 [effect0.power]장을 뽑습니다.",
+        "japanese": "毎ターン最初の[snack]ユニットのプレイ時、ドロー[effect0.power]。"
+      },
+      "relic_activated_texts": {
+        "key": "CollectableRelicData_relicActivatedKey-5ae1ffd340699664-52f663b0300f3ad4f91c7c80e5128988-v2",
+        "english": "Draw!",
+        "french": "Piochée !",
+        "german": "Ziehen!",
+        "russian": "Возьмите!",
+        "portuguese": "Compre!",
+        "chinese": "抽牌！",
+        "spanish": "¡Roba!",
+        "chinese_traditional": "抽牌！",
+        "korean": "카드 추가!",
+        "japanese": "ドロー！"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-11bda17e527257c4-52f663b0300f3ad4f91c7c80e5128988-v2",
+          "english": "A discarded mask of the shadow known as Penumbra. I’ve encountered several of these throughout the mines. The shadow seems to outgrow them quickly.",
+          "french": "Un masque abandonné par l'ombre du nom de Penumbra. J'en ai déjà trouvé plusieurs dans les mines. La créature des ténèbres semble devenir trop grande pour eux très rapidement.",
+          "german": "Eine abgeworfene Maske des Schattens namens Penumbra. Ich habe einige davon in den Minen gefunden; der Schatten scheint schnell aus ihnen herauszuwachsen.",
+          "russian": "Потерянная маска тени, именующей себя Полутьмой. Я не раз находил такие в шахтах. Похоже, тень быстро вырастает из них.",
+          "portuguese": "Uma máscara descartada da sombra conhecida como Penumbra. Encontrei várias delas nas minas; a sombra parece descartá-las com frequência.",
+          "chinese": "被称为“影祖”的影子所丢弃的面具。在整个矿山中，我遇到过几次影祖。它们身上的影子似乎会将它们的身型快速吞没。",
+          "spanish": "Una máscara abandonada de la sombra conocida como Penumbra. Me he encontrado varias de ellas en las minas. Parece que no tardan en quedarse pequeñas.",
+          "chinese_traditional": "被半影族丟棄的面具。我在礦井中遇到過幾個。陰影似乎很快就不再需要它們了。",
+          "korean": "페넘브라라는 이름으로 알려진 그림자의 버려진 가면이다. 비슷한 가면을 광산 곳곳에서 여러 번 본 적이 있다. 이 그림자의 성장 속도는 매우 빨라 보인다.",
+          "japanese": "ペナンブラとして知られる影が破棄したマスク。鉱山のあちこちでこれに何度か遭遇した。どうやら影の成長が早いため、すぐにマスクが小さくなってしまうようだ。"
+        }
+      ],
+      "relic_effects": [
+        "@DrawOnSnackPlayed.effects0"
+      ]
     }
   ],
-  "unlockLevel": 6
+  "relic_effects": [
+    {
+      "id": "DrawOnSnackPlayed.effects0",
+      "name": "RelicEffectCardDrawOnCardPlay",
+      "param_card_type": "monster",
+      "conditions": [
+        "@DrawOnSnackPlayed.effects0.effectConditions0"
+      ],
+      "param_int": 1,
+      "param_subtype": "SubtypesData_Snack"
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "DrawOnSnackPlayed.effects0.effectConditions0",
+      "param_card_type": "monster",
+      "param_tracked_value": "times_played",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "greater_than",
+        "equal"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ]
 }

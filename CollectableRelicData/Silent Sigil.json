@@ -1,94 +1,114 @@
 {
-  "id": "MoonPhaseAddArmorToSilent",
-  "guid": "e013b17d-753b-47b8-a837-02af85addb4b",
-  "name": "Silent Sigil",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-8a6eaa7d82480428-cf504f01541a7ca41bfa3c4344ccbab1-v2",
-    "english": "Silent Sigil",
-    "french": "Emblème des Silencieux",
-    "german": "Stilles Siegel",
-    "russian": "Знак Молчунов",
-    "portuguese": "Símbolo dos Silenciosos",
-    "chinese": "寂静者符文",
-    "spanish": "Sello silencioso",
-    "chinese_traditional": "無聲者印記",
-    "korean": "묵언자의 인장",
-    "japanese": "サイレントの印"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-0f21faf33b0bc566-cf504f01541a7ca41bfa3c4344ccbab1-v2",
-    "english": "When it becomes [new], apply [armor] [effect0.status0.power] to friendly Silent units.",
-    "french": "Au passage à la [new], confère [armor] [effect0.status0.power] aux Silencieux alliés.",
-    "german": "Bei [new]: Wende [armor] [effect0.status0.power] auf verbündete Stille-Einheiten an.",
-    "russian": "Когда начинается [new], Молчунам дается [armor] х[effect0.status0.power].",
-    "portuguese": "Quando a fase se tornar [new], concederá [armor] [effect0.status0.power] às unidades aliadas dos Silenciosos.",
-    "chinese": "月相变为[new]时，使友方寂静者单位获得 [armor] [effect0.status0.power]。",
-    "spanish": "Cuando es [new], añade [armor] [effect0.status0.power] a los silenciosos aliados.",
-    "chinese_traditional": "當它變成[new]時，對友方沉默單位施加[armor][effect0.status0.power]。",
-    "korean": "[new]이 뜨면, 아군 묵언자 유닛들에게 [armor] [effect0.status0.power] 효과를 적용합니다.",
-    "japanese": "[new]になると、味方のサイレントユニットに[armor] [effect0.status0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-8dff408df340a5d2-cf504f01541a7ca41bfa3c4344ccbab1-v2",
-      "english": "A banner torn from the ancient temple of the Luna Coven. The fae hope that one day they can hang this cloth once more.",
-      "french": "Une bannière arrachée à l'ancien temple des Lunariens. Les fées espèrent qu'un jour, elles pourront la hisser à nouveau.",
-      "german": "Ein Banner aus dem alten Tempel des Luna-Zirkels. Die Feen hoffen, dass sie dieses Tuch einst wieder aufhängen können.",
-      "russian": "Знамя, сорванное с древнего храма Лунного ковена. Феи надеются, что однажды смогут повесить его снова.",
-      "portuguese": "Um estandarte arrancado do antigo templo da Irmandade Lunar. Os fae esperam que um dia possam pendurar esse tecido novamente.",
-      "chinese": "从月巫团的古老神殿中撕下的旗帜。妖精们希望有一天能再次将它升起。",
-      "spanish": "Un estandarte arrancado del antiguo templo del Aquelarre de Selene. Las hadas esperan algún día volver a colgarlo.",
-      "chinese_traditional": "一面從月之女巫古老神廟撕下來的旗幟。精靈希望有朝一日能再次懸掛這塊布。",
-      "korean": "고대의 달 집회 신전에서 떨어져 나간 깃발. 요정은 언젠가 이 깃발을 다시 걸 날을 기다리고 있다.",
-      "japanese": "月魔族の古代寺院から引き千切られた旗。妖精たちは、いつの日かこれを再び掲げることができることを望んでいる。"
+      "id": "MoonPhaseAddArmorToSilent",
+      "name": "Silent Sigil",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassLunaCoven",
+            "description_modifiers": [
+              {
+                "id": "MoonPhaseAddArmorToSilent.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-66b528c7abf8fc27-cf504f01541a7ca41bfa3c4344ccbab1-v2",
+                  "english": "([value] Silent units)",
+                  "french": "([value] unités Silencieux)",
+                  "german": "([value] Stille-Einheiten)",
+                  "russian": "([value] Молчунов)",
+                  "portuguese": "([value] unidades Silenciosos)",
+                  "chinese": "([value] 寂静者单位)",
+                  "spanish": "([value] unidades silenciosos)",
+                  "chinese_traditional": "([value] 無聲者單位)",
+                  "korean": "([value] 묵언자 유닛)",
+                  "japanese": "([value] サイレントユニット)"
+                },
+                "param_subtype": "SubtypesData_Silent"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-8a6eaa7d82480428-cf504f01541a7ca41bfa3c4344ccbab1-v2",
+        "english": "Silent Sigil",
+        "french": "Emblème des Silencieux",
+        "german": "Stilles Siegel",
+        "russian": "Знак Молчунов",
+        "portuguese": "Símbolo dos Silenciosos",
+        "chinese": "寂静者符文",
+        "spanish": "Sello silencioso",
+        "chinese_traditional": "無聲者印記",
+        "korean": "묵언자의 인장",
+        "japanese": "サイレントの印"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-0f21faf33b0bc566-cf504f01541a7ca41bfa3c4344ccbab1-v2",
+        "english": "When it becomes [new], apply [armor] [effect0.status0.power] to friendly Silent units.",
+        "french": "Au passage à la [new], confère [armor] [effect0.status0.power] aux Silencieux alliés.",
+        "german": "Bei [new]: Wende [armor] [effect0.status0.power] auf verbündete Stille-Einheiten an.",
+        "russian": "Когда начинается [new], Молчунам дается [armor] х[effect0.status0.power].",
+        "portuguese": "Quando a fase se tornar [new], concederá [armor] [effect0.status0.power] às unidades aliadas dos Silenciosos.",
+        "chinese": "月相变为[new]时，使友方寂静者单位获得 [armor] [effect0.status0.power]。",
+        "spanish": "Cuando es [new], añade [armor] [effect0.status0.power] a los silenciosos aliados.",
+        "chinese_traditional": "當它變成[new]時，對友方沉默單位施加[armor][effect0.status0.power]。",
+        "korean": "[new]이 뜨면, 아군 묵언자 유닛들에게 [armor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[new]になると、味方のサイレントユニットに[armor] [effect0.status0.power]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-8dff408df340a5d2-cf504f01541a7ca41bfa3c4344ccbab1-v2",
+          "english": "A banner torn from the ancient temple of the Luna Coven. The fae hope that one day they can hang this cloth once more.",
+          "french": "Une bannière arrachée à l'ancien temple des Lunariens. Les fées espèrent qu'un jour, elles pourront la hisser à nouveau.",
+          "german": "Ein Banner aus dem alten Tempel des Luna-Zirkels. Die Feen hoffen, dass sie dieses Tuch einst wieder aufhängen können.",
+          "russian": "Знамя, сорванное с древнего храма Лунного ковена. Феи надеются, что однажды смогут повесить его снова.",
+          "portuguese": "Um estandarte arrancado do antigo templo da Irmandade Lunar. Os fae esperam que um dia possam pendurar esse tecido novamente.",
+          "chinese": "从月巫团的古老神殿中撕下的旗帜。妖精们希望有一天能再次将它升起。",
+          "spanish": "Un estandarte arrancado del antiguo templo del Aquelarre de Selene. Las hadas esperan algún día volver a colgarlo.",
+          "chinese_traditional": "一面從月之女巫古老神廟撕下來的旗幟。精靈希望有朝一日能再次懸掛這塊布。",
+          "korean": "고대의 달 집회 신전에서 떨어져 나간 깃발. 요정은 언젠가 이 깃발을 다시 걸 날을 기다리고 있다.",
+          "japanese": "月魔族の古代寺院から引き千切られた旗。妖精たちは、いつの日かこれを再び掲げることができることを望んでいる。"
+        }
+      ],
+      "relic_effects": [
+        "@MoonPhaseAddArmorToSilent.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnMoonPhase",
-      "paramStatusEffects": [
+      "id": "MoonPhaseAddArmorToSilent.effects0",
+      "name": "RelicEffectAddStatusEffectOnMoonPhase",
+      "param_status_effects": [
         {
-          "statusId": "armor",
+          "status": "armor",
           "count": 10
         }
       ],
-      "additionalTooltips": [
-        {
-          "trigger": "on_moon_shade",
-          "style": "default",
-          "isTriggerTooltip": true
-        }
+      "additional_tooltips": [
+        "@MoonPhaseAddArmorToSilent.effects0.additionalTooltips0"
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt2": 1,
-      "paramCharacterSubtype": "SubtypesData_Silent",
-      "paramBool": true,
-      "paramTargetMode": "tower"
+      "param_source_team": "monsters",
+      "param_int_2": 1,
+      "param_subtype": "SubtypesData_Silent",
+      "param_bool": true,
+      "target_mode": "tower"
     }
   ],
-  "descriptionModifiers": [
+  "additional_tooltips": [
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-66b528c7abf8fc27-cf504f01541a7ca41bfa3c4344ccbab1-v2",
-        "english": "([value] Silent units)",
-        "french": "([value] unités Silencieux)",
-        "german": "([value] Stille-Einheiten)",
-        "russian": "([value] Молчунов)",
-        "portuguese": "([value] unidades Silenciosos)",
-        "chinese": "([value] 寂静者单位)",
-        "spanish": "([value] unidades silenciosos)",
-        "chinese_traditional": "([value] 無聲者單位)",
-        "korean": "([value] 묵언자 유닛)",
-        "japanese": "([value] サイレントユニット)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Silent"
+      "isTriggerTooltip": true,
+      "id": "MoonPhaseAddArmorToSilent.effects0.additionalTooltips0",
+      "trigger": "on_moon_shade",
+      "style": "default"
     }
   ]
 }

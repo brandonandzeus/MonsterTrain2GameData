@@ -1,80 +1,96 @@
 {
-  "id": "EmberOnTombDeath",
-  "guid": "4a5b1613-568c-4bf6-8bf7-15f8bf013345",
-  "name": "Encased Ember",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-6ef5a6cd8982b6c0-41c937a7309d41b4e83f8f47c357aec2-v2",
-    "english": "Encased Ember",
-    "french": "Braise cireuse",
-    "german": "Umhüllte Glutasche",
-    "russian": "Запечатанный уголь",
-    "portuguese": "Brasa Resguardada",
-    "chinese": "蜡衣余烬",
-    "spanish": "Ascua atrapada",
-    "chinese_traditional": "封印的餘燼",
-    "korean": "보존된 잔불",
-    "japanese": "封じられたエンバー"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-205d67cee9077e64-41c937a7309d41b4e83f8f47c357aec2-v2",
-    "english": "Gain [effect0.power][ember] when a [tomb] unit dies.",
-    "french": "Octroie [effect0.power][ember] lorsqu'un tombeau meurt.",
-    "german": "Erhalte [effect0.power] [ember], wenn eine Tropf-Einheit stirbt.",
-    "russian": "Дает [effect0.power][ember], если погибает Вплавление.",
-    "portuguese": "Recebe [effect0.power][ember] quando uma unidade [tomb] morre.",
-    "chinese": "每当一个墓灵单位死亡时，获得 [effect0.power][ember]。",
-    "spanish": "Obtienes [effect0.power][ember] cuando una unidad [tomb] muere.",
-    "chinese_traditional": "有[tomb]單位死亡時，獲得[effect0.power][ember]。",
-    "korean": "[tomb] 유닛이 사망하면 [effect0.power][ember]을 획득합니다.",
-    "japanese": "[tomb]ユニットが死亡すると、[effect0.power][ember]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-7efb5462ac3411e0-41c937a7309d41b4e83f8f47c357aec2-v2",
-      "english": "It seems that throughout the existence of the Waxen Arches, everything has fallen victim to wax encasement. Not even the Ember of the Pyre has been spared, though I’ve collected any I’ve seen trapped to free them again later.",
-      "french": "Il semble que depuis l'apparition des arches de cire, tout a fini enduit de cire. Les braises du Brasier n'ont pas été épargnées, mais j'ai tout de même récupéré celles que j'ai trouvées afin de les libérer plus tard.",
-      "german": "Anscheinend ist im Laufe der Zeit alles in den Wächsernen Gewölben von Wachs umhüllt worden. Nicht einmal die Glutasche der Höllenglut wurde verschont. Ich habe alles mitgenommen, was ich finden konnte, um sie irgendwann wieder zu befreien.",
-      "russian": "Похоже, Арки за время своего существования погребли все вокруг себя под слоем воска. Не повезло даже углям Пекла, хотя я и собрал несколько, чтобы возродить их позднее.",
-      "portuguese": "Parece que, ao longo da existência dos Arcos Céreos, todas as coisas acabaram cobertas de cera. Nem mesmo a Brasa da Pira foi poupada. No fim, acabei coletando as que encontrei para liberá-las mais tarde.",
-      "chinese": "看起来，在蜡像拱门存续期间，一切都会被包裹在蜡油之中，就连薪火的余烬也不例外。不过，我已经将沿途所见被困的都收集起来了，打算日后让它们重获自由。",
-      "spanish": "Parece que, desde que existen los Arcos Encerados, todo ha caído víctima de sus garras. Ni siquiera se zafaron de ellas las ascuas de la Pira, a pesar de mis esfuerzos por recoger todas las que he visto atrapadas y volver a liberarlas más tarde.",
-      "chinese_traditional": "在蠟燭拱門的存在過程中，似乎一切都成為蠟燭封裝的受害者。就連火堆的餘燼也未能倖免，不過我收集了任何我看到被困的餘燼，以便日後釋放。",
-      "korean": "밀랍 아치가 존재하는 동안 모든 것들이 밀랍에 갇힌 희생물이 된 것처럼 보였다. 화로에서 튀어나온 잔불조차 예외가 아니었지만, 나는 갇힌 것들을 보며 나중에 다시 사용할 수 있도록 수거했다.",
-      "japanese": "どうやら、ワクセン・アーチはその創生からずっと、あらゆるものが蝋で覆われているようだ。エンバーさえも包みこまれてしまったようだが、後で解放できるように、すべて集めておいたのだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassRemnant",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectEmberOnUnitTrigger",
-      "paramSourceTeam": "monsters",
-      "paramInt": 5,
-      "paramCharacterSubtype": "SubtypesData_Tomb"
-    }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-48bc8d42a9b4dec6-41c937a7309d41b4e83f8f47c357aec2-v2",
-        "english": "([value] [tomb] units)",
-        "french": "([value] unités [tomb])",
-        "german": "([value] [tomb]-Einheiten)",
-        "russian": "([value] [tomb] бойцов)",
-        "portuguese": "([value] unidades [tomb])",
-        "chinese": "([value] [tomb]单位)",
-        "spanish": "([value] unidades [tomb])",
-        "chinese_traditional": "([value] [tomb]單位)",
-        "korean": "([value] [tomb] 유닛)",
-        "japanese": "([value] [tomb]ユニット)"
+      "id": "EmberOnTombDeath",
+      "name": "Encased Ember",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRemnant",
+            "description_modifiers": [
+              {
+                "id": "EmberOnTombDeath.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-48bc8d42a9b4dec6-41c937a7309d41b4e83f8f47c357aec2-v2",
+                  "english": "([value] [tomb] units)",
+                  "french": "([value] unités [tomb])",
+                  "german": "([value] [tomb]-Einheiten)",
+                  "russian": "([value] [tomb] бойцов)",
+                  "portuguese": "([value] unidades [tomb])",
+                  "chinese": "([value] [tomb]单位)",
+                  "spanish": "([value] unidades [tomb])",
+                  "chinese_traditional": "([value] [tomb]單位)",
+                  "korean": "([value] [tomb] 유닛)",
+                  "japanese": "([value] [tomb]ユニット)"
+                },
+                "param_subtype": "SubtypesData_Tomb"
+              }
+            ],
+            "unlock_level": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-6ef5a6cd8982b6c0-41c937a7309d41b4e83f8f47c357aec2-v2",
+        "english": "Encased Ember",
+        "french": "Braise cireuse",
+        "german": "Umhüllte Glutasche",
+        "russian": "Запечатанный уголь",
+        "portuguese": "Brasa Resguardada",
+        "chinese": "蜡衣余烬",
+        "spanish": "Ascua atrapada",
+        "chinese_traditional": "封印的餘燼",
+        "korean": "보존된 잔불",
+        "japanese": "封じられたエンバー"
       },
-      "paramCharacterSubtype": "SubtypesData_Tomb"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-205d67cee9077e64-41c937a7309d41b4e83f8f47c357aec2-v2",
+        "english": "Gain [effect0.power][ember] when a [tomb] unit dies.",
+        "french": "Octroie [effect0.power][ember] lorsqu'un tombeau meurt.",
+        "german": "Erhalte [effect0.power] [ember], wenn eine Tropf-Einheit stirbt.",
+        "russian": "Дает [effect0.power][ember], если погибает Вплавление.",
+        "portuguese": "Recebe [effect0.power][ember] quando uma unidade [tomb] morre.",
+        "chinese": "每当一个墓灵单位死亡时，获得 [effect0.power][ember]。",
+        "spanish": "Obtienes [effect0.power][ember] cuando una unidad [tomb] muere.",
+        "chinese_traditional": "有[tomb]單位死亡時，獲得[effect0.power][ember]。",
+        "korean": "[tomb] 유닛이 사망하면 [effect0.power][ember]을 획득합니다.",
+        "japanese": "[tomb]ユニットが死亡すると、[effect0.power][ember]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-7efb5462ac3411e0-41c937a7309d41b4e83f8f47c357aec2-v2",
+          "english": "It seems that throughout the existence of the Waxen Arches, everything has fallen victim to wax encasement. Not even the Ember of the Pyre has been spared, though I’ve collected any I’ve seen trapped to free them again later.",
+          "french": "Il semble que depuis l'apparition des arches de cire, tout a fini enduit de cire. Les braises du Brasier n'ont pas été épargnées, mais j'ai tout de même récupéré celles que j'ai trouvées afin de les libérer plus tard.",
+          "german": "Anscheinend ist im Laufe der Zeit alles in den Wächsernen Gewölben von Wachs umhüllt worden. Nicht einmal die Glutasche der Höllenglut wurde verschont. Ich habe alles mitgenommen, was ich finden konnte, um sie irgendwann wieder zu befreien.",
+          "russian": "Похоже, Арки за время своего существования погребли все вокруг себя под слоем воска. Не повезло даже углям Пекла, хотя я и собрал несколько, чтобы возродить их позднее.",
+          "portuguese": "Parece que, ao longo da existência dos Arcos Céreos, todas as coisas acabaram cobertas de cera. Nem mesmo a Brasa da Pira foi poupada. No fim, acabei coletando as que encontrei para liberá-las mais tarde.",
+          "chinese": "看起来，在蜡像拱门存续期间，一切都会被包裹在蜡油之中，就连薪火的余烬也不例外。不过，我已经将沿途所见被困的都收集起来了，打算日后让它们重获自由。",
+          "spanish": "Parece que, desde que existen los Arcos Encerados, todo ha caído víctima de sus garras. Ni siquiera se zafaron de ellas las ascuas de la Pira, a pesar de mis esfuerzos por recoger todas las que he visto atrapadas y volver a liberarlas más tarde.",
+          "chinese_traditional": "在蠟燭拱門的存在過程中，似乎一切都成為蠟燭封裝的受害者。就連火堆的餘燼也未能倖免，不過我收集了任何我看到被困的餘燼，以便日後釋放。",
+          "korean": "밀랍 아치가 존재하는 동안 모든 것들이 밀랍에 갇힌 희생물이 된 것처럼 보였다. 화로에서 튀어나온 잔불조차 예외가 아니었지만, 나는 갇힌 것들을 보며 나중에 다시 사용할 수 있도록 수거했다.",
+          "japanese": "どうやら、ワクセン・アーチはその創生からずっと、あらゆるものが蝋で覆われているようだ。エンバーさえも包みこまれてしまったようだが、後で解放できるように、すべて集めておいたのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@EmberOnTombDeath.effects0"
+      ]
     }
   ],
-  "unlockLevel": 5
+  "relic_effects": [
+    {
+      "id": "EmberOnTombDeath.effects0",
+      "name": "RelicEffectEmberOnUnitTrigger",
+      "param_source_team": "monsters",
+      "param_int": 5,
+      "param_subtype": "SubtypesData_Tomb"
+    }
+  ]
 }

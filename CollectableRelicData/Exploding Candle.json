@@ -1,82 +1,105 @@
 {
-  "id": "DamageOnBurnoutDeath",
-  "guid": "cb54fe76-9b3c-47f9-972c-424ec3ee39f7",
-  "name": "Exploding Candle",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-50790b4c6dd36cd4-3e4910125c53bcf42a3c9baa652348ab-v2",
-    "english": "Exploding Candle",
-    "french": "Bougie explosive",
-    "german": "Explodierende Kerze",
-    "russian": "Взрывная свеча",
-    "portuguese": "Vela Explosiva",
-    "chinese": "爆裂蜡烛",
-    "spanish": "Vela explosiva",
-    "chinese_traditional": "爆裂蠟燭",
-    "korean": "폭발 양초",
-    "japanese": "ロウソク爆弾"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-8779f0e176882cf6-3e4910125c53bcf42a3c9baa652348ab-v2",
-    "english": "Deal [effect0.power] damage to enemy units when a [burnout] unit dies.",
-    "french": "Inflige <nobr>[effect0.power] DGT</nobr> aux unités ennemies lorsqu'une unité avec [burnout] meurt.",
-    "german": "Füge gegnerischen Einheiten [effect0.power] Schaden zu, wenn eine [burnout]-Einheit stirbt.",
-    "russian": "Наносит [effect0.power] урона бойцам врага, если погибает боец, имеющий [burnout].",
-    "portuguese": "Causa [effect0.power] de dano às unidades inimigas quando uma unidade com [burnout] morre.",
-    "chinese": "当一名 [burnout] 单位死亡时，对所有敌方单位造成 [effect0.power] 点伤害。",
-    "spanish": "Inflige [effect0.power] de daño a las unidades enemigas cuando una unidad con [burnout] muere.",
-    "chinese_traditional": "當一個[burnout]單位死亡時，對敵方單位造成[effect0.power]點傷害。",
-    "korean": "[burnout] 효과를 지닌 유닛이 사망하면 적 유닛들에게 [effect0.power]의 피해를 입힙니다.",
-    "japanese": "[burnout]状態のユニットが死亡すると、敵ユニットに[effect0.power]のダメージを与える。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-d25bd7647dcffb5c-3e4910125c53bcf42a3c9baa652348ab-v2",
-      "english": "When Flicker decided to help me unite the Ring and build the Rail, he lit a ceremonial candle to commemorate the event. Appropriately, the current state of the candle reflects the state of the Covenant it was created to represent. ",
-      "french": "Lorsque Vacilly a décidé de m'aider à unifier le cercle et construire la Voie, il a allumé un cierge pour marquer l'événement. D'une façon très pertinente, l'état actuel de la bougie reflète celui de l'alliance qu'elle est censée représenter.",
-      "german": "Als Flacker beschloss, mir dabei zu helfen, den Kreis zu vereinen und das Gleis zu bauen, entzündete er eine zeremonielle Kerze. Passenderweise repräsentiert die Kerze in ihrem jetzigen Zustand den Zustand des Paktes, in dessen Gedenken sie geschaffen wurde.",
-      "russian": "Когда Мерцало согласился помочь мне объединить свой Круг и построить Железную дорогу, он зажег церемониальную свечу, чтобы отпраздновать это событие. И нынешнее состояние этой свечи может служить символом того, что стало с Согласием. ",
-      "portuguese": "Quando Bruxuleio decidiu me ajudar a unir os Círculos e construir o Trilho, ele acendeu uma vela cerimonial para comemorar o fato. Oportunamente, o estado atual da vela reflete o estado do Pacto que ela foi criada para representar.",
-      "chinese": "当烛焰答应帮助我联合地狱九界重铸铁道时，他点燃了一支仪式蜡烛，用来纪念这一事件。这只蜡烛当前的状态，恰如其分地反映了契约创立之时的状态。",
-      "spanish": "Cuando Cirio decidió ayudarme a unificar el anillo y construir los Raíles, encendió una vela ceremonial para conmemorar la ocasión. Su estado actual es una representación adecuada del estado de la Coalición que llevó a su creación.",
-      "chinese_traditional": "當火光決定幫助我統一各大界域並建造軌道時，他點燃了一支儀式蠟燭來紀念這件事。恰好蠟燭現在的狀態反映了它當初被製造出來所要代表的新盟的狀態。",
-      "korean": "플리커가 고리를 통합하고 선로 건설에 도움을 주겠다고 결심했을 때, 이를 기념할 목적으로 의식용 초에 불을 붙였다. 실로 적절하게도 촛불의 현재 모습은 이를 상징하는 맹약의 상태를 그대로 반영한다.",
-      "japanese": "フリッカーがリングを統合して鉄道を敷設するのを手伝うと決めたとき、彼はそれを記念する儀式用のロウソクに火を灯した。そのロウソクの火は、盟約の状況を反映するようになっている。"
+      "id": "DamageOnBurnoutDeath",
+      "name": "Exploding Candle",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassRemnant"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-50790b4c6dd36cd4-3e4910125c53bcf42a3c9baa652348ab-v2",
+        "english": "Exploding Candle",
+        "french": "Bougie explosive",
+        "german": "Explodierende Kerze",
+        "russian": "Взрывная свеча",
+        "portuguese": "Vela Explosiva",
+        "chinese": "爆裂蜡烛",
+        "spanish": "Vela explosiva",
+        "chinese_traditional": "爆裂蠟燭",
+        "korean": "폭발 양초",
+        "japanese": "ロウソク爆弾"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-8779f0e176882cf6-3e4910125c53bcf42a3c9baa652348ab-v2",
+        "english": "Deal [effect0.power] damage to enemy units when a [burnout] unit dies.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> aux unités ennemies lorsqu'une unité avec [burnout] meurt.",
+        "german": "Füge gegnerischen Einheiten [effect0.power] Schaden zu, wenn eine [burnout]-Einheit stirbt.",
+        "russian": "Наносит [effect0.power] урона бойцам врага, если погибает боец, имеющий [burnout].",
+        "portuguese": "Causa [effect0.power] de dano às unidades inimigas quando uma unidade com [burnout] morre.",
+        "chinese": "当一名 [burnout] 单位死亡时，对所有敌方单位造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño a las unidades enemigas cuando una unidad con [burnout] muere.",
+        "chinese_traditional": "當一個[burnout]單位死亡時，對敵方單位造成[effect0.power]點傷害。",
+        "korean": "[burnout] 효과를 지닌 유닛이 사망하면 적 유닛들에게 [effect0.power]의 피해를 입힙니다.",
+        "japanese": "[burnout]状態のユニットが死亡すると、敵ユニットに[effect0.power]のダメージを与える。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-d25bd7647dcffb5c-3e4910125c53bcf42a3c9baa652348ab-v2",
+          "english": "When Flicker decided to help me unite the Ring and build the Rail, he lit a ceremonial candle to commemorate the event. Appropriately, the current state of the candle reflects the state of the Covenant it was created to represent. ",
+          "french": "Lorsque Vacilly a décidé de m'aider à unifier le cercle et construire la Voie, il a allumé un cierge pour marquer l'événement. D'une façon très pertinente, l'état actuel de la bougie reflète celui de l'alliance qu'elle est censée représenter.",
+          "german": "Als Flacker beschloss, mir dabei zu helfen, den Kreis zu vereinen und das Gleis zu bauen, entzündete er eine zeremonielle Kerze. Passenderweise repräsentiert die Kerze in ihrem jetzigen Zustand den Zustand des Paktes, in dessen Gedenken sie geschaffen wurde.",
+          "russian": "Когда Мерцало согласился помочь мне объединить свой Круг и построить Железную дорогу, он зажег церемониальную свечу, чтобы отпраздновать это событие. И нынешнее состояние этой свечи может служить символом того, что стало с Согласием. ",
+          "portuguese": "Quando Bruxuleio decidiu me ajudar a unir os Círculos e construir o Trilho, ele acendeu uma vela cerimonial para comemorar o fato. Oportunamente, o estado atual da vela reflete o estado do Pacto que ela foi criada para representar.",
+          "chinese": "当烛焰答应帮助我联合地狱九界重铸铁道时，他点燃了一支仪式蜡烛，用来纪念这一事件。这只蜡烛当前的状态，恰如其分地反映了契约创立之时的状态。",
+          "spanish": "Cuando Cirio decidió ayudarme a unificar el anillo y construir los Raíles, encendió una vela ceremonial para conmemorar la ocasión. Su estado actual es una representación adecuada del estado de la Coalición que llevó a su creación.",
+          "chinese_traditional": "當火光決定幫助我統一各大界域並建造軌道時，他點燃了一支儀式蠟燭來紀念這件事。恰好蠟燭現在的狀態反映了它當初被製造出來所要代表的新盟的狀態。",
+          "korean": "플리커가 고리를 통합하고 선로 건설에 도움을 주겠다고 결심했을 때, 이를 기념할 목적으로 의식용 초에 불을 붙였다. 실로 적절하게도 촛불의 현재 모습은 이를 상징하는 맹약의 상태를 그대로 반영한다.",
+          "japanese": "フリッカーがリングを統合して鉄道を敷設するのを手伝うと決めたとき、彼はそれを記念する儀式用のロウソクに火を灯した。そのロウソクの火は、盟約の状況を反映するようになっている。"
+        }
+      ],
+      "relic_effects": [
+        "@DamageOnBurnoutDeath.effects0",
+        "@DamageOnBurnoutDeath.effects1"
+      ]
     }
   ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassRemnant",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectDamageEnemyOnFriendlyTrigger",
-      "paramStatusEffects": [
+      "id": "DamageOnBurnoutDeath.effects0",
+      "name": "RelicEffectDamageEnemyOnFriendlyTrigger",
+      "param_status_effects": [
         {
-          "statusId": "ephemeral",
+          "status": "ephemeral",
           "count": 0
         }
       ],
-      "appliedVfx": {
-        "vfxPrefabLeft": "FX_ImpactFire_PS",
-        "spawnLocation": "character_bottom"
-      },
-      "paramSourceTeam": "monsters",
-      "paramInt": 5,
-      "paramTargetMode": "room",
-      "triggerTooltipsSuppressed": true
+      "applied_vfx": "@DamageOnBurnoutDeath.effects0.appliedVfx",
+      "param_source_team": "monsters",
+      "param_int": 5,
+      "target_mode": "room",
+      "trigger_tooltips_suppressed": true
     },
     {
-      "relicEffectClassName": "RelicEffectDamageEnemyOnFriendlyTrigger",
-      "appliedVfx": {
-        "vfxPrefabLeft": "FX_ImpactFire_PS",
-        "spawnLocation": "character_center"
-      },
-      "paramSourceTeam": "monsters",
-      "paramInt": 5,
-      "paramTrigger": "on_burnout",
-      "paramTargetMode": "room",
-      "triggerTooltipsSuppressed": true
+      "id": "DamageOnBurnoutDeath.effects1",
+      "name": "RelicEffectDamageEnemyOnFriendlyTrigger",
+      "applied_vfx": "@DamageOnBurnoutDeath.effects1.appliedVfx",
+      "param_source_team": "monsters",
+      "param_int": 5,
+      "param_trigger": "on_burnout",
+      "target_mode": "room",
+      "trigger_tooltips_suppressed": true
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "DamageOnBurnoutDeath.effects0.appliedVfx",
+      "vfx_prefab_left": "FX_ImpactFire_PS",
+      "spawn_location": "character_bottom"
+    },
+    {
+      "id": "DamageOnBurnoutDeath.effects1.appliedVfx",
+      "vfx_prefab_left": "FX_ImpactFire_PS",
+      "spawn_location": "character_center"
     }
   ]
 }

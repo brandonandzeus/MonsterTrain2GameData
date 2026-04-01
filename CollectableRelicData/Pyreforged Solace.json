@@ -1,51 +1,70 @@
 {
-  "id": "BossIncreaseTurnDrawDH",
-  "guid": "401f30f6-6206-4c1c-b014-a8047c01597e",
-  "name": "Pyreforged Solace",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-bab83dfbc322cd9e-a9afd6fcefa800441b1ad7c6ec9ffd2d-v2",
-    "english": "Pyreforged Solace",
-    "french": "Réconfort pyroforgé",
-    "german": "Trost der Höllenglut-Schmiede",
-    "russian": "Покой Пекла",
-    "portuguese": "Consolo Pírico",
-    "chinese": "薪火铸造之慰藉",
-    "spanish": "Consuelo piroforjado",
-    "chinese_traditional": "煉火慰藉",
-    "korean": "화로가 남긴 평온",
-    "japanese": "炉力の慰め"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-872418cb43382c1d-a9afd6fcefa800441b1ad7c6ec9ffd2d-v2",
-    "english": "Draw +[effect0.power] each turn. [halfbreak]Your Pyre gets +[effect2.pyreattackpower][attack] and +[effect1.pyrehealthpower][pyrehealth].",
-    "french": "Piochez +[effect0.power] à chaque tour. [halfbreak]Votre Brasier gagne +[effect2.pyreattackpower][attack] et +[effect1.pyrehealthpower][pyrehealth].",
-    "german": "Ziehe jeden Zug +[effect0.power]. [halfbreak]Deine Höllenglut erhält +[effect2.pyreattackpower][attack] und +[effect1.pyrehealthpower][pyrehealth].",
-    "russian": "Вытягивайте дополнительные карты: +[effect0.power] в ход.[halfbreak]Ваше Пекло получает +[effect2.pyreattackpower][attack] и +[effect1.pyrehealthpower][pyrehealth].",
-    "portuguese": "Compra +[effect0.power] a cada turno. [halfbreak]Sua Pira recebe +[effect2.pyreattackpower][attack] e +[effect1.pyrehealthpower][pyrehealth].",
-    "chinese": "每回合抽 +[effect0.power] 张牌。[halfbreak] 你的薪火获得 +[effect2.pyreattackpower][attack] 和 +[effect1.pyrehealthpower][pyrehealth]。",
-    "spanish": "Roba +[effect0.power] cada turno. [halfbreak]Tu pira añade +[effect2.pyreattackpower][attack] y +[effect1.pyrehealthpower][pyrehealth].",
-    "chinese_traditional": "每回合多抽[effect0.power]張牌。[halfbreak]你的火堆獲得+[effect2.pyreattackpower][attack]和+[effect1.pyrehealthpower][pyrehealth]。",
-    "korean": "턴마다 +[effect0.power]장을 뽑습니다. [halfbreak]화로가 +[effect2.pyreattackpower][attack] 및 +[effect1.pyrehealthpower][pyrehealth]을 획득합니다.",
-    "japanese": "毎ターン、ドロー+[effect0.power]。[halfbreak]自軍の炉が+[effect2.pyreattackpower][attack]と+[effect1.pyrehealthpower][pyrehealth]を得る。"
-  },
-  "rarity": "champion",
-  "pools": [
-    "BossPoolDH"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeStartingHandSize",
-      "paramInt": 1
-    },
-    {
-      "relicEffectClassName": "RelicEffectIncreasePyreHealth",
-      "paramInt2": 1
-    },
-    {
-      "relicEffectClassName": "RelicEffectIncreasePyreAttack",
-      "paramInt2": 1
+      "id": "BossIncreaseTurnDrawDH",
+      "name": "Pyreforged Solace",
+      "pools": [
+        "BossPoolDH"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "champion",
+            "is_boss_given": true,
+            "ignore_for_no_relic_achievement": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-bab83dfbc322cd9e-a9afd6fcefa800441b1ad7c6ec9ffd2d-v2",
+        "english": "Pyreforged Solace",
+        "french": "Réconfort pyroforgé",
+        "german": "Trost der Höllenglut-Schmiede",
+        "russian": "Покой Пекла",
+        "portuguese": "Consolo Pírico",
+        "chinese": "薪火铸造之慰藉",
+        "spanish": "Consuelo piroforjado",
+        "chinese_traditional": "煉火慰藉",
+        "korean": "화로가 남긴 평온",
+        "japanese": "炉力の慰め"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-872418cb43382c1d-a9afd6fcefa800441b1ad7c6ec9ffd2d-v2",
+        "english": "Draw +[effect0.power] each turn. [halfbreak]Your Pyre gets +[effect2.pyreattackpower][attack] and +[effect1.pyrehealthpower][pyrehealth].",
+        "french": "Piochez +[effect0.power] à chaque tour. [halfbreak]Votre Brasier gagne +[effect2.pyreattackpower][attack] et +[effect1.pyrehealthpower][pyrehealth].",
+        "german": "Ziehe jeden Zug +[effect0.power]. [halfbreak]Deine Höllenglut erhält +[effect2.pyreattackpower][attack] und +[effect1.pyrehealthpower][pyrehealth].",
+        "russian": "Вытягивайте дополнительные карты: +[effect0.power] в ход.[halfbreak]Ваше Пекло получает +[effect2.pyreattackpower][attack] и +[effect1.pyrehealthpower][pyrehealth].",
+        "portuguese": "Compra +[effect0.power] a cada turno. [halfbreak]Sua Pira recebe +[effect2.pyreattackpower][attack] e +[effect1.pyrehealthpower][pyrehealth].",
+        "chinese": "每回合抽 +[effect0.power] 张牌。[halfbreak] 你的薪火获得 +[effect2.pyreattackpower][attack] 和 +[effect1.pyrehealthpower][pyrehealth]。",
+        "spanish": "Roba +[effect0.power] cada turno. [halfbreak]Tu pira añade +[effect2.pyreattackpower][attack] y +[effect1.pyrehealthpower][pyrehealth].",
+        "chinese_traditional": "每回合多抽[effect0.power]張牌。[halfbreak]你的火堆獲得+[effect2.pyreattackpower][attack]和+[effect1.pyrehealthpower][pyrehealth]。",
+        "korean": "턴마다 +[effect0.power]장을 뽑습니다. [halfbreak]화로가 +[effect2.pyreattackpower][attack] 및 +[effect1.pyrehealthpower][pyrehealth]을 획득합니다.",
+        "japanese": "毎ターン、ドロー+[effect0.power]。[halfbreak]自軍の炉が+[effect2.pyreattackpower][attack]と+[effect1.pyrehealthpower][pyrehealth]を得る。"
+      },
+      "relic_effects": [
+        "@BossIncreaseTurnDrawDH.effects0",
+        "@BossIncreaseTurnDrawDH.effects1",
+        "@BossIncreaseTurnDrawDH.effects2"
+      ]
     }
   ],
-  "isBossGivenRelic": true,
-  "ignoreForNoRelicAchievement": true
+  "relic_effects": [
+    {
+      "id": "BossIncreaseTurnDrawDH.effects0",
+      "name": "RelicEffectChangeStartingHandSize",
+      "param_int": 1
+    },
+    {
+      "id": "BossIncreaseTurnDrawDH.effects1",
+      "name": "RelicEffectIncreasePyreHealth",
+      "param_int_2": 1
+    },
+    {
+      "id": "BossIncreaseTurnDrawDH.effects2",
+      "name": "RelicEffectIncreasePyreAttack",
+      "param_int_2": 1
+    }
+  ]
 }

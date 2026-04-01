@@ -1,85 +1,107 @@
 {
-  "id": "UpgradeEquipmentOnDeath",
-  "guid": "b3e7888f-8f5e-4082-89b0-078d80ce4a9b",
-  "name": "Blood of the Apex",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-b024c51101dcf44d-119a98230b048dc4696cfc312b6aef85-v2",
-    "english": "Blood of the Apex",
-    "french": "Sang de l'Apex",
-    "german": "Blut der Spitze",
-    "russian": "Кровь Высших",
-    "portuguese": "Sangue do Apogeu",
-    "chinese": "巅峰之血",
-    "spanish": "Sangre suprema",
-    "chinese_traditional": "巔峰之血",
-    "korean": "최강자의 피",
-    "japanese": "頂点の血"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-1d853152f6b33d15-119a98230b048dc4696cfc312b6aef85-v2",
-    "english": "Permanently add +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] to a unit's Equipment on [slay].",
-    "french": "Ajoute +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] définitivement à l'équipement d'une unité lors d'une [slay].",
-    "german": "Füge der Ausrüstung einer Einheit beim [slay] permanent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] hinzu.",
-    "russian": "Навсегда добавляет +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] к снаряжению бойца за каждое [slay].",
-    "portuguese": "Adiciona permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] ao Equipamento de uma unidade ao [slay].",
-    "chinese": "在 [slay] 时，使单位的装备永久增加 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Añade permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] al equipo de una unidad por [slay].",
-    "chinese_traditional": "[slay]時，永久賦予一個單位的裝備+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
-    "korean": "[slay] 시, 유닛의 장비에 [attack]이 영구적으로 [effect0.trigger0.effect0.upgrade.bonusdamage] 추가됩니다.",
-    "japanese": "[slay]時に、ユニットの装備品に永続的に+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]を追加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-65abb8b5825fea38-119a98230b048dc4696cfc312b6aef85-v2",
-      "english": "“Feed me,” hissed the sword. For the blade craved blood and would not be sated until its steel was fed.",
-      "french": "<nobr>« Nourrissez-moi »,</nobr> siffle l'épée. Car la lame a soif de sang et ne sera pas rassasiée tant que son acier ne sera pas nourri.",
-      "german": "„Füttere mich“, zischte das Schwert. Die Klinge lechzte nach Blut und würde nicht satt werden, bis sie Blut vergoss.",
-      "russian": "«Накорми меня», — шипел меч. Ибо клинок жаждал крови и не успокоился бы, пока не насытит свою сталь.",
-      "portuguese": "“Alimente-me”, sibilou a espada. A lâmina ansiava por sangue e não se saciaria até que seu aço fosse alimentado.",
-      "chinese": "“我要饮血，”剑嘶鸣着。这把剑渴望鲜血，在它的刀刃没有被喂饱之前，是不会满足的。",
-      "spanish": "«Aliméntame», susurra la espada. Su filo ansía sangre y no estará satisfecha hasta que se alimente su acero.",
-      "chinese_traditional": "「餵我。」劍嘶聲說道。因為這把刀渴望鮮血，在它的鋼鐵得到餵養之前不會滿足。",
-      "korean": "검이 속삭이며 말했다. “피를 다오.” 검은 만족할 때까지 계속 피를 원한다.",
-      "japanese": "「餌をよこせ」と剣が囁いた。刃は血を渇望しており、与えられるまで満たされることはない。"
+      "id": "UpgradeEquipmentOnDeath",
+      "name": "Blood of the Apex",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassBanished",
+            "unlock_level": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-b024c51101dcf44d-119a98230b048dc4696cfc312b6aef85-v2",
+        "english": "Blood of the Apex",
+        "french": "Sang de l'Apex",
+        "german": "Blut der Spitze",
+        "russian": "Кровь Высших",
+        "portuguese": "Sangue do Apogeu",
+        "chinese": "巅峰之血",
+        "spanish": "Sangre suprema",
+        "chinese_traditional": "巔峰之血",
+        "korean": "최강자의 피",
+        "japanese": "頂点の血"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-1d853152f6b33d15-119a98230b048dc4696cfc312b6aef85-v2",
+        "english": "Permanently add +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] to a unit's Equipment on [slay].",
+        "french": "Ajoute +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] définitivement à l'équipement d'une unité lors d'une [slay].",
+        "german": "Füge der Ausrüstung einer Einheit beim [slay] permanent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] hinzu.",
+        "russian": "Навсегда добавляет +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] к снаряжению бойца за каждое [slay].",
+        "portuguese": "Adiciona permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] ao Equipamento de uma unidade ao [slay].",
+        "chinese": "在 [slay] 时，使单位的装备永久增加 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Añade permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] al equipo de una unidad por [slay].",
+        "chinese_traditional": "[slay]時，永久賦予一個單位的裝備+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[slay] 시, 유닛의 장비에 [attack]이 영구적으로 [effect0.trigger0.effect0.upgrade.bonusdamage] 추가됩니다.",
+        "japanese": "[slay]時に、ユニットの装備品に永続的に+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]を追加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-65abb8b5825fea38-119a98230b048dc4696cfc312b6aef85-v2",
+          "english": "“Feed me,” hissed the sword. For the blade craved blood and would not be sated until its steel was fed.",
+          "french": "<nobr>« Nourrissez-moi »,</nobr> siffle l'épée. Car la lame a soif de sang et ne sera pas rassasiée tant que son acier ne sera pas nourri.",
+          "german": "„Füttere mich“, zischte das Schwert. Die Klinge lechzte nach Blut und würde nicht satt werden, bis sie Blut vergoss.",
+          "russian": "«Накорми меня», — шипел меч. Ибо клинок жаждал крови и не успокоился бы, пока не насытит свою сталь.",
+          "portuguese": "“Alimente-me”, sibilou a espada. A lâmina ansiava por sangue e não se saciaria até que seu aço fosse alimentado.",
+          "chinese": "“我要饮血，”剑嘶鸣着。这把剑渴望鲜血，在它的刀刃没有被喂饱之前，是不会满足的。",
+          "spanish": "«Aliméntame», susurra la espada. Su filo ansía sangre y no estará satisfecha hasta que se alimente su acero.",
+          "chinese_traditional": "「餵我。」劍嘶聲說道。因為這把刀渴望鮮血，在它的鋼鐵得到餵養之前不會滿足。",
+          "korean": "검이 속삭이며 말했다. “피를 다오.” 검은 만족할 때까지 계속 피를 원한다.",
+          "japanese": "「餌をよこせ」と剣が囁いた。刃は血を渇望しており、与えられるまで満たされることはない。"
+        }
+      ],
+      "relic_effects": [
+        "@UpgradeEquipmentOnDeath.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "UpgradeEquipmentOnDeath.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@UpgradeEquipmentOnDeath.effects0.additionalTooltips0"
+      ],
+      "triggers": [
+        "@UpgradeEquipmentOnDeath.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UpgradeEquipmentOnDeath.effects0.triggers0",
+      "trigger": "on_kill",
+      "effects": [
+        "@UpgradeEquipmentOnDeath.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true,
+      "only_trigger_if_equipped": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
-        {
-          "trigger": "on_kill",
-          "style": "default",
-          "isTriggerTooltip": true
-        }
-      ],
-      "triggers": [
-        {
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffEquipment",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramCardUpgradeData": {
-                "id": "ArtifactBuffEquipment",
-                "guid": "1d67c1b0-46b2-4603-b8bc-d39f7213212e",
-                "bonusDamage": 2
-              }
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true,
-          "onlyTriggerIfEquipped": true
-        }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      "id": "UpgradeEquipmentOnDeath.effects0.triggers0.effects0",
+      "name": "CardEffectBuffEquipment",
+      "target_mode": "self",
+      "param_upgrade": "ArtifactBuffEquipment"
     }
   ],
-  "unlockLevel": 5
+  "additional_tooltips": [
+    {
+      "isTriggerTooltip": true,
+      "id": "UpgradeEquipmentOnDeath.effects0.additionalTooltips0",
+      "trigger": "on_kill",
+      "style": "default"
+    }
+  ]
 }

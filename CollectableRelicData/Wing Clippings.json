@@ -1,71 +1,86 @@
 {
-  "id": "ChanceToNotConsume",
-  "guid": "51d95691-d59e-42f1-84ba-8c530743df69",
-  "name": "Wing Clippings",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-c8a9dfe640e01529-7492c085ffe2fe74b8165065f752d5a1-v2",
-    "english": "Wing Clippings",
-    "french": "Ailes coupées",
-    "german": "Flügelreste",
-    "russian": "Обрезанные крылья",
-    "portuguese": "Aparas de Asas",
-    "chinese": "翅膀残片",
-    "spanish": "Alas cortadas",
-    "chinese_traditional": "剪翼",
-    "korean": "잘린 날개",
-    "japanese": "切り離された翼"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-19bcc9a2a1403c12-7492c085ffe2fe74b8165065f752d5a1-v2",
-    "english": "Spell cards with [consume] have a [effect0.power]% chance to be discarded instead.",
-    "french": "Les cartes de sort avec [consume] ont <nobr>[effect0.power] %</nobr> de chances d'être défaussées et non détruites.",
-    "german": "Zauber mit [consume] haben eine Chance von [effect0.power] %, auf dem Ablagestapel zu landen.",
-    "russian": "Чары с эффектом [consume] могут с [effect0.power]% вероятностью отправиться в сброс.",
-    "portuguese": "As cartas de Feitiço com [consume] têm [effect0.power]% de chance de não serem consumidas.",
-    "chinese": "带有[consume]效果的法术卡牌有 [effect0.power]% 几率在使用后被放入弃牌堆。",
-    "spanish": "Las cartas de hechizo con [consume] tienen una probabilidad del [effect0.power] % de ser descartadas en vez de consumirse.",
-    "chinese_traditional": "帶有[consume]的法術卡有[effect0.power]%機率被捨棄。",
-    "korean": "[consume] 효과를 지닌 주문 카드는 [effect0.power]% 확률로 대신 버려집니다.",
-    "japanese": "属性が[consume]の呪文カードが、[effect0.power]%の確率で代わりに破棄される。"
-  },
-  "relicActivatedKey": {
-    "key": "CollectableRelicData_relicActivatedKey-aeff840f8b978965-7492c085ffe2fe74b8165065f752d5a1-v2",
-    "english": "Preserved!",
-    "french": "Préservé !",
-    "german": "Bewahrt!",
-    "russian": "Консервация!",
-    "portuguese": "Preservado!",
-    "chinese": "已保存！",
-    "spanish": "¡Conservado!",
-    "chinese_traditional": "保存成功！",
-    "korean": "보존 완료!",
-    "japanese": "貯蔵した！"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f9ce6ef62f24c4c8-7492c085ffe2fe74b8165065f752d5a1-v2",
-      "english": "Clipped Wings are discarded after removal to suppress any hope of the victim’s redemption. However, I was able to smuggle some out of Heaven disguised as Waxer rags.",
-      "french": "Les ailes des Sans-ailes sont jetées après leur ablation, afin que la victime abandonne tout espoir de rédemption. Cependant, j'ai réussi à en ramener clandestinement quelques-unes du paradis en les faisant passer pour des haillons de cireux.",
-      "german": "Gestutzte Flügelreste werden nach dem Abschneiden weggeworfen, um dem Opfer jede Hoffnung auf Rettung zu nehmen. Ich konnte aber einige aus dem Himmel schmuggeln, indem ich sie zwischen den Lumpen eines Wachsers versteckte.",
-      "russian": "После удаления крылья выбрасываются, чтобы жертва лишилась всех надежд на прощение. Но мне удалось тайком вывезти из Рая небольшую партию, замаскированную под тряпье Восковиков.",
-      "portuguese": "Asas Podadas são descartadas após a remoção para suprimir qualquer esperança de redenção da vítima. No entanto, eu consegui contrabandear algumas do Céu disfarçadas de trapos Céreos.",
-      "chinese": "当翼族的翅膀被剪断之后，他们会把这些翅膀丢掉，彻底熄灭受害者获得救赎的希望。不过，我却把自己打扮成烛人走私者，从天堂那里走私出来了一些翅膀。",
-      "spanish": "Las alas cortadas se desechan tras su extirpación para descartar toda esperanza de que la víctima se redima. Sin embargo, pude sacar algunas del Cielo camufladas de harapos de encerado.",
-      "chinese_traditional": "被剪掉的翅膀被剪下來之後會遭到丟棄，以壓制受害者任何能夠得到救贖的希望。然而，我能透過走私的方式，將一些偽裝成蠟像破布的翅膀送出天堂。",
-      "korean": "잘린 날개는 대상의 구원을 바라는 희망을 억누를 목적으로 제거 후 폐기 처분된다. 하지만 나는 밀랍 인간의 잔해를 이용해 몇몇 날개를 천상 바깥으로 몰래 빼돌릴 수 있었다.",
-      "japanese": "切り取られた翼は、被害者の救済の望みを断つために廃棄される。しかし、私はワクサーのボロ布に偽装して、天界から翼を密かに持ち出すことができたのだ。"
+      "id": "ChanceToNotConsume",
+      "name": "Wing Clippings",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-c8a9dfe640e01529-7492c085ffe2fe74b8165065f752d5a1-v2",
+        "english": "Wing Clippings",
+        "french": "Ailes coupées",
+        "german": "Flügelreste",
+        "russian": "Обрезанные крылья",
+        "portuguese": "Aparas de Asas",
+        "chinese": "翅膀残片",
+        "spanish": "Alas cortadas",
+        "chinese_traditional": "剪翼",
+        "korean": "잘린 날개",
+        "japanese": "切り離された翼"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-19bcc9a2a1403c12-7492c085ffe2fe74b8165065f752d5a1-v2",
+        "english": "Spell cards with [consume] have a [effect0.power]% chance to be discarded instead.",
+        "french": "Les cartes de sort avec [consume] ont <nobr>[effect0.power] %</nobr> de chances d'être défaussées et non détruites.",
+        "german": "Zauber mit [consume] haben eine Chance von [effect0.power] %, auf dem Ablagestapel zu landen.",
+        "russian": "Чары с эффектом [consume] могут с [effect0.power]% вероятностью отправиться в сброс.",
+        "portuguese": "As cartas de Feitiço com [consume] têm [effect0.power]% de chance de não serem consumidas.",
+        "chinese": "带有[consume]效果的法术卡牌有 [effect0.power]% 几率在使用后被放入弃牌堆。",
+        "spanish": "Las cartas de hechizo con [consume] tienen una probabilidad del [effect0.power] % de ser descartadas en vez de consumirse.",
+        "chinese_traditional": "帶有[consume]的法術卡有[effect0.power]%機率被捨棄。",
+        "korean": "[consume] 효과를 지닌 주문 카드는 [effect0.power]% 확률로 대신 버려집니다.",
+        "japanese": "属性が[consume]の呪文カードが、[effect0.power]%の確率で代わりに破棄される。"
+      },
+      "relic_activated_texts": {
+        "key": "CollectableRelicData_relicActivatedKey-aeff840f8b978965-7492c085ffe2fe74b8165065f752d5a1-v2",
+        "english": "Preserved!",
+        "french": "Préservé !",
+        "german": "Bewahrt!",
+        "russian": "Консервация!",
+        "portuguese": "Preservado!",
+        "chinese": "已保存！",
+        "spanish": "¡Conservado!",
+        "chinese_traditional": "保存成功！",
+        "korean": "보존 완료!",
+        "japanese": "貯蔵した！"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f9ce6ef62f24c4c8-7492c085ffe2fe74b8165065f752d5a1-v2",
+          "english": "Clipped Wings are discarded after removal to suppress any hope of the victim’s redemption. However, I was able to smuggle some out of Heaven disguised as Waxer rags.",
+          "french": "Les ailes des Sans-ailes sont jetées après leur ablation, afin que la victime abandonne tout espoir de rédemption. Cependant, j'ai réussi à en ramener clandestinement quelques-unes du paradis en les faisant passer pour des haillons de cireux.",
+          "german": "Gestutzte Flügelreste werden nach dem Abschneiden weggeworfen, um dem Opfer jede Hoffnung auf Rettung zu nehmen. Ich konnte aber einige aus dem Himmel schmuggeln, indem ich sie zwischen den Lumpen eines Wachsers versteckte.",
+          "russian": "После удаления крылья выбрасываются, чтобы жертва лишилась всех надежд на прощение. Но мне удалось тайком вывезти из Рая небольшую партию, замаскированную под тряпье Восковиков.",
+          "portuguese": "Asas Podadas são descartadas após a remoção para suprimir qualquer esperança de redenção da vítima. No entanto, eu consegui contrabandear algumas do Céu disfarçadas de trapos Céreos.",
+          "chinese": "当翼族的翅膀被剪断之后，他们会把这些翅膀丢掉，彻底熄灭受害者获得救赎的希望。不过，我却把自己打扮成烛人走私者，从天堂那里走私出来了一些翅膀。",
+          "spanish": "Las alas cortadas se desechan tras su extirpación para descartar toda esperanza de que la víctima se redima. Sin embargo, pude sacar algunas del Cielo camufladas de harapos de encerado.",
+          "chinese_traditional": "被剪掉的翅膀被剪下來之後會遭到丟棄，以壓制受害者任何能夠得到救贖的希望。然而，我能透過走私的方式，將一些偽裝成蠟像破布的翅膀送出天堂。",
+          "korean": "잘린 날개는 대상의 구원을 바라는 희망을 억누를 목적으로 제거 후 폐기 처분된다. 하지만 나는 밀랍 인간의 잔해를 이용해 몇몇 날개를 천상 바깥으로 몰래 빼돌릴 수 있었다.",
+          "japanese": "切り取られた翼は、被害者の救済の望みを断つために廃棄される。しかし、私はワクサーのボロ布に偽装して、天界から翼を密かに持ち出すことができたのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@ChanceToNotConsume.effects0"
+      ]
     }
   ],
-  "rarity": "uncommon",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectSuppressExhaust",
-      "paramCardType": "spell",
-      "paramInt": 50
+      "id": "ChanceToNotConsume.effects0",
+      "name": "RelicEffectSuppressExhaust",
+      "param_card_type": "spell",
+      "param_int": 50
     }
-  ],
-  "deprioritizeInFtueDrafts": true
+  ]
 }

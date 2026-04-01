@@ -1,75 +1,94 @@
 {
-  "id": "AddSnackOnKill",
-  "guid": "b6548209-3ccf-4deb-9896-f07d5df3dab9",
-  "name": "Shadelamp",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-155f797d3235420f-e3b124c7cf5d0b84b8dac19ff30f2b0a-v2",
-    "english": "Shadelamp",
-    "french": "Lampèbre",
-    "german": "Schattenlampe",
-    "russian": "Теневой фонарь",
-    "portuguese": "Abajur",
-    "chinese": "暗影灯",
-    "spanish": "Farol umbrío",
-    "chinese_traditional": "陰影燈",
-    "korean": "그림자 램프",
-    "japanese": "闇のランプ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-5e872c5920d35e66-e3b124c7cf5d0b84b8dac19ff30f2b0a-v2",
-    "english": "The first time each turn an enemy unit dies, add [effect0.power] [snack] units to hand.",
-    "french": "À chaque tour, la première mort d'un ennemi ajoute <nobr>[effect0.power] <b>sous-bistres</b></nobr> à votre main.",
-    "german": "Nimm bei jeder ersten gegnerischen Einheit, die pro Zug stirbt, [effect0.power] [snack]-Einheiten auf die Hand.",
-    "russian": "Когда первый раз во время хода погибает враг, в руку добавляется [snack] х[effect0.power].",
-    "portuguese": "Na primeira vez que uma unidade inimiga morrer em cada turno, adiciona [effect0.power] unidades de [snack] à sua mão.",
-    "chinese": "每回合第一个敌方单位死亡时，将 [effect0.power] 个[snack]单位加入手牌。",
-    "spanish": "La primera vez que una unidad enemiga muera cada turno, añade [effect0.power] unidades [snack] a tu mano.",
-    "chinese_traditional": "每回合第一次有敵方單位死亡時，將[effect0.power][snack]單位加入手牌。",
-    "korean": "턴마다 적 유닛이 처음으로 사망하면, [snack] 유닛 카드 [effect0.power]장을 패에 추가합니다.",
-    "japanese": "毎ターン、敵ユニットの死亡初回時に手札に[effect0.power]体の[snack]ユニットを追加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-1b6dc526fe0fe338-e3b124c7cf5d0b84b8dac19ff30f2b0a-v2",
-      "english": "When the Rail was built, the Crucible became accessible to Hellborne other than the Umbra Shroud. The Shroud was not too welcoming, however, and crafted lights of shadow that only they could use to see, making it impossible for tourists to linger.",
-      "french": "En construisant la Voie, nous avons rendu le creuset, domaine du Suaire umbra, accessible à tous les démons. Cependant, le Suaire n'a pas été très accueillant, créant à partir d'ombres des lampes dont lui seul pouvait voir la lumière. De ce fait, les touristes ne pouvaient pas rester très longtemps sur place.",
-      "german": "Als das Gleis gebaut wurde, wurde der Schmelztiegel auch für andere Höllenbrut-Wesen zugänglich als die Umbra-Mantelwesen. Die Mantelwesen waren allerdings nicht besonders gastfreundlich: Sie erschufen Schattenlampen, mit denen nur sie sehen konnten, und machten es Besuchern so unmöglich, länger zu verweilen.",
-      "russian": "Когда была построена Железная дорога, к Горнилу открылся доступ Адским отродьям, никак не связанным с Завесой Мрака. Тот не слишком этому обрадовался и создал теневые огни, которые мог видеть лишь сам, чтобы к нему не шлялись туристы.",
-      "portuguese": "Quando o Trilho foi construído, o Crisol tornou-se acessível a Infernais além do Sombrio Velado. Ele não foi muito acolhedor, no entanto, e criou luzes de sombra que só ele podia ver, impossibilitando a permanência de turistas.",
-      "chinese": "当铁道最初建成的时候，就连不是影主雾影的地狱之子也能前往熔炉之地了。不过，影主氏族的雾影并不怎么好客。它们制作了只有它们才能看得见的暗影灯，让熔炉之地的游客们完全无法四处观光。",
-      "spanish": "Cuando se construyeron los Raíles, todos los infernales obtuvieron acceso al Crisol. Sin embargo, el Velo de Umbra no se mostró muy hospitalario: crearon luces de sombras que solo los suyos podían ver para forzar a los visitantes a marcharse pronto.",
-      "chinese_traditional": "當軌道建成後，除了黑暗幽影外的地獄生物也能進入地獄熔爐。然而，幽影並不怎麼歡迎對方，他們製造了只有他們能看見的暗影之光，使遊客無法久留。",
-      "korean": "선로를 만든 뒤, 어스름 장막 주민 외에 다른 지옥 주민도 도가니로 갈 수 있게 되었다. 하지만 장막은 이들을 환영하지 않았고, 자신들만 볼 수 있는 그림자의 빛을 만들어 방문객이 머물 수 없도록 했다.",
-      "japanese": "鉄道が敷設されると、アンブラ・シュラウドを除く魔族にとってクルーシブルがアクセスしやすくなった。しかし、シュラウドは歓迎的ではなく、彼らだけが見える影の光を作り出し、訪問者が長居できないようにしたのだ。"
-    }
-  ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddBattleCardToHandOnUnitTrigger",
-      "effectConditions": [
+      "id": "AddSnackOnKill",
+      "name": "Shadelamp",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "greater_than",
-            "equal"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassUmbra",
+            "unlock_level": 2
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramInt": 2,
-      "paramCardPool": "Class5Food",
-      "triggerTooltipsSuppressed": true
+      "names": {
+        "key": "CollectableRelicData_nameKey-155f797d3235420f-e3b124c7cf5d0b84b8dac19ff30f2b0a-v2",
+        "english": "Shadelamp",
+        "french": "Lampèbre",
+        "german": "Schattenlampe",
+        "russian": "Теневой фонарь",
+        "portuguese": "Abajur",
+        "chinese": "暗影灯",
+        "spanish": "Farol umbrío",
+        "chinese_traditional": "陰影燈",
+        "korean": "그림자 램프",
+        "japanese": "闇のランプ"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-5e872c5920d35e66-e3b124c7cf5d0b84b8dac19ff30f2b0a-v2",
+        "english": "The first time each turn an enemy unit dies, add [effect0.power] [snack] units to hand.",
+        "french": "À chaque tour, la première mort d'un ennemi ajoute <nobr>[effect0.power] <b>sous-bistres</b></nobr> à votre main.",
+        "german": "Nimm bei jeder ersten gegnerischen Einheit, die pro Zug stirbt, [effect0.power] [snack]-Einheiten auf die Hand.",
+        "russian": "Когда первый раз во время хода погибает враг, в руку добавляется [snack] х[effect0.power].",
+        "portuguese": "Na primeira vez que uma unidade inimiga morrer em cada turno, adiciona [effect0.power] unidades de [snack] à sua mão.",
+        "chinese": "每回合第一个敌方单位死亡时，将 [effect0.power] 个[snack]单位加入手牌。",
+        "spanish": "La primera vez que una unidad enemiga muera cada turno, añade [effect0.power] unidades [snack] a tu mano.",
+        "chinese_traditional": "每回合第一次有敵方單位死亡時，將[effect0.power][snack]單位加入手牌。",
+        "korean": "턴마다 적 유닛이 처음으로 사망하면, [snack] 유닛 카드 [effect0.power]장을 패에 추가합니다.",
+        "japanese": "毎ターン、敵ユニットの死亡初回時に手札に[effect0.power]体の[snack]ユニットを追加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-1b6dc526fe0fe338-e3b124c7cf5d0b84b8dac19ff30f2b0a-v2",
+          "english": "When the Rail was built, the Crucible became accessible to Hellborne other than the Umbra Shroud. The Shroud was not too welcoming, however, and crafted lights of shadow that only they could use to see, making it impossible for tourists to linger.",
+          "french": "En construisant la Voie, nous avons rendu le creuset, domaine du Suaire umbra, accessible à tous les démons. Cependant, le Suaire n'a pas été très accueillant, créant à partir d'ombres des lampes dont lui seul pouvait voir la lumière. De ce fait, les touristes ne pouvaient pas rester très longtemps sur place.",
+          "german": "Als das Gleis gebaut wurde, wurde der Schmelztiegel auch für andere Höllenbrut-Wesen zugänglich als die Umbra-Mantelwesen. Die Mantelwesen waren allerdings nicht besonders gastfreundlich: Sie erschufen Schattenlampen, mit denen nur sie sehen konnten, und machten es Besuchern so unmöglich, länger zu verweilen.",
+          "russian": "Когда была построена Железная дорога, к Горнилу открылся доступ Адским отродьям, никак не связанным с Завесой Мрака. Тот не слишком этому обрадовался и создал теневые огни, которые мог видеть лишь сам, чтобы к нему не шлялись туристы.",
+          "portuguese": "Quando o Trilho foi construído, o Crisol tornou-se acessível a Infernais além do Sombrio Velado. Ele não foi muito acolhedor, no entanto, e criou luzes de sombra que só ele podia ver, impossibilitando a permanência de turistas.",
+          "chinese": "当铁道最初建成的时候，就连不是影主雾影的地狱之子也能前往熔炉之地了。不过，影主氏族的雾影并不怎么好客。它们制作了只有它们才能看得见的暗影灯，让熔炉之地的游客们完全无法四处观光。",
+          "spanish": "Cuando se construyeron los Raíles, todos los infernales obtuvieron acceso al Crisol. Sin embargo, el Velo de Umbra no se mostró muy hospitalario: crearon luces de sombras que solo los suyos podían ver para forzar a los visitantes a marcharse pronto.",
+          "chinese_traditional": "當軌道建成後，除了黑暗幽影外的地獄生物也能進入地獄熔爐。然而，幽影並不怎麼歡迎對方，他們製造了只有他們能看見的暗影之光，使遊客無法久留。",
+          "korean": "선로를 만든 뒤, 어스름 장막 주민 외에 다른 지옥 주민도 도가니로 갈 수 있게 되었다. 하지만 장막은 이들을 환영하지 않았고, 자신들만 볼 수 있는 그림자의 빛을 만들어 방문객이 머물 수 없도록 했다.",
+          "japanese": "鉄道が敷設されると、アンブラ・シュラウドを除く魔族にとってクルーシブルがアクセスしやすくなった。しかし、シュラウドは歓迎的ではなく、彼らだけが見える影の光を作り出し、訪問者が長居できないようにしたのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@AddSnackOnKill.effects0"
+      ]
     }
   ],
-  "unlockLevel": 2
+  "relic_effects": [
+    {
+      "id": "AddSnackOnKill.effects0",
+      "name": "RelicEffectAddBattleCardToHandOnUnitTrigger",
+      "conditions": [
+        "@AddSnackOnKill.effects0.effectConditions0"
+      ],
+      "param_source_team": "heroes",
+      "param_int": 2,
+      "param_card_pool": "Class5Food",
+      "trigger_tooltips_suppressed": true
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "AddSnackOnKill.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "greater_than",
+        "equal"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ]
 }

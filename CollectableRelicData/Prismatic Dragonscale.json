@@ -1,88 +1,107 @@
 {
-  "id": "ModifyDragonsHoardBattleEnd",
-  "guid": "26c9bc93-f5a6-439d-8239-14c22cbeb02e",
-  "name": "Prismatic Dragonscale",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-2686a60070f42473-5806ea8eacd6c1b448b8c1f1a968a194-v2",
-    "english": "Prismatic Dragonscale",
-    "french": "Écaille prismatique",
-    "german": "Prismatische Drachenschuppe",
-    "russian": "Радужная чешуйка",
-    "portuguese": "Escama de Dragão Prismática",
-    "chinese": "棱彩龙鳞",
-    "spanish": "Escama de dragón prismática",
-    "chinese_traditional": "稜鏡龍鱗",
-    "korean": "프리즘의 용비늘",
-    "japanese": "鮮やかな竜の鱗"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-2c3ab0d5d44b15f7-5806ea8eacd6c1b448b8c1f1a968a194-v2",
-    "english": "At the end of battle, gain [effect0.power][dragonshoardicon] if your Pyre took no damage.",
-    "french": "A la fin de la bataille, octroie [effect0.power][dragonshoardicon] si votre Brasier n'a subi aucun dégât.",
-    "german": "Erhalte am Ende des Kampfes [effect0.power][dragonshoardicon], wenn die Höllenglut keinen Schaden erlitten hat.",
-    "russian": "Дает [effect0.power][dragonshoardicon] в конце боя, если ваше Пекло не получило урона.",
-    "portuguese": "No fim da batalha, recebe [effect0.power][dragonshoardicon] se sua Pira não sofreu nenhum dano.",
-    "chinese": "战斗结束时，如果薪火没有受到伤害，获得 [effect0.power][dragonshoardicon]。",
-    "spanish": "Al final de la batalla, obtienes [effect0.power][dragonshoardicon] si tu Pira no ha sufrido daños.",
-    "chinese_traditional": "在戰鬥結束時，如果你的火堆沒有受到傷害，獲得[effect0.power][dragonshoardicon]。",
-    "korean": "전투 종료 시, 화로가 피해를 입지 않은 상태이면 [effect0.power][dragonshoardicon]를 획득합니다.",
-    "japanese": "自軍の炉がダメージを受けなかった場合、バトルの終了時に[effect0.power][dragonshoardicon]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-73698648e92c1d55-5806ea8eacd6c1b448b8c1f1a968a194-v2",
-      "english": "“Never trust hard-earned riches, it’s the easy coin that will get you by.”\r\n—The Rules of Fhyra, Rule #37",
-      "french": "<nobr>« Ne</nobr> vous fiez jamais aux richesses durement gagnées, c'est l'argent facile qui vous permettra de vous en <nobr>sortir. »</nobr> \n— Les règles de Fhyra, règle n°37",
-      "german": "„Verlasse dich nie auf hart erarbeiteten Reichtum. Mit dem schnellen Geld kommt man über die Runden.“_x000D_\n—Fhyras Regel 37",
-      "russian": "«Не надейся на богатства, заработанные трудом, тебя прокормят только легкие деньги».\n\n— «Правила Фиры», правило 37",
-      "portuguese": "“Nunca corra atrás de tesouros difíceis de se obter. A riqueza de verdade surge do ouro feito de forma fácil.”\n— As Regras de Fhyra, Regra n.º 37",
-      "chinese": "“永远不要相信勤劳致富，轻易挣来的金币才能让你生活滋润。”\n——《菲拉法则》，条例#37",
-      "spanish": "«Nunca confíes en la riqueza ganada a través del esfuerzo. El dinero fácil es lo que te hará prosperar».\n—Normas de Fhyra, norma 37",
-      "chinese_traditional": "「永遠不要相信辛苦賺來的財富，容易賺到的錢才能讓你活下去。」\n——費拉法則，第37條",
-      "korean": "“힘들게 벌어들인 것은 절대 믿지 말라. 오직 행운으로 번 것만이 너희를 구원하리라.”\n- 휘라 율법 37조",
-      "japanese": "「苦労して稼いだ富を決して信用してはならない。頼りになるのは簡単に稼げる金貨だ」\n—ファイラの法、37条"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectModifyDragonsHoardEndOfBattle",
-      "additionalTooltips": [
+      "id": "ModifyDragonsHoardBattleEnd",
+      "name": "Prismatic Dragonscale",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "HudTooltip_DragonsHoardInactive_Body",
-            "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
-            "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
-            "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
-            "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
-            "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
-            "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
-            "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
-            "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
-            "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
-            "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
-          },
-          "titleKey": {
-            "key": "HudTooltip_DragonsHoard_Title",
-            "english": "[dragonshoardicon]Dragon's Hoard",
-            "french": "[dragonshoardicon]Trésor du dragon",
-            "german": "[dragonshoardicon]Drachenschatz",
-            "russian": "[dragonshoardicon] Драконий клад",
-            "portuguese": "[dragonshoardicon]Tesouro do Dragão",
-            "chinese": "[dragonshoardicon]龙族宝藏",
-            "spanish": "[dragonshoardicon]Tesoro de dragón",
-            "chinese_traditional": "[dragonshoardicon]龍之寶藏",
-            "korean": "[dragonshoardicon]드래곤의 재보",
-            "japanese": "竜の財宝[dragonshoardicon]"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne"
           }
         }
       ],
-      "paramInt": 3,
-      "paramBool": true
+      "names": {
+        "key": "CollectableRelicData_nameKey-2686a60070f42473-5806ea8eacd6c1b448b8c1f1a968a194-v2",
+        "english": "Prismatic Dragonscale",
+        "french": "Écaille prismatique",
+        "german": "Prismatische Drachenschuppe",
+        "russian": "Радужная чешуйка",
+        "portuguese": "Escama de Dragão Prismática",
+        "chinese": "棱彩龙鳞",
+        "spanish": "Escama de dragón prismática",
+        "chinese_traditional": "稜鏡龍鱗",
+        "korean": "프리즘의 용비늘",
+        "japanese": "鮮やかな竜の鱗"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-2c3ab0d5d44b15f7-5806ea8eacd6c1b448b8c1f1a968a194-v2",
+        "english": "At the end of battle, gain [effect0.power][dragonshoardicon] if your Pyre took no damage.",
+        "french": "A la fin de la bataille, octroie [effect0.power][dragonshoardicon] si votre Brasier n'a subi aucun dégât.",
+        "german": "Erhalte am Ende des Kampfes [effect0.power][dragonshoardicon], wenn die Höllenglut keinen Schaden erlitten hat.",
+        "russian": "Дает [effect0.power][dragonshoardicon] в конце боя, если ваше Пекло не получило урона.",
+        "portuguese": "No fim da batalha, recebe [effect0.power][dragonshoardicon] se sua Pira não sofreu nenhum dano.",
+        "chinese": "战斗结束时，如果薪火没有受到伤害，获得 [effect0.power][dragonshoardicon]。",
+        "spanish": "Al final de la batalla, obtienes [effect0.power][dragonshoardicon] si tu Pira no ha sufrido daños.",
+        "chinese_traditional": "在戰鬥結束時，如果你的火堆沒有受到傷害，獲得[effect0.power][dragonshoardicon]。",
+        "korean": "전투 종료 시, 화로가 피해를 입지 않은 상태이면 [effect0.power][dragonshoardicon]를 획득합니다.",
+        "japanese": "自軍の炉がダメージを受けなかった場合、バトルの終了時に[effect0.power][dragonshoardicon]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-73698648e92c1d55-5806ea8eacd6c1b448b8c1f1a968a194-v2",
+          "english": "“Never trust hard-earned riches, it’s the easy coin that will get you by.”\r\n—The Rules of Fhyra, Rule #37",
+          "french": "<nobr>« Ne</nobr> vous fiez jamais aux richesses durement gagnées, c'est l'argent facile qui vous permettra de vous en <nobr>sortir. »</nobr> \n— Les règles de Fhyra, règle n°37",
+          "german": "„Verlasse dich nie auf hart erarbeiteten Reichtum. Mit dem schnellen Geld kommt man über die Runden.“_x000D_\n—Fhyras Regel 37",
+          "russian": "«Не надейся на богатства, заработанные трудом, тебя прокормят только легкие деньги».\n\n— «Правила Фиры», правило 37",
+          "portuguese": "“Nunca corra atrás de tesouros difíceis de se obter. A riqueza de verdade surge do ouro feito de forma fácil.”\n— As Regras de Fhyra, Regra n.º 37",
+          "chinese": "“永远不要相信勤劳致富，轻易挣来的金币才能让你生活滋润。”\n——《菲拉法则》，条例#37",
+          "spanish": "«Nunca confíes en la riqueza ganada a través del esfuerzo. El dinero fácil es lo que te hará prosperar».\n—Normas de Fhyra, norma 37",
+          "chinese_traditional": "「永遠不要相信辛苦賺來的財富，容易賺到的錢才能讓你活下去。」\n——費拉法則，第37條",
+          "korean": "“힘들게 벌어들인 것은 절대 믿지 말라. 오직 행운으로 번 것만이 너희를 구원하리라.”\n- 휘라 율법 37조",
+          "japanese": "「苦労して稼いだ富を決して信用してはならない。頼りになるのは簡単に稼げる金貨だ」\n—ファイラの法、37条"
+        }
+      ],
+      "relic_effects": [
+        "@ModifyDragonsHoardBattleEnd.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ModifyDragonsHoardBattleEnd.effects0",
+      "name": "RelicEffectModifyDragonsHoardEndOfBattle",
+      "additional_tooltips": [
+        "@ModifyDragonsHoardBattleEnd.effects0.additionalTooltips0"
+      ],
+      "param_int": 3,
+      "param_bool": true
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "ModifyDragonsHoardBattleEnd.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_DragonsHoardInactive_Body",
+        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+      },
+      "titles": {
+        "key": "HudTooltip_DragonsHoard_Title",
+        "english": "[dragonshoardicon]Dragon's Hoard",
+        "french": "[dragonshoardicon]Trésor du dragon",
+        "german": "[dragonshoardicon]Drachenschatz",
+        "russian": "[dragonshoardicon] Драконий клад",
+        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+        "chinese": "[dragonshoardicon]龙族宝藏",
+        "spanish": "[dragonshoardicon]Tesoro de dragón",
+        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+        "korean": "[dragonshoardicon]드래곤의 재보",
+        "japanese": "竜の財宝[dragonshoardicon]"
+      }
     }
   ]
 }

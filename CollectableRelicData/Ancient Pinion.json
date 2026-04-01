@@ -1,111 +1,134 @@
 {
-  "id": "AngelsSpawnWithShiftyValor",
-  "guid": "3d4705ec-ee6b-433b-88c8-1b4ce0ed7cc9",
-  "name": "Ancient Pinion",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-e944fc7199fb7386-811d26989931c444b8dc481cb6d47175-v2",
-    "english": "Ancient Pinion",
-    "french": "Penne ancienne",
-    "german": "Uralter Flügel",
-    "russian": "Древнее крыло",
-    "portuguese": "Asa Ancestral",
-    "chinese": "远古化石羽翼",
-    "spanish": "Engranaje ancestral",
-    "chinese_traditional": "古代翼羽",
-    "korean": "고대 칼깃",
-    "japanese": "古代の翼"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-7cdc4566f43a906f-811d26989931c444b8dc481cb6d47175-v2",
-    "english": "When an Angel moves it gains [valor] [effect0.trigger0.effect0.status0.power].",
-    "french": "Lorsqu'un ange se déplace, il gagne [valor] [effect0.trigger0.effect0.status0.power].",
-    "german": "Wenn sich eine Engel-Einheit bewegt, erhält sie [valor] [effect0.trigger0.effect0.status0.power].",
-    "russian": "При перемещении ангел получает [valor] х[effect0.trigger0.effect0.status0.power].",
-    "portuguese": "Quando um anjo se move, ele recebe [valor] [effect0.trigger0.effect0.status0.power].",
-    "chinese": "当天使移动时，获得 [valor] [effect0.trigger0.effect0.status0.power]。",
-    "spanish": "Cuando un ángel se mueve, añade [valor] [effect0.trigger0.effect0.status0.power].",
-    "chinese_traditional": "當一個天使移動時，對方獲得[valor][effect0.trigger0.effect0.status0.power]。",
-    "korean": "천사가 위치를 바꾸면 [valor] [effect0.trigger0.effect0.status0.power] 효과를 획득합니다.",
-    "japanese": "天使が移動すると、[valor] [effect0.trigger0.effect0.status0.power]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-5b5a41596ce508e1-811d26989931c444b8dc481cb6d47175-v2",
-      "english": "The fossil of a great winged beast from which it is said all angels descend from. Question is, what was it doing in the last circle of Hell?",
-      "french": "Le fossile d'une grande bête ailée dont on dit que tous les anges descendent. La question est de savoir ce qu'elle faisait dans le dernier cercle de l'enfer.",
-      "german": "Das Fossil eines großen geflügelten Tieres, von dem angeblich alle Engel abstammen. Fragt sich nur, was es im letzten Kreis der Hölle getan hat?",
-      "russian": "Окаменелость огромного крылатого зверя, от которого, по преданию, произошли все ангелы. Вопрос в том, что оно делало в последнем Круге Ада?",
-      "portuguese": "O fóssil de uma grande fera alada, da qual se diz que todos os anjos descendem. A pergunta é: o que ela estava fazendo no último Círculo do Inferno?",
-      "chinese": "有翼巨兽的化石，据说所有天使都起源于这种巨兽。问题是，它当时在地狱的最后圆环做什么呢？",
-      "spanish": "El fósil de una enorme bestia alada de la que, según se cree, descienden todos los ángeles. La pregunta es: ¿qué estaba haciendo en el último círculo del Infierno?",
-      "chinese_traditional": "據說所有天使都是從這隻巨大有翼族的化石演化而來。問題是，它在地獄的最終圓環做什麼？",
-      "korean": "모든 천사가 강림한다는 날개 달린 거대한 짐승의 화석. 대체 그 짐승은 지옥의 마지막 계에서 무엇을 했던 것일까?",
-      "japanese": "すべての天使の祖先と言われている、巨大な翼を持つ獣の化石。問題は、それがなぜ地獄の最後の階層にあるのか、ということだ。"
+      "id": "AngelsSpawnWithShiftyValor",
+      "name": "Ancient Pinion",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassBanished",
+            "description_modifiers": [
+              {
+                "id": "AngelsSpawnWithShiftyValor.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-62aa2118fcd5efa2-811d26989931c444b8dc481cb6d47175-v2",
+                  "english": "([value] Angels)",
+                  "french": "([value] Anges)",
+                  "german": "([value] Engel)",
+                  "russian": "([value] Ангелов)",
+                  "portuguese": "([value] Anjos)",
+                  "chinese": "([value] 天使)",
+                  "spanish": "([value] Ángeles)",
+                  "chinese_traditional": "([value] 天使)",
+                  "korean": "([value] 천사)",
+                  "japanese": "([value] 天使)"
+                },
+                "param_subtype": "SubtypesData_Angel"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-e944fc7199fb7386-811d26989931c444b8dc481cb6d47175-v2",
+        "english": "Ancient Pinion",
+        "french": "Penne ancienne",
+        "german": "Uralter Flügel",
+        "russian": "Древнее крыло",
+        "portuguese": "Asa Ancestral",
+        "chinese": "远古化石羽翼",
+        "spanish": "Engranaje ancestral",
+        "chinese_traditional": "古代翼羽",
+        "korean": "고대 칼깃",
+        "japanese": "古代の翼"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-7cdc4566f43a906f-811d26989931c444b8dc481cb6d47175-v2",
+        "english": "When an Angel moves it gains [valor] [effect0.trigger0.effect0.status0.power].",
+        "french": "Lorsqu'un ange se déplace, il gagne [valor] [effect0.trigger0.effect0.status0.power].",
+        "german": "Wenn sich eine Engel-Einheit bewegt, erhält sie [valor] [effect0.trigger0.effect0.status0.power].",
+        "russian": "При перемещении ангел получает [valor] х[effect0.trigger0.effect0.status0.power].",
+        "portuguese": "Quando um anjo se move, ele recebe [valor] [effect0.trigger0.effect0.status0.power].",
+        "chinese": "当天使移动时，获得 [valor] [effect0.trigger0.effect0.status0.power]。",
+        "spanish": "Cuando un ángel se mueve, añade [valor] [effect0.trigger0.effect0.status0.power].",
+        "chinese_traditional": "當一個天使移動時，對方獲得[valor][effect0.trigger0.effect0.status0.power]。",
+        "korean": "천사가 위치를 바꾸면 [valor] [effect0.trigger0.effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "天使が移動すると、[valor] [effect0.trigger0.effect0.status0.power]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-5b5a41596ce508e1-811d26989931c444b8dc481cb6d47175-v2",
+          "english": "The fossil of a great winged beast from which it is said all angels descend from. Question is, what was it doing in the last circle of Hell?",
+          "french": "Le fossile d'une grande bête ailée dont on dit que tous les anges descendent. La question est de savoir ce qu'elle faisait dans le dernier cercle de l'enfer.",
+          "german": "Das Fossil eines großen geflügelten Tieres, von dem angeblich alle Engel abstammen. Fragt sich nur, was es im letzten Kreis der Hölle getan hat?",
+          "russian": "Окаменелость огромного крылатого зверя, от которого, по преданию, произошли все ангелы. Вопрос в том, что оно делало в последнем Круге Ада?",
+          "portuguese": "O fóssil de uma grande fera alada, da qual se diz que todos os anjos descendem. A pergunta é: o que ela estava fazendo no último Círculo do Inferno?",
+          "chinese": "有翼巨兽的化石，据说所有天使都起源于这种巨兽。问题是，它当时在地狱的最后圆环做什么呢？",
+          "spanish": "El fósil de una enorme bestia alada de la que, según se cree, descienden todos los ángeles. La pregunta es: ¿qué estaba haciendo en el último círculo del Infierno?",
+          "chinese_traditional": "據說所有天使都是從這隻巨大有翼族的化石演化而來。問題是，它在地獄的最終圓環做什麼？",
+          "korean": "모든 천사가 강림한다는 날개 달린 거대한 짐승의 화석. 대체 그 짐승은 지옥의 마지막 계에서 무엇을 했던 것일까?",
+          "japanese": "すべての天使の祖先と言われている、巨大な翼を持つ獣の化石。問題は、それがなぜ地獄の最後の階層にあるのか、ということだ。"
+        }
+      ],
+      "relic_effects": [
+        "@AngelsSpawnWithShiftyValor.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "AngelsSpawnWithShiftyValor.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@AngelsSpawnWithShiftyValor.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Angel",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "AngelsSpawnWithShiftyValor.effects0.triggers0",
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-7a0727eae6eb18c7-811d26989931c444b8dc481cb6d47175-v2",
+        "english": "Apply [valor] [effect0.status0.power].",
+        "french": "Confère [valor] [effect0.status0.power].",
+        "german": "Wende [valor] [effect0.status0.power] an.",
+        "russian": "Накладывает [valor] х[effect0.status0.power].",
+        "portuguese": "Aplica [valor] [effect0.status0.power].",
+        "chinese": "获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power].",
+        "chinese_traditional": "施加[valor][effect0.status0.power]。",
+        "korean": "[valor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[valor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        "@AngelsSpawnWithShiftyValor.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "AngelsSpawnWithShiftyValor.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "descriptionKey": {
-            "key": "CollectableRelicData_descriptionKey-7a0727eae6eb18c7-811d26989931c444b8dc481cb6d47175-v2",
-            "english": "Apply [valor] [effect0.status0.power].",
-            "french": "Confère [valor] [effect0.status0.power].",
-            "german": "Wende [valor] [effect0.status0.power] an.",
-            "russian": "Накладывает [valor] х[effect0.status0.power].",
-            "portuguese": "Aplica [valor] [effect0.status0.power].",
-            "chinese": "获得 [valor] [effect0.status0.power]。",
-            "spanish": "Añade [valor] [effect0.status0.power].",
-            "chinese_traditional": "施加[valor][effect0.status0.power]。",
-            "korean": "[valor] [effect0.status0.power] 효과를 적용합니다.",
-            "japanese": "[valor] [effect0.status0.power]を付与する。"
-          },
-          "trigger": "on_shift",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramStatusEffects": [
-                {
-                  "statusId": "valor",
-                  "count": 2
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "status": "valor",
+          "count": 2
         }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Angel",
-      "paramBool": true
-    }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-62aa2118fcd5efa2-811d26989931c444b8dc481cb6d47175-v2",
-        "english": "([value] Angels)",
-        "french": "([value] Anges)",
-        "german": "([value] Engel)",
-        "russian": "([value] Ангелов)",
-        "portuguese": "([value] Anjos)",
-        "chinese": "([value] 天使)",
-        "spanish": "([value] Ángeles)",
-        "chinese_traditional": "([value] 天使)",
-        "korean": "([value] 천사)",
-        "japanese": "([value] 天使)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Angel"
+      ]
     }
   ]
 }

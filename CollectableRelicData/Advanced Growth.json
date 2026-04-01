@@ -1,77 +1,95 @@
 {
-  "id": "AdvancedGrowth",
-  "guid": "449f6464-8164-48ad-bf66-6107b10f7f5c",
-  "name": "Advanced Growth",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-783d38b85a10401d-134ab834897230243adc53c55c74b7ec-v2",
-    "english": "Advanced Growth",
-    "french": "Croissance avancée",
-    "german": "Fortgeschrittenes Wachstum",
-    "russian": "Зелье роста",
-    "portuguese": "Crescimento Avançado",
-    "chinese": "高级增长剂",
-    "spanish": "Crecimiento avanzado",
-    "chinese_traditional": "進階生長",
-    "korean": "성장 촉진제",
-    "japanese": "成長剤"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-e23ecc6ac4036b7f-134ab834897230243adc53c55c74b7ec-v2",
-    "english": "When an equipped unit dies, permanently add +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] to their Equipment.",
-    "french": "Lorsqu'une unité équipée meurt, +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] définitivement à son équipement.",
-    "german": "Wenn eine ausgerüstete Einheit stirbt, füge ihrer Ausrüstung permanent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] hinzu.",
-    "russian": "Если боец со снаряжением умирает, его снаряжение навсегда получает +[effect0.trigger0.effect0.upgrade.bonusdamage][attack].",
-    "portuguese": "Quando uma unidade equipada morre, adiciona permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] ao seu Equipamento.",
-    "chinese": "拥有装备的单位死亡时，其装备永久增加 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Cuando una unidad equipada muere, añade permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] a su equipo.",
-    "chinese_traditional": "當一個已裝備的單位死亡時，使其裝備永久+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
-    "korean": "장비를 장착한 유닛이 사망하면 장비에 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]이 추가됩니다.",
-    "japanese": "装着したユニットが死亡すると、装備品に+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]を永続的に追加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-14def815941e77fe-134ab834897230243adc53c55c74b7ec-v2",
-      "english": "This bottle certainly gives off mixed messages. Between the skull and the note with the instructions ‘Eat Me,’ it’s unclear what you’re supposed to do.",
-      "french": "Cette bouteille envoie des messages contradictoires. Entre la tête de mort et la note avec les instructions <nobr>« Buvez-moi »,</nobr> il est légitime d'hésiter.",
-      "german": "Die Botschaft dieser Flasche ist etwas unklar. Zwischen dem Totenkopf und dem Zettel mit der Anweisung „Iss mich“ weißt du nicht recht, was du tun sollst.",
-      "russian": "Эта бутылка определенно дает неоднозначные сигналы. Череп и надпись «Съешь меня» сильно противоречат друг другу.",
-      "portuguese": "Essa garrafa transmite mensagens confusas. Não sei se devo evitar seu conteúdo por causa da caveira ou obedecer ao bilhete que diz “me coma”.",
-      "chinese": "这个瓶子有点莫名其妙。上面既有骷髅头，又有写着‘吃我’的纸条，你不知该如何是好。",
-      "spanish": "Este frasco envía mensajes contradictorios. Entre la calavera y la nota que dice «Cómeme», no tienes claro qué hacer con él.",
-      "chinese_traditional": "這個瓶子確實傳達著矛盾的訊息。在骷髏和寫著「吃我」的便條紙之間，你並不清楚應該做什麼。",
-      "korean": "이 병에 담긴 메시지는 확실히 모순적이다. 두개골과 '먹으라'라는 지시가 적힌 메모를 보며, 무엇을 해야 할지 혼란스럽다.",
-      "japanese": "この瓶には、まったくもって謎のメッセージが貼られている。頭蓋骨と\"私を食べなさい\"という指示のメモだけでは、何をすべきかわからない。"
+      "id": "AdvancedGrowth",
+      "name": "Advanced Growth",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassLazarusLeague",
+            "unlock_level": 8
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-783d38b85a10401d-134ab834897230243adc53c55c74b7ec-v2",
+        "english": "Advanced Growth",
+        "french": "Croissance avancée",
+        "german": "Fortgeschrittenes Wachstum",
+        "russian": "Зелье роста",
+        "portuguese": "Crescimento Avançado",
+        "chinese": "高级增长剂",
+        "spanish": "Crecimiento avanzado",
+        "chinese_traditional": "進階生長",
+        "korean": "성장 촉진제",
+        "japanese": "成長剤"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-e23ecc6ac4036b7f-134ab834897230243adc53c55c74b7ec-v2",
+        "english": "When an equipped unit dies, permanently add +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] to their Equipment.",
+        "french": "Lorsqu'une unité équipée meurt, +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] définitivement à son équipement.",
+        "german": "Wenn eine ausgerüstete Einheit stirbt, füge ihrer Ausrüstung permanent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] hinzu.",
+        "russian": "Если боец со снаряжением умирает, его снаряжение навсегда получает +[effect0.trigger0.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Quando uma unidade equipada morre, adiciona permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] ao seu Equipamento.",
+        "chinese": "拥有装备的单位死亡时，其装备永久增加 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Cuando una unidad equipada muere, añade permanentemente +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] a su equipo.",
+        "chinese_traditional": "當一個已裝備的單位死亡時，使其裝備永久+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "장비를 장착한 유닛이 사망하면 장비에 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]이 추가됩니다.",
+        "japanese": "装着したユニットが死亡すると、装備品に+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]を永続的に追加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-14def815941e77fe-134ab834897230243adc53c55c74b7ec-v2",
+          "english": "This bottle certainly gives off mixed messages. Between the skull and the note with the instructions ‘Eat Me,’ it’s unclear what you’re supposed to do.",
+          "french": "Cette bouteille envoie des messages contradictoires. Entre la tête de mort et la note avec les instructions <nobr>« Buvez-moi »,</nobr> il est légitime d'hésiter.",
+          "german": "Die Botschaft dieser Flasche ist etwas unklar. Zwischen dem Totenkopf und dem Zettel mit der Anweisung „Iss mich“ weißt du nicht recht, was du tun sollst.",
+          "russian": "Эта бутылка определенно дает неоднозначные сигналы. Череп и надпись «Съешь меня» сильно противоречат друг другу.",
+          "portuguese": "Essa garrafa transmite mensagens confusas. Não sei se devo evitar seu conteúdo por causa da caveira ou obedecer ao bilhete que diz “me coma”.",
+          "chinese": "这个瓶子有点莫名其妙。上面既有骷髅头，又有写着‘吃我’的纸条，你不知该如何是好。",
+          "spanish": "Este frasco envía mensajes contradictorios. Entre la calavera y la nota que dice «Cómeme», no tienes claro qué hacer con él.",
+          "chinese_traditional": "這個瓶子確實傳達著矛盾的訊息。在骷髏和寫著「吃我」的便條紙之間，你並不清楚應該做什麼。",
+          "korean": "이 병에 담긴 메시지는 확실히 모순적이다. 두개골과 '먹으라'라는 지시가 적힌 메모를 보며, 무엇을 해야 할지 혼란스럽다.",
+          "japanese": "この瓶には、まったくもって謎のメッセージが貼られている。頭蓋骨と\"私を食べなさい\"という指示のメモだけでは、何をすべきかわからない。"
+        }
+      ],
+      "relic_effects": [
+        "@AdvancedGrowth.effects0"
+      ]
     }
   ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "AdvancedGrowth.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@AdvancedGrowth.effects0.triggers0"
+      ],
+      "param_source_team": "both",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "AdvancedGrowth.effects0.triggers0",
+      "trigger": "on_death",
+      "effects": [
+        "@AdvancedGrowth.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
-        {
-          "trigger": "on_death",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffEquipment",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramCardUpgradeData": {
-                "id": "AdvancedGrowth_Upgrade",
-                "guid": "e9597d1a-ed94-42e2-a79e-3ee194b52414",
-                "bonusDamage": 4
-              }
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "both",
-      "paramBool": true
+      "id": "AdvancedGrowth.effects0.triggers0.effects0",
+      "name": "CardEffectBuffEquipment",
+      "target_mode": "self",
+      "param_upgrade": "AdvancedGrowth_Upgrade"
     }
-  ],
-  "unlockLevel": 8
+  ]
 }

@@ -1,160 +1,169 @@
 {
-  "id": "SeleneandSilentBuff",
-  "guid": "e54e6cb7-f424-44be-a7d2-869c6fb7bb15",
-  "name": "Lunar Lantern",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-9121040d51ee286e-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
-    "english": "Lunar Lantern",
-    "french": "Lanterne lunaire",
-    "german": "Mondlaterne",
-    "russian": "Лунный фонарь",
-    "portuguese": "Lanterna Lunar",
-    "chinese": "月亮灯",
-    "spanish": "Farol lunar",
-    "chinese_traditional": "月亮燈籠",
-    "korean": "달빛 랜턴",
-    "japanese": "ルナ・ランタン"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-d95710a2fa35e84f-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
-    "english": "<b>Selene</b> units get +[effect1.upgrade.bonusdamage][attack] during [fullmoon]. <b>Silent</b> units get +[effect0.upgrade.bonusdamage][attack] during [newmoon].",
-    "french": "Les <b>Sélènes</b> gagnent +[effect1.upgrade.bonusdamage][attack] pendant la [fullmoon]. Les <b>Silencieux</b> gagnent +[effect0.upgrade.bonusdamage][attack] pendant la [newmoon].",
-    "german": "<b>Selene</b>-Einheiten erhalten +[effect1.upgrade.bonusdamage][attack] bei [fullmoon]. <b>Stille</b>-Einheiten erhalten +[effect0.upgrade.bonusdamage][attack] bei [newmoon].",
-    "russian": "<b>Селены</b> получают +[effect1.upgrade.bonusdamage][attack] в [fullmoon]. <b>Молчуны</b> получают +[effect0.upgrade.bonusdamage][attack] в [newmoon].",
-    "portuguese": "As unidades de <b>Selenes</b> recebem +[effect1.upgrade.bonusdamage][attack] durante a [fullmoon]. As unidades de <b>Silenciosos</b> recebem +[effect0.upgrade.bonusdamage][attack] durante a [newmoon].",
-    "chinese": "[fullmoon]期间，<b>月神女</b>单位获得 +[effect1.upgrade.bonusdamage][attack]。[newmoon]期间，<b>寂静者</b>单位获得 +[effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Las unidades <b>selenitas</b> añaden +[effect1.upgrade.bonusdamage][attack] durante la [fullmoon]. Las unidades de <b>silenciosos</b> añaden +[effect0.upgrade.bonusdamage][attack] durante la [newmoon].",
-    "chinese_traditional": "<b>塞勒涅</b>單位在[fullmoon]期間獲得+[effect1.upgrade.bonusdamage][attack]。<b>沉默</b>單位在[newmoon]期間獲得+[effect0.upgrade.bonusdamage][attack]。",
-    "korean": "<b>세레네</b> 유닛은 [fullmoon] 동안 +[effect1.upgrade.bonusdamage][attack]을 획득합니다. <b>묵언자</b> 유닛은 [newmoon] 동안 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
-    "japanese": "[fullmoon]中に<b>セレーネ</b>ユニットが+[effect1.upgrade.bonusdamage][attack]を得る。[newmoon]中に<b>サイレント</b>ユニットが+[effect0.upgrade.bonusdamage][attack]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-4eaa63aa19bcda67-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
-      "english": "A lantern that illuminates depending on the phase of the moon.",
-      "french": "Une lanterne qui s'allume en fonction de la phase de la lune.",
-      "german": "Eine Laterne, die je nach Mondphase leuchtet.",
-      "russian": "Фонарь, который светит в соответствии с фазами луны.",
-      "portuguese": "Uma lanterna que se ilumina de acordo com a fase da lua.",
-      "chinese": "一种光亮会随着月相变化的灯笼。",
-      "spanish": "Un farol cuya intensidad cambia según la fase de la luna.",
-      "chinese_traditional": "一盞根據月相來照明的燈籠。",
-      "korean": "달의 위상에 따라 빛을 발하는 등불.",
-      "japanese": "月の満ち欠けによって光を放つランタン。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "additionalTooltips": [
+      "id": "SeleneandSilentBuff",
+      "name": "Lunar Lantern",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "trigger": "on_moon_lit",
-          "style": "default",
-          "isTriggerTooltip": true
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassLunaCoven",
+            "description_modifiers": [
+              {
+                "id": "SeleneandSilentBuff.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-fc34ce30165fdab0-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+                  "english": "([value] Selene units,",
+                  "french": "([value] unités Sélène,",
+                  "german": "([value] Selene-Einheiten,",
+                  "russian": "([value] Селена бойцов,",
+                  "portuguese": "([value] unidades Selene,",
+                  "chinese": "([value] 月神女单位,",
+                  "spanish": "([value] unidades Selene,",
+                  "chinese_traditional": "([value] 塞勒涅單位,",
+                  "korean": "([value] 세레네 유닛,",
+                  "japanese": "([value] セレーネユニット,"
+                },
+                "param_subtype": "SubtypesData_Selene"
+              },
+              {
+                "id": "SeleneandSilentBuff.descriptionModifiers1",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-aa5325f86ae2edf6-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+                  "english": "[value] Silent units)",
+                  "french": "[value] unités Silencieux)",
+                  "german": "[value] Stille-Einheiten)",
+                  "russian": "[value] Молчун бойцов)",
+                  "portuguese": "[value] unidades Silencioso)",
+                  "chinese": "[value] 寂静者单位)",
+                  "spanish": "[value] unidades Silencioso)",
+                  "chinese_traditional": "[value] 無聲者單位)",
+                  "korean": "[value] 묵언자 유닛)",
+                  "japanese": "[value] サイレントユニット)"
+                },
+                "param_subtype": "SubtypesData_Silent"
+              }
+            ],
+            "unlock_level": 6
+          }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "SilentBuff_Atk_UpgradeData",
-        "guid": "0fec9297-23d0-49c9-b934-387619b48f91",
-        "isUnique": true,
-        "bonusDamage": 20
+      "names": {
+        "key": "CollectableRelicData_nameKey-9121040d51ee286e-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+        "english": "Lunar Lantern",
+        "french": "Lanterne lunaire",
+        "german": "Mondlaterne",
+        "russian": "Лунный фонарь",
+        "portuguese": "Lanterna Lunar",
+        "chinese": "月亮灯",
+        "spanish": "Farol lunar",
+        "chinese_traditional": "月亮燈籠",
+        "korean": "달빛 랜턴",
+        "japanese": "ルナ・ランタン"
       },
-      "paramSourceTeam": "monsters",
-      "paramInt2": 1,
-      "paramCharacterSubtype": "SubtypesData_Silent",
-      "paramTrigger": "on_moon_shade"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "paramCardUpgradeData": {
-        "id": "SilentBuff_Atk_UpgradeData",
-        "guid": "0fec9297-23d0-49c9-b934-387619b48f91",
-        "isUnique": true,
-        "bonusDamage": 20
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-d95710a2fa35e84f-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+        "english": "<b>Selene</b> units get +[effect1.upgrade.bonusdamage][attack] during [fullmoon]. <b>Silent</b> units get +[effect0.upgrade.bonusdamage][attack] during [newmoon].",
+        "french": "Les <b>Sélènes</b> gagnent +[effect1.upgrade.bonusdamage][attack] pendant la [fullmoon]. Les <b>Silencieux</b> gagnent +[effect0.upgrade.bonusdamage][attack] pendant la [newmoon].",
+        "german": "<b>Selene</b>-Einheiten erhalten +[effect1.upgrade.bonusdamage][attack] bei [fullmoon]. <b>Stille</b>-Einheiten erhalten +[effect0.upgrade.bonusdamage][attack] bei [newmoon].",
+        "russian": "<b>Селены</b> получают +[effect1.upgrade.bonusdamage][attack] в [fullmoon]. <b>Молчуны</b> получают +[effect0.upgrade.bonusdamage][attack] в [newmoon].",
+        "portuguese": "As unidades de <b>Selenes</b> recebem +[effect1.upgrade.bonusdamage][attack] durante a [fullmoon]. As unidades de <b>Silenciosos</b> recebem +[effect0.upgrade.bonusdamage][attack] durante a [newmoon].",
+        "chinese": "[fullmoon]期间，<b>月神女</b>单位获得 +[effect1.upgrade.bonusdamage][attack]。[newmoon]期间，<b>寂静者</b>单位获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Las unidades <b>selenitas</b> añaden +[effect1.upgrade.bonusdamage][attack] durante la [fullmoon]. Las unidades de <b>silenciosos</b> añaden +[effect0.upgrade.bonusdamage][attack] durante la [newmoon].",
+        "chinese_traditional": "<b>塞勒涅</b>單位在[fullmoon]期間獲得+[effect1.upgrade.bonusdamage][attack]。<b>沉默</b>單位在[newmoon]期間獲得+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "<b>세레네</b> 유닛은 [fullmoon] 동안 +[effect1.upgrade.bonusdamage][attack]을 획득합니다. <b>묵언자</b> 유닛은 [newmoon] 동안 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "[fullmoon]中に<b>セレーネ</b>ユニットが+[effect1.upgrade.bonusdamage][attack]を得る。[newmoon]中に<b>サイレント</b>ユニットが+[effect0.upgrade.bonusdamage][attack]を得る。"
       },
-      "paramSourceTeam": "monsters",
-      "paramInt2": 1,
-      "paramCharacterSubtype": "SubtypesData_Silent",
-      "paramBool": true,
-      "paramTrigger": "on_moonshade_lost"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "additionalTooltips": [
+      "lore_tooltips": [
         {
-          "trigger": "on_moon_shade",
-          "style": "default",
-          "isTriggerTooltip": true
+          "key": "CollectableRelicData_data-4eaa63aa19bcda67-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
+          "english": "A lantern that illuminates depending on the phase of the moon.",
+          "french": "Une lanterne qui s'allume en fonction de la phase de la lune.",
+          "german": "Eine Laterne, die je nach Mondphase leuchtet.",
+          "russian": "Фонарь, который светит в соответствии с фазами луны.",
+          "portuguese": "Uma lanterna que se ilumina de acordo com a fase da lua.",
+          "chinese": "一种光亮会随着月相变化的灯笼。",
+          "spanish": "Un farol cuya intensidad cambia según la fase de la luna.",
+          "chinese_traditional": "一盞根據月相來照明的燈籠。",
+          "korean": "달의 위상에 따라 빛을 발하는 등불.",
+          "japanese": "月の満ち欠けによって光を放つランタン。"
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "SeleneBuff_Atk_UpgradeData",
-        "guid": "07149bfa-c39c-4c35-9af3-291fa7a68620",
-        "isUnique": true,
-        "bonusDamage": 20
-      },
-      "paramSourceTeam": "monsters",
-      "paramInt2": 1,
-      "paramCharacterSubtype": "SubtypesData_Selene",
-      "paramTrigger": "on_moon_lit"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "paramCardUpgradeData": {
-        "id": "SeleneBuff_Atk_UpgradeData",
-        "guid": "07149bfa-c39c-4c35-9af3-291fa7a68620",
-        "isUnique": true,
-        "bonusDamage": 20
-      },
-      "paramSourceTeam": "monsters",
-      "paramInt2": 1,
-      "paramCharacterSubtype": "SubtypesData_Selene",
-      "paramBool": true,
-      "paramTrigger": "on_moonlit_lost"
+      "relic_effects": [
+        "@SeleneandSilentBuff.effects0",
+        "@SeleneandSilentBuff.effects1",
+        "@SeleneandSilentBuff.effects2",
+        "@SeleneandSilentBuff.effects3"
+      ]
     }
   ],
-  "descriptionModifiers": [
+  "relic_effects": [
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-fc34ce30165fdab0-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
-        "english": "([value] Selene units,",
-        "french": "([value] unités Sélène,",
-        "german": "([value] Selene-Einheiten,",
-        "russian": "([value] Селена бойцов,",
-        "portuguese": "([value] unidades Selene,",
-        "chinese": "([value] 月神女单位,",
-        "spanish": "([value] unidades Selene,",
-        "chinese_traditional": "([value] 塞勒涅單位,",
-        "korean": "([value] 세레네 유닛,",
-        "japanese": "([value] セレーネユニット,"
-      },
-      "paramCharacterSubtype": "SubtypesData_Selene"
+      "id": "SeleneandSilentBuff.effects0",
+      "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "additional_tooltips": [
+        "@SeleneandSilentBuff.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "SilentBuff_Atk_UpgradeData",
+      "param_source_team": "monsters",
+      "param_int_2": 1,
+      "param_subtype": "SubtypesData_Silent",
+      "param_trigger": "on_moon_shade"
     },
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-aa5325f86ae2edf6-cfe0c4ace98e6dd40932ce8e45d2be5f-v2",
-        "english": "[value] Silent units)",
-        "french": "[value] unités Silencieux)",
-        "german": "[value] Stille-Einheiten)",
-        "russian": "[value] Молчун бойцов)",
-        "portuguese": "[value] unidades Silencioso)",
-        "chinese": "[value] 寂静者单位)",
-        "spanish": "[value] unidades Silencioso)",
-        "chinese_traditional": "[value] 無聲者單位)",
-        "korean": "[value] 묵언자 유닛)",
-        "japanese": "[value] サイレントユニット)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Silent"
+      "id": "SeleneandSilentBuff.effects1",
+      "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "param_upgrade": "SilentBuff_Atk_UpgradeData",
+      "param_source_team": "monsters",
+      "param_int_2": 1,
+      "param_subtype": "SubtypesData_Silent",
+      "param_bool": true,
+      "param_trigger": "on_moonshade_lost"
+    },
+    {
+      "id": "SeleneandSilentBuff.effects2",
+      "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "additional_tooltips": [
+        "@SeleneandSilentBuff.effects2.additionalTooltips0"
+      ],
+      "param_upgrade": "SeleneBuff_Atk_UpgradeData",
+      "param_source_team": "monsters",
+      "param_int_2": 1,
+      "param_subtype": "SubtypesData_Selene",
+      "param_trigger": "on_moon_lit"
+    },
+    {
+      "id": "SeleneandSilentBuff.effects3",
+      "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
+      "param_upgrade": "SeleneBuff_Atk_UpgradeData",
+      "param_source_team": "monsters",
+      "param_int_2": 1,
+      "param_subtype": "SubtypesData_Selene",
+      "param_bool": true,
+      "param_trigger": "on_moonlit_lost"
     }
   ],
-  "unlockLevel": 6
+  "additional_tooltips": [
+    {
+      "isTriggerTooltip": true,
+      "id": "SeleneandSilentBuff.effects0.additionalTooltips0",
+      "trigger": "on_moon_lit",
+      "style": "default"
+    },
+    {
+      "isTriggerTooltip": true,
+      "id": "SeleneandSilentBuff.effects2.additionalTooltips0",
+      "trigger": "on_moon_shade",
+      "style": "default"
+    }
+  ]
 }

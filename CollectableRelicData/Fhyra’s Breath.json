@@ -1,120 +1,148 @@
 {
-  "id": "WhelpStrikeAddPyregel_DH",
-  "guid": "588825ab-8517-48db-8447-31b48e931aaa",
-  "name": "Fhyra’s Breath",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-3e838ef4766d4898-b2adf1129622332439731d634533d1fa-v2",
-    "english": "Fhyra’s Breath",
-    "french": "Souffle de Fhyra",
-    "german": "Fhyras Atem",
-    "russian": "Дыхание Фиры",
-    "portuguese": "Sopro de Fhyra",
-    "chinese": "菲拉之息",
-    "spanish": "Aliento de Fhyra",
-    "chinese_traditional": "費拉之息",
-    "korean": "휘라의 숨결",
-    "japanese": "ファイラの吐息"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-1a4427bd2bb53deb-b2adf1129622332439731d634533d1fa-v2",
-    "english": "Whelps apply [pyregel] [effect0.power] on [strike].",
-    "french": "Les dragonnets appliquent [pyregel] [effect0.power] à chaque [strike].",
-    "german": "Zöglinge wenden beim [strike] [pyregel] [effect0.power] an.",
-    "russian": "При <b>Выпаде</b> дракончик накладывает [pyregel] х[effect0.power].",
-    "portuguese": "Filhotes aplicam [pyregel] [effect0.power] ao [strike].",
-    "chinese": "幼龙 [strike] 时施加 [pyregel] [effect0.power]。",
-    "spanish": "Las Crías añaden [pyregel] [effect0.power] al <b>Impactar</b>.",
-    "chinese_traditional": "幼龍在[strike]時施加[pyregel][effect0.power]。",
-    "korean": "해츨링은 [strike] 시 [pyregel] [effect0.power] 효과를 적용합니다.",
-    "japanese": "小竜が、[strike]時に[pyregel] [effect0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-88822be6fb7bea04-b2adf1129622332439731d634533d1fa-v2",
-      "english": "Visitors of Fhyra’s temple can buy cute charms at the gift shop. This one costs three gold coins.",
-      "french": "Les visiteurs du temple de Fhyra peuvent acheter de jolies breloques à la boutique de souvenirs. Celle-ci coûte trois pièces d'or.",
-      "german": "Für Besucher des Fhyra-Tempels gibt es im Souvenirladen niedliche Anhänger. Dieser hier kostet drei Goldmünzen.",
-      "russian": "Прихожане храма Фиры могут приобрести брелки в лавке сувениров. Этот стоит три золотых монеты.",
-      "portuguese": "Os visitantes do templo de Fhyra podem comprar belos amuletos na loja de presentes. Este aqui custa três moedas de ouro.",
-      "chinese": "造访菲拉神殿的游客可以在礼品店买到可爱的纪念品。这一个卖三枚金币。",
-      "spanish": "Los visitantes del templo de Fhyra pueden comprar simpáticos amuletos en la tienda de regalos. Este cuesta tres monedas de oro.",
-      "chinese_traditional": "參觀費拉神廟的人可以在紀念品商店買到可愛的護身符。這個要三枚金幣的費用。",
-      "korean": "휘라의 신전을 찾아온 방문객은 기념품 가게에서 금화 3개로 귀여운 부적을 구매할 수 있다.",
-      "japanese": "ファイラの寺院を訪れた者は、土産屋でかわいいお守りを買うことができる。これは金貨3枚で売られているものだ。"
+      "id": "WhelpStrikeAddPyregel_DH",
+      "name": "Fhyra’s Breath",
+      "pools": [
+        "DragonHoard_DHRelics_RewardPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "description_modifiers": [
+              {
+                "id": "WhelpStrikeAddPyregel_DH.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-1b2c0dfb8628a3c4-b2adf1129622332439731d634533d1fa-v2",
+                  "english": "([value] Whelps)",
+                  "french": "([value] Dragonnets)",
+                  "german": "([value] Zöglinge)",
+                  "russian": "([value] дракончиков)",
+                  "portuguese": "([value] Filhotes)",
+                  "chinese": "([value] 幼龙)",
+                  "spanish": "([value] Crías)",
+                  "chinese_traditional": "([value] 幼龍)",
+                  "korean": "([value] 해츨링)",
+                  "japanese": "([value] 小竜)"
+                },
+                "param_int": 1,
+                "param_subtype": "SubtypesData_Whelp"
+              }
+            ],
+            "is_dragons_hoard": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-3e838ef4766d4898-b2adf1129622332439731d634533d1fa-v2",
+        "english": "Fhyra’s Breath",
+        "french": "Souffle de Fhyra",
+        "german": "Fhyras Atem",
+        "russian": "Дыхание Фиры",
+        "portuguese": "Sopro de Fhyra",
+        "chinese": "菲拉之息",
+        "spanish": "Aliento de Fhyra",
+        "chinese_traditional": "費拉之息",
+        "korean": "휘라의 숨결",
+        "japanese": "ファイラの吐息"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-1a4427bd2bb53deb-b2adf1129622332439731d634533d1fa-v2",
+        "english": "Whelps apply [pyregel] [effect0.power] on [strike].",
+        "french": "Les dragonnets appliquent [pyregel] [effect0.power] à chaque [strike].",
+        "german": "Zöglinge wenden beim [strike] [pyregel] [effect0.power] an.",
+        "russian": "При <b>Выпаде</b> дракончик накладывает [pyregel] х[effect0.power].",
+        "portuguese": "Filhotes aplicam [pyregel] [effect0.power] ao [strike].",
+        "chinese": "幼龙 [strike] 时施加 [pyregel] [effect0.power]。",
+        "spanish": "Las Crías añaden [pyregel] [effect0.power] al <b>Impactar</b>.",
+        "chinese_traditional": "幼龍在[strike]時施加[pyregel][effect0.power]。",
+        "korean": "해츨링은 [strike] 시 [pyregel] [effect0.power] 효과를 적용합니다.",
+        "japanese": "小竜が、[strike]時に[pyregel] [effect0.power]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-88822be6fb7bea04-b2adf1129622332439731d634533d1fa-v2",
+          "english": "Visitors of Fhyra’s temple can buy cute charms at the gift shop. This one costs three gold coins.",
+          "french": "Les visiteurs du temple de Fhyra peuvent acheter de jolies breloques à la boutique de souvenirs. Celle-ci coûte trois pièces d'or.",
+          "german": "Für Besucher des Fhyra-Tempels gibt es im Souvenirladen niedliche Anhänger. Dieser hier kostet drei Goldmünzen.",
+          "russian": "Прихожане храма Фиры могут приобрести брелки в лавке сувениров. Этот стоит три золотых монеты.",
+          "portuguese": "Os visitantes do templo de Fhyra podem comprar belos amuletos na loja de presentes. Este aqui custa três moedas de ouro.",
+          "chinese": "造访菲拉神殿的游客可以在礼品店买到可爱的纪念品。这一个卖三枚金币。",
+          "spanish": "Los visitantes del templo de Fhyra pueden comprar simpáticos amuletos en la tienda de regalos. Este cuesta tres monedas de oro.",
+          "chinese_traditional": "參觀費拉神廟的人可以在紀念品商店買到可愛的護身符。這個要三枚金幣的費用。",
+          "korean": "휘라의 신전을 찾아온 방문객은 기념품 가게에서 금화 3개로 귀여운 부적을 구매할 수 있다.",
+          "japanese": "ファイラの寺院を訪れた者は、土産屋でかわいいお守りを買うことができる。これは金貨3枚で売られているものだ。"
+        }
+      ],
+      "relic_effects": [
+        "@WhelpStrikeAddPyregel_DH.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "DragonHoard_DHRelics_RewardPool"
+  "relic_effects": [
+    {
+      "id": "WhelpStrikeAddPyregel_DH.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@WhelpStrikeAddPyregel_DH.effects0.additionalTooltips0"
+      ],
+      "triggers": [
+        "@WhelpStrikeAddPyregel_DH.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Whelp",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WhelpStrikeAddPyregel_DH.effects0.triggers0",
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-e25122edd3cc7796-b2adf1129622332439731d634533d1fa-v2",
+        "english": "Apply [pyregel] [effect0.status0.power]",
+        "french": "Confère [pyregel] [effect0.status0.power].",
+        "german": "Wende [pyregel] [effect0.status0.power] an",
+        "russian": "Накладывает [pyregel] х[effect0.status0.power].",
+        "portuguese": "Aplica [pyregel] [effect0.status0.power]",
+        "chinese": "施加 [pyregel] [effect0.status0.power]",
+        "spanish": "Aplica [pyregel] [effect0.status0.power]",
+        "chinese_traditional": "施加[pyregel][effect0.status0.power]",
+        "korean": "[pyregel] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[pyregel] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@WhelpStrikeAddPyregel_DH.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "WhelpStrikeAddPyregel_DH.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "trigger": "on_attacking",
-          "style": "default",
-          "isTriggerTooltip": true
+          "status": "pyregel",
+          "count": 3
         }
-      ],
-      "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CollectableRelicData_descriptionKey-e25122edd3cc7796-b2adf1129622332439731d634533d1fa-v2",
-            "english": "Apply [pyregel] [effect0.status0.power]",
-            "french": "Confère [pyregel] [effect0.status0.power].",
-            "german": "Wende [pyregel] [effect0.status0.power] an",
-            "russian": "Накладывает [pyregel] х[effect0.status0.power].",
-            "portuguese": "Aplica [pyregel] [effect0.status0.power]",
-            "chinese": "施加 [pyregel] [effect0.status0.power]",
-            "spanish": "Aplica [pyregel] [effect0.status0.power]",
-            "chinese_traditional": "施加[pyregel][effect0.status0.power]",
-            "korean": "[pyregel] [effect0.status0.power] 효과를 적용합니다.",
-            "japanese": "[pyregel] [effect0.status0.power]を付与する。"
-          },
-          "trigger": "on_attacking",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "last_attacked_character",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "pyregel",
-                  "count": 3
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Whelp",
-      "paramBool": true
+      ]
     }
   ],
-  "descriptionModifiers": [
+  "additional_tooltips": [
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-1b2c0dfb8628a3c4-b2adf1129622332439731d634533d1fa-v2",
-        "english": "([value] Whelps)",
-        "french": "([value] Dragonnets)",
-        "german": "([value] Zöglinge)",
-        "russian": "([value] дракончиков)",
-        "portuguese": "([value] Filhotes)",
-        "chinese": "([value] 幼龙)",
-        "spanish": "([value] Crías)",
-        "chinese_traditional": "([value] 幼龍)",
-        "korean": "([value] 해츨링)",
-        "japanese": "([value] 小竜)"
-      },
-      "paramInt": 1,
-      "paramCharacterSubtype": "SubtypesData_Whelp"
+      "isTriggerTooltip": true,
+      "id": "WhelpStrikeAddPyregel_DH.effects0.additionalTooltips0",
+      "trigger": "on_attacking",
+      "style": "default"
     }
-  ],
-  "isDragonsHoardRelic": true
+  ]
 }

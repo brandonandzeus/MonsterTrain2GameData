@@ -1,109 +1,129 @@
 {
-  "id": "CopyFirstConsumePlayed",
-  "guid": "b7207406-3c55-4771-b9c9-ed99dd9e1f9b",
-  "name": "Twin Minds",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-252f7461320aa8f6-e002c044b63f8f84b981d69ff2e2dacc-v2",
-    "english": "Twin Minds",
-    "french": "Esprits jumeaux",
-    "german": "Zwillingsgeist",
-    "russian": "Двойной разум",
-    "portuguese": "Mentes Gêmeas",
-    "chinese": "双重思维",
-    "spanish": "Mentes gemelas",
-    "chinese_traditional": "雙生思維",
-    "korean": "한 쌍의 정신",
-    "japanese": "二重精神"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-f4d6a19dbe75ec40-e002c044b63f8f84b981d69ff2e2dacc-v2",
-    "english": "Create a permanent copy of the first [consume] card played each battle.",
-    "french": "Créez une copie permanente de la première carte avec [consume] jouée à chaque combat.",
-    "german": "Kopiere die erste ausgespielte [consume]-Karte jedes Kampfes permanent.",
-    "russian": "В каждом бою создает постоянную копию первой карты, имеющей [consume].",
-    "portuguese": "Cria uma cópia permanente da primeira carta do tipo [consume] jogada em cada batalha.",
-    "chinese": "为每张战斗打出的第一张 [consume] 牌创建一个永久复制体。",
-    "spanish": "Crea una copia permanente de la primera carta con [consume] que juegas cada batalla.",
-    "chinese_traditional": "每場戰鬥永久複製第一張打出的[consume]牌。",
-    "korean": "매 전투마다 [consume] 효과를 지닌 카드를 처음 사용하면 영구적으로 카드를 복제합니다.",
-    "japanese": "各バトルで最初にプレイされた[consume]カードの永続的な複製を生成する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-a74290aec1765eb6-e002c044b63f8f84b981d69ff2e2dacc-v2",
-      "english": "“The two moved in unison, as if pulled by the invisible hands of a puppet master. Problem was, the two soldiers had long died on the battlefield.”\n—The Archives of the Great Decay",
-      "french": "<nobr>« Les</nobr> deux soldats se déplaçaient à l'unisson, comme tirés par les mains invisibles d'un marionnettiste. Le problème, c'est qu'ils étaient tous les deux morts depuis longtemps sur le champ de <nobr>bataille. »</nobr> \n— Les Archives du Grand Pourrissement",
-      "german": "„Die zwei bewegten sich, als würden sie von den Händen eines unsichtbaren Puppenspielers geführt. Das Problem: Die beiden Soldaten waren schon lange auf dem Schlachtfeld gefallen.“\n—Die Archive des Großen Zerfalls",
-      "russian": "«Эти двое двигались в унисон, как будто ими управляли невидимые руки кукловода. Проблема заключалась в том, что оба солдата были уже давно погибшими в бою».\n— Архивы Великого разложения",
-      "portuguese": "“Os dois se moviam em sincronia, como se fossem puxados pelas mãos invisíveis de um marionetista. O problema era que os dois soldados haviam morrido há muito tempo no campo de batalha.”\n— Arquivos da Grande Decadência",
-      "chinese": "“那两人步调一致，就像是被木偶大师用无形的双手所牵引。可问题是，那两名士兵早就死在战场上了。”\n——《大腐朽纪事》",
-      "spanish": "«Ambos se movían al unísono, como guiados por la mano invisible de un maestro titiritero. El problema era que los soldados habían muerto en batalla hace mucho».\n—Archivos de la Gran Descomposición",
-      "chinese_traditional": "「這兩個人動作一致，彷彿被看不見的木偶師之手操控。問題是，這兩個士兵早就死在戰場上了。」\n——大腐壞紀實",
-      "korean": "“둘은 마치 보이지 않는 손에 이끌린 꼭두각시처럼 하나 되어 움직였다. 문제는, 그 두 군인은 이미 오래전 전장에서 목숨을 잃었다는 것이다.”\n- 위대한 부패의 기록",
-      "japanese": "「2人は、操り人形師の見えない手に吊られるように、同時に動いた。問題は、その兵士たちはずっと前に戦場で死んでいたということだ」\n—偉大なる枯死の記録"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectCopyCardOnCardPlay",
-      "paramCardType": "spell",
-      "additionalTooltips": [
+      "id": "CopyFirstConsumePlayed",
+      "name": "Twin Minds",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitExhaustState_TooltipText",
-            "english": "Can only be played once per battle.",
-            "french": "Ne peut être jouée qu'une fois par combat.",
-            "german": "Kann nur einmal pro Kampf gespielt werden.",
-            "russian": "Можно использовать только один раз за бой.",
-            "portuguese": "Só pode ser usada uma vez por batalha.",
-            "chinese": "每场战斗只能使用一次。",
-            "spanish": "Solo puede jugarse una vez por batalla.",
-            "chinese_traditional": "每場戰鬥只能打出一次。",
-            "korean": "전투 중 한 번만 사용할 수 있습니다.",
-            "japanese": "バトルにつき1回のみプレイ可能。"
-          },
-          "titleKey": {
-            "key": "CardTraitExhaustState_CardText",
-            "english": "Consume",
-            "french": "Destruction",
-            "german": "Verbrauch",
-            "russian": "Поглощение",
-            "portuguese": "Consumir",
-            "chinese": "消耗",
-            "spanish": "Consumir",
-            "chinese_traditional": "消耗",
-            "korean": "소모",
-            "japanese": "消費"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassUnderlegion",
+            "unlock_level": 5
           }
         }
       ],
-      "effectConditions": [
+      "names": {
+        "key": "CollectableRelicData_nameKey-252f7461320aa8f6-e002c044b63f8f84b981d69ff2e2dacc-v2",
+        "english": "Twin Minds",
+        "french": "Esprits jumeaux",
+        "german": "Zwillingsgeist",
+        "russian": "Двойной разум",
+        "portuguese": "Mentes Gêmeas",
+        "chinese": "双重思维",
+        "spanish": "Mentes gemelas",
+        "chinese_traditional": "雙生思維",
+        "korean": "한 쌍의 정신",
+        "japanese": "二重精神"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-f4d6a19dbe75ec40-e002c044b63f8f84b981d69ff2e2dacc-v2",
+        "english": "Create a permanent copy of the first [consume] card played each battle.",
+        "french": "Créez une copie permanente de la première carte avec [consume] jouée à chaque combat.",
+        "german": "Kopiere die erste ausgespielte [consume]-Karte jedes Kampfes permanent.",
+        "russian": "В каждом бою создает постоянную копию первой карты, имеющей [consume].",
+        "portuguese": "Cria uma cópia permanente da primeira carta do tipo [consume] jogada em cada batalha.",
+        "chinese": "为每张战斗打出的第一张 [consume] 牌创建一个永久复制体。",
+        "spanish": "Crea una copia permanente de la primera carta con [consume] que juegas cada batalla.",
+        "chinese_traditional": "每場戰鬥永久複製第一張打出的[consume]牌。",
+        "korean": "매 전투마다 [consume] 효과를 지닌 카드를 처음 사용하면 영구적으로 카드를 복제합니다.",
+        "japanese": "各バトルで最初にプレイされた[consume]カードの永続的な複製を生成する。"
+      },
+      "lore_tooltips": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "previous_turn",
-          "paramComparator": [
-            "equal"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "key": "CollectableRelicData_data-a74290aec1765eb6-e002c044b63f8f84b981d69ff2e2dacc-v2",
+          "english": "“The two moved in unison, as if pulled by the invisible hands of a puppet master. Problem was, the two soldiers had long died on the battlefield.”\n—The Archives of the Great Decay",
+          "french": "<nobr>« Les</nobr> deux soldats se déplaçaient à l'unisson, comme tirés par les mains invisibles d'un marionnettiste. Le problème, c'est qu'ils étaient tous les deux morts depuis longtemps sur le champ de <nobr>bataille. »</nobr> \n— Les Archives du Grand Pourrissement",
+          "german": "„Die zwei bewegten sich, als würden sie von den Händen eines unsichtbaren Puppenspielers geführt. Das Problem: Die beiden Soldaten waren schon lange auf dem Schlachtfeld gefallen.“\n—Die Archive des Großen Zerfalls",
+          "russian": "«Эти двое двигались в унисон, как будто ими управляли невидимые руки кукловода. Проблема заключалась в том, что оба солдата были уже давно погибшими в бою».\n— Архивы Великого разложения",
+          "portuguese": "“Os dois se moviam em sincronia, como se fossem puxados pelas mãos invisíveis de um marionetista. O problema era que os dois soldados haviam morrido há muito tempo no campo de batalha.”\n— Arquivos da Grande Decadência",
+          "chinese": "“那两人步调一致，就像是被木偶大师用无形的双手所牵引。可问题是，那两名士兵早就死在战场上了。”\n——《大腐朽纪事》",
+          "spanish": "«Ambos se movían al unísono, como guiados por la mano invisible de un maestro titiritero. El problema era que los soldados habían muerto en batalla hace mucho».\n—Archivos de la Gran Descomposición",
+          "chinese_traditional": "「這兩個人動作一致，彷彿被看不見的木偶師之手操控。問題是，這兩個士兵早就死在戰場上了。」\n——大腐壞紀實",
+          "korean": "“둘은 마치 보이지 않는 손에 이끌린 꼭두각시처럼 하나 되어 움직였다. 문제는, 그 두 군인은 이미 오래전 전장에서 목숨을 잃었다는 것이다.”\n- 위대한 부패의 기록",
+          "japanese": "「2人は、操り人形師の見えない手に吊られるように、同時に動いた。問題は、その兵士たちはずっと前に戦場で死んでいたということだ」\n—偉大なる枯死の記録"
         }
       ],
-      "traits": [
-        {
-          "traitStateName": "CardTraitExhaustState",
-          "traitIsRemovable": false
-        }
-      ],
-      "paramInt": 1,
-      "paramBool": true
+      "relic_effects": [
+        "@CopyFirstConsumePlayed.effects0"
+      ]
     }
   ],
-  "unlockLevel": 5
+  "relic_effects": [
+    {
+      "id": "CopyFirstConsumePlayed.effects0",
+      "name": "RelicEffectCopyCardOnCardPlay",
+      "param_card_type": "spell",
+      "additional_tooltips": [
+        "@CopyFirstConsumePlayed.effects0.additionalTooltips0"
+      ],
+      "conditions": [
+        "@CopyFirstConsumePlayed.effects0.effectConditions0"
+      ],
+      "traits": [
+        "@CopyFirstConsumePlayed.effects0.traits0"
+      ],
+      "param_int": 1,
+      "param_bool": true
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "CopyFirstConsumePlayed.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "previous_turn",
+      "param_comparator": [
+        "equal"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "CopyFirstConsumePlayed.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitExhaustState_TooltipText",
+        "english": "Can only be played once per battle.",
+        "french": "Ne peut être jouée qu'une fois par combat.",
+        "german": "Kann nur einmal pro Kampf gespielt werden.",
+        "russian": "Можно использовать только один раз за бой.",
+        "portuguese": "Só pode ser usada uma vez por batalha.",
+        "chinese": "每场战斗只能使用一次。",
+        "spanish": "Solo puede jugarse una vez por batalla.",
+        "chinese_traditional": "每場戰鬥只能打出一次。",
+        "korean": "전투 중 한 번만 사용할 수 있습니다.",
+        "japanese": "バトルにつき1回のみプレイ可能。"
+      },
+      "titles": {
+        "key": "CardTraitExhaustState_CardText",
+        "english": "Consume",
+        "french": "Destruction",
+        "german": "Verbrauch",
+        "russian": "Поглощение",
+        "portuguese": "Consumir",
+        "chinese": "消耗",
+        "spanish": "Consumir",
+        "chinese_traditional": "消耗",
+        "korean": "소모",
+        "japanese": "消費"
+      }
+    }
+  ]
 }

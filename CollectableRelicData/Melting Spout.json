@@ -1,105 +1,103 @@
 {
-  "id": "ExtraToughTombs",
-  "guid": "61fdeafd-21c5-4009-a448-a5c286ac3fc0",
-  "name": "Melting Spout",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-8bf832891a0d6cd2-a3d5c803072ad9a43988d527ec069448-v2",
-    "english": "Melting Spout",
-    "french": "Don de cire",
-    "german": "Schmelztopf",
-    "russian": "Плавильня",
-    "portuguese": "Vaso Derretido",
-    "chinese": "熔蜡喷壶",
-    "spanish": "Caldero de cera",
-    "chinese_traditional": "熔化噴嘴",
-    "korean": "끓어오르는 밀랍",
-    "japanese": "融解ポット"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-0954a395f2282163-a3d5c803072ad9a43988d527ec069448-v2",
-    "english": "[tomb] units get +[effect0.power][health] and [burnout] [effect1.upgrade.status0.power].",
-    "french": "Les unités avec [tomb] gagnent +[effect0.power][health] et [burnout] [effect1.upgrade.status0.power].",
-    "german": "[tomb]-Einheiten erhalten +[effect0.power][health] und [burnout] [effect1.upgrade.status0.power].",
-    "russian": "Каждое [tomb] получает +[effect0.power][health] и [burnout] х[effect1.upgrade.status0.power].",
-    "portuguese": "As unidades de [tomb] recebem +[effect0.power][health] e [burnout] [effect1.upgrade.status0.power].",
-    "chinese": "[tomb]单位获得 +[effect0.power][health]与 [burnout] [effect1.upgrade.status0.power]。",
-    "spanish": "Las unidades [tomb] añaden +[effect0.power][health] y [burnout] [effect1.upgrade.status0.power].",
-    "chinese_traditional": "[tomb]單位獲得+[effect0.power][health]和[burnout][effect1.upgrade.status0.power]。",
-    "korean": "[tomb] 유닛들이 +[effect0.power][health] 및 [burnout] [effect1.upgrade.status0.power] 효과를 획득합니다.",
-    "japanese": "[tomb]が付与されているユニットが+[effect0.power][health]と[burnout] [effect1.upgrade.status0.power]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f6294f45972256f3-a3d5c803072ad9a43988d527ec069448-v2",
-      "english": "Only the wealthiest of Waxers can afford the portable melting pot I created to allow on-demand wax guttering. Out of charity, unfortunate Tombs are given a spout by the Reformed so they can survive.",
-      "french": "Seuls les cireux les plus riches ont les moyens d'acheter le creuset portatif que j'ai créé et qui leur permet de réaliser une ciro-lustration sur demande. Par acte de bonté, les reformés offrent un peu de cire aux tombeaux les plus malchanceux afin que ces derniers puissent survivre.",
-      "german": "Nur die reichsten Wachser können sich den tragbaren Schmelztopf leisten, den ich erschaffen habe. Mit ihm können sie neues Wachs auftragen, wenn es notwendig ist. Die armen Tropfe erhalten aus Großmut einige Wachsspritzer von den Reformierten, damit sie überleben.",
-      "russian": "Только самые богатые Восковики могут позволить себе изобретенный мной переносной плавильный котел для своевременных обливаний. В рамках благотворительности обездолившие Вплавления получают свою порцию от Переплавленных.",
-      "portuguese": "Somente os Céreos mais ricos podem pagar pelo caldeirão portátil criado por mim que permite o parafinamento de cera sob demanda. Por caridade, as infelizes Tumbas recebem dos Renovados um tipo de bico para que possam sobreviver.",
-      "chinese": "只有最富有的烛人才能买得起我制造出来的这种便携式熔蜡喷壶。有了它，烛人便可以随时随地为自己灌蜡了。出于人道精神，移形者会为不幸的墓灵们提供喷蜡服务，让它们得以继续存活。",
-      "spanish": "Solo los encerados más ricos pueden permitirse el fundidor portátil que creé para poder separar la cera derretida. Por caridad, las tumbas reciben un caño de los reformados para que puedan sobrevivir",
-      "chinese_traditional": "只有最富有的蠟像才能負擔得起我創造的便攜式熔化鍋，隨時隨地都能滴蠟。出於慈善，那些遭遇不幸的墓穴會被重鑄者賦予一個噴嘴以利生存。",
-      "korean": "개인용 밀랍을 끓일 수 있는 휴대용 도가니는 오직 부유한 밀랍 인간만 구매할 수 있다. 재탄회는 가난한 밀랍 인간에게 밀랍을 조금 나누어 주며 이들이 살아갈 수 있도록 돕는다.",
-      "japanese": "最も裕福なワクサーだけが、私が作った好きなときに蝋浴をできる携帯用溶解ポットを買うことができる。リフォームドは、慈善活動として、リフォームドは不幸なトゥームを生きながらえさせるために蝋を注ぐことがある。"
+      "id": "ExtraToughTombs",
+      "name": "Melting Spout",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRemnant",
+            "description_modifiers": [
+              {
+                "id": "ExtraToughTombs.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-c092905d835028ca-a3d5c803072ad9a43988d527ec069448-v2",
+                  "english": "([value] [tomb] units)",
+                  "french": "([value] unités [tomb])",
+                  "german": "([value] [tomb]-Einheiten)",
+                  "russian": "([value] [tomb] бойцов)",
+                  "portuguese": "([value] unidades [tomb])",
+                  "chinese": "([value] [tomb]单位)",
+                  "spanish": "([value] unidades [tomb])",
+                  "chinese_traditional": "([value] [tomb]單位)",
+                  "korean": "([value] [tomb] 유닛)",
+                  "japanese": "([value] [tomb]ユニット)"
+                },
+                "param_subtype": "SubtypesData_Tomb"
+              }
+            ],
+            "unlock_level": 6
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-8bf832891a0d6cd2-a3d5c803072ad9a43988d527ec069448-v2",
+        "english": "Melting Spout",
+        "french": "Don de cire",
+        "german": "Schmelztopf",
+        "russian": "Плавильня",
+        "portuguese": "Vaso Derretido",
+        "chinese": "熔蜡喷壶",
+        "spanish": "Caldero de cera",
+        "chinese_traditional": "熔化噴嘴",
+        "korean": "끓어오르는 밀랍",
+        "japanese": "融解ポット"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-0954a395f2282163-a3d5c803072ad9a43988d527ec069448-v2",
+        "english": "[tomb] units get +[effect0.power][health] and [burnout] [effect1.upgrade.status0.power].",
+        "french": "Les unités avec [tomb] gagnent +[effect0.power][health] et [burnout] [effect1.upgrade.status0.power].",
+        "german": "[tomb]-Einheiten erhalten +[effect0.power][health] und [burnout] [effect1.upgrade.status0.power].",
+        "russian": "Каждое [tomb] получает +[effect0.power][health] и [burnout] х[effect1.upgrade.status0.power].",
+        "portuguese": "As unidades de [tomb] recebem +[effect0.power][health] e [burnout] [effect1.upgrade.status0.power].",
+        "chinese": "[tomb]单位获得 +[effect0.power][health]与 [burnout] [effect1.upgrade.status0.power]。",
+        "spanish": "Las unidades [tomb] añaden +[effect0.power][health] y [burnout] [effect1.upgrade.status0.power].",
+        "chinese_traditional": "[tomb]單位獲得+[effect0.power][health]和[burnout][effect1.upgrade.status0.power]。",
+        "korean": "[tomb] 유닛들이 +[effect0.power][health] 및 [burnout] [effect1.upgrade.status0.power] 효과를 획득합니다.",
+        "japanese": "[tomb]が付与されているユニットが+[effect0.power][health]と[burnout] [effect1.upgrade.status0.power]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f6294f45972256f3-a3d5c803072ad9a43988d527ec069448-v2",
+          "english": "Only the wealthiest of Waxers can afford the portable melting pot I created to allow on-demand wax guttering. Out of charity, unfortunate Tombs are given a spout by the Reformed so they can survive.",
+          "french": "Seuls les cireux les plus riches ont les moyens d'acheter le creuset portatif que j'ai créé et qui leur permet de réaliser une ciro-lustration sur demande. Par acte de bonté, les reformés offrent un peu de cire aux tombeaux les plus malchanceux afin que ces derniers puissent survivre.",
+          "german": "Nur die reichsten Wachser können sich den tragbaren Schmelztopf leisten, den ich erschaffen habe. Mit ihm können sie neues Wachs auftragen, wenn es notwendig ist. Die armen Tropfe erhalten aus Großmut einige Wachsspritzer von den Reformierten, damit sie überleben.",
+          "russian": "Только самые богатые Восковики могут позволить себе изобретенный мной переносной плавильный котел для своевременных обливаний. В рамках благотворительности обездолившие Вплавления получают свою порцию от Переплавленных.",
+          "portuguese": "Somente os Céreos mais ricos podem pagar pelo caldeirão portátil criado por mim que permite o parafinamento de cera sob demanda. Por caridade, as infelizes Tumbas recebem dos Renovados um tipo de bico para que possam sobreviver.",
+          "chinese": "只有最富有的烛人才能买得起我制造出来的这种便携式熔蜡喷壶。有了它，烛人便可以随时随地为自己灌蜡了。出于人道精神，移形者会为不幸的墓灵们提供喷蜡服务，让它们得以继续存活。",
+          "spanish": "Solo los encerados más ricos pueden permitirse el fundidor portátil que creé para poder separar la cera derretida. Por caridad, las tumbas reciben un caño de los reformados para que puedan sobrevivir",
+          "chinese_traditional": "只有最富有的蠟像才能負擔得起我創造的便攜式熔化鍋，隨時隨地都能滴蠟。出於慈善，那些遭遇不幸的墓穴會被重鑄者賦予一個噴嘴以利生存。",
+          "korean": "개인용 밀랍을 끓일 수 있는 휴대용 도가니는 오직 부유한 밀랍 인간만 구매할 수 있다. 재탄회는 가난한 밀랍 인간에게 밀랍을 조금 나누어 주며 이들이 살아갈 수 있도록 돕는다.",
+          "japanese": "最も裕福なワクサーだけが、私が作った好きなときに蝋浴をできる携帯用溶解ポットを買うことができる。リフォームドは、慈善活動として、リフォームドは不幸なトゥームを生きながらえさせるために蝋を注ぐことがある。"
+        }
+      ],
+      "relic_effects": [
+        "@ExtraToughTombs.effects0",
+        "@ExtraToughTombs.effects1"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassRemnant",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardHealth",
-      "paramCardType": "spell",
-      "paramInt": 30,
-      "paramCharacterSubtype": "SubtypesData_Tomb"
+      "id": "ExtraToughTombs.effects0",
+      "name": "RelicEffectModifyCardHealth",
+      "param_card_type": "spell",
+      "param_int": 30,
+      "param_subtype": "SubtypesData_Tomb"
     },
     {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "paramCardUpgradeData": {
-        "id": "AddBurnoutToTombs",
-        "guid": "357893be-cf62-4347-a393-c5d37c9ed758",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "ephemeral",
-            "count": 1
-          }
-        ],
-        "filters": [
-          {
-            "id": "OnlyTombs",
-            "cardType": "monster",
-            "requiredSubtypesOperator": "and",
-            "requiredSubtypes": [
-              "SubtypesData_Tomb"
-            ]
-          }
-        ],
-        "isUnique": true
-      },
-      "paramSourceTeam": "monsters"
+      "id": "ExtraToughTombs.effects1",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_upgrade": "AddBurnoutToTombs",
+      "param_source_team": "monsters"
     }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-c092905d835028ca-a3d5c803072ad9a43988d527ec069448-v2",
-        "english": "([value] [tomb] units)",
-        "french": "([value] unités [tomb])",
-        "german": "([value] [tomb]-Einheiten)",
-        "russian": "([value] [tomb] бойцов)",
-        "portuguese": "([value] unidades [tomb])",
-        "chinese": "([value] [tomb]单位)",
-        "spanish": "([value] unidades [tomb])",
-        "chinese_traditional": "([value] [tomb]單位)",
-        "korean": "([value] [tomb] 유닛)",
-        "japanese": "([value] [tomb]ユニット)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Tomb"
-    }
-  ],
-  "unlockLevel": 6
+  ]
 }

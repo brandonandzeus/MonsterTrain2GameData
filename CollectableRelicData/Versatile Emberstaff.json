@@ -1,71 +1,90 @@
 {
-  "id": "GainBonusOnThreeCardsPlayed",
-  "guid": "a67438aa-e1d7-45d6-bf62-fceddd2a723f",
-  "name": "Versatile Emberstaff",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-5a8bb8103aeff231-6dbed23d395671b4396e8f73a687f6f7-v2",
-    "english": "Versatile Emberstaff",
-    "french": "Bâton de braises polyvalent",
-    "german": "Vielseitiger Bernsteinstab",
-    "russian": "Универсальный посох",
-    "portuguese": "Cajado de Brasas Versátil",
-    "chinese": "全能余烬法杖",
-    "spanish": "Bastón de ascuas versátil",
-    "chinese_traditional": "多用途餘燼杖",
-    "korean": "다목적 잔불 지팡이",
-    "japanese": "万能エンバー杖"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-988180a3a69f3f51-6dbed23d395671b4396e8f73a687f6f7-v2",
-    "english": "When you play three different kinds of cards in a turn, draw [effect0.power] and gain [effect0.secondarypower][ember].",
-    "french": "Lorsque vous jouez trois types de cartes différents dans un tour, piochez [effect0.power] et gagnez [effect0.secondarypower][ember].",
-    "german": "Wenn du in einem Zug drei verschiedene Arten von Karten ziehst, ziehst du [effect0.power] und erhältst [effect0.secondarypower][ember].",
-    "russian": "Сыграв три карты разного типа за ход, вытяните еще [effect0.power] и получите [effect0.secondarypower][ember].",
-    "portuguese": "Quando você joga três tipos diferentes de cartas em um turno, compra [effect0.power] e recebe [effect0.secondarypower][ember].",
-    "chinese": "当你在一回合内使用三种不同类型的卡牌时，抽 [effect0.power] 张牌并获得 [effect0.secondarypower][ember]。",
-    "spanish": "Cuando juegas tres tipos de cartas diferentes en un turno, robas [effect0.power] y obtienes [effect0.secondarypower][ember].",
-    "chinese_traditional": "當你在一回合內打出三種不同類型的卡牌時，抽[effect0.power]並獲得[effect0.secondarypower][ember]。",
-    "korean": "한 턴 동안 서로 다른 유형의 카드를 세 장 사용하면 [effect0.power]장을 뽑고 [effect0.secondarypower][ember]을 획득합니다.",
-    "japanese": "同一ターンで3枚の異なる種類のカードをプレイすると、[effect0.power]枚ドローして[effect0.secondarypower][ember]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-1112d18082b44b8e-6dbed23d395671b4396e8f73a687f6f7-v2",
-      "english": "To guide Dante in his descent through Hell, Beatrice gifted him a staff infused by her angelic hands to guide him.",
-      "french": "Pour guider Dante dans sa descente aux enfers, Béatrice lui a offert un bâton infusé par ses mains angéliques.",
-      "german": "Um Dante bei seinem Abstieg durch die Hölle zu leiten, schenkte Beatrice ihm einen von ihren Engelshänden gestärkten Stab.",
-      "russian": "Чтобы помочь Данте не заблудиться в Аду, Беатриче подарила ему особый посох, сделанный своими ангельскими ручками.",
-      "portuguese": "Para guiar Dante em sua descida pelo Inferno, Beatrice presenteou-o com um cajado infundido por suas mãos angelicais.",
-      "chinese": "为了引导但丁向下穿越地狱，碧翠丝赠予他一把由天使之手注能的法杖，为他指引方向。",
-      "spanish": "Para guiar a Dante en su descenso por el Infierno, Beatriz le regaló un bastón bendito por sus manos angelicales para que le guiara.",
-      "chinese_traditional": "為了引導但丁降臨地獄，碧崔斯贈予他一根被她天使之手注入過力量的法杖來指引他。",
-      "korean": "지옥을 무사히 내려갈 수 있도록, 베아트리체는 천사의 손길이 담긴 지팡이 하나를 단테에게 선물로 주었다.",
-      "japanese": "地獄を旅するダンテを導くために、ベアトリーチェは天使の力が込められた杖を贈った。"
-    }
-  ],
-  "rarity": "common",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectEnergyAndCardDrawOnCardPlaySequence",
-      "effectConditions": [
+      "id": "GainBonusOnThreeCardsPlayed",
+      "name": "Versatile Emberstaff",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "equal",
-            "less_than"
-          ],
-          "paramInt": 3
+          "collectable": {
+            "rarity": "common"
+          }
         }
       ],
-      "paramInt": 1,
-      "paramInt2": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-5a8bb8103aeff231-6dbed23d395671b4396e8f73a687f6f7-v2",
+        "english": "Versatile Emberstaff",
+        "french": "Bâton de braises polyvalent",
+        "german": "Vielseitiger Bernsteinstab",
+        "russian": "Универсальный посох",
+        "portuguese": "Cajado de Brasas Versátil",
+        "chinese": "全能余烬法杖",
+        "spanish": "Bastón de ascuas versátil",
+        "chinese_traditional": "多用途餘燼杖",
+        "korean": "다목적 잔불 지팡이",
+        "japanese": "万能エンバー杖"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-988180a3a69f3f51-6dbed23d395671b4396e8f73a687f6f7-v2",
+        "english": "When you play three different kinds of cards in a turn, draw [effect0.power] and gain [effect0.secondarypower][ember].",
+        "french": "Lorsque vous jouez trois types de cartes différents dans un tour, piochez [effect0.power] et gagnez [effect0.secondarypower][ember].",
+        "german": "Wenn du in einem Zug drei verschiedene Arten von Karten ziehst, ziehst du [effect0.power] und erhältst [effect0.secondarypower][ember].",
+        "russian": "Сыграв три карты разного типа за ход, вытяните еще [effect0.power] и получите [effect0.secondarypower][ember].",
+        "portuguese": "Quando você joga três tipos diferentes de cartas em um turno, compra [effect0.power] e recebe [effect0.secondarypower][ember].",
+        "chinese": "当你在一回合内使用三种不同类型的卡牌时，抽 [effect0.power] 张牌并获得 [effect0.secondarypower][ember]。",
+        "spanish": "Cuando juegas tres tipos de cartas diferentes en un turno, robas [effect0.power] y obtienes [effect0.secondarypower][ember].",
+        "chinese_traditional": "當你在一回合內打出三種不同類型的卡牌時，抽[effect0.power]並獲得[effect0.secondarypower][ember]。",
+        "korean": "한 턴 동안 서로 다른 유형의 카드를 세 장 사용하면 [effect0.power]장을 뽑고 [effect0.secondarypower][ember]을 획득합니다.",
+        "japanese": "同一ターンで3枚の異なる種類のカードをプレイすると、[effect0.power]枚ドローして[effect0.secondarypower][ember]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-1112d18082b44b8e-6dbed23d395671b4396e8f73a687f6f7-v2",
+          "english": "To guide Dante in his descent through Hell, Beatrice gifted him a staff infused by her angelic hands to guide him.",
+          "french": "Pour guider Dante dans sa descente aux enfers, Béatrice lui a offert un bâton infusé par ses mains angéliques.",
+          "german": "Um Dante bei seinem Abstieg durch die Hölle zu leiten, schenkte Beatrice ihm einen von ihren Engelshänden gestärkten Stab.",
+          "russian": "Чтобы помочь Данте не заблудиться в Аду, Беатриче подарила ему особый посох, сделанный своими ангельскими ручками.",
+          "portuguese": "Para guiar Dante em sua descida pelo Inferno, Beatrice presenteou-o com um cajado infundido por suas mãos angelicais.",
+          "chinese": "为了引导但丁向下穿越地狱，碧翠丝赠予他一把由天使之手注能的法杖，为他指引方向。",
+          "spanish": "Para guiar a Dante en su descenso por el Infierno, Beatriz le regaló un bastón bendito por sus manos angelicales para que le guiara.",
+          "chinese_traditional": "為了引導但丁降臨地獄，碧崔斯贈予他一根被她天使之手注入過力量的法杖來指引他。",
+          "korean": "지옥을 무사히 내려갈 수 있도록, 베아트리체는 천사의 손길이 담긴 지팡이 하나를 단테에게 선물로 주었다.",
+          "japanese": "地獄を旅するダンテを導くために、ベアトリーチェは天使の力が込められた杖を贈った。"
+        }
+      ],
+      "relic_effects": [
+        "@GainBonusOnThreeCardsPlayed.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true
+  "relic_effects": [
+    {
+      "id": "GainBonusOnThreeCardsPlayed.effects0",
+      "name": "RelicEffectEnergyAndCardDrawOnCardPlaySequence",
+      "conditions": [
+        "@GainBonusOnThreeCardsPlayed.effects0.effectConditions0"
+      ],
+      "param_int": 1,
+      "param_int_2": 1
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "GainBonusOnThreeCardsPlayed.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "equal",
+        "less_than"
+      ],
+      "param_int": 3
+    }
+  ]
 }

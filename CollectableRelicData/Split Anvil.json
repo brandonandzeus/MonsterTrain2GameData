@@ -1,77 +1,73 @@
 {
-  "id": "ReduceSpellCostOfCheaper",
-  "guid": "9cc85dbb-d0ae-409b-8f26-41d2202eb1e0",
-  "name": "Split Anvil",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-c96f5a656349d75e-7df9d3f0d551e584b977c2a44a9ab0e7-v2",
-    "english": "Split Anvil",
-    "french": "Enclume brisée",
-    "german": "Gespaltener Amboss",
-    "russian": "Разбитая наковальня",
-    "portuguese": "Bigorna Rachada",
-    "chinese": "残破铁砧",
-    "spanish": "Yunque partido",
-    "chinese_traditional": "分裂鐵砧",
-    "korean": "영혼 모루",
-    "japanese": "割れた金床"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-b2b12b2ea1954ed8-7df9d3f0d551e584b977c2a44a9ab0e7-v2",
-    "english": "When you play a spell, spells in hand that cost less are reduced to 0[ember] for the turn.",
-    "french": "Lorsque vous jouez un sort, les sorts en main avec un coût inférieur coûtent 0[ember] pour ce tour.",
-    "german": "Wenn du einen Zauber spielst, werden die Kosten von Zauberkarten auf deiner Hand, die weniger kosten, für diesen Zug auf 0[ember] reduziert.",
-    "russian": "При использовании чар стоимость остальных чар в руке, обладавших меньшей ценой, снижается до 0[ember] на этот ход.",
-    "portuguese": "Quando você coloca um feitiço em jogo, os feitiços em sua mão que custem menos são reduzidos a 0[ember] durante o turno.",
-    "chinese": "当你打出一个法术时，该回合手牌内费用更低的法术会被降为 0[ember]。",
-    "spanish": "Cuando juegas un hechizo, los hechizos en tu mano que cuestan menos se reducen a 0[ember] durante el turno.",
-    "chinese_traditional": "當你打出一個法術時，手牌中費用較低的法術在本回合費用降為0[ember]。",
-    "korean": "주문을 사용하면, 패에 있는 비용이 더 낮은 주문들의 비용이 그 턴 동안 0[ember]이 됩니다.",
-    "japanese": "呪文をプレイすると、手札のコストがより少ない呪文が、そのターン中は0[ember]に減少される。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f0c17efce3df0f80-7df9d3f0d551e584b977c2a44a9ab0e7-v2",
-      "english": "After completing the Rail, I destroyed the anvil I used to create all the Railspikes as a symbolic ending to this endeavor.",
-      "french": "Après avoir terminé la Voie, j'ai détruit l'enclume que j'avais utilisée pour fabriquer les crampons afin de symboliser l'achèvement de cette entreprise.",
-      "german": "Nach der Fertigstellung des Gleises zerstörte ich den Amboss, auf dem alle Schienennägel geschmiedet wurden. Es war ein Symbol für das Ende des Unterfangens.",
-      "russian": "Завершив строительство Железной дороги, я уничтожил наковальню, на которой создавались все путевые костыли. Это знаменовало окончание работ.",
-      "portuguese": "Depois de completar o Trilho, destruí a bigorna que usei para criar todos os Pregos de Trilho como um final simbólico para essa empreitada.",
-      "chinese": "完成铁轨之后，我摧毁了当时用来锻造道钉的铁砧，代表这一重要使命终于已经完成。",
-      "spanish": "Tras terminar de construir los Raíles, destruí el yunque en el que había creado los clavos de raíl como fin simbólico de la empresa.",
-      "chinese_traditional": "完成軌道後，我銷毀了我用來製造所有軌道釘的鐵砧，作為這項事業的象徵性終結。",
-      "korean": "선로를 완성한 뒤, 나는 우리의 노력을 상징하는 마지막 작업으로 선로 쐐기를 만들 때 사용한 모루를 직접 박살냈다.",
-      "japanese": "鉄道を完成させた後、私はこの取り組みの象徴的な結末として、すべての犬釘を作成するために使用した金床を破壊した。"
-    }
-  ],
-  "rarity": "uncommon",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddTempUpgradeToCardsInHandIfCheaper",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "FreeSpellBlessing",
-        "guid": "13e8decf-3a0e-4bc5-a6e8-197d9f032087",
-        "filters": [
-          {
-            "id": "OnlySpells",
-            "cardType": "spell"
-          },
-          {
-            "id": "ExcludeZeroAndXCost",
-            "costRange": {
-              "x": 1.0,
-              "y": 99.0
-            },
-            "excludeXCost": true
+      "id": "ReduceSpellCostOfCheaper",
+      "name": "Split Anvil",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "deprioritize_in_ftue_drafts": true
           }
-        ],
-        "hideUpgradeIconOnCard": true,
-        "costReduction": 99
-      }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-c96f5a656349d75e-7df9d3f0d551e584b977c2a44a9ab0e7-v2",
+        "english": "Split Anvil",
+        "french": "Enclume brisée",
+        "german": "Gespaltener Amboss",
+        "russian": "Разбитая наковальня",
+        "portuguese": "Bigorna Rachada",
+        "chinese": "残破铁砧",
+        "spanish": "Yunque partido",
+        "chinese_traditional": "分裂鐵砧",
+        "korean": "영혼 모루",
+        "japanese": "割れた金床"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-b2b12b2ea1954ed8-7df9d3f0d551e584b977c2a44a9ab0e7-v2",
+        "english": "When you play a spell, spells in hand that cost less are reduced to 0[ember] for the turn.",
+        "french": "Lorsque vous jouez un sort, les sorts en main avec un coût inférieur coûtent 0[ember] pour ce tour.",
+        "german": "Wenn du einen Zauber spielst, werden die Kosten von Zauberkarten auf deiner Hand, die weniger kosten, für diesen Zug auf 0[ember] reduziert.",
+        "russian": "При использовании чар стоимость остальных чар в руке, обладавших меньшей ценой, снижается до 0[ember] на этот ход.",
+        "portuguese": "Quando você coloca um feitiço em jogo, os feitiços em sua mão que custem menos são reduzidos a 0[ember] durante o turno.",
+        "chinese": "当你打出一个法术时，该回合手牌内费用更低的法术会被降为 0[ember]。",
+        "spanish": "Cuando juegas un hechizo, los hechizos en tu mano que cuestan menos se reducen a 0[ember] durante el turno.",
+        "chinese_traditional": "當你打出一個法術時，手牌中費用較低的法術在本回合費用降為0[ember]。",
+        "korean": "주문을 사용하면, 패에 있는 비용이 더 낮은 주문들의 비용이 그 턴 동안 0[ember]이 됩니다.",
+        "japanese": "呪文をプレイすると、手札のコストがより少ない呪文が、そのターン中は0[ember]に減少される。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f0c17efce3df0f80-7df9d3f0d551e584b977c2a44a9ab0e7-v2",
+          "english": "After completing the Rail, I destroyed the anvil I used to create all the Railspikes as a symbolic ending to this endeavor.",
+          "french": "Après avoir terminé la Voie, j'ai détruit l'enclume que j'avais utilisée pour fabriquer les crampons afin de symboliser l'achèvement de cette entreprise.",
+          "german": "Nach der Fertigstellung des Gleises zerstörte ich den Amboss, auf dem alle Schienennägel geschmiedet wurden. Es war ein Symbol für das Ende des Unterfangens.",
+          "russian": "Завершив строительство Железной дороги, я уничтожил наковальню, на которой создавались все путевые костыли. Это знаменовало окончание работ.",
+          "portuguese": "Depois de completar o Trilho, destruí a bigorna que usei para criar todos os Pregos de Trilho como um final simbólico para essa empreitada.",
+          "chinese": "完成铁轨之后，我摧毁了当时用来锻造道钉的铁砧，代表这一重要使命终于已经完成。",
+          "spanish": "Tras terminar de construir los Raíles, destruí el yunque en el que había creado los clavos de raíl como fin simbólico de la empresa.",
+          "chinese_traditional": "完成軌道後，我銷毀了我用來製造所有軌道釘的鐵砧，作為這項事業的象徵性終結。",
+          "korean": "선로를 완성한 뒤, 나는 우리의 노력을 상징하는 마지막 작업으로 선로 쐐기를 만들 때 사용한 모루를 직접 박살냈다.",
+          "japanese": "鉄道を完成させた後、私はこの取り組みの象徴的な結末として、すべての犬釘を作成するために使用した金床を破壊した。"
+        }
+      ],
+      "relic_effects": [
+        "@ReduceSpellCostOfCheaper.effects0"
+      ]
     }
   ],
-  "deprioritizeInFtueDrafts": true
+  "relic_effects": [
+    {
+      "id": "ReduceSpellCostOfCheaper.effects0",
+      "name": "RelicEffectAddTempUpgradeToCardsInHandIfCheaper",
+      "param_card_type": "spell",
+      "param_upgrade": "FreeSpellBlessing"
+    }
+  ]
 }

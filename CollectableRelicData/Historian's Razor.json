@@ -1,84 +1,102 @@
 {
-  "id": "MoreOrLessArtifactsRelic",
-  "guid": "79122f7a-6895-443a-830c-2db23027776c",
-  "name": "Historian's Razor",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-004fbb4b66d99b63-e8b257aaa6a6e0c4097375e9bff89494-v2",
-    "english": "Historian's Razor",
-    "french": "Rasoir de l'historien",
-    "german": "Historikerklinge",
-    "russian": "Бритва Историка",
-    "portuguese": "Navalha do Historiador",
-    "chinese": "史学家的剃刀",
-    "spanish": "Navaja del Historiador",
-    "chinese_traditional": "史官的剃刀",
-    "korean": "역사가의 면도칼",
-    "japanese": "歴史家の剃刀"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-6cfc7502f170c69b-e8b257aaa6a6e0c4097375e9bff89494-v2",
-    "english": "Friendly units get +[effect1.power][attack] but [effect0.power][attack] for every non-boss and non-starter Artifact you own.",
-    "french": "Les alliés gagnent +[effect1.power][attack] mais [effect0.power][attack] par artéfact (hors artéfact de boss et de départ) que vous possédez.",
-    "german": "Verbündete Einheiten erhalten +[effect1.power][attack], aber [effect0.power][attack] für jedes Nicht-Boss- und Nicht-Anfangs-Artefakt im Besitz.",
-    "russian": "+[effect1.power][attack] и [effect0.power][attack] у союзников не-боссов за каждый имеющийся у вас не-начальный артефакт.",
-    "portuguese": "As unidades aliadas recebem +[effect1.power][attack], mas [effect0.power][attack] para cada Artefato não inicial e que não seja de chefão que você tem.",
-    "chinese": "使所有友方单位获得 +[effect1.power][attack]，但每拥有一件非首领或非初始神器，[effect0.power][attack]。",
-    "spanish": "Las unidades aliadas añaden +[effect1.power][attack], pero [effect0.power][attack] por cada artefacto que no sea de jefe ni inicial.",
-    "chinese_traditional": "友方單位每擁有一件非首領、非初始神器，獲得+[effect1.power][attack]但[effect0.power][attack]。",
-    "korean": "아군 유닛들이 +[effect1.power][attack]을 얻지만, 보유한 보스 외 및 초기 외 유물 하나당 [effect0.power][attack]을 획득합니다.",
-    "japanese": "味方ユニットが+[effect1.power][attack]を得るが、所有している非ボスと非開始アーティファクトにつき[effect0.power][attack]。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-b7dc1f79c93da8ad-e8b257aaa6a6e0c4097375e9bff89494-v2",
-      "english": "The recording of history can be much more speculative than one might think, for even the most objective historians. When it is up to a historian’s imagination, the simplest explanations are the most likely to have occurred.",
-      "french": "L'archivage de l'histoire peut être beaucoup plus spéculatif qu'on ne le pense, même pour les historiens les plus objectifs. Lorsqu'il est question d'imagination, les explications les plus simples sont les plus susceptibles de s'être produites.",
-      "german": "Geschichtsaufzeichnungen können selbst für die objektivsten Historiker viel spekulativer sein, als man denkt. Wenn es nach der Fantasie eines Historikers geht, sind die einfachsten Erklärungen die wahrscheinlichsten.",
-      "russian": "В работе историка, даже будучи беспристрастным, приходится многое додумывать. Восстанавливая цепочки событий, они руководствуются принципом: «самое простое объяснение наиболее вероятно».",
-      "portuguese": "O registro da história pode ser muito mais especulativo do que se imagina, mesmo para os historiadores mais objetivos. Quando depende da imaginação do historiador, as explicações mais simples são as mais verídicas.",
-      "chinese": "即使是最客观的史学家，对历史的记录也可能比一般人想得更具有猜测性。当记录取决于史学家的想象时，最简单的解释往往就是发生过的事。",
-      "spanish": "En el estudio pormenorizado de la historia hay más cabida para las conjeturas de la que uno podría imaginar, incluso para los historiadores más objetivos. Cuando se deja a la imaginación del historiador, las explicaciones más sencillas son las más probables.",
-      "chinese_traditional": "歷史紀錄比人們想像的還要不真實，內容多半是臆測，即使是最客觀的歷史學家也是如此。當它取決於歷史學家的想像時，最簡單的解釋反倒最有可能發生。",
-      "korean": "설령 가장 객관적인 역사가라도, 역사 기록이라는 것은 아주 많은 추측이 담길 수도 있다. 역사가의 상상력에 따르면, 가장 단순한 설명이 실제로 일어났을 가능성이 가장 높다.",
-      "japanese": "歴史の記録というものは、最も客観的な視点を持つ歴史家にとってさえ、想像以上に推測的である可能性がある。歴史家の想像力に委ねられる場合、それは最も単純な説明であると言えるのだろう。"
+      "id": "MoreOrLessArtifactsRelic",
+      "name": "Historian's Razor",
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "champion",
+            "description_modifiers": [
+              {
+                "id": "MoreOrLessArtifactsRelic.descriptionModifiers0",
+                "name": "HistoriansRazorDescriptionModifier",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-f00c089fb12a876d-e8b257aaa6a6e0c4097375e9bff89494-v2",
+                  "english": "([value+-][attack])",
+                  "french": "([value+-][attack])",
+                  "german": "([value+-][attack])",
+                  "russian": "([value+-][attack])",
+                  "portuguese": "([value+-][attack])",
+                  "chinese": "([value+-][attack])",
+                  "spanish": "([value+-][attack])",
+                  "chinese_traditional": "([value+-][attack])",
+                  "korean": "([value+-][attack])",
+                  "japanese": "([value+-][attack])"
+                },
+                "param_int": 10
+              }
+            ],
+            "from_story_event": true,
+            "force_update_count_label": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-004fbb4b66d99b63-e8b257aaa6a6e0c4097375e9bff89494-v2",
+        "english": "Historian's Razor",
+        "french": "Rasoir de l'historien",
+        "german": "Historikerklinge",
+        "russian": "Бритва Историка",
+        "portuguese": "Navalha do Historiador",
+        "chinese": "史学家的剃刀",
+        "spanish": "Navaja del Historiador",
+        "chinese_traditional": "史官的剃刀",
+        "korean": "역사가의 면도칼",
+        "japanese": "歴史家の剃刀"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-6cfc7502f170c69b-e8b257aaa6a6e0c4097375e9bff89494-v2",
+        "english": "Friendly units get +[effect1.power][attack] but [effect0.power][attack] for every non-boss and non-starter Artifact you own.",
+        "french": "Les alliés gagnent +[effect1.power][attack] mais [effect0.power][attack] par artéfact (hors artéfact de boss et de départ) que vous possédez.",
+        "german": "Verbündete Einheiten erhalten +[effect1.power][attack], aber [effect0.power][attack] für jedes Nicht-Boss- und Nicht-Anfangs-Artefakt im Besitz.",
+        "russian": "+[effect1.power][attack] и [effect0.power][attack] у союзников не-боссов за каждый имеющийся у вас не-начальный артефакт.",
+        "portuguese": "As unidades aliadas recebem +[effect1.power][attack], mas [effect0.power][attack] para cada Artefato não inicial e que não seja de chefão que você tem.",
+        "chinese": "使所有友方单位获得 +[effect1.power][attack]，但每拥有一件非首领或非初始神器，[effect0.power][attack]。",
+        "spanish": "Las unidades aliadas añaden +[effect1.power][attack], pero [effect0.power][attack] por cada artefacto que no sea de jefe ni inicial.",
+        "chinese_traditional": "友方單位每擁有一件非首領、非初始神器，獲得+[effect1.power][attack]但[effect0.power][attack]。",
+        "korean": "아군 유닛들이 +[effect1.power][attack]을 얻지만, 보유한 보스 외 및 초기 외 유물 하나당 [effect0.power][attack]을 획득합니다.",
+        "japanese": "味方ユニットが+[effect1.power][attack]を得るが、所有している非ボスと非開始アーティファクトにつき[effect0.power][attack]。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-b7dc1f79c93da8ad-e8b257aaa6a6e0c4097375e9bff89494-v2",
+          "english": "The recording of history can be much more speculative than one might think, for even the most objective historians. When it is up to a historian’s imagination, the simplest explanations are the most likely to have occurred.",
+          "french": "L'archivage de l'histoire peut être beaucoup plus spéculatif qu'on ne le pense, même pour les historiens les plus objectifs. Lorsqu'il est question d'imagination, les explications les plus simples sont les plus susceptibles de s'être produites.",
+          "german": "Geschichtsaufzeichnungen können selbst für die objektivsten Historiker viel spekulativer sein, als man denkt. Wenn es nach der Fantasie eines Historikers geht, sind die einfachsten Erklärungen die wahrscheinlichsten.",
+          "russian": "В работе историка, даже будучи беспристрастным, приходится многое додумывать. Восстанавливая цепочки событий, они руководствуются принципом: «самое простое объяснение наиболее вероятно».",
+          "portuguese": "O registro da história pode ser muito mais especulativo do que se imagina, mesmo para os historiadores mais objetivos. Quando depende da imaginação do historiador, as explicações mais simples são as mais verídicas.",
+          "chinese": "即使是最客观的史学家，对历史的记录也可能比一般人想得更具有猜测性。当记录取决于史学家的想象时，最简单的解释往往就是发生过的事。",
+          "spanish": "En el estudio pormenorizado de la historia hay más cabida para las conjeturas de la que uno podría imaginar, incluso para los historiadores más objetivos. Cuando se deja a la imaginación del historiador, las explicaciones más sencillas son las más probables.",
+          "chinese_traditional": "歷史紀錄比人們想像的還要不真實，內容多半是臆測，即使是最客觀的歷史學家也是如此。當它取決於歷史學家的想像時，最簡單的解釋反倒最有可能發生。",
+          "korean": "설령 가장 객관적인 역사가라도, 역사 기록이라는 것은 아주 많은 추측이 담길 수도 있다. 역사가의 상상력에 따르면, 가장 단순한 설명이 실제로 일어났을 가능성이 가장 높다.",
+          "japanese": "歴史の記録というものは、最も客観的な視点を持つ歴史家にとってさえ、想像以上に推測的である可能性がある。歴史家の想像力に委ねられる場合、それは最も単純な説明であると言えるのだろう。"
+        }
+      ],
+      "relic_effects": [
+        "@MoreOrLessArtifactsRelic.effects0",
+        "@MoreOrLessArtifactsRelic.effects1"
+      ]
     }
   ],
-  "rarity": "champion",
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardAttack",
-      "paramCardType": "monster",
-      "paramInt": -1,
-      "paramFloat": 1.0,
-      "paramBool2": true,
-      "paramBool4": true
+      "id": "MoreOrLessArtifactsRelic.effects0",
+      "name": "RelicEffectModifyCardAttack",
+      "param_card_type": "monster",
+      "param_int": -1,
+      "param_float": 1.0,
+      "param_bool_2": true,
+      "param_bool_4": true
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCardAttack",
-      "paramCardType": "monster",
-      "paramInt": 10,
-      "paramFloat": 1.0
+      "id": "MoreOrLessArtifactsRelic.effects1",
+      "name": "RelicEffectModifyCardAttack",
+      "param_card_type": "monster",
+      "param_int": 10,
+      "param_float": 1.0
     }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "HistoriansRazorDescriptionModifier",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-f00c089fb12a876d-e8b257aaa6a6e0c4097375e9bff89494-v2",
-        "english": "([value+-][attack])",
-        "french": "([value+-][attack])",
-        "german": "([value+-][attack])",
-        "russian": "([value+-][attack])",
-        "portuguese": "([value+-][attack])",
-        "chinese": "([value+-][attack])",
-        "spanish": "([value+-][attack])",
-        "chinese_traditional": "([value+-][attack])",
-        "korean": "([value+-][attack])",
-        "japanese": "([value+-][attack])"
-      },
-      "paramInt": 10
-    }
-  ],
-  "fromStoryEvent": true,
-  "forceUpdateCountLabel": true
+  ]
 }

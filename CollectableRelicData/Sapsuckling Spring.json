@@ -1,115 +1,147 @@
 {
-  "id": "ShroomsGainSapDecay",
-  "guid": "3accd42e-3f82-4bf1-9026-29a624d3dde5",
-  "name": "Sapsuckling Spring",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-45fbc855b93b7b1c-4e43e2498c8818849ab1536fa3b685f0-v2",
-    "english": "Sapsuckling Spring",
-    "french": "Printemps de la sève",
-    "german": "Harzbrunnen",
-    "russian": "Источник сока",
-    "portuguese": "Fonte Seivosa",
-    "chinese": "树液之泉",
-    "spanish": "Fuente de savia",
-    "chinese_traditional": "樹液之泉",
-    "korean": "수액 분수",
-    "japanese": "樹液の泉"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-66f8bb8d83e277a8-4e43e2498c8818849ab1536fa3b685f0-v2",
-    "english": "[shroom] units apply [decay] [effect0.trigger0.effect0.status0.power] to enemy units on [summon].",
-    "french": "Les unités [shroom] appliquent [decay] [effect0.trigger0.effect0.status0.power] aux ennemis à leur [summon].",
-    "german": "[shroom]-Einheiten wenden bei [summon] [decay] [effect0.trigger0.effect0.status0.power] auf gegnerische Einheiten an.",
-    "russian": "При <b>призыве</b> <b>грибы</b> накладывают на врагов [decay] х[effect0.trigger0.effect0.status0.power].",
-    "portuguese": "As unidades de [shroom] aplicam [decay] [effect0.trigger0.effect0.status0.power] às unidades inimigas ao [summon].",
-    "chinese": "[shroom] 单位在 [summon] 时对敌方单位施加 [decay] [effect0.trigger0.effect0.status0.power]。",
-    "spanish": "Las unidades [shroom] añaden [decay] [effect0.trigger0.effect0.status0.power] a las unidades enemigas al <b>Invocarlas</b>.",
-    "chinese_traditional": "[shroom]單位在[summon]時對敵方單位施加[decay][effect0.trigger0.effect0.status0.power]。",
-    "korean": "[shroom] 유닛들은 [summon] 시 적 유닛들에게 [decay] [effect0.trigger0.effect0.status0.power] 효과를 적용합니다.",
-    "japanese": "[shroom]ユニットが[summon]時に敵ユニットに[decay] [effect0.trigger0.effect0.status0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-b4fe795cadaa5576-4e43e2498c8818849ab1536fa3b685f0-v2",
-      "english": "When the moons reach the rotten quadrant in the sky, the shroomfolk celebrate by drinking distilled sap from the trees.",
-      "french": "Lorsque les lunes atteignent le quadrant pourri du ciel, les champignons fêtent l'événement en buvant la sève distillée des arbres.",
-      "german": "Wenn die Monde den faulen Quadranten am Himmel passieren, feiert das Pilzvolk, indem es den gebrannten Saft der Bäume trinkt.",
-      "russian": "Когда спутники в небе достигают квадранта разложения, грибной народец отмечает это событие, распивая очищенный древесный сок.",
-      "portuguese": "Quando as luas atingem o quadrante podre no céu, os cogumelos comemoram bebendo seiva destilada das árvores.",
-      "chinese": "当月亮到达天空中腐烂的四分之一圈时，蘑菇人就会痛饮蒸馏的树液以示庆祝。",
-      "spanish": "Cuando las lunas alcanzan el cuadrante podrido del firmamento, los hongos lo celebran bebiendo savia destilada de los árboles.",
-      "chinese_traditional": "當月亮達到天空中腐爛的象限時，蘑菇族會慶祝並喝下樹木蒸餾的樹液。",
-      "korean": "달이 완전히 기울기 시작하면, 버섯 종족은 나무에서 증류한 수액을 마시며 축하를 나눈다.",
-      "japanese": "月が空の腐敗の象限に達すると、キノコたちは木から蒸留した樹液を飲んで祝うのだ。"
+      "id": "ShroomsGainSapDecay",
+      "name": "Sapsuckling Spring",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassUnderlegion",
+            "description_modifiers": [
+              {
+                "id": "ShroomsGainSapDecay.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-1707bf98741dbb91-4e43e2498c8818849ab1536fa3b685f0-v2",
+                  "english": "([value] [shroom] units)",
+                  "french": "([value] unités [shroom])",
+                  "german": "([value] [shroom]-Einheiten)",
+                  "russian": "([value] [shroom] бойцов)",
+                  "portuguese": "([value] unidades [shroom])",
+                  "chinese": "([value] [shroom]单位)",
+                  "spanish": "([value] unidades [shroom])",
+                  "chinese_traditional": "([value] [shroom]單位)",
+                  "korean": "([value] [shroom] 유닛)",
+                  "japanese": "([value] [shroom]ユニット)"
+                },
+                "param_subtype": "SubtypesData_Shroom"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-45fbc855b93b7b1c-4e43e2498c8818849ab1536fa3b685f0-v2",
+        "english": "Sapsuckling Spring",
+        "french": "Printemps de la sève",
+        "german": "Harzbrunnen",
+        "russian": "Источник сока",
+        "portuguese": "Fonte Seivosa",
+        "chinese": "树液之泉",
+        "spanish": "Fuente de savia",
+        "chinese_traditional": "樹液之泉",
+        "korean": "수액 분수",
+        "japanese": "樹液の泉"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-66f8bb8d83e277a8-4e43e2498c8818849ab1536fa3b685f0-v2",
+        "english": "[shroom] units apply [decay] [effect0.trigger0.effect0.status0.power] to enemy units on [summon].",
+        "french": "Les unités [shroom] appliquent [decay] [effect0.trigger0.effect0.status0.power] aux ennemis à leur [summon].",
+        "german": "[shroom]-Einheiten wenden bei [summon] [decay] [effect0.trigger0.effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "При <b>призыве</b> <b>грибы</b> накладывают на врагов [decay] х[effect0.trigger0.effect0.status0.power].",
+        "portuguese": "As unidades de [shroom] aplicam [decay] [effect0.trigger0.effect0.status0.power] às unidades inimigas ao [summon].",
+        "chinese": "[shroom] 单位在 [summon] 时对敌方单位施加 [decay] [effect0.trigger0.effect0.status0.power]。",
+        "spanish": "Las unidades [shroom] añaden [decay] [effect0.trigger0.effect0.status0.power] a las unidades enemigas al <b>Invocarlas</b>.",
+        "chinese_traditional": "[shroom]單位在[summon]時對敵方單位施加[decay][effect0.trigger0.effect0.status0.power]。",
+        "korean": "[shroom] 유닛들은 [summon] 시 적 유닛들에게 [decay] [effect0.trigger0.effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[shroom]ユニットが[summon]時に敵ユニットに[decay] [effect0.trigger0.effect0.status0.power]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-b4fe795cadaa5576-4e43e2498c8818849ab1536fa3b685f0-v2",
+          "english": "When the moons reach the rotten quadrant in the sky, the shroomfolk celebrate by drinking distilled sap from the trees.",
+          "french": "Lorsque les lunes atteignent le quadrant pourri du ciel, les champignons fêtent l'événement en buvant la sève distillée des arbres.",
+          "german": "Wenn die Monde den faulen Quadranten am Himmel passieren, feiert das Pilzvolk, indem es den gebrannten Saft der Bäume trinkt.",
+          "russian": "Когда спутники в небе достигают квадранта разложения, грибной народец отмечает это событие, распивая очищенный древесный сок.",
+          "portuguese": "Quando as luas atingem o quadrante podre no céu, os cogumelos comemoram bebendo seiva destilada das árvores.",
+          "chinese": "当月亮到达天空中腐烂的四分之一圈时，蘑菇人就会痛饮蒸馏的树液以示庆祝。",
+          "spanish": "Cuando las lunas alcanzan el cuadrante podrido del firmamento, los hongos lo celebran bebiendo savia destilada de los árboles.",
+          "chinese_traditional": "當月亮達到天空中腐爛的象限時，蘑菇族會慶祝並喝下樹木蒸餾的樹液。",
+          "korean": "달이 완전히 기울기 시작하면, 버섯 종족은 나무에서 증류한 수액을 마시며 축하를 나눈다.",
+          "japanese": "月が空の腐敗の象限に達すると、キノコたちは木から蒸留した樹液を飲んで祝うのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@ShroomsGainSapDecay.effects0"
+      ]
     }
   ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "ShroomsGainSapDecay.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@ShroomsGainSapDecay.effects0.additionalTooltips0",
+        "@ShroomsGainSapDecay.effects0.additionalTooltips1",
+        "@ShroomsGainSapDecay.effects0.additionalTooltips2"
+      ],
+      "triggers": [
+        "@ShroomsGainSapDecay.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Shroom",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ShroomsGainSapDecay.effects0.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@ShroomsGainSapDecay.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "ShroomsGainSapDecay.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "statusId": "debuff",
-          "style": "default",
-          "isStatusTooltip": true
-        },
-        {
-          "statusId": "decay",
-          "style": "default",
-          "isStatusTooltip": true
-        },
-        {
-          "trigger": "on_spawn",
-          "style": "default",
-          "isTriggerTooltip": true
+          "status": "decay",
+          "count": 1
         }
-      ],
-      "triggers": [
-        {
-          "trigger": "on_spawn",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "room",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "decay",
-                  "count": 1
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Shroom",
-      "paramBool": true
+      ]
     }
   ],
-  "descriptionModifiers": [
+  "additional_tooltips": [
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-1707bf98741dbb91-4e43e2498c8818849ab1536fa3b685f0-v2",
-        "english": "([value] [shroom] units)",
-        "french": "([value] unités [shroom])",
-        "german": "([value] [shroom]-Einheiten)",
-        "russian": "([value] [shroom] бойцов)",
-        "portuguese": "([value] unidades [shroom])",
-        "chinese": "([value] [shroom]单位)",
-        "spanish": "([value] unidades [shroom])",
-        "chinese_traditional": "([value] [shroom]單位)",
-        "korean": "([value] [shroom] 유닛)",
-        "japanese": "([value] [shroom]ユニット)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Shroom"
+      "isStatusTooltip": true,
+      "id": "ShroomsGainSapDecay.effects0.additionalTooltips0",
+      "status": "debuff",
+      "style": "default"
+    },
+    {
+      "isStatusTooltip": true,
+      "id": "ShroomsGainSapDecay.effects0.additionalTooltips1",
+      "status": "decay",
+      "style": "default"
+    },
+    {
+      "isTriggerTooltip": true,
+      "id": "ShroomsGainSapDecay.effects0.additionalTooltips2",
+      "trigger": "on_spawn",
+      "style": "default"
     }
   ]
 }

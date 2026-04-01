@@ -1,38 +1,31 @@
 {
-  "id": "MoreRares_Relic",
-  "guid": "374995fd-7619-4244-9d1f-269429258584",
-  "name": "MoreRares_Relic",
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "paramCardUpgradeData": {
-        "id": "AddEndlessToNonMorsels",
-        "guid": "c62d9641-8948-4c00-b67d-60f0e728c1c1",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "endless",
-            "count": 1
+      "id": "MoreRares_Relic",
+      "name": "MoreRares_Relic",
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "from_story_event": true,
+            "required_dlc": "railforged"
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeMorsels",
-            "excludedSubtypesOperator": "and",
-            "excludedSubtypes": [
-              "SubtypesData_Snack"
-            ]
-          },
-          {
-            "id": "OnlyUnitIncludingChamps",
-            "cardType": "monster"
-          }
-        ]
-      },
-      "paramSourceTeam": "monsters"
+        }
+      ],
+      "relic_effects": [
+        "@MoreRares_Relic.effects0"
+      ],
+      "lore_style": "malicka"
     }
   ],
-  "relicLoreTooltipStyle": "malicka",
-  "fromStoryEvent": true,
-  "requiredDLC": "railforged"
+  "relic_effects": [
+    {
+      "id": "MoreRares_Relic.effects0",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_upgrade": "AddEndlessToNonMorsels",
+      "param_source_team": "monsters"
+    }
+  ]
 }

@@ -1,112 +1,136 @@
 {
-  "id": "RageOnHymnistDeath",
-  "guid": "ec46f782-87ad-4cbd-aacb-023701417283",
-  "name": "Burning Feather",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-b71f37b21401d092-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
-    "english": "Burning Feather",
-    "french": "Plume brûlante",
-    "german": "Brennende Feder",
-    "russian": "Горящее перо",
-    "portuguese": "Pena Ardente",
-    "chinese": "燃烧之羽",
-    "spanish": "Pluma llameante",
-    "chinese_traditional": "燃燒羽毛",
-    "korean": "불타는 깃털",
-    "japanese": "燃え盛る羽根"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-deb0441c463d5d95-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
-    "english": "When a friendly unit dies, Angels on the floor gain [rage] [effect0.power].",
-    "french": "Lorsqu'un allié meurt, les anges à ce niveau gagnent [rage] [effect0.power].",
-    "german": "Wenn eine verbündete Einheit stirbt, erhalten die Engel auf der Ebene [rage] [effect0.power].",
-    "russian": "Когда союзник умирает, ангелы на этаже приходят в [rage] х[effect0.power].",
-    "portuguese": "Quando uma unidade aliada morre, os anjos no andar recebem [rage] [effect0.power].",
-    "chinese": "友方单位死亡时，该层的天使获得 [rage] [effect0.power]。",
-    "spanish": "Cuando una unidad aliada muere, los ángeles en el mismo piso añaden [rage] [effect0.power].",
-    "chinese_traditional": "當一個友方單位死亡時，該樓層的天使獲得[rage][effect0.power]。",
-    "korean": "아군 유닛이 사망하면 해당 층에 있는 천사가 [rage] [effect0.power] 효과를 획득합니다.",
-    "japanese": "味方ユニットが死亡すると、そのフロアの天使が[rage] [effect0.power]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-fe2830e7cfd61a13-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
-      "english": "“I once wore this with pride. Now, I cannot bear to look at it.”\n—Finna the Doomed",
-      "french": "<nobr>« J'ai</nobr> déjà porté ça avec fierté. Maintenant, je ne peux plus le <nobr>voir. »</nobr> \n— Finna la Condamnée",
-      "german": "„Einst trug ich es mit Stolz. Jetzt kann ich den Anblick nicht mehr ertragen.“\n—Finna die Verdammte",
-      "russian": "«Когда-то я гордо носила его, а теперь даже не могу на него смотреть».\n— Финна Обреченная",
-      "portuguese": "“Eu já usei isso com orgulho. Agora, não consigo nem olhar.”\n— Finna, a Condenada",
-      "chinese": "“我曾自豪地戴着它。现在，我却不忍再看它一眼。”\n——命运已定的菲娜",
-      "spanish": "«En su día, llevé esto con orgullo. Ahora no puedo ni verlo».\n—Finna la Condenada",
-      "chinese_traditional": "「我曾經驕傲地戴著這個。但現在我卻連看它一眼都受不了。」\n——『絕命者』費納",
-      "korean": "“전에는 자랑스럽게 끼던 것이었지만, 지금은 차마 눈길조차 줄 수 없었다.”\n- 파멸자 피나",
-      "japanese": "「かつては誇りを持ってこれを身に着けていた。今は、見るに耐えないものだ」\n—絶望のフィナ"
+      "id": "RageOnHymnistDeath",
+      "name": "Burning Feather",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassBanished",
+            "description_modifiers": [
+              {
+                "id": "RageOnHymnistDeath.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-4521e4a09b7276d3-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
+                  "english": "([value] Angels)",
+                  "french": "([value] Anges)",
+                  "german": "([value] Engel)",
+                  "russian": "([value] Ангелов)",
+                  "portuguese": "([value] Anjos)",
+                  "chinese": "([value] 天使)",
+                  "spanish": "([value] Ángeles)",
+                  "chinese_traditional": "([value] 天使)",
+                  "korean": "([value] 천사)",
+                  "japanese": "([value] 天使)"
+                },
+                "param_subtype": "SubtypesData_Angel"
+              }
+            ],
+            "unlock_level": 6
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-b71f37b21401d092-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
+        "english": "Burning Feather",
+        "french": "Plume brûlante",
+        "german": "Brennende Feder",
+        "russian": "Горящее перо",
+        "portuguese": "Pena Ardente",
+        "chinese": "燃烧之羽",
+        "spanish": "Pluma llameante",
+        "chinese_traditional": "燃燒羽毛",
+        "korean": "불타는 깃털",
+        "japanese": "燃え盛る羽根"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-deb0441c463d5d95-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
+        "english": "When a friendly unit dies, Angels on the floor gain [rage] [effect0.power].",
+        "french": "Lorsqu'un allié meurt, les anges à ce niveau gagnent [rage] [effect0.power].",
+        "german": "Wenn eine verbündete Einheit stirbt, erhalten die Engel auf der Ebene [rage] [effect0.power].",
+        "russian": "Когда союзник умирает, ангелы на этаже приходят в [rage] х[effect0.power].",
+        "portuguese": "Quando uma unidade aliada morre, os anjos no andar recebem [rage] [effect0.power].",
+        "chinese": "友方单位死亡时，该层的天使获得 [rage] [effect0.power]。",
+        "spanish": "Cuando una unidad aliada muere, los ángeles en el mismo piso añaden [rage] [effect0.power].",
+        "chinese_traditional": "當一個友方單位死亡時，該樓層的天使獲得[rage][effect0.power]。",
+        "korean": "아군 유닛이 사망하면 해당 층에 있는 천사가 [rage] [effect0.power] 효과를 획득합니다.",
+        "japanese": "味方ユニットが死亡すると、そのフロアの天使が[rage] [effect0.power]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-fe2830e7cfd61a13-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
+          "english": "“I once wore this with pride. Now, I cannot bear to look at it.”\n—Finna the Doomed",
+          "french": "<nobr>« J'ai</nobr> déjà porté ça avec fierté. Maintenant, je ne peux plus le <nobr>voir. »</nobr> \n— Finna la Condamnée",
+          "german": "„Einst trug ich es mit Stolz. Jetzt kann ich den Anblick nicht mehr ertragen.“\n—Finna die Verdammte",
+          "russian": "«Когда-то я гордо носила его, а теперь даже не могу на него смотреть».\n— Финна Обреченная",
+          "portuguese": "“Eu já usei isso com orgulho. Agora, não consigo nem olhar.”\n— Finna, a Condenada",
+          "chinese": "“我曾自豪地戴着它。现在，我却不忍再看它一眼。”\n——命运已定的菲娜",
+          "spanish": "«En su día, llevé esto con orgullo. Ahora no puedo ni verlo».\n—Finna la Condenada",
+          "chinese_traditional": "「我曾經驕傲地戴著這個。但現在我卻連看它一眼都受不了。」\n——『絕命者』費納",
+          "korean": "“전에는 자랑스럽게 끼던 것이었지만, 지금은 차마 눈길조차 줄 수 없었다.”\n- 파멸자 피나",
+          "japanese": "「かつては誇りを持ってこれを身に着けていた。今は、見るに耐えないものだ」\n—絶望のフィナ"
+        }
+      ],
+      "relic_effects": [
+        "@RageOnHymnistDeath.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "RageOnHymnistDeath.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@RageOnHymnistDeath.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "RageOnHymnistDeath.effects0.triggers0",
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-a8cfae37ecc9edcb-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
+        "english": "Apply [rage] [effect0.power].",
+        "french": "Confère [rage] [effect0.power].",
+        "german": "Wende [rage] [effect0.power] an.",
+        "russian": "Накладывает [rage] х[effect0.power].",
+        "portuguese": "Aplica [rage] [effect0.power].",
+        "chinese": "施加 [rage] [effect0.power]。",
+        "spanish": "Añade [rage] [effect0.power].",
+        "chinese_traditional": "施加[rage][effect0.power]。",
+        "korean": "[rage] [effect0.power] 효과를 적용합니다.",
+        "japanese": "[rage] [effect0.power]を付与する。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        "@RageOnHymnistDeath.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "RageOnHymnistDeath.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_Angel",
+      "param_status_effects": [
         {
-          "descriptionKey": {
-            "key": "CollectableRelicData_descriptionKey-a8cfae37ecc9edcb-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
-            "english": "Apply [rage] [effect0.power].",
-            "french": "Confère [rage] [effect0.power].",
-            "german": "Wende [rage] [effect0.power] an.",
-            "russian": "Накладывает [rage] х[effect0.power].",
-            "portuguese": "Aplica [rage] [effect0.power].",
-            "chinese": "施加 [rage] [effect0.power]。",
-            "spanish": "Añade [rage] [effect0.power].",
-            "chinese_traditional": "施加[rage][effect0.power]。",
-            "korean": "[rage] [effect0.power] 효과를 적용합니다.",
-            "japanese": "[rage] [effect0.power]を付与する。"
-          },
-          "trigger": "on_death",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "room",
-              "targetTeamType": "monsters",
-              "targetCharacterSubtype": "SubtypesData_Angel",
-              "paramStatusEffects": [
-                {
-                  "statusId": "buff",
-                  "count": 7
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "status": "buff",
+          "count": 7
         }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      ]
     }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-4521e4a09b7276d3-94439bceed29cfc40ab84d8a0e5cbc5b-v2",
-        "english": "([value] Angels)",
-        "french": "([value] Anges)",
-        "german": "([value] Engel)",
-        "russian": "([value] Ангелов)",
-        "portuguese": "([value] Anjos)",
-        "chinese": "([value] 天使)",
-        "spanish": "([value] Ángeles)",
-        "chinese_traditional": "([value] 天使)",
-        "korean": "([value] 천사)",
-        "japanese": "([value] 天使)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Angel"
-    }
-  ],
-  "unlockLevel": 6
+  ]
 }

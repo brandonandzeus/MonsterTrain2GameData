@@ -1,88 +1,107 @@
 {
-  "id": "FreezeRandomEndOfTurn",
-  "guid": "c07618e6-b679-4e2c-87a2-9203f52989cf",
-  "name": "Icicle Fracture",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-0ee3c4b6559ab141-61f5e591637b8f24b8e2d93d16a3916f-v2",
-    "english": "Icicle Fracture",
-    "french": "Chute de stalactites",
-    "german": "Eiszapfenbruch",
-    "russian": "Ледяное крошево",
-    "portuguese": "Sincelo Partido",
-    "chinese": "冰柱碎片",
-    "spanish": "Témpano partido",
-    "chinese_traditional": "冰柱斷裂",
-    "korean": "부러진 고드름",
-    "japanese": "粉砕の氷柱"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-ef8ffa9215807989-61f5e591637b8f24b8e2d93d16a3916f-v2",
-    "english": "At end of turn, apply [freeze] to a random card in your hand.",
-    "french": "À la fin du tour, confère <b>Gelé</b> à une carte aléatoire dans votre main.",
-    "german": "Am Ende des Zuges: Wende <b>Eingefroren</b> auf eine zufällige Karte auf deiner Hand an.",
-    "russian": "В конце хода накладывает <b>заморозку</b> на случайную карту в вашей руке.",
-    "portuguese": "Aplica <b>Congelar</b> a uma carta aleatória na sua mão ao final do turno.",
-    "chinese": "回合结束时，随机[freeze]一张手牌。",
-    "spanish": "Al final del turno, añade [freeze] a una carta aleatoria de tu mano.",
-    "chinese_traditional": "在回合結束時，對你手牌中的一張隨機卡牌施加[freeze]。",
-    "korean": "턴 종료 시, 패에 보유한 무작위 카드 한 장에 [freeze] 효과를 적용합니다.",
-    "japanese": "ターン終了時に、手札のランダムなカードに[freeze]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-61d1eaaaa0bec2cf-61f5e591637b8f24b8e2d93d16a3916f-v2",
-      "english": "Ice created from the water of the Styx Sea melts at much higher temperatures than other ice I’ve found throughout Hell. Any icicles that form on the Boneshaker while in this Ring will not thaw entirely from the train’s residual heat, and will become potential hazards for negligent bystanders.",
-      "french": "La glace formée autour de la mer Stygienne fond à une température bien plus élevée que toutes celles que j'ai pu trouver en enfer. Les stalactites qui se forment sur le Hurleflammes en traversant ce cercle ne fondent pas entièrement malgré la chaleur résiduelle du train et deviennent potentiellement dangereuses pour ceux qui passent négligemment en dessous.",
-      "german": "Eis aus dem Wasser der Stygischen See schmilzt erst bei viel höheren Temperaturen als anderes Eis, das ich in der Hölle untersuchen konnte. Eiszapfen, die sich in diesem Kreis am Knochenrüttler bilden, tauen nicht vollständig durch die Hitze des Zuges und sind dann potenzielle Gefahrenquellen für unvorsichtige Schaulustige.",
-      "russian": "Лед из воды Стикса плавится при куда большей температуре, чем любой другой в Аду. Сосульки, облепившие «Костолом» во время путешествия по этому Кругу, отказываются таять и представляют угрозу для невнимательных прохожих.",
-      "portuguese": "O gelo criado da água do Mar de Estige derrete a temperaturas muito mais altas do que outros tipos de gelo que encontrei no Inferno. Os pingentes de gelo que se formarem no Ossuário enquanto estiver neste Círculo não vão derreter totalmente com o calor residual do trem e se tornam perigos potenciais para transeuntes desatentos.",
-      "chinese": "由冥海海水结成的冰块，熔点比地狱其他区域发现的冰块更高。老爷车号在冥海区域行进的过程中，结了许多冰柱。这些冰柱即便是靠车内的热量也无法完全融化，可能会给粗心大意的乘客带来意料之外的危险。",
-      "spanish": "El hielo de las aguas del mar Estigio se derrite a temperaturas mucho más altas que ningún otro que haya visto en el Infierno. Los témpanos que se forman en el Sacudehuesos en este anillo no se derriten con el calor residual del tren, lo que los hace un peligro para los pasajeros descuidados.",
-      "chinese_traditional": "用冥河海的水製成的冰，比我在地獄其他地方發現的冰更耐熱，必須要有更高的溫度才會熔化。在這個界域，任何在碎骨者身上形成的冰柱都不會完全被列車的剩餘熱量熔化，反而會為粗心的旁觀者帶來潛在危害。",
-      "korean": "스틱스 해가 얼어붙어 생겨난 얼음은 지옥의 다른 얼음과 달리 더욱 높은 열을 가해야 녹일 수 있다. 이 고리에 머무르는 동안 본쉐이커에 생긴 고드름은 열차의 잔열로는 완전히 녹지 않을 것이며, 무방비 상태로 지나가는 행인에게 잠재적인 위협이 될 것이다.",
-      "japanese": "ステュクス海の水から作られた氷は、地獄中で見た他の氷よりもはるかに高い温度でようやく溶ける。このリングにいる間にボーンシェイカーに形成されたつららは、列車の残留熱では完全に解けず、不注意な者にとって危険なものになり得る。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassStygian",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectFreezeRandomCards",
-      "additionalTooltips": [
+      "id": "FreezeRandomEndOfTurn",
+      "name": "Icicle Fracture",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitFreeze_TooltipText",
-            "english": "This card will not be discarded at the end of turn. [freeze] is removed when the card is played.",
-            "french": "Cette carte ne sera pas défaussée à la fin du tour. <b>Gelé</b> est supprimé quand la carte est jouée.",
-            "german": "Diese Karte wird am Ende des Zuges nicht auf den Ablagestapel gelegt. <b>Eingefroren</b> wird entfernt, wenn die Karte gespielt wird.",
-            "russian": "Эта карта не будет сброшена в конце хода. Эффект <b>заморозки</b> пропадает, когда карту активируют.",
-            "portuguese": "Esta carta não será descartada no final do turno. <b>Congelamento</b> é removido quando a carta é jogada.",
-            "chinese": "这张卡在回合结束时不会被丢弃。当卡牌被使用后，<b>冻结</b>效果消失。",
-            "spanish": "Esta carta no se descartará al final del turno. La [freeze] se elimina al jugarla.",
-            "chinese_traditional": "此卡不會在回合結束時被捨棄。打出該卡牌時移除[freeze]。",
-            "korean": "이 카드는 턴이 끝날 때 버려지지 않습니다. 카드를 사용하면 [freeze] 효과가 해제됩니다.",
-            "japanese": "このカードはターン終了時に破棄されない。カードがプレイされると[freeze]が解除される。"
-          },
-          "titleKey": {
-            "key": "CardTraitFreeze_CardText",
-            "english": "Frozen",
-            "french": "Gelé",
-            "german": "Eingefroren",
-            "russian": "Заморозка",
-            "portuguese": "Congelada",
-            "chinese": "冻结",
-            "spanish": "Congelación",
-            "chinese_traditional": "凍結",
-            "korean": "동결",
-            "japanese": "凍結"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassStygian"
           }
         }
       ],
-      "paramInt": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-0ee3c4b6559ab141-61f5e591637b8f24b8e2d93d16a3916f-v2",
+        "english": "Icicle Fracture",
+        "french": "Chute de stalactites",
+        "german": "Eiszapfenbruch",
+        "russian": "Ледяное крошево",
+        "portuguese": "Sincelo Partido",
+        "chinese": "冰柱碎片",
+        "spanish": "Témpano partido",
+        "chinese_traditional": "冰柱斷裂",
+        "korean": "부러진 고드름",
+        "japanese": "粉砕の氷柱"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-ef8ffa9215807989-61f5e591637b8f24b8e2d93d16a3916f-v2",
+        "english": "At end of turn, apply [freeze] to a random card in your hand.",
+        "french": "À la fin du tour, confère <b>Gelé</b> à une carte aléatoire dans votre main.",
+        "german": "Am Ende des Zuges: Wende <b>Eingefroren</b> auf eine zufällige Karte auf deiner Hand an.",
+        "russian": "В конце хода накладывает <b>заморозку</b> на случайную карту в вашей руке.",
+        "portuguese": "Aplica <b>Congelar</b> a uma carta aleatória na sua mão ao final do turno.",
+        "chinese": "回合结束时，随机[freeze]一张手牌。",
+        "spanish": "Al final del turno, añade [freeze] a una carta aleatoria de tu mano.",
+        "chinese_traditional": "在回合結束時，對你手牌中的一張隨機卡牌施加[freeze]。",
+        "korean": "턴 종료 시, 패에 보유한 무작위 카드 한 장에 [freeze] 효과를 적용합니다.",
+        "japanese": "ターン終了時に、手札のランダムなカードに[freeze]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-61d1eaaaa0bec2cf-61f5e591637b8f24b8e2d93d16a3916f-v2",
+          "english": "Ice created from the water of the Styx Sea melts at much higher temperatures than other ice I’ve found throughout Hell. Any icicles that form on the Boneshaker while in this Ring will not thaw entirely from the train’s residual heat, and will become potential hazards for negligent bystanders.",
+          "french": "La glace formée autour de la mer Stygienne fond à une température bien plus élevée que toutes celles que j'ai pu trouver en enfer. Les stalactites qui se forment sur le Hurleflammes en traversant ce cercle ne fondent pas entièrement malgré la chaleur résiduelle du train et deviennent potentiellement dangereuses pour ceux qui passent négligemment en dessous.",
+          "german": "Eis aus dem Wasser der Stygischen See schmilzt erst bei viel höheren Temperaturen als anderes Eis, das ich in der Hölle untersuchen konnte. Eiszapfen, die sich in diesem Kreis am Knochenrüttler bilden, tauen nicht vollständig durch die Hitze des Zuges und sind dann potenzielle Gefahrenquellen für unvorsichtige Schaulustige.",
+          "russian": "Лед из воды Стикса плавится при куда большей температуре, чем любой другой в Аду. Сосульки, облепившие «Костолом» во время путешествия по этому Кругу, отказываются таять и представляют угрозу для невнимательных прохожих.",
+          "portuguese": "O gelo criado da água do Mar de Estige derrete a temperaturas muito mais altas do que outros tipos de gelo que encontrei no Inferno. Os pingentes de gelo que se formarem no Ossuário enquanto estiver neste Círculo não vão derreter totalmente com o calor residual do trem e se tornam perigos potenciais para transeuntes desatentos.",
+          "chinese": "由冥海海水结成的冰块，熔点比地狱其他区域发现的冰块更高。老爷车号在冥海区域行进的过程中，结了许多冰柱。这些冰柱即便是靠车内的热量也无法完全融化，可能会给粗心大意的乘客带来意料之外的危险。",
+          "spanish": "El hielo de las aguas del mar Estigio se derrite a temperaturas mucho más altas que ningún otro que haya visto en el Infierno. Los témpanos que se forman en el Sacudehuesos en este anillo no se derriten con el calor residual del tren, lo que los hace un peligro para los pasajeros descuidados.",
+          "chinese_traditional": "用冥河海的水製成的冰，比我在地獄其他地方發現的冰更耐熱，必須要有更高的溫度才會熔化。在這個界域，任何在碎骨者身上形成的冰柱都不會完全被列車的剩餘熱量熔化，反而會為粗心的旁觀者帶來潛在危害。",
+          "korean": "스틱스 해가 얼어붙어 생겨난 얼음은 지옥의 다른 얼음과 달리 더욱 높은 열을 가해야 녹일 수 있다. 이 고리에 머무르는 동안 본쉐이커에 생긴 고드름은 열차의 잔열로는 완전히 녹지 않을 것이며, 무방비 상태로 지나가는 행인에게 잠재적인 위협이 될 것이다.",
+          "japanese": "ステュクス海の水から作られた氷は、地獄中で見た他の氷よりもはるかに高い温度でようやく溶ける。このリングにいる間にボーンシェイカーに形成されたつららは、列車の残留熱では完全に解けず、不注意な者にとって危険なものになり得る。"
+        }
+      ],
+      "relic_effects": [
+        "@FreezeRandomEndOfTurn.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true
+  "relic_effects": [
+    {
+      "id": "FreezeRandomEndOfTurn.effects0",
+      "name": "RelicEffectFreezeRandomCards",
+      "additional_tooltips": [
+        "@FreezeRandomEndOfTurn.effects0.additionalTooltips0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "FreezeRandomEndOfTurn.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitFreeze_TooltipText",
+        "english": "This card will not be discarded at the end of turn. [freeze] is removed when the card is played.",
+        "french": "Cette carte ne sera pas défaussée à la fin du tour. <b>Gelé</b> est supprimé quand la carte est jouée.",
+        "german": "Diese Karte wird am Ende des Zuges nicht auf den Ablagestapel gelegt. <b>Eingefroren</b> wird entfernt, wenn die Karte gespielt wird.",
+        "russian": "Эта карта не будет сброшена в конце хода. Эффект <b>заморозки</b> пропадает, когда карту активируют.",
+        "portuguese": "Esta carta não será descartada no final do turno. <b>Congelamento</b> é removido quando a carta é jogada.",
+        "chinese": "这张卡在回合结束时不会被丢弃。当卡牌被使用后，<b>冻结</b>效果消失。",
+        "spanish": "Esta carta no se descartará al final del turno. La [freeze] se elimina al jugarla.",
+        "chinese_traditional": "此卡不會在回合結束時被捨棄。打出該卡牌時移除[freeze]。",
+        "korean": "이 카드는 턴이 끝날 때 버려지지 않습니다. 카드를 사용하면 [freeze] 효과가 해제됩니다.",
+        "japanese": "このカードはターン終了時に破棄されない。カードがプレイされると[freeze]が解除される。"
+      },
+      "titles": {
+        "key": "CardTraitFreeze_CardText",
+        "english": "Frozen",
+        "french": "Gelé",
+        "german": "Eingefroren",
+        "russian": "Заморозка",
+        "portuguese": "Congelada",
+        "chinese": "冻结",
+        "spanish": "Congelación",
+        "chinese_traditional": "凍結",
+        "korean": "동결",
+        "japanese": "凍結"
+      }
+    }
+  ]
 }

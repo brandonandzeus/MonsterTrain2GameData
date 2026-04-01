@@ -1,73 +1,88 @@
 {
-  "id": "AddAttackOnKill",
-  "guid": "4190af4b-a32f-42ab-acda-8f0d4f50c3a5",
-  "name": "Consumed Crown",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-61f951ad1cd9a263-60b27dea1f79d3840b68bfb1bbbaa282-v2",
-    "english": "Consumed Crown",
-    "french": "Couronne consumée",
-    "german": "Verbrauchte Krone",
-    "russian": "Поглощенная корона",
-    "portuguese": "Coroa Possuída",
-    "chinese": "胜者桂冠",
-    "spanish": "Corona consumida",
-    "chinese_traditional": "被消耗的王冠",
-    "korean": "파괴의 왕관",
-    "japanese": "強者の王冠"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-15192cf26bdcf327-60b27dea1f79d3840b68bfb1bbbaa282-v2",
-    "english": "Friendly units gain +[effect0.power][attack] on [slay].",
-    "french": "Les unités alliées gagnent +[effect0.power][attack] après une <b>Élimination</b>.",
-    "german": "Verbündete Einheiten erhalten +[effect0.power][attack] beim <b>Besiegen</b>.",
-    "russian": "При <b>Убийстве</b> союзники получают +[effect0.power] [attack].",
-    "portuguese": "Unidades aliadas ganham +[effect0.power] de [attack] ao <b>Abater</b>.",
-    "chinese": "友方单位[slay]时获得 +[effect0.power][attack]。",
-    "spanish": "Las unidades aliadas añaden +[effect0.power] de [attack] por [slay].",
-    "chinese_traditional": "友方單位在[slay]時，獲得+[effect0.power][attack]。",
-    "korean": "아군 유닛들이 [slay] 시 +[effect0.power][attack]을 획득합니다.",
-    "japanese": "[slay]時に味方ユニットが[effect0.power][attack]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-5ec4ef1374f856c4-60b27dea1f79d3840b68bfb1bbbaa282-v2",
-      "english": "When a Hellhorned defeats another in battle, they will break off the loser’s horns and add it to their collection, forming them into a crown. I’ve learned the hard way that asking to wear another’s crown is considered incredibly rude.",
-      "french": "Lorsqu'un Cornu en bat un autre au combat, il brise les cornes du perdant et les ajoute à sa collection, formant une couronne. J'ai appris à mes dépens que demander à porter la couronne d'un autre est une offense grave.",
-      "german": "Wenn ein Höllenhorn ein anderes im Kampf besiegt, bricht der Sieger die Hörner des Verlierers ab und fügt sie als Trophäen einer Art Krone hinzu. Ich habe auf die harte Tour gelernt, dass es als verdammt unhöflich gilt, zu fragen, ob man diese Krone tragen darf.",
-      "russian": "Когда одно Адское отродье побеждает другое, оно обламывает побежденному рога, добавляя их в свою коллекцию и собирая из них корону. Благодаря нелепой ошибке мне удалось выяснить, что просить примерить чужую корону крайне невежливо.",
-      "portuguese": "Quando um Endiabrado derrota outro em batalha, ele quebra os chifres do perdedor e os adiciona à sua coleção, formando uma coroa. Aprendi da maneira mais difícil que pedir para usar a coroa de outra pessoa é considerado extremamente rude.",
-      "chinese": "当狱魔在战斗中击败另一只狱魔时，它们会折断对手的角，将其加在自己的战利品里，并把它们制成一顶桂冠。从它们的做派中，我深刻地明白了一件事情，要求佩戴别人的桂冠是一种非常不文明的行为。",
-      "spanish": "Cuando un Astado derrota a otro en combate, arranca los cuernos del perdedor y los añade a su colección hasta formar una corona. He descubierto por las malas que pedir esta corona a alguien se considera una terrible falta de educación.",
-      "chinese_traditional": "當煉獄族在戰鬥中打敗同類時，他們會折斷失敗者的犄角並將其加入自己的收藏，形成一頂王冠。我經由慘痛的經驗學到，要求他們戴上別人的王冠是極其無禮的。",
-      "korean": "전투에서 상대를 물리친 지옥뿔 군단은 부러뜨린 패자의 뿔을 모아 왕관을 만든다. 나는 다른 이의 왕관을 쓰는 것이 매우 무례한 행위라는 것을 알게 되었다.",
-      "japanese": "獄角族が戦いで他の獄角族を倒すと、敗者の角を折ってコレクションに加え、王冠を作る。王冠を貸してもらうことを頼むのは、非常に失礼なことだと私は身をもって学んだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "additionalTooltips": [
+      "id": "AddAttackOnKill",
+      "name": "Consumed Crown",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "trigger": "on_kill",
-          "style": "default",
-          "isTriggerTooltip": true
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassHellhorned"
+          }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "AddAttackOnKillTriggerUpgrade",
-        "guid": "a8bf7a64-1a75-405e-9e43-8afa7ee31106",
-        "bonusDamage": 3
+      "names": {
+        "key": "CollectableRelicData_nameKey-61f951ad1cd9a263-60b27dea1f79d3840b68bfb1bbbaa282-v2",
+        "english": "Consumed Crown",
+        "french": "Couronne consumée",
+        "german": "Verbrauchte Krone",
+        "russian": "Поглощенная корона",
+        "portuguese": "Coroa Possuída",
+        "chinese": "胜者桂冠",
+        "spanish": "Corona consumida",
+        "chinese_traditional": "被消耗的王冠",
+        "korean": "파괴의 왕관",
+        "japanese": "強者の王冠"
       },
-      "paramSourceTeam": "monsters",
-      "paramInt": 3,
-      "paramBool": true,
-      "paramTrigger": "on_kill"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-15192cf26bdcf327-60b27dea1f79d3840b68bfb1bbbaa282-v2",
+        "english": "Friendly units gain +[effect0.power][attack] on [slay].",
+        "french": "Les unités alliées gagnent +[effect0.power][attack] après une <b>Élimination</b>.",
+        "german": "Verbündete Einheiten erhalten +[effect0.power][attack] beim <b>Besiegen</b>.",
+        "russian": "При <b>Убийстве</b> союзники получают +[effect0.power] [attack].",
+        "portuguese": "Unidades aliadas ganham +[effect0.power] de [attack] ao <b>Abater</b>.",
+        "chinese": "友方单位[slay]时获得 +[effect0.power][attack]。",
+        "spanish": "Las unidades aliadas añaden +[effect0.power] de [attack] por [slay].",
+        "chinese_traditional": "友方單位在[slay]時，獲得+[effect0.power][attack]。",
+        "korean": "아군 유닛들이 [slay] 시 +[effect0.power][attack]을 획득합니다.",
+        "japanese": "[slay]時に味方ユニットが[effect0.power][attack]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-5ec4ef1374f856c4-60b27dea1f79d3840b68bfb1bbbaa282-v2",
+          "english": "When a Hellhorned defeats another in battle, they will break off the loser’s horns and add it to their collection, forming them into a crown. I’ve learned the hard way that asking to wear another’s crown is considered incredibly rude.",
+          "french": "Lorsqu'un Cornu en bat un autre au combat, il brise les cornes du perdant et les ajoute à sa collection, formant une couronne. J'ai appris à mes dépens que demander à porter la couronne d'un autre est une offense grave.",
+          "german": "Wenn ein Höllenhorn ein anderes im Kampf besiegt, bricht der Sieger die Hörner des Verlierers ab und fügt sie als Trophäen einer Art Krone hinzu. Ich habe auf die harte Tour gelernt, dass es als verdammt unhöflich gilt, zu fragen, ob man diese Krone tragen darf.",
+          "russian": "Когда одно Адское отродье побеждает другое, оно обламывает побежденному рога, добавляя их в свою коллекцию и собирая из них корону. Благодаря нелепой ошибке мне удалось выяснить, что просить примерить чужую корону крайне невежливо.",
+          "portuguese": "Quando um Endiabrado derrota outro em batalha, ele quebra os chifres do perdedor e os adiciona à sua coleção, formando uma coroa. Aprendi da maneira mais difícil que pedir para usar a coroa de outra pessoa é considerado extremamente rude.",
+          "chinese": "当狱魔在战斗中击败另一只狱魔时，它们会折断对手的角，将其加在自己的战利品里，并把它们制成一顶桂冠。从它们的做派中，我深刻地明白了一件事情，要求佩戴别人的桂冠是一种非常不文明的行为。",
+          "spanish": "Cuando un Astado derrota a otro en combate, arranca los cuernos del perdedor y los añade a su colección hasta formar una corona. He descubierto por las malas que pedir esta corona a alguien se considera una terrible falta de educación.",
+          "chinese_traditional": "當煉獄族在戰鬥中打敗同類時，他們會折斷失敗者的犄角並將其加入自己的收藏，形成一頂王冠。我經由慘痛的經驗學到，要求他們戴上別人的王冠是極其無禮的。",
+          "korean": "전투에서 상대를 물리친 지옥뿔 군단은 부러뜨린 패자의 뿔을 모아 왕관을 만든다. 나는 다른 이의 왕관을 쓰는 것이 매우 무례한 행위라는 것을 알게 되었다.",
+          "japanese": "獄角族が戦いで他の獄角族を倒すと、敗者の角を折ってコレクションに加え、王冠を作る。王冠を貸してもらうことを頼むのは、非常に失礼なことだと私は身をもって学んだ。"
+        }
+      ],
+      "relic_effects": [
+        "@AddAttackOnKill.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddAttackOnKill.effects0",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "additional_tooltips": [
+        "@AddAttackOnKill.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "AddAttackOnKillTriggerUpgrade",
+      "param_source_team": "monsters",
+      "param_int": 3,
+      "param_bool": true,
+      "param_trigger": "on_kill"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "isTriggerTooltip": true,
+      "id": "AddAttackOnKill.effects0.additionalTooltips0",
+      "trigger": "on_kill",
+      "style": "default"
     }
   ]
 }

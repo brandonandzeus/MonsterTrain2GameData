@@ -1,69 +1,90 @@
 {
-  "id": "RandomUnitEveryFloor",
-  "guid": "297c5b7b-efb1-4834-96e0-de4a7e42ccbc",
-  "name": "Sketches of Salvation",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-f5fce1adc2229fb3-17ffff43faa55914db02f20fc5de4283-v2",
-    "english": "Sketches of Salvation",
-    "french": "Croquis salvateurs",
-    "german": "Rettungspläne",
-    "russian": "Спасение в эскизах",
-    "portuguese": "Esboços da Salvação",
-    "chinese": "救援计划",
-    "spanish": "Bocetos de salvación",
-    "chinese_traditional": "救贖的素描",
-    "korean": "구원의 초안",
-    "japanese": "救済のスケッチ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-4258d5d25afad017-17ffff43faa55914db02f20fc5de4283-v2",
-    "english": "On the turn after [deployphase], summon a random unit from your deck on each floor.",
-    "french": "Après la [deployphase], invoque une unité aléatoire du deck à chaque niveau.",
-    "german": "Rufe im Zug nach der [deployphase] eine zufällige Einheit aus deinem Deck auf jede Ebene.",
-    "russian": "В первый ход после <b>фазы размещения</b> призовите по случайному бойцу из своей колоды на каждый этаж.",
-    "portuguese": "No turno após a [deployphase], invoca uma unidade aleatória do seu deck em cada andar.",
-    "chinese": "[deployphase]后的回合里，从你的卡组中随机召唤一个单位到每一层。",
-    "spanish": "En el primer turno tras la [deployphase], invoca una unidad aleatoria de tu mazo en cada piso.",
-    "chinese_traditional": "在[deployphase]之後，在每個樓層上召喚一個來自你牌組的隨機單位。",
-    "korean": "[deployphase] 이후 턴에서, 덱에서 무작위 유닛을 층마다 하나씩 소환합니다.",
-    "japanese": "[deployphase]の後のターンに、デッキからランダムなユニットを各フロアに召喚する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-61ea04db4a316d10-17ffff43faa55914db02f20fc5de4283-v2",
-      "english": "There was little time to act after Seraph’s invasion, but there was just enough for me to design a way to protect what would remain of the Pyre after its inevitable destruction.",
-      "french": "Nous eûmes très peu de temps pour agir après l'invasion de Séraphin, mais juste assez pour que je parvienne à concevoir un moyen de protéger ce qui resterait du Brasier après sa destruction inévitable.",
-      "german": "Nach Seraphs Überfall war nicht viel Zeit, um zu reagieren, aber ich konnte gerade so einen Plan schaffen, wie die Reste der Höllenglut nach ihrer unausweichlichen Zerstörung geschützt werden könnten.",
-      "russian": "Когда вторглись войска Серафима, времени практически не было, но все же мне удалось придумать, как защитить остатки Пекла, которому грозило неизбежное уничтожение.",
-      "portuguese": "Havia pouco tempo para agir após a invasão do Serafim, mas o suficiente para criar uma maneira de proteger o que restaria da Pira após sua inevitável destruição.",
-      "chinese": "炽天使发动侵略时没给我留下多少反应时间，但我刚好有足够的时间拟定计划：当薪火不可避免地被毁灭之后，我该如何保护薪火的残余。",
-      "spanish": "Había poco tiempo para actuar tras la invasión de Seraph, pero el suficiente para diseñar una forma de proteger los restos de la Pira tras su inevitable destrucción.",
-      "chinese_traditional": "撒拉弗入侵後幾乎沒有時間行動，但剛好足夠讓我設計出一種方法來保護火堆在遭遇不可避免的毀滅後所剩下的殘餘。",
-      "korean": "세라핌의 침공 이후 행동할 시간은 거의 부족했다. 하지만 화로가 부서진 뒤에도 그 잔재를 지킬 방법을 고안할 시간은 충분했다.",
-      "japanese": "セラフの侵略後、時間的な猶予はほとんどなかったが、避けられぬ破壊の後に炉の残骸を保護する方法を考案するには十分な時間があったのだ。"
+      "id": "RandomUnitEveryFloor",
+      "name": "Sketches of Salvation",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "deprioritize_in_ftue_drafts": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-f5fce1adc2229fb3-17ffff43faa55914db02f20fc5de4283-v2",
+        "english": "Sketches of Salvation",
+        "french": "Croquis salvateurs",
+        "german": "Rettungspläne",
+        "russian": "Спасение в эскизах",
+        "portuguese": "Esboços da Salvação",
+        "chinese": "救援计划",
+        "spanish": "Bocetos de salvación",
+        "chinese_traditional": "救贖的素描",
+        "korean": "구원의 초안",
+        "japanese": "救済のスケッチ"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-4258d5d25afad017-17ffff43faa55914db02f20fc5de4283-v2",
+        "english": "On the turn after [deployphase], summon a random unit from your deck on each floor.",
+        "french": "Après la [deployphase], invoque une unité aléatoire du deck à chaque niveau.",
+        "german": "Rufe im Zug nach der [deployphase] eine zufällige Einheit aus deinem Deck auf jede Ebene.",
+        "russian": "В первый ход после <b>фазы размещения</b> призовите по случайному бойцу из своей колоды на каждый этаж.",
+        "portuguese": "No turno após a [deployphase], invoca uma unidade aleatória do seu deck em cada andar.",
+        "chinese": "[deployphase]后的回合里，从你的卡组中随机召唤一个单位到每一层。",
+        "spanish": "En el primer turno tras la [deployphase], invoca una unidad aleatoria de tu mazo en cada piso.",
+        "chinese_traditional": "在[deployphase]之後，在每個樓層上召喚一個來自你牌組的隨機單位。",
+        "korean": "[deployphase] 이후 턴에서, 덱에서 무작위 유닛을 층마다 하나씩 소환합니다.",
+        "japanese": "[deployphase]の後のターンに、デッキからランダムなユニットを各フロアに召喚する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-61ea04db4a316d10-17ffff43faa55914db02f20fc5de4283-v2",
+          "english": "There was little time to act after Seraph’s invasion, but there was just enough for me to design a way to protect what would remain of the Pyre after its inevitable destruction.",
+          "french": "Nous eûmes très peu de temps pour agir après l'invasion de Séraphin, mais juste assez pour que je parvienne à concevoir un moyen de protéger ce qui resterait du Brasier après sa destruction inévitable.",
+          "german": "Nach Seraphs Überfall war nicht viel Zeit, um zu reagieren, aber ich konnte gerade so einen Plan schaffen, wie die Reste der Höllenglut nach ihrer unausweichlichen Zerstörung geschützt werden könnten.",
+          "russian": "Когда вторглись войска Серафима, времени практически не было, но все же мне удалось придумать, как защитить остатки Пекла, которому грозило неизбежное уничтожение.",
+          "portuguese": "Havia pouco tempo para agir após a invasão do Serafim, mas o suficiente para criar uma maneira de proteger o que restaria da Pira após sua inevitável destruição.",
+          "chinese": "炽天使发动侵略时没给我留下多少反应时间，但我刚好有足够的时间拟定计划：当薪火不可避免地被毁灭之后，我该如何保护薪火的残余。",
+          "spanish": "Había poco tiempo para actuar tras la invasión de Seraph, pero el suficiente para diseñar una forma de proteger los restos de la Pira tras su inevitable destrucción.",
+          "chinese_traditional": "撒拉弗入侵後幾乎沒有時間行動，但剛好足夠讓我設計出一種方法來保護火堆在遭遇不可避免的毀滅後所剩下的殘餘。",
+          "korean": "세라핌의 침공 이후 행동할 시간은 거의 부족했다. 하지만 화로가 부서진 뒤에도 그 잔재를 지킬 방법을 고안할 시간은 충분했다.",
+          "japanese": "セラフの侵略後、時間的な猶予はほとんどなかったが、避けられぬ破壊の後に炉の残骸を保護する方法を考案するには十分な時間があったのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@RandomUnitEveryFloor.effects0",
+        "@RandomUnitEveryFloor.effects1",
+        "@RandomUnitEveryFloor.effects2",
+        "@RandomUnitEveryFloor.effects3"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "rarity": "uncommon",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 2
+      "id": "RandomUnitEveryFloor.effects0",
+      "name": "RelicEffectNull",
+      "param_int": 2
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitFromDeck"
+      "id": "RandomUnitEveryFloor.effects1",
+      "name": "RelicEffectSpawnUnitFromDeck"
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitFromDeck",
-      "paramInt": 1
+      "id": "RandomUnitEveryFloor.effects2",
+      "name": "RelicEffectSpawnUnitFromDeck",
+      "param_int": 1
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitFromDeck",
-      "paramInt": 2
+      "id": "RandomUnitEveryFloor.effects3",
+      "name": "RelicEffectSpawnUnitFromDeck",
+      "param_int": 2
     }
-  ],
-  "disallowInDeploymentPhase": true,
-  "deprioritizeInFtueDrafts": true
+  ]
 }

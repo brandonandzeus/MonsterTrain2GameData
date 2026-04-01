@@ -1,59 +1,74 @@
 {
-  "id": "AddImpToHand",
-  "guid": "91211832-747e-4995-b4cb-7ca23c000f10",
-  "name": "Imp-cicle",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-3dd1b20e59200d2a-012a316fe0043ca4a86c1bc85da22679-v2",
-    "english": "Imp-cicle",
-    "french": "Diable gelé",
-    "german": "Tiefkühl-Kobold",
-    "russian": "Бес-ледышка",
-    "portuguese": "Dia-gelinho",
-    "chinese": "小鬼回收",
-    "spanish": "Heladillo",
-    "chinese_traditional": "小鬼冰柱",
-    "korean": "냉동 임프",
-    "japanese": "インプの氷柱"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-cb9dc64a7c8a2a48-012a316fe0043ca4a86c1bc85da22679-v2",
-    "english": "At start of turn, add a random [imp] unit to hand.",
-    "french": "Au début du tour, ajoute un diablotin aléatoire à votre main.",
-    "german": "Nimm zu Beginn deines Zuges eine zufällige Kobold-Einheit auf die Hand.",
-    "russian": "В начале хода добавьте в свою руку случайного беса.",
-    "portuguese": "No início do turno, adicione um Diabinho aleatório à sua mão.",
-    "chinese": "回合开始时，随机将一个小鬼单位加入你的手牌。",
-    "spanish": "Al principio de cada turno, añade una unidad [imp] al azar a tu mano.",
-    "chinese_traditional": "在回合開始時，將一張隨機[imp]單位加入手牌。",
-    "korean": "턴 시작 시, 무작위 [imp] 유닛 카드를 패에 추가합니다.",
-    "japanese": "ターン開始時に、ランダムな[imp]ユニットを手札に追加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-3a7305261e3ef333-012a316fe0043ca4a86c1bc85da22679-v2",
-      "english": "When Seraph shattered our Hell Pyre and Hell froze over, many unsuspecting imps were caught in the ice. Taken aboard the Boneshaker, the Pyre shard slowly melts them free.",
-      "french": "Lorsque Séraphin a fait voler le Brasier en éclats et provoqué la Glaciation de l'enfer, de nombreux diablotins ont été piégés dans la glace. Nous les gardons dans le Hurleflammes afin que l'éclat du Brasier fasse lentement fondre leur prison gelée.",
-      "german": "Als Seraph unsere Höllenglut zerstörte und die Hölle zufror, wurden viele arglose Kobolde im Eis eingeschlossen. An Bord des Knochenrüttlers taut der Höllenglutsplitter sie langsam auf.",
-      "russian": "Когда Серафим разрушил Пекло и Ад замерз, во льду застряли многие ничего не подозревающие бесы. Но те из них, кого мы погрузили на «Костолом», постепенно начали оттаивать.",
-      "portuguese": "Quando o Serafim destruiu nossa Pira Infernal e o Inferno congelou, muitos diabinhos inocentes ficaram presos no gelo. Levado a bordo do Ossuário, o fragmento da Pira derrete o gelo lentamente.",
-      "chinese": "当炽天使毁掉了地狱薪火，整个地狱被冻结的时候，许多毫无戒心的小鬼被冰封了起来。我们把它们搬到了老爷车号上，在薪火的热量之下，这些小鬼才慢慢从冰中融化出来。",
-      "spanish": "Cuando Seraph destruyó la Pira del Infierno y nuestro hogar se congeló, muchos diablillos quedaron atrapados en el hielo. Cuando los subimos al Sacudehuesos, el fragmento de Pira los libera lentamente.",
-      "chinese_traditional": "當撒拉弗粉碎我們的地獄火堆、地獄凍結時，許多沒搞清楚狀況的小鬼被困在冰中。這些小鬼被帶上碎骨者後，火堆碎片慢慢將它們熔化並從冰塊中釋放出來。",
-      "korean": "세라핌이 우리가 지키는 지옥 화로를 박살내고 지옥이 얼어붙자, 대다수의 순진한 임프들이 얼음에 갇히고 말았다. 본쉐이커에 실려온 이들은 화로 파편의 열기에 오랫동안 노출된 끝에 겨우 풀려날 수 있었다.",
-      "japanese": "セラフが地獄の炉を粉砕し、地獄が凍りついたとき、多くのインプが不意に氷に閉じ込められた。ボーンシェイカーに乗せられた炉の破片が、彼らをゆっくりと溶かして解放するだろう。"
+      "id": "AddImpToHand",
+      "name": "Imp-cicle",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassHellhorned",
+            "unlock_level": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-3dd1b20e59200d2a-012a316fe0043ca4a86c1bc85da22679-v2",
+        "english": "Imp-cicle",
+        "french": "Diable gelé",
+        "german": "Tiefkühl-Kobold",
+        "russian": "Бес-ледышка",
+        "portuguese": "Dia-gelinho",
+        "chinese": "小鬼回收",
+        "spanish": "Heladillo",
+        "chinese_traditional": "小鬼冰柱",
+        "korean": "냉동 임프",
+        "japanese": "インプの氷柱"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-cb9dc64a7c8a2a48-012a316fe0043ca4a86c1bc85da22679-v2",
+        "english": "At start of turn, add a random [imp] unit to hand.",
+        "french": "Au début du tour, ajoute un diablotin aléatoire à votre main.",
+        "german": "Nimm zu Beginn deines Zuges eine zufällige Kobold-Einheit auf die Hand.",
+        "russian": "В начале хода добавьте в свою руку случайного беса.",
+        "portuguese": "No início do turno, adicione um Diabinho aleatório à sua mão.",
+        "chinese": "回合开始时，随机将一个小鬼单位加入你的手牌。",
+        "spanish": "Al principio de cada turno, añade una unidad [imp] al azar a tu mano.",
+        "chinese_traditional": "在回合開始時，將一張隨機[imp]單位加入手牌。",
+        "korean": "턴 시작 시, 무작위 [imp] 유닛 카드를 패에 추가합니다.",
+        "japanese": "ターン開始時に、ランダムな[imp]ユニットを手札に追加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-3a7305261e3ef333-012a316fe0043ca4a86c1bc85da22679-v2",
+          "english": "When Seraph shattered our Hell Pyre and Hell froze over, many unsuspecting imps were caught in the ice. Taken aboard the Boneshaker, the Pyre shard slowly melts them free.",
+          "french": "Lorsque Séraphin a fait voler le Brasier en éclats et provoqué la Glaciation de l'enfer, de nombreux diablotins ont été piégés dans la glace. Nous les gardons dans le Hurleflammes afin que l'éclat du Brasier fasse lentement fondre leur prison gelée.",
+          "german": "Als Seraph unsere Höllenglut zerstörte und die Hölle zufror, wurden viele arglose Kobolde im Eis eingeschlossen. An Bord des Knochenrüttlers taut der Höllenglutsplitter sie langsam auf.",
+          "russian": "Когда Серафим разрушил Пекло и Ад замерз, во льду застряли многие ничего не подозревающие бесы. Но те из них, кого мы погрузили на «Костолом», постепенно начали оттаивать.",
+          "portuguese": "Quando o Serafim destruiu nossa Pira Infernal e o Inferno congelou, muitos diabinhos inocentes ficaram presos no gelo. Levado a bordo do Ossuário, o fragmento da Pira derrete o gelo lentamente.",
+          "chinese": "当炽天使毁掉了地狱薪火，整个地狱被冻结的时候，许多毫无戒心的小鬼被冰封了起来。我们把它们搬到了老爷车号上，在薪火的热量之下，这些小鬼才慢慢从冰中融化出来。",
+          "spanish": "Cuando Seraph destruyó la Pira del Infierno y nuestro hogar se congeló, muchos diablillos quedaron atrapados en el hielo. Cuando los subimos al Sacudehuesos, el fragmento de Pira los libera lentamente.",
+          "chinese_traditional": "當撒拉弗粉碎我們的地獄火堆、地獄凍結時，許多沒搞清楚狀況的小鬼被困在冰中。這些小鬼被帶上碎骨者後，火堆碎片慢慢將它們熔化並從冰塊中釋放出來。",
+          "korean": "세라핌이 우리가 지키는 지옥 화로를 박살내고 지옥이 얼어붙자, 대다수의 순진한 임프들이 얼음에 갇히고 말았다. 본쉐이커에 실려온 이들은 화로 파편의 열기에 오랫동안 노출된 끝에 겨우 풀려날 수 있었다.",
+          "japanese": "セラフが地獄の炉を粉砕し、地獄が凍りついたとき、多くのインプが不意に氷に閉じ込められた。ボーンシェイカーに乗せられた炉の破片が、彼らをゆっくりと溶かして解放するだろう。"
+        }
+      ],
+      "relic_effects": [
+        "@AddImpToHand.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAddBattleCardToHand",
-      "paramCardPool": "ImpPool"
+      "id": "AddImpToHand.effects0",
+      "name": "RelicEffectAddBattleCardToHand",
+      "param_card_pool": "ImpPool"
     }
-  ],
-  "disallowInDeploymentPhase": true,
-  "unlockLevel": 5
+  ]
 }

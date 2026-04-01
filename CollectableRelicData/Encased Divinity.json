@@ -1,88 +1,107 @@
 {
-  "id": "UnremovableCorruptionTop",
-  "guid": "a66188b9-845d-475e-b6e6-7ea5335ec00b",
-  "name": "Encased Divinity",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-ba7bf003b0ebbaa7-791fd16c2e20781448352aa6517fe40a-v2",
-    "english": "Encased Divinity",
-    "french": "Divinité enveloppée",
-    "german": "Umhüllte Göttlichkeit",
-    "russian": "Запечатанное Божество",
-    "portuguese": "Divindade Encapsulada",
-    "chinese": "受困之神",
-    "spanish": "Divinidad contenida",
-    "chinese_traditional": "封印神性",
-    "korean": "봉인된 신성",
-    "japanese": "封じられた神力"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-ad362ba0169d52b4-791fd16c2e20781448352aa6517fe40a-v2",
-    "english": "At the start of battle, the top floor gains [effect0.power][corrupt] that cannot be removed.",
-    "french": "Au début de la bataille, le niveau supérieur obtient [effect0.power][corrupt] non retirable(s).",
-    "german": "Füge der obersten Ebene zu Beginn des Kampfes [effect0.power][corrupt] hinzu. Kann nicht entfernt werden.",
-    "russian": "В начале боя на верхний этаж добавляется [effect0.power][corrupt], которое нельзя убрать.",
-    "portuguese": "No início da batalha, o andar de cima recebe [effect0.power][corrupt] que não pode ser removido.",
-    "chinese": "战斗开始时，顶层获得 [effect0.power][corrupt]，且无法移除。",
-    "spanish": "Al inicio de la batalla, el piso superior añade [effect0.power][corrupt]. No puede eliminarse.",
-    "chinese_traditional": "在戰鬥開始時，頂層獲得[effect0.power][corrupt]，且無法移除。",
-    "korean": "전투 시작 시, 최상층이 제거 불가능한 [effect0.power][corrupt]을 획득합니다.",
-    "japanese": "バトルの開始時に、最上段のフロアが解除不能な[effect0.power][corrupt]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-dbcba4f190f481a3-791fd16c2e20781448352aa6517fe40a-v2",
-      "english": "Echoes are the essence of Divinity. There is no recorded history of this, and, frankly, anyone claiming this fact would be considered mad. But given my recent... revelations... I can say without a doubt that their origin is Divine.",
-      "french": "Les échos représentent l'essence de la divinité. Il n'en est trace nulle part dans l'histoire, et honnêtement, quiconque l'affirmerait serait pris pour un fou. Mais étant donné mes récentes... découvertes, je peux vous certifier que leur origine est divine.",
-      "german": "Echos sind die Essenz des Göttlichen. Dazu gibt es keine historischen Aufzeichnungen und jeder, der das behauptet, würde vermutlich als Wahnsinniger abgetan werden. Doch aufgrund meiner neuesten ... Erkenntnisse ... kann ich nun ohne Zweifel sagen, dass sie göttlichen Ursprungs sind.",
-      "russian": "Эхо сущности Божества. Не существует никаких записей об этом, и, если честно, любой, кто озвучит сей факт, будет считаться безумцем. Но учитывая мои недавние... откровения... я могу без сомнения сказать, что они имеют божественное происхождение.",
-      "portuguese": "Os Ecos são a essência da Divindade. Não há história registrada disso e, francamente, qualquer pessoa que alegasse esse fato seria considerada louca. Mas dadas minhas recentes... revelações... posso dizer sem dúvida que sua origem é Divina.",
-      "chinese": "回响水晶是神祇的精华。历史上并没有相关记录，而且坦白说，提出这一事实的人会被别人当成疯子。但我最近……发现了一些真相……我可以断言，他们的来源是神祇。",
-      "spanish": "Los ecos son la esencia de la divinidad. No hay ningún registro de esto y, a decir verdad, llamarían loco a cualquiera que intentara argumentarlo. Aun así, dadas mis últimas... revelaciones... puedo decir sin miedo a equivocarme que son de origen divino.",
-      "chinese_traditional": "迴響，是神性的精華。雖然沒有任何歷史記載可佐證，坦白說，誰要是主張這點，肯定會被當成瘋子。但鑒於我近來的……啟示……我可以毫不懷疑地說，其源頭神聖無疑。",
-      "korean": "메아리는 신성의 본질이다. 이를 입증한 기록은 없으며, 솔직히 이 사실을 주장하는 사람은 미친 자로 취급될 것이다. 그러나 최근의... 깨달음을 생각하면... 그 근원이 신성임을 나는 단언할 수 있다.",
-      "japanese": "エコーは神々のエッセンスだ。このことを記した歴史はなく、率直に言って、その事実を主張する者は狂っていると言われる。だが、最近の…新発見では…その起源が神性なものであると間違いなく言えるのだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassWurm",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddPermanentCorruptionStartOfCombat",
-      "additionalTooltips": [
+      "id": "UnremovableCorruptionTop",
+      "name": "Encased Divinity",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "HudTooltip_RoomCorruption_Body",
-            "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
-            "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
-            "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
-            "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
-            "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
-            "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
-            "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
-            "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
-            "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
-            "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
-          },
-          "titleKey": {
-            "key": "HudTooltip_RoomCorruption_Title",
-            "english": "Charged Echoes",
-            "french": "Échos chargés",
-            "german": "Geladene Echos",
-            "russian": "Заряженные эхо",
-            "portuguese": "Ecos Carregados",
-            "chinese": "充能的回响水晶",
-            "spanish": "Ecos cargados",
-            "chinese_traditional": "充能回響",
-            "korean": "충전된 메아리",
-            "japanese": "活性の残響"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassWurm"
           }
         }
       ],
-      "paramInt": 1,
-      "paramFloat": 2.0
+      "names": {
+        "key": "CollectableRelicData_nameKey-ba7bf003b0ebbaa7-791fd16c2e20781448352aa6517fe40a-v2",
+        "english": "Encased Divinity",
+        "french": "Divinité enveloppée",
+        "german": "Umhüllte Göttlichkeit",
+        "russian": "Запечатанное Божество",
+        "portuguese": "Divindade Encapsulada",
+        "chinese": "受困之神",
+        "spanish": "Divinidad contenida",
+        "chinese_traditional": "封印神性",
+        "korean": "봉인된 신성",
+        "japanese": "封じられた神力"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-ad362ba0169d52b4-791fd16c2e20781448352aa6517fe40a-v2",
+        "english": "At the start of battle, the top floor gains [effect0.power][corrupt] that cannot be removed.",
+        "french": "Au début de la bataille, le niveau supérieur obtient [effect0.power][corrupt] non retirable(s).",
+        "german": "Füge der obersten Ebene zu Beginn des Kampfes [effect0.power][corrupt] hinzu. Kann nicht entfernt werden.",
+        "russian": "В начале боя на верхний этаж добавляется [effect0.power][corrupt], которое нельзя убрать.",
+        "portuguese": "No início da batalha, o andar de cima recebe [effect0.power][corrupt] que não pode ser removido.",
+        "chinese": "战斗开始时，顶层获得 [effect0.power][corrupt]，且无法移除。",
+        "spanish": "Al inicio de la batalla, el piso superior añade [effect0.power][corrupt]. No puede eliminarse.",
+        "chinese_traditional": "在戰鬥開始時，頂層獲得[effect0.power][corrupt]，且無法移除。",
+        "korean": "전투 시작 시, 최상층이 제거 불가능한 [effect0.power][corrupt]을 획득합니다.",
+        "japanese": "バトルの開始時に、最上段のフロアが解除不能な[effect0.power][corrupt]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-dbcba4f190f481a3-791fd16c2e20781448352aa6517fe40a-v2",
+          "english": "Echoes are the essence of Divinity. There is no recorded history of this, and, frankly, anyone claiming this fact would be considered mad. But given my recent... revelations... I can say without a doubt that their origin is Divine.",
+          "french": "Les échos représentent l'essence de la divinité. Il n'en est trace nulle part dans l'histoire, et honnêtement, quiconque l'affirmerait serait pris pour un fou. Mais étant donné mes récentes... découvertes, je peux vous certifier que leur origine est divine.",
+          "german": "Echos sind die Essenz des Göttlichen. Dazu gibt es keine historischen Aufzeichnungen und jeder, der das behauptet, würde vermutlich als Wahnsinniger abgetan werden. Doch aufgrund meiner neuesten ... Erkenntnisse ... kann ich nun ohne Zweifel sagen, dass sie göttlichen Ursprungs sind.",
+          "russian": "Эхо сущности Божества. Не существует никаких записей об этом, и, если честно, любой, кто озвучит сей факт, будет считаться безумцем. Но учитывая мои недавние... откровения... я могу без сомнения сказать, что они имеют божественное происхождение.",
+          "portuguese": "Os Ecos são a essência da Divindade. Não há história registrada disso e, francamente, qualquer pessoa que alegasse esse fato seria considerada louca. Mas dadas minhas recentes... revelações... posso dizer sem dúvida que sua origem é Divina.",
+          "chinese": "回响水晶是神祇的精华。历史上并没有相关记录，而且坦白说，提出这一事实的人会被别人当成疯子。但我最近……发现了一些真相……我可以断言，他们的来源是神祇。",
+          "spanish": "Los ecos son la esencia de la divinidad. No hay ningún registro de esto y, a decir verdad, llamarían loco a cualquiera que intentara argumentarlo. Aun así, dadas mis últimas... revelaciones... puedo decir sin miedo a equivocarme que son de origen divino.",
+          "chinese_traditional": "迴響，是神性的精華。雖然沒有任何歷史記載可佐證，坦白說，誰要是主張這點，肯定會被當成瘋子。但鑒於我近來的……啟示……我可以毫不懷疑地說，其源頭神聖無疑。",
+          "korean": "메아리는 신성의 본질이다. 이를 입증한 기록은 없으며, 솔직히 이 사실을 주장하는 사람은 미친 자로 취급될 것이다. 그러나 최근의... 깨달음을 생각하면... 그 근원이 신성임을 나는 단언할 수 있다.",
+          "japanese": "エコーは神々のエッセンスだ。このことを記した歴史はなく、率直に言って、その事実を主張する者は狂っていると言われる。だが、最近の…新発見では…その起源が神性なものであると間違いなく言えるのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@UnremovableCorruptionTop.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "UnremovableCorruptionTop.effects0",
+      "name": "RelicEffectAddPermanentCorruptionStartOfCombat",
+      "additional_tooltips": [
+        "@UnremovableCorruptionTop.effects0.additionalTooltips0"
+      ],
+      "param_int": 1,
+      "param_float": 2.0
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "UnremovableCorruptionTop.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_RoomCorruption_Body",
+        "english": "Add [corrupt] by playing [infused] cards. The Wurmkin use [corrupt] to power spells and abilities.<br><br>[corrupt] can exceed [emptycorrupt] but excess [corrupt] will be removed at end of turn.",
+        "french": "Ajoutez des [corrupt] en jouant des cartes avec <b>Imprégnation</b>. Le peuple ver utilise les [corrupt] pour renforcer ses sorts et capacités.<br><br>Les [corrupt] peuvent excéder les [emptycorrupt], mais le surplus de [corrupt] sera retiré à la fin du tour.",
+        "german": "Füge [corrupt] hinzu, indem du Karten mit [infused] spielst. Die Wurmlinge nutzen [corrupt] für ihre Zauber und Fähigkeiten.<br><br>[corrupt] kann [emptycorrupt] überschreiten, aber überschüssige [corrupt] werden am Ende des Zuges entfernt.",
+        "russian": "Добавляет [corrupt] при розыгрыше карт со свойством «[infused]». Драконы используют [corrupt], чтобы усилить чары и способности. <br><br>[corrupt] могут превышать [emptycorrupt], но излишек [corrupt] пропадает в конце хода.",
+        "portuguese": "Adiciona [corrupt] ao jogar cartas com [infused]. Os Vormoides usam [corrupt] para fortalecer feitiços e habilidades.<br><br>[corrupt] pode exceder [emptycorrupt], mas o excesso de [corrupt] será removido ao fim do turno.",
+        "chinese": "通过打出 [infused] 卡牌增加 [corrupt]。虫裔使用 [corrupt] 来强化法术和能力。<br><br>[corrupt] 可以超过 [emptycorrupt]，但回合结束时会移除过量的 [corrupt]。",
+        "spanish": "Añade [corrupt] jugando cartas <b>Imbuidas</b>. Las Sierpes utilizan los [corrupt] para reforzar sus hechizos y habilidades.<br><br>Los [corrupt] pueden superar los [emptycorrupt], pero los que lo hagan se perderán al final del turno.",
+        "chinese_traditional": "透過打出[infused]張卡牌來添加[corrupt]。沃姆金使用[corrupt]來驅動法術和能力。<br><br>[corrupt]可以超過[emptycorrupt]，但超出的[corrupt]將在回合結束時移除。",
+        "korean": "[infused] 카드를 사용하여 [corrupt]을 추가합니다. 웜킨은 [corrupt]을 사용해 주문과 능력을 발동합니다.<br><br>[corrupt]은 [emptycorrupt]을 초과할 수 있으나, 초과된 [corrupt]은 턴 종료 시 제거됩니다.",
+        "japanese": "[infused]属性のカードをプレイすると[corrupt]が追加される。ワームキンは[corrupt]を使用して呪文やアビリティを強化する。<br><br>[corrupt]は[emptycorrupt]を超過できるが、超過した[corrupt]はターン終了時に除外される。"
+      },
+      "titles": {
+        "key": "HudTooltip_RoomCorruption_Title",
+        "english": "Charged Echoes",
+        "french": "Échos chargés",
+        "german": "Geladene Echos",
+        "russian": "Заряженные эхо",
+        "portuguese": "Ecos Carregados",
+        "chinese": "充能的回响水晶",
+        "spanish": "Ecos cargados",
+        "chinese_traditional": "充能回響",
+        "korean": "충전된 메아리",
+        "japanese": "活性の残響"
+      }
     }
   ]
 }

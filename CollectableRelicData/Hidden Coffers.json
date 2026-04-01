@@ -1,88 +1,107 @@
 {
-  "id": "ModifyDragonsHoardCap_DH",
-  "guid": "c3f91e0e-629f-4d3f-b422-ce1653147293",
-  "name": "Hidden Coffers",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-bd33405b1fc9976c-2fec1ad9a3ed6014f8d2927a0e676ff0-v2",
-    "english": "Hidden Coffers",
-    "french": "Coffres cachés",
-    "german": "Verborgene Taschen",
-    "russian": "Тайные сундуки",
-    "portuguese": "Cofres Ocultos",
-    "chinese": "隐藏金库",
-    "spanish": "Cofres ocultos",
-    "chinese_traditional": "隱藏保險箱",
-    "korean": "비밀 궤짝",
-    "japanese": "隠し宝箱"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-34f98018eaae5775-2fec1ad9a3ed6014f8d2927a0e676ff0-v2",
-    "english": "Increase max [dragonshoardicon] by [effect0.power].",
-    "french": "Augmente le [dragonshoardicon] max de [effect0.power].",
-    "german": "Erhöhe max. [dragonshoardicon] um [effect0.power].",
-    "russian": "Повышает макс. [dragonshoardicon] на [effect0.power].",
-    "portuguese": "Aumenta o [dragonshoardicon] máximo em [effect0.power].",
-    "chinese": "[dragonshoardicon]上限提高 [effect0.power]。",
-    "spanish": "Aumenta el [dragonshoardicon] máximo en [effect0.power].",
-    "chinese_traditional": "最大[dragonshoardicon]+[effect0.power]。",
-    "korean": "[dragonshoardicon]의 최대 보유 수가 [effect0.power]만큼 늘어납니다.",
-    "japanese": "最大[dragonshoardicon]を[effect0.power]増加させる。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-3e4fce2fa91cad35-2fec1ad9a3ed6014f8d2927a0e676ff0-v2",
-      "english": "“You can tell a lot from a dragon’s treasure chest. An empty trove reveals an empty mind.”\n—The Rules of Fhyra, Rule #14",
-      "french": "<nobr>« Le</nobr> coffre au trésor d'un dragon en dit long sur lui. Un coffre vide révèle un esprit <nobr>vide. »</nobr> \n— Les règles de Fhyra, règle n°14",
-      "german": "„An der Schatztruhe eines Drachen lässt sich viel erkennen. Eine leere Truhe verrät einen leeren Geist.\"\n—Fhyras Regeln, Regel #14",
-      "russian": "«По сокровищнице дракона можно многое узнать. Пустой сундук говорит о пустой голове».\n— «Правила Фиры», правило 14",
-      "portuguese": "“O baú de tesouros de um dragão diz muito. Um tesouro vazio revela uma mente vazia.”\n— As Regras de Fhyra, Regra n.º 14",
-      "chinese": "“你可以从一条龙的宝箱里了解到许多事情。空荡荡的宝箱代表着空洞的心灵。”\n——《菲拉法则》，条例#14",
-      "spanish": "«Los cofres de un dragón revelan mucho sobre él. Un tesoro escaso es prueba de una mente escasa».\n—Normas de Fhyra, norma 14",
-      "chinese_traditional": "「你可以從龍的寶庫中了解到很多。如果寶庫是空的，那麼腦袋多半也是空的。」\n—費拉法則，第14條",
-      "korean": "“드래곤의 보물 상자를 보면 많은 것을 알 수 있다. 빈 상자는 곧 텅 빈 마음을 나타낸다.”\n- 휘라 율법 14조",
-      "japanese": "「竜の宝箱からは多くのことがわかる。宝箱が空っぽだと、頭も空っぽだということがわかる」\n—ファイラの法、14条"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "DragonHoard_DHRelics_RewardPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectModifyDragonsHoardCap",
-      "additionalTooltips": [
+      "id": "ModifyDragonsHoardCap_DH",
+      "name": "Hidden Coffers",
+      "pools": [
+        "DragonHoard_DHRelics_RewardPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "HudTooltip_DragonsHoardInactive_Body",
-            "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
-            "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
-            "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
-            "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
-            "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
-            "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
-            "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
-            "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
-            "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
-            "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
-          },
-          "titleKey": {
-            "key": "HudTooltip_DragonsHoard_Title",
-            "english": "[dragonshoardicon]Dragon's Hoard",
-            "french": "[dragonshoardicon]Trésor du dragon",
-            "german": "[dragonshoardicon]Drachenschatz",
-            "russian": "[dragonshoardicon] Драконий клад",
-            "portuguese": "[dragonshoardicon]Tesouro do Dragão",
-            "chinese": "[dragonshoardicon]龙族宝藏",
-            "spanish": "[dragonshoardicon]Tesoro de dragón",
-            "chinese_traditional": "[dragonshoardicon]龍之寶藏",
-            "korean": "[dragonshoardicon]드래곤의 재보",
-            "japanese": "竜の財宝[dragonshoardicon]"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "is_dragons_hoard": true
           }
         }
       ],
-      "paramInt": 2
+      "names": {
+        "key": "CollectableRelicData_nameKey-bd33405b1fc9976c-2fec1ad9a3ed6014f8d2927a0e676ff0-v2",
+        "english": "Hidden Coffers",
+        "french": "Coffres cachés",
+        "german": "Verborgene Taschen",
+        "russian": "Тайные сундуки",
+        "portuguese": "Cofres Ocultos",
+        "chinese": "隐藏金库",
+        "spanish": "Cofres ocultos",
+        "chinese_traditional": "隱藏保險箱",
+        "korean": "비밀 궤짝",
+        "japanese": "隠し宝箱"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-34f98018eaae5775-2fec1ad9a3ed6014f8d2927a0e676ff0-v2",
+        "english": "Increase max [dragonshoardicon] by [effect0.power].",
+        "french": "Augmente le [dragonshoardicon] max de [effect0.power].",
+        "german": "Erhöhe max. [dragonshoardicon] um [effect0.power].",
+        "russian": "Повышает макс. [dragonshoardicon] на [effect0.power].",
+        "portuguese": "Aumenta o [dragonshoardicon] máximo em [effect0.power].",
+        "chinese": "[dragonshoardicon]上限提高 [effect0.power]。",
+        "spanish": "Aumenta el [dragonshoardicon] máximo en [effect0.power].",
+        "chinese_traditional": "最大[dragonshoardicon]+[effect0.power]。",
+        "korean": "[dragonshoardicon]의 최대 보유 수가 [effect0.power]만큼 늘어납니다.",
+        "japanese": "最大[dragonshoardicon]を[effect0.power]増加させる。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-3e4fce2fa91cad35-2fec1ad9a3ed6014f8d2927a0e676ff0-v2",
+          "english": "“You can tell a lot from a dragon’s treasure chest. An empty trove reveals an empty mind.”\n—The Rules of Fhyra, Rule #14",
+          "french": "<nobr>« Le</nobr> coffre au trésor d'un dragon en dit long sur lui. Un coffre vide révèle un esprit <nobr>vide. »</nobr> \n— Les règles de Fhyra, règle n°14",
+          "german": "„An der Schatztruhe eines Drachen lässt sich viel erkennen. Eine leere Truhe verrät einen leeren Geist.\"\n—Fhyras Regeln, Regel #14",
+          "russian": "«По сокровищнице дракона можно многое узнать. Пустой сундук говорит о пустой голове».\n— «Правила Фиры», правило 14",
+          "portuguese": "“O baú de tesouros de um dragão diz muito. Um tesouro vazio revela uma mente vazia.”\n— As Regras de Fhyra, Regra n.º 14",
+          "chinese": "“你可以从一条龙的宝箱里了解到许多事情。空荡荡的宝箱代表着空洞的心灵。”\n——《菲拉法则》，条例#14",
+          "spanish": "«Los cofres de un dragón revelan mucho sobre él. Un tesoro escaso es prueba de una mente escasa».\n—Normas de Fhyra, norma 14",
+          "chinese_traditional": "「你可以從龍的寶庫中了解到很多。如果寶庫是空的，那麼腦袋多半也是空的。」\n—費拉法則，第14條",
+          "korean": "“드래곤의 보물 상자를 보면 많은 것을 알 수 있다. 빈 상자는 곧 텅 빈 마음을 나타낸다.”\n- 휘라 율법 14조",
+          "japanese": "「竜の宝箱からは多くのことがわかる。宝箱が空っぽだと、頭も空っぽだということがわかる」\n—ファイラの法、14条"
+        }
+      ],
+      "relic_effects": [
+        "@ModifyDragonsHoardCap_DH.effects0"
+      ]
     }
   ],
-  "isDragonsHoardRelic": true
+  "relic_effects": [
+    {
+      "id": "ModifyDragonsHoardCap_DH.effects0",
+      "name": "RelicEffectModifyDragonsHoardCap",
+      "additional_tooltips": [
+        "@ModifyDragonsHoardCap_DH.effects0.additionalTooltips0"
+      ],
+      "param_int": 2
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "ModifyDragonsHoardCap_DH.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_DragonsHoardInactive_Body",
+        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+      },
+      "titles": {
+        "key": "HudTooltip_DragonsHoard_Title",
+        "english": "[dragonshoardicon]Dragon's Hoard",
+        "french": "[dragonshoardicon]Trésor du dragon",
+        "german": "[dragonshoardicon]Drachenschatz",
+        "russian": "[dragonshoardicon] Драконий клад",
+        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+        "chinese": "[dragonshoardicon]龙族宝藏",
+        "spanish": "[dragonshoardicon]Tesoro de dragón",
+        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+        "korean": "[dragonshoardicon]드래곤의 재보",
+        "japanese": "竜の財宝[dragonshoardicon]"
+      }
+    }
+  ]
 }

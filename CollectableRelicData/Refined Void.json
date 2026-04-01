@@ -1,63 +1,78 @@
 {
-  "id": "UnitsGainLifesteal",
-  "guid": "a6b0b657-8893-4cc8-bc62-ec09544c4306",
-  "name": "Refined Void",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-9674530f742156c6-145e20837e7c56b40af036b7bd34f1e0-v2",
-    "english": "Refined Void",
-    "french": "Néant raffiné",
-    "german": "Veredelte Leere",
-    "russian": "Самогон из Бездны",
-    "portuguese": "Vácuo Refinado",
-    "chinese": "虚空精酿",
-    "spanish": "Vacío refinado",
-    "chinese_traditional": "精煉虛空",
-    "korean": "정제한 공허",
-    "japanese": "精製された虚無"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-f24e4b5bc1d1a0e9-145e20837e7c56b40af036b7bd34f1e0-v2",
-    "english": "Friendly units enter with [lifesteal] [effect0.status0.power].",
-    "french": "Les unités alliées entrent avec <b>Vol de vie</b> [effect0.status0.power].",
-    "german": "Verbündete Einheiten kommen mit [effect0.status0.power] <b>Lebensraub</b> ins Spiel.",
-    "russian": "Союзники при появлении получают [lifesteal] х[effect0.status0.power].",
-    "portuguese": "Unidades aliadas entram com <b>Vampirismo</b> [effect0.status0.power].",
-    "chinese": "友方单位进入战斗时获得<b>吸血</b> [effect0.status0.power]。",
-    "spanish": "Las unidades aliadas entran con [lifesteal] [effect0.status0.power].",
-    "chinese_traditional": "友方單位登場時獲得[lifesteal][effect0.status0.power]。",
-    "korean": "아군 유닛들이 [lifesteal] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "味方ユニットが[lifesteal] [effect0.status0.power]が付与された状態で出現する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-46450579cb2f8e37-145e20837e7c56b40af036b7bd34f1e0-v2",
-      "english": "While the Umbra doesn’t appear to become inebriated like other denizens of Hell, they’ve still taken to processing Void Shards into a liquid that mildly dulls the senses. When the Shroud consumes it, the drink makes them somewhat less unpleasant in my dealings with them.",
-      "french": "Si les Umbras ne semblent pas s'enivrer comme les autres habitants de l'enfer, ils se sont pris d'affection pour un liquide fabriqué à partir d'éclats du Néant qui inhibe légèrement les sens. Quand le Suaire en consomme, traiter avec lui se révèle légèrement moins pénible.",
-      "german": "Die Umbra scheinen weniger auf Rauschmittel zu reagieren als die anderen Bewohner der Hölle, doch selbst sie verarbeiten Leerensplitter zu einer Flüssigkeit, die leicht benebelnd wirkt. Wenn die Mantelwesen diese trinken, werden sie etwas umgänglicher.",
-      "russian": "Хотя Мрак не испытывает той же тяги к выпивке, что и остальные обитатели Ада, но и его заставали за преобразованием осколков Бездны в жидкость, временно притупляющую сознание. Буду честен. Мне не нравится вести дела с Завесой, когда она употребит это пойло.",
-      "portuguese": "Embora os Sombrios não pareçam tão embriagados quanto outros habitantes do Inferno, eles ainda processam Fragmentos do Vácuo em um líquido que entorpece levemente os sentidos. Ao consumir a bebida, o Velado fica um pouco menos desagradável de se relacionar.",
-      "chinese": "虽然影主氏族并不像其他的地狱居民们那么热爱酒类，它们也会将虚空碎片加工成某种酒酿，可以使它们的感知能力略微变弱。通过我与它们打交道的经验，我发现当雾影喝下这种酒酿之后，它们会显得没那么令人不快。",
-      "spanish": "Aunque los Umbra no parecen embriagarse como los demás habitantes del Infierno, se han aficionado a procesar los fragmentos de vacío en un líquido que ofusca levemente los sentidos. Cuando el Velo consume la bebida, mis tratos con ellos me resultan algo menos desagradables.",
-      "chinese_traditional": "雖然暗影族似乎不像地獄的其他居民那樣會喝醉酒，但他們仍然把虛空碎片加工成一種能輕微麻痺感官的液體。當幽影飲用這種酒精時，這種飲料使他們在與我打交道時變得不那麼令人不快。",
-      "korean": "어스름 일족은 다른 지옥 주민과 달리 술에 취하지 않는 것처럼 보이지만, 그럼에도 공허 파편의 감각을 둔화시키는 액체로 만드는 데 주력한다. 장막의 주민이 이걸 마시는 동안에는 이들을 다루는 게 좀 덜 불쾌하다.",
-      "japanese": "常闇族は他の地獄の住人のように酔うことはないようだが、それでも彼らは虚無の欠片を加工して感覚を少し鈍らせる液体を作っている。シュラウドがその液体を飲むと、彼らとのやり取りが多少不快ではなくなるのだ。"
+      "id": "UnitsGainLifesteal",
+      "name": "Refined Void",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassUmbra"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-9674530f742156c6-145e20837e7c56b40af036b7bd34f1e0-v2",
+        "english": "Refined Void",
+        "french": "Néant raffiné",
+        "german": "Veredelte Leere",
+        "russian": "Самогон из Бездны",
+        "portuguese": "Vácuo Refinado",
+        "chinese": "虚空精酿",
+        "spanish": "Vacío refinado",
+        "chinese_traditional": "精煉虛空",
+        "korean": "정제한 공허",
+        "japanese": "精製された虚無"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-f24e4b5bc1d1a0e9-145e20837e7c56b40af036b7bd34f1e0-v2",
+        "english": "Friendly units enter with [lifesteal] [effect0.status0.power].",
+        "french": "Les unités alliées entrent avec <b>Vol de vie</b> [effect0.status0.power].",
+        "german": "Verbündete Einheiten kommen mit [effect0.status0.power] <b>Lebensraub</b> ins Spiel.",
+        "russian": "Союзники при появлении получают [lifesteal] х[effect0.status0.power].",
+        "portuguese": "Unidades aliadas entram com <b>Vampirismo</b> [effect0.status0.power].",
+        "chinese": "友方单位进入战斗时获得<b>吸血</b> [effect0.status0.power]。",
+        "spanish": "Las unidades aliadas entran con [lifesteal] [effect0.status0.power].",
+        "chinese_traditional": "友方單位登場時獲得[lifesteal][effect0.status0.power]。",
+        "korean": "아군 유닛들이 [lifesteal] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "味方ユニットが[lifesteal] [effect0.status0.power]が付与された状態で出現する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-46450579cb2f8e37-145e20837e7c56b40af036b7bd34f1e0-v2",
+          "english": "While the Umbra doesn’t appear to become inebriated like other denizens of Hell, they’ve still taken to processing Void Shards into a liquid that mildly dulls the senses. When the Shroud consumes it, the drink makes them somewhat less unpleasant in my dealings with them.",
+          "french": "Si les Umbras ne semblent pas s'enivrer comme les autres habitants de l'enfer, ils se sont pris d'affection pour un liquide fabriqué à partir d'éclats du Néant qui inhibe légèrement les sens. Quand le Suaire en consomme, traiter avec lui se révèle légèrement moins pénible.",
+          "german": "Die Umbra scheinen weniger auf Rauschmittel zu reagieren als die anderen Bewohner der Hölle, doch selbst sie verarbeiten Leerensplitter zu einer Flüssigkeit, die leicht benebelnd wirkt. Wenn die Mantelwesen diese trinken, werden sie etwas umgänglicher.",
+          "russian": "Хотя Мрак не испытывает той же тяги к выпивке, что и остальные обитатели Ада, но и его заставали за преобразованием осколков Бездны в жидкость, временно притупляющую сознание. Буду честен. Мне не нравится вести дела с Завесой, когда она употребит это пойло.",
+          "portuguese": "Embora os Sombrios não pareçam tão embriagados quanto outros habitantes do Inferno, eles ainda processam Fragmentos do Vácuo em um líquido que entorpece levemente os sentidos. Ao consumir a bebida, o Velado fica um pouco menos desagradável de se relacionar.",
+          "chinese": "虽然影主氏族并不像其他的地狱居民们那么热爱酒类，它们也会将虚空碎片加工成某种酒酿，可以使它们的感知能力略微变弱。通过我与它们打交道的经验，我发现当雾影喝下这种酒酿之后，它们会显得没那么令人不快。",
+          "spanish": "Aunque los Umbra no parecen embriagarse como los demás habitantes del Infierno, se han aficionado a procesar los fragmentos de vacío en un líquido que ofusca levemente los sentidos. Cuando el Velo consume la bebida, mis tratos con ellos me resultan algo menos desagradables.",
+          "chinese_traditional": "雖然暗影族似乎不像地獄的其他居民那樣會喝醉酒，但他們仍然把虛空碎片加工成一種能輕微麻痺感官的液體。當幽影飲用這種酒精時，這種飲料使他們在與我打交道時變得不那麼令人不快。",
+          "korean": "어스름 일족은 다른 지옥 주민과 달리 술에 취하지 않는 것처럼 보이지만, 그럼에도 공허 파편의 감각을 둔화시키는 액체로 만드는 데 주력한다. 장막의 주민이 이걸 마시는 동안에는 이들을 다루는 게 좀 덜 불쾌하다.",
+          "japanese": "常闇族は他の地獄の住人のように酔うことはないようだが、それでも彼らは虚無の欠片を加工して感覚を少し鈍らせる液体を作っている。シュラウドがその液体を飲むと、彼らとのやり取りが多少不快ではなくなるのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@UnitsGainLifesteal.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "UnitsGainLifesteal.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "lifesteal",
+          "status": "lifesteal",
           "count": 2
         }
       ],
-      "paramSourceTeam": "monsters"
+      "param_source_team": "monsters"
     }
   ]
 }

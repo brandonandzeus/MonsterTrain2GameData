@@ -1,98 +1,122 @@
 {
-  "id": "WhelpsGainExtinguishHealPyre",
-  "guid": "e6a167d5-f57e-4a02-a0f0-b8cf9373c838",
-  "name": "Sacrificial Kris",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-51a2c464fa15a300-5a728f2e36ad59c4bad681a1f62b3e88-v2",
-    "english": "Sacrificial Kris",
-    "french": "Kriss sacrificiel",
-    "german": "Opferdolch",
-    "russian": "Жертвенный кинжал",
-    "portuguese": "Kris Sacrificial",
-    "chinese": "献祭波纹匕首",
-    "spanish": "Kris sacrificial",
-    "chinese_traditional": "祭祀匕首",
-    "korean": "희생 의식의 단검",
-    "japanese": "犠牲のクリスナイフ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-d79c0a112fd07eb3-5a728f2e36ad59c4bad681a1f62b3e88-v2",
-    "english": "Apply [pyregel] [effect0.trigger0.effect0.status0.power] to enemy units when a Whelp dies.",
-    "french": "Applique [pyregel] [effect0.trigger0.effect0.status0.power] aux ennemis à la mort d'un dragonnet.",
-    "german": "Wende [pyregel] [effect0.trigger0.effect0.status0.power] auf gegnerische Einheiten an, wenn ein Zögling stirbt.",
-    "russian": "Когда умирает дракончик, на всех врагов накладывается [pyregel] х[effect0.trigger0.effect0.status0.power].",
-    "portuguese": "Aplica [pyregel] [effect0.trigger0.effect0.status0.power] às unidades inimigas quando um Filhote morre.",
-    "chinese": "幼龙死亡时，对所有敌方单位施加 [pyregel] [effect0.trigger0.effect0.status0.power]。",
-    "spanish": "Añade [pyregel] [effect0.trigger0.effect0.status0.power] a las unidades enemigas cuando una Cría muere.",
-    "chinese_traditional": "當一個幼龍死亡時，對敵方單位施加[pyregel] [effect0.trigger0.effect0.status0.power]。",
-    "korean": "해츨링이 사망하면 적 유닛들에게 [pyregel] [effect0.trigger0.effect0.status0.power] 효과를 적용합니다.",
-    "japanese": "小竜が死亡した際に、敵ユニットに[pyregel] [effect0.trigger0.effect0.status0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-bdd31a83e615c29a-5a728f2e36ad59c4bad681a1f62b3e88-v2",
-      "english": "The temple priests carry a dagger they only use for one specific ritual: the sacrifice of unprofitable dragons to the great Fhyra.",
-      "french": "Les prêtres du temple portent une dague qu'ils n'utilisent que pour un rituel <nobr>précis :</nobr> le sacrifice des dragons non rentables à la grande Fhyra.",
-      "german": "Die Tempelpriester tragen für ein bestimmtes Ritual einen Dolch bei sich: die Opferung unprofitabler Drachen an die große Fhyra.",
-      "russian": "Жрецы храма носят с собой кинжал, который используют только для одного особого ритуала: принесения в жертву великой Фире драконов, не приносящих прибыли.",
-      "portuguese": "Os sacerdotes do templo carregam uma adaga que só usam para um ritual específico: o sacrifício de dragões não lucrativos para a grande Fhyra.",
-      "chinese": "神殿祭司所携带的匕首，只用于一种特殊的仪式：将不赚钱的龙作为祭品献给伟大的菲拉。",
-      "spanish": "Los sacerdotes del templo portan una daga que solo emplean para un ritual en concreto: el sacrificio de dragones poco lucrativos a la gran Fhyra.",
-      "chinese_traditional": "神廟祭司攜帶一把只用於一種特定儀式的匕首：向偉大的費拉獻祭無利可圖的龍。",
-      "korean": "신전 사제들이 지니고 다니는 단검은 단 하나의 의식에만 사용된다. 바로 수익을 내지 못한 드래곤을 위대한 휘라에게 제물로 바치는 의식이다.",
-      "japanese": "寺院の僧侶たちは、役に立たない竜を偉大なるファイラに捧げるという儀式のためだけに使う短剣を持っている。"
+      "id": "WhelpsGainExtinguishHealPyre",
+      "name": "Sacrificial Kris",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "description_modifiers": [
+              {
+                "id": "WhelpsGainExtinguishHealPyre.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-00a8f279bf0cefe8-5a728f2e36ad59c4bad681a1f62b3e88-v2",
+                  "english": "([value] Whelps)",
+                  "french": "([value] Dragonnets)",
+                  "german": "([value] Zöglinge)",
+                  "russian": "([value] дракончиков)",
+                  "portuguese": "([value] Filhotes)",
+                  "chinese": "([value] 幼龙)",
+                  "spanish": "([value] Crías)",
+                  "chinese_traditional": "([value] 幼龍)",
+                  "korean": "([value] 해츨링)",
+                  "japanese": "([value] 小竜)"
+                },
+                "param_subtype": "SubtypesData_Whelp"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-51a2c464fa15a300-5a728f2e36ad59c4bad681a1f62b3e88-v2",
+        "english": "Sacrificial Kris",
+        "french": "Kriss sacrificiel",
+        "german": "Opferdolch",
+        "russian": "Жертвенный кинжал",
+        "portuguese": "Kris Sacrificial",
+        "chinese": "献祭波纹匕首",
+        "spanish": "Kris sacrificial",
+        "chinese_traditional": "祭祀匕首",
+        "korean": "희생 의식의 단검",
+        "japanese": "犠牲のクリスナイフ"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-d79c0a112fd07eb3-5a728f2e36ad59c4bad681a1f62b3e88-v2",
+        "english": "Apply [pyregel] [effect0.trigger0.effect0.status0.power] to enemy units when a Whelp dies.",
+        "french": "Applique [pyregel] [effect0.trigger0.effect0.status0.power] aux ennemis à la mort d'un dragonnet.",
+        "german": "Wende [pyregel] [effect0.trigger0.effect0.status0.power] auf gegnerische Einheiten an, wenn ein Zögling stirbt.",
+        "russian": "Когда умирает дракончик, на всех врагов накладывается [pyregel] х[effect0.trigger0.effect0.status0.power].",
+        "portuguese": "Aplica [pyregel] [effect0.trigger0.effect0.status0.power] às unidades inimigas quando um Filhote morre.",
+        "chinese": "幼龙死亡时，对所有敌方单位施加 [pyregel] [effect0.trigger0.effect0.status0.power]。",
+        "spanish": "Añade [pyregel] [effect0.trigger0.effect0.status0.power] a las unidades enemigas cuando una Cría muere.",
+        "chinese_traditional": "當一個幼龍死亡時，對敵方單位施加[pyregel] [effect0.trigger0.effect0.status0.power]。",
+        "korean": "해츨링이 사망하면 적 유닛들에게 [pyregel] [effect0.trigger0.effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "小竜が死亡した際に、敵ユニットに[pyregel] [effect0.trigger0.effect0.status0.power]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-bdd31a83e615c29a-5a728f2e36ad59c4bad681a1f62b3e88-v2",
+          "english": "The temple priests carry a dagger they only use for one specific ritual: the sacrifice of unprofitable dragons to the great Fhyra.",
+          "french": "Les prêtres du temple portent une dague qu'ils n'utilisent que pour un rituel <nobr>précis :</nobr> le sacrifice des dragons non rentables à la grande Fhyra.",
+          "german": "Die Tempelpriester tragen für ein bestimmtes Ritual einen Dolch bei sich: die Opferung unprofitabler Drachen an die große Fhyra.",
+          "russian": "Жрецы храма носят с собой кинжал, который используют только для одного особого ритуала: принесения в жертву великой Фире драконов, не приносящих прибыли.",
+          "portuguese": "Os sacerdotes do templo carregam uma adaga que só usam para um ritual específico: o sacrifício de dragões não lucrativos para a grande Fhyra.",
+          "chinese": "神殿祭司所携带的匕首，只用于一种特殊的仪式：将不赚钱的龙作为祭品献给伟大的菲拉。",
+          "spanish": "Los sacerdotes del templo portan una daga que solo emplean para un ritual en concreto: el sacrificio de dragones poco lucrativos a la gran Fhyra.",
+          "chinese_traditional": "神廟祭司攜帶一把只用於一種特定儀式的匕首：向偉大的費拉獻祭無利可圖的龍。",
+          "korean": "신전 사제들이 지니고 다니는 단검은 단 하나의 의식에만 사용된다. 바로 수익을 내지 못한 드래곤을 위대한 휘라에게 제물로 바치는 의식이다.",
+          "japanese": "寺院の僧侶たちは、役に立たない竜を偉大なるファイラに捧げるという儀式のためだけに使う短剣を持っている。"
+        }
+      ],
+      "relic_effects": [
+        "@WhelpsGainExtinguishHealPyre.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "WhelpsGainExtinguishHealPyre.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@WhelpsGainExtinguishHealPyre.effects0.triggers0"
+      ],
+      "param_source_team": "both",
+      "param_subtype": "SubtypesData_Whelp",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WhelpsGainExtinguishHealPyre.effects0.triggers0",
+      "trigger": "on_death",
+      "effects": [
+        "@WhelpsGainExtinguishHealPyre.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "WhelpsGainExtinguishHealPyre.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "trigger": "on_death",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "room",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "pyregel",
-                  "count": 5
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "status": "pyregel",
+          "count": 5
         }
-      ],
-      "paramSourceTeam": "both",
-      "paramCharacterSubtype": "SubtypesData_Whelp",
-      "paramBool": true
-    }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-00a8f279bf0cefe8-5a728f2e36ad59c4bad681a1f62b3e88-v2",
-        "english": "([value] Whelps)",
-        "french": "([value] Dragonnets)",
-        "german": "([value] Zöglinge)",
-        "russian": "([value] дракончиков)",
-        "portuguese": "([value] Filhotes)",
-        "chinese": "([value] 幼龙)",
-        "spanish": "([value] Crías)",
-        "chinese_traditional": "([value] 幼龍)",
-        "korean": "([value] 해츨링)",
-        "japanese": "([value] 小竜)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Whelp"
+      ]
     }
   ]
 }

@@ -1,45 +1,62 @@
 {
-  "id": "SilverIncreasedEmber",
-  "guid": "1a69fbff-9f1d-4c98-92ff-a63e0ac520c5",
-  "name": "SilverIncreasedEmber",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-cc7ead776d63a7d6-a1f0fbe76ba8ec04b85450ea6e406b11-v2",
-    "english": "Silver Ember",
-    "french": "Braise d'argent",
-    "german": "Silber-Glutasche",
-    "russian": "Уголь (Сильвер)",
-    "portuguese": "Brasa de Prata",
-    "chinese": "银灵余烬",
-    "spanish": "Ascua de plata",
-    "chinese_traditional": "銀色餘燼",
-    "korean": "은 잔불",
-    "japanese": "銀の炉炭"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-e205da26e12e0d7f-a1f0fbe76ba8ec04b85450ea6e406b11-v2",
-    "english": "+[effect0.power][ember] and +[effect1.power][deploymentember].",
-    "french": "+[effect0.power][ember] et +[effect1.power][deploymentember].",
-    "german": "+[effect0.power][ember] und +[effect1.power][deploymentember].",
-    "russian": "+[effect0.power][ember] и +[effect1.power][deploymentember].",
-    "portuguese": "+[effect0.power][ember] e +[effect1.power][deploymentember].",
-    "chinese": "+[effect0.power][ember]，+[effect1.power][deploymentember]。",
-    "spanish": "+[effect0.power][ember] y +[effect1.power][deploymentember].",
-    "chinese_traditional": "+[effect0.power][ember]和+[effect1.power][deploymentember]。",
-    "korean": "+[effect0.power][ember] 및 +[effect1.power][deploymentember].",
-    "japanese": "+[effect0.power][ember]と+[effect1.power][deploymentember]。"
-  },
-  "rarity": "common",
-  "pools": [
-    "SilverRelicPool"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyEnergy",
-      "paramInt": 1
+      "id": "SilverIncreasedEmber",
+      "name": "SilverIncreasedEmber",
+      "pools": [
+        "SilverRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-cc7ead776d63a7d6-a1f0fbe76ba8ec04b85450ea6e406b11-v2",
+        "english": "Silver Ember",
+        "french": "Braise d'argent",
+        "german": "Silber-Glutasche",
+        "russian": "Уголь (Сильвер)",
+        "portuguese": "Brasa de Prata",
+        "chinese": "银灵余烬",
+        "spanish": "Ascua de plata",
+        "chinese_traditional": "銀色餘燼",
+        "korean": "은 잔불",
+        "japanese": "銀の炉炭"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-e205da26e12e0d7f-a1f0fbe76ba8ec04b85450ea6e406b11-v2",
+        "english": "+[effect0.power][ember] and +[effect1.power][deploymentember].",
+        "french": "+[effect0.power][ember] et +[effect1.power][deploymentember].",
+        "german": "+[effect0.power][ember] und +[effect1.power][deploymentember].",
+        "russian": "+[effect0.power][ember] и +[effect1.power][deploymentember].",
+        "portuguese": "+[effect0.power][ember] e +[effect1.power][deploymentember].",
+        "chinese": "+[effect0.power][ember]，+[effect1.power][deploymentember]。",
+        "spanish": "+[effect0.power][ember] y +[effect1.power][deploymentember].",
+        "chinese_traditional": "+[effect0.power][ember]和+[effect1.power][deploymentember]。",
+        "korean": "+[effect0.power][ember] 및 +[effect1.power][deploymentember].",
+        "japanese": "+[effect0.power][ember]と+[effect1.power][deploymentember]。"
+      },
+      "relic_effects": [
+        "@SilverIncreasedEmber.effects0",
+        "@SilverIncreasedEmber.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SilverIncreasedEmber.effects0",
+      "name": "RelicEffectModifyEnergy",
+      "param_int": 1
     },
     {
-      "relicEffectClassName": "RelicEffectModifyEnergyDuringDeployment",
-      "paramInt": 1
+      "id": "SilverIncreasedEmber.effects1",
+      "name": "RelicEffectModifyEnergyDuringDeployment",
+      "param_int": 1
     }
   ]
 }

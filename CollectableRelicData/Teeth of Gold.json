@@ -1,65 +1,84 @@
 {
-  "id": "DamageOnEaten",
-  "guid": "38990528-6639-4cb2-b310-4e14193256a0",
-  "name": "Teeth of Gold",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-36132cc8a7a7da74-109e2a64933e2f34cb92261fb68fe951-v2",
-    "english": "Teeth of Gold",
-    "french": "Dents en or",
-    "german": "Zähne aus Gold",
-    "russian": "Золотые зубы",
-    "portuguese": "Dentes de Ouro",
-    "chinese": "金牙",
-    "spanish": "Dientes de oro",
-    "chinese_traditional": "黃金牙齒",
-    "korean": "금이빨",
-    "japanese": "黄金の歯"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-1e03193e43c93cdd-109e2a64933e2f34cb92261fb68fe951-v2",
-    "english": "Deal [effect0.power] [piercing] damage to the lowest health enemy unit when a unit is [eaten].",
-    "french": "Inflige <nobr>[effect0.power] DGT</nobr> de type [piercing] à l'ennemi ayant le moins de PV lorsqu'une unité est <b>mangée</b>.",
-    "german": "Füge der gegnerischen Einheit mit der niedrigsten Gesundheit [effect0.power] [piercing]-Schaden zu, wenn eine Einheit [eaten] wird.",
-    "russian": "[eaten] бойца наносит [piercing] и [effect0.power] урона вражескому бойцу с самым низким здоровьем.",
-    "portuguese": "Causa [effect0.power] [piercing] de dano à unidade inimiga com a menor vida quando uma unidade é <b>Devorada</b>.",
-    "chinese": "每当一个单位[eaten]时，对生命值最低的敌方单位造成 [effect0.power] 点[piercing]伤害。",
-    "spanish": "Inflige [effect0.power] de daño [piercing] a la unidad enemiga de menor salud cuando una unidad queda <b>Devorada</b>.",
-    "chinese_traditional": "當一個單位[eaten]時，對生命值最低的敵方單位造成[effect0.power][piercing]點傷害。",
-    "korean": "유닛이 [eaten]가 되면 체력이 가장 낮은 적 유닛에 [effect0.power] [piercing]의 피해를 입힙니다.",
-    "japanese": "ユニットが[eaten]されると体力が一番低い敵ユニットに[effect0.power] [piercing]のダメージを与える。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-dedc943d60ddc583-109e2a64933e2f34cb92261fb68fe951-v2",
-      "english": "On the rare occasion that a member of the Shroud has lost their teeth, sharp dentures are created from Crucible gems. Due to their high value, this has led to many Umbra intentionally removing their teeth.",
-      "french": "Dans l'éventualité très rare où un membre du Suaire perdrait ses dents, des dentiers acérés sont fabriqués à partir des pierres précieuses du creuset. Du fait de leur grande valeur, de nombreux Umbras s'arrachent les dents intentionnellement.",
-      "german": "In den seltenen Fällen, in denen ein Mantelwesen einmal Zähne verliert, werden aus Edelsteinen des Schmelztiegels Ersatzzähne gefertigt. Viele Umbra sind inzwischen darauf gekommen, ihre Zähne absichtlich zu ziehen, um an diese wertvollen Ersatzzähne zu gelangen.",
-      "russian": "В тех редких случаях, когда представитель Завесы теряет свои зубы, для него из драгоценностей Горнила делают протезы. Они настолько высоко ценятся, что многие обитатели Мрака начали намеренно прореживать свои челюсти.",
-      "portuguese": "Nas raras ocasiões em que um membro dos Sombrios perde os dentes, gemas do Crisol são utilizadas para a criação de dentaduras afiadas. Devido ao seu alto valor, isso levou muitos Sombrios a removerem intencionalmente os dentes.",
-      "chinese": "在极罕见的情况下，当雾影的成员失去牙齿的时候，它们会用熔炉之地采来的宝石制作新的锋利假牙。由于假牙价值昂贵，很多影主氏族的成员会故意换掉它们原有的牙齿。",
-      "spanish": "En las pocas ocasiones en las que un miembro del Velo ha perdido sus dientes, se crean prótesis con gemas del Crisol. Debido a su alto valor, muchos Umbra se han arrancado los dientes intencionadamente.",
-      "chinese_traditional": "在罕見的情況下，幽影在失去牙齒時，會用地獄熔爐寶石製作鋒利的假牙。由於它們價值很高，這導致許多暗影族故意弄掉自己的牙齒。",
-      "korean": "이 날카로운 틀니는 장막의 일원이 치아를 잃는 아주 드문 경우를 대비해 도가니 보석으로 만들어진다. 그 틀니의 가치는 매우 높아, 많은 어스름 일족이 일부러 치아를 제거하는 원인이 되었다.",
-      "japanese": "稀にシュラウドが歯を失った場合、クルーシブルの宝石から鋭い義歯が作られる。その価値が高いため、多くの常闇族が意図的に歯を抜いているのだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectDamageEnemyOnFriendlyTrigger",
-      "appliedVfx": {
-        "vfxPrefabLeft": "FX_ShadowImpact_PS",
-        "spawnLocation": "character_center"
+      "id": "DamageOnEaten",
+      "name": "Teeth of Gold",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassUmbra",
+            "unlock_level": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-36132cc8a7a7da74-109e2a64933e2f34cb92261fb68fe951-v2",
+        "english": "Teeth of Gold",
+        "french": "Dents en or",
+        "german": "Zähne aus Gold",
+        "russian": "Золотые зубы",
+        "portuguese": "Dentes de Ouro",
+        "chinese": "金牙",
+        "spanish": "Dientes de oro",
+        "chinese_traditional": "黃金牙齒",
+        "korean": "금이빨",
+        "japanese": "黄金の歯"
       },
-      "paramSourceTeam": "monsters",
-      "paramInt": 5,
-      "paramTrigger": "on_eaten",
-      "paramTargetMode": "weakest"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-1e03193e43c93cdd-109e2a64933e2f34cb92261fb68fe951-v2",
+        "english": "Deal [effect0.power] [piercing] damage to the lowest health enemy unit when a unit is [eaten].",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> de type [piercing] à l'ennemi ayant le moins de PV lorsqu'une unité est <b>mangée</b>.",
+        "german": "Füge der gegnerischen Einheit mit der niedrigsten Gesundheit [effect0.power] [piercing]-Schaden zu, wenn eine Einheit [eaten] wird.",
+        "russian": "[eaten] бойца наносит [piercing] и [effect0.power] урона вражескому бойцу с самым низким здоровьем.",
+        "portuguese": "Causa [effect0.power] [piercing] de dano à unidade inimiga com a menor vida quando uma unidade é <b>Devorada</b>.",
+        "chinese": "每当一个单位[eaten]时，对生命值最低的敌方单位造成 [effect0.power] 点[piercing]伤害。",
+        "spanish": "Inflige [effect0.power] de daño [piercing] a la unidad enemiga de menor salud cuando una unidad queda <b>Devorada</b>.",
+        "chinese_traditional": "當一個單位[eaten]時，對生命值最低的敵方單位造成[effect0.power][piercing]點傷害。",
+        "korean": "유닛이 [eaten]가 되면 체력이 가장 낮은 적 유닛에 [effect0.power] [piercing]의 피해를 입힙니다.",
+        "japanese": "ユニットが[eaten]されると体力が一番低い敵ユニットに[effect0.power] [piercing]のダメージを与える。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-dedc943d60ddc583-109e2a64933e2f34cb92261fb68fe951-v2",
+          "english": "On the rare occasion that a member of the Shroud has lost their teeth, sharp dentures are created from Crucible gems. Due to their high value, this has led to many Umbra intentionally removing their teeth.",
+          "french": "Dans l'éventualité très rare où un membre du Suaire perdrait ses dents, des dentiers acérés sont fabriqués à partir des pierres précieuses du creuset. Du fait de leur grande valeur, de nombreux Umbras s'arrachent les dents intentionnellement.",
+          "german": "In den seltenen Fällen, in denen ein Mantelwesen einmal Zähne verliert, werden aus Edelsteinen des Schmelztiegels Ersatzzähne gefertigt. Viele Umbra sind inzwischen darauf gekommen, ihre Zähne absichtlich zu ziehen, um an diese wertvollen Ersatzzähne zu gelangen.",
+          "russian": "В тех редких случаях, когда представитель Завесы теряет свои зубы, для него из драгоценностей Горнила делают протезы. Они настолько высоко ценятся, что многие обитатели Мрака начали намеренно прореживать свои челюсти.",
+          "portuguese": "Nas raras ocasiões em que um membro dos Sombrios perde os dentes, gemas do Crisol são utilizadas para a criação de dentaduras afiadas. Devido ao seu alto valor, isso levou muitos Sombrios a removerem intencionalmente os dentes.",
+          "chinese": "在极罕见的情况下，当雾影的成员失去牙齿的时候，它们会用熔炉之地采来的宝石制作新的锋利假牙。由于假牙价值昂贵，很多影主氏族的成员会故意换掉它们原有的牙齿。",
+          "spanish": "En las pocas ocasiones en las que un miembro del Velo ha perdido sus dientes, se crean prótesis con gemas del Crisol. Debido a su alto valor, muchos Umbra se han arrancado los dientes intencionadamente.",
+          "chinese_traditional": "在罕見的情況下，幽影在失去牙齒時，會用地獄熔爐寶石製作鋒利的假牙。由於它們價值很高，這導致許多暗影族故意弄掉自己的牙齒。",
+          "korean": "이 날카로운 틀니는 장막의 일원이 치아를 잃는 아주 드문 경우를 대비해 도가니 보석으로 만들어진다. 그 틀니의 가치는 매우 높아, 많은 어스름 일족이 일부러 치아를 제거하는 원인이 되었다.",
+          "japanese": "稀にシュラウドが歯を失った場合、クルーシブルの宝石から鋭い義歯が作られる。その価値が高いため、多くの常闇族が意図的に歯を抜いているのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@DamageOnEaten.effects0"
+      ]
     }
   ],
-  "unlockLevel": 5
+  "relic_effects": [
+    {
+      "id": "DamageOnEaten.effects0",
+      "name": "RelicEffectDamageEnemyOnFriendlyTrigger",
+      "applied_vfx": "@DamageOnEaten.effects0.appliedVfx",
+      "param_source_team": "monsters",
+      "param_int": 5,
+      "param_trigger": "on_eaten",
+      "target_mode": "weakest"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "DamageOnEaten.effects0.appliedVfx",
+      "vfx_prefab_left": "FX_ShadowImpact_PS",
+      "spawn_location": "character_center"
+    }
+  ]
 }

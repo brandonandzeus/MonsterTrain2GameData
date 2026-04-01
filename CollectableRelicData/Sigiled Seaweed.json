@@ -1,76 +1,94 @@
 {
-  "id": "ChanceToSilence",
-  "guid": "be9b4dd1-c0ba-41bd-a276-108ca7dad0fa",
-  "name": "Sigiled Seaweed",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-0272d613709d0ffb-6530908984251b347939474828b33bc2-v2",
-    "english": "Sigiled Seaweed",
-    "french": "Algues runiques",
-    "german": "Besiegeltes Seegras",
-    "russian": "Помеченные водоросли",
-    "portuguese": "Alga Marinha Insigne",
-    "chinese": "符文海藻",
-    "spanish": "Algas místicas",
-    "chinese_traditional": "印記海草",
-    "korean": "문양이 새겨진 해초",
-    "japanese": "刻印の海草"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-470502e070e5bc88-6530908984251b347939474828b33bc2-v2",
-    "english": "Apply [mute] [effect0.effect0.status0.power] when an enemy unit enters your train.",
-    "french": "Applique [mute] [effect0.effect0.status0.power] lorsqu'un ennemi entre dans le train.",
-    "german": "Füge einer gegnerischen Einheit [mute] [effect0.effect0.status0.power] zu, wenn sie deinen Zug betritt.",
-    "russian": "На врагов при входе в поезд накладывается [mute] х[effect0.effect0.status0.power].",
-    "portuguese": "Aplicará [mute] [effect0.effect0.status0.power] quando uma unidade inimiga entrar no seu trem.",
-    "chinese": "当敌方单位进入火车时，对其施加 [mute] [effect0.effect0.status0.power]。",
-    "spanish": "Añade [mute] [effect0.effect0.status0.power] cuando una unidad enemiga entra en tu tren.",
-    "chinese_traditional": "在敵方單位進入你的列車時施加[mute][effect0.effect0.status0.power]。",
-    "korean": "열차에 진입한 적 유닛에 [mute] [effect0.effect0.status0.power] 효과를 적용합니다.",
-    "japanese": "敵ユニットが列車に侵入した際に、[mute] [effect0.effect0.status0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-8ae80cffadefa9b6-6530908984251b347939474828b33bc2-v2",
-      "english": "The seaweed of the Sea is known to be very resistant to breaking. The addition of Stygian sigils make breaking it impossible, despite all my efforts.",
-      "french": "Les algues de la mer Stygienne sont réputées très difficiles à déchirer. L'ajout de runes stygiennes les a rendues véritablement indestructibles. Je peux vous l'assurer.",
-      "german": "Das Gras der Stygischen See ist für seine besondere Robustheit bekannt. Kombiniert mit stygischen Siegeln lässt es sich nicht zerreißen. Zumindest habe ich es nicht geschafft.",
-      "russian": "Водоросли Моря известны своей прочностью. А когда они украшены стигийскими печатями, их даже я не могу сломать.",
-      "portuguese": "A alga do mar é conhecida por ser muito resistente. A adição de símbolos Estigeanos impossibilita sua quebra, apesar de todos os meus esforços.",
-      "chinese": "众所周知，冥海的海藻具有极强的韧性。在添加上冥卫的印记之后，我竭尽全力都没法把它弄断。",
-      "spanish": "Es sabido que las algas del Mar ofrecen una gran resistencia a la rotura. La suma, además, de sigilos de los Estigios hace que sea imposible romperlas, por mucho que me empeñe en ello.",
-      "chinese_traditional": "海洋的海草以不易斷裂而聞名。加入冥河符文使它變得無法斷裂，儘管我做出了所有努力都沒有用。",
-      "korean": "해초는 부서지기 어려운 식물이다. 여기에 명계의 인장을 더하면, 아무리 시도해도 부서지지 않는다.",
-      "japanese": "海の海藻は非常に頑丈であることが知られている。ステュクス族の印が刻まれると、私がどれだけ努力しても破壊できなくなる。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassStygian",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectChanceAddEffectOnSpawn",
-      "paramCardEffects": [
+      "id": "ChanceToSilence",
+      "name": "Sigiled Seaweed",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "self",
-          "targetTeamType": "heroes",
-          "paramStatusEffects": [
-            {
-              "statusId": "muted",
-              "count": 1
-            }
-          ],
-          "paramInt": 100
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassStygian",
+            "unlock_level": 2
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramInt": 100,
-      "paramExcludeCharacterSubtypes": [
+      "names": {
+        "key": "CollectableRelicData_nameKey-0272d613709d0ffb-6530908984251b347939474828b33bc2-v2",
+        "english": "Sigiled Seaweed",
+        "french": "Algues runiques",
+        "german": "Besiegeltes Seegras",
+        "russian": "Помеченные водоросли",
+        "portuguese": "Alga Marinha Insigne",
+        "chinese": "符文海藻",
+        "spanish": "Algas místicas",
+        "chinese_traditional": "印記海草",
+        "korean": "문양이 새겨진 해초",
+        "japanese": "刻印の海草"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-470502e070e5bc88-6530908984251b347939474828b33bc2-v2",
+        "english": "Apply [mute] [effect0.effect0.status0.power] when an enemy unit enters your train.",
+        "french": "Applique [mute] [effect0.effect0.status0.power] lorsqu'un ennemi entre dans le train.",
+        "german": "Füge einer gegnerischen Einheit [mute] [effect0.effect0.status0.power] zu, wenn sie deinen Zug betritt.",
+        "russian": "На врагов при входе в поезд накладывается [mute] х[effect0.effect0.status0.power].",
+        "portuguese": "Aplicará [mute] [effect0.effect0.status0.power] quando uma unidade inimiga entrar no seu trem.",
+        "chinese": "当敌方单位进入火车时，对其施加 [mute] [effect0.effect0.status0.power]。",
+        "spanish": "Añade [mute] [effect0.effect0.status0.power] cuando una unidad enemiga entra en tu tren.",
+        "chinese_traditional": "在敵方單位進入你的列車時施加[mute][effect0.effect0.status0.power]。",
+        "korean": "열차에 진입한 적 유닛에 [mute] [effect0.effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットが列車に侵入した際に、[mute] [effect0.effect0.status0.power]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-8ae80cffadefa9b6-6530908984251b347939474828b33bc2-v2",
+          "english": "The seaweed of the Sea is known to be very resistant to breaking. The addition of Stygian sigils make breaking it impossible, despite all my efforts.",
+          "french": "Les algues de la mer Stygienne sont réputées très difficiles à déchirer. L'ajout de runes stygiennes les a rendues véritablement indestructibles. Je peux vous l'assurer.",
+          "german": "Das Gras der Stygischen See ist für seine besondere Robustheit bekannt. Kombiniert mit stygischen Siegeln lässt es sich nicht zerreißen. Zumindest habe ich es nicht geschafft.",
+          "russian": "Водоросли Моря известны своей прочностью. А когда они украшены стигийскими печатями, их даже я не могу сломать.",
+          "portuguese": "A alga do mar é conhecida por ser muito resistente. A adição de símbolos Estigeanos impossibilita sua quebra, apesar de todos os meus esforços.",
+          "chinese": "众所周知，冥海的海藻具有极强的韧性。在添加上冥卫的印记之后，我竭尽全力都没法把它弄断。",
+          "spanish": "Es sabido que las algas del Mar ofrecen una gran resistencia a la rotura. La suma, además, de sigilos de los Estigios hace que sea imposible romperlas, por mucho que me empeñe en ello.",
+          "chinese_traditional": "海洋的海草以不易斷裂而聞名。加入冥河符文使它變得無法斷裂，儘管我做出了所有努力都沒有用。",
+          "korean": "해초는 부서지기 어려운 식물이다. 여기에 명계의 인장을 더하면, 아무리 시도해도 부서지지 않는다.",
+          "japanese": "海の海藻は非常に頑丈であることが知られている。ステュクス族の印が刻まれると、私がどれだけ努力しても破壊できなくなる。"
+        }
+      ],
+      "relic_effects": [
+        "@ChanceToSilence.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ChanceToSilence.effects0",
+      "name": "RelicEffectChanceAddEffectOnSpawn",
+      "param_effects": [
+        "@ChanceToSilence.effects0.paramCardEffects0"
+      ],
+      "param_source_team": "heroes",
+      "param_int": 100,
+      "param_excluded_subtypes": [
         "SubtypesData_TreasureCollector"
       ]
     }
   ],
-  "unlockLevel": 2
+  "effects": [
+    {
+      "id": "ChanceToSilence.effects0.paramCardEffects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "muted",
+          "count": 1
+        }
+      ],
+      "param_int": 100
+    }
+  ]
 }

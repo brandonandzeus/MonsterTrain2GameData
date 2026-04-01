@@ -1,68 +1,74 @@
 {
-  "id": "ChanceToVineGrasp",
-  "guid": "00063533-9277-485c-b100-13637a228f9a",
-  "name": "Cursed Vines",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-7b6c99b3e7efa951-adee0e201758f9148bd1ac10183b8572-v2",
-    "english": "Cursed Vines",
-    "french": "Lianes maudites",
-    "german": "Verfluchte Ranken",
-    "russian": "Проклятые лозы",
-    "portuguese": "Vinhas Amaldiçoadas",
-    "chinese": "诅咒藤蔓",
-    "spanish": "Enredaderas malditas",
-    "chinese_traditional": "詛咒藤蔓",
-    "korean": "저주받은 덩굴",
-    "japanese": "呪われたツタ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-c2b85c3c5b1048ad-adee0e201758f9148bd1ac10183b8572-v2",
-    "english": "At start of turn, add a <b>Vine Grasp</b> spell with [ephemeral] to your hand.",
-    "french": "Au début du tour, ajoute un sort <b>Happement des lianes</b> avec [ephemeral] à votre main.",
-    "german": "Nimm zu Beginn des Zuges einen <b>Rankengriff</b>-Zauber mit [ephemeral] auf die Hand.",
-    "russian": "В начале хода в вашу руку добавляется [ephemeral] карта чар <b>Цепкая лоза</b>.",
-    "portuguese": "No começo do turno, adicione um feitiço <b>Efêmero</b> de <b>Ataque de Vinhas</b> à sua mão.",
-    "chinese": "回合开始时，添加一张带有 [ephemeral] 的<b>藤蔓纠缠</b>法术到你的手牌。",
-    "spanish": "Al principio de tu turno, añade un hechizo <b>Agarre espinoso</b> con la propiedad [ephemeral] a tu mano.",
-    "chinese_traditional": "在回合開始時，將一張帶有[ephemeral]的<b>藤蔓抓握</b>法術加入你的手牌。",
-    "korean": "턴 시작 시, [ephemeral] 효과를 지닌 <b>덩굴 속박</b> 주문 카드를 패에 추가합니다.",
-    "japanese": "ターン開始時に、属性が[ephemeral]の<b>ツタの掌握</b>の呪文を手札に追加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-b526d24f6dad6dd9-adee0e201758f9148bd1ac10183b8572-v2",
-      "english": "Not all of the Edge Priory endeavors have been successes. Their attempts to return to the physical form of an Animus have been met with countless failures. The vines they’ve used in these experiments wither with the unstable energy that’s cursed them.",
-      "french": "Toutes les entreprises du prieuré de la Marche ne sont pas forcément couronnées de succès. Leurs tentatives de revenir à leur forme physique d'animus se sont soldées par de nombreux échecs. Les lianes qu'ils ont utilisées lors de ces expériences flétrissent à cause de l'énergie maudite et instable qui les affecte.",
-      "german": "Nicht alle Unterfangen der Rand-Priorei waren erfolgreich. Ihre Versuche, die körperliche Form eines Animus wiederherzustellen, sind immer wieder gescheitert. Die Ranken, die sie für diese Experimente verwendet haben, werden von der instabilen Energie, mit der sie verflucht sind, zersetzt.",
-      "russian": "Аббатам Пограничья не всегда сопутствует успех. Их попытки вернуться к телесной форме Анимы неоднократно заканчивались провалом. Лозы, которые они использовали во время своих экспериментов, увядали из-за нестабильной проклятой энергии.",
-      "portuguese": "Nem todas as iniciativas do Priorado da Fronteira foram bem-sucedidas. Suas tentativas de retornar à forma física de um Animus falharam inúmeras vezes. As videiras que eles usaram nessas experiências mirraram com a energia instável que as amaldiçoou.",
-      "chinese": "隐修会并非所有的尝试都获得了成功。它们试图重新转化为蔓灵的物理形态，但这一实验屡遭挫折。实验中使用的藤蔓由于遭到了不稳定能量的诅咒而枯萎。",
-      "spanish": "No todas las iniciativas del Priorato de la Linde han resultado fructíferas. Sus intentos por recuperar la forma física de un ánimus se han estrellado en innumerables ocasiones. Las enredaderas que vienen utilizado en estos experimentos se marchitan por la inestabilidad de misma energía que las maldice.",
-      "chinese_traditional": "並非邊際修道院的所有努力都取得了成功。他們試圖回到靈魂的物理形態的計畫，遭遇了無數失敗。他們在這些實驗中所使用的藤蔓，因為受到不穩定能量的詛咒而枯萎。",
-      "korean": "칼날 수도원이 행한 모든 노력이 성공한 것은 아니다. 의사생명체를 물질계로 돌려보내는 이들의 노력은 무수한 실패로 이어졌고, 실험에 사용한 덩굴은 불안정한 저주의 힘으로 시들고 말았다.",
-      "japanese": "境界の小修道院の活動は、すべてが成功したわけではない。アニムスの物理的な姿に戻ろうとする試みは、数え切れないほど失敗してきたのだ。実験に使われたツタは、不安定なエネルギーの呪いで枯れてしまった。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassAwoken",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddBattleCardToHand",
-      "paramCardUpgradeData": {
-        "id": "AddEphemeral",
-        "guid": "80a5edf4-6dc8-41a7-ab4e-9d0e914e0848",
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitEphemeral",
-            "traitIsRemovable": false
+      "id": "ChanceToVineGrasp",
+      "name": "Cursed Vines",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassAwoken"
           }
-        ]
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-7b6c99b3e7efa951-adee0e201758f9148bd1ac10183b8572-v2",
+        "english": "Cursed Vines",
+        "french": "Lianes maudites",
+        "german": "Verfluchte Ranken",
+        "russian": "Проклятые лозы",
+        "portuguese": "Vinhas Amaldiçoadas",
+        "chinese": "诅咒藤蔓",
+        "spanish": "Enredaderas malditas",
+        "chinese_traditional": "詛咒藤蔓",
+        "korean": "저주받은 덩굴",
+        "japanese": "呪われたツタ"
       },
-      "paramCardPool": "VineGraspOnlyPool"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-c2b85c3c5b1048ad-adee0e201758f9148bd1ac10183b8572-v2",
+        "english": "At start of turn, add a <b>Vine Grasp</b> spell with [ephemeral] to your hand.",
+        "french": "Au début du tour, ajoute un sort <b>Happement des lianes</b> avec [ephemeral] à votre main.",
+        "german": "Nimm zu Beginn des Zuges einen <b>Rankengriff</b>-Zauber mit [ephemeral] auf die Hand.",
+        "russian": "В начале хода в вашу руку добавляется [ephemeral] карта чар <b>Цепкая лоза</b>.",
+        "portuguese": "No começo do turno, adicione um feitiço <b>Efêmero</b> de <b>Ataque de Vinhas</b> à sua mão.",
+        "chinese": "回合开始时，添加一张带有 [ephemeral] 的<b>藤蔓纠缠</b>法术到你的手牌。",
+        "spanish": "Al principio de tu turno, añade un hechizo <b>Agarre espinoso</b> con la propiedad [ephemeral] a tu mano.",
+        "chinese_traditional": "在回合開始時，將一張帶有[ephemeral]的<b>藤蔓抓握</b>法術加入你的手牌。",
+        "korean": "턴 시작 시, [ephemeral] 효과를 지닌 <b>덩굴 속박</b> 주문 카드를 패에 추가합니다.",
+        "japanese": "ターン開始時に、属性が[ephemeral]の<b>ツタの掌握</b>の呪文を手札に追加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-b526d24f6dad6dd9-adee0e201758f9148bd1ac10183b8572-v2",
+          "english": "Not all of the Edge Priory endeavors have been successes. Their attempts to return to the physical form of an Animus have been met with countless failures. The vines they’ve used in these experiments wither with the unstable energy that’s cursed them.",
+          "french": "Toutes les entreprises du prieuré de la Marche ne sont pas forcément couronnées de succès. Leurs tentatives de revenir à leur forme physique d'animus se sont soldées par de nombreux échecs. Les lianes qu'ils ont utilisées lors de ces expériences flétrissent à cause de l'énergie maudite et instable qui les affecte.",
+          "german": "Nicht alle Unterfangen der Rand-Priorei waren erfolgreich. Ihre Versuche, die körperliche Form eines Animus wiederherzustellen, sind immer wieder gescheitert. Die Ranken, die sie für diese Experimente verwendet haben, werden von der instabilen Energie, mit der sie verflucht sind, zersetzt.",
+          "russian": "Аббатам Пограничья не всегда сопутствует успех. Их попытки вернуться к телесной форме Анимы неоднократно заканчивались провалом. Лозы, которые они использовали во время своих экспериментов, увядали из-за нестабильной проклятой энергии.",
+          "portuguese": "Nem todas as iniciativas do Priorado da Fronteira foram bem-sucedidas. Suas tentativas de retornar à forma física de um Animus falharam inúmeras vezes. As videiras que eles usaram nessas experiências mirraram com a energia instável que as amaldiçoou.",
+          "chinese": "隐修会并非所有的尝试都获得了成功。它们试图重新转化为蔓灵的物理形态，但这一实验屡遭挫折。实验中使用的藤蔓由于遭到了不稳定能量的诅咒而枯萎。",
+          "spanish": "No todas las iniciativas del Priorato de la Linde han resultado fructíferas. Sus intentos por recuperar la forma física de un ánimus se han estrellado en innumerables ocasiones. Las enredaderas que vienen utilizado en estos experimentos se marchitan por la inestabilidad de misma energía que las maldice.",
+          "chinese_traditional": "並非邊際修道院的所有努力都取得了成功。他們試圖回到靈魂的物理形態的計畫，遭遇了無數失敗。他們在這些實驗中所使用的藤蔓，因為受到不穩定能量的詛咒而枯萎。",
+          "korean": "칼날 수도원이 행한 모든 노력이 성공한 것은 아니다. 의사생명체를 물질계로 돌려보내는 이들의 노력은 무수한 실패로 이어졌고, 실험에 사용한 덩굴은 불안정한 저주의 힘으로 시들고 말았다.",
+          "japanese": "境界の小修道院の活動は、すべてが成功したわけではない。アニムスの物理的な姿に戻ろうとする試みは、数え切れないほど失敗してきたのだ。実験に使われたツタは、不安定なエネルギーの呪いで枯れてしまった。"
+        }
+      ],
+      "relic_effects": [
+        "@ChanceToVineGrasp.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true
+  "relic_effects": [
+    {
+      "id": "ChanceToVineGrasp.effects0",
+      "name": "RelicEffectAddBattleCardToHand",
+      "param_upgrade": "AddEphemeral",
+      "param_card_pool": "VineGraspOnlyPool"
+    }
+  ]
 }

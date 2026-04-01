@@ -1,104 +1,123 @@
 {
-  "id": "WhelpDragonAttack_DH",
-  "guid": "72706202-526e-4377-9745-7df40a26ba7d",
-  "name": "Sharpened Teeth",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-39e326e2b930e4db-625e4f0924a8b6a46b1257bd8a4928db-v2",
-    "english": "Sharpened Teeth",
-    "french": "Dents aiguisées",
-    "german": "Geschärfte Zähne",
-    "russian": "Заостренные зубы",
-    "portuguese": "Dentes Afiados",
-    "chinese": "尖锐之牙",
-    "spanish": "Dientes afilados",
-    "chinese_traditional": "銳利牙齒",
-    "korean": "날카로운 이빨",
-    "japanese": "研がれた歯"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-2a549d100d4de727-625e4f0924a8b6a46b1257bd8a4928db-v2",
-    "english": "Dragons and Whelps gain +[effect0.power][attack].",
-    "french": "Les dragons et les dragonnets gagnent +[effect0.power][attack].",
-    "german": "Drachen und Zöglinge erhalten +[effect0.power][attack].",
-    "russian": "Драконы и дракончики получают +[effect0.power][attack].",
-    "portuguese": "Dragões e Filhotes recebem +[effect0.power][attack].",
-    "chinese": "龙与幼龙获得 +[effect0.power][attack]。",
-    "spanish": "Los dragones y crías reciben +[effect0.power][attack].",
-    "chinese_traditional": "龍和幼龍獲得+[effect0.power][attack]。",
-    "korean": "드래곤과 해츨링의 +[effect0.power][attack]이 증가합니다.",
-    "japanese": "竜と小竜が+[effect0.power][attack]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-c8c7edb76840a56b-625e4f0924a8b6a46b1257bd8a4928db-v2",
-      "english": "When a dragon loses their teeth from eating too much sweetened gold, such sharp dentures must be worn. They have become such a fashion statement among the elite Pyreborne.",
-      "french": "Lorsqu'un dragon perd ses dents après avoir mangé trop d'or sucré, il doit porter des prothèses dentaires très pointues. C'est devenu un véritable phénomène de mode au sein de l'élite des Draconides.",
-      "german": "Wenn ein Drache seine Zähne verliert, weil er zu viel gezuckertes Gold gefressen hat, muss er ein solches Gebiss tragen. Sie sind unter der Elite der Höllenglutkinder zu einem Modestatement geworden.",
-      "russian": "Когда дракон начинает терять зубы от переедания сладкого золота, ему приходится носить эти острые протезы. Среди элиты Пеклорожденных они считаются очень модными.",
-      "portuguese": "Um dragão precisa usar estas dentaduras afiadas quando perde os dentes por comer muito ouro doce. Elas se tornaram moda entre a elite de Píricos.",
-      "chinese": "当一条龙因为吃了太多甜金子搞坏牙齿之后，就必须戴上这种锋利的假牙。这已成为薪龙族上流社会中的时尚风潮。",
-      "spanish": "Cuando un dragón pierde los dientes por ingerir una excesiva cantidad de oro azucarado, debe llevar una dentadura postiza así de afilada. Se han puesto de moda entre la élite de los Hijos de la Pira.",
-      "chinese_traditional": "當龍因吃太多加糖的黃金而失去牙齒時，就必須戴上如此鋒利的假牙。它們在精英火焰之子之間已成為一種時尚宣言。",
-      "korean": "달콤한 황금을 너무 많이 먹어 이빨이 썩어버린 드래곤은 날카로운 이빨 보철물을 착용한다. 이 보철물은 상류 화로의 후예 사이에서 유행하는 아이템이 되었다.",
-      "japanese": "竜が甘い黄金を食べすぎて歯を失った場合、このような鋭い義歯を着用する必要がある。火竜族の上流階級の間では、義歯がファッションの象徴となっている。"
+      "id": "WhelpDragonAttack_DH",
+      "name": "Sharpened Teeth",
+      "pools": [
+        "DragonHoard_DHRelics_RewardPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "description_modifiers": [
+              {
+                "id": "WhelpDragonAttack_DH.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-b55a360cc115af60-625e4f0924a8b6a46b1257bd8a4928db-v2",
+                  "english": "([value] Dragons,",
+                  "french": "([value] Dragons,",
+                  "german": "([value] Drachen,",
+                  "russian": "([value] Драконов,",
+                  "portuguese": "([value] Dragões,",
+                  "chinese": "([value] 龙,",
+                  "spanish": "([value] Dragones,",
+                  "chinese_traditional": "([value] 龍,",
+                  "korean": "([value] 드래곤,",
+                  "japanese": "([value] 竜,"
+                },
+                "param_subtype": "SubtypesData_Dragon"
+              },
+              {
+                "id": "WhelpDragonAttack_DH.descriptionModifiers1",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-b350e71f3b941be7-625e4f0924a8b6a46b1257bd8a4928db-v2",
+                  "english": "[value] Whelps)",
+                  "french": "[value] Dragonnets)",
+                  "german": "[value] Zöglinge)",
+                  "russian": "[value] дракончиков)",
+                  "portuguese": "[value] Filhotes)",
+                  "chinese": "[value] 幼龙)",
+                  "spanish": "[value] Crías)",
+                  "chinese_traditional": "[value] 幼龍)",
+                  "korean": "[value] 해츨링)",
+                  "japanese": "[value] 小竜)"
+                },
+                "param_subtype": "SubtypesData_Whelp"
+              }
+            ],
+            "is_dragons_hoard": true
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-39e326e2b930e4db-625e4f0924a8b6a46b1257bd8a4928db-v2",
+        "english": "Sharpened Teeth",
+        "french": "Dents aiguisées",
+        "german": "Geschärfte Zähne",
+        "russian": "Заостренные зубы",
+        "portuguese": "Dentes Afiados",
+        "chinese": "尖锐之牙",
+        "spanish": "Dientes afilados",
+        "chinese_traditional": "銳利牙齒",
+        "korean": "날카로운 이빨",
+        "japanese": "研がれた歯"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-2a549d100d4de727-625e4f0924a8b6a46b1257bd8a4928db-v2",
+        "english": "Dragons and Whelps gain +[effect0.power][attack].",
+        "french": "Les dragons et les dragonnets gagnent +[effect0.power][attack].",
+        "german": "Drachen und Zöglinge erhalten +[effect0.power][attack].",
+        "russian": "Драконы и дракончики получают +[effect0.power][attack].",
+        "portuguese": "Dragões e Filhotes recebem +[effect0.power][attack].",
+        "chinese": "龙与幼龙获得 +[effect0.power][attack]。",
+        "spanish": "Los dragones y crías reciben +[effect0.power][attack].",
+        "chinese_traditional": "龍和幼龍獲得+[effect0.power][attack]。",
+        "korean": "드래곤과 해츨링의 +[effect0.power][attack]이 증가합니다.",
+        "japanese": "竜と小竜が+[effect0.power][attack]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-c8c7edb76840a56b-625e4f0924a8b6a46b1257bd8a4928db-v2",
+          "english": "When a dragon loses their teeth from eating too much sweetened gold, such sharp dentures must be worn. They have become such a fashion statement among the elite Pyreborne.",
+          "french": "Lorsqu'un dragon perd ses dents après avoir mangé trop d'or sucré, il doit porter des prothèses dentaires très pointues. C'est devenu un véritable phénomène de mode au sein de l'élite des Draconides.",
+          "german": "Wenn ein Drache seine Zähne verliert, weil er zu viel gezuckertes Gold gefressen hat, muss er ein solches Gebiss tragen. Sie sind unter der Elite der Höllenglutkinder zu einem Modestatement geworden.",
+          "russian": "Когда дракон начинает терять зубы от переедания сладкого золота, ему приходится носить эти острые протезы. Среди элиты Пеклорожденных они считаются очень модными.",
+          "portuguese": "Um dragão precisa usar estas dentaduras afiadas quando perde os dentes por comer muito ouro doce. Elas se tornaram moda entre a elite de Píricos.",
+          "chinese": "当一条龙因为吃了太多甜金子搞坏牙齿之后，就必须戴上这种锋利的假牙。这已成为薪龙族上流社会中的时尚风潮。",
+          "spanish": "Cuando un dragón pierde los dientes por ingerir una excesiva cantidad de oro azucarado, debe llevar una dentadura postiza así de afilada. Se han puesto de moda entre la élite de los Hijos de la Pira.",
+          "chinese_traditional": "當龍因吃太多加糖的黃金而失去牙齒時，就必須戴上如此鋒利的假牙。它們在精英火焰之子之間已成為一種時尚宣言。",
+          "korean": "달콤한 황금을 너무 많이 먹어 이빨이 썩어버린 드래곤은 날카로운 이빨 보철물을 착용한다. 이 보철물은 상류 화로의 후예 사이에서 유행하는 아이템이 되었다.",
+          "japanese": "竜が甘い黄金を食べすぎて歯を失った場合、このような鋭い義歯を着用する必要がある。火竜族の上流階級の間では、義歯がファッションの象徴となっている。"
+        }
+      ],
+      "relic_effects": [
+        "@WhelpDragonAttack_DH.effects0",
+        "@WhelpDragonAttack_DH.effects1"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "DragonHoard_DHRelics_RewardPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardAttack",
-      "paramCardType": "spell",
-      "paramInt": 8,
-      "paramCharacterSubtype": "SubtypesData_Whelp"
+      "id": "WhelpDragonAttack_DH.effects0",
+      "name": "RelicEffectModifyCardAttack",
+      "param_card_type": "spell",
+      "param_int": 8,
+      "param_subtype": "SubtypesData_Whelp"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCardAttack",
-      "paramCardType": "spell",
-      "paramInt": 8,
-      "paramCharacterSubtype": "SubtypesData_Dragon"
+      "id": "WhelpDragonAttack_DH.effects1",
+      "name": "RelicEffectModifyCardAttack",
+      "param_card_type": "spell",
+      "param_int": 8,
+      "param_subtype": "SubtypesData_Dragon"
     }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-b55a360cc115af60-625e4f0924a8b6a46b1257bd8a4928db-v2",
-        "english": "([value] Dragons,",
-        "french": "([value] Dragons,",
-        "german": "([value] Drachen,",
-        "russian": "([value] Драконов,",
-        "portuguese": "([value] Dragões,",
-        "chinese": "([value] 龙,",
-        "spanish": "([value] Dragones,",
-        "chinese_traditional": "([value] 龍,",
-        "korean": "([value] 드래곤,",
-        "japanese": "([value] 竜,"
-      },
-      "paramCharacterSubtype": "SubtypesData_Dragon"
-    },
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-b350e71f3b941be7-625e4f0924a8b6a46b1257bd8a4928db-v2",
-        "english": "[value] Whelps)",
-        "french": "[value] Dragonnets)",
-        "german": "[value] Zöglinge)",
-        "russian": "[value] дракончиков)",
-        "portuguese": "[value] Filhotes)",
-        "chinese": "[value] 幼龙)",
-        "spanish": "[value] Crías)",
-        "chinese_traditional": "[value] 幼龍)",
-        "korean": "[value] 해츨링)",
-        "japanese": "[value] 小竜)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Whelp"
-    }
-  ],
-  "isDragonsHoardRelic": true
+  ]
 }

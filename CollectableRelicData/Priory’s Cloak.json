@@ -1,59 +1,74 @@
 {
-  "id": "HealToDamage",
-  "guid": "ae618996-fea4-431e-8911-f9715f96c898",
-  "name": "Priory’s Cloak",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-8ac498d9b4cbe2c5-1944d4db0ccf9704997e90e6d5f45fba-v2",
-    "english": "Priory’s Cloak",
-    "french": "Cape du prieuré",
-    "german": "Umhang der Priorei",
-    "russian": "Накидка аббата",
-    "portuguese": "Capa do Priorado",
-    "chinese": "隐修披风",
-    "spanish": "Capa del Priorato",
-    "chinese_traditional": "修道院的斗篷",
-    "korean": "수도사 외투",
-    "japanese": "修道院のマント"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-532cdca0cd220c93-1944d4db0ccf9704997e90e6d5f45fba-v2",
-    "english": "When a friendly unit is healed, deal damage to the front enemy unit equal to the amount healed.",
-    "french": "Lorsqu'une unité alliée est soignée, inflige des dégâts à l'unité ennemie en première ligne correspondant à la quantité soignée.",
-    "german": "Wenn eine verbündete Einheit geheilt wird, füge der vordersten gegnerischen Einheit ebenso viel Schaden zu.",
-    "russian": "Когда союзник получает лечение, переднему врагу наносится урон, равный восстановленному количеству здоровья.",
-    "portuguese": "Quando uma unidade aliada é curada, causa dano na unidade inimiga na frente igual à quantia recuperada.",
-    "chinese": "当友方单位恢复生命时，对前排敌方单位造成等同于治疗值的伤害。",
-    "spanish": "Cuando una unidad aliada recibe curación, inflige una cantidad daño a la primera unidad enemiga igual a la curación.",
-    "chinese_traditional": "當一個友方單位被治療時，對前排敵方單位造成等同於治療量的傷害。",
-    "korean": "아군 유닛의 체력을 회복하면 전열 적 유닛에 회복량만큼의 피해를 줍니다.",
-    "japanese": "味方ユニットが回復されると、前列の敵ユニットに回復量に等しいダメージを与える。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f260d74bf5f8ef64-1944d4db0ccf9704997e90e6d5f45fba-v2",
-      "english": "A cloak gifted to me from a Channeler of the Edge Priory. It still contains some residual energy from its owner, allowing anyone who wears it to heal their wounds more effectively. Though this energy is not without side effects...",
-      "french": "Une cape que m'a offerte un occultiste du prieuré de la Marche. Elle contient encore un peu d'énergie résiduelle de son propriétaire, ce qui permet à quiconque la revêt de soigner ses blessures plus efficacement. Cependant, cette énergie n'est pas exempte d'effets secondaires...",
-      "german": "Diesen Umhang habe ich von einem Okkultisten der Rand-Priorei. Er enthält immer noch etwas Restenergie seines vorherigen Besitzers, die es dem Träger ermöglicht, Wunden effektiver zu heilen. Die Energie hat allerdings auch ihre Nebenwirkungen …",
-      "russian": "Накидка, подаренная мне Заклинателем из аббатства Пограничья. Она все еще хранит в себе остаточный энергетический след своего прежнего владельца, что позволяет каждому, кто ее наденет, быстрее залечить раны. Впрочем, есть и побочные эффекты...",
-      "portuguese": "Uma capa que ganhei de presente de um Canalizador do Priorado da Fronteira. Ela ainda possui um pouco de energia residual de seu proprietário, permitindo que qualquer pessoa que a use cure suas feridas com mais eficácia. Embora essa energia tenha efeitos colaterais...",
-      "chinese": "隐修会的通灵者送给我的披风，这件披风上依然含有它前任主人的力量。穿上这件披风的人可以更有效地治愈伤口，不过，这种能量也同样会产生副作用……",
-      "spanish": "Una capa que me regaló un canalizador del Priorato de la Linde. Aún conserva energía residual de su propietario, lo que permite que cualquiera que se la ponga se recupere antes de sus heridas. Aunque la energía tiene efectos secundarios...",
-      "chinese_traditional": "一件邊際修道院引導者贈予我的斗篷。它仍然保留著主人的一些殘餘能量，能讓穿戴者更有效地治療傷口。不過，這種能量並非沒有副作用……",
-      "korean": "칼날 수도원의 연결자가 선물로 준 외투. 이 외투는 지금도 원 주인의 에너지가 남아 있어, 착용하는 자가 효과적으로 상처를 치유할 수 있다. 하지만, 이 에너지에는 부작용이 따를 수 있다...",
-      "japanese": "境界の小修道院のチャネラーから贈られたマント。持ち主の残留エネルギーがまだ残っているので、これを身に着けると傷をより効果的に治すことができる。ただし、このエネルギーには副作用がないわけではない…"
+      "id": "HealToDamage",
+      "name": "Priory’s Cloak",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassAwoken",
+            "unlock_level": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-8ac498d9b4cbe2c5-1944d4db0ccf9704997e90e6d5f45fba-v2",
+        "english": "Priory’s Cloak",
+        "french": "Cape du prieuré",
+        "german": "Umhang der Priorei",
+        "russian": "Накидка аббата",
+        "portuguese": "Capa do Priorado",
+        "chinese": "隐修披风",
+        "spanish": "Capa del Priorato",
+        "chinese_traditional": "修道院的斗篷",
+        "korean": "수도사 외투",
+        "japanese": "修道院のマント"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-532cdca0cd220c93-1944d4db0ccf9704997e90e6d5f45fba-v2",
+        "english": "When a friendly unit is healed, deal damage to the front enemy unit equal to the amount healed.",
+        "french": "Lorsqu'une unité alliée est soignée, inflige des dégâts à l'unité ennemie en première ligne correspondant à la quantité soignée.",
+        "german": "Wenn eine verbündete Einheit geheilt wird, füge der vordersten gegnerischen Einheit ebenso viel Schaden zu.",
+        "russian": "Когда союзник получает лечение, переднему врагу наносится урон, равный восстановленному количеству здоровья.",
+        "portuguese": "Quando uma unidade aliada é curada, causa dano na unidade inimiga na frente igual à quantia recuperada.",
+        "chinese": "当友方单位恢复生命时，对前排敌方单位造成等同于治疗值的伤害。",
+        "spanish": "Cuando una unidad aliada recibe curación, inflige una cantidad daño a la primera unidad enemiga igual a la curación.",
+        "chinese_traditional": "當一個友方單位被治療時，對前排敵方單位造成等同於治療量的傷害。",
+        "korean": "아군 유닛의 체력을 회복하면 전열 적 유닛에 회복량만큼의 피해를 줍니다.",
+        "japanese": "味方ユニットが回復されると、前列の敵ユニットに回復量に等しいダメージを与える。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f260d74bf5f8ef64-1944d4db0ccf9704997e90e6d5f45fba-v2",
+          "english": "A cloak gifted to me from a Channeler of the Edge Priory. It still contains some residual energy from its owner, allowing anyone who wears it to heal their wounds more effectively. Though this energy is not without side effects...",
+          "french": "Une cape que m'a offerte un occultiste du prieuré de la Marche. Elle contient encore un peu d'énergie résiduelle de son propriétaire, ce qui permet à quiconque la revêt de soigner ses blessures plus efficacement. Cependant, cette énergie n'est pas exempte d'effets secondaires...",
+          "german": "Diesen Umhang habe ich von einem Okkultisten der Rand-Priorei. Er enthält immer noch etwas Restenergie seines vorherigen Besitzers, die es dem Träger ermöglicht, Wunden effektiver zu heilen. Die Energie hat allerdings auch ihre Nebenwirkungen …",
+          "russian": "Накидка, подаренная мне Заклинателем из аббатства Пограничья. Она все еще хранит в себе остаточный энергетический след своего прежнего владельца, что позволяет каждому, кто ее наденет, быстрее залечить раны. Впрочем, есть и побочные эффекты...",
+          "portuguese": "Uma capa que ganhei de presente de um Canalizador do Priorado da Fronteira. Ela ainda possui um pouco de energia residual de seu proprietário, permitindo que qualquer pessoa que a use cure suas feridas com mais eficácia. Embora essa energia tenha efeitos colaterais...",
+          "chinese": "隐修会的通灵者送给我的披风，这件披风上依然含有它前任主人的力量。穿上这件披风的人可以更有效地治愈伤口，不过，这种能量也同样会产生副作用……",
+          "spanish": "Una capa que me regaló un canalizador del Priorato de la Linde. Aún conserva energía residual de su propietario, lo que permite que cualquiera que se la ponga se recupere antes de sus heridas. Aunque la energía tiene efectos secundarios...",
+          "chinese_traditional": "一件邊際修道院引導者贈予我的斗篷。它仍然保留著主人的一些殘餘能量，能讓穿戴者更有效地治療傷口。不過，這種能量並非沒有副作用……",
+          "korean": "칼날 수도원의 연결자가 선물로 준 외투. 이 외투는 지금도 원 주인의 에너지가 남아 있어, 착용하는 자가 효과적으로 상처를 치유할 수 있다. 하지만, 이 에너지에는 부작용이 따를 수 있다...",
+          "japanese": "境界の小修道院のチャネラーから贈られたマント。持ち主の残留エネルギーがまだ残っているので、これを身に着けると傷をより効果的に治すことができる。ただし、このエネルギーには副作用がないわけではない…"
+        }
+      ],
+      "relic_effects": [
+        "@HealToDamage.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassAwoken",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectDamageEnemyOnHeal",
-      "paramSourceTeam": "monsters",
-      "paramInt": 1
+      "id": "HealToDamage.effects0",
+      "name": "RelicEffectDamageEnemyOnHeal",
+      "param_source_team": "monsters",
+      "param_int": 1
     }
-  ],
-  "unlockLevel": 3
+  ]
 }

@@ -1,68 +1,71 @@
 {
-  "id": "PyreHeartSon",
-  "guid": "8503360a-26b2-4b71-9334-4c6014ad397f",
-  "name": "Unstable Shard",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-eeb779819eb0e784-d16613b2ce507cf45a21068c48267526-v2",
-    "english": "Unstable Shard",
-    "french": "Éclat d'instabilité",
-    "german": "Instabiler Splitter",
-    "russian": "Нестабильный осколок",
-    "portuguese": "Fragmento Instável",
-    "chinese": "不稳定的碎片",
-    "spanish": "Fragmento inestable",
-    "chinese_traditional": "不穩定碎片",
-    "korean": "불안정한 파편",
-    "japanese": "不安定な欠片"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-1b3df9f5b3c5a072-d16613b2ce507cf45a21068c48267526-v2",
-    "english": "Friendly units get +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
-    "french": "Les alliés gagnent +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
-    "german": "Verbündete Einheiten erhalten +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
-    "russian": "Союзники получают +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
-    "portuguese": "As unidades aliadas recebem +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
-    "chinese": "使所有友方单位获得 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
-    "spanish": "Las unidades aliadas añaden +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
-    "chinese_traditional": "友方單位獲得+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
-    "korean": "아군 유닛들이 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 획득합니다.",
-    "japanese": "味方ユニットが+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-ae747f070b6d19ff-d16613b2ce507cf45a21068c48267526-v2",
-      "english": "When the Last Divinity died, the divine shards scattered across all of Heaven and Hell. Fragments of those shards still remain, cackling with latent divine energy.",
-      "french": "À la mort de la dernière divinité, les éclats divins se sont dispersés dans le paradis et l'enfer. Des fragments de ces éclats subsistent encore, crépitant d'une énergie divine latente.",
-      "german": "Als die Letzte Gottheit starb, wurden die göttlichen Scherben über Himmel und Hölle verstreut. Fragmente dieser Scherben gibt es immer noch, die latente göttliche Energie ausstrahlen.",
-      "russian": "После смерти Последнего божества, его осколки разлетелись по всем Аду и Раю. Кусочки этих осколков до сих пор существуют и таят в себе спящую божественную силу.",
-      "portuguese": "Quando a Última Divindade morreu, os fragmentos divinos se espalharam por todo o Céu e o Inferno. Alguns desses fragmentos ainda existem por aí, ressoando com energia divina.",
-      "chinese": "最后的神祇殒没时，神圣碎片飞散到了天堂与地狱的各个角落。这些碎片仍然存于世上，潜伏其中的神圣能量劈啪作响。",
-      "spanish": "Cuando murió la Última Divinidad, los fragmentos divinos se disgregaron por el Cielo y el Infierno. Aún quedan esquirlas de dichos fragmentos que destilan energía divina subrepticia.",
-      "chinese_traditional": "當終焉神性死去時，神聖碎片散布在整個天堂和地獄。那些碎片的碎屑仍然存在，劈啪作響並蘊藏著神聖能量。",
-      "korean": "마지막 신성이 사망했을 때, 신성한 파편들은 천상과 지옥으로 흩어졌다. 그 파편들은 신성한 힘을 여전히 지닌 채, 곳곳에서 기이한 웃음소리를 내며 남아 있다.",
-      "japanese": "最後の神が死んだとき、神力の欠片が天界と地獄のあちこちに散らばった。その欠片は今も残っており、宿した神のエネルギーでカリカリと音を立てている。"
-    }
-  ],
-  "rarity": "uncommon",
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "paramCardUpgradeData": {
-        "id": "Plus5Attack12Health",
-        "guid": "b7bdc31b-a84d-46c6-989f-2268d05788b6",
-        "filters": [
-          {
-            "id": "OnlyUnit",
-            "cardType": "monster"
+      "id": "PyreHeartSon",
+      "name": "Unstable Shard",
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "from_story_event": true
           }
-        ],
-        "isUnique": true,
-        "bonusDamage": 5,
-        "bonusHP": 12
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-eeb779819eb0e784-d16613b2ce507cf45a21068c48267526-v2",
+        "english": "Unstable Shard",
+        "french": "Éclat d'instabilité",
+        "german": "Instabiler Splitter",
+        "russian": "Нестабильный осколок",
+        "portuguese": "Fragmento Instável",
+        "chinese": "不稳定的碎片",
+        "spanish": "Fragmento inestable",
+        "chinese_traditional": "不穩定碎片",
+        "korean": "불안정한 파편",
+        "japanese": "不安定な欠片"
       },
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-1b3df9f5b3c5a072-d16613b2ce507cf45a21068c48267526-v2",
+        "english": "Friendly units get +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "french": "Les alliés gagnent +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+        "german": "Verbündete Einheiten erhalten +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+        "russian": "Союзники получают +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+        "portuguese": "As unidades aliadas recebem +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
+        "chinese": "使所有友方单位获得 +[effect0.upgrade.bonusdamage][attack] 和 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Las unidades aliadas añaden +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "友方單位獲得+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "아군 유닛들이 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "味方ユニットが+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-ae747f070b6d19ff-d16613b2ce507cf45a21068c48267526-v2",
+          "english": "When the Last Divinity died, the divine shards scattered across all of Heaven and Hell. Fragments of those shards still remain, cackling with latent divine energy.",
+          "french": "À la mort de la dernière divinité, les éclats divins se sont dispersés dans le paradis et l'enfer. Des fragments de ces éclats subsistent encore, crépitant d'une énergie divine latente.",
+          "german": "Als die Letzte Gottheit starb, wurden die göttlichen Scherben über Himmel und Hölle verstreut. Fragmente dieser Scherben gibt es immer noch, die latente göttliche Energie ausstrahlen.",
+          "russian": "После смерти Последнего божества, его осколки разлетелись по всем Аду и Раю. Кусочки этих осколков до сих пор существуют и таят в себе спящую божественную силу.",
+          "portuguese": "Quando a Última Divindade morreu, os fragmentos divinos se espalharam por todo o Céu e o Inferno. Alguns desses fragmentos ainda existem por aí, ressoando com energia divina.",
+          "chinese": "最后的神祇殒没时，神圣碎片飞散到了天堂与地狱的各个角落。这些碎片仍然存于世上，潜伏其中的神圣能量劈啪作响。",
+          "spanish": "Cuando murió la Última Divinidad, los fragmentos divinos se disgregaron por el Cielo y el Infierno. Aún quedan esquirlas de dichos fragmentos que destilan energía divina subrepticia.",
+          "chinese_traditional": "當終焉神性死去時，神聖碎片散布在整個天堂和地獄。那些碎片的碎屑仍然存在，劈啪作響並蘊藏著神聖能量。",
+          "korean": "마지막 신성이 사망했을 때, 신성한 파편들은 천상과 지옥으로 흩어졌다. 그 파편들은 신성한 힘을 여전히 지닌 채, 곳곳에서 기이한 웃음소리를 내며 남아 있다.",
+          "japanese": "最後の神が死んだとき、神力の欠片が天界と地獄のあちこちに散らばった。その欠片は今も残っており、宿した神のエネルギーでカリカリと音を立てている。"
+        }
+      ],
+      "relic_effects": [
+        "@PyreHeartSon.effects0"
+      ]
     }
   ],
-  "fromStoryEvent": true
+  "relic_effects": [
+    {
+      "id": "PyreHeartSon.effects0",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_upgrade": "Plus5Attack12Health",
+      "param_source_team": "monsters",
+      "param_bool": true
+    }
+  ]
 }

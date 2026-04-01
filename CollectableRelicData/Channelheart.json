@@ -1,125 +1,133 @@
 {
-  "id": "StingBuffPower",
-  "guid": "0f6d3edc-d212-4e3a-877f-e9eb2ac78339",
-  "name": "Channelheart",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-399b3ee706facd24-2762d7670d1c16b4d825aa1d16bc3888-v2",
-    "english": "Channelheart",
-    "french": "Cœurocculte",
-    "german": "Wildholzherz",
-    "russian": "Сердце заклинателя",
-    "portuguese": "Coração de Canalizador",
-    "chinese": "通灵之心",
-    "spanish": "Corazón canalizador",
-    "chinese_traditional": "引導心臟",
-    "korean": "연결체 심장",
-    "japanese": "チャンネルハート"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-d57d002ceee26afc-2762d7670d1c16b4d825aa1d16bc3888-v2",
-    "english": "<b>Sting</b> spells get +[effect0.upgrade.bonusdamage] [magicpower].",
-    "french": "Les cartes <b>Piqûre</b> gagnent +[effect0.upgrade.bonusdamage] <nobr><b>Puissance magique</b></nobr>.",
-    "german": "<b>Stachel</b>-Zauber erhalten +[effect0.upgrade.bonusdamage] <nobr><b>magische Kraft</b></nobr>.",
-    "russian": "Чары <b>Укола</b> имеют +[effect0.upgrade.bonusdamage] x[magicpower].",
-    "portuguese": "Feitiços de <b>Ferroada</b> recebem +[effect0.upgrade.bonusdamage] <nobr><b>Poder Mágico</b></nobr>.",
-    "chinese": "<b>蛰刺</b>法术获得 +[effect0.upgrade.bonusdamage] <nobr><b>魔法强度</b></nobr>。",
-    "spanish": "Los hechizos de <b>Aguijonazo</b> añaden [magicpower] +[effect0.upgrade.bonusdamage].",
-    "chinese_traditional": "<b>蜇刺</b>法術獲得+[effect0.upgrade.bonusdamage][magicpower]。",
-    "korean": "<b>가시 발사</b> 주문이 +[effect0.upgrade.bonusdamage] [magicpower]을 획득합니다.",
-    "japanese": "<b>刺突</b>呪文が+[effect0.upgrade.bonusdamage] [magicpower]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f11ab16813f34373-2762d7670d1c16b4d825aa1d16bc3888-v2",
-      "english": "Before the Edge Priory became the reclusive group they are now, they would channel their energy into steel lockets that could be worn by their Awoken Hollow protectors, allowing the Hollows to gain more strength at the cost of their longevity.",
-      "french": "Avant que le prieuré de la Marche ne devienne le groupe reclus qu'il est aujourd'hui, ses membres canalisaient leur énergie dans des médaillons en acier que leurs réceptacles protecteurs pouvaient porter, ce qui permettait aux réceptacles de devenir plus forts en sacrifiant leur longévité.",
-      "german": "Bevor die Rand-Priorei zu der zurückgezogenen Gemeinschaft wurde, die sie heute ist, konzentrierte sie ihre Energie in Stahlmedaillons, die ihre erweckten Hüllen-Beschützer trugen. Mit diesen Medaillons wurden die Hüllen zwar weniger langlebig, aber wesentlich stärker.",
-      "russian": "Прежде чем изолироваться от внешнего мира, аббаты Пограничья наполняли волшебством кулоны, которые носили их Пробужденные Пустые защитники, получавшие дополнительную силу в обмен на продолжительность жизни.",
-      "portuguese": "Antes do Priorado da Fronteira se tornar o grupo recluso que é agora, seus integrantes canalizaram sua energia em medalhões de aço a serem usados pelos seus protetores, os Ocos Despertos. Os medalhões permitiam que os Ocos ganhassem mais força em troca de longevidade.",
-      "chinese": "早在隐修会并不是现在这样的隐居团体之前，它们会将自己的力量融入钢铁制成的吊坠内。这种吊坠可以装备在它们的觉者空灵守护者身上，让这些空灵以缩短寿命为代价，获得更强大的力量。",
-      "spanish": "Antes de que el Priorato de la Linde fuese el grupo aislado en el que se ha convertido, canalizaba su energía hacia relicarios de acero que podían llevar sus Despertados huecos defensores para recibir más poder a expensas de su longevidad.",
-      "chinese_traditional": "他們在邊際修道院成為現在這個隱居群體之前，會將能量注入鋼製盒子，供覺醒者空心人佩戴並保護自己，讓空心人能以犧牲壽命為代價獲得更多力量。",
-      "korean": "칼날 수도원이 지금처럼 외부와 교류를 단절하기 전, 이들은 에너지를 강철 목걸이에 주입해 각성자 클랜의 공허한 존재가 자신의 수명을 대가로 더 많은 힘을 얻을 수 있게 해 주었다.",
-      "japanese": "境界の小修道院が今のような隠遁的な集団になる前は、彼らは覚醒者のホロウの守護者が身に着けることのできる鋼鉄のロケットにエネルギーを注ぎ込み、ホロウが寿命を犠牲にしてさらに力を得ることを可能にしていた。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassAwoken",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "additionalTooltips": [
+      "id": "StingBuffPower",
+      "name": "Channelheart",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitMagicPower_TooltipText",
-            "english": "Increases the amount of damage dealt and health restored by spells.",
-            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-            "chinese": "提高法术造成的伤害与恢复的生命值。",
-            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-          },
-          "titleKey": {
-            "key": "CardTraitMagicPower_TooltipTitle",
-            "english": "Magic Power",
-            "french": "Puissance magique",
-            "german": "Magische Kraft",
-            "russian": "Сила магии",
-            "portuguese": "Poder Mágico",
-            "chinese": "魔法强度",
-            "spanish": "Poder mágico",
-            "chinese_traditional": "魔法力量",
-            "korean": "마법력",
-            "japanese": "魔力"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassAwoken",
+            "description_modifiers": [
+              {
+                "id": "StingBuffPower.descriptionModifiers0",
+                "name": "CardPoolCountDescriptionModifier",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-cd2d546939351e7c-2762d7670d1c16b4d825aa1d16bc3888-v2",
+                  "english": "([value] Sting spells)",
+                  "french": "([value] sorts Piqûre)",
+                  "german": "([value] Stachel-Zauber)",
+                  "russian": "([value] чар Укол)",
+                  "portuguese": "([value] feitiços Ferroada)",
+                  "chinese": "([value] 蛰刺法术)",
+                  "spanish": "([value] hechizos Aguijonazo)",
+                  "chinese_traditional": "([value] 蜇刺法術)",
+                  "korean": "([value] 가시 발사 주문)",
+                  "japanese": "([value] 突き刺しの呪文)"
+                },
+                "param_card_pool": "StingOnlyPool"
+              }
+            ]
           }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "StingBuffPower",
-        "guid": "9037e99a-d4cb-43cf-a3dd-e8bf88349be1",
-        "filters": [
-          {
-            "id": "OnlyStings",
-            "cardType": "spell",
-            "allowedCardPools": [
-              "StingOnlyPool"
-            ]
-          }
-        ],
-        "isUnique": true,
-        "bonusDamage": 20
+      "names": {
+        "key": "CollectableRelicData_nameKey-399b3ee706facd24-2762d7670d1c16b4d825aa1d16bc3888-v2",
+        "english": "Channelheart",
+        "french": "Cœurocculte",
+        "german": "Wildholzherz",
+        "russian": "Сердце заклинателя",
+        "portuguese": "Coração de Canalizador",
+        "chinese": "通灵之心",
+        "spanish": "Corazón canalizador",
+        "chinese_traditional": "引導心臟",
+        "korean": "연결체 심장",
+        "japanese": "チャンネルハート"
       },
-      "paramSourceTeam": "monsters"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsNull",
-      "paramCardPool": "StingOnlyPool"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-d57d002ceee26afc-2762d7670d1c16b4d825aa1d16bc3888-v2",
+        "english": "<b>Sting</b> spells get +[effect0.upgrade.bonusdamage] [magicpower].",
+        "french": "Les cartes <b>Piqûre</b> gagnent +[effect0.upgrade.bonusdamage] <nobr><b>Puissance magique</b></nobr>.",
+        "german": "<b>Stachel</b>-Zauber erhalten +[effect0.upgrade.bonusdamage] <nobr><b>magische Kraft</b></nobr>.",
+        "russian": "Чары <b>Укола</b> имеют +[effect0.upgrade.bonusdamage] x[magicpower].",
+        "portuguese": "Feitiços de <b>Ferroada</b> recebem +[effect0.upgrade.bonusdamage] <nobr><b>Poder Mágico</b></nobr>.",
+        "chinese": "<b>蛰刺</b>法术获得 +[effect0.upgrade.bonusdamage] <nobr><b>魔法强度</b></nobr>。",
+        "spanish": "Los hechizos de <b>Aguijonazo</b> añaden [magicpower] +[effect0.upgrade.bonusdamage].",
+        "chinese_traditional": "<b>蜇刺</b>法術獲得+[effect0.upgrade.bonusdamage][magicpower]。",
+        "korean": "<b>가시 발사</b> 주문이 +[effect0.upgrade.bonusdamage] [magicpower]을 획득합니다.",
+        "japanese": "<b>刺突</b>呪文が+[effect0.upgrade.bonusdamage] [magicpower]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f11ab16813f34373-2762d7670d1c16b4d825aa1d16bc3888-v2",
+          "english": "Before the Edge Priory became the reclusive group they are now, they would channel their energy into steel lockets that could be worn by their Awoken Hollow protectors, allowing the Hollows to gain more strength at the cost of their longevity.",
+          "french": "Avant que le prieuré de la Marche ne devienne le groupe reclus qu'il est aujourd'hui, ses membres canalisaient leur énergie dans des médaillons en acier que leurs réceptacles protecteurs pouvaient porter, ce qui permettait aux réceptacles de devenir plus forts en sacrifiant leur longévité.",
+          "german": "Bevor die Rand-Priorei zu der zurückgezogenen Gemeinschaft wurde, die sie heute ist, konzentrierte sie ihre Energie in Stahlmedaillons, die ihre erweckten Hüllen-Beschützer trugen. Mit diesen Medaillons wurden die Hüllen zwar weniger langlebig, aber wesentlich stärker.",
+          "russian": "Прежде чем изолироваться от внешнего мира, аббаты Пограничья наполняли волшебством кулоны, которые носили их Пробужденные Пустые защитники, получавшие дополнительную силу в обмен на продолжительность жизни.",
+          "portuguese": "Antes do Priorado da Fronteira se tornar o grupo recluso que é agora, seus integrantes canalizaram sua energia em medalhões de aço a serem usados pelos seus protetores, os Ocos Despertos. Os medalhões permitiam que os Ocos ganhassem mais força em troca de longevidade.",
+          "chinese": "早在隐修会并不是现在这样的隐居团体之前，它们会将自己的力量融入钢铁制成的吊坠内。这种吊坠可以装备在它们的觉者空灵守护者身上，让这些空灵以缩短寿命为代价，获得更强大的力量。",
+          "spanish": "Antes de que el Priorato de la Linde fuese el grupo aislado en el que se ha convertido, canalizaba su energía hacia relicarios de acero que podían llevar sus Despertados huecos defensores para recibir más poder a expensas de su longevidad.",
+          "chinese_traditional": "他們在邊際修道院成為現在這個隱居群體之前，會將能量注入鋼製盒子，供覺醒者空心人佩戴並保護自己，讓空心人能以犧牲壽命為代價獲得更多力量。",
+          "korean": "칼날 수도원이 지금처럼 외부와 교류를 단절하기 전, 이들은 에너지를 강철 목걸이에 주입해 각성자 클랜의 공허한 존재가 자신의 수명을 대가로 더 많은 힘을 얻을 수 있게 해 주었다.",
+          "japanese": "境界の小修道院が今のような隠遁的な集団になる前は、彼らは覚醒者のホロウの守護者が身に着けることのできる鋼鉄のロケットにエネルギーを注ぎ込み、ホロウが寿命を犠牲にしてさらに力を得ることを可能にしていた。"
+        }
+      ],
+      "relic_effects": [
+        "@StingBuffPower.effects0",
+        "@StingBuffPower.effects1"
+      ]
     }
   ],
-  "descriptionModifiers": [
+  "relic_effects": [
     {
-      "modifierClassName": "CardPoolCountDescriptionModifier",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-cd2d546939351e7c-2762d7670d1c16b4d825aa1d16bc3888-v2",
-        "english": "([value] Sting spells)",
-        "french": "([value] sorts Piqûre)",
-        "german": "([value] Stachel-Zauber)",
-        "russian": "([value] чар Укол)",
-        "portuguese": "([value] feitiços Ferroada)",
-        "chinese": "([value] 蛰刺法术)",
-        "spanish": "([value] hechizos Aguijonazo)",
-        "chinese_traditional": "([value] 蜇刺法術)",
-        "korean": "([value] 가시 발사 주문)",
-        "japanese": "([value] 突き刺しの呪文)"
+      "id": "StingBuffPower.effects0",
+      "name": "RelicEffectAddTempUpgrade",
+      "additional_tooltips": [
+        "@StingBuffPower.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "StingBuffPower",
+      "param_source_team": "monsters"
+    },
+    {
+      "id": "StingBuffPower.effects1",
+      "name": "RelicEffectAddCardsNull",
+      "param_card_pool": "StingOnlyPool"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "StingBuffPower.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
       },
-      "paramCardPool": "StingOnlyPool"
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
+      }
     }
   ]
 }

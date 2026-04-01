@@ -1,109 +1,135 @@
 {
-  "id": "EquipmentBoon_DH",
-  "guid": "394a559b-0c45-4bac-880a-522b04f1780c",
-  "name": "Pyreborne’s Insignia",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-da6785c1cac82268-dcb08e2ef3a95144daf03429ce408a2f-v2",
-    "english": "Pyreborne’s Insignia",
-    "french": "Insigne draconide",
-    "german": "Insignie der Höllenglutkinder",
-    "russian": "Эмблема Пеклорожденных",
-    "portuguese": "Insígnia dos Píricos",
-    "chinese": "薪龙徽记",
-    "spanish": "Insignia de los Hijos de la Pira",
-    "chinese_traditional": "火焰之子勳章",
-    "korean": "화로의 후예의 휘장",
-    "japanese": "火竜族の記章"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-d45c381f9a2a3ff6-dcb08e2ef3a95144daf03429ce408a2f-v2",
-    "english": "When you equip a friendly unit, apply [conduit] [effect0.power].",
-    "french": "Lorsque vous équipez un allié, confère [conduit] [effect0.power].",
-    "german": "Wende beim Ausrüsten einer verbündeten Einheit [conduit] [effect0.power] an.",
-    "russian": "Когда союзник надевает снаряжение, на него накладывается [conduit] х[effect0.power].",
-    "portuguese": "Quando uma unidade aliada é equipada, aplica [conduit] [effect0.power].",
-    "chinese": "当你为友方单位穿戴装备时，使其获得 [conduit] [effect0.power]。",
-    "spanish": "Cuando equipas a una unidad aliada, aplicas [conduit] [effect0.power].",
-    "chinese_traditional": "當你裝備一個友方單位時，施加[conduit][effect0.power]。",
-    "korean": "아군 유닛에 장비를 장착하면 [conduit] [effect0.power] 효과가 적용됩니다.",
-    "japanese": "味方ユニットに装着すると、[conduit] [effect0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-4e35d4af86f235de-dcb08e2ef3a95144daf03429ce408a2f-v2",
-      "english": "“Clients will always remember a great logo.”\n—The Rules of Fhyra, Rule #98",
-      "french": "<nobr>« Les</nobr> clients se souviendront toujours d'un bon <nobr>logo. »</nobr> \n— Les règles de Fhyra, règle n°98",
-      "german": "„Kunden erinnern sich immer an gute Logos.“\n—Fhyras Regeln, Regel 98",
-      "russian": "«Клиенты всегда запоминают хороший логотип». \n— «Правила Фиры», правило 98",
-      "portuguese": "“Os clientes sempre se lembrarão de uma boa logomarca.”\n— As Regras de Fhyra, Regra n.º 98",
-      "chinese": "“好的商标会永远留在客户的记忆里。”\n——《菲拉法则》，条例#98",
-      "spanish": "«Los clientes siempre recordarán un buen logo».\n—Normas de Fhyra, norma 98",
-      "chinese_traditional": "「好看的商標總是能讓客戶印象深刻。」\n—費拉法則，第98條",
-      "korean": "“고객은 언제나 멋진 로고만 기억하는 법이다.”\n- 휘라 율법 98조",
-      "japanese": "「顧客は、必ず素晴らしいロゴを記憶に残す」\n—ファイラの法、98条"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "DragonHoard_DHRelics_RewardPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "EquipmentBoon_DH",
+      "name": "Pyreborne’s Insignia",
+      "pools": [
+        "DragonHoard_DHRelics_RewardPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitMagicPower_TooltipText",
-            "english": "Increases the amount of damage dealt and health restored by spells.",
-            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-            "chinese": "提高法术造成的伤害与恢复的生命值。",
-            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-          },
-          "titleKey": {
-            "key": "CardTraitMagicPower_TooltipTitle",
-            "english": "Magic Power",
-            "french": "Puissance magique",
-            "german": "Magische Kraft",
-            "russian": "Сила магии",
-            "portuguese": "Poder Mágico",
-            "chinese": "魔法强度",
-            "spanish": "Poder mágico",
-            "chinese_traditional": "魔法力量",
-            "korean": "마법력",
-            "japanese": "魔力"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "is_dragons_hoard": true
           }
         }
       ],
-      "triggers": [
+      "names": {
+        "key": "CollectableRelicData_nameKey-da6785c1cac82268-dcb08e2ef3a95144daf03429ce408a2f-v2",
+        "english": "Pyreborne’s Insignia",
+        "french": "Insigne draconide",
+        "german": "Insignie der Höllenglutkinder",
+        "russian": "Эмблема Пеклорожденных",
+        "portuguese": "Insígnia dos Píricos",
+        "chinese": "薪龙徽记",
+        "spanish": "Insignia de los Hijos de la Pira",
+        "chinese_traditional": "火焰之子勳章",
+        "korean": "화로의 후예의 휘장",
+        "japanese": "火竜族の記章"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-d45c381f9a2a3ff6-dcb08e2ef3a95144daf03429ce408a2f-v2",
+        "english": "When you equip a friendly unit, apply [conduit] [effect0.power].",
+        "french": "Lorsque vous équipez un allié, confère [conduit] [effect0.power].",
+        "german": "Wende beim Ausrüsten einer verbündeten Einheit [conduit] [effect0.power] an.",
+        "russian": "Когда союзник надевает снаряжение, на него накладывается [conduit] х[effect0.power].",
+        "portuguese": "Quando uma unidade aliada é equipada, aplica [conduit] [effect0.power].",
+        "chinese": "当你为友方单位穿戴装备时，使其获得 [conduit] [effect0.power]。",
+        "spanish": "Cuando equipas a una unidad aliada, aplicas [conduit] [effect0.power].",
+        "chinese_traditional": "當你裝備一個友方單位時，施加[conduit][effect0.power]。",
+        "korean": "아군 유닛에 장비를 장착하면 [conduit] [effect0.power] 효과가 적용됩니다.",
+        "japanese": "味方ユニットに装着すると、[conduit] [effect0.power]を付与する。"
+      },
+      "lore_tooltips": [
         {
-          "trigger": "on_equipment_added",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramStatusEffects": [
-                {
-                  "statusId": "conduit",
-                  "count": 4
-                }
-              ],
-              "paramBool2": true
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "key": "CollectableRelicData_data-4e35d4af86f235de-dcb08e2ef3a95144daf03429ce408a2f-v2",
+          "english": "“Clients will always remember a great logo.”\n—The Rules of Fhyra, Rule #98",
+          "french": "<nobr>« Les</nobr> clients se souviendront toujours d'un bon <nobr>logo. »</nobr> \n— Les règles de Fhyra, règle n°98",
+          "german": "„Kunden erinnern sich immer an gute Logos.“\n—Fhyras Regeln, Regel 98",
+          "russian": "«Клиенты всегда запоминают хороший логотип». \n— «Правила Фиры», правило 98",
+          "portuguese": "“Os clientes sempre se lembrarão de uma boa logomarca.”\n— As Regras de Fhyra, Regra n.º 98",
+          "chinese": "“好的商标会永远留在客户的记忆里。”\n——《菲拉法则》，条例#98",
+          "spanish": "«Los clientes siempre recordarán un buen logo».\n—Normas de Fhyra, norma 98",
+          "chinese_traditional": "「好看的商標總是能讓客戶印象深刻。」\n—費拉法則，第98條",
+          "korean": "“고객은 언제나 멋진 로고만 기억하는 법이다.”\n- 휘라 율법 98조",
+          "japanese": "「顧客は、必ず素晴らしいロゴを記憶に残す」\n—ファイラの法、98条"
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      "relic_effects": [
+        "@EquipmentBoon_DH.effects0"
+      ]
     }
   ],
-  "isDragonsHoardRelic": true
+  "relic_effects": [
+    {
+      "id": "EquipmentBoon_DH.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@EquipmentBoon_DH.effects0.additionalTooltips0"
+      ],
+      "triggers": [
+        "@EquipmentBoon_DH.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "EquipmentBoon_DH.effects0.triggers0",
+      "trigger": "on_equipment_added",
+      "effects": [
+        "@EquipmentBoon_DH.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "EquipmentBoon_DH.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 4
+        }
+      ],
+      "param_bool_2": true
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "EquipmentBoon_DH.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
+      }
+    }
+  ]
 }

@@ -1,110 +1,134 @@
 {
-  "id": "OnDecayDeathApplyStatusEffects",
-  "guid": "d916bcc3-85ff-49ee-937d-32d7253a4e4d",
-  "name": "World-ending Strain",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-f5ab8e25416f7a27-5c2d9e2de63091e4daf8eb4aa3c40e4c-v2",
-    "english": "World-ending Strain",
-    "french": "Souche apocalyptique",
-    "german": "Weltuntergangsstamm",
-    "russian": "Уничтожитель мира",
-    "portuguese": "Cepa Destrói-Mundos",
-    "chinese": "终末菌株",
-    "spanish": "Cepa cataclísmica",
-    "chinese_traditional": "終結世界的菌株",
-    "korean": "세계 종말의 봉인",
-    "japanese": "終世の菌株"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-7c941608b2723896-5c2d9e2de63091e4daf8eb4aa3c40e4c-v2",
-    "english": "When a unit dies to [decay], their [decay] is spread among enemy units.",
-    "french": "Lorsqu'une unité meurt à cause de [decay], infligez ses [debuff] à un ennemi aléatoire.",
-    "german": "Wenn eine Einheit durch [decay] stirbt, erhält eine andere zufällige gegnerische Einheit ihre [debuff]-Statuseffekte.",
-    "russian": "Когда бойца убивает [decay], его [decay] распределяется врагам.",
-    "portuguese": "Quando uma unidade morre para [decay], aplica seus efeitos de status de [debuff] a outra unidade inimiga aleatória.",
-    "chinese": "当一个单位死于 [decay] 时，其 [decay] 会传播给其他敌方单位。",
-    "spanish": "Cuando una unidad muere por [decay], añade sus efectos de estado de [debuff] a otra unidad enemiga aleatoria.",
-    "chinese_traditional": "當一個單位死於[decay]時，將對方的[debuff]狀態效果施加給另一個隨機敵方單位。",
-    "korean": "유닛이 [decay]로 인해 사망하면, 해당 유닛의 [decay] 효과를 무작위 적 유닛 하나에게 적용합니다.",
-    "japanese": "ユニットが[decay]で死亡すると、その時点の[debuff]ステータス効果を別のランダムな敵ユニットに付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-6d00609533849b25-5c2d9e2de63091e4daf8eb4aa3c40e4c-v2",
-      "english": "“We locked the Great Decay away and buried it beneath the roots of what was once the Creation Elm. May it never open or we are all doomed.”\n—The Archives of the Great Decay",
-      "french": "<nobr>« Nous</nobr> avons enfermé le Grand Pourrissement et l'avons enterré sous les racines de ce qui était jadis l'Orme de la Création. Puisse-t-il ne jamais s'ouvrir, sinon nous sommes tous <nobr>condamnés. »</nobr> \n— Les Archives du Grand Pourrissement",
-      "german": "„Wir haben den Großen Zerfall verbannt und unter den Wurzeln der früheren Schöpfungsulme begraben. Möge er nie wieder auftauchen. Wir wären alle verloren.“\n—Die Archive des Großen Zerfalls",
-      "russian": "«Мы заперли Великое разложение и захоронили его под корнями того, что осталось от Вяза Созидания. Пусть оно никогда не откроется вновь, иначе мы все обречены».\n— Архивы Великого Разложения",
-      "portuguese": "“Nós trancamos a Grande Decadência e a enterramos sob as raízes do que antes era o Ulmeiro da Criação. Que ela nunca se abra, ou estaremos todos condenados.”\n— Arquivos da Grande Decadência",
-      "chinese": "“我们将大腐朽锁了起来，埋在曾是造物榆树的根下。但愿它永远不会被打开，不然我们都将万劫不复。”\n——《大腐朽纪事》",
-      "spanish": "«Sellamos la Gran Descomposición y la enterramos bajo las raíces de lo que fue el Olmo de la Creación. Que nunca escape o estaremos condenados».\n—Archivos de la Gran Descomposición",
-      "chinese_traditional": "「我們將大腐壞鎖起來，埋在曾經是創造榆樹的根部之下。願它永不開啟，否則我們都註定滅亡。」\n——大腐壞紀實",
-      "korean": "“우리는 위대한 부패를 가두어 창조의 느릅나무가 뿌리를 내렸던 곳에 묻었다. 이것이 다시 열리지 않기를 바란다. 그렇지 않으면 우리가 파멸할 것이다.”\n- 위대한 부패의 기록",
-      "japanese": "「私たちは偉大なる枯死を封印し、かつて創造の樹だった根の下に埋めた。それが開くようなことがあれば、我々はすべて破滅する。」\n—偉大なる枯死の記録"
-    }
-  ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddEffectOnUnitDeath",
-      "paramCardEffects": [
-        {
-          "effectStateName": "CardEffectTransferAllStatusEffectsFromUnit",
-          "targetMode": "self",
-          "targetTeamType": "both",
-          "paramStatusEffects": [
-            {
-              "statusId": "decay",
-              "count": 0
-            }
-          ],
-          "paramInt": 11,
-          "additionalParamInt": 1,
-          "paramBool2": true
-        }
+      "id": "OnDecayDeathApplyStatusEffects",
+      "name": "World-ending Strain",
+      "pools": [
+        "MegaRelicPool"
       ],
-      "additionalTooltips": [
+      "type": "collectable",
+      "extensions": [
         {
-          "statusId": "decay",
-          "style": "default",
-          "isStatusTooltip": true
-        },
-        {
-          "descriptionKey": {
-            "key": "CardEffectDebuff_TooltipText",
-            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
-            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
-            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
-            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
-            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
-            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
-            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
-            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
-            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
-            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectDebuff_TooltipTitle",
-            "english": "Debuff",
-            "french": "Malus",
-            "german": "Debuff",
-            "russian": "Ослабление",
-            "portuguese": "Debuff",
-            "chinese": "减益",
-            "spanish": "Debilitación",
-            "chinese_traditional": "減益",
-            "korean": "디버프",
-            "japanese": "デバフ"
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassUnderlegion",
+            "unlock_level": 3
           }
         }
       ],
-      "paramSourceTeam": "both",
-      "paramInt": 8
+      "names": {
+        "key": "CollectableRelicData_nameKey-f5ab8e25416f7a27-5c2d9e2de63091e4daf8eb4aa3c40e4c-v2",
+        "english": "World-ending Strain",
+        "french": "Souche apocalyptique",
+        "german": "Weltuntergangsstamm",
+        "russian": "Уничтожитель мира",
+        "portuguese": "Cepa Destrói-Mundos",
+        "chinese": "终末菌株",
+        "spanish": "Cepa cataclísmica",
+        "chinese_traditional": "終結世界的菌株",
+        "korean": "세계 종말의 봉인",
+        "japanese": "終世の菌株"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-7c941608b2723896-5c2d9e2de63091e4daf8eb4aa3c40e4c-v2",
+        "english": "When a unit dies to [decay], their [decay] is spread among enemy units.",
+        "french": "Lorsqu'une unité meurt à cause de [decay], infligez ses [debuff] à un ennemi aléatoire.",
+        "german": "Wenn eine Einheit durch [decay] stirbt, erhält eine andere zufällige gegnerische Einheit ihre [debuff]-Statuseffekte.",
+        "russian": "Когда бойца убивает [decay], его [decay] распределяется врагам.",
+        "portuguese": "Quando uma unidade morre para [decay], aplica seus efeitos de status de [debuff] a outra unidade inimiga aleatória.",
+        "chinese": "当一个单位死于 [decay] 时，其 [decay] 会传播给其他敌方单位。",
+        "spanish": "Cuando una unidad muere por [decay], añade sus efectos de estado de [debuff] a otra unidad enemiga aleatoria.",
+        "chinese_traditional": "當一個單位死於[decay]時，將對方的[debuff]狀態效果施加給另一個隨機敵方單位。",
+        "korean": "유닛이 [decay]로 인해 사망하면, 해당 유닛의 [decay] 효과를 무작위 적 유닛 하나에게 적용합니다.",
+        "japanese": "ユニットが[decay]で死亡すると、その時点の[debuff]ステータス効果を別のランダムな敵ユニットに付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-6d00609533849b25-5c2d9e2de63091e4daf8eb4aa3c40e4c-v2",
+          "english": "“We locked the Great Decay away and buried it beneath the roots of what was once the Creation Elm. May it never open or we are all doomed.”\n—The Archives of the Great Decay",
+          "french": "<nobr>« Nous</nobr> avons enfermé le Grand Pourrissement et l'avons enterré sous les racines de ce qui était jadis l'Orme de la Création. Puisse-t-il ne jamais s'ouvrir, sinon nous sommes tous <nobr>condamnés. »</nobr> \n— Les Archives du Grand Pourrissement",
+          "german": "„Wir haben den Großen Zerfall verbannt und unter den Wurzeln der früheren Schöpfungsulme begraben. Möge er nie wieder auftauchen. Wir wären alle verloren.“\n—Die Archive des Großen Zerfalls",
+          "russian": "«Мы заперли Великое разложение и захоронили его под корнями того, что осталось от Вяза Созидания. Пусть оно никогда не откроется вновь, иначе мы все обречены».\n— Архивы Великого Разложения",
+          "portuguese": "“Nós trancamos a Grande Decadência e a enterramos sob as raízes do que antes era o Ulmeiro da Criação. Que ela nunca se abra, ou estaremos todos condenados.”\n— Arquivos da Grande Decadência",
+          "chinese": "“我们将大腐朽锁了起来，埋在曾是造物榆树的根下。但愿它永远不会被打开，不然我们都将万劫不复。”\n——《大腐朽纪事》",
+          "spanish": "«Sellamos la Gran Descomposición y la enterramos bajo las raíces de lo que fue el Olmo de la Creación. Que nunca escape o estaremos condenados».\n—Archivos de la Gran Descomposición",
+          "chinese_traditional": "「我們將大腐壞鎖起來，埋在曾經是創造榆樹的根部之下。願它永不開啟，否則我們都註定滅亡。」\n——大腐壞紀實",
+          "korean": "“우리는 위대한 부패를 가두어 창조의 느릅나무가 뿌리를 내렸던 곳에 묻었다. 이것이 다시 열리지 않기를 바란다. 그렇지 않으면 우리가 파멸할 것이다.”\n- 위대한 부패의 기록",
+          "japanese": "「私たちは偉大なる枯死を封印し、かつて創造の樹だった根の下に埋めた。それが開くようなことがあれば、我々はすべて破滅する。」\n—偉大なる枯死の記録"
+        }
+      ],
+      "relic_effects": [
+        "@OnDecayDeathApplyStatusEffects.effects0"
+      ]
     }
   ],
-  "unlockLevel": 3
+  "relic_effects": [
+    {
+      "id": "OnDecayDeathApplyStatusEffects.effects0",
+      "name": "RelicEffectAddEffectOnUnitDeath",
+      "param_effects": [
+        "@OnDecayDeathApplyStatusEffects.effects0.paramCardEffects0"
+      ],
+      "additional_tooltips": [
+        "@OnDecayDeathApplyStatusEffects.effects0.additionalTooltips0",
+        "@OnDecayDeathApplyStatusEffects.effects0.additionalTooltips1"
+      ],
+      "param_source_team": "both",
+      "param_int": 8
+    }
+  ],
+  "effects": [
+    {
+      "id": "OnDecayDeathApplyStatusEffects.effects0.paramCardEffects0",
+      "name": "CardEffectTransferAllStatusEffectsFromUnit",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "decay",
+          "count": 0
+        }
+      ],
+      "param_int": 11,
+      "param_int_2": 1,
+      "param_bool_2": true
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "isStatusTooltip": true,
+      "id": "OnDecayDeathApplyStatusEffects.effects0.additionalTooltips0",
+      "status": "decay",
+      "style": "default"
+    },
+    {
+      "id": "OnDecayDeathApplyStatusEffects.effects0.additionalTooltips1",
+      "descriptions": {
+        "key": "CardEffectDebuff_TooltipText",
+        "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+        "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+        "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+        "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+        "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+        "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+        "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+        "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+        "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+        "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectDebuff_TooltipTitle",
+        "english": "Debuff",
+        "french": "Malus",
+        "german": "Debuff",
+        "russian": "Ослабление",
+        "portuguese": "Debuff",
+        "chinese": "减益",
+        "spanish": "Debilitación",
+        "chinese_traditional": "減益",
+        "korean": "디버프",
+        "japanese": "デバフ"
+      }
+    }
+  ]
 }

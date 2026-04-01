@@ -1,88 +1,107 @@
 {
-  "id": "DrawOnCorruption",
-  "guid": "9427e610-0c7b-4430-ab1f-c84049097168",
-  "name": "Dun Echo",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-f580a9289ed68fe5-68edc206d91086a4ea45567099d15275-v2",
-    "english": "Dun Echo",
-    "french": "Écho atone",
-    "german": "Dunkles Echo",
-    "russian": "Мрачное эхо",
-    "portuguese": "Eco Nulo",
-    "chinese": "灰色回响",
-    "spanish": "Eco parduzco",
-    "chinese_traditional": "黯淡迴響",
-    "korean": "흙빛 메아리",
-    "japanese": "くすんだエコー"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-cc336caba94bec86-68edc206d91086a4ea45567099d15275-v2",
-    "english": "One additional card in each draft pack will be [infused].",
-    "french": "Une carte supplémentaire dans chaque pack de tirage aura [infused].",
-    "german": "Eine zusätzliche Karte in jedem Wahl-Pack hat [infused].",
-    "russian": "В каждом драфте будет дополнительная карта со свойством «[infused]».",
-    "portuguese": "Uma carta adicional em cada pacote de escolha será <b>Infundida</b>.",
-    "chinese": "每次自选卡牌时，会有额外一张卡牌获得[infused]。",
-    "spanish": "Una carta más de cada sobre estará [infused].",
-    "chinese_traditional": "每個構築卡包中的一張額外卡牌將為[infused]。",
-    "korean": "각 선택 팩마다 [infused] 카드가 1장 추가로 포함됩니다.",
-    "japanese": "各ドラフトパックで[infused]属性になるカードが1枚追加される。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-98e28052bce4fcaf-68edc206d91086a4ea45567099d15275-v2",
-      "english": "An Echo with no knowledge is just another piece of rock. At least, that’s what the Wurmkin would have you believe. The way they toss around empty Echoes, their knowledge retrieved, makes me wonder if their so-called reverence for knowledge has been emphasized for their own egos.",
-      "french": "Un écho dénué de connaissances n'est qu'une pierre ordinaire. C'est du moins ce que le peuple ver veut faire croire. La manière dont il se débarrasse des échos vidés de leurs connaissances me rend <nobr>perplexe :</nobr> et si sa <nobr>« vénération »</nobr> pour les connaissances était exagérée dans le but de servir ses propres <nobr>intérêts ?</nobr>",
-      "german": "Ein Echo, das keinerlei Wissen enthält, ist ein Stein wie jeder andere auch. Zumindest könnte man dies glauben, wenn man die Wurmlinge beobachtet. Die Art, wie sie mit leeren Echos umgehen, sobald sie ihnen ihr Wissen entnommen haben, wirft die Frage auf, ob sie das Wissen wirklich so sehr verehren, wie sie sich selbst zum Schutze ihres eigenen Egos einreden.",
-      "russian": "Эхо без знаний — всего лишь кусок камня. Во всяком случае, так уверяют Драконы. Глядя, как они кидаются пустыми, лишенными знаний эхо, я начинаю думать, что драконье уважение к знанию может быть преувеличено ради их же собственного эго.",
-      "portuguese": "Um Eco sem conhecimento não passa de mais um pedaço de rocha. Pelo menos, é isso que os Vormoides querem que você acredite. A maneira como eles descartam Ecos vazios, cujo conhecimento foi recuperado, me faz pensar que a tal reverência deles pelo conhecimento foi enfatizada para inflar seus próprios egos.",
-      "chinese": "没有知识的回响水晶和普通石头无异。至少虫裔就想让你这么认为。看到他们把取走知识后的空回响水晶扔来扔去的样子，我不禁琢磨他们是不是为了自己的体面而过分夸大了他们对知识的尊崇。",
-      "spanish": "Un eco sin conocimiento no es más que una roca. Al menos, eso es lo que las Sierpes quieren que creamos. Por la forma en que se deshacen de los ecos vacíos tras recuperar su saber, me pregunto si su supuesta adoración por la sabiduría no se habrá enfatizado para satisfacer su ego.",
-      "chinese_traditional": "沒有知識的迴響，不過是塊石頭。至少，沃姆金會讓你這麼認為。他們隨意丟棄知識被汲取後的空迴響，讓我不禁懷疑，他們那所謂對知識的崇敬，不過是為了滿足自身的傲慢罷了。",
-      "korean": "지식이 없는 메아리는 그냥 또 하나의 돌덩이에 불과하다. 적어도 웜킨은 그렇게 말하고 싶어 한다. 그들은 지식을 회수한 빈 메아리를 아무렇게나 던져두는데, 그런 모습을 보면 그들이 말하는 지식에 대한 경외란, 사실 자신의 자부심을 치장하기 위한 과장이었나 하는 생각이 든다.",
-      "japanese": "知識の含まれていないエコーはその辺の岩と変わらない。少なくとも、ワームキンはそのように主張している。彼らが知識が回収された空っぽのエコーを雑に扱う様は、いわゆる知識への敬意が自尊心によって強調されたものなのではないかと考えてしまう。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassWurm",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectChangeNumCardsToApplyRandomDraftEnhancerTo",
-      "additionalTooltips": [
+      "id": "DrawOnCorruption",
+      "name": "Dun Echo",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitCorruptState_TooltipText",
-            "english": "When played, the current floor will gain 1[corrupt].",
-            "french": "Quand vous jouez cette carte, le niveau actuel gagne 1[corrupt].",
-            "german": "Füllt 1[corrupt] auf der jeweiligen Ebene, wenn die Karte gespielt wird.",
-            "russian": "При розыгрыше текущий на текущем этаже появится 1[corrupt].",
-            "portuguese": "Quando jogada, o andar atual receberá 1[corrupt].",
-            "chinese": "打出后，本层将获得 1[corrupt]。",
-            "spanish": "Al jugarla, el piso añade 1[corrupt].",
-            "chinese_traditional": "出牌時，目前樓層將獲得1[corrupt]。",
-            "korean": "카드를 사용하면 현재 층에 1[corrupt]이 증가합니다.",
-            "japanese": "プレイ時、現在のフロアが1の[corrupt]を得る。"
-          },
-          "titleKey": {
-            "key": "CardTraitCorruptState_CardText",
-            "english": "[infused]",
-            "french": "<b>Imprégnation</b>",
-            "german": "<b>Beseelung</b>",
-            "russian": "[infused]",
-            "portuguese": "<b>Infundido</b>",
-            "chinese": "[infused]",
-            "spanish": "[infused]",
-            "chinese_traditional": "[infused]",
-            "korean": "[infused]",
-            "japanese": "[infused]"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassWurm",
+            "unlock_level": 2
           }
         }
       ],
-      "paramInt": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-f580a9289ed68fe5-68edc206d91086a4ea45567099d15275-v2",
+        "english": "Dun Echo",
+        "french": "Écho atone",
+        "german": "Dunkles Echo",
+        "russian": "Мрачное эхо",
+        "portuguese": "Eco Nulo",
+        "chinese": "灰色回响",
+        "spanish": "Eco parduzco",
+        "chinese_traditional": "黯淡迴響",
+        "korean": "흙빛 메아리",
+        "japanese": "くすんだエコー"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-cc336caba94bec86-68edc206d91086a4ea45567099d15275-v2",
+        "english": "One additional card in each draft pack will be [infused].",
+        "french": "Une carte supplémentaire dans chaque pack de tirage aura [infused].",
+        "german": "Eine zusätzliche Karte in jedem Wahl-Pack hat [infused].",
+        "russian": "В каждом драфте будет дополнительная карта со свойством «[infused]».",
+        "portuguese": "Uma carta adicional em cada pacote de escolha será <b>Infundida</b>.",
+        "chinese": "每次自选卡牌时，会有额外一张卡牌获得[infused]。",
+        "spanish": "Una carta más de cada sobre estará [infused].",
+        "chinese_traditional": "每個構築卡包中的一張額外卡牌將為[infused]。",
+        "korean": "각 선택 팩마다 [infused] 카드가 1장 추가로 포함됩니다.",
+        "japanese": "各ドラフトパックで[infused]属性になるカードが1枚追加される。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-98e28052bce4fcaf-68edc206d91086a4ea45567099d15275-v2",
+          "english": "An Echo with no knowledge is just another piece of rock. At least, that’s what the Wurmkin would have you believe. The way they toss around empty Echoes, their knowledge retrieved, makes me wonder if their so-called reverence for knowledge has been emphasized for their own egos.",
+          "french": "Un écho dénué de connaissances n'est qu'une pierre ordinaire. C'est du moins ce que le peuple ver veut faire croire. La manière dont il se débarrasse des échos vidés de leurs connaissances me rend <nobr>perplexe :</nobr> et si sa <nobr>« vénération »</nobr> pour les connaissances était exagérée dans le but de servir ses propres <nobr>intérêts ?</nobr>",
+          "german": "Ein Echo, das keinerlei Wissen enthält, ist ein Stein wie jeder andere auch. Zumindest könnte man dies glauben, wenn man die Wurmlinge beobachtet. Die Art, wie sie mit leeren Echos umgehen, sobald sie ihnen ihr Wissen entnommen haben, wirft die Frage auf, ob sie das Wissen wirklich so sehr verehren, wie sie sich selbst zum Schutze ihres eigenen Egos einreden.",
+          "russian": "Эхо без знаний — всего лишь кусок камня. Во всяком случае, так уверяют Драконы. Глядя, как они кидаются пустыми, лишенными знаний эхо, я начинаю думать, что драконье уважение к знанию может быть преувеличено ради их же собственного эго.",
+          "portuguese": "Um Eco sem conhecimento não passa de mais um pedaço de rocha. Pelo menos, é isso que os Vormoides querem que você acredite. A maneira como eles descartam Ecos vazios, cujo conhecimento foi recuperado, me faz pensar que a tal reverência deles pelo conhecimento foi enfatizada para inflar seus próprios egos.",
+          "chinese": "没有知识的回响水晶和普通石头无异。至少虫裔就想让你这么认为。看到他们把取走知识后的空回响水晶扔来扔去的样子，我不禁琢磨他们是不是为了自己的体面而过分夸大了他们对知识的尊崇。",
+          "spanish": "Un eco sin conocimiento no es más que una roca. Al menos, eso es lo que las Sierpes quieren que creamos. Por la forma en que se deshacen de los ecos vacíos tras recuperar su saber, me pregunto si su supuesta adoración por la sabiduría no se habrá enfatizado para satisfacer su ego.",
+          "chinese_traditional": "沒有知識的迴響，不過是塊石頭。至少，沃姆金會讓你這麼認為。他們隨意丟棄知識被汲取後的空迴響，讓我不禁懷疑，他們那所謂對知識的崇敬，不過是為了滿足自身的傲慢罷了。",
+          "korean": "지식이 없는 메아리는 그냥 또 하나의 돌덩이에 불과하다. 적어도 웜킨은 그렇게 말하고 싶어 한다. 그들은 지식을 회수한 빈 메아리를 아무렇게나 던져두는데, 그런 모습을 보면 그들이 말하는 지식에 대한 경외란, 사실 자신의 자부심을 치장하기 위한 과장이었나 하는 생각이 든다.",
+          "japanese": "知識の含まれていないエコーはその辺の岩と変わらない。少なくとも、ワームキンはそのように主張している。彼らが知識が回収された空っぽのエコーを雑に扱う様は、いわゆる知識への敬意が自尊心によって強調されたものなのではないかと考えてしまう。"
+        }
+      ],
+      "relic_effects": [
+        "@DrawOnCorruption.effects0"
+      ]
     }
   ],
-  "unlockLevel": 2
+  "relic_effects": [
+    {
+      "id": "DrawOnCorruption.effects0",
+      "name": "RelicEffectChangeNumCardsToApplyRandomDraftEnhancerTo",
+      "additional_tooltips": [
+        "@DrawOnCorruption.effects0.additionalTooltips0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "DrawOnCorruption.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitCorruptState_TooltipText",
+        "english": "When played, the current floor will gain 1[corrupt].",
+        "french": "Quand vous jouez cette carte, le niveau actuel gagne 1[corrupt].",
+        "german": "Füllt 1[corrupt] auf der jeweiligen Ebene, wenn die Karte gespielt wird.",
+        "russian": "При розыгрыше текущий на текущем этаже появится 1[corrupt].",
+        "portuguese": "Quando jogada, o andar atual receberá 1[corrupt].",
+        "chinese": "打出后，本层将获得 1[corrupt]。",
+        "spanish": "Al jugarla, el piso añade 1[corrupt].",
+        "chinese_traditional": "出牌時，目前樓層將獲得1[corrupt]。",
+        "korean": "카드를 사용하면 현재 층에 1[corrupt]이 증가합니다.",
+        "japanese": "プレイ時、現在のフロアが1の[corrupt]を得る。"
+      },
+      "titles": {
+        "key": "CardTraitCorruptState_CardText",
+        "english": "[infused]",
+        "french": "<b>Imprégnation</b>",
+        "german": "<b>Beseelung</b>",
+        "russian": "[infused]",
+        "portuguese": "<b>Infundido</b>",
+        "chinese": "[infused]",
+        "spanish": "[infused]",
+        "chinese_traditional": "[infused]",
+        "korean": "[infused]",
+        "japanese": "[infused]"
+      }
+    }
+  ]
 }

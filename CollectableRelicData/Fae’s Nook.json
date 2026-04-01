@@ -1,102 +1,120 @@
 {
-  "id": "MooncycleFaeAddMagicPower",
-  "guid": "8b20402a-100b-4f26-8cb5-47bed13cde3d",
-  "name": "Fae’s Nook",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-160bdc042e081156-67d74b03e56d28e4995574c7d78383f9-v2",
-    "english": "Fae’s Nook",
-    "french": "Antre de la Fée",
-    "german": "Feenwinkel",
-    "russian": "Убежище феи",
-    "portuguese": "Recanto de Fae",
-    "chinese": "妖精的隐匿处",
-    "spanish": "Alijo feérico",
-    "chinese_traditional": "仙子角落",
-    "korean": "요정의 피난처",
-    "japanese": "妖精の部屋"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-a4171d42e9a781fc-67d74b03e56d28e4995574c7d78383f9-v2",
-    "english": "Fae gain [conduit] [effect0.effect1.status0.power] and +[effect0.effect0.upgrade.bonusdamage][attack] on [mooncycle].",
-    "french": "Les Fées gagnent [conduit] [effect0.effect1.status0.power] et +[effect0.upgrade.bonusdamage][attack] lors du [mooncycle].",
-    "german": "Feen erhalten [conduit] [effect0.effect1.status0.power] und +[effect0.effect0.upgrade.bonusdamage][attack] im [mooncycle].",
-    "russian": "Каждый [mooncycle] Феям дается [conduit] х[effect0.effect1.status0.power] и +[effect0.effect0.upgrade.bonusdamage][attack].",
-    "portuguese": "Os fae recebem [conduit] [effect0.effect1.status0.power] e +[effect0.effect0.upgrade.bonusdamage][attack] durante o [mooncycle].",
-    "chinese": "在 [mooncycle] 时，妖精获得 [conduit] [effect0.effect1.status0.power]和 +[effect0.effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Las hadas añaden [conduit] [effect0.effect1.status0.power] y +[effect0.effect0.upgrade.bonusdamage][attack] durante el [mooncycle].",
-    "chinese_traditional": "仙子在[mooncycle]時獲得[conduit][effect0.effect1.status0.power]和+[effect0.effect0.upgrade.bonusdamage][attack]。",
-    "korean": "[mooncycle] 시, 요정이 [conduit] [effect0.effect1.status0.power] 및 +[effect0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
-    "japanese": "妖精が[mooncycle]時に[conduit] [effect0.effect1.status0.power]と+[effect0.effect0.upgrade.bonusdamage][attack]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-e753d29fcd3e6e55-67d74b03e56d28e4995574c7d78383f9-v2",
-      "english": "“Psst! Can you pass me some stardust treats? We’re running low in here!”",
-      "french": "<nobr>« Psst !</nobr> Tu peux me passer quelques friandises <nobr>stellaires ?</nobr> On n'en a plus beaucoup <nobr>ici ! »</nobr>",
-      "german": "„Psst! Hast du ein paar Sternenstaub-Leckereien für mich? Wir haben fast keine mehr!“",
-      "russian": "«Эй! У тебя не найдется еще немного десерта из звездной пыли? У нас тут мало осталось!»",
-      "portuguese": "“Psiu! Você pode me arrumar umas guloseimas de Poeira Estelar? Estamos ficando sem nada aqui!”",
-      "chinese": "“嘶！能给我递一点星尘点心吗？我们这儿快要吃光了！”",
-      "spanish": "«¡Psst! ¿Tienes algún dulce de polvo estelar? ¡Casi no nos quedan!».",
-      "chinese_traditional": "「噓！你能給我一些星塵點心嗎？我們這裡快沒有了！」",
-      "korean": "“쉿! 별가루 간식 좀 줄래? 여기는 다 떨어졌거든!”",
-      "japanese": "「ねえ！スターダストのお菓子をくれない？もうほとんどなくなっちゃってるの！」"
+      "id": "MooncycleFaeAddMagicPower",
+      "name": "Fae’s Nook",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassLunaCoven",
+            "description_modifiers": [
+              {
+                "id": "MooncycleFaeAddMagicPower.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-1558642f1b4ff840-67d74b03e56d28e4995574c7d78383f9-v2",
+                  "english": "([value] Fae)",
+                  "french": "([value] Fée)",
+                  "german": "([value] Fee)",
+                  "russian": "([value] Фея)",
+                  "portuguese": "([value] Fae)",
+                  "chinese": "([value] 妖精)",
+                  "spanish": "([value] Hada)",
+                  "chinese_traditional": "([value] 仙子)",
+                  "korean": "([value] 요정)",
+                  "japanese": "([value] 妖精)"
+                },
+                "param_subtype": "SubtypesData_Fae"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-160bdc042e081156-67d74b03e56d28e4995574c7d78383f9-v2",
+        "english": "Fae’s Nook",
+        "french": "Antre de la Fée",
+        "german": "Feenwinkel",
+        "russian": "Убежище феи",
+        "portuguese": "Recanto de Fae",
+        "chinese": "妖精的隐匿处",
+        "spanish": "Alijo feérico",
+        "chinese_traditional": "仙子角落",
+        "korean": "요정의 피난처",
+        "japanese": "妖精の部屋"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-a4171d42e9a781fc-67d74b03e56d28e4995574c7d78383f9-v2",
+        "english": "Fae gain [conduit] [effect0.effect1.status0.power] and +[effect0.effect0.upgrade.bonusdamage][attack] on [mooncycle].",
+        "french": "Les Fées gagnent [conduit] [effect0.effect1.status0.power] et +[effect0.upgrade.bonusdamage][attack] lors du [mooncycle].",
+        "german": "Feen erhalten [conduit] [effect0.effect1.status0.power] und +[effect0.effect0.upgrade.bonusdamage][attack] im [mooncycle].",
+        "russian": "Каждый [mooncycle] Феям дается [conduit] х[effect0.effect1.status0.power] и +[effect0.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Os fae recebem [conduit] [effect0.effect1.status0.power] e +[effect0.effect0.upgrade.bonusdamage][attack] durante o [mooncycle].",
+        "chinese": "在 [mooncycle] 时，妖精获得 [conduit] [effect0.effect1.status0.power]和 +[effect0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Las hadas añaden [conduit] [effect0.effect1.status0.power] y +[effect0.effect0.upgrade.bonusdamage][attack] durante el [mooncycle].",
+        "chinese_traditional": "仙子在[mooncycle]時獲得[conduit][effect0.effect1.status0.power]和+[effect0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[mooncycle] 시, 요정이 [conduit] [effect0.effect1.status0.power] 및 +[effect0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "妖精が[mooncycle]時に[conduit] [effect0.effect1.status0.power]と+[effect0.effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-e753d29fcd3e6e55-67d74b03e56d28e4995574c7d78383f9-v2",
+          "english": "“Psst! Can you pass me some stardust treats? We’re running low in here!”",
+          "french": "<nobr>« Psst !</nobr> Tu peux me passer quelques friandises <nobr>stellaires ?</nobr> On n'en a plus beaucoup <nobr>ici ! »</nobr>",
+          "german": "„Psst! Hast du ein paar Sternenstaub-Leckereien für mich? Wir haben fast keine mehr!“",
+          "russian": "«Эй! У тебя не найдется еще немного десерта из звездной пыли? У нас тут мало осталось!»",
+          "portuguese": "“Psiu! Você pode me arrumar umas guloseimas de Poeira Estelar? Estamos ficando sem nada aqui!”",
+          "chinese": "“嘶！能给我递一点星尘点心吗？我们这儿快要吃光了！”",
+          "spanish": "«¡Psst! ¿Tienes algún dulce de polvo estelar? ¡Casi no nos quedan!».",
+          "chinese_traditional": "「噓！你能給我一些星塵點心嗎？我們這裡快沒有了！」",
+          "korean": "“쉿! 별가루 간식 좀 줄래? 여기는 다 떨어졌거든!”",
+          "japanese": "「ねえ！スターダストのお菓子をくれない？もうほとんどなくなっちゃってるの！」"
+        }
+      ],
+      "relic_effects": [
+        "@MooncycleFaeAddMagicPower.effects0"
+      ]
     }
   ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "MooncycleFaeAddMagicPower.effects0",
+      "name": "RelicEffectAddEffectOnMooncycle",
+      "param_effects": [
+        "@MooncycleFaeAddMagicPower.effects0.paramCardEffects0",
+        "@MooncycleFaeAddMagicPower.effects0.paramCardEffects1"
+      ],
+      "param_int": 1
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddEffectOnMooncycle",
-      "paramCardEffects": [
-        {
-          "effectStateName": "CardEffectAddTempCardUpgradeToUnits",
-          "targetMode": "room",
-          "targetTeamType": "monsters",
-          "targetCharacterSubtype": "SubtypesData_Fae",
-          "paramCardUpgradeData": {
-            "id": "MooncycleFaeAddMagicPower_UpgradeData",
-            "guid": "6922ecb5-0835-451c-8ca7-8348d2e66079",
-            "bonusDamage": 5
-          }
-        },
-        {
-          "effectStateName": "CardEffectAddStatusEffect",
-          "targetMode": "room",
-          "targetTeamType": "monsters",
-          "targetCharacterSubtype": "SubtypesData_Fae",
-          "paramStatusEffects": [
-            {
-              "statusId": "conduit",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "paramInt": 1
-    }
-  ],
-  "descriptionModifiers": [
+      "id": "MooncycleFaeAddMagicPower.effects0.paramCardEffects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_Fae",
+      "param_upgrade": "MooncycleFaeAddMagicPower_UpgradeData"
+    },
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-1558642f1b4ff840-67d74b03e56d28e4995574c7d78383f9-v2",
-        "english": "([value] Fae)",
-        "french": "([value] Fée)",
-        "german": "([value] Fee)",
-        "russian": "([value] Фея)",
-        "portuguese": "([value] Fae)",
-        "chinese": "([value] 妖精)",
-        "spanish": "([value] Hada)",
-        "chinese_traditional": "([value] 仙子)",
-        "korean": "([value] 요정)",
-        "japanese": "([value] 妖精)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Fae"
+      "id": "MooncycleFaeAddMagicPower.effects0.paramCardEffects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_Fae",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 1
+        }
+      ]
     }
   ]
 }

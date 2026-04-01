@@ -1,78 +1,94 @@
 {
-  "id": "DrawCardPerDeckSize",
-  "guid": "ef08bc24-6016-4d30-8ba7-c42534e3e1f7",
-  "name": "Everchurning Soil",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-b499e4b452d57dea-25c5feee921fd4242aa87864fc1fbda8-v2",
-    "english": "Everchurning Soil",
-    "french": "Sol bouillonnant",
-    "german": "Umgewühlter Boden",
-    "russian": "Бурлящая почва",
-    "portuguese": "Solo Revolto",
-    "chinese": "不息之土",
-    "spanish": "Suelo inquieto",
-    "chinese_traditional": "永恆耕土",
-    "korean": "섞이지 않은 흙",
-    "japanese": "奮起の土"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-04b259db9551e2c0-25c5feee921fd4242aa87864fc1fbda8-v2",
-    "english": "Draw +1 each turn per [effect0.power] cards in your Deck.",
-    "french": "Piochez +1 à chaque tour par tranche de <nobr>[effect0.power] cartes</nobr> dans le deck.",
-    "german": "Ziehe für alle [effect0.power] Karten in deinem Deck jeden Zug +1.",
-    "russian": "Возьмите +1 карту за каждые [effect0.power] в вашей колоде.",
-    "portuguese": "Compra +1 a cada turno para cada [effect0.power] cartas em seu deck.",
-    "chinese": "你的卡组中每有 [effect0.power] 张卡牌，每回合抽 +1张牌。",
-    "spanish": "Roba +1 cada turno por cada [effect0.power] cartas en tu mazo.",
-    "chinese_traditional": "每有[effect0.power]張牌在你的牌組中時，每回合多抽+1張牌。",
-    "korean": "덱에 보유한 카드 [effect0.power]장당 매 턴 1장을 더 뽑습니다.",
-    "japanese": "デッキ内のカード[effect0.power]枚につき、毎ターンドロー+1。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-6ac5727eea3f80aa-25c5feee921fd4242aa87864fc1fbda8-v2",
-      "english": "On the eve of the Creation Elm’s destruction, the shroomfolk drink a mixture of soil taken from around the Fatal Elm mixed with water to remind themselves of what they have lost.",
-      "french": "La veille de la destruction de l'Orme de la Création, les champignons boivent un mélange de terre prélevée autour de l'Orme funeste mélangée à de l'eau pour se rappeler ce qu'ils ont perdu.",
-      "german": "Am Vorabend der Zerstörung der Schöpfungsulme nimmt das Pilzvolk Erde aus der Nähe der Schicksalsulme und Wasser zu sich, um sich an das zu erinnern, was sie verloren haben.",
-      "russian": "Накануне дня гибели Вяза Создания грибы пьют разведенную в воде землю с окрестностей Рокового Вяза, вспоминая о том, что потеряли.",
-      "portuguese": "Na véspera da destruição do Ulmeiro da Criação, os cogumelos bebem uma mistura de água e terra retirada dos arredores do Ulmeiro Mortal para se lembrarem do que perderam.",
-      "chinese": "在造物榆树被摧毁的前夕，蘑菇人喝下了从致命榆树周围取来的土与水的混合物，以提醒他们自己失去了什么。",
-      "spanish": "En la víspera de la destrucción del Olmo de la Creación, los hongos beben una mezcla de agua y el suelo junto al Olmo Fatal, para recordar lo que han perdido.",
-      "chinese_traditional": "在創造榆樹被毀滅的前夕，蘑菇一族飲用從致命榆樹周圍取得的土壤與水的混合物，以提醒自己失去了什麼。",
-      "korean": "창조의 느릅나무가 시들기 하루 전, 버섯 종족은 운명의 느릅나무 주변 흙과 물을 섞어 마시며 자신들이 잃어버린 것을 떠올렸다.",
-      "japanese": "創造の樹が破壊される前夜、キノコたちは、宿命の樹の周囲から採取した土と水を混ぜたものを飲み、自分たちが失ったものを思い出すのだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectCardDrawPerPileStartOfTurn",
-      "paramMaxInt": 25
-    }
-  ],
-  "descriptionModifiers": [
-    {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-a1c27571bd97a185-25c5feee921fd4242aa87864fc1fbda8-v2",
-        "english": "([draw] +[value])",
-        "french": "([draw] +[value])",
-        "german": "([draw] +[value])",
-        "russian": "([draw] +[value])",
-        "portuguese": "([draw] +[value])",
-        "chinese": "([draw] +[value])",
-        "spanish": "([draw] +[value])",
-        "chinese_traditional": "([draw] +[value])",
-        "korean": "([draw] +[value])",
-        "japanese": "([draw] +[value])"
+      "id": "DrawCardPerDeckSize",
+      "name": "Everchurning Soil",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassUnderlegion",
+            "description_modifiers": [
+              {
+                "id": "DrawCardPerDeckSize.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-a1c27571bd97a185-25c5feee921fd4242aa87864fc1fbda8-v2",
+                  "english": "([draw] +[value])",
+                  "french": "([draw] +[value])",
+                  "german": "([draw] +[value])",
+                  "russian": "([draw] +[value])",
+                  "portuguese": "([draw] +[value])",
+                  "chinese": "([draw] +[value])",
+                  "spanish": "([draw] +[value])",
+                  "chinese_traditional": "([draw] +[value])",
+                  "korean": "([draw] +[value])",
+                  "japanese": "([draw] +[value])"
+                },
+                "param_int": 25,
+                "param_subtype": "SubtypesData_None"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-b499e4b452d57dea-25c5feee921fd4242aa87864fc1fbda8-v2",
+        "english": "Everchurning Soil",
+        "french": "Sol bouillonnant",
+        "german": "Umgewühlter Boden",
+        "russian": "Бурлящая почва",
+        "portuguese": "Solo Revolto",
+        "chinese": "不息之土",
+        "spanish": "Suelo inquieto",
+        "chinese_traditional": "永恆耕土",
+        "korean": "섞이지 않은 흙",
+        "japanese": "奮起の土"
       },
-      "paramInt": 25,
-      "paramCharacterSubtype": "SubtypesData_None"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-04b259db9551e2c0-25c5feee921fd4242aa87864fc1fbda8-v2",
+        "english": "Draw +1 each turn per [effect0.power] cards in your Deck.",
+        "french": "Piochez +1 à chaque tour par tranche de <nobr>[effect0.power] cartes</nobr> dans le deck.",
+        "german": "Ziehe für alle [effect0.power] Karten in deinem Deck jeden Zug +1.",
+        "russian": "Возьмите +1 карту за каждые [effect0.power] в вашей колоде.",
+        "portuguese": "Compra +1 a cada turno para cada [effect0.power] cartas em seu deck.",
+        "chinese": "你的卡组中每有 [effect0.power] 张卡牌，每回合抽 +1张牌。",
+        "spanish": "Roba +1 cada turno por cada [effect0.power] cartas en tu mazo.",
+        "chinese_traditional": "每有[effect0.power]張牌在你的牌組中時，每回合多抽+1張牌。",
+        "korean": "덱에 보유한 카드 [effect0.power]장당 매 턴 1장을 더 뽑습니다.",
+        "japanese": "デッキ内のカード[effect0.power]枚につき、毎ターンドロー+1。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-6ac5727eea3f80aa-25c5feee921fd4242aa87864fc1fbda8-v2",
+          "english": "On the eve of the Creation Elm’s destruction, the shroomfolk drink a mixture of soil taken from around the Fatal Elm mixed with water to remind themselves of what they have lost.",
+          "french": "La veille de la destruction de l'Orme de la Création, les champignons boivent un mélange de terre prélevée autour de l'Orme funeste mélangée à de l'eau pour se rappeler ce qu'ils ont perdu.",
+          "german": "Am Vorabend der Zerstörung der Schöpfungsulme nimmt das Pilzvolk Erde aus der Nähe der Schicksalsulme und Wasser zu sich, um sich an das zu erinnern, was sie verloren haben.",
+          "russian": "Накануне дня гибели Вяза Создания грибы пьют разведенную в воде землю с окрестностей Рокового Вяза, вспоминая о том, что потеряли.",
+          "portuguese": "Na véspera da destruição do Ulmeiro da Criação, os cogumelos bebem uma mistura de água e terra retirada dos arredores do Ulmeiro Mortal para se lembrarem do que perderam.",
+          "chinese": "在造物榆树被摧毁的前夕，蘑菇人喝下了从致命榆树周围取来的土与水的混合物，以提醒他们自己失去了什么。",
+          "spanish": "En la víspera de la destrucción del Olmo de la Creación, los hongos beben una mezcla de agua y el suelo junto al Olmo Fatal, para recordar lo que han perdido.",
+          "chinese_traditional": "在創造榆樹被毀滅的前夕，蘑菇一族飲用從致命榆樹周圍取得的土壤與水的混合物，以提醒自己失去了什麼。",
+          "korean": "창조의 느릅나무가 시들기 하루 전, 버섯 종족은 운명의 느릅나무 주변 흙과 물을 섞어 마시며 자신들이 잃어버린 것을 떠올렸다.",
+          "japanese": "創造の樹が破壊される前夜、キノコたちは、宿命の樹の周囲から採取した土と水を混ぜたものを飲み、自分たちが失ったものを思い出すのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@DrawCardPerDeckSize.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true
+  "relic_effects": [
+    {
+      "id": "DrawCardPerDeckSize.effects0",
+      "name": "RelicEffectCardDrawPerPileStartOfTurn",
+      "param_max_int": 25
+    }
+  ]
 }

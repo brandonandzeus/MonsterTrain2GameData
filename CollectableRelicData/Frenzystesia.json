@@ -1,73 +1,92 @@
 {
-  "id": "Frenzystesia",
-  "guid": "56316fc2-b41a-41ae-aba8-e83fb668e8e1",
-  "name": "Frenzystesia",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-3701fe86e9e03555-62d5e36aa1517a24db92f24fa9e2cd92-v2",
-    "english": "Frenzystesia",
-    "french": "Frénésite",
-    "german": "Eau de Raserei",
-    "russian": "Обезумзия",
-    "portuguese": "Frenezistesia",
-    "chinese": "狂热药剂",
-    "spanish": "Furiastesia",
-    "chinese_traditional": "狂亂藥劑",
-    "korean": "광란 유발제",
-    "japanese": "フレンジーステジア"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-532e65921af518a3-62d5e36aa1517a24db92f24fa9e2cd92-v2",
-    "english": "The first time each turn a friendly unit is equipped, gain [effect0.power][ember].",
-    "french": "À chaque tour, la première fois qu'un allié est équipé, gagnez [effect0.power][ember].",
-    "german": "Erhalte in jedem Zug [effect0.power][ember], wenn das erste Mal eine verbündete Einheit ausgerüstet wird.",
-    "russian": "Первый раз в ход, когда союзник получает снаряжение, вам дается [effect0.power][ember].",
-    "portuguese": "Na primeira vez que você equipar uma unidade aliada em um turno, ganhará [effect0.power][ember].",
-    "chinese": "每回合友方单位首次获得装备时，获得 [effect0.power][ember]。",
-    "spanish": "La primera vez que una unidad aliada recibe equipo cada turno, recibe [effect0.power][ember].",
-    "chinese_traditional": "每回合第一次裝備友方單位時獲得[effect0.power][ember]。",
-    "korean": "매 턴 처음으로 아군 유닛이 장비를 장착하면 [effect0.power][ember]을 획득합니다.",
-    "japanese": "毎ターン、味方ユニットへの装着初回時に[effect0.power][ember]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-ef4ea887242eb6e6-62d5e36aa1517a24db92f24fa9e2cd92-v2",
-      "english": "“The doctor’s latest experiment has made all the subjects frenzy. And made me have a migraine.”\n—Hugo, assistant to Dr. Orechi",
-      "french": "<nobr>« La</nobr> dernière expérience du docteur a rendu tous les cobayes frénétiques. Et m'a donné la <nobr>migraine. »</nobr> \n— Hugo, assistant du <nobr>Dr Orechi</nobr>",
-      "german": "„Das neueste Experiment des Doktors hat alle Probanden in Aufruhr versetzt. Und mir eine Migräne beschert.“\n—Hugo, Assistent von Dr. Orechi",
-      "russian": "«Последний эксперимент доктора привел в бешенство всех испытуемых. А у меня началась мигрень».\n— Хьюго, помощник доктора Оречи",
-      "portuguese": "“O último experimento médico deixou todos os participantes frenéticos. E me fez ter uma enxaqueca.”\n— Hugo, assistente do Dr. Orechi",
-      "chinese": "“博士最新的实验让所有的实验对象都为之疯狂。而让我得了偏头痛。”\n——雨果，奥莱奇博士的助手。",
-      "spanish": "«El último experimento del doctor ha inducido un frenesí a todos los sujetos. A mí me ha inducido una migraña».\n—Hugo, ayudante del Dr. Orechi",
-      "chinese_traditional": "「醫生的最新實驗讓所有實驗體都陷入狂亂。而且還害我偏頭痛。」\n——奧雷奇的助手雨果",
-      "korean": "“박사님이 최근에 행한 실험이 모든 실험체를 광란 상태로 몰아갔다. 그 덕분에 나는 편두통이 생겼다.”\n- 오레치의 조수 휴고",
-      "japanese": "「ドクターの最新の実験は、被験者全員を狂乱させました。そして私は偏頭痛に悩まされました」\n—ドクター・オレチの助手、ウーゴ"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectEmberOnUnitTrigger",
-      "effectConditions": [
+      "id": "Frenzystesia",
+      "name": "Frenzystesia",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "less_than"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassLazarusLeague",
+            "unlock_level": 5
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": 1,
-      "paramTrigger": "on_equipment_added"
+      "names": {
+        "key": "CollectableRelicData_nameKey-3701fe86e9e03555-62d5e36aa1517a24db92f24fa9e2cd92-v2",
+        "english": "Frenzystesia",
+        "french": "Frénésite",
+        "german": "Eau de Raserei",
+        "russian": "Обезумзия",
+        "portuguese": "Frenezistesia",
+        "chinese": "狂热药剂",
+        "spanish": "Furiastesia",
+        "chinese_traditional": "狂亂藥劑",
+        "korean": "광란 유발제",
+        "japanese": "フレンジーステジア"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-532e65921af518a3-62d5e36aa1517a24db92f24fa9e2cd92-v2",
+        "english": "The first time each turn a friendly unit is equipped, gain [effect0.power][ember].",
+        "french": "À chaque tour, la première fois qu'un allié est équipé, gagnez [effect0.power][ember].",
+        "german": "Erhalte in jedem Zug [effect0.power][ember], wenn das erste Mal eine verbündete Einheit ausgerüstet wird.",
+        "russian": "Первый раз в ход, когда союзник получает снаряжение, вам дается [effect0.power][ember].",
+        "portuguese": "Na primeira vez que você equipar uma unidade aliada em um turno, ganhará [effect0.power][ember].",
+        "chinese": "每回合友方单位首次获得装备时，获得 [effect0.power][ember]。",
+        "spanish": "La primera vez que una unidad aliada recibe equipo cada turno, recibe [effect0.power][ember].",
+        "chinese_traditional": "每回合第一次裝備友方單位時獲得[effect0.power][ember]。",
+        "korean": "매 턴 처음으로 아군 유닛이 장비를 장착하면 [effect0.power][ember]을 획득합니다.",
+        "japanese": "毎ターン、味方ユニットへの装着初回時に[effect0.power][ember]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-ef4ea887242eb6e6-62d5e36aa1517a24db92f24fa9e2cd92-v2",
+          "english": "“The doctor’s latest experiment has made all the subjects frenzy. And made me have a migraine.”\n—Hugo, assistant to Dr. Orechi",
+          "french": "<nobr>« La</nobr> dernière expérience du docteur a rendu tous les cobayes frénétiques. Et m'a donné la <nobr>migraine. »</nobr> \n— Hugo, assistant du <nobr>Dr Orechi</nobr>",
+          "german": "„Das neueste Experiment des Doktors hat alle Probanden in Aufruhr versetzt. Und mir eine Migräne beschert.“\n—Hugo, Assistent von Dr. Orechi",
+          "russian": "«Последний эксперимент доктора привел в бешенство всех испытуемых. А у меня началась мигрень».\n— Хьюго, помощник доктора Оречи",
+          "portuguese": "“O último experimento médico deixou todos os participantes frenéticos. E me fez ter uma enxaqueca.”\n— Hugo, assistente do Dr. Orechi",
+          "chinese": "“博士最新的实验让所有的实验对象都为之疯狂。而让我得了偏头痛。”\n——雨果，奥莱奇博士的助手。",
+          "spanish": "«El último experimento del doctor ha inducido un frenesí a todos los sujetos. A mí me ha inducido una migraña».\n—Hugo, ayudante del Dr. Orechi",
+          "chinese_traditional": "「醫生的最新實驗讓所有實驗體都陷入狂亂。而且還害我偏頭痛。」\n——奧雷奇的助手雨果",
+          "korean": "“박사님이 최근에 행한 실험이 모든 실험체를 광란 상태로 몰아갔다. 그 덕분에 나는 편두통이 생겼다.”\n- 오레치의 조수 휴고",
+          "japanese": "「ドクターの最新の実験は、被験者全員を狂乱させました。そして私は偏頭痛に悩まされました」\n—ドクター・オレチの助手、ウーゴ"
+        }
+      ],
+      "relic_effects": [
+        "@Frenzystesia.effects0"
+      ]
     }
   ],
-  "unlockLevel": 5
+  "relic_effects": [
+    {
+      "id": "Frenzystesia.effects0",
+      "name": "RelicEffectEmberOnUnitTrigger",
+      "conditions": [
+        "@Frenzystesia.effects0.effectConditions0"
+      ],
+      "param_source_team": "monsters",
+      "param_int": 1,
+      "param_trigger": "on_equipment_added"
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "Frenzystesia.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "less_than"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ]
 }

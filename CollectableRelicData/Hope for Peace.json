@@ -1,121 +1,136 @@
 {
-  "id": "PurgeToExhaust",
-  "guid": "10648aee-8577-49b6-8659-318a7f922d5a",
-  "name": "Hope for Peace",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-c46d571f7b032b07-7cac186c2ff40d3489b8f615058c9bbc-v2",
-    "english": "Hope for Peace",
-    "french": "Espoir de paix",
-    "german": "Friedenshoffnung",
-    "russian": "Надежда на мир",
-    "portuguese": "Esperança pela Paz",
-    "chinese": "和平之花",
-    "spanish": "Esperanza de paz",
-    "chinese_traditional": "和平希望",
-    "korean": "평화의 희망",
-    "japanese": "平和への希望"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-8e4712c615f458fe-7cac186c2ff40d3489b8f615058c9bbc-v2",
-    "english": "Spells and Equipment with [annihilate] have [consume] instead.",
-    "french": "Les sorts et les équipements avec [annihilate] ont [consume] à la place.",
-    "german": "Zauber und Ausrüstung mit [annihilate] haben stattdessen [consume].",
-    "russian": "[annihilate] в чарах и снаряжении меняется на [consume].",
-    "portuguese": "Os Feitiços e Equipamentos com [annihilate] receberão [consume] a partir de agora.",
-    "chinese": "带有 [annihilate] 的法术与装备变为 [consume]。",
-    "spanish": "Los hechizos y el equipo con [annihilate] pasan a tener [consume].",
-    "chinese_traditional": "帶有[annihilate]的法術和裝備改為擁有[consume]。",
-    "korean": "[annihilate] 효과를 지닌 주문과 장비에 [consume] 효과를 대신 적용합니다.",
-    "japanese": "属性が[annihilate]の呪文と装備品が代わりに[consume]属性になる。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-53f8ffdaec4fff1f-7cac186c2ff40d3489b8f615058c9bbc-v2",
-      "english": "As elusive as their name, these bright flowers bloom briefly in the cracked soil of the Scorched Plains, quickly smothered by the harsh environment.",
-      "french": "Aussi difficiles à obtenir que leur nom l'indique, ces fleurs magnifiques éclosent brièvement dans le sol fissuré des Plaines calcinées, avant d'être rapidement étouffées par le climat extrême.",
-      "german": "Diese hübschen Blumen sind so schwer zu greifen wie ihr Name: Sie blühen kurz im rissigen Boden der Verbrannten Ebenen und werden von der feindlichen Umwelt schnell erstickt.",
-      "russian": "Полностью соответствуя своему названию, эти яркие цветы лишь на короткое время распускаются посреди растрескавшейся тверди Выжженных равнин, но только для того, чтобы погибнуть.",
-      "portuguese": "Tão elusivas quanto seu nome, essas flores brilhantes florescem por um breve momento no solo rachado das Planícies Devastadas, sendo rapidamente sufocadas pelo ambiente hostil.",
-      "chinese": "这些显眼的花朵就像它们的名字一样难以捉摸。它们会在燃烧平原开裂的土壤中短暂开放，之后马上就会在恶劣的环境中窒息。",
-      "spanish": "Tan esquivas como su nombre indica, estas brillantes flores florecen brevemente en la tierra resquebrajada de las Llanuras Calcinadas, asfixiadas rápidamente por su duro entorno.",
-      "chinese_traditional": "這些明亮的花朵如他們的名字一樣難以捉摸，在焦灼平原的裂土中短暫綻放，但很快就因為嚴酷的環境而窒息。",
-      "korean": "이름처럼 찾기도 힘든 이 꽃은 혹독한 환경이 빠르게 덮치는 불타는 평원의 갈라진 토양에서 짧은 시간 동안 피어난다.",
-      "japanese": "その名前と同じように捉えどころのないこの鮮やかな花は、焦土平原のひび割れた土の中で短期間だけ咲くのだが、厳しい環境によってすぐに枯れてしまう。"
-    }
-  ],
-  "rarity": "uncommon",
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectModifyTrait",
-      "paramCardFilter": {
-        "id": "OnlySpells",
-        "cardType": "spell"
-      },
-      "paramCardFilterSecondary": {
-        "id": "OnlyEquipment",
-        "cardType": "equipment"
-      },
-      "additionalTooltips": [
+      "id": "PurgeToExhaust",
+      "name": "Hope for Peace",
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitSelfPurge_TooltipText",
-            "english": "Once played, this card is removed from your deck for the rest of the run.",
-            "french": "Cette carte est supprimée de votre deck jusqu'à la fin de la partie quand vous la jouez.",
-            "german": "Nachdem sie gespielt wurde, wird diese Karte für den Rest der Reise aus dem Deck entfernt.",
-            "russian": "После розыгрыша эта карта исчезает из вашей колоды до конца заезда.",
-            "portuguese": "Quando jogada, esta carta é removida do seu deck até o fim da partida.",
-            "chinese": "这张牌打出之后，会从你的卡组中移除，在接下来的游戏中无法使用。",
-            "spanish": "Al jugarla, esta carta se elimina de tu mazo para toda la partida.",
-            "chinese_traditional": "打出後，此卡在本次戰鬥的剩餘時間內從你的牌組中移除。",
-            "korean": "사용하면 여정이 끝날 때까지 덱에서 제외됩니다.",
-            "japanese": "プレイすると、このカードは同一運行の進行中にデッキから外される。"
-          },
-          "titleKey": {
-            "key": "CardTraitSelfPurge_CardText",
-            "english": "Purge",
-            "french": "Purge",
-            "german": "Verbannung",
-            "russian": "Ликвидация",
-            "portuguese": "Expurgar",
-            "chinese": "移除",
-            "spanish": "Purga",
-            "chinese_traditional": "淨化",
-            "korean": "제외",
-            "japanese": "除外"
-          }
-        },
-        {
-          "descriptionKey": {
-            "key": "CardTraitExhaustState_TooltipText",
-            "english": "Can only be played once per battle.",
-            "french": "Ne peut être jouée qu'une fois par combat.",
-            "german": "Kann nur einmal pro Kampf gespielt werden.",
-            "russian": "Можно использовать только один раз за бой.",
-            "portuguese": "Só pode ser usada uma vez por batalha.",
-            "chinese": "每场战斗只能使用一次。",
-            "spanish": "Solo puede jugarse una vez por batalla.",
-            "chinese_traditional": "每場戰鬥只能打出一次。",
-            "korean": "전투 중 한 번만 사용할 수 있습니다.",
-            "japanese": "バトルにつき1回のみプレイ可能。"
-          },
-          "titleKey": {
-            "key": "CardTraitExhaustState_CardText",
-            "english": "Consume",
-            "french": "Destruction",
-            "german": "Verbrauch",
-            "russian": "Поглощение",
-            "portuguese": "Consumir",
-            "chinese": "消耗",
-            "spanish": "Consumir",
-            "chinese_traditional": "消耗",
-            "korean": "소모",
-            "japanese": "消費"
+          "collectable": {
+            "rarity": "uncommon",
+            "from_story_event": true
           }
         }
       ],
-      "sourceCardTraitParam": "CardTraitSelfPurge",
-      "targetCardTraitParam": "CardTraitExhaustState"
+      "names": {
+        "key": "CollectableRelicData_nameKey-c46d571f7b032b07-7cac186c2ff40d3489b8f615058c9bbc-v2",
+        "english": "Hope for Peace",
+        "french": "Espoir de paix",
+        "german": "Friedenshoffnung",
+        "russian": "Надежда на мир",
+        "portuguese": "Esperança pela Paz",
+        "chinese": "和平之花",
+        "spanish": "Esperanza de paz",
+        "chinese_traditional": "和平希望",
+        "korean": "평화의 희망",
+        "japanese": "平和への希望"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-8e4712c615f458fe-7cac186c2ff40d3489b8f615058c9bbc-v2",
+        "english": "Spells and Equipment with [annihilate] have [consume] instead.",
+        "french": "Les sorts et les équipements avec [annihilate] ont [consume] à la place.",
+        "german": "Zauber und Ausrüstung mit [annihilate] haben stattdessen [consume].",
+        "russian": "[annihilate] в чарах и снаряжении меняется на [consume].",
+        "portuguese": "Os Feitiços e Equipamentos com [annihilate] receberão [consume] a partir de agora.",
+        "chinese": "带有 [annihilate] 的法术与装备变为 [consume]。",
+        "spanish": "Los hechizos y el equipo con [annihilate] pasan a tener [consume].",
+        "chinese_traditional": "帶有[annihilate]的法術和裝備改為擁有[consume]。",
+        "korean": "[annihilate] 효과를 지닌 주문과 장비에 [consume] 효과를 대신 적용합니다.",
+        "japanese": "属性が[annihilate]の呪文と装備品が代わりに[consume]属性になる。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-53f8ffdaec4fff1f-7cac186c2ff40d3489b8f615058c9bbc-v2",
+          "english": "As elusive as their name, these bright flowers bloom briefly in the cracked soil of the Scorched Plains, quickly smothered by the harsh environment.",
+          "french": "Aussi difficiles à obtenir que leur nom l'indique, ces fleurs magnifiques éclosent brièvement dans le sol fissuré des Plaines calcinées, avant d'être rapidement étouffées par le climat extrême.",
+          "german": "Diese hübschen Blumen sind so schwer zu greifen wie ihr Name: Sie blühen kurz im rissigen Boden der Verbrannten Ebenen und werden von der feindlichen Umwelt schnell erstickt.",
+          "russian": "Полностью соответствуя своему названию, эти яркие цветы лишь на короткое время распускаются посреди растрескавшейся тверди Выжженных равнин, но только для того, чтобы погибнуть.",
+          "portuguese": "Tão elusivas quanto seu nome, essas flores brilhantes florescem por um breve momento no solo rachado das Planícies Devastadas, sendo rapidamente sufocadas pelo ambiente hostil.",
+          "chinese": "这些显眼的花朵就像它们的名字一样难以捉摸。它们会在燃烧平原开裂的土壤中短暂开放，之后马上就会在恶劣的环境中窒息。",
+          "spanish": "Tan esquivas como su nombre indica, estas brillantes flores florecen brevemente en la tierra resquebrajada de las Llanuras Calcinadas, asfixiadas rápidamente por su duro entorno.",
+          "chinese_traditional": "這些明亮的花朵如他們的名字一樣難以捉摸，在焦灼平原的裂土中短暫綻放，但很快就因為嚴酷的環境而窒息。",
+          "korean": "이름처럼 찾기도 힘든 이 꽃은 혹독한 환경이 빠르게 덮치는 불타는 평원의 갈라진 토양에서 짧은 시간 동안 피어난다.",
+          "japanese": "その名前と同じように捉えどころのないこの鮮やかな花は、焦土平原のひび割れた土の中で短期間だけ咲くのだが、厳しい環境によってすぐに枯れてしまう。"
+        }
+      ],
+      "relic_effects": [
+        "@PurgeToExhaust.effects0"
+      ]
     }
   ],
-  "fromStoryEvent": true
+  "relic_effects": [
+    {
+      "id": "PurgeToExhaust.effects0",
+      "name": "RelicEffectModifyTrait",
+      "param_card_filter": "@PurgeToExhaust.effects0.paramCardFilter",
+      "param_card_filter_2": "@PurgeToExhaust.effects0.paramCardFilterSecondary",
+      "additional_tooltips": [
+        "@PurgeToExhaust.effects0.additionalTooltips0",
+        "@PurgeToExhaust.effects0.additionalTooltips1"
+      ],
+      "source_card_trait": "CardTraitSelfPurge",
+      "target_card_trait": "CardTraitExhaustState"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "PurgeToExhaust.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitSelfPurge_TooltipText",
+        "english": "Once played, this card is removed from your deck for the rest of the run.",
+        "french": "Cette carte est supprimée de votre deck jusqu'à la fin de la partie quand vous la jouez.",
+        "german": "Nachdem sie gespielt wurde, wird diese Karte für den Rest der Reise aus dem Deck entfernt.",
+        "russian": "После розыгрыша эта карта исчезает из вашей колоды до конца заезда.",
+        "portuguese": "Quando jogada, esta carta é removida do seu deck até o fim da partida.",
+        "chinese": "这张牌打出之后，会从你的卡组中移除，在接下来的游戏中无法使用。",
+        "spanish": "Al jugarla, esta carta se elimina de tu mazo para toda la partida.",
+        "chinese_traditional": "打出後，此卡在本次戰鬥的剩餘時間內從你的牌組中移除。",
+        "korean": "사용하면 여정이 끝날 때까지 덱에서 제외됩니다.",
+        "japanese": "プレイすると、このカードは同一運行の進行中にデッキから外される。"
+      },
+      "titles": {
+        "key": "CardTraitSelfPurge_CardText",
+        "english": "Purge",
+        "french": "Purge",
+        "german": "Verbannung",
+        "russian": "Ликвидация",
+        "portuguese": "Expurgar",
+        "chinese": "移除",
+        "spanish": "Purga",
+        "chinese_traditional": "淨化",
+        "korean": "제외",
+        "japanese": "除外"
+      }
+    },
+    {
+      "id": "PurgeToExhaust.effects0.additionalTooltips1",
+      "descriptions": {
+        "key": "CardTraitExhaustState_TooltipText",
+        "english": "Can only be played once per battle.",
+        "french": "Ne peut être jouée qu'une fois par combat.",
+        "german": "Kann nur einmal pro Kampf gespielt werden.",
+        "russian": "Можно использовать только один раз за бой.",
+        "portuguese": "Só pode ser usada uma vez por batalha.",
+        "chinese": "每场战斗只能使用一次。",
+        "spanish": "Solo puede jugarse una vez por batalla.",
+        "chinese_traditional": "每場戰鬥只能打出一次。",
+        "korean": "전투 중 한 번만 사용할 수 있습니다.",
+        "japanese": "バトルにつき1回のみプレイ可能。"
+      },
+      "titles": {
+        "key": "CardTraitExhaustState_CardText",
+        "english": "Consume",
+        "french": "Destruction",
+        "german": "Verbrauch",
+        "russian": "Поглощение",
+        "portuguese": "Consumir",
+        "chinese": "消耗",
+        "spanish": "Consumir",
+        "chinese_traditional": "消耗",
+        "korean": "소모",
+        "japanese": "消費"
+      }
+    }
+  ]
 }

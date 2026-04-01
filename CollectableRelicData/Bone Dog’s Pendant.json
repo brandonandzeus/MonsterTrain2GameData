@@ -1,65 +1,70 @@
 {
-  "id": "BoneDogTitanPyreLife",
-  "guid": "d7264164-b519-43e2-bcf3-055afee3d8dd",
-  "name": "Bone Dog’s Pendant",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-6f825647a9920519-0c997438df6c7cc47ac355ae4eb6025d-v2",
-    "english": "Bone Dog’s Pendant",
-    "french": "Pendentif nécrocanin",
-    "german": "Knochenhund-Anhänger",
-    "russian": "Медальон костяного пса",
-    "portuguese": "Coleira do Cão de Ossos",
-    "chinese": "白骨犬的吊坠",
-    "spanish": "Colgante del Perro Esquelético",
-    "chinese_traditional": "骨狗的吊墜",
-    "korean": "해골 강아지의 펜던트",
-    "japanese": "ホネイヌのペンダント"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-9f90adc14386ca08-0c997438df6c7cc47ac355ae4eb6025d-v2",
-    "english": "The first time the Pyre reaches [effect0.secondarypower] health, restore the Pyre to [effect0.power]% health. This can only trigger once.",
-    "french": "La première fois que le Brasier atteint <nobr>[effect0.secondarypower] PV,</nobr> restaure le Brasier à <nobr>[effect0.power] %</nobr> de PV. Utilisable une fois.",
-    "german": "Wenn die Höllenglut-Gesundheit zum ersten Mal auf [effect0.secondarypower] fällt, wird sie auf [effect0.power] % wiederhergestellt. Kann nur einmal ausgelöst werden.",
-    "russian": "Когда здоровье Пекла впервые падает до [effect0.secondarypower], восстанавливает его до [effect0.power]%. Срабатывает только один раз.",
-    "portuguese": "Na primeira vez que a Pira atinge [effect0.secondarypower] de vida, restaura a vida da Pira para [effect0.power]%. Isso só pode ser acionado uma vez.",
-    "chinese": "当薪火的生命值首次达到 [effect0.secondarypower] 时，将薪火的生命值恢复至 [effect0.power]%。只能触发一次。",
-    "spanish": "La primera vez que la Pira llegue a [effect0.secondarypower] de salud, la restaura al [effect0.power] % de su salud. Solo se puede activar una vez.",
-    "chinese_traditional": "第一次火堆降到[effect0.secondarypower]生命值時，將火堆恢復到[effect0.power]%生命值。這只能觸發一次。",
-    "korean": "화로 체력이 [effect0.secondarypower]로 떨어지면 최대 체력의 [effect0.power]%까지 회복합니다. 이 효과는 한 번만 발생합니다.",
-    "japanese": "炉の体力が最初に[effect0.secondarypower]に到達した際に、炉の体力を[effect0.power]%までに回復する。1度だけ発動する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-7c5fab07d753aa17-0c997438df6c7cc47ac355ae4eb6025d-v2",
-      "english": "Although I was not able to give much to this pup, I tried to give him love. I hope whenever he hears the clink of his collar’s tag, he’ll be reminded of all the fun we had.",
-      "french": "Bien que je n'aie pas pu donner grand-chose à ce chiot, j'ai essayé de lui offrir de l'amour. J'espère que chaque fois qu'il entendra le tintement de son collier, il se souviendra des bons moments passés ensemble.",
-      "german": "Obwohl ich diesem Zögling nicht viel bieten konnte, habe ich es mit Liebe versucht. Ich hoffe, dass er sich, wenn er das Klirren seines Halsbandes hört, an all den Spaß erinnert, den wir hatten.",
-      "russian": "Мне нечего было дать этому малышу, но я пытался подарить ему свою любовь. Надеюсь, когда он слышит, как позвякивает его медальон, то вспоминает, как нам было весело.",
-      "portuguese": "Embora não tivesse muito para dar, tentei ao menos dar amor a esse filhote. Espero que sempre que ouvir o tilintar de sua coleira, ele se lembre de toda a diversão que tivemos.",
-      "chinese": "虽然我给不了这只小狗什么东西，但我努力给它关爱。我希望每当他听见项圈上的标牌叮当作响时，就能想起我们曾经的快乐时光。",
-      "spanish": "Aunque no pude darle a este cachorro la vida que se merecía, siempre procuré que no le faltara cariño. Espero que cada vez que oiga el tintineo de la chapa de su collar, recuerde lo bien que lo pasamos.",
-      "chinese_traditional": "雖然我無法給這隻小狗太多東西，但我試圖給他愛。我希望每當他聽到項圈的叮噹聲，他都會想起我們一起度過的所有快樂時光。",
-      "korean": "이 강아지에게 많은 것을 주기는 어렵겠지만, 애정을 주려 노력했다. 목걸이가 철컥거릴 때마다 우리가 함께한 즐거운 시간을 떠올리기를 바랄 뿐이다.",
-      "japanese": "この子犬に多くのことをしてあげることはできなかったが、愛情を注ぐよう努めた。首輪のタグがカチャカチャ鳴る音を聞くたびに、私たちが過ごした楽しい時間を思い出してくれることを願っている。"
-    }
-  ],
-  "rarity": "champion",
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectPyreHeartResurrection",
-      "effectConditions": [
+      "id": "BoneDogTitanPyreLife",
+      "name": "Bone Dog’s Pendant",
+      "type": "collectable",
+      "extensions": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "pyre_heart_resurrection",
-          "paramEntryDuration": "this_turn",
-          "paramComparator": "invalid0",
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "collectable": {
+            "rarity": "champion",
+            "from_story_event": true,
+            "force_update_count_label": true
+          }
         }
       ],
-      "paramFloat": 0.25
+      "names": {
+        "key": "CollectableRelicData_nameKey-6f825647a9920519-0c997438df6c7cc47ac355ae4eb6025d-v2",
+        "english": "Bone Dog’s Pendant",
+        "french": "Pendentif nécrocanin",
+        "german": "Knochenhund-Anhänger",
+        "russian": "Медальон костяного пса",
+        "portuguese": "Coleira do Cão de Ossos",
+        "chinese": "白骨犬的吊坠",
+        "spanish": "Colgante del Perro Esquelético",
+        "chinese_traditional": "骨狗的吊墜",
+        "korean": "해골 강아지의 펜던트",
+        "japanese": "ホネイヌのペンダント"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-9f90adc14386ca08-0c997438df6c7cc47ac355ae4eb6025d-v2",
+        "english": "The first time the Pyre reaches [effect0.secondarypower] health, restore the Pyre to [effect0.power]% health. This can only trigger once.",
+        "french": "La première fois que le Brasier atteint <nobr>[effect0.secondarypower] PV,</nobr> restaure le Brasier à <nobr>[effect0.power] %</nobr> de PV. Utilisable une fois.",
+        "german": "Wenn die Höllenglut-Gesundheit zum ersten Mal auf [effect0.secondarypower] fällt, wird sie auf [effect0.power] % wiederhergestellt. Kann nur einmal ausgelöst werden.",
+        "russian": "Когда здоровье Пекла впервые падает до [effect0.secondarypower], восстанавливает его до [effect0.power]%. Срабатывает только один раз.",
+        "portuguese": "Na primeira vez que a Pira atinge [effect0.secondarypower] de vida, restaura a vida da Pira para [effect0.power]%. Isso só pode ser acionado uma vez.",
+        "chinese": "当薪火的生命值首次达到 [effect0.secondarypower] 时，将薪火的生命值恢复至 [effect0.power]%。只能触发一次。",
+        "spanish": "La primera vez que la Pira llegue a [effect0.secondarypower] de salud, la restaura al [effect0.power] % de su salud. Solo se puede activar una vez.",
+        "chinese_traditional": "第一次火堆降到[effect0.secondarypower]生命值時，將火堆恢復到[effect0.power]%生命值。這只能觸發一次。",
+        "korean": "화로 체력이 [effect0.secondarypower]로 떨어지면 최대 체력의 [effect0.power]%까지 회복합니다. 이 효과는 한 번만 발생합니다.",
+        "japanese": "炉の体力が最初に[effect0.secondarypower]に到達した際に、炉の体力を[effect0.power]%までに回復する。1度だけ発動する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-7c5fab07d753aa17-0c997438df6c7cc47ac355ae4eb6025d-v2",
+          "english": "Although I was not able to give much to this pup, I tried to give him love. I hope whenever he hears the clink of his collar’s tag, he’ll be reminded of all the fun we had.",
+          "french": "Bien que je n'aie pas pu donner grand-chose à ce chiot, j'ai essayé de lui offrir de l'amour. J'espère que chaque fois qu'il entendra le tintement de son collier, il se souviendra des bons moments passés ensemble.",
+          "german": "Obwohl ich diesem Zögling nicht viel bieten konnte, habe ich es mit Liebe versucht. Ich hoffe, dass er sich, wenn er das Klirren seines Halsbandes hört, an all den Spaß erinnert, den wir hatten.",
+          "russian": "Мне нечего было дать этому малышу, но я пытался подарить ему свою любовь. Надеюсь, когда он слышит, как позвякивает его медальон, то вспоминает, как нам было весело.",
+          "portuguese": "Embora não tivesse muito para dar, tentei ao menos dar amor a esse filhote. Espero que sempre que ouvir o tilintar de sua coleira, ele se lembre de toda a diversão que tivemos.",
+          "chinese": "虽然我给不了这只小狗什么东西，但我努力给它关爱。我希望每当他听见项圈上的标牌叮当作响时，就能想起我们曾经的快乐时光。",
+          "spanish": "Aunque no pude darle a este cachorro la vida que se merecía, siempre procuré que no le faltara cariño. Espero que cada vez que oiga el tintineo de la chapa de su collar, recuerde lo bien que lo pasamos.",
+          "chinese_traditional": "雖然我無法給這隻小狗太多東西，但我試圖給他愛。我希望每當他聽到項圈的叮噹聲，他都會想起我們一起度過的所有快樂時光。",
+          "korean": "이 강아지에게 많은 것을 주기는 어렵겠지만, 애정을 주려 노력했다. 목걸이가 철컥거릴 때마다 우리가 함께한 즐거운 시간을 떠올리기를 바랄 뿐이다.",
+          "japanese": "この子犬に多くのことをしてあげることはできなかったが、愛情を注ぐよう努めた。首輪のタグがカチャカチャ鳴る音を聞くたびに、私たちが過ごした楽しい時間を思い出してくれることを願っている。"
+        }
+      ],
+      "relic_effects": [
+        "@BoneDogTitanPyreLife.effects0"
+      ]
     }
   ],
-  "fromStoryEvent": true,
-  "forceUpdateCountLabel": true
+  "relic_effects": [
+    {
+      "id": "BoneDogTitanPyreLife.effects0",
+      "name": "RelicEffectPyreHeartResurrection",
+      "param_float": 0.25
+    }
+  ]
 }

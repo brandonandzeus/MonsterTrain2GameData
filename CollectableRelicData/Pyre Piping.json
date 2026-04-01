@@ -1,58 +1,73 @@
 {
-  "id": "PyrePiping",
-  "guid": "44aae53e-ee70-4b2c-8d25-a02f977349ee",
-  "name": "Pyre Piping",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-edfacc4d1c12a376-f96fa755c6303e140b5712141d1f8544-v2",
-    "english": "Pyre Piping",
-    "french": "Tuyaux du Brasier",
-    "german": "Höllenglut-Rohre",
-    "russian": "Пеклопровод",
-    "portuguese": "Encanamento da Pira",
-    "chinese": "薪火管道",
-    "spanish": "Fontanería pírica",
-    "chinese_traditional": "火堆管道",
-    "korean": "화로 배관",
-    "japanese": "炉用パイプ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-96f94224d7f71101-f96fa755c6303e140b5712141d1f8544-v2",
-    "english": "While the Pyre is at full health, draw +[effect0.power] each turn.",
-    "french": "Tant que les PV du Brasier sont au maximum, piochez +[effect0.power] à chaque tour.",
-    "german": "Ziehe pro Runde +[effect0.power] Karten(n), wenn die Höllenglut volle Gesundheit hat.",
-    "russian": "Пока здоровье Пекла полное, вытягивайте +[effect0.power] карту каждый ход.",
-    "portuguese": "Enquanto a Pira estiver com a vida cheia, compra +[effect0.power] a cada turno.",
-    "chinese": "薪火生命值全满时，每回合抽 +[effect0.power] 张牌。",
-    "spanish": "Mientras la Pira tenga toda la salud, roba +[effect0.power] cada turno.",
-    "chinese_traditional": "當薪火滿血時，每回合抽+[effect0.power]張牌。",
-    "korean": "화로가 최대 체력일 때, 각 턴마다 카드를 추가로 +[effect0.power]장 뽑습니다.",
-    "japanese": "炉の体力が満タンの場合、毎ターン、ドロー+[effect0.power]。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-900394e5825a9a4a-f96fa755c6303e140b5712141d1f8544-v2",
-      "english": "While the Pyre itself is magical, the means of which it powers the train is through pure engineering. These pipes were designed to absorb and transfer the Pyre’s heat into several boilers. From there, that heat is converted to mechanical energy through the piston rods, generating power that drives the locomotive.",
-      "french": "Si le Brasier lui-même est magique, la façon dont il propulse le train relève de l'ingénierie pure. Ces tuyaux ont été conçus pour absorber la chaleur du Brasier et la transférer dans plusieurs chaudières. Cette chaleur est ensuite convertie en énergie mécanique par les tiges de piston, propulsant ainsi la locomotive.",
-      "german": "Während die Höllenglut selbst magischer Natur ist, sind ihre Mittel für den Antrieb des Zuges rein technisch-maschinell. Diese Rohrleitungen wurden dazu entwickelt, die Abwärme der Höllenglut in mehrere Kessel zu leiten. Von dort aus wird die Hitze über Kolbenstangen in mechanische Energie umgewandelt, die wiederum die Lokomotive antreibt.",
-      "russian": "Пекло само по себе магическое, но то, как оно приводит поезд в движение — чистая инженерия. Эти трубы созданы, чтобы впитывать и передавать жар Пекла в несколько котлов. Там он превращается в механическую энергию через поршни, и уже на этой силе движется поезд.",
-      "portuguese": "Embora a Pira seja mágica, a forma como ela alimenta o trem é pura engenharia. Esses canos foram projetados para absorver e transferir o calor da Pira para diversas caldeiras. Em seguida, o calor é convertido em energia mecânica por meio de pistões, gerando a força que move a locomotiva.",
-      "chinese": "虽然薪火本身带有魔力，但它为火车提供动力的方式靠的完全是工程学。这些管道用来吸收薪火的热能并将其传导进若干台锅炉。锅炉会将热能通过活塞杆转化为机械能，由此产生的动力驱动火车头前行",
-      "spanish": "Aunque la Pira es mágica, la forma en la que alimenta al tren es ingeniería pura. Sus tuberías se diseñaron para absorber y transferir el calor de la Pira a varias calderas. Desde ahí, se convierte en energía motriz a través de los pistones, lo que permite que la locomotora se mueva.",
-      "chinese_traditional": "火堆本身固然是魔法，但其驅動列車的方式，純然是工程學的結晶。管線的設計是為了吸收火堆的熱能，並將其傳導至數個鍋爐。熱能在那裡透過活塞連桿轉化為機械能，產生驅動列車的動力。",
-      "korean": "화로 자체는 마법적인 존재지만, 열차에 동력을 공급하는 방식은 순전히 공학의 영역이다. 이 파이프들은 화로의 열을 흡수해 여러 보일러로 전달하도록 설계되었다. 그 보일러에서 발생한 열은 피스톤 로드를 통해 기계적 에너지로 전환되고, 그 힘이 기관차를 움직인다.",
-      "japanese": "炉そのものは魔法のような存在だが、列車に動力を与える手法については純粋なる工学である。このパイプは炉の熱を吸収して、複数のボイラーに伝達するために設計された。そこから、その熱はピストン棒を通じて力学的エネルギーに変換され、列車を動かす動力が生成されるのだ。"
+      "id": "PyrePiping",
+      "name": "Pyre Piping",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRailforged",
+            "required_dlc": "railforged"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-edfacc4d1c12a376-f96fa755c6303e140b5712141d1f8544-v2",
+        "english": "Pyre Piping",
+        "french": "Tuyaux du Brasier",
+        "german": "Höllenglut-Rohre",
+        "russian": "Пеклопровод",
+        "portuguese": "Encanamento da Pira",
+        "chinese": "薪火管道",
+        "spanish": "Fontanería pírica",
+        "chinese_traditional": "火堆管道",
+        "korean": "화로 배관",
+        "japanese": "炉用パイプ"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-96f94224d7f71101-f96fa755c6303e140b5712141d1f8544-v2",
+        "english": "While the Pyre is at full health, draw +[effect0.power] each turn.",
+        "french": "Tant que les PV du Brasier sont au maximum, piochez +[effect0.power] à chaque tour.",
+        "german": "Ziehe pro Runde +[effect0.power] Karten(n), wenn die Höllenglut volle Gesundheit hat.",
+        "russian": "Пока здоровье Пекла полное, вытягивайте +[effect0.power] карту каждый ход.",
+        "portuguese": "Enquanto a Pira estiver com a vida cheia, compra +[effect0.power] a cada turno.",
+        "chinese": "薪火生命值全满时，每回合抽 +[effect0.power] 张牌。",
+        "spanish": "Mientras la Pira tenga toda la salud, roba +[effect0.power] cada turno.",
+        "chinese_traditional": "當薪火滿血時，每回合抽+[effect0.power]張牌。",
+        "korean": "화로가 최대 체력일 때, 각 턴마다 카드를 추가로 +[effect0.power]장 뽑습니다.",
+        "japanese": "炉の体力が満タンの場合、毎ターン、ドロー+[effect0.power]。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-900394e5825a9a4a-f96fa755c6303e140b5712141d1f8544-v2",
+          "english": "While the Pyre itself is magical, the means of which it powers the train is through pure engineering. These pipes were designed to absorb and transfer the Pyre’s heat into several boilers. From there, that heat is converted to mechanical energy through the piston rods, generating power that drives the locomotive.",
+          "french": "Si le Brasier lui-même est magique, la façon dont il propulse le train relève de l'ingénierie pure. Ces tuyaux ont été conçus pour absorber la chaleur du Brasier et la transférer dans plusieurs chaudières. Cette chaleur est ensuite convertie en énergie mécanique par les tiges de piston, propulsant ainsi la locomotive.",
+          "german": "Während die Höllenglut selbst magischer Natur ist, sind ihre Mittel für den Antrieb des Zuges rein technisch-maschinell. Diese Rohrleitungen wurden dazu entwickelt, die Abwärme der Höllenglut in mehrere Kessel zu leiten. Von dort aus wird die Hitze über Kolbenstangen in mechanische Energie umgewandelt, die wiederum die Lokomotive antreibt.",
+          "russian": "Пекло само по себе магическое, но то, как оно приводит поезд в движение — чистая инженерия. Эти трубы созданы, чтобы впитывать и передавать жар Пекла в несколько котлов. Там он превращается в механическую энергию через поршни, и уже на этой силе движется поезд.",
+          "portuguese": "Embora a Pira seja mágica, a forma como ela alimenta o trem é pura engenharia. Esses canos foram projetados para absorver e transferir o calor da Pira para diversas caldeiras. Em seguida, o calor é convertido em energia mecânica por meio de pistões, gerando a força que move a locomotiva.",
+          "chinese": "虽然薪火本身带有魔力，但它为火车提供动力的方式靠的完全是工程学。这些管道用来吸收薪火的热能并将其传导进若干台锅炉。锅炉会将热能通过活塞杆转化为机械能，由此产生的动力驱动火车头前行",
+          "spanish": "Aunque la Pira es mágica, la forma en la que alimenta al tren es ingeniería pura. Sus tuberías se diseñaron para absorber y transferir el calor de la Pira a varias calderas. Desde ahí, se convierte en energía motriz a través de los pistones, lo que permite que la locomotora se mueva.",
+          "chinese_traditional": "火堆本身固然是魔法，但其驅動列車的方式，純然是工程學的結晶。管線的設計是為了吸收火堆的熱能，並將其傳導至數個鍋爐。熱能在那裡透過活塞連桿轉化為機械能，產生驅動列車的動力。",
+          "korean": "화로 자체는 마법적인 존재지만, 열차에 동력을 공급하는 방식은 순전히 공학의 영역이다. 이 파이프들은 화로의 열을 흡수해 여러 보일러로 전달하도록 설계되었다. 그 보일러에서 발생한 열은 피스톤 로드를 통해 기계적 에너지로 전환되고, 그 힘이 기관차를 움직인다.",
+          "japanese": "炉そのものは魔法のような存在だが、列車に動力を与える手法については純粋なる工学である。このパイプは炉の熱を吸収して、複数のボイラーに伝達するために設計された。そこから、その熱はピストン棒を通じて力学的エネルギーに変換され、列車を動かす動力が生成されるのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@PyrePiping.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAdditionalDrawOnTowerFullHealth",
-      "paramInt": 1
+      "id": "PyrePiping.effects0",
+      "name": "RelicEffectAdditionalDrawOnTowerFullHealth",
+      "param_int": 1
     }
-  ],
-  "requiredDLC": "railforged"
+  ]
 }

@@ -1,41 +1,56 @@
 {
-  "id": "SilverIncreasedDraw",
-  "guid": "4a51a457-9c50-4623-b8f5-e1bd9aac561a",
-  "name": "SilverIncreasedDraw",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-fbe51d04dc984bff-12d11cca84ae8194cbc9b6a7a82c9b4b-v2",
-    "english": "Silver Draw",
-    "french": "Tirage d'argent",
-    "german": "Silber-Ziehen",
-    "russian": "Дополнительные карты (Сильвер)",
-    "portuguese": "Compra de Prata",
-    "chinese": "银灵抽牌",
-    "spanish": "Robo de plata",
-    "chinese_traditional": "銀色抽牌",
-    "korean": "은 드로우",
-    "japanese": "銀のドロー"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-6c26d0e05b2551f6-12d11cca84ae8194cbc9b6a7a82c9b4b-v2",
-    "english": "Draw +[effect0.power] each turn.",
-    "french": "Piochez +[effect0.power] à chaque tour.",
-    "german": "Ziehe jeden Zug +[effect0.power].",
-    "russian": "Берите +[effect0.power] каждый ход.",
-    "portuguese": "Compra +[effect0.power] a cada turno.",
-    "chinese": "每回合抽 +[effect0.power] 张牌。",
-    "spanish": "Roba +[effect0.power] cada turno.",
-    "chinese_traditional": "每回合抽+[effect0.power]張牌。",
-    "korean": "각 턴마다 카드를 추가로 +[effect0.power]장 뽑습니다.",
-    "japanese": "毎ターン、ドロー+[effect0.power]。"
-  },
-  "rarity": "common",
-  "pools": [
-    "SilverRelicPool"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeStartingHandSize",
-      "paramInt": 1
+      "id": "SilverIncreasedDraw",
+      "name": "SilverIncreasedDraw",
+      "pools": [
+        "SilverRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-fbe51d04dc984bff-12d11cca84ae8194cbc9b6a7a82c9b4b-v2",
+        "english": "Silver Draw",
+        "french": "Tirage d'argent",
+        "german": "Silber-Ziehen",
+        "russian": "Дополнительные карты (Сильвер)",
+        "portuguese": "Compra de Prata",
+        "chinese": "银灵抽牌",
+        "spanish": "Robo de plata",
+        "chinese_traditional": "銀色抽牌",
+        "korean": "은 드로우",
+        "japanese": "銀のドロー"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-6c26d0e05b2551f6-12d11cca84ae8194cbc9b6a7a82c9b4b-v2",
+        "english": "Draw +[effect0.power] each turn.",
+        "french": "Piochez +[effect0.power] à chaque tour.",
+        "german": "Ziehe jeden Zug +[effect0.power].",
+        "russian": "Берите +[effect0.power] каждый ход.",
+        "portuguese": "Compra +[effect0.power] a cada turno.",
+        "chinese": "每回合抽 +[effect0.power] 张牌。",
+        "spanish": "Roba +[effect0.power] cada turno.",
+        "chinese_traditional": "每回合抽+[effect0.power]張牌。",
+        "korean": "각 턴마다 카드를 추가로 +[effect0.power]장 뽑습니다.",
+        "japanese": "毎ターン、ドロー+[effect0.power]。"
+      },
+      "relic_effects": [
+        "@SilverIncreasedDraw.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SilverIncreasedDraw.effects0",
+      "name": "RelicEffectChangeStartingHandSize",
+      "param_int": 1
     }
   ]
 }

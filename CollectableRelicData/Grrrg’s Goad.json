@@ -1,99 +1,95 @@
 {
-  "id": "ImpDamageBuff",
-  "guid": "94595f3a-4624-4408-977d-b166a98f23d2",
-  "name": "Grrrg’s Goad",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-664995f0aa125043-df132ee54f35ae14097e4dfcef76abe5-v2",
-    "english": "Grrrg’s Goad",
-    "french": "Motivation de Grrrg",
-    "german": "Grrrgs Stachelstock",
-    "russian": "Поощрение Гррра",
-    "portuguese": "Incitação de Grrrg",
-    "chinese": "格鲁格的刺棍",
-    "spanish": "Incitación de Grrrg",
-    "chinese_traditional": "格拉格的刺激物",
-    "korean": "그레그의 곤봉",
-    "japanese": "グルルグの突き棒"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-674282c33601035b-df132ee54f35ae14097e4dfcef76abe5-v2",
-    "english": "[demon] units get [multistrike] [effect0.upgrade.status0.power].",
-    "french": "Les diables gagnent <b>Frappe multiple</b> [effect0.upgrade.status0.power].",
-    "german": "Dämon-Einheiten erhalten [effect0.upgrade.status0.power] <b>Multischlag</b>.",
-    "russian": "<b>Демоны</b> получают [multistrike] x [effect0.upgrade.status0.power].",
-    "portuguese": "Demônios recebem <b>Golpe Múltiplo</b> [effect0.upgrade.status0.power].",
-    "chinese": "[demon]单位获得<b>多重攻击</b> [effect0.upgrade.status0.power]。",
-    "spanish": "Las unidades [demon] añaden [multistrike] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "[demon]單位獲得[multistrike][effect0.upgrade.status0.power]。",
-    "korean": "[demon] 유닛들이 [multistrike] [effect0.upgrade.status0.power] 효과를 획득합니다.",
-    "japanese": "[demon]ユニットが[multistrike] [effect0.upgrade.status0.power]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-b470cff8c919992b-df132ee54f35ae14097e4dfcef76abe5-v2",
-      "english": "Though credited with building the Hellhorned’s section of the Rail, Grrrg wasn’t able to complete it without help from other demons. Some needed more motivation than others.",
-      "french": "Bien qu'on lui attribue la construction du tronçon cornu de la Voie, Grrrg n'y serait pas parvenu sans l'aide des autres diables. Certains ont eu besoin de plus de motivation que d'autres.",
-      "german": "Er gilt zwar als Erbauer des Gleises im Kreis der Höllenhörner, aber ohne die Hilfe der anderen Dämonen hätte Grrrg sein Werk niemals vollenden können. Manche mussten allerdings stärker motiviert werden als andere.",
-      "russian": "Хотя Гррра и почитают за создание железнодорожной ветки Адских отродий, он бы не справился с этой задачей без помощи демонов. Некоторым требуется дополнительная мотивация.",
-      "portuguese": "Embora receba o crédito pela construção da seção do Trilho correspondente aos Endiabrados, Grrrg não foi capaz de concluí-la sem a ajuda de outros demônios. Alguns precisaram de mais motivação que outros.",
-      "chinese": "尽管格鲁格因建造了狱魔氏族的铁道而名闻遐迩，但没了其他恶魔们的帮助，他是没办法一个人建造铁道的。有些恶魔比其他恶魔确实更需要鞭策。",
-      "spanish": "Aunque se le atribuye la construcción de la sección de los Astados Infernales de los Raíles, Grrrg no podría haberla completado sin la ayuda de otros demonios. Eso sí, algunos necesitaban más motivación que otros.",
-      "chinese_traditional": "雖然格拉格被認為是建造煉獄族軌道段的功臣，但沒有其他惡魔的幫助，他自己無法完成它。有些人相比其他人，需要更多的動力。",
-      "korean": "지옥뿔 군단 영역을 지나는 선로를 완성한 공로는 인정받았지만, 그레그는 다른 악마들의 도움 없이는 이를 완성하지 못했을 것이다. 그 중 일부는 다른 악마들보다 더 강한 동기가 필요했다.",
-      "japanese": "グルルグは、獄角族の管轄の線路を敷設した功績を認められていたが、他の悪魔たちの助力がなければ完成させることはできなかっただろう。しかし、一部の悪魔は尻を叩かれなければ働いてくれなかった。"
-    }
-  ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "paramCardUpgradeData": {
-        "id": "AddMultistrikeToDemons",
-        "guid": "d4d2f3a0-a191-45f4-850a-98feb26f86b5",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "multistrike",
-            "count": 1
+      "id": "ImpDamageBuff",
+      "name": "Grrrg’s Goad",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassHellhorned",
+            "description_modifiers": [
+              {
+                "id": "ImpDamageBuff.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-60e2c7effbedddd6-df132ee54f35ae14097e4dfcef76abe5-v2",
+                  "english": "([value] [demon] units)",
+                  "french": "([value] unités [demon])",
+                  "german": "([value] [demon]-Einheiten)",
+                  "russian": "([value] [demon] бойцов)",
+                  "portuguese": "([value] unidades [demon])",
+                  "chinese": "([value] [demon]单位)",
+                  "spanish": "([value] unidades [demon])",
+                  "chinese_traditional": "([value] [demon]單位)",
+                  "korean": "([value] [demon] 유닛)",
+                  "japanese": "([value] [demon]ユニット)"
+                },
+                "param_subtype": "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12"
+              }
+            ],
+            "unlock_level": 6
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyDemons",
-            "cardType": "monster",
-            "requiredSubtypesOperator": "and",
-            "requiredSubtypes": [
-              "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12"
-            ]
-          }
-        ],
-        "isUnique": true
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-664995f0aa125043-df132ee54f35ae14097e4dfcef76abe5-v2",
+        "english": "Grrrg’s Goad",
+        "french": "Motivation de Grrrg",
+        "german": "Grrrgs Stachelstock",
+        "russian": "Поощрение Гррра",
+        "portuguese": "Incitação de Grrrg",
+        "chinese": "格鲁格的刺棍",
+        "spanish": "Incitación de Grrrg",
+        "chinese_traditional": "格拉格的刺激物",
+        "korean": "그레그의 곤봉",
+        "japanese": "グルルグの突き棒"
       },
-      "paramSourceTeam": "monsters"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-674282c33601035b-df132ee54f35ae14097e4dfcef76abe5-v2",
+        "english": "[demon] units get [multistrike] [effect0.upgrade.status0.power].",
+        "french": "Les diables gagnent <b>Frappe multiple</b> [effect0.upgrade.status0.power].",
+        "german": "Dämon-Einheiten erhalten [effect0.upgrade.status0.power] <b>Multischlag</b>.",
+        "russian": "<b>Демоны</b> получают [multistrike] x [effect0.upgrade.status0.power].",
+        "portuguese": "Demônios recebem <b>Golpe Múltiplo</b> [effect0.upgrade.status0.power].",
+        "chinese": "[demon]单位获得<b>多重攻击</b> [effect0.upgrade.status0.power]。",
+        "spanish": "Las unidades [demon] añaden [multistrike] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "[demon]單位獲得[multistrike][effect0.upgrade.status0.power]。",
+        "korean": "[demon] 유닛들이 [multistrike] [effect0.upgrade.status0.power] 효과를 획득합니다.",
+        "japanese": "[demon]ユニットが[multistrike] [effect0.upgrade.status0.power]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-b470cff8c919992b-df132ee54f35ae14097e4dfcef76abe5-v2",
+          "english": "Though credited with building the Hellhorned’s section of the Rail, Grrrg wasn’t able to complete it without help from other demons. Some needed more motivation than others.",
+          "french": "Bien qu'on lui attribue la construction du tronçon cornu de la Voie, Grrrg n'y serait pas parvenu sans l'aide des autres diables. Certains ont eu besoin de plus de motivation que d'autres.",
+          "german": "Er gilt zwar als Erbauer des Gleises im Kreis der Höllenhörner, aber ohne die Hilfe der anderen Dämonen hätte Grrrg sein Werk niemals vollenden können. Manche mussten allerdings stärker motiviert werden als andere.",
+          "russian": "Хотя Гррра и почитают за создание железнодорожной ветки Адских отродий, он бы не справился с этой задачей без помощи демонов. Некоторым требуется дополнительная мотивация.",
+          "portuguese": "Embora receba o crédito pela construção da seção do Trilho correspondente aos Endiabrados, Grrrg não foi capaz de concluí-la sem a ajuda de outros demônios. Alguns precisaram de mais motivação que outros.",
+          "chinese": "尽管格鲁格因建造了狱魔氏族的铁道而名闻遐迩，但没了其他恶魔们的帮助，他是没办法一个人建造铁道的。有些恶魔比其他恶魔确实更需要鞭策。",
+          "spanish": "Aunque se le atribuye la construcción de la sección de los Astados Infernales de los Raíles, Grrrg no podría haberla completado sin la ayuda de otros demonios. Eso sí, algunos necesitaban más motivación que otros.",
+          "chinese_traditional": "雖然格拉格被認為是建造煉獄族軌道段的功臣，但沒有其他惡魔的幫助，他自己無法完成它。有些人相比其他人，需要更多的動力。",
+          "korean": "지옥뿔 군단 영역을 지나는 선로를 완성한 공로는 인정받았지만, 그레그는 다른 악마들의 도움 없이는 이를 완성하지 못했을 것이다. 그 중 일부는 다른 악마들보다 더 강한 동기가 필요했다.",
+          "japanese": "グルルグは、獄角族の管轄の線路を敷設した功績を認められていたが、他の悪魔たちの助力がなければ完成させることはできなかっただろう。しかし、一部の悪魔は尻を叩かれなければ働いてくれなかった。"
+        }
+      ],
+      "relic_effects": [
+        "@ImpDamageBuff.effects0"
+      ]
     }
   ],
-  "descriptionModifiers": [
+  "relic_effects": [
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-60e2c7effbedddd6-df132ee54f35ae14097e4dfcef76abe5-v2",
-        "english": "([value] [demon] units)",
-        "french": "([value] unités [demon])",
-        "german": "([value] [demon]-Einheiten)",
-        "russian": "([value] [demon] бойцов)",
-        "portuguese": "([value] unidades [demon])",
-        "chinese": "([value] [demon]单位)",
-        "spanish": "([value] unidades [demon])",
-        "chinese_traditional": "([value] [demon]單位)",
-        "korean": "([value] [demon] 유닛)",
-        "japanese": "([value] [demon]ユニット)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Demon_fcebd195-f262-4d7a-ac9f-01ffa2007a12"
+      "id": "ImpDamageBuff.effects0",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_upgrade": "AddMultistrikeToDemons",
+      "param_source_team": "monsters"
     }
-  ],
-  "unlockLevel": 6
+  ]
 }

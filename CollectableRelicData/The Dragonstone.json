@@ -1,85 +1,104 @@
 {
-  "id": "ModifyDragonsHoardBattleStart",
-  "guid": "3b6780ab-a1e8-443d-9ddb-5caedbd87775",
-  "name": "The Dragonstone",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-9674d7f2397fe969-52bce7887de374c4b85ccfd150985cfe-v2",
-    "english": "The Dragonstone",
-    "french": "Pierre du dragon",
-    "german": "Der Drachenstein",
-    "russian": "Драконий камень",
-    "portuguese": "Pedra Dracônica",
-    "chinese": "龙石",
-    "spanish": "Roca dracónica",
-    "chinese_traditional": "龍石",
-    "korean": "드래곤스톤",
-    "japanese": "竜の石"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-ce6025cf4b620d04-52bce7887de374c4b85ccfd150985cfe-v2",
-    "english": "Gain [effect0.power][dragonshoardicon] on the first turn of battle.",
-    "french": "Octroie [effect0.power][dragonshoardicon] au premier tour de la bataille.",
-    "german": "Erhalte im ersten Zug des Kampfes zusätzlich [effect0.power][dragonshoardicon] .",
-    "russian": "Дает [effect0.power][dragonshoardicon] в первый ход битвы.",
-    "portuguese": "Recebe [effect0.power][dragonshoardicon] no primeiro turno da batalha.",
-    "chinese": "每场战斗第一回合时获得 [effect0.power][dragonshoardicon]。",
-    "spanish": "Obtienes [effect0.power][dragonshoardicon] en el primer turno de la batalla.",
-    "chinese_traditional": "在戰鬥第一回合獲得[effect0.power][dragonshoardicon]。",
-    "korean": "전투 첫 턴에 [effect0.power][dragonshoardicon]를 획득합니다.",
-    "japanese": "バトルの最初のターンに[effect0.power][dragonshoardicon]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-c6f08a7c57a55395-52bce7887de374c4b85ccfd150985cfe-v2",
-      "english": "Said to have been made from a scale from Fhyra herself, the Dragonstone brings prosperity to whichever dragon possesses it. If said dragon loses the stone, however, they face destitution.",
-      "french": "On dit que la pierre du dragon a été fabriquée à partir d'une écaille de Fhyra elle-même, et qu'elle apporte la prospérité à tout dragon qui la possède. Cependant, si celui-ci la perd, c'est la misère qui l'attend.",
-      "german": "Es heißt, der Drachenstein wurde aus einer Schuppe von Fhyra selbst hergestellt und bringt dem Drachen, der ihn besitzt, Wohlstand. Verliert der Drache den Stein, wird er mittellos.",
-      "russian": "Драконий камень, якобы созданный из чешуи самой Фиры, приносит своему владельцу процветание. Однако если дракон потеряет камень, ему грозит нищета.",
-      "portuguese": "Supostamente feita a partir de uma escama da própria Fhyra, a Pedra Dracônica leva prosperidade para qualquer dragão que a tenha. No entanto, se esse dragão perder a pedra, ele será destituído.",
-      "chinese": "据说龙石是由菲拉本人的鳞片制成的，能给拥有它的龙带来财运。但这条龙如果弄丢了龙石，就会面临贫困潦倒。",
-      "spanish": "La Piedra del Dragón, fabricada supuestamente a partir de una escama de la propia Fhyra, brinda bonanza al dragón que la posea. No obstante, si este llegara a extraviarla, se sumiría en la más absoluta miseria.",
-      "chinese_traditional": "據說龍石是用費拉本人的鱗片製成的，能為擁有它的龍帶來繁榮。然而，如果龍失去了這塊石頭，就會面臨破產的命運。",
-      "korean": "드래곤스톤은 휘라의 비늘로 만들어졌다고 전해지며, 이를 소유한 드래곤에게 번영을 가져다준다. 드래곤스톤을 잃은 드래곤은 얼마 안 가 빈곤해진다.",
-      "japanese": "竜の石は、ファイラ自身の鱗から作られたと言われており、それを所有する竜に繁栄をもたらす。しかし、その竜が石を失うと、貧困に陥るのだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectModifyDragonsHoardStartOfCombat",
-      "additionalTooltips": [
+      "id": "ModifyDragonsHoardBattleStart",
+      "name": "The Dragonstone",
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "HudTooltip_DragonsHoardInactive_Body",
-            "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
-            "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
-            "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
-            "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
-            "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
-            "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
-            "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
-            "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
-            "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
-            "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
-          },
-          "titleKey": {
-            "key": "HudTooltip_DragonsHoard_Title",
-            "english": "[dragonshoardicon]Dragon's Hoard",
-            "french": "[dragonshoardicon]Trésor du dragon",
-            "german": "[dragonshoardicon]Drachenschatz",
-            "russian": "[dragonshoardicon] Драконий клад",
-            "portuguese": "[dragonshoardicon]Tesouro do Dragão",
-            "chinese": "[dragonshoardicon]龙族宝藏",
-            "spanish": "[dragonshoardicon]Tesoro de dragón",
-            "chinese_traditional": "[dragonshoardicon]龍之寶藏",
-            "korean": "[dragonshoardicon]드래곤의 재보",
-            "japanese": "竜の財宝[dragonshoardicon]"
-          },
-          "style": "default"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne"
+          }
         }
       ],
-      "paramInt": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-9674d7f2397fe969-52bce7887de374c4b85ccfd150985cfe-v2",
+        "english": "The Dragonstone",
+        "french": "Pierre du dragon",
+        "german": "Der Drachenstein",
+        "russian": "Драконий камень",
+        "portuguese": "Pedra Dracônica",
+        "chinese": "龙石",
+        "spanish": "Roca dracónica",
+        "chinese_traditional": "龍石",
+        "korean": "드래곤스톤",
+        "japanese": "竜の石"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-ce6025cf4b620d04-52bce7887de374c4b85ccfd150985cfe-v2",
+        "english": "Gain [effect0.power][dragonshoardicon] on the first turn of battle.",
+        "french": "Octroie [effect0.power][dragonshoardicon] au premier tour de la bataille.",
+        "german": "Erhalte im ersten Zug des Kampfes zusätzlich [effect0.power][dragonshoardicon] .",
+        "russian": "Дает [effect0.power][dragonshoardicon] в первый ход битвы.",
+        "portuguese": "Recebe [effect0.power][dragonshoardicon] no primeiro turno da batalha.",
+        "chinese": "每场战斗第一回合时获得 [effect0.power][dragonshoardicon]。",
+        "spanish": "Obtienes [effect0.power][dragonshoardicon] en el primer turno de la batalla.",
+        "chinese_traditional": "在戰鬥第一回合獲得[effect0.power][dragonshoardicon]。",
+        "korean": "전투 첫 턴에 [effect0.power][dragonshoardicon]를 획득합니다.",
+        "japanese": "バトルの最初のターンに[effect0.power][dragonshoardicon]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-c6f08a7c57a55395-52bce7887de374c4b85ccfd150985cfe-v2",
+          "english": "Said to have been made from a scale from Fhyra herself, the Dragonstone brings prosperity to whichever dragon possesses it. If said dragon loses the stone, however, they face destitution.",
+          "french": "On dit que la pierre du dragon a été fabriquée à partir d'une écaille de Fhyra elle-même, et qu'elle apporte la prospérité à tout dragon qui la possède. Cependant, si celui-ci la perd, c'est la misère qui l'attend.",
+          "german": "Es heißt, der Drachenstein wurde aus einer Schuppe von Fhyra selbst hergestellt und bringt dem Drachen, der ihn besitzt, Wohlstand. Verliert der Drache den Stein, wird er mittellos.",
+          "russian": "Драконий камень, якобы созданный из чешуи самой Фиры, приносит своему владельцу процветание. Однако если дракон потеряет камень, ему грозит нищета.",
+          "portuguese": "Supostamente feita a partir de uma escama da própria Fhyra, a Pedra Dracônica leva prosperidade para qualquer dragão que a tenha. No entanto, se esse dragão perder a pedra, ele será destituído.",
+          "chinese": "据说龙石是由菲拉本人的鳞片制成的，能给拥有它的龙带来财运。但这条龙如果弄丢了龙石，就会面临贫困潦倒。",
+          "spanish": "La Piedra del Dragón, fabricada supuestamente a partir de una escama de la propia Fhyra, brinda bonanza al dragón que la posea. No obstante, si este llegara a extraviarla, se sumiría en la más absoluta miseria.",
+          "chinese_traditional": "據說龍石是用費拉本人的鱗片製成的，能為擁有它的龍帶來繁榮。然而，如果龍失去了這塊石頭，就會面臨破產的命運。",
+          "korean": "드래곤스톤은 휘라의 비늘로 만들어졌다고 전해지며, 이를 소유한 드래곤에게 번영을 가져다준다. 드래곤스톤을 잃은 드래곤은 얼마 안 가 빈곤해진다.",
+          "japanese": "竜の石は、ファイラ自身の鱗から作られたと言われており、それを所有する竜に繁栄をもたらす。しかし、その竜が石を失うと、貧困に陥るのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@ModifyDragonsHoardBattleStart.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ModifyDragonsHoardBattleStart.effects0",
+      "name": "RelicEffectModifyDragonsHoardStartOfCombat",
+      "additional_tooltips": [
+        "@ModifyDragonsHoardBattleStart.effects0.additionalTooltips0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "ModifyDragonsHoardBattleStart.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "HudTooltip_DragonsHoardInactive_Body",
+        "english": "Earn Dragon's Hoard and loot it outside of battle for valuable rewards.",
+        "french": "Augmentez le Trésor du dragon et utilisez-le en dehors des combats pour obtenir de précieuses récompenses.",
+        "german": "Hol dir mit dem Drachenschatz außerhalb des Kampfes wertvolle Belohnungen.",
+        "russian": "Заработайте Драконий клад и обменяйте его на награду в перерыве между боями.",
+        "portuguese": "Ganhe Tesouro do Dragão e o saqueie fora da batalha para obter recompensas valiosas.",
+        "chinese": "获得龙族宝藏，在非战斗状态下将其搜刮以获得宝贵的奖励。",
+        "spanish": "Consigue Tesoro de dragón y saquéalo después de la batalla para ganar recompensas valiosas.",
+        "chinese_traditional": "賺取龍之寶藏並在戰鬥外掠奪它來獲得寶貴獎勵。",
+        "korean": "드래곤의 재보를 획득하고 전투 후 재보를 열어 귀중한 보상을 받으세요.",
+        "japanese": "竜の財宝を獲得し、バトル外で回収して貴重な報酬を手に入れよう。"
+      },
+      "titles": {
+        "key": "HudTooltip_DragonsHoard_Title",
+        "english": "[dragonshoardicon]Dragon's Hoard",
+        "french": "[dragonshoardicon]Trésor du dragon",
+        "german": "[dragonshoardicon]Drachenschatz",
+        "russian": "[dragonshoardicon] Драконий клад",
+        "portuguese": "[dragonshoardicon]Tesouro do Dragão",
+        "chinese": "[dragonshoardicon]龙族宝藏",
+        "spanish": "[dragonshoardicon]Tesoro de dragón",
+        "chinese_traditional": "[dragonshoardicon]龍之寶藏",
+        "korean": "[dragonshoardicon]드래곤의 재보",
+        "japanese": "竜の財宝[dragonshoardicon]"
+      },
+      "style": "default"
     }
   ]
 }

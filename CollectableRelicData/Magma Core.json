@@ -1,100 +1,127 @@
 {
-  "id": "PyreRevengeAddPyregel",
-  "guid": "82b22203-9da1-4f83-9e84-826fb8d1d280",
-  "name": "Magma Core",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-d5c545f18d1740a3-910484356e3e3714e8bbaf0eb0110313-v2",
-    "english": "Magma Core",
-    "french": "Noyau de magma",
-    "german": "Magmakern",
-    "russian": "Ядро магмы",
-    "portuguese": "Concentração de Magma",
-    "chinese": "岩浆核心",
-    "spanish": "Núcleo magmático",
-    "chinese_traditional": "岩漿核心",
-    "korean": "마그마 노심",
-    "japanese": "溶岩核"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-885cb60dae810910-910484356e3e3714e8bbaf0eb0110313-v2",
-    "english": "Your Pyre applies [pyregel] [effect0.power] to enemy units on all floors on [revenge].",
-    "french": "Votre Brasier inflige [pyregel] [effect0.power] aux unités ennemies à tous les niveaux si [revenge].",
-    "german": "Deine Höllenglut wendet bei [revenge] [pyregel] [effect0.power] auf gegnerische Einheiten auf allen Ebenen an.",
-    "russian": "[revenge]: ваше Пекло накладывает на врагов со всех этажей [pyregel] х[effect0.power].",
-    "portuguese": "Sua Pira aplica [pyregel] [effect0.power] às unidades inimigas em todos os andares durante a [revenge].",
-    "chinese": "你的薪火 [revenge] 时，对所有层的敌方单位施加 [pyregel] [effect0.power]。",
-    "spanish": "Tu Pira añade [pyregel] [effect0.power] a las unidades enemigas de todos los pisos como [revenge].",
-    "chinese_traditional": "你的火堆在[revenge]時，對所有樓層的敵方單位施加[pyregel][effect0.power]。",
-    "korean": "화로는 [revenge] 시, 모든 층의 적 유닛들에게 [pyregel] [effect0.power] 효과를 적용합니다.",
-    "japanese": "自軍の炉が[revenge]状態のすべてのフロアにいる敵ユニットに[pyregel] [effect0.power]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f92b9ef2a79b65c8-910484356e3e3714e8bbaf0eb0110313-v2",
-      "english": "It is a rare occurrence but sometimes the lava that flows between the Pyreborne caves will solidify into a mass humming with power.",
-      "french": "La lave qui s'écoule entre les grottes des Draconides se solidifie parfois en une masse bourdonnant de puissance.",
-      "german": "Selten kommt es vor, dass die Lava, die zwischen den Höhlen der Höllenglutkinder fließt, zu einer Masse erstarrt, die vor Kraft vibriert.",
-      "russian": "Изредка лава, которая огибает пещеры Пеклорожденных, образует сгустки, обладающие особой силой.",
-      "portuguese": "É uma ocorrência rara, mas, às vezes, a lava que flui entre as cavernas dos Píricos se solidifica em uma massa cheia de energia.",
-      "chinese": "有时候，在薪龙族洞穴间流淌的熔岩会凝固成嗡嗡作响，带有能量的熔岩团。这是一种罕见的现象。",
-      "spanish": "Es poco común, pero a veces la lava que fluye entre las cuevas de los Hijos de la Pira se solidifica, formando una masa llena de energía.",
-      "chinese_traditional": "這是一種罕見的情況，但有時在火焰之子洞穴之間流動的熔岩會凝固成充滿力量且發出嗡鳴的團塊。",
-      "korean": "정말 드물게 일어나는 일이지만, 가끔 화로의 후예가 사는 동굴 사이를 흐르는 용암이 힘을 얻어 시끄러운 소리를 내는 덩어리로 변하곤 한다.",
-      "japanese": "まれな出来事だが、火竜族の洞窟の間を流れる溶岩が固まって、強大な力が宿った塊になることがある。"
+      "id": "PyreRevengeAddPyregel",
+      "name": "Magma Core",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "unlock_level": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-d5c545f18d1740a3-910484356e3e3714e8bbaf0eb0110313-v2",
+        "english": "Magma Core",
+        "french": "Noyau de magma",
+        "german": "Magmakern",
+        "russian": "Ядро магмы",
+        "portuguese": "Concentração de Magma",
+        "chinese": "岩浆核心",
+        "spanish": "Núcleo magmático",
+        "chinese_traditional": "岩漿核心",
+        "korean": "마그마 노심",
+        "japanese": "溶岩核"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-885cb60dae810910-910484356e3e3714e8bbaf0eb0110313-v2",
+        "english": "Your Pyre applies [pyregel] [effect0.power] to enemy units on all floors on [revenge].",
+        "french": "Votre Brasier inflige [pyregel] [effect0.power] aux unités ennemies à tous les niveaux si [revenge].",
+        "german": "Deine Höllenglut wendet bei [revenge] [pyregel] [effect0.power] auf gegnerische Einheiten auf allen Ebenen an.",
+        "russian": "[revenge]: ваше Пекло накладывает на врагов со всех этажей [pyregel] х[effect0.power].",
+        "portuguese": "Sua Pira aplica [pyregel] [effect0.power] às unidades inimigas em todos os andares durante a [revenge].",
+        "chinese": "你的薪火 [revenge] 时，对所有层的敌方单位施加 [pyregel] [effect0.power]。",
+        "spanish": "Tu Pira añade [pyregel] [effect0.power] a las unidades enemigas de todos los pisos como [revenge].",
+        "chinese_traditional": "你的火堆在[revenge]時，對所有樓層的敵方單位施加[pyregel][effect0.power]。",
+        "korean": "화로는 [revenge] 시, 모든 층의 적 유닛들에게 [pyregel] [effect0.power] 효과를 적용합니다.",
+        "japanese": "自軍の炉が[revenge]状態のすべてのフロアにいる敵ユニットに[pyregel] [effect0.power]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f92b9ef2a79b65c8-910484356e3e3714e8bbaf0eb0110313-v2",
+          "english": "It is a rare occurrence but sometimes the lava that flows between the Pyreborne caves will solidify into a mass humming with power.",
+          "french": "La lave qui s'écoule entre les grottes des Draconides se solidifie parfois en une masse bourdonnant de puissance.",
+          "german": "Selten kommt es vor, dass die Lava, die zwischen den Höhlen der Höllenglutkinder fließt, zu einer Masse erstarrt, die vor Kraft vibriert.",
+          "russian": "Изредка лава, которая огибает пещеры Пеклорожденных, образует сгустки, обладающие особой силой.",
+          "portuguese": "É uma ocorrência rara, mas, às vezes, a lava que flui entre as cavernas dos Píricos se solidifica em uma massa cheia de energia.",
+          "chinese": "有时候，在薪龙族洞穴间流淌的熔岩会凝固成嗡嗡作响，带有能量的熔岩团。这是一种罕见的现象。",
+          "spanish": "Es poco común, pero a veces la lava que fluye entre las cuevas de los Hijos de la Pira se solidifica, formando una masa llena de energía.",
+          "chinese_traditional": "這是一種罕見的情況，但有時在火焰之子洞穴之間流動的熔岩會凝固成充滿力量且發出嗡鳴的團塊。",
+          "korean": "정말 드물게 일어나는 일이지만, 가끔 화로의 후예가 사는 동굴 사이를 흐르는 용암이 힘을 얻어 시끄러운 소리를 내는 덩어리로 변하곤 한다.",
+          "japanese": "まれな出来事だが、火竜族の洞窟の間を流れる溶岩が固まって、強大な力が宿った塊になることがある。"
+        }
+      ],
+      "relic_effects": [
+        "@PyreRevengeAddPyregel.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "PyreRevengeAddPyregel.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@PyreRevengeAddPyregel.effects0.additionalTooltips0"
+      ],
+      "triggers": [
+        "@PyreRevengeAddPyregel.effects0.triggers0"
+      ],
+      "param_source_team": "both",
+      "param_subtype": "SubtypesData_Pyre",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "PyreRevengeAddPyregel.effects0.triggers0",
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-448845796a064596-910484356e3e3714e8bbaf0eb0110313-v2",
+        "english": "Apply [pyregel] [effect0.power] to all enemy units.",
+        "french": "Inflige [pyregel] [effect0.power] à tous les ennemis.",
+        "german": "Wende [pyregel] [effect0.power] auf alle gegnerische Einheiten an.",
+        "russian": "Накладывает [pyregel] х[effect0.power] на бойцов врага.",
+        "portuguese": "Aplica [pyregel] [effect0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [pyregel] [effect0.power]。",
+        "spanish": "Añade [pyregel] [effect0.power] a todas las unidades enemigas.",
+        "chinese_traditional": "對所有敵方單位施加[pyregel][effect0.power]。",
+        "korean": "모든 적 유닛들에게 [pyregel] [effect0.power] 효과를 적용합니다.",
+        "japanese": "すべての敵ユニットに[pyregel] [effect0.power]を付与する。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@PyreRevengeAddPyregel.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true,
+      "suppress_notifications": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "PyreRevengeAddPyregel.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "tower",
+      "target_team": "heroes",
+      "param_status_effects": [
         {
-          "trigger": "on_hit",
-          "style": "default",
-          "isTriggerTooltip": true
+          "status": "pyregel",
+          "count": 2
         }
-      ],
-      "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CollectableRelicData_descriptionKey-448845796a064596-910484356e3e3714e8bbaf0eb0110313-v2",
-            "english": "Apply [pyregel] [effect0.power] to all enemy units.",
-            "french": "Inflige [pyregel] [effect0.power] à tous les ennemis.",
-            "german": "Wende [pyregel] [effect0.power] auf alle gegnerische Einheiten an.",
-            "russian": "Накладывает [pyregel] х[effect0.power] на бойцов врага.",
-            "portuguese": "Aplica [pyregel] [effect0.power] às unidades inimigas.",
-            "chinese": "对所有敌方单位施加 [pyregel] [effect0.power]。",
-            "spanish": "Añade [pyregel] [effect0.power] a todas las unidades enemigas.",
-            "chinese_traditional": "對所有敵方單位施加[pyregel][effect0.power]。",
-            "korean": "모든 적 유닛들에게 [pyregel] [effect0.power] 효과를 적용합니다.",
-            "japanese": "すべての敵ユニットに[pyregel] [effect0.power]を付与する。"
-          },
-          "trigger": "on_hit",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "tower",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "pyregel",
-                  "count": 2
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true,
-          "suppressTriggerNotification": true
-        }
-      ],
-      "paramSourceTeam": "both",
-      "paramCharacterSubtype": "SubtypesData_Pyre",
-      "paramBool": true
+      ]
     }
   ],
-  "unlockLevel": 5
+  "additional_tooltips": [
+    {
+      "isTriggerTooltip": true,
+      "id": "PyreRevengeAddPyregel.effects0.additionalTooltips0",
+      "trigger": "on_hit",
+      "style": "default"
+    }
+  ]
 }

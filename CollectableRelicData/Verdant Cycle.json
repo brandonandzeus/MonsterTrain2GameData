@@ -1,109 +1,129 @@
 {
-  "id": "DrawCardWhenConsumePlayed",
-  "guid": "4fbb0cca-26cd-4510-af02-66694c7edfd3",
-  "name": "Verdant Cycle",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-34403299a4692d3e-d8851d3c6e114824482b06e2e4bbdad9-v2",
-    "english": "Verdant Cycle",
-    "french": "Cycle verdoyant",
-    "german": "Grüner Kreislauf",
-    "russian": "Зеленый круг",
-    "portuguese": "Ciclo Verdejante",
-    "chinese": "新生循环",
-    "spanish": "Ciclo vital",
-    "chinese_traditional": "翠綠循環",
-    "korean": "초목의 순환",
-    "japanese": "生命のサイクル"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-3be00a16810efe73-d8851d3c6e114824482b06e2e4bbdad9-v2",
-    "english": "The first time each turn a spell card with [consume] is played, draw [effect0.power].",
-    "french": "À la première carte de sort avec [consume] du tour, piochez [effect0.power].",
-    "german": "Beim ersten Mal pro Zug, wenn eine Zauberkarte mit [consume] gespielt wird, ziehst du [effect0.power].",
-    "russian": "Первый раз в ход, когда вы сыграете чары со свойством <b>Поглощение</b>, возьмите [effect0.power].",
-    "portuguese": "A primeira vez que uma carta de feitiço com [consume] é jogada em cada turno, compra [effect0.power].",
-    "chinese": "每回合首次使用带有 [consume] 的法术牌时，抽 [effect0.power] 张牌。",
-    "spanish": "La primera vez que juegas una carta de hechizo con [consume], roba [effect0.power].",
-    "chinese_traditional": "當首次打出帶有[consume]的法術卡時，抽[effect0.power]張牌。",
-    "korean": "매 턴 처음으로 [consume] 효과를 지닌 주문 카드를 사용하면 카드 [effect0.power]장을 뽑습니다.",
-    "japanese": "毎ターン、初めて属性が[consume]の呪文カードがプレイされると、[effect0.power]枚ドローする。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-ade4af13218fd0f3-d8851d3c6e114824482b06e2e4bbdad9-v2",
-      "english": "Where the branches of the Fatal Elm reach beyond Heaven, a spore grows anew. Maybe this is a sign that this tree will become the Creation Elm once again.",
-      "french": "Là où les branches de l'Orme funeste s'étendent au-delà du paradis, une spore pousse à nouveau. C'est peut-être le signe que cet arbre redeviendra l'Orme de la Création.",
-      "german": "Dort, wo die Äste der Schicksalsulme über den Himmel hinausragen, wächst eine neue Spore. Vielleicht ist das ein Zeichen dafür, dass dieser Baum wieder zur Schöpfungsulme wird.",
-      "russian": "Там, где ветви Рокового вяза уходят за пределы Рая, заново прорастает спора. Возможно, это знак того, что это дерево снова станет Вязом Созидания.",
-      "portuguese": "Os esporos sempre crescem onde os galhos do Ulmeiro Mortal se estendem. Talvez isso seja um sinal de que esta árvore se tornará o Ulmeiro da Criação novamente.",
-      "chinese": "在致命榆树的枝条伸向天堂之上的某个地方，一颗孢子重新生长。也许这预示着，这棵树会再次成为造物榆树。",
-      "spanish": "Allá donde las ramas del Olmo Fatal sobrepasan los límites del Cielo, vuelve a brotar una espora. Quizás sea una señal de que este árbol se convertirá de nuevo en el Olmo de la Creación.",
-      "chinese_traditional": "在致命榆樹的枝條伸向天堂之外的地方，有個新的孢子正在生長。也許這是一個徵兆，表明這棵樹將再次成為創造榆樹。",
-      "korean": "운명의 느릅나무가 천상 너머에 도달하자 포자가 새로 자라기 시작했다. 창조의 느릅나무로 다시 돌아올 것이라는 신호일지도 모른다.",
-      "japanese": "宿命の樹の天界をも越える枝に、新たな胞子が生えている。これは、この木が再び創造の樹となる兆しなのかもしれない。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassUnderlegion",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectCardDrawOnCardPlay",
-      "paramCardType": "spell",
-      "additionalTooltips": [
+      "id": "DrawCardWhenConsumePlayed",
+      "name": "Verdant Cycle",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitExhaustState_TooltipText",
-            "english": "Can only be played once per battle.",
-            "french": "Ne peut être jouée qu'une fois par combat.",
-            "german": "Kann nur einmal pro Kampf gespielt werden.",
-            "russian": "Можно использовать только один раз за бой.",
-            "portuguese": "Só pode ser usada uma vez por batalha.",
-            "chinese": "每场战斗只能使用一次。",
-            "spanish": "Solo puede jugarse una vez por batalla.",
-            "chinese_traditional": "每場戰鬥只能打出一次。",
-            "korean": "전투 중 한 번만 사용할 수 있습니다.",
-            "japanese": "バトルにつき1回のみプレイ可能。"
-          },
-          "titleKey": {
-            "key": "CardTraitExhaustState_CardText",
-            "english": "Consume",
-            "french": "Destruction",
-            "german": "Verbrauch",
-            "russian": "Поглощение",
-            "portuguese": "Consumir",
-            "chinese": "消耗",
-            "spanish": "Consumir",
-            "chinese_traditional": "消耗",
-            "korean": "소모",
-            "japanese": "消費"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassUnderlegion",
+            "unlock_level": 2
           }
         }
       ],
-      "effectConditions": [
+      "names": {
+        "key": "CollectableRelicData_nameKey-34403299a4692d3e-d8851d3c6e114824482b06e2e4bbdad9-v2",
+        "english": "Verdant Cycle",
+        "french": "Cycle verdoyant",
+        "german": "Grüner Kreislauf",
+        "russian": "Зеленый круг",
+        "portuguese": "Ciclo Verdejante",
+        "chinese": "新生循环",
+        "spanish": "Ciclo vital",
+        "chinese_traditional": "翠綠循環",
+        "korean": "초목의 순환",
+        "japanese": "生命のサイクル"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-3be00a16810efe73-d8851d3c6e114824482b06e2e4bbdad9-v2",
+        "english": "The first time each turn a spell card with [consume] is played, draw [effect0.power].",
+        "french": "À la première carte de sort avec [consume] du tour, piochez [effect0.power].",
+        "german": "Beim ersten Mal pro Zug, wenn eine Zauberkarte mit [consume] gespielt wird, ziehst du [effect0.power].",
+        "russian": "Первый раз в ход, когда вы сыграете чары со свойством <b>Поглощение</b>, возьмите [effect0.power].",
+        "portuguese": "A primeira vez que uma carta de feitiço com [consume] é jogada em cada turno, compra [effect0.power].",
+        "chinese": "每回合首次使用带有 [consume] 的法术牌时，抽 [effect0.power] 张牌。",
+        "spanish": "La primera vez que juegas una carta de hechizo con [consume], roba [effect0.power].",
+        "chinese_traditional": "當首次打出帶有[consume]的法術卡時，抽[effect0.power]張牌。",
+        "korean": "매 턴 처음으로 [consume] 효과를 지닌 주문 카드를 사용하면 카드 [effect0.power]장을 뽑습니다.",
+        "japanese": "毎ターン、初めて属性が[consume]の呪文カードがプレイされると、[effect0.power]枚ドローする。"
+      },
+      "lore_tooltips": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "greater_than",
-            "equal"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "key": "CollectableRelicData_data-ade4af13218fd0f3-d8851d3c6e114824482b06e2e4bbdad9-v2",
+          "english": "Where the branches of the Fatal Elm reach beyond Heaven, a spore grows anew. Maybe this is a sign that this tree will become the Creation Elm once again.",
+          "french": "Là où les branches de l'Orme funeste s'étendent au-delà du paradis, une spore pousse à nouveau. C'est peut-être le signe que cet arbre redeviendra l'Orme de la Création.",
+          "german": "Dort, wo die Äste der Schicksalsulme über den Himmel hinausragen, wächst eine neue Spore. Vielleicht ist das ein Zeichen dafür, dass dieser Baum wieder zur Schöpfungsulme wird.",
+          "russian": "Там, где ветви Рокового вяза уходят за пределы Рая, заново прорастает спора. Возможно, это знак того, что это дерево снова станет Вязом Созидания.",
+          "portuguese": "Os esporos sempre crescem onde os galhos do Ulmeiro Mortal se estendem. Talvez isso seja um sinal de que esta árvore se tornará o Ulmeiro da Criação novamente.",
+          "chinese": "在致命榆树的枝条伸向天堂之上的某个地方，一颗孢子重新生长。也许这预示着，这棵树会再次成为造物榆树。",
+          "spanish": "Allá donde las ramas del Olmo Fatal sobrepasan los límites del Cielo, vuelve a brotar una espora. Quizás sea una señal de que este árbol se convertirá de nuevo en el Olmo de la Creación.",
+          "chinese_traditional": "在致命榆樹的枝條伸向天堂之外的地方，有個新的孢子正在生長。也許這是一個徵兆，表明這棵樹將再次成為創造榆樹。",
+          "korean": "운명의 느릅나무가 천상 너머에 도달하자 포자가 새로 자라기 시작했다. 창조의 느릅나무로 다시 돌아올 것이라는 신호일지도 모른다.",
+          "japanese": "宿命の樹の天界をも越える枝に、新たな胞子が生えている。これは、この木が再び創造の樹となる兆しなのかもしれない。"
         }
       ],
-      "traits": [
-        {
-          "traitStateName": "CardTraitExhaustState",
-          "traitIsRemovable": false
-        }
-      ],
-      "paramInt": 1
+      "relic_effects": [
+        "@DrawCardWhenConsumePlayed.effects0"
+      ]
     }
   ],
-  "unlockLevel": 2
+  "relic_effects": [
+    {
+      "id": "DrawCardWhenConsumePlayed.effects0",
+      "name": "RelicEffectCardDrawOnCardPlay",
+      "param_card_type": "spell",
+      "additional_tooltips": [
+        "@DrawCardWhenConsumePlayed.effects0.additionalTooltips0"
+      ],
+      "conditions": [
+        "@DrawCardWhenConsumePlayed.effects0.effectConditions0"
+      ],
+      "traits": [
+        "@DrawCardWhenConsumePlayed.effects0.traits0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "DrawCardWhenConsumePlayed.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "greater_than",
+        "equal"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "DrawCardWhenConsumePlayed.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitExhaustState_TooltipText",
+        "english": "Can only be played once per battle.",
+        "french": "Ne peut être jouée qu'une fois par combat.",
+        "german": "Kann nur einmal pro Kampf gespielt werden.",
+        "russian": "Можно использовать только один раз за бой.",
+        "portuguese": "Só pode ser usada uma vez por batalha.",
+        "chinese": "每场战斗只能使用一次。",
+        "spanish": "Solo puede jugarse una vez por batalla.",
+        "chinese_traditional": "每場戰鬥只能打出一次。",
+        "korean": "전투 중 한 번만 사용할 수 있습니다.",
+        "japanese": "バトルにつき1回のみプレイ可能。"
+      },
+      "titles": {
+        "key": "CardTraitExhaustState_CardText",
+        "english": "Consume",
+        "french": "Destruction",
+        "german": "Verbrauch",
+        "russian": "Поглощение",
+        "portuguese": "Consumir",
+        "chinese": "消耗",
+        "spanish": "Consumir",
+        "chinese_traditional": "消耗",
+        "korean": "소모",
+        "japanese": "消費"
+      }
+    }
+  ]
 }

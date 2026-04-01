@@ -1,60 +1,75 @@
 {
-  "id": "CarriageJack",
-  "guid": "19e15240-37ca-460d-8230-693626fc7f7e",
-  "name": "Carriage Jack",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-2a9ed59134a482ae-05e4be99d477120499de65cecc8cfc4a-v2",
-    "english": "Carriage Jack",
-    "french": "Cric de transport",
-    "german": "Wagenheber",
-    "russian": "Домкрат",
-    "portuguese": "Alavanca de Vagão",
-    "chinese": "车厢千斤顶",
-    "spanish": "Gato de vagón",
-    "chinese_traditional": "車廂千斤頂",
-    "korean": "객차 잭",
-    "japanese": "客車ジャッキ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-f44038aa3c250a1e-05e4be99d477120499de65cecc8cfc4a-v2",
-    "english": "When you play a Room card, apply +[effect0.power][capacity] on the floor.",
-    "french": "Quand vous jouez une carte de salle, octroie +[effect0.power][capacity] au niveau.",
-    "german": "Wenn du eine Raumkarte spielst, werden in dieser Ebene +[effect0.power][capacity] angewandt.",
-    "russian": "При розыгрыше карты комнат на этаже дается +[effect0.power][capacity].",
-    "portuguese": "Quando você joga uma Carta de Sala, concede [effect0.power][capacity] ao andar.",
-    "chinese": "你打出一张房间卡时，该层获得 +[effect0.power][capacity]。",
-    "spanish": "Cuando juegas una carta de sala, añade +[effect0.power][capacity] al piso.",
-    "chinese_traditional": "當你打出一張房間牌時，在該樓層施加+[effect0.power][capacity]。",
-    "korean": "객실 카드를 사용하면, 해당 층에 +[effect0.power][capacity]이 적용됩니다.",
-    "japanese": "ルームカードをプレイすると、フロアに+[effect0.power][capacity]を付与する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-4147c38ad91fa1b2-05e4be99d477120499de65cecc8cfc4a-v2",
-      "english": "The original Boneshaker used to be a multi-car train. It was only when the fighting began that the line of carriages were abandoned in favor of a single, tall carriage, which made defending the Pyre an easier task. The single car design has remained the standard, and has since been inherited by the Skull Crusher. ",
-      "french": "Le Hurleflammes d'origine était un train à plusieurs wagons. Ce n'est qu'au début des hostilités que sa configuration fut modifiée au profit d'un seul wagon élevé, afin de faciliter la défense du Brasier. Ce concept de wagon unique est devenu la norme et a été perpétué par le Brise-crânes. ",
-      "german": "Der ursprüngliche Knochenrüttler war ein mehrere Waggons umfassender Zug. Erst als die Kämpfe begannen, wurde die Reihe von Waggons gegen einen einzelnen, großen Waggon getauscht, mit dessen Hilfe die Höllenglut leichter verteidigt werden konnte. Die Einzelwaggon-Bauweise ist seitdem Standard und wurde seit dem Schädelquetscher oft wiederverwendet. ",
-      "russian": "«Костолом» состоял из нескольких вагонов. Только с началом войны эти вагоны отцепили — выбрали один, высокий, чтобы проще было защищать Пекло. Такая одновагонная конструкция стала стандартом и позже была унаследована «Крушителем черепов». ",
-      "portuguese": "O Ossuário original costumava ser um trem com muito vagões. Foi só após o início dos conflitos que a fileira de carros foi abandonada em prol de um único vagão, o que facilitava a tarefa de defender a Pira. O design de vagão único tornou-se o padrão, e foi adotado pelo Triturador de Crânios. ",
-      "chinese": "老爷车号原本是一列拥有多节车厢的火车。战斗打响时，长长一列车厢被丢弃，只留下一节高大的车厢，以降低保卫薪火的难度。单车厢设计后来成为了标准，由碎颅者沿用至今。 ",
-      "spanish": "El Sacudehuesos original era un tren de varios vagones. Solo cuando comenzó la lucha se abandonó la fila de vagones para adoptar uno solo de gran altura, lo que facilitó la protección de la Pira. Este diseño de un vagón se ha mantenido en uso y se ha utilizado también en la creación del Rompecráneos. ",
-      "chinese_traditional": "「碎骨者」最初是多節車廂的列車。直到戰火燃起，為了更便於守護薪火，才捨棄了連綿的車廂，改用單一的高聳車體。這種單車廂設計從此成為標準，並為後來的「碎顱者」所沿襲。 ",
-      "korean": "원래의 본쉐이커는 여러 객차로 이루어진 열차였다. 하지만 전투가 시작되면서, 화로를 방어하기 용이하도록 단 하나의 높은 객차만 남기고 나머지 차량들은 버려졌다. 그 단일 구조는 곧 새로운 표준이 되었고, 그 형태가 바로 오늘의 해골 분쇄자에 계승되고 있다. ",
-      "japanese": "オリジナルのボーンシェイカーは、複数車両の列車だった。戦いが始まり、後続の客車は撤廃され、1両の背の高い客車が採用された。これにより、炉の防衛がしやすくなった。1両編成の設計は標準となり、その後スカルクラッシャーにも引き継がれた。 "
+      "id": "CarriageJack",
+      "name": "Carriage Jack",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRailforged",
+            "unlock_level": 6,
+            "required_dlc": "railforged"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-2a9ed59134a482ae-05e4be99d477120499de65cecc8cfc4a-v2",
+        "english": "Carriage Jack",
+        "french": "Cric de transport",
+        "german": "Wagenheber",
+        "russian": "Домкрат",
+        "portuguese": "Alavanca de Vagão",
+        "chinese": "车厢千斤顶",
+        "spanish": "Gato de vagón",
+        "chinese_traditional": "車廂千斤頂",
+        "korean": "객차 잭",
+        "japanese": "客車ジャッキ"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-f44038aa3c250a1e-05e4be99d477120499de65cecc8cfc4a-v2",
+        "english": "When you play a Room card, apply +[effect0.power][capacity] on the floor.",
+        "french": "Quand vous jouez une carte de salle, octroie +[effect0.power][capacity] au niveau.",
+        "german": "Wenn du eine Raumkarte spielst, werden in dieser Ebene +[effect0.power][capacity] angewandt.",
+        "russian": "При розыгрыше карты комнат на этаже дается +[effect0.power][capacity].",
+        "portuguese": "Quando você joga uma Carta de Sala, concede [effect0.power][capacity] ao andar.",
+        "chinese": "你打出一张房间卡时，该层获得 +[effect0.power][capacity]。",
+        "spanish": "Cuando juegas una carta de sala, añade +[effect0.power][capacity] al piso.",
+        "chinese_traditional": "當你打出一張房間牌時，在該樓層施加+[effect0.power][capacity]。",
+        "korean": "객실 카드를 사용하면, 해당 층에 +[effect0.power][capacity]이 적용됩니다.",
+        "japanese": "ルームカードをプレイすると、フロアに+[effect0.power][capacity]を付与する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-4147c38ad91fa1b2-05e4be99d477120499de65cecc8cfc4a-v2",
+          "english": "The original Boneshaker used to be a multi-car train. It was only when the fighting began that the line of carriages were abandoned in favor of a single, tall carriage, which made defending the Pyre an easier task. The single car design has remained the standard, and has since been inherited by the Skull Crusher. ",
+          "french": "Le Hurleflammes d'origine était un train à plusieurs wagons. Ce n'est qu'au début des hostilités que sa configuration fut modifiée au profit d'un seul wagon élevé, afin de faciliter la défense du Brasier. Ce concept de wagon unique est devenu la norme et a été perpétué par le Brise-crânes. ",
+          "german": "Der ursprüngliche Knochenrüttler war ein mehrere Waggons umfassender Zug. Erst als die Kämpfe begannen, wurde die Reihe von Waggons gegen einen einzelnen, großen Waggon getauscht, mit dessen Hilfe die Höllenglut leichter verteidigt werden konnte. Die Einzelwaggon-Bauweise ist seitdem Standard und wurde seit dem Schädelquetscher oft wiederverwendet. ",
+          "russian": "«Костолом» состоял из нескольких вагонов. Только с началом войны эти вагоны отцепили — выбрали один, высокий, чтобы проще было защищать Пекло. Такая одновагонная конструкция стала стандартом и позже была унаследована «Крушителем черепов». ",
+          "portuguese": "O Ossuário original costumava ser um trem com muito vagões. Foi só após o início dos conflitos que a fileira de carros foi abandonada em prol de um único vagão, o que facilitava a tarefa de defender a Pira. O design de vagão único tornou-se o padrão, e foi adotado pelo Triturador de Crânios. ",
+          "chinese": "老爷车号原本是一列拥有多节车厢的火车。战斗打响时，长长一列车厢被丢弃，只留下一节高大的车厢，以降低保卫薪火的难度。单车厢设计后来成为了标准，由碎颅者沿用至今。 ",
+          "spanish": "El Sacudehuesos original era un tren de varios vagones. Solo cuando comenzó la lucha se abandonó la fila de vagones para adoptar uno solo de gran altura, lo que facilitó la protección de la Pira. Este diseño de un vagón se ha mantenido en uso y se ha utilizado también en la creación del Rompecráneos. ",
+          "chinese_traditional": "「碎骨者」最初是多節車廂的列車。直到戰火燃起，為了更便於守護薪火，才捨棄了連綿的車廂，改用單一的高聳車體。這種單車廂設計從此成為標準，並為後來的「碎顱者」所沿襲。 ",
+          "korean": "원래의 본쉐이커는 여러 객차로 이루어진 열차였다. 하지만 전투가 시작되면서, 화로를 방어하기 용이하도록 단 하나의 높은 객차만 남기고 나머지 차량들은 버려졌다. 그 단일 구조는 곧 새로운 표준이 되었고, 그 형태가 바로 오늘의 해골 분쇄자에 계승되고 있다. ",
+          "japanese": "オリジナルのボーンシェイカーは、複数車両の列車だった。戦いが始まり、後続の客車は撤廃され、1両の背の高い客車が採用された。これにより、炉の防衛がしやすくなった。1両編成の設計は標準となり、その後スカルクラッシャーにも引き継がれた。 "
+        }
+      ],
+      "relic_effects": [
+        "@CarriageJack.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectModifyRoomCapacityOnCardPlay",
-      "paramCardType": "room",
-      "paramInt": 1
+      "id": "CarriageJack.effects0",
+      "name": "RelicEffectModifyRoomCapacityOnCardPlay",
+      "param_card_type": "room",
+      "param_int": 1
     }
-  ],
-  "unlockLevel": 6,
-  "requiredDLC": "railforged"
+  ]
 }

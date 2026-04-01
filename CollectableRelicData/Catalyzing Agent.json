@@ -1,70 +1,91 @@
 {
-  "id": "UncontrolledGroup",
-  "guid": "4c737e1e-7e5c-40ee-87a3-944859784283",
-  "name": "Catalyzing Agent",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-f46a8549d20721d3-bbfb69189874a694fb7b1d667591ab5a-v2",
-    "english": "Catalyzing Agent",
-    "french": "Agent catalyseur",
-    "german": "Katalysator",
-    "russian": "Катализатор",
-    "portuguese": "Agente Catalisador",
-    "chinese": "催化剂",
-    "spanish": "Agente catalizador",
-    "chinese_traditional": "催化劑",
-    "korean": "촉매제",
-    "japanese": "触媒物質"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-659e30bfa77d74a6-bbfb69189874a694fb7b1d667591ab5a-v2",
-    "english": "At end of turn, [unstable] increases by [effect1.power].",
-    "french": "En fin de tour, [unstable] augmente de [effect1.power].",
-    "german": "Am Ende des Zuges wird [unstable] um [effect1.power] erhöht.",
-    "russian": "В конце хода [unstable] увеличивается на [effect1.power].",
-    "portuguese": "No fim do turno, [unstable] aumenta em [effect1.power].",
-    "chinese": "在战斗结束时， [unstable] 增加 [effect1.power] 层。",
-    "spanish": "Al final del turno, [unstable] aumenta en [effect1.power].",
-    "chinese_traditional": "回合結束時，[unstable]提升[effect1.power]。",
-    "korean": "턴 종료 시, [unstable] 효과가 [effect1.power]만큼 증가합니다.",
-    "japanese": "ターン終了時に[unstable]が[effect1.power]増加する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-f9e5b4262144dfbb-bbfb69189874a694fb7b1d667591ab5a-v2",
-      "english": "“I’m not sure what it does except that it does have a wonderful and fresh minty flavor.”\n—from Dr. Orechi’s notebook",
-      "french": "<nobr>« Je</nobr> ne sais pas exactement ce que ça fait, mais ça a un merveilleux goût de menthe <nobr>fraîche. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
-      "german": "„Ich bin mir nicht sicher, was die Wirkung ist – außer, dass es einen wundervollen Minzgeschmack hat.“\n—aus Dr. Orechis Notizbuch",
-      "russian": "«Не знаю, что эта штука делает, но у нее очень приятный мятный вкус».\n— Из записной книжки доктора Оречи",
-      "portuguese": "“Não sei o que isso faz, exceto que tem um sabor maravilhoso e fresco de menta.”\n— Anotação do Dr. Orechi",
-      "chinese": "“我不知道它有什么用，但它确实有一种美妙而清新的薄荷味。”\n——摘自奥莱奇博士的笔记本",
-      "spanish": "«No sé lo que hace esto, pero sí que tiene un sabor a menta delicioso y refrescante».\n—Cuaderno del Dr. Orechi",
-      "chinese_traditional": "「我不確定它能做什麼，除了它有一種美妙而清新的薄荷味以外。」\n——摘自奧雷奇博士的筆記本",
-      "korean": "“신선하고 환상적인 민트 맛이 나는 것 외에는 어떤 효과가 있는지 잘 모르겠군.”\n- 오레치 박사의 기록",
-      "japanese": "「ミントの素晴らしくフレッシュな風味があるということ以外、どんな効果があるのか​​はよくわからん」\n—ドクター・オレチのメモ帳より"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectRebalanceUnstable",
-      "additionalTooltips": [
+      "id": "UncontrolledGroup",
+      "name": "Catalyzing Agent",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "statusId": "unstable",
-          "style": "relic_title",
-          "isStatusTooltip": true
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassLazarusLeague",
+            "unlock_level": 2
+          }
         }
       ],
-      "paramSourceTeam": "both",
-      "paramMinInt": 5
-    },
-    {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 5
+      "names": {
+        "key": "CollectableRelicData_nameKey-f46a8549d20721d3-bbfb69189874a694fb7b1d667591ab5a-v2",
+        "english": "Catalyzing Agent",
+        "french": "Agent catalyseur",
+        "german": "Katalysator",
+        "russian": "Катализатор",
+        "portuguese": "Agente Catalisador",
+        "chinese": "催化剂",
+        "spanish": "Agente catalizador",
+        "chinese_traditional": "催化劑",
+        "korean": "촉매제",
+        "japanese": "触媒物質"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-659e30bfa77d74a6-bbfb69189874a694fb7b1d667591ab5a-v2",
+        "english": "At end of turn, [unstable] increases by [effect1.power].",
+        "french": "En fin de tour, [unstable] augmente de [effect1.power].",
+        "german": "Am Ende des Zuges wird [unstable] um [effect1.power] erhöht.",
+        "russian": "В конце хода [unstable] увеличивается на [effect1.power].",
+        "portuguese": "No fim do turno, [unstable] aumenta em [effect1.power].",
+        "chinese": "在战斗结束时， [unstable] 增加 [effect1.power] 层。",
+        "spanish": "Al final del turno, [unstable] aumenta en [effect1.power].",
+        "chinese_traditional": "回合結束時，[unstable]提升[effect1.power]。",
+        "korean": "턴 종료 시, [unstable] 효과가 [effect1.power]만큼 증가합니다.",
+        "japanese": "ターン終了時に[unstable]が[effect1.power]増加する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-f9e5b4262144dfbb-bbfb69189874a694fb7b1d667591ab5a-v2",
+          "english": "“I’m not sure what it does except that it does have a wonderful and fresh minty flavor.”\n—from Dr. Orechi’s notebook",
+          "french": "<nobr>« Je</nobr> ne sais pas exactement ce que ça fait, mais ça a un merveilleux goût de menthe <nobr>fraîche. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
+          "german": "„Ich bin mir nicht sicher, was die Wirkung ist – außer, dass es einen wundervollen Minzgeschmack hat.“\n—aus Dr. Orechis Notizbuch",
+          "russian": "«Не знаю, что эта штука делает, но у нее очень приятный мятный вкус».\n— Из записной книжки доктора Оречи",
+          "portuguese": "“Não sei o que isso faz, exceto que tem um sabor maravilhoso e fresco de menta.”\n— Anotação do Dr. Orechi",
+          "chinese": "“我不知道它有什么用，但它确实有一种美妙而清新的薄荷味。”\n——摘自奥莱奇博士的笔记本",
+          "spanish": "«No sé lo que hace esto, pero sí que tiene un sabor a menta delicioso y refrescante».\n—Cuaderno del Dr. Orechi",
+          "chinese_traditional": "「我不確定它能做什麼，除了它有一種美妙而清新的薄荷味以外。」\n——摘自奧雷奇博士的筆記本",
+          "korean": "“신선하고 환상적인 민트 맛이 나는 것 외에는 어떤 효과가 있는지 잘 모르겠군.”\n- 오레치 박사의 기록",
+          "japanese": "「ミントの素晴らしくフレッシュな風味があるということ以外、どんな効果があるのか​​はよくわからん」\n—ドクター・オレチのメモ帳より"
+        }
+      ],
+      "relic_effects": [
+        "@UncontrolledGroup.effects0",
+        "@UncontrolledGroup.effects1"
+      ]
     }
   ],
-  "unlockLevel": 2
+  "relic_effects": [
+    {
+      "id": "UncontrolledGroup.effects0",
+      "name": "RelicEffectRebalanceUnstable",
+      "additional_tooltips": [
+        "@UncontrolledGroup.effects0.additionalTooltips0"
+      ],
+      "param_source_team": "both",
+      "param_min_int": 5
+    },
+    {
+      "id": "UncontrolledGroup.effects1",
+      "name": "RelicEffectNull",
+      "param_int": 5
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "isStatusTooltip": true,
+      "id": "UncontrolledGroup.effects0.additionalTooltips0",
+      "status": "unstable",
+      "style": "relic_title"
+    }
+  ]
 }

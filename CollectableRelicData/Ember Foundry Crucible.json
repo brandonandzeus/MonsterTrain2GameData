@@ -1,88 +1,107 @@
 {
-  "id": "EmberFoundryCrucible",
-  "guid": "a034e00f-3a12-4c19-b626-4b8fd17c412a",
-  "name": "Ember Foundry Crucible",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-ca443cc9075f799a-2c12174b9d6b4a14abeb3909964e5a88-v2",
-    "english": "Ember Foundry Crucible",
-    "french": "Creuset de la Fournaise de braises",
-    "german": "Glutasche-Gießerei-Schmelztiegel",
-    "russian": "Горнило угольной литейной",
-    "portuguese": "Crisol da Fundição de Brasa",
-    "chinese": "余烬铸造厂熔炉",
-    "spanish": "Crisol de fundición de ascuas",
-    "chinese_traditional": "餘燼鑄造廠地獄熔爐",
-    "korean": "잔불 주조소 도가니",
-    "japanese": "炉炭彫像工場のるつぼ"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-6207fc6a2d20aad6-2c12174b9d6b4a14abeb3909964e5a88-v2",
-    "english": "[smelt] grants an additional +[effect0.power][ember].",
-    "french": "La [smelt] octroie +[effect0.power][ember].",
-    "german": "[smelt] verschafft dir zusätzlich +[effect0.power][ember].",
-    "russian": "[smelt] дополнительно дает +[effect0.power][ember].",
-    "portuguese": "[smelt] concede um adicional de +[effect0.power][ember].",
-    "chinese": "[smelt] 额外提供 +[effect0.power][ember]。",
-    "spanish": "[smelt] añade +[effect0.power][ember].",
-    "chinese_traditional": "[smelt]額外賦予+[effect0.power][ember]。",
-    "korean": "[smelt]은 추가로 +[effect0.power][ember]을 부여합니다.",
-    "japanese": "[smelt]で、追加で+[effect0.power][ember]が付与される。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-ea62c75df2683387-2c12174b9d6b4a14abeb3909964e5a88-v2",
-      "english": "Instead of smelting metal, the Ember Foundry smelted calcified embers, excavated by the Umbra Shroud. These dormant embers could be reinvigorated through many means, but the most efficient method was to use the heat of a Pyre Heart itself. ",
-      "french": "Au lieu de fondre du métal, la Fournaise de braises fondait des braises calcifiées, extraites par le Suaire umbra. Ces braises dormantes pouvaient être ravivées par de nombreux moyens, mais le plus efficace consistait à utiliser la chaleur d'un Cœur du Brasier. ",
-      "german": "Anstatt Metall wurde in der Glutasche-Gießerei kalzifizierte Glutasche eingeschmolzen, die von den Umbra-Mantelwesen geschürft worden war. Diese schlummernde Glut konnte mit vielen Mitteln wieder zum Leben erweckt werden, die Hitze eines Höllenglut-Herzes stellte sich jedoch als effizienteste Methode heraus. ",
-      "russian": "Вместо плавки металла в угольной литейной обрабатывались окаменевшие угли добытые Завесой Мрака. Эти спящие угли можно было оживить разными способами, но самым эффективным было использовать жар сердца Пекла. ",
-      "portuguese": "Em vez de derreter metal, a Fundição de Brasa derrete brasas calcificadas, escavadas do Sombrio Velado. Essas brasas dormentes poderiam ser revigoradas de muitas formas, mas o método mais eficiente era usar o calor do próprio Núcleo da Pira. ",
-      "chinese": "余烬铸造厂熔化的不是金属，而是由影主雾影开采的钙化余烬。可以通过多种手段给这些休眠的余烬注入新的火力，但最高效的做法是用薪火之心本身的热量。 ",
-      "spanish": "En lugar de fundir metal, la fundición de ascuas trabajaba con las ascuas calcificadas que excavaba el Velo de Umbra. Estas ascuas inactivas pueden despertarse de múltiples formas, pero el método más eficiente era utilizar el calor de un corazón de Pira. ",
-      "chinese_traditional": "餘燼鑄造廠熔煉的並非金屬，而是由「暗影幽影」挖掘出的鈣化餘燼。這些沉寂的餘燼能以多種方式重新活化，但最有效的方法，是直接利用火堆之心的熱量。 ",
-      "korean": "잔불 주조소는 금속을 제련하는 대신, 어스름 장막에서 발굴된 석화 잔불을 제련했다. 잠든 잔불은 여러 방식을 통해 다시 활성화시킬 수 있었지만, 가장 효율적인 방법은 화로 노심의 열을 직접 사용하는 것이었다. ",
-      "japanese": "炉炭鋳造工場では金属ではなく、アンブラ・シュラウドにより採掘された石灰化した炉炭を精錬していた。そのような休眠状態の炉炭は多くの手段で再活性化することができるが、最も効率的な方法は炉魂そのものの熱を利用することだった。 "
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAdditionalSmeltEmber",
-      "additionalTooltips": [
+      "id": "EmberFoundryCrucible",
+      "name": "Ember Foundry Crucible",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardEffectChooseDiscard_Consume_TooltipText",
-            "english": "[consume] a card in hand. Gain [ember] and [forgepoints] equal to its base [ember] cost.",
-            "french": "<b>Détruisez</b> une carte en main. Gagnez des [ember] et des [forgepoints] valant son coût de base en [ember].",
-            "german": "<b>Verbrauche</b> eine Karte von der Hand. Erhalte [ember] und [forgepoints] im Ausmaß ihrer [ember]-Basiskosten.",
-            "russian": "[consume] карты из руки. Даются [ember] и [forgepoints] равные ее обычной стоимости в [ember].",
-            "portuguese": "<b>Consome</b> uma carta na mão. Recebe [ember] e [forgepoints] equivalentes ao seu custo base de [ember].",
-            "chinese": "[consume]一张手牌。获得相当于其基础 [ember] 费用的 [ember] 和 [forgepoints]。",
-            "spanish": "<b>Consume</b> una carta de tu mano. Obtienes tantos [forgepoints] y [ember] como su coste base en [ember].",
-            "chinese_traditional": "[consume]一張手牌中的卡牌。獲得等同於其基礎[ember]費用的[ember]和[forgepoints]。",
-            "korean": "패에 있는 카드 하나를 [consume]합니다. 해당 카드의 기본 [ember] 비용만큼 [ember] 및 [forgepoints]를 획득합니다.",
-            "japanese": "手札のカードを[consume]する。その基本[ember]コストと等しい[ember]と[forgepoints]を得る。"
-          },
-          "titleKey": {
-            "key": "CardEffectChooseDiscard_Consume_TooltipTitle",
-            "english": "Smelt",
-            "french": "Fusion",
-            "german": "Schmelzen",
-            "russian": "Плавка",
-            "portuguese": "Fundir",
-            "chinese": "熔炼",
-            "spanish": "Fundición",
-            "chinese_traditional": "熔煉",
-            "korean": "제련",
-            "japanese": "精錬"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRailforged",
+            "required_dlc": "railforged"
           }
         }
       ],
-      "paramInt": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-ca443cc9075f799a-2c12174b9d6b4a14abeb3909964e5a88-v2",
+        "english": "Ember Foundry Crucible",
+        "french": "Creuset de la Fournaise de braises",
+        "german": "Glutasche-Gießerei-Schmelztiegel",
+        "russian": "Горнило угольной литейной",
+        "portuguese": "Crisol da Fundição de Brasa",
+        "chinese": "余烬铸造厂熔炉",
+        "spanish": "Crisol de fundición de ascuas",
+        "chinese_traditional": "餘燼鑄造廠地獄熔爐",
+        "korean": "잔불 주조소 도가니",
+        "japanese": "炉炭彫像工場のるつぼ"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-6207fc6a2d20aad6-2c12174b9d6b4a14abeb3909964e5a88-v2",
+        "english": "[smelt] grants an additional +[effect0.power][ember].",
+        "french": "La [smelt] octroie +[effect0.power][ember].",
+        "german": "[smelt] verschafft dir zusätzlich +[effect0.power][ember].",
+        "russian": "[smelt] дополнительно дает +[effect0.power][ember].",
+        "portuguese": "[smelt] concede um adicional de +[effect0.power][ember].",
+        "chinese": "[smelt] 额外提供 +[effect0.power][ember]。",
+        "spanish": "[smelt] añade +[effect0.power][ember].",
+        "chinese_traditional": "[smelt]額外賦予+[effect0.power][ember]。",
+        "korean": "[smelt]은 추가로 +[effect0.power][ember]을 부여합니다.",
+        "japanese": "[smelt]で、追加で+[effect0.power][ember]が付与される。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-ea62c75df2683387-2c12174b9d6b4a14abeb3909964e5a88-v2",
+          "english": "Instead of smelting metal, the Ember Foundry smelted calcified embers, excavated by the Umbra Shroud. These dormant embers could be reinvigorated through many means, but the most efficient method was to use the heat of a Pyre Heart itself. ",
+          "french": "Au lieu de fondre du métal, la Fournaise de braises fondait des braises calcifiées, extraites par le Suaire umbra. Ces braises dormantes pouvaient être ravivées par de nombreux moyens, mais le plus efficace consistait à utiliser la chaleur d'un Cœur du Brasier. ",
+          "german": "Anstatt Metall wurde in der Glutasche-Gießerei kalzifizierte Glutasche eingeschmolzen, die von den Umbra-Mantelwesen geschürft worden war. Diese schlummernde Glut konnte mit vielen Mitteln wieder zum Leben erweckt werden, die Hitze eines Höllenglut-Herzes stellte sich jedoch als effizienteste Methode heraus. ",
+          "russian": "Вместо плавки металла в угольной литейной обрабатывались окаменевшие угли добытые Завесой Мрака. Эти спящие угли можно было оживить разными способами, но самым эффективным было использовать жар сердца Пекла. ",
+          "portuguese": "Em vez de derreter metal, a Fundição de Brasa derrete brasas calcificadas, escavadas do Sombrio Velado. Essas brasas dormentes poderiam ser revigoradas de muitas formas, mas o método mais eficiente era usar o calor do próprio Núcleo da Pira. ",
+          "chinese": "余烬铸造厂熔化的不是金属，而是由影主雾影开采的钙化余烬。可以通过多种手段给这些休眠的余烬注入新的火力，但最高效的做法是用薪火之心本身的热量。 ",
+          "spanish": "En lugar de fundir metal, la fundición de ascuas trabajaba con las ascuas calcificadas que excavaba el Velo de Umbra. Estas ascuas inactivas pueden despertarse de múltiples formas, pero el método más eficiente era utilizar el calor de un corazón de Pira. ",
+          "chinese_traditional": "餘燼鑄造廠熔煉的並非金屬，而是由「暗影幽影」挖掘出的鈣化餘燼。這些沉寂的餘燼能以多種方式重新活化，但最有效的方法，是直接利用火堆之心的熱量。 ",
+          "korean": "잔불 주조소는 금속을 제련하는 대신, 어스름 장막에서 발굴된 석화 잔불을 제련했다. 잠든 잔불은 여러 방식을 통해 다시 활성화시킬 수 있었지만, 가장 효율적인 방법은 화로 노심의 열을 직접 사용하는 것이었다. ",
+          "japanese": "炉炭鋳造工場では金属ではなく、アンブラ・シュラウドにより採掘された石灰化した炉炭を精錬していた。そのような休眠状態の炉炭は多くの手段で再活性化することができるが、最も効率的な方法は炉魂そのものの熱を利用することだった。 "
+        }
+      ],
+      "relic_effects": [
+        "@EmberFoundryCrucible.effects0"
+      ]
     }
   ],
-  "requiredDLC": "railforged"
+  "relic_effects": [
+    {
+      "id": "EmberFoundryCrucible.effects0",
+      "name": "RelicEffectAdditionalSmeltEmber",
+      "additional_tooltips": [
+        "@EmberFoundryCrucible.effects0.additionalTooltips0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "EmberFoundryCrucible.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardEffectChooseDiscard_Consume_TooltipText",
+        "english": "[consume] a card in hand. Gain [ember] and [forgepoints] equal to its base [ember] cost.",
+        "french": "<b>Détruisez</b> une carte en main. Gagnez des [ember] et des [forgepoints] valant son coût de base en [ember].",
+        "german": "<b>Verbrauche</b> eine Karte von der Hand. Erhalte [ember] und [forgepoints] im Ausmaß ihrer [ember]-Basiskosten.",
+        "russian": "[consume] карты из руки. Даются [ember] и [forgepoints] равные ее обычной стоимости в [ember].",
+        "portuguese": "<b>Consome</b> uma carta na mão. Recebe [ember] e [forgepoints] equivalentes ao seu custo base de [ember].",
+        "chinese": "[consume]一张手牌。获得相当于其基础 [ember] 费用的 [ember] 和 [forgepoints]。",
+        "spanish": "<b>Consume</b> una carta de tu mano. Obtienes tantos [forgepoints] y [ember] como su coste base en [ember].",
+        "chinese_traditional": "[consume]一張手牌中的卡牌。獲得等同於其基礎[ember]費用的[ember]和[forgepoints]。",
+        "korean": "패에 있는 카드 하나를 [consume]합니다. 해당 카드의 기본 [ember] 비용만큼 [ember] 및 [forgepoints]를 획득합니다.",
+        "japanese": "手札のカードを[consume]する。その基本[ember]コストと等しい[ember]と[forgepoints]を得る。"
+      },
+      "titles": {
+        "key": "CardEffectChooseDiscard_Consume_TooltipTitle",
+        "english": "Smelt",
+        "french": "Fusion",
+        "german": "Schmelzen",
+        "russian": "Плавка",
+        "portuguese": "Fundir",
+        "chinese": "熔炼",
+        "spanish": "Fundición",
+        "chinese_traditional": "熔煉",
+        "korean": "제련",
+        "japanese": "精錬"
+      }
+    }
+  ]
 }

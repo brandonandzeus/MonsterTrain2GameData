@@ -1,88 +1,107 @@
 {
-  "id": "HerzalsAnvil",
-  "guid": "4e0f1e86-f122-4b20-82cf-7c997e4ee84a",
-  "name": "Herzal's Anvil",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-89f358dfdb1652cd-3325aba0b2a019f468f35de5b188d70f-v2",
-    "english": "Herzal's Anvil",
-    "french": "Enclume de Herzal",
-    "german": "Herzals Amboss",
-    "russian": "Наковальня Герцаля",
-    "portuguese": "Bigorna de Herzal",
-    "chinese": "赫扎尔的铁砧",
-    "spanish": "Yunque de Herzal",
-    "chinese_traditional": "赫爾扎爾的鐵砧",
-    "korean": "헤르잘의 모루",
-    "japanese": "ハーザルの金床"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-1fe8bd16dc512eb1-3325aba0b2a019f468f35de5b188d70f-v2",
-    "english": "When you [forge], gain +[effect0.power] [forgepoint].",
-    "french": "Quand vous <b>forgez</b>, octroie +[effect0.power] [forgepoint].",
-    "german": "Erhalte beim <b>Schmieden</b> +[effect0.power] [forgepoint].",
-    "russian": "[forge] дает +[effect0.power] <b>очко кузни</b>.",
-    "portuguese": "Quando você <b>Forja</b>, recebe +[effect0.power] [forgepoint].",
-    "chinese": "你 [forge] 时，获得 +[effect0.power] [forgepoint]。",
-    "spanish": "Al <b>Forjar</b>, añade +[effect0.power] [forgepoint].",
-    "chinese_traditional": "當你[forge]時，獲得+[effect0.power][forgepoint]。",
-    "korean": "[forge] 시, +[effect0.power] [forgepoint]를 획득합니다.",
-    "japanese": "[forge]時に+[effect0.power] [forgepoint]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-13408f8dfb481eaa-3325aba0b2a019f468f35de5b188d70f-v2",
-      "english": "After completing the Rail, Herzal destroyed his anvil as a symbol that his life’s work was complete. When he founded the Railforged clan, he forged a new one more durable than even his first anvil to symbolize the beginning of a new chapter in his life.",
-      "french": "Une fois la Voie terminée, Herzal a détruit son enclume pour symboliser l'achèvement de l'œuvre de sa vie. Lorsqu'il a fondé le clan des Forgerails, il en a forgé une nouvelle, plus solide encore que la première, pour symboliser le début d'un nouveau chapitre de sa vie.",
-      "german": "Nachdem Herzal das Gleis fertiggestellt hatte, zerstörte er seinen Amboss als Zeichen dafür, dass seine Arbeit getan war. Als er den Stamm der Gleisschmiede gegründet hatte, schmiedete er einen neuen, noch robusteren Amboss als zuvor. Dieser sollte den Beginn eines neuen Kapitels in seinem Leben symbolisieren.",
-      "russian": "Завершив строительство железной дороги, Герцаль уничтожил свою наковальню — в знак того, что дело всей его жизни выполнено. А когда позднее основал клан Железнодорожников, он создал новую, еще прочнее первой — чтобы отметить начало новой главы своей жизни.",
-      "portuguese": "Após finalizar os Trilhos, Herzal destruiu sua bigorna em um gesto simbólico da conclusão da obra de sua vida. Quando fundou o clã dos Forja-Trilhos, ele forjou uma nova bigorna, mais durável que a primeira, para simbolizar o início de um novo capítulo em sua vida.",
-      "chinese": "造完铁道后，赫扎尔毁掉了自己的铁砧，以象征他这辈子的工作终于大功告成。他建立铸道者氏族时，又铸造了一个新铁砧，且比第一个更坚固，以象征他人生中新篇章的开始。",
-      "spanish": "Después de completar los Raíles, Herzal destruyó su yunque para simbolizar que la obra de su vida estaba completa. Cuando fundó el clan de los Forjarraíles, se fabricó uno más resistente que el primero para simbolizar el comienzo de un nuevo capítulo.",
-      "chinese_traditional": "軌道竣工後，赫爾扎爾毀去了他的鐵砧，象徵其畢生志業的終結。而當他創立軌道鍛造者氏族時，則鍛造了一副比先前更耐用的新鐵砧，象徵其生命新篇章的開端。",
-      "korean": "선로를 완성한 뒤, 헤르잘은 자신의 인생의 업적이 끝났음을 상징하기 위해 모루를 파괴했다. 이후 선로의 자손 클랜을 세웠을 때, 그는 새로운 장의 시작을 기념하기 위해 첫 번째보다 더욱 단단한 새 모루를 단조했다.",
-      "japanese": "鉄道を完成させた後、ハーザルは人生を捧げた仕事を終えた証として金床を破壊した。鉄駆団を立ち上げた時、前の金床よりも頑丈な新たなものを鍛造し、人生の新たな幕開けを象徴するものとした。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAdditionalForgePoints",
-      "additionalTooltips": [
+      "id": "HerzalsAnvil",
+      "name": "Herzal's Anvil",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardEffectAdjustForgePoints_TooltipText",
-            "english": "Add to your [forgepoint] total. <br>When you play a unit or equipment card, spend all [forgepoints], and apply bonus [attack] and [armor] for each [forgepoint] spent. ",
-            "french": "Incrémente votre total de <b>Points de forge</b>. <br>Quand vous jouez une unité ou un équipement, dépensez tous les [forgepoints] pour lui octroyer de l'[attack] et de l'[armor] bonus par [forgepoint] dépensé.",
-            "german": "Erhöht deine gesamten [forgepoint]e. <br>Wenn du eine Einheit oder Ausrüstungskarte spielst, werden sämtliche [forgepoints] investiert und sie erhält pro investiertem [forgepoint] zusätzlichen [attack] und zusätzliche [armor].",
-            "russian": "[forgepoint]: повышается запас. <br>При розыгрыше карты бойца или снаряжения потратьте все [forgepoints]. За каждое потраченное очко ей даются дополнительные [attack] и [armor]. ",
-            "portuguese": "Adiciona ao seu total de [forgepoints]. <br>Quando você joga uma carta de unidade ou equipamento, gasta todos os [forgepoints] e concede um bônus de [attack] e [armor] para cada [forgepoint] gasto.",
-            "chinese": "添加至你的总 [forgepoint]。<br>当你打出一张单位或装备卡时，花费所有 [forgepoints]。每花费一点 [forgepoint]，就使其额外获得 [attack] 和 [armor]。",
-            "spanish": "Se añade a tus [forgepoints] totales. <br>Cuando juegas una carta de unidad o de equipo, consume todos tus [forgepoints] y añade [attack] y [armor] adicionales por cada [forgepoint] consumido.",
-            "chinese_traditional": "增加你的[forgepoint]總數。<br>當你打出一張單位或裝備卡牌時，花費所有[forgepoints]，並每花費一點[forgepoint]賦予其加成[attack]和[armor]。",
-            "korean": "[forgepoint] 총량에 추가합니다. <br>유닛 또는 장비 카드 하나를 사용할 때 모든 [forgepoints]를 소모하고, 소모한 [forgepoint]당 [attack] 및 [armor]를 추가로 부여합니다.",
-            "japanese": "[forgepoint]の合計に追加される。<br>ユニットまたは装備品カードをプレイすると、[forgepoints]をすべて消費して、消費した[forgepoint]ごとに[attack]と[armor]のボーナスを付与する。"
-          },
-          "titleKey": {
-            "key": "CardEffectAdjustForgePoints_TooltipTitle",
-            "english": "[forge]",
-            "french": "[forge]",
-            "german": "[forge]",
-            "russian": "[forge]",
-            "portuguese": "[forge]",
-            "chinese": "[forge]",
-            "spanish": "[forge]",
-            "chinese_traditional": "[forge]",
-            "korean": "[forge]",
-            "japanese": "[forge]"
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRailforged",
+            "required_dlc": "railforged"
           }
         }
       ],
-      "paramInt": 1
+      "names": {
+        "key": "CollectableRelicData_nameKey-89f358dfdb1652cd-3325aba0b2a019f468f35de5b188d70f-v2",
+        "english": "Herzal's Anvil",
+        "french": "Enclume de Herzal",
+        "german": "Herzals Amboss",
+        "russian": "Наковальня Герцаля",
+        "portuguese": "Bigorna de Herzal",
+        "chinese": "赫扎尔的铁砧",
+        "spanish": "Yunque de Herzal",
+        "chinese_traditional": "赫爾扎爾的鐵砧",
+        "korean": "헤르잘의 모루",
+        "japanese": "ハーザルの金床"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-1fe8bd16dc512eb1-3325aba0b2a019f468f35de5b188d70f-v2",
+        "english": "When you [forge], gain +[effect0.power] [forgepoint].",
+        "french": "Quand vous <b>forgez</b>, octroie +[effect0.power] [forgepoint].",
+        "german": "Erhalte beim <b>Schmieden</b> +[effect0.power] [forgepoint].",
+        "russian": "[forge] дает +[effect0.power] <b>очко кузни</b>.",
+        "portuguese": "Quando você <b>Forja</b>, recebe +[effect0.power] [forgepoint].",
+        "chinese": "你 [forge] 时，获得 +[effect0.power] [forgepoint]。",
+        "spanish": "Al <b>Forjar</b>, añade +[effect0.power] [forgepoint].",
+        "chinese_traditional": "當你[forge]時，獲得+[effect0.power][forgepoint]。",
+        "korean": "[forge] 시, +[effect0.power] [forgepoint]를 획득합니다.",
+        "japanese": "[forge]時に+[effect0.power] [forgepoint]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-13408f8dfb481eaa-3325aba0b2a019f468f35de5b188d70f-v2",
+          "english": "After completing the Rail, Herzal destroyed his anvil as a symbol that his life’s work was complete. When he founded the Railforged clan, he forged a new one more durable than even his first anvil to symbolize the beginning of a new chapter in his life.",
+          "french": "Une fois la Voie terminée, Herzal a détruit son enclume pour symboliser l'achèvement de l'œuvre de sa vie. Lorsqu'il a fondé le clan des Forgerails, il en a forgé une nouvelle, plus solide encore que la première, pour symboliser le début d'un nouveau chapitre de sa vie.",
+          "german": "Nachdem Herzal das Gleis fertiggestellt hatte, zerstörte er seinen Amboss als Zeichen dafür, dass seine Arbeit getan war. Als er den Stamm der Gleisschmiede gegründet hatte, schmiedete er einen neuen, noch robusteren Amboss als zuvor. Dieser sollte den Beginn eines neuen Kapitels in seinem Leben symbolisieren.",
+          "russian": "Завершив строительство железной дороги, Герцаль уничтожил свою наковальню — в знак того, что дело всей его жизни выполнено. А когда позднее основал клан Железнодорожников, он создал новую, еще прочнее первой — чтобы отметить начало новой главы своей жизни.",
+          "portuguese": "Após finalizar os Trilhos, Herzal destruiu sua bigorna em um gesto simbólico da conclusão da obra de sua vida. Quando fundou o clã dos Forja-Trilhos, ele forjou uma nova bigorna, mais durável que a primeira, para simbolizar o início de um novo capítulo em sua vida.",
+          "chinese": "造完铁道后，赫扎尔毁掉了自己的铁砧，以象征他这辈子的工作终于大功告成。他建立铸道者氏族时，又铸造了一个新铁砧，且比第一个更坚固，以象征他人生中新篇章的开始。",
+          "spanish": "Después de completar los Raíles, Herzal destruyó su yunque para simbolizar que la obra de su vida estaba completa. Cuando fundó el clan de los Forjarraíles, se fabricó uno más resistente que el primero para simbolizar el comienzo de un nuevo capítulo.",
+          "chinese_traditional": "軌道竣工後，赫爾扎爾毀去了他的鐵砧，象徵其畢生志業的終結。而當他創立軌道鍛造者氏族時，則鍛造了一副比先前更耐用的新鐵砧，象徵其生命新篇章的開端。",
+          "korean": "선로를 완성한 뒤, 헤르잘은 자신의 인생의 업적이 끝났음을 상징하기 위해 모루를 파괴했다. 이후 선로의 자손 클랜을 세웠을 때, 그는 새로운 장의 시작을 기념하기 위해 첫 번째보다 더욱 단단한 새 모루를 단조했다.",
+          "japanese": "鉄道を完成させた後、ハーザルは人生を捧げた仕事を終えた証として金床を破壊した。鉄駆団を立ち上げた時、前の金床よりも頑丈な新たなものを鍛造し、人生の新たな幕開けを象徴するものとした。"
+        }
+      ],
+      "relic_effects": [
+        "@HerzalsAnvil.effects0"
+      ]
     }
   ],
-  "requiredDLC": "railforged"
+  "relic_effects": [
+    {
+      "id": "HerzalsAnvil.effects0",
+      "name": "RelicEffectAdditionalForgePoints",
+      "additional_tooltips": [
+        "@HerzalsAnvil.effects0.additionalTooltips0"
+      ],
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "HerzalsAnvil.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardEffectAdjustForgePoints_TooltipText",
+        "english": "Add to your [forgepoint] total. <br>When you play a unit or equipment card, spend all [forgepoints], and apply bonus [attack] and [armor] for each [forgepoint] spent. ",
+        "french": "Incrémente votre total de <b>Points de forge</b>. <br>Quand vous jouez une unité ou un équipement, dépensez tous les [forgepoints] pour lui octroyer de l'[attack] et de l'[armor] bonus par [forgepoint] dépensé.",
+        "german": "Erhöht deine gesamten [forgepoint]e. <br>Wenn du eine Einheit oder Ausrüstungskarte spielst, werden sämtliche [forgepoints] investiert und sie erhält pro investiertem [forgepoint] zusätzlichen [attack] und zusätzliche [armor].",
+        "russian": "[forgepoint]: повышается запас. <br>При розыгрыше карты бойца или снаряжения потратьте все [forgepoints]. За каждое потраченное очко ей даются дополнительные [attack] и [armor]. ",
+        "portuguese": "Adiciona ao seu total de [forgepoints]. <br>Quando você joga uma carta de unidade ou equipamento, gasta todos os [forgepoints] e concede um bônus de [attack] e [armor] para cada [forgepoint] gasto.",
+        "chinese": "添加至你的总 [forgepoint]。<br>当你打出一张单位或装备卡时，花费所有 [forgepoints]。每花费一点 [forgepoint]，就使其额外获得 [attack] 和 [armor]。",
+        "spanish": "Se añade a tus [forgepoints] totales. <br>Cuando juegas una carta de unidad o de equipo, consume todos tus [forgepoints] y añade [attack] y [armor] adicionales por cada [forgepoint] consumido.",
+        "chinese_traditional": "增加你的[forgepoint]總數。<br>當你打出一張單位或裝備卡牌時，花費所有[forgepoints]，並每花費一點[forgepoint]賦予其加成[attack]和[armor]。",
+        "korean": "[forgepoint] 총량에 추가합니다. <br>유닛 또는 장비 카드 하나를 사용할 때 모든 [forgepoints]를 소모하고, 소모한 [forgepoint]당 [attack] 및 [armor]를 추가로 부여합니다.",
+        "japanese": "[forgepoint]の合計に追加される。<br>ユニットまたは装備品カードをプレイすると、[forgepoints]をすべて消費して、消費した[forgepoint]ごとに[attack]と[armor]のボーナスを付与する。"
+      },
+      "titles": {
+        "key": "CardEffectAdjustForgePoints_TooltipTitle",
+        "english": "[forge]",
+        "french": "[forge]",
+        "german": "[forge]",
+        "russian": "[forge]",
+        "portuguese": "[forge]",
+        "chinese": "[forge]",
+        "spanish": "[forge]",
+        "chinese_traditional": "[forge]",
+        "korean": "[forge]",
+        "japanese": "[forge]"
+      }
+    }
+  ]
 }

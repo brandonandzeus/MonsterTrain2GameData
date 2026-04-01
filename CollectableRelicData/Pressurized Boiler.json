@@ -1,66 +1,81 @@
 {
-  "id": "PressurizedBoiler",
-  "guid": "fda361aa-fecc-4adf-b19c-f92af04e0e19",
-  "name": "Pressurized Boiler",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-ffd613b00b3920a6-5c21286eef4625043933bff99d93a7c9-v2",
-    "english": "Pressurized Boiler",
-    "french": "Chaudière pressurisée",
-    "german": "Druckkessel",
-    "russian": "Напорный котел",
-    "portuguese": "Caldeira Pressurizada",
-    "chinese": "加压锅炉",
-    "spanish": "Caldera a presión",
-    "chinese_traditional": "加壓鍋爐",
-    "korean": "가압 보일러",
-    "japanese": "加圧ボイラー"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-fc439fd8e1bb80cb-5c21286eef4625043933bff99d93a7c9-v2",
-    "english": "The Pyre gains [burst] [effect0.status0.power].",
-    "french": "Le Brasier gagne [burst] [effect0.status0.power].",
-    "german": "Die Höllenglut erhält [burst] [effect0.status0.power].",
-    "russian": "Пеклу дается [burst] х[effect0.status0.power].",
-    "portuguese": "A Pira recebe [burst] [effect0.status0.power].",
-    "chinese": "薪火获得 [burst] [effect0.status0.power]。",
-    "spanish": "La Pira añade [burst] [effect0.status0.power].",
-    "chinese_traditional": "火堆獲得[burst][effect0.status0.power]。",
-    "korean": "화로가 [burst] [effect0.status0.power] 효과를 획득합니다.",
-    "japanese": "炉が[burst] [effect0.status0.power]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-ce74a54fb9ad515a-5c21286eef4625043933bff99d93a7c9-v2",
-      "english": "The Pyre may be, as far as we know, a near infinite heat source, but the boilers still require refueling. Fortunately, working fluid from the Stygian Sea is always in abundant supply, and the engineers have cleverly built enough storage to fuel long trips along the rail without needing to refuel.",
-      "french": "Bien que le Brasier soit, à notre connaissance, une source de chaleur quasi illimitée, les chaudières doivent tout de même être alimentées. Heureusement, le fluide de la mer Stygienne est disponible en abondance, et les ingénieurs ont eu la brillante idée de construire un réservoir assez grand pour entreprendre de longs trajets sur la Voie sans avoir besoin de faire le plein.",
-      "german": "Zwar mag die Höllenglut, soweit uns bekannt, eine nahezu unerschöpfliche Wärmequelle sein, doch die Kessel müssen trotzdem mit Brennstoff versorgt werden. Glücklicherweise ist die Betriebsflüssigkeit der Stygischen See nicht erschöpft und die Ingenieure haben mit geschickter Hand ausreichend Lagerraum geschaffen, damit selbst lange Reisen auf dem Gleis ohne Auftanken möglich sind.",
-      "russian": "Пекло, насколько известно, — почти бесконечный источник жара, но котлы все равно требуют подпитки. К счастью, жидкости из Стигийского моря всегда предостаточно, и инженеры хитро построили столько хранилищ, что поезд может идти по дороге очень долго, не нуждаясь в дозаправке.",
-      "portuguese": "A Pira pode ser, até onde sabemos, uma fonte de calor infinita, mas as caldeiras ainda necessitam de reabastecimento. Por sorte, o Mar de Estige tem fluido em abundância para a hidráulica, e os engenheiros construíram bastante armazenamento para possibilitar longas viagens pelos Trilhos sem a necessidade de reabastecer.",
-      "chinese": "据我们所知，薪火可能是几乎用之不竭的热源，不过锅炉依然需要补充燃料。幸运的是，来自冥界之海的工质供应始终充足，工程师们更是巧妙地建造了足以支持铁道长途行驶的储液系统，途中无需额外加注。",
-      "spanish": "Hasta donde sabemos, la Pira bien puede ser una fuente infinita de calor, pero las calderas siguen necesitando combustible. Por suerte, el fluido del mar Estigio siempre está disponible, y los ingenieros han creado suficiente capacidad de almacenamiento en el tren para realizar largos viajes sin necesidad de repostar.",
-      "chinese_traditional": "據我們所知，火堆或許是近乎無限的熱源，但鍋爐仍需燃料。幸好，來自冥河的驅動液供應向來充足，而工程師們也巧妙地打造了足夠的儲存空間，足以應付軌道上的長途旅行而無須補給。",
-      "korean": "화로는 우리가 아는 한 거의 무한한 열을 내지만, 보일러가 그에 맞춰 영원히 돌아가는 것은 아니다. 명계 바다에서 끌어올린 작업 유체가 끝없이 흐르고, 기술자들은 장거리 여정을 위한 저장 시설을 교묘하게 마련해 놓았다. 덕분에 열차는 선로 위를 멈춤 없이 달릴 수 있다.",
-      "japanese": "我々の知る限り、炉はほぼ無限の熱源であるかもしれないが、ボイラーには燃料の補給が必要である。幸運なことにステュクス海の作動流体はいつも十分に手に入り、賢い技師たちは長期間の鉄道での運行においても補給の必要がないほどの大容量の燃料タンクを搭載している。"
+      "id": "PressurizedBoiler",
+      "name": "Pressurized Boiler",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRailforged",
+            "unlock_level": 5,
+            "required_dlc": "railforged"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-ffd613b00b3920a6-5c21286eef4625043933bff99d93a7c9-v2",
+        "english": "Pressurized Boiler",
+        "french": "Chaudière pressurisée",
+        "german": "Druckkessel",
+        "russian": "Напорный котел",
+        "portuguese": "Caldeira Pressurizada",
+        "chinese": "加压锅炉",
+        "spanish": "Caldera a presión",
+        "chinese_traditional": "加壓鍋爐",
+        "korean": "가압 보일러",
+        "japanese": "加圧ボイラー"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-fc439fd8e1bb80cb-5c21286eef4625043933bff99d93a7c9-v2",
+        "english": "The Pyre gains [burst] [effect0.status0.power].",
+        "french": "Le Brasier gagne [burst] [effect0.status0.power].",
+        "german": "Die Höllenglut erhält [burst] [effect0.status0.power].",
+        "russian": "Пеклу дается [burst] х[effect0.status0.power].",
+        "portuguese": "A Pira recebe [burst] [effect0.status0.power].",
+        "chinese": "薪火获得 [burst] [effect0.status0.power]。",
+        "spanish": "La Pira añade [burst] [effect0.status0.power].",
+        "chinese_traditional": "火堆獲得[burst][effect0.status0.power]。",
+        "korean": "화로가 [burst] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "炉が[burst] [effect0.status0.power]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-ce74a54fb9ad515a-5c21286eef4625043933bff99d93a7c9-v2",
+          "english": "The Pyre may be, as far as we know, a near infinite heat source, but the boilers still require refueling. Fortunately, working fluid from the Stygian Sea is always in abundant supply, and the engineers have cleverly built enough storage to fuel long trips along the rail without needing to refuel.",
+          "french": "Bien que le Brasier soit, à notre connaissance, une source de chaleur quasi illimitée, les chaudières doivent tout de même être alimentées. Heureusement, le fluide de la mer Stygienne est disponible en abondance, et les ingénieurs ont eu la brillante idée de construire un réservoir assez grand pour entreprendre de longs trajets sur la Voie sans avoir besoin de faire le plein.",
+          "german": "Zwar mag die Höllenglut, soweit uns bekannt, eine nahezu unerschöpfliche Wärmequelle sein, doch die Kessel müssen trotzdem mit Brennstoff versorgt werden. Glücklicherweise ist die Betriebsflüssigkeit der Stygischen See nicht erschöpft und die Ingenieure haben mit geschickter Hand ausreichend Lagerraum geschaffen, damit selbst lange Reisen auf dem Gleis ohne Auftanken möglich sind.",
+          "russian": "Пекло, насколько известно, — почти бесконечный источник жара, но котлы все равно требуют подпитки. К счастью, жидкости из Стигийского моря всегда предостаточно, и инженеры хитро построили столько хранилищ, что поезд может идти по дороге очень долго, не нуждаясь в дозаправке.",
+          "portuguese": "A Pira pode ser, até onde sabemos, uma fonte de calor infinita, mas as caldeiras ainda necessitam de reabastecimento. Por sorte, o Mar de Estige tem fluido em abundância para a hidráulica, e os engenheiros construíram bastante armazenamento para possibilitar longas viagens pelos Trilhos sem a necessidade de reabastecer.",
+          "chinese": "据我们所知，薪火可能是几乎用之不竭的热源，不过锅炉依然需要补充燃料。幸运的是，来自冥界之海的工质供应始终充足，工程师们更是巧妙地建造了足以支持铁道长途行驶的储液系统，途中无需额外加注。",
+          "spanish": "Hasta donde sabemos, la Pira bien puede ser una fuente infinita de calor, pero las calderas siguen necesitando combustible. Por suerte, el fluido del mar Estigio siempre está disponible, y los ingenieros han creado suficiente capacidad de almacenamiento en el tren para realizar largos viajes sin necesidad de repostar.",
+          "chinese_traditional": "據我們所知，火堆或許是近乎無限的熱源，但鍋爐仍需燃料。幸好，來自冥河的驅動液供應向來充足，而工程師們也巧妙地打造了足夠的儲存空間，足以應付軌道上的長途旅行而無須補給。",
+          "korean": "화로는 우리가 아는 한 거의 무한한 열을 내지만, 보일러가 그에 맞춰 영원히 돌아가는 것은 아니다. 명계 바다에서 끌어올린 작업 유체가 끝없이 흐르고, 기술자들은 장거리 여정을 위한 저장 시설을 교묘하게 마련해 놓았다. 덕분에 열차는 선로 위를 멈춤 없이 달릴 수 있다.",
+          "japanese": "我々の知る限り、炉はほぼ無限の熱源であるかもしれないが、ボイラーには燃料の補給が必要である。幸運なことにステュクス海の作動流体はいつも十分に手に入り、賢い技師たちは長期間の鉄道での運行においても補給の必要がないほどの大容量の燃料タンクを搭載している。"
+        }
+      ],
+      "relic_effects": [
+        "@PressurizedBoiler.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "PressurizedBoiler.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "burst",
+          "status": "burst",
           "count": 4
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Pyre"
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Pyre"
     }
-  ],
-  "unlockLevel": 5,
-  "requiredDLC": "railforged"
+  ]
 }

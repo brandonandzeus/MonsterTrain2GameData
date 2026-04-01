@@ -1,101 +1,124 @@
 {
-  "id": "ProgressPacemaker",
-  "guid": "4446fd0c-f7c3-4a9d-96c3-bd12e4426a76",
-  "name": "Progress Pacemaker",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-269b84cdd34e7771-9186b913547fe464d9a9a8cc7df12442-v2",
-    "english": "Progress Pacemaker",
-    "french": "Pacemaker amélioré",
-    "german": "Fortschrittsmacher",
-    "russian": "Кардиостимулятор",
-    "portuguese": "Marcapasso Avançado",
-    "chinese": "进度起搏器",
-    "spanish": "Marcapasos del progreso",
-    "chinese_traditional": "進度調節器",
-    "korean": "진행 조정 장치",
-    "japanese": "進歩のペースメーカー"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-ef162dd1289ee4d9-9186b913547fe464d9a9a8cc7df12442-v2",
-    "english": "The first time you [mix] each turn, [mix] again.",
-    "french": "Au premier [mix] de chaque tour, déclenchez [mix] à nouveau.",
-    "german": "Beim ersten Mal [mix] pro Zug erneut [mix].",
-    "russian": "Каждое первое [mix] за ход <b>Смешивает</b> повторно.",
-    "portuguese": "Na primeira vez que você [mix] em cada turno, <b>Mistura</b> novamente.",
-    "chinese": "每回合第一次 [mix] 时，再次 [mix]。",
-    "spanish": "La primera vez que usas [mix] en cada turno, la usas dos veces.",
-    "chinese_traditional": "每回合第一次[mix]時，再次[mix]。",
-    "korean": "턴마다 처음으로 [mix]할 때, [mix]을 한 번 더 합니다.",
-    "japanese": "毎ターンの[mix]実行初回時に、追加で[mix]を行う。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-c221eba309f17393-9186b913547fe464d9a9a8cc7df12442-v2",
-      "english": "“All my experiments do take a toll on the cardiovascular system of my assistants. This will fix that.”\n—from Dr. Orechi’s notebook",
-      "french": "<nobr>« Toutes</nobr> mes expériences pèsent sur le système cardiovasculaire de mes assistants. Ceci y <nobr>remédiera. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
-      "german": "„Meine Experimente belasten das Herz-Kreislauf-System meiner Assistenten. Das wird dieses Problem lösen.“\n—aus Dr. Orechis Notizbuch",
-      "russian": "«Все мои эксперименты сказываются на сердечно-сосудистой системе моих помощников. Это должно исправить ситуацию».\n— Из записной книжки доктора Оречи",
-      "portuguese": "“Todos os meus experimentos afetam o sistema cardiovascular dos meus assistentes. Isso resolverá o problema.”\n— Anotação do Dr. Orechi",
-      "chinese": "“我所有的实验都会对助手们的心血管系统造成不良影响。这将会解决这个问题。”\n——摘自奥莱奇博士的笔记本",
-      "spanish": "«Mis experimentos hacen mella en el sistema cardiovascular de mis ayudantes. Con esto ya no».\n—Cuaderno del Dr. Orechi",
-      "chinese_traditional": "「我的所有實驗都確實會影響助手的心血管系統。這能夠解決這個問題。」\n——摘自奧雷奇博士的筆記本",
-      "korean": "“내가 주도하는 실험은 조수들의 심혈관계에 상당한 피해를 준다. 이게 그 문제를 해결해 주겠지.”\n- 오레치 박사의 기록",
-      "japanese": "「わしの実験は、すべて助手の心臓血管系に負担をかけるものだが、これでそれが改善されるじゃろう。」\n—ドクター・オレチのメモ帳より"
-    }
-  ],
-  "rarity": "uncommon",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAdjustMixAmount",
-      "additionalTooltips": [
+      "id": "ProgressPacemaker",
+      "name": "Progress Pacemaker",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "Tooltip_Mix",
-            "english": "Create a new Infusion card if you don't have one, otherwise upgrade the Infusion you have. ",
-            "french": "Crée une nouvelle carte d'Imprégnation si vous n'en avez pas. Sinon, améliore l'Imprégnation dont vous disposez.",
-            "german": "Erzeuge eine neue Infusionskarte, wenn du keine hast. Ansonsten wird eine vorhandene Infusion verbessert.",
-            "russian": "Создает новую карту с зельем, если у вас его нет, а если есть — улучшает уже имеющееся. ",
-            "portuguese": "Cria uma nova carta de Infusão se você não tiver uma. Caso tenha, a Infusão será melhorada.",
-            "chinese": "如果你没有注入物卡牌，则产生一张注入物卡牌，否则升级你已有的注入物卡牌。",
-            "spanish": "Crea una nueva carta de Infusión si no tienes una o mejora la que tienes.",
-            "chinese_traditional": "如果你沒有賦能卡牌，則生成一張新的，否則升級你已有的賦能卡牌。",
-            "korean": "혼합물 카드가 없다면 새로운 혼합물 카드를 생성하며, 혼합물 카드가 있다면 보유한 카드를 업그레이드합니다.",
-            "japanese": "持っていない場合は新たな薬カードを生成する。持っている場合は所有している薬を強化する。"
-          },
-          "titleKey": {
-            "key": "CardEffectMix_CardText",
-            "english": "Mix",
-            "french": "Mélange",
-            "german": "Mischen",
-            "russian": "Смешение",
-            "portuguese": "Misturar",
-            "chinese": "调配",
-            "spanish": "Mezcla",
-            "chinese_traditional": "混合",
-            "korean": "혼합",
-            "japanese": "調合"
+          "collectable": {
+            "rarity": "uncommon",
+            "class": "ClassLazarusLeague"
           }
         }
       ],
-      "effectConditions": [
+      "names": {
+        "key": "CollectableRelicData_nameKey-269b84cdd34e7771-9186b913547fe464d9a9a8cc7df12442-v2",
+        "english": "Progress Pacemaker",
+        "french": "Pacemaker amélioré",
+        "german": "Fortschrittsmacher",
+        "russian": "Кардиостимулятор",
+        "portuguese": "Marcapasso Avançado",
+        "chinese": "进度起搏器",
+        "spanish": "Marcapasos del progreso",
+        "chinese_traditional": "進度調節器",
+        "korean": "진행 조정 장치",
+        "japanese": "進歩のペースメーカー"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-ef162dd1289ee4d9-9186b913547fe464d9a9a8cc7df12442-v2",
+        "english": "The first time you [mix] each turn, [mix] again.",
+        "french": "Au premier [mix] de chaque tour, déclenchez [mix] à nouveau.",
+        "german": "Beim ersten Mal [mix] pro Zug erneut [mix].",
+        "russian": "Каждое первое [mix] за ход <b>Смешивает</b> повторно.",
+        "portuguese": "Na primeira vez que você [mix] em cada turno, <b>Mistura</b> novamente.",
+        "chinese": "每回合第一次 [mix] 时，再次 [mix]。",
+        "spanish": "La primera vez que usas [mix] en cada turno, la usas dos veces.",
+        "chinese_traditional": "每回合第一次[mix]時，再次[mix]。",
+        "korean": "턴마다 처음으로 [mix]할 때, [mix]을 한 번 더 합니다.",
+        "japanese": "毎ターンの[mix]実行初回時に、追加で[mix]を行う。"
+      },
+      "lore_tooltips": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "less_than"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "key": "CollectableRelicData_data-c221eba309f17393-9186b913547fe464d9a9a8cc7df12442-v2",
+          "english": "“All my experiments do take a toll on the cardiovascular system of my assistants. This will fix that.”\n—from Dr. Orechi’s notebook",
+          "french": "<nobr>« Toutes</nobr> mes expériences pèsent sur le système cardiovasculaire de mes assistants. Ceci y <nobr>remédiera. »</nobr> \n— Carnet du <nobr>Dr Orechi</nobr>",
+          "german": "„Meine Experimente belasten das Herz-Kreislauf-System meiner Assistenten. Das wird dieses Problem lösen.“\n—aus Dr. Orechis Notizbuch",
+          "russian": "«Все мои эксперименты сказываются на сердечно-сосудистой системе моих помощников. Это должно исправить ситуацию».\n— Из записной книжки доктора Оречи",
+          "portuguese": "“Todos os meus experimentos afetam o sistema cardiovascular dos meus assistentes. Isso resolverá o problema.”\n— Anotação do Dr. Orechi",
+          "chinese": "“我所有的实验都会对助手们的心血管系统造成不良影响。这将会解决这个问题。”\n——摘自奥莱奇博士的笔记本",
+          "spanish": "«Mis experimentos hacen mella en el sistema cardiovascular de mis ayudantes. Con esto ya no».\n—Cuaderno del Dr. Orechi",
+          "chinese_traditional": "「我的所有實驗都確實會影響助手的心血管系統。這能夠解決這個問題。」\n——摘自奧雷奇博士的筆記本",
+          "korean": "“내가 주도하는 실험은 조수들의 심혈관계에 상당한 피해를 준다. 이게 그 문제를 해결해 주겠지.”\n- 오레치 박사의 기록",
+          "japanese": "「わしの実験は、すべて助手の心臓血管系に負担をかけるものだが、これでそれが改善されるじゃろう。」\n—ドクター・オレチのメモ帳より"
         }
       ],
-      "paramInt2": 1,
-      "paramMinInt": 2
+      "relic_effects": [
+        "@ProgressPacemaker.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ProgressPacemaker.effects0",
+      "name": "RelicEffectAdjustMixAmount",
+      "additional_tooltips": [
+        "@ProgressPacemaker.effects0.additionalTooltips0"
+      ],
+      "conditions": [
+        "@ProgressPacemaker.effects0.effectConditions0"
+      ],
+      "param_int_2": 1,
+      "param_min_int": 2
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "ProgressPacemaker.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "less_than"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "ProgressPacemaker.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "Tooltip_Mix",
+        "english": "Create a new Infusion card if you don't have one, otherwise upgrade the Infusion you have. ",
+        "french": "Crée une nouvelle carte d'Imprégnation si vous n'en avez pas. Sinon, améliore l'Imprégnation dont vous disposez.",
+        "german": "Erzeuge eine neue Infusionskarte, wenn du keine hast. Ansonsten wird eine vorhandene Infusion verbessert.",
+        "russian": "Создает новую карту с зельем, если у вас его нет, а если есть — улучшает уже имеющееся. ",
+        "portuguese": "Cria uma nova carta de Infusão se você não tiver uma. Caso tenha, a Infusão será melhorada.",
+        "chinese": "如果你没有注入物卡牌，则产生一张注入物卡牌，否则升级你已有的注入物卡牌。",
+        "spanish": "Crea una nueva carta de Infusión si no tienes una o mejora la que tienes.",
+        "chinese_traditional": "如果你沒有賦能卡牌，則生成一張新的，否則升級你已有的賦能卡牌。",
+        "korean": "혼합물 카드가 없다면 새로운 혼합물 카드를 생성하며, 혼합물 카드가 있다면 보유한 카드를 업그레이드합니다.",
+        "japanese": "持っていない場合は新たな薬カードを生成する。持っている場合は所有している薬を強化する。"
+      },
+      "titles": {
+        "key": "CardEffectMix_CardText",
+        "english": "Mix",
+        "french": "Mélange",
+        "german": "Mischen",
+        "russian": "Смешение",
+        "portuguese": "Misturar",
+        "chinese": "调配",
+        "spanish": "Mezcla",
+        "chinese_traditional": "混合",
+        "korean": "혼합",
+        "japanese": "調合"
+      }
     }
   ]
 }

@@ -1,120 +1,145 @@
 {
-  "id": "ManyBuffonAngelEquip",
-  "guid": "c97500a9-b0a4-4c18-b203-b9f4447c84c3",
-  "name": "Chain of the Valkyrie",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-a28c6465e60b2347-6b1022588364f5b4999d76762f12c30f-v2",
-    "english": "Chain of the Valkyrie",
-    "french": "Chaîne de la Valkyrie",
-    "german": "Kette der Walküre",
-    "russian": "Цепь Валькирий",
-    "portuguese": "Corrente da Valquíria",
-    "chinese": "女武神之链",
-    "spanish": "Cadena de la valkiria",
-    "chinese_traditional": "女武神之鍊",
-    "korean": "발키리의 사슬",
-    "japanese": "戦乙女の鎖"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-1539d91316d518c1-6b1022588364f5b4999d76762f12c30f-v2",
-    "english": "When you equip an Angel, apply [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power], and [regen] [effect0.trigger0.effect2.status0.power].",
-    "french": "Lorsque vous équipez un ange, il gagne [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] et [regen] [effect0.trigger0.effect2.status0.power].",
-    "german": "Wende [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] und [regen] [effect0.trigger0.effect2.status0.power] an, wenn du einen Engel einsetzt.",
-    "russian": "Когда ангел надевает снаряжение, ему даются [valor] х[effect0.trigger0.effect0.status0.power], [rage] х[effect0.trigger0.effect1.status0.power] и [regen] х[effect0.trigger0.effect2.status0.power].",
-    "portuguese": "Quando um Anjo for equipado, concederá [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] e [regen] [effect0.trigger0.effect2.status0.power].",
-    "chinese": "当你给一个天使穿戴装备时，获得 [valor] [effect0.trigger0.effect0.status0.power]，[rage] [effect0.trigger0.effect1.status0.power] ，和[regen] [effect0.trigger0.effect2.status0.power]。",
-    "spanish": "Al equipar a un ángel, añade [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] y [regen] [effect0.trigger0.effect2.status0.power].",
-    "chinese_traditional": "當你裝備一個天使時，施加[valor][effect0.trigger0.effect0.status0.power]、[rage][effect0.trigger0.effect1.status0.power]和[regen][effect0.trigger0.effect2.status0.power]。",
-    "korean": "천사에 장비를 장착할 시, [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power], [regen] [effect0.trigger0.effect2.status0.power] 효과를 적용합니다.",
-    "japanese": "装着した天使が[valor] [effect0.trigger0.effect0.status0.power]、[rage] [effect0.trigger0.effect1.status0.power]、[regen] [effect0.trigger0.effect2.status0.power]を得る。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-15c893e94a6c2f86-6b1022588364f5b4999d76762f12c30f-v2",
-      "english": "The iron chain of an Empyrial Palace guard, taken in battle and now used by the Banished.",
-      "french": "La chaîne de fer d'un garde du Palais empyréen, prise au combat et désormais utilisée par les Bannis.",
-      "german": "Die Eisenkette einer Wache des Empyräeischen Palastes, die nun von den Verbannten verwendet wird.",
-      "russian": "Железную цепь стражей Неземного дворца, которую брали в битву ангелы, теперь используют Изгнанники.",
-      "portuguese": "A corrente de ferro de um guarda do Palácio Celestial, tomada em batalha e agora usada pelos Expurgados.",
-      "chinese": "至高天宫殿守卫的铁链，在战斗中缴获，现在由流放者使用。",
-      "spanish": "La cadena de hierro de un guardia del Palacio Empíreo, obtenida en batalla y utilizada ahora por los Desterrados.",
-      "chinese_traditional": "一條帝國宮殿守衛的鐵鍊，從戰鬥中奪取，現在由流放者使用。",
-      "korean": "전투 중에 붙잡힌 천상의 궁전 경비병이 착용하던 철제 사슬로, 지금은 추방자가 사용한다.",
-      "japanese": "天の宮殿の衛兵が戦闘で奪った鉄の鎖。現在は脱天使たちが使用している。"
+      "id": "ManyBuffonAngelEquip",
+      "name": "Chain of the Valkyrie",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassBanished",
+            "description_modifiers": [
+              {
+                "id": "ManyBuffonAngelEquip.descriptionModifiers0",
+                "name": "CardCountDescriptionModifier",
+                "param_card_type": "monster",
+                "text_formats": {
+                  "key": "CollectableRelicData_textFormatKey-9ea416ab0720eeb7-6b1022588364f5b4999d76762f12c30f-v2",
+                  "english": "([value] Angels)",
+                  "french": "([value] Anges)",
+                  "german": "([value] Engel)",
+                  "russian": "([value] Ангелов)",
+                  "portuguese": "([value] Anjos)",
+                  "chinese": "([value] 天使)",
+                  "spanish": "([value] Ángeles)",
+                  "chinese_traditional": "([value] 天使)",
+                  "korean": "([value] 천사)",
+                  "japanese": "([value] 天使)"
+                },
+                "param_subtype": "SubtypesData_Angel"
+              }
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-a28c6465e60b2347-6b1022588364f5b4999d76762f12c30f-v2",
+        "english": "Chain of the Valkyrie",
+        "french": "Chaîne de la Valkyrie",
+        "german": "Kette der Walküre",
+        "russian": "Цепь Валькирий",
+        "portuguese": "Corrente da Valquíria",
+        "chinese": "女武神之链",
+        "spanish": "Cadena de la valkiria",
+        "chinese_traditional": "女武神之鍊",
+        "korean": "발키리의 사슬",
+        "japanese": "戦乙女の鎖"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-1539d91316d518c1-6b1022588364f5b4999d76762f12c30f-v2",
+        "english": "When you equip an Angel, apply [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power], and [regen] [effect0.trigger0.effect2.status0.power].",
+        "french": "Lorsque vous équipez un ange, il gagne [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] et [regen] [effect0.trigger0.effect2.status0.power].",
+        "german": "Wende [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] und [regen] [effect0.trigger0.effect2.status0.power] an, wenn du einen Engel einsetzt.",
+        "russian": "Когда ангел надевает снаряжение, ему даются [valor] х[effect0.trigger0.effect0.status0.power], [rage] х[effect0.trigger0.effect1.status0.power] и [regen] х[effect0.trigger0.effect2.status0.power].",
+        "portuguese": "Quando um Anjo for equipado, concederá [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] e [regen] [effect0.trigger0.effect2.status0.power].",
+        "chinese": "当你给一个天使穿戴装备时，获得 [valor] [effect0.trigger0.effect0.status0.power]，[rage] [effect0.trigger0.effect1.status0.power] ，和[regen] [effect0.trigger0.effect2.status0.power]。",
+        "spanish": "Al equipar a un ángel, añade [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power] y [regen] [effect0.trigger0.effect2.status0.power].",
+        "chinese_traditional": "當你裝備一個天使時，施加[valor][effect0.trigger0.effect0.status0.power]、[rage][effect0.trigger0.effect1.status0.power]和[regen][effect0.trigger0.effect2.status0.power]。",
+        "korean": "천사에 장비를 장착할 시, [valor] [effect0.trigger0.effect0.status0.power], [rage] [effect0.trigger0.effect1.status0.power], [regen] [effect0.trigger0.effect2.status0.power] 효과를 적용합니다.",
+        "japanese": "装着した天使が[valor] [effect0.trigger0.effect0.status0.power]、[rage] [effect0.trigger0.effect1.status0.power]、[regen] [effect0.trigger0.effect2.status0.power]を得る。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-15c893e94a6c2f86-6b1022588364f5b4999d76762f12c30f-v2",
+          "english": "The iron chain of an Empyrial Palace guard, taken in battle and now used by the Banished.",
+          "french": "La chaîne de fer d'un garde du Palais empyréen, prise au combat et désormais utilisée par les Bannis.",
+          "german": "Die Eisenkette einer Wache des Empyräeischen Palastes, die nun von den Verbannten verwendet wird.",
+          "russian": "Железную цепь стражей Неземного дворца, которую брали в битву ангелы, теперь используют Изгнанники.",
+          "portuguese": "A corrente de ferro de um guarda do Palácio Celestial, tomada em batalha e agora usada pelos Expurgados.",
+          "chinese": "至高天宫殿守卫的铁链，在战斗中缴获，现在由流放者使用。",
+          "spanish": "La cadena de hierro de un guardia del Palacio Empíreo, obtenida en batalla y utilizada ahora por los Desterrados.",
+          "chinese_traditional": "一條帝國宮殿守衛的鐵鍊，從戰鬥中奪取，現在由流放者使用。",
+          "korean": "전투 중에 붙잡힌 천상의 궁전 경비병이 착용하던 철제 사슬로, 지금은 추방자가 사용한다.",
+          "japanese": "天の宮殿の衛兵が戦闘で奪った鉄の鎖。現在は脱天使たちが使用している。"
+        }
+      ],
+      "relic_effects": [
+        "@ManyBuffonAngelEquip.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "MegaRelicPool"
+  "relic_effects": [
+    {
+      "id": "ManyBuffonAngelEquip.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@ManyBuffonAngelEquip.effects0.triggers0"
+      ],
+      "param_source_team": "both",
+      "param_subtype": "SubtypesData_Angel",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ManyBuffonAngelEquip.effects0.triggers0",
+      "trigger": "on_equipment_added",
+      "effects": [
+        "@ManyBuffonAngelEquip.effects0.triggers0.effects0",
+        "@ManyBuffonAngelEquip.effects0.triggers0.effects1",
+        "@ManyBuffonAngelEquip.effects0.triggers0.effects2"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
   ],
   "effects": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "ManyBuffonAngelEquip.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
         {
-          "trigger": "on_equipment_added",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramStatusEffects": [
-                {
-                  "statusId": "valor",
-                  "count": 3
-                }
-              ]
-            },
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramStatusEffects": [
-                {
-                  "statusId": "buff",
-                  "count": 3
-                }
-              ]
-            },
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "paramStatusEffects": [
-                {
-                  "statusId": "regen",
-                  "count": 3
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "status": "valor",
+          "count": 3
         }
-      ],
-      "paramSourceTeam": "both",
-      "paramCharacterSubtype": "SubtypesData_Angel",
-      "paramBool": true
-    }
-  ],
-  "descriptionModifiers": [
+      ]
+    },
     {
-      "modifierClassName": "CardCountDescriptionModifier",
-      "paramCardType": "monster",
-      "textFormatKey": {
-        "key": "CollectableRelicData_textFormatKey-9ea416ab0720eeb7-6b1022588364f5b4999d76762f12c30f-v2",
-        "english": "([value] Angels)",
-        "french": "([value] Anges)",
-        "german": "([value] Engel)",
-        "russian": "([value] Ангелов)",
-        "portuguese": "([value] Anjos)",
-        "chinese": "([value] 天使)",
-        "spanish": "([value] Ángeles)",
-        "chinese_traditional": "([value] 天使)",
-        "korean": "([value] 천사)",
-        "japanese": "([value] 天使)"
-      },
-      "paramCharacterSubtype": "SubtypesData_Angel"
+      "id": "ManyBuffonAngelEquip.effects0.triggers0.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ManyBuffonAngelEquip.effects0.triggers0.effects2",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 3
+        }
+      ]
     }
   ]
 }

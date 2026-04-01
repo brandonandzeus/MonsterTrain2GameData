@@ -1,68 +1,87 @@
 {
-  "id": "MooncycleRestoreFriendlyHealth",
-  "guid": "6d977136-5aac-44fd-9843-54cf2a0bd01d",
-  "name": "Circle of Cycles",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-6e29e581d0f7fb16-9d184444da21cde4e8599cddb146480d-v2",
-    "english": "Circle of Cycles",
-    "french": "Cercle des cycles",
-    "german": "Kreis der Zyklen",
-    "russian": "Колесо циклов",
-    "portuguese": "Círculo dos Ciclos",
-    "chinese": "循环之轮",
-    "spanish": "Círculo de ciclos",
-    "chinese_traditional": "循環之環",
-    "korean": "순환의 원",
-    "japanese": "円環の輪"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-18d299801007d624-9d184444da21cde4e8599cddb146480d-v2",
-    "english": "Restore [effect0.power] health to the lowest health friendly unit on [mooncycle].",
-    "french": "Restaure <nobr>[effect0.power] PV</nobr> à l'allié ayant le moins de PV lors du [mooncycle].",
-    "german": "Stelle [effect0.power] Gesundheit für verbündete Einheiten mit der wenigsten Gesundheit im [mooncycle] wieder her.",
-    "russian": "В [mooncycle] восстанавливает [effect0.power] здоровья союзнику с самым низким его значением.",
-    "portuguese": "Restaura [effect0.power] de vida da unidade aliada com a menor vida durante o [mooncycle].",
-    "chinese": "[mooncycle]时，生命值最低的友方单位恢复 [effect0.power] 点生命值。",
-    "spanish": "Restaura [effect0.power] de salud a la unidad aliada con menos salud durante el [mooncycle].",
-    "chinese_traditional": "[mooncycle]時，為生命值最低的友方單位恢復[effect0.power]點生命值。",
-    "korean": "[mooncycle]마다 체력이 가장 낮은 아군 유닛의 체력을 [effect0.power] 회복합니다.",
-    "japanese": "[mooncycle]時に、体力が一番低い味方ユニットの体力を[effect0.power]回復する。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-d66781bcfda341c4-9d184444da21cde4e8599cddb146480d-v2",
-      "english": "“Oh, Empress Moon, you had one eye but so many faces!”\n—Lady Ekka",
-      "french": "<nobr>« Ô</nobr> impératrice Lune, vous n'aviez qu'un œil mais tant de <nobr>visages ! »</nobr> \n— Dame Ekka",
-      "german": "„Oh, Kaiserin Mond, du hattest ein Auge, aber so viele Gesichter!“\n—Lady Ekka",
-      "russian": "«О, императрица Луна, у тебя был один глаз, но так много лиц!»\n— Леди Экка",
-      "portuguese": "“Ah, Imperatriz Lunar, você tinha um olho, mas vários rostos!”\n— Senhorita Ekka",
-      "chinese": "“哦，女皇之月，您只有一只眼，却拥有如此多样的面貌！”\n——艾卡女士",
-      "spanish": "«¡Oh, Emperatriz Lunar, dotada de un solo ojo y de tantas caras!».\n—Lady Ekka",
-      "chinese_traditional": "「哦，月之女王，你只有一隻眼睛，但卻有如此多的面孔！」\n——艾卡女士",
-      "korean": "“아, 달의 여제여, 그대의 눈은 하나뿐이지만, 그 표정은 실로 다채롭군요!”\n- 에카 여왕",
-      "japanese": "「ああ、月の女帝よ。あなたは、目は1つでも多くの顔を持っていました！」\n—巫女エッカ"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassLunaCoven",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectHealOnMoonPhase",
-      "additionalTooltips": [
+      "id": "MooncycleRestoreFriendlyHealth",
+      "name": "Circle of Cycles",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
         {
-          "trigger": "on_moon_phase_shift",
-          "style": "default",
-          "isTriggerTooltip": true
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassLunaCoven",
+            "unlock_level": 3
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": 10,
-      "paramInt2": -1,
-      "paramTargetMode": "weakest_all_rooms"
+      "names": {
+        "key": "CollectableRelicData_nameKey-6e29e581d0f7fb16-9d184444da21cde4e8599cddb146480d-v2",
+        "english": "Circle of Cycles",
+        "french": "Cercle des cycles",
+        "german": "Kreis der Zyklen",
+        "russian": "Колесо циклов",
+        "portuguese": "Círculo dos Ciclos",
+        "chinese": "循环之轮",
+        "spanish": "Círculo de ciclos",
+        "chinese_traditional": "循環之環",
+        "korean": "순환의 원",
+        "japanese": "円環の輪"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-18d299801007d624-9d184444da21cde4e8599cddb146480d-v2",
+        "english": "Restore [effect0.power] health to the lowest health friendly unit on [mooncycle].",
+        "french": "Restaure <nobr>[effect0.power] PV</nobr> à l'allié ayant le moins de PV lors du [mooncycle].",
+        "german": "Stelle [effect0.power] Gesundheit für verbündete Einheiten mit der wenigsten Gesundheit im [mooncycle] wieder her.",
+        "russian": "В [mooncycle] восстанавливает [effect0.power] здоровья союзнику с самым низким его значением.",
+        "portuguese": "Restaura [effect0.power] de vida da unidade aliada com a menor vida durante o [mooncycle].",
+        "chinese": "[mooncycle]时，生命值最低的友方单位恢复 [effect0.power] 点生命值。",
+        "spanish": "Restaura [effect0.power] de salud a la unidad aliada con menos salud durante el [mooncycle].",
+        "chinese_traditional": "[mooncycle]時，為生命值最低的友方單位恢復[effect0.power]點生命值。",
+        "korean": "[mooncycle]마다 체력이 가장 낮은 아군 유닛의 체력을 [effect0.power] 회복합니다.",
+        "japanese": "[mooncycle]時に、体力が一番低い味方ユニットの体力を[effect0.power]回復する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-d66781bcfda341c4-9d184444da21cde4e8599cddb146480d-v2",
+          "english": "“Oh, Empress Moon, you had one eye but so many faces!”\n—Lady Ekka",
+          "french": "<nobr>« Ô</nobr> impératrice Lune, vous n'aviez qu'un œil mais tant de <nobr>visages ! »</nobr> \n— Dame Ekka",
+          "german": "„Oh, Kaiserin Mond, du hattest ein Auge, aber so viele Gesichter!“\n—Lady Ekka",
+          "russian": "«О, императрица Луна, у тебя был один глаз, но так много лиц!»\n— Леди Экка",
+          "portuguese": "“Ah, Imperatriz Lunar, você tinha um olho, mas vários rostos!”\n— Senhorita Ekka",
+          "chinese": "“哦，女皇之月，您只有一只眼，却拥有如此多样的面貌！”\n——艾卡女士",
+          "spanish": "«¡Oh, Emperatriz Lunar, dotada de un solo ojo y de tantas caras!».\n—Lady Ekka",
+          "chinese_traditional": "「哦，月之女王，你只有一隻眼睛，但卻有如此多的面孔！」\n——艾卡女士",
+          "korean": "“아, 달의 여제여, 그대의 눈은 하나뿐이지만, 그 표정은 실로 다채롭군요!”\n- 에카 여왕",
+          "japanese": "「ああ、月の女帝よ。あなたは、目は1つでも多くの顔を持っていました！」\n—巫女エッカ"
+        }
+      ],
+      "relic_effects": [
+        "@MooncycleRestoreFriendlyHealth.effects0"
+      ]
     }
   ],
-  "unlockLevel": 3
+  "relic_effects": [
+    {
+      "id": "MooncycleRestoreFriendlyHealth.effects0",
+      "name": "RelicEffectHealOnMoonPhase",
+      "additional_tooltips": [
+        "@MooncycleRestoreFriendlyHealth.effects0.additionalTooltips0"
+      ],
+      "param_source_team": "monsters",
+      "param_int": 10,
+      "param_int_2": -1,
+      "target_mode": "weakest_all_rooms"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "isTriggerTooltip": true,
+      "id": "MooncycleRestoreFriendlyHealth.effects0.additionalTooltips0",
+      "trigger": "on_moon_phase_shift",
+      "style": "default"
+    }
+  ]
 }

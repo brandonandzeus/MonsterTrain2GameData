@@ -1,57 +1,72 @@
 {
-  "id": "ConserveEmber",
-  "guid": "3e200d1f-7ba9-4a6e-a09d-5625f25b01ac",
-  "name": "The Unbroken Horn",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-b32323beb7683e48-a4d7740e95e550b4db0e8cb2eb64f089-v2",
-    "english": "The Unbroken Horn",
-    "french": "La corne unique",
-    "german": "Das unversehrte Horn",
-    "russian": "Уцелевший рог",
-    "portuguese": "O Chifre Intacto",
-    "chinese": "不折之角",
-    "spanish": "Cuerno intacto",
-    "chinese_traditional": "不折之角",
-    "korean": "부러지지 않는 뿔",
-    "japanese": "不屈の角"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-d911f92ab88ffc54-a4d7740e95e550b4db0e8cb2eb64f089-v2",
-    "english": "Conserve [ember] between turns and [deployphase].",
-    "french": "Conserve les [ember] restantes d'un tour à l'autre, [deployphase] comprise.",
-    "german": "Bewahre die [ember] zwischen den Zügen und der [deployphase].",
-    "russian": "Сохраняет остатки [ember] между ходами и <b>фазой размещения</b>.",
-    "portuguese": "Conserva [ember] entre os turnos e na [deployphase].",
-    "chinese": "将[deployphase]以及一回合中未使用的 [ember] 保存至下一回合。",
-    "spanish": "Conservas [ember] entre los turnos y la [deployphase].",
-    "chinese_traditional": "在回合之間保存[ember]和[deployphase]。",
-    "korean": "턴 및 [deployphase]에 남은 [ember]을 보존합니다.",
-    "japanese": "ターンと[deployphase]の間で[ember]を持ち越す。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-b515415679c29906-a4d7740e95e550b4db0e8cb2eb64f089-v2",
-      "english": "I’ve never found the final whereabouts of Grrrg, but before his mysterious disappearance, he left his unbroken horn with the Hellhorned, leading me to believe he has succumbed to death.",
-      "french": "Je n'ai jamais su ce qui est finalement arrivé à Grrrg, mais avant sa mystérieuse disparition, il a laissé sa corne unique aux Cornus, ce qui m'incite à penser qu'il a succombé.",
-      "german": "Ich habe nie herausgefunden, wo sich Grrrg zuletzt aufhielt. Aber vor seinem Verschwinden hinterließ er sein ungebrochenes Horn bei den Höllenhörnern. Er hat sich also wohl zum Sterben zurückgezogen.",
-      "russian": "Мне так и не удалось установить, где окончил свой путь Гррр, но прежде чем таинственно исчезнуть, он оставил свой уцелевший рог Адским отродьям, а значит, скорее всего, погиб.",
-      "portuguese": "Nunca descobri o paradeiro final de Grrrg, mas antes de seu misterioso desaparecimento, ele deixou o chifre intacto com os Endiabrados, o que me leva a crer que tenha sucumbido à morte.",
-      "chinese": "我到最后也没有找到格鲁格的下落。但在他神秘失踪之前，他将自己的不折之角留在了狱魔那里。这让我不得不相信，他已经臣服于死亡的命运了。",
-      "spanish": "Nunca llegué a dar con el último paradero de Grrrg, pero, antes de su misteriosa desaparición, dejó su cuerno intacto a los Astados Infernales, lo que me lleva a pensar que sucumbió a la muerte.",
-      "chinese_traditional": "我從未找到格拉格的最終下落，但在他神秘消失之前，他將自己未折斷的犄角留給了煉獄族，這讓我相信他已經死了。",
-      "korean": "그레그의 행방을 찾을 수는 없었지만, 그는 행방불명되기 전에 지옥뿔 군단에 자신의 부러지지 않은 뿔을 남겨 두었고, 이것을 본 나는 그레그가 최후를 맞이했다고 믿게 되었다.",
-      "japanese": "グルルグが最終的にどこへ行ったのかは突き止められていないが、彼が謎の失踪を遂げる前に折られたものではない角を獄角族に残して行ったため、彼は死んだのではないかと考えている。"
+      "id": "ConserveEmber",
+      "name": "The Unbroken Horn",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassHellhorned",
+            "unlock_level": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-b32323beb7683e48-a4d7740e95e550b4db0e8cb2eb64f089-v2",
+        "english": "The Unbroken Horn",
+        "french": "La corne unique",
+        "german": "Das unversehrte Horn",
+        "russian": "Уцелевший рог",
+        "portuguese": "O Chifre Intacto",
+        "chinese": "不折之角",
+        "spanish": "Cuerno intacto",
+        "chinese_traditional": "不折之角",
+        "korean": "부러지지 않는 뿔",
+        "japanese": "不屈の角"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-d911f92ab88ffc54-a4d7740e95e550b4db0e8cb2eb64f089-v2",
+        "english": "Conserve [ember] between turns and [deployphase].",
+        "french": "Conserve les [ember] restantes d'un tour à l'autre, [deployphase] comprise.",
+        "german": "Bewahre die [ember] zwischen den Zügen und der [deployphase].",
+        "russian": "Сохраняет остатки [ember] между ходами и <b>фазой размещения</b>.",
+        "portuguese": "Conserva [ember] entre os turnos e na [deployphase].",
+        "chinese": "将[deployphase]以及一回合中未使用的 [ember] 保存至下一回合。",
+        "spanish": "Conservas [ember] entre los turnos y la [deployphase].",
+        "chinese_traditional": "在回合之間保存[ember]和[deployphase]。",
+        "korean": "턴 및 [deployphase]에 남은 [ember]을 보존합니다.",
+        "japanese": "ターンと[deployphase]の間で[ember]を持ち越す。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-b515415679c29906-a4d7740e95e550b4db0e8cb2eb64f089-v2",
+          "english": "I’ve never found the final whereabouts of Grrrg, but before his mysterious disappearance, he left his unbroken horn with the Hellhorned, leading me to believe he has succumbed to death.",
+          "french": "Je n'ai jamais su ce qui est finalement arrivé à Grrrg, mais avant sa mystérieuse disparition, il a laissé sa corne unique aux Cornus, ce qui m'incite à penser qu'il a succombé.",
+          "german": "Ich habe nie herausgefunden, wo sich Grrrg zuletzt aufhielt. Aber vor seinem Verschwinden hinterließ er sein ungebrochenes Horn bei den Höllenhörnern. Er hat sich also wohl zum Sterben zurückgezogen.",
+          "russian": "Мне так и не удалось установить, где окончил свой путь Гррр, но прежде чем таинственно исчезнуть, он оставил свой уцелевший рог Адским отродьям, а значит, скорее всего, погиб.",
+          "portuguese": "Nunca descobri o paradeiro final de Grrrg, mas antes de seu misterioso desaparecimento, ele deixou o chifre intacto com os Endiabrados, o que me leva a crer que tenha sucumbido à morte.",
+          "chinese": "我到最后也没有找到格鲁格的下落。但在他神秘失踪之前，他将自己的不折之角留在了狱魔那里。这让我不得不相信，他已经臣服于死亡的命运了。",
+          "spanish": "Nunca llegué a dar con el último paradero de Grrrg, pero, antes de su misteriosa desaparición, dejó su cuerno intacto a los Astados Infernales, lo que me lleva a pensar que sucumbió a la muerte.",
+          "chinese_traditional": "我從未找到格拉格的最終下落，但在他神秘消失之前，他將自己未折斷的犄角留給了煉獄族，這讓我相信他已經死了。",
+          "korean": "그레그의 행방을 찾을 수는 없었지만, 그는 행방불명되기 전에 지옥뿔 군단에 자신의 부러지지 않은 뿔을 남겨 두었고, 이것을 본 나는 그레그가 최후를 맞이했다고 믿게 되었다.",
+          "japanese": "グルルグが最終的にどこへ行ったのかは突き止められていないが、彼が謎の失踪を遂げる前に折られたものではない角を獄角族に残して行ったため、彼は死んだのではないかと考えている。"
+        }
+      ],
+      "relic_effects": [
+        "@ConserveEmber.effects0"
+      ]
     }
   ],
-  "rarity": "common",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
+  "relic_effects": [
     {
-      "relicEffectClassName": "RelicEffectConserveEnergyEndOfTurn"
+      "id": "ConserveEmber.effects0",
+      "name": "RelicEffectConserveEnergyEndOfTurn"
     }
-  ],
-  "unlockLevel": 3
+  ]
 }

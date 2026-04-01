@@ -1,73 +1,74 @@
 {
-  "id": "MoltenManifold",
-  "guid": "f141d334-b503-48ff-ac21-5f2ad27105dd",
-  "name": "Molten Manifold",
-  "nameKey": {
-    "key": "CollectableRelicData_nameKey-2efc9282c3d2a26e-8c98edae17e55d74da59492160a395b2-v2",
-    "english": "Molten Manifold",
-    "french": "Collecteur fondu",
-    "german": "Geschmolzener Krümmer",
-    "russian": "Коллектор расплава",
-    "portuguese": "Multitude Derretida",
-    "chinese": "熔融集管",
-    "spanish": "Colector de metal fundido",
-    "chinese_traditional": "熔融歧管",
-    "korean": "용해 분기관",
-    "japanese": "融解されたマニホールド"
-  },
-  "descriptionKey": {
-    "key": "CollectableRelicData_descriptionKey-6c6dc55ead4f18d9-8c98edae17e55d74da59492160a395b2-v2",
-    "english": "<b>[x] Cost</b> cards get +[effect0.power] to their X value when played.",
-    "french": "Les cartes <b>coûtant [x]</b> gagnent +[effect0.power] à leur valeur X lorsqu'elles sont jouées.",
-    "german": "Karten mit <b>[x]-Kosten</b> erhalten +[effect0.power] zum Wert von X, wenn sie gespielt werden.",
-    "russian": "<b>Карты стоимостью [x]</b> при использовании получают +[effect0.power] к своему значению X.",
-    "portuguese": "As cartas de <b>Custo [x]</b> recebem +[effect0.power] em seu valor X quando jogadas.",
-    "chinese": "当打出<b>费用为 X[x]</b> 的卡牌时，X 的值 +[effect0.power]。",
-    "spanish": "Las cartas con <b>coste [x]</b> añaden +[effect0.power] al valor de X al jugarlas.",
-    "chinese_traditional": "<b>[x]費用</b>的卡牌在打出時，其X值+[effect0.power]。",
-    "korean": "<b>[x] 비용</b> 카드가 사용될 때, X 값이 +[effect0.power] 증가합니다.",
-    "japanese": "<b>[x]コスト</b>のカードのプレイ時に、Xの値に+[effect0.power]が適用される。"
-  },
-  "relicLoreTooltipKeys": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "key": "CollectableRelicData_data-6c4c1d66693a86f9-8c98edae17e55d74da59492160a395b2-v2",
-      "english": "Within the foundry, molten streams flowed constantly within large systems of troughs, each one feeding to various molds for casting. The stewards working the foundry needed no respite, which meant fresh steel was always at the ready.",
-      "french": "Au sein de la fonderie, des rivières de métal en fusion s'écoulaient sans cesse à travers d'immenses systèmes de canaux, chacun alimentant divers moules. Les stewards n'avaient pas besoin de pause, assurant ainsi que l'acier frais soit disponible en permanence.",
-      "german": "In der Gießerei fließen Ströme aus geschmolzenem Stahl stetig durch große Wannensysteme, die wiederum in verschiedene Gussformen münden. Die Begleiter, die in der Gießerei ihre Arbeit verrichten, brauchen keine Ruhepausen, weshalb stets frischer Stahl zur Verfügung stand.",
-      "russian": "В литейной расплавленный металл тек непрерывными потоками по системе желобов, и каждый из них вел к своим формам для отливки. Стюардам, что там работали, отдых не требовался — значит, свежая сталь была готова всегда.",
-      "portuguese": "Dentro da fundição, fluxos de metal derretido correm constantemente dentro de enormes sistemas de calhas, cada uma delas preenchendo os inúmeros moldes. Os Guardas trabalhando na fundição não precisavam de descanso, o que significa que aço fresco estava sempre pronto.",
-      "chinese": "在铸造厂里，熔化成液态的金属在大型沟槽系统里不断流动，每个沟槽都连接着各种用来浇筑的模具。铸造厂里工作的乘务员不需要休息，这意味着无论何时都有新铸好的钢可供取用。",
-      "spanish": "En la fundición, unos ríos de metal derretido fluían constantemente por un amplio sistema de conductos, cada uno dirigido a distintos moldes. Los auxiliares que trabajaban allí no necesitaban descanso, por lo que siempre había acero nuevo disponible.",
-      "chinese_traditional": "鑄造廠內，熔融的金屬漿液在巨大的槽道系統中川流不息，分別送往各式模具進行鑄造。在此工作的機僕不需休息，這意味著隨時都有新鑄的鋼鐵可供使用。",
-      "korean": "주조소 내부에서는 거대한 수로 시스템을 따라 용융 금속이 끊임없이 흘렀고, 각각의 수로는 다양한 주형으로 이어져 주조를 진행했다. 주조소에서 일하는 잡부들은 휴식이 필요 없었기에, 언제나 신선한 강철을 준비할 수 있었다.",
-      "japanese": "鋳造工場の中では、広範囲に組まれた湯道を常に溶融金属が流れ、鋳造のために鋳型へと流し込まれていた。工場を稼働させるスチュワードは休息が必要ないため、常に新しいは鋼を製造することができたのだ。"
-    }
-  ],
-  "rarity": "common",
-  "linkedClass": "ClassRailforged",
-  "pools": [
-    "MegaRelicPool"
-  ],
-  "effects": [
-    {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "paramCardUpgradeData": {
-        "id": "TinkerersToolbelt_Upgrade",
-        "guid": "da974fcd-8ba4-4fcb-bb62-48eb07c79841",
-        "filters": [
-          {
-            "id": "OnlyXCost",
-            "costRange": {
-              "x": 1.0,
-              "y": 99.0
-            },
-            "requireXCost": true
+      "id": "MoltenManifold",
+      "name": "Molten Manifold",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassRailforged",
+            "required_dlc": "railforged"
           }
-        ],
-        "xCostReduction": 2
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-2efc9282c3d2a26e-8c98edae17e55d74da59492160a395b2-v2",
+        "english": "Molten Manifold",
+        "french": "Collecteur fondu",
+        "german": "Geschmolzener Krümmer",
+        "russian": "Коллектор расплава",
+        "portuguese": "Multitude Derretida",
+        "chinese": "熔融集管",
+        "spanish": "Colector de metal fundido",
+        "chinese_traditional": "熔融歧管",
+        "korean": "용해 분기관",
+        "japanese": "融解されたマニホールド"
       },
-      "paramSourceTeam": "monsters"
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-6c6dc55ead4f18d9-8c98edae17e55d74da59492160a395b2-v2",
+        "english": "<b>[x] Cost</b> cards get +[effect0.power] to their X value when played.",
+        "french": "Les cartes <b>coûtant [x]</b> gagnent +[effect0.power] à leur valeur X lorsqu'elles sont jouées.",
+        "german": "Karten mit <b>[x]-Kosten</b> erhalten +[effect0.power] zum Wert von X, wenn sie gespielt werden.",
+        "russian": "<b>Карты стоимостью [x]</b> при использовании получают +[effect0.power] к своему значению X.",
+        "portuguese": "As cartas de <b>Custo [x]</b> recebem +[effect0.power] em seu valor X quando jogadas.",
+        "chinese": "当打出<b>费用为 X[x]</b> 的卡牌时，X 的值 +[effect0.power]。",
+        "spanish": "Las cartas con <b>coste [x]</b> añaden +[effect0.power] al valor de X al jugarlas.",
+        "chinese_traditional": "<b>[x]費用</b>的卡牌在打出時，其X值+[effect0.power]。",
+        "korean": "<b>[x] 비용</b> 카드가 사용될 때, X 값이 +[effect0.power] 증가합니다.",
+        "japanese": "<b>[x]コスト</b>のカードのプレイ時に、Xの値に+[effect0.power]が適用される。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-6c4c1d66693a86f9-8c98edae17e55d74da59492160a395b2-v2",
+          "english": "Within the foundry, molten streams flowed constantly within large systems of troughs, each one feeding to various molds for casting. The stewards working the foundry needed no respite, which meant fresh steel was always at the ready.",
+          "french": "Au sein de la fonderie, des rivières de métal en fusion s'écoulaient sans cesse à travers d'immenses systèmes de canaux, chacun alimentant divers moules. Les stewards n'avaient pas besoin de pause, assurant ainsi que l'acier frais soit disponible en permanence.",
+          "german": "In der Gießerei fließen Ströme aus geschmolzenem Stahl stetig durch große Wannensysteme, die wiederum in verschiedene Gussformen münden. Die Begleiter, die in der Gießerei ihre Arbeit verrichten, brauchen keine Ruhepausen, weshalb stets frischer Stahl zur Verfügung stand.",
+          "russian": "В литейной расплавленный металл тек непрерывными потоками по системе желобов, и каждый из них вел к своим формам для отливки. Стюардам, что там работали, отдых не требовался — значит, свежая сталь была готова всегда.",
+          "portuguese": "Dentro da fundição, fluxos de metal derretido correm constantemente dentro de enormes sistemas de calhas, cada uma delas preenchendo os inúmeros moldes. Os Guardas trabalhando na fundição não precisavam de descanso, o que significa que aço fresco estava sempre pronto.",
+          "chinese": "在铸造厂里，熔化成液态的金属在大型沟槽系统里不断流动，每个沟槽都连接着各种用来浇筑的模具。铸造厂里工作的乘务员不需要休息，这意味着无论何时都有新铸好的钢可供取用。",
+          "spanish": "En la fundición, unos ríos de metal derretido fluían constantemente por un amplio sistema de conductos, cada uno dirigido a distintos moldes. Los auxiliares que trabajaban allí no necesitaban descanso, por lo que siempre había acero nuevo disponible.",
+          "chinese_traditional": "鑄造廠內，熔融的金屬漿液在巨大的槽道系統中川流不息，分別送往各式模具進行鑄造。在此工作的機僕不需休息，這意味著隨時都有新鑄的鋼鐵可供使用。",
+          "korean": "주조소 내부에서는 거대한 수로 시스템을 따라 용융 금속이 끊임없이 흘렀고, 각각의 수로는 다양한 주형으로 이어져 주조를 진행했다. 주조소에서 일하는 잡부들은 휴식이 필요 없었기에, 언제나 신선한 강철을 준비할 수 있었다.",
+          "japanese": "鋳造工場の中では、広範囲に組まれた湯道を常に溶融金属が流れ、鋳造のために鋳型へと流し込まれていた。工場を稼働させるスチュワードは休息が必要ないため、常に新しいは鋼を製造することができたのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@MoltenManifold.effects0"
+      ]
     }
   ],
-  "requiredDLC": "railforged"
+  "relic_effects": [
+    {
+      "id": "MoltenManifold.effects0",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_upgrade": "TinkerersToolbelt_Upgrade",
+      "param_source_team": "monsters"
+    }
+  ]
 }
