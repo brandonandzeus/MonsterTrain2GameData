@@ -1,564 +1,670 @@
 {
-  "id": "Covenant04_StrongerBosses",
-  "guid": "80cfbaca-da9a-4aa8-ac0d-a6563f26fcb8",
-  "name": "Covenant04_StrongerBosses",
-  "descriptionKey": {
-    "key": "CovenantData_descriptionKey-8d23a83af7eaaccb-f7009ac0327c41e42836e43c3798df0e-v2",
-    "english": "Bosses have increased [attack] and [health]. Non-Flying Bosses have an additional mechanic.",
-    "french": "[attack] et [health] des boss augmentés. Les boss non volants ont une mécanique supplémentaire.",
-    "german": "Bosse verfügen über mehr [attack] und [health]. Nicht-fliegende Bosse verfügen über einen zusätzlichen Mechanismus.",
-    "russian": "У боссов повышены [attack] и [health]. У нелетающих боссов есть дополнительная механика.",
-    "portuguese": "Os Chefões têm um aumento de [attack] e [health]. Os Chefões que não são Voadores têm uma mecânica adicional.",
-    "chinese": "首领拥有更多 [attack] 和 [health]。非飞行首领拥有一项额外机制。",
-    "spanish": "Los jefes tienen más [attack] y [health]. Los jefes que no vuelan tienen una mecánica adicional.",
-    "chinese_traditional": "首領擁有更高的[attack]和[health]。非飛行首領擁有額外機制。",
-    "korean": "보스의 [attack] 및 [health]이 증가합니다. 비행하지 않는 보스에게는 새로운 메커니즘이 추가됩니다.",
-    "japanese": "ボスの[attack]と[health]が増加する。非飛行型のボスにギミックが追加される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Covenant04_StrongerBosses",
+      "type": "covenant",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-cae1b24f293bdebc-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [rage] [effect0.status0.power].",
-            "french": "Octroie [rage] [effect0.status0.power].",
-            "german": "Erhalte [rage] [effect0.status0.power].",
-            "russian": "Дается [effect0.status0.power] х[rage].",
-            "portuguese": "Recebe [rage] [effect0.status0.power].",
-            "chinese": "获得 [rage] [effect0.status0.power]。",
-            "spanish": "Añade [rage] [effect0.status0.power].",
-            "chinese_traditional": "獲得[rage][effect0.status0.power]。",
-            "korean": "[rage] [effect0.status0.power] 효과를 획득합니다.",
-            "japanese": "[rage] [effect0.status0.power]を得る。"
-          },
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "buff",
-                  "count": 1
-                }
-              ]
-            }
-          ]
+          "covenant": {
+            "ascension_level": 4
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramCharacters": [
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-8d23a83af7eaaccb-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Bosses have increased [attack] and [health]. Non-Flying Bosses have an additional mechanic.",
+        "french": "[attack] et [health] des boss augmentés. Les boss non volants ont une mécanique supplémentaire.",
+        "german": "Bosse verfügen über mehr [attack] und [health]. Nicht-fliegende Bosse verfügen über einen zusätzlichen Mechanismus.",
+        "russian": "У боссов повышены [attack] и [health]. У нелетающих боссов есть дополнительная механика.",
+        "portuguese": "Os Chefões têm um aumento de [attack] e [health]. Os Chefões que não são Voadores têm uma mecânica adicional.",
+        "chinese": "首领拥有更多 [attack] 和 [health]。非飞行首领拥有一项额外机制。",
+        "spanish": "Los jefes tienen más [attack] y [health]. Los jefes que no vuelan tienen una mecánica adicional.",
+        "chinese_traditional": "首領擁有更高的[attack]和[health]。非飛行首領擁有額外機制。",
+        "korean": "보스의 [attack] 및 [health]이 증가합니다. 비행하지 않는 보스에게는 새로운 메커니즘이 추가됩니다.",
+        "japanese": "ボスの[attack]と[health]が増加する。非飛行型のボスにギミックが追加される。"
+      },
+      "relic_effects": [
+        "@Covenant04_StrongerBosses.effects0",
+        "@Covenant04_StrongerBosses.effects1",
+        "@Covenant04_StrongerBosses.effects2",
+        "@Covenant04_StrongerBosses.effects3",
+        "@Covenant04_StrongerBosses.effects4",
+        "@Covenant04_StrongerBosses.effects5",
+        "@Covenant04_StrongerBosses.effects6",
+        "@Covenant04_StrongerBosses.effects7",
+        "@Covenant04_StrongerBosses.effects8",
+        "@Covenant04_StrongerBosses.effects9",
+        "@Covenant04_StrongerBosses.effects10",
+        "@Covenant04_StrongerBosses.effects11",
+        "@Covenant04_StrongerBosses.effects12",
+        "@Covenant04_StrongerBosses.effects13",
+        "@Covenant04_StrongerBosses.effects14",
+        "@Covenant04_StrongerBosses.effects15",
+        "@Covenant04_StrongerBosses.effects16",
+        "@Covenant04_StrongerBosses.effects17",
+        "@Covenant04_StrongerBosses.effects18",
+        "@Covenant04_StrongerBosses.effects19",
+        "@Covenant04_StrongerBosses.effects20",
+        "@Covenant04_StrongerBosses.effects21",
+        "@Covenant04_StrongerBosses.effects22",
+        "@Covenant04_StrongerBosses.effects23",
+        "@Covenant04_StrongerBosses.effects24"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Covenant04_StrongerBosses.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Covenant04_StrongerBosses.effects0.triggers0"
+      ],
+      "param_source_team": "heroes",
+      "param_characters": [
         "Boss_Level1_Basic"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramCharacterSubtype": "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects1",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_subtype": "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 100,
-      "paramCharacterSubtype": "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects2",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 100,
+      "param_subtype": "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 250,
-      "paramCharacterSubtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects3",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 250,
+      "param_subtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 100,
-      "paramCharacterSubtype": "SubtypesData_BigBossT1_50952308-e0f3-4acb-b0cc-e0d662b868b8",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects4",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 100,
+      "param_subtype": "SubtypesData_BigBossT1_50952308-e0f3-4acb-b0cc-e0d662b868b8",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 300,
-      "paramCharacterSubtype": "SubtypesData_BigBoss2_e3e6f1a2-34a7-4493-b9d7-a123e182241e",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects5",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 300,
+      "param_subtype": "SubtypesData_BigBoss2_e3e6f1a2-34a7-4493-b9d7-a123e182241e",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1500,
-      "paramCharacterSubtype": "SubtypesData_BigBossT3_f7449215-5071-4671-909c-a02e2cceb821",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects6",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 1500,
+      "param_subtype": "SubtypesData_BigBossT3_f7449215-5071-4671-909c-a02e2cceb821",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 500,
-      "paramCharacterSubtype": "SubtypesData_BossDominion",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects7",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 500,
+      "param_subtype": "SubtypesData_BossDominion",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 500,
-      "paramCharacterSubtype": "SubtypesData_BossSavagery",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects8",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 500,
+      "param_subtype": "SubtypesData_BossSavagery",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1000,
-      "paramCharacterSubtype": "SubtypesData_BossEntropy",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects9",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 1000,
+      "param_subtype": "SubtypesData_BossEntropy",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 5,
-      "paramCharacterSubtype": "SubtypesData_BossSavagery",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects10",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 5,
+      "param_subtype": "SubtypesData_BossSavagery",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 5,
-      "paramCharacterSubtype": "SubtypesData_BossEntropy",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects11",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 5,
+      "param_subtype": "SubtypesData_BossEntropy",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "Covenant04_StrongerBosses.effects12",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "titanskin",
+          "status": "titanskin",
           "count": 2
         }
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level2_BigStats"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects13",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-d8dd2a719c599439-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Apply [corruption] [effect0.status0.power] to all your units.",
-            "french": "Inflige [corruption] [effect0.status0.power] à toutes vos unités.",
-            "german": "Wende [corruption] [effect0.status0.power] auf deine Einheiten an.",
-            "russian": "На всех бойцов накладывается [corruption] х[effect0.status0.power].",
-            "portuguese": "Aplica [corruption] [effect0.status0.power] às suas unidades.",
-            "chinese": "对你的所有单位施加 [corruption] [effect0.status0.power]。",
-            "spanish": "Añade [corruption] [effect0.status0.power] a todas tus unidades.",
-            "chinese_traditional": "對所有友方單位施加[corruption][effect0.status0.power]。",
-            "korean": "내 유닛 전체에 [corruption] [effect0.status0.power] 효과를 적용합니다.",
-            "japanese": "すべての自軍のユニットに[corruption] [effect0.status0.power]を付与する。"
-          },
-          "trigger": "on_spawn_not_from_card",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "tower",
-              "targetTeamType": "monsters",
-              "paramStatusEffects": [
-                {
-                  "statusId": "corruption",
-                  "count": 5
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects13.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level4_Corruptor"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects14",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-4bfcd92b737cfcda-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Apply [sap] [effect0.status0.power].",
-            "french": "Applique [sap] [effect0.status0.power].",
-            "german": "Wende [sap] [effect0.status0.power] an.",
-            "russian": "Накладывает [sap] х[effect0.status0.power].",
-            "portuguese": "Aplica [sap] [effect0.status0.power].",
-            "chinese": "施加 [sap] [effect0.status0.power]。",
-            "spanish": "Añade [sap] [effect0.status0.power].",
-            "chinese_traditional": "施加[sap][effect0.status0.power]。",
-            "korean": "[sap] [effect0.status0.power] 효과를 적용합니다.",
-            "japanese": "[sap] [effect0.status0.power]を付与する。"
-          },
-          "trigger": "on_attacking",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "last_attacked_character",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "debuff",
-                  "count": 3
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects14.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level4_EmberGranter"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects15",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-419bfaee1aed5445-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [spikes] [effect0.status0.power].",
-            "french": "Octroie [spikes] [effect0.status0.power].",
-            "german": "Erhalte [spikes] [effect0.status0.power].",
-            "russian": "Дает [spikes] х[effect0.status0.power].",
-            "portuguese": "Recebe [spikes] [effect0.status0.power].",
-            "chinese": "获得 [spikes] [effect0.status0.power]。",
-            "spanish": "Añade [spikes] [effect0.status0.power].",
-            "chinese_traditional": "獲得[spikes][effect0.status0.power]。",
-            "korean": "[spikes] [effect0.status0.power] 효과를 획득합니다.",
-            "japanese": "[spikes] [effect0.status0.power]を得る。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "spikes",
-                  "count": 1
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects15.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level2_Spikes"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects16",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-d30f93e8b136fc86-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [sap] [effect0.status0.power] and restore [effect1.power] health.",
-            "french": "Octroie [sap] [effect0.status0.power] et rend <nobr>[effect1.power] PV.</nobr>",
-            "german": "Erhalte [sap] [effect0.status0.power] und stelle [effect1.power] Gesundheit wieder her.",
-            "russian": "Накладывает [sap] х[effect0.status0.power] и восстанавливает [effect1.power] здоровья.",
-            "portuguese": "Recebe [sap] [effect0.status0.power] e restaura [effect1.power] de vida.",
-            "chinese": "获得 [sap] [effect0.status0.power] 并恢复 [effect1.power] 点生命值。",
-            "spanish": "Añade [sap] y [effect0.status0.power] y restaura [effect1.power] de salud.",
-            "chinese_traditional": "獲得[sap][effect0.status0.power]並恢復[effect1.power]點生命值。",
-            "korean": "[sap] [effect0.status0.power] 효과를 획득하며, [effect1.power] 체력을 회복합니다.",
-            "japanese": "[sap] [effect0.status0.power]を得て、体力を[effect1.power]回復する。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "debuff",
-                  "count": 1
-                }
-              ]
-            },
-            {
-              "effectStateName": "CardEffectHeal",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramInt": 30
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects16.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level1_Defensive"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "Covenant04_StrongerBosses.effects17",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "buff",
+          "status": "buff",
           "count": 3
         }
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level1_Basic"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects18",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-c0be5866be368ab5-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Apply [multistrike] [effect0.status0.power] to all enemy units.",
-            "french": "Applique [multistrike] [effect0.status0.power] à tous les ennemis.",
-            "german": "Wende [multistrike] [effect0.status0.power] auf alle gegnerische Einheiten an.",
-            "russian": "Накладывает [multistrike] х[effect0.status0.power] на бойцов врага.",
-            "portuguese": "Aplica [multistrike] [effect0.status0.power] às unidades inimigas.",
-            "chinese": "使所有敌方单位获得 [multistrike] [effect0.status0.power]。",
-            "spanish": "Añade [multistrike] [effect0.status0.power] a todas las unidades enemigas.",
-            "chinese_traditional": "對所有敵方單位施加[multistrike][effect0.status0.power]。",
-            "korean": "모든 적 유닛들에게 [multistrike] [effect0.status0.power] 효과를 적용합니다.",
-            "japanese": "すべての敵ユニットに[multistrike] [effect0.status0.power]を付与する。"
-          },
-          "trigger": "on_spawn_not_from_card",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "tower",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "multistrike",
-                  "count": 1
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects18.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level4_Harvester"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects19",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-c0b2c9991eee1c5c-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [titanskin] [effect0.status0.power].",
-            "french": "Octroie [titanskin] [effect0.status0.power].",
-            "german": "Erhalte [titanskin] [effect0.status0.power].",
-            "russian": "Дается [titanskin] х[effect0.status0.power].",
-            "portuguese": "Recebe [titanskin] [effect0.status0.power].",
-            "chinese": "获得 [titanskin] [effect0.status0.power]。",
-            "spanish": "Añade [titanskin] [effect0.status0.power].",
-            "chinese_traditional": "獲得[titanskin][effect0.status0.power]。",
-            "korean": "[titanskin] [effect0.status0.power] 효과를 획득합니다.",
-            "japanese": "[titanskin] [effect0.status0.power]を得る。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "titanskin",
-                  "count": 5
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects19.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level5_Titanskin"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects20",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-db3a4fbf52652824-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [multistrike] [effect0.status0.power].",
-            "french": "Octroie [multistrike] [effect0.status0.power].",
-            "german": "Erhalte [multistrike] [effect0.status0.power].",
-            "russian": "Дает [multistrike] х[effect0.status0.power].",
-            "portuguese": "Recebe [multistrike] [effect0.status0.power].",
-            "chinese": "获得 [multistrike] [effect0.status0.power]。",
-            "spanish": "Añade [multistrike] [effect0.status0.power].",
-            "chinese_traditional": "獲得[multistrike][effect0.status0.power]。",
-            "korean": "[multistrike] [effect0.status0.power] 효과를 획득합니다.",
-            "japanese": "[multistrike] [effect0.status0.power]を得る。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "multistrike",
-                  "count": 1
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects20.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level7_Rax"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects21",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-c09d65ff7f9963fd-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [damageshield] [effect0.status0.power].",
-            "french": "Octroie [damageshield] [effect0.status0.power].",
-            "german": "Erhalte [damageshield] [effect0.status0.power].",
-            "russian": "Дает [damageshield] х[effect0.status0.power].",
-            "portuguese": "Recebe [damageshield] [effect0.status0.power].",
-            "chinese": "获得 [damageshield] [effect0.status0.power]。",
-            "spanish": "Añade [damageshield] [effect0.status0.power].",
-            "chinese_traditional": "獲得[damageshield][effect0.status0.power]。",
-            "korean": "[damageshield] [effect0.status0.power] 효과를 획득합니다.",
-            "japanese": "[damageshield] [effect0.status0.power]を得る。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "damage shield",
-                  "count": 1
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects21.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "Boss_Level2_BigStats"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects22",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-3ab3e7b03deb86fe-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Grant boss units on the train +[effect0.power][attack] and [armor] [effect1.status0.power].",
-            "french": "Les boss dans le train gagnent +[effect0.power][attack] et [armor] [effect1.status0.power].",
-            "german": "Gewährt Boss-Einheiten auf dem Zug +[effect0.power][attack] und [armor] [effect1.status0.power].",
-            "russian": "Врагам-боссам в поезде дается +[effect0.power][attack] и [armor] х[effect1.status0.power].",
-            "portuguese": "Concede +[effect0.power][attack] e [armor] [effect1.status0.power] às unidades de chefão no trem.",
-            "chinese": "火车上的首领单位获得+[effect0.power][attack]和 [armor] [effect1.status0.power]。",
-            "spanish": "Otorga +[effect0.power][attack] y [armor] [effect1.status0.power] a las unidades jefe en el tren.",
-            "chinese_traditional": "賦予列車上的首領 +[effect0.power][attack]和[armor][effect1.status0.power]。",
-            "korean": "열차 내 보스 유닛들에 +[effect0.power][attack] 및 [armor] [effect1.status0.power]을 부여합니다.",
-            "japanese": "列車のボスユニットに+[effect0.power][attack]と[armor] [effect1.status0.power]を付与する。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffDamage",
-              "targetMode": "tower",
-              "targetTeamType": "heroes",
-              "targetCharacterSubtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
-              "paramInt": 15
-            },
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "tower",
-              "targetTeamType": "heroes",
-              "targetCharacterSubtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
-              "paramStatusEffects": [
-                {
-                  "statusId": "armor",
-                  "count": 300
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects22.triggers0"
       ],
-      "paramSourceTeam": "both",
-      "paramCharacters": [
+      "param_source_team": "both",
+      "param_characters": [
         "SpikyRockT3_Chosen_Boss_BasicNonAttack"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Covenant04_StrongerBosses.effects23",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "CovenantData_descriptionKey-cfd25bdbfa8a460c-f7009ac0327c41e42836e43c3798df0e-v2",
-            "english": "Gain [undying] [effect0.status0.power].",
-            "french": "Octroie [undying] [effect0.status0.power].",
-            "german": "Erhalte [undying] [effect0.status0.power].",
-            "russian": "Дает [effect0.status0.power] х[undying].",
-            "portuguese": "Recebe [undying] [effect0.status0.power].",
-            "chinese": "获得 [undying] [effect0.status0.power]。",
-            "spanish": "Añade [undying] [effect0.status0.power].",
-            "chinese_traditional": "獲得[undying][effect0.status0.power]。",
-            "korean": "[undying] [effect0.status0.power] 효과를 획득합니다.",
-            "japanese": "[undying] [effect0.status0.power]を得る。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "heroes",
-              "paramStatusEffects": [
-                {
-                  "statusId": "undying",
-                  "count": 6
-                }
-              ]
-            }
-          ]
-        }
+        "@Covenant04_StrongerBosses.effects23.triggers0"
       ],
-      "paramSourceTeam": "heroes",
-      "paramCharacters": [
+      "param_source_team": "heroes",
+      "param_characters": [
         "Boss_Level5_Reanimate"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 75,
-      "paramCharacterSubtype": "SubtypesData_ChosenSpikes",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant04_StrongerBosses.effects24",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 75,
+      "param_subtype": "SubtypesData_ChosenSpikes",
+      "param_trigger": "on_spawn"
     }
   ],
-  "ascensionLevel": 4
+  "character_triggers": [
+    {
+      "id": "Covenant04_StrongerBosses.effects0.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-cae1b24f293bdebc-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [rage] [effect0.status0.power].",
+        "french": "Octroie [rage] [effect0.status0.power].",
+        "german": "Erhalte [rage] [effect0.status0.power].",
+        "russian": "Дается [effect0.status0.power] х[rage].",
+        "portuguese": "Recebe [rage] [effect0.status0.power].",
+        "chinese": "获得 [rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power].",
+        "chinese_traditional": "獲得[rage][effect0.status0.power]。",
+        "korean": "[rage] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[rage] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects0.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects13.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-d8dd2a719c599439-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Apply [corruption] [effect0.status0.power] to all your units.",
+        "french": "Inflige [corruption] [effect0.status0.power] à toutes vos unités.",
+        "german": "Wende [corruption] [effect0.status0.power] auf deine Einheiten an.",
+        "russian": "На всех бойцов накладывается [corruption] х[effect0.status0.power].",
+        "portuguese": "Aplica [corruption] [effect0.status0.power] às suas unidades.",
+        "chinese": "对你的所有单位施加 [corruption] [effect0.status0.power]。",
+        "spanish": "Añade [corruption] [effect0.status0.power] a todas tus unidades.",
+        "chinese_traditional": "對所有友方單位施加[corruption][effect0.status0.power]。",
+        "korean": "내 유닛 전체에 [corruption] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "すべての自軍のユニットに[corruption] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_spawn_not_from_card",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects13.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects14.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-4bfcd92b737cfcda-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Apply [sap] [effect0.status0.power].",
+        "french": "Applique [sap] [effect0.status0.power].",
+        "german": "Wende [sap] [effect0.status0.power] an.",
+        "russian": "Накладывает [sap] х[effect0.status0.power].",
+        "portuguese": "Aplica [sap] [effect0.status0.power].",
+        "chinese": "施加 [sap] [effect0.status0.power]。",
+        "spanish": "Añade [sap] [effect0.status0.power].",
+        "chinese_traditional": "施加[sap][effect0.status0.power]。",
+        "korean": "[sap] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[sap] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects14.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects15.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-419bfaee1aed5445-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [spikes] [effect0.status0.power].",
+        "french": "Octroie [spikes] [effect0.status0.power].",
+        "german": "Erhalte [spikes] [effect0.status0.power].",
+        "russian": "Дает [spikes] х[effect0.status0.power].",
+        "portuguese": "Recebe [spikes] [effect0.status0.power].",
+        "chinese": "获得 [spikes] [effect0.status0.power]。",
+        "spanish": "Añade [spikes] [effect0.status0.power].",
+        "chinese_traditional": "獲得[spikes][effect0.status0.power]。",
+        "korean": "[spikes] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[spikes] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects15.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects16.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-d30f93e8b136fc86-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [sap] [effect0.status0.power] and restore [effect1.power] health.",
+        "french": "Octroie [sap] [effect0.status0.power] et rend <nobr>[effect1.power] PV.</nobr>",
+        "german": "Erhalte [sap] [effect0.status0.power] und stelle [effect1.power] Gesundheit wieder her.",
+        "russian": "Накладывает [sap] х[effect0.status0.power] и восстанавливает [effect1.power] здоровья.",
+        "portuguese": "Recebe [sap] [effect0.status0.power] e restaura [effect1.power] de vida.",
+        "chinese": "获得 [sap] [effect0.status0.power] 并恢复 [effect1.power] 点生命值。",
+        "spanish": "Añade [sap] y [effect0.status0.power] y restaura [effect1.power] de salud.",
+        "chinese_traditional": "獲得[sap][effect0.status0.power]並恢復[effect1.power]點生命值。",
+        "korean": "[sap] [effect0.status0.power] 효과를 획득하며, [effect1.power] 체력을 회복합니다.",
+        "japanese": "[sap] [effect0.status0.power]を得て、体力を[effect1.power]回復する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects16.triggers0.effects0",
+        "@Covenant04_StrongerBosses.effects16.triggers0.effects1"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects18.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-c0be5866be368ab5-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Apply [multistrike] [effect0.status0.power] to all enemy units.",
+        "french": "Applique [multistrike] [effect0.status0.power] à tous les ennemis.",
+        "german": "Wende [multistrike] [effect0.status0.power] auf alle gegnerische Einheiten an.",
+        "russian": "Накладывает [multistrike] х[effect0.status0.power] на бойцов врага.",
+        "portuguese": "Aplica [multistrike] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "使所有敌方单位获得 [multistrike] [effect0.status0.power]。",
+        "spanish": "Añade [multistrike] [effect0.status0.power] a todas las unidades enemigas.",
+        "chinese_traditional": "對所有敵方單位施加[multistrike][effect0.status0.power]。",
+        "korean": "모든 적 유닛들에게 [multistrike] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "すべての敵ユニットに[multistrike] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_spawn_not_from_card",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects18.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects19.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-c0b2c9991eee1c5c-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [titanskin] [effect0.status0.power].",
+        "french": "Octroie [titanskin] [effect0.status0.power].",
+        "german": "Erhalte [titanskin] [effect0.status0.power].",
+        "russian": "Дается [titanskin] х[effect0.status0.power].",
+        "portuguese": "Recebe [titanskin] [effect0.status0.power].",
+        "chinese": "获得 [titanskin] [effect0.status0.power]。",
+        "spanish": "Añade [titanskin] [effect0.status0.power].",
+        "chinese_traditional": "獲得[titanskin][effect0.status0.power]。",
+        "korean": "[titanskin] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[titanskin] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects19.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects20.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-db3a4fbf52652824-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [multistrike] [effect0.status0.power].",
+        "french": "Octroie [multistrike] [effect0.status0.power].",
+        "german": "Erhalte [multistrike] [effect0.status0.power].",
+        "russian": "Дает [multistrike] х[effect0.status0.power].",
+        "portuguese": "Recebe [multistrike] [effect0.status0.power].",
+        "chinese": "获得 [multistrike] [effect0.status0.power]。",
+        "spanish": "Añade [multistrike] [effect0.status0.power].",
+        "chinese_traditional": "獲得[multistrike][effect0.status0.power]。",
+        "korean": "[multistrike] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[multistrike] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects20.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects21.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-c09d65ff7f9963fd-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [damageshield] [effect0.status0.power].",
+        "french": "Octroie [damageshield] [effect0.status0.power].",
+        "german": "Erhalte [damageshield] [effect0.status0.power].",
+        "russian": "Дает [damageshield] х[effect0.status0.power].",
+        "portuguese": "Recebe [damageshield] [effect0.status0.power].",
+        "chinese": "获得 [damageshield] [effect0.status0.power]。",
+        "spanish": "Añade [damageshield] [effect0.status0.power].",
+        "chinese_traditional": "獲得[damageshield][effect0.status0.power]。",
+        "korean": "[damageshield] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[damageshield] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects21.triggers0.effects0"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects22.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-3ab3e7b03deb86fe-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Grant boss units on the train +[effect0.power][attack] and [armor] [effect1.status0.power].",
+        "french": "Les boss dans le train gagnent +[effect0.power][attack] et [armor] [effect1.status0.power].",
+        "german": "Gewährt Boss-Einheiten auf dem Zug +[effect0.power][attack] und [armor] [effect1.status0.power].",
+        "russian": "Врагам-боссам в поезде дается +[effect0.power][attack] и [armor] х[effect1.status0.power].",
+        "portuguese": "Concede +[effect0.power][attack] e [armor] [effect1.status0.power] às unidades de chefão no trem.",
+        "chinese": "火车上的首领单位获得+[effect0.power][attack]和 [armor] [effect1.status0.power]。",
+        "spanish": "Otorga +[effect0.power][attack] y [armor] [effect1.status0.power] a las unidades jefe en el tren.",
+        "chinese_traditional": "賦予列車上的首領 +[effect0.power][attack]和[armor][effect1.status0.power]。",
+        "korean": "열차 내 보스 유닛들에 +[effect0.power][attack] 및 [armor] [effect1.status0.power]을 부여합니다.",
+        "japanese": "列車のボスユニットに+[effect0.power][attack]と[armor] [effect1.status0.power]を付与する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects22.triggers0.effects0",
+        "@Covenant04_StrongerBosses.effects22.triggers0.effects1"
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects23.triggers0",
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-cfd25bdbfa8a460c-f7009ac0327c41e42836e43c3798df0e-v2",
+        "english": "Gain [undying] [effect0.status0.power].",
+        "french": "Octroie [undying] [effect0.status0.power].",
+        "german": "Erhalte [undying] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[undying].",
+        "portuguese": "Recebe [undying] [effect0.status0.power].",
+        "chinese": "获得 [undying] [effect0.status0.power]。",
+        "spanish": "Añade [undying] [effect0.status0.power].",
+        "chinese_traditional": "獲得[undying][effect0.status0.power]。",
+        "korean": "[undying] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[undying] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Covenant04_StrongerBosses.effects23.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Covenant04_StrongerBosses.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "buff",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects13.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "tower",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "corruption",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects14.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacked_character",
+      "target_team": "none",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects15.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "spikes",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects16.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects16.triggers0.effects1",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "param_int": 30
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects18.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "tower",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects19.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "titanskin",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects20.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects21.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "damage shield",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects22.triggers0.effects0",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "tower",
+      "target_team": "heroes",
+      "target_subtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+      "param_int": 15
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects22.triggers0.effects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "tower",
+      "target_team": "heroes",
+      "target_subtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 300
+        }
+      ]
+    },
+    {
+      "id": "Covenant04_StrongerBosses.effects23.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "undying",
+          "count": 6
+        }
+      ]
+    }
+  ]
 }

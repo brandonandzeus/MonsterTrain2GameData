@@ -1,84 +1,116 @@
 {
-  "id": "Covenant01_StrongerEnemiesMoreCards",
-  "guid": "d3b53481-f26b-4344-ae8e-ec80b28d6004",
-  "name": "Covenant01_StrongerEnemiesMoreCards",
-  "descriptionKey": {
-    "key": "CovenantData_descriptionKey-44382818d8b8f310-31c77bcac01918c4aa4628282788fde6-v2",
-    "english": "Enemies are stronger. Add additional random cards to your starting deck.",
-    "french": "Les ennemis sont plus forts. Ajoute des cartes aléatoires à votre deck de départ.",
-    "german": "Die Gegner sind stärker. Füge deinem Anfangsdeck zusätzliche zufällige Karten hinzu.",
-    "russian": "Враги сильнее. В начальную колоду добавляются случайные карты.",
-    "portuguese": "Os inimigos são mais fortes. Adiciona cartas aleatórias adicionais ao seu deck inicial.",
-    "chinese": "敌人更加强大。往初始卡组中额外加入随机卡牌。",
-    "spanish": "Los enemigos son más fuertes. Añade cartas aleatorias adicionales a tu mazo inicial.",
-    "chinese_traditional": "敵人更強大。在你的起始牌組中添加額外的隨機卡牌。",
-    "korean": "적이 더 강해집니다. 초기 덱에 무작위 카드들이 추가됩니다.",
-    "japanese": "敵がより強くなる。開始デッキに追加のランダムなカードを追加しよう。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectPurgeStarterDeck"
+      "id": "Covenant01_StrongerEnemiesMoreCards",
+      "type": "covenant",
+      "extensions": [
+        {
+          "covenant": {
+            "ascension_level": 1
+          }
+        }
+      ],
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-44382818d8b8f310-31c77bcac01918c4aa4628282788fde6-v2",
+        "english": "Enemies are stronger. Add additional random cards to your starting deck.",
+        "french": "Les ennemis sont plus forts. Ajoute des cartes aléatoires à votre deck de départ.",
+        "german": "Die Gegner sind stärker. Füge deinem Anfangsdeck zusätzliche zufällige Karten hinzu.",
+        "russian": "Враги сильнее. В начальную колоду добавляются случайные карты.",
+        "portuguese": "Os inimigos são mais fortes. Adiciona cartas aleatórias adicionais ao seu deck inicial.",
+        "chinese": "敌人更加强大。往初始卡组中额外加入随机卡牌。",
+        "spanish": "Los enemigos son más fuertes. Añade cartas aleatorias adicionales a tu mazo inicial.",
+        "chinese_traditional": "敵人更強大。在你的起始牌組中添加額外的隨機卡牌。",
+        "korean": "적이 더 강해집니다. 초기 덱에 무작위 카드들이 추가됩니다.",
+        "japanese": "敵がより強くなる。開始デッキに追加のランダムなカードを追加しよう。"
+      },
+      "relic_effects": [
+        "@Covenant01_StrongerEnemiesMoreCards.effects0",
+        "@Covenant01_StrongerEnemiesMoreCards.effects1",
+        "@Covenant01_StrongerEnemiesMoreCards.effects2",
+        "@Covenant01_StrongerEnemiesMoreCards.effects3",
+        "@Covenant01_StrongerEnemiesMoreCards.effects4",
+        "@Covenant01_StrongerEnemiesMoreCards.effects5",
+        "@Covenant01_StrongerEnemiesMoreCards.effects6",
+        "@Covenant01_StrongerEnemiesMoreCards.effects7",
+        "@Covenant01_StrongerEnemiesMoreCards.effects8",
+        "@Covenant01_StrongerEnemiesMoreCards.effects9",
+        "@Covenant01_StrongerEnemiesMoreCards.effects10",
+        "@Covenant01_StrongerEnemiesMoreCards.effects11",
+        "@Covenant01_StrongerEnemiesMoreCards.effects12",
+        "@Covenant01_StrongerEnemiesMoreCards.effects13",
+        "@Covenant01_StrongerEnemiesMoreCards.effects14",
+        "@Covenant01_StrongerEnemiesMoreCards.effects15",
+        "@Covenant01_StrongerEnemiesMoreCards.effects16"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects0",
+      "name": "RelicEffectPurgeStarterDeck"
     },
     {
-      "relicEffectClassName": "RelicEffectAddCardSetStartOfRun",
-      "paramCardSetBuilder": {
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects1",
+      "name": "RelicEffectAddCardSetStartOfRun",
+      "param_card_set_builder": {
         "id": "StarterDeck_C01",
         "name": "StarterDeck_C01",
-        "paramCardPulls": [
+        "param_card_pulls": [
           {
             "id": "MainClassCommon2X",
             "name": "MainClassCommon2X",
-            "cardPool": {
+            "card_pool": {
               "name": "MegaPool",
               "cardDataList": [
                 "..."
               ]
             },
-            "classType": "main",
-            "numCopies": 2,
-            "hasRarityCondition": true,
-            "cardRarity": "common",
-            "showcaseAtRunStart": true
+            "class_type": "main",
+            "num_copies": 2,
+            "has_rarity_condition": true,
+            "card_rarity": "common",
+            "showcase_at_run_start": true
           },
           {
             "id": "SubClassCommon2X",
             "name": "SubClassCommon2X",
-            "cardPool": {
+            "card_pool": {
               "name": "MegaPool",
               "cardDataList": [
                 "..."
               ]
             },
-            "classType": "subclass",
-            "numCopies": 2,
-            "hasRarityCondition": true,
-            "cardRarity": "common",
-            "showcaseAtRunStart": true
+            "class_type": "subclass",
+            "num_copies": 2,
+            "has_rarity_condition": true,
+            "card_rarity": "common",
+            "showcase_at_run_start": true
           },
           {
             "id": "MainClassStarter5X",
             "name": "MainClassStarter5X",
-            "cardPool": {
+            "card_pool": {
             },
-            "classType": "main",
-            "numCopies": 5,
-            "hasRarityCondition": true,
-            "cardRarity": "starter"
+            "class_type": "main",
+            "num_copies": 5,
+            "has_rarity_condition": true,
+            "card_rarity": "starter"
           },
           {
             "id": "SubClassStarter5X",
             "name": "SubClassStarter5X",
-            "cardPool": {
+            "card_pool": {
             },
-            "classType": "subclass",
-            "numCopies": 5,
-            "hasRarityCondition": true,
-            "cardRarity": "starter"
+            "class_type": "subclass",
+            "num_copies": 5,
+            "has_rarity_condition": true,
+            "card_rarity": "starter"
           },
           {
             "id": "MainOrSubClassBanner1X",
             "name": "MainOrSubClassBanner1X",
-            "cardPool": {
+            "card_pool": {
               "name": "UnitsAllBanner",
               "cardDataList": [
                 "HuskHermit",
@@ -191,148 +223,161 @@
                 "PyreSteward"
               ]
             },
-            "classType": "main|subclass",
-            "hasRarityCondition": true,
-            "cardRarity": "uncommon",
-            "showcaseAtRunStart": true
+            "class_type": "main|subclass",
+            "has_rarity_condition": true,
+            "card_rarity": "uncommon",
+            "showcase_at_run_start": true
           },
           {
             "id": "TrainStewardBig2X",
             "name": "TrainStewardBig2X",
-            "cardPool": {
+            "card_pool": {
               "name": "TrainStewardBigOnly",
               "cardDataList": [
                 "TrainStewardShield"
               ]
             },
-            "classType": "main|subclass|nonclass",
-            "numCopies": 2,
-            "cardRarity": "common"
+            "class_type": "main|subclass|nonclass",
+            "num_copies": 2,
+            "card_rarity": "common"
           },
           {
             "id": "TrainStewardSmall2X",
             "name": "TrainStewardSmall2X",
-            "cardPool": {
+            "card_pool": {
               "name": "TrainStewardSmallOnly",
               "cardDataList": [
                 "TrainStewardSpear"
               ]
             },
-            "classType": "main|subclass|nonclass",
-            "numCopies": 2,
-            "cardRarity": "common"
+            "class_type": "main|subclass|nonclass",
+            "num_copies": 2,
+            "card_rarity": "common"
           }
         ]
       }
     },
     {
-      "relicEffectClassName": "RelicEffectEnableSpecialCharacters",
-      "paramSpecialCharacterType": "harder_outer_train_boss_character"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects2",
+      "name": "RelicEffectEnableSpecialCharacters",
+      "param_special_character_type": "harder_outer_train_boss_character"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 180,
-      "paramCharacterSubtype": "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects3",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 180,
+      "param_subtype": "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 250,
-      "paramCharacterSubtype": "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects4",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 250,
+      "param_subtype": "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 375,
-      "paramCharacterSubtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects5",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 375,
+      "param_subtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 15,
-      "paramCharacterSubtype": "SubtypesData_HeavyT1",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects6",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 15,
+      "param_subtype": "SubtypesData_HeavyT1",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 30,
-      "paramCharacterSubtype": "SubtypesData_HeavyT2",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects7",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 30,
+      "param_subtype": "SubtypesData_HeavyT2",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 50,
-      "paramCharacterSubtype": "SubtypesData_HeavyT3",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects8",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 50,
+      "param_subtype": "SubtypesData_HeavyT3",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1,
-      "paramCharacterSubtype": "SubtypesData_AttackerT2",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects9",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 1,
+      "param_subtype": "SubtypesData_AttackerT2",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1,
-      "paramCharacterSubtype": "SubtypesData_AttackerT3",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects10",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 1,
+      "param_subtype": "SubtypesData_AttackerT3",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1,
-      "paramCharacterSubtype": "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects11",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 1,
+      "param_subtype": "SubtypesData_BossT1_8850292e-bda8-428e-8d71-c375c29838f8",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 3,
-      "paramCharacterSubtype": "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects12",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 3,
+      "param_subtype": "SubtypesData_BossT2_935b30b5-bb94-4fd4-b3be-2ed0eb73ccf6",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 5,
-      "paramCharacterSubtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects13",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 5,
+      "param_subtype": "SubtypesData_BossT3_ef0103da-a050-4ebb-af3a-b3e285db5e0c",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 200,
-      "paramCharacterSubtype": "SubtypesData_BigBossT1_50952308-e0f3-4acb-b0cc-e0d662b868b8",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects14",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 200,
+      "param_subtype": "SubtypesData_BigBossT1_50952308-e0f3-4acb-b0cc-e0d662b868b8",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 700,
-      "paramCharacterSubtype": "SubtypesData_BigBoss2_e3e6f1a2-34a7-4493-b9d7-a123e182241e",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects15",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 700,
+      "param_subtype": "SubtypesData_BigBoss2_e3e6f1a2-34a7-4493-b9d7-a123e182241e",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1000,
-      "paramCharacterSubtype": "SubtypesData_BigBossT3_f7449215-5071-4671-909c-a02e2cceb821",
-      "paramTrigger": "on_spawn"
+      "id": "Covenant01_StrongerEnemiesMoreCards.effects16",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 1000,
+      "param_subtype": "SubtypesData_BigBossT3_f7449215-5071-4671-909c-a02e2cceb821",
+      "param_trigger": "on_spawn"
     }
-  ],
-  "ascensionLevel": 1,
-  "hellforgedDescriptionKey": "Covenant1_Description_Hellforged"
+  ]
 }

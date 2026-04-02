@@ -1,26 +1,40 @@
 {
-  "id": "Covenant09_PyreDamage",
-  "guid": "222e1727-2480-475c-85e8-d833a1db6e2d",
-  "name": "Covenant09_PyreDamage",
-  "descriptionKey": {
-    "key": "CovenantData_descriptionKey-f5e614a5bbfefc69-ad2be5ae6b9a12744b0edd369487f8ee-v2",
-    "english": "Your Pyre takes [effect0.power]% damage at the start of the run.",
-    "french": "Votre Brasier subit <nobr>[effect0.power] %</nobr> de dégâts au début de la partie.",
-    "german": "Deine Höllenglut erleidet zu Beginn der Reise [effect0.power] % Schaden.",
-    "russian": "Ваше Пекло теряет [effect0.power]% здоровья при запуске.",
-    "portuguese": "Sua Pira recebe [effect0.power]% de dano no início da partida.",
-    "chinese": "游戏开始时，你的薪火受到 [effect0.power]% 的伤害。",
-    "spanish": "Tu Pira sufre [effect0.power] % de daño al comienzo de la partida.",
-    "chinese_traditional": "你的火堆在闖關開始時受到[effect0.power]%的傷害。",
-    "korean": "여정의 시작 시, 화로가 [effect0.power]%의 피해를 받습니다.",
-    "japanese": "運行の開始時に自軍の炉が[effect0.power]%のダメージを受ける。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectDamagePyreStartOfRun",
-      "paramInt": 30,
-      "paramBool": true
+      "id": "Covenant09_PyreDamage",
+      "type": "covenant",
+      "extensions": [
+        {
+          "covenant": {
+            "ascension_level": 9
+          }
+        }
+      ],
+      "descriptions": {
+        "key": "CovenantData_descriptionKey-f5e614a5bbfefc69-ad2be5ae6b9a12744b0edd369487f8ee-v2",
+        "english": "Your Pyre takes [effect0.power]% damage at the start of the run.",
+        "french": "Votre Brasier subit <nobr>[effect0.power] %</nobr> de dégâts au début de la partie.",
+        "german": "Deine Höllenglut erleidet zu Beginn der Reise [effect0.power] % Schaden.",
+        "russian": "Ваше Пекло теряет [effect0.power]% здоровья при запуске.",
+        "portuguese": "Sua Pira recebe [effect0.power]% de dano no início da partida.",
+        "chinese": "游戏开始时，你的薪火受到 [effect0.power]% 的伤害。",
+        "spanish": "Tu Pira sufre [effect0.power] % de daño al comienzo de la partida.",
+        "chinese_traditional": "你的火堆在闖關開始時受到[effect0.power]%的傷害。",
+        "korean": "여정의 시작 시, 화로가 [effect0.power]%의 피해를 받습니다.",
+        "japanese": "運行の開始時に自軍の炉が[effect0.power]%のダメージを受ける。"
+      },
+      "relic_effects": [
+        "@Covenant09_PyreDamage.effects0"
+      ]
     }
   ],
-  "ascensionLevel": 9
+  "relic_effects": [
+    {
+      "id": "Covenant09_PyreDamage.effects0",
+      "name": "RelicEffectDamagePyreStartOfRun",
+      "param_int": 30,
+      "param_bool": true
+    }
+  ]
 }
