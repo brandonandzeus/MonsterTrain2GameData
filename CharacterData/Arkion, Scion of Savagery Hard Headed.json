@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level3_Arkion_PushAttack",
-      "name": "Arkion, Scion of Savagery Hard Headed",
       "names": {
         "key": "CharacterData_nameKey-f7b4c1a41dad46fc-503cc01ab7b50f140a9227ee957600c3-v2",
         "english": "Arkion, Scion of Savagery",
@@ -42,8 +41,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level3_Arkion_PushAttack.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

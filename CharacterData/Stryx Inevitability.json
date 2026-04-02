@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level6_AngelDuo_Savage_Variant1_LoopAttack",
-      "name": "Stryx Inevitability",
       "names": {
         "key": "CharacterData_nameKey-344e16b4055b3f70-c609b6be9663b054eb5c33dd3b4e3e06-v2",
         "english": "Stryx",
@@ -51,8 +50,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level6_AngelDuo_Savage_Variant1_LoopAttack.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

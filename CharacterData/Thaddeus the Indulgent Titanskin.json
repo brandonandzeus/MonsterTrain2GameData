@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R2_Indulgent_Titanskin",
-      "name": "Thaddeus the Indulgent Titanskin",
       "names": {
         "key": "CharacterData_nameKey-b99c8263c87d558e-a74a6ac837a07bc4a86f9ecb486f90a2-v2",
         "english": "Thaddeus the Indulgent",
@@ -52,8 +51,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R2_Indulgent_Titanskin.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

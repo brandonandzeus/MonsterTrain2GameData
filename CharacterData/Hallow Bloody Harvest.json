@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level6_AngelDuo_Entropic_Variant3_HarvestHealth",
-      "name": "Hallow Bloody Harvest",
       "names": {
         "key": "CharacterData_nameKey-212bea09e7378ffd-095d325d82936c04f98ea9dfc2ff6ae4-v2",
         "english": "Hallow",
@@ -49,8 +48,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level6_AngelDuo_Entropic_Variant3_HarvestHealth.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

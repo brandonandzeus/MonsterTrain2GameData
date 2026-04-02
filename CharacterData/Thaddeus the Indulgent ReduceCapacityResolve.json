@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R2_Indulgent_ReduceCapacityResolve",
-      "name": "Thaddeus the Indulgent ReduceCapacityResolve",
       "names": {
         "key": "CharacterData_nameKey-314f6d203c6ce396-ff8de41fd9b73744c9e9110ccfbd5804-v2",
         "english": "Thaddeus the Indulgent",
@@ -49,8 +48,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R2_Indulgent_ReduceCapacityResolve.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

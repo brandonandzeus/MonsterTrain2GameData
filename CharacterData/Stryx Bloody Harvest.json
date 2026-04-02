@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level6_AngelDuo_Savage_Variant3_RevengeAttack",
-      "name": "Stryx Bloody Harvest",
       "names": {
         "key": "CharacterData_nameKey-93d410e443ac4284-2daff4b3961c82249a2fb362c0ebb75f-v2",
         "english": "Stryx",
@@ -51,8 +50,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level6_AngelDuo_Savage_Variant3_RevengeAttack.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R4_Spurned_WitherbloomOnAction",
-      "name": "Lylith the Spurned WitherbloomOnAction",
       "names": {
         "key": "CharacterData_nameKey-89da8ac58fadee0d-fd1a67dc0128bdb499bf8c59da20e227-v2",
         "english": "Lylith the Spurned",
@@ -43,8 +42,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R4_Spurned_WitherbloomOnAction.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

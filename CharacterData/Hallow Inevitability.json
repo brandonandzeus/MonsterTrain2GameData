@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level6_AngelDuo_Entropic_Variant1_ResolveHealth",
-      "name": "Hallow Inevitability",
       "names": {
         "key": "CharacterData_nameKey-b6b1caa33cac509a-3ebb2a8864d60704fa04e5d13ee648e1-v2",
         "english": "Hallow",
@@ -49,8 +48,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level6_AngelDuo_Entropic_Variant1_ResolveHealth.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

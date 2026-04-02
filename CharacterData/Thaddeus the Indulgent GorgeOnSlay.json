@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R2_Indulgent_GorgeOnSlay",
-      "name": "Thaddeus the Indulgent GorgeOnSlay",
       "names": {
         "key": "CharacterData_nameKey-687eea2e74d8232c-d3ef4c53d02cd444491360d3f485beb0-v2",
         "english": "Thaddeus the Indulgent",
@@ -49,8 +48,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R2_Indulgent_GorgeOnSlay.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

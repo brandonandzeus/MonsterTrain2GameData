@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level3_Fleshweaver_MoreMass",
-      "name": "Fleshweaver More Mass",
       "names": {
         "key": "CharacterData_nameKey-2178b3e5b569cfdd-c13296b500df685438d61f9c51a4c644-v2",
         "english": "Fleshweaver",
@@ -48,8 +47,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level3_Fleshweaver_MoreMass.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

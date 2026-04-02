@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level8_AllyBuffer",
-      "name": "Seraph Aeternus - The Entropic",
       "names": {
         "key": "CharacterData_nameKey-7417f75a454aab39-6dbade7dccd9ff14894b3aa58f2e5275-v2",
         "english": "Seraph Aeternus - The Entropic",
@@ -46,8 +45,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level8_AllyBuffer.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

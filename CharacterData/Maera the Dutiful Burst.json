@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R1_Dutiful_Burst",
-      "name": "Maera the Dutiful Burst",
       "names": {
         "key": "CharacterData_nameKey-93918d3893c15ea6-762a0ff83fed24e4fb98caf0c5040a12-v2",
         "english": "Maera the Dutiful",
@@ -42,8 +41,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R1_Dutiful_Burst.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

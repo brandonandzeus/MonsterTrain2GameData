@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level3_Fleshweaver_Spike",
-      "name": "Fleshweaver Spiked Mass",
       "names": {
         "key": "CharacterData_nameKey-273f2e051c7a5e56-17973abd65b81eb4e8e6d2fda8234970-v2",
         "english": "Fleshweaver",
@@ -48,8 +47,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level3_Fleshweaver_Spike.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

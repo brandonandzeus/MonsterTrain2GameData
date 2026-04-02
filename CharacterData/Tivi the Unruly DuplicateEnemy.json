@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy",
-      "name": "Tivi the Unruly DuplicateEnemy",
       "names": {
         "key": "CharacterData_nameKey-b18f2d84975ef105-084e7d14346fe074790b1cabfee0d08f-v2",
         "english": "Tivi the Unruly",
@@ -42,8 +41,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

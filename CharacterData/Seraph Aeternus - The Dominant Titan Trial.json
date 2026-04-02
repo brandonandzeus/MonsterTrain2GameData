@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level8_Corrupter_TitanTrial",
-      "name": "Seraph Aeternus - The Dominant Titan Trial",
       "names": {
         "key": "CharacterData_nameKey-c28442da00a78c54-3058fcc2b0af812408f5df14d29e9776-v2",
         "english": "Seraph Aeternus - The Dominant",
@@ -45,8 +44,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level8_Corrupter_TitanTrial.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "hide_in_logbook": true,

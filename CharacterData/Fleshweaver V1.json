@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level3_Fleshweaver_V1",
-      "name": "Fleshweaver V1",
       "names": {
         "key": "CharacterData_nameKey-bf02af467eb5b39a-45576803dc6f1f54abc5665a8976ead8-v2",
         "english": "Fleshweaver",
@@ -47,8 +46,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level3_Fleshweaver_V1.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

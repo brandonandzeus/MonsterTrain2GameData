@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R3_Unruly_SniperAdvance",
-      "name": "Tivi the Unruly SniperAdvance",
       "names": {
         "key": "CharacterData_nameKey-cc4d4158566b8596-cb07a7d59cba76b44b70bb08c008f2d4-v2",
         "english": "Tivi the Unruly",
@@ -48,8 +47,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R3_Unruly_SniperAdvance.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level8_Fragile",
-      "name": "Seraph Aeternus - The Savage",
       "names": {
         "key": "CharacterData_nameKey-827cca9205a8d0cc-54bf9fa3500810d4ab14fa0c676e48ab-v2",
         "english": "Seraph Aeternus - The Savage",
@@ -45,8 +44,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level8_Fragile.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

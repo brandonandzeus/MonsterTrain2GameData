@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level3_Arkion_SiphonRage",
-      "name": "Arkion, Scion of Savagery Furious Frenzy",
       "names": {
         "key": "CharacterData_nameKey-b78acaf37bf3bdec-d295ef6e09d990541a9a1fc2f9a79bc6-v2",
         "english": "Arkion, Scion of Savagery",
@@ -39,8 +38,13 @@
       "impact_vfx": "@Boss_Level3_Arkion_SiphonRage.impactVFX",
       "boss_action_groups": [
         {
-          "id": "Boss_Level3_Arkion_SiphonRage.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

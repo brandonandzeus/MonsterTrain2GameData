@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R3_Unruly_Scourge",
-      "name": "Tivi the Unruly Scourge",
       "names": {
         "key": "CharacterData_nameKey-ee9bfd7493850bc5-6d6bb8bcee3351940b8a6a4316f4b675-v2",
         "english": "Tivi the Unruly",
@@ -42,8 +41,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R3_Unruly_Scourge.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

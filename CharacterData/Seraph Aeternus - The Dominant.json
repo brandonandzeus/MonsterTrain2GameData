@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level8_Corrupter",
-      "name": "Seraph Aeternus - The Dominant",
       "names": {
         "key": "CharacterData_nameKey-e5a6bef9a8678403-60ced70192f29fd408e9ab88aa0ba409-v2",
         "english": "Seraph Aeternus - The Dominant",
@@ -45,8 +44,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level8_Corrupter.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

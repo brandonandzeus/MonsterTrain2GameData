@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level6_Cael_DamageShield",
-      "name": "Cael, Lord of the Cherubs Holy Feed",
       "names": {
         "key": "CharacterData_nameKey-4c126b4c8a1fe84f-012daaa24737d654081cdc58b9d979d9-v2",
         "english": "Cael, Lord of the Cherubs",
@@ -43,8 +42,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level6_Cael_DamageShield.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

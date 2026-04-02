@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_Final_Lifemother_Infested",
-      "name": "The Lifemother - Swarmhost",
       "names": {
         "key": "CharacterData_nameKey-db2df64a0795e8e5-09204e2d83533274f82c55c51d356a56-v2",
         "english": "The Lifemother - Swarmhost",
@@ -50,8 +49,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_Final_Lifemother_Infested.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

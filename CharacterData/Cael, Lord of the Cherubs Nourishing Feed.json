@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level6_Cael_AtkHP",
-      "name": "Cael, Lord of the Cherubs Nourishing Feed",
       "names": {
         "key": "CharacterData_nameKey-ade67e92e517c24b-49d255d8363ac3a4290077e92d7958e8-v2",
         "english": "Cael, Lord of the Cherubs",
@@ -43,8 +42,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level6_Cael_AtkHP.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

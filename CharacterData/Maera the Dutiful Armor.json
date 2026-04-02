@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R1_Dutiful_Armor",
-      "name": "Maera the Dutiful Armor",
       "names": {
         "key": "CharacterData_nameKey-ce12a87a82a45170-b503548e842fcfe4f9776adec59ef9b1-v2",
         "english": "Maera the Dutiful",
@@ -42,8 +41,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R1_Dutiful_Armor.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

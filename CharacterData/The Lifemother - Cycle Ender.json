@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_Final_Lifemother_Debuffer",
-      "name": "The Lifemother - Cycle Ender",
       "names": {
         "key": "CharacterData_nameKey-8c69cdaefe3bcf12-02bcfccf43ce1cb4c853796dc22b10a8-v2",
         "english": "The Lifemother - Cycle Ender",
@@ -51,8 +50,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_Final_Lifemother_Debuffer.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

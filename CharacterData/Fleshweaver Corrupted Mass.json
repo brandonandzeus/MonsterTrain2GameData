@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_Level3_Fleshweaver_Corruption",
-      "name": "Fleshweaver Corrupted Mass",
       "names": {
         "key": "CharacterData_nameKey-e17f733295d6432a-56ca170b855a75347a65c64bb219f8c4-v2",
         "english": "Fleshweaver",
@@ -48,8 +47,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_Level3_Fleshweaver_Corruption.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "size": 6,

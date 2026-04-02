@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_Final_Lifemother_HealReanimate",
-      "name": "The Lifemother - Undying Bloom",
       "names": {
         "key": "CharacterData_nameKey-d4acf420c58e0a95-c9f2e79036eae814592d6ef3457d9bef-v2",
         "english": "The Lifemother - Undying Bloom",
@@ -50,8 +49,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_Final_Lifemother_HealReanimate.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {

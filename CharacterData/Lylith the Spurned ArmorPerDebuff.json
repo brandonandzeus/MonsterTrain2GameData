@@ -3,7 +3,6 @@
   "characters": [
     {
       "id": "Boss_SoulSavior_R4_Spurned_ArmorPerDebuff",
-      "name": "Lylith the Spurned ArmorPerDebuff",
       "names": {
         "key": "CharacterData_nameKey-d976bf61e0068263-879e9768fa5307a4594de65bd7aeebe5-v2",
         "english": "Lylith the Spurned",
@@ -43,8 +42,13 @@
       ],
       "boss_action_groups": [
         {
-          "id": "Boss_SoulSavior_R4_Spurned_ArmorPerDebuff.bossActionGroups0",
-          "": 0
+          "actions": [
+            {
+              "actionBehaviorName": "RandomOccupiedBossActionBehavior",
+              "paramTeamType": "monsters"
+            }
+          ],
+          "num_repeats": 0
         }
       ],
       "endless_stats": {
@@ -166,7 +170,6 @@
   ],
   "additional_tooltips": [
     {
-      "isStatusTooltip": true,
       "id": "Boss_SoulSavior_R4_Spurned_ArmorPerDebuff.triggers1.effects0.additionalTooltips0",
       "status": "witherbloom",
       "style": "default"
