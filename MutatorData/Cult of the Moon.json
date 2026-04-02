@@ -1,84 +1,109 @@
 {
-  "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle",
-  "guid": "554a30de-d61e-483b-8a4e-0f65afd27779",
-  "name": "Cult of the Moon",
-  "nameKey": {
-    "key": "MutatorData_nameKey-cb06b1ec2328d2a1-e147d6160f2b434408030a63814988e2-v2",
-    "english": "Cult of the Moon",
-    "french": "Culte de la lune",
-    "german": "Kult des Mondes",
-    "russian": "Лунный культ",
-    "portuguese": "Culto da Lua",
-    "chinese": "月之圣教",
-    "spanish": "Secta de la luna",
-    "chinese_traditional": "月之聖教",
-    "korean": "달의 교단",
-    "japanese": "月の狂信"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-00c3c4325e34954d-e147d6160f2b434408030a63814988e2-v2",
-    "english": "Friendly units gain [conduit] [effect0.trigger0.effect0.status0.power] and lose -[effect0.trigger0.effect1.power][attack] on [mooncycle].",
-    "french": "Les alliés gagnent [conduit] [effect0.trigger0.effect0.status0.power] et perdent [effect0.trigger0.effect1.power][attack] lors du [mooncycle].",
-    "german": "Verbündete Einheiten erhalten pro [mooncycle] [conduit] [effect0.trigger0.effect0.status0.power] und verlieren [effect0.trigger0.effect1.power][attack].",
-    "russian": "В новом цикле союзникам дается [conduit] х[effect0.trigger0.effect0.status0.power], а их урон снижается на [effect0.trigger0.effect1.power][attack].",
-    "portuguese": "Unidades aliadas recebem [conduit] [effect0.trigger0.effect0.status0.power] e perdem -[effect0.trigger0.effect1.power][attack] no [mooncycle].",
-    "chinese": "[mooncycle] 时，友方单位获得 [conduit] [effect0.trigger0.effect0.status0.power] 并失去 -[effect0.trigger0.effect1.power][attack]。",
-    "spanish": "Las unidades aliadas añaden [conduit] [effect0.trigger0.effect0.status0.power] y pierden -[effect0.trigger0.effect1.power][attack] en [mooncycle].",
-    "chinese_traditional": "友方單位在[mooncycle]時獲得[conduit][effect0.trigger0.effect0.status0.power]並失去-[effect0.trigger0.effect1.power][attack]。",
-    "korean": "[mooncycle] 동안, 아군 유닛들이 [conduit] [effect0.trigger0.effect0.status0.power] 효과를 얻고, -[effect0.trigger0.effect1.power][attack]을 잃습니다.",
-    "japanese": "味方ユニットが[conduit] [effect0.trigger0.effect0.status0.power]を得る。[mooncycle]で[effect0.trigger0.effect1.power][attack]を失う。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle",
+      "type": "mutator",
+      "extensions": [
         {
-          "trigger": "on_moon_phase_shift",
-          "style": "default",
-          "isTriggerTooltip": true
+          "mutator": {
+            "boon_value": -4,
+            "disable_in_daily_challenges": true
+          }
         }
       ],
-      "triggers": [
-        {
-          "descriptionKey": {
-            "key": "MutatorData_descriptionKey-02fe58e48b7181c6-e147d6160f2b434408030a63814988e2-v2",
-            "english": "Gain [conduit] [effect0.status0.power] and lose -[effect1.power][attack].",
-            "french": "Octroie [conduit] [effect0.status0.power] et fait perdre [effect1.power][attack].",
-            "german": "Erhalte [conduit] [effect0.status0.power] und verliere [effect1.power][attack].",
-            "russian": "Дается +[conduit] х[effect0.status0.power] и снижается урон на [effect1.power][attack].",
-            "portuguese": "Recebe [conduit] [effect0.status0.power] e perde -[effect1.power][attack].",
-            "chinese": "获得[conduit] [effect0.status0.power] 并失去 -[effect1.power][attack]。",
-            "spanish": "Añade [conduit] [effect0.status0.power] y pierde -[effect1.power][attack].",
-            "chinese_traditional": "獲得[conduit][effect0.status0.power]並失去-[effect1.power][attack]。",
-            "korean": "[conduit] [effect0.status0.power] 효과를 얻고 -[effect1.power][attack]을 잃습니다.",
-            "japanese": "[conduit] [effect0.status0.power]を得て、[effect1.power][attack]を失う。"
-          },
-          "trigger": "on_moon_phase_shift",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "conduit",
-                  "count": 1
-                }
-              ]
-            },
-            {
-              "effectStateName": "CardEffectDebuffDamage",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramInt": 2
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "monsters"
+      "names": {
+        "key": "MutatorData_nameKey-cb06b1ec2328d2a1-e147d6160f2b434408030a63814988e2-v2",
+        "english": "Cult of the Moon",
+        "french": "Culte de la lune",
+        "german": "Kult des Mondes",
+        "russian": "Лунный культ",
+        "portuguese": "Culto da Lua",
+        "chinese": "月之圣教",
+        "spanish": "Secta de la luna",
+        "chinese_traditional": "月之聖教",
+        "korean": "달의 교단",
+        "japanese": "月の狂信"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-00c3c4325e34954d-e147d6160f2b434408030a63814988e2-v2",
+        "english": "Friendly units gain [conduit] [effect0.trigger0.effect0.status0.power] and lose -[effect0.trigger0.effect1.power][attack] on [mooncycle].",
+        "french": "Les alliés gagnent [conduit] [effect0.trigger0.effect0.status0.power] et perdent [effect0.trigger0.effect1.power][attack] lors du [mooncycle].",
+        "german": "Verbündete Einheiten erhalten pro [mooncycle] [conduit] [effect0.trigger0.effect0.status0.power] und verlieren [effect0.trigger0.effect1.power][attack].",
+        "russian": "В новом цикле союзникам дается [conduit] х[effect0.trigger0.effect0.status0.power], а их урон снижается на [effect0.trigger0.effect1.power][attack].",
+        "portuguese": "Unidades aliadas recebem [conduit] [effect0.trigger0.effect0.status0.power] e perdem -[effect0.trigger0.effect1.power][attack] no [mooncycle].",
+        "chinese": "[mooncycle] 时，友方单位获得 [conduit] [effect0.trigger0.effect0.status0.power] 并失去 -[effect0.trigger0.effect1.power][attack]。",
+        "spanish": "Las unidades aliadas añaden [conduit] [effect0.trigger0.effect0.status0.power] y pierden -[effect0.trigger0.effect1.power][attack] en [mooncycle].",
+        "chinese_traditional": "友方單位在[mooncycle]時獲得[conduit][effect0.trigger0.effect0.status0.power]並失去-[effect0.trigger0.effect1.power][attack]。",
+        "korean": "[mooncycle] 동안, 아군 유닛들이 [conduit] [effect0.trigger0.effect0.status0.power] 효과를 얻고, -[effect0.trigger0.effect1.power][attack]을 잃습니다.",
+        "japanese": "味方ユニットが[conduit] [effect0.trigger0.effect0.status0.power]を得る。[mooncycle]で[effect0.trigger0.effect1.power][attack]を失う。"
+      },
+      "relic_effects": [
+        "@Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0"
+      ]
     }
   ],
-  "boonValue": -4,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.additionalTooltips0"
+      ],
+      "triggers": [
+        "@Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.triggers0"
+      ],
+      "param_source_team": "monsters"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.triggers0",
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-02fe58e48b7181c6-e147d6160f2b434408030a63814988e2-v2",
+        "english": "Gain [conduit] [effect0.status0.power] and lose -[effect1.power][attack].",
+        "french": "Octroie [conduit] [effect0.status0.power] et fait perdre [effect1.power][attack].",
+        "german": "Erhalte [conduit] [effect0.status0.power] und verliere [effect1.power][attack].",
+        "russian": "Дается +[conduit] х[effect0.status0.power] и снижается урон на [effect1.power][attack].",
+        "portuguese": "Recebe [conduit] [effect0.status0.power] e perde -[effect1.power][attack].",
+        "chinese": "获得[conduit] [effect0.status0.power] 并失去 -[effect1.power][attack]。",
+        "spanish": "Añade [conduit] [effect0.status0.power] y pierde -[effect1.power][attack].",
+        "chinese_traditional": "獲得[conduit][effect0.status0.power]並失去-[effect1.power][attack]。",
+        "korean": "[conduit] [effect0.status0.power] 효과를 얻고 -[effect1.power][attack]을 잃습니다.",
+        "japanese": "[conduit] [effect0.status0.power]を得て、[effect1.power][attack]を失う。"
+      },
+      "trigger": "on_moon_phase_shift",
+      "effects": [
+        "@Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.triggers0.effects0",
+        "@Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.triggers0.effects1"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "conduit",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.triggers0.effects1",
+      "name": "CardEffectDebuffDamage",
+      "target_mode": "self",
+      "param_int": 2
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Echoes_FriendlyUnitsGetSpellPowerLoseAttackOnCycle.effects0.additionalTooltips0",
+      "trigger": "on_moon_phase_shift",
+      "style": "default"
+    }
+  ]
 }

@@ -1,45 +1,53 @@
 {
-  "id": "CardDuplicator",
-  "guid": "88a1c4c8-b3e6-4e1e-8b3f-f65fe5c09882",
-  "name": "Card Replicator",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-eae36abab74bbbee-1f20d64815fdc894c8faf6942075ebf6-v2",
-    "english": "Card Replicator",
-    "french": "Réplicateur de carte",
-    "german": "Karten-Replikator",
-    "russian": "Репликатор карт",
-    "portuguese": "Replicador de Carta",
-    "chinese": "卡牌复制器",
-    "spanish": "Replicador de cartas",
-    "chinese_traditional": "卡牌複製器",
-    "korean": "카드 복제기",
-    "japanese": "カードレプリケーター"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-67ae357845b65b0d-1f20d64815fdc894c8faf6942075ebf6-v2",
-    "english": "Duplicate any card except your Champion.",
-    "french": "Dupliquez n'importe quelle carte hors champion.",
-    "german": "Erzeuge eine Kopie einer Karte, die nicht dein Champion ist.",
-    "russian": "Создает копию любой карты, если это не Герой.",
-    "portuguese": "Duplique qualquer carta, exceto seu Campeão.",
-    "chinese": "复制任意一张非勇者卡牌。",
-    "spanish": "Haz una copia de cualquier carta menos la de campeón.",
-    "chinese_traditional": "複製任何除了你的勇士以外的卡牌。",
-    "korean": "영웅을 제외한 모든 카드를 복제합니다.",
-    "japanese": "チャンピオン以外のカードをどれでも複製する。"
-  },
-  "rarity": "uncommon",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardDuplicator",
-      "paramCardFilter": {
-        "id": "ExcludeChampions",
-        "excludedSubtypesOperator": "and",
-        "excludedSubtypes": [
-          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-        ]
+      "id": "CardDuplicator",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "uncommon"
+          }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-eae36abab74bbbee-1f20d64815fdc894c8faf6942075ebf6-v2",
+        "english": "Card Replicator",
+        "french": "Réplicateur de carte",
+        "german": "Karten-Replikator",
+        "russian": "Репликатор карт",
+        "portuguese": "Replicador de Carta",
+        "chinese": "卡牌复制器",
+        "spanish": "Replicador de cartas",
+        "chinese_traditional": "卡牌複製器",
+        "korean": "카드 복제기",
+        "japanese": "カードレプリケーター"
       },
-      "paramInt": 1
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-67ae357845b65b0d-1f20d64815fdc894c8faf6942075ebf6-v2",
+        "english": "Duplicate any card except your Champion.",
+        "french": "Dupliquez n'importe quelle carte hors champion.",
+        "german": "Erzeuge eine Kopie einer Karte, die nicht dein Champion ist.",
+        "russian": "Создает копию любой карты, если это не Герой.",
+        "portuguese": "Duplique qualquer carta, exceto seu Campeão.",
+        "chinese": "复制任意一张非勇者卡牌。",
+        "spanish": "Haz una copia de cualquier carta menos la de campeón.",
+        "chinese_traditional": "複製任何除了你的勇士以外的卡牌。",
+        "korean": "영웅을 제외한 모든 카드를 복제합니다.",
+        "japanese": "チャンピオン以外のカードをどれでも複製する。"
+      },
+      "relic_effects": [
+        "@CardDuplicator.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "CardDuplicator.effects0",
+      "name": "RelicEffectCardDuplicator",
+      "param_card_filter": "@CardDuplicator.effects0.paramCardFilter",
+      "param_int": 1
     }
   ]
 }

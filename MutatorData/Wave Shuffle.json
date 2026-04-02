@@ -1,42 +1,58 @@
 {
-  "id": "RandomizeWaveOrder",
-  "guid": "f6ab3e2c-2e61-4a53-ac4a-501ecda375ac",
-  "name": "Wave Shuffle",
-  "nameKey": {
-    "key": "MutatorData_nameKey-c41bc5eb45298f4e-6125421f258c8474590ee48111d9c146-v2",
-    "english": "Wave Shuffle",
-    "french": "Vagues mélangées",
-    "german": "Wellenmischung",
-    "russian": "Перемешанные волны",
-    "portuguese": "Ondas Aleatórias",
-    "chinese": "打乱波次",
-    "spanish": "Oleada cambiante",
-    "chinese_traditional": "波次重組",
-    "korean": "웨이브 셔플",
-    "japanese": "ウェーブシャッフル"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-10d413248ab03959-6125421f258c8474590ee48111d9c146-v2",
-    "english": "Enemy waves before [respite] will be randomized. Battles have additional enemies.",
-    "french": "Les vagues d'ennemis avant [respite] sont aléatoires. Les batailles ont plus d'ennemis.",
-    "german": "Gegnerische Wellen vor „[respite]“ sind zufällig. In Kämpfen gibt es zusätzliche Gegner.",
-    "russian": "Вражеские волны перед <b>Краткой Передышкой</b> будут наступать в случайном порядке. В бою появятся дополнительные враги.",
-    "portuguese": "As ondas de inimigos antes de [respite] serão aleatórias. As batalhas têm inimigos adicionais.",
-    "chinese": "随机化[respite]前的敌方波次。战斗中会出现额外敌人。",
-    "spanish": "Las oleadas enemigas antes de [respite] serán aleatorias. Las batallas tienen enemigos adicionales.",
-    "chinese_traditional": "[respite]之前的敵人波次將隨機化。戰鬥有額外敵人。",
-    "korean": "[respite] 전에 나타나는 적 웨이브는 무작위로 정해집니다. 전투에서 적이 추가로 등장합니다.",
-    "japanese": "[respite]前の敵のウェーブがランダム化される。バトルで追加の敵が登場する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectRandomizeWaveOrder"
-    },
-    {
-      "relicEffectClassName": "RelicEffectForceBonusEnemyCovenant",
-      "paramCovenant": "Covenant02_BattlesNewEnemies"
+      "id": "RandomizeWaveOrder",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -6,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-c41bc5eb45298f4e-6125421f258c8474590ee48111d9c146-v2",
+        "english": "Wave Shuffle",
+        "french": "Vagues mélangées",
+        "german": "Wellenmischung",
+        "russian": "Перемешанные волны",
+        "portuguese": "Ondas Aleatórias",
+        "chinese": "打乱波次",
+        "spanish": "Oleada cambiante",
+        "chinese_traditional": "波次重組",
+        "korean": "웨이브 셔플",
+        "japanese": "ウェーブシャッフル"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-10d413248ab03959-6125421f258c8474590ee48111d9c146-v2",
+        "english": "Enemy waves before [respite] will be randomized. Battles have additional enemies.",
+        "french": "Les vagues d'ennemis avant [respite] sont aléatoires. Les batailles ont plus d'ennemis.",
+        "german": "Gegnerische Wellen vor „[respite]“ sind zufällig. In Kämpfen gibt es zusätzliche Gegner.",
+        "russian": "Вражеские волны перед <b>Краткой Передышкой</b> будут наступать в случайном порядке. В бою появятся дополнительные враги.",
+        "portuguese": "As ondas de inimigos antes de [respite] serão aleatórias. As batalhas têm inimigos adicionais.",
+        "chinese": "随机化[respite]前的敌方波次。战斗中会出现额外敌人。",
+        "spanish": "Las oleadas enemigas antes de [respite] serán aleatorias. Las batallas tienen enemigos adicionales.",
+        "chinese_traditional": "[respite]之前的敵人波次將隨機化。戰鬥有額外敵人。",
+        "korean": "[respite] 전에 나타나는 적 웨이브는 무작위로 정해집니다. 전투에서 적이 추가로 등장합니다.",
+        "japanese": "[respite]前の敵のウェーブがランダム化される。バトルで追加の敵が登場する。"
+      },
+      "relic_effects": [
+        "@RandomizeWaveOrder.effects0",
+        "@RandomizeWaveOrder.effects1"
+      ]
     }
   ],
-  "boonValue": -6,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "RandomizeWaveOrder.effects0",
+      "name": "RelicEffectRandomizeWaveOrder"
+    },
+    {
+      "id": "RandomizeWaveOrder.effects1",
+      "name": "RelicEffectForceBonusEnemyCovenant",
+      "param_covenant": "Covenant02_BattlesNewEnemies"
+    }
+  ]
 }

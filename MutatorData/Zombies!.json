@@ -1,82 +1,108 @@
 {
-  "id": "Echoes_UnitsGetReanimate",
-  "guid": "6a177258-8750-4266-b3c8-29ca6e827a2a",
-  "name": "Zombies!",
-  "nameKey": {
-    "key": "MutatorData_nameKey-5ecb89afb35612d6-9e15e876a2909714399c47916cdc7b2a-v2",
-    "english": "Zombies!",
-    "french": "Dernier train pour Big Fan",
-    "german": "Zombies!",
-    "russian": "Зомби!",
-    "portuguese": "Zumbis!",
-    "chinese": "有僵尸！",
-    "spanish": "¡Zombis!",
-    "chinese_traditional": "殭屍！",
-    "korean": "좀비 떼!",
-    "japanese": "ゾンビ！"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-eb9bad2d18d3cb87-9e15e876a2909714399c47916cdc7b2a-v2",
-    "english": "Enemy units enter with [undying] [effect0.power]. Friendly units enter with [undying] [effect1.power].",
-    "french": "Les unités ennemies entrent avec [undying] [effect0.power]. Les unités alliées entrent avec [undying] [effect1.power].",
-    "german": "Gegnerische Einheiten kommen mit [undying] [effect0.power] ins Spiel. Verbündete Einheiten kommen mit [undying] [effect1.power] ins Spiel.",
-    "russian": "На бойцов врага при входе накладывается [undying] х[effect0.power], а на союзников — [undying] х[effect1.power].",
-    "portuguese": "As unidades inimigas entram com [undying] [effect0.power]. As unidades aliadas entram com [undying] [effect1.power].",
-    "chinese": "敌方单位进入战斗时获得[undying] [effect0.power]。友方单位进入战斗时获得[undying] [effect1.power]。",
-    "spanish": "Las unidades enemigas entran con [undying] [effect0.power]. Las unidades aliadas entran con [undying] [effect1.power].",
-    "chinese_traditional": "敵方單位進場時獲得[undying][effect0.power]。友方單位進場時獲得[undying][effect1.power]。",
-    "korean": "적 유닛들이 [undying] [effect0.power] 상태로 등장합니다. 아군 유닛들은 [undying] [effect1.power] 상태로 등장합니다.",
-    "japanese": "敵ユニットが[undying] [effect0.power]が付与された状態で出現する。味方ユニットが[undying] [effect1.power]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Echoes_UnitsGetReanimate",
+      "type": "mutator",
+      "extensions": [
         {
-          "trigger": "on_spawn",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "undying",
-                  "count": 3
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "mutator": {
+            "boon_value": -6
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramBool": true
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
-        {
-          "trigger": "on_spawn",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "undying",
-                  "count": 1
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      "names": {
+        "key": "MutatorData_nameKey-5ecb89afb35612d6-9e15e876a2909714399c47916cdc7b2a-v2",
+        "english": "Zombies!",
+        "french": "Dernier train pour Big Fan",
+        "german": "Zombies!",
+        "russian": "Зомби!",
+        "portuguese": "Zumbis!",
+        "chinese": "有僵尸！",
+        "spanish": "¡Zombis!",
+        "chinese_traditional": "殭屍！",
+        "korean": "좀비 떼!",
+        "japanese": "ゾンビ！"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-eb9bad2d18d3cb87-9e15e876a2909714399c47916cdc7b2a-v2",
+        "english": "Enemy units enter with [undying] [effect0.power]. Friendly units enter with [undying] [effect1.power].",
+        "french": "Les unités ennemies entrent avec [undying] [effect0.power]. Les unités alliées entrent avec [undying] [effect1.power].",
+        "german": "Gegnerische Einheiten kommen mit [undying] [effect0.power] ins Spiel. Verbündete Einheiten kommen mit [undying] [effect1.power] ins Spiel.",
+        "russian": "На бойцов врага при входе накладывается [undying] х[effect0.power], а на союзников — [undying] х[effect1.power].",
+        "portuguese": "As unidades inimigas entram com [undying] [effect0.power]. As unidades aliadas entram com [undying] [effect1.power].",
+        "chinese": "敌方单位进入战斗时获得[undying] [effect0.power]。友方单位进入战斗时获得[undying] [effect1.power]。",
+        "spanish": "Las unidades enemigas entran con [undying] [effect0.power]. Las unidades aliadas entran con [undying] [effect1.power].",
+        "chinese_traditional": "敵方單位進場時獲得[undying][effect0.power]。友方單位進場時獲得[undying][effect1.power]。",
+        "korean": "적 유닛들이 [undying] [effect0.power] 상태로 등장합니다. 아군 유닛들은 [undying] [effect1.power] 상태로 등장합니다.",
+        "japanese": "敵ユニットが[undying] [effect0.power]が付与された状態で出現する。味方ユニットが[undying] [effect1.power]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@Echoes_UnitsGetReanimate.effects0",
+        "@Echoes_UnitsGetReanimate.effects1"
+      ]
     }
   ],
-  "boonValue": -6
+  "relic_effects": [
+    {
+      "id": "Echoes_UnitsGetReanimate.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Echoes_UnitsGetReanimate.effects0.triggers0"
+      ],
+      "param_source_team": "heroes",
+      "param_bool": true
+    },
+    {
+      "id": "Echoes_UnitsGetReanimate.effects1",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Echoes_UnitsGetReanimate.effects1.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Echoes_UnitsGetReanimate.effects0.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@Echoes_UnitsGetReanimate.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "Echoes_UnitsGetReanimate.effects1.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@Echoes_UnitsGetReanimate.effects1.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_UnitsGetReanimate.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "undying",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "Echoes_UnitsGetReanimate.effects1.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "undying",
+          "count": 1
+        }
+      ]
+    }
+  ]
 }

@@ -1,42 +1,56 @@
 {
-  "id": "BigMonsters",
-  "guid": "af623737-a208-4b85-bce3-e1066b4f4bcd",
-  "name": "Big Chungus",
-  "nameKey": {
-    "key": "MutatorData_nameKey-000e8a77312bbec7-63d9bd954632dff41b85baf96116845d-v2",
-    "english": "Big Chungus",
-    "french": "Big Chungus",
-    "german": "Dicke Klopper",
-    "russian": "Громадина",
-    "portuguese": "Big Chungus",
-    "chinese": "大块头",
-    "spanish": "Coloso",
-    "chinese_traditional": "大塊頭",
-    "korean": "한 덩치 하는 놈들",
-    "japanese": "巨大化"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-68333312ba0aeadd-63d9bd954632dff41b85baf96116845d-v2",
-    "english": "All friendly units get +[effect0.power][capacity].",
-    "french": "Tous les alliés gagnent +[effect0.power][capacity].",
-    "german": "Alle verbündeten Einheiten erhalten +[effect0.power][capacity].",
-    "russian": "Все союзники получают +[effect0.power][capacity].",
-    "portuguese": "Todas as unidades aliadas recebem +[effect0.power][capacity].",
-    "chinese": "所有友方单位获得 +[effect0.power][capacity]。",
-    "spanish": "Todas las unidades aliadas añaden +[effect0.power][capacity].",
-    "chinese_traditional": "所有友方單位獲得+[effect0.power][capacity]。",
-    "korean": "모든 아군 유닛이 +[effect0.power][capacity]를 획득합니다.",
-    "japanese": "すべての味方ユニットが+[effect0.power][capacity]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyMonsterCapacity",
-      "paramInt": 1,
-      "paramBool": true
+      "id": "BigMonsters",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -9,
+            "tags": [
+              "capacity"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-000e8a77312bbec7-63d9bd954632dff41b85baf96116845d-v2",
+        "english": "Big Chungus",
+        "french": "Big Chungus",
+        "german": "Dicke Klopper",
+        "russian": "Громадина",
+        "portuguese": "Big Chungus",
+        "chinese": "大块头",
+        "spanish": "Coloso",
+        "chinese_traditional": "大塊頭",
+        "korean": "한 덩치 하는 놈들",
+        "japanese": "巨大化"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-68333312ba0aeadd-63d9bd954632dff41b85baf96116845d-v2",
+        "english": "All friendly units get +[effect0.power][capacity].",
+        "french": "Tous les alliés gagnent +[effect0.power][capacity].",
+        "german": "Alle verbündeten Einheiten erhalten +[effect0.power][capacity].",
+        "russian": "Все союзники получают +[effect0.power][capacity].",
+        "portuguese": "Todas as unidades aliadas recebem +[effect0.power][capacity].",
+        "chinese": "所有友方单位获得 +[effect0.power][capacity]。",
+        "spanish": "Todas las unidades aliadas añaden +[effect0.power][capacity].",
+        "chinese_traditional": "所有友方單位獲得+[effect0.power][capacity]。",
+        "korean": "모든 아군 유닛이 +[effect0.power][capacity]를 획득합니다.",
+        "japanese": "すべての味方ユニットが+[effect0.power][capacity]を得る。"
+      },
+      "relic_effects": [
+        "@BigMonsters.effects0"
+      ]
     }
   ],
-  "boonValue": -9,
-  "tags": [
-    "capacity"
+  "relic_effects": [
+    {
+      "id": "BigMonsters.effects0",
+      "name": "RelicEffectModifyMonsterCapacity",
+      "param_int": 1,
+      "param_bool": true
+    }
   ]
 }

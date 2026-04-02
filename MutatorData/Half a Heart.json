@@ -1,40 +1,54 @@
 {
-  "id": "Echoes_DoubleFriendlyUnitHealthUnhealed",
-  "guid": "ca916209-1309-4e3f-985c-f09b87583f93",
-  "name": "Half a Heart",
-  "nameKey": {
-    "key": "MutatorData_nameKey-6c3ea81801633d8e-3b1d8dcbb45b45f4ca3ed1ed0afefaca-v2",
-    "english": "Half a Heart",
-    "french": "Haut les cœurs",
-    "german": "Halbherzig",
-    "russian": "Половинка сердца",
-    "portuguese": "Meio Coração",
-    "chinese": "喜忧参半",
-    "spanish": "Medio corazón",
-    "chinese_traditional": "半顆心",
-    "korean": "반쪽짜리 심장",
-    "japanese": "半腰"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-8121f060b3240323-3b1d8dcbb45b45f4ca3ed1ed0afefaca-v2",
-    "english": "Friendly units have double health, but it is unhealed.",
-    "french": "Les unités alliées ont deux fois plus de PV, mais ne peuvent pas être soignées.",
-    "german": "Verbündete Einheiten erhalten doppelte Gesundheit, werden aber nicht geheilt.",
-    "russian": "У союзников двойное здоровье, но оно не восстанавливается.",
-    "portuguese": "As unidades aliadas têm o dobro de vida, mas essa vida adicional não é automaticamente preenchida.",
-    "chinese": "友方单位拥有双倍最大生命值，但未获得治疗。",
-    "spanish": "Las unidades aliadas tienen el doble de salud, pero sin curar.",
-    "chinese_traditional": "友方單位的生命值加倍，但未被治療。",
-    "korean": "아군 유닛들의 체력이 두 배가 되지만, 회복은 되지 않습니다.",
-    "japanese": "味方ユニットの体力が2倍になるが、増加した分は回復されない。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealthPercentage",
-      "paramSourceTeam": "monsters",
-      "paramInt": 100,
-      "paramTrigger": "on_spawn"
+      "id": "Echoes_DoubleFriendlyUnitHealthUnhealed",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-6c3ea81801633d8e-3b1d8dcbb45b45f4ca3ed1ed0afefaca-v2",
+        "english": "Half a Heart",
+        "french": "Haut les cœurs",
+        "german": "Halbherzig",
+        "russian": "Половинка сердца",
+        "portuguese": "Meio Coração",
+        "chinese": "喜忧参半",
+        "spanish": "Medio corazón",
+        "chinese_traditional": "半顆心",
+        "korean": "반쪽짜리 심장",
+        "japanese": "半腰"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-8121f060b3240323-3b1d8dcbb45b45f4ca3ed1ed0afefaca-v2",
+        "english": "Friendly units have double health, but it is unhealed.",
+        "french": "Les unités alliées ont deux fois plus de PV, mais ne peuvent pas être soignées.",
+        "german": "Verbündete Einheiten erhalten doppelte Gesundheit, werden aber nicht geheilt.",
+        "russian": "У союзников двойное здоровье, но оно не восстанавливается.",
+        "portuguese": "As unidades aliadas têm o dobro de vida, mas essa vida adicional não é automaticamente preenchida.",
+        "chinese": "友方单位拥有双倍最大生命值，但未获得治疗。",
+        "spanish": "Las unidades aliadas tienen el doble de salud, pero sin curar.",
+        "chinese_traditional": "友方單位的生命值加倍，但未被治療。",
+        "korean": "아군 유닛들의 체력이 두 배가 되지만, 회복은 되지 않습니다.",
+        "japanese": "味方ユニットの体力が2倍になるが、増加した分は回復されない。"
+      },
+      "relic_effects": [
+        "@Echoes_DoubleFriendlyUnitHealthUnhealed.effects0"
+      ]
     }
   ],
-  "boonValue": 3
+  "relic_effects": [
+    {
+      "id": "Echoes_DoubleFriendlyUnitHealthUnhealed.effects0",
+      "name": "RelicEffectModifyCharacterMaxHealthPercentage",
+      "param_source_team": "monsters",
+      "param_int": 100,
+      "param_trigger": "on_spawn"
+    }
+  ]
 }

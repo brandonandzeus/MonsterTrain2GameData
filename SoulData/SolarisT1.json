@@ -1,57 +1,72 @@
 {
-  "id": "SolarisT1",
-  "guid": "fa66e79e-800e-4753-afe6-de333ef678e4",
-  "name": "SolarisT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-94882d055cac3061-410ea479ccf12ec44a049e2991da65f5-v2",
-    "english": "Solaris",
-    "french": "Solaris",
-    "german": "Solaris",
-    "russian": "Солярис",
-    "portuguese": "Solaris",
-    "chinese": "索拉里斯",
-    "spanish": "Solaris",
-    "chinese_traditional": "索拉里斯",
-    "korean": "태양의 권능",
-    "japanese": "ソラリス"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-20f9a2c43a7ab93b-410ea479ccf12ec44a049e2991da65f5-v2",
-    "english": "Gain [effect0.power][ember]. Reduce this amount by [effect0.secondarypower] each turn.",
-    "french": "Octroie [effect0.power][ember]. Cette quantité diminue de [effect0.secondarypower] à chaque tour.",
-    "german": "Erhalte [effect0.power][ember]. Verringert diese Menge um [effect0.secondarypower] pro Zug.",
-    "russian": "Дает [effect0.power][ember]. Каждый ход это число снижается на [effect0.secondarypower]",
-    "portuguese": "Recebe [effect0.power][ember]. Reduz essa quantidade em [effect0.secondarypower] a cada turno.",
-    "chinese": "获得 [effect0.power][ember]。每回合此数量减少 [effect0.secondarypower]。",
-    "spanish": "Obtienes [effect0.power][ember]. Esta cantidad se reduce en [effect0.secondarypower] cada turno.",
-    "chinese_traditional": "獲得[effect0.power][ember]。此數量每回合減少[effect0.secondarypower]。",
-    "korean": "[effect0.power][ember]을 얻습니다. 이 수치는 매 턴 [effect0.secondarypower]만큼 감소합니다.",
-    "japanese": "[effect0.power][ember]を得る。この値は毎ターン[effect0.secondarypower]減少する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyEnergyReducingEveryTurn",
-      "paramInt": 3,
-      "paramInt2": 1
+      "id": "SolarisT1",
+      "name": "SolarisT1",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-810debf91d6813f3-410ea479ccf12ec44a049e2991da65f5-v2",
+                "english": "Defeat Maera to unlock.",
+                "french": "Battez Maera pour déverrouiller.",
+                "german": "Besiege Maera, um freizuschalten.",
+                "russian": "Чтобы разблокировать, победите Маэру.",
+                "portuguese": "Derrote Maera para desbloquear.",
+                "chinese": "击败梅拉以解锁。",
+                "spanish": "Derrota a Maera para desbloquear.",
+                "chinese_traditional": "擊敗瑪伊拉以解鎖。",
+                "korean": "메이라를 처치하면 잠금 해제됩니다.",
+                "japanese": "マエラを倒してアンロック。"
+              },
+              "unlock_condition": "soul_kill_region_1_boss",
+              "param_int": 1
+            },
+            "tier_level": 1,
+            "next_tier": "SolarisT2"
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-94882d055cac3061-410ea479ccf12ec44a049e2991da65f5-v2",
+        "english": "Solaris",
+        "french": "Solaris",
+        "german": "Solaris",
+        "russian": "Солярис",
+        "portuguese": "Solaris",
+        "chinese": "索拉里斯",
+        "spanish": "Solaris",
+        "chinese_traditional": "索拉里斯",
+        "korean": "태양의 권능",
+        "japanese": "ソラリス"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-20f9a2c43a7ab93b-410ea479ccf12ec44a049e2991da65f5-v2",
+        "english": "Gain [effect0.power][ember]. Reduce this amount by [effect0.secondarypower] each turn.",
+        "french": "Octroie [effect0.power][ember]. Cette quantité diminue de [effect0.secondarypower] à chaque tour.",
+        "german": "Erhalte [effect0.power][ember]. Verringert diese Menge um [effect0.secondarypower] pro Zug.",
+        "russian": "Дает [effect0.power][ember]. Каждый ход это число снижается на [effect0.secondarypower]",
+        "portuguese": "Recebe [effect0.power][ember]. Reduz essa quantidade em [effect0.secondarypower] a cada turno.",
+        "chinese": "获得 [effect0.power][ember]。每回合此数量减少 [effect0.secondarypower]。",
+        "spanish": "Obtienes [effect0.power][ember]. Esta cantidad se reduce en [effect0.secondarypower] cada turno.",
+        "chinese_traditional": "獲得[effect0.power][ember]。此數量每回合減少[effect0.secondarypower]。",
+        "korean": "[effect0.power][ember]을 얻습니다. 이 수치는 매 턴 [effect0.secondarypower]만큼 감소합니다.",
+        "japanese": "[effect0.power][ember]を得る。この値は毎ターン[effect0.secondarypower]減少する。"
+      },
+      "relic_effects": [
+        "@SolarisT1.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-810debf91d6813f3-410ea479ccf12ec44a049e2991da65f5-v2",
-      "english": "Defeat Maera to unlock.",
-      "french": "Battez Maera pour déverrouiller.",
-      "german": "Besiege Maera, um freizuschalten.",
-      "russian": "Чтобы разблокировать, победите Маэру.",
-      "portuguese": "Derrote Maera para desbloquear.",
-      "chinese": "击败梅拉以解锁。",
-      "spanish": "Derrota a Maera para desbloquear.",
-      "chinese_traditional": "擊敗瑪伊拉以解鎖。",
-      "korean": "메이라를 처치하면 잠금 해제됩니다.",
-      "japanese": "マエラを倒してアンロック。"
-    },
-    "unlockCondition": "soul_kill_region_1_boss",
-    "paramInt": 1
-  },
-  "tierLevel": 1,
-  "nextTier": "SolarisT2"
+  "relic_effects": [
+    {
+      "id": "SolarisT1.effects0",
+      "name": "RelicEffectModifyEnergyReducingEveryTurn",
+      "param_int": 3,
+      "param_int_2": 1
+    }
+  ]
 }

@@ -1,166 +1,79 @@
 {
-  "id": "RedHotT3",
-  "guid": "c1475eba-fbb7-4934-8d2b-8b87d0dcb44c",
-  "name": "RedHotT3",
-  "nameKey": {
-    "key": "SoulData_nameKey-1d4622fc660bae41-564099f9ff9888b43b4d411d448c436b-v2",
-    "english": "Red Hot III",
-    "french": "Ignescence III",
-    "german": "Rotglühend III",
-    "russian": "Жаровник III",
-    "portuguese": "Incandescente III",
-    "chinese": "炙热 III",
-    "spanish": "Rojo vivo III",
-    "chinese_traditional": "熾熱III",
-    "korean": "붉은 작열 III",
-    "japanese": "レッド・ホットIII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-4a9bfbe0ceb5a721-564099f9ff9888b43b4d411d448c436b-v2",
-    "english": "Gain [explosive] and +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: Apply -[effect0.power][ember] to a random card.",
-    "french": "Octroie [explosive] et +[effect0.upgrade.bonusdamage] [magicpower]. <nobr>[slay] :</nobr> applique -[effect0.power][ember] à une carte aléatoire.",
-    "german": "Erhalte [explosive] und +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: Wende -[effect0.power][ember] auf eine zufällige Karte an.",
-    "russian": "Даются [explosive] и [magicpower] х[effect0.upgrade.bonusdamage]. [slay]: Снимает -[effect0.power][ember] со случайной карты.",
-    "portuguese": "Recebe [explosive] e +[effect0.upgrade.bonusdamage] de [magicpower]. [slay]: aplica -[effect0.power][ember] a uma carta aleatória.",
-    "chinese": "获得 [explosive] +[effect0.upgrade.bonusdamage] [magicpower]。[slay]：随机对一张卡牌施加 -[effect0.power][ember]。",
-    "spanish": "Añade [explosive] y +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: Añade -[effect0.power][ember] a una carta aleatoria.",
-    "chinese_traditional": "獲得[explosive]和+[effect0.upgrade.bonusdamage][magicpower]。[slay]：對一張隨機卡牌施加-[effect0.power][ember]。",
-    "korean": "[explosive] 획득 및 +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: 무작위 카드 한 장에 -[effect0.power][ember]을 적용합니다.",
-    "japanese": "[explosive]と+[effect0.upgrade.bonusdamage] [magicpower]を得る。[slay]：ランダムなカードに-[effect0.power][ember]を付与する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "RedHotT3_Upgrade",
-        "guid": "b96e63c6-2006-4c62-a096-099760f02696",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-3b44b1014a435c08-e8f946ea4ad2cf848a9eb4531603c3ab-v2",
-          "english": "Red Hot",
-          "french": "Ignescence",
-          "german": "Rotglühend",
-          "russian": "Раскаляй добела",
-          "portuguese": "Incandescente",
-          "chinese": "炙热",
-          "spanish": "Rojo vivo",
-          "chinese_traditional": "熾熱",
-          "korean": "붉은 작열",
-          "japanese": "レッド・ホット"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-d660996599a5aedc-e8f946ea4ad2cf848a9eb4531603c3ab-v2",
-          "english": "Add [explosive] and [slay]: Apply -[trigger0.effect0.upgrade.costreduction][ember] to a random card.",
-          "french": "Ajoute [explosive] et <nobr>[slay] :</nobr> applique -[trigger0.effect0.upgrade.costreduction][ember] à une carte aléatoire.",
-          "german": "Fügt [explosive] und [slay] hinzu: Wende -[trigger0.effect0.upgrade.costreduction][ember] auf eine zufällige Karte an.",
-          "russian": "Дается [explosive]. [slay]: снимает -[trigger0.effect0.upgrade.costreduction][ember] со случайной карты.",
-          "portuguese": "Adicionar [explosive] e [slay]: aplica -[trigger0.effect0.upgrade.costreduction][ember] a uma carta aleatória.",
-          "chinese": "添加 [explosive] 和 [slay]：随机对一张卡牌施加 -[trigger0.effect0.upgrade.costreduction][ember]。",
-          "spanish": "Añade [explosive] y [slay]: añade -[trigger0.effect0.upgrade.costreduction][ember] a una carta aleatoria.",
-          "chinese_traditional": "添加[explosive]和[slay]：對一張隨機卡牌施加-[trigger0.effect0.upgrade.costreduction][ember]。",
-          "korean": "[explosive]을 부여하고, [slay]: 무작위 카드에 -[trigger0.effect0.upgrade.costreduction][ember]을 적용합니다.",
-          "japanese": "[explosive]と[slay]を追加する：ランダムなカードに-[trigger0.effect0.upgrade.costreduction][ember]を付与する。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitDamageOverflow",
-            "paramInt": 2
-          }
-        ],
-        "cardTriggerUpgrades": [
-          {
-            "descriptionKey": {
-              "key": "CardUpgradeData_descriptionKey-15339ca9a1d7c5aa-e8f946ea4ad2cf848a9eb4531603c3ab-v2",
-              "english": "Apply -[effect0.upgrade.costreduction][ember] to a random card.",
-              "french": "Applique -[effect0.upgrade.costreduction][ember] à une carte aléatoire.",
-              "german": "Wende -[effect0.upgrade.costreduction][ember] auf eine zufällige Karte an.",
-              "russian": "Снимает [effect0.upgrade.costreduction][ember] со случайной карты.",
-              "portuguese": "Aplica -[effect0.upgrade.costreduction][ember] a uma carta aleatória.",
-              "chinese": "随机对一张卡牌施加 -[effect0.upgrade.costreduction][ember]。",
-              "spanish": "Añade -[effect0.upgrade.costreduction][ember] a una carta aleatoria.",
-              "chinese_traditional": "對一張隨機卡牌施加-[effect0.upgrade.costreduction][ember]。",
-              "korean": "무작위 카드 한 장에 -[effect0.upgrade.costreduction][ember]을 적용합니다.",
-              "japanese": "ランダムなカードに-[effect0.upgrade.costreduction][ember]を付与する。"
+      "id": "RedHotT3",
+      "name": "RedHotT3",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-e32b40af56a4674e-564099f9ff9888b43b4d411d448c436b-v2",
+                "english": "Defeat Lifemother while playing Pyreborne to upgrade.",
+                "french": "Battez Mère Nature en jouant les Draconides pour améliorer.",
+                "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Höllenglutkindern spielst.",
+                "russian": "Чтобы улучшить, победите Мать-природу, играя за Пеклорожденных.",
+                "portuguese": "Derrote a Genetriz jogando com os Píricos para melhorar.",
+                "chinese": "用薪龙族击败生命之母以升级。",
+                "spanish": "Derrota a la Madre Vida con los Hijos de la Pira para mejorar.",
+                "chinese_traditional": "遊玩薪火之子時擊敗生命之母以升級。",
+                "korean": "화로의 후예 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
+                "japanese": "火竜族でのプレイでライフマザーを倒してアップグレード。"
+              },
+              "unlock_condition": "soul_kill_lifemother_using_pyreborne",
+              "param_int": 1
             },
-            "trigger": "on_kill",
-            "cardEffects": [
-              {
-                "effectStateName": "CardEffectAddTempCardUpgradeToRandomCardInHand",
-                "paramCardFilter": {
-                  "id": "ExcludeZeroCost",
-                  "costRange": {
-                    "x": 1.0,
-                    "y": 99.0
-                  },
-                  "excludedCardTraitsOperator": "and",
-                  "excludedCardTraits": [
-                    "CardTraitUnplayable"
-                  ]
-                },
-                "paramCardUpgradeData": {
-                  "id": "RedHotT3_Upgrade_OnSlay",
-                  "guid": "c0ac044e-703d-4b78-8fa8-8ecb2f62e6ef",
-                  "filters": [
-                    {
-                      "id": "ExcludeZeroCost",
-                      "costRange": {
-                        "x": 1.0,
-                        "y": 99.0
-                      },
-                      "excludedCardTraitsOperator": "and",
-                      "excludedCardTraits": [
-                        "CardTraitUnplayable"
-                      ]
-                    }
-                  ],
-                  "excludeFromClones": true,
-                  "costReduction": 1,
-                  "xCostReduction": 1
-                }
-              }
-            ],
-            "triggerKeywordCardTextSuppressed": false
+            "tier_level": 3
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyDamageCard",
-            "requiredCardEffectsOperator": "or",
-            "requiredCardEffects": [
-              "CardEffectDamage",
-              "CardEffectDamageByPercentRemainingHealth",
-              "CardEffectDamageByUnitsKilled",
-              "CardEffectDamagePerHp",
-              "CardEffectDamagePerSourceAttack",
-              "CardEffectDamagePerTargetAttack",
-              "CardEffectDamageWithTrample",
-              "CardEffectHealAndDamageRelative"
-            ]
-          }
-        ],
-        "isRegionRunUpgrade": true,
-        "excludeFromClones": true,
-        "bonusDamage": 10,
-        "bonusHeal": 10
-      }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-1d4622fc660bae41-564099f9ff9888b43b4d411d448c436b-v2",
+        "english": "Red Hot III",
+        "french": "Ignescence III",
+        "german": "Rotglühend III",
+        "russian": "Жаровник III",
+        "portuguese": "Incandescente III",
+        "chinese": "炙热 III",
+        "spanish": "Rojo vivo III",
+        "chinese_traditional": "熾熱III",
+        "korean": "붉은 작열 III",
+        "japanese": "レッド・ホットIII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-4a9bfbe0ceb5a721-564099f9ff9888b43b4d411d448c436b-v2",
+        "english": "Gain [explosive] and +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: Apply -[effect0.power][ember] to a random card.",
+        "french": "Octroie [explosive] et +[effect0.upgrade.bonusdamage] [magicpower]. <nobr>[slay] :</nobr> applique -[effect0.power][ember] à une carte aléatoire.",
+        "german": "Erhalte [explosive] und +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: Wende -[effect0.power][ember] auf eine zufällige Karte an.",
+        "russian": "Даются [explosive] и [magicpower] х[effect0.upgrade.bonusdamage]. [slay]: Снимает -[effect0.power][ember] со случайной карты.",
+        "portuguese": "Recebe [explosive] e +[effect0.upgrade.bonusdamage] de [magicpower]. [slay]: aplica -[effect0.power][ember] a uma carta aleatória.",
+        "chinese": "获得 [explosive] +[effect0.upgrade.bonusdamage] [magicpower]。[slay]：随机对一张卡牌施加 -[effect0.power][ember]。",
+        "spanish": "Añade [explosive] y +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: Añade -[effect0.power][ember] a una carta aleatoria.",
+        "chinese_traditional": "獲得[explosive]和+[effect0.upgrade.bonusdamage][magicpower]。[slay]：對一張隨機卡牌施加-[effect0.power][ember]。",
+        "korean": "[explosive] 획득 및 +[effect0.upgrade.bonusdamage] [magicpower]. [slay]: 무작위 카드 한 장에 -[effect0.power][ember]을 적용합니다.",
+        "japanese": "[explosive]と+[effect0.upgrade.bonusdamage] [magicpower]を得る。[slay]：ランダムなカードに-[effect0.power][ember]を付与する。"
+      },
+      "relic_effects": [
+        "@RedHotT3.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-e32b40af56a4674e-564099f9ff9888b43b4d411d448c436b-v2",
-      "english": "Defeat Lifemother while playing Pyreborne to upgrade.",
-      "french": "Battez Mère Nature en jouant les Draconides pour améliorer.",
-      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Höllenglutkindern spielst.",
-      "russian": "Чтобы улучшить, победите Мать-природу, играя за Пеклорожденных.",
-      "portuguese": "Derrote a Genetriz jogando com os Píricos para melhorar.",
-      "chinese": "用薪龙族击败生命之母以升级。",
-      "spanish": "Derrota a la Madre Vida con los Hijos de la Pira para mejorar.",
-      "chinese_traditional": "遊玩薪火之子時擊敗生命之母以升級。",
-      "korean": "화로의 후예 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
-      "japanese": "火竜族でのプレイでライフマザーを倒してアップグレード。"
-    },
-    "unlockCondition": "soul_kill_lifemother_using_pyreborne",
-    "paramInt": 1
-  },
-  "tierLevel": 3
+  "relic_effects": [
+    {
+      "id": "RedHotT3.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "RedHotT3_Upgrade"
+    }
+  ],
+  "effects": [
+    {
+      "id": "RedHotT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectAddTempCardUpgradeToRandomCardInHand",
+      "param_card_filter": "@RedHotT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0.paramCardFilter",
+      "param_upgrade": "RedHotT3_Upgrade_OnSlay"
+    }
+  ]
 }

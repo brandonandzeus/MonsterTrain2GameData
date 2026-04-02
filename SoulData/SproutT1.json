@@ -1,94 +1,72 @@
 {
-  "id": "SproutT1",
-  "guid": "89f86b55-f867-42d4-9128-0ebc6c82bcaf",
-  "name": "SproutT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-ab6a562aa1ce9963-0765e511ceea7274e85109d95c43f2da-v2",
-    "english": "Sprout",
-    "french": "Pousse",
-    "german": "Spross",
-    "russian": "Черенок",
-    "portuguese": "Broto",
-    "chinese": "苗芽",
-    "spanish": "Brote",
-    "chinese_traditional": "幼苗",
-    "korean": "새싹",
-    "japanese": "スプラウト"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-0299dd682694fc3f-0765e511ceea7274e85109d95c43f2da-v2",
-    "english": "Gain [attack] equal to all [infested] stacks.",
-    "french": "Octroie de l'[attack] valant tous les cumuls d'<b>Infestation</b>.",
-    "german": "Erhalte [attack] im Ausmaß aller [infested]-Stapel.",
-    "russian": "Дается [attack], равная сумме слоев <b>Заражения</b>.",
-    "portuguese": "Recebe [attack] igual a todas as cargas de [infested].",
-    "chinese": "获得等同于所有 [infested] 层数的 [attack]。",
-    "spanish": "Añade tanto [attack] como todas las acumulaciones de [infested].",
-    "chinese_traditional": "獲得等同於所有[infested]層數的[attack]。",
-    "korean": "모든 [infested] 스택만큼 [attack]을 획득합니다.",
-    "japanese": "すべての[infested]のスタックに等しい[attack]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SproutT1_Upgrade",
-        "guid": "7bdad45c-2981-452c-ac06-3aa5137f8ce4",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-8b0fc2ea210dbde9-648531cc9ea10654aa19fa74833b15da-v2",
-          "english": "Sprout",
-          "french": "Pousse",
-          "german": "Spross",
-          "russian": "Черенок",
-          "portuguese": "Broto",
-          "chinese": "苗芽",
-          "spanish": "Brote",
-          "chinese_traditional": "幼苗",
-          "korean": "새싹",
-          "japanese": "スプラウト"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-76dac7cc5c4025c8-648531cc9ea10654aa19fa74833b15da-v2",
-          "english": "Gain [attack] equal to all [infested] stacks.",
-          "french": "Octroie de l'[attack] valant tous les cumuls d'<b>Infestation</b>.",
-          "german": "Erhalte [attack] im Ausmaß aller [infested]-Stapel.",
-          "russian": "Дается [attack] равная сумме слоев <b>заражения</b>.",
-          "portuguese": "Recebe [attack] igual a todas as cargas de [infested].",
-          "chinese": "获得等同于所有 [infested] 层数的 [attack]。",
-          "spanish": "Añade tanto [attack] como todas las acumulaciones de [infested].",
-          "chinese_traditional": "獲得等同於所有[infested]層數的[attack]。",
-          "korean": "모든 [infested] 스택만큼 [attack]을 획득합니다.",
-          "japanese": "すべての[infested]のスタックに等しい[attack]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "hivemindkiller",
-            "count": 1
+      "id": "SproutT1",
+      "name": "SproutT1",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-9aee98f37b444370-0765e511ceea7274e85109d95c43f2da-v2",
+                "english": "Slay enemy units with [infested] to unlock.",
+                "french": "Éliminez des ennemis avec [infested] pour déverrouiller.",
+                "german": "Besiege zum Freischalten gegnerische [infested]e Einheiten.",
+                "russian": "Чтобы разблокировать, убейте <b>Зараженных</b> врагов.",
+                "portuguese": "Abata unidades inimigas com [infested] para desbloquear.",
+                "chinese": "用 [infested] 击杀敌方单位以解锁。",
+                "spanish": "Ejecuta unidades con [infested] para desbloquear.",
+                "chinese_traditional": "用[infested]擊殺敵方單位以解鎖。",
+                "korean": "[infested]으로 적 유닛들을 처치하면 잠금 해제됩니다.",
+                "japanese": "[infested]で敵ユニットをキルしてアンロック。"
+              },
+              "unlock_condition": "soul_enemy_units_with_infested_killed",
+              "param_int": 30
+            },
+            "tier_level": 1,
+            "next_tier": "SproutT2"
           }
-        ],
-        "isRegionRunUpgrade": true,
-        "excludeFromClones": true
-      }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-ab6a562aa1ce9963-0765e511ceea7274e85109d95c43f2da-v2",
+        "english": "Sprout",
+        "french": "Pousse",
+        "german": "Spross",
+        "russian": "Черенок",
+        "portuguese": "Broto",
+        "chinese": "苗芽",
+        "spanish": "Brote",
+        "chinese_traditional": "幼苗",
+        "korean": "새싹",
+        "japanese": "スプラウト"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-0299dd682694fc3f-0765e511ceea7274e85109d95c43f2da-v2",
+        "english": "Gain [attack] equal to all [infested] stacks.",
+        "french": "Octroie de l'[attack] valant tous les cumuls d'<b>Infestation</b>.",
+        "german": "Erhalte [attack] im Ausmaß aller [infested]-Stapel.",
+        "russian": "Дается [attack], равная сумме слоев <b>Заражения</b>.",
+        "portuguese": "Recebe [attack] igual a todas as cargas de [infested].",
+        "chinese": "获得等同于所有 [infested] 层数的 [attack]。",
+        "spanish": "Añade tanto [attack] como todas las acumulaciones de [infested].",
+        "chinese_traditional": "獲得等同於所有[infested]層數的[attack]。",
+        "korean": "모든 [infested] 스택만큼 [attack]을 획득합니다.",
+        "japanese": "すべての[infested]のスタックに等しい[attack]を得る。"
+      },
+      "relic_effects": [
+        "@SproutT1.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-9aee98f37b444370-0765e511ceea7274e85109d95c43f2da-v2",
-      "english": "Slay enemy units with [infested] to unlock.",
-      "french": "Éliminez des ennemis avec [infested] pour déverrouiller.",
-      "german": "Besiege zum Freischalten gegnerische [infested]e Einheiten.",
-      "russian": "Чтобы разблокировать, убейте <b>Зараженных</b> врагов.",
-      "portuguese": "Abata unidades inimigas com [infested] para desbloquear.",
-      "chinese": "用 [infested] 击杀敌方单位以解锁。",
-      "spanish": "Ejecuta unidades con [infested] para desbloquear.",
-      "chinese_traditional": "用[infested]擊殺敵方單位以解鎖。",
-      "korean": "[infested]으로 적 유닛들을 처치하면 잠금 해제됩니다.",
-      "japanese": "[infested]で敵ユニットをキルしてアンロック。"
-    },
-    "unlockCondition": "soul_enemy_units_with_infested_killed",
-    "paramInt": 30
-  },
-  "tierLevel": 1,
-  "nextTier": "SproutT2"
+  "relic_effects": [
+    {
+      "id": "SproutT1.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SproutT1_Upgrade"
+    }
+  ]
 }

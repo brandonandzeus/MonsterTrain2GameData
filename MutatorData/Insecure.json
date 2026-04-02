@@ -1,47 +1,61 @@
 {
-  "id": "SoulSavior_Region3Complete_2",
-  "guid": "59b5e74e-7d05-4a68-9655-646b83340cd5",
-  "name": "Insecure",
-  "nameKey": {
-    "key": "MutatorData_nameKey-734aac3ad131e18a-0c17698fc2b7a5f44b490077a1f389c1-v2",
-    "english": "Insecure",
-    "french": "Complexe",
-    "german": "Unsicher",
-    "russian": "Уязвимость",
-    "portuguese": "Inseguro",
-    "chinese": "不安",
-    "spanish": "Inseguridad",
-    "chinese_traditional": "不安全",
-    "korean": "불안정",
-    "japanese": "戦々恐々"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-2b8cbf58616717e3-0c17698fc2b7a5f44b490077a1f389c1-v2",
-    "english": "Champions enter with [meleeweakness] [effect0.status0.power].",
-    "french": "Les champions entrent avec [meleeweakness] [effect0.status0.power].",
-    "german": "Champions erscheinen mit [meleeweakness] [effect0.status0.power].",
-    "russian": "При появлении герой получает [meleeweakness] х[effect0.status0.power].",
-    "portuguese": "Campeões entram com [meleeweakness] [effect0.status0.power].",
-    "chinese": "勇者进入战斗时获得 [meleeweakness] [effect0.status0.power]。",
-    "spanish": "Los campeones entran con [meleeweakness] [effect0.status0.power].",
-    "chinese_traditional": "勇士進場時帶有[meleeweakness][effect0.status0.power]。",
-    "korean": "영웅들이 [meleeweakness] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "チャンピオンが[meleeweakness] [effect0.status0.power]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_Region3Complete_2",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "melee weakness",
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-734aac3ad131e18a-0c17698fc2b7a5f44b490077a1f389c1-v2",
+        "english": "Insecure",
+        "french": "Complexe",
+        "german": "Unsicher",
+        "russian": "Уязвимость",
+        "portuguese": "Inseguro",
+        "chinese": "不安",
+        "spanish": "Inseguridad",
+        "chinese_traditional": "不安全",
+        "korean": "불안정",
+        "japanese": "戦々恐々"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-2b8cbf58616717e3-0c17698fc2b7a5f44b490077a1f389c1-v2",
+        "english": "Champions enter with [meleeweakness] [effect0.status0.power].",
+        "french": "Les champions entrent avec [meleeweakness] [effect0.status0.power].",
+        "german": "Champions erscheinen mit [meleeweakness] [effect0.status0.power].",
+        "russian": "При появлении герой получает [meleeweakness] х[effect0.status0.power].",
+        "portuguese": "Campeões entram com [meleeweakness] [effect0.status0.power].",
+        "chinese": "勇者进入战斗时获得 [meleeweakness] [effect0.status0.power]。",
+        "spanish": "Los campeones entran con [meleeweakness] [effect0.status0.power].",
+        "chinese_traditional": "勇士進場時帶有[meleeweakness][effect0.status0.power]。",
+        "korean": "영웅들이 [meleeweakness] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "チャンピオンが[meleeweakness] [effect0.status0.power]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region3Complete_2.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region3Complete_2.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "melee weakness",
           "count": 3
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
     }
-  ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

@@ -1,38 +1,52 @@
 {
-  "id": "TimeForTrials",
-  "guid": "77e682d9-0167-40bb-b8c7-e9ffd49065bb",
-  "name": "Time for Trials",
-  "nameKey": {
-    "key": "MutatorData_nameKey-3799b8032cea5bf1-5cd5a8e9c8c0086448da4d51d37e2c35-v2",
-    "english": "Time for Trials",
-    "french": "Le temps des épreuves",
-    "german": "Prüfungszeit",
-    "russian": "Время испытаний",
-    "portuguese": "Hora da Provação",
-    "chinese": "无惧试炼",
-    "spanish": "Hora de las pruebas",
-    "chinese_traditional": "試煉時刻",
-    "korean": "시련의 시간",
-    "japanese": "試練の時"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-cea9b529a86d7036-5cd5a8e9c8c0086448da4d51d37e2c35-v2",
-    "english": "Trials are always enabled in battles that have them.",
-    "french": "Les épreuves sont toujours activées dans les combats qui en comportent.",
-    "german": "Prüfungen sind in Kämpfen, wenn möglich, immer aktiviert.",
-    "russian": "Если в бое доступны испытания, то они всегда включены.",
-    "portuguese": "Provações serão sempre ativadas nas batalhas que as tiverem.",
-    "chinese": "在包含试炼的战斗中，始终启用试炼。",
-    "spanish": "Las pruebas están siempre habilitadas en las batallas que las tengan.",
-    "chinese_traditional": "在有試煉的戰鬥中始終啟用試煉。",
-    "korean": "전투에서 반드시 시련이 발생합니다.",
-    "japanese": "該当バトルでは試練が常に有効になる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyTrial",
-      "paramBool": true
+      "id": "TimeForTrials",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-3799b8032cea5bf1-5cd5a8e9c8c0086448da4d51d37e2c35-v2",
+        "english": "Time for Trials",
+        "french": "Le temps des épreuves",
+        "german": "Prüfungszeit",
+        "russian": "Время испытаний",
+        "portuguese": "Hora da Provação",
+        "chinese": "无惧试炼",
+        "spanish": "Hora de las pruebas",
+        "chinese_traditional": "試煉時刻",
+        "korean": "시련의 시간",
+        "japanese": "試練の時"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-cea9b529a86d7036-5cd5a8e9c8c0086448da4d51d37e2c35-v2",
+        "english": "Trials are always enabled in battles that have them.",
+        "french": "Les épreuves sont toujours activées dans les combats qui en comportent.",
+        "german": "Prüfungen sind in Kämpfen, wenn möglich, immer aktiviert.",
+        "russian": "Если в бое доступны испытания, то они всегда включены.",
+        "portuguese": "Provações serão sempre ativadas nas batalhas que as tiverem.",
+        "chinese": "在包含试炼的战斗中，始终启用试炼。",
+        "spanish": "Las pruebas están siempre habilitadas en las batallas que las tengan.",
+        "chinese_traditional": "在有試煉的戰鬥中始終啟用試煉。",
+        "korean": "전투에서 반드시 시련이 발생합니다.",
+        "japanese": "該当バトルでは試練が常に有効になる。"
+      },
+      "relic_effects": [
+        "@TimeForTrials.effects0"
+      ]
     }
   ],
-  "boonValue": -3
+  "relic_effects": [
+    {
+      "id": "TimeForTrials.effects0",
+      "name": "RelicEffectModifyTrial",
+      "param_bool": true
+    }
+  ]
 }

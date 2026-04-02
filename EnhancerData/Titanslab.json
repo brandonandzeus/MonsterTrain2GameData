@@ -1,101 +1,57 @@
 {
-  "id": "SoulSavior_UnitUpgradeTitanite",
-  "guid": "7aee430d-bff0-4cc6-a869-48ede2e5bb3c",
-  "name": "Titanslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-1e73b14de907c85e-e8d13b5144e47ad428a146cad2e70341-v2",
-    "english": "Titanslab",
-    "french": "Gemme de titan",
-    "german": "Platte des Titanen",
-    "russian": "Пласт Титанов",
-    "portuguese": "Placa do Titã",
-    "chinese": "泰坦石板",
-    "spanish": "Losa titánica",
-    "chinese_traditional": "泰坦石板",
-    "korean": "티탄의 서판",
-    "japanese": "巨人の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-e9fd34f430b63970-e8d13b5144e47ad428a146cad2e70341-v2",
-    "english": "Gain [titanite] and [titanskin] [effect0.upgrade.status1.power].",
-    "french": "Octroie [titanite] et [titanskin] [effect0.upgrade.status1.power].",
-    "german": "Erhalte [titanite] und [titanskin] [effect0.upgrade.status1.power].",
-    "russian": "Даются [titanite] и [titanskin] х[effect0.upgrade.status1.power].",
-    "portuguese": "Recebe [titanite] e [titanskin] [effect0.upgrade.status1.power].",
-    "chinese": "获得 [titanite] 和 [titanskin] [effect0.upgrade.status1.power]。",
-    "spanish": "Añade [titanite] y [titanskin] [effect0.upgrade.status1.power].",
-    "chinese_traditional": "獲得[titanite]和[titanskin][effect0.upgrade.status1.power]。",
-    "korean": "[titanite] 및 [titanskin] [effect0.upgrade.status1.power] 효과를 획득합니다.",
-    "japanese": "[titanite]と[titanskin] [effect0.upgrade.status1.power]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_AddTitanite",
-        "guid": "ab5be01e-ffc8-47ca-99d3-0b0e50efc00a",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-5fb10e1c12726e05-682169aa48340c74da1980ab79053cfc-v2",
-          "english": "Titanslab",
-          "french": "Gemme de titan",
-          "german": "Platte des Titanen",
-          "russian": "Пласт Титанов",
-          "portuguese": "Placa do Titã",
-          "chinese": "泰坦石板",
-          "spanish": "Losa titánica",
-          "chinese_traditional": "泰坦石板",
-          "korean": "티탄의 서판",
-          "japanese": "巨人の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-a9a5c833204af8d7-682169aa48340c74da1980ab79053cfc-v2",
-          "english": "Gain [titanite] and [titanskin] [status1.power].",
-          "french": "Octroie [titanite] et [titanskin] [status1.power].",
-          "german": "Erhalte [titanite] und [titanskin] [status1.power].",
-          "russian": "Даются [titanite] и [titanskin] х[status1.power].",
-          "portuguese": "Recebe [titanite] e [titanskin] [status1.power].",
-          "chinese": "获得 [titanite] 和 [titanskin] [status1.power]。",
-          "spanish": "Añade [titanite] y [titanskin] [status1.power].",
-          "chinese_traditional": "獲得[titanite]和[titanskin][status1.power]。",
-          "korean": "[titanite] 및 [titanskin] [status1.power] 효과를 획득합니다.",
-          "japanese": "[titanite]と[titanskin] [status1.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "titanite",
-            "count": 1
-          },
-          {
-            "statusId": "titanskin",
-            "count": 3
+      "id": "SoulSavior_UnitUpgradeTitanite",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeTitanite",
-            "excludedStatusEffects": [
-              {
-                "statusId": "titanite",
-                "count": 1
-              }
-            ],
-            "excludedStatusEffectsOperator": "and"
-          },
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-1e73b14de907c85e-e8d13b5144e47ad428a146cad2e70341-v2",
+        "english": "Titanslab",
+        "french": "Gemme de titan",
+        "german": "Platte des Titanen",
+        "russian": "Пласт Титанов",
+        "portuguese": "Placa do Titã",
+        "chinese": "泰坦石板",
+        "spanish": "Losa titánica",
+        "chinese_traditional": "泰坦石板",
+        "korean": "티탄의 서판",
+        "japanese": "巨人の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-e9fd34f430b63970-e8d13b5144e47ad428a146cad2e70341-v2",
+        "english": "Gain [titanite] and [titanskin] [effect0.upgrade.status1.power].",
+        "french": "Octroie [titanite] et [titanskin] [effect0.upgrade.status1.power].",
+        "german": "Erhalte [titanite] und [titanskin] [effect0.upgrade.status1.power].",
+        "russian": "Даются [titanite] и [titanskin] х[effect0.upgrade.status1.power].",
+        "portuguese": "Recebe [titanite] e [titanskin] [effect0.upgrade.status1.power].",
+        "chinese": "获得 [titanite] 和 [titanskin] [effect0.upgrade.status1.power]。",
+        "spanish": "Añade [titanite] y [titanskin] [effect0.upgrade.status1.power].",
+        "chinese_traditional": "獲得[titanite]和[titanskin][effect0.upgrade.status1.power]。",
+        "korean": "[titanite] 및 [titanskin] [effect0.upgrade.status1.power] 효과를 획득합니다.",
+        "japanese": "[titanite]と[titanskin] [effect0.upgrade.status1.power]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeTitanite.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeTitanite.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_AddTitanite"
+    }
+  ]
 }

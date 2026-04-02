@@ -1,123 +1,96 @@
 {
-  "id": "SpellUpgradeTraitRemoveConsume",
-  "guid": "4cd37328-eb6e-4c4e-aa61-53492dfe8035",
-  "name": "Eternalstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-2a5666797c241bd5-a6f12936360b9aa43bbb49c9eb2be337-v2",
-    "english": "Eternalstone",
-    "french": "Pierre d'éternité",
-    "german": "Ewigstein",
-    "russian": "Камень вечности",
-    "portuguese": "Pedra da Eternidade",
-    "chinese": "恒常石",
-    "spanish": "Piedra eterna",
-    "chinese_traditional": "永恆石",
-    "korean": "영원석",
-    "japanese": "永遠の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-a0a67b4cd5c78d8a-a6f12936360b9aa43bbb49c9eb2be337-v2",
-    "english": "Upgrade a spell to permanently remove [consume].",
-    "french": "Améliore un sort pour retirer définitivement [consume].",
-    "german": "Verbessere einen Zauber, um [consume] permanent zu entfernen.",
-    "russian": "Улучшите чары, чтобы убрать [consume].",
-    "portuguese": "Melhora um feitiço para remover [consume] permanentemente.",
-    "chinese": "升级一个法术以永久移除[consume]。",
-    "spanish": "Mejora un hechizo para eliminar [consume] permanentemente.",
-    "chinese_traditional": "升級一個法術以永久移除[consume]。",
-    "korean": "주문 업그레이드로 [consume] 속성을 영구 제거합니다.",
-    "japanese": "呪文アップグレード：[consume]を永続的に解除する。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "SoulSavior_SpellUpgradePoolRare",
-    "SpellUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "additionalTooltips": [
+      "id": "SpellUpgradeTraitRemoveConsume",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "SoulSavior_SpellUpgradePoolRare",
+        "SpellUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitExhaustState_TooltipText",
-            "english": "Can only be played once per battle.",
-            "french": "Ne peut être jouée qu'une fois par combat.",
-            "german": "Kann nur einmal pro Kampf gespielt werden.",
-            "russian": "Можно использовать только один раз за бой.",
-            "portuguese": "Só pode ser usada uma vez por batalha.",
-            "chinese": "每场战斗只能使用一次。",
-            "spanish": "Solo puede jugarse una vez por batalla.",
-            "chinese_traditional": "每場戰鬥只能打出一次。",
-            "korean": "전투 중 한 번만 사용할 수 있습니다.",
-            "japanese": "バトルにつき1回のみプレイ可能。"
-          },
-          "titleKey": {
-            "key": "CardTraitExhaustState_CardText",
-            "english": "Consume",
-            "french": "Destruction",
-            "german": "Verbrauch",
-            "russian": "Поглощение",
-            "portuguese": "Consumir",
-            "chinese": "消耗",
-            "spanish": "Consumir",
-            "chinese_traditional": "消耗",
-            "korean": "소모",
-            "japanese": "消費"
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "RemoveConsume",
-        "guid": "84f045a9-3dbe-41fe-9ba5-590dc6f68244",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-e2d379f2ceba9fc7-6c5c2531a6c4d884f991ad593b8f02c2-v2",
-          "english": "Eternalstone",
-          "french": "Pierre d'éternité",
-          "german": "Ewigstein",
-          "russian": "Камень вечности",
-          "portuguese": "Pedra da Eternidade",
-          "chinese": "恒常石",
-          "spanish": "Piedra eterna",
-          "chinese_traditional": "永恆石",
-          "korean": "영원석",
-          "japanese": "永遠の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-57a3c05313a165a4-6c5c2531a6c4d884f991ad593b8f02c2-v2",
-          "english": "Remove [consume].",
-          "french": "Retire [consume].",
-          "german": "[consume] entfernen.",
-          "russian": "Убирает [consume].",
-          "portuguese": "Remove [consume].",
-          "chinese": "移除 [consume]。",
-          "spanish": "Elimina [consume].",
-          "chinese_traditional": "移除[consume]。",
-          "korean": "[consume] 속성을 제거합니다.",
-          "japanese": "[consume]を解除する。"
-        },
-        "filters": [
-          {
-            "id": "OnlyConsume",
-            "requiredCardTraitsOperator": "and",
-            "requiredCardTraits": [
-              "CardTraitExhaustState"
-            ]
-          },
-          {
-            "id": "OnlySpells",
-            "cardType": "spell"
-          }
-        ],
-        "removeTraitUpgrades": [
-          "CardTraitExhaustState"
-        ]
+      "names": {
+        "key": "EnhancerData_nameKey-2a5666797c241bd5-a6f12936360b9aa43bbb49c9eb2be337-v2",
+        "english": "Eternalstone",
+        "french": "Pierre d'éternité",
+        "german": "Ewigstein",
+        "russian": "Камень вечности",
+        "portuguese": "Pedra da Eternidade",
+        "chinese": "恒常石",
+        "spanish": "Piedra eterna",
+        "chinese_traditional": "永恆石",
+        "korean": "영원석",
+        "japanese": "永遠の石"
       },
-      "paramMinInt": 1,
-      "paramMaxInt": 99
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-a0a67b4cd5c78d8a-a6f12936360b9aa43bbb49c9eb2be337-v2",
+        "english": "Upgrade a spell to permanently remove [consume].",
+        "french": "Améliore un sort pour retirer définitivement [consume].",
+        "german": "Verbessere einen Zauber, um [consume] permanent zu entfernen.",
+        "russian": "Улучшите чары, чтобы убрать [consume].",
+        "portuguese": "Melhora um feitiço para remover [consume] permanentemente.",
+        "chinese": "升级一个法术以永久移除[consume]。",
+        "spanish": "Mejora un hechizo para eliminar [consume] permanentemente.",
+        "chinese_traditional": "升級一個法術以永久移除[consume]。",
+        "korean": "주문 업그레이드로 [consume] 속성을 영구 제거합니다.",
+        "japanese": "呪文アップグレード：[consume]を永続的に解除する。"
+      },
+      "relic_effects": [
+        "@SpellUpgradeTraitRemoveConsume.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeTraitRemoveConsume.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "additional_tooltips": [
+        "@SpellUpgradeTraitRemoveConsume.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "RemoveConsume",
+      "param_min_int": 1,
+      "param_max_int": 99
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "SpellUpgradeTraitRemoveConsume.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitExhaustState_TooltipText",
+        "english": "Can only be played once per battle.",
+        "french": "Ne peut être jouée qu'une fois par combat.",
+        "german": "Kann nur einmal pro Kampf gespielt werden.",
+        "russian": "Можно использовать только один раз за бой.",
+        "portuguese": "Só pode ser usada uma vez por batalha.",
+        "chinese": "每场战斗只能使用一次。",
+        "spanish": "Solo puede jugarse una vez por batalla.",
+        "chinese_traditional": "每場戰鬥只能打出一次。",
+        "korean": "전투 중 한 번만 사용할 수 있습니다.",
+        "japanese": "バトルにつき1回のみプレイ可能。"
+      },
+      "titles": {
+        "key": "CardTraitExhaustState_CardText",
+        "english": "Consume",
+        "french": "Destruction",
+        "german": "Verbrauch",
+        "russian": "Поглощение",
+        "portuguese": "Consumir",
+        "chinese": "消耗",
+        "spanish": "Consumir",
+        "chinese_traditional": "消耗",
+        "korean": "소모",
+        "japanese": "消費"
+      }
+    }
+  ]
 }

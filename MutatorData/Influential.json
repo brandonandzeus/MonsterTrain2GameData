@@ -1,37 +1,51 @@
 {
-  "id": "CultLeader",
-  "guid": "80ccdba4-3fa5-487a-8fdf-2dfea52f9541",
-  "name": "Influential",
-  "nameKey": {
-    "key": "MutatorData_nameKey-30b0809d9fb84ffd-9ac56d9df22c220498a4e130bb374c2b-v2",
-    "english": "Influential",
-    "french": "Influence",
-    "german": "Einflussreich",
-    "russian": "Влиятельность",
-    "portuguese": "Influência",
-    "chinese": "有权有势",
-    "spanish": "Influyente",
-    "chinese_traditional": "有影響力",
-    "korean": "막대한 영향력",
-    "japanese": "私を信じよ"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-c9ab0e0bd814282a-9ac56d9df22c220498a4e130bb374c2b-v2",
-    "english": "At start of turn, spawn a Follower unit on a random floor.",
-    "french": "Au début du tour, vous générez un Adepte à un niveau aléatoire.",
-    "german": "Erzeuge beim Start eines Zuges einen Anhänger auf einer zufälligen Ebene.",
-    "russian": "В начале хода на случайном этаже появляется культист.",
-    "portuguese": "No início do turno, convoca uma unidade de Seguidor em um andar aleatório.",
-    "chinese": "回合开始时，在随机层生成一个追随者单位。",
-    "spanish": "Al inicio del turno, genera una unidad Seguidor en un piso aleatorio.",
-    "chinese_traditional": "在回合開始時，在隨機樓層生成一個隨從單位。",
-    "korean": "턴 시작 시, 신도 유닛 하나를 무작위 층에 스폰합니다.",
-    "japanese": "ターンの開始時に、ランダムなフロアに信奉者ユニットを出現させる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectSpawnMonsterOnTurnStart",
-      "paramCharacters": [
+      "id": "CultLeader",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-30b0809d9fb84ffd-9ac56d9df22c220498a4e130bb374c2b-v2",
+        "english": "Influential",
+        "french": "Influence",
+        "german": "Einflussreich",
+        "russian": "Влиятельность",
+        "portuguese": "Influência",
+        "chinese": "有权有势",
+        "spanish": "Influyente",
+        "chinese_traditional": "有影響力",
+        "korean": "막대한 영향력",
+        "japanese": "私を信じよ"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-c9ab0e0bd814282a-9ac56d9df22c220498a4e130bb374c2b-v2",
+        "english": "At start of turn, spawn a Follower unit on a random floor.",
+        "french": "Au début du tour, vous générez un Adepte à un niveau aléatoire.",
+        "german": "Erzeuge beim Start eines Zuges einen Anhänger auf einer zufälligen Ebene.",
+        "russian": "В начале хода на случайном этаже появляется культист.",
+        "portuguese": "No início do turno, convoca uma unidade de Seguidor em um andar aleatório.",
+        "chinese": "回合开始时，在随机层生成一个追随者单位。",
+        "spanish": "Al inicio del turno, genera una unidad Seguidor en un piso aleatorio.",
+        "chinese_traditional": "在回合開始時，在隨機樓層生成一個隨從單位。",
+        "korean": "턴 시작 시, 신도 유닛 하나를 무작위 층에 스폰합니다.",
+        "japanese": "ターンの開始時に、ランダムなフロアに信奉者ユニットを出現させる。"
+      },
+      "relic_effects": [
+        "@CultLeader.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "CultLeader.effects0",
+      "name": "RelicEffectSpawnMonsterOnTurnStart",
+      "param_characters": [
         "MonsterFollower"
       ]
     }

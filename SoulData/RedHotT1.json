@@ -1,112 +1,72 @@
 {
-  "id": "RedHotT1",
-  "guid": "f4f6c7b5-108b-4933-bb70-6f35fc2a7344",
-  "name": "RedHotT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-95a6fdca226fcd2a-c31eaeaadd89c2f4f88e18d21d0006de-v2",
-    "english": "Red Hot",
-    "french": "Ignescence",
-    "german": "Rotglühend",
-    "russian": "Раскаляй добела",
-    "portuguese": "Incandescente",
-    "chinese": "炙热",
-    "spanish": "Rojo vivo",
-    "chinese_traditional": "熾熱",
-    "korean": "붉은 작열",
-    "japanese": "レッド・ホット"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-ef01f1bb853ddd87-c31eaeaadd89c2f4f88e18d21d0006de-v2",
-    "english": "Gain [explosive] and +[effect0.upgrade.bonusdamage] [magicpower].",
-    "french": "Octroie [explosive] et +[effect0.upgrade.bonusdamage] [magicpower].",
-    "german": "Erhalte [explosive] und +[effect0.upgrade.bonusdamage] [magicpower].",
-    "russian": "Дается [explosive] и [magicpower] х[effect0.upgrade.bonusdamage].",
-    "portuguese": "Recebe [explosive] e +[effect0.upgrade.bonusdamage] de [magicpower].",
-    "chinese": "获得 [explosive] 和 +[effect0.upgrade.bonusdamage] [magicpower]。",
-    "spanish": "Añade [explosive] y +[effect0.upgrade.bonusdamage] [magicpower].",
-    "chinese_traditional": "獲得[explosive]和+[effect0.upgrade.bonusdamage][magicpower]。",
-    "korean": "[explosive] 및 +[effect0.upgrade.bonusdamage][magicpower]을 획득합니다.",
-    "japanese": "[explosive]と+[effect0.upgrade.bonusdamage] [magicpower]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "RedHotT1_Upgrade",
-        "guid": "296f0582-b107-45cd-9308-eaaea57cd8e2",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-f0dfc05c7bf805f8-ce1e6acfa8fc94c4ba5d87d3f3517d48-v2",
-          "english": "Red Hot",
-          "french": "Ignescence",
-          "german": "Rotglühend",
-          "russian": "Раскаляй добела",
-          "portuguese": "Incandescente",
-          "chinese": "炙热",
-          "spanish": "Rojo vivo",
-          "chinese_traditional": "熾熱",
-          "korean": "붉은 작열",
-          "japanese": "レッド・ホット"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-2211d5edf1ccd9bb-ce1e6acfa8fc94c4ba5d87d3f3517d48-v2",
-          "english": "Gain [explosive] and +[bonusdamage] [magicpower].",
-          "french": "Octroie [explosive] et <nobr>+[bonusdamage] [magicpower]</nobr>.",
-          "german": "Erhalte [explosive] und +[bonusdamage] [magicpower].",
-          "russian": "Дается [explosive] и [magicpower] х[bonusdamage].",
-          "portuguese": "Recebe [explosive] e +[bonusdamage] de [magicpower].",
-          "chinese": "获得 [explosive] 和 +[bonusdamage] [magicpower]。",
-          "spanish": "Añade [explosive] y +[bonusdamage] [magicpower].",
-          "chinese_traditional": "獲得[explosive]和+[bonusdamage][magicpower]。",
-          "korean": "[explosive] 및 +[bonusdamage][magicpower]을 획득합니다.",
-          "japanese": "[explosive]と+[bonusdamage] [magicpower]を得る。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitDamageOverflow",
-            "paramInt": 2
+      "id": "RedHotT1",
+      "name": "RedHotT1",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-dbc30b51e4418a09-c31eaeaadd89c2f4f88e18d21d0006de-v2",
+                "english": "Defeat Lifemother while playing Pyreborne to unlock.",
+                "french": "Battez Mère Nature en jouant les Draconides pour déverrouiller.",
+                "german": "Spiele die Höllenglutkinder und besiege die Lebensmutter, um freizuschalten.",
+                "russian": "Чтобы разблокировать, победите Мать-природу, играя за Пеклорожденных.",
+                "portuguese": "Derrote a Genetriz jogando com os Píricos para desbloquear.",
+                "chinese": "用薪龙族击败生命之母以解锁。",
+                "spanish": "Derrota a la Madre Vida con los Hijos de la Pira para desbloquear.",
+                "chinese_traditional": "遊玩火焰之子時擊敗生命之母以解鎖。",
+                "korean": "화로의 후예 플레이 중 생명의 어머니를 처치하세요.",
+                "japanese": "火竜族でのプレイでライフマザーを倒してアンロック。"
+              },
+              "unlock_condition": "soul_kill_lifemother_using_pyreborne",
+              "param_int": 1
+            },
+            "tier_level": 1,
+            "next_tier": "RedHotT2"
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyDamageCard",
-            "requiredCardEffectsOperator": "or",
-            "requiredCardEffects": [
-              "CardEffectDamage",
-              "CardEffectDamageByPercentRemainingHealth",
-              "CardEffectDamageByUnitsKilled",
-              "CardEffectDamagePerHp",
-              "CardEffectDamagePerSourceAttack",
-              "CardEffectDamagePerTargetAttack",
-              "CardEffectDamageWithTrample",
-              "CardEffectHealAndDamageRelative"
-            ]
-          }
-        ],
-        "isRegionRunUpgrade": true,
-        "excludeFromClones": true,
-        "bonusDamage": 5,
-        "bonusHeal": 5
-      }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-95a6fdca226fcd2a-c31eaeaadd89c2f4f88e18d21d0006de-v2",
+        "english": "Red Hot",
+        "french": "Ignescence",
+        "german": "Rotglühend",
+        "russian": "Раскаляй добела",
+        "portuguese": "Incandescente",
+        "chinese": "炙热",
+        "spanish": "Rojo vivo",
+        "chinese_traditional": "熾熱",
+        "korean": "붉은 작열",
+        "japanese": "レッド・ホット"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-ef01f1bb853ddd87-c31eaeaadd89c2f4f88e18d21d0006de-v2",
+        "english": "Gain [explosive] and +[effect0.upgrade.bonusdamage] [magicpower].",
+        "french": "Octroie [explosive] et +[effect0.upgrade.bonusdamage] [magicpower].",
+        "german": "Erhalte [explosive] und +[effect0.upgrade.bonusdamage] [magicpower].",
+        "russian": "Дается [explosive] и [magicpower] х[effect0.upgrade.bonusdamage].",
+        "portuguese": "Recebe [explosive] e +[effect0.upgrade.bonusdamage] de [magicpower].",
+        "chinese": "获得 [explosive] 和 +[effect0.upgrade.bonusdamage] [magicpower]。",
+        "spanish": "Añade [explosive] y +[effect0.upgrade.bonusdamage] [magicpower].",
+        "chinese_traditional": "獲得[explosive]和+[effect0.upgrade.bonusdamage][magicpower]。",
+        "korean": "[explosive] 및 +[effect0.upgrade.bonusdamage][magicpower]을 획득합니다.",
+        "japanese": "[explosive]と+[effect0.upgrade.bonusdamage] [magicpower]を得る。"
+      },
+      "relic_effects": [
+        "@RedHotT1.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-dbc30b51e4418a09-c31eaeaadd89c2f4f88e18d21d0006de-v2",
-      "english": "Defeat Lifemother while playing Pyreborne to unlock.",
-      "french": "Battez Mère Nature en jouant les Draconides pour déverrouiller.",
-      "german": "Spiele die Höllenglutkinder und besiege die Lebensmutter, um freizuschalten.",
-      "russian": "Чтобы разблокировать, победите Мать-природу, играя за Пеклорожденных.",
-      "portuguese": "Derrote a Genetriz jogando com os Píricos para desbloquear.",
-      "chinese": "用薪龙族击败生命之母以解锁。",
-      "spanish": "Derrota a la Madre Vida con los Hijos de la Pira para desbloquear.",
-      "chinese_traditional": "遊玩火焰之子時擊敗生命之母以解鎖。",
-      "korean": "화로의 후예 플레이 중 생명의 어머니를 처치하세요.",
-      "japanese": "火竜族でのプレイでライフマザーを倒してアンロック。"
-    },
-    "unlockCondition": "soul_kill_lifemother_using_pyreborne",
-    "paramInt": 1
-  },
-  "tierLevel": 1,
-  "nextTier": "RedHotT2"
+  "relic_effects": [
+    {
+      "id": "RedHotT1.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "RedHotT1_Upgrade"
+    }
+  ]
 }

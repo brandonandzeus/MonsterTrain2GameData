@@ -1,40 +1,54 @@
 {
-  "id": "PurgeChampion",
-  "guid": "4bca64b3-2976-45b9-b49b-9f6368d5dab3",
-  "name": "Fallen Champion",
-  "nameKey": {
-    "key": "MutatorData_nameKey-85ce4d5c808e569b-629add7d2c2dced48856c4f2cb4f19a6-v2",
-    "english": "Fallen Champion",
-    "french": "Champion déchu",
-    "german": "Gefallener Champion",
-    "russian": "Падший герой",
-    "portuguese": "Campeão Caído",
-    "chinese": "阵亡的勇者",
-    "spanish": "Campeón caído",
-    "chinese_traditional": "墮落勇士",
-    "korean": "타락한 영웅",
-    "japanese": "チャンピオン追放"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-ca5624afbe470ea6-629add7d2c2dced48856c4f2cb4f19a6-v2",
-    "english": "Remove the Champion from your starting deck.",
-    "french": "Retirez le champion de votre deck de départ.",
-    "german": "Entferne den Champion aus deinem Anfangsdeck.",
-    "russian": "Убирает Героя из вашей начальной колоды.",
-    "portuguese": "Remova o Campeão do seu deck inicial.",
-    "chinese": "将你的勇者从初始卡组中移除。",
-    "spanish": "Elimina el campeón de tu mazo inicial.",
-    "chinese_traditional": "從初始牌組中移除勇士。",
-    "korean": "초기 덱에서 영웅을 제거합니다.",
-    "japanese": "開始デッキからチャンピオンを取り除く。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectPurgeChampion"
+      "id": "PurgeChampion",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -10,
+            "tags": [
+              "champion"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-85ce4d5c808e569b-629add7d2c2dced48856c4f2cb4f19a6-v2",
+        "english": "Fallen Champion",
+        "french": "Champion déchu",
+        "german": "Gefallener Champion",
+        "russian": "Падший герой",
+        "portuguese": "Campeão Caído",
+        "chinese": "阵亡的勇者",
+        "spanish": "Campeón caído",
+        "chinese_traditional": "墮落勇士",
+        "korean": "타락한 영웅",
+        "japanese": "チャンピオン追放"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-ca5624afbe470ea6-629add7d2c2dced48856c4f2cb4f19a6-v2",
+        "english": "Remove the Champion from your starting deck.",
+        "french": "Retirez le champion de votre deck de départ.",
+        "german": "Entferne den Champion aus deinem Anfangsdeck.",
+        "russian": "Убирает Героя из вашей начальной колоды.",
+        "portuguese": "Remova o Campeão do seu deck inicial.",
+        "chinese": "将你的勇者从初始卡组中移除。",
+        "spanish": "Elimina el campeón de tu mazo inicial.",
+        "chinese_traditional": "從初始牌組中移除勇士。",
+        "korean": "초기 덱에서 영웅을 제거합니다.",
+        "japanese": "開始デッキからチャンピオンを取り除く。"
+      },
+      "relic_effects": [
+        "@PurgeChampion.effects0"
+      ]
     }
   ],
-  "boonValue": -10,
-  "tags": [
-    "champion"
+  "relic_effects": [
+    {
+      "id": "PurgeChampion.effects0",
+      "name": "RelicEffectPurgeChampion"
+    }
   ]
 }

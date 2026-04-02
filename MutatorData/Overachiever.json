@@ -1,47 +1,61 @@
 {
-  "id": "SoulSavior_Region1Complete_2",
-  "guid": "7e95fa48-0bf4-4f40-895d-6064ee25d169",
-  "name": "Overachiever",
-  "nameKey": {
-    "key": "MutatorData_nameKey-f95c3cbe357b0132-b81f4d2ab04275242b0e4fe423b75990-v2",
-    "english": "Overachiever",
-    "french": "Prodige",
-    "german": "Ehrgeizling",
-    "russian": "Достигатор",
-    "portuguese": "Perfeccionista",
-    "chinese": "成就超常者",
-    "spanish": "Excelencia",
-    "chinese_traditional": "過度成就者",
-    "korean": "과잉 성취자",
-    "japanese": "実力以上"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-e39009d3bc024568-b81f4d2ab04275242b0e4fe423b75990-v2",
-    "english": "Bosses enter with [burst] [effect0.status0.power].",
-    "french": "Les boss entrent avec [burst] [effect0.status0.power].",
-    "german": "Bosse erscheinen mit [burst] [effect0.status0.power].",
-    "russian": "Боссы при появлении получают [burst] х[effect0.status0.power].",
-    "portuguese": "Os chefões entram com [burst] [effect0.status0.power].",
-    "chinese": "首领进入战斗时获得 [burst] [effect0.status0.power]。",
-    "spanish": "Los jefes entran con [burst] [effect0.status0.power].",
-    "chinese_traditional": "首領進場時帶有[burst][effect0.status0.power]。",
-    "korean": "보스들이 [burst] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "ボスが[burst] [effect0.status0.power]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_Region1Complete_2",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "burst",
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-f95c3cbe357b0132-b81f4d2ab04275242b0e4fe423b75990-v2",
+        "english": "Overachiever",
+        "french": "Prodige",
+        "german": "Ehrgeizling",
+        "russian": "Достигатор",
+        "portuguese": "Perfeccionista",
+        "chinese": "成就超常者",
+        "spanish": "Excelencia",
+        "chinese_traditional": "過度成就者",
+        "korean": "과잉 성취자",
+        "japanese": "実力以上"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-e39009d3bc024568-b81f4d2ab04275242b0e4fe423b75990-v2",
+        "english": "Bosses enter with [burst] [effect0.status0.power].",
+        "french": "Les boss entrent avec [burst] [effect0.status0.power].",
+        "german": "Bosse erscheinen mit [burst] [effect0.status0.power].",
+        "russian": "Боссы при появлении получают [burst] х[effect0.status0.power].",
+        "portuguese": "Os chefões entram com [burst] [effect0.status0.power].",
+        "chinese": "首领进入战斗时获得 [burst] [effect0.status0.power]。",
+        "spanish": "Los jefes entran con [burst] [effect0.status0.power].",
+        "chinese_traditional": "首領進場時帶有[burst][effect0.status0.power]。",
+        "korean": "보스들이 [burst] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "ボスが[burst] [effect0.status0.power]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region1Complete_2.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region1Complete_2.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "burst",
           "count": 2
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramCharacterSubtype": "SubtypesData_BossAll"
+      "param_source_team": "heroes",
+      "param_subtype": "SubtypesData_BossAll"
     }
-  ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

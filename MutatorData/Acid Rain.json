@@ -1,46 +1,64 @@
 {
-  "id": "DamageAllUnitsEndOfTurn",
-  "guid": "088e5745-7127-4a2f-b041-8d48438d23b1",
-  "name": "Acid Rain",
-  "nameKey": {
-    "key": "MutatorData_nameKey-0a27fab2a6f12df4-f8dba8b5d26da8942a7dd232bb2d0b7e-v2",
-    "english": "Acid Rain",
-    "french": "Pluie acide",
-    "german": "Säureregen",
-    "russian": "Кислотный дождь",
-    "portuguese": "Chuva Ácida",
-    "chinese": "酸雨",
-    "spanish": "Lluvia ácida",
-    "chinese_traditional": "酸雨",
-    "korean": "산성비",
-    "japanese": "酸性雨"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-cd7c10cfa452a1e0-f8dba8b5d26da8942a7dd232bb2d0b7e-v2",
-    "english": "Deal [effect0.power] damage to all units after combat.",
-    "french": "Inflige <nobr>[effect0.power] DGT</nobr> à toutes les unités à la fin du combat.",
-    "german": "Füge allen Einheiten nach dem Kampf [effect0.power] Schaden zu.",
-    "russian": "Наносит [effect0.power] урона всем бойцам после битвы.",
-    "portuguese": "Cause [effect0.power] de dano a todas as unidades após o combate.",
-    "chinese": "战斗结束后，对所有单位造成 [effect0.power] 点伤害。",
-    "spanish": "Inflige [effect0.power] de daño a todas las unidades tras el combate.",
-    "chinese_traditional": "戰鬥後對所有單位造成[effect0.power]點傷害。",
-    "korean": "교전 후 모든 유닛에 [effect0.power]의 피해를 줍니다.",
-    "japanese": "戦闘後にすべてのユニットに[effect0.power]のダメージを与える。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectDamageOrHealUnitsEndOfTurn",
-      "appliedVfx": {
-        "vfxPrefabLeft": "FX_ShadowImpact_PS",
-        "spawnLocation": "character_center"
+      "id": "DamageAllUnitsEndOfTurn",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3,
+            "tags": [
+              "acidrain"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-0a27fab2a6f12df4-f8dba8b5d26da8942a7dd232bb2d0b7e-v2",
+        "english": "Acid Rain",
+        "french": "Pluie acide",
+        "german": "Säureregen",
+        "russian": "Кислотный дождь",
+        "portuguese": "Chuva Ácida",
+        "chinese": "酸雨",
+        "spanish": "Lluvia ácida",
+        "chinese_traditional": "酸雨",
+        "korean": "산성비",
+        "japanese": "酸性雨"
       },
-      "paramInt": 2
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-cd7c10cfa452a1e0-f8dba8b5d26da8942a7dd232bb2d0b7e-v2",
+        "english": "Deal [effect0.power] damage to all units after combat.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> à toutes les unités à la fin du combat.",
+        "german": "Füge allen Einheiten nach dem Kampf [effect0.power] Schaden zu.",
+        "russian": "Наносит [effect0.power] урона всем бойцам после битвы.",
+        "portuguese": "Cause [effect0.power] de dano a todas as unidades após o combate.",
+        "chinese": "战斗结束后，对所有单位造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño a todas las unidades tras el combate.",
+        "chinese_traditional": "戰鬥後對所有單位造成[effect0.power]點傷害。",
+        "korean": "교전 후 모든 유닛에 [effect0.power]의 피해를 줍니다.",
+        "japanese": "戦闘後にすべてのユニットに[effect0.power]のダメージを与える。"
+      },
+      "relic_effects": [
+        "@DamageAllUnitsEndOfTurn.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true,
-  "boonValue": -3,
-  "tags": [
-    "acidrain"
+  "relic_effects": [
+    {
+      "id": "DamageAllUnitsEndOfTurn.effects0",
+      "name": "RelicEffectDamageOrHealUnitsEndOfTurn",
+      "applied_vfx": "@DamageAllUnitsEndOfTurn.effects0.appliedVfx",
+      "param_int": 2
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "DamageAllUnitsEndOfTurn.effects0.appliedVfx",
+      "vfx_prefab_left": "FX_ShadowImpact_PS",
+      "spawn_location": "character_center"
+    }
   ]
 }

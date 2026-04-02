@@ -1,54 +1,64 @@
 {
-  "id": "FreeEquipment",
-  "guid": "d844dff0-055d-4df7-ac03-ef157fc96b7e",
-  "name": "Enchanted Armory",
-  "nameKey": {
-    "key": "MutatorData_nameKey-0c847482b24342fe-040f8919decdaed4aa1eba6a5ef55751-v2",
-    "english": "Enchanted Armory",
-    "french": "Armurerie enchantée",
-    "german": "Verzauberte Waffenkammer",
-    "russian": "Щедрый арсенал",
-    "portuguese": "Arsenal Encantado",
-    "chinese": "附魔军械库",
-    "spanish": "Arsenal encantado",
-    "chinese_traditional": "附魔軍械庫",
-    "korean": "강화 무기고",
-    "japanese": "魔法の武器庫"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-79fcc7754583b49d-040f8919decdaed4aa1eba6a5ef55751-v2",
-    "english": "Equipment cards cost 0[ember]. Add [effect1.power] random Equipment cards to your starting deck.",
-    "french": "Les cartes d'équipement coûtent 0[ember]. Ajoute [effect1.power] cartes d'équipement aléatoires à votre deck de départ.",
-    "german": "Ausrüstungskarten kosten 0[ember]. Füge [effect1.power] zufällige Ausrüstungskarten zu deinem Anfangsdeck hinzu.",
-    "russian": "Карты снаряжения стоят 0[ember]. Добавляет [effect1.power] шт. случайных карт снаряжения в начальную колоду.",
-    "portuguese": "As cartas de Equipamento custam 0[ember]. Adicione [effect1.power] cartas de Equipamento aleatórias ao seu deck inicial.",
-    "chinese": "装备卡费用为0[ember]。在初始卡组中加入 [effect1.power] 张装备卡。",
-    "spanish": "Las cartas de equipo cuestan 0[ember]. Añade [effect1.power] cartas de equipo aleatorias a tu mazo inicial.",
-    "chinese_traditional": "裝備卡牌費用0[ember]。在初始牌組中添加[effect1.power]張隨機裝備卡牌。",
-    "korean": "장비 카드의 비용이 0[ember]이 됩니다. 초기 덱에 무작위 장비 카드 [effect1.power]장을 추가합니다.",
-    "japanese": "装備品カードのコストが0[ember]になる。開始デッキに[effect1.power]枚のランダムな装備品カードを追加する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardTypeCost",
-      "paramCardType": "equipment",
-      "paramInt": -99
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "FreeEquipmentMutatorPool"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "FreeEquipmentMutatorPool"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "FreeEquipmentMutatorPool"
+      "id": "FreeEquipment",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 10,
+            "tags": [
+              "spellcost"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-0c847482b24342fe-040f8919decdaed4aa1eba6a5ef55751-v2",
+        "english": "Enchanted Armory",
+        "french": "Armurerie enchantée",
+        "german": "Verzauberte Waffenkammer",
+        "russian": "Щедрый арсенал",
+        "portuguese": "Arsenal Encantado",
+        "chinese": "附魔军械库",
+        "spanish": "Arsenal encantado",
+        "chinese_traditional": "附魔軍械庫",
+        "korean": "강화 무기고",
+        "japanese": "魔法の武器庫"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-79fcc7754583b49d-040f8919decdaed4aa1eba6a5ef55751-v2",
+        "english": "Equipment cards cost 0[ember]. Add [effect1.power] random Equipment cards to your starting deck.",
+        "french": "Les cartes d'équipement coûtent 0[ember]. Ajoute [effect1.power] cartes d'équipement aléatoires à votre deck de départ.",
+        "german": "Ausrüstungskarten kosten 0[ember]. Füge [effect1.power] zufällige Ausrüstungskarten zu deinem Anfangsdeck hinzu.",
+        "russian": "Карты снаряжения стоят 0[ember]. Добавляет [effect1.power] шт. случайных карт снаряжения в начальную колоду.",
+        "portuguese": "As cartas de Equipamento custam 0[ember]. Adicione [effect1.power] cartas de Equipamento aleatórias ao seu deck inicial.",
+        "chinese": "装备卡费用为0[ember]。在初始卡组中加入 [effect1.power] 张装备卡。",
+        "spanish": "Las cartas de equipo cuestan 0[ember]. Añade [effect1.power] cartas de equipo aleatorias a tu mazo inicial.",
+        "chinese_traditional": "裝備卡牌費用0[ember]。在初始牌組中添加[effect1.power]張隨機裝備卡牌。",
+        "korean": "장비 카드의 비용이 0[ember]이 됩니다. 초기 덱에 무작위 장비 카드 [effect1.power]장을 추가합니다.",
+        "japanese": "装備品カードのコストが0[ember]になる。開始デッキに[effect1.power]枚のランダムな装備品カードを追加する。"
+      },
+      "relic_effects": [
+        "@FreeEquipment.effects0",
+        "@FreeEquipment.effects1",
+        "@FreeEquipment.effects1",
+        "@FreeEquipment.effects1"
+      ]
     }
   ],
-  "boonValue": 10,
-  "tags": [
-    "spellcost"
+  "relic_effects": [
+    {
+      "id": "FreeEquipment.effects0",
+      "name": "RelicEffectModifyCardTypeCost",
+      "param_card_type": "equipment",
+      "param_int": -99
+    },
+    {
+      "id": "FreeEquipment.effects1",
+      "name": "RelicEffectAddCardsStartOfRun",
+      "param_card_pool": "FreeEquipmentMutatorPool"
+    }
   ]
 }

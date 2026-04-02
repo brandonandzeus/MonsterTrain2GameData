@@ -1,40 +1,54 @@
 {
-  "id": "Echoes_FriendlyUnitsHalfAttack",
-  "guid": "8af5b701-3d86-4b69-8117-758e1f4cb16d",
-  "name": "Uncoordinated",
-  "nameKey": {
-    "key": "MutatorData_nameKey-c4775029846cc338-a35f7770cb1de6b479813e2ec928e48e-v2",
-    "english": "Uncoordinated",
-    "french": "Manque de coordination",
-    "german": "Unkoordiniert",
-    "russian": "Плохая координация",
-    "portuguese": "Sem Coordenação",
-    "chinese": "不协调",
-    "spanish": "Descoordinación",
-    "chinese_traditional": "不協調",
-    "korean": "서투름",
-    "japanese": "連携不足"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-243e2ad94f5bcc9a-a35f7770cb1de6b479813e2ec928e48e-v2",
-    "english": "Friendly non-Champion units' [attack] is halved.",
-    "french": "L'[attack] des unités alliées hors champions est réduite de moitié.",
-    "german": "[attack] von verbündeten Nicht-Champion-Einheiten wird halbiert.",
-    "russian": "Урон [attack] союзников не-героев снижен вдвое.",
-    "portuguese": "O [attack] das unidades aliadas que não sejam Campeões é reduzido pela metade.",
-    "chinese": "友方非勇者单位的[attack]减半。",
-    "spanish": "El [attack] de las unidades aliadas que no son campeones se reduce a la mitad.",
-    "chinese_traditional": "友方非勇士單位的[attack]減半。",
-    "korean": "아군 영웅 외 유닛들의 [attack]이 절반으로 감소합니다.",
-    "japanese": "味方の非チャンピオンユニットの[attack]が半減する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectMultiplyAttackLate",
-      "paramSourceTeam": "monsters",
-      "paramFloat": 0.5,
-      "paramBool": true
+      "id": "Echoes_FriendlyUnitsHalfAttack",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -5
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-c4775029846cc338-a35f7770cb1de6b479813e2ec928e48e-v2",
+        "english": "Uncoordinated",
+        "french": "Manque de coordination",
+        "german": "Unkoordiniert",
+        "russian": "Плохая координация",
+        "portuguese": "Sem Coordenação",
+        "chinese": "不协调",
+        "spanish": "Descoordinación",
+        "chinese_traditional": "不協調",
+        "korean": "서투름",
+        "japanese": "連携不足"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-243e2ad94f5bcc9a-a35f7770cb1de6b479813e2ec928e48e-v2",
+        "english": "Friendly non-Champion units' [attack] is halved.",
+        "french": "L'[attack] des unités alliées hors champions est réduite de moitié.",
+        "german": "[attack] von verbündeten Nicht-Champion-Einheiten wird halbiert.",
+        "russian": "Урон [attack] союзников не-героев снижен вдвое.",
+        "portuguese": "O [attack] das unidades aliadas que não sejam Campeões é reduzido pela metade.",
+        "chinese": "友方非勇者单位的[attack]减半。",
+        "spanish": "El [attack] de las unidades aliadas que no son campeones se reduce a la mitad.",
+        "chinese_traditional": "友方非勇士單位的[attack]減半。",
+        "korean": "아군 영웅 외 유닛들의 [attack]이 절반으로 감소합니다.",
+        "japanese": "味方の非チャンピオンユニットの[attack]が半減する。"
+      },
+      "relic_effects": [
+        "@Echoes_FriendlyUnitsHalfAttack.effects0"
+      ]
     }
   ],
-  "boonValue": -5
+  "relic_effects": [
+    {
+      "id": "Echoes_FriendlyUnitsHalfAttack.effects0",
+      "name": "RelicEffectMultiplyAttackLate",
+      "param_source_team": "monsters",
+      "param_float": 0.5,
+      "param_bool": true
+    }
+  ]
 }

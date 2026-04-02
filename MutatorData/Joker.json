@@ -1,60 +1,78 @@
 {
-  "id": "SoulSavior_Region3Complete_1",
-  "guid": "c2ed2ef8-bbc0-443c-a068-31bda0b65ae2",
-  "name": "Joker",
-  "nameKey": {
-    "key": "MutatorData_nameKey-3d0f56d76709a8ac-ffb9496c4e5a28b4d83eadfe824c05cc-v2",
-    "english": "Joker",
-    "french": "Joker",
-    "german": "Joker",
-    "russian": "Джокер",
-    "portuguese": "Piadista",
-    "chinese": "小丑",
-    "spanish": "Picardía",
-    "chinese_traditional": "小丑",
-    "korean": "조커",
-    "japanese": "ジョーカー"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-ee4b0fb6e64cb3df-ffb9496c4e5a28b4d83eadfe824c05cc-v2",
-    "english": "At the start of battle, spawn a Jeermask unit on each floor.",
-    "french": "Au début de la bataille, générez un Masque huant à chaque niveau.",
-    "german": "Zu Beginn des Kampfes erscheint eine Spottmaske auf jeder Ebene.",
-    "russian": "В начале боя на каждом этаже появляется Пересмешник.",
-    "portuguese": "No início da batalha, convoca uma unidade de Máscara da Zombaria em cada andar.",
-    "chinese": "战斗开始时，在每层生成一个嘲笑面具单位。",
-    "spanish": "Al inicio de la batalla, genera una unidad Máscara burlona en cada piso.",
-    "chinese_traditional": "在戰鬥開始時，在每個樓層生成一個嘲諷面具單位。",
-    "korean": "전투가 시작될 때, 각 층에 조롱 가면 유닛 하나를 스폰합니다.",
-    "japanese": "バトルの開始時、各フロアにジーアマスクユニットが出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitStartOfCombat",
-      "paramSourceTeam": "heroes",
-      "paramInt": 2,
-      "paramCharacters": [
+      "id": "SoulSavior_Region3Complete_1",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-3d0f56d76709a8ac-ffb9496c4e5a28b4d83eadfe824c05cc-v2",
+        "english": "Joker",
+        "french": "Joker",
+        "german": "Joker",
+        "russian": "Джокер",
+        "portuguese": "Piadista",
+        "chinese": "小丑",
+        "spanish": "Picardía",
+        "chinese_traditional": "小丑",
+        "korean": "조커",
+        "japanese": "ジョーカー"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-ee4b0fb6e64cb3df-ffb9496c4e5a28b4d83eadfe824c05cc-v2",
+        "english": "At the start of battle, spawn a Jeermask unit on each floor.",
+        "french": "Au début de la bataille, générez un Masque huant à chaque niveau.",
+        "german": "Zu Beginn des Kampfes erscheint eine Spottmaske auf jeder Ebene.",
+        "russian": "В начале боя на каждом этаже появляется Пересмешник.",
+        "portuguese": "No início da batalha, convoca uma unidade de Máscara da Zombaria em cada andar.",
+        "chinese": "战斗开始时，在每层生成一个嘲笑面具单位。",
+        "spanish": "Al inicio de la batalla, genera una unidad Máscara burlona en cada piso.",
+        "chinese_traditional": "在戰鬥開始時，在每個樓層生成一個嘲諷面具單位。",
+        "korean": "전투가 시작될 때, 각 층에 조롱 가면 유닛 하나를 스폰합니다.",
+        "japanese": "バトルの開始時、各フロアにジーアマスクユニットが出現する。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region3Complete_1.effects0",
+        "@SoulSavior_Region3Complete_1.effects1",
+        "@SoulSavior_Region3Complete_1.effects2"
+      ],
+      "disallow_in_deployment": true
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region3Complete_1.effects0",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_source_team": "heroes",
+      "param_int": 2,
+      "param_characters": [
         "R3_Horde_T1_Decoy"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitStartOfCombat",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1,
-      "paramCharacters": [
+      "id": "SoulSavior_Region3Complete_1.effects1",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_source_team": "heroes",
+      "param_int": 1,
+      "param_characters": [
         "R3_Horde_T1_Decoy"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitStartOfCombat",
-      "paramSourceTeam": "heroes",
-      "paramCharacters": [
+      "id": "SoulSavior_Region3Complete_1.effects2",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_source_team": "heroes",
+      "param_characters": [
         "R3_Horde_T1_Decoy"
       ]
     }
-  ],
-  "disallowInDeploymentPhase": true,
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

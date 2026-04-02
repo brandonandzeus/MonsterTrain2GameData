@@ -1,32 +1,40 @@
 {
-  "id": "SpellDuplicator",
-  "guid": "584ed916-e6b5-4483-b9b7-be25f730b45e",
-  "name": "Duplicate Spell",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-6f09cd895f57fd26-39b7a88463939d94ca64dc76b433d3a0-v2",
-    "english": "Duplicate Spell",
-    "french": "Dupliquer un sort",
-    "german": "Kopiere einen Zauber",
-    "russian": "Удвоение чар",
-    "portuguese": "Duplicar Feitiço",
-    "chinese": "复制法术",
-    "spanish": "Duplicar hechizo",
-    "chinese_traditional": "複製法術",
-    "korean": "주문 복제",
-    "japanese": "二重呪文"
-  },
-  "rarity": "rare",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardDuplicator",
-      "paramCardFilter": {
-        "id": "ExcludeChampions",
-        "excludedSubtypesOperator": "and",
-        "excludedSubtypes": [
-          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-        ]
+      "id": "SpellDuplicator",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare"
+          }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-6f09cd895f57fd26-39b7a88463939d94ca64dc76b433d3a0-v2",
+        "english": "Duplicate Spell",
+        "french": "Dupliquer un sort",
+        "german": "Kopiere einen Zauber",
+        "russian": "Удвоение чар",
+        "portuguese": "Duplicar Feitiço",
+        "chinese": "复制法术",
+        "spanish": "Duplicar hechizo",
+        "chinese_traditional": "複製法術",
+        "korean": "주문 복제",
+        "japanese": "二重呪文"
       },
-      "paramInt": 1
+      "relic_effects": [
+        "@SpellDuplicator.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SpellDuplicator.effects0",
+      "name": "RelicEffectCardDuplicator",
+      "param_card_filter": "@SpellDuplicator.effects0.paramCardFilter",
+      "param_int": 1
     }
   ]
 }

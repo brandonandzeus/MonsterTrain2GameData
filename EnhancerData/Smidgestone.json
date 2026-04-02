@@ -1,113 +1,93 @@
 {
-  "id": "UnitUpgradeMakeTiny",
-  "guid": "1a629876-b068-4f06-b551-49aa89d0c993",
-  "name": "Smidgestone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-07501b03b7a28c7e-9289030d8a2e8de458dc5e5142d075a4-v2",
-    "english": "Smidgestone",
-    "french": "Pierre de rétrécissement",
-    "german": "Winzstein",
-    "russian": "Карликовый камень",
-    "portuguese": "Pedra Pequena",
-    "chinese": "小石头",
-    "spanish": "Piedra mínima",
-    "chinese_traditional": "碎石",
-    "korean": "조약돌",
-    "japanese": "小型化の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-9491677cd055ee7f-9289030d8a2e8de458dc5e5142d075a4-v2",
-    "english": "Reduce [capacity] to 1.",
-    "french": "Réduit [capacity] à 1.",
-    "german": "Reduziere [capacity] auf 1.",
-    "russian": "Уменьшает [capacity] до 1.",
-    "portuguese": "Reduz a [capacity] para 1.",
-    "chinese": "将 [capacity] 降为1。",
-    "spanish": "Reduce su [capacity] a 1.",
-    "chinese_traditional": "減少[capacity]至1。",
-    "korean": "[capacity]이 1로 감소합니다.",
-    "japanese": "[capacity]を1に減少する。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "additionalTooltips": [
+      "id": "UnitUpgradeMakeTiny",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "Capacity_TooltipText",
-            "english": "Units can only be summoned on a floor if it has enough capacity.",
-            "french": "Les unités ne peuvent être invoquées à un niveau que s'il dispose d'une capacité suffisante.",
-            "german": "Einheiten können nur in Ebenen mit genug Kapazität gerufen werden.",
-            "russian": "Бойцов можно призвать на этаж только в том случае, если там есть место.",
-            "portuguese": "Unidades só podem ser invocadas em um andar se houver espaço suficiente.",
-            "chinese": "只有当该层有足够大的容量时，才能召唤单位。",
-            "spanish": "Solo puedes invocar unidades en un piso si tiene capacidad suficiente.",
-            "chinese_traditional": "只有在樓層有足夠容量的情況下，單位才能被召喚到該樓層。",
-            "korean": "객실 내에 충분한 수용량이 있어야 유닛을 소환할 수 있습니다.",
-            "japanese": "キャパシティが足りないとユニットをフロアに召喚することはできない。"
-          },
-          "titleKey": {
-            "key": "Capacity_TooltipTitle",
-            "english": "[capacity] Capacity",
-            "french": "[capacity] Capacité",
-            "german": "[capacity] Kapazität",
-            "russian": "[capacity] Размеры",
-            "portuguese": "[capacity] Capacidade",
-            "chinese": "[capacity] 容量",
-            "spanish": "Capacidad [capacity]",
-            "chinese_traditional": "[capacity]容量",
-            "korean": "[capacity] 수용량",
-            "japanese": "[capacity] キャパシティ"
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "MakeOneCapacity",
-        "guid": "7127098b-96cb-445b-a15a-1293bcd8125c",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-136cc25be8dff9fc-61dd64dad333a094482e7e88222d2ec6-v2",
-          "english": "Smidgestone",
-          "french": "Pierre de rétrécissement",
-          "german": "Winzstein",
-          "russian": "Карликовый камень",
-          "portuguese": "Pedra Pequena",
-          "chinese": "小石头",
-          "spanish": "Piedra mínima",
-          "chinese_traditional": "碎石",
-          "korean": "조약돌",
-          "japanese": "小型化の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-fbefe6aeb9286446-61dd64dad333a094482e7e88222d2ec6-v2",
-          "english": "1[capacity].",
-          "french": "1[capacity].",
-          "german": "1[capacity]",
-          "russian": "1[capacity].",
-          "portuguese": "1[capacity].",
-          "chinese": "1[capacity]。",
-          "spanish": "1[capacity].",
-          "chinese_traditional": "1[capacity]。",
-          "korean": "1[capacity].",
-          "japanese": "1[capacity]。"
-        },
-        "filters": [
-          {
-            "id": "ExcludeSmallest",
-            "excludedSizes": [
-              1
-            ]
-          }
-        ],
-        "bonusSize": -99
-      }
+      "names": {
+        "key": "EnhancerData_nameKey-07501b03b7a28c7e-9289030d8a2e8de458dc5e5142d075a4-v2",
+        "english": "Smidgestone",
+        "french": "Pierre de rétrécissement",
+        "german": "Winzstein",
+        "russian": "Карликовый камень",
+        "portuguese": "Pedra Pequena",
+        "chinese": "小石头",
+        "spanish": "Piedra mínima",
+        "chinese_traditional": "碎石",
+        "korean": "조약돌",
+        "japanese": "小型化の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-9491677cd055ee7f-9289030d8a2e8de458dc5e5142d075a4-v2",
+        "english": "Reduce [capacity] to 1.",
+        "french": "Réduit [capacity] à 1.",
+        "german": "Reduziere [capacity] auf 1.",
+        "russian": "Уменьшает [capacity] до 1.",
+        "portuguese": "Reduz a [capacity] para 1.",
+        "chinese": "将 [capacity] 降为1。",
+        "spanish": "Reduce su [capacity] a 1.",
+        "chinese_traditional": "減少[capacity]至1。",
+        "korean": "[capacity]이 1로 감소합니다.",
+        "japanese": "[capacity]を1に減少する。"
+      },
+      "relic_effects": [
+        "@UnitUpgradeMakeTiny.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeMakeTiny.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "additional_tooltips": [
+        "@UnitUpgradeMakeTiny.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "MakeOneCapacity"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "UnitUpgradeMakeTiny.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "Capacity_TooltipText",
+        "english": "Units can only be summoned on a floor if it has enough capacity.",
+        "french": "Les unités ne peuvent être invoquées à un niveau que s'il dispose d'une capacité suffisante.",
+        "german": "Einheiten können nur in Ebenen mit genug Kapazität gerufen werden.",
+        "russian": "Бойцов можно призвать на этаж только в том случае, если там есть место.",
+        "portuguese": "Unidades só podem ser invocadas em um andar se houver espaço suficiente.",
+        "chinese": "只有当该层有足够大的容量时，才能召唤单位。",
+        "spanish": "Solo puedes invocar unidades en un piso si tiene capacidad suficiente.",
+        "chinese_traditional": "只有在樓層有足夠容量的情況下，單位才能被召喚到該樓層。",
+        "korean": "객실 내에 충분한 수용량이 있어야 유닛을 소환할 수 있습니다.",
+        "japanese": "キャパシティが足りないとユニットをフロアに召喚することはできない。"
+      },
+      "titles": {
+        "key": "Capacity_TooltipTitle",
+        "english": "[capacity] Capacity",
+        "french": "[capacity] Capacité",
+        "german": "[capacity] Kapazität",
+        "russian": "[capacity] Размеры",
+        "portuguese": "[capacity] Capacidade",
+        "chinese": "[capacity] 容量",
+        "spanish": "Capacidad [capacity]",
+        "chinese_traditional": "[capacity]容量",
+        "korean": "[capacity] 수용량",
+        "japanese": "[capacity] キャパシティ"
+      }
+    }
+  ]
 }

@@ -1,174 +1,218 @@
 {
-  "id": "SoulSavior_RunDistance3",
-  "guid": "8d082431-e91d-4ba3-a010-60cc1b47d9c3",
-  "name": "Run Distance 3",
-  "nameKey": {
-    "key": "MutatorData_nameKey-d907ab518f052c19-a2372fff1283cf64fab75131069f9cad-v2",
-    "english": "Run Distance 3",
-    "french": "Distance de la partie 3",
-    "german": "Reisedistanz 3",
-    "russian": "Длина маршрута 3",
-    "portuguese": "Distância de Corrida 3",
-    "chinese": "一轮距离 3",
-    "spanish": "Distancia de partida 3",
-    "chinese_traditional": "闖關距離3",
-    "korean": "여정 거리 3",
-    "japanese": "運行距離3"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 2000,
-      "paramCharacterSubtype": "SubtypesData_Boss",
-      "paramTrigger": "on_spawn"
+      "id": "SoulSavior_RunDistance3",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-d907ab518f052c19-a2372fff1283cf64fab75131069f9cad-v2",
+        "english": "Run Distance 3",
+        "french": "Distance de la partie 3",
+        "german": "Reisedistanz 3",
+        "russian": "Длина маршрута 3",
+        "portuguese": "Distância de Corrida 3",
+        "chinese": "一轮距离 3",
+        "spanish": "Distancia de partida 3",
+        "chinese_traditional": "闖關距離3",
+        "korean": "여정 거리 3",
+        "japanese": "運行距離3"
+      },
+      "relic_effects": [
+        "@SoulSavior_RunDistance3.effects0",
+        "@SoulSavior_RunDistance3.effects1",
+        "@SoulSavior_RunDistance3.effects2",
+        "@SoulSavior_RunDistance3.effects3",
+        "@SoulSavior_RunDistance3.effects4",
+        "@SoulSavior_RunDistance3.effects5",
+        "@SoulSavior_RunDistance3.effects6",
+        "@SoulSavior_RunDistance3.effects7",
+        "@SoulSavior_RunDistance3.effects8",
+        "@SoulSavior_RunDistance3.effects9",
+        "@SoulSavior_RunDistance3.effects10",
+        "@SoulSavior_RunDistance3.effects11",
+        "@SoulSavior_RunDistance3.effects12",
+        "@SoulSavior_RunDistance3.effects13",
+        "@SoulSavior_RunDistance3.effects14",
+        "@SoulSavior_RunDistance3.effects15"
+      ],
+      "is_hidden": true
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_RunDistance3.effects0",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 2000,
+      "param_subtype": "SubtypesData_Boss",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "heroes",
-      "paramInt": 20,
-      "paramCharacterSubtype": "SubtypesData_Boss",
-      "paramTrigger": "on_spawn"
+      "id": "SoulSavior_RunDistance3.effects1",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "heroes",
+      "param_int": 20,
+      "param_subtype": "SubtypesData_Boss",
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectScaleStatusApplicationsOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_RunDistance3.effects2",
+      "name": "RelicEffectScaleStatusApplicationsOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "buff",
+          "status": "buff",
           "count": 0
         },
         {
-          "statusId": "hivemind",
+          "status": "hivemind",
           "count": 0
         },
         {
-          "statusId": "burst",
+          "status": "burst",
           "count": 0
         },
         {
-          "statusId": "malaise",
+          "status": "malaise",
           "count": 0
         },
         {
-          "statusId": "decay",
+          "status": "decay",
           "count": 0
         },
         {
-          "statusId": "corruption",
+          "status": "corruption",
           "count": 0
         },
         {
-          "statusId": "debuff",
+          "status": "debuff",
           "count": 0
         },
         {
-          "statusId": "witherbloom",
+          "status": "witherbloom",
           "count": 0
         },
         {
-          "statusId": "armor",
+          "status": "armor",
           "count": 0
         }
       ],
-      "paramFloat": 1.2,
-      "paramBool": true,
-      "paramBool2": true,
-      "paramBool3": true
+      "param_float": 1.2,
+      "param_bool": true,
+      "param_bool_2": true,
+      "param_bool_3": true
     },
     {
-      "relicEffectClassName": "RelicEffectIncreasePyreHealth",
-      "paramInt2": 2
+      "id": "SoulSavior_RunDistance3.effects3",
+      "name": "RelicEffectIncreasePyreHealth",
+      "param_int_2": 2
     },
     {
-      "relicEffectClassName": "RelicEffectIncreasePyreAttack",
-      "paramInt2": 2
+      "id": "SoulSavior_RunDistance3.effects4",
+      "name": "RelicEffectIncreasePyreAttack",
+      "param_int_2": 2
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 10,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Horde_Enemy",
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects5",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 10,
+      "param_subtype": "SubtypesData_SoulSavior_Horde_Enemy",
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 10,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Attacker_Enemy",
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects6",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 10,
+      "param_subtype": "SubtypesData_SoulSavior_Attacker_Enemy",
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 10,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Heavy_Enemy",
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects7",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 10,
+      "param_subtype": "SubtypesData_SoulSavior_Heavy_Enemy",
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 10,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Mage_Enemy",
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects8",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 10,
+      "param_subtype": "SubtypesData_SoulSavior_Mage_Enemy",
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 10,
-      "paramCharacterSubtype": "SubtypesData_Boss",
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects9",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 10,
+      "param_subtype": "SubtypesData_Boss",
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 4,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Horde_Enemy",
-      "paramBool": true,
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects10",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 4,
+      "param_subtype": "SubtypesData_SoulSavior_Horde_Enemy",
+      "param_bool": true,
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 4,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Attacker_Enemy",
-      "paramBool": true,
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects11",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 4,
+      "param_subtype": "SubtypesData_SoulSavior_Attacker_Enemy",
+      "param_bool": true,
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 4,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Heavy_Enemy",
-      "paramBool": true,
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects12",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 4,
+      "param_subtype": "SubtypesData_SoulSavior_Heavy_Enemy",
+      "param_bool": true,
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 4,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Support_Enemy",
-      "paramBool": true,
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects13",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 4,
+      "param_subtype": "SubtypesData_SoulSavior_Support_Enemy",
+      "param_bool": true,
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 4,
-      "paramCharacterSubtype": "SubtypesData_SoulSavior_Mage_Enemy",
-      "paramBool": true,
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects14",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 4,
+      "param_subtype": "SubtypesData_SoulSavior_Mage_Enemy",
+      "param_bool": true,
+      "param_mutator": "SoulSavior_DifficultyTier3"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 8,
-      "paramCharacterSubtype": "SubtypesData_Boss",
-      "paramBool": true,
-      "paramMutatorData": "SoulSavior_DifficultyTier3"
+      "id": "SoulSavior_RunDistance3.effects15",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 8,
+      "param_subtype": "SubtypesData_Boss",
+      "param_bool": true,
+      "param_mutator": "SoulSavior_DifficultyTier3"
     }
-  ],
-  "isHidden": true,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

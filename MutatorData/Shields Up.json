@@ -1,49 +1,63 @@
 {
-  "id": "EnemiesGetDamageShield",
-  "guid": "387f73cb-cdbb-44a4-8708-6d42cf5f7455",
-  "name": "Shields Up",
-  "nameKey": {
-    "key": "MutatorData_nameKey-b9b34045b3d32bf9-086035b011e3d734ea0d899a130cbe11-v2",
-    "english": "Shields Up",
-    "french": "Levée de boucliers",
-    "german": "Schilde hoch",
-    "russian": "Поднять щиты!",
-    "portuguese": "Defesa a Postos",
-    "chinese": "举起盾牌",
-    "spanish": "Más protección",
-    "chinese_traditional": "護盾提升",
-    "korean": "방패 앞으로",
-    "japanese": "盾を掲げろ"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-b15b4862aa952cf9-086035b011e3d734ea0d899a130cbe11-v2",
-    "english": "Enemy units enter with [damageshield].",
-    "french": "Les unités ennemies entrent avec <nobr><b>Bouclier protecteur</b></nobr>.",
-    "german": "Gegnerische Einheiten kommen mit <b>Schadensschild</b> ins Spiel.",
-    "russian": "На бойцов врага при входе накладывается [damageshield].",
-    "portuguese": "Unidades inimigas entram com <nobr><b>Escudo Protetor</b></nobr>.",
-    "chinese": "敌方单位进入战斗时获得<nobr><b>伤害护盾</b></nobr>。",
-    "spanish": "Las unidades enemigas entran con [damageshield].",
-    "chinese_traditional": "敵方單位登場時獲得[damageshield]。",
-    "korean": "적 유닛이 [damageshield] 상태로 등장합니다.",
-    "japanese": "敵ユニットが[damageshield]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "EnemiesGetDamageShield",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "damage shield",
+          "mutator": {
+            "boon_value": -8,
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "enemyeffect"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-b9b34045b3d32bf9-086035b011e3d734ea0d899a130cbe11-v2",
+        "english": "Shields Up",
+        "french": "Levée de boucliers",
+        "german": "Schilde hoch",
+        "russian": "Поднять щиты!",
+        "portuguese": "Defesa a Postos",
+        "chinese": "举起盾牌",
+        "spanish": "Más protección",
+        "chinese_traditional": "護盾提升",
+        "korean": "방패 앞으로",
+        "japanese": "盾を掲げろ"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-b15b4862aa952cf9-086035b011e3d734ea0d899a130cbe11-v2",
+        "english": "Enemy units enter with [damageshield].",
+        "french": "Les unités ennemies entrent avec <nobr><b>Bouclier protecteur</b></nobr>.",
+        "german": "Gegnerische Einheiten kommen mit <b>Schadensschild</b> ins Spiel.",
+        "russian": "На бойцов врага при входе накладывается [damageshield].",
+        "portuguese": "Unidades inimigas entram com <nobr><b>Escudo Protetor</b></nobr>.",
+        "chinese": "敌方单位进入战斗时获得<nobr><b>伤害护盾</b></nobr>。",
+        "spanish": "Las unidades enemigas entran con [damageshield].",
+        "chinese_traditional": "敵方單位登場時獲得[damageshield]。",
+        "korean": "적 유닛이 [damageshield] 상태로 등장합니다.",
+        "japanese": "敵ユニットが[damageshield]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@EnemiesGetDamageShield.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "EnemiesGetDamageShield.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "damage shield",
           "count": 1
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramInt": -1
+      "param_source_team": "heroes",
+      "param_int": -1
     }
-  ],
-  "boonValue": -8,
-  "disableInDailyChallenges": true,
-  "tags": [
-    "enemyeffect"
   ]
 }

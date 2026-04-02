@@ -1,120 +1,62 @@
 {
-  "id": "SpellUpgradeCreateCopyWithPurge",
-  "guid": "5328c6bf-b1ba-4192-b775-40568d4232d3",
-  "name": "Twinstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-64b8c47e2b3a0c30-a9dd01a868682ca4fbe9d19f0ddff096-v2",
-    "english": "Twinstone",
-    "french": "Pierre jumelle",
-    "german": "Zwillingsstein",
-    "russian": "Камень двойника",
-    "portuguese": "Pedra Gêmea",
-    "chinese": "双生石",
-    "spanish": "Piedra gemela",
-    "chinese_traditional": "雙生石",
-    "korean": "쌍둥이석",
-    "japanese": "双子の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-55c99011b1cc2b49-a9dd01a868682ca4fbe9d19f0ddff096-v2",
-    "english": "Upgrade a spell to gain <b>Spellchain</b>.",
-    "french": "Améliore un sort pour lui conférer <b>Sorts à la chaîne</b>.",
-    "german": "Verbessere einen Zauber mit dem Erhalt von <b>Zauberkette</b>.",
-    "russian": "Улучшенные чары получают свойство <b>цепочка чар</b>.",
-    "portuguese": "Melhora um feitiço para receber <b>Corrente de Feitiços</b>.",
-    "chinese": "升级一个法术，使其获得<b>法术连锁</b>。",
-    "spanish": "Mejora un hechizo para añadir <b>Hechizo en cadena</b>.",
-    "chinese_traditional": "升級一個法術，使其獲得<b>咒語連鎖</b>。",
-    "korean": "주문 업그레이드로 <b>주문 연쇄</b>를 획득합니다.",
-    "japanese": "呪文アップグレード：<b>呪文連鎖</b>を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "SoulSavior_SpellUpgradePoolRare",
-    "SpellUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "CreateSpellCopyWithPurge",
-        "guid": "a75fc092-ca72-476b-b518-01e9ecb8d6a3",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-aab3f288365dadb6-247b9fc70fae956459a879d60d5132cf-v2",
-          "english": "Twinstone",
-          "french": "Pierre jumelle",
-          "german": "Zwillingsstein",
-          "russian": "Камень двойника",
-          "portuguese": "Pedra Gêmea",
-          "chinese": "双生石",
-          "spanish": "Piedra gemela",
-          "chinese_traditional": "雙生石",
-          "korean": "쌍둥이석",
-          "japanese": "双子の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-8c45242a403dc361-247b9fc70fae956459a879d60d5132cf-v2",
-          "english": "Gain <b>Spellchain</b>.",
-          "french": "Octroie <b>Sorts à la chaîne</b>.",
-          "german": "Erhalte <b>Zauberkette</b>.",
-          "russian": "Дает <b>цепочку чар</b>.",
-          "portuguese": "Recebe <b>Corrente de Feitiços</b>.",
-          "chinese": "获得<b>法术连锁</b>。",
-          "spanish": "Añade <b>Hechizo en cadena</b>.",
-          "chinese_traditional": "獲得<b>咒語連鎖</b>。",
-          "korean": "<b>주문 연쇄</b> 효과를 획득합니다.",
-          "japanese": "<b>呪文連鎖</b>を得る。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitCopyOnPlay",
-            "paramCardUpgradeData": {
-              "id": "CopyOnPlayTraitUpgrade",
-              "guid": "513224dd-223f-48ed-bf0a-afd486aef98b",
-              "traitDataUpgrades": [
-                {
-                  "traitStateName": "CardTraitEphemeral",
-                  "traitIsRemovable": false
-                }
-              ],
-              "removeTraitUpgrades": [
-                "CardTraitCopyOnPlay"
-              ],
-              "upgradesToRemove": [
-                "CreateSpellCopyWithPurge"
-              ]
-            },
-            "paramInt": 1,
-            "stackMode": "param_int"
+      "id": "SpellUpgradeCreateCopyWithPurge",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "SoulSavior_SpellUpgradePoolRare",
+        "SpellUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlySpells",
-            "cardType": "spell"
-          },
-          {
-            "id": "ExcludeUnplayable",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitUnplayable"
-            ]
-          },
-          {
-            "id": "ExcludeSpellchain",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitCopyOnPlay"
-            ]
-          }
-        ]
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-64b8c47e2b3a0c30-a9dd01a868682ca4fbe9d19f0ddff096-v2",
+        "english": "Twinstone",
+        "french": "Pierre jumelle",
+        "german": "Zwillingsstein",
+        "russian": "Камень двойника",
+        "portuguese": "Pedra Gêmea",
+        "chinese": "双生石",
+        "spanish": "Piedra gemela",
+        "chinese_traditional": "雙生石",
+        "korean": "쌍둥이석",
+        "japanese": "双子の石"
       },
-      "paramMinInt": 1,
-      "paramMaxInt": 99
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-55c99011b1cc2b49-a9dd01a868682ca4fbe9d19f0ddff096-v2",
+        "english": "Upgrade a spell to gain <b>Spellchain</b>.",
+        "french": "Améliore un sort pour lui conférer <b>Sorts à la chaîne</b>.",
+        "german": "Verbessere einen Zauber mit dem Erhalt von <b>Zauberkette</b>.",
+        "russian": "Улучшенные чары получают свойство <b>цепочка чар</b>.",
+        "portuguese": "Melhora um feitiço para receber <b>Corrente de Feitiços</b>.",
+        "chinese": "升级一个法术，使其获得<b>法术连锁</b>。",
+        "spanish": "Mejora un hechizo para añadir <b>Hechizo en cadena</b>.",
+        "chinese_traditional": "升級一個法術，使其獲得<b>咒語連鎖</b>。",
+        "korean": "주문 업그레이드로 <b>주문 연쇄</b>를 획득합니다.",
+        "japanese": "呪文アップグレード：<b>呪文連鎖</b>を得る。"
+      },
+      "relic_effects": [
+        "@SpellUpgradeCreateCopyWithPurge.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeCreateCopyWithPurge.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "CreateSpellCopyWithPurge",
+      "param_min_int": 1,
+      "param_max_int": 99
+    }
+  ]
 }

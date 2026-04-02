@@ -1,63 +1,82 @@
 {
-  "id": "ManiacT3",
-  "guid": "e5414fb9-ce27-437b-b7ed-37da10c10cd4",
-  "name": "ManiacT3",
-  "nameKey": {
-    "key": "SoulData_nameKey-5f05ec840539163d-163062a8c8026bd48bfe1400e3a9c4b6-v2",
-    "english": "Maniac III",
-    "french": "Maniaque III",
-    "german": "Verrückter III",
-    "russian": "Маньяк III",
-    "portuguese": "Maníaco III",
-    "chinese": "狂人 III",
-    "spanish": "Demente III",
-    "chinese_traditional": "狂熱者III",
-    "korean": "매니악 III",
-    "japanese": "マニアックIII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-e3e0e228873d35fc-163062a8c8026bd48bfe1400e3a9c4b6-v2",
-    "english": "[vanguard]: [multistrike] [effect0.power]. [resolve]: Advance and gain [pyregel] [effect2.power]. Friendly units gain [burst] [effect0.power] and +[effect0.upgrade.charactertrigger0.effect2.power] [attack].",
-    "french": "<nobr>[vanguard] :</nobr> [multistrike] [effect0.power]. <nobr>[resolve] :</nobr> <b>avance</b> et octroie <nobr>[pyregel] [effect2.power]</nobr>. Les unités alliées gagnent <nobr>[burst] [effect0.power]</nobr> et +[effect0.upgrade.charactertrigger0.effect2.power] [attack].",
-    "german": "[vanguard]: [multistrike] [effect0.power]. [resolve]: Rücke vor und erhalte [pyregel] [effect2.power]. Verbündete Einheiten erhalten [burst] [effect0.power] und +[effect0.upgrade.charactertrigger0.effect2.power].",
-    "russian": "[vanguard]: [multistrike] [effect0.power]. [resolve]: наступление и [pyregel] х[effect2.power]. Союзникам даются [burst] х[effect0.power] и +[effect0.upgrade.charactertrigger0.effect2.power][attack].",
-    "portuguese": "[vanguard]: [multistrike] [effect0.power]. [resolve]: avança e recebe [pyregel] [effect2.power]. Unidades aliadas recebem [burst] [effect0.power] e +[effect0.upgrade.charactertrigger0.effect2.power] [attack].",
-    "chinese": "[vanguard]：[multistrike] [effect0.power]。[resolve]：前进并获得 [pyregel] [effect2.power]。友方单位获得 [burst] [effect0.power] 和 +[effect0.upgrade.charactertrigger0.effect2.power] [attack]。",
-    "spanish": "[vanguard]: [multistrike] [effect0.power]. [resolve]: <b>Avanza</b> y añade [pyregel] [effect2.power]. Las unidades aliadas añaden [burst] [effect0.power] y +[effect0.upgrade.charactertrigger0.effect2.power][attack].",
-    "chinese_traditional": "[vanguard]：[multistrike][effect0.power]。[resolve]：前進並獲得[pyregel][effect2.power]。友方單位獲得[burst][effect0.power]和+[effect0.upgrade.charactertrigger0.effect2.power][attack]。",
-    "korean": "[vanguard]: [multistrike] [effect0.power]. [resolve]: 전진하며 [pyregel] [effect2.power] 효과를 획득합니다. 아군 유닛들이 [burst] [effect0.power] 및 +[effect0.upgrade.charactertrigger0.effect2.power][attack]을 획득합니다.",
-    "japanese": "[vanguard]：[multistrike] [effect0.power]。[resolve]：前進し、[pyregel] [effect2.power]を得る。味方ユニットが[burst] [effect0.power]と+[effect0.upgrade.charactertrigger0.effect2.power] [attack]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster"
-    },
-    {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 10
-    },
-    {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 4
+      "id": "ManiacT3",
+      "name": "ManiacT3",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-d82513c7ab236e5d-163062a8c8026bd48bfe1400e3a9c4b6-v2",
+                "english": "Defeat Lifemother while playing Banished to upgrade.",
+                "french": "Battez Mère Nature en jouant les Bannis pour améliorer.",
+                "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Verbannten spielst.",
+                "russian": "Чтобы улучшить, победите Мать-природу, играя за Изгнанников.",
+                "portuguese": "Derrote a Genetriz jogando com os Expurgados para melhorar.",
+                "chinese": "用流放者击败生命之母以升级。",
+                "spanish": "Derrota a la Madre Vida con los Desterrados para mejorar.",
+                "chinese_traditional": "使用流亡者時擊敗生命之母以升級。",
+                "korean": "추방자 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
+                "japanese": "脱天使でのプレイでライフマザーを倒してアップグレード。"
+              },
+              "unlock_condition": "soul_kill_lifemother_using_banished",
+              "param_int": 1
+            },
+            "tier_level": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-5f05ec840539163d-163062a8c8026bd48bfe1400e3a9c4b6-v2",
+        "english": "Maniac III",
+        "french": "Maniaque III",
+        "german": "Verrückter III",
+        "russian": "Маньяк III",
+        "portuguese": "Maníaco III",
+        "chinese": "狂人 III",
+        "spanish": "Demente III",
+        "chinese_traditional": "狂熱者III",
+        "korean": "매니악 III",
+        "japanese": "マニアックIII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-e3e0e228873d35fc-163062a8c8026bd48bfe1400e3a9c4b6-v2",
+        "english": "[vanguard]: [multistrike] [effect0.power]. [resolve]: Advance and gain [pyregel] [effect2.power]. Friendly units gain [burst] [effect0.power] and +[effect0.upgrade.charactertrigger0.effect2.power] [attack].",
+        "french": "<nobr>[vanguard] :</nobr> [multistrike] [effect0.power]. <nobr>[resolve] :</nobr> <b>avance</b> et octroie <nobr>[pyregel] [effect2.power]</nobr>. Les unités alliées gagnent <nobr>[burst] [effect0.power]</nobr> et +[effect0.upgrade.charactertrigger0.effect2.power] [attack].",
+        "german": "[vanguard]: [multistrike] [effect0.power]. [resolve]: Rücke vor und erhalte [pyregel] [effect2.power]. Verbündete Einheiten erhalten [burst] [effect0.power] und +[effect0.upgrade.charactertrigger0.effect2.power].",
+        "russian": "[vanguard]: [multistrike] [effect0.power]. [resolve]: наступление и [pyregel] х[effect2.power]. Союзникам даются [burst] х[effect0.power] и +[effect0.upgrade.charactertrigger0.effect2.power][attack].",
+        "portuguese": "[vanguard]: [multistrike] [effect0.power]. [resolve]: avança e recebe [pyregel] [effect2.power]. Unidades aliadas recebem [burst] [effect0.power] e +[effect0.upgrade.charactertrigger0.effect2.power] [attack].",
+        "chinese": "[vanguard]：[multistrike] [effect0.power]。[resolve]：前进并获得 [pyregel] [effect2.power]。友方单位获得 [burst] [effect0.power] 和 +[effect0.upgrade.charactertrigger0.effect2.power] [attack]。",
+        "spanish": "[vanguard]: [multistrike] [effect0.power]. [resolve]: <b>Avanza</b> y añade [pyregel] [effect2.power]. Las unidades aliadas añaden [burst] [effect0.power] y +[effect0.upgrade.charactertrigger0.effect2.power][attack].",
+        "chinese_traditional": "[vanguard]：[multistrike][effect0.power]。[resolve]：前進並獲得[pyregel][effect2.power]。友方單位獲得[burst][effect0.power]和+[effect0.upgrade.charactertrigger0.effect2.power][attack]。",
+        "korean": "[vanguard]: [multistrike] [effect0.power]. [resolve]: 전진하며 [pyregel] [effect2.power] 효과를 획득합니다. 아군 유닛들이 [burst] [effect0.power] 및 +[effect0.upgrade.charactertrigger0.effect2.power][attack]을 획득합니다.",
+        "japanese": "[vanguard]：[multistrike] [effect0.power]。[resolve]：前進し、[pyregel] [effect2.power]を得る。味方ユニットが[burst] [effect0.power]と+[effect0.upgrade.charactertrigger0.effect2.power] [attack]を得る。"
+      },
+      "relic_effects": [
+        "@ManiacT3.effects0",
+        "@ManiacT3.effects1",
+        "@ManiacT3.effects2"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-d82513c7ab236e5d-163062a8c8026bd48bfe1400e3a9c4b6-v2",
-      "english": "Defeat Lifemother while playing Banished to upgrade.",
-      "french": "Battez Mère Nature en jouant les Bannis pour améliorer.",
-      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Verbannten spielst.",
-      "russian": "Чтобы улучшить, победите Мать-природу, играя за Изгнанников.",
-      "portuguese": "Derrote a Genetriz jogando com os Expurgados para melhorar.",
-      "chinese": "用流放者击败生命之母以升级。",
-      "spanish": "Derrota a la Madre Vida con los Desterrados para mejorar.",
-      "chinese_traditional": "使用流亡者時擊敗生命之母以升級。",
-      "korean": "추방자 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
-      "japanese": "脱天使でのプレイでライフマザーを倒してアップグレード。"
+  "relic_effects": [
+    {
+      "id": "ManiacT3.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster"
     },
-    "unlockCondition": "soul_kill_lifemother_using_banished",
-    "paramInt": 1
-  },
-  "tierLevel": 3
+    {
+      "id": "ManiacT3.effects1",
+      "name": "RelicEffectNull",
+      "param_int": 10
+    },
+    {
+      "id": "ManiacT3.effects2",
+      "name": "RelicEffectNull",
+      "param_int": 4
+    }
+  ]
 }

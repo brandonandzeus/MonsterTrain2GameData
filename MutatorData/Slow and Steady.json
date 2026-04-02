@@ -1,53 +1,69 @@
 {
-  "id": "FriendlySapPlusAttack",
-  "guid": "95cd7890-fa1c-4f27-8f38-b2d27b1ea8ad",
-  "name": "Slow and Steady",
-  "nameKey": {
-    "key": "MutatorData_nameKey-48026580df536737-e214c064807a961438844f9fa1b19eb8-v2",
-    "english": "Slow and Steady",
-    "french": "Lenteur et régularité",
-    "german": "Langsam aber stetig",
-    "russian": "Медленный и крепкий",
-    "portuguese": "Lento e Estável",
-    "chinese": "稳扎稳打",
-    "spanish": "Lento pero seguro",
-    "chinese_traditional": "穩紮穩打",
-    "korean": "느리고 꾸준하게",
-    "japanese": "ゆっくりと着実"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-db010ddcb94ba5da-e214c064807a961438844f9fa1b19eb8-v2",
-    "english": "Friendly units enter with +[effect0.power][attack] and [sap] [effect1.status0.power].",
-    "french": "Les alliés entrent avec +[effect0.power][attack] et [sap] [effect1.status0.power].",
-    "german": "Verbündete Einheiten starten mit +[effect0.power][attack] und [sap] [effect1.status0.power].",
-    "russian": "Союзники при появлении получают [effect0.power][attack] и [sap] х[effect1.status0.power].",
-    "portuguese": "As unidades aliadas entram com +[effect0.power][attack] e [sap] [effect1.status0.power].",
-    "chinese": "友方单位进入战斗时获得+[effect0.power][attack]，[sap] [effect1.status0.power]。",
-    "spanish": "Las unidades aliadas entran con +[effect0.power][attack] y [sap] [effect1.status0.power].",
-    "chinese_traditional": "友方單位登場時獲得+[effect0.power][attack]和[sap][effect1.status0.power]。",
-    "korean": "아군 유닛이 +[effect0.power][attack] 및 [sap] [effect1.status0.power] 상태로 등장합니다.",
-    "japanese": "味方ユニットが+[effect0.power][attack]と[sap] [effect1.status0.power]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardAttack",
-      "paramCardType": "monster",
-      "paramInt": 10
+      "id": "FriendlySapPlusAttack",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "friendlyeffect"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-48026580df536737-e214c064807a961438844f9fa1b19eb8-v2",
+        "english": "Slow and Steady",
+        "french": "Lenteur et régularité",
+        "german": "Langsam aber stetig",
+        "russian": "Медленный и крепкий",
+        "portuguese": "Lento e Estável",
+        "chinese": "稳扎稳打",
+        "spanish": "Lento pero seguro",
+        "chinese_traditional": "穩紮穩打",
+        "korean": "느리고 꾸준하게",
+        "japanese": "ゆっくりと着実"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-db010ddcb94ba5da-e214c064807a961438844f9fa1b19eb8-v2",
+        "english": "Friendly units enter with +[effect0.power][attack] and [sap] [effect1.status0.power].",
+        "french": "Les alliés entrent avec +[effect0.power][attack] et [sap] [effect1.status0.power].",
+        "german": "Verbündete Einheiten starten mit +[effect0.power][attack] und [sap] [effect1.status0.power].",
+        "russian": "Союзники при появлении получают [effect0.power][attack] и [sap] х[effect1.status0.power].",
+        "portuguese": "As unidades aliadas entram com +[effect0.power][attack] e [sap] [effect1.status0.power].",
+        "chinese": "友方单位进入战斗时获得+[effect0.power][attack]，[sap] [effect1.status0.power]。",
+        "spanish": "Las unidades aliadas entran con +[effect0.power][attack] y [sap] [effect1.status0.power].",
+        "chinese_traditional": "友方單位登場時獲得+[effect0.power][attack]和[sap][effect1.status0.power]。",
+        "korean": "아군 유닛이 +[effect0.power][attack] 및 [sap] [effect1.status0.power] 상태로 등장합니다.",
+        "japanese": "味方ユニットが+[effect0.power][attack]と[sap] [effect1.status0.power]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@FriendlySapPlusAttack.effects0",
+        "@FriendlySapPlusAttack.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FriendlySapPlusAttack.effects0",
+      "name": "RelicEffectModifyCardAttack",
+      "param_card_type": "monster",
+      "param_int": 10
     },
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "FriendlySapPlusAttack.effects1",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "debuff",
+          "status": "debuff",
           "count": 7
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": -1
+      "param_source_team": "monsters",
+      "param_int": -1
     }
-  ],
-  "disableInDailyChallenges": true,
-  "tags": [
-    "friendlyeffect"
   ]
 }

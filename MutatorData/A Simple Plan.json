@@ -1,46 +1,62 @@
 {
-  "id": "ExpensiveUnitsSketches",
-  "guid": "799c25e8-65f0-4afa-829a-808422bbca08",
-  "name": "A Simple Plan",
-  "nameKey": {
-    "key": "MutatorData_nameKey-d75267828ffb927e-bb446bb76b25a7943a6a16197137a4f2-v2",
-    "english": "A Simple Plan",
-    "french": "Un plan simple",
-    "german": "Ein einfacher Plan",
-    "russian": "Простой план",
-    "portuguese": "Um Plano Simples",
-    "chinese": "简单的计划",
-    "spanish": "Plan sencillo",
-    "chinese_traditional": "簡單計畫",
-    "korean": "단순한 계획",
-    "japanese": "単純な計画"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-c3d8899230313517-bb446bb76b25a7943a6a16197137a4f2-v2",
-    "english": "Non-Champion units cost +[effect1.power][ember]. Start with <b>Sketches of Salvation</b>.",
-    "french": "Les unités hors champions coûtent +[effect1.power][ember]. Commencez avec <b>Croquis salvateurs</b>.",
-    "german": "Nicht-Champion-Einheiten kosten +[effect1.power][ember]. Beginne mit <b>Rettungsplänen</b>.",
-    "russian": "Увеличивает стоимость бойцов, за исключением Героев, на +[effect1.power][ember]. Вы начинаете со <b>Спасением в эскизах</b>.",
-    "portuguese": "As unidades que não são de Campeões custam +[effect1.power][ember]. Comece com <b>Esboços da Salvação</b>.",
-    "chinese": "非勇者单位的费用 +[effect1.power][ember]。开始游戏时获得<b>救援计划</b>。",
-    "spanish": "Las unidades no campeones cuestan +[effect1.power][ember]. Empiezas con <b>Bocetos de salvación</b>.",
-    "chinese_traditional": "非勇士單位費用+[effect1.power][ember]。從<b>救贖的素描</b>開始。",
-    "korean": "영웅 외 유닛의 비용이 +[effect1.power][ember] 됩니다. <b>구원의 초안</b>을 가지고 시작합니다.",
-    "japanese": "非チャンピオンユニットのコストが[effect1.power][ember]。<b>救済のスケッチ</b>がある状態で開始する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddRelicStartOfRun",
-      "paramRelic": "RandomUnitEveryFloor"
-    },
-    {
-      "relicEffectClassName": "RelicEffectModifyCardTypeCost",
-      "paramCardType": "monster",
-      "paramInt": 2
+      "id": "ExpensiveUnitsSketches",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3,
+            "tags": [
+              "embercost"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-d75267828ffb927e-bb446bb76b25a7943a6a16197137a4f2-v2",
+        "english": "A Simple Plan",
+        "french": "Un plan simple",
+        "german": "Ein einfacher Plan",
+        "russian": "Простой план",
+        "portuguese": "Um Plano Simples",
+        "chinese": "简单的计划",
+        "spanish": "Plan sencillo",
+        "chinese_traditional": "簡單計畫",
+        "korean": "단순한 계획",
+        "japanese": "単純な計画"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-c3d8899230313517-bb446bb76b25a7943a6a16197137a4f2-v2",
+        "english": "Non-Champion units cost +[effect1.power][ember]. Start with <b>Sketches of Salvation</b>.",
+        "french": "Les unités hors champions coûtent +[effect1.power][ember]. Commencez avec <b>Croquis salvateurs</b>.",
+        "german": "Nicht-Champion-Einheiten kosten +[effect1.power][ember]. Beginne mit <b>Rettungsplänen</b>.",
+        "russian": "Увеличивает стоимость бойцов, за исключением Героев, на +[effect1.power][ember]. Вы начинаете со <b>Спасением в эскизах</b>.",
+        "portuguese": "As unidades que não são de Campeões custam +[effect1.power][ember]. Comece com <b>Esboços da Salvação</b>.",
+        "chinese": "非勇者单位的费用 +[effect1.power][ember]。开始游戏时获得<b>救援计划</b>。",
+        "spanish": "Las unidades no campeones cuestan +[effect1.power][ember]. Empiezas con <b>Bocetos de salvación</b>.",
+        "chinese_traditional": "非勇士單位費用+[effect1.power][ember]。從<b>救贖的素描</b>開始。",
+        "korean": "영웅 외 유닛의 비용이 +[effect1.power][ember] 됩니다. <b>구원의 초안</b>을 가지고 시작합니다.",
+        "japanese": "非チャンピオンユニットのコストが[effect1.power][ember]。<b>救済のスケッチ</b>がある状態で開始する。"
+      },
+      "relic_effects": [
+        "@ExpensiveUnitsSketches.effects0",
+        "@ExpensiveUnitsSketches.effects1"
+      ]
     }
   ],
-  "boonValue": -3,
-  "tags": [
-    "embercost"
+  "relic_effects": [
+    {
+      "id": "ExpensiveUnitsSketches.effects0",
+      "name": "RelicEffectAddRelicStartOfRun",
+      "param_relic": "RandomUnitEveryFloor"
+    },
+    {
+      "id": "ExpensiveUnitsSketches.effects1",
+      "name": "RelicEffectModifyCardTypeCost",
+      "param_card_type": "monster",
+      "param_int": 2
+    }
   ]
 }

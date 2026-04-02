@@ -1,43 +1,78 @@
 {
-  "id": "ElleT2",
-  "guid": "8e6a9fa8-87ff-4825-9715-96c6ce56d365",
-  "name": "ElleT2",
-  "nameKey": {
-    "key": "SoulData_nameKey-814763e83b4e4bb3-953833fdc22516f49b163114ab16527f-v2",
-    "english": "Elle II",
-    "french": "Elle II",
-    "german": "Elle II",
-    "russian": "Эль II",
-    "portuguese": "Elle II",
-    "chinese": "艾尔 II",
-    "spanish": "Servicial II",
-    "chinese_traditional": "艾兒II",
-    "korean": "엘 II",
-    "japanese": "エルII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-c6e2c66af4b8c3ab-953833fdc22516f49b163114ab16527f-v2",
-    "english": "[effect0.power] random starter cards are upgraded with: Gain [effect1.power][ember] and draw +[effect1.power] next turn.",
-    "french": "[effect0.power] cartes de départ aléatoires sont améliorées avec <nobr><b>Lancer</b> :</nobr> gagnez [effect1.power][ember] et piochez +[effect1.power] au prochain tour.",
-    "german": "[effect0.power] zufällige Startkarten werden mit <b>Wirken</b> verbessert: Erhalte [effect1.power][ember] und ziehe im nächsten Zug +[effect1.power] Karte(n).",
-    "russian": "[effect0.power] шт. случайных стартовых карт получают <b>Применение</b>: Дает [effect1.power][ember]. Возьмите +[effect1.power] на следующий ход.",
-    "portuguese": "[effect0.power] cartas iniciais aleatórias são melhoradas ao <b>Lançar</b>: ganha [effect1.power][ember] e compra +[effect1.power] no próximo turno.",
-    "chinese": "升级 [effect0.power] 张随机初始卡牌，使其获得 <b>使用</b>：获得 [effect1.power][ember] 且下回合抽 +[effect1.power] 张牌。",
-    "spanish": "[effect0.power] cartas iniciales aleatorias se mejoran con <b>Al lanzar</b>: Obtienes [effect1.power][ember] y robas +[effect1.power] en el próximo turno.",
-    "chinese_traditional": "[effect0.power]張隨機初始卡牌被升級為<b>施放</b>：獲得[effect1.power][ember]並下回合抽+[effect1.power]張牌。",
-    "korean": "무작위 초기 카드 [effect0.power]장이 <b>시전</b>으로 업그레이드됩니다. 시전 효과로 [effect1.power][ember]을 획득하고 다음 턴에 카드 +[effect1.power]장을 추가로 뽑습니다.",
-    "japanese": "ランダムな開始カード[effect0.power]枚が<b>使用時</b>にアップグレードされる：[effect1.power][ember]を得る。次のターン、ドロー+[effect1.power]。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgradeRandomCardsInDeck",
-      "paramCardUpgradePool": {
+      "id": "ElleT2",
+      "name": "ElleT2",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-3d3c175e23a71d78-953833fdc22516f49b163114ab16527f-v2",
+                "english": "Play Starter cards to upgrade.",
+                "french": "Jouez des cartes de départ pour améliorer.",
+                "german": "Spiele für eine Verbesserung Startkarten aus.",
+                "russian": "Чтобы улучшить, разыграйте начальные карты.",
+                "portuguese": "Jogue cartas iniciais para melhorar.",
+                "chinese": "打出初始卡牌以升级。",
+                "spanish": "Juega cartas iniciales para mejorar.",
+                "chinese_traditional": "遊玩初始卡牌以升級。",
+                "korean": "초기 카드들을 사용하면 업그레이드됩니다.",
+                "japanese": "開始カードをプレイしてアップグレード。"
+              },
+              "unlock_condition": "soul_starter_cards_played",
+              "param_int": 150
+            },
+            "tier_level": 2,
+            "next_tier": "ElleT3"
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-814763e83b4e4bb3-953833fdc22516f49b163114ab16527f-v2",
+        "english": "Elle II",
+        "french": "Elle II",
+        "german": "Elle II",
+        "russian": "Эль II",
+        "portuguese": "Elle II",
+        "chinese": "艾尔 II",
+        "spanish": "Servicial II",
+        "chinese_traditional": "艾兒II",
+        "korean": "엘 II",
+        "japanese": "エルII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-c6e2c66af4b8c3ab-953833fdc22516f49b163114ab16527f-v2",
+        "english": "[effect0.power] random starter cards are upgraded with: Gain [effect1.power][ember] and draw +[effect1.power] next turn.",
+        "french": "[effect0.power] cartes de départ aléatoires sont améliorées avec <nobr><b>Lancer</b> :</nobr> gagnez [effect1.power][ember] et piochez +[effect1.power] au prochain tour.",
+        "german": "[effect0.power] zufällige Startkarten werden mit <b>Wirken</b> verbessert: Erhalte [effect1.power][ember] und ziehe im nächsten Zug +[effect1.power] Karte(n).",
+        "russian": "[effect0.power] шт. случайных стартовых карт получают <b>Применение</b>: Дает [effect1.power][ember]. Возьмите +[effect1.power] на следующий ход.",
+        "portuguese": "[effect0.power] cartas iniciais aleatórias são melhoradas ao <b>Lançar</b>: ganha [effect1.power][ember] e compra +[effect1.power] no próximo turno.",
+        "chinese": "升级 [effect0.power] 张随机初始卡牌，使其获得 <b>使用</b>：获得 [effect1.power][ember] 且下回合抽 +[effect1.power] 张牌。",
+        "spanish": "[effect0.power] cartas iniciales aleatorias se mejoran con <b>Al lanzar</b>: Obtienes [effect1.power][ember] y robas +[effect1.power] en el próximo turno.",
+        "chinese_traditional": "[effect0.power]張隨機初始卡牌被升級為<b>施放</b>：獲得[effect1.power][ember]並下回合抽+[effect1.power]張牌。",
+        "korean": "무작위 초기 카드 [effect0.power]장이 <b>시전</b>으로 업그레이드됩니다. 시전 효과로 [effect1.power][ember]을 획득하고 다음 턴에 카드 +[effect1.power]장을 추가로 뽑습니다.",
+        "japanese": "ランダムな開始カード[effect0.power]枚が<b>使用時</b>にアップグレードされる：[effect1.power][ember]を得る。次のターン、ドロー+[effect1.power]。"
+      },
+      "relic_effects": [
+        "@ElleT2.effects0",
+        "@ElleT2.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ElleT2.effects0",
+      "name": "RelicEffectCardUpgradeRandomCardsInDeck",
+      "param_card_upgrade_pool": {
         "name": "Elle_UpgradePool",
         "cardUpgradeDataList": [
           "Elle_UpgradeDrawAndEmber"
         ]
       },
-      "paramCardUpgradeMaskData": {
+      "param_card_upgrade_mask": {
         "cardType": 4,
         "costRange": {
           "x": 0.0,
@@ -89,30 +124,12 @@
         "excludeIfHasAnyUpgrades": false,
         "excludeIfHasNoUpgrades": false
       },
-      "paramInt": 3
+      "param_int": 3
     },
     {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 1
+      "id": "ElleT2.effects1",
+      "name": "RelicEffectNull",
+      "param_int": 1
     }
-  ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-3d3c175e23a71d78-953833fdc22516f49b163114ab16527f-v2",
-      "english": "Play Starter cards to upgrade.",
-      "french": "Jouez des cartes de départ pour améliorer.",
-      "german": "Spiele für eine Verbesserung Startkarten aus.",
-      "russian": "Чтобы улучшить, разыграйте начальные карты.",
-      "portuguese": "Jogue cartas iniciais para melhorar.",
-      "chinese": "打出初始卡牌以升级。",
-      "spanish": "Juega cartas iniciales para mejorar.",
-      "chinese_traditional": "遊玩初始卡牌以升級。",
-      "korean": "초기 카드들을 사용하면 업그레이드됩니다.",
-      "japanese": "開始カードをプレイしてアップグレード。"
-    },
-    "unlockCondition": "soul_starter_cards_played",
-    "paramInt": 150
-  },
-  "tierLevel": 2,
-  "nextTier": "ElleT3"
+  ]
 }

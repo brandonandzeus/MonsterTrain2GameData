@@ -1,40 +1,54 @@
 {
-  "id": "Echoes_DoubleEnemyUnitHealth",
-  "guid": "af00fcb9-d921-4d32-8ab1-2c2ff3c2c39a",
-  "name": "Bulked Up",
-  "nameKey": {
-    "key": "MutatorData_nameKey-cf015ec27c66c018-c5950906b0e80354e9e107669b80d4a7-v2",
-    "english": "Bulked Up",
-    "french": "Sacs à PV",
-    "german": "Aufgeblasen",
-    "russian": "Здоровяки",
-    "portuguese": "Fortalecimento",
-    "chinese": "皮糙肉厚",
-    "spanish": "Musculación",
-    "chinese_traditional": "壯大",
-    "korean": "벌크업",
-    "japanese": "筋骨隆々"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-b5ca16469b0da151-c5950906b0e80354e9e107669b80d4a7-v2",
-    "english": "Enemy units have double health.",
-    "french": "Les unités ennemies ont deux fois plus de PV.",
-    "german": "Gegnerische Einheiten verfügen über die doppelte Gesundheit.",
-    "russian": "У врагов удвоенное здоровье.",
-    "portuguese": "As unidades inimigas têm o dobro de vida.",
-    "chinese": "敌方单位拥有双倍生命值。",
-    "spanish": "Las unidades enemigas tienen el doble de salud.",
-    "chinese_traditional": "敵方單位生命值加倍。",
-    "korean": "적 유닛들의 체력이 두 배가 됩니다.",
-    "japanese": "敵ユニットの体力が2倍になる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackOrHealthPercentage",
-      "paramSourceTeam": "heroes",
-      "paramInt": 100,
-      "paramBool": true
+      "id": "Echoes_DoubleEnemyUnitHealth",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -10
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-cf015ec27c66c018-c5950906b0e80354e9e107669b80d4a7-v2",
+        "english": "Bulked Up",
+        "french": "Sacs à PV",
+        "german": "Aufgeblasen",
+        "russian": "Здоровяки",
+        "portuguese": "Fortalecimento",
+        "chinese": "皮糙肉厚",
+        "spanish": "Musculación",
+        "chinese_traditional": "壯大",
+        "korean": "벌크업",
+        "japanese": "筋骨隆々"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-b5ca16469b0da151-c5950906b0e80354e9e107669b80d4a7-v2",
+        "english": "Enemy units have double health.",
+        "french": "Les unités ennemies ont deux fois plus de PV.",
+        "german": "Gegnerische Einheiten verfügen über die doppelte Gesundheit.",
+        "russian": "У врагов удвоенное здоровье.",
+        "portuguese": "As unidades inimigas têm o dobro de vida.",
+        "chinese": "敌方单位拥有双倍生命值。",
+        "spanish": "Las unidades enemigas tienen el doble de salud.",
+        "chinese_traditional": "敵方單位生命值加倍。",
+        "korean": "적 유닛들의 체력이 두 배가 됩니다.",
+        "japanese": "敵ユニットの体力が2倍になる。"
+      },
+      "relic_effects": [
+        "@Echoes_DoubleEnemyUnitHealth.effects0"
+      ]
     }
   ],
-  "boonValue": -10
+  "relic_effects": [
+    {
+      "id": "Echoes_DoubleEnemyUnitHealth.effects0",
+      "name": "RelicEffectModifyCharacterAttackOrHealthPercentage",
+      "param_source_team": "heroes",
+      "param_int": 100,
+      "param_bool": true
+    }
+  ]
 }

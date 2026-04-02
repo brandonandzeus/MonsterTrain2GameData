@@ -1,152 +1,54 @@
 {
-  "id": "SpellUpgradeTitanEntropyAddJuice3",
-  "guid": "0c320860-8da0-4c16-9f2a-9e9f7bad9292",
-  "name": "Entropic Stone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-957f4b34c1d89eb7-aea210f53ea8b5945b583e836ce3b2a7-v2",
-    "english": "Entropic Stone",
-    "french": "Pierre entropique",
-    "german": "Entropischer Stein",
-    "russian": "Камень Энтропии",
-    "portuguese": "Pedra da Entropia",
-    "chinese": "混乱石",
-    "spanish": "Piedra entrópica",
-    "chinese_traditional": "熵石",
-    "korean": "엔트로피석",
-    "japanese": "エントロピーの石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-ff6311076f57527e-aea210f53ea8b5945b583e836ce3b2a7-v2",
-    "english": "Upgrade a spell to gain [juice3].",
-    "french": "Améliore un sort pour lui conférer [juice3].",
-    "german": "Verbessere einen Zauber mit [juice3].",
-    "russian": "Улучшенные чары получают [juice3].",
-    "portuguese": "Melhora um feitiço para receber [juice3].",
-    "chinese": "升级一个法术，使其获得 [juice3]。",
-    "spanish": "Mejora un hechizo para añadir [juice3].",
-    "chinese_traditional": "升級一個法術，使其獲得[juice3]。",
-    "korean": "주문 업그레이드로 [juice3]을 획득합니다.",
-    "japanese": "呪文アップグレード：[juice3]を得る。"
-  },
-  "rarity": "uncommon",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "TraitJuice3",
-        "guid": "2f066286-dbef-449b-aa5f-b8acdcdce7aa",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-26bd466c66f1fa04-fa7edd2285eddb242ba8c584a4f92723-v2",
-          "english": "Entropic Stone",
-          "french": "Pierre entropique",
-          "german": "Entropischer Stein",
-          "russian": "Камень Энтропии",
-          "portuguese": "Pedra da Entropia",
-          "chinese": "混乱石",
-          "spanish": "Piedra entrópica",
-          "chinese_traditional": "熵石",
-          "korean": "엔트로피석",
-          "japanese": "エントロピーの石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-e5bad74776aca3fc-fa7edd2285eddb242ba8c584a4f92723-v2",
-          "english": "Gain [juice3].",
-          "french": "Octroie [juice3].",
-          "german": "Erhalte [juice3].",
-          "russian": "Дает [juice3].",
-          "portuguese": "Recebe [juice3].",
-          "chinese": "获得 [juice3]。",
-          "spanish": "Añade [juice3].",
-          "chinese_traditional": "獲得[juice3]。",
-          "korean": "[juice3]을 획득합니다.",
-          "japanese": "[juice3]を得る。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitJuice3"
+      "id": "SpellUpgradeTitanEntropyAddJuice3",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "uncommon",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyStatusEffectSetting",
-            "requiredCardEffectsOperator": "or",
-            "requiredCardEffects": [
-              "CardEffectAddStatusEffect",
-              "CardEffectAddStatusEffectNextMonster",
-              "CardEffectAddStatusEffectNull",
-              "CardEffectAddStatusEffectPerOtherEffect"
-            ],
-            "upgradeDisabledReason": "no_status"
-          },
-          {
-            "id": "OnlySpells",
-            "cardType": "spell"
-          },
-          {
-            "id": "ExcludeDoublestack",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitJuice",
-              "CardTraitJuice3",
-              "CardTraitJuice4"
-            ]
-          },
-          {
-            "id": "ExcludeNonstackableStatusEffects",
-            "excludedStatusEffects": [
-              {
-                "statusId": "ambush",
-                "count": 1
-              },
-              {
-                "statusId": "haste",
-                "count": 1
-              },
-              {
-                "statusId": "relentless",
-                "count": 1
-              },
-              {
-                "statusId": "inert",
-                "count": 1
-              },
-              {
-                "statusId": "restricted",
-                "count": 1
-              },
-              {
-                "statusId": "silenced",
-                "count": 1
-              },
-              {
-                "statusId": "trample",
-                "count": 1
-              },
-              {
-                "statusId": "endless",
-                "count": 1
-              },
-              {
-                "statusId": "immobile",
-                "count": 1
-              }
-            ],
-            "excludedStatusEffectsOperator": "or",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitJuice"
-            ]
-          },
-          {
-            "id": "ExcludeCardsFromJuice",
-            "disallowedCardPools": [
-              "CardsExcludedFromJuice"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-957f4b34c1d89eb7-aea210f53ea8b5945b583e836ce3b2a7-v2",
+        "english": "Entropic Stone",
+        "french": "Pierre entropique",
+        "german": "Entropischer Stein",
+        "russian": "Камень Энтропии",
+        "portuguese": "Pedra da Entropia",
+        "chinese": "混乱石",
+        "spanish": "Piedra entrópica",
+        "chinese_traditional": "熵石",
+        "korean": "엔트로피석",
+        "japanese": "エントロピーの石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-ff6311076f57527e-aea210f53ea8b5945b583e836ce3b2a7-v2",
+        "english": "Upgrade a spell to gain [juice3].",
+        "french": "Améliore un sort pour lui conférer [juice3].",
+        "german": "Verbessere einen Zauber mit [juice3].",
+        "russian": "Улучшенные чары получают [juice3].",
+        "portuguese": "Melhora um feitiço para receber [juice3].",
+        "chinese": "升级一个法术，使其获得 [juice3]。",
+        "spanish": "Mejora un hechizo para añadir [juice3].",
+        "chinese_traditional": "升級一個法術，使其獲得[juice3]。",
+        "korean": "주문 업그레이드로 [juice3]을 획득합니다.",
+        "japanese": "呪文アップグレード：[juice3]を得る。"
+      },
+      "relic_effects": [
+        "@SpellUpgradeTitanEntropyAddJuice3.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeTitanEntropyAddJuice3.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "TraitJuice3"
+    }
+  ]
 }

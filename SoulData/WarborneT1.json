@@ -1,55 +1,70 @@
 {
-  "id": "WarborneT1",
-  "guid": "86cffa0e-3255-49d7-a336-9ff487f67521",
-  "name": "WarborneT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-bf27a1415d2c48d9-fd151f3c26e3aa5469e2053b509e7c8a-v2",
-    "english": "Warborne",
-    "french": "Guerroyeur",
-    "german": "Kriegsgeboren",
-    "russian": "Воитель",
-    "portuguese": "Osso de Guerra",
-    "chinese": "为战而生",
-    "spanish": "Combatiente",
-    "chinese_traditional": "戰生",
-    "korean": "전쟁 태생",
-    "japanese": "ウォーボーン"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-5f208d90ad9ea5b1-fd151f3c26e3aa5469e2053b509e7c8a-v2",
-    "english": "Draw +1 for each floor that has enemy units on it at turn end.",
-    "french": "Piochez +1 pour chaque niveau où se trouvent des ennemis à la fin du tour.",
-    "german": "Ziehe für jede Ebene mit gegnerischen Einheiten am Rundenende +1 Karte.",
-    "russian": "В конце хода вытяните +1 за каждый этаж, где есть враг.",
-    "portuguese": "Compre +1 para cada andar que tenha unidades inimigas no final do turno.",
-    "chinese": "回合结束时，每个存在敌方单位的楼层都会使抽牌数 +1。",
-    "spanish": "Roba +1 por cada piso que tenga unidades enemigas al final del turno.",
-    "chinese_traditional": "在回合結束時，每個有敵方單位的樓層抽+1張牌。",
-    "korean": "턴 종료 시, 적 유닛들이 있는 층 하나당 카드를 1장 추가로 뽑습니다.",
-    "japanese": "ターン終了時に敵ユニットがいるフロア1つにつきドロー+1。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAdditionalDrawForEnemyOccupiedFloors"
+      "id": "WarborneT1",
+      "name": "WarborneT1",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-e39a9c7cdac636d5-fd151f3c26e3aa5469e2053b509e7c8a-v2",
+                "english": "Slay enemy units to unlock.",
+                "french": "Éliminez des ennemis pour déverrouiller.",
+                "german": "Besiege gegnerische Einheiten, um freizuschalten.",
+                "russian": "Чтобы разблокировать, убейте врагов.",
+                "portuguese": "Abata unidades inimigas para desbloquear.",
+                "chinese": "击杀敌方单位以解锁。",
+                "spanish": "Ejecuta unidades enemigas para desbloquear.",
+                "chinese_traditional": "擊殺敵方單位以解鎖。",
+                "korean": "적 유닛을 처치하면 잠금 해제됩니다.",
+                "japanese": "敵ユニットをキルしてアンロック。"
+              },
+              "unlock_condition": "soul_enemy_units_killed",
+              "param_int": 250
+            },
+            "tier_level": 1,
+            "next_tier": "WarborneT2"
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-bf27a1415d2c48d9-fd151f3c26e3aa5469e2053b509e7c8a-v2",
+        "english": "Warborne",
+        "french": "Guerroyeur",
+        "german": "Kriegsgeboren",
+        "russian": "Воитель",
+        "portuguese": "Osso de Guerra",
+        "chinese": "为战而生",
+        "spanish": "Combatiente",
+        "chinese_traditional": "戰生",
+        "korean": "전쟁 태생",
+        "japanese": "ウォーボーン"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-5f208d90ad9ea5b1-fd151f3c26e3aa5469e2053b509e7c8a-v2",
+        "english": "Draw +1 for each floor that has enemy units on it at turn end.",
+        "french": "Piochez +1 pour chaque niveau où se trouvent des ennemis à la fin du tour.",
+        "german": "Ziehe für jede Ebene mit gegnerischen Einheiten am Rundenende +1 Karte.",
+        "russian": "В конце хода вытяните +1 за каждый этаж, где есть враг.",
+        "portuguese": "Compre +1 para cada andar que tenha unidades inimigas no final do turno.",
+        "chinese": "回合结束时，每个存在敌方单位的楼层都会使抽牌数 +1。",
+        "spanish": "Roba +1 por cada piso que tenga unidades enemigas al final del turno.",
+        "chinese_traditional": "在回合結束時，每個有敵方單位的樓層抽+1張牌。",
+        "korean": "턴 종료 시, 적 유닛들이 있는 층 하나당 카드를 1장 추가로 뽑습니다.",
+        "japanese": "ターン終了時に敵ユニットがいるフロア1つにつきドロー+1。"
+      },
+      "relic_effects": [
+        "@WarborneT1.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-e39a9c7cdac636d5-fd151f3c26e3aa5469e2053b509e7c8a-v2",
-      "english": "Slay enemy units to unlock.",
-      "french": "Éliminez des ennemis pour déverrouiller.",
-      "german": "Besiege gegnerische Einheiten, um freizuschalten.",
-      "russian": "Чтобы разблокировать, убейте врагов.",
-      "portuguese": "Abata unidades inimigas para desbloquear.",
-      "chinese": "击杀敌方单位以解锁。",
-      "spanish": "Ejecuta unidades enemigas para desbloquear.",
-      "chinese_traditional": "擊殺敵方單位以解鎖。",
-      "korean": "적 유닛을 처치하면 잠금 해제됩니다.",
-      "japanese": "敵ユニットをキルしてアンロック。"
-    },
-    "unlockCondition": "soul_enemy_units_killed",
-    "paramInt": 250
-  },
-  "tierLevel": 1,
-  "nextTier": "WarborneT2"
+  "relic_effects": [
+    {
+      "id": "WarborneT1.effects0",
+      "name": "RelicEffectAdditionalDrawForEnemyOccupiedFloors"
+    }
+  ]
 }

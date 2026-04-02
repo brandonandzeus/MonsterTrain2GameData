@@ -1,48 +1,62 @@
 {
-  "id": "FriendlyUnitsGetQuick",
-  "guid": "a37c6a8d-71db-478f-a23b-79844916fbf0",
-  "name": "Fast Draw",
-  "nameKey": {
-    "key": "MutatorData_nameKey-a817981811d0238b-e34dafeb87d585b4c89331af0886e50b-v2",
-    "english": "Fast Draw",
-    "french": "Dégainage rapide",
-    "german": "Schnellschuss",
-    "russian": "Быстрая рука",
-    "portuguese": "Rápidos no Gatilho",
-    "chinese": "剑拔弩张",
-    "spanish": "Desenfunde rápido",
-    "chinese_traditional": "快速抽牌",
-    "korean": "신속한 뽑기",
-    "japanese": "高速ドロー"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-0eb69b572c77b0d4-e34dafeb87d585b4c89331af0886e50b-v2",
-    "english": "Friendly units get [quick].",
-    "french": "Les unités alliées gagnent <b>Rapidité</b>.",
-    "german": "Verbündete Einheiten erhalten <b>Flink</b>.",
-    "russian": "У союзников есть [quick].",
-    "portuguese": "Unidades aliadas recebem <b>Iniciativa</b>.",
-    "chinese": "友方单位获得[quick]。",
-    "spanish": "Las unidades aliadas añaden [quick].",
-    "chinese_traditional": "友方單位獲得[quick]。",
-    "korean": "아군 유닛이 [quick]을 얻습니다.",
-    "japanese": "味方ユニットが[quick]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "FriendlyUnitsGetQuick",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "ambush",
+          "mutator": {
+            "boon_value": 8,
+            "tags": [
+              "friendlyeffect"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-a817981811d0238b-e34dafeb87d585b4c89331af0886e50b-v2",
+        "english": "Fast Draw",
+        "french": "Dégainage rapide",
+        "german": "Schnellschuss",
+        "russian": "Быстрая рука",
+        "portuguese": "Rápidos no Gatilho",
+        "chinese": "剑拔弩张",
+        "spanish": "Desenfunde rápido",
+        "chinese_traditional": "快速抽牌",
+        "korean": "신속한 뽑기",
+        "japanese": "高速ドロー"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-0eb69b572c77b0d4-e34dafeb87d585b4c89331af0886e50b-v2",
+        "english": "Friendly units get [quick].",
+        "french": "Les unités alliées gagnent <b>Rapidité</b>.",
+        "german": "Verbündete Einheiten erhalten <b>Flink</b>.",
+        "russian": "У союзников есть [quick].",
+        "portuguese": "Unidades aliadas recebem <b>Iniciativa</b>.",
+        "chinese": "友方单位获得[quick]。",
+        "spanish": "Las unidades aliadas añaden [quick].",
+        "chinese_traditional": "友方單位獲得[quick]。",
+        "korean": "아군 유닛이 [quick]을 얻습니다.",
+        "japanese": "味方ユニットが[quick]を得る。"
+      },
+      "relic_effects": [
+        "@FriendlyUnitsGetQuick.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FriendlyUnitsGetQuick.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "ambush",
           "count": 1
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": -1
+      "param_source_team": "monsters",
+      "param_int": -1
     }
-  ],
-  "boonValue": 8,
-  "tags": [
-    "friendlyeffect"
   ]
 }

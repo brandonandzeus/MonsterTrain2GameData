@@ -1,90 +1,60 @@
 {
-  "id": "UnitUpgradeClanPyreborneAddAvarice",
-  "guid": "4f08fe45-138e-4fbc-afdf-56bc83c2b4d0",
-  "name": "Greedstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-03d874ddb3534875-6d380600268d5e34984436a377f1bca4-v2",
-    "english": "Greedstone",
-    "french": "Pierre d'avidité",
-    "german": "Gierstein",
-    "russian": "Камень жадности",
-    "portuguese": "Pedra da Ganância",
-    "chinese": "贪婪石",
-    "spanish": "Piedra codiciosa",
-    "chinese_traditional": "貪婪石",
-    "korean": "탐욕석",
-    "japanese": "強欲の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-8dfdff646c3b44d8-6d380600268d5e34984436a377f1bca4-v2",
-    "english": "Upgrade a unit with [avarice] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec [avarice] [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit [avarice] [effect0.upgrade.status0.power].",
-    "russian": "Усиление бойца: [avarice] х[effect0.upgrade.status0.power].",
-    "portuguese": "Melhora uma unidade com [avarice] [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得 [avarice] [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con [avarice] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[avarice][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드하여 [avarice] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：[avarice] [effect0.upgrade.status0.power]"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassPyreborne",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "AddAvaricePyreborne",
-        "guid": "7fe5b81e-15be-44cf-845a-5f7fcafba8a0",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-800c2a70913b3466-7961d7c49a6e4094d91fcd3d7893699a-v2",
-          "english": "Greedstone",
-          "french": "Pierre d'avidité",
-          "german": "Gierstein",
-          "russian": "Камень жадности",
-          "portuguese": "Pedra da Ganância",
-          "chinese": "贪婪石",
-          "spanish": "Piedra codiciosa",
-          "chinese_traditional": "貪婪石",
-          "korean": "탐욕석",
-          "japanese": "強欲の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-23f2886270311215-7961d7c49a6e4094d91fcd3d7893699a-v2",
-          "english": "Gain [avarice] [status0.power].",
-          "french": "Octroie [avarice] [status0.power].",
-          "german": "Erhalte [avarice] [status0.power].",
-          "russian": "Дает [status0.power] х[avarice].",
-          "portuguese": "Recebe [avarice] [status0.power].",
-          "chinese": "获得 [avarice] [status0.power]。",
-          "spanish": "Añade [avarice] [status0.power].",
-          "chinese_traditional": "獲得[avarice][status0.power]。",
-          "korean": "[avarice] [status0.power] 효과를 획득합니다.",
-          "japanese": "[avarice] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "avarice",
-            "count": 3
+      "id": "UnitUpgradeClanPyreborneAddAvarice",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassPyreborne",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-03d874ddb3534875-6d380600268d5e34984436a377f1bca4-v2",
+        "english": "Greedstone",
+        "french": "Pierre d'avidité",
+        "german": "Gierstein",
+        "russian": "Камень жадности",
+        "portuguese": "Pedra da Ganância",
+        "chinese": "贪婪石",
+        "spanish": "Piedra codiciosa",
+        "chinese_traditional": "貪婪石",
+        "korean": "탐욕석",
+        "japanese": "強欲の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-8dfdff646c3b44d8-6d380600268d5e34984436a377f1bca4-v2",
+        "english": "Upgrade a unit with [avarice] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec [avarice] [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit [avarice] [effect0.upgrade.status0.power].",
+        "russian": "Усиление бойца: [avarice] х[effect0.upgrade.status0.power].",
+        "portuguese": "Melhora uma unidade com [avarice] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得 [avarice] [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con [avarice] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[avarice][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드하여 [avarice] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：[avarice] [effect0.upgrade.status0.power]"
+      },
+      "relic_effects": [
+        "@UnitUpgradeClanPyreborneAddAvarice.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeClanPyreborneAddAvarice.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "AddAvaricePyreborne"
+    }
+  ]
 }

@@ -1,43 +1,57 @@
 {
-  "id": "Permadeath",
-  "guid": "9385ca5f-ec9e-40de-b5f8-556031ca9a79",
-  "name": "Permadeath",
-  "nameKey": {
-    "key": "MutatorData_nameKey-e7e45eaa04d48abd-e7413f3542b22eb46a7bd433fb2d49c9-v2",
-    "english": "Permadeath",
-    "french": "Mort permanente",
-    "german": "Permadeath",
-    "russian": "Настоящая смерть",
-    "portuguese": "Morte Permanente",
-    "chinese": "永久死亡",
-    "spanish": "Muerte permanente",
-    "chinese_traditional": "一條命",
-    "korean": "일격사",
-    "japanese": "永遠の死"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-4492b8db8f7d30fc-e7413f3542b22eb46a7bd433fb2d49c9-v2",
-    "english": "When a non-Champion unit dies, it is purged from your deck.",
-    "french": "Lorsqu'une unité hors champion meurt, elle est purgée de votre deck.",
-    "german": "Wenn eine Einheit stirbt, die kein Champion ist, wird sie aus deinem Deck verbannt.",
-    "russian": "Когда погибает любой боец, кроме Героя, этот боец исчезает из вашей колоды.",
-    "portuguese": "Quando uma unidade que não seja Campeão morre, é expurgada do seu deck.",
-    "chinese": "当非勇者单位阵亡时，该单位会从卡组中彻底移除。",
-    "spanish": "Cuando muere una unidad que no sea campeón, se elimina de tu mazo.",
-    "chinese_traditional": "當非勇士單位死亡時，該單位會從你的牌組中永久移除。",
-    "korean": "영웅 이외의 유닛이 사망하면, 해당 유닛은 덱에서 제외됩니다.",
-    "japanese": "非チャンピオンユニットが死亡すると、デッキから除外される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectPurgeExhaustedMonsterCard"
+      "id": "Permadeath",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -7,
+            "tags": [
+              "doublespawn",
+              "endless",
+              "roomspace",
+              "positionmatters"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-e7e45eaa04d48abd-e7413f3542b22eb46a7bd433fb2d49c9-v2",
+        "english": "Permadeath",
+        "french": "Mort permanente",
+        "german": "Permadeath",
+        "russian": "Настоящая смерть",
+        "portuguese": "Morte Permanente",
+        "chinese": "永久死亡",
+        "spanish": "Muerte permanente",
+        "chinese_traditional": "一條命",
+        "korean": "일격사",
+        "japanese": "永遠の死"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-4492b8db8f7d30fc-e7413f3542b22eb46a7bd433fb2d49c9-v2",
+        "english": "When a non-Champion unit dies, it is purged from your deck.",
+        "french": "Lorsqu'une unité hors champion meurt, elle est purgée de votre deck.",
+        "german": "Wenn eine Einheit stirbt, die kein Champion ist, wird sie aus deinem Deck verbannt.",
+        "russian": "Когда погибает любой боец, кроме Героя, этот боец исчезает из вашей колоды.",
+        "portuguese": "Quando uma unidade que não seja Campeão morre, é expurgada do seu deck.",
+        "chinese": "当非勇者单位阵亡时，该单位会从卡组中彻底移除。",
+        "spanish": "Cuando muere una unidad que no sea campeón, se elimina de tu mazo.",
+        "chinese_traditional": "當非勇士單位死亡時，該單位會從你的牌組中永久移除。",
+        "korean": "영웅 이외의 유닛이 사망하면, 해당 유닛은 덱에서 제외됩니다.",
+        "japanese": "非チャンピオンユニットが死亡すると、デッキから除外される。"
+      },
+      "relic_effects": [
+        "@Permadeath.effects0"
+      ]
     }
   ],
-  "boonValue": -7,
-  "tags": [
-    "doublespawn",
-    "endless",
-    "roomspace",
-    "positionmatters"
+  "relic_effects": [
+    {
+      "id": "Permadeath.effects0",
+      "name": "RelicEffectPurgeExhaustedMonsterCard"
+    }
   ]
 }

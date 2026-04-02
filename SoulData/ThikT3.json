@@ -1,60 +1,77 @@
 {
-  "id": "ThikT3",
-  "guid": "490d737b-fa0d-4f16-bb90-4ff22af11530",
-  "name": "ThikT3",
-  "nameKey": {
-    "key": "SoulData_nameKey-9d2ee2ed2b25a704-3cd00027c45cba84fa1b6b238b2b3b4c-v2",
-    "english": "Thik III",
-    "french": "Dodu III",
-    "german": "Dick III",
-    "russian": "Глухарь III",
-    "portuguese": "Denso III",
-    "chinese": "壮壮 III",
-    "spanish": "Monumental III",
-    "chinese_traditional": "胖子III",
-    "korean": "티크 III",
-    "japanese": "シクIII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-a81e0fc536b5b162-3cd00027c45cba84fa1b6b238b2b3b4c-v2",
-    "english": "Each time you draft a card, gain a second copy. Your Pyre has +[effect1.secondarypower][pyrehealth] and +[effect1.power][attack] for each card in your deck.",
-    "french": "Chaque fois que vous draftez une carte, recevez-en une copie. Votre Brasier a +[effect1.secondarypower][pyrehealth] et +[effect1.power][attack] pour chaque carte dans votre deck.",
-    "german": "Immer wenn du eine Karte auswählst, erhältst du eine Kopie davon. Deine Höllenglut hat +[effect1.secondarypower][pyrehealth] und +[effect1.power][attack] pro Karte in deinem Deck.",
-    "russian": "Получайте копию выбранной карты во время каждого драфта. Пекло получает +[effect1.secondarypower][pyrehealth] и +[effect1.power][attack] за каждую карту в вашей колоде.",
-    "portuguese": "Toda vez que escolher uma carta de um pacote, receba uma segunda cópia. Sua Pira tem +[effect1.secondarypower][pyrehealth] e +[effect1.power][attack] para cada carta no seu deck.",
-    "chinese": "每当你获得一张卡牌时，额外获得一张复制品。你的卡组中每有一张卡牌，你的薪火就 +[effect1.secondarypower][pyrehealth] 和 +[effect1.power][attack]。",
-    "spanish": "Cada vez que eliges una carta, recibes una segunda copia. Tu Pira tiene +[effect1.secondarypower][pyrehealth] y +[effect1.power][attack] por cada carta en tu mazo.",
-    "chinese_traditional": "每次你挑選一張卡牌時，獲得第二張複製。你的牌組中每有一張卡牌，你的薪火獲得+[effect1.secondarypower][pyrehealth]和+[effect1.power][attack]。",
-    "korean": "드래프트에서 카드를 선택할 때마다 복제 카드를 획득합니다. 덱에 있는 카드 하나당 화로가 +[effect1.secondarypower][pyrehealth] 및 +[effect1.power][attack]을 얻습니다.",
-    "japanese": "カードをドラフトするたびに、2枚目の複製を得る。デッキ内のカード1枚ごとに、自軍の炉に+[effect1.secondarypower][pyrehealth]と+[effect1.power][attack]が付与される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectGetCardCopiesOnDeck",
-      "paramInt": 1
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddPyreAttackAndHealthPerCardInDeck",
-      "paramInt": 2,
-      "paramInt2": 5
+      "id": "ThikT3",
+      "name": "ThikT3",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-41296169064de7cd-3cd00027c45cba84fa1b6b238b2b3b4c-v2",
+                "english": "Draft cards to upgrade.",
+                "french": "Draftez des cartes pour améliorer.",
+                "german": "Ziehe für eine Verbesserung Karten.",
+                "russian": "Чтобы улучшить, выбирайте карты через драфты.",
+                "portuguese": "Escolha cartas para melhorar.",
+                "chinese": "获得卡牌以升级。",
+                "spanish": "Elige cartas para mejorar.",
+                "chinese_traditional": "挑選卡牌以升級。",
+                "korean": "카드들을 드래프트하면 업그레이드됩니다.",
+                "japanese": "カードをドラフトしてアップグレード。"
+              },
+              "unlock_condition": "soul_cards_drafted",
+              "param_int": 50
+            },
+            "tier_level": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-9d2ee2ed2b25a704-3cd00027c45cba84fa1b6b238b2b3b4c-v2",
+        "english": "Thik III",
+        "french": "Dodu III",
+        "german": "Dick III",
+        "russian": "Глухарь III",
+        "portuguese": "Denso III",
+        "chinese": "壮壮 III",
+        "spanish": "Monumental III",
+        "chinese_traditional": "胖子III",
+        "korean": "티크 III",
+        "japanese": "シクIII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-a81e0fc536b5b162-3cd00027c45cba84fa1b6b238b2b3b4c-v2",
+        "english": "Each time you draft a card, gain a second copy. Your Pyre has +[effect1.secondarypower][pyrehealth] and +[effect1.power][attack] for each card in your deck.",
+        "french": "Chaque fois que vous draftez une carte, recevez-en une copie. Votre Brasier a +[effect1.secondarypower][pyrehealth] et +[effect1.power][attack] pour chaque carte dans votre deck.",
+        "german": "Immer wenn du eine Karte auswählst, erhältst du eine Kopie davon. Deine Höllenglut hat +[effect1.secondarypower][pyrehealth] und +[effect1.power][attack] pro Karte in deinem Deck.",
+        "russian": "Получайте копию выбранной карты во время каждого драфта. Пекло получает +[effect1.secondarypower][pyrehealth] и +[effect1.power][attack] за каждую карту в вашей колоде.",
+        "portuguese": "Toda vez que escolher uma carta de um pacote, receba uma segunda cópia. Sua Pira tem +[effect1.secondarypower][pyrehealth] e +[effect1.power][attack] para cada carta no seu deck.",
+        "chinese": "每当你获得一张卡牌时，额外获得一张复制品。你的卡组中每有一张卡牌，你的薪火就 +[effect1.secondarypower][pyrehealth] 和 +[effect1.power][attack]。",
+        "spanish": "Cada vez que eliges una carta, recibes una segunda copia. Tu Pira tiene +[effect1.secondarypower][pyrehealth] y +[effect1.power][attack] por cada carta en tu mazo.",
+        "chinese_traditional": "每次你挑選一張卡牌時，獲得第二張複製。你的牌組中每有一張卡牌，你的薪火獲得+[effect1.secondarypower][pyrehealth]和+[effect1.power][attack]。",
+        "korean": "드래프트에서 카드를 선택할 때마다 복제 카드를 획득합니다. 덱에 있는 카드 하나당 화로가 +[effect1.secondarypower][pyrehealth] 및 +[effect1.power][attack]을 얻습니다.",
+        "japanese": "カードをドラフトするたびに、2枚目の複製を得る。デッキ内のカード1枚ごとに、自軍の炉に+[effect1.secondarypower][pyrehealth]と+[effect1.power][attack]が付与される。"
+      },
+      "relic_effects": [
+        "@ThikT3.effects0",
+        "@ThikT3.effects1"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-41296169064de7cd-3cd00027c45cba84fa1b6b238b2b3b4c-v2",
-      "english": "Draft cards to upgrade.",
-      "french": "Draftez des cartes pour améliorer.",
-      "german": "Ziehe für eine Verbesserung Karten.",
-      "russian": "Чтобы улучшить, выбирайте карты через драфты.",
-      "portuguese": "Escolha cartas para melhorar.",
-      "chinese": "获得卡牌以升级。",
-      "spanish": "Elige cartas para mejorar.",
-      "chinese_traditional": "挑選卡牌以升級。",
-      "korean": "카드들을 드래프트하면 업그레이드됩니다.",
-      "japanese": "カードをドラフトしてアップグレード。"
+  "relic_effects": [
+    {
+      "id": "ThikT3.effects0",
+      "name": "RelicEffectGetCardCopiesOnDeck",
+      "param_int": 1
     },
-    "unlockCondition": "soul_cards_drafted",
-    "paramInt": 50
-  },
-  "tierLevel": 3
+    {
+      "id": "ThikT3.effects1",
+      "name": "RelicEffectAddPyreAttackAndHealthPerCardInDeck",
+      "param_int": 2,
+      "param_int_2": 5
+    }
+  ]
 }

@@ -1,39 +1,53 @@
 {
-  "id": "MoreTriggers",
-  "guid": "cf312f0e-b27b-40a2-b58b-a45a14eb1386",
-  "name": "Highly Reactive",
-  "nameKey": {
-    "key": "MutatorData_nameKey-43bbbd6d4ababf8e-ea69da2025f69d84c986eb5874f7df6e-v2",
-    "english": "Highly Reactive",
-    "french": "Hyper-réactivité",
-    "german": "Hochreaktiv",
-    "russian": "Высокая реакция",
-    "portuguese": "Altamente Radioativo",
-    "chinese": "高反应活性",
-    "spanish": "Altamente reactivo",
-    "chinese_traditional": "高度活躍",
-    "korean": "뛰어난 반응성",
-    "japanese": "反応よし"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-05afe94d62a27399-ea69da2025f69d84c986eb5874f7df6e-v2",
-    "english": "Triggers on friendly units activate an additional time.",
-    "french": "<nobr>+1 déclenchement</nobr> sur les alliés.",
-    "german": "Aktiviert zusätzliche Auslösungen bei verbündeten Einheiten.",
-    "russian": "Активированные умения союзников срабатывают еще раз.",
-    "portuguese": "Os acionadores em unidades aliadas são ativados mais uma vez.",
-    "chinese": "友方单位的触发类能力额外触发一次。",
-    "spanish": "Las activaciones de unidades aliadas tienen efecto una vez más.",
-    "chinese_traditional": "友方單位身上的觸發器額外觸發一次。",
-    "korean": "아군 유닛이 발동하는 효과가 한 번 더 적용됩니다.",
-    "japanese": "味方ユニットのトリガーが追加で発動する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyTriggerCount",
-      "paramInt": 1,
-      "paramBool": true
+      "id": "MoreTriggers",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 8
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-43bbbd6d4ababf8e-ea69da2025f69d84c986eb5874f7df6e-v2",
+        "english": "Highly Reactive",
+        "french": "Hyper-réactivité",
+        "german": "Hochreaktiv",
+        "russian": "Высокая реакция",
+        "portuguese": "Altamente Radioativo",
+        "chinese": "高反应活性",
+        "spanish": "Altamente reactivo",
+        "chinese_traditional": "高度活躍",
+        "korean": "뛰어난 반응성",
+        "japanese": "反応よし"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-05afe94d62a27399-ea69da2025f69d84c986eb5874f7df6e-v2",
+        "english": "Triggers on friendly units activate an additional time.",
+        "french": "<nobr>+1 déclenchement</nobr> sur les alliés.",
+        "german": "Aktiviert zusätzliche Auslösungen bei verbündeten Einheiten.",
+        "russian": "Активированные умения союзников срабатывают еще раз.",
+        "portuguese": "Os acionadores em unidades aliadas são ativados mais uma vez.",
+        "chinese": "友方单位的触发类能力额外触发一次。",
+        "spanish": "Las activaciones de unidades aliadas tienen efecto una vez más.",
+        "chinese_traditional": "友方單位身上的觸發器額外觸發一次。",
+        "korean": "아군 유닛이 발동하는 효과가 한 번 더 적용됩니다.",
+        "japanese": "味方ユニットのトリガーが追加で発動する。"
+      },
+      "relic_effects": [
+        "@MoreTriggers.effects0"
+      ]
     }
   ],
-  "boonValue": 8
+  "relic_effects": [
+    {
+      "id": "MoreTriggers.effects0",
+      "name": "RelicEffectModifyTriggerCount",
+      "param_int": 1,
+      "param_bool": true
+    }
+  ]
 }

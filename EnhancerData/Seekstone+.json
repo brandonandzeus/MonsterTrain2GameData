@@ -1,87 +1,59 @@
 {
-  "id": "SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic",
-  "guid": "cc417cd6-2a2e-4827-879c-a6c5858b2ecd",
-  "name": "Seekstone+",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-622b960d3894f19c-586b87baf748d87459a2dc69ee2c26ed-v2",
-    "english": "Seekstone+",
-    "french": "Pierre chercheuse+",
-    "german": "Suchstein+",
-    "russian": "Камень провидца+",
-    "portuguese": "Pedra da Busca+",
-    "chinese": "寻踪石+",
-    "spanish": "Piedra localizadora+",
-    "chinese_traditional": "尋石+",
-    "korean": "탐구석+",
-    "japanese": "先陣の石+"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-610f892dd418fcf1-586b87baf748d87459a2dc69ee2c26ed-v2",
-    "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember]</nobr> and gain [inherent].",
-    "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember]</nobr> et gagne [inherent].",
-    "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember]</nobr> kostet, und erhalte [inherent].",
-    "russian": "Снижается цена чар на <nobr>-[effect0.upgrade.costreduction][ember]</nobr> и дается [inherent].",
-    "portuguese": "Melhora um feitiço para custar <nobr>-[effect0.upgrade.costreduction][ember]</nobr> e recebe [inherent].",
-    "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]</nobr> 并获得 [inherent]。",
-    "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember]</nobr> y añade [inherent].",
-    "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>，並獲得[inherent]。",
-    "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember]</nobr> 감소하며, [inherent]을 획득합니다.",
-    "japanese": "呪文アップグレード：<nobr>-[effect0.upgrade.costreduction][ember]</nobr>、[inherent]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "SoulSavior_SpellUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_TraitInherentSpellReduceCost",
-        "guid": "91fb7836-5e14-49c8-ac59-ea953342403f",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-bf9ba60286d82463-0367677a627d00e4fb73a4a69a02088a-v2",
-          "english": "Seekslab",
-          "french": "Gemme chercheuse",
-          "german": "Platte der Suche",
-          "russian": "Пласт поиска",
-          "portuguese": "Placa da Busca",
-          "chinese": "寻踪石板",
-          "spanish": "Losa de búsqueda",
-          "chinese_traditional": "尋石板",
-          "korean": "탐색의 서판",
-          "japanese": "先陣の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-d27d47e478cfc222-0367677a627d00e4fb73a4a69a02088a-v2",
-          "english": "-[costreduction][ember] and gain [inherent].",
-          "french": "-[costreduction][ember] et octroie [inherent].",
-          "german": "-[costreduction][ember] und erhalte [inherent].",
-          "russian": "-[costreduction][ember] и дается [inherent].",
-          "portuguese": "-[costreduction][ember] e recebe [inherent].",
-          "chinese": "-[costreduction][ember] 并获得 [inherent]。",
-          "spanish": "-[costreduction][ember] y añade [inherent].",
-          "chinese_traditional": "-[costreduction][ember]並獲得[inherent]。",
-          "korean": "-[costreduction][ember] 및 [inherent] 효과를 획득합니다.",
-          "japanese": "-[costreduction][ember]と[inherent]を得る。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitIntrinsicState"
+      "id": "SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic",
+      "pools": [
+        "SoulSavior_SpellUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlySpells",
-            "cardType": "spell"
-          }
-        ],
-        "costReduction": 2,
-        "xCostReduction": 2
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-622b960d3894f19c-586b87baf748d87459a2dc69ee2c26ed-v2",
+        "english": "Seekstone+",
+        "french": "Pierre chercheuse+",
+        "german": "Suchstein+",
+        "russian": "Камень провидца+",
+        "portuguese": "Pedra da Busca+",
+        "chinese": "寻踪石+",
+        "spanish": "Piedra localizadora+",
+        "chinese_traditional": "尋石+",
+        "korean": "탐구석+",
+        "japanese": "先陣の石+"
       },
-      "paramMinInt": 1,
-      "paramMaxInt": 99
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-610f892dd418fcf1-586b87baf748d87459a2dc69ee2c26ed-v2",
+        "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember]</nobr> and gain [inherent].",
+        "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember]</nobr> et gagne [inherent].",
+        "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember]</nobr> kostet, und erhalte [inherent].",
+        "russian": "Снижается цена чар на <nobr>-[effect0.upgrade.costreduction][ember]</nobr> и дается [inherent].",
+        "portuguese": "Melhora um feitiço para custar <nobr>-[effect0.upgrade.costreduction][ember]</nobr> e recebe [inherent].",
+        "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]</nobr> 并获得 [inherent]。",
+        "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember]</nobr> y añade [inherent].",
+        "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>，並獲得[inherent]。",
+        "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember]</nobr> 감소하며, [inherent]을 획득합니다.",
+        "japanese": "呪文アップグレード：<nobr>-[effect0.upgrade.costreduction][ember]</nobr>、[inherent]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "SoulSavior_TraitInherentSpellReduceCost",
+      "param_min_int": 1,
+      "param_max_int": 99
+    }
+  ]
 }

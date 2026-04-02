@@ -1,46 +1,53 @@
 {
-  "id": "Echoes_RemoveStewards",
-  "guid": "9c9cee66-78ed-45d7-90a4-0dd9fdb4810d",
-  "name": "On Strike",
-  "nameKey": {
-    "key": "MutatorData_nameKey-5ec4eec71d36a921-ebdc6a539282ba640adb1b41e80f0ac5-v2",
-    "english": "On Strike",
-    "french": "Bloquons tout",
-    "german": "Streik",
-    "russian": "Забастовка",
-    "portuguese": "Em Greve",
-    "chinese": "罢工",
-    "spanish": "Al impactar",
-    "chinese_traditional": "罷工中",
-    "korean": "파업 중",
-    "japanese": "ストライキ中"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-a474b87e6111f537-ebdc6a539282ba640adb1b41e80f0ac5-v2",
-    "english": "Steward units are removed from the deck.",
-    "french": "Les stewards sont retirés du deck.",
-    "german": "Begleiter-Einheiten werden aus dem Deck entfernt.",
-    "russian": "Игра без стюардов.",
-    "portuguese": "As unidades de Guardas são removidas do deck.",
-    "chinese": "从卡组中移除乘务员单位。",
-    "spanish": "Las unidades auxiliares se eliminan del mazo.",
-    "chinese_traditional": "服務員單位從牌組中移除。",
-    "korean": "잡부 유닛들이 덱에서 제거되었습니다.",
-    "japanese": "デッキからスチュワードユニットが外される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectPurgeStarterDeckMatchingFilter",
-      "paramCardFilter": {
-        "id": "OnlyStewards",
-        "cardType": "monster",
-        "requiredSubtypesOperator": "and",
-        "requiredSubtypes": [
-          "SubtypesData_TrainSteward"
-        ]
-      }
+      "id": "Echoes_RemoveStewards",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 3,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-5ec4eec71d36a921-ebdc6a539282ba640adb1b41e80f0ac5-v2",
+        "english": "On Strike",
+        "french": "Bloquons tout",
+        "german": "Streik",
+        "russian": "Забастовка",
+        "portuguese": "Em Greve",
+        "chinese": "罢工",
+        "spanish": "Al impactar",
+        "chinese_traditional": "罷工中",
+        "korean": "파업 중",
+        "japanese": "ストライキ中"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-a474b87e6111f537-ebdc6a539282ba640adb1b41e80f0ac5-v2",
+        "english": "Steward units are removed from the deck.",
+        "french": "Les stewards sont retirés du deck.",
+        "german": "Begleiter-Einheiten werden aus dem Deck entfernt.",
+        "russian": "Игра без стюардов.",
+        "portuguese": "As unidades de Guardas são removidas do deck.",
+        "chinese": "从卡组中移除乘务员单位。",
+        "spanish": "Las unidades auxiliares se eliminan del mazo.",
+        "chinese_traditional": "服務員單位從牌組中移除。",
+        "korean": "잡부 유닛들이 덱에서 제거되었습니다.",
+        "japanese": "デッキからスチュワードユニットが外される。"
+      },
+      "relic_effects": [
+        "@Echoes_RemoveStewards.effects0"
+      ]
     }
   ],
-  "boonValue": 3,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_RemoveStewards.effects0",
+      "name": "RelicEffectPurgeStarterDeckMatchingFilter",
+      "param_card_filter": "@Echoes_RemoveStewards.effects0.paramCardFilter"
+    }
+  ]
 }

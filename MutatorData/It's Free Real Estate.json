@@ -1,50 +1,63 @@
 {
-  "id": "FreeRealEstate",
-  "guid": "a6ef5ab8-1701-4488-aae2-681afe241490",
-  "name": "It's Free Real Estate",
-  "nameKey": {
-    "key": "MutatorData_nameKey-de33290fbbfec81e-0f0d8d6f9c3485a4e990639b871541c9-v2",
-    "english": "It's Free Real Estate",
-    "french": "Baisse immobilière",
-    "german": "Gratis-Immobilie",
-    "russian": "Бесплатная недвижимость",
-    "portuguese": "Imóvel Gratuito",
-    "chinese": "免费房地产",
-    "spanish": "Es gratis",
-    "chinese_traditional": "不勞而獲",
-    "korean": "무료 부동산",
-    "japanese": "ゼロ円物件"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-924a5e4759675f7e-0f0d8d6f9c3485a4e990639b871541c9-v2",
-    "english": "Room cards cost 0[ember]. Add [effect1.power] random Room cards to your starting deck.",
-    "french": "Les cartes de salle coûtent 0[ember]. Ajoute [effect1.power] cartes de salle aléatoires à votre deck de départ.",
-    "german": "Raumkarten kosten 0[ember]. Füge [effect1.power] zufällige Raumkarten zu deinem Anfangsdeck hinzu.",
-    "russian": "Карты комнат стоят 0[ember]. Добавляет случайные карты комнат ([effect1.power]) в начальную колоду.",
-    "portuguese": "As Cartas de Sala custam 0[ember]. Adiciona [effect1.power] Cartas de Sala aleatórias ao seu deck inicial.",
-    "chinese": "房间卡费用为0[ember]。在初始卡组中加入 [effect1.power] 张房间卡。",
-    "spanish": "Las cartas de sala cuestan 0[ember]. Añade [effect1.power] cartas de sala aleatorias a tu mazo inicial.",
-    "chinese_traditional": "房間牌費用為0[ember]。在初始牌組中添加[effect1.power]張隨機房間牌。",
-    "korean": "객실 카드의 비용이 0[ember]이 됩니다. 또한 초기 덱에 무작위 객실 카드 [effect1.power]장을 추가합니다.",
-    "japanese": "ルームカードのコストが0[ember]になる。開始デッキに[effect1.power]枚のランダムなルームカードを追加する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardTypeCost",
-      "paramCardType": "room",
-      "paramInt": -99
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "FreeRealEstatePool"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "FreeRealEstatePool"
+      "id": "FreeRealEstate",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 6,
+            "tags": [
+              "spellcost"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-de33290fbbfec81e-0f0d8d6f9c3485a4e990639b871541c9-v2",
+        "english": "It's Free Real Estate",
+        "french": "Baisse immobilière",
+        "german": "Gratis-Immobilie",
+        "russian": "Бесплатная недвижимость",
+        "portuguese": "Imóvel Gratuito",
+        "chinese": "免费房地产",
+        "spanish": "Es gratis",
+        "chinese_traditional": "不勞而獲",
+        "korean": "무료 부동산",
+        "japanese": "ゼロ円物件"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-924a5e4759675f7e-0f0d8d6f9c3485a4e990639b871541c9-v2",
+        "english": "Room cards cost 0[ember]. Add [effect1.power] random Room cards to your starting deck.",
+        "french": "Les cartes de salle coûtent 0[ember]. Ajoute [effect1.power] cartes de salle aléatoires à votre deck de départ.",
+        "german": "Raumkarten kosten 0[ember]. Füge [effect1.power] zufällige Raumkarten zu deinem Anfangsdeck hinzu.",
+        "russian": "Карты комнат стоят 0[ember]. Добавляет случайные карты комнат ([effect1.power]) в начальную колоду.",
+        "portuguese": "As Cartas de Sala custam 0[ember]. Adiciona [effect1.power] Cartas de Sala aleatórias ao seu deck inicial.",
+        "chinese": "房间卡费用为0[ember]。在初始卡组中加入 [effect1.power] 张房间卡。",
+        "spanish": "Las cartas de sala cuestan 0[ember]. Añade [effect1.power] cartas de sala aleatorias a tu mazo inicial.",
+        "chinese_traditional": "房間牌費用為0[ember]。在初始牌組中添加[effect1.power]張隨機房間牌。",
+        "korean": "객실 카드의 비용이 0[ember]이 됩니다. 또한 초기 덱에 무작위 객실 카드 [effect1.power]장을 추가합니다.",
+        "japanese": "ルームカードのコストが0[ember]になる。開始デッキに[effect1.power]枚のランダムなルームカードを追加する。"
+      },
+      "relic_effects": [
+        "@FreeRealEstate.effects0",
+        "@FreeRealEstate.effects1",
+        "@FreeRealEstate.effects1"
+      ]
     }
   ],
-  "boonValue": 6,
-  "tags": [
-    "spellcost"
+  "relic_effects": [
+    {
+      "id": "FreeRealEstate.effects0",
+      "name": "RelicEffectModifyCardTypeCost",
+      "param_card_type": "room",
+      "param_int": -99
+    },
+    {
+      "id": "FreeRealEstate.effects1",
+      "name": "RelicEffectAddCardsStartOfRun",
+      "param_card_pool": "FreeRealEstatePool"
+    }
   ]
 }

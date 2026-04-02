@@ -1,38 +1,52 @@
 {
-  "id": "Echoes_StealthArtifact",
-  "guid": "c90dd0b7-78f7-4063-87ff-c7820e648e24",
-  "name": "Ninja's Best Friend",
-  "nameKey": {
-    "key": "MutatorData_nameKey-329c4832df66bce5-0c569eeafea12c542b500c637e9ce4bf-v2",
-    "english": "Ninja's Best Friend",
-    "french": "Meilleur ami du ninja",
-    "german": "Der beste Freund des Ninjas",
-    "russian": "Лучший друг ниндзя",
-    "portuguese": "Melhor Amigo do Ninja",
-    "chinese": "忍者挚友",
-    "spanish": "El mejor amigo de un ninja",
-    "chinese_traditional": "忍者的摯友",
-    "korean": "닌자의 절친",
-    "japanese": "忍者の十八番"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-049171858fcd9321-0c569eeafea12c542b500c637e9ce4bf-v2",
-    "english": "Start with <b>Shadow's Sheath</b>.",
-    "french": "Commencez avec <b>Fourreau de l'ombre</b>.",
-    "german": "Beginnt mit <b>Schattenscheide</b>.",
-    "russian": "Начните с <b>Темными ножнами</b>.",
-    "portuguese": "Começa com <b>Invólucro das Sombras</b>.",
-    "chinese": "开始游戏时获得<b>阴影护套</b>。",
-    "spanish": "Empiezas con <b>Vaina de sombras</b>.",
-    "chinese_traditional": "以<b>暗影護鞘</b>開始。",
-    "korean": "<b>그림자 칼집</b>을 가지고 시작합니다.",
-    "japanese": "<b>影の覆い</b>がある状態で開始する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddRelicStartOfRun",
-      "paramRelic": "UnitsGainStealthOnSlayPlusAttack"
+      "id": "Echoes_StealthArtifact",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-329c4832df66bce5-0c569eeafea12c542b500c637e9ce4bf-v2",
+        "english": "Ninja's Best Friend",
+        "french": "Meilleur ami du ninja",
+        "german": "Der beste Freund des Ninjas",
+        "russian": "Лучший друг ниндзя",
+        "portuguese": "Melhor Amigo do Ninja",
+        "chinese": "忍者挚友",
+        "spanish": "El mejor amigo de un ninja",
+        "chinese_traditional": "忍者的摯友",
+        "korean": "닌자의 절친",
+        "japanese": "忍者の十八番"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-049171858fcd9321-0c569eeafea12c542b500c637e9ce4bf-v2",
+        "english": "Start with <b>Shadow's Sheath</b>.",
+        "french": "Commencez avec <b>Fourreau de l'ombre</b>.",
+        "german": "Beginnt mit <b>Schattenscheide</b>.",
+        "russian": "Начните с <b>Темными ножнами</b>.",
+        "portuguese": "Começa com <b>Invólucro das Sombras</b>.",
+        "chinese": "开始游戏时获得<b>阴影护套</b>。",
+        "spanish": "Empiezas con <b>Vaina de sombras</b>.",
+        "chinese_traditional": "以<b>暗影護鞘</b>開始。",
+        "korean": "<b>그림자 칼집</b>을 가지고 시작합니다.",
+        "japanese": "<b>影の覆い</b>がある状態で開始する。"
+      },
+      "relic_effects": [
+        "@Echoes_StealthArtifact.effects0"
+      ]
     }
   ],
-  "boonValue": 3
+  "relic_effects": [
+    {
+      "id": "Echoes_StealthArtifact.effects0",
+      "name": "RelicEffectAddRelicStartOfRun",
+      "param_relic": "UnitsGainStealthOnSlayPlusAttack"
+    }
+  ]
 }

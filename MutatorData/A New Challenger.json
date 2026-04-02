@@ -1,41 +1,55 @@
 {
-  "id": "ChampionReplacement",
-  "guid": "8bf5c01f-cd2a-46d2-8ba5-c4f594bf2753",
-  "name": "A New Challenger",
-  "nameKey": {
-    "key": "MutatorData_nameKey-d1b29613ebe9b4ec-7664f339ba0ffb94f8c114eda19c8000-v2",
-    "english": "A New Challenger",
-    "french": "Nouveau challenger",
-    "german": "Ein neuer Herausforderer",
-    "russian": "Новый претендент",
-    "portuguese": "Um Novo Desafiante",
-    "chinese": "新挑战者",
-    "spanish": "Nuevo desafío",
-    "chinese_traditional": "新挑戰者",
-    "korean": "새 도전자",
-    "japanese": "新たな挑戦者"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-482f1bf01138683a-7664f339ba0ffb94f8c114eda19c8000-v2",
-    "english": "Your Champion is randomly replaced by one that is not from your primary or allied clan.",
-    "french": "Votre champion est remplacé aléatoirement par un autre extérieur à votre clan principal ou allié.",
-    "german": "Dein Champion wird zufällig durch einen anderen Champion ersetzt, der nicht zu deinem Haupt- oder Nebenstamm gehört.",
-    "russian": "Ваш Герой заменяется на случайного Героя, не относящегося ни к вашему основному, ни к союзному кланам.",
-    "portuguese": "Seu Campeão é substituído aleatoriamente por um que não faz parte do seu clã principal ou aliado.",
-    "chinese": "你的勇者随机替换为非主氏族或盟友氏族的勇者。",
-    "spanish": "Tu campeón se reemplaza aleatoriamente por uno que no sea de tu clan aliado ni principal.",
-    "chinese_traditional": "你的勇士替換為一個隨機的非主要或盟友氏族勇士。",
-    "korean": "영웅이 주요 클랜이나 동맹 클랜에 속하지 않은 무작위 클랜의 영웅 유닛으로 교체됩니다.",
-    "japanese": "チャンピオンが主力または同盟一族でないものにランダムで置き換えられる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectReplaceChampion",
-      "paramCardPool": "NewChallengerChampionPool"
+      "id": "ChampionReplacement",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3,
+            "tags": [
+              "champion"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-d1b29613ebe9b4ec-7664f339ba0ffb94f8c114eda19c8000-v2",
+        "english": "A New Challenger",
+        "french": "Nouveau challenger",
+        "german": "Ein neuer Herausforderer",
+        "russian": "Новый претендент",
+        "portuguese": "Um Novo Desafiante",
+        "chinese": "新挑战者",
+        "spanish": "Nuevo desafío",
+        "chinese_traditional": "新挑戰者",
+        "korean": "새 도전자",
+        "japanese": "新たな挑戦者"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-482f1bf01138683a-7664f339ba0ffb94f8c114eda19c8000-v2",
+        "english": "Your Champion is randomly replaced by one that is not from your primary or allied clan.",
+        "french": "Votre champion est remplacé aléatoirement par un autre extérieur à votre clan principal ou allié.",
+        "german": "Dein Champion wird zufällig durch einen anderen Champion ersetzt, der nicht zu deinem Haupt- oder Nebenstamm gehört.",
+        "russian": "Ваш Герой заменяется на случайного Героя, не относящегося ни к вашему основному, ни к союзному кланам.",
+        "portuguese": "Seu Campeão é substituído aleatoriamente por um que não faz parte do seu clã principal ou aliado.",
+        "chinese": "你的勇者随机替换为非主氏族或盟友氏族的勇者。",
+        "spanish": "Tu campeón se reemplaza aleatoriamente por uno que no sea de tu clan aliado ni principal.",
+        "chinese_traditional": "你的勇士替換為一個隨機的非主要或盟友氏族勇士。",
+        "korean": "영웅이 주요 클랜이나 동맹 클랜에 속하지 않은 무작위 클랜의 영웅 유닛으로 교체됩니다.",
+        "japanese": "チャンピオンが主力または同盟一族でないものにランダムで置き換えられる。"
+      },
+      "relic_effects": [
+        "@ChampionReplacement.effects0"
+      ]
     }
   ],
-  "boonValue": -3,
-  "tags": [
-    "champion"
+  "relic_effects": [
+    {
+      "id": "ChampionReplacement.effects0",
+      "name": "RelicEffectReplaceChampion",
+      "param_card_pool": "NewChallengerChampionPool"
+    }
   ]
 }

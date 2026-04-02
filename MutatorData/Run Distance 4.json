@@ -1,75 +1,93 @@
 {
-  "id": "SoulSavior_RunDistance4",
-  "guid": "78b4c7f0-dcae-4db5-8f69-f9f6b969348e",
-  "name": "Run Distance 4",
-  "nameKey": {
-    "key": "MutatorData_nameKey-85fd897006caeafd-4ecc43ffb0c04134abf625f1b841a078-v2",
-    "english": "Run Distance 4",
-    "french": "Distance de la partie 4",
-    "german": "Reisedistanz 4",
-    "russian": "Длина маршрута 4",
-    "portuguese": "Distância de Corrida 4",
-    "chinese": "一轮距离 4",
-    "spanish": "Distancia de partida 4",
-    "chinese_traditional": "闖關距離4",
-    "korean": "여정 거리 4",
-    "japanese": "運行距離4"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectScaleStatusApplicationsOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_RunDistance4",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "buff",
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-85fd897006caeafd-4ecc43ffb0c04134abf625f1b841a078-v2",
+        "english": "Run Distance 4",
+        "french": "Distance de la partie 4",
+        "german": "Reisedistanz 4",
+        "russian": "Длина маршрута 4",
+        "portuguese": "Distância de Corrida 4",
+        "chinese": "一轮距离 4",
+        "spanish": "Distancia de partida 4",
+        "chinese_traditional": "闖關距離4",
+        "korean": "여정 거리 4",
+        "japanese": "運行距離4"
+      },
+      "relic_effects": [
+        "@SoulSavior_RunDistance4.effects0",
+        "@SoulSavior_RunDistance4.effects1",
+        "@SoulSavior_RunDistance4.effects2"
+      ],
+      "is_hidden": true
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_RunDistance4.effects0",
+      "name": "RelicEffectScaleStatusApplicationsOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "buff",
           "count": 0
         },
         {
-          "statusId": "hivemind",
+          "status": "hivemind",
           "count": 0
         },
         {
-          "statusId": "burst",
+          "status": "burst",
           "count": 0
         },
         {
-          "statusId": "malaise",
+          "status": "malaise",
           "count": 0
         },
         {
-          "statusId": "corruption",
+          "status": "corruption",
           "count": 0
         },
         {
-          "statusId": "decay",
+          "status": "decay",
           "count": 0
         },
         {
-          "statusId": "debuff",
+          "status": "debuff",
           "count": 0
         },
         {
-          "statusId": "witherbloom",
+          "status": "witherbloom",
           "count": 0
         }
       ],
-      "paramFloat": 1.2,
-      "paramBool": true,
-      "paramBool2": true,
-      "paramBool3": true,
-      "notificationSuppressed": true
+      "param_float": 1.2,
+      "param_bool": true,
+      "param_bool_2": true,
+      "param_bool_3": true,
+      "notification_suppressed": true
     },
     {
-      "relicEffectClassName": "RelicEffectIncreasePyreHealth",
-      "paramInt2": 2,
-      "notificationSuppressed": true
+      "id": "SoulSavior_RunDistance4.effects1",
+      "name": "RelicEffectIncreasePyreHealth",
+      "param_int_2": 2,
+      "notification_suppressed": true
     },
     {
-      "relicEffectClassName": "RelicEffectIncreasePyreAttack",
-      "paramInt2": 2,
-      "notificationSuppressed": true
+      "id": "SoulSavior_RunDistance4.effects2",
+      "name": "RelicEffectIncreasePyreAttack",
+      "param_int_2": 2,
+      "notification_suppressed": true
     }
-  ],
-  "isHidden": true,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

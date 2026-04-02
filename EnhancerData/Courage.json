@@ -1,168 +1,114 @@
 {
-  "id": "PathAngelUnitAbilityCourage",
-  "guid": "bcba7da6-5f71-4d75-a288-9ecefa003489",
-  "name": "Courage",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-d78959d2e127c20a-3bcf2951472cd204ea1b58a290fc081d-v2",
-    "english": "Courage",
-    "french": "Courage",
-    "german": "Mut",
-    "russian": "Храбрость",
-    "portuguese": "Coragem",
-    "chinese": "勇气",
-    "spanish": "Coraje",
-    "chinese_traditional": "勇氣",
-    "korean": "용기",
-    "japanese": "勇気"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-4e3d179f9be2890f-3bcf2951472cd204ea1b58a290fc081d-v2",
-    "english": "Gain <b>Courage</b> Ability.",
-    "french": "Octroie la capacité <b>Courage</b>.",
-    "german": "Erhalte die Fähigkeit <b>Mut</b>.",
-    "russian": "Дает умение <b>Храбрость</b>.",
-    "portuguese": "Recebe a Habilidade <b>Coragem</b>.",
-    "chinese": "获得 <b>勇气</b> 能力。",
-    "spanish": "Obtiene la habilidad <b>Coraje</b>.",
-    "chinese_traditional": "獲得<b>勇氣</b>能力。",
-    "korean": "<b>용기</b> 능력을 획득합니다.",
-    "japanese": "<b>勇気</b>アビリティを得る。"
-  },
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "additionalTooltips": [
+      "id": "PathAngelUnitAbilityCourage",
+      "type": "enhancer",
+      "extensions": [
         {
-          "statusId": "armor",
-          "descriptionKey": {
-            "key": "CardEffectFloorRearrange_FrontSlot_TooltipText",
-            "english": "Move to the front of the floor.",
-            "french": "Déplace à l'avant du niveau.",
-            "german": "Bewege dich auf der Ebene nach vorne.",
-            "russian": "Двигает на переднюю линию этажа.",
-            "portuguese": "Move para a frente do andar.",
-            "chinese": "移动到该层前方。",
-            "spanish": "Se coloca en primera posición.",
-            "chinese_traditional": "移至本層前排。",
-            "korean": "동일 층의 전열로 이동합니다.",
-            "japanese": "フロアの前列に移動する。"
-          },
-          "titleKey": {
-            "key": "CardEffectFloorRearrange_FrontSlot_TooltipTitle",
-            "english": "Advance",
-            "french": "Avancée",
-            "german": "Voranschreiten",
-            "russian": "Наступление",
-            "portuguese": "Avançar",
-            "chinese": "前进",
-            "spanish": "Avance",
-            "chinese_traditional": "前進",
-            "korean": "전진",
-            "japanese": "前進"
-          },
-          "isStatusTooltip": true
+          "enhancer": {
+            "rarity": "common"
+          }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "CourageUnitAbility",
-        "guid": "d013a923-c1e4-44e9-9a4d-823ac872ae5b",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-218112d44af83ca6-d10447104a7bd214eb5b3f38f4d5b0d2-v2",
-          "english": "Courage",
-          "french": "Courage",
-          "german": "Mut",
-          "russian": "Храбрость",
-          "portuguese": "Coragem",
-          "chinese": "勇气",
-          "spanish": "Coraje",
-          "chinese_traditional": "勇氣",
-          "korean": "용기",
-          "japanese": "勇気"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-362409bccab38c50-d10447104a7bd214eb5b3f38f4d5b0d2-v2",
-          "english": "Gain <b>Courage</b> Ability.",
-          "french": "Octroie la capacité <b>Courage</b>.",
-          "german": "Erhalte die Fähigkeit <b>Mut</b>.",
-          "russian": "Дает умение <b>Храбрость</b>.",
-          "portuguese": "Recebe a Habilidade <b>Coragem</b>.",
-          "chinese": "获得 <b>勇气</b> 能力。",
-          "spanish": "Obtiene la habilidad <b>Coraje</b>.",
-          "chinese_traditional": "獲得<b>勇氣</b>能力。",
-          "korean": "<b>용기</b> 능력을 획득합니다.",
-          "japanese": "<b>勇気</b>アビリティを得る。"
-        },
-        "unitAbilityUpgrade": {
-          "id": "CourageAbility",
-          "guid": "be65a126-831e-43c1-b987-698c37edead2",
-          "nameKey": {
-            "key": "CardData_nameKey-c9ad7913c757b1fe-d0cd81c71bd97344590e14c392e4ea30-v2",
-            "english": "Courage",
-            "french": "Courage",
-            "german": "Mut",
-            "russian": "Храбрость",
-            "portuguese": "Coragem",
-            "chinese": "勇气",
-            "spanish": "Coraje",
-            "chinese_traditional": "勇氣",
-            "korean": "용기",
-            "japanese": "勇気"
-          },
-          "overrideDescriptionKey": {
-            "key": "CardData_overrideDescriptionKey-5570d92908b45d12-d0cd81c71bd97344590e14c392e4ea30-v2",
-            "english": "[advance]. Restore to full health and gain [armor] equal to amount healed.",
-            "french": "[advance]. Restaure les PV manquants et confère de l'[armor] valant la quantité soignée.",
-            "german": "[advance]. Regeneriere die volle Gesundheit und erhalte [armor] im Ausmaß der geheilten Gesundheit.",
-            "russian": "[advance]. Восстанавливает недостающее здоровье и дает столько же <b>брони</b>.",
-            "portuguese": "<b>Avança</b>. Restaura toda a vida e concede [armor] igual à quantidade curada.",
-            "chinese": "[advance]。恢复所有生命，并获得相当于治疗量的 [armor]。",
-            "spanish": "[advance]. Restaura toda la salud y añade tanta [armor] como la curación recibida.",
-            "chinese_traditional": "[advance]。恢復至滿血並獲得等於治療量的[armor]。",
-            "korean": "[advance]. 체력을 모두 회복하고 회복량과 동일한 수치의 [armor]을 획득합니다.",
-            "japanese": "[advance]。体力を全回復し、回復量に等しい[armor]を得る。"
-          },
-          "cardType": "spell",
-          "rarity": "common",
-          "effects": [
-            {
-              "effectStateName": "CardEffectFloorRearrange",
-              "targetMode": "self",
-              "targetTeamType": "both"
-            },
-            {
-              "effectStateName": "CardEffectAddStatusEffectPerMissingHp",
-              "targetMode": "self",
-              "targetTeamType": "monsters",
-              "targetModeHealthFilter": "damaged",
-              "paramStatusEffects": [
-                {
-                  "statusId": "armor",
-                  "count": 1
-                }
-              ]
-            },
-            {
-              "effectStateName": "CardEffectHeal",
-              "targetMode": "self",
-              "targetTeamType": "both",
-              "targetModeHealthFilter": "damaged",
-              "paramInt": 9999
-            }
-          ],
-          "cooldownAfterActivated": 3,
-          "isUnitAbility": true,
-          "initialKeyboardTarget": "front_friendly"
-        },
-        "filters": [
-          {
-            "id": "ExcludeUnitsWithAbilities",
-            "excludeIfHasUnitAbility": true
-          }
-        ]
+      "names": {
+        "key": "EnhancerData_nameKey-d78959d2e127c20a-3bcf2951472cd204ea1b58a290fc081d-v2",
+        "english": "Courage",
+        "french": "Courage",
+        "german": "Mut",
+        "russian": "Храбрость",
+        "portuguese": "Coragem",
+        "chinese": "勇气",
+        "spanish": "Coraje",
+        "chinese_traditional": "勇氣",
+        "korean": "용기",
+        "japanese": "勇気"
       },
-      "tooltipTitleKey": "EnhancerData_tooltipTitleKey-958f3ccffc53dcd5-3bcf2951472cd204ea1b58a290fc081d-v2"
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-4e3d179f9be2890f-3bcf2951472cd204ea1b58a290fc081d-v2",
+        "english": "Gain <b>Courage</b> Ability.",
+        "french": "Octroie la capacité <b>Courage</b>.",
+        "german": "Erhalte die Fähigkeit <b>Mut</b>.",
+        "russian": "Дает умение <b>Храбрость</b>.",
+        "portuguese": "Recebe a Habilidade <b>Coragem</b>.",
+        "chinese": "获得 <b>勇气</b> 能力。",
+        "spanish": "Obtiene la habilidad <b>Coraje</b>.",
+        "chinese_traditional": "獲得<b>勇氣</b>能力。",
+        "korean": "<b>용기</b> 능력을 획득합니다.",
+        "japanese": "<b>勇気</b>アビリティを得る。"
+      },
+      "relic_effects": [
+        "@PathAngelUnitAbilityCourage.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "PathAngelUnitAbilityCourage.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "additional_tooltips": [
+        "@PathAngelUnitAbilityCourage.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "CourageUnitAbility"
+    }
+  ],
+  "effects": [
+    {
+      "id": "PathAngelUnitAbilityCourage.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self"
+    },
+    {
+      "id": "PathAngelUnitAbilityCourage.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1",
+      "name": "CardEffectAddStatusEffectPerMissingHp",
+      "target_mode": "self",
+      "target_mode_health_filter": "damaged",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "PathAngelUnitAbilityCourage.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects2",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "target_mode_health_filter": "damaged",
+      "param_int": 9999
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "PathAngelUnitAbilityCourage.effects0.additionalTooltips0",
+      "status": "armor",
+      "descriptions": {
+        "key": "CardEffectFloorRearrange_FrontSlot_TooltipText",
+        "english": "Move to the front of the floor.",
+        "french": "Déplace à l'avant du niveau.",
+        "german": "Bewege dich auf der Ebene nach vorne.",
+        "russian": "Двигает на переднюю линию этажа.",
+        "portuguese": "Move para a frente do andar.",
+        "chinese": "移动到该层前方。",
+        "spanish": "Se coloca en primera posición.",
+        "chinese_traditional": "移至本層前排。",
+        "korean": "동일 층의 전열로 이동합니다.",
+        "japanese": "フロアの前列に移動する。"
+      },
+      "titles": {
+        "key": "CardEffectFloorRearrange_FrontSlot_TooltipTitle",
+        "english": "Advance",
+        "french": "Avancée",
+        "german": "Voranschreiten",
+        "russian": "Наступление",
+        "portuguese": "Avançar",
+        "chinese": "前进",
+        "spanish": "Avance",
+        "chinese_traditional": "前進",
+        "korean": "전진",
+        "japanese": "前進"
+      }
     }
   ]
 }

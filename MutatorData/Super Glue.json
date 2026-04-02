@@ -1,38 +1,52 @@
 {
-  "id": "Echoes_NoRoomOverriding",
-  "guid": "c6f4df71-db09-4006-9d92-5035b78d1152",
-  "name": "Super Glue",
-  "nameKey": {
-    "key": "MutatorData_nameKey-51e94ec97b7e15c6-c84c519f8ef1db84385352b241703993-v2",
-    "english": "Super Glue",
-    "french": "Bien en place",
-    "german": "Superkleber",
-    "russian": "Суперклей",
-    "portuguese": "Supercola",
-    "chinese": "强力胶",
-    "spanish": "Superpegamento",
-    "chinese_traditional": "強力膠",
-    "korean": "순간접착제",
-    "japanese": "超強力接着剤"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-ed1e5386d3c07868-c84c519f8ef1db84385352b241703993-v2",
-    "english": "Train Rooms can not be replaced.",
-    "french": "Les salles du train ne peuvent pas être remplacées.",
-    "german": "Zugräume können nicht ersetzt werden.",
-    "russian": "Нельзя изменять комнаты в поезде.",
-    "portuguese": "Os andares do trem não podem ser substituídos.",
-    "chinese": "无法替换火车房间。",
-    "spanish": "No puedes reemplazar salas del tren.",
-    "chinese_traditional": "列車房間無法被替換。",
-    "korean": "열차 칸을 교체할 수 없습니다.",
-    "japanese": "列車の部屋を置き換えることができなくなる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectTrainRoomAttachmentsAlwaysEmbedded"
+      "id": "Echoes_NoRoomOverriding",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -1,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-51e94ec97b7e15c6-c84c519f8ef1db84385352b241703993-v2",
+        "english": "Super Glue",
+        "french": "Bien en place",
+        "german": "Superkleber",
+        "russian": "Суперклей",
+        "portuguese": "Supercola",
+        "chinese": "强力胶",
+        "spanish": "Superpegamento",
+        "chinese_traditional": "強力膠",
+        "korean": "순간접착제",
+        "japanese": "超強力接着剤"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-ed1e5386d3c07868-c84c519f8ef1db84385352b241703993-v2",
+        "english": "Train Rooms can not be replaced.",
+        "french": "Les salles du train ne peuvent pas être remplacées.",
+        "german": "Zugräume können nicht ersetzt werden.",
+        "russian": "Нельзя изменять комнаты в поезде.",
+        "portuguese": "Os andares do trem não podem ser substituídos.",
+        "chinese": "无法替换火车房间。",
+        "spanish": "No puedes reemplazar salas del tren.",
+        "chinese_traditional": "列車房間無法被替換。",
+        "korean": "열차 칸을 교체할 수 없습니다.",
+        "japanese": "列車の部屋を置き換えることができなくなる。"
+      },
+      "relic_effects": [
+        "@Echoes_NoRoomOverriding.effects0"
+      ]
     }
   ],
-  "boonValue": -1,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_NoRoomOverriding.effects0",
+      "name": "RelicEffectTrainRoomAttachmentsAlwaysEmbedded"
+    }
+  ]
 }

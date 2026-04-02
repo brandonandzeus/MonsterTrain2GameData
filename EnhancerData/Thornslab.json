@@ -1,89 +1,58 @@
 {
-  "id": "SoulSavior_UnitUpgradeClanAwokenAddSpikes",
-  "guid": "cddf391b-af9f-43ae-afeb-ad3b11b4e646",
-  "name": "Thornslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-78493fb683a2d021-6a78551bf1ac41c41a63622e3873af20-v2",
-    "english": "Thornslab",
-    "french": "Gemme d'épines",
-    "german": "Platte des Dorns",
-    "russian": "Пласт шипов",
-    "portuguese": "Placa do Espinho",
-    "chinese": "荆棘石板",
-    "spanish": "Losa espinosa",
-    "chinese_traditional": "荊棘石板",
-    "korean": "가시의 서판",
-    "japanese": "茨の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-5525ccdd8f118282-6a78551bf1ac41c41a63622e3873af20-v2",
-    "english": "Upgrade a unit with +[effect0.upgrade.bonushp][health] and [spikes] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec +[effect0.upgrade.bonushp][health] et [spikes] [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit +[effect0.upgrade.bonushp][health] und [spikes] [effect0.upgrade.status0.power].",
-    "russian": "Усиление бойца: +[effect0.upgrade.bonushp][health] и [spikes] х[effect0.upgrade.status0.power].",
-    "portuguese": "Melhora uma unidade com +[effect0.upgrade.bonushp][health] e [spikes] [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonushp][health]，和[spikes] [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con +[effect0.upgrade.bonushp][health] y [spikes] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得+[effect0.upgrade.bonushp][health]和[spikes][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드함과 동시에 +[effect0.upgrade.bonushp][health] 및 [spikes] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：+[effect0.upgrade.bonushp][health]、[spikes] [effect0.upgrade.status0.power]。"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassAwoken",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_AddSpikes",
-        "guid": "e8922e78-5935-4c3b-a3f2-631a70a89a59",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-8b76a0b4a202c712-dd1e6a81fee69a34ea0068e864e12726-v2",
-          "english": "Thornslab",
-          "french": "Gemme d'épines",
-          "german": "Platte des Dorns",
-          "russian": "Пласт шипов",
-          "portuguese": "Placa do Espinho",
-          "chinese": "荆棘石板",
-          "spanish": "Losa espinosa",
-          "chinese_traditional": "荊棘石板",
-          "korean": "가시의 서판",
-          "japanese": "茨の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-1b133f0534ecd256-dd1e6a81fee69a34ea0068e864e12726-v2",
-          "english": "+[bonushp][health] and gain [spikes] [status0.power].",
-          "french": "+[bonushp][health] et octroie [spikes] [status0.power].",
-          "german": "+[bonushp][health] und erhalte [spikes] [status0.power].",
-          "russian": "+[bonushp][health] и [spikes] х[status0.power].",
-          "portuguese": "+[bonushp][health] e recebe [spikes] [status0.power].",
-          "chinese": "+[bonushp][health] 并获得 [spikes] [status0.power]。",
-          "spanish": "+[bonushp][health] y añade [spikes] [status0.power].",
-          "chinese_traditional": "+[bonushp][health]並獲得[spikes][status0.power]。",
-          "korean": "+[bonushp][health] 및 [spikes] [status0.power] 효과를 획득합니다.",
-          "japanese": "+[bonushp][health]、[spikes] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "spikes",
-            "count": 5
+      "id": "SoulSavior_UnitUpgradeClanAwokenAddSpikes",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassAwoken",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ],
-        "bonusHP": 20
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-78493fb683a2d021-6a78551bf1ac41c41a63622e3873af20-v2",
+        "english": "Thornslab",
+        "french": "Gemme d'épines",
+        "german": "Platte des Dorns",
+        "russian": "Пласт шипов",
+        "portuguese": "Placa do Espinho",
+        "chinese": "荆棘石板",
+        "spanish": "Losa espinosa",
+        "chinese_traditional": "荊棘石板",
+        "korean": "가시의 서판",
+        "japanese": "茨の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-5525ccdd8f118282-6a78551bf1ac41c41a63622e3873af20-v2",
+        "english": "Upgrade a unit with +[effect0.upgrade.bonushp][health] and [spikes] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec +[effect0.upgrade.bonushp][health] et [spikes] [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit +[effect0.upgrade.bonushp][health] und [spikes] [effect0.upgrade.status0.power].",
+        "russian": "Усиление бойца: +[effect0.upgrade.bonushp][health] и [spikes] х[effect0.upgrade.status0.power].",
+        "portuguese": "Melhora uma unidade com +[effect0.upgrade.bonushp][health] e [spikes] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonushp][health]，和[spikes] [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con +[effect0.upgrade.bonushp][health] y [spikes] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得+[effect0.upgrade.bonushp][health]和[spikes][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드함과 동시에 +[effect0.upgrade.bonushp][health] 및 [spikes] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：+[effect0.upgrade.bonushp][health]、[spikes] [effect0.upgrade.status0.power]。"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeClanAwokenAddSpikes.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeClanAwokenAddSpikes.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_AddSpikes"
+    }
+  ]
 }

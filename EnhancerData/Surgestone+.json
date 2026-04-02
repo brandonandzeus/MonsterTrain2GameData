@@ -1,137 +1,91 @@
 {
-  "id": "SoulSavior_SpellMagicPowerBigExtraCost",
-  "guid": "663e3677-8820-411e-98c4-89c7ec8671fe",
-  "name": "Surgestone+",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-79ff7fe387758ab3-fb2a5280350393d4b8009c9166fec835-v2",
-    "english": "Surgestone+",
-    "french": "Pierre de fébrilité+",
-    "german": "Schwallstein+",
-    "russian": "Камень натиска+",
-    "portuguese": "Pedra de Energia+",
-    "chinese": "涌动石+",
-    "spanish": "Piedra sobrecargada+",
-    "chinese_traditional": "湧動石+",
-    "korean": "급증석+",
-    "japanese": "活性の石+"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-18bd08759dfc7baa-fb2a5280350393d4b8009c9166fec835-v2",
-    "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower] and [consume].",
-    "french": "Améliore un sort avec +[effect0.upgrade.bonusdamage] [magicpower] et [consume].",
-    "german": "Verbessere einen Zauber mit +[effect0.upgrade.bonusdamage] [magicpower] und [consume].",
-    "russian": "Улучшение чар: +[magicpower] х[effect0.upgrade.bonusdamage] и [consume].",
-    "portuguese": "Melhora um feitiço com +[effect0.upgrade.bonusdamage] de [magicpower] e [consume].",
-    "chinese": "升级一个法术，使其获得 +[effect0.upgrade.bonusdamage] [magicpower] 和 [consume]。",
-    "spanish": "Mejora un hechizo con +[effect0.upgrade.bonusdamage] [magicpower] y [consume].",
-    "chinese_traditional": "升級一個法術，使其獲得+[effect0.upgrade.bonusdamage][magicpower]和[consume]。",
-    "korean": "주문을 업그레이드함과 동시에 +[effect0.upgrade.bonusdamage] [magicpower] 및 [consume] 효과를 얻습니다.",
-    "japanese": "呪文アップグレード：+[effect0.upgrade.bonusdamage] [magicpower]、[consume]"
-  },
-  "rarity": "common",
-  "pools": [
-    "SoulSavior_SpellUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "additionalTooltips": [
+      "id": "SoulSavior_SpellMagicPowerBigExtraCost",
+      "pools": [
+        "SoulSavior_SpellUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitMagicPower_TooltipText",
-            "english": "Increases the amount of damage dealt and health restored by spells.",
-            "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
-            "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
-            "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
-            "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
-            "chinese": "提高法术造成的伤害与恢复的生命值。",
-            "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
-            "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
-            "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
-            "japanese": "呪文によるダメージと体力の回復量を増加させる。"
-          },
-          "titleKey": {
-            "key": "CardTraitMagicPower_TooltipTitle",
-            "english": "Magic Power",
-            "french": "Puissance magique",
-            "german": "Magische Kraft",
-            "russian": "Сила магии",
-            "portuguese": "Poder Mágico",
-            "chinese": "魔法强度",
-            "spanish": "Poder mágico",
-            "chinese_traditional": "魔法力量",
-            "korean": "마법력",
-            "japanese": "魔力"
+          "enhancer": {
+            "rarity": "common",
+            "numCardsToShowInUpgradeScreen": 0
           }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_ChaosScepter",
-        "guid": "3563a806-8dc5-45f8-a83f-47c3ddc7cd2f",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-d6eabb8740e52eb2-8f350ef7f16069e4fa476f5926274c0c-v2",
-          "english": "Surgeslab",
-          "french": "Gemme de fébrilité",
-          "german": "Platte der Flut",
-          "russian": "Пласт всплеска",
-          "portuguese": "Placa de Energia",
-          "chinese": "涌动石板",
-          "spanish": "Losa arcana",
-          "chinese_traditional": "湧動石板",
-          "korean": "쇄도의 서판",
-          "japanese": "活性の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-efbd0c7fc7550844-8f350ef7f16069e4fa476f5926274c0c-v2",
-          "english": "+[bonusdamage] [magicpower] and gain [consume].",
-          "french": "+[bonusdamage] [magicpower] et octroie [consume].",
-          "german": "+[bonusdamage] [magicpower] und erhalte [consume].",
-          "russian": "+[magicpower] х[bonusdamage] и дается [consume].",
-          "portuguese": "+[bonusdamage] de [magicpower] e recebe [consume].",
-          "chinese": "+[bonusdamage] [magicpower]，并获得 [consume]。",
-          "spanish": "+[bonusdamage] [magicpower] y añade [consume].",
-          "chinese_traditional": "+[bonusdamage][magicpower]並獲得[consume]。",
-          "korean": "+[bonusdamage] [magicpower] 및 [consume] 효과를 획득합니다.",
-          "japanese": "+[bonusdamage] [magicpower]、[consume]を得る。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitExhaustState"
-          }
-        ],
-        "filters": [
-          {
-            "id": "MagicPowerSpells",
-            "cardType": "spell",
-            "requiredCardEffectsOperator": "or",
-            "requiredCardEffects": [
-              "CardEffectDamage",
-              "CardEffectHeal",
-              "CardEffectHealAndDamageRelative",
-              "CardEffectHealAndOverheal",
-              "CardEffectDamagePerSourceAttack",
-              "CardEffectDamagePerHp"
-            ]
-          },
-          {
-            "id": "ExcludedSpellsFromMagicPower",
-            "disallowedCardPools": [
-              "SpellsNotAllowedSpellPowerPool"
-            ]
-          },
-          {
-            "id": "ExcludeConsume",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitExhaustState"
-            ]
-          }
-        ],
-        "bonusDamage": 40,
-        "bonusHeal": 40
-      }
+      "names": {
+        "key": "EnhancerData_nameKey-79ff7fe387758ab3-fb2a5280350393d4b8009c9166fec835-v2",
+        "english": "Surgestone+",
+        "french": "Pierre de fébrilité+",
+        "german": "Schwallstein+",
+        "russian": "Камень натиска+",
+        "portuguese": "Pedra de Energia+",
+        "chinese": "涌动石+",
+        "spanish": "Piedra sobrecargada+",
+        "chinese_traditional": "湧動石+",
+        "korean": "급증석+",
+        "japanese": "活性の石+"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-18bd08759dfc7baa-fb2a5280350393d4b8009c9166fec835-v2",
+        "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower] and [consume].",
+        "french": "Améliore un sort avec +[effect0.upgrade.bonusdamage] [magicpower] et [consume].",
+        "german": "Verbessere einen Zauber mit +[effect0.upgrade.bonusdamage] [magicpower] und [consume].",
+        "russian": "Улучшение чар: +[magicpower] х[effect0.upgrade.bonusdamage] и [consume].",
+        "portuguese": "Melhora um feitiço com +[effect0.upgrade.bonusdamage] de [magicpower] e [consume].",
+        "chinese": "升级一个法术，使其获得 +[effect0.upgrade.bonusdamage] [magicpower] 和 [consume]。",
+        "spanish": "Mejora un hechizo con +[effect0.upgrade.bonusdamage] [magicpower] y [consume].",
+        "chinese_traditional": "升級一個法術，使其獲得+[effect0.upgrade.bonusdamage][magicpower]和[consume]。",
+        "korean": "주문을 업그레이드함과 동시에 +[effect0.upgrade.bonusdamage] [magicpower] 및 [consume] 효과를 얻습니다.",
+        "japanese": "呪文アップグレード：+[effect0.upgrade.bonusdamage] [magicpower]、[consume]"
+      },
+      "relic_effects": [
+        "@SoulSavior_SpellMagicPowerBigExtraCost.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_SpellMagicPowerBigExtraCost.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "additional_tooltips": [
+        "@SoulSavior_SpellMagicPowerBigExtraCost.effects0.additionalTooltips0"
+      ],
+      "param_upgrade": "SoulSavior_ChaosScepter"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "SoulSavior_SpellMagicPowerBigExtraCost.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMagicPower_TooltipText",
+        "english": "Increases the amount of damage dealt and health restored by spells.",
+        "french": "Augmente la quantité de dommages infligés et de PV restaurés par les sorts.",
+        "german": "Erhöht die Menge an zugefügtem Schaden und wiederhergestellter Gesundheit durch Zauber.",
+        "russian": "Увеличивает количество наносимого чарами урона и восстанавливаемого ими здоровья.",
+        "portuguese": "Aumenta a quantidade de dano causado e de vida restaurada por feitiços.",
+        "chinese": "提高法术造成的伤害与恢复的生命值。",
+        "spanish": "Aumenta la cantidad de daño infligido y salud restaurada con los hechizos.",
+        "chinese_traditional": "增加法術造成的傷害和恢復的生命值。",
+        "korean": "주문으로 주는 피해와 회복량이 증가합니다.",
+        "japanese": "呪文によるダメージと体力の回復量を増加させる。"
+      },
+      "titles": {
+        "key": "CardTraitMagicPower_TooltipTitle",
+        "english": "Magic Power",
+        "french": "Puissance magique",
+        "german": "Magische Kraft",
+        "russian": "Сила магии",
+        "portuguese": "Poder Mágico",
+        "chinese": "魔法强度",
+        "spanish": "Poder mágico",
+        "chinese_traditional": "魔法力量",
+        "korean": "마법력",
+        "japanese": "魔力"
+      }
+    }
+  ]
 }

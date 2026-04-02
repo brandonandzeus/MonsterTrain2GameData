@@ -1,42 +1,56 @@
 {
-  "id": "MoreTreasureUnits",
-  "guid": "cbacfccc-fc3b-43b9-b1d2-27a4c30ed628",
-  "name": "Return on Investment",
-  "nameKey": {
-    "key": "MutatorData_nameKey-e142ae2f358bb3fa-02d0de48a9abc4644b6bdf7cc42a8e43-v2",
-    "english": "Return on Investment",
-    "french": "Retour sur investissement",
-    "german": "Rendite",
-    "russian": "Доход от инвестиций",
-    "portuguese": "Retorno de Investimento",
-    "chinese": "投资收益",
-    "spanish": "Inversión exitosa",
-    "chinese_traditional": "投資回報",
-    "korean": "투자 수익",
-    "japanese": "投資収益率"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-17dc99420e711de7-02d0de48a9abc4644b6bdf7cc42a8e43-v2",
-    "english": "Spawn an additional Collector in battles that already have a Collector.",
-    "french": "Génère un grappilleur supplémentaire dans les combats qui en comportent déjà un.",
-    "german": "Erzeuge einen zusätzlichen Sammler in Kämpfen, die bereits einen Sammler haben.",
-    "russian": "Призывает еще одного коллекционера в боях, где он уже есть.",
-    "portuguese": "Faz surgir um Colecionador adicional nas batalhas que já têm um Colecionador.",
-    "chinese": "在已经有收藏家的战斗中额外生成一个收藏家。",
-    "spanish": "Aparece un Coleccionista adicional en las batallas en las que ya hay un Coleccionista.",
-    "chinese_traditional": "在已有收集者的戰鬥中生成額外的收集者。",
-    "korean": "수집가가 등장하는 전투에서 추가로 수집가를 스폰합니다.",
-    "japanese": "すでにコレクターのいるバトルに追加のコレクターを出現させる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeTreasureUnitCount",
-      "paramInt": 1
+      "id": "MoreTreasureUnits",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "goldreward"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-e142ae2f358bb3fa-02d0de48a9abc4644b6bdf7cc42a8e43-v2",
+        "english": "Return on Investment",
+        "french": "Retour sur investissement",
+        "german": "Rendite",
+        "russian": "Доход от инвестиций",
+        "portuguese": "Retorno de Investimento",
+        "chinese": "投资收益",
+        "spanish": "Inversión exitosa",
+        "chinese_traditional": "投資回報",
+        "korean": "투자 수익",
+        "japanese": "投資収益率"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-17dc99420e711de7-02d0de48a9abc4644b6bdf7cc42a8e43-v2",
+        "english": "Spawn an additional Collector in battles that already have a Collector.",
+        "french": "Génère un grappilleur supplémentaire dans les combats qui en comportent déjà un.",
+        "german": "Erzeuge einen zusätzlichen Sammler in Kämpfen, die bereits einen Sammler haben.",
+        "russian": "Призывает еще одного коллекционера в боях, где он уже есть.",
+        "portuguese": "Faz surgir um Colecionador adicional nas batalhas que já têm um Colecionador.",
+        "chinese": "在已经有收藏家的战斗中额外生成一个收藏家。",
+        "spanish": "Aparece un Coleccionista adicional en las batallas en las que ya hay un Coleccionista.",
+        "chinese_traditional": "在已有收集者的戰鬥中生成額外的收集者。",
+        "korean": "수집가가 등장하는 전투에서 추가로 수집가를 스폰합니다.",
+        "japanese": "すでにコレクターのいるバトルに追加のコレクターを出現させる。"
+      },
+      "relic_effects": [
+        "@MoreTreasureUnits.effects0"
+      ]
     }
   ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "tags": [
-    "goldreward"
+  "relic_effects": [
+    {
+      "id": "MoreTreasureUnits.effects0",
+      "name": "RelicEffectChangeTreasureUnitCount",
+      "param_int": 1
+    }
   ]
 }

@@ -1,90 +1,60 @@
 {
-  "id": "UnitUpgradeClanUmbraDamageShield",
-  "guid": "3ec7e45c-0820-45b7-910c-e50e817bcf23",
-  "name": "Shieldstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-2e39da424d364f5a-b66b69bb8137d8249a519389a4217448-v2",
-    "english": "Shieldstone",
-    "french": "Pierre protectrice",
-    "german": "Schildstein",
-    "russian": "Камень защиты",
-    "portuguese": "Pedra da Proteção",
-    "chinese": "护盾石",
-    "spanish": "Piedra protectora",
-    "chinese_traditional": "護盾石",
-    "korean": "보호석",
-    "japanese": "盾の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-3e8415d009467f9f-b66b69bb8137d8249a519389a4217448-v2",
-    "english": "Upgrade a unit with [damageshield] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec <nobr><b>Bouclier protecteur</b></nobr> [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit [effect0.upgrade.status0.power] <nobr><b>Schadensschild</b></nobr>.",
-    "russian": "Усиление бойца: [damageshield] х[effect0.upgrade.status0.power].",
-    "portuguese": "Melhora uma unidade com <nobr><b>Escudo Protetor</b></nobr> [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得<nobr><b>伤害护盾</b></nobr> [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con [damageshield] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[damageshield][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드하여 [damageshield] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：[damageshield] [effect0.upgrade.status0.power]"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassUmbra",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "AddDamageShield3",
-        "guid": "6abbc48c-daba-4292-a1c1-38d98d8b86ad",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-37a3ef9a8b2e9291-189248b1f3777bb42bfd443760b14c85-v2",
-          "english": "Shieldstone",
-          "french": "Pierre protectrice",
-          "german": "Schildstein",
-          "russian": "Камень защиты",
-          "portuguese": "Pedra da Proteção",
-          "chinese": "护盾石",
-          "spanish": "Piedra protectora",
-          "chinese_traditional": "護盾石",
-          "korean": "보호석",
-          "japanese": "盾の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-bb932f1d44a156ef-189248b1f3777bb42bfd443760b14c85-v2",
-          "english": "Gain [damageshield] [status0.power].",
-          "french": "Octroie [damageshield] [status0.power].",
-          "german": "Erhalte [damageshield] [status0.power].",
-          "russian": "Дает [status0.power] х[damageshield].",
-          "portuguese": "Recebe [damageshield] [status0.power].",
-          "chinese": "获得 [damageshield] [status0.power]。",
-          "spanish": "Añade [damageshield] [status0.power].",
-          "chinese_traditional": "獲得[damageshield][status0.power]。",
-          "korean": "[damageshield] [status0.power] 효과를 획득합니다.",
-          "japanese": "[damageshield] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "damage shield",
-            "count": 3
+      "id": "UnitUpgradeClanUmbraDamageShield",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassUmbra",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-2e39da424d364f5a-b66b69bb8137d8249a519389a4217448-v2",
+        "english": "Shieldstone",
+        "french": "Pierre protectrice",
+        "german": "Schildstein",
+        "russian": "Камень защиты",
+        "portuguese": "Pedra da Proteção",
+        "chinese": "护盾石",
+        "spanish": "Piedra protectora",
+        "chinese_traditional": "護盾石",
+        "korean": "보호석",
+        "japanese": "盾の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-3e8415d009467f9f-b66b69bb8137d8249a519389a4217448-v2",
+        "english": "Upgrade a unit with [damageshield] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec <nobr><b>Bouclier protecteur</b></nobr> [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit [effect0.upgrade.status0.power] <nobr><b>Schadensschild</b></nobr>.",
+        "russian": "Усиление бойца: [damageshield] х[effect0.upgrade.status0.power].",
+        "portuguese": "Melhora uma unidade com <nobr><b>Escudo Protetor</b></nobr> [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得<nobr><b>伤害护盾</b></nobr> [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con [damageshield] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[damageshield][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드하여 [damageshield] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：[damageshield] [effect0.upgrade.status0.power]"
+      },
+      "relic_effects": [
+        "@UnitUpgradeClanUmbraDamageShield.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeClanUmbraDamageShield.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "AddDamageShield3"
+    }
+  ]
 }

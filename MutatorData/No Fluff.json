@@ -1,43 +1,59 @@
 {
-  "id": "OneUpgradeSlot",
-  "guid": "fa9f528e-ea3a-40d4-9864-ebde6401a4c7",
-  "name": "No Fluff",
-  "nameKey": {
-    "key": "MutatorData_nameKey-061995511ad96b8f-762e8ddecc917b54b98f368f549fe0e2-v2",
-    "english": "No Fluff",
-    "french": "Sans fioriture",
-    "german": "Keine Extras",
-    "russian": "Ничего лишнего",
-    "portuguese": "Sem Firula",
-    "chinese": "诸事不易",
-    "spanish": "Sin rodeos",
-    "chinese_traditional": "無毛",
-    "korean": "실수는 없다",
-    "japanese": "成長の限界"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-756273380c174525-762e8ddecc917b54b98f368f549fe0e2-v2",
-    "english": "All cards have [effect0.power] fewer upgrade slot.",
-    "french": "Toutes les cartes ont [effect0.power] emplacement d'amélioration en moins.",
-    "german": "Alle Karten haben [effect0.power] Verbesserungs-Platz weniger.",
-    "russian": "Отнимает у всех карт ячейки улучшений: по [effect0.power].",
-    "portuguese": "Todas as cartas têm [effect0.power] espaços de melhoria a menos.",
-    "chinese": "所有卡牌的升级栏位数量减少 [effect0.power]。",
-    "spanish": "Todas las cartas tienen [effect0.power] ranura de mejora menos.",
-    "chinese_traditional": "所有卡牌減少[effect0.power]個升級欄位。",
-    "korean": "모든 카드의 업그레이드 슬롯이 [effect0.power]개 감소합니다.",
-    "japanese": "すべてのカードのアップグレードスロットが[effect0.power]つ減少する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectRemoveSpellUpgradeSlot"
-    },
-    {
-      "relicEffectClassName": "RelicEffectRemoveUnitUpgradeSlot"
+      "id": "OneUpgradeSlot",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -7,
+            "tags": [
+              "upgrades"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-061995511ad96b8f-762e8ddecc917b54b98f368f549fe0e2-v2",
+        "english": "No Fluff",
+        "french": "Sans fioriture",
+        "german": "Keine Extras",
+        "russian": "Ничего лишнего",
+        "portuguese": "Sem Firula",
+        "chinese": "诸事不易",
+        "spanish": "Sin rodeos",
+        "chinese_traditional": "無毛",
+        "korean": "실수는 없다",
+        "japanese": "成長の限界"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-756273380c174525-762e8ddecc917b54b98f368f549fe0e2-v2",
+        "english": "All cards have [effect0.power] fewer upgrade slot.",
+        "french": "Toutes les cartes ont [effect0.power] emplacement d'amélioration en moins.",
+        "german": "Alle Karten haben [effect0.power] Verbesserungs-Platz weniger.",
+        "russian": "Отнимает у всех карт ячейки улучшений: по [effect0.power].",
+        "portuguese": "Todas as cartas têm [effect0.power] espaços de melhoria a menos.",
+        "chinese": "所有卡牌的升级栏位数量减少 [effect0.power]。",
+        "spanish": "Todas las cartas tienen [effect0.power] ranura de mejora menos.",
+        "chinese_traditional": "所有卡牌減少[effect0.power]個升級欄位。",
+        "korean": "모든 카드의 업그레이드 슬롯이 [effect0.power]개 감소합니다.",
+        "japanese": "すべてのカードのアップグレードスロットが[effect0.power]つ減少する。"
+      },
+      "relic_effects": [
+        "@OneUpgradeSlot.effects0",
+        "@OneUpgradeSlot.effects1"
+      ]
     }
   ],
-  "boonValue": -7,
-  "tags": [
-    "upgrades"
+  "relic_effects": [
+    {
+      "id": "OneUpgradeSlot.effects0",
+      "name": "RelicEffectRemoveSpellUpgradeSlot"
+    },
+    {
+      "id": "OneUpgradeSlot.effects1",
+      "name": "RelicEffectRemoveUnitUpgradeSlot"
+    }
   ]
 }

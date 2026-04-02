@@ -1,45 +1,59 @@
 {
-  "id": "SoulSavior_Region2Complete_3",
-  "guid": "c6359412-094b-40bf-bd37-82e5bf31960f",
-  "name": "Callous",
-  "nameKey": {
-    "key": "MutatorData_nameKey-50624bd6b7d88d1b-bb0f94fa5d463e248aabe01d70bf88ab-v2",
-    "english": "Callous",
-    "french": "Cruauté",
-    "german": "Herzlos",
-    "russian": "Бездушие",
-    "portuguese": "Calejado",
-    "chinese": "无情",
-    "spanish": "Crueldad",
-    "chinese_traditional": "冷酷",
-    "korean": "무감각",
-    "japanese": "厚皮"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-a05f56f1c9fd5a19-bb0f94fa5d463e248aabe01d70bf88ab-v2",
-    "english": "Enemy units gain [titanskin] [effect0.status0.power].",
-    "french": "Les ennemis gagnent [titanskin] [effect0.status0.power].",
-    "german": "Gegnerische Einheiten erhalten [titanskin] [effect0.status0.power].",
-    "russian": "Врагам дается [titanskin] х[effect0.status0.power].",
-    "portuguese": "Unidades inimigas recebem [titanskin] [effect0.status0.power].",
-    "chinese": "敌方单位获得 [titanskin] [effect0.status0.power]。",
-    "spanish": "Las unidades enemigas añaden [titanskin] [effect0.status0.power].",
-    "chinese_traditional": "敵方單位獲得[titanskin][effect0.status0.power]。",
-    "korean": "적 유닛들이 [titanskin] [effect0.status0.power] 효과를 획득합니다.",
-    "japanese": "敵ユニットが[titanskin] [effect0.status0.power]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_Region2Complete_3",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "titanskin",
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-50624bd6b7d88d1b-bb0f94fa5d463e248aabe01d70bf88ab-v2",
+        "english": "Callous",
+        "french": "Cruauté",
+        "german": "Herzlos",
+        "russian": "Бездушие",
+        "portuguese": "Calejado",
+        "chinese": "无情",
+        "spanish": "Crueldad",
+        "chinese_traditional": "冷酷",
+        "korean": "무감각",
+        "japanese": "厚皮"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-a05f56f1c9fd5a19-bb0f94fa5d463e248aabe01d70bf88ab-v2",
+        "english": "Enemy units gain [titanskin] [effect0.status0.power].",
+        "french": "Les ennemis gagnent [titanskin] [effect0.status0.power].",
+        "german": "Gegnerische Einheiten erhalten [titanskin] [effect0.status0.power].",
+        "russian": "Врагам дается [titanskin] х[effect0.status0.power].",
+        "portuguese": "Unidades inimigas recebem [titanskin] [effect0.status0.power].",
+        "chinese": "敌方单位获得 [titanskin] [effect0.status0.power]。",
+        "spanish": "Las unidades enemigas añaden [titanskin] [effect0.status0.power].",
+        "chinese_traditional": "敵方單位獲得[titanskin][effect0.status0.power]。",
+        "korean": "적 유닛들이 [titanskin] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "敵ユニットが[titanskin] [effect0.status0.power]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region2Complete_3.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region2Complete_3.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "titanskin",
           "count": 3
         }
       ],
-      "paramSourceTeam": "heroes"
+      "param_source_team": "heroes"
     }
-  ],
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

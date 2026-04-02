@@ -1,59 +1,80 @@
 {
-  "id": "SoulSavior_Region4Complete_3",
-  "guid": "e28c5038-3458-4d5c-89e7-fc0aabcb11f7",
-  "name": "Masochist",
-  "nameKey": {
-    "key": "MutatorData_nameKey-b57a1cb49862ddc4-f06805f2fbf9f66458d5fa6911bf2739-v2",
-    "english": "Masochist",
-    "french": "Masochisme",
-    "german": "Masochist",
-    "russian": "Мазохист",
-    "portuguese": "Masoquista",
-    "chinese": "受虐狂",
-    "spanish": "Masoquismo",
-    "chinese_traditional": "受虐狂",
-    "korean": "피학주의자",
-    "japanese": "マゾヒスト"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-71621ad06b4e8d16-f06805f2fbf9f66458d5fa6911bf2739-v2",
-    "english": "Enemy units gain [regen] [effect0.power] when hit.",
-    "french": "Les ennemis gagnent [regen] [effect0.power] lorsqu'ils sont touchés.",
-    "german": "Gegnerische Einheiten erhalten [regen] [effect0.power], wenn sie getroffen werden.",
-    "russian": "При попадании врагам дается [regen] х[effect0.power].",
-    "portuguese": "As unidades inimigas recebem [regen] [effect0.power] quando atingidas.",
-    "chinese": "敌方单位被命中时，获得 [regen] [effect0.power]。",
-    "spanish": "Las unidades enemigas añaden [regen] [effect0.power] al recibir un impacto.",
-    "chinese_traditional": "敵方單位被擊中時獲得[regen][effect0.power]。",
-    "korean": "타격 시 적 유닛들이 [regen] [effect0.power] 효과를 획득합니다.",
-    "japanese": "敵ユニットが攻撃を受けた時[regen] [effect0.power]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "SoulSavior_Region4Complete_3",
+      "type": "mutator",
+      "extensions": [
         {
-          "trigger": "on_hit",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "regen",
-                  "count": 2
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
         }
       ],
-      "paramSourceTeam": "heroes"
+      "names": {
+        "key": "MutatorData_nameKey-b57a1cb49862ddc4-f06805f2fbf9f66458d5fa6911bf2739-v2",
+        "english": "Masochist",
+        "french": "Masochisme",
+        "german": "Masochist",
+        "russian": "Мазохист",
+        "portuguese": "Masoquista",
+        "chinese": "受虐狂",
+        "spanish": "Masoquismo",
+        "chinese_traditional": "受虐狂",
+        "korean": "피학주의자",
+        "japanese": "マゾヒスト"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-71621ad06b4e8d16-f06805f2fbf9f66458d5fa6911bf2739-v2",
+        "english": "Enemy units gain [regen] [effect0.power] when hit.",
+        "french": "Les ennemis gagnent [regen] [effect0.power] lorsqu'ils sont touchés.",
+        "german": "Gegnerische Einheiten erhalten [regen] [effect0.power], wenn sie getroffen werden.",
+        "russian": "При попадании врагам дается [regen] х[effect0.power].",
+        "portuguese": "As unidades inimigas recebem [regen] [effect0.power] quando atingidas.",
+        "chinese": "敌方单位被命中时，获得 [regen] [effect0.power]。",
+        "spanish": "Las unidades enemigas añaden [regen] [effect0.power] al recibir un impacto.",
+        "chinese_traditional": "敵方單位被擊中時獲得[regen][effect0.power]。",
+        "korean": "타격 시 적 유닛들이 [regen] [effect0.power] 효과를 획득합니다.",
+        "japanese": "敵ユニットが攻撃を受けた時[regen] [effect0.power]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region4Complete_3.effects0"
+      ]
     }
   ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region4Complete_3.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@SoulSavior_Region4Complete_3.effects0.triggers0"
+      ],
+      "param_source_team": "heroes"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SoulSavior_Region4Complete_3.effects0.triggers0",
+      "trigger": "on_hit",
+      "effects": [
+        "@SoulSavior_Region4Complete_3.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "SoulSavior_Region4Complete_3.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "regen",
+          "count": 2
+        }
+      ]
+    }
+  ]
 }

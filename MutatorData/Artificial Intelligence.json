@@ -1,39 +1,53 @@
 {
-  "id": "Echoes_PyreCanUseAbilityMultipleTimes",
-  "guid": "806077f8-3495-4f36-a27f-a0454229fc57",
-  "name": "Artificial Intelligence",
-  "nameKey": {
-    "key": "MutatorData_nameKey-2cb28d4c33f209a5-68f619c76bd238140bfa730f0672ad38-v2",
-    "english": "Artificial Intelligence",
-    "french": "Intelligence artificielle",
-    "german": "Künstliche Intelligenz",
-    "russian": "Искусственный интеллект",
-    "portuguese": "Inteligência Artificial",
-    "chinese": "人工智能",
-    "spanish": "Inteligencia artificial",
-    "chinese_traditional": "人工智慧",
-    "korean": "인공지능",
-    "japanese": "人工知能"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-14a6d56107cd27d8-68f619c76bd238140bfa730f0672ad38-v2",
-    "english": "Pyre Abilities now have a two turn [cooldown].",
-    "french": "Les capacités du Brasier ont désormais une [cooldown] de deux tours.",
-    "german": "Höllenglut-Fähigkeiten haben nun eine [cooldown] von zwei Zügen.",
-    "russian": "[cooldown] способностей Пекла занимает два хода.",
-    "portuguese": "As habilidades da Pira agora têm um [cooldown] de dois turnos.",
-    "chinese": "薪火技能现在有两回合的[cooldown]。",
-    "spanish": "Las habilidades de Pira tienen una [cooldown] de dos turnos.",
-    "chinese_traditional": "火堆能力現在有兩回合的[cooldown]。",
-    "korean": "이제 화로 능력의 [cooldown]이 2턴이 됩니다.",
-    "japanese": "炉のアビリティの[cooldown]が2ターンになる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyUnitAbilityCooldown",
-      "paramInt": 2,
-      "paramInt2": 2
+      "id": "Echoes_PyreCanUseAbilityMultipleTimes",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-2cb28d4c33f209a5-68f619c76bd238140bfa730f0672ad38-v2",
+        "english": "Artificial Intelligence",
+        "french": "Intelligence artificielle",
+        "german": "Künstliche Intelligenz",
+        "russian": "Искусственный интеллект",
+        "portuguese": "Inteligência Artificial",
+        "chinese": "人工智能",
+        "spanish": "Inteligencia artificial",
+        "chinese_traditional": "人工智慧",
+        "korean": "인공지능",
+        "japanese": "人工知能"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-14a6d56107cd27d8-68f619c76bd238140bfa730f0672ad38-v2",
+        "english": "Pyre Abilities now have a two turn [cooldown].",
+        "french": "Les capacités du Brasier ont désormais une [cooldown] de deux tours.",
+        "german": "Höllenglut-Fähigkeiten haben nun eine [cooldown] von zwei Zügen.",
+        "russian": "[cooldown] способностей Пекла занимает два хода.",
+        "portuguese": "As habilidades da Pira agora têm um [cooldown] de dois turnos.",
+        "chinese": "薪火技能现在有两回合的[cooldown]。",
+        "spanish": "Las habilidades de Pira tienen una [cooldown] de dos turnos.",
+        "chinese_traditional": "火堆能力現在有兩回合的[cooldown]。",
+        "korean": "이제 화로 능력의 [cooldown]이 2턴이 됩니다.",
+        "japanese": "炉のアビリティの[cooldown]が2ターンになる。"
+      },
+      "relic_effects": [
+        "@Echoes_PyreCanUseAbilityMultipleTimes.effects0"
+      ]
     }
   ],
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_PyreCanUseAbilityMultipleTimes.effects0",
+      "name": "RelicEffectModifyUnitAbilityCooldown",
+      "param_int": 2,
+      "param_int_2": 2
+    }
+  ]
 }

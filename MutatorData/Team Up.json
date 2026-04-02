@@ -1,41 +1,57 @@
 {
-  "id": "TeamUp",
-  "guid": "2779ef65-9c0f-4b47-9279-b67211aec28c",
-  "name": "Team Up",
-  "nameKey": {
-    "key": "MutatorData_nameKey-dbba5ea966313f2c-2ace7eb0788b5c2fea798fc711aae73c-v2",
-    "english": "Team Up",
-    "french": "Travail d'équipe",
-    "german": "Teambildung",
-    "russian": "Полная команда",
-    "portuguese": "Formação de Equipe",
-    "chinese": "并肩作战",
-    "spanish": "Alianza",
-    "chinese_traditional": "組隊",
-    "korean": "협력 체계",
-    "japanese": "力を合わせて"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-653359e15ba7f992-2ace7eb0788b5c2fea798fc711aae73c-v2",
-    "english": "Gain the Champion of the allied clan. It gains a random upgrade and levels up after each flying boss.",
-    "french": "Gagnez le champion du clan allié. Il reçoit une amélioration aléatoire et monte de niveau après chaque boss volant.",
-    "german": "Erhalte den Champion des Nebenstammes. Erhält nach jedem fliegenden Boss eine zufällige Verbesserung und steigt in der Stufe auf.",
-    "russian": "Дает Героя союзного клана, который получает случайное улучшение и новый уровень после каждого летающего босса.",
-    "portuguese": "Recebe o Campeão do clã aliado. Ele recebe uma melhoria aleatória e sobe de nível após cada chefão voador.",
-    "chinese": "获得盟友氏族的勇者。飞行首领出现后，该勇者会获得随机升级且等级提升。",
-    "spanish": "Obtienes el campeón del clan aliado, que recibe una mejora aleatoria después de cada jefe volador.",
-    "chinese_traditional": "獲得盟友氏族的勇士。每次擊敗飛行首領之後獲得隨機升級與等級提升。",
-    "korean": "아군 클랜의 영웅을 획득합니다. 해당 영웅은 무작위 업그레이드를 받고, 비행형 보스를 처치할 때마다 레벨이 상승합니다.",
-    "japanese": "同盟一族のチャンピオンを得る。各飛行ボスの後にランダムなアップグレードとレベルアップを得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddAlliedChampionToDeck"
-    },
-    {
-      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
-      "paramGrantableReward": "ChampionUpgradeAlliedReward"
+      "id": "TeamUp",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 7
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-dbba5ea966313f2c-2ace7eb0788b5c2fea798fc711aae73c-v2",
+        "english": "Team Up",
+        "french": "Travail d'équipe",
+        "german": "Teambildung",
+        "russian": "Полная команда",
+        "portuguese": "Formação de Equipe",
+        "chinese": "并肩作战",
+        "spanish": "Alianza",
+        "chinese_traditional": "組隊",
+        "korean": "협력 체계",
+        "japanese": "力を合わせて"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-653359e15ba7f992-2ace7eb0788b5c2fea798fc711aae73c-v2",
+        "english": "Gain the Champion of the allied clan. It gains a random upgrade and levels up after each flying boss.",
+        "french": "Gagnez le champion du clan allié. Il reçoit une amélioration aléatoire et monte de niveau après chaque boss volant.",
+        "german": "Erhalte den Champion des Nebenstammes. Erhält nach jedem fliegenden Boss eine zufällige Verbesserung und steigt in der Stufe auf.",
+        "russian": "Дает Героя союзного клана, который получает случайное улучшение и новый уровень после каждого летающего босса.",
+        "portuguese": "Recebe o Campeão do clã aliado. Ele recebe uma melhoria aleatória e sobe de nível após cada chefão voador.",
+        "chinese": "获得盟友氏族的勇者。飞行首领出现后，该勇者会获得随机升级且等级提升。",
+        "spanish": "Obtienes el campeón del clan aliado, que recibe una mejora aleatoria después de cada jefe volador.",
+        "chinese_traditional": "獲得盟友氏族的勇士。每次擊敗飛行首領之後獲得隨機升級與等級提升。",
+        "korean": "아군 클랜의 영웅을 획득합니다. 해당 영웅은 무작위 업그레이드를 받고, 비행형 보스를 처치할 때마다 레벨이 상승합니다.",
+        "japanese": "同盟一族のチャンピオンを得る。各飛行ボスの後にランダムなアップグレードとレベルアップを得る。"
+      },
+      "relic_effects": [
+        "@TeamUp.effects0",
+        "@TeamUp.effects1"
+      ]
     }
   ],
-  "boonValue": 7
+  "relic_effects": [
+    {
+      "id": "TeamUp.effects0",
+      "name": "RelicEffectAddAlliedChampionToDeck"
+    },
+    {
+      "id": "TeamUp.effects1",
+      "name": "RelicEffectGrantRewardStartOfRun",
+      "param_grantable_reward": "ChampionUpgradeAlliedReward"
+    }
+  ]
 }

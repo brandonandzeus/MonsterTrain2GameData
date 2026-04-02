@@ -1,50 +1,74 @@
 {
-  "id": "BothSidesUnitsAreStronger",
-  "guid": "b75d5726-62ef-47ce-9378-ac3721594bab",
-  "name": "Brawl",
-  "nameKey": {
-    "key": "MutatorData_nameKey-3e72e3605615ef11-1d83718ac66361b42aa129997974ccb9-v2",
-    "english": "Brawl",
-    "french": "Bagarre",
-    "german": "Rauferei",
-    "russian": "Потасовка",
-    "portuguese": "Disputa",
-    "chinese": "殴斗",
-    "spanish": "Trifulca",
-    "chinese_traditional": "混戰",
-    "korean": "난투",
-    "japanese": "大乱闘"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-717774b2387cd0d9-1d83718ac66361b42aa129997974ccb9-v2",
-    "english": "All units gain +[effect2.power][attack] and +[effect0.power][health]. Your Pyre gains +[effect6.power][attack].",
-    "french": "Toutes les unités gagnent +[effect2.power][attack] et +[effect0.power][health]. Votre Brasier gagne +[effect6.power][attack].",
-    "german": "Alle Einheiten erhalten +[effect2.power][attack] und +[effect0.power][health]. Deine Höllenglut erhält +[effect6.power][attack].",
-    "russian": "И союзные, и вражеские бойцы получают +[effect2.power][attack] и +[effect0.power][health]. Ваше Пекло получает +[effect6.power][attack].",
-    "portuguese": "Todas as unidades recebem +[effect2.power][attack] e +[effect0.power][health]. Sua Pira recebe +[effect6.power][attack].",
-    "chinese": "所有友方单位与敌方单位获得 +[effect2.power][attack]，+[effect0.power][health]。你的薪火获得 +[effect6.power][attack]。",
-    "spanish": "Todas las unidades añaden +[effect2.power][attack] y +[effect0.power][health]. Tu Pira añade +[effect6.power][attack].",
-    "chinese_traditional": "所有單位獲得+[effect2.power][attack]和+[effect0.power][health]。你的火堆獲得+[effect6.power][attack]。",
-    "korean": "모든 유닛이 +[effect2.power][attack] 및 +[effect0.power][health]을 획득합니다. 화로는 +[effect6.power][attack]을 획득합니다.",
-    "japanese": "すべてのユニットが+[effect2.power][attack]と+[effect0.power][health]を得る。自軍の炉が+[effect6.power][attack]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "heroes",
-      "paramInt": 10,
-      "paramTrigger": "on_spawn"
+      "id": "BothSidesUnitsAreStronger",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -5,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-3e72e3605615ef11-1d83718ac66361b42aa129997974ccb9-v2",
+        "english": "Brawl",
+        "french": "Bagarre",
+        "german": "Rauferei",
+        "russian": "Потасовка",
+        "portuguese": "Disputa",
+        "chinese": "殴斗",
+        "spanish": "Trifulca",
+        "chinese_traditional": "混戰",
+        "korean": "난투",
+        "japanese": "大乱闘"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-717774b2387cd0d9-1d83718ac66361b42aa129997974ccb9-v2",
+        "english": "All units gain +[effect2.power][attack] and +[effect0.power][health]. Your Pyre gains +[effect6.power][attack].",
+        "french": "Toutes les unités gagnent +[effect2.power][attack] et +[effect0.power][health]. Votre Brasier gagne +[effect6.power][attack].",
+        "german": "Alle Einheiten erhalten +[effect2.power][attack] und +[effect0.power][health]. Deine Höllenglut erhält +[effect6.power][attack].",
+        "russian": "И союзные, и вражеские бойцы получают +[effect2.power][attack] и +[effect0.power][health]. Ваше Пекло получает +[effect6.power][attack].",
+        "portuguese": "Todas as unidades recebem +[effect2.power][attack] e +[effect0.power][health]. Sua Pira recebe +[effect6.power][attack].",
+        "chinese": "所有友方单位与敌方单位获得 +[effect2.power][attack]，+[effect0.power][health]。你的薪火获得 +[effect6.power][attack]。",
+        "spanish": "Todas las unidades añaden +[effect2.power][attack] y +[effect0.power][health]. Tu Pira añade +[effect6.power][attack].",
+        "chinese_traditional": "所有單位獲得+[effect2.power][attack]和+[effect0.power][health]。你的火堆獲得+[effect6.power][attack]。",
+        "korean": "모든 유닛이 +[effect2.power][attack] 및 +[effect0.power][health]을 획득합니다. 화로는 +[effect6.power][attack]을 획득합니다.",
+        "japanese": "すべてのユニットが+[effect2.power][attack]と+[effect0.power][health]を得る。自軍の炉が+[effect6.power][attack]を得る。"
+      },
+      "relic_effects": [
+        "@BothSidesUnitsAreStronger.effects0",
+        "@BothSidesUnitsAreStronger.effects1",
+        "@BothSidesUnitsAreStronger.effects2",
+        "@BothSidesUnitsAreStronger.effects3",
+        "@BothSidesUnitsAreStronger.effects4",
+        "@BothSidesUnitsAreStronger.effects5",
+        "@BothSidesUnitsAreStronger.effects6"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "BothSidesUnitsAreStronger.effects0",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "heroes",
+      "param_int": 10,
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterMaxHealth",
-      "paramSourceTeam": "monsters",
-      "paramInt": 10,
-      "paramTrigger": "on_spawn_not_from_card"
+      "id": "BothSidesUnitsAreStronger.effects1",
+      "name": "RelicEffectModifyCharacterMaxHealth",
+      "param_source_team": "monsters",
+      "param_int": 10,
+      "param_trigger": "on_spawn_not_from_card"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "tooltipTitleKey": {
+      "id": "BothSidesUnitsAreStronger.effects2",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "tooltip_titles": {
         "key": "MutatorData_tooltipTitleKey-83b231edeb7f8dd9-1d83718ac66361b42aa129997974ccb9-v2",
         "english": "Artifact - Brawl",
         "french": "Artéfact - Bagarre",
@@ -57,32 +81,34 @@
         "korean": "유물 - 난투",
         "japanese": "アーティファクト - 大乱闘"
       },
-      "paramSourceTeam": "heroes",
-      "paramInt": 5,
-      "paramTrigger": "on_spawn"
+      "param_source_team": "heroes",
+      "param_int": 5,
+      "param_trigger": "on_spawn"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCharacterAttackDamage",
-      "paramCardType": "invalid",
-      "paramSourceTeam": "monsters",
-      "paramInt": 5,
-      "paramTrigger": "on_spawn_not_from_card"
+      "id": "BothSidesUnitsAreStronger.effects3",
+      "name": "RelicEffectModifyCharacterAttackDamage",
+      "param_card_type": "invalid",
+      "param_source_team": "monsters",
+      "param_int": 5,
+      "param_trigger": "on_spawn_not_from_card"
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCardAttack",
-      "paramCardType": "monster",
-      "paramInt": 5
+      "id": "BothSidesUnitsAreStronger.effects4",
+      "name": "RelicEffectModifyCardAttack",
+      "param_card_type": "monster",
+      "param_int": 5
     },
     {
-      "relicEffectClassName": "RelicEffectModifyCardHealth",
-      "paramCardType": "monster",
-      "paramInt": 10
+      "id": "BothSidesUnitsAreStronger.effects5",
+      "name": "RelicEffectModifyCardHealth",
+      "param_card_type": "monster",
+      "param_int": 10
     },
     {
-      "relicEffectClassName": "RelicEffectTowerDamageDealtModified",
-      "paramInt": 10
+      "id": "BothSidesUnitsAreStronger.effects6",
+      "name": "RelicEffectTowerDamageDealtModified",
+      "param_int": 10
     }
-  ],
-  "boonValue": -5,
-  "disableInDailyChallenges": true
+  ]
 }

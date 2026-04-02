@@ -1,99 +1,57 @@
 {
-  "id": "SoulSavior_UnitUpgradeClanWurmBuffCorruptcost",
-  "guid": "3e53b16d-86e9-43c5-b678-408dcfdd3105",
-  "name": "Echoslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-f23daeb9b67e79b8-b2a4dd55c4c81874fbb83996be42dbdb-v2",
-    "english": "Echoslab",
-    "french": "Gemme d'écho",
-    "german": "Platte des Echos",
-    "russian": "Пласт эхо",
-    "portuguese": "Placa do Eco",
-    "chinese": "水晶石板",
-    "spanish": "Losa de eco",
-    "chinese_traditional": "迴響石板",
-    "korean": "메아리의 서판",
-    "japanese": "残響の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-b8c4012134e6420a-b2a4dd55c4c81874fbb83996be42dbdb-v2",
-    "english": "Upgrade a unit with +[effect0.upgrade.roommodifier0.power][attack] per [corrupt].",
-    "french": "Améliore une unité avec +[effect0.upgrade.roommodifier0.power][attack] par [corrupt].",
-    "german": "Verbessere eine Einheit mit +[effect0.upgrade.roommodifier0.power][attack] pro [corrupt].",
-    "russian": "Усиление бойца: +[effect0.upgrade.roommodifier0.power][attack] за 1[corrupt].",
-    "portuguese": "Melhora uma unidade com +[effect0.upgrade.roommodifier0.power][attack] por [corrupt].",
-    "chinese": "升级一个单位，使其获得每层 [corrupt] +[effect0.upgrade.roommodifier0.power][attack]。",
-    "spanish": "Mejora una unidad con +[effect0.upgrade.roommodifier0.power][attack] por acumulación de [corrupt].",
-    "chinese_traditional": "升級一個單位，使其每[corrupt]+[effect0.upgrade.roommodifier0.power][attack]。",
-    "korean": "[corrupt]마다 유닛을 업그레이드함과 동시에 +[effect0.upgrade.roommodifier0.power][attack]을 적용합니다.",
-    "japanese": "[corrupt]1つにつき+[effect0.upgrade.roommodifier0.power][attack]でユニットをアップグレードする。"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassWurm",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_AddWurmScaleDamage",
-        "guid": "17b82351-e075-479b-b846-771b28e84c4a",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-55f969db0a6a4824-a52215056a0ddbb43bf158eac54625e7-v2",
-          "english": "Echoslab",
-          "french": "Gemme d'écho",
-          "german": "Platte des Echos",
-          "russian": "Пласт эхо",
-          "portuguese": "Placa do Eco",
-          "chinese": "水晶石板",
-          "spanish": "Losa de eco",
-          "chinese_traditional": "迴響石板",
-          "korean": "메아리의 서판",
-          "japanese": "残響の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-033bcefec38dc3ee-a52215056a0ddbb43bf158eac54625e7-v2",
-          "english": "Gain '+[roommodifier0.power][attack] per [corrupt]'.",
-          "french": "Octroie +[roommodifier0.power][attack] par [corrupt].",
-          "german": "Erhalte +[roommodifier0.power][attack] pro [corrupt].",
-          "russian": "Дает +[roommodifier0.power][attack] за стоимость в [corrupt].",
-          "portuguese": "Recebe '-[roommodifier0.power][attack] por [corrupt]'.",
-          "chinese": "获得“每层 [corrupt] +[roommodifier0.power][attack]”。",
-          "spanish": "Añade «+[roommodifier0.power][attack] por acumulación de [corrupt]».",
-          "chinese_traditional": "獲得「每[corrupt]+[roommodifier0.power][attack]」。",
-          "korean": "'[corrupt] 하나당 +[roommodifier0.power][attack]'을 획득합니다.",
-          "japanese": "[corrupt]1つにつき+[roommodifier0.power][attack]を得る。"
-        },
-        "roomModifierUpgrades": [
-          {
-            "descriptionKey": {
-              "key": "CardUpgradeData_descriptionKey-905f6b6dcbeb9e34-a52215056a0ddbb43bf158eac54625e7-v2",
-              "english": "+[paramint][attack] per [corrupt].",
-              "french": "+[paramint][attack] par [corrupt].",
-              "german": "+[paramint][attack] pro [corrupt].",
-              "russian": "+[paramint][attack] за [corrupt].",
-              "portuguese": "+[paramint][attack] por [corrupt].",
-              "chinese": "每点[corrupt] +[paramint][attack]。",
-              "spanish": "+[paramint][attack] por cada [corrupt].",
-              "chinese_traditional": "每[corrupt]+[paramint][attack]。",
-              "korean": "[corrupt]당 +[paramint][attack].",
-              "japanese": "[corrupt]1つにつき+[paramint][attack]。"
-            },
-            "descriptionKeyInPlay": "CardUpgradeData_descriptionKeyInPlay-c15d28225bd74c1c-a52215056a0ddbb43bf158eac54625e7-v2",
-            "roomStateModifierClassName": "RoomStateSelfDamagePerCorruptionModifier",
-            "paramInt": 10
+      "id": "SoulSavior_UnitUpgradeClanWurmBuffCorruptcost",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassWurm"
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyAttackingUnits",
-            "cardType": "monster",
-            "excludeNonAttackingMonsters": true
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-f23daeb9b67e79b8-b2a4dd55c4c81874fbb83996be42dbdb-v2",
+        "english": "Echoslab",
+        "french": "Gemme d'écho",
+        "german": "Platte des Echos",
+        "russian": "Пласт эхо",
+        "portuguese": "Placa do Eco",
+        "chinese": "水晶石板",
+        "spanish": "Losa de eco",
+        "chinese_traditional": "迴響石板",
+        "korean": "메아리의 서판",
+        "japanese": "残響の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-b8c4012134e6420a-b2a4dd55c4c81874fbb83996be42dbdb-v2",
+        "english": "Upgrade a unit with +[effect0.upgrade.roommodifier0.power][attack] per [corrupt].",
+        "french": "Améliore une unité avec +[effect0.upgrade.roommodifier0.power][attack] par [corrupt].",
+        "german": "Verbessere eine Einheit mit +[effect0.upgrade.roommodifier0.power][attack] pro [corrupt].",
+        "russian": "Усиление бойца: +[effect0.upgrade.roommodifier0.power][attack] за 1[corrupt].",
+        "portuguese": "Melhora uma unidade com +[effect0.upgrade.roommodifier0.power][attack] por [corrupt].",
+        "chinese": "升级一个单位，使其获得每层 [corrupt] +[effect0.upgrade.roommodifier0.power][attack]。",
+        "spanish": "Mejora una unidad con +[effect0.upgrade.roommodifier0.power][attack] por acumulación de [corrupt].",
+        "chinese_traditional": "升級一個單位，使其每[corrupt]+[effect0.upgrade.roommodifier0.power][attack]。",
+        "korean": "[corrupt]마다 유닛을 업그레이드함과 동시에 +[effect0.upgrade.roommodifier0.power][attack]을 적용합니다.",
+        "japanese": "[corrupt]1つにつき+[effect0.upgrade.roommodifier0.power][attack]でユニットをアップグレードする。"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeClanWurmBuffCorruptcost.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeClanWurmBuffCorruptcost.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_AddWurmScaleDamage"
     }
   ]
 }

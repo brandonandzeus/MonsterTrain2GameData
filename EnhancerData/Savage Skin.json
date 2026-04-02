@@ -1,78 +1,57 @@
 {
-  "id": "UnitUpgradeTitanSavageryTitanskin",
-  "guid": "0fdc9b41-3510-48f1-b269-8233479632e6",
-  "name": "Savage Skin",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-aaa152dd748f01cf-cd5c369418c21d6458d0968d79e54c87-v2",
-    "english": "Savage Skin",
-    "french": "Peau sauvage",
-    "german": "Barbarenhaut",
-    "russian": "Кожа Изувера",
-    "portuguese": "Pele da Barbárie",
-    "chinese": "野蛮皮肤",
-    "spanish": "Piel salvaje",
-    "chinese_traditional": "蠻荒皮膚",
-    "korean": "거친 피부",
-    "japanese": "獰猛な肌"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-5e63939b55d8d9e3-cd5c369418c21d6458d0968d79e54c87-v2",
-    "english": "[titanskin] [effect0.upgrade.status0.power].",
-    "french": "[titanskin] [effect0.upgrade.status0.power].",
-    "german": "[titanskin] [effect0.upgrade.status0.power].",
-    "russian": "[titanskin] х[effect0.upgrade.status0.power].",
-    "portuguese": "[titanskin] [effect0.upgrade.status0.power].",
-    "chinese": "[titanskin] [effect0.upgrade.status0.power]。",
-    "spanish": "[titanskin] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "[titanskin][effect0.upgrade.status0.power]。",
-    "korean": "[titanskin] [effect0.upgrade.status0.power].",
-    "japanese": "[titanskin] [effect0.upgrade.status0.power]。"
-  },
-  "rarity": "common",
-  "pools": [
-    "TitanSavageryUpgradePool"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "TitanSkin5",
-        "guid": "c87050f8-46f8-453b-99c1-de97d6070922",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-07c3ee1c06db1a6d-170d5bc19fb724f4abc4c6a74639d079-v2",
-          "english": "Savage Skin",
-          "french": "Peau sauvage",
-          "german": "Barbarenhaut",
-          "russian": "Кожа Изувера",
-          "portuguese": "Pele da Barbárie",
-          "chinese": "野蛮皮肤",
-          "spanish": "Piel salvaje",
-          "chinese_traditional": "蠻荒皮膚",
-          "korean": "거친 피부",
-          "japanese": "獰猛な肌"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-c247d16196aabc76-170d5bc19fb724f4abc4c6a74639d079-v2",
-          "english": "[titanskin] [status0.power].",
-          "french": "[titanskin] [status0.power].",
-          "german": "[titanskin] [status0.power].",
-          "russian": "[titanskin] х[status0.power].",
-          "portuguese": "[titanskin] [status0.power].",
-          "chinese": "[titanskin] [status0.power]。",
-          "spanish": "[titanskin] [status0.power].",
-          "chinese_traditional": "[titanskin][status0.power]。",
-          "korean": "[titanskin] [status0.power].",
-          "japanese": "[titanskin] [status0.power]。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "titanskin",
-            "count": 5
+      "id": "UnitUpgradeTitanSavageryTitanskin",
+      "pools": [
+        "TitanSavageryUpgradePool"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-aaa152dd748f01cf-cd5c369418c21d6458d0968d79e54c87-v2",
+        "english": "Savage Skin",
+        "french": "Peau sauvage",
+        "german": "Barbarenhaut",
+        "russian": "Кожа Изувера",
+        "portuguese": "Pele da Barbárie",
+        "chinese": "野蛮皮肤",
+        "spanish": "Piel salvaje",
+        "chinese_traditional": "蠻荒皮膚",
+        "korean": "거친 피부",
+        "japanese": "獰猛な肌"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-5e63939b55d8d9e3-cd5c369418c21d6458d0968d79e54c87-v2",
+        "english": "[titanskin] [effect0.upgrade.status0.power].",
+        "french": "[titanskin] [effect0.upgrade.status0.power].",
+        "german": "[titanskin] [effect0.upgrade.status0.power].",
+        "russian": "[titanskin] х[effect0.upgrade.status0.power].",
+        "portuguese": "[titanskin] [effect0.upgrade.status0.power].",
+        "chinese": "[titanskin] [effect0.upgrade.status0.power]。",
+        "spanish": "[titanskin] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "[titanskin][effect0.upgrade.status0.power]。",
+        "korean": "[titanskin] [effect0.upgrade.status0.power].",
+        "japanese": "[titanskin] [effect0.upgrade.status0.power]。"
+      },
+      "relic_effects": [
+        "@UnitUpgradeTitanSavageryTitanskin.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeTitanSavageryTitanskin.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "TitanSkin5"
+    }
+  ]
 }

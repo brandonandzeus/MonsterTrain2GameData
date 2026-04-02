@@ -1,99 +1,57 @@
 {
-  "id": "SoulSavior_UnitUpgradeEndless",
-  "guid": "b0c6529e-40f3-4d0a-86dc-4d2f98e0680b",
-  "name": "Immortalslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-47ff47c1cc0e2203-089344f5a69635f4fa5b1426f42e42e5-v2",
-    "english": "Immortalslab",
-    "french": "Gemme immortelle",
-    "german": "Platte der Unsterblichkeit",
-    "russian": "Пласт бессмертия",
-    "portuguese": "Placa Imortal",
-    "chinese": "不朽石板",
-    "spanish": "Losa inmortal",
-    "chinese_traditional": "不朽石板",
-    "korean": "불멸의 서판",
-    "japanese": "不死の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-eee6254624f0ef15-089344f5a69635f4fa5b1426f42e42e5-v2",
-    "english": "Gain [endless] and -[effect0.upgrade.costreduction][ember].",
-    "french": "Applique [endless] et -[effect0.upgrade.costreduction][ember].",
-    "german": "Erhalte [endless] und -[effect0.upgrade.costreduction][ember].",
-    "russian": "Даются [endless] и -[effect0.upgrade.costreduction][ember].",
-    "portuguese": "Recebe [endless] e -[effect0.upgrade.costreduction][ember].",
-    "chinese": "获得 [endless] 和 -[effect0.upgrade.costreduction][ember]。",
-    "spanish": "Añade [endless] y -[effect0.upgrade.costreduction][ember].",
-    "chinese_traditional": "獲得[endless]和-[effect0.upgrade.costreduction][ember]。",
-    "korean": "[endless] 획득 및 -[effect0.upgrade.costreduction][ember].",
-    "japanese": "[endless]と-[effect0.upgrade.costreduction][ember]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_AddEndless",
-        "guid": "df017d45-37b8-4161-aab1-add232f06b3d",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-0132a177e0e3f5f5-cbd794f4a7827694e85880c385ec7d5a-v2",
-          "english": "Immortalslab",
-          "french": "Gemme immortelle",
-          "german": "Platte der Unsterblichkeit",
-          "russian": "Пласт бессмертия",
-          "portuguese": "Placa Imortal",
-          "chinese": "不朽石板",
-          "spanish": "Losa inmortal",
-          "chinese_traditional": "不朽石板",
-          "korean": "불멸의 서판",
-          "japanese": "不死の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-07bc7da6c12a242d-cbd794f4a7827694e85880c385ec7d5a-v2",
-          "english": "Gain [endless] and -[costreduction][ember].",
-          "french": "Applique [endless] et -[costreduction][ember].",
-          "german": "Erhalte [endless] und -[costreduction][ember].",
-          "russian": "Даются [endless] и -[costreduction][ember].",
-          "portuguese": "Recebe [endless] e -[costreduction][ember].",
-          "chinese": "获得 [endless] 和 -[costreduction][ember]。",
-          "spanish": "Añade [endless] y -[costreduction][ember].",
-          "chinese_traditional": "獲得[endless]和-[costreduction][ember]。",
-          "korean": "[endless] 획득 및 -[costreduction][ember].",
-          "japanese": "[endless]と-[costreduction][ember]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "endless",
-            "count": 1
+      "id": "SoulSavior_UnitUpgradeEndless",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEndless",
-            "excludedStatusEffects": [
-              {
-                "statusId": "endless",
-                "count": 1
-              }
-            ],
-            "excludedStatusEffectsOperator": "and"
-          },
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ],
-        "costReduction": 1,
-        "xCostReduction": 1
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-47ff47c1cc0e2203-089344f5a69635f4fa5b1426f42e42e5-v2",
+        "english": "Immortalslab",
+        "french": "Gemme immortelle",
+        "german": "Platte der Unsterblichkeit",
+        "russian": "Пласт бессмертия",
+        "portuguese": "Placa Imortal",
+        "chinese": "不朽石板",
+        "spanish": "Losa inmortal",
+        "chinese_traditional": "不朽石板",
+        "korean": "불멸의 서판",
+        "japanese": "不死の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-eee6254624f0ef15-089344f5a69635f4fa5b1426f42e42e5-v2",
+        "english": "Gain [endless] and -[effect0.upgrade.costreduction][ember].",
+        "french": "Applique [endless] et -[effect0.upgrade.costreduction][ember].",
+        "german": "Erhalte [endless] und -[effect0.upgrade.costreduction][ember].",
+        "russian": "Даются [endless] и -[effect0.upgrade.costreduction][ember].",
+        "portuguese": "Recebe [endless] e -[effect0.upgrade.costreduction][ember].",
+        "chinese": "获得 [endless] 和 -[effect0.upgrade.costreduction][ember]。",
+        "spanish": "Añade [endless] y -[effect0.upgrade.costreduction][ember].",
+        "chinese_traditional": "獲得[endless]和-[effect0.upgrade.costreduction][ember]。",
+        "korean": "[endless] 획득 및 -[effect0.upgrade.costreduction][ember].",
+        "japanese": "[endless]と-[effect0.upgrade.costreduction][ember]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeEndless.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeEndless.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_AddEndless"
+    }
+  ]
 }

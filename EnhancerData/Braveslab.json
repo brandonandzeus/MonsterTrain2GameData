@@ -1,88 +1,58 @@
 {
-  "id": "SoulSavior_UnitUpgradeClanBanishedAddValor",
-  "guid": "4787851e-3669-4d34-96b2-1c61be585310",
-  "name": "Braveslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-bc0de98ff2d131a3-089568b09bf56a942b6dbc415b8e49bd-v2",
-    "english": "Braveslab",
-    "french": "Gemme de bravoure",
-    "german": "Platte der Tapferen",
-    "russian": "Пласт храбрости",
-    "portuguese": "Placa da Bravura",
-    "chinese": "勇气石板",
-    "spanish": "Losa de valentía",
-    "chinese_traditional": "勇石板",
-    "korean": "용맹의 서판",
-    "japanese": "勇気の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-a508e2787125d31a-089568b09bf56a942b6dbc415b8e49bd-v2",
-    "english": "Upgrade a unit with [valor] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec [valor] [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit [valor] [effect0.upgrade.status0.power].",
-    "russian": "Усиление бойца: [valor] х[effect0.upgrade.status0.power].",
-    "portuguese": "Melhora uma unidade com [valor] [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得 [valor] [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con [valor] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[valor][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드함과 동시에 [valor] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：[valor] [effect0.upgrade.status0.power]"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_AddValorBanished",
-        "guid": "6539194a-e6a6-48ca-a665-2a888d4fa9a6",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-da1361a2661ab7f6-c96149a97080ca740b41f2024d1d4e61-v2",
-          "english": "Braveslab",
-          "french": "Gemme de bravoure",
-          "german": "Platte der Tapferen",
-          "russian": "Пласт храбрости",
-          "portuguese": "Placa da Bravura",
-          "chinese": "勇气石板",
-          "spanish": "Losa de valentía",
-          "chinese_traditional": "勇石板",
-          "korean": "용맹의 서판",
-          "japanese": "勇気の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-d0083bd0a922f047-c96149a97080ca740b41f2024d1d4e61-v2",
-          "english": "Gain [valor] [status0.power].",
-          "french": "Octroie [valor] [status0.power].",
-          "german": "Erhalte [valor] [status0.power].",
-          "russian": "Дается [valor] х[status0.power].",
-          "portuguese": "Recebe [valor] [status0.power].",
-          "chinese": "获得 [valor] [status0.power]。",
-          "spanish": "Añade [valor] [status0.power].",
-          "chinese_traditional": "獲得[valor][status0.power]。",
-          "korean": "[valor] [status0.power] 효과를 획득합니다.",
-          "japanese": "[valor] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "valor",
-            "count": 16
+      "id": "SoulSavior_UnitUpgradeClanBanishedAddValor",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassBanished",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-bc0de98ff2d131a3-089568b09bf56a942b6dbc415b8e49bd-v2",
+        "english": "Braveslab",
+        "french": "Gemme de bravoure",
+        "german": "Platte der Tapferen",
+        "russian": "Пласт храбрости",
+        "portuguese": "Placa da Bravura",
+        "chinese": "勇气石板",
+        "spanish": "Losa de valentía",
+        "chinese_traditional": "勇石板",
+        "korean": "용맹의 서판",
+        "japanese": "勇気の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-a508e2787125d31a-089568b09bf56a942b6dbc415b8e49bd-v2",
+        "english": "Upgrade a unit with [valor] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec [valor] [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit [valor] [effect0.upgrade.status0.power].",
+        "russian": "Усиление бойца: [valor] х[effect0.upgrade.status0.power].",
+        "portuguese": "Melhora uma unidade com [valor] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得 [valor] [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con [valor] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[valor][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드함과 동시에 [valor] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：[valor] [effect0.upgrade.status0.power]"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeClanBanishedAddValor.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeClanBanishedAddValor.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_AddValorBanished"
+    }
+  ]
 }

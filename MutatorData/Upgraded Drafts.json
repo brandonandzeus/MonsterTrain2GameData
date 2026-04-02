@@ -1,38 +1,52 @@
 {
-  "id": "UpgradedDrafts",
-  "guid": "d9a96deb-bbb3-4f0a-9c30-19fac8d04ee8",
-  "name": "Upgraded Drafts",
-  "nameKey": {
-    "key": "MutatorData_nameKey-b1cfc2d963724320-4de1e1a599101844cbfc942ff37b7285-v2",
-    "english": "Upgraded Drafts",
-    "french": "Conscription améliorée",
-    "german": "Verbesserte Ziehung",
-    "russian": "Улучшенные карты",
-    "portuguese": "Projetos Melhorados",
-    "chinese": "升级草案",
-    "spanish": "Elecciones mejoradas",
-    "chinese_traditional": "升級構築",
-    "korean": "업그레이드된 드래프트",
-    "japanese": "ドラフトアップグレード"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-63be40aeb88e33e4-4de1e1a599101844cbfc942ff37b7285-v2",
-    "english": "Cards in reward packs and unit banners come with a random upgrade.",
-    "french": "Amélioration aléatoire pour les cartes des packs de récompenses et bannières d'unités.",
-    "german": "Karten in Belohnungspacks und Einheitenbannern kommen mit einem zufälligen Upgrade.",
-    "russian": "У карт из призовых наборов и знамен бойцов появляется случайное улучшение.",
-    "portuguese": "Cartas em pacotes de recompensas e estandartes de unidades vêm com uma melhoria aleatória.",
-    "chinese": "奖励卡包中的卡牌与单位战旗拥有一项随机升级。",
-    "spanish": "Las cartas de los sobres de recompensa y los estandartes de unidad incluyen una mejora aleatoria.",
-    "chinese_traditional": "獎勵卡包和單位旗幟中的卡牌帶有一個隨機升級。",
-    "korean": "무작위 업그레이드와 함께 보상 카드 팩과 유닛 깃발을 제공합니다.",
-    "japanese": "報酬パックとユニットバナーのカードにランダムなアップグレードが適用される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStartingUpgradeToCardDrafts",
-      "paramEnhancerPool": "DraftUpgradePool"
+      "id": "UpgradedDrafts",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 6
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-b1cfc2d963724320-4de1e1a599101844cbfc942ff37b7285-v2",
+        "english": "Upgraded Drafts",
+        "french": "Conscription améliorée",
+        "german": "Verbesserte Ziehung",
+        "russian": "Улучшенные карты",
+        "portuguese": "Projetos Melhorados",
+        "chinese": "升级草案",
+        "spanish": "Elecciones mejoradas",
+        "chinese_traditional": "升級構築",
+        "korean": "업그레이드된 드래프트",
+        "japanese": "ドラフトアップグレード"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-63be40aeb88e33e4-4de1e1a599101844cbfc942ff37b7285-v2",
+        "english": "Cards in reward packs and unit banners come with a random upgrade.",
+        "french": "Amélioration aléatoire pour les cartes des packs de récompenses et bannières d'unités.",
+        "german": "Karten in Belohnungspacks und Einheitenbannern kommen mit einem zufälligen Upgrade.",
+        "russian": "У карт из призовых наборов и знамен бойцов появляется случайное улучшение.",
+        "portuguese": "Cartas em pacotes de recompensas e estandartes de unidades vêm com uma melhoria aleatória.",
+        "chinese": "奖励卡包中的卡牌与单位战旗拥有一项随机升级。",
+        "spanish": "Las cartas de los sobres de recompensa y los estandartes de unidad incluyen una mejora aleatoria.",
+        "chinese_traditional": "獎勵卡包和單位旗幟中的卡牌帶有一個隨機升級。",
+        "korean": "무작위 업그레이드와 함께 보상 카드 팩과 유닛 깃발을 제공합니다.",
+        "japanese": "報酬パックとユニットバナーのカードにランダムなアップグレードが適用される。"
+      },
+      "relic_effects": [
+        "@UpgradedDrafts.effects0"
+      ]
     }
   ],
-  "boonValue": 6
+  "relic_effects": [
+    {
+      "id": "UpgradedDrafts.effects0",
+      "name": "RelicEffectAddStartingUpgradeToCardDrafts",
+      "param_enhancer_pool": "DraftUpgradePool"
+    }
+  ]
 }

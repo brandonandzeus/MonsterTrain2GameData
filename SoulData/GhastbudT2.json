@@ -1,100 +1,72 @@
 {
-  "id": "GhastbudT2",
-  "guid": "5ccf558b-1993-4399-b14f-48b6da4dda39",
-  "name": "GhastbudT2",
-  "nameKey": {
-    "key": "SoulData_nameKey-33894035414ff1bd-5e46b81ceba78484c8752a5a686e14c4-v2",
-    "english": "Ghastbud II",
-    "french": "Ectopote II",
-    "german": "Gruselwurzelkumpel II",
-    "russian": "Крепыш II",
-    "portuguese": "Rebento Fantasma II",
-    "chinese": "阿飘 II",
-    "spanish": "Retoño pálido II",
-    "chinese_traditional": "幽靈芽II",
-    "korean": "가스트버드 II",
-    "japanese": "ガストバッドII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-f3678df75b6f7046-5e46b81ceba78484c8752a5a686e14c4-v2",
-    "english": "Gain [titanite], [endless], and -[effect0.upgrade.costreduction][ember].",
-    "french": "Octroie [titanite], [endless] et -[effect0.upgrade.costreduction][ember].",
-    "german": "Erhalte [titanite], [endless] und -[effect0.upgrade.costreduction][ember].",
-    "russian": "Даются [titanite], [endless], и -[effect0.upgrade.costreduction][ember].",
-    "portuguese": "Recebe [titanite], [endless] e -[effect0.upgrade.costreduction][ember].",
-    "chinese": "获得 [titanite]，[endless] 和 -[effect0.upgrade.costreduction][ember]。",
-    "spanish": "Añade [titanite], [endless] y -[effect0.upgrade.costreduction][ember].",
-    "chinese_traditional": "獲得[titanite]、[endless]和-[effect0.upgrade.costreduction][ember]。",
-    "korean": "[titanite], [endless], -[effect0.upgrade.costreduction][ember]을 획득합니다.",
-    "japanese": "[titanite]、[endless]、-[effect0.upgrade.costreduction][ember]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "GhastbudT2_Upgrade",
-        "guid": "84a02d0a-dfe0-4a45-8fdf-471f3fabec15",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-88d72d100a585d72-fa0cad740e01cb94d9ecf0b33932ca46-v2",
-          "english": "Ghastbud",
-          "french": "Ectopote",
-          "german": "Gruselwurzelkumpel",
-          "russian": "Крепыш",
-          "portuguese": "Rebento Fantasma",
-          "chinese": "阿飘",
-          "spanish": "Retoño pálido",
-          "chinese_traditional": "幽靈芽",
-          "korean": "가스트버드",
-          "japanese": "ガストバッド"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-bdd3ac0cac4695b8-fa0cad740e01cb94d9ecf0b33932ca46-v2",
-          "english": "Gain [titanite], [endless], and -[costreduction][ember].",
-          "french": "Octroie [titanite], [endless] et -[costreduction][ember].",
-          "german": "Erhalte [titanite], [endless] und -[costreduction][ember].",
-          "russian": "Даются [titanite], [endless], и -[costreduction][ember].",
-          "portuguese": "Recebe [titanite], [endless] e -[costreduction][ember].",
-          "chinese": "获得 [titanite]，[endless] 和 -[costreduction][ember]。",
-          "spanish": "Añade [titanite], [endless] y -[costreduction][ember].",
-          "chinese_traditional": "獲得[titanite]、[endless]和-[costreduction][ember]。",
-          "korean": "[titanite], [endless], -[costreduction][ember]을 획득합니다.",
-          "japanese": "[titanite]、[endless]、-[costreduction][ember]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "titanite",
-            "count": 1
-          },
-          {
-            "statusId": "endless",
-            "count": 1
+      "id": "GhastbudT2",
+      "name": "GhastbudT2",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-e63d02fe7e811be4-5e46b81ceba78484c8752a5a686e14c4-v2",
+                "english": "Defeat Lylith to upgrade.",
+                "french": "Battez Lylith pour améliorer.",
+                "german": "Besiege zum Freischalten Lylith.",
+                "russian": "Чтобы улучшить, победите Лилит.",
+                "portuguese": "Derrote Lylith para melhorar.",
+                "chinese": "击败莉莉丝以升级。",
+                "spanish": "Derrota a Lylith para mejorar.",
+                "chinese_traditional": "擊敗莉莉絲以升級。",
+                "korean": "릴리스를 처치하면 업그레이드됩니다.",
+                "japanese": "リリスを倒してアップグレード。"
+              },
+              "unlock_condition": "soul_kill_region_4_boss",
+              "param_int": 2
+            },
+            "tier_level": 2,
+            "next_tier": "GhastbudT3"
           }
-        ],
-        "isRegionRunUpgrade": true,
-        "excludeFromClones": true,
-        "costReduction": 2,
-        "xCostReduction": 2
-      }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-33894035414ff1bd-5e46b81ceba78484c8752a5a686e14c4-v2",
+        "english": "Ghastbud II",
+        "french": "Ectopote II",
+        "german": "Gruselwurzelkumpel II",
+        "russian": "Крепыш II",
+        "portuguese": "Rebento Fantasma II",
+        "chinese": "阿飘 II",
+        "spanish": "Retoño pálido II",
+        "chinese_traditional": "幽靈芽II",
+        "korean": "가스트버드 II",
+        "japanese": "ガストバッドII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-f3678df75b6f7046-5e46b81ceba78484c8752a5a686e14c4-v2",
+        "english": "Gain [titanite], [endless], and -[effect0.upgrade.costreduction][ember].",
+        "french": "Octroie [titanite], [endless] et -[effect0.upgrade.costreduction][ember].",
+        "german": "Erhalte [titanite], [endless] und -[effect0.upgrade.costreduction][ember].",
+        "russian": "Даются [titanite], [endless], и -[effect0.upgrade.costreduction][ember].",
+        "portuguese": "Recebe [titanite], [endless] e -[effect0.upgrade.costreduction][ember].",
+        "chinese": "获得 [titanite]，[endless] 和 -[effect0.upgrade.costreduction][ember]。",
+        "spanish": "Añade [titanite], [endless] y -[effect0.upgrade.costreduction][ember].",
+        "chinese_traditional": "獲得[titanite]、[endless]和-[effect0.upgrade.costreduction][ember]。",
+        "korean": "[titanite], [endless], -[effect0.upgrade.costreduction][ember]을 획득합니다.",
+        "japanese": "[titanite]、[endless]、-[effect0.upgrade.costreduction][ember]を得る。"
+      },
+      "relic_effects": [
+        "@GhastbudT2.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-e63d02fe7e811be4-5e46b81ceba78484c8752a5a686e14c4-v2",
-      "english": "Defeat Lylith to upgrade.",
-      "french": "Battez Lylith pour améliorer.",
-      "german": "Besiege zum Freischalten Lylith.",
-      "russian": "Чтобы улучшить, победите Лилит.",
-      "portuguese": "Derrote Lylith para melhorar.",
-      "chinese": "击败莉莉丝以升级。",
-      "spanish": "Derrota a Lylith para mejorar.",
-      "chinese_traditional": "擊敗莉莉絲以升級。",
-      "korean": "릴리스를 처치하면 업그레이드됩니다.",
-      "japanese": "リリスを倒してアップグレード。"
-    },
-    "unlockCondition": "soul_kill_region_4_boss",
-    "paramInt": 2
-  },
-  "tierLevel": 2,
-  "nextTier": "GhastbudT3"
+  "relic_effects": [
+    {
+      "id": "GhastbudT2.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "GhastbudT2_Upgrade"
+    }
+  ]
 }

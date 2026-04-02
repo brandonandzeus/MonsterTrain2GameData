@@ -1,73 +1,57 @@
 {
-  "id": "SoulSavior_UnitUpgradeStatsHealth",
-  "guid": "d5f8302f-4222-4223-827a-66c8318eb227",
-  "name": "Heartslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-b06ff21e0ce863d1-14a017250c709b044b3c3e7f9ba43d68-v2",
-    "english": "Heartslab",
-    "french": "Gemme de cœur",
-    "german": "Herzplatte",
-    "russian": "Сердечный пласт",
-    "portuguese": "Placa do Coração",
-    "chinese": "心之石板",
-    "spanish": "Losa de corazón",
-    "chinese_traditional": "心石板",
-    "korean": "심장의 서판",
-    "japanese": "心の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-f2cad06a969f986d-14a017250c709b044b3c3e7f9ba43d68-v2",
-    "english": "Upgrade a unit with +[effect0.upgrade.bonushp][health].",
-    "french": "Améliore une unité avec +[effect0.upgrade.bonushp][health].",
-    "german": "Verbessere eine Einheit mit +[effect0.upgrade.bonushp][health].",
-    "russian": "Усиление бойца: +[effect0.upgrade.bonushp][health].",
-    "portuguese": "Melhora uma unidade com +[effect0.upgrade.bonushp][health].",
-    "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonushp][health]。",
-    "spanish": "Mejora una unidad con +[effect0.upgrade.bonushp][health].",
-    "chinese_traditional": "升級一個單位，使其獲得+[effect0.upgrade.bonushp][health]。",
-    "korean": "유닛을 업그레이드함과 동시에 +[effect0.upgrade.bonushp][health]이 됩니다.",
-    "japanese": "ユニットアップグレード：+[effect0.upgrade.bonushp][health]"
-  },
-  "rarity": "common",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_BlessingBonusHealth",
-        "guid": "e5ae372e-e631-4b20-88a1-eb3a3421b22a",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-9308733c18f45578-bcf7489c059993e4eb40840b292a87af-v2",
-          "english": "Heartslab",
-          "french": "Gemme de cœur",
-          "german": "Herzplatte",
-          "russian": "Сердечный пласт",
-          "portuguese": "Placa do Coração",
-          "chinese": "心之石板",
-          "spanish": "Losa de corazón",
-          "chinese_traditional": "心石板",
-          "korean": "심장의 서판",
-          "japanese": "心の原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-e8cf963aebb69aab-bcf7489c059993e4eb40840b292a87af-v2",
-          "english": "+[bonushp][health].",
-          "french": "+[bonushp][health].",
-          "german": "+[bonushp][health].",
-          "russian": "+[bonushp][health].",
-          "portuguese": "+[bonushp][health].",
-          "chinese": "+[bonushp][health]。",
-          "spanish": "+[bonushp][health].",
-          "chinese_traditional": "+[bonushp][health]。",
-          "korean": "+[bonushp][health].",
-          "japanese": "+[bonushp][health]。"
-        },
-        "bonusHP": 60
-      }
+      "id": "SoulSavior_UnitUpgradeStatsHealth",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-b06ff21e0ce863d1-14a017250c709b044b3c3e7f9ba43d68-v2",
+        "english": "Heartslab",
+        "french": "Gemme de cœur",
+        "german": "Herzplatte",
+        "russian": "Сердечный пласт",
+        "portuguese": "Placa do Coração",
+        "chinese": "心之石板",
+        "spanish": "Losa de corazón",
+        "chinese_traditional": "心石板",
+        "korean": "심장의 서판",
+        "japanese": "心の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-f2cad06a969f986d-14a017250c709b044b3c3e7f9ba43d68-v2",
+        "english": "Upgrade a unit with +[effect0.upgrade.bonushp][health].",
+        "french": "Améliore une unité avec +[effect0.upgrade.bonushp][health].",
+        "german": "Verbessere eine Einheit mit +[effect0.upgrade.bonushp][health].",
+        "russian": "Усиление бойца: +[effect0.upgrade.bonushp][health].",
+        "portuguese": "Melhora uma unidade com +[effect0.upgrade.bonushp][health].",
+        "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Mejora una unidad con +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "升級一個單位，使其獲得+[effect0.upgrade.bonushp][health]。",
+        "korean": "유닛을 업그레이드함과 동시에 +[effect0.upgrade.bonushp][health]이 됩니다.",
+        "japanese": "ユニットアップグレード：+[effect0.upgrade.bonushp][health]"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeStatsHealth.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeStatsHealth.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_BlessingBonusHealth"
+    }
+  ]
 }

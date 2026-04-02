@@ -1,211 +1,87 @@
 {
-  "id": "Echoes_InfernoRoomInstalled",
-  "guid": "a5b3592e-e0ee-457d-8cd4-9fa102dfdc32",
-  "name": "Redhot Renovations",
-  "nameKey": {
-    "key": "MutatorData_nameKey-691f580a0ffe5cfb-279735ca754274b40bec324f24fa734f-v2",
-    "english": "Redhot Renovations",
-    "french": "Coup de chaud",
-    "german": "Heiße Renovierung",
-    "russian": "Адская отделка",
-    "portuguese": "Renovações Abrasantes",
-    "chinese": "灼热装修",
-    "spanish": "Reformas al rojo vivo",
-    "chinese_traditional": "火熱裝修",
-    "korean": "불타는 개조",
-    "japanese": "アツアツリノベーション"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-2e1b5b9e1c634a97-279735ca754274b40bec324f24fa734f-v2",
-    "english": "At the start of battle, apply <b>Inferno Room</b> on all floors.",
-    "french": "Au début de la bataille, applique <b>Salle infernale</b> à tous les niveaux.",
-    "german": "Wende zu Beginn des Kampfes <b>Infernoraum</b> auf alle Ebenen an.",
-    "russian": "В начале боя всем этажам присваивается статус <b>Адской комнаты</b>.",
-    "portuguese": "No início da batalha, aplica <b>Sala Infernal</b> em todos os andares.",
-    "chinese": "战斗开始时，对所有层施加<b>地狱火房间</b>。",
-    "spanish": "Al principio de la batalla, añade <b>Sala abrasadora</b> a todos los pisos.",
-    "chinese_traditional": "戰鬥開始時，在所有樓層施加<b>煉獄房間</b>。",
-    "korean": "전투 시작 시 모든 층에 <b>업화의 방</b>을 적용합니다.",
-    "japanese": "バトルの開始時に、すべてのフロアに<b>豪炎</b>を適用する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
-      "paramCardUpgradeData": {
-        "id": "InfernoRoom",
-        "guid": "96547940-8feb-4f73-b147-c763a64161c2",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-2185c778e3fc0020-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-          "english": "Inferno Room",
-          "french": "Salle infernale",
-          "german": "Infernoraum",
-          "russian": "Адская комната",
-          "portuguese": "Sala Infernal",
-          "chinese": "地狱火房间",
-          "spanish": "Sala abrasadora",
-          "chinese_traditional": "煉獄房間",
-          "korean": "업화의 방",
-          "japanese": "豪炎"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-aa39165527879e62-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-          "english": "Deal [roommodifier0.effect0.power] damage to all units at the start of combat.",
-          "french": "Inflige <nobr>[roommodifier0.effect0.power] DGT</nobr> à toutes les unités au début du combat.",
-          "german": "Füge zu Beginn des Kampfes allen Einheiten [roommodifier0.effect0.power] Schaden zu.",
-          "russian": "В начале хода все бойцы получают [roommodifier0.effect0.power] урона.",
-          "portuguese": "Causa [roommodifier0.effect0.power] de dano a todas as unidades no início do combate.",
-          "chinese": "战斗开始时，对所有单位造成 [roommodifier0.effect0.power] 点伤害。",
-          "spanish": "Inflige [roommodifier0.effect0.power] de daño a todas las unidades al inicio de la batalla.",
-          "chinese_traditional": "戰鬥開始時對所有單位造成[roommodifier0.effect0.power]點傷害。",
-          "korean": "전투 시작 시 모든 유닛들에 [roommodifier0.effect0.power]의 피해를 입힙니다.",
-          "japanese": "戦闘開始時にすべてのユニットに[roommodifier0.effect0.power]のダメージを与える。"
-        },
-        "roomModifierUpgrades": [
-          {
-            "descriptionKey": "CardUpgradeData_descriptionKey-9d804015989c85e1-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-            "descriptionKeyInPlay": "CardUpgradeData_descriptionKeyInPlay-201d4ff6a42eaca3-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-            "roomStateModifierClassName": "RoomStateAddEffectPreCombatModifier",
-            "paramCardEffects": [
-              {
-                "effectStateName": "CardEffectDamage",
-                "targetMode": "room",
-                "targetTeamType": "both",
-                "paramInt": 50
-              }
-            ],
-            "disallowedInDeploymentPhase": true,
-            "triggeredVFX": {
-              "vfxPrefabLeft": "FX_InfernoRoomProc",
-              "spawnLocation": "room_center"
-            }
+      "id": "Echoes_InfernoRoomInstalled",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3,
+            "disable_in_daily_challenges": true
           }
-        ],
-        "hideUpgradeIconOnCard": true,
-        "showUpgradeDescriptionOnCards": true,
-        "persistentVFX": {
-          "vfxPrefabLeft": "FX_InfernoRoomPersistent"
         }
-      }
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
-      "paramCardUpgradeData": {
-        "id": "InfernoRoom",
-        "guid": "96547940-8feb-4f73-b147-c763a64161c2",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-2185c778e3fc0020-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-          "english": "Inferno Room",
-          "french": "Salle infernale",
-          "german": "Infernoraum",
-          "russian": "Адская комната",
-          "portuguese": "Sala Infernal",
-          "chinese": "地狱火房间",
-          "spanish": "Sala abrasadora",
-          "chinese_traditional": "煉獄房間",
-          "korean": "업화의 방",
-          "japanese": "豪炎"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-aa39165527879e62-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-          "english": "Deal [roommodifier0.effect0.power] damage to all units at the start of combat.",
-          "french": "Inflige <nobr>[roommodifier0.effect0.power] DGT</nobr> à toutes les unités au début du combat.",
-          "german": "Füge zu Beginn des Kampfes allen Einheiten [roommodifier0.effect0.power] Schaden zu.",
-          "russian": "В начале хода все бойцы получают [roommodifier0.effect0.power] урона.",
-          "portuguese": "Causa [roommodifier0.effect0.power] de dano a todas as unidades no início do combate.",
-          "chinese": "战斗开始时，对所有单位造成 [roommodifier0.effect0.power] 点伤害。",
-          "spanish": "Inflige [roommodifier0.effect0.power] de daño a todas las unidades al inicio de la batalla.",
-          "chinese_traditional": "戰鬥開始時對所有單位造成[roommodifier0.effect0.power]點傷害。",
-          "korean": "전투 시작 시 모든 유닛들에 [roommodifier0.effect0.power]의 피해를 입힙니다.",
-          "japanese": "戦闘開始時にすべてのユニットに[roommodifier0.effect0.power]のダメージを与える。"
-        },
-        "roomModifierUpgrades": [
-          {
-            "descriptionKey": "CardUpgradeData_descriptionKey-9d804015989c85e1-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-            "descriptionKeyInPlay": "CardUpgradeData_descriptionKeyInPlay-201d4ff6a42eaca3-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-            "roomStateModifierClassName": "RoomStateAddEffectPreCombatModifier",
-            "paramCardEffects": [
-              {
-                "effectStateName": "CardEffectDamage",
-                "targetMode": "room",
-                "targetTeamType": "both",
-                "paramInt": 50
-              }
-            ],
-            "disallowedInDeploymentPhase": true,
-            "triggeredVFX": {
-              "vfxPrefabLeft": "FX_InfernoRoomProc",
-              "spawnLocation": "room_center"
-            }
-          }
-        ],
-        "hideUpgradeIconOnCard": true,
-        "showUpgradeDescriptionOnCards": true,
-        "persistentVFX": {
-          "vfxPrefabLeft": "FX_InfernoRoomPersistent"
-        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-691f580a0ffe5cfb-279735ca754274b40bec324f24fa734f-v2",
+        "english": "Redhot Renovations",
+        "french": "Coup de chaud",
+        "german": "Heiße Renovierung",
+        "russian": "Адская отделка",
+        "portuguese": "Renovações Abrasantes",
+        "chinese": "灼热装修",
+        "spanish": "Reformas al rojo vivo",
+        "chinese_traditional": "火熱裝修",
+        "korean": "불타는 개조",
+        "japanese": "アツアツリノベーション"
       },
-      "paramInt": 1
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
-      "paramCardUpgradeData": {
-        "id": "InfernoRoom",
-        "guid": "96547940-8feb-4f73-b147-c763a64161c2",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-2185c778e3fc0020-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-          "english": "Inferno Room",
-          "french": "Salle infernale",
-          "german": "Infernoraum",
-          "russian": "Адская комната",
-          "portuguese": "Sala Infernal",
-          "chinese": "地狱火房间",
-          "spanish": "Sala abrasadora",
-          "chinese_traditional": "煉獄房間",
-          "korean": "업화의 방",
-          "japanese": "豪炎"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-aa39165527879e62-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-          "english": "Deal [roommodifier0.effect0.power] damage to all units at the start of combat.",
-          "french": "Inflige <nobr>[roommodifier0.effect0.power] DGT</nobr> à toutes les unités au début du combat.",
-          "german": "Füge zu Beginn des Kampfes allen Einheiten [roommodifier0.effect0.power] Schaden zu.",
-          "russian": "В начале хода все бойцы получают [roommodifier0.effect0.power] урона.",
-          "portuguese": "Causa [roommodifier0.effect0.power] de dano a todas as unidades no início do combate.",
-          "chinese": "战斗开始时，对所有单位造成 [roommodifier0.effect0.power] 点伤害。",
-          "spanish": "Inflige [roommodifier0.effect0.power] de daño a todas las unidades al inicio de la batalla.",
-          "chinese_traditional": "戰鬥開始時對所有單位造成[roommodifier0.effect0.power]點傷害。",
-          "korean": "전투 시작 시 모든 유닛들에 [roommodifier0.effect0.power]의 피해를 입힙니다.",
-          "japanese": "戦闘開始時にすべてのユニットに[roommodifier0.effect0.power]のダメージを与える。"
-        },
-        "roomModifierUpgrades": [
-          {
-            "descriptionKey": "CardUpgradeData_descriptionKey-9d804015989c85e1-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-            "descriptionKeyInPlay": "CardUpgradeData_descriptionKeyInPlay-201d4ff6a42eaca3-97fa6792bb6a12540a9a2d8bd56babb9-v2",
-            "roomStateModifierClassName": "RoomStateAddEffectPreCombatModifier",
-            "paramCardEffects": [
-              {
-                "effectStateName": "CardEffectDamage",
-                "targetMode": "room",
-                "targetTeamType": "both",
-                "paramInt": 50
-              }
-            ],
-            "disallowedInDeploymentPhase": true,
-            "triggeredVFX": {
-              "vfxPrefabLeft": "FX_InfernoRoomProc",
-              "spawnLocation": "room_center"
-            }
-          }
-        ],
-        "hideUpgradeIconOnCard": true,
-        "showUpgradeDescriptionOnCards": true,
-        "persistentVFX": {
-          "vfxPrefabLeft": "FX_InfernoRoomPersistent"
-        }
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-2e1b5b9e1c634a97-279735ca754274b40bec324f24fa734f-v2",
+        "english": "At the start of battle, apply <b>Inferno Room</b> on all floors.",
+        "french": "Au début de la bataille, applique <b>Salle infernale</b> à tous les niveaux.",
+        "german": "Wende zu Beginn des Kampfes <b>Infernoraum</b> auf alle Ebenen an.",
+        "russian": "В начале боя всем этажам присваивается статус <b>Адской комнаты</b>.",
+        "portuguese": "No início da batalha, aplica <b>Sala Infernal</b> em todos os andares.",
+        "chinese": "战斗开始时，对所有层施加<b>地狱火房间</b>。",
+        "spanish": "Al principio de la batalla, añade <b>Sala abrasadora</b> a todos los pisos.",
+        "chinese_traditional": "戰鬥開始時，在所有樓層施加<b>煉獄房間</b>。",
+        "korean": "전투 시작 시 모든 층에 <b>업화의 방</b>을 적용합니다.",
+        "japanese": "バトルの開始時に、すべてのフロアに<b>豪炎</b>を適用する。"
       },
-      "paramInt": 2
+      "relic_effects": [
+        "@Echoes_InfernoRoomInstalled.effects0",
+        "@Echoes_InfernoRoomInstalled.effects1",
+        "@Echoes_InfernoRoomInstalled.effects2"
+      ]
     }
   ],
-  "boonValue": -3,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_InfernoRoomInstalled.effects0",
+      "name": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
+      "param_upgrade": "InfernoRoom"
+    },
+    {
+      "id": "Echoes_InfernoRoomInstalled.effects1",
+      "name": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
+      "param_upgrade": "InfernoRoom",
+      "param_int": 1
+    },
+    {
+      "id": "Echoes_InfernoRoomInstalled.effects2",
+      "name": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
+      "param_upgrade": "InfernoRoom",
+      "param_int": 2
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_InfernoRoomInstalled.effects0.paramCardUpgradeData.roomModifierUpgrades0.paramCardEffects0",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "both",
+      "param_int": 50
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Echoes_InfernoRoomInstalled.effects0.paramCardUpgradeData.roomModifierUpgrades0.triggeredVFX",
+      "vfx_prefab_left": "FX_InfernoRoomProc",
+      "spawn_location": "room_center"
+    },
+    {
+      "id": "Echoes_InfernoRoomInstalled.effects0.paramCardUpgradeData.persistentVFX",
+      "vfx_prefab_left": "FX_InfernoRoomPersistent"
+    }
+  ]
 }

@@ -1,45 +1,59 @@
 {
-  "id": "Levity",
-  "guid": "9a465270-d3b8-4196-abdd-f7251d32a54f",
-  "name": "Levity",
-  "nameKey": {
-    "key": "MutatorData_nameKey-969e3d8fcd22e014-00cc6438115c49c43a0e2636ab84b604-v2",
-    "english": "Levity",
-    "french": "Légèreté",
-    "german": "Leichtigkeit",
-    "russian": "Легкомыслие",
-    "portuguese": "Leveza",
-    "chinese": "轻浮",
-    "spanish": "Ligereza",
-    "chinese_traditional": "輕盈",
-    "korean": "변덕",
-    "japanese": "身体が軽い"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-457304cada3e7ca2-00cc6438115c49c43a0e2636ab84b604-v2",
-    "english": "Enemy units get [haste].",
-    "french": "Les unités ennemies gagnent <b>Célérité</b>.",
-    "german": "Gegnerische Einheiten erhalten <b>Eile</b>.",
-    "russian": "Враги получают [haste].",
-    "portuguese": "Unidades inimigas recebem <b>Ímpeto</b>.",
-    "chinese": "敌方单位获得[haste]。",
-    "spanish": "Las unidades enemigas añaden [haste].",
-    "chinese_traditional": "敵方單位獲得[haste]。",
-    "korean": "적 유닛이 [haste]을 얻습니다.",
-    "japanese": "敵ユニットが[haste]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "Levity",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "haste",
+          "mutator": {
+            "boon_value": -9
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-969e3d8fcd22e014-00cc6438115c49c43a0e2636ab84b604-v2",
+        "english": "Levity",
+        "french": "Légèreté",
+        "german": "Leichtigkeit",
+        "russian": "Легкомыслие",
+        "portuguese": "Leveza",
+        "chinese": "轻浮",
+        "spanish": "Ligereza",
+        "chinese_traditional": "輕盈",
+        "korean": "변덕",
+        "japanese": "身体が軽い"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-457304cada3e7ca2-00cc6438115c49c43a0e2636ab84b604-v2",
+        "english": "Enemy units get [haste].",
+        "french": "Les unités ennemies gagnent <b>Célérité</b>.",
+        "german": "Gegnerische Einheiten erhalten <b>Eile</b>.",
+        "russian": "Враги получают [haste].",
+        "portuguese": "Unidades inimigas recebem <b>Ímpeto</b>.",
+        "chinese": "敌方单位获得[haste]。",
+        "spanish": "Las unidades enemigas añaden [haste].",
+        "chinese_traditional": "敵方單位獲得[haste]。",
+        "korean": "적 유닛이 [haste]을 얻습니다.",
+        "japanese": "敵ユニットが[haste]を得る。"
+      },
+      "relic_effects": [
+        "@Levity.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Levity.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "haste",
           "count": 1
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramInt": -1
+      "param_source_team": "heroes",
+      "param_int": -1
     }
-  ],
-  "boonValue": -9
+  ]
 }

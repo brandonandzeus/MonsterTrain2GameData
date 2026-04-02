@@ -1,90 +1,60 @@
 {
-  "id": "UnitUpgradeClanHellhornedAddRage",
-  "guid": "d00f4776-f11a-4c9c-a62f-bf9a95eaa52a",
-  "name": "Furystone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-9de9a92d96994f90-ce5b1b960ef4b5c4ea83829acbe7af01-v2",
-    "english": "Furystone",
-    "french": "Pierre de fureur",
-    "german": "Wutstein",
-    "russian": "Камень ярости",
-    "portuguese": "Pedra da Fúria",
-    "chinese": "狂怒石",
-    "spanish": "Piedra furiosa",
-    "chinese_traditional": "狂怒石",
-    "korean": "분노석",
-    "japanese": "憤怒の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-b399d446af67e130-ce5b1b960ef4b5c4ea83829acbe7af01-v2",
-    "english": "Upgrade a unit with [rage] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec <b>Rage</b> [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit [effect0.upgrade.status0.power] <b>Wut</b>.",
-    "russian": "Усиление бойца: [rage] х[effect0.upgrade.status0.power].",
-    "portuguese": "Melhora uma unidade com <b>Fúria</b> [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得<b>狂怒</b> [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con [rage] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[rage][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드하여 [rage] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：[rage] [effect0.upgrade.status0.power]"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassHellhorned",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "AddRage",
-        "guid": "bdbb24ab-1618-4a67-b9a2-bf0bbbb6a52f",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-368f1920f54cb243-150d43827f5975b4d8d08f1001f643d0-v2",
-          "english": "Furystone",
-          "french": "Pierre de fureur",
-          "german": "Wutstein",
-          "russian": "Камень ярости",
-          "portuguese": "Pedra da Fúria",
-          "chinese": "狂怒石",
-          "spanish": "Piedra furiosa",
-          "chinese_traditional": "狂怒石",
-          "korean": "분노석",
-          "japanese": "憤怒の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-d6e712eeb65814de-150d43827f5975b4d8d08f1001f643d0-v2",
-          "english": "Gain [rage] [status0.power].",
-          "french": "Octroie [rage] [status0.power].",
-          "german": "Erhalte [rage] [status0.power].",
-          "russian": "Дает [status0.power] х[rage].",
-          "portuguese": "Recebe [rage] [status0.power].",
-          "chinese": "获得 [rage] [status0.power]。",
-          "spanish": "Añade [rage] [status0.power].",
-          "chinese_traditional": "獲得[rage][status0.power]。",
-          "korean": "[rage] [status0.power] 효과를 획득합니다.",
-          "japanese": "[rage] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "buff",
-            "count": 12
+      "id": "UnitUpgradeClanHellhornedAddRage",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassHellhorned",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-9de9a92d96994f90-ce5b1b960ef4b5c4ea83829acbe7af01-v2",
+        "english": "Furystone",
+        "french": "Pierre de fureur",
+        "german": "Wutstein",
+        "russian": "Камень ярости",
+        "portuguese": "Pedra da Fúria",
+        "chinese": "狂怒石",
+        "spanish": "Piedra furiosa",
+        "chinese_traditional": "狂怒石",
+        "korean": "분노석",
+        "japanese": "憤怒の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-b399d446af67e130-ce5b1b960ef4b5c4ea83829acbe7af01-v2",
+        "english": "Upgrade a unit with [rage] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec <b>Rage</b> [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit [effect0.upgrade.status0.power] <b>Wut</b>.",
+        "russian": "Усиление бойца: [rage] х[effect0.upgrade.status0.power].",
+        "portuguese": "Melhora uma unidade com <b>Fúria</b> [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得<b>狂怒</b> [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con [rage] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[rage][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드하여 [rage] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：[rage] [effect0.upgrade.status0.power]"
+      },
+      "relic_effects": [
+        "@UnitUpgradeClanHellhornedAddRage.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeClanHellhornedAddRage.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "AddRage"
+    }
+  ]
 }

@@ -1,49 +1,63 @@
 {
-  "id": "EnemyBossesGainStealth",
-  "guid": "4ab49486-ff49-45d0-9cf3-3f1c6f17bfc1",
-  "name": "Ninja Training",
-  "nameKey": {
-    "key": "MutatorData_nameKey-92f9ce600d3b634f-12a0cdc03e5fb674ca67460303d71318-v2",
-    "english": "Ninja Training",
-    "french": "Entraînement ninja",
-    "german": "Ninjatraining",
-    "russian": "Обучение ниндзя",
-    "portuguese": "Treinamento de ninja",
-    "chinese": "忍者训练",
-    "spanish": "Entrenamiento ninja",
-    "chinese_traditional": "忍者訓練",
-    "korean": "닌자 훈련",
-    "japanese": "忍者訓練"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-3342f36bea932371-12a0cdc03e5fb674ca67460303d71318-v2",
-    "english": "Minor bosses enter with [stealth] [effect0.status0.power].",
-    "french": "Les boss mineurs entrent avec [stealth] [effect0.status0.power].",
-    "german": "Kleine Bosse erscheinen mit [stealth] [effect0.status0.power].",
-    "russian": "На малых боссов при входе накладывается [stealth] х[effect0.status0.power].",
-    "portuguese": "Os chefões menores entram com [stealth] [effect0.status0.power].",
-    "chinese": "小首领进入战斗时获得[stealth] [effect0.status0.power]。",
-    "spanish": "Los jefes menores entran con [stealth] [effect0.status0.power].",
-    "chinese_traditional": "小型首領出場時獲得[stealth][effect0.status0.power]。",
-    "korean": "중간 보스가 [stealth] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "下級ボスが[stealth] [effect0.status0.power]を持って出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "EnemyBossesGainStealth",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "stealth",
+          "mutator": {
+            "boon_value": -3,
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "enemyeffect"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-92f9ce600d3b634f-12a0cdc03e5fb674ca67460303d71318-v2",
+        "english": "Ninja Training",
+        "french": "Entraînement ninja",
+        "german": "Ninjatraining",
+        "russian": "Обучение ниндзя",
+        "portuguese": "Treinamento de ninja",
+        "chinese": "忍者训练",
+        "spanish": "Entrenamiento ninja",
+        "chinese_traditional": "忍者訓練",
+        "korean": "닌자 훈련",
+        "japanese": "忍者訓練"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-3342f36bea932371-12a0cdc03e5fb674ca67460303d71318-v2",
+        "english": "Minor bosses enter with [stealth] [effect0.status0.power].",
+        "french": "Les boss mineurs entrent avec [stealth] [effect0.status0.power].",
+        "german": "Kleine Bosse erscheinen mit [stealth] [effect0.status0.power].",
+        "russian": "На малых боссов при входе накладывается [stealth] х[effect0.status0.power].",
+        "portuguese": "Os chefões menores entram com [stealth] [effect0.status0.power].",
+        "chinese": "小首领进入战斗时获得[stealth] [effect0.status0.power]。",
+        "spanish": "Los jefes menores entran con [stealth] [effect0.status0.power].",
+        "chinese_traditional": "小型首領出場時獲得[stealth][effect0.status0.power]。",
+        "korean": "중간 보스가 [stealth] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "下級ボスが[stealth] [effect0.status0.power]を持って出現する。"
+      },
+      "relic_effects": [
+        "@EnemyBossesGainStealth.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "EnemyBossesGainStealth.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "stealth",
           "count": 5
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramCharacterSubtype": "SubtypesData_Boss"
+      "param_source_team": "heroes",
+      "param_subtype": "SubtypesData_Boss"
     }
-  ],
-  "boonValue": -3,
-  "disableInDailyChallenges": true,
-  "tags": [
-    "enemyeffect"
   ]
 }

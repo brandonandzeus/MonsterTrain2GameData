@@ -1,73 +1,97 @@
 {
-  "id": "Echoes_EnemyUnitsGetHealthSiphon",
-  "guid": "f1d46367-a446-4bad-b6ac-734ae040a346",
-  "name": "Soul Harvesters",
-  "nameKey": {
-    "key": "MutatorData_nameKey-6d9478fb63d9529d-6b7b0991b228dc542a28d473bc3425ba-v2",
-    "english": "Soul Harvesters",
-    "french": "Récolte d'âmes",
-    "german": "Seelenernter",
-    "russian": "Жнецы душ",
-    "portuguese": "Colhedores de Almas",
-    "chinese": "灵魂收割者",
-    "spanish": "Extractores de almas",
-    "chinese_traditional": "靈魂收割者",
-    "korean": "영혼 수확자들",
-    "japanese": "魂の収穫者"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-672efaf2d83a5344-6b7b0991b228dc542a28d473bc3425ba-v2",
-    "english": "Enemy units gain +[effect0.trigger0.effect0.power][health] on [harvest].",
-    "french": "Les ennemis gagnent +[effect0.trigger0.effect0.power][health] lors d'une [harvest].",
-    "german": "Gegnerische Einheiten erhalten +[effect0.trigger0.effect0.power][health] bei der [harvest].",
-    "russian": "[harvest]: врагам дается +[effect0.trigger0.effect0.power][health].",
-    "portuguese": "Unidades inimigas ganham [effect0.trigger0.effect0.power][health] ao usar [harvest].",
-    "chinese": "敌方单位[harvest]时，获得 +[effect0.trigger0.effect0.power][health]。",
-    "spanish": "Las unidades enemigas añaden +[effect0.trigger0.effect0.power][health] al <b>Cosechar</b>.",
-    "chinese_traditional": "敵方單位在[harvest]時獲得+[effect0.trigger0.effect0.power][health]。",
-    "korean": "[harvest] 시 적 유닛들이 +[effect0.trigger0.effect0.power][health]을 획득합니다.",
-    "japanese": "[harvest]時に敵ユニットが+[effect0.trigger0.effect0.power][health]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "Echoes_EnemyUnitsGetHealthSiphon",
+      "type": "mutator",
+      "extensions": [
         {
-          "trigger": "on_any_unit_death_on_floor",
-          "style": "default",
-          "isTriggerTooltip": true
+          "mutator": {
+            "boon_value": -5,
+            "disable_in_daily_challenges": true
+          }
         }
       ],
-      "triggers": [
-        {
-          "descriptionKey": {
-            "key": "MutatorData_descriptionKey-6b3dfe6925b745c4-6b7b0991b228dc542a28d473bc3425ba-v2",
-            "english": "Gain +[effect0.power][health].",
-            "french": "Octroie +[effect0.power][health].",
-            "german": "Erhalte +[effect0.power][health].",
-            "russian": "Дает +[effect0.power][health].",
-            "portuguese": "Concede +[effect0.power][health].",
-            "chinese": "获得 +[effect0.power][health]。",
-            "spanish": "Añade +[effect0.power][health].",
-            "chinese_traditional": "獲得+[effect0.power][health]。",
-            "korean": "+[effect0.power][health]을 획득합니다.",
-            "japanese": "[effect0.power][health]を得る。"
-          },
-          "trigger": "on_any_unit_death_on_floor",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffMaxHealth",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramInt": 3
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "heroes"
+      "names": {
+        "key": "MutatorData_nameKey-6d9478fb63d9529d-6b7b0991b228dc542a28d473bc3425ba-v2",
+        "english": "Soul Harvesters",
+        "french": "Récolte d'âmes",
+        "german": "Seelenernter",
+        "russian": "Жнецы душ",
+        "portuguese": "Colhedores de Almas",
+        "chinese": "灵魂收割者",
+        "spanish": "Extractores de almas",
+        "chinese_traditional": "靈魂收割者",
+        "korean": "영혼 수확자들",
+        "japanese": "魂の収穫者"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-672efaf2d83a5344-6b7b0991b228dc542a28d473bc3425ba-v2",
+        "english": "Enemy units gain +[effect0.trigger0.effect0.power][health] on [harvest].",
+        "french": "Les ennemis gagnent +[effect0.trigger0.effect0.power][health] lors d'une [harvest].",
+        "german": "Gegnerische Einheiten erhalten +[effect0.trigger0.effect0.power][health] bei der [harvest].",
+        "russian": "[harvest]: врагам дается +[effect0.trigger0.effect0.power][health].",
+        "portuguese": "Unidades inimigas ganham [effect0.trigger0.effect0.power][health] ao usar [harvest].",
+        "chinese": "敌方单位[harvest]时，获得 +[effect0.trigger0.effect0.power][health]。",
+        "spanish": "Las unidades enemigas añaden +[effect0.trigger0.effect0.power][health] al <b>Cosechar</b>.",
+        "chinese_traditional": "敵方單位在[harvest]時獲得+[effect0.trigger0.effect0.power][health]。",
+        "korean": "[harvest] 시 적 유닛들이 +[effect0.trigger0.effect0.power][health]을 획득합니다.",
+        "japanese": "[harvest]時に敵ユニットが+[effect0.trigger0.effect0.power][health]を得る。"
+      },
+      "relic_effects": [
+        "@Echoes_EnemyUnitsGetHealthSiphon.effects0"
+      ]
     }
   ],
-  "boonValue": -5,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_EnemyUnitsGetHealthSiphon.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@Echoes_EnemyUnitsGetHealthSiphon.effects0.additionalTooltips0"
+      ],
+      "triggers": [
+        "@Echoes_EnemyUnitsGetHealthSiphon.effects0.triggers0"
+      ],
+      "param_source_team": "heroes"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Echoes_EnemyUnitsGetHealthSiphon.effects0.triggers0",
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-6b3dfe6925b745c4-6b7b0991b228dc542a28d473bc3425ba-v2",
+        "english": "Gain +[effect0.power][health].",
+        "french": "Octroie +[effect0.power][health].",
+        "german": "Erhalte +[effect0.power][health].",
+        "russian": "Дает +[effect0.power][health].",
+        "portuguese": "Concede +[effect0.power][health].",
+        "chinese": "获得 +[effect0.power][health]。",
+        "spanish": "Añade +[effect0.power][health].",
+        "chinese_traditional": "獲得+[effect0.power][health]。",
+        "korean": "+[effect0.power][health]을 획득합니다.",
+        "japanese": "[effect0.power][health]を得る。"
+      },
+      "trigger": "on_any_unit_death_on_floor",
+      "effects": [
+        "@Echoes_EnemyUnitsGetHealthSiphon.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_EnemyUnitsGetHealthSiphon.effects0.triggers0.effects0",
+      "name": "CardEffectBuffMaxHealth",
+      "target_mode": "self",
+      "param_int": 3
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Echoes_EnemyUnitsGetHealthSiphon.effects0.additionalTooltips0",
+      "trigger": "on_any_unit_death_on_floor",
+      "style": "default"
+    }
+  ]
 }

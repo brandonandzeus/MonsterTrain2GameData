@@ -1,40 +1,54 @@
 {
-  "id": "Echoes_PurgeUnaffordable",
-  "guid": "8cddacfd-a328-4644-a544-f8075fc3cb74",
-  "name": "Cardcuffs",
-  "nameKey": {
-    "key": "MutatorData_nameKey-037107985b12fda3-be70bff4d242b7547ab8877535bcaea5-v2",
-    "english": "Cardcuffs",
-    "french": "Cartes menottées",
-    "german": "Kartenfesseln",
-    "russian": "Карточные наручники",
-    "portuguese": "Algema de Cartas",
-    "chinese": "卡牌镣铐",
-    "spanish": "Cartenas",
-    "chinese_traditional": "卡牌手銬",
-    "korean": "카드 족쇄",
-    "japanese": "カードの呪縛"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-45a3f03d91723f32-be70bff4d242b7547ab8877535bcaea5-v2",
-    "english": "Purging costs much more gold.",
-    "french": "La purge coûte beaucoup plus d'or.",
-    "german": "Läutern kostet erheblich mehr Geld.",
-    "russian": "Ликвидация стоит намного дороже.",
-    "portuguese": "O Expurgo custa muito mais ouro.",
-    "chinese": "移除的金币费用大幅提高。",
-    "spanish": "Purgar cuesta mucho más oro.",
-    "chinese_traditional": "花費大量金幣進行淨化。",
-    "korean": "제외 비용이 크게 증가합니다.",
-    "japanese": "除外時の消費ゴールドが大幅に増加する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyMerchantPurgeCosts",
-      "paramFloat": 4.0,
-      "paramBool": true
+      "id": "Echoes_PurgeUnaffordable",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -6,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-037107985b12fda3-be70bff4d242b7547ab8877535bcaea5-v2",
+        "english": "Cardcuffs",
+        "french": "Cartes menottées",
+        "german": "Kartenfesseln",
+        "russian": "Карточные наручники",
+        "portuguese": "Algema de Cartas",
+        "chinese": "卡牌镣铐",
+        "spanish": "Cartenas",
+        "chinese_traditional": "卡牌手銬",
+        "korean": "카드 족쇄",
+        "japanese": "カードの呪縛"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-45a3f03d91723f32-be70bff4d242b7547ab8877535bcaea5-v2",
+        "english": "Purging costs much more gold.",
+        "french": "La purge coûte beaucoup plus d'or.",
+        "german": "Läutern kostet erheblich mehr Geld.",
+        "russian": "Ликвидация стоит намного дороже.",
+        "portuguese": "O Expurgo custa muito mais ouro.",
+        "chinese": "移除的金币费用大幅提高。",
+        "spanish": "Purgar cuesta mucho más oro.",
+        "chinese_traditional": "花費大量金幣進行淨化。",
+        "korean": "제외 비용이 크게 증가합니다.",
+        "japanese": "除外時の消費ゴールドが大幅に増加する。"
+      },
+      "relic_effects": [
+        "@Echoes_PurgeUnaffordable.effects0"
+      ]
     }
   ],
-  "boonValue": -6,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_PurgeUnaffordable.effects0",
+      "name": "RelicEffectModifyMerchantPurgeCosts",
+      "param_float": 4.0,
+      "param_bool": true
+    }
+  ]
 }

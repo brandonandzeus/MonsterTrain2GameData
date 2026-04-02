@@ -1,41 +1,55 @@
 {
-  "id": "SoulSavior_Region3Complete_3",
-  "guid": "9efbebcb-0b3f-41cb-bafb-5a6f5829f2ba",
-  "name": "Tormentor",
-  "nameKey": {
-    "key": "MutatorData_nameKey-b96621ff6d59755c-ee76619ea41a0184194f6d213260ac6f-v2",
-    "english": "Tormentor",
-    "french": "Torture",
-    "german": "Peiniger",
-    "russian": "Мучитель",
-    "portuguese": "Algoz",
-    "chinese": "折磨者",
-    "spanish": "Tormento",
-    "chinese_traditional": "折磨者",
-    "korean": "고문자",
-    "japanese": "苦難の根源"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-d879849ddeb9eebd-ee76619ea41a0184194f6d213260ac6f-v2",
-    "english": "At the start of battle, add [effect0.power] <b>Tivi's Scourge</b> cards to your deck.",
-    "french": "Au début de la bataille, ajoutez [effect0.power] cartes <b>Plaie de Tivi</b> à votre deck.",
-    "german": "Zu Beginn eines Kampfes werden [effect0.power] von <b>Tivis Geißeln</b>-Karten deinem Deck hinzugefügt.",
-    "russian": "В начале боя в вашу колоду добавляется [effect0.power] шт. <b>Плетей Тиви</b>.",
-    "portuguese": "No início da batalha, adiciona [effect0.power] cartas de <b>Flagelo de Tivi</b> ao seu deck.",
-    "chinese": "战斗开始时，将 [effect0.power] 张<b>蒂维的天灾</b>加入你的卡组。",
-    "spanish": "Al inicio de la batalla, añade [effect0.power] cartas de <b>Azote de Tivi</b> a tu mazo.",
-    "chinese_traditional": "在戰鬥開始時，將[effect0.power]<b>蒂維的瘟疫</b>卡牌加入你的牌組。",
-    "korean": "각 전투의 시작마다, 덱에 [effect0.power] <b>티비의 재앙</b> 카드들이 추가됩니다.",
-    "japanese": "バトルの開始時に<b>ティヴィーの災難</b>のカードを[effect0.power]枚デッキに追加する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfBattle",
-      "paramBool": true,
-      "paramCardPool": "SoulSavior_Scourge_Pool"
+      "id": "SoulSavior_Region3Complete_3",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-b96621ff6d59755c-ee76619ea41a0184194f6d213260ac6f-v2",
+        "english": "Tormentor",
+        "french": "Torture",
+        "german": "Peiniger",
+        "russian": "Мучитель",
+        "portuguese": "Algoz",
+        "chinese": "折磨者",
+        "spanish": "Tormento",
+        "chinese_traditional": "折磨者",
+        "korean": "고문자",
+        "japanese": "苦難の根源"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-d879849ddeb9eebd-ee76619ea41a0184194f6d213260ac6f-v2",
+        "english": "At the start of battle, add [effect0.power] <b>Tivi's Scourge</b> cards to your deck.",
+        "french": "Au début de la bataille, ajoutez [effect0.power] cartes <b>Plaie de Tivi</b> à votre deck.",
+        "german": "Zu Beginn eines Kampfes werden [effect0.power] von <b>Tivis Geißeln</b>-Karten deinem Deck hinzugefügt.",
+        "russian": "В начале боя в вашу колоду добавляется [effect0.power] шт. <b>Плетей Тиви</b>.",
+        "portuguese": "No início da batalha, adiciona [effect0.power] cartas de <b>Flagelo de Tivi</b> ao seu deck.",
+        "chinese": "战斗开始时，将 [effect0.power] 张<b>蒂维的天灾</b>加入你的卡组。",
+        "spanish": "Al inicio de la batalla, añade [effect0.power] cartas de <b>Azote de Tivi</b> a tu mazo.",
+        "chinese_traditional": "在戰鬥開始時，將[effect0.power]<b>蒂維的瘟疫</b>卡牌加入你的牌組。",
+        "korean": "각 전투의 시작마다, 덱에 [effect0.power] <b>티비의 재앙</b> 카드들이 추가됩니다.",
+        "japanese": "バトルの開始時に<b>ティヴィーの災難</b>のカードを[effect0.power]枚デッキに追加する。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region3Complete_3.effects0"
+      ]
     }
   ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region3Complete_3.effects0",
+      "name": "RelicEffectAddCardsStartOfBattle",
+      "param_bool": true,
+      "param_card_pool": "SoulSavior_Scourge_Pool"
+    }
+  ]
 }

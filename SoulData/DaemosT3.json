@@ -1,80 +1,109 @@
 {
-  "id": "DaemosT3",
-  "guid": "6469e1b6-7dc0-440b-9663-2399557919ea",
-  "name": "DaemosT3",
-  "nameKey": {
-    "key": "SoulData_nameKey-425746ce5934dea5-ce56be34e18e4b0478c5671ef0e53a5c-v2",
-    "english": "Daemos III",
-    "french": "Déimos III",
-    "german": "Daemos III",
-    "russian": "Деймос III",
-    "portuguese": "Daemos III",
-    "chinese": "戴摩斯 III",
-    "spanish": "Daemos III",
-    "chinese_traditional": "惡魔III",
-    "korean": "심연의 사자 III",
-    "japanese": "デイモスIII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-f2b5ee5c882f11f6-ce56be34e18e4b0478c5671ef0e53a5c-v2",
-    "english": "Your Pyre takes an additional [effect0.power] damage from all sources and gains [revenge]: [draw] +[effect1.trigger0.effect0.paramint] next turn and gain +[effect1.trigger0.effect1.power] permanent [pyrehealth] and +[effect1.trigger0.effect2.power] permanent Pyre [attack].",
-    "french": "Votre Brasier subit <nobr>[effect0.power] DGT</nobr> en plus de toutes les sources et gagne <nobr>[revenge] :</nobr> <b>piochez</b> +[effect1.trigger0.effect0.paramint] au prochain tour et gagnez +[effect1.trigger0.effect1.power][pyrehealth] et +[effect1.trigger0.effect2.power][attack] de Brasier définitivement.",
-    "german": "Deine Höllenglut erleidet zusätzlich [effect0.power] Schaden aus allen Quellen und erhält [revenge]: [draw] +[effect1.trigger0.effect0.paramint] im nächsten Zug und permanent +[effect1.trigger0.effect1.power] [pyrehealth] und +[effect1.trigger0.effect2.power] permanenten Höllenglut-[attack].",
-    "russian": "Пекло получает +[effect0.power] к урону от любых источников и [revenge]: [draw] +[effect1.trigger0.effect0.paramint] в следующий ход, а также +[effect1.trigger0.effect1.power][pyrehealth] и +[effect1.trigger0.effect2.power][attack] для Пекла навсегда.",
-    "portuguese": "Sua Pira recebe [effect0.power] de dano adicional de todas as fontes e recebe [revenge]: <b>Compra</b> +[effect1.trigger0.effect0.paramint] no próximo turno e recebe +[effect1.trigger0.effect1.power] de [pyrehealth] permanente e +[effect1.trigger0.effect2.power] de [attack] da Pira permanente.",
-    "chinese": "你的薪火受到的一切伤害额外增加 [effect0.power] 点，并获得 [revenge]：下回合 [draw] +[effect1.trigger0.effect0.paramint]，且获得 +[effect1.trigger0.effect1.power] 永久 [pyrehealth] 以及 +[effect1.trigger0.effect2.power] 永久薪火 [attack]。",
-    "spanish": "Tu Pira sufre un [effect0.power] de daño adicional de todas las fuentes y obtiene [revenge]: <b>Roba</b> +[effect1.trigger0.effect0.paramint] en el próximo turno y añade +[effect1.trigger0.effect1.power] [pyrehealth] y +[effect1.trigger0.effect2.power][attack] a tu Pira permanentemente.",
-    "chinese_traditional": "你的薪火從所有來源額外受到[effect0.power]點傷害，並獲得[revenge]：[draw]下回合+[effect1.trigger0.effect0.paramint]並獲得+[effect1.trigger0.effect1.power]永久[pyrehealth]和+[effect1.trigger0.effect2.power]永久薪火[attack]。",
-    "korean": "화로가 모든 피해로부터 [effect0.power]의 추가 피해를 받고 [revenge]을 획득합니다. 보복: 다음 턴에 [draw] +[effect1.trigger0.effect0.paramint]을(를) 얻고, [pyrehealth]을 +[effect1.trigger0.effect1.power] 획득하며 화로 [attack]을 +[effect1.trigger0.effect2.power]만큼 영구적으로 부여받습니다.",
-    "japanese": "自軍の炉に対するあらゆる手段でのダメージが[effect0.power]増加し、[revenge]を得る：次のターン[draw] +[effect1.trigger0.effect0.paramint]。永続的に[pyrehealth] +[effect1.trigger0.effect1.power]を得る。さらに、永続的に炉の[attack] +[effect1.trigger0.effect2.power]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectApplyExtraPyreDamage",
-      "paramInt": 1
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "DaemosT3",
+      "name": "DaemosT3",
+      "type": "soul",
+      "extensions": [
         {
-          "trigger": "on_hit",
-          "effects": [
-            {
-              "effectStateName": "CardEffectDrawAdditionalNextTurn",
-              "paramInt": 1
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-80372562f8da9756-ce56be34e18e4b0478c5671ef0e53a5c-v2",
+                "english": "Defeat Lifemother while playing Hellhorned to upgrade.",
+                "french": "Battez Mère Nature en jouant les Cornus pour améliorer.",
+                "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Höllenhörnern spielst.",
+                "russian": "Чтобы улучшить, победите Мать-природу, играя за Адских отродий.",
+                "portuguese": "Derrote a Genetriz jogando com os Endiabrados para melhorar.",
+                "chinese": "用狱魔击败生命之母以升级。",
+                "spanish": "Derrota a la Madre Vida con los Astados Infernales para mejorar.",
+                "chinese_traditional": "遊玩獄魔時擊敗生命之母以升級。",
+                "korean": "지옥뿔 군단 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
+                "japanese": "獄角族でのプレイでライフマザーを倒してアップグレード。"
+              },
+              "unlock_condition": "soul_kill_lifemother_using_hellhorned",
+              "param_int": 1
             },
-            {
-              "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
-              "paramInt": 1
-            },
-            {
-              "effectStateName": "CardEffectPermanentlyAdjustPyreAttack",
-              "paramInt": 1
-            }
-          ],
-          "suppressTriggerNotification": true
+            "tier_level": 3
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Pyre"
+      "names": {
+        "key": "SoulData_nameKey-425746ce5934dea5-ce56be34e18e4b0478c5671ef0e53a5c-v2",
+        "english": "Daemos III",
+        "french": "Déimos III",
+        "german": "Daemos III",
+        "russian": "Деймос III",
+        "portuguese": "Daemos III",
+        "chinese": "戴摩斯 III",
+        "spanish": "Daemos III",
+        "chinese_traditional": "惡魔III",
+        "korean": "심연의 사자 III",
+        "japanese": "デイモスIII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-f2b5ee5c882f11f6-ce56be34e18e4b0478c5671ef0e53a5c-v2",
+        "english": "Your Pyre takes an additional [effect0.power] damage from all sources and gains [revenge]: [draw] +[effect1.trigger0.effect0.paramint] next turn and gain +[effect1.trigger0.effect1.power] permanent [pyrehealth] and +[effect1.trigger0.effect2.power] permanent Pyre [attack].",
+        "french": "Votre Brasier subit <nobr>[effect0.power] DGT</nobr> en plus de toutes les sources et gagne <nobr>[revenge] :</nobr> <b>piochez</b> +[effect1.trigger0.effect0.paramint] au prochain tour et gagnez +[effect1.trigger0.effect1.power][pyrehealth] et +[effect1.trigger0.effect2.power][attack] de Brasier définitivement.",
+        "german": "Deine Höllenglut erleidet zusätzlich [effect0.power] Schaden aus allen Quellen und erhält [revenge]: [draw] +[effect1.trigger0.effect0.paramint] im nächsten Zug und permanent +[effect1.trigger0.effect1.power] [pyrehealth] und +[effect1.trigger0.effect2.power] permanenten Höllenglut-[attack].",
+        "russian": "Пекло получает +[effect0.power] к урону от любых источников и [revenge]: [draw] +[effect1.trigger0.effect0.paramint] в следующий ход, а также +[effect1.trigger0.effect1.power][pyrehealth] и +[effect1.trigger0.effect2.power][attack] для Пекла навсегда.",
+        "portuguese": "Sua Pira recebe [effect0.power] de dano adicional de todas as fontes e recebe [revenge]: <b>Compra</b> +[effect1.trigger0.effect0.paramint] no próximo turno e recebe +[effect1.trigger0.effect1.power] de [pyrehealth] permanente e +[effect1.trigger0.effect2.power] de [attack] da Pira permanente.",
+        "chinese": "你的薪火受到的一切伤害额外增加 [effect0.power] 点，并获得 [revenge]：下回合 [draw] +[effect1.trigger0.effect0.paramint]，且获得 +[effect1.trigger0.effect1.power] 永久 [pyrehealth] 以及 +[effect1.trigger0.effect2.power] 永久薪火 [attack]。",
+        "spanish": "Tu Pira sufre un [effect0.power] de daño adicional de todas las fuentes y obtiene [revenge]: <b>Roba</b> +[effect1.trigger0.effect0.paramint] en el próximo turno y añade +[effect1.trigger0.effect1.power] [pyrehealth] y +[effect1.trigger0.effect2.power][attack] a tu Pira permanentemente.",
+        "chinese_traditional": "你的薪火從所有來源額外受到[effect0.power]點傷害，並獲得[revenge]：[draw]下回合+[effect1.trigger0.effect0.paramint]並獲得+[effect1.trigger0.effect1.power]永久[pyrehealth]和+[effect1.trigger0.effect2.power]永久薪火[attack]。",
+        "korean": "화로가 모든 피해로부터 [effect0.power]의 추가 피해를 받고 [revenge]을 획득합니다. 보복: 다음 턴에 [draw] +[effect1.trigger0.effect0.paramint]을(를) 얻고, [pyrehealth]을 +[effect1.trigger0.effect1.power] 획득하며 화로 [attack]을 +[effect1.trigger0.effect2.power]만큼 영구적으로 부여받습니다.",
+        "japanese": "自軍の炉に対するあらゆる手段でのダメージが[effect0.power]増加し、[revenge]を得る：次のターン[draw] +[effect1.trigger0.effect0.paramint]。永続的に[pyrehealth] +[effect1.trigger0.effect1.power]を得る。さらに、永続的に炉の[attack] +[effect1.trigger0.effect2.power]を得る。"
+      },
+      "relic_effects": [
+        "@DaemosT3.effects0",
+        "@DaemosT3.effects1"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-80372562f8da9756-ce56be34e18e4b0478c5671ef0e53a5c-v2",
-      "english": "Defeat Lifemother while playing Hellhorned to upgrade.",
-      "french": "Battez Mère Nature en jouant les Cornus pour améliorer.",
-      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Höllenhörnern spielst.",
-      "russian": "Чтобы улучшить, победите Мать-природу, играя за Адских отродий.",
-      "portuguese": "Derrote a Genetriz jogando com os Endiabrados para melhorar.",
-      "chinese": "用狱魔击败生命之母以升级。",
-      "spanish": "Derrota a la Madre Vida con los Astados Infernales para mejorar.",
-      "chinese_traditional": "遊玩獄魔時擊敗生命之母以升級。",
-      "korean": "지옥뿔 군단 플레이 중 생명의 어머니를 처치하면 업그레이드됩니다.",
-      "japanese": "獄角族でのプレイでライフマザーを倒してアップグレード。"
+  "relic_effects": [
+    {
+      "id": "DaemosT3.effects0",
+      "name": "RelicEffectApplyExtraPyreDamage",
+      "param_int": 1
     },
-    "unlockCondition": "soul_kill_lifemother_using_hellhorned",
-    "paramInt": 1
-  },
-  "tierLevel": 3
+    {
+      "id": "DaemosT3.effects1",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@DaemosT3.effects1.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Pyre"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "DaemosT3.effects1.triggers0",
+      "trigger": "on_hit",
+      "effects": [
+        "@DaemosT3.effects1.triggers0.effects0",
+        "@DaemosT3.effects1.triggers0.effects1",
+        "@DaemosT3.effects1.triggers0.effects2"
+      ],
+      "suppress_notifications": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "DaemosT3.effects1.triggers0.effects0",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "param_int": 1
+    },
+    {
+      "id": "DaemosT3.effects1.triggers0.effects1",
+      "name": "CardEffectPermanentlyAdjustMaxPyreHealth",
+      "param_int": 1
+    },
+    {
+      "id": "DaemosT3.effects1.triggers0.effects2",
+      "name": "CardEffectPermanentlyAdjustPyreAttack",
+      "param_int": 1
+    }
+  ]
 }

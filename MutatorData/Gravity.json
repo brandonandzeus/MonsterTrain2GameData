@@ -1,72 +1,90 @@
 {
-  "id": "Gravity",
-  "guid": "adb3bfb7-2c54-4742-b55e-053fe3217737",
-  "name": "Gravity",
-  "nameKey": {
-    "key": "MutatorData_nameKey-91a9a024090b7df6-34f70c9d93d40d54780e01868f7ed97d-v2",
-    "english": "Gravity",
-    "french": "Gravité",
-    "german": "Schwerkraft",
-    "russian": "Гравитация",
-    "portuguese": "Gravidade",
-    "chinese": "重力",
-    "spanish": "Gravedad",
-    "chinese_traditional": "重力",
-    "korean": "중력",
-    "japanese": "重力"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-13807ad141b97951-34f70c9d93d40d54780e01868f7ed97d-v2",
-    "english": "At end of turn, [descend] friendly units.",
-    "french": "À la fin du tour, fait <b>descendre</b> les unités alliées.",
-    "german": "Lasse verbündete Einheiten am Ende des Zuges <b>herabsteigen</b>.",
-    "russian": "В конце хода происходит [descend] союзников.",
-    "portuguese": "<b>Derruba</b> unidades aliadas ao final do turno.",
-    "chinese": "回合结束时，使友方单位[descend]。",
-    "spanish": "Al final del turno, las unidades aliadas <b>Descienden</b>.",
-    "chinese_traditional": "在回合結束時，使友方單位[descend]。",
-    "korean": "턴 종료 시, 아군 유닛을 [descend]시킵니다.",
-    "japanese": "ターン終了時に味方ユニットを[descend]させる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectBumpOnTurnEnd",
-      "additionalTooltips": [
+      "id": "Gravity",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardEffectBump_Down_TooltipText",
-            "english": "Move down a floor and to the back of that floor.",
-            "french": "Fait descendre d'un niveau et repousse à l'arrière du niveau.",
-            "german": "Eine Ebene nach unten und dort nach hinten versetzen.",
-            "russian": "Спуск на этаж и перемещение в его начало.",
-            "portuguese": "Move para o fundo do andar de baixo.",
-            "chinese": "向下移动一层，到达该层后面。",
-            "spanish": "Baja un piso y se coloca en última posición.",
-            "chinese_traditional": "下移一層並移至該層後排。",
-            "korean": "한 층 아래 후열로 이동합니다.",
-            "japanese": "1階下がり、そのフロアの後列に移動する。"
-          },
-          "titleKey": {
-            "key": "CardEffectBump_Down_TooltipTitle",
-            "english": "[descend]",
-            "french": "<b>Descente</b>",
-            "german": "<b>Herabsteigen</b>",
-            "russian": "[descend]",
-            "portuguese": "<b>Derrubar</b>",
-            "chinese": "<b>下降</b>",
-            "spanish": "[descend]",
-            "chinese_traditional": "[descend]",
-            "korean": "[descend]",
-            "japanese": "[descend]"
-          },
-          "style": "default"
+          "mutator": {
+            "boon_value": 3,
+            "disable_in_daily_challenges": true
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": -1
+      "names": {
+        "key": "MutatorData_nameKey-91a9a024090b7df6-34f70c9d93d40d54780e01868f7ed97d-v2",
+        "english": "Gravity",
+        "french": "Gravité",
+        "german": "Schwerkraft",
+        "russian": "Гравитация",
+        "portuguese": "Gravidade",
+        "chinese": "重力",
+        "spanish": "Gravedad",
+        "chinese_traditional": "重力",
+        "korean": "중력",
+        "japanese": "重力"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-13807ad141b97951-34f70c9d93d40d54780e01868f7ed97d-v2",
+        "english": "At end of turn, [descend] friendly units.",
+        "french": "À la fin du tour, fait <b>descendre</b> les unités alliées.",
+        "german": "Lasse verbündete Einheiten am Ende des Zuges <b>herabsteigen</b>.",
+        "russian": "В конце хода происходит [descend] союзников.",
+        "portuguese": "<b>Derruba</b> unidades aliadas ao final do turno.",
+        "chinese": "回合结束时，使友方单位[descend]。",
+        "spanish": "Al final del turno, las unidades aliadas <b>Descienden</b>.",
+        "chinese_traditional": "在回合結束時，使友方單位[descend]。",
+        "korean": "턴 종료 시, 아군 유닛을 [descend]시킵니다.",
+        "japanese": "ターン終了時に味方ユニットを[descend]させる。"
+      },
+      "relic_effects": [
+        "@Gravity.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true,
-  "boonValue": 3,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Gravity.effects0",
+      "name": "RelicEffectBumpOnTurnEnd",
+      "additional_tooltips": [
+        "@Gravity.effects0.additionalTooltips0"
+      ],
+      "param_source_team": "monsters",
+      "param_int": -1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Gravity.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardEffectBump_Down_TooltipText",
+        "english": "Move down a floor and to the back of that floor.",
+        "french": "Fait descendre d'un niveau et repousse à l'arrière du niveau.",
+        "german": "Eine Ebene nach unten und dort nach hinten versetzen.",
+        "russian": "Спуск на этаж и перемещение в его начало.",
+        "portuguese": "Move para o fundo do andar de baixo.",
+        "chinese": "向下移动一层，到达该层后面。",
+        "spanish": "Baja un piso y se coloca en última posición.",
+        "chinese_traditional": "下移一層並移至該層後排。",
+        "korean": "한 층 아래 후열로 이동합니다.",
+        "japanese": "1階下がり、そのフロアの後列に移動する。"
+      },
+      "titles": {
+        "key": "CardEffectBump_Down_TooltipTitle",
+        "english": "[descend]",
+        "french": "<b>Descente</b>",
+        "german": "<b>Herabsteigen</b>",
+        "russian": "[descend]",
+        "portuguese": "<b>Derrubar</b>",
+        "chinese": "<b>下降</b>",
+        "spanish": "[descend]",
+        "chinese_traditional": "[descend]",
+        "korean": "[descend]",
+        "japanese": "[descend]"
+      },
+      "style": "default"
+    }
+  ]
 }

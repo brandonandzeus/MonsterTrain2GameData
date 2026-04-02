@@ -1,59 +1,80 @@
 {
-  "id": "SoulSavior_Region1Complete_3",
-  "guid": "36dc3689-be84-4a01-8bb1-e69c38d78208",
-  "name": "Guarded",
-  "nameKey": {
-    "key": "MutatorData_nameKey-c37d37f2a714b49b-ff5043aeef4f26c4aa481a44f384196b-v2",
-    "english": "Guarded",
-    "french": "Prudence",
-    "german": "Behütet",
-    "russian": "Под охраной",
-    "portuguese": "Protegido",
-    "chinese": "防备",
-    "spanish": "Cautela",
-    "chinese_traditional": "戒備",
-    "korean": "경계심",
-    "japanese": "庇護"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-3f14bb571531ef9b-ff5043aeef4f26c4aa481a44f384196b-v2",
-    "english": "Enemy units gain [armor] equal to their [attack] on [slay].",
-    "french": "Les ennemis gagnent une [armor] valant leur [attack] lors d'une [slay].",
-    "german": "Gegnerische Einheiten erhalten [armor] gleich ihrem [attack] beim [slay].",
-    "russian": "[slay]: Врагам дается [armor], равная [attack].",
-    "portuguese": "Unidades inimigas recebem [armor] igual ao seu [attack] ao [slay].",
-    "chinese": "敌方单位[slay]时，获得等同于其[attack]的[armor]。",
-    "spanish": "Las unidades enemigas añaden tanta [armor] como su [attack] al <b>Ejecutar</b>.",
-    "chinese_traditional": "敵方單位在[slay]時獲得等同於其[attack]的[armor]。",
-    "korean": "[slay] 시 적 유닛들이 자신의 [attack]만큼 [armor]을 얻습니다.",
-    "japanese": "敵ユニットが[slay]時に自身の[attack]に等しい[armor]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "SoulSavior_Region1Complete_3",
+      "type": "mutator",
+      "extensions": [
         {
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffectPerSelfAttack",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "armor",
-                  "count": 1
-                }
-              ],
-              "paramInt": 1
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
         }
       ],
-      "paramSourceTeam": "heroes"
+      "names": {
+        "key": "MutatorData_nameKey-c37d37f2a714b49b-ff5043aeef4f26c4aa481a44f384196b-v2",
+        "english": "Guarded",
+        "french": "Prudence",
+        "german": "Behütet",
+        "russian": "Под охраной",
+        "portuguese": "Protegido",
+        "chinese": "防备",
+        "spanish": "Cautela",
+        "chinese_traditional": "戒備",
+        "korean": "경계심",
+        "japanese": "庇護"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-3f14bb571531ef9b-ff5043aeef4f26c4aa481a44f384196b-v2",
+        "english": "Enemy units gain [armor] equal to their [attack] on [slay].",
+        "french": "Les ennemis gagnent une [armor] valant leur [attack] lors d'une [slay].",
+        "german": "Gegnerische Einheiten erhalten [armor] gleich ihrem [attack] beim [slay].",
+        "russian": "[slay]: Врагам дается [armor], равная [attack].",
+        "portuguese": "Unidades inimigas recebem [armor] igual ao seu [attack] ao [slay].",
+        "chinese": "敌方单位[slay]时，获得等同于其[attack]的[armor]。",
+        "spanish": "Las unidades enemigas añaden tanta [armor] como su [attack] al <b>Ejecutar</b>.",
+        "chinese_traditional": "敵方單位在[slay]時獲得等同於其[attack]的[armor]。",
+        "korean": "[slay] 시 적 유닛들이 자신의 [attack]만큼 [armor]을 얻습니다.",
+        "japanese": "敵ユニットが[slay]時に自身の[attack]に等しい[armor]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region1Complete_3.effects0"
+      ]
     }
   ],
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region1Complete_3.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@SoulSavior_Region1Complete_3.effects0.triggers0"
+      ],
+      "param_source_team": "heroes"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SoulSavior_Region1Complete_3.effects0.triggers0",
+      "trigger": "on_kill",
+      "effects": [
+        "@SoulSavior_Region1Complete_3.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "SoulSavior_Region1Complete_3.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffectPerSelfAttack",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "armor",
+          "count": 1
+        }
+      ],
+      "param_int": 1
+    }
+  ]
 }

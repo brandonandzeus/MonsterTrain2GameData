@@ -1,52 +1,70 @@
 {
-  "id": "Echoes_TopFloorHugeRoomSpaceNoneOthers",
-  "guid": "842c9b73-2737-44fc-bbd7-519b454b32c4",
-  "name": "Top Heavy",
-  "nameKey": {
-    "key": "MutatorData_nameKey-0d7cddd1ac746f82-4d33b7e046b284f4f9fde9f28ab3f3c4-v2",
-    "english": "Top Heavy",
-    "french": "Tout le monde en haut",
-    "german": "Kopflastig",
-    "russian": "Густо сверху",
-    "portuguese": "Topo Pesado",
-    "chinese": "头重脚轻",
-    "spanish": "Descompensado",
-    "chinese_traditional": "頭重腳輕",
-    "korean": "상부 과중",
-    "japanese": "トップヘビー"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-b0e0098fb150991f-4d33b7e046b284f4f9fde9f28ab3f3c4-v2",
-    "english": "+[effect0.power][capacity] on the top floor and [effect1.power][capacity] on the other two.",
-    "french": "+[effect0.power][capacity] au niveau supérieur et [effect1.power][capacity] aux deux autres.",
-    "german": "+[effect0.power][capacity] auf der obersten Ebene und [effect1.power][capacity] auf den nächsten beiden.",
-    "russian": "+[effect0.power][capacity] на верхнем этаже и [effect1.power][capacity] на двух других.",
-    "portuguese": "+[effect0.power][capacity] no andar de cima e [effect1.power][capacity] nos outros dois.",
-    "chinese": "顶层 +[effect0.power][capacity]，另外两层 [effect1.power][capacity]。",
-    "spanish": "+[effect0.power][capacity] en el piso superior y [effect1.power][capacity] en los otros dos.",
-    "chinese_traditional": "頂層+[effect0.power][capacity]，其他兩層+[effect1.power][capacity]。",
-    "korean": "최상층의 [capacity]이 +[effect0.power], 나머지 두 층은 [effect1.power][capacity]이 됩니다.",
-    "japanese": "上段のフロアで+[effect0.power][capacity]、他のフロアで+[effect1.power][capacity]。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeSingleFloorCapacity",
-      "paramInt": 10,
-      "paramFloat": 2.0
-    },
-    {
-      "relicEffectClassName": "RelicEffectChangeSingleFloorCapacity",
-      "paramInt": -5,
-      "paramFloat": 1.0
-    },
-    {
-      "relicEffectClassName": "RelicEffectChangeSingleFloorCapacity",
-      "paramInt": -5
+      "id": "Echoes_TopFloorHugeRoomSpaceNoneOthers",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3,
+            "tags": [
+              "roomspace",
+              "capacity"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-0d7cddd1ac746f82-4d33b7e046b284f4f9fde9f28ab3f3c4-v2",
+        "english": "Top Heavy",
+        "french": "Tout le monde en haut",
+        "german": "Kopflastig",
+        "russian": "Густо сверху",
+        "portuguese": "Topo Pesado",
+        "chinese": "头重脚轻",
+        "spanish": "Descompensado",
+        "chinese_traditional": "頭重腳輕",
+        "korean": "상부 과중",
+        "japanese": "トップヘビー"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-b0e0098fb150991f-4d33b7e046b284f4f9fde9f28ab3f3c4-v2",
+        "english": "+[effect0.power][capacity] on the top floor and [effect1.power][capacity] on the other two.",
+        "french": "+[effect0.power][capacity] au niveau supérieur et [effect1.power][capacity] aux deux autres.",
+        "german": "+[effect0.power][capacity] auf der obersten Ebene und [effect1.power][capacity] auf den nächsten beiden.",
+        "russian": "+[effect0.power][capacity] на верхнем этаже и [effect1.power][capacity] на двух других.",
+        "portuguese": "+[effect0.power][capacity] no andar de cima e [effect1.power][capacity] nos outros dois.",
+        "chinese": "顶层 +[effect0.power][capacity]，另外两层 [effect1.power][capacity]。",
+        "spanish": "+[effect0.power][capacity] en el piso superior y [effect1.power][capacity] en los otros dos.",
+        "chinese_traditional": "頂層+[effect0.power][capacity]，其他兩層+[effect1.power][capacity]。",
+        "korean": "최상층의 [capacity]이 +[effect0.power], 나머지 두 층은 [effect1.power][capacity]이 됩니다.",
+        "japanese": "上段のフロアで+[effect0.power][capacity]、他のフロアで+[effect1.power][capacity]。"
+      },
+      "relic_effects": [
+        "@Echoes_TopFloorHugeRoomSpaceNoneOthers.effects0",
+        "@Echoes_TopFloorHugeRoomSpaceNoneOthers.effects1",
+        "@Echoes_TopFloorHugeRoomSpaceNoneOthers.effects2"
+      ]
     }
   ],
-  "boonValue": -3,
-  "tags": [
-    "roomspace",
-    "capacity"
+  "relic_effects": [
+    {
+      "id": "Echoes_TopFloorHugeRoomSpaceNoneOthers.effects0",
+      "name": "RelicEffectChangeSingleFloorCapacity",
+      "param_int": 10,
+      "param_float": 2.0
+    },
+    {
+      "id": "Echoes_TopFloorHugeRoomSpaceNoneOthers.effects1",
+      "name": "RelicEffectChangeSingleFloorCapacity",
+      "param_int": -5,
+      "param_float": 1.0
+    },
+    {
+      "id": "Echoes_TopFloorHugeRoomSpaceNoneOthers.effects2",
+      "name": "RelicEffectChangeSingleFloorCapacity",
+      "param_int": -5
+    }
   ]
 }

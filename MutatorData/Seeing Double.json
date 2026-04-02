@@ -1,57 +1,75 @@
 {
-  "id": "DoubleUnits",
-  "guid": "559f443d-bbeb-40fc-aa86-772ef4c2c2dc",
-  "name": "Seeing Double",
-  "nameKey": {
-    "key": "MutatorData_nameKey-8a648e6ac2ec11a2-9b4a202c23f142f45abeec79c4564382-v2",
-    "english": "Seeing Double",
-    "french": "Vision double",
-    "german": "Doppelt sehen",
-    "russian": "Встреча с близнецом",
-    "portuguese": "Vendo em Dobro",
-    "chinese": "好事成双",
-    "spanish": "Visión doble",
-    "chinese_traditional": "眼花撩亂",
-    "korean": "이중 시야",
-    "japanese": "ダブル・トラブル"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-56a049e9cc7401f8-9b4a202c23f142f45abeec79c4564382-v2",
-    "english": "When the first friendly unit is summoned each turn, summon that same unit again.",
-    "french": "Lorsque la première unité alliée est invoquée à chaque tour, elle est de nouveau invoquée.",
-    "german": "Wenn die erste verbündete Einheit in jedem Zug gerufen wird, rufe diese Einheit erneut.",
-    "russian": "Призовите первого бойца за ход еще раз.",
-    "portuguese": "Quando a primeira unidade aliada for invocada em cada turno, invoca novamente a mesma unidade.",
-    "chinese": "当你每回合首次召唤友方单位时，会再召唤一个相同的单位。",
-    "spanish": "Cuando se invoque la primera unidad aliada en cada turno, se volverá a invocar la misma unidad.",
-    "chinese_traditional": "每回合首次召喚友方單位時，再次召喚相同單位。",
-    "korean": "아군 턴에 첫 번째로 소환한 아군 유닛을 한 번 더 소환합니다.",
-    "japanese": "毎ターン、味方ユニットの初回召喚時に、同一のユニットをもう一度召喚する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectExtraSpawnsFirstUnitPerTurn",
-      "effectConditions": [
+      "id": "DoubleUnits",
+      "type": "mutator",
+      "extensions": [
         {
-          "paramCardType": "any",
-          "paramTrackedValue": "subtype_in_deck",
-          "paramTrackTriggerCount": true,
-          "paramEntryDuration": "this_turn",
-          "paramComparator": [
-            "greater_than",
-            "equal"
-          ],
-          "paramInt": 1,
-          "allowMultipleTriggersPerDuration": false
+          "mutator": {
+            "boon_value": 12,
+            "tags": [
+              "doublespawn",
+              "firstsummon"
+            ]
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": 1
+      "names": {
+        "key": "MutatorData_nameKey-8a648e6ac2ec11a2-9b4a202c23f142f45abeec79c4564382-v2",
+        "english": "Seeing Double",
+        "french": "Vision double",
+        "german": "Doppelt sehen",
+        "russian": "Встреча с близнецом",
+        "portuguese": "Vendo em Dobro",
+        "chinese": "好事成双",
+        "spanish": "Visión doble",
+        "chinese_traditional": "眼花撩亂",
+        "korean": "이중 시야",
+        "japanese": "ダブル・トラブル"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-56a049e9cc7401f8-9b4a202c23f142f45abeec79c4564382-v2",
+        "english": "When the first friendly unit is summoned each turn, summon that same unit again.",
+        "french": "Lorsque la première unité alliée est invoquée à chaque tour, elle est de nouveau invoquée.",
+        "german": "Wenn die erste verbündete Einheit in jedem Zug gerufen wird, rufe diese Einheit erneut.",
+        "russian": "Призовите первого бойца за ход еще раз.",
+        "portuguese": "Quando a primeira unidade aliada for invocada em cada turno, invoca novamente a mesma unidade.",
+        "chinese": "当你每回合首次召唤友方单位时，会再召唤一个相同的单位。",
+        "spanish": "Cuando se invoque la primera unidad aliada en cada turno, se volverá a invocar la misma unidad.",
+        "chinese_traditional": "每回合首次召喚友方單位時，再次召喚相同單位。",
+        "korean": "아군 턴에 첫 번째로 소환한 아군 유닛을 한 번 더 소환합니다.",
+        "japanese": "毎ターン、味方ユニットの初回召喚時に、同一のユニットをもう一度召喚する。"
+      },
+      "relic_effects": [
+        "@DoubleUnits.effects0"
+      ]
     }
   ],
-  "boonValue": 12,
-  "tags": [
-    "doublespawn",
-    "firstsummon"
+  "relic_effects": [
+    {
+      "id": "DoubleUnits.effects0",
+      "name": "RelicEffectExtraSpawnsFirstUnitPerTurn",
+      "conditions": [
+        "@DoubleUnits.effects0.effectConditions0"
+      ],
+      "param_source_team": "monsters",
+      "param_int": 1
+    }
+  ],
+  "relic_effect_conditions": [
+    {
+      "id": "DoubleUnits.effects0.effectConditions0",
+      "param_card_type": "any",
+      "param_tracked_value": "subtype_in_deck",
+      "param_track_trigger_count": true,
+      "param_entry_duration": "this_turn",
+      "param_comparator": [
+        "greater_than",
+        "equal"
+      ],
+      "param_int": 1,
+      "allow_multiple_triggers_per_duration": false
+    }
   ]
 }

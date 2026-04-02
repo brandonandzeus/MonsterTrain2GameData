@@ -1,67 +1,89 @@
 {
-  "id": "LoseMoneyOnHit",
-  "guid": "4c17065c-6391-45ce-a009-39ed89e1ba9c",
-  "name": "Bleeding Cash",
-  "nameKey": {
-    "key": "MutatorData_nameKey-617097fae41b424d-c6769b81cab48d745ad9de3579419ef6-v2",
-    "english": "Bleeding Cash",
-    "french": "Panier percé",
-    "german": "Blutzoll",
-    "russian": "Потеря денег",
-    "portuguese": "Dinheiro Sangrento",
-    "chinese": "大亏损",
-    "spanish": "Números rojos",
-    "chinese_traditional": "血的代價",
-    "korean": "새나가는 돈",
-    "japanese": "ジャンプしてみろ"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-7cedabbfc2837fb5-c6769b81cab48d745ad9de3579419ef6-v2",
-    "english": "Lose [effect0.power][coin] whenever a friendly unit takes damage.",
-    "french": "Vous perdez [effect0.power][coin] quand un allié subit des dégâts.",
-    "german": "Verliere [effect0.power][coin], wenn eine verbündete Einheit Schaden erleidet.",
-    "russian": "Вы теряете [effect0.power][coin], когда союзник получает урон.",
-    "portuguese": "Perde [effect0.power][coin] sempre que uma unidade aliada sofre dano.",
-    "chinese": "友方单位承受伤害时失去 [effect0.power][coin]。",
-    "spanish": "Pierdes [effect0.power][coin] cuando una unidad aliada recibe daño.",
-    "chinese_traditional": "當友方單位受到傷害時失去[effect0.power][coin]。",
-    "korean": "아군 유닛이 피해를 입을 때마다 [effect0.power][coin]을 잃습니다.",
-    "japanese": "味方ユニットがダメージを受けるたびに[effect0.power][coin]を失う。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "LoseMoneyOnHit",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "MutatorData_descriptionKey-79e218216adb9a99-c6769b81cab48d745ad9de3579419ef6-v2",
-            "english": "Lose [effect0.power][coin].",
-            "french": "Perdez [effect0.power][coin].",
-            "german": "Verliere [effect0.power][coin].",
-            "russian": "Вы теряете [effect0.power][coin].",
-            "portuguese": "Perde [effect0.power][coin].",
-            "chinese": "失去 [effect0.power][coin]。",
-            "spanish": "Pierdes [effect0.power][coin].",
-            "chinese_traditional": "失去[effect0.power][coin]。",
-            "korean": "[effect0.power][coin]을 잃습니다.",
-            "japanese": "[effect0.power][coin]を失う。"
-          },
-          "trigger": "on_hit",
-          "effects": [
-            {
-              "effectStateName": "CardEffectRewardGold",
-              "paramInt": -1
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "mutator": {
+            "boon_value": -2,
+            "tags": [
+              "goldreward"
+            ]
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      "names": {
+        "key": "MutatorData_nameKey-617097fae41b424d-c6769b81cab48d745ad9de3579419ef6-v2",
+        "english": "Bleeding Cash",
+        "french": "Panier percé",
+        "german": "Blutzoll",
+        "russian": "Потеря денег",
+        "portuguese": "Dinheiro Sangrento",
+        "chinese": "大亏损",
+        "spanish": "Números rojos",
+        "chinese_traditional": "血的代價",
+        "korean": "새나가는 돈",
+        "japanese": "ジャンプしてみろ"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-7cedabbfc2837fb5-c6769b81cab48d745ad9de3579419ef6-v2",
+        "english": "Lose [effect0.power][coin] whenever a friendly unit takes damage.",
+        "french": "Vous perdez [effect0.power][coin] quand un allié subit des dégâts.",
+        "german": "Verliere [effect0.power][coin], wenn eine verbündete Einheit Schaden erleidet.",
+        "russian": "Вы теряете [effect0.power][coin], когда союзник получает урон.",
+        "portuguese": "Perde [effect0.power][coin] sempre que uma unidade aliada sofre dano.",
+        "chinese": "友方单位承受伤害时失去 [effect0.power][coin]。",
+        "spanish": "Pierdes [effect0.power][coin] cuando una unidad aliada recibe daño.",
+        "chinese_traditional": "當友方單位受到傷害時失去[effect0.power][coin]。",
+        "korean": "아군 유닛이 피해를 입을 때마다 [effect0.power][coin]을 잃습니다.",
+        "japanese": "味方ユニットがダメージを受けるたびに[effect0.power][coin]を失う。"
+      },
+      "relic_effects": [
+        "@LoseMoneyOnHit.effects0"
+      ]
     }
   ],
-  "boonValue": -2,
-  "tags": [
-    "goldreward"
+  "relic_effects": [
+    {
+      "id": "LoseMoneyOnHit.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@LoseMoneyOnHit.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "LoseMoneyOnHit.effects0.triggers0",
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-79e218216adb9a99-c6769b81cab48d745ad9de3579419ef6-v2",
+        "english": "Lose [effect0.power][coin].",
+        "french": "Perdez [effect0.power][coin].",
+        "german": "Verliere [effect0.power][coin].",
+        "russian": "Вы теряете [effect0.power][coin].",
+        "portuguese": "Perde [effect0.power][coin].",
+        "chinese": "失去 [effect0.power][coin]。",
+        "spanish": "Pierdes [effect0.power][coin].",
+        "chinese_traditional": "失去[effect0.power][coin]。",
+        "korean": "[effect0.power][coin]을 잃습니다.",
+        "japanese": "[effect0.power][coin]を失う。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@LoseMoneyOnHit.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "LoseMoneyOnHit.effects0.triggers0.effects0",
+      "name": "CardEffectRewardGold",
+      "param_int": -1
+    }
   ]
 }

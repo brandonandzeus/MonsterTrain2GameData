@@ -1,89 +1,113 @@
 {
-  "id": "Echoes_EnemyUnitsTitaniteAtFront",
-  "guid": "e491ceb3-0f93-41a3-b9ee-1cf5de0c5a9b",
-  "name": "Frontline Fighter",
-  "nameKey": {
-    "key": "MutatorData_nameKey-79287860a9cbac4b-28a3eb9926579a24ba39bd5e27ae41aa-v2",
-    "english": "Frontline Fighter",
-    "french": "En première ligne",
-    "german": "Frontkämpfer",
-    "russian": "Боец с передовой",
-    "portuguese": "Lutador da Vanguarda",
-    "chinese": "前线斗士",
-    "spanish": "Luchador de vanguardia",
-    "chinese_traditional": "前線鬥士",
-    "korean": "최전선 전사",
-    "japanese": "前線ファイター"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-ca2f9ec0b859631d-28a3eb9926579a24ba39bd5e27ae41aa-v2",
-    "english": "Enemy units get [titanite] when they are in the front.",
-    "french": "Les unités ennemies en 1re ligne gagnent [titanite].",
-    "german": "Die vordersten gegnerischen Einheiten erhalten [titanite].",
-    "russian": "Враги на передовой получают [titanite].",
-    "portuguese": "As unidades inimigas recebem [titanite] quando estão na frente.",
-    "chinese": "敌方单位在前排时获得[titanite]。",
-    "spanish": "Las unidades enemigas añaden [titanite] cuando se colocan en primera posición.",
-    "chinese_traditional": "敵方單位在前排時獲得[titanite]。",
-    "korean": "적 유닛들이 전열에 있을 때 [titanite]를 획득합니다.",
-    "japanese": "前列にいる場合、敵ユニットが[titanite]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Echoes_EnemyUnitsTitaniteAtFront",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "MutatorData_descriptionKey-ddaa33c61183be62-28a3eb9926579a24ba39bd5e27ae41aa-v2",
-            "english": "Gain [titanite].",
-            "french": "Octroie [titanite].",
-            "german": "Erhalte [titanite].",
-            "russian": "Дает [titanite].",
-            "portuguese": "Recebe [titanite].",
-            "chinese": "获得[titanite]。",
-            "spanish": "Obtienes [titanite].",
-            "chinese_traditional": "獲得[titanite]。",
-            "korean": "[titanite]를 획득합니다.",
-            "japanese": "[titanite]を得る。"
-          },
-          "trigger": "on_deathwish",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "titanite",
-                  "count": 1
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        },
-        {
-          "trigger": "on_deathwish_lost",
-          "effects": [
-            {
-              "effectStateName": "CardEffectRemoveStatusEffect",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramStatusEffects": [
-                {
-                  "statusId": "titanite",
-                  "count": 1
-                }
-              ]
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "mutator": {
+            "boon_value": -6,
+            "disable_in_daily_challenges": true
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramBool": true
+      "names": {
+        "key": "MutatorData_nameKey-79287860a9cbac4b-28a3eb9926579a24ba39bd5e27ae41aa-v2",
+        "english": "Frontline Fighter",
+        "french": "En première ligne",
+        "german": "Frontkämpfer",
+        "russian": "Боец с передовой",
+        "portuguese": "Lutador da Vanguarda",
+        "chinese": "前线斗士",
+        "spanish": "Luchador de vanguardia",
+        "chinese_traditional": "前線鬥士",
+        "korean": "최전선 전사",
+        "japanese": "前線ファイター"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-ca2f9ec0b859631d-28a3eb9926579a24ba39bd5e27ae41aa-v2",
+        "english": "Enemy units get [titanite] when they are in the front.",
+        "french": "Les unités ennemies en 1re ligne gagnent [titanite].",
+        "german": "Die vordersten gegnerischen Einheiten erhalten [titanite].",
+        "russian": "Враги на передовой получают [titanite].",
+        "portuguese": "As unidades inimigas recebem [titanite] quando estão na frente.",
+        "chinese": "敌方单位在前排时获得[titanite]。",
+        "spanish": "Las unidades enemigas añaden [titanite] cuando se colocan en primera posición.",
+        "chinese_traditional": "敵方單位在前排時獲得[titanite]。",
+        "korean": "적 유닛들이 전열에 있을 때 [titanite]를 획득합니다.",
+        "japanese": "前列にいる場合、敵ユニットが[titanite]を得る。"
+      },
+      "relic_effects": [
+        "@Echoes_EnemyUnitsTitaniteAtFront.effects0"
+      ]
     }
   ],
-  "boonValue": -6,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_EnemyUnitsTitaniteAtFront.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers0",
+        "@Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers1"
+      ],
+      "param_source_team": "heroes",
+      "param_bool": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers0",
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-ddaa33c61183be62-28a3eb9926579a24ba39bd5e27ae41aa-v2",
+        "english": "Gain [titanite].",
+        "french": "Octroie [titanite].",
+        "german": "Erhalte [titanite].",
+        "russian": "Дает [titanite].",
+        "portuguese": "Recebe [titanite].",
+        "chinese": "获得[titanite]。",
+        "spanish": "Obtienes [titanite].",
+        "chinese_traditional": "獲得[titanite]。",
+        "korean": "[titanite]를 획득합니다.",
+        "japanese": "[titanite]を得る。"
+      },
+      "trigger": "on_deathwish",
+      "effects": [
+        "@Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers1",
+      "trigger": "on_deathwish_lost",
+      "effects": [
+        "@Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers1.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "titanite",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "Echoes_EnemyUnitsTitaniteAtFront.effects0.triggers1.effects0",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "titanite",
+          "count": 1
+        }
+      ]
+    }
+  ]
 }

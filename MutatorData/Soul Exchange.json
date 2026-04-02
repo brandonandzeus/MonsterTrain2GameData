@@ -1,76 +1,54 @@
 {
-  "id": "Echoes_StartingSoulsmelter",
-  "guid": "b4e0ea29-72e6-49d8-8d8c-4e7c8dfbd924",
-  "name": "Soul Exchange",
-  "nameKey": {
-    "key": "MutatorData_nameKey-d2a86b6c9d2b2718-0e8762a6cfafbbf4caece6e46bbbc8ed-v2",
-    "english": "Soul Exchange",
-    "french": "Échange d'âmes",
-    "german": "Seelentausch",
-    "russian": "Обмен душами",
-    "portuguese": "Troca de Almas",
-    "chinese": "灵魂交换",
-    "spanish": "Intercambio espiritual",
-    "chinese_traditional": "靈魂交換",
-    "korean": "영혼 거래",
-    "japanese": "魂の交換"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-7587d7c94cb86882-0e8762a6cfafbbf4caece6e46bbbc8ed-v2",
-    "english": "Start with <b>Soulsmelter</b> and it has [deployable].",
-    "french": "Commencez avec <b>Fondeur d'âme</b>, qui a [deployable].",
-    "german": "Beginnt mit <b>Seelenschmelze</b> und ist [deployable].",
-    "russian": "Начните с <b>Душеплавом</b> с эффектом «[deployable]».",
-    "portuguese": "Começa com <b>Fundidor de Almas</b> e tem [deployable].",
-    "chinese": "开始游戏时获得带有[deployable]的<b>熔魂者</b>。",
-    "spanish": "Empiezas con un <b>Fundealmas</b> que tiene [deployable].",
-    "chinese_traditional": "以<b>靈魂熔煉器</b>開始且它擁有[deployable]。",
-    "korean": "시작 시 <b>영혼 제련기</b>를 보유하며, [deployable]의 속성이 부여됩니다.",
-    "japanese": "<b>魂の製錬</b>がある状態で開始し、さらに[deployable]が適用される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardUpgradeData": {
-        "id": "AddFrontlineTrait",
-        "guid": "675c4ad0-e024-4ccc-afbd-34e3c5725b33",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-fcef167865709a8a-438d458166178c848a00af9f9a428ece-v2",
-          "english": "Deployable",
-          "french": "Déployable",
-          "german": "Einsetzbar",
-          "russian": "Размещение",
-          "portuguese": "Distribuível",
-          "chinese": "可部署",
-          "spanish": "Desplegable",
-          "chinese_traditional": "可部署",
-          "korean": "배치 유닛",
-          "japanese": "配置可能"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-8af5b1e0177b952f-438d458166178c848a00af9f9a428ece-v2",
-          "english": "This card is drawn during the deployment phase.",
-          "french": "Cette carte est piochée pendant la phase de Déploiement.",
-          "german": "Diese Karte wird während der Einsatzphase gezogen.",
-          "russian": "Эта карта попадает в руку в фазе размещения.",
-          "portuguese": "Esta carta é comprada durante a Fase de Distribuição.",
-          "chinese": "该卡牌会在部署阶段抽取。",
-          "spanish": "Esta carta se roba en la fase de despliegue.",
-          "chinese_traditional": "此卡在部署階段抽取。",
-          "korean": "이 카드는 배치 단계에서 뽑습니다.",
-          "japanese": "このカードは配置フェーズ中にドローされる。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitDrawInDeploymentPhase",
-            "traitIsRemovable": false,
-            "drawInDeploymentPhase": true
+      "id": "Echoes_StartingSoulsmelter",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 7
           }
-        ]
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-d2a86b6c9d2b2718-0e8762a6cfafbbf4caece6e46bbbc8ed-v2",
+        "english": "Soul Exchange",
+        "french": "Échange d'âmes",
+        "german": "Seelentausch",
+        "russian": "Обмен душами",
+        "portuguese": "Troca de Almas",
+        "chinese": "灵魂交换",
+        "spanish": "Intercambio espiritual",
+        "chinese_traditional": "靈魂交換",
+        "korean": "영혼 거래",
+        "japanese": "魂の交換"
       },
-      "paramBool": true,
-      "paramCardPool": "OnlySoulsmelterPool"
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-7587d7c94cb86882-0e8762a6cfafbbf4caece6e46bbbc8ed-v2",
+        "english": "Start with <b>Soulsmelter</b> and it has [deployable].",
+        "french": "Commencez avec <b>Fondeur d'âme</b>, qui a [deployable].",
+        "german": "Beginnt mit <b>Seelenschmelze</b> und ist [deployable].",
+        "russian": "Начните с <b>Душеплавом</b> с эффектом «[deployable]».",
+        "portuguese": "Começa com <b>Fundidor de Almas</b> e tem [deployable].",
+        "chinese": "开始游戏时获得带有[deployable]的<b>熔魂者</b>。",
+        "spanish": "Empiezas con un <b>Fundealmas</b> que tiene [deployable].",
+        "chinese_traditional": "以<b>靈魂熔煉器</b>開始且它擁有[deployable]。",
+        "korean": "시작 시 <b>영혼 제련기</b>를 보유하며, [deployable]의 속성이 부여됩니다.",
+        "japanese": "<b>魂の製錬</b>がある状態で開始し、さらに[deployable]が適用される。"
+      },
+      "relic_effects": [
+        "@Echoes_StartingSoulsmelter.effects0"
+      ]
     }
   ],
-  "boonValue": 7
+  "relic_effects": [
+    {
+      "id": "Echoes_StartingSoulsmelter.effects0",
+      "name": "RelicEffectAddCardsStartOfRun",
+      "param_upgrade": "AddFrontlineTrait",
+      "param_bool": true,
+      "param_card_pool": "OnlySoulsmelterPool"
+    }
+  ]
 }

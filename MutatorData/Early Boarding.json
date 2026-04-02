@@ -1,39 +1,53 @@
 {
-  "id": "Echoes_EnemyUnitsStartAtSecondFloor",
-  "guid": "ea497cb3-cc74-4cb9-84c6-57f1fd92929e",
-  "name": "Early Boarding",
-  "nameKey": {
-    "key": "MutatorData_nameKey-0eec55fa08c5db1a-097bc250a14a0e54fbb8268d7cc9afd6-v2",
-    "english": "Early Boarding",
-    "french": "Embarquement prioritaire",
-    "german": "Früher Einstieg",
-    "russian": "Ранняя посадка",
-    "portuguese": "Embarque Antecipado",
-    "chinese": "提前上车",
-    "spanish": "Prioridad de embarque",
-    "chinese_traditional": "提早登車",
-    "korean": "조기 탑승",
-    "japanese": "早期乗車"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-4a153cf5bf23a6e2-097bc250a14a0e54fbb8268d7cc9afd6-v2",
-    "english": "On the turn after [deployphase], the first enemy wave ascends and the second wave enters.",
-    "french": "Au tour suivant la [deployphase], la première vague d'ennemis monte et la seconde vague entre.",
-    "german": "Beim Zug nach der [deployphase] steigt die erste gegnerische Welle auf und die zweite Welle kommt ins Spiel.",
-    "russian": "В ход после <b>Фазы Размещения</b>, первая волна врагов поднимается, а вторая входит.",
-    "portuguese": "No turno após a [deployphase], a primeira onda inimiga se eleva e a segunda onda entra.",
-    "chinese": "在[deployphase]之后的回合里，第一波敌人上升，第二波敌人进入战斗。",
-    "spanish": "En el turno tras la [deployphase], la primera oleada enemiga asciende y la segunda entra.",
-    "chinese_traditional": "在[deployphase]之後的回合，第一波敵人上升，第二波敵人進入。",
-    "korean": "[deployphase]의 다음 턴에, 첫 번째 적 웨이브는 올라가고 두 번째 웨이브가 진입합니다.",
-    "japanese": "[deployphase]後のターン、最初の敵のウェーブが上昇し、第2ウェーブが乗車する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeHeroSpawnRoom",
-      "paramInt2": 1
+      "id": "Echoes_EnemyUnitsStartAtSecondFloor",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -8,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-0eec55fa08c5db1a-097bc250a14a0e54fbb8268d7cc9afd6-v2",
+        "english": "Early Boarding",
+        "french": "Embarquement prioritaire",
+        "german": "Früher Einstieg",
+        "russian": "Ранняя посадка",
+        "portuguese": "Embarque Antecipado",
+        "chinese": "提前上车",
+        "spanish": "Prioridad de embarque",
+        "chinese_traditional": "提早登車",
+        "korean": "조기 탑승",
+        "japanese": "早期乗車"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-4a153cf5bf23a6e2-097bc250a14a0e54fbb8268d7cc9afd6-v2",
+        "english": "On the turn after [deployphase], the first enemy wave ascends and the second wave enters.",
+        "french": "Au tour suivant la [deployphase], la première vague d'ennemis monte et la seconde vague entre.",
+        "german": "Beim Zug nach der [deployphase] steigt die erste gegnerische Welle auf und die zweite Welle kommt ins Spiel.",
+        "russian": "В ход после <b>Фазы Размещения</b>, первая волна врагов поднимается, а вторая входит.",
+        "portuguese": "No turno após a [deployphase], a primeira onda inimiga se eleva e a segunda onda entra.",
+        "chinese": "在[deployphase]之后的回合里，第一波敌人上升，第二波敌人进入战斗。",
+        "spanish": "En el turno tras la [deployphase], la primera oleada enemiga asciende y la segunda entra.",
+        "chinese_traditional": "在[deployphase]之後的回合，第一波敵人上升，第二波敵人進入。",
+        "korean": "[deployphase]의 다음 턴에, 첫 번째 적 웨이브는 올라가고 두 번째 웨이브가 진입합니다.",
+        "japanese": "[deployphase]後のターン、最初の敵のウェーブが上昇し、第2ウェーブが乗車する。"
+      },
+      "relic_effects": [
+        "@Echoes_EnemyUnitsStartAtSecondFloor.effects0"
+      ]
     }
   ],
-  "boonValue": -8,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_EnemyUnitsStartAtSecondFloor.effects0",
+      "name": "RelicEffectChangeHeroSpawnRoom",
+      "param_int_2": 1
+    }
+  ]
 }

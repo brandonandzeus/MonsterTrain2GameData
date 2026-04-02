@@ -1,173 +1,123 @@
 {
-  "id": "SoulSavior_UnitUpgradeDuality",
-  "guid": "b378ae0d-2bfe-44ea-b8c6-f3457a080bf0",
-  "name": "Dualslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-86b5365d801e200b-630930b9dc17e714da191a182320795c-v2",
-    "english": "Dualslab",
-    "french": "Gemme de dualité",
-    "german": "Doppelplatte",
-    "russian": "Пласт дуальности",
-    "portuguese": "Placa Dupla",
-    "chinese": "双重石板",
-    "spanish": "Losa dual",
-    "chinese_traditional": "雙重石板",
-    "korean": "이중 서판",
-    "japanese": "二重の原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-fe2548af53a8ff12-630930b9dc17e714da191a182320795c-v2",
-    "english": "Upgrade a unit to gain [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power], and [spikes] [effect0.upgrade.status3.power].",
-    "french": "Améliore une unité en lui octroyant [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] et [spikes] [effect0.upgrade.status3.power].",
-    "german": "Verbessere eine Einheit, um [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] und [spikes] [effect0.upgrade.status3.power] zu erhalten.",
-    "russian": "Улучшенному бойцу даются [duality], [rage] х[effect0.upgrade.status1.power], [regen] х[effect0.upgrade.status2.power] и [spikes] х[effect0.upgrade.status3.power].",
-    "portuguese": "Melhora uma unidade para receber [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] e [spikes] [effect0.upgrade.status3.power].",
-    "chinese": "升级一个单位，使其获得 [duality]，[rage] [effect0.upgrade.status1.power]，[regen] [effect0.upgrade.status2.power]，以及 [spikes] [effect0.upgrade.status3.power]。",
-    "spanish": "Mejora una unidad para añadir [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] y [spikes] [effect0.upgrade.status3.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[duality]、[rage][effect0.upgrade.status1.power]、[regen][effect0.upgrade.status2.power]和[spikes][effect0.upgrade.status3.power]。",
-    "korean": "유닛 업그레이드로 [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] 및 [spikes] [effect0.upgrade.status3.power] 효과를 획득합니다.",
-    "japanese": "ユニットアップグレード：[duality]、[rage] [effect0.upgrade.status1.power]、[regen] [effect0.upgrade.status2.power]、[spikes] [effect0.upgrade.status3.power]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "additionalTooltips": [
+      "id": "SoulSavior_UnitUpgradeDuality",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardEffectBuff_TooltipText",
-            "english": "Buff effects are generally positive for their target and are represented by green icons.",
-            "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
-            "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
-            "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
-            "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
-            "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
-            "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
-            "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
-            "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
-            "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectBuff_TooltipTitle",
-            "english": "Buff",
-            "french": "Bonus",
-            "german": "Buff",
-            "russian": "Усиление",
-            "portuguese": "Buff",
-            "chinese": "增益",
-            "spanish": "Potenciación",
-            "chinese_traditional": "增益",
-            "korean": "버프",
-            "japanese": "バフ"
-          },
-          "style": "positive"
-        },
-        {
-          "descriptionKey": {
-            "key": "CardEffectDebuff_TooltipText",
-            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
-            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
-            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
-            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
-            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
-            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
-            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
-            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
-            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
-            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectDebuff_TooltipTitle",
-            "english": "Debuff",
-            "french": "Malus",
-            "german": "Debuff",
-            "russian": "Ослабление",
-            "portuguese": "Debuff",
-            "chinese": "减益",
-            "spanish": "Debilitación",
-            "chinese_traditional": "減益",
-            "korean": "디버프",
-            "japanese": "デバフ"
-          },
-          "style": "negative"
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
+          }
         }
       ],
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_UnitJuice",
-        "guid": "6e24a946-db1d-4a43-82b2-a22bdcabecbc",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-133f6c81f5af4c15-848f7d81bfcc42043ab1f1f695bd2997-v2",
-          "english": "Duality",
-          "french": "Dualité",
-          "german": "Dualität",
-          "russian": "Дуальность",
-          "portuguese": "Dualidade",
-          "chinese": "二元性",
-          "spanish": "Dualidad",
-          "chinese_traditional": "二元性",
-          "korean": "이중성",
-          "japanese": "二元性"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-2952dec223ba3ba6-848f7d81bfcc42043ab1f1f695bd2997-v2",
-          "english": "Gain [duality], [rage] [status1.power], [regen] [status2.power], and [spikes] [status3.power].",
-          "french": "Octroie [duality], [rage] [status1.power], [regen] [status2.power] et [spikes] [status3.power].",
-          "german": "Erhalte [duality], [rage] [status1.power], [regen] [status2.power] und [spikes] [status3.power].",
-          "russian": "Даются [duality] и [rage] х[status1.power], [regen] х[status2.power] и [spikes] х[status3.power].",
-          "portuguese": "Recebe [duality], [rage] [status1.power], [regen] [status2.power] e [spikes] [status3.power].",
-          "chinese": "获得 [duality]，[rage] [status1.power]，[regen] [status2.power] 和 [spikes] [status3.power]。",
-          "spanish": "Añade [duality], [rage] [status1.power], [regen] [status2.power] y [spikes] [status3.power].",
-          "chinese_traditional": "獲得[duality]、[rage][status1.power]、[regen][status2.power]和[spikes][status3.power]。",
-          "korean": "[duality], [rage] [status1.power], [regen] [status2.power], [spikes] [status3.power] 효과를 획득합니다.",
-          "japanese": "[duality]、[rage] [status1.power]、[regen] [status2.power]、[spikes] [status3.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "duality",
-            "count": 1
-          },
-          {
-            "statusId": "buff",
-            "count": 4
-          },
-          {
-            "statusId": "regen",
-            "count": 4
-          },
-          {
-            "statusId": "spikes",
-            "count": 4
-          }
-        ],
-        "filters": [
-          {
-            "id": "OnlyUnit",
-            "cardType": "monster"
-          },
-          {
-            "id": "ExcludeDualism",
-            "excludedStatusEffects": [
-              {
-                "statusId": "duality",
-                "count": 1
-              }
-            ],
-            "excludedStatusEffectsOperator": "and"
-          },
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+      "names": {
+        "key": "EnhancerData_nameKey-86b5365d801e200b-630930b9dc17e714da191a182320795c-v2",
+        "english": "Dualslab",
+        "french": "Gemme de dualité",
+        "german": "Doppelplatte",
+        "russian": "Пласт дуальности",
+        "portuguese": "Placa Dupla",
+        "chinese": "双重石板",
+        "spanish": "Losa dual",
+        "chinese_traditional": "雙重石板",
+        "korean": "이중 서판",
+        "japanese": "二重の原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-fe2548af53a8ff12-630930b9dc17e714da191a182320795c-v2",
+        "english": "Upgrade a unit to gain [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power], and [spikes] [effect0.upgrade.status3.power].",
+        "french": "Améliore une unité en lui octroyant [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] et [spikes] [effect0.upgrade.status3.power].",
+        "german": "Verbessere eine Einheit, um [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] und [spikes] [effect0.upgrade.status3.power] zu erhalten.",
+        "russian": "Улучшенному бойцу даются [duality], [rage] х[effect0.upgrade.status1.power], [regen] х[effect0.upgrade.status2.power] и [spikes] х[effect0.upgrade.status3.power].",
+        "portuguese": "Melhora uma unidade para receber [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] e [spikes] [effect0.upgrade.status3.power].",
+        "chinese": "升级一个单位，使其获得 [duality]，[rage] [effect0.upgrade.status1.power]，[regen] [effect0.upgrade.status2.power]，以及 [spikes] [effect0.upgrade.status3.power]。",
+        "spanish": "Mejora una unidad para añadir [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] y [spikes] [effect0.upgrade.status3.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[duality]、[rage][effect0.upgrade.status1.power]、[regen][effect0.upgrade.status2.power]和[spikes][effect0.upgrade.status3.power]。",
+        "korean": "유닛 업그레이드로 [duality], [rage] [effect0.upgrade.status1.power], [regen] [effect0.upgrade.status2.power] 및 [spikes] [effect0.upgrade.status3.power] 효과를 획득합니다.",
+        "japanese": "ユニットアップグレード：[duality]、[rage] [effect0.upgrade.status1.power]、[regen] [effect0.upgrade.status2.power]、[spikes] [effect0.upgrade.status3.power]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeDuality.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeDuality.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "additional_tooltips": [
+        "@SoulSavior_UnitUpgradeDuality.effects0.additionalTooltips0",
+        "@SoulSavior_UnitUpgradeDuality.effects0.additionalTooltips1"
+      ],
+      "param_upgrade": "SoulSavior_UnitJuice"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "SoulSavior_UnitUpgradeDuality.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardEffectBuff_TooltipText",
+        "english": "Buff effects are generally positive for their target and are represented by green icons.",
+        "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+        "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+        "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+        "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+        "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+        "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+        "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+        "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+        "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectBuff_TooltipTitle",
+        "english": "Buff",
+        "french": "Bonus",
+        "german": "Buff",
+        "russian": "Усиление",
+        "portuguese": "Buff",
+        "chinese": "增益",
+        "spanish": "Potenciación",
+        "chinese_traditional": "增益",
+        "korean": "버프",
+        "japanese": "バフ"
+      },
+      "style": "positive"
+    },
+    {
+      "id": "SoulSavior_UnitUpgradeDuality.effects0.additionalTooltips1",
+      "descriptions": {
+        "key": "CardEffectDebuff_TooltipText",
+        "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+        "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+        "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+        "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+        "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+        "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+        "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+        "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+        "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+        "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectDebuff_TooltipTitle",
+        "english": "Debuff",
+        "french": "Malus",
+        "german": "Debuff",
+        "russian": "Ослабление",
+        "portuguese": "Debuff",
+        "chinese": "减益",
+        "spanish": "Debilitación",
+        "chinese_traditional": "減益",
+        "korean": "디버프",
+        "japanese": "デバフ"
+      },
+      "style": "negative"
+    }
+  ]
 }

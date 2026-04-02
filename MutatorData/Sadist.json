@@ -1,46 +1,60 @@
 {
-  "id": "SoulSavior_Region4Complete_2",
-  "guid": "f95aa5de-1d7d-43bf-9390-7b2554637b75",
-  "name": "Sadist",
-  "nameKey": {
-    "key": "MutatorData_nameKey-9a6076622e918ef4-18c4a184dae06a146a964abf221645e8-v2",
-    "english": "Sadist",
-    "french": "Sadisme",
-    "german": "Sadist",
-    "russian": "Садист",
-    "portuguese": "Sádico",
-    "chinese": "虐待狂",
-    "spanish": "Sadismo",
-    "chinese_traditional": "虐待狂",
-    "korean": "가학주의자",
-    "japanese": "サディスト"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-93ca234f02ef9447-18c4a184dae06a146a964abf221645e8-v2",
-    "english": "Your units enter with [witherbloom] [effect0.status0.power].",
-    "french": "Vos unités entrent avec [witherbloom] [effect0.status0.power].",
-    "german": "Deine Einheiten starten mit [witherbloom] [effect0.status0.power].",
-    "russian": "Союзники при появлении получают [witherbloom] х[effect0.status0.power].",
-    "portuguese": "Suas unidades entram com [witherbloom] [effect0.status0.power].",
-    "chinese": "友方单位进入战斗时获得[witherbloom] [effect0.status0.power]。",
-    "spanish": "Tus unidades entran con [witherbloom] [effect0.status0.power].",
-    "chinese_traditional": "你的單位進場時帶有[witherbloom][effect0.status0.power]。",
-    "korean": "아군 유닛들이 [witherbloom] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "自軍のユニットが[witherbloom] [effect0.status0.power]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_Region4Complete_2",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "witherbloom",
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-9a6076622e918ef4-18c4a184dae06a146a964abf221645e8-v2",
+        "english": "Sadist",
+        "french": "Sadisme",
+        "german": "Sadist",
+        "russian": "Садист",
+        "portuguese": "Sádico",
+        "chinese": "虐待狂",
+        "spanish": "Sadismo",
+        "chinese_traditional": "虐待狂",
+        "korean": "가학주의자",
+        "japanese": "サディスト"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-93ca234f02ef9447-18c4a184dae06a146a964abf221645e8-v2",
+        "english": "Your units enter with [witherbloom] [effect0.status0.power].",
+        "french": "Vos unités entrent avec [witherbloom] [effect0.status0.power].",
+        "german": "Deine Einheiten starten mit [witherbloom] [effect0.status0.power].",
+        "russian": "Союзники при появлении получают [witherbloom] х[effect0.status0.power].",
+        "portuguese": "Suas unidades entram com [witherbloom] [effect0.status0.power].",
+        "chinese": "友方单位进入战斗时获得[witherbloom] [effect0.status0.power]。",
+        "spanish": "Tus unidades entran con [witherbloom] [effect0.status0.power].",
+        "chinese_traditional": "你的單位進場時帶有[witherbloom][effect0.status0.power]。",
+        "korean": "아군 유닛들이 [witherbloom] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "自軍のユニットが[witherbloom] [effect0.status0.power]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region4Complete_2.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region4Complete_2.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "witherbloom",
           "count": 1
         }
       ],
-      "paramSourceTeam": "monsters"
+      "param_source_team": "monsters"
     }
-  ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

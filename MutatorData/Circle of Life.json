@@ -1,147 +1,177 @@
 {
-  "id": "Echoes_FriendlyUnitsGetPropagateOnSlay",
-  "guid": "7ef1dc02-815c-4bcb-bfb8-be19f91971b9",
-  "name": "Circle of Life",
-  "nameKey": {
-    "key": "MutatorData_nameKey-7842df67990eab6a-4cc338f3e3191a94197441c98b481bbb-v2",
-    "english": "Circle of Life",
-    "french": "Cycle de la vie",
-    "german": "Kreislauf des Lebens",
-    "russian": "Круг жизни",
-    "portuguese": "Círculo da Vida",
-    "chinese": "生命循环",
-    "spanish": "Ciclo de la vida",
-    "chinese_traditional": "生命循環",
-    "korean": "생명의 순환",
-    "japanese": "生命の輪環"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-3c7e112668c035a3-4cc338f3e3191a94197441c98b481bbb-v2",
-    "english": "Friendly units [propagate] [effect0.power] on [slay].",
-    "french": "Les alliés appliquent [propagate] [effect0.power] lors d'une [slay].",
-    "german": "[propagate] von verbündeten Einheiten beim [slay] um [effect0.power].",
-    "russian": "[slay]: союзники получают [propagate] х[effect0.power].",
-    "portuguese": "Unidades aliadas <b>Propagam</b> [effect0.power] ao [slay].",
-    "chinese": "友方单位 [slay] 时获得 [propagate] [effect0.power]。",
-    "spanish": "Las unidades aliadas <b>Propagan</b> [effect0.power] al <b>Ejecutar</b>.",
-    "chinese_traditional": "友方單位在[slay]時[propagate][effect0.power]。",
-    "korean": "[slay] 시 아군 유닛들에 [propagate] [effect0.power]이 발동됩니다.",
-    "japanese": "[slay]時に味方ユニットが[effect0.power] [propagate]する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "additionalTooltips": [
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay",
+      "type": "mutator",
+      "extensions": [
         {
-          "trigger": "on_kill",
-          "style": "default",
-          "isTriggerTooltip": true
-        },
-        {
-          "descriptionKey": {
-            "key": "CardEffectAdjustAllStatusEffects_Inc_TooltipText",
-            "english": "Increase the stack count of [buff] effects on friendly units and [debuff] effects on enemy units, except [dazed].",
-            "french": "Augmente les cumuls des effets de [buff] sur les alliés et de [debuff] sur les ennemis, sauf [dazed].",
-            "german": "Erhöhe den Stapel von [buff]-Effekten verbündeter Einheiten und [debuff]-Effekte gegnerischer Einheiten (ausgenommen [dazed]).",
-            "russian": "Приумножает эффекты со свойством [buff] для союзников и со свойством [debuff] для врагов, кроме <b>ошеломления</b>.",
-            "portuguese": "Aumenta a carga dos efeitos de [buff] em unidades aliadas e efeitos de [debuff] em unidades inimigas, exceto [dazed].",
-            "chinese": "增加友方单位[buff]效果和敌方单位[debuff]效果的层数，[dazed]除外。",
-            "spanish": "Aumenta el número de acumulaciones de los efectos de [buff] en unidades aliadas y de [debuff] en unidades enemigas, excepto [dazed].",
-            "chinese_traditional": "增加友方單位身上[buff]效果和敵方單位身上[debuff]效果的層數，[dazed]除外。",
-            "korean": "아군 유닛의 [buff] 및 적 유닛의 [debuff] 스택이 증가합니다. [dazed] 효과에는 적용되지 않습니다.",
-            "japanese": "味方ユニットの[buff]効果と、[dazed]を除く敵ユニットの[debuff]効果のスタックを増加させる。"
-          },
-          "titleKey": {
-            "key": "CardEffectAdjustAllStatusEffects_Inc_TooltipTitle",
-            "english": "[propagate]",
-            "french": "[propagate]",
-            "german": "[propagate]",
-            "russian": "[propagate]",
-            "portuguese": "[propagate]",
-            "chinese": "[propagate]",
-            "spanish": "[propagate]",
-            "chinese_traditional": "[propagate]",
-            "korean": "[propagate]",
-            "japanese": "[propagate]"
+          "mutator": {
+            "boon_value": -4,
+            "disable_in_daily_challenges": true
           }
-        },
-        {
-          "descriptionKey": {
-            "key": "CardEffectBuff_TooltipText",
-            "english": "Buff effects are generally positive for their target and are represented by green icons.",
-            "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
-            "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
-            "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
-            "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
-            "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
-            "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
-            "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
-            "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
-            "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectBuff_TooltipTitle",
-            "english": "Buff",
-            "french": "Bonus",
-            "german": "Buff",
-            "russian": "Усиление",
-            "portuguese": "Buff",
-            "chinese": "增益",
-            "spanish": "Potenciación",
-            "chinese_traditional": "增益",
-            "korean": "버프",
-            "japanese": "バフ"
-          },
-          "style": "positive"
-        },
-        {
-          "descriptionKey": {
-            "key": "CardEffectDebuff_TooltipText",
-            "english": "Debuff effects are generally negative for their target and are represented by red icons.",
-            "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
-            "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
-            "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
-            "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
-            "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
-            "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
-            "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
-            "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
-            "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
-          },
-          "titleKey": {
-            "key": "CardEffectDebuff_TooltipTitle",
-            "english": "Debuff",
-            "french": "Malus",
-            "german": "Debuff",
-            "russian": "Ослабление",
-            "portuguese": "Debuff",
-            "chinese": "减益",
-            "spanish": "Debilitación",
-            "chinese_traditional": "減益",
-            "korean": "디버프",
-            "japanese": "デバフ"
-          },
-          "style": "negative"
         }
       ],
-      "triggers": [
-        {
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAdjustAllStatusEffects",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramInt": 1,
-              "additionalParamInt": 1
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
-        }
-      ],
-      "paramSourceTeam": "monsters"
+      "names": {
+        "key": "MutatorData_nameKey-7842df67990eab6a-4cc338f3e3191a94197441c98b481bbb-v2",
+        "english": "Circle of Life",
+        "french": "Cycle de la vie",
+        "german": "Kreislauf des Lebens",
+        "russian": "Круг жизни",
+        "portuguese": "Círculo da Vida",
+        "chinese": "生命循环",
+        "spanish": "Ciclo de la vida",
+        "chinese_traditional": "生命循環",
+        "korean": "생명의 순환",
+        "japanese": "生命の輪環"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-3c7e112668c035a3-4cc338f3e3191a94197441c98b481bbb-v2",
+        "english": "Friendly units [propagate] [effect0.power] on [slay].",
+        "french": "Les alliés appliquent [propagate] [effect0.power] lors d'une [slay].",
+        "german": "[propagate] von verbündeten Einheiten beim [slay] um [effect0.power].",
+        "russian": "[slay]: союзники получают [propagate] х[effect0.power].",
+        "portuguese": "Unidades aliadas <b>Propagam</b> [effect0.power] ao [slay].",
+        "chinese": "友方单位 [slay] 时获得 [propagate] [effect0.power]。",
+        "spanish": "Las unidades aliadas <b>Propagan</b> [effect0.power] al <b>Ejecutar</b>.",
+        "chinese_traditional": "友方單位在[slay]時[propagate][effect0.power]。",
+        "korean": "[slay] 시 아군 유닛들에 [propagate] [effect0.power]이 발동됩니다.",
+        "japanese": "[slay]時に味方ユニットが[effect0.power] [propagate]する。"
+      },
+      "relic_effects": [
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0"
+      ]
     }
   ],
-  "boonValue": -4,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0",
+      "name": "RelicEffectAddTrigger",
+      "additional_tooltips": [
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips0",
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips1",
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips2",
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips3"
+      ],
+      "triggers": [
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.triggers0"
+      ],
+      "param_source_team": "monsters"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.triggers0",
+      "trigger": "on_kill",
+      "effects": [
+        "@Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.triggers0.effects0",
+      "name": "CardEffectAdjustAllStatusEffects",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_int_2": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips0",
+      "trigger": "on_kill",
+      "style": "default"
+    },
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips1",
+      "descriptions": {
+        "key": "CardEffectAdjustAllStatusEffects_Inc_TooltipText",
+        "english": "Increase the stack count of [buff] effects on friendly units and [debuff] effects on enemy units, except [dazed].",
+        "french": "Augmente les cumuls des effets de [buff] sur les alliés et de [debuff] sur les ennemis, sauf [dazed].",
+        "german": "Erhöhe den Stapel von [buff]-Effekten verbündeter Einheiten und [debuff]-Effekte gegnerischer Einheiten (ausgenommen [dazed]).",
+        "russian": "Приумножает эффекты со свойством [buff] для союзников и со свойством [debuff] для врагов, кроме <b>ошеломления</b>.",
+        "portuguese": "Aumenta a carga dos efeitos de [buff] em unidades aliadas e efeitos de [debuff] em unidades inimigas, exceto [dazed].",
+        "chinese": "增加友方单位[buff]效果和敌方单位[debuff]效果的层数，[dazed]除外。",
+        "spanish": "Aumenta el número de acumulaciones de los efectos de [buff] en unidades aliadas y de [debuff] en unidades enemigas, excepto [dazed].",
+        "chinese_traditional": "增加友方單位身上[buff]效果和敵方單位身上[debuff]效果的層數，[dazed]除外。",
+        "korean": "아군 유닛의 [buff] 및 적 유닛의 [debuff] 스택이 증가합니다. [dazed] 효과에는 적용되지 않습니다.",
+        "japanese": "味方ユニットの[buff]効果と、[dazed]を除く敵ユニットの[debuff]効果のスタックを増加させる。"
+      },
+      "titles": {
+        "key": "CardEffectAdjustAllStatusEffects_Inc_TooltipTitle",
+        "english": "[propagate]",
+        "french": "[propagate]",
+        "german": "[propagate]",
+        "russian": "[propagate]",
+        "portuguese": "[propagate]",
+        "chinese": "[propagate]",
+        "spanish": "[propagate]",
+        "chinese_traditional": "[propagate]",
+        "korean": "[propagate]",
+        "japanese": "[propagate]"
+      }
+    },
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips2",
+      "descriptions": {
+        "key": "CardEffectBuff_TooltipText",
+        "english": "Buff effects are generally positive for their target and are represented by green icons.",
+        "french": "Les Bonus sont généralement positifs pour la cible et sont représentés par des icônes vertes.",
+        "german": "Buff-Effekte sind im Allgemeinen gut für das Ziel und werden mit grünen Symbolen dargestellt.",
+        "russian": "Усиления обычно положительно отражаются на цели и обозначаются зелеными значками.",
+        "portuguese": "Efeitos de Buff são geralmente positivos para seu alvo e são representados por ícones da cor verde.",
+        "chinese": "增益效果通常会对目标有加成作用，以绿色图标表示。",
+        "spanish": "Los efectos de Potenciación suelen ser positivos y se representan con iconos verdes.",
+        "chinese_traditional": "增益效果通常對其目標有利，用綠色圖示表示。",
+        "korean": "버프는 보통 대상에 이로운 효과를 주며, 초록색 아이콘으로 표시됩니다.",
+        "japanese": "バフ効果は、ほとんどの場合は対象にとって有利なもので、緑のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectBuff_TooltipTitle",
+        "english": "Buff",
+        "french": "Bonus",
+        "german": "Buff",
+        "russian": "Усиление",
+        "portuguese": "Buff",
+        "chinese": "增益",
+        "spanish": "Potenciación",
+        "chinese_traditional": "增益",
+        "korean": "버프",
+        "japanese": "バフ"
+      },
+      "style": "positive"
+    },
+    {
+      "id": "Echoes_FriendlyUnitsGetPropagateOnSlay.effects0.additionalTooltips3",
+      "descriptions": {
+        "key": "CardEffectDebuff_TooltipText",
+        "english": "Debuff effects are generally negative for their target and are represented by red icons.",
+        "french": "Les Malus sont généralement négatifs pour la cible et sont représentés par des icônes rouges.",
+        "german": "Debuff-Effekte sind im Allgemeinen schlecht für das Ziel und werden mit roten Symbolen dargestellt.",
+        "russian": "Ослабления обычно оказывают негативное воздействие на цель и обозначаются красными значками.",
+        "portuguese": "Efeitos de Debuff são geralmente negativos para seu alvo e são representados por ícones da cor vermelha.",
+        "chinese": "减益效果通常会对目标有负面作用，以红色图标表示。",
+        "spanish": "Los efectos de Debilitación suelen ser negativos y se representan con iconos rojos.",
+        "chinese_traditional": "減益效果通常對其目標不利，用紅色圖示表示。",
+        "korean": "디버프는 보통 대상에 해로운 효과를 주며, 빨간색 아이콘으로 표시됩니다.",
+        "japanese": "デバフ効果は、ほとんどの場合は対象にとって不利なもので、赤のアイコンで示される。"
+      },
+      "titles": {
+        "key": "CardEffectDebuff_TooltipTitle",
+        "english": "Debuff",
+        "french": "Malus",
+        "german": "Debuff",
+        "russian": "Ослабление",
+        "portuguese": "Debuff",
+        "chinese": "减益",
+        "spanish": "Debilitación",
+        "chinese_traditional": "減益",
+        "korean": "디버프",
+        "japanese": "デバフ"
+      },
+      "style": "negative"
+    }
+  ]
 }

@@ -1,55 +1,69 @@
 {
-  "id": "ShuffleUnits",
-  "guid": "afcb1af2-64f5-4887-9f7b-7e509e326604",
-  "name": "Musical Chairs",
-  "nameKey": {
-    "key": "MutatorData_nameKey-5b14b4488255c95a-93a3267f22ffa5041b7d7c7d55f074fb-v2",
-    "english": "Musical Chairs",
-    "french": "Chaises musicales",
-    "german": "Stuhltanz",
-    "russian": "Горячие стулья",
-    "portuguese": "Dança das Cadeiras",
-    "chinese": "音乐转椅",
-    "spanish": "El juego de las sillas",
-    "chinese_traditional": "音樂椅子",
-    "korean": "뮤지컬 객석",
-    "japanese": "席替え"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-0888df5af862d7f2-93a3267f22ffa5041b7d7c7d55f074fb-v2",
-    "english": "Shuffle the position of all units in the train after combat.",
-    "french": "Permute toutes les unités au hasard dans le train à la fin de la phase de combat.",
-    "german": "Vertausche die Position aller Einheiten im Zug nach dem Kampf.",
-    "russian": "Перемешивает позиции всех бойцов в поезде после битвы.",
-    "portuguese": "Embaralha a posição de todas as unidades no trem após o combate.",
-    "chinese": "战斗结束后，改变火车内所有单位的位置。",
-    "spanish": "Cambia la posición de todas las unidades del tren tras el combate.",
-    "chinese_traditional": "戰鬥後隨機調整列車中所有單位的位置。",
-    "korean": "교전 후 열차에 있는 모든 유닛의 위치가 무작위로 변경됩니다.",
-    "japanese": "戦闘後に、列車内のすべてのユニットの位置をシャッフルする。"
-  },
-  "relicActivatedKey": {
-    "key": "MutatorData_relicActivatedKey-971f40e16d242b32-93a3267f22ffa5041b7d7c7d55f074fb-v2",
-    "english": "Shuffled!",
-    "french": "Permutation !",
-    "german": "Platztausch!",
-    "russian": "Перемешано!",
-    "portuguese": "Embaralhadas!",
-    "chinese": "已改变！",
-    "spanish": "¡A moverse!",
-    "chinese_traditional": "重洗！",
-    "korean": "뒤섞임!",
-    "japanese": "シャッフル！"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectShuffleUnitsEndOfTurn"
+      "id": "ShuffleUnits",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -1,
+            "tags": [
+              "roomspace",
+              "positionmatters"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-5b14b4488255c95a-93a3267f22ffa5041b7d7c7d55f074fb-v2",
+        "english": "Musical Chairs",
+        "french": "Chaises musicales",
+        "german": "Stuhltanz",
+        "russian": "Горячие стулья",
+        "portuguese": "Dança das Cadeiras",
+        "chinese": "音乐转椅",
+        "spanish": "El juego de las sillas",
+        "chinese_traditional": "音樂椅子",
+        "korean": "뮤지컬 객석",
+        "japanese": "席替え"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-0888df5af862d7f2-93a3267f22ffa5041b7d7c7d55f074fb-v2",
+        "english": "Shuffle the position of all units in the train after combat.",
+        "french": "Permute toutes les unités au hasard dans le train à la fin de la phase de combat.",
+        "german": "Vertausche die Position aller Einheiten im Zug nach dem Kampf.",
+        "russian": "Перемешивает позиции всех бойцов в поезде после битвы.",
+        "portuguese": "Embaralha a posição de todas as unidades no trem após o combate.",
+        "chinese": "战斗结束后，改变火车内所有单位的位置。",
+        "spanish": "Cambia la posición de todas las unidades del tren tras el combate.",
+        "chinese_traditional": "戰鬥後隨機調整列車中所有單位的位置。",
+        "korean": "교전 후 열차에 있는 모든 유닛의 위치가 무작위로 변경됩니다.",
+        "japanese": "戦闘後に、列車内のすべてのユニットの位置をシャッフルする。"
+      },
+      "relic_activated_texts": {
+        "key": "MutatorData_relicActivatedKey-971f40e16d242b32-93a3267f22ffa5041b7d7c7d55f074fb-v2",
+        "english": "Shuffled!",
+        "french": "Permutation !",
+        "german": "Platztausch!",
+        "russian": "Перемешано!",
+        "portuguese": "Embaralhadas!",
+        "chinese": "已改变！",
+        "spanish": "¡A moverse!",
+        "chinese_traditional": "重洗！",
+        "korean": "뒤섞임!",
+        "japanese": "シャッフル！"
+      },
+      "relic_effects": [
+        "@ShuffleUnits.effects0"
+      ],
+      "disallow_in_deployment": true
     }
   ],
-  "disallowInDeploymentPhase": true,
-  "boonValue": -1,
-  "tags": [
-    "roomspace",
-    "positionmatters"
+  "relic_effects": [
+    {
+      "id": "ShuffleUnits.effects0",
+      "name": "RelicEffectShuffleUnitsEndOfTurn"
+    }
   ]
 }

@@ -1,112 +1,78 @@
 {
-  "id": "SavantaT1",
-  "guid": "b565691e-7471-4acb-be07-3d8c5f647317",
-  "name": "SavantaT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-2b3b786d570a3011-f04804fd48158e24e85f60ffff07c992-v2",
-    "english": "Savanta",
-    "french": "Savanta",
-    "german": "Savanta",
-    "russian": "Саванта",
-    "portuguese": "Savanta",
-    "chinese": "萨凡塔",
-    "spanish": "Prodigio",
-    "chinese_traditional": "薩凡塔",
-    "korean": "사반타",
-    "japanese": "サヴァンタ"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-3cd0471164cfceb4-f04804fd48158e24e85f60ffff07c992-v2",
-    "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost.",
-    "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base.",
-    "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten.",
-    "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное обычной стоимости.",
-    "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base.",
-    "chinese": "此法术现在免费。受到等同于其基础费用的 [pyrehealth] 伤害。",
-    "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base.",
-    "chinese_traditional": "此法術現在免費。受到等同於基礎費用的[pyrehealth]傷害。",
-    "korean": "이 주문은 이제 무료입니다. 기본 비용만큼 [pyrehealth]의 피해를 받습니다.",
-    "japanese": "この呪文のコストが無料になる。基本コストに等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "SavantaT1_Upgrade",
-        "guid": "11d1a95f-37b4-49f6-ad40-f6d974df8ac6",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-d37fc10bc4af3d41-6d5652efd92440249a9dde52dde80aa2-v2",
-          "english": "Savanta",
-          "french": "Savanta",
-          "german": "Savanta",
-          "russian": "Саванта",
-          "portuguese": "Savanta",
-          "chinese": "萨凡塔",
-          "spanish": "Prodigio",
-          "chinese_traditional": "薩凡塔",
-          "korean": "사반타",
-          "japanese": "サヴァンタ"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-9cd50478c994ff1e-6d5652efd92440249a9dde52dde80aa2-v2",
-          "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost.",
-          "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base.",
-          "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten.",
-          "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное обычной стоимости.",
-          "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base.",
-          "chinese": "此法术现在免费。受到等同于其基础费用的 [pyrehealth] 伤害。",
-          "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base.",
-          "chinese_traditional": "此法術現在免費。受到等同於基礎費用的[pyrehealth]傷害。",
-          "korean": "이 주문은 이제 무료입니다. 기본 비용만큼 [pyrehealth]의 피해를 받습니다.",
-          "japanese": "この呪文のコストが無料になる。基本コストに等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
-        },
-        "cardTriggerUpgrades": [
-          {
-            "trigger": "on_cast",
-            "cardEffects": [
-              {
-                "effectStateName": "CardEffectPayCostWithPyreHealth"
-              }
-            ],
-            "triggerKeywordCardTextSuppressed": false
+      "id": "SavantaT1",
+      "name": "SavantaT1",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-5a7a0b91ac900100-f04804fd48158e24e85f60ffff07c992-v2",
+                "english": "Defeat Lifemother while playing Wurmkin to unlock.",
+                "french": "Battez Mère Nature en jouant le peuple ver pour déverrouiller.",
+                "german": "Besiege zum Freischalten die Lebensmutter, während du mit den Wurmlingen spielst.",
+                "russian": "Чтобы разблокировать, победите Мать-природу, играя за Драконов.",
+                "portuguese": "Derrote a Genetriz jogando com os Vormoides para desbloquear.",
+                "chinese": "用虫裔击败生命之母以解锁。",
+                "spanish": "Derrota a la Madre Vida con las Sierpes para desbloquear.",
+                "chinese_traditional": "遊玩蟲裔時擊敗生命之母以解鎖。",
+                "korean": "웜킨 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
+                "japanese": "ワームキンでのプレイでライフマザーを倒してアンロック。"
+              },
+              "unlock_condition": "soul_kill_lifemother_using_wurmkin",
+              "param_int": 1
+            },
+            "tier_level": 1,
+            "next_tier": "SavantaT2"
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlySpells",
-            "cardType": "spell"
-          },
-          {
-            "id": "ExcludeUnplayable",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitUnplayable"
-            ]
-          }
-        ],
-        "isRegionRunUpgrade": true,
-        "excludeFromClones": true
-      }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-2b3b786d570a3011-f04804fd48158e24e85f60ffff07c992-v2",
+        "english": "Savanta",
+        "french": "Savanta",
+        "german": "Savanta",
+        "russian": "Саванта",
+        "portuguese": "Savanta",
+        "chinese": "萨凡塔",
+        "spanish": "Prodigio",
+        "chinese_traditional": "薩凡塔",
+        "korean": "사반타",
+        "japanese": "サヴァンタ"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-3cd0471164cfceb4-f04804fd48158e24e85f60ffff07c992-v2",
+        "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost.",
+        "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base.",
+        "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten.",
+        "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное обычной стоимости.",
+        "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base.",
+        "chinese": "此法术现在免费。受到等同于其基础费用的 [pyrehealth] 伤害。",
+        "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base.",
+        "chinese_traditional": "此法術現在免費。受到等同於基礎費用的[pyrehealth]傷害。",
+        "korean": "이 주문은 이제 무료입니다. 기본 비용만큼 [pyrehealth]의 피해를 받습니다.",
+        "japanese": "この呪文のコストが無料になる。基本コストに等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
+      },
+      "relic_effects": [
+        "@SavantaT1.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-5a7a0b91ac900100-f04804fd48158e24e85f60ffff07c992-v2",
-      "english": "Defeat Lifemother while playing Wurmkin to unlock.",
-      "french": "Battez Mère Nature en jouant le peuple ver pour déverrouiller.",
-      "german": "Besiege zum Freischalten die Lebensmutter, während du mit den Wurmlingen spielst.",
-      "russian": "Чтобы разблокировать, победите Мать-природу, играя за Драконов.",
-      "portuguese": "Derrote a Genetriz jogando com os Vormoides para desbloquear.",
-      "chinese": "用虫裔击败生命之母以解锁。",
-      "spanish": "Derrota a la Madre Vida con las Sierpes para desbloquear.",
-      "chinese_traditional": "遊玩蟲裔時擊敗生命之母以解鎖。",
-      "korean": "웜킨 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
-      "japanese": "ワームキンでのプレイでライフマザーを倒してアンロック。"
-    },
-    "unlockCondition": "soul_kill_lifemother_using_wurmkin",
-    "paramInt": 1
-  },
-  "tierLevel": 1,
-  "nextTier": "SavantaT2"
+  "relic_effects": [
+    {
+      "id": "SavantaT1.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "SavantaT1_Upgrade"
+    }
+  ],
+  "effects": [
+    {
+      "id": "SavantaT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectPayCostWithPyreHealth"
+    }
+  ]
 }

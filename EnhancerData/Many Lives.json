@@ -1,84 +1,53 @@
 {
-  "id": "InscryptionEventManyLivesCardUpgrade",
-  "guid": "ae6a4497-ee40-4c10-9147-0cb6531d6d87",
-  "name": "Many Lives",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-0f5de67a324f315f-0c41626a24558974ba531330d7ce3962-v2",
-    "english": "Many Lives",
-    "french": "Vies multiples",
-    "german": "Viele Leben",
-    "russian": "Много жизней",
-    "portuguese": "Muitas Vidas",
-    "chinese": "生生不息",
-    "spanish": "Muchas vidas",
-    "chinese_traditional": "九命",
-    "korean": "많은 목숨",
-    "japanese": "輪廻"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-14c2a8d879a6a84c-0c41626a24558974ba531330d7ce3962-v2",
-    "english": "[undying] [effect0.upgrade.status0.power].",
-    "french": "[undying] [effect0.upgrade.status0.power].",
-    "german": "[undying] [effect0.upgrade.status0.power].",
-    "russian": "[undying] х[effect0.upgrade.status0.power].",
-    "portuguese": "[undying] [effect0.upgrade.status0.power].",
-    "chinese": "[undying] [effect0.upgrade.status0.power]。",
-    "spanish": "[undying] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "[undying][effect0.upgrade.status0.power]。",
-    "korean": "[undying] [effect0.upgrade.status0.power].",
-    "japanese": "[undying] [effect0.upgrade.status0.power]。"
-  },
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "InscryptionEventManyLives_Upgrade",
-        "guid": "02b3dfc5-272e-4a4a-bbfc-2ad2077ce165",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-6e2f44b76f60ee7d-f96f3a64d699ae74f8a264540a03e2cc-v2",
-          "english": "Many Lives",
-          "french": "Vies multiples",
-          "german": "Viele Leben",
-          "russian": "Много жизней",
-          "portuguese": "Muitas Vidas",
-          "chinese": "生生不息",
-          "spanish": "Muchas vidas",
-          "chinese_traditional": "九命",
-          "korean": "많은 목숨",
-          "japanese": "輪廻"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-68885f51fa7eec94-f96f3a64d699ae74f8a264540a03e2cc-v2",
-          "english": "[undying] [status0.power].",
-          "french": "[undying] [status0.power].",
-          "german": "[undying] [status0.power].",
-          "russian": "[undying] х[status0.power].",
-          "portuguese": "[undying] [status0.power].",
-          "chinese": "[undying] [status0.power]。",
-          "spanish": "[undying] [status0.power].",
-          "chinese_traditional": "[undying][status0.power]。",
-          "korean": "[undying] [status0.power].",
-          "japanese": "[undying] [status0.power]。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "undying",
-            "count": 3
+      "id": "InscryptionEventManyLivesCardUpgrade",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common"
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeUpgrade_ManyLives",
-            "cardType": "monster",
-            "excludedCardUpgradesOperator": "and",
-            "excludedCardUpgrades": [
-              "InscryptionEventManyLives_Upgrade"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-0f5de67a324f315f-0c41626a24558974ba531330d7ce3962-v2",
+        "english": "Many Lives",
+        "french": "Vies multiples",
+        "german": "Viele Leben",
+        "russian": "Много жизней",
+        "portuguese": "Muitas Vidas",
+        "chinese": "生生不息",
+        "spanish": "Muchas vidas",
+        "chinese_traditional": "九命",
+        "korean": "많은 목숨",
+        "japanese": "輪廻"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-14c2a8d879a6a84c-0c41626a24558974ba531330d7ce3962-v2",
+        "english": "[undying] [effect0.upgrade.status0.power].",
+        "french": "[undying] [effect0.upgrade.status0.power].",
+        "german": "[undying] [effect0.upgrade.status0.power].",
+        "russian": "[undying] х[effect0.upgrade.status0.power].",
+        "portuguese": "[undying] [effect0.upgrade.status0.power].",
+        "chinese": "[undying] [effect0.upgrade.status0.power]。",
+        "spanish": "[undying] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "[undying][effect0.upgrade.status0.power]。",
+        "korean": "[undying] [effect0.upgrade.status0.power].",
+        "japanese": "[undying] [effect0.upgrade.status0.power]。"
+      },
+      "relic_effects": [
+        "@InscryptionEventManyLivesCardUpgrade.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "InscryptionEventManyLivesCardUpgrade.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "InscryptionEventManyLives_Upgrade"
     }
   ]
 }

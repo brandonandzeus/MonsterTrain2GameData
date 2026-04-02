@@ -1,70 +1,88 @@
 {
-  "id": "Echoes_FullMoonAlwaysActive",
-  "guid": "efde1fe0-2cf7-47ea-95d2-d2b7e4910388",
-  "name": "Full Of It",
-  "nameKey": {
-    "key": "MutatorData_nameKey-304def5a9f713c0b-4218b7e793c8d204fa2dafe56aaa806f-v2",
-    "english": "Full Of It",
-    "french": "Toujours pleine",
-    "german": "Volle Kanne",
-    "russian": "Вечное полнолуние",
-    "portuguese": "Sempre Cheia",
-    "chinese": "永恒满月",
-    "spanish": "Mentiroso",
-    "chinese_traditional": "滿嘴胡言",
-    "korean": "꽉 차오르다",
-    "japanese": "満たされて"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-718edacce6eebc4f-4218b7e793c8d204fa2dafe56aaa806f-v2",
-    "english": "The [full] is always active.",
-    "french": "La [full] est toujours active.",
-    "german": "Der [full] ist immer aktiv.",
-    "russian": "Постоянное [full].",
-    "portuguese": "A [full] está sempre ativa.",
-    "chinese": "[full]始终生效。",
-    "spanish": "La [full] siempre está activa.",
-    "chinese_traditional": "[full]始終生效。",
-    "korean": "[full]이 항상 활성화됩니다.",
-    "japanese": "[full]の効果が常に有効になる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectMoonPhaseAlwaysActive",
-      "additionalTooltips": [
+      "id": "Echoes_FullMoonAlwaysActive",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "CardTraitMoonlit_TooltipText",
-            "english": "Active only during the [full].",
-            "french": "Active seulement pendant la [full].",
-            "german": "Nur bei [full] aktiv.",
-            "russian": "Активируется только в [full].",
-            "portuguese": "Ativa somente durante a [full].",
-            "chinese": "仅在[full]时生效。",
-            "spanish": "Solo se activa en [full].",
-            "chinese_traditional": "僅在[full]期間生效。",
-            "korean": "[full]일 때만 활성화됩니다.",
-            "japanese": "[full]時のみ有効。"
-          },
-          "titleKey": {
-            "key": "CardTraitMoonlit_TooltipTitle",
-            "english": "Full Moon",
-            "french": "Pleine lune",
-            "german": "Vollmond",
-            "russian": "Полнолуние",
-            "portuguese": "Lua Cheia",
-            "chinese": "满月",
-            "spanish": "Luna llena",
-            "chinese_traditional": "滿月",
-            "korean": "보름달",
-            "japanese": "満月"
-          },
-          "style": "state_modifier"
+          "mutator": {
+            "boon_value": 3,
+            "disable_in_daily_challenges": true
+          }
         }
       ],
-      "paramInt": 2
+      "names": {
+        "key": "MutatorData_nameKey-304def5a9f713c0b-4218b7e793c8d204fa2dafe56aaa806f-v2",
+        "english": "Full Of It",
+        "french": "Toujours pleine",
+        "german": "Volle Kanne",
+        "russian": "Вечное полнолуние",
+        "portuguese": "Sempre Cheia",
+        "chinese": "永恒满月",
+        "spanish": "Mentiroso",
+        "chinese_traditional": "滿嘴胡言",
+        "korean": "꽉 차오르다",
+        "japanese": "満たされて"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-718edacce6eebc4f-4218b7e793c8d204fa2dafe56aaa806f-v2",
+        "english": "The [full] is always active.",
+        "french": "La [full] est toujours active.",
+        "german": "Der [full] ist immer aktiv.",
+        "russian": "Постоянное [full].",
+        "portuguese": "A [full] está sempre ativa.",
+        "chinese": "[full]始终生效。",
+        "spanish": "La [full] siempre está activa.",
+        "chinese_traditional": "[full]始終生效。",
+        "korean": "[full]이 항상 활성화됩니다.",
+        "japanese": "[full]の効果が常に有効になる。"
+      },
+      "relic_effects": [
+        "@Echoes_FullMoonAlwaysActive.effects0"
+      ]
     }
   ],
-  "boonValue": 3,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_FullMoonAlwaysActive.effects0",
+      "name": "RelicEffectMoonPhaseAlwaysActive",
+      "additional_tooltips": [
+        "@Echoes_FullMoonAlwaysActive.effects0.additionalTooltips0"
+      ],
+      "param_int": 2
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Echoes_FullMoonAlwaysActive.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "CardTraitMoonlit_TooltipText",
+        "english": "Active only during the [full].",
+        "french": "Active seulement pendant la [full].",
+        "german": "Nur bei [full] aktiv.",
+        "russian": "Активируется только в [full].",
+        "portuguese": "Ativa somente durante a [full].",
+        "chinese": "仅在[full]时生效。",
+        "spanish": "Solo se activa en [full].",
+        "chinese_traditional": "僅在[full]期間生效。",
+        "korean": "[full]일 때만 활성화됩니다.",
+        "japanese": "[full]時のみ有効。"
+      },
+      "titles": {
+        "key": "CardTraitMoonlit_TooltipTitle",
+        "english": "Full Moon",
+        "french": "Pleine lune",
+        "german": "Vollmond",
+        "russian": "Полнолуние",
+        "portuguese": "Lua Cheia",
+        "chinese": "满月",
+        "spanish": "Luna llena",
+        "chinese_traditional": "滿月",
+        "korean": "보름달",
+        "japanese": "満月"
+      },
+      "style": "state_modifier"
+    }
+  ]
 }

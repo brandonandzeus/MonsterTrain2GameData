@@ -1,47 +1,54 @@
 {
-  "id": "Echoes_ChampionUnitsGetSavageryBuffs",
-  "guid": "8a0237aa-438f-4c76-8391-949c5e369d4b",
-  "name": "Savagery's Champion",
-  "nameKey": {
-    "key": "MutatorData_nameKey-47863e605d015a0b-a7edd4385115fd04881c90c5f286279e-v2",
-    "english": "Savagery's Champion",
-    "french": "Champion de Sauvagerie",
-    "german": "Grausamkeits Champion",
-    "russian": "Герой Изувера",
-    "portuguese": "Campeão da Barbárie",
-    "chinese": "野蛮泰坦的勇者",
-    "spanish": "Campeón de Salvajismo",
-    "chinese_traditional": "野性勇士",
-    "korean": "세비저리의 영웅",
-    "japanese": "サベジャリーのチャンピオン"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-47fd18f9f117b2df-a7edd4385115fd04881c90c5f286279e-v2",
-    "english": "Your Champion gains all of Savagery's Boons.",
-    "french": "Votre champion gagne toutes les bénédictions de Sauvagerie.",
-    "german": "Dein Champion erhält alle Gaben der Grausamkeit.",
-    "russian": "Ваш герой получает все блага Изувера.",
-    "portuguese": "Seu Campeão ganha todos os Benefícios da Barbárie.",
-    "chinese": "你的勇者获得所有野蛮泰坦的祝福。",
-    "spanish": "Tu campeón añade todos los dones de Salvajismo.",
-    "chinese_traditional": "你的勇士獲得所有野性的恩惠。",
-    "korean": "영웅이 모든 세비저리의 혜택을 획득합니다.",
-    "japanese": "自チャンピオンがサベジャリーの恵みをすべて得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStartingUpgradeToUnitCards",
-      "paramCardFilter": {
-        "id": "OnlyChampions",
-        "cardType": "monster",
-        "requiredSubtypesOperator": "and",
-        "requiredSubtypes": [
-          "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-        ]
+      "id": "Echoes_ChampionUnitsGetSavageryBuffs",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 9
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-47863e605d015a0b-a7edd4385115fd04881c90c5f286279e-v2",
+        "english": "Savagery's Champion",
+        "french": "Champion de Sauvagerie",
+        "german": "Grausamkeits Champion",
+        "russian": "Герой Изувера",
+        "portuguese": "Campeão da Barbárie",
+        "chinese": "野蛮泰坦的勇者",
+        "spanish": "Campeón de Salvajismo",
+        "chinese_traditional": "野性勇士",
+        "korean": "세비저리의 영웅",
+        "japanese": "サベジャリーのチャンピオン"
       },
-      "paramInt2": 2,
-      "paramEnhancerPool": "TitanSavageryUpgradePool"
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-47fd18f9f117b2df-a7edd4385115fd04881c90c5f286279e-v2",
+        "english": "Your Champion gains all of Savagery's Boons.",
+        "french": "Votre champion gagne toutes les bénédictions de Sauvagerie.",
+        "german": "Dein Champion erhält alle Gaben der Grausamkeit.",
+        "russian": "Ваш герой получает все блага Изувера.",
+        "portuguese": "Seu Campeão ganha todos os Benefícios da Barbárie.",
+        "chinese": "你的勇者获得所有野蛮泰坦的祝福。",
+        "spanish": "Tu campeón añade todos los dones de Salvajismo.",
+        "chinese_traditional": "你的勇士獲得所有野性的恩惠。",
+        "korean": "영웅이 모든 세비저리의 혜택을 획득합니다.",
+        "japanese": "自チャンピオンがサベジャリーの恵みをすべて得る。"
+      },
+      "relic_effects": [
+        "@Echoes_ChampionUnitsGetSavageryBuffs.effects0"
+      ]
     }
   ],
-  "boonValue": 9
+  "relic_effects": [
+    {
+      "id": "Echoes_ChampionUnitsGetSavageryBuffs.effects0",
+      "name": "RelicEffectAddStartingUpgradeToUnitCards",
+      "param_card_filter": "@Echoes_ChampionUnitsGetSavageryBuffs.effects0.paramCardFilter",
+      "param_int_2": 2,
+      "param_enhancer_pool": "TitanSavageryUpgradePool"
+    }
+  ]
 }

@@ -1,90 +1,60 @@
 {
-  "id": "UnitUpgradeClanBanishedAddValor",
-  "guid": "f9a886e5-5dd5-4833-aac7-d034b609a0d0",
-  "name": "Bravestone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-d91f80201a3031b0-ab27477c0ca7eca45af51c2b11fff080-v2",
-    "english": "Bravestone",
-    "french": "Pierre de bravoure",
-    "german": "Mutstein",
-    "russian": "Камень смелости",
-    "portuguese": "Pedra da Bravura",
-    "chinese": "无畏石",
-    "spanish": "Piedra brava",
-    "chinese_traditional": "勇石",
-    "korean": "용기의 돌",
-    "japanese": "勇気の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-36776006baac8adc-ab27477c0ca7eca45af51c2b11fff080-v2",
-    "english": "Upgrade a unit with [valor] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec [valor] [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit [valor] [effect0.upgrade.status0.power].",
-    "russian": "Усиление бойца: [valor] х[effect0.upgrade.status0.power]",
-    "portuguese": "Melhora uma unidade com [valor] [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得 [valor] [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con [valor] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[valor][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드하여 [valor] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：[valor] [effect0.upgrade.status0.power]"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassBanished",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "AddValorBanished",
-        "guid": "17aeda7d-b93d-4af0-b4bd-de22b916e4ce",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-1447830a4d437519-59f8fb46ec21e134bb3ae24421f736d0-v2",
-          "english": "Bravestone",
-          "french": "Pierre de bravoure",
-          "german": "Mutstein",
-          "russian": "Камень смелости",
-          "portuguese": "Pedra da Bravura",
-          "chinese": "无畏石",
-          "spanish": "Piedra brava",
-          "chinese_traditional": "勇石",
-          "korean": "용기의 돌",
-          "japanese": "勇気の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-8b8f54c8ef5106c9-59f8fb46ec21e134bb3ae24421f736d0-v2",
-          "english": "Gain [valor] [status0.power].",
-          "french": "Octroie [valor] [status0.power].",
-          "german": "Erhalte [valor] [status0.power].",
-          "russian": "Дается [valor] х[status0.power].",
-          "portuguese": "Recebe [valor] [status0.power].",
-          "chinese": "获得 [valor] [status0.power]。",
-          "spanish": "Añade [valor] [status0.power].",
-          "chinese_traditional": "獲得[valor][status0.power]。",
-          "korean": "[valor] [status0.power] 효과를 획득합니다.",
-          "japanese": "[valor] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "valor",
-            "count": 8
+      "id": "UnitUpgradeClanBanishedAddValor",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassBanished",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-d91f80201a3031b0-ab27477c0ca7eca45af51c2b11fff080-v2",
+        "english": "Bravestone",
+        "french": "Pierre de bravoure",
+        "german": "Mutstein",
+        "russian": "Камень смелости",
+        "portuguese": "Pedra da Bravura",
+        "chinese": "无畏石",
+        "spanish": "Piedra brava",
+        "chinese_traditional": "勇石",
+        "korean": "용기의 돌",
+        "japanese": "勇気の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-36776006baac8adc-ab27477c0ca7eca45af51c2b11fff080-v2",
+        "english": "Upgrade a unit with [valor] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec [valor] [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit [valor] [effect0.upgrade.status0.power].",
+        "russian": "Усиление бойца: [valor] х[effect0.upgrade.status0.power]",
+        "portuguese": "Melhora uma unidade com [valor] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得 [valor] [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con [valor] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[valor][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드하여 [valor] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：[valor] [effect0.upgrade.status0.power]"
+      },
+      "relic_effects": [
+        "@UnitUpgradeClanBanishedAddValor.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeClanBanishedAddValor.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "AddValorBanished"
+    }
+  ]
 }

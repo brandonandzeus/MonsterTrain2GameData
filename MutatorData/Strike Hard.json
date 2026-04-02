@@ -1,66 +1,66 @@
 {
-  "id": "AllUnitsMultistrike",
-  "guid": "626d64ba-8548-4a10-9240-b40d40b26485",
-  "name": "Strike Hard",
-  "nameKey": {
-    "key": "MutatorData_nameKey-9fabd51cbfd9033f-b83ee16a8d0a12b46b1dcfef24b0b05e-v2",
-    "english": "Strike Hard",
-    "french": "Coup de boutoir",
-    "german": "Hart zuschlagen",
-    "russian": "Тяжелый удар",
-    "portuguese": "Golpe Forte",
-    "chinese": "重击",
-    "spanish": "Mano dura",
-    "chinese_traditional": "猛力一擊",
-    "korean": "강타",
-    "japanese": "叩き込め"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-7ba9f78a96131c6e-b83ee16a8d0a12b46b1dcfef24b0b05e-v2",
-    "english": "All units get [multistrike] [effect0.upgrade.status0.power].",
-    "french": "Toutes les unités gagnent [multistrike] [effect0.upgrade.status0.power].",
-    "german": "Alle Einheiten erhalten [multistrike] [effect0.upgrade.status0.power].",
-    "russian": "Все бойцы получают [multistrike] х[effect0.upgrade.status0.power].",
-    "portuguese": "Todas as unidades recebem [multistrike] [effect0.upgrade.status0.power].",
-    "chinese": "所有单位获得[multistrike] [effect0.upgrade.status0.power]。",
-    "spanish": "Todas las unidades añaden [multistrike] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "所有單位獲得[multistrike][effect0.upgrade.status0.power]。",
-    "korean": "모든 유닛이 [multistrike] [effect0.upgrade.status0.power]를 획득합니다.",
-    "japanese": "すべてのユニットが[multistrike] [effect0.upgrade.status0.power]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTempUpgrade",
-      "paramCardUpgradeData": {
-        "id": "Multistrike1",
-        "guid": "5f8cd2bf-a568-4736-857a-a4cd62aea46d",
-        "statusEffectUpgrades": [
-          {
-            "statusId": "multistrike",
-            "count": 1
+      "id": "AllUnitsMultistrike",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -3
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyUnit",
-            "cardType": "monster"
-          }
-        ],
-        "isUnique": true
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-9fabd51cbfd9033f-b83ee16a8d0a12b46b1dcfef24b0b05e-v2",
+        "english": "Strike Hard",
+        "french": "Coup de boutoir",
+        "german": "Hart zuschlagen",
+        "russian": "Тяжелый удар",
+        "portuguese": "Golpe Forte",
+        "chinese": "重击",
+        "spanish": "Mano dura",
+        "chinese_traditional": "猛力一擊",
+        "korean": "강타",
+        "japanese": "叩き込め"
       },
-      "paramSourceTeam": "monsters",
-      "paramBool": true
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-7ba9f78a96131c6e-b83ee16a8d0a12b46b1dcfef24b0b05e-v2",
+        "english": "All units get [multistrike] [effect0.upgrade.status0.power].",
+        "french": "Toutes les unités gagnent [multistrike] [effect0.upgrade.status0.power].",
+        "german": "Alle Einheiten erhalten [multistrike] [effect0.upgrade.status0.power].",
+        "russian": "Все бойцы получают [multistrike] х[effect0.upgrade.status0.power].",
+        "portuguese": "Todas as unidades recebem [multistrike] [effect0.upgrade.status0.power].",
+        "chinese": "所有单位获得[multistrike] [effect0.upgrade.status0.power]。",
+        "spanish": "Todas las unidades añaden [multistrike] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "所有單位獲得[multistrike][effect0.upgrade.status0.power]。",
+        "korean": "모든 유닛이 [multistrike] [effect0.upgrade.status0.power]를 획득합니다.",
+        "japanese": "すべてのユニットが[multistrike] [effect0.upgrade.status0.power]を得る。"
+      },
+      "relic_effects": [
+        "@AllUnitsMultistrike.effects0",
+        "@AllUnitsMultistrike.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AllUnitsMultistrike.effects0",
+      "name": "RelicEffectAddTempUpgrade",
+      "param_upgrade": "Multistrike1",
+      "param_source_team": "monsters",
+      "param_bool": true
     },
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "AllUnitsMultistrike.effects1",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
         {
-          "statusId": "multistrike",
+          "status": "multistrike",
           "count": 1
         }
       ],
-      "paramSourceTeam": "heroes"
+      "param_source_team": "heroes"
     }
-  ],
-  "boonValue": -3
+  ]
 }

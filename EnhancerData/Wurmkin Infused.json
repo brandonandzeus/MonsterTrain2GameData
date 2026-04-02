@@ -1,28 +1,31 @@
 {
-  "id": "SpellUpgradeTraitAddCorrupt",
-  "guid": "c172bdb3-bbb2-4332-9248-8f0eb023dcc1",
-  "name": "Wurmkin Infused",
-  "nameKey": "EnhancerData_nameKey-4979166a34a64c8c-89bd685b971a99b46a80c8b949a357ca-v2",
-  "descriptionKey": "EnhancerData_descriptionKey-97fd9362e52cdac9-89bd685b971a99b46a80c8b949a357ca-v2",
-  "rarity": "uncommon",
-  "pools": [
-    "Class6CorruptEnhancerPool"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "TraitCorruptwIcon",
-        "guid": "bdb7a38c-18de-4461-beb8-c27fdbdc5f62",
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitCorruptState"
+      "id": "SpellUpgradeTraitAddCorrupt",
+      "pools": [
+        "Class6CorruptEnhancerPool"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "uncommon",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "hideUpgradeIconOnCard": true
-      }
+        }
+      ],
+      "relic_effects": [
+        "@SpellUpgradeTraitAddCorrupt.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeTraitAddCorrupt.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "TraitCorruptwIcon"
+    }
+  ]
 }

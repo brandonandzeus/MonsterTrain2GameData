@@ -1,101 +1,127 @@
 {
-  "id": "SparkyT1",
-  "guid": "18f04607-07b8-46cc-a401-9167879f36cb",
-  "name": "SparkyT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-76d8b7cf0cf0c916-04ff734f9b8c910439846cb5f11b28ef-v2",
-    "english": "Sparky",
-    "french": "Flammèche",
-    "german": "Funkelchen",
-    "russian": "Искра",
-    "portuguese": "Faísca",
-    "chinese": "小火花",
-    "spanish": "Chispa",
-    "chinese_traditional": "閃亮",
-    "korean": "스파키",
-    "japanese": "スパーキー"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-b43c51249a3223bf-04ff734f9b8c910439846cb5f11b28ef-v2",
-    "english": "Your Pyre gains +[effect0.trigger0.effect1.power][attack] and +[effect0.trigger0.effect0.power][health] permanently when a Champion kills a unit. Champions gain +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] and +[effect1.trigger0.effect0.upgrade.bonushp][health] permanently when the Pyre kills a unit. ",
-    "french": "Votre Brasier gagne +[effect0.trigger0.effect1.power][attack] et +[effect0.trigger0.effect0.power][health] définitivement quand un champion tue une unité. Les champions gagnent +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] et +[effect1.trigger0.effect0.upgrade.bonushp][health] définitivement quand le Brasier tue une unité.",
-    "german": "Deine Höllenglut erhält permanent +[effect0.trigger0.effect1.power][attack] und +[effect0.trigger0.effect0.power][health], wenn ein Champion eine Einheit tötet. Champions erhalten permanent +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] und +[effect1.trigger0.effect0.upgrade.bonushp][health], wenn die Höllenglut eine Einheit tötet.",
-    "russian": "Когда герой убивает бойца, Пекло навсегда получает +[effect0.trigger0.effect1.power][attack] и +[effect0.trigger0.effect0.power][health]. Когда Пекло убивает бойца, то герой навсегда получает +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] и +[effect1.trigger0.effect0.upgrade.bonushp][health]. ",
-    "portuguese": "Sua Pira recebe +[effect0.trigger0.effect1.power][attack] e +[effect0.trigger0.effect0.power][health] permanentemente quando um Campeão mata uma unidade. Campeões ganham +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] e +[effect1.trigger0.effect0.upgrade.bonushp][health] permanentemente quando a Pira mata uma unidade.",
-    "chinese": "你的勇者击杀单位时，你的薪火永久获得 +[effect0.trigger0.effect1.power][attack] 和 +[effect0.trigger0.effect0.power][health]。你的薪火击杀单位时，你的勇者永久获得 +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] 和 +[effect1.trigger0.effect0.upgrade.bonushp][health]。",
-    "spanish": "Tu Pira añade +[effect0.trigger0.effect1.power][attack] y +[effect0.trigger0.effect0.power][health] permanentemente cuando un campeón mata a una unidad. Los campeones añaden +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] y +[effect1.trigger0.effect0.upgrade.bonushp][health] permanentemente cuando la Pira mata a una unidad.",
-    "chinese_traditional": "當一個勇士擊殺一個單位時，你的薪火永久獲得+[effect0.trigger0.effect1.power][attack]和+[effect0.trigger0.effect0.power][health]。當薪火擊殺一個單位時，勇士永久獲得+[effect1.trigger0.effect0.upgrade.bonusdamage][attack]和+[effect1.trigger0.effect0.upgrade.bonushp][health]。",
-    "korean": "영웅이 유닛 하나를 처치할 때마다 영구적으로 화로가 [effect0.trigger0.effect1.power][attack] 및 [effect0.trigger0.effect0.power][health]을 획득합니다. 화로가 유닛 하나를 처치하면 영웅들이 [effect1.trigger0.effect0.upgrade.bonusdamage][attack] 및 [effect1.trigger0.effect0.upgrade.bonushp][health]을 획득합니다.",
-    "japanese": "チャンピオンがユニットをキルすると、自軍の炉が+[effect0.trigger0.effect1.power][attack]と+[effect0.trigger0.effect0.power][health]を永続的に得る。炉がユニットをキルすると、チャンピオンが+[effect1.trigger0.effect0.upgrade.bonusdamage][attack]と+[effect1.trigger0.effect0.upgrade.bonushp][health]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "SparkyT1",
+      "name": "SparkyT1",
+      "type": "soul",
+      "extensions": [
         {
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectPermanentlyAdjustMaxPyreHealth",
-              "paramInt": 2
-            },
-            {
-              "effectStateName": "CardEffectPermanentlyAdjustPyreAttack",
-              "paramInt": 1
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true,
-          "suppressTriggerNotification": true
-        }
-      ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
-        {
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddCardUpgradeToUnits",
-              "targetMode": "tower",
-              "targetTeamType": "monsters",
-              "targetCharacterSubtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
-              "paramCardUpgradeData": {
-                "id": "Plus2Attack2Health",
-                "guid": "b964c93d-d2ab-45d2-ab29-94c2e41e72a9",
-                "bonusDamage": 2,
-                "bonusHP": 2
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-e3fb21298b062928-04ff734f9b8c910439846cb5f11b28ef-v2",
+                "english": "Defeat Lifemother while playing Railforged to unlock.",
+                "french": "Battez Mère Nature en jouant les Forgerails pour déverrouiller.",
+                "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Gleisschmieden spielst.",
+                "russian": "Чтобы разблокировать, победите Мать-природу, играя за Железнодорожников.",
+                "portuguese": "Derrote a Genetriz jogando com os Forja-Trilhos para desbloquear.",
+                "chinese": "用铸道者击败生命之母以解锁。",
+                "spanish": "Derrota a la Madre Vida con los Forjarraíles para desbloquear.",
+                "chinese_traditional": "遊玩軌道鍛造者時擊敗生命之母以解鎖。",
+                "korean": "선로의 자손 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
+                "japanese": "鉄駆団でのプレイでライフマザーを倒してアンロック。"
               },
-              "additionalParamInt1": 2
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true,
-          "suppressTriggerNotification": true
+              "unlock_condition": "soul_kill_lifemother_using_railforged",
+              "param_int": 1
+            },
+            "tier_level": 1,
+            "next_tier": "SparkyT2"
+          }
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramCharacterSubtype": "SubtypesData_Pyre"
+      "names": {
+        "key": "SoulData_nameKey-76d8b7cf0cf0c916-04ff734f9b8c910439846cb5f11b28ef-v2",
+        "english": "Sparky",
+        "french": "Flammèche",
+        "german": "Funkelchen",
+        "russian": "Искра",
+        "portuguese": "Faísca",
+        "chinese": "小火花",
+        "spanish": "Chispa",
+        "chinese_traditional": "閃亮",
+        "korean": "스파키",
+        "japanese": "スパーキー"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-b43c51249a3223bf-04ff734f9b8c910439846cb5f11b28ef-v2",
+        "english": "Your Pyre gains +[effect0.trigger0.effect1.power][attack] and +[effect0.trigger0.effect0.power][health] permanently when a Champion kills a unit. Champions gain +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] and +[effect1.trigger0.effect0.upgrade.bonushp][health] permanently when the Pyre kills a unit. ",
+        "french": "Votre Brasier gagne +[effect0.trigger0.effect1.power][attack] et +[effect0.trigger0.effect0.power][health] définitivement quand un champion tue une unité. Les champions gagnent +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] et +[effect1.trigger0.effect0.upgrade.bonushp][health] définitivement quand le Brasier tue une unité.",
+        "german": "Deine Höllenglut erhält permanent +[effect0.trigger0.effect1.power][attack] und +[effect0.trigger0.effect0.power][health], wenn ein Champion eine Einheit tötet. Champions erhalten permanent +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] und +[effect1.trigger0.effect0.upgrade.bonushp][health], wenn die Höllenglut eine Einheit tötet.",
+        "russian": "Когда герой убивает бойца, Пекло навсегда получает +[effect0.trigger0.effect1.power][attack] и +[effect0.trigger0.effect0.power][health]. Когда Пекло убивает бойца, то герой навсегда получает +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] и +[effect1.trigger0.effect0.upgrade.bonushp][health]. ",
+        "portuguese": "Sua Pira recebe +[effect0.trigger0.effect1.power][attack] e +[effect0.trigger0.effect0.power][health] permanentemente quando um Campeão mata uma unidade. Campeões ganham +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] e +[effect1.trigger0.effect0.upgrade.bonushp][health] permanentemente quando a Pira mata uma unidade.",
+        "chinese": "你的勇者击杀单位时，你的薪火永久获得 +[effect0.trigger0.effect1.power][attack] 和 +[effect0.trigger0.effect0.power][health]。你的薪火击杀单位时，你的勇者永久获得 +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] 和 +[effect1.trigger0.effect0.upgrade.bonushp][health]。",
+        "spanish": "Tu Pira añade +[effect0.trigger0.effect1.power][attack] y +[effect0.trigger0.effect0.power][health] permanentemente cuando un campeón mata a una unidad. Los campeones añaden +[effect1.trigger0.effect0.upgrade.bonusdamage][attack] y +[effect1.trigger0.effect0.upgrade.bonushp][health] permanentemente cuando la Pira mata a una unidad.",
+        "chinese_traditional": "當一個勇士擊殺一個單位時，你的薪火永久獲得+[effect0.trigger0.effect1.power][attack]和+[effect0.trigger0.effect0.power][health]。當薪火擊殺一個單位時，勇士永久獲得+[effect1.trigger0.effect0.upgrade.bonusdamage][attack]和+[effect1.trigger0.effect0.upgrade.bonushp][health]。",
+        "korean": "영웅이 유닛 하나를 처치할 때마다 영구적으로 화로가 [effect0.trigger0.effect1.power][attack] 및 [effect0.trigger0.effect0.power][health]을 획득합니다. 화로가 유닛 하나를 처치하면 영웅들이 [effect1.trigger0.effect0.upgrade.bonusdamage][attack] 및 [effect1.trigger0.effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "チャンピオンがユニットをキルすると、自軍の炉が+[effect0.trigger0.effect1.power][attack]と+[effect0.trigger0.effect0.power][health]を永続的に得る。炉がユニットをキルすると、チャンピオンが+[effect1.trigger0.effect0.upgrade.bonusdamage][attack]と+[effect1.trigger0.effect0.upgrade.bonushp][health]を得る。"
+      },
+      "relic_effects": [
+        "@SparkyT1.effects0",
+        "@SparkyT1.effects1"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-e3fb21298b062928-04ff734f9b8c910439846cb5f11b28ef-v2",
-      "english": "Defeat Lifemother while playing Railforged to unlock.",
-      "french": "Battez Mère Nature en jouant les Forgerails pour déverrouiller.",
-      "german": "Besiege für eine Verbesserung die Lebensmutter, während du mit den Gleisschmieden spielst.",
-      "russian": "Чтобы разблокировать, победите Мать-природу, играя за Железнодорожников.",
-      "portuguese": "Derrote a Genetriz jogando com os Forja-Trilhos para desbloquear.",
-      "chinese": "用铸道者击败生命之母以解锁。",
-      "spanish": "Derrota a la Madre Vida con los Forjarraíles para desbloquear.",
-      "chinese_traditional": "遊玩軌道鍛造者時擊敗生命之母以解鎖。",
-      "korean": "선로의 자손 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
-      "japanese": "鉄駆団でのプレイでライフマザーを倒してアンロック。"
+  "relic_effects": [
+    {
+      "id": "SparkyT1.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@SparkyT1.effects0.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
     },
-    "unlockCondition": "soul_kill_lifemother_using_railforged",
-    "paramInt": 1
-  },
-  "tierLevel": 1,
-  "nextTier": "SparkyT2"
+    {
+      "id": "SparkyT1.effects1",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@SparkyT1.effects1.triggers0"
+      ],
+      "param_source_team": "monsters",
+      "param_subtype": "SubtypesData_Pyre"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SparkyT1.effects0.triggers0",
+      "trigger": "on_kill",
+      "effects": [
+        "@SparkyT1.effects0.triggers0.effects0",
+        "@SparkyT1.effects0.triggers0.effects1"
+      ],
+      "hide_visual_and_ignore_silence": true,
+      "suppress_notifications": true
+    },
+    {
+      "id": "SparkyT1.effects1.triggers0",
+      "trigger": "on_kill",
+      "effects": [
+        "@SparkyT1.effects1.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true,
+      "suppress_notifications": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "SparkyT1.effects0.triggers0.effects0",
+      "name": "CardEffectPermanentlyAdjustMaxPyreHealth",
+      "param_int": 2
+    },
+    {
+      "id": "SparkyT1.effects0.triggers0.effects1",
+      "name": "CardEffectPermanentlyAdjustPyreAttack",
+      "param_int": 1
+    },
+    {
+      "id": "SparkyT1.effects1.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "tower",
+      "target_team": "monsters",
+      "target_subtype": "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34",
+      "param_upgrade": "Plus2Attack2Health",
+      "param_int_3": 2
+    }
+  ]
 }

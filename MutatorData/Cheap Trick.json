@@ -1,42 +1,56 @@
 {
-  "id": "CheapSpells",
-  "guid": "3b68f4c7-ad9d-4b59-abef-756a37b058ef",
-  "name": "Cheap Trick",
-  "nameKey": {
-    "key": "MutatorData_nameKey-46acb2b201f236f0-cd3011981a9b92f419431c15ab7d96af-v2",
-    "english": "Cheap Trick",
-    "french": "Combine",
-    "german": "Billiger Trick",
-    "russian": "Дешевый трюк",
-    "portuguese": "Truque Barato",
-    "chinese": "雕虫小技",
-    "spanish": "Treta barata",
-    "chinese_traditional": "拙劣把戲",
-    "korean": "조잡한 속임수",
-    "japanese": "あふれる魔力"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-acc0620590fdd4d6-cd3011981a9b92f419431c15ab7d96af-v2",
-    "english": "Spells cost [effect0.power][ember].",
-    "french": "Les sorts coûtent [effect0.power][ember].",
-    "german": "Zauber kosten [effect0.power] [ember].",
-    "russian": "Стоимость чар: [effect0.power][ember].",
-    "portuguese": "Feitiços custam [effect0.power][ember].",
-    "chinese": "法术费用 [effect0.power][ember]。",
-    "spanish": "Los hechizos cuestan [effect0.power][ember].",
-    "chinese_traditional": "法術費用[effect0.power][ember]。",
-    "korean": "주문 비용이 [effect0.power][ember]이 됩니다.",
-    "japanese": "呪文のコストが[effect0.power][ember]。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyCardTypeCost",
-      "paramCardType": "spell",
-      "paramInt": -1
+      "id": "CheapSpells",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 8,
+            "tags": [
+              "spellcost"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-46acb2b201f236f0-cd3011981a9b92f419431c15ab7d96af-v2",
+        "english": "Cheap Trick",
+        "french": "Combine",
+        "german": "Billiger Trick",
+        "russian": "Дешевый трюк",
+        "portuguese": "Truque Barato",
+        "chinese": "雕虫小技",
+        "spanish": "Treta barata",
+        "chinese_traditional": "拙劣把戲",
+        "korean": "조잡한 속임수",
+        "japanese": "あふれる魔力"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-acc0620590fdd4d6-cd3011981a9b92f419431c15ab7d96af-v2",
+        "english": "Spells cost [effect0.power][ember].",
+        "french": "Les sorts coûtent [effect0.power][ember].",
+        "german": "Zauber kosten [effect0.power] [ember].",
+        "russian": "Стоимость чар: [effect0.power][ember].",
+        "portuguese": "Feitiços custam [effect0.power][ember].",
+        "chinese": "法术费用 [effect0.power][ember]。",
+        "spanish": "Los hechizos cuestan [effect0.power][ember].",
+        "chinese_traditional": "法術費用[effect0.power][ember]。",
+        "korean": "주문 비용이 [effect0.power][ember]이 됩니다.",
+        "japanese": "呪文のコストが[effect0.power][ember]。"
+      },
+      "relic_effects": [
+        "@CheapSpells.effects0"
+      ]
     }
   ],
-  "boonValue": 8,
-  "tags": [
-    "spellcost"
+  "relic_effects": [
+    {
+      "id": "CheapSpells.effects0",
+      "name": "RelicEffectModifyCardTypeCost",
+      "param_card_type": "spell",
+      "param_int": -1
+    }
   ]
 }

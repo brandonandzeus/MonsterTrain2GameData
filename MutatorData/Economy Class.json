@@ -1,43 +1,57 @@
 {
-  "id": "Echoes_LessRoomSpace",
-  "guid": "ec24def1-0c38-43f2-ad92-c0729dd139d3",
-  "name": "Economy Class",
-  "nameKey": {
-    "key": "MutatorData_nameKey-bb61d9ac5ac239e2-6500c15c13495db47bb50df7e44a1430-v2",
-    "english": "Economy Class",
-    "french": "Classe éco",
-    "german": "Ökonomie-Stunde",
-    "russian": "Эконом-класс",
-    "portuguese": "Classe Econômica",
-    "chinese": "经济舱",
-    "spanish": "Clase turista",
-    "chinese_traditional": "經濟艙",
-    "korean": "이코노미석",
-    "japanese": "エコノミークラス"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-b8c2dc36b20954b1-6500c15c13495db47bb50df7e44a1430-v2",
-    "english": "[effect0.power][capacity] on each floor.",
-    "french": "[effect0.power][capacity] à chaque niveau.",
-    "german": "[effect0.power][capacity] auf jeder Ebene.",
-    "russian": "[effect0.power][capacity] на каждом этаже.",
-    "portuguese": "[effect0.power][capacity] em cada andar.",
-    "chinese": "每层 [effect0.power][capacity]。",
-    "spanish": "[effect0.power][capacity] en cada piso.",
-    "chinese_traditional": "每層[effect0.power][capacity]。",
-    "korean": "각 층마다 +[effect0.power][capacity].",
-    "japanese": "各フロアで[effect0.power][capacity]。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeFloorCapacity",
-      "paramInt": -2
+      "id": "Echoes_LessRoomSpace",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -9,
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "roomspace",
+              "capacity"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-bb61d9ac5ac239e2-6500c15c13495db47bb50df7e44a1430-v2",
+        "english": "Economy Class",
+        "french": "Classe éco",
+        "german": "Ökonomie-Stunde",
+        "russian": "Эконом-класс",
+        "portuguese": "Classe Econômica",
+        "chinese": "经济舱",
+        "spanish": "Clase turista",
+        "chinese_traditional": "經濟艙",
+        "korean": "이코노미석",
+        "japanese": "エコノミークラス"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-b8c2dc36b20954b1-6500c15c13495db47bb50df7e44a1430-v2",
+        "english": "[effect0.power][capacity] on each floor.",
+        "french": "[effect0.power][capacity] à chaque niveau.",
+        "german": "[effect0.power][capacity] auf jeder Ebene.",
+        "russian": "[effect0.power][capacity] на каждом этаже.",
+        "portuguese": "[effect0.power][capacity] em cada andar.",
+        "chinese": "每层 [effect0.power][capacity]。",
+        "spanish": "[effect0.power][capacity] en cada piso.",
+        "chinese_traditional": "每層[effect0.power][capacity]。",
+        "korean": "각 층마다 +[effect0.power][capacity].",
+        "japanese": "各フロアで[effect0.power][capacity]。"
+      },
+      "relic_effects": [
+        "@Echoes_LessRoomSpace.effects0"
+      ]
     }
   ],
-  "boonValue": -9,
-  "disableInDailyChallenges": true,
-  "tags": [
-    "roomspace",
-    "capacity"
+  "relic_effects": [
+    {
+      "id": "Echoes_LessRoomSpace.effects0",
+      "name": "RelicEffectChangeFloorCapacity",
+      "param_int": -2
+    }
   ]
 }

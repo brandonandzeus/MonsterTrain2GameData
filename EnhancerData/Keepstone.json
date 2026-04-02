@@ -1,103 +1,60 @@
 {
-  "id": "SpellUpgradeTraitAddRetain",
-  "guid": "0454db73-87f1-4767-ae96-053928acc008",
-  "name": "Keepstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-90c2533158dedf2e-dcd3ac6e24968a34da15aad56275b7db-v2",
-    "english": "Keepstone",
-    "french": "Pierre de garde",
-    "german": "Haltestein",
-    "russian": "Камень сдерживания",
-    "portuguese": "Pedra de Sustento",
-    "chinese": "永驻石",
-    "spanish": "Piedra de permanencia",
-    "chinese_traditional": "要塞石",
-    "korean": "수호석",
-    "japanese": "保管の石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-9b306d07e1163736-dcd3ac6e24968a34da15aad56275b7db-v2",
-    "english": "Upgrade a spell to gain [retain].",
-    "french": "Améliore un sort pour lui conférer <b>Retournemain</b>.",
-    "german": "Verbessere einen Zauber mit <b>Einbehalt</b>.",
-    "russian": "Улучшенные чары получают [retain].",
-    "portuguese": "Melhora um feitiço para receber <b>Refrear</b>.",
-    "chinese": "升级一个法术，使其获得<b>返回</b>效果。",
-    "spanish": "Mejora un hechizo para añadir [retain].",
-    "chinese_traditional": "升級一個法術，使其獲得[retain]。",
-    "korean": "주문 업그레이드로 [retain] 효과를 획득합니다.",
-    "japanese": "呪文アップグレード：[retain]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "SoulSavior_SpellUpgradePoolRare",
-    "SpellUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "TraitRetain",
-        "guid": "f43e7cdb-fa8d-4760-88bf-c6f34f72d918",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-b27ca233cdaa1f00-b66cb2934ae000e4e9cccee97e055e4b-v2",
-          "english": "Keepstone",
-          "french": "Pierre de garde",
-          "german": "Haltestein",
-          "russian": "Камень сдерживания",
-          "portuguese": "Pedra de Sustento",
-          "chinese": "永驻石",
-          "spanish": "Piedra de permanencia",
-          "chinese_traditional": "要塞石",
-          "korean": "수호석",
-          "japanese": "保管の石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-bcf6ba00628727e5-b66cb2934ae000e4e9cccee97e055e4b-v2",
-          "english": "Gain [retain].",
-          "french": "Octroie <b>Retournemain</b>.",
-          "german": "Erhalte <b>Einbehalt</b>.",
-          "russian": "Дает [retain].",
-          "portuguese": "Recebe [retain].",
-          "chinese": "获得[retain]。",
-          "spanish": "Añade [retain].",
-          "chinese_traditional": "獲得[retain]。",
-          "korean": "[retain] 효과를 획득합니다.",
-          "japanese": "[retain]を得る。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitRetain"
+      "id": "SpellUpgradeTraitAddRetain",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "SoulSavior_SpellUpgradePoolRare",
+        "SpellUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeRetain",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitRetain"
-            ]
-          },
-          {
-            "id": "ExcludeConsume",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitExhaustState"
-            ]
-          },
-          {
-            "id": "ExcludeSelfDestruct",
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitSelfPurge"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-90c2533158dedf2e-dcd3ac6e24968a34da15aad56275b7db-v2",
+        "english": "Keepstone",
+        "french": "Pierre de garde",
+        "german": "Haltestein",
+        "russian": "Камень сдерживания",
+        "portuguese": "Pedra de Sustento",
+        "chinese": "永驻石",
+        "spanish": "Piedra de permanencia",
+        "chinese_traditional": "要塞石",
+        "korean": "수호석",
+        "japanese": "保管の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-9b306d07e1163736-dcd3ac6e24968a34da15aad56275b7db-v2",
+        "english": "Upgrade a spell to gain [retain].",
+        "french": "Améliore un sort pour lui conférer <b>Retournemain</b>.",
+        "german": "Verbessere einen Zauber mit <b>Einbehalt</b>.",
+        "russian": "Улучшенные чары получают [retain].",
+        "portuguese": "Melhora um feitiço para receber <b>Refrear</b>.",
+        "chinese": "升级一个法术，使其获得<b>返回</b>效果。",
+        "spanish": "Mejora un hechizo para añadir [retain].",
+        "chinese_traditional": "升級一個法術，使其獲得[retain]。",
+        "korean": "주문 업그레이드로 [retain] 효과를 획득합니다.",
+        "japanese": "呪文アップグレード：[retain]を得る。"
+      },
+      "relic_effects": [
+        "@SpellUpgradeTraitAddRetain.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeTraitAddRetain.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "TraitRetain"
+    }
+  ]
 }

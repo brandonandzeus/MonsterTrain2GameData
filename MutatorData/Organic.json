@@ -1,61 +1,61 @@
 {
-  "id": "Echoes_ReplaceStewardsWithGraft",
-  "guid": "38867c1b-a623-4e30-ac9f-cddaf82e8b39",
-  "name": "Organic",
-  "nameKey": {
-    "key": "MutatorData_nameKey-afed9abfb462b4b3-67d2e71d056917e4d8f8a509f644500f-v2",
-    "english": "Organic",
-    "french": "Don d'organes",
-    "german": "Organisch",
-    "russian": "Органика, а не механика",
-    "portuguese": "Orgânico",
-    "chinese": "有机单位",
-    "spanish": "Orgánico",
-    "chinese_traditional": "有機",
-    "korean": "유기체",
-    "japanese": "オーガニック"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-285efb4ed8e0a6b8-67d2e71d056917e4d8f8a509f644500f-v2",
-    "english": "Replace <b>Train Stewards</b> with Graft units.",
-    "french": "Remplace les <b>stewards</b> par des unités avec une greffe.",
-    "german": "Ersetzt <b>Zugbegleiter</b> durch Transplantieren-Einheiten.",
-    "russian": "Замена <b>стюардов</b> на бойцов с трансплантатами.",
-    "portuguese": "Substitui <b>Guardas do Trem</b> por unidades de Enxerto.",
-    "chinese": "将<b>乘务员</b>替换为嫁接单位。",
-    "spanish": "Reemplaza los <b>Auxiliares de tren</b> con unidades de Injerto.",
-    "chinese_traditional": "將<b>列車服務員</b>替換為嫁接單位。",
-    "korean": "<b>열차 잡부</b>들이 접목 유닛들로 교체됩니다.",
-    "japanese": "<b>トレイン・スチュワード</b>を移植ユニットと入れ替える。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectPurgeStarterDeckMatchingFilter",
-      "paramCardFilter": {
-        "id": "OnlyStewards",
-        "cardType": "monster",
-        "requiredSubtypesOperator": "and",
-        "requiredSubtypes": [
-          "SubtypesData_TrainSteward"
-        ]
-      }
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "LazarusLeagueGraftedUnitNoStarterPool"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "LazarusLeagueGraftedUnitNoStarterPool"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "LazarusLeagueGraftedUnitNoStarterPool"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardPool": "LazarusLeagueGraftedUnitNoStarterPool"
+      "id": "Echoes_ReplaceStewardsWithGraft",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-afed9abfb462b4b3-67d2e71d056917e4d8f8a509f644500f-v2",
+        "english": "Organic",
+        "french": "Don d'organes",
+        "german": "Organisch",
+        "russian": "Органика, а не механика",
+        "portuguese": "Orgânico",
+        "chinese": "有机单位",
+        "spanish": "Orgánico",
+        "chinese_traditional": "有機",
+        "korean": "유기체",
+        "japanese": "オーガニック"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-285efb4ed8e0a6b8-67d2e71d056917e4d8f8a509f644500f-v2",
+        "english": "Replace <b>Train Stewards</b> with Graft units.",
+        "french": "Remplace les <b>stewards</b> par des unités avec une greffe.",
+        "german": "Ersetzt <b>Zugbegleiter</b> durch Transplantieren-Einheiten.",
+        "russian": "Замена <b>стюардов</b> на бойцов с трансплантатами.",
+        "portuguese": "Substitui <b>Guardas do Trem</b> por unidades de Enxerto.",
+        "chinese": "将<b>乘务员</b>替换为嫁接单位。",
+        "spanish": "Reemplaza los <b>Auxiliares de tren</b> con unidades de Injerto.",
+        "chinese_traditional": "將<b>列車服務員</b>替換為嫁接單位。",
+        "korean": "<b>열차 잡부</b>들이 접목 유닛들로 교체됩니다.",
+        "japanese": "<b>トレイン・スチュワード</b>を移植ユニットと入れ替える。"
+      },
+      "relic_effects": [
+        "@Echoes_ReplaceStewardsWithGraft.effects0",
+        "@Echoes_ReplaceStewardsWithGraft.effects1",
+        "@Echoes_ReplaceStewardsWithGraft.effects1",
+        "@Echoes_ReplaceStewardsWithGraft.effects1",
+        "@Echoes_ReplaceStewardsWithGraft.effects1"
+      ]
     }
   ],
-  "boonValue": 5
+  "relic_effects": [
+    {
+      "id": "Echoes_ReplaceStewardsWithGraft.effects0",
+      "name": "RelicEffectPurgeStarterDeckMatchingFilter",
+      "param_card_filter": "@Echoes_ReplaceStewardsWithGraft.effects0.paramCardFilter"
+    },
+    {
+      "id": "Echoes_ReplaceStewardsWithGraft.effects1",
+      "name": "RelicEffectAddCardsStartOfRun",
+      "param_card_pool": "LazarusLeagueGraftedUnitNoStarterPool"
+    }
+  ]
 }

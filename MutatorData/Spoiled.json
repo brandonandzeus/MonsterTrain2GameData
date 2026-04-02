@@ -1,45 +1,59 @@
 {
-  "id": "SoulSavior_Region2Complete_1",
-  "guid": "bcceb45e-1afe-4916-8021-11b617ae3a47",
-  "name": "Spoiled",
-  "nameKey": {
-    "key": "MutatorData_nameKey-0d0a792524defbf6-5dbafa9c816be2843bbd58736d947386-v2",
-    "english": "Spoiled",
-    "french": "Détérioration",
-    "german": "Verdorben",
-    "russian": "Порча",
-    "portuguese": "Mimado",
-    "chinese": "腐败",
-    "spanish": "Consentimiento",
-    "chinese_traditional": "腐敗",
-    "korean": "응석받이",
-    "japanese": "甘やかし"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-46b320a22494b196-5dbafa9c816be2843bbd58736d947386-v2",
-    "english": "Enemy units gain [infested] [effect0.status0.power].",
-    "french": "Les ennemis gagnent [infested] [effect0.status0.power].",
-    "german": "Gegnerische Einheiten erhalten [infested] [effect0.status0.power].",
-    "russian": "Врагам дается [infested] х[effect0.status0.power].",
-    "portuguese": "Unidades inimigas recebem [infested] [effect0.status0.power].",
-    "chinese": "敌方单位获得 [infested] [effect0.status0.power]。",
-    "spanish": "Las unidades enemigas añaden [infested] [effect0.status0.power].",
-    "chinese_traditional": "敵方單位獲得[infested][effect0.status0.power]。",
-    "korean": "적 유닛들이 [infested] [effect0.status0.power] 효과를 획득합니다.",
-    "japanese": "敵ユニットが[infested] [effect0.status0.power]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "SoulSavior_Region2Complete_1",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "hivemind",
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-0d0a792524defbf6-5dbafa9c816be2843bbd58736d947386-v2",
+        "english": "Spoiled",
+        "french": "Détérioration",
+        "german": "Verdorben",
+        "russian": "Порча",
+        "portuguese": "Mimado",
+        "chinese": "腐败",
+        "spanish": "Consentimiento",
+        "chinese_traditional": "腐敗",
+        "korean": "응석받이",
+        "japanese": "甘やかし"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-46b320a22494b196-5dbafa9c816be2843bbd58736d947386-v2",
+        "english": "Enemy units gain [infested] [effect0.status0.power].",
+        "french": "Les ennemis gagnent [infested] [effect0.status0.power].",
+        "german": "Gegnerische Einheiten erhalten [infested] [effect0.status0.power].",
+        "russian": "Врагам дается [infested] х[effect0.status0.power].",
+        "portuguese": "Unidades inimigas recebem [infested] [effect0.status0.power].",
+        "chinese": "敌方单位获得 [infested] [effect0.status0.power]。",
+        "spanish": "Las unidades enemigas añaden [infested] [effect0.status0.power].",
+        "chinese_traditional": "敵方單位獲得[infested][effect0.status0.power]。",
+        "korean": "적 유닛들이 [infested] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "敵ユニットが[infested] [effect0.status0.power]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region2Complete_1.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region2Complete_1.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "hivemind",
           "count": 1
         }
       ],
-      "paramSourceTeam": "heroes"
+      "param_source_team": "heroes"
     }
-  ],
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }

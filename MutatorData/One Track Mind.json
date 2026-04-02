@@ -1,38 +1,52 @@
 {
-  "id": "TrainPathsPredetermined",
-  "guid": "17317228-6269-4ab6-9e9f-0c372f76c709",
-  "name": "One Track Mind",
-  "nameKey": {
-    "key": "MutatorData_nameKey-2e52d82b3c52b111-935af6ef2cb57394faf25ce251d92f53-v2",
-    "english": "One Track Mind",
-    "french": "Prédestination",
-    "german": "Nicht aus der Bahn zu bringen",
-    "russian": "Туннельное мышление",
-    "portuguese": "Uma Mente Obcecada",
-    "chinese": "单线思维",
-    "spanish": "Mente clara",
-    "chinese_traditional": "一心一意",
-    "korean": "오직 외길",
-    "japanese": "前進あるのみ"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-3182a8838e2484a2-935af6ef2cb57394faf25ce251d92f53-v2",
-    "english": "The path you take on the map is chosen automatically.",
-    "french": "Votre route sur la carte est choisie automatiquement.",
-    "german": "Dein Pfad auf der Karte wird automatisch ausgewählt.",
-    "russian": "Путь по карте выбирается автоматически.",
-    "portuguese": "O caminho que você segue no mapa é escolhido automaticamente.",
-    "chinese": "自动选择你在地图上的行进路线。",
-    "spanish": "El camino que sigues en el mapa se elige de manera automática.",
-    "chinese_traditional": "在地圖上行走的路徑改為自動選擇。",
-    "korean": "맵에서 경로가 자동으로 선택됩니다.",
-    "japanese": "マップの経路が自動で選択される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAutoselectTrainPath"
+      "id": "TrainPathsPredetermined",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -4,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-2e52d82b3c52b111-935af6ef2cb57394faf25ce251d92f53-v2",
+        "english": "One Track Mind",
+        "french": "Prédestination",
+        "german": "Nicht aus der Bahn zu bringen",
+        "russian": "Туннельное мышление",
+        "portuguese": "Uma Mente Obcecada",
+        "chinese": "单线思维",
+        "spanish": "Mente clara",
+        "chinese_traditional": "一心一意",
+        "korean": "오직 외길",
+        "japanese": "前進あるのみ"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-3182a8838e2484a2-935af6ef2cb57394faf25ce251d92f53-v2",
+        "english": "The path you take on the map is chosen automatically.",
+        "french": "Votre route sur la carte est choisie automatiquement.",
+        "german": "Dein Pfad auf der Karte wird automatisch ausgewählt.",
+        "russian": "Путь по карте выбирается автоматически.",
+        "portuguese": "O caminho que você segue no mapa é escolhido automaticamente.",
+        "chinese": "自动选择你在地图上的行进路线。",
+        "spanish": "El camino que sigues en el mapa se elige de manera automática.",
+        "chinese_traditional": "在地圖上行走的路徑改為自動選擇。",
+        "korean": "맵에서 경로가 자동으로 선택됩니다.",
+        "japanese": "マップの経路が自動で選択される。"
+      },
+      "relic_effects": [
+        "@TrainPathsPredetermined.effects0"
+      ]
     }
   ],
-  "boonValue": -4,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "TrainPathsPredetermined.effects0",
+      "name": "RelicEffectAutoselectTrainPath"
+    }
+  ]
 }

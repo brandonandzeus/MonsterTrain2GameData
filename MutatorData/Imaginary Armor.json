@@ -1,67 +1,85 @@
 {
-  "id": "Echoes_AllDamagePiercing",
-  "guid": "a9f8a172-cce4-4639-bdc9-c495fc2a7a56",
-  "name": "Imaginary Armor",
-  "nameKey": {
-    "key": "MutatorData_nameKey-ab3567e3b1fcd943-701ff774d5ecf07478ac65107b9fbb88-v2",
-    "english": "Imaginary Armor",
-    "french": "Armure imaginaire",
-    "german": "Eingebildete Rüstung",
-    "russian": "Воображаемая броня",
-    "portuguese": "Armadura Imaginária",
-    "chinese": "纸糊护甲",
-    "spanish": "Armadura imaginaria",
-    "chinese_traditional": "想像護甲",
-    "korean": "상상의 갑옷",
-    "japanese": "空想上の鎧"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-a330f7b2335a1a87-701ff774d5ecf07478ac65107b9fbb88-v2",
-    "english": "All damage is now [piercing].",
-    "french": "Tous les dégâts ont [piercing].",
-    "german": "Jeglicher Schaden ist nun [piercing]-Schaden.",
-    "russian": "Единственный вид урона в игре — [piercing].",
-    "portuguese": "Todo o dano agora é [piercing].",
-    "chinese": "现在一切伤害带有[piercing]。",
-    "spanish": "Ahora todo el daño es [piercing].",
-    "chinese_traditional": "所有傷害現在都是[piercing]。",
-    "korean": "이제 모든 피해가 [piercing]으로 변경됩니다.",
-    "japanese": "あらゆるダメージが[piercing]になる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAllDamageIsPiercing",
-      "additionalTooltips": [
+      "id": "Echoes_AllDamagePiercing",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "StatusEffect_Piercing_CardTooltipText",
-            "english": "Damage dealt ignores armor, shields, and Titanskin.",
-            "french": "Les dégâts infligés ignorent l'armure, les boucliers et la Peau de titan.",
-            "german": "Verursachter Schaden ignoriert Rüstung, Schilde und Titanenhaut.",
-            "russian": "Наносимый урон не зависит от брони, щитов и кожи титана.",
-            "portuguese": "O dano causado ignora armaduras, escudos e Pele de Titã.",
-            "chinese": "造成的伤害无视护甲、护盾和泰坦皮肤。",
-            "spanish": "El daño infligido ignora armadura, escudos y piel titánica.",
-            "chinese_traditional": "傷害無視護甲、護盾和泰坦之膚。",
-            "korean": "방어력과 보호막과 티탄 피부를 무시하고 피해를 줍니다.",
-            "japanese": "与ダメージはアーマー、シールド、巨人の皮膚を無視する。"
-          },
-          "titleKey": {
-            "key": "StatusEffect_Piercing_CardText",
-            "english": "Piercing",
-            "french": "Perce-armure",
-            "german": "Durchdringen",
-            "russian": "Пробивание",
-            "portuguese": "Perfurante",
-            "chinese": "穿刺",
-            "spanish": "Perforante",
-            "chinese_traditional": "穿透",
-            "korean": "관통",
-            "japanese": "貫通"
+          "mutator": {
+            "boon_value": 4
           }
         }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-ab3567e3b1fcd943-701ff774d5ecf07478ac65107b9fbb88-v2",
+        "english": "Imaginary Armor",
+        "french": "Armure imaginaire",
+        "german": "Eingebildete Rüstung",
+        "russian": "Воображаемая броня",
+        "portuguese": "Armadura Imaginária",
+        "chinese": "纸糊护甲",
+        "spanish": "Armadura imaginaria",
+        "chinese_traditional": "想像護甲",
+        "korean": "상상의 갑옷",
+        "japanese": "空想上の鎧"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-a330f7b2335a1a87-701ff774d5ecf07478ac65107b9fbb88-v2",
+        "english": "All damage is now [piercing].",
+        "french": "Tous les dégâts ont [piercing].",
+        "german": "Jeglicher Schaden ist nun [piercing]-Schaden.",
+        "russian": "Единственный вид урона в игре — [piercing].",
+        "portuguese": "Todo o dano agora é [piercing].",
+        "chinese": "现在一切伤害带有[piercing]。",
+        "spanish": "Ahora todo el daño es [piercing].",
+        "chinese_traditional": "所有傷害現在都是[piercing]。",
+        "korean": "이제 모든 피해가 [piercing]으로 변경됩니다.",
+        "japanese": "あらゆるダメージが[piercing]になる。"
+      },
+      "relic_effects": [
+        "@Echoes_AllDamagePiercing.effects0"
       ]
     }
   ],
-  "boonValue": 4
+  "relic_effects": [
+    {
+      "id": "Echoes_AllDamagePiercing.effects0",
+      "name": "RelicEffectAllDamageIsPiercing",
+      "additional_tooltips": [
+        "@Echoes_AllDamagePiercing.effects0.additionalTooltips0"
+      ]
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Echoes_AllDamagePiercing.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "StatusEffect_Piercing_CardTooltipText",
+        "english": "Damage dealt ignores armor, shields, and Titanskin.",
+        "french": "Les dégâts infligés ignorent l'armure, les boucliers et la Peau de titan.",
+        "german": "Verursachter Schaden ignoriert Rüstung, Schilde und Titanenhaut.",
+        "russian": "Наносимый урон не зависит от брони, щитов и кожи титана.",
+        "portuguese": "O dano causado ignora armaduras, escudos e Pele de Titã.",
+        "chinese": "造成的伤害无视护甲、护盾和泰坦皮肤。",
+        "spanish": "El daño infligido ignora armadura, escudos y piel titánica.",
+        "chinese_traditional": "傷害無視護甲、護盾和泰坦之膚。",
+        "korean": "방어력과 보호막과 티탄 피부를 무시하고 피해를 줍니다.",
+        "japanese": "与ダメージはアーマー、シールド、巨人の皮膚を無視する。"
+      },
+      "titles": {
+        "key": "StatusEffect_Piercing_CardText",
+        "english": "Piercing",
+        "french": "Perce-armure",
+        "german": "Durchdringen",
+        "russian": "Пробивание",
+        "portuguese": "Perfurante",
+        "chinese": "穿刺",
+        "spanish": "Perforante",
+        "chinese_traditional": "穿透",
+        "korean": "관통",
+        "japanese": "貫通"
+      }
+    }
+  ]
 }

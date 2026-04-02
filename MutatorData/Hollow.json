@@ -1,49 +1,63 @@
 {
-  "id": "FriendlyUnitsGetHeartless",
-  "guid": "f22680e5-e802-4189-bd8f-1da364437a7e",
-  "name": "Hollow",
-  "nameKey": {
-    "key": "MutatorData_nameKey-0df1ab27b40f014c-2f42d731ae4abb649a39b42ffd04ae81-v2",
-    "english": "Hollow",
-    "french": "Enveloppe vide",
-    "german": "Hülle",
-    "russian": "Пустой",
-    "portuguese": "Ocos",
-    "chinese": "空灵",
-    "spanish": "Hueco",
-    "chinese_traditional": "空心人",
-    "korean": "공허한 존재",
-    "japanese": "上の空"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-952d304aa45f9ff7-2f42d731ae4abb649a39b42ffd04ae81-v2",
-    "english": "Friendly units get [heal_immune].",
-    "french": "Les unités alliées gagnent <b>Sans-cœur</b>.",
-    "german": "Verbündete Einheiten erhalten <b>Herzlosigkeit</b>.",
-    "russian": "Союзники получают [heal_immune].",
-    "portuguese": "Unidades inimigas recebem <b>Desalmado</b>.",
-    "chinese": "友方单位获得[heal_immune]。",
-    "spanish": "Las unidades aliadas añaden [heal_immune].",
-    "chinese_traditional": "友方單位獲得[heal_immune]。",
-    "korean": "아군 유닛이 [heal_immune]을 얻습니다.",
-    "japanese": "味方ユニットが[heal_immune]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "FriendlyUnitsGetHeartless",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "heal immunity",
+          "mutator": {
+            "boon_value": -3,
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "friendlyeffect"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-0df1ab27b40f014c-2f42d731ae4abb649a39b42ffd04ae81-v2",
+        "english": "Hollow",
+        "french": "Enveloppe vide",
+        "german": "Hülle",
+        "russian": "Пустой",
+        "portuguese": "Ocos",
+        "chinese": "空灵",
+        "spanish": "Hueco",
+        "chinese_traditional": "空心人",
+        "korean": "공허한 존재",
+        "japanese": "上の空"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-952d304aa45f9ff7-2f42d731ae4abb649a39b42ffd04ae81-v2",
+        "english": "Friendly units get [heal_immune].",
+        "french": "Les unités alliées gagnent <b>Sans-cœur</b>.",
+        "german": "Verbündete Einheiten erhalten <b>Herzlosigkeit</b>.",
+        "russian": "Союзники получают [heal_immune].",
+        "portuguese": "Unidades inimigas recebem <b>Desalmado</b>.",
+        "chinese": "友方单位获得[heal_immune]。",
+        "spanish": "Las unidades aliadas añaden [heal_immune].",
+        "chinese_traditional": "友方單位獲得[heal_immune]。",
+        "korean": "아군 유닛이 [heal_immune]을 얻습니다.",
+        "japanese": "味方ユニットが[heal_immune]を得る。"
+      },
+      "relic_effects": [
+        "@FriendlyUnitsGetHeartless.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FriendlyUnitsGetHeartless.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "heal immunity",
           "count": 1
         }
       ],
-      "paramSourceTeam": "monsters",
-      "paramInt": -1
+      "param_source_team": "monsters",
+      "param_int": -1
     }
-  ],
-  "boonValue": -3,
-  "disableInDailyChallenges": true,
-  "tags": [
-    "friendlyeffect"
   ]
 }

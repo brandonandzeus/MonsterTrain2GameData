@@ -1,76 +1,54 @@
 {
-  "id": "Echoes_StartingHephHammer",
-  "guid": "c4277631-ba90-4613-895a-41ae5b4371c6",
-  "name": "Hammer Time",
-  "nameKey": {
-    "key": "MutatorData_nameKey-15b9da5d2f2629cb-30091b0c7f512854d9b73065b7063901-v2",
-    "english": "Hammer Time",
-    "french": "Complètement marteau",
-    "german": "Hammerzeit",
-    "russian": "Молотобоец",
-    "portuguese": "Hora do Martelo",
-    "chinese": "重锤时间",
-    "spanish": "Hora del martillo",
-    "chinese_traditional": "錘子時間",
-    "korean": "해머 타임",
-    "japanese": "ハンマータイム"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-20f55c8c6a623435-30091b0c7f512854d9b73065b7063901-v2",
-    "english": "Start with <b>Heph's Hammer</b> and it has [deployable].",
-    "french": "Commencez avec <b>Marteau de Heph</b>, qui a [deployable].",
-    "german": "Beginnt mit <b>Hephs Hammer</b> und ist [deployable].",
-    "russian": "Начните с <b>Молотом Геф</b> с эффектом «[deployable]».",
-    "portuguese": "Começa com <b>Martelo de Heph</b> e tem [deployable].",
-    "chinese": "开始游戏时获得带有[deployable]的<b>赫芙的铁锤</b>。",
-    "spanish": "Empiezas con un <b>Martillo de Heph</b> que tiene [deployable].",
-    "chinese_traditional": "以<b>赫芙之錘</b>開始且它擁有[deployable]。",
-    "korean": "시작 시 <b>헵의 망치</b>를 보유하며, [deployable]의 속성이 부여됩니다.",
-    "japanese": "<b>ヘフの金槌</b>がある状態で開始し、さらに[deployable]が適用される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfRun",
-      "paramCardUpgradeData": {
-        "id": "AddFrontlineTrait",
-        "guid": "675c4ad0-e024-4ccc-afbd-34e3c5725b33",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-fcef167865709a8a-438d458166178c848a00af9f9a428ece-v2",
-          "english": "Deployable",
-          "french": "Déployable",
-          "german": "Einsetzbar",
-          "russian": "Размещение",
-          "portuguese": "Distribuível",
-          "chinese": "可部署",
-          "spanish": "Desplegable",
-          "chinese_traditional": "可部署",
-          "korean": "배치 유닛",
-          "japanese": "配置可能"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-8af5b1e0177b952f-438d458166178c848a00af9f9a428ece-v2",
-          "english": "This card is drawn during the deployment phase.",
-          "french": "Cette carte est piochée pendant la phase de Déploiement.",
-          "german": "Diese Karte wird während der Einsatzphase gezogen.",
-          "russian": "Эта карта попадает в руку в фазе размещения.",
-          "portuguese": "Esta carta é comprada durante a Fase de Distribuição.",
-          "chinese": "该卡牌会在部署阶段抽取。",
-          "spanish": "Esta carta se roba en la fase de despliegue.",
-          "chinese_traditional": "此卡在部署階段抽取。",
-          "korean": "이 카드는 배치 단계에서 뽑습니다.",
-          "japanese": "このカードは配置フェーズ中にドローされる。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitDrawInDeploymentPhase",
-            "traitIsRemovable": false,
-            "drawInDeploymentPhase": true
+      "id": "Echoes_StartingHephHammer",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 5
           }
-        ]
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-15b9da5d2f2629cb-30091b0c7f512854d9b73065b7063901-v2",
+        "english": "Hammer Time",
+        "french": "Complètement marteau",
+        "german": "Hammerzeit",
+        "russian": "Молотобоец",
+        "portuguese": "Hora do Martelo",
+        "chinese": "重锤时间",
+        "spanish": "Hora del martillo",
+        "chinese_traditional": "錘子時間",
+        "korean": "해머 타임",
+        "japanese": "ハンマータイム"
       },
-      "paramBool": true,
-      "paramCardPool": "OnlyHephHammerPool"
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-20f55c8c6a623435-30091b0c7f512854d9b73065b7063901-v2",
+        "english": "Start with <b>Heph's Hammer</b> and it has [deployable].",
+        "french": "Commencez avec <b>Marteau de Heph</b>, qui a [deployable].",
+        "german": "Beginnt mit <b>Hephs Hammer</b> und ist [deployable].",
+        "russian": "Начните с <b>Молотом Геф</b> с эффектом «[deployable]».",
+        "portuguese": "Começa com <b>Martelo de Heph</b> e tem [deployable].",
+        "chinese": "开始游戏时获得带有[deployable]的<b>赫芙的铁锤</b>。",
+        "spanish": "Empiezas con un <b>Martillo de Heph</b> que tiene [deployable].",
+        "chinese_traditional": "以<b>赫芙之錘</b>開始且它擁有[deployable]。",
+        "korean": "시작 시 <b>헵의 망치</b>를 보유하며, [deployable]의 속성이 부여됩니다.",
+        "japanese": "<b>ヘフの金槌</b>がある状態で開始し、さらに[deployable]が適用される。"
+      },
+      "relic_effects": [
+        "@Echoes_StartingHephHammer.effects0"
+      ]
     }
   ],
-  "boonValue": 5
+  "relic_effects": [
+    {
+      "id": "Echoes_StartingHephHammer.effects0",
+      "name": "RelicEffectAddCardsStartOfRun",
+      "param_upgrade": "AddFrontlineTrait",
+      "param_bool": true,
+      "param_card_pool": "OnlyHephHammerPool"
+    }
+  ]
 }

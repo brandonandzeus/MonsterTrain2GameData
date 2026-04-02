@@ -1,70 +1,88 @@
 {
-  "id": "AllUnitsAllSubtypes",
-  "guid": "3894bbe3-6ad6-42ed-9f63-6b47371b4583",
-  "name": "Hivemind",
-  "nameKey": {
-    "key": "MutatorData_nameKey-696904d52bc92db2-8b3bf30cdfbac90448d14b1f9248ca23-v2",
-    "english": "Hivemind",
-    "french": "Esprit de ruche",
-    "german": "Schwarmbewusstsein",
-    "russian": "Разум роя",
-    "portuguese": "Coletivo",
-    "chinese": "虫巢意识",
-    "spanish": "Mente colectiva",
-    "chinese_traditional": "蜂群思維",
-    "korean": "집단 의식",
-    "japanese": "集合精神"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-02f761e345af0b4f-8b3bf30cdfbac90448d14b1f9248ca23-v2",
-    "english": "Friendly units count as all subtypes.",
-    "french": "Les unités alliées comptent comme tous les sous-types.",
-    "german": "Verbündete Einheiten zählen zu allen Subtypen.",
-    "russian": "Союзники считаются всеми подтипами.",
-    "portuguese": "Unidades amigáveis contam como subtipos.",
-    "chinese": "将友方单位视为一切子类型。",
-    "spanish": "Las unidades aliadas cuentan como todos los subtipos.",
-    "chinese_traditional": "友方單位視為所有子類型。",
-    "korean": "아군 유닛이 모든 하위 유형으로 취급됩니다.",
-    "japanese": "味方ユニットがすべてのサブタイプとして扱われる。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectMonstersAreAllSubtypes",
-      "additionalTooltips": [
+      "id": "AllUnitsAllSubtypes",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "Subtype_TooltipText",
-            "english": "A unit's subtype (such as Imp or Demon) is indicated at the bottom of its card.",
-            "french": "Le sous-type d'une unité (par exemple diable ou diablotin) figure au bas de sa carte.",
-            "german": "Der Subtyp einer Einheit (beispielsweise Kobold oder Dämon) wird unten auf der Karte angezeigt.",
-            "russian": "Подтип бойца (например, бес или демон) указывается в нижней части его карты.",
-            "portuguese": "Um subtipo de unidade (como um Diabinho ou Demônio) está indicado na parte inferior da sua carta.",
-            "chinese": "一个单位的子类型（如小鬼或恶魔）显示在其卡牌的底部。",
-            "spanish": "El subtipo de una unidad (como Diablillo o Demonio) está indicado en la parte inferior de su carta.",
-            "chinese_traditional": "單位的子類型（如小鬼或惡魔）會顯示在其卡牌底部。",
-            "korean": "유닛의 하위 유형(임프나 악마 등)은 카드 하단에 표시됩니다.",
-            "japanese": "ユニットのサブタイプ（インプや悪魔）は、カードの下部に示されます。"
-          },
-          "titleKey": {
-            "key": "Subtype_TooltipTitle",
-            "english": "Subtype",
-            "french": "Sous-type",
-            "german": "Subtyp",
-            "russian": "Подтип",
-            "portuguese": "Subtipo",
-            "chinese": "子类型",
-            "spanish": "Subtipo",
-            "chinese_traditional": "子類型",
-            "korean": "하위 유형",
-            "japanese": "サブタイプ"
+          "mutator": {
+            "boon_value": 6,
+            "tags": [
+              "subtype"
+            ]
           }
         }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-696904d52bc92db2-8b3bf30cdfbac90448d14b1f9248ca23-v2",
+        "english": "Hivemind",
+        "french": "Esprit de ruche",
+        "german": "Schwarmbewusstsein",
+        "russian": "Разум роя",
+        "portuguese": "Coletivo",
+        "chinese": "虫巢意识",
+        "spanish": "Mente colectiva",
+        "chinese_traditional": "蜂群思維",
+        "korean": "집단 의식",
+        "japanese": "集合精神"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-02f761e345af0b4f-8b3bf30cdfbac90448d14b1f9248ca23-v2",
+        "english": "Friendly units count as all subtypes.",
+        "french": "Les unités alliées comptent comme tous les sous-types.",
+        "german": "Verbündete Einheiten zählen zu allen Subtypen.",
+        "russian": "Союзники считаются всеми подтипами.",
+        "portuguese": "Unidades amigáveis contam como subtipos.",
+        "chinese": "将友方单位视为一切子类型。",
+        "spanish": "Las unidades aliadas cuentan como todos los subtipos.",
+        "chinese_traditional": "友方單位視為所有子類型。",
+        "korean": "아군 유닛이 모든 하위 유형으로 취급됩니다.",
+        "japanese": "味方ユニットがすべてのサブタイプとして扱われる。"
+      },
+      "relic_effects": [
+        "@AllUnitsAllSubtypes.effects0"
       ]
     }
   ],
-  "boonValue": 6,
-  "tags": [
-    "subtype"
+  "relic_effects": [
+    {
+      "id": "AllUnitsAllSubtypes.effects0",
+      "name": "RelicEffectMonstersAreAllSubtypes",
+      "additional_tooltips": [
+        "@AllUnitsAllSubtypes.effects0.additionalTooltips0"
+      ]
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "AllUnitsAllSubtypes.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "Subtype_TooltipText",
+        "english": "A unit's subtype (such as Imp or Demon) is indicated at the bottom of its card.",
+        "french": "Le sous-type d'une unité (par exemple diable ou diablotin) figure au bas de sa carte.",
+        "german": "Der Subtyp einer Einheit (beispielsweise Kobold oder Dämon) wird unten auf der Karte angezeigt.",
+        "russian": "Подтип бойца (например, бес или демон) указывается в нижней части его карты.",
+        "portuguese": "Um subtipo de unidade (como um Diabinho ou Demônio) está indicado na parte inferior da sua carta.",
+        "chinese": "一个单位的子类型（如小鬼或恶魔）显示在其卡牌的底部。",
+        "spanish": "El subtipo de una unidad (como Diablillo o Demonio) está indicado en la parte inferior de su carta.",
+        "chinese_traditional": "單位的子類型（如小鬼或惡魔）會顯示在其卡牌底部。",
+        "korean": "유닛의 하위 유형(임프나 악마 등)은 카드 하단에 표시됩니다.",
+        "japanese": "ユニットのサブタイプ（インプや悪魔）は、カードの下部に示されます。"
+      },
+      "titles": {
+        "key": "Subtype_TooltipTitle",
+        "english": "Subtype",
+        "french": "Sous-type",
+        "german": "Subtyp",
+        "russian": "Подтип",
+        "portuguese": "Subtipo",
+        "chinese": "子类型",
+        "spanish": "Subtipo",
+        "chinese_traditional": "子類型",
+        "korean": "하위 유형",
+        "japanese": "サブタイプ"
+      }
+    }
   ]
 }

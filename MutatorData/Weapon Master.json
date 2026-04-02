@@ -1,42 +1,53 @@
 {
-  "id": "Echoes_ArsenalStartingCards",
-  "guid": "abc1ffca-6dc0-4fe7-86f7-844938313b5a",
-  "name": "Weapon Master",
-  "nameKey": {
-    "key": "MutatorData_nameKey-ab978fc7934f39d8-b6017a7a22e9a804f999fcab7c6e1645-v2",
-    "english": "Weapon Master",
-    "french": "Maître d'armes",
-    "german": "Waffenmeister",
-    "russian": "Оружейный мастер",
-    "portuguese": "Mestre das Armas",
-    "chinese": "武器大师",
-    "spanish": "Maestría de armas",
-    "chinese_traditional": "武器大師",
-    "korean": "무기 마스터",
-    "japanese": "武器マスター"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-fe0770bc23ae18d9-b6017a7a22e9a804f999fcab7c6e1645-v2",
-    "english": "Draft [effect0.power] cards added in <b>Lost Arsenal</b>.",
-    "french": "Draftez <nobr>[effect0.power] cartes</nobr> ajoutées dans <b>L'Arsenal perdu</b>.",
-    "german": "Zieht [effect0.power] Karten, die im <b>Verlorenen Arsenal</b> hinzugefügt wurden.",
-    "russian": "Вытяните [effect0.power] шт. карт из обновления <b>«Забытый арсенал»</b>.",
-    "portuguese": "Escolha [effect0.power] cartas adicionadas no <b>Arsenal Perdido</b>.",
-    "chinese": "获得 [effect0.power] 张<b>失落军械库</b>新增的卡牌。",
-    "spanish": "Elige [effect0.power] cartas añadidas en <b>El arsenal perdido</b>.",
-    "chinese_traditional": "在<b>失落的兵工廠</b>中加入[effect0.power]張卡牌進行構築。",
-    "korean": "<b>잃어버린 무기고</b>에 추가된 카드 [effect0.power]장을 선택합니다.",
-    "japanese": "<b>失われた武器庫</b>で追加されたカードを[effect0.power]枚ドラフトする。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
-      "paramGrantableReward": "CardDraftArsenalReward2x"
-    },
-    {
-      "relicEffectClassName": "RelicEffectGrantRewardStartOfRun",
-      "paramGrantableReward": "CardDraftArsenalReward2x"
+      "id": "Echoes_ArsenalStartingCards",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 3
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-ab978fc7934f39d8-b6017a7a22e9a804f999fcab7c6e1645-v2",
+        "english": "Weapon Master",
+        "french": "Maître d'armes",
+        "german": "Waffenmeister",
+        "russian": "Оружейный мастер",
+        "portuguese": "Mestre das Armas",
+        "chinese": "武器大师",
+        "spanish": "Maestría de armas",
+        "chinese_traditional": "武器大師",
+        "korean": "무기 마스터",
+        "japanese": "武器マスター"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-fe0770bc23ae18d9-b6017a7a22e9a804f999fcab7c6e1645-v2",
+        "english": "Draft [effect0.power] cards added in <b>Lost Arsenal</b>.",
+        "french": "Draftez <nobr>[effect0.power] cartes</nobr> ajoutées dans <b>L'Arsenal perdu</b>.",
+        "german": "Zieht [effect0.power] Karten, die im <b>Verlorenen Arsenal</b> hinzugefügt wurden.",
+        "russian": "Вытяните [effect0.power] шт. карт из обновления <b>«Забытый арсенал»</b>.",
+        "portuguese": "Escolha [effect0.power] cartas adicionadas no <b>Arsenal Perdido</b>.",
+        "chinese": "获得 [effect0.power] 张<b>失落军械库</b>新增的卡牌。",
+        "spanish": "Elige [effect0.power] cartas añadidas en <b>El arsenal perdido</b>.",
+        "chinese_traditional": "在<b>失落的兵工廠</b>中加入[effect0.power]張卡牌進行構築。",
+        "korean": "<b>잃어버린 무기고</b>에 추가된 카드 [effect0.power]장을 선택합니다.",
+        "japanese": "<b>失われた武器庫</b>で追加されたカードを[effect0.power]枚ドラフトする。"
+      },
+      "relic_effects": [
+        "@Echoes_ArsenalStartingCards.effects0",
+        "@Echoes_ArsenalStartingCards.effects0"
+      ]
     }
   ],
-  "boonValue": 3
+  "relic_effects": [
+    {
+      "id": "Echoes_ArsenalStartingCards.effects0",
+      "name": "RelicEffectGrantRewardStartOfRun",
+      "param_grantable_reward": "CardDraftArsenalReward2x"
+    }
+  ]
 }

@@ -1,48 +1,66 @@
 {
-  "id": "EmberAtStartOfTurnOnly",
-  "guid": "0421d885-09a3-48ec-ad5e-762127ac336e",
-  "name": "Frontloaded",
-  "nameKey": {
-    "key": "MutatorData_nameKey-5cd1d032864709dc-9f21c5c89807a7540950f250b3203153-v2",
-    "english": "Frontloaded",
-    "french": "Préalimentation",
-    "german": "Vorgeladen",
-    "russian": "Предзагрузка",
-    "portuguese": "Tudo de Uma Vez",
-    "chinese": "破釜沉舟",
-    "spanish": "Anticipación",
-    "chinese_traditional": "前側裝載",
-    "korean": "높은 초기비용",
-    "japanese": "先手必勝"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-c5e8743039341906-9f21c5c89807a7540950f250b3203153-v2",
-    "english": "[effect2.power][ember] per turn. Gain [effect0.power][ember] at the beginning of each battle. Start with <b>The Unbroken Horn</b>.",
-    "french": "[effect2.power][ember] par tour. Octroie [effect0.power][ember] au début de chaque combat. Commencez avec <b>La corne unique</b>.",
-    "german": "[effect2.power][ember] pro Zug. Erhalte zu Beginn jedes Kampfes [effect0.power][ember]. Beginne mit <b>Dem unversehrten Horn</b>.",
-    "russian": "[effect2.power][ember] в ход. Дает [effect0.power][ember] в начале каждого боя. Начните с <b>Уцелевшим рогом</b>.",
-    "portuguese": "[effect2.power][ember] por turno. Ganhe [effect0.power][ember] no início de cada batalha. Comece com <b>O Chifre Intacto</b>.",
-    "chinese": "每回合 [effect2.power][ember]。每场战斗开始时，获得 [effect0.power][ember]。战斗开始时获得<b>不折之角</b>。",
-    "spanish": "[effect2.power][ember] por turno. Obtienes [effect0.power][ember] al principio de cada batalla. Empiezas con <b>Cuerno inquebrantable</b>.",
-    "chinese_traditional": "每回合[effect2.power][ember]。在每場戰鬥開始時獲得[effect0.power][ember]。從<b>不折之角</b>開始。",
-    "korean": "턴당 [effect2.power][ember]. 매 전투 시작 시 [effect0.power][ember]을 획득합니다. <b>부러지지 않는 뿔</b>을 가지고 시작합니다.",
-    "japanese": "毎ターン[effect2.power][ember]。毎バトル開始時に[effect0.power][ember]を得る。<b>不屈の角</b>がある状態で開始する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyEnergyStartOfCombat",
-      "paramInt": 20
-    },
-    {
-      "relicEffectClassName": "RelicEffectConserveEnergyStartOfTurn"
-    },
-    {
-      "relicEffectClassName": "RelicEffectAddRelicStartOfRun",
-      "paramRelic": "ConserveEmber"
+      "id": "EmberAtStartOfTurnOnly",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": 4,
+            "tags": [
+              "ember"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-5cd1d032864709dc-9f21c5c89807a7540950f250b3203153-v2",
+        "english": "Frontloaded",
+        "french": "Préalimentation",
+        "german": "Vorgeladen",
+        "russian": "Предзагрузка",
+        "portuguese": "Tudo de Uma Vez",
+        "chinese": "破釜沉舟",
+        "spanish": "Anticipación",
+        "chinese_traditional": "前側裝載",
+        "korean": "높은 초기비용",
+        "japanese": "先手必勝"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-c5e8743039341906-9f21c5c89807a7540950f250b3203153-v2",
+        "english": "[effect2.power][ember] per turn. Gain [effect0.power][ember] at the beginning of each battle. Start with <b>The Unbroken Horn</b>.",
+        "french": "[effect2.power][ember] par tour. Octroie [effect0.power][ember] au début de chaque combat. Commencez avec <b>La corne unique</b>.",
+        "german": "[effect2.power][ember] pro Zug. Erhalte zu Beginn jedes Kampfes [effect0.power][ember]. Beginne mit <b>Dem unversehrten Horn</b>.",
+        "russian": "[effect2.power][ember] в ход. Дает [effect0.power][ember] в начале каждого боя. Начните с <b>Уцелевшим рогом</b>.",
+        "portuguese": "[effect2.power][ember] por turno. Ganhe [effect0.power][ember] no início de cada batalha. Comece com <b>O Chifre Intacto</b>.",
+        "chinese": "每回合 [effect2.power][ember]。每场战斗开始时，获得 [effect0.power][ember]。战斗开始时获得<b>不折之角</b>。",
+        "spanish": "[effect2.power][ember] por turno. Obtienes [effect0.power][ember] al principio de cada batalla. Empiezas con <b>Cuerno inquebrantable</b>.",
+        "chinese_traditional": "每回合[effect2.power][ember]。在每場戰鬥開始時獲得[effect0.power][ember]。從<b>不折之角</b>開始。",
+        "korean": "턴당 [effect2.power][ember]. 매 전투 시작 시 [effect0.power][ember]을 획득합니다. <b>부러지지 않는 뿔</b>을 가지고 시작합니다.",
+        "japanese": "毎ターン[effect2.power][ember]。毎バトル開始時に[effect0.power][ember]を得る。<b>不屈の角</b>がある状態で開始する。"
+      },
+      "relic_effects": [
+        "@EmberAtStartOfTurnOnly.effects0",
+        "@EmberAtStartOfTurnOnly.effects1",
+        "@EmberAtStartOfTurnOnly.effects2"
+      ]
     }
   ],
-  "boonValue": 4,
-  "tags": [
-    "ember"
+  "relic_effects": [
+    {
+      "id": "EmberAtStartOfTurnOnly.effects0",
+      "name": "RelicEffectModifyEnergyStartOfCombat",
+      "param_int": 20
+    },
+    {
+      "id": "EmberAtStartOfTurnOnly.effects1",
+      "name": "RelicEffectConserveEnergyStartOfTurn"
+    },
+    {
+      "id": "EmberAtStartOfTurnOnly.effects2",
+      "name": "RelicEffectAddRelicStartOfRun",
+      "param_relic": "ConserveEmber"
+    }
   ]
 }

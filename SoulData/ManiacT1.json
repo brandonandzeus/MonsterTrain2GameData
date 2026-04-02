@@ -1,60 +1,77 @@
 {
-  "id": "ManiacT1",
-  "guid": "0237700e-a3ad-48bd-a26a-43bdfcb76f35",
-  "name": "ManiacT1",
-  "nameKey": {
-    "key": "SoulData_nameKey-d91a112c7b9c30ac-98d9469bd3ff3a943a0ef9367ed40805-v2",
-    "english": "Maniac",
-    "french": "Maniaque",
-    "german": "Verrückter",
-    "russian": "Маньяк",
-    "portuguese": "Maníaco",
-    "chinese": "狂人",
-    "spanish": "Demente",
-    "chinese_traditional": "狂熱者",
-    "korean": "매니악",
-    "japanese": "マニアック"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-c63d471295756999-98d9469bd3ff3a943a0ef9367ed40805-v2",
-    "english": "[resolve]: Advance and gain [pyregel] [effect1.power]. Friendly units gain [burst] [effect0.power].",
-    "french": "<nobr>[resolve] :</nobr> avance et octroie <nobr>[pyregel] [effect1.power]</nobr>. Les unités alliées gagnent <nobr>[burst] [effect0.power]</nobr>.",
-    "german": "[resolve]: Rücke vor und erhalte [pyregel] [effect1.power]. Verbündete Einheiten erhalten [burst] [effect0.power].",
-    "russian": "[resolve]: наступление и [pyregel] х[effect1.power]. Союзникам дается [effect0.power] х[burst].",
-    "portuguese": "[resolve]: avança e recebe [pyregel] [effect1.power]. Unidades aliadas recebem [burst] [effect0.power].",
-    "chinese": "[resolve]：前进并获得 [pyregel] [effect1.power]。所有友方单位获得 [burst] [effect0.power]。",
-    "spanish": "[resolve]: <b>Avanza</b> y añade [pyregel] [effect1.power]. Las unidades aliadas añaden [burst] [effect0.power].",
-    "chinese_traditional": "[resolve]：前進並獲得[pyregel][effect1.power]。友方單位獲得[burst][effect0.power]。",
-    "korean": "[resolve]: 전진하며 [pyregel] [effect1.power] 효과를 획득합니다. 아군 유닛들이 [burst] [effect0.power] 효과를 획득합니다.",
-    "japanese": "[resolve]：前進し、[pyregel] [effect1.power]を得る。味方ユニットが[burst] [effect0.power]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster"
-    },
-    {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 4
+      "id": "ManiacT1",
+      "name": "ManiacT1",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-c9fd96fd74daeb29-98d9469bd3ff3a943a0ef9367ed40805-v2",
+                "english": "Defeat Lifemother while playing Banished to unlock.",
+                "french": "Battez Mère Nature en jouant les Bannis pour déverrouiller.",
+                "german": "Besiege zum Freischalten die Lebensmutter, während du mit den Verbannten spielst.",
+                "russian": "Чтобы разблокировать, победите Мать-природу, играя за Изгнанников.",
+                "portuguese": "Derrote a Genetriz jogando com os Expurgados para desbloquear.",
+                "chinese": "用流放者击败生命之母以解锁。",
+                "spanish": "Derrota a la Madre Vida con los Desterrados para desbloquear.",
+                "chinese_traditional": "使用流亡者時擊敗生命之母以解鎖。",
+                "korean": "추방자 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
+                "japanese": "脱天使でのプレイでライフマザーを倒してアンロック。"
+              },
+              "unlock_condition": "soul_kill_lifemother_using_banished",
+              "param_int": 1
+            },
+            "tier_level": 1,
+            "next_tier": "ManiacT2"
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-d91a112c7b9c30ac-98d9469bd3ff3a943a0ef9367ed40805-v2",
+        "english": "Maniac",
+        "french": "Maniaque",
+        "german": "Verrückter",
+        "russian": "Маньяк",
+        "portuguese": "Maníaco",
+        "chinese": "狂人",
+        "spanish": "Demente",
+        "chinese_traditional": "狂熱者",
+        "korean": "매니악",
+        "japanese": "マニアック"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-c63d471295756999-98d9469bd3ff3a943a0ef9367ed40805-v2",
+        "english": "[resolve]: Advance and gain [pyregel] [effect1.power]. Friendly units gain [burst] [effect0.power].",
+        "french": "<nobr>[resolve] :</nobr> avance et octroie <nobr>[pyregel] [effect1.power]</nobr>. Les unités alliées gagnent <nobr>[burst] [effect0.power]</nobr>.",
+        "german": "[resolve]: Rücke vor und erhalte [pyregel] [effect1.power]. Verbündete Einheiten erhalten [burst] [effect0.power].",
+        "russian": "[resolve]: наступление и [pyregel] х[effect1.power]. Союзникам дается [effect0.power] х[burst].",
+        "portuguese": "[resolve]: avança e recebe [pyregel] [effect1.power]. Unidades aliadas recebem [burst] [effect0.power].",
+        "chinese": "[resolve]：前进并获得 [pyregel] [effect1.power]。所有友方单位获得 [burst] [effect0.power]。",
+        "spanish": "[resolve]: <b>Avanza</b> y añade [pyregel] [effect1.power]. Las unidades aliadas añaden [burst] [effect0.power].",
+        "chinese_traditional": "[resolve]：前進並獲得[pyregel][effect1.power]。友方單位獲得[burst][effect0.power]。",
+        "korean": "[resolve]: 전진하며 [pyregel] [effect1.power] 효과를 획득합니다. 아군 유닛들이 [burst] [effect0.power] 효과를 획득합니다.",
+        "japanese": "[resolve]：前進し、[pyregel] [effect1.power]を得る。味方ユニットが[burst] [effect0.power]を得る。"
+      },
+      "relic_effects": [
+        "@ManiacT1.effects0",
+        "@ManiacT1.effects1"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-c9fd96fd74daeb29-98d9469bd3ff3a943a0ef9367ed40805-v2",
-      "english": "Defeat Lifemother while playing Banished to unlock.",
-      "french": "Battez Mère Nature en jouant les Bannis pour déverrouiller.",
-      "german": "Besiege zum Freischalten die Lebensmutter, während du mit den Verbannten spielst.",
-      "russian": "Чтобы разблокировать, победите Мать-природу, играя за Изгнанников.",
-      "portuguese": "Derrote a Genetriz jogando com os Expurgados para desbloquear.",
-      "chinese": "用流放者击败生命之母以解锁。",
-      "spanish": "Derrota a la Madre Vida con los Desterrados para desbloquear.",
-      "chinese_traditional": "使用流亡者時擊敗生命之母以解鎖。",
-      "korean": "추방자 플레이 중 생명의 어머니를 처치하면 잠금 해제됩니다.",
-      "japanese": "脱天使でのプレイでライフマザーを倒してアンロック。"
+  "relic_effects": [
+    {
+      "id": "ManiacT1.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster"
     },
-    "unlockCondition": "soul_kill_lifemother_using_banished",
-    "paramInt": 1
-  },
-  "tierLevel": 1,
-  "nextTier": "ManiacT2"
+    {
+      "id": "ManiacT1.effects1",
+      "name": "RelicEffectNull",
+      "param_int": 4
+    }
+  ]
 }

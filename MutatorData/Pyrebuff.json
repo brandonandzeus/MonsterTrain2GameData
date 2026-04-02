@@ -1,16 +1,32 @@
 {
-  "id": "SoulSavior_PyreBuff_Mutator",
-  "guid": "5e24f193-9de9-4940-9a4c-0ff18d5d0bdf",
-  "name": "Pyrebuff",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectIncreasePyreAttack"
-    },
-    {
-      "relicEffectClassName": "RelicEffectIncreasePyreHealth"
+      "id": "SoulSavior_PyreBuff_Mutator",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "relic_effects": [
+        "@SoulSavior_PyreBuff_Mutator.effects0",
+        "@SoulSavior_PyreBuff_Mutator.effects1"
+      ],
+      "is_hidden": true
     }
   ],
-  "isHidden": true,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  "relic_effects": [
+    {
+      "id": "SoulSavior_PyreBuff_Mutator.effects0",
+      "name": "RelicEffectIncreasePyreAttack"
+    },
+    {
+      "id": "SoulSavior_PyreBuff_Mutator.effects1",
+      "name": "RelicEffectIncreasePyreHealth"
+    }
+  ]
 }

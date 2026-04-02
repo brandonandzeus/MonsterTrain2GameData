@@ -1,103 +1,57 @@
 {
-  "id": "SoulSavior_UnitUpgradeQuick",
-  "guid": "130d25cc-2159-4496-ba20-d2ec97336b45",
-  "name": "Speedslab",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-014cec6b4de03af1-1f17a103e09d63f45a6f48340657cd32-v2",
-    "english": "Speedslab",
-    "french": "Gemme de célérité",
-    "german": "Platte des Tempos",
-    "russian": "Пласт скорости",
-    "portuguese": "Placa da Velocidade",
-    "chinese": "速度石板",
-    "spanish": "Losa de velocidad",
-    "chinese_traditional": "速石板",
-    "korean": "속도의 서판",
-    "japanese": "素早さの原石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-84a022eca4bbdbe1-1f17a103e09d63f45a6f48340657cd32-v2",
-    "english": "Upgrade a unit with [quick] and +[effect0.upgrade.bonusdamage][attack].",
-    "french": "Améliore une unité avec [quick] et +[effect0.upgrade.bonusdamage][attack].",
-    "german": "Verbessere eine Einheit mit [quick] und +[effect0.upgrade.bonusdamage][attack].",
-    "russian": "Усиление бойца: [quick] и +[effect0.upgrade.bonusdamage][attack].",
-    "portuguese": "Melhora uma unidade com [quick] e +[effect0.upgrade.bonusdamage][attack].",
-    "chinese": "升级一个单位，使其获得 [quick] 和 +[effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Mejora una unidad con [quick] y +[effect0.upgrade.bonusdamage][attack].",
-    "chinese_traditional": "以[quick]和+[effect0.upgrade.bonusdamage][attack]升級一個單位。",
-    "korean": "유닛을 업그레이드함과 동시에 [quick] 및 +[effect0.upgrade.bonusdamage][attack]을 적용합니다.",
-    "japanese": "ユニットアップグレード：[quick]と+[effect0.upgrade.bonusdamage][attack]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "SoulSavior_UnitUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "SoulSavior_AddQuick",
-        "guid": "35f63b8d-f64b-413d-a15d-1c98a934dde4",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-5ba03446fdf98b63-a0adba8e9a009fb47b10efab95c6876f-v2",
-          "english": "Speedslab",
-          "french": "Gemme de célérité",
-          "german": "Platte des Tempos",
-          "russian": "Пласт скорости",
-          "portuguese": "Placa da Velocidade",
-          "chinese": "速度石板",
-          "spanish": "Losa de velocidad",
-          "chinese_traditional": "速石板",
-          "korean": "속도의 서판",
-          "japanese": "素早さの原石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-5338b0093491d1b0-a0adba8e9a009fb47b10efab95c6876f-v2",
-          "english": "Gain [quick] and +[bonusdamage][attack].",
-          "french": "Octroie [quick] et +[bonusdamage][attack].",
-          "german": "Erhalte [quick] und +[bonusdamage][attack].",
-          "russian": "Даются [quick] и +[bonusdamage][attack].",
-          "portuguese": "Concede [quick] e +[bonusdamage][attack].",
-          "chinese": "获得 [quick] 和 +[bonusdamage][attack]。",
-          "spanish": "Añade [quick] y +[bonusdamage][attack].",
-          "chinese_traditional": "獲得[quick]和+[bonusdamage][attack]。",
-          "korean": "[quick] 및 +[bonusdamage][attack]을 획득합니다.",
-          "japanese": "[quick]と+[bonusdamage][attack]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "ambush",
-            "count": 1
+      "id": "SoulSavior_UnitUpgradeQuick",
+      "pools": [
+        "SoulSavior_UnitUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyAttackingUnits",
-            "cardType": "monster",
-            "excludeNonAttackingMonsters": true
-          },
-          {
-            "id": "ExcludeQuick",
-            "excludedStatusEffects": [
-              {
-                "statusId": "ambush",
-                "count": 1
-              }
-            ],
-            "excludedStatusEffectsOperator": "and"
-          },
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ],
-        "bonusDamage": 30
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-014cec6b4de03af1-1f17a103e09d63f45a6f48340657cd32-v2",
+        "english": "Speedslab",
+        "french": "Gemme de célérité",
+        "german": "Platte des Tempos",
+        "russian": "Пласт скорости",
+        "portuguese": "Placa da Velocidade",
+        "chinese": "速度石板",
+        "spanish": "Losa de velocidad",
+        "chinese_traditional": "速石板",
+        "korean": "속도의 서판",
+        "japanese": "素早さの原石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-84a022eca4bbdbe1-1f17a103e09d63f45a6f48340657cd32-v2",
+        "english": "Upgrade a unit with [quick] and +[effect0.upgrade.bonusdamage][attack].",
+        "french": "Améliore une unité avec [quick] et +[effect0.upgrade.bonusdamage][attack].",
+        "german": "Verbessere eine Einheit mit [quick] und +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Усиление бойца: [quick] и +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Melhora uma unidade com [quick] e +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得 [quick] 和 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Mejora una unidad con [quick] y +[effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "以[quick]和+[effect0.upgrade.bonusdamage][attack]升級一個單位。",
+        "korean": "유닛을 업그레이드함과 동시에 [quick] 및 +[effect0.upgrade.bonusdamage][attack]을 적용합니다.",
+        "japanese": "ユニットアップグレード：[quick]と+[effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "relic_effects": [
+        "@SoulSavior_UnitUpgradeQuick.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SoulSavior_UnitUpgradeQuick.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "SoulSavior_AddQuick"
+    }
+  ]
 }

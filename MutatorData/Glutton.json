@@ -1,39 +1,53 @@
 {
-  "id": "SoulSavior_Region2Complete_2",
-  "guid": "5d9aa853-182a-4cc3-96eb-8189ce7c7d74",
-  "name": "Glutton",
-  "nameKey": {
-    "key": "MutatorData_nameKey-5b8e5f107117949c-137da64db3dbcbc4aa0957e4b67c33dc-v2",
-    "english": "Glutton",
-    "french": "Glouton",
-    "german": "Vielfraß",
-    "russian": "Обжора",
-    "portuguese": "Devorador",
-    "chinese": "贪食者",
-    "spanish": "Glotonería",
-    "chinese_traditional": "饕餮",
-    "korean": "대식가",
-    "japanese": "健啖家"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-edf9475e5268934d-137da64db3dbcbc4aa0957e4b67c33dc-v2",
-    "english": "A random floor loses [effect0.power][capacity].",
-    "french": "Un niveau aléatoire perd [effect0.power][capacity].",
-    "german": "Einer zufälligen Ebene wird [effect0.power][capacity] entzogen.",
-    "russian": "-[effect0.power][capacity] на случайном этаже.",
-    "portuguese": "Um andar aleatório perde [effect0.power][capacity].",
-    "chinese": "随机一层失去 [effect0.power][capacity]。",
-    "spanish": "Un piso aleatorio pierde [effect0.power][capacity].",
-    "chinese_traditional": "一個隨機樓層失去[effect0.power][capacity]。",
-    "korean": "무작위 층이 [effect0.power][capacity]을 잃습니다.",
-    "japanese": "ランダムなフロアが[effect0.power][capacity]を失う。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyRandomRoomCapacity",
-      "paramInt": -3
+      "id": "SoulSavior_Region2Complete_2",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-5b8e5f107117949c-137da64db3dbcbc4aa0957e4b67c33dc-v2",
+        "english": "Glutton",
+        "french": "Glouton",
+        "german": "Vielfraß",
+        "russian": "Обжора",
+        "portuguese": "Devorador",
+        "chinese": "贪食者",
+        "spanish": "Glotonería",
+        "chinese_traditional": "饕餮",
+        "korean": "대식가",
+        "japanese": "健啖家"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-edf9475e5268934d-137da64db3dbcbc4aa0957e4b67c33dc-v2",
+        "english": "A random floor loses [effect0.power][capacity].",
+        "french": "Un niveau aléatoire perd [effect0.power][capacity].",
+        "german": "Einer zufälligen Ebene wird [effect0.power][capacity] entzogen.",
+        "russian": "-[effect0.power][capacity] на случайном этаже.",
+        "portuguese": "Um andar aleatório perde [effect0.power][capacity].",
+        "chinese": "随机一层失去 [effect0.power][capacity]。",
+        "spanish": "Un piso aleatorio pierde [effect0.power][capacity].",
+        "chinese_traditional": "一個隨機樓層失去[effect0.power][capacity]。",
+        "korean": "무작위 층이 [effect0.power][capacity]을 잃습니다.",
+        "japanese": "ランダムなフロアが[effect0.power][capacity]を失う。"
+      },
+      "relic_effects": [
+        "@SoulSavior_Region2Complete_2.effects0"
+      ]
     }
   ],
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  "relic_effects": [
+    {
+      "id": "SoulSavior_Region2Complete_2.effects0",
+      "name": "RelicEffectModifyRandomRoomCapacity",
+      "param_int": -3
+    }
+  ]
 }

@@ -1,46 +1,56 @@
 {
-  "id": "IncreaseUnitSizePerUpgrade",
-  "guid": "c8a1777f-896e-4e5b-affb-5f2607653fa6",
-  "name": "Gluttonous",
-  "nameKey": {
-    "key": "MutatorData_nameKey-3034e3da94ca839a-4a5d135e465259188a9b44899801720d-v2",
-    "english": "Gluttonous",
-    "french": "Glouton",
-    "german": "Gierig",
-    "russian": "Набор веса",
-    "portuguese": "Gula",
-    "chinese": "变强了，也变胖了",
-    "spanish": "Glotón",
-    "chinese_traditional": "貪吃",
-    "korean": "탐식",
-    "japanese": "お腹が出てきた"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-499761e03a461002-4a5d135e465259188a9b44899801720d-v2",
-    "english": "Each upgrade you purchase for a unit increases its [size] by [effect0.upgrade.bonussize].",
-    "french": "Chaque amélioration que vous achetez pour une unité augmente ses [size] de [effect0.upgrade.bonussize].",
-    "german": "Jede gekaufte Verbesserung für eine Einheit erhöht ihre [size] um [effect0.upgrade.bonussize].",
-    "russian": "Каждое улучшение карты бойца увеличивает его [size] на [effect0.upgrade.bonussize].",
-    "portuguese": "Cada melhoria que você comprar para uma unidade aumentará [size] em [effect0.upgrade.bonussize].",
-    "chinese": "你每为一个单位购买一项升级，都会使其 [size] 增加 [effect0.upgrade.bonussize]。",
-    "spanish": "Cada mejora que compres para una unidad aumenta su [size] en [effect0.upgrade.bonussize].",
-    "chinese_traditional": "每次為單位購買的升級，使其[size]增加[effect0.upgrade.bonussize]。",
-    "korean": "유닛 업그레이드를 구매할 때마다 해당 유닛의 [size]이 [effect0.upgrade.bonussize]씩 증가합니다.",
-    "japanese": "ユニットに購入したアップグレード1つにつき、[size]が[effect0.upgrade.bonussize]増加する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectUpgradeCardOnPurchasingUpgrade",
-      "paramCardUpgradeData": {
-        "id": "Gluttonous",
-        "guid": "75949d55-d2b6-4247-9012-6ffdd7f19df2",
-        "bonusSize": 1
-      }
+      "id": "IncreaseUnitSizePerUpgrade",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -5,
+            "disable_in_daily_challenges": true,
+            "tags": [
+              "unitupgrades"
+            ]
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-3034e3da94ca839a-4a5d135e465259188a9b44899801720d-v2",
+        "english": "Gluttonous",
+        "french": "Glouton",
+        "german": "Gierig",
+        "russian": "Набор веса",
+        "portuguese": "Gula",
+        "chinese": "变强了，也变胖了",
+        "spanish": "Glotón",
+        "chinese_traditional": "貪吃",
+        "korean": "탐식",
+        "japanese": "お腹が出てきた"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-499761e03a461002-4a5d135e465259188a9b44899801720d-v2",
+        "english": "Each upgrade you purchase for a unit increases its [size] by [effect0.upgrade.bonussize].",
+        "french": "Chaque amélioration que vous achetez pour une unité augmente ses [size] de [effect0.upgrade.bonussize].",
+        "german": "Jede gekaufte Verbesserung für eine Einheit erhöht ihre [size] um [effect0.upgrade.bonussize].",
+        "russian": "Каждое улучшение карты бойца увеличивает его [size] на [effect0.upgrade.bonussize].",
+        "portuguese": "Cada melhoria que você comprar para uma unidade aumentará [size] em [effect0.upgrade.bonussize].",
+        "chinese": "你每为一个单位购买一项升级，都会使其 [size] 增加 [effect0.upgrade.bonussize]。",
+        "spanish": "Cada mejora que compres para una unidad aumenta su [size] en [effect0.upgrade.bonussize].",
+        "chinese_traditional": "每次為單位購買的升級，使其[size]增加[effect0.upgrade.bonussize]。",
+        "korean": "유닛 업그레이드를 구매할 때마다 해당 유닛의 [size]이 [effect0.upgrade.bonussize]씩 증가합니다.",
+        "japanese": "ユニットに購入したアップグレード1つにつき、[size]が[effect0.upgrade.bonussize]増加する。"
+      },
+      "relic_effects": [
+        "@IncreaseUnitSizePerUpgrade.effects0"
+      ]
     }
   ],
-  "boonValue": -5,
-  "disableInDailyChallenges": true,
-  "tags": [
-    "unitupgrades"
+  "relic_effects": [
+    {
+      "id": "IncreaseUnitSizePerUpgrade.effects0",
+      "name": "RelicEffectUpgradeCardOnPurchasingUpgrade",
+      "param_upgrade": "Gluttonous"
+    }
   ]
 }

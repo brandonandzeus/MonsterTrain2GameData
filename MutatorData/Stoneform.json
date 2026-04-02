@@ -1,47 +1,61 @@
 {
-  "id": "Echoes_EnemyUnitsGetArmor",
-  "guid": "106fa24d-b254-40d1-a8f7-69e828d192b4",
-  "name": "Stoneform",
-  "nameKey": {
-    "key": "MutatorData_nameKey-7b9ea26cf8d01ae7-93b9a55d954724c4e8d3f246d1acbd95-v2",
-    "english": "Stoneform",
-    "french": "Cœur de pierre",
-    "german": "Steinformation",
-    "russian": "Каменная копия",
-    "portuguese": "Defesa de Pedra",
-    "chinese": "石祖虫",
-    "spanish": "Forma pétrea",
-    "chinese_traditional": "石化形態",
-    "korean": "석화 형상",
-    "japanese": "石の型"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-fff57c7841c5aacb-93b9a55d954724c4e8d3f246d1acbd95-v2",
-    "english": "Enemy units enter with [armor] equal to 50% of their [health].",
-    "french": "Les unités ennemies entrent avec une [armor] valant <nobr>50 %</nobr> de leurs [health].",
-    "german": "Gegnerische Einheiten kommen mit [armor] in Höhe von 50 % ihrer [health] ins Spiel.",
-    "russian": "Когда враг входит, его [armor] равна 50% от его [health].",
-    "portuguese": "As unidades inimigas entram com [armor] igual a 50% da [health] delas.",
-    "chinese": "敌方单位进入战斗时获得相当于自身[health] 50% 的[armor]。",
-    "spanish": "Las unidades enemigas entran con [armor] igual al 50 % de su [health].",
-    "chinese_traditional": "敵方單位進場時獲得等同於其[health]50%的[armor]。",
-    "korean": "적 유닛들이 그들의 [health]의 50%에 해당하는 [armor]을 갖춘 채로 등장합니다.",
-    "japanese": "敵ユニットが[health]の50%と同じ値の[armor]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "Echoes_EnemyUnitsGetArmor",
+      "type": "mutator",
+      "extensions": [
         {
-          "statusId": "armor",
+          "mutator": {
+            "boon_value": -7,
+            "disable_in_daily_challenges": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-7b9ea26cf8d01ae7-93b9a55d954724c4e8d3f246d1acbd95-v2",
+        "english": "Stoneform",
+        "french": "Cœur de pierre",
+        "german": "Steinformation",
+        "russian": "Каменная копия",
+        "portuguese": "Defesa de Pedra",
+        "chinese": "石祖虫",
+        "spanish": "Forma pétrea",
+        "chinese_traditional": "石化形態",
+        "korean": "석화 형상",
+        "japanese": "石の型"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-fff57c7841c5aacb-93b9a55d954724c4e8d3f246d1acbd95-v2",
+        "english": "Enemy units enter with [armor] equal to 50% of their [health].",
+        "french": "Les unités ennemies entrent avec une [armor] valant <nobr>50 %</nobr> de leurs [health].",
+        "german": "Gegnerische Einheiten kommen mit [armor] in Höhe von 50 % ihrer [health] ins Spiel.",
+        "russian": "Когда враг входит, его [armor] равна 50% от его [health].",
+        "portuguese": "As unidades inimigas entram com [armor] igual a 50% da [health] delas.",
+        "chinese": "敌方单位进入战斗时获得相当于自身[health] 50% 的[armor]。",
+        "spanish": "Las unidades enemigas entran con [armor] igual al 50 % de su [health].",
+        "chinese_traditional": "敵方單位進場時獲得等同於其[health]50%的[armor]。",
+        "korean": "적 유닛들이 그들의 [health]의 50%에 해당하는 [armor]을 갖춘 채로 등장합니다.",
+        "japanese": "敵ユニットが[health]の50%と同じ値の[armor]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@Echoes_EnemyUnitsGetArmor.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Echoes_EnemyUnitsGetArmor.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "armor",
           "count": 0
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramInt": -1,
-      "paramInt2": 50
+      "param_source_team": "heroes",
+      "param_int": -1,
+      "param_int_2": 50
     }
-  ],
-  "boonValue": -7,
-  "disableInDailyChallenges": true
+  ]
 }

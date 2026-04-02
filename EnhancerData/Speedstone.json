@@ -1,105 +1,59 @@
 {
-  "id": "UnitUpgradeQuick",
-  "guid": "74d5a105-cc4a-4de4-8189-d346e2a6de53",
-  "name": "Speedstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-34c793b64132d4cb-c99c5aabeb1493b4aab44c660e358746-v2",
-    "english": "Speedstone",
-    "french": "Pierre de célérité",
-    "german": "Flinkstein",
-    "russian": "Камень скорости",
-    "portuguese": "Pedra de Velocidade",
-    "chinese": "迅捷石",
-    "spanish": "Piedra veloz",
-    "chinese_traditional": "速石",
-    "korean": "속도석",
-    "japanese": "素早さの石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-5090cb36e2c4b395-c99c5aabeb1493b4aab44c660e358746-v2",
-    "english": "Upgrade a unit with [quick] and +[effect0.upgrade.bonusdamage][attack].",
-    "french": "Améliore une unité avec [quick] et +[effect0.upgrade.bonusdamage][attack].",
-    "german": "Verbessere eine Einheit mit [quick] und +[effect0.upgrade.bonusdamage][attack].",
-    "russian": "Усиление бойца: [quick] и +[effect0.upgrade.bonusdamage][attack].",
-    "portuguese": "Melhora uma unidade com [quick] e +[effect0.upgrade.bonusdamage][attack].",
-    "chinese": "升级一个单位，使其获得 [quick] 和 +[effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Mejora una unidad con [quick] y +[effect0.upgrade.bonusdamage][attack].",
-    "chinese_traditional": "以[quick]和+[effect0.upgrade.bonusdamage][attack]升級一個單位。",
-    "korean": "유닛을 업그레이드하여 [quick] 및 +[effect0.upgrade.bonusdamage][attack]을 적용합니다.",
-    "japanese": "ユニットアップグレード：[quick]と+[effect0.upgrade.bonusdamage][attack]を得る。"
-  },
-  "rarity": "rare",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolRare"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "AddQuick",
-        "guid": "0246348a-ac42-43fb-879f-13aa3348adb3",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-60bc5d898a54f3d4-30c29fbb387c39e4b9f799d3a288749d-v2",
-          "english": "Speedstone",
-          "french": "Pierre de célérité",
-          "german": "Flinkstein",
-          "russian": "Камень скорости",
-          "portuguese": "Pedra de Velocidade",
-          "chinese": "迅捷石",
-          "spanish": "Piedra veloz",
-          "chinese_traditional": "速石",
-          "korean": "속도석",
-          "japanese": "素早さの石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-4b8cff613002a0fa-30c29fbb387c39e4b9f799d3a288749d-v2",
-          "english": "Gain [quick] and +[bonusdamage][attack].",
-          "french": "Octroie [quick] et +[bonusdamage][attack].",
-          "german": "Erhalte[health] und +[bonusdamage][attack].",
-          "russian": "Даются [quick] и +[bonusdamage][attack].",
-          "portuguese": "Concede [quick] e +[bonusdamage][attack].",
-          "chinese": "获得 [quick] 和 +[bonusdamage][attack]。",
-          "spanish": "Añade [quick] y +[bonusdamage][attack].",
-          "chinese_traditional": "獲得[quick]和+[bonusdamage][attack]。",
-          "korean": "[quick] 및 +[bonusdamage][attack]을 획득합니다.",
-          "japanese": "[quick]と+[bonusdamage][attack]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "ambush",
-            "count": 1
+      "id": "UnitUpgradeQuick",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolRare"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "rare",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "OnlyAttackingUnits",
-            "cardType": "monster",
-            "excludeNonAttackingMonsters": true
-          },
-          {
-            "id": "ExcludeQuick",
-            "excludedStatusEffects": [
-              {
-                "statusId": "ambush",
-                "count": 1
-              }
-            ],
-            "excludedStatusEffectsOperator": "and"
-          },
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ],
-        "bonusDamage": 10
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-34c793b64132d4cb-c99c5aabeb1493b4aab44c660e358746-v2",
+        "english": "Speedstone",
+        "french": "Pierre de célérité",
+        "german": "Flinkstein",
+        "russian": "Камень скорости",
+        "portuguese": "Pedra de Velocidade",
+        "chinese": "迅捷石",
+        "spanish": "Piedra veloz",
+        "chinese_traditional": "速石",
+        "korean": "속도석",
+        "japanese": "素早さの石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-5090cb36e2c4b395-c99c5aabeb1493b4aab44c660e358746-v2",
+        "english": "Upgrade a unit with [quick] and +[effect0.upgrade.bonusdamage][attack].",
+        "french": "Améliore une unité avec [quick] et +[effect0.upgrade.bonusdamage][attack].",
+        "german": "Verbessere eine Einheit mit [quick] und +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Усиление бойца: [quick] и +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Melhora uma unidade com [quick] e +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得 [quick] 和 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Mejora una unidad con [quick] y +[effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "以[quick]和+[effect0.upgrade.bonusdamage][attack]升級一個單位。",
+        "korean": "유닛을 업그레이드하여 [quick] 및 +[effect0.upgrade.bonusdamage][attack]을 적용합니다.",
+        "japanese": "ユニットアップグレード：[quick]と+[effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "relic_effects": [
+        "@UnitUpgradeQuick.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeQuick.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "AddQuick"
+    }
+  ]
 }

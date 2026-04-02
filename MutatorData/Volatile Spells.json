@@ -1,44 +1,57 @@
 {
-  "id": "AllSpellsRandomTargets",
-  "guid": "a83bc048-7924-4beb-87bd-00419bda6be0",
-  "name": "Volatile Spells",
-  "nameKey": {
-    "key": "MutatorData_nameKey-11433189ef5e020c-24bf3e3305bb78e4399109af9968ad64-v2",
-    "english": "Volatile Spells",
-    "french": "Sorts volatils",
-    "german": "Launische Zauber",
-    "russian": "Капризные заклинания",
-    "portuguese": "Feitiços Voláteis",
-    "chinese": "不稳定法术",
-    "spanish": "Hechizos volátiles",
-    "chinese_traditional": "不穩定法術",
-    "korean": "불안정한 주문",
-    "japanese": "気まぐれな呪文"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-5ab0567ee93a9a06-24bf3e3305bb78e4399109af9968ad64-v2",
-    "english": "The targets of spells are chosen randomly and Undo is disabled.",
-    "french": "Les sorts visent des cibles aléatoires et vous ne pouvez pas annuler.",
-    "german": "Die Ziele von Zaubern werden zufällig ausgewählt und „Rückgängig“ ist deaktiviert.",
-    "russian": "Цели чар выбираются случайным образом, а отмена недоступна.",
-    "portuguese": "Os alvos de feitiços são escolhidos aleatoriamente e Desfazer está desabilitado.",
-    "chinese": "随机选择法术的目标，且禁用撤销功能。",
-    "spanish": "Los objetivos de hechizos se eligen al azar y Deshacer está desactivado.",
-    "chinese_traditional": "法術的目標隨機選擇且反悔已被禁用。",
-    "korean": "주문 대상이 무작위로 지정되며, 되돌리기 기능은 비활성화됩니다.",
-    "japanese": "呪文のターゲットがランダムで選択され、取り消しは無効化される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyTargetsRandom",
-      "paramCardFilter": {
-        "id": "OnlySpells",
-        "cardType": "spell"
-      }
-    },
-    {
-      "relicEffectClassName": "RelicEffectDisableUndo"
+      "id": "AllSpellsRandomTargets",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "boon_value": -9
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-11433189ef5e020c-24bf3e3305bb78e4399109af9968ad64-v2",
+        "english": "Volatile Spells",
+        "french": "Sorts volatils",
+        "german": "Launische Zauber",
+        "russian": "Капризные заклинания",
+        "portuguese": "Feitiços Voláteis",
+        "chinese": "不稳定法术",
+        "spanish": "Hechizos volátiles",
+        "chinese_traditional": "不穩定法術",
+        "korean": "불안정한 주문",
+        "japanese": "気まぐれな呪文"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-5ab0567ee93a9a06-24bf3e3305bb78e4399109af9968ad64-v2",
+        "english": "The targets of spells are chosen randomly and Undo is disabled.",
+        "french": "Les sorts visent des cibles aléatoires et vous ne pouvez pas annuler.",
+        "german": "Die Ziele von Zaubern werden zufällig ausgewählt und „Rückgängig“ ist deaktiviert.",
+        "russian": "Цели чар выбираются случайным образом, а отмена недоступна.",
+        "portuguese": "Os alvos de feitiços são escolhidos aleatoriamente e Desfazer está desabilitado.",
+        "chinese": "随机选择法术的目标，且禁用撤销功能。",
+        "spanish": "Los objetivos de hechizos se eligen al azar y Deshacer está desactivado.",
+        "chinese_traditional": "法術的目標隨機選擇且反悔已被禁用。",
+        "korean": "주문 대상이 무작위로 지정되며, 되돌리기 기능은 비활성화됩니다.",
+        "japanese": "呪文のターゲットがランダムで選択され、取り消しは無効化される。"
+      },
+      "relic_effects": [
+        "@AllSpellsRandomTargets.effects0",
+        "@AllSpellsRandomTargets.effects1"
+      ]
     }
   ],
-  "boonValue": -9
+  "relic_effects": [
+    {
+      "id": "AllSpellsRandomTargets.effects0",
+      "name": "RelicEffectModifyTargetsRandom",
+      "param_card_filter": "@AllSpellsRandomTargets.effects0.paramCardFilter"
+    },
+    {
+      "id": "AllSpellsRandomTargets.effects1",
+      "name": "RelicEffectDisableUndo"
+    }
+  ]
 }

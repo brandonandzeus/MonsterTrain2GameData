@@ -1,73 +1,89 @@
 {
-  "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing",
-  "guid": "fed4b25c-6234-47f4-a3f4-3959bc0ada66",
-  "name": "Grow Up Big and Strong",
-  "nameKey": {
-    "key": "MutatorData_nameKey-7efc6b2b7f105e7d-76c42ff830656694ba4c6fc6fbb65c1b-v2",
-    "english": "Grow Up Big and Strong",
-    "french": "Ce qui ne nous tue pas",
-    "german": "Groß und stark",
-    "russian": "Расти большим-пребольшим",
-    "portuguese": "Crescendo Grande e Forte",
-    "chinese": "茁壮成长",
-    "spanish": "Crecer fuerte y sano",
-    "chinese_traditional": "長得又大又壯",
-    "korean": "크게 자라 강해져라",
-    "japanese": "大きく強く成長"
-  },
-  "descriptionKey": {
-    "key": "MutatorData_descriptionKey-e725dfc588bb538f-76c42ff830656694ba4c6fc6fbb65c1b-v2",
-    "english": "Friendly units gain +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] permanently when healed.",
-    "french": "Les unités alliées gagnent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] définitivement lorsqu'elles sont soignées.",
-    "german": "Verbündete Einheiten erhalten bei Heilung permanent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack].",
-    "russian": "При лечении союзники получают +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] навсегда.",
-    "portuguese": "As unidades aliadas recebem +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] permanentemente quando são curadas.",
-    "chinese": "友方单位得到治疗时，永久获得 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
-    "spanish": "Las unidades aliadas añaden +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] permanentemente cuando las curas.",
-    "chinese_traditional": "友方單位被治療時永久獲得+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
-    "korean": "아군 유닛들이 치유될 때마다 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]을 영구적으로 획득합니다.",
-    "japanese": "味方ユニットが回復されると[effect0.trigger0.effect0.upgrade.bonusdamage][attack]を永続的に得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing",
+      "type": "mutator",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "MutatorData_descriptionKey-2452930102945ac3-76c42ff830656694ba4c6fc6fbb65c1b-v2",
-            "english": "Gain +[effect0.upgrade.bonusdamage][attack] permanently.",
-            "french": "Octroie +[effect0.upgrade.bonusdamage][attack] définitivement.",
-            "german": "Erhalte permanent +[effect0.upgrade.bonusdamage][attack].",
-            "russian": "Дает +[effect0.upgrade.bonusdamage][attack] навсегда.",
-            "portuguese": "Recebe +[effect0.upgrade.bonusdamage][attack] permanentemente.",
-            "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
-            "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] permanentemente.",
-            "chinese_traditional": "永久獲得+[effect0.upgrade.bonusdamage][attack]。",
-            "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
-            "japanese": "[effect0.upgrade.bonusdamage][attack]を永続的に得る。"
-          },
-          "trigger": "on_heal",
-          "effects": [
-            {
-              "effectStateName": "CardEffectAddCardUpgradeToUnits",
-              "targetMode": "self",
-              "targetTeamType": "none",
-              "paramCardUpgradeData": {
-                "id": "Plus1AttackScalable",
-                "guid": "995b9c12-c816-4960-9905-cd6e1a29d362",
-                "bonusDamage": 1,
-                "upgradeWillBeScaledByNonMagicPowerTrait": true
-              },
-              "additionalParamInt1": 2,
-              "paramBool": true
-            }
-          ],
-          "hideVisualAndIgnoreSilence": true
+          "mutator": {
+            "boon_value": 4,
+            "disable_in_daily_challenges": true
+          }
         }
       ],
-      "paramSourceTeam": "monsters"
+      "names": {
+        "key": "MutatorData_nameKey-7efc6b2b7f105e7d-76c42ff830656694ba4c6fc6fbb65c1b-v2",
+        "english": "Grow Up Big and Strong",
+        "french": "Ce qui ne nous tue pas",
+        "german": "Groß und stark",
+        "russian": "Расти большим-пребольшим",
+        "portuguese": "Crescendo Grande e Forte",
+        "chinese": "茁壮成长",
+        "spanish": "Crecer fuerte y sano",
+        "chinese_traditional": "長得又大又壯",
+        "korean": "크게 자라 강해져라",
+        "japanese": "大きく強く成長"
+      },
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-e725dfc588bb538f-76c42ff830656694ba4c6fc6fbb65c1b-v2",
+        "english": "Friendly units gain +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] permanently when healed.",
+        "french": "Les unités alliées gagnent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] définitivement lorsqu'elles sont soignées.",
+        "german": "Verbündete Einheiten erhalten bei Heilung permanent +[effect0.trigger0.effect0.upgrade.bonusdamage][attack].",
+        "russian": "При лечении союзники получают +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] навсегда.",
+        "portuguese": "As unidades aliadas recebem +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] permanentemente quando são curadas.",
+        "chinese": "友方单位得到治疗时，永久获得 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Las unidades aliadas añaden +[effect0.trigger0.effect0.upgrade.bonusdamage][attack] permanentemente cuando las curas.",
+        "chinese_traditional": "友方單位被治療時永久獲得+[effect0.trigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "아군 유닛들이 치유될 때마다 +[effect0.trigger0.effect0.upgrade.bonusdamage][attack]을 영구적으로 획득합니다.",
+        "japanese": "味方ユニットが回復されると[effect0.trigger0.effect0.upgrade.bonusdamage][attack]を永続的に得る。"
+      },
+      "relic_effects": [
+        "@Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0"
+      ]
     }
   ],
-  "boonValue": 4,
-  "disableInDailyChallenges": true
+  "relic_effects": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0.triggers0"
+      ],
+      "param_source_team": "monsters"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0.triggers0",
+      "descriptions": {
+        "key": "MutatorData_descriptionKey-2452930102945ac3-76c42ff830656694ba4c6fc6fbb65c1b-v2",
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack] permanently.",
+        "french": "Octroie +[effect0.upgrade.bonusdamage][attack] définitivement.",
+        "german": "Erhalte permanent +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Дает +[effect0.upgrade.bonusdamage][attack] навсегда.",
+        "portuguese": "Recebe +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese": "永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese_traditional": "永久獲得+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "영구적으로 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "[effect0.upgrade.bonusdamage][attack]を永続的に得る。"
+      },
+      "trigger": "on_heal",
+      "effects": [
+        "@Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "Plus1AttackScalable",
+      "param_int_3": 2,
+      "param_bool": true
+    }
+  ]
 }

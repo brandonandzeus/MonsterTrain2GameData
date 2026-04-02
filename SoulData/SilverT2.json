@@ -1,70 +1,87 @@
 {
-  "id": "SilverT2",
-  "guid": "354e6614-8b05-4933-bd24-97a41fc63061",
-  "name": "SilverT2",
-  "nameKey": {
-    "key": "SoulData_nameKey-e6e267de4fc72718-01e548592f4fd384094a7dc70384ddd1-v2",
-    "english": "Silver II",
-    "french": "Argent II",
-    "german": "Silber II",
-    "russian": "Сильвер II",
-    "portuguese": "Prata II",
-    "chinese": "银灵 II",
-    "spanish": "Plata II",
-    "chinese_traditional": "銀色II",
-    "korean": "은 II",
-    "japanese": "シルバーII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-c39f5d4cfd9d97a0-01e548592f4fd384094a7dc70384ddd1-v2",
-    "english": "Your Pyre randomly gains either +[effect0.power][health] or +[effect0.power][attack] after any boss is defeated. Gain an artifact that gives either +1 [ember], +1 [draw], or +2 [capacity] after the next [effect1.power] flying bosses are defeated.",
-    "french": "Votre Brasier gagne soit +[effect0.power][health], soit +[effect0.power][attack] après la défaite d'un boss. Gagnez un artéfact qui confère <nobr>+1 [ember],</nobr> <nobr>+1 [draw]</nobr> ou <nobr>+2 [capacity]</nobr> après la défaite des [effect1.power] prochains boss volants.",
-    "german": "Deine Höllenglut erhält per Zufall entweder +[effect0.power][health] oder +[effect0.power][attack] nachdem ein Boss besiegt wurde. Du erhältst ein Artefakt, das dir entweder +1 [ember], +1 [draw] oder +2 [capacity] gewährt, nachdem die nächsten [effect1.power] fliegenden Bosse besiegt wurden.",
-    "russian": "После смерти любого босса Пекло случайно получает либо +[effect0.power][health], либо +[effect0.power][attack]. Дает артефакт, добавляющий +1[ember] или +2 [capacity], либо позволяющий вытягивать на одну карту больше за победу над следующими летающими боссами в количестве [effect1.power].",
-    "portuguese": "Sua Pira ganha aleatoriamente +[effect0.power][health] ou +[effect0.power][attack] após qualquer chefão ser derrotado. Receba um artefato que dá +1 [ember], +1 <b>Compra</b> ou +2 [capacity] após os próximos [effect1.power] chefões voadores serem derrotados.",
-    "chinese": "击败任意首领后，你的薪火随机获得 +[effect0.power][health] 或 +[effect0.power][attack]。击败下 [effect1.power] 个飞行首领后，获得一件提供 +1 [ember]、+1 [draw] 或 +2 [capacity] 的神器。",
-    "spanish": "Tu Pira gana aleatoriamente o +[effect0.power][health] o +[effect0.power][attack] después de derrotar a un jefe. Obtienes un artefacto que otorga o +1[ember], o +1 <b>Robo</b> o +2 [capacity] tras derrotar a los [effect1.power] próximos jefes voladores.",
-    "chinese_traditional": "在任何首領被擊敗後，你的薪火隨機獲得+[effect0.power][health]或+[effect0.power][attack]。在接下來的[effect1.power]飛行首領被擊敗後，獲得一個賦予+1[ember]、+1[draw]或+2[capacity]的神器。",
-    "korean": "보스를 처치할 때마다, 화로가 무작위로 +[effect0.power][health] 또는 +[effect0.power][attack]을 획득합니다. 또한 다음 비행형 보스 [effect1.power]명을 처치하면, +1 [ember], +1 [draw], 또는 +2 [capacity] 중 하나를 부여하는 유물을 획득합니다.",
-    "japanese": "ボスを倒すと、自軍の炉がランダムで+[effect0.power][health]または+[effect0.power][attack]を得る。次の[effect1.power]体の飛行ボスを倒すたびに、+1 [ember]、+1 [draw]、または+2 [capacity]の効果のあるアーティファクトを得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectBuffPyreForBossKill",
-      "paramInt": 7,
-      "paramInt2": 7
+      "id": "SilverT2",
+      "name": "SilverT2",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-9082000aea4158de-01e548592f4fd384094a7dc70384ddd1-v2",
+                "english": "Defeat any Boss to upgrade.",
+                "french": "Battez n'importe quel boss pour améliorer.",
+                "german": "Besiege für eine Verbesserung einen beliebigen Boss.",
+                "russian": "Чтобы улучшить, убейте любого босса.",
+                "portuguese": "Derrote qualquer Chefão para melhorar.",
+                "chinese": "击败任意首领以升级。",
+                "spanish": "Derrota a cualquier jefe para mejorar.",
+                "chinese_traditional": "擊敗任意首領以升級。",
+                "korean": "보스를 하나라도 처치하면 업그레이드됩니다.",
+                "japanese": "任意のボスを倒してアップグレード。"
+              },
+              "unlock_condition": "soul_kill_any_boss",
+              "param_int": 25
+            },
+            "tier_level": 2,
+            "next_tier": "SilverT3",
+            "draft_max_distance_allowed": 6,
+            "draft_max_battles_completed": 5
+          }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-e6e267de4fc72718-01e548592f4fd384094a7dc70384ddd1-v2",
+        "english": "Silver II",
+        "french": "Argent II",
+        "german": "Silber II",
+        "russian": "Сильвер II",
+        "portuguese": "Prata II",
+        "chinese": "银灵 II",
+        "spanish": "Plata II",
+        "chinese_traditional": "銀色II",
+        "korean": "은 II",
+        "japanese": "シルバーII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-c39f5d4cfd9d97a0-01e548592f4fd384094a7dc70384ddd1-v2",
+        "english": "Your Pyre randomly gains either +[effect0.power][health] or +[effect0.power][attack] after any boss is defeated. Gain an artifact that gives either +1 [ember], +1 [draw], or +2 [capacity] after the next [effect1.power] flying bosses are defeated.",
+        "french": "Votre Brasier gagne soit +[effect0.power][health], soit +[effect0.power][attack] après la défaite d'un boss. Gagnez un artéfact qui confère <nobr>+1 [ember],</nobr> <nobr>+1 [draw]</nobr> ou <nobr>+2 [capacity]</nobr> après la défaite des [effect1.power] prochains boss volants.",
+        "german": "Deine Höllenglut erhält per Zufall entweder +[effect0.power][health] oder +[effect0.power][attack] nachdem ein Boss besiegt wurde. Du erhältst ein Artefakt, das dir entweder +1 [ember], +1 [draw] oder +2 [capacity] gewährt, nachdem die nächsten [effect1.power] fliegenden Bosse besiegt wurden.",
+        "russian": "После смерти любого босса Пекло случайно получает либо +[effect0.power][health], либо +[effect0.power][attack]. Дает артефакт, добавляющий +1[ember] или +2 [capacity], либо позволяющий вытягивать на одну карту больше за победу над следующими летающими боссами в количестве [effect1.power].",
+        "portuguese": "Sua Pira ganha aleatoriamente +[effect0.power][health] ou +[effect0.power][attack] após qualquer chefão ser derrotado. Receba um artefato que dá +1 [ember], +1 <b>Compra</b> ou +2 [capacity] após os próximos [effect1.power] chefões voadores serem derrotados.",
+        "chinese": "击败任意首领后，你的薪火随机获得 +[effect0.power][health] 或 +[effect0.power][attack]。击败下 [effect1.power] 个飞行首领后，获得一件提供 +1 [ember]、+1 [draw] 或 +2 [capacity] 的神器。",
+        "spanish": "Tu Pira gana aleatoriamente o +[effect0.power][health] o +[effect0.power][attack] después de derrotar a un jefe. Obtienes un artefacto que otorga o +1[ember], o +1 <b>Robo</b> o +2 [capacity] tras derrotar a los [effect1.power] próximos jefes voladores.",
+        "chinese_traditional": "在任何首領被擊敗後，你的薪火隨機獲得+[effect0.power][health]或+[effect0.power][attack]。在接下來的[effect1.power]飛行首領被擊敗後，獲得一個賦予+1[ember]、+1[draw]或+2[capacity]的神器。",
+        "korean": "보스를 처치할 때마다, 화로가 무작위로 +[effect0.power][health] 또는 +[effect0.power][attack]을 획득합니다. 또한 다음 비행형 보스 [effect1.power]명을 처치하면, +1 [ember], +1 [draw], 또는 +2 [capacity] 중 하나를 부여하는 유물을 획득합니다.",
+        "japanese": "ボスを倒すと、自軍の炉がランダムで+[effect0.power][health]または+[effect0.power][attack]を得る。次の[effect1.power]体の飛行ボスを倒すたびに、+1 [ember]、+1 [draw]、または+2 [capacity]の効果のあるアーティファクトを得る。"
+      },
+      "relic_effects": [
+        "@SilverT2.effects0",
+        "@SilverT2.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SilverT2.effects0",
+      "name": "RelicEffectBuffPyreForBossKill",
+      "param_int": 7,
+      "param_int_2": 7
     },
     {
-      "relicEffectClassName": "RelicEffectAddPostBattleRewardOnBossDeath",
-      "paramInt": 2,
-      "paramExcludeCharacterSubtypes": [
+      "id": "SilverT2.effects1",
+      "name": "RelicEffectAddPostBattleRewardOnBossDeath",
+      "param_int": 2,
+      "param_excluded_subtypes": [
         "SubtypesData_SoulSavior_Region1_FlyingBoss",
         "SubtypesData_SoulSavior_Region2_FlyingBoss",
         "SubtypesData_SoulSavior_Region3_FlyingBoss",
         "SubtypesData_SoulSavior_Region4_FlyingBoss"
       ],
-      "paramReward": "SilverRewardData"
+      "param_reward": "SilverRewardData"
     }
-  ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-9082000aea4158de-01e548592f4fd384094a7dc70384ddd1-v2",
-      "english": "Defeat any Boss to upgrade.",
-      "french": "Battez n'importe quel boss pour améliorer.",
-      "german": "Besiege für eine Verbesserung einen beliebigen Boss.",
-      "russian": "Чтобы улучшить, убейте любого босса.",
-      "portuguese": "Derrote qualquer Chefão para melhorar.",
-      "chinese": "击败任意首领以升级。",
-      "spanish": "Derrota a cualquier jefe para mejorar.",
-      "chinese_traditional": "擊敗任意首領以升級。",
-      "korean": "보스를 하나라도 처치하면 업그레이드됩니다.",
-      "japanese": "任意のボスを倒してアップグレード。"
-    },
-    "unlockCondition": "soul_kill_any_boss",
-    "paramInt": 25
-  },
-  "tierLevel": 2,
-  "nextTier": "SilverT3",
-  "draftMaxDistanceAllowed": 6,
-  "draftMaxBattlesCompleted": 5
+  ]
 }

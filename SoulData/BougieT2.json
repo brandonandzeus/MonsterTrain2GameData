@@ -1,116 +1,72 @@
 {
-  "id": "BougieT2",
-  "guid": "4148578a-f1d8-41fd-9f6a-f946531503a5",
-  "name": "BougieT2",
-  "nameKey": {
-    "key": "SoulData_nameKey-42636aac30dc3a13-443bc7e75690f1640b313fed36700093-v2",
-    "english": "Bougie II",
-    "french": "Bougie II",
-    "german": "Bougie II",
-    "russian": "Франт II",
-    "portuguese": "Sofisticado II",
-    "chinese": "中产阶级 II",
-    "spanish": "Capitalista II",
-    "chinese_traditional": "時髦II",
-    "korean": "사치광 II",
-    "japanese": "ブジーII"
-  },
-  "descriptionKey": {
-    "key": "SoulData_descriptionKey-e10ba7a9d1a6b106-443bc7e75690f1640b313fed36700093-v2",
-    "english": "Gain [attuned] and +[effect0.power] [magicpower].",
-    "french": "Octroie [attuned]. +[effect0.power] [magicpower].",
-    "german": "Erhalte [attuned]. +[effect0.power] [magicpower].",
-    "russian": "Дается [attuned]. +[magicpower] х[effect0.power].",
-    "portuguese": "Recebe [attuned]. +[effect0.power] de [magicpower].",
-    "chinese": "获得 [attuned]。+[effect0.power] [magicpower]。",
-    "spanish": "Añade [attuned]. +[effect0.power] [magicpower].",
-    "chinese_traditional": "獲得[attuned]。+[effect0.power][magicpower]。",
-    "korean": "[attuned]을 획득합니다. +[effect0.power] [magicpower].",
-    "japanese": "[attuned]を得る。+[effect0.power] [magicpower]。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "BougieT2_Upgrade",
-        "guid": "7da82287-9e42-4f70-bad1-282d92d78f0e",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-0e27069f86b0acfd-92b562863abea4e448aa767a19b5a386-v2",
-          "english": "Bougie",
-          "french": "Bougie",
-          "german": "Bougie",
-          "russian": "Франт",
-          "portuguese": "Sofisticado",
-          "chinese": "布吉",
-          "spanish": "Capitalista",
-          "chinese_traditional": "時髦",
-          "korean": "사치광",
-          "japanese": "ブジー"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-a47e6741961a6857-92b562863abea4e448aa767a19b5a386-v2",
-          "english": "Gain [attuned] and +[bonusdamage] [magicpower].",
-          "french": "Octroie [attuned]. +[bonusdamage] [magicpower].",
-          "german": "Erhalte [attuned]. +[bonusdamage] [magicpower].",
-          "russian": "Дается [attuned]. +[magicpower] х[bonusdamage].",
-          "portuguese": "Recebe [attuned]. +[bonusdamage] de [magicpower].",
-          "chinese": "获得 [attuned]。+[bonusdamage] [magicpower]。",
-          "spanish": "Añade [attuned]. +[bonusdamage] [magicpower].",
-          "chinese_traditional": "獲得[attuned]。+[bonusdamage][magicpower]。",
-          "korean": "[attuned]을 획득합니다. +[bonusdamage] [magicpower].",
-          "japanese": "[attuned]を得る。+[bonusdamage] [magicpower]。"
-        },
-        "traitDataUpgrades": [
-          {
-            "traitStateName": "CardTraitStrongerMagicPower"
+      "id": "BougieT2",
+      "name": "BougieT2",
+      "type": "soul",
+      "extensions": [
+        {
+          "soul": {
+            "unlock_data": {
+              "descriptions": {
+                "key": "SoulData_descriptionKey-407088952e5b65aa-443bc7e75690f1640b313fed36700093-v2",
+                "english": "Deal damage with [magicpower] to upgrade.",
+                "french": "Infligez des dégâts avec [magicpower] pour améliorer.",
+                "german": "Verursache zum Verbessern Schaden mit [magicpower].",
+                "russian": "Чтобы улучшить, нанесите урон <b>силой магии</b>.",
+                "portuguese": "Causa dano com [magicpower] para melhorar.",
+                "chinese": "用 [magicpower] 造成伤害以升级。",
+                "spanish": "Inflige daño con [magicpower] para mejorar.",
+                "chinese_traditional": "用[magicpower]造成傷害以升級。",
+                "korean": "[magicpower]으로 피해를 주면 업그레이드됩니다.",
+                "japanese": "[magicpower]でダメージを与えてアップグレード。"
+              },
+              "unlock_condition": "soul_magic_power_bonus_damage",
+              "param_int": 15000
+            },
+            "tier_level": 2,
+            "next_tier": "BougieT3"
           }
-        ],
-        "filters": [
-          {
-            "id": "MagicPowerSpells",
-            "cardType": "spell",
-            "requiredCardEffectsOperator": "or",
-            "requiredCardEffects": [
-              "CardEffectDamage",
-              "CardEffectHeal",
-              "CardEffectHealAndDamageRelative",
-              "CardEffectHealAndOverheal",
-              "CardEffectDamagePerSourceAttack",
-              "CardEffectDamagePerHp"
-            ]
-          },
-          {
-            "id": "ExcludedSpellsFromMagicPower",
-            "disallowedCardPools": [
-              "SpellsNotAllowedSpellPowerPool"
-            ]
-          }
-        ],
-        "isRegionRunUpgrade": true,
-        "excludeFromClones": true,
-        "bonusDamage": 20,
-        "bonusHeal": 20
-      }
+        }
+      ],
+      "names": {
+        "key": "SoulData_nameKey-42636aac30dc3a13-443bc7e75690f1640b313fed36700093-v2",
+        "english": "Bougie II",
+        "french": "Bougie II",
+        "german": "Bougie II",
+        "russian": "Франт II",
+        "portuguese": "Sofisticado II",
+        "chinese": "中产阶级 II",
+        "spanish": "Capitalista II",
+        "chinese_traditional": "時髦II",
+        "korean": "사치광 II",
+        "japanese": "ブジーII"
+      },
+      "descriptions": {
+        "key": "SoulData_descriptionKey-e10ba7a9d1a6b106-443bc7e75690f1640b313fed36700093-v2",
+        "english": "Gain [attuned] and +[effect0.power] [magicpower].",
+        "french": "Octroie [attuned]. +[effect0.power] [magicpower].",
+        "german": "Erhalte [attuned]. +[effect0.power] [magicpower].",
+        "russian": "Дается [attuned]. +[magicpower] х[effect0.power].",
+        "portuguese": "Recebe [attuned]. +[effect0.power] de [magicpower].",
+        "chinese": "获得 [attuned]。+[effect0.power] [magicpower]。",
+        "spanish": "Añade [attuned]. +[effect0.power] [magicpower].",
+        "chinese_traditional": "獲得[attuned]。+[effect0.power][magicpower]。",
+        "korean": "[attuned]을 획득합니다. +[effect0.power] [magicpower].",
+        "japanese": "[attuned]を得る。+[effect0.power] [magicpower]。"
+      },
+      "relic_effects": [
+        "@BougieT2.effects0"
+      ]
     }
   ],
-  "unlockData": {
-    "descriptionKey": {
-      "key": "SoulData_descriptionKey-407088952e5b65aa-443bc7e75690f1640b313fed36700093-v2",
-      "english": "Deal damage with [magicpower] to upgrade.",
-      "french": "Infligez des dégâts avec [magicpower] pour améliorer.",
-      "german": "Verursache zum Verbessern Schaden mit [magicpower].",
-      "russian": "Чтобы улучшить, нанесите урон <b>силой магии</b>.",
-      "portuguese": "Causa dano com [magicpower] para melhorar.",
-      "chinese": "用 [magicpower] 造成伤害以升级。",
-      "spanish": "Inflige daño con [magicpower] para mejorar.",
-      "chinese_traditional": "用[magicpower]造成傷害以升級。",
-      "korean": "[magicpower]으로 피해를 주면 업그레이드됩니다.",
-      "japanese": "[magicpower]でダメージを与えてアップグレード。"
-    },
-    "unlockCondition": "soul_magic_power_bonus_damage",
-    "paramInt": 15000
-  },
-  "tierLevel": 2,
-  "nextTier": "BougieT3"
+  "relic_effects": [
+    {
+      "id": "BougieT2.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "BougieT2_Upgrade"
+    }
+  ]
 }

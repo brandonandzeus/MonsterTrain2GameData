@@ -1,90 +1,60 @@
 {
-  "id": "UnitUpgradeClanLazarusLeagueAddReanimate",
-  "guid": "f8077d04-2fb2-4b96-9ff8-379ff5cff01d",
-  "name": "Frankenstone",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-1d44fa0cca001cfb-8319b7d40ff1f4141b35943e93468120-v2",
-    "english": "Frankenstone",
-    "french": "Pierre de réanimation",
-    "german": "Frankenstein",
-    "russian": "Камень «Франкенштейн»",
-    "portuguese": "Pedra da Reanimação",
-    "chinese": "弗兰肯之石",
-    "spanish": "Frankenpiedra",
-    "chinese_traditional": "科學怪人之石",
-    "korean": "프랑켄석",
-    "japanese": "フランケンの石"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-364df9e2e61b5d1b-8319b7d40ff1f4141b35943e93468120-v2",
-    "english": "Upgrade a unit with [undying] [effect0.upgrade.status0.power].",
-    "french": "Améliore une unité avec [undying] [effect0.upgrade.status0.power].",
-    "german": "Verbessere eine Einheit mit [undying] [effect0.upgrade.status0.power].",
-    "russian": "Усиление бойца: [undying] х[effect0.upgrade.status0.power]",
-    "portuguese": "Melhora uma unidade com [undying] [effect0.upgrade.status0.power].",
-    "chinese": "升级一个单位，使其获得 [undying] [effect0.upgrade.status0.power]。",
-    "spanish": "Mejora una unidad con [undying] [effect0.upgrade.status0.power].",
-    "chinese_traditional": "升級一個單位，使其獲得[undying][effect0.upgrade.status0.power]。",
-    "korean": "유닛을 업그레이드하여 [undying] [effect0.upgrade.status0.power] 효과를 적용합니다.",
-    "japanese": "ユニットアップグレード：[undying] [effect0.upgrade.status0.power]"
-  },
-  "rarity": "common",
-  "linkedClass": "ClassLazarusLeague",
-  "pools": [
-    "DraftUpgradePool",
-    "MalickaDraftUpgradePool",
-    "UnitUpgradePoolCommon"
-  ],
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "monster",
-      "paramCardUpgradeData": {
-        "id": "AddReanimateLazarusLeague",
-        "guid": "851a21f1-ea4b-41dd-bfa3-be21d1d15d10",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-de3eb20e7da42817-1082c42bcd022074481aa39c47e9a8ca-v2",
-          "english": "Frankenstone",
-          "french": "Pierre de réanimation",
-          "german": "Frankenstein",
-          "russian": "Камень «Франкенштейн»",
-          "portuguese": "Pedra da Reanimação",
-          "chinese": "弗兰肯之石",
-          "spanish": "Frankenpiedra",
-          "chinese_traditional": "科學怪人之石",
-          "korean": "프랑켄석",
-          "japanese": "フランケンの石"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-c583ebaa21c37c67-1082c42bcd022074481aa39c47e9a8ca-v2",
-          "english": "Gain [undying] [status0.power].",
-          "french": "Octroie [undying] [status0.power].",
-          "german": "Erhalte [undying] [status0.power].",
-          "russian": "Дает [status0.power] х[undying].",
-          "portuguese": "Recebe [undying] [status0.power].",
-          "chinese": "获得 [undying] [status0.power]。",
-          "spanish": "Añade [undying] [status0.power].",
-          "chinese_traditional": "獲得[undying][status0.power]。",
-          "korean": "[undying] [status0.power] 효과를 획득합니다.",
-          "japanese": "[undying] [status0.power]を得る。"
-        },
-        "statusEffectUpgrades": [
-          {
-            "statusId": "undying",
-            "count": 1
+      "id": "UnitUpgradeClanLazarusLeagueAddReanimate",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassLazarusLeague",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "filters": [
-          {
-            "id": "ExcludeEelGorgon",
-            "cardType": "monster",
-            "disallowedCardPools": [
-              "EelGorgonOnlyPool"
-            ]
-          }
-        ]
-      }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-1d44fa0cca001cfb-8319b7d40ff1f4141b35943e93468120-v2",
+        "english": "Frankenstone",
+        "french": "Pierre de réanimation",
+        "german": "Frankenstein",
+        "russian": "Камень «Франкенштейн»",
+        "portuguese": "Pedra da Reanimação",
+        "chinese": "弗兰肯之石",
+        "spanish": "Frankenpiedra",
+        "chinese_traditional": "科學怪人之石",
+        "korean": "프랑켄석",
+        "japanese": "フランケンの石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-364df9e2e61b5d1b-8319b7d40ff1f4141b35943e93468120-v2",
+        "english": "Upgrade a unit with [undying] [effect0.upgrade.status0.power].",
+        "french": "Améliore une unité avec [undying] [effect0.upgrade.status0.power].",
+        "german": "Verbessere eine Einheit mit [undying] [effect0.upgrade.status0.power].",
+        "russian": "Усиление бойца: [undying] х[effect0.upgrade.status0.power]",
+        "portuguese": "Melhora uma unidade com [undying] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得 [undying] [effect0.upgrade.status0.power]。",
+        "spanish": "Mejora una unidad con [undying] [effect0.upgrade.status0.power].",
+        "chinese_traditional": "升級一個單位，使其獲得[undying][effect0.upgrade.status0.power]。",
+        "korean": "유닛을 업그레이드하여 [undying] [effect0.upgrade.status0.power] 효과를 적용합니다.",
+        "japanese": "ユニットアップグレード：[undying] [effect0.upgrade.status0.power]"
+      },
+      "relic_effects": [
+        "@UnitUpgradeClanLazarusLeagueAddReanimate.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeClanLazarusLeagueAddReanimate.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "AddReanimateLazarusLeague"
+    }
+  ]
 }

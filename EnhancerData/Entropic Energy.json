@@ -1,93 +1,56 @@
 {
-  "id": "SpellUpgradeTitanEntropyReduceCost3",
-  "guid": "7c80533f-bdcd-439c-b4cf-5dfa182d0e2b",
-  "name": "Entropic Energy",
-  "nameKey": {
-    "key": "EnhancerData_nameKey-bc3ce7be61270be8-1c18843e21497fd4a903fe0a3fbe35f2-v2",
-    "english": "Entropic Energy",
-    "french": "Énergie entropique",
-    "german": "Entropische Energie",
-    "russian": "Энергия Хаоса",
-    "portuguese": "Energia da Entropia",
-    "chinese": "混乱能量",
-    "spanish": "Energía entrópica",
-    "chinese_traditional": "熵能",
-    "korean": "엔트로피의 에너지",
-    "japanese": "エントロピーエネルギー"
-  },
-  "descriptionKey": {
-    "key": "EnhancerData_descriptionKey-57406c7318e9a14f-1c18843e21497fd4a903fe0a3fbe35f2-v2",
-    "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
-    "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
-    "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember] kostet.</nobr>",
-    "russian": "Снижает цену чар на <nobr>[effect0.upgrade.costreduction][ember].</nobr>",
-    "portuguese": "Melhora um feitiço para tornar o custo <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
-    "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]。</nobr>",
-    "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
-    "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>。",
-    "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember] 됩니다.</nobr>",
-    "japanese": "呪文アップグレード：コスト<nobr>-[effect0.upgrade.costreduction][ember]</nobr>"
-  },
-  "rarity": "common",
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectCardUpgrade",
-      "paramCardType": "spell",
-      "paramCardUpgradeData": {
-        "id": "ReduceCost3",
-        "guid": "1839feba-c94d-4b86-9c28-a3f8fc47842a",
-        "upgradeTitleKey": {
-          "key": "CardUpgradeData_upgradeTitleKey-d164cad666a461fb-9c5db04493c86de4d97685a1e44fcbe6-v2",
-          "english": "Entropic Energy",
-          "french": "Énergie entropique",
-          "german": "Entropische Energie",
-          "russian": "Энергия Хаоса",
-          "portuguese": "Energia da Entropia",
-          "chinese": "混乱能量",
-          "spanish": "Energía entrópica",
-          "chinese_traditional": "熵能",
-          "korean": "엔트로피의 에너지",
-          "japanese": "エントロピーエネルギー"
-        },
-        "upgradeDescriptionKey": {
-          "key": "CardUpgradeData_upgradeDescriptionKey-0d6678aff2dd7305-9c5db04493c86de4d97685a1e44fcbe6-v2",
-          "english": "-[costreduction][ember].",
-          "french": "-[costreduction][ember].",
-          "german": "-[costreduction][ember].",
-          "russian": "-[costreduction][ember].",
-          "portuguese": "-[costreduction][ember].",
-          "chinese": "-[costreduction][ember]。",
-          "spanish": "-[costreduction][ember].",
-          "chinese_traditional": "-[costreduction][ember]。",
-          "korean": "-[costreduction][ember].",
-          "japanese": "-[costreduction][ember]。"
-        },
-        "filters": [
-          {
-            "id": "ExcludeChampions",
-            "excludedSubtypesOperator": "and",
-            "excludedSubtypes": [
-              "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-            ]
-          },
-          {
-            "id": "ExcludeZeroCost",
-            "costRange": {
-              "x": 1.0,
-              "y": 99.0
-            },
-            "excludedCardTraitsOperator": "and",
-            "excludedCardTraits": [
-              "CardTraitUnplayable"
-            ]
+      "id": "SpellUpgradeTitanEntropyReduceCost3",
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "numCardsToShowInUpgradeScreen": 0
           }
-        ],
-        "costReduction": 4,
-        "xCostReduction": 4
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-bc3ce7be61270be8-1c18843e21497fd4a903fe0a3fbe35f2-v2",
+        "english": "Entropic Energy",
+        "french": "Énergie entropique",
+        "german": "Entropische Energie",
+        "russian": "Энергия Хаоса",
+        "portuguese": "Energia da Entropia",
+        "chinese": "混乱能量",
+        "spanish": "Energía entrópica",
+        "chinese_traditional": "熵能",
+        "korean": "엔트로피의 에너지",
+        "japanese": "エントロピーエネルギー"
       },
-      "paramMinInt": 1,
-      "paramMaxInt": 99
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-57406c7318e9a14f-1c18843e21497fd4a903fe0a3fbe35f2-v2",
+        "english": "Upgrade a spell to cost <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "french": "Améliore un sort qui coûte <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "german": "Verbessere einen Zauber, damit er <nobr>-[effect0.upgrade.costreduction][ember] kostet.</nobr>",
+        "russian": "Снижает цену чар на <nobr>[effect0.upgrade.costreduction][ember].</nobr>",
+        "portuguese": "Melhora um feitiço para tornar o custo <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "chinese": "升级一个法术，使其费用 <nobr>-[effect0.upgrade.costreduction][ember]。</nobr>",
+        "spanish": "Mejora un hechizo para que cueste <nobr>-[effect0.upgrade.costreduction][ember].</nobr>",
+        "chinese_traditional": "升級一個法術，使其費用<nobr>-[effect0.upgrade.costreduction][ember]</nobr>。",
+        "korean": "주문 업그레이드로 비용이 <nobr>-[effect0.upgrade.costreduction][ember] 됩니다.</nobr>",
+        "japanese": "呪文アップグレード：コスト<nobr>-[effect0.upgrade.costreduction][ember]</nobr>"
+      },
+      "relic_effects": [
+        "@SpellUpgradeTitanEntropyReduceCost3.effects0"
+      ]
     }
   ],
-  "numCardsToShowInUpgradeScreen": 0
+  "relic_effects": [
+    {
+      "id": "SpellUpgradeTitanEntropyReduceCost3.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "ReduceCost3",
+      "param_min_int": 1,
+      "param_max_int": 99
+    }
+  ]
 }

@@ -1,84 +1,103 @@
 {
-  "id": "SoulSavior_StarterDeck",
-  "guid": "28d887c8-4fe3-4c55-a92e-90cd4b1baa25",
-  "name": "Starter Deck",
-  "nameKey": {
-    "key": "MutatorData_nameKey-1022491c8915a191-22cfce8effa88ec44981bc1bce1a9b5f-v2",
-    "english": "Starter Deck",
-    "french": "Deck de départ",
-    "german": "Anfangsdeck",
-    "russian": "Начальная колода",
-    "portuguese": "Deck Inicial",
-    "chinese": "初始卡组",
-    "spanish": "Mazo inicial",
-    "chinese_traditional": "初始牌組",
-    "korean": "초기 덱",
-    "japanese": "開始デッキ"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectPurgeStarterDeck"
+      "id": "SoulSavior_StarterDeck",
+      "type": "mutator",
+      "extensions": [
+        {
+          "mutator": {
+            "disable_in_daily_challenges": true,
+            "is_soul_savior_mode_only": true
+          }
+        }
+      ],
+      "names": {
+        "key": "MutatorData_nameKey-1022491c8915a191-22cfce8effa88ec44981bc1bce1a9b5f-v2",
+        "english": "Starter Deck",
+        "french": "Deck de départ",
+        "german": "Anfangsdeck",
+        "russian": "Начальная колода",
+        "portuguese": "Deck Inicial",
+        "chinese": "初始卡组",
+        "spanish": "Mazo inicial",
+        "chinese_traditional": "初始牌組",
+        "korean": "초기 덱",
+        "japanese": "開始デッキ"
+      },
+      "relic_effects": [
+        "@SoulSavior_StarterDeck.effects0",
+        "@SoulSavior_StarterDeck.effects1"
+      ],
+      "is_hidden": true
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SoulSavior_StarterDeck.effects0",
+      "name": "RelicEffectPurgeStarterDeck"
     },
     {
-      "relicEffectClassName": "RelicEffectAddCardSetStartOfRun",
-      "paramCardSetBuilder": {
+      "id": "SoulSavior_StarterDeck.effects1",
+      "name": "RelicEffectAddCardSetStartOfRun",
+      "param_card_set_builder": {
         "id": "StarterDeck_C01",
         "name": "StarterDeck_C01",
-        "paramCardPulls": [
+        "param_card_pulls": [
           {
             "id": "MainClassCommon2X",
             "name": "MainClassCommon2X",
-            "cardPool": {
+            "card_pool": {
               "name": "MegaPool",
               "cardDataList": [
                 "..."
               ]
             },
-            "classType": "main",
-            "numCopies": 2,
-            "hasRarityCondition": true,
-            "cardRarity": "common",
-            "showcaseAtRunStart": true
+            "class_type": "main",
+            "num_copies": 2,
+            "has_rarity_condition": true,
+            "card_rarity": "common",
+            "showcase_at_run_start": true
           },
           {
             "id": "SubClassCommon2X",
             "name": "SubClassCommon2X",
-            "cardPool": {
+            "card_pool": {
               "name": "MegaPool",
               "cardDataList": [
                 "..."
               ]
             },
-            "classType": "subclass",
-            "numCopies": 2,
-            "hasRarityCondition": true,
-            "cardRarity": "common",
-            "showcaseAtRunStart": true
+            "class_type": "subclass",
+            "num_copies": 2,
+            "has_rarity_condition": true,
+            "card_rarity": "common",
+            "showcase_at_run_start": true
           },
           {
             "id": "MainClassStarter5X",
             "name": "MainClassStarter5X",
-            "cardPool": {
+            "card_pool": {
             },
-            "classType": "main",
-            "numCopies": 5,
-            "hasRarityCondition": true,
-            "cardRarity": "starter"
+            "class_type": "main",
+            "num_copies": 5,
+            "has_rarity_condition": true,
+            "card_rarity": "starter"
           },
           {
             "id": "SubClassStarter5X",
             "name": "SubClassStarter5X",
-            "cardPool": {
+            "card_pool": {
             },
-            "classType": "subclass",
-            "numCopies": 5,
-            "hasRarityCondition": true,
-            "cardRarity": "starter"
+            "class_type": "subclass",
+            "num_copies": 5,
+            "has_rarity_condition": true,
+            "card_rarity": "starter"
           },
           {
             "id": "MainOrSubClassBanner1X",
             "name": "MainOrSubClassBanner1X",
-            "cardPool": {
+            "card_pool": {
               "name": "UnitsAllBanner",
               "cardDataList": [
                 "HuskHermit",
@@ -191,42 +210,39 @@
                 "PyreSteward"
               ]
             },
-            "classType": "main|subclass",
-            "hasRarityCondition": true,
-            "cardRarity": "uncommon",
-            "showcaseAtRunStart": true
+            "class_type": "main|subclass",
+            "has_rarity_condition": true,
+            "card_rarity": "uncommon",
+            "showcase_at_run_start": true
           },
           {
             "id": "TrainStewardBig2X",
             "name": "TrainStewardBig2X",
-            "cardPool": {
+            "card_pool": {
               "name": "TrainStewardBigOnly",
               "cardDataList": [
                 "TrainStewardShield"
               ]
             },
-            "classType": "main|subclass|nonclass",
-            "numCopies": 2,
-            "cardRarity": "common"
+            "class_type": "main|subclass|nonclass",
+            "num_copies": 2,
+            "card_rarity": "common"
           },
           {
             "id": "TrainStewardSmall2X",
             "name": "TrainStewardSmall2X",
-            "cardPool": {
+            "card_pool": {
               "name": "TrainStewardSmallOnly",
               "cardDataList": [
                 "TrainStewardSpear"
               ]
             },
-            "classType": "main|subclass|nonclass",
-            "numCopies": 2,
-            "cardRarity": "common"
+            "class_type": "main|subclass|nonclass",
+            "num_copies": 2,
+            "card_rarity": "common"
           }
         ]
       }
     }
-  ],
-  "isHidden": true,
-  "disableInDailyChallenges": true,
-  "isSoulSaviorModeOnly": true
+  ]
 }
