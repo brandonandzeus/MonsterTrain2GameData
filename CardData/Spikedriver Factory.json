@@ -23,7 +23,7 @@
       "artist": "Ron Kee"
     },
     {
-      "id": "SpikedriverFactory.effects0.paramCharacterData.unitAbility",
+      "id": "SpikedriverFactoryAbility",
       "names": {
         "key": "CardData_nameKey-da4d52ab733af138-49457c44715d76845a8c3b37683ea1ba-v2",
         "english": "Spider Assembly",
@@ -103,7 +103,7 @@
       },
       "projectile_vfx": "@SpikedriverFactory.effects0.paramCharacterData.projectilePrefab",
       "impact_vfx": "@SpikedriverFactory.effects0.paramCharacterData.impactVFX",
-      "ability": "@SpikedriverFactory.effects0.paramCharacterData.unitAbility",
+      "ability": "@SpikedriverFactoryAbility",
       "size": 3,
       "health": 50,
       "attack_damage": 0,
@@ -118,26 +118,18 @@
   ],
   "effects": [
     {
+      "id": "SpikedriverFactory.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterSpikedriverFactory"
+    },
+    {
       "id": "SpikedriverFactory.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectCraftSpike",
       "param_int": 1,
       "param_int_2": 2
-    },
-    {
-      "id": "SpikedriverFactory.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterSpikedriverFactory"
     }
   ],
   "vfxs": [
-    {
-      "id": "SpikedriverFactory.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/SpikedriverFactory/FX_SpikedriverFactoryProjectile.prefab",
-        "asset_guid": "82ea9898e9bae364a9d1e0f0f7633c7d"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "SpikedriverFactory.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -145,6 +137,14 @@
         "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "SpikedriverFactory.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SpikedriverFactory/FX_SpikedriverFactoryProjectile.prefab",
+        "asset_guid": "82ea9898e9bae364a9d1e0f0f7633c7d"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

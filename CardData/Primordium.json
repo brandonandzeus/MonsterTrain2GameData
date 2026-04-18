@@ -18,7 +18,7 @@
         "@ChampionPrimordium.effects0"
       ],
       "initial_upgrades": [
-        "PrimordiumBaseOnEaten"
+        "@PrimordiumBaseOnEaten"
       ],
       "initial_keyboard_target": "front_friendly",
       "artist": "Adam Lee"
@@ -101,13 +101,22 @@
     {
       "id": "ChampionPrimordium.effects0",
       "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterChampionUmbraPrimordium"
+      "param_character": "@MonsterChampionUmbraPrimordium"
     },
     {
       "id": "ChampionPrimordium.startingUpgrades0.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatsFromSelf",
       "target_mode": "last_feeder_character",
       "target_team": "none"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "PrimordiumBaseOnEaten",
+      "trigger_upgrades": [
+        "@ChampionPrimordium.startingUpgrades0.triggerUpgrades0"
+      ],
+      "hide_icon_on_card": true
     }
   ]
 }

@@ -59,7 +59,47 @@
       "artist": "Samuel Lim"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Mindcage",
+      "trigger_upgrades": [
+        "@Mindcage.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 4,
+      "bonus_hp": 4
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Mindcage.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-21425a6b28a5fce7-e783a032d82c6ac4bb5d56c816667d64-v2",
+        "english": "Reduce [cooldown] by [effect0.power].",
+        "french": "Accélère la [cooldown] de [effect0.power].",
+        "german": "Verringert [cooldown] um [effect0.power].",
+        "russian": "[cooldown] уменьшается на [effect0.power].",
+        "portuguese": "Reduz o [cooldown] em [effect0.power].",
+        "chinese": "[cooldown]缩短[effect0.power]。",
+        "spanish": "Reduce la [cooldown] en [effect0.power].",
+        "chinese_traditional": "[cooldown]減少[effect0.power]。",
+        "korean": "[cooldown]이 [effect0.power]만큼 감소합니다.",
+        "japanese": "[cooldown]を[effect0.power]減少させる。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Mindcage.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "Mindcage.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@Mindcage",
+      "applied_vfx": "@Mindcage.effects0.appliedVFX"
+    },
     {
       "id": "Mindcage.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectRemoveStatusEffect",
@@ -70,14 +110,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "Mindcage.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "Mindcage",
-      "applied_vfx": "@Mindcage.effects0.appliedVFX"
     }
   ],
   "vfxs": [

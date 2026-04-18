@@ -22,7 +22,7 @@
       "artist": "Brian Mutschler"
     },
     {
-      "id": "Glareminder.effects0.paramCharacterData.unitAbility",
+      "id": "GlareminderAbility",
       "names": {
         "key": "CardData_nameKey-7e0b8a26fd64981d-3519b1c9b88e41448b07676d9fc1a70b-v2",
         "english": "The Reaping",
@@ -100,7 +100,7 @@
       "triggers": [
         "@Glareminder.effects0.paramCharacterData.triggers0"
       ],
-      "ability": "@Glareminder.effects0.paramCharacterData.unitAbility",
+      "ability": "@GlareminderAbility",
       "size": 2,
       "health": 30,
       "attack_damage": 15,
@@ -136,6 +136,11 @@
   ],
   "effects": [
     {
+      "id": "Glareminder.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterGlareminder"
+    },
+    {
       "id": "Glareminder.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAdjustCorruption",
       "param_int": 1,
@@ -153,22 +158,9 @@
         }
       ],
       "applied_to_self_vfx": "@Glareminder.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "Glareminder.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterGlareminder"
     }
   ],
   "vfxs": [
-    {
-      "id": "Glareminder.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/FX/FX_Projectile_Glareminder.prefab",
-        "asset_guid": "5944d0301a2413045b9552a906b64b80"
-      },
-      "spawn_location": "character_top"
-    },
     {
       "id": "Glareminder.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -176,6 +168,14 @@
         "asset_guid": "e403cf7dbfbb9df498327589983ce551"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "Glareminder.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Projectile_Glareminder.prefab",
+        "asset_guid": "5944d0301a2413045b9552a906b64b80"
+      },
+      "spawn_location": "character_top"
     },
     {
       "id": "Glareminder.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX",

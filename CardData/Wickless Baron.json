@@ -96,15 +96,22 @@
   ],
   "effects": [
     {
+      "id": "WicklessBaron.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@WicklessBaron"
+    },
+    {
       "id": "WicklessBaron.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "WicklessBaronTrigger"
-    },
+      "param_upgrade": "@WicklessBaronTrigger"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "WicklessBaron.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "WicklessBaron"
+      "id": "WicklessBaronTrigger",
+      "bonus_damage": 5,
+      "bonus_hp": 5
     }
   ],
   "vfxs": [

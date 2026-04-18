@@ -66,6 +66,29 @@
       "artist": "Taylor Bray"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "Inhale.triggers0",
+      "descriptions": {
+        "key": "CardData_descriptionKey-e68c82bc0be64d42-4fc1a4f98df49554d99689f24e1041d2-v2",
+        "english": "[spawn] [effect0.power].",
+        "french": "<b>Génère</b> [effect0.power].",
+        "german": "[spawn] [effect0.power].",
+        "russian": "[spawn] х[effect0.power].",
+        "portuguese": "[spawn] [effect0.power].",
+        "chinese": "[spawn] [effect0.power]。",
+        "spanish": "[spawn] [effect0.power].",
+        "chinese_traditional": "[spawn][effect0.power]。",
+        "korean": "[spawn] [effect0.power].",
+        "japanese": "[spawn] [effect0.power]。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@Inhale.triggers0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "effects": [
     {
       "id": "Inhale.effects0",
@@ -81,7 +104,7 @@
       "target_mode": "room",
       "target_team": "monsters",
       "target_subtype": "SubtypesData_Horde",
-      "param_character": "MonsterFunguy",
+      "param_character": "@MonsterFunguy",
       "param_status_effects": [
         {
           "status": "horde",
@@ -117,6 +140,38 @@
         "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterFunguy",
+      "names": {
+        "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+        "english": "Funguy",
+        "french": "Champote",
+        "german": "Fungus",
+        "russian": "Грибоец",
+        "portuguese": "Fungo",
+        "chinese": "蘑菇人",
+        "spanish": "Lustrongo",
+        "chinese_traditional": "真菌人",
+        "korean": "균사체",
+        "japanese": "ファンガイ"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+        "asset_guid": "fe7cd97536db857489cc2e44c9f58c6b"
+      },
+      "impact_vfx": "@Inhale.triggers0.cardEffects0.paramCharacterData.impactVFX",
+      "size": 1,
+      "health": 4,
+      "attack_damage": 3,
+      "subtypes": [
+        "SubtypesData_FunGuy",
+        "SubtypesData_Shroom",
+        "SubtypesData_Horde"
+      ],
+      "chatter": "UnderlegionShroomFemaleChatterData"
     }
   ]
 }

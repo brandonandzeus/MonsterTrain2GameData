@@ -95,11 +95,16 @@
   ],
   "effects": [
     {
+      "id": "MorselJeweler.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MorselAntumbraJeweler"
+    },
+    {
       "id": "MorselJeweler.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "none",
-      "param_upgrade": "MorselJewelerTrigger"
+      "param_upgrade": "@MorselJewelerTrigger"
     },
     {
       "id": "MorselJeweler.effects0.paramCharacterData.triggers0.effects1",
@@ -112,11 +117,12 @@
           "count": 1
         }
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "MorselJeweler.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MorselAntumbraJeweler"
+      "id": "MorselJewelerTrigger",
+      "bonus_hp": 6
     }
   ],
   "vfxs": [

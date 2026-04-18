@@ -95,19 +95,26 @@
   ],
   "effects": [
     {
+      "id": "KeeperOfEchoes.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterKeeperOfEchoes"
+    },
+    {
       "id": "KeeperOfEchoes.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "room",
       "target_team": "monsters",
-      "param_upgrade": "WurmTransfuserTrigger",
+      "param_upgrade": "@WurmTransfuserTrigger",
       "additional_tooltips": [
         "@KeeperOfEchoes.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "KeeperOfEchoes.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterKeeperOfEchoes"
+      "id": "WurmTransfuserTrigger",
+      "bonus_damage": 2,
+      "bonus_hp": 1
     }
   ],
   "additional_tooltips": [

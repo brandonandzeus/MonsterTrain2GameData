@@ -69,6 +69,16 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
+  "upgrades": [
+    {
+      "id": "IncreaseRoomCapacity",
+      "room_modifier_upgrades": [
+        "@IncreaseRoomCapacity.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@IncreaseRoomCapacity.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "IncreaseRoomCapacity.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -81,7 +91,7 @@
       "id": "IncreaseRoomCapacity.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "IncreaseRoomCapacity",
+      "param_upgrade": "@IncreaseRoomCapacity",
       "additional_tooltips": [
         "@IncreaseRoomCapacity.effects0.additionalTooltips0"
       ]

@@ -23,7 +23,7 @@
       "artist": "Ron Kee"
     },
     {
-      "id": "ConductorSteward.effects0.paramCharacterData.unitAbility",
+      "id": "RailforgedChampionConductorStewardAbility",
       "names": {
         "key": "CardData_nameKey-15647850884ba452-1d372bc2578cb4146a64b474ccc0f724-v2",
         "english": "Train Whistle",
@@ -105,7 +105,7 @@
       "triggers": [
         "@ConductorSteward.effects0.paramCharacterData.triggers0"
       ],
-      "ability": "@ConductorSteward.effects0.paramCharacterData.unitAbility",
+      "ability": "@RailforgedChampionConductorStewardAbility",
       "size": 2,
       "health": 10,
       "attack_damage": 10,
@@ -141,22 +141,29 @@
   ],
   "effects": [
     {
+      "id": "ConductorSteward.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterForemanSteward"
+    },
+    {
       "id": "ConductorSteward.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_spawned_character",
       "target_team": "monsters",
-      "param_upgrade": "Plus5Attack5Health"
+      "param_upgrade": "@Plus5Attack5Health"
     },
     {
       "id": "ConductorSteward.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAttackWithUnit",
       "target_mode": "room",
       "target_team": "monsters"
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "ConductorSteward.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterForemanSteward"
+      "id": "Plus5Attack5Health",
+      "bonus_damage": 5,
+      "bonus_hp": 5
     }
   ],
   "vfxs": [

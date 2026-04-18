@@ -20,7 +20,7 @@
       "artist": "Genevieve Bega"
     },
     {
-      "id": "PyreborneChamp1.effects0.paramCharacterData.unitAbility",
+      "id": "PyreborneChampionAbilityStartingAbility",
       "names": {
         "key": "CardData_nameKey-587609feb17eaf84-0d2ab6dfd20b80c4092613fbbf335a1f-v2",
         "english": "Fenix Fire",
@@ -96,7 +96,7 @@
       },
       "attack_vfx": "@PyreborneChamp1.effects0.paramCharacterData.attackVFX",
       "impact_vfx": "@PyreborneChamp1.effects0.paramCharacterData.impactVFX",
-      "ability": "@PyreborneChamp1.effects0.paramCharacterData.unitAbility",
+      "ability": "@PyreborneChampionAbilityStartingAbility",
       "size": 3,
       "health": 20,
       "attack_damage": 15,
@@ -108,6 +108,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "PyreborneChamp1.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterChampionPyreborne1"
+    },
     {
       "id": "PyreborneChamp1.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectDamagePerSourceAttack",
@@ -129,11 +134,6 @@
         }
       ],
       "applied_vfx": "@PyreborneChamp1.effects0.paramCharacterData.impactVFX"
-    },
-    {
-      "id": "PyreborneChamp1.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterChampionPyreborne1"
     }
   ],
   "vfxs": [

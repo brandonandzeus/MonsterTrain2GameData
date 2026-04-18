@@ -69,6 +69,15 @@
       "artist": "Taylor Bray"
     }
   ],
+  "upgrades": [
+    {
+      "id": "AmplificationChamber",
+      "room_modifier_upgrades": [
+        "@Hellfurnace.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "persistent_vfx": "@Hellfurnace.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "Hellfurnace.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -87,13 +96,13 @@
       "id": "Hellfurnace.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "both",
-      "param_upgrade": "AmplificationChamber"
+      "param_upgrade": "@AmplificationChamber"
     }
   ],
   "vfxs": [
     {
       "id": "Hellfurnace.effects0.paramCardUpgradeData.persistentVFX",
-      "vfx_prefab_left": "FX_HellFurnace"
+      "vfx_prefab_left": "VfxAnchors"
     }
   ]
 }

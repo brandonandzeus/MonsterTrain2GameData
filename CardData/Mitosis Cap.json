@@ -57,7 +57,49 @@
       "artist": "Herrick Ong"
     }
   ],
+  "upgrades": [
+    {
+      "id": "MitosisCapUpgrade",
+      "trigger_upgrades": [
+        "@MitosisCap.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "filters": [
+        "@MitosisCap.effects0.paramCardUpgradeData.filters0"
+      ],
+      "bonus_hp": 15
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MitosisCap.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-22787364290c38dd-436699054c15c9d4e88791a62a1f8f2a-v2",
+        "english": "Gain a permanent copy of this unit. Cannot be equipped to Champion or Cardless units.",
+        "french": "Gagne une copie permanente de cette unité. Ne s'applique pas aux Champions ni aux unités sans carte.",
+        "german": "Erhalte eine permanente Kopie dieser Einheit. Kann nicht für Champion- oder kartenlose Einheiten ausgerüstet werden.",
+        "russian": "Дает постоянную копию этого бойца. Нельзя использовать на героях или бойцах, лишенных карты.",
+        "portuguese": "Recebe uma cópia permanente desta unidade. Não pode ser equipada em unidades do tipo Campeão ou Sem Carta.",
+        "chinese": "获得该单位的永久复制体。勇者或无卡牌单位无法装备。",
+        "spanish": "Obtienes una copia permanente de esta unidad. No puede equiparse a unidades Campeón ni Sin carta.",
+        "chinese_traditional": "永久獲得一張此單位。不能裝備到勇士或無卡牌單位上。",
+        "korean": "이 유닛의 영구 복제본을 획득합니다. 영웅 또는 카드 없음 유닛에는 장비할 수 없습니다.",
+        "japanese": "このユニットの永続的な複製を得る。チャンピオンまたはカードレスユニットには装着できない。"
+      },
+      "trigger": "on_encounter_complete",
+      "effects": [
+        "@MitosisCap.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "MitosisCap.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@MitosisCapUpgrade",
+      "applied_vfx": "@MitosisCap.effects0.appliedVFX"
+    },
     {
       "id": "MitosisCap.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddUnitCard",
@@ -66,14 +108,6 @@
       "param_int_2": 1,
       "param_bool": true,
       "param_bool_2": true
-    },
-    {
-      "id": "MitosisCap.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "MitosisCapUpgrade",
-      "applied_vfx": "@MitosisCap.effects0.appliedVFX"
     }
   ],
   "vfxs": [
@@ -84,6 +118,22 @@
         "asset_guid": "ff87658ccceedb948a154c442948635b"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "MitosisCap.effects0.paramCardUpgradeData.filters0",
+      "excluded_status": [
+        {
+          "status": "cardless",
+          "count": 0
+        }
+      ],
+      "excluded_subtypes_operator": "and",
+      "excluded_subtypes": [
+        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
+      ],
+      "excluded_status_operator": "and"
     }
   ]
 }

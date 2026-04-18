@@ -67,6 +67,16 @@
       "artist": "Luke Banke"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "SilverStrike.traits0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@SilverStrike.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "traits": [
     {
       "id": "SilverStrike.traits0",
@@ -84,7 +94,7 @@
         "korean": "[moonlit]: 대신 2번 피해를 줍니다.",
         "japanese": "[moonlit]：代わりにダメージを2回与える。"
       },
-      "param_upgrade": "SilverStrike_Moonlit_Upgrade",
+      "param_upgrade": "@SilverStrike_Moonlit_Upgrade",
       "param_tracked_value": "moon_phase",
       "param_int": 2,
       "param_bool": true
@@ -92,19 +102,27 @@
   ],
   "effects": [
     {
-      "id": "SilverStrike.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
-      "name": "CardEffectDamage",
-      "target_mode": "front_in_room",
-      "target_team": "heroes",
-      "param_int": 25
-    },
-    {
       "id": "SilverStrike.effects0",
       "name": "CardEffectDamage",
       "target_mode": "front_in_room",
       "target_team": "heroes",
       "param_int": 25,
       "applied_vfx": "@SilverStrike.effects0.appliedVFX"
+    },
+    {
+      "id": "SilverStrike.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
+      "name": "CardEffectDamage",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "param_int": 25
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SilverStrike_Moonlit_Upgrade",
+      "card_trigger_upgrades": [
+        "@SilverStrike.traits0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ]
     }
   ],
   "vfxs": [

@@ -68,6 +68,24 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "Gravity.traits0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@Gravity.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    },
+    {
+      "id": "Gravity.traits1.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@Gravity.traits1.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "traits": [
     {
       "id": "Gravity.traits0",
@@ -85,7 +103,7 @@
         "korean": "[moonshade]: [descend].",
         "japanese": "[moonshade]：[descend]。"
       },
-      "param_upgrade": "GravityDescend_Upgrade",
+      "param_upgrade": "@GravityDescend_Upgrade",
       "param_tracked_value": "moon_phase",
       "param_int": 1,
       "param_int_2": 1,
@@ -107,7 +125,7 @@
         "korean": "[moonlit]: [ascend].",
         "japanese": "[moonlit]：[ascend]。"
       },
-      "param_upgrade": "GravityAscend_Upgrade",
+      "param_upgrade": "@GravityAscend_Upgrade",
       "param_tracked_value": "moon_phase",
       "param_int": 2,
       "param_int_2": 1,
@@ -115,6 +133,14 @@
     }
   ],
   "effects": [
+    {
+      "id": "Gravity.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_int": 5,
+      "applied_vfx": "@Gravity.effects0.appliedVFX"
+    },
     {
       "id": "Gravity.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
       "name": "CardEffectBump",
@@ -128,14 +154,46 @@
       "target_mode": "last_targeted_characters",
       "target_team": "both",
       "param_int": 1
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GravityDescend_Upgrade",
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-10b1fcabaf470c1a-0e2955421435bbd43b5e50212d584763-v2",
+        "english": "[moonshade]: [descend]",
+        "french": "<nobr>[moonshade] :</nobr> [descend].",
+        "german": "[moonshade]: [descend]",
+        "russian": "[moonshade]: [descend]",
+        "portuguese": "[moonshade]: [descend]",
+        "chinese": "[moonshade]：[descend]",
+        "spanish": "[moonshade]: [descend].",
+        "chinese_traditional": "[moonshade]：[descend]",
+        "korean": "[moonshade]: [descend]",
+        "japanese": "[moonshade]：[descend]"
+      },
+      "card_trigger_upgrades": [
+        "@Gravity.traits0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ]
     },
     {
-      "id": "Gravity.effects0",
-      "name": "CardEffectDamage",
-      "target_mode": "drop_target_character",
-      "target_team": "both",
-      "param_int": 5,
-      "applied_vfx": "@Gravity.effects0.appliedVFX"
+      "id": "GravityAscend_Upgrade",
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-dd7fb7d0104313c4-1b1de250d07e4644980b8a881674fdb3-v2",
+        "english": "[moonlit]: [ascend].",
+        "french": "<nobr>[moonlit] :</nobr> [ascend].",
+        "german": "[moonlit]: [ascend].",
+        "russian": "[moonlit]: [ascend].",
+        "portuguese": "[moonlit]: [ascend].",
+        "chinese": "[moonlit]：[ascend]。",
+        "spanish": "[moonlit]: [ascend].",
+        "chinese_traditional": "[moonlit]：[ascend]。",
+        "korean": "[moonlit]: [ascend].",
+        "japanese": "[moonlit]：[ascend]。"
+      },
+      "card_trigger_upgrades": [
+        "@Gravity.traits1.paramCardUpgradeData.cardTriggerUpgrades0"
+      ]
     }
   ],
   "vfxs": [

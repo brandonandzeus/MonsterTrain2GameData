@@ -35,7 +35,7 @@
           "english": "“If I must fall, may I at least grant you time to escape.”\n—last words of Ardania, forbidden younger sister of Arduhn and Ekka",
           "french": "<nobr>« Si</nobr> je dois tomber, laissez-moi au moins gagner du temps pour que vous puissiez vous <nobr>échapper. »</nobr> \n— Dernières paroles d'Ardania, sœur cadette d'Arduhn et d'Ekka",
           "german": "„Wenn ich schon falle, dann verschaffe ich euch wenigstens Zeit zur Flucht.“\n—Letzte Worte von Ardania, verbotene kleine Schwester von Arduhn und Ekka",
-          "russian": "«Если мне суждено погибнуть, то я хотя бы выиграю для вас время на побег»._x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x000D_\n— Последние слова Ардании, младшей сестры Ардана и Экки.",
+          "russian": "«Если мне суждено погибнуть, то я хотя бы выиграю для вас время на побег».\n— Последние слова Ардании, младшей сестры Ардана и Экки.",
           "portuguese": "“Se eu tiver que morrer, posso pelo menos dar a vocês tempo para escaparem.”\n— Últimas palavras de Ardania, irmã mais nova e proibida de Arduhn e Ekka",
           "chinese": "“如果我必死无疑，那至少让我为你们争取逃跑的时间吧。”\n——阿杜恩与艾卡的妹妹，禁忌的阿尔达尼亚的遗言。",
           "spanish": "«Si debo caer, al menos os concederé tiempo para escapar».\n—Últimas palabras de Ardania la Prohibida, hermana pequeña de Arduhn y Ekka",
@@ -69,11 +69,29 @@
       "artist": "Samuel Lim"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "Heavenfall.traits0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@Heavenfall.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    },
+    {
+      "id": "Heavenfall.traits1.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@Heavenfall.traits1.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "traits": [
     {
       "id": "Heavenfall.traits0",
       "name": "CardTraitAddCardUpgradeOnMoonPhase",
-      "param_upgrade": "HeavenfallRoom_Upgrade",
+      "param_upgrade": "@HeavenfallRoom_Upgrade",
       "param_tracked_value": "moon_phase",
       "param_int": 1
     },
@@ -93,13 +111,20 @@
         "korean": "[moonlit]: 대신 모든 층에 피해를 줍니다.",
         "japanese": "[moonlit]：代わりにすべてのフロアにダメージを与える。"
       },
-      "param_upgrade": "HeavenfallAll_Upgrade",
+      "param_upgrade": "@HeavenfallAll_Upgrade",
       "param_tracked_value": "moon_phase",
       "param_int": 2,
       "param_bool": true
     }
   ],
   "effects": [
+    {
+      "id": "Heavenfall.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "none",
+      "param_int": 80
+    },
     {
       "id": "Heavenfall.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
       "name": "CardEffectDamage",
@@ -115,13 +140,20 @@
       "target_team": "heroes",
       "param_int": 80,
       "applied_vfx": "@Heavenfall.traits0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0.appliedVFX"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "HeavenfallRoom_Upgrade",
+      "card_trigger_upgrades": [
+        "@Heavenfall.traits0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ]
     },
     {
-      "id": "Heavenfall.effects0",
-      "name": "CardEffectDamage",
-      "target_mode": "room",
-      "target_team": "none",
-      "param_int": 80
+      "id": "HeavenfallAll_Upgrade",
+      "card_trigger_upgrades": [
+        "@Heavenfall.traits1.paramCardUpgradeData.cardTriggerUpgrades0"
+      ]
     }
   ],
   "vfxs": [

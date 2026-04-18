@@ -94,10 +94,15 @@
   ],
   "effects": [
     {
+      "id": "ShardsoulCarver.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterShardsoulCarver"
+    },
+    {
       "id": "ShardsoulCarver.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus3Attack",
+      "param_upgrade": "@Plus3Attack",
       "additional_tooltips": [
         "@ShardsoulCarver.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
       ]
@@ -112,11 +117,12 @@
           "count": 3
         }
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "ShardsoulCarver.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterShardsoulCarver"
+      "id": "Plus3Attack",
+      "bonus_damage": 3
     }
   ],
   "additional_tooltips": [

@@ -98,6 +98,11 @@
   ],
   "effects": [
     {
+      "id": "Sporelauncher.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterSporelauncher"
+    },
+    {
       "id": "Sporelauncher.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
@@ -108,22 +113,9 @@
           "count": 2
         }
       ]
-    },
-    {
-      "id": "Sporelauncher.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterSporelauncher"
     }
   ],
   "vfxs": [
-    {
-      "id": "Sporelauncher.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/SporeLauncher/FX_SporeLauncherAttack.prefab",
-        "asset_guid": "4a35a925354baff4b8e35792f9b2a15d"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "Sporelauncher.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -131,6 +123,14 @@
         "asset_guid": "ee20c38e12da5444fb6bb40f2677cc8e"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "Sporelauncher.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SporeLauncher/FX_SporeLauncherAttack.prefab",
+        "asset_guid": "4a35a925354baff4b8e35792f9b2a15d"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

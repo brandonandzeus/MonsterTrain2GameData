@@ -25,7 +25,7 @@
         "portuguese": "[spawn] [effect0.power]. Para cada [trait0.tertiarypower] cartas em seu deck, <b>Convoque</b> mais [trait0.power].",
         "chinese": "[spawn] [effect0.power]。你的卡组每有 [trait0.tertiarypower] 张牌，再[spawn] [trait0.power]。",
         "spanish": "[spawn] [effect0.power]. Por cada [trait0.tertiarypower] cartas en tu mazo, <b>Genera</b> [trait0.power] más.",
-        "chinese_traditional": "[spawn][effect0.power]。你牌組中每張[trait0.tertiarypower]牌，_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x005F_x000D_\n都可額外獲得[spawn][trait0.power]。",
+        "chinese_traditional": "[spawn][effect0.power]。你牌組中每張[trait0.tertiarypower]牌，都可額外獲得[spawn][trait0.power]。",
         "korean": "[spawn] [effect0.power]. 덱의 카드 [trait0.tertiarypower]장당 추가로 [trait0.power]회 [spawn]합니다.",
         "japanese": "[spawn] [effect0.power]。デッキ内のカード[trait0.tertiarypower]枚につき、さらに[spawn] [trait0.power]。"
       },
@@ -91,7 +91,7 @@
       "target_mode": "room",
       "target_team": "monsters",
       "target_subtype": "SubtypesData_Horde",
-      "param_character": "MonsterFunguy",
+      "param_character": "@MonsterFunguy",
       "param_status_effects": [
         {
           "status": "horde",
@@ -119,6 +119,38 @@
         "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterFunguy",
+      "names": {
+        "key": "CharacterData_nameKey-b037bf2127b60553-f071745b25c9cad4fa2a32567038b969-v2",
+        "english": "Funguy",
+        "french": "Champote",
+        "german": "Fungus",
+        "russian": "Грибоец",
+        "portuguese": "Fungo",
+        "chinese": "蘑菇人",
+        "spanish": "Lustrongo",
+        "chinese_traditional": "真菌人",
+        "korean": "균사체",
+        "japanese": "ファンガイ"
+      },
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_FungGuy.prefab",
+        "asset_guid": "fe7cd97536db857489cc2e44c9f58c6b"
+      },
+      "impact_vfx": "@DigDeep.effects0.paramCharacterData.impactVFX",
+      "size": 1,
+      "health": 4,
+      "attack_damage": 3,
+      "subtypes": [
+        "SubtypesData_FunGuy",
+        "SubtypesData_Shroom",
+        "SubtypesData_Horde"
+      ],
+      "chatter": "UnderlegionShroomFemaleChatterData"
     }
   ]
 }

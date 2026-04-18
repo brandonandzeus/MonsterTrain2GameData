@@ -69,7 +69,46 @@
       "artist": "Luke Banke"
     }
   ],
+  "upgrades": [
+    {
+      "id": "ElectricityChamber_Upgrade",
+      "trigger_upgrades": [
+        "@ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "persistent_vfx": "@ElectricityChamber.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades1",
+      "trigger": "on_reanimated",
+      "effects": [
+        "@ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
   "effects": [
+    {
+      "id": "ElectricityChamber.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@ElectricityChamber_Upgrade",
+      "additional_tooltips": [
+        "@ElectricityChamber.effects0.additionalTooltips0",
+        "@ElectricityChamber.effects0.additionalTooltips1",
+        "@ElectricityChamber.effects0.additionalTooltips2"
+      ]
+    },
     {
       "id": "ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -79,28 +118,6 @@
           "status": "spikes",
           "count": 8
         }
-      ]
-    },
-    {
-      "id": "ElectricityChamber.effects0.paramCardUpgradeData.triggerUpgrades1.effects0",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "spikes",
-          "count": 8
-        }
-      ]
-    },
-    {
-      "id": "ElectricityChamber.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "ElectricityChamber_Upgrade",
-      "additional_tooltips": [
-        "@ElectricityChamber.effects0.additionalTooltips0",
-        "@ElectricityChamber.effects0.additionalTooltips1",
-        "@ElectricityChamber.effects0.additionalTooltips2"
       ]
     }
   ],

@@ -22,7 +22,7 @@
       "artist": "Aaron Lovett"
     },
     {
-      "id": "HoardAcolyte.effects0.paramCharacterData.unitAbility",
+      "id": "FreezeAbility",
       "names": {
         "key": "CardData_nameKey-f4bc7cb388c8e95c-3bcee3753571b4445a424e7542499b2e-v2",
         "english": "Freeze Ray",
@@ -97,7 +97,7 @@
       },
       "projectile_vfx": "@HoardAcolyte.effects0.paramCharacterData.projectilePrefab",
       "impact_vfx": "@HoardAcolyte.effects0.paramCharacterData.impactVFX",
-      "ability": "@HoardAcolyte.effects0.paramCharacterData.unitAbility",
+      "ability": "@FreezeAbility",
       "size": 1,
       "health": 3,
       "attack_damage": 5,
@@ -109,25 +109,17 @@
   ],
   "effects": [
     {
+      "id": "HoardAcolyte.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterHoardTotem"
+    },
+    {
       "id": "HoardAcolyte.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectFreezeCard",
       "should_fail_to_cast_if_test_fails": true
-    },
-    {
-      "id": "HoardAcolyte.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterHoardTotem"
     }
   ],
   "vfxs": [
-    {
-      "id": "HoardAcolyte.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/Molluscmage/FX_MolluscmageProjectile.prefab",
-        "asset_guid": "ccd93bd1e0690514999880e91963cb27"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "HoardAcolyte.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -135,6 +127,14 @@
         "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "HoardAcolyte.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Molluscmage/FX_MolluscmageProjectile.prefab",
+        "asset_guid": "ccd93bd1e0690514999880e91963cb27"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

@@ -56,7 +56,54 @@
       "artist": "Andrew Vera"
     }
   ],
+  "upgrades": [
+    {
+      "id": "ForgottenTrade",
+      "status_effect_upgrades": [
+        {
+          "status": "scorch",
+          "count": 2
+        }
+      ],
+      "trigger_upgrades": [
+        "@ForgottenTrade.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ForgottenTrade.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-d960ce344122e7ad-b49d87dbbc5902842af9ec4dc676eb3c-v2",
+        "english": "Gain [effect0.power][corrupt].",
+        "french": "Octroie [effect0.power][corrupt].",
+        "german": "Erhalte [effect0.power][corrupt].",
+        "russian": "Дает [effect0.power][corrupt].",
+        "portuguese": "Recebe [effect0.power][corrupt].",
+        "chinese": "获得 [effect0.power][corrupt]。",
+        "spanish": "Añade [effect0.power][corrupt].",
+        "chinese_traditional": "獲得[effect0.power][corrupt]。",
+        "korean": "[effect0.power][corrupt]을 획득합니다.",
+        "japanese": "[effect0.power][corrupt]を得る。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@ForgottenTrade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "ForgottenTrade.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@ForgottenTrade",
+      "additional_tooltips": [
+        "@ForgottenTrade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0.additionalTooltips0"
+      ],
+      "applied_vfx": "@ForgottenTrade.effects0.appliedVFX"
+    },
     {
       "id": "ForgottenTrade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAdjustCorruption",
@@ -65,17 +112,6 @@
       ],
       "param_int": 1,
       "param_bool": true
-    },
-    {
-      "id": "ForgottenTrade.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "ForgottenTrade",
-      "additional_tooltips": [
-        "@ForgottenTrade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0.additionalTooltips0"
-      ],
-      "applied_vfx": "@ForgottenTrade.effects0.appliedVFX"
     }
   ],
   "additional_tooltips": [

@@ -22,7 +22,7 @@
       "artist": "Luke Banke"
     },
     {
-      "id": "Glugsider.effects0.paramCharacterData.unitAbility",
+      "id": "GlugsiderAbility",
       "names": {
         "key": "CardData_nameKey-8708a2a55b9a79d0-a5a1680cc2f24414c947c61b05bf7f31-v2",
         "english": "Eat",
@@ -109,7 +109,7 @@
       "triggers": [
         "@Glugsider.effects0.paramCharacterData.triggers0"
       ],
-      "ability": "@Glugsider.effects0.paramCharacterData.unitAbility",
+      "ability": "@GlugsiderAbility",
       "size": 4,
       "block_visual_size_increase": true,
       "health": 100,
@@ -145,6 +145,11 @@
   ],
   "effects": [
     {
+      "id": "Glugsider.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterGlugsider"
+    },
+    {
       "id": "Glugsider.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectHeal",
       "target_mode": "self",
@@ -159,11 +164,6 @@
       "anim_to_play": "attack",
       "param_bool_3": true,
       "applied_to_self_vfx": "@Glugsider.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "Glugsider.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterGlugsider"
     }
   ],
   "vfxs": [

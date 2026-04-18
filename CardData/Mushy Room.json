@@ -69,6 +69,15 @@
       "artist": "Luke Banke"
     }
   ],
+  "upgrades": [
+    {
+      "id": "MushyRoom_Upgrade",
+      "room_modifier_upgrades": [
+        "@MushyRoom.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "persistent_vfx": "@MushyRoom.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "MushyRoom.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -80,6 +89,12 @@
   ],
   "effects": [
     {
+      "id": "MushyRoom.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "both",
+      "param_upgrade": "@MushyRoom_Upgrade"
+    },
+    {
       "id": "MushyRoom.effects0.paramCardUpgradeData.roomModifierUpgrades0.paramCardEffects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
@@ -90,12 +105,6 @@
           "count": 3
         }
       ]
-    },
-    {
-      "id": "MushyRoom.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "both",
-      "param_upgrade": "MushyRoom_Upgrade"
     }
   ],
   "vfxs": [

@@ -58,13 +58,25 @@
       "artist": "Luke Banke"
     }
   ],
+  "upgrades": [
+    {
+      "id": "MoonlitGlaive_upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "mageblade",
+          "count": 3
+        }
+      ],
+      "bonus_damage": 5
+    }
+  ],
   "effects": [
     {
       "id": "MoonlitGlaive.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "MoonlitGlaive_upgrade",
+      "param_upgrade": "@MoonlitGlaive_upgrade",
       "additional_tooltips": [
         "@MoonlitGlaive.effects0.additionalTooltips0"
       ],

@@ -22,7 +22,7 @@
       "artist": "Loy Bouttamy"
     },
     {
-      "id": "GoldyWhelp.effects0.paramCharacterData.unitAbility",
+      "id": "GoldmanceAbility",
       "names": {
         "key": "CardData_nameKey-3d8352e260d6c759-fb45937e8eacfb948914542d0ffb0800-v2",
         "english": "Moneymaker",
@@ -101,7 +101,7 @@
         "asset_guid": "5b68ec9cbec568a4397d455d3a19c687"
       },
       "impact_vfx": "@GoldyWhelp.effects0.paramCharacterData.impactVFX",
-      "ability": "@GoldyWhelp.effects0.paramCharacterData.unitAbility",
+      "ability": "@GoldmanceAbility",
       "size": 1,
       "health": 1,
       "ascends_train_automatically": false,
@@ -114,6 +114,11 @@
   ],
   "effects": [
     {
+      "id": "GoldyWhelp.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterGoldyWhelp"
+    },
+    {
       "id": "GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectRewardGoldPerDragonHoard",
       "additional_tooltips": [
@@ -121,11 +126,6 @@
       ],
       "param_int": 5,
       "applied_to_self_vfx": "@GoldyWhelp.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "GoldyWhelp.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterGoldyWhelp"
     }
   ],
   "additional_tooltips": [

@@ -56,6 +56,29 @@
       "artist": "Hung Bui"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "TitanCurse.triggers0",
+      "descriptions": {
+        "key": "CardData_descriptionKey-c2e0941e73684f25-599fa1f0df134034cada287f88e81489-v2",
+        "english": "Spells in your deck cost +[effect0.upgrade.costreductionabs][ember].",
+        "french": "Les sorts du deck coûtent +[effect0.upgrade.costreductionabs][ember].",
+        "german": "Zauber in deinem Deck kosten +[effect0.upgrade.costreductionabs][ember].",
+        "russian": "Чары в колоде стоят +[effect0.upgrade.costreductionabs][ember].",
+        "portuguese": "Os feitiços do seu deck custam +[effect0.upgrade.costreductionabs][ember].",
+        "chinese": "你卡组中的法术费用 +[effect0.upgrade.costreductionabs][ember]。",
+        "spanish": "Los hechizos de tu mazo cuestan +[effect0.upgrade.costreductionabs][ember].",
+        "chinese_traditional": "你牌組中的法術卡牌的費用增加[effect0.upgrade.costreductionabs][ember]。",
+        "korean": "덱에 있는 모든 주문 카드의 비용이 +[effect0.upgrade.costreductionabs][ember] 증가합니다.",
+        "japanese": "デッキ内の呪文のコスト+[effect0.upgrade.costreductionabs][ember]。"
+      },
+      "trigger": "on_unplayed_negative",
+      "effects": [
+        "@TitanCurse.triggers0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "traits": [
     {
       "id": "TitanCurse.traits0",
@@ -75,10 +98,24 @@
     {
       "id": "TitanCurse.triggers0.cardEffects0",
       "name": "CardEffectAddTempCardUpgradeToSpellsInDeck",
-      "param_upgrade": "TitanCurse_Upgrade"
+      "param_upgrade": "@TitanCurse_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TitanCurse_Upgrade",
+      "use_upgrade_highlight_tags": false,
+      "cost_reduction": -1
     }
   ],
   "vfxs": [
+    {
+      "id": "TitanCurse.specialEdgeVFX",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_CardReserve_PS.prefab",
+        "asset_guid": "8fd1704a586fb0b42a61a5e85cb590e5"
+      }
+    },
     {
       "id": "TitanCurse.effects0.appliedToSelfVFX",
       "vfx_left": {
@@ -86,13 +123,6 @@
         "asset_guid": "bad524df02386be428c8e5b640221943"
       },
       "spawn_location": "room_center"
-    },
-    {
-      "id": "TitanCurse.specialEdgeVFX",
-      "vfx_left": {
-        "asset_name": "Assets/FX/FX_CardReserve_PS.prefab",
-        "asset_guid": "8fd1704a586fb0b42a61a5e85cb590e5"
-      }
     }
   ]
 }

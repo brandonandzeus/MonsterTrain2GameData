@@ -70,7 +70,48 @@
       "artist": "Loy Bouttamy"
     }
   ],
+  "upgrades": [
+    {
+      "id": "RageRoom",
+      "trigger_upgrades": [
+        "@RageRoom.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@RageRoom.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "hide_icon_on_card": true,
+      "show_description_on_cards": true,
+      "persistent_vfx": "@RageRoom.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "RageRoom.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_attacking",
+      "effects": [
+        "@RageRoom.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "RageRoom.effects0.paramCardUpgradeData.triggerUpgrades1",
+      "trigger": "on_hit",
+      "effects": [
+        "@RageRoom.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
   "effects": [
+    {
+      "id": "RageRoom.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@RageRoom",
+      "additional_tooltips": [
+        "@RageRoom.effects0.additionalTooltips0",
+        "@RageRoom.effects0.additionalTooltips1",
+        "@RageRoom.effects0.additionalTooltips2"
+      ]
+    },
     {
       "id": "RageRoom.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -80,28 +121,6 @@
           "status": "buff",
           "count": 2
         }
-      ]
-    },
-    {
-      "id": "RageRoom.effects0.paramCardUpgradeData.triggerUpgrades1.effects0",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "buff",
-          "count": 2
-        }
-      ]
-    },
-    {
-      "id": "RageRoom.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "RageRoom",
-      "additional_tooltips": [
-        "@RageRoom.effects0.additionalTooltips0",
-        "@RageRoom.effects0.additionalTooltips1",
-        "@RageRoom.effects0.additionalTooltips2"
       ]
     }
   ],

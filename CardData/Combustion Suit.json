@@ -57,7 +57,47 @@
       "artist": "Hannah Lim"
     }
   ],
+  "upgrades": [
+    {
+      "id": "CombustibleSuit_Upgrade",
+      "trigger_upgrades": [
+        "@CombustibleSuit.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 10,
+      "bonus_hp": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "CombustibleSuit.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-a5bc3c9dd158e680-ac4a558fb692ceb4b8b63ddca12fe773-v2",
+        "english": "Apply [unstable] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [unstable] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [unstable] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает [unstable] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [unstable] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [unstable] [effect0.status0.power]。",
+        "spanish": "Añade [unstable] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[unstable][effect0.status0.power]。",
+        "korean": "적 유닛들에게 [unstable] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[unstable] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking_before_damage",
+      "effects": [
+        "@CombustibleSuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "CombustibleSuit.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@CombustibleSuit_Upgrade",
+      "applied_vfx": "@CombustibleSuit.effects0.appliedVFX"
+    },
     {
       "id": "CombustibleSuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -69,14 +109,6 @@
           "count": 5
         }
       ]
-    },
-    {
-      "id": "CombustibleSuit.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "CombustibleSuit_Upgrade",
-      "applied_vfx": "@CombustibleSuit.effects0.appliedVFX"
     }
   ],
   "vfxs": [

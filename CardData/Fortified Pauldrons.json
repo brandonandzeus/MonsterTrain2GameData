@@ -58,7 +58,51 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Fortify",
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 6
+        }
+      ],
+      "trigger_upgrades": [
+        "@Fortify.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Fortify.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-dd07966ba686a5e0-1a77eed5a07da6b4286cab89432cbaa3-v2",
+        "english": "Gain [armor] [effect0.status0.power].",
+        "french": "Octroie [armor] [effect0.status0.power].",
+        "german": "Erhalte [armor] [effect0.status0.power].",
+        "russian": "Дается [armor] х[effect0.status0.power].",
+        "portuguese": "Recebe [armor] [effect0.status0.power].",
+        "chinese": "获得 [armor] [effect0.status0.power]。",
+        "spanish": "Añade [armor] [effect0.status0.power].",
+        "chinese_traditional": "獲得[armor][effect0.status0.power]。",
+        "korean": "[armor][effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[armor] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Fortify.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "Fortify.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@Fortify",
+      "applied_vfx": "@Fortify.effects0.appliedVFX"
+    },
     {
       "id": "Fortify.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -69,14 +113,6 @@
           "count": 6
         }
       ]
-    },
-    {
-      "id": "Fortify.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "Fortify",
-      "applied_vfx": "@Fortify.effects0.appliedVFX"
     }
   ],
   "vfxs": [

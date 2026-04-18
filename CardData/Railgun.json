@@ -23,7 +23,7 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     },
     {
-      "id": "Railgun.effects0.paramCharacterData.unitAbility",
+      "id": "RailgunnerFireAbility",
       "names": {
         "key": "CardData_nameKey-1f44c74cdda66dc7-193fec2dd53d8394e9503d4d4b906ca5-v2",
         "english": "Overdrive",
@@ -133,7 +133,7 @@
           "count": 1
         }
       ],
-      "ability": "@Railgun.effects0.paramCharacterData.unitAbility",
+      "ability": "@RailgunnerFireAbility",
       "size": 2,
       "health": 5,
       "attack_damage": 20,
@@ -147,6 +147,11 @@
   ],
   "effects": [
     {
+      "id": "Railgun.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterRailgun"
+    },
+    {
       "id": "Railgun.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
@@ -156,11 +161,6 @@
           "count": 0
         }
       ]
-    },
-    {
-      "id": "Railgun.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterRailgun"
     }
   ],
   "vfxs": [

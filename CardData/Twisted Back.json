@@ -54,6 +54,21 @@
       "artist": "Lauren Russo"
     }
   ],
+  "upgrades": [
+    {
+      "id": "TwistedAssistantsBack_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@TwistedAssistantsBack.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 15
+    }
+  ],
   "traits": [
     {
       "id": "TwistedAssistantsBack.traits0",
@@ -61,7 +76,37 @@
       "trait_is_removable": false
     }
   ],
+  "character_triggers": [
+    {
+      "id": "TwistedAssistantsBack.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-5ac9f002d67545ca-7060396217f7b2346a9b40b4d2c8026f-v2",
+        "english": "Gain [rage] [effect0.status0.power].",
+        "french": "Octroie [rage] [effect0.status0.power].",
+        "german": "Erhalte [rage] [effect0.status0.power].",
+        "russian": "Дает [rage] х[effect0.status0.power].",
+        "portuguese": "Recebe [rage] [effect0.status0.power].",
+        "chinese": "获得 [rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power].",
+        "chinese_traditional": "獲得[rage][effect0.status0.power]。",
+        "korean": "[rage] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[rage] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@TwistedAssistantsBack.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "TwistedAssistantsBack.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@TwistedAssistantsBack_Upgrade",
+      "applied_vfx": "@TwistedAssistantsBack.effects0.appliedVFX"
+    },
     {
       "id": "TwistedAssistantsBack.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -72,14 +117,6 @@
           "count": 2
         }
       ]
-    },
-    {
-      "id": "TwistedAssistantsBack.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "TwistedAssistantsBack_Upgrade",
-      "applied_vfx": "@TwistedAssistantsBack.effects0.appliedVFX"
     }
   ],
   "vfxs": [

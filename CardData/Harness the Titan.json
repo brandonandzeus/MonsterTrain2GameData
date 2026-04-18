@@ -71,10 +71,21 @@
       "name": "CardEffectAddTempCardUpgradeToCardsInHand",
       "target_mode": "room",
       "target_team": "none",
-      "param_upgrade": "Magic",
+      "param_upgrade": "@Magic",
       "additional_tooltips": [
         "@MagicPowerHand.effects0.additionalTooltips0"
       ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Magic",
+      "filters": [
+        "@MagicPowerHand.effects0.paramCardUpgradeData.filters0",
+        "@MagicPowerHand.effects0.paramCardUpgradeData.filters1"
+      ],
+      "bonus_damage": 10,
+      "bonus_heal": 10
     }
   ],
   "additional_tooltips": [
@@ -106,6 +117,27 @@
         "korean": "마법력",
         "japanese": "魔力"
       }
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "MagicPowerHand.effects0.paramCardUpgradeData.filters0",
+      "card_type": "spell",
+      "required_effects_operator": "or",
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectHeal",
+        "CardEffectHealAndDamageRelative",
+        "CardEffectHealAndOverheal",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerHp"
+      ]
+    },
+    {
+      "id": "MagicPowerHand.effects0.paramCardUpgradeData.filters1",
+      "disallowed_pools": [
+        "SpellsNotAllowedSpellPowerPool"
+      ]
     }
   ]
 }

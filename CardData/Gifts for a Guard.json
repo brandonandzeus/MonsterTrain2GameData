@@ -79,7 +79,7 @@
     {
       "id": "GiftsForAGuard.effects0",
       "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
-      "param_upgrade": "DrawSpellEnhance",
+      "param_upgrade": "@DrawSpellEnhance",
       "additional_tooltips": [
         "@GiftsForAGuard.effects0.additionalTooltips0",
         "@GiftsForAGuard.effects0.additionalTooltips1"
@@ -91,6 +91,17 @@
       "name": "CardEffectDrawType",
       "param_card_filter": "@GiftsForAGuard.effects1.paramCardFilter",
       "param_int": 3
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "DrawSpellEnhance",
+      "trait_upgrades": [
+        "@GiftsForAGuard.traits0"
+      ],
+      "bonus_damage": 30,
+      "cost_reduction": 99,
+      "bonus_heal": 30
     }
   ],
   "additional_tooltips": [
@@ -151,6 +162,25 @@
         "korean": "마법력",
         "japanese": "魔力"
       }
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "GiftsForAGuard.effects1.paramCardFilter",
+      "required_effects_operator": "or",
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectDamageByPercentRemainingHealth",
+        "CardEffectDamageByUnitsKilled",
+        "CardEffectDamagePerHp",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerTargetAttack",
+        "CardEffectDamageWithTrample",
+        "CardEffectHealAndDamageRelative"
+      ],
+      "disallowed_pools": [
+        "SpellsNotAllowedSpellPowerPool"
+      ]
     }
   ]
 }

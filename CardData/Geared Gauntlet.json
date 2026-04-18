@@ -59,7 +59,7 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     },
     {
-      "id": "GearedGauntlet.effects0.paramCardUpgradeData.unitAbilityUpgrade",
+      "id": "GearedGauntletAbility",
       "names": {
         "key": "CardData_nameKey-255cfce7ad28ad68-3aa0579408aa4ea40bfea399c004e252-v2",
         "english": "Wind-Up Punch",
@@ -100,7 +100,68 @@
       "can_ability_target_other_floors": true
     }
   ],
+  "upgrades": [
+    {
+      "id": "GearedGauntlet_Upgrade",
+      "ability_upgrade": "@GearedGauntletAbility",
+      "status_effect_upgrades": [
+        {
+          "status": "restricted",
+          "count": 1
+        },
+        {
+          "status": "burst",
+          "count": 2
+        }
+      ],
+      "trigger_upgrades": [
+        "@GearedGauntlet.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "GearedGauntlet.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-c147347cce527075-30690de80ba5494428c5721c63827c82-v2",
+        "english": "Gain [burst] [effect0.status0.power].",
+        "french": "Octroie [burst] [effect0.status0.power].",
+        "german": "Erhalte [burst] [effect0.status0.power].",
+        "russian": "Дается [burst] х[effect0.status0.power].",
+        "portuguese": "Recebe [burst] [effect0.status0.power].",
+        "chinese": "获得 [burst] [effect0.status0.power]。",
+        "spanish": "Añade [burst] [effect0.status0.power].",
+        "chinese_traditional": "獲得[burst][effect0.status0.power]。",
+        "korean": "[burst] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[burst] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@GearedGauntlet.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "GearedGauntlet.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@GearedGauntlet_Upgrade",
+      "applied_vfx": "@GearedGauntlet.effects0.appliedVFX"
+    },
+    {
+      "id": "GearedGauntlet.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "burst",
+          "count": 1
+        }
+      ]
+    },
     {
       "id": "GearedGauntlet.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
       "name": "CardEffectAttackWithUnit",
@@ -116,25 +177,6 @@
           "count": 999
         }
       ]
-    },
-    {
-      "id": "GearedGauntlet.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "burst",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "id": "GearedGauntlet.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "GearedGauntlet_Upgrade",
-      "applied_vfx": "@GearedGauntlet.effects0.appliedVFX"
     }
   ],
   "vfxs": [

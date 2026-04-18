@@ -55,20 +55,57 @@
       "artist": "Merilliza Chan"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "BloodthirstyBlade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectBuffEquipment",
-      "target_mode": "self",
-      "param_upgrade": "ChampionSword_Upgrade2"
+      "id": "ChampionSword_Upgrade",
+      "trigger_upgrades": [
+        "@BloodthirstyBlade.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "show_description_on_cards": true,
+      "bonus_damage": 4
     },
+    {
+      "id": "ChampionSword_Upgrade2",
+      "hide_icon_on_card": true,
+      "bonus_damage": 1
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BloodthirstyBlade.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-b28fcbb26ab4bd2b-beb7710adcf525a48bc7630107e0bddb-v2",
+        "english": "This equipment gains +[effect0.upgrade.bonusdamage][attack] permanently.",
+        "french": "Cet équipement gagne +[effect0.upgrade.bonusdamage][attack] définitivement.",
+        "german": "Diese Ausrüstung erhält permanent +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Это снаряжение навсегда получает +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Este equipamento recebe +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese": "这件装备永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Este equipo añade +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese_traditional": "此裝備永久獲得+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "이 장비를 사용하면 영구적으로 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "この装備品が永続的に+[effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@BloodthirstyBlade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "BloodthirstyBlade.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "ChampionSword_Upgrade",
+      "param_upgrade": "@ChampionSword_Upgrade",
       "applied_vfx": "@BloodthirstyBlade.effects0.appliedVFX"
+    },
+    {
+      "id": "BloodthirstyBlade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectBuffEquipment",
+      "target_mode": "self",
+      "param_upgrade": "@ChampionSword_Upgrade2"
     }
   ],
   "vfxs": [

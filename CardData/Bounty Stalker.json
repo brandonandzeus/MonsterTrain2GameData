@@ -107,27 +107,25 @@
   ],
   "effects": [
     {
+      "id": "BountyStalker.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@BountyStalker"
+    },
+    {
       "id": "BountyStalker.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus10Attack",
+      "param_upgrade": "@Plus10Attack",
       "param_int_3": 2
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "BountyStalker.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "BountyStalker"
+      "id": "Plus10Attack",
+      "bonus_damage": 10
     }
   ],
   "vfxs": [
-    {
-      "id": "BountyStalker.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/FX/FX_Projectile_BountyStalker.prefab",
-        "asset_guid": "318007af6a1396348ba5e78a504e0c84"
-      },
-      "spawn_location": "bone_status_effect_slot2"
-    },
     {
       "id": "BountyStalker.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -135,6 +133,14 @@
         "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "BountyStalker.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Projectile_BountyStalker.prefab",
+        "asset_guid": "318007af6a1396348ba5e78a504e0c84"
+      },
+      "spawn_location": "bone_status_effect_slot2"
     }
   ]
 }

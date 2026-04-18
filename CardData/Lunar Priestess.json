@@ -103,9 +103,14 @@
   ],
   "effects": [
     {
+      "id": "LunarPriestess.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterLunarPriestess"
+    },
+    {
       "id": "LunarPriestess.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddBattleCard",
-      "param_upgrade": "LunarPriestess_Upgrade",
+      "param_upgrade": "@LunarPriestess_Upgrade",
       "additional_tooltips": [
         "@LunarPriestess.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0",
         "@LunarPriestess.effects0.paramCharacterData.triggers0.effects0.additionalTooltips1",
@@ -114,11 +119,14 @@
       ],
       "param_int": 3,
       "param_card_pool": "MoonRitualOnlyPool"
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "LunarPriestess.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterLunarPriestess"
+      "id": "LunarPriestess_Upgrade",
+      "trait_upgrades": [
+        "@LunarPriestess.effects0.paramCharacterData.triggers0.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ]
     }
   ],
   "additional_tooltips": [

@@ -67,7 +67,7 @@
       "artist": "Mary Ngai-Virgo"
     },
     {
-      "id": "TomeOfTheLostPath.effects0.paramCardData",
+      "id": "AngelFlightAbility",
       "names": {
         "key": "CardData_nameKey-a44296787bec78c4-fb4fb77996d838a4bb351cb9e977a2a0-v2",
         "english": "Flight",
@@ -118,28 +118,20 @@
   ],
   "effects": [
     {
-      "id": "TomeOfTheLostPath.effects0.paramCardData.effects0",
-      "name": "CardEffectUnitAbilityTeleport",
-      "applied_to_self_vfx": "@TomeOfTheLostPath.effects0.paramCardData.effects0.appliedToSelfVFX"
-    },
-    {
       "id": "TomeOfTheLostPath.effects0",
       "name": "CardEffectSetUnitAbility",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_card": "@TomeOfTheLostPath.effects0.paramCardData",
+      "param_card": "@AngelFlightAbility",
       "applied_vfx": "@TomeOfTheLostPath.effects0.appliedVFX"
+    },
+    {
+      "id": "TomeOfTheLostPath.effects0.paramCardData.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@TomeOfTheLostPath.effects0.paramCardData.effects0.appliedToSelfVFX"
     }
   ],
   "vfxs": [
-    {
-      "id": "TomeOfTheLostPath.effects0.paramCardData.effects0.appliedToSelfVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
-        "asset_guid": "ad2e43302906f5e4b9dca11c8ae1e68e"
-      },
-      "spawn_location": "character_bottom"
-    },
     {
       "id": "TomeOfTheLostPath.effects0.appliedVFX",
       "vfx_left": {
@@ -147,6 +139,14 @@
         "asset_guid": "1acfd5926000a67468240ac8ccf6133d"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "TomeOfTheLostPath.effects0.paramCardData.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+        "asset_guid": "ad2e43302906f5e4b9dca11c8ae1e68e"
+      },
+      "spawn_location": "character_bottom"
     }
   ]
 }

@@ -60,7 +60,7 @@
       "artist": "Luke Banke"
     },
     {
-      "id": "TrapChute.effects0.paramCardUpgradeData.roomAbilityUpgrade",
+      "id": "TrapChuteAbility",
       "names": {
         "key": "CardData_nameKey-8b81f769314053f8-e7b894cdb8a95b64eb3c51d27bf028b8-v2",
         "english": "Trapdoor",
@@ -100,6 +100,14 @@
       "initial_keyboard_target": "front_friendly"
     }
   ],
+  "upgrades": [
+    {
+      "id": "TrapChute_Upgrade",
+      "room_ability_upgrade": "@TrapChuteAbility",
+      "show_description_on_cards": true,
+      "persistent_vfx": "@TrapChute.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "traits": [
     {
       "id": "TrapChute.traits0",
@@ -107,6 +115,12 @@
     }
   ],
   "effects": [
+    {
+      "id": "TrapChute.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "both",
+      "param_upgrade": "@TrapChute_Upgrade"
+    },
     {
       "id": "TrapChute.effects0.paramCardUpgradeData.roomAbilityUpgrade.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -125,12 +139,6 @@
       "target_mode": "room",
       "target_team": "heroes",
       "param_int": -2
-    },
-    {
-      "id": "TrapChute.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "both",
-      "param_upgrade": "TrapChute_Upgrade"
     }
   ],
   "vfxs": [

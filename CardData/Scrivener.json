@@ -23,7 +23,7 @@
       "artist": "Genevieve Bega"
     },
     {
-      "id": "Scrivener.effects0.paramCharacterData.unitAbility",
+      "id": "ScrivenerAbility",
       "names": {
         "key": "CardData_nameKey-575a3bb2fcd05b73-06092911555445847bff080321eb3397-v2",
         "english": "Spellweave",
@@ -105,7 +105,7 @@
       },
       "projectile_vfx": "@Scrivener.effects0.paramCharacterData.projectilePrefab",
       "impact_vfx": "@Scrivener.effects0.paramCharacterData.impactVFX",
-      "ability": "@Scrivener.effects0.paramCharacterData.unitAbility",
+      "ability": "@ScrivenerAbility",
       "size": 1,
       "health": 8,
       "ascends_train_automatically": false,
@@ -120,31 +120,30 @@
   ],
   "effects": [
     {
+      "id": "Scrivener.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@Scrivener"
+    },
+    {
       "id": "Scrivener.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
-      "param_upgrade": "ScrivenerAbility_Upgrade"
+      "param_upgrade": "@ScrivenerAbility_Upgrade"
     },
     {
       "id": "Scrivener.effects0.paramCharacterData.unitAbility.effects1",
       "name": "CardEffectDrawType",
       "param_card_filter": "@Scrivener.effects0.paramCharacterData.unitAbility.effects1.paramCardFilter",
       "param_int": 1
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "Scrivener.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "Scrivener"
+      "id": "ScrivenerAbility_Upgrade",
+      "cost_reduction": 1,
+      "x_cost_reduction": 1
     }
   ],
   "vfxs": [
-    {
-      "id": "Scrivener.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/Scrivener/FX_ScrivenerAttack.prefab",
-        "asset_guid": "310221325bcec464f95581a737be4f22"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "Scrivener.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -152,6 +151,23 @@
         "asset_guid": "1218d43061fb4284db44ed127f5a3eab"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "Scrivener.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Scrivener/FX_ScrivenerAttack.prefab",
+        "asset_guid": "310221325bcec464f95581a737be4f22"
+      },
+      "spawn_location": "character_side_fwd_center"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "Scrivener.effects0.paramCharacterData.unitAbility.effects1.paramCardFilter",
+      "card_type": "spell",
+      "disallowed_pools": [
+        "StarterCardsOnly"
+      ]
     }
   ]
 }

@@ -66,13 +66,26 @@
       "artist": "Hannah Lim"
     }
   ],
+  "upgrades": [
+    {
+      "id": "ZoneOfSilence",
+      "status_effect_upgrades": [
+        {
+          "status": "silenced",
+          "count": 1
+        }
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@ZoneOfSilence.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "effects": [
     {
       "id": "ZoneOfSilence.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "heroes",
       "target_ignore_bosses": true,
-      "param_upgrade": "ZoneOfSilence"
+      "param_upgrade": "@ZoneOfSilence"
     }
   ],
   "vfxs": [

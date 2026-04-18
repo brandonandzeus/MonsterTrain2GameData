@@ -22,7 +22,7 @@
       "artist": "Loy Bouttamy"
     },
     {
-      "id": "SteadfastCrusader.effects0.paramCharacterData.unitAbility",
+      "id": "SlamAbility",
       "names": {
         "key": "CardData_nameKey-e7f944c0239a6e23-43538892ff67fba42bb8b0a461b3df93-v2",
         "english": "Slam",
@@ -102,7 +102,7 @@
         "asset_guid": "d44c2ca4bbcbd7d44b5bb9244db70d41"
       },
       "impact_vfx": "@SteadfastCrusader.effects0.paramCharacterData.impactVFX",
-      "ability": "@SteadfastCrusader.effects0.paramCharacterData.unitAbility",
+      "ability": "@SlamAbility",
       "size": 2,
       "health": 30,
       "attack_damage": 5,
@@ -114,6 +114,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "SteadfastCrusader.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterSteadfastCrusader"
+    },
     {
       "id": "SteadfastCrusader.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectFloorRearrange",
@@ -128,11 +133,6 @@
       "param_int": 1,
       "param_bool_2": true,
       "applied_vfx": "@SteadfastCrusader.effects0.paramCharacterData.unitAbility.effects1.appliedVFX"
-    },
-    {
-      "id": "SteadfastCrusader.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterSteadfastCrusader"
     }
   ],
   "vfxs": [
@@ -145,18 +145,18 @@
       "spawn_location": "character_center"
     },
     {
-      "id": "SteadfastCrusader.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
-        "asset_guid": "32a4025b924311e4995d1dc47611df0f"
-      },
-      "spawn_location": "character_center"
-    },
-    {
       "id": "SteadfastCrusader.effects0.paramCharacterData.unitAbility.effects1.appliedVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/EtherealSeelie/FX_EtherealSeelieImpact.prefab",
         "asset_guid": "b856194664a6e4b4da8f1c47c5a0e765"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "SteadfastCrusader.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/SteadfastCrusader/FX_SteadfastCrusader.prefab",
+        "asset_guid": "32a4025b924311e4995d1dc47611df0f"
       },
       "spawn_location": "character_center"
     }

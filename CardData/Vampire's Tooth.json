@@ -54,6 +54,21 @@
       "artist": "Nicole Anne Alfonso"
     }
   ],
+  "upgrades": [
+    {
+      "id": "VampiresTooth_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "lifesteal",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@VampiresTooth.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 15
+    }
+  ],
   "traits": [
     {
       "id": "VampiresTooth.traits0",
@@ -61,7 +76,37 @@
       "trait_is_removable": false
     }
   ],
+  "character_triggers": [
+    {
+      "id": "VampiresTooth.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-3794497575f56224-b1d4965a9b184cc4d8392d3b5d042766-v2",
+        "english": "Gain [lifesteal] [effect0.status0.power].",
+        "french": "Octroie [lifesteal] [effect0.status0.power].",
+        "german": "Erhalte [lifesteal] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[lifesteal].",
+        "portuguese": "Recebe [lifesteal] [effect0.status0.power].",
+        "chinese": "获得 [lifesteal] [effect0.status0.power]。",
+        "spanish": "Añade [lifesteal] [effect0.status0.power].",
+        "chinese_traditional": "獲得[lifesteal][effect0.status0.power]。",
+        "korean": "[lifesteal] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[lifesteal] [effect0.status0.power]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@VampiresTooth.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "VampiresTooth.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@VampiresTooth_Upgrade",
+      "applied_vfx": "@VampiresTooth.effects0.appliedVFX"
+    },
     {
       "id": "VampiresTooth.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -72,14 +117,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "VampiresTooth.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "VampiresTooth_Upgrade",
-      "applied_vfx": "@VampiresTooth.effects0.appliedVFX"
     }
   ],
   "vfxs": [

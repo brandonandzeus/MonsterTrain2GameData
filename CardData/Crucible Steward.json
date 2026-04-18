@@ -23,7 +23,7 @@
       "artist": "Ron Kee"
     },
     {
-      "id": "CrucibleSteward.effects0.paramCharacterData.unitAbility",
+      "id": "SmeltAbility",
       "names": {
         "key": "CardData_nameKey-5051ea1dd4a5277b-fd1f76c8f1d5d6a489d2cd094f9c9548-v2",
         "english": "Smelt",
@@ -105,7 +105,7 @@
       "triggers": [
         "@CrucibleSteward.effects0.paramCharacterData.triggers0"
       ],
-      "ability": "@CrucibleSteward.effects0.paramCharacterData.unitAbility",
+      "ability": "@SmeltAbility",
       "size": 2,
       "health": 10,
       "attack_damage": 15,
@@ -141,6 +141,11 @@
   ],
   "effects": [
     {
+      "id": "CrucibleSteward.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterCrucibleSteward"
+    },
+    {
       "id": "CrucibleSteward.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectDamagePerSourceAttack",
       "target_mode": "front_in_room",
@@ -156,11 +161,6 @@
       "param_int": 3,
       "param_int_2": 5,
       "param_bool_2": true
-    },
-    {
-      "id": "CrucibleSteward.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterCrucibleSteward"
     }
   ],
   "additional_tooltips": [

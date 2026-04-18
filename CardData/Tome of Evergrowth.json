@@ -66,7 +66,7 @@
       "artist": "Leonardo Dionisi"
     },
     {
-      "id": "TomeOfEvergrowth.effects0.paramCardData",
+      "id": "EvergrowthAbility",
       "names": {
         "key": "CardData_nameKey-6f1efad2e782d811-880cd4ff60459954291f12f16127c70b-v2",
         "english": "Evergrowth",
@@ -113,6 +113,14 @@
   ],
   "effects": [
     {
+      "id": "TomeOfEvergrowth.effects0",
+      "name": "CardEffectSetUnitAbility",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_card": "@EvergrowthAbility",
+      "applied_vfx": "@TomeOfEvergrowth.effects0.appliedVFX"
+    },
+    {
       "id": "TomeOfEvergrowth.effects0.paramCardData.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
@@ -135,14 +143,6 @@
           "count": 3
         }
       ]
-    },
-    {
-      "id": "TomeOfEvergrowth.effects0",
-      "name": "CardEffectSetUnitAbility",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_card": "@TomeOfEvergrowth.effects0.paramCardData",
-      "applied_vfx": "@TomeOfEvergrowth.effects0.appliedVFX"
     }
   ],
   "vfxs": [

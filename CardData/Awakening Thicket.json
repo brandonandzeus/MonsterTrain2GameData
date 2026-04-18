@@ -69,21 +69,42 @@
       "artist": "Tammy Chang"
     }
   ],
+  "upgrades": [
+    {
+      "id": "AwakeningThicket_Upgrade",
+      "trigger_upgrades": [
+        "@AwakeningThicket.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "show_description_on_cards": true,
+      "bonus_unhealed_hp": 20,
+      "persistent_vfx": "@AwakeningThicket.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "AwakeningThicket.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "post_combat",
+      "effects": [
+        "@AwakeningThicket.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
   "effects": [
+    {
+      "id": "AwakeningThicket.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@AwakeningThicket_Upgrade",
+      "additional_tooltips": [
+        "@AwakeningThicket.effects0.additionalTooltips0"
+      ]
+    },
     {
       "id": "AwakeningThicket.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectHeal",
       "target_mode": "self",
       "param_int": 10
-    },
-    {
-      "id": "AwakeningThicket.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "AwakeningThicket_Upgrade",
-      "additional_tooltips": [
-        "@AwakeningThicket.effects0.additionalTooltips0"
-      ]
     }
   ],
   "additional_tooltips": [

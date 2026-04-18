@@ -54,6 +54,15 @@
       "artist": "Nicole Anne Alfonso"
     }
   ],
+  "upgrades": [
+    {
+      "id": "SpikySkin_Upgrade",
+      "trigger_upgrades": [
+        "@SpikySkin.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_hp": 10
+    }
+  ],
   "traits": [
     {
       "id": "SpikySkin.traits0",
@@ -61,7 +70,37 @@
       "trait_is_removable": false
     }
   ],
+  "character_triggers": [
+    {
+      "id": "SpikySkin.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-4b4eb2245d1a0511-0e813fee626cb3141b8d4a79020dd051-v2",
+        "english": "Gain [spikes] [effect0.status0.power].",
+        "french": "Octroie [spikes] [effect0.status0.power].",
+        "german": "Erhalte [spikes] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[spikes].",
+        "portuguese": "Recebe [spikes] [effect0.status0.power].",
+        "chinese": "获得 [spikes] [effect0.status0.power]。",
+        "spanish": "Añade [spikes] [effect0.status0.power].",
+        "chinese_traditional": "獲得[spikes][effect0.status0.power]。",
+        "korean": "[spikes] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[spikes] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@SpikySkin.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "SpikySkin.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@SpikySkin_Upgrade",
+      "applied_vfx": "@SpikySkin.effects0.appliedVFX"
+    },
     {
       "id": "SpikySkin.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -72,14 +111,6 @@
           "count": 3
         }
       ]
-    },
-    {
-      "id": "SpikySkin.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "SpikySkin_Upgrade",
-      "applied_vfx": "@SpikySkin.effects0.appliedVFX"
     }
   ],
   "vfxs": [

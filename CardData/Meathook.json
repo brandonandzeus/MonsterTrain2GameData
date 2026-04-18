@@ -22,7 +22,7 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     },
     {
-      "id": "Meathook.effects0.paramCharacterData.unitAbility",
+      "id": "Meathook_Ability",
       "names": {
         "key": "CardData_nameKey-33e90a23d8e913b1-e2c7d5aa11ea3fd429b0cc122f8aa259-v2",
         "english": "Hookhand",
@@ -102,7 +102,7 @@
         "asset_guid": "68847eb1e35ce72479a381633d25abbd"
       },
       "impact_vfx": "@Meathook.effects0.paramCharacterData.impactVFX",
-      "ability": "@Meathook.effects0.paramCharacterData.unitAbility",
+      "ability": "@Meathook_Ability",
       "size": 2,
       "health": 15,
       "attack_damage": 25,
@@ -114,6 +114,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "Meathook.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterMeathook"
+    },
     {
       "id": "Meathook.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAddStatusEffectNull"
@@ -135,11 +140,6 @@
       "name": "CardEffectFloorRearrange",
       "target_mode": "last_targeted_characters",
       "target_team": "both"
-    },
-    {
-      "id": "Meathook.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterMeathook"
     }
   ],
   "vfxs": [

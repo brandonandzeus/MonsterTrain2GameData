@@ -53,13 +53,29 @@
       "artist": "Leonardo Dionisi"
     }
   ],
+  "upgrades": [
+    {
+      "id": "StoicPlatemail_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "silenced",
+          "count": 1
+        },
+        {
+          "status": "armor",
+          "count": 60
+        }
+      ],
+      "bonus_hp": 30
+    }
+  ],
   "effects": [
     {
       "id": "StoicPlatemail.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "StoicPlatemail_Upgrade",
+      "param_upgrade": "@StoicPlatemail_Upgrade",
       "applied_vfx": "@StoicPlatemail.effects0.appliedVFX"
     }
   ],

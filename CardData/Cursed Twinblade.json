@@ -58,19 +58,61 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "CursedTwinblade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "Minus1Attack"
+      "id": "Minus1Attack",
+      "bonus_damage": -1
     },
+    {
+      "id": "AngelicTwinBlade",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@CursedTwinblade.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 6,
+      "applied_vfx": "@CursedTwinblade.effects0.paramCardUpgradeData.appliedVFX"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "CursedTwinblade.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-7a83f1826990ce29-ebe468819be50a4499865cd2085bf50c-v2",
+        "english": "[effect0.power][attack].",
+        "french": "[effect0.power][attack].",
+        "german": "[effect0.power][attack].",
+        "russian": "[effect0.power][attack].",
+        "portuguese": "[effect0.power][attack].",
+        "chinese": "[effect0.power][attack]。",
+        "spanish": "[effect0.power][attack].",
+        "chinese_traditional": "[effect0.power][attack]。",
+        "korean": "[effect0.power][attack].",
+        "japanese": "[effect0.power][attack]。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@CursedTwinblade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "CursedTwinblade.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "AngelicTwinBlade"
+      "param_upgrade": "@AngelicTwinBlade"
+    },
+    {
+      "id": "CursedTwinblade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@Minus1Attack"
     }
   ],
   "vfxs": [

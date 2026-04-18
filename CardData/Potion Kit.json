@@ -56,7 +56,7 @@
       "artist": "Herrick Ong"
     },
     {
-      "id": "PotionKit.effects0.paramCardUpgradeData.unitAbilityUpgrade",
+      "id": "PotionKit_Ability",
       "names": {
         "key": "CardData_nameKey-a6e5bf1b863ad473-7609b4ab01538d9499a598ed8c37226d-v2",
         "english": "Brew",
@@ -95,19 +95,27 @@
       "initial_keyboard_target": "front_friendly"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "PotionKit.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
-      "name": "CardEffectMix",
-      "param_int": 2
-    },
+      "id": "PotionKit_Upgrade",
+      "ability_upgrade": "@PotionKit_Ability",
+      "bonus_damage": 8,
+      "bonus_hp": 4
+    }
+  ],
+  "effects": [
     {
       "id": "PotionKit.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "PotionKit_Upgrade",
+      "param_upgrade": "@PotionKit_Upgrade",
       "applied_vfx": "@PotionKit.effects0.appliedVFX"
+    },
+    {
+      "id": "PotionKit.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
+      "name": "CardEffectMix",
+      "param_int": 2
     }
   ],
   "vfxs": [

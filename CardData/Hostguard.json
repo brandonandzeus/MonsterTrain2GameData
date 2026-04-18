@@ -23,7 +23,7 @@
       "artist": "Taylor Bray"
     },
     {
-      "id": "Hostguard.effects0.paramCharacterData.unitAbility",
+      "id": "AngelFlightSlamAbility",
       "names": {
         "key": "CardData_nameKey-90e597d57970a72e-d1937ca703ad78d439f95e36139fc903-v2",
         "english": "Heavenly Slam",
@@ -99,7 +99,7 @@
         "asset_guid": "f090f521afe549e479d6d2fc975c6610"
       },
       "impact_vfx": "@Hostguard.effects0.paramCharacterData.impactVFX",
-      "ability": "@Hostguard.effects0.paramCharacterData.unitAbility",
+      "ability": "@AngelFlightSlamAbility",
       "size": 3,
       "health": 60,
       "attack_damage": 25,
@@ -111,6 +111,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "Hostguard.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterHostguard"
+    },
     {
       "id": "Hostguard.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectUnitAbilityTeleport",
@@ -126,11 +131,6 @@
       "param_int": 1,
       "param_bool_2": true,
       "applied_to_self_vfx": "@Hostguard.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "Hostguard.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterHostguard"
     }
   ],
   "additional_tooltips": [

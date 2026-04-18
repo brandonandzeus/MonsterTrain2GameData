@@ -22,7 +22,7 @@
       "artist": "Loy Bouttamy"
     },
     {
-      "id": "RoyalWhelp.effects0.paramCharacterData.unitAbility",
+      "id": "GiveAvariceWhelpAbility",
       "names": {
         "key": "CardData_nameKey-9d83faff2048131f-7fc660d73776f134384daefbfc648867-v2",
         "english": "Expensive Taste",
@@ -96,7 +96,7 @@
         "asset_guid": "b71f90045c9c0a34b84f372f482c1913"
       },
       "impact_vfx": "@RoyalWhelp.effects0.paramCharacterData.impactVFX",
-      "ability": "@RoyalWhelp.effects0.paramCharacterData.unitAbility",
+      "ability": "@GiveAvariceWhelpAbility",
       "size": 1,
       "health": 1,
       "attack_damage": 4,
@@ -108,6 +108,11 @@
   ],
   "effects": [
     {
+      "id": "RoyalWhelp.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterRoyalWhelp"
+    },
+    {
       "id": "RoyalWhelp.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
@@ -118,11 +123,6 @@
           "count": 2
         }
       ]
-    },
-    {
-      "id": "RoyalWhelp.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterRoyalWhelp"
     }
   ],
   "vfxs": [

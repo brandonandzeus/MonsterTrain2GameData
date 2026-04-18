@@ -94,18 +94,25 @@
   ],
   "effects": [
     {
+      "id": "GreedDragon.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterGreedDragon"
+    },
+    {
       "id": "GreedDragon.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddCardUpgradeToUnitsPerDragonsHoard",
       "target_mode": "self",
-      "param_upgrade": "GreedDragonSpawn_Upgrade",
+      "param_upgrade": "@GreedDragonSpawn_Upgrade",
       "additional_tooltips": [
         "@GreedDragon.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "GreedDragon.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterGreedDragon"
+      "id": "GreedDragonSpawn_Upgrade",
+      "bonus_damage": 10,
+      "bonus_hp": 10
     }
   ],
   "additional_tooltips": [

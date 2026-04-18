@@ -53,9 +53,17 @@
       "id": "LunarEchoAbility.effects0",
       "name": "CardEffectCreateCopyOfCardPlayedLastTurn",
       "param_card_filter": "@LunarEchoAbility.effects0.paramCardFilter",
-      "param_upgrade": "AddEphemeral",
+      "param_upgrade": "@AddEphemeral",
       "additional_tooltips": [
         "@LunarEchoAbility.effects0.additionalTooltips0"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddEphemeral",
+      "trait_upgrades": [
+        "@LunarEchoAbility.effects0.paramCardUpgradeData.traitDataUpgrades0"
       ]
     }
   ],
@@ -88,6 +96,12 @@
         "korean": "일회성",
         "japanese": "一時的"
       }
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "LunarEchoAbility.effects0.paramCardFilter",
+      "card_type": "spell"
     }
   ]
 }

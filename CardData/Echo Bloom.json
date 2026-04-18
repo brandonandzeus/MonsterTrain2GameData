@@ -69,7 +69,7 @@
       "artist": "Herrick Ong"
     },
     {
-      "id": "EchoBloom.effects0.paramCardUpgradeData.roomAbilityUpgrade",
+      "id": "EchoBloomAbility",
       "names": {
         "key": "CardData_nameKey-5196a881757dedbd-88366f312cd9e9e47bcc264abfcbc095-v2",
         "english": "Bloomburst",
@@ -107,6 +107,18 @@
       "initial_keyboard_target": "front_friendly"
     }
   ],
+  "upgrades": [
+    {
+      "id": "EchoBloom",
+      "room_ability_upgrade": "@EchoBloomAbility",
+      "room_modifier_upgrades": [
+        "@EchoBloom.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "show_description_on_cards": true,
+      "persistent_vfx": "@EchoBloom.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "EchoBloom.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -120,16 +132,16 @@
   ],
   "effects": [
     {
+      "id": "EchoBloom.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@EchoBloom"
+    },
+    {
       "id": "EchoBloom.effects0.paramCardUpgradeData.roomAbilityUpgrade.effects0",
       "name": "CardEffectAdjustCorruption",
       "param_int": 4,
       "param_bool": true
-    },
-    {
-      "id": "EchoBloom.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "EchoBloom"
     }
   ],
   "additional_tooltips": [

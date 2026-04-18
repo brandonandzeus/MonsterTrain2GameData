@@ -70,6 +70,33 @@
       "artist": "Luke Banke"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "SubsumingBlade.triggers0",
+      "descriptions": {
+        "key": "CardData_descriptionKey-dfc26191c1e20cd2-532a6c597cb19d24c9c8931e8581e6b5-v2",
+        "english": "Increase damage by [triggereffect0.power] permanently.",
+        "french": "Augmente les dégâts de [triggereffect0.power] définitivement.",
+        "german": "Erhöht Schaden permanent um [triggereffect0.power].",
+        "russian": "Навсегда увеличивает урон на [triggereffect0.power].",
+        "portuguese": "Aumenta permanentemente o dano em [triggereffect0.power].",
+        "chinese": "永久增加[triggereffect0.power]点伤害。",
+        "spanish": "Aumenta el daño en [triggereffect0.power] permanentemente.",
+        "chinese_traditional": "永久提高[triggereffect0.power]點傷害。",
+        "korean": "피해가 영구적으로 [triggereffect0.power]만큼 증가합니다.",
+        "japanese": "ダメージを永続的に[triggereffect0.power]増加させる。"
+      },
+      "trigger": "on_kill",
+      "trigger_effects": [
+        {
+          "persistence_mode": "single_run",
+          "trigger_effect": "CardTriggerEffectBuffSpellDamage",
+          "param_int": 3
+        }
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "traits": [
     {
       "id": "SubsumingBlade.traits0",

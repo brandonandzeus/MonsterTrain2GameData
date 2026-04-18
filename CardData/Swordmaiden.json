@@ -115,6 +115,11 @@
   ],
   "effects": [
     {
+      "id": "Swordmaiden.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterVengefulSwordmaiden"
+    },
+    {
       "id": "Swordmaiden.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectDrawType",
       "target_card_type": "equipment",
@@ -132,11 +137,22 @@
           "count": 8
         }
       ]
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "Swordmaiden.effects0.paramCharacterData.triggers0.effects0.paramCardFilter",
+      "card_type": "equipment",
+      "allowed_pools": [
+        "EquipmentPoolNonEnemy"
+      ]
     },
     {
-      "id": "Swordmaiden.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterVengefulSwordmaiden"
+      "id": "Swordmaiden.effects0.paramCharacterData.triggers0.effects0.paramCardFilterSecondary",
+      "card_type": "equipment",
+      "allowed_pools": [
+        "EquipmentPoolEnemy"
+      ]
     }
   ]
 }

@@ -18,7 +18,7 @@
         "@StygianChampionMartyr.effects0"
       ],
       "initial_upgrades": [
-        "MartyrChampionBaseline"
+        "@MartyrChampionBaseline"
       ],
       "initial_keyboard_target": "front_friendly",
       "artist": "Aaron Lovett"
@@ -96,7 +96,7 @@
     {
       "id": "StygianChampionMartyr.effects0",
       "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterStygianChampionMartyr"
+      "param_character": "@MonsterStygianChampionMartyr"
     },
     {
       "id": "StygianChampionMartyr.startingUpgrades0.triggerUpgrades0.effects0",
@@ -109,6 +109,16 @@
         }
       ],
       "param_int": 100
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MartyrChampionBaseline",
+      "trigger_upgrades": [
+        "@StygianChampionMartyr.startingUpgrades0.triggerUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "use_upgrade_highlight_tags": false
     }
   ],
   "vfxs": [

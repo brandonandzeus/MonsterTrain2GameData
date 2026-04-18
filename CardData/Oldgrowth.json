@@ -69,23 +69,55 @@
       "artist": "Genevieve Bega"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "OldGrowth.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAdjustMaxHealth",
-      "target_mode": "self",
-      "param_int": 10
-    },
+      "id": "OldGrowth_Upgrade",
+      "trigger_upgrades": [
+        "@OldGrowth.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "show_description_on_cards": true,
+      "bonus_unhealed_hp": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "OldGrowth.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-15766ba28e44acdc-64bd81d7d97572146b0f74ff6f183d60-v2",
+        "english": "Gain [effect0.power] max health.",
+        "french": "Octroie <nobr>[effect0.power] PV</nobr> max.",
+        "german": "Erhalte [effect0.power] maximale Gesundheit dazu.",
+        "russian": "Повышает макс. здоровье на [effect0.power].",
+        "portuguese": "Recebe [effect0.power] de vida máxima.",
+        "chinese": "获得 [effect0.power] 点最大生命值。",
+        "spanish": "Añade [effect0.power] de salud máxima.",
+        "chinese_traditional": "獲得[effect0.power]點最大生命值。",
+        "korean": "최대 체력이 [effect0.power] 증가합니다.",
+        "japanese": "[effect0.power]の最大体力を得る。"
+      },
+      "trigger": "on_heal",
+      "effects": [
+        "@OldGrowth.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "OldGrowth.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "OldGrowth_Upgrade",
+      "param_upgrade": "@OldGrowth_Upgrade",
       "additional_tooltips": [
         "@OldGrowth.effects0.additionalTooltips0"
       ],
       "applied_vfx": "@OldGrowth.effects0.appliedVFX"
+    },
+    {
+      "id": "OldGrowth.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAdjustMaxHealth",
+      "target_mode": "self",
+      "param_int": 10
     }
   ],
   "additional_tooltips": [

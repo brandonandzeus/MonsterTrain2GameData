@@ -70,6 +70,29 @@
       "artist": "Seika Nakai"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "SurgicalStrike.triggers0",
+      "descriptions": {
+        "key": "CardData_descriptionKey-d624eead6288d752-54ff4576355beaf46b1957f59483bc26-v2",
+        "english": "Add a copy of this card with [ephemeral] to your hand.",
+        "french": "Ajoute une copie de cette carte avec [ephemeral] à votre main.",
+        "german": "Füge deiner Hand eine Kopie dieser Karte mit [ephemeral] hinzu.",
+        "russian": "В вашу руку добавляется [ephemeral] копия этой карты.",
+        "portuguese": "Adiciona uma cópia [ephemeral] desta carta à sua mão.",
+        "chinese": "将这张卡牌带有[ephemeral]的复制品加入你的手牌。",
+        "spanish": "Añade a tu mano una copia de esta carta con [ephemeral].",
+        "chinese_traditional": "將帶有[ephemeral]的此卡牌複製加入你的手牌。",
+        "korean": "이 카드에 [ephemeral]이 부여된 복제본을 패에 추가합니다.",
+        "japanese": "手札にこのカードの複製を[ephemeral]付きで追加する。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@SurgicalStrike.triggers0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
   "traits": [
     {
       "id": "SurgicalStrike.traits0",
@@ -106,9 +129,17 @@
     {
       "id": "SurgicalStrike.triggers0.cardEffects0",
       "name": "CardEffectAddUpgradedCopy",
-      "param_upgrade": "SurgicalStrike_Upgrade",
+      "param_upgrade": "@SurgicalStrike_Upgrade",
       "copy_modifiers_from_source": true,
       "param_int": 3
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SurgicalStrike_Upgrade",
+      "trait_upgrades": [
+        "@SurgicalStrike.triggers0.cardEffects0.paramCardUpgradeData.traitDataUpgrades0"
+      ]
     }
   ],
   "additional_tooltips": [

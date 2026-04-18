@@ -97,16 +97,22 @@
   ],
   "effects": [
     {
+      "id": "DeathsDancer.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterDeathsDancer"
+    },
+    {
       "id": "DeathsDancer.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "room",
       "target_team": "monsters",
-      "param_upgrade": "DeathDancerUpgrade"
-    },
+      "param_upgrade": "@DeathDancerUpgrade"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "DeathsDancer.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterDeathsDancer"
+      "id": "DeathDancerUpgrade",
+      "bonus_damage": 4
     }
   ],
   "vfxs": [

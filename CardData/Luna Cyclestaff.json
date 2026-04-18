@@ -57,20 +57,57 @@
       "artist": "Hung Bui"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "LunaCyclestaff.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectBuffEquipment",
-      "target_mode": "self",
-      "param_upgrade": "LunaCyclestaff_EquipUpgrade"
+      "id": "LunaCyclestaff_Upgrade",
+      "trigger_upgrades": [
+        "@LunaCyclestaff.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "hide_icon_on_card": true
     },
+    {
+      "id": "LunaCyclestaff_EquipUpgrade",
+      "hide_icon_on_card": true,
+      "bonus_damage": 1
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "LunaCyclestaff.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-595ec7ee27c534ff-6a8f7dfca357f7140b867ac8c9531b5a-v2",
+        "english": "This equipment gains +[effect0.upgrade.bonusdamage][attack] permanently.",
+        "french": "Cet équipement gagne +[effect0.upgrade.bonusdamage][attack] définitivement.",
+        "german": "Diese Ausrüstung erhält permanent +[effect0.upgrade.bonusdamage][attack].",
+        "russian": "Это снаряжение навсегда получает +[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Este equipamento recebe +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese": "这件装备永久获得 +[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Este equipo añade +[effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese_traditional": "此裝備永久獲得+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "이 장비가 영구적으로 +[effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "この装備品が永続的に+[effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "trigger": "on_moon_phase_shift",
+      "effects": [
+        "@LunaCyclestaff.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "suppress_notifications": true
+    }
+  ],
+  "effects": [
     {
       "id": "LunaCyclestaff.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "LunaCyclestaff_Upgrade",
+      "param_upgrade": "@LunaCyclestaff_Upgrade",
       "applied_vfx": "@LunaCyclestaff.effects0.appliedVFX"
+    },
+    {
+      "id": "LunaCyclestaff.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectBuffEquipment",
+      "target_mode": "self",
+      "param_upgrade": "@LunaCyclestaff_EquipUpgrade"
     }
   ],
   "vfxs": [

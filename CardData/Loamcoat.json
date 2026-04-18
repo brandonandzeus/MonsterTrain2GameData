@@ -57,7 +57,60 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Loamcoat_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-d9aba3fe97150475-39fd8f4f241bdbe4592e71a642017f1b-v2",
+        "english": "Loamcoat",
+        "french": "Manteau fongique",
+        "german": "Lehmmantel",
+        "russian": "Земляной плащ",
+        "portuguese": "Cobertura de Barro",
+        "chinese": "沃土大衣",
+        "spanish": "Abrigo fértil",
+        "chinese_traditional": "蠟皮披風",
+        "korean": "퇴비 코트",
+        "japanese": "土のコーティング"
+      },
+      "trigger_upgrades": [
+        "@Loamcoat.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_hp": 20
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Loamcoat.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-7829f475d566e90b-39fd8f4f241bdbe4592e71a642017f1b-v2",
+        "english": "Gain [regen] [effect0.status0.power]. [propagate] [effect1.power].",
+        "french": "Octroie [regen] [effect0.status0.power]. [propagate] [effect1.power].",
+        "german": "Erhalte [regen] [effect0.status0.power]. [propagate] [effect1.power].",
+        "russian": "Дается [regen] х[effect0.status0.power]. [propagate] х[effect1.power].",
+        "portuguese": "Recebe [regen] [effect0.status0.power]. [propagate] [effect1.power].",
+        "chinese": "获得 [regen] [effect0.status0.power]。[propagate] [effect1.power]。",
+        "spanish": "Añade [regen] [effect0.status0.power]. [propagate] [effect1.power].",
+        "chinese_traditional": "獲得[regen][effect0.status0.power]。[propagate][effect1.power]。",
+        "korean": "[regen] [effect0.status0.power] 효과를 획득합니다. [propagate] [effect1.power].",
+        "japanese": "[regen] [effect0.status0.power]を得る。[propagate] [effect1.power]。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Loamcoat.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+        "@Loamcoat.effects0.paramCardUpgradeData.triggerUpgrades0.effects1"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "Loamcoat.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@Loamcoat_Upgrade",
+      "applied_vfx": "@Loamcoat.effects0.appliedVFX"
+    },
     {
       "id": "Loamcoat.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -80,14 +133,6 @@
       ],
       "param_int": 2,
       "param_int_2": 1
-    },
-    {
-      "id": "Loamcoat.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "Loamcoat_Upgrade",
-      "applied_vfx": "@Loamcoat.effects0.appliedVFX"
     }
   ],
   "additional_tooltips": [

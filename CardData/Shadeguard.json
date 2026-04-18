@@ -96,16 +96,23 @@
   ],
   "effects": [
     {
+      "id": "Shadeguard.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterFaeSunsetter"
+    },
+    {
       "id": "Shadeguard.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddCardUpgradeToUnitsOnMoonPhase",
       "target_mode": "self",
-      "param_upgrade": "UpgradeMaxHpFrontUnitUpgrade",
+      "param_upgrade": "@UpgradeMaxHpFrontUnitUpgrade",
       "param_int": 1
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "Shadeguard.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterFaeSunsetter"
+      "id": "UpgradeMaxHpFrontUnitUpgrade",
+      "bonus_damage": 10,
+      "bonus_hp": 15
     }
   ],
   "vfxs": [

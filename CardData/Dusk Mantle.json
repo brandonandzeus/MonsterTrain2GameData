@@ -60,7 +60,58 @@
       "artist": "Loy Bouttamy"
     }
   ],
+  "upgrades": [
+    {
+      "id": "DuskMantle_Upgrade",
+      "trigger_upgrades": [
+        "@DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "bonus_hp": 10,
+      "persistent_vfx": "@DuskMantle.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-2957bb3d19c831cb-2c7a6854e69a1304099a93d5cea9e631-v2",
+        "english": "[titanskin] [effect0.status0.power].",
+        "french": "[titanskin] [effect0.status0.power].",
+        "german": "[titanskin] [effect0.status0.power].",
+        "russian": "[titanskin] х[effect0.status0.power].",
+        "portuguese": "[titanskin] [effect0.status0.power].",
+        "chinese": "[titanskin] [effect0.status0.power]。",
+        "spanish": "[titanskin] [effect0.status0.power].",
+        "chinese_traditional": "[titanskin][effect0.status0.power]。",
+        "korean": "[titanskin] [effect0.status0.power].",
+        "japanese": "[titanskin] [effect0.status0.power]。"
+      },
+      "trigger": "on_moon_shade",
+      "effects": [
+        "@DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "suppress_notifications": true
+    },
+    {
+      "id": "DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades1",
+      "trigger": "on_moonshade_lost",
+      "effects": [
+        "@DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades1.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true,
+      "suppress_notifications": true
+    }
+  ],
   "effects": [
+    {
+      "id": "DuskMantle.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@DuskMantle_Upgrade",
+      "applied_vfx": "@DuskMantle.effects0.appliedVFX"
+    },
     {
       "id": "DuskMantle.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -82,21 +133,9 @@
           "count": 5
         }
       ]
-    },
-    {
-      "id": "DuskMantle.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "DuskMantle_Upgrade",
-      "applied_vfx": "@DuskMantle.effects0.appliedVFX"
     }
   ],
   "vfxs": [
-    {
-      "id": "DuskMantle.effects0.paramCardUpgradeData.persistentVFX",
-      "vfx_prefab_left": "FX_Eclipse"
-    },
     {
       "id": "DuskMantle.effects0.appliedVFX",
       "vfx_left": {
@@ -104,6 +143,10 @@
         "asset_guid": "596455be9355d964ab28df3022fb5a9a"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "DuskMantle.effects0.paramCardUpgradeData.persistentVFX",
+      "vfx_prefab_left": "VfxBottomAnchor"
     }
   ]
 }

@@ -92,7 +92,7 @@
       "name": "CardEffectRecursion",
       "target_mode": "discard",
       "param_card_filter": "@ReturnedSoul.effects0.paramCardFilter",
-      "param_upgrade": "WurmReturnEnhanceCorrupt",
+      "param_upgrade": "@WurmReturnEnhanceCorrupt",
       "additional_tooltips": [
         "@ReturnedSoul.effects0.additionalTooltips0",
         "@ReturnedSoul.effects0.additionalTooltips1",
@@ -100,6 +100,15 @@
       ],
       "param_int": 1,
       "param_str": "ScreenDeck_Select_ReturnedSoul"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "WurmReturnEnhanceCorrupt",
+      "trait_upgrades": [
+        "@ReturnedSoul.effects0.paramCardUpgradeData.traitDataUpgrades0",
+        "@ReturnedSoul.effects0.paramCardUpgradeData.traitDataUpgrades1"
+      ]
     }
   ],
   "additional_tooltips": [
@@ -189,6 +198,14 @@
         "korean": "소모",
         "japanese": "消費"
       }
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ReturnedSoul.effects0.paramCardFilter",
+      "disallowed_pools": [
+        "ReturnedSoul_DisallowedCards"
+      ]
     }
   ]
 }

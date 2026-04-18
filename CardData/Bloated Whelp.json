@@ -21,7 +21,7 @@
       "artist": "Loy Bouttamy"
     },
     {
-      "id": "BloatedWhelp.effects0.paramCharacterData.unitAbility",
+      "id": "BloatedWhelpAbility",
       "names": {
         "key": "CardData_nameKey-49ea55487bad199f-34f9cc90de87c134b892dcd2d4135b09-v2",
         "english": "Indigestion",
@@ -97,7 +97,7 @@
       },
       "projectile_vfx": "@BloatedWhelp.effects0.paramCharacterData.projectilePrefab",
       "impact_vfx": "@BloatedWhelp.effects0.paramCharacterData.impactVFX",
-      "ability": "@BloatedWhelp.effects0.paramCharacterData.unitAbility",
+      "ability": "@BloatedWhelpAbility",
       "size": 1,
       "health": 1,
       "attack_damage": 4,
@@ -109,6 +109,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "BloatedWhelp.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterBloatedWhelp"
+    },
     {
       "id": "BloatedWhelp.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectDamage",
@@ -124,22 +129,9 @@
       "target_mode": "self",
       "applied_vfx": "@BloatedWhelp.effects0.paramCharacterData.impactVFX",
       "applied_to_self_vfx": "@BloatedWhelp.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "BloatedWhelp.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterBloatedWhelp"
     }
   ],
   "vfxs": [
-    {
-      "id": "BloatedWhelp.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/SnottyWhelp/FX_SneezyDrakeProjectile.prefab",
-        "asset_guid": "db9dc19d1e33f3d47b7fefeea220fd24"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "BloatedWhelp.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -147,6 +139,14 @@
         "asset_guid": "3264e2908c5ba3549a14df8cb8e8e37d"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "BloatedWhelp.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SnottyWhelp/FX_SneezyDrakeProjectile.prefab",
+        "asset_guid": "db9dc19d1e33f3d47b7fefeea220fd24"
+      },
+      "spawn_location": "character_side_fwd_center"
     },
     {
       "id": "BloatedWhelp.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX",

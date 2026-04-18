@@ -22,7 +22,7 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     },
     {
-      "id": "ConsumerOfCrowns.effects0.paramCharacterData.unitAbility",
+      "id": "ConsumerOfCrownsAbility",
       "names": {
         "key": "CardData_nameKey-8494a462fa6d78ab-69749ee93ff0d954f9735a154c685c02-v2",
         "english": "Warlord's Tithe",
@@ -96,7 +96,7 @@
         "asset_guid": "6f3ac34f53f928346afaaba379ef2da7"
       },
       "impact_vfx": "@ConsumerOfCrowns.effects0.paramCharacterData.impactVFX",
-      "ability": "@ConsumerOfCrowns.effects0.paramCharacterData.unitAbility",
+      "ability": "@ConsumerOfCrownsAbility",
       "size": 3,
       "health": 40,
       "death_type": "large",
@@ -110,6 +110,12 @@
   ],
   "effects": [
     {
+      "id": "ConsumerOfCrowns.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@ConsumerOfCrowns",
+      "applied_vfx": "@ConsumerOfCrowns.effects0.appliedVFX"
+    },
+    {
       "id": "ConsumerOfCrowns.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectSacrifice",
       "target_mode": "drop_target_character",
@@ -120,28 +126,22 @@
       "id": "ConsumerOfCrowns.effects0.paramCharacterData.unitAbility.effects1",
       "name": "CardEffectAttackWithUnit",
       "target_mode": "self"
-    },
-    {
-      "id": "ConsumerOfCrowns.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "ConsumerOfCrowns",
-      "applied_vfx": "@ConsumerOfCrowns.effects0.appliedVFX"
     }
   ],
   "vfxs": [
-    {
-      "id": "ConsumerOfCrowns.effects0.paramCharacterData.impactVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
-        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
-      },
-      "spawn_location": "character_center"
-    },
     {
       "id": "ConsumerOfCrowns.effects0.appliedVFX",
       "vfx_left": {
         "asset_name": "Assets/FX/FX_HeavyImpact_PS.prefab",
         "asset_guid": "3b00d03f85e88874a92970fc9034cd1a"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "ConsumerOfCrowns.effects0.paramCharacterData.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
       },
       "spawn_location": "character_center"
     }

@@ -83,7 +83,7 @@
     {
       "id": "Channelsong.effects0",
       "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
-      "param_upgrade": "DrawUnitEnhance",
+      "param_upgrade": "@DrawUnitEnhance",
       "should_test": false
     },
     {
@@ -91,6 +91,23 @@
       "name": "CardEffectDrawType",
       "target_card_type": "monster",
       "param_int": 1
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "DrawUnitEnhance",
+      "filters": [
+        "@Channelsong.effects0.paramCardUpgradeData.filters0"
+      ],
+      "bonus_damage": 20,
+      "bonus_hp": 20,
+      "cost_reduction": 99
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "Channelsong.effects0.paramCardUpgradeData.filters0",
+      "card_type": "monster"
     }
   ]
 }

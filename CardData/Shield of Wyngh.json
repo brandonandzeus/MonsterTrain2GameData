@@ -58,21 +58,65 @@
       "artist": "Aubrey Kim"
     }
   ],
+  "upgrades": [
+    {
+      "id": "ShieldofWyngh",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-73845d7ec4954db8-3d75730357f22604ea8ae8059af6ae54-v2",
+        "english": "Shield of Wyngh",
+        "french": "Bouclier de Wyngh",
+        "german": "Wynghs Schild",
+        "russian": "Щит Винг",
+        "portuguese": "Escudo de Wyngh",
+        "chinese": "维格之盾",
+        "spanish": "Escudo de Wyngh",
+        "chinese_traditional": "溫格之盾",
+        "korean": "윙흐의 방패",
+        "japanese": "ウィングの盾"
+      },
+      "trigger_upgrades": [
+        "@ShieldOfWyngh.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_hp": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ShieldOfWyngh.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-abc06d2b6aeaa097-3d75730357f22604ea8ae8059af6ae54-v2",
+        "english": "Deal damage to the attacker equal to this unit's [health].",
+        "french": "Inflige à l'attaquant des dégâts valant les [health] de cette unité.",
+        "german": "Füge dem Angreifer Schaden in Höhe der [health] dieser Einheit zu.",
+        "russian": "Наносит урон атакующему, равный [health] этого бойца.",
+        "portuguese": "Causa dano ao atacante igual à [health] desta unidade.",
+        "chinese": "对攻击者造成相当于该单位 [health] 的伤害。",
+        "spanish": "Inflige tanto daño al atacante como la [health] de esta unidad.",
+        "chinese_traditional": "對攻擊者造成等於此單位[health]的傷害。",
+        "korean": "공격자에게 이 유닛의 [health]만큼 피해를 줍니다.",
+        "japanese": "攻撃者にこのユニットの[health]に等しいダメージを与える。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@ShieldOfWyngh.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "ShieldOfWyngh.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@ShieldofWyngh",
+      "applied_vfx": "@ShieldOfWyngh.effects0.appliedVFX"
+    },
     {
       "id": "ShieldOfWyngh.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectDamagePerHp",
       "target_mode": "self",
       "param_int": 1,
       "param_bool": true
-    },
-    {
-      "id": "ShieldOfWyngh.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "ShieldofWyngh",
-      "applied_vfx": "@ShieldOfWyngh.effects0.appliedVFX"
     }
   ],
   "vfxs": [

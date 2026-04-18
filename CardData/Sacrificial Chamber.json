@@ -69,17 +69,37 @@
       "artist": "Samuel Lim"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "SacrificialChamber.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectRewardGold",
-      "param_int": 10
-    },
+      "id": "SacrificialChamber",
+      "trigger_upgrades": [
+        "@SacrificialChamber.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@SacrificialChamber.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "SacrificialChamber.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_death",
+      "effects": [
+        "@SacrificialChamber.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
     {
       "id": "SacrificialChamber.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "both",
-      "param_upgrade": "SacrificialChamber"
+      "param_upgrade": "@SacrificialChamber"
+    },
+    {
+      "id": "SacrificialChamber.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectRewardGold",
+      "param_int": 10
     }
   ],
   "vfxs": [

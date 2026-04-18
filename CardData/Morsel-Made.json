@@ -116,6 +116,11 @@
   ],
   "effects": [
     {
+      "id": "MorselMade.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterMorselMade"
+    },
+    {
       "id": "MorselMade.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectFeederRules",
       "target_mode": "room",
@@ -126,12 +131,14 @@
       "id": "MorselMade.effects0.paramCharacterData.triggers1.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus4Attack4Health"
-    },
+      "param_upgrade": "@Plus4Attack4Health"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "MorselMade.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterMorselMade"
+      "id": "Plus4Attack4Health",
+      "bonus_damage": 4,
+      "bonus_hp": 4
     }
   ],
   "vfxs": [

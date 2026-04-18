@@ -71,6 +71,20 @@
       "artist": "Leonardo Dionisi"
     }
   ],
+  "upgrades": [
+    {
+      "id": "EclipseChamber_Upgrade",
+      "room_modifier_upgrades": [
+        "@EclipseChamber.effects0.paramCardUpgradeData.roomModifierUpgrades0",
+        "@EclipseChamber.effects0.paramCardUpgradeData.roomModifierUpgrades1"
+      ],
+      "persistent_vfx": "@EclipseChamber.effects0.paramCardUpgradeData.persistentVFX"
+    },
+    {
+      "id": "Plus15Attack",
+      "bonus_damage": 15
+    }
+  ],
   "room_modifiers": [
     {
       "id": "EclipseChamber.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -88,18 +102,10 @@
   ],
   "effects": [
     {
-      "id": "EclipseChamber.effects0.paramCardUpgradeData.roomModifierUpgrades1.paramCardEffects0",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "room",
-      "target_team": "both",
-      "target_subtype": "SubtypesData_Silent",
-      "param_upgrade": "Plus15Attack"
-    },
-    {
       "id": "EclipseChamber.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "EclipseChamber_Upgrade",
+      "param_upgrade": "@EclipseChamber_Upgrade",
       "additional_tooltips": [
         "@EclipseChamber.effects0.additionalTooltips0"
       ]
@@ -111,6 +117,14 @@
         "@EclipseChamber.effects1.additionalTooltips0"
       ],
       "param_bool": true
+    },
+    {
+      "id": "EclipseChamber.effects0.paramCardUpgradeData.roomModifierUpgrades1.paramCardEffects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "room",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_Silent",
+      "param_upgrade": "@Plus15Attack"
     }
   ],
   "additional_tooltips": [
@@ -127,7 +141,7 @@
   "vfxs": [
     {
       "id": "EclipseChamber.effects0.paramCardUpgradeData.persistentVFX",
-      "vfx_prefab_left": "FX_Eclipse"
+      "vfx_prefab_left": "VfxBottomAnchor"
     }
   ]
 }

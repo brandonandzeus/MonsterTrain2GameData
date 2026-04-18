@@ -121,6 +121,11 @@
   ],
   "effects": [
     {
+      "id": "PlagueDoctor.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterPlagueDoctor"
+    },
+    {
       "id": "PlagueDoctor.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "last_attacked_character",
@@ -132,22 +137,9 @@
         }
       ],
       "param_bool_2": true
-    },
-    {
-      "id": "PlagueDoctor.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterPlagueDoctor"
     }
   ],
   "vfxs": [
-    {
-      "id": "PlagueDoctor.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/PlagueDoctor/FX_PlagueDoctorAttack.prefab",
-        "asset_guid": "e1e7f2e996f6db448a681aea83a180bb"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "PlagueDoctor.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -155,6 +147,14 @@
         "asset_guid": "e78ec66e5b5232045acdc3b530057b00"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "PlagueDoctor.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/PlagueDoctor/FX_PlagueDoctorAttack.prefab",
+        "asset_guid": "e1e7f2e996f6db448a681aea83a180bb"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

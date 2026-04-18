@@ -56,12 +56,22 @@
     {
       "id": "RailforgedChampionAbilityPyreshot 2.effects0",
       "name": "CardEffectAddBattleCard",
-      "param_upgrade": "RailforgedChampionAbilityPyreshot_ConsumeReduceCost_Upgrade",
+      "param_upgrade": "@RailforgedChampionAbilityPyreshot_ConsumeReduceCost_Upgrade",
       "should_fail_to_cast_if_test_fails": true,
       "param_int": 3,
       "param_int_2": 1,
       "param_bool": true,
       "param_card_pool": "PyreshotOnlyPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RailforgedChampionAbilityPyreshot_ConsumeReduceCost_Upgrade",
+      "trait_upgrades": [
+        "@RailforgedChampionAbilityPyreshot 2.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "cost_reduction": 99,
+      "x_cost_reduction": 99
     }
   ]
 }

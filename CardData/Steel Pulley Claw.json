@@ -57,7 +57,7 @@
       "artist": "Lauren Russo"
     },
     {
-      "id": "SteelPulleyClaw.effects0.paramCardUpgradeData.roomAbilityUpgrade",
+      "id": "SteelPulleyClawAbility",
       "names": {
         "key": "CardData_nameKey-80c96a0aefbdd4ff-52b47e55d63b9b643822e5c1f45bfb26-v2",
         "english": "Hoist",
@@ -96,19 +96,27 @@
       "can_ability_target_other_floors": true
     }
   ],
+  "upgrades": [
+    {
+      "id": "SteelPulleyClaw_Upgrade",
+      "room_ability_upgrade": "@SteelPulleyClawAbility",
+      "show_description_on_cards": true,
+      "persistent_vfx": "@SteelPulleyClaw.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "effects": [
+    {
+      "id": "SteelPulleyClaw.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@SteelPulleyClaw_Upgrade"
+    },
     {
       "id": "SteelPulleyClaw.effects0.paramCardUpgradeData.roomAbilityUpgrade.effects0",
       "name": "CardEffectRoomAbilityBumpToCurrentRoom",
       "target_mode": "drop_target_character",
       "target_team": "both",
       "target_ignore_bosses": true
-    },
-    {
-      "id": "SteelPulleyClaw.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "SteelPulleyClaw_Upgrade"
     }
   ],
   "vfxs": [

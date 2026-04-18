@@ -69,6 +69,17 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
+  "upgrades": [
+    {
+      "id": "EngineUpgrade",
+      "room_modifier_upgrades": [
+        "@EngineUpgrade.effects0.paramCardUpgradeData.roomModifierUpgrades0",
+        "@EngineUpgrade.effects0.paramCardUpgradeData.roomModifierUpgrades1"
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@EngineUpgrade.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "EngineUpgrade.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -86,7 +97,7 @@
       "id": "EngineUpgrade.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "none",
-      "param_upgrade": "EngineUpgrade",
+      "param_upgrade": "@EngineUpgrade",
       "additional_tooltips": [
         "@EngineUpgrade.effects0.additionalTooltips0"
       ]

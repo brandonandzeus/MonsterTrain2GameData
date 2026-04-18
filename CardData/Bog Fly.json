@@ -21,7 +21,7 @@
       "artist": "Aaron Lovett"
     },
     {
-      "id": "BogFly.effects0.paramCharacterData.unitAbility",
+      "id": "BogFlyFlightAbility",
       "names": {
         "key": "CardData_nameKey-f98ed720c7fe30d4-fa631acc55a061948ba8dcd2807b6b13-v2",
         "english": "Echoflight",
@@ -110,7 +110,7 @@
       "room_modifiers": [
         "@BogFly.effects0.paramCharacterData.roomModifiers0"
       ],
-      "ability": "@BogFly.effects0.paramCharacterData.unitAbility",
+      "ability": "@BogFlyFlightAbility",
       "size": 1,
       "health": 10,
       "attack_damage": 0,
@@ -180,14 +180,14 @@
   ],
   "effects": [
     {
+      "id": "BogFly.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterBogFly"
+    },
+    {
       "id": "BogFly.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectUnitAbilityTeleport",
       "applied_to_self_vfx": "@BogFly.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "BogFly.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterBogFly"
     }
   ],
   "vfxs": [

@@ -65,20 +65,50 @@
       "artist": "Aaron Lovett"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "PenitentsBloodsuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectDamage",
-      "target_mode": "self",
-      "param_int": 30
-    },
+      "id": "PenitentShiftTakeDamage",
+      "trigger_upgrades": [
+        "@PenitentsBloodsuit.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "PenitentsBloodsuit.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-33b3850d45c71429-ae92fbb9fdf67674e9b265d716e97bc4-v2",
+        "english": "Take [effect0.power] damage.",
+        "french": "Subit <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Erleide [effect0.power] Schaden.",
+        "russian": "Получает [effect0.power] урона.",
+        "portuguese": "Sofre [effect0.power] de dano.",
+        "chinese": "受到 [effect0.power] 点伤害。",
+        "spanish": "Sufre [effect0.power] de daño.",
+        "chinese_traditional": "受到[effect0.power]點傷害。",
+        "korean": "피해를 [effect0.power] 받습니다.",
+        "japanese": "[effect0.power]のダメージを受ける。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        "@PenitentsBloodsuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "PenitentsBloodsuit.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "both",
-      "param_upgrade": "PenitentShiftTakeDamage",
+      "param_upgrade": "@PenitentShiftTakeDamage",
       "applied_vfx": "@PenitentsBloodsuit.effects0.appliedVFX"
+    },
+    {
+      "id": "PenitentsBloodsuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "self",
+      "param_int": 30
     }
   ],
   "vfxs": [

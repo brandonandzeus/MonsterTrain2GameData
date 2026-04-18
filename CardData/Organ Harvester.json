@@ -57,7 +57,46 @@
       "artist": "Seika Nakai"
     }
   ],
+  "upgrades": [
+    {
+      "id": "SoulStealer_Upgrade",
+      "trigger_upgrades": [
+        "@OrganHarvester.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "OrganHarvester.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-8b66a0951e559b31-747960c83c251594b939963572185eae-v2",
+        "english": "Gain [undying] [effect0.status0.power].",
+        "french": "Octroie [undying] [effect0.status0.power].",
+        "german": "Erhalte [undying] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[undying].",
+        "portuguese": "Recebe [undying] [effect0.status0.power].",
+        "chinese": "获得 [undying] [effect0.status0.power]。",
+        "spanish": "Añade [undying] [effect0.status0.power].",
+        "chinese_traditional": "獲得[undying][effect0.status0.power]。",
+        "korean": "[undying] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[undying] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@OrganHarvester.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "OrganHarvester.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@SoulStealer_Upgrade",
+      "applied_vfx": "@OrganHarvester.effects0.appliedVFX"
+    },
     {
       "id": "OrganHarvester.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -68,14 +107,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "OrganHarvester.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "SoulStealer_Upgrade",
-      "applied_vfx": "@OrganHarvester.effects0.appliedVFX"
     }
   ],
   "vfxs": [

@@ -67,7 +67,46 @@
       "artist": "Aaron Lovett"
     }
   ],
+  "upgrades": [
+    {
+      "id": "PenitentShiftGainWeakness",
+      "trigger_upgrades": [
+        "@PenitentsDeathsuit.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_unique": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "PenitentsDeathsuit.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-48fb3c7e8e301b18-bdb16dbb3f39c74409d219832b36450c-v2",
+        "english": "Gain [meleeweakness] [effect0.status0.power].",
+        "french": "Octroie [meleeweakness] [effect0.status0.power].",
+        "german": "Erhalte [meleeweakness] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[meleeweakness].",
+        "portuguese": "Recebe [meleeweakness] [effect0.status0.power].",
+        "chinese": "获得 [meleeweakness] [effect0.status0.power]。",
+        "spanish": "Añade [meleeweakness] [effect0.status0.power].",
+        "chinese_traditional": "獲得[meleeweakness][effect0.status0.power]。",
+        "korean": "[meleeweakness] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[meleeweakness] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        "@PenitentsDeathsuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "PenitentsDeathsuit.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_upgrade": "@PenitentShiftGainWeakness",
+      "applied_vfx": "@PenitentsDeathsuit.effects0.appliedVFX"
+    },
     {
       "id": "PenitentsDeathsuit.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -78,14 +117,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "PenitentsDeathsuit.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "both",
-      "param_upgrade": "PenitentShiftGainWeakness",
-      "applied_vfx": "@PenitentsDeathsuit.effects0.appliedVFX"
     }
   ],
   "vfxs": [

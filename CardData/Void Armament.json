@@ -54,18 +54,69 @@
       "artist": "William Smith"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "VoidArms.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectPurgeUnitOnDeath"
-    },
+      "id": "VoidArms_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@VoidArms.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "show_description_on_cards": true,
+      "bonus_damage": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "VoidArms.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-d5e754c885f124bb-48b4d9dbaeb4be7468fb904a5f81ebf7-v2",
+        "english": "Purge this unit from your deck.",
+        "french": "Purge cette unité du deck.",
+        "german": "Verbanne diese Einheit aus deinem Deck.",
+        "russian": "Ликвидирует этого бойца из колоды.",
+        "portuguese": "Expurga essa unidade do seu deck.",
+        "chinese": "从你的卡组中移除该单位。",
+        "spanish": "Purga esta unidad de tu mazo.",
+        "chinese_traditional": "從你的牌組中淨化此單位。",
+        "korean": "덱에서 이 유닛을 제외합니다.",
+        "japanese": "デッキからこのユニットを除外する。"
+      },
+      "trigger": "on_death",
+      "additional_text_on_trigger": {
+        "key": "CardUpgradeData_additionalTextOnTriggerKey-1dc34d8a279f3928-48b4d9dbaeb4be7468fb904a5f81ebf7-v2",
+        "english": "Purged!",
+        "french": "<nobr>Purgée !</nobr>",
+        "german": "Verbannt!",
+        "russian": "Уничтожено!",
+        "portuguese": "Expurgado!",
+        "chinese": "已移除！",
+        "spanish": "¡Purgada!",
+        "chinese_traditional": "已淨化！",
+        "korean": "제외!",
+        "japanese": "除外された！"
+      },
+      "effects": [
+        "@VoidArms.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "VoidArms.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "VoidArms_Upgrade",
+      "param_upgrade": "@VoidArms_Upgrade",
       "applied_vfx": "@VoidArms.effects0.appliedVFX"
+    },
+    {
+      "id": "VoidArms.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectPurgeUnitOnDeath"
     }
   ],
   "vfxs": [

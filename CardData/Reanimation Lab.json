@@ -69,23 +69,56 @@
       "artist": "Luke Banke"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "ReanimationLab_UnitUpgrade"
+      "id": "ReanimationLab_Upgrade",
+      "trigger_upgrades": [
+        "@ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "persistent_vfx": "@ReanimationLab.effects0.paramCardUpgradeData.persistentVFX"
     },
+    {
+      "id": "ReanimationLab_UnitUpgrade",
+      "bonus_damage": 7,
+      "bonus_hp": 7
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_reanimated",
+      "effects": [
+        "@ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades1",
+      "trigger": "on_spawn",
+      "effects": [
+        "@ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
+  "effects": [
     {
       "id": "ReanimationLab.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "ReanimationLab_Upgrade",
+      "param_upgrade": "@ReanimationLab_Upgrade",
       "additional_tooltips": [
         "@ReanimationLab.effects0.additionalTooltips0",
         "@ReanimationLab.effects0.additionalTooltips1",
         "@ReanimationLab.effects0.additionalTooltips2"
       ]
+    },
+    {
+      "id": "ReanimationLab.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@ReanimationLab_UnitUpgrade"
     }
   ],
   "additional_tooltips": [

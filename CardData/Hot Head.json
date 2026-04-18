@@ -22,7 +22,7 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     },
     {
-      "id": "HotHead.effects0.paramCharacterData.unitAbility",
+      "id": "HotHeadAbility",
       "names": {
         "key": "CardData_nameKey-9d99371b7e396d28-a323b1e9ddde9784a896dfdc3d6a177f-v2",
         "english": "Fire Breathing",
@@ -103,7 +103,7 @@
       },
       "attack_vfx": "@HotHead.effects0.paramCharacterData.attackVFX",
       "impact_vfx": "@HotHead.effects0.paramCharacterData.impactVFX",
-      "ability": "@HotHead.effects0.paramCharacterData.unitAbility",
+      "ability": "@HotHeadAbility",
       "size": 2,
       "health": 20,
       "attack_damage": 5,
@@ -116,6 +116,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "HotHead.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterHotHead"
+    },
     {
       "id": "HotHead.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectDamagePerSourceAttack",
@@ -132,11 +137,6 @@
       "target_team": "heroes",
       "param_int": 1,
       "applied_vfx": "@HotHead.effects0.paramCharacterData.unitAbility.effects0.appliedVFX"
-    },
-    {
-      "id": "HotHead.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterHotHead"
     }
   ],
   "vfxs": [

@@ -70,10 +70,6 @@
   ],
   "traits": [
     {
-      "id": "CelestialStorm.traits0.paramCardUpgradeData.traitDataUpgrades0",
-      "name": "CardTraitStrongerMagicPower"
-    },
-    {
       "id": "CelestialStorm.traits0",
       "name": "CardTraitAddCardUpgradeOnMoonPhase",
       "param_description": {
@@ -89,10 +85,14 @@
         "korean": "[moonlit]: [attuned].",
         "japanese": "[moonlit]：[attuned]。"
       },
-      "param_upgrade": "CelestialStorm_FullMoon_Upgrade",
+      "param_upgrade": "@CelestialStorm_FullMoon_Upgrade",
       "param_tracked_value": "moon_phase",
       "param_int": 2,
       "param_bool": true
+    },
+    {
+      "id": "CelestialStorm.traits0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitStrongerMagicPower"
     }
   ],
   "effects": [
@@ -103,6 +103,15 @@
       "target_team": "heroes",
       "param_int": 10,
       "applied_vfx": "@CelestialStorm.effects0.appliedVFX"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CelestialStorm_FullMoon_Upgrade",
+      "trait_upgrades": [
+        "@CelestialStorm.traits0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "use_upgrade_highlight_tags": false
     }
   ],
   "vfxs": [

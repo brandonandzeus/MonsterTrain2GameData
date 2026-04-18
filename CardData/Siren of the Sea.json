@@ -95,15 +95,22 @@
   ],
   "effects": [
     {
+      "id": "CombativeSiren.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterCombativeSiren"
+    },
+    {
       "id": "CombativeSiren.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "SirenSeaTrigger"
-    },
+      "param_upgrade": "@SirenSeaTrigger"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "CombativeSiren.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterCombativeSiren"
+      "id": "SirenSeaTrigger",
+      "bonus_damage": 3,
+      "bonus_hp": 3
     }
   ]
 }

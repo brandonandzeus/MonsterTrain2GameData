@@ -95,9 +95,17 @@
       "id": "StardustInvocation.effects1",
       "name": "CardEffectDuplicateCardInHand",
       "param_card_filter": "@StardustInvocation.effects1.paramCardFilter",
-      "param_upgrade": "StardustInvocation_Upgrade",
+      "param_upgrade": "@StardustInvocation_Upgrade",
       "additional_tooltips": [
         "@StardustInvocation.effects1.additionalTooltips0"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "StardustInvocation_Upgrade",
+      "trait_upgrades": [
+        "@StardustInvocation.effects1.paramCardUpgradeData.traitDataUpgrades0"
       ]
     }
   ],
@@ -130,6 +138,15 @@
         "korean": "일회성",
         "japanese": "一時的"
       }
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "StardustInvocation.effects1.paramCardFilter",
+      "card_type": "spell",
+      "disallowed_pools": [
+        "StardustInvocationOnlyPool"
+      ]
     }
   ]
 }

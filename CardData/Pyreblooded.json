@@ -23,7 +23,7 @@
       "artist": "Mary Ngai-Virgo"
     },
     {
-      "id": "Pyreblooded.effects0.paramCharacterData.unitAbility",
+      "id": "PyrebloodedAbility",
       "names": {
         "key": "CardData_nameKey-da8f4b2658e85b46-7961a73a842f65c4a87f7035ae2cc127-v2",
         "english": "Empower",
@@ -117,7 +117,7 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Pyreblooded.prefab",
         "asset_guid": "f4fa374460481eb4ab1e0c9396422299"
       },
-      "ability": "@Pyreblooded.effects0.paramCharacterData.unitAbility",
+      "ability": "@PyrebloodedAbility",
       "size": 1,
       "health": 10,
       "ascends_train_automatically": false,
@@ -131,16 +131,21 @@
   ],
   "effects": [
     {
+      "id": "Pyreblooded.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterPyreblooded"
+    },
+    {
       "id": "Pyreblooded.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "drop_target_character",
       "target_team": "both",
-      "param_upgrade": "PyrebloodedAbility_Upgrade"
-    },
+      "param_upgrade": "@PyrebloodedAbility_Upgrade"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "Pyreblooded.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterPyreblooded"
+      "id": "PyrebloodedAbility_Upgrade"
     }
   ]
 }

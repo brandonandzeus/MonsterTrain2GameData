@@ -57,7 +57,80 @@
       "artist": "Leonardo Dionisi"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Soulsmelter",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-3c3a532e1b037e82-efe5ebd88d79ecd45818f25682bc2206-v2",
+        "english": "Soulsmelter",
+        "french": "Fondeur d'âme",
+        "german": "Seelenschmelze",
+        "russian": "Душеплав",
+        "portuguese": "Fundidor de Almas",
+        "chinese": "熔魂者",
+        "spanish": "Fundealmas",
+        "chinese_traditional": "靈魂熔煉器",
+        "korean": "영혼 제련기",
+        "japanese": "魂の製錬"
+      },
+      "trigger_upgrades": [
+        "@Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "bonus_damage": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-c54f2d7ac422fa16-efe5ebd88d79ecd45818f25682bc2206-v2",
+        "english": "Gain [soul] [effect0.status0.power].",
+        "french": "Octroie [effect0.status0.power] [soul].",
+        "german": "Erhalte [effect0.status0.power] [soul].",
+        "russian": "Дается [soul] х[effect0.status0.power].",
+        "portuguese": "Recebe [effect0.status0.power] [soul].",
+        "chinese": "获得 [effect0.status0.power] [soul]。",
+        "spanish": "Añade [effect0.status0.power] de [soul].",
+        "chinese_traditional": "獲得[effect0.status0.power][soul]。",
+        "korean": "[effect0.status0.power] [soul]을 획득합니다.",
+        "japanese": "[effect0.status0.power] [soul]を得る。"
+      },
+      "trigger": "on_any_hero_death_on_floor",
+      "effects": [
+        "@Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    },
+    {
+      "id": "Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades1",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-498727e69d4055d0-efe5ebd88d79ecd45818f25682bc2206-v2",
+        "english": "Gain [effect0.power][dragonshoardicon] for every 4 [soul].",
+        "french": "Octroie [effect0.power][dragonshoardicon] par tranche de <nobr>4 [soul].</nobr>",
+        "german": "Erhalte [effect0.power][dragonshoardicon] pro 4 [soul].",
+        "russian": "Дает [effect0.power] [dragonshoardicon] за каждую 4-ю <b>Душу</b>.",
+        "portuguese": "Recebe [effect0.power][dragonshoardicon] para cada 4 [soul].",
+        "chinese": "每有 4 [soul] 就获得 [effect0.power][dragonshoardicon]。",
+        "spanish": "Obtienes [effect0.power][dragonshoardicon] por cada 4 de [soul].",
+        "chinese_traditional": "每有4%[soul]獲得[effect0.power][dragonshoardicon]。",
+        "korean": "4 [soul]마다 [effect0.power][dragonshoardicon]을 획득합니다.",
+        "japanese": "4 [soul]につき、[effect0.power][dragonshoardicon]を得る。"
+      },
+      "trigger": "on_encounter_complete",
+      "effects": [
+        "@Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades1.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "Soulsmelter.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@Soulsmelter",
+      "applied_vfx": "@Soulsmelter.effects0.appliedVFX"
+    },
     {
       "id": "Soulsmelter.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -80,14 +153,6 @@
         }
       ],
       "param_int": 1
-    },
-    {
-      "id": "Soulsmelter.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "Soulsmelter",
-      "applied_vfx": "@Soulsmelter.effects0.appliedVFX"
     }
   ],
   "vfxs": [

@@ -55,13 +55,25 @@
       "artist": "Leonardo Dionisi"
     }
   ],
+  "upgrades": [
+    {
+      "id": "TitansteelDagger_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "ambush",
+          "count": 1
+        }
+      ],
+      "bonus_damage": 15
+    }
+  ],
   "effects": [
     {
       "id": "TitansteelDagger.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "TitansteelDagger_Upgrade",
+      "param_upgrade": "@TitansteelDagger_Upgrade",
       "applied_vfx": "@TitansteelDagger.effects0.appliedVFX"
     }
   ],

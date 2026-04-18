@@ -67,26 +67,54 @@
       "artist": "Genevieve Bega"
     }
   ],
+  "upgrades": [
+    {
+      "id": "WeaponsCache",
+      "trigger_upgrades": [
+        "@WeaponsCache.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@WeaponsCache.effects0.paramCardUpgradeData.persistentVFX"
+    },
+    {
+      "id": "WeaponsCache_ReduceCost",
+      "allow_secondary_tooltip_placement": false,
+      "use_upgrade_highlight_tags": false,
+      "cost_reduction": 2,
+      "x_cost_reduction": 2
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "WeaponsCache.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@WeaponsCache.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+        "@WeaponsCache.effects0.paramCardUpgradeData.triggerUpgrades0.effects1"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
   "effects": [
+    {
+      "id": "WeaponsCache.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@WeaponsCache",
+      "additional_tooltips": [
+        "@WeaponsCache.effects0.additionalTooltips0"
+      ]
+    },
     {
       "id": "WeaponsCache.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddTempCardUpgradeToNextDrawnCard",
-      "param_upgrade": "WeaponsCache_ReduceCost"
+      "param_upgrade": "@WeaponsCache_ReduceCost"
     },
     {
       "id": "WeaponsCache.effects0.paramCardUpgradeData.triggerUpgrades0.effects1",
       "name": "CardEffectDrawType",
       "target_card_type": "equipment",
       "param_int": 1
-    },
-    {
-      "id": "WeaponsCache.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "WeaponsCache",
-      "additional_tooltips": [
-        "@WeaponsCache.effects0.additionalTooltips0"
-      ]
     }
   ],
   "additional_tooltips": [

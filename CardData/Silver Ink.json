@@ -87,14 +87,57 @@
       "name": "CardEffectAddTempCardUpgradeToCardsInHand",
       "target_mode": "room",
       "target_team": "none",
-      "param_upgrade": "SilverInk_Attuned_Upgrade"
+      "param_upgrade": "@SilverInk_Attuned_Upgrade"
     },
     {
       "id": "SilverInk.effects1",
       "name": "CardEffectAddTempCardUpgradeToCardsInHand",
       "target_mode": "room",
       "target_team": "none",
-      "param_upgrade": "SilverInk_Upgrade"
+      "param_upgrade": "@SilverInk_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SilverInk_Upgrade",
+      "filters": [
+        "@SilverInk.effects0.paramCardUpgradeData.filters0",
+        "@SilverInk.effects0.paramCardUpgradeData.filters1"
+      ],
+      "bonus_damage": 3,
+      "bonus_heal": 3
+    },
+    {
+      "id": "SilverInk_Attuned_Upgrade",
+      "trait_upgrades": [
+        "@SilverInk.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "@SilverInk.effects0.paramCardUpgradeData.filters0",
+        "@SilverInk.effects0.paramCardUpgradeData.filters1"
+      ],
+      "is_unique": true
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "SilverInk.effects0.paramCardUpgradeData.filters0",
+      "disallowed_pools": [
+        "SpellsNotAllowedSpellPowerPool"
+      ]
+    },
+    {
+      "id": "SilverInk.effects0.paramCardUpgradeData.filters1",
+      "card_type": "spell",
+      "required_effects_operator": "or",
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectHeal",
+        "CardEffectHealAndDamageRelative",
+        "CardEffectHealAndOverheal",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerHp"
+      ]
     }
   ]
 }

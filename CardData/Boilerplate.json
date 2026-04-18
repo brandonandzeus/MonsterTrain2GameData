@@ -59,19 +59,58 @@
       "artist": "Lauren Russo"
     }
   ],
+  "card_triggers": [
+    {
+      "id": "Boilerplate.triggers0",
+      "descriptions": {
+        "key": "CardData_descriptionKey-c6d1e0b0215f2ffe-91e68a539695f034bb7685f555627902-v2",
+        "english": "Gain [armor] [effect0.upgrade.status0.power] permanently for each [forgepoint] spent.",
+        "french": "Octroie <nobr>[armor] [effect0.upgrade.status0.power]</nobr> définitivement pour chaque [forgepoint] dépensé.",
+        "german": "Erhalte pro investiertem [forgepoint] dauerhaft [armor] [effect0.upgrade.status0.power].",
+        "russian": "За каждое потраченное очко кузни дается [armor] х[effect0.upgrade.status0.power].",
+        "portuguese": "Recebe [armor] [effect0.upgrade.status0.power] permanentemente para cada [forgepoint] gasto.",
+        "chinese": "每花费一点 [forgepoint]，就永久获得 [armor] [effect0.upgrade.status0.power]。",
+        "spanish": "Añade [armor] [effect0.upgrade.status0.power] permanentemente por cada [forgepoint] consumido.",
+        "chinese_traditional": "每花費一點[forgepoint]，永久獲得[armor][effect0.upgrade.status0.power]。",
+        "korean": "사용한 [forgepoint] 하나당 [armor] [effect0.upgrade.status0.power] 효과를 영구적으로 획득합니다.",
+        "japanese": "消費した[forgepoint]ごとに[armor] [effect0.upgrade.status0.power]を得る。"
+      },
+      "trigger": "on_forge",
+      "effects": [
+        "@Boilerplate.triggers0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Boilerplate_Upgrade"
+    },
+    {
+      "id": "Boilerplate_ArmorUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 2,
+          "from_permanent_upgrade": true
+        }
+      ],
+      "skip_default_status_effect_notification": true
+    }
+  ],
   "effects": [
     {
       "id": "Boilerplate.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "Boilerplate_Upgrade",
+      "param_upgrade": "@Boilerplate_Upgrade",
       "applied_vfx": "@Boilerplate.effects0.appliedVFX"
     },
     {
       "id": "Boilerplate.triggers0.cardEffects0",
       "name": "CardEffectAddUpgradeToCurrentCard",
-      "param_upgrade": "Boilerplate_ArmorUpgrade",
+      "param_upgrade": "@Boilerplate_ArmorUpgrade",
       "param_int_3": 1
     }
   ],

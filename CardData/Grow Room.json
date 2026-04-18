@@ -70,6 +70,15 @@
       "artist": "Luke Banke"
     }
   ],
+  "upgrades": [
+    {
+      "id": "GrowRoom_Upgrade",
+      "room_modifier_upgrades": [
+        "@GrowRoom.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "persistent_vfx": "@GrowRoom.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "GrowRoom.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -82,6 +91,12 @@
   ],
   "effects": [
     {
+      "id": "GrowRoom.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@GrowRoom_Upgrade"
+    },
+    {
       "id": "GrowRoom.effects0.paramCardUpgradeData.roomModifierUpgrades0.paramCardEffects0",
       "name": "CardEffectAdjustAllStatusEffects",
       "target_mode": "room",
@@ -93,12 +108,6 @@
       ],
       "param_int": 1,
       "param_int_2": 1
-    },
-    {
-      "id": "GrowRoom.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "GrowRoom_Upgrade"
     }
   ],
   "additional_tooltips": [

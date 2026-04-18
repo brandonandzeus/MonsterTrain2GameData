@@ -58,7 +58,46 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     }
   ],
+  "upgrades": [
+    {
+      "id": "EverlastingLight",
+      "trigger_upgrades": [
+        "@EverlastingLight.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 3
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "EverlastingLight.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-0068dff19e692d9a-e03e95f3f006aae42bbee5a9abbdc53d-v2",
+        "english": "Apply [valor] [effect0.status0.power] to friendly units.",
+        "french": "Applique [valor] [effect0.status0.power] aux unités alliées.",
+        "german": "Wende [valor] [effect0.status0.power] auf verbündete Einheiten an.",
+        "russian": "На союзников накладывается [valor] х[effect0.status0.power].",
+        "portuguese": "Aplica [valor] [effect0.status0.power] às unidades aliadas.",
+        "chinese": "使所有友方单位获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power] a las unidades aliadas.",
+        "chinese_traditional": "對友方單位施加[valor][effect0.status0.power]。",
+        "korean": "아군 유닛들에게 [valor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "味方ユニットに[valor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@EverlastingLight.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "EverlastingLight.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@EverlastingLight",
+      "applied_vfx": "@EverlastingLight.effects0.appliedVFX"
+    },
     {
       "id": "EverlastingLight.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -70,14 +109,6 @@
           "count": 2
         }
       ]
-    },
-    {
-      "id": "EverlastingLight.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "EverlastingLight",
-      "applied_vfx": "@EverlastingLight.effects0.appliedVFX"
     }
   ],
   "vfxs": [

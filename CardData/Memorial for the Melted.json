@@ -69,12 +69,25 @@
       "artist": "Anita Tung"
     }
   ],
+  "upgrades": [
+    {
+      "id": "MemorialOfTheMelted",
+      "status_effect_upgrades": [
+        {
+          "status": "endless",
+          "count": 1
+        }
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@MemorialOfTheMelted.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "effects": [
     {
       "id": "MemorialOfTheMelted.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "MemorialOfTheMelted"
+      "param_upgrade": "@MemorialOfTheMelted"
     }
   ],
   "vfxs": [

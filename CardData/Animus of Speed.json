@@ -23,7 +23,7 @@
       "artist": "Taylor Bray"
     },
     {
-      "id": "AnimusOfSpeed.effects0.paramCharacterData.unitAbility",
+      "id": "AnimusOfSpeedAbility",
       "names": {
         "key": "CardData_nameKey-f555a11176245688-c369fec75d0057d44a9d289114423075-v2",
         "english": "Swiftshot",
@@ -103,7 +103,7 @@
           "count": 1
         }
       ],
-      "ability": "@AnimusOfSpeed.effects0.paramCharacterData.unitAbility",
+      "ability": "@AnimusOfSpeedAbility",
       "size": 2,
       "health": 8,
       "attack_damage": 35,
@@ -117,26 +117,18 @@
   ],
   "effects": [
     {
+      "id": "AnimusOfSpeed.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterAnimusSword"
+    },
+    {
       "id": "AnimusOfSpeed.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAttackTargetsWithSelfUnit",
       "target_mode": "drop_target_character",
       "target_team": "heroes"
-    },
-    {
-      "id": "AnimusOfSpeed.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterAnimusSword"
     }
   ],
   "vfxs": [
-    {
-      "id": "AnimusOfSpeed.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/FX/FX_Projectile_AnimusOfWill.prefab",
-        "asset_guid": "963f9557f6186c741aff37cdcd43ff12"
-      },
-      "spawn_location": "bone_status_effect_slot2"
-    },
     {
       "id": "AnimusOfSpeed.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
@@ -144,6 +136,14 @@
         "asset_guid": "8201d40b1a1cd3d479d2147a6d66bef4"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "AnimusOfSpeed.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Projectile_AnimusOfWill.prefab",
+        "asset_guid": "963f9557f6186c741aff37cdcd43ff12"
+      },
+      "spawn_location": "bone_status_effect_slot2"
     }
   ]
 }

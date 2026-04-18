@@ -59,7 +59,7 @@
       "artist": "Genevieve Bega"
     },
     {
-      "id": "GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade",
+      "id": "ChompAbility",
       "names": {
         "key": "CardData_nameKey-59b8454b41afad13-6e7b81c59a81b8243a3056e2880e2c03-v2",
         "english": "Chomp",
@@ -97,7 +97,45 @@
       "initial_keyboard_target": "front_friendly"
     }
   ],
+  "upgrades": [
+    {
+      "id": "GluttonsMaw",
+      "ability_upgrade": "@ChompAbility",
+      "trigger_upgrades": [
+        "@GluttonsMaw.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    },
+    {
+      "id": "Plus15Attack15Health",
+      "bonus_damage": 15,
+      "bonus_hp": 15
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "GluttonsMaw.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_death",
+      "effects": [
+        "@GluttonsMaw.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    }
+  ],
   "effects": [
+    {
+      "id": "GluttonsMaw.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@GluttonsMaw",
+      "applied_vfx": "@GluttonsMaw.effects0.appliedVFX"
+    },
+    {
+      "id": "GluttonsMaw.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectNULL",
+      "target_mode": "room",
+      "target_team": "none"
+    },
     {
       "id": "GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
       "name": "CardEffectSacrificeOrFeed",
@@ -111,27 +149,13 @@
       "id": "GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus15Attack15Health",
+      "param_upgrade": "@Plus15Attack15Health",
       "additional_tooltips": [
         "@GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1.additionalTooltips0",
         "@GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1.additionalTooltips1"
       ],
       "applied_vfx": "@GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0.appliedVFX",
       "applied_to_self_vfx": "@GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0.appliedToSelfVFX"
-    },
-    {
-      "id": "GluttonsMaw.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectNULL",
-      "target_mode": "room",
-      "target_team": "none"
-    },
-    {
-      "id": "GluttonsMaw.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "GluttonsMaw",
-      "applied_vfx": "@GluttonsMaw.effects0.appliedVFX"
     }
   ],
   "additional_tooltips": [
@@ -148,6 +172,14 @@
   ],
   "vfxs": [
     {
+      "id": "GluttonsMaw.effects0.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Equipment/GluttonsMaw/FX_GluttonsMaw.prefab",
+        "asset_guid": "88678890701b891429a640a624bc1ffc"
+      },
+      "spawn_location": "character_center"
+    },
+    {
       "id": "GluttonsMaw.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0.appliedVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
@@ -160,14 +192,6 @@
       "vfx_left": {
         "asset_name": "Assets/VFX/Abilities/BloatedWhelp/FX_BloatedWhelpAbility.prefab",
         "asset_guid": "bc07db97f715e9f4a8c151cc2c8c8293"
-      },
-      "spawn_location": "character_center"
-    },
-    {
-      "id": "GluttonsMaw.effects0.appliedVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/Equipment/GluttonsMaw/FX_GluttonsMaw.prefab",
-        "asset_guid": "88678890701b891429a640a624bc1ffc"
       },
       "spawn_location": "character_center"
     }

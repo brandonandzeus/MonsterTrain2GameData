@@ -54,7 +54,7 @@
       "artist": "Loy Bouttamy"
     },
     {
-      "id": "StasisCrystal.effects0.paramCardUpgradeData.unitAbilityUpgrade",
+      "id": "EmergeAbility",
       "names": {
         "key": "CardData_nameKey-0af3cfdf65724bfb-1851b994b9c55de44bc2c73b58e9c5ef-v2",
         "english": "Emerge",
@@ -95,7 +95,72 @@
       "can_ability_target_other_floors": true
     }
   ],
+  "upgrades": [
+    {
+      "id": "StasisCrystal_Equipment",
+      "ability_upgrade": "@EmergeAbility",
+      "status_effect_upgrades": [
+        {
+          "status": "untouchable",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    },
+    {
+      "id": "Plus20Attack20HealthOnlyUnit",
+      "filters": [
+        "@StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0.effects0.paramCardUpgradeData.filters0"
+      ],
+      "bonus_damage": 20,
+      "bonus_hp": 20
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-f2affb4570a8a527-e116ddf8b83eec146b698b121f05625c-v2",
+        "english": "Gain +[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health] while under [stasis].",
+        "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] pendant la [stasis].",
+        "german": "Erhalte bei [stasis] +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+        "russian": "[stasis] дает бойцу +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+        "portuguese": "Recebe +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] enquanto estiver sob [stasis].",
+        "chinese": "处于[stasis]状态期间，获得 +[effect0.upgrade.bonusdamage][attack]和 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] mientras está en [stasis].",
+        "chinese_traditional": "在[stasis]狀態下獲得+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "[stasis] 시 +[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "[stasis]状態の間、+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "StasisCrystal.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@StasisCrystal_Equipment",
+      "applied_vfx": "@StasisCrystal.effects0.appliedVFX"
+    },
+    {
+      "id": "StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnitsPerStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "untouchable",
+          "count": 1
+        }
+      ],
+      "param_upgrade": "@Plus20Attack20HealthOnlyUnit"
+    },
     {
       "id": "StasisCrystal.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
       "name": "CardEffectRemoveStatusEffect",
@@ -111,26 +176,6 @@
       "id": "StasisCrystal.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1",
       "name": "CardEffectRemoveAbility",
       "target_mode": "self"
-    },
-    {
-      "id": "StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddCardUpgradeToUnitsPerStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "untouchable",
-          "count": 1
-        }
-      ],
-      "param_upgrade": "Plus20Attack20HealthOnlyUnit"
-    },
-    {
-      "id": "StasisCrystal.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "StasisCrystal_Equipment",
-      "applied_vfx": "@StasisCrystal.effects0.appliedVFX"
     }
   ],
   "vfxs": [
@@ -141,6 +186,12 @@
         "asset_guid": "1127a00f03a230941b0d5e0d50801494"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "StasisCrystal.effects0.paramCardUpgradeData.triggerUpgrades0.effects0.paramCardUpgradeData.filters0",
+      "card_type": "monster"
     }
   ]
 }

@@ -58,7 +58,46 @@
       "artist": "Genevieve Bega"
     }
   ],
+  "upgrades": [
+    {
+      "id": "LavaArmor",
+      "trigger_upgrades": [
+        "@LavaArmor.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_hp": 10
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "LavaArmor.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-00bbc147d9ee5edb-990508665d72e4749af6392b969c452b-v2",
+        "english": "Apply [pyregel] [effect0.status0.power] to the attacker.",
+        "french": "Inflige [pyregel] [effect0.status0.power] à l'attaquant.",
+        "german": "Wende [pyregel] [effect0.status0.power] auf den Angreifer an.",
+        "russian": "Накладывает на атакующего [pyregel] х[effect0.status0.power].",
+        "portuguese": "Aplica [pyregel] [effect0.status0.power] ao atacante.",
+        "chinese": "对攻击者施加 [pyregel] [effect0.status0.power]。",
+        "spanish": "Añade [pyregel] [effect0.status0.power] al atacante.",
+        "chinese_traditional": "對攻擊者施加[pyregel][effect0.status0.power]。",
+        "korean": "공격자에 [pyregel] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "攻撃者に[pyregel] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@LavaArmor.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "LavaArmor.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@LavaArmor",
+      "applied_vfx": "@LavaArmor.effects0.appliedVFX"
+    },
     {
       "id": "LavaArmor.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -70,14 +109,6 @@
           "count": 3
         }
       ]
-    },
-    {
-      "id": "LavaArmor.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "LavaArmor",
-      "applied_vfx": "@LavaArmor.effects0.appliedVFX"
     }
   ],
   "vfxs": [

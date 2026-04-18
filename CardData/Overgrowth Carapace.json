@@ -56,23 +56,60 @@
       "artist": "Merilliza Chan"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "BogwurmsBulk.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "BogwurmsBulk_Equipment_Upgrade"
+      "id": "BogwurmsBulk_Equipment",
+      "trigger_upgrades": [
+        "@BogwurmsBulk.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
     },
+    {
+      "id": "BogwurmsBulk_Equipment_Upgrade",
+      "bonus_damage": 20,
+      "bonus_hp": 20,
+      "bonus_size": 1,
+      "restrict_size_to_room_capacity": true
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "BogwurmsBulk.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-e0df3b12b319577d-ac0c09c703ac9fd429dbc92c9bbe5b97-v2",
+        "english": "Gain +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack], and +[effect0.upgrade.bonushp][health] if there is [capacity] available.",
+        "french": "Octroie +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health] si la [capacity] le permet.",
+        "german": "Erhalte +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health], wenn du über [capacity] verfügst.",
+        "russian": "Дает +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health], если позволяют [capacity].",
+        "portuguese": "Recebe +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health] se tiver [capacity] disponível.",
+        "chinese": "若有可用[capacity]，则获得 +[effect0.upgrade.bonussize][size]、+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "spanish": "Añade +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health] si hay [capacity] disponible.",
+        "chinese_traditional": "如果有[capacity]可用，獲得+[effect0.upgrade.bonussize][size]、+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "[capacity]이 남아 있다면 +[effect0.upgrade.bonussize][size], +[effect0.upgrade.bonusdamage][attack], +[effect0.upgrade.bonushp][health] 효과를 부여합니다.",
+        "japanese": "[capacity]がある場合、+[effect0.upgrade.bonussize][size]、+[effect0.upgrade.bonusdamage][attack]、+[effect0.upgrade.bonushp][health]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@BogwurmsBulk.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "BogwurmsBulk.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "BogwurmsBulk_Equipment",
+      "param_upgrade": "@BogwurmsBulk_Equipment",
       "additional_tooltips": [
         "@BogwurmsBulk.effects0.additionalTooltips0"
       ],
       "applied_vfx": "@BogwurmsBulk.effects0.appliedVFX"
+    },
+    {
+      "id": "BogwurmsBulk.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@BogwurmsBulk_Equipment_Upgrade"
     }
   ],
   "additional_tooltips": [

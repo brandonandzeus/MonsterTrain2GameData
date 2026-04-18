@@ -69,12 +69,24 @@
       "artist": "Nicole Anne Alfonso"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Planetarium_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 5
+        }
+      ],
+      "persistent_vfx": "@Planetarium.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "effects": [
     {
       "id": "Planetarium.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "Planetarium_Upgrade",
+      "param_upgrade": "@Planetarium_Upgrade",
       "additional_tooltips": [
         "@Planetarium.effects0.additionalTooltips0"
       ]

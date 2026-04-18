@@ -23,7 +23,7 @@
       "artist": "Ron Kee"
     },
     {
-      "id": "SalvageMachine.effects0.paramCharacterData.unitAbility",
+      "id": "SalvageMachineAbility",
       "names": {
         "key": "CardData_nameKey-9b6840fb376eb44f-9e5ce7b009af5cd469af71539e29744c-v2",
         "english": "Scrap Harvest",
@@ -104,7 +104,7 @@
       "triggers": [
         "@SalvageMachine.effects0.paramCharacterData.triggers0"
       ],
-      "ability": "@SalvageMachine.effects0.paramCharacterData.unitAbility",
+      "ability": "@SalvageMachineAbility",
       "size": 1,
       "health": 9,
       "attack_damage": 9,
@@ -140,6 +140,14 @@
   ],
   "effects": [
     {
+      "id": "SalvageMachine.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterSalvageSteward",
+      "additional_tooltips": [
+        "@SalvageMachine.effects0.additionalTooltips0"
+      ]
+    },
+    {
       "id": "SalvageMachine.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAdjustForgePoints",
       "target_mode": "room",
@@ -152,14 +160,6 @@
       "param_int": 3,
       "param_int_2": 1,
       "param_card_pool": "ScrapMetalOnlyPool"
-    },
-    {
-      "id": "SalvageMachine.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterSalvageSteward",
-      "additional_tooltips": [
-        "@SalvageMachine.effects0.additionalTooltips0"
-      ]
     }
   ],
   "additional_tooltips": [

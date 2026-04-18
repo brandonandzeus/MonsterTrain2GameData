@@ -58,7 +58,7 @@
       "artist": "Lauren Russo"
     },
     {
-      "id": "AssemblyRoom.effects0.paramCardUpgradeData.roomAbilityUpgrade",
+      "id": "AssemblyRoomAbility",
       "names": {
         "key": "CardData_nameKey-adc40e22250079ad-bc6c55315ab9ee443b86fd83b27d7d24-v2",
         "english": "Assemble",
@@ -98,7 +98,21 @@
       "initial_keyboard_target": "front_friendly"
     }
   ],
+  "upgrades": [
+    {
+      "id": "AssemblyRoom_Upgrade",
+      "room_ability_upgrade": "@AssemblyRoomAbility",
+      "show_description_on_cards": true,
+      "persistent_vfx": "@AssemblyRoom.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "effects": [
+    {
+      "id": "AssemblyRoom.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@AssemblyRoom_Upgrade"
+    },
     {
       "id": "AssemblyRoom.effects0.paramCardUpgradeData.roomAbilityUpgrade.effects0",
       "name": "CardEffectCopyUnits",
@@ -118,12 +132,6 @@
         "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
       ],
       "param_int": -1
-    },
-    {
-      "id": "AssemblyRoom.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "AssemblyRoom_Upgrade"
     }
   ],
   "vfxs": [

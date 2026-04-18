@@ -95,11 +95,16 @@
   ],
   "effects": [
     {
+      "id": "VoidExcavator.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MorselVoidExcavator"
+    },
+    {
       "id": "VoidExcavator.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "both",
-      "param_upgrade": "MorselExcavatorTrigger"
+      "param_upgrade": "@MorselExcavatorTrigger"
     },
     {
       "id": "VoidExcavator.effects0.paramCharacterData.triggers0.effects1",
@@ -112,11 +117,12 @@
           "count": 1
         }
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "VoidExcavator.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MorselVoidExcavator"
+      "id": "MorselExcavatorTrigger",
+      "bonus_damage": 6
     }
   ],
   "vfxs": [

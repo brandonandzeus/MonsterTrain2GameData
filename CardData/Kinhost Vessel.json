@@ -140,26 +140,6 @@
   ],
   "character_triggers": [
     {
-      "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0",
-      "descriptions": {
-        "key": "CharacterData_descriptionKey-03ee3656ce7e7999-f83d8a195ea0adf4697455f4280b567c-v2",
-        "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
-        "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
-        "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
-        "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
-        "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
-        "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
-        "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
-        "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
-        "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
-        "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
-      },
-      "trigger": "on_attacking_before_damage",
-      "effects": [
-        "@KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0.effects0"
-      ]
-    },
-    {
       "id": "KinhostVessel.effects0.paramCharacterData.triggers0",
       "trigger": "on_remove_hatch",
       "effects": [
@@ -196,9 +176,34 @@
         "@KinhostVessel.effects0.paramCharacterData.triggers2.effects0"
       ],
       "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-03ee3656ce7e7999-f83d8a195ea0adf4697455f4280b567c-v2",
+        "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
+        "french": "Applique [corruptpoison] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [effect0.status0.power] [corruptpoison] auf gegnerische Einheiten an.",
+        "russian": "Накладывается [corruptpoison] х[effect0.status0.power] на всех врагов.",
+        "portuguese": "Aplica [corruptpoison] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [corruptpoison] [effect0.status0.power]。",
+        "spanish": "Añade [corruptpoison] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[corruptpoison][effect0.status0.power]。",
+        "korean": "적 유닛들에 [corruptpoison][effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[corruptpoison] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking_before_damage",
+      "effects": [
+        "@KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0.effects0"
+      ]
     }
   ],
   "effects": [
+    {
+      "id": "KinhostVessel.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterKinhostVessel"
+    },
     {
       "id": "KinhostVessel.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectRemoveStatusEffectPerCorrupt",
@@ -209,6 +214,27 @@
           "count": 1
         }
       ]
+    },
+    {
+      "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects0",
+      "name": "CardEffectSacrifice",
+      "target_mode": "self",
+      "param_bool": true,
+      "hide_tooltip": true
+    },
+    {
+      "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects1",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterKinhostPupa",
+      "additional_tooltips": [
+        "@KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0.effects0.additionalTooltips0"
+      ]
+    },
+    {
+      "id": "KinhostVessel.effects0.paramCharacterData.triggers2.effects0",
+      "name": "CardEffectForceHatchCheck",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters"
     },
     {
       "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0.effects0",
@@ -224,32 +250,6 @@
       "additional_tooltips": [
         "@KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0.effects0.additionalTooltips0"
       ]
-    },
-    {
-      "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects0",
-      "name": "CardEffectSacrifice",
-      "target_mode": "self",
-      "param_bool": true,
-      "hide_tooltip": true
-    },
-    {
-      "id": "KinhostVessel.effects0.paramCharacterData.triggers1.effects1",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterKinhostPupa",
-      "additional_tooltips": [
-        "@KinhostVessel.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.triggers0.effects0.additionalTooltips0"
-      ]
-    },
-    {
-      "id": "KinhostVessel.effects0.paramCharacterData.triggers2.effects0",
-      "name": "CardEffectForceHatchCheck",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters"
-    },
-    {
-      "id": "KinhostVessel.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterKinhostVessel"
     }
   ],
   "additional_tooltips": [

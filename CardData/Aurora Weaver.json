@@ -95,19 +95,30 @@
   ],
   "effects": [
     {
+      "id": "AuroraWeaver.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterAuroraWeaver"
+    },
+    {
       "id": "AuroraWeaver.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "AuroraWeaverMagicPowerRoomUpgrade",
+      "param_upgrade": "@AuroraWeaverMagicPowerRoomUpgrade",
       "additional_tooltips": [
         "@AuroraWeaver.effects0.paramCharacterData.triggers0.effects0.additionalTooltips0"
       ],
       "param_int_3": 1
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "AuroraWeaver.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterAuroraWeaver"
+      "id": "AuroraWeaverMagicPowerRoomUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "conduit",
+          "count": 1
+        }
+      ]
     }
   ],
   "additional_tooltips": [

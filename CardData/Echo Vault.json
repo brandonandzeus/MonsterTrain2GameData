@@ -67,6 +67,15 @@
       "artist": "Genevieve Bega"
     }
   ],
+  "upgrades": [
+    {
+      "id": "EchoVault_Upgrade",
+      "room_modifier_upgrades": [
+        "@EchoVault.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "persistent_vfx": "@EchoVault.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "EchoVault.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -78,13 +87,13 @@
       "id": "EchoVault.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "EchoVault_Upgrade"
+      "param_upgrade": "@EchoVault_Upgrade"
     }
   ],
   "vfxs": [
     {
       "id": "EchoVault.effects0.paramCardUpgradeData.persistentVFX",
-      "vfx_prefab_left": "FX_EchoVault"
+      "vfx_prefab_left": "VfxCenterAnchor"
     }
   ]
 }

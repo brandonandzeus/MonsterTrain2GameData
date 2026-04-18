@@ -60,13 +60,58 @@
       "artist": "Nicole Anne Alfonso"
     }
   ],
+  "upgrades": [
+    {
+      "id": "HerzalsHammer_Upgrade",
+      "trigger_upgrades": [
+        "@HerzalsHammer.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 5
+    },
+    {
+      "id": "HerzalsHammer_Upgrade_AtkArmor",
+      "bonus_damage": 3
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HerzalsHammer.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-6b962375f39e2afa-844d0bdfaf75a914cb2c8c528b86d32b-v2",
+        "english": "Apply +[effect0.upgrade.bonusdamage] [attack] and [armor] [effect1.status0.power] to friendly units.",
+        "french": "Confère <nobr>+[effect0.upgrade.bonusdamage] [attack]</nobr> et <nobr>[armor] [effect1.status0.power]</nobr> aux unités alliées.",
+        "german": "Erhalte +[effect0.upgrade.bonusdamage] [attack] und [armor] [effect1.status0.power] für verbündete Einheiten.",
+        "russian": "Союзникам дается +[effect0.upgrade.bonusdamage][attack] и [armor] х[effect1.status0.power].",
+        "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [armor] [effect1.status0.power] às unidades aliadas.",
+        "chinese": "使所有友方单位获得 +[effect0.upgrade.bonusdamage] [attack] 和 [armor] [effect1.status0.power]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [armor] [effect1.status0.power] a las unidades aliadas.",
+        "chinese_traditional": "對友方單位施加+[effect0.upgrade.bonusdamage][attack]和[armor][effect1.status0.power]。",
+        "korean": "아군 유닛들에 +[effect0.upgrade.bonusdamage][attack] 및 [armor] [effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "味方ユニットに+[effect0.upgrade.bonusdamage] [attack]と[armor] [effect1.status0.power]を付与する。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@HerzalsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+        "@HerzalsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects1"
+      ],
+      "suppress_notifications": true
+    }
+  ],
   "effects": [
+    {
+      "id": "HerzalsHammer.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@HerzalsHammer_Upgrade",
+      "applied_vfx": "@HerzalsHammer.effects0.appliedVFX"
+    },
     {
       "id": "HerzalsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "room",
       "target_team": "monsters",
-      "param_upgrade": "HerzalsHammer_Upgrade_AtkArmor"
+      "param_upgrade": "@HerzalsHammer_Upgrade_AtkArmor"
     },
     {
       "id": "HerzalsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects1",
@@ -79,14 +124,6 @@
           "count": 3
         }
       ]
-    },
-    {
-      "id": "HerzalsHammer.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "HerzalsHammer_Upgrade",
-      "applied_vfx": "@HerzalsHammer.effects0.appliedVFX"
     }
   ],
   "vfxs": [

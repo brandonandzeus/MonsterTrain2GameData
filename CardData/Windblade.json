@@ -58,7 +58,79 @@
       "artist": "Aubrey Kim"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Windblade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-a418c53b5e1547e2-9ffcc04b5a9d1504a9407c7bd3674b59-v2",
+        "english": "Windblade",
+        "french": "Aérolame",
+        "german": "Windklinge",
+        "russian": "Ветряной клинок",
+        "portuguese": "Lâmina Eólica",
+        "chinese": "风之刃",
+        "spanish": "Hoja del viento",
+        "chinese_traditional": "風刃",
+        "korean": "바람칼날",
+        "japanese": "ウィンドブレード"
+      },
+      "trigger_upgrades": [
+        "@Windblade.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@Windblade.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Windblade.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-3b8a08670195bea6-9ffcc04b5a9d1504a9407c7bd3674b59-v2",
+        "english": "Gain [valor] [effect0.status0.power].",
+        "french": "Octroie [valor] [effect0.status0.power].",
+        "german": "Erhalte [valor] [effect0.status0.power].",
+        "russian": "Дает [effect0.status0.power] х[valor].",
+        "portuguese": "Recebe [valor] [effect0.status0.power].",
+        "chinese": "获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power].",
+        "chinese_traditional": "獲得[valor][effect0.status0.power]。",
+        "korean": "[valor] [effect0.status0.power] 효과를 획득합니다.",
+        "japanese": "[valor] [effect0.status0.power]を得る。"
+      },
+      "trigger": "on_shift",
+      "effects": [
+        "@Windblade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    },
+    {
+      "id": "Windblade.effects0.paramCardUpgradeData.triggerUpgrades1",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-7bae1db535932d86-9ffcc04b5a9d1504a9407c7bd3674b59-v2",
+        "english": "Trigger [shift].",
+        "french": "Déclenche [shift].",
+        "german": "Löse [shift] aus.",
+        "russian": "Активирует [shift].",
+        "portuguese": "Aciona [shift].",
+        "chinese": "触发 [shift]。",
+        "spanish": "Activa [shift].",
+        "chinese_traditional": "觸發[shift]。",
+        "korean": "[shift] 효과를 발동합니다.",
+        "japanese": "[shift]を発動する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Windblade.effects0.paramCardUpgradeData.triggerUpgrades1.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "Windblade.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@Windblade",
+      "applied_vfx": "@Windblade.effects0.appliedVFX"
+    },
     {
       "id": "Windblade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -75,14 +147,6 @@
       "name": "CardEffectPlayUnitTrigger",
       "target_mode": "self",
       "param_trigger": "on_shift"
-    },
-    {
-      "id": "Windblade.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "Windblade",
-      "applied_vfx": "@Windblade.effects0.appliedVFX"
     }
   ],
   "vfxs": [

@@ -22,7 +22,7 @@
       "artist": "Ron Kee"
     },
     {
-      "id": "SilentSentinel.effects0.paramCharacterData.unitAbility",
+      "id": "SpellSlamAbility",
       "names": {
         "key": "CardData_nameKey-564d4bae4e763702-b47d793ebc047c2448f4e139ccef1026-v2",
         "english": "Spell Slam",
@@ -102,7 +102,7 @@
         "asset_guid": "0ec9afcc63f6101499d9086f2b0d9e82"
       },
       "impact_vfx": "@SilentSentinel.effects0.paramCharacterData.impactVFX",
-      "ability": "@SilentSentinel.effects0.paramCharacterData.unitAbility",
+      "ability": "@SpellSlamAbility",
       "size": 2,
       "health": 40,
       "attack_damage": 10,
@@ -114,6 +114,11 @@
     }
   ],
   "effects": [
+    {
+      "id": "SilentSentinel.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterSilentSentinel"
+    },
     {
       "id": "SilentSentinel.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectHeal",
@@ -131,11 +136,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "SilentSentinel.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterSilentSentinel"
     }
   ],
   "vfxs": [

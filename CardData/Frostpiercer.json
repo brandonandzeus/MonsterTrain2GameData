@@ -60,7 +60,47 @@
       "artist": "Loy Bouttamy"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Frostpiercer_Upgrade",
+      "trigger_upgrades": [
+        "@Frostpiercer.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "show_description_on_cards": true,
+      "bonus_damage": 5
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Frostpiercer.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-f44f1bc61d974b9d-a8abff42c86a49347b7a0168fd05eb51-v2",
+        "english": "Apply [frostbite] equal to half the damage dealt.",
+        "french": "Applique [frostbite] à hauteur de la moitié des dégâts infligés.",
+        "german": "Wende [frostbite] in Höhe der Hälfte des verursachten Schadens an.",
+        "russian": "Накладывает [frostbite], равное половине нанесенного урона.",
+        "portuguese": "Aplica [frostbite] igual à metade do dano causado.",
+        "chinese": "施加等同于造成伤害量一半的[frostbite]。",
+        "spanish": "Añade tanta [frostbite] como la mitad del daño infligido.",
+        "chinese_traditional": "施加等同於造成傷害一半的[frostbite]。",
+        "korean": "입힌 피해량의 절반만큼 [frostbite] 효과를 적용합니다.",
+        "japanese": "与ダメージの半分に等しい[frostbite]を付与する。"
+      },
+      "trigger": "on_attacking_before_damage",
+      "effects": [
+        "@Frostpiercer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
   "effects": [
+    {
+      "id": "Frostpiercer.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@Frostpiercer_Upgrade",
+      "applied_vfx": "@Frostpiercer.effects0.appliedVFX"
+    },
     {
       "id": "Frostpiercer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffectPerLastAttackDamage",
@@ -74,14 +114,6 @@
       ],
       "param_int": 2,
       "param_bool_2": true
-    },
-    {
-      "id": "Frostpiercer.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "Frostpiercer_Upgrade",
-      "applied_vfx": "@Frostpiercer.effects0.appliedVFX"
     }
   ],
   "vfxs": [

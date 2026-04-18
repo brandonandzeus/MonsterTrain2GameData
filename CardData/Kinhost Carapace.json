@@ -22,7 +22,7 @@
       "artist": "Daniel Sarmiento Chuquisengo"
     },
     {
-      "id": "KinhostCarapace.effects0.paramCharacterData.unitAbility",
+      "id": "KinhostCarapaceAbility",
       "names": {
         "key": "CardData_nameKey-a7165e294f7395d7-5a59ccfc1c856914aab2a9592ca284ba-v2",
         "english": "Echoed Growth",
@@ -116,7 +116,7 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_KinhostCarapace.prefab",
         "asset_guid": "41d83f6d4b26990409e1107c1c67acb7"
       },
-      "ability": "@KinhostCarapace.effects0.paramCharacterData.unitAbility",
+      "ability": "@KinhostCarapaceAbility",
       "size": 3,
       "health": 10,
       "attack_damage": 10,
@@ -128,11 +128,16 @@
   ],
   "effects": [
     {
+      "id": "KinhostCarapace.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterKinhostCarapace"
+    },
+    {
       "id": "KinhostCarapace.effects0.paramCharacterData.unitAbility.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "drop_target_character",
       "target_team": "both",
-      "param_upgrade": "WurmBannerScalePerCorrupt",
+      "param_upgrade": "@WurmBannerScalePerCorrupt",
       "additional_tooltips": [
         "@KinhostCarapace.effects0.paramCharacterData.unitAbility.effects0.additionalTooltips0"
       ],
@@ -145,11 +150,12 @@
       "name": "CardEffectAdjustCorruption",
       "param_int": -1,
       "applied_to_self_vfx": "@KinhostCarapace.effects0.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "KinhostCarapace.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterKinhostCarapace"
+      "id": "WurmBannerScalePerCorrupt",
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "additional_tooltips": [

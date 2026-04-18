@@ -73,6 +73,16 @@
       "artist": "Adam Lee"
     }
   ],
+  "upgrades": [
+    {
+      "id": "SirenSong",
+      "room_modifier_upgrades": [
+        "@SirenSong.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@SirenSong.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "traits": [
     {
       "id": "SirenSong.traits0",
@@ -90,6 +100,12 @@
     }
   ],
   "effects": [
+    {
+      "id": "SirenSong.effects0",
+      "name": "CardEffectAttachTrainRoomAttachment",
+      "target_team": "monsters",
+      "param_upgrade": "@SirenSong"
+    },
     {
       "id": "SirenSong.effects0.paramCardUpgradeData.roomModifierUpgrades0.paramCardEffects0",
       "name": "CardEffectAddStatusEffect",
@@ -110,12 +126,6 @@
       "target_team": "heroes",
       "target_ignore_bosses": true,
       "param_int": 1
-    },
-    {
-      "id": "SirenSong.effects0",
-      "name": "CardEffectAttachTrainRoomAttachment",
-      "target_team": "monsters",
-      "param_upgrade": "SirenSong"
     }
   ],
   "vfxs": [

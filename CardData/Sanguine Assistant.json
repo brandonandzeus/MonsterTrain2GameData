@@ -2,36 +2,7 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "cards": [
     {
-      "id": "SanguineAssistant",
-      "cost": 1,
-      "card_type": "monster",
-      "rarity": "common",
-      "class": "ClassLazarusLeague",
-      "pools": [
-        "LazarusLeagueGraftedUnitNoStarterPool",
-        "LazarusLeagueGraftedUnitPool",
-        "MegaPool",
-        "PartFactory_Pool",
-        "UnitsLazarusLeagueBannerReplacementMutator"
-      ],
-      "card_art": {
-        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SanguineAssistant.prefab",
-        "asset_guid": "79ed525e382060f4cb73e08ab91057da"
-      },
-      "effects": [
-        "@SanguineAssistant.effects0"
-      ],
-      "shared_discovery_cards": [
-        "VampiresTooth"
-      ],
-      "shared_mastery_cards": [
-        "VampiresTooth"
-      ],
-      "initial_keyboard_target": "front_friendly",
-      "artist": "Genevieve Bega"
-    },
-    {
-      "id": "SanguineAssistant.effects0.paramCharacterData.graftedEquipment",
+      "id": "VampiresTooth",
       "names": {
         "key": "CardData_nameKey-21aff0d44aa90883-565a11151f012f84e91809f00fcde05e-v2",
         "english": "Vampire's Tooth",
@@ -81,6 +52,35 @@
       "ignore_when_counting_mastery": true,
       "initial_keyboard_target": "front_friendly",
       "artist": "Nicole Anne Alfonso"
+    },
+    {
+      "id": "SanguineAssistant",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "ClassLazarusLeague",
+      "pools": [
+        "LazarusLeagueGraftedUnitNoStarterPool",
+        "LazarusLeagueGraftedUnitPool",
+        "MegaPool",
+        "PartFactory_Pool",
+        "UnitsLazarusLeagueBannerReplacementMutator"
+      ],
+      "card_art": {
+        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_SanguineAssistant.prefab",
+        "asset_guid": "79ed525e382060f4cb73e08ab91057da"
+      },
+      "effects": [
+        "@SanguineAssistant.effects0"
+      ],
+      "shared_discovery_cards": [
+        "VampiresTooth"
+      ],
+      "shared_mastery_cards": [
+        "VampiresTooth"
+      ],
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Genevieve Bega"
     }
   ],
   "traits": [
@@ -126,7 +126,7 @@
         "asset_guid": "dd55e9dca64aa5b448a56e09e6f74361"
       },
       "impact_vfx": "@SanguineAssistant.effects0.paramCharacterData.impactVFX",
-      "grafted_equipment": "@SanguineAssistant.effects0.paramCharacterData.graftedEquipment",
+      "grafted_equipment": "@VampiresTooth",
       "size": 1,
       "health": 1,
       "attack_damage": 0,
@@ -160,6 +160,19 @@
   ],
   "effects": [
     {
+      "id": "SanguineAssistant.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@SanguineAssistant"
+    },
+    {
+      "id": "SanguineAssistant.effects0.paramCharacterData.graftedEquipment.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@VampiresTooth_Upgrade",
+      "applied_vfx": "@SanguineAssistant.effects0.paramCharacterData.graftedEquipment.effects0.appliedVFX"
+    },
+    {
       "id": "SanguineAssistant.effects0.paramCharacterData.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
@@ -169,19 +182,21 @@
           "count": 1
         }
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "SanguineAssistant.effects0.paramCharacterData.graftedEquipment.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "VampiresTooth_Upgrade",
-      "applied_vfx": "@SanguineAssistant.effects0.paramCharacterData.graftedEquipment.effects0.appliedVFX"
-    },
-    {
-      "id": "SanguineAssistant.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "SanguineAssistant"
+      "id": "VampiresTooth_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "lifesteal",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@SanguineAssistant.effects0.paramCharacterData.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 15
     }
   ],
   "vfxs": [

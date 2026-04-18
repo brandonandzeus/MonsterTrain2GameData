@@ -95,17 +95,25 @@
   ],
   "effects": [
     {
+      "id": "Pincushion.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterPincushion"
+    },
+    {
       "id": "Pincushion.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Pincushion_Upgrade",
+      "param_upgrade": "@Pincushion_Upgrade",
       "param_int_3": 2,
       "param_bool": true
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "Pincushion.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterPincushion"
+      "id": "Pincushion_Upgrade",
+      "bonus_damage": 3,
+      "bonus_hp": 3,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "vfxs": [

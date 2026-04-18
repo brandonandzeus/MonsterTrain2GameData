@@ -94,6 +94,11 @@
   ],
   "effects": [
     {
+      "id": "RubbleRaiser.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MorselRubbleRaiser"
+    },
+    {
       "id": "RubbleRaiser.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectGainEnergy",
       "param_int": 1,
@@ -104,12 +109,14 @@
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "both",
-      "param_upgrade": "RubbleMorselTrigger"
-    },
+      "param_upgrade": "@RubbleMorselTrigger"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "RubbleRaiser.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MorselRubbleRaiser"
+      "id": "RubbleMorselTrigger",
+      "bonus_damage": 3,
+      "bonus_hp": 3
     }
   ],
   "vfxs": [

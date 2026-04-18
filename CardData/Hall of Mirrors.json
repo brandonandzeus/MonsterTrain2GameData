@@ -66,6 +66,18 @@
       "artist": "Hannah Lim"
     }
   ],
+  "upgrades": [
+    {
+      "id": "HallOfMirrors",
+      "room_modifier_upgrades": [
+        "@HallOfMirrors.effects0.paramCardUpgradeData.roomModifierUpgrades0",
+        "@HallOfMirrors.effects0.paramCardUpgradeData.roomModifierUpgrades1"
+      ],
+      "hide_icon_on_card": true,
+      "show_description_on_cards": true,
+      "persistent_vfx": "@HallOfMirrors.effects0.paramCardUpgradeData.persistentVFX"
+    }
+  ],
   "room_modifiers": [
     {
       "id": "HallOfMirrors.effects0.paramCardUpgradeData.roomModifierUpgrades0",
@@ -85,13 +97,18 @@
       "id": "HallOfMirrors.effects0",
       "name": "CardEffectAttachTrainRoomAttachment",
       "target_team": "monsters",
-      "param_upgrade": "HallOfMirrors",
+      "param_upgrade": "@HallOfMirrors",
       "additional_tooltips": [
         "@HallOfMirrors.effects0.additionalTooltips0"
       ]
     }
   ],
   "additional_tooltips": [
+    {
+      "id": "HallOfMirrors.effects0.additionalTooltips0",
+      "trigger": "on_spawn",
+      "style": "default"
+    },
     {
       "id": "HallOfMirrors.effects0.paramCardUpgradeData.roomModifierUpgrades1.additionalTooltips0",
       "descriptions": {
@@ -120,11 +137,6 @@
         "korean": "[capacity] 수용량",
         "japanese": "[capacity] キャパシティ"
       }
-    },
-    {
-      "id": "HallOfMirrors.effects0.additionalTooltips0",
-      "trigger": "on_spawn",
-      "style": "default"
     }
   ],
   "vfxs": [

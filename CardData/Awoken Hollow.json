@@ -117,6 +117,11 @@
   ],
   "effects": [
     {
+      "id": "AwokenHollow.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterHollowGolem"
+    },
+    {
       "id": "AwokenHollow.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAdjustMaxHealth",
       "target_mode": "self",
@@ -127,18 +132,20 @@
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "weakest",
       "target_team": "monsters",
-      "param_upgrade": "AwokenHollowTrigger",
+      "param_upgrade": "@AwokenHollowTrigger",
       "additional_tooltips": [
         "@AwokenHollow.effects0.paramCharacterData.triggers1.effects0.additionalTooltips0"
       ],
       "target_character_excluded_subtypes": [
         "SubtypesData_Snack"
       ]
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "AwokenHollow.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterHollowGolem"
+      "id": "AwokenHollowTrigger",
+      "bonus_damage": 3,
+      "bonus_hp": 3
     }
   ],
   "additional_tooltips": [

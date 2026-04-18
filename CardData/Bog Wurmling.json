@@ -98,15 +98,22 @@
   ],
   "effects": [
     {
+      "id": "BogWurmling.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterBogWurmling"
+    },
+    {
       "id": "BogWurmling.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "WurmTrigger"
-    },
+      "param_upgrade": "@WurmTrigger"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "BogWurmling.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterBogWurmling"
+      "id": "WurmTrigger",
+      "bonus_damage": 15,
+      "bonus_hp": 15
     }
   ],
   "vfxs": [

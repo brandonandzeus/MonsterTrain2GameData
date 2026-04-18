@@ -94,16 +94,22 @@
   ],
   "effects": [
     {
+      "id": "MoltenMorsel.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MorselMoltenMorsel"
+    },
+    {
       "id": "MoltenMorsel.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "both",
-      "param_upgrade": "MoltenMorselTrigger"
-    },
+      "param_upgrade": "@MoltenMorselTrigger"
+    }
+  ],
+  "upgrades": [
     {
-      "id": "MoltenMorsel.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MorselMoltenMorsel"
+      "id": "MoltenMorselTrigger",
+      "bonus_damage": 9
     }
   ],
   "vfxs": [

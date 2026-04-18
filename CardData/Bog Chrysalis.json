@@ -25,7 +25,7 @@
       "artist": "Aaron Lovett"
     },
     {
-      "id": "BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.unitAbility",
+      "id": "BogFlyFlightAbility",
       "names": {
         "key": "CardData_nameKey-f98ed720c7fe30d4-fa631acc55a061948ba8dcd2807b6b13-v2",
         "english": "Echoflight",
@@ -114,7 +114,7 @@
       "room_modifiers": [
         "@BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.roomModifiers0"
       ],
-      "ability": "@BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.unitAbility",
+      "ability": "@BogFlyFlightAbility",
       "size": 1,
       "health": 10,
       "attack_damage": 0,
@@ -280,6 +280,11 @@
   ],
   "effects": [
     {
+      "id": "BogChrysalis.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterBogChrysalis"
+    },
+    {
       "id": "BogChrysalis.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectRemoveStatusEffectPerCorrupt",
       "target_mode": "self",
@@ -292,11 +297,6 @@
       "hide_tooltip": true
     },
     {
-      "id": "BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.unitAbility.effects0",
-      "name": "CardEffectUnitAbilityTeleport",
-      "applied_to_self_vfx": "@BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
-    },
-    {
       "id": "BogChrysalis.effects0.paramCharacterData.triggers1.effects0",
       "name": "CardEffectSacrifice",
       "target_mode": "self",
@@ -306,7 +306,7 @@
     {
       "id": "BogChrysalis.effects0.paramCharacterData.triggers1.effects1",
       "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterBogFly",
+      "param_character": "@MonsterBogFly",
       "additional_tooltips": [
         "@BogChrysalis.effects0.paramCharacterData.triggers1.effects1.additionalTooltips0"
       ],
@@ -319,9 +319,9 @@
       "target_team": "monsters"
     },
     {
-      "id": "BogChrysalis.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterBogChrysalis"
+      "id": "BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@BogChrysalis.effects0.paramCharacterData.triggers1.effects1.paramCharacterData.unitAbility.effects0.appliedToSelfVFX"
     }
   ],
   "additional_tooltips": [
@@ -357,18 +357,18 @@
   ],
   "vfxs": [
     {
-      "id": "BogChrysalis.effects0.paramCharacterData.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/FX/FX_Projectile_WurmChrysalis.prefab",
-        "asset_guid": "e907d1cfab9d96643a5c8b3921f0eada"
-      },
-      "spawn_location": "character_center"
-    },
-    {
       "id": "BogChrysalis.effects0.paramCharacterData.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBluntSmall.prefab",
         "asset_guid": "72b87cde6c1982d48b212d0b28028d13"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "BogChrysalis.effects0.paramCharacterData.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/FX/FX_Projectile_WurmChrysalis.prefab",
+        "asset_guid": "e907d1cfab9d96643a5c8b3921f0eada"
       },
       "spawn_location": "character_center"
     },

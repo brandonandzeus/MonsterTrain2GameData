@@ -55,13 +55,25 @@
       "artist": "Rithyra Bin"
     }
   ],
+  "upgrades": [
+    {
+      "id": "GlassCannon_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "fragile",
+          "count": 1
+        }
+      ],
+      "bonus_damage": 50
+    }
+  ],
   "effects": [
     {
       "id": "GlassCannon.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "GlassCannon_Upgrade",
+      "param_upgrade": "@GlassCannon_Upgrade",
       "applied_vfx": "@GlassCannon.effects0.appliedVFX"
     }
   ],

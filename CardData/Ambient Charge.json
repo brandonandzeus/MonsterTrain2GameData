@@ -54,7 +54,7 @@
       "artist": "Loy Bouttamy"
     },
     {
-      "id": "AmbientCharge.effects0.paramCardUpgradeData.unitAbilityUpgrade",
+      "id": "ExtractDrawAbility",
       "names": {
         "key": "CardData_nameKey-c9715a485f50d813-abdf4907dcdc0e848b001974c284e1c5-v2",
         "english": "Echoburn",
@@ -96,6 +96,12 @@
       "initial_keyboard_target": "front_friendly"
     }
   ],
+  "upgrades": [
+    {
+      "id": "AmbientCharge",
+      "ability_upgrade": "@ExtractDrawAbility"
+    }
+  ],
   "traits": [
     {
       "id": "AmbientCharge.effects0.paramCardUpgradeData.unitAbilityUpgrade.traits0",
@@ -106,17 +112,17 @@
   ],
   "effects": [
     {
-      "id": "AmbientCharge.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
-      "name": "CardEffectDraw",
-      "param_int": 2
-    },
-    {
       "id": "AmbientCharge.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "AmbientCharge",
+      "param_upgrade": "@AmbientCharge",
       "applied_vfx": "@AmbientCharge.effects0.appliedVFX"
+    },
+    {
+      "id": "AmbientCharge.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
+      "name": "CardEffectDraw",
+      "param_int": 2
     }
   ],
   "vfxs": [

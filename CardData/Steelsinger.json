@@ -117,6 +117,11 @@
   ],
   "effects": [
     {
+      "id": "Steelsinger.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterSteelsinger"
+    },
+    {
       "id": "Steelsinger.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAdjustMaxHealth",
       "target_mode": "self",
@@ -126,14 +131,16 @@
       "id": "Steelsinger.effects0.paramCharacterData.triggers1.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus3AttackScalable",
+      "param_upgrade": "@Plus3AttackScalable",
       "param_int_3": 2,
       "param_bool": true
-    },
+    }
+  ],
+  "upgrades": [
     {
-      "id": "Steelsinger.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterSteelsinger"
+      "id": "Plus3AttackScalable",
+      "bonus_damage": 3,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "vfxs": [

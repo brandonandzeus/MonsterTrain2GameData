@@ -53,22 +53,66 @@
       "artist": "Loy Bouttamy"
     }
   ],
-  "effects": [
+  "upgrades": [
     {
-      "id": "EventCard_HephsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAdjustRoomCapacity",
-      "param_int": 1
-    },
+      "id": "EventCard_HephsHammer_Equipment",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-dfcc2152aff7e3a1-e3185523ecd1dc94a83431f689ff0e3a-v2",
+        "english": "Railforge Hammer",
+        "french": "Marteau Forgerail",
+        "german": "Gleisschmiedehammer",
+        "russian": "Молот для рельсов",
+        "portuguese": "Martelo Forja-Trilhos",
+        "chinese": "铁道锻造锤",
+        "spanish": "Martillo de forja de raíles",
+        "chinese_traditional": "軌道鍛造之錘",
+        "korean": "선로 단조 망치",
+        "japanese": "鉄道敷設の金槌"
+      },
+      "trigger_upgrades": [
+        "@EventCard_HephsHammer.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 20
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "EventCard_HephsHammer.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-ec7f9118f6341f9e-e3185523ecd1dc94a83431f689ff0e3a-v2",
+        "english": "+[effect0.power][capacity].",
+        "french": "+[effect0.power][capacity].",
+        "german": "+[effect0.power][capacity].",
+        "russian": "+[effect0.power][capacity].",
+        "portuguese": "+[effect0.power][capacity].",
+        "chinese": "+[effect0.power][capacity]。",
+        "spanish": "+[effect0.power][capacity].",
+        "chinese_traditional": "+[effect0.power][capacity]。",
+        "korean": "+[effect0.power][capacity].",
+        "japanese": "+[effect0.power][capacity]。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@EventCard_HephsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
     {
       "id": "EventCard_HephsHammer.effects0",
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "EventCard_HephsHammer_Equipment",
+      "param_upgrade": "@EventCard_HephsHammer_Equipment",
       "additional_tooltips": [
         "@EventCard_HephsHammer.effects0.additionalTooltips0"
       ],
       "applied_vfx": "@EventCard_HephsHammer.effects0.appliedVFX"
+    },
+    {
+      "id": "EventCard_HephsHammer.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAdjustRoomCapacity",
+      "param_int": 1
     }
   ],
   "additional_tooltips": [
