@@ -50,7 +50,84 @@
       "additional_tooltips": [
         "@PathAngelUnitAbilityCourage.effects0.additionalTooltips0"
       ],
-      "param_upgrade": "CourageUnitAbility"
+      "param_upgrade": "@CourageUnitAbility"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CourageUnitAbility",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-218112d44af83ca6-d10447104a7bd214eb5b3f38f4d5b0d2-v2",
+        "english": "Courage",
+        "french": "Courage",
+        "german": "Mut",
+        "russian": "Храбрость",
+        "portuguese": "Coragem",
+        "chinese": "勇气",
+        "spanish": "Coraje",
+        "chinese_traditional": "勇氣",
+        "korean": "용기",
+        "japanese": "勇気"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-362409bccab38c50-d10447104a7bd214eb5b3f38f4d5b0d2-v2",
+        "english": "Gain <b>Courage</b> Ability.",
+        "french": "Octroie la capacité <b>Courage</b>.",
+        "german": "Erhalte die Fähigkeit <b>Mut</b>.",
+        "russian": "Дает умение <b>Храбрость</b>.",
+        "portuguese": "Recebe a Habilidade <b>Coragem</b>.",
+        "chinese": "获得 <b>勇气</b> 能力。",
+        "spanish": "Obtiene la habilidad <b>Coraje</b>.",
+        "chinese_traditional": "獲得<b>勇氣</b>能力。",
+        "korean": "<b>용기</b> 능력을 획득합니다.",
+        "japanese": "<b>勇気</b>アビリティを得る。"
+      },
+      "ability_upgrade": "@CourageAbility",
+      "filters": [
+        "ExcludeUnitsWithAbilities"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "CourageAbility",
+      "names": {
+        "key": "CardData_nameKey-c9ad7913c757b1fe-d0cd81c71bd97344590e14c392e4ea30-v2",
+        "english": "Courage",
+        "french": "Courage",
+        "german": "Mut",
+        "russian": "Храбрость",
+        "portuguese": "Coragem",
+        "chinese": "勇气",
+        "spanish": "Coraje",
+        "chinese_traditional": "勇氣",
+        "korean": "용기",
+        "japanese": "勇気"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-5570d92908b45d12-d0cd81c71bd97344590e14c392e4ea30-v2",
+        "english": "[advance]. Restore to full health and gain [armor] equal to amount healed.",
+        "french": "[advance]. Restaure les PV manquants et confère de l'[armor] valant la quantité soignée.",
+        "german": "[advance]. Regeneriere die volle Gesundheit und erhalte [armor] im Ausmaß der geheilten Gesundheit.",
+        "russian": "[advance]. Восстанавливает недостающее здоровье и дает столько же <b>брони</b>.",
+        "portuguese": "<b>Avança</b>. Restaura toda a vida e concede [armor] igual à quantidade curada.",
+        "chinese": "[advance]。恢复所有生命，并获得相当于治疗量的 [armor]。",
+        "spanish": "[advance]. Restaura toda la salud y añade tanta [armor] como la curación recibida.",
+        "chinese_traditional": "[advance]。恢復至滿血並獲得等於治療量的[armor]。",
+        "korean": "[advance]. 체력을 모두 회복하고 회복량과 동일한 수치의 [armor]을 획득합니다.",
+        "japanese": "[advance]。体力を全回復し、回復量に等しい[armor]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@PathAngelUnitAbilityCourage.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
+        "@PathAngelUnitAbilityCourage.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1",
+        "@PathAngelUnitAbilityCourage.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects2"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
   "effects": [

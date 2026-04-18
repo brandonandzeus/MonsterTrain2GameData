@@ -53,7 +53,50 @@
       "id": "UnitUpgradeQuick.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "AddQuick"
+      "param_upgrade": "@AddQuick"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddQuick",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-60bc5d898a54f3d4-30c29fbb387c39e4b9f799d3a288749d-v2",
+        "english": "Speedstone",
+        "french": "Pierre de célérité",
+        "german": "Flinkstein",
+        "russian": "Камень скорости",
+        "portuguese": "Pedra de Velocidade",
+        "chinese": "迅捷石",
+        "spanish": "Piedra veloz",
+        "chinese_traditional": "速石",
+        "korean": "속도석",
+        "japanese": "素早さの石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-4b8cff613002a0fa-30c29fbb387c39e4b9f799d3a288749d-v2",
+        "english": "Gain [quick] and +[bonusdamage][attack].",
+        "french": "Octroie [quick] et +[bonusdamage][attack].",
+        "german": "Erhalte[health] und +[bonusdamage][attack].",
+        "russian": "Даются [quick] и +[bonusdamage][attack].",
+        "portuguese": "Concede [quick] e +[bonusdamage][attack].",
+        "chinese": "获得 [quick] 和 +[bonusdamage][attack]。",
+        "spanish": "Añade [quick] y +[bonusdamage][attack].",
+        "chinese_traditional": "獲得[quick]和+[bonusdamage][attack]。",
+        "korean": "[quick] 및 +[bonusdamage][attack]을 획득합니다.",
+        "japanese": "[quick]と+[bonusdamage][attack]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "ambush",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "OnlyAttackingUnits",
+        "ExcludeQuick",
+        "ExcludeEelGorgon"
+      ],
+      "bonus_damage": 10
     }
   ]
 }

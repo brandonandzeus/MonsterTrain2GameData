@@ -54,7 +54,55 @@
       "id": "SpellUpgradeTraitAddJuice.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "TraitJuice"
+      "param_upgrade": "@TraitJuice"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TraitJuice",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-faccd142fc81d357-8cf22d302b6b4854799962ff7d5ca36a-v2",
+        "english": "Stackstone",
+        "french": "Pierre de cumul",
+        "german": "Stapelstein",
+        "russian": "Слоистый камень",
+        "portuguese": "Pedra de Compressão",
+        "chinese": "堆叠石",
+        "spanish": "Piedra doble",
+        "chinese_traditional": "堆疊石",
+        "korean": "스택스톤",
+        "japanese": "スタックの石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-102f451739bdedb5-8cf22d302b6b4854799962ff7d5ca36a-v2",
+        "english": "Gain [juice].",
+        "french": "Octroie [juice].",
+        "german": "Erhalte [juice].",
+        "russian": "Дает [juice].",
+        "portuguese": "Recebe [juice].",
+        "chinese": "获得 [juice]。",
+        "spanish": "Añade [juice].",
+        "chinese_traditional": "獲得[juice]。",
+        "korean": "[juice]을 획득합니다.",
+        "japanese": "[juice]を得る。"
+      },
+      "trait_upgrades": [
+        "@SpellUpgradeTraitAddJuice.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "OnlyStatusEffectSetting",
+        "OnlySpells",
+        "ExcludeDoublestack",
+        "ExcludeNonstackableStatusEffects",
+        "ExcludeCardsFromJuice",
+        "ExcludeSoulSiphon"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "SpellUpgradeTraitAddJuice.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitJuice"
     }
   ]
 }

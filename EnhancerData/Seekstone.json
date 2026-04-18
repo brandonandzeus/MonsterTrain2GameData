@@ -53,9 +53,54 @@
       "id": "SpellUpgradeReduceCostTraitAddIntrinsic.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "TraitInherentSpellReduceCost",
+      "param_upgrade": "@TraitInherentSpellReduceCost",
       "param_min_int": 1,
       "param_max_int": 99
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TraitInherentSpellReduceCost",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-32dc21f7e3c8f429-4f5b91108068dce478034bafc1021c9b-v2",
+        "english": "Seekstone",
+        "french": "Pierre chercheuse",
+        "german": "Suchstein",
+        "russian": "Камень провидца",
+        "portuguese": "Pedra da Busca",
+        "chinese": "寻踪石",
+        "spanish": "Piedra localizadora",
+        "chinese_traditional": "尋石",
+        "korean": "탐구석",
+        "japanese": "先陣の石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-a5ad3f16805ecebe-4f5b91108068dce478034bafc1021c9b-v2",
+        "english": "-[costreduction][ember] and gain [inherent].",
+        "french": "-[costreduction][ember] et octroie [inherent].",
+        "german": "-[costreduction][ember] und erhalte [inherent].",
+        "russian": "-[costreduction][ember] и дается [inherent].",
+        "portuguese": "-[costreduction][ember] e recebe [inherent].",
+        "chinese": "-[costreduction][ember] 并获得 [inherent]。",
+        "spanish": "-[costreduction][ember] y añade [inherent].",
+        "chinese_traditional": "-[costreduction][ember]並獲得[inherent]。",
+        "korean": "-[costreduction][ember] 및 [inherent] 효과를 획득합니다.",
+        "japanese": "-[costreduction][ember]、[inherent]を得る。"
+      },
+      "trait_upgrades": [
+        "@SpellUpgradeReduceCostTraitAddIntrinsic.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells"
+      ],
+      "cost_reduction": 1,
+      "x_cost_reduction": 1
+    }
+  ],
+  "traits": [
+    {
+      "id": "SpellUpgradeReduceCostTraitAddIntrinsic.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitIntrinsicState"
     }
   ]
 }

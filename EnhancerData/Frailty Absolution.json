@@ -47,7 +47,54 @@
       "id": "MinorAbsolutionCardUpgrade.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "MinorAbsolution"
+      "param_upgrade": "@MinorAbsolution"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MinorAbsolution",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-ddfd3e70e448f2a1-af5888e0620757248acc971c68321f6e-v2",
+        "english": "Frailty Absolution",
+        "french": "Absolution de faiblesse",
+        "german": "Schwache Absolution",
+        "russian": "Абсолютная бренность",
+        "portuguese": "Absolvição da Fragilidade",
+        "chinese": "脆弱赦免",
+        "spanish": "Absolución de fragilidad",
+        "chinese_traditional": "脆弱赦免",
+        "korean": "약점 구제",
+        "japanese": "脆弱の許し"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-cca6d4a3d905e3b6-af5888e0620757248acc971c68321f6e-v2",
+        "english": "[celebrate]: Permanently gain [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "french": "<nobr>[celebrate] :</nobr> Octroie [charactertrigger0.effect0.upgrade.bonusdamage][attack] définitivement.",
+        "german": "[celebrate]: Erhalte permanent [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "russian": "[celebrate]: Навсегда даетcя [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "[celebrate]: recebe [charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese": "[celebrate]：永久获得 [charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "[celebrate]: Añade [charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese_traditional": "[celebrate]：永久獲得[charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[celebrate]: 영구적으로 [charactertrigger0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "[celebrate]：永続的に[charactertrigger0.effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "trigger_upgrades": [
+        "@MinorAbsolutionCardUpgrade.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "filters": [
+        "OnlyMinorPenanceCardUpgrade"
+      ],
+      "is_unique": true,
+      "upgrades_to_remove": [
+        "MinorPenance"
+      ]
+    },
+    {
+      "id": "MinorAbsolution_Attack",
+      "use_upgrade_highlight_tags": false,
+      "bonus_damage": 10,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "character_triggers": [
@@ -77,7 +124,7 @@
       "id": "MinorAbsolutionCardUpgrade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "MinorAbsolution_Attack",
+      "param_upgrade": "@MinorAbsolution_Attack",
       "param_int_3": 2,
       "param_bool": true
     }

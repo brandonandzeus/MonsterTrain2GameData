@@ -51,9 +51,54 @@
       "id": "SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "SoulSavior_TraitInherentSpellReduceCost",
+      "param_upgrade": "@SoulSavior_TraitInherentSpellReduceCost",
       "param_min_int": 1,
       "param_max_int": 99
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SoulSavior_TraitInherentSpellReduceCost",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-bf9ba60286d82463-0367677a627d00e4fb73a4a69a02088a-v2",
+        "english": "Seekslab",
+        "french": "Gemme chercheuse",
+        "german": "Platte der Suche",
+        "russian": "Пласт поиска",
+        "portuguese": "Placa da Busca",
+        "chinese": "寻踪石板",
+        "spanish": "Losa de búsqueda",
+        "chinese_traditional": "尋石板",
+        "korean": "탐색의 서판",
+        "japanese": "先陣の原石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-d27d47e478cfc222-0367677a627d00e4fb73a4a69a02088a-v2",
+        "english": "-[costreduction][ember] and gain [inherent].",
+        "french": "-[costreduction][ember] et octroie [inherent].",
+        "german": "-[costreduction][ember] und erhalte [inherent].",
+        "russian": "-[costreduction][ember] и дается [inherent].",
+        "portuguese": "-[costreduction][ember] e recebe [inherent].",
+        "chinese": "-[costreduction][ember] 并获得 [inherent]。",
+        "spanish": "-[costreduction][ember] y añade [inherent].",
+        "chinese_traditional": "-[costreduction][ember]並獲得[inherent]。",
+        "korean": "-[costreduction][ember] 및 [inherent] 효과를 획득합니다.",
+        "japanese": "-[costreduction][ember]と[inherent]を得る。"
+      },
+      "trait_upgrades": [
+        "@SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells"
+      ],
+      "cost_reduction": 2,
+      "x_cost_reduction": 2
+    }
+  ],
+  "traits": [
+    {
+      "id": "SoulSavior_SpellUpgradeReduceCostTraitAddIntrinsic.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitIntrinsicState"
     }
   ]
 }

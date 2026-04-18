@@ -47,7 +47,54 @@
       "id": "CultOfTheLambRedCrown.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "CultOfTheLambRedCrownUpgrade"
+      "param_upgrade": "@CultOfTheLambRedCrownUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CultOfTheLambRedCrownUpgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-432557acdab4f57e-7a877193381f4e14bb53bf12548693a3-v2",
+        "english": "Red Crown",
+        "french": "Couronne rouge",
+        "german": "Rote Krone",
+        "russian": "Алая корона",
+        "portuguese": "Coroa Vermelha",
+        "chinese": "红眼冠",
+        "spanish": "Corona Roja",
+        "chinese_traditional": "紅眼冠",
+        "korean": "붉은 왕관",
+        "japanese": "赤き王冠"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-9f19108799dd95d7-7a877193381f4e14bb53bf12548693a3-v2",
+        "english": "<b>Endless</b>. <b>Summon</b>: Equip a random equipment.",
+        "french": "<b>Infini</b>. <nobr><b>Invocation</b> :</nobr> Attache un équipement aléatoire.",
+        "german": "<b>Endlos</b>. <b>Rufen</b>: Lege eine zufällige Ausrüstung an.",
+        "russian": "<b>Бесконечность</b> <b>Призыв</b>: Надевает случайное снаряжение.",
+        "portuguese": "<b>Perpétuo</b>. <b>Invocar</b>: aplica um equipamento aleatório.",
+        "chinese": "<b>无尽</b>。<b>召唤</b>：穿戴一件随机装备。",
+        "spanish": "<b>Infinito</b>. <b>Invocación</b>: Equipa un equipo aleatorio.",
+        "chinese_traditional": "<b>無限</b>。<b>召喚</b>：裝備一件隨機裝備。",
+        "korean": "<b>무한</b>. <b>소환</b>: 무작위 장비를 장착합니다.",
+        "japanese": "<b>永続</b>。<b>召喚</b>：ランダムな装備品を装着する。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "endless",
+          "count": 1
+        },
+        {
+          "status": "redcrown",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@CultOfTheLambRedCrown.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "filters": [
+        "OnlyUngraftedUnits"
+      ]
     }
   ],
   "character_triggers": [

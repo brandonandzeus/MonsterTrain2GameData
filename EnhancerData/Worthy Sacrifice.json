@@ -47,7 +47,88 @@
       "id": "InscryptionEventWorthySacrificeCardUpgrade.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "InscryptionEventWorthySacrifice_Upgrade"
+      "param_upgrade": "@InscryptionEventWorthySacrifice_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "InscryptionEventWorthySacrifice_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-8f00e1a1b444046f-b5b08efe74e47454c850ea95de764ede-v2",
+        "english": "Worthy Sacrifice",
+        "french": "Sacrifice bienvenu",
+        "german": "Würdiges Opfer",
+        "russian": "Достойная жертва",
+        "portuguese": "Sacrifício Digno",
+        "chinese": "优质祭品",
+        "spanish": "Sacrificio digno",
+        "chinese_traditional": "夠格的犧牲",
+        "korean": "값진 희생",
+        "japanese": "価値ある捧げもの"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-a49b41d6de64edd8-b5b08efe74e47454c850ea95de764ede-v2",
+        "english": "[ability]: Worthy Sacrifice.",
+        "french": "<nobr>[ability] :</nobr> Sacrifice bienvenu.",
+        "german": "[ability]: Würdiges Opfer.",
+        "russian": "[ability]: Достойная жертва.",
+        "portuguese": "[ability]: Sacrifício Digno.",
+        "chinese": "[ability]：优质祭品。",
+        "spanish": "[ability]: Sacrificio digno.",
+        "chinese_traditional": "[ability]：夠格的犧牲。",
+        "korean": "[ability]: 값진 희생.",
+        "japanese": "[ability]：価値ある捧げもの。"
+      },
+      "ability_upgrade": "@InscryptionEventWorthySacrificeAbility",
+      "filters": [
+        "ExcludeUpgrade_WorthySacrifice"
+      ],
+      "is_unique": true
+    }
+  ],
+  "cards": [
+    {
+      "id": "InscryptionEventWorthySacrificeAbility",
+      "names": {
+        "key": "CardData_nameKey-66549465e06bc8dc-ae3c39250aef46242980b078a513e27a-v2",
+        "english": "Worthy Sacrifice",
+        "french": "Sacrifice bienvenu",
+        "german": "Würdiges Opfer",
+        "russian": "Достойная жертва",
+        "portuguese": "Sacrifício Digno",
+        "chinese": "优质祭品",
+        "spanish": "Sacrificio digno",
+        "chinese_traditional": "夠格的犧牲",
+        "korean": "값진 희생",
+        "japanese": "価値ある捧げもの"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-38f65863fb60d2d0-ae3c39250aef46242980b078a513e27a-v2",
+        "english": "Gain [effect1.power][ember].",
+        "french": "Octroie [effect1.power][ember].",
+        "german": "Erhalte [effect1.power][ember].",
+        "russian": "Дает [effect1.power][ember].",
+        "portuguese": "Recebe [effect1.power][ember].",
+        "chinese": "获得[effect1.power][ember]。",
+        "spanish": "Obtienes [effect1.power][ember].",
+        "chinese_traditional": "獲得[effect1.power][ember]。",
+        "korean": "[effect1.power][ember]을 획득합니다.",
+        "japanese": "[effect1.power][ember]を得る。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SlamAbility.prefab",
+        "asset_guid": "188ce146d4e77254288d6457a06bbaa6"
+      },
+      "effects": [
+        "@InscryptionEventWorthySacrificeCardUpgrade.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
+        "@InscryptionEventWorthySacrificeCardUpgrade.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
   "effects": [

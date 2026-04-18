@@ -51,7 +51,60 @@
       "id": "UnitUpgradeTitanSavageryRevenge.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "RevengeRageAbove50PrecentLifestealBelow50Percent"
+      "param_upgrade": "@RevengeRageAbove50PrecentLifestealBelow50Percent"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RevengeRagePermaRage1",
+      "status_effect_upgrades": [
+        {
+          "status": "buff",
+          "count": 1
+        }
+      ],
+      "allow_secondary_tooltip_placement": false,
+      "hide_icon_on_card": true,
+      "use_upgrade_highlight_tags": false,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
+    },
+    {
+      "id": "RevengeRageAbove50PrecentLifestealBelow50Percent",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-e4fead5be3a2ad3b-86c8680104fc52df3b5ad66c1b3e2c07-v2",
+        "english": "Savage Heart",
+        "french": "Cœur sauvage",
+        "german": "Barbarenherz",
+        "russian": "Сердце Изувера",
+        "portuguese": "Coração da Barbárie",
+        "chinese": "野蛮之心",
+        "spanish": "Corazón salvaje",
+        "chinese_traditional": "野性之心",
+        "korean": "사나운 심장",
+        "japanese": "獰猛な心"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-182492fac66d4903-86c8680104fc52df3b5ad66c1b3e2c07-v2",
+        "english": "[rage] [status0.power]. [revenge]: Permanently gain [rage] [charactertrigger0.effect0.upgrade.status0.power].",
+        "french": "[rage] [status0.power]. <nobr>[revenge] :</nobr> Octroie [rage] [charactertrigger0.effect0.upgrade.status0.power] définitivement.",
+        "german": "[rage] [status0.power]. [revenge]: Erhalte permanent [rage] [charactertrigger0.effect0.upgrade.status0.power].",
+        "russian": "[rage] [status0.power]. [revenge]: Навсегда дает [rage] х[charactertrigger0.effect0.upgrade.status0.power].",
+        "portuguese": "[rage] [status0.power]. [revenge]: recebe [rage] [charactertrigger0.effect0.upgrade.status0.power] permanentemente.",
+        "chinese": "[rage] [status0.power]。[revenge]：永久获得 [rage] [charactertrigger0.effect0.upgrade.status0.power]。",
+        "spanish": "[rage] [status0.power]. [revenge]: Añade [rage] [charactertrigger0.effect0.upgrade.status0.power] permanentemente.",
+        "chinese_traditional": "[rage][status0.power]。[revenge]：永久獲得[rage][charactertrigger0.effect0.upgrade.status0.power]。",
+        "korean": "[rage] [status0.power]. [revenge]: [rage] [charactertrigger0.effect0.upgrade.status0.power] 효과를 영구적으로 획득합니다.",
+        "japanese": "[rage] [status0.power]。[revenge]：永続的に[rage] [charactertrigger0.effect0.upgrade.status0.power]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "buff",
+          "count": 5
+        }
+      ],
+      "trigger_upgrades": [
+        "@UnitUpgradeTitanSavageryRevenge.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
     }
   ],
   "character_triggers": [
@@ -81,7 +134,7 @@
       "id": "UnitUpgradeTitanSavageryRevenge.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "RevengeRagePermaRage1",
+      "param_upgrade": "@RevengeRagePermaRage1",
       "param_int_3": 2,
       "param_bool": true
     }

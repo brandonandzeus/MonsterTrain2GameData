@@ -47,7 +47,91 @@
       "id": "ClippedWingsWing3RewardEnhancer.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "ClippedWingsWing3RewardUpgrade"
+      "param_upgrade": "@ClippedWingsWing3RewardUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ClippedWingsWing3RewardUpgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-3dd39cab8a5a3f60-a86242b8dd398a449b62a563a25b7f9b-v2",
+        "english": "Wings of Light",
+        "french": "Ailes de lumière",
+        "german": "Flügel des Lichts",
+        "russian": "Крылья Света",
+        "portuguese": "Asas de Luz",
+        "chinese": "光之翼",
+        "spanish": "Alas de luz",
+        "chinese_traditional": "光明之翼",
+        "korean": "빛의 날개",
+        "japanese": "光の翼"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-08312a57d673b23c-a86242b8dd398a449b62a563a25b7f9b-v2",
+        "english": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. [ability]: Flying Strike.",
+        "french": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. <nobr>[ability] :</nobr> Frappe volante.",
+        "german": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. [ability]: Flugangriff.",
+        "russian": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. [ability]: Удар с воздуха.",
+        "portuguese": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. [ability]: Golpe Alado.",
+        "chinese": "[titanite]。+[bonusdamage][attack]。+[bonushp][health]。[ability]：飞翔打击",
+        "spanish": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. [ability]: Impacto aéreo.",
+        "chinese_traditional": "[titanite]。+[bonusdamage][attack]。+[bonushp][health]。[ability]：飛擊。",
+        "korean": "[titanite]. +[bonusdamage][attack]. +[bonushp][health]. [ability]: 공중 일격.",
+        "japanese": "[titanite]。+[bonusdamage][attack]。+[bonushp][health]。[ability]：飛行攻撃"
+      },
+      "ability_upgrade": "@WingsOfLightSlamAbility",
+      "status_effect_upgrades": [
+        {
+          "status": "titanite",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "ExcludeUnitsWithAbilities"
+      ],
+      "bonus_damage": 10,
+      "bonus_hp": 20
+    }
+  ],
+  "cards": [
+    {
+      "id": "WingsOfLightSlamAbility",
+      "names": {
+        "key": "CardData_nameKey-1bf140c4071f15a8-fd37224e25d62bf4db6c1aeedb9bba23-v2",
+        "english": "Flying Strike",
+        "french": "Frappe volante",
+        "german": "Flugangriff",
+        "russian": "Удар с воздуха",
+        "portuguese": "Golpe Alado",
+        "chinese": "飞翔打击",
+        "spanish": "Impacto aéreo",
+        "chinese_traditional": "飛擊",
+        "korean": "공중 일격",
+        "japanese": "飛行攻撃"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-577f52a1608292b5-fd37224e25d62bf4db6c1aeedb9bba23-v2",
+        "english": "Move to a targeted location on any floor. Deal damage to the front enemy equal to this unit's [attack].",
+        "french": "Déplace l'unité à la position ciblée. Inflige des dégâts valant l'[attack] de cette unité à l'ennemi en 1re ligne.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene. Fügt dem vordersten Gegner Schaden in Höhe von [attack] dieser Einheit zu.",
+        "russian": "Перемещение в выбранное место на любом этаже. Наносит урон переднему врагу, равный [attack] этого бойца.",
+        "portuguese": "Desloca-se para um local específico em qualquer andar. Causa dano ao inimigo à frente igual ao [attack] desta unidade.",
+        "chinese": "移动到任意层的目标位置。对前排敌方单位造成相当于该单位 [attack] 的伤害。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso. Inflige tanto daño al primer enemigo como el [attack] de esta unidad.",
+        "chinese_traditional": "移動到任意樓層的指定位置。對前排敵人造成等於此單位[attack]的傷害。",
+        "korean": "선택한 층으로 이동합니다. 전열 적 유닛에 이 유닛의 [attack] 수치만큼 피해를 줍니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。前列の敵にこのユニットの[attack]に等しいダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@ClippedWingsWing3RewardEnhancer.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0",
+        "@ClippedWingsWing3RewardEnhancer.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects1"
+      ],
+      "cooldown": 4,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
     }
   ],
   "effects": [

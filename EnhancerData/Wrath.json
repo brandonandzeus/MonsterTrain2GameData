@@ -47,7 +47,82 @@
       "id": "PathAngelUnitAbilityWrath.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "WrathUnitAbility"
+      "param_upgrade": "@WrathUnitAbility"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "WrathUnitAbility",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-11a1cb777df369ee-7c0e2b7479c86a340a98513c153bdf81-v2",
+        "english": "Wrath",
+        "french": "Courroux",
+        "german": "Zorn",
+        "russian": "Гнев",
+        "portuguese": "Ira",
+        "chinese": "狂怒",
+        "spanish": "Ira",
+        "chinese_traditional": "憤怒",
+        "korean": "격노",
+        "japanese": "激怒"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-3ad314ec8148e1c2-7c0e2b7479c86a340a98513c153bdf81-v2",
+        "english": "Gain <b>Wrath</b> Ability.",
+        "french": "Octroie la capacité <b>Courroux</b>.",
+        "german": "Erhalte die Fähigkeit <b>Zorn</b>.",
+        "russian": "Дает умение <b>Гнев</b>.",
+        "portuguese": "Recebe a Habilidade <b>Fúria</b>.",
+        "chinese": "获得 <b>狂怒</b> 能力。",
+        "spanish": "Obtiene la habilidad <b>Ira</b>.",
+        "chinese_traditional": "獲得<b>憤怒</b>能力。",
+        "korean": "<b>분노</b> 능력을 획득합니다.",
+        "japanese": "<b>激怒</b>アビリティを得る。"
+      },
+      "ability_upgrade": "@WrathAbility",
+      "filters": [
+        "ExcludeUnitsWithAbilities"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "WrathAbility",
+      "names": {
+        "key": "CardData_nameKey-4d2b0e7ffc732868-526f7f48b6342ea4682ddfd1648a7ab9-v2",
+        "english": "Wrath",
+        "french": "Courroux",
+        "german": "Zorn",
+        "russian": "Гнев",
+        "portuguese": "Ira",
+        "chinese": "狂怒",
+        "spanish": "Ira",
+        "chinese_traditional": "憤怒",
+        "korean": "격노",
+        "japanese": "激怒"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-7d4f1e27b37eef77-526f7f48b6342ea4682ddfd1648a7ab9-v2",
+        "english": "Attack immediately.",
+        "french": "Attaquez immédiatement.",
+        "german": "Greife sofort an.",
+        "russian": "Мгновенная атака.",
+        "portuguese": "Ataca imediatamente.",
+        "chinese": "立即攻击。",
+        "spanish": "Ataca de inmediato.",
+        "chinese_traditional": "立即攻擊。",
+        "korean": "즉시 공격합니다.",
+        "japanese": "即座に攻撃を実行する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@PathAngelUnitAbilityWrath.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
   "effects": [

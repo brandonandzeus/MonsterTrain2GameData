@@ -54,7 +54,56 @@
       "id": "SpellUpgradeTraitAddPyreHealing.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "TraitHealPyrePerEmber"
+      "param_upgrade": "@TraitHealPyrePerEmber"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TraitHealPyrePerEmber",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-1f4ec9bf276b8567-470d9729870868947b8ac1ab0f5f70ed-v2",
+        "english": "Holystone",
+        "french": "Pierre sacrée",
+        "german": "Heiliger Stein",
+        "russian": "Священный камень",
+        "portuguese": "Pedra Sagrada",
+        "chinese": "神圣石",
+        "spanish": "Piedra sacra",
+        "chinese_traditional": "聖石",
+        "korean": "신성한 돌",
+        "japanese": "聖なる石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-32cf9b4aea66bd0e-470d9729870868947b8ac1ab0f5f70ed-v2",
+        "english": "Heal your Pyre equal to the spell's base [ember] cost.",
+        "french": "Rend autant de PV à votre Brasier que le coût de base en [ember] du sort.",
+        "german": "Heile deine Höllenglut in Höhe der [ember]-Basiskosten des Zaubers.",
+        "russian": "Восстанавливает Пеклу столько здоровья, сколько составляет обычная стоимость чар в [ember].",
+        "portuguese": "Restaura a vida da sua Pira igual ao custo base de [ember] do feitiço.",
+        "chinese": "使你的薪火恢复等同于此法术基础 [ember] 费用的生命值。",
+        "spanish": "Cura tanto a tu Pira como el coste base de [ember] del hechizo.",
+        "chinese_traditional": "治癒火堆等同於法術的基礎[ember]費用。",
+        "korean": "주문의 기본 [ember] 비용만큼 화로를 치유합니다.",
+        "japanese": "呪文の基本[ember]コストと等しい値で炉を回復する。"
+      },
+      "card_trigger_upgrades": [
+        "@SpellUpgradeTraitAddPyreHealing.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeZeroCost",
+        "ExcludeHolystone"
+      ]
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "SpellUpgradeTraitAddPyreHealing.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@SpellUpgradeTraitAddPyreHealing.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
     }
   ],
   "effects": [

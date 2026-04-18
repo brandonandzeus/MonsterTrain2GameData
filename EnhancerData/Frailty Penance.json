@@ -47,7 +47,53 @@
       "id": "MinorPenanceCardUpgrade.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "MinorPenance"
+      "param_upgrade": "@MinorPenance"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MinorPenance",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-77b740d573f1c8d4-690c2109ed8d2f74288e7263917c8f00-v2",
+        "english": "Frailty Penance",
+        "french": "Châtiment de faiblesse",
+        "german": "Schwächebuße",
+        "russian": "Покаяние бренностью",
+        "portuguese": "Penitência da Fragilidade",
+        "chinese": "脆弱忏悔",
+        "spanish": "Penitencia de fragilidad",
+        "chinese_traditional": "脆弱懺悔",
+        "korean": "약점 참회",
+        "japanese": "脆弱の罰"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-4f67d1a56c358b5b-690c2109ed8d2f74288e7263917c8f00-v2",
+        "english": "[fragile]. <b>Celebrate</b>: Permanently gain [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "french": "[fragile]. <nobr><b>Célébration</b> :</nobr> Octroie [charactertrigger0.effect0.upgrade.bonusdamage][attack] définitivement.",
+        "german": "[fragile]. <b>Feiern</b>: Erhalte permanent [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "russian": "[fragile]. <b>Триумф</b>: Навсегда дает [charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "[fragile]. <b>Celebrar</b>: recebe [charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese": "[fragile]。<b>庆祝</b>：永久获得 [charactertrigger0.effect0.upgrade.bonusdamage] [attack]。",
+        "spanish": "[fragile]. <b>Celebración</b>: Añade [charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente.",
+        "chinese_traditional": "[fragile]。<b>慶祝</b>：永久獲得[charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[fragile]. <b>공훈</b>: 영구적으로 [charactertrigger0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "[fragile]。<b>祝勝</b>：永続的に[charactertrigger0.effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "fragile",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@MinorPenanceCardUpgrade.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    },
+    {
+      "id": "MinorAbsolution_Attack",
+      "use_upgrade_highlight_tags": false,
+      "bonus_damage": 10,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "character_triggers": [
@@ -77,7 +123,7 @@
       "id": "MinorPenanceCardUpgrade.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "MinorAbsolution_Attack",
+      "param_upgrade": "@MinorAbsolution_Attack",
       "param_int_3": 2,
       "param_bool": true
     }

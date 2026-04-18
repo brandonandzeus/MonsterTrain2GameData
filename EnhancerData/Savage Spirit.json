@@ -51,7 +51,63 @@
       "id": "UnitUpgradeTitanSavageryMultistrike.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "UnitUpgradeTitanSavageryAtkPerHP"
+      "param_upgrade": "@UnitUpgradeTitanSavageryAtkPerHP"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "UnitUpgradeTitanSavageryAtkPerHP",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-9db4361de1940942-44e06c2e301cd83be97a3bf511480a89-v2",
+        "english": "Savage Spirit",
+        "french": "Esprit sauvage",
+        "german": "Barbarengeist",
+        "russian": "Дух Изувера",
+        "portuguese": "Espírito da Barbárie",
+        "chinese": "野蛮之魂",
+        "spanish": "Espíritu salvaje",
+        "chinese_traditional": "野性之魂",
+        "korean": "사나운 영혼",
+        "japanese": "獰猛な精神"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-b43a721cbc1be96f-44e06c2e301cd83be97a3bf511480a89-v2",
+        "english": "Gain [roommodifier0.power][attack] for every missing [roommodifier0.secondarypower][health].",
+        "french": "Octroie [roommodifier0.power][attack] par tranche de [roommodifier0.secondarypower][health] manquants.",
+        "german": "Erhalte [roommodifier0.power][attack] pro fehlender [roommodifier0.secondarypower][health].",
+        "russian": "Дает +[roommodifier0.power][attack] за каждые недостающие [roommodifier0.secondarypower][health].",
+        "portuguese": "Recebe [roommodifier0.power][attack] toda vez que perder [roommodifier0.secondarypower][health].",
+        "chinese": "每损失[roommodifier0.secondarypower][health]，获得 [roommodifier0.power][attack]。",
+        "spanish": "Añade [roommodifier0.power][attack] por cada [roommodifier0.secondarypower][health] que haya perdido.",
+        "chinese_traditional": "每缺少[roommodifier0.secondarypower][health]，獲得[roommodifier0.power][attack]。",
+        "korean": "[roommodifier0.secondarypower][health]을 잃을 때마다 [roommodifier0.power][attack]을 획득합니다.",
+        "japanese": "失った[roommodifier0.secondarypower][health]につき、[roommodifier0.power][attack]を得る。"
+      },
+      "room_modifier_upgrades": [
+        "@UnitUpgradeTitanSavageryMultistrike.effects0.paramCardUpgradeData.roomModifierUpgrades0"
+      ],
+      "show_description_on_cards": true,
+      "bonus_hp": 40
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "UnitUpgradeTitanSavageryMultistrike.effects0.paramCardUpgradeData.roomModifierUpgrades0",
+      "in_play_descriptions": {
+        "key": "CardUpgradeData_descriptionKeyInPlay-ac69aaa3edb57d14-44e06c2e301cd83be97a3bf511480a89-v2",
+        "english": "Gain [power][attack] for every missing [secondarypower][health].",
+        "french": "Octroie [power][attack] par tranche de [secondarypower][health] manquants.",
+        "german": "Erhalte [power][attack] pro fehlender [secondarypower][health].",
+        "russian": "Дает +[power][attack] за каждые недостающие [secondarypower][health].",
+        "portuguese": "Recebe [power][attack] toda vez que perder [secondarypower][health].",
+        "chinese": "每损失[secondarypower][health]，获得 [power][attack]。",
+        "spanish": "Añade [power][attack] por cada [secondarypower][health] que haya perdido.",
+        "chinese_traditional": "每缺少[secondarypower][health]就獲得[power][attack]。",
+        "korean": "[secondarypower][health]을 잃을 때마다 [power][attack]을 획득합니다.",
+        "japanese": "失った[secondarypower][health]につき、[power][attack]を得る。"
+      },
+      "name": "RoomStateSelfDamagePerMissingHp",
+      "param_int": 2
     }
   ]
 }

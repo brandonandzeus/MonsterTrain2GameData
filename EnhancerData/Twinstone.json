@@ -54,9 +54,74 @@
       "id": "SpellUpgradeCreateCopyWithPurge.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "CreateSpellCopyWithPurge",
+      "param_upgrade": "@CreateSpellCopyWithPurge",
       "param_min_int": 1,
       "param_max_int": 99
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "CopyOnPlayTraitUpgrade",
+      "trait_upgrades": [
+        "@SpellUpgradeCreateCopyWithPurge.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "remove_trait_upgrades": [
+        "CardTraitCopyOnPlay"
+      ],
+      "upgrades_to_remove": [
+        "CreateSpellCopyWithPurge"
+      ]
+    },
+    {
+      "id": "CreateSpellCopyWithPurge",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-aab3f288365dadb6-247b9fc70fae956459a879d60d5132cf-v2",
+        "english": "Twinstone",
+        "french": "Pierre jumelle",
+        "german": "Zwillingsstein",
+        "russian": "Камень двойника",
+        "portuguese": "Pedra Gêmea",
+        "chinese": "双生石",
+        "spanish": "Piedra gemela",
+        "chinese_traditional": "雙生石",
+        "korean": "쌍둥이석",
+        "japanese": "双子の石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-8c45242a403dc361-247b9fc70fae956459a879d60d5132cf-v2",
+        "english": "Gain <b>Spellchain</b>.",
+        "french": "Octroie <b>Sorts à la chaîne</b>.",
+        "german": "Erhalte <b>Zauberkette</b>.",
+        "russian": "Дает <b>цепочку чар</b>.",
+        "portuguese": "Recebe <b>Corrente de Feitiços</b>.",
+        "chinese": "获得<b>法术连锁</b>。",
+        "spanish": "Añade <b>Hechizo en cadena</b>.",
+        "chinese_traditional": "獲得<b>咒語連鎖</b>。",
+        "korean": "<b>주문 연쇄</b> 효과를 획득합니다.",
+        "japanese": "<b>呪文連鎖</b>を得る。"
+      },
+      "trait_upgrades": [
+        "@SpellUpgradeCreateCopyWithPurge.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeUnplayable",
+        "ExcludeSpellchain"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "SpellUpgradeCreateCopyWithPurge.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitCopyOnPlay",
+      "param_upgrade": "@CopyOnPlayTraitUpgrade",
+      "param_int": 1,
+      "stack_mode": "param_int"
+    },
+    {
+      "id": "SpellUpgradeCreateCopyWithPurge.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitEphemeral",
+      "trait_is_removable": false
     }
   ]
 }

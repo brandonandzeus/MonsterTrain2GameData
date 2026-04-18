@@ -47,7 +47,89 @@
       "id": "ClippedWingsWing2RewardEnhancer.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "ClippedWingsWing2RewardUpgrade"
+      "param_upgrade": "@ClippedWingsWing2RewardUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ClippedWingsWing2RewardUpgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-5c65055e14be8d83-549f5b90ecb67c747a943e091be3a73e-v2",
+        "english": "Archus' Wing",
+        "french": "Aile d'Archus",
+        "german": "Archus-Flügel",
+        "russian": "Крыло Аркуса",
+        "portuguese": "Asa de Archus",
+        "chinese": "亚科斯的翅膀",
+        "spanish": "Ala de Archus",
+        "chinese_traditional": "阿卡斯之翼",
+        "korean": "아르커스의 날개",
+        "japanese": "アーカスの翼"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-eb0f4e36585a0fe5-549f5b90ecb67c747a943e091be3a73e-v2",
+        "english": "+[bonusdamage][attack]. +[bonushp][health]. [ability]: Flight.",
+        "french": "+[bonusdamage][attack]. +[bonushp][health]. <nobr>[ability] :</nobr> Vol.",
+        "german": "+[bonusdamage][attack]. +[bonushp][health]. [ability]: Flug.",
+        "russian": "+[bonusdamage][attack]. +[bonushp][health]. [ability]: Полет",
+        "portuguese": "+[bonusdamage][attack]. +[bonushp][health]. [ability]: Voo.",
+        "chinese": "+[bonusdamage][attack]。+[bonushp][health]。[ability]：飞行",
+        "spanish": "+[bonusdamage][attack]. +[bonushp][health]. [ability]: Vuelo.",
+        "chinese_traditional": "+[bonusdamage][attack]。+[bonushp][health]。[ability]：飛行。",
+        "korean": "+[bonusdamage][attack] 및 +[bonushp][health]. [ability]: 비행.",
+        "japanese": "+[bonusdamage][attack]。+[bonushp][health]。[ability]：飛翔"
+      },
+      "ability_upgrade": "@AngelFlightAbility",
+      "filters": [
+        "ExcludeUnitsWithAbilities"
+      ],
+      "bonus_damage": 8,
+      "bonus_hp": 15
+    }
+  ],
+  "cards": [
+    {
+      "id": "AngelFlightAbility",
+      "names": {
+        "key": "CardData_nameKey-a44296787bec78c4-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+        "english": "Flight",
+        "french": "Vol",
+        "german": "Flug",
+        "russian": "Полет",
+        "portuguese": "Voo",
+        "chinese": "飞行",
+        "spanish": "Vuelo",
+        "chinese_traditional": "飛行",
+        "korean": "비행",
+        "japanese": "飛翔"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-f70caef0bbd9b60e-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+        "english": "Move to a targeted location on any floor.",
+        "french": "Déplace l'unité à la position ciblée du niveau choisi.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene.",
+        "russian": "Перемещение в выбранное место на любом этаже.",
+        "portuguese": "Desloca-se para um local específico em qualquer andar.",
+        "chinese": "移动到任意层的目标位置。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso.",
+        "chinese_traditional": "移動到任意樓層的指定位置。",
+        "korean": "선택한 층의 목표 위치로 이동합니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
+        "asset_guid": "b7d9137dc005eb345800500fcaa4823f"
+      },
+      "effects": [
+        "@ClippedWingsWing2RewardEnhancer.effects0.paramCardUpgradeData.unitAbilityUpgrade.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
     }
   ],
   "effects": [

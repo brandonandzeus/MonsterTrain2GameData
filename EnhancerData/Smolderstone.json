@@ -53,7 +53,52 @@
       "id": "SpellUpgradeReduceCostAddConsume.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "ReduceCostAddConsume"
+      "param_upgrade": "@ReduceCostAddConsume"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ReduceCostAddConsume",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-1729d9b97b02b296-f9f4e321fdad5144da12fcf6ac9e6312-v2",
+        "english": "Smolderstone",
+        "french": "Pierre de flambeau",
+        "german": "Schwelstein",
+        "russian": "Тлеющий осколок",
+        "portuguese": "Pedra Fumegante",
+        "chinese": "闷燃石",
+        "spanish": "Piedrardiente",
+        "chinese_traditional": "悶燼石",
+        "korean": "잿불석",
+        "japanese": "燻りの石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-8d310ba2e1053b9a-f9f4e321fdad5144da12fcf6ac9e6312-v2",
+        "english": "-[costreduction][ember] and gain [consume].",
+        "french": "-[costreduction][ember] et octroie [consume].",
+        "german": "-[costreduction][ember] und erhalte [consume].",
+        "russian": "-[costreduction][ember] и дается [consume].",
+        "portuguese": "-[costreduction][ember] e recebe [consume].",
+        "chinese": "-[costreduction][ember] 并获得 [consume]。",
+        "spanish": "-[costreduction][ember] y añade [consume].",
+        "chinese_traditional": "-[costreduction][ember]並獲得[consume]。",
+        "korean": "-[costreduction][ember] 및 [consume] 속성을 획득합니다.",
+        "japanese": "-[costreduction][ember]、[consume]を得る。"
+      },
+      "trait_upgrades": [
+        "@SpellUpgradeReduceCostAddConsume.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "ExcludeConsume"
+      ],
+      "cost_reduction": 2,
+      "x_cost_reduction": 2
+    }
+  ],
+  "traits": [
+    {
+      "id": "SpellUpgradeReduceCostAddConsume.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitExhaustState"
     }
   ]
 }

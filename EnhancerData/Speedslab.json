@@ -51,7 +51,50 @@
       "id": "SoulSavior_UnitUpgradeQuick.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "SoulSavior_AddQuick"
+      "param_upgrade": "@SoulSavior_AddQuick"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SoulSavior_AddQuick",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-5ba03446fdf98b63-a0adba8e9a009fb47b10efab95c6876f-v2",
+        "english": "Speedslab",
+        "french": "Gemme de célérité",
+        "german": "Platte des Tempos",
+        "russian": "Пласт скорости",
+        "portuguese": "Placa da Velocidade",
+        "chinese": "速度石板",
+        "spanish": "Losa de velocidad",
+        "chinese_traditional": "速石板",
+        "korean": "속도의 서판",
+        "japanese": "素早さの原石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-5338b0093491d1b0-a0adba8e9a009fb47b10efab95c6876f-v2",
+        "english": "Gain [quick] and +[bonusdamage][attack].",
+        "french": "Octroie [quick] et +[bonusdamage][attack].",
+        "german": "Erhalte [quick] und +[bonusdamage][attack].",
+        "russian": "Даются [quick] и +[bonusdamage][attack].",
+        "portuguese": "Concede [quick] e +[bonusdamage][attack].",
+        "chinese": "获得 [quick] 和 +[bonusdamage][attack]。",
+        "spanish": "Añade [quick] y +[bonusdamage][attack].",
+        "chinese_traditional": "獲得[quick]和+[bonusdamage][attack]。",
+        "korean": "[quick] 및 +[bonusdamage][attack]을 획득합니다.",
+        "japanese": "[quick]と+[bonusdamage][attack]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "ambush",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "OnlyAttackingUnits",
+        "ExcludeQuick",
+        "ExcludeEelGorgon"
+      ],
+      "bonus_damage": 30
     }
   ]
 }

@@ -54,7 +54,52 @@
       "id": "SpellUpgradeTraitAddRetain.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "TraitRetain"
+      "param_upgrade": "@TraitRetain"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TraitRetain",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-b27ca233cdaa1f00-b66cb2934ae000e4e9cccee97e055e4b-v2",
+        "english": "Keepstone",
+        "french": "Pierre de garde",
+        "german": "Haltestein",
+        "russian": "Камень сдерживания",
+        "portuguese": "Pedra de Sustento",
+        "chinese": "永驻石",
+        "spanish": "Piedra de permanencia",
+        "chinese_traditional": "要塞石",
+        "korean": "수호석",
+        "japanese": "保管の石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-bcf6ba00628727e5-b66cb2934ae000e4e9cccee97e055e4b-v2",
+        "english": "Gain [retain].",
+        "french": "Octroie <b>Retournemain</b>.",
+        "german": "Erhalte <b>Einbehalt</b>.",
+        "russian": "Дает [retain].",
+        "portuguese": "Recebe [retain].",
+        "chinese": "获得[retain]。",
+        "spanish": "Añade [retain].",
+        "chinese_traditional": "獲得[retain]。",
+        "korean": "[retain] 효과를 획득합니다.",
+        "japanese": "[retain]を得る。"
+      },
+      "trait_upgrades": [
+        "@SpellUpgradeTraitAddRetain.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "ExcludeRetain",
+        "ExcludeConsume",
+        "ExcludeSelfDestruct"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "SpellUpgradeTraitAddRetain.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitRetain"
     }
   ]
 }
