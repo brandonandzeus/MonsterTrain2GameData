@@ -101,8 +101,8 @@
     {
       "id": "SilverInk_Upgrade",
       "filters": [
-        "@SilverInk.effects0.paramCardUpgradeData.filters0",
-        "@SilverInk.effects0.paramCardUpgradeData.filters1"
+        "ExcludedSpellsFromMagicPower",
+        "MagicPowerSpells"
       ],
       "bonus_damage": 3,
       "bonus_heal": 3
@@ -113,31 +113,10 @@
         "@SilverInk.effects0.paramCardUpgradeData.traitDataUpgrades0"
       ],
       "filters": [
-        "@SilverInk.effects0.paramCardUpgradeData.filters0",
-        "@SilverInk.effects0.paramCardUpgradeData.filters1"
+        "ExcludedSpellsFromMagicPower",
+        "MagicPowerSpells"
       ],
       "is_unique": true
-    }
-  ],
-  "upgrade_masks": [
-    {
-      "id": "SilverInk.effects0.paramCardUpgradeData.filters0",
-      "disallowed_pools": [
-        "SpellsNotAllowedSpellPowerPool"
-      ]
-    },
-    {
-      "id": "SilverInk.effects0.paramCardUpgradeData.filters1",
-      "card_type": "spell",
-      "required_effects_operator": "or",
-      "required_effects": [
-        "CardEffectDamage",
-        "CardEffectHeal",
-        "CardEffectHealAndDamageRelative",
-        "CardEffectHealAndOverheal",
-        "CardEffectDamagePerSourceAttack",
-        "CardEffectDamagePerHp"
-      ]
     }
   ]
 }

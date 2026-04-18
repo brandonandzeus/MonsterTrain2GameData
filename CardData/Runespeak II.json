@@ -50,7 +50,7 @@
     {
       "id": "TethysSpellWeaknessOnStrike2.effects1",
       "name": "CardEffectDrawType",
-      "param_card_filter": "@TethysSpellWeaknessOnStrike2.effects1.paramCardFilter",
+      "param_card_filter": "OnlyDamageCardExcludeSpellsFromMagicPower",
       "param_int": 1
     }
   ],
@@ -59,25 +59,6 @@
       "id": "TethysSpellWeaknessOnStrike_Upgrade2",
       "bonus_damage": 10,
       "bonus_heal": 10
-    }
-  ],
-  "upgrade_masks": [
-    {
-      "id": "TethysSpellWeaknessOnStrike2.effects1.paramCardFilter",
-      "required_effects_operator": "or",
-      "required_effects": [
-        "CardEffectDamage",
-        "CardEffectDamageByPercentRemainingHealth",
-        "CardEffectDamageByUnitsKilled",
-        "CardEffectDamagePerHp",
-        "CardEffectDamagePerSourceAttack",
-        "CardEffectDamagePerTargetAttack",
-        "CardEffectDamageWithTrample",
-        "CardEffectHealAndDamageRelative"
-      ],
-      "disallowed_pools": [
-        "SpellsNotAllowedSpellPowerPool"
-      ]
     }
   ]
 }

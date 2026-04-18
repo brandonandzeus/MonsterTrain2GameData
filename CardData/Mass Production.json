@@ -78,7 +78,7 @@
     {
       "id": "MassProduction.effects0",
       "name": "CardEffectDuplicateCardInHand",
-      "param_card_filter": "@MassProduction.effects0.paramCardFilter",
+      "param_card_filter": "OnlyUnitAndEquipmentAndRooms",
       "param_upgrade": "@MassProduction_Upgrade"
     }
   ],
@@ -86,27 +86,10 @@
     {
       "id": "MassProduction_Upgrade",
       "filters": [
-        "@MassProduction.effects0.paramCardUpgradeData.filters0"
+        "ExcludeChampions"
       ],
       "cost_reduction": 1,
       "x_cost_reduction": 1
-    }
-  ],
-  "upgrade_masks": [
-    {
-      "id": "MassProduction.effects0.paramCardFilter",
-      "card_type": "monster",
-      "additional_card_types": [
-        "equipment",
-        "room"
-      ]
-    },
-    {
-      "id": "MassProduction.effects0.paramCardUpgradeData.filters0",
-      "excluded_subtypes_operator": "and",
-      "excluded_subtypes": [
-        "SubtypesData_Champion_83f21cbe-9d9b-4566-a2c3-ca559ab8ff34"
-      ]
     }
   ]
 }

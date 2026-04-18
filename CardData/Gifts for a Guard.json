@@ -89,7 +89,7 @@
     {
       "id": "GiftsForAGuard.effects1",
       "name": "CardEffectDrawType",
-      "param_card_filter": "@GiftsForAGuard.effects1.paramCardFilter",
+      "param_card_filter": "OnlyDamageCardExcludeSpellsFromMagicPower",
       "param_int": 3
     }
   ],
@@ -162,25 +162,6 @@
         "korean": "마법력",
         "japanese": "魔力"
       }
-    }
-  ],
-  "upgrade_masks": [
-    {
-      "id": "GiftsForAGuard.effects1.paramCardFilter",
-      "required_effects_operator": "or",
-      "required_effects": [
-        "CardEffectDamage",
-        "CardEffectDamageByPercentRemainingHealth",
-        "CardEffectDamageByUnitsKilled",
-        "CardEffectDamagePerHp",
-        "CardEffectDamagePerSourceAttack",
-        "CardEffectDamagePerTargetAttack",
-        "CardEffectDamageWithTrample",
-        "CardEffectHealAndDamageRelative"
-      ],
-      "disallowed_pools": [
-        "SpellsNotAllowedSpellPowerPool"
-      ]
     }
   ]
 }
