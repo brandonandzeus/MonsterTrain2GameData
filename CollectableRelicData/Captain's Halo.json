@@ -76,49 +76,16 @@
       "param_bool": true
     }
   ],
+  "upgrades": [
+    {
+      "id": "ValorOnTurnStart",
+      "trigger_upgrades": [
+        "@FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_unique": true
+    }
+  ],
   "character_triggers": [
-    {
-      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0",
-      "descriptions": {
-        "key": "CardUpgradeData_descriptionKey-55806c7938adb1a6-b271945bfeb27654f82ed40261e03adb-v2",
-        "english": "Apply [valor] [effect0.status0.power].",
-        "french": "Confère [valor] [effect0.status0.power].",
-        "german": "Wende [valor] [effect0.status0.power] an.",
-        "russian": "Накладывает [valor] х[effect0.status0.power].",
-        "portuguese": "Aplica [valor] [effect0.status0.power].",
-        "chinese": "获得 [valor] [effect0.status0.power]。",
-        "spanish": "Añade [valor] [effect0.status0.power].",
-        "chinese_traditional": "施加[valor][effect0.status0.power]。",
-        "korean": "[valor] [effect0.status0.power] 효과를 적용합니다.",
-        "japanese": "[valor] [effect0.status0.power]を付与する。"
-      },
-      "trigger": "pre_combat",
-      "effects": [
-        "@FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
-      ],
-      "hide_visual_and_ignore_silence": true
-    },
-    {
-      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers1.effects0.paramCardUpgradeData.triggerUpgrades0",
-      "descriptions": {
-        "key": "CardUpgradeData_descriptionKey-55806c7938adb1a6-b271945bfeb27654f82ed40261e03adb-v2",
-        "english": "Apply [valor] [effect0.status0.power].",
-        "french": "Confère [valor] [effect0.status0.power].",
-        "german": "Wende [valor] [effect0.status0.power] an.",
-        "russian": "Накладывает [valor] х[effect0.status0.power].",
-        "portuguese": "Aplica [valor] [effect0.status0.power].",
-        "chinese": "获得 [valor] [effect0.status0.power]。",
-        "spanish": "Añade [valor] [effect0.status0.power].",
-        "chinese_traditional": "施加[valor][effect0.status0.power]。",
-        "korean": "[valor] [effect0.status0.power] 효과를 적용합니다.",
-        "japanese": "[valor] [effect0.status0.power]を付与する。"
-      },
-      "trigger": "pre_combat",
-      "effects": [
-        "@FriendlyUnitsGainDeathwishValor.effects0.triggers1.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
-      ],
-      "hide_visual_and_ignore_silence": true
-    },
     {
       "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers0",
       "descriptions": {
@@ -147,9 +114,45 @@
         "@FriendlyUnitsGainDeathwishValor.effects0.triggers1.effects0"
       ],
       "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-55806c7938adb1a6-b271945bfeb27654f82ed40261e03adb-v2",
+        "english": "Apply [valor] [effect0.status0.power].",
+        "french": "Confère [valor] [effect0.status0.power].",
+        "german": "Wende [valor] [effect0.status0.power] an.",
+        "russian": "Накладывает [valor] х[effect0.status0.power].",
+        "portuguese": "Aplica [valor] [effect0.status0.power].",
+        "chinese": "获得 [valor] [effect0.status0.power]。",
+        "spanish": "Añade [valor] [effect0.status0.power].",
+        "chinese_traditional": "施加[valor][effect0.status0.power]。",
+        "korean": "[valor] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "[valor] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "pre_combat",
+      "effects": [
+        "@FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
     }
   ],
   "effects": [
+    {
+      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@ValorOnTurnStart",
+      "param_int_3": 1,
+      "hide_tooltip": true
+    },
+    {
+      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers1.effects0",
+      "name": "CardEffectRemoveTempUpgradeFromUnit",
+      "target_mode": "self",
+      "param_upgrade": "@ValorOnTurnStart",
+      "hide_tooltip": true
+    },
     {
       "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
@@ -160,33 +163,6 @@
           "count": 2
         }
       ],
-      "hide_tooltip": true
-    },
-    {
-      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers0.effects0",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "ValorOnTurnStart",
-      "param_int_3": 1,
-      "hide_tooltip": true
-    },
-    {
-      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers1.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "valor",
-          "count": 2
-        }
-      ],
-      "hide_tooltip": true
-    },
-    {
-      "id": "FriendlyUnitsGainDeathwishValor.effects0.triggers1.effects0",
-      "name": "CardEffectRemoveTempUpgradeFromUnit",
-      "target_mode": "self",
-      "param_upgrade": "ValorOnTurnStart",
       "hide_tooltip": true
     }
   ],

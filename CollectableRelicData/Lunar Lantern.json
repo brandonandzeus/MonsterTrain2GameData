@@ -110,7 +110,7 @@
       "additional_tooltips": [
         "@SeleneandSilentBuff.effects0.additionalTooltips0"
       ],
-      "param_upgrade": "SilentBuff_Atk_UpgradeData",
+      "param_upgrade": "@SilentBuff_Atk_UpgradeData",
       "param_source_team": "monsters",
       "param_int_2": 1,
       "param_subtype": "SubtypesData_Silent",
@@ -119,7 +119,7 @@
     {
       "id": "SeleneandSilentBuff.effects1",
       "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "param_upgrade": "SilentBuff_Atk_UpgradeData",
+      "param_upgrade": "@SilentBuff_Atk_UpgradeData",
       "param_source_team": "monsters",
       "param_int_2": 1,
       "param_subtype": "SubtypesData_Silent",
@@ -132,7 +132,7 @@
       "additional_tooltips": [
         "@SeleneandSilentBuff.effects2.additionalTooltips0"
       ],
-      "param_upgrade": "SeleneBuff_Atk_UpgradeData",
+      "param_upgrade": "@SeleneBuff_Atk_UpgradeData",
       "param_source_team": "monsters",
       "param_int_2": 1,
       "param_subtype": "SubtypesData_Selene",
@@ -141,12 +141,24 @@
     {
       "id": "SeleneandSilentBuff.effects3",
       "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "param_upgrade": "SeleneBuff_Atk_UpgradeData",
+      "param_upgrade": "@SeleneBuff_Atk_UpgradeData",
       "param_source_team": "monsters",
       "param_int_2": 1,
       "param_subtype": "SubtypesData_Selene",
       "param_bool": true,
       "param_trigger": "on_moonlit_lost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SeleneBuff_Atk_UpgradeData",
+      "is_unique": true,
+      "bonus_damage": 20
+    },
+    {
+      "id": "SilentBuff_Atk_UpgradeData",
+      "is_unique": true,
+      "bonus_damage": 20
     }
   ],
   "additional_tooltips": [

@@ -62,8 +62,44 @@
     {
       "id": "TrainRoomInstallFloor1AtStartOfCombat.effects0",
       "name": "RelicEffectAddTrainRoomAttachmentOnStartOfCombat",
-      "param_upgrade": "FuelCar_Upgrade",
+      "param_upgrade": "@FuelCar_Upgrade",
       "param_source_team": "both"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "FuelCar_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-78e06ceffe1afab0-159f8ad9106796141acec5b8a4ed8e5b-v2",
+        "english": "Boiler Room",
+        "french": "Chaufferie",
+        "german": "Heizraum",
+        "russian": "Котельная",
+        "portuguese": "Sala da Caldeira",
+        "chinese": "锅炉房",
+        "spanish": "Cuarto de calderas",
+        "chinese_traditional": "鍋爐房",
+        "korean": "보일러실",
+        "japanese": "ボイラー室"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-3799adce9094bfce-159f8ad9106796141acec5b8a4ed8e5b-v2",
+        "english": "Gain [charactertrigger0.effect0.power][ember] when a unit dies.",
+        "french": "Octroie [charactertrigger0.effect0.power][ember] quand une unité meurt.",
+        "german": "Erhalte [charactertrigger0.effect0.power][ember], wenn eine Einheit stirbt.",
+        "russian": "Дает [effect0.upgrade.charactertrigger0.effect0.power][ember], когда погибает боец.",
+        "portuguese": "Recebe [charactertrigger0.effect0.power][ember] quando uma unidade morre.",
+        "chinese": "每当一个单位死亡时，获得 [charactertrigger0.effect0.power][ember]。",
+        "spanish": "Obtienes [charactertrigger0.effect0.power][ember] cuando una unidad muere.",
+        "chinese_traditional": "當一個單位死亡時，獲得[charactertrigger0.effect0.power][ember]。",
+        "korean": "유닛이 사망하면 [charactertrigger0.effect0.power][ember]을 획득합니다.",
+        "japanese": "ユニットが死亡すると、[charactertrigger0.effect0.power][ember]を得る。"
+      },
+      "trigger_upgrades": [
+        "@TrainRoomInstallFloor1AtStartOfCombat.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "hide_icon_on_card": true,
+      "persistent_vfx": "@TrainRoomInstallFloor1AtStartOfCombat.effects0.paramCardUpgradeData.persistentVFX"
     }
   ],
   "character_triggers": [

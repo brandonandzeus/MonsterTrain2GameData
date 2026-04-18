@@ -74,15 +74,20 @@
       "param_bool": true
     }
   ],
-  "character_triggers": [
+  "upgrades": [
     {
-      "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0",
-      "trigger": "on_encounter_complete",
-      "effects": [
-        "@FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
-      ],
-      "hide_visual_and_ignore_silence": true
+      "id": "PermanentHealthAtEndOfCombat",
+      "bonus_hp": 6,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     },
+    {
+      "id": "PermanentHealthAtEndOfCombatTrigger",
+      "trigger_upgrades": [
+        "@FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    }
+  ],
+  "character_triggers": [
     {
       "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0",
       "descriptions": {
@@ -111,23 +116,22 @@
         "@FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers1.effects0"
       ],
       "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "trigger": "on_encounter_complete",
+      "effects": [
+        "@FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
     }
   ],
   "effects": [
     {
-      "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
-      "name": "CardEffectAddCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "PermanentHealthAtEndOfCombat",
-      "param_int_3": 2,
-      "param_bool": true,
-      "hide_tooltip": true
-    },
-    {
       "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "PermanentHealthAtEndOfCombatTrigger",
+      "param_upgrade": "@PermanentHealthAtEndOfCombatTrigger",
       "param_int_3": 1,
       "hide_tooltip": true
     },
@@ -135,7 +139,16 @@
       "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers1.effects0",
       "name": "CardEffectRemoveTempUpgradeFromUnit",
       "target_mode": "self",
-      "param_upgrade": "PermanentHealthAtEndOfCombatTrigger",
+      "param_upgrade": "@PermanentHealthAtEndOfCombatTrigger",
+      "hide_tooltip": true
+    },
+    {
+      "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@PermanentHealthAtEndOfCombat",
+      "param_int_3": 2,
+      "param_bool": true,
       "hide_tooltip": true
     }
   ]

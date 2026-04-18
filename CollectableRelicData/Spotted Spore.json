@@ -69,7 +69,7 @@
       "additional_tooltips": [
         "@AddAttackToFunguy.effects0.additionalTooltips0"
       ],
-      "param_upgrade": "AddAttackToFunguy_Upgrade",
+      "param_upgrade": "@AddAttackToFunguy_Upgrade",
       "param_source_team": "monsters",
       "param_int_2": 1,
       "param_subtype": "SubtypesData_FunGuy",
@@ -78,12 +78,31 @@
     {
       "id": "AddAttackToFunguy.effects1",
       "name": "RelicEffectAddRemoveTempUpgradeOnUnitTrigger",
-      "param_upgrade": "AddAttackToFunguy_Upgrade",
+      "param_upgrade": "@AddAttackToFunguy_Upgrade",
       "param_source_team": "monsters",
       "param_int_2": 1,
       "param_subtype": "SubtypesData_FunGuy",
       "param_bool": true,
       "param_trigger": "on_troop_removed"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddAttackToFunguy_Upgrade",
+      "filters": [
+        "@AddAttackToFunguy.effects0.paramCardUpgradeData.filters0"
+      ],
+      "bonus_damage": 2
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "AddAttackToFunguy.effects0.paramCardUpgradeData.filters0",
+      "card_type": "monster",
+      "required_subtypes_operator": "and",
+      "required_subtypes": [
+        "SubtypesData_FunGuy"
+      ]
     }
   ],
   "additional_tooltips": [

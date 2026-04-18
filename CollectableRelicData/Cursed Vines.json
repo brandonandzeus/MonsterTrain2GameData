@@ -66,8 +66,23 @@
     {
       "id": "ChanceToVineGrasp.effects0",
       "name": "RelicEffectAddBattleCardToHand",
-      "param_upgrade": "AddEphemeral",
+      "param_upgrade": "@AddEphemeral",
       "param_card_pool": "VineGraspOnlyPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddEphemeral",
+      "trait_upgrades": [
+        "@ChanceToVineGrasp.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "ChanceToVineGrasp.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitEphemeral",
+      "trait_is_removable": false
     }
   ]
 }

@@ -66,8 +66,27 @@
     {
       "id": "MoltenManifold.effects0",
       "name": "RelicEffectAddTempUpgrade",
-      "param_upgrade": "TinkerersToolbelt_Upgrade",
+      "param_upgrade": "@TinkerersToolbelt_Upgrade",
       "param_source_team": "monsters"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TinkerersToolbelt_Upgrade",
+      "filters": [
+        "@MoltenManifold.effects0.paramCardUpgradeData.filters0"
+      ],
+      "x_cost_reduction": 2
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "MoltenManifold.effects0.paramCardUpgradeData.filters0",
+      "cost_range": {
+        "x": 1.0,
+        "y": 99.0
+      },
+      "require_x_cost": true
     }
   ]
 }

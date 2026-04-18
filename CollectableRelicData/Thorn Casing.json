@@ -89,13 +89,41 @@
       "additional_tooltips": [
         "@StingBuffPiercing.effects0.additionalTooltips0"
       ],
-      "param_upgrade": "StingBuffPiercing",
+      "param_upgrade": "@StingBuffPiercing",
       "param_source_team": "monsters"
     },
     {
       "id": "StingBuffPiercing.effects1",
       "name": "RelicEffectAddCardsNull",
       "param_card_pool": "StingOnlyPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "StingBuffPiercing",
+      "trait_upgrades": [
+        "@StingBuffPiercing.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "@StingBuffPiercing.effects0.paramCardUpgradeData.filters0"
+      ],
+      "is_unique": true,
+      "bonus_damage": 10
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "StingBuffPiercing.effects0.paramCardUpgradeData.filters0",
+      "card_type": "spell",
+      "allowed_pools": [
+        "StingOnlyPool"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "StingBuffPiercing.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitIgnoreArmor"
     }
   ],
   "additional_tooltips": [

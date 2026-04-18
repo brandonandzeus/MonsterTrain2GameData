@@ -68,7 +68,7 @@
       "conditions": [
         "@CopyFirstSpellPlayed.effects0.effectConditions0"
       ],
-      "param_upgrade": "AddEphemeral",
+      "param_upgrade": "@AddEphemeral",
       "param_int": 1
     }
   ],
@@ -84,6 +84,21 @@
       ],
       "param_int": 1,
       "allow_multiple_triggers_per_duration": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddEphemeral",
+      "trait_upgrades": [
+        "@CopyFirstSpellPlayed.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "CopyFirstSpellPlayed.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitEphemeral",
+      "trait_is_removable": false
     }
   ]
 }

@@ -66,9 +66,29 @@
       "name": "RelicEffectDrawOnPreOpeningDrawCascade",
       "param_card_filter": "@RandomEquipmentCardFirstTurn.effects0.paramCardFilter",
       "param_card_filter_2": "@RandomEquipmentCardFirstTurn.effects0.paramCardFilterSecondary",
-      "param_upgrade": "RandomEquipmentOrTrainCardFirstTurn_Upgrade",
+      "param_upgrade": "@RandomEquipmentOrTrainCardFirstTurn_Upgrade",
       "param_int": 1,
       "param_bool": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RandomEquipmentOrTrainCardFirstTurn_Upgrade",
+      "cost_reduction": 99
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "RandomEquipmentCardFirstTurn.effects0.paramCardFilter",
+      "card_type": "equipment",
+      "excluded_traits_operator": "and",
+      "excluded_traits": [
+        "CardTraitDrawInDeploymentPhase"
+      ]
+    },
+    {
+      "id": "RandomEquipmentCardFirstTurn.effects0.paramCardFilterSecondary",
+      "card_type": "equipment"
     }
   ]
 }

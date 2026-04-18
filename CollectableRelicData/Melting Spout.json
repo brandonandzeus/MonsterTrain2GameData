@@ -94,8 +94,33 @@
     {
       "id": "ExtraToughTombs.effects1",
       "name": "RelicEffectAddTempUpgrade",
-      "param_upgrade": "AddBurnoutToTombs",
+      "param_upgrade": "@AddBurnoutToTombs",
       "param_source_team": "monsters"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddBurnoutToTombs",
+      "status_effect_upgrades": [
+        {
+          "status": "ephemeral",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "@ExtraToughTombs.effects1.paramCardUpgradeData.filters0"
+      ],
+      "is_unique": true
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExtraToughTombs.effects1.paramCardUpgradeData.filters0",
+      "card_type": "monster",
+      "required_subtypes_operator": "and",
+      "required_subtypes": [
+        "SubtypesData_Tomb"
+      ]
     }
   ]
 }

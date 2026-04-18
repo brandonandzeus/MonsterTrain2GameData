@@ -62,9 +62,26 @@
     {
       "id": "PyreHeartSon.effects0",
       "name": "RelicEffectAddTempUpgrade",
-      "param_upgrade": "Plus5Attack12Health",
+      "param_upgrade": "@Plus5Attack12Health",
       "param_source_team": "monsters",
       "param_bool": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Plus5Attack12Health",
+      "filters": [
+        "@PyreHeartSon.effects0.paramCardUpgradeData.filters0"
+      ],
+      "is_unique": true,
+      "bonus_damage": 5,
+      "bonus_hp": 12
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "PyreHeartSon.effects0.paramCardUpgradeData.filters0",
+      "card_type": "monster"
     }
   ]
 }

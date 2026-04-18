@@ -46,7 +46,7 @@
           "key": "CollectableRelicData_data-e9e665624143b949-2a2820af1b7df9c48ac3172bd4e3c057-v2",
           "english": "“Take this stone, marked by Ekka’s blessing, and place it outside when the moon is full. You will always have a piece of the moon’s protection with you wherever you go.”\r\n—The Ritual Tome",
           "french": "<nobr>« Prenez</nobr> cette pierre marquée par la bénédiction d'Ekka, et placez-la dehors lorsque la lune est pleine. La protection de la lune sera toujours avec vous, où que vous <nobr>alliez. »</nobr> \n— Livre des Rituels",
-          "german": "„Nimm diesen von Ekka gesegneten Stein und lege ihn bei Vollmond nach draußen. So hast du immer ein Stück des Mondschutzes bei dir, wohin du auch gehst.“_x000D_\n—Foliant der Rituale",
+          "german": "„Nimm diesen von Ekka gesegneten Stein und lege ihn bei Vollmond nach draußen. So hast du immer ein Stück des Mondschutzes bei dir, wohin du auch gehst.“\n—Foliant der Rituale",
           "russian": "«Возьмите благословленный Эккой камень и оставьте его лежать под полной луной. Теперь, куда бы вы ни пошли, вас будет защищать этот лунный оберег».\n\n— Книга ритуалов",
           "portuguese": "“Leve esta pedra, marcada com a bênção de Ekka, e coloque-a do lado de fora quando a lua estiver cheia. Depois disso, você sempre terá um pedaço da proteção da lua com você.”\n— Tomo Ritualístico",
           "chinese": "“带上这块刻有艾卡祝福的石头，在月圆之夜把它放在外面。无论你身在何处，都会得到月亮的一部分庇佑。”\n——《仪式之书》",
@@ -69,8 +69,40 @@
         "@MoonPhaseRoomsGainMagicPower.effects0.additionalTooltips0",
         "@MoonPhaseRoomsGainMagicPower.effects0.additionalTooltips1"
       ],
-      "param_upgrade": "MoonPhaseRooms_UpgradeData",
+      "param_upgrade": "@MoonPhaseRooms_UpgradeData",
       "param_int_2": 2
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MoonPhaseRooms_UpgradeData",
+      "filters": [
+        "@MoonPhaseRoomsGainMagicPower.effects0.paramCardUpgradeData.filters0",
+        "@MoonPhaseRoomsGainMagicPower.effects0.paramCardUpgradeData.filters1"
+      ],
+      "bonus_damage": 10,
+      "bonus_heal": 10
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "MoonPhaseRoomsGainMagicPower.effects0.paramCardUpgradeData.filters0",
+      "card_type": "spell",
+      "required_effects_operator": "or",
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectHeal",
+        "CardEffectHealAndDamageRelative",
+        "CardEffectHealAndOverheal",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerHp"
+      ]
+    },
+    {
+      "id": "MoonPhaseRoomsGainMagicPower.effects0.paramCardUpgradeData.filters1",
+      "disallowed_pools": [
+        "SpellsNotAllowedSpellPowerPool"
+      ]
     }
   ],
   "additional_tooltips": [
