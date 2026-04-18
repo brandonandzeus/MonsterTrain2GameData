@@ -103,18 +103,22 @@
       "target_mode": "front_in_room",
       "target_team": "heroes",
       "target_ignore_bosses": true,
-      "param_upgrade": "Boss_Level6_FeedAtkHPUpgrade"
+      "param_upgrade": "@Boss_Level6_FeedAtkHPUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Boss_Level6_FeedAtkHPUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "spikes",
+          "count": 4
+        }
+      ],
+      "bonus_hp": 35
     }
   ],
   "vfxs": [
-    {
-      "id": "Boss_Level6_Cael_AtkHP.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/Cael/FX_CaelProjectile.prefab",
-        "asset_guid": "41ed80fa0ccc74747bc63b15bbb590bc"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "Boss_Level6_Cael_AtkHP.impactVFX",
       "vfx_left": {
@@ -122,6 +126,14 @@
         "asset_guid": "4ce9cbdd88a93f54ab5e98cbb3f7ead8"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "Boss_Level6_Cael_AtkHP.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Cael/FX_CaelProjectile.prefab",
+        "asset_guid": "41ed80fa0ccc74747bc63b15bbb590bc"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

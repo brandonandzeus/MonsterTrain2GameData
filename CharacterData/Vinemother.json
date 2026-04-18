@@ -39,7 +39,7 @@
       "triggers": [
         "@Vinemother.triggers0"
       ],
-      "ability": "@Vinemother.unitAbility",
+      "ability": "@Vinemother_Ability",
       "size": 2,
       "health": 35,
       "attack_damage": 0,
@@ -52,7 +52,7 @@
   ],
   "cards": [
     {
-      "id": "Vinemother.unitAbility",
+      "id": "Vinemother_Ability",
       "names": {
         "key": "CardData_nameKey-4c2613fc80a8f9a7-0a67b41ffe94b0741bc6faf908050d74-v2",
         "english": "Vinewrath",
@@ -118,7 +118,7 @@
     {
       "id": "Vinemother.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToSpellsInDeck",
-      "param_upgrade": "Vinemother_StingBuffPower"
+      "param_upgrade": "@Vinemother_StingBuffPower"
     },
     {
       "id": "Vinemother.unitAbility.effects0",
@@ -126,6 +126,15 @@
       "param_int": 3,
       "param_int_2": 2,
       "param_card_pool": "StingOnlyPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Vinemother_StingBuffPower",
+      "filters": [
+        "@Vinemother.triggers0.effects0.paramCardUpgradeData.filters0"
+      ],
+      "bonus_damage": 4
     }
   ],
   "vfxs": [
@@ -136,6 +145,15 @@
         "asset_guid": "aef8b97a4697ca444af7fd6e028dbe41"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "Vinemother.triggers0.effects0.paramCardUpgradeData.filters0",
+      "card_type": "spell",
+      "allowed_pools": [
+        "StingOnlyPool"
+      ]
     }
   ]
 }

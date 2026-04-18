@@ -145,6 +145,26 @@
   ],
   "character_triggers": [
     {
+      "id": "MonsterGorger.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-df5d28ee837a0ecc-d77a8ade152623a4ebb75fa1579408c4-v2",
+        "english": "Summon an <b>Antumbra Morsel</b> and a <b>Magma Morsel</b>.",
+        "french": "Invoque un <b>sous-bistre antumbra</b> et un <b>sous-bistre de magma</b>.",
+        "german": "Rufe ein <b>Antumbra-Nugget</b> und ein <b>Magma-Nugget</b>.",
+        "russian": "Призывает <b>Сумрачного заморыша</b> и <b>Лавового заморыша</b>.",
+        "portuguese": "Invoca um <b>Lancho Antumbra</b> e um <b>Lancho Magmático</b>.",
+        "chinese": "召唤一个<b>影者影裔</b>和<b>熔岩影裔</b>。",
+        "spanish": "Invoca un <b>Pincho de Antumbra</b> y un <b>Pincho de magma</b>.",
+        "chinese_traditional": "召喚一個<b>影者莫塞爾</b>和一個<b>岩漿莫塞爾</b>。",
+        "korean": "<b>외부 어스름 그림자</b>와 <b>마그마 그림자</b>를 소환합니다.",
+        "japanese": "<b>アントアンブラ・モーゼル</b>と<b>マグマ・モーゼル</b>を召喚する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@MonsterGorger.triggers0.effects0"
+      ]
+    },
+    {
       "id": "MonsterGorger.triggers0.effects0.paramCharacterData.triggers0",
       "descriptions": {
         "key": "CharacterData_descriptionKey-da87b665853af570-91bff760f73827642b73e6aacef9c4c8-v2",
@@ -183,61 +203,43 @@
       "effects": [
         "@MonsterGorger.triggers0.effects0.paramAdditionalCharacterData.triggers0.effects0"
       ]
-    },
-    {
-      "id": "MonsterGorger.triggers0",
-      "descriptions": {
-        "key": "CharacterData_descriptionKey-df5d28ee837a0ecc-d77a8ade152623a4ebb75fa1579408c4-v2",
-        "english": "Summon an <b>Antumbra Morsel</b> and a <b>Magma Morsel</b>.",
-        "french": "Invoque un <b>sous-bistre antumbra</b> et un <b>sous-bistre de magma</b>.",
-        "german": "Rufe ein <b>Antumbra-Nugget</b> und ein <b>Magma-Nugget</b>.",
-        "russian": "Призывает <b>Сумрачного заморыша</b> и <b>Лавового заморыша</b>.",
-        "portuguese": "Invoca um <b>Lancho Antumbra</b> e um <b>Lancho Magmático</b>.",
-        "chinese": "召唤一个<b>影者影裔</b>和<b>熔岩影裔</b>。",
-        "spanish": "Invoca un <b>Pincho de Antumbra</b> y un <b>Pincho de magma</b>.",
-        "chinese_traditional": "召喚一個<b>影者莫塞爾</b>和一個<b>岩漿莫塞爾</b>。",
-        "korean": "<b>외부 어스름 그림자</b>와 <b>마그마 그림자</b>를 소환합니다.",
-        "japanese": "<b>アントアンブラ・モーゼル</b>と<b>マグマ・モーゼル</b>を召喚する。"
-      },
-      "trigger": "post_combat",
-      "effects": [
-        "@MonsterGorger.triggers0.effects0"
-      ]
     }
   ],
   "effects": [
+    {
+      "id": "MonsterGorger.triggers0.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MorselShadowMorsel",
+      "param_character_2": "@MorselMoltenMorsel",
+      "param_int": 1,
+      "param_bool": true
+    },
     {
       "id": "MonsterGorger.triggers0.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "both",
-      "param_upgrade": "ShadowMorselTrigger"
+      "param_upgrade": "@ShadowMorselTrigger"
     },
     {
       "id": "MonsterGorger.triggers0.effects0.paramAdditionalCharacterData.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "both",
-      "param_upgrade": "MoltenMorselTrigger"
+      "param_upgrade": "@MoltenMorselTrigger"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ShadowMorselTrigger",
+      "bonus_hp": 9
     },
     {
-      "id": "MonsterGorger.triggers0.effects0",
-      "name": "CardEffectSpawnMonster",
-      "param_character": "MorselShadowMorsel",
-      "param_character_2": "MorselMoltenMorsel",
-      "param_int": 1,
-      "param_bool": true
+      "id": "MoltenMorselTrigger",
+      "bonus_damage": 9
     }
   ],
   "vfxs": [
-    {
-      "id": "MonsterGorger.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/MorselMaster/FX_MorselMasterProjectile.prefab",
-        "asset_guid": "1990fcc42adcfb942977f1a0b69bfda8"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "MonsterGorger.impactVFX",
       "vfx_left": {
@@ -245,6 +247,14 @@
         "asset_guid": "4ce9cbdd88a93f54ab5e98cbb3f7ead8"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterGorger.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/MorselMaster/FX_MorselMasterProjectile.prefab",
+        "asset_guid": "1990fcc42adcfb942977f1a0b69bfda8"
+      },
+      "spawn_location": "character_side_fwd_center"
     },
     {
       "id": "MonsterGorger.triggers0.effects0.paramCharacterData.impactVFX",

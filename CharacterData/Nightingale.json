@@ -90,14 +90,25 @@
       "id": "MonsterNightshadow.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Nightingale_Upgrade",
+      "param_upgrade": "@Nightingale_Upgrade",
       "param_int_3": 1
     },
     {
       "id": "MonsterNightshadow.triggers1.effects0",
       "name": "CardEffectRemoveTempUpgradeFromUnit",
       "target_mode": "self",
-      "param_upgrade": "Nightingale_Upgrade"
+      "param_upgrade": "@Nightingale_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Nightingale_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 2
+        }
+      ]
     }
   ],
   "vfxs": [

@@ -104,18 +104,22 @@
       "target_mode": "front_in_room",
       "target_team": "heroes",
       "target_ignore_bosses": true,
-      "param_upgrade": "Boss_Level6_FeedLifestealUpgrade_TitanTrial"
+      "param_upgrade": "@Boss_Level6_FeedLifestealUpgrade_TitanTrial"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Boss_Level6_FeedLifestealUpgrade_TitanTrial",
+      "status_effect_upgrades": [
+        {
+          "status": "lifesteal",
+          "count": 1
+        }
+      ],
+      "bonus_damage": 12
     }
   ],
   "vfxs": [
-    {
-      "id": "Boss_Level6_Cael_Lifesteal_TitanTrial.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/Cael/FX_CaelProjectile.prefab",
-        "asset_guid": "41ed80fa0ccc74747bc63b15bbb590bc"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "Boss_Level6_Cael_Lifesteal_TitanTrial.impactVFX",
       "vfx_left": {
@@ -123,6 +127,14 @@
         "asset_guid": "4ce9cbdd88a93f54ab5e98cbb3f7ead8"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "Boss_Level6_Cael_Lifesteal_TitanTrial.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Cael/FX_CaelProjectile.prefab",
+        "asset_guid": "41ed80fa0ccc74747bc63b15bbb590bc"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

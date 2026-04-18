@@ -121,14 +121,6 @@
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level3_Fleshweaver_V1.triggers0.effects0.paramCharacterData.triggers0",
-      "trigger": "on_spawn",
-      "effects": [
-        "@Boss_Level3_Fleshweaver_V1.triggers0.effects0.paramCharacterData.triggers0.effects0"
-      ],
-      "hide_visual_and_ignore_silence": true
-    },
-    {
       "id": "Boss_Level3_Fleshweaver_V1.triggers0",
       "descriptions": {
         "key": "CharacterData_descriptionKey-618c98aada253b8b-45576803dc6f1f54abc5665a8976ead8-v2",
@@ -156,18 +148,21 @@
         "@Boss_Level3_Fleshweaver_V1.triggers0.effects1"
       ],
       "remove_on_relentless_change": true
+    },
+    {
+      "id": "Boss_Level3_Fleshweaver_V1.triggers0.effects0.paramCharacterData.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@Boss_Level3_Fleshweaver_V1.triggers0.effects0.paramCharacterData.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
     }
   ],
   "effects": [
     {
-      "id": "Boss_Level3_Fleshweaver_V1.triggers0.effects0.paramCharacterData.triggers0.effects0",
-      "name": "CardEffectFloorRearrange",
-      "target_mode": "self"
-    },
-    {
       "id": "Boss_Level3_Fleshweaver_V1.triggers0.effects0",
       "name": "CardEffectSpawnHero",
-      "param_character": "Boss_Level3_MiniFleshweaver"
+      "param_character": "@Boss_Level3_MiniFleshweaver"
     },
     {
       "id": "Boss_Level3_Fleshweaver_V1.triggers0.effects1",
@@ -179,6 +174,11 @@
           "count": 1
         }
       ]
+    },
+    {
+      "id": "Boss_Level3_Fleshweaver_V1.triggers0.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self"
     }
   ],
   "vfxs": [

@@ -90,13 +90,24 @@
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "heroes",
-      "param_upgrade": "Boss_Level6_FeedDamageShieldUpgrade"
+      "param_upgrade": "@Boss_Level6_FeedDamageShieldUpgrade"
     },
     {
       "id": "Boss_Level6_FeedDamageShield.triggers0.effects1",
       "name": "CardEffectDamage",
       "target_mode": "self",
       "param_int": 20
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Boss_Level6_FeedDamageShieldUpgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "damage shield",
+          "count": 1
+        }
+      ]
     }
   ],
   "vfxs": [

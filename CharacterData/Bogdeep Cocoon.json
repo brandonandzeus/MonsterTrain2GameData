@@ -111,26 +111,6 @@
   ],
   "character_triggers": [
     {
-      "id": "MonsterBogdeepCocoon.triggers1.effects1.paramCharacterData.triggers0",
-      "descriptions": {
-        "key": "CharacterData_descriptionKey-72e5a8d9989c0ea8-c82a07efc532479489fd2f32c9fa9f4b-v2",
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
-        "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
-        "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
-        "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
-        "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
-        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
-        "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
-        "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
-        "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
-        "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
-      },
-      "trigger": "card_exhausted",
-      "effects": [
-        "@MonsterBogdeepCocoon.triggers1.effects1.paramCharacterData.triggers0.effects0"
-      ]
-    },
-    {
       "id": "MonsterBogdeepCocoon.triggers0",
       "trigger": "on_remove_hatch",
       "effects": [
@@ -167,6 +147,26 @@
         "@MonsterBogdeepCocoon.triggers2.effects0"
       ],
       "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "MonsterBogdeepCocoon.triggers1.effects1.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-72e5a8d9989c0ea8-c82a07efc532479489fd2f32c9fa9f4b-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "french": "+[effect0.upgrade.bonusdamage][attack] et +[effect0.upgrade.bonushp][health].",
+        "german": "+[effect0.upgrade.bonusdamage][attack] und +[effect0.upgrade.bonushp][health].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack] и +[effect0.upgrade.bonushp][health].",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack] e +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack] y +[effect0.upgrade.bonushp][health].",
+        "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]和+[effect0.upgrade.bonushp][health]。",
+        "korean": "+[effect0.upgrade.bonusdamage][attack] 및 +[effect0.upgrade.bonushp][health].",
+        "japanese": "+[effect0.upgrade.bonusdamage][attack]と+[effect0.upgrade.bonushp][health]。"
+      },
+      "trigger": "card_exhausted",
+      "effects": [
+        "@MonsterBogdeepCocoon.triggers1.effects1.paramCharacterData.triggers0.effects0"
+      ]
     }
   ],
   "effects": [
@@ -183,12 +183,6 @@
       "hide_tooltip": true
     },
     {
-      "id": "MonsterBogdeepCocoon.triggers1.effects1.paramCharacterData.triggers0.effects0",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_upgrade": "WurmTrigger"
-    },
-    {
       "id": "MonsterBogdeepCocoon.triggers1.effects0",
       "name": "CardEffectSacrifice",
       "target_mode": "self",
@@ -198,7 +192,7 @@
     {
       "id": "MonsterBogdeepCocoon.triggers1.effects1",
       "name": "CardEffectSpawnMonster",
-      "param_character": "MonsterBogWurmling",
+      "param_character": "@MonsterBogWurmling",
       "additional_tooltips": [
         "@MonsterBogdeepCocoon.triggers1.effects1.additionalTooltips0"
       ]
@@ -208,6 +202,19 @@
       "name": "CardEffectForceHatchCheck",
       "target_mode": "drop_target_character",
       "target_team": "monsters"
+    },
+    {
+      "id": "MonsterBogdeepCocoon.triggers1.effects1.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@WurmTrigger"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "WurmTrigger",
+      "bonus_damage": 15,
+      "bonus_hp": 15
     }
   ],
   "additional_tooltips": [

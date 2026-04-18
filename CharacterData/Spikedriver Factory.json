@@ -37,7 +37,7 @@
       },
       "projectile_vfx": "@MonsterSpikedriverFactory.projectilePrefab",
       "impact_vfx": "@MonsterSpikedriverFactory.impactVFX",
-      "ability": "@MonsterSpikedriverFactory.unitAbility",
+      "ability": "@SpikedriverFactoryAbility",
       "size": 3,
       "health": 50,
       "attack_damage": 0,
@@ -52,7 +52,7 @@
   ],
   "cards": [
     {
-      "id": "MonsterSpikedriverFactory.unitAbility",
+      "id": "SpikedriverFactoryAbility",
       "names": {
         "key": "CardData_nameKey-da4d52ab733af138-49457c44715d76845a8c3b37683ea1ba-v2",
         "english": "Spider Assembly",
@@ -105,20 +105,20 @@
   ],
   "vfxs": [
     {
-      "id": "MonsterSpikedriverFactory.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/SpikedriverFactory/FX_SpikedriverFactoryProjectile.prefab",
-        "asset_guid": "82ea9898e9bae364a9d1e0f0f7633c7d"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
-    {
       "id": "MonsterSpikedriverFactory.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
         "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterSpikedriverFactory.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/SpikedriverFactory/FX_SpikedriverFactoryProjectile.prefab",
+        "asset_guid": "82ea9898e9bae364a9d1e0f0f7633c7d"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

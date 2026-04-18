@@ -36,7 +36,7 @@
         "asset_guid": "dd55e9dca64aa5b448a56e09e6f74361"
       },
       "impact_vfx": "@SanguineAssistant.impactVFX",
-      "grafted_equipment": "@SanguineAssistant.graftedEquipment",
+      "grafted_equipment": "@VampiresTooth",
       "size": 1,
       "health": 1,
       "attack_damage": 0,
@@ -48,7 +48,7 @@
   ],
   "cards": [
     {
-      "id": "SanguineAssistant.graftedEquipment",
+      "id": "VampiresTooth",
       "names": {
         "key": "CardData_nameKey-21aff0d44aa90883-565a11151f012f84e91809f00fcde05e-v2",
         "english": "Vampire's Tooth",
@@ -124,6 +124,14 @@
   ],
   "effects": [
     {
+      "id": "SanguineAssistant.graftedEquipment.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@VampiresTooth_Upgrade",
+      "applied_vfx": "@SanguineAssistant.graftedEquipment.effects0.appliedVFX"
+    },
+    {
       "id": "SanguineAssistant.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
@@ -133,14 +141,6 @@
           "count": 1
         }
       ]
-    },
-    {
-      "id": "SanguineAssistant.graftedEquipment.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "VampiresTooth_Upgrade",
-      "applied_vfx": "@SanguineAssistant.graftedEquipment.effects0.appliedVFX"
     }
   ],
   "traits": [
@@ -148,6 +148,21 @@
       "id": "SanguineAssistant.graftedEquipment.traits0",
       "name": "CardTraitGraftedEquipment",
       "trait_is_removable": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "VampiresTooth_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "lifesteal",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@SanguineAssistant.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 15
     }
   ],
   "vfxs": [

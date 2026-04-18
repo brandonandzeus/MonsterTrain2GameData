@@ -36,7 +36,7 @@
         "asset_guid": "158350eb921749443b4fde1b900637d7"
       },
       "impact_vfx": "@MonsterTwistedAssistant.impactVFX",
-      "grafted_equipment": "@MonsterTwistedAssistant.graftedEquipment",
+      "grafted_equipment": "@TwistedAssistantsBack",
       "size": 1,
       "health": 1,
       "attack_damage": 0,
@@ -48,7 +48,7 @@
   ],
   "cards": [
     {
-      "id": "MonsterTwistedAssistant.graftedEquipment",
+      "id": "TwistedAssistantsBack",
       "names": {
         "key": "CardData_nameKey-7701d8a529f9699d-eb95785fae9f56f4a9bbe0e3b9c4f46a-v2",
         "english": "Twisted Back",
@@ -124,6 +124,14 @@
   ],
   "effects": [
     {
+      "id": "MonsterTwistedAssistant.graftedEquipment.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@TwistedAssistantsBack_Upgrade",
+      "applied_vfx": "@MonsterTwistedAssistant.graftedEquipment.effects0.appliedVFX"
+    },
+    {
       "id": "MonsterTwistedAssistant.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
@@ -133,14 +141,6 @@
           "count": 2
         }
       ]
-    },
-    {
-      "id": "MonsterTwistedAssistant.graftedEquipment.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "TwistedAssistantsBack_Upgrade",
-      "applied_vfx": "@MonsterTwistedAssistant.graftedEquipment.effects0.appliedVFX"
     }
   ],
   "traits": [
@@ -148,6 +148,21 @@
       "id": "MonsterTwistedAssistant.graftedEquipment.traits0",
       "name": "CardTraitGraftedEquipment",
       "trait_is_removable": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "TwistedAssistantsBack_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@MonsterTwistedAssistant.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_damage": 15
     }
   ],
   "vfxs": [

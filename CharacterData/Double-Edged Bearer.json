@@ -36,7 +36,7 @@
         "asset_guid": "f91707529741f9348aa2e5e41f8447c5"
       },
       "impact_vfx": "@MonsterDoubleEdgedBearer.impactVFX",
-      "grafted_equipment": "@MonsterDoubleEdgedBearer.graftedEquipment",
+      "grafted_equipment": "@DoubleEdgedArms",
       "size": 1,
       "health": 1,
       "attack_damage": 0,
@@ -48,7 +48,7 @@
   ],
   "cards": [
     {
-      "id": "MonsterDoubleEdgedBearer.graftedEquipment",
+      "id": "DoubleEdgedArms",
       "names": {
         "key": "CardData_nameKey-8df5d314279a2548-9d14a2c3eb330714da95b157a52633ce-v2",
         "english": "Double-Edged Arms",
@@ -106,7 +106,7 @@
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "DoubleEdgedArms_Upgrade",
+      "param_upgrade": "@DoubleEdgedArms_Upgrade",
       "applied_vfx": "@MonsterDoubleEdgedBearer.graftedEquipment.effects0.appliedVFX"
     }
   ],
@@ -115,6 +115,18 @@
       "id": "MonsterDoubleEdgedBearer.graftedEquipment.traits0",
       "name": "CardTraitGraftedEquipment",
       "trait_is_removable": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "DoubleEdgedArms_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "bonus_damage": 10
     }
   ],
   "vfxs": [

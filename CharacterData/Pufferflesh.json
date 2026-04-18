@@ -36,7 +36,7 @@
         "asset_guid": "701273dd6379dd94689bea66cc65ecea"
       },
       "impact_vfx": "@MonsterPufferflesh.impactVFX",
-      "grafted_equipment": "@MonsterPufferflesh.graftedEquipment",
+      "grafted_equipment": "@SpikySkin",
       "size": 1,
       "health": 1,
       "attack_damage": 0,
@@ -48,7 +48,7 @@
   ],
   "cards": [
     {
-      "id": "MonsterPufferflesh.graftedEquipment",
+      "id": "SpikySkin",
       "names": {
         "key": "CardData_nameKey-47ed6ceb6fcfcaeb-3d3aa1b61f36047439e28a75c2b56a57-v2",
         "english": "Spiky Skin",
@@ -124,6 +124,14 @@
   ],
   "effects": [
     {
+      "id": "MonsterPufferflesh.graftedEquipment.effects0",
+      "name": "CardEffectAttachEquipment",
+      "target_mode": "drop_target_character",
+      "target_team": "monsters",
+      "param_upgrade": "@SpikySkin_Upgrade",
+      "applied_vfx": "@MonsterPufferflesh.graftedEquipment.effects0.appliedVFX"
+    },
+    {
       "id": "MonsterPufferflesh.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "self",
@@ -133,14 +141,6 @@
           "count": 3
         }
       ]
-    },
-    {
-      "id": "MonsterPufferflesh.graftedEquipment.effects0",
-      "name": "CardEffectAttachEquipment",
-      "target_mode": "drop_target_character",
-      "target_team": "monsters",
-      "param_upgrade": "SpikySkin_Upgrade",
-      "applied_vfx": "@MonsterPufferflesh.graftedEquipment.effects0.appliedVFX"
     }
   ],
   "traits": [
@@ -148,6 +148,15 @@
       "id": "MonsterPufferflesh.graftedEquipment.traits0",
       "name": "CardTraitGraftedEquipment",
       "trait_is_removable": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SpikySkin_Upgrade",
+      "trigger_upgrades": [
+        "@MonsterPufferflesh.graftedEquipment.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "bonus_hp": 10
     }
   ],
   "vfxs": [

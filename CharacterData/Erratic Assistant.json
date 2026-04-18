@@ -35,7 +35,7 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ErraticAssistant.prefab",
         "asset_guid": "78bc6dfbc3dd64e4ebc8a19b7c8155e0"
       },
-      "grafted_equipment": "@ErraticAssistant.graftedEquipment",
+      "grafted_equipment": "@ScissorHands",
       "size": 1,
       "health": 1,
       "attack_damage": 0,
@@ -47,7 +47,7 @@
   ],
   "cards": [
     {
-      "id": "ErraticAssistant.graftedEquipment",
+      "id": "ScissorHands",
       "names": {
         "key": "CardData_nameKey-88fdf2f385b15540-81ba581ca3cd03642af0a021eea877b2-v2",
         "english": "Scissor Hands",
@@ -104,7 +104,7 @@
       "name": "CardEffectAttachEquipment",
       "target_mode": "drop_target_character",
       "target_team": "monsters",
-      "param_upgrade": "ScissorHands_Upgrade",
+      "param_upgrade": "@ScissorHands_Upgrade",
       "applied_vfx": "@ErraticAssistant.graftedEquipment.effects0.appliedVFX"
     }
   ],
@@ -113,6 +113,12 @@
       "id": "ErraticAssistant.graftedEquipment.traits0",
       "name": "CardTraitGraftedEquipment",
       "trait_is_removable": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ScissorHands_Upgrade",
+      "bonus_damage": 9
     }
   ],
   "vfxs": [

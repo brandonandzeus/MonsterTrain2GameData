@@ -42,7 +42,7 @@
           "count": 1
         }
       ],
-      "ability": "@PyreHeartTime.unitAbility",
+      "ability": "@PyreHeartTimeAbility",
       "size": 2,
       "health": 1,
       "can_be_healed": false,
@@ -57,7 +57,7 @@
   ],
   "cards": [
     {
-      "id": "PyreHeartTime.unitAbility",
+      "id": "PyreHeartTimeAbility",
       "names": {
         "key": "CardData_nameKey-b49716bb8b6c02a7-34c23a6623ef774459310856e9e06cd9-v2",
         "english": "Time Stop",
@@ -115,6 +115,14 @@
   ],
   "vfxs": [
     {
+      "id": "PyreHeartTime.deathVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_EchoofTheTimefatherDeath.prefab",
+        "asset_guid": "ed4e40938eff73a4789bb7cce3761828"
+      },
+      "spawn_location": "character_center"
+    },
+    {
       "id": "PyreHeartTime.attackVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_PyreheartTimeAttack.prefab",
@@ -131,20 +139,30 @@
       "spawn_location": "character_center"
     },
     {
-      "id": "PyreHeartTime.deathVFX",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_EchoofTheTimefatherDeath.prefab",
-        "asset_guid": "ed4e40938eff73a4789bb7cce3761828"
-      },
-      "spawn_location": "character_center"
-    },
-    {
       "id": "PyreHeartTime.unitAbility.effects0.appliedToSelfVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/EchoofTheTimefather/FX_EchoofthetimefatherAbility.prefab",
         "asset_guid": "88391bf23e23f2342ae662ac6f657b11"
       },
       "spawn_location": "character_center"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "PyreHeartTime.unitAbility.effects0.paramCardFilter",
+      "card_type": "spell",
+      "additional_card_types": [
+        "monster",
+        "equipment",
+        "room"
+      ],
+      "excluded_traits_operator": "and",
+      "excluded_traits": [
+        "CardTraitPermafrost"
+      ],
+      "disallowed_pools": [
+        "AllBlightsAndScourges"
+      ]
     }
   ]
 }

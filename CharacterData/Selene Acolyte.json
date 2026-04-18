@@ -90,7 +90,7 @@
       "id": "MonsterSeleneAcolyte.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "SeleneAcolyte_MagicPower_Upgrade",
+      "param_upgrade": "@SeleneAcolyte_MagicPower_Upgrade",
       "additional_tooltips": [
         "@MonsterSeleneAcolyte.triggers0.effects0.additionalTooltips0"
       ],
@@ -100,8 +100,20 @@
       "id": "MonsterSeleneAcolyte.triggers1.effects0",
       "name": "CardEffectRemoveTempUpgradeFromUnit",
       "target_mode": "self",
-      "param_upgrade": "SeleneAcolyte_MagicPower_Upgrade",
+      "param_upgrade": "@SeleneAcolyte_MagicPower_Upgrade",
       "param_bool": true
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SeleneAcolyte_MagicPower_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ],
+      "is_unique": true
     }
   ],
   "additional_tooltips": [

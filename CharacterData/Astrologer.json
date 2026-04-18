@@ -80,18 +80,16 @@
       "id": "MonsterAstrologer.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "AstrologerAttackUpgrade"
+      "param_upgrade": "@AstrologerAttackUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AstrologerAttackUpgrade",
+      "bonus_damage": 5
     }
   ],
   "vfxs": [
-    {
-      "id": "MonsterAstrologer.projectilePrefab",
-      "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttack.prefab",
-        "asset_guid": "3ff51f50bdf4381488d19d48af5ecedc"
-      },
-      "spawn_location": "character_side_fwd_center"
-    },
     {
       "id": "MonsterAstrologer.impactVFX",
       "vfx_left": {
@@ -99,6 +97,14 @@
         "asset_guid": "e403cf7dbfbb9df498327589983ce551"
       },
       "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterAstrologer.projectilePrefab",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttack.prefab",
+        "asset_guid": "3ff51f50bdf4381488d19d48af5ecedc"
+      },
+      "spawn_location": "character_side_fwd_center"
     }
   ]
 }

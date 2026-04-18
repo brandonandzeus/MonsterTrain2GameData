@@ -124,26 +124,6 @@
   ],
   "character_triggers": [
     {
-      "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1.paramCharacterData.triggers0",
-      "descriptions": {
-        "key": "CharacterData_descriptionKey-f1b2052c29cbdf7a-10d046676ddac9e47b258c17a08088b5-v2",
-        "english": "Apply [dazed] [effect0.status0.power] to the attacker.",
-        "french": "Inflige [dazed] [effect0.status0.power] à l'attaquant.",
-        "german": "Wende [dazed] [effect0.status0.power] auf den Angreifer an.",
-        "russian": "На атакующего накладывается [dazed] х[effect0.status0.power].",
-        "portuguese": "Aplica [dazed] [effect0.status0.power] ao atacante.",
-        "chinese": "对攻击者施加 [dazed] [effect0.status0.power]。",
-        "spanish": "Añade [dazed] [effect0.status0.power] al atacante.",
-        "chinese_traditional": "對攻擊者施加[dazed][effect0.status0.power]。",
-        "korean": "공격자에 [dazed] [effect0.status0.power] 효과를 적용합니다.",
-        "japanese": "攻撃者に[dazed] [effect0.status0.power]を付与する。"
-      },
-      "trigger": "on_hit",
-      "effects": [
-        "@Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1.paramCharacterData.triggers0.effects0"
-      ]
-    },
-    {
       "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0",
       "descriptions": {
         "key": "CharacterData_descriptionKey-f25e9366b0c05783-084e7d14346fe074790b1cabfee0d08f-v2",
@@ -164,21 +144,29 @@
         "@Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1"
       ],
       "remove_on_relentless_change": true
+    },
+    {
+      "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-f1b2052c29cbdf7a-10d046676ddac9e47b258c17a08088b5-v2",
+        "english": "Apply [dazed] [effect0.status0.power] to the attacker.",
+        "french": "Inflige [dazed] [effect0.status0.power] à l'attaquant.",
+        "german": "Wende [dazed] [effect0.status0.power] auf den Angreifer an.",
+        "russian": "На атакующего накладывается [dazed] х[effect0.status0.power].",
+        "portuguese": "Aplica [dazed] [effect0.status0.power] ao atacante.",
+        "chinese": "对攻击者施加 [dazed] [effect0.status0.power]。",
+        "spanish": "Añade [dazed] [effect0.status0.power] al atacante.",
+        "chinese_traditional": "對攻擊者施加[dazed][effect0.status0.power]。",
+        "korean": "공격자에 [dazed] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "攻撃者に[dazed] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1.paramCharacterData.triggers0.effects0"
+      ]
     }
   ],
   "effects": [
-    {
-      "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1.paramCharacterData.triggers0.effects0",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "last_attacker_character",
-      "target_team": "both",
-      "param_status_effects": [
-        {
-          "status": "dazed",
-          "count": 2
-        }
-      ]
-    },
     {
       "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects0",
       "name": "CardEffectCopyUnits",
@@ -191,7 +179,19 @@
     {
       "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1",
       "name": "CardEffectSpawnHeroIfNoOtherHeroUnits",
-      "param_character": "R3_Horde_T1_Decoy"
+      "param_character": "@R3_Horde_T1_Decoy"
+    },
+    {
+      "id": "Boss_SoulSavior_R3_Unruly_DuplicateEnemy.triggers0.effects1.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_attacker_character",
+      "target_team": "both",
+      "param_status_effects": [
+        {
+          "status": "dazed",
+          "count": 2
+        }
+      ]
     }
   ],
   "vfxs": [

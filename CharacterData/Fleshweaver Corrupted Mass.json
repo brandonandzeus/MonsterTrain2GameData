@@ -124,34 +124,6 @@
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers0",
-      "trigger": "on_spawn",
-      "effects": [
-        "@Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers0.effects0"
-      ],
-      "hide_visual_and_ignore_silence": true
-    },
-    {
-      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers1",
-      "descriptions": {
-        "key": "CharacterData_descriptionKey-dea634a4b821f8e9-a9dd61d4ea4257c479e53cfa8dae2e46-v2",
-        "english": "Apply [corruption] [effect0.status0.power] to the unit that killed it.",
-        "french": "Inflige [corruption] [effect0.status0.power] à l'unité qui l'a tué.",
-        "german": "Wende [corruption] [effect0.status0.power] auf die Einheit an, die den tödlichen Treffer verursacht hat.",
-        "russian": "Накладывает на своего убийцу <b>Скверну</b> х[effect0.status0.power].",
-        "portuguese": "Aplica [corruption] [effect0.status0.power] à unidade que o matou.",
-        "chinese": "对将其击杀的单位施加[corruption] [effect0.status0.power]。",
-        "spanish": "Añade [corruption] [effect0.status0.power] a la unidad que lo mate.",
-        "chinese_traditional": "對殺死它的單位施加[corruption][effect0.status0.power]。",
-        "korean": "이를 처치한 유닛에게 [corruption] [effect0.status0.power] 효과를 적용합니다.",
-        "japanese": "自身を倒したユニットに[corruption] [effect0.status0.power]を付与する。"
-      },
-      "trigger": "on_death",
-      "effects": [
-        "@Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers1.effects0"
-      ]
-    },
-    {
       "id": "Boss_Level3_Fleshweaver_Corruption.triggers0",
       "descriptions": {
         "key": "CharacterData_descriptionKey-3d079bcfd53e308e-56ca170b855a75347a65c64bb219f8c4-v2",
@@ -179,9 +151,53 @@
         "@Boss_Level3_Fleshweaver_Corruption.triggers0.effects1"
       ],
       "remove_on_relentless_change": true
+    },
+    {
+      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers0",
+      "trigger": "on_spawn",
+      "effects": [
+        "@Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers0.effects0"
+      ],
+      "hide_visual_and_ignore_silence": true
+    },
+    {
+      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers1",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-dea634a4b821f8e9-a9dd61d4ea4257c479e53cfa8dae2e46-v2",
+        "english": "Apply [corruption] [effect0.status0.power] to the unit that killed it.",
+        "french": "Inflige [corruption] [effect0.status0.power] à l'unité qui l'a tué.",
+        "german": "Wende [corruption] [effect0.status0.power] auf die Einheit an, die den tödlichen Treffer verursacht hat.",
+        "russian": "Накладывает на своего убийцу <b>Скверну</b> х[effect0.status0.power].",
+        "portuguese": "Aplica [corruption] [effect0.status0.power] à unidade que o matou.",
+        "chinese": "对将其击杀的单位施加[corruption] [effect0.status0.power]。",
+        "spanish": "Añade [corruption] [effect0.status0.power] a la unidad que lo mate.",
+        "chinese_traditional": "對殺死它的單位施加[corruption][effect0.status0.power]。",
+        "korean": "이를 처치한 유닛에게 [corruption] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "自身を倒したユニットに[corruption] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "on_death",
+      "effects": [
+        "@Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers1.effects0"
+      ]
     }
   ],
   "effects": [
+    {
+      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0",
+      "name": "CardEffectSpawnHero",
+      "param_character": "@Boss_Level3_MiniFleshweaver_Corruption"
+    },
+    {
+      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects1",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "mass",
+          "count": 1
+        }
+      ]
+    },
     {
       "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0.paramCharacterData.triggers0.effects0",
       "name": "CardEffectFloorRearrange",
@@ -195,22 +211,6 @@
       "param_status_effects": [
         {
           "status": "corruption",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects0",
-      "name": "CardEffectSpawnHero",
-      "param_character": "Boss_Level3_MiniFleshweaver_Corruption"
-    },
-    {
-      "id": "Boss_Level3_Fleshweaver_Corruption.triggers0.effects1",
-      "name": "CardEffectRemoveStatusEffect",
-      "target_mode": "self",
-      "param_status_effects": [
-        {
-          "status": "mass",
           "count": 1
         }
       ]
