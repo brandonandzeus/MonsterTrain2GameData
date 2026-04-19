@@ -48,7 +48,7 @@
     {
       "id": "LifestealEveryone.effects0",
       "name": "RelicEffectAddTempUpgrade",
-      "param_upgrade": "Lifesteal3",
+      "param_upgrade": "@Lifesteal3",
       "param_source_team": "monsters",
       "param_bool": true
     },
@@ -62,6 +62,21 @@
         }
       ],
       "param_source_team": "heroes"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Lifesteal3",
+      "status_effect_upgrades": [
+        {
+          "status": "lifesteal",
+          "count": 3
+        }
+      ],
+      "filters": [
+        "OnlyUnit"
+      ],
+      "is_unique": true
     }
   ]
 }

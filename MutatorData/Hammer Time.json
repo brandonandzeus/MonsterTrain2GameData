@@ -46,9 +46,51 @@
     {
       "id": "Echoes_StartingHephHammer.effects0",
       "name": "RelicEffectAddCardsStartOfRun",
-      "param_upgrade": "AddFrontlineTrait",
+      "param_upgrade": "@AddFrontlineTrait",
       "param_bool": true,
       "param_card_pool": "OnlyHephHammerPool"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddFrontlineTrait",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-fcef167865709a8a-438d458166178c848a00af9f9a428ece-v2",
+        "english": "Deployable",
+        "french": "Déployable",
+        "german": "Einsetzbar",
+        "russian": "Размещение",
+        "portuguese": "Distribuível",
+        "chinese": "可部署",
+        "spanish": "Desplegable",
+        "chinese_traditional": "可部署",
+        "korean": "배치 유닛",
+        "japanese": "配置可能"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-8af5b1e0177b952f-438d458166178c848a00af9f9a428ece-v2",
+        "english": "This card is drawn during the deployment phase.",
+        "french": "Cette carte est piochée pendant la phase de Déploiement.",
+        "german": "Diese Karte wird während der Einsatzphase gezogen.",
+        "russian": "Эта карта попадает в руку в фазе размещения.",
+        "portuguese": "Esta carta é comprada durante a Fase de Distribuição.",
+        "chinese": "该卡牌会在部署阶段抽取。",
+        "spanish": "Esta carta se roba en la fase de despliegue.",
+        "chinese_traditional": "此卡在部署階段抽取。",
+        "korean": "이 카드는 배치 단계에서 뽑습니다.",
+        "japanese": "このカードは配置フェーズ中にドローされる。"
+      },
+      "trait_upgrades": [
+        "@Echoes_StartingHephHammer.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "Echoes_StartingHephHammer.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitDrawInDeploymentPhase",
+      "trait_is_removable": false,
+      "draw_in_deployment_phase": true
     }
   ]
 }

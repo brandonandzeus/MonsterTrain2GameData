@@ -53,6 +53,13 @@
       "param_source_team": "monsters"
     }
   ],
+  "upgrades": [
+    {
+      "id": "Plus1AttackScalable",
+      "bonus_damage": 1,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
+    }
+  ],
   "character_triggers": [
     {
       "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0.triggers0",
@@ -81,7 +88,7 @@
       "id": "Echoes_FriendlyUnitsGetPermaAttackOnHealing.effects0.triggers0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus1AttackScalable",
+      "param_upgrade": "@Plus1AttackScalable",
       "param_int_3": 2,
       "param_bool": true
     }

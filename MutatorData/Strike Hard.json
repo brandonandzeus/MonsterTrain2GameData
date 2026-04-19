@@ -47,7 +47,7 @@
     {
       "id": "AllUnitsMultistrike.effects0",
       "name": "RelicEffectAddTempUpgrade",
-      "param_upgrade": "Multistrike1",
+      "param_upgrade": "@Multistrike1",
       "param_source_team": "monsters",
       "param_bool": true
     },
@@ -61,6 +61,21 @@
         }
       ],
       "param_source_team": "heroes"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Multistrike1",
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "OnlyUnit"
+      ],
+      "is_unique": true
     }
   ]
 }

@@ -46,9 +46,19 @@
     {
       "id": "Echoes_GainStatsPerDeckSize.effects0",
       "name": "RelicEffectAddUnitUpgradePerPile",
-      "param_upgrade": "DeckSizeStats",
+      "param_upgrade": "@DeckSizeStats",
       "param_source_team": "monsters",
       "param_max_int": 10
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "DeckSizeStats",
+      "filters": [
+        "OnlyUnit"
+      ],
+      "bonus_damage": 2,
+      "bonus_hp": 2
     }
   ]
 }
