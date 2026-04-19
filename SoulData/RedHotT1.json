@@ -66,7 +66,55 @@
       "id": "RedHotT1.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "RedHotT1_Upgrade"
+      "param_upgrade": "@RedHotT1_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RedHotT1_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-f0dfc05c7bf805f8-ce1e6acfa8fc94c4ba5d87d3f3517d48-v2",
+        "english": "Red Hot",
+        "french": "Ignescence",
+        "german": "Rotglühend",
+        "russian": "Раскаляй добела",
+        "portuguese": "Incandescente",
+        "chinese": "炙热",
+        "spanish": "Rojo vivo",
+        "chinese_traditional": "熾熱",
+        "korean": "붉은 작열",
+        "japanese": "レッド・ホット"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-2211d5edf1ccd9bb-ce1e6acfa8fc94c4ba5d87d3f3517d48-v2",
+        "english": "Gain [explosive] and +[bonusdamage] [magicpower].",
+        "french": "Octroie [explosive] et <nobr>+[bonusdamage] [magicpower]</nobr>.",
+        "german": "Erhalte [explosive] und +[bonusdamage] [magicpower].",
+        "russian": "Дается [explosive] и [magicpower] х[bonusdamage].",
+        "portuguese": "Recebe [explosive] e +[bonusdamage] de [magicpower].",
+        "chinese": "获得 [explosive] 和 +[bonusdamage] [magicpower]。",
+        "spanish": "Añade [explosive] y +[bonusdamage] [magicpower].",
+        "chinese_traditional": "獲得[explosive]和+[bonusdamage][magicpower]。",
+        "korean": "[explosive] 및 +[bonusdamage][magicpower]을 획득합니다.",
+        "japanese": "[explosive]と+[bonusdamage] [magicpower]を得る。"
+      },
+      "trait_upgrades": [
+        "@RedHotT1.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "OnlyDamageCard"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true,
+      "bonus_damage": 5,
+      "bonus_heal": 5
+    }
+  ],
+  "traits": [
+    {
+      "id": "RedHotT1.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2
     }
   ]
 }

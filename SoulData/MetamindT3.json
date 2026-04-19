@@ -67,14 +67,77 @@
       "id": "MetamindT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "MetamindT3_Upgrade"
+      "param_upgrade": "@MetamindT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MetamindT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-72b4956bad7c65cc-cf756bee64114584bb7f324c3c95747b-v2",
+        "english": "Metamind",
+        "french": "Méta-esprit",
+        "german": "Metaverstand",
+        "russian": "Метаразум",
+        "portuguese": "Metamente",
+        "chinese": "元思维",
+        "spanish": "Metamente",
+        "chinese_traditional": "元心",
+        "korean": "메타마인드",
+        "japanese": "メタマインド"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-6471393f7cfb1636-cf756bee64114584bb7f324c3c95747b-v2",
+        "english": "When played, add [trigger0.effect0.power] upgrade slot. Spells have a max of 5 upgrade slots.",
+        "french": "Quand cette carte est jouée, ajoute <nobr>[trigger0.effect0.power] emplacement</nobr> d'amélioration. Limite de <nobr>5 emplacements</nobr> par sort.",
+        "german": "Fügt beim Ausspielen [trigger0.effect0.power] Verbesserungs-Platz hinzu. Zauber haben maximal 5 Verbesserungs-Plätze.",
+        "russian": "При розыгрыше добавляется [trigger0.effect0.power] ячейка улучшений. У чар может быть до 5 ячеек улучшений.",
+        "portuguese": "Quando jogada, adiciona [trigger0.effect0.power] espaço de melhoria. Feitiços têm um máximo de 5 espaços de melhoria.",
+        "chinese": "打出后，添加 [trigger0.effect0.power] 个升级栏位。法术最多拥有 5 个升级栏位。",
+        "spanish": "Al jugarla, añade [trigger0.effect0.power] ranura de mejora. Los hechizos tienen un máximo de 5 ranuras de mejora.",
+        "chinese_traditional": "打出時，添加[trigger0.effect0.power]個升級欄位。法術最多有5個升級欄位。",
+        "korean": "사용 시 업그레이드 슬롯 [trigger0.effect0.power]개를 추가합니다. 주문은 최대 5개의 업그레이드 슬롯을 가질 수 있습니다.",
+        "japanese": "プレイすると、アップグレードスロットが[trigger0.effect0.power]追加される。呪文のアップグレードスロットの最大数は5。"
+      },
+      "card_trigger_upgrades": [
+        "@MetamindT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "MetamindT3_Upgrade_Add3Slots",
+      "bonus_upgrade_slot_count": 3
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "MetamindT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-567227092e2e4e5b-cf756bee64114584bb7f324c3c95747b-v2",
+        "english": "Gain [effect0.power] upgrade slots.",
+        "french": "Obtenez [effect0.power] emplacements d'amélioration.",
+        "german": "Erhalte [effect0.power] Upgrade-Slots.",
+        "russian": "Дает ячейки улучшений: [effect0.power].",
+        "portuguese": "Recebe [effect0.power] espaços de melhoria.",
+        "chinese": "获得 [effect0.power] 个升级栏位。",
+        "spanish": "Añade [effect0.power] ranuras de mejora.",
+        "chinese_traditional": "獲得[effect0.power]個升級欄位。",
+        "korean": "업그레이드 슬롯 [effect0.power]개를 획득합니다.",
+        "japanese": "アップグレードスロットを[effect0.power]得る。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@MetamindT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": true
     }
   ],
   "effects": [
     {
       "id": "MetamindT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
       "name": "CardEffectAddUpgradeToCurrentCard",
-      "param_upgrade": "MetamindT3_Upgrade_Add3Slots"
+      "param_upgrade": "@MetamindT3_Upgrade_Add3Slots"
     }
   ]
 }

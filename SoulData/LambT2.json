@@ -67,12 +67,64 @@
       "id": "LambT2.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "LambT2_Upgrade"
+      "param_upgrade": "@LambT2_Upgrade"
     },
     {
       "id": "LambT2.effects1",
       "name": "RelicEffectNull",
       "param_int": 1
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "LambT2_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-da661a9587ed1bd0-d85010d757fd72149ac0c332352ec4d5-v2",
+        "english": "Lamb",
+        "french": "Agneau",
+        "german": "Lamm",
+        "russian": "Агнец",
+        "portuguese": "Cordeiro",
+        "chinese": "羔羊",
+        "spanish": "Corderito",
+        "chinese_traditional": "羔羊",
+        "korean": "어린 양",
+        "japanese": "ラム"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-b066c7a3cf7934b9-d85010d757fd72149ac0c332352ec4d5-v2",
+        "english": "[endless]. [extinguish]: Draw +[charactertrigger0.effect0.power] next turn and apply -[charactertrigger0.effect0.upgrade.costreduction][ember].",
+        "french": "[endless]. <nobr>[extinguish] :</nobr> piochez +[charactertrigger0.effect0.power] au prochain tour et appliquez -[charactertrigger0.effect0.upgrade.costreduction][ember].",
+        "german": "[endless]. [extinguish]: Ziehe im nächsten Zug +[charactertrigger0.effect0.power] Karte(n) und wende -[charactertrigger0.effect0.upgrade.costreduction][ember] an.",
+        "russian": "[endless]. [extinguish]: В следующий ход вытяните +[charactertrigger0.effect0.power] карту. У нее будет -[charactertrigger0.effect0.upgrade.costreduction][ember].",
+        "portuguese": "[endless]. [extinguish]: compra +[charactertrigger0.effect0.power] no próximo turno e aplica -[charactertrigger0.effect0.upgrade.costreduction][ember].",
+        "chinese": "[endless]。[extinguish]：下回合抽 +[charactertrigger0.effect0.power] 张牌，并施加 -[charactertrigger0.effect0.upgrade.costreduction][ember]。",
+        "spanish": "[endless]. [extinguish]: Roba +[charactertrigger0.effect0.power] en el próximo turno y añade -[charactertrigger0.effect0.upgrade.costreduction][ember].",
+        "chinese_traditional": "[endless]。[extinguish]：下回合抽+[charactertrigger0.effect0.power]張牌並對其施加-[charactertrigger0.effect0.upgrade.costreduction][ember]。",
+        "korean": "[endless]. [extinguish]: 다음 턴에 카드를 추가로 +[charactertrigger0.effect0.power]장 뽑고 -[charactertrigger0.effect0.upgrade.costreduction][ember]을 적용합니다.",
+        "japanese": "[endless]。[extinguish]：次のターン、ドロー+[charactertrigger0.effect0.power]。-[charactertrigger0.effect0.upgrade.costreduction][ember]を付与する。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "endless",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@LambT2.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "ReduceCostLamb",
+      "filters": [
+        "ExcludeChampions",
+        "ExcludeZeroCost"
+      ],
+      "hide_icon_on_card": true,
+      "cost_reduction": 1,
+      "x_cost_reduction": 1
     }
   ],
   "character_triggers": [
@@ -101,7 +153,7 @@
     {
       "id": "LambT2.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectDrawAdditionalNextTurn",
-      "param_upgrade": "ReduceCostLamb",
+      "param_upgrade": "@ReduceCostLamb",
       "param_int": 1
     }
   ]

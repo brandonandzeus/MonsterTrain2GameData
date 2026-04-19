@@ -67,14 +67,106 @@
       "id": "WizlordT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "WizlordT3_Upgrade"
+      "param_upgrade": "@WizlordT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "WizlordT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-bad62bf5418e2413-cf12e44e01ea0744381ed583b6098ea6-v2",
+        "english": "Wizlord III",
+        "french": "Sorcier <nobr>suprême III</nobr>",
+        "german": "Genialer Lord III",
+        "russian": "Маг-лорд III",
+        "portuguese": "Senhor da Magia III",
+        "chinese": "巫师尊主 III",
+        "spanish": "Poderío mágico III",
+        "chinese_traditional": "巫師領主III",
+        "korean": "마법 군주 III",
+        "japanese": "ウィズロードIII"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-7f17c8763bc08124-cf12e44e01ea0744381ed583b6098ea6-v2",
+        "english": "When played, apply +[trigger0.effect0.upgrade.bonusdamage] [magicpower] to spells in hand permanently. [consume]: Double the effect.",
+        "french": "Confère définitivement +[trigger0.effect0.upgrade.bonusdamage] [magicpower] aux sorts en main. <nobr>[consume] :</nobr> double l'effet.",
+        "german": "Erhalte permanent +[trigger0.effect0.upgrade.bonusdamage] [magicpower] auf Zauber in der Hand, wenn diese Karte ausgespielt wird. [consume]: Effekt wird verdoppelt.",
+        "russian": "При розыгрыше чарам в руке навсегда добавляется [magicpower] х[trigger0.effect0.upgrade.bonusdamage]. [consume] удваивает эффект.",
+        "portuguese": "Quando jogada, concede +[trigger0.effect0.upgrade.bonusdamage] de [magicpower] aos feitiços em sua mão permanentemente. [consume]: dobra o efeito.",
+        "chinese": "打出后，使手牌中的所有法术永久获得 +[trigger0.effect0.upgrade.bonusdamage] [magicpower]。[consume]：使效果加倍。",
+        "spanish": "Al jugarla, añade +[trigger0.effect0.upgrade.bonusdamage] [magicpower] a los hechizos de tu mano permanentemente. [consume]: Duplica el efecto.",
+        "chinese_traditional": "打出時，永久對手牌中的法術施加+[trigger0.effect0.upgrade.bonusdamage][magicpower]。[consume]：效果加倍。",
+        "korean": "카드를 사용할 때, 패에 있는 주문 카드들에 영구적으로 +[trigger0.effect0.upgrade.bonusdamage][magicpower]이 적용됩니다. [consume]: 효과를 2배로 적용합니다.",
+        "japanese": "プレイ時、手札の呪文に+[trigger0.effect0.upgrade.bonusdamage] [magicpower]を永続的に付与する。[consume]：効果が2倍になる。"
+      },
+      "card_trigger_upgrades": [
+        "@WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+        "@WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades1"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "WizlordT3_Upgrade_AddSpellPower",
+      "filters": [
+        "MagicPowerSpells",
+        "ExcludedSpellsFromMagicPower"
+      ],
+      "bonus_damage": 3,
+      "bonus_heal": 3
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-58b9a9f9c2bdc758-cf12e44e01ea0744381ed583b6098ea6-v2",
+        "english": "Apply +[effect0.upgrade.bonusdamage] [magicpower] to spells in hand permanently.",
+        "french": "Confère +[effect0.upgrade.bonusdamage][magicpower] aux sorts en main définitivement.",
+        "german": "Bewirkt permanent +[effect0.upgrade.bonusdamage] [magicpower] auf Zauber auf deiner Hand.",
+        "russian": "Чарам в руке навсегда добавляется [magicpower] х[effect0.upgrade.bonusdamage].",
+        "portuguese": "Concede +[effect0.upgrade.bonusdamage] [magicpower] aos feitiços na mão permanentemente.",
+        "chinese": "使手牌中的所有法术永久获得 +[effect0.upgrade.bonusdamage] [magicpower]。",
+        "spanish": "Añade +[effect0.upgrade.bonusdamage] [magicpower] a los hechizos de la mano permanentemente.",
+        "chinese_traditional": "永久對手牌中的法術施加+[effect0.upgrade.bonusdamage][magicpower]。",
+        "korean": "패에 있는 주문 카드에 영구적으로 +[effect0.upgrade.bonusdamage][magicpower]이 적용됩니다.",
+        "japanese": "手札の呪文に+[effect0.upgrade.bonusdamage] [magicpower]を永続的に付与する。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_tooltip_suppressed": true,
+      "trigger_keyword_card_text_suppressed": false
+    },
+    {
+      "id": "WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades1",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-4b9dff2617f34899-cf12e44e01ea0744381ed583b6098ea6-v2",
+        "english": "[consume]: Double the effect.",
+        "french": "<nobr>[consume] :</nobr> double l'effet.",
+        "german": "[consume]: Effekt verdoppeln.",
+        "russian": "[consume]: удваивает эффект.",
+        "portuguese": "[consume]: dobra o efeito.",
+        "chinese": "[consume]：使效果加倍。",
+        "spanish": "[consume]: Duplica el efecto.",
+        "chinese_traditional": "[consume]：效果加倍。",
+        "korean": "[consume]: 효과를 2배로 적용합니다.",
+        "japanese": "[consume]：効果を2倍にする。"
+      },
+      "trigger": "on_exhausted",
+      "effects": [
+        "@WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_tooltip_suppressed": true,
+      "trigger_keyword_card_text_suppressed": false
     }
   ],
   "effects": [
     {
       "id": "WizlordT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
       "name": "CardEffectAddPermanentCardUpgradeToCardsInHand",
-      "param_upgrade": "WizlordT3_Upgrade_AddSpellPower"
+      "param_upgrade": "@WizlordT3_Upgrade_AddSpellPower"
     }
   ]
 }

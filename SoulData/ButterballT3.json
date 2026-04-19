@@ -65,7 +65,50 @@
       "id": "ButterballT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "ButterballT3_Upgrade"
+      "param_upgrade": "@ButterballT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ButterballT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-a29199c94eb4cfa6-19eb578039bba314a8123ba0dec39afb-v2",
+        "english": "Butterball",
+        "french": "Noix de beurre",
+        "german": "Butterball",
+        "russian": "Пухляш",
+        "portuguese": "Delicioso",
+        "chinese": "黄油球",
+        "spanish": "Bola de sebo",
+        "chinese_traditional": "奶油球",
+        "korean": "버터볼",
+        "japanese": "バターボール"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-75f180340f54fddf-19eb578039bba314a8123ba0dec39afb-v2",
+        "english": "+[bonushp][health]. <b>Buffet</b> [status0.power]. This unit can be [eaten] to gain its [attack] and [health].",
+        "french": "+[bonushp][health]. <b>Buffet</b> [status0.power]. Cette unité peut être mangée pour gagner son [attack] et ses [health].",
+        "german": "+[bonushp][health]. [status0.power] <b>Büfett</b>. Diese Einheit kann [eaten] werden, wenn du ihren [attack] und ihre [health] erhalten willst.",
+        "russian": "+[bonushp][health]. <b>Закуска</b> [status0.power]. Примените на этом бойце [eaten] и получите его [attack] и [health].",
+        "portuguese": "+[bonushp][health]. <b>Bufê</b> [status0.power]. Esta unidade pode ser <b>Devorada</b> para ganhar seu [attack] e [health].",
+        "chinese": "+[bonushp][health]。<b>自助餐</b> [status0.power]。该单位可以 [eaten]，使吞食者获得该单位 [attack] 和 [health]。",
+        "spanish": "+[bonushp][health]. <b>Bufé</b> [status0.power]. Esta unidad se puede consumir como [eaten] para añadir su [attack] y [health].",
+        "chinese_traditional": "+[bonushp][health]。<b>自助餐</b>[status0.power]。此單位可以[eaten]以獲得其[attack]和[health]。",
+        "korean": "+[bonushp][health]. <b>뷔페</b> [status0.power]. 이 유닛을 [eaten]하여 해당 유닛의 [attack]과 [health]을 얻을 수 있습니다.",
+        "japanese": "+[bonushp][health]。<b>ビュッフェ</b>[status0.power]。このユニットは、その[attack]と[health]を得るために[eaten]にすることができる。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "eatmany",
+          "count": 3
+        }
+      ],
+      "trigger_upgrades": [
+        "@ButterballT3.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true,
+      "bonus_hp": 25
     }
   ],
   "character_triggers": [

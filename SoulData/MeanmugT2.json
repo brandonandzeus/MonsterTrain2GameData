@@ -11,7 +11,7 @@
             "unlock_data": {
               "descriptions": {
                 "key": "SoulData_descriptionKey-5717516a7f4dad42-58745fdb4e7330d43a8801fa2546d115-v2",
-                "english": "Defeat Thaddius to upgrade.",
+                "english": "Defeat Thaddeus to upgrade.",
                 "french": "Battez Thaddeus pour améliorer.",
                 "german": "Besiege für eine Verbesserung Thaddäus.",
                 "russian": "Чтобы улучшить, убейте Тадеуса.",
@@ -66,7 +66,61 @@
       "id": "MeanmugT2.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "MeanmugT2_Upgrade"
+      "param_upgrade": "@MeanmugT2_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MeanmugT2_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-e0abb914e48d8aac-136aaf9e27826384aa7fb98524577ac7-v2",
+        "english": "Meanmug",
+        "french": "Vileface",
+        "german": "Fiestrottel",
+        "russian": "Злыдень",
+        "portuguese": "Cara Feia",
+        "chinese": "阿贪",
+        "spanish": "Malacara",
+        "chinese_traditional": "惡面",
+        "korean": "험상꾼",
+        "japanese": "ミーンマグ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-51c6a66874f720a7-136aaf9e27826384aa7fb98524577ac7-v2",
+        "english": "Gain [avarice] [status0.power]. [celebrate]: Gain [avarice] [charactertrigger0.effect0.power] permanently.",
+        "french": "Octroie [avarice] [status0.power]. <nobr>[celebrate] :</nobr> octroie <nobr>[avarice] [charactertrigger0.effect0.power]</nobr> définitivement.",
+        "german": "Erhalte [avarice] [status0.power]. [celebrate]: Erhalte permanent [avarice] [charactertrigger0.effect0.power].",
+        "russian": "Дается [avarice] х[status0.power]. [celebrate]: дается [avarice] х[charactertrigger0.effect0.power] навсегда.",
+        "portuguese": "Recebe [avarice] [status0.power]. [celebrate]: recebe [avarice] [charactertrigger0.effect0.power] permanentemente.",
+        "chinese": "获得 [avarice] [status0.power]。[celebrate]：永久获得 [avarice] [charactertrigger0.effect0.power]。",
+        "spanish": "Añade [avarice] [status0.power] permanentemente. [celebrate]: Añade [avarice] [charactertrigger0.effect0.power] permanentemente.",
+        "chinese_traditional": "獲得[avarice][status0.power]。[celebrate]：永久獲得[avarice][charactertrigger0.effect0.power]。",
+        "korean": "[avarice] [status0.power] 효과를 획득합니다. [celebrate]: 영구적으로 [avarice] [charactertrigger0.effect0.power] 효과를 획득합니다.",
+        "japanese": "[avarice] [status0.power]を得る。[celebrate]：永続的に[avarice] [charactertrigger0.effect0.power]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 9
+        }
+      ],
+      "trigger_upgrades": [
+        "@MeanmugT2.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "MeanmugT2_Upgrade_BonusAvarice",
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 4,
+          "from_permanent_upgrade": true
+        }
+      ],
+      "use_upgrade_highlight_tags": false,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "character_triggers": [
@@ -96,7 +150,7 @@
       "id": "MeanmugT2.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "MeanmugT2_Upgrade_BonusAvarice",
+      "param_upgrade": "@MeanmugT2_Upgrade_BonusAvarice",
       "param_int_3": 2,
       "param_bool": true
     }

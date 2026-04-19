@@ -66,7 +66,76 @@
       "id": "GorgonT1.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "GorgonT1_Upgrade"
+      "param_upgrade": "@GorgonT1_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GorgonT1_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-0b146d9c824023af-728908bbb803e054596c2cee6ba09855-v2",
+        "english": "Gorgon",
+        "french": "Gorgone",
+        "german": "Gorgone",
+        "russian": "Горгона",
+        "portuguese": "Górgona",
+        "chinese": "戈耳工",
+        "spanish": "Gorgona",
+        "chinese_traditional": "蛇髮女妖",
+        "korean": "고르곤",
+        "japanese": "ゴルゴン"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-568ecd5736868986-728908bbb803e054596c2cee6ba09855-v2",
+        "english": "[slay]: +[trigger0.effect0.power][capacity]. Friendly units gain +[trigger0.effect1.upgrade.bonusdamage][attack] and +[trigger0.effect1.upgrade.bonushp][health].",
+        "french": "<nobr>[slay] :</nobr> +[trigger0.effect0.power][capacity]. Les alliés gagnent +[trigger0.effect1.upgrade.bonusdamage][attack] et +[trigger0.effect1.upgrade.bonushp][health].",
+        "german": "[slay]: +[trigger0.effect0.power][capacity]. Verbündete Einheiten erhalten +[trigger0.effect1.upgrade.bonusdamage][attack] und +[trigger0.effect1.upgrade.bonushp][health].",
+        "russian": "[slay]: +[trigger0.effect0.power][capacity]. Дает союзникам +[trigger0.effect1.upgrade.bonusdamage][attack] и +[trigger0.effect1.upgrade.bonushp][health].",
+        "portuguese": "[slay]: +[trigger0.effect0.power][capacity]. As unidades aliadas recebem +[trigger0.effect1.upgrade.bonusdamage][attack] e +[trigger0.effect1.upgrade.bonushp][health].",
+        "chinese": "[slay]：+[trigger0.effect0.power][capacity]。友方单位获得 +[trigger0.effect1.upgrade.bonusdamage][attack] 和 +[trigger0.effect1.upgrade.bonushp][health]。",
+        "spanish": "[slay]: +[trigger0.effect0.power][capacity]. Las unidades aliadas añaden +[trigger0.effect1.upgrade.bonusdamage][attack] y +[trigger0.effect1.upgrade.bonushp][health].",
+        "chinese_traditional": "[slay]：+[trigger0.effect0.power][capacity]。友方單位獲得+[trigger0.effect1.upgrade.bonusdamage][attack]和+[trigger0.effect1.upgrade.bonushp][health]。",
+        "korean": " [slay]: +[trigger0.effect0.power][capacity]. 아군 유닛들이 +[trigger0.effect1.upgrade.bonusdamage][attack] 및 +[trigger0.effect1.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "[slay]：+[trigger0.effect0.power][capacity]。味方ユニットが+[trigger0.effect1.upgrade.bonusdamage][attack]と+[trigger0.effect1.upgrade.bonushp][health]を得る。"
+      },
+      "card_trigger_upgrades": [
+        "@GorgonT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "MagicPowerKillSacrificeSpells"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "Gorgon_Plus2Attack4Health",
+      "bonus_damage": 2,
+      "bonus_hp": 4,
+      "magic_power_trait_scaling_only": true
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GorgonT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-0d28c3bb7bce73b5-728908bbb803e054596c2cee6ba09855-v2",
+        "english": "+[effect0.power][capacity]. Friendly units gain +[effect1.upgrade.bonusdamage][attack] and +[effect1.upgrade.bonushp][health] ",
+        "french": "+[effect0.power][capacity]. Les alliés gagnent +[effect1.upgrade.bonusdamage][attack] et +[effect1.upgrade.bonushp][health]. ",
+        "german": "+[effect0.power][capacity]. Verbündete Einheiten erhalten +[effect1.upgrade.bonusdamage][attack] und +[effect1.upgrade.bonushp][health]. ",
+        "russian": "+[effect0.power][capacity]. Дает союзникам +[effect1.upgrade.bonusdamage][attack] и +[effect1.upgrade.bonushp][health]. ",
+        "portuguese": "+[effect0.power][capacity]. As unidades aliadas recebem +[effect1.upgrade.bonusdamage][attack] e +[effect1.upgrade.bonushp][health]. ",
+        "chinese": "+[effect0.power][capacity]。友方单位获得 +[effect1.upgrade.bonusdamage][attack] 和 +[effect1.upgrade.bonushp][health]。 ",
+        "spanish": "+[effect0.power][capacity]. Las unidades aliadas añaden +[effect1.upgrade.bonusdamage][attack] y +[effect1.upgrade.bonushp][health]. ",
+        "chinese_traditional": "+[effect0.power][capacity]。友方單位獲得+[effect1.upgrade.bonusdamage][attack]和+[effect1.upgrade.bonushp][health] ",
+        "korean": " +[effect0.power][capacity]. 아군 유닛들이 +[effect1.upgrade.bonusdamage][attack] 및 +[effect1.upgrade.bonushp][health]을 획득합니다. ",
+        "japanese": "+[effect0.power][capacity]。味方ユニットが+[effect1.upgrade.bonusdamage][attack]と+[effect1.upgrade.bonushp][health]を得る。 "
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@GorgonT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
+        "@GorgonT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects1"
+      ],
+      "trigger_keyword_card_text_suppressed": true
     }
   ],
   "effects": [
@@ -80,7 +149,7 @@
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "room",
       "target_team": "monsters",
-      "param_upgrade": "Gorgon_Plus2Attack4Health"
+      "param_upgrade": "@Gorgon_Plus2Attack4Health"
     }
   ]
 }

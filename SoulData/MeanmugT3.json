@@ -11,7 +11,7 @@
             "unlock_data": {
               "descriptions": {
                 "key": "SoulData_descriptionKey-fd59f37866164b7b-f2478b86448bed848a6e10e6e2bd1722-v2",
-                "english": "Defeat Thaddius to upgrade.",
+                "english": "Defeat Thaddeus to upgrade.",
                 "french": "Battez Thaddeus pour améliorer.",
                 "german": "Besiege für eine Verbesserung Thaddäus.",
                 "russian": "Чтобы улучшить, убейте Тадеуса.",
@@ -67,7 +67,7 @@
       "id": "MeanmugT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "MeanmugT3_Upgrade"
+      "param_upgrade": "@MeanmugT3_Upgrade"
     },
     {
       "id": "MeanmugT3.effects1",
@@ -78,6 +78,65 @@
       "id": "MeanmugT3.effects2",
       "name": "RelicEffectNull",
       "param_int": 10
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MeanmugT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-d96f1edb224b5087-ba6858843cd2cdb4c87ec553193bb3b5-v2",
+        "english": "Meanmug",
+        "french": "Vileface",
+        "german": "Fiestrottel",
+        "russian": "Злыдень",
+        "portuguese": "Cara Feia",
+        "chinese": "阿贪",
+        "spanish": "Malacara",
+        "chinese_traditional": "惡面",
+        "korean": "험상꾼",
+        "japanese": "ミーンマグ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-771492d838452089-ba6858843cd2cdb4c87ec553193bb3b5-v2",
+        "english": "Gain [avarice] [status0.power]. [celebrate]: Gain [avarice] [charactertrigger0.effect0.power] permanently. For every [charactertrigger1.effect0.power][coin] spent, gain +[charactertrigger1.effect0.upgrade.bonusdamage][attack].",
+        "french": "Octroie [avarice] [status0.power]. <nobr>[celebrate] :</nobr> octroie <nobr>[avarice] [charactertrigger0.effect0.power]</nobr> définitivement. Par tranche de [charactertrigger1.effect0.power][coin] dépensées, octroie +[charactertrigger1.effect0.upgrade.bonusdamage][attack].",
+        "german": "Erhalte [avarice] [status0.power]. [celebrate]: Erhalte permanent [avarice] [charactertrigger0.effect0.power]. Erhalte +[charactertrigger1.effect0.upgrade.bonusdamage][attack] pro investierter [charactertrigger1.effect0.power][coin].",
+        "russian": "Дается [avarice] х[status0.power]. [celebrate]: навсегда дается [avarice] х[charactertrigger0.effect0.power]. За каждые потраченные [charactertrigger1.effect0.power][coin] дается +[charactertrigger1.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Recebe [avarice] [status0.power]. [celebrate]: recebe [avarice] [charactertrigger0.effect0.power] permanentemente. Para cada [charactertrigger1.effect0.power][coin] gasta, recebe +[charactertrigger1.effect0.upgrade.bonusdamage][attack].",
+        "chinese": "获得 [avarice] [status0.power]。[celebrate]：永久获得 [avarice] [charactertrigger0.effect0.power]。每花费 [charactertrigger1.effect0.power][coin]，获得 +[charactertrigger1.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Añade [avarice] [status0.power]. [celebrate]: Añade [avarice] [charactertrigger0.effect0.power] permanentemente. Por cada [charactertrigger1.effect0.power][coin] consumida, añade +[charactertrigger1.effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "獲得[avarice][status0.power]。[celebrate]：永久獲得[avarice][charactertrigger0.effect0.power]。每花費[charactertrigger1.effect0.power][coin]，獲得+[charactertrigger1.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[avarice] [status0.power] 효과를 획득합니다. [celebrate]: [avarice] [charactertrigger0.effect0.power] 효과를 영구적으로 획득합니다. [charactertrigger1.effect0.power][coin]을 소비할 때마다 +[charactertrigger1.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "[avarice] [status0.power]を得る。[celebrate]：[avarice] [charactertrigger0.effect0.power]を永続的に得る。消費した[coin][charactertrigger1.effect0.power]枚につき、+[charactertrigger1.effect0.upgrade.bonusdamage][attack]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 9
+        }
+      ],
+      "trigger_upgrades": [
+        "@MeanmugT3.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@MeanmugT3.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "MeanmugT3_Upgrade_BonusAvarice",
+      "status_effect_upgrades": [
+        {
+          "status": "avarice",
+          "count": 4,
+          "from_permanent_upgrade": true
+        }
+      ],
+      "use_upgrade_highlight_tags": false,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
+    },
+    {
+      "id": "MeanmugT3_Upgrade_BonusAttack",
+      "bonus_damage": 10
     }
   ],
   "character_triggers": [
@@ -128,7 +187,7 @@
       "id": "MeanmugT3.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "MeanmugT3_Upgrade_BonusAvarice",
+      "param_upgrade": "@MeanmugT3_Upgrade_BonusAvarice",
       "param_int_3": 2,
       "param_bool": true
     },
@@ -136,7 +195,7 @@
       "id": "MeanmugT3.effects0.paramCardUpgradeData.triggerUpgrades1.effects0",
       "name": "CardEffectAddCardUpgradeToUnitPerGoldSpent",
       "target_mode": "self",
-      "param_upgrade": "MeanmugT3_Upgrade_BonusAttack",
+      "param_upgrade": "@MeanmugT3_Upgrade_BonusAttack",
       "param_int": 100
     }
   ]

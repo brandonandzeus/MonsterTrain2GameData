@@ -65,8 +65,26 @@
     {
       "id": "ShowtimeT2.effects0",
       "name": "RelicEffectShowtime",
-      "param_upgrade": "ShowtimeT2_Room",
+      "param_upgrade": "@ShowtimeT2_Room",
       "param_int": 1
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ShowtimeT2_Room",
+      "room_modifier_upgrades": [
+        "@ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades0",
+        "@ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades1"
+      ],
+      "hide_icon_on_card": true
+    },
+    {
+      "id": "ShowtimeT2_UnitBuffPerTurn",
+      "hide_icon_on_card": true,
+      "bonus_damage": 10,
+      "bonus_hp": 30,
+      "bonus_size": 1,
+      "restrict_size_to_room_capacity": true
     }
   ],
   "effects": [
@@ -75,7 +93,7 @@
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "front_in_room",
       "target_team": "monsters",
-      "param_upgrade": "ShowtimeT2_UnitBuffPerTurn",
+      "param_upgrade": "@ShowtimeT2_UnitBuffPerTurn",
       "applied_vfx": "@ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades1.paramCardEffects0.appliedVFX"
     }
   ],
@@ -83,6 +101,21 @@
     {
       "id": "ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades1.paramCardEffects0.appliedVFX",
       "vfx_prefab_left": "FX_Showtime"
+    }
+  ],
+  "room_modifiers": [
+    {
+      "id": "ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades0",
+      "name": "RoomStateCapacityModifier",
+      "param_int": 3
+    },
+    {
+      "id": "ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades1",
+      "name": "RoomStateAddEffectPostCombatModifier",
+      "param_effects": [
+        "@ShowtimeT2.effects0.paramCardUpgradeData.roomModifierUpgrades1.paramCardEffects0"
+      ],
+      "disallow_in_deployment": true
     }
   ]
 }

@@ -66,7 +66,57 @@
       "id": "SavantaT1.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "SavantaT1_Upgrade"
+      "param_upgrade": "@SavantaT1_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SavantaT1_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-d37fc10bc4af3d41-6d5652efd92440249a9dde52dde80aa2-v2",
+        "english": "Savanta",
+        "french": "Savanta",
+        "german": "Savanta",
+        "russian": "Саванта",
+        "portuguese": "Savanta",
+        "chinese": "萨凡塔",
+        "spanish": "Prodigio",
+        "chinese_traditional": "薩凡塔",
+        "korean": "사반타",
+        "japanese": "サヴァンタ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-9cd50478c994ff1e-6d5652efd92440249a9dde52dde80aa2-v2",
+        "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost.",
+        "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base.",
+        "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten.",
+        "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное обычной стоимости.",
+        "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base.",
+        "chinese": "此法术现在免费。受到等同于其基础费用的 [pyrehealth] 伤害。",
+        "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base.",
+        "chinese_traditional": "此法術現在免費。受到等同於基礎費用的[pyrehealth]傷害。",
+        "korean": "이 주문은 이제 무료입니다. 기본 비용만큼 [pyrehealth]의 피해를 받습니다.",
+        "japanese": "この呪文のコストが無料になる。基本コストに等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
+      },
+      "card_trigger_upgrades": [
+        "@SavantaT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeUnplayable"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "SavantaT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@SavantaT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
     }
   ],
   "effects": [

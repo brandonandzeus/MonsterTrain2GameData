@@ -66,7 +66,53 @@
       "id": "HeartbreakerT2.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "HeartbreakerT2_Upgrade"
+      "param_upgrade": "@HeartbreakerT2_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "HeartbreakerT2_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-47f88d1fb29424ac-e2217844a8fbfb9409e2c57ad0f47b79-v2",
+        "english": "Heartbreaker",
+        "french": "Brise-cœur",
+        "german": "Herzensbrecher",
+        "russian": "Сердцеед",
+        "portuguese": "Parte-Corações",
+        "chinese": "碎心者",
+        "spanish": "Rompecorazones",
+        "chinese_traditional": "心碎者",
+        "korean": "하트브레이커",
+        "japanese": "ハートブレイカー"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-d5e291b12104aca7-e2217844a8fbfb9409e2c57ad0f47b79-v2",
+        "english": "Gain [fragile] and [undying] [status1.power]. <b>Extinguish</b>: Apply [fragile] to the non-boss unit that killed it.",
+        "french": "Octroie [fragile] et [undying] [status1.power]. <nobr><b>Extinction</b> :</nobr> inflige [fragile] à l'unité qui l'élimine (hors boss).",
+        "german": "Erhalte [fragile] und [undying] [status1.power]. <b>Erlöschen</b>: Wende [fragile] auf die Nicht-Boss-Einheit an, die den tödlichen Treffer verursacht hat.",
+        "russian": "Дается [fragile] и [undying] х[status1.power]. <b>Угасание</b>: накладывает [fragile] на своего убийцу не-босса.",
+        "portuguese": "Recebe [fragile] e [undying] [status1.power]. <b>Extinguir</b>: aplica [fragile] à unidade que não seja chefão que o matou.",
+        "chinese": "获得 [fragile] 和 [undying] [status1.power]。<b>亡语</b>：对将其击杀的非首领单位施加 [fragile]。",
+        "spanish": "Añade [fragile] y [undying] [status1.power]. <b>Destrucción</b>: Añade [fragile] a la unidad no jefe que lo mate.",
+        "chinese_traditional": "獲得[fragile]和[undying][status1.power]。<b>亡語</b>：對殺死它的非首領單位施加[fragile]。",
+        "korean": "[fragile] 및 [undying] [status1.power] 효과를 획득합니다. <b>소멸</b>: 이를 처치한 보스 외 유닛에게 [fragile]을 적용합니다.",
+        "japanese": "[fragile]と[undying] [status1.power]を得る。<b>消滅</b>：自身を倒した非ボスユニットに[fragile]を付与する。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "fragile",
+          "count": 1
+        },
+        {
+          "status": "undying",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@HeartbreakerT2.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
     }
   ],
   "character_triggers": [

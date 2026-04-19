@@ -66,7 +66,57 @@
       "id": "SavantaT2.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "SavantaT2_Upgrade"
+      "param_upgrade": "@SavantaT2_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SavantaT2_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-be9ff4b942fdad1b-6bad1e82914f5554b8fdc221cb7ccf36-v2",
+        "english": "Savanta",
+        "french": "Savanta",
+        "german": "Savanta",
+        "russian": "Саванта",
+        "portuguese": "Savanta",
+        "chinese": "萨凡塔",
+        "spanish": "Prodigio",
+        "chinese_traditional": "薩凡塔",
+        "korean": "사반타",
+        "japanese": "サヴァンタ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-b8d859d8e544f4b1-6bad1e82914f5554b8fdc221cb7ccf36-v2",
+        "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost -[trigger0.effect0.power][ember].",
+        "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base -[trigger0.effect0.power][ember].",
+        "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten -[trigger0.effect0.power][ember].",
+        "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное стоимости -[trigger0.effect0.power][ember].",
+        "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base -[trigger0.effect0.power][ember].",
+        "chinese": "此法术现在免费。受到等同于其基础费用的 -[trigger0.effect0.power][ember] 的 [pyrehealth] 伤害。",
+        "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base -[trigger0.effect0.power][ember].",
+        "chinese_traditional": "此法術現在免費。受到等同於基礎費用-[trigger0.effect0.power][ember]的[pyrehealth]傷害。",
+        "korean": "이 주문은 이제 무료입니다. 기본 비용에서 -[trigger0.effect0.power][ember]만큼의 [pyrehealth] 피해를 받습니다.",
+        "japanese": "この呪文のコストが無料になる。基本コスト-[trigger0.effect0.power][ember]に等しい[pyrehealth]ダメージを受ける。"
+      },
+      "card_trigger_upgrades": [
+        "@SavantaT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeUnplayable"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "SavantaT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@SavantaT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
     }
   ],
   "effects": [

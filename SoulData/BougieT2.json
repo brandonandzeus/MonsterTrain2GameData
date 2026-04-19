@@ -66,7 +66,55 @@
       "id": "BougieT2.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "BougieT2_Upgrade"
+      "param_upgrade": "@BougieT2_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "BougieT2_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-0e27069f86b0acfd-92b562863abea4e448aa767a19b5a386-v2",
+        "english": "Bougie",
+        "french": "Bougie",
+        "german": "Bougie",
+        "russian": "Франт",
+        "portuguese": "Sofisticado",
+        "chinese": "布吉",
+        "spanish": "Capitalista",
+        "chinese_traditional": "時髦",
+        "korean": "사치광",
+        "japanese": "ブジー"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-a47e6741961a6857-92b562863abea4e448aa767a19b5a386-v2",
+        "english": "Gain [attuned] and +[bonusdamage] [magicpower].",
+        "french": "Octroie [attuned]. +[bonusdamage] [magicpower].",
+        "german": "Erhalte [attuned]. +[bonusdamage] [magicpower].",
+        "russian": "Дается [attuned]. +[magicpower] х[bonusdamage].",
+        "portuguese": "Recebe [attuned]. +[bonusdamage] de [magicpower].",
+        "chinese": "获得 [attuned]。+[bonusdamage] [magicpower]。",
+        "spanish": "Añade [attuned]. +[bonusdamage] [magicpower].",
+        "chinese_traditional": "獲得[attuned]。+[bonusdamage][magicpower]。",
+        "korean": "[attuned]을 획득합니다. +[bonusdamage] [magicpower].",
+        "japanese": "[attuned]を得る。+[bonusdamage] [magicpower]。"
+      },
+      "trait_upgrades": [
+        "@BougieT2.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "filters": [
+        "MagicPowerSpells",
+        "ExcludedSpellsFromMagicPower"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true,
+      "bonus_damage": 20,
+      "bonus_heal": 20
+    }
+  ],
+  "traits": [
+    {
+      "id": "BougieT2.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitStrongerMagicPower"
     }
   ]
 }

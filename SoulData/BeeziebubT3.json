@@ -65,7 +65,73 @@
       "id": "BeeziebubT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "BeeziebubT3_Upgrade"
+      "param_upgrade": "@BeeziebubT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "BeeziebubT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-403c465f2f114dc0-944e96dde414362469892cf8cfa20289-v2",
+        "english": "Beeziebub",
+        "french": "Bellezellebulle",
+        "german": "Beeziebub",
+        "russian": "Вельзезуб",
+        "portuguese": "Belzebrô",
+        "chinese": "比西布",
+        "spanish": "Beeziebub",
+        "chinese_traditional": "惡魔王",
+        "korean": "벌지붑",
+        "japanese": "ビージーバブ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-7dbd41a3c4f658eb-944e96dde414362469892cf8cfa20289-v2",
+        "english": "[annihilate] this card. Deal damage to your Pyre equal to 10% of its current health. Draw [trait1.power] cards apply -[trait1.upgrade.costreductionabs][ember].",
+        "french": "<b>Purgez</b> cette carte. Infligez à votre Brasier des dégâts valant <nobr>10 %</nobr> de ses PV actuels. Piochez <nobr>[trait1.power] cartes</nobr> avec -[trait1.upgrade.costreductionabs][ember].",
+        "german": "<b>Verbanne</b> diese Karte. Füge der Höllenglut Schaden in der Höhe von 10 % ihrer aktuellen Gesundheit zu. Ziehe [trait1.power] Karten und wende [trait1.upgrade.costreductionabs][ember] an.",
+        "russian": "[annihilate] этой карты. Наносит Пеклу урон, равный 10% от текущего здоровья. Вытягивает [trait1.power] шт. карты и тратит -[trait1.upgrade.costreductionabs][ember].",
+        "portuguese": "<b>Expurga</b> esta carta. Causa dano à sua Pira igual a 10% da vida atual dela. Compra [trait1.power] cartas e aplica -[trait1.upgrade.costreductionabs][ember].",
+        "chinese": "[annihilate] 此卡牌。对你的薪火造成其当前生命值 10% 的伤害。抽 [trait1.power] 张牌并施加 -[trait1.upgrade.costreductionabs][ember]。",
+        "spanish": "[annihilate] esta carta. Inflige tanto daño a tu Pira como el 10 % de su salud actual. Roba [trait1.power] cartas y añade -[trait1.upgrade.costreductionabs][ember].",
+        "chinese_traditional": "[annihilate]此卡。對你的薪火造成等同於其目前生命值10%的傷害。抽[trait1.power]張牌並對其施加-[trait1.upgrade.costreductionabs][ember]。",
+        "korean": "이 카드를 [annihilate]합니다. 현재 체력의 10%만큼 화로에 피해를 줍니다. 카드를 [trait1.power]장 뽑고, 그 카드들의 비용에 -[trait1.upgrade.costreductionabs][ember]이 적용됩니다.",
+        "japanese": "このカードを[annihilate]する。自軍の炉に現在の体力の10%分のダメージを与える。カードを[trait1.power]枚ドローし、-[trait1.upgrade.costreductionabs][ember]を付与する。"
+      },
+      "trait_upgrades": [
+        "@BeeziebubT3.effects0.paramCardUpgradeData.traitDataUpgrades0",
+        "@BeeziebubT3.effects0.paramCardUpgradeData.traitDataUpgrades1"
+      ],
+      "card_trigger_upgrades": [
+        "@BeeziebubT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "BeeziebubT3_UpgradeDraw",
+      "cost_reduction": 2
+    }
+  ],
+  "traits": [
+    {
+      "id": "BeeziebubT3.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitSelfPurge"
+    },
+    {
+      "id": "BeeziebubT3.effects0.paramCardUpgradeData.traitDataUpgrades1",
+      "name": "CardTraitDrawOnPlay",
+      "param_upgrade": "@BeeziebubT3_UpgradeDraw",
+      "param_int": 5
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BeeziebubT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@BeeziebubT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": true
     }
   ],
   "effects": [

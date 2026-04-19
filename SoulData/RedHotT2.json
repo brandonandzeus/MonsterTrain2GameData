@@ -66,15 +66,98 @@
       "id": "RedHotT2.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "RedHotT2_Upgrade"
+      "param_upgrade": "@RedHotT2_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RedHotT2_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-938e1ed9ada1ac2e-895fe4b3ced1c9449bda55ec3bfde5d8-v2",
+        "english": "Red Hot",
+        "french": "Ignescence",
+        "german": "Rotglühend",
+        "russian": "Раскаляй добела",
+        "portuguese": "Incandescente",
+        "chinese": "炙热",
+        "spanish": "Rojo vivo",
+        "chinese_traditional": "熾熱",
+        "korean": "붉은 작열",
+        "japanese": "レッド・ホット"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-08f32bbb3be97148-895fe4b3ced1c9449bda55ec3bfde5d8-v2",
+        "english": "Gain [explosive] and [slay]: Apply -[trigger0.effect0.upgrade.costreduction][ember] to a random card.",
+        "french": "Octroie [explosive] et <nobr>[slay] :</nobr> applique -[trigger0.effect0.upgrade.costreduction][ember] à une carte aléatoire.",
+        "german": "Erhalte [explosive] und [slay]: Wende -[trigger0.effect0.upgrade.costreduction][ember] auf eine zufällige Karte an.",
+        "russian": "Дается [explosive]. [slay]: Снимает -[trigger0.effect0.upgrade.costreduction][ember] со случайной карты.",
+        "portuguese": "Receber [explosive] e [slay]: aplica -[trigger0.effect0.upgrade.costreduction][ember] a uma carta aleatória.",
+        "chinese": "获得 [explosive] 和 [slay]：随机对一张卡牌施加 -[trigger0.effect0.upgrade.costreduction][ember]。",
+        "spanish": "Obtiene [explosive] y [slay]: Añade -[trigger0.effect0.upgrade.costreduction][ember] a una carta aleatoria.",
+        "chinese_traditional": "獲得[explosive]和[slay]：對一張隨機卡牌施加-[trigger0.effect0.upgrade.costreduction][ember]。",
+        "korean": "[explosive]을 획득하고, [slay]: 무작위 카드에 -[trigger0.effect0.upgrade.costreduction][ember]을 적용합니다.",
+        "japanese": "[explosive]と[slay]を得る：ランダムなカードに-[trigger0.effect0.upgrade.costreduction][ember]を付与する。"
+      },
+      "trait_upgrades": [
+        "@RedHotT2.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "card_trigger_upgrades": [
+        "@RedHotT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "OnlyDamageCard"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true,
+      "bonus_damage": 5,
+      "bonus_heal": 5
+    },
+    {
+      "id": "RedHotT2_Upgrade_OnSlay",
+      "filters": [
+        "ExcludeZeroCost"
+      ],
+      "exclude_from_clones": true,
+      "cost_reduction": 1,
+      "x_cost_reduction": 1
+    }
+  ],
+  "traits": [
+    {
+      "id": "RedHotT2.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "RedHotT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-5683c6eb3bb734aa-895fe4b3ced1c9449bda55ec3bfde5d8-v2",
+        "english": "Apply -[effect0.upgrade.costreduction][ember] to a random card.",
+        "french": "Applique -[effect0.upgrade.costreduction][ember] à une carte aléatoire.",
+        "german": "Wende -[effect0.upgrade.costreduction][ember] auf eine zufällige Karte an.",
+        "russian": "Снимает [effect0.upgrade.costreduction][ember] со случайной карты.",
+        "portuguese": "Aplica -[effect0.upgrade.costreduction][ember] a uma carta aleatória.",
+        "chinese": "随机对一张卡牌施加 -[effect0.upgrade.costreduction][ember]。",
+        "spanish": "Añade -[effect0.upgrade.costreduction][ember] a una carta aleatoria.",
+        "chinese_traditional": "對一張隨機卡牌施加-[effect0.upgrade.costreduction][ember]。",
+        "korean": "무작위 카드 한 장에 -[effect0.upgrade.costreduction][ember]을 적용합니다.",
+        "japanese": "ランダムなカードに-[effect0.upgrade.costreduction][ember]を付与する。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@RedHotT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
     }
   ],
   "effects": [
     {
       "id": "RedHotT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
       "name": "CardEffectAddTempCardUpgradeToRandomCardInHand",
-      "param_card_filter": "@RedHotT2.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0.paramCardFilter",
-      "param_upgrade": "RedHotT2_Upgrade_OnSlay"
+      "param_card_filter": "ExcludeZeroCost",
+      "param_upgrade": "@RedHotT2_Upgrade_OnSlay"
     }
   ]
 }

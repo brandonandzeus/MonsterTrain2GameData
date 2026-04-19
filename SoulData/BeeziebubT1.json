@@ -66,7 +66,68 @@
       "id": "BeeziebubT1.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "BeeziebubT1_Upgrade"
+      "param_upgrade": "@BeeziebubT1_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "BeeziebubT1_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-a727db01a402e48a-4c6e1115efbe7694689521baf7f53724-v2",
+        "english": "Beeziebub",
+        "french": "Bellezellebulle",
+        "german": "Beeziebub",
+        "russian": "Вельзезуб",
+        "portuguese": "Belzebrô",
+        "chinese": "比西布",
+        "spanish": "Beeziebub",
+        "chinese_traditional": "惡魔王",
+        "korean": "벌지붑",
+        "japanese": "ビージーバブ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-fda01069b6fa2f08-4c6e1115efbe7694689521baf7f53724-v2",
+        "english": "[annihilate] this card. Deal damage to your Pyre equal to [trigger0.effect0.power]% of its current health. Draw [trait1.power] cards.",
+        "french": "<b>Purgez</b> cette carte. Infligez à votre Brasier des dégâts valant <nobr>[trigger0.effect0.power] %</nobr> de ses PV actuels. Piochez <nobr>[trait1.power] cartes</nobr>.",
+        "german": "<b>Verbanne</b> diese Karte. Füge der Höllenglut Schaden in der Höhe von [trigger0.effect0.power] % ihrer aktuellen Gesundheit zu. Ziehe [trait1.power] Karten.",
+        "russian": "[annihilate] этой карты. Наносит Пеклу урон, равный [trigger0.effect0.power]% от текущего здоровья. Вытягивает [trait1.power] шт. карт.",
+        "portuguese": "<b>Expurga</b> esta carta. Causa dano à sua Pira igual a [trigger0.effect0.power]% da vida atual dela. Compra [trait1.power] cartas.",
+        "chinese": "[annihilate] 此卡牌。对你的薪火造成其当前生命值 [trigger0.effect0.power]% 的伤害。抽 [trait1.power] 张牌。",
+        "spanish": "[annihilate] esta carta. Inflige tanto daño a tu Pira como el [trigger0.effect0.power] % de su salud actual. Roba [trait1.power] cartas.",
+        "chinese_traditional": "[annihilate]此卡。對你的薪火造成等同於其目前生命值[trigger0.effect0.power]%的傷害。抽[trait1.power]張牌。",
+        "korean": "이 카드를 [annihilate]합니다. 현재 체력의 [trigger0.effect0.power]%만큼 화로에 피해를 줍니다. 카드를 [trait1.power]장 뽑습니다.",
+        "japanese": "このカードを[annihilate]する。自軍の炉に現在の体力の[trigger0.effect0.power]%分のダメージを与える。カードを[trait1.power]枚ドローする。"
+      },
+      "trait_upgrades": [
+        "@BeeziebubT1.effects0.paramCardUpgradeData.traitDataUpgrades0",
+        "@BeeziebubT1.effects0.paramCardUpgradeData.traitDataUpgrades1"
+      ],
+      "card_trigger_upgrades": [
+        "@BeeziebubT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    }
+  ],
+  "traits": [
+    {
+      "id": "BeeziebubT1.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitSelfPurge"
+    },
+    {
+      "id": "BeeziebubT1.effects0.paramCardUpgradeData.traitDataUpgrades1",
+      "name": "CardTraitDrawOnPlay",
+      "param_int": 3
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "BeeziebubT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@BeeziebubT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": true
     }
   ],
   "effects": [

@@ -66,7 +66,84 @@
       "id": "GoldieT1.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "GoldieT1_Upgrade"
+      "param_upgrade": "@GoldieT1_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GoldieT1_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-0accefa3a9e00bba-9b3120d4c0b039e40944cb5befb06830-v2",
+        "english": "Goldie",
+        "french": "Scarabor",
+        "german": "Goldi",
+        "russian": "Золотко",
+        "portuguese": "Dourado",
+        "chinese": "金甲虫",
+        "spanish": "Pudiente",
+        "chinese_traditional": "金閃閃",
+        "korean": "골디",
+        "japanese": "ゴールディー"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-965670fc187c363a-9b3120d4c0b039e40944cb5befb06830-v2",
+        "english": "Gain [retain]. When played, gain [trait0.power][coin] per [ember] cost.",
+        "french": "Octroie [retain]. À <nobr>l'utilisation :</nobr> octroie [trait0.power][coin] par coût en [ember].",
+        "german": "Erhalte [retain]. Beim Wirken: Erhalte [trait0.power][coin] pro [ember]-Kosten.",
+        "russian": "Дается [retain]. При применении: дает [trait0.power][coin] за стоимость в [ember].",
+        "portuguese": "Recebe [retain]. Ao lançar: recebe [trait0.power][coin] por custo de [ember].",
+        "chinese": "获得 [retain]。使用时：每花费 1 点 [ember]，获得 [trait0.power][coin]。",
+        "spanish": "Añade [retain]. Al lanzar: Obtienes [trait0.power][coin] por cada [ember] de coste.",
+        "chinese_traditional": "獲得[retain]。施放時：每[ember]費用獲得[trait0.power][coin]。",
+        "korean": "[retain]을 획득합니다. 시전 시: [ember] 비용당 [trait0.power][coin]을 획득합니다.",
+        "japanese": "[retain]を得る。使用時：[ember]コスト1につき[trait0.power][coin]を得る。"
+      },
+      "trait_upgrades": [
+        "@GoldieT1.effects0.paramCardUpgradeData.traitDataUpgrades0",
+        "@GoldieT1.effects0.paramCardUpgradeData.traitDataUpgrades1"
+      ],
+      "card_trigger_upgrades": [
+        "@GoldieT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    }
+  ],
+  "traits": [
+    {
+      "id": "GoldieT1.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitScalingRewardGold",
+      "param_tracked_value": "unmodified_played_cost",
+      "param_int": 10,
+      "stack_mode": "param_int"
+    },
+    {
+      "id": "GoldieT1.effects0.paramCardUpgradeData.traitDataUpgrades1",
+      "name": "CardTraitRetain"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GoldieT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-aea654b2a8e3c3ae-9b3120d4c0b039e40944cb5befb06830-v2",
+        "english": "Gain [effect1.power][coin] per [ember] cost.",
+        "french": "Octroie [effect1.power][coin] contre des [ember].",
+        "german": "Erhalte [effect1.power][coin] pro [ember]-Kosten.",
+        "russian": "Дает [effect1.power][coin] за стоимость в [ember].",
+        "portuguese": "Recebe [effect1.power][coin] por custo de [ember].",
+        "chinese": "每花费 1 点 [ember]，获得 [effect1.power][coin]。",
+        "spanish": "Obtienes [effect1.power][coin] por cada [ember] de coste.",
+        "chinese_traditional": "每[ember]費用獲得[effect1.power][coin]。",
+        "korean": "[ember] 비용당 [effect1.power][coin]을 획득합니다.",
+        "japanese": "[ember]コスト1につき[effect1.power][coin]を得る。"
+      },
+      "trigger": "on_cast",
+      "effects": [
+        "@GoldieT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
+        "@GoldieT1.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects1"
+      ],
+      "trigger_keyword_card_text_suppressed": true
     }
   ],
   "effects": [

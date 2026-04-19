@@ -65,7 +65,54 @@
       "id": "GrumpT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "GrumpT3_Upgrade"
+      "param_upgrade": "@GrumpT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GrumpT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-78770b07cabcfc0a-4e5aa66f757eecb4d938d901e2a4af44-v2",
+        "english": "Grump",
+        "french": "Grincheux",
+        "german": "Griesgram",
+        "russian": "Ворчун",
+        "portuguese": "Ranzinza",
+        "chinese": "暴躁小猪",
+        "spanish": "Hosquedad",
+        "chinese_traditional": "暴躁",
+        "korean": "불만꾼",
+        "japanese": "グランプ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-ac8b326f89fd25bc-4e5aa66f757eecb4d938d901e2a4af44-v2",
+        "english": "[revenge]: Gain +[charactertrigger0.effect0.power][attack] permanently. [action]: Gain +[charactertrigger1.effect0.power][health] permanently.",
+        "french": "<nobr>[revenge] :</nobr> octroie +[charactertrigger0.effect0.power][attack] définitivement. <nobr>[action] :</nobr> octroie +[charactertrigger1.effect0.power][health] définitivement.",
+        "german": "[revenge]: Erhalte +[charactertrigger0.effect0.power][attack] permanent. [action]: Erhalte +[charactertrigger1.effect0.power][health] permanent.",
+        "russian": "[revenge]: навсегда дается +[charactertrigger0.effect0.power][attack]. [action]: навсегда дается +[charactertrigger1.effect0.power][health].",
+        "portuguese": "[revenge]: recebe +[charactertrigger0.effect0.power][attack] permanentemente. [action]: recebe +[charactertrigger1.effect0.power][health] permanentemente.",
+        "chinese": "[revenge]：永久获得 +[charactertrigger0.effect0.power][attack]。[action]：永久获得 +[charactertrigger1.effect0.power][health]。",
+        "spanish": "[revenge]: Añade +[charactertrigger0.effect0.power][attack] permanentemente. [action]: Añade +[charactertrigger1.effect0.power][health] permanentemente.",
+        "chinese_traditional": "[revenge]：永久獲得+[charactertrigger0.effect0.power][attack]。[action]：永久獲得+[charactertrigger1.effect0.power][health]。",
+        "korean": "[revenge]: 영구적으로 +[charactertrigger0.effect0.power][attack]을 획득합니다. [action]: 영구적으로 +[charactertrigger1.effect0.power][health]을 획득합니다.",
+        "japanese": "[revenge]：+[charactertrigger0.effect0.power][attack]を永続的に得る。[action]:+[charactertrigger1.effect0.power][health]を永続的に得る。"
+      },
+      "trigger_upgrades": [
+        "@GrumpT3.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@GrumpT3.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "Plus3HPScalable",
+      "bonus_hp": 3,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
+    },
+    {
+      "id": "Plus2AttackScalable",
+      "bonus_damage": 2,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "character_triggers": [
@@ -115,7 +162,7 @@
       "id": "GrumpT3.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus2AttackScalable",
+      "param_upgrade": "@Plus2AttackScalable",
       "param_int_3": 2,
       "param_bool": true
     },
@@ -123,7 +170,7 @@
       "id": "GrumpT3.effects0.paramCardUpgradeData.triggerUpgrades1.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "Plus3HPScalable",
+      "param_upgrade": "@Plus3HPScalable",
       "param_int_3": 2,
       "param_bool": true
     }

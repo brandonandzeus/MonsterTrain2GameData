@@ -65,7 +65,67 @@
       "id": "MollisT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "MollisT3_Upgrade"
+      "param_upgrade": "@MollisT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MollisT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-8156874f654630fc-9366f14bf37e3a6438c223254f61e92e-v2",
+        "english": "Mollis",
+        "french": "Mollis",
+        "german": "Mollis",
+        "russian": "Мякиш",
+        "portuguese": "Mollis",
+        "chinese": "莫里斯",
+        "spanish": "Glacial",
+        "chinese_traditional": "軟體",
+        "korean": "말랑이",
+        "japanese": "モリス"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-d2ffe758ace3d06d-9366f14bf37e3a6438c223254f61e92e-v2",
+        "english": "Gain [juice4]. Apply [frostbite] [trigger0.effect0.status0.power] to enemy units hit and [armor] [trigger0.effect1.status0.power] to friendly units hit.",
+        "french": "Octroie [juice4]. Applique <nobr>[frostbite] [trigger0.effect0.status0.power]</nobr> aux ennemis touchés et <nobr>[armor] [trigger0.effect1.status0.power]</nobr> aux alliés touchés.",
+        "german": "Erhalte [juice4]. Wende [frostbite] [trigger0.effect0.status0.power] auf gegnerische getroffene Einheiten und [armor] [trigger0.effect1.status0.power] auf verbündete getroffene Einheiten an.",
+        "russian": "Дается [juice4]. Накладывается [frostbite] х[trigger0.effect0.status0.power] на атакованного врага и [armor] х[trigger0.effect1.status0.power] на атакованного союзника.",
+        "portuguese": "Recebe [juice4]. Aplica [frostbite] [trigger0.effect0.status0.power] às unidades inimigas atingidas e concede [armor] [trigger0.effect1.status0.power] às unidades aliadas atingidas.",
+        "chinese": "获得 [juice4]。对被命中的敌方单位施加 [frostbite] [trigger0.effect0.status0.power]，使被命中的友方单位获得 [armor] [trigger0.effect1.status0.power]。",
+        "spanish": "Obtiene [juice4]. Añade [frostbite] [trigger0.effect0.status0.power] a las unidades enemigas impactadas y [armor] [trigger0.effect1.status0.power] a las unidades aliadas impactadas.",
+        "chinese_traditional": "獲得[juice4]。對受擊的敵方單位施加[frostbite][trigger0.effect0.status0.power]，對受擊的友方單位施加[armor][trigger0.effect1.status0.power]。",
+        "korean": "[juice4]을 획득합니다. 적 유닛들이 피격되면 [frostbite] [trigger0.effect0.status0.power] 효과를 적용하고, 아군 유닛들이 피격되면 [armor] [trigger0.effect1.status0.power] 효과를 적용합니다.",
+        "japanese": "[juice4]を得る。命中した敵ユニットに[frostbite] [trigger0.effect0.status0.power]を、命中した味方ユニットに[armor] [trigger0.effect1.status0.power]を付与する。"
+      },
+      "trait_upgrades": [
+        "@MollisT3.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "card_trigger_upgrades": [
+        "@MollisT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "ExcludeDoublestack",
+        "OnlyStatusEffectSetting"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    }
+  ],
+  "traits": [
+    {
+      "id": "MollisT3.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitJuice4"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "MollisT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@MollisT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0",
+        "@MollisT3.effects0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects1"
+      ],
+      "trigger_keyword_card_text_suppressed": true
     }
   ],
   "effects": [

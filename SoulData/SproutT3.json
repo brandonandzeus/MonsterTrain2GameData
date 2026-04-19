@@ -65,7 +65,54 @@
       "id": "SproutT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "SproutT3_Upgrade"
+      "param_upgrade": "@SproutT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SproutT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-f0d260e3cf4522ad-f4c1a10d9ddc4a94892ee282f03b0673-v2",
+        "english": "Sprout",
+        "french": "Pousse",
+        "german": "Spross",
+        "russian": "Черенок",
+        "portuguese": "Broto",
+        "chinese": "苗芽",
+        "spanish": "Brote",
+        "chinese_traditional": "幼苗",
+        "korean": "새싹",
+        "japanese": "スプラウト"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-aa29342f8f664f27-f4c1a10d9ddc4a94892ee282f03b0673-v2",
+        "english": "Gain [attack] equal to all [infested] stacks. [siphon]: Gain +[charactertrigger0.effect0.upgrade.bonusdamage] [attack] permanently when an [infested] unit dies.",
+        "french": "Octroie de l'[attack] équivalant au cumul d'<b>Infestation</b>. <nobr>[siphon] :</nobr> octroie <nobr>+[charactertrigger0.effect0.upgrade.bonusdamage] [attack]</nobr> définitivement quand une unité <b>infestée</b> meurt.",
+        "german": "Erhalte [attack] im Ausmaß aller [infested]-Stapel. [siphon]: Erhalte permanent +[charactertrigger0.effect0.upgrade.bonusdamage] [attack], wenn eine [infested]e Einheit stirbt.",
+        "russian": "Дается [attack], равная сумме слоев <b>заражения</b>. [siphon]: дает +[charactertrigger0.effect0.upgrade.bonusdamage][attack] навсегда, когда умирает <b>зараженный</b> боец.",
+        "portuguese": "Recebe [attack] igual a todas as cargas de [infested]. [siphon]: recebe + [charactertrigger0.effect0.upgrade.bonusdamage] [attack] permanentemente quando uma unidade <b>Infestada</b> morre.",
+        "chinese": "获得等同于所有 [infested] 层数的 [attack]。[siphon]：当 [infested] 的单位死亡时，永久获得 +[charactertrigger0.effect0.upgrade.bonusdamage] [attack]。",
+        "spanish": "Añade tanto [attack] como las acumulaciones de [infested]. [siphon]: Añade +[charactertrigger0.effect0.upgrade.bonusdamage][attack] permanentemente cuando una unidad <b>Infestada</b> muere.",
+        "chinese_traditional": "獲得等同於所有[infested]層數的[attack]。[siphon]：當一個[infested]單位死亡時，永久獲得+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "모든 [infested] 스택만큼 [attack]을 획득합니다. [siphon]: [infested]된 유닛 하나가 사망하면 영구적으로 +[charactertrigger0.effect0.upgrade.bonusdamage][attack]을 획득합니다.",
+        "japanese": "すべての[infested]のスタックに等しい[attack]を得る。[siphon]：[infested]状態のユニットが死亡すると、永続的に+[charactertrigger0.effect0.upgrade.bonusdamage] [attack]を得る。"
+      },
+      "status_effect_upgrades": [
+        {
+          "status": "hivemindkiller",
+          "count": 1
+        }
+      ],
+      "trigger_upgrades": [
+        "@SproutT3.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "SproutT3_Upgrade_PermanentAttack",
+      "bonus_damage": 4,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "character_triggers": [
@@ -102,7 +149,7 @@
       "id": "SproutT3.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
       "name": "CardEffectAddCardUpgradeToUnits",
       "target_mode": "self",
-      "param_upgrade": "SproutT3_Upgrade_PermanentAttack",
+      "param_upgrade": "@SproutT3_Upgrade_PermanentAttack",
       "param_int_3": 2,
       "param_bool": true
     }

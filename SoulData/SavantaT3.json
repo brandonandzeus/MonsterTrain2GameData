@@ -65,7 +65,94 @@
       "id": "SavantaT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "SavantaT3_Upgrade"
+      "param_upgrade": "@SavantaT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SavantaT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-e125339284f1a2b1-7267cb1014fc6ac4ba4261bfb21cc329-v2",
+        "english": "Savanta",
+        "french": "Savanta",
+        "german": "Savanta",
+        "russian": "Саванта",
+        "portuguese": "Savanta",
+        "chinese": "萨凡塔",
+        "spanish": "Prodigio",
+        "chinese_traditional": "薩凡塔",
+        "korean": "사반타",
+        "japanese": "サヴァンタ"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-93201bf9b06dfe4a-7267cb1014fc6ac4ba4261bfb21cc329-v2",
+        "english": "Apply 0[ember]. Take [pyrehealth] damage equal to the base cost -[trigger0.effect0.power][ember]. Spellchain.",
+        "french": "Ce sort est désormais gratuit. Vous perdez des [pyrehealth] équivalant au coût de base -[trigger0.effect0.power][ember]. Sorts à la chaîne.",
+        "german": "Dieser Zauber ist jetzt frei verfügbar. Erleide [pyrehealth] Schaden im Ausmaß der Basiskosten -[trigger0.effect0.power][ember]. Zauberkette.",
+        "russian": "Эти чары теперь бесплатные. Снимается [pyrehealth], равное стоимости -[trigger0.effect0.power][ember]. Цепочка чар.",
+        "portuguese": "Este feitiço agora é gratuito. Recebe dano de [pyrehealth] igual ao custo base -[trigger0.effect0.power][ember]. Corrente de Feitiços.",
+        "chinese": "此法术现在免费。受到等同于其基础费用的 -[trigger0.effect0.power][ember] 的 [pyrehealth] 伤害。法术连锁。",
+        "spanish": "Este hechizo ahora es gratis. Sufre tanto daño [pyrehealth] como su coste base -[trigger0.effect0.power][ember]. Hechizo en cadena.",
+        "chinese_traditional": "此法術現在免費。受到等同於基礎費用-[trigger0.effect0.power][ember]的[pyrehealth]傷害。法術連鎖。",
+        "korean": "이 주문은 이제 무료입니다. 기본 비용에서 -[trigger0.effect0.power][ember]만큼의 [pyrehealth] 피해를 받습니다. 주문 연쇄.",
+        "japanese": "この呪文のコストが無料になる。基本コスト-[trigger0.effect0.power][ember]に等しい[pyrehealth]ダメージを受ける。呪文連鎖。"
+      },
+      "trait_upgrades": [
+        "@SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "card_trigger_upgrades": [
+        "@SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeUnplayable"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "SavantaT3_UpgradeAfterCopy",
+      "trait_upgrades": [
+        "@SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.traitDataUpgrades0"
+      ],
+      "card_trigger_upgrades": [
+        "@SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.cardTriggerUpgrades0"
+      ],
+      "filters": [
+        "OnlySpells",
+        "ExcludeUnplayable"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true,
+      "remove_trait_upgrades": [
+        "CardTraitCopyOnPlay"
+      ],
+      "upgrades_to_remove": [
+        "SavantaT3_Upgrade"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitCopyOnPlay",
+      "param_upgrade": "@SavantaT3_UpgradeAfterCopy",
+      "param_int": 1
+    },
+    {
+      "id": "SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.traitDataUpgrades0",
+      "name": "CardTraitEphemeral",
+      "trait_is_removable": false
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.cardTriggerUpgrades0",
+      "trigger": "on_cast",
+      "effects": [
+        "@SavantaT3.effects0.paramCardUpgradeData.traitDataUpgrades0.paramCardUpgradeData.cardTriggerUpgrades0.cardEffects0"
+      ],
+      "trigger_keyword_card_text_suppressed": false
     }
   ],
   "effects": [

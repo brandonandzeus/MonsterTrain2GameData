@@ -65,7 +65,74 @@
       "id": "SlaycyT3.effects0",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "SlaycyT3_Upgrade"
+      "param_upgrade": "@SlaycyT3_Upgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SlaycyT3_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-5ee09a29950f9b5d-bb7246d5adcc8d445bd85650badc273e-v2",
+        "english": "Slacy III",
+        "french": "Taillade III",
+        "german": "Besiegsi III",
+        "russian": "Убивашка III",
+        "portuguese": "Abatedor III",
+        "chinese": "杀戮者 III",
+        "spanish": "Ejecutante III",
+        "chinese_traditional": "殺戮者III",
+        "korean": "학살꾼 III",
+        "japanese": "スレイシーIII"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-1772b54bf74c84df-bb7246d5adcc8d445bd85650badc273e-v2",
+        "english": "[equipped]: The attached equipment gains +[charactertrigger0.effect0.power][attack] permanently. [slay]: The attached equipment gains +[charactertrigger1.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger1.effect0.upgrade.status0.power] permanently.",
+        "french": "<nobr>[equipped] :</nobr> l'équipement attaché gagne +[charactertrigger0.effect0.power][attack] définitivement. <nobr>[slay] :</nobr> l'équipement attaché gagne +[charactertrigger1.effect0.upgrade.bonusdamage][attack] et <nobr>[armor] [charactertrigger1.effect0.upgrade.status0.power]</nobr> définitivement.",
+        "german": "[equipped]: Die zugehörige Ausrüstung wird permanent um +[charactertrigger0.effect0.power][attack] verstärkt. [slay]: Die zugehörige Ausrüstung erhält permanent +[charactertrigger1.effect0.upgrade.bonusdamage][attack] und [armor] [charactertrigger1.effect0.upgrade.status0.power].",
+        "russian": "[equipped]: на надетое снаряжение навсегда накладывается +[charactertrigger0.effect0.power][attack]. [slay]: на надетое снаряжение навсегда накладывается +[charactertrigger1.effect0.upgrade.bonusdamage][attack] и [armor] х[charactertrigger1.effect0.upgrade.status0.power].",
+        "portuguese": "[equipped]: o equipamento acoplado recebe +[charactertrigger0.effect0.power][attack] permanentemente. [slay]: o equipamento acoplado recebe +[charactertrigger1.effect0.upgrade.bonusdamage][attack] e [armor] [charactertrigger1.effect0.upgrade.status0.power] permanentemente.",
+        "chinese": "[equipped]：附加装备永久获得 +[charactertrigger0.effect0.power][attack]。[slay]：附加装备永久获得 +[charactertrigger1.effect0.upgrade.bonusdamage][attack] 和 [armor] [charactertrigger1.effect0.upgrade.status0.power]。",
+        "spanish": "[equipped]: El equipo ligado añade +[charactertrigger0.effect0.power][attack] permanentemente. [slay]: El equipo ligado añade +[charactertrigger1.effect0.upgrade.bonusdamage][attack] y [armor] [charactertrigger1.effect0.upgrade.status0.power] permanentemente.",
+        "chinese_traditional": "[equipped]：附加的裝備永久獲得+[charactertrigger0.effect0.power][attack]。[slay]：附加的裝備永久獲得+[charactertrigger1.effect0.upgrade.bonusdamage][attack]和[armor][charactertrigger1.effect0.upgrade.status0.power]。",
+        "korean": "[equipped]: 장착된 장비가 영구적으로 +[charactertrigger0.effect0.power][attack] 효과를 얻습니다. [slay]: 장착된 장비가 영구적으로 +[charactertrigger1.effect0.upgrade.bonusdamage][attack] 및 [armor] [charactertrigger1.effect0.upgrade.status0.power] 효과를 얻습니다.",
+        "japanese": "[equipped]：付随する装備品が永続的に+[charactertrigger0.effect0.power][attack]を得る。[slay]：付随する装備品が永続的に+[charactertrigger1.effect0.upgrade.bonusdamage][attack]と[armor] [charactertrigger1.effect0.upgrade.status0.power]を得る。"
+      },
+      "trigger_upgrades": [
+        "@SlaycyT3.effects0.paramCardUpgradeData.triggerUpgrades0",
+        "@SlaycyT3.effects0.paramCardUpgradeData.triggerUpgrades1"
+      ],
+      "is_region_run_upgrade": true,
+      "exclude_from_clones": true
+    },
+    {
+      "id": "SlaycyT3_OnEquip_Upgrade",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-553d68668db5244c-3b4d7fd9c658ccf49a11d8b85783caac-v2",
+        "english": "Slacy",
+        "french": "Taillade",
+        "german": "Besiegsi",
+        "russian": "Убивашка",
+        "portuguese": "Abatedor",
+        "chinese": "刀刀",
+        "spanish": "Ejecutante",
+        "chinese_traditional": "懶散",
+        "korean": "학살꾼",
+        "japanese": "スレイシー"
+      },
+      "bonus_damage": 10,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
+    },
+    {
+      "id": "SlaycyT3_OnKill_Upgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 10,
+          "from_permanent_upgrade": true
+        }
+      ],
+      "bonus_damage": 3,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
     }
   ],
   "character_triggers": [
@@ -116,14 +183,14 @@
       "name": "CardEffectBuffEquipment",
       "target_mode": "last_equipped_character",
       "target_team": "both",
-      "param_upgrade": "SlaycyT3_OnEquip_Upgrade",
+      "param_upgrade": "@SlaycyT3_OnEquip_Upgrade",
       "param_bool": true
     },
     {
       "id": "SlaycyT3.effects0.paramCardUpgradeData.triggerUpgrades1.effects0",
       "name": "CardEffectBuffEquipment",
       "target_mode": "self",
-      "param_upgrade": "SlaycyT3_OnKill_Upgrade",
+      "param_upgrade": "@SlaycyT3_OnKill_Upgrade",
       "param_bool": true
     }
   ]
