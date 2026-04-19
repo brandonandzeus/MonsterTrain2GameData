@@ -66,7 +66,7 @@
     {
       "id": "DrawSpellOnDeployment.effects0",
       "name": "RelicEffectDrawOnPreOpeningDraw",
-      "param_card_filter": "@DrawSpellOnDeployment.effects0.paramCardFilter",
+      "param_card_filter": "DrawSpellOnDeployment_CardMask",
       "param_upgrade": "@DrawSpellOnDeployment_Upgrade",
       "param_int": 1
     }
@@ -76,23 +76,6 @@
       "id": "DrawSpellOnDeployment_Upgrade",
       "cost_reduction": 1,
       "x_cost_reduction": 1
-    }
-  ],
-  "upgrade_masks": [
-    {
-      "id": "DrawSpellOnDeployment.effects0.paramCardFilter",
-      "card_type": "spell",
-      "excluded_effects_operator": "and",
-      "excluded_effects": [
-        "CardEffectDamage",
-        "CardEffectDamageByPercentRemainingHealth",
-        "CardEffectDamageByUnitsKilled",
-        "CardEffectDamagePerHp",
-        "CardEffectDamagePerSourceAttack",
-        "CardEffectDamagePerTargetAttack",
-        "CardEffectDamageWithTrample",
-        "CardEffectHealAndDamageRelative"
-      ]
     }
   ]
 }
