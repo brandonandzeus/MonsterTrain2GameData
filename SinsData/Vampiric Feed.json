@@ -1,48 +1,68 @@
 {
-  "id": "Enemy_SpawnHeroEaterFeedLifesteal",
-  "guid": "2424d14a-6fd6-4458-836e-75ad7315a22a",
-  "name": "Vampiric Feed",
-  "nameKey": {
-    "key": "SinsData_nameKey-b884f7e529c6cf28-1a8bfd2ffd1fded4f92e1264dd372e5a-v2",
-    "english": "Vampiric Feed",
-    "french": "Nourriture vampirique",
-    "german": "Vampirfutter",
-    "russian": "Вампиризм",
-    "portuguese": "Alimentação Vampírica",
-    "chinese": "吸血进食",
-    "spanish": "Fuente vampírica",
-    "chinese_traditional": "吸血餵食",
-    "korean": "흡혈 먹이",
-    "japanese": "吸血の捕食"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-a50296dd1e0cf120-1a8bfd2ffd1fded4f92e1264dd372e5a-v2",
-    "english": "Cael and his cherubs grant +[effect0.power][attack] and [lifesteal] [effect1.power] to enemy units.",
-    "french": "Cael et ses chérubins octroient +[effect0.power][attack] et [lifesteal] [effect1.power] aux ennemis.",
-    "german": "Cael und seine Cherubim gewähren gegnerischen Einheiten +[effect0.power][attack] und [lifesteal] [effect1.power].",
-    "russian": "Союзникам Каэля и херувимов даются +[effect0.power][attack] и [lifesteal] х[effect1.power].",
-    "portuguese": "Cael e seus querubins concedem +[effect0.power][attack] e [lifesteal] [effect1.power] às unidades inimigas.",
-    "chinese": "凯尔和他的小天使会使敌方单位获得 +[effect0.power][attack] 和 [lifesteal] [effect1.power]。",
-    "spanish": "Cael y sus querubines otorgan +[effect0.power][attack] y [lifesteal] [effect1.power] a las unidades enemigas.",
-    "chinese_traditional": "凱爾和他的天使寶寶賦予敵方單位+[effect0.power][attack]和[lifesteal][effect1.power]。",
-    "korean": "카엘과 카엘의 케루빔이 적 유닛에 +[effect0.power][attack] 및 [lifesteal] [effect1.power] 효과를 부여합니다.",
-    "japanese": "キャエルと智天使が敵ユニットに+[effect0.power][attack]と[lifesteal] [effect1.power]を付与する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectNull",
-      "additionalTooltips": [
+      "id": "Enemy_SpawnHeroEaterFeedLifesteal",
+      "name": "Vampiric Feed",
+      "type": "sin",
+      "extensions": [
         {
-          "statusId": "lifesteal",
-          "style": "default",
-          "isStatusTooltip": true
+          "sin": {
+          }
         }
       ],
-      "paramInt": 7
+      "names": {
+        "key": "SinsData_nameKey-b884f7e529c6cf28-1a8bfd2ffd1fded4f92e1264dd372e5a-v2",
+        "english": "Vampiric Feed",
+        "french": "Nourriture vampirique",
+        "german": "Vampirfutter",
+        "russian": "Вампиризм",
+        "portuguese": "Alimentação Vampírica",
+        "chinese": "吸血进食",
+        "spanish": "Fuente vampírica",
+        "chinese_traditional": "吸血餵食",
+        "korean": "흡혈 먹이",
+        "japanese": "吸血の捕食"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-a50296dd1e0cf120-1a8bfd2ffd1fded4f92e1264dd372e5a-v2",
+        "english": "Cael and his cherubs grant +[effect0.power][attack] and [lifesteal] [effect1.power] to enemy units.",
+        "french": "Cael et ses chérubins octroient +[effect0.power][attack] et [lifesteal] [effect1.power] aux ennemis.",
+        "german": "Cael und seine Cherubim gewähren gegnerischen Einheiten +[effect0.power][attack] und [lifesteal] [effect1.power].",
+        "russian": "Союзникам Каэля и херувимов даются +[effect0.power][attack] и [lifesteal] х[effect1.power].",
+        "portuguese": "Cael e seus querubins concedem +[effect0.power][attack] e [lifesteal] [effect1.power] às unidades inimigas.",
+        "chinese": "凯尔和他的小天使会使敌方单位获得 +[effect0.power][attack] 和 [lifesteal] [effect1.power]。",
+        "spanish": "Cael y sus querubines otorgan +[effect0.power][attack] y [lifesteal] [effect1.power] a las unidades enemigas.",
+        "chinese_traditional": "凱爾和他的天使寶寶賦予敵方單位+[effect0.power][attack]和[lifesteal][effect1.power]。",
+        "korean": "카엘과 카엘의 케루빔이 적 유닛에 +[effect0.power][attack] 및 [lifesteal] [effect1.power] 효과를 부여합니다.",
+        "japanese": "キャエルと智天使が敵ユニットに+[effect0.power][attack]と[lifesteal] [effect1.power]を付与する。"
+      },
+      "relic_effects": [
+        "@Enemy_SpawnHeroEaterFeedLifesteal.effects0",
+        "@Enemy_SpawnHeroEaterFeedLifesteal.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_SpawnHeroEaterFeedLifesteal.effects0",
+      "name": "RelicEffectNull",
+      "additional_tooltips": [
+        "@Enemy_SpawnHeroEaterFeedLifesteal.effects0.additionalTooltips0"
+      ],
+      "param_int": 7
     },
     {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 1
+      "id": "Enemy_SpawnHeroEaterFeedLifesteal.effects1",
+      "name": "RelicEffectNull",
+      "param_int": 1
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Enemy_SpawnHeroEaterFeedLifesteal.effects0.additionalTooltips0",
+      "status": "lifesteal",
+      "style": "default"
     }
   ]
 }

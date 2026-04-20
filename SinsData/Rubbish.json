@@ -1,38 +1,53 @@
 {
-  "id": "BlightsInDeck_T1",
-  "guid": "97d7ac5d-8ff6-49ea-912a-4bc518c05216",
-  "name": "Rubbish",
-  "nameKey": {
-    "key": "SinsData_nameKey-4b15093cf1aeea11-45507d29bfdf8914980598eaaa43aeb3-v2",
-    "english": "Rubbish",
-    "french": "Déchet",
-    "german": "Müll",
-    "russian": "Мусор",
-    "portuguese": "Lixo",
-    "chinese": "废弃物",
-    "spanish": "Porquería",
-    "chinese_traditional": "垃圾",
-    "korean": "폐기물",
-    "japanese": "がらくた"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-f1d864ef10fdc1b3-45507d29bfdf8914980598eaaa43aeb3-v2",
-    "english": "Add [effect0.power] [scrap] cards to your deck for this battle.",
-    "french": "Ajoutez <nobr>[effect0.power] cartes</nobr> [scrap] à votre deck pour cette bataille.",
-    "german": "Nimm in diesem Kampf [effect0.power] [scrap]-Karten in dein Deck.",
-    "russian": "В этом бою добавляет в колоду [scrap] х[effect0.power].",
-    "portuguese": "Adiciona [effect0.power] [scrap] cartas ao seu deck para essa batalha.",
-    "chinese": "在你的卡组添加 [effect0.power] [scrap]卡牌用于这场战斗。",
-    "spanish": "Añade [effect0.power] cartas de [scrap] a tu mazo para esta batalla.",
-    "chinese_traditional": "為這場戰鬥在你的牌組中添加[effect0.power][scrap]張卡牌。",
-    "korean": "이번 전투 동안 덱에 [scrap] 카드를 [effect0.power] 장 추가합니다.",
-    "japanese": "このバトルで、[effect0.power]枚の[scrap]カードがデッキに追加される。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddCardsStartOfBattle",
-      "paramBool": true,
-      "paramCardPool": "BlightsInDeck_Junk6X"
+      "id": "BlightsInDeck_T1",
+      "name": "Rubbish",
+      "type": "sin",
+      "extensions": [
+        {
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-4b15093cf1aeea11-45507d29bfdf8914980598eaaa43aeb3-v2",
+        "english": "Rubbish",
+        "french": "Déchet",
+        "german": "Müll",
+        "russian": "Мусор",
+        "portuguese": "Lixo",
+        "chinese": "废弃物",
+        "spanish": "Porquería",
+        "chinese_traditional": "垃圾",
+        "korean": "폐기물",
+        "japanese": "がらくた"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-f1d864ef10fdc1b3-45507d29bfdf8914980598eaaa43aeb3-v2",
+        "english": "Add [effect0.power] [scrap] cards to your deck for this battle.",
+        "french": "Ajoutez <nobr>[effect0.power] cartes</nobr> [scrap] à votre deck pour cette bataille.",
+        "german": "Nimm in diesem Kampf [effect0.power] [scrap]-Karten in dein Deck.",
+        "russian": "В этом бою добавляет в колоду [scrap] х[effect0.power].",
+        "portuguese": "Adiciona [effect0.power] [scrap] cartas ao seu deck para essa batalha.",
+        "chinese": "在你的卡组添加 [effect0.power] [scrap]卡牌用于这场战斗。",
+        "spanish": "Añade [effect0.power] cartas de [scrap] a tu mazo para esta batalla.",
+        "chinese_traditional": "為這場戰鬥在你的牌組中添加[effect0.power][scrap]張卡牌。",
+        "korean": "이번 전투 동안 덱에 [scrap] 카드를 [effect0.power] 장 추가합니다.",
+        "japanese": "このバトルで、[effect0.power]枚の[scrap]カードがデッキに追加される。"
+      },
+      "relic_effects": [
+        "@BlightsInDeck_T1.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "BlightsInDeck_T1.effects0",
+      "name": "RelicEffectAddCardsStartOfBattle",
+      "param_bool": true,
+      "param_card_pool": "BlightsInDeck_Junk6X"
     }
   ]
 }

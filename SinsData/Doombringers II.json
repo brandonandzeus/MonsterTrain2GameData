@@ -1,105 +1,134 @@
 {
-  "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial",
-  "guid": "6dd04165-0c8d-42b3-9215-405e39952466",
-  "name": "Doombringers II",
-  "nameKey": {
-    "key": "SinsData_nameKey-01e9c0da16606879-4f340900b1e75ec44bb60e4ec4b275e2-v2",
-    "english": "Doombringers II",
-    "french": "Porte-malheur II",
-    "german": "Unheilsbringer II",
-    "russian": "Несущие смерть II",
-    "portuguese": "Arautos da Maldição II",
-    "chinese": "末日使者 II",
-    "spanish": "Destructores II",
-    "chinese_traditional": "末日使者II",
-    "korean": "파멸의 인도자 II",
-    "japanese": "ドゥームブリンガーII"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-e2d79d78730e213a-4f340900b1e75ec44bb60e4ec4b275e2-v2",
-    "english": "Stryx applies +[effect1.trigger0.effect0.power][attack] to Hallow on [slay]. Hallow applies +[effect0.trigger0.effect0.power][health] to Stryx on [incant].",
-    "french": "Stryx applique +[effect1.trigger0.effect0.power][attack] à Hallow avec [slay]. Hallow applique +[effect0.trigger0.effect0.power][health] à Stryx avec [incant].",
-    "german": "Stryx wendet beim [slay] +[effect1.trigger0.effect0.power][attack] auf Hallow an. Hallow wendet bei [incant] +[effect0.trigger0.effect0.power][health] auf Stryx an.",
-    "russian": "[slay]: Стрикс дает Хэллоу +[effect1.trigger0.effect0.power][attack]. [incant]: Хэллоу дает Стрикс +[effect0.trigger0.effect0.power][health].",
-    "portuguese": "Stryx concede +[effect1.trigger0.effect0.power][attack] ao Hallow durante o <b>Abate</b>. Hallow concede +[effect0.trigger0.effect0.power][health] à Stryx durante o [incant].",
-    "chinese": "斯特里克斯触发[slay]时使哈洛获得 +[effect1.trigger0.effect0.power][attack]。哈洛触发[incant]时使斯特里克斯获得 +[effect0.trigger0.effect0.power][health]。",
-    "spanish": "Estrix añade +[effect1.trigger0.effect0.power][attack] a Sacro en [slay]. Sacro añade +[effect0.trigger0.effect0.power][health] a Estrix al aplicar [incant].",
-    "chinese_traditional": "史崔克斯在[slay]時對哈洛施加+[effect1.trigger0.effect0.power][attack]。哈洛在[incant]時對史崔克斯施加+[effect0.trigger0.effect0.power][health]。",
-    "korean": "[slay] 시 스트릭스가 할로우에게 +[effect1.trigger0.effect0.power][attack]을 부여합니다. [incant] 시 할로우가 스트릭스에게 +[effect0.trigger0.effect0.power][health]을 부여합니다.",
-    "japanese": "ストリクスは[slay]時にハロウに+[effect0.trigger0.effect0.power][health]を付与する。ハロウは[incant]時にストリクスに+[effect1.trigger0.effect0.power][attack]を付与する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial",
+      "name": "Doombringers II",
+      "type": "sin",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "SinsData_descriptionKey-bc34807db66132c4-4f340900b1e75ec44bb60e4ec4b275e2-v2",
-            "english": "Apply +[effect0.power][health] to Stryx.",
-            "french": "Applique +[effect0.power][health] à Stryx.",
-            "german": "Wende +[effect0.power][health] auf Stryx an.",
-            "russian": "Дает Стрикс +[effect0.power][health].",
-            "portuguese": "Concede +[effect0.power][health] à Stryx.",
-            "chinese": "使斯特里克斯获得 +[effect0.power][health]。",
-            "spanish": "Añade +[effect0.power][health] a Estrix.",
-            "chinese_traditional": "對史崔克斯施加+[effect0.power][health]。",
-            "korean": "스트릭스에 +[effect0.power][health]을 적용합니다.",
-            "japanese": "ストリクスに+[effect0.power][health]を付与する。"
-          },
-          "trigger": "card_spell_played",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffMaxHealth",
-              "targetMode": "tower",
-              "targetTeamType": "both",
-              "targetCharacterSubtype": "SubtypesData_SavageAngel",
-              "paramInt": 50
-            }
-          ],
-          "removeOnRelentlessChange": true
+          "sin": {
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "triggerTooltipsSuppressed": true,
-      "paramCharacters": [
+      "names": {
+        "key": "SinsData_nameKey-01e9c0da16606879-4f340900b1e75ec44bb60e4ec4b275e2-v2",
+        "english": "Doombringers II",
+        "french": "Porte-malheur II",
+        "german": "Unheilsbringer II",
+        "russian": "Несущие смерть II",
+        "portuguese": "Arautos da Maldição II",
+        "chinese": "末日使者 II",
+        "spanish": "Destructores II",
+        "chinese_traditional": "末日使者II",
+        "korean": "파멸의 인도자 II",
+        "japanese": "ドゥームブリンガーII"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-e2d79d78730e213a-4f340900b1e75ec44bb60e4ec4b275e2-v2",
+        "english": "Stryx applies +[effect1.trigger0.effect0.power][attack] to Hallow on [slay]. Hallow applies +[effect0.trigger0.effect0.power][health] to Stryx on [incant].",
+        "french": "Stryx applique +[effect1.trigger0.effect0.power][attack] à Hallow avec [slay]. Hallow applique +[effect0.trigger0.effect0.power][health] à Stryx avec [incant].",
+        "german": "Stryx wendet beim [slay] +[effect1.trigger0.effect0.power][attack] auf Hallow an. Hallow wendet bei [incant] +[effect0.trigger0.effect0.power][health] auf Stryx an.",
+        "russian": "[slay]: Стрикс дает Хэллоу +[effect1.trigger0.effect0.power][attack]. [incant]: Хэллоу дает Стрикс +[effect0.trigger0.effect0.power][health].",
+        "portuguese": "Stryx concede +[effect1.trigger0.effect0.power][attack] ao Hallow durante o <b>Abate</b>. Hallow concede +[effect0.trigger0.effect0.power][health] à Stryx durante o [incant].",
+        "chinese": "斯特里克斯触发[slay]时使哈洛获得 +[effect1.trigger0.effect0.power][attack]。哈洛触发[incant]时使斯特里克斯获得 +[effect0.trigger0.effect0.power][health]。",
+        "spanish": "Estrix añade +[effect1.trigger0.effect0.power][attack] a Sacro en [slay]. Sacro añade +[effect0.trigger0.effect0.power][health] a Estrix al aplicar [incant].",
+        "chinese_traditional": "史崔克斯在[slay]時對哈洛施加+[effect1.trigger0.effect0.power][attack]。哈洛在[incant]時對史崔克斯施加+[effect0.trigger0.effect0.power][health]。",
+        "korean": "[slay] 시 스트릭스가 할로우에게 +[effect1.trigger0.effect0.power][attack]을 부여합니다. [incant] 시 할로우가 스트릭스에게 +[effect0.trigger0.effect0.power][health]을 부여합니다.",
+        "japanese": "ストリクスは[slay]時にハロウに+[effect0.trigger0.effect0.power][health]を付与する。ハロウは[incant]時にストリクスに+[effect1.trigger0.effect0.power][attack]を付与する。"
+      },
+      "relic_effects": [
+        "@Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects0",
+        "@Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects0.triggers0"
+      ],
+      "param_source_team": "heroes",
+      "trigger_tooltips_suppressed": true,
+      "param_characters": [
         "Boss_Level6_AngelDuo_Entropic_Variant2_IncantHealth"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects1",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "SinsData_descriptionKey-9abc1712857075ce-4f340900b1e75ec44bb60e4ec4b275e2-v2",
-            "english": "Apply +[effect0.power][attack] to Hallow.",
-            "french": "Applique +[effect0.power][attack] à Hallow.",
-            "german": "Wende +[effect0.power][attack] auf Hallow an.",
-            "russian": "Дает Хэллоу +[effect0.power][attack].",
-            "portuguese": "Concede +[effect0.power][attack] ao Hallow.",
-            "chinese": "使哈洛获得 +[effect0.power][attack]。",
-            "spanish": "Añade +[effect0.power][attack] a Sacro.",
-            "chinese_traditional": "對哈洛施加+[effect0.power][attack]。",
-            "korean": "할로우에 +[effect0.power][attack]을 적용합니다.",
-            "japanese": "ハロウに+[effect0.power][attack]を付与する。"
-          },
-          "trigger": "on_kill",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffDamage",
-              "targetMode": "tower",
-              "targetTeamType": "both",
-              "targetCharacterSubtype": "SubtypesData_EntropicAngel",
-              "paramInt": 5
-            }
-          ],
-          "removeOnRelentlessChange": true
-        }
+        "@Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects1.triggers0"
       ],
-      "paramSourceTeam": "heroes",
-      "triggerTooltipsSuppressed": true,
-      "paramCharacters": [
+      "param_source_team": "heroes",
+      "trigger_tooltips_suppressed": true,
+      "param_characters": [
         "Boss_Level6_AngelDuo_Savage_Variant2_SlayAttack"
       ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects0.triggers0",
+      "descriptions": {
+        "key": "SinsData_descriptionKey-bc34807db66132c4-4f340900b1e75ec44bb60e4ec4b275e2-v2",
+        "english": "Apply +[effect0.power][health] to Stryx.",
+        "french": "Applique +[effect0.power][health] à Stryx.",
+        "german": "Wende +[effect0.power][health] auf Stryx an.",
+        "russian": "Дает Стрикс +[effect0.power][health].",
+        "portuguese": "Concede +[effect0.power][health] à Stryx.",
+        "chinese": "使斯特里克斯获得 +[effect0.power][health]。",
+        "spanish": "Añade +[effect0.power][health] a Estrix.",
+        "chinese_traditional": "對史崔克斯施加+[effect0.power][health]。",
+        "korean": "스트릭스에 +[effect0.power][health]을 적용합니다.",
+        "japanese": "ストリクスに+[effect0.power][health]を付与する。"
+      },
+      "trigger": "card_spell_played",
+      "effects": [
+        "@Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects0.triggers0.effects0"
+      ],
+      "remove_on_relentless_change": true
+    },
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects1.triggers0",
+      "descriptions": {
+        "key": "SinsData_descriptionKey-9abc1712857075ce-4f340900b1e75ec44bb60e4ec4b275e2-v2",
+        "english": "Apply +[effect0.power][attack] to Hallow.",
+        "french": "Applique +[effect0.power][attack] à Hallow.",
+        "german": "Wende +[effect0.power][attack] auf Hallow an.",
+        "russian": "Дает Хэллоу +[effect0.power][attack].",
+        "portuguese": "Concede +[effect0.power][attack] ao Hallow.",
+        "chinese": "使哈洛获得 +[effect0.power][attack]。",
+        "spanish": "Añade +[effect0.power][attack] a Sacro.",
+        "chinese_traditional": "對哈洛施加+[effect0.power][attack]。",
+        "korean": "할로우에 +[effect0.power][attack]을 적용합니다.",
+        "japanese": "ハロウに+[effect0.power][attack]を付与する。"
+      },
+      "trigger": "on_kill",
+      "effects": [
+        "@Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects1.triggers0.effects0"
+      ],
+      "remove_on_relentless_change": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects0.triggers0.effects0",
+      "name": "CardEffectBuffMaxHealth",
+      "target_mode": "tower",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_SavageAngel",
+      "param_int": 50
+    },
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_SlayAttackIncantHealth_TitanTrial.effects1.triggers0.effects0",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "tower",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_EntropicAngel",
+      "param_int": 5
     }
   ]
 }

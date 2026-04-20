@@ -1,0 +1,58 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "MoreRares_EndlessMutatorData",
+      "name": "Rarify",
+      "type": "endless_mutator",
+      "extensions": [
+        {
+          "endless_mutator": {
+          }
+        }
+      ],
+      "names": {
+        "key": "EndlessMutatorData_nameKey-5292ea6f5f75f18f-e2729d9db58ea7f4bbf546a575e00d51-v2",
+        "english": "Rarify",
+        "french": "Raréfaction",
+        "german": "Rarifizierung",
+        "russian": "Коллекция редкостей",
+        "portuguese": "Rarear",
+        "chinese": "稀有化",
+        "spanish": "Rarificación",
+        "chinese_traditional": "稀有化",
+        "korean": "희귀화",
+        "japanese": "レアでいこう"
+      },
+      "descriptions": {
+        "key": "EndlessMutatorData_descriptionKey-eaaea918372d554f-e2729d9db58ea7f4bbf546a575e00d51-v2",
+        "english": "Rare cards are more frequent in drafts",
+        "french": "Les cartes rares sont plus fréquentes dans les drafts.",
+        "german": "Mehr seltene Karten in der Auswahl.",
+        "russian": "В драфтах чаще встречаются редкие карты.",
+        "portuguese": "As cartas raras são mais frequentes nas escolhas",
+        "chinese": "自选卡牌时稀有卡牌出现几率提高",
+        "spanish": "Las cartas raras son más frecuentes en las elecciones.",
+        "chinese_traditional": "在構築中，稀有卡牌更常見",
+        "korean": "드래프트에서 희귀 카드가 더 자주 등장합니다.",
+        "japanese": "ドラフトでレアのカードが出やすくなる。"
+      },
+      "relic_effects": [
+        "@MoreRares_EndlessMutatorData.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "MoreRares_EndlessMutatorData.effects0",
+      "name": "RelicEffectModifyCardDraftRarity",
+      "param_rarity_multipliers": [
+        {
+          "rarity": "rare",
+          "multiplier": 4.0
+        }
+      ],
+      "param_rarity_ticket_type": "card"
+    }
+  ]
+}

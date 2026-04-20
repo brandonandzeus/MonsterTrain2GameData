@@ -1,38 +1,53 @@
 {
-  "id": "Enemy_HealOnAscend",
-  "guid": "804934f0-cfa6-4c17-badf-8c0f918c9953",
-  "name": "Heaven's Seal",
-  "nameKey": {
-    "key": "SinsData_nameKey-ea2a93e0eba6be44-5a268a87653a9064ba547b1444b4c668-v2",
-    "english": "Heaven's Seal",
-    "french": "Sceau du paradis",
-    "german": "Siegel des Himmels",
-    "russian": "Печать Небес",
-    "portuguese": "Selo Divino",
-    "chinese": "天堂印记",
-    "spanish": "Sello del Cielo",
-    "chinese_traditional": "天堂印記",
-    "korean": "천상의 봉인",
-    "japanese": "天界の印"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-d23d6de33eeeeebb-5a268a87653a9064ba547b1444b4c668-v2",
-    "english": "Non-boss enemy units restore [effect0.power] health when they move up a floor.",
-    "french": "Les unités ennemies (hors boss) regagnent <nobr>[effect0.power] PV</nobr> en montant d'un niveau.",
-    "german": "Gegnerische Nicht-Boss-Einheiten stellen [effect0.power] Gesundheit wieder her, wenn sie eine Ebene aufsteigen.",
-    "russian": "Поднимаясь выше, враги не-боссы восстанавливают [effect0.power] своего здоровья.",
-    "portuguese": "Unidades inimigas que não sejam Chefão restauram [effect0.power] de vida quando sobem de andar.",
-    "chinese": "敌方非首领单位向上移动一层之后，会恢复 [effect0.power] 点生命值。",
-    "spanish": "Las unidades enemigas no jefe recuperan [effect0.power] de salud al subir de piso.",
-    "chinese_traditional": "非首領敵方單位在上升一層時恢復[effect0.power]生命值。",
-    "korean": "보스 외 적 유닛들이 다음 층으로 올라가면 체력을 [effect0.power] 회복합니다.",
-    "japanese": "非ボスの敵ユニットが、フロアを上昇した際に体力を[effect0.power]回復する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectHealEnemyOnAscend",
-      "paramInt": 150,
-      "paramExcludeCharacterSubtypes": [
+      "id": "Enemy_HealOnAscend",
+      "name": "Heaven's Seal",
+      "type": "sin",
+      "extensions": [
+        {
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-ea2a93e0eba6be44-5a268a87653a9064ba547b1444b4c668-v2",
+        "english": "Heaven's Seal",
+        "french": "Sceau du paradis",
+        "german": "Siegel des Himmels",
+        "russian": "Печать Небес",
+        "portuguese": "Selo Divino",
+        "chinese": "天堂印记",
+        "spanish": "Sello del Cielo",
+        "chinese_traditional": "天堂印記",
+        "korean": "천상의 봉인",
+        "japanese": "天界の印"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-d23d6de33eeeeebb-5a268a87653a9064ba547b1444b4c668-v2",
+        "english": "Non-boss enemy units restore [effect0.power] health when they move up a floor.",
+        "french": "Les unités ennemies (hors boss) regagnent <nobr>[effect0.power] PV</nobr> en montant d'un niveau.",
+        "german": "Gegnerische Nicht-Boss-Einheiten stellen [effect0.power] Gesundheit wieder her, wenn sie eine Ebene aufsteigen.",
+        "russian": "Поднимаясь выше, враги не-боссы восстанавливают [effect0.power] своего здоровья.",
+        "portuguese": "Unidades inimigas que não sejam Chefão restauram [effect0.power] de vida quando sobem de andar.",
+        "chinese": "敌方非首领单位向上移动一层之后，会恢复 [effect0.power] 点生命值。",
+        "spanish": "Las unidades enemigas no jefe recuperan [effect0.power] de salud al subir de piso.",
+        "chinese_traditional": "非首領敵方單位在上升一層時恢復[effect0.power]生命值。",
+        "korean": "보스 외 적 유닛들이 다음 층으로 올라가면 체력을 [effect0.power] 회복합니다.",
+        "japanese": "非ボスの敵ユニットが、フロアを上昇した際に体力を[effect0.power]回復する。"
+      },
+      "relic_effects": [
+        "@Enemy_HealOnAscend.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_HealOnAscend.effects0",
+      "name": "RelicEffectHealEnemyOnAscend",
+      "param_int": 150,
+      "param_excluded_subtypes": [
         "SubtypesData_Boss",
         "SubtypesData_TreasureCollector"
       ]

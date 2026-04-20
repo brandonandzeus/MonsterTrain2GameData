@@ -1,48 +1,68 @@
 {
-  "id": "Enemy_SpawnHeroEaterFeedAtkHP",
-  "guid": "ac1a8e17-bd40-45fa-ad2b-7bacae9662ce",
-  "name": "Nourishing Feed",
-  "nameKey": {
-    "key": "SinsData_nameKey-8ec5fa607cf1ab95-3b5340e1a83be8442b6113b3bb7fd3c6-v2",
-    "english": "Nourishing Feed",
-    "french": "Nourriture roborative",
-    "german": "Nahrhaftes Futter",
-    "russian": "Вкусный обед",
-    "portuguese": "Ração Nutritiva",
-    "chinese": "滋养进食",
-    "spanish": "Fuente nutritiva",
-    "chinese_traditional": "滋養餵食",
-    "korean": "활력의 먹이",
-    "japanese": "養いの食料"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-c812bf9f5ec8b67b-3b5340e1a83be8442b6113b3bb7fd3c6-v2",
-    "english": "Cael and his cherubs grant +[effect0.power][health] and [spikes] [effect1.power] to enemy units.",
-    "french": "Cael et ses chérubins octroient +[effect0.power][health] et [spikes] [effect1.power] aux ennemis.",
-    "german": "Cael und seine Cherubim gewähren gegnerischen Einheiten +[effect0.power][health] und [spikes] [effect1.power].",
-    "russian": "Каэль и херувимы дают своим бойцам +[effect0.power][health] и [spikes] [effect1.power].",
-    "portuguese": "Cael e seus querubins concedem +[effect0.power][health] e [spikes] [effect1.power] às unidades inimigas.",
-    "chinese": "凯尔和他的小天使会使敌方单位获得 +[effect0.power][health] 和 [spikes] [effect1.power]。",
-    "spanish": "Cael y sus querubines otorgan +[effect0.power][health] y [spikes] [effect1.power] a las unidades enemigas.",
-    "chinese_traditional": "凱爾和他的天使寶寶賦予敵方單位+[effect0.power][health]和[spikes][effect1.power]。",
-    "korean": "카엘과 카엘의 케루빔이 적 유닛에 +[effect0.power][health] 및 [spikes] [effect1.power] 효과를 부여합니다.",
-    "japanese": "キャエルと智天使が敵ユニットに+[effect0.power][health]と[spikes] [effect1.power]を付与する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectNull",
-      "additionalTooltips": [
+      "id": "Enemy_SpawnHeroEaterFeedAtkHP",
+      "name": "Nourishing Feed",
+      "type": "sin",
+      "extensions": [
         {
-          "statusId": "spikes",
-          "style": "default",
-          "isStatusTooltip": true
+          "sin": {
+          }
         }
       ],
-      "paramInt": 35
+      "names": {
+        "key": "SinsData_nameKey-8ec5fa607cf1ab95-3b5340e1a83be8442b6113b3bb7fd3c6-v2",
+        "english": "Nourishing Feed",
+        "french": "Nourriture roborative",
+        "german": "Nahrhaftes Futter",
+        "russian": "Вкусный обед",
+        "portuguese": "Ração Nutritiva",
+        "chinese": "滋养进食",
+        "spanish": "Fuente nutritiva",
+        "chinese_traditional": "滋養餵食",
+        "korean": "활력의 먹이",
+        "japanese": "養いの食料"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-c812bf9f5ec8b67b-3b5340e1a83be8442b6113b3bb7fd3c6-v2",
+        "english": "Cael and his cherubs grant +[effect0.power][health] and [spikes] [effect1.power] to enemy units.",
+        "french": "Cael et ses chérubins octroient +[effect0.power][health] et [spikes] [effect1.power] aux ennemis.",
+        "german": "Cael und seine Cherubim gewähren gegnerischen Einheiten +[effect0.power][health] und [spikes] [effect1.power].",
+        "russian": "Каэль и херувимы дают своим бойцам +[effect0.power][health] и [spikes] [effect1.power].",
+        "portuguese": "Cael e seus querubins concedem +[effect0.power][health] e [spikes] [effect1.power] às unidades inimigas.",
+        "chinese": "凯尔和他的小天使会使敌方单位获得 +[effect0.power][health] 和 [spikes] [effect1.power]。",
+        "spanish": "Cael y sus querubines otorgan +[effect0.power][health] y [spikes] [effect1.power] a las unidades enemigas.",
+        "chinese_traditional": "凱爾和他的天使寶寶賦予敵方單位+[effect0.power][health]和[spikes][effect1.power]。",
+        "korean": "카엘과 카엘의 케루빔이 적 유닛에 +[effect0.power][health] 및 [spikes] [effect1.power] 효과를 부여합니다.",
+        "japanese": "キャエルと智天使が敵ユニットに+[effect0.power][health]と[spikes] [effect1.power]を付与する。"
+      },
+      "relic_effects": [
+        "@Enemy_SpawnHeroEaterFeedAtkHP.effects0",
+        "@Enemy_SpawnHeroEaterFeedAtkHP.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_SpawnHeroEaterFeedAtkHP.effects0",
+      "name": "RelicEffectNull",
+      "additional_tooltips": [
+        "@Enemy_SpawnHeroEaterFeedAtkHP.effects0.additionalTooltips0"
+      ],
+      "param_int": 35
     },
     {
-      "relicEffectClassName": "RelicEffectNull",
-      "paramInt": 4
+      "id": "Enemy_SpawnHeroEaterFeedAtkHP.effects1",
+      "name": "RelicEffectNull",
+      "param_int": 4
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Enemy_SpawnHeroEaterFeedAtkHP.effects0.additionalTooltips0",
+      "status": "spikes",
+      "style": "default"
     }
   ]
 }

@@ -1,105 +1,134 @@
 {
-  "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth",
-  "guid": "d65ab741-2ea1-432b-821f-f37ecf99bc45",
-  "name": "Bloody Harvest",
-  "nameKey": {
-    "key": "SinsData_nameKey-78cdaf1b6bc434b1-0b82000b050a0a6408e1607c95a69431-v2",
-    "english": "Bloody Harvest",
-    "french": "Récolte sanglante",
-    "german": "Bluternte",
-    "russian": "Кровавая жатва",
-    "portuguese": "Colheita Sangrenta",
-    "chinese": "血色收割",
-    "spanish": "Cosecha sangrienta",
-    "chinese_traditional": "血腥收割",
-    "korean": "피의 수확",
-    "japanese": "血塗られた収穫"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-1ffa1316ac41b567-0b82000b050a0a6408e1607c95a69431-v2",
-    "english": "Stryx applies +[effect1.trigger0.effect0.power][attack] to Hallow on [revenge]. Hallow applies +[effect0.trigger0.effect0.power][health] to Stryx on [siphon].",
-    "french": "Stryx applique +[effect1.trigger0.effect0.power][attack] à Hallow avec [revenge]. Hallow applique +[effect0.trigger0.effect0.power][health] à Stryx avec [siphon].",
-    "german": "Stryx wendet beim [revenge] +[effect1.trigger0.effect0.power][attack] auf Hallow an. Hallow wendet bei [siphon] +[effect0.trigger0.effect0.power][health] auf Stryx an.",
-    "russian": "[revenge]: Стрикс дает Хэллоу +[effect1.trigger0.effect0.power][attack]. [siphon]: Хэллоу дает Стрикс +[effect0.trigger0.effect0.power][health].",
-    "portuguese": "Stryx concede +[effect1.trigger0.effect0.power][attack] ao Hallow durante o <b>Abate</b>. Hallow concede +[effect0.trigger0.effect0.power][health] à Stryx durante o [siphon].",
-    "chinese": "斯特里克斯触发 [revenge] 时使哈洛获得 +[effect1.trigger0.effect0.power][attack]。哈洛触发 [siphon] 时使斯特里克斯获得 +[effect0.trigger0.effect0.power][health]。",
-    "spanish": "Estrix añade +[effect1.trigger0.effect0.power][attack] a Sacro como [revenge]. Sacro añade +[effect0.trigger0.effect0.power][health] a Estrix al activar [siphon].",
-    "chinese_traditional": "史崔克斯在[revenge]時對哈洛施加+[effect1.trigger0.effect0.power][attack]。哈洛在[siphon]時對史崔克斯施加+[effect0.trigger0.effect0.power][health]。",
-    "korean": "[revenge] 시 스트릭스가 할로우에게 +[effect1.trigger0.effect0.power][attack]을 부여합니다. [siphon] 시 할로우가 스트릭스에게 +[effect0.trigger0.effect0.power][health]을 부여합니다.",
-    "japanese": "ストリクスは[revenge]時にハロウに+[effect0.trigger0.effect0.power][health]を付与する。ハロウは[siphon]時にストリクスに+[effect1.trigger0.effect0.power][attack]を付与する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth",
+      "name": "Bloody Harvest",
+      "type": "sin",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "SinsData_descriptionKey-db5b947d611bf47e-0b82000b050a0a6408e1607c95a69431-v2",
-            "english": "Apply +[effect0.power][health] to Stryx.",
-            "french": "Applique +[effect0.power][health] à Stryx.",
-            "german": "Wende +[effect0.power][health] auf Stryx an.",
-            "russian": "Дает Стрикс +[effect0.power][health].",
-            "portuguese": "Concede +[effect0.power][health] à Stryx.",
-            "chinese": "使斯特里克斯获得 +[effect0.power][health]。",
-            "spanish": "Añade +[effect0.power][health] a Estrix.",
-            "chinese_traditional": "對史崔克斯施加+[effect0.power][health]。",
-            "korean": "스트릭스에 +[effect0.power][health]을 적용합니다.",
-            "japanese": "ストリクスに+[effect0.power][health]を付与する。"
-          },
-          "trigger": "on_any_hero_death_on_floor",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffMaxHealth",
-              "targetMode": "tower",
-              "targetTeamType": "both",
-              "targetCharacterSubtype": "SubtypesData_SavageAngel",
-              "paramInt": 50
-            }
-          ],
-          "removeOnRelentlessChange": true
+          "sin": {
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "triggerTooltipsSuppressed": true,
-      "paramCharacters": [
+      "names": {
+        "key": "SinsData_nameKey-78cdaf1b6bc434b1-0b82000b050a0a6408e1607c95a69431-v2",
+        "english": "Bloody Harvest",
+        "french": "Récolte sanglante",
+        "german": "Bluternte",
+        "russian": "Кровавая жатва",
+        "portuguese": "Colheita Sangrenta",
+        "chinese": "血色收割",
+        "spanish": "Cosecha sangrienta",
+        "chinese_traditional": "血腥收割",
+        "korean": "피의 수확",
+        "japanese": "血塗られた収穫"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-1ffa1316ac41b567-0b82000b050a0a6408e1607c95a69431-v2",
+        "english": "Stryx applies +[effect1.trigger0.effect0.power][attack] to Hallow on [revenge]. Hallow applies +[effect0.trigger0.effect0.power][health] to Stryx on [siphon].",
+        "french": "Stryx applique +[effect1.trigger0.effect0.power][attack] à Hallow avec [revenge]. Hallow applique +[effect0.trigger0.effect0.power][health] à Stryx avec [siphon].",
+        "german": "Stryx wendet beim [revenge] +[effect1.trigger0.effect0.power][attack] auf Hallow an. Hallow wendet bei [siphon] +[effect0.trigger0.effect0.power][health] auf Stryx an.",
+        "russian": "[revenge]: Стрикс дает Хэллоу +[effect1.trigger0.effect0.power][attack]. [siphon]: Хэллоу дает Стрикс +[effect0.trigger0.effect0.power][health].",
+        "portuguese": "Stryx concede +[effect1.trigger0.effect0.power][attack] ao Hallow durante o <b>Abate</b>. Hallow concede +[effect0.trigger0.effect0.power][health] à Stryx durante o [siphon].",
+        "chinese": "斯特里克斯触发 [revenge] 时使哈洛获得 +[effect1.trigger0.effect0.power][attack]。哈洛触发 [siphon] 时使斯特里克斯获得 +[effect0.trigger0.effect0.power][health]。",
+        "spanish": "Estrix añade +[effect1.trigger0.effect0.power][attack] a Sacro como [revenge]. Sacro añade +[effect0.trigger0.effect0.power][health] a Estrix al activar [siphon].",
+        "chinese_traditional": "史崔克斯在[revenge]時對哈洛施加+[effect1.trigger0.effect0.power][attack]。哈洛在[siphon]時對史崔克斯施加+[effect0.trigger0.effect0.power][health]。",
+        "korean": "[revenge] 시 스트릭스가 할로우에게 +[effect1.trigger0.effect0.power][attack]을 부여합니다. [siphon] 시 할로우가 스트릭스에게 +[effect0.trigger0.effect0.power][health]을 부여합니다.",
+        "japanese": "ストリクスは[revenge]時にハロウに+[effect0.trigger0.effect0.power][health]を付与する。ハロウは[siphon]時にストリクスに+[effect1.trigger0.effect0.power][attack]を付与する。"
+      },
+      "relic_effects": [
+        "@Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects0",
+        "@Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects0.triggers0"
+      ],
+      "param_source_team": "heroes",
+      "trigger_tooltips_suppressed": true,
+      "param_characters": [
         "Boss_Level6_AngelDuo_Entropic_Variant3_HarvestHealth"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects1",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "SinsData_descriptionKey-ea33807b7563a5e6-0b82000b050a0a6408e1607c95a69431-v2",
-            "english": "Apply +[effect0.power][attack] to Hallow.",
-            "french": "Applique +[effect0.power][attack] à Hallow.",
-            "german": "Wende +[effect0.power][attack] auf Hallow an.",
-            "russian": "Дает Хэллоу +[effect0.power][attack].",
-            "portuguese": "Concede +[effect0.power][attack] ao Hallow.",
-            "chinese": "使哈洛获得 +[effect0.power][attack]。",
-            "spanish": "Añade +[effect0.power][attack] a Sacro.",
-            "chinese_traditional": "對哈洛施加+[effect0.power][attack]。",
-            "korean": "할로우에 +[effect0.power][attack]을 적용합니다.",
-            "japanese": "ハロウに+[effect0.power][attack]を付与する。"
-          },
-          "trigger": "on_hit",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffDamage",
-              "targetMode": "tower",
-              "targetTeamType": "both",
-              "targetCharacterSubtype": "SubtypesData_EntropicAngel",
-              "paramInt": 1
-            }
-          ],
-          "removeOnRelentlessChange": true
-        }
+        "@Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects1.triggers0"
       ],
-      "paramSourceTeam": "heroes",
-      "triggerTooltipsSuppressed": true,
-      "paramCharacters": [
+      "param_source_team": "heroes",
+      "trigger_tooltips_suppressed": true,
+      "param_characters": [
         "Boss_Level6_AngelDuo_Savage_Variant3_RevengeAttack"
       ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects0.triggers0",
+      "descriptions": {
+        "key": "SinsData_descriptionKey-db5b947d611bf47e-0b82000b050a0a6408e1607c95a69431-v2",
+        "english": "Apply +[effect0.power][health] to Stryx.",
+        "french": "Applique +[effect0.power][health] à Stryx.",
+        "german": "Wende +[effect0.power][health] auf Stryx an.",
+        "russian": "Дает Стрикс +[effect0.power][health].",
+        "portuguese": "Concede +[effect0.power][health] à Stryx.",
+        "chinese": "使斯特里克斯获得 +[effect0.power][health]。",
+        "spanish": "Añade +[effect0.power][health] a Estrix.",
+        "chinese_traditional": "對史崔克斯施加+[effect0.power][health]。",
+        "korean": "스트릭스에 +[effect0.power][health]을 적용합니다.",
+        "japanese": "ストリクスに+[effect0.power][health]を付与する。"
+      },
+      "trigger": "on_any_hero_death_on_floor",
+      "effects": [
+        "@Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects0.triggers0.effects0"
+      ],
+      "remove_on_relentless_change": true
+    },
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects1.triggers0",
+      "descriptions": {
+        "key": "SinsData_descriptionKey-ea33807b7563a5e6-0b82000b050a0a6408e1607c95a69431-v2",
+        "english": "Apply +[effect0.power][attack] to Hallow.",
+        "french": "Applique +[effect0.power][attack] à Hallow.",
+        "german": "Wende +[effect0.power][attack] auf Hallow an.",
+        "russian": "Дает Хэллоу +[effect0.power][attack].",
+        "portuguese": "Concede +[effect0.power][attack] ao Hallow.",
+        "chinese": "使哈洛获得 +[effect0.power][attack]。",
+        "spanish": "Añade +[effect0.power][attack] a Sacro.",
+        "chinese_traditional": "對哈洛施加+[effect0.power][attack]。",
+        "korean": "할로우에 +[effect0.power][attack]을 적용합니다.",
+        "japanese": "ハロウに+[effect0.power][attack]を付与する。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects1.triggers0.effects0"
+      ],
+      "remove_on_relentless_change": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects0.triggers0.effects0",
+      "name": "CardEffectBuffMaxHealth",
+      "target_mode": "tower",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_SavageAngel",
+      "param_int": 50
+    },
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_RevengeAttackHarvestHealth.effects1.triggers0.effects0",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "tower",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_EntropicAngel",
+      "param_int": 1
     }
   ]
 }

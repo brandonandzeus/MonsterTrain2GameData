@@ -1,57 +1,76 @@
 {
-  "id": "Enemy_SpawnSpikeRocksT3",
-  "guid": "f593e80b-2b81-4fa8-8a4c-1891a5aa84da",
-  "name": "Thorn Guard III",
-  "nameKey": {
-    "key": "SinsData_nameKey-6871a7bcce67ad18-053155aa894b9ed40bc97361b9043c12-v2",
-    "english": "Thorn Guard",
-    "french": "Gardépine",
-    "german": "Dornenwache",
-    "russian": "Колючий страж",
-    "portuguese": "Guarda Espinhoso",
-    "chinese": "荆棘守卫",
-    "spanish": "Guardia espinoso",
-    "chinese_traditional": "荊棘守衛",
-    "korean": "가시 경비병",
-    "japanese": "トゲトゲ防衛"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-92607688e9023fbe-053155aa894b9ed40bc97361b9043c12-v2",
-    "english": "A Penitent Prayerstone is spawned on each floor.",
-    "french": "Une Pierre offertoire de pénitent est générée à chaque niveau.",
-    "german": "Auf jeder Ebene erscheint ein Büßer-Gebetstein.",
-    "russian": "На каждом этаже появляется статуя покаяния.",
-    "portuguese": "Uma Pedra de Oração do Penitente é convocada em cada andar.",
-    "chinese": "每层都会出现虔信者祷告石。",
-    "spanish": "Aparece una Piedra oratoria penitente en cada piso.",
-    "chinese_traditional": "在每個樓層上生成一個懺悔者祈禱石。",
-    "korean": "각 층에 참회의 기도석이 생성됩니다.",
-    "japanese": "各フロアに悔悟者の祈念石が出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitStartOfCombat",
-      "paramSourceTeam": "heroes",
-      "paramInt": 2,
-      "paramCharacters": [
+      "id": "Enemy_SpawnSpikeRocksT3",
+      "name": "Thorn Guard III",
+      "type": "sin",
+      "extensions": [
+        {
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-6871a7bcce67ad18-053155aa894b9ed40bc97361b9043c12-v2",
+        "english": "Thorn Guard",
+        "french": "Gardépine",
+        "german": "Dornenwache",
+        "russian": "Колючий страж",
+        "portuguese": "Guarda Espinhoso",
+        "chinese": "荆棘守卫",
+        "spanish": "Guardia espinoso",
+        "chinese_traditional": "荊棘守衛",
+        "korean": "가시 경비병",
+        "japanese": "トゲトゲ防衛"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-92607688e9023fbe-053155aa894b9ed40bc97361b9043c12-v2",
+        "english": "A Penitent Prayerstone is spawned on each floor.",
+        "french": "Une Pierre offertoire de pénitent est générée à chaque niveau.",
+        "german": "Auf jeder Ebene erscheint ein Büßer-Gebetstein.",
+        "russian": "На каждом этаже появляется статуя покаяния.",
+        "portuguese": "Uma Pedra de Oração do Penitente é convocada em cada andar.",
+        "chinese": "每层都会出现虔信者祷告石。",
+        "spanish": "Aparece una Piedra oratoria penitente en cada piso.",
+        "chinese_traditional": "在每個樓層上生成一個懺悔者祈禱石。",
+        "korean": "각 층에 참회의 기도석이 생성됩니다.",
+        "japanese": "各フロアに悔悟者の祈念石が出現する。"
+      },
+      "relic_effects": [
+        "@Enemy_SpawnSpikeRocksT3.effects0",
+        "@Enemy_SpawnSpikeRocksT3.effects1",
+        "@Enemy_SpawnSpikeRocksT3.effects2"
+      ],
+      "disallow_in_deployment": true
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_SpawnSpikeRocksT3.effects0",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_source_team": "heroes",
+      "param_int": 2,
+      "param_characters": [
         "SpikyRockT3_BasicNonAttack"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitStartOfCombat",
-      "paramSourceTeam": "heroes",
-      "paramInt": 1,
-      "paramCharacters": [
+      "id": "Enemy_SpawnSpikeRocksT3.effects1",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_source_team": "heroes",
+      "param_int": 1,
+      "param_characters": [
         "SpikyRockT3_BasicNonAttack"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectSpawnUnitStartOfCombat",
-      "paramSourceTeam": "heroes",
-      "paramCharacters": [
+      "id": "Enemy_SpawnSpikeRocksT3.effects2",
+      "name": "RelicEffectSpawnUnitStartOfCombat",
+      "param_source_team": "heroes",
+      "param_characters": [
         "SpikyRockT3_BasicNonAttack"
       ]
     }
-  ],
-  "disallowInDeploymentPhase": true
+  ]
 }

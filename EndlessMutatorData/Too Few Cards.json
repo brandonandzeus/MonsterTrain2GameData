@@ -1,0 +1,53 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "DamageFromCardsUnderEndlessMutatorData",
+      "name": "Too Few Cards",
+      "type": "endless_mutator",
+      "extensions": [
+        {
+          "endless_mutator": {
+          }
+        }
+      ],
+      "names": {
+        "key": "EndlessMutatorData_nameKey-804dc42667217037-a1cf0de57f9e37541abf4d1e4c4551c9-v2",
+        "english": "Too Few Cards",
+        "french": "Trop peu de cartes",
+        "german": "Zu wenig Karten",
+        "russian": "Слишком мало карт",
+        "portuguese": "Poucas Cartas",
+        "chinese": "卡牌数量过少",
+        "spanish": "Faltan cartas",
+        "chinese_traditional": "卡牌太少",
+        "korean": "부족한 카드",
+        "japanese": "カードが少ない"
+      },
+      "descriptions": {
+        "key": "EndlessMutatorData_descriptionKey-d9862566720b76e5-a1cf0de57f9e37541abf4d1e4c4551c9-v2",
+        "english": "At start of battle take damage for each card under [effect0.power] in your deck.",
+        "french": "Au début du combat, subissez des dégâts par carte en dessous de [effect0.power] dans le deck.",
+        "german": "Zu Beginn des Kampfes erleidest du Schaden für jede Karte unter [effect0.power] in deinem Deck.",
+        "russian": "В начале битвы получите урон за каждую карту ниже [effect0.power] в вашей колоде.",
+        "portuguese": "No início da batalha, sofra dano para cada carta abaixo de [effect0.power] em seu deck.",
+        "chinese": "战斗开始时，你手牌中每张 [effect0.power] 以下的卡牌都会受到伤害。",
+        "spanish": "Al comienzo de la batalla, sufre daño por cada carta inferior a [effect0.power] en tu mazo.",
+        "chinese_traditional": "在戰鬥開始時，牌組中每少於[effect0.power]張卡牌就受到傷害。",
+        "korean": "전투 시작 시, 덱에 있는 카드 수가 [effect0.power]장 미만일 경우, 카드 한 장당 피해를 입습니다.",
+        "japanese": "バトルの開始時に、デッキ内カード枚数が[effect0.power]より少ない場合、カード1枚につき1のダメージを受ける。"
+      },
+      "relic_effects": [
+        "@DamageFromCardsUnderEndlessMutatorData.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DamageFromCardsUnderEndlessMutatorData.effects0",
+      "name": "RelicEffectDamageForNumCardsStartOfBattle",
+      "param_int": 15,
+      "param_int_2": 2
+    }
+  ]
+}

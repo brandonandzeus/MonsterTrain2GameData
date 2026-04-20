@@ -1,37 +1,52 @@
 {
-  "id": "Enemy_LowerDraw",
-  "guid": "674526dc-1c96-407e-802e-6c16434c48db",
-  "name": "Mind Muddler",
-  "nameKey": {
-    "key": "SinsData_nameKey-aa3890a2ba2562b1-947c3cdf435ff484f8b80c6d25958f9c-v2",
-    "english": "Mind Muddler",
-    "french": "Trouble-esprit",
-    "german": "Gedankentrüber",
-    "russian": "Головоломщик",
-    "portuguese": "Mudança Mental",
-    "chinese": "心智搅拌者",
-    "spanish": "Ofuscamiento",
-    "chinese_traditional": "心智混亂者",
-    "korean": "혼란의 씨앗",
-    "japanese": "精神の撹乱者"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-5561b52d400d67bf-947c3cdf435ff484f8b80c6d25958f9c-v2",
-    "english": "Draw [effect0.power] each turn. ",
-    "french": "Piochez [effect0.power] à chaque tour. ",
-    "german": "Ziehe jeden Zug [power]. ",
-    "russian": "Берите [effect0.power] каждый ход.",
-    "portuguese": "Compra [effect0.power] a cada turno. ",
-    "chinese": "每回合抽 [effect0.power] 张牌。 ",
-    "spanish": "Roba [effect0.power] cada turno. ",
-    "chinese_traditional": "每回合抽[effect0.power]張牌。 ",
-    "korean": "각 턴마다 카드를 [effect0.power]장 뽑습니다. ",
-    "japanese": "毎ターン、ドロー[effect0.power]。 "
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectChangeStartingHandSize",
-      "paramInt": -1
+      "id": "Enemy_LowerDraw",
+      "name": "Mind Muddler",
+      "type": "sin",
+      "extensions": [
+        {
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-aa3890a2ba2562b1-947c3cdf435ff484f8b80c6d25958f9c-v2",
+        "english": "Mind Muddler",
+        "french": "Trouble-esprit",
+        "german": "Gedankentrüber",
+        "russian": "Головоломщик",
+        "portuguese": "Mudança Mental",
+        "chinese": "心智搅拌者",
+        "spanish": "Ofuscamiento",
+        "chinese_traditional": "心智混亂者",
+        "korean": "혼란의 씨앗",
+        "japanese": "精神の撹乱者"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-5561b52d400d67bf-947c3cdf435ff484f8b80c6d25958f9c-v2",
+        "english": "Draw [effect0.power] each turn. ",
+        "french": "Piochez [effect0.power] à chaque tour. ",
+        "german": "Ziehe jeden Zug [power]. ",
+        "russian": "Берите [effect0.power] каждый ход.",
+        "portuguese": "Compra [effect0.power] a cada turno. ",
+        "chinese": "每回合抽 [effect0.power] 张牌。 ",
+        "spanish": "Roba [effect0.power] cada turno. ",
+        "chinese_traditional": "每回合抽[effect0.power]張牌。 ",
+        "korean": "각 턴마다 카드를 [effect0.power]장 뽑습니다. ",
+        "japanese": "毎ターン、ドロー[effect0.power]。 "
+      },
+      "relic_effects": [
+        "@Enemy_LowerDraw.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_LowerDraw.effects0",
+      "name": "RelicEffectChangeStartingHandSize",
+      "param_int": -1
     }
   ]
 }

@@ -1,48 +1,67 @@
 {
-  "id": "Enemy_CorruptSeraph_ApplyStatuses",
-  "guid": "8d2aa7e6-2992-4809-87e1-6fe2befac166",
-  "name": "Chosen of Dominion",
-  "nameKey": {
-    "key": "SinsData_nameKey-397ede0e63d36367-c928ccffb037d774ebc514e03c306220-v2",
-    "english": "Chosen of Dominion",
-    "french": "Élu de Domination",
-    "german": "Herrschafts Erwählter",
-    "russian": "Избранник Доминиона",
-    "portuguese": "Escolhidos do Domínio",
-    "chinese": "统御泰坦的神选者",
-    "spanish": "Elegido de Dominio",
-    "chinese_traditional": "主宰天選",
-    "korean": "도미니온에게 선택받은 자",
-    "japanese": "ドミニオンに選ばれし者"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-431c8cb9fa477cd1-c928ccffb037d774ebc514e03c306220-v2",
-    "english": "<b>Seraph</b> applies [corruption] [effect0.power] to your units each turn and doubles [corruption] on [strike].",
-    "french": "<b>Séraphin</b> applique [corruption] [effect0.power] chaque tour à vos unités et double la [corruption] à chaque [strike].",
-    "german": "<b>Seraph</b> wendet jeden Zug [corruption] [effect0.power] auf deine Einheiten an und verdoppelt [corruption] bei [strike].",
-    "russian": "Каждый ход <b>Серафим</b> накладывает на ваших бойцов <b>скверну</b> х[effect0.power] и удваивает ее, совершая [strike].",
-    "portuguese": "<b>Serafim</b> aplica [corruption] [effect0.power] às suas unidades a cada turno e dobra [corruption] ao [strike].",
-    "chinese": "<b>炽天使</b>每回合对你的单位施加 [corruption] [effect0.power]，[strike] 时使 [corruption] 翻倍。",
-    "spanish": "<b>Seraph</b> añade [corruption] [effect0.power] a tus unidades cada turno y duplica la [corruption] al <b>Impactar</b>.",
-    "chinese_traditional": "<b>撒拉弗</b>每回合對你的單位施加[corruption][effect0.power]，並在[strike]時加倍[corruption]。",
-    "korean": "<b>세라핌</b>은 매 턴 아군 유닛들에게 [corruption] [effect0.power] 효과를 적용하며, [strike] 시 [corruption] 효과를 두 배로 만듭니다.",
-    "japanese": "<b>セラフ</b>が毎ターン、自軍のユニットに[corruption] [effect0.power]を付与し、[strike]時の[corruption]を2倍にする。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectOnlyTooltips",
-      "additionalTooltips": [
+      "id": "Enemy_CorruptSeraph_ApplyStatuses",
+      "name": "Chosen of Dominion",
+      "type": "sin",
+      "extensions": [
         {
-          "statusId": "corruption",
-          "style": "default",
-          "isStatusTooltip": true
-        },
-        {
-          "trigger": "on_attacking",
-          "style": "default",
-          "isTriggerTooltip": true
+          "sin": {
+          }
         }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-397ede0e63d36367-c928ccffb037d774ebc514e03c306220-v2",
+        "english": "Chosen of Dominion",
+        "french": "Élu de Domination",
+        "german": "Herrschafts Erwählter",
+        "russian": "Избранник Доминиона",
+        "portuguese": "Escolhidos do Domínio",
+        "chinese": "统御泰坦的神选者",
+        "spanish": "Elegido de Dominio",
+        "chinese_traditional": "主宰天選",
+        "korean": "도미니온에게 선택받은 자",
+        "japanese": "ドミニオンに選ばれし者"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-431c8cb9fa477cd1-c928ccffb037d774ebc514e03c306220-v2",
+        "english": "<b>Seraph</b> applies [corruption] [effect0.power] to your units each turn and doubles [corruption] on [strike].",
+        "french": "<b>Séraphin</b> applique [corruption] [effect0.power] chaque tour à vos unités et double la [corruption] à chaque [strike].",
+        "german": "<b>Seraph</b> wendet jeden Zug [corruption] [effect0.power] auf deine Einheiten an und verdoppelt [corruption] bei [strike].",
+        "russian": "Каждый ход <b>Серафим</b> накладывает на ваших бойцов <b>скверну</b> х[effect0.power] и удваивает ее, совершая [strike].",
+        "portuguese": "<b>Serafim</b> aplica [corruption] [effect0.power] às suas unidades a cada turno e dobra [corruption] ao [strike].",
+        "chinese": "<b>炽天使</b>每回合对你的单位施加 [corruption] [effect0.power]，[strike] 时使 [corruption] 翻倍。",
+        "spanish": "<b>Seraph</b> añade [corruption] [effect0.power] a tus unidades cada turno y duplica la [corruption] al <b>Impactar</b>.",
+        "chinese_traditional": "<b>撒拉弗</b>每回合對你的單位施加[corruption][effect0.power]，並在[strike]時加倍[corruption]。",
+        "korean": "<b>세라핌</b>은 매 턴 아군 유닛들에게 [corruption] [effect0.power] 효과를 적용하며, [strike] 시 [corruption] 효과를 두 배로 만듭니다.",
+        "japanese": "<b>セラフ</b>が毎ターン、自軍のユニットに[corruption] [effect0.power]を付与し、[strike]時の[corruption]を2倍にする。"
+      },
+      "relic_effects": [
+        "@Enemy_CorruptSeraph_ApplyStatuses.effects0"
       ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_CorruptSeraph_ApplyStatuses.effects0",
+      "name": "RelicEffectOnlyTooltips",
+      "additional_tooltips": [
+        "@Enemy_CorruptSeraph_ApplyStatuses.effects0.additionalTooltips0",
+        "@Enemy_CorruptSeraph_ApplyStatuses.effects0.additionalTooltips1"
+      ]
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Enemy_CorruptSeraph_ApplyStatuses.effects0.additionalTooltips0",
+      "status": "corruption",
+      "style": "default"
+    },
+    {
+      "id": "Enemy_CorruptSeraph_ApplyStatuses.effects0.additionalTooltips1",
+      "trigger": "on_attacking",
+      "style": "default"
     }
   ]
 }

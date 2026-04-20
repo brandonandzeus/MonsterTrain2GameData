@@ -1,0 +1,54 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "DominionCurse_Artifact_EndlessMutatorData",
+      "name": "Curse of Friendly Fire",
+      "type": "endless_mutator",
+      "extensions": [
+        {
+          "endless_mutator": {
+          }
+        }
+      ],
+      "names": {
+        "key": "EndlessMutatorData_nameKey-d24d69c606798e3a-ee7f3f0110729d34fa830862a85cd4c2-v2",
+        "english": "Curse of Friendly Fire",
+        "french": "Malédiction du tir allié",
+        "german": "Fluch des Eigenbeschusses",
+        "russian": "Проклятие дружественного огня",
+        "portuguese": "Maldição do Fogo Amigo",
+        "chinese": "误伤诅咒",
+        "spanish": "Maldición de fuego amigo",
+        "chinese_traditional": "友軍傷害的詛咒",
+        "korean": "아군 피해의 저주",
+        "japanese": "誤射の呪い"
+      },
+      "descriptions": {
+        "key": "EndlessMutatorData_descriptionKey-ca0b7b8cd8aa8715-ee7f3f0110729d34fa830862a85cd4c2-v2",
+        "english": "All Friendly units take 3 damage when a unit is summoned.",
+        "french": "Lorsqu'une unité est invoquée, tous les alliés subissent <nobr>3 DGT.</nobr>",
+        "german": "Alle verbündeten Einheiten erleiden 3 Schaden, wenn eine Einheit gerufen wird.",
+        "russian": "Во время призыва бойца все союзники получают 3 урона.",
+        "portuguese": "Todas as unidades aliadas recebem 3 de dano quando uma unidade é invocada.",
+        "chinese": "召唤一个单位时，所有友方单位受到3点伤害。",
+        "spanish": "Todas las unidades aliadas sufren 3 de daño al invocar una unidad.",
+        "chinese_traditional": "當一個單位被召喚時，所有友方單位受到3點傷害。",
+        "korean": "유닛이 소환될 때 모든 아군 유닛이 3의 피해를 입습니다.",
+        "japanese": "ユニットが召喚されるとすべての味方ユニットが3のダメージを受ける。"
+      },
+      "relic_effects": [
+        "@DominionCurse_Artifact_EndlessMutatorData.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DominionCurse_Artifact_EndlessMutatorData.effects0",
+      "name": "RelicEffectDamageOnMonsterSummoned",
+      "param_source_team": "monsters",
+      "param_int": 3,
+      "target_mode": "room"
+    }
+  ]
+}

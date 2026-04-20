@@ -1,0 +1,58 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "MoreCommons_Artifact_EndlessMutatorData",
+      "name": "Commonizer",
+      "type": "endless_mutator",
+      "extensions": [
+        {
+          "endless_mutator": {
+          }
+        }
+      ],
+      "names": {
+        "key": "EndlessMutatorData_nameKey-d0df3d50fcdc01c0-0dbe0d271b26fa74ab103e45116f70e3-v2",
+        "english": "Commonizer",
+        "french": "Banalisation",
+        "german": "Vergewöhnlicher",
+        "russian": "Обыкно-веяние",
+        "portuguese": "Trivializar",
+        "chinese": "普通化",
+        "spanish": "Comunización",
+        "chinese_traditional": "普通化",
+        "korean": "일반화",
+        "japanese": "コモンでいこう"
+      },
+      "descriptions": {
+        "key": "EndlessMutatorData_descriptionKey-cae5e8fb75616fb5-0dbe0d271b26fa74ab103e45116f70e3-v2",
+        "english": "Common cards are more frequent in drafts",
+        "french": "Les cartes ordinaires sont plus fréquentes dans les drafts.",
+        "german": "Mehr gewöhnliche Karten in der Auswahl.",
+        "russian": "В драфтах чаще встречаются обычные карты.",
+        "portuguese": "As cartas comuns são mais frequentes nas escolhas",
+        "chinese": "自选卡牌时普通卡牌出现几率提高",
+        "spanish": "Las cartas comunes son más frecuentes en las elecciones.",
+        "chinese_traditional": "在構築中，普通卡牌更常見",
+        "korean": "드래프트에서 일반 카드가 더 자주 등장합니다.",
+        "japanese": "ドラフトでコモンのカードが出やすくなる。"
+      },
+      "relic_effects": [
+        "@MoreCommons_Artifact_EndlessMutatorData.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "MoreCommons_Artifact_EndlessMutatorData.effects0",
+      "name": "RelicEffectModifyCardDraftRarity",
+      "param_rarity_multipliers": [
+        {
+          "rarity": "common",
+          "multiplier": 8.0
+        }
+      ],
+      "param_rarity_ticket_type": "card"
+    }
+  ]
+}

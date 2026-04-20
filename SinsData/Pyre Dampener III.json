@@ -1,37 +1,52 @@
 {
-  "id": "Enemy_LowerEmberT3",
-  "guid": "2a156d6d-b563-426f-a270-393aea9e5966",
-  "name": "Pyre Dampener III",
-  "nameKey": {
-    "key": "SinsData_nameKey-501e8aff5c871f8b-6355a9ddd2db3bb40938c1ff2345d0bf-v2",
-    "english": "Pyre Dampener",
-    "french": "Étouffoir de Brasier",
-    "german": "Höllenglutdämpfer",
-    "russian": "Гаситель угля",
-    "portuguese": "Umidificador de Pira",
-    "chinese": "薪火抑制",
-    "spanish": "Disminuidor de la Pira",
-    "chinese_traditional": "火堆抑制器",
-    "korean": "화로 완충 장치",
-    "japanese": "炉弱体化"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-f7a1d9fc4c84448a-6355a9ddd2db3bb40938c1ff2345d0bf-v2",
-    "english": "[effect0.power][ember] per turn.",
-    "french": "[effect0.power][ember] par tour.",
-    "german": "[effect0.power] [ember] pro Zug.",
-    "russian": "[effect0.power][ember] в ход.",
-    "portuguese": "[effect0.power][ember] por turno.",
-    "chinese": "每回合 [effect0.power][ember]。",
-    "spanish": "[effect0.power][ember] por turno.",
-    "chinese_traditional": "每回合[effect0.power][ember]。",
-    "korean": "턴당 [effect0.power][ember].",
-    "japanese": "ターンごとに[effect0.power][ember]。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectModifyEnergy",
-      "paramInt": -1
+      "id": "Enemy_LowerEmberT3",
+      "name": "Pyre Dampener III",
+      "type": "sin",
+      "extensions": [
+        {
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-501e8aff5c871f8b-6355a9ddd2db3bb40938c1ff2345d0bf-v2",
+        "english": "Pyre Dampener",
+        "french": "Étouffoir de Brasier",
+        "german": "Höllenglutdämpfer",
+        "russian": "Гаситель угля",
+        "portuguese": "Umidificador de Pira",
+        "chinese": "薪火抑制",
+        "spanish": "Disminuidor de la Pira",
+        "chinese_traditional": "火堆抑制器",
+        "korean": "화로 완충 장치",
+        "japanese": "炉弱体化"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-f7a1d9fc4c84448a-6355a9ddd2db3bb40938c1ff2345d0bf-v2",
+        "english": "[effect0.power][ember] per turn.",
+        "french": "[effect0.power][ember] par tour.",
+        "german": "[effect0.power] [ember] pro Zug.",
+        "russian": "[effect0.power][ember] в ход.",
+        "portuguese": "[effect0.power][ember] por turno.",
+        "chinese": "每回合 [effect0.power][ember]。",
+        "spanish": "[effect0.power][ember] por turno.",
+        "chinese_traditional": "每回合[effect0.power][ember]。",
+        "korean": "턴당 [effect0.power][ember].",
+        "japanese": "ターンごとに[effect0.power][ember]。"
+      },
+      "relic_effects": [
+        "@Enemy_LowerEmberT3.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_LowerEmberT3.effects0",
+      "name": "RelicEffectModifyEnergy",
+      "param_int": -1
     }
   ]
 }

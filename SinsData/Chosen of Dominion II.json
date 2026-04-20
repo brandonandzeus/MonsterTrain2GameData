@@ -1,65 +1,81 @@
 {
-  "id": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial",
-  "guid": "db574c54-f2fb-4c40-9489-32ddb85ad443",
-  "name": "Chosen of Dominion II",
-  "nameKey": {
-    "key": "SinsData_nameKey-4bf5e43f151a2a33-7f10357af22da6141aba0c7d91551e08-v2",
-    "english": "Chosen of Dominion II",
-    "french": "Élu de Domination II",
-    "german": "Herrschafts Erwählter II",
-    "russian": "Избранник Доминиона II",
-    "portuguese": "Escolhidos do Domínio II",
-    "chinese": "统御泰坦的神选者 II",
-    "spanish": "Elegido de Dominio II",
-    "chinese_traditional": "主宰天選II",
-    "korean": "도미니온에게 선택받은 자 II",
-    "japanese": "ドミニオンに選ばれし者II"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-3357f6b823b9c99e-7f10357af22da6141aba0c7d91551e08-v2",
-    "english": "<b>Seraph</b> applies [corruption] [effect0.power] to your units each turn and doubles [corruption] on [strike].",
-    "french": "<b>Séraphin</b> applique [corruption] [effect0.power] chaque tour à vos unités et double la [corruption] à chaque [strike].",
-    "german": "<b>Seraph</b> wendet jeden Zug [corruption] [effect0.power] auf deine Einheiten an und verdoppelt [corruption] bei [strike].",
-    "russian": "Каждый ход <b>Серафим</b> накладывает на ваших бойцов <b>скверну</b> х[effect0.power] и удваивает ее, совершая [strike].",
-    "portuguese": "<b>Serafim</b> aplica [corruption] [effect0.power] às suas unidades a cada turno e dobra [corruption] ao [strike].",
-    "chinese": "<b>炽天使</b>每回合对你的单位施加 [corruption] [effect0.power]，[strike] 时使 [corruption] 翻倍。",
-    "spanish": "<b>Seraph</b> añade [corruption] [effect0.power] a tus unidades cada turno y duplica la [corruption] al <b>Impactar</b>.",
-    "chinese_traditional": "<b>撒拉弗</b>每回合對你的單位施加[corruption][effect0.power]，並在[strike]時加倍[corruption]。",
-    "korean": "<b>세라핌</b>은 매 턴 아군 유닛들에게 [corruption] [effect0.power] 효과를 적용하며, [strike] 시 [corruption] 효과를 두 배로 만듭니다.",
-    "japanese": "<b>セラフ</b>が毎ターン、自軍のユニットに[corruption] [effect0.power]を付与し、[strike]時の[corruption]を2倍にする。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectOnSpawnHeroSubstitution",
-      "additionalTooltips": [
+      "id": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial",
+      "name": "Chosen of Dominion II",
+      "type": "sin",
+      "extensions": [
         {
-          "statusId": "corruption",
-          "style": "default",
-          "isStatusTooltip": true
-        },
-        {
-          "trigger": "on_hit",
-          "style": "default",
-          "isTriggerTooltip": true
+          "sin": {
+          }
         }
       ],
-      "paramCharacterSubstitution": {
-        "entries": [
-          {
-            "UnitBefore": "Boss_Level8_AllyBuffer",
-            "UnitAfter": "Boss_Level8_AllyBuffer_TitanTrial"
-          },
-          {
-            "UnitBefore": "Boss_Level8_Corrupter",
-            "UnitAfter": "Boss_Level8_Corrupter_TitanTrial"
-          },
-          {
-            "UnitBefore": "Boss_Level8_Fragile",
-            "UnitAfter": "Boss_Level8_Fragile_TitanTrial"
-          }
-        ],
-        "m_Name": "Level8SinSubstitution"
-      }
+      "names": {
+        "key": "SinsData_nameKey-4bf5e43f151a2a33-7f10357af22da6141aba0c7d91551e08-v2",
+        "english": "Chosen of Dominion II",
+        "french": "Élu de Domination II",
+        "german": "Herrschafts Erwählter II",
+        "russian": "Избранник Доминиона II",
+        "portuguese": "Escolhidos do Domínio II",
+        "chinese": "统御泰坦的神选者 II",
+        "spanish": "Elegido de Dominio II",
+        "chinese_traditional": "主宰天選II",
+        "korean": "도미니온에게 선택받은 자 II",
+        "japanese": "ドミニオンに選ばれし者II"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-3357f6b823b9c99e-7f10357af22da6141aba0c7d91551e08-v2",
+        "english": "<b>Seraph</b> applies [corruption] [effect0.power] to your units each turn and doubles [corruption] on [strike].",
+        "french": "<b>Séraphin</b> applique [corruption] [effect0.power] chaque tour à vos unités et double la [corruption] à chaque [strike].",
+        "german": "<b>Seraph</b> wendet jeden Zug [corruption] [effect0.power] auf deine Einheiten an und verdoppelt [corruption] bei [strike].",
+        "russian": "Каждый ход <b>Серафим</b> накладывает на ваших бойцов <b>скверну</b> х[effect0.power] и удваивает ее, совершая [strike].",
+        "portuguese": "<b>Serafim</b> aplica [corruption] [effect0.power] às suas unidades a cada turno e dobra [corruption] ao [strike].",
+        "chinese": "<b>炽天使</b>每回合对你的单位施加 [corruption] [effect0.power]，[strike] 时使 [corruption] 翻倍。",
+        "spanish": "<b>Seraph</b> añade [corruption] [effect0.power] a tus unidades cada turno y duplica la [corruption] al <b>Impactar</b>.",
+        "chinese_traditional": "<b>撒拉弗</b>每回合對你的單位施加[corruption][effect0.power]，並在[strike]時加倍[corruption]。",
+        "korean": "<b>세라핌</b>은 매 턴 아군 유닛들에게 [corruption] [effect0.power] 효과를 적용하며, [strike] 시 [corruption] 효과를 두 배로 만듭니다.",
+        "japanese": "<b>セラフ</b>が毎ターン、自軍のユニットに[corruption] [effect0.power]を付与し、[strike]時の[corruption]を2倍にする。"
+      },
+      "relic_effects": [
+        "@Enemy_CorruptSeraph_ApplyStatuses_TitanTrial.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial.effects0",
+      "name": "RelicEffectOnSpawnHeroSubstitution",
+      "additional_tooltips": [
+        "@Enemy_CorruptSeraph_ApplyStatuses_TitanTrial.effects0.additionalTooltips0",
+        "@Enemy_CorruptSeraph_ApplyStatuses_TitanTrial.effects0.additionalTooltips1"
+      ],
+      "param_character_substitution": [
+        {
+          "UnitBefore": "Boss_Level8_AllyBuffer",
+          "UnitAfter": "Boss_Level8_AllyBuffer_TitanTrial"
+        },
+        {
+          "UnitBefore": "Boss_Level8_Corrupter",
+          "UnitAfter": "Boss_Level8_Corrupter_TitanTrial"
+        },
+        {
+          "UnitBefore": "Boss_Level8_Fragile",
+          "UnitAfter": "Boss_Level8_Fragile_TitanTrial"
+        }
+      ]
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial.effects0.additionalTooltips0",
+      "status": "corruption",
+      "style": "default"
+    },
+    {
+      "id": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial.effects0.additionalTooltips1",
+      "trigger": "on_hit",
+      "style": "default"
     }
   ]
 }

@@ -1,44 +1,59 @@
 {
-  "id": "Enemy_TitanskinT1",
-  "guid": "ea6dfcb7-0a2f-4a6c-a0c7-b413327d672d",
-  "name": "Tough as Nails I",
-  "nameKey": {
-    "key": "SinsData_nameKey-e5686438e6b743a6-d3a65e70a1f999745aee75aec6f2d3e2-v2",
-    "english": "Tough as Nails",
-    "french": "Dur comme la pierre",
-    "german": "Stahlhart",
-    "russian": "Крепкий орешек",
-    "portuguese": "Osso Duro de Roer",
-    "chinese": "韧如钢钉",
-    "spanish": "Duro como el acero",
-    "chinese_traditional": "堅如磐石",
-    "korean": "강철 같은 강인함",
-    "japanese": "強靭"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-3c9ecfe470594835-d3a65e70a1f999745aee75aec6f2d3e2-v2",
-    "english": "Enemy units enter with [titanskin] [effect0.status0.power].",
-    "french": "Les unités ennemies entrent avec [titanskin] [effect0.status0.power].",
-    "german": "Gegnerische Einheiten kommen mit [titanskin] [effect0.status0.power] ins Spiel.",
-    "russian": "Бойцам врага при входе дается [titanskin] х[effect0.status0.power].",
-    "portuguese": "Unidades inimigas entram com [titanskin] [effect0.status0.power].",
-    "chinese": "敌方单位进入战斗时获得[titanskin] [effect0.status0.power]。",
-    "spanish": "Las unidades enemigas entran con [titanskin] [effect0.status0.power].",
-    "chinese_traditional": "敵方單位登場時獲得[titanskin][effect0.status0.power]。",
-    "korean": "적 유닛들이 [titanskin] [effect0.status0.power] 상태로 등장합니다.",
-    "japanese": "敵ユニットが[titanskin] [effect0.status0.power]が付与された状態で出現する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "Enemy_TitanskinT1",
+      "name": "Tough as Nails I",
+      "type": "sin",
+      "extensions": [
         {
-          "statusId": "titanskin",
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-e5686438e6b743a6-d3a65e70a1f999745aee75aec6f2d3e2-v2",
+        "english": "Tough as Nails",
+        "french": "Dur comme la pierre",
+        "german": "Stahlhart",
+        "russian": "Крепкий орешек",
+        "portuguese": "Osso Duro de Roer",
+        "chinese": "韧如钢钉",
+        "spanish": "Duro como el acero",
+        "chinese_traditional": "堅如磐石",
+        "korean": "강철 같은 강인함",
+        "japanese": "強靭"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-3c9ecfe470594835-d3a65e70a1f999745aee75aec6f2d3e2-v2",
+        "english": "Enemy units enter with [titanskin] [effect0.status0.power].",
+        "french": "Les unités ennemies entrent avec [titanskin] [effect0.status0.power].",
+        "german": "Gegnerische Einheiten kommen mit [titanskin] [effect0.status0.power] ins Spiel.",
+        "russian": "Бойцам врага при входе дается [titanskin] х[effect0.status0.power].",
+        "portuguese": "Unidades inimigas entram com [titanskin] [effect0.status0.power].",
+        "chinese": "敌方单位进入战斗时获得[titanskin] [effect0.status0.power]。",
+        "spanish": "Las unidades enemigas entran con [titanskin] [effect0.status0.power].",
+        "chinese_traditional": "敵方單位登場時獲得[titanskin][effect0.status0.power]。",
+        "korean": "적 유닛들이 [titanskin] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "敵ユニットが[titanskin] [effect0.status0.power]が付与された状態で出現する。"
+      },
+      "relic_effects": [
+        "@Enemy_TitanskinT1.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_TitanskinT1.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "titanskin",
           "count": 1
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramExcludeCharacterSubtypes": [
+      "param_source_team": "heroes",
+      "param_excluded_subtypes": [
         "SubtypesData_TreasureCollector"
       ]
     }

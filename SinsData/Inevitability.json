@@ -1,105 +1,134 @@
 {
-  "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth",
-  "guid": "60c199fa-7176-4748-b184-6d59bbdfa246",
-  "name": "Inevitability",
-  "nameKey": {
-    "key": "SinsData_nameKey-39d51a8cba3002f0-f092adb7598318c4e9721a3ccc3706cf-v2",
-    "english": "Inevitability",
-    "french": "Inéluctabilité",
-    "german": "Unausweichlich",
-    "russian": "Неизбежность",
-    "portuguese": "Inevitabilidade",
-    "chinese": "必然结果",
-    "spanish": "Inevitabilidad",
-    "chinese_traditional": "必然性",
-    "korean": "불가피",
-    "japanese": "必然"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-e3d2104705b0db76-f092adb7598318c4e9721a3ccc3706cf-v2",
-    "english": "Stryx applies +[effect1.trigger0.effect0.power][attack] to Hallow on <b>Loop</b>. Hallow applies +[effect0.trigger0.effect0.power][health] to Stryx on [resolve].",
-    "french": "Stryx applique +[effect1.trigger0.effect0.power][attack] à Hallow avec <b>Boucle</b>. Hallow applique +[effect0.trigger0.effect0.power][health] à Stryx avec [resolve].",
-    "german": "Stryx wendet beim <b>Wiederholen</b> +[effect1.trigger0.effect0.power][attack] auf Hallow an. Hallow wendet beim [resolve] +[effect0.trigger0.effect0.power][health] auf Stryx an.",
-    "russian": "<b>Круг</b>: Стрикс дает Хэллоу +[effect1.trigger0.effect0.power][attack]. [resolve]: Хэллоу дает Стрикс +[effect0.trigger0.effect0.power][health].",
-    "portuguese": "Stryx concede +[effect1.trigger0.effect0.power][attack] ao Hallow durante o <b>Ciclo</b>. Hallow concede +[effect0.trigger0.effect0.power][health] à Stryx durante a [resolve].",
-    "chinese": "斯特里克斯触发<b>循环</b>时使哈洛获得 +[effect1.trigger0.effect0.power][attack]。哈洛触发[resolve]时使斯特里克斯获得 +[effect0.trigger0.effect0.power][health]。",
-    "spanish": "Estrix añade +[effect1.trigger0.effect0.power][attack] a Sacro en <b>Bucle</b>. Sacro añade +[effect0.trigger0.effect0.power][health] a Estrix al aplicar [resolve].",
-    "chinese_traditional": "史崔克斯在<b>迴圈</b>時對哈洛施加+[effect1.trigger0.effect0.power][attack]。哈洛在[resolve]時對史崔克斯施加+[effect0.trigger0.effect0.power][health]。",
-    "korean": "<b>순환</b> 시 스트릭스가 할로우에게 +[effect1.trigger0.effect0.power][attack]을 부여합니다. [resolve] 시 할로우가 스트릭스에게 +[effect0.trigger0.effect0.power][health]을 부여합니다.",
-    "japanese": "ストリクスは<b>ループ</b>時にハロウに+[effect0.trigger0.effect0.power][health]を付与する。ハロウは[resolve]時にストリクスに+[effect1.trigger0.effect0.power][attack]を付与する。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
-      "triggers": [
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth",
+      "name": "Inevitability",
+      "type": "sin",
+      "extensions": [
         {
-          "descriptionKey": {
-            "key": "SinsData_descriptionKey-441556831197cc89-f092adb7598318c4e9721a3ccc3706cf-v2",
-            "english": "Apply +[effect0.power][health] to Stryx.",
-            "french": "Applique +[effect0.power][health] à Stryx.",
-            "german": "Wende +[effect0.power][health] auf Stryx an.",
-            "russian": "Дает Стрикс +[effect0.power][health].",
-            "portuguese": "Concede +[effect0.power][health] à Stryx.",
-            "chinese": "使斯特里克斯获得 +[effect0.power][health]。",
-            "spanish": "Añade +[effect0.power][health] a Estrix.",
-            "chinese_traditional": "對史崔克斯施加+[effect0.power][health]。",
-            "korean": "스트릭스에 +[effect0.power][health]을 적용합니다.",
-            "japanese": "ストリクスに+[effect0.power][health]を付与する。"
-          },
-          "trigger": "post_combat",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffMaxHealth",
-              "targetMode": "tower",
-              "targetTeamType": "both",
-              "targetCharacterSubtype": "SubtypesData_SavageAngel",
-              "paramInt": 60
-            }
-          ],
-          "removeOnRelentlessChange": true
+          "sin": {
+          }
         }
       ],
-      "paramSourceTeam": "heroes",
-      "triggerTooltipsSuppressed": true,
-      "paramCharacters": [
+      "names": {
+        "key": "SinsData_nameKey-39d51a8cba3002f0-f092adb7598318c4e9721a3ccc3706cf-v2",
+        "english": "Inevitability",
+        "french": "Inéluctabilité",
+        "german": "Unausweichlich",
+        "russian": "Неизбежность",
+        "portuguese": "Inevitabilidade",
+        "chinese": "必然结果",
+        "spanish": "Inevitabilidad",
+        "chinese_traditional": "必然性",
+        "korean": "불가피",
+        "japanese": "必然"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-e3d2104705b0db76-f092adb7598318c4e9721a3ccc3706cf-v2",
+        "english": "Stryx applies +[effect1.trigger0.effect0.power][attack] to Hallow on <b>Loop</b>. Hallow applies +[effect0.trigger0.effect0.power][health] to Stryx on [resolve].",
+        "french": "Stryx applique +[effect1.trigger0.effect0.power][attack] à Hallow avec <b>Boucle</b>. Hallow applique +[effect0.trigger0.effect0.power][health] à Stryx avec [resolve].",
+        "german": "Stryx wendet beim <b>Wiederholen</b> +[effect1.trigger0.effect0.power][attack] auf Hallow an. Hallow wendet beim [resolve] +[effect0.trigger0.effect0.power][health] auf Stryx an.",
+        "russian": "<b>Круг</b>: Стрикс дает Хэллоу +[effect1.trigger0.effect0.power][attack]. [resolve]: Хэллоу дает Стрикс +[effect0.trigger0.effect0.power][health].",
+        "portuguese": "Stryx concede +[effect1.trigger0.effect0.power][attack] ao Hallow durante o <b>Ciclo</b>. Hallow concede +[effect0.trigger0.effect0.power][health] à Stryx durante a [resolve].",
+        "chinese": "斯特里克斯触发<b>循环</b>时使哈洛获得 +[effect1.trigger0.effect0.power][attack]。哈洛触发[resolve]时使斯特里克斯获得 +[effect0.trigger0.effect0.power][health]。",
+        "spanish": "Estrix añade +[effect1.trigger0.effect0.power][attack] a Sacro en <b>Bucle</b>. Sacro añade +[effect0.trigger0.effect0.power][health] a Estrix al aplicar [resolve].",
+        "chinese_traditional": "史崔克斯在<b>迴圈</b>時對哈洛施加+[effect1.trigger0.effect0.power][attack]。哈洛在[resolve]時對史崔克斯施加+[effect0.trigger0.effect0.power][health]。",
+        "korean": "<b>순환</b> 시 스트릭스가 할로우에게 +[effect1.trigger0.effect0.power][attack]을 부여합니다. [resolve] 시 할로우가 스트릭스에게 +[effect0.trigger0.effect0.power][health]을 부여합니다.",
+        "japanese": "ストリクスは<b>ループ</b>時にハロウに+[effect0.trigger0.effect0.power][health]を付与する。ハロウは[resolve]時にストリクスに+[effect1.trigger0.effect0.power][attack]を付与する。"
+      },
+      "relic_effects": [
+        "@Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects0",
+        "@Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects1"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects0",
+      "name": "RelicEffectAddTrigger",
+      "triggers": [
+        "@Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects0.triggers0"
+      ],
+      "param_source_team": "heroes",
+      "trigger_tooltips_suppressed": true,
+      "param_characters": [
         "Boss_Level6_AngelDuo_Entropic_Variant1_ResolveHealth"
       ]
     },
     {
-      "relicEffectClassName": "RelicEffectAddTrigger",
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects1",
+      "name": "RelicEffectAddTrigger",
       "triggers": [
-        {
-          "descriptionKey": {
-            "key": "SinsData_descriptionKey-64bf759c2174bd93-f092adb7598318c4e9721a3ccc3706cf-v2",
-            "english": "Apply +[effect0.power][attack] to Hallow.",
-            "french": "Applique +[effect0.power][attack] à Hallow.",
-            "german": "Wende +[effect0.power][attack] auf Hallow an.",
-            "russian": "Дает Хэллоу +[effect0.power][attack].",
-            "portuguese": "Concede +[effect0.power][attack] ao Hallow.",
-            "chinese": "使哈洛获得 +[effect0.power][attack]。",
-            "spanish": "Añade +[effect0.power][attack] a Sacro.",
-            "chinese_traditional": "對哈洛施加+[effect0.power][attack]。",
-            "korean": "할로우에 +[effect0.power][attack]을 적용합니다.",
-            "japanese": "ハロウに+[effect0.power][attack]を付与する。"
-          },
-          "trigger": "on_train_room_loop",
-          "effects": [
-            {
-              "effectStateName": "CardEffectBuffDamage",
-              "targetMode": "tower",
-              "targetTeamType": "both",
-              "targetCharacterSubtype": "SubtypesData_EntropicAngel",
-              "paramInt": 8
-            }
-          ],
-          "removeOnRelentlessChange": true
-        }
+        "@Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects1.triggers0"
       ],
-      "paramSourceTeam": "heroes",
-      "triggerTooltipsSuppressed": true,
-      "paramCharacters": [
+      "param_source_team": "heroes",
+      "trigger_tooltips_suppressed": true,
+      "param_characters": [
         "Boss_Level6_AngelDuo_Savage_Variant1_LoopAttack"
       ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects0.triggers0",
+      "descriptions": {
+        "key": "SinsData_descriptionKey-441556831197cc89-f092adb7598318c4e9721a3ccc3706cf-v2",
+        "english": "Apply +[effect0.power][health] to Stryx.",
+        "french": "Applique +[effect0.power][health] à Stryx.",
+        "german": "Wende +[effect0.power][health] auf Stryx an.",
+        "russian": "Дает Стрикс +[effect0.power][health].",
+        "portuguese": "Concede +[effect0.power][health] à Stryx.",
+        "chinese": "使斯特里克斯获得 +[effect0.power][health]。",
+        "spanish": "Añade +[effect0.power][health] a Estrix.",
+        "chinese_traditional": "對史崔克斯施加+[effect0.power][health]。",
+        "korean": "스트릭스에 +[effect0.power][health]을 적용합니다.",
+        "japanese": "ストリクスに+[effect0.power][health]を付与する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects0.triggers0.effects0"
+      ],
+      "remove_on_relentless_change": true
+    },
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects1.triggers0",
+      "descriptions": {
+        "key": "SinsData_descriptionKey-64bf759c2174bd93-f092adb7598318c4e9721a3ccc3706cf-v2",
+        "english": "Apply +[effect0.power][attack] to Hallow.",
+        "french": "Applique +[effect0.power][attack] à Hallow.",
+        "german": "Wende +[effect0.power][attack] auf Hallow an.",
+        "russian": "Дает Хэллоу +[effect0.power][attack].",
+        "portuguese": "Concede +[effect0.power][attack] ao Hallow.",
+        "chinese": "使哈洛获得 +[effect0.power][attack]。",
+        "spanish": "Añade +[effect0.power][attack] a Sacro.",
+        "chinese_traditional": "對哈洛施加+[effect0.power][attack]。",
+        "korean": "할로우에 +[effect0.power][attack]을 적용합니다.",
+        "japanese": "ハロウに+[effect0.power][attack]を付与する。"
+      },
+      "trigger": "on_train_room_loop",
+      "effects": [
+        "@Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects1.triggers0.effects0"
+      ],
+      "remove_on_relentless_change": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects0.triggers0.effects0",
+      "name": "CardEffectBuffMaxHealth",
+      "target_mode": "tower",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_SavageAngel",
+      "param_int": 60
+    },
+    {
+      "id": "Enemy_Boss_Level6_AngelDuo_LoopAttackResolveHealth.effects1.triggers0.effects0",
+      "name": "CardEffectBuffDamage",
+      "target_mode": "tower",
+      "target_team": "both",
+      "target_subtype": "SubtypesData_EntropicAngel",
+      "param_int": 8
     }
   ]
 }

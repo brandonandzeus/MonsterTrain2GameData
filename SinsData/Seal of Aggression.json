@@ -1,44 +1,59 @@
 {
-  "id": "Enemy_AddMultistrike",
-  "guid": "8ffd2422-7707-4679-bb13-8e847c462437",
-  "name": "Seal of Aggression",
-  "nameKey": {
-    "key": "SinsData_nameKey-a4339117f777101e-49586f167d311654eba7a4b77c5cb6b7-v2",
-    "english": "Seal of Aggression",
-    "french": "Sceau d'agression",
-    "german": "Siegel der Aggression",
-    "russian": "Печать агрессии",
-    "portuguese": "Selo de Agressão",
-    "chinese": "激进印记",
-    "spanish": "Sello de hostilidad",
-    "chinese_traditional": "侵略印記",
-    "korean": "침략의 봉인",
-    "japanese": "攻撃の印"
-  },
-  "descriptionKey": {
-    "key": "SinsData_descriptionKey-567c8f876a3be1c4-49586f167d311654eba7a4b77c5cb6b7-v2",
-    "english": "Non-boss enemy units get [multistrike].",
-    "french": "Les unités ennemies (hors boss) ont <b>Frappe multiple</b>.",
-    "german": "Gegnerische Nicht-Boss-Einheiten erhalten [multistrike].",
-    "russian": "Враги не-боссы получают [multistrike].",
-    "portuguese": "Unidades inimigas que não sejam chefão recebem <b>Golpe Múltiplo</b>.",
-    "chinese": "敌方非首领单位获得<b>多重攻击</b>。",
-    "spanish": "Las unidades enemigas no jefe añaden [multistrike].",
-    "chinese_traditional": "非首領敵方單位獲得[multistrike]。",
-    "korean": "보스 외 적 유닛들이 [multistrike]을 획득합니다.",
-    "japanese": "非ボスの敵ユニットが[multistrike]を得る。"
-  },
-  "effects": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
     {
-      "relicEffectClassName": "RelicEffectAddStatusEffectOnSpawn",
-      "paramStatusEffects": [
+      "id": "Enemy_AddMultistrike",
+      "name": "Seal of Aggression",
+      "type": "sin",
+      "extensions": [
         {
-          "statusId": "multistrike",
+          "sin": {
+          }
+        }
+      ],
+      "names": {
+        "key": "SinsData_nameKey-a4339117f777101e-49586f167d311654eba7a4b77c5cb6b7-v2",
+        "english": "Seal of Aggression",
+        "french": "Sceau d'agression",
+        "german": "Siegel der Aggression",
+        "russian": "Печать агрессии",
+        "portuguese": "Selo de Agressão",
+        "chinese": "激进印记",
+        "spanish": "Sello de hostilidad",
+        "chinese_traditional": "侵略印記",
+        "korean": "침략의 봉인",
+        "japanese": "攻撃の印"
+      },
+      "descriptions": {
+        "key": "SinsData_descriptionKey-567c8f876a3be1c4-49586f167d311654eba7a4b77c5cb6b7-v2",
+        "english": "Non-boss enemy units get [multistrike].",
+        "french": "Les unités ennemies (hors boss) ont <b>Frappe multiple</b>.",
+        "german": "Gegnerische Nicht-Boss-Einheiten erhalten [multistrike].",
+        "russian": "Враги не-боссы получают [multistrike].",
+        "portuguese": "Unidades inimigas que não sejam chefão recebem <b>Golpe Múltiplo</b>.",
+        "chinese": "敌方非首领单位获得<b>多重攻击</b>。",
+        "spanish": "Las unidades enemigas no jefe añaden [multistrike].",
+        "chinese_traditional": "非首領敵方單位獲得[multistrike]。",
+        "korean": "보스 외 적 유닛들이 [multistrike]을 획득합니다.",
+        "japanese": "非ボスの敵ユニットが[multistrike]を得る。"
+      },
+      "relic_effects": [
+        "@Enemy_AddMultistrike.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Enemy_AddMultistrike.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "multistrike",
           "count": 1
         }
       ],
-      "paramSourceTeam": "heroes",
-      "paramExcludeCharacterSubtypes": [
+      "param_source_team": "heroes",
+      "param_excluded_subtypes": [
         "SubtypesData_Boss",
         "SubtypesData_TreasureCollector"
       ]
