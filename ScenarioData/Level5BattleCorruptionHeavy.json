@@ -1,183 +1,187 @@
 {
-  "id": "Level5BattleCorruptionHeavy",
-  "guid": "8c7c56ef-e293-426f-b1bc-b3c31eb37968",
-  "name": "Level5BattleCorruptionHeavy",
-  "battleNameKey": {
-    "key": "ScenarioData_battleNameKey-b14de4af3ec71025-ceebc74ae3004e44eb6b5dfecbc3a55f-v2",
-    "english": "Corrupted Crusade",
-    "french": "Croisade corrompue",
-    "german": "Verdorbener Kreuzzug",
-    "russian": "Крестовый поход оскверненных",
-    "portuguese": "Cruzada Corrompida",
-    "chinese": "腐化十字军",
-    "spanish": "Cruzada corrupta",
-    "chinese_traditional": "腐化十字軍",
-    "korean": "타락한 성기사",
-    "japanese": "堕落軍"
-  },
-  "battleDescriptionKey": {
-    "key": "ScenarioData_battleDescriptionKey-c85e22820f8b7e77-ceebc74ae3004e44eb6b5dfecbc3a55f-v2",
-    "english": "If Heaven's angels can become corrupted by the Titans, so can we. Strike them down before our forces become subject to the same corruption that befalls our enemies.",
-    "french": "Si les anges du paradis peuvent être corrompus par les titans, nous aussi. Frappez-les avant que nos forces ne subissent la même corruption que celle qui frappe nos ennemis.",
-    "german": "Wenn Titanen die Engel des Himmels verderben können, können sie das auch mit uns tun. Schlag sie zurück, ehe unsere Streitkräfte dasselbe Schicksal erleiden wie unsere Feinde.",
-    "russian": "Если ангелы в Раю подвержены влиянию скверны, значит, и мы тоже. Уничтожьте их как можно скорее, пока эта зараза не перекинулась на наших воинов.",
-    "portuguese": "Se os anjos do Céu podem ser corrompidos pelos Titãs, nós também podemos. Derrube-os antes que nossas forças fiquem sujeitas à mesma corrupção que se abate sobre nossos inimigos.",
-    "chinese": "如果天堂的天使会遭到泰坦的腐化，那么我们也会。在我们的部队遭到像他们一样的腐化之前，击败他们。",
-    "spanish": "Si los titanes pueden corromper a los ángeles, también pueden corrompernos a nosotros. Acaba con ellos antes de que nuestras fuerzas sufran la misma corrupción que aflige a nuestros enemigos.",
-    "chinese_traditional": "如果天堂的天使能被泰坦腐化，那麼我們也可以。在我們的軍隊也遭受同樣腐化之前將敵人擊倒吧。",
-    "korean": "티탄이 천상의 주민을 타락시킬 수 있다면, 우리도 타락할 수 있습니다. 타락의 전조가 닥치기 전에 빠르게 쓰러뜨리는 것이 좋습니다.",
-    "japanese": "天界の天使たちが巨人族により堕落させられてしまうのなら、その危険はこちらにもある。自軍に敵軍と同じ堕落が降りかかる前に排除せよ。"
-  },
-  "bossVariant": {
-    "id": "Level5Bosses",
-    "bossVariants": [
-      "Boss_Level5_Reanimate",
-      "Boss_Level5_Titanskin"
-    ]
-  },
-  "trials": {
-    "id": "T2Trials",
-    "listName": "T2Trials",
-    "trialDatas": [
-      "T2ArtifactForEnemyMultistrike",
-      "T2ArtifactForHealOnAscend",
-      "T2Invasion",
-      "T2Ember",
-      "T2Draw",
-      "T2EnemyTitanskin",
-      "T2SpikeRocks",
-      "T2FrontReanimation"
-    ]
-  },
-  "difficulty": "normal",
-  "minTreasureUnits": 1,
-  "maxTreasureUnits": 1,
-  "treasureCharacterPool": [
-    "TreasureBagLvl2Gold"
-  ],
-  "displayedEnemies": [
-    "HeavyT2_Corruptor",
-    "AttackerT2_HunterSeeker",
-    "ShieldGuardT2_Devout"
-  ],
-  "backgroundData": "CaveBackgroundData",
-  "spawnPattern": {
-    "spawnGroupWaves": [
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "scenarios": [
+    {
+      "id": "Level5BattleCorruptionHeavy",
+      "name": "Level5BattleCorruptionHeavy",
+      "names": {
+        "key": "ScenarioData_battleNameKey-b14de4af3ec71025-ceebc74ae3004e44eb6b5dfecbc3a55f-v2",
+        "english": "Corrupted Crusade",
+        "french": "Croisade corrompue",
+        "german": "Verdorbener Kreuzzug",
+        "russian": "Крестовый поход оскверненных",
+        "portuguese": "Cruzada Corrompida",
+        "chinese": "腐化十字军",
+        "spanish": "Cruzada corrupta",
+        "chinese_traditional": "腐化十字軍",
+        "korean": "타락한 성기사",
+        "japanese": "堕落軍"
+      },
+      "descriptions": {
+        "key": "ScenarioData_battleDescriptionKey-c85e22820f8b7e77-ceebc74ae3004e44eb6b5dfecbc3a55f-v2",
+        "english": "If Heaven's angels can become corrupted by the Titans, so can we. Strike them down before our forces become subject to the same corruption that befalls our enemies.",
+        "french": "Si les anges du paradis peuvent être corrompus par les titans, nous aussi. Frappez-les avant que nos forces ne subissent la même corruption que celle qui frappe nos ennemis.",
+        "german": "Wenn Titanen die Engel des Himmels verderben können, können sie das auch mit uns tun. Schlag sie zurück, ehe unsere Streitkräfte dasselbe Schicksal erleiden wie unsere Feinde.",
+        "russian": "Если ангелы в Раю подвержены влиянию скверны, значит, и мы тоже. Уничтожьте их как можно скорее, пока эта зараза не перекинулась на наших воинов.",
+        "portuguese": "Se os anjos do Céu podem ser corrompidos pelos Titãs, nós também podemos. Derrube-os antes que nossas forças fiquem sujeitas à mesma corrupção que se abate sobre nossos inimigos.",
+        "chinese": "如果天堂的天使会遭到泰坦的腐化，那么我们也会。在我们的部队遭到像他们一样的腐化之前，击败他们。",
+        "spanish": "Si los titanes pueden corromper a los ángeles, también pueden corrompernos a nosotros. Acaba con ellos antes de que nuestras fuerzas sufran la misma corrupción que aflige a nuestros enemigos.",
+        "chinese_traditional": "如果天堂的天使能被泰坦腐化，那麼我們也可以。在我們的軍隊也遭受同樣腐化之前將敵人擊倒吧。",
+        "korean": "티탄이 천상의 주민을 타락시킬 수 있다면, 우리도 타락할 수 있습니다. 타락의 전조가 닥치기 전에 빠르게 쓰러뜨리는 것이 좋습니다.",
+        "japanese": "天界の天使たちが巨人族により堕落させられてしまうのなら、その危険はこちらにもある。自軍に敵軍と同じ堕落が降りかかる前に排除せよ。"
+      },
+      "boss_variants": {
+        "id": "Level5Bosses",
+        "boss_variants": [
+          "Boss_Level5_Reanimate",
+          "Boss_Level5_Titanskin"
+        ]
+      },
+      "trials": {
+        "id": "T2Trials",
+        "name": "T2Trials",
+        "trials": [
+          "T2ArtifactForEnemyMultistrike",
+          "T2ArtifactForHealOnAscend",
+          "T2Invasion",
+          "T2Ember",
+          "T2Draw",
+          "T2EnemyTitanskin",
+          "T2SpikeRocks",
+          "T2FrontReanimation"
+        ]
+      },
+      "difficulty": "normal",
+      "min_treasure_units": 1,
+      "max_treasure_units": 1,
+      "treasure_character_pool": [
+        "TreasureBagLvl2Gold"
+      ],
+      "displayed_enemies": [
+        "HeavyT2_Corruptor",
+        "AttackerT2_HunterSeeker",
+        "ShieldGuardT2_Devout"
+      ],
+      "background": "CaveBackgroundData",
+      "spawn_pattern": {
+        "spawn_group_waves": [
           {
-            "characterDataContainerList": [
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "AttackerT2_HunterSeeker"
-              },
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_HunterSeeker"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HeavyT2_Corruptor"
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_HunterSeeker",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  },
+                  {
+                    "character": "ShieldGuardT2_Devout"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_HunterSeeker"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  },
+                  {
+                    "character": "ShieldGuardT2_Devout"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "hasWaveMessage": true,
+                "wave_messages": {
+                  "key": "ScenarioData_waveMessageKey-e740dda46957fcd1-ceebc74ae3004e44eb6b5dfecbc3a55f-v2",
+                  "english": "[respite]",
+                  "french": "[respite]",
+                  "german": "[respite]",
+                  "russian": "[respite]",
+                  "portuguese": "[respite]",
+                  "chinese": "[respite]",
+                  "spanish": "[respite]",
+                  "chinese_traditional": "[respite]",
+                  "korean": "[respite]",
+                  "japanese": "[respite]"
+                },
+                "spawn_list": [
+                  {
+                    "character": "HeavyT2_Corruptor",
+                    "required_covenant": 7
+                  },
+                  {
+                    "character": "ShieldGuardT2_Devout",
+                    "required_covenant": 7
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "Boss_Level5_Titanskin",
+                    "use_boss_character": true
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT2_HunterSeeker",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "HeavyT2_Corruptor"
-              },
-              {
-                "characterData": "ShieldGuardT2_Devout"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "HeavyT2_Corruptor"
-              },
-              {
-                "characterData": "HeavyT2_Corruptor"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT2_HunterSeeker"
-              },
-              {
-                "characterData": "HeavyT2_Corruptor"
-              },
-              {
-                "characterData": "ShieldGuardT2_Devout"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "waveMessageKey": {
-              "key": "ScenarioData_waveMessageKey-e740dda46957fcd1-ceebc74ae3004e44eb6b5dfecbc3a55f-v2",
-              "english": "[respite]",
-              "french": "[respite]",
-              "german": "[respite]",
-              "russian": "[respite]",
-              "portuguese": "[respite]",
-              "chinese": "[respite]",
-              "spanish": "[respite]",
-              "chinese_traditional": "[respite]",
-              "korean": "[respite]",
-              "japanese": "[respite]"
-            },
-            "characterDataContainerList": [
-              {
-                "characterData": "HeavyT2_Corruptor",
-                "requiredCovenant": "Covenant07_NoRespite"
-              },
-              {
-                "characterData": "ShieldGuardT2_Devout",
-                "requiredCovenant": "Covenant07_NoRespite"
-              }
-            ],
-            "hasWaveMessage": true
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "Boss_Level5_Titanskin",
-                "useBossCharacter": true
-              },
-              {
-                "characterData": "HeavyT2_Corruptor"
-              }
-            ]
-          }
-        ]
+        ],
+        "boss_type": "none"
       }
-    ],
-    "bossType": "none"
-  }
+    }
+  ]
 }

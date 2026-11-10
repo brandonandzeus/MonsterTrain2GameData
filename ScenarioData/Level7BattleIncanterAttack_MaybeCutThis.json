@@ -1,203 +1,207 @@
 {
-  "id": "Level7BattleIncanterAttack_MaybeCutThis",
-  "guid": "59c0fef4-5ae5-4722-b295-6456beef885a",
-  "name": "Level7BattleIncanterAttack_MaybeCutThis",
-  "battleNameKey": {
-    "key": "ScenarioData_battleNameKey-e89c554a3d8663df-bb3fc20a0a8e85d47a3ff0bc0822e891-v2",
-    "english": "Draining Ardents",
-    "french": "Fervents envoûtés",
-    "german": "Verblassende Eiferer",
-    "russian": "Нашествие поборников",
-    "portuguese": "Ardentes Famintos",
-    "chinese": "汲取热忱者",
-    "spanish": "Exaltados extenuantes",
-    "chinese_traditional": "吸取虔誠者",
-    "korean": "발라붙은 열성 신도",
-    "japanese": "死力の信者"
-  },
-  "battleDescriptionKey": {
-    "key": "ScenarioData_battleDescriptionKey-94f5af2d0f4bc2af-bb3fc20a0a8e85d47a3ff0bc0822e891-v2",
-    "english": "Be wary of these ardents and their guards. Empowered by the corruption, they are stronger than they were once before.",
-    "french": "Méfiez-vous des fervents et de leurs gardes. Renforcés par la corruption, ils sont plus puissants qu'ils ne l'étaient auparavant.",
-    "german": "Hüte dich vor diesen Eiferern und ihren Wächtern. Durch die Verderbnis sind sie stärker als je zuvor.",
-    "russian": "Берегитесь этих фанатиков и их стражей. Под влиянием скверны, они стали сильнее, чем раньше.",
-    "portuguese": "Tenha cuidado com esses ardentes e seus guardas. Fortalecidos pela corrupção, eles estão mais fortes do que eram.",
-    "chinese": "小心这些狂热者和他们的卫兵。在腐化的影响下，他们变得比以往更加强大。",
-    "spanish": "No te fíes de estos exaltados ni de sus guardias. Están fortalecidos con la corrupción y son más fuertes de lo que eran antes.",
-    "chinese_traditional": "警惕這些虔誠者和他們的守衛。他們受到腐化力量的強化，比以前更強大。",
-    "korean": "이 열성 신도와 이들을 지키는 경비병에 주의하세요. 타락의 힘을 얻은 이들은 전보다 더욱 강해졌습니다.",
-    "japanese": "これらの熱烈な信者とその護衛には注意が必要だ。堕落によって力を与えられ、以前よりも強力になっている。"
-  },
-  "bossVariant": {
-    "id": "Level7Bosses",
-    "bossVariants": [
-      "Boss_Level7_Rax",
-      "Boss_Level7_Athane"
-    ]
-  },
-  "trials": {
-    "id": "T3Trials_SoulSavior",
-    "listName": "T3Trials",
-    "trialDatas": [
-      "T3Invasion",
-      "T3HealOnAscend",
-      "T3Ember",
-      "T3FrontReanimation"
-    ]
-  },
-  "difficulty": "normal",
-  "minTreasureUnits": 1,
-  "maxTreasureUnits": 1,
-  "treasureCharacterPool": [
-    "TreasureBagLvl3Gold"
-  ],
-  "displayedEnemies": [
-    "ClericT3_IncantAttack",
-    "AttackerT3_CorruptionAdder"
-  ],
-  "backgroundData": "CaveBackgroundData",
-  "spawnPattern": {
-    "spawnGroupWaves": [
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "scenarios": [
+    {
+      "id": "Level7BattleIncanterAttack_MaybeCutThis",
+      "name": "Level7BattleIncanterAttack_MaybeCutThis",
+      "names": {
+        "key": "ScenarioData_battleNameKey-e89c554a3d8663df-bb3fc20a0a8e85d47a3ff0bc0822e891-v2",
+        "english": "Draining Ardents",
+        "french": "Fervents envoûtés",
+        "german": "Verblassende Eiferer",
+        "russian": "Нашествие поборников",
+        "portuguese": "Ardentes Famintos",
+        "chinese": "汲取热忱者",
+        "spanish": "Exaltados extenuantes",
+        "chinese_traditional": "吸取虔誠者",
+        "korean": "발라붙은 열성 신도",
+        "japanese": "死力の信者"
+      },
+      "descriptions": {
+        "key": "ScenarioData_battleDescriptionKey-94f5af2d0f4bc2af-bb3fc20a0a8e85d47a3ff0bc0822e891-v2",
+        "english": "Be wary of these ardents and their guards. Empowered by the corruption, they are stronger than they were once before.",
+        "french": "Méfiez-vous des fervents et de leurs gardes. Renforcés par la corruption, ils sont plus puissants qu'ils ne l'étaient auparavant.",
+        "german": "Hüte dich vor diesen Eiferern und ihren Wächtern. Durch die Verderbnis sind sie stärker als je zuvor.",
+        "russian": "Берегитесь этих фанатиков и их стражей. Под влиянием скверны, они стали сильнее, чем раньше.",
+        "portuguese": "Tenha cuidado com esses ardentes e seus guardas. Fortalecidos pela corrupção, eles estão mais fortes do que eram.",
+        "chinese": "小心这些狂热者和他们的卫兵。在腐化的影响下，他们变得比以往更加强大。",
+        "spanish": "No te fíes de estos exaltados ni de sus guardias. Están fortalecidos con la corrupción y son más fuertes de lo que eran antes.",
+        "chinese_traditional": "警惕這些虔誠者和他們的守衛。他們受到腐化力量的強化，比以前更強大。",
+        "korean": "이 열성 신도와 이들을 지키는 경비병에 주의하세요. 타락의 힘을 얻은 이들은 전보다 더욱 강해졌습니다.",
+        "japanese": "これらの熱烈な信者とその護衛には注意が必要だ。堕落によって力を与えられ、以前よりも強力になっている。"
+      },
+      "boss_variants": {
+        "id": "Level7Bosses",
+        "boss_variants": [
+          "Boss_Level7_Rax",
+          "Boss_Level7_Athane"
+        ]
+      },
+      "trials": {
+        "id": "T3Trials_SoulSavior",
+        "name": "T3Trials",
+        "trials": [
+          "T3Invasion",
+          "T3HealOnAscend",
+          "T3Ember",
+          "T3FrontReanimation"
+        ]
+      },
+      "difficulty": "normal",
+      "min_treasure_units": 1,
+      "max_treasure_units": 1,
+      "treasure_character_pool": [
+        "TreasureBagLvl3Gold"
+      ],
+      "displayed_enemies": [
+        "ClericT3_IncantAttack",
+        "AttackerT3_CorruptionAdder"
+      ],
+      "background": "CaveBackgroundData",
+      "spawn_pattern": {
+        "spawn_group_waves": [
           {
-            "characterDataContainerList": [
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "ClericT3_IncantAttack"
-              },
+                "spawn_list": [
+                  {
+                    "character": "ClericT3_IncantAttack"
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "AttackerT3_CorruptionAdder"
-              },
+                "spawn_list": [
+                  {
+                    "character": "AttackerT3_CorruptionAdder"
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "ShieldGuardT3_Enchanter"
+                "spawn_list": [
+                  {
+                    "character": "ClericT3_IncantAttack"
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT3_CorruptionAdder"
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "ClericT3_IncantAttack"
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "hasWaveMessage": true,
+                "wave_messages": {
+                  "key": "ScenarioData_waveMessageKey-cfb7e85104711dbb-bb3fc20a0a8e85d47a3ff0bc0822e891-v2",
+                  "english": "[respite]",
+                  "french": "[respite]",
+                  "german": "[respite]",
+                  "russian": "[respite]",
+                  "portuguese": "[respite]",
+                  "chinese": "[respite]",
+                  "spanish": "[respite]",
+                  "chinese_traditional": "[respite]",
+                  "korean": "[respite]",
+                  "japanese": "[respite]"
+                },
+                "spawn_list": [
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 7
+                  },
+                  {
+                    "character": "HeavyT3_Basic",
+                    "required_covenant": 7
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "ClericT3_IncantAttack"
+                  },
+                  {
+                    "character": "Boss_Level7_Athane",
+                    "use_boss_character": true
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT3_CorruptionAdder"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT3_IncantAttack"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT3_CorruptionAdder"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT3_IncantAttack"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "waveMessageKey": {
-              "key": "ScenarioData_waveMessageKey-cfb7e85104711dbb-bb3fc20a0a8e85d47a3ff0bc0822e891-v2",
-              "english": "[respite]",
-              "french": "[respite]",
-              "german": "[respite]",
-              "russian": "[respite]",
-              "portuguese": "[respite]",
-              "chinese": "[respite]",
-              "spanish": "[respite]",
-              "chinese_traditional": "[respite]",
-              "korean": "[respite]",
-              "japanese": "[respite]"
-            },
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant07_NoRespite"
-              },
-              {
-                "characterData": "HeavyT3_Basic",
-                "requiredCovenant": "Covenant07_NoRespite"
-              }
-            ],
-            "hasWaveMessage": true
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT3_IncantAttack"
-              },
-              {
-                "characterData": "Boss_Level7_Athane",
-                "useBossCharacter": true
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
-        ]
+        ],
+        "boss_type": "none"
       }
-    ],
-    "bossType": "none"
-  }
+    }
+  ]
 }

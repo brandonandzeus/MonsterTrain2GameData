@@ -1,209 +1,213 @@
 {
-  "id": "Level7BattleJunker",
-  "guid": "983425f3-d0ae-42a3-84a5-d1086cff702d",
-  "name": "Level7BattleJunker",
-  "battleNameKey": {
-    "key": "ScenarioData_battleNameKey-0934b6ac57a84166-dd95d0d241e05274194f626efc8a2913-v2",
-    "english": "Dominion's Disdain",
-    "french": "Dédain de Domination",
-    "german": "Herrschafts Verachtung",
-    "russian": "Презрение Доминиона",
-    "portuguese": "Desdém do Domínio",
-    "chinese": "统御泰坦的蔑视",
-    "spanish": "Desdén de Dominio",
-    "chinese_traditional": "主宰的蔑視",
-    "korean": "도미니온의 경멸",
-    "japanese": "ドミニオンの呪い"
-  },
-  "battleDescriptionKey": {
-    "key": "ScenarioData_battleDescriptionKey-6fb79be76fda1fef-dd95d0d241e05274194f626efc8a2913-v2",
-    "english": "Terrible curses will make it hard to keep up with the threats Dominion is intent on sending your way.",
-    "french": "De terribles malédictions risquent de vous handicaper face aux dangers que Domination a l'intention de vous envoyer.",
-    "german": "Schreckliche Flüche machen es schwierig, die Bedrohungen von Herrschaft in Schach zu halten.",
-    "russian": "Страшные проклятья помешают вам отбиваться от врагов, которых послал Доминион.",
-    "portuguese": "Maldições terríveis dificultarão o enfrentamento das ameaças que o Domínio pretende enviar para você.",
-    "chinese": "可怕的诅咒会让你难以应付统御泰坦对你造成的威胁。",
-    "spanish": "Las terribles maldiciones dificultarán adaptarse a las amenazas que Dominio está decidido a enviarte.",
-    "chinese_traditional": "可怕的詛咒將使你難以應對主宰意圖派來的威脅。",
-    "korean": "끔찍한 저주는 도미니온의 위협을 따라잡는 데 걸림돌이 될 것입니다.",
-    "japanese": "恐ろしい呪いは、ドミニオンが送り込もうとしている脅威に対処するのを困難にするだろう。"
-  },
-  "bossVariant": {
-    "id": "Level7Bosses",
-    "bossVariants": [
-      "Boss_Level7_Rax",
-      "Boss_Level7_Athane"
-    ]
-  },
-  "trials": {
-    "id": "T3Trials_SoulSavior",
-    "listName": "T3Trials",
-    "trialDatas": [
-      "T3Invasion",
-      "T3HealOnAscend",
-      "T3Ember",
-      "T3FrontReanimation"
-    ]
-  },
-  "difficulty": "normal",
-  "minTreasureUnits": 1,
-  "maxTreasureUnits": 1,
-  "treasureCharacterPool": [
-    "TreasureBagLvl3Gold"
-  ],
-  "displayedEnemies": [
-    "AttackerT3_CorruptionAdder",
-    "MageT3_Junker"
-  ],
-  "backgroundData": "CaveBackgroundData",
-  "spawnPattern": {
-    "spawnGroupWaves": [
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "scenarios": [
+    {
+      "id": "Level7BattleJunker",
+      "name": "Level7BattleJunker",
+      "names": {
+        "key": "ScenarioData_battleNameKey-0934b6ac57a84166-dd95d0d241e05274194f626efc8a2913-v2",
+        "english": "Dominion's Disdain",
+        "french": "Dédain de Domination",
+        "german": "Herrschafts Verachtung",
+        "russian": "Презрение Доминиона",
+        "portuguese": "Desdém do Domínio",
+        "chinese": "统御泰坦的蔑视",
+        "spanish": "Desdén de Dominio",
+        "chinese_traditional": "主宰的蔑視",
+        "korean": "도미니온의 경멸",
+        "japanese": "ドミニオンの呪い"
+      },
+      "descriptions": {
+        "key": "ScenarioData_battleDescriptionKey-6fb79be76fda1fef-dd95d0d241e05274194f626efc8a2913-v2",
+        "english": "Terrible curses will make it hard to keep up with the threats Dominion is intent on sending your way.",
+        "french": "De terribles malédictions risquent de vous handicaper face aux dangers que Domination a l'intention de vous envoyer.",
+        "german": "Schreckliche Flüche machen es schwierig, die Bedrohungen von Herrschaft in Schach zu halten.",
+        "russian": "Страшные проклятья помешают вам отбиваться от врагов, которых послал Доминион.",
+        "portuguese": "Maldições terríveis dificultarão o enfrentamento das ameaças que o Domínio pretende enviar para você.",
+        "chinese": "可怕的诅咒会让你难以应付统御泰坦对你造成的威胁。",
+        "spanish": "Las terribles maldiciones dificultarán adaptarse a las amenazas que Dominio está decidido a enviarte.",
+        "chinese_traditional": "可怕的詛咒將使你難以應對主宰意圖派來的威脅。",
+        "korean": "끔찍한 저주는 도미니온의 위협을 따라잡는 데 걸림돌이 될 것입니다.",
+        "japanese": "恐ろしい呪いは、ドミニオンが送り込もうとしている脅威に対処するのを困難にするだろう。"
+      },
+      "boss_variants": {
+        "id": "Level7Bosses",
+        "boss_variants": [
+          "Boss_Level7_Rax",
+          "Boss_Level7_Athane"
+        ]
+      },
+      "trials": {
+        "id": "T3Trials_SoulSavior",
+        "name": "T3Trials",
+        "trials": [
+          "T3Invasion",
+          "T3HealOnAscend",
+          "T3Ember",
+          "T3FrontReanimation"
+        ]
+      },
+      "difficulty": "normal",
+      "min_treasure_units": 1,
+      "max_treasure_units": 1,
+      "treasure_character_pool": [
+        "TreasureBagLvl3Gold"
+      ],
+      "displayed_enemies": [
+        "AttackerT3_CorruptionAdder",
+        "MageT3_Junker"
+      ],
+      "background": "CaveBackgroundData",
+      "spawn_pattern": {
+        "spawn_group_waves": [
           {
-            "characterDataContainerList": [
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "MageT3_Junker"
-              },
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker"
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "AttackerT3_CorruptionAdder"
-              },
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker"
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "ShieldGuardT3_Enchanter"
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker"
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker"
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder"
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "hasWaveMessage": true,
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker",
+                    "required_covenant": 7
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 7
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder",
+                    "required_covenant": 7
+                  },
+                  {
+                    "character": "HeavyT3_Basic",
+                    "required_covenant": 7
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "MageT3_Junker",
+                    "required_covenant": 2
+                  },
+                  {
+                    "character": "MageT3_Junker"
+                  },
+                  {
+                    "character": "Boss_Level7_Athane",
+                    "use_boss_character": true
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "MageT3_Junker"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "MageT3_Junker"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "MageT3_Junker"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "MageT3_Junker",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "MageT3_Junker",
-                "requiredCovenant": "Covenant07_NoRespite"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant07_NoRespite"
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder",
-                "requiredCovenant": "Covenant07_NoRespite"
-              },
-              {
-                "characterData": "HeavyT3_Basic",
-                "requiredCovenant": "Covenant07_NoRespite"
-              }
-            ],
-            "hasWaveMessage": true
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "MageT3_Junker",
-                "requiredCovenant": "Covenant02_BattlesNewEnemies"
-              },
-              {
-                "characterData": "MageT3_Junker"
-              },
-              {
-                "characterData": "Boss_Level7_Athane",
-                "useBossCharacter": true
-              }
-            ]
-          }
-        ]
+        ],
+        "boss_type": "none"
       }
-    ],
-    "bossType": "none"
-  }
+    }
+  ]
 }

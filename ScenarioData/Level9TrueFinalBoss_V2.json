@@ -1,248 +1,252 @@
 {
-  "id": "Level9TrueFinalBoss_V2",
-  "guid": "9928d002-921d-402e-ae3c-ceea3dd606bb",
-  "name": "Level9TrueFinalBoss_V2",
-  "battleNameKey": {
-    "key": "ScenarioData_battleNameKey-db2ee75e83a03ae9-d98ec3e76169ae04180b6fa6ecc88135-v2",
-    "english": "Clash with the Titans",
-    "french": "Combat des titans",
-    "german": "Kampf mit dem Titanen",
-    "russian": "Битва с титанами",
-    "portuguese": "Confronto com os Titãs",
-    "chinese": "与泰坦交锋",
-    "spanish": "Enfrentamiento con los titanes",
-    "chinese_traditional": "與泰坦的衝突",
-    "korean": "티탄과의 전투",
-    "japanese": "巨人族との激突"
-  },
-  "battleDescriptionKey": {
-    "key": "ScenarioData_battleDescriptionKey-74a0fdf3bfcf3ed9-d98ec3e76169ae04180b6fa6ecc88135-v2",
-    "english": "The Titans of Savagery, Dominion, and Entropy await. Defeat them once and for all.",
-    "french": "Les titans de Sauvagerie, de Domination et d'Entropie vous attendent. Éliminez-les une bonne fois pour toutes.",
-    "german": "Die Titanen von Grausamkeit, Herrschaft und Entropie warten auf dich. Besiege sie ein für alle Mal.",
-    "russian": "Титаны Изувер, Доминион и Энтропия ждут вас. Уничтожьте их раз и навсегда.",
-    "portuguese": "Os Titãs da Barbárie, do Domínio e da Entropia aguardam por você. Derrote-os de uma vez por todas.",
-    "chinese": "野蛮泰坦、统御泰坦和混乱泰坦在等着你。彻底打败他们吧。",
-    "spanish": "Los titanes Salvajismo, Dominio y Entropía te esperan. Derrótalos de una vez por todas.",
-    "chinese_traditional": "野性、主宰和熵之泰坦都在等著你。徹底打敗他們吧。",
-    "korean": "세비저리, 도미니온, 엔트로피의 세 티탄이 기다립니다. 저들을 영원히 물리치세요.",
-    "japanese": "サベジャリー、ドミニオン、そしてエントロピーの巨人が待ち受ける。奴らを倒して決着をつけよう。"
-  },
-  "difficulty": "boss",
-  "battleTrackNameData": "BattleMusic_Titans",
-  "displayedEnemies": [
-    "Boss_Level9_Savagery_V2",
-    "Boss_Level9_Dominion_V2",
-    "Boss_Level9_Entropy_Bot_V2"
-  ],
-  "bossSpawnSFXCue": "Titans_Intro",
-  "backgroundData": "TFB_BackgroundData",
-  "spawnPattern": {
-    "spawnGroupWaves": [
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-          }
-        ]
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "scenarios": [
+    {
+      "id": "Level9TrueFinalBoss_V2",
+      "name": "Level9TrueFinalBoss_V2",
+      "names": {
+        "key": "ScenarioData_battleNameKey-db2ee75e83a03ae9-d98ec3e76169ae04180b6fa6ecc88135-v2",
+        "english": "Clash with the Titans",
+        "french": "Combat des titans",
+        "german": "Kampf mit dem Titanen",
+        "russian": "Битва с титанами",
+        "portuguese": "Confronto com os Titãs",
+        "chinese": "与泰坦交锋",
+        "spanish": "Enfrentamiento con los titanes",
+        "chinese_traditional": "與泰坦的衝突",
+        "korean": "티탄과의 전투",
+        "japanese": "巨人族との激突"
       },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
+      "descriptions": {
+        "key": "ScenarioData_battleDescriptionKey-74a0fdf3bfcf3ed9-d98ec3e76169ae04180b6fa6ecc88135-v2",
+        "english": "The Titans of Savagery, Dominion, and Entropy await. Defeat them once and for all.",
+        "french": "Les titans de Sauvagerie, de Domination et d'Entropie vous attendent. Éliminez-les une bonne fois pour toutes.",
+        "german": "Die Titanen von Grausamkeit, Herrschaft und Entropie warten auf dich. Besiege sie ein für alle Mal.",
+        "russian": "Титаны Изувер, Доминион и Энтропия ждут вас. Уничтожьте их раз и навсегда.",
+        "portuguese": "Os Titãs da Barbárie, do Domínio e da Entropia aguardam por você. Derrote-os de uma vez por todas.",
+        "chinese": "野蛮泰坦、统御泰坦和混乱泰坦在等着你。彻底打败他们吧。",
+        "spanish": "Los titanes Salvajismo, Dominio y Entropía te esperan. Derrótalos de una vez por todas.",
+        "chinese_traditional": "野性、主宰和熵之泰坦都在等著你。徹底打敗他們吧。",
+        "korean": "세비저리, 도미니온, 엔트로피의 세 티탄이 기다립니다. 저들을 영원히 물리치세요.",
+        "japanese": "サベジャリー、ドミニオン、そしてエントロピーの巨人が待ち受ける。奴らを倒して決着をつけよう。"
+      },
+      "difficulty": "boss",
+      "battle_track_name": "BattleMusic_Titans",
+      "displayed_enemies": [
+        "Boss_Level9_Savagery_V2",
+        "Boss_Level9_Dominion_V2",
+        "Boss_Level9_Entropy_Bot_V2"
+      ],
+      "boss_spawn_sfx_cue": "Titans_Intro",
+      "background": "TFB_BackgroundData",
+      "spawn_pattern": {
+        "spawn_group_waves": [
           {
-            "characterDataContainerList": [
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "MageT2_Junker_Chosen",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
-              },
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "MageT2_Junker",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
-                "suppressSpawn": true
-              },
+                "spawn_list": [
+                  {
+                    "character": "MageT2_Junker_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "MageT2_Junker",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  },
+                  {
+                    "character": "HordeT2_DeathAddsCorruption"
+                  },
+                  {
+                    "character": "HordeT2_DeathAddsCorruption"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HeavyT2_Corruptor"
-              },
+                "spawn_list": [
+                  {
+                    "character": "AttackerT3_Sweep_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "AttackerT3_Sweep",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "AttackerT3_Sweep"
+                  },
+                  {
+                    "character": "HeavyT2_Zealot"
+                  },
+                  {
+                    "character": "HeavyT2_Zealot"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HeavyT2_Corruptor"
-              },
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HordeT2_DeathAddsCorruption"
-              },
+                "spawn_list": [
+                  {
+                    "character": "ClericT3_IncantAttack_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "ClericT3_IncantAttack",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "HordeT3_PureSouls"
+                  },
+                  {
+                    "character": "HordeT3_PureSouls"
+                  },
+                  {
+                    "character": "HeavyT2_DefenseOnAdvance"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HordeT2_DeathAddsCorruption"
+                "spawn_list": [
+                  {
+                    "character": "AttackerT2_HunterSeeker_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "AttackerT2_HunterSeeker",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "AttackerT3_CorruptionAdder"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  },
+                  {
+                    "character": "HeavyT2_Corruptor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "AttackerT3_Sweep"
+                  },
+                  {
+                    "character": "HeavyT2_Zealot_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "HeavyT2_Zealot",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "HeavyT2_Zealot"
+                  },
+                  {
+                    "character": "HeavyT3_Basic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "EnchanterT3_Silence_Chosen",
+                    "required_covenant": 10
+                  },
+                  {
+                    "character": "EnchanterT3_Silence",
+                    "required_covenant": 10,
+                    "suppress_spawn": true
+                  },
+                  {
+                    "character": "HeavyT2_DefenseOnAdvance"
+                  },
+                  {
+                    "character": "HeavyT2_DefenseOnAdvance"
+                  },
+                  {
+                    "character": "ShieldGuardT3_Enchanter"
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT3_Sweep_Chosen",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
-              },
-              {
-                "characterData": "AttackerT3_Sweep",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
-                "suppressSpawn": true
-              },
-              {
-                "characterData": "AttackerT3_Sweep"
-              },
-              {
-                "characterData": "HeavyT2_Zealot"
-              },
-              {
-                "characterData": "HeavyT2_Zealot"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT3_IncantAttack_Chosen",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
-              },
-              {
-                "characterData": "ClericT3_IncantAttack",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
-                "suppressSpawn": true
-              },
-              {
-                "characterData": "HordeT3_PureSouls"
-              },
-              {
-                "characterData": "HordeT3_PureSouls"
-              },
-              {
-                "characterData": "HeavyT2_DefenseOnAdvance"
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT2_HunterSeeker_Chosen",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
-              },
-              {
-                "characterData": "AttackerT2_HunterSeeker",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
-                "suppressSpawn": true
-              },
-              {
-                "characterData": "AttackerT3_CorruptionAdder"
-              },
-              {
-                "characterData": "HeavyT2_Corruptor"
-              },
-              {
-                "characterData": "HeavyT2_Corruptor"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "AttackerT3_Sweep"
-              },
-              {
-                "characterData": "HeavyT2_Zealot_Chosen",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
-              },
-              {
-                "characterData": "HeavyT2_Zealot",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
-                "suppressSpawn": true
-              },
-              {
-                "characterData": "HeavyT2_Zealot"
-              },
-              {
-                "characterData": "HeavyT3_Basic"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "EnchanterT3_Silence_Chosen",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses"
-              },
-              {
-                "characterData": "EnchanterT3_Silence",
-                "requiredCovenant": "Covenant10_ChosenEnemiesDuringFlyingBosses",
-                "suppressSpawn": true
-              },
-              {
-                "characterData": "HeavyT2_DefenseOnAdvance"
-              },
-              {
-                "characterData": "HeavyT2_DefenseOnAdvance"
-              },
-              {
-                "characterData": "ShieldGuardT3_Enchanter"
-              }
-            ]
-          }
+        ],
+        "is_looping_scenario": true,
+        "boss_type": "true_final_boss",
+        "true_final_bosses": [
+          [
+            "Boss_Level9_Dominion_V2"
+          ],
+          [
+            "Boss_Level9_Savagery_V2"
+          ],
+          [
+            "Boss_Level9_Entropy_Bot_V2",
+            "Boss_Level9_Entropy_Mid_V2",
+            "Boss_Level9_Entropy_Top_V2"
+          ]
         ]
       }
-    ],
-    "isLoopingScenario": true,
-    "bossType": "true_final_boss",
-    "trueFinalBosses": [
-      [
-        "Boss_Level9_Dominion_V2"
-      ],
-      [
-        "Boss_Level9_Savagery_V2"
-      ],
-      [
-        "Boss_Level9_Entropy_Bot_V2",
-        "Boss_Level9_Entropy_Mid_V2",
-        "Boss_Level9_Entropy_Top_V2"
-      ]
-    ]
-  }
+    }
+  ]
 }

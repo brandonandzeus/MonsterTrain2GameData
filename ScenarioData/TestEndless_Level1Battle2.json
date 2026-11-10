@@ -1,169 +1,173 @@
 {
-  "id": "TestEndless_Level1Battle2",
-  "guid": "84fac050-9bc3-43ff-87e7-6ff0a2885060",
-  "name": "TestEndless_Level1Battle2",
-  "battleNameKey": {
-    "key": "ScenarioData_battleNameKey-01e0e880b07a31f4-35127a31c0eea6c4bb1366eb99bbab8d-v2",
-    "english": "Endless Pain",
-    "french": "Douleur infinie",
-    "german": "Endloser Schmerz",
-    "russian": "Бесконечная боль",
-    "portuguese": "Dor Interminável",
-    "chinese": "无尽痛苦",
-    "spanish": "Dolor ilimitado",
-    "chinese_traditional": "無盡痛苦",
-    "korean": "끝없는 고통",
-    "japanese": "果てなき痛み"
-  },
-  "battleDescriptionKey": {
-    "key": "ScenarioData_battleDescriptionKey-e2fd96c5f0ebe634-35127a31c0eea6c4bb1366eb99bbab8d-v2",
-    "english": "Their pain makes them strong. Their magic makes them whole.",
-    "french": "La douleur les rend forts. La magie les rend entiers.",
-    "german": "Ihr Schmerz macht sie stark. Ihre Magie macht sie komplett.",
-    "russian": "Боль делает их сильнее, а магия — целее.",
-    "portuguese": "Sua dor os torna fortes. Sua magia os torna completos.",
-    "chinese": "他们从痛苦中获得力量。他们因魔法而完整。",
-    "spanish": "Su dolor les da fuerzas. Su magia los completa.",
-    "chinese_traditional": "他們的痛苦使他們強大。他們的魔法使他們完整。",
-    "korean": "고통은 그들을 강하게 하고, 마법은 그들을 완전하게 합니다.",
-    "japanese": "痛みが奴らを強くする。魔法が奴らを団結させる。"
-  },
-  "bossVariant": {
-    "id": "Level1Bosses",
-    "bossVariants": [
-      "Boss_Level1_Basic",
-      "Boss_Level1_Defensive"
-    ]
-  },
-  "difficulty": "normal",
-  "treasureCharacterPool": [
-    "TreasureBagLvl1Gold"
-  ],
-  "displayedEnemies": [
-    "ClericT1_OminousAcolyte_Chosen"
-  ],
-  "backgroundData": "CaveBackgroundData",
-  "spawnPattern": {
-    "spawnGroupWaves": [
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT1_OminousAcolyte_Chosen"
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              }
-            ]
-          }
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "scenarios": [
+    {
+      "id": "TestEndless_Level1Battle2",
+      "name": "TestEndless_Level1Battle2",
+      "names": {
+        "key": "ScenarioData_battleNameKey-01e0e880b07a31f4-35127a31c0eea6c4bb1366eb99bbab8d-v2",
+        "english": "Endless Pain",
+        "french": "Douleur infinie",
+        "german": "Endloser Schmerz",
+        "russian": "Бесконечная боль",
+        "portuguese": "Dor Interminável",
+        "chinese": "无尽痛苦",
+        "spanish": "Dolor ilimitado",
+        "chinese_traditional": "無盡痛苦",
+        "korean": "끝없는 고통",
+        "japanese": "果てなき痛み"
+      },
+      "descriptions": {
+        "key": "ScenarioData_battleDescriptionKey-e2fd96c5f0ebe634-35127a31c0eea6c4bb1366eb99bbab8d-v2",
+        "english": "Their pain makes them strong. Their magic makes them whole.",
+        "french": "La douleur les rend forts. La magie les rend entiers.",
+        "german": "Ihr Schmerz macht sie stark. Ihre Magie macht sie komplett.",
+        "russian": "Боль делает их сильнее, а магия — целее.",
+        "portuguese": "Sua dor os torna fortes. Sua magia os torna completos.",
+        "chinese": "他们从痛苦中获得力量。他们因魔法而完整。",
+        "spanish": "Su dolor les da fuerzas. Su magia los completa.",
+        "chinese_traditional": "他們的痛苦使他們強大。他們的魔法使他們完整。",
+        "korean": "고통은 그들을 강하게 하고, 마법은 그들을 완전하게 합니다.",
+        "japanese": "痛みが奴らを強くする。魔法が奴らを団結させる。"
+      },
+      "boss_variants": {
+        "id": "Level1Bosses",
+        "boss_variants": [
+          "Boss_Level1_Basic",
+          "Boss_Level1_Defensive"
         ]
       },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
+      "difficulty": "normal",
+      "treasure_character_pool": [
+        "TreasureBagLvl1Gold"
+      ],
+      "displayed_enemies": [
+        "ClericT1_OminousAcolyte_Chosen"
+      ],
+      "background": "CaveBackgroundData",
+      "spawn_pattern": {
+        "spawn_group_waves": [
           {
-            "characterDataContainerList": [
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "ClericT1_OminousAcolyte_Chosen"
-              },
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte_Chosen"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "AttackerT1_Spearman"
-              },
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte_Chosen"
+                  },
+                  {
+                    "character": "AttackerT1_Spearman"
+                  },
+                  {
+                    "character": "AttackerT1_Spearman"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "AttackerT1_Spearman"
-              },
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte_Chosen"
+                  },
+                  {
+                    "character": "AttackerT1_Spearman"
+                  },
+                  {
+                    "character": "AttackerT1_Spearman"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              },
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte_Chosen"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
               {
-                "characterData": "HeavyT1_LoseHealthOnMove"
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte_Chosen"
+                  },
+                  {
+                    "character": "AttackerT1_Spearman"
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn Wave",
+            "possible_groups": [
+              {
+                "spawn_list": [
+                  {
+                    "character": "ClericT1_OminousAcolyte_Chosen"
+                  },
+                  {
+                    "character": "Boss_Level1_Basic",
+                    "use_boss_character": true
+                  },
+                  {
+                    "character": "HeavyT1_LoseHealthOnMove"
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT1_OminousAcolyte_Chosen"
-              },
-              {
-                "characterData": "AttackerT1_Spearman"
-              },
-              {
-                "characterData": "AttackerT1_Spearman"
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT1_OminousAcolyte_Chosen"
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT1_OminousAcolyte_Chosen"
-              },
-              {
-                "characterData": "AttackerT1_Spearman"
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spawn Wave",
-        "possibleGroups": [
-          {
-            "characterDataContainerList": [
-              {
-                "characterData": "ClericT1_OminousAcolyte_Chosen"
-              },
-              {
-                "characterData": "Boss_Level1_Basic",
-                "useBossCharacter": true
-              },
-              {
-                "characterData": "HeavyT1_LoseHealthOnMove"
-              }
-            ]
-          }
-        ]
+        ],
+        "boss_type": "none"
       }
-    ],
-    "bossType": "none"
-  }
+    }
+  ]
 }
