@@ -14,9 +14,7 @@ Using AssetStudio is a pain for searching for GameData objects
 ## How to use
 This repo only contains JSON files, each representing a particular GameData object. The JSON files are minimized, meaning all unimportant fields (and select fields that are set to their default value) are removed. Additionally, the data is expanded from what you would see in AssetStudio, allowing you to easily see how a specific GameData object works or how a particular field is used.
 
-Note that not all fields present in the data are included, file an issue if data you would like to be present is not included.
-
-Note that currently the JSON format this data is in is NOT COMPATIBLE with the official JSON schema for Trainworks-Reloaded, the fields will need to be translated to the appropriate field, but should serve as a gentle hint as to what fields need to be set. (See [#1](https://github.com/brandonandzeus/MonsterTrain2GameData/issues/1))
+Note that currently the JSON format this data is in for (ScenarioData/ and CardUpgradeTreeData/) is NOT COMPATIBLE with the official JSON schema for Trainworks-Reloaded, the fields will need to be translated to the appropriate field, but should serve as a gentle hint as to what fields need to be set. (See [#3](https://github.com/brandonandzeus/MonsterTrain2GameData/issues/3)). The rest of the folders should be freely copyable into a MT2 mod and have it work out of the box.
 
 ## Lastly
 This repo only contains the core game data in human readable format with none of the assets, code, or program executables/libraries. That said this repo can't be used to pirate the game, nor can it be used to make a build of the game. Support the devs by purchasing the game.
