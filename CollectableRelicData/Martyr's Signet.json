@@ -77,7 +77,7 @@
   "upgrades": [
     {
       "id": "PermanentHealthAtEndOfCombat",
-      "bonus_hp": 6,
+      "bonus_hp": 8,
       "upgrade_will_be_scaled_by_non_magic_power_trait": true
     },
     {
@@ -103,7 +103,7 @@
         "korean": "교전 종료 시, 영구적으로 [effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp] [health]을 획득합니다.",
         "japanese": "戦闘の終了時に[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp] [health]を永続的に得る。"
       },
-      "trigger": "on_deathwish",
+      "trigger": "on_vanguard",
       "effects": [
         "@FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers0.effects0"
       ],
@@ -111,7 +111,7 @@
     },
     {
       "id": "FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers1",
-      "trigger": "on_deathwish_lost",
+      "trigger": "on_vanguard_lost",
       "effects": [
         "@FriendlyUnitsGainDeathwishPermanentHealth.effects0.triggers1.effects0"
       ],

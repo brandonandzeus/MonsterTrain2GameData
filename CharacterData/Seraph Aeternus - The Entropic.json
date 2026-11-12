@@ -2,9 +2,9 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "characters": [
     {
-      "id": "Boss_Level8_AllyBuffer",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial",
       "names": {
-        "key": "CharacterData_nameKey-7417f75a454aab39-6dbade7dccd9ff14894b3aa58f2e5275-v2",
+        "key": "CharacterData_nameKey-20c3b8bd33826f06-1c2c268059da86d48804ea4f213b141a-v2",
         "english": "Seraph Aeternus - The Entropic",
         "french": "Séraphin Aeternus l'Entropique",
         "german": "Seraph Aeternus – Die Entropie",
@@ -18,7 +18,7 @@
       },
       "lore_tooltips": [
         {
-          "key": "CharacterData_data-f6504d8094bfdd41-6dbade7dccd9ff14894b3aa58f2e5275-v2",
+          "key": "CharacterData_data-6ab739fc61dc75eb-1c2c268059da86d48804ea4f213b141a-v2",
           "english": "Seraph feared his own demise above all else. Eons of rule weren’t long enough, he craved eternity. Entropy gave him the solution he longed for.",
           "french": "Séraphin craignait par-dessus tout sa propre fin. Plus que des millénaires de règne, il avait soif d'éternité. Entropie lui a apporté la solution qu'il désirait tant.",
           "german": "Seraph fürchtete nichts mehr als seinen Niedergang. Äonen der Herrschaft reichten nicht aus, er sehnte sich nach Ewigkeit. Entropie bot ihm die Lösung, nach der er suchte.",
@@ -35,13 +35,13 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_Seraph_Entropy.prefab",
         "asset_guid": "e57b526cf9646cd438003a2b0b53390f"
       },
-      "attack_vfx": "@Boss_Level8_AllyBuffer.attackVFX",
-      "impact_vfx": "@Boss_Level8_AllyBuffer.impactVFX",
-      "boss_spell_cast_vfx": "@Boss_Level8_AllyBuffer.bossSpellCastVFX",
-      "boss_room_cast_vfx": "@Boss_Level8_AllyBuffer.bossRoomSpellCastVFX",
+      "attack_vfx": "@Boss_Level8_AllyBuffer_TitanTrial.attackVFX",
+      "impact_vfx": "@Boss_Level8_AllyBuffer_TitanTrial.impactVFX",
+      "boss_spell_cast_vfx": "@Boss_Level8_AllyBuffer_TitanTrial.bossSpellCastVFX",
+      "boss_room_cast_vfx": "@Boss_Level8_AllyBuffer_TitanTrial.bossRoomSpellCastVFX",
       "triggers": [
-        "@Boss_Level8_AllyBuffer.triggers0",
-        "@Boss_Level8_AllyBuffer.triggers1"
+        "@Boss_Level8_AllyBuffer_TitanTrial.triggers0",
+        "@Boss_Level8_AllyBuffer_TitanTrial.triggers1"
       ],
       "boss_action_groups": [
         {
@@ -54,10 +54,7 @@
           "num_repeats": 0
         }
       ],
-      "endless_stats": {
-        "attack": 40,
-        "health": 6000
-      },
+      "hide_in_logbook": true,
       "size": 6,
       "health": 3800,
       "is_outer_train_boss": true,
@@ -65,6 +62,7 @@
       "attack_damage": 35,
       "attack_teleports_to_defender": false,
       "status_effect_immunities": [
+        "immobile",
         "rooted"
       ],
       "subtypes": [
@@ -72,15 +70,15 @@
         "SubtypesData_BossAll"
       ],
       "chatter": "Boss8_SeraphAeternus_Entropy_ChatterData",
-      "enemy_relic": "Enemy_CorruptSeraph_BuffAllies",
+      "enemy_relic": "Enemy_CorruptSeraph_BuffAllies_TitanTrial",
       "artist": "Genevieve Bega"
     }
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level8_AllyBuffer.triggers0",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.triggers0",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-4f631bf1229149bb-6dbade7dccd9ff14894b3aa58f2e5275-v2",
+        "key": "CharacterData_descriptionKey-e9645725a4bff80b-1c2c268059da86d48804ea4f213b141a-v2",
         "english": "Add a <b>Curse of Entropy</b> card to your deck.",
         "french": "Ajoute une carte <b>Malédiction d'Entropie</b> à votre deck.",
         "german": "Füge deinem Deck die Karte <b>Entropies Fluch</b> hinzu.",
@@ -94,13 +92,13 @@
       },
       "trigger": "post_combat",
       "effects": [
-        "@Boss_Level8_AllyBuffer.triggers0.effects0"
+        "@Boss_Level8_AllyBuffer_TitanTrial.triggers0.effects0"
       ]
     },
     {
-      "id": "Boss_Level8_AllyBuffer.triggers1",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.triggers1",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-e7c046510b117061-6dbade7dccd9ff14894b3aa58f2e5275-v2",
+        "key": "CharacterData_descriptionKey-89bd2d11afbee160-1c2c268059da86d48804ea4f213b141a-v2",
         "english": "Grant your units [sap] [effect0.status0.power].",
         "french": "Applique [sap] [effect0.status0.power] à vos unités.",
         "german": "Gewährt deinen Einheiten [sap] [effect0.status0.power].",
@@ -114,42 +112,42 @@
       },
       "trigger": "after_spawn_enchant",
       "effects": [
-        "@Boss_Level8_AllyBuffer.triggers1.effects0"
+        "@Boss_Level8_AllyBuffer_TitanTrial.triggers1.effects0"
       ]
     }
   ],
   "effects": [
     {
-      "id": "Boss_Level8_AllyBuffer.triggers0.effects0",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.triggers0.effects0",
       "name": "CardEffectAddBattleCard",
       "param_int": 7,
       "param_int_2": 1,
       "param_card_pool": "TFB_EntropyBlightPool"
     },
     {
-      "id": "Boss_Level8_AllyBuffer.triggers1.effects0",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.triggers1.effects0",
       "name": "CardEffectEnchant",
       "target_mode": "room",
       "target_team": "monsters",
       "param_status_effects": [
         {
           "status": "debuff",
-          "count": 5
+          "count": 10
         }
       ]
     }
   ],
   "vfxs": [
     {
-      "id": "Boss_Level8_AllyBuffer.attackVFX",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.attackVFX",
       "vfx_left": {
-        "asset_name": "Assets/VFX/CharacterFX/Attacks/SeraphEntropy/FX_SeraphEntropyAttack.prefab",
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/Seraph/SeraphEntropy/FX_SeraphEntropyAttack.prefab",
         "asset_guid": "69a0c5670a12fb741b15dfb3c2cae618"
       },
       "spawn_location": "character_side_fwd_center"
     },
     {
-      "id": "Boss_Level8_AllyBuffer.impactVFX",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/Astrologer/FX_AstrologerAttackImpact.prefab",
         "asset_guid": "e403cf7dbfbb9df498327589983ce551"
@@ -157,7 +155,7 @@
       "spawn_location": "character_center"
     },
     {
-      "id": "Boss_Level8_AllyBuffer.bossRoomSpellCastVFX",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.bossRoomSpellCastVFX",
       "vfx_left": {
         "asset_name": "Assets/FX/FX_SeraphSpellCastSavagery.prefab",
         "asset_guid": "337f088e9573a334cbb9f79b14193bd4"
@@ -165,9 +163,9 @@
       "spawn_location": "room_center"
     },
     {
-      "id": "Boss_Level8_AllyBuffer.bossSpellCastVFX",
+      "id": "Boss_Level8_AllyBuffer_TitanTrial.bossSpellCastVFX",
       "vfx_left": {
-        "asset_name": "Assets/FX/FX_SeraphSpellCastSavagery.prefab",
+        "asset_name": "Assets/FX/FX_SeraphSpellCast_PS.prefab",
         "asset_guid": "337f088e9573a334cbb9f79b14193bd4"
       },
       "spawn_location": "character_center"

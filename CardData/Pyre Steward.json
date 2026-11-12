@@ -22,6 +22,49 @@
       "unlock_level": 6,
       "initial_keyboard_target": "front_friendly",
       "artist": "Ron Kee"
+    },
+    {
+      "id": "PyreStewardAbility",
+      "names": {
+        "key": "CardData_nameKey-774b75e0ff7583ef-e27dfd29d1d107149af7ef6d38747148-v2",
+        "english": "Pyre Blast",
+        "french": "Déflagration",
+        "german": "Höllenglut-Explosion",
+        "russian": "Залп Пекла",
+        "portuguese": "Explosão da Pira",
+        "chinese": "薪火震爆",
+        "spanish": "Descarga de Pira",
+        "chinese_traditional": "火堆爆炸",
+        "korean": "화로 폭발",
+        "japanese": "炉の爆発"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-8158dbb23904e0ea-e27dfd29d1d107149af7ef6d38747148-v2",
+        "english": "Deal [effect0.power] damage to the Pyre. Deal damage equal to the Pyre's [attack] to enemy units.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> au Brasier. Inflige aux unités ennemies des dégâts à hauteur de l'[attack] du Brasier.",
+        "german": "Füge der Höllenglut [effect0.power] Schaden zu. Füge gegnerischen Einheiten Schaden in Höhe des [attack]s der Höllenglut zu.",
+        "russian": "Наносит Пеклу [effect0.power] урона, а врагам урон, равный [attack] Пекла.",
+        "portuguese": "Causa [effect0.power] de dano à Pira. Causa dano igual ao [attack] da Pira às unidades inimigas.",
+        "chinese": "对薪火造成 [effect0.power] 点伤害。对敌方单位造成等同于薪火 [attack] 的伤害。",
+        "spanish": "Inflige [effect0.power] de daño a la Pira. Inflige daño igual al [attack] de la Pira a las unidades enemigas.",
+        "chinese_traditional": "對火堆造成[effect0.power]點傷害。對敵方單位造成等同於火堆[attack]的傷害。",
+        "korean": "화로에 [effect0.power]의 피해를 줍니다. 적 유닛들에 화로의 [attack]과 동일한 피해를 줍니다.",
+        "japanese": "炉に[effect0.power]のダメージを与える。敵ユニットに炉の[attack]に等しいダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_PyreStewardAbility.prefab",
+        "asset_guid": "0e0b4ae137d765343bcd64262c250a87"
+      },
+      "effects": [
+        "@PyreSteward.effects0.paramCharacterData.unitAbility.effects0",
+        "@PyreSteward.effects0.paramCharacterData.unitAbility.effects1"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_friendly"
     }
   ],
   "characters": [
@@ -63,6 +106,7 @@
       "triggers": [
         "@PyreSteward.effects0.paramCharacterData.triggers0"
       ],
+      "ability": "@PyreStewardAbility",
       "size": 2,
       "health": 10,
       "attack_damage": 30,
@@ -80,15 +124,15 @@
       "descriptions": {
         "key": "CharacterData_descriptionKey-f6741e281baa14a5-afb10aaf8760dfd49a35b3adcfb2839d-v2",
         "english": "Restore [effect0.power] Pyre health.",
-        "french": "Restaure [effect0.power] PV de Brasier.",
+        "french": "Restaure <nobr>[effect0.power] PV</nobr> de Brasier.",
         "german": "Stelle [effect0.power] Höllenglut-Gesundheit wieder her.",
         "russian": "Восстанавливает [effect0.power] здоровья Пекла.",
         "portuguese": "Restaura [effect0.power] de vida da Pira.",
         "chinese": "恢复 [effect0.power] 点薪火生命值。",
         "spanish": "Restaura [effect0.power] de salud a la Pira.",
-        "chinese_traditional": "你的火堆永久獲得+[effect0.power][attack]。",
+        "chinese_traditional": "恢復[effect0.power]點火堆生命值。",
         "korean": "화로 체력을 [effect0.power] 회복합니다.",
-        "japanese": "炉の体力を [effect0.power] 回復する。"
+        "japanese": "炉の体力を[effect0.power]回復する。"
       },
       "trigger": "on_kill",
       "effects": [
@@ -107,6 +151,25 @@
       "name": "CardEffectHealTrain",
       "suppress_pyre_room_focus": true,
       "param_int": 2
+    },
+    {
+      "id": "PyreSteward.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "pyre",
+      "target_team": "heroes",
+      "suppress_pyre_room_focus": true,
+      "anim_to_play": "attack",
+      "param_int": 3
+    },
+    {
+      "id": "PyreSteward.effects0.paramCharacterData.unitAbility.effects1",
+      "name": "CardEffectDamagePerPyreAttack",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "anim_to_play": "attack",
+      "param_int": 1,
+      "param_bool": true,
+      "param_bool_3": true
     }
   ],
   "vfxs": [

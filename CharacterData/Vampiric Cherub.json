@@ -2,9 +2,9 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "characters": [
     {
-      "id": "Boss_Level6_FeedLifesteal",
+      "id": "Boss_Level6_FeedLifesteal_TitanTrial",
       "names": {
-        "key": "CharacterData_nameKey-e4d707c9fae8699c-51ce0305fe0883743b60e30bfae2d549-v2",
+        "key": "CharacterData_nameKey-cc6a2516603c4d46-a2864129bd9d5cb4dab501d5d3cab0ef-v2",
         "english": "Vampiric Cherub",
         "french": "Chérubin vampirique",
         "german": "Vampir-Cherubim",
@@ -18,7 +18,7 @@
       },
       "lore_tooltips": [
         {
-          "key": "CharacterData_data-747b625564d7c298-51ce0305fe0883743b60e30bfae2d549-v2",
+          "key": "CharacterData_data-9314149926583ef6-a2864129bd9d5cb4dab501d5d3cab0ef-v2",
           "english": "Cherubs are Heaven’s devoted little helpers, and always look up to their eldest, Cael. Once pure and adorable, it’s heartbreaking to see them now twisted by Dominion’s corruption.",
           "french": "Les chérubins, ces petits assistants dévoués du paradis, sont toujours admiratifs de leur aîné, Cael. Autrefois purs et adorables, ils sont aujourd'hui corrompus par Domination.",
           "german": "Die Cherubim sind die Helfer des Himmels und blicken zu ihrem Ältesten Cael auf. Einst waren sie rein und liebenswert, es bricht einem also das Herz, dass sie durch Herrschafts Verderbnis entstellt wurden.",
@@ -35,7 +35,7 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_VampiricCherub.prefab",
         "asset_guid": "f395c1958a50a10499676e7bc19a3d15"
       },
-      "impact_vfx": "@Boss_Level6_FeedLifesteal.impactVFX",
+      "impact_vfx": "@Boss_Level6_FeedLifesteal_TitanTrial.impactVFX",
       "starting_status_effects": [
         {
           "status": "eatmany",
@@ -43,12 +43,9 @@
         }
       ],
       "triggers": [
-        "@Boss_Level6_FeedLifesteal.triggers0"
+        "@Boss_Level6_FeedLifesteal_TitanTrial.triggers0"
       ],
-      "endless_stats": {
-        "attack": 0,
-        "health": 100
-      },
+      "hide_in_logbook": true,
       "size": 1,
       "health": 30,
       "can_attack": false,
@@ -57,19 +54,19 @@
         "SubtypesData_Snack"
       ],
       "chatter": "Boss6_CaelCherubs_ChatterData",
-      "enemy_relic": "Enemy_SpawnHeroEaterFeedLifesteal",
+      "enemy_relic": "Enemy_SpawnHeroEaterFeedLifesteal_TitanTrial",
       "artist": "Nicole Anne Alfonso"
     }
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level6_FeedLifesteal.triggers0",
+      "id": "Boss_Level6_FeedLifesteal_TitanTrial.triggers0",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-a9bdeef50aa94992-51ce0305fe0883743b60e30bfae2d549-v2",
+        "key": "CharacterData_descriptionKey-ca02c7782079c438-a2864129bd9d5cb4dab501d5d3cab0ef-v2",
         "english": "Grant +[effect0.upgrade.bonusdamage][attack] and [lifesteal] [effect0.upgrade.status0.power]. Deal [effect1.power] damage to self.",
         "french": "Octroie +[effect0.upgrade.bonusdamage][attack] et [lifesteal] [effect0.upgrade.status0.power]. Inflige <nobr>[effect1.power] DGT</nobr> à soi-même.",
         "german": "Verleiht +[effect0.upgrade.bonusdamage][attack] und [lifesteal] [effect0.upgrade.status0.power]. Verursacht [effect1.power] Schaden gegen sich selbst.",
-        "russian": "Дает +[effect0.upgrade.bonusdamage][attack] и [lifesteal] х[effect0.upgrade.status0.power] своему поглотителю. Наносит [effect1.power] урона себе.",
+        "russian": "Даются [effect0.upgrade.bonusdamage][attack] и [lifesteal] х[effect0.upgrade.status0.power]. Наносит [effect1.power] урона себе.",
         "portuguese": "Concede +[effect0.upgrade.bonusdamage] [attack] e [lifesteal] [effect0.upgrade.status0.power]. Causa [effect1.power] de dano a si mesmo.",
         "chinese": "获得 +[effect0.upgrade.bonusdamage][attack] 和 [lifesteal] [effect0.upgrade.status0.power]。对自身造成 [effect1.power] 点伤害。",
         "spanish": "Añade +[effect0.upgrade.bonusdamage][attack] y [lifesteal] [effect0.upgrade.status0.power]. Se inflige [effect1.power] de daño a sí mismo.",
@@ -79,21 +76,21 @@
       },
       "trigger": "on_eaten",
       "effects": [
-        "@Boss_Level6_FeedLifesteal.triggers0.effects0",
-        "@Boss_Level6_FeedLifesteal.triggers0.effects1"
+        "@Boss_Level6_FeedLifesteal_TitanTrial.triggers0.effects0",
+        "@Boss_Level6_FeedLifesteal_TitanTrial.triggers0.effects1"
       ]
     }
   ],
   "effects": [
     {
-      "id": "Boss_Level6_FeedLifesteal.triggers0.effects0",
+      "id": "Boss_Level6_FeedLifesteal_TitanTrial.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "heroes",
-      "param_upgrade": "@Boss_Level6_FeedLifestealUpgrade"
+      "param_upgrade": "@Boss_Level6_FeedLifestealUpgrade_TitanTrial"
     },
     {
-      "id": "Boss_Level6_FeedLifesteal.triggers0.effects1",
+      "id": "Boss_Level6_FeedLifesteal_TitanTrial.triggers0.effects1",
       "name": "CardEffectDamage",
       "target_mode": "self",
       "param_int": 10
@@ -101,19 +98,19 @@
   ],
   "upgrades": [
     {
-      "id": "Boss_Level6_FeedLifestealUpgrade",
+      "id": "Boss_Level6_FeedLifestealUpgrade_TitanTrial",
       "status_effect_upgrades": [
         {
           "status": "lifesteal",
           "count": 1
         }
       ],
-      "bonus_damage": 7
+      "bonus_damage": 12
     }
   ],
   "vfxs": [
     {
-      "id": "Boss_Level6_FeedLifesteal.impactVFX",
+      "id": "Boss_Level6_FeedLifesteal_TitanTrial.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBluntSmall.prefab",
         "asset_guid": "72b87cde6c1982d48b212d0b28028d13"

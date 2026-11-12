@@ -2,9 +2,9 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "characters": [
     {
-      "id": "Boss_Level6_FeedDamageShield",
+      "id": "Boss_Level6_FeedDamageShield_TitanTrial",
       "names": {
-        "key": "CharacterData_nameKey-c3992e139cd0ec16-a76032d22bf997242848d804ff3743f9-v2",
+        "key": "CharacterData_nameKey-768606aaa61fb972-36c94f3b9eda93b4a9fdb7ee87629cd7-v2",
         "english": "Holy Cherub",
         "french": "Chérubin sacré",
         "german": "Heiliger Cherubim",
@@ -18,7 +18,7 @@
       },
       "lore_tooltips": [
         {
-          "key": "CharacterData_data-f58b4d24bbf3e61b-a76032d22bf997242848d804ff3743f9-v2",
+          "key": "CharacterData_data-1937c92fe7f7526d-36c94f3b9eda93b4a9fdb7ee87629cd7-v2",
           "english": "Cherubs are Heaven’s devoted little helpers, and always look up to their eldest, Cael. Once pure and adorable, it’s heartbreaking to see them now twisted by Dominion’s corruption.",
           "french": "Les chérubins, ces petits assistants dévoués du paradis, sont toujours admiratifs de leur aîné, Cael. Autrefois purs et adorables, ils sont aujourd'hui corrompus par Domination.",
           "german": "Die Cherubim sind die Helfer des Himmels und blicken zu ihrem Ältesten Cael auf. Einst waren sie rein und liebenswert, es bricht einem also das Herz, dass sie durch Herrschafts Verderbnis entstellt wurden.",
@@ -35,7 +35,7 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_HolyCherub.prefab",
         "asset_guid": "91d602dce7d690f429bfe6c5f521bd34"
       },
-      "impact_vfx": "@Boss_Level6_FeedDamageShield.impactVFX",
+      "impact_vfx": "@Boss_Level6_FeedDamageShield_TitanTrial.impactVFX",
       "starting_status_effects": [
         {
           "status": "eatmany",
@@ -43,12 +43,9 @@
         }
       ],
       "triggers": [
-        "@Boss_Level6_FeedDamageShield.triggers0"
+        "@Boss_Level6_FeedDamageShield_TitanTrial.triggers0"
       ],
-      "endless_stats": {
-        "attack": 0,
-        "health": 100
-      },
+      "hide_in_logbook": true,
       "size": 1,
       "health": 60,
       "can_attack": false,
@@ -57,43 +54,43 @@
         "SubtypesData_Snack"
       ],
       "chatter": "Boss6_CaelCherubs_ChatterData",
-      "enemy_relic": "Enemy_SpawnHeroEaterFeedDamageShield",
+      "enemy_relic": "Enemy_SpawnHeroEaterFeedDamageShield_TitanTrial",
       "artist": "Nicole Anne Alfonso"
     }
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level6_FeedDamageShield.triggers0",
+      "id": "Boss_Level6_FeedDamageShield_TitanTrial.triggers0",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-9119cd6cb4e68816-a76032d22bf997242848d804ff3743f9-v2",
-        "english": "Grant [damageshield] [effect0.upgrade.status0.power]. Deal [effect1.power] damage to self.",
-        "french": "Octroie [damageshield] [effect0.upgrade.status0.power]. Inflige <nobr>[effect1.power] DGT</nobr> à soi-même.",
-        "german": "Verleiht [damageshield] [effect0.upgrade.status0.power]. Verursacht [effect1.power] Schaden gegen sich selbst.",
-        "russian": "Дает [damageshield] [effect0.upgrade.status0.power] своему поглотителю. <br>Наносит [effect1.power] урона себе.",
-        "portuguese": "Concede [damageshield] [effect0.upgrade.status0.power]. Causa [effect1.power] de dano a si mesmo.",
-        "chinese": "获得 [damageshield] [effect0.upgrade.status0.power]。对自身造成 [effect1.power] 点伤害。",
-        "spanish": "Añade [damageshield] [effect0.upgrade.status0.power]. Se inflige [effect1.power] de daño a sí mismo.",
-        "chinese_traditional": "賦予[damageshield][effect0.upgrade.status0.power]。對自身造成[effect1.power]點傷害。",
-        "korean": "[damageshield] [effect0.upgrade.status0.power] 효과를 부여합니다. 자신은 [effect1.power]의 피해를 입습니다.",
-        "japanese": "[damageshield] [effect0.upgrade.status0.power]を付与する。自身に[effect1.power]のダメージを与える。"
+        "key": "CharacterData_descriptionKey-ee3ff16b44493da8-36c94f3b9eda93b4a9fdb7ee87629cd7-v2",
+        "english": "Grant [damageshield] [effect0.upgrade.status0.power] and [spellshield] [effect0.upgrade.status1.power]. Deal [effect1.power] damage to self.",
+        "french": "Octroie [damageshield] [effect0.upgrade.status0.power] et [spellshield] [effect0.upgrade.status1.power]. Inflige <nobr>[effect1.power] DGT</nobr> à soi-même.",
+        "german": "Verleiht [damageshield] [effect0.upgrade.status0.power] und [spellshield] [effect0.upgrade.status1.power]. Verursacht [effect1.power] Schaden gegen sich selbst.",
+        "russian": "Дает [damageshield] х[effect0.upgrade.status0.power] и [spellshield] х[effect0.upgrade.status1.power] своему поглотителю. Наносит [effect1.power] урона себе.",
+        "portuguese": "Concede [damageshield] [effect0.upgrade.status0.power] e [spellshield] [effect0.upgrade.status1.power]. Causa [effect1.power] de dano a si mesmo.",
+        "chinese": "获得 [damageshield] [effect0.upgrade.status0.power] 和 [spellshield] [effect0.upgrade.status1.power]。对自身造成 [effect1.power] 点伤害。",
+        "spanish": "Otorga [damageshield] [effect0.upgrade.status0.power] y [spellshield] [effect0.upgrade.status1.power]. Se inflige [effect1.power] de daño a sí mismo.",
+        "chinese_traditional": "賦予[damageshield][effect0.upgrade.status0.power]和[spellshield][effect0.upgrade.status1.power]。對自身造成[effect1.power]點傷害。",
+        "korean": "[damageshield] [effect0.upgrade.status0.power] 및 [spellshield] [effect0.upgrade.status1.power] 효과를 부여합니다. 자신은 [effect1.power]의 피해를 입습니다.",
+        "japanese": "[damageshield] [effect0.upgrade.status0.power]と[spellshield] [effect0.upgrade.status1.power]を付与する。自身に[effect1.power]のダメージを与える。"
       },
       "trigger": "on_eaten",
       "effects": [
-        "@Boss_Level6_FeedDamageShield.triggers0.effects0",
-        "@Boss_Level6_FeedDamageShield.triggers0.effects1"
+        "@Boss_Level6_FeedDamageShield_TitanTrial.triggers0.effects0",
+        "@Boss_Level6_FeedDamageShield_TitanTrial.triggers0.effects1"
       ]
     }
   ],
   "effects": [
     {
-      "id": "Boss_Level6_FeedDamageShield.triggers0.effects0",
+      "id": "Boss_Level6_FeedDamageShield_TitanTrial.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "heroes",
-      "param_upgrade": "@Boss_Level6_FeedDamageShieldUpgrade"
+      "param_upgrade": "@Boss_Level6_FeedDamageShieldUpgrade_TitanTrial"
     },
     {
-      "id": "Boss_Level6_FeedDamageShield.triggers0.effects1",
+      "id": "Boss_Level6_FeedDamageShield_TitanTrial.triggers0.effects1",
       "name": "CardEffectDamage",
       "target_mode": "self",
       "param_int": 20
@@ -101,10 +98,14 @@
   ],
   "upgrades": [
     {
-      "id": "Boss_Level6_FeedDamageShieldUpgrade",
+      "id": "Boss_Level6_FeedDamageShieldUpgrade_TitanTrial",
       "status_effect_upgrades": [
         {
           "status": "damage shield",
+          "count": 1
+        },
+        {
+          "status": "spell shield",
           "count": 1
         }
       ]
@@ -112,7 +113,7 @@
   ],
   "vfxs": [
     {
-      "id": "Boss_Level6_FeedDamageShield.impactVFX",
+      "id": "Boss_Level6_FeedDamageShield_TitanTrial.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/DamageFX/FireDamage/FX_FlameImpact_PS.prefab",
         "asset_guid": "3264e2908c5ba3549a14df8cb8e8e37d"
