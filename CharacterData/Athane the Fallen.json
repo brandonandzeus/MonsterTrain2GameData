@@ -2,9 +2,9 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "characters": [
     {
-      "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2",
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane",
       "names": {
-        "key": "CharacterData_nameKey-163533cead46783e-edd336dfbd052c84086480a39d1c2319-v2",
+        "key": "CharacterData_nameKey-915112e59264160c-289f5d40ea7dead4a8f6eee439995c69-v2",
         "english": "Athane the Fallen",
         "french": "Athane la Déchue",
         "german": "Athane die Gefallene",
@@ -18,7 +18,7 @@
       },
       "lore_tooltips": [
         {
-          "key": "CharacterData_data-955137f37393787e-edd336dfbd052c84086480a39d1c2319-v2",
+          "key": "CharacterData_data-3b9c98945eb36145-289f5d40ea7dead4a8f6eee439995c69-v2",
           "english": "Entropy’s erratic corruption proved to be the energy-rich soil for the Mother’s seed to root and grow. Now, having served as a bodily vessel for both a Titan and the Giver of Life, all that remains of Athane is a muted voice that pleads for help.",
           "french": "La corruption chaotique d'Entropie s'est avérée propice au développement des graines de la Mère. Désormais, après avoir accueilli à la fois un titan et le Créateur de vie, Athane n'est plus qu'une voix étouffée qui implore qu'on l'aide.",
           "german": "Die erratische Verderbnis der Entropie stellte sich als energiereicher Boden heraus, in dem die Saat der Mutter wurzeln und gedeihen konnte. Nun, da sie als Gefäß für Titanen und Lebensschöpferin gedient hatte, blieb von Athane nur noch eine leise Stimme übrig, die um Hilfe flehte.",
@@ -35,7 +35,7 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_NephilLastToFall_SoulSavior.prefab",
         "asset_guid": "35f50216e03c8a44a878aeac3ad57475"
       },
-      "impact_vfx": "@Boss_SoulSavior_R1_TrainBoss_Athane_V2.impactVFX",
+      "impact_vfx": "@Boss_SoulSavior_R1_TrainBoss_Athane.impactVFX",
       "starting_status_effects": [
         {
           "status": "relentless",
@@ -43,8 +43,9 @@
         }
       ],
       "triggers": [
-        "@Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers0",
-        "@Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers1"
+        "@Boss_SoulSavior_R1_TrainBoss_Athane.triggers0",
+        "@Boss_SoulSavior_R1_TrainBoss_Athane.triggers1",
+        "@Boss_SoulSavior_R1_TrainBoss_Athane.triggers2"
       ],
       "endless_stats": {
         "attack": 30,
@@ -54,7 +55,7 @@
       "health": 400,
       "is_mini_boss": true,
       "death_type": "large",
-      "attack_damage": 5,
+      "attack_damage": 12,
       "boss_titan_affinity": "lifemother",
       "status_effect_immunities": [
         "immobile"
@@ -69,70 +70,96 @@
   ],
   "character_triggers": [
     {
-      "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers0",
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.triggers0",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-91981f8e6fe18861-edd336dfbd052c84086480a39d1c2319-v2",
-        "english": "Apply [spikes] [effect0.status0.power] to enemy units.",
-        "french": "Applique [spikes] [effect0.status0.power] aux unités ennemies.",
-        "german": "Wende [effect0.status0.power] [spikes] auf gegnerische Einheiten an.",
-        "russian": "На всех врагов накладываются [spikes] х[effect0.status0.power].",
-        "portuguese": "Aplica [spikes] [effect0.status0.power] às unidades inimigas.",
-        "chinese": "对所有敌方单位施加 [spikes] [effect0.status0.power]。",
-        "spanish": "Añade [spikes] [effect0.status0.power] a las unidades enemigas.",
-        "chinese_traditional": "對敵方單位施加[spikes][effect0.status0.power]。",
-        "korean": "적 유닛들에 [spikes][effect0.status0.power] 효과를 적용합니다.",
-        "japanese": "敵ユニットに[spikes] [effect0.status0.power]を付与する。"
+        "key": "CharacterData_descriptionKey-b405089a647962fb-289f5d40ea7dead4a8f6eee439995c69-v2",
+        "english": "Apply [rage] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [rage] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [effect0.status0.power] [rage] auf gegnerische Einheiten an.",
+        "russian": "На всех врагов накладывается [rage] х[effect0.status0.power].",
+        "portuguese": "Aplica [rage] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [rage] [effect0.status0.power]。",
+        "spanish": "Añade [rage] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[rage][effect0.status0.power]。",
+        "korean": "적 유닛들에 [rage] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[rage] [effect0.status0.power]を付与する。"
       },
       "trigger": "card_spell_played",
       "effects": [
-        "@Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers0.effects0"
+        "@Boss_SoulSavior_R1_TrainBoss_Athane.triggers0.effects0"
       ]
     },
     {
-      "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers1",
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.triggers1",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-7765dbcda639187b-edd336dfbd052c84086480a39d1c2319-v2",
-        "english": "Spawn a <b>Chosen Prayerstone</b>.",
-        "french": "Fait apparaître une <b>Pierre offertoire d'élu</b>.",
-        "german": "Erzeuge einen <b>Auserwählten Gebetstein</b>.",
-        "russian": "Создает <b>Алтарь избранного</b>.",
-        "portuguese": "Faz surgir uma <b>Pedra de Oração do Escolhido</b>.",
-        "chinese": "生成一个<b>神选祷告石</b>。",
-        "spanish": "Genera una <b>Piedra oratoria elegida</b>.",
-        "chinese_traditional": "生成一個<b>天選祈禱石</b>。",
-        "korean": "<b>선택된 기도석</b>을 스폰합니다.",
-        "japanese": "<b>選ばれし祈念石</b>を出現させる。"
+        "key": "CharacterData_descriptionKey-1ebb44b4040c07c5-289f5d40ea7dead4a8f6eee439995c69-v2",
+        "english": "Spawn an <b>Ossivane Sentinel</b>.",
+        "french": "Génère une <b>Sentinelle ossifiée</b>.",
+        "german": "Erzeuge einen <b>Knöchernen Wächter</b>.",
+        "russian": "Призывает <b>Костяного стража</b>.",
+        "portuguese": "Convoca uma <b>Sentinela Ossivana</b>.",
+        "chinese": "生成一个<b>奥西维哨兵</b>",
+        "spanish": "Genera un <b>Centinela osivano</b>.",
+        "chinese_traditional": "生成一個<b>骨藤哨兵</b>。",
+        "korean": "<b>오시베인 감시병</b>을 스폰합니다.",
+        "japanese": "<b>オッシヴェイン・センチネル</b>を出現させる。"
       },
       "trigger": "post_ascension",
       "effects": [
-        "@Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers1.effects0"
+        "@Boss_SoulSavior_R1_TrainBoss_Athane.triggers1.effects0"
+      ]
+    },
+    {
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.triggers2",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-b5ab7046bbf61e51-289f5d40ea7dead4a8f6eee439995c69-v2",
+        "english": "[retreat].",
+        "french": "[retreat].",
+        "german": "[retreat].",
+        "russian": "[retreat].",
+        "portuguese": "<b>Recua</b>.",
+        "chinese": "[retreat]。",
+        "spanish": "[retreat].",
+        "chinese_traditional": "[retreat]。",
+        "korean": "[retreat].",
+        "japanese": "[retreat]。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@Boss_SoulSavior_R1_TrainBoss_Athane.triggers2.effects0"
       ]
     }
   ],
   "effects": [
     {
-      "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers0.effects0",
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.triggers0.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "spikes",
-          "count": 2
+          "status": "buff",
+          "count": 1
         }
       ]
     },
     {
-      "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2.triggers1.effects0",
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.triggers1.effects0",
       "name": "CardEffectSpawnHero",
       "param_character_pool": [
-        "SpikyRockT3_Chosen_Boss_BasicNonAttack"
+        "R1_Heavy_HealOnShift"
       ]
+    },
+    {
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.triggers2.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self",
+      "param_int": 1
     }
   ],
   "vfxs": [
     {
-      "id": "Boss_SoulSavior_R1_TrainBoss_Athane_V2.impactVFX",
+      "id": "Boss_SoulSavior_R1_TrainBoss_Athane.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
         "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"

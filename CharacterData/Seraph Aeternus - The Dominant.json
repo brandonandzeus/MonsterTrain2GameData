@@ -2,9 +2,9 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "characters": [
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial",
+      "id": "Boss_Level8_Corrupter",
       "names": {
-        "key": "CharacterData_nameKey-c28442da00a78c54-3058fcc2b0af812408f5df14d29e9776-v2",
+        "key": "CharacterData_nameKey-e5a6bef9a8678403-60ced70192f29fd408e9ab88aa0ba409-v2",
         "english": "Seraph Aeternus - The Dominant",
         "french": "Séraphin Aeternus le Dominateur",
         "german": "Seraph Aeternus – Der Herrscher",
@@ -18,7 +18,7 @@
       },
       "lore_tooltips": [
         {
-          "key": "CharacterData_data-3c7f27cd10c2cc7d-3058fcc2b0af812408f5df14d29e9776-v2",
+          "key": "CharacterData_data-6172abebb469632d-60ced70192f29fd408e9ab88aa0ba409-v2",
           "english": "Order, control, obedience. Dominion’s promises of power were those which Seraph valued the most. It is no coincidence that of the Three, Seraph and Dominion are the most alike. ",
           "french": "Ordre, contrôle, obéissance. Les promesses de pouvoir de Domination sont celles que Séraphin apprécie le plus. Ce n'est pas une coïncidence si, des Trois, Séraphin et Domination sont ceux qui se ressemblent le plus.",
           "german": "Ordnung, Kontrolle, Gehorsam. Herrschaft versprach Seraph Macht, was diesem besonders wichtig war. Es ist kein Zufall, dass Seraph diesem Titanen besonders ähnlich ist.",
@@ -35,12 +35,12 @@
         "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Seraph_Dominion.prefab",
         "asset_guid": "b15faac4fb9060b48851623322f0d48b"
       },
-      "attack_vfx": "@Boss_Level8_Corrupter_TitanTrial.attackVFX",
-      "impact_vfx": "@Boss_Level8_Corrupter_TitanTrial.impactVFX",
-      "boss_room_cast_vfx": "@Boss_Level8_Corrupter_TitanTrial.bossRoomSpellCastVFX",
+      "attack_vfx": "@Boss_Level8_Corrupter.attackVFX",
+      "impact_vfx": "@Boss_Level8_Corrupter.impactVFX",
+      "boss_room_cast_vfx": "@Boss_Level8_Corrupter.bossRoomSpellCastVFX",
       "triggers": [
-        "@Boss_Level8_Corrupter_TitanTrial.triggers0",
-        "@Boss_Level8_Corrupter_TitanTrial.triggers1"
+        "@Boss_Level8_Corrupter.triggers0",
+        "@Boss_Level8_Corrupter.triggers1"
       ],
       "boss_action_groups": [
         {
@@ -53,7 +53,10 @@
           "num_repeats": 0
         }
       ],
-      "hide_in_logbook": true,
+      "endless_stats": {
+        "attack": 40,
+        "health": 4500
+      },
       "size": 6,
       "health": 2800,
       "is_outer_train_boss": true,
@@ -70,15 +73,15 @@
         "SubtypesData_BossAll"
       ],
       "chatter": "Boss8_SeraphAeternus_Dominion_ChatterData",
-      "enemy_relic": "Enemy_CorruptSeraph_ApplyStatuses_TitanTrial",
+      "enemy_relic": "Enemy_CorruptSeraph_ApplyStatuses",
       "artist": "Genevieve Bega"
     }
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.triggers0",
+      "id": "Boss_Level8_Corrupter.triggers0",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-ddce669e6f66f832-3058fcc2b0af812408f5df14d29e9776-v2",
+        "key": "CharacterData_descriptionKey-885a95107fb7b954-60ced70192f29fd408e9ab88aa0ba409-v2",
         "english": "Double [corruption] on the attacked unit.",
         "french": "Double la [corruption] de l'unité attaquée.",
         "german": "Verdopple [corruption] auf der angegriffenen Einheit.",
@@ -92,13 +95,13 @@
       },
       "trigger": "on_attacking",
       "effects": [
-        "@Boss_Level8_Corrupter_TitanTrial.triggers0.effects0"
+        "@Boss_Level8_Corrupter.triggers0.effects0"
       ]
     },
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.triggers1",
+      "id": "Boss_Level8_Corrupter.triggers1",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-4066befab3061185-3058fcc2b0af812408f5df14d29e9776-v2",
+        "key": "CharacterData_descriptionKey-e35fa5fdfeac1e40-60ced70192f29fd408e9ab88aa0ba409-v2",
         "english": "Apply [corruption] [effect0.status0.power] to your units.",
         "french": "Applique [corruption] [effect0.status0.power] à vos unités.",
         "german": "Wende [corruption] [effect0.status0.power] auf deine Einheiten an.",
@@ -112,14 +115,14 @@
       },
       "trigger": "on_turn_begin",
       "effects": [
-        "@Boss_Level8_Corrupter_TitanTrial.triggers1.effects0"
+        "@Boss_Level8_Corrupter.triggers1.effects0"
       ],
       "remove_on_relentless_change": true
     }
   ],
   "effects": [
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.triggers0.effects0",
+      "id": "Boss_Level8_Corrupter.triggers0.effects0",
       "name": "CardEffectMultiplyStatusEffect",
       "target_mode": "last_attacked_character",
       "target_team": "monsters",
@@ -131,22 +134,22 @@
       ]
     },
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.triggers1.effects0",
+      "id": "Boss_Level8_Corrupter.triggers1.effects0",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "monsters",
       "param_status_effects": [
         {
           "status": "corruption",
-          "count": 4
+          "count": 2
         }
       ],
-      "applied_vfx": "@Boss_Level8_Corrupter_TitanTrial.triggers1.effects0.appliedVFX"
+      "applied_vfx": "@Boss_Level8_Corrupter.triggers1.effects0.appliedVFX"
     }
   ],
   "vfxs": [
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.attackVFX",
+      "id": "Boss_Level8_Corrupter.attackVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/PyreFX/Dominion/FX_SeraphDominionAttack.prefab",
         "asset_guid": "4c9957a4feb2f0940bdb7a37ccc3a483"
@@ -154,7 +157,7 @@
       "spawn_location": "character_center"
     },
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.impactVFX",
+      "id": "Boss_Level8_Corrupter.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/DominionTitan/FX_DominionTitanImpact.prefab",
         "asset_guid": "7f66615157fdeab439dd7d3635de1abf"
@@ -162,7 +165,7 @@
       "spawn_location": "character_center"
     },
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.bossRoomSpellCastVFX",
+      "id": "Boss_Level8_Corrupter.bossRoomSpellCastVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/Seraph/Dominion/FX_SeraphSpellCastDominion.prefab",
         "asset_guid": "ea0d82a2a02166d4b9474d728845a37b"
@@ -170,7 +173,7 @@
       "spawn_location": "room_center"
     },
     {
-      "id": "Boss_Level8_Corrupter_TitanTrial.triggers1.effects0.appliedVFX",
+      "id": "Boss_Level8_Corrupter.triggers1.effects0.appliedVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/Seraph/Dominion/FX_SeraphSpellCastDominion.prefab",
         "asset_guid": "ea0d82a2a02166d4b9474d728845a37b"

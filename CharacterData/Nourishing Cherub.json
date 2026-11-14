@@ -2,9 +2,9 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "characters": [
     {
-      "id": "Boss_Level6_FeedAtkHP_TitanTrial",
+      "id": "Boss_Level6_FeedAtkHP",
       "names": {
-        "key": "CharacterData_nameKey-fa6ef792916e6e92-1739c30bbcdafee4fb1ffc66dded8c1d-v2",
+        "key": "CharacterData_nameKey-955035911f00f8c8-82c65b8c06d0513489dc6478c0a6a18c-v2",
         "english": "Nourishing Cherub",
         "french": "Chérubin nourricier",
         "german": "Nährender Cherubim",
@@ -18,7 +18,7 @@
       },
       "lore_tooltips": [
         {
-          "key": "CharacterData_data-06b5d00ab7d658b9-1739c30bbcdafee4fb1ffc66dded8c1d-v2",
+          "key": "CharacterData_data-dc75410e04fdc9b5-82c65b8c06d0513489dc6478c0a6a18c-v2",
           "english": "Cherubs are Heaven’s devoted little helpers, and always look up to their eldest, Cael. Once pure and adorable, it’s heartbreaking to see them now twisted by Dominion’s corruption.",
           "french": "Les chérubins, ces petits assistants dévoués du paradis, sont toujours admiratifs de leur aîné, Cael. Autrefois purs et adorables, ils sont aujourd'hui corrompus par Domination.",
           "german": "Die Cherubim sind die Helfer des Himmels und blicken zu ihrem Ältesten Cael auf. Einst waren sie rein und liebenswert, es bricht einem also das Herz, dass sie durch Herrschafts Verderbnis entstellt wurden.",
@@ -32,10 +32,10 @@
         }
       ],
       "character_art": {
-        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_NourishingCherub.prefab",
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_NourishingCherub.prefab",
         "asset_guid": "98f915929d13ddc48ac09337e229bf9e"
       },
-      "impact_vfx": "@Boss_Level6_FeedAtkHP_TitanTrial.impactVFX",
+      "impact_vfx": "@Boss_Level6_FeedAtkHP.impactVFX",
       "starting_status_effects": [
         {
           "status": "eatmany",
@@ -43,9 +43,12 @@
         }
       ],
       "triggers": [
-        "@Boss_Level6_FeedAtkHP_TitanTrial.triggers0"
+        "@Boss_Level6_FeedAtkHP.triggers0"
       ],
-      "hide_in_logbook": true,
+      "endless_stats": {
+        "attack": 0,
+        "health": 100
+      },
       "size": 1,
       "health": 30,
       "can_attack": false,
@@ -54,15 +57,15 @@
         "SubtypesData_Snack"
       ],
       "chatter": "Boss6_CaelCherubs_ChatterData",
-      "enemy_relic": "Enemy_SpawnHeroEaterFeedAtkHP_TitanTrial",
+      "enemy_relic": "Enemy_SpawnHeroEaterFeedAtkHP",
       "artist": "Nicole Anne Alfonso"
     }
   ],
   "character_triggers": [
     {
-      "id": "Boss_Level6_FeedAtkHP_TitanTrial.triggers0",
+      "id": "Boss_Level6_FeedAtkHP.triggers0",
       "descriptions": {
-        "key": "CharacterData_descriptionKey-9072352abcb6900a-1739c30bbcdafee4fb1ffc66dded8c1d-v2",
+        "key": "CharacterData_descriptionKey-3a62d6bcbe120d54-82c65b8c06d0513489dc6478c0a6a18c-v2",
         "english": "Grant +[effect0.upgrade.bonushp] [health] and [spikes] [effect0.upgrade.status0.power] to its eater. Deal [effect1.power] damage to self.",
         "french": "Octroie [effect0.upgrade.bonushp] [health] et [spikes] [effect0.upgrade.status0.power] au mangeur. Inflige <nobr>[effect1.power] DGT</nobr> à soi-même.",
         "german": "Verleiht dem Verschlinger +[effect0.upgrade.bonushp] [health] und [spikes] [effect0.upgrade.status0.power]. Verursacht [effect1.power] Schaden gegen sich selbst.",
@@ -76,21 +79,21 @@
       },
       "trigger": "on_eaten",
       "effects": [
-        "@Boss_Level6_FeedAtkHP_TitanTrial.triggers0.effects0",
-        "@Boss_Level6_FeedAtkHP_TitanTrial.triggers0.effects1"
+        "@Boss_Level6_FeedAtkHP.triggers0.effects0",
+        "@Boss_Level6_FeedAtkHP.triggers0.effects1"
       ]
     }
   ],
   "effects": [
     {
-      "id": "Boss_Level6_FeedAtkHP_TitanTrial.triggers0.effects0",
+      "id": "Boss_Level6_FeedAtkHP.triggers0.effects0",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "last_feeder_character",
       "target_team": "heroes",
-      "param_upgrade": "@Boss_Level6_FeedAtkHPUpgrade_TitanTrial"
+      "param_upgrade": "@Boss_Level6_FeedAtkHPUpgrade"
     },
     {
-      "id": "Boss_Level6_FeedAtkHP_TitanTrial.triggers0.effects1",
+      "id": "Boss_Level6_FeedAtkHP.triggers0.effects1",
       "name": "CardEffectDamage",
       "target_mode": "self",
       "param_int": 10
@@ -98,19 +101,19 @@
   ],
   "upgrades": [
     {
-      "id": "Boss_Level6_FeedAtkHPUpgrade_TitanTrial",
+      "id": "Boss_Level6_FeedAtkHPUpgrade",
       "status_effect_upgrades": [
         {
           "status": "spikes",
-          "count": 6
+          "count": 4
         }
       ],
-      "bonus_hp": 50
+      "bonus_hp": 35
     }
   ],
   "vfxs": [
     {
-      "id": "Boss_Level6_FeedAtkHP_TitanTrial.impactVFX",
+      "id": "Boss_Level6_FeedAtkHP.impactVFX",
       "vfx_left": {
         "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBluntSmall.prefab",
         "asset_guid": "72b87cde6c1982d48b212d0b28028d13"
