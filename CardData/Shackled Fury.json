@@ -1,0 +1,62 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "ChainBearerAbility 1",
+      "names": {
+        "key": "CardData_nameKey-a6d644ad2ded963a-7cd766d048b82494d8e064073da70a73-v2",
+        "english": "Shackled Fury",
+        "french": "Fureur enchaînée",
+        "german": "Gefesselter Zorn",
+        "russian": "Скованная ярость",
+        "portuguese": "Fúria Acorrentada",
+        "chinese": "受缚之怒",
+        "spanish": "Furia encadenada",
+        "chinese_traditional": "束縛怒火",
+        "korean": "속박의 분노",
+        "japanese": "束縛の激怒"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-7cb66b17e19873a5-7cd766d048b82494d8e064073da70a73-v2",
+        "english": "Apply [chained] [effect0.status0.power] to enemy units.",
+        "french": "Inflige [chained] [effect0.status0.power] aux unités ennemies.",
+        "german": "Wende [chained] [effect0.status0.power] auf gegnerische Einheiten an.",
+        "russian": "Накладывает на врагов [chained] х[effect0.status0.power].",
+        "portuguese": "Aplica [chained] [effect0.status0.power] às unidades inimigas.",
+        "chinese": "对所有敌方单位施加 [chained] [effect0.status0.power]。",
+        "spanish": "Añade [chained] [effect0.status0.power] a las unidades enemigas.",
+        "chinese_traditional": "對敵方單位施加[chained][effect0.status0.power]。",
+        "korean": "적 유닛들에 [chained] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "敵ユニットに[chained] [effect0.status0.power]を付与する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ChainbearerShackledFuryAbility.prefab",
+        "asset_guid": "cb5d47a94d6f348418c0f26cd8d72fd1"
+      },
+      "effects": [
+        "@ChainBearerAbility 1.effects0"
+      ],
+      "cooldown": 3,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "effects": [
+    {
+      "id": "ChainBearerAbility 1.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "chained",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

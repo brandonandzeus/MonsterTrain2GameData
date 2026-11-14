@@ -1,0 +1,99 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
+    {
+      "id": "MonsterCantor",
+      "names": {
+        "key": "CharacterData_nameKey-cdef478349763640-9bc21a7cf8b869d499825f2da5fa51ef-v2",
+        "english": "Solemn Cantor",
+        "french": "Chantre solennel",
+        "german": "Feierlicher Kantor",
+        "russian": "Скорбный певчий",
+        "portuguese": "Cantor Solene",
+        "chinese": "庄严独唱",
+        "spanish": "Cantor solemne",
+        "chinese_traditional": "莊嚴領唱者",
+        "korean": "엄숙한 선창자",
+        "japanese": "厳粛な主唱者"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-20689923de6ae867-9bc21a7cf8b869d499825f2da5fa51ef-v2",
+          "english": "“Did you know that I once sang for Heaven? My songs rang out across the skies. Now, they echo against rock walls and fight to be heard over the cries of the other prisoners.”",
+          "french": "<nobr>« Saviez-vous</nobr> qu'autrefois, je chantais pour le <nobr>paradis ?</nobr> Mes chants résonnaient dans les cieux. À présent, ils ricochent contre les parois rocheuses et peinent à couvrir les cris des autres <nobr>prisonniers. »</nobr>",
+          "german": "„Wusstest du, dass ich einst für den Himmel gesungen habe? Meine Lieder hallten durch den ganzen Himmel. Nun hallen sie von den Felswänden wider und werden von den Schreien der anderen Gefangenen übertönt.“",
+          "russian": "«А вы знали, что когда-то мои песни звучали в Раю и разносились по небесам? Теперь они эхом отражаются от каменных стен, пытаясь пробиться сквозь крики других узников».",
+          "portuguese": "“Você sabia que eu já cantei para o Céu? Minhas canções ressoavam pelos céus. Agora, elas ecoam contra paredes rochosas e lutam para serem ouvidas em meio aos gritos dos outros prisioneiros.”",
+          "chinese": "“你知道吗？从前，我为天堂歌唱。我的歌声响彻天穹。现在，歌声在石壁间回荡，稍不留神就会被其他犯人的叫喊声盖过。”",
+          "spanish": "«¿Sabías que hubo un tiempo en el que cantaba para el Cielo? Mis canciones resonaban por el elíseo. Ahora, se hacen eco entre paredes de piedra y luchan por hacerse oír entre los gritos de los otros prisioneros».",
+          "chinese_traditional": "「你知道我曾為天堂唱歌嗎？我的歌聲響徹天際。如今，我的歌聲只能在岩壁之間迴盪，竭力蓋過其他囚犯的哭喊聲。」",
+          "korean": "“나도 한때는 천상을 위해 노래를 바쳤다는 사실을 아는가? 내 노래는 천상을 가로질러 널리 퍼져나갔다. 지금 그 노래는 바위로 된 벽을 타고 흐르며 다른 죄수들이 내는 비명을 뒤덮고 있다.”",
+          "japanese": "「かつては天界のために歌っていたことは知ってるか？私の歌は空いっぱいに響き渡ったものだ。今では、岩の壁にこだまし、他の囚人たちの叫び声に負けじと響いている」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_SolemnCantor.prefab",
+        "asset_guid": "ae636d0472f494a4095fccc08edf7103"
+      },
+      "impact_vfx": "@MonsterCantor.impactVFX",
+      "triggers": [
+        "@MonsterCantor.triggers0"
+      ],
+      "size": 1,
+      "health": 8,
+      "attack_damage": 8,
+      "subtypes": [
+        "SubtypesData_Disciple"
+      ],
+      "chatter": "PunishedCantorChatterData",
+      "artist": "Luke Banke"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MonsterCantor.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-b84ec7267d7502d8-9bc21a7cf8b869d499825f2da5fa51ef-v2",
+        "english": "Apply [lifesteal] [effect0.status0.power] to damaged friendly units.",
+        "french": "Applique [lifesteal] [effect0.status0.power] aux unités alliées blessées.",
+        "german": "Wende [lifesteal] [effect0.status0.power] auf beschädigte verbündete Einheiten an.",
+        "russian": "На раненых союзников накладывается [lifesteal] х[effect0.status0.power].",
+        "portuguese": "Concede [lifesteal] [effect0.status0.power] às unidades aliadas danificadas.",
+        "chinese": "使所有受伤的友方单位获得 [lifesteal] [effect0.status0.power]。",
+        "spanish": "Añade [lifesteal] [effect0.status0.power] a las unidades aliadas dañadas.",
+        "chinese_traditional": "對受傷的友方單位施加[lifesteal][effect0.status0.power]。",
+        "korean": "피해를 받은 아군 유닛들에 [lifesteal] [effect0.status0.power] 효과를 적용합니다.",
+        "japanese": "ダメージを受けている味方ユニットに[lifesteal] [effect0.status0.power]を付与する。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@MonsterCantor.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterCantor.triggers0.effects0",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "target_mode_health_filter": "damaged",
+      "param_status_effects": [
+        {
+          "status": "lifesteal",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MonsterCantor.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Punished/FX_PunishedImpact.prefab",
+        "asset_guid": "4fd8d8b1b1efdc742a6ffe70d6b02848"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

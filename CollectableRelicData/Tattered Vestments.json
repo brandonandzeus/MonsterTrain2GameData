@@ -1,0 +1,73 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "RevengeTriggerTwice",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPunished",
+            "required_dlc": "punished"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-1d0865ad6ed6334f-0e238f49ea8dcb94a8a2688aa1fbef68-v2",
+        "english": "Tattered Vestments",
+        "french": "Vêtements en lambeaux",
+        "german": "Zerfetzte Gewänder",
+        "russian": "Лохмотья",
+        "portuguese": "Vestimentas Esfarrapadas",
+        "chinese": "破烂的法衣",
+        "spanish": "Ropajes harapientos",
+        "chinese_traditional": "破爛祭服",
+        "korean": "해진 제의",
+        "japanese": "擦り切れた祭服"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-2c4a3898f40bc59d-0e238f49ea8dcb94a8a2688aa1fbef68-v2",
+        "english": "[revenge] triggers an additional time.",
+        "french": "Déclenche [revenge] une fois de plus.",
+        "german": "[revenge] wird ein weiteres Mal ausgelöst.",
+        "russian": "[revenge] срабатывает еще раз.",
+        "portuguese": "Aciona [revenge] mais uma vez.",
+        "chinese": "[revenge] 额外触发一次。",
+        "spanish": "[revenge] se activa una vez más.",
+        "chinese_traditional": "[revenge]額外觸發一次。",
+        "korean": "[revenge] 효과가 한 번 더 발동합니다.",
+        "japanese": "[revenge]が追加で発動する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-c0040b0ba3509371-0e238f49ea8dcb94a8a2688aa1fbef68-v2",
+          "english": "The Punished take pride in their clothing, exhibiting the marks their bodies have suffered. A Punished adorned with a well-tattered cloth is as beautiful to them as golden armor is to Seraph’s guards.",
+          "french": "Les Châtiés sont fiers de leurs vêtements, qui exposent les marques infligées à leur corps. À leurs yeux, un Châtié vêtu d'étoffes bien déchirées est aussi beau qu'un garde de Séraphin en armure d'or.",
+          "german": "Die Gegeißelten sind stolz auf ihre Kleidung, mit der sie die Narben zur Schau stellen, die ihre Körper erlitten haben. Ein Gegeißelter, der mit einem stark zerfetzten Tuch bekleidet ist, ist für sie ebenso schön wie eine goldene Rüstung der Wachen des Seraphs.",
+          "russian": "Мученики гордятся своим видом и не скрывают следов, оставленных на их телах страданиями. Изорванная ткань для них так же прекрасна, как сверкающие доспехи для стражей Серафима.",
+          "portuguese": "Os Castigados se orgulham de suas vestimentas, exibindo as marcas que seus corpos sofreram. Um Castigado adornado com um pano bem esfarrapado é tão belo para eles quanto uma armadura dourada é para os guardas do Serafim.",
+          "chinese": "受罚者以自己的服饰为荣，因为能借服饰展示他们身上的伤痕。若炽天使的守卫以金色盔甲为美，那受罚者就以褴褛的衣衫为美。",
+          "spanish": "Los Castigados se enorgullecen de su ropaje, que exhibe las marcas que han sufrido sus cuerpos. Un Castigado adornado con unos harapos bien desgastados es como una armadura dorada entre los guardias de Seraph.",
+          "chinese_traditional": "受罰者對他們的服裝十分引以為榮，大方展示肉體上留下的傷痕。在受罰者眼中，披著破爛衣物的同伴很美，就如同撒拉弗的守衛認為金色護甲很美一樣。",
+          "korean": "처벌받은 자는 자신의 옷차림에 자부심을 느낀다. 그들의 독특한 복식은 몸이 겪어 온 고통의 흔적을 고스란히 드러낸다. 잘 해진 천으로 몸을 두른 처벌받은 자의 모습은, 그들에게 세라핌의 수호병이 입는 황금 갑옷만큼이나 아름답다.",
+          "japanese": "処罰族は、その衣服に誇りを持っており、身体が受けた傷の痕を見せている。よく擦り切れた布をまとった処罰族は、彼らにとって、セラフの護衛にとっての黄金の鎧と同じくらい美しい。"
+        }
+      ],
+      "relic_effects": [
+        "@RevengeTriggerTwice.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RevengeTriggerTwice.effects0",
+      "name": "RelicEffectModifyTriggerCount",
+      "param_int": 1,
+      "param_trigger": "on_hit"
+    }
+  ]
+}

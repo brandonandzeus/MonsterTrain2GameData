@@ -1,0 +1,128 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeClanPunishedPunish",
+      "pools": [
+        "DraftUpgradePool",
+        "MalickaDraftUpgradePool",
+        "UnitUpgradePoolCommon"
+      ],
+      "type": "enhancer",
+      "extensions": [
+        {
+          "enhancer": {
+            "rarity": "common",
+            "class": "ClassPunished",
+            "numCardsToShowInUpgradeScreen": 0
+          }
+        }
+      ],
+      "names": {
+        "key": "EnhancerData_nameKey-29a8ecc659874981-1de13fe97a941054f8f418db8121b460-v2",
+        "english": "Darkstone",
+        "french": "Pierre noire",
+        "german": "Dunkelstein",
+        "russian": "Камень тьмы",
+        "portuguese": "Pedra Negra",
+        "chinese": "黑石",
+        "spanish": "Piedra oscura",
+        "chinese_traditional": "黑暗之石",
+        "korean": "어둠의 돌",
+        "japanese": "闇の石"
+      },
+      "descriptions": {
+        "key": "EnhancerData_descriptionKey-a048eae8fafe7b0f-1de13fe97a941054f8f418db8121b460-v2",
+        "english": "Upgrade a unit with [punish]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "french": "Améliore une unité avec <nobr>[punish] :</nobr> +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "german": "Verbessere eine Einheit mit [punish]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "russian": "[punish] усилит вашего бойца: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "Melhora uma unidade com [punish]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "chinese": "用 [punish] 升级一个单位，使其获得：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "Mejora una unidad con [punish]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "升級一個單位，使其獲得[punish]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "유닛을 업그레이드함과 동시에 [punish]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]이 됩니다.",
+        "japanese": "ユニットアップグレード：[punish]（+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]）を得る。"
+      },
+      "relic_effects": [
+        "@UnitUpgradeClanPunishedPunish.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "UnitUpgradeClanPunishedPunish.effects0",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddPunishAttack"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Plus8Attack",
+      "bonus_damage": 8
+    },
+    {
+      "id": "AddPunishAttack",
+      "titles": {
+        "key": "CardUpgradeData_upgradeTitleKey-1ba150c25034c8f3-a59989b5031a0aa48b3071983a2f725c-v2",
+        "english": "Darkstone",
+        "french": "Pierre noire",
+        "german": "Dunkelstein",
+        "russian": "Камень тьмы",
+        "portuguese": "Pedra Negra",
+        "chinese": "黑石",
+        "spanish": "Piedra oscura",
+        "chinese_traditional": "黑暗之石",
+        "korean": "어둠의 돌",
+        "japanese": "闇の石"
+      },
+      "descriptions": {
+        "key": "CardUpgradeData_upgradeDescriptionKey-3e3ce63bf173ad59-a59989b5031a0aa48b3071983a2f725c-v2",
+        "english": "[punish]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "french": "<nobr>[punish] :</nobr> +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "german": "[punish]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "russian": "[punish]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "[punish]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "chinese": "[punish]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "[punish]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "[punish]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。",
+        "korean": "[punish]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].",
+        "japanese": "[punish]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。"
+      },
+      "trigger_upgrades": [
+        "@UnitUpgradeClanPunishedPunish.effects0.paramCardUpgradeData.triggerUpgrades0"
+      ]
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "UnitUpgradeClanPunishedPunish.effects0.paramCardUpgradeData.triggerUpgrades0",
+      "descriptions": {
+        "key": "CardUpgradeData_descriptionKey-3e45683669c12c4b-a59989b5031a0aa48b3071983a2f725c-v2",
+        "english": "+[effect0.upgrade.bonusdamage][attack].",
+        "french": "+[effect0.upgrade.bonusdamage][attack].",
+        "german": "+[effect0.upgrade.bonusdamage][attack].",
+        "russian": "+[effect0.upgrade.bonusdamage][attack].",
+        "portuguese": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]。",
+        "spanish": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese_traditional": "+[effect0.upgrade.bonusdamage][attack]。",
+        "korean": "+[effect0.upgrade.bonusdamage][attack].",
+        "japanese": "+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "trigger": "on_punish",
+      "effects": [
+        "@UnitUpgradeClanPunishedPunish.effects0.paramCardUpgradeData.triggerUpgrades0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "UnitUpgradeClanPunishedPunish.effects0.paramCardUpgradeData.triggerUpgrades0.effects0",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@Plus8Attack"
+    }
+  ]
+}

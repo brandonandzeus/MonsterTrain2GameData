@@ -1,0 +1,95 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "CollectorOfSorrowsAbility",
+      "names": {
+        "key": "CardData_nameKey-2acd9fa695732cd5-f43211073c377da49a35185b1fc8b635-v2",
+        "english": "Restitution",
+        "french": "Restitution",
+        "german": "Wiederherstellung",
+        "russian": "Расплата",
+        "portuguese": "Restituição",
+        "chinese": "返还",
+        "spanish": "Restitución",
+        "chinese_traditional": "補償",
+        "korean": "되갚음",
+        "japanese": "回復"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-5cc3ae63dfe40fb9-f43211073c377da49a35185b1fc8b635-v2",
+        "english": "Gain [pain] equal to missing [health] on friendly units. Deal damage to an enemy unit equal to [pain].",
+        "french": "Octroie autant de [pain] que les unités alliées ont de [health] manquants. Inflige à une unité ennemie des dégâts à hauteur de [pain].",
+        "german": "Erhalte [pain] in Höhe der fehlenden [health] bei verbündeten Einheiten. Füge einer gegnerischen Einheit Schaden in Höhe des verbündete [pain]es zu.",
+        "russian": "Дает союзникам [pain], равную недостающему [health]. Наносит врагу урон, равный боли.",
+        "portuguese": "Recebe [pain] igual à [health] que falta nas unidades aliadas. Causa dano a uma unidade inimiga igual a [pain].",
+        "chinese": "获得等同于友方单位损失 [health] 的 [pain]。对一个敌方单位造成等同于 [pain] 的伤害。",
+        "spanish": "Añade [pain] igual a la [health] faltante a las unidades aliadas. Inflige tanto daño a una unidad enemiga como el [pain].",
+        "chinese_traditional": "獲得[pain]，數量等同於友方單位已損失的[health]。對一個敵方單位造成等同於[pain]的傷害。",
+        "korean": "아군 유닛들이 잃은 [health]만큼 [pain]을 획득합니다. 적 유닛 하나에 [pain]만큼 피해를 줍니다.",
+        "japanese": "味方ユニットの失った[health]に等しい[pain]を得る。敵ユニットに[pain]に等しいダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_CollectorofSorrowsRestitutionAbility.prefab",
+        "asset_guid": "0a7ccc19b573af74a86a78216dea170f"
+      },
+      "effects": [
+        "@CollectorOfSorrowsAbility.effects0",
+        "@CollectorOfSorrowsAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "effects": [
+    {
+      "id": "CollectorOfSorrowsAbility.effects0",
+      "name": "CardEffectAddStatusEffectPerFriendlyMissingHp",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "pain",
+          "count": 1
+        }
+      ],
+      "param_bool_2": true,
+      "applied_to_self_vfx": "@CollectorOfSorrowsAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "CollectorOfSorrowsAbility.effects1",
+      "name": "CardEffectDamagePerStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pain",
+          "count": 1
+        }
+      ],
+      "param_int": 1,
+      "applied_vfx": "@CollectorOfSorrowsAbility.effects1.appliedVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "CollectorOfSorrowsAbility.effects1.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Paintouch/FX_PainTouch.prefab",
+        "asset_guid": "bf8c11b279781cd43be61d49393bb9df"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "CollectorOfSorrowsAbility.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Restitution/FX_RestitutionAbilitySelf.prefab",
+        "asset_guid": "db9da68c4669c3344bce7cea53a2f390"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "Agonize",
+      "names": {
+        "key": "CardData_nameKey-7a01721a57e0d6e0-2752b86fe8856ee42a586c4cc1f9709b-v2",
+        "english": "Agonize",
+        "french": "Martyre",
+        "german": "Quälen",
+        "russian": "Агония",
+        "portuguese": "Agonia",
+        "chinese": "折磨",
+        "spanish": "Agonizar",
+        "chinese_traditional": "煎熬",
+        "korean": "고뇌",
+        "japanese": "苦悶"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-aa95a484e607f888-2752b86fe8856ee42a586c4cc1f9709b-v2",
+        "english": "Deal [trait0.power] damage to the front enemy unit per [devotionlevel].",
+        "french": "Inflige <nobr>[trait0.power] DGT</nobr> par [devotionlevel] à l'ennemi en 1re ligne.",
+        "german": "Füge der vordersten gegnerischen Einheit [trait0.power] Schaden pro [devotionlevel] zu.",
+        "russian": "Наносит переднему вражескому бойцу [trait0.power] урона за каждый [devotionlevel].",
+        "portuguese": "Causa [trait0.power] de dano à unidade inimiga na frente por [devotionlevel].",
+        "chinese": "每有一 [devotionlevel]，就对前排敌方单位造成 [trait0.power] 点伤害。",
+        "spanish": "Inflige [trait0.power] de daño a la primera unidad enemiga por cada [devotionlevel].",
+        "chinese_traditional": "每[devotionlevel]對前排敵方單位造成[trait0.power]點傷害。",
+        "korean": "[devotionlevel] 하나당 전열 적 유닛에 [trait0.power]의 피해를 줍니다.",
+        "japanese": "[devotionlevel]につき、前列の敵ユニットに[trait0.power]のダメージを与える。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CardData_data-4a5c8b761c2a2cf9-2752b86fe8856ee42a586c4cc1f9709b-v2",
+          "english": "The Punished know the power contained within pain. To deliver pain to others is fine, but the sensation can be channeled through one’s own body and amplified before being delivered to one’s enemy.",
+          "french": "Les Châtiés connaissent le pouvoir que recèle la douleur. Faire souffrir autrui est une chose, mais ils savent aussi canaliser cette sensation à travers leur propre corps pour l'amplifier avant de la transmettre à leur ennemi.",
+          "german": "Die Gegeißelten kennen die Kraft, die im Schmerz steckt. Anderen Schmerz zuzufügen ist schön und gut, doch das Gefühl kann durch den eigenen Körper geleitet und verstärkt werden, bevor es dem Feind zugefügt wird.",
+          "russian": "Мученики знают, какая сила заключена в боли. Причинять боль другим можно и напрямую, но лучше пропустить ее через собственное тело, усилить и лишь затем обрушить на врага.",
+          "portuguese": "Os Castigados conhecem o poder contido na dor. Infligir dor aos outros é bom, mas a sensação pode ser canalizada através do próprio corpo e amplificada antes de ser infligida ao inimigo.",
+          "chinese": "受罚者知道痛苦中蕴含的力量。直接对他人施加痛苦属于常规操作，还可以先通过自己的身体引导并强化痛感，然后再施加给敌人。",
+          "spanish": "Los Castigados conocen el poder que entraña el dolor. No hacen ascos a infligírselo al prójimo, pero es mejor canalizar dicha sensación a través del cuerpo y amplificarla antes de transmitirla al enemigo.",
+          "chinese_traditional": "受罰者知道蘊藏在痛苦之中的力量。將痛苦傳遞給他人固然不錯，但那種感受可以經由自己的身體傳導並放大，再傳遞給敵人。",
+          "korean": "처벌받은 자는 고통 속에 깃든 힘을 잘 알고 있다. 타인에게 고통을 주는 것도 좋지만, 그 감각을 자신의 몸을 통해 흘려보내 증폭시킨 뒤 적에게 되돌려줄 수도 있다.",
+          "japanese": "処罰族は痛みに秘められた力を知っている。他者に痛みを与えるのもいいが、その感覚は自分の身体を通して流し、敵に与える前に増幅することができる。"
+        }
+      ],
+      "cost": 2,
+      "card_type": "spell",
+      "rarity": "uncommon",
+      "class": "ClassPunished",
+      "pools": [
+        "MegaPool",
+        "UnitsPunishedBannerReplacementMutator"
+      ],
+      "card_art": {
+        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Spell_Agonize.prefab",
+        "asset_guid": "79405c32c900b094691ea6fc54f8b3e2"
+      },
+      "traits": [
+        "@Agonize.traits0"
+      ],
+      "effects": [
+        "@Agonize.effects0"
+      ],
+      "targetless": true,
+      "required_dlc": "punished",
+      "initial_keyboard_target": "front_enemy",
+      "artist": "Herrick Ong"
+    }
+  ],
+  "traits": [
+    {
+      "id": "Agonize.traits0",
+      "name": "CardTraitScalingAddDamage",
+      "param_tracked_value": "monolith_level",
+      "param_int": 30,
+      "param_team": "heroes"
+    }
+  ],
+  "effects": [
+    {
+      "id": "Agonize.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "front_in_room",
+      "target_team": "heroes",
+      "additional_tooltips": [
+        "@Agonize.effects0.additionalTooltips0"
+      ],
+      "applied_vfx": "@Agonize.effects0.appliedVFX"
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "Agonize.effects0.additionalTooltips0",
+      "descriptions": {
+        "key": "DevotionLevel_TooltipText",
+        "english": "Friendly units gain [zeal] and some Punished cards grow stronger with each [devotionlevel].",
+        "french": "Les alliés gagnent [zeal] et certaines cartes de Châtiés se renforcent à chaque [devotionlevel].",
+        "german": "Verbündete Einheiten erhalten [zeal] und einige Gegeißelten-Karten werden mit steigendem [devotionlevel] stärker.",
+        "russian": "Каждый новый [devotionlevel] дает [zeal] и усиливает часть карт клана Мучеников.",
+        "portuguese": "Unidades aliadas recebem [zeal] e algumas cartas de Castigados ficam mais fortes a cada [devotionlevel].",
+        "chinese": "友方单位获得 [zeal]，且某些受罚者卡牌随着 [devotionlevel] 的提高而变得更加强大。",
+        "spanish": "Las unidades aliadas añaden [zeal] y algunas cartas de Castigados se vuelven más fuertes con cada [devotionlevel].",
+        "chinese_traditional": "友方單位獲得[zeal]，部分受罰者卡牌每有一個[devotionlevel]就會變得更強。",
+        "korean": "아군 유닛들이 [zeal] 효과를 획득하며, 일부 처벌받은 자 카드는 [devotionlevel] 하나마다 더 강해집니다.",
+        "japanese": "味方ユニットが[zeal]を得る。[devotionlevel]ごとに、一部の処罰族カードが強くなる。"
+      },
+      "titles": {
+        "key": "DevotionLevel_TooltipTitle",
+        "english": "Monolith Level",
+        "french": "Niveau de Monolithe",
+        "german": "Monolith-Level",
+        "russian": "Уровень Монолита",
+        "portuguese": "Nível do Monólito",
+        "chinese": "巨石等级",
+        "spanish": "Nivel de Monolito",
+        "chinese_traditional": "巨石等級",
+        "korean": "모노리스 레벨",
+        "japanese": "モノリスレベル"
+      }
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "Agonize.effects0.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Punished/Agonize/FX_Agonize.prefab",
+        "asset_guid": "549cf5b22dff53140a7a9b62c9e67e36"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
+    {
+      "id": "MonsterCallusedBehemoth",
+      "names": {
+        "key": "CharacterData_nameKey-d448a7f7e0d483eb-e7b93dceec6ab3a4a96cbd2311794e9f-v2",
+        "english": "Penitent Sentinel",
+        "french": "Sentinelle pénitente",
+        "german": "Reumütiger Wächter",
+        "russian": "Покаянный страж",
+        "portuguese": "Sentinela Penitente",
+        "chinese": "忏悔哨兵",
+        "spanish": "Centinela penitente",
+        "chinese_traditional": "悔罪哨兵",
+        "korean": "참회자 파수병",
+        "japanese": "悔悛のセンチネル"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-f382826a2cd065ad-e7b93dceec6ab3a4a96cbd2311794e9f-v2",
+          "english": "I have witnessed angels willingly step into contraptions of torture so that they may grow spiritually closer to the sacred altar. These angels beg their kin to lock them inside so that even should the pain become unbearable, they cannot falter in their devotion to agony. I shudder even now for the event was a terrible sight.",
+          "french": "J'ai vu des anges entrer volontairement dans des instruments de torture afin de se rapprocher spirituellement de l'autel sacré. Ils supplient leurs frères de les y enfermer pour que, même si la douleur devient insoutenable, rien ne puisse ébranler leur dévotion à la souffrance. J'en frissonne encore tant le spectacle était atroce.",
+          "german": "Ich habe miterlebt, wie Engel bereitwillig in Foltervorrichtungen traten, um dem heiligen Altar geistig näher zu kommen. Diese Engel flehen ihresgleichen an, sie darin einzusperren, damit ihre Hingabe zur Qual selbst dann, wenn der Schmerz unerträglich werden sollte, nicht ins Wanken gerät. Ich schaudere noch heute, wenn ich an diesen schrecklichen Anblick zurückdenke.",
+          "russian": "Я видел, как ангелы добровольно надевали одежды покаяния, чтобы приблизиться к священному алтарю. Они сами просили собратьев запереть их внутри, чтобы даже невыносимая боль не заставила их поколебаться в преданности страданию. Я содрогаюсь при одном воспоминании об этом зрелище.",
+          "portuguese": "Testemunhei anjos entrando voluntariamente em engenhocas de tortura para que pudessem se aproximar espiritualmente do altar sagrado. Esses anjos imploram a seus semelhantes que os prendam lá dentro para que, mesmo que a dor se torne insuportável, eles não vacilem em sua devoção à agonia. Estremeço só de lembrar, pois a cena foi terrível.",
+          "chinese": "我见过有天使主动走进酷刑装置，以求在精神上更靠近神圣祭坛。这些天使求同胞将自己锁在装置内，这样他们即使承受不住痛苦，自己对痛苦的信仰也无法动摇。我至今想起那恐怖的情景仍会不寒而栗。",
+          "spanish": "He observado a ángeles introducirse voluntariamente en instrumentos de tortura para crecer espiritualmente y acercarse al altar sagrado. Estos ángeles ruegan a los suyos a encerrarlos en su interior para que, incluso si el dolor se vuelve insoportable, sean incapaces de flaquear en su devoción por la agonía. Aún me estremece recordarlo, pues fue una imagen espantosa.",
+          "chinese_traditional": "我曾親眼目睹天使自願踏進刑求裝置裡，好讓他們在靈性上更接近神聖祭壇。那些天使會請求親族將他們鎖進裝置裡，好讓他們即使痛苦到難以忍受，也不會動搖對痛楚的虔誠。那個駭人景象至今還是令我不寒而慄。",
+          "korean": "천사들이 신성한 제단과의 영적 접촉을 목적으로 고문 기구에 들어가는 모습을 본 적이 있었다. 그들은 동족에게 직접 자신을 기구에 가둬 달라고 부탁하고, 극심한 고통을 견뎌야 했다. 고통에 대한 헌신이 조금이라도 흔들려서는 안 되었다. 너무 끔찍했던 광경인지라 지금 생각해도 소름이 돋는다.",
+          "japanese": "天使たちが、聖なる祭壇に精神的により近づくため、拷問装置に自ら足を踏み入れる姿を目撃したことがある。天使たちは、たとえ痛みが耐え難いものになったとしても、苦しみへの献身を揺るがすことのないよう、同胞たちに自分たちをその中に閉じ込めてくれるよう懇願するのだ。あの出来事はあまりにも恐ろしい光景だった。今でも身震いする。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_ScarredPenitent.prefab",
+        "asset_guid": "43993c667d826fb4aa27ae40b79afe74"
+      },
+      "starting_status_effects": [
+        {
+          "status": "heal immunity",
+          "count": 1
+        },
+        {
+          "status": "immobile",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@MonsterCallusedBehemoth.triggers0"
+      ],
+      "size": 3,
+      "health": 45,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_DarkAngel",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "PunishedPenitentSentinelChatterData",
+      "artist": "Rom Kee"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MonsterCallusedBehemoth.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-124d257cd01221ca-e7b93dceec6ab3a4a96cbd2311794e9f-v2",
+        "english": "Gain +[effect0.upgrade.bonushp][health] permanently.",
+        "french": "Octroie +[effect0.upgrade.bonushp][health] définitivement.",
+        "german": "Erhalte permanent +[effect0.upgrade.bonushp][health].",
+        "russian": "Дает +[effect0.upgrade.bonushp][health] навсегда.",
+        "portuguese": "Recebe +[effect0.upgrade.bonushp][health] permanentemente.",
+        "chinese": "永久获得 +[effect0.upgrade.bonushp][health]。",
+        "spanish": "Añade +[effect0.upgrade.bonushp][health] permanentemente.",
+        "chinese_traditional": "永久獲得+[effect0.upgrade.bonushp][health]。",
+        "korean": "영구적으로 +[effect0.upgrade.bonushp][health]을 획득합니다.",
+        "japanese": "+[effect0.upgrade.bonushp][health]を永続的に得る。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@MonsterCallusedBehemoth.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterCallusedBehemoth.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_upgrade": "@Plus1HP",
+      "param_int_3": 2
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "Plus1HP",
+      "bonus_hp": 1
+    }
+  ]
+}

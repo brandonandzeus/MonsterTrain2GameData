@@ -1,0 +1,127 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "FriendlyUnitPunish",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPunished",
+            "required_dlc": "punished"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-239e8b0b90b58523-e17b5ceec7e2f6445aa2dcd5d65e7f58-v2",
+        "english": "Potent Chalice",
+        "french": "Calice puissant",
+        "german": "Mächtiger Kelch",
+        "russian": "Чаша могущества",
+        "portuguese": "Cálice Poderoso",
+        "chinese": "强效药饮之杯",
+        "spanish": "Cáliz potente",
+        "chinese_traditional": "強效聖杯",
+        "korean": "권능한 성배",
+        "japanese": "強力な聖杯"
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-8d5f943c157b41a6-e17b5ceec7e2f6445aa2dcd5d65e7f58-v2",
+        "english": "Friendly units enter with an additional [zeal] [effect0.effect0.status0.power] per [devotionlevel].",
+        "french": "Les alliés entrent avec <nobr>[zeal] [effect0.effect0.status0.power]</nobr> bonus par [devotionlevel].",
+        "german": "Verbündete Einheiten kommen mit [zeal] [effect0.effect0.status0.power] pro [devotionlevel] ins Spiel.",
+        "russian": "Союзники при появлении получают дополнительный [zeal] х[effect0.effect0.status0.power] за каждый [devotionlevel].",
+        "portuguese": "Unidades aliadas entram com um [zeal] [effect0.effect0.status0.power] adicional por [devotionlevel].",
+        "chinese": "每有一 [devotionlevel]，友方单位进入战斗时就额外获得 [zeal] [effect0.effect0.status0.power]。",
+        "spanish": "Las unidades aliadas entran con [zeal] [effect0.effect0.status0.power] adicional por cada [devotionlevel].",
+        "chinese_traditional": "友方單位登場時，每[devotionlevel]額外獲得[zeal][effect0.effect0.status0.power]。",
+        "korean": "[devotionlevel] 하나당 아군 유닛들이 [zeal] [effect0.effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "味方ユニットは[devotionlevel]につき、追加の[zeal] [effect0.effect0.status0.power]が付与された状態で出現する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-7f1f1ffe42278fb5-e17b5ceec7e2f6445aa2dcd5d65e7f58-v2",
+          "english": "Once those who follow the path of pain are done with their prayers, their challenge is not yet over. They are then given a drink that burns their very souls but leaves the body healed.",
+          "french": "Lorsque les adeptes de la Voie de la douleur ont terminé leurs prières, leur épreuve n'est pas encore achevée. On leur donne alors un breuvage qui leur brûle l'âme tout en guérissant leur corps.",
+          "german": "Wenn diejenigen, die dem Pfad der Schmerzen folgen, ihre Gebete beendet haben, ist ihre Prüfung noch nicht vorbei. Sie erhalten dann ein Getränk, das ihre Seelen verbrennt, ihren Körper jedoch heilt.",
+          "russian": "Когда ступившие на Стезю боли заканчивают молитву, начинается новое испытание. Им дают напиток, выжигающий душу дотла, но заживляющий тело.",
+          "portuguese": "Quando aqueles que seguem o caminho da dor terminam suas orações, seu desafio ainda não acabou. Recebem então uma bebida que queima suas próprias almas, mas deixa o corpo curado.",
+          "chinese": "走上苦痛之路者祈祷完毕后，他们的挑战并没有结束。之后会有人给他们提供一种饮品，这种饮品会灼烧他们的灵魂，但能治愈他们的身体。",
+          "spanish": "Cuando los seguidores de la Senda del Dolor terminan de rezar, su sufrimiento continúa. Se les otorga una bebida que hace arder sus mismas almas, pero que cura sus cuerpos.",
+          "chinese_traditional": "在痛苦之道的信徒完成禱告後，他們的挑戰並未就此結束。他們接著會得到一杯飲品，會灼燒靈魂，但能治癒肉體。",
+          "korean": "고통의 길을 따르는 이들은 기도를 마친 뒤에도 시련이 끝나지 않는다. 이어서 영혼 자체를 불태울 듯한 음료를 마시게 되는데, 그 음료는 몸의 상처만큼은 치유해 준다.",
+          "japanese": "痛みの道を歩む者たちが一度その祈りを終えても、その試練はまだ終わらない。その後、魂を焼く飲み物を与えられるが、それによって肉体は癒されるのだ。"
+        }
+      ],
+      "relic_effects": [
+        "@FriendlyUnitPunish.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FriendlyUnitPunish.effects0",
+      "name": "RelicEffectAddEffectOnUnitSpawn",
+      "param_effects": [
+        "@FriendlyUnitPunish.effects0.paramCardEffects0"
+      ],
+      "additional_tooltips": [
+        "@FriendlyUnitPunish.effects0.additionalTooltips0",
+        "@FriendlyUnitPunish.effects0.additionalTooltips1"
+      ],
+      "param_source_team": "monsters"
+    }
+  ],
+  "effects": [
+    {
+      "id": "FriendlyUnitPunish.effects0.paramCardEffects0",
+      "name": "CardEffectAddStatusEffectPerDevotionLevel",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "zeal",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "additional_tooltips": [
+    {
+      "id": "FriendlyUnitPunish.effects0.additionalTooltips0",
+      "status": "zeal"
+    },
+    {
+      "id": "FriendlyUnitPunish.effects0.additionalTooltips1",
+      "descriptions": {
+        "key": "DevotionLevel_TooltipText",
+        "english": "Friendly units gain [zeal] and some Punished cards grow stronger with each [devotionlevel].",
+        "french": "Les alliés gagnent [zeal] et certaines cartes de Châtiés se renforcent à chaque [devotionlevel].",
+        "german": "Verbündete Einheiten erhalten [zeal] und einige Gegeißelten-Karten werden mit steigendem [devotionlevel] stärker.",
+        "russian": "Каждый новый [devotionlevel] дает [zeal] и усиливает часть карт клана Мучеников.",
+        "portuguese": "Unidades aliadas recebem [zeal] e algumas cartas de Castigados ficam mais fortes a cada [devotionlevel].",
+        "chinese": "友方单位获得 [zeal]，且某些受罚者卡牌随着 [devotionlevel] 的提高而变得更加强大。",
+        "spanish": "Las unidades aliadas añaden [zeal] y algunas cartas de Castigados se vuelven más fuertes con cada [devotionlevel].",
+        "chinese_traditional": "友方單位獲得[zeal]，部分受罰者卡牌每有一個[devotionlevel]就會變得更強。",
+        "korean": "아군 유닛들이 [zeal] 효과를 획득하며, 일부 처벌받은 자 카드는 [devotionlevel] 하나마다 더 강해집니다.",
+        "japanese": "味方ユニットが[zeal]を得る。[devotionlevel]ごとに、一部の処罰族カードが強くなる。"
+      },
+      "titles": {
+        "key": "DevotionLevel_TooltipTitle",
+        "english": "Monolith Level",
+        "french": "Niveau de Monolithe",
+        "german": "Monolith-Level",
+        "russian": "Уровень Монолита",
+        "portuguese": "Nível do Monólito",
+        "chinese": "巨石等级",
+        "spanish": "Nivel de Monolito",
+        "chinese_traditional": "巨石等級",
+        "korean": "모노리스 레벨",
+        "japanese": "モノリスレベル"
+      }
+    }
+  ]
+}

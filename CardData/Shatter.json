@@ -1,0 +1,64 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "ShatterAbility",
+      "names": {
+        "key": "CardData_nameKey-ee88f522aafb48c0-f1547baedd48490db3cd4784fa543169-v2",
+        "english": "Shatter",
+        "french": "Fracas",
+        "german": "Zerschmettern",
+        "russian": "Раскол",
+        "portuguese": "Rompimento",
+        "chinese": "粉碎",
+        "spanish": "Estallido",
+        "chinese_traditional": "粉碎",
+        "korean": "분쇄",
+        "japanese": "シャッター"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-fb373651e10d49f8-f1547baedd48490db3cd4784fa543169-v2",
+        "english": "[sacrifice]. Deal [effect0.power] damage.",
+        "french": "[sacrifice]. Inflige <nobr>[effect0.power] DGT.</nobr>",
+        "german": "[sacrifice]. Füge [effect0.power] Schaden zu.",
+        "russian": "[sacrifice]. Наносит [effect0.power] урона.",
+        "portuguese": "<b>Sacrifica</b>. Causa [effect0.power] de dano.",
+        "chinese": "[sacrifice]。造成 [effect0.power] 点伤害。",
+        "spanish": "[sacrifice]. Inflige [effect0.power] de daño.",
+        "chinese_traditional": "[sacrifice]。造成[effect0.power]點傷害。",
+        "korean": "[sacrifice]. [effect0.power]의 피해를 줍니다.",
+        "japanese": "[sacrifice]。[effect0.power]のダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_DarkshardShatterAbility.prefab",
+        "asset_guid": "ab1efabe8619ac64193ebc8b796d4a89"
+      },
+      "effects": [
+        "@ShatterAbility.effects0",
+        "@ShatterAbility.effects1"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "effects": [
+    {
+      "id": "ShatterAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "should_cancel_subsequent_effects_if_test_fails": true,
+      "should_fail_to_cast_if_test_fails": true,
+      "param_int": 40
+    },
+    {
+      "id": "ShatterAbility.effects1",
+      "name": "CardEffectSacrifice",
+      "target_mode": "self"
+    }
+  ]
+}

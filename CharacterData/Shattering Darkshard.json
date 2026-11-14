@@ -1,0 +1,142 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
+    {
+      "id": "MonsterShatteringDarkshard",
+      "names": {
+        "key": "CharacterData_nameKey-f3a4b793adb9285e-67724f3b5fa8a954cb76147e3f5c898f-v2",
+        "english": "Shattering Darkshard",
+        "french": "Éclat noir fracassant",
+        "german": "Zerschmetternder Finstersplitter",
+        "russian": "Треснутый темный осколок",
+        "portuguese": "Fragmento Sombrio Destruidor",
+        "chinese": "破碎黑暗碎片",
+        "spanish": "Fragmento oscuro detonante",
+        "chinese_traditional": "崩裂黑暗碎片",
+        "korean": "분쇄의 어둠의 파편",
+        "japanese": "砕け散る闇の欠片"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-df1da8de32d228db-67724f3b5fa8a954cb76147e3f5c898f-v2",
+          "english": "Unlike the Monolith, Darkshards have a limit to how much pain they can absorb. Eventually, the shard will crack, splinter, and finally shatter into a million tiny fragments.",
+          "french": "Contrairement au Monolithe, les éclats noirs ne peuvent absorber qu'une quantité limitée de douleur. À terme, l'éclat se fissure, se fend, puis vole en un million de petits morceaux.",
+          "german": "Im Gegensatz zum Monolithen können Finstersplitter nur eine begrenzte Menge an Schmerz absorbieren. Früher oder später wird der Splitter reißen, zersplittern und schließlich in eine Million winziger Fragmente zerbrechen.",
+          "russian": "В отличие от Монолита темные осколки могут впитать лишь ограниченное количество боли. Рано или поздно осколок дает трещину, начинает крошиться, а затем разлетается на миллион крошечных частиц.",
+          "portuguese": "Ao contrário do Monólito, os Fragmentos Sombrios têm um limite para a quantidade de dor que podem absorver. Eventualmente, o fragmento rachará e, por fim, se estilhaçará em um milhão de minúsculos pedaços.",
+          "chinese": "和巨石不同的是，黑暗碎片能吸收的痛苦是有限的。最后，碎片会破裂，最后化为无数细小的碎片。",
+          "spanish": "Al contrario que el Monolito, el dolor que pueden absorber los fragmentos oscuros tiene un límite. Tarde o temprano, el fragmento se agrieta, se divide y, finalmente, estalla en un millón de fragmentos diminutos.",
+          "chinese_traditional": "黑暗碎片和巨石不同，能吸收的痛苦有限。黑暗碎片終究會出現裂痕、逐漸崩解，最後粉碎成無數細小殘片。",
+          "korean": "모노리스와 달리, 어둠의 파편이 흡수할 수 있는 고통에는 한계가 있다. 결국 그 파편은 금이 가고 부서지다 셀 수 없이 많은 작은 파편으로 조각날 것이다.",
+          "japanese": "モノリスとは違い、闇の欠片には吸収できる痛みの量に限界があった。やがて、欠片はひび割れ、裂け、最後には無数の小さな破片へと砕け散るのだ。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Darkshard_Shattering.prefab",
+        "asset_guid": "8837102ce668c954e8a3936cae0043df"
+      },
+      "triggers": [
+        "@MonsterShatteringDarkshard.triggers0"
+      ],
+      "ability": "@ShatterAbility",
+      "size": 1,
+      "health": 10,
+      "can_attack": false,
+      "attack_damage": 0,
+      "subtypes": [
+        "SubtypesData_Darkshard"
+      ],
+      "chatter": "PunishedShatteringDarkshardChatterData",
+      "artist": "Loy Bouttamy"
+    }
+  ],
+  "cards": [
+    {
+      "id": "ShatterAbility",
+      "names": {
+        "key": "CardData_nameKey-ee88f522aafb48c0-f1547baedd48490db3cd4784fa543169-v2",
+        "english": "Shatter",
+        "french": "Fracas",
+        "german": "Zerschmettern",
+        "russian": "Раскол",
+        "portuguese": "Rompimento",
+        "chinese": "粉碎",
+        "spanish": "Estallido",
+        "chinese_traditional": "粉碎",
+        "korean": "분쇄",
+        "japanese": "シャッター"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-fb373651e10d49f8-f1547baedd48490db3cd4784fa543169-v2",
+        "english": "[sacrifice]. Deal [effect0.power] damage.",
+        "french": "[sacrifice]. Inflige <nobr>[effect0.power] DGT.</nobr>",
+        "german": "[sacrifice]. Füge [effect0.power] Schaden zu.",
+        "russian": "[sacrifice]. Наносит [effect0.power] урона.",
+        "portuguese": "<b>Sacrifica</b>. Causa [effect0.power] de dano.",
+        "chinese": "[sacrifice]。造成 [effect0.power] 点伤害。",
+        "spanish": "[sacrifice]. Inflige [effect0.power] de daño.",
+        "chinese_traditional": "[sacrifice]。造成[effect0.power]點傷害。",
+        "korean": "[sacrifice]. [effect0.power]의 피해를 줍니다.",
+        "japanese": "[sacrifice]。[effect0.power]のダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_DarkshardShatterAbility.prefab",
+        "asset_guid": "ab1efabe8619ac64193ebc8b796d4a89"
+      },
+      "effects": [
+        "@MonsterShatteringDarkshard.unitAbility.effects0",
+        "@MonsterShatteringDarkshard.unitAbility.effects1"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MonsterShatteringDarkshard.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-9c6170455dff7e1e-67724f3b5fa8a954cb76147e3f5c898f-v2",
+        "english": "[retreat].",
+        "french": "[retreat].",
+        "german": "[retreat].",
+        "russian": "[retreat].",
+        "portuguese": "<b>Recua</b>.",
+        "chinese": "[retreat]。",
+        "spanish": "[retreat].",
+        "chinese_traditional": "[retreat]。",
+        "korean": "[retreat].",
+        "japanese": "[retreat]。"
+      },
+      "trigger": "on_spawn",
+      "effects": [
+        "@MonsterShatteringDarkshard.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterShatteringDarkshard.triggers0.effects0",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "self",
+      "param_int": 1
+    },
+    {
+      "id": "MonsterShatteringDarkshard.unitAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "should_cancel_subsequent_effects_if_test_fails": true,
+      "should_fail_to_cast_if_test_fails": true,
+      "param_int": 40
+    },
+    {
+      "id": "MonsterShatteringDarkshard.unitAbility.effects1",
+      "name": "CardEffectSacrifice",
+      "target_mode": "self"
+    }
+  ]
+}

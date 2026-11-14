@@ -1,0 +1,157 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "characters": [
+    {
+      "id": "MonsterCollectorOfSorrows",
+      "names": {
+        "key": "CharacterData_nameKey-d12cad3f8f8c8765-54bcd837edd7c364d95cd52bafd8dd7e-v2",
+        "english": "Collector of Sorrows",
+        "french": "Collecteur de chagrins",
+        "german": "Leidsammler",
+        "russian": "Собиратель скорби",
+        "portuguese": "Colecionador de Sofrimentos",
+        "chinese": "悲痛收集者",
+        "spanish": "Recolector de dolores",
+        "chinese_traditional": "苦難收集者",
+        "korean": "슬픔의 수집가",
+        "japanese": "悲しみの収集者"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-94c654bab9de3210-54bcd837edd7c364d95cd52bafd8dd7e-v2",
+          "english": "When their brethren fall, these angels scour the battlefields for those on the cusp of death. They collect the pain of the dying and wounded within the Darkshards they carry inside ancient thuribles given to them by the Monolith’s priests.",
+          "french": "Lorsque leurs frères tombent, ces anges parcourent les champs de bataille à la recherche de ceux qui sont aux portes de la mort. Ils recueillent la douleur des mourants et des blessés dans les éclats noirs qu'ils transportent à l'intérieur d'anciens encensoirs offerts par les prêtres du Monolithe.",
+          "german": "Wenn ihre Brüder fallen, durchkämmen diese Engel die Schlachtfelder nach denen, die am Rande des Todes stehen. Sie sammeln den Schmerz der Sterbenden und Verwundeten in den Finstersplittern. Diese bewahren sie in uralten Weihrauchfässern auf, welche ihnen von den Priestern des Monolithen überreicht wurden.",
+          "russian": "При поражении в бою эти ангелы прочесывают местность в поисках тех, кто находится на грани смерти. Боль умирающих и раненых они собирают в темные осколки, которые носят в древних кадильницах. А кадильницы им даруют жрецы Монолита.",
+          "portuguese": "Quando seus irmãos são derrotados, esses anjos vasculham os campos de batalha em busca daqueles à beira da morte. Eles coletam a dor dos moribundos e feridos com os Fragmentos Sombrios que carregam dentro de antigos incensários que lhes foram dados pelos sacerdotes do Monólito.",
+          "chinese": "当同胞倒下时，这些天使就会在战场上搜寻奄奄一息者。他们将伤者和濒死者的痛苦收集进装有黑暗碎片的古代香炉里，而这些香炉是巨石祭司给他们的。",
+          "spanish": "Cuando sus hermanos caen, estos ángeles registran el campo de batalla en busca de aquellos al borde de la muerte. Recogen el dolor de los moribundos y heridos en los fragmentos oscuros que transportan en antiguos incensarios que reciben de manos de los sacerdotes del Monolito.",
+          "chinese_traditional": "當他們的同胞倒下時，這些天使便會在戰場上四處搜尋瀕死之人。他們會帶著巨石祭司交給他們的古老香爐，使用放在裡面的黑暗碎片收集垂死之人與傷者的痛苦。",
+          "korean": "동료들이 쓰러지면, 이 천사들은 죽음의 문턱에 다다른 이들을 찾아 전장을 헤맨다. 이들은 그곳에서 죽어가는 자와 다친 자의 고통을 모노리스의 사제가 준 고대의 향로 내부에 넣어둔 어둠의 파편에 모은다.",
+          "japanese": "同胞たちが倒れると、この天使たちは死の間際にある者たちを求めて戦場をくまなく探し回る。そして、モノリスの司祭たちから授かった古代の香炉の中に収めた闇の欠片の中に、死にゆく者や負傷者の痛みを集めるのである。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/MT2/Character_CollectorOfSorrows.prefab",
+        "asset_guid": "4e6a5c827cdd6de448f91f7bb4fbdbc0"
+      },
+      "impact_vfx": "@MonsterCollectorOfSorrows.impactVFX",
+      "starting_status_effects": [
+        {
+          "status": "zeal",
+          "count": 5
+        }
+      ],
+      "ability": "@CollectorOfSorrowsAbility",
+      "size": 1,
+      "health": 5,
+      "attack_damage": 10,
+      "subtypes": [
+        "SubtypesData_Disciple",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "PunishedCollectorOfSorrowsChatterData",
+      "artist": "Luke Banke"
+    }
+  ],
+  "cards": [
+    {
+      "id": "CollectorOfSorrowsAbility",
+      "names": {
+        "key": "CardData_nameKey-2acd9fa695732cd5-f43211073c377da49a35185b1fc8b635-v2",
+        "english": "Restitution",
+        "french": "Restitution",
+        "german": "Wiederherstellung",
+        "russian": "Расплата",
+        "portuguese": "Restituição",
+        "chinese": "返还",
+        "spanish": "Restitución",
+        "chinese_traditional": "補償",
+        "korean": "되갚음",
+        "japanese": "回復"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-5cc3ae63dfe40fb9-f43211073c377da49a35185b1fc8b635-v2",
+        "english": "Gain [pain] equal to missing [health] on friendly units. Deal damage to an enemy unit equal to [pain].",
+        "french": "Octroie autant de [pain] que les unités alliées ont de [health] manquants. Inflige à une unité ennemie des dégâts à hauteur de [pain].",
+        "german": "Erhalte [pain] in Höhe der fehlenden [health] bei verbündeten Einheiten. Füge einer gegnerischen Einheit Schaden in Höhe des verbündete [pain]es zu.",
+        "russian": "Дает союзникам [pain], равную недостающему [health]. Наносит врагу урон, равный боли.",
+        "portuguese": "Recebe [pain] igual à [health] que falta nas unidades aliadas. Causa dano a uma unidade inimiga igual a [pain].",
+        "chinese": "获得等同于友方单位损失 [health] 的 [pain]。对一个敌方单位造成等同于 [pain] 的伤害。",
+        "spanish": "Añade [pain] igual a la [health] faltante a las unidades aliadas. Inflige tanto daño a una unidad enemiga como el [pain].",
+        "chinese_traditional": "獲得[pain]，數量等同於友方單位已損失的[health]。對一個敵方單位造成等同於[pain]的傷害。",
+        "korean": "아군 유닛들이 잃은 [health]만큼 [pain]을 획득합니다. 적 유닛 하나에 [pain]만큼 피해를 줍니다.",
+        "japanese": "味方ユニットの失った[health]に等しい[pain]を得る。敵ユニットに[pain]に等しいダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_CollectorofSorrowsRestitutionAbility.prefab",
+        "asset_guid": "0a7ccc19b573af74a86a78216dea170f"
+      },
+      "effects": [
+        "@MonsterCollectorOfSorrows.unitAbility.effects0",
+        "@MonsterCollectorOfSorrows.unitAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonsterCollectorOfSorrows.unitAbility.effects0",
+      "name": "CardEffectAddStatusEffectPerFriendlyMissingHp",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "pain",
+          "count": 1
+        }
+      ],
+      "param_bool_2": true,
+      "applied_to_self_vfx": "@MonsterCollectorOfSorrows.unitAbility.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "MonsterCollectorOfSorrows.unitAbility.effects1",
+      "name": "CardEffectDamagePerStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pain",
+          "count": 1
+        }
+      ],
+      "param_int": 1,
+      "applied_vfx": "@MonsterCollectorOfSorrows.unitAbility.effects1.appliedVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "MonsterCollectorOfSorrows.impactVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/CharacterFX/Attacks/GenericHit/FX_GenericHitBlunt.prefab",
+        "asset_guid": "b406ebbc34725774bad8985dfc3a77a3"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterCollectorOfSorrows.unitAbility.effects1.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Paintouch/FX_PainTouch.prefab",
+        "asset_guid": "bf8c11b279781cd43be61d49393bb9df"
+      },
+      "spawn_location": "character_center"
+    },
+    {
+      "id": "MonsterCollectorOfSorrows.unitAbility.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Restitution/FX_RestitutionAbilitySelf.prefab",
+        "asset_guid": "db9da68c4669c3344bce7cea53a2f390"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "ZarielPainAbility",
+      "names": {
+        "key": "CardData_nameKey-e48e4f3a4b6ae3b5-3afc844ca6d659b4981bf3d8f3770140-v2",
+        "english": "Paintouch",
+        "french": "Toucher douloureux",
+        "german": "Berührung des Schmerzes",
+        "russian": "Касание боли",
+        "portuguese": "Toque da Dor",
+        "chinese": "痛苦之触",
+        "spanish": "Toque de dolor",
+        "chinese_traditional": "痛苦之觸",
+        "korean": "고통의 손길",
+        "japanese": "ペインタッチ"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-95b830b5ef9f9245-3afc844ca6d659b4981bf3d8f3770140-v2",
+        "english": "Deal [effect0.power] damage per stack of [pain] to an enemy unit.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> par cumul de [pain] à une unité ennemie.",
+        "german": "Füge einer gegnerischen Einheit [effect0.power] Schaden pro Stapel [pain] zu.",
+        "russian": "Наносит врагу [effect0.power] урона за каждую [pain].",
+        "portuguese": "Causa [effect0.power] de dano por carga de [pain] a uma unidade inimiga.",
+        "chinese": "每层 [pain] 对一个敌方单位造成 [effect0.power] 点伤害",
+        "spanish": "Inflige [effect0.power] de daño por cada acumulación de [pain] a una unidad enemiga.",
+        "chinese_traditional": "每層[pain]對一個敵方單位造成[effect0.power]點傷害。",
+        "korean": "적 유닛에 [pain] 스택 수에 비례하여 [effect0.power]의 피해를 줍니다.",
+        "japanese": "敵ユニットに[pain]の1スタックごとに[effect0.power]のダメージを与える。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "effects": [
+        "@ZarielPainAbility.effects0"
+      ],
+      "cooldown": 1,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "effects": [
+    {
+      "id": "ZarielPainAbility.effects0",
+      "name": "CardEffectDamagePerStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pain",
+          "count": 1
+        }
+      ],
+      "param_upgrade": "@SolgardStasisGoodStatsAbility_Upgrade1",
+      "param_int": 1,
+      "applied_vfx": "@ZarielPainAbility.effects0.appliedVFX"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "SolgardStasisGoodStatsAbility_Upgrade1",
+      "bonus_damage": 8,
+      "bonus_hp": 8
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "ZarielPainAbility.effects0.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Paintouch/FX_PainTouch.prefab",
+        "asset_guid": "bf8c11b279781cd43be61d49393bb9df"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

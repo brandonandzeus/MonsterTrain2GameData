@@ -1,0 +1,125 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "Mournguard",
+      "cost": 2,
+      "card_type": "monster",
+      "rarity": "rare",
+      "class": "ClassPunished",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsPunishedBanner"
+      ],
+      "card_art": {
+        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Mournguard.prefab",
+        "asset_guid": "4485d5372e3eb0948a091cd71a3b3034"
+      },
+      "effects": [
+        "@Mournguard.effects0"
+      ],
+      "required_dlc": "punished",
+      "unlock_level": 3,
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Nicole Anne Alfonso"
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterCelebrant",
+      "names": {
+        "key": "CharacterData_nameKey-c9630e0c6b2efba4-27a7656f619ddd143810d9d7890b6cc5-v2",
+        "english": "Mournguard",
+        "french": "Garde du deuil",
+        "german": "Trauerwächter",
+        "russian": "Скорбящий страж",
+        "portuguese": "Guarda do Luto",
+        "chinese": "哀伤守卫",
+        "spanish": "Guardia de la pena",
+        "chinese_traditional": "哀悼守衛",
+        "korean": "비탄의 감시자",
+        "japanese": "嘆きの守護者"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-aa9a8c967439283b-27a7656f619ddd143810d9d7890b6cc5-v2",
+          "english": "“Not all angels survive the fall to the Maw. For those who end their days in the shadows of Heaven, far from their kin, I remember their features and hope that one day I can tell the others what happened to them.”",
+          "french": "<nobr>« Tous</nobr> les anges ne survivent pas à leur chute dans la Cime. Pour ceux qui finissent leurs jours dans les ombres du paradis, loin des leurs, je grave leurs visages dans ma mémoire dans l'espoir de pouvoir un jour raconter aux autres ce qui leur est <nobr>arrivé. »</nobr>",
+          "german": "„Nicht alle Engel überleben den Sturz in den Schlund. Diejenigen, die das Ende ihrer Tage in den Schatten des Himmels ereilt, fern von ihren Verwandten, behalte ich in Erinnerung. Und ich hoffe, dass ich den anderen eines Tages berichten kann, was ihnen zugestoßen ist.“",
+          "russian": "«Не все ангелы переживают падение в Зев. Я запоминаю лица тех, чьи дни заканчиваются в подземельях Рая, вдали от собратьев, и надеюсь, что однажды смогу рассказать их истории остальным».",
+          "portuguese": "“Nem todos os anjos sobrevivem à queda na Gorja. Para aqueles que terminam seus dias nas sombras do Céu, longe de seus entes queridos, guardo em memória suas feições e espero que, um dia, eu possa contar aos outros o que aconteceu com eles.”",
+          "chinese": "“并非所有天使都能在坠入天堂之喉的过程中活下来。对于那些远离亲人，在天堂的阴影中结束生命的天使，我还记得他们的长相，并希望有朝一日能将他们的遭遇告诉他人。”",
+          "spanish": "«No todos los ángeles sobreviven a la caída a las Fauces. Yo recuerdo a quienes terminaron sus días a la sombra del Cielo, lejos de los suyos, y espero un día poder contarles a sus allegados lo que fue de ellos».",
+          "chinese_traditional": "「並非所有天使都能在墜入深淵時活下來。對於那些遠離親族，最終在天堂的陰影之中死去的天使，我還記得他們的容貌，希望有朝一日，我能將發生在他們身上的事告訴別人。」",
+          "korean": "“아귀에서 떨어진 천사가 모두 살아남을 수는 없다. 나는 동족과 헤어져 천상의 그늘 아래 생을 마감한 이들의 모습을 기억한다. 언젠가 이들에게 무슨 일이 일어났는지를 다른 이에게 전할 수 있기를 바라며.”",
+          "japanese": "「すべての天使が胃袋への落下を生き延びたわけではない。同胞たちから遠く離れて、天界の影で生涯を終える者たちの顔を私は覚えている。いつの日か、他の者に何があったのかに伝えられることを願っている」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Mournguard.prefab",
+        "asset_guid": "a051ce9fb5b312b41b74716304152fd4"
+      },
+      "starting_status_effects": [
+        {
+          "status": "zeal",
+          "count": 10
+        }
+      ],
+      "triggers": [
+        "@Mournguard.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 2,
+      "health": 30,
+      "attack_damage": 20,
+      "subtypes": [
+        "SubtypesData_DarkAngel",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "PunishedMournguardChatterData",
+      "artist": "Nicole Anne Alfonso"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Mournguard.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-15b272b754b6e6e9-27a7656f619ddd143810d9d7890b6cc5-v2",
+        "english": "Gain [attack] equal to missing [health].",
+        "french": "Octroie une valeur d'[attack] égale aux [health] manquants.",
+        "german": "Erhalte [attack] in Höhe der fehlenden [health].",
+        "russian": "Дает [attack], равную недостающему [health].",
+        "portuguese": "Recebe [attack] igual à [health] faltando.",
+        "chinese": "获得等同于损失 [health] 的 [attack]。",
+        "spanish": "Añade [attack] igual a la [health] restante.",
+        "chinese_traditional": "獲得[attack]，數量等同於缺少的[health]。",
+        "korean": "잃은 [health]만큼 [attack]을 획득합니다.",
+        "japanese": "失った[health]に等しい[attack]を得る。"
+      },
+      "trigger": "post_combat",
+      "effects": [
+        "@Mournguard.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Mournguard.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterCelebrant"
+    },
+    {
+      "id": "Mournguard.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectAddCardUpgradeToUnitPerMissingHp",
+      "target_mode": "self",
+      "param_upgrade": "@MournguardUpgrade",
+      "param_int": 1
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MournguardUpgrade",
+      "bonus_damage": 1,
+      "upgrade_will_be_scaled_by_non_magic_power_trait": true
+    }
+  ]
+}

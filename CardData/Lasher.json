@@ -1,0 +1,109 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "Lasher",
+      "card_type": "monster",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "pools": [
+        "MegaPool",
+        "UnitsPunishedBannerReplacementMutator"
+      ],
+      "card_art": {
+        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/CardArt_Lasher.prefab",
+        "asset_guid": "c1319e1905b04e544aafb047d51ff708"
+      },
+      "effects": [
+        "@Lasher.effects0"
+      ],
+      "required_dlc": "punished",
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Ron Kee"
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterLasher",
+      "names": {
+        "key": "CharacterData_nameKey-324afa311bc10f23-548ad3b7d66aa5e46893197c8cb6829c-v2",
+        "english": "Lasher",
+        "french": "Flagelleur",
+        "german": "Peitscher",
+        "russian": "Бичеватель",
+        "portuguese": "Flagelador",
+        "chinese": "鞭打者",
+        "spanish": "Fustigador",
+        "chinese_traditional": "鞭打者",
+        "korean": "가학자",
+        "japanese": "ラッシャー"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-c088a95797624677-548ad3b7d66aa5e46893197c8cb6829c-v2",
+          "english": "Disciples who had a talent for knowing how to push an individual to the brink of pain without breaking them were given an honored position within the Maw. Despite their seemingly cruel methods, they were well respected and seen as teachers who could bring one closer to the Path of Pain.",
+          "french": "Les disciples capables de pousser quelqu'un aux limites de la douleur sans le briser occupaient une place d'honneur dans la Cime. Malgré leurs méthodes en apparence cruelles, ils étaient très respectés et considérés comme des maîtres capables de rapprocher leurs élèves de la Voie de la douleur.",
+          "german": "Anhänger, die die Gabe besaßen, einen Menschen bis an die Grenze des Schmerzes zu treiben, ohne ihn zu brechen, erhielten eine angesehene Stellung innerhalb des Schlundes. Trotz ihrer scheinbar grausamen Methoden wurden sie hoch geachtet und als Lehrer angesehen, die einen dem Pfad der Schmerzen näherbringen konnten.",
+          "russian": "Послушники, умевшие довести человека почти до болевого предела и при этом не сломать его, занимали в Зеве почетное положение. Несмотря на жестокость их методов, к ним относились с большим уважением и считали наставниками, способными приблизить других к Стезе боли.",
+          "portuguese": "Os Discípulos que possuíam o talento de saber como levar um indivíduo ao limite da dor, sem quebrá-lo, recebiam uma posição de honra dentro da Gorja. Apesar de seus métodos aparentemente cruéis, eles eram muito respeitados e vistos como mestres capazes de aproximar alguém do Caminho da Dor.",
+          "chinese": "在天堂之喉中，知道如何将一个人逼到痛苦的边缘却不令其崩溃的使徒会担任光荣的职位。他们虽然做法看似残忍，但备受同胞爱戴。同胞视他们为老师，并希望在他们的指导之下向苦痛之路迈进。",
+          "spanish": "Los discípulos con talento para saber cómo llevar a alguien a los límites del dolor sin causar daños permanentes obtenían una posición de honor en las Fauces. A pesar de la crueldad aparente de sus métodos, eran muy respetados y se les consideraba maestros que podían acercar a cualquiera a la Senda del Dolor.",
+          "chinese_traditional": "擅長將人逼至痛苦臨界點，卻又不至於使其崩潰的門徒，能在深淵獲得尊榮地位。儘管他們的方法看似殘忍，卻備受尊重，並被視為能帶領他人更接近痛苦之道的導師。",
+          "korean": "상대를 망가뜨리지 않으면서 고통의 한계까지 몰아붙이는 능력을 지닌 신도는 아귀에서 높은 지위를 얻었다. 보기에는 잔인해 보여도, 이들은 존경과 함께 고통의 길로 한 걸음 가까이 인도하는 스승으로 받들어졌다.",
+          "japanese": "それぞれを破壊することなく、痛みの極限まで追い込む方法を熟知している信者たちは、胃袋の中で名誉ある役職を得ていた。残虐とも見える方法にもかかわらず、とても尊敬され、痛みの道へと人を近づける教師とみなされていた。"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_Lasher.prefab",
+        "asset_guid": "b1a6085ede2b41e40971cfeb7a88d55e"
+      },
+      "triggers": [
+        "@Lasher.effects0.paramCharacterData.triggers0"
+      ],
+      "size": 1,
+      "health": 9,
+      "attack_damage": 9,
+      "subtypes": [
+        "SubtypesData_Disciple"
+      ],
+      "chatter": "PunishedLasherChatterData",
+      "artist": "Ron Kee"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "Lasher.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-c8e272f2ba1d1d99-548ad3b7d66aa5e46893197c8cb6829c-v2",
+        "english": "Deal [effect0.power] damage to friendly units in front of this unit.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> aux unités alliées en face de cette unité.",
+        "german": "Füge verbündeten Einheiten vor dieser Einheit [effect0.power] Schaden zu.",
+        "russian": "Наносит [effect0.power] урона союзникам, стоящим перед этим бойцом.",
+        "portuguese": "Causa [effect0.power] de dano às unidades aliadas na frente desta unidade.",
+        "chinese": "对该单位前方的友方单位造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño a las unidades aliadas delante de esta unidad.",
+        "chinese_traditional": "對此單位前排的友方單位造成[effect0.power]點傷害。",
+        "korean": "이 유닛 앞에 있는 아군 유닛들에 [effect0.power]의 피해를 줍니다.",
+        "japanese": "このユニットの前列にいる味方ユニットに[effect0.power]のダメージを与える。"
+      },
+      "trigger": "on_attacking",
+      "effects": [
+        "@Lasher.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "Lasher.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterLasher"
+    },
+    {
+      "id": "Lasher.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "in_front_of_self",
+      "target_team": "monsters",
+      "param_int": 1
+    }
+  ]
+}

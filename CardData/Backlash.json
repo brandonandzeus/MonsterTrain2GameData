@@ -1,0 +1,73 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "SineaterAbility",
+      "names": {
+        "key": "CardData_nameKey-ea16887d8c45b26f-19796684638271b4c8d811d528fd507c-v2",
+        "english": "Backlash",
+        "french": "Contrecoup",
+        "german": "Zurückschlagen",
+        "russian": "Самобичевание",
+        "portuguese": "Retaliação",
+        "chinese": "反冲",
+        "spanish": "Contragolpe",
+        "chinese_traditional": "反彈",
+        "korean": "반발",
+        "japanese": "反発"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-49526a9cfdd11ca6-19796684638271b4c8d811d528fd507c-v2",
+        "english": "Deal [effect0.power] damage to self. Attack immediately.",
+        "french": "Inflige <nobr>[effect0.power] DGT</nobr> à soi-même. Attaque immédiatement.",
+        "german": "Verursacht [effect0.power] Schaden gegen sich selbst. Greift sofort an.",
+        "russian": "Наносит [effect0.power] урона владельцу. Мгновенная атака.",
+        "portuguese": "Causa [effect0.power] de dano a si mesmo. Ataca imediatamente.",
+        "chinese": "对自身造成 [effect0.power] 点伤害。立即攻击。",
+        "spanish": "Se inflige [effect0.power] de daño a sí mismo. Ataca de inmediato.",
+        "chinese_traditional": "對自身造成[effect0.power]點傷害。立即攻擊。",
+        "korean": "자신에게 [effect0.power]의 피해를 줍니다. 즉시 공격합니다.",
+        "japanese": "自身に[effect0.power]のダメージを与える。即座に攻撃する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "effects": [
+        "@SineaterAbility.effects0",
+        "@SineaterAbility.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_enemy"
+    }
+  ],
+  "effects": [
+    {
+      "id": "SineaterAbility.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "self",
+      "should_cancel_subsequent_effects_if_test_fails": true,
+      "param_int": 8,
+      "applied_vfx": "@SineaterAbility.effects0.appliedVFX"
+    },
+    {
+      "id": "SineaterAbility.effects1",
+      "name": "CardEffectAttackWithUnit",
+      "target_mode": "self",
+      "should_cancel_subsequent_effects_if_test_fails": true,
+      "should_fail_to_cast_if_test_fails": true,
+      "param_bool": true
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "SineaterAbility.effects0.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_SineaterBacklashAbility.prefab",
+        "asset_guid": "086a7d298e3e5424397bdd1908cdcc67"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

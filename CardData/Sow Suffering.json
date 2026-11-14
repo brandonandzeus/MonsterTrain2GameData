@@ -1,0 +1,134 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "GrimDiscipleAbility",
+      "names": {
+        "key": "CardData_nameKey-ce1dc0f0714acf26-0bb851eb6ecf7da4dba04f9afa4a888b-v2",
+        "english": "Sow Suffering",
+        "french": "Germes de souffrance",
+        "german": "Leid säen",
+        "russian": "Семя страданий",
+        "portuguese": "Semear Sofrimento",
+        "chinese": "播种痛苦",
+        "spanish": "Sembrar sufrimiento",
+        "chinese_traditional": "散播苦難",
+        "korean": "고통 전파",
+        "japanese": "苦痛の種"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-233ac4c8f35d92fe-0bb851eb6ecf7da4dba04f9afa4a888b-v2",
+        "english": "Restore to full health. Remove [suppressed]. Replace '[ability]: Sow Suffering' with '[ability]: Flight'. Starts battle on cooldown.",
+        "french": "Restaure tous les PV. Retire [suppressed]. Remplace <nobr>« [ability] » :</nobr> Germes de souffrance par <nobr>« [ability] :</nobr> <nobr>Vol ».</nobr> Temps de recharge appliqué au début de la bataille.",
+        "german": "Stelle die Gesundheit vollständig wieder her. Entferne [suppressed]. Ersetzte „[ability]: Leid säen“ mit „[ability]: Flug“. Klingt zu Beginn des Kampfes ab.",
+        "russian": "Полностью восстанавливает здоровье. Снимает [suppressed]. Заменяет [ability] «Семя страданий» на [ability] «Полет». В начале боя на перезарядке.",
+        "portuguese": "Restaura a vida completamente. Remove [suppressed]. Substitui ‘[ability]: Semear Sofrimento’ por ‘[ability]: Voo’. Inicia a batalha em recarga.",
+        "chinese": "恢复所有生命值。移除[suppressed]。将“[ability]：播种痛苦“替换为“[ability]:飞行”。战斗开始时处于冷却中。",
+        "spanish": "Restaura toda su salud. Elimina [suppressed]. Reemplaza «[ability]: Sembrar sufrimiento» por «[ability]: Vuelo». Empieza la batalla en recarga.",
+        "chinese_traditional": "恢復至滿血。移除[suppressed]。將「[ability]：散播苦難」替換為「[ability]：飛行」。戰鬥開始時處於冷卻狀態。",
+        "korean": "체력을 최대로 회복합니다. [suppressed] 효과를 제거합니다. '[ability]: 고통 전파'를 '[ability]: 비행'으로 변경합니다. 전투 시작 시 재사용 대기 상태입니다.",
+        "japanese": "体力を全回復する。[suppressed]を解除する。「[ability]：苦痛の種」を「[ability]：飛翔」と入れ替える。クールダウン状態でバトルを開始する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ReaperofSufferingSowSufferingAbility.prefab",
+        "asset_guid": "62527ff5dd6978148a84473ad82c0ff2"
+      },
+      "effects": [
+        "@GrimDiscipleAbility.effects0",
+        "@GrimDiscipleAbility.effects1",
+        "@GrimDiscipleAbility.effects2"
+      ],
+      "initial_cooldown": 4,
+      "cooldown": 4,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_enemy"
+    },
+    {
+      "id": "AngelFlightAbility",
+      "names": {
+        "key": "CardData_nameKey-a44296787bec78c4-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+        "english": "Flight",
+        "french": "Vol",
+        "german": "Flug",
+        "russian": "Полет",
+        "portuguese": "Voo",
+        "chinese": "飞行",
+        "spanish": "Vuelo",
+        "chinese_traditional": "飛行",
+        "korean": "비행",
+        "japanese": "飛翔"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-f70caef0bbd9b60e-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+        "english": "Move to a targeted location on any floor.",
+        "french": "Déplace l'unité à la position ciblée du niveau choisi.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene.",
+        "russian": "Перемещение в выбранное место на любом этаже.",
+        "portuguese": "Desloca-se para um local específico em qualquer andar.",
+        "chinese": "移动到任意层的目标位置。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso.",
+        "chinese_traditional": "移動到任意樓層的指定位置。",
+        "korean": "선택한 층의 목표 위치로 이동합니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
+        "asset_guid": "b7d9137dc005eb345800500fcaa4823f"
+      },
+      "effects": [
+        "@GrimDiscipleAbility.effects2.paramCardData.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "GrimDiscipleAbility.effects0",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "param_int": 9999
+    },
+    {
+      "id": "GrimDiscipleAbility.effects1",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "restricted",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "GrimDiscipleAbility.effects2",
+      "name": "CardEffectSetUnitAbility",
+      "target_mode": "self",
+      "param_card": "@AngelFlightAbility"
+    },
+    {
+      "id": "GrimDiscipleAbility.effects2.paramCardData.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@GrimDiscipleAbility.effects2.paramCardData.effects0.appliedToSelfVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "GrimDiscipleAbility.effects2.paramCardData.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+        "asset_guid": "ad2e43302906f5e4b9dca11c8ae1e68e"
+      },
+      "spawn_location": "character_bottom"
+    }
+  ]
+}

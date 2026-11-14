@@ -1,0 +1,117 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "PainTithe",
+      "names": {
+        "key": "CardData_nameKey-ea68823485f03d33-c5cc2cb95a7f4024cafc22ee5e1ad2ee-v2",
+        "english": "Pain Tithe",
+        "french": "Dîme de douleur",
+        "german": "Zehnt des Schmerzes",
+        "russian": "Дань боли",
+        "portuguese": "Dízimo da Dor",
+        "chinese": "痛苦什一税",
+        "spanish": "Diezmo de dolor",
+        "chinese_traditional": "痛苦什一稅",
+        "korean": "고통의 공물",
+        "japanese": "痛みの納税"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-b31b38e6185682e1-c5cc2cb95a7f4024cafc22ee5e1ad2ee-v2",
+        "english": "Deal [effect0.power] damage.",
+        "french": "Inflige <nobr>[effect0.power] DGT.</nobr>",
+        "german": "Verursache [effect0.power] Schaden.",
+        "russian": "Наносит [effect0.power] урона.",
+        "portuguese": "Causa [effect0.power] de dano.",
+        "chinese": "造成 [effect0.power] 点伤害。",
+        "spanish": "Inflige [effect0.power] de daño.",
+        "chinese_traditional": "造成[effect0.power]點傷害。",
+        "korean": "[effect0.power]의 피해를 줍니다.",
+        "japanese": "[effect0.power]のダメージを与える。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CardData_data-cb91e28abccbe7cd-c5cc2cb95a7f4024cafc22ee5e1ad2ee-v2",
+          "english": "The Monolith accepts no gold, incense, nor precious gems as offerings. Instead, its demands are pure. Only pain, wrenched from the bodies of the shard’s Followers will do. How the pain is created, however, is left to the Follower to decide.",
+          "french": "Le Monolithe n'accepte en offrande ni or, ni encens, ni pierres précieuses. Ses exigences sont d'une tout autre <nobr>nature :</nobr> seule lui convient la douleur arrachée au corps des Fidèles de l'éclat. Quant à la manière de la provoquer, chaque Fidèle est libre de la choisir.",
+          "german": "Der Monolith akzeptiert weder Gold noch Weihrauch oder Edelsteine als Opfergaben. Stattdessen sind seine Forderungen rein. Nur der Schmerz, der den Anhängern des Splitters entrissen wird, stellt ihn zufrieden. Wie dieser Schmerz hervorgerufen wird, bleibt jedoch dem Anhänger selbst überlassen.",
+          "russian": "Монолит не принимает в дар ни золото, ни благовония, ни драгоценные камни. Его требования куда проще: ему нужна только боль, выжатая из тел его последователей. А уж как именно причинить эту боль, каждый последователь решает сам.",
+          "portuguese": "O Monólito não aceita ouro, incenso nem pedras preciosas como oferendas. Em vez disso, suas exigências são puras: apenas a dor, arrancada dos corpos dos Seguidores do Fragmento, será suficiente. A forma como a dor é criada, no entanto, fica a critério do Seguidor decidir.",
+          "chinese": "巨石不接受黄金、熏香或宝石作为贡品。它想要之物很纯粹，唯有痛苦而已。从碎片追随者身上抽取的痛苦就符合要求。至于如何制造痛苦，就由追随者自行决定了。",
+          "spanish": "El Monolito no acepta oro, incienso ni gemas preciosas como tributo. En lugar de eso, sus exigencias son puras: solo le sirve el dolor arrancado de los cuerpos de los seguidores del fragmento. La generación de dicho dolor, no obstante, depende del seguidor.",
+          "chinese_traditional": "巨石不接受黃金、薰香或貴重寶石當做祭品。它的要求很純粹。只有從碎片追隨者肉體榨取出的痛苦才行。不過，要用什麼方式製造出痛苦，就由追隨者自行決定。",
+          "korean": "모노리스는 황금도, 향도, 귀한 보석도 관심이 없다. 대신 요구하는 것은 하나다. 바로 파편 추종자의 몸에서 짜낸 고통이다. 하지만 그 고통을 어떻게 만들지 결정하는 것은 추종자의 몫으로 남긴다.",
+          "japanese": "モノリスは供物として金も香も、貴重な宝石も受け入れない。代わりに、純粋さを要求する。欠片の信者たちの身体からもぎとられる痛みだけがあればいい。ただし、どのようにして痛みが生み出されるかは、信者が決めることになっている。"
+        }
+      ],
+      "cost": 1,
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "pools": [
+        "MegaPool",
+        "UnitsPunishedBannerReplacementMutator"
+      ],
+      "card_art": {
+        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_Spell_PainTithe.prefab",
+        "asset_guid": "a4c865810966e104b9a9dbbf08272dc6"
+      },
+      "effects": [
+        "@PainTithe.effects0"
+      ],
+      "triggers": [
+        "@PainTithe.triggers0"
+      ],
+      "required_dlc": "punished",
+      "initial_keyboard_target": "front_enemy",
+      "artist": "Nicole Anne Alfonso"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "PainTithe.triggers0",
+      "descriptions": {
+        "key": "CardData_descriptionKey-7b6f8a3aee61f855-c5cc2cb95a7f4024cafc22ee5e1ad2ee-v2",
+        "english": "Increase damage by [triggereffect0.power] permanently.",
+        "french": "Augmente les DGT de [triggereffect0.power] définitivement.",
+        "german": "Erhöht den Schaden permanent um [triggereffect0.power].",
+        "russian": "Навсегда увеличивает урон на [triggereffect0.power].",
+        "portuguese": "Aumenta permanentemente o dano em [triggereffect0.power].",
+        "chinese": "永久增加 [triggereffect0.power] 点伤害。",
+        "spanish": "Aumenta el daño en [triggereffect0.power] permanentemente.",
+        "chinese_traditional": "永久提高[triggereffect0.power]點傷害。",
+        "korean": "공격력이 영구적으로 [triggereffect0.power] 증가합니다.",
+        "japanese": "ダメージを永続的に[triggereffect0.power]増加させる。"
+      },
+      "trigger": "on_spare",
+      "trigger_effects": [
+        {
+          "persistence_mode": "single_run",
+          "trigger_effect": "CardTriggerEffectBuffSpellDamage",
+          "param_int": 5
+        }
+      ],
+      "trigger_keyword_card_text_suppressed": false
+    }
+  ],
+  "effects": [
+    {
+      "id": "PainTithe.effects0",
+      "name": "CardEffectDamage",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
+      "param_int": 5,
+      "applied_vfx": "@PainTithe.effects0.appliedVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "PainTithe.effects0.appliedVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Spells/Punished/PainTithe/FX_PainTithe.prefab",
+        "asset_guid": "39469b6fba9c7294cbdb30afd34f2da6"
+      },
+      "spawn_location": "character_center"
+    }
+  ]
+}

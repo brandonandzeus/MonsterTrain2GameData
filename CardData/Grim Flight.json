@@ -1,0 +1,85 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "GrimFlightAbility 1",
+      "names": {
+        "key": "CardData_nameKey-76736ac2d1f36763-41780d5659843844f80202870db5252a-v2",
+        "english": "Grim Flight",
+        "french": "Envol funeste",
+        "german": "Düsterer Flug",
+        "russian": "Зловещий полет",
+        "portuguese": "Voo Sombrio",
+        "chinese": "残酷飞行",
+        "spanish": "Vuelo sombrío",
+        "chinese_traditional": "不祥飛行",
+        "korean": "영체 비행",
+        "japanese": "不吉な飛翔"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-1de8fe2f0c2c3f05-41780d5659843844f80202870db5252a-v2",
+        "english": "Move to a targeted location on any floor. Choose a <b>Darkshard</b> to summon. Only one <b>Darkshard</b> can be summoned per floor.",
+        "french": "Déplace l'unité à la position ciblée de n'importe quel niveau. Choisissez un <b>éclat noir</b> à invoquer. Un seul <b>éclat noir</b> peut être invoqué par niveau.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene. Wähle einen <b>Finstersplitter</b>, der gerufen wird. Pro Ebene kann nur ein <b>Finstersplitter</b> gerufen werden.",
+        "russian": "Перемещение в выбранное место на любом этаже. Выбор <b>темного осколка</b> для призыва. Призвать можно не более одного <b>темного осколка</b> на этаж.",
+        "portuguese": "Move-se para um local específico em qualquer andar. Escolha um <b>Fragmento Sombrio</b> para invocar. Apenas um <b>Fragmento Sombrio</b> pode ser invocado por andar.",
+        "chinese": "移动到任意层的目标位置。选择一个<b>黑暗碎片</b>进行召唤。每层只能召唤一个<b>黑暗碎片</b>。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso. Elige un <b>Fragmento oscuro</b> para invocarlo. Solo puede invocarse un <b>Fragmento oscuro</b> por piso.",
+        "chinese_traditional": "移動到任意樓層的指定位置。選擇一塊<b>黑暗碎片</b>進行召喚。每個樓層僅可召喚一塊<b>黑暗碎片</b>。",
+        "korean": "선택한 층의 목표 위치로 이동합니다. 소환할 <b>어둠의 파편</b>을 선택합니다. <b>어둠의 파편</b>은 층마다 하나만 소환할 수 있습니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。<b>闇の欠片</b>を選択して召喚する。フロアにつき、1つの<b>闇の欠片</b>のみを召喚できる。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ArchusGrimFlightAbility.prefab",
+        "asset_guid": "40a2d1e8ada3eb642a5b37d47086519e"
+      },
+      "effects": [
+        "@GrimFlightAbility 1.effects0",
+        "@GrimFlightAbility 1.effects1"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
+    }
+  ],
+  "effects": [
+    {
+      "id": "GrimFlightAbility 1.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@GrimFlightAbility 1.effects0.appliedToSelfVFX"
+    },
+    {
+      "id": "GrimFlightAbility 1.effects1",
+      "name": "CardEffectChooseMonsterToSpawnInBack",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 3,
+      "param_str": "CardEffect_ChooseDarkshard_Title",
+      "param_subtype": "SubtypesData_Darkshard",
+      "param_card_pool": "DarkshardOnlyPool 1",
+      "applied_to_self_vfx": "@GrimFlightAbility 1.effects1.appliedToSelfVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "GrimFlightAbility 1.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Grim Flight/FX_GrimFlight.prefab",
+        "asset_guid": "cf8c0337c6cb4a742820f10332766362"
+      },
+      "spawn_location": "character_bottom"
+    },
+    {
+      "id": "GrimFlightAbility 1.effects1.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+        "asset_guid": "ad2e43302906f5e4b9dca11c8ae1e68e"
+      },
+      "spawn_location": "character_bottom"
+    }
+  ]
+}

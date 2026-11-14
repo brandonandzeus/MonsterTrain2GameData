@@ -1,0 +1,63 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "MonolithDevotion",
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPunished",
+            "required_dlc": "punished"
+          }
+        }
+      ],
+      "relic_effects": [
+        "@MonolithDevotion.effects0"
+      ],
+      "is_hidden": true
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "MonolithDevotion.effects0",
+      "name": "RelicEffectAddStatusEffectPerDevotionOnSpawn",
+      "param_card_type": "spell",
+      "param_status_effects": [
+        {
+          "status": "zeal",
+          "count": 4
+        }
+      ],
+      "param_effects": [
+        "@MonolithDevotion.effects0.paramCardEffects0",
+        "@MonolithDevotion.effects0.paramCardEffects1"
+      ],
+      "param_source_team": "monsters",
+      "param_trigger": "on_punish",
+      "target_mode": "room"
+    }
+  ],
+  "effects": [
+    {
+      "id": "MonolithDevotion.effects0.paramCardEffects0",
+      "name": "CardEffectDamage",
+      "target_mode": "last_spawned_character",
+      "target_team": "monsters",
+      "param_int": 1
+    },
+    {
+      "id": "MonolithDevotion.effects0.paramCardEffects1",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "zeal",
+          "count": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "GrimDisciple",
+      "cost": 1,
+      "card_type": "monster",
+      "rarity": "uncommon",
+      "class": "ClassPunished",
+      "pools": [
+        "UnitsAllBanner",
+        "UnitsPunishedBanner"
+      ],
+      "card_art": {
+        "asset_name": "Assets/GameData/CardArt/Portrait_Prefabs/MT2/CardArt_ReaperOfSuffering.prefab",
+        "asset_guid": "209779c4a5c21cc49b46069813d66e45"
+      },
+      "effects": [
+        "@GrimDisciple.effects0"
+      ],
+      "required_dlc": "punished",
+      "initial_keyboard_target": "front_friendly",
+      "artist": "Luke Banke"
+    },
+    {
+      "id": "GrimDiscipleAbility",
+      "names": {
+        "key": "CardData_nameKey-ce1dc0f0714acf26-0bb851eb6ecf7da4dba04f9afa4a888b-v2",
+        "english": "Sow Suffering",
+        "french": "Germes de souffrance",
+        "german": "Leid säen",
+        "russian": "Семя страданий",
+        "portuguese": "Semear Sofrimento",
+        "chinese": "播种痛苦",
+        "spanish": "Sembrar sufrimiento",
+        "chinese_traditional": "散播苦難",
+        "korean": "고통 전파",
+        "japanese": "苦痛の種"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-233ac4c8f35d92fe-0bb851eb6ecf7da4dba04f9afa4a888b-v2",
+        "english": "Restore to full health. Remove [suppressed]. Replace '[ability]: Sow Suffering' with '[ability]: Flight'. Starts battle on cooldown.",
+        "french": "Restaure tous les PV. Retire [suppressed]. Remplace <nobr>« [ability] » :</nobr> Germes de souffrance par <nobr>« [ability] :</nobr> <nobr>Vol ».</nobr> Temps de recharge appliqué au début de la bataille.",
+        "german": "Stelle die Gesundheit vollständig wieder her. Entferne [suppressed]. Ersetzte „[ability]: Leid säen“ mit „[ability]: Flug“. Klingt zu Beginn des Kampfes ab.",
+        "russian": "Полностью восстанавливает здоровье. Снимает [suppressed]. Заменяет [ability] «Семя страданий» на [ability] «Полет». В начале боя на перезарядке.",
+        "portuguese": "Restaura a vida completamente. Remove [suppressed]. Substitui ‘[ability]: Semear Sofrimento’ por ‘[ability]: Voo’. Inicia a batalha em recarga.",
+        "chinese": "恢复所有生命值。移除[suppressed]。将“[ability]：播种痛苦“替换为“[ability]:飞行”。战斗开始时处于冷却中。",
+        "spanish": "Restaura toda su salud. Elimina [suppressed]. Reemplaza «[ability]: Sembrar sufrimiento» por «[ability]: Vuelo». Empieza la batalla en recarga.",
+        "chinese_traditional": "恢復至滿血。移除[suppressed]。將「[ability]：散播苦難」替換為「[ability]：飛行」。戰鬥開始時處於冷卻狀態。",
+        "korean": "체력을 최대로 회복합니다. [suppressed] 효과를 제거합니다. '[ability]: 고통 전파'를 '[ability]: 비행'으로 변경합니다. 전투 시작 시 재사용 대기 상태입니다.",
+        "japanese": "体力を全回復する。[suppressed]を解除する。「[ability]：苦痛の種」を「[ability]：飛翔」と入れ替える。クールダウン状態でバトルを開始する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassPunished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_ReaperofSufferingSowSufferingAbility.prefab",
+        "asset_guid": "62527ff5dd6978148a84473ad82c0ff2"
+      },
+      "effects": [
+        "@GrimDisciple.effects0.paramCharacterData.unitAbility.effects0",
+        "@GrimDisciple.effects0.paramCharacterData.unitAbility.effects1",
+        "@GrimDisciple.effects0.paramCharacterData.unitAbility.effects2"
+      ],
+      "initial_cooldown": 4,
+      "cooldown": 4,
+      "is_an_ability": true,
+      "targetless": true,
+      "initial_keyboard_target": "front_enemy"
+    },
+    {
+      "id": "AngelFlightAbility",
+      "names": {
+        "key": "CardData_nameKey-a44296787bec78c4-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+        "english": "Flight",
+        "french": "Vol",
+        "german": "Flug",
+        "russian": "Полет",
+        "portuguese": "Voo",
+        "chinese": "飞行",
+        "spanish": "Vuelo",
+        "chinese_traditional": "飛行",
+        "korean": "비행",
+        "japanese": "飛翔"
+      },
+      "descriptions": {
+        "key": "CardData_overrideDescriptionKey-f70caef0bbd9b60e-fb4fb77996d838a4bb351cb9e977a2a0-v2",
+        "english": "Move to a targeted location on any floor.",
+        "french": "Déplace l'unité à la position ciblée du niveau choisi.",
+        "german": "Bewege dich zu einer Zielposition auf einer beliebigen Ebene.",
+        "russian": "Перемещение в выбранное место на любом этаже.",
+        "portuguese": "Desloca-se para um local específico em qualquer andar.",
+        "chinese": "移动到任意层的目标位置。",
+        "spanish": "Se mueve a la ubicación seleccionada de cualquier piso.",
+        "chinese_traditional": "移動到任意樓層的指定位置。",
+        "korean": "선택한 층의 목표 위치로 이동합니다.",
+        "japanese": "任意のフロアの指定した位置へ移動する。"
+      },
+      "card_type": "spell",
+      "rarity": "common",
+      "class": "ClassBanished",
+      "card_art": {
+        "asset_name": "Assets/GameData/Cards/UnitAbility/Prefabs/UnitAbilitySound_AngelFlightAbility.prefab",
+        "asset_guid": "b7d9137dc005eb345800500fcaa4823f"
+      },
+      "effects": [
+        "@GrimDisciple.effects0.paramCharacterData.unitAbility.effects2.paramCardData.effects0"
+      ],
+      "cooldown": 2,
+      "is_an_ability": true,
+      "initial_keyboard_target": "front_friendly",
+      "can_ability_target_other_floors": true
+    }
+  ],
+  "characters": [
+    {
+      "id": "MonsterBurdenedDisciple",
+      "names": {
+        "key": "CharacterData_nameKey-2b36b89efe611af2-04939842f97423e49a79c811137f954a-v2",
+        "english": "Reaper of Suffering",
+        "french": "Faucheur de souffrance",
+        "german": "Schlitzer des Leids",
+        "russian": "Жнец страданий",
+        "portuguese": "Ceifador do Sofrimento",
+        "chinese": "痛苦收割者",
+        "spanish": "Segador de sufrimiento",
+        "chinese_traditional": "苦難收割者",
+        "korean": "고통의 수확자",
+        "japanese": "苦痛の死神"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CharacterData_data-bc4c4f0093b2ecdb-04939842f97423e49a79c811137f954a-v2",
+          "english": "When I last saw one of Seraph’s Disciples, they were amidst a campaign to root out the weak and cut off their wings. To see one in the Maw…well, I feared for her life. I sought to help her, but she turned me away. ‘I have greater friends here than I ever had in Heaven,’ the Disciple said. ‘Though first I had to earn their forgiveness.’",
+          "french": "La dernière fois que j'ai vu l'un des disciples de Séraphin, ils menaient une campagne visant à éliminer les faibles et à leur couper les ailes. En voir une dans la Cime... eh bien, j'ai craint pour sa vie. J'ai voulu l'aider, mais elle m'a repoussé. <nobr>« J'ai</nobr> ici de bien meilleurs amis que je n'en ai jamais eu au paradis, m'a-t-elle dit. Mais j'ai d'abord dû gagner leur <nobr>pardon. »</nobr>",
+          "german": "Als ich zuletzt eine von Seraphs Anhänger sah, befand sie sich mitten in einem Feldzug, um die Schwachen aufzuspüren und ihnen die Flügel zu stutzen. Eine von ihnen im Seraph zu sehen ... nun, ich fürchtete um ihr Leben. Ich wollte ihr helfen, doch sie wies mich zurück. „Ich habe hier bessere Freunde, als ich je im Himmel hatte“, sagte die Anhängerin. „Allerdings musste ich mir ihre Vergebung erst verdienen.“",
+          "russian": "Когда я в последний раз видел послушников Серафима, они как раз проводили чистку: избавлялись от слабых и отрезали им крылья. Поэтому, увидев одну из них в Зеве... признаюсь, я испугался за ее жизнь. Хотел помочь, а она отказалась. «Здесь у меня друзья куда лучше, чем когда-либо были в Раю, — сказала послушница, — правда, сначала мне пришлось заслужить их прощение».",
+          "portuguese": "A última vez que vi um dos Discípulos do Serafim, ele estava no meio de uma campanha para erradicar os fracos e cortar suas asas. Ao ver um deles na Gorja... Bom, eu temi por sua vida. Tentei ajudá-la, mas ela me rejeitou. ‘Aqui tenho amigos melhores do que jamais tive no Céu’, disse a Discípula. ‘Embora, primeiro, eu tenha precisado conquistar o perdão deles.’",
+          "chinese": "我上次看到炽天使的使徒时，他们正在执行铲除弱者并切断其翅膀的任务。现在，有个使徒居然出现在了天堂之喉里……恐怕她凶多吉少了。我想要帮助她，可遭到了她的拒绝。使徒对我说：“我在这里交到了天堂里交不到的好朋友。只不过，我得先争取到他们的原谅。”",
+          "spanish": "La última vez que vi a uno de los discípulos de Seraph, estaba enfrascado en una campaña para identificar a los débiles y cortarles las alas. Al ver a una de ellos en las Fauces... Bueno, temí por su vida. Quise ayudarla, pero se negó. «Tengo mejores amigos aquí de los que nunca tuve en el Cielo», respondió la discípula. «Aunque antes tuve que ganarme su perdón».",
+          "chinese_traditional": "我上一次看見撒拉弗的門徒時，他們正四處剷除弱者、剪斷他們的翅膀。如今在深淵裡看見撒拉弗的門徒……我還真擔心她的安危。我試著幫助她，她卻要我離開。她對我說：「我在這裡交到的朋友，比我在天堂時的任何朋友都要好；不過我得先贏得他們的原諒才行。」",
+          "korean": "마지막으로 세라핌의 제자 중 하나를 보았을 때, 그들은 약자를 색출하고 날개를 잘라 내는 작전을 벌이고 있었다. 그런 제자를 아귀에서 보게 되다니... 솔직히 그녀의 목숨이 걱정됐다. 도와주려 했지만 그녀는 나를 돌려보냈다. “천상에서보다 이곳에서 훨씬 더 좋은 동료들을 만났어요.” 그녀가 말했다. “물론 처음에는 그들에게 용서를 받아야 했지만요.”",
+          "japanese": "セラフの信者の一人を最後に見たとき、彼女は弱者を一掃し、翼を切り落とす粛清の最中だった。そんな彼女を胃袋の中で見るとは…私は彼女の身を案じた。助けようとしたが、彼女は私を拒んだ。「ここには天界にいたときよりもすばらしい仲間がいる」と信者は言った。「だけど、まずは彼らの赦しを得なければならなかった」"
+        }
+      ],
+      "character_art": {
+        "asset_name": "Assets/GameData/CharacterArt/Character_Prefabs/Character_ReaperOfSuffering.prefab",
+        "asset_guid": "56b5a6ef482403d4dae232a28b4c7a7d"
+      },
+      "starting_status_effects": [
+        {
+          "status": "sweep",
+          "count": 1
+        },
+        {
+          "status": "restricted",
+          "count": 1
+        }
+      ],
+      "triggers": [
+        "@GrimDisciple.effects0.paramCharacterData.triggers0"
+      ],
+      "ability": "@GrimDiscipleAbility",
+      "size": 2,
+      "health": 25,
+      "attack_damage": 60,
+      "subtypes": [
+        "SubtypesData_DarkAngel",
+        "SubtypesData_BannerUnit"
+      ],
+      "chatter": "PunishedGrimDiscipleChatterData",
+      "artist": "Luke Banke"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.triggers0",
+      "descriptions": {
+        "key": "CharacterData_descriptionKey-6c741d1553ce89f1-04939842f97423e49a79c811137f954a-v2",
+        "english": "Reduce [cooldown] by [effect0.status0.power].",
+        "french": "Réduit le [cooldown] de [effect0.status0.power].",
+        "german": "Verringert [cooldown] um [effect0.status0.power].",
+        "russian": "[cooldown] уменьшается на [effect0.status0.power].",
+        "portuguese": "Reduz o [cooldown] em [effect0.status0.power].",
+        "chinese": "[cooldown] 缩短 [effect0.status0.power]。",
+        "spanish": "Reduce el [cooldown] en [effect0.status0.power].",
+        "chinese_traditional": "[cooldown]減少[effect0.status0.power]。",
+        "korean": "[cooldown]이 [effect0.status0.power]만큼 감소합니다.",
+        "japanese": "[cooldown]を[effect0.status0.power]減少させる。"
+      },
+      "trigger": "on_hit",
+      "effects": [
+        "@GrimDisciple.effects0.paramCharacterData.triggers0.effects0"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GrimDisciple.effects0",
+      "name": "CardEffectSpawnMonster",
+      "param_character": "@MonsterBurdenedDisciple"
+    },
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.triggers0.effects0",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "cooldown",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.unitAbility.effects0",
+      "name": "CardEffectHeal",
+      "target_mode": "self",
+      "param_int": 9999
+    },
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.unitAbility.effects1",
+      "name": "CardEffectRemoveStatusEffect",
+      "target_mode": "self",
+      "param_status_effects": [
+        {
+          "status": "restricted",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.unitAbility.effects2",
+      "name": "CardEffectSetUnitAbility",
+      "target_mode": "self",
+      "param_card": "@AngelFlightAbility"
+    },
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.unitAbility.effects2.paramCardData.effects0",
+      "name": "CardEffectUnitAbilityTeleport",
+      "applied_to_self_vfx": "@GrimDisciple.effects0.paramCharacterData.unitAbility.effects2.paramCardData.effects0.appliedToSelfVFX"
+    }
+  ],
+  "vfxs": [
+    {
+      "id": "GrimDisciple.effects0.paramCharacterData.unitAbility.effects2.paramCardData.effects0.appliedToSelfVFX",
+      "vfx_left": {
+        "asset_name": "Assets/VFX/Abilities/Flight/FX_Flight.prefab",
+        "asset_guid": "ad2e43302906f5e4b9dca11c8ae1e68e"
+      },
+      "spawn_location": "character_bottom"
+    }
+  ]
+}

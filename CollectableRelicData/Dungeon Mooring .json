@@ -1,0 +1,78 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "relics": [
+    {
+      "id": "ChainedDamageIncrease",
+      "pools": [
+        "MegaRelicPool"
+      ],
+      "type": "collectable",
+      "extensions": [
+        {
+          "collectable": {
+            "rarity": "common",
+            "class": "ClassPunished",
+            "required_dlc": "punished"
+          }
+        }
+      ],
+      "names": {
+        "key": "CollectableRelicData_nameKey-d37dfcc5ee0857f0-f5bf4e8671eb785479005fed57dd126c-v2",
+        "english": "Dungeon Mooring ",
+        "french": "Amarre du donjon ",
+        "german": "Kerker-Anlegeplatz ",
+        "russian": "Тюремный крепеж ",
+        "portuguese": "Amarração da Masmorra ",
+        "chinese": "地牢系具 ",
+        "spanish": "Ancla de mazmorra ",
+        "chinese_traditional": "地牢錨點 ",
+        "korean": "지하 감옥의 닻 ",
+        "japanese": "地下牢の係留所 "
+      },
+      "descriptions": {
+        "key": "CollectableRelicData_descriptionKey-cde4b3f660ba23c9-f5bf4e8671eb785479005fed57dd126c-v2",
+        "english": "Enemy units enter with [chained] [effect0.status0.power].",
+        "french": "Les unités ennemies entrent avec [chained] [effect0.status0.power].",
+        "german": "Gegnerische Einheiten kommen mit [chained] [effect0.status0.power] ins Spiel.",
+        "russian": "На врагов при входе накладываются [chained] х[effect0.status0.power].",
+        "portuguese": "Unidades inimigas entram com [chained] [effect0.status0.power].",
+        "chinese": "敌方单位进入战斗时获得[chained] [effect0.status0.power]。",
+        "spanish": "Las unidades enemigas entran con [chained] [effect0.status0.power].",
+        "chinese_traditional": "敵方單位登場時獲得[chained][effect0.status0.power]。",
+        "korean": "적 유닛들이 [chained] [effect0.status0.power] 상태로 등장합니다.",
+        "japanese": "敵ユニットが[chained] [effect0.status0.power]が付与された状態で出現する。"
+      },
+      "lore_tooltips": [
+        {
+          "key": "CollectableRelicData_data-97d872e12f15f580-f5bf4e8671eb785479005fed57dd126c-v2",
+          "english": "Seraph is not without pity. For angels who still had their flight, he made cages that could float in the air and mimic the sensation of flight. Of course, a prison is still a prison, and the cages were secured to prevent the angels from going too far.",
+          "french": "Séraphin n'est pas totalement dépourvu de compassion. Pour les anges qui pouvaient encore voler, il fit fabriquer des cages capables de flotter dans les airs et de reproduire la sensation du vol. Bien sûr, une prison reste une prison, et les cages étaient solidement attachées pour empêcher les anges d'aller trop loin.",
+          "german": "Seraph kann auch Mitleid zeigen. Denn für Engel, die noch fliegen konnten, fertigte er Käfige an, die in der Luft schweben, um ihnen ein Gefühl des Fliegens zu vermitteln. Natürlich ist ein Gefängnis immer noch ein Gefängnis, und die Käfige wurden gesichert, um zu verhindern, dass sich die Engel zu weit entfernen.",
+          "russian": "Серафим все же не был совсем безжалостен. Для ангелов, еще способных летать, он создал клетки, которые парили в воздухе и хотя бы отчасти возвращали узнику ощущение полета. Но тюрьма остается тюрьмой: клетки были надежно закреплены.",
+          "portuguese": "Serafim não é desprovido de piedade. Para os anjos que ainda podiam voar, ele criou gaiolas capazes de flutuar no ar e imitar a sensação de voar. É claro que uma prisão continua sendo uma prisão, e as gaiolas foram trancadas para impedir que os anjos fossem muito longe.",
+          "chinese": "炽天使并非冷血无情。对于那些仍能飞行的天使，他只做了飘浮在半空中的笼子，来模拟飞行的感觉。当然，监狱依然是监狱，这种牢笼连接着系具，以防天使飘得太远。",
+          "spanish": "Seraph no carece de piedad. Para los ángeles que aún conservaban las alas, preparó jaulas que podían flotar en el aire e imitar la sensación de volar. Por supuesto, una prisión sigue siendo una prisión, y las jaulas estaban aseguradas para impedir que los ángeles se alejaran mucho.",
+          "chinese_traditional": "撒拉弗還是懂得憐憫。他為那些仍保有飛行能力的天使打造了能漂浮在空中的牢籠，讓他們模擬飛行的感覺。當然，監獄終究還是監獄，牢籠都被牢牢固定住，以免天使飛得太遠。",
+          "korean": "세라핌에게 자비가 전혀 없는 것은 아니다. 아직 비행 능력이 남아 있는 천사들을 위해 그는 공중에 떠서 비행하는 감각을 흉내 낼 수 있는 우리를 만들었다. 물론 감옥은 어디까지나 감옥이었기에, 천사들이 너무 멀리 가지 못하도록 우리를 단단히 고정해 두었다.",
+          "japanese": "セラフは情けがないわけではない。まだ空を飛べる天使たちのために、空中に浮かび、飛んでいる感覚を再現する檻を作った。もちろん、牢獄は牢獄だ。檻は天使たちが遠くへ行きすぎないように固定されていた。"
+        }
+      ],
+      "relic_effects": [
+        "@ChainedDamageIncrease.effects0"
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ChainedDamageIncrease.effects0",
+      "name": "RelicEffectAddStatusEffectOnSpawn",
+      "param_status_effects": [
+        {
+          "status": "chained",
+          "count": 1
+        }
+      ],
+      "param_source_team": "heroes"
+    }
+  ]
+}
